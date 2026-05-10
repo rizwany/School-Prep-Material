@@ -1,0 +1,1191 @@
+<!-- Math | Grade 3 | Multiplication Tables | worksheet -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multiplication Tables Worksheet — Grade 3 Math | School Prep</title>
+  <meta name="description" content="Interactive Grade 3 multiplication tables worksheet. 10 random questions, Easy and Hard modes, instant grading and score tracking." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --clr-bg: #ffffff;
+      --clr-dot: #E8EDF5;
+      --clr-accent: #4361EE;
+      --clr-accent-dark: #3451D1;
+      --clr-navy: #1A1A3E;
+      --clr-tint: #EEF0FF;
+      --clr-green: #2DC653;
+      --clr-green-bg: #F0FFF4;
+      --clr-red: #E63946;
+      --clr-red-bg: #FFF0F1;
+      --clr-amber: #F4A261;
+      --clr-amber-bg: #FFFBF5;
+      --clr-text: #2D2D4E;
+      --clr-muted: #6B7280;
+      --font-display: 'Nunito', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      --radius: 12px;
+      --shadow: 0 2px 16px rgba(67,97,238,0.08);
+      --shadow-hover: 0 8px 28px rgba(67,97,238,0.18);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--font-display);
+      background-color: var(--clr-bg);
+      background-image: radial-gradient(circle, var(--clr-dot) 1.5px, transparent 1.5px);
+      background-size: 20px 20px;
+      color: var(--clr-text);
+      min-height: 100vh;
+    }
+
+    /* ── Modal ── */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(26,26,62,0.55);
+      backdrop-filter: blur(4px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      padding: 20px;
+    }
+    .modal-overlay.hidden { display: none; }
+
+    .modal {
+      background: #fff;
+      border-radius: 20px;
+      padding: 40px 36px;
+      max-width: 420px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 24px 64px rgba(67,97,238,0.22);
+      animation: modalIn 0.35s cubic-bezier(0.34,1.56,0.64,1) both;
+    }
+
+    @keyframes modalIn {
+      from { opacity: 0; transform: scale(0.85) translateY(20px); }
+      to   { opacity: 1; transform: scale(1) translateY(0); }
+    }
+
+    /* CSS math doodle */
+    .modal-doodle {
+      width: 90px;
+      height: 90px;
+      margin: 0 auto 20px;
+      position: relative;
+    }
+    .doodle-calc {
+      width: 90px;
+      height: 90px;
+    }
+
+    .modal h2 {
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: var(--clr-navy);
+      margin-bottom: 8px;
+    }
+    .modal p {
+      color: var(--clr-muted);
+      margin-bottom: 22px;
+      font-size: 0.95rem;
+    }
+    .modal input[type="text"] {
+      width: 100%;
+      border: 2px solid var(--clr-dot);
+      border-radius: 10px;
+      padding: 12px 16px;
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--clr-navy);
+      outline: none;
+      margin-bottom: 16px;
+      transition: border-color 0.2s;
+    }
+    .modal input[type="text"]:focus { border-color: var(--clr-accent); }
+
+    /* ── Buttons ── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 0.92rem;
+      padding: 10px 26px;
+      border-radius: 50px;
+      cursor: pointer;
+      border: none;
+      text-decoration: none;
+      transition: background 0.18s, color 0.18s, transform 0.18s, box-shadow 0.18s;
+    }
+    .btn-primary {
+      background: var(--clr-accent);
+      color: #fff;
+    }
+    .btn-primary:hover:not(:disabled) {
+      background: var(--clr-accent-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(67,97,238,0.3);
+    }
+    .btn-primary:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--clr-accent);
+      border: 2px solid var(--clr-accent);
+    }
+    .btn-outline:hover {
+      background: var(--clr-tint);
+      transform: translateY(-2px);
+    }
+    .btn-neutral {
+      background: transparent;
+      color: var(--clr-navy);
+      border: 2px solid #C4C9DC;
+    }
+    .btn-neutral:hover {
+      background: #F3F4F8;
+      transform: translateY(-2px);
+    }
+    .btn-full { width: 100%; padding: 14px 26px; font-size: 1rem; }
+    .btn-lg { padding: 13px 32px; font-size: 1rem; }
+
+    /* Difficulty pills */
+    .diff-pill {
+      padding: 8px 22px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 0.88rem;
+      cursor: pointer;
+      border: 2px solid;
+      transition: all 0.18s;
+      background: transparent;
+      font-family: var(--font-display);
+    }
+    .diff-pill.easy {
+      border-color: var(--clr-green);
+      color: #1a7a3a;
+    }
+    .diff-pill.easy.active {
+      background: var(--clr-green);
+      color: #fff;
+    }
+    .diff-pill.hard {
+      border-color: var(--clr-red);
+      color: #8B0010;
+    }
+    .diff-pill.hard.active {
+      background: var(--clr-red);
+      color: #fff;
+    }
+
+    /* New Worksheet pulse */
+    .btn-neutral.pulse-attention {
+      animation: pulseGlow 1.2s ease-in-out infinite;
+      border-color: var(--clr-accent);
+      color: var(--clr-accent);
+    }
+    @keyframes pulseGlow {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(67,97,238,0.3); }
+      50%       { box-shadow: 0 0 0 8px rgba(67,97,238,0); }
+    }
+
+    /* ── Page Layout ── */
+    .page-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 24px 20px 60px;
+    }
+
+    /* ── Breadcrumb ── */
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82rem;
+      color: var(--clr-muted);
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+    .breadcrumb a { color: var(--clr-accent); text-decoration: none; font-weight: 600; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { color: var(--clr-muted); }
+
+    .top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+
+    /* ── Welcome Bar ── */
+    .welcome-bar {
+      background: var(--clr-tint);
+      border-radius: var(--radius);
+      padding: 16px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .welcome-name {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--clr-navy);
+    }
+    .change-name-btn {
+      font-size: 0.8rem;
+      color: var(--clr-accent);
+      cursor: pointer;
+      background: none;
+      border: none;
+      font-family: var(--font-display);
+      font-weight: 700;
+      text-decoration: underline;
+    }
+
+    /* ── Stats Bar ── */
+    .stats-bar {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 12px 0;
+      margin-bottom: 8px;
+      border-bottom: 2px solid var(--clr-dot);
+    }
+    .stat-item {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--clr-muted);
+    }
+    .stat-item strong { color: var(--clr-navy); }
+
+    /* ── Controls ── */
+    .controls {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      padding: 16px 0;
+      margin-bottom: 4px;
+    }
+    .controls-label {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--clr-muted);
+      margin-right: 4px;
+    }
+    .controls-divider {
+      width: 1px;
+      height: 28px;
+      background: var(--clr-dot);
+      margin: 0 6px;
+    }
+
+    hr.section-divider {
+      border: none;
+      border-top: 2px solid var(--clr-dot);
+      margin: 8px 0 28px;
+    }
+
+    /* ── Score Banner ── */
+    .score-banner {
+      background: linear-gradient(135deg, #fff 0%, var(--clr-tint) 100%);
+      border: 2px solid var(--clr-accent);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      display: none;
+      animation: slideDown 0.4s ease both;
+    }
+    .score-banner.visible { display: block; }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .score-row {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+    .score-num {
+      font-family: var(--font-mono);
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: var(--clr-accent);
+    }
+    .score-msg {
+      font-size: 1rem;
+      color: var(--clr-navy);
+      font-weight: 700;
+      flex: 1;
+    }
+    .progress-track {
+      height: 12px;
+      background: var(--clr-dot);
+      border-radius: 99px;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      background: var(--clr-green);
+      border-radius: 99px;
+      transition: width 0.6s ease;
+    }
+
+    /* ── Answer-revealed warning ── */
+    .reveal-warning {
+      background: var(--clr-amber-bg);
+      border-left: 5px solid var(--clr-amber);
+      border-radius: var(--radius);
+      padding: 12px 18px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #8B4A00;
+      margin-top: 14px;
+      display: none;
+    }
+    .reveal-warning.visible { display: block; }
+
+    /* ── Post-submit buttons ── */
+    .post-submit {
+      display: none;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 14px;
+    }
+    .post-submit.visible { display: flex; }
+
+    /* ── Question Cards ── */
+    .questions-list { list-style: none; }
+
+    .q-card {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border-left: 5px solid var(--clr-accent);
+      padding: 20px 24px;
+      margin-bottom: 16px;
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.25s;
+      animation: fadeInUp 0.4s ease both;
+    }
+    .q-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-hover); }
+
+    .q-card.correct {
+      border-left-color: var(--clr-green);
+      background: var(--clr-green-bg);
+      animation: pulseCorrect 0.5s ease;
+    }
+    .q-card.wrong {
+      border-left-color: var(--clr-red);
+      background: var(--clr-red-bg);
+      animation: shakeWrong 0.45s ease;
+    }
+
+    @keyframes pulseCorrect {
+      0%   { box-shadow: 0 0 0 0 rgba(45,198,83,0.4); }
+      50%  { box-shadow: 0 0 0 10px rgba(45,198,83,0); }
+      100% { box-shadow: var(--shadow); }
+    }
+    @keyframes shakeWrong {
+      0%,100% { transform: translateX(0); }
+      20%     { transform: translateX(-6px); }
+      40%     { transform: translateX(6px); }
+      60%     { transform: translateX(-4px); }
+      80%     { transform: translateX(4px); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .q-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .q-num {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--clr-accent);
+      background: var(--clr-tint);
+      padding: 2px 10px;
+      border-radius: 50px;
+    }
+    .q-icon { font-size: 1.2rem; display: none; }
+    .q-card.correct .q-icon-correct,
+    .q-card.wrong   .q-icon-wrong   { display: inline; }
+
+    .q-text {
+      font-size: 1.02rem;
+      font-weight: 700;
+      color: var(--clr-navy);
+      margin-bottom: 14px;
+      line-height: 1.5;
+    }
+    .q-text .mono { font-family: var(--font-mono); }
+
+    /* Input styles */
+    .q-input {
+      font-family: var(--font-mono);
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--clr-navy);
+      border: 2px solid var(--clr-dot);
+      border-radius: 8px;
+      padding: 9px 14px;
+      width: 120px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .q-input:focus { border-color: var(--clr-accent); }
+    .q-input.error { border-color: var(--clr-red); }
+    .q-input:disabled { opacity: 0.65; cursor: not-allowed; }
+
+    .q-select {
+      font-family: var(--font-display);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--clr-navy);
+      border: 2px solid var(--clr-dot);
+      border-radius: 8px;
+      padding: 9px 14px;
+      outline: none;
+      cursor: pointer;
+      transition: border-color 0.2s;
+      background: #fff;
+    }
+    .q-select:focus { border-color: var(--clr-accent); }
+    .q-select:disabled { opacity: 0.65; cursor: not-allowed; }
+
+    .radio-group { display: flex; gap: 12px; flex-wrap: wrap; }
+    .radio-label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      padding: 8px 16px;
+      border: 2px solid var(--clr-dot);
+      border-radius: 50px;
+      transition: border-color 0.18s, background 0.18s;
+    }
+    .radio-label:has(input:checked) {
+      border-color: var(--clr-accent);
+      background: var(--clr-tint);
+    }
+    .radio-label input { accent-color: var(--clr-accent); }
+
+    .skip-tip {
+      font-size: 0.78rem;
+      color: var(--clr-red);
+      font-weight: 700;
+      margin-top: 6px;
+      display: none;
+    }
+    .skip-tip.visible { display: block; }
+
+    /* Answer chip (shown after reveal) */
+    .answer-reveal-chip {
+      margin-top: 10px;
+      display: none;
+      font-size: 0.85rem;
+      font-weight: 700;
+      border-radius: 8px;
+      padding: 8px 14px;
+    }
+    .answer-reveal-chip.visible { display: block; }
+    .answer-reveal-chip.was-correct {
+      background: var(--clr-green-bg);
+      border: 1.5px solid var(--clr-green);
+      color: #1a7a3a;
+    }
+    .answer-reveal-chip.was-wrong {
+      background: var(--clr-red-bg);
+      border: 1.5px solid var(--clr-red);
+      color: #8B0010;
+    }
+
+    /* ── Submit area ── */
+    .submit-area {
+      margin: 28px 0 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: stretch;
+    }
+
+    /* ── Toast ── */
+    .toast {
+      position: fixed;
+      bottom: 28px;
+      left: 50%;
+      transform: translateX(-50%) translateY(80px);
+      background: var(--clr-navy);
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 700;
+      padding: 12px 26px;
+      border-radius: 50px;
+      z-index: 2000;
+      transition: transform 0.35s cubic-bezier(0.34,1.56,0.64,1), opacity 0.3s;
+      opacity: 0;
+      pointer-events: none;
+    }
+    .toast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    /* ── Bottom nav ── */
+    .bottom-nav {
+      text-align: center;
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 2px solid var(--clr-dot);
+    }
+    .bottom-nav a {
+      font-size: 0.88rem;
+      color: var(--clr-accent);
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .bottom-nav a:hover { text-decoration: underline; }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      .page-wrap { padding: 16px 14px 48px; }
+      .score-num { font-size: 1.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Username Modal -->
+<div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-expanded="true">
+  <div class="modal">
+    <div class="modal-doodle" aria-hidden="true">
+      <svg class="doodle-calc" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="10" y="8" width="70" height="74" rx="10" fill="#EEF0FF" stroke="#4361EE" stroke-width="3"/>
+        <rect x="18" y="16" width="54" height="20" rx="5" fill="#4361EE"/>
+        <text x="45" y="31" font-family="JetBrains Mono,monospace" font-size="13" font-weight="700" fill="white" text-anchor="middle">2×6=12</text>
+        <rect x="18" y="44" width="14" height="10" rx="3" fill="#4361EE" opacity="0.7"/>
+        <rect x="38" y="44" width="14" height="10" rx="3" fill="#4361EE" opacity="0.7"/>
+        <rect x="58" y="44" width="14" height="10" rx="3" fill="#F4A261"/>
+        <rect x="18" y="60" width="14" height="10" rx="3" fill="#4361EE" opacity="0.7"/>
+        <rect x="38" y="60" width="14" height="10" rx="3" fill="#4361EE" opacity="0.7"/>
+        <rect x="58" y="60" width="14" height="22" rx="3" fill="#2DC653"/>
+        <rect x="18" y="76" width="14" height="6" rx="3" fill="#4361EE" opacity="0.7"/>
+        <rect x="38" y="76" width="14" height="6" rx="3" fill="#4361EE" opacity="0.7"/>
+      </svg>
+    </div>
+    <h2 id="modalTitle">Hi there, Mathematician!</h2>
+    <p>What's your name? We'll track your scores and cheer you on!</p>
+    <label for="usernameInput" style="display:none">Your name</label>
+    <input type="text" id="usernameInput" placeholder="Enter your name…" maxlength="32" autocomplete="off" />
+    <button class="btn btn-primary btn-full" id="modalStartBtn">Let's Start! 🚀</button>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- Main Page -->
+<div class="page-wrap">
+
+  <!-- Top bar: breadcrumb + help link -->
+  <div class="top-bar">
+    <nav class="breadcrumb" aria-label="Breadcrumb" style="margin-bottom:0">
+      <a href="../../index.html">🏠 Home</a>
+      <span>›</span>
+      <a href="../../index.html#grade-3-math">Grade 3 Math</a>
+      <span>›</span>
+      <a href="math-grade3-multiplication-tables-help.html">Multiplication Tables</a>
+      <span>›</span>
+      <span>Worksheet</span>
+    </nav>
+    <a href="math-grade3-multiplication-tables-help.html" class="btn btn-outline" style="padding:7px 18px;font-size:0.82rem;">📘 View Help Guide</a>
+  </div>
+
+  <!-- Welcome bar -->
+  <div class="welcome-bar">
+    <div>
+      <div class="welcome-name" id="welcomeName">Welcome! 👋</div>
+    </div>
+    <button class="change-name-btn" id="changeNameBtn" aria-label="Change your name">✏️ Change Name</button>
+  </div>
+
+  <!-- Stats bar -->
+  <div class="stats-bar" role="status" aria-live="polite">
+    <div class="stat-item">📋 Worksheets done: <strong id="statDone">0</strong></div>
+    <div class="stat-item">🏆 Best score: <strong id="statBest">—</strong>/10</div>
+    <div class="stat-item">📈 Last score: <strong id="statLast">—</strong>/10</div>
+  </div>
+
+  <!-- Controls -->
+  <div class="controls" role="group" aria-label="Worksheet settings">
+    <span class="controls-label">Difficulty:</span>
+    <button class="diff-pill easy active" id="pillEasy" aria-pressed="true">🟢 Easy</button>
+    <button class="diff-pill hard" id="pillHard" aria-pressed="false">🔴 Hard</button>
+    <div class="controls-divider" aria-hidden="true"></div>
+    <button class="btn btn-neutral" id="newWsBtn">🔄 New Worksheet</button>
+  </div>
+
+  <hr class="section-divider" />
+
+  <!-- Score Banner -->
+  <div class="score-banner" id="scoreBanner" aria-live="assertive" role="status">
+    <div class="score-row">
+      <div class="score-num" id="scoreNum">0/10</div>
+      <div class="score-msg" id="scoreMsg"></div>
+    </div>
+    <div class="progress-track" aria-hidden="true">
+      <div class="progress-fill" id="progressFill" style="width:0%"></div>
+    </div>
+    <div class="reveal-warning" id="revealWarning">⚠️ Answers are now visible. Start a New Worksheet to try again.</div>
+    <div class="post-submit" id="postSubmitBtns">
+      <button class="btn btn-outline btn-lg" id="showAnswersBtn">💡 Show Answers</button>
+      <button class="btn btn-outline btn-lg" id="shareBtn" style="border-color:#6C63FF;color:#6C63FF;">📤 Share Results</button>
+    </div>
+  </div>
+
+  <!-- Questions -->
+  <ol class="questions-list" id="questionsList" aria-label="Worksheet questions"></ol>
+
+  <!-- Submit area -->
+  <div class="submit-area">
+    <button class="btn btn-primary btn-full" id="submitBtn">✅ Submit Worksheet</button>
+    <button class="btn btn-neutral btn-full" id="newWsBtnBottom">🔄 New Worksheet</button>
+  </div>
+
+  <!-- Bottom nav -->
+  <div class="bottom-nav">
+    <a href="../../index.html#grade-3-math">← Back to Grade 3 Math topics</a>
+  </div>
+
+</div><!-- /page-wrap -->
+
+<script>
+(function () {
+  'use strict';
+
+  /* ─── Constants ─────────────────────────────────────── */
+  const STATS_KEY = 'ws_math_grade3_multiplication-tables_stats';
+  const USERNAME_KEY = 'ws_username';
+  const TOPIC = 'Multiplication Tables';
+  const GRADE = 3;
+
+  /* ─── State ──────────────────────────────────────────── */
+  let questions = [];
+  let difficulty = 'easy';
+  let submitted = false;
+  let answersRevealed = false;
+  let score = 0;
+
+  /* ─── Helpers ────────────────────────────────────────── */
+  function rand(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+  function pick(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
+  }
+  function shuffle(arr) {
+    const a = arr.slice();
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
+  /* ─── Question Generators ────────────────────────────── */
+
+  /* TYPE 1 — Direct multiply (number input) */
+  function makeDirectQ(easy) {
+    const tables = easy ? [2, 5, 10] : [2,3,4,5,6,7,8,9,10];
+    const a = pick(tables);
+    const b = rand(1, 10);
+    return {
+      type: 'number',
+      format: 'direct',
+      text: `What is <span class="mono">${a} × ${b}</span>?`,
+      answer: String(a * b),
+      label: `${a} × ${b} = ?`
+    };
+  }
+
+  /* TYPE 2 — Reverse / missing factor (number input) */
+  function makeReverseQ(easy) {
+    const tables = easy ? [2, 5, 10] : [2,3,4,5,6,7,8,9,10];
+    const b = pick(tables);
+    const a = rand(2, 10);
+    const product = a * b;
+    // which factor is missing: randomly pick first or second
+    const missingFirst = Math.random() < 0.5;
+    const text = missingFirst
+      ? `<span class="mono">? × ${b} = ${product}</span> — What is the missing number?`
+      : `<span class="mono">${a} × ? = ${product}</span> — What is the missing number?`;
+    return {
+      type: 'number',
+      format: 'reverse',
+      text,
+      answer: missingFirst ? String(a) : String(b),
+      label: 'Missing factor'
+    };
+  }
+
+  /* TYPE 3 — True / False (radio) */
+  function makeTFQ(easy) {
+    const tables = easy ? [2, 5, 10] : [2,3,4,5,6,7,8,9,10];
+    const a = pick(tables);
+    const b = rand(1, 10);
+    const correct = a * b;
+    const isTrue = Math.random() < 0.5;
+    const displayed = isTrue ? correct : correct + pick([-2, -1, 1, 2, 3, -3]);
+    return {
+      type: 'radio',
+      format: 'truefalse',
+      options: ['True', 'False'],
+      text: `True or False: <span class="mono">${a} × ${b} = ${displayed}</span>`,
+      answer: isTrue ? 'True' : 'False',
+      label: 'True or False'
+    };
+  }
+
+  /* TYPE 4 — Multiple choice (4 options, select) */
+  function makeMCQ(easy) {
+    const tables = easy ? [2, 5, 10] : [2,3,4,5,6,7,8,9,10];
+    const a = pick(tables);
+    const b = rand(2, 10);
+    const correct = a * b;
+    const wrong = new Set();
+    while (wrong.size < 3) {
+      const offset = pick([-4,-3,-2,-1,1,2,3,4]);
+      const w = correct + offset;
+      if (w > 0 && w !== correct) wrong.add(w);
+    }
+    const options = shuffle([correct, ...[...wrong]]);
+    return {
+      type: 'select',
+      format: 'mc',
+      text: `What is <span class="mono">${a} × ${b}</span>? Choose the correct answer.`,
+      options: options.map(String),
+      answer: String(correct),
+      label: 'Choose one'
+    };
+  }
+
+  /* TYPE 5 — Word problem (number input) */
+  function makeWordQ(easy) {
+    const scenarios = [
+      (a, b, p) => `There are <strong>${a}</strong> baskets. Each basket has <strong>${b}</strong> oranges. How many oranges are there in total?`,
+      (a, b, p) => `A classroom has <strong>${a}</strong> rows of desks. Each row has <strong>${b}</strong> desks. How many desks are there?`,
+      (a, b, p) => `A baker makes <strong>${a}</strong> trays of cookies. Each tray has <strong>${b}</strong> cookies. How many cookies did the baker make?`,
+      (a, b, p) => `There are <strong>${a}</strong> boxes. Each box holds <strong>${b}</strong> crayons. How many crayons are there altogether?`,
+      (a, b, p) => `A farmer plants <strong>${a}</strong> rows of trees. Each row has <strong>${b}</strong> trees. How many trees did the farmer plant?`,
+    ];
+    const tables = easy ? [2, 5, 10] : [3,4,6,7,8,9];
+    const a = rand(2, 9);
+    const b = pick(tables);
+    const product = a * b;
+    const template = pick(scenarios);
+    return {
+      type: 'number',
+      format: 'word',
+      text: template(a, b, product),
+      answer: String(product),
+      label: 'Your answer'
+    };
+  }
+
+  /* TYPE 6 — Ordering: "Which product is larger?" (select) */
+  function makeCompareQ(easy) {
+    const tables = easy ? [2, 5, 10] : [3,4,6,7,8,9];
+    let a1, b1, a2, b2, p1, p2;
+    do {
+      a1 = pick(tables); b1 = rand(2, 9);
+      a2 = pick(tables); b2 = rand(2, 9);
+      p1 = a1 * b1; p2 = a2 * b2;
+    } while (p1 === p2);
+    const larger = p1 > p2 ? `${a1} × ${b1}` : `${a2} × ${b2}`;
+    return {
+      type: 'select',
+      format: 'compare',
+      text: `Which product is <strong>larger</strong>? <span class="mono">${a1} × ${b1}</span> or <span class="mono">${a2} × ${b2}</span>?`,
+      options: [`${a1} × ${b1}`, `${a2} × ${b2}`],
+      answer: larger,
+      label: 'Select the larger'
+    };
+  }
+
+  /* ─── Generate 10 Questions ──────────────────────────── */
+  function generateQuestions(easy) {
+    const qs = [];
+    // Fixed format sequence to ensure variety
+    const formats = [
+      () => makeDirectQ(easy),
+      () => makeWordQ(easy),
+      () => makeTFQ(easy),
+      () => makeDirectQ(easy),
+      () => makeMCQ(easy),
+      () => makeWordQ(easy),
+      () => makeReverseQ(easy),
+      () => makeTFQ(easy),
+      () => makeCompareQ(easy),
+      () => makeReverseQ(easy),
+    ];
+    for (let i = 0; i < 10; i++) {
+      const q = formats[i]();
+      q.userAnswer = null;
+      q.isCorrect = null;
+      qs.push(q);
+    }
+    return qs;
+  }
+
+  /* ─── Render Questions ───────────────────────────────── */
+  function renderQuestions() {
+    const list = document.getElementById('questionsList');
+    list.innerHTML = '';
+
+    questions.forEach((q, i) => {
+      const li = document.createElement('li');
+      li.className = 'q-card';
+      li.id = `qcard-${i}`;
+      li.style.animationDelay = `${i * 60}ms`;
+
+      const metaDiv = `
+        <div class="q-meta">
+          <span class="q-num">Q${i + 1}</span>
+          <span>
+            <span class="q-icon q-icon-correct" aria-hidden="true">✅</span>
+            <span class="q-icon q-icon-wrong" aria-hidden="true">❌</span>
+          </span>
+        </div>`;
+
+      const labelId = `qlabel-${i}`;
+      const inputId = `qinput-${i}`;
+
+      let inputHtml = '';
+      if (q.type === 'number') {
+        inputHtml = `
+          <label id="${labelId}" for="${inputId}" class="sr-only">${q.label}</label>
+          <input class="q-input" type="number" id="${inputId}" data-idx="${i}"
+            min="0" max="1000" autocomplete="off" aria-labelledby="${labelId}" />`;
+      } else if (q.type === 'radio') {
+        inputHtml = `<div class="radio-group" role="radiogroup" aria-label="${q.label}">` +
+          q.options.map(opt => `
+            <label class="radio-label">
+              <input type="radio" name="qradio-${i}" data-idx="${i}" value="${opt}" />
+              ${opt}
+            </label>`).join('') +
+          `</div>`;
+      } else if (q.type === 'select') {
+        inputHtml = `
+          <label id="${labelId}" for="${inputId}">${q.label}:</label><br/>
+          <select class="q-select" id="${inputId}" data-idx="${i}" aria-labelledby="${labelId}">
+            <option value="" disabled selected>— choose —</option>
+            ${q.options.map(opt => `<option value="${opt}">${opt}</option>`).join('')}
+          </select>`;
+      }
+
+      li.innerHTML = `
+        ${metaDiv}
+        <div class="q-text">${q.text}</div>
+        <div>
+          ${inputHtml}
+          <div class="skip-tip" id="skiptip-${i}">Don't skip this one! 😊</div>
+          <div class="answer-reveal-chip" id="revealchip-${i}"></div>
+        </div>`;
+
+      list.appendChild(li);
+    });
+  }
+
+  /* ─── Get User Answer ────────────────────────────────── */
+  function getUserAnswer(q, i) {
+    if (q.type === 'number') {
+      return document.getElementById(`qinput-${i}`).value.trim();
+    } else if (q.type === 'radio') {
+      const checked = document.querySelector(`input[name="qradio-${i}"]:checked`);
+      return checked ? checked.value : '';
+    } else if (q.type === 'select') {
+      const sel = document.getElementById(`qinput-${i}`);
+      return sel.value;
+    }
+    return '';
+  }
+
+  /* ─── Compare Answers ────────────────────────────────── */
+  function answersMatch(userRaw, correct) {
+    const user = userRaw.trim().toLowerCase();
+    const exp  = correct.trim().toLowerCase();
+    if (user === exp) return true;
+    // numeric tolerance
+    const un = parseFloat(user), cn = parseFloat(exp);
+    if (!isNaN(un) && !isNaN(cn)) return Math.abs(un - cn) < 0.001;
+    return false;
+  }
+
+  /* ─── Submit ─────────────────────────────────────────── */
+  function submitWorksheet() {
+    if (submitted) return;
+
+    // Check for blanks
+    let hasBlank = false;
+    questions.forEach((q, i) => {
+      const ua = getUserAnswer(q, i);
+      const tip = document.getElementById(`skiptip-${i}`);
+      const card = document.getElementById(`qcard-${i}`);
+      if (!ua) {
+        hasBlank = true;
+        tip.classList.add('visible');
+        // highlight input
+        if (q.type === 'number') {
+          const inp = document.getElementById(`qinput-${i}`);
+          inp.classList.add('error');
+          inp.addEventListener('input', () => {
+            inp.classList.remove('error');
+            tip.classList.remove('visible');
+          }, { once: true });
+        }
+      } else {
+        tip.classList.remove('visible');
+      }
+    });
+    if (hasBlank) return;
+
+    submitted = true;
+    score = 0;
+
+    questions.forEach((q, i) => {
+      const ua = getUserAnswer(q, i);
+      q.userAnswer = ua;
+      q.isCorrect = answersMatch(ua, q.answer);
+      if (q.isCorrect) score++;
+
+      const card = document.getElementById(`qcard-${i}`);
+      card.classList.add(q.isCorrect ? 'correct' : 'wrong');
+
+      // disable inputs
+      if (q.type === 'number') {
+        document.getElementById(`qinput-${i}`).disabled = true;
+      } else if (q.type === 'radio') {
+        document.querySelectorAll(`input[name="qradio-${i}"]`).forEach(r => r.disabled = true);
+      } else if (q.type === 'select') {
+        document.getElementById(`qinput-${i}`).disabled = true;
+      }
+    });
+
+    // Score banner
+    const messages = {
+      10: "🏆 PERFECT SCORE! Are you secretly a math teacher?! 🤫📐",
+       9: "🔥 So close to perfect! One slipped away, but you're on fire!",
+       8: "😎 8 out of 10 — seriously impressive! You clearly paid attention!",
+       7: "👏 7/10 — above average! A little more practice and you'll be unstoppable.",
+       6: "👍 More than half right! You're getting the hang of this. Keep going!",
+       5: "🤔 Exactly half... a coin flip could've done that! You've got more in you — try again!",
+    };
+    let msg;
+    if (score in messages) msg = messages[score];
+    else if (score >= 3) msg = "😅 Hmm... the numbers are winning right now. Check the Help page and come back stronger! 💪";
+    else if (score >= 1) msg = "🐣 Everyone starts somewhere! Sneak a peek at the Guide — it'll make a huge difference.";
+    else msg = "😲 Zero?! That's actually impressive in a different way. The Help page is your best friend right now! 📘";
+
+    document.getElementById('scoreNum').textContent = `${score}/10 🎉`;
+    document.getElementById('scoreMsg').textContent = msg;
+    document.getElementById('progressFill').style.width = `${score * 10}%`;
+    const banner = document.getElementById('scoreBanner');
+    banner.classList.add('visible');
+    banner.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    document.getElementById('postSubmitBtns').classList.add('visible');
+    document.getElementById('submitBtn').disabled = true;
+
+    // Update stats
+    updateStats(score);
+  }
+
+  /* ─── Stats ──────────────────────────────────────────── */
+  function loadStats() {
+    try {
+      return JSON.parse(localStorage.getItem(STATS_KEY)) || { done: 0, best: 0, last: null };
+    } catch { return { done: 0, best: 0, last: null }; }
+  }
+  function saveStats(s) {
+    localStorage.setItem(STATS_KEY, JSON.stringify(s));
+  }
+  function updateStats(newScore) {
+    const s = loadStats();
+    s.done++;
+    s.last = newScore;
+    if (newScore > s.best) s.best = newScore;
+    saveStats(s);
+    renderStats();
+  }
+  function renderStats() {
+    const s = loadStats();
+    document.getElementById('statDone').textContent = s.done;
+    document.getElementById('statBest').textContent = s.best;
+    document.getElementById('statLast').textContent = s.last !== null ? s.last : '—';
+  }
+
+  /* ─── Show Answers ───────────────────────────────────── */
+  function showAnswers() {
+    if (answersRevealed) return;
+    answersRevealed = true;
+    document.getElementById('showAnswersBtn').disabled = true;
+    document.getElementById('revealWarning').classList.add('visible');
+    document.getElementById('newWsBtn').classList.add('pulse-attention');
+    document.getElementById('newWsBtnBottom').classList.add('pulse-attention');
+
+    questions.forEach((q, i) => {
+      const chip = document.getElementById(`revealchip-${i}`);
+      chip.classList.add('visible');
+      if (q.isCorrect) {
+        chip.classList.add('was-correct');
+        chip.textContent = `✅ Your answer was correct: ${q.answer}`;
+      } else {
+        chip.classList.add('was-wrong');
+        chip.innerHTML = `❌ Your answer: <strong>${q.userAnswer || '(blank)'}</strong> → Correct answer: <strong>${q.answer}</strong>`;
+      }
+    });
+  }
+
+  /* ─── Share Results ──────────────────────────────────── */
+  function shareResults() {
+    const username = localStorage.getItem(USERNAME_KEY) || 'Anonymous';
+    const diffLabel = difficulty === 'easy' ? 'Easy' : 'Hard';
+    const emojiRow = questions.map(q => q.isCorrect ? '✅' : '❌').join('');
+    const text = `📐 Math Worksheet — ${TOPIC} (Grade ${GRADE})\n👤 ${username} scored ${score}/10 on ${diffLabel} mode!\n${emojiRow}\n\nThink you can beat it? Try here:\n🔗 ${location.href}`;
+
+    if (navigator.share) {
+      navigator.share({ title: `${TOPIC} — Grade ${GRADE} Math`, text, url: location.href }).catch(() => {});
+    } else if (navigator.clipboard) {
+      navigator.clipboard.writeText(text).then(() => showToast('Results copied! Share it anywhere 📤'));
+    } else {
+      showToast('Copy the URL and share it manually 🔗');
+    }
+  }
+
+  /* ─── New Worksheet ──────────────────────────────────── */
+  function newWorksheet() {
+    submitted = false;
+    answersRevealed = false;
+    score = 0;
+
+    questions = generateQuestions(difficulty === 'easy');
+    renderQuestions();
+
+    document.getElementById('scoreBanner').classList.remove('visible');
+    document.getElementById('postSubmitBtns').classList.remove('visible');
+    document.getElementById('revealWarning').classList.remove('visible');
+    document.getElementById('submitBtn').disabled = false;
+    document.getElementById('showAnswersBtn').disabled = false;
+    document.getElementById('newWsBtn').classList.remove('pulse-attention');
+    document.getElementById('newWsBtnBottom').classList.remove('pulse-attention');
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    showToast('✨ New worksheet ready!');
+  }
+
+  /* ─── Toast ──────────────────────────────────────────── */
+  function showToast(msg) {
+    const t = document.getElementById('toast');
+    t.textContent = msg;
+    t.classList.add('show');
+    setTimeout(() => t.classList.remove('show'), 3000);
+  }
+
+  /* ─── Username ───────────────────────────────────────── */
+  function initUsername() {
+    const name = localStorage.getItem(USERNAME_KEY);
+    if (name) {
+      hideModal(name);
+    } else {
+      document.getElementById('modalOverlay').classList.remove('hidden');
+      document.getElementById('usernameInput').focus();
+    }
+  }
+  function hideModal(name) {
+    document.getElementById('modalOverlay').classList.add('hidden');
+    document.getElementById('modalOverlay').setAttribute('aria-expanded', 'false');
+    document.getElementById('welcomeName').textContent = `Welcome, ${name}! 👋`;
+    localStorage.setItem(USERNAME_KEY, name);
+  }
+
+  /* ─── Event Wiring ───────────────────────────────────── */
+  document.getElementById('modalStartBtn').addEventListener('click', () => {
+    const val = document.getElementById('usernameInput').value.trim();
+    if (!val) { document.getElementById('usernameInput').focus(); return; }
+    hideModal(val);
+  });
+  document.getElementById('usernameInput').addEventListener('keydown', e => {
+    if (e.key === 'Enter') document.getElementById('modalStartBtn').click();
+  });
+
+  document.getElementById('changeNameBtn').addEventListener('click', () => {
+    localStorage.removeItem(USERNAME_KEY);
+    document.getElementById('usernameInput').value = '';
+    document.getElementById('modalOverlay').classList.remove('hidden');
+    document.getElementById('modalOverlay').setAttribute('aria-expanded', 'true');
+    document.getElementById('usernameInput').focus();
+  });
+
+  document.getElementById('pillEasy').addEventListener('click', () => {
+    if (difficulty === 'easy') return;
+    difficulty = 'easy';
+    document.getElementById('pillEasy').classList.add('active');
+    document.getElementById('pillEasy').setAttribute('aria-pressed', 'true');
+    document.getElementById('pillHard').classList.remove('active');
+    document.getElementById('pillHard').setAttribute('aria-pressed', 'false');
+    newWorksheet();
+  });
+  document.getElementById('pillHard').addEventListener('click', () => {
+    if (difficulty === 'hard') return;
+    difficulty = 'hard';
+    document.getElementById('pillHard').classList.add('active');
+    document.getElementById('pillHard').setAttribute('aria-pressed', 'true');
+    document.getElementById('pillEasy').classList.remove('active');
+    document.getElementById('pillEasy').setAttribute('aria-pressed', 'false');
+    newWorksheet();
+  });
+
+  document.getElementById('submitBtn').addEventListener('click', submitWorksheet);
+  document.getElementById('showAnswersBtn').addEventListener('click', showAnswers);
+  document.getElementById('shareBtn').addEventListener('click', shareResults);
+  document.getElementById('newWsBtn').addEventListener('click', newWorksheet);
+  document.getElementById('newWsBtnBottom').addEventListener('click', newWorksheet);
+
+  /* ─── Init ───────────────────────────────────────────── */
+  initUsername();
+  renderStats();
+  questions = generateQuestions(true);
+  renderQuestions();
+
+})();
+</script>
+</body>
+</html>
