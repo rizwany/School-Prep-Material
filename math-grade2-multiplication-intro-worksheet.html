@@ -1,0 +1,385 @@
+<!-- Math | Grade 2 | Multiplication Intro | worksheet -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multiplication Intro Worksheet — Grade 2 Math | LearnPad</title>
+  <meta name="description" content="Interactive Grade 2 multiplication introduction worksheet. Groups, repeated addition, and arrays. 10 random questions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{--clr-bg:#ffffff;--clr-dot:#E8EDF5;--clr-accent:#4361EE;--clr-accent-dark:#3451D1;--clr-navy:#1A1A3E;--clr-tint:#EEF0FF;--clr-green:#2DC653;--clr-green-bg:#F0FFF4;--clr-red:#E63946;--clr-red-bg:#FFF0F1;--clr-amber:#F4A261;--clr-amber-bg:#FFFBF5;--clr-text:#2D2D4E;--clr-muted:#6B7280;--font-display:'Nunito',sans-serif;--font-mono:'JetBrains Mono',monospace;--radius:12px;--shadow:0 2px 16px rgba(67,97,238,0.08);--shadow-hover:0 8px 28px rgba(67,97,238,0.18)}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:var(--font-display);background-color:var(--clr-bg);background-image:radial-gradient(circle,var(--clr-dot) 1.5px,transparent 1.5px);background-size:20px 20px;color:var(--clr-text);min-height:100vh}
+    .page-wrap{max-width:860px;margin:0 auto;padding:24px 20px 60px}
+    .modal-overlay{position:fixed;inset:0;background:rgba(26,26,62,0.55);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;z-index:1000;padding:20px}
+    .modal-overlay.hidden{display:none}
+    .modal{background:#fff;border-radius:20px;padding:40px 36px;max-width:420px;width:100%;text-align:center;box-shadow:0 24px 64px rgba(67,97,238,0.22);animation:modalIn 0.35s cubic-bezier(0.34,1.56,0.64,1) both}
+    @keyframes modalIn{from{opacity:0;transform:scale(0.85) translateY(20px)}to{opacity:1;transform:scale(1) translateY(0)}}
+    .modal-doodle{width:80px;height:80px;margin:0 auto 18px}
+    .modal h2{font-size:1.4rem;font-weight:900;color:var(--clr-navy);margin-bottom:8px}
+    .modal p{color:var(--clr-muted);margin-bottom:20px;font-size:0.95rem}
+    .modal input[type=text]{width:100%;border:2px solid var(--clr-dot);border-radius:10px;padding:12px 16px;font-family:var(--font-display);font-size:1rem;font-weight:700;color:var(--clr-navy);outline:none;margin-bottom:14px;transition:border-color 0.2s}
+    .modal input[type=text]:focus{border-color:var(--clr-accent)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;font-family:var(--font-display);font-weight:700;font-size:0.92rem;padding:10px 26px;border-radius:50px;cursor:pointer;border:none;text-decoration:none;transition:background 0.18s,color 0.18s,transform 0.18s,box-shadow 0.18s}
+    .btn-primary{background:var(--clr-accent);color:#fff}.btn-primary:hover:not(:disabled){background:var(--clr-accent-dark);transform:translateY(-2px);box-shadow:0 6px 20px rgba(67,97,238,0.3)}.btn-primary:disabled{opacity:0.5;cursor:not-allowed}
+    .btn-outline{background:transparent;color:var(--clr-accent);border:2px solid var(--clr-accent)}.btn-outline:hover{background:var(--clr-tint);transform:translateY(-2px)}
+    .btn-neutral{background:transparent;color:var(--clr-navy);border:2px solid #C4C9DC}.btn-neutral:hover{background:#F3F4F8;transform:translateY(-2px)}
+    .btn-full{width:100%;padding:14px 26px;font-size:1rem}.btn-lg{padding:13px 32px;font-size:1rem}
+    .diff-pill{padding:8px 22px;border-radius:50px;font-weight:700;font-size:0.88rem;cursor:pointer;border:2px solid;transition:all 0.18s;background:transparent;font-family:var(--font-display)}
+    .diff-pill.easy{border-color:var(--clr-green);color:#1a7a3a}.diff-pill.easy.active{background:var(--clr-green);color:#fff}
+    .diff-pill.hard{border-color:var(--clr-red);color:#8B0010}.diff-pill.hard.active{background:var(--clr-red);color:#fff}
+    .btn-neutral.pulse-attention{animation:pulseGlow 1.2s ease-in-out infinite;border-color:var(--clr-accent);color:var(--clr-accent)}
+    @keyframes pulseGlow{0%,100%{box-shadow:0 0 0 0 rgba(67,97,238,0.3)}50%{box-shadow:0 0 0 8px rgba(67,97,238,0)}}
+    .breadcrumb{display:flex;align-items:center;gap:6px;font-size:0.82rem;color:var(--clr-muted);flex-wrap:wrap}
+    .breadcrumb a{color:var(--clr-accent);text-decoration:none;font-weight:600}.breadcrumb a:hover{text-decoration:underline}
+    .top-bar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+    .welcome-bar{background:var(--clr-tint);border-radius:var(--radius);padding:14px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:14px}
+    .welcome-name{font-size:1.15rem;font-weight:800;color:var(--clr-navy)}
+    .change-name-btn{font-size:0.8rem;color:var(--clr-accent);cursor:pointer;background:none;border:none;font-family:var(--font-display);font-weight:700;text-decoration:underline}
+    .stats-bar{display:flex;gap:20px;flex-wrap:wrap;padding:10px 0;margin-bottom:6px;border-bottom:2px solid var(--clr-dot)}
+    .stat-item{font-size:0.85rem;font-weight:700;color:var(--clr-muted)}.stat-item strong{color:var(--clr-navy)}
+    .controls{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:14px 0;margin-bottom:4px}
+    .controls-label{font-size:0.82rem;font-weight:700;color:var(--clr-muted);margin-right:4px}
+    .controls-divider{width:1px;height:28px;background:var(--clr-dot);margin:0 6px}
+    hr.section-divider{border:none;border-top:2px solid var(--clr-dot);margin:6px 0 24px}
+    .score-banner{background:linear-gradient(135deg,#fff 0%,var(--clr-tint) 100%);border:2px solid var(--clr-accent);border-radius:var(--radius);padding:22px 26px;margin-bottom:24px;display:none;animation:slideDown 0.4s ease both}
+    .score-banner.visible{display:block}
+    @keyframes slideDown{from{opacity:0;transform:translateY(-16px)}to{opacity:1;transform:translateY(0)}}
+    .score-row{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-bottom:12px}
+    .score-num{font-family:var(--font-mono);font-size:2.2rem;font-weight:700;color:var(--clr-accent)}
+    .score-msg{font-size:0.97rem;color:var(--clr-navy);font-weight:700;flex:1}
+    .progress-track{height:12px;background:var(--clr-dot);border-radius:99px;overflow:hidden}
+    .progress-fill{height:100%;background:var(--clr-green);border-radius:99px;transition:width 0.6s ease}
+    .reveal-warning{background:var(--clr-amber-bg);border-left:5px solid var(--clr-amber);border-radius:var(--radius);padding:10px 16px;font-size:0.88rem;font-weight:700;color:#8B4A00;margin-top:12px;display:none}
+    .reveal-warning.visible{display:block}
+    .post-submit{display:none;gap:10px;flex-wrap:wrap;margin-top:12px}.post-submit.visible{display:flex}
+    .questions-list{list-style:none}
+    .q-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);border-left:5px solid var(--clr-accent);padding:18px 22px;margin-bottom:14px;transition:transform 0.2s,box-shadow 0.2s,border-color 0.25s;animation:fadeInUp 0.4s ease both}
+    .q-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+    .q-card.correct{border-left-color:var(--clr-green);background:var(--clr-green-bg);animation:pulseCorrect 0.5s ease}
+    .q-card.wrong{border-left-color:var(--clr-red);background:var(--clr-red-bg);animation:shakeWrong 0.45s ease}
+    @keyframes pulseCorrect{0%{box-shadow:0 0 0 0 rgba(45,198,83,0.4)}50%{box-shadow:0 0 0 10px rgba(45,198,83,0)}100%{box-shadow:var(--shadow)}}
+    @keyframes shakeWrong{0%,100%{transform:translateX(0)}20%{transform:translateX(-6px)}40%{transform:translateX(6px)}60%{transform:translateX(-4px)}80%{transform:translateX(4px)}}
+    @keyframes fadeInUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+    .q-meta{display:flex;align-items:center;justify-content:space-between;margin-bottom:9px}
+    .q-num{font-family:var(--font-mono);font-size:0.75rem;font-weight:700;color:var(--clr-accent);background:var(--clr-tint);padding:2px 10px;border-radius:50px}
+    .q-icon{font-size:1.1rem;display:none}
+    .q-card.correct .q-icon-correct,.q-card.wrong .q-icon-wrong{display:inline}
+    .q-text{font-size:1rem;font-weight:700;color:var(--clr-navy);margin-bottom:12px;line-height:1.5}
+    .q-text .mono{font-family:var(--font-mono)}
+    .q-input{font-family:var(--font-mono);font-size:1.05rem;font-weight:600;color:var(--clr-navy);border:2px solid var(--clr-dot);border-radius:8px;padding:8px 13px;width:110px;outline:none;transition:border-color 0.2s}
+    .q-input:focus{border-color:var(--clr-accent)}.q-input.error{border-color:var(--clr-red)}.q-input:disabled{opacity:0.65;cursor:not-allowed}
+    .q-select{font-family:var(--font-display);font-size:0.95rem;font-weight:700;color:var(--clr-navy);border:2px solid var(--clr-dot);border-radius:8px;padding:8px 13px;outline:none;cursor:pointer;transition:border-color 0.2s;background:#fff}
+    .q-select:focus{border-color:var(--clr-accent)}.q-select:disabled{opacity:0.65;cursor:not-allowed}
+    .radio-group{display:flex;gap:10px;flex-wrap:wrap}
+    .radio-label{display:flex;align-items:center;gap:6px;font-weight:700;font-size:0.93rem;cursor:pointer;padding:7px 15px;border:2px solid var(--clr-dot);border-radius:50px;transition:border-color 0.18s,background 0.18s}
+    .radio-label:has(input:checked){border-color:var(--clr-accent);background:var(--clr-tint)}
+    .radio-label input{accent-color:var(--clr-accent)}
+    .skip-tip{font-size:0.78rem;color:var(--clr-red);font-weight:700;margin-top:5px;display:none}.skip-tip.visible{display:block}
+    .answer-reveal-chip{margin-top:9px;display:none;font-size:0.84rem;font-weight:700;border-radius:8px;padding:7px 13px}
+    .answer-reveal-chip.visible{display:block}.answer-reveal-chip.was-correct{background:var(--clr-green-bg);border:1.5px solid var(--clr-green);color:#1a7a3a}
+    .answer-reveal-chip.was-wrong{background:var(--clr-red-bg);border:1.5px solid var(--clr-red);color:#8B0010}
+    .submit-area{margin:24px 0 18px;display:flex;flex-direction:column;gap:10px}
+    .toast{position:fixed;bottom:28px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--clr-navy);color:#fff;font-size:0.9rem;font-weight:700;padding:12px 26px;border-radius:50px;z-index:2000;transition:transform 0.35s cubic-bezier(0.34,1.56,0.64,1),opacity 0.3s;opacity:0;pointer-events:none}
+    .toast.show{transform:translateX(-50%) translateY(0);opacity:1}
+    .bottom-nav{text-align:center;margin-top:44px;padding-top:20px;border-top:2px solid var(--clr-dot)}
+    .bottom-nav a{font-size:0.88rem;color:var(--clr-accent);text-decoration:none;font-weight:700}.bottom-nav a:hover{text-decoration:underline}
+    @media(max-width:600px){.page-wrap{padding:16px 14px 48px}}
+  </style>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-expanded="true">
+  <div class="modal">
+    <div class="modal-doodle" aria-hidden="true">
+      <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="4" y="4" width="72" height="72" rx="14" fill="#EEF0FF" stroke="#4361EE" stroke-width="3"/>
+        <circle cx="22" cy="28" r="5" fill="#4361EE"/>
+        <circle cx="40" cy="28" r="5" fill="#4361EE"/>
+        <circle cx="58" cy="28" r="5" fill="#4361EE"/>
+        <circle cx="22" cy="52" r="5" fill="#4361EE"/>
+        <circle cx="40" cy="52" r="5" fill="#4361EE"/>
+        <circle cx="58" cy="52" r="5" fill="#4361EE"/>
+        <text x="40" y="72" text-anchor="middle" font-family="JetBrains Mono" font-size="9" font-weight="700" fill="#2DC653">3×2=6</text>
+      </svg>
+    </div>
+    <h2 id="modalTitle">Hi there, Times Table Star!</h2>
+    <p>What's your name? We'll keep track of your scores!</p>
+    <label for="usernameInput" style="display:none">Your name</label>
+    <input type="text" id="usernameInput" placeholder="Enter your name…" maxlength="32" autocomplete="off" />
+    <button class="btn btn-primary btn-full" id="modalStartBtn">Let's Start! 🚀</button>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<div class="page-wrap">
+  <div class="top-bar">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">🏠 Home</a><span>›</span>
+      <a href="index.html#grade-2-math">Grade 2 Math</a><span>›</span>
+      <a href="math-grade2-multiplication-intro-help.html">Multiplication Intro</a><span>›</span>
+      <span>Worksheet</span>
+    </nav>
+    <a href="math-grade2-multiplication-intro-help.html" class="btn btn-outline" style="padding:7px 18px;font-size:0.82rem">📘 View Help Guide</a>
+  </div>
+
+  <div class="welcome-bar">
+    <div class="welcome-name" id="welcomeName">Welcome! 👋</div>
+    <button class="change-name-btn" id="changeNameBtn">✏️ Change Name</button>
+  </div>
+
+  <div class="stats-bar" role="status" aria-live="polite">
+    <div class="stat-item">📋 Worksheets done: <strong id="statDone">0</strong></div>
+    <div class="stat-item">🏆 Best score: <strong id="statBest">—</strong>/10</div>
+    <div class="stat-item">📈 Last score: <strong id="statLast">—</strong>/10</div>
+  </div>
+
+  <div class="controls" role="group" aria-label="Worksheet settings">
+    <span class="controls-label">Difficulty:</span>
+    <button class="diff-pill easy active" id="pillEasy" aria-pressed="true">🟢 Easy</button>
+    <button class="diff-pill hard" id="pillHard" aria-pressed="false">🔴 Hard</button>
+    <div class="controls-divider" aria-hidden="true"></div>
+    <button class="btn btn-neutral" id="newWsBtn">🔄 New Worksheet</button>
+  </div>
+  <hr class="section-divider" />
+
+  <div class="score-banner" id="scoreBanner" aria-live="assertive" role="status">
+    <div class="score-row">
+      <div class="score-num" id="scoreNum">0/10</div>
+      <div class="score-msg" id="scoreMsg"></div>
+    </div>
+    <div class="progress-track" aria-hidden="true"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+    <div class="reveal-warning" id="revealWarning">⚠️ Answers are now visible. Start a New Worksheet to try again.</div>
+    <div class="post-submit" id="postSubmitBtns">
+      <button class="btn btn-outline btn-lg" id="showAnswersBtn">💡 Show Answers</button>
+      <button class="btn btn-outline btn-lg" id="shareBtn" style="border-color:#6C63FF;color:#6C63FF">📤 Share Results</button>
+    </div>
+  </div>
+
+  <ol class="questions-list" id="questionsList" aria-label="Worksheet questions"></ol>
+
+  <div class="submit-area">
+    <button class="btn btn-primary btn-full" id="submitBtn">✅ Submit Worksheet</button>
+    <button class="btn btn-neutral btn-full" id="newWsBtnBottom">🔄 New Worksheet</button>
+  </div>
+
+  <div class="bottom-nav">
+    <a href="index.html#grade-2-math">← Back to Grade 2 Math topics</a>
+  </div>
+</div>
+
+<script>
+(function(){
+  'use strict';
+  const STATS_KEY='ws_math_grade2_multiplication-intro_stats';
+  const USERNAME_KEY='ws_username';
+  const TOPIC='Multiplication Intro';
+  const GRADE=2;
+  let questions=[],difficulty='easy',submitted=false,answersRevealed=false,score=0;
+
+  function rand(a,b){return Math.floor(Math.random()*(b-a+1))+a}
+  function pick(a){return a[Math.floor(Math.random()*a.length)]}
+  function shuffle(a){const r=a.slice();for(let i=r.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[r[i],r[j]]=[r[j],r[i]]}return r}
+
+  // Easy: factors 2–5, product ≤ 25; Hard: factors 2–8, product ≤ 64
+  function multPair(easy){
+    let a,b;
+    do{
+      a=rand(2,easy?5:8);b=rand(2,easy?5:8);
+    }while(a*b>(easy?25:64));
+    return[a,b];
+  }
+
+  function makeBasicMultQ(easy){
+    const[a,b]=multPair(easy);
+    return{type:'number',text:`<span class="mono">${a} × ${b} = ___</span>`,answer:String(a*b)};
+  }
+  function makeGroupsQ(easy){
+    const[a,b]=multPair(easy);
+    const items=['cookies','apples','stars','balls','pencils'];
+    const item=pick(items);
+    return{type:'number',text:`There are <strong>${a}</strong> groups with <strong>${b}</strong> ${item} in each group. How many ${item} in total?`,answer:String(a*b)};
+  }
+  function makeRepAddQ(easy){
+    const[a,b]=multPair(easy);
+    const addStr=Array(a).fill(b).join(' + ');
+    return{type:'number',text:`<span class="mono">${addStr} = ___</span>`,answer:String(a*b)};
+  }
+  function makeMissingFactorQ(easy){
+    const[a,b]=multPair(easy);const prod=a*b;
+    const hideFirst=Math.random()<0.5;
+    if(hideFirst)return{type:'number',text:`<span class="mono">___ × ${b} = ${prod}</span>`,answer:String(a)};
+    return{type:'number',text:`<span class="mono">${a} × ___ = ${prod}</span>`,answer:String(b)};
+  }
+  function makeWordMultQ(easy){
+    const[a,b]=multPair(easy);
+    const scenes=[
+      [`${a} bags, each with ${b} sweets`,'sweets'],
+      [`${a} rows, each with ${b} chairs`,'chairs'],
+      [`${a} boxes, each with ${b} eggs`,'eggs'],
+      [`${a} jars, each with ${b} marbles`,'marbles']
+    ];
+    const[desc,item]=pick(scenes);
+    return{type:'number',text:`There are ${desc}. How many ${item} are there in total?`,answer:String(a*b)};
+  }
+  function makeTFMultQ(easy){
+    const[a,b]=multPair(easy);const correct=a*b;const isTrue=Math.random()<0.5;
+    const shown=isTrue?correct:correct+(Math.random()<0.5?1:-1);
+    return{type:'radio',options:['True','False'],text:`True or False: <span class="mono">${a} × ${b} = ${shown}</span>`,answer:(shown===correct)?'True':'False'};
+  }
+  function makeMCMultQ(easy){
+    const[a,b]=multPair(easy);const correct=a*b;
+    const opts=shuffle([correct,correct+1,correct-1,correct+2].map(String));
+    return{type:'select',text:`What is <span class="mono">${a} × ${b}</span>?`,options:opts,answer:String(correct)};
+  }
+  function makeZeroOneQ(easy){
+    const n=rand(1,easy?9:12);const useZero=Math.random()<0.5;
+    if(useZero)return{type:'number',text:`<span class="mono">${n} × 0 = ___</span>`,answer:'0'};
+    return{type:'number',text:`<span class="mono">${n} × 1 = ___</span>`,answer:String(n)};
+  }
+  function makeArrayQ(easy){
+    const[a,b]=multPair(easy);
+    return{type:'number',text:`An array has <strong>${a}</strong> rows and <strong>${b}</strong> columns. How many items are in the array?`,answer:String(a*b)};
+  }
+  function makeRepAddToMultQ(easy){
+    const[a,b]=multPair(easy);const addStr=Array(a).fill(b).join(' + ');
+    const opts=shuffle([`${a}×${b}`,`${a}×${a}`,`${b}×${b}`,`${a+1}×${b}`]);
+    return{type:'select',text:`Which multiplication matches <span class="mono">${addStr}</span>?`,options:opts,answer:`${a}×${b}`};
+  }
+
+  function generateQuestions(easy){
+    const pool=[
+      ()=>makeBasicMultQ(easy),()=>makeGroupsQ(easy),()=>makeRepAddQ(easy),
+      ()=>makeMissingFactorQ(easy),()=>makeWordMultQ(easy),()=>makeTFMultQ(easy),
+      ()=>makeMCMultQ(easy),()=>makeZeroOneQ(easy),()=>makeArrayQ(easy),()=>makeRepAddToMultQ(easy)
+    ];
+    return pool.map(f=>{const q=f();q.userAnswer=null;q.isCorrect=null;return q});
+  }
+
+  function renderQuestions(){
+    const list=document.getElementById('questionsList');list.innerHTML='';
+    questions.forEach((q,i)=>{
+      const li=document.createElement('li');li.className='q-card';li.id=`qcard-${i}`;li.style.animationDelay=`${i*55}ms`;
+      let inputHtml='';
+      if(q.type==='number'){
+        inputHtml=`<label for="qinput-${i}" style="display:none">Answer</label><input class="q-input" type="number" id="qinput-${i}" data-idx="${i}" min="0" max="999" autocomplete="off"/>`;
+      }else if(q.type==='radio'){
+        inputHtml=`<div class="radio-group" role="radiogroup">${q.options.map(o=>`<label class="radio-label"><input type="radio" name="qradio-${i}" data-idx="${i}" value="${o}"/>${o}</label>`).join('')}</div>`;
+      }else if(q.type==='select'){
+        inputHtml=`<label for="qinput-${i}" style="display:none">Choose</label><select class="q-select" id="qinput-${i}" data-idx="${i}"><option value="" disabled selected>— choose —</option>${q.options.map(o=>`<option value="${o}">${o}</option>`).join('')}</select>`;
+      }
+      li.innerHTML=`<div class="q-meta"><span class="q-num">Q${i+1}</span><span><span class="q-icon q-icon-correct">✅</span><span class="q-icon q-icon-wrong">❌</span></span></div><div class="q-text">${q.text}</div><div>${inputHtml}<div class="skip-tip" id="skiptip-${i}">Don't skip this one! 😊</div><div class="answer-reveal-chip" id="revealchip-${i}"></div></div>`;
+      list.appendChild(li);
+    });
+  }
+
+  function getUserAnswer(q,i){
+    if(q.type==='number')return document.getElementById(`qinput-${i}`).value.trim();
+    if(q.type==='radio'){const c=document.querySelector(`input[name="qradio-${i}"]:checked`);return c?c.value:'';}
+    if(q.type==='select')return document.getElementById(`qinput-${i}`).value;
+    return'';
+  }
+  function answersMatch(u,c){
+    const us=u.trim().toLowerCase(),cs=c.trim().toLowerCase();
+    if(us===cs)return true;
+    const un=parseFloat(us),cn=parseFloat(cs);
+    return!isNaN(un)&&!isNaN(cn)&&Math.abs(un-cn)<0.001;
+  }
+
+  function submitWorksheet(){
+    if(submitted)return;
+    let hasBlank=false;
+    questions.forEach((q,i)=>{
+      const ua=getUserAnswer(q,i);const tip=document.getElementById(`skiptip-${i}`);
+      if(!ua){hasBlank=true;tip.classList.add('visible');if(q.type==='number'){const inp=document.getElementById(`qinput-${i}`);inp.classList.add('error');inp.addEventListener('input',()=>{inp.classList.remove('error');tip.classList.remove('visible')},{once:true});}}
+      else tip.classList.remove('visible');
+    });
+    if(hasBlank)return;
+    submitted=true;score=0;
+    questions.forEach((q,i)=>{
+      const ua=getUserAnswer(q,i);q.userAnswer=ua;q.isCorrect=answersMatch(ua,q.answer);if(q.isCorrect)score++;
+      document.getElementById(`qcard-${i}`).classList.add(q.isCorrect?'correct':'wrong');
+      if(q.type==='number')document.getElementById(`qinput-${i}`).disabled=true;
+      else if(q.type==='radio')document.querySelectorAll(`input[name="qradio-${i}"]`).forEach(r=>r.disabled=true);
+      else if(q.type==='select')document.getElementById(`qinput-${i}`).disabled=true;
+    });
+    const msgs={10:'🏆 PERFECT SCORE! Multiplication master!',9:'🔥 9/10 — outstanding!',8:'😎 8/10 — excellent!',7:'👏 7/10 — great job!',6:'👍 More than half right! Keep going.',5:'🤔 Exactly half — you\'ve got more in you!'};
+    const msg=score in msgs?msgs[score]:score>=3?'😅 Keep practising! Check the Help page. 💪':score>=1?'🐣 A good start! The Guide will help you.':'😲 No worries! Open the Help page and come back stronger. 📘';
+    document.getElementById('scoreNum').textContent=`${score}/10 🎉`;document.getElementById('scoreMsg').textContent=msg;
+    document.getElementById('progressFill').style.width=`${score*10}%`;
+    const banner=document.getElementById('scoreBanner');banner.classList.add('visible');banner.scrollIntoView({behavior:'smooth',block:'start'});
+    document.getElementById('postSubmitBtns').classList.add('visible');document.getElementById('submitBtn').disabled=true;
+    updateStats(score);
+  }
+
+  function loadStats(){try{return JSON.parse(localStorage.getItem(STATS_KEY))||{done:0,best:0,last:null}}catch{return{done:0,best:0,last:null}}}
+  function saveStats(s){localStorage.setItem(STATS_KEY,JSON.stringify(s))}
+  function updateStats(ns){const s=loadStats();s.done++;s.last=ns;if(ns>s.best)s.best=ns;saveStats(s);renderStats()}
+  function renderStats(){const s=loadStats();document.getElementById('statDone').textContent=s.done;document.getElementById('statBest').textContent=s.best;document.getElementById('statLast').textContent=s.last!==null?s.last:'—'}
+
+  function showAnswers(){
+    if(answersRevealed)return;answersRevealed=true;
+    document.getElementById('showAnswersBtn').disabled=true;document.getElementById('revealWarning').classList.add('visible');
+    document.getElementById('newWsBtn').classList.add('pulse-attention');document.getElementById('newWsBtnBottom').classList.add('pulse-attention');
+    questions.forEach((q,i)=>{
+      const chip=document.getElementById(`revealchip-${i}`);chip.classList.add('visible');
+      if(q.isCorrect){chip.classList.add('was-correct');chip.textContent=`✅ Your answer was correct: ${q.answer}`;}
+      else{chip.classList.add('was-wrong');chip.innerHTML=`❌ Your answer: <strong>${q.userAnswer||'(blank)'}</strong> → Correct: <strong>${q.answer}</strong>`;}
+    });
+  }
+
+  function shareResults(){
+    const name=localStorage.getItem(USERNAME_KEY)||'Anonymous';
+    const dl=difficulty==='easy'?'Easy':'Hard';
+    const emojis=questions.map(q=>q.isCorrect?'✅':'❌').join('');
+    const text=`✖️ Math Worksheet — ${TOPIC} (Grade ${GRADE})\n👤 ${name} scored ${score}/10 on ${dl} mode!\n${emojis}\n\nThink you can beat it?\n🔗 ${location.href}`;
+    if(navigator.share)navigator.share({title:`${TOPIC} — Grade ${GRADE}`,text,url:location.href}).catch(()=>{});
+    else if(navigator.clipboard)navigator.clipboard.writeText(text).then(()=>showToast('Results copied! Share it anywhere 📤'));
+    else showToast('Copy the URL and share it manually 🔗');
+  }
+
+  function newWorksheet(){
+    submitted=false;answersRevealed=false;score=0;
+    questions=generateQuestions(difficulty==='easy');renderQuestions();
+    document.getElementById('scoreBanner').classList.remove('visible');document.getElementById('postSubmitBtns').classList.remove('visible');
+    document.getElementById('revealWarning').classList.remove('visible');document.getElementById('submitBtn').disabled=false;
+    document.getElementById('showAnswersBtn').disabled=false;document.getElementById('newWsBtn').classList.remove('pulse-attention');document.getElementById('newWsBtnBottom').classList.remove('pulse-attention');
+    window.scrollTo({top:0,behavior:'smooth'});showToast('✨ New worksheet ready!');
+  }
+
+  function showToast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3000)}
+
+  function initUsername(){const n=localStorage.getItem(USERNAME_KEY);if(n)hideModal(n);else{document.getElementById('modalOverlay').classList.remove('hidden');document.getElementById('usernameInput').focus()}}
+  function hideModal(n){document.getElementById('modalOverlay').classList.add('hidden');document.getElementById('modalOverlay').setAttribute('aria-expanded','false');document.getElementById('welcomeName').textContent=`Welcome, ${n}! 👋`;localStorage.setItem(USERNAME_KEY,n)}
+
+  document.getElementById('modalStartBtn').addEventListener('click',()=>{const v=document.getElementById('usernameInput').value.trim();if(!v){document.getElementById('usernameInput').focus();return}hideModal(v)});
+  document.getElementById('usernameInput').addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('modalStartBtn').click()});
+  document.getElementById('changeNameBtn').addEventListener('click',()=>{localStorage.removeItem(USERNAME_KEY);document.getElementById('usernameInput').value='';document.getElementById('modalOverlay').classList.remove('hidden');document.getElementById('modalOverlay').setAttribute('aria-expanded','true');document.getElementById('usernameInput').focus()});
+  document.getElementById('pillEasy').addEventListener('click',()=>{if(difficulty==='easy')return;difficulty='easy';document.getElementById('pillEasy').classList.add('active');document.getElementById('pillEasy').setAttribute('aria-pressed','true');document.getElementById('pillHard').classList.remove('active');document.getElementById('pillHard').setAttribute('aria-pressed','false');newWorksheet()});
+  document.getElementById('pillHard').addEventListener('click',()=>{if(difficulty==='hard')return;difficulty='hard';document.getElementById('pillHard').classList.add('active');document.getElementById('pillHard').setAttribute('aria-pressed','true');document.getElementById('pillEasy').classList.remove('active');document.getElementById('pillEasy').setAttribute('aria-pressed','false');newWorksheet()});
+  document.getElementById('submitBtn').addEventListener('click',submitWorksheet);
+  document.getElementById('showAnswersBtn').addEventListener('click',showAnswers);
+  document.getElementById('shareBtn').addEventListener('click',shareResults);
+  document.getElementById('newWsBtn').addEventListener('click',newWorksheet);
+  document.getElementById('newWsBtnBottom').addEventListener('click',newWorksheet);
+
+  initUsername();renderStats();questions=generateQuestions(true);renderQuestions();
+})();
+</script>
+</body>
+</html>

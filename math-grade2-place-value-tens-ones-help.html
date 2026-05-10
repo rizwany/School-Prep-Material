@@ -1,0 +1,259 @@
+<!-- Math | Grade 2 | Place Value (Tens & Ones) | help -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Place Value (Tens &amp; Ones) — Grade 2 Math | LearnPad</title>
+  <meta name="description" content="Learn how the tens and ones places work, write numbers in expanded form, and compare 2-digit numbers." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{--clr-bg:#ffffff;--clr-dot:#E8EDF5;--clr-accent:#4361EE;--clr-accent-dark:#3451D1;--clr-navy:#1A1A3E;--clr-tint:#EEF0FF;--clr-green:#2DC653;--clr-green-bg:#F0FFF4;--clr-red:#E63946;--clr-red-bg:#FFF0F1;--clr-amber:#F4A261;--clr-amber-bg:#FFFBF5;--clr-text:#2D2D4E;--clr-muted:#6B7280;--font-display:'Nunito',sans-serif;--font-mono:'JetBrains Mono',monospace;--radius:12px;--shadow:0 2px 16px rgba(67,97,238,0.08);--shadow-hover:0 8px 28px rgba(67,97,238,0.18)}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:var(--font-display);background-color:var(--clr-bg);background-image:radial-gradient(circle,var(--clr-dot) 1.5px,transparent 1.5px);background-size:20px 20px;color:var(--clr-text);line-height:1.7;min-height:100vh}
+    .page-wrap{max-width:860px;margin:0 auto;padding:24px 20px 60px}
+    .breadcrumb{display:flex;align-items:center;gap:6px;font-size:0.82rem;color:var(--clr-muted);margin-bottom:28px;flex-wrap:wrap}
+    .breadcrumb a{color:var(--clr-accent);text-decoration:none;font-weight:600}.breadcrumb a:hover{text-decoration:underline}
+    .breadcrumb span{color:var(--clr-muted)}
+    .hero{margin-bottom:40px}.hero-badges{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+    .badge{font-size:0.78rem;font-weight:700;padding:4px 14px;border-radius:50px;letter-spacing:0.03em}
+    .badge-solid{background:var(--clr-accent);color:#fff}.badge-outline{border:2px solid var(--clr-accent);color:var(--clr-accent);background:transparent}
+    .hero h1{font-size:clamp(2rem,5vw,3rem);font-weight:900;color:var(--clr-navy);line-height:1.15;margin-bottom:12px}
+    .hero-intro{font-size:1.05rem;color:var(--clr-muted);max-width:620px;margin-bottom:18px}
+    .hero-meta{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+    .meta-pill{font-size:0.82rem;color:var(--clr-muted);font-weight:600}
+    .btn{display:inline-flex;align-items:center;gap:6px;font-family:var(--font-display);font-weight:700;font-size:0.92rem;padding:10px 26px;border-radius:50px;text-decoration:none;cursor:pointer;border:none;transition:background 0.18s,color 0.18s,transform 0.18s,box-shadow 0.18s}
+    .btn-primary{background:var(--clr-accent);color:#fff}.btn-primary:hover{background:var(--clr-accent-dark);transform:translateY(-2px);box-shadow:0 6px 20px rgba(67,97,238,0.25)}
+    .btn-white{background:#fff;color:var(--clr-accent);font-weight:800}.btn-white:hover{background:#EEF0FF;transform:translateY(-2px)}
+    section{margin-bottom:48px}
+    .section-label{font-size:0.75rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--clr-accent);margin-bottom:10px}
+    .section-title{font-size:1.55rem;font-weight:800;color:var(--clr-navy);margin-bottom:16px}
+    .card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);border-left:5px solid var(--clr-accent);padding:24px 28px;transition:transform 0.2s,box-shadow 0.2s;animation:fadeInUp 0.4s ease both}
+    .card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}.card+.card{margin-top:16px}.card p+p{margin-top:10px}
+    .card-tint{background:var(--clr-tint);border-left:5px solid var(--clr-accent);border-radius:var(--radius);padding:24px 28px}
+    .steps{list-style:none}.step-item{display:flex;gap:16px;align-items:flex-start;margin-bottom:16px}
+    .step-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;background:var(--clr-accent);color:#fff;font-weight:800;font-size:0.9rem;display:flex;align-items:center;justify-content:center}
+    .step-text{padding-top:4px;font-size:0.97rem}.step-text strong{color:var(--clr-navy)}
+    .example-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;margin-bottom:16px;border-left:5px solid var(--clr-accent);animation:fadeInUp 0.4s ease both;transition:transform 0.2s,box-shadow 0.2s}
+    .example-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+    .example-header{background:#F3F4F8;padding:10px 20px;font-weight:800;font-size:0.82rem;color:var(--clr-muted);letter-spacing:0.06em;text-transform:uppercase}
+    .example-body{padding:20px 24px}
+    .example-problem{font-size:1rem;font-weight:600;color:var(--clr-navy);margin-bottom:14px}
+    .example-working{border-left:3px solid var(--clr-tint);padding-left:14px;margin-bottom:14px}
+    .working-line{font-family:var(--font-mono);font-size:0.9rem;color:var(--clr-text);margin-bottom:6px}
+    .working-line span{color:var(--clr-muted);font-weight:400;margin-left:8px}
+    .answer-chip{display:inline-flex;align-items:center;gap:6px;background:var(--clr-green-bg);border:1.5px solid var(--clr-green);color:#1a7a3a;border-radius:50px;padding:6px 16px;font-weight:700;font-size:0.9rem}
+    .warning-box{background:var(--clr-amber-bg);border-left:5px solid var(--clr-amber);border-radius:var(--radius);padding:20px 24px}
+    .warning-box h3{font-size:1rem;font-weight:800;color:#8B4A00;margin-bottom:12px}
+    .warning-list{list-style:none}.warning-list li{margin-bottom:10px;font-size:0.93rem;line-height:1.55}
+    .warning-list .wrong{color:var(--clr-red);font-weight:700}.warning-list .right{color:var(--clr-green);font-weight:700}
+    .ref-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+    @media(max-width:560px){.ref-grid{grid-template-columns:1fr}}
+    .ref-item{background:#fff;border-radius:10px;padding:16px;box-shadow:0 1px 8px rgba(67,97,238,0.07)}
+    .ref-term{font-weight:800;font-size:0.85rem;color:var(--clr-accent);margin-bottom:4px}
+    .ref-def{font-size:0.88rem;color:var(--clr-text)}
+    .footer-cta{background:linear-gradient(135deg,var(--clr-accent) 0%,#6C63FF 100%);border-radius:var(--radius);padding:36px 32px;text-align:center;color:#fff;margin-top:56px}
+    .footer-cta h2{font-size:1.6rem;font-weight:900;margin-bottom:8px}.footer-cta p{opacity:0.88;margin-bottom:22px;font-size:1rem}
+    .back-link{display:block;text-align:center;margin-top:18px;font-size:0.85rem;color:rgba(255,255,255,0.75);text-decoration:none}.back-link:hover{color:#fff}
+    hr{border:none;border-top:2px solid var(--clr-dot);margin:40px 0}
+    .pv-table{border-collapse:collapse;margin:20px 0;font-family:var(--font-mono);font-size:1rem}
+    .pv-table th,.pv-table td{border:2px solid var(--clr-dot);padding:10px 24px;text-align:center;font-weight:700}
+    .pv-table th{background:var(--clr-accent);color:#fff;font-size:0.85rem;letter-spacing:0.06em;text-transform:uppercase}
+    .pv-table td{background:#fff;color:var(--clr-navy);font-size:1.4rem}
+    @keyframes fadeInUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+    @media(max-width:600px){.page-wrap{padding:16px 14px 48px}.example-body{padding:16px}.footer-cta{padding:28px 20px}}
+  </style>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="page-wrap">
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="index.html">🏠 Home</a><span>›</span>
+    <a href="index.html#grade-2-math">Grade 2 Math</a><span>›</span>
+    <span>Place Value (Tens &amp; Ones)</span>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-badges">
+      <span class="badge badge-solid">Grade 2</span>
+      <span class="badge badge-outline">Mathematics 🔢</span>
+    </div>
+    <h1>Place Value — Tens &amp; Ones</h1>
+    <p class="hero-intro">Every digit in a number holds a secret: its position tells you exactly how much it is worth. In this guide you will learn about the tens place and the ones place, write numbers in expanded form, and compare 2-digit numbers with confidence.</p>
+    <div class="hero-meta">
+      <span class="meta-pill">⏱ ~5 min read</span>
+      <a href="math-grade2-place-value-tens-ones-worksheet.html" class="btn btn-primary">📝 Jump to Worksheet →</a>
+    </div>
+  </header>
+
+  <section aria-labelledby="what-heading">
+    <p class="section-label">Section 1</p>
+    <h2 class="section-title" id="what-heading">What is Place Value?</h2>
+    <div class="card">
+      <p><strong>Place value</strong> means that the <em>position</em> of a digit tells us how much it is worth. The same digit can have very different values depending on where it sits.</p>
+      <p>For 2-digit numbers we have two places:</p>
+      <p>📦 <strong>Tens place</strong> — the digit on the <em>left</em> tells us how many groups of ten.<br>
+         📌 <strong>Ones place</strong> — the digit on the <em>right</em> tells us how many single units.</p>
+    </div>
+
+    <div style="overflow-x:auto;margin:24px 0">
+      <table class="pv-table" aria-label="Place value table for 47">
+        <thead>
+          <tr><th>Tens</th><th>Ones</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>4</td><td>7</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:0.88rem;color:var(--clr-muted);font-style:italic">The number 47: the 4 is in the tens place (= 40) and the 7 is in the ones place (= 7).</p>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="method-heading">
+    <p class="section-label">Section 2</p>
+    <h2 class="section-title" id="method-heading">How to Find Tens and Ones</h2>
+    <div class="card-tint">
+      <ol class="steps">
+        <li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Look at the left digit.</strong> That is the tens digit. Multiply it by 10 to find its value.</div></li>
+        <li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Look at the right digit.</strong> That is the ones digit. Its face value is its place value.</div></li>
+        <li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Add them together.</strong> Tens value + Ones value = the full number. This is called <em>expanded form</em>.</div></li>
+        <li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Compare numbers</strong> by looking at the tens digit first. More tens = bigger number. If tens are equal, compare the ones digit.</div></li>
+      </ol>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="examples-heading">
+    <p class="section-label">Section 3</p>
+    <h2 class="section-title" id="examples-heading">Worked Examples</h2>
+
+    <div class="example-card">
+      <div class="example-header">Example 1 — Find tens and ones</div>
+      <div class="example-body">
+        <div class="example-problem">How many tens and how many ones are in 63?</div>
+        <div class="example-working">
+          <div class="working-line">Tens digit: 6 → 6 × 10 = 60 <span>left digit</span></div>
+          <div class="working-line">Ones digit: 3 → 3 × 1 = 3 <span>right digit</span></div>
+        </div>
+        <span class="answer-chip">✅ 6 tens and 3 ones</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">Example 2 — Build a number from parts</div>
+      <div class="example-body">
+        <div class="example-problem">What number has 5 tens and 2 ones?</div>
+        <div class="example-working">
+          <div class="working-line">5 tens = 50 <span>5 × 10</span></div>
+          <div class="working-line">2 ones = 2</div>
+          <div class="working-line">50 + 2 = 52</div>
+        </div>
+        <span class="answer-chip">✅ Answer: 52</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">Example 3 — Expanded form</div>
+      <div class="example-body">
+        <div class="example-problem">Write 78 in expanded form.</div>
+        <div class="example-working">
+          <div class="working-line">Tens: 7 × 10 = 70</div>
+          <div class="working-line">Ones: 8 × 1 = 8</div>
+          <div class="working-line">78 = 70 + 8</div>
+        </div>
+        <span class="answer-chip">✅ 78 = 70 + 8</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">Example 4 — From expanded form to number</div>
+      <div class="example-body">
+        <div class="example-problem">What number is equal to 40 + 6?</div>
+        <div class="example-working">
+          <div class="working-line">40 = 4 tens, 6 = 6 ones</div>
+          <div class="working-line">Tens digit: 4, Ones digit: 6 → write 46</div>
+        </div>
+        <span class="answer-chip">✅ Answer: 46</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">Example 5 — Compare numbers</div>
+      <div class="example-body">
+        <div class="example-problem">Which is greater: 35 or 53?</div>
+        <div class="example-working">
+          <div class="working-line">35: 3 tens; 53: 5 tens <span>compare tens first</span></div>
+          <div class="working-line">5 tens > 3 tens, so 53 > 35</div>
+        </div>
+        <span class="answer-chip">✅ 53 is greater</span>
+      </div>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="watchout-heading">
+    <p class="section-label">Section 4</p>
+    <h2 class="section-title" id="watchout-heading">Watch Out! ⚠️</h2>
+    <div class="warning-box">
+      <h3>Common Mistakes to Avoid</h3>
+      <ul class="warning-list">
+        <li>
+          <span class="wrong">❌ Swapping tens and ones:</span> Reading 54 as "5 ones and 4 tens"<br>
+          <span class="right">✅ The LEFT digit is ALWAYS tens. 54 = 5 tens + 4 ones = 50 + 4.</span>
+        </li>
+        <li>
+          <span class="wrong">❌ Confusing the value with the digit:</span> Saying "the 6 in 63 is worth 6"<br>
+          <span class="right">✅ The 6 in 63 is in the tens place, so it is worth 60, not 6.</span>
+        </li>
+        <li>
+          <span class="wrong">❌ Comparing ones before tens:</span> Thinking 39 > 41 because 9 > 1<br>
+          <span class="right">✅ Always compare tens digits first. 41 has more tens, so 41 > 39.</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="ref-heading">
+    <p class="section-label">Section 5</p>
+    <h2 class="section-title" id="ref-heading">Quick Reference</h2>
+    <div class="card-tint">
+      <div class="ref-grid" style="margin-top:0">
+        <div class="ref-item"><div class="ref-term">Tens place</div><div class="ref-def">Left digit × 10. In 47, the 4 = 40.</div></div>
+        <div class="ref-item"><div class="ref-term">Ones place</div><div class="ref-def">Right digit × 1. In 47, the 7 = 7.</div></div>
+        <div class="ref-item"><div class="ref-term">Expanded form</div><div class="ref-def">47 = 40 + 7 = (4 × 10) + (7 × 1)</div></div>
+        <div class="ref-item"><div class="ref-term">10 more</div><div class="ref-def">Add 1 to the tens digit: 47 → 57</div></div>
+        <div class="ref-item"><div class="ref-term">10 less</div><div class="ref-def">Subtract 1 from tens digit: 47 → 37</div></div>
+        <div class="ref-item"><div class="ref-term">Comparing</div><div class="ref-def">More tens = bigger. Equal tens → compare ones.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer-cta">
+    <h2>Ready to practice? Let's go! 🚀</h2>
+    <p>Test your place value skills with 10 interactive questions — Easy or Hard mode.</p>
+    <a href="math-grade2-place-value-tens-ones-worksheet.html" class="btn btn-white">📝 Start Worksheet →</a>
+    <a href="index.html#grade-2-math" class="back-link">← Back to Grade 2 Math topics</a>
+  </div>
+
+</div>
+</body>
+</html>

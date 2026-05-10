@@ -1,0 +1,257 @@
+<!-- Math | Grade 1 | Counting Numbers | help -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Counting Numbers (1–100) — Grade 1 Math | LearnPad</title>
+  <meta name="description" content="Learn to count from 1 to 100 with the hundred chart, number names, and order for Grade 1." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{--clr-bg:#ffffff;--clr-dot:#E8EDF5;--clr-accent:#4361EE;--clr-accent-dark:#3451D1;--clr-navy:#1A1A3E;--clr-tint:#EEF0FF;--clr-green:#2DC653;--clr-green-bg:#F0FFF4;--clr-red:#E63946;--clr-red-bg:#FFF0F1;--clr-amber:#F4A261;--clr-amber-bg:#FFFBF5;--clr-text:#2D2D4E;--clr-muted:#6B7280;--font-display:'Nunito',sans-serif;--font-mono:'JetBrains Mono',monospace;--radius:12px;--shadow:0 2px 16px rgba(67,97,238,0.08);--shadow-hover:0 8px 28px rgba(67,97,238,0.18)}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:var(--font-display);background-color:var(--clr-bg);background-image:radial-gradient(circle,var(--clr-dot) 1.5px,transparent 1.5px);background-size:20px 20px;color:var(--clr-text);line-height:1.7;min-height:100vh}
+    .page-wrap{max-width:860px;margin:0 auto;padding:24px 20px 60px}
+    .breadcrumb{display:flex;align-items:center;gap:6px;font-size:0.82rem;color:var(--clr-muted);margin-bottom:28px;flex-wrap:wrap}
+    .breadcrumb a{color:var(--clr-accent);text-decoration:none;font-weight:600}.breadcrumb a:hover{text-decoration:underline}
+    .breadcrumb span{color:var(--clr-muted)}
+    .hero{margin-bottom:40px}.hero-badges{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+    .badge{font-size:0.78rem;font-weight:700;padding:4px 14px;border-radius:50px;letter-spacing:0.03em}
+    .badge-solid{background:var(--clr-accent);color:#fff}.badge-outline{border:2px solid var(--clr-accent);color:var(--clr-accent);background:transparent}
+    .hero h1{font-size:clamp(2rem,5vw,3rem);font-weight:900;color:var(--clr-navy);line-height:1.15;margin-bottom:12px}
+    .hero-intro{font-size:1.05rem;color:var(--clr-muted);max-width:620px;margin-bottom:18px}
+    .hero-meta{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+    .meta-pill{font-size:0.82rem;color:var(--clr-muted);font-weight:600}
+    .btn{display:inline-flex;align-items:center;gap:6px;font-family:var(--font-display);font-weight:700;font-size:0.92rem;padding:10px 26px;border-radius:50px;text-decoration:none;cursor:pointer;border:none;transition:background 0.18s,color 0.18s,transform 0.18s,box-shadow 0.18s}
+    .btn-primary{background:var(--clr-accent);color:#fff}.btn-primary:hover{background:var(--clr-accent-dark);transform:translateY(-2px);box-shadow:0 6px 20px rgba(67,97,238,0.25)}
+    .btn-white{background:#fff;color:var(--clr-accent);font-weight:800}.btn-white:hover{background:#EEF0FF;transform:translateY(-2px)}
+    section{margin-bottom:48px}
+    .section-label{font-size:0.75rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--clr-accent);margin-bottom:10px}
+    .section-title{font-size:1.55rem;font-weight:800;color:var(--clr-navy);margin-bottom:16px}
+    .card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);border-left:5px solid var(--clr-accent);padding:24px 28px;transition:transform 0.2s,box-shadow 0.2s;animation:fadeInUp 0.4s ease both}
+    .card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}.card+.card{margin-top:16px}.card p+p{margin-top:10px}
+    .card-tint{background:var(--clr-tint);border-left:5px solid var(--clr-accent);border-radius:var(--radius);padding:24px 28px}
+    .steps{list-style:none}.step-item{display:flex;gap:16px;align-items:flex-start;margin-bottom:16px}
+    .step-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;background:var(--clr-accent);color:#fff;font-weight:800;font-size:0.9rem;display:flex;align-items:center;justify-content:center}
+    .step-text{padding-top:4px;font-size:0.97rem}.step-text strong{color:var(--clr-navy)}
+    .example-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;margin-bottom:16px;border-left:5px solid var(--clr-accent);animation:fadeInUp 0.4s ease both;transition:transform 0.2s,box-shadow 0.2s}
+    .example-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+    .example-header{background:#F3F4F8;padding:10px 20px;font-weight:800;font-size:0.82rem;color:var(--clr-muted);letter-spacing:0.06em;text-transform:uppercase}
+    .example-body{padding:20px 24px}
+    .example-problem{font-size:1rem;font-weight:600;color:var(--clr-navy);margin-bottom:14px}
+    .example-working{border-left:3px solid var(--clr-tint);padding-left:14px;margin-bottom:14px}
+    .working-line{font-family:var(--font-mono);font-size:0.9rem;color:var(--clr-text);margin-bottom:6px}
+    .working-line span{color:var(--clr-muted);font-weight:400;margin-left:8px}
+    .answer-chip{display:inline-flex;align-items:center;gap:6px;background:var(--clr-green-bg);border:1.5px solid var(--clr-green);color:#1a7a3a;border-radius:50px;padding:6px 16px;font-weight:700;font-size:0.9rem}
+    .warning-box{background:var(--clr-amber-bg);border-left:5px solid var(--clr-amber);border-radius:var(--radius);padding:20px 24px}
+    .warning-box h3{font-size:1rem;font-weight:800;color:#8B4A00;margin-bottom:12px}
+    .warning-list{list-style:none}.warning-list li{margin-bottom:10px;font-size:0.93rem;line-height:1.55}
+    .warning-list .wrong{color:var(--clr-red);font-weight:700}.warning-list .right{color:var(--clr-green);font-weight:700}
+    .ref-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+    @media(max-width:560px){.ref-grid{grid-template-columns:1fr}}
+    .ref-item{background:#fff;border-radius:10px;padding:16px;box-shadow:0 1px 8px rgba(67,97,238,0.07)}
+    .ref-term{font-weight:800;font-size:0.85rem;color:var(--clr-accent);margin-bottom:4px}
+    .ref-def{font-size:0.88rem;color:var(--clr-text)}
+    .footer-cta{background:linear-gradient(135deg,var(--clr-accent) 0%,#6C63FF 100%);border-radius:var(--radius);padding:36px 32px;text-align:center;color:#fff;margin-top:56px}
+    .footer-cta h2{font-size:1.6rem;font-weight:900;margin-bottom:8px}.footer-cta p{opacity:0.88;margin-bottom:22px;font-size:1rem}
+    .back-link{display:block;text-align:center;margin-top:18px;font-size:0.85rem;color:rgba(255,255,255,0.75);text-decoration:none}.back-link:hover{color:#fff}
+    hr{border:none;border-top:2px solid var(--clr-dot);margin:40px 0}
+    /* Hundred chart */
+    .hundred-chart{display:grid;grid-template-columns:repeat(10,1fr);gap:4px;margin:24px 0;max-width:440px}
+    .hc-cell{font-family:var(--font-mono);font-size:0.78rem;font-weight:700;text-align:center;padding:6px 2px;border-radius:6px;background:#F3F4F8;color:var(--clr-text);transition:background 0.2s}
+    .hc-cell.highlight{background:var(--clr-accent);color:#fff}
+    .visual-caption{text-align:center;font-size:0.8rem;color:var(--clr-muted);margin-top:6px;font-style:italic}
+    @keyframes fadeInUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+    @media(max-width:600px){.page-wrap{padding:16px 14px 48px}.example-body{padding:16px}.footer-cta{padding:28px 20px}}
+  </style>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="page-wrap">
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="index.html">🏠 Home</a><span>›</span>
+    <a href="index.html#grade-1-math">Grade 1 Math</a><span>›</span>
+    <span>Counting Numbers</span>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-badges">
+      <span class="badge badge-solid">Grade 1</span>
+      <span class="badge badge-outline">Mathematics 🔢</span>
+    </div>
+    <h1>Counting Numbers (1–100)</h1>
+    <p class="hero-intro">In this guide, you'll learn how to count forwards and backwards, read and write numbers up to 100, and use the hundred chart to spot patterns in our number system.</p>
+    <div class="hero-meta">
+      <span class="meta-pill">⏱ ~5 min read</span>
+      <a href="math-grade1-counting-numbers-worksheet.html" class="btn btn-primary">📝 Jump to Worksheet →</a>
+    </div>
+  </header>
+
+  <section aria-labelledby="what-heading">
+    <p class="section-label">Section 1</p>
+    <h2 class="section-title" id="what-heading">What is Counting?</h2>
+    <div class="card">
+      <p>Counting means saying numbers <strong>one at a time in order</strong> as you point to or touch each object. Every number has its own special place in a sequence that never changes.</p>
+      <p>We can count <strong>forward</strong> (1, 2, 3, 4 …) to find out how many, or <strong>backward</strong> (10, 9, 8 …) like a rocket launch countdown!</p>
+      <p>Numbers are grouped into <strong>tens</strong>. After 9 comes 10, after 19 comes 20, and so on all the way to 100.</p>
+    </div>
+
+    <!-- Hundred chart rendered by JS -->
+    <div class="hundred-chart" id="hundredChart" role="img" aria-label="Hundred chart from 1 to 100, multiples of 10 highlighted"></div>
+    <p class="visual-caption">The hundred chart — multiples of 10 are highlighted in blue. Count along each row!</p>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="method-heading">
+    <p class="section-label">Section 2</p>
+    <h2 class="section-title" id="method-heading">How to Count to 100</h2>
+    <div class="card-tint">
+      <ol class="steps">
+        <li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Learn numbers 1–10 first.</strong> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10. Practice until you can say them without thinking.</div></li>
+        <li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Notice the tens pattern.</strong> After 10 comes 11, 12 … 19, 20. After 20 comes 21, 22 … 29, 30. The tens digit goes up by one each time!</div></li>
+        <li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Use the hundred chart.</strong> Start at 1 (top-left) and move right. When you reach the end of a row, drop down to the next row and start again.</div></li>
+        <li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Count on from any number.</strong> If you know you have 7 apples and pick up 3 more, count on: "8, 9, 10" — you don't need to start from 1!</div></li>
+      </ol>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="examples-heading">
+    <p class="section-label">Section 3</p>
+    <h2 class="section-title" id="examples-heading">Worked Examples</h2>
+
+    <div class="example-card">
+      <div class="example-header">Example 1 — Count forwards</div>
+      <div class="example-body">
+        <div class="example-problem">What are the next three numbers after 16?</div>
+        <div class="example-working">
+          <div class="working-line">16 → 17 → 18 → 19 <span>add 1 each time</span></div>
+        </div>
+        <span class="answer-chip">✅ Answer: 17, 18, 19</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">Example 2 — Count backwards</div>
+      <div class="example-body">
+        <div class="example-problem">What are the three numbers before 30?</div>
+        <div class="example-working">
+          <div class="working-line">30 → 29 → 28 → 27 <span>take away 1 each time</span></div>
+        </div>
+        <span class="answer-chip">✅ Answer: 29, 28, 27</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">Example 3 — Missing number in a sequence</div>
+      <div class="example-body">
+        <div class="example-problem">Fill in the blank: 45, 46, ___, 48, 49</div>
+        <div class="example-working">
+          <div class="working-line">46 + 1 = 47 <span>each number is 1 more than the last</span></div>
+        </div>
+        <span class="answer-chip">✅ Answer: 47</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">Example 4 — Tens and ones</div>
+      <div class="example-body">
+        <div class="example-problem">How many tens and ones are in 63?</div>
+        <div class="example-working">
+          <div class="working-line">63 = 6 tens and 3 ones <span>the first digit = tens, second = ones</span></div>
+          <div class="working-line">6 × 10 = 60, then 60 + 3 = 63</div>
+        </div>
+        <span class="answer-chip">✅ Answer: 6 tens and 3 ones</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">Example 5 — Which is greater?</div>
+      <div class="example-body">
+        <div class="example-problem">Which number is greater: 47 or 52?</div>
+        <div class="example-working">
+          <div class="working-line">47 has 4 tens. 52 has 5 tens. <span>compare the tens digit first</span></div>
+          <div class="working-line">5 tens > 4 tens, so 52 > 47</div>
+        </div>
+        <span class="answer-chip">✅ Answer: 52 is greater</span>
+      </div>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="watchout-heading">
+    <p class="section-label">Section 4</p>
+    <h2 class="section-title" id="watchout-heading">Watch Out! ⚠️</h2>
+    <div class="warning-box">
+      <h3>Common Mistakes to Avoid</h3>
+      <ul class="warning-list">
+        <li>
+          <span class="wrong">❌ Saying "ten-teen" or "eleventeen":</span> There are no such numbers!<br>
+          <span class="right">✅ After 10 comes eleven (11), twelve (12), thirteen (13) — these have special names.</span>
+        </li>
+        <li>
+          <span class="wrong">❌ Skipping a number when counting:</span> Counting "…17, 18, 20, 21…" and missing 19<br>
+          <span class="right">✅ Say the number AND touch each object. Point carefully so you don't skip anything.</span>
+        </li>
+        <li>
+          <span class="wrong">❌ Confusing the tens and ones:</span> Reading 63 as "thirty-six"<br>
+          <span class="right">✅ The LEFT digit = tens, the RIGHT digit = ones. 63 = sixty-three (6 tens, 3 ones).</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="ref-heading">
+    <p class="section-label">Section 5</p>
+    <h2 class="section-title" id="ref-heading">Quick Reference</h2>
+    <div class="card-tint">
+      <div class="ref-grid" style="margin-top:0">
+        <div class="ref-item"><div class="ref-term">Count forwards</div><div class="ref-def">Add 1 each time: 5, 6, 7, 8 …</div></div>
+        <div class="ref-item"><div class="ref-term">Count backwards</div><div class="ref-def">Subtract 1 each time: 10, 9, 8, 7 …</div></div>
+        <div class="ref-item"><div class="ref-term">Tens</div><div class="ref-def">10, 20, 30, 40, 50, 60, 70, 80, 90, 100</div></div>
+        <div class="ref-item"><div class="ref-term">Tens and ones</div><div class="ref-def">74 = 7 tens + 4 ones = 70 + 4</div></div>
+        <div class="ref-item"><div class="ref-term">Comparing</div><div class="ref-def">More tens = bigger number. If tens are equal, compare ones.</div></div>
+        <div class="ref-item"><div class="ref-term">Count on</div><div class="ref-def">Start from a known number and keep going: from 23 → 24, 25, 26 …</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer-cta">
+    <h2>Ready to practice? Let's go! 🚀</h2>
+    <p>Test your counting skills with 10 interactive questions — Easy or Hard mode.</p>
+    <a href="math-grade1-counting-numbers-worksheet.html" class="btn btn-white">📝 Start Worksheet →</a>
+    <a href="index.html#grade-1-math" class="back-link">← Back to Grade 1 Math topics</a>
+  </div>
+
+</div>
+<script>
+(function(){
+  const chart=document.getElementById('hundredChart');
+  for(let n=1;n<=100;n++){
+    const d=document.createElement('div');
+    d.className='hc-cell'+(n%10===0?' highlight':'');
+    d.textContent=n;
+    chart.appendChild(d);
+  }
+})();
+</script>
+</body>
+</html>

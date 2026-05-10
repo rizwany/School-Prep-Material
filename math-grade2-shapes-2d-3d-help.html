@@ -1,0 +1,270 @@
+<!-- Math | Grade 2 | Shapes (2D & 3D) | help -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2D &amp; 3D Shapes — Grade 2 Math | LearnPad</title>
+  <meta name="description" content="Learn the properties of 2D shapes (sides and corners) and 3D shapes (faces, edges, vertices) for Grade 2." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{--clr-bg:#ffffff;--clr-dot:#E8EDF5;--clr-accent:#4361EE;--clr-accent-dark:#3451D1;--clr-navy:#1A1A3E;--clr-tint:#EEF0FF;--clr-green:#2DC653;--clr-green-bg:#F0FFF4;--clr-red:#E63946;--clr-red-bg:#FFF0F1;--clr-amber:#F4A261;--clr-amber-bg:#FFFBF5;--clr-text:#2D2D4E;--clr-muted:#6B7280;--font-display:'Nunito',sans-serif;--font-mono:'JetBrains Mono',monospace;--radius:12px;--shadow:0 2px 16px rgba(67,97,238,0.08);--shadow-hover:0 8px 28px rgba(67,97,238,0.18)}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:var(--font-display);background-color:var(--clr-bg);background-image:radial-gradient(circle,var(--clr-dot) 1.5px,transparent 1.5px);background-size:20px 20px;color:var(--clr-text);line-height:1.7;min-height:100vh}
+    .page-wrap{max-width:860px;margin:0 auto;padding:24px 20px 60px}
+    .breadcrumb{display:flex;align-items:center;gap:6px;font-size:0.82rem;color:var(--clr-muted);margin-bottom:28px;flex-wrap:wrap}
+    .breadcrumb a{color:var(--clr-accent);text-decoration:none;font-weight:600}.breadcrumb a:hover{text-decoration:underline}
+    .breadcrumb span{color:var(--clr-muted)}
+    .hero{margin-bottom:40px}.hero-badges{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+    .badge{font-size:0.78rem;font-weight:700;padding:4px 14px;border-radius:50px;letter-spacing:0.03em}
+    .badge-solid{background:var(--clr-accent);color:#fff}.badge-outline{border:2px solid var(--clr-accent);color:var(--clr-accent);background:transparent}
+    .hero h1{font-size:clamp(2rem,5vw,3rem);font-weight:900;color:var(--clr-navy);line-height:1.15;margin-bottom:12px}
+    .hero-intro{font-size:1.05rem;color:var(--clr-muted);max-width:620px;margin-bottom:18px}
+    .hero-meta{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+    .meta-pill{font-size:0.82rem;color:var(--clr-muted);font-weight:600}
+    .btn{display:inline-flex;align-items:center;gap:6px;font-family:var(--font-display);font-weight:700;font-size:0.92rem;padding:10px 26px;border-radius:50px;text-decoration:none;cursor:pointer;border:none;transition:background 0.18s,color 0.18s,transform 0.18s,box-shadow 0.18s}
+    .btn-primary{background:var(--clr-accent);color:#fff}.btn-primary:hover{background:var(--clr-accent-dark);transform:translateY(-2px);box-shadow:0 6px 20px rgba(67,97,238,0.25)}
+    .btn-white{background:#fff;color:var(--clr-accent);font-weight:800}.btn-white:hover{background:#EEF0FF;transform:translateY(-2px)}
+    section{margin-bottom:48px}
+    .section-label{font-size:0.75rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--clr-accent);margin-bottom:10px}
+    .section-title{font-size:1.55rem;font-weight:800;color:var(--clr-navy);margin-bottom:16px}
+    .card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);border-left:5px solid var(--clr-accent);padding:24px 28px;transition:transform 0.2s,box-shadow 0.2s;animation:fadeInUp 0.4s ease both}
+    .card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}.card+.card{margin-top:16px}.card p+p{margin-top:10px}
+    .card-tint{background:var(--clr-tint);border-left:5px solid var(--clr-accent);border-radius:var(--radius);padding:24px 28px}
+    .steps{list-style:none}.step-item{display:flex;gap:16px;align-items:flex-start;margin-bottom:16px}
+    .step-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;background:var(--clr-accent);color:#fff;font-weight:800;font-size:0.9rem;display:flex;align-items:center;justify-content:center}
+    .step-text{padding-top:4px;font-size:0.97rem}.step-text strong{color:var(--clr-navy)}
+    .example-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;margin-bottom:16px;border-left:5px solid var(--clr-accent);animation:fadeInUp 0.4s ease both;transition:transform 0.2s,box-shadow 0.2s}
+    .example-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+    .example-header{background:#F3F4F8;padding:10px 20px;font-weight:800;font-size:0.82rem;color:var(--clr-muted);letter-spacing:0.06em;text-transform:uppercase}
+    .example-body{padding:20px 24px}
+    .example-problem{font-size:1rem;font-weight:600;color:var(--clr-navy);margin-bottom:14px}
+    .example-working{border-left:3px solid var(--clr-tint);padding-left:14px;margin-bottom:14px}
+    .working-line{font-family:var(--font-mono);font-size:0.9rem;color:var(--clr-text);margin-bottom:6px}
+    .working-line span{color:var(--clr-muted);font-weight:400;margin-left:8px}
+    .answer-chip{display:inline-flex;align-items:center;gap:6px;background:var(--clr-green-bg);border:1.5px solid var(--clr-green);color:#1a7a3a;border-radius:50px;padding:6px 16px;font-weight:700;font-size:0.9rem}
+    .warning-box{background:var(--clr-amber-bg);border-left:5px solid var(--clr-amber);border-radius:var(--radius);padding:20px 24px}
+    .warning-box h3{font-size:1rem;font-weight:800;color:#8B4A00;margin-bottom:12px}
+    .warning-list{list-style:none}.warning-list li{margin-bottom:10px;font-size:0.93rem;line-height:1.55}
+    .warning-list .wrong{color:var(--clr-red);font-weight:700}.warning-list .right{color:var(--clr-green);font-weight:700}
+    .ref-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+    @media(max-width:560px){.ref-grid{grid-template-columns:1fr}}
+    .ref-item{background:#fff;border-radius:10px;padding:16px;box-shadow:0 1px 8px rgba(67,97,238,0.07)}
+    .ref-term{font-weight:800;font-size:0.85rem;color:var(--clr-accent);margin-bottom:4px}
+    .ref-def{font-size:0.88rem;color:var(--clr-text)}
+    .footer-cta{background:linear-gradient(135deg,var(--clr-accent) 0%,#6C63FF 100%);border-radius:var(--radius);padding:36px 32px;text-align:center;color:#fff;margin-top:56px}
+    .footer-cta h2{font-size:1.6rem;font-weight:900;margin-bottom:8px}.footer-cta p{opacity:0.88;margin-bottom:22px;font-size:1rem}
+    .back-link{display:block;text-align:center;margin-top:18px;font-size:0.85rem;color:rgba(255,255,255,0.75);text-decoration:none}.back-link:hover{color:#fff}
+    hr{border:none;border-top:2px solid var(--clr-dot);margin:40px 0}
+    .shape-table{border-collapse:collapse;width:100%;margin:16px 0;font-size:0.9rem}
+    .shape-table th,.shape-table td{border:1.5px solid var(--clr-dot);padding:9px 12px;text-align:left}
+    .shape-table th{background:var(--clr-accent);color:#fff;font-weight:800;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.06em}
+    .shape-table td{background:#fff;color:var(--clr-navy);font-weight:600}
+    .shape-table tr:nth-child(even) td{background:var(--clr-tint)}
+    @keyframes fadeInUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+    @media(max-width:600px){.page-wrap{padding:16px 14px 48px}.example-body{padding:16px}.footer-cta{padding:28px 20px}.shape-table{font-size:0.8rem}}
+  </style>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="page-wrap">
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="index.html">🏠 Home</a><span>›</span>
+    <a href="index.html#grade-2-math">Grade 2 Math</a><span>›</span>
+    <span>Shapes (2D &amp; 3D)</span>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-badges">
+      <span class="badge badge-solid">Grade 2</span>
+      <span class="badge badge-outline">Mathematics 🔷</span>
+    </div>
+    <h1>2D &amp; 3D Shapes</h1>
+    <p class="hero-intro">Shapes are everywhere! In this guide you will learn about flat <strong>2D shapes</strong> — their sides and corners — and solid <strong>3D shapes</strong> — their faces, edges, and vertices. You'll also spot these shapes in the real world around you.</p>
+    <div class="hero-meta">
+      <span class="meta-pill">⏱ ~6 min read</span>
+      <a href="math-grade2-shapes-2d-3d-worksheet.html" class="btn btn-primary">📝 Jump to Worksheet →</a>
+    </div>
+  </header>
+
+  <section aria-labelledby="twod-heading">
+    <p class="section-label">Section 1</p>
+    <h2 class="section-title" id="twod-heading">2D Shapes — Flat Shapes</h2>
+    <div class="card">
+      <p><strong>2D shapes</strong> are flat. They have only <em>length</em> and <em>width</em> — no thickness. We describe them by counting their <strong>sides</strong> and <strong>corners</strong> (also called vertices).</p>
+    </div>
+    <div style="overflow-x:auto">
+      <table class="shape-table" aria-label="2D shapes and their properties">
+        <thead>
+          <tr><th>Shape</th><th>Symbol</th><th>Sides</th><th>Corners</th><th>Real-world example</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Circle</td><td>⭕</td><td>0 (curved)</td><td>0</td><td>Pizza, wheel, coin</td></tr>
+          <tr><td>Triangle</td><td>🔺</td><td>3</td><td>3</td><td>Yield sign, roof peak, slice</td></tr>
+          <tr><td>Square</td><td>🟦</td><td>4 (equal)</td><td>4</td><td>Tile, chessboard square</td></tr>
+          <tr><td>Rectangle</td><td>▬</td><td>4</td><td>4</td><td>Door, book, TV screen</td></tr>
+          <tr><td>Pentagon</td><td>⬠</td><td>5</td><td>5</td><td>Home plate (baseball), sign</td></tr>
+          <tr><td>Hexagon</td><td>⬡</td><td>6</td><td>6</td><td>Honeycomb cell, bolt head</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card" style="margin-top:14px">
+      <p>💡 <strong>Square vs Rectangle:</strong> A square is a special rectangle where ALL four sides are equal. Every square is a rectangle, but not every rectangle is a square.</p>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="threed-heading">
+    <p class="section-label">Section 2</p>
+    <h2 class="section-title" id="threed-heading">3D Shapes — Solid Shapes</h2>
+    <div class="card">
+      <p><strong>3D shapes</strong> are solid — they have <em>length, width, and height</em>. We describe them using:</p>
+      <p>• <strong>Faces</strong> — flat or curved surfaces<br>
+         • <strong>Edges</strong> — where two faces meet (a line)<br>
+         • <strong>Vertices</strong> — corners where edges meet (a point)</p>
+    </div>
+    <div style="overflow-x:auto;margin-top:16px">
+      <table class="shape-table" aria-label="3D shapes and their properties">
+        <thead>
+          <tr><th>Shape</th><th>Flat Faces</th><th>Edges</th><th>Vertices</th><th>Real-world example</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Sphere 🌐</td><td>0</td><td>0</td><td>0</td><td>Ball, orange, globe</td></tr>
+          <tr><td>Cube 🎲</td><td>6 (squares)</td><td>12</td><td>8</td><td>Dice, ice cube, building block</td></tr>
+          <tr><td>Cuboid (box) 📦</td><td>6 (rectangles)</td><td>12</td><td>8</td><td>Cereal box, shoe box, brick</td></tr>
+          <tr><td>Cylinder 🥫</td><td>2 circles</td><td>2 curved</td><td>0</td><td>Can, tube, glass</td></tr>
+          <tr><td>Cone 🍦</td><td>1 circle</td><td>1 curved</td><td>1 (tip)</td><td>Ice cream cone, party hat, funnel</td></tr>
+          <tr><td>Pyramid 🔺</td><td>5 (1 square + 4 triangles)</td><td>8</td><td>5</td><td>Egyptian pyramids, tent</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="examples-heading">
+    <p class="section-label">Section 3</p>
+    <h2 class="section-title" id="examples-heading">Worked Examples</h2>
+
+    <div class="example-card">
+      <div class="example-header">Example 1 — Identify a 2D shape by its sides</div>
+      <div class="example-body">
+        <div class="example-problem">A shape has 6 sides and 6 corners. What is it called?</div>
+        <div class="example-working">
+          <div class="working-line">6 sides → hexagon <span>check the 2D table</span></div>
+        </div>
+        <span class="answer-chip">✅ Hexagon</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">Example 2 — Count faces of a cube</div>
+      <div class="example-body">
+        <div class="example-problem">How many flat faces does a cube have?</div>
+        <div class="example-working">
+          <div class="working-line">Top, bottom, front, back, left, right = 6 faces</div>
+        </div>
+        <span class="answer-chip">✅ 6 flat faces</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">Example 3 — Real-world shape</div>
+      <div class="example-body">
+        <div class="example-problem">A tin of soup is what 3D shape?</div>
+        <div class="example-working">
+          <div class="working-line">Round top and bottom + curved side = cylinder</div>
+        </div>
+        <span class="answer-chip">✅ Cylinder</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">Example 4 — Edges of a cube</div>
+      <div class="example-body">
+        <div class="example-problem">How many edges does a cube have?</div>
+        <div class="example-working">
+          <div class="working-line">4 edges on top + 4 on bottom + 4 connecting = 12 edges</div>
+        </div>
+        <span class="answer-chip">✅ 12 edges</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">Example 5 — 2D vs 3D</div>
+      <div class="example-body">
+        <div class="example-problem">Is a circle the same as a sphere?</div>
+        <div class="example-working">
+          <div class="working-line">Circle = 2D flat shape (like drawn on paper)</div>
+          <div class="working-line">Sphere = 3D solid shape (like a ball)</div>
+        </div>
+        <span class="answer-chip">✅ No — circle is 2D, sphere is 3D</span>
+      </div>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="watchout-heading">
+    <p class="section-label">Section 4</p>
+    <h2 class="section-title" id="watchout-heading">Watch Out! ⚠️</h2>
+    <div class="warning-box">
+      <h3>Common Mistakes to Avoid</h3>
+      <ul class="warning-list">
+        <li>
+          <span class="wrong">❌ Confusing 2D and 3D names:</span> Calling a sphere a "circle"<br>
+          <span class="right">✅ Circle = flat drawing, Sphere = solid ball. A square is 2D; a cube is 3D.</span>
+        </li>
+        <li>
+          <span class="wrong">❌ Saying a square is NOT a rectangle:</span> "It can't be both"<br>
+          <span class="right">✅ A square IS a rectangle — it just has all four sides equal.</span>
+        </li>
+        <li>
+          <span class="wrong">❌ Counting curved edges as straight edges:</span> Saying a cylinder has 2 flat edges<br>
+          <span class="right">✅ Cylinder edges are curved. It has 0 straight edges and 2 curved edges where the flat circles meet the curved surface.</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="ref-heading">
+    <p class="section-label">Section 5</p>
+    <h2 class="section-title" id="ref-heading">Quick Reference</h2>
+    <div class="card-tint">
+      <div class="ref-grid" style="margin-top:0">
+        <div class="ref-item"><div class="ref-term">2D shapes</div><div class="ref-def">Flat. Described by sides and corners.</div></div>
+        <div class="ref-item"><div class="ref-term">3D shapes</div><div class="ref-def">Solid. Described by faces, edges, vertices.</div></div>
+        <div class="ref-item"><div class="ref-term">Triangle</div><div class="ref-def">3 sides, 3 corners</div></div>
+        <div class="ref-item"><div class="ref-term">Cube</div><div class="ref-def">6 faces, 12 edges, 8 vertices</div></div>
+        <div class="ref-item"><div class="ref-term">Cylinder</div><div class="ref-def">2 flat circular faces, 0 vertices</div></div>
+        <div class="ref-item"><div class="ref-term">Pyramid</div><div class="ref-def">5 faces, 8 edges, 5 vertices</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer-cta">
+    <h2>Ready to practice? Let's go! 🚀</h2>
+    <p>Test your shapes knowledge with 10 interactive questions — Easy or Hard mode.</p>
+    <a href="math-grade2-shapes-2d-3d-worksheet.html" class="btn btn-white">📝 Start Worksheet →</a>
+    <a href="index.html#grade-2-math" class="back-link">← Back to Grade 2 Math topics</a>
+  </div>
+
+</div>
+</body>
+</html>

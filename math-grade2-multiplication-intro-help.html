@@ -1,0 +1,252 @@
+<!-- Math | Grade 2 | Multiplication Intro | help -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multiplication Intro (Groups) — Grade 2 Math | LearnPad</title>
+  <meta name="description" content="Learn what multiplication means, how equal groups connect to repeated addition, and practise times tables for Grade 2." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{--clr-bg:#ffffff;--clr-dot:#E8EDF5;--clr-accent:#4361EE;--clr-accent-dark:#3451D1;--clr-navy:#1A1A3E;--clr-tint:#EEF0FF;--clr-green:#2DC653;--clr-green-bg:#F0FFF4;--clr-red:#E63946;--clr-red-bg:#FFF0F1;--clr-amber:#F4A261;--clr-amber-bg:#FFFBF5;--clr-text:#2D2D4E;--clr-muted:#6B7280;--font-display:'Nunito',sans-serif;--font-mono:'JetBrains Mono',monospace;--radius:12px;--shadow:0 2px 16px rgba(67,97,238,0.08);--shadow-hover:0 8px 28px rgba(67,97,238,0.18)}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:var(--font-display);background-color:var(--clr-bg);background-image:radial-gradient(circle,var(--clr-dot) 1.5px,transparent 1.5px);background-size:20px 20px;color:var(--clr-text);line-height:1.7;min-height:100vh}
+    .page-wrap{max-width:860px;margin:0 auto;padding:24px 20px 60px}
+    .breadcrumb{display:flex;align-items:center;gap:6px;font-size:0.82rem;color:var(--clr-muted);margin-bottom:28px;flex-wrap:wrap}
+    .breadcrumb a{color:var(--clr-accent);text-decoration:none;font-weight:600}.breadcrumb a:hover{text-decoration:underline}
+    .breadcrumb span{color:var(--clr-muted)}
+    .hero{margin-bottom:40px}.hero-badges{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+    .badge{font-size:0.78rem;font-weight:700;padding:4px 14px;border-radius:50px;letter-spacing:0.03em}
+    .badge-solid{background:var(--clr-accent);color:#fff}.badge-outline{border:2px solid var(--clr-accent);color:var(--clr-accent);background:transparent}
+    .hero h1{font-size:clamp(2rem,5vw,3rem);font-weight:900;color:var(--clr-navy);line-height:1.15;margin-bottom:12px}
+    .hero-intro{font-size:1.05rem;color:var(--clr-muted);max-width:620px;margin-bottom:18px}
+    .hero-meta{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+    .meta-pill{font-size:0.82rem;color:var(--clr-muted);font-weight:600}
+    .btn{display:inline-flex;align-items:center;gap:6px;font-family:var(--font-display);font-weight:700;font-size:0.92rem;padding:10px 26px;border-radius:50px;text-decoration:none;cursor:pointer;border:none;transition:background 0.18s,color 0.18s,transform 0.18s,box-shadow 0.18s}
+    .btn-primary{background:var(--clr-accent);color:#fff}.btn-primary:hover{background:var(--clr-accent-dark);transform:translateY(-2px);box-shadow:0 6px 20px rgba(67,97,238,0.25)}
+    .btn-white{background:#fff;color:var(--clr-accent);font-weight:800}.btn-white:hover{background:#EEF0FF;transform:translateY(-2px)}
+    section{margin-bottom:48px}
+    .section-label{font-size:0.75rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--clr-accent);margin-bottom:10px}
+    .section-title{font-size:1.55rem;font-weight:800;color:var(--clr-navy);margin-bottom:16px}
+    .card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);border-left:5px solid var(--clr-accent);padding:24px 28px;transition:transform 0.2s,box-shadow 0.2s;animation:fadeInUp 0.4s ease both}
+    .card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}.card+.card{margin-top:16px}.card p+p{margin-top:10px}
+    .card-tint{background:var(--clr-tint);border-left:5px solid var(--clr-accent);border-radius:var(--radius);padding:24px 28px}
+    .steps{list-style:none}.step-item{display:flex;gap:16px;align-items:flex-start;margin-bottom:16px}
+    .step-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;background:var(--clr-accent);color:#fff;font-weight:800;font-size:0.9rem;display:flex;align-items:center;justify-content:center}
+    .step-text{padding-top:4px;font-size:0.97rem}.step-text strong{color:var(--clr-navy)}
+    .example-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;margin-bottom:16px;border-left:5px solid var(--clr-accent);animation:fadeInUp 0.4s ease both;transition:transform 0.2s,box-shadow 0.2s}
+    .example-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+    .example-header{background:#F3F4F8;padding:10px 20px;font-weight:800;font-size:0.82rem;color:var(--clr-muted);letter-spacing:0.06em;text-transform:uppercase}
+    .example-body{padding:20px 24px}
+    .example-problem{font-size:1rem;font-weight:600;color:var(--clr-navy);margin-bottom:14px}
+    .example-working{border-left:3px solid var(--clr-tint);padding-left:14px;margin-bottom:14px}
+    .working-line{font-family:var(--font-mono);font-size:0.9rem;color:var(--clr-text);margin-bottom:6px}
+    .working-line span{color:var(--clr-muted);font-weight:400;margin-left:8px}
+    .answer-chip{display:inline-flex;align-items:center;gap:6px;background:var(--clr-green-bg);border:1.5px solid var(--clr-green);color:#1a7a3a;border-radius:50px;padding:6px 16px;font-weight:700;font-size:0.9rem}
+    .warning-box{background:var(--clr-amber-bg);border-left:5px solid var(--clr-amber);border-radius:var(--radius);padding:20px 24px}
+    .warning-box h3{font-size:1rem;font-weight:800;color:#8B4A00;margin-bottom:12px}
+    .warning-list{list-style:none}.warning-list li{margin-bottom:10px;font-size:0.93rem;line-height:1.55}
+    .warning-list .wrong{color:var(--clr-red);font-weight:700}.warning-list .right{color:var(--clr-green);font-weight:700}
+    .ref-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+    @media(max-width:560px){.ref-grid{grid-template-columns:1fr}}
+    .ref-item{background:#fff;border-radius:10px;padding:16px;box-shadow:0 1px 8px rgba(67,97,238,0.07)}
+    .ref-term{font-weight:800;font-size:0.85rem;color:var(--clr-accent);margin-bottom:4px}
+    .ref-def{font-size:0.88rem;color:var(--clr-text)}
+    .footer-cta{background:linear-gradient(135deg,var(--clr-accent) 0%,#6C63FF 100%);border-radius:var(--radius);padding:36px 32px;text-align:center;color:#fff;margin-top:56px}
+    .footer-cta h2{font-size:1.6rem;font-weight:900;margin-bottom:8px}.footer-cta p{opacity:0.88;margin-bottom:22px;font-size:1rem}
+    .back-link{display:block;text-align:center;margin-top:18px;font-size:0.85rem;color:rgba(255,255,255,0.75);text-decoration:none}.back-link:hover{color:#fff}
+    hr{border:none;border-top:2px solid var(--clr-dot);margin:40px 0}
+    .array-grid{display:inline-grid;gap:6px;margin:16px 0}
+    .array-dot{width:22px;height:22px;border-radius:50%;background:var(--clr-accent)}
+    @keyframes fadeInUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+    @media(max-width:600px){.page-wrap{padding:16px 14px 48px}.example-body{padding:16px}.footer-cta{padding:28px 20px}}
+  </style>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="page-wrap">
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="index.html">🏠 Home</a><span>›</span>
+    <a href="index.html#grade-2-math">Grade 2 Math</a><span>›</span>
+    <span>Multiplication Intro</span>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-badges">
+      <span class="badge badge-solid">Grade 2</span>
+      <span class="badge badge-outline">Mathematics ✖️</span>
+    </div>
+    <h1>Multiplication Intro — Equal Groups</h1>
+    <p class="hero-intro">Multiplication is just a quick way to add the same number over and over. Instead of writing 4 + 4 + 4 = 12, we write 3 × 4 = 12. In this guide you'll learn to think in <strong>equal groups</strong>, draw arrays, and start using basic times tables.</p>
+    <div class="hero-meta">
+      <span class="meta-pill">⏱ ~5 min read</span>
+      <a href="math-grade2-multiplication-intro-worksheet.html" class="btn btn-primary">📝 Jump to Worksheet →</a>
+    </div>
+  </header>
+
+  <section aria-labelledby="what-heading">
+    <p class="section-label">Section 1</p>
+    <h2 class="section-title" id="what-heading">What is Multiplication?</h2>
+    <div class="card">
+      <p><strong>Multiplication</strong> counts <em>equal groups</em>. When every group has the same number of items, instead of adding again and again, we multiply.</p>
+      <p>We write multiplication using the × symbol: <strong>number of groups × size of each group = total</strong>.</p>
+      <p>Example: 3 bags, each with 4 apples → 3 × 4 = 12 apples total.</p>
+    </div>
+    <div class="card" style="margin-top:16px">
+      <p><strong>Reading the symbol:</strong> 3 × 4 is read as "3 times 4" or "3 groups of 4".</p>
+      <p>It doesn't matter which way around you write it: <strong>3 × 4 = 4 × 3 = 12</strong>. This is called the <em>commutative property</em>.</p>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="method-heading">
+    <p class="section-label">Section 2</p>
+    <h2 class="section-title" id="method-heading">Three Ways to Think About Multiplication</h2>
+    <div class="card-tint">
+      <ol class="steps">
+        <li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Equal groups.</strong> Draw circles for groups, dots inside for items. 3 × 4: draw 3 circles, put 4 dots in each → count all dots.</div></li>
+        <li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Repeated addition.</strong> Write out the addition: 4 + 4 + 4 = 12. The number of 4s matches the first number (3 fours).</div></li>
+        <li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Array.</strong> Arrange dots in rows and columns. 3 rows × 4 columns = 12 dots. Count across a row or down a column to check.</div></li>
+      </ol>
+    </div>
+
+    <!-- 3×4 array visual -->
+    <div class="array-grid" style="grid-template-columns:repeat(4,1fr)" aria-label="Array showing 3 rows and 4 columns, 12 dots total" role="img">
+      <div class="array-dot"></div><div class="array-dot"></div><div class="array-dot"></div><div class="array-dot"></div>
+      <div class="array-dot"></div><div class="array-dot"></div><div class="array-dot"></div><div class="array-dot"></div>
+      <div class="array-dot"></div><div class="array-dot"></div><div class="array-dot"></div><div class="array-dot"></div>
+    </div>
+    <p style="font-size:0.85rem;color:var(--clr-muted);font-style:italic">3 rows × 4 columns = 12 dots. This array shows 3 × 4 = 12.</p>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="examples-heading">
+    <p class="section-label">Section 3</p>
+    <h2 class="section-title" id="examples-heading">Worked Examples</h2>
+
+    <div class="example-card">
+      <div class="example-header">Example 1 — Using repeated addition</div>
+      <div class="example-body">
+        <div class="example-problem">Work out 3 × 4.</div>
+        <div class="example-working">
+          <div class="working-line">3 groups of 4 = 4 + 4 + 4</div>
+          <div class="working-line">4 + 4 = 8, then 8 + 4 = 12</div>
+        </div>
+        <span class="answer-chip">✅ 3 × 4 = 12</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">Example 2 — 2 times table</div>
+      <div class="example-body">
+        <div class="example-problem">Work out 5 × 2.</div>
+        <div class="example-working">
+          <div class="working-line">5 groups of 2 = 2+2+2+2+2 <span>skip-count by 2s</span></div>
+          <div class="working-line">2, 4, 6, 8, 10</div>
+        </div>
+        <span class="answer-chip">✅ 5 × 2 = 10</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">Example 3 — Commutative: same answer both ways</div>
+      <div class="example-body">
+        <div class="example-problem">Show that 4 × 3 = 3 × 4.</div>
+        <div class="example-working">
+          <div class="working-line">4 × 3 = 3+3+3+3 = 12</div>
+          <div class="working-line">3 × 4 = 4+4+4 = 12 <span>same answer!</span></div>
+        </div>
+        <span class="answer-chip">✅ 4 × 3 = 3 × 4 = 12</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">Example 4 — Finding a missing factor</div>
+      <div class="example-body">
+        <div class="example-problem">4 × ___ = 20. What goes in the blank?</div>
+        <div class="example-working">
+          <div class="working-line">4 × 1=4, 4×2=8, 4×3=12, 4×4=16, 4×5=20 <span>count up</span></div>
+        </div>
+        <span class="answer-chip">✅ 4 × 5 = 20</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">Example 5 — Word problem with groups</div>
+      <div class="example-body">
+        <div class="example-problem">There are 6 egg boxes. Each holds 2 eggs. How many eggs in total?</div>
+        <div class="example-working">
+          <div class="working-line">6 boxes × 2 eggs each</div>
+          <div class="working-line">6 × 2 = 12</div>
+        </div>
+        <span class="answer-chip">✅ 12 eggs</span>
+      </div>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="watchout-heading">
+    <p class="section-label">Section 4</p>
+    <h2 class="section-title" id="watchout-heading">Watch Out! ⚠️</h2>
+    <div class="warning-box">
+      <h3>Common Mistakes to Avoid</h3>
+      <ul class="warning-list">
+        <li>
+          <span class="wrong">❌ Adding instead of multiplying:</span> Answering 3 × 4 as 3 + 4 = 7<br>
+          <span class="right">✅ Multiplication is repeated addition of the SAME number: 4+4+4=12.</span>
+        </li>
+        <li>
+          <span class="wrong">❌ Multiplying by 0 and getting the other number:</span> 5 × 0 = 5<br>
+          <span class="right">✅ Any number × 0 = 0. Zero groups means no items at all.</span>
+        </li>
+        <li>
+          <span class="wrong">❌ Mixing up N × 1 with × 0:</span> Saying N × 1 = 0<br>
+          <span class="right">✅ N × 1 = N. One group of N things is still N things.</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="ref-heading">
+    <p class="section-label">Section 5</p>
+    <h2 class="section-title" id="ref-heading">Quick Reference</h2>
+    <div class="card-tint">
+      <div class="ref-grid" style="margin-top:0">
+        <div class="ref-item"><div class="ref-term">N × M means</div><div class="ref-def">N groups with M items in each group.</div></div>
+        <div class="ref-item"><div class="ref-term">Repeated addition</div><div class="ref-def">3 × 5 = 5 + 5 + 5 = 15</div></div>
+        <div class="ref-item"><div class="ref-term">Commutative</div><div class="ref-def">3 × 4 = 4 × 3 (order doesn't change answer)</div></div>
+        <div class="ref-item"><div class="ref-term">× 1 rule</div><div class="ref-def">Any number × 1 = itself: 7 × 1 = 7</div></div>
+        <div class="ref-item"><div class="ref-term">× 0 rule</div><div class="ref-def">Any number × 0 = 0: 7 × 0 = 0</div></div>
+        <div class="ref-item"><div class="ref-term">Array</div><div class="ref-def">Rows × columns = total dots (picture of multiplication)</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer-cta">
+    <h2>Ready to practice? Let's go! 🚀</h2>
+    <p>Test your multiplication skills with 10 interactive questions — Easy or Hard mode.</p>
+    <a href="math-grade2-multiplication-intro-worksheet.html" class="btn btn-white">📝 Start Worksheet →</a>
+    <a href="index.html#grade-2-math" class="back-link">← Back to Grade 2 Math topics</a>
+  </div>
+
+</div>
+</body>
+</html>
