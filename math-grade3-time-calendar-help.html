@@ -1,0 +1,332 @@
+<!-- Math | Grade 3 | Time & Calendar | help -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Time & Calendar — Grade 3 Math | School Prep</title>
+  <meta name="description" content="Learn to read clocks and use calendars for Grade 3. Read time to the hour, half-hour and 5-minute intervals, and understand days, weeks and months." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{--clr-bg:#ffffff;--clr-dot:#E8EDF5;--clr-accent:#4361EE;--clr-accent-dark:#3451D1;--clr-navy:#1A1A3E;--clr-tint:#EEF0FF;--clr-green:#2DC653;--clr-green-bg:#F0FFF4;--clr-red:#E63946;--clr-red-bg:#FFF0F1;--clr-amber:#F4A261;--clr-amber-bg:#FFFBF5;--clr-text:#2D2D4E;--clr-muted:#6B7280;--font-display:'Nunito',sans-serif;--font-mono:'JetBrains Mono',monospace;--radius:12px;--shadow:0 2px 16px rgba(67,97,238,0.08);--shadow-hover:0 8px 28px rgba(67,97,238,0.18)}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:var(--font-display);background-color:var(--clr-bg);background-image:radial-gradient(circle,var(--clr-dot) 1.5px,transparent 1.5px);background-size:20px 20px;color:var(--clr-text);line-height:1.7;min-height:100vh}
+    .page-wrap{max-width:860px;margin:0 auto;padding:24px 20px 60px}
+    .breadcrumb{display:flex;align-items:center;gap:6px;font-size:0.82rem;color:var(--clr-muted);margin-bottom:28px;flex-wrap:wrap}
+    .breadcrumb a{color:var(--clr-accent);text-decoration:none;font-weight:600}.breadcrumb a:hover{text-decoration:underline}
+    .hero{margin-bottom:40px}.hero-badges{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+    .badge{font-size:0.78rem;font-weight:700;padding:4px 14px;border-radius:50px;letter-spacing:0.03em}
+    .badge-solid{background:var(--clr-accent);color:#fff}.badge-outline{border:2px solid var(--clr-accent);color:var(--clr-accent);background:transparent}
+    .hero h1{font-size:clamp(2rem,5vw,3rem);font-weight:900;color:var(--clr-navy);line-height:1.15;margin-bottom:12px}
+    .hero-intro{font-size:1.05rem;color:var(--clr-muted);max-width:620px;margin-bottom:18px}
+    .hero-meta{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+    .meta-pill{font-size:0.82rem;color:var(--clr-muted);font-weight:600}
+    .btn{display:inline-flex;align-items:center;gap:6px;font-family:var(--font-display);font-weight:700;font-size:0.92rem;padding:10px 26px;border-radius:50px;text-decoration:none;cursor:pointer;border:none;transition:background 0.18s,color 0.18s,transform 0.18s,box-shadow 0.18s}
+    .btn-primary{background:var(--clr-accent);color:#fff}.btn-primary:hover{background:var(--clr-accent-dark);transform:translateY(-2px);box-shadow:0 6px 20px rgba(67,97,238,0.25)}
+    .btn-white{background:#fff;color:var(--clr-accent);font-weight:800}.btn-white:hover{background:#EEF0FF;transform:translateY(-2px)}
+    section{margin-bottom:48px}
+    .section-label{font-size:0.75rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--clr-accent);margin-bottom:10px}
+    .section-title{font-size:1.55rem;font-weight:800;color:var(--clr-navy);margin-bottom:16px}
+    .card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);border-left:5px solid var(--clr-accent);padding:24px 28px;transition:transform 0.2s,box-shadow 0.2s;animation:fadeInUp 0.4s ease both}
+    .card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}.card+.card{margin-top:16px}.card p+p{margin-top:10px}
+    .card-tint{background:var(--clr-tint);border-left:5px solid var(--clr-accent);border-radius:var(--radius);padding:24px 28px}
+    .formula-box{border:2px solid var(--clr-accent);border-radius:10px;padding:16px 24px;text-align:center;margin:20px 0;background:var(--clr-tint)}
+    .formula-text{font-family:var(--font-mono);font-size:1.1rem;font-weight:700;color:var(--clr-accent)}
+    .formula-label{font-size:0.78rem;color:var(--clr-muted);margin-top:4px}
+    .steps{list-style:none}.step-item{display:flex;gap:16px;align-items:flex-start;margin-bottom:16px}
+    .step-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;background:var(--clr-accent);color:#fff;font-weight:800;font-size:0.9rem;display:flex;align-items:center;justify-content:center}
+    .step-text{padding-top:4px;font-size:0.97rem}.step-text strong{color:var(--clr-navy)}
+    .example-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;margin-bottom:16px;border-left:5px solid var(--clr-accent);animation:fadeInUp 0.4s ease both;transition:transform 0.2s,box-shadow 0.2s}
+    .example-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+    .example-header{background:#F3F4F8;padding:10px 20px;font-weight:800;font-size:0.82rem;color:var(--clr-muted);letter-spacing:0.06em;text-transform:uppercase}
+    .example-body{padding:20px 24px}
+    .example-problem{font-family:var(--font-mono);font-size:1.05rem;font-weight:600;color:var(--clr-navy);margin-bottom:14px}
+    .example-working{border-left:3px solid var(--clr-tint);padding-left:14px;margin-bottom:14px}
+    .working-line{font-family:var(--font-mono);font-size:0.9rem;color:var(--clr-text);margin-bottom:6px}
+    .working-line span{color:var(--clr-muted);font-weight:400;margin-left:8px}
+    .answer-chip{display:inline-flex;align-items:center;gap:6px;background:var(--clr-green-bg);border:1.5px solid var(--clr-green);color:#1a7a3a;border-radius:50px;padding:6px 16px;font-weight:700;font-size:0.9rem}
+    .warning-box{background:var(--clr-amber-bg);border-left:5px solid var(--clr-amber);border-radius:var(--radius);padding:20px 24px}
+    .warning-box h3{font-size:1rem;font-weight:800;color:#8B4A00;margin-bottom:12px}
+    .warning-list{list-style:none}.warning-list li{margin-bottom:10px;font-size:0.93rem;line-height:1.55}
+    .warning-list .wrong{color:var(--clr-red);font-weight:700}.warning-list .right{color:var(--clr-green);font-weight:700}
+    .ref-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+    @media(max-width:560px){.ref-grid{grid-template-columns:1fr}}
+    .ref-item{background:#fff;border-radius:10px;padding:16px;box-shadow:0 1px 8px rgba(67,97,238,0.07)}
+    .ref-term{font-weight:800;font-size:0.85rem;color:var(--clr-accent);margin-bottom:4px}
+    .ref-def{font-size:0.88rem;color:var(--clr-text)}
+    .footer-cta{background:linear-gradient(135deg,var(--clr-accent) 0%,#6C63FF 100%);border-radius:var(--radius);padding:36px 32px;text-align:center;color:#fff;margin-top:56px}
+    .footer-cta h2{font-size:1.6rem;font-weight:900;margin-bottom:8px}.footer-cta p{opacity:0.88;margin-bottom:22px;font-size:1rem}
+    .back-link{display:block;text-align:center;margin-top:18px;font-size:0.85rem;color:rgba(255,255,255,0.75);text-decoration:none}.back-link:hover{color:#fff}
+    hr{border:none;border-top:2px solid var(--clr-dot);margin:40px 0}
+    /* Clock SVG helpers */
+    .clocks-row{display:flex;gap:24px;justify-content:center;flex-wrap:wrap;margin:24px 0}
+    .clock-wrap{text-align:center}
+    .clock-caption{font-size:0.8rem;font-weight:700;color:var(--clr-muted);margin-top:8px}
+    .clock-time{font-family:var(--font-mono);font-size:1rem;font-weight:800;color:var(--clr-accent)}
+    .visual-caption{text-align:center;font-size:0.8rem;color:var(--clr-muted);margin-top:6px;font-style:italic}
+    /* month table */
+    .month-table{border-collapse:collapse;width:100%;font-family:var(--font-mono);font-size:0.82rem;margin-top:12px}
+    .month-table th{background:var(--clr-accent);color:#fff;padding:6px 4px;text-align:center}
+    .month-table td{border:1px solid #D1D9F0;padding:5px 4px;text-align:center;background:#fff}
+    .month-table tr:nth-child(even) td{background:#F8F9FF}
+    @keyframes fadeInUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+    @media(max-width:600px){.page-wrap{padding:16px 14px 48px}.example-body{padding:16px}.footer-cta{padding:28px 20px}}
+  </style>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="page-wrap">
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">🏠 Home</a><span>›</span>
+    <a href="../../index.html#grade-3-math">Grade 3 Math</a><span>›</span>
+    <span>Time &amp; Calendar</span>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-badges">
+      <span class="badge badge-solid">Grade 3</span>
+      <span class="badge badge-outline">Mathematics 🕐</span>
+    </div>
+    <h1>Time &amp; Calendar</h1>
+    <p class="hero-intro">In this guide, you'll learn how to read analogue and digital clocks, tell the time to 5-minute intervals, and navigate calendars using days, weeks, and months.</p>
+    <div class="hero-meta">
+      <span class="meta-pill">⏱ ~5 min read</span>
+      <a href="math-grade3-time-calendar-worksheet.html" class="btn btn-primary">📝 Jump to Worksheet →</a>
+    </div>
+  </header>
+
+  <section aria-labelledby="what-heading">
+    <p class="section-label">Section 1</p>
+    <h2 class="section-title" id="what-heading">Reading a Clock</h2>
+    <div class="card">
+      <p>A clock face has <strong>12 numbers</strong> and two hands. The <strong>short (hour) hand</strong> points to the hour. The <strong>long (minute) hand</strong> points to the minutes.</p>
+      <p>Each number on the clock represents <strong>5 minutes</strong>. So the 12 = 0 minutes, the 3 = 15 minutes, the 6 = 30 minutes, and the 9 = 45 minutes.</p>
+      <p>We can write time in two ways: <strong>analogue</strong> (clock face) or <strong>digital</strong> (e.g. 3:45 means 3 hours and 45 minutes).</p>
+    </div>
+
+    <!-- Clock SVG visual: 3:00, 6:30, 4:15 -->
+    <div class="clocks-row" role="img" aria-label="Three clock faces showing 3:00, 6:30, and 4:15">
+      <!-- 3:00 -->
+      <div class="clock-wrap">
+        <svg width="110" height="110" viewBox="0 0 110 110">
+          <circle cx="55" cy="55" r="50" fill="#fff" stroke="#4361EE" stroke-width="3"/>
+          <text x="55" y="18" text-anchor="middle" font-family="JetBrains Mono" font-size="11" font-weight="700" fill="#1A1A3E">12</text>
+          <text x="93" y="59" text-anchor="middle" font-family="JetBrains Mono" font-size="11" font-weight="700" fill="#1A1A3E">3</text>
+          <text x="55" y="98" text-anchor="middle" font-family="JetBrains Mono" font-size="11" font-weight="700" fill="#1A1A3E">6</text>
+          <text x="17" y="59" text-anchor="middle" font-family="JetBrains Mono" font-size="11" font-weight="700" fill="#1A1A3E">9</text>
+          <!-- hour hand → 3 o'clock (pointing right) -->
+          <line x1="55" y1="55" x2="85" y2="55" stroke="#1A1A3E" stroke-width="4" stroke-linecap="round"/>
+          <!-- minute hand → 12 (pointing up) -->
+          <line x1="55" y1="55" x2="55" y2="15" stroke="#4361EE" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="55" cy="55" r="3" fill="#4361EE"/>
+        </svg>
+        <div class="clock-caption">Hour hand</div>
+        <div class="clock-time">3:00</div>
+      </div>
+      <!-- 6:30 -->
+      <div class="clock-wrap">
+        <svg width="110" height="110" viewBox="0 0 110 110">
+          <circle cx="55" cy="55" r="50" fill="#fff" stroke="#4361EE" stroke-width="3"/>
+          <text x="55" y="18" text-anchor="middle" font-family="JetBrains Mono" font-size="11" font-weight="700" fill="#1A1A3E">12</text>
+          <text x="93" y="59" text-anchor="middle" font-family="JetBrains Mono" font-size="11" font-weight="700" fill="#1A1A3E">3</text>
+          <text x="55" y="98" text-anchor="middle" font-family="JetBrains Mono" font-size="11" font-weight="700" fill="#1A1A3E">6</text>
+          <text x="17" y="59" text-anchor="middle" font-family="JetBrains Mono" font-size="11" font-weight="700" fill="#1A1A3E">9</text>
+          <!-- hour hand → 6:30 (pointing down-left ≈ 195°) -->
+          <line x1="55" y1="55" x2="45" y2="80" stroke="#1A1A3E" stroke-width="4" stroke-linecap="round"/>
+          <!-- minute hand → 6 (pointing down) -->
+          <line x1="55" y1="55" x2="55" y2="95" stroke="#4361EE" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="55" cy="55" r="3" fill="#4361EE"/>
+        </svg>
+        <div class="clock-caption">Half past</div>
+        <div class="clock-time">6:30</div>
+      </div>
+      <!-- 4:15 -->
+      <div class="clock-wrap">
+        <svg width="110" height="110" viewBox="0 0 110 110">
+          <circle cx="55" cy="55" r="50" fill="#fff" stroke="#4361EE" stroke-width="3"/>
+          <text x="55" y="18" text-anchor="middle" font-family="JetBrains Mono" font-size="11" font-weight="700" fill="#1A1A3E">12</text>
+          <text x="93" y="59" text-anchor="middle" font-family="JetBrains Mono" font-size="11" font-weight="700" fill="#1A1A3E">3</text>
+          <text x="55" y="98" text-anchor="middle" font-family="JetBrains Mono" font-size="11" font-weight="700" fill="#1A1A3E">6</text>
+          <text x="17" y="59" text-anchor="middle" font-family="JetBrains Mono" font-size="11" font-weight="700" fill="#1A1A3E">9</text>
+          <!-- hour hand → 4:15 (between 4 and 5, ≈ 127.5° from 12) -->
+          <line x1="55" y1="55" x2="74" y2="73" stroke="#1A1A3E" stroke-width="4" stroke-linecap="round"/>
+          <!-- minute hand → 3 (quarter past, pointing right) -->
+          <line x1="55" y1="55" x2="95" y2="55" stroke="#4361EE" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="55" cy="55" r="3" fill="#4361EE"/>
+        </svg>
+        <div class="clock-caption">Quarter past</div>
+        <div class="clock-time">4:15</div>
+      </div>
+    </div>
+    <p class="visual-caption">Dark hand = hour, Blue hand = minutes. Minute hand at 12 = :00, at 6 = :30, at 3 = :15, at 9 = :45</p>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="method-heading">
+    <p class="section-label">Section 2</p>
+    <h2 class="section-title" id="method-heading">Step-by-Step Method</h2>
+    <div class="card-tint">
+      <div class="formula-box">
+        <div class="formula-text">Hour : Minutes</div>
+        <div class="formula-label">Short hand → hour &nbsp;|&nbsp; Long hand → minute (×5 for each number)</div>
+      </div>
+      <ol class="steps">
+        <li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Read the hour first.</strong> Look at the short hand. It points near a number — that's the hour (use the smaller of the two numbers it's between).</div></li>
+        <li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Read the minutes.</strong> Look at the long hand. Multiply the number it points to by 5. E.g. pointing at 7 → 7 × 5 = 35 minutes.</div></li>
+        <li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Write as digital time.</strong> Write the hour, a colon, then two-digit minutes. E.g. 2 hours 35 minutes = <strong>2:35</strong>.</div></li>
+        <li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Elapsed time.</strong> To find how much time has passed, count forward in hours, then minutes. E.g. from 2:15 to 3:45 = 1 hour 30 minutes.</div></li>
+      </ol>
+      <div class="formula-box" style="margin-top:12px">
+        <div class="formula-text">60 min = 1 hr &nbsp;|&nbsp; 24 hrs = 1 day &nbsp;|&nbsp; 7 days = 1 week</div>
+      </div>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="examples-heading">
+    <p class="section-label">Section 3</p>
+    <h2 class="section-title" id="examples-heading">Worked Examples</h2>
+
+    <div class="example-card">
+      <div class="example-header">Example 1 — Reading Time (Hour)</div>
+      <div class="example-body">
+        <div class="example-problem">The short hand points to 8. The long hand points to 12. What time is it?</div>
+        <div class="example-working">
+          <div class="working-line">Short hand → 8 o'clock (hour)</div>
+          <div class="working-line">Long hand at 12 → 0 minutes</div>
+          <div class="working-line">Time = 8:00</div>
+        </div>
+        <span class="answer-chip">✅ Answer: 8:00 (eight o'clock)</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">Example 2 — Reading Time (Half Past)</div>
+      <div class="example-body">
+        <div class="example-problem">The short hand is between 3 and 4. The long hand points to 6. What time is it?</div>
+        <div class="example-working">
+          <div class="working-line">Short hand between 3 and 4 → hour = 3</div>
+          <div class="working-line">Long hand at 6 → 6 × 5 = 30 minutes</div>
+          <div class="working-line">Time = 3:30</div>
+        </div>
+        <span class="answer-chip">✅ Answer: 3:30 (half past three)</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">Example 3 — Reading Time (5-Minute Intervals)</div>
+      <div class="example-body">
+        <div class="example-problem">Long hand points to 9. Short hand is just past 11. What time is it?</div>
+        <div class="example-working">
+          <div class="working-line">Long hand at 9 → 9 × 5 = 45 minutes</div>
+          <div class="working-line">Short hand just past 11 → hour = 11</div>
+          <div class="working-line">Time = 11:45 (quarter to 12)</div>
+        </div>
+        <span class="answer-chip">✅ Answer: 11:45</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">Example 4 — Elapsed Time</div>
+      <div class="example-body">
+        <div class="example-problem">School starts at 8:30 and ends at 2:30. How long is the school day?</div>
+        <div class="example-working">
+          <div class="working-line">From 8:30 to 2:30</div>
+          <div class="working-line">Count hours: 8:30 → 9:30 → 10:30 → 11:30 → 12:30 → 1:30 → 2:30</div>
+          <div class="working-line">= 6 hours</div>
+        </div>
+        <span class="answer-chip">✅ Answer: 6 hours</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">Example 5 — Calendar Question</div>
+      <div class="example-body">
+        <div class="example-problem">Today is Wednesday. What day will it be in 5 days?</div>
+        <div class="example-working">
+          <div class="working-line">Wed → Thu → Fri → Sat → Sun → Mon</div>
+          <div class="working-line">5 days after Wednesday = Monday</div>
+        </div>
+        <span class="answer-chip">✅ Answer: Monday</span>
+      </div>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="watchout-heading">
+    <p class="section-label">Section 4</p>
+    <h2 class="section-title" id="watchout-heading">Watch Out! ⚠️</h2>
+    <div class="warning-box">
+      <h3>Common Mistakes to Avoid</h3>
+      <ul class="warning-list">
+        <li>
+          <span class="wrong">❌ Mixing up the hands:</span> Reading the long hand as hours and short hand as minutes<br>
+          <span class="right">✅ SHORT hand = hours (it's "short" on time!). LONG hand = minutes.</span>
+        </li>
+        <li>
+          <span class="wrong">❌ Forgetting to multiply by 5:</span> Saying the time is 7:7 when the minute hand is on 7<br>
+          <span class="right">✅ Always multiply the number the minute hand points to by 5: 7 × 5 = 35, so it's :35</span>
+        </li>
+        <li>
+          <span class="wrong">❌ Off-by-one on elapsed time:</span> Counting 8:00 to 11:00 as 2 hours instead of 3<br>
+          <span class="right">✅ Count the jumps between hours, not the hours themselves: 8→9, 9→10, 10→11 = 3 jumps = 3 hours</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="ref-heading">
+    <p class="section-label">Section 5</p>
+    <h2 class="section-title" id="ref-heading">Quick Reference</h2>
+    <div class="card-tint">
+      <div class="formula-box" style="margin-bottom:16px">
+        <div class="formula-text">60 min = 1 hr &nbsp;&nbsp; 24 hr = 1 day &nbsp;&nbsp; 7 days = 1 week</div>
+      </div>
+      <div class="ref-grid">
+        <div class="ref-item"><div class="ref-term">O'clock (:00)</div><div class="ref-def">Minute hand at 12. E.g. 5:00 = five o'clock.</div></div>
+        <div class="ref-item"><div class="ref-term">Half past (:30)</div><div class="ref-def">Minute hand at 6. E.g. 5:30 = half past five.</div></div>
+        <div class="ref-item"><div class="ref-term">Quarter past (:15)</div><div class="ref-def">Minute hand at 3. E.g. 5:15 = quarter past five.</div></div>
+        <div class="ref-item"><div class="ref-term">Quarter to (:45)</div><div class="ref-def">Minute hand at 9. E.g. 5:45 = quarter to six.</div></div>
+        <div class="ref-item"><div class="ref-term">Days of week</div><div class="ref-def">Mon Tue Wed Thu Fri Sat Sun (7 days total).</div></div>
+        <div class="ref-item"><div class="ref-term">Months of year</div><div class="ref-def">Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec (12 months).</div></div>
+      </div>
+      <table class="month-table" aria-label="Months and number of days">
+        <thead><tr><th>Month</th><th>Days</th><th>Month</th><th>Days</th><th>Month</th><th>Days</th></tr></thead>
+        <tbody>
+          <tr><td>Jan</td><td>31</td><td>May</td><td>31</td><td>Sep</td><td>30</td></tr>
+          <tr><td>Feb</td><td>28/29</td><td>Jun</td><td>30</td><td>Oct</td><td>31</td></tr>
+          <tr><td>Mar</td><td>31</td><td>Jul</td><td>31</td><td>Nov</td><td>30</td></tr>
+          <tr><td>Apr</td><td>30</td><td>Aug</td><td>31</td><td>Dec</td><td>31</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="footer-cta">
+    <h2>Ready to practice? Let's go! 🚀</h2>
+    <p>Test your time and calendar knowledge with 10 interactive questions — Easy or Hard mode.</p>
+    <a href="math-grade3-time-calendar-worksheet.html" class="btn btn-white">📝 Start Worksheet →</a>
+    <a href="../../index.html#grade-3-math" class="back-link">← Back to Grade 3 Math topics</a>
+  </div>
+
+</div>
+</body>
+</html>
