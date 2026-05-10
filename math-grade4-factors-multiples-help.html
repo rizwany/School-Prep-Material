@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Factors & Multiples – Grade 4 Math Help</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #1a1f36;
+      --muted: #5a6076;
+      --accent: #4361EE;
+      --accent-dark: #3451d1;
+      --green: #06d6a0;
+      --orange: #fb8500;
+      --red: #ef233c;
+      --bg: #f4f6fb;
+      --card: #ffffff;
+      --border: #e2e6f0;
+      --radius: 14px;
+      --mono: 'JetBrains Mono', monospace;
+    }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background-color: var(--bg);
+      background-image: radial-gradient(circle, #E8EDF5 1.5px, transparent 1.5px);
+      background-size: 20px 20px;
+      color: var(--ink);
+      min-height: 100vh;
+    }
+
+    header { background: var(--card); border-bottom: 2px solid var(--border); padding: 0 24px; }
+    .header-inner { max-width: 860px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .logo { font-weight: 900; font-size: 1.25rem; color: var(--accent); text-decoration: none; }
+    nav a { font-weight: 700; font-size: 0.85rem; color: var(--muted); text-decoration: none; margin-left: 20px; }
+    nav a:hover { color: var(--accent); }
+
+    .breadcrumb { max-width: 860px; margin: 0 auto; padding: 14px 24px 0; font-size: 0.8rem; color: var(--muted); }
+    .breadcrumb a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 6px; }
+
+    .hero { max-width: 860px; margin: 0 auto; padding: 28px 24px 0; display: flex; align-items: center; gap: 20px; }
+    .hero-icon { width: 72px; height: 72px; border-radius: 20px; background: var(--accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .hero-icon svg { width: 42px; height: 42px; }
+    .hero h1 { font-size: 1.9rem; font-weight: 900; line-height: 1.15; }
+    .hero p { font-size: 1rem; color: var(--muted); margin-top: 6px; font-weight: 600; }
+
+    main { max-width: 860px; margin: 28px auto 60px; padding: 0 24px; display: flex; flex-direction: column; gap: 24px; }
+
+    .card { background: var(--card); border-radius: var(--radius); border: 2px solid var(--border); padding: 28px; }
+    .card h2 { font-size: 1.25rem; font-weight: 900; color: var(--accent); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+    .card h2 .icon { font-size: 1.3rem; }
+    .card p { font-size: 0.95rem; line-height: 1.7; color: var(--ink); margin-bottom: 12px; }
+    .card p:last-child { margin-bottom: 0; }
+    code { font-family: var(--mono); background: #eef1fd; border-radius: 5px; padding: 1px 6px; font-size: 0.88em; color: var(--accent-dark); }
+
+    /* ── definition boxes ── */
+    .def-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0; }
+    @media (max-width: 560px) { .def-grid { grid-template-columns: 1fr; } }
+    .def-box { border: 2px solid var(--border); border-radius: 12px; padding: 18px; background: #fafbff; }
+    .def-box h3 { font-size: 1rem; font-weight: 900; color: var(--accent); margin-bottom: 8px; }
+    .def-box p { font-size: 0.88rem; line-height: 1.6; color: var(--ink); }
+
+    /* ── factor pairs grid ── */
+    .factor-grid { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0; }
+    .factor-pair {
+      background: #eef1fd; border: 2px solid #c0caff;
+      border-radius: 10px; padding: 7px 14px;
+      font-family: var(--mono); font-weight: 700; font-size: 0.9rem;
+      color: var(--accent-dark);
+    }
+
+    /* ── multiples strip ── */
+    .multiples-strip { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0; }
+    .mult-num {
+      background: #e8faf4; border: 2px solid #9be8d8;
+      border-radius: 8px; padding: 6px 12px;
+      font-family: var(--mono); font-weight: 700; font-size: 0.9rem;
+      color: #05a07a;
+    }
+
+    /* ── prime vs composite ── */
+    .pvc-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; margin: 16px 0; }
+    @media (max-width: 560px) { .pvc-grid { grid-template-columns: 1fr; } }
+    .pvc-card { border-radius: 12px; padding: 16px; text-align: center; }
+    .pvc-card.prime    { background: #e8faf4; border: 2px solid #9be8d8; }
+    .pvc-card.composite{ background: #fff4e6; border: 2px solid #fcd9a0; }
+    .pvc-card.neither  { background: #eef1fd; border: 2px solid #c0caff; }
+    .pvc-card h3 { font-size: 0.95rem; font-weight: 900; margin-bottom: 6px; }
+    .pvc-card.prime h3    { color: #05a07a; }
+    .pvc-card.composite h3{ color: #fb8500; }
+    .pvc-card.neither h3  { color: var(--accent); }
+    .pvc-card p { font-size: 0.82rem; color: var(--muted); line-height: 1.5; }
+    .pvc-card .example-nums { font-family: var(--mono); font-weight: 700; font-size: 0.88rem; margin-top: 8px; }
+
+    /* ── examples ── */
+    .examples { display: flex; flex-direction: column; gap: 16px; }
+    .example { border: 2px solid var(--border); border-radius: 12px; padding: 18px 20px; background: #fafbff; }
+    .example-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+    .ex-num { width: 32px; height: 32px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 900; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .example-header h3 { font-size: 1rem; font-weight: 800; }
+    .ex-step { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; font-size: 0.9rem; }
+    .ex-step-num { background: var(--green); color: #fff; border-radius: 50%; width: 22px; height: 22px; font-size: 0.75rem; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    .ex-step p { line-height: 1.5; }
+    .answer-box { background: #e8faf4; border: 2px solid var(--green); border-radius: 8px; padding: 10px 14px; margin-top: 10px; font-weight: 800; font-size: 0.95rem; color: #05a07a; }
+
+    /* ── watch out ── */
+    .watch-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .watch-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.92rem; line-height: 1.55; }
+    .watch-badge { background: #fff0f0; color: var(--red); border: 2px solid #ffd6d6; border-radius: 8px; padding: 3px 9px; font-weight: 800; font-size: 0.78rem; flex-shrink: 0; margin-top: 2px; }
+
+    .ref-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    .ref-table th, .ref-table td { border: 2px solid var(--border); padding: 10px 14px; font-size: 0.88rem; text-align: left; }
+    .ref-table th { background: #eef1fd; font-weight: 800; color: var(--accent-dark); }
+
+    .cta-bar { background: linear-gradient(135deg, #4361EE 0%, #3a0ca3 100%); border-radius: var(--radius); padding: 28px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .cta-bar h2 { color: #fff; font-size: 1.2rem; font-weight: 900; }
+    .cta-bar p { color: rgba(255,255,255,.8); font-size: 0.9rem; margin-top: 4px; font-weight: 600; }
+    .cta-btn { background: #fff; color: var(--accent); border-radius: 10px; padding: 12px 24px; font-weight: 900; font-size: 1rem; text-decoration: none; white-space: nowrap; transition: transform .15s; }
+    .cta-btn:hover { transform: scale(1.04); }
+
+    footer { text-align: center; padding: 24px; font-size: 0.8rem; color: var(--muted); font-weight: 600; }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header>
+  <div class="header-inner">
+    <a class="logo" href="index.html">LearnBright</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#grades">Grades</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <a href="index.html">Home</a><span>›</span>
+  <a href="index.html#grade4">Grade 4 Math</a><span>›</span>
+  Factors &amp; Multiples
+</div>
+
+<div class="hero">
+  <div class="hero-icon">
+    <svg viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="14" cy="14" r="8" stroke="white" stroke-width="2.5"/>
+      <circle cx="28" cy="28" r="8" stroke="white" stroke-width="2.5"/>
+      <circle cx="28" cy="14" r="4" fill="white" opacity="0.5"/>
+      <circle cx="14" cy="28" r="4" fill="white" opacity="0.5"/>
+    </svg>
+  </div>
+  <div>
+    <h1>Factors &amp; Multiples</h1>
+    <p>Grade 4 Math &nbsp;·&nbsp; Understand divisibility, primes, and skip counting</p>
+  </div>
+</div>
+
+<main>
+
+  <!-- Factors vs Multiples -->
+  <div class="card">
+    <h2><span class="icon">🔢</span> Factors vs Multiples</h2>
+
+    <div class="def-grid">
+      <div class="def-box">
+        <h3>Factor</h3>
+        <p>A number that divides another number <strong>evenly</strong> (no remainder). Factors are always <em>smaller than or equal to</em> the number.</p>
+        <p style="margin-top:8px">Factors of 12 → 1, 2, 3, 4, 6, 12</p>
+      </div>
+      <div class="def-box">
+        <h3>Multiple</h3>
+        <p>A number you get by <strong>multiplying</strong> a number by 1, 2, 3, 4, … Multiples are always <em>greater than or equal to</em> the number.</p>
+        <p style="margin-top:8px">Multiples of 4 → 4, 8, 12, 16, 20, …</p>
+      </div>
+    </div>
+
+    <p><strong>Memory trick:</strong> Think of factors as what you can <em>factor out</em> of a number, and multiples as what appears in that number's <em>times table</em>.</p>
+  </div>
+
+  <!-- Finding Factors -->
+  <div class="card">
+    <h2><span class="icon">🔍</span> Finding Factor Pairs</h2>
+    <p>List factor pairs by starting at 1 and working up. A <strong>factor pair</strong> is two numbers that multiply to give your target.</p>
+    <p>Factor pairs of <strong>12</strong>:</p>
+    <div class="factor-grid">
+      <div class="factor-pair">1 × 12</div>
+      <div class="factor-pair">2 × 6</div>
+      <div class="factor-pair">3 × 4</div>
+    </div>
+    <p>So all factors of 12 are: <code>1, 2, 3, 4, 6, 12</code></p>
+    <p style="margin-top:8px"><strong>Tip:</strong> Stop when the two numbers in a pair would cross over (e.g., after 3 × 4 we don't need 4 × 3 — that's the same pair).</p>
+  </div>
+
+  <!-- Finding Multiples -->
+  <div class="card">
+    <h2><span class="icon">🔁</span> Finding Multiples</h2>
+    <p>Multiples of a number are just the results of its times table. Keep multiplying by 1, 2, 3, …</p>
+    <p>First 5 multiples of <strong>7</strong>:</p>
+    <div class="multiples-strip">
+      <div class="mult-num">7 × 1 = 7</div>
+      <div class="mult-num">7 × 2 = 14</div>
+      <div class="mult-num">7 × 3 = 21</div>
+      <div class="mult-num">7 × 4 = 28</div>
+      <div class="mult-num">7 × 5 = 35</div>
+    </div>
+    <p>So the first 5 multiples of 7 are: <code>7, 14, 21, 28, 35</code></p>
+  </div>
+
+  <!-- Prime and Composite -->
+  <div class="card">
+    <h2><span class="icon">⭐</span> Prime, Composite, and Neither</h2>
+    <p>Every whole number greater than 1 is either prime or composite:</p>
+
+    <div class="pvc-grid">
+      <div class="pvc-card prime">
+        <h3>Prime</h3>
+        <p>Exactly <strong>2 factors</strong>: 1 and itself. Cannot be divided evenly by anything else.</p>
+        <div class="example-nums">2, 3, 5, 7, 11, 13, 17, 19…</div>
+      </div>
+      <div class="pvc-card composite">
+        <h3>Composite</h3>
+        <p>More than 2 factors. Can be divided evenly by numbers other than 1 and itself.</p>
+        <div class="example-nums">4, 6, 8, 9, 10, 12, 14, 15…</div>
+      </div>
+      <div class="pvc-card neither">
+        <h3>Neither</h3>
+        <p>The number <strong>1</strong> has only one factor (itself), so it is neither prime nor composite.</p>
+        <div class="example-nums">Just: 1</div>
+      </div>
+    </div>
+
+    <p style="margin-top:4px"><strong>Note:</strong> 2 is the only <em>even</em> prime number. All other even numbers are composite because they are divisible by 2.</p>
+  </div>
+
+  <!-- Worked Examples -->
+  <div class="card">
+    <h2><span class="icon">✏️</span> Worked Examples</h2>
+    <div class="examples">
+
+      <div class="example">
+        <div class="example-header">
+          <div class="ex-num">1</div>
+          <h3>List all the factors of 12.</h3>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">1</div>
+          <p>Check each number: 1×12 ✓, 2×6 ✓, 3×4 ✓, 5 doesn't divide 12 evenly.</p>
+        </div>
+        <div class="answer-box">Factors of 12: 1, 2, 3, 4, 6, 12</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header">
+          <div class="ex-num">2</div>
+          <h3>Write the first 5 multiples of 7.</h3>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">1</div>
+          <p>7×1=7, 7×2=14, 7×3=21, 7×4=28, 7×5=35</p>
+        </div>
+        <div class="answer-box">7, 14, 21, 28, 35</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header">
+          <div class="ex-num">3</div>
+          <h3>Is 17 prime or composite?</h3>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">1</div>
+          <p>Try to divide 17 by 2, 3, 4 … None divide evenly.</p>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">2</div>
+          <p>17 has exactly 2 factors: 1 and 17.</p>
+        </div>
+        <div class="answer-box">17 is prime</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header">
+          <div class="ex-num">4</div>
+          <h3>Is 24 prime or composite?</h3>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">1</div>
+          <p>24 ÷ 2 = 12 with no remainder, so 2 is a factor of 24.</p>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">2</div>
+          <p>24 has more than 2 factors (1, 2, 3, 4, 6, 8, 12, 24).</p>
+        </div>
+        <div class="answer-box">24 is composite</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header">
+          <div class="ex-num">5</div>
+          <h3>Find the common factors of 12 and 18.</h3>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">1</div>
+          <p>Factors of 12: 1, 2, 3, 4, 6, 12</p>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">2</div>
+          <p>Factors of 18: 1, 2, 3, 6, 9, 18</p>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">3</div>
+          <p>Numbers in both lists: 1, 2, 3, 6. The greatest is 6 (the GCF).</p>
+        </div>
+        <div class="answer-box">Common factors: 1, 2, 3, 6 &nbsp;|&nbsp; GCF = 6</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Watch Out -->
+  <div class="card">
+    <h2><span class="icon">⚠️</span> Watch Out!</h2>
+    <ul class="watch-list">
+      <li>
+        <span class="watch-badge">1 IS NOT PRIME</span>
+        The number 1 has only one factor (itself). Prime numbers need exactly two factors. So 1 is neither prime nor composite.
+      </li>
+      <li>
+        <span class="watch-badge">2 IS PRIME</span>
+        2 is the only even prime. Every other even number has 2 as a factor, giving it more than 2 factors.
+      </li>
+      <li>
+        <span class="watch-badge">FACTOR ≠ MULTIPLE</span>
+        Factors are smaller (or equal), multiples are larger (or equal). Don't swap the words!
+      </li>
+      <li>
+        <span class="watch-badge">MISSING PAIRS</span>
+        When listing factors, work in pairs and don't skip any. Start from 1 and work up until the pair would cross.
+      </li>
+    </ul>
+  </div>
+
+  <!-- Quick Reference -->
+  <div class="card">
+    <h2><span class="icon">📋</span> Quick Reference</h2>
+    <table class="ref-table">
+      <thead>
+        <tr><th>Term</th><th>Meaning</th><th>Example (n = 6)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Factor</td><td>Divides n evenly</td><td>Factors of 6: 1, 2, 3, 6</td></tr>
+        <tr><td>Multiple</td><td>n × whole number</td><td>Multiples of 6: 6, 12, 18, 24…</td></tr>
+        <tr><td>Prime</td><td>Exactly 2 factors</td><td>2, 3, 5, 7, 11, 13…</td></tr>
+        <tr><td>Composite</td><td>More than 2 factors</td><td>4, 6, 8, 9, 10, 12…</td></tr>
+        <tr><td>GCF</td><td>Greatest Common Factor</td><td>GCF(6,9) = 3</td></tr>
+        <tr><td>LCM</td><td>Least Common Multiple</td><td>LCM(4,6) = 12</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-bar">
+    <div>
+      <h2>Ready to practise?</h2>
+      <p>Try the interactive worksheet with instant feedback.</p>
+    </div>
+    <a class="cta-btn" href="math-grade4-factors-multiples-worksheet.html">Start Worksheet →</a>
+  </div>
+
+</main>
+
+<footer>© 2025 LearnBright · Free printable &amp; interactive school worksheets</footer>
+</body>
+</html>

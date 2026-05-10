@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adding &amp; Subtracting Fractions – Grade 5 Worksheet</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --ink: #1a1f36; --muted: #5a6076; --accent: #4361EE; --accent-dark: #3451d1;
+      --green: #06d6a0; --orange: #fb8500; --red: #ef233c;
+      --bg: #f4f6fb; --card: #ffffff; --border: #e2e6f0; --radius: 14px;
+      --mono: 'JetBrains Mono', monospace;
+    }
+    body { font-family: 'Nunito', sans-serif; background-color: var(--bg); background-image: radial-gradient(circle, #E8EDF5 1.5px, transparent 1.5px); background-size: 20px 20px; color: var(--ink); min-height: 100vh; }
+    header { background: var(--card); border-bottom: 2px solid var(--border); padding: 0 24px; }
+    .header-inner { max-width: 860px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .logo { font-weight: 900; font-size: 1.25rem; color: var(--accent); text-decoration: none; }
+    nav a { font-weight: 700; font-size: 0.85rem; color: var(--muted); text-decoration: none; margin-left: 20px; }
+    nav a:hover { color: var(--accent); }
+    .breadcrumb { max-width: 860px; margin: 0 auto; padding: 14px 24px 0; font-size: 0.8rem; color: var(--muted); }
+    .breadcrumb a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    .breadcrumb span { margin: 0 6px; }
+    .hero { max-width: 860px; margin: 0 auto; padding: 24px 24px 0; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+    .hero-icon { width: 64px; height: 64px; border-radius: 18px; background: var(--accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.8rem; }
+    .hero h1 { font-size: 1.7rem; font-weight: 900; line-height: 1.2; }
+    .hero p { font-size: 0.95rem; color: var(--muted); margin-top: 4px; font-weight: 600; }
+    .controls { max-width: 860px; margin: 18px auto 0; padding: 0 24px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+    .diff-group { display: flex; border: 2px solid var(--border); border-radius: 10px; overflow: hidden; }
+    .diff-btn { padding: 8px 18px; font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 0.88rem; border: none; cursor: pointer; background: var(--card); color: var(--muted); transition: all .15s; }
+    .diff-btn.active { background: var(--accent); color: #fff; }
+    .btn { padding: 9px 18px; border-radius: 10px; font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 0.88rem; border: 2px solid var(--border); cursor: pointer; background: var(--card); color: var(--ink); transition: all .15s; }
+    .btn:hover { border-color: var(--accent); color: var(--accent); }
+    .btn-primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .btn-primary:hover { background: var(--accent-dark); color: #fff; border-color: var(--accent-dark); }
+    main { max-width: 860px; margin: 20px auto 60px; padding: 0 24px; display: flex; flex-direction: column; gap: 14px; }
+    .score-banner { border-radius: var(--radius); padding: 18px 24px; display: none; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+    .score-banner.show { display: flex; }
+    .score-banner.great { background: #e8faf4; border: 2px solid var(--green); }
+    .score-banner.ok { background: #fff4e6; border: 2px solid var(--orange); }
+    .score-banner.low { background: #fff0f0; border: 2px solid var(--red); }
+    .score-text { font-size: 1.1rem; font-weight: 900; }
+    .q-card { background: var(--card); border-radius: var(--radius); border: 2px solid var(--border); padding: 22px 24px; }
+    .q-card.correct { border-color: var(--green); background: #f0fdf8; }
+    .q-card.incorrect { border-color: var(--red); background: #fff5f5; }
+    .q-header { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 14px; }
+    .q-num { width: 30px; height: 30px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 900; font-size: 0.85rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .q-text { font-size: 0.97rem; font-weight: 700; line-height: 1.5; }
+    .q-input { width: 110px; padding: 8px 12px; border: 2px solid var(--border); border-radius: 8px; font-family: var(--mono); font-size: 1.1rem; font-weight: 700; color: var(--ink); outline: none; transition: border-color .15s; }
+    .q-input:focus { border-color: var(--accent); }
+    .radio-group { display: flex; gap: 10px; margin-top: 4px; }
+    .radio-label { display: flex; align-items: center; gap: 6px; cursor: pointer; font-weight: 700; font-size: 0.9rem; padding: 8px 16px; border: 2px solid var(--border); border-radius: 8px; transition: all .15s; }
+    .radio-label input { display: none; }
+    .radio-label.selected { border-color: var(--accent); background: #eef1fd; color: var(--accent); }
+    .select-input { padding: 8px 12px; border: 2px solid var(--border); border-radius: 8px; font-family: 'Nunito', sans-serif; font-size: 0.95rem; font-weight: 700; color: var(--ink); outline: none; cursor: pointer; }
+    .select-input:focus { border-color: var(--accent); }
+    .feedback { margin-top: 10px; font-size: 0.88rem; font-weight: 700; display: none; }
+    .feedback.show { display: block; }
+    .feedback.correct { color: #05a07a; }
+    .feedback.incorrect { color: var(--red); }
+    .submit-row { display: flex; justify-content: center; margin-top: 10px; }
+    .btn-submit { padding: 14px 40px; border-radius: 12px; background: var(--accent); color: #fff; font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1.05rem; border: none; cursor: pointer; transition: background .15s; }
+    .btn-submit:hover { background: var(--accent-dark); }
+    footer { text-align: center; padding: 24px; font-size: 0.8rem; color: var(--muted); font-weight: 600; }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header>
+  <div class="header-inner">
+    <a class="logo" href="index.html">LearnBright</a>
+    <nav><a href="index.html">Home</a><a href="index.html#grades">Grades</a></nav>
+  </div>
+</header>
+<div class="breadcrumb">
+  <a href="index.html">Home</a><span>›</span>
+  <a href="index.html#grade5">Grade 5 Math</a><span>›</span>
+  <a href="math-grade5-fractions-add-subtract-help.html">Adding &amp; Subtracting Fractions</a><span>›</span>
+  Worksheet
+</div>
+<div class="hero">
+  <div class="hero-icon">➕</div>
+  <div>
+    <h1>Adding &amp; Subtracting Fractions</h1>
+    <p>Grade 5 &nbsp;·&nbsp; 10 questions &nbsp;·&nbsp; Instant feedback</p>
+  </div>
+</div>
+<div class="controls">
+  <div class="diff-group">
+    <button class="diff-btn active" id="btn-easy" onclick="setDiff('easy')">Easy</button>
+    <button class="diff-btn" id="btn-hard" onclick="setDiff('hard')">Hard</button>
+  </div>
+  <button class="btn" onclick="newWorksheet()">New Worksheet</button>
+  <button class="btn" onclick="showAnswers()">Show Answers</button>
+  <button class="btn btn-primary" onclick="shareResults()">Share Results</button>
+</div>
+<main>
+  <div class="score-banner" id="score-banner">
+    <span class="score-text" id="score-text"></span>
+    <button class="btn btn-primary" onclick="newWorksheet()">Try Again</button>
+  </div>
+  <div id="questions"></div>
+  <div class="submit-row"><button class="btn-submit" onclick="submitAll()">Check My Answers</button></div>
+</main>
+<footer>© 2025 LearnBright · Free printable &amp; interactive school worksheets</footer>
+<script>
+(function(){
+  const STATS_KEY = 'ws_math_grade5_fractions-add-subtract_stats';
+  let difficulty = 'easy';
+  let questions = [];
+
+  function rnd(min,max){ return Math.floor(Math.random()*(max-min+1))+min; }
+  function pick(arr){ return arr[rnd(0,arr.length-1)]; }
+
+  function gcd(a,b){ return b===0?a:gcd(b,a%b); }
+  function simplify(n,d){ const g=gcd(Math.abs(n),Math.abs(d)); return {n:n/g,d:d/g}; }
+  function lcm(a,b){ return a*b/gcd(a,b); }
+  function fracStr(n,d){ const s=simplify(n,d); return s.d===1?String(s.n):`${s.n}/${s.d}`; }
+
+  function answersMatch(user,correct){
+    if(user.trim().toLowerCase()===String(correct).toLowerCase()) return true;
+    const u=parseFloat(user), c=parseFloat(correct);
+    if(!isNaN(u)&&!isNaN(c)) return Math.abs(u-c)<0.001;
+    return false;
+  }
+
+  /* ── generators ── */
+  function makeSameDenomAddQ(easy){
+    const d = easy ? pick([4,5,6,8]) : pick([8,10,12,15]);
+    const a = rnd(1,d-2), b = rnd(1,d-1-a);
+    const rn=a+b, s=simplify(rn,d);
+    return { text:`What is ${a}/${d} + ${b}/${d}? (Give your answer as a simplified fraction or whole number, e.g. 3/4 or 2)`, answer:fracStr(rn,d), type:'number', freeText:true };
+  }
+
+  function makeSameDenomSubQ(easy){
+    const d = easy ? pick([4,5,6,8]) : pick([8,10,12,15]);
+    const b = rnd(1,d-2), a = rnd(b+1,d-1);
+    const rn=a-b;
+    return { text:`What is ${a}/${d} − ${b}/${d}? (Simplify if possible)`, answer:fracStr(rn,d), type:'number', freeText:true };
+  }
+
+  function makeDiffDenomAddQ(easy){
+    const pairs = easy ? [{a:2,b:4},{a:3,b:6},{a:2,b:6},{a:3,b:4},{a:4,b:8}]
+                       : [{a:3,b:5},{a:4,b:6},{a:3,b:8},{a:5,b:6},{a:4,b:9}];
+    const {a:d1,b:d2} = pick(pairs);
+    const n1=rnd(1,d1-1), n2=rnd(1,d2-1);
+    const ld=lcm(d1,d2);
+    const rn = n1*(ld/d1) + n2*(ld/d2);
+    return { text:`What is ${n1}/${d1} + ${n2}/${d2}? (Find a common denominator first, then simplify)`, answer:fracStr(rn,ld), type:'number', freeText:true };
+  }
+
+  function makeDiffDenomSubQ(easy){
+    const pairs = easy ? [{a:2,b:4},{a:3,b:6},{a:4,b:8},{a:3,b:9}]
+                       : [{a:3,b:5},{a:4,b:6},{a:5,b:8},{a:4,b:9}];
+    const {a:d1,b:d2} = pick(pairs);
+    const ld=lcm(d1,d2);
+    let n1,n2;
+    do { n1=rnd(1,d1-1); n2=rnd(1,d2-1); } while(n1*(ld/d1) <= n2*(ld/d2));
+    const rn = n1*(ld/d1) - n2*(ld/d2);
+    return { text:`What is ${n1}/${d1} − ${n2}/${d2}? (Find a common denominator first, then simplify)`, answer:fracStr(rn,ld), type:'number', freeText:true };
+  }
+
+  function makeTFSameDenomQ(easy){
+    const d = easy ? pick([4,6,8]) : pick([10,12,15]);
+    const a=rnd(1,d-2), b=rnd(1,d-1-a);
+    const correct=a+b;
+    const isRight=rnd(0,1)===1;
+    const shown=isRight?correct:correct+rnd(1,3);
+    return { text:`True or False: ${a}/${d} + ${b}/${d} = ${shown}/${d}`, answer:isRight?'True':'False', type:'radio' };
+  }
+
+  function makeMCAddQ(easy){
+    const d = easy ? pick([4,6,8]) : pick([6,8,10,12]);
+    const a=rnd(1,d-2), b=rnd(1,d-1-a);
+    const rn=a+b;
+    const correct=fracStr(rn,d);
+    const w1=fracStr(rn+1,d), w2=fracStr(a+b,d*2), w3=fracStr(a-b>=1?a-b:a+b+2,d);
+    const opts=[correct,w1,w2,w3].filter((v,i,arr)=>arr.indexOf(v)===i&&v!==correct).slice(0,3);
+    opts.push(correct);
+    opts.sort(()=>Math.random()-0.5);
+    return { text:`${a}/${d} + ${b}/${d} = ?`, answer:correct, type:'select', options:opts };
+  }
+
+  function makeWordAddQ(easy){
+    const d = easy ? pick([4,6,8]) : pick([6,10,12]);
+    const a=rnd(1,d-2), b=rnd(1,d-1-a);
+    const rn=a+b;
+    return { text:`Maria ate ${a}/${d} of a pie and Tom ate ${b}/${d}. How much did they eat altogether? (Simplify)`, answer:fracStr(rn,d), type:'number', freeText:true };
+  }
+
+  function makeWordSubQ(easy){
+    const d = easy ? pick([4,6,8]) : pick([8,10,12]);
+    const b=rnd(1,d-2), a=rnd(b+1,d-1);
+    return { text:`A tank was ${a}/${d} full. After some water was used, it was ${b}/${d} full. What fraction was used? (Simplify)`, answer:fracStr(a-b,d), type:'number', freeText:true };
+  }
+
+  function makeLCDQ(easy){
+    const pairs = easy ? [{a:3,b:4},{a:2,b:6},{a:4,b:6}] : [{a:4,b:6},{a:3,b:8},{a:5,b:6},{a:4,b:9}];
+    const {a:d1,b:d2} = pick(pairs);
+    return { text:`What is the Least Common Denominator (LCD) of ${d1} and ${d2}?`, answer:lcm(d1,d2), type:'number' };
+  }
+
+  function makeTFDiffDenomQ(easy){
+    const d1=easy?3:4, d2=easy?4:6;
+    const n1=1, n2=1;
+    const ld=lcm(d1,d2);
+    const correct=fracStr(n1*(ld/d1)+n2*(ld/d2),ld);
+    const isRight=rnd(0,1)===1;
+    const wrong=fracStr(n1+n2,d1+d2);
+    const shown=isRight?correct:wrong;
+    return { text:`True or False: ${n1}/${d1} + ${n2}/${d2} = ${shown}`, answer:isRight?'True':'False', type:'radio' };
+  }
+
+  function makeSimplifyResultQ(easy){
+    const d = easy ? pick([4,6,8]) : pick([6,8,10,12]);
+    const a=rnd(1,d-2), b=rnd(1,d-1-a);
+    const rn=a+b;
+    const s=simplify(rn,d);
+    if(s.d===d) return makeSameDenomAddQ(easy);
+    return { text:`${a}/${d} + ${b}/${d} = ${rn}/${d}. What is this in simplest form?`, answer:fracStr(rn,d), type:'number', freeText:true };
+  }
+
+  function makeWhichBiggerQ(easy){
+    const d=easy?8:12;
+    const a=rnd(2,d-3), b=rnd(1,a-1);
+    const s1=`${a}/${d}`, s2=`${b}/${d}`;
+    const diff=a-b;
+    return { text:`How much bigger is ${s1} than ${s2}? (Simplify your answer)`, answer:fracStr(diff,d), type:'number', freeText:true };
+  }
+
+  const generators = [
+    makeSameDenomAddQ, makeSameDenomSubQ, makeDiffDenomAddQ, makeDiffDenomSubQ,
+    makeTFSameDenomQ, makeMCAddQ, makeWordAddQ, makeWordSubQ, makeLCDQ, makeWhichBiggerQ
+  ];
+
+  function generate(){
+    const shuffled=[...generators].sort(()=>Math.random()-0.5);
+    questions=shuffled.slice(0,10).map(fn=>{ try{ return fn(difficulty==='easy'); }catch(e){ return makeSameDenomAddQ(difficulty==='easy'); } });
+  }
+
+  function setDiff(d){ difficulty=d; document.getElementById('btn-easy').classList.toggle('active',d==='easy'); document.getElementById('btn-hard').classList.toggle('active',d==='hard'); newWorksheet(); }
+
+  function render(){
+    const container=document.getElementById('questions');
+    container.innerHTML='';
+    questions.forEach((q,i)=>{
+      const card=document.createElement('div');
+      card.className='q-card'; card.id='q-'+i;
+      let inputHtml='';
+      if(q.freeText){
+        inputHtml=`<input class="q-input" type="text" id="ans-${i}" placeholder="e.g. 3/4" autocomplete="off" style="width:140px"/>`;
+      } else if(q.type==='number'){
+        inputHtml=`<input class="q-input" type="number" id="ans-${i}" placeholder="?" autocomplete="off"/>`;
+      } else if(q.type==='radio'){
+        inputHtml=`<div class="radio-group"><label class="radio-label" id="rl-${i}-T"><input type="radio" name="q${i}" value="True" onchange="selectRadio(${i},'T')">True</label><label class="radio-label" id="rl-${i}-F"><input type="radio" name="q${i}" value="False" onchange="selectRadio(${i},'F')">False</label></div>`;
+      } else {
+        const opts=q.options.map(o=>`<option value="${o}">${o}</option>`).join('');
+        inputHtml=`<select class="select-input" id="ans-${i}"><option value="">-- choose --</option>${opts}</select>`;
+      }
+      card.innerHTML=`<div class="q-header"><div class="q-num">${i+1}</div><div class="q-text">${q.text}</div></div>${inputHtml}<div class="feedback" id="fb-${i}"></div>`;
+      container.appendChild(card);
+    });
+    document.getElementById('score-banner').classList.remove('show');
+  }
+
+  function selectRadio(i,val){ document.getElementById('rl-'+i+'-T').classList.toggle('selected',val==='T'); document.getElementById('rl-'+i+'-F').classList.toggle('selected',val==='F'); }
+
+  function getUserAnswer(i,q){
+    if(q.type==='radio'){ const el=document.querySelector(`input[name="q${i}"]:checked`); return el?el.value:''; }
+    return (document.getElementById('ans-'+i)||{value:''}).value;
+  }
+
+  function submitAll(){
+    let correct=0;
+    questions.forEach((q,i)=>{
+      const user=getUserAnswer(i,q), card=document.getElementById('q-'+i), fb=document.getElementById('fb-'+i);
+      if(!user){ fb.textContent='⚠ Please answer this question.'; fb.className='feedback show incorrect'; return; }
+      if(answersMatch(user,q.answer)){ correct++; card.className='q-card correct'; fb.textContent='✓ Correct!'; fb.className='feedback show correct'; }
+      else { card.className='q-card incorrect'; fb.textContent=`✗ Not quite. The answer is ${q.answer}.`; fb.className='feedback show incorrect'; }
+    });
+    const banner=document.getElementById('score-banner'), scoreText=document.getElementById('score-text');
+    banner.classList.add('show');
+    if(correct>=8){ banner.className='score-banner show great'; scoreText.textContent=`🎉 ${correct}/10 — Excellent work!`; }
+    else if(correct>=5){ banner.className='score-banner show ok'; scoreText.textContent=`👍 ${correct}/10 — Good effort! Keep practising.`; }
+    else { banner.className='score-banner show low'; scoreText.textContent=`💪 ${correct}/10 — Review the help page and try again!`; }
+    saveStats(correct); banner.scrollIntoView({behavior:'smooth',block:'start'});
+  }
+
+  function showAnswers(){ questions.forEach((q,i)=>{ const fb=document.getElementById('fb-'+i); fb.textContent=`Answer: ${q.answer}`; fb.className='feedback show incorrect'; }); }
+  function shareResults(){ if(navigator.share){ navigator.share({title:'LearnBright',text:'I practised Adding & Subtracting Fractions on LearnBright!',url:location.href}); } else { navigator.clipboard.writeText(location.href).then(()=>alert('Link copied!')); } }
+  function saveStats(score){ try{ const s=JSON.parse(localStorage.getItem(STATS_KEY)||'{"attempts":0,"totalScore":0}'); s.attempts++; s.totalScore+=score; localStorage.setItem(STATS_KEY,JSON.stringify(s)); }catch(e){} }
+  function newWorksheet(){ generate(); render(); window.scrollTo({top:0,behavior:'smooth'}); }
+
+  window.setDiff=setDiff; window.newWorksheet=newWorksheet; window.showAnswers=showAnswers;
+  window.shareResults=shareResults; window.submitAll=submitAll; window.selectRadio=selectRadio;
+  generate(); render();
+})();
+</script>
+</body>
+</html>

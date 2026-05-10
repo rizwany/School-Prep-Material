@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Volume &amp; Capacity – Grade 5 Math Help</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --ink: #1a1f36; --muted: #5a6076; --accent: #4361EE; --accent-dark: #3451d1;
+      --green: #06d6a0; --orange: #fb8500; --red: #ef233c;
+      --bg: #f4f6fb; --card: #ffffff; --border: #e2e6f0; --radius: 14px;
+      --mono: 'JetBrains Mono', monospace;
+    }
+    body { font-family: 'Nunito', sans-serif; background-color: var(--bg); background-image: radial-gradient(circle, #E8EDF5 1.5px, transparent 1.5px); background-size: 20px 20px; color: var(--ink); min-height: 100vh; }
+    header { background: var(--card); border-bottom: 2px solid var(--border); padding: 0 24px; }
+    .header-inner { max-width: 860px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .logo { font-weight: 900; font-size: 1.25rem; color: var(--accent); text-decoration: none; }
+    nav a { font-weight: 700; font-size: 0.85rem; color: var(--muted); text-decoration: none; margin-left: 20px; }
+    nav a:hover { color: var(--accent); }
+    .breadcrumb { max-width: 860px; margin: 0 auto; padding: 14px 24px 0; font-size: 0.8rem; color: var(--muted); }
+    .breadcrumb a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 6px; }
+    .hero { max-width: 860px; margin: 0 auto; padding: 28px 24px 0; display: flex; align-items: center; gap: 20px; }
+    .hero-icon { width: 72px; height: 72px; border-radius: 20px; background: var(--accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 2rem; }
+    .hero h1 { font-size: 1.9rem; font-weight: 900; line-height: 1.15; }
+    .hero p { font-size: 1rem; color: var(--muted); margin-top: 6px; font-weight: 600; }
+    main { max-width: 860px; margin: 28px auto 60px; padding: 0 24px; display: flex; flex-direction: column; gap: 24px; }
+    .card { background: var(--card); border-radius: var(--radius); border: 2px solid var(--border); padding: 28px; }
+    .card h2 { font-size: 1.25rem; font-weight: 900; color: var(--accent); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+    .card p { font-size: 0.95rem; line-height: 1.7; color: var(--ink); margin-bottom: 12px; }
+    .card p:last-child { margin-bottom: 0; }
+    .formula-box { background: #eef1fd; border-left: 4px solid var(--accent); border-radius: 10px; padding: 16px 20px; margin: 16px 0; font-family: var(--mono); font-size: 1rem; font-weight: 700; color: var(--accent-dark); }
+    .formula-box .label { font-family: 'Nunito', sans-serif; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-bottom: 6px; }
+    .formula-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0; }
+    @media (max-width: 560px) { .formula-grid { grid-template-columns: 1fr; } }
+    .shape-diagram { display: flex; justify-content: center; margin: 20px 0; }
+    .shape-diagram svg { max-width: 100%; }
+    .examples { display: flex; flex-direction: column; gap: 16px; }
+    .example { border: 2px solid var(--border); border-radius: 12px; padding: 18px 20px; background: #fafbff; }
+    .example-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+    .ex-num { width: 32px; height: 32px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 900; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .example-header h3 { font-size: 1rem; font-weight: 800; }
+    .ex-step { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; font-size: 0.9rem; }
+    .ex-step-num { background: var(--green); color: #fff; border-radius: 50%; width: 22px; height: 22px; font-size: 0.75rem; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    .ex-step p { line-height: 1.5; }
+    code { font-family: var(--mono); background: #eef1fd; border-radius: 5px; padding: 1px 6px; font-size: 0.88em; color: var(--accent-dark); }
+    .answer-box { background: #e8faf4; border: 2px solid var(--green); border-radius: 8px; padding: 10px 14px; margin-top: 10px; font-weight: 800; font-size: 0.95rem; color: #05a07a; }
+    .watch-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .watch-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.92rem; line-height: 1.55; }
+    .watch-badge { background: #fff0f0; color: var(--red); border: 2px solid #ffd6d6; border-radius: 8px; padding: 3px 9px; font-weight: 800; font-size: 0.78rem; flex-shrink: 0; margin-top: 2px; }
+    .ref-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    .ref-table th, .ref-table td { border: 2px solid var(--border); padding: 10px 14px; font-size: 0.88rem; text-align: left; }
+    .ref-table th { background: #eef1fd; font-weight: 800; color: var(--accent-dark); }
+    .ref-table td code { display: inline-block; }
+    .cta-bar { background: linear-gradient(135deg, #4361EE 0%, #3a0ca3 100%); border-radius: var(--radius); padding: 28px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .cta-bar h2 { color: #fff; font-size: 1.2rem; font-weight: 900; }
+    .cta-bar p { color: rgba(255,255,255,.8); font-size: 0.9rem; margin-top: 4px; font-weight: 600; }
+    .cta-btn { background: #fff; color: var(--accent); border-radius: 10px; padding: 12px 24px; font-weight: 900; font-size: 1rem; text-decoration: none; white-space: nowrap; transition: transform .15s; }
+    .cta-btn:hover { transform: scale(1.04); }
+    footer { text-align: center; padding: 24px; font-size: 0.8rem; color: var(--muted); font-weight: 600; }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header>
+  <div class="header-inner">
+    <a class="logo" href="index.html">LearnBright</a>
+    <nav><a href="index.html">Home</a><a href="index.html#grades">Grades</a></nav>
+  </div>
+</header>
+<div class="breadcrumb">
+  <a href="index.html">Home</a><span>›</span>
+  <a href="index.html#grade5">Grade 5 Math</a><span>›</span>
+  Volume &amp; Capacity
+</div>
+<div class="hero">
+  <div class="hero-icon">📦</div>
+  <div>
+    <h1>Volume &amp; Capacity</h1>
+    <p>Grade 5 Math &nbsp;·&nbsp; Measure 3D space and liquid amounts</p>
+  </div>
+</div>
+
+<main>
+
+  <!-- Volume -->
+  <div class="card">
+    <h2><span class="icon">📦</span> What is Volume?</h2>
+    <p><strong>Volume</strong> is the amount of 3D space a solid object occupies — how many unit cubes fit inside it. Volume is measured in <strong>cubic units</strong>: cm³, m³, or in³.</p>
+    <div class="formula-grid">
+      <div class="formula-box">
+        <div class="label">Rectangular Prism (Cuboid)</div>
+        V = length × width × height
+      </div>
+      <div class="formula-box">
+        <div class="label">Cube</div>
+        V = side × side × side = s³
+      </div>
+    </div>
+
+    <div class="shape-diagram">
+      <svg width="320" height="180" viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg">
+        <!-- Front face -->
+        <rect x="60" y="60" width="140" height="90" fill="#eef1fd" stroke="#4361EE" stroke-width="2.5"/>
+        <!-- Top face (parallelogram) -->
+        <polygon points="60,60 110,30 250,30 200,60" fill="#c8d3fb" stroke="#4361EE" stroke-width="2.5"/>
+        <!-- Right face -->
+        <polygon points="200,60 250,30 250,120 200,150" fill="#d6ddfb" stroke="#4361EE" stroke-width="2.5"/>
+        <!-- Labels -->
+        <text x="125" y="115" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="800" font-size="13" fill="#4361EE">length = 5 cm</text>
+        <text x="30" y="110" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="800" font-size="12" fill="#4361EE" transform="rotate(-90,30,110)">h = 3 cm</text>
+        <text x="235" y="82" font-family="Nunito,sans-serif" font-weight="800" font-size="12" fill="#4361EE">w=4</text>
+        <text x="140" y="165" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="900" font-size="14" fill="#3451d1">V = 5×4×3 = 60 cm³</text>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Capacity -->
+  <div class="card">
+    <h2><span class="icon">🧴</span> What is Capacity?</h2>
+    <p><strong>Capacity</strong> is the maximum amount of liquid a container can hold. It is measured in <strong>litres (L)</strong> and <strong>millilitres (mL)</strong>.</p>
+    <div class="formula-grid">
+      <div class="formula-box">
+        <div class="label">Conversion</div>
+        1 L = 1000 mL
+      </div>
+      <div class="formula-box">
+        <div class="label">Volume ↔ Capacity</div>
+        1 cm³ = 1 mL
+      </div>
+    </div>
+    <p>So a box with volume 500 cm³ can hold 500 mL = 0.5 L of liquid.</p>
+  </div>
+
+  <!-- Worked Examples -->
+  <div class="card">
+    <h2><span class="icon">✏️</span> Worked Examples</h2>
+    <div class="examples">
+
+      <div class="example">
+        <div class="example-header">
+          <div class="ex-num">1</div>
+          <h3>Find the volume of a box 6 cm × 4 cm × 3 cm</h3>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">1</div>
+          <p>V = l × w × h = 6 × 4 × 3</p>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">2</div>
+          <p>6 × 4 = 24; 24 × 3 = 72</p>
+        </div>
+        <div class="answer-box">Volume = 72 cm³</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header">
+          <div class="ex-num">2</div>
+          <h3>A cube has a side of 5 cm. Find its volume.</h3>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">1</div>
+          <p>V = s³ = 5 × 5 × 5</p>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">2</div>
+          <p>5 × 5 = 25; 25 × 5 = 125</p>
+        </div>
+        <div class="answer-box">Volume = 125 cm³</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header">
+          <div class="ex-num">3</div>
+          <h3>A container holds 3.5 L. How many mL is that?</h3>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">1</div>
+          <p>1 L = 1000 mL, so 3.5 L = 3.5 × 1000</p>
+        </div>
+        <div class="answer-box">3.5 L = 3500 mL</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header">
+          <div class="ex-num">4</div>
+          <h3>A fish tank is 40 cm × 20 cm × 25 cm. What is its capacity in litres?</h3>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">1</div>
+          <p>Volume = 40 × 20 × 25 = 20 000 cm³</p>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">2</div>
+          <p>1 cm³ = 1 mL, so 20 000 cm³ = 20 000 mL = 20 L</p>
+        </div>
+        <div class="answer-box">Capacity = 20 L</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header">
+          <div class="ex-num">5</div>
+          <h3>A box has volume 120 cm³. Its length is 6 cm and width is 4 cm. Find the height.</h3>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">1</div>
+          <p>V = l × w × h → 120 = 6 × 4 × h = 24h</p>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">2</div>
+          <p>h = 120 ÷ 24 = 5</p>
+        </div>
+        <div class="answer-box">Height = 5 cm</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Watch Out -->
+  <div class="card">
+    <h2><span class="icon">⚠️</span> Watch Out!</h2>
+    <ul class="watch-list">
+      <li>
+        <span class="watch-badge">CUBIC UNITS</span>
+        Volume uses cubic units (cm³ or m³), not square units (cm²) — that's for area.
+      </li>
+      <li>
+        <span class="watch-badge">SAME UNITS</span>
+        Make sure all three dimensions are in the same unit before multiplying.
+      </li>
+      <li>
+        <span class="watch-badge">1 cm³ = 1 mL</span>
+        This handy fact converts volume of a box into liquid capacity.
+      </li>
+      <li>
+        <span class="watch-badge">ORDER</span>
+        Multiplication is commutative: l × w × h = h × l × w. You can multiply in any order.
+      </li>
+    </ul>
+  </div>
+
+  <!-- Quick Reference -->
+  <div class="card">
+    <h2><span class="icon">📋</span> Quick Reference</h2>
+    <table class="ref-table">
+      <thead>
+        <tr><th>Shape</th><th>Formula</th><th>Units</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Rectangular prism</td><td><code>V = l × w × h</code></td><td>cm³, m³</td></tr>
+        <tr><td>Cube</td><td><code>V = s³</code></td><td>cm³, m³</td></tr>
+        <tr><td>Capacity conversions</td><td><code>1 L = 1000 mL</code></td><td>L, mL</td></tr>
+        <tr><td>Volume ↔ Capacity</td><td><code>1 cm³ = 1 mL</code></td><td>—</td></tr>
+        <tr><td>Missing dimension</td><td><code>h = V ÷ (l × w)</code></td><td>cm, m</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-bar">
+    <div>
+      <h2>Ready to practise?</h2>
+      <p>Try the interactive worksheet with instant feedback.</p>
+    </div>
+    <a class="cta-btn" href="math-grade5-volume-capacity-worksheet.html">Start Worksheet →</a>
+  </div>
+
+</main>
+<footer>© 2025 LearnBright · Free printable &amp; interactive school worksheets</footer>
+</body>
+</html>
