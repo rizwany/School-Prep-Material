@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Area of Triangles &amp; Quadrilaterals – Grade 6 Math Help</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --ink: #1a1f36; --muted: #5a6076; --accent: #4361EE; --accent-dark: #3451d1; --green: #06d6a0; --orange: #fb8500; --red: #ef233c; --bg: #f4f6fb; --card: #ffffff; --border: #e2e6f0; --radius: 14px; --mono: 'JetBrains Mono', monospace; }
+    body { font-family: 'Nunito', sans-serif; background-color: var(--bg); background-image: radial-gradient(circle, #E8EDF5 1.5px, transparent 1.5px); background-size: 20px 20px; color: var(--ink); min-height: 100vh; }
+    header { background: var(--card); border-bottom: 2px solid var(--border); padding: 0 24px; }
+    .header-inner { max-width: 860px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .logo { font-weight: 900; font-size: 1.25rem; color: var(--accent); text-decoration: none; }
+    nav a { font-weight: 700; font-size: 0.85rem; color: var(--muted); text-decoration: none; margin-left: 20px; }
+    nav a:hover { color: var(--accent); }
+    .breadcrumb { max-width: 860px; margin: 0 auto; padding: 14px 24px 0; font-size: 0.8rem; color: var(--muted); }
+    .breadcrumb a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    .breadcrumb span { margin: 0 6px; }
+    .hero { max-width: 860px; margin: 0 auto; padding: 28px 24px 0; display: flex; align-items: center; gap: 20px; }
+    .hero-icon { width: 72px; height: 72px; border-radius: 20px; background: var(--accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 2rem; }
+    .hero h1 { font-size: 1.9rem; font-weight: 900; line-height: 1.15; }
+    .hero p { font-size: 1rem; color: var(--muted); margin-top: 6px; font-weight: 600; }
+    main { max-width: 860px; margin: 28px auto 60px; padding: 0 24px; display: flex; flex-direction: column; gap: 24px; }
+    .card { background: var(--card); border-radius: var(--radius); border: 2px solid var(--border); padding: 28px; }
+    .card h2 { font-size: 1.25rem; font-weight: 900; color: var(--accent); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+    .card p { font-size: 0.95rem; line-height: 1.7; color: var(--ink); margin-bottom: 12px; }
+    .card p:last-child { margin-bottom: 0; }
+    .formula-box { background: #eef1fd; border-left: 4px solid var(--accent); border-radius: 10px; padding: 16px 20px; margin: 16px 0; font-family: var(--mono); font-size: 1rem; font-weight: 700; color: var(--accent-dark); }
+    .formula-box .label { font-family: 'Nunito', sans-serif; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-bottom: 6px; }
+    .shape-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0; }
+    @media (max-width: 560px) { .shape-grid { grid-template-columns: 1fr; } }
+    .shape-card { border-radius: 12px; padding: 18px; border: 2px solid var(--border); }
+    .shape-card.tri { border-color: #4361EE; background: #eef1fd; }
+    .shape-card.rect { border-color: #06d6a0; background: #e8faf4; }
+    .shape-card.para { border-color: #fb8500; background: #fff4e6; }
+    .shape-card.trap { border-color: #ef233c; background: #fff0f0; }
+    .shape-card h3 { font-size: 1rem; font-weight: 900; margin-bottom: 6px; }
+    .shape-card.tri h3 { color: #4361EE; }
+    .shape-card.rect h3 { color: #05a07a; }
+    .shape-card.para h3 { color: #fb8500; }
+    .shape-card.trap h3 { color: #ef233c; }
+    .shape-formula { font-family: var(--mono); font-size: 0.92rem; font-weight: 700; margin: 6px 0; }
+    .shape-card p { font-size: 0.83rem; color: var(--muted); line-height: 1.5; margin-bottom: 0; }
+    .examples { display: flex; flex-direction: column; gap: 16px; }
+    .example { border: 2px solid var(--border); border-radius: 12px; padding: 18px 20px; background: #fafbff; }
+    .example-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+    .ex-num { width: 32px; height: 32px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 900; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .example-header h3 { font-size: 1rem; font-weight: 800; }
+    .ex-step { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; font-size: 0.9rem; }
+    .ex-step-num { background: var(--green); color: #fff; border-radius: 50%; width: 22px; height: 22px; font-size: 0.75rem; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    .ex-step p { line-height: 1.5; }
+    code { font-family: var(--mono); background: #eef1fd; border-radius: 5px; padding: 1px 6px; font-size: 0.88em; color: var(--accent-dark); }
+    .answer-box { background: #e8faf4; border: 2px solid var(--green); border-radius: 8px; padding: 10px 14px; margin-top: 10px; font-weight: 800; font-size: 0.95rem; color: #05a07a; }
+    .watch-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .watch-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.92rem; line-height: 1.55; }
+    .watch-badge { background: #fff0f0; color: var(--red); border: 2px solid #ffd6d6; border-radius: 8px; padding: 3px 9px; font-weight: 800; font-size: 0.78rem; flex-shrink: 0; margin-top: 2px; }
+    .ref-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    .ref-table th, .ref-table td { border: 2px solid var(--border); padding: 10px 14px; font-size: 0.88rem; text-align: left; }
+    .ref-table th { background: #eef1fd; font-weight: 800; color: var(--accent-dark); }
+    .ref-table td code { display: inline-block; }
+    .cta-bar { background: linear-gradient(135deg, #4361EE 0%, #3a0ca3 100%); border-radius: var(--radius); padding: 28px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .cta-bar h2 { color: #fff; font-size: 1.2rem; font-weight: 900; }
+    .cta-bar p { color: rgba(255,255,255,.8); font-size: 0.9rem; margin-top: 4px; font-weight: 600; }
+    .cta-btn { background: #fff; color: var(--accent); border-radius: 10px; padding: 12px 24px; font-weight: 900; font-size: 1rem; text-decoration: none; white-space: nowrap; transition: transform .15s; }
+    .cta-btn:hover { transform: scale(1.04); }
+    footer { text-align: center; padding: 24px; font-size: 0.8rem; color: var(--muted); font-weight: 600; }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header>
+  <div class="header-inner">
+    <a class="logo" href="index.html">LearnBright</a>
+    <nav><a href="index.html">Home</a><a href="index.html#grades">Grades</a></nav>
+  </div>
+</header>
+<div class="breadcrumb">
+  <a href="index.html">Home</a><span>›</span>
+  <a href="index.html#grade6">Grade 6 Math</a><span>›</span>
+  Area of Triangles &amp; Quadrilaterals
+</div>
+<div class="hero">
+  <div class="hero-icon">📐</div>
+  <div>
+    <h1>Area of Triangles &amp; Quadrilaterals</h1>
+    <p>Grade 6 Math &nbsp;·&nbsp; Calculating areas of flat shapes</p>
+  </div>
+</div>
+
+<main>
+
+  <!-- Formulas Card -->
+  <div class="card">
+    <h2><span>📐</span> Area Formulas</h2>
+    <p><strong>Area</strong> is the amount of space inside a 2D shape. It is measured in square units (cm², m²).</p>
+    <div class="shape-grid">
+      <div class="shape-card tri">
+        <h3>Triangle</h3>
+        <div class="shape-formula">A = ½ × b × h</div>
+        <p>b = base, h = perpendicular height (not slant)</p>
+      </div>
+      <div class="shape-card rect">
+        <h3>Rectangle / Square</h3>
+        <div class="shape-formula">A = l × w &nbsp;(Rectangle)<br>A = s² &nbsp;(Square)</div>
+        <p>l = length, w = width, s = side length</p>
+      </div>
+      <div class="shape-card para">
+        <h3>Parallelogram</h3>
+        <div class="shape-formula">A = b × h</div>
+        <p>h must be the perpendicular (vertical) height, not the slant side</p>
+      </div>
+      <div class="shape-card trap">
+        <h3>Trapezium (Trapezoid)</h3>
+        <div class="shape-formula">A = ½ × (a + b) × h</div>
+        <p>a and b = the two parallel sides, h = perpendicular height</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Worked Examples -->
+  <div class="card">
+    <h2><span>✏️</span> Worked Examples</h2>
+    <div class="examples">
+
+      <div class="example">
+        <div class="example-header">
+          <div class="ex-num">1</div>
+          <h3>Triangle with base = 10 cm, height = 6 cm</h3>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">1</div>
+          <p>Use the formula: A = ½ × b × h</p>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">2</div>
+          <p>A = ½ × 10 × 6 = ½ × 60 = 30</p>
+        </div>
+        <div class="answer-box">Area = 30 cm²</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header">
+          <div class="ex-num">2</div>
+          <h3>Rectangle 8 cm × 5 cm</h3>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">1</div>
+          <p>A = l × w = 8 × 5 = 40</p>
+        </div>
+        <div class="answer-box">Area = 40 cm²</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header">
+          <div class="ex-num">3</div>
+          <h3>Parallelogram with base = 12 cm, perpendicular height = 4 cm</h3>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">1</div>
+          <p>A = b × h = 12 × 4 = 48</p>
+        </div>
+        <div class="answer-box">Area = 48 cm²</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header">
+          <div class="ex-num">4</div>
+          <h3>Trapezium with parallel sides 6 cm and 10 cm, height 4 cm</h3>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">1</div>
+          <p>A = ½ × (a + b) × h</p>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">2</div>
+          <p>A = ½ × (6 + 10) × 4 = ½ × 16 × 4 = ½ × 64 = 32</p>
+        </div>
+        <div class="answer-box">Area = 32 cm²</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header">
+          <div class="ex-num">5</div>
+          <h3>A triangle has area 24 cm² and base 8 cm. Find the height.</h3>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">1</div>
+          <p>A = ½ × b × h → 24 = ½ × 8 × h</p>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">2</div>
+          <p>24 = 4h → h = 24 ÷ 4 = 6</p>
+        </div>
+        <div class="answer-box">Height = 6 cm</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Watch Out -->
+  <div class="card">
+    <h2><span>⚠️</span> Watch Out!</h2>
+    <ul class="watch-list">
+      <li>
+        <span class="watch-badge">PERPENDICULAR HEIGHT</span>
+        Always use the perpendicular (vertical) height, not the slant side length of a parallelogram or triangle.
+      </li>
+      <li>
+        <span class="watch-badge">HALF FOR TRIANGLE</span>
+        Don't forget the ½ in the triangle formula. A very common mistake is using just b × h.
+      </li>
+      <li>
+        <span class="watch-badge">UNITS²</span>
+        Area is always in square units. If sides are in cm, area is cm². If in m, area is m².
+      </li>
+      <li>
+        <span class="watch-badge">TRAPEZIUM</span>
+        In a trapezium, add BOTH parallel sides before multiplying by the height and ½.
+      </li>
+    </ul>
+  </div>
+
+  <!-- Quick Reference -->
+  <div class="card">
+    <h2><span>📋</span> Quick Reference</h2>
+    <table class="ref-table">
+      <thead>
+        <tr><th>Shape</th><th>Formula</th><th>Example</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Triangle</td><td><code>½ × b × h</code></td><td>b=6, h=4 → 12 cm²</td></tr>
+        <tr><td>Rectangle</td><td><code>l × w</code></td><td>5×3 → 15 cm²</td></tr>
+        <tr><td>Square</td><td><code>s²</code></td><td>s=7 → 49 cm²</td></tr>
+        <tr><td>Parallelogram</td><td><code>b × h</code></td><td>b=8, h=5 → 40 cm²</td></tr>
+        <tr><td>Trapezium</td><td><code>½ × (a+b) × h</code></td><td>a=4,b=8,h=3 → 18 cm²</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-bar">
+    <div>
+      <h2>Ready to practise?</h2>
+      <p>Try the interactive worksheet with instant feedback.</p>
+    </div>
+    <a class="cta-btn" href="math-grade6-area-triangles-quads-worksheet.html">Start Worksheet →</a>
+  </div>
+
+</main>
+<footer>© 2025 LearnBright · Free printable &amp; interactive school worksheets</footer>
+</body>
+</html>

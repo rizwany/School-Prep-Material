@@ -88,6 +88,63 @@
     .bottom-nav{text-align:center;margin-top:44px;padding-top:20px;border-top:2px solid var(--clr-dot)}
     .bottom-nav a{font-size:0.88rem;color:var(--clr-accent);text-decoration:none;font-weight:700}.bottom-nav a:hover{text-decoration:underline}
     @media(max-width:600px){.page-wrap{padding:16px 14px 48px}}
+
+    /* ===== COMPACT VIEW ===== */
+    .cv-overlay{position:fixed;inset:0;background:var(--clr-bg);z-index:600;display:flex;flex-direction:column;overflow:hidden}
+    .cv-overlay.hidden{display:none}
+    .cv-header{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;background:#fff;border-bottom:2px solid var(--clr-dot);flex-shrink:0;gap:12px}
+    .cv-exit{font-size:0.82rem;font-weight:800;color:var(--clr-muted);background:none;border:2px solid var(--clr-dot);cursor:pointer;font-family:var(--font-display);padding:6px 14px;border-radius:8px;transition:all .15s;white-space:nowrap}
+    .cv-exit:hover{background:var(--clr-dot);color:var(--clr-navy)}
+    .cv-prog-text{font-size:0.9rem;font-weight:800;color:var(--clr-navy);text-align:center;flex:1}
+    .cv-score-chip{font-size:0.82rem;font-weight:700;color:var(--clr-accent);background:var(--clr-tint);padding:4px 12px;border-radius:50px;white-space:nowrap}
+    .cv-progress-track{height:5px;background:var(--clr-dot);flex-shrink:0}
+    .cv-progress-fill{height:100%;background:linear-gradient(90deg,var(--clr-accent),#7B61FF);border-radius:0 99px 99px 0;transition:width .5s ease}
+    .cv-body{flex:1;display:flex;align-items:center;justify-content:center;padding:28px 20px;overflow-y:auto}
+    .cv-body.hidden{display:none}
+    .cv-card{background:#fff;border-radius:20px;box-shadow:0 8px 40px rgba(67,97,238,.13);padding:32px 28px;width:100%;max-width:520px;border:3px solid transparent;transition:border-color .25s,background .25s}
+    .cv-card.cv-correct{border-color:var(--clr-green);background:var(--clr-green-bg)}
+    .cv-card.cv-wrong{border-color:var(--clr-red);background:var(--clr-red-bg)}
+    .cv-slide-in{animation:cvSlideIn .32s cubic-bezier(.34,1.56,.64,1) both}
+    @keyframes cvSlideIn{from{opacity:0;transform:translateY(28px) scale(.95)}to{opacity:1;transform:translateY(0) scale(1)}}
+    .cv-q-label{font-size:.72rem;font-weight:800;color:var(--clr-accent);text-transform:uppercase;letter-spacing:.07em;margin-bottom:14px}
+    .cv-question-text{font-size:1.15rem;font-weight:700;color:var(--clr-navy);line-height:1.55;margin-bottom:24px}
+    .cv-input{font-family:var(--font-mono);font-size:1.4rem;font-weight:700;color:var(--clr-navy);border:2.5px solid var(--clr-dot);border-radius:12px;padding:12px 20px;width:160px;outline:none;transition:border-color .2s,box-shadow .2s;text-align:center;display:block}
+    .cv-input:focus{border-color:var(--clr-accent);box-shadow:0 0 0 4px rgba(67,97,238,.12)}
+    .cv-input.cv-shake{animation:shakeWrong .45s ease}
+    .cv-radio-group{display:flex;gap:12px;flex-wrap:wrap}
+    .cv-radio-label{display:flex;align-items:center;justify-content:center;gap:8px;font-weight:700;font-size:1rem;cursor:pointer;padding:13px 20px;border:2.5px solid var(--clr-dot);border-radius:50px;transition:all .18s;flex:1;text-align:center}
+    .cv-radio-label:has(input:checked){border-color:var(--clr-accent);background:var(--clr-tint);color:var(--clr-accent)}
+    .cv-radio-label input{accent-color:var(--clr-accent);display:none}
+    .cv-select{font-family:var(--font-display);font-size:1rem;font-weight:700;color:var(--clr-navy);border:2.5px solid var(--clr-dot);border-radius:12px;padding:12px 16px;width:100%;outline:none;cursor:pointer;background:#fff;transition:border-color .2s}
+    .cv-select:focus{border-color:var(--clr-accent)}
+    .cv-feedback{font-size:.95rem;font-weight:700;border-radius:10px;padding:10px 14px;display:none;margin-top:16px}
+    .cv-feedback.show{display:block}
+    .cv-feedback.cv-fb-correct{background:var(--clr-green-bg);color:#1a7a3a;border:1.5px solid var(--clr-green)}
+    .cv-feedback.cv-fb-wrong{background:var(--clr-red-bg);color:#8B0010;border:1.5px solid var(--clr-red)}
+    .cv-footer{flex-shrink:0;padding:16px 20px 28px;background:#fff;border-top:2px solid var(--clr-dot)}
+    .cv-footer.hidden{display:none}
+    .cv-ctas{display:flex;gap:12px;max-width:520px;margin:0 auto}
+    .cv-btn-skip{flex:1;padding:15px 10px;border-radius:14px;font-family:var(--font-display);font-weight:800;font-size:1rem;border:2px solid var(--clr-dot);cursor:pointer;background:#fff;color:var(--clr-muted);transition:all .18s}
+    .cv-btn-skip:hover:not(:disabled){border-color:var(--clr-navy);color:var(--clr-navy);background:#f8f9fc}
+    .cv-btn-submit{flex:2;padding:15px 10px;border-radius:14px;font-family:var(--font-display);font-weight:800;font-size:1rem;border:none;cursor:pointer;background:var(--clr-accent);color:#fff;transition:all .18s}
+    .cv-btn-submit:hover:not(:disabled){background:var(--clr-accent-dark);transform:translateY(-2px);box-shadow:0 6px 18px rgba(67,97,238,.3)}
+    .cv-btn-skip:disabled,.cv-btn-submit:disabled{opacity:.45;cursor:not-allowed;transform:none;box-shadow:none}
+    .cv-result-body{text-align:center;width:100%;max-width:520px}
+    .cv-result-score-big{font-family:var(--font-mono);font-size:4rem;font-weight:700;color:var(--clr-accent);line-height:1;margin-bottom:10px}
+    .cv-result-msg{font-size:1.05rem;font-weight:700;color:var(--clr-navy);margin-bottom:26px;line-height:1.4}
+    .cv-result-dots{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:30px}
+    .cv-result-dot{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.15rem}
+    .cv-result-dot.dot-correct{background:var(--clr-green-bg)}
+    .cv-result-dot.dot-wrong{background:var(--clr-red-bg)}
+    .cv-result-dot.dot-skipped{background:#f0f1f5}
+    .cv-result-btns{display:flex;flex-direction:column;gap:12px;max-width:340px;margin:0 auto}
+    @media(max-width:480px){
+      .cv-card{padding:22px 16px;border-radius:16px}
+      .cv-question-text{font-size:1rem}
+      .cv-result-score-big{font-size:3rem}
+      .cv-btn-skip,.cv-btn-submit{font-size:.93rem;padding:13px 8px}
+      .cv-radio-label{padding:11px 14px;font-size:.93rem}
+    }
   </style>
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -122,6 +179,48 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
+<!-- COMPACT VIEW OVERLAY -->
+<div id="cvOverlay" class="cv-overlay hidden" role="dialog" aria-modal="true" aria-label="Compact quiz mode">
+  <div class="cv-header">
+    <button class="cv-exit" id="cvExitBtn" aria-label="Exit compact view">✕ Exit</button>
+    <div class="cv-prog-text">Question <span id="cvQNum">1</span> of 10</div>
+    <div class="cv-score-chip" id="cvScoreChip">0 ✓</div>
+  </div>
+  <div class="cv-progress-track"><div class="cv-progress-fill" id="cvProgressFill" style="width:0%"></div></div>
+
+  <!-- Question section -->
+  <div class="cv-body" id="cvQuestionSection">
+    <div class="cv-card" id="cvCard">
+      <div class="cv-q-label" id="cvQLabel">Question 1 of 10</div>
+      <div class="cv-question-text" id="cvQuestionText"></div>
+      <div id="cvInputArea"></div>
+      <div class="cv-feedback" id="cvFeedback"></div>
+    </div>
+  </div>
+
+  <!-- Result section (hidden until all questions done) -->
+  <div class="cv-body hidden" id="cvResultSection">
+    <div class="cv-result-body">
+      <div class="cv-result-score-big" id="cvResultScore">0/10</div>
+      <div class="cv-result-msg" id="cvResultMsg"></div>
+      <div class="cv-result-dots" id="cvResultDots"></div>
+      <div class="cv-result-btns">
+        <button class="btn btn-primary btn-lg" id="cvPlayAgainBtn">🔄 Play Again</button>
+        <button class="btn btn-outline btn-lg" id="cvShareResultBtn" style="border-color:#6C63FF;color:#6C63FF">📤 Share Results</button>
+        <button class="btn btn-outline btn-lg" id="cvExitResultBtn">✕ Exit Compact View</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer CTAs -->
+  <div class="cv-footer" id="cvFooter">
+    <div class="cv-ctas">
+      <button class="cv-btn-skip" id="cvSkipBtn">↪ Skip</button>
+      <button class="cv-btn-submit" id="cvSubmitBtn">✓ Submit</button>
+    </div>
+  </div>
+</div>
+
 <div class="page-wrap">
   <div class="top-bar">
     <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -150,6 +249,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <button class="diff-pill hard" id="pillHard" aria-pressed="false">🔴 Hard</button>
     <div class="controls-divider" aria-hidden="true"></div>
     <button class="btn btn-neutral" id="newWsBtn">🔄 New Worksheet</button>
+    <div class="controls-divider" aria-hidden="true"></div>
+    <button class="btn btn-neutral" id="compactViewBtn">📱 Compact View</button>
   </div>
   <hr class="section-divider" />
 
@@ -351,6 +452,152 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   function initUsername(){const n=localStorage.getItem(USERNAME_KEY);if(n)hideModal(n);else{document.getElementById('modalOverlay').classList.remove('hidden');document.getElementById('usernameInput').focus()}}
   function hideModal(n){document.getElementById('modalOverlay').classList.add('hidden');document.getElementById('modalOverlay').setAttribute('aria-expanded','false');document.getElementById('welcomeName').textContent=`Welcome, ${n}! 👋`;localStorage.setItem(USERNAME_KEY,n)}
+
+  // ===== COMPACT VIEW =====
+  let cvQuestions=[],cvIdx=0,cvCorrect=0,cvAnswering=false,cvLog=[];
+
+  function openCompactView(){
+    cvQuestions=generateQuestions(difficulty==='easy');
+    cvIdx=0;cvCorrect=0;cvAnswering=false;cvLog=[];
+    document.getElementById('cvOverlay').classList.remove('hidden');
+    document.getElementById('cvQuestionSection').classList.remove('hidden');
+    document.getElementById('cvResultSection').classList.add('hidden');
+    document.getElementById('cvFooter').classList.remove('hidden');
+    document.body.style.overflow='hidden';
+    cvRenderQuestion();
+  }
+
+  function exitCompactView(){
+    document.getElementById('cvOverlay').classList.add('hidden');
+    document.body.style.overflow='';
+  }
+
+  function cvUpdateHeader(){
+    document.getElementById('cvQNum').textContent=Math.min(cvIdx+1,10);
+    document.getElementById('cvScoreChip').textContent=cvCorrect+' ✓';
+    document.getElementById('cvProgressFill').style.width=(cvIdx/10*100)+'%';
+  }
+
+  function cvRenderQuestion(){
+    if(cvIdx>=10){cvShowResult();return;}
+    const q=cvQuestions[cvIdx];
+    cvAnswering=false;
+
+    const card=document.getElementById('cvCard');
+    card.className='cv-card';
+    void card.offsetWidth;
+    card.classList.add('cv-slide-in');
+
+    document.getElementById('cvQLabel').textContent='Question '+(cvIdx+1)+' of 10';
+    document.getElementById('cvQuestionText').innerHTML=q.text;
+
+    const fb=document.getElementById('cvFeedback');
+    fb.className='cv-feedback';fb.textContent='';
+
+    const area=document.getElementById('cvInputArea');
+    if(q.type==='number'){
+      area.innerHTML='<input class="cv-input" type="number" id="cvNumInput" min="0" max="100" autocomplete="off" placeholder="?"/>';
+      setTimeout(()=>{const el=document.getElementById('cvNumInput');if(el)el.focus();},80);
+      const el=document.getElementById('cvNumInput');
+      if(el)el.addEventListener('keydown',function(e){if(e.key==='Enter')cvSubmit();});
+    }else if(q.type==='radio'){
+      area.innerHTML='<div class="cv-radio-group" role="radiogroup">'+q.options.map(function(o){return'<label class="cv-radio-label"><input type="radio" name="cvradio" value="'+o+'"/>'+o+'</label>';}).join('')+'</div>';
+    }else if(q.type==='select'){
+      area.innerHTML='<select class="cv-select" id="cvNumInput"><option value="" disabled selected>— choose —</option>'+q.options.map(function(o){return'<option value="'+o+'">'+o+'</option>';}).join('')+'</select>';
+    }
+
+    document.getElementById('cvSubmitBtn').disabled=false;
+    document.getElementById('cvSkipBtn').disabled=false;
+    cvUpdateHeader();
+  }
+
+  function cvGetAnswer(){
+    const q=cvQuestions[cvIdx];
+    if(q.type==='number'||q.type==='select'){const el=document.getElementById('cvNumInput');return el?el.value.trim():'';}
+    if(q.type==='radio'){const c=document.querySelector('input[name="cvradio"]:checked');return c?c.value:'';}
+    return'';
+  }
+
+  function cvSubmit(){
+    if(cvAnswering)return;
+    const ua=cvGetAnswer();
+    if(!ua){
+      const inp=document.getElementById('cvNumInput');
+      const grp=document.querySelector('.cv-radio-group');
+      const target=inp||grp;
+      if(target){target.classList.add('cv-shake');setTimeout(function(){target.classList.remove('cv-shake');},500);}
+      return;
+    }
+    cvAnswering=true;
+    const q=cvQuestions[cvIdx];
+    const ok=answersMatch(ua,q.answer);
+    if(ok)cvCorrect++;
+    cvLog.push({correct:ok,skipped:false});
+
+    const card=document.getElementById('cvCard');
+    card.classList.add(ok?'cv-correct':'cv-wrong');
+    const fb=document.getElementById('cvFeedback');
+    fb.className='cv-feedback show '+(ok?'cv-fb-correct':'cv-fb-wrong');
+    fb.textContent=ok?'✅ Correct!':'❌ Correct answer: '+q.answer;
+
+    document.getElementById('cvSubmitBtn').disabled=true;
+    document.getElementById('cvSkipBtn').disabled=true;
+    cvUpdateHeader();
+    setTimeout(function(){cvIdx++;cvRenderQuestion();},1400);
+  }
+
+  function cvSkip(){
+    if(cvAnswering)return;
+    cvAnswering=true;
+    cvLog.push({correct:false,skipped:true});
+    cvIdx++;
+    cvRenderQuestion();
+  }
+
+  function cvShowResult(){
+    document.getElementById('cvProgressFill').style.width='100%';
+    document.getElementById('cvQuestionSection').classList.add('hidden');
+    document.getElementById('cvFooter').classList.add('hidden');
+
+    const msgs={10:'🏆 PERFECT SCORE! You\'re an addition superstar!',9:'🔥 9/10! Almost flawless!',8:'😎 8/10 — fantastic adding!',7:'👏 7/10 — great job!',6:'👍 More than half right!',5:'🤔 Exactly half — you\'ve got more in you!'};
+    const msg=cvCorrect in msgs?msgs[cvCorrect]:cvCorrect>=3?'😅 Keep adding! Check the Help page and try again. 💪':cvCorrect>=1?'🐣 A good start! The Guide will help you.':'😲 No worries! Open the Help page and come back stronger. 📘';
+
+    document.getElementById('cvResultScore').textContent=cvCorrect+'/10';
+    document.getElementById('cvResultMsg').textContent=msg;
+    document.getElementById('cvResultDots').innerHTML=cvLog.map(function(r,i){
+      return'<div class="cv-result-dot '+(r.correct?'dot-correct':r.skipped?'dot-skipped':'dot-wrong')+'" title="Q'+(i+1)+'">'+(r.correct?'✅':r.skipped?'⏭️':'❌')+'</div>';
+    }).join('');
+    document.getElementById('cvResultSection').classList.remove('hidden');
+    updateStats(cvCorrect);renderStats();
+  }
+
+  function cvPlayAgain(){
+    document.getElementById('cvResultSection').classList.add('hidden');
+    document.getElementById('cvQuestionSection').classList.remove('hidden');
+    document.getElementById('cvFooter').classList.remove('hidden');
+    cvQuestions=generateQuestions(difficulty==='easy');
+    cvIdx=0;cvCorrect=0;cvAnswering=false;cvLog=[];
+    cvRenderQuestion();
+  }
+
+  function cvShareResults(){
+    const name=localStorage.getItem(USERNAME_KEY)||'Anonymous';
+    const dl=difficulty==='easy'?'Easy':'Hard';
+    const emojis=cvLog.map(function(r){return r.correct?'✅':r.skipped?'⏭️':'❌';}).join('');
+    const text='➕ Math Worksheet — '+TOPIC+' (Grade '+GRADE+')\n👤 '+name+' scored '+cvCorrect+'/10 on '+dl+' mode! (Compact View)\n'+emojis+'\n\nThink you can beat it?\n🔗 '+location.href;
+    if(navigator.share)navigator.share({title:TOPIC+' — Grade '+GRADE,text:text,url:location.href}).catch(function(){});
+    else if(navigator.clipboard)navigator.clipboard.writeText(text).then(function(){showToast('Results copied! Share it anywhere 📤');});
+    else showToast('Copy the URL and share it manually 🔗');
+  }
+
+  document.getElementById('compactViewBtn').addEventListener('click',openCompactView);
+  document.getElementById('cvExitBtn').addEventListener('click',exitCompactView);
+  document.getElementById('cvSubmitBtn').addEventListener('click',cvSubmit);
+  document.getElementById('cvSkipBtn').addEventListener('click',cvSkip);
+  document.getElementById('cvPlayAgainBtn').addEventListener('click',cvPlayAgain);
+  document.getElementById('cvShareResultBtn').addEventListener('click',cvShareResults);
+  document.getElementById('cvExitResultBtn').addEventListener('click',exitCompactView);
+  // ===== END COMPACT VIEW =====
 
   document.getElementById('modalStartBtn').addEventListener('click',()=>{const v=document.getElementById('usernameInput').value.trim();if(!v){document.getElementById('usernameInput').focus();return}hideModal(v)});
   document.getElementById('usernameInput').addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('modalStartBtn').click()});

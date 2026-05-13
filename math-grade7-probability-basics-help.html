@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Probability Basics – Grade 7 Help</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --ink: #1a1f36; --muted: #5a6076; --accent: #4361EE; --accent-dark: #3451d1; --green: #06d6a0; --orange: #fb8500; --red: #ef233c; --bg: #f4f6fb; --card: #ffffff; --border: #e2e6f0; --radius: 14px; --mono: 'JetBrains Mono', monospace; }
+    body { font-family: 'Nunito', sans-serif; background-color: var(--bg); background-image: radial-gradient(circle, #E8EDF5 1.5px, transparent 1.5px); background-size: 20px 20px; color: var(--ink); min-height: 100vh; }
+    header { background: var(--card); border-bottom: 2px solid var(--border); padding: 0 24px; }
+    .header-inner { max-width: 860px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .logo { font-weight: 900; font-size: 1.25rem; color: var(--accent); text-decoration: none; }
+    nav a { font-weight: 700; font-size: 0.85rem; color: var(--muted); text-decoration: none; margin-left: 20px; }
+    nav a:hover { color: var(--accent); }
+    .breadcrumb { max-width: 860px; margin: 0 auto; padding: 14px 24px 0; font-size: 0.8rem; color: var(--muted); }
+    .breadcrumb a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    .breadcrumb span { margin: 0 6px; }
+    .hero { max-width: 860px; margin: 0 auto; padding: 28px 24px 0; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+    .hero-icon { width: 72px; height: 72px; border-radius: 20px; background: var(--accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 2rem; }
+    .hero h1 { font-size: 2rem; font-weight: 900; line-height: 1.15; }
+    .hero p { font-size: 1rem; color: var(--muted); margin-top: 6px; font-weight: 600; }
+    .cta-bar { max-width: 860px; margin: 20px auto 0; padding: 0 24px; }
+    .cta-btn { display: inline-block; padding: 11px 28px; background: var(--accent); color: #fff; border-radius: 10px; font-weight: 800; font-size: 0.95rem; text-decoration: none; transition: background .15s; }
+    .cta-btn:hover { background: var(--accent-dark); }
+    main { max-width: 860px; margin: 28px auto 60px; padding: 0 24px; display: flex; flex-direction: column; gap: 24px; }
+    .section-title { font-size: 1.1rem; font-weight: 900; color: var(--accent); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 14px; }
+    .card { background: var(--card); border-radius: var(--radius); border: 2px solid var(--border); padding: 24px; }
+    .concept-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(180px,1fr)); gap: 14px; }
+    .concept-card { background: var(--bg); border-radius: 10px; padding: 16px; border: 2px solid var(--border); }
+    .concept-card .label { font-size: 0.75rem; font-weight: 800; text-transform: uppercase; color: var(--muted); letter-spacing: 0.05em; }
+    .concept-card .value { font-size: 1.2rem; font-weight: 900; color: var(--accent); margin: 4px 0; font-family: var(--mono); }
+    .concept-card p { font-size: 0.85rem; color: var(--muted); font-weight: 600; line-height: 1.4; }
+    .scale-bar { background: linear-gradient(to right, var(--red), var(--orange), var(--green)); border-radius: 30px; height: 20px; margin: 10px 0; position: relative; }
+    .scale-labels { display: flex; justify-content: space-between; font-size: 0.8rem; font-weight: 800; color: var(--muted); margin-top: 6px; }
+    .example-list { display: flex; flex-direction: column; gap: 14px; }
+    .example { background: var(--bg); border-radius: 10px; padding: 16px 18px; border: 2px solid var(--border); }
+    .example .ex-q { font-weight: 800; color: var(--ink); margin-bottom: 8px; }
+    .example .ex-steps { font-size: 0.88rem; color: var(--muted); font-weight: 600; line-height: 1.7; }
+    .example .ex-ans { margin-top: 8px; font-weight: 900; color: var(--accent); }
+    .tip-box { background: #eef1fd; border-radius: 10px; padding: 14px 18px; border-left: 4px solid var(--accent); font-size: 0.9rem; font-weight: 700; color: var(--accent-dark); }
+    .vocab-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); gap: 12px; }
+    .vocab-item { background: var(--bg); border-radius: 10px; padding: 12px 16px; border: 2px solid var(--border); }
+    .vocab-item .v-term { font-weight: 900; color: var(--ink); font-size: 0.95rem; }
+    .vocab-item .v-def { font-size: 0.83rem; color: var(--muted); font-weight: 600; margin-top: 4px; line-height: 1.4; }
+    footer { text-align: center; padding: 24px; font-size: 0.8rem; color: var(--muted); font-weight: 600; }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header>
+  <div class="header-inner">
+    <a class="logo" href="index.html">LearnBright</a>
+    <nav><a href="index.html">Home</a><a href="index.html#grades">Grades</a></nav>
+  </div>
+</header>
+<div class="breadcrumb">
+  <a href="index.html">Home</a><span>›</span>
+  <a href="index.html#grade7">Grade 7 Math</a><span>›</span>
+  Probability Basics
+</div>
+<div class="hero">
+  <div class="hero-icon">🎲</div>
+  <div>
+    <h1>Probability Basics</h1>
+    <p>Grade 7 &nbsp;·&nbsp; Probability scale, theoretical &amp; experimental probability</p>
+  </div>
+</div>
+<div class="cta-bar">
+  <a class="cta-btn" href="math-grade7-probability-basics-worksheet.html">Practice Worksheet →</a>
+</div>
+<main>
+
+  <section class="card">
+    <div class="section-title">The Probability Scale</div>
+    <div class="scale-bar"></div>
+    <div class="scale-labels"><span>0 (Impossible)</span><span>0.5 (Even chance)</span><span>1 (Certain)</span></div>
+    <p style="margin-top:14px;font-size:0.9rem;font-weight:600;color:var(--muted);">Probability is always a number between 0 and 1 (inclusive). It can be written as a fraction, decimal, or percentage.</p>
+  </section>
+
+  <section class="card">
+    <div class="section-title">Key Concepts</div>
+    <div class="concept-grid">
+      <div class="concept-card">
+        <div class="label">Probability Formula</div>
+        <div class="value">P(E) = f/n</div>
+        <p><strong>f</strong> = favourable outcomes, <strong>n</strong> = total equally likely outcomes.</p>
+      </div>
+      <div class="concept-card">
+        <div class="label">Complementary Events</div>
+        <div class="value">P(E') = 1 − P(E)</div>
+        <p>P(event NOT happening) = 1 − P(event happening).</p>
+      </div>
+      <div class="concept-card">
+        <div class="label">Sum of Probabilities</div>
+        <div class="value">Sum = 1</div>
+        <p>All possible outcomes of an experiment must total 1.</p>
+      </div>
+      <div class="concept-card">
+        <div class="label">Experimental Probability</div>
+        <div class="value">P = freq / total</div>
+        <p>Based on actual results from an experiment or observation.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="section-title">Important Vocabulary</div>
+    <div class="vocab-grid">
+      <div class="vocab-item"><div class="v-term">Experiment</div><div class="v-def">An action whose result is uncertain (e.g. rolling a die).</div></div>
+      <div class="vocab-item"><div class="v-term">Outcome</div><div class="v-def">A single possible result of an experiment.</div></div>
+      <div class="vocab-item"><div class="v-term">Sample Space (S)</div><div class="v-def">The set of ALL possible outcomes. e.g. S = {1,2,3,4,5,6} for a die.</div></div>
+      <div class="vocab-item"><div class="v-term">Event</div><div class="v-def">One or more outcomes of interest (subset of sample space).</div></div>
+      <div class="vocab-item"><div class="v-term">Favourable Outcome</div><div class="v-def">An outcome that satisfies the condition of the event.</div></div>
+      <div class="vocab-item"><div class="v-term">Equally Likely</div><div class="v-def">Each outcome has the same chance of occurring.</div></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="section-title">Worked Examples</div>
+    <div class="example-list">
+      <div class="example">
+        <div class="ex-q">1. A fair die is rolled. Find P(rolling a 4).</div>
+        <div class="ex-steps">
+          Sample space = {1, 2, 3, 4, 5, 6} → n = 6<br>
+          Favourable outcomes = {4} → f = 1<br>
+          P(4) = 1/6
+        </div>
+        <div class="ex-ans">P(rolling a 4) = 1/6 ≈ 0.167</div>
+      </div>
+      <div class="example">
+        <div class="ex-q">2. A bag has 3 red, 5 blue, and 2 green balls. Find P(picking blue).</div>
+        <div class="ex-steps">
+          Total balls = 3 + 5 + 2 = 10<br>
+          Blue balls = 5<br>
+          P(blue) = 5/10 = 1/2
+        </div>
+        <div class="ex-ans">P(blue) = 1/2 = 0.5</div>
+      </div>
+      <div class="example">
+        <div class="ex-q">3. If P(rain tomorrow) = 0.3, what is P(no rain)?</div>
+        <div class="ex-steps">
+          Complementary rule: P(no rain) = 1 − P(rain)<br>
+          = 1 − 0.3
+        </div>
+        <div class="ex-ans">P(no rain) = 0.7</div>
+      </div>
+      <div class="example">
+        <div class="ex-q">4. A coin is tossed 50 times and lands heads 32 times. Find experimental P(heads).</div>
+        <div class="ex-steps">
+          Experimental probability = frequency / total trials<br>
+          = 32 / 50 = 16/25
+        </div>
+        <div class="ex-ans">P(heads) = 16/25 = 0.64</div>
+      </div>
+      <div class="example">
+        <div class="ex-q">5. A die is rolled. Find P(even number).</div>
+        <div class="ex-steps">
+          Even numbers in {1,2,3,4,5,6} = {2, 4, 6} → f = 3<br>
+          P(even) = 3/6 = 1/2
+        </div>
+        <div class="ex-ans">P(even) = 1/2</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="tip-box">
+    Theoretical probability assumes all outcomes are equally likely. Experimental probability is calculated from real data — the more trials you do, the closer experimental probability gets to the theoretical value.
+  </div>
+
+</main>
+<footer>© 2025 LearnBright · Free printable &amp; interactive school worksheets</footer>
+</body>
+</html>

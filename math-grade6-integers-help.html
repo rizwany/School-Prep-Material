@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Integers (Positive &amp; Negative) – Grade 6 Math Help</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --ink: #1a1f36; --muted: #5a6076; --accent: #4361EE; --accent-dark: #3451d1;
+      --green: #06d6a0; --orange: #fb8500; --red: #ef233c;
+      --bg: #f4f6fb; --card: #ffffff; --border: #e2e6f0; --radius: 14px;
+      --mono: 'JetBrains Mono', monospace;
+    }
+    body { font-family: 'Nunito', sans-serif; background-color: var(--bg); background-image: radial-gradient(circle, #E8EDF5 1.5px, transparent 1.5px); background-size: 20px 20px; color: var(--ink); min-height: 100vh; }
+    header { background: var(--card); border-bottom: 2px solid var(--border); padding: 0 24px; }
+    .header-inner { max-width: 860px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .logo { font-weight: 900; font-size: 1.25rem; color: var(--accent); text-decoration: none; }
+    nav a { font-weight: 700; font-size: 0.85rem; color: var(--muted); text-decoration: none; margin-left: 20px; }
+    nav a:hover { color: var(--accent); }
+    .breadcrumb { max-width: 860px; margin: 0 auto; padding: 14px 24px 0; font-size: 0.8rem; color: var(--muted); }
+    .breadcrumb a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    .breadcrumb span { margin: 0 6px; }
+    .hero { max-width: 860px; margin: 0 auto; padding: 28px 24px 0; display: flex; align-items: center; gap: 20px; }
+    .hero-icon { width: 72px; height: 72px; border-radius: 20px; background: var(--accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 2rem; }
+    .hero h1 { font-size: 1.9rem; font-weight: 900; line-height: 1.15; }
+    .hero p { font-size: 1rem; color: var(--muted); margin-top: 6px; font-weight: 600; }
+    main { max-width: 860px; margin: 28px auto 60px; padding: 0 24px; display: flex; flex-direction: column; gap: 24px; }
+    .card { background: var(--card); border-radius: var(--radius); border: 2px solid var(--border); padding: 28px; }
+    .card h2 { font-size: 1.25rem; font-weight: 900; color: var(--accent); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+    .card p { font-size: 0.95rem; line-height: 1.7; color: var(--ink); margin-bottom: 12px; }
+    .card p:last-child { margin-bottom: 0; }
+    .formula-box { background: #eef1fd; border-left: 4px solid var(--accent); border-radius: 10px; padding: 16px 20px; margin: 16px 0; font-family: var(--mono); font-size: 1rem; font-weight: 700; color: var(--accent-dark); }
+    .formula-box .label { font-family: 'Nunito', sans-serif; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-bottom: 6px; }
+    .number-line { display: flex; align-items: center; overflow-x: auto; gap: 0; margin: 16px 0; padding: 12px 0; }
+    .nl-track { display: flex; align-items: center; gap: 0; }
+    .nl-num { min-width: 40px; text-align: center; font-family: var(--mono); font-weight: 700; font-size: 0.85rem; color: var(--ink); }
+    .nl-num.zero { color: var(--accent); font-size: 1rem; }
+    .nl-num.neg { color: var(--red); }
+    .nl-num.pos { color: var(--green); }
+    .nl-line { height: 3px; background: var(--border); flex: 1; min-width: 18px; }
+    .rules-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0; }
+    @media (max-width: 560px) { .rules-grid { grid-template-columns: 1fr; } }
+    .rule-card { border-radius: 12px; padding: 16px; border: 2px solid var(--border); }
+    .rule-card.add { border-color: #4361EE; background: #eef1fd; }
+    .rule-card.sub { border-color: #06d6a0; background: #e8faf4; }
+    .rule-card.mul { border-color: #fb8500; background: #fff4e6; }
+    .rule-card.div { border-color: #ef233c; background: #fff0f0; }
+    .rule-card h3 { font-size: 0.95rem; font-weight: 900; margin-bottom: 10px; }
+    .rule-card.add h3 { color: #4361EE; }
+    .rule-card.sub h3 { color: #05a07a; }
+    .rule-card.mul h3 { color: #fb8500; }
+    .rule-card.div h3 { color: #ef233c; }
+    .rule-card ul { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+    .rule-card ul li { font-size: 0.85rem; font-family: var(--mono); color: var(--ink); }
+    .examples { display: flex; flex-direction: column; gap: 16px; }
+    .example { border: 2px solid var(--border); border-radius: 12px; padding: 18px 20px; background: #fafbff; }
+    .example-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+    .ex-num { width: 32px; height: 32px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 900; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .example-header h3 { font-size: 1rem; font-weight: 800; }
+    .ex-step { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; font-size: 0.9rem; }
+    .ex-step-num { background: var(--green); color: #fff; border-radius: 50%; width: 22px; height: 22px; font-size: 0.75rem; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    .ex-step p { line-height: 1.5; }
+    code { font-family: var(--mono); background: #eef1fd; border-radius: 5px; padding: 1px 6px; font-size: 0.88em; color: var(--accent-dark); }
+    .answer-box { background: #e8faf4; border: 2px solid var(--green); border-radius: 8px; padding: 10px 14px; margin-top: 10px; font-weight: 800; font-size: 0.95rem; color: #05a07a; }
+    .watch-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .watch-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.92rem; line-height: 1.55; }
+    .watch-badge { background: #fff0f0; color: var(--red); border: 2px solid #ffd6d6; border-radius: 8px; padding: 3px 9px; font-weight: 800; font-size: 0.78rem; flex-shrink: 0; margin-top: 2px; }
+    .ref-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    .ref-table th, .ref-table td { border: 2px solid var(--border); padding: 10px 14px; font-size: 0.88rem; text-align: left; }
+    .ref-table th { background: #eef1fd; font-weight: 800; color: var(--accent-dark); }
+    .ref-table td code { display: inline-block; }
+    .cta-bar { background: linear-gradient(135deg, #4361EE 0%, #3a0ca3 100%); border-radius: var(--radius); padding: 28px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .cta-bar h2 { color: #fff; font-size: 1.2rem; font-weight: 900; }
+    .cta-bar p { color: rgba(255,255,255,.8); font-size: 0.9rem; margin-top: 4px; font-weight: 600; }
+    .cta-btn { background: #fff; color: var(--accent); border-radius: 10px; padding: 12px 24px; font-weight: 900; font-size: 1rem; text-decoration: none; white-space: nowrap; transition: transform .15s; }
+    .cta-btn:hover { transform: scale(1.04); }
+    footer { text-align: center; padding: 24px; font-size: 0.8rem; color: var(--muted); font-weight: 600; }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header>
+  <div class="header-inner">
+    <a class="logo" href="index.html">LearnBright</a>
+    <nav><a href="index.html">Home</a><a href="index.html#grades">Grades</a></nav>
+  </div>
+</header>
+<div class="breadcrumb">
+  <a href="index.html">Home</a><span>›</span>
+  <a href="index.html#grade6">Grade 6 Math</a><span>›</span>
+  Integers (Positive &amp; Negative)
+</div>
+<div class="hero">
+  <div class="hero-icon">🔢</div>
+  <div>
+    <h1>Integers</h1>
+    <p>Grade 6 Math &nbsp;·&nbsp; Working with positive and negative numbers</p>
+  </div>
+</div>
+
+<main>
+
+  <!-- Number Line -->
+  <div class="card">
+    <h2><span>📏</span> The Number Line</h2>
+    <p>Integers are all whole numbers including zero and their negatives: … −3, −2, −1, 0, 1, 2, 3 …</p>
+    <p>Negative numbers are to the <strong>left</strong> of zero; positive numbers are to the <strong>right</strong>.</p>
+    <div class="number-line">
+      <div class="nl-track">
+        <div class="nl-num neg">−5</div><div class="nl-line"></div>
+        <div class="nl-num neg">−4</div><div class="nl-line"></div>
+        <div class="nl-num neg">−3</div><div class="nl-line"></div>
+        <div class="nl-num neg">−2</div><div class="nl-line"></div>
+        <div class="nl-num neg">−1</div><div class="nl-line"></div>
+        <div class="nl-num zero">0</div><div class="nl-line"></div>
+        <div class="nl-num pos">1</div><div class="nl-line"></div>
+        <div class="nl-num pos">2</div><div class="nl-line"></div>
+        <div class="nl-num pos">3</div><div class="nl-line"></div>
+        <div class="nl-num pos">4</div><div class="nl-line"></div>
+        <div class="nl-num pos">5</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rules -->
+  <div class="card">
+    <h2><span>📐</span> Rules for Operations</h2>
+    <div class="rules-grid">
+      <div class="rule-card add">
+        <h3>Addition</h3>
+        <ul>
+          <li>(+) + (+) → positive</li>
+          <li>(−) + (−) → negative</li>
+          <li>(+) + (−) → sign of larger</li>
+        </ul>
+      </div>
+      <div class="rule-card sub">
+        <h3>Subtraction</h3>
+        <ul>
+          <li>Subtracting a negative = adding</li>
+          <li>a − (−b) = a + b</li>
+          <li>Move right on the number line</li>
+        </ul>
+      </div>
+      <div class="rule-card mul">
+        <h3>Multiplication</h3>
+        <ul>
+          <li>Same signs → positive</li>
+          <li>(+)×(+) = + &nbsp; (−)×(−) = +</li>
+          <li>Different signs → negative</li>
+        </ul>
+      </div>
+      <div class="rule-card div">
+        <h3>Division</h3>
+        <ul>
+          <li>Same signs → positive</li>
+          <li>(+)÷(+) = + &nbsp; (−)÷(−) = +</li>
+          <li>Different signs → negative</li>
+        </ul>
+      </div>
+    </div>
+    <div class="formula-box">
+      <div class="label">Sign Rule (× and ÷)</div>
+      Same signs → Positive &nbsp;|&nbsp; Different signs → Negative
+    </div>
+  </div>
+
+  <!-- Worked Examples -->
+  <div class="card">
+    <h2><span>✏️</span> Worked Examples</h2>
+    <div class="examples">
+
+      <div class="example">
+        <div class="example-header">
+          <div class="ex-num">1</div>
+          <h3>Calculate: (−5) + 3</h3>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">1</div>
+          <p>Different signs — subtract the smaller absolute value from the larger: 5 − 3 = 2</p>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">2</div>
+          <p>Keep the sign of the number with the larger absolute value: −5 is larger, so the answer is negative.</p>
+        </div>
+        <div class="answer-box">(−5) + 3 = −2</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header">
+          <div class="ex-num">2</div>
+          <h3>Calculate: 4 − (−3)</h3>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">1</div>
+          <p>Subtracting a negative is the same as adding: 4 − (−3) = 4 + 3</p>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">2</div>
+          <p>4 + 3 = 7</p>
+        </div>
+        <div class="answer-box">4 − (−3) = 7</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header">
+          <div class="ex-num">3</div>
+          <h3>Calculate: (−3) × (−4)</h3>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">1</div>
+          <p>Multiply the numbers: 3 × 4 = 12</p>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">2</div>
+          <p>Same signs (both negative) → result is positive.</p>
+        </div>
+        <div class="answer-box">(−3) × (−4) = +12</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header">
+          <div class="ex-num">4</div>
+          <h3>Calculate: 15 ÷ (−3)</h3>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">1</div>
+          <p>Divide the numbers: 15 ÷ 3 = 5</p>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">2</div>
+          <p>Different signs (positive ÷ negative) → result is negative.</p>
+        </div>
+        <div class="answer-box">15 ÷ (−3) = −5</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header">
+          <div class="ex-num">5</div>
+          <h3>The temperature was −4°C and dropped 6 more degrees. What is the new temperature?</h3>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">1</div>
+          <p>"Dropped 6 degrees" means subtract 6: −4 − 6</p>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">2</div>
+          <p>Both values are being taken away from zero: −4 − 6 = −10</p>
+        </div>
+        <div class="answer-box">New temperature = −10°C</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Watch Out -->
+  <div class="card">
+    <h2><span>⚠️</span> Watch Out!</h2>
+    <ul class="watch-list">
+      <li>
+        <span class="watch-badge">DOUBLE NEGATIVE</span>
+        Subtracting a negative equals adding a positive. Don't forget: a − (−b) = a + b.
+      </li>
+      <li>
+        <span class="watch-badge">SIGN RULES</span>
+        The sign rules (same → positive, different → negative) only apply to multiplication and division, NOT addition.
+      </li>
+      <li>
+        <span class="watch-badge">ABSOLUTE VALUE</span>
+        When adding integers with different signs, subtract their absolute values and use the sign of the larger absolute value.
+      </li>
+      <li>
+        <span class="watch-badge">NUMBER LINE</span>
+        On a number line, −10 is less than −2 even though 10 &gt; 2. Further left = smaller number.
+      </li>
+    </ul>
+  </div>
+
+  <!-- Quick Reference -->
+  <div class="card">
+    <h2><span>📋</span> Quick Reference</h2>
+    <table class="ref-table">
+      <thead>
+        <tr><th>Operation</th><th>Example</th><th>Answer</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>(+) + (−)</td><td>8 + (−3)</td><td>5 (larger wins)</td></tr>
+        <tr><td>(−) + (−)</td><td>(−4) + (−5)</td><td>−9</td></tr>
+        <tr><td>a − (−b)</td><td>6 − (−2)</td><td>8 (add)</td></tr>
+        <tr><td>(−) × (−)</td><td>(−3) × (−4)</td><td>+12</td></tr>
+        <tr><td>(+) × (−)</td><td>5 × (−3)</td><td>−15</td></tr>
+        <tr><td>(−) ÷ (−)</td><td>(−12) ÷ (−4)</td><td>+3</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-bar">
+    <div>
+      <h2>Ready to practise?</h2>
+      <p>Try the interactive worksheet with instant feedback.</p>
+    </div>
+    <a class="cta-btn" href="math-grade6-integers-worksheet.html">Start Worksheet →</a>
+  </div>
+
+</main>
+<footer>© 2025 LearnBright · Free printable &amp; interactive school worksheets</footer>
+</body>
+</html>
