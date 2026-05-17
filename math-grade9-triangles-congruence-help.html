@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Triangles (Congruence) – Grade 9 Math Help</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --ink: #1a1f36; --muted: #5a6076; --accent: #4361EE; --accent-dark: #3451d1;
+      --green: #06d6a0; --orange: #fb8500; --red: #ef233c;
+      --bg: #f4f6fb; --card: #ffffff; --border: #e2e6f0; --radius: 14px;
+      --mono: 'JetBrains Mono', monospace;
+    }
+    body { font-family: 'Nunito', sans-serif; background-color: var(--bg); background-image: radial-gradient(circle, #E8EDF5 1.5px, transparent 1.5px); background-size: 20px 20px; color: var(--ink); min-height: 100vh; }
+    header { background: var(--card); border-bottom: 2px solid var(--border); padding: 0 24px; }
+    .header-inner { max-width: 860px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .logo { font-weight: 900; font-size: 1.25rem; color: var(--accent); text-decoration: none; }
+    nav a { font-weight: 700; font-size: 0.85rem; color: var(--muted); text-decoration: none; margin-left: 20px; }
+    nav a:hover { color: var(--accent); }
+    .breadcrumb { max-width: 860px; margin: 0 auto; padding: 14px 24px 0; font-size: 0.8rem; color: var(--muted); }
+    .breadcrumb a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 6px; }
+    .hero { max-width: 860px; margin: 0 auto; padding: 28px 24px 0; display: flex; align-items: center; gap: 20px; }
+    .hero-icon { width: 72px; height: 72px; border-radius: 20px; background: var(--accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.8rem; color:#fff; font-weight:700; }
+    .hero h1 { font-size: 1.9rem; font-weight: 900; line-height: 1.15; }
+    .hero p { font-size: 1rem; color: var(--muted); margin-top: 6px; font-weight: 600; }
+    main { max-width: 860px; margin: 28px auto 60px; padding: 0 24px; display: flex; flex-direction: column; gap: 24px; }
+    .card { background: var(--card); border-radius: var(--radius); border: 2px solid var(--border); padding: 28px; }
+    .card h2 { font-size: 1.25rem; font-weight: 900; color: var(--accent); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+    .card p { font-size: 0.95rem; line-height: 1.7; color: var(--ink); margin-bottom: 12px; }
+    .card p:last-child { margin-bottom: 0; }
+    .criteria-grid { display: flex; flex-direction: column; gap: 10px; margin: 14px 0; }
+    .crit-row { display: grid; grid-template-columns: 80px 1fr 1fr; gap: 14px; align-items: center; background: #fafbff; border: 2px solid var(--border); border-radius: 12px; padding: 12px 16px; }
+    @media (max-width: 560px) { .crit-row { grid-template-columns: 1fr; } }
+    .crit-tag { background: var(--accent); color: #fff; border-radius: 8px; padding: 4px 10px; font-weight: 900; font-size: 0.9rem; text-align: center; }
+    .crit-name { font-weight: 800; font-size: 0.9rem; color: var(--ink); }
+    .crit-desc { font-size: 0.85rem; color: var(--muted); }
+    .sim-grid { display: flex; flex-direction: column; gap: 10px; margin: 14px 0; }
+    .sim-row { display: grid; grid-template-columns: 80px 1fr 1fr; gap: 14px; align-items: center; background: #eef1fd; border: 2px solid var(--border); border-radius: 12px; padding: 12px 16px; }
+    @media (max-width: 560px) { .sim-row { grid-template-columns: 1fr; } }
+    .sim-tag { background: var(--orange); color: #fff; border-radius: 8px; padding: 4px 10px; font-weight: 900; font-size: 0.9rem; text-align: center; }
+    .examples { display: flex; flex-direction: column; gap: 16px; }
+    .example { border: 2px solid var(--border); border-radius: 12px; padding: 18px 20px; background: #fafbff; }
+    .example-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+    .ex-num { width: 32px; height: 32px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 900; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .example-header h3 { font-size: 1rem; font-weight: 800; }
+    .ex-step { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; font-size: 0.9rem; }
+    .ex-step-num { background: var(--green); color: #fff; border-radius: 50%; width: 22px; height: 22px; font-size: 0.75rem; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    .ex-step p { line-height: 1.5; }
+    code { font-family: var(--mono); background: #eef1fd; border-radius: 5px; padding: 1px 6px; font-size: 0.88em; color: var(--accent-dark); }
+    .answer-box { background: #e8faf4; border: 2px solid var(--green); border-radius: 8px; padding: 10px 14px; margin-top: 10px; font-weight: 800; font-size: 0.95rem; color: #05a07a; }
+    .watch-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .watch-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.92rem; line-height: 1.55; }
+    .watch-badge { background: #fff0f0; color: var(--red); border: 2px solid #ffd6d6; border-radius: 8px; padding: 3px 9px; font-weight: 800; font-size: 0.78rem; flex-shrink: 0; margin-top: 2px; }
+    .ref-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    .ref-table th, .ref-table td { border: 2px solid var(--border); padding: 10px 14px; font-size: 0.88rem; text-align: left; }
+    .ref-table th { background: #eef1fd; font-weight: 800; color: var(--accent-dark); }
+    .cta-bar { background: linear-gradient(135deg, #4361EE 0%, #3a0ca3 100%); border-radius: var(--radius); padding: 28px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .cta-bar h2 { color: #fff; font-size: 1.2rem; font-weight: 900; }
+    .cta-bar p { color: rgba(255,255,255,.8); font-size: 0.9rem; margin-top: 4px; font-weight: 600; }
+    .cta-btn { background: #fff; color: var(--accent); border-radius: 10px; padding: 12px 24px; font-weight: 900; font-size: 1rem; text-decoration: none; white-space: nowrap; transition: transform .15s; }
+    .cta-btn:hover { transform: scale(1.04); }
+    footer { text-align: center; padding: 24px; font-size: 0.8rem; color: var(--muted); font-weight: 600; }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header>
+  <div class="header-inner">
+    <a class="logo" href="index.html">LearnBright</a>
+    <nav><a href="index.html">Home</a><a href="index.html#grades">Grades</a></nav>
+  </div>
+</header>
+<div class="breadcrumb">
+  <a href="index.html">Home</a><span>›</span>
+  <a href="index.html#grade9">Grade 9 Math</a><span>›</span>
+  Triangles (Congruence)
+</div>
+<div class="hero">
+  <div class="hero-icon">△</div>
+  <div>
+    <h1>Triangles (Congruence)</h1>
+    <p>Grade 9 Math &nbsp;·&nbsp; Congruence criteria, properties &amp; similarity</p>
+  </div>
+</div>
+
+<main>
+
+  <!-- Congruence -->
+  <div class="card">
+    <h2>&#x2261; Congruent Triangles</h2>
+    <p>Two triangles are <strong>congruent</strong> (≅) if they are identical in shape and size — all corresponding sides and angles are equal. The symbol ≅ means "is congruent to".</p>
+    <p>You only need to prove ONE of the criteria below — not all of them.</p>
+    <div class="criteria-grid">
+      <div class="crit-row">
+        <div class="crit-tag">SSS</div>
+        <div class="crit-name">Side-Side-Side</div>
+        <div class="crit-desc">All three corresponding sides are equal</div>
+      </div>
+      <div class="crit-row">
+        <div class="crit-tag">SAS</div>
+        <div class="crit-name">Side-Angle-Side</div>
+        <div class="crit-desc">Two sides and the included angle are equal</div>
+      </div>
+      <div class="crit-row">
+        <div class="crit-tag">ASA</div>
+        <div class="crit-name">Angle-Side-Angle</div>
+        <div class="crit-desc">Two angles and the included side are equal</div>
+      </div>
+      <div class="crit-row">
+        <div class="crit-tag">AAS</div>
+        <div class="crit-name">Angle-Angle-Side</div>
+        <div class="crit-desc">Two angles and a non-included side are equal</div>
+      </div>
+      <div class="crit-row">
+        <div class="crit-tag">RHS</div>
+        <div class="crit-name">Right-Hypotenuse-Side</div>
+        <div class="crit-desc">Right angle + hypotenuse + one side (right triangles only)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Similarity -->
+  <div class="card">
+    <h2>&#x223C; Similar Triangles</h2>
+    <p>Two triangles are <strong>similar</strong> (~) if they have the same shape but may differ in size. Corresponding angles are equal; corresponding sides are in the same ratio.</p>
+    <div class="sim-grid">
+      <div class="sim-row">
+        <div class="sim-tag">AA</div>
+        <div class="crit-name">Angle-Angle</div>
+        <div class="crit-desc">Two pairs of corresponding angles are equal (third follows automatically)</div>
+      </div>
+      <div class="sim-row">
+        <div class="sim-tag">SSS~</div>
+        <div class="crit-name">Side-Side-Side (ratio)</div>
+        <div class="crit-desc">All three pairs of sides are in the same ratio</div>
+      </div>
+      <div class="sim-row">
+        <div class="sim-tag">SAS~</div>
+        <div class="crit-name">Side-Angle-Side (ratio)</div>
+        <div class="crit-desc">Two pairs of sides in the same ratio with the included angle equal</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Triangle Properties -->
+  <div class="card">
+    <h2>&#x1F4CC; Key Triangle Properties</h2>
+    <p><strong>Angle sum:</strong> The three interior angles of any triangle always sum to <strong>180°</strong>.</p>
+    <p><strong>Exterior angle:</strong> An exterior angle of a triangle equals the sum of the two non-adjacent interior angles.</p>
+    <p><strong>Isosceles triangle:</strong> Base angles are equal. If two sides are equal, the angles opposite those sides are equal.</p>
+    <p><strong>Equilateral triangle:</strong> All sides equal; all angles = 60°.</p>
+  </div>
+
+  <!-- Worked Examples -->
+  <div class="card">
+    <h2>&#x270F;&#xFE0F; Worked Examples</h2>
+    <div class="examples">
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">1</div><h3>Angles in △ABC are 50° and 70°. Find the third angle.</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Angle sum = 180°: third angle = 180° − 50° − 70° = 60°.</p></div>
+        <div class="answer-box">Third angle = 60°</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">2</div><h3>Which congruence criterion? △ABC: AB = 5, BC = 7, ∠B = 40°. △DEF: DE = 5, EF = 7, ∠E = 40°.</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Two sides (5 and 7) and the angle BETWEEN them (40°) are equal.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>This matches Side-Angle-Side.</p></div>
+        <div class="answer-box">△ABC ≅ △DEF by SAS</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">3</div><h3>Exterior angle of a triangle is 110°. One non-adjacent interior angle is 65°. Find the other.</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Exterior angle = sum of two non-adjacent interior angles.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>Other angle = 110° − 65° = 45°.</p></div>
+        <div class="answer-box">Other interior angle = 45°</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">4</div><h3>△PQR ~ △XYZ. PQ = 6, QR = 9, XY = 4. Find YZ.</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Similar triangles → sides in proportion: PQ/XY = QR/YZ.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>6/4 = 9/YZ → YZ = 9 × 4/6 = 6.</p></div>
+        <div class="answer-box">YZ = 6</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">5</div><h3>Isosceles △ABC with AB = AC. ∠ABC = 55°. Find ∠BAC.</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Isosceles → base angles equal: ∠ABC = ∠ACB = 55°.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>∠BAC = 180° − 55° − 55° = 70°.</p></div>
+        <div class="answer-box">∠BAC = 70°</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Watch Out -->
+  <div class="card">
+    <h2>&#x26A0;&#xFE0F; Watch Out!</h2>
+    <ul class="watch-list">
+      <li><span class="watch-badge">INCLUDED</span>In SAS, the angle must be BETWEEN the two given sides. An angle not between the sides does NOT give SAS.</li>
+      <li><span class="watch-badge">AAA ≠ ≅</span>Three equal angles (AAA) proves similarity, NOT congruence. The triangles could be different sizes.</li>
+      <li><span class="watch-badge">ORDER</span>When writing congruence/similarity, the vertex order matters: △ABC ≅ △DEF means A↔D, B↔E, C↔F.</li>
+      <li><span class="watch-badge">RHS</span>RHS only applies to right-angled triangles. Confirm the right angle first.</li>
+    </ul>
+  </div>
+
+  <!-- Quick Reference -->
+  <div class="card">
+    <h2>&#x1F4CB; Quick Reference</h2>
+    <table class="ref-table">
+      <thead><tr><th>Criterion</th><th>What to show</th><th>Result</th></tr></thead>
+      <tbody>
+        <tr><td>SSS</td><td>3 sides equal</td><td>Congruent (≅)</td></tr>
+        <tr><td>SAS</td><td>2 sides + included angle equal</td><td>Congruent (≅)</td></tr>
+        <tr><td>ASA / AAS</td><td>2 angles + 1 side equal</td><td>Congruent (≅)</td></tr>
+        <tr><td>RHS</td><td>Right ∠ + hyp + side (right △)</td><td>Congruent (≅)</td></tr>
+        <tr><td>AA</td><td>2 angles equal</td><td>Similar (~)</td></tr>
+        <tr><td>SSS~ / SAS~</td><td>Sides in ratio (+ angle)</td><td>Similar (~)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-bar">
+    <div>
+      <h2>Ready to practise?</h2>
+      <p>Try the interactive worksheet with instant feedback.</p>
+    </div>
+    <a class="cta-btn" href="math-grade9-triangles-congruence-worksheet.html">Start Worksheet →</a>
+  </div>
+
+</main>
+<footer>© 2025 LearnBright · Free printable &amp; interactive school worksheets</footer>
+</body>
+</html>

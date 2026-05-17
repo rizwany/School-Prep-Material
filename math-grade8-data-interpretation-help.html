@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Interpretation – Grade 8 Math Help</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --ink: #1a1f36; --muted: #5a6076; --accent: #4361EE; --accent-dark: #3451d1;
+      --green: #06d6a0; --orange: #fb8500; --red: #ef233c;
+      --bg: #f4f6fb; --card: #ffffff; --border: #e2e6f0; --radius: 14px;
+      --mono: 'JetBrains Mono', monospace;
+    }
+    body { font-family: 'Nunito', sans-serif; background-color: var(--bg); background-image: radial-gradient(circle, #E8EDF5 1.5px, transparent 1.5px); background-size: 20px 20px; color: var(--ink); min-height: 100vh; }
+    header { background: var(--card); border-bottom: 2px solid var(--border); padding: 0 24px; }
+    .header-inner { max-width: 860px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .logo { font-weight: 900; font-size: 1.25rem; color: var(--accent); text-decoration: none; }
+    nav a { font-weight: 700; font-size: 0.85rem; color: var(--muted); text-decoration: none; margin-left: 20px; }
+    nav a:hover { color: var(--accent); }
+    .breadcrumb { max-width: 860px; margin: 0 auto; padding: 14px 24px 0; font-size: 0.8rem; color: var(--muted); }
+    .breadcrumb a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 6px; }
+    .hero { max-width: 860px; margin: 0 auto; padding: 28px 24px 0; display: flex; align-items: center; gap: 20px; }
+    .hero-icon { width: 72px; height: 72px; border-radius: 20px; background: var(--accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 2rem; }
+    .hero h1 { font-size: 1.9rem; font-weight: 900; line-height: 1.15; }
+    .hero p { font-size: 1rem; color: var(--muted); margin-top: 6px; font-weight: 600; }
+    main { max-width: 860px; margin: 28px auto 60px; padding: 0 24px; display: flex; flex-direction: column; gap: 24px; }
+    .card { background: var(--card); border-radius: var(--radius); border: 2px solid var(--border); padding: 28px; }
+    .card h2 { font-size: 1.25rem; font-weight: 900; color: var(--accent); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+    .card p { font-size: 0.95rem; line-height: 1.7; color: var(--ink); margin-bottom: 12px; }
+    .card p:last-child { margin-bottom: 0; }
+    .formula-box { background: #eef1fd; border-left: 4px solid var(--accent); border-radius: 10px; padding: 16px 20px; margin: 16px 0; font-family: var(--mono); font-size: 1rem; font-weight: 700; color: var(--accent-dark); }
+    .formula-box .label { font-family: 'Nunito', sans-serif; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-bottom: 6px; }
+    .chart-types { display: grid; grid-template-columns: repeat(auto-fit, minmax(185px, 1fr)); gap: 14px; margin: 16px 0; }
+    .chart-type { border: 2px solid var(--border); border-radius: 12px; padding: 16px; }
+    .ct-icon { font-size: 1.8rem; margin-bottom: 8px; }
+    .ct-name { font-weight: 900; font-size: 0.9rem; color: var(--accent); margin-bottom: 6px; }
+    .ct-desc { font-size: 0.82rem; color: var(--muted); line-height: 1.5; font-weight: 600; }
+    .pie-demo { display: flex; justify-content: center; align-items: center; gap: 28px; margin: 16px 0; flex-wrap: wrap; }
+    .pie-legend { display: flex; flex-direction: column; gap: 8px; }
+    .leg-item { display: flex; align-items: center; gap: 8px; font-size: 0.88rem; font-weight: 700; }
+    .leg-dot { width: 14px; height: 14px; border-radius: 50%; flex-shrink: 0; }
+    .examples { display: flex; flex-direction: column; gap: 16px; }
+    .example { border: 2px solid var(--border); border-radius: 12px; padding: 18px 20px; background: #fafbff; }
+    .example-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+    .ex-num { width: 32px; height: 32px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 900; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .example-header h3 { font-size: 1rem; font-weight: 800; }
+    .ex-step { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; font-size: 0.9rem; }
+    .ex-step-num { background: var(--green); color: #fff; border-radius: 50%; width: 22px; height: 22px; font-size: 0.75rem; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    .ex-step p { line-height: 1.5; }
+    code { font-family: var(--mono); background: #eef1fd; border-radius: 5px; padding: 1px 6px; font-size: 0.88em; color: var(--accent-dark); }
+    .answer-box { background: #e8faf4; border: 2px solid var(--green); border-radius: 8px; padding: 10px 14px; margin-top: 10px; font-weight: 800; font-size: 0.95rem; color: #05a07a; }
+    .watch-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .watch-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.92rem; line-height: 1.55; }
+    .watch-badge { background: #fff0f0; color: var(--red); border: 2px solid #ffd6d6; border-radius: 8px; padding: 3px 9px; font-weight: 800; font-size: 0.78rem; flex-shrink: 0; margin-top: 2px; }
+    .ref-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    .ref-table th, .ref-table td { border: 2px solid var(--border); padding: 10px 14px; font-size: 0.88rem; text-align: left; }
+    .ref-table th { background: #eef1fd; font-weight: 800; color: var(--accent-dark); }
+    .cta-bar { background: linear-gradient(135deg, #4361EE 0%, #3a0ca3 100%); border-radius: var(--radius); padding: 28px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .cta-bar h2 { color: #fff; font-size: 1.2rem; font-weight: 900; }
+    .cta-bar p { color: rgba(255,255,255,.8); font-size: 0.9rem; margin-top: 4px; font-weight: 600; }
+    .cta-btn { background: #fff; color: var(--accent); border-radius: 10px; padding: 12px 24px; font-weight: 900; font-size: 1rem; text-decoration: none; white-space: nowrap; transition: transform .15s; }
+    .cta-btn:hover { transform: scale(1.04); }
+    footer { text-align: center; padding: 24px; font-size: 0.8rem; color: var(--muted); font-weight: 600; }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header>
+  <div class="header-inner">
+    <a class="logo" href="index.html">LearnBright</a>
+    <nav><a href="index.html">Home</a><a href="index.html#grades">Grades</a></nav>
+  </div>
+</header>
+<div class="breadcrumb">
+  <a href="index.html">Home</a><span>›</span>
+  <a href="index.html#grade8">Grade 8 Math</a><span>›</span>
+  Data Interpretation
+</div>
+<div class="hero">
+  <div class="hero-icon">&#x1F4CA;</div>
+  <div>
+    <h1>Data Interpretation</h1>
+    <p>Grade 8 Math &nbsp;·&nbsp; Reading charts, pie graphs &amp; drawing conclusions</p>
+  </div>
+</div>
+
+<main>
+
+  <!-- Chart types -->
+  <div class="card">
+    <h2>&#x1F4C8; Common Chart Types</h2>
+    <div class="chart-types">
+      <div class="chart-type">
+        <div class="ct-icon">&#x1F967;</div>
+        <div class="ct-name">Pie Chart</div>
+        <div class="ct-desc">Shows how a whole is divided into parts. Each sector represents a percentage or fraction.</div>
+      </div>
+      <div class="chart-type">
+        <div class="ct-icon">&#x1F4CA;</div>
+        <div class="ct-name">Bar Chart</div>
+        <div class="ct-desc">Compares quantities across categories. Bar length = value.</div>
+      </div>
+      <div class="chart-type">
+        <div class="ct-icon">&#x1F4C9;</div>
+        <div class="ct-name">Line Graph</div>
+        <div class="ct-desc">Shows change over time. Useful for trends and predictions.</div>
+      </div>
+      <div class="chart-type">
+        <div class="ct-icon">&#x1F5CB;&#xFE0F;</div>
+        <div class="ct-name">Frequency Table</div>
+        <div class="ct-desc">Tallies how often each value occurs. Basis for most charts.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pie chart key facts -->
+  <div class="card">
+    <h2>&#x1F967; Pie Charts — Key Facts</h2>
+    <div class="formula-box">
+      <div class="label">Sector Angle</div>
+      Angle = (frequency ÷ total) × 360°
+    </div>
+    <div class="formula-box">
+      <div class="label">Percentage from sector</div>
+      % = (sector angle ÷ 360) × 100
+    </div>
+    <div class="pie-demo">
+      <svg width="150" height="150" viewBox="0 0 150 150">
+        <!-- Pie sectors (hand-computed for 40%, 30%, 20%, 10%) -->
+        <path d="M75,75 L75,10 A65,65 0 0,1 137,93 Z" fill="#4361EE"/>
+        <path d="M75,75 L137,93 A65,65 0 0,1 42,130 Z" fill="#06d6a0"/>
+        <path d="M75,75 L42,130 A65,65 0 0,1 13,42 Z" fill="#fb8500"/>
+        <path d="M75,75 L13,42 A65,65 0 0,1 75,10 Z" fill="#ef233c"/>
+      </svg>
+      <div class="pie-legend">
+        <div class="leg-item"><div class="leg-dot" style="background:#4361EE"></div> Science — 40%</div>
+        <div class="leg-item"><div class="leg-dot" style="background:#06d6a0"></div> Maths — 30%</div>
+        <div class="leg-item"><div class="leg-dot" style="background:#fb8500"></div> English — 20%</div>
+        <div class="leg-item"><div class="leg-dot" style="background:#ef233c"></div> Art — 10%</div>
+      </div>
+    </div>
+    <p>The total of all percentages must equal 100%. The total of all angles must equal 360°.</p>
+  </div>
+
+  <!-- Worked Examples -->
+  <div class="card">
+    <h2>&#x270F;&#xFE0F; Worked Examples</h2>
+    <div class="examples">
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">1</div><h3>A pie chart shows 80 people chose Sport. Total = 200. What % is that?</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>% = (80 ÷ 200) × 100 = 40%</p></div>
+        <div class="answer-box">40% chose Sport.</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">2</div><h3>A sector has an angle of 72°. What percentage does it represent?</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>% = (72 ÷ 360) × 100 = 20%</p></div>
+        <div class="answer-box">The sector represents 20%.</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">3</div><h3>50 students prefer Maths out of 250. Find the sector angle for a pie chart.</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Angle = (50 ÷ 250) × 360° = 0.2 × 360°</p></div>
+        <div class="answer-box">Sector angle = 72°</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">4</div><h3>A bar chart shows sales: Mon=30, Tue=45, Wed=25. What is the mean daily sales?</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Mean = (30 + 45 + 25) ÷ 3 = 100 ÷ 3</p></div>
+        <div class="answer-box">Mean ≈ 33.3 sales per day</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">5</div><h3>A line graph shows temperatures rising from 12°C to 28°C over 8 weeks. What is the average weekly increase?</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Total change = 28 − 12 = 16°C over 8 weeks.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>Weekly increase = 16 ÷ 8 = 2°C</p></div>
+        <div class="answer-box">Average increase = 2°C per week</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Watch Out -->
+  <div class="card">
+    <h2>&#x26A0;&#xFE0F; Watch Out!</h2>
+    <ul class="watch-list">
+      <li><span class="watch-badge">TOTAL</span>Always identify the TOTAL before computing percentages or angles from a pie chart.</li>
+      <li><span class="watch-badge">360°</span>All sector angles in a pie chart must sum to exactly 360°. Use this to find a missing angle.</li>
+      <li><span class="watch-badge">SCALE</span>Read bar charts carefully — check what each grid line represents (the scale).</li>
+      <li><span class="watch-badge">TREND</span>Line graphs show trends (direction of change), not exact values between plotted points.</li>
+    </ul>
+  </div>
+
+  <!-- Quick Reference -->
+  <div class="card">
+    <h2>&#x1F4CB; Quick Reference</h2>
+    <table class="ref-table">
+      <thead><tr><th>Task</th><th>Formula</th></tr></thead>
+      <tbody>
+        <tr><td>Sector angle from frequency</td><td><code>(freq ÷ total) × 360°</code></td></tr>
+        <tr><td>Percentage from sector angle</td><td><code>(angle ÷ 360) × 100</code></td></tr>
+        <tr><td>Frequency from percentage</td><td><code>(% ÷ 100) × total</code></td></tr>
+        <tr><td>Missing angle in pie chart</td><td><code>360° − sum of other angles</code></td></tr>
+        <tr><td>Mean from bar chart</td><td><code>sum of all bars ÷ number of bars</code></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-bar">
+    <div>
+      <h2>Ready to practise?</h2>
+      <p>Try the interactive worksheet with instant feedback.</p>
+    </div>
+    <a class="cta-btn" href="math-grade8-data-interpretation-worksheet.html">Start Worksheet →</a>
+  </div>
+
+</main>
+<footer>© 2025 LearnBright · Free printable &amp; interactive school worksheets</footer>
+</body>
+</html>

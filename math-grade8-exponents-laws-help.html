@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exponents (Laws) – Grade 8 Math Help</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --ink: #1a1f36; --muted: #5a6076; --accent: #4361EE; --accent-dark: #3451d1;
+      --green: #06d6a0; --orange: #fb8500; --red: #ef233c;
+      --bg: #f4f6fb; --card: #ffffff; --border: #e2e6f0; --radius: 14px;
+      --mono: 'JetBrains Mono', monospace;
+    }
+    body { font-family: 'Nunito', sans-serif; background-color: var(--bg); background-image: radial-gradient(circle, #E8EDF5 1.5px, transparent 1.5px); background-size: 20px 20px; color: var(--ink); min-height: 100vh; }
+    header { background: var(--card); border-bottom: 2px solid var(--border); padding: 0 24px; }
+    .header-inner { max-width: 860px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .logo { font-weight: 900; font-size: 1.25rem; color: var(--accent); text-decoration: none; }
+    nav a { font-weight: 700; font-size: 0.85rem; color: var(--muted); text-decoration: none; margin-left: 20px; }
+    nav a:hover { color: var(--accent); }
+    .breadcrumb { max-width: 860px; margin: 0 auto; padding: 14px 24px 0; font-size: 0.8rem; color: var(--muted); }
+    .breadcrumb a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 6px; }
+    .hero { max-width: 860px; margin: 0 auto; padding: 28px 24px 0; display: flex; align-items: center; gap: 20px; }
+    .hero-icon { width: 72px; height: 72px; border-radius: 20px; background: var(--accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.3rem; color:#fff; font-family: var(--mono); font-weight:700; }
+    .hero h1 { font-size: 1.9rem; font-weight: 900; line-height: 1.15; }
+    .hero p { font-size: 1rem; color: var(--muted); margin-top: 6px; font-weight: 600; }
+    main { max-width: 860px; margin: 28px auto 60px; padding: 0 24px; display: flex; flex-direction: column; gap: 24px; }
+    .card { background: var(--card); border-radius: var(--radius); border: 2px solid var(--border); padding: 28px; }
+    .card h2 { font-size: 1.25rem; font-weight: 900; color: var(--accent); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+    .card p { font-size: 0.95rem; line-height: 1.7; color: var(--ink); margin-bottom: 12px; }
+    .card p:last-child { margin-bottom: 0; }
+    .law-cards { display: flex; flex-direction: column; gap: 12px; margin: 14px 0; }
+    .law-card { display: grid; grid-template-columns: 1fr 1.2fr 0.8fr; gap: 14px; align-items: center; background: #fafbff; border: 2px solid var(--border); border-radius: 12px; padding: 14px 18px; }
+    @media (max-width: 560px) { .law-card { grid-template-columns: 1fr; } }
+    .law-name { font-weight: 900; font-size: 0.9rem; color: var(--accent); }
+    .law-formula { font-family: var(--mono); font-size: 0.95rem; font-weight: 700; color: var(--accent-dark); background: #eef1fd; border-radius: 8px; padding: 6px 12px; }
+    .law-eg { font-family: var(--mono); font-size: 0.88rem; color: var(--muted); font-weight: 600; }
+    .examples { display: flex; flex-direction: column; gap: 16px; }
+    .example { border: 2px solid var(--border); border-radius: 12px; padding: 18px 20px; background: #fafbff; }
+    .example-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+    .ex-num { width: 32px; height: 32px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 900; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .example-header h3 { font-size: 1rem; font-weight: 800; }
+    .ex-step { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; font-size: 0.9rem; }
+    .ex-step-num { background: var(--green); color: #fff; border-radius: 50%; width: 22px; height: 22px; font-size: 0.75rem; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    .ex-step p { line-height: 1.5; }
+    code { font-family: var(--mono); background: #eef1fd; border-radius: 5px; padding: 1px 6px; font-size: 0.88em; color: var(--accent-dark); }
+    .answer-box { background: #e8faf4; border: 2px solid var(--green); border-radius: 8px; padding: 10px 14px; margin-top: 10px; font-weight: 800; font-size: 0.95rem; color: #05a07a; }
+    .watch-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .watch-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.92rem; line-height: 1.55; }
+    .watch-badge { background: #fff0f0; color: var(--red); border: 2px solid #ffd6d6; border-radius: 8px; padding: 3px 9px; font-weight: 800; font-size: 0.78rem; flex-shrink: 0; margin-top: 2px; }
+    .ref-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    .ref-table th, .ref-table td { border: 2px solid var(--border); padding: 10px 14px; font-size: 0.88rem; text-align: left; }
+    .ref-table th { background: #eef1fd; font-weight: 800; color: var(--accent-dark); }
+    .cta-bar { background: linear-gradient(135deg, #4361EE 0%, #3a0ca3 100%); border-radius: var(--radius); padding: 28px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .cta-bar h2 { color: #fff; font-size: 1.2rem; font-weight: 900; }
+    .cta-bar p { color: rgba(255,255,255,.8); font-size: 0.9rem; margin-top: 4px; font-weight: 600; }
+    .cta-btn { background: #fff; color: var(--accent); border-radius: 10px; padding: 12px 24px; font-weight: 900; font-size: 1rem; text-decoration: none; white-space: nowrap; transition: transform .15s; }
+    .cta-btn:hover { transform: scale(1.04); }
+    footer { text-align: center; padding: 24px; font-size: 0.8rem; color: var(--muted); font-weight: 600; }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header>
+  <div class="header-inner">
+    <a class="logo" href="index.html">LearnBright</a>
+    <nav><a href="index.html">Home</a><a href="index.html#grades">Grades</a></nav>
+  </div>
+</header>
+<div class="breadcrumb">
+  <a href="index.html">Home</a><span>›</span>
+  <a href="index.html#grade8">Grade 8 Math</a><span>›</span>
+  Exponents (Laws)
+</div>
+<div class="hero">
+  <div class="hero-icon">aⁿ</div>
+  <div>
+    <h1>Exponents (Laws)</h1>
+    <p>Grade 8 Math &nbsp;·&nbsp; Laws of indices and applications</p>
+  </div>
+</div>
+
+<main>
+
+  <!-- What is an exponent? -->
+  <div class="card">
+    <h2>&#x1F4A1; What is an Exponent?</h2>
+    <p>In <code>aⁿ</code>, <strong>a</strong> is the <em>base</em> and <strong>n</strong> is the <em>exponent</em> (or <em>index/power</em>). It means "multiply a by itself n times": <code>2⁴ = 2×2×2×2 = 16</code>.</p>
+  </div>
+
+  <!-- Laws -->
+  <div class="card">
+    <h2>&#x1F4DC; The Laws of Exponents</h2>
+    <div class="law-cards">
+      <div class="law-card">
+        <div class="law-name">Product Rule</div>
+        <div class="law-formula">aⁿ × aᵐ = aⁿ⁺ᵐ</div>
+        <div class="law-eg">2³ × 2² = 2⁵ = 32</div>
+      </div>
+      <div class="law-card">
+        <div class="law-name">Quotient Rule</div>
+        <div class="law-formula">aⁿ ÷ aᵐ = aⁿ⁻ᵐ</div>
+        <div class="law-eg">3⁵ ÷ 3² = 3³ = 27</div>
+      </div>
+      <div class="law-card">
+        <div class="law-name">Power Rule</div>
+        <div class="law-formula">(aⁿ)ᵐ = aⁿˣᵐ</div>
+        <div class="law-eg">(2³)² = 2⁶ = 64</div>
+      </div>
+      <div class="law-card">
+        <div class="law-name">Zero Exponent</div>
+        <div class="law-formula">a⁰ = 1</div>
+        <div class="law-eg">7⁰ = 1 (a ≠ 0)</div>
+      </div>
+      <div class="law-card">
+        <div class="law-name">Negative Exponent</div>
+        <div class="law-formula">a⁻ⁿ = 1/aⁿ</div>
+        <div class="law-eg">2⁻³ = 1/8</div>
+      </div>
+      <div class="law-card">
+        <div class="law-name">Power of Product</div>
+        <div class="law-formula">(ab)ⁿ = aⁿbⁿ</div>
+        <div class="law-eg">(2×3)² = 4×9 = 36</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Worked Examples -->
+  <div class="card">
+    <h2>&#x270F;&#xFE0F; Worked Examples</h2>
+    <div class="examples">
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">1</div><h3>Simplify 3⁴ × 3³</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Same base → add exponents: 3⁴ × 3³ = 3⁴⁺³ = 3⁷</p></div>
+        <div class="answer-box">3⁷ = 2187</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">2</div><h3>Simplify 5⁶ ÷ 5²</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Same base → subtract exponents: 5⁶ ÷ 5² = 5⁶⁻² = 5⁴</p></div>
+        <div class="answer-box">5⁴ = 625</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">3</div><h3>Simplify (2³)⁴</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Power rule → multiply exponents: (2³)⁴ = 2³×⁴ = 2¹²</p></div>
+        <div class="answer-box">2¹² = 4096</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">4</div><h3>Evaluate 4⁻²</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Negative exponent → reciprocal: 4⁻² = 1/4² = 1/16</p></div>
+        <div class="answer-box">4⁻² = 1/16 = 0.0625</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">5</div><h3>Simplify (x²y³)⁴</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Power of product: raise each factor to the power of 4.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>(x²)⁴ = x⁸; &nbsp; (y³)⁴ = y¹²</p></div>
+        <div class="answer-box">(x²y³)⁴ = x⁸y¹²</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Watch Out -->
+  <div class="card">
+    <h2>&#x26A0;&#xFE0F; Watch Out!</h2>
+    <ul class="watch-list">
+      <li><span class="watch-badge">SAME BASE</span>Product and quotient rules only work when the bases are identical: 2³ × 3² ≠ 6⁵.</li>
+      <li><span class="watch-badge">ZERO EXP</span>a⁰ = 1 for any non-zero a. 0⁰ is undefined.</li>
+      <li><span class="watch-badge">NEG BASE</span>(−2)⁴ = 16 (even power → positive). (−2)³ = −8 (odd power → negative).</li>
+      <li><span class="watch-badge">ADD vs MULT</span>2³ + 2³ = 2×2³ = 2⁴, but 2³ × 2³ = 2⁶. Adding is NOT the same as multiplying.</li>
+    </ul>
+  </div>
+
+  <!-- Quick Reference -->
+  <div class="card">
+    <h2>&#x1F4CB; Quick Reference</h2>
+    <table class="ref-table">
+      <thead><tr><th>Law</th><th>Rule</th></tr></thead>
+      <tbody>
+        <tr><td>Product</td><td><code>aⁿ × aᵐ = aⁿ⁺ᵐ</code></td></tr>
+        <tr><td>Quotient</td><td><code>aⁿ ÷ aᵐ = aⁿ⁻ᵐ</code></td></tr>
+        <tr><td>Power</td><td><code>(aⁿ)ᵐ = aⁿᵐ</code></td></tr>
+        <tr><td>Zero</td><td><code>a⁰ = 1</code></td></tr>
+        <tr><td>Negative</td><td><code>a⁻ⁿ = 1/aⁿ</code></td></tr>
+        <tr><td>Power of product</td><td><code>(ab)ⁿ = aⁿbⁿ</code></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-bar">
+    <div>
+      <h2>Ready to practise?</h2>
+      <p>Try the interactive worksheet with instant feedback.</p>
+    </div>
+    <a class="cta-btn" href="math-grade8-exponents-laws-worksheet.html">Start Worksheet →</a>
+  </div>
+
+</main>
+<footer>© 2025 LearnBright · Free printable &amp; interactive school worksheets</footer>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linear Equations (Two Variables) – Grade 8 Math Help</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --ink: #1a1f36; --muted: #5a6076; --accent: #4361EE; --accent-dark: #3451d1;
+      --green: #06d6a0; --orange: #fb8500; --red: #ef233c;
+      --bg: #f4f6fb; --card: #ffffff; --border: #e2e6f0; --radius: 14px;
+      --mono: 'JetBrains Mono', monospace;
+    }
+    body { font-family: 'Nunito', sans-serif; background-color: var(--bg); background-image: radial-gradient(circle, #E8EDF5 1.5px, transparent 1.5px); background-size: 20px 20px; color: var(--ink); min-height: 100vh; }
+    header { background: var(--card); border-bottom: 2px solid var(--border); padding: 0 24px; }
+    .header-inner { max-width: 860px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .logo { font-weight: 900; font-size: 1.25rem; color: var(--accent); text-decoration: none; }
+    nav a { font-weight: 700; font-size: 0.85rem; color: var(--muted); text-decoration: none; margin-left: 20px; }
+    nav a:hover { color: var(--accent); }
+    .breadcrumb { max-width: 860px; margin: 0 auto; padding: 14px 24px 0; font-size: 0.8rem; color: var(--muted); }
+    .breadcrumb a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 6px; }
+    .hero { max-width: 860px; margin: 0 auto; padding: 28px 24px 0; display: flex; align-items: center; gap: 20px; }
+    .hero-icon { width: 72px; height: 72px; border-radius: 20px; background: var(--accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.5rem; color:#fff; font-family: var(--mono); font-weight:700; }
+    .hero h1 { font-size: 1.9rem; font-weight: 900; line-height: 1.15; }
+    .hero p { font-size: 1rem; color: var(--muted); margin-top: 6px; font-weight: 600; }
+    main { max-width: 860px; margin: 28px auto 60px; padding: 0 24px; display: flex; flex-direction: column; gap: 24px; }
+    .card { background: var(--card); border-radius: var(--radius); border: 2px solid var(--border); padding: 28px; }
+    .card h2 { font-size: 1.25rem; font-weight: 900; color: var(--accent); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+    .card p { font-size: 0.95rem; line-height: 1.7; color: var(--ink); margin-bottom: 12px; }
+    .card p:last-child { margin-bottom: 0; }
+    .formula-box { background: #eef1fd; border-left: 4px solid var(--accent); border-radius: 10px; padding: 16px 20px; margin: 16px 0; font-family: var(--mono); font-size: 1rem; font-weight: 700; color: var(--accent-dark); }
+    .formula-box .label { font-family: 'Nunito', sans-serif; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-bottom: 6px; }
+    .formula-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0; }
+    @media (max-width: 560px) { .formula-grid { grid-template-columns: 1fr; } }
+    .method-steps { counter-reset: step; display: flex; flex-direction: column; gap: 10px; margin: 14px 0; }
+    .method-step { display: flex; align-items: flex-start; gap: 12px; background: #fafbff; border: 2px solid var(--border); border-radius: 10px; padding: 12px 16px; font-size: 0.92rem; line-height: 1.55; }
+    .step-badge { background: var(--accent); color: #fff; border-radius: 8px; padding: 3px 10px; font-weight: 800; font-size: 0.8rem; flex-shrink: 0; }
+    .examples { display: flex; flex-direction: column; gap: 16px; }
+    .example { border: 2px solid var(--border); border-radius: 12px; padding: 18px 20px; background: #fafbff; }
+    .example-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+    .ex-num { width: 32px; height: 32px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 900; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .example-header h3 { font-size: 1rem; font-weight: 800; }
+    .ex-step { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; font-size: 0.9rem; }
+    .ex-step-num { background: var(--green); color: #fff; border-radius: 50%; width: 22px; height: 22px; font-size: 0.75rem; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    .ex-step p { line-height: 1.5; }
+    code { font-family: var(--mono); background: #eef1fd; border-radius: 5px; padding: 1px 6px; font-size: 0.88em; color: var(--accent-dark); }
+    .answer-box { background: #e8faf4; border: 2px solid var(--green); border-radius: 8px; padding: 10px 14px; margin-top: 10px; font-weight: 800; font-size: 0.95rem; color: #05a07a; }
+    .watch-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .watch-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.92rem; line-height: 1.55; }
+    .watch-badge { background: #fff0f0; color: var(--red); border: 2px solid #ffd6d6; border-radius: 8px; padding: 3px 9px; font-weight: 800; font-size: 0.78rem; flex-shrink: 0; margin-top: 2px; }
+    .ref-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    .ref-table th, .ref-table td { border: 2px solid var(--border); padding: 10px 14px; font-size: 0.88rem; text-align: left; }
+    .ref-table th { background: #eef1fd; font-weight: 800; color: var(--accent-dark); }
+    .cta-bar { background: linear-gradient(135deg, #4361EE 0%, #3a0ca3 100%); border-radius: var(--radius); padding: 28px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .cta-bar h2 { color: #fff; font-size: 1.2rem; font-weight: 900; }
+    .cta-bar p { color: rgba(255,255,255,.8); font-size: 0.9rem; margin-top: 4px; font-weight: 600; }
+    .cta-btn { background: #fff; color: var(--accent); border-radius: 10px; padding: 12px 24px; font-weight: 900; font-size: 1rem; text-decoration: none; white-space: nowrap; transition: transform .15s; }
+    .cta-btn:hover { transform: scale(1.04); }
+    footer { text-align: center; padding: 24px; font-size: 0.8rem; color: var(--muted); font-weight: 600; }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header>
+  <div class="header-inner">
+    <a class="logo" href="index.html">LearnBright</a>
+    <nav><a href="index.html">Home</a><a href="index.html#grades">Grades</a></nav>
+  </div>
+</header>
+<div class="breadcrumb">
+  <a href="index.html">Home</a><span>›</span>
+  <a href="index.html#grade8">Grade 8 Math</a><span>›</span>
+  Linear Equations (Two Variables)
+</div>
+<div class="hero">
+  <div class="hero-icon">xy</div>
+  <div>
+    <h1>Linear Equations (Two Variables)</h1>
+    <p>Grade 8 Math &nbsp;·&nbsp; Solving simultaneous equations</p>
+  </div>
+</div>
+
+<main>
+
+  <!-- What are they? -->
+  <div class="card">
+    <h2>&#x1F4D0; What are Linear Equations in Two Variables?</h2>
+    <p>A <strong>linear equation in two variables</strong> has the form <code>ax + by = c</code>, where <em>a</em>, <em>b</em>, <em>c</em> are constants and <em>x</em>, <em>y</em> are unknowns. One equation alone has infinitely many solutions (a whole line). A <strong>pair of simultaneous equations</strong> usually gives a unique solution — the point where two lines cross.</p>
+    <div class="formula-box">
+      <div class="label">Standard Form</div>
+      ax + by = c &nbsp; (e.g. 2x + 3y = 12)
+    </div>
+  </div>
+
+  <!-- Methods -->
+  <div class="card">
+    <h2>&#x1F527; Solving by Substitution</h2>
+    <p>Use substitution when one equation is easy to rearrange for a single variable.</p>
+    <div class="method-steps">
+      <div class="method-step"><span class="step-badge">Step 1</span> Rearrange one equation to isolate x (or y).</div>
+      <div class="method-step"><span class="step-badge">Step 2</span> Substitute that expression into the other equation.</div>
+      <div class="method-step"><span class="step-badge">Step 3</span> Solve the resulting single-variable equation.</div>
+      <div class="method-step"><span class="step-badge">Step 4</span> Substitute back to find the other variable. Check in both original equations.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>&#x2795; Solving by Elimination</h2>
+    <p>Use elimination when both equations share a coefficient you can cancel.</p>
+    <div class="method-steps">
+      <div class="method-step"><span class="step-badge">Step 1</span> Multiply one or both equations so a variable has the same coefficient.</div>
+      <div class="method-step"><span class="step-badge">Step 2</span> Add or subtract the equations to eliminate that variable.</div>
+      <div class="method-step"><span class="step-badge">Step 3</span> Solve the remaining single-variable equation.</div>
+      <div class="method-step"><span class="step-badge">Step 4</span> Substitute back to find the other variable. Check both equations.</div>
+    </div>
+  </div>
+
+  <!-- Worked Examples -->
+  <div class="card">
+    <h2>&#x270F;&#xFE0F; Worked Examples</h2>
+    <div class="examples">
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">1</div><h3>Substitution: x + y = 10 &nbsp;and&nbsp; x − y = 4</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>From Eq 1: x = 10 − y</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>Sub into Eq 2: (10 − y) − y = 4 → 10 − 2y = 4 → y = 3</p></div>
+        <div class="ex-step"><div class="ex-step-num">3</div><p>x = 10 − 3 = 7</p></div>
+        <div class="answer-box">x = 7, &nbsp; y = 3</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">2</div><h3>Elimination: 2x + 3y = 16 &nbsp;and&nbsp; 2x + y = 10</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Subtract Eq 2 from Eq 1: (2x+3y) − (2x+y) = 16 − 10 → 2y = 6 → y = 3</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>Sub y = 3 into Eq 2: 2x + 3 = 10 → 2x = 7 → x = 3.5</p></div>
+        <div class="answer-box">x = 3.5, &nbsp; y = 3</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">3</div><h3>Elimination with multiplication: 3x + 2y = 11 &nbsp;and&nbsp; x + y = 4</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Multiply Eq 2 by 2: 2x + 2y = 8</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>Subtract from Eq 1: (3x+2y) − (2x+2y) = 11 − 8 → x = 3</p></div>
+        <div class="ex-step"><div class="ex-step-num">3</div><p>Sub x = 3 into Eq 2: 3 + y = 4 → y = 1</p></div>
+        <div class="answer-box">x = 3, &nbsp; y = 1</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">4</div><h3>Word problem: Two numbers add to 20; the larger is 4 more than the smaller.</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Let x = larger, y = smaller. Equations: x + y = 20 and x = y + 4.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>Sub: (y + 4) + y = 20 → 2y = 16 → y = 8</p></div>
+        <div class="ex-step"><div class="ex-step-num">3</div><p>x = 8 + 4 = 12</p></div>
+        <div class="answer-box">The numbers are 12 and 8.</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">5</div><h3>Check a solution: Does x = 2, y = 5 satisfy 3x + y = 11?</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>3(2) + 5 = 6 + 5 = 11 ✓</p></div>
+        <div class="answer-box">Yes — x = 2, y = 5 is a solution.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Watch Out -->
+  <div class="card">
+    <h2>&#x26A0;&#xFE0F; Watch Out!</h2>
+    <ul class="watch-list">
+      <li><span class="watch-badge">SIGN</span>When subtracting equations, distribute the negative sign to every term in the second equation.</li>
+      <li><span class="watch-badge">CHECK</span>Always substitute your answer back into BOTH original equations to verify.</li>
+      <li><span class="watch-badge">LABELS</span>Define what x and y represent before setting up word-problem equations.</li>
+      <li><span class="watch-badge">INFINITE</span>If both equations are the same line, there are infinitely many solutions (dependent). If they are parallel, there is no solution (inconsistent).</li>
+    </ul>
+  </div>
+
+  <!-- Quick Reference -->
+  <div class="card">
+    <h2>&#x1F4CB; Quick Reference</h2>
+    <table class="ref-table">
+      <thead><tr><th>Method</th><th>Best when…</th><th>Key step</th></tr></thead>
+      <tbody>
+        <tr><td>Substitution</td><td>One variable is easy to isolate</td><td>Rearrange → substitute</td></tr>
+        <tr><td>Elimination</td><td>Coefficients match or can be scaled</td><td>Add/subtract equations</td></tr>
+        <tr><td>Both</td><td>Always</td><td>Check answer in both equations</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-bar">
+    <div>
+      <h2>Ready to practise?</h2>
+      <p>Try the interactive worksheet with instant feedback.</p>
+    </div>
+    <a class="cta-btn" href="math-grade8-linear-equations-two-var-worksheet.html">Start Worksheet →</a>
+  </div>
+
+</main>
+<footer>© 2025 LearnBright · Free printable &amp; interactive school worksheets</footer>
+</body>
+</html>
