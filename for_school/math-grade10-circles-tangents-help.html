@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Circles &amp; Tangents – Grade 10 Math Help</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --ink: #1a1f36; --muted: #5a6076; --accent: #4361EE; --accent-dark: #3451d1; --green: #06d6a0; --orange: #fb8500; --red: #ef233c; --bg: #f4f6fb; --card: #ffffff; --border: #e2e6f0; --radius: 14px; --mono: 'JetBrains Mono', monospace; }
+    body { font-family: 'Nunito', sans-serif; background-color: var(--bg); background-image: radial-gradient(circle, #E8EDF5 1.5px, transparent 1.5px); background-size: 20px 20px; color: var(--ink); min-height: 100vh; }
+    header { background: var(--card); border-bottom: 2px solid var(--border); padding: 0 24px; }
+    .header-inner { max-width: 860px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 52px; }
+    .logo-link { text-decoration: none; display: flex; align-items: center; } .logo-img { height: 36px; width: auto; display: block; }
+    nav a { font-weight: 700; font-size: 0.85rem; color: var(--muted); text-decoration: none; margin-left: 20px; }
+    nav a:hover { color: var(--accent); }
+    .breadcrumb { max-width: 860px; margin: 0 auto; padding: 14px 24px 0; font-size: 0.8rem; color: var(--muted); }
+    .breadcrumb a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 6px; }
+    .hero { max-width: 860px; margin: 0 auto; padding: 28px 24px 0; display: flex; align-items: center; gap: 20px; }
+    .hero-icon { width: 72px; height: 72px; border-radius: 20px; background: var(--accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 2rem; color:#fff; font-weight:700; }
+    .hero h1 { font-size: 1.9rem; font-weight: 900; line-height: 1.15; }
+    .hero p { font-size: 1rem; color: var(--muted); margin-top: 6px; font-weight: 600; }
+    main { max-width: 860px; margin: 28px auto 60px; padding: 0 24px; display: flex; flex-direction: column; gap: 24px; }
+    .card { background: var(--card); border-radius: var(--radius); border: 2px solid var(--border); padding: 28px; }
+    .card h2 { font-size: 1.25rem; font-weight: 900; color: var(--accent); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+    .card p { font-size: 0.95rem; line-height: 1.7; color: var(--ink); margin-bottom: 12px; }
+    .card p:last-child { margin-bottom: 0; }
+    .theorem-list { display: flex; flex-direction: column; gap: 12px; margin: 14px 0; }
+    .theorem { background: #eef1fd; border: 2px solid var(--border); border-radius: 12px; padding: 14px 18px; }
+    .theorem .t-name { font-weight: 900; font-size: 0.92rem; color: var(--accent); margin-bottom: 6px; }
+    .theorem .t-body { font-size: 0.9rem; line-height: 1.6; color: var(--ink); }
+    .svg-wrap { display: flex; justify-content: center; margin: 16px 0; }
+    .term-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 10px; margin: 14px 0; }
+    @media(max-width:560px){ .term-grid { grid-template-columns: 1fr; } }
+    .term-card { background: #fafbff; border: 2px solid var(--border); border-radius: 10px; padding: 12px 14px; }
+    .term-card .tc-name { font-weight: 900; font-size: 0.88rem; color: var(--accent); margin-bottom: 4px; }
+    .term-card .tc-desc { font-size: 0.83rem; color: var(--ink); line-height: 1.5; }
+    .examples { display: flex; flex-direction: column; gap: 16px; }
+    .example { border: 2px solid var(--border); border-radius: 12px; padding: 18px 20px; background: #fafbff; }
+    .example-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+    .ex-num { width: 32px; height: 32px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 900; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .example-header h3 { font-size: 1rem; font-weight: 800; }
+    .ex-step { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; font-size: 0.9rem; }
+    .ex-step-num { background: var(--green); color: #fff; border-radius: 50%; width: 22px; height: 22px; font-size: 0.75rem; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    .ex-step p { line-height: 1.5; }
+    code { font-family: var(--mono); background: #eef1fd; border-radius: 5px; padding: 1px 6px; font-size: 0.88em; color: var(--accent-dark); }
+    .answer-box { background: #e8faf4; border: 2px solid var(--green); border-radius: 8px; padding: 10px 14px; margin-top: 10px; font-weight: 800; font-size: 0.95rem; color: #05a07a; }
+    .watch-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .watch-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.92rem; line-height: 1.55; }
+    .watch-badge { background: #fff0f0; color: var(--red); border: 2px solid #ffd6d6; border-radius: 8px; padding: 3px 9px; font-weight: 800; font-size: 0.78rem; flex-shrink: 0; margin-top: 2px; }
+    .ref-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    .ref-table th, .ref-table td { border: 2px solid var(--border); padding: 10px 14px; font-size: 0.88rem; text-align: left; }
+    .ref-table th { background: #eef1fd; font-weight: 800; color: var(--accent-dark); }
+    .cta-bar { background: linear-gradient(135deg, #4361EE 0%, #3a0ca3 100%); border-radius: var(--radius); padding: 28px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .cta-bar h2 { color: #fff; font-size: 1.2rem; font-weight: 900; }
+    .cta-bar p { color: rgba(255,255,255,.8); font-size: 0.9rem; margin-top: 4px; font-weight: 600; }
+    .cta-btn { background: #fff; color: var(--accent); border-radius: 10px; padding: 12px 24px; font-weight: 900; font-size: 1rem; text-decoration: none; white-space: nowrap; transition: transform .15s; }
+    .cta-btn:hover { transform: scale(1.04); }
+    footer { text-align: center; padding: 24px; font-size: 0.8rem; color: var(--muted); font-weight: 600; }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header>
+  <div class="header-inner">
+    <a class="logo-link" href="../index.html"><img src="../logo.png" alt="LearnPad" class="logo-img" /></a>
+    <nav><a href="../index.html">Home</a><a href="index.html">School</a><a href="../learnings/">Tech in Urdu</a></nav>
+  </div>
+</header>
+<div class="breadcrumb">
+  <a href="index.html">Home</a><span>›</span>
+  <a href="index.html#grade10">Grade 10 Math</a><span>›</span>
+  Circles &amp; Tangents
+</div>
+<div class="hero">
+  <div class="hero-icon">○</div>
+  <div>
+    <h1>Circles &amp; Tangents</h1>
+    <p>Grade 10 Math &nbsp;·&nbsp; Tangent properties, chord theorems &amp; angle relationships</p>
+  </div>
+</div>
+<main>
+
+  <div class="card">
+    <h2>&#x1F535; Circle Terminology</h2>
+    <div class="term-grid">
+      <div class="term-card"><div class="tc-name">Centre (O)</div><div class="tc-desc">Fixed point equidistant from all points on the circle.</div></div>
+      <div class="term-card"><div class="tc-name">Radius (r)</div><div class="tc-desc">Line segment from centre to any point on the circle.</div></div>
+      <div class="term-card"><div class="tc-name">Chord</div><div class="tc-desc">Line segment joining two points on the circle. Diameter is the longest chord.</div></div>
+      <div class="term-card"><div class="tc-name">Tangent</div><div class="tc-desc">Line that touches the circle at exactly ONE point (point of tangency).</div></div>
+      <div class="term-card"><div class="tc-name">Secant</div><div class="tc-desc">Line that intersects the circle at TWO points.</div></div>
+      <div class="term-card"><div class="tc-name">Arc</div><div class="tc-desc">Part of the circumference. Minor arc &lt; semicircle; major arc &gt; semicircle.</div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>&#x1F4D0; Tangent Theorems</h2>
+    <div class="theorem-list">
+      <div class="theorem">
+        <div class="t-name">Theorem 1 — Radius ⊥ Tangent</div>
+        <div class="t-body">The radius drawn to the point of tangency is perpendicular to the tangent. So <code>∠OPT = 90°</code> where O is centre, P is point of tangency, T is on the tangent.</div>
+      </div>
+      <div class="theorem">
+        <div class="t-name">Theorem 2 — Equal Tangents from External Point</div>
+        <div class="t-body">Two tangents drawn from an external point to a circle are equal in length. If PA and PB are tangents from P, then <code>PA = PB</code>.</div>
+      </div>
+      <div class="theorem">
+        <div class="t-name">Theorem 3 — Tangent-Radius Right Triangle</div>
+        <div class="t-body">With external point P, centre O, tangent length PT, and radius r: <code>OP² = PT² + r²</code> (Pythagoras on triangle OPT).</div>
+      </div>
+    </div>
+    <div class="svg-wrap">
+      <svg width="280" height="200" viewBox="0 0 280 200" font-family="Nunito,sans-serif">
+        <circle cx="130" cy="100" r="60" fill="rgba(67,97,238,0.08)" stroke="#4361EE" stroke-width="2.5"/>
+        <line x1="240" y1="45" x2="130" y2="100" stroke="#4361EE" stroke-width="2" stroke-dasharray="5,3"/>
+        <line x1="240" y1="45" x2="130" y2="42" stroke="#06d6a0" stroke-width="2.5"/>
+        <line x1="240" y1="45" x2="130" y2="158" stroke="#06d6a0" stroke-width="2.5"/>
+        <circle cx="130" cy="42" r="4" fill="#4361EE"/>
+        <circle cx="130" cy="158" r="4" fill="#4361EE"/>
+        <circle cx="240" cy="45" r="5" fill="#fb8500"/>
+        <circle cx="130" cy="100" r="4" fill="#4361EE"/>
+        <text x="132" y="96" font-size="11" font-weight="800" fill="#4361EE">O</text>
+        <text x="244" y="42" font-size="11" font-weight="800" fill="#fb8500">P</text>
+        <text x="134" y="38" font-size="11" font-weight="700" fill="#06d6a0">A</text>
+        <text x="134" y="170" font-size="11" font-weight="700" fill="#06d6a0">B</text>
+        <text x="165" y="60" font-size="10" fill="#5a6076" font-weight="700">PA = PB</text>
+        <rect x="127" y="39" width="6" height="6" fill="none" stroke="#ef233c" stroke-width="1.5"/>
+        <rect x="127" y="153" width="6" height="6" fill="none" stroke="#ef233c" stroke-width="1.5"/>
+      </svg>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>&#x1F4D0; Chord &amp; Angle Theorems</h2>
+    <div class="theorem-list">
+      <div class="theorem">
+        <div class="t-name">Perpendicular from Centre to Chord</div>
+        <div class="t-body">The perpendicular from the centre bisects the chord. If OM ⊥ AB, then AM = MB.</div>
+      </div>
+      <div class="theorem">
+        <div class="t-name">Angle at Centre = 2 × Angle at Circumference</div>
+        <div class="t-body">The angle subtended by an arc at the centre is double the angle subtended at any point on the remaining part of the circle.</div>
+      </div>
+      <div class="theorem">
+        <div class="t-name">Angles in Same Segment</div>
+        <div class="t-body">Angles subtended by the same arc at the circumference are equal.</div>
+      </div>
+      <div class="theorem">
+        <div class="t-name">Angle in Semicircle</div>
+        <div class="t-body">The angle subtended by a diameter at the circumference is always 90°.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>&#x270F;&#xFE0F; Worked Examples</h2>
+    <div class="examples">
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">1</div><h3>A tangent PA touches a circle (centre O, radius 5 cm) at A. OP = 13 cm. Find PA.</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>OA ⊥ PA (radius ⊥ tangent), so triangle OAP is right-angled at A.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>PA² = OP² − OA² = 13² − 5² = 169 − 25 = 144.</p></div>
+        <div class="ex-step"><div class="ex-step-num">3</div><p>PA = 12 cm.</p></div>
+        <div class="answer-box">PA = 12 cm</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">2</div><h3>Two tangents from external point P touch the circle at A and B. PA = 3x+1 and PB = 5x−7. Find x.</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Tangents from external point are equal: PA = PB.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>3x+1 = 5x−7 → 8 = 2x → x = 4.</p></div>
+        <div class="answer-box">x = 4</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">3</div><h3>A chord is 16 cm long. The perpendicular from the centre to the chord is 6 cm. Find the radius.</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Perpendicular bisects chord → half-chord = 8 cm.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>r² = 8² + 6² = 64 + 36 = 100 → r = 10 cm.</p></div>
+        <div class="answer-box">Radius = 10 cm</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">4</div><h3>An arc subtends 80° at the centre. What angle does it subtend at the circumference?</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Angle at circumference = ½ × angle at centre.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>= ½ × 80° = 40°.</p></div>
+        <div class="answer-box">40°</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">5</div><h3>In a circle, AB is a diameter and C is on the circumference. ∠CAB = 35°. Find ∠ABC.</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>∠ACB = 90° (angle in semicircle).</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>∠ABC = 180° − 90° − 35° = 55°.</p></div>
+        <div class="answer-box">∠ABC = 55°</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>&#x26A0;&#xFE0F; Watch Out!</h2>
+    <ul class="watch-list">
+      <li><span class="watch-badge">90°</span>The radius to the point of tangency is ALWAYS perpendicular to the tangent — use this as your first step in every tangent problem.</li>
+      <li><span class="watch-badge">EQUAL TANGENTS</span>Only tangents from the SAME external point are equal. Tangents from different points are not necessarily equal.</li>
+      <li><span class="watch-badge">CENTRE vs CIRCUMFERENCE</span>The angle at the centre is DOUBLE the angle at the circumference, not half. Check which you are given.</li>
+      <li><span class="watch-badge">DIAMETER</span>The angle in a semicircle is always 90° — this only applies when the chord is a diameter.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>&#x1F4CB; Quick Reference</h2>
+    <table class="ref-table">
+      <thead><tr><th>Theorem</th><th>Result</th></tr></thead>
+      <tbody>
+        <tr><td>Radius to tangency point</td><td>Perpendicular to tangent (90°)</td></tr>
+        <tr><td>Tangents from external point</td><td>PA = PB (equal lengths)</td></tr>
+        <tr><td>Tangent length</td><td>PT² = OP² − r²</td></tr>
+        <tr><td>Perpendicular from centre</td><td>Bisects chord (AM = MB)</td></tr>
+        <tr><td>Angle: centre vs circumference</td><td>∠centre = 2 × ∠circumference</td></tr>
+        <tr><td>Angle in semicircle</td><td>Always 90°</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="cta-bar">
+    <div>
+      <h2>Ready to practise?</h2>
+      <p>Try the interactive worksheet with instant feedback.</p>
+    </div>
+    <a class="cta-btn" href="math-grade10-circles-tangents-worksheet.html">Start Worksheet →</a>
+  </div>
+
+</main>
+<footer>© 2025 LearnBright · Free printable &amp; interactive school worksheets</footer>
+</body>
+</html>

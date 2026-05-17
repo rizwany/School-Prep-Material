@@ -1,0 +1,449 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Angles & Lines – Grade 4 Math Help</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #1a1f36;
+      --muted: #5a6076;
+      --accent: #4361EE;
+      --accent-dark: #3451d1;
+      --green: #06d6a0;
+      --orange: #fb8500;
+      --red: #ef233c;
+      --bg: #f4f6fb;
+      --card: #ffffff;
+      --border: #e2e6f0;
+      --radius: 14px;
+      --mono: 'JetBrains Mono', monospace;
+    }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background-color: var(--bg);
+      background-image: radial-gradient(circle, #E8EDF5 1.5px, transparent 1.5px);
+      background-size: 20px 20px;
+      color: var(--ink);
+      min-height: 100vh;
+    }
+
+    header {
+      background: var(--card);
+      border-bottom: 2px solid var(--border);
+      padding: 0 24px;
+    }
+    .header-inner {
+      max-width: 860px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between; height: 64px;
+    }
+    .logo-link { text-decoration: none; display: flex; align-items: center; } .logo-img { height: 36px; width: auto; display: block; }
+    nav a { font-weight: 700; font-size: 0.85rem; color: var(--muted); text-decoration: none; margin-left: 20px; }
+    nav a:hover { color: var(--accent); }
+
+    .breadcrumb {
+      max-width: 860px; margin: 0 auto; padding: 14px 24px 0;
+      font-size: 0.8rem; color: var(--muted);
+    }
+    .breadcrumb a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 6px; }
+
+    .hero {
+      max-width: 860px; margin: 0 auto; padding: 28px 24px 0;
+      display: flex; align-items: center; gap: 20px;
+    }
+    .hero-icon {
+      width: 72px; height: 72px; border-radius: 20px;
+      background: var(--accent);
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .hero-icon svg { width: 42px; height: 42px; }
+    .hero h1 { font-size: 1.9rem; font-weight: 900; line-height: 1.15; }
+    .hero p { font-size: 1rem; color: var(--muted); margin-top: 6px; font-weight: 600; }
+
+    main {
+      max-width: 860px; margin: 28px auto 60px;
+      padding: 0 24px; display: flex; flex-direction: column; gap: 24px;
+    }
+
+    .card {
+      background: var(--card); border-radius: var(--radius);
+      border: 2px solid var(--border); padding: 28px;
+    }
+    .card h2 {
+      font-size: 1.25rem; font-weight: 900; color: var(--accent);
+      margin-bottom: 16px; display: flex; align-items: center; gap: 8px;
+    }
+    .card h2 .icon { font-size: 1.3rem; }
+    .card p { font-size: 0.95rem; line-height: 1.7; color: var(--ink); margin-bottom: 12px; }
+    .card p:last-child { margin-bottom: 0; }
+    code { font-family: var(--mono); background: #eef1fd; border-radius: 5px; padding: 1px 6px; font-size: 0.88em; color: var(--accent-dark); }
+
+    /* ── angle type table ── */
+    .angle-table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+    .angle-table th, .angle-table td {
+      border: 2px solid var(--border); padding: 10px 14px;
+      font-size: 0.88rem; text-align: left;
+    }
+    .angle-table th { background: #eef1fd; font-weight: 800; color: var(--accent-dark); }
+    .angle-table .badge {
+      display: inline-block; border-radius: 8px; padding: 3px 10px;
+      font-weight: 800; font-size: 0.82rem; color: #fff;
+    }
+    .acute   { background: #06d6a0; }
+    .right   { background: #4361EE; }
+    .obtuse  { background: #fb8500; }
+    .straight{ background: #ef233c; }
+
+    /* ── angle SVG row ── */
+    .angle-visual {
+      display: flex; gap: 20px; flex-wrap: wrap;
+      justify-content: center; margin: 20px 0;
+    }
+    .angle-box {
+      display: flex; flex-direction: column; align-items: center; gap: 8px;
+    }
+    .angle-box span { font-size: 0.78rem; font-weight: 800; color: var(--muted); text-align: center; }
+
+    /* ── line type cards ── */
+    .line-cards { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; margin: 16px 0; }
+    @media (max-width: 560px) { .line-cards { grid-template-columns: 1fr; } }
+    .line-card {
+      border: 2px solid var(--border); border-radius: 12px; padding: 16px;
+      text-align: center; background: #fafbff;
+    }
+    .line-card h3 { font-size: 0.95rem; font-weight: 800; margin-bottom: 8px; color: var(--accent); }
+    .line-card p { font-size: 0.82rem; color: var(--muted); line-height: 1.5; }
+
+    /* ── examples ── */
+    .examples { display: flex; flex-direction: column; gap: 16px; }
+    .example { border: 2px solid var(--border); border-radius: 12px; padding: 18px 20px; background: #fafbff; }
+    .example-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+    .ex-num {
+      width: 32px; height: 32px; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-weight: 900; font-size: 0.9rem;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .example-header h3 { font-size: 1rem; font-weight: 800; }
+    .ex-step { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; font-size: 0.9rem; }
+    .ex-step-num {
+      background: var(--green); color: #fff;
+      border-radius: 50%; width: 22px; height: 22px;
+      font-size: 0.75rem; font-weight: 800;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; margin-top: 2px;
+    }
+    .ex-step p { line-height: 1.5; }
+    .answer-box {
+      background: #e8faf4; border: 2px solid var(--green);
+      border-radius: 8px; padding: 10px 14px;
+      margin-top: 10px; font-weight: 800; font-size: 0.95rem; color: #05a07a;
+    }
+
+    /* ── watch out ── */
+    .watch-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .watch-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.92rem; line-height: 1.55; }
+    .watch-badge {
+      background: #fff0f0; color: var(--red); border: 2px solid #ffd6d6;
+      border-radius: 8px; padding: 3px 9px;
+      font-weight: 800; font-size: 0.78rem; flex-shrink: 0; margin-top: 2px;
+    }
+
+    .ref-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    .ref-table th, .ref-table td { border: 2px solid var(--border); padding: 10px 14px; font-size: 0.88rem; text-align: left; }
+    .ref-table th { background: #eef1fd; font-weight: 800; color: var(--accent-dark); }
+
+    .cta-bar {
+      background: linear-gradient(135deg, #4361EE 0%, #3a0ca3 100%);
+      border-radius: var(--radius); padding: 28px;
+      display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap;
+    }
+    .cta-bar h2 { color: #fff; font-size: 1.2rem; font-weight: 900; }
+    .cta-bar p { color: rgba(255,255,255,.8); font-size: 0.9rem; margin-top: 4px; font-weight: 600; }
+    .cta-btn {
+      background: #fff; color: var(--accent);
+      border-radius: 10px; padding: 12px 24px;
+      font-weight: 900; font-size: 1rem;
+      text-decoration: none; white-space: nowrap; transition: transform .15s;
+    }
+    .cta-btn:hover { transform: scale(1.04); }
+
+    footer { text-align: center; padding: 24px; font-size: 0.8rem; color: var(--muted); font-weight: 600; }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header>
+  <div class="header-inner">
+    <a class="logo-link" href="../index.html"><img src="../logo.png" alt="LearnPad" class="logo-img" /></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#grades">Grades</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <a href="index.html">Home</a><span>›</span>
+  <a href="index.html#grade4">Grade 4 Math</a><span>›</span>
+  Angles &amp; Lines
+</div>
+
+<div class="hero">
+  <div class="hero-icon">
+    <svg viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M6 36 L36 36 L6 10" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M6 36 Q14 36 14 28" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    </svg>
+  </div>
+  <div>
+    <h1>Angles &amp; Lines</h1>
+    <p>Grade 4 Math &nbsp;·&nbsp; Identify and classify angles and lines</p>
+  </div>
+</div>
+
+<main>
+
+  <!-- What is an Angle -->
+  <div class="card">
+    <h2><span class="icon">📐</span> What is an Angle?</h2>
+    <p>An <strong>angle</strong> is the amount of turn between two rays that share the same starting point (the <strong>vertex</strong>). Angles are measured in <strong>degrees (°)</strong>.</p>
+    <p>A full turn is 360°. A half turn (straight line) is 180°. A quarter turn (right angle) is 90°.</p>
+  </div>
+
+  <!-- Types of Angles -->
+  <div class="card">
+    <h2><span class="icon">🔺</span> Types of Angles</h2>
+
+    <div class="angle-visual">
+      <!-- Acute -->
+      <div class="angle-box">
+        <svg width="80" height="70" viewBox="0 0 80 70">
+          <line x1="10" y1="60" x2="70" y2="60" stroke="#06d6a0" stroke-width="3" stroke-linecap="round"/>
+          <line x1="10" y1="60" x2="50" y2="15" stroke="#06d6a0" stroke-width="3" stroke-linecap="round"/>
+          <path d="M30 60 Q28 50 35 45" stroke="#06d6a0" stroke-width="1.5" fill="none"/>
+        </svg>
+        <span style="color:#06d6a0">Acute<br/>&lt; 90°</span>
+      </div>
+      <!-- Right -->
+      <div class="angle-box">
+        <svg width="80" height="70" viewBox="0 0 80 70">
+          <line x1="10" y1="60" x2="70" y2="60" stroke="#4361EE" stroke-width="3" stroke-linecap="round"/>
+          <line x1="10" y1="60" x2="10" y2="10" stroke="#4361EE" stroke-width="3" stroke-linecap="round"/>
+          <rect x="10" y="45" width="15" height="15" fill="none" stroke="#4361EE" stroke-width="2"/>
+        </svg>
+        <span style="color:#4361EE">Right<br/>= 90°</span>
+      </div>
+      <!-- Obtuse -->
+      <div class="angle-box">
+        <svg width="80" height="70" viewBox="0 0 80 70">
+          <line x1="10" y1="60" x2="70" y2="60" stroke="#fb8500" stroke-width="3" stroke-linecap="round"/>
+          <line x1="10" y1="60" x2="55" y2="18" stroke="#fb8500" stroke-width="3" stroke-linecap="round"/>
+          <path d="M35 60 Q34 48 42 42" stroke="#fb8500" stroke-width="1.5" fill="none"/>
+        </svg>
+        <span style="color:#fb8500">Obtuse<br/>90°–180°</span>
+      </div>
+      <!-- Straight -->
+      <div class="angle-box">
+        <svg width="80" height="70" viewBox="0 0 80 70">
+          <line x1="5" y1="45" x2="75" y2="45" stroke="#ef233c" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="40" cy="45" r="4" fill="#ef233c"/>
+          <path d="M25 45 Q25 35 40 35 Q55 35 55 45" stroke="#ef233c" stroke-width="1.5" fill="none"/>
+        </svg>
+        <span style="color:#ef233c">Straight<br/>= 180°</span>
+      </div>
+    </div>
+
+    <table class="angle-table">
+      <thead>
+        <tr><th>Type</th><th>Degrees</th><th>Example</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><span class="badge acute">Acute</span></td><td>Greater than 0°, less than 90°</td><td>35°, 60°, 89°</td></tr>
+        <tr><td><span class="badge right">Right</span></td><td>Exactly 90°</td><td>Corner of a square</td></tr>
+        <tr><td><span class="badge obtuse">Obtuse</span></td><td>Greater than 90°, less than 180°</td><td>120°, 145°, 170°</td></tr>
+        <tr><td><span class="badge straight">Straight</span></td><td>Exactly 180°</td><td>A flat line</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Types of Lines -->
+  <div class="card">
+    <h2><span class="icon">〰️</span> Types of Lines</h2>
+    <p>Lines can relate to each other in different ways. Here are three important relationships:</p>
+
+    <div class="line-cards">
+      <div class="line-card">
+        <h3>Parallel Lines</h3>
+        <svg width="100" height="50" viewBox="0 0 100 50">
+          <line x1="5" y1="15" x2="95" y2="15" stroke="#4361EE" stroke-width="3" stroke-linecap="round"/>
+          <line x1="5" y1="35" x2="95" y2="35" stroke="#4361EE" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <p>Never meet. Always the same distance apart. Like railway tracks.</p>
+      </div>
+      <div class="line-card">
+        <h3>Perpendicular Lines</h3>
+        <svg width="100" height="60" viewBox="0 0 100 60">
+          <line x1="5" y1="30" x2="95" y2="30" stroke="#06d6a0" stroke-width="3" stroke-linecap="round"/>
+          <line x1="50" y1="5" x2="50" y2="55" stroke="#06d6a0" stroke-width="3" stroke-linecap="round"/>
+          <rect x="50" y="30" width="10" height="10" fill="none" stroke="#06d6a0" stroke-width="2"/>
+        </svg>
+        <p>Meet at exactly 90°. Like the corner of a room or a plus sign.</p>
+      </div>
+      <div class="line-card">
+        <h3>Intersecting Lines</h3>
+        <svg width="100" height="60" viewBox="0 0 100 60">
+          <line x1="10" y1="50" x2="90" y2="10" stroke="#fb8500" stroke-width="3" stroke-linecap="round"/>
+          <line x1="10" y1="10" x2="90" y2="50" stroke="#fb8500" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <p>Cross each other at any angle (not necessarily 90°).</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Worked Examples -->
+  <div class="card">
+    <h2><span class="icon">✏️</span> Worked Examples</h2>
+    <div class="examples">
+
+      <div class="example">
+        <div class="example-header">
+          <div class="ex-num">1</div>
+          <h3>Is 35° acute, right, obtuse, or straight?</h3>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">1</div>
+          <p>35° is <em>less than</em> 90°, so it is an <strong>acute</strong> angle.</p>
+        </div>
+        <div class="answer-box">Acute angle</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header">
+          <div class="ex-num">2</div>
+          <h3>Is 120° acute, right, obtuse, or straight?</h3>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">1</div>
+          <p>120° is <em>greater than</em> 90° and <em>less than</em> 180°, so it is an <strong>obtuse</strong> angle.</p>
+        </div>
+        <div class="answer-box">Obtuse angle</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header">
+          <div class="ex-num">3</div>
+          <h3>A square has four corners. What type of angle is each corner?</h3>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">1</div>
+          <p>Each corner of a square is exactly 90°.</p>
+        </div>
+        <div class="answer-box">Right angle (90°)</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header">
+          <div class="ex-num">4</div>
+          <h3>Two angles sit next to each other on a straight line. One is 65°. What is the other?</h3>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">1</div>
+          <p>Angles on a straight line add up to 180°.</p>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">2</div>
+          <p>Other angle = 180° − 65° = <strong>115°</strong></p>
+        </div>
+        <div class="answer-box">115° (obtuse angle)</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header">
+          <div class="ex-num">5</div>
+          <h3>Railway tracks run side by side and never cross. What type of lines are they?</h3>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">1</div>
+          <p>Lines that never meet and are always the same distance apart are <strong>parallel</strong>.</p>
+        </div>
+        <div class="answer-box">Parallel lines</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Watch Out -->
+  <div class="card">
+    <h2><span class="icon">⚠️</span> Watch Out!</h2>
+    <ul class="watch-list">
+      <li>
+        <span class="watch-badge">90°</span>
+        A right angle is <em>exactly</em> 90°, not "about" 90°. Look for the little square symbol in diagrams.
+      </li>
+      <li>
+        <span class="watch-badge">OBTUSE</span>
+        Obtuse angles look wide open. If an angle looks wider than the corner of a book, it's obtuse.
+      </li>
+      <li>
+        <span class="watch-badge">180°</span>
+        Angles on a straight line always add to 180°. Use this to find a missing angle.
+      </li>
+      <li>
+        <span class="watch-badge">PARALLEL</span>
+        Parallel lines never touch — even if you extended them forever. Don't confuse them with lines that are merely far apart.
+      </li>
+    </ul>
+  </div>
+
+  <!-- Quick Reference -->
+  <div class="card">
+    <h2><span class="icon">📋</span> Quick Reference</h2>
+    <table class="ref-table">
+      <thead>
+        <tr><th>Angle Type</th><th>Rule</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Acute</td><td>0° &lt; angle &lt; 90°</td></tr>
+        <tr><td>Right</td><td>angle = 90° exactly</td></tr>
+        <tr><td>Obtuse</td><td>90° &lt; angle &lt; 180°</td></tr>
+        <tr><td>Straight</td><td>angle = 180° exactly</td></tr>
+        <tr><td>Angles on a straight line</td><td>add up to 180°</td></tr>
+        <tr><td>Angles in a full turn</td><td>add up to 360°</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-bar">
+    <div>
+      <h2>Ready to practise?</h2>
+      <p>Try the interactive worksheet with instant feedback.</p>
+    </div>
+    <a class="cta-btn" href="math-grade4-angles-lines-worksheet.html">Start Worksheet →</a>
+  </div>
+
+</main>
+
+<footer>© 2025 LearnBright · Free printable &amp; interactive school worksheets</footer>
+</body>
+</html>

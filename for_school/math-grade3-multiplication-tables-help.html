@@ -1,0 +1,798 @@
+﻿<!-- Math | Grade 3 | Multiplication Tables | help -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multiplication Tables — Grade 3 Math | School Prep</title>
+  <meta name="description" content="Learn multiplication tables 2–10 for Grade 3. Clear explanations, step-by-step methods, worked examples, and common mistakes to avoid." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --clr-bg: #ffffff;
+      --clr-dot: #E8EDF5;
+      --clr-accent: #4361EE;
+      --clr-accent-dark: #3451D1;
+      --clr-navy: #1A1A3E;
+      --clr-tint: #EEF0FF;
+      --clr-green: #2DC653;
+      --clr-green-bg: #F0FFF4;
+      --clr-red: #E63946;
+      --clr-red-bg: #FFF0F1;
+      --clr-amber: #F4A261;
+      --clr-amber-bg: #FFFBF5;
+      --clr-text: #2D2D4E;
+      --clr-muted: #6B7280;
+      --font-display: 'Nunito', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      --radius: 12px;
+      --shadow: 0 2px 16px rgba(67, 97, 238, 0.08);
+      --shadow-hover: 0 8px 28px rgba(67, 97, 238, 0.18);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--font-display);
+      background-color: var(--clr-bg);
+      background-image: radial-gradient(circle, var(--clr-dot) 1.5px, transparent 1.5px);
+      background-size: 20px 20px;
+      color: var(--clr-text);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    .page-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 24px 20px 60px;
+    }
+
+    /* ── Breadcrumb ── */
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82rem;
+      color: var(--clr-muted);
+      margin-bottom: 28px;
+      flex-wrap: wrap;
+    }
+    .breadcrumb a {
+      color: var(--clr-accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { color: var(--clr-muted); }
+
+    /* ── Hero Header ── */
+    .hero {
+      margin-bottom: 40px;
+    }
+    .hero-badges {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+    }
+    .badge {
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: 50px;
+      letter-spacing: 0.03em;
+    }
+    .badge-solid { background: var(--clr-accent); color: #fff; }
+    .badge-outline { border: 2px solid var(--clr-accent); color: var(--clr-accent); background: transparent; }
+
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 900;
+      color: var(--clr-navy);
+      line-height: 1.15;
+      margin-bottom: 12px;
+    }
+    .hero-intro {
+      font-size: 1.05rem;
+      color: var(--clr-muted);
+      max-width: 620px;
+      margin-bottom: 18px;
+    }
+    .hero-meta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .meta-pill {
+      font-size: 0.82rem;
+      color: var(--clr-muted);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 0.92rem;
+      padding: 10px 26px;
+      border-radius: 50px;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      transition: background 0.18s, color 0.18s, transform 0.18s, box-shadow 0.18s;
+    }
+    .btn-primary {
+      background: var(--clr-accent);
+      color: #fff;
+    }
+    .btn-primary:hover {
+      background: var(--clr-accent-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(67,97,238,0.25);
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--clr-accent);
+      border: 2px solid var(--clr-accent);
+    }
+    .btn-outline:hover {
+      background: var(--clr-tint);
+      transform: translateY(-2px);
+    }
+
+    /* ── Section ── */
+    section { margin-bottom: 48px; }
+    .section-label {
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--clr-accent);
+      margin-bottom: 10px;
+    }
+    .section-title {
+      font-size: 1.55rem;
+      font-weight: 800;
+      color: var(--clr-navy);
+      margin-bottom: 16px;
+    }
+
+    /* ── Card ── */
+    .card {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border-left: 5px solid var(--clr-accent);
+      padding: 24px 28px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      animation: fadeInUp 0.4s ease both;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-hover);
+    }
+    .card + .card { margin-top: 16px; }
+
+    .card-tint {
+      background: var(--clr-tint);
+      border-left: 5px solid var(--clr-accent);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      animation: fadeInUp 0.4s ease both;
+    }
+
+    .card p + p { margin-top: 10px; }
+
+    /* ── Visual Aid — Multiplication Grid ── */
+    .visual-wrap {
+      margin: 24px 0;
+      display: flex;
+      justify-content: center;
+    }
+    .mult-grid-container {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .mult-grid {
+      border-collapse: collapse;
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+    }
+    .mult-grid th, .mult-grid td {
+      width: 38px;
+      height: 38px;
+      text-align: center;
+      vertical-align: middle;
+      border: 1px solid #D1D9F0;
+    }
+    .mult-grid th {
+      background: var(--clr-accent);
+      color: #fff;
+      font-weight: 700;
+    }
+    .mult-grid .corner {
+      background: var(--clr-navy);
+      color: #fff;
+      font-weight: 800;
+    }
+    .mult-grid td { background: #fff; color: var(--clr-text); font-weight: 600; }
+    .mult-grid tr:nth-child(odd) td { background: #F8F9FF; }
+    .mult-grid td.highlight {
+      background: var(--clr-tint);
+      color: var(--clr-accent);
+      font-weight: 700;
+    }
+    .visual-caption {
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--clr-muted);
+      margin-top: 10px;
+      font-style: italic;
+    }
+
+    /* ── Step-by-step ── */
+    .steps { list-style: none; }
+    .step-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      margin-bottom: 16px;
+    }
+    .step-num {
+      flex-shrink: 0;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: var(--clr-accent);
+      color: #fff;
+      font-weight: 800;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .step-text { padding-top: 4px; font-size: 0.97rem; }
+    .step-text strong { color: var(--clr-navy); }
+
+    /* ── Formula Box ── */
+    .formula-box {
+      border: 2px solid var(--clr-accent);
+      border-radius: 10px;
+      padding: 16px 24px;
+      text-align: center;
+      margin: 20px 0;
+      background: var(--clr-tint);
+    }
+    .formula-box .formula-text {
+      font-family: var(--font-mono);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--clr-accent);
+    }
+    .formula-box .formula-label {
+      font-size: 0.78rem;
+      color: var(--clr-muted);
+      margin-top: 4px;
+    }
+
+    /* ── Example Cards ── */
+    .example-card {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      margin-bottom: 16px;
+      border-left: 5px solid var(--clr-accent);
+      animation: fadeInUp 0.4s ease both;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .example-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-hover);
+    }
+    .example-header {
+      background: #F3F4F8;
+      padding: 10px 20px;
+      font-weight: 800;
+      font-size: 0.82rem;
+      color: var(--clr-muted);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .example-body { padding: 20px 24px; }
+    .example-problem {
+      font-family: var(--font-mono);
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--clr-navy);
+      margin-bottom: 14px;
+    }
+    .example-working {
+      border-left: 3px solid var(--clr-tint);
+      padding-left: 14px;
+      margin-bottom: 14px;
+    }
+    .working-line {
+      font-family: var(--font-mono);
+      font-size: 0.9rem;
+      color: var(--clr-text);
+      margin-bottom: 6px;
+    }
+    .working-line span { color: var(--clr-muted); font-weight: 400; margin-left: 8px; }
+    .answer-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--clr-green-bg);
+      border: 1.5px solid var(--clr-green);
+      color: #1a7a3a;
+      border-radius: 50px;
+      padding: 6px 16px;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    /* ── Warning Box ── */
+    .warning-box {
+      background: var(--clr-amber-bg);
+      border-left: 5px solid var(--clr-amber);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      animation: fadeInUp 0.4s ease both;
+    }
+    .warning-box h3 {
+      font-size: 1rem;
+      font-weight: 800;
+      color: #8B4A00;
+      margin-bottom: 12px;
+    }
+    .warning-list { list-style: none; }
+    .warning-list li {
+      margin-bottom: 10px;
+      font-size: 0.93rem;
+      line-height: 1.55;
+    }
+    .warning-list .wrong { color: var(--clr-red); font-weight: 700; }
+    .warning-list .right { color: var(--clr-green); font-weight: 700; }
+
+    /* ── Quick Reference ── */
+    .ref-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 16px;
+    }
+    @media (max-width: 560px) { .ref-grid { grid-template-columns: 1fr; } }
+    .ref-item {
+      background: #fff;
+      border-radius: 10px;
+      padding: 16px;
+      box-shadow: 0 1px 8px rgba(67,97,238,0.07);
+    }
+    .ref-term {
+      font-weight: 800;
+      font-size: 0.85rem;
+      color: var(--clr-accent);
+      margin-bottom: 4px;
+    }
+    .ref-def { font-size: 0.88rem; color: var(--clr-text); }
+
+    /* ── Mini Times Table (Reference) ── */
+    .mini-table-wrap {
+      overflow-x: auto;
+      margin-top: 16px;
+    }
+    .mini-table {
+      border-collapse: collapse;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      width: 100%;
+    }
+    .mini-table th {
+      background: var(--clr-navy);
+      color: #fff;
+      padding: 6px 8px;
+      font-weight: 700;
+    }
+    .mini-table td {
+      border: 1px solid #D1D9F0;
+      padding: 5px 8px;
+      text-align: center;
+      background: #fff;
+      font-weight: 600;
+    }
+    .mini-table tr:nth-child(even) td { background: #F8F9FF; }
+
+    /* ── Footer CTA ── */
+    .footer-cta {
+      background: linear-gradient(135deg, var(--clr-accent) 0%, #6C63FF 100%);
+      border-radius: var(--radius);
+      padding: 36px 32px;
+      text-align: center;
+      color: #fff;
+      margin-top: 56px;
+    }
+    .footer-cta h2 {
+      font-size: 1.6rem;
+      font-weight: 900;
+      margin-bottom: 8px;
+    }
+    .footer-cta p { opacity: 0.88; margin-bottom: 22px; font-size: 1rem; }
+    .btn-white {
+      background: #fff;
+      color: var(--clr-accent);
+      font-weight: 800;
+    }
+    .btn-white:hover {
+      background: #EEF0FF;
+      transform: translateY(-2px);
+    }
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 18px;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.75);
+      text-decoration: none;
+    }
+    .back-link:hover { color: #fff; }
+
+    /* ── Divider ── */
+    hr { border: none; border-top: 2px solid var(--clr-dot); margin: 40px 0; }
+
+    /* ── Animations ── */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Stagger cards */
+    .card:nth-child(1) { animation-delay: 0ms; }
+    .card:nth-child(2) { animation-delay: 80ms; }
+    .card:nth-child(3) { animation-delay: 160ms; }
+    .card:nth-child(4) { animation-delay: 240ms; }
+    .example-card:nth-child(1) { animation-delay: 0ms; }
+    .example-card:nth-child(2) { animation-delay: 80ms; }
+    .example-card:nth-child(3) { animation-delay: 160ms; }
+    .example-card:nth-child(4) { animation-delay: 240ms; }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      .page-wrap { padding: 16px 14px 48px; }
+      .example-body { padding: 16px 16px; }
+      .footer-cta { padding: 28px 20px; }
+    }
+  </style>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="page-wrap">
+
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="index.html">🏠 Home</a>
+    <span>›</span>
+    <a href="index.html#grade-3-math">Grade 3 Math</a>
+    <span>›</span>
+    <span>Multiplication Tables</span>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-badges">
+      <span class="badge badge-solid">Grade 3</span>
+      <span class="badge badge-outline">Mathematics ✖️</span>
+    </div>
+    <h1>Multiplication Tables</h1>
+    <p class="hero-intro">In this guide, you'll learn how to read, understand, and recall multiplication tables from 2 to 10 — and how to use them to solve problems fast.</p>
+    <div class="hero-meta">
+      <span class="meta-pill">⏱ ~5 min read</span>
+      <a href="math-grade3-multiplication-tables-worksheet.html" class="btn btn-primary">📝 Jump to Worksheet →</a>
+    </div>
+  </header>
+
+  <!-- Section 1: What is it? -->
+  <section aria-labelledby="what-heading">
+    <p class="section-label">Section 1</p>
+    <h2 class="section-title" id="what-heading">What are Multiplication Tables?</h2>
+
+    <div class="card">
+      <p>Multiplication is a fast way to add the <strong>same number many times</strong>. Instead of writing 5 + 5 + 5 + 5, we can just say <strong>4 × 5 = 20</strong>.</p>
+      <p>A <strong>multiplication table</strong> (also called a times table) lists all the products for one number multiplied by 1, 2, 3 … 10. Learning these by heart means you can solve problems instantly — no counting needed!</p>
+      <p>The two numbers being multiplied are called <strong>factors</strong>, and the result is called the <strong>product</strong>.</p>
+    </div>
+
+    <!-- Visual Aid: Multiplication Grid -->
+    <div class="visual-wrap">
+      <div class="mult-grid-container">
+        <table class="mult-grid" aria-label="Multiplication table 1 to 10">
+          <thead>
+            <tr>
+              <th class="corner">×</th>
+              <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th>
+              <th>6</th><th>7</th><th>8</th><th>9</th><th>10</th>
+            </tr>
+          </thead>
+          <tbody id="grid-body"></tbody>
+        </table>
+      </div>
+    </div>
+    <p class="visual-caption">A full multiplication grid for 1–10. Highlighted cells (blue) show the table of 5 — find any row or column by its header!</p>
+  </section>
+
+  <hr />
+
+  <!-- Section 2: Step-by-step -->
+  <section aria-labelledby="method-heading">
+    <p class="section-label">Section 2</p>
+    <h2 class="section-title" id="method-heading">Step-by-Step Method</h2>
+
+    <div class="card-tint">
+      <div class="formula-box">
+        <div class="formula-text">Factor × Factor = Product</div>
+        <div class="formula-label">e.g. &nbsp; 6 × 7 = 42</div>
+      </div>
+
+      <ol class="steps" aria-label="How to use multiplication tables">
+        <li class="step-item">
+          <div class="step-num" aria-hidden="true">1</div>
+          <div class="step-text"><strong>Read the problem.</strong> Find the two numbers (factors) being multiplied. E.g. "What is 7 × 8?"</div>
+        </li>
+        <li class="step-item">
+          <div class="step-num" aria-hidden="true">2</div>
+          <div class="step-text"><strong>Find the row.</strong> In the times table grid, find the row for the first factor (7). Alternatively, choose the smaller number's table.</div>
+        </li>
+        <li class="step-item">
+          <div class="step-num" aria-hidden="true">3</div>
+          <div class="step-text"><strong>Find the column.</strong> Move along that row until you reach the column for the second factor (8).</div>
+        </li>
+        <li class="step-item">
+          <div class="step-num" aria-hidden="true">4</div>
+          <div class="step-text"><strong>Read the product.</strong> The number where the row and column meet is your answer. 7 × 8 = <strong>56</strong>.</div>
+        </li>
+        <li class="step-item">
+          <div class="step-num" aria-hidden="true">5</div>
+          <div class="step-text"><strong>Check with the flip.</strong> Multiplication works both ways — if 7 × 8 = 56, then 8 × 7 = 56 too. This is called the <strong>commutative property</strong>.</div>
+        </li>
+      </ol>
+
+      <div class="formula-box" style="margin-top:12px;">
+        <div class="formula-text">a × b = b × a</div>
+        <div class="formula-label">The order of factors doesn't change the product</div>
+      </div>
+    </div>
+  </section>
+
+  <hr />
+
+  <!-- Section 3: Worked Examples -->
+  <section aria-labelledby="examples-heading">
+    <p class="section-label">Section 3</p>
+    <h2 class="section-title" id="examples-heading">Worked Examples</h2>
+
+    <!-- Example 1 -->
+    <div class="example-card">
+      <div class="example-header">Example 1 — Easy: Table of 2</div>
+      <div class="example-body">
+        <div class="example-problem">What is 2 × 6?</div>
+        <div class="example-working">
+          <div class="working-line">2 × 6 <span>means "2 groups of 6"</span></div>
+          <div class="working-line">= 6 + 6 <span>adding two sixes together</span></div>
+          <div class="working-line">= 12</div>
+        </div>
+        <span class="answer-chip">✅ Answer: 12</span>
+      </div>
+    </div>
+
+    <!-- Example 2 -->
+    <div class="example-card">
+      <div class="example-header">Example 2 — Easy: Table of 5</div>
+      <div class="example-body">
+        <div class="example-problem">What is 5 × 7?</div>
+        <div class="example-working">
+          <div class="working-line">5 × 7 <span>means "5 groups of 7"</span></div>
+          <div class="working-line">Tip: multiples of 5 always end in 0 or 5</div>
+          <div class="working-line">5, 10, 15, 20, 25, 30, 35 <span>← count 7 steps</span></div>
+          <div class="working-line">= 35</div>
+        </div>
+        <span class="answer-chip">✅ Answer: 35</span>
+      </div>
+    </div>
+
+    <!-- Example 3 -->
+    <div class="example-card">
+      <div class="example-header">Example 3 — Medium: Table of 9</div>
+      <div class="example-body">
+        <div class="example-problem">What is 9 × 8?</div>
+        <div class="example-working">
+          <div class="working-line">9 × 8 <span>use the finger trick or commutative property</span></div>
+          <div class="working-line">= 8 × 9 <span>same answer either way</span></div>
+          <div class="working-line">Tip: 9 × n = (10 × n) − n</div>
+          <div class="working-line">= (10 × 8) − 8 = 80 − 8 = 72</div>
+        </div>
+        <span class="answer-chip">✅ Answer: 72</span>
+      </div>
+    </div>
+
+    <!-- Example 4 — Reverse / word problem -->
+    <div class="example-card">
+      <div class="example-header">Example 4 — Hard: Missing Factor (Reverse Question)</div>
+      <div class="example-body">
+        <div class="example-problem">? × 8 = 56 &nbsp; What is the missing number?</div>
+        <div class="example-working">
+          <div class="working-line">We need to find which number × 8 gives 56</div>
+          <div class="working-line">Think: 8 × 1=8, 8×2=16, 8×3=24, 8×4=32,</div>
+          <div class="working-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8×5=40, 8×6=48, 8×7=56 ✓</div>
+          <div class="working-line">So ? = 7</div>
+        </div>
+        <span class="answer-chip">✅ Answer: 7</span>
+      </div>
+    </div>
+
+    <!-- Example 5 — Word problem -->
+    <div class="example-card">
+      <div class="example-header">Example 5 — Word Problem: Equal Groups</div>
+      <div class="example-body">
+        <div class="example-problem">There are 6 bags. Each bag has 9 apples. How many apples are there in total?</div>
+        <div class="example-working">
+          <div class="working-line">Equal groups → use multiplication</div>
+          <div class="working-line">Number of groups × size of each group</div>
+          <div class="working-line">= 6 × 9</div>
+          <div class="working-line">= 54</div>
+        </div>
+        <span class="answer-chip">✅ Answer: 54 apples</span>
+      </div>
+    </div>
+  </section>
+
+  <hr />
+
+  <!-- Section 4: Watch Out -->
+  <section aria-labelledby="watchout-heading">
+    <p class="section-label">Section 4</p>
+    <h2 class="section-title" id="watchout-heading">Watch Out! ⚠️</h2>
+
+    <div class="warning-box">
+      <h3>Common Mistakes to Avoid</h3>
+      <ul class="warning-list">
+        <li>
+          <span class="wrong">❌ Confusing multiplication with addition:</span> Writing 4 × 3 = 7 (adding instead of multiplying)<br>
+          <span class="right">✅ Remember: 4 × 3 means 4 groups of 3 = 3 + 3 + 3 + 3 = 12</span>
+        </li>
+        <li>
+          <span class="wrong">❌ Skipping a step in skip counting:</span> For 5 × 6, counting "5, 10, 15, 25, 30" (jumped 20!)<br>
+          <span class="right">✅ Count carefully: 5, 10, 15, 20, 25, 30 — that's 6 steps = 30</span>
+        </li>
+        <li>
+          <span class="wrong">❌ Thinking order matters:</span> Believing 3 × 7 is different from 7 × 3<br>
+          <span class="right">✅ Multiplication is commutative: 3 × 7 = 7 × 3 = 21. Use whichever order you know better!</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <hr />
+
+  <!-- Section 5: Quick Reference -->
+  <section aria-labelledby="ref-heading">
+    <p class="section-label">Section 5</p>
+    <h2 class="section-title" id="ref-heading">Quick Reference</h2>
+
+    <div class="card-tint">
+      <strong style="font-size:0.9rem; color:var(--clr-navy);">Key Formula</strong>
+      <div class="formula-box" style="margin:12px 0;">
+        <div class="formula-text">Factor × Factor = Product</div>
+      </div>
+
+      <div class="ref-grid">
+        <div class="ref-item">
+          <div class="ref-term">Multiplication</div>
+          <div class="ref-def">Repeated addition of equal groups.</div>
+        </div>
+        <div class="ref-item">
+          <div class="ref-term">Factor</div>
+          <div class="ref-def">Each number being multiplied (e.g. in 4×3, both 4 and 3 are factors).</div>
+        </div>
+        <div class="ref-item">
+          <div class="ref-term">Product</div>
+          <div class="ref-def">The result of multiplying two factors (e.g. 4×3=12; 12 is the product).</div>
+        </div>
+        <div class="ref-item">
+          <div class="ref-term">Commutative Property</div>
+          <div class="ref-def">a × b = b × a. Order of factors doesn't matter.</div>
+        </div>
+        <div class="ref-item">
+          <div class="ref-term">Identity Property</div>
+          <div class="ref-def">Any number × 1 = itself. e.g. 7 × 1 = 7.</div>
+        </div>
+        <div class="ref-item">
+          <div class="ref-term">Zero Property</div>
+          <div class="ref-def">Any number × 0 = 0. e.g. 9 × 0 = 0.</div>
+        </div>
+      </div>
+
+      <div class="mini-table-wrap">
+        <table class="mini-table" aria-label="Quick multiplication reference table">
+          <thead>
+            <tr>
+              <th>×</th>
+              <th>2</th><th>3</th><th>4</th><th>5</th><th>6</th>
+              <th>7</th><th>8</th><th>9</th><th>10</th>
+            </tr>
+          </thead>
+          <tbody id="mini-grid-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer CTA -->
+  <div class="footer-cta" role="complementary" aria-label="Start worksheet">
+    <h2>Ready to practice? Let's go! 🚀</h2>
+    <p>Test your times table knowledge with 10 interactive questions — Easy or Hard mode.</p>
+    <a href="math-grade3-multiplication-tables-worksheet.html" class="btn btn-white">📝 Start Worksheet →</a>
+    <a href="index.html#grade-3-math" class="back-link">← Back to Grade 3 Math topics</a>
+  </div>
+
+</div><!-- /page-wrap -->
+
+<script>
+  /* Build multiplication grid */
+  (function buildGrid() {
+    const tbody = document.getElementById('grid-body');
+    for (let r = 1; r <= 10; r++) {
+      const tr = document.createElement('tr');
+      // Row header
+      const th = document.createElement('th');
+      th.textContent = r;
+      tr.appendChild(th);
+      for (let c = 1; c <= 10; c++) {
+        const td = document.createElement('td');
+        td.textContent = r * c;
+        if (r === 5 || c === 5) td.classList.add('highlight');
+        tr.appendChild(td);
+      }
+      tbody.appendChild(tr);
+    }
+  })();
+
+  /* Build mini reference grid */
+  (function buildMiniGrid() {
+    const tbody = document.getElementById('mini-grid-body');
+    const cols = [2,3,4,5,6,7,8,9,10];
+    for (let r = 1; r <= 10; r++) {
+      const tr = document.createElement('tr');
+      const th = document.createElement('th');
+      th.textContent = r;
+      th.style.background = 'var(--clr-accent)';
+      th.style.color = '#fff';
+      tr.appendChild(th);
+      cols.forEach(c => {
+        const td = document.createElement('td');
+        td.textContent = r * c;
+        tr.appendChild(td);
+      });
+      tbody.appendChild(tr);
+    }
+  })();
+</script>
+</body>
+</html>

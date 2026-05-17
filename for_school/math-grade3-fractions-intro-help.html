@@ -1,0 +1,321 @@
+﻿<!-- Math | Grade 3 | Fractions Intro | help -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fractions Intro — Grade 3 Math | School Prep</title>
+  <meta name="description" content="Introduction to fractions for Grade 3. Learn what fractions mean, how to read ½ ⅓ ¼ and more, with visual fraction bars and worked examples." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{--clr-bg:#ffffff;--clr-dot:#E8EDF5;--clr-accent:#4361EE;--clr-accent-dark:#3451D1;--clr-navy:#1A1A3E;--clr-tint:#EEF0FF;--clr-green:#2DC653;--clr-green-bg:#F0FFF4;--clr-red:#E63946;--clr-red-bg:#FFF0F1;--clr-amber:#F4A261;--clr-amber-bg:#FFFBF5;--clr-text:#2D2D4E;--clr-muted:#6B7280;--font-display:'Nunito',sans-serif;--font-mono:'JetBrains Mono',monospace;--radius:12px;--shadow:0 2px 16px rgba(67,97,238,0.08);--shadow-hover:0 8px 28px rgba(67,97,238,0.18)}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:var(--font-display);background-color:var(--clr-bg);background-image:radial-gradient(circle,var(--clr-dot) 1.5px,transparent 1.5px);background-size:20px 20px;color:var(--clr-text);line-height:1.7;min-height:100vh}
+    .page-wrap{max-width:860px;margin:0 auto;padding:24px 20px 60px}
+    .breadcrumb{display:flex;align-items:center;gap:6px;font-size:0.82rem;color:var(--clr-muted);margin-bottom:28px;flex-wrap:wrap}
+    .breadcrumb a{color:var(--clr-accent);text-decoration:none;font-weight:600}.breadcrumb a:hover{text-decoration:underline}
+    .hero{margin-bottom:40px}.hero-badges{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+    .badge{font-size:0.78rem;font-weight:700;padding:4px 14px;border-radius:50px;letter-spacing:0.03em}
+    .badge-solid{background:var(--clr-accent);color:#fff}.badge-outline{border:2px solid var(--clr-accent);color:var(--clr-accent);background:transparent}
+    .hero h1{font-size:clamp(2rem,5vw,3rem);font-weight:900;color:var(--clr-navy);line-height:1.15;margin-bottom:12px}
+    .hero-intro{font-size:1.05rem;color:var(--clr-muted);max-width:620px;margin-bottom:18px}
+    .hero-meta{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+    .meta-pill{font-size:0.82rem;color:var(--clr-muted);font-weight:600}
+    .btn{display:inline-flex;align-items:center;gap:6px;font-family:var(--font-display);font-weight:700;font-size:0.92rem;padding:10px 26px;border-radius:50px;text-decoration:none;cursor:pointer;border:none;transition:background 0.18s,color 0.18s,transform 0.18s,box-shadow 0.18s}
+    .btn-primary{background:var(--clr-accent);color:#fff}.btn-primary:hover{background:var(--clr-accent-dark);transform:translateY(-2px);box-shadow:0 6px 20px rgba(67,97,238,0.25)}
+    .btn-white{background:#fff;color:var(--clr-accent);font-weight:800}.btn-white:hover{background:#EEF0FF;transform:translateY(-2px)}
+    section{margin-bottom:48px}
+    .section-label{font-size:0.75rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--clr-accent);margin-bottom:10px}
+    .section-title{font-size:1.55rem;font-weight:800;color:var(--clr-navy);margin-bottom:16px}
+    .card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);border-left:5px solid var(--clr-accent);padding:24px 28px;transition:transform 0.2s,box-shadow 0.2s;animation:fadeInUp 0.4s ease both}
+    .card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}.card+.card{margin-top:16px}.card p+p{margin-top:10px}
+    .card-tint{background:var(--clr-tint);border-left:5px solid var(--clr-accent);border-radius:var(--radius);padding:24px 28px;animation:fadeInUp 0.4s ease both}
+    .formula-box{border:2px solid var(--clr-accent);border-radius:10px;padding:16px 24px;text-align:center;margin:20px 0;background:var(--clr-tint)}
+    .formula-text{font-family:var(--font-mono);font-size:1.3rem;font-weight:700;color:var(--clr-accent)}
+    .formula-label{font-size:0.78rem;color:var(--clr-muted);margin-top:4px}
+    .steps{list-style:none}.step-item{display:flex;gap:16px;align-items:flex-start;margin-bottom:16px}
+    .step-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;background:var(--clr-accent);color:#fff;font-weight:800;font-size:0.9rem;display:flex;align-items:center;justify-content:center}
+    .step-text{padding-top:4px;font-size:0.97rem}.step-text strong{color:var(--clr-navy)}
+    .example-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;margin-bottom:16px;border-left:5px solid var(--clr-accent);animation:fadeInUp 0.4s ease both;transition:transform 0.2s,box-shadow 0.2s}
+    .example-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+    .example-header{background:#F3F4F8;padding:10px 20px;font-weight:800;font-size:0.82rem;color:var(--clr-muted);letter-spacing:0.06em;text-transform:uppercase}
+    .example-body{padding:20px 24px}
+    .example-problem{font-family:var(--font-mono);font-size:1.05rem;font-weight:600;color:var(--clr-navy);margin-bottom:14px}
+    .example-working{border-left:3px solid var(--clr-tint);padding-left:14px;margin-bottom:14px}
+    .working-line{font-family:var(--font-mono);font-size:0.9rem;color:var(--clr-text);margin-bottom:6px}
+    .working-line span{color:var(--clr-muted);font-weight:400;margin-left:8px}
+    .answer-chip{display:inline-flex;align-items:center;gap:6px;background:var(--clr-green-bg);border:1.5px solid var(--clr-green);color:#1a7a3a;border-radius:50px;padding:6px 16px;font-weight:700;font-size:0.9rem}
+    .warning-box{background:var(--clr-amber-bg);border-left:5px solid var(--clr-amber);border-radius:var(--radius);padding:20px 24px}
+    .warning-box h3{font-size:1rem;font-weight:800;color:#8B4A00;margin-bottom:12px}
+    .warning-list{list-style:none}.warning-list li{margin-bottom:10px;font-size:0.93rem;line-height:1.55}
+    .warning-list .wrong{color:var(--clr-red);font-weight:700}.warning-list .right{color:var(--clr-green);font-weight:700}
+    .ref-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+    @media(max-width:560px){.ref-grid{grid-template-columns:1fr}}
+    .ref-item{background:#fff;border-radius:10px;padding:16px;box-shadow:0 1px 8px rgba(67,97,238,0.07)}
+    .ref-term{font-weight:800;font-size:0.85rem;color:var(--clr-accent);margin-bottom:4px}
+    .ref-def{font-size:0.88rem;color:var(--clr-text)}
+    .footer-cta{background:linear-gradient(135deg,var(--clr-accent) 0%,#6C63FF 100%);border-radius:var(--radius);padding:36px 32px;text-align:center;color:#fff;margin-top:56px}
+    .footer-cta h2{font-size:1.6rem;font-weight:900;margin-bottom:8px}
+    .footer-cta p{opacity:0.88;margin-bottom:22px;font-size:1rem}
+    .back-link{display:block;text-align:center;margin-top:18px;font-size:0.85rem;color:rgba(255,255,255,0.75);text-decoration:none}.back-link:hover{color:#fff}
+    hr{border:none;border-top:2px solid var(--clr-dot);margin:40px 0}
+    /* Fraction bars */
+    .frac-bars{display:flex;flex-direction:column;gap:14px;margin:24px 0;max-width:500px;margin-left:auto;margin-right:auto}
+    .frac-row{display:flex;align-items:center;gap:12px}
+    .frac-label{font-family:var(--font-mono);font-weight:700;color:var(--clr-navy);font-size:1rem;min-width:36px;text-align:right}
+    .frac-bar{flex:1;display:flex;border-radius:6px;overflow:hidden;height:34px;border:2px solid #C4C9DC}
+    .frac-part{flex:1;display:flex;align-items:center;justify-content:center;font-size:0.72rem;font-weight:700;border-right:1px solid rgba(255,255,255,0.4)}
+    .frac-part:last-child{border-right:none}
+    .frac-part.filled{background:var(--clr-accent);color:#fff}
+    .frac-part.empty{background:#F0F2FF;color:var(--clr-muted)}
+    .visual-caption{text-align:center;font-size:0.8rem;color:var(--clr-muted);margin-top:10px;font-style:italic}
+    /* fraction notation */
+    .frac-notation{display:inline-flex;flex-direction:column;align-items:center;font-family:var(--font-mono);font-weight:700;line-height:1;font-size:1.1rem;color:var(--clr-accent);vertical-align:middle}
+    .frac-notation .num{border-bottom:2px solid var(--clr-accent);padding-bottom:2px;min-width:20px;text-align:center}
+    .frac-notation .den{padding-top:2px;min-width:20px;text-align:center}
+    @keyframes fadeInUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+    @media(max-width:600px){.page-wrap{padding:16px 14px 48px}.example-body{padding:16px}.footer-cta{padding:28px 20px}}
+  </style>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="page-wrap">
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="index.html">🏠 Home</a><span>›</span>
+    <a href="index.html#grade-3-math">Grade 3 Math</a><span>›</span>
+    <span>Fractions Intro</span>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-badges">
+      <span class="badge badge-solid">Grade 3</span>
+      <span class="badge badge-outline">Mathematics 🍕</span>
+    </div>
+    <h1>Fractions Intro</h1>
+    <p class="hero-intro">In this guide, you'll learn what fractions are, how to read and write ½, ⅓, ¼ and more, and how to compare fractions using visual fraction bars.</p>
+    <div class="hero-meta">
+      <span class="meta-pill">⏱ ~5 min read</span>
+      <a href="math-grade3-fractions-intro-worksheet.html" class="btn btn-primary">📝 Jump to Worksheet →</a>
+    </div>
+  </header>
+
+  <section aria-labelledby="what-heading">
+    <p class="section-label">Section 1</p>
+    <h2 class="section-title" id="what-heading">What is a Fraction?</h2>
+    <div class="card">
+      <p>A <strong>fraction</strong> represents a <strong>part of a whole</strong>. When you cut a pizza into 4 equal slices and eat 1, you've eaten <strong>¼ (one quarter)</strong> of the pizza.</p>
+      <p>Every fraction has two parts: the <strong>numerator</strong> (top number) tells you how many parts you have. The <strong>denominator</strong> (bottom number) tells you how many equal parts the whole is split into.</p>
+      <p>The denominator must always be more than zero, and both parts must be whole numbers.</p>
+    </div>
+
+    <!-- Fraction bars visual -->
+    <div class="frac-bars" role="img" aria-label="Fraction bars showing halves, thirds, quarters and eighths">
+      <div class="frac-row">
+        <div class="frac-label">½</div>
+        <div class="frac-bar">
+          <div class="frac-part filled">½</div>
+          <div class="frac-part empty">½</div>
+        </div>
+      </div>
+      <div class="frac-row">
+        <div class="frac-label">⅓</div>
+        <div class="frac-bar">
+          <div class="frac-part filled">⅓</div>
+          <div class="frac-part empty">⅓</div>
+          <div class="frac-part empty">⅓</div>
+        </div>
+      </div>
+      <div class="frac-row">
+        <div class="frac-label">¼</div>
+        <div class="frac-bar">
+          <div class="frac-part filled">¼</div>
+          <div class="frac-part empty">¼</div>
+          <div class="frac-part empty">¼</div>
+          <div class="frac-part empty">¼</div>
+        </div>
+      </div>
+      <div class="frac-row">
+        <div class="frac-label">⅛</div>
+        <div class="frac-bar">
+          <div class="frac-part filled">⅛</div>
+          <div class="frac-part empty">⅛</div>
+          <div class="frac-part empty">⅛</div>
+          <div class="frac-part empty">⅛</div>
+          <div class="frac-part empty">⅛</div>
+          <div class="frac-part empty">⅛</div>
+          <div class="frac-part empty">⅛</div>
+          <div class="frac-part empty">⅛</div>
+        </div>
+      </div>
+    </div>
+    <p class="visual-caption">Each bar is one whole. The blue (filled) section shows the fraction. Notice: bigger denominator = smaller piece!</p>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="method-heading">
+    <p class="section-label">Section 2</p>
+    <h2 class="section-title" id="method-heading">Step-by-Step Method</h2>
+    <div class="card-tint">
+      <div class="formula-box">
+        <div class="formula-text">Numerator / Denominator</div>
+        <div class="formula-label">Numerator = parts you have &nbsp;|&nbsp; Denominator = total equal parts</div>
+      </div>
+      <ol class="steps">
+        <li class="step-item">
+          <div class="step-num">1</div>
+          <div class="step-text"><strong>Find the denominator first.</strong> Count the total number of equal parts the shape or set is divided into. This is the bottom number.</div>
+        </li>
+        <li class="step-item">
+          <div class="step-num">2</div>
+          <div class="step-text"><strong>Find the numerator.</strong> Count how many parts are shaded, selected, or described. This is the top number.</div>
+        </li>
+        <li class="step-item">
+          <div class="step-num">3</div>
+          <div class="step-text"><strong>Write the fraction.</strong> Place the numerator above a line, denominator below. E.g. 2 parts out of 5 = 2/5.</div>
+        </li>
+        <li class="step-item">
+          <div class="step-num">4</div>
+          <div class="step-text"><strong>Comparing fractions:</strong> When denominators are the same, the bigger numerator = bigger fraction. When numerators are the same, the smaller denominator = bigger fraction.</div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="examples-heading">
+    <p class="section-label">Section 3</p>
+    <h2 class="section-title" id="examples-heading">Worked Examples</h2>
+
+    <div class="example-card">
+      <div class="example-header">Example 1 — Reading a Fraction</div>
+      <div class="example-body">
+        <div class="example-problem">A rectangle is divided into 4 equal parts. 3 parts are shaded. What fraction is shaded?</div>
+        <div class="example-working">
+          <div class="working-line">Total equal parts = 4 <span>← denominator</span></div>
+          <div class="working-line">Shaded parts = 3 <span>← numerator</span></div>
+          <div class="working-line">Fraction = 3/4</div>
+        </div>
+        <span class="answer-chip">✅ Answer: ¾ (three quarters)</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">Example 2 — Fraction of a Set</div>
+      <div class="example-body">
+        <div class="example-problem">There are 6 apples. 2 of them are red. What fraction are red?</div>
+        <div class="example-working">
+          <div class="working-line">Total apples = 6 <span>← denominator</span></div>
+          <div class="working-line">Red apples = 2 <span>← numerator</span></div>
+          <div class="working-line">Fraction = 2/6</div>
+        </div>
+        <span class="answer-chip">✅ Answer: 2/6 (two sixths)</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">Example 3 — Comparing Fractions (Same Denominator)</div>
+      <div class="example-body">
+        <div class="example-problem">Which is greater: 3/8 or 5/8?</div>
+        <div class="example-working">
+          <div class="working-line">Same denominator (8), so compare numerators</div>
+          <div class="working-line">3 &lt; 5</div>
+          <div class="working-line">So 5/8 &gt; 3/8</div>
+        </div>
+        <span class="answer-chip">✅ Answer: 5/8 is greater</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">Example 4 — Comparing Fractions (Same Numerator)</div>
+      <div class="example-body">
+        <div class="example-problem">Which is greater: ½ or ¼?</div>
+        <div class="example-working">
+          <div class="working-line">Same numerator (1), so compare denominators</div>
+          <div class="working-line">Smaller denominator = larger piece</div>
+          <div class="working-line">2 &lt; 4, so ½ &gt; ¼</div>
+        </div>
+        <span class="answer-chip">✅ Answer: ½ is greater</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">Example 5 — Word Problem</div>
+      <div class="example-body">
+        <div class="example-problem">Mia ate 2 slices of a pizza cut into 6 equal slices. What fraction of the pizza did she eat?</div>
+        <div class="example-working">
+          <div class="working-line">Total slices = 6 <span>← denominator</span></div>
+          <div class="working-line">Slices eaten = 2 <span>← numerator</span></div>
+          <div class="working-line">Fraction eaten = 2/6</div>
+        </div>
+        <span class="answer-chip">✅ Answer: 2/6 of the pizza</span>
+      </div>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="watchout-heading">
+    <p class="section-label">Section 4</p>
+    <h2 class="section-title" id="watchout-heading">Watch Out! ⚠️</h2>
+    <div class="warning-box">
+      <h3>Common Mistakes to Avoid</h3>
+      <ul class="warning-list">
+        <li>
+          <span class="wrong">❌ Swapping numerator and denominator:</span> Writing 4/3 instead of 3/4<br>
+          <span class="right">✅ Numerator (top) = parts you have. Denominator (bottom) = total parts.</span>
+        </li>
+        <li>
+          <span class="wrong">❌ Thinking bigger denominator = bigger fraction:</span> Saying ⅛ &gt; ½<br>
+          <span class="right">✅ More equal parts means each part is smaller. ½ is always bigger than ⅛.</span>
+        </li>
+        <li>
+          <span class="wrong">❌ Parts must be equal:</span> Cutting a shape unevenly and still calling it ½<br>
+          <span class="right">✅ For fractions to work, ALL parts of the whole must be the same size.</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="ref-heading">
+    <p class="section-label">Section 5</p>
+    <h2 class="section-title" id="ref-heading">Quick Reference</h2>
+    <div class="card-tint">
+      <strong style="font-size:0.9rem;color:var(--clr-navy)">Key Fractions to Know</strong>
+      <div class="ref-grid" style="margin-top:16px">
+        <div class="ref-item"><div class="ref-term">½ (one half)</div><div class="ref-def">1 part out of 2 equal parts.</div></div>
+        <div class="ref-item"><div class="ref-term">⅓ (one third)</div><div class="ref-def">1 part out of 3 equal parts.</div></div>
+        <div class="ref-item"><div class="ref-term">¼ (one quarter)</div><div class="ref-def">1 part out of 4 equal parts.</div></div>
+        <div class="ref-item"><div class="ref-term">¾ (three quarters)</div><div class="ref-def">3 parts out of 4 equal parts.</div></div>
+        <div class="ref-item"><div class="ref-term">Numerator</div><div class="ref-def">Top number — how many parts you have.</div></div>
+        <div class="ref-item"><div class="ref-term">Denominator</div><div class="ref-def">Bottom number — total equal parts.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer-cta">
+    <h2>Ready to practice? Let's go! 🚀</h2>
+    <p>Test your fraction knowledge with 10 interactive questions — Easy or Hard mode.</p>
+    <a href="math-grade3-fractions-intro-worksheet.html" class="btn btn-white">📝 Start Worksheet →</a>
+    <a href="index.html#grade-3-math" class="back-link">← Back to Grade 3 Math topics</a>
+  </div>
+
+</div>
+</body>
+</html>

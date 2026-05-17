@@ -1,0 +1,274 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order of Operations (BODMAS) – Grade 6 Math Help</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --ink: #1a1f36; --muted: #5a6076; --accent: #4361EE; --accent-dark: #3451d1; --green: #06d6a0; --orange: #fb8500; --red: #ef233c; --bg: #f4f6fb; --card: #ffffff; --border: #e2e6f0; --radius: 14px; --mono: 'JetBrains Mono', monospace; }
+    body { font-family: 'Nunito', sans-serif; background-color: var(--bg); background-image: radial-gradient(circle, #E8EDF5 1.5px, transparent 1.5px); background-size: 20px 20px; color: var(--ink); min-height: 100vh; }
+    header { background: var(--card); border-bottom: 2px solid var(--border); padding: 0 24px; }
+    .header-inner { max-width: 860px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 52px; }
+    .logo-link { text-decoration: none; display: flex; align-items: center; } .logo-img { height: 36px; width: auto; display: block; }
+    nav a { font-weight: 700; font-size: 0.85rem; color: var(--muted); text-decoration: none; margin-left: 20px; }
+    nav a:hover { color: var(--accent); }
+    .breadcrumb { max-width: 860px; margin: 0 auto; padding: 14px 24px 0; font-size: 0.8rem; color: var(--muted); }
+    .breadcrumb a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    .breadcrumb span { margin: 0 6px; }
+    .hero { max-width: 860px; margin: 0 auto; padding: 28px 24px 0; display: flex; align-items: center; gap: 20px; }
+    .hero-icon { width: 72px; height: 72px; border-radius: 20px; background: var(--accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 2rem; }
+    .hero h1 { font-size: 1.9rem; font-weight: 900; line-height: 1.15; }
+    .hero p { font-size: 1rem; color: var(--muted); margin-top: 6px; font-weight: 600; }
+    main { max-width: 860px; margin: 28px auto 60px; padding: 0 24px; display: flex; flex-direction: column; gap: 24px; }
+    .card { background: var(--card); border-radius: var(--radius); border: 2px solid var(--border); padding: 28px; }
+    .card h2 { font-size: 1.25rem; font-weight: 900; color: var(--accent); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+    .card p { font-size: 0.95rem; line-height: 1.7; color: var(--ink); margin-bottom: 12px; }
+    .card p:last-child { margin-bottom: 0; }
+    .bodmas-row { display: flex; gap: 10px; flex-wrap: wrap; margin: 16px 0; }
+    .bodmas-pill { display: flex; flex-direction: column; align-items: center; border-radius: 14px; padding: 14px 18px; min-width: 90px; flex: 1; }
+    .bodmas-pill.b { background: #eef1fd; border: 2px solid #4361EE; }
+    .bodmas-pill.o { background: #fff4e6; border: 2px solid #fb8500; }
+    .bodmas-pill.d { background: #e8faf4; border: 2px solid #06d6a0; }
+    .bodmas-pill.m { background: #e8faf4; border: 2px solid #06d6a0; }
+    .bodmas-pill.a { background: #fff0f0; border: 2px solid #ef233c; }
+    .bodmas-pill.s { background: #fff0f0; border: 2px solid #ef233c; }
+    .bodmas-letter { font-size: 1.8rem; font-weight: 900; }
+    .bodmas-pill.b .bodmas-letter { color: #4361EE; }
+    .bodmas-pill.o .bodmas-letter { color: #fb8500; }
+    .bodmas-pill.d .bodmas-letter,.bodmas-pill.m .bodmas-letter { color: #05a07a; }
+    .bodmas-pill.a .bodmas-letter,.bodmas-pill.s .bodmas-letter { color: #ef233c; }
+    .bodmas-word { font-size: 0.72rem; font-weight: 800; color: var(--muted); text-align: center; margin-top: 4px; }
+    .formula-box { background: #eef1fd; border-left: 4px solid var(--accent); border-radius: 10px; padding: 16px 20px; margin: 16px 0; font-family: var(--mono); font-size: 1rem; font-weight: 700; color: var(--accent-dark); }
+    .formula-box .label { font-family: 'Nunito', sans-serif; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-bottom: 6px; }
+    .examples { display: flex; flex-direction: column; gap: 16px; }
+    .example { border: 2px solid var(--border); border-radius: 12px; padding: 18px 20px; background: #fafbff; }
+    .example-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+    .ex-num { width: 32px; height: 32px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 900; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .example-header h3 { font-size: 1rem; font-weight: 800; }
+    .ex-step { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; font-size: 0.9rem; }
+    .ex-step-num { background: var(--green); color: #fff; border-radius: 50%; width: 22px; height: 22px; font-size: 0.75rem; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    .ex-step p { line-height: 1.5; }
+    code { font-family: var(--mono); background: #eef1fd; border-radius: 5px; padding: 1px 6px; font-size: 0.88em; color: var(--accent-dark); }
+    .answer-box { background: #e8faf4; border: 2px solid var(--green); border-radius: 8px; padding: 10px 14px; margin-top: 10px; font-weight: 800; font-size: 0.95rem; color: #05a07a; }
+    .watch-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .watch-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.92rem; line-height: 1.55; }
+    .watch-badge { background: #fff0f0; color: var(--red); border: 2px solid #ffd6d6; border-radius: 8px; padding: 3px 9px; font-weight: 800; font-size: 0.78rem; flex-shrink: 0; margin-top: 2px; }
+    .ref-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    .ref-table th, .ref-table td { border: 2px solid var(--border); padding: 10px 14px; font-size: 0.88rem; text-align: left; }
+    .ref-table th { background: #eef1fd; font-weight: 800; color: var(--accent-dark); }
+    .cta-bar { background: linear-gradient(135deg, #4361EE 0%, #3a0ca3 100%); border-radius: var(--radius); padding: 28px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .cta-bar h2 { color: #fff; font-size: 1.2rem; font-weight: 900; }
+    .cta-bar p { color: rgba(255,255,255,.8); font-size: 0.9rem; margin-top: 4px; font-weight: 600; }
+    .cta-btn { background: #fff; color: var(--accent); border-radius: 10px; padding: 12px 24px; font-weight: 900; font-size: 1rem; text-decoration: none; white-space: nowrap; transition: transform .15s; }
+    .cta-btn:hover { transform: scale(1.04); }
+    footer { text-align: center; padding: 24px; font-size: 0.8rem; color: var(--muted); font-weight: 600; }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header>
+  <div class="header-inner">
+    <a class="logo-link" href="../index.html"><img src="../logo.png" alt="LearnPad" class="logo-img" /></a>
+    <nav><a href="../index.html">Home</a><a href="index.html">School</a><a href="../learnings/">Tech in Urdu</a></nav>
+  </div>
+</header>
+<div class="breadcrumb">
+  <a href="index.html">Home</a><span>›</span>
+  <a href="index.html#grade6">Grade 6 Math</a><span>›</span>
+  Order of Operations (BODMAS)
+</div>
+<div class="hero">
+  <div class="hero-icon">🧮</div>
+  <div>
+    <h1>Order of Operations</h1>
+    <p>Grade 6 Math &nbsp;·&nbsp; BODMAS — the correct order to calculate</p>
+  </div>
+</div>
+
+<main>
+
+  <!-- BODMAS -->
+  <div class="card">
+    <h2><span>🧮</span> What is BODMAS?</h2>
+    <p><strong>BODMAS</strong> tells you the order in which to perform operations in a calculation. Always follow this order — never just left to right!</p>
+    <div class="bodmas-row">
+      <div class="bodmas-pill b"><div class="bodmas-letter">B</div><div class="bodmas-word">Brackets</div></div>
+      <div class="bodmas-pill o"><div class="bodmas-letter">O</div><div class="bodmas-word">Orders (powers &amp; roots)</div></div>
+      <div class="bodmas-pill d"><div class="bodmas-letter">D</div><div class="bodmas-word">Division</div></div>
+      <div class="bodmas-pill m"><div class="bodmas-letter">M</div><div class="bodmas-word">Multiplication</div></div>
+      <div class="bodmas-pill a"><div class="bodmas-letter">A</div><div class="bodmas-word">Addition</div></div>
+      <div class="bodmas-pill s"><div class="bodmas-letter">S</div><div class="bodmas-word">Subtraction</div></div>
+    </div>
+    <div class="formula-box">
+      <div class="label">Key Priority Rules</div>
+      D and M have equal priority → work left to right<br>
+      A and S have equal priority → work left to right
+    </div>
+  </div>
+
+  <!-- Worked Examples -->
+  <div class="card">
+    <h2><span>✏️</span> Worked Examples</h2>
+    <div class="examples">
+
+      <div class="example">
+        <div class="example-header">
+          <div class="ex-num">1</div>
+          <h3>Calculate: 3 + 4 × 2</h3>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">1</div>
+          <p>Multiplication first (M before A): 4 × 2 = 8</p>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">2</div>
+          <p>Then addition: 3 + 8 = 11</p>
+        </div>
+        <div class="answer-box">3 + 4 × 2 = 11 &nbsp;(NOT 14!)</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header">
+          <div class="ex-num">2</div>
+          <h3>Calculate: (3 + 4) × 2</h3>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">1</div>
+          <p>Brackets first (B): 3 + 4 = 7</p>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">2</div>
+          <p>Then multiplication: 7 × 2 = 14</p>
+        </div>
+        <div class="answer-box">(3 + 4) × 2 = 14</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header">
+          <div class="ex-num">3</div>
+          <h3>Calculate: 20 ÷ 4 + 3²</h3>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">1</div>
+          <p>Orders first (O): 3² = 9</p>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">2</div>
+          <p>Division (D): 20 ÷ 4 = 5</p>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">3</div>
+          <p>Addition (A): 5 + 9 = 14</p>
+        </div>
+        <div class="answer-box">20 ÷ 4 + 3² = 14</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header">
+          <div class="ex-num">4</div>
+          <h3>Calculate: 2 × (8 − 3) + 4² ÷ 8</h3>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">1</div>
+          <p>Brackets: 8 − 3 = 5</p>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">2</div>
+          <p>Orders: 4² = 16</p>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">3</div>
+          <p>Multiply and Divide (left to right): 2 × 5 = 10, &nbsp; 16 ÷ 8 = 2</p>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">4</div>
+          <p>Addition: 10 + 2 = 12</p>
+        </div>
+        <div class="answer-box">2 × (8 − 3) + 4² ÷ 8 = 12</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header">
+          <div class="ex-num">5</div>
+          <h3>Calculate: 18 ÷ 3 × 2</h3>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">1</div>
+          <p>Division and Multiplication have equal priority → work left to right.</p>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">2</div>
+          <p>18 ÷ 3 = 6, then 6 × 2 = 12</p>
+        </div>
+        <div class="answer-box">18 ÷ 3 × 2 = 12 &nbsp;(NOT 3!)</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Watch Out -->
+  <div class="card">
+    <h2><span>⚠️</span> Watch Out!</h2>
+    <ul class="watch-list">
+      <li>
+        <span class="watch-badge">LEFT TO RIGHT</span>
+        When D and M (or A and S) appear together, always work left to right — not right to left!
+      </li>
+      <li>
+        <span class="watch-badge">BRACKETS FIRST</span>
+        Always solve everything inside brackets before anything else, no matter what.
+      </li>
+      <li>
+        <span class="watch-badge">POWERS</span>
+        "Orders" means powers and square roots. Evaluate 3² or √25 before multiply/divide.
+      </li>
+      <li>
+        <span class="watch-badge">COMMON TRAP</span>
+        3 + 4 × 2 ≠ 14. Multiplication happens before addition! The answer is 11.
+      </li>
+    </ul>
+  </div>
+
+  <!-- Quick Reference -->
+  <div class="card">
+    <h2><span>📋</span> Quick Reference</h2>
+    <table class="ref-table">
+      <thead>
+        <tr><th>Priority</th><th>Operation</th><th>Example</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1st</td><td>Brackets ( )</td><td>(2 + 3) → do this first</td></tr>
+        <tr><td>2nd</td><td>Orders (², √)</td><td>2³ = 8 before other ops</td></tr>
+        <tr><td>3rd</td><td>Division ÷ &amp; Multiplication × (left→right)</td><td>8 ÷ 4 × 2 = 4</td></tr>
+        <tr><td>4th</td><td>Addition + &amp; Subtraction − (left→right)</td><td>5 + 3 − 2 = 6</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-bar">
+    <div>
+      <h2>Ready to practise?</h2>
+      <p>Try the interactive worksheet with instant feedback.</p>
+    </div>
+    <a class="cta-btn" href="math-grade6-order-of-operations-worksheet.html">Start Worksheet →</a>
+  </div>
+
+</main>
+<footer>© 2025 LearnBright · Free printable &amp; interactive school worksheets</footer>
+</body>
+</html>

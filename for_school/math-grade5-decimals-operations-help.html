@@ -1,0 +1,271 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Decimals (Operations) – Grade 5 Math Help</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --ink: #1a1f36; --muted: #5a6076; --accent: #4361EE; --accent-dark: #3451d1;
+      --green: #06d6a0; --orange: #fb8500; --red: #ef233c;
+      --bg: #f4f6fb; --card: #ffffff; --border: #e2e6f0; --radius: 14px;
+      --mono: 'JetBrains Mono', monospace;
+    }
+    body { font-family: 'Nunito', sans-serif; background-color: var(--bg); background-image: radial-gradient(circle, #E8EDF5 1.5px, transparent 1.5px); background-size: 20px 20px; color: var(--ink); min-height: 100vh; }
+    header { background: var(--card); border-bottom: 2px solid var(--border); padding: 0 24px; }
+    .header-inner { max-width: 860px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 52px; }
+    .logo-link { text-decoration: none; display: flex; align-items: center; } .logo-img { height: 36px; width: auto; display: block; }
+    nav a { font-weight: 700; font-size: 0.85rem; color: var(--muted); text-decoration: none; margin-left: 20px; }
+    nav a:hover { color: var(--accent); }
+    .breadcrumb { max-width: 860px; margin: 0 auto; padding: 14px 24px 0; font-size: 0.8rem; color: var(--muted); }
+    .breadcrumb a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 6px; }
+    .hero { max-width: 860px; margin: 0 auto; padding: 28px 24px 0; display: flex; align-items: center; gap: 20px; }
+    .hero-icon { width: 72px; height: 72px; border-radius: 20px; background: var(--accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 2rem; }
+    .hero h1 { font-size: 1.9rem; font-weight: 900; line-height: 1.15; }
+    .hero p { font-size: 1rem; color: var(--muted); margin-top: 6px; font-weight: 600; }
+    main { max-width: 860px; margin: 28px auto 60px; padding: 0 24px; display: flex; flex-direction: column; gap: 24px; }
+    .card { background: var(--card); border-radius: var(--radius); border: 2px solid var(--border); padding: 28px; }
+    .card h2 { font-size: 1.25rem; font-weight: 900; color: var(--accent); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+    .card h2 .icon { font-size: 1.3rem; }
+    .card p { font-size: 0.95rem; line-height: 1.7; color: var(--ink); margin-bottom: 12px; }
+    .card p:last-child { margin-bottom: 0; }
+    .formula-box { background: #eef1fd; border-left: 4px solid var(--accent); border-radius: 10px; padding: 16px 20px; margin: 16px 0; font-family: var(--mono); font-size: 1rem; font-weight: 700; color: var(--accent-dark); }
+    .formula-box .label { font-family: 'Nunito', sans-serif; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-bottom: 6px; }
+    .formula-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0; }
+    @media (max-width: 560px) { .formula-grid { grid-template-columns: 1fr; } }
+    .op-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0; }
+    @media (max-width: 560px) { .op-cards { grid-template-columns: 1fr; } }
+    .op-card { border: 2px solid var(--border); border-radius: 12px; padding: 16px; background: #fafbff; }
+    .op-card h3 { font-size: 1rem; font-weight: 800; margin-bottom: 8px; color: var(--accent); }
+    .op-card p { font-size: 0.88rem; line-height: 1.55; margin-bottom: 0; }
+    .examples { display: flex; flex-direction: column; gap: 16px; }
+    .example { border: 2px solid var(--border); border-radius: 12px; padding: 18px 20px; background: #fafbff; }
+    .example-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+    .ex-num { width: 32px; height: 32px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 900; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .example-header h3 { font-size: 1rem; font-weight: 800; }
+    .ex-step { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; font-size: 0.9rem; }
+    .ex-step-num { background: var(--green); color: #fff; border-radius: 50%; width: 22px; height: 22px; font-size: 0.75rem; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    .ex-step p { line-height: 1.5; }
+    code { font-family: var(--mono); background: #eef1fd; border-radius: 5px; padding: 1px 6px; font-size: 0.88em; color: var(--accent-dark); }
+    .answer-box { background: #e8faf4; border: 2px solid var(--green); border-radius: 8px; padding: 10px 14px; margin-top: 10px; font-weight: 800; font-size: 0.95rem; color: #05a07a; }
+    .watch-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .watch-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.92rem; line-height: 1.55; }
+    .watch-badge { background: #fff0f0; color: var(--red); border: 2px solid #ffd6d6; border-radius: 8px; padding: 3px 9px; font-weight: 800; font-size: 0.78rem; flex-shrink: 0; margin-top: 2px; }
+    .ref-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    .ref-table th, .ref-table td { border: 2px solid var(--border); padding: 10px 14px; font-size: 0.88rem; text-align: left; }
+    .ref-table th { background: #eef1fd; font-weight: 800; color: var(--accent-dark); }
+    .ref-table td code { display: inline-block; }
+    .cta-bar { background: linear-gradient(135deg, #4361EE 0%, #3a0ca3 100%); border-radius: var(--radius); padding: 28px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .cta-bar h2 { color: #fff; font-size: 1.2rem; font-weight: 900; }
+    .cta-bar p { color: rgba(255,255,255,.8); font-size: 0.9rem; margin-top: 4px; font-weight: 600; }
+    .cta-btn { background: #fff; color: var(--accent); border-radius: 10px; padding: 12px 24px; font-weight: 900; font-size: 1rem; text-decoration: none; white-space: nowrap; transition: transform .15s; }
+    .cta-btn:hover { transform: scale(1.04); }
+    footer { text-align: center; padding: 24px; font-size: 0.8rem; color: var(--muted); font-weight: 600; }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header>
+  <div class="header-inner">
+    <a class="logo-link" href="../index.html"><img src="../logo.png" alt="LearnPad" class="logo-img" /></a>
+    <nav><a href="../index.html">Home</a><a href="index.html">School</a><a href="../learnings/">Tech in Urdu</a></nav>
+  </div>
+</header>
+<div class="breadcrumb">
+  <a href="index.html">Home</a><span>›</span>
+  <a href="index.html#grade5">Grade 5 Math</a><span>›</span>
+  Decimals (Operations)
+</div>
+<div class="hero">
+  <div class="hero-icon">🔢</div>
+  <div>
+    <h1>Decimals (Operations)</h1>
+    <p>Grade 5 Math &nbsp;·&nbsp; Add, subtract, multiply &amp; divide decimals</p>
+  </div>
+</div>
+
+<main>
+
+  <!-- Overview -->
+  <div class="card">
+    <h2><span class="icon">📌</span> Four Operations with Decimals</h2>
+    <div class="op-cards">
+      <div class="op-card">
+        <h3>➕ Adding &amp; ➖ Subtracting</h3>
+        <p>Line up the decimal points. Add zeros as needed. Then add or subtract as whole numbers — keep the decimal point in the same column.</p>
+      </div>
+      <div class="op-card">
+        <h3>✖️ Multiplying</h3>
+        <p>Ignore the decimal, multiply as whole numbers, then count total decimal places in both factors and place the point in the product.</p>
+      </div>
+      <div class="op-card">
+        <h3>➗ Dividing by a Whole Number</h3>
+        <p>Keep the decimal point directly above in the quotient. Divide as normal whole-number long division.</p>
+      </div>
+      <div class="op-card">
+        <h3>➗ Dividing by a Decimal</h3>
+        <p>Multiply both dividend and divisor by 10 (or 100) to make the divisor a whole number, then divide normally.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Worked Examples -->
+  <div class="card">
+    <h2><span class="icon">✏️</span> Worked Examples</h2>
+    <div class="examples">
+
+      <div class="example">
+        <div class="example-header">
+          <div class="ex-num">1</div>
+          <h3>3.46 + 1.7 (adding, different decimal places)</h3>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">1</div>
+          <p>Write with decimal points aligned: 3.46 + 1.70 (add a trailing zero)</p>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">2</div>
+          <p>Add column by column right to left: 6+0=6, 4+7=11 (write 1, carry 1), 3+1+1=5</p>
+        </div>
+        <div class="answer-box">3.46 + 1.7 = 5.16</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header">
+          <div class="ex-num">2</div>
+          <h3>5.3 − 2.78 (subtracting)</h3>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">1</div>
+          <p>Align decimals: 5.30 − 2.78 (add trailing zero to 5.3)</p>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">2</div>
+          <p>Subtract: 0 can't minus 8, borrow. 10−8=2; 2 can't minus 7, borrow. 12−7=5; 4−2=2</p>
+        </div>
+        <div class="answer-box">5.3 − 2.78 = 2.52</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header">
+          <div class="ex-num">3</div>
+          <h3>1.4 × 2.3 (multiplying decimals)</h3>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">1</div>
+          <p>Multiply as whole numbers: 14 × 23 = 322</p>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">2</div>
+          <p>Count decimal places: 1.4 has 1, 2.3 has 1 → total 2 places</p>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">3</div>
+          <p>Place decimal: 322 → 3.22</p>
+        </div>
+        <div class="answer-box">1.4 × 2.3 = 3.22</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header">
+          <div class="ex-num">4</div>
+          <h3>6.45 ÷ 3 (dividing decimal by whole number)</h3>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">1</div>
+          <p>Place decimal point directly above: set up 6.45 ÷ 3</p>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">2</div>
+          <p>6 ÷ 3 = 2; 4 ÷ 3 = 1 remainder 1; bring down 5 → 15 ÷ 3 = 5</p>
+        </div>
+        <div class="answer-box">6.45 ÷ 3 = 2.15</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header">
+          <div class="ex-num">5</div>
+          <h3>0.84 ÷ 0.4 (dividing by a decimal)</h3>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">1</div>
+          <p>Multiply both by 10: 8.4 ÷ 4</p>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">2</div>
+          <p>8.4 ÷ 4 = 2.1</p>
+        </div>
+        <div class="answer-box">0.84 ÷ 0.4 = 2.1</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Watch Out -->
+  <div class="card">
+    <h2><span class="icon">⚠️</span> Watch Out!</h2>
+    <ul class="watch-list">
+      <li>
+        <span class="watch-badge">ALIGN</span>
+        For addition and subtraction, always line up decimal points — not just digits. 3.5 + 1.25 must have the dots above each other.
+      </li>
+      <li>
+        <span class="watch-badge">TRAILING ZEROS</span>
+        Trailing zeros after the decimal don't change the value: 3.5 = 3.50. Add them to help align columns.
+      </li>
+      <li>
+        <span class="watch-badge">COUNT PLACES</span>
+        When multiplying, count decimal places in BOTH numbers and add them together.
+      </li>
+      <li>
+        <span class="watch-badge">MOVE POINT</span>
+        When dividing by a decimal, multiply both numbers by a power of 10 to eliminate the decimal in the divisor.
+      </li>
+    </ul>
+  </div>
+
+  <!-- Quick Reference -->
+  <div class="card">
+    <h2><span class="icon">📋</span> Quick Reference</h2>
+    <table class="ref-table">
+      <thead>
+        <tr><th>Operation</th><th>Key Rule</th><th>Example</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Add / Subtract</td><td>Align decimal points</td><td><code>2.4 + 1.36 → 2.40 + 1.36 = 3.76</code></td></tr>
+        <tr><td>Multiply</td><td>Ignore decimal, multiply, then count places</td><td><code>0.3 × 0.2 = 0.06 (2 places)</code></td></tr>
+        <tr><td>Divide by whole</td><td>Keep decimal point position</td><td><code>9.6 ÷ 4 = 2.4</code></td></tr>
+        <tr><td>Divide by decimal</td><td>Multiply both by 10/100 first</td><td><code>0.6 ÷ 0.2 = 6 ÷ 2 = 3</code></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-bar">
+    <div>
+      <h2>Ready to practise?</h2>
+      <p>Try the interactive worksheet with instant feedback.</p>
+    </div>
+    <a class="cta-btn" href="math-grade5-decimals-operations-worksheet.html">Start Worksheet →</a>
+  </div>
+
+</main>
+<footer>© 2025 LearnBright · Free printable &amp; interactive school worksheets</footer>
+</body>
+</html>

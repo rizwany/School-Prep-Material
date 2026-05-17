@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sets &amp; Functions – Grade 9 Math Help</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --ink: #1a1f36; --muted: #5a6076; --accent: #4361EE; --accent-dark: #3451d1;
+      --green: #06d6a0; --orange: #fb8500; --red: #ef233c;
+      --bg: #f4f6fb; --card: #ffffff; --border: #e2e6f0; --radius: 14px;
+      --mono: 'JetBrains Mono', monospace;
+    }
+    body { font-family: 'Nunito', sans-serif; background-color: var(--bg); background-image: radial-gradient(circle, #E8EDF5 1.5px, transparent 1.5px); background-size: 20px 20px; color: var(--ink); min-height: 100vh; }
+    header { background: var(--card); border-bottom: 2px solid var(--border); padding: 0 24px; }
+    .header-inner { max-width: 860px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 52px; }
+    .logo-link { text-decoration: none; display: flex; align-items: center; } .logo-img { height: 36px; width: auto; display: block; }
+    nav a { font-weight: 700; font-size: 0.85rem; color: var(--muted); text-decoration: none; margin-left: 20px; }
+    nav a:hover { color: var(--accent); }
+    .breadcrumb { max-width: 860px; margin: 0 auto; padding: 14px 24px 0; font-size: 0.8rem; color: var(--muted); }
+    .breadcrumb a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 6px; }
+    .hero { max-width: 860px; margin: 0 auto; padding: 28px 24px 0; display: flex; align-items: center; gap: 20px; }
+    .hero-icon { width: 72px; height: 72px; border-radius: 20px; background: var(--accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.4rem; color:#fff; font-family: var(--mono); font-weight:700; }
+    .hero h1 { font-size: 1.9rem; font-weight: 900; line-height: 1.15; }
+    .hero p { font-size: 1rem; color: var(--muted); margin-top: 6px; font-weight: 600; }
+    main { max-width: 860px; margin: 28px auto 60px; padding: 0 24px; display: flex; flex-direction: column; gap: 24px; }
+    .card { background: var(--card); border-radius: var(--radius); border: 2px solid var(--border); padding: 28px; }
+    .card h2 { font-size: 1.25rem; font-weight: 900; color: var(--accent); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+    .card p { font-size: 0.95rem; line-height: 1.7; color: var(--ink); margin-bottom: 12px; }
+    .card p:last-child { margin-bottom: 0; }
+    .ops-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin: 14px 0; }
+    @media (max-width: 560px) { .ops-grid { grid-template-columns: 1fr; } }
+    .op-card { background: #fafbff; border: 2px solid var(--border); border-radius: 12px; padding: 14px 16px; }
+    .op-card .op-sym { font-family: var(--mono); font-size: 1.1rem; font-weight: 900; color: var(--accent); margin-bottom: 4px; }
+    .op-card .op-name { font-weight: 800; font-size: 0.9rem; color: var(--ink); margin-bottom: 4px; }
+    .op-card .op-eg { font-family: var(--mono); font-size: 0.83rem; color: var(--muted); font-weight: 600; }
+    .venn-wrap { display: flex; justify-content: center; margin: 16px 0; }
+    .fn-cards { display: flex; flex-direction: column; gap: 10px; margin: 14px 0; }
+    .fn-card { background: #eef1fd; border: 2px solid var(--border); border-radius: 12px; padding: 12px 16px; display: flex; align-items: center; gap: 14px; }
+    .fn-label { font-weight: 900; font-size: 0.88rem; color: var(--accent); min-width: 90px; }
+    .fn-desc { font-size: 0.88rem; color: var(--ink); line-height: 1.5; }
+    .examples { display: flex; flex-direction: column; gap: 16px; }
+    .example { border: 2px solid var(--border); border-radius: 12px; padding: 18px 20px; background: #fafbff; }
+    .example-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+    .ex-num { width: 32px; height: 32px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 900; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .example-header h3 { font-size: 1rem; font-weight: 800; }
+    .ex-step { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; font-size: 0.9rem; }
+    .ex-step-num { background: var(--green); color: #fff; border-radius: 50%; width: 22px; height: 22px; font-size: 0.75rem; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    .ex-step p { line-height: 1.5; }
+    code { font-family: var(--mono); background: #eef1fd; border-radius: 5px; padding: 1px 6px; font-size: 0.88em; color: var(--accent-dark); }
+    .answer-box { background: #e8faf4; border: 2px solid var(--green); border-radius: 8px; padding: 10px 14px; margin-top: 10px; font-weight: 800; font-size: 0.95rem; color: #05a07a; }
+    .watch-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .watch-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.92rem; line-height: 1.55; }
+    .watch-badge { background: #fff0f0; color: var(--red); border: 2px solid #ffd6d6; border-radius: 8px; padding: 3px 9px; font-weight: 800; font-size: 0.78rem; flex-shrink: 0; margin-top: 2px; }
+    .ref-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    .ref-table th, .ref-table td { border: 2px solid var(--border); padding: 10px 14px; font-size: 0.88rem; text-align: left; }
+    .ref-table th { background: #eef1fd; font-weight: 800; color: var(--accent-dark); }
+    .cta-bar { background: linear-gradient(135deg, #4361EE 0%, #3a0ca3 100%); border-radius: var(--radius); padding: 28px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .cta-bar h2 { color: #fff; font-size: 1.2rem; font-weight: 900; }
+    .cta-bar p { color: rgba(255,255,255,.8); font-size: 0.9rem; margin-top: 4px; font-weight: 600; }
+    .cta-btn { background: #fff; color: var(--accent); border-radius: 10px; padding: 12px 24px; font-weight: 900; font-size: 1rem; text-decoration: none; white-space: nowrap; transition: transform .15s; }
+    .cta-btn:hover { transform: scale(1.04); }
+    footer { text-align: center; padding: 24px; font-size: 0.8rem; color: var(--muted); font-weight: 600; }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header>
+  <div class="header-inner">
+    <a class="logo-link" href="../index.html"><img src="../logo.png" alt="LearnPad" class="logo-img" /></a>
+    <nav><a href="../index.html">Home</a><a href="index.html">School</a><a href="../learnings/">Tech in Urdu</a></nav>
+  </div>
+</header>
+<div class="breadcrumb">
+  <a href="index.html">Home</a><span>›</span>
+  <a href="index.html#grade9">Grade 9 Math</a><span>›</span>
+  Sets &amp; Functions
+</div>
+<div class="hero">
+  <div class="hero-icon">{  }</div>
+  <div>
+    <h1>Sets &amp; Functions</h1>
+    <p>Grade 9 Math &nbsp;·&nbsp; Set notation, operations &amp; function basics</p>
+  </div>
+</div>
+
+<main>
+
+  <!-- Sets -->
+  <div class="card">
+    <h2>&#x1F4E6; What is a Set?</h2>
+    <p>A <strong>set</strong> is a well-defined collection of distinct objects, called <strong>elements</strong> or <strong>members</strong>. Sets are written with curly braces: <code>A = {1, 2, 3, 4}</code>.</p>
+    <p><strong>n(A)</strong> denotes the number of elements in set A (its <em>cardinality</em>).</p>
+    <p>Special sets: <strong>∅</strong> or <code>{}</code> = empty set (no elements). <strong>U</strong> = universal set (all elements under consideration).</p>
+    <p>Notation: <code>3 ∈ A</code> means "3 is an element of A". <code>5 ∉ A</code> means "5 is NOT in A".</p>
+  </div>
+
+  <!-- Set Operations -->
+  <div class="card">
+    <h2>&#x2229; Set Operations</h2>
+    <div class="ops-grid">
+      <div class="op-card">
+        <div class="op-sym">A ∪ B</div>
+        <div class="op-name">Union</div>
+        <div class="op-eg">All elements in A OR B (or both)</div>
+      </div>
+      <div class="op-card">
+        <div class="op-sym">A ∩ B</div>
+        <div class="op-name">Intersection</div>
+        <div class="op-eg">Elements in BOTH A AND B</div>
+      </div>
+      <div class="op-card">
+        <div class="op-sym">A′ or Aᶜ</div>
+        <div class="op-name">Complement</div>
+        <div class="op-eg">Elements in U but NOT in A</div>
+      </div>
+      <div class="op-card">
+        <div class="op-sym">A − B</div>
+        <div class="op-name">Difference</div>
+        <div class="op-eg">Elements in A but NOT in B</div>
+      </div>
+    </div>
+    <p><strong>Key formula (inclusion-exclusion):</strong> <code>n(A ∪ B) = n(A) + n(B) − n(A ∩ B)</code></p>
+  </div>
+
+  <!-- Venn Diagram -->
+  <div class="card">
+    <h2>&#x25EF; Venn Diagram</h2>
+    <div class="venn-wrap">
+      <svg width="300" height="180" viewBox="0 0 300 180" font-family="Nunito, sans-serif">
+        <rect x="0" y="0" width="300" height="180" rx="12" fill="#eef1fd" stroke="#4361EE" stroke-width="2"/>
+        <circle cx="115" cy="90" r="65" fill="rgba(67,97,238,0.18)" stroke="#4361EE" stroke-width="2.5"/>
+        <circle cx="185" cy="90" r="65" fill="rgba(6,214,160,0.18)" stroke="#06d6a0" stroke-width="2.5"/>
+        <text x="80" y="88" text-anchor="middle" font-size="12" font-weight="800" fill="#3451d1">A only</text>
+        <text x="150" y="82" text-anchor="middle" font-size="11" font-weight="800" fill="#5a6076">A ∩ B</text>
+        <text x="150" y="97" text-anchor="middle" font-size="10" fill="#5a6076">(both)</text>
+        <text x="220" y="88" text-anchor="middle" font-size="12" font-weight="800" fill="#05a07a">B only</text>
+        <text x="22" y="20" font-size="12" font-weight="900" fill="#4361EE">U</text>
+        <text x="50" y="166" font-size="11" font-weight="700" fill="#4361EE">A</text>
+        <text x="242" y="166" font-size="11" font-weight="700" fill="#06d6a0">B</text>
+      </svg>
+    </div>
+    <p style="font-size:0.88rem; color:var(--muted); text-align:center;">U = universal set. The rectangle represents U; circles represent sets A and B.</p>
+  </div>
+
+  <!-- Functions -->
+  <div class="card">
+    <h2>&#x2192; Functions</h2>
+    <p>A <strong>function</strong> is a rule that assigns <em>exactly one</em> output (y-value) to each input (x-value). Written as <code>f: A → B</code> or <code>f(x) = …</code>.</p>
+    <div class="fn-cards">
+      <div class="fn-card">
+        <div class="fn-label">Domain</div>
+        <div class="fn-desc">The set of all valid input values (x-values). Every element must be mapped.</div>
+      </div>
+      <div class="fn-card">
+        <div class="fn-label">Codomain</div>
+        <div class="fn-desc">The set of all possible output values declared for the function.</div>
+      </div>
+      <div class="fn-card">
+        <div class="fn-label">Range</div>
+        <div class="fn-desc">The set of ACTUAL output values produced by the function (subset of codomain).</div>
+      </div>
+      <div class="fn-card">
+        <div class="fn-label">Vertical Line Test</div>
+        <div class="fn-desc">A graph represents a function if every vertical line crosses the graph at most once.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Worked Examples -->
+  <div class="card">
+    <h2>&#x270F;&#xFE0F; Worked Examples</h2>
+    <div class="examples">
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">1</div><h3>A = {1,2,3,4,5}, B = {3,4,5,6,7}. Find A ∪ B and A ∩ B.</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>A ∪ B = all elements in either set: {1, 2, 3, 4, 5, 6, 7}.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>A ∩ B = elements in both: {3, 4, 5}.</p></div>
+        <div class="answer-box">A ∪ B = {1,2,3,4,5,6,7} &nbsp;|&nbsp; A ∩ B = {3,4,5}</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">2</div><h3>In a class of 40: 25 like Maths (M), 20 like Science (S), 10 like both. How many like neither?</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>n(M ∪ S) = n(M) + n(S) − n(M ∩ S) = 25 + 20 − 10 = 35.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>Neither = Total − n(M ∪ S) = 40 − 35 = 5.</p></div>
+        <div class="answer-box">5 students like neither</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">3</div><h3>U = {1,2,3,4,5,6,7,8}, A = {2,4,6,8}. Find A′.</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>A′ = all elements in U that are NOT in A.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>A′ = {1, 3, 5, 7}.</p></div>
+        <div class="answer-box">A′ = {1, 3, 5, 7}</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">4</div><h3>f(x) = 3x − 1. Find f(4) and f(−2).</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>f(4) = 3(4) − 1 = 12 − 1 = 11.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>f(−2) = 3(−2) − 1 = −6 − 1 = −7.</p></div>
+        <div class="answer-box">f(4) = 11, f(−2) = −7</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">5</div><h3>Is the mapping {(1,2), (2,4), (3,2), (4,6)} a function?</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Check: each input (1, 2, 3, 4) maps to exactly one output.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>1→2, 2→4, 3→2, 4→6. No input has two different outputs (3 and 1 both mapping to 2 is fine — outputs can repeat).</p></div>
+        <div class="answer-box">Yes, this is a function</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Watch Out -->
+  <div class="card">
+    <h2>&#x26A0;&#xFE0F; Watch Out!</h2>
+    <ul class="watch-list">
+      <li><span class="watch-badge">DISTINCT</span>Sets contain no duplicates: {1, 2, 2, 3} is the same as {1, 2, 3}. List each element once only.</li>
+      <li><span class="watch-badge">FUNCTION</span>A relation is NOT a function if any input maps to MORE THAN ONE output. The input 2 → 3 and 2 → 5 fails.</li>
+      <li><span class="watch-badge">RANGE ≠ CODOMAIN</span>The range is the set of values actually produced, which may be a proper subset of the codomain.</li>
+      <li><span class="watch-badge">∅ ≠ {∅}</span>The empty set ∅ has 0 elements. The set {∅} has 1 element (the empty set itself).</li>
+    </ul>
+  </div>
+
+  <!-- Quick Reference -->
+  <div class="card">
+    <h2>&#x1F4CB; Quick Reference</h2>
+    <table class="ref-table">
+      <thead><tr><th>Symbol</th><th>Meaning</th><th>Example</th></tr></thead>
+      <tbody>
+        <tr><td><code>∈</code></td><td>Is an element of</td><td>3 ∈ {1,2,3}</td></tr>
+        <tr><td><code>∪</code></td><td>Union (OR)</td><td>{1,2} ∪ {2,3} = {1,2,3}</td></tr>
+        <tr><td><code>∩</code></td><td>Intersection (AND)</td><td>{1,2} ∩ {2,3} = {2}</td></tr>
+        <tr><td><code>A′</code></td><td>Complement of A</td><td>U − A</td></tr>
+        <tr><td><code>n(A∪B)</code></td><td>Inclusion-exclusion</td><td>n(A) + n(B) − n(A∩B)</td></tr>
+        <tr><td><code>f(x)</code></td><td>Function value at x</td><td>f(3) = 3×3 − 1 = 8</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-bar">
+    <div>
+      <h2>Ready to practise?</h2>
+      <p>Try the interactive worksheet with instant feedback.</p>
+    </div>
+    <a class="cta-btn" href="math-grade9-sets-functions-worksheet.html">Start Worksheet →</a>
+  </div>
+
+</main>
+<footer>© 2025 LearnBright · Free printable &amp; interactive school worksheets</footer>
+</body>
+</html>

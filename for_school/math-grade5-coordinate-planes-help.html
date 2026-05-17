@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coordinate Planes – Grade 5 Math Help</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --ink: #1a1f36; --muted: #5a6076; --accent: #4361EE; --accent-dark: #3451d1;
+      --green: #06d6a0; --orange: #fb8500; --red: #ef233c;
+      --bg: #f4f6fb; --card: #ffffff; --border: #e2e6f0; --radius: 14px;
+      --mono: 'JetBrains Mono', monospace;
+    }
+    body { font-family: 'Nunito', sans-serif; background-color: var(--bg); background-image: radial-gradient(circle, #E8EDF5 1.5px, transparent 1.5px); background-size: 20px 20px; color: var(--ink); min-height: 100vh; }
+    header { background: var(--card); border-bottom: 2px solid var(--border); padding: 0 24px; }
+    .header-inner { max-width: 860px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 52px; }
+    .logo-link { text-decoration: none; display: flex; align-items: center; } .logo-img { height: 36px; width: auto; display: block; }
+    nav a { font-weight: 700; font-size: 0.85rem; color: var(--muted); text-decoration: none; margin-left: 20px; }
+    nav a:hover { color: var(--accent); }
+    .breadcrumb { max-width: 860px; margin: 0 auto; padding: 14px 24px 0; font-size: 0.8rem; color: var(--muted); }
+    .breadcrumb a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 6px; }
+    .hero { max-width: 860px; margin: 0 auto; padding: 28px 24px 0; display: flex; align-items: center; gap: 20px; }
+    .hero-icon { width: 72px; height: 72px; border-radius: 20px; background: var(--accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 2rem; }
+    .hero h1 { font-size: 1.9rem; font-weight: 900; line-height: 1.15; }
+    .hero p { font-size: 1rem; color: var(--muted); margin-top: 6px; font-weight: 600; }
+    main { max-width: 860px; margin: 28px auto 60px; padding: 0 24px; display: flex; flex-direction: column; gap: 24px; }
+    .card { background: var(--card); border-radius: var(--radius); border: 2px solid var(--border); padding: 28px; }
+    .card h2 { font-size: 1.25rem; font-weight: 900; color: var(--accent); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+    .card p { font-size: 0.95rem; line-height: 1.7; color: var(--ink); margin-bottom: 12px; }
+    .card p:last-child { margin-bottom: 0; }
+    .formula-box { background: #eef1fd; border-left: 4px solid var(--accent); border-radius: 10px; padding: 16px 20px; margin: 16px 0; font-family: var(--mono); font-size: 1rem; font-weight: 700; color: var(--accent-dark); }
+    .formula-box .label { font-family: 'Nunito', sans-serif; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-bottom: 6px; }
+    .shape-diagram { display: flex; justify-content: center; margin: 20px 0; }
+    .shape-diagram svg { max-width: 100%; }
+    .examples { display: flex; flex-direction: column; gap: 16px; }
+    .example { border: 2px solid var(--border); border-radius: 12px; padding: 18px 20px; background: #fafbff; }
+    .example-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+    .ex-num { width: 32px; height: 32px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 900; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .example-header h3 { font-size: 1rem; font-weight: 800; }
+    .ex-step { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; font-size: 0.9rem; }
+    .ex-step-num { background: var(--green); color: #fff; border-radius: 50%; width: 22px; height: 22px; font-size: 0.75rem; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    .ex-step p { line-height: 1.5; }
+    code { font-family: var(--mono); background: #eef1fd; border-radius: 5px; padding: 1px 6px; font-size: 0.88em; color: var(--accent-dark); }
+    .answer-box { background: #e8faf4; border: 2px solid var(--green); border-radius: 8px; padding: 10px 14px; margin-top: 10px; font-weight: 800; font-size: 0.95rem; color: #05a07a; }
+    .watch-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .watch-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.92rem; line-height: 1.55; }
+    .watch-badge { background: #fff0f0; color: var(--red); border: 2px solid #ffd6d6; border-radius: 8px; padding: 3px 9px; font-weight: 800; font-size: 0.78rem; flex-shrink: 0; margin-top: 2px; }
+    .ref-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    .ref-table th, .ref-table td { border: 2px solid var(--border); padding: 10px 14px; font-size: 0.88rem; text-align: left; }
+    .ref-table th { background: #eef1fd; font-weight: 800; color: var(--accent-dark); }
+    .ref-table td code { display: inline-block; }
+    .cta-bar { background: linear-gradient(135deg, #4361EE 0%, #3a0ca3 100%); border-radius: var(--radius); padding: 28px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .cta-bar h2 { color: #fff; font-size: 1.2rem; font-weight: 900; }
+    .cta-bar p { color: rgba(255,255,255,.8); font-size: 0.9rem; margin-top: 4px; font-weight: 600; }
+    .cta-btn { background: #fff; color: var(--accent); border-radius: 10px; padding: 12px 24px; font-weight: 900; font-size: 1rem; text-decoration: none; white-space: nowrap; transition: transform .15s; }
+    .cta-btn:hover { transform: scale(1.04); }
+    footer { text-align: center; padding: 24px; font-size: 0.8rem; color: var(--muted); font-weight: 600; }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header>
+  <div class="header-inner">
+    <a class="logo-link" href="../index.html"><img src="../logo.png" alt="LearnPad" class="logo-img" /></a>
+    <nav><a href="../index.html">Home</a><a href="index.html">School</a><a href="../learnings/">Tech in Urdu</a></nav>
+  </div>
+</header>
+<div class="breadcrumb">
+  <a href="index.html">Home</a><span>›</span>
+  <a href="index.html#grade5">Grade 5 Math</a><span>›</span>
+  Coordinate Planes
+</div>
+<div class="hero">
+  <div class="hero-icon">📍</div>
+  <div>
+    <h1>Coordinate Planes</h1>
+    <p>Grade 5 Math &nbsp;·&nbsp; Plot and read points on a grid</p>
+  </div>
+</div>
+
+<main>
+
+  <!-- The Coordinate Plane -->
+  <div class="card">
+    <h2><span class="icon">🗺️</span> The Coordinate Plane</h2>
+    <p>A <strong>coordinate plane</strong> (also called a Cartesian plane) is a flat surface with two perpendicular number lines called <strong>axes</strong>.</p>
+    <p>The <strong>x-axis</strong> runs horizontally (left-right). The <strong>y-axis</strong> runs vertically (up-down). They cross at the <strong>origin (0, 0)</strong>.</p>
+
+    <div class="shape-diagram">
+      <svg width="300" height="280" viewBox="0 0 300 280" xmlns="http://www.w3.org/2000/svg">
+        <!-- Grid lines -->
+        <g stroke="#e2e6f0" stroke-width="1">
+          <line x1="30" y1="50" x2="270" y2="50"/>
+          <line x1="30" y1="90" x2="270" y2="90"/>
+          <line x1="30" y1="130" x2="270" y2="130"/>
+          <line x1="30" y1="170" x2="270" y2="170"/>
+          <line x1="30" y1="210" x2="270" y2="210"/>
+          <line x1="70" y1="30" x2="70" y2="250"/>
+          <line x1="110" y1="30" x2="110" y2="250"/>
+          <line x1="150" y1="30" x2="150" y2="250"/>
+          <line x1="190" y1="30" x2="190" y2="250"/>
+          <line x1="230" y1="30" x2="230" y2="250"/>
+        </g>
+        <!-- Axes -->
+        <line x1="30" y1="170" x2="270" y2="170" stroke="#4361EE" stroke-width="2.5"/>
+        <line x1="70" y1="30" x2="70" y2="250" stroke="#4361EE" stroke-width="2.5"/>
+        <!-- Axis arrows -->
+        <polygon points="270,166 278,170 270,174" fill="#4361EE"/>
+        <polygon points="66,30 70,22 74,30" fill="#4361EE"/>
+        <!-- Labels -->
+        <text x="280" y="174" font-family="Nunito,sans-serif" font-weight="800" font-size="13" fill="#4361EE">x</text>
+        <text x="62" y="18" font-family="Nunito,sans-serif" font-weight="800" font-size="13" fill="#4361EE">y</text>
+        <!-- Tick labels x -->
+        <text x="107" y="185" text-anchor="middle" font-family="Nunito,sans-serif" font-size="11" fill="#5a6076">1</text>
+        <text x="147" y="185" text-anchor="middle" font-family="Nunito,sans-serif" font-size="11" fill="#5a6076">2</text>
+        <text x="187" y="185" text-anchor="middle" font-family="Nunito,sans-serif" font-size="11" fill="#5a6076">3</text>
+        <text x="227" y="185" text-anchor="middle" font-family="Nunito,sans-serif" font-size="11" fill="#5a6076">4</text>
+        <!-- Tick labels y -->
+        <text x="58" y="134" text-anchor="end" font-family="Nunito,sans-serif" font-size="11" fill="#5a6076">1</text>
+        <text x="58" y="94" text-anchor="end" font-family="Nunito,sans-serif" font-size="11" fill="#5a6076">2</text>
+        <text x="58" y="54" text-anchor="end" font-family="Nunito,sans-serif" font-size="11" fill="#5a6076">3</text>
+        <!-- Origin -->
+        <text x="58" y="185" text-anchor="end" font-family="Nunito,sans-serif" font-size="11" fill="#5a6076">0</text>
+        <!-- Plotted point A(3,2) -->
+        <circle cx="190" cy="90" r="6" fill="#ef233c"/>
+        <text x="198" y="86" font-family="Nunito,sans-serif" font-weight="800" font-size="12" fill="#ef233c">A(3,2)</text>
+        <!-- Plotted point B(1,3) -->
+        <circle cx="110" cy="50" r="6" fill="#06d6a0"/>
+        <text x="118" y="46" font-family="Nunito,sans-serif" font-weight="800" font-size="12" fill="#06d6a0">B(1,3)</text>
+        <!-- Dashed guides for A -->
+        <line x1="70" y1="90" x2="190" y2="90" stroke="#ef233c" stroke-width="1" stroke-dasharray="4,3"/>
+        <line x1="190" y1="170" x2="190" y2="90" stroke="#ef233c" stroke-width="1" stroke-dasharray="4,3"/>
+      </svg>
+    </div>
+    <p>Every point is described by an <strong>ordered pair (x, y)</strong>. The first number is always the x-value (move right), the second is the y-value (move up).</p>
+  </div>
+
+  <!-- How to Plot -->
+  <div class="card">
+    <h2><span class="icon">📌</span> How to Plot a Point</h2>
+    <div class="formula-box">
+      <div class="label">Ordered Pair</div>
+      (x, y) → start at origin, go x units right, then y units up
+    </div>
+    <p><strong>Tip:</strong> Remember the order — <em>along the corridor first, then up the stairs.</em> x (horizontal) always comes before y (vertical).</p>
+  </div>
+
+  <!-- Worked Examples -->
+  <div class="card">
+    <h2><span class="icon">✏️</span> Worked Examples</h2>
+    <div class="examples">
+
+      <div class="example">
+        <div class="example-header">
+          <div class="ex-num">1</div>
+          <h3>Plot the point (4, 2)</h3>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">1</div>
+          <p>Start at the origin (0, 0)</p>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">2</div>
+          <p>Move 4 units to the right along the x-axis</p>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">3</div>
+          <p>Move 2 units up along the y-axis</p>
+        </div>
+        <div class="answer-box">Mark the point where you end up — that is (4, 2)</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header">
+          <div class="ex-num">2</div>
+          <h3>What are the coordinates of a point 5 right and 3 up from the origin?</h3>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">1</div>
+          <p>x = 5 (right), y = 3 (up)</p>
+        </div>
+        <div class="answer-box">The point is (5, 3)</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header">
+          <div class="ex-num">3</div>
+          <h3>A point is at (0, 4). Where is it on the grid?</h3>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">1</div>
+          <p>x = 0 — don't move right (stay on y-axis)</p>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">2</div>
+          <p>y = 4 — move 4 units up</p>
+        </div>
+        <div class="answer-box">The point sits directly on the y-axis, 4 units up</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header">
+          <div class="ex-num">4</div>
+          <h3>Which point is further from the origin: (3, 0) or (0, 3)?</h3>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">1</div>
+          <p>(3, 0) is 3 units along the x-axis from the origin</p>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">2</div>
+          <p>(0, 3) is 3 units along the y-axis from the origin</p>
+        </div>
+        <div class="answer-box">They are the same distance from the origin (both 3 units away)</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header">
+          <div class="ex-num">5</div>
+          <h3>A square has corners at (1,1), (4,1), (4,4), and (1,4). What is its side length?</h3>
+        </div>
+        <div class="ex-step">
+          <div class="ex-step-num">1</div>
+          <p>Count from (1,1) to (4,1) along the bottom: 4 − 1 = 3 units</p>
+        </div>
+        <div class="answer-box">Side length = 3 units</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Watch Out -->
+  <div class="card">
+    <h2><span class="icon">⚠️</span> Watch Out!</h2>
+    <ul class="watch-list">
+      <li>
+        <span class="watch-badge">ORDER</span>
+        (x, y) — x is ALWAYS first. (3, 5) and (5, 3) are different points!
+      </li>
+      <li>
+        <span class="watch-badge">ORIGIN</span>
+        The origin is (0, 0) — not (1, 1). Count from 0, not from 1.
+      </li>
+      <li>
+        <span class="watch-badge">AXIS</span>
+        x-axis is horizontal, y-axis is vertical. Mix them up and you'll plot the wrong point.
+      </li>
+      <li>
+        <span class="watch-badge">CORRIDOR FIRST</span>
+        Move along the x-axis first, then up/down. "Along the corridor, then up the stairs."
+      </li>
+    </ul>
+  </div>
+
+  <!-- Quick Reference -->
+  <div class="card">
+    <h2><span class="icon">📋</span> Quick Reference</h2>
+    <table class="ref-table">
+      <thead>
+        <tr><th>Term</th><th>Meaning</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>x-axis</td><td>Horizontal number line (left-right)</td></tr>
+        <tr><td>y-axis</td><td>Vertical number line (up-down)</td></tr>
+        <tr><td>Origin</td><td>Where axes cross — <code>(0, 0)</code></td></tr>
+        <tr><td>Ordered pair</td><td><code>(x, y)</code> — x first, y second</td></tr>
+        <tr><td>Plotting a point</td><td>Right x units, then up y units from origin</td></tr>
+        <tr><td>Reading a point</td><td>Count right (x), count up (y)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-bar">
+    <div>
+      <h2>Ready to practise?</h2>
+      <p>Try the interactive worksheet with instant feedback.</p>
+    </div>
+    <a class="cta-btn" href="math-grade5-coordinate-planes-worksheet.html">Start Worksheet →</a>
+  </div>
+
+</main>
+<footer>© 2025 LearnBright · Free printable &amp; interactive school worksheets</footer>
+</body>
+</html>

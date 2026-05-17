@@ -1,0 +1,249 @@
+﻿<!-- Math | Grade 2 | Telling Time | help -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Telling Time — Grade 2 Math | LearnPad</title>
+  <meta name="description" content="Learn to read analog clocks to the hour, half-hour, quarter-hour, and five-minute intervals for Grade 2." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{--clr-bg:#ffffff;--clr-dot:#E8EDF5;--clr-accent:#4361EE;--clr-accent-dark:#3451D1;--clr-navy:#1A1A3E;--clr-tint:#EEF0FF;--clr-green:#2DC653;--clr-green-bg:#F0FFF4;--clr-red:#E63946;--clr-red-bg:#FFF0F1;--clr-amber:#F4A261;--clr-amber-bg:#FFFBF5;--clr-text:#2D2D4E;--clr-muted:#6B7280;--font-display:'Nunito',sans-serif;--font-mono:'JetBrains Mono',monospace;--radius:12px;--shadow:0 2px 16px rgba(67,97,238,0.08);--shadow-hover:0 8px 28px rgba(67,97,238,0.18)}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:var(--font-display);background-color:var(--clr-bg);background-image:radial-gradient(circle,var(--clr-dot) 1.5px,transparent 1.5px);background-size:20px 20px;color:var(--clr-text);line-height:1.7;min-height:100vh}
+    .page-wrap{max-width:860px;margin:0 auto;padding:24px 20px 60px}
+    .breadcrumb{display:flex;align-items:center;gap:6px;font-size:0.82rem;color:var(--clr-muted);margin-bottom:28px;flex-wrap:wrap}
+    .breadcrumb a{color:var(--clr-accent);text-decoration:none;font-weight:600}.breadcrumb a:hover{text-decoration:underline}
+    .breadcrumb span{color:var(--clr-muted)}
+    .hero{margin-bottom:40px}.hero-badges{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+    .badge{font-size:0.78rem;font-weight:700;padding:4px 14px;border-radius:50px;letter-spacing:0.03em}
+    .badge-solid{background:var(--clr-accent);color:#fff}.badge-outline{border:2px solid var(--clr-accent);color:var(--clr-accent);background:transparent}
+    .hero h1{font-size:clamp(2rem,5vw,3rem);font-weight:900;color:var(--clr-navy);line-height:1.15;margin-bottom:12px}
+    .hero-intro{font-size:1.05rem;color:var(--clr-muted);max-width:620px;margin-bottom:18px}
+    .hero-meta{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+    .meta-pill{font-size:0.82rem;color:var(--clr-muted);font-weight:600}
+    .btn{display:inline-flex;align-items:center;gap:6px;font-family:var(--font-display);font-weight:700;font-size:0.92rem;padding:10px 26px;border-radius:50px;text-decoration:none;cursor:pointer;border:none;transition:background 0.18s,color 0.18s,transform 0.18s,box-shadow 0.18s}
+    .btn-primary{background:var(--clr-accent);color:#fff}.btn-primary:hover{background:var(--clr-accent-dark);transform:translateY(-2px);box-shadow:0 6px 20px rgba(67,97,238,0.25)}
+    .btn-white{background:#fff;color:var(--clr-accent);font-weight:800}.btn-white:hover{background:#EEF0FF;transform:translateY(-2px)}
+    section{margin-bottom:48px}
+    .section-label{font-size:0.75rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--clr-accent);margin-bottom:10px}
+    .section-title{font-size:1.55rem;font-weight:800;color:var(--clr-navy);margin-bottom:16px}
+    .card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);border-left:5px solid var(--clr-accent);padding:24px 28px;transition:transform 0.2s,box-shadow 0.2s;animation:fadeInUp 0.4s ease both}
+    .card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}.card+.card{margin-top:16px}.card p+p{margin-top:10px}
+    .card-tint{background:var(--clr-tint);border-left:5px solid var(--clr-accent);border-radius:var(--radius);padding:24px 28px}
+    .steps{list-style:none}.step-item{display:flex;gap:16px;align-items:flex-start;margin-bottom:16px}
+    .step-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;background:var(--clr-accent);color:#fff;font-weight:800;font-size:0.9rem;display:flex;align-items:center;justify-content:center}
+    .step-text{padding-top:4px;font-size:0.97rem}.step-text strong{color:var(--clr-navy)}
+    .example-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;margin-bottom:16px;border-left:5px solid var(--clr-accent);animation:fadeInUp 0.4s ease both;transition:transform 0.2s,box-shadow 0.2s}
+    .example-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+    .example-header{background:#F3F4F8;padding:10px 20px;font-weight:800;font-size:0.82rem;color:var(--clr-muted);letter-spacing:0.06em;text-transform:uppercase}
+    .example-body{padding:20px 24px}
+    .example-problem{font-size:1rem;font-weight:600;color:var(--clr-navy);margin-bottom:14px}
+    .example-working{border-left:3px solid var(--clr-tint);padding-left:14px;margin-bottom:14px}
+    .working-line{font-family:var(--font-mono);font-size:0.9rem;color:var(--clr-text);margin-bottom:6px}
+    .working-line span{color:var(--clr-muted);font-weight:400;margin-left:8px}
+    .answer-chip{display:inline-flex;align-items:center;gap:6px;background:var(--clr-green-bg);border:1.5px solid var(--clr-green);color:#1a7a3a;border-radius:50px;padding:6px 16px;font-weight:700;font-size:0.9rem}
+    .warning-box{background:var(--clr-amber-bg);border-left:5px solid var(--clr-amber);border-radius:var(--radius);padding:20px 24px}
+    .warning-box h3{font-size:1rem;font-weight:800;color:#8B4A00;margin-bottom:12px}
+    .warning-list{list-style:none}.warning-list li{margin-bottom:10px;font-size:0.93rem;line-height:1.55}
+    .warning-list .wrong{color:var(--clr-red);font-weight:700}.warning-list .right{color:var(--clr-green);font-weight:700}
+    .ref-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+    @media(max-width:560px){.ref-grid{grid-template-columns:1fr}}
+    .ref-item{background:#fff;border-radius:10px;padding:16px;box-shadow:0 1px 8px rgba(67,97,238,0.07)}
+    .ref-term{font-weight:800;font-size:0.85rem;color:var(--clr-accent);margin-bottom:4px}
+    .ref-def{font-size:0.88rem;color:var(--clr-text)}
+    .footer-cta{background:linear-gradient(135deg,var(--clr-accent) 0%,#6C63FF 100%);border-radius:var(--radius);padding:36px 32px;text-align:center;color:#fff;margin-top:56px}
+    .footer-cta h2{font-size:1.6rem;font-weight:900;margin-bottom:8px}.footer-cta p{opacity:0.88;margin-bottom:22px;font-size:1rem}
+    .back-link{display:block;text-align:center;margin-top:18px;font-size:0.85rem;color:rgba(255,255,255,0.75);text-decoration:none}.back-link:hover{color:#fff}
+    hr{border:none;border-top:2px solid var(--clr-dot);margin:40px 0}
+    .clock-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;margin:20px 0}
+    .clock-card{background:#fff;border-radius:10px;padding:14px;box-shadow:var(--shadow);text-align:center}
+    .clock-card svg{display:block;margin:0 auto 8px}
+    .clock-label{font-size:0.82rem;font-weight:700;color:var(--clr-navy)}
+    .clock-time{font-family:var(--font-mono);font-size:1.1rem;font-weight:700;color:var(--clr-accent)}
+    @keyframes fadeInUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+    @media(max-width:600px){.page-wrap{padding:16px 14px 48px}.example-body{padding:16px}.footer-cta{padding:28px 20px}}
+  </style>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="page-wrap">
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="index.html">🏠 Home</a><span>›</span>
+    <a href="index.html#grade-2-math">Grade 2 Math</a><span>›</span>
+    <span>Telling Time</span>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-badges">
+      <span class="badge badge-solid">Grade 2</span>
+      <span class="badge badge-outline">Mathematics 🕐</span>
+    </div>
+    <h1>Telling Time</h1>
+    <p class="hero-intro">Reading a clock is one of the most useful everyday skills you can learn! In this guide you will master the two hands of an analog clock, read times to the <strong>hour, half-hour, quarter-hour</strong>, and then in <strong>5-minute steps</strong>.</p>
+    <div class="hero-meta">
+      <span class="meta-pill">⏱ ~6 min read</span>
+      <a href="math-grade2-telling-time-worksheet.html" class="btn btn-primary">📝 Jump to Worksheet →</a>
+    </div>
+  </header>
+
+  <section aria-labelledby="what-heading">
+    <p class="section-label">Section 1</p>
+    <h2 class="section-title" id="what-heading">Parts of a Clock</h2>
+    <div class="card">
+      <p>An <strong>analog clock</strong> has a round face with the numbers 1 to 12. It has two hands:</p>
+      <p>🔴 <strong>Short hand (hour hand)</strong> — moves slowly; it points to the hour. It takes 1 full hour to move from one number to the next.</p>
+      <p>🔵 <strong>Long hand (minute hand)</strong> — moves faster; it goes all the way round the clock in 60 minutes. Each number it passes = 5 minutes.</p>
+    </div>
+    <div class="card" style="margin-top:14px">
+      <p><strong>Key positions of the minute hand:</strong></p>
+      <p>• Points to <strong>12</strong> → 0 minutes (o'clock) &nbsp;|&nbsp; Points to <strong>3</strong> → 15 minutes (quarter past)<br>
+         • Points to <strong>6</strong> → 30 minutes (half past) &nbsp;|&nbsp; Points to <strong>9</strong> → 45 minutes (quarter to)</p>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="method-heading">
+    <p class="section-label">Section 2</p>
+    <h2 class="section-title" id="method-heading">How to Read the Time</h2>
+    <div class="card-tint">
+      <ol class="steps">
+        <li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Read the hour first.</strong> Look at the short hand. If it points directly at a number, that is the hour. If it is between two numbers, use the smaller number (the one it has just passed).</div></li>
+        <li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Read the minutes.</strong> Look at the long hand. Count by 5s from 12 around to where the long hand points: 12→0, 1→5, 2→10, 3→15, 4→20, 5→25, 6→30, 7→35, 8→40, 9→45, 10→50, 11→55.</div></li>
+        <li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Write the time.</strong> Put the hour before the colon and the minutes after: 3:15 (three fifteen). Always write two digits for minutes: 3:05, not 3:5.</div></li>
+      </ol>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="examples-heading">
+    <p class="section-label">Section 3</p>
+    <h2 class="section-title" id="examples-heading">Worked Examples</h2>
+
+    <div class="example-card">
+      <div class="example-header">Example 1 — O'clock (hour hand on a number, minute hand on 12)</div>
+      <div class="example-body">
+        <div class="example-problem">The hour hand points to 4. The minute hand points to 12. What time is it?</div>
+        <div class="example-working">
+          <div class="working-line">Hour hand → 4 → hour is 4 <span>points directly at 4</span></div>
+          <div class="working-line">Minute hand → 12 → 0 minutes</div>
+        </div>
+        <span class="answer-chip">✅ 4:00 (four o'clock)</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">Example 2 — Half past (minute hand on 6)</div>
+      <div class="example-body">
+        <div class="example-problem">The hour hand is between 7 and 8. The minute hand points to 6. What time is it?</div>
+        <div class="example-working">
+          <div class="working-line">Hour hand between 7 and 8 → hour is 7 <span>use the smaller number</span></div>
+          <div class="working-line">Minute hand → 6 → count by 5s from 12: 5,10,15,20,25,30 → 30 minutes</div>
+        </div>
+        <span class="answer-chip">✅ 7:30 (half past seven)</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">Example 3 — Quarter past (minute hand on 3)</div>
+      <div class="example-body">
+        <div class="example-problem">The hour hand is just past 9. The minute hand points to 3. What time is it?</div>
+        <div class="example-working">
+          <div class="working-line">Hour hand just past 9 → hour is 9</div>
+          <div class="working-line">Minute hand → 3 → 5, 10, 15 → 15 minutes</div>
+        </div>
+        <span class="answer-chip">✅ 9:15 (quarter past nine)</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">Example 4 — Quarter to (minute hand on 9)</div>
+      <div class="example-body">
+        <div class="example-problem">The hour hand is between 11 and 12. The minute hand points to 9. What time is it?</div>
+        <div class="example-working">
+          <div class="working-line">Hour hand between 11 and 12 → hour is 11</div>
+          <div class="working-line">Minute hand → 9 → count by 5s from 12: 5,10,15,20,25,30,35,40,45 → 45 minutes</div>
+        </div>
+        <span class="answer-chip">✅ 11:45 (quarter to twelve)</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">Example 5 — 5-minute interval</div>
+      <div class="example-body">
+        <div class="example-problem">The hour hand is just past 2. The minute hand points to 5. What time is it?</div>
+        <div class="example-working">
+          <div class="working-line">Hour hand just past 2 → hour is 2</div>
+          <div class="working-line">Minute hand → 5 → count by 5s: 5, 10, 15, 20, 25 → 25 minutes</div>
+        </div>
+        <span class="answer-chip">✅ 2:25 (twenty-five past two)</span>
+      </div>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="watchout-heading">
+    <p class="section-label">Section 4</p>
+    <h2 class="section-title" id="watchout-heading">Watch Out! ⚠️</h2>
+    <div class="warning-box">
+      <h3>Common Mistakes to Avoid</h3>
+      <ul class="warning-list">
+        <li>
+          <span class="wrong">❌ Mixing up the hands:</span> Using the long hand for hours<br>
+          <span class="right">✅ Short hand = hours, Long hand = minutes. Remember: LONG minutes take longer to count!</span>
+        </li>
+        <li>
+          <span class="wrong">❌ Using the wrong hour when the hand is between two numbers:</span> Saying 8 when the hour hand is between 7 and 8<br>
+          <span class="right">✅ Always use the number the hour hand has ALREADY passed (the smaller one) — 7 in this case.</span>
+        </li>
+        <li>
+          <span class="wrong">❌ Counting each number as 1 minute:</span> Thinking minute hand on 3 = 3 minutes<br>
+          <span class="right">✅ Each number on the clock face = 5 minutes. Count by 5s from 12.</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="ref-heading">
+    <p class="section-label">Section 5</p>
+    <h2 class="section-title" id="ref-heading">Quick Reference</h2>
+    <div class="card-tint">
+      <div class="ref-grid" style="margin-top:0">
+        <div class="ref-item"><div class="ref-term">Minute hand on 12</div><div class="ref-def">0 minutes → o'clock (e.g. 5:00)</div></div>
+        <div class="ref-item"><div class="ref-term">Minute hand on 3</div><div class="ref-def">15 minutes → quarter past (e.g. 5:15)</div></div>
+        <div class="ref-item"><div class="ref-term">Minute hand on 6</div><div class="ref-def">30 minutes → half past (e.g. 5:30)</div></div>
+        <div class="ref-item"><div class="ref-term">Minute hand on 9</div><div class="ref-def">45 minutes → quarter to (e.g. 5:45)</div></div>
+        <div class="ref-item"><div class="ref-term">Each number = 5 min</div><div class="ref-def">Count by 5s from 12 to the minute hand.</div></div>
+        <div class="ref-item"><div class="ref-term">Writing time</div><div class="ref-def">Hour:Minutes → always 2 digits for minutes (3:05 not 3:5)</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer-cta">
+    <h2>Ready to practice? Let's go! 🚀</h2>
+    <p>Test your time-reading skills with 10 interactive questions — Easy or Hard mode.</p>
+    <a href="math-grade2-telling-time-worksheet.html" class="btn btn-white">📝 Start Worksheet →</a>
+    <a href="index.html#grade-2-math" class="back-link">← Back to Grade 2 Math topics</a>
+  </div>
+
+</div>
+</body>
+</html>

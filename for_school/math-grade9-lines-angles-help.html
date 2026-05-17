@@ -1,0 +1,281 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lines &amp; Angles – Grade 9 Math Help</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --ink: #1a1f36; --muted: #5a6076; --accent: #4361EE; --accent-dark: #3451d1;
+      --green: #06d6a0; --orange: #fb8500; --red: #ef233c;
+      --bg: #f4f6fb; --card: #ffffff; --border: #e2e6f0; --radius: 14px;
+      --mono: 'JetBrains Mono', monospace;
+    }
+    body { font-family: 'Nunito', sans-serif; background-color: var(--bg); background-image: radial-gradient(circle, #E8EDF5 1.5px, transparent 1.5px); background-size: 20px 20px; color: var(--ink); min-height: 100vh; }
+    header { background: var(--card); border-bottom: 2px solid var(--border); padding: 0 24px; }
+    .header-inner { max-width: 860px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 52px; }
+    .logo-link { text-decoration: none; display: flex; align-items: center; } .logo-img { height: 36px; width: auto; display: block; }
+    nav a { font-weight: 700; font-size: 0.85rem; color: var(--muted); text-decoration: none; margin-left: 20px; }
+    nav a:hover { color: var(--accent); }
+    .breadcrumb { max-width: 860px; margin: 0 auto; padding: 14px 24px 0; font-size: 0.8rem; color: var(--muted); }
+    .breadcrumb a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 6px; }
+    .hero { max-width: 860px; margin: 0 auto; padding: 28px 24px 0; display: flex; align-items: center; gap: 20px; }
+    .hero-icon { width: 72px; height: 72px; border-radius: 20px; background: var(--accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.8rem; color:#fff; font-weight:700; }
+    .hero h1 { font-size: 1.9rem; font-weight: 900; line-height: 1.15; }
+    .hero p { font-size: 1rem; color: var(--muted); margin-top: 6px; font-weight: 600; }
+    main { max-width: 860px; margin: 28px auto 60px; padding: 0 24px; display: flex; flex-direction: column; gap: 24px; }
+    .card { background: var(--card); border-radius: var(--radius); border: 2px solid var(--border); padding: 28px; }
+    .card h2 { font-size: 1.25rem; font-weight: 900; color: var(--accent); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+    .card p { font-size: 0.95rem; line-height: 1.7; color: var(--ink); margin-bottom: 12px; }
+    .card p:last-child { margin-bottom: 0; }
+    .angle-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin: 14px 0; }
+    @media (max-width: 560px) { .angle-grid { grid-template-columns: 1fr; } }
+    .angle-card { background: #fafbff; border: 2px solid var(--border); border-radius: 12px; padding: 14px 16px; }
+    .angle-card .a-name { font-weight: 900; font-size: 0.9rem; color: var(--accent); margin-bottom: 4px; }
+    .angle-card .a-rule { font-family: var(--mono); font-size: 0.85rem; font-weight: 700; color: var(--accent-dark); margin-bottom: 4px; }
+    .angle-card .a-desc { font-size: 0.85rem; color: var(--muted); }
+    .transversal-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin: 14px 0; }
+    .trans-card { background: #eef1fd; border: 2px solid var(--border); border-radius: 12px; padding: 14px 16px; }
+    .trans-card .t-name { font-weight: 900; font-size: 0.9rem; color: var(--accent-dark); margin-bottom: 4px; }
+    .trans-card .t-rule { font-size: 0.85rem; color: var(--ink); margin-bottom: 2px; }
+    .trans-card .t-eg { font-family: var(--mono); font-size: 0.8rem; color: var(--muted); font-weight: 600; }
+    .examples { display: flex; flex-direction: column; gap: 16px; }
+    .example { border: 2px solid var(--border); border-radius: 12px; padding: 18px 20px; background: #fafbff; }
+    .example-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+    .ex-num { width: 32px; height: 32px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 900; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .example-header h3 { font-size: 1rem; font-weight: 800; }
+    .ex-step { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; font-size: 0.9rem; }
+    .ex-step-num { background: var(--green); color: #fff; border-radius: 50%; width: 22px; height: 22px; font-size: 0.75rem; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    .ex-step p { line-height: 1.5; }
+    code { font-family: var(--mono); background: #eef1fd; border-radius: 5px; padding: 1px 6px; font-size: 0.88em; color: var(--accent-dark); }
+    .answer-box { background: #e8faf4; border: 2px solid var(--green); border-radius: 8px; padding: 10px 14px; margin-top: 10px; font-weight: 800; font-size: 0.95rem; color: #05a07a; }
+    .watch-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .watch-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.92rem; line-height: 1.55; }
+    .watch-badge { background: #fff0f0; color: var(--red); border: 2px solid #ffd6d6; border-radius: 8px; padding: 3px 9px; font-weight: 800; font-size: 0.78rem; flex-shrink: 0; margin-top: 2px; }
+    .ref-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    .ref-table th, .ref-table td { border: 2px solid var(--border); padding: 10px 14px; font-size: 0.88rem; text-align: left; }
+    .ref-table th { background: #eef1fd; font-weight: 800; color: var(--accent-dark); }
+    .cta-bar { background: linear-gradient(135deg, #4361EE 0%, #3a0ca3 100%); border-radius: var(--radius); padding: 28px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .cta-bar h2 { color: #fff; font-size: 1.2rem; font-weight: 900; }
+    .cta-bar p { color: rgba(255,255,255,.8); font-size: 0.9rem; margin-top: 4px; font-weight: 600; }
+    .cta-btn { background: #fff; color: var(--accent); border-radius: 10px; padding: 12px 24px; font-weight: 900; font-size: 1rem; text-decoration: none; white-space: nowrap; transition: transform .15s; }
+    .cta-btn:hover { transform: scale(1.04); }
+    footer { text-align: center; padding: 24px; font-size: 0.8rem; color: var(--muted); font-weight: 600; }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header>
+  <div class="header-inner">
+    <a class="logo-link" href="../index.html"><img src="../logo.png" alt="LearnPad" class="logo-img" /></a>
+    <nav><a href="../index.html">Home</a><a href="index.html">School</a><a href="../learnings/">Tech in Urdu</a></nav>
+  </div>
+</header>
+<div class="breadcrumb">
+  <a href="index.html">Home</a><span>›</span>
+  <a href="index.html#grade9">Grade 9 Math</a><span>›</span>
+  Lines &amp; Angles
+</div>
+<div class="hero">
+  <div class="hero-icon">∠</div>
+  <div>
+    <h1>Lines &amp; Angles</h1>
+    <p>Grade 9 Math &nbsp;·&nbsp; Angle types, parallel lines &amp; transversals</p>
+  </div>
+</div>
+
+<main>
+
+  <!-- Angle Types -->
+  <div class="card">
+    <h2>&#x1F4D0; Types of Angles</h2>
+    <div class="angle-grid">
+      <div class="angle-card">
+        <div class="a-name">Acute</div>
+        <div class="a-rule">0° &lt; θ &lt; 90°</div>
+        <div class="a-desc">Smaller than a right angle</div>
+      </div>
+      <div class="angle-card">
+        <div class="a-name">Right</div>
+        <div class="a-rule">θ = 90°</div>
+        <div class="a-desc">Exactly one quarter-turn</div>
+      </div>
+      <div class="angle-card">
+        <div class="a-name">Obtuse</div>
+        <div class="a-rule">90° &lt; θ &lt; 180°</div>
+        <div class="a-desc">Between a right angle and a straight line</div>
+      </div>
+      <div class="angle-card">
+        <div class="a-name">Straight</div>
+        <div class="a-rule">θ = 180°</div>
+        <div class="a-desc">A flat, straight line</div>
+      </div>
+      <div class="angle-card">
+        <div class="a-name">Reflex</div>
+        <div class="a-rule">180° &lt; θ &lt; 360°</div>
+        <div class="a-desc">More than a straight angle</div>
+      </div>
+      <div class="angle-card">
+        <div class="a-name">Complete</div>
+        <div class="a-rule">θ = 360°</div>
+        <div class="a-desc">Full rotation</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Angle Pairs -->
+  <div class="card">
+    <h2>&#x1F504; Angle Pairs</h2>
+    <div class="angle-grid">
+      <div class="angle-card">
+        <div class="a-name">Complementary</div>
+        <div class="a-rule">∠A + ∠B = 90°</div>
+        <div class="a-desc">Two angles that sum to 90°</div>
+      </div>
+      <div class="angle-card">
+        <div class="a-name">Supplementary</div>
+        <div class="a-rule">∠A + ∠B = 180°</div>
+        <div class="a-desc">Two angles that sum to 180°</div>
+      </div>
+      <div class="angle-card">
+        <div class="a-name">Linear Pair</div>
+        <div class="a-rule">Adjacent; sum = 180°</div>
+        <div class="a-desc">Adjacent angles on a straight line</div>
+      </div>
+      <div class="angle-card">
+        <div class="a-name">Vertically Opposite</div>
+        <div class="a-rule">∠A = ∠C (opposite)</div>
+        <div class="a-desc">Formed by two intersecting lines — always equal</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Parallel Lines & Transversal -->
+  <div class="card">
+    <h2>&#x2225; Parallel Lines &amp; Transversal</h2>
+    <p>When a <strong>transversal</strong> crosses two parallel lines, special angle pairs are formed:</p>
+    <div class="transversal-grid">
+      <div class="trans-card">
+        <div class="t-name">Corresponding Angles</div>
+        <div class="t-rule">Equal (F-shape)</div>
+        <div class="t-eg">∠1 = ∠5, ∠2 = ∠6, etc.</div>
+      </div>
+      <div class="trans-card">
+        <div class="t-name">Alternate Interior Angles</div>
+        <div class="t-rule">Equal (Z-shape)</div>
+        <div class="t-eg">∠3 = ∠6, ∠4 = ∠5</div>
+      </div>
+      <div class="trans-card">
+        <div class="t-name">Alternate Exterior Angles</div>
+        <div class="t-rule">Equal (Z-shape outside)</div>
+        <div class="t-eg">∠1 = ∠8, ∠2 = ∠7</div>
+      </div>
+      <div class="trans-card">
+        <div class="t-name">Co-interior (Same-side)</div>
+        <div class="t-rule">Sum = 180° (C-shape)</div>
+        <div class="t-eg">∠3 + ∠5 = 180°</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Worked Examples -->
+  <div class="card">
+    <h2>&#x270F;&#xFE0F; Worked Examples</h2>
+    <div class="examples">
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">1</div><h3>Find the complement of 34°</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Complementary angles sum to 90°.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>Complement = 90° − 34° = 56°.</p></div>
+        <div class="answer-box">Complement = 56°</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">2</div><h3>Two lines intersect. One angle is 115°. Find the other three angles.</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Vertically opposite to 115° → 115°.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>Linear pair with 115°: 180° − 115° = 65°.</p></div>
+        <div class="ex-step"><div class="ex-step-num">3</div><p>Vertically opposite to 65° → 65°.</p></div>
+        <div class="answer-box">Angles: 115°, 65°, 115°, 65°</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">3</div><h3>Parallel lines cut by transversal. Corresponding angle = 72°. Find alternate interior angle.</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Corresponding angles are equal: the angle at the same position on the other parallel line = 72°.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>Alternate interior angles are also equal to corresponding angles in this configuration = 72°.</p></div>
+        <div class="answer-box">Alternate interior angle = 72°</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">4</div><h3>Co-interior angles are (3x + 10)° and (2x − 5)°. Find x.</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Co-interior angles sum to 180°: (3x + 10) + (2x − 5) = 180.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>5x + 5 = 180 → 5x = 175 → x = 35.</p></div>
+        <div class="answer-box">x = 35 (angles: 115° and 65°)</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">5</div><h3>Angles at a point are 2x°, 3x°, and 4x°. Find each angle.</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Angles at a point sum to 360°: 2x + 3x + 4x = 360.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>9x = 360 → x = 40.</p></div>
+        <div class="ex-step"><div class="ex-step-num">3</div><p>Angles: 80°, 120°, 160°.</p></div>
+        <div class="answer-box">80°, 120°, 160°</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Watch Out -->
+  <div class="card">
+    <h2>&#x26A0;&#xFE0F; Watch Out!</h2>
+    <ul class="watch-list">
+      <li><span class="watch-badge">PARALLEL</span>Corresponding and alternate angle rules ONLY apply when lines are parallel. Always confirm parallelism first.</li>
+      <li><span class="watch-badge">CO-INTERIOR</span>Co-interior angles (same-side interior) are supplementary (sum to 180°), NOT equal.</li>
+      <li><span class="watch-badge">LINEAR PAIR</span>A linear pair must be adjacent AND on a straight line. Not all supplementary angles form a linear pair.</li>
+      <li><span class="watch-badge">VERT. OPP.</span>Vertically opposite angles are always equal — you don't need to know if lines are parallel for this.</li>
+    </ul>
+  </div>
+
+  <!-- Quick Reference -->
+  <div class="card">
+    <h2>&#x1F4CB; Quick Reference</h2>
+    <table class="ref-table">
+      <thead><tr><th>Angle Pair</th><th>Relationship</th><th>Condition</th></tr></thead>
+      <tbody>
+        <tr><td>Complementary</td><td>Sum = 90°</td><td>Any two angles</td></tr>
+        <tr><td>Supplementary</td><td>Sum = 180°</td><td>Any two angles</td></tr>
+        <tr><td>Vertically Opposite</td><td>Equal</td><td>Two intersecting lines</td></tr>
+        <tr><td>Corresponding</td><td>Equal</td><td>Parallel lines + transversal</td></tr>
+        <tr><td>Alternate Interior</td><td>Equal</td><td>Parallel lines + transversal</td></tr>
+        <tr><td>Co-interior</td><td>Sum = 180°</td><td>Parallel lines + transversal</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-bar">
+    <div>
+      <h2>Ready to practise?</h2>
+      <p>Try the interactive worksheet with instant feedback.</p>
+    </div>
+    <a class="cta-btn" href="math-grade9-lines-angles-worksheet.html">Start Worksheet →</a>
+  </div>
+
+</main>
+<footer>© 2025 LearnBright · Free printable &amp; interactive school worksheets</footer>
+</body>
+</html>

@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Statistics (Advanced) – Grade 10 Math Help</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --ink: #1a1f36; --muted: #5a6076; --accent: #4361EE; --accent-dark: #3451d1; --green: #06d6a0; --orange: #fb8500; --red: #ef233c; --bg: #f4f6fb; --card: #ffffff; --border: #e2e6f0; --radius: 14px; --mono: 'JetBrains Mono', monospace; }
+    body { font-family: 'Nunito', sans-serif; background-color: var(--bg); background-image: radial-gradient(circle, #E8EDF5 1.5px, transparent 1.5px); background-size: 20px 20px; color: var(--ink); min-height: 100vh; }
+    header { background: var(--card); border-bottom: 2px solid var(--border); padding: 0 24px; }
+    .header-inner { max-width: 860px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 52px; }
+    .logo-link { text-decoration: none; display: flex; align-items: center; } .logo-img { height: 36px; width: auto; display: block; }
+    nav a { font-weight: 700; font-size: 0.85rem; color: var(--muted); text-decoration: none; margin-left: 20px; }
+    nav a:hover { color: var(--accent); }
+    .breadcrumb { max-width: 860px; margin: 0 auto; padding: 14px 24px 0; font-size: 0.8rem; color: var(--muted); }
+    .breadcrumb a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 6px; }
+    .hero { max-width: 860px; margin: 0 auto; padding: 28px 24px 0; display: flex; align-items: center; gap: 20px; }
+    .hero-icon { width: 72px; height: 72px; border-radius: 20px; background: var(--accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.5rem; color:#fff; font-family: var(--mono); font-weight:700; }
+    .hero h1 { font-size: 1.9rem; font-weight: 900; line-height: 1.15; }
+    .hero p { font-size: 1rem; color: var(--muted); margin-top: 6px; font-weight: 600; }
+    main { max-width: 860px; margin: 28px auto 60px; padding: 0 24px; display: flex; flex-direction: column; gap: 24px; }
+    .card { background: var(--card); border-radius: var(--radius); border: 2px solid var(--border); padding: 28px; }
+    .card h2 { font-size: 1.25rem; font-weight: 900; color: var(--accent); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+    .card p { font-size: 0.95rem; line-height: 1.7; color: var(--ink); margin-bottom: 12px; }
+    .card p:last-child { margin-bottom: 0; }
+    .method-cards { display: flex; flex-direction: column; gap: 12px; margin: 14px 0; }
+    .method-card { background: #eef1fd; border: 2px solid var(--border); border-radius: 12px; padding: 14px 18px; }
+    .method-card .mc-name { font-weight: 900; font-size: 0.92rem; color: var(--accent); margin-bottom: 6px; }
+    .method-card .mc-formula { font-family: var(--mono); font-size: 0.88rem; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
+    .method-card .mc-note { font-size: 0.82rem; color: var(--muted); font-weight: 600; }
+    .data-table { width: 100%; border-collapse: collapse; margin: 14px 0; }
+    .data-table th, .data-table td { border: 2px solid var(--border); padding: 9px 12px; font-size: 0.85rem; text-align: center; }
+    .data-table th { background: #eef1fd; font-weight: 800; color: var(--accent-dark); }
+    .data-table td { font-family: var(--mono); font-weight: 700; }
+    .measure-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin: 14px 0; }
+    @media(max-width:560px){ .measure-grid { grid-template-columns: 1fr; } }
+    .measure-card { background: #fafbff; border: 2px solid var(--border); border-radius: 10px; padding: 12px 14px; }
+    .measure-card .m-name { font-weight: 900; font-size: 0.88rem; color: var(--accent); margin-bottom: 4px; }
+    .measure-card .m-desc { font-size: 0.82rem; color: var(--ink); line-height: 1.5; }
+    .examples { display: flex; flex-direction: column; gap: 16px; }
+    .example { border: 2px solid var(--border); border-radius: 12px; padding: 18px 20px; background: #fafbff; }
+    .example-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+    .ex-num { width: 32px; height: 32px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 900; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .example-header h3 { font-size: 1rem; font-weight: 800; }
+    .ex-step { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; font-size: 0.9rem; }
+    .ex-step-num { background: var(--green); color: #fff; border-radius: 50%; width: 22px; height: 22px; font-size: 0.75rem; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    .ex-step p { line-height: 1.5; }
+    code { font-family: var(--mono); background: #eef1fd; border-radius: 5px; padding: 1px 6px; font-size: 0.88em; color: var(--accent-dark); }
+    .answer-box { background: #e8faf4; border: 2px solid var(--green); border-radius: 8px; padding: 10px 14px; margin-top: 10px; font-weight: 800; font-size: 0.95rem; color: #05a07a; }
+    .watch-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .watch-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.92rem; line-height: 1.55; }
+    .watch-badge { background: #fff0f0; color: var(--red); border: 2px solid #ffd6d6; border-radius: 8px; padding: 3px 9px; font-weight: 800; font-size: 0.78rem; flex-shrink: 0; margin-top: 2px; }
+    .cta-bar { background: linear-gradient(135deg, #4361EE 0%, #3a0ca3 100%); border-radius: var(--radius); padding: 28px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .cta-bar h2 { color: #fff; font-size: 1.2rem; font-weight: 900; }
+    .cta-bar p { color: rgba(255,255,255,.8); font-size: 0.9rem; margin-top: 4px; font-weight: 600; }
+    .cta-btn { background: #fff; color: var(--accent); border-radius: 10px; padding: 12px 24px; font-weight: 900; font-size: 1rem; text-decoration: none; white-space: nowrap; transition: transform .15s; }
+    .cta-btn:hover { transform: scale(1.04); }
+    footer { text-align: center; padding: 24px; font-size: 0.8rem; color: var(--muted); font-weight: 600; }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header>
+  <div class="header-inner">
+    <a class="logo-link" href="../index.html"><img src="../logo.png" alt="LearnPad" class="logo-img" /></a>
+    <nav><a href="../index.html">Home</a><a href="index.html">School</a><a href="../learnings/">Tech in Urdu</a></nav>
+  </div>
+</header>
+<div class="breadcrumb">
+  <a href="index.html">Home</a><span>›</span>
+  <a href="index.html#grade10">Grade 10 Math</a><span>›</span>
+  Statistics Advanced
+</div>
+<div class="hero">
+  <div class="hero-icon">x̄</div>
+  <div>
+    <h1>Statistics (Advanced)</h1>
+    <p>Grade 10 Math &nbsp;·&nbsp; Grouped data, mean methods, median &amp; mode</p>
+  </div>
+</div>
+<main>
+
+  <div class="card">
+    <h2>&#x1F4CA; Measures of Central Tendency</h2>
+    <div class="measure-grid">
+      <div class="measure-card"><div class="m-name">Mean (x̄)</div><div class="m-desc">Sum of all values divided by the number of values.</div></div>
+      <div class="measure-card"><div class="m-name">Median</div><div class="m-desc">Middle value when data is arranged in order. For even n: average of two middle values.</div></div>
+      <div class="measure-card"><div class="m-name">Mode</div><div class="m-desc">Value that appears most frequently. A dataset can have no mode, one mode, or multiple modes.</div></div>
+    </div>
+    <p>For <strong>grouped data</strong>, we use class intervals and midpoints (class marks) to estimate these measures.</p>
+  </div>
+
+  <div class="card">
+    <h2>&#x1F4D0; Mean of Grouped Data — Three Methods</h2>
+    <div class="method-cards">
+      <div class="method-card">
+        <div class="mc-name">Direct Method</div>
+        <div class="mc-formula">x̄ = Σ(fᵢxᵢ) / Σfᵢ</div>
+        <div class="mc-note">xᵢ = midpoint of class, fᵢ = frequency. Multiply each midpoint by its frequency, sum all, divide by total frequency.</div>
+      </div>
+      <div class="method-card">
+        <div class="mc-name">Assumed Mean Method (Shortcut)</div>
+        <div class="mc-formula">x̄ = a + Σ(fᵢdᵢ) / Σfᵢ &nbsp;&nbsp; where dᵢ = xᵢ − a</div>
+        <div class="mc-note">a = assumed mean (usually the middle class midpoint). Reduces arithmetic by working with smaller numbers.</div>
+      </div>
+      <div class="method-card">
+        <div class="mc-name">Step Deviation Method</div>
+        <div class="mc-formula">x̄ = a + (Σfᵢuᵢ / Σfᵢ) × h &nbsp;&nbsp; where uᵢ = dᵢ / h</div>
+        <div class="mc-note">h = class width. Further simplifies when class width is uniform.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>&#x1F4D0; Median &amp; Mode of Grouped Data</h2>
+    <p><strong>Median:</strong> <code>Median = l + [(n/2 − cf) / f] × h</code></p>
+    <p>Where: <strong>l</strong> = lower class boundary of median class, <strong>n</strong> = total frequency, <strong>cf</strong> = cumulative frequency before median class, <strong>f</strong> = frequency of median class, <strong>h</strong> = class width.</p>
+    <p><strong>Median class:</strong> The class whose cumulative frequency first exceeds n/2.</p>
+    <p style="margin-top:12px;"><strong>Mode:</strong> <code>Mode = l + [(f₁ − f₀) / (2f₁ − f₀ − f₂)] × h</code></p>
+    <p>Where: <strong>l</strong> = lower boundary of modal class, <strong>f₁</strong> = frequency of modal class, <strong>f₀</strong> = frequency before modal class, <strong>f₂</strong> = frequency after modal class, <strong>h</strong> = class width.</p>
+    <p><strong>Modal class:</strong> The class with the highest frequency.</p>
+  </div>
+
+  <div class="card">
+    <h2>&#x270F;&#xFE0F; Worked Examples</h2>
+    <div class="examples">
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">1</div><h3>Find the mean of grouped data using the direct method.</h3></div>
+        <table class="data-table" style="margin-bottom:12px;">
+          <thead><tr><th>Class</th><th>f</th><th>x (mid)</th><th>fx</th></tr></thead>
+          <tbody>
+            <tr><td>10–20</td><td>5</td><td>15</td><td>75</td></tr>
+            <tr><td>20–30</td><td>8</td><td>25</td><td>200</td></tr>
+            <tr><td>30–40</td><td>7</td><td>35</td><td>245</td></tr>
+            <tr><td><strong>Total</strong></td><td><strong>20</strong></td><td>—</td><td><strong>520</strong></td></tr>
+          </tbody>
+        </table>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>x̄ = Σfx / Σf = 520 / 20 = 26.</p></div>
+        <div class="answer-box">Mean = 26</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">2</div><h3>Find the median. n = 40. Median class: 30–40 (cf before = 17, f = 12, h = 10, l = 30).</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>n/2 = 20. Median class is 30–40 (first cf ≥ 20).</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>Median = 30 + [(20 − 17)/12] × 10 = 30 + (3/12)×10 = 30 + 2.5 = 32.5.</p></div>
+        <div class="answer-box">Median = 32.5</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">3</div><h3>Find the mode. Modal class 20–30. f₁=12, f₀=8, f₂=7, l=20, h=10.</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Mode = 20 + [(12−8)/(2×12−8−7)] × 10 = 20 + [4/9] × 10 = 20 + 4.44 ≈ 24.4.</p></div>
+        <div class="answer-box">Mode ≈ 24.4</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">4</div><h3>Use assumed mean a = 25 to find mean. Classes 10–20 (f=4, d=−10), 20–30 (f=6, d=0), 30–40 (f=5, d=10).</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Σfd = 4(−10)+6(0)+5(10) = −40+0+50 = 10. Σf = 15.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>x̄ = 25 + 10/15 = 25 + 0.67 ≈ 25.67.</p></div>
+        <div class="answer-box">Mean ≈ 25.67</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">5</div><h3>Empirical relationship: If mean = 30 and median = 28, estimate the mode.</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Empirical formula: Mode ≈ 3 × Median − 2 × Mean.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>Mode ≈ 3(28) − 2(30) = 84 − 60 = 24.</p></div>
+        <div class="answer-box">Mode ≈ 24</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>&#x26A0;&#xFE0F; Watch Out!</h2>
+    <ul class="watch-list">
+      <li><span class="watch-badge">MIDPOINT</span>The class midpoint xᵢ = (lower boundary + upper boundary) / 2. Use this, not either boundary alone.</li>
+      <li><span class="watch-badge">cf ORDER</span>Cumulative frequency is running total — add frequencies one class at a time from the top down.</li>
+      <li><span class="watch-badge">MEDIAN CLASS</span>The median class is where cumulative frequency first reaches or exceeds n/2, not exactly equals it.</li>
+      <li><span class="watch-badge">EMPIRICAL</span>Mode = 3 Median − 2 Mean is an empirical approximation, not an exact formula. Only use for estimation.</li>
+    </ul>
+  </div>
+
+  <div class="cta-bar">
+    <div>
+      <h2>Ready to practise?</h2>
+      <p>Try the interactive worksheet with instant feedback.</p>
+    </div>
+    <a class="cta-btn" href="math-grade10-statistics-advanced-worksheet.html">Start Worksheet →</a>
+  </div>
+
+</main>
+<footer>© 2025 LearnBright · Free printable &amp; interactive school worksheets</footer>
+</body>
+</html>

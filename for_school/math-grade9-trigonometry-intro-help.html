@@ -1,0 +1,237 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Introduction to Trigonometry – Grade 9 Math Help</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --ink: #1a1f36; --muted: #5a6076; --accent: #4361EE; --accent-dark: #3451d1;
+      --green: #06d6a0; --orange: #fb8500; --red: #ef233c;
+      --bg: #f4f6fb; --card: #ffffff; --border: #e2e6f0; --radius: 14px;
+      --mono: 'JetBrains Mono', monospace;
+    }
+    body { font-family: 'Nunito', sans-serif; background-color: var(--bg); background-image: radial-gradient(circle, #E8EDF5 1.5px, transparent 1.5px); background-size: 20px 20px; color: var(--ink); min-height: 100vh; }
+    header { background: var(--card); border-bottom: 2px solid var(--border); padding: 0 24px; }
+    .header-inner { max-width: 860px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 52px; }
+    .logo-link { text-decoration: none; display: flex; align-items: center; } .logo-img { height: 36px; width: auto; display: block; }
+    nav a { font-weight: 700; font-size: 0.85rem; color: var(--muted); text-decoration: none; margin-left: 20px; }
+    nav a:hover { color: var(--accent); }
+    .breadcrumb { max-width: 860px; margin: 0 auto; padding: 14px 24px 0; font-size: 0.8rem; color: var(--muted); }
+    .breadcrumb a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 6px; }
+    .hero { max-width: 860px; margin: 0 auto; padding: 28px 24px 0; display: flex; align-items: center; gap: 20px; }
+    .hero-icon { width: 72px; height: 72px; border-radius: 20px; background: var(--accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1rem; color:#fff; font-family: var(--mono); font-weight:700; }
+    .hero h1 { font-size: 1.9rem; font-weight: 900; line-height: 1.15; }
+    .hero p { font-size: 1rem; color: var(--muted); margin-top: 6px; font-weight: 600; }
+    main { max-width: 860px; margin: 28px auto 60px; padding: 0 24px; display: flex; flex-direction: column; gap: 24px; }
+    .card { background: var(--card); border-radius: var(--radius); border: 2px solid var(--border); padding: 28px; }
+    .card h2 { font-size: 1.25rem; font-weight: 900; color: var(--accent); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+    .card p { font-size: 0.95rem; line-height: 1.7; color: var(--ink); margin-bottom: 12px; }
+    .card p:last-child { margin-bottom: 0; }
+    .ratio-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 14px 0; }
+    @media (max-width: 560px) { .ratio-grid { grid-template-columns: 1fr; } }
+    .ratio-card { background: #eef1fd; border: 2px solid var(--border); border-radius: 12px; padding: 16px; text-align: center; }
+    .ratio-card .r-name { font-weight: 900; font-size: 1.1rem; color: var(--accent); margin-bottom: 6px; }
+    .ratio-card .r-formula { font-family: var(--mono); font-size: 0.88rem; font-weight: 700; color: var(--accent-dark); }
+    .ratio-card .r-soh { font-size: 0.8rem; color: var(--muted); margin-top: 4px; font-weight: 700; }
+    .tri-diagram { display: flex; justify-content: center; margin: 16px 0; }
+    .std-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    .std-table th, .std-table td { border: 2px solid var(--border); padding: 10px 14px; font-size: 0.88rem; text-align: center; }
+    .std-table th { background: #eef1fd; font-weight: 800; color: var(--accent-dark); }
+    .std-table td:first-child { font-weight: 800; text-align: left; }
+    .identity-box { background: #eef1fd; border: 2px solid var(--accent); border-radius: 10px; padding: 14px 18px; margin: 14px 0; font-family: var(--mono); font-size: 0.95rem; font-weight: 700; color: var(--accent-dark); text-align: center; }
+    .examples { display: flex; flex-direction: column; gap: 16px; }
+    .example { border: 2px solid var(--border); border-radius: 12px; padding: 18px 20px; background: #fafbff; }
+    .example-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+    .ex-num { width: 32px; height: 32px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 900; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .example-header h3 { font-size: 1rem; font-weight: 800; }
+    .ex-step { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; font-size: 0.9rem; }
+    .ex-step-num { background: var(--green); color: #fff; border-radius: 50%; width: 22px; height: 22px; font-size: 0.75rem; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    .ex-step p { line-height: 1.5; }
+    code { font-family: var(--mono); background: #eef1fd; border-radius: 5px; padding: 1px 6px; font-size: 0.88em; color: var(--accent-dark); }
+    .answer-box { background: #e8faf4; border: 2px solid var(--green); border-radius: 8px; padding: 10px 14px; margin-top: 10px; font-weight: 800; font-size: 0.95rem; color: #05a07a; }
+    .watch-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .watch-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.92rem; line-height: 1.55; }
+    .watch-badge { background: #fff0f0; color: var(--red); border: 2px solid #ffd6d6; border-radius: 8px; padding: 3px 9px; font-weight: 800; font-size: 0.78rem; flex-shrink: 0; margin-top: 2px; }
+    .cta-bar { background: linear-gradient(135deg, #4361EE 0%, #3a0ca3 100%); border-radius: var(--radius); padding: 28px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .cta-bar h2 { color: #fff; font-size: 1.2rem; font-weight: 900; }
+    .cta-bar p { color: rgba(255,255,255,.8); font-size: 0.9rem; margin-top: 4px; font-weight: 600; }
+    .cta-btn { background: #fff; color: var(--accent); border-radius: 10px; padding: 12px 24px; font-weight: 900; font-size: 1rem; text-decoration: none; white-space: nowrap; transition: transform .15s; }
+    .cta-btn:hover { transform: scale(1.04); }
+    footer { text-align: center; padding: 24px; font-size: 0.8rem; color: var(--muted); font-weight: 600; }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header>
+  <div class="header-inner">
+    <a class="logo-link" href="../index.html"><img src="../logo.png" alt="LearnPad" class="logo-img" /></a>
+    <nav><a href="../index.html">Home</a><a href="index.html">School</a><a href="../learnings/">Tech in Urdu</a></nav>
+  </div>
+</header>
+<div class="breadcrumb">
+  <a href="index.html">Home</a><span>›</span>
+  <a href="index.html#grade9">Grade 9 Math</a><span>›</span>
+  Trigonometry Intro
+</div>
+<div class="hero">
+  <div class="hero-icon">sin θ</div>
+  <div>
+    <h1>Introduction to Trigonometry</h1>
+    <p>Grade 9 Math &nbsp;·&nbsp; Right-triangle ratios, SOH-CAH-TOA &amp; standard angles</p>
+  </div>
+</div>
+
+<main>
+
+  <!-- The Three Ratios -->
+  <div class="card">
+    <h2>&#x1F4D0; The Three Trigonometric Ratios</h2>
+    <p>In a right-angled triangle, for a given angle θ:</p>
+    <div class="ratio-grid">
+      <div class="ratio-card">
+        <div class="r-name">sin θ</div>
+        <div class="r-formula">Opposite / Hypotenuse</div>
+        <div class="r-soh">SOH</div>
+      </div>
+      <div class="ratio-card">
+        <div class="r-name">cos θ</div>
+        <div class="r-formula">Adjacent / Hypotenuse</div>
+        <div class="r-soh">CAH</div>
+      </div>
+      <div class="ratio-card">
+        <div class="r-name">tan θ</div>
+        <div class="r-formula">Opposite / Adjacent</div>
+        <div class="r-soh">TOA</div>
+      </div>
+    </div>
+    <p><strong>Memory trick:</strong> <em>SOH-CAH-TOA</em> — pronounce it like one word.</p>
+    <p>The <strong>hypotenuse</strong> is always the longest side, opposite the right angle. <strong>Opposite</strong> and <strong>adjacent</strong> depend on which angle θ you are using.</p>
+  </div>
+
+  <!-- Triangle Diagram -->
+  <div class="card">
+    <h2>&#x1F4D0; Right Triangle Diagram</h2>
+    <div class="tri-diagram">
+      <svg width="280" height="180" viewBox="0 0 280 180" font-family="Nunito, sans-serif">
+        <!-- Triangle -->
+        <polygon points="30,150 250,150 250,30" fill="#eef1fd" stroke="#4361EE" stroke-width="2.5"/>
+        <!-- Right angle box -->
+        <rect x="234" y="134" width="16" height="16" fill="none" stroke="#4361EE" stroke-width="2"/>
+        <!-- Labels -->
+        <text x="130" y="170" text-anchor="middle" font-size="13" font-weight="800" fill="#06d6a0">Adjacent</text>
+        <text x="265" y="96" text-anchor="start" font-size="13" font-weight="800" fill="#fb8500">Opposite</text>
+        <text x="120" y="80" text-anchor="middle" font-size="13" font-weight="800" fill="#4361EE">Hypotenuse</text>
+        <!-- Angle θ arc -->
+        <path d="M50,150 A25,25 0 0,0 44,129" fill="none" stroke="#3a0ca3" stroke-width="2"/>
+        <text x="60" y="142" font-size="14" font-weight="900" fill="#3a0ca3">θ</text>
+      </svg>
+    </div>
+    <p style="text-align:center; font-size:0.9rem; color:var(--muted);">Adjacent (green) · Opposite (orange) · Hypotenuse (blue)</p>
+  </div>
+
+  <!-- Standard Angles -->
+  <div class="card">
+    <h2>&#x1F4CB; Standard Angle Values</h2>
+    <table class="std-table">
+      <thead><tr><th>Ratio</th><th>0°</th><th>30°</th><th>45°</th><th>60°</th><th>90°</th></tr></thead>
+      <tbody>
+        <tr><td>sin θ</td><td>0</td><td>½</td><td>√2/2</td><td>√3/2</td><td>1</td></tr>
+        <tr><td>cos θ</td><td>1</td><td>√3/2</td><td>√2/2</td><td>½</td><td>0</td></tr>
+        <tr><td>tan θ</td><td>0</td><td>1/√3</td><td>1</td><td>√3</td><td>undefined</td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top:12px; font-size:0.88rem; color:var(--muted);">Note: √2/2 ≈ 0.707, √3/2 ≈ 0.866, 1/√3 ≈ 0.577</p>
+  </div>
+
+  <!-- Pythagorean Identity -->
+  <div class="card">
+    <h2>&#x1F50D; Key Identity</h2>
+    <div class="identity-box">sin²θ + cos²θ = 1</div>
+    <p>This holds for any angle θ. It comes directly from the Pythagorean theorem: (opp)² + (adj)² = (hyp)², divided by hyp².</p>
+    <p>Also useful: <code>tan θ = sin θ / cos θ</code></p>
+  </div>
+
+  <!-- Worked Examples -->
+  <div class="card">
+    <h2>&#x270F;&#xFE0F; Worked Examples</h2>
+    <div class="examples">
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">1</div><h3>In a right triangle, opposite = 3, hypotenuse = 5. Find sin θ, cos θ, tan θ.</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Adjacent = √(5² − 3²) = √(25 − 9) = √16 = 4 (Pythagoras).</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>sin θ = 3/5, cos θ = 4/5, tan θ = 3/4.</p></div>
+        <div class="answer-box">sin θ = 0.6, cos θ = 0.8, tan θ = 0.75</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">2</div><h3>Find the value of sin 30° + cos 60°</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>From the standard table: sin 30° = ½, cos 60° = ½.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>½ + ½ = 1.</p></div>
+        <div class="answer-box">sin 30° + cos 60° = 1</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">3</div><h3>If sin θ = 5/13, find cos θ using the identity</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>sin²θ + cos²θ = 1 → cos²θ = 1 − (5/13)² = 1 − 25/169 = 144/169.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>cos θ = √(144/169) = 12/13.</p></div>
+        <div class="answer-box">cos θ = 12/13</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">4</div><h3>A ladder leans against a wall. Angle with ground = 60°, ladder length = 10 m. Find height.</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Height = opposite, ladder = hypotenuse. Use sin 60° = opp/hyp.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>Height = 10 × sin 60° = 10 × (√3/2) = 5√3 ≈ 8.66 m.</p></div>
+        <div class="answer-box">Height ≈ 8.66 m (= 5√3 m)</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">5</div><h3>Prove: tan²θ + 1 = sec²θ (where sec θ = 1/cos θ)</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Start from sin²θ + cos²θ = 1. Divide every term by cos²θ.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>sin²θ/cos²θ + 1 = 1/cos²θ → tan²θ + 1 = sec²θ. ✓</p></div>
+        <div class="answer-box">tan²θ + 1 = sec²θ — proved</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Watch Out -->
+  <div class="card">
+    <h2>&#x26A0;&#xFE0F; Watch Out!</h2>
+    <ul class="watch-list">
+      <li><span class="watch-badge">RIGHT ∠</span>These ratios only apply in right-angled triangles. For non-right triangles, use the sine/cosine rules.</li>
+      <li><span class="watch-badge">OPPOSITE</span>Opposite and adjacent sides depend on WHICH angle you label as θ. Relabelling changes the ratio.</li>
+      <li><span class="watch-badge">tan 90°</span>tan 90° is undefined because cos 90° = 0 (division by zero).</li>
+      <li><span class="watch-badge">HYPOTENUSE</span>The hypotenuse is always opposite the right angle — it never changes regardless of which angle is θ.</li>
+    </ul>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-bar">
+    <div>
+      <h2>Ready to practise?</h2>
+      <p>Try the interactive worksheet with instant feedback.</p>
+    </div>
+    <a class="cta-btn" href="math-grade9-trigonometry-intro-worksheet.html">Start Worksheet →</a>
+  </div>
+
+</main>
+<footer>© 2025 LearnBright · Free printable &amp; interactive school worksheets</footer>
+</body>
+</html>

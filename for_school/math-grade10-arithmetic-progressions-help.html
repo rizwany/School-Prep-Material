@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arithmetic Progressions – Grade 10 Math Help</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --ink: #1a1f36; --muted: #5a6076; --accent: #4361EE; --accent-dark: #3451d1; --green: #06d6a0; --orange: #fb8500; --red: #ef233c; --bg: #f4f6fb; --card: #ffffff; --border: #e2e6f0; --radius: 14px; --mono: 'JetBrains Mono', monospace; }
+    body { font-family: 'Nunito', sans-serif; background-color: var(--bg); background-image: radial-gradient(circle, #E8EDF5 1.5px, transparent 1.5px); background-size: 20px 20px; color: var(--ink); min-height: 100vh; }
+    header { background: var(--card); border-bottom: 2px solid var(--border); padding: 0 24px; }
+    .header-inner { max-width: 860px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 52px; }
+    .logo-link { text-decoration: none; display: flex; align-items: center; } .logo-img { height: 36px; width: auto; display: block; }
+    nav a { font-weight: 700; font-size: 0.85rem; color: var(--muted); text-decoration: none; margin-left: 20px; }
+    nav a:hover { color: var(--accent); }
+    .breadcrumb { max-width: 860px; margin: 0 auto; padding: 14px 24px 0; font-size: 0.8rem; color: var(--muted); }
+    .breadcrumb a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 6px; }
+    .hero { max-width: 860px; margin: 0 auto; padding: 28px 24px 0; display: flex; align-items: center; gap: 20px; }
+    .hero-icon { width: 72px; height: 72px; border-radius: 20px; background: var(--accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.3rem; color:#fff; font-family: var(--mono); font-weight:700; }
+    .hero h1 { font-size: 1.9rem; font-weight: 900; line-height: 1.15; }
+    .hero p { font-size: 1rem; color: var(--muted); margin-top: 6px; font-weight: 600; }
+    main { max-width: 860px; margin: 28px auto 60px; padding: 0 24px; display: flex; flex-direction: column; gap: 24px; }
+    .card { background: var(--card); border-radius: var(--radius); border: 2px solid var(--border); padding: 28px; }
+    .card h2 { font-size: 1.25rem; font-weight: 900; color: var(--accent); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+    .card p { font-size: 0.95rem; line-height: 1.7; color: var(--ink); margin-bottom: 12px; }
+    .card p:last-child { margin-bottom: 0; }
+    .formula-cards { display: flex; flex-direction: column; gap: 12px; margin: 14px 0; }
+    .formula-card { background: #eef1fd; border: 2px solid var(--border); border-radius: 12px; padding: 16px 20px; display: flex; align-items: center; gap: 20px; }
+    .fc-label { font-weight: 900; font-size: 0.88rem; color: var(--accent); min-width: 110px; flex-shrink: 0; }
+    .fc-formula { font-family: var(--mono); font-size: 1rem; font-weight: 700; color: var(--ink); }
+    .fc-desc { font-size: 0.83rem; color: var(--muted); margin-top: 4px; }
+    .seq-vis { display: flex; align-items: center; gap: 8px; margin: 14px 0; flex-wrap: wrap; }
+    .seq-box { background: #eef1fd; border: 2px solid var(--accent); border-radius: 8px; padding: 8px 14px; font-family: var(--mono); font-weight: 700; font-size: 0.95rem; color: var(--accent-dark); }
+    .seq-arrow { font-size: 1.2rem; color: var(--muted); font-weight: 900; }
+    .seq-d { font-size: 0.8rem; color: var(--muted); font-weight: 700; text-align: center; }
+    .examples { display: flex; flex-direction: column; gap: 16px; }
+    .example { border: 2px solid var(--border); border-radius: 12px; padding: 18px 20px; background: #fafbff; }
+    .example-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+    .ex-num { width: 32px; height: 32px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 900; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .example-header h3 { font-size: 1rem; font-weight: 800; }
+    .ex-step { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; font-size: 0.9rem; }
+    .ex-step-num { background: var(--green); color: #fff; border-radius: 50%; width: 22px; height: 22px; font-size: 0.75rem; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    .ex-step p { line-height: 1.5; }
+    code { font-family: var(--mono); background: #eef1fd; border-radius: 5px; padding: 1px 6px; font-size: 0.88em; color: var(--accent-dark); }
+    .answer-box { background: #e8faf4; border: 2px solid var(--green); border-radius: 8px; padding: 10px 14px; margin-top: 10px; font-weight: 800; font-size: 0.95rem; color: #05a07a; }
+    .watch-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .watch-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.92rem; line-height: 1.55; }
+    .watch-badge { background: #fff0f0; color: var(--red); border: 2px solid #ffd6d6; border-radius: 8px; padding: 3px 9px; font-weight: 800; font-size: 0.78rem; flex-shrink: 0; margin-top: 2px; }
+    .ref-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    .ref-table th, .ref-table td { border: 2px solid var(--border); padding: 10px 14px; font-size: 0.88rem; text-align: left; }
+    .ref-table th { background: #eef1fd; font-weight: 800; color: var(--accent-dark); }
+    .cta-bar { background: linear-gradient(135deg, #4361EE 0%, #3a0ca3 100%); border-radius: var(--radius); padding: 28px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .cta-bar h2 { color: #fff; font-size: 1.2rem; font-weight: 900; }
+    .cta-bar p { color: rgba(255,255,255,.8); font-size: 0.9rem; margin-top: 4px; font-weight: 600; }
+    .cta-btn { background: #fff; color: var(--accent); border-radius: 10px; padding: 12px 24px; font-weight: 900; font-size: 1rem; text-decoration: none; white-space: nowrap; transition: transform .15s; }
+    .cta-btn:hover { transform: scale(1.04); }
+    footer { text-align: center; padding: 24px; font-size: 0.8rem; color: var(--muted); font-weight: 600; }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header>
+  <div class="header-inner">
+    <a class="logo-link" href="../index.html"><img src="../logo.png" alt="LearnPad" class="logo-img" /></a>
+    <nav><a href="../index.html">Home</a><a href="index.html">School</a><a href="../learnings/">Tech in Urdu</a></nav>
+  </div>
+</header>
+<div class="breadcrumb">
+  <a href="index.html">Home</a><span>›</span>
+  <a href="index.html#grade10">Grade 10 Math</a><span>›</span>
+  Arithmetic Progressions
+</div>
+<div class="hero">
+  <div class="hero-icon">a,d</div>
+  <div>
+    <h1>Arithmetic Progressions</h1>
+    <p>Grade 10 Math &nbsp;·&nbsp; nth term, sums &amp; AP properties</p>
+  </div>
+</div>
+<main>
+
+  <div class="card">
+    <h2>&#x1F522; What is an AP?</h2>
+    <p>An <strong>Arithmetic Progression (AP)</strong> is a sequence where each term after the first is obtained by adding a fixed number called the <strong>common difference (d)</strong>.</p>
+    <p>General form: <code>a, a+d, a+2d, a+3d, …</code> where <strong>a</strong> is the first term and <strong>d</strong> can be positive, negative, or zero.</p>
+    <div class="seq-vis">
+      <div class="seq-box">3</div>
+      <div>
+        <div class="seq-arrow">→</div>
+        <div class="seq-d">+4</div>
+      </div>
+      <div class="seq-box">7</div>
+      <div>
+        <div class="seq-arrow">→</div>
+        <div class="seq-d">+4</div>
+      </div>
+      <div class="seq-box">11</div>
+      <div>
+        <div class="seq-arrow">→</div>
+        <div class="seq-d">+4</div>
+      </div>
+      <div class="seq-box">15</div>
+      <div>
+        <div class="seq-arrow">→</div>
+        <div class="seq-d">+4</div>
+      </div>
+      <div class="seq-box">19 …</div>
+    </div>
+    <p style="font-size:0.88rem;color:var(--muted);">Here a = 3, d = 4.</p>
+  </div>
+
+  <div class="card">
+    <h2>&#x1F4D0; Key Formulas</h2>
+    <div class="formula-cards">
+      <div class="formula-card">
+        <div>
+          <div class="fc-label">nth Term</div>
+          <div class="fc-formula">aₙ = a + (n − 1)d</div>
+          <div class="fc-desc">a = first term, d = common difference, n = term number</div>
+        </div>
+      </div>
+      <div class="formula-card">
+        <div>
+          <div class="fc-label">Sum (n terms)</div>
+          <div class="fc-formula">Sₙ = n/2 × [2a + (n − 1)d]</div>
+          <div class="fc-desc">Use when a and d are known</div>
+        </div>
+      </div>
+      <div class="formula-card">
+        <div>
+          <div class="fc-label">Sum (first &amp; last)</div>
+          <div class="fc-formula">Sₙ = n/2 × (a + l)</div>
+          <div class="fc-desc">l = last term. Use when first and last terms are known</div>
+        </div>
+      </div>
+      <div class="formula-card">
+        <div>
+          <div class="fc-label">Common Difference</div>
+          <div class="fc-formula">d = aₙ − aₙ₋₁</div>
+          <div class="fc-desc">Subtract any term from the next term</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>&#x270F;&#xFE0F; Worked Examples</h2>
+    <div class="examples">
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">1</div><h3>Find the 15th term of the AP: 4, 7, 10, 13, …</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>a = 4, d = 7 − 4 = 3, n = 15.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>a₁₅ = 4 + (15−1)×3 = 4 + 42 = 46.</p></div>
+        <div class="answer-box">15th term = 46</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">2</div><h3>Find the sum of the first 20 terms of 2, 5, 8, 11, …</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>a = 2, d = 3, n = 20.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>S₂₀ = 20/2 × [2(2) + 19×3] = 10 × [4 + 57] = 10 × 61 = 610.</p></div>
+        <div class="answer-box">S₂₀ = 610</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">3</div><h3>The 3rd term of an AP is 12 and the 7th term is 24. Find a and d.</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>a₃ = a + 2d = 12 &nbsp;and&nbsp; a₇ = a + 6d = 24.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>Subtract: 4d = 12 → d = 3.</p></div>
+        <div class="ex-step"><div class="ex-step-num">3</div><p>a = 12 − 2(3) = 6.</p></div>
+        <div class="answer-box">a = 6, d = 3</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">4</div><h3>Which term of the AP 5, 11, 17, … is 95?</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>a = 5, d = 6. Set aₙ = 95: 5 + (n−1)×6 = 95.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>(n−1)×6 = 90 → n−1 = 15 → n = 16.</p></div>
+        <div class="answer-box">95 is the 16th term</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">5</div><h3>Sum of first n terms of an AP is 3n² + 5n. Find the 8th term.</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>aₙ = Sₙ − Sₙ₋₁ for n ≥ 2.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>S₈ = 3(64)+5(8) = 192+40 = 232. S₇ = 3(49)+5(7) = 147+35 = 182.</p></div>
+        <div class="ex-step"><div class="ex-step-num">3</div><p>a₈ = 232 − 182 = 50.</p></div>
+        <div class="answer-box">8th term = 50</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>&#x26A0;&#xFE0F; Watch Out!</h2>
+    <ul class="watch-list">
+      <li><span class="watch-badge">n STARTS AT 1</span>In <code>aₙ = a + (n−1)d</code>, n is the position (1st term, 2nd term…), not an index starting at 0.</li>
+      <li><span class="watch-badge">NEGATIVE d</span>An AP can decrease: 20, 15, 10, … has d = −5. Always subtract consecutive terms to find d.</li>
+      <li><span class="watch-badge">SUM vs TERM</span><code>Sₙ</code> is the sum of the first n terms. <code>aₙ</code> is the nth term. Do not confuse them.</li>
+      <li><span class="watch-badge">a₁ vs a</span>The first term is written as <code>a</code> or <code>a₁</code>. Both mean the same thing.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>&#x1F4CB; Quick Reference</h2>
+    <table class="ref-table">
+      <thead><tr><th>Formula</th><th>Expression</th><th>Variables</th></tr></thead>
+      <tbody>
+        <tr><td>nth term</td><td><code>aₙ = a + (n−1)d</code></td><td>a=first, d=diff, n=position</td></tr>
+        <tr><td>Sum (n terms)</td><td><code>Sₙ = n/2·[2a+(n−1)d]</code></td><td>—</td></tr>
+        <tr><td>Sum (a and l)</td><td><code>Sₙ = n/2·(a+l)</code></td><td>l = last term</td></tr>
+        <tr><td>Common difference</td><td><code>d = a₂ − a₁</code></td><td>Any consecutive pair</td></tr>
+        <tr><td>Middle term</td><td><code>2b = a + c</code></td><td>a, b, c in AP</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="cta-bar">
+    <div>
+      <h2>Ready to practise?</h2>
+      <p>Try the interactive worksheet with instant feedback.</p>
+    </div>
+    <a class="cta-btn" href="math-grade10-arithmetic-progressions-worksheet.html">Start Worksheet →</a>
+  </div>
+
+</main>
+<footer>© 2025 LearnBright · Free printable &amp; interactive school worksheets</footer>
+</body>
+</html>

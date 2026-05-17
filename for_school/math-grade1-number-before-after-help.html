@@ -1,0 +1,276 @@
+﻿<!-- Math | Grade 1 | Number Before & After | help -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Number Before &amp; After — Grade 1 Math | LearnPad</title>
+  <meta name="description" content="Learn what comes before and after any number, and how to find the number between two numbers, for Grade 1." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{--clr-bg:#ffffff;--clr-dot:#E8EDF5;--clr-accent:#4361EE;--clr-accent-dark:#3451D1;--clr-navy:#1A1A3E;--clr-tint:#EEF0FF;--clr-green:#2DC653;--clr-green-bg:#F0FFF4;--clr-red:#E63946;--clr-red-bg:#FFF0F1;--clr-amber:#F4A261;--clr-amber-bg:#FFFBF5;--clr-text:#2D2D4E;--clr-muted:#6B7280;--font-display:'Nunito',sans-serif;--font-mono:'JetBrains Mono',monospace;--radius:12px;--shadow:0 2px 16px rgba(67,97,238,0.08);--shadow-hover:0 8px 28px rgba(67,97,238,0.18)}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:var(--font-display);background-color:var(--clr-bg);background-image:radial-gradient(circle,var(--clr-dot) 1.5px,transparent 1.5px);background-size:20px 20px;color:var(--clr-text);line-height:1.7;min-height:100vh}
+    .page-wrap{max-width:860px;margin:0 auto;padding:24px 20px 60px}
+    .breadcrumb{display:flex;align-items:center;gap:6px;font-size:0.82rem;color:var(--clr-muted);margin-bottom:28px;flex-wrap:wrap}
+    .breadcrumb a{color:var(--clr-accent);text-decoration:none;font-weight:600}.breadcrumb a:hover{text-decoration:underline}
+    .breadcrumb span{color:var(--clr-muted)}
+    .hero{margin-bottom:40px}.hero-badges{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+    .badge{font-size:0.78rem;font-weight:700;padding:4px 14px;border-radius:50px;letter-spacing:0.03em}
+    .badge-solid{background:var(--clr-accent);color:#fff}.badge-outline{border:2px solid var(--clr-accent);color:var(--clr-accent);background:transparent}
+    .hero h1{font-size:clamp(2rem,5vw,3rem);font-weight:900;color:var(--clr-navy);line-height:1.15;margin-bottom:12px}
+    .hero-intro{font-size:1.05rem;color:var(--clr-muted);max-width:620px;margin-bottom:18px}
+    .hero-meta{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+    .meta-pill{font-size:0.82rem;color:var(--clr-muted);font-weight:600}
+    .btn{display:inline-flex;align-items:center;gap:6px;font-family:var(--font-display);font-weight:700;font-size:0.92rem;padding:10px 26px;border-radius:50px;text-decoration:none;cursor:pointer;border:none;transition:background 0.18s,color 0.18s,transform 0.18s,box-shadow 0.18s}
+    .btn-primary{background:var(--clr-accent);color:#fff}.btn-primary:hover{background:var(--clr-accent-dark);transform:translateY(-2px);box-shadow:0 6px 20px rgba(67,97,238,0.25)}
+    .btn-white{background:#fff;color:var(--clr-accent);font-weight:800}.btn-white:hover{background:#EEF0FF;transform:translateY(-2px)}
+    section{margin-bottom:48px}
+    .section-label{font-size:0.75rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--clr-accent);margin-bottom:10px}
+    .section-title{font-size:1.55rem;font-weight:800;color:var(--clr-navy);margin-bottom:16px}
+    .card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);border-left:5px solid var(--clr-accent);padding:24px 28px;transition:transform 0.2s,box-shadow 0.2s;animation:fadeInUp 0.4s ease both}
+    .card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}.card+.card{margin-top:16px}.card p+p{margin-top:10px}
+    .card-tint{background:var(--clr-tint);border-left:5px solid var(--clr-accent);border-radius:var(--radius);padding:24px 28px}
+    .steps{list-style:none}.step-item{display:flex;gap:16px;align-items:flex-start;margin-bottom:16px}
+    .step-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;background:var(--clr-accent);color:#fff;font-weight:800;font-size:0.9rem;display:flex;align-items:center;justify-content:center}
+    .step-text{padding-top:4px;font-size:0.97rem}.step-text strong{color:var(--clr-navy)}
+    .example-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;margin-bottom:16px;border-left:5px solid var(--clr-accent);animation:fadeInUp 0.4s ease both;transition:transform 0.2s,box-shadow 0.2s}
+    .example-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+    .example-header{background:#F3F4F8;padding:10px 20px;font-weight:800;font-size:0.82rem;color:var(--clr-muted);letter-spacing:0.06em;text-transform:uppercase}
+    .example-body{padding:20px 24px}
+    .example-problem{font-size:1rem;font-weight:600;color:var(--clr-navy);margin-bottom:14px}
+    .example-working{border-left:3px solid var(--clr-tint);padding-left:14px;margin-bottom:14px}
+    .working-line{font-family:var(--font-mono);font-size:0.9rem;color:var(--clr-text);margin-bottom:6px}
+    .working-line span{color:var(--clr-muted);font-weight:400;margin-left:8px}
+    .answer-chip{display:inline-flex;align-items:center;gap:6px;background:var(--clr-green-bg);border:1.5px solid var(--clr-green);color:#1a7a3a;border-radius:50px;padding:6px 16px;font-weight:700;font-size:0.9rem}
+    .warning-box{background:var(--clr-amber-bg);border-left:5px solid var(--clr-amber);border-radius:var(--radius);padding:20px 24px}
+    .warning-box h3{font-size:1rem;font-weight:800;color:#8B4A00;margin-bottom:12px}
+    .warning-list{list-style:none}.warning-list li{margin-bottom:10px;font-size:0.93rem;line-height:1.55}
+    .warning-list .wrong{color:var(--clr-red);font-weight:700}.warning-list .right{color:var(--clr-green);font-weight:700}
+    .ref-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+    @media(max-width:560px){.ref-grid{grid-template-columns:1fr}}
+    .ref-item{background:#fff;border-radius:10px;padding:16px;box-shadow:0 1px 8px rgba(67,97,238,0.07)}
+    .ref-term{font-weight:800;font-size:0.85rem;color:var(--clr-accent);margin-bottom:4px}
+    .ref-def{font-size:0.88rem;color:var(--clr-text)}
+    .footer-cta{background:linear-gradient(135deg,var(--clr-accent) 0%,#6C63FF 100%);border-radius:var(--radius);padding:36px 32px;text-align:center;color:#fff;margin-top:56px}
+    .footer-cta h2{font-size:1.6rem;font-weight:900;margin-bottom:8px}.footer-cta p{opacity:0.88;margin-bottom:22px;font-size:1rem}
+    .back-link{display:block;text-align:center;margin-top:18px;font-size:0.85rem;color:rgba(255,255,255,0.75);text-decoration:none}.back-link:hover{color:#fff}
+    hr{border:none;border-top:2px solid var(--clr-dot);margin:40px 0}
+    /* Number line visual */
+    .numline-wrap{overflow-x:auto;margin:24px 0;padding:8px 0}
+    .numline-svg{display:block;margin:0 auto}
+    .visual-caption{text-align:center;font-size:0.8rem;color:var(--clr-muted);margin-top:6px;font-style:italic}
+    .neighbour-box{display:flex;gap:12px;justify-content:center;align-items:center;flex-wrap:wrap;margin:24px 0}
+    .nb-cell{font-family:var(--font-mono);font-size:1.4rem;font-weight:700;width:60px;height:60px;border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}
+    .nb-cell.before{background:#FFF0F1;border:2px solid var(--clr-red);color:var(--clr-red)}
+    .nb-cell.main{background:var(--clr-accent);color:#fff;font-size:1.8rem;width:72px;height:72px;border-radius:16px}
+    .nb-cell.after{background:var(--clr-green-bg);border:2px solid var(--clr-green);color:#1a7a3a}
+    .nb-label{font-family:var(--font-display);font-size:0.65rem;font-weight:700;opacity:0.8}
+    @keyframes fadeInUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+    @media(max-width:600px){.page-wrap{padding:16px 14px 48px}.example-body{padding:16px}.footer-cta{padding:28px 20px}}
+  </style>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="page-wrap">
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="index.html">🏠 Home</a><span>›</span>
+    <a href="index.html#grade-1-math">Grade 1 Math</a><span>›</span>
+    <span>Number Before &amp; After</span>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-badges">
+      <span class="badge badge-solid">Grade 1</span>
+      <span class="badge badge-outline">Mathematics 🔢</span>
+    </div>
+    <h1>Number Before &amp; After</h1>
+    <p class="hero-intro">In this guide, you'll learn how to find the number that comes just before or just after any number, and how to find the number that sits between two numbers.</p>
+    <div class="hero-meta">
+      <span class="meta-pill">⏱ ~5 min read</span>
+      <a href="math-grade1-number-before-after-worksheet.html" class="btn btn-primary">📝 Jump to Worksheet →</a>
+    </div>
+  </header>
+
+  <section aria-labelledby="what-heading">
+    <p class="section-label">Section 1</p>
+    <h2 class="section-title" id="what-heading">Before, After, and Between</h2>
+    <div class="card">
+      <p>Numbers live in a line — always in the same order. Every number has a <strong>neighbour before it</strong> (1 less) and a <strong>neighbour after it</strong> (1 more).</p>
+      <p><strong>Before</strong> means 1 less (to the left on the number line).<br><strong>After</strong> means 1 more (to the right on the number line).<br><strong>Between</strong> means the number in the middle of two neighbours.</p>
+    </div>
+
+    <!-- Neighbour visual -->
+    <div class="neighbour-box" role="img" aria-label="Number 8 with 7 before it and 9 after it">
+      <div class="nb-cell before"><span>7</span><span class="nb-label">BEFORE</span></div>
+      <div class="nb-cell main">8</div>
+      <div class="nb-cell after"><span>9</span><span class="nb-label">AFTER</span></div>
+    </div>
+    <p class="visual-caption">7 is just before 8. &nbsp; 9 is just after 8. &nbsp; 8 is between 7 and 9.</p>
+
+    <!-- SVG number line -->
+    <div class="numline-wrap">
+      <svg class="numline-svg" width="580" height="70" viewBox="0 0 580 70" aria-hidden="true">
+        <line x1="20" y1="35" x2="560" y2="35" stroke="#C4C9DC" stroke-width="2"/>
+        <polygon points="560,29 572,35 560,41" fill="#C4C9DC"/>
+        <g font-family="JetBrains Mono" font-size="14" font-weight="700" text-anchor="middle">
+          <!-- tick marks and labels 1-10 -->
+          <line x1="20" y1="30" x2="20" y2="40" stroke="#6B7280" stroke-width="2"/><text x="20" y="58" fill="#6B7280">1</text>
+          <line x1="72" y1="30" x2="72" y2="40" stroke="#6B7280" stroke-width="2"/><text x="72" y="58" fill="#6B7280">2</text>
+          <line x1="124" y1="30" x2="124" y2="40" stroke="#6B7280" stroke-width="2"/><text x="124" y="58" fill="#6B7280">3</text>
+          <line x1="176" y1="30" x2="176" y2="40" stroke="#6B7280" stroke-width="2"/><text x="176" y="58" fill="#6B7280">4</text>
+          <line x1="228" y1="30" x2="228" y2="40" stroke="#6B7280" stroke-width="2"/><text x="228" y="58" fill="#6B7280">5</text>
+          <line x1="280" y1="30" x2="280" y2="40" stroke="#6B7280" stroke-width="2"/><text x="280" y="58" fill="#6B7280">6</text>
+          <line x1="332" y1="28" x2="332" y2="42" stroke="#E63946" stroke-width="3"/><text x="332" y="20" fill="#4361EE" font-size="12">before</text><text x="332" y="58" fill="#E63946">7</text>
+          <line x1="384" y1="26" x2="384" y2="44" stroke="#4361EE" stroke-width="4"/><text x="384" y="58" fill="#4361EE" font-size="16">8</text>
+          <line x1="436" y1="28" x2="436" y2="42" stroke="#2DC653" stroke-width="3"/><text x="436" y="20" fill="#4361EE" font-size="12">after</text><text x="436" y="58" fill="#2DC653">9</text>
+          <line x1="488" y1="30" x2="488" y2="40" stroke="#6B7280" stroke-width="2"/><text x="488" y="58" fill="#6B7280">10</text>
+        </g>
+      </svg>
+    </div>
+    <p class="visual-caption">On the number line, "before" is to the left and "after" is to the right.</p>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="method-heading">
+    <p class="section-label">Section 2</p>
+    <h2 class="section-title" id="method-heading">How to Find Before &amp; After</h2>
+    <div class="card-tint">
+      <ol class="steps">
+        <li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>To find what comes BEFORE:</strong> Subtract 1 from the number. Before 15 → 15 − 1 = 14.</div></li>
+        <li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>To find what comes AFTER:</strong> Add 1 to the number. After 15 → 15 + 1 = 16.</div></li>
+        <li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>To find what is BETWEEN two numbers:</strong> The number in the middle. Between 14 and 16 → 15.</div></li>
+        <li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Watch the decade change!</strong> Before 20 is 19 (not 20−1=21!). When you cross a ten, the tens digit changes.</div></li>
+      </ol>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="examples-heading">
+    <p class="section-label">Section 3</p>
+    <h2 class="section-title" id="examples-heading">Worked Examples</h2>
+
+    <div class="example-card">
+      <div class="example-header">Example 1 — Number just after</div>
+      <div class="example-body">
+        <div class="example-problem">What number comes just after 36?</div>
+        <div class="example-working">
+          <div class="working-line">36 + 1 = 37 <span>add 1</span></div>
+        </div>
+        <span class="answer-chip">✅ Answer: 37</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">Example 2 — Number just before</div>
+      <div class="example-body">
+        <div class="example-problem">What number comes just before 50?</div>
+        <div class="example-working">
+          <div class="working-line">50 − 1 = 49 <span>subtract 1</span></div>
+        </div>
+        <span class="answer-chip">✅ Answer: 49</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">Example 3 — Number between</div>
+      <div class="example-body">
+        <div class="example-problem">What number is between 22 and 24?</div>
+        <div class="example-working">
+          <div class="working-line">22, ___, 24</div>
+          <div class="working-line">22 + 1 = 23 <span>the middle number</span></div>
+        </div>
+        <span class="answer-chip">✅ Answer: 23</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">Example 4 — Crossing a ten</div>
+      <div class="example-body">
+        <div class="example-problem">What number comes just after 99?</div>
+        <div class="example-working">
+          <div class="working-line">99 + 1 = 100 <span>the next number after 99 is a new hundred!</span></div>
+        </div>
+        <span class="answer-chip">✅ Answer: 100</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">Example 5 — Word problem</div>
+      <div class="example-body">
+        <div class="example-problem">Sara is on step 17 of a staircase. She takes one step up. What step is she on now?</div>
+        <div class="example-working">
+          <div class="working-line">One step up = one number after</div>
+          <div class="working-line">17 + 1 = 18</div>
+        </div>
+        <span class="answer-chip">✅ Answer: Step 18</span>
+      </div>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="watchout-heading">
+    <p class="section-label">Section 4</p>
+    <h2 class="section-title" id="watchout-heading">Watch Out! ⚠️</h2>
+    <div class="warning-box">
+      <h3>Common Mistakes to Avoid</h3>
+      <ul class="warning-list">
+        <li>
+          <span class="wrong">❌ Forgetting the decade crossover:</span> Saying the number before 30 is 21<br>
+          <span class="right">✅ Before 30 is 29. You go back into the 20s: 28, 29, 30.</span>
+        </li>
+        <li>
+          <span class="wrong">❌ Mixing up before and after:</span> Thinking "after" means a smaller number<br>
+          <span class="right">✅ After always means MORE (bigger). Before always means LESS (smaller).</span>
+        </li>
+        <li>
+          <span class="wrong">❌ "Between" asking for two numbers:</span> Giving 22 AND 24 when asked what is between them<br>
+          <span class="right">✅ Between 22 and 24 there is exactly ONE number: 23.</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="ref-heading">
+    <p class="section-label">Section 5</p>
+    <h2 class="section-title" id="ref-heading">Quick Reference</h2>
+    <div class="card-tint">
+      <div class="ref-grid" style="margin-top:0">
+        <div class="ref-item"><div class="ref-term">Just Before</div><div class="ref-def">The number − 1. Before 45 → 44.</div></div>
+        <div class="ref-item"><div class="ref-term">Just After</div><div class="ref-def">The number + 1. After 45 → 46.</div></div>
+        <div class="ref-item"><div class="ref-term">Between</div><div class="ref-def">The middle number. Between 44 and 46 → 45.</div></div>
+        <div class="ref-item"><div class="ref-term">Neighbours</div><div class="ref-def">Every number has two neighbours — one on each side.</div></div>
+        <div class="ref-item"><div class="ref-term">Decade crossover</div><div class="ref-def">Before 10 → 9. Before 20 → 19. Before 100 → 99.</div></div>
+        <div class="ref-item"><div class="ref-term">Number line tip</div><div class="ref-def">Left = smaller (before). Right = bigger (after).</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer-cta">
+    <h2>Ready to practice? Let's go! 🚀</h2>
+    <p>Test your before-and-after skills with 10 interactive questions — Easy or Hard mode.</p>
+    <a href="math-grade1-number-before-after-worksheet.html" class="btn btn-white">📝 Start Worksheet →</a>
+    <a href="index.html#grade-1-math" class="back-link">← Back to Grade 1 Math topics</a>
+  </div>
+
+</div>
+</body>
+</html>

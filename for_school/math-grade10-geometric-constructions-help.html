@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Geometric Constructions – Grade 10 Math Help</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --ink: #1a1f36; --muted: #5a6076; --accent: #4361EE; --accent-dark: #3451d1; --green: #06d6a0; --orange: #fb8500; --red: #ef233c; --bg: #f4f6fb; --card: #ffffff; --border: #e2e6f0; --radius: 14px; --mono: 'JetBrains Mono', monospace; }
+    body { font-family: 'Nunito', sans-serif; background-color: var(--bg); background-image: radial-gradient(circle, #E8EDF5 1.5px, transparent 1.5px); background-size: 20px 20px; color: var(--ink); min-height: 100vh; }
+    header { background: var(--card); border-bottom: 2px solid var(--border); padding: 0 24px; }
+    .header-inner { max-width: 860px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 52px; }
+    .logo-link { text-decoration: none; display: flex; align-items: center; } .logo-img { height: 36px; width: auto; display: block; }
+    nav a { font-weight: 700; font-size: 0.85rem; color: var(--muted); text-decoration: none; margin-left: 20px; }
+    nav a:hover { color: var(--accent); }
+    .breadcrumb { max-width: 860px; margin: 0 auto; padding: 14px 24px 0; font-size: 0.8rem; color: var(--muted); }
+    .breadcrumb a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 6px; }
+    .hero { max-width: 860px; margin: 0 auto; padding: 28px 24px 0; display: flex; align-items: center; gap: 20px; }
+    .hero-icon { width: 72px; height: 72px; border-radius: 20px; background: var(--accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.5rem; color:#fff; font-weight:700; }
+    .hero h1 { font-size: 1.9rem; font-weight: 900; line-height: 1.15; }
+    .hero p { font-size: 1rem; color: var(--muted); margin-top: 6px; font-weight: 600; }
+    main { max-width: 860px; margin: 28px auto 60px; padding: 0 24px; display: flex; flex-direction: column; gap: 24px; }
+    .card { background: var(--card); border-radius: var(--radius); border: 2px solid var(--border); padding: 28px; }
+    .card h2 { font-size: 1.25rem; font-weight: 900; color: var(--accent); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+    .card p { font-size: 0.95rem; line-height: 1.7; color: var(--ink); margin-bottom: 12px; }
+    .card p:last-child { margin-bottom: 0; }
+    .construct-list { display: flex; flex-direction: column; gap: 14px; margin: 14px 0; }
+    .construct { background: #fafbff; border: 2px solid var(--border); border-radius: 12px; padding: 16px 18px; }
+    .construct .c-name { font-weight: 900; font-size: 0.95rem; color: var(--accent); margin-bottom: 8px; }
+    .construct .c-tools { font-size: 0.8rem; font-weight: 700; color: var(--muted); margin-bottom: 8px; }
+    .construct .c-steps { font-size: 0.88rem; line-height: 1.7; color: var(--ink); }
+    .construct .c-steps li { margin-left: 16px; margin-bottom: 3px; }
+    .ratio-note { background: #eef1fd; border: 2px solid var(--border); border-radius: 10px; padding: 12px 16px; margin: 12px 0; font-size: 0.9rem; font-weight: 700; color: var(--ink); }
+    .examples { display: flex; flex-direction: column; gap: 16px; }
+    .example { border: 2px solid var(--border); border-radius: 12px; padding: 18px 20px; background: #fafbff; }
+    .example-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+    .ex-num { width: 32px; height: 32px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 900; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .example-header h3 { font-size: 1rem; font-weight: 800; }
+    .ex-step { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; font-size: 0.9rem; }
+    .ex-step-num { background: var(--green); color: #fff; border-radius: 50%; width: 22px; height: 22px; font-size: 0.75rem; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    .ex-step p { line-height: 1.5; }
+    code { font-family: var(--mono); background: #eef1fd; border-radius: 5px; padding: 1px 6px; font-size: 0.88em; color: var(--accent-dark); }
+    .answer-box { background: #e8faf4; border: 2px solid var(--green); border-radius: 8px; padding: 10px 14px; margin-top: 10px; font-weight: 800; font-size: 0.95rem; color: #05a07a; }
+    .watch-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .watch-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.92rem; line-height: 1.55; }
+    .watch-badge { background: #fff0f0; color: var(--red); border: 2px solid #ffd6d6; border-radius: 8px; padding: 3px 9px; font-weight: 800; font-size: 0.78rem; flex-shrink: 0; margin-top: 2px; }
+    .cta-bar { background: linear-gradient(135deg, #4361EE 0%, #3a0ca3 100%); border-radius: var(--radius); padding: 28px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .cta-bar h2 { color: #fff; font-size: 1.2rem; font-weight: 900; }
+    .cta-bar p { color: rgba(255,255,255,.8); font-size: 0.9rem; margin-top: 4px; font-weight: 600; }
+    .cta-btn { background: #fff; color: var(--accent); border-radius: 10px; padding: 12px 24px; font-weight: 900; font-size: 1rem; text-decoration: none; white-space: nowrap; transition: transform .15s; }
+    .cta-btn:hover { transform: scale(1.04); }
+    footer { text-align: center; padding: 24px; font-size: 0.8rem; color: var(--muted); font-weight: 600; }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header>
+  <div class="header-inner">
+    <a class="logo-link" href="../index.html"><img src="../logo.png" alt="LearnPad" class="logo-img" /></a>
+    <nav><a href="../index.html">Home</a><a href="index.html">School</a><a href="../learnings/">Tech in Urdu</a></nav>
+  </div>
+</header>
+<div class="breadcrumb">
+  <a href="index.html">Home</a><span>›</span>
+  <a href="index.html#grade10">Grade 10 Math</a><span>›</span>
+  Geometric Constructions
+</div>
+<div class="hero">
+  <div class="hero-icon">✏</div>
+  <div>
+    <h1>Geometric Constructions</h1>
+    <p>Grade 10 Math &nbsp;·&nbsp; Compass &amp; straightedge, similar triangles &amp; tangents</p>
+  </div>
+</div>
+<main>
+
+  <div class="card">
+    <h2>&#x1F4D0; What Are Geometric Constructions?</h2>
+    <p>Geometric constructions are drawings made using only a <strong>compass</strong> and a <strong>straightedge (unmarked ruler)</strong> — no measurements allowed except those set with the compass. They produce exact, mathematically perfect figures.</p>
+    <p>Key Grade 10 constructions involve dividing line segments in a given ratio, constructing similar triangles, and drawing tangents to circles.</p>
+  </div>
+
+  <div class="card">
+    <h2>&#x2702;&#xFE0F; Core Constructions</h2>
+    <div class="construct-list">
+
+      <div class="construct">
+        <div class="c-name">1. Divide a line segment AB in ratio m : n</div>
+        <div class="c-tools">Tools: compass, straightedge</div>
+        <ol class="c-steps">
+          <li>Draw ray AX at an acute angle to AB.</li>
+          <li>Mark (m+n) equal arcs along AX: A₁, A₂, … A_{m+n}.</li>
+          <li>Join A_{m+n} to B.</li>
+          <li>Draw a line through A_m parallel to A_{m+n}B to meet AB at point P.</li>
+          <li>P divides AB in ratio m : n.</li>
+        </ol>
+      </div>
+
+      <div class="construct">
+        <div class="c-name">2. Construct a triangle similar to given △ABC in ratio m : n</div>
+        <div class="c-tools">Case m &lt; n (smaller) and m &gt; n (larger)</div>
+        <ol class="c-steps">
+          <li>Draw ray BX at acute angle to BC.</li>
+          <li>If ratio is m:n, mark max(m,n) equal arcs on BX.</li>
+          <li>Join B_{max} to C. Draw parallel through B_m (or B_n) to get C′ on BC (or BC extended).</li>
+          <li>Draw A′C′ ∥ AC to get the similar triangle A′B C′.</li>
+        </ol>
+      </div>
+
+      <div class="construct">
+        <div class="c-name">3. Tangent to a circle from an external point P</div>
+        <div class="c-tools">Given: circle with centre O, external point P</div>
+        <ol class="c-steps">
+          <li>Join OP. Find midpoint M of OP.</li>
+          <li>Draw a circle with centre M and radius MO = MP.</li>
+          <li>This new circle intersects the original at T₁ and T₂.</li>
+          <li>PT₁ and PT₂ are the two required tangents.</li>
+        </ol>
+      </div>
+
+      <div class="construct">
+        <div class="c-name">4. Tangent at a point on a circle</div>
+        <div class="c-tools">Given: circle centre O, point T on circle</div>
+        <ol class="c-steps">
+          <li>Join OT (this is the radius).</li>
+          <li>Extend OT beyond T.</li>
+          <li>Draw a perpendicular to OT at T — this is the tangent at T.</li>
+        </ol>
+      </div>
+
+    </div>
+    <div class="ratio-note">&#x1F4A1; Key theorem used: The Basic Proportionality Theorem (BPT) — a line parallel to one side of a triangle divides the other two sides in the same ratio.</div>
+  </div>
+
+  <div class="card">
+    <h2>&#x270F;&#xFE0F; Worked Examples</h2>
+    <div class="examples">
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">1</div><h3>Point P divides AB (10 cm) in ratio 3 : 2. How far is P from A?</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Total parts = 3 + 2 = 5. Each part = 10/5 = 2 cm.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>AP = 3 parts = 3 × 2 = 6 cm.</p></div>
+        <div class="answer-box">AP = 6 cm, PB = 4 cm</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">2</div><h3>A triangle is to be constructed similar to △ABC with sides in ratio 3 : 4. How many arcs are marked on the ray?</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Ratio is 3 : 4. The larger number determines the total arcs for the construction.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>Mark max(3, 4) = 4 equal arcs on the ray.</p></div>
+        <div class="answer-box">4 arcs</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">3</div><h3>In the tangent construction from external point P, OP = 10 cm and radius = 6 cm. Find the tangent length.</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>PT² = OP² − r² = 100 − 36 = 64.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>PT = 8 cm.</p></div>
+        <div class="answer-box">Tangent length = 8 cm</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">4</div><h3>In dividing AB in ratio 2 : 3, what is the total number of equal arcs needed?</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Total arcs = m + n = 2 + 3 = 5.</p></div>
+        <div class="answer-box">5 arcs</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">5</div><h3>AB = 12 cm. Q divides AB in ratio 1 : 3. Find AQ and QB.</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Total parts = 4. Each part = 12/4 = 3 cm.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>AQ = 1 × 3 = 3 cm. QB = 3 × 3 = 9 cm.</p></div>
+        <div class="answer-box">AQ = 3 cm, QB = 9 cm</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>&#x26A0;&#xFE0F; Watch Out!</h2>
+    <ul class="watch-list">
+      <li><span class="watch-badge">RATIO ORDER</span>In ratio m : n, the point closer to A corresponds to m. AP/PB = m/n, so AP = m/(m+n) × AB.</li>
+      <li><span class="watch-badge">EXTENDED LINE</span>When the ratio has m &gt; n (building a larger triangle), the base line must be extended beyond C before drawing the parallel.</li>
+      <li><span class="watch-badge">MIDPOINT STEP</span>In the tangent-from-external-point construction, finding the midpoint of OP is the key step — don't skip it.</li>
+      <li><span class="watch-badge">BPT</span>The entire similar-triangle construction relies on the Basic Proportionality Theorem. A line parallel to one side divides the other two sides proportionally.</li>
+    </ul>
+  </div>
+
+  <div class="cta-bar">
+    <div>
+      <h2>Ready to practise?</h2>
+      <p>Try the interactive worksheet with instant feedback.</p>
+    </div>
+    <a class="cta-btn" href="math-grade10-geometric-constructions-worksheet.html">Start Worksheet →</a>
+  </div>
+
+</main>
+<footer>© 2025 LearnBright · Free printable &amp; interactive school worksheets</footer>
+</body>
+</html>

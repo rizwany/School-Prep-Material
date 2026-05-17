@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Polynomials – Grade 9 Math Help</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --ink: #1a1f36; --muted: #5a6076; --accent: #4361EE; --accent-dark: #3451d1;
+      --green: #06d6a0; --orange: #fb8500; --red: #ef233c;
+      --bg: #f4f6fb; --card: #ffffff; --border: #e2e6f0; --radius: 14px;
+      --mono: 'JetBrains Mono', monospace;
+    }
+    body { font-family: 'Nunito', sans-serif; background-color: var(--bg); background-image: radial-gradient(circle, #E8EDF5 1.5px, transparent 1.5px); background-size: 20px 20px; color: var(--ink); min-height: 100vh; }
+    header { background: var(--card); border-bottom: 2px solid var(--border); padding: 0 24px; }
+    .header-inner { max-width: 860px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 52px; }
+    .logo-link { text-decoration: none; display: flex; align-items: center; } .logo-img { height: 36px; width: auto; display: block; }
+    nav a { font-weight: 700; font-size: 0.85rem; color: var(--muted); text-decoration: none; margin-left: 20px; }
+    nav a:hover { color: var(--accent); }
+    .breadcrumb { max-width: 860px; margin: 0 auto; padding: 14px 24px 0; font-size: 0.8rem; color: var(--muted); }
+    .breadcrumb a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 6px; }
+    .hero { max-width: 860px; margin: 0 auto; padding: 28px 24px 0; display: flex; align-items: center; gap: 20px; }
+    .hero-icon { width: 72px; height: 72px; border-radius: 20px; background: var(--accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.1rem; color:#fff; font-family: var(--mono); font-weight:700; }
+    .hero h1 { font-size: 1.9rem; font-weight: 900; line-height: 1.15; }
+    .hero p { font-size: 1rem; color: var(--muted); margin-top: 6px; font-weight: 600; }
+    main { max-width: 860px; margin: 28px auto 60px; padding: 0 24px; display: flex; flex-direction: column; gap: 24px; }
+    .card { background: var(--card); border-radius: var(--radius); border: 2px solid var(--border); padding: 28px; }
+    .card h2 { font-size: 1.25rem; font-weight: 900; color: var(--accent); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+    .card p { font-size: 0.95rem; line-height: 1.7; color: var(--ink); margin-bottom: 12px; }
+    .card p:last-child { margin-bottom: 0; }
+    .type-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 14px 0; }
+    @media (max-width: 560px) { .type-grid { grid-template-columns: 1fr; } }
+    .type-card { background: #eef1fd; border: 2px solid var(--border); border-radius: 12px; padding: 14px 16px; text-align: center; }
+    .type-card .type-name { font-weight: 900; font-size: 0.95rem; color: var(--accent-dark); margin-bottom: 4px; }
+    .type-card .type-eg { font-family: var(--mono); font-size: 0.88rem; color: var(--muted); font-weight: 600; }
+    .type-card .type-note { font-size: 0.8rem; color: var(--muted); margin-top: 4px; }
+    .theorem-cards { display: flex; flex-direction: column; gap: 12px; margin: 14px 0; }
+    .theorem-card { background: #fafbff; border: 2px solid var(--border); border-radius: 12px; padding: 16px 18px; }
+    .theorem-card .thm-name { font-weight: 900; font-size: 0.9rem; color: var(--accent); margin-bottom: 6px; }
+    .theorem-card .thm-rule { font-family: var(--mono); font-size: 0.9rem; font-weight: 700; color: var(--accent-dark); background: #eef1fd; border-radius: 8px; padding: 6px 12px; margin-bottom: 8px; display: inline-block; }
+    .theorem-card p { font-size: 0.88rem; color: var(--ink); margin-bottom: 0; }
+    .examples { display: flex; flex-direction: column; gap: 16px; }
+    .example { border: 2px solid var(--border); border-radius: 12px; padding: 18px 20px; background: #fafbff; }
+    .example-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+    .ex-num { width: 32px; height: 32px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 900; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .example-header h3 { font-size: 1rem; font-weight: 800; }
+    .ex-step { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; font-size: 0.9rem; }
+    .ex-step-num { background: var(--green); color: #fff; border-radius: 50%; width: 22px; height: 22px; font-size: 0.75rem; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    .ex-step p { line-height: 1.5; }
+    code { font-family: var(--mono); background: #eef1fd; border-radius: 5px; padding: 1px 6px; font-size: 0.88em; color: var(--accent-dark); }
+    .answer-box { background: #e8faf4; border: 2px solid var(--green); border-radius: 8px; padding: 10px 14px; margin-top: 10px; font-weight: 800; font-size: 0.95rem; color: #05a07a; }
+    .watch-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .watch-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.92rem; line-height: 1.55; }
+    .watch-badge { background: #fff0f0; color: var(--red); border: 2px solid #ffd6d6; border-radius: 8px; padding: 3px 9px; font-weight: 800; font-size: 0.78rem; flex-shrink: 0; margin-top: 2px; }
+    .ref-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    .ref-table th, .ref-table td { border: 2px solid var(--border); padding: 10px 14px; font-size: 0.88rem; text-align: left; }
+    .ref-table th { background: #eef1fd; font-weight: 800; color: var(--accent-dark); }
+    .cta-bar { background: linear-gradient(135deg, #4361EE 0%, #3a0ca3 100%); border-radius: var(--radius); padding: 28px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .cta-bar h2 { color: #fff; font-size: 1.2rem; font-weight: 900; }
+    .cta-bar p { color: rgba(255,255,255,.8); font-size: 0.9rem; margin-top: 4px; font-weight: 600; }
+    .cta-btn { background: #fff; color: var(--accent); border-radius: 10px; padding: 12px 24px; font-weight: 900; font-size: 1rem; text-decoration: none; white-space: nowrap; transition: transform .15s; }
+    .cta-btn:hover { transform: scale(1.04); }
+    footer { text-align: center; padding: 24px; font-size: 0.8rem; color: var(--muted); font-weight: 600; }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header>
+  <div class="header-inner">
+    <a class="logo-link" href="../index.html"><img src="../logo.png" alt="LearnPad" class="logo-img" /></a>
+    <nav><a href="../index.html">Home</a><a href="index.html">School</a><a href="../learnings/">Tech in Urdu</a></nav>
+  </div>
+</header>
+<div class="breadcrumb">
+  <a href="index.html">Home</a><span>›</span>
+  <a href="index.html#grade9">Grade 9 Math</a><span>›</span>
+  Polynomials
+</div>
+<div class="hero">
+  <div class="hero-icon">p(x)</div>
+  <div>
+    <h1>Polynomials</h1>
+    <p>Grade 9 Math &nbsp;·&nbsp; Degree, operations, Remainder &amp; Factor Theorems</p>
+  </div>
+</div>
+
+<main>
+
+  <!-- What is a Polynomial? -->
+  <div class="card">
+    <h2>&#x1F4A1; What is a Polynomial?</h2>
+    <p>A <strong>polynomial</strong> is an expression of the form <code>aₙxⁿ + aₙ₋₁xⁿ⁻¹ + … + a₁x + a₀</code>, where the exponents are non-negative integers and the coefficients are real numbers.</p>
+    <p>The <strong>degree</strong> is the highest power of x. The <strong>leading coefficient</strong> is the coefficient of the highest-degree term.</p>
+    <p>Example: <code>3x⁴ − 2x² + 5</code> has degree <strong>4</strong> and leading coefficient <strong>3</strong>.</p>
+  </div>
+
+  <!-- Types -->
+  <div class="card">
+    <h2>&#x1F4CA; Types of Polynomials</h2>
+    <div class="type-grid">
+      <div class="type-card">
+        <div class="type-name">Monomial</div>
+        <div class="type-eg">7x²</div>
+        <div class="type-note">1 term</div>
+      </div>
+      <div class="type-card">
+        <div class="type-name">Binomial</div>
+        <div class="type-eg">x² − 4</div>
+        <div class="type-note">2 terms</div>
+      </div>
+      <div class="type-card">
+        <div class="type-name">Trinomial</div>
+        <div class="type-eg">x² + 3x − 5</div>
+        <div class="type-note">3 terms</div>
+      </div>
+    </div>
+    <p>By degree — <strong>Linear</strong> (degree 1), <strong>Quadratic</strong> (degree 2), <strong>Cubic</strong> (degree 3).</p>
+  </div>
+
+  <!-- Theorems -->
+  <div class="card">
+    <h2>&#x1F4DC; Remainder &amp; Factor Theorems</h2>
+    <div class="theorem-cards">
+      <div class="theorem-card">
+        <div class="thm-name">Remainder Theorem</div>
+        <div class="thm-rule">When p(x) is divided by (x − a), remainder = p(a)</div>
+        <p>To find the remainder when dividing p(x) by (x − a), substitute x = a into p(x). No long division needed.</p>
+      </div>
+      <div class="theorem-card">
+        <div class="thm-name">Factor Theorem</div>
+        <div class="thm-rule">(x − a) is a factor of p(x) if and only if p(a) = 0</div>
+        <p>If p(a) = 0, then (x − a) divides p(x) exactly — it is a factor. Use this to find factors by testing integer values.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Worked Examples -->
+  <div class="card">
+    <h2>&#x270F;&#xFE0F; Worked Examples</h2>
+    <div class="examples">
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">1</div><h3>Find the degree of 4x³ − 7x + 9</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Identify the highest exponent: x³ has exponent 3.</p></div>
+        <div class="answer-box">Degree = 3 (cubic polynomial); leading coefficient = 4</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">2</div><h3>Add (3x² + 2x − 5) + (x² − 4x + 1)</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Group like terms: x² terms: 3x² + x² = 4x².</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>x terms: 2x − 4x = −2x.</p></div>
+        <div class="ex-step"><div class="ex-step-num">3</div><p>Constants: −5 + 1 = −4.</p></div>
+        <div class="answer-box">4x² − 2x − 4</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">3</div><h3>Find the remainder when p(x) = x³ − 4x + 6 is divided by (x − 2)</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Remainder Theorem: substitute x = 2.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>p(2) = (2)³ − 4(2) + 6 = 8 − 8 + 6 = 6.</p></div>
+        <div class="answer-box">Remainder = 6</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">4</div><h3>Is (x − 1) a factor of p(x) = x³ − 3x² + 3x − 1?</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Factor Theorem: evaluate p(1).</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>p(1) = 1 − 3 + 3 − 1 = 0.</p></div>
+        <div class="ex-step"><div class="ex-step-num">3</div><p>Since p(1) = 0, (x − 1) IS a factor.</p></div>
+        <div class="answer-box">Yes, (x − 1) is a factor</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">5</div><h3>Multiply (x + 3)(x² − 2x + 4)</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Distribute x: x · x² = x³, x · (−2x) = −2x², x · 4 = 4x.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>Distribute 3: 3 · x² = 3x², 3 · (−2x) = −6x, 3 · 4 = 12.</p></div>
+        <div class="ex-step"><div class="ex-step-num">3</div><p>Combine: x³ + (−2x² + 3x²) + (4x − 6x) + 12 = x³ + x² − 2x + 12.</p></div>
+        <div class="answer-box">x³ + x² − 2x + 12</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Watch Out -->
+  <div class="card">
+    <h2>&#x26A0;&#xFE0F; Watch Out!</h2>
+    <ul class="watch-list">
+      <li><span class="watch-badge">LIKE TERMS</span>Only add/subtract terms with the same variable and exponent: 3x² and 5x are NOT like terms.</li>
+      <li><span class="watch-badge">DEGREE</span>The degree is the highest power, not the number of terms: 5x⁴ − 1 has degree 4, not 2.</li>
+      <li><span class="watch-badge">REMAINDER</span>For divisor (x + a), substitute x = −a (not +a): remainder of p(x) ÷ (x + 3) is p(−3).</li>
+      <li><span class="watch-badge">SUBTRACTION</span>When subtracting polynomials, distribute the minus sign to EVERY term: (x² − 3x) − (2x² + x) = x² − 3x − 2x² − x.</li>
+    </ul>
+  </div>
+
+  <!-- Quick Ref -->
+  <div class="card">
+    <h2>&#x1F4CB; Quick Reference</h2>
+    <table class="ref-table">
+      <thead><tr><th>Concept</th><th>Rule / Formula</th></tr></thead>
+      <tbody>
+        <tr><td>Degree</td><td>Highest exponent in the polynomial</td></tr>
+        <tr><td>Add/Subtract</td><td>Combine like terms only</td></tr>
+        <tr><td>Multiply</td><td>Distribute each term, then collect like terms</td></tr>
+        <tr><td>Remainder Theorem</td><td><code>p(x) ÷ (x−a)</code> → remainder = <code>p(a)</code></td></tr>
+        <tr><td>Factor Theorem</td><td><code>(x−a)</code> is a factor iff <code>p(a) = 0</code></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-bar">
+    <div>
+      <h2>Ready to practise?</h2>
+      <p>Try the interactive worksheet with instant feedback.</p>
+    </div>
+    <a class="cta-btn" href="math-grade9-polynomials-worksheet.html">Start Worksheet →</a>
+  </div>
+
+</main>
+<footer>© 2025 LearnBright · Free printable &amp; interactive school worksheets</footer>
+</body>
+</html>

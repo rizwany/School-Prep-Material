@@ -1,0 +1,304 @@
+﻿<!-- Math | Grade 1 | Shapes & Patterns | help -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shapes &amp; Patterns — Grade 1 Math | LearnPad</title>
+  <meta name="description" content="Learn 2D shapes, their sides and corners, and how to identify and extend repeating patterns for Grade 1." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{--clr-bg:#ffffff;--clr-dot:#E8EDF5;--clr-accent:#4361EE;--clr-accent-dark:#3451D1;--clr-navy:#1A1A3E;--clr-tint:#EEF0FF;--clr-green:#2DC653;--clr-green-bg:#F0FFF4;--clr-red:#E63946;--clr-red-bg:#FFF0F1;--clr-amber:#F4A261;--clr-amber-bg:#FFFBF5;--clr-text:#2D2D4E;--clr-muted:#6B7280;--font-display:'Nunito',sans-serif;--font-mono:'JetBrains Mono',monospace;--radius:12px;--shadow:0 2px 16px rgba(67,97,238,0.08);--shadow-hover:0 8px 28px rgba(67,97,238,0.18)}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:var(--font-display);background-color:var(--clr-bg);background-image:radial-gradient(circle,var(--clr-dot) 1.5px,transparent 1.5px);background-size:20px 20px;color:var(--clr-text);line-height:1.7;min-height:100vh}
+    .page-wrap{max-width:860px;margin:0 auto;padding:24px 20px 60px}
+    .breadcrumb{display:flex;align-items:center;gap:6px;font-size:0.82rem;color:var(--clr-muted);margin-bottom:28px;flex-wrap:wrap}
+    .breadcrumb a{color:var(--clr-accent);text-decoration:none;font-weight:600}.breadcrumb a:hover{text-decoration:underline}
+    .breadcrumb span{color:var(--clr-muted)}
+    .hero{margin-bottom:40px}.hero-badges{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+    .badge{font-size:0.78rem;font-weight:700;padding:4px 14px;border-radius:50px;letter-spacing:0.03em}
+    .badge-solid{background:var(--clr-accent);color:#fff}.badge-outline{border:2px solid var(--clr-accent);color:var(--clr-accent);background:transparent}
+    .hero h1{font-size:clamp(2rem,5vw,3rem);font-weight:900;color:var(--clr-navy);line-height:1.15;margin-bottom:12px}
+    .hero-intro{font-size:1.05rem;color:var(--clr-muted);max-width:620px;margin-bottom:18px}
+    .hero-meta{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+    .meta-pill{font-size:0.82rem;color:var(--clr-muted);font-weight:600}
+    .btn{display:inline-flex;align-items:center;gap:6px;font-family:var(--font-display);font-weight:700;font-size:0.92rem;padding:10px 26px;border-radius:50px;text-decoration:none;cursor:pointer;border:none;transition:background 0.18s,color 0.18s,transform 0.18s,box-shadow 0.18s}
+    .btn-primary{background:var(--clr-accent);color:#fff}.btn-primary:hover{background:var(--clr-accent-dark);transform:translateY(-2px);box-shadow:0 6px 20px rgba(67,97,238,0.25)}
+    .btn-white{background:#fff;color:var(--clr-accent);font-weight:800}.btn-white:hover{background:#EEF0FF;transform:translateY(-2px)}
+    section{margin-bottom:48px}
+    .section-label{font-size:0.75rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--clr-accent);margin-bottom:10px}
+    .section-title{font-size:1.55rem;font-weight:800;color:var(--clr-navy);margin-bottom:16px}
+    .card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);border-left:5px solid var(--clr-accent);padding:24px 28px;transition:transform 0.2s,box-shadow 0.2s;animation:fadeInUp 0.4s ease both}
+    .card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}.card+.card{margin-top:16px}.card p+p{margin-top:10px}
+    .card-tint{background:var(--clr-tint);border-left:5px solid var(--clr-accent);border-radius:var(--radius);padding:24px 28px}
+    .steps{list-style:none}.step-item{display:flex;gap:16px;align-items:flex-start;margin-bottom:16px}
+    .step-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;background:var(--clr-accent);color:#fff;font-weight:800;font-size:0.9rem;display:flex;align-items:center;justify-content:center}
+    .step-text{padding-top:4px;font-size:0.97rem}.step-text strong{color:var(--clr-navy)}
+    .example-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;margin-bottom:16px;border-left:5px solid var(--clr-accent);animation:fadeInUp 0.4s ease both;transition:transform 0.2s,box-shadow 0.2s}
+    .example-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+    .example-header{background:#F3F4F8;padding:10px 20px;font-weight:800;font-size:0.82rem;color:var(--clr-muted);letter-spacing:0.06em;text-transform:uppercase}
+    .example-body{padding:20px 24px}
+    .example-problem{font-size:1rem;font-weight:600;color:var(--clr-navy);margin-bottom:14px}
+    .example-working{border-left:3px solid var(--clr-tint);padding-left:14px;margin-bottom:14px}
+    .working-line{font-family:var(--font-mono);font-size:0.9rem;color:var(--clr-text);margin-bottom:6px}
+    .working-line span{color:var(--clr-muted);font-weight:400;margin-left:8px}
+    .answer-chip{display:inline-flex;align-items:center;gap:6px;background:var(--clr-green-bg);border:1.5px solid var(--clr-green);color:#1a7a3a;border-radius:50px;padding:6px 16px;font-weight:700;font-size:0.9rem}
+    .warning-box{background:var(--clr-amber-bg);border-left:5px solid var(--clr-amber);border-radius:var(--radius);padding:20px 24px}
+    .warning-box h3{font-size:1rem;font-weight:800;color:#8B4A00;margin-bottom:12px}
+    .warning-list{list-style:none}.warning-list li{margin-bottom:10px;font-size:0.93rem;line-height:1.55}
+    .warning-list .wrong{color:var(--clr-red);font-weight:700}.warning-list .right{color:var(--clr-green);font-weight:700}
+    .ref-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+    @media(max-width:560px){.ref-grid{grid-template-columns:1fr}}
+    .ref-item{background:#fff;border-radius:10px;padding:16px;box-shadow:0 1px 8px rgba(67,97,238,0.07)}
+    .ref-term{font-weight:800;font-size:0.85rem;color:var(--clr-accent);margin-bottom:4px}
+    .ref-def{font-size:0.88rem;color:var(--clr-text)}
+    .footer-cta{background:linear-gradient(135deg,var(--clr-accent) 0%,#6C63FF 100%);border-radius:var(--radius);padding:36px 32px;text-align:center;color:#fff;margin-top:56px}
+    .footer-cta h2{font-size:1.6rem;font-weight:900;margin-bottom:8px}.footer-cta p{opacity:0.88;margin-bottom:22px;font-size:1rem}
+    .back-link{display:block;text-align:center;margin-top:18px;font-size:0.85rem;color:rgba(255,255,255,0.75);text-decoration:none}.back-link:hover{color:#fff}
+    hr{border:none;border-top:2px solid var(--clr-dot);margin:40px 0}
+    /* Shapes gallery */
+    .shapes-gallery{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;margin:24px 0}
+    .shape-card{background:#fff;border-radius:12px;box-shadow:var(--shadow);padding:20px 16px;text-align:center;min-width:110px;flex:1;max-width:140px}
+    .shape-card svg{display:block;margin:0 auto 10px}
+    .shape-name{font-weight:800;font-size:0.9rem;color:var(--clr-navy)}
+    .shape-props{font-size:0.77rem;color:var(--clr-muted);margin-top:4px}
+    /* Pattern row */
+    .pattern-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:center;margin:20px 0}
+    .pat-item{width:44px;height:44px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;font-weight:900}
+    .pat-item.a{background:#EEF0FF;color:var(--clr-accent)}
+    .pat-item.b{background:var(--clr-green-bg);color:var(--clr-green)}
+    .pat-item.c{background:var(--clr-amber-bg);color:var(--clr-amber)}
+    .pat-item.q{background:var(--clr-tint);border:2px dashed var(--clr-accent);color:var(--clr-accent)}
+    .visual-caption{text-align:center;font-size:0.8rem;color:var(--clr-muted);margin-top:6px;font-style:italic}
+    @keyframes fadeInUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+    @media(max-width:600px){.page-wrap{padding:16px 14px 48px}.example-body{padding:16px}.footer-cta{padding:28px 20px}}
+  </style>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="page-wrap">
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="index.html">🏠 Home</a><span>›</span>
+    <a href="index.html#grade-1-math">Grade 1 Math</a><span>›</span>
+    <span>Shapes &amp; Patterns</span>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-badges">
+      <span class="badge badge-solid">Grade 1</span>
+      <span class="badge badge-outline">Mathematics 🔷</span>
+    </div>
+    <h1>Shapes &amp; Patterns</h1>
+    <p class="hero-intro">In this guide, you'll learn to recognise 2D shapes by their sides and corners, and how to read, describe, and extend repeating patterns.</p>
+    <div class="hero-meta">
+      <span class="meta-pill">⏱ ~5 min read</span>
+      <a href="math-grade1-shapes-patterns-worksheet.html" class="btn btn-primary">📝 Jump to Worksheet →</a>
+    </div>
+  </header>
+
+  <section aria-labelledby="what-heading">
+    <p class="section-label">Section 1</p>
+    <h2 class="section-title" id="what-heading">2D Shapes</h2>
+    <div class="card">
+      <p>A <strong>2D (flat) shape</strong> is a shape you can draw on paper. It has <strong>sides</strong> (straight edges) and <strong>corners</strong> (where two sides meet). A circle has no straight sides and no corners — it is perfectly round.</p>
+    </div>
+
+    <!-- SVG shapes gallery -->
+    <div class="shapes-gallery" role="img" aria-label="Six common 2D shapes with their names and properties">
+      <div class="shape-card">
+        <svg width="70" height="70" viewBox="0 0 70 70"><circle cx="35" cy="35" r="28" fill="#EEF0FF" stroke="#4361EE" stroke-width="3"/></svg>
+        <div class="shape-name">Circle</div>
+        <div class="shape-props">0 sides · 0 corners</div>
+      </div>
+      <div class="shape-card">
+        <svg width="70" height="70" viewBox="0 0 70 70"><polygon points="35,5 65,60 5,60" fill="#EEF0FF" stroke="#4361EE" stroke-width="3"/></svg>
+        <div class="shape-name">Triangle</div>
+        <div class="shape-props">3 sides · 3 corners</div>
+      </div>
+      <div class="shape-card">
+        <svg width="70" height="70" viewBox="0 0 70 70"><rect x="8" y="8" width="54" height="54" fill="#EEF0FF" stroke="#4361EE" stroke-width="3" rx="2"/></svg>
+        <div class="shape-name">Square</div>
+        <div class="shape-props">4 equal sides · 4 corners</div>
+      </div>
+      <div class="shape-card">
+        <svg width="70" height="70" viewBox="0 0 70 70"><rect x="5" y="18" width="60" height="34" fill="#EEF0FF" stroke="#4361EE" stroke-width="3" rx="2"/></svg>
+        <div class="shape-name">Rectangle</div>
+        <div class="shape-props">4 sides · 4 corners</div>
+      </div>
+      <div class="shape-card">
+        <svg width="70" height="70" viewBox="0 0 70 70"><polygon points="35,5 62,22 52,56 18,56 8,22" fill="#EEF0FF" stroke="#4361EE" stroke-width="3"/></svg>
+        <div class="shape-name">Pentagon</div>
+        <div class="shape-props">5 sides · 5 corners</div>
+      </div>
+      <div class="shape-card">
+        <svg width="70" height="70" viewBox="0 0 70 70"><polygon points="35,5 60,20 60,50 35,65 10,50 10,20" fill="#EEF0FF" stroke="#4361EE" stroke-width="3"/></svg>
+        <div class="shape-name">Hexagon</div>
+        <div class="shape-props">6 sides · 6 corners</div>
+      </div>
+    </div>
+    <p class="visual-caption">Count the sides (straight lines) and corners (points) to name any shape.</p>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="patterns-heading">
+    <p class="section-label">Section 2</p>
+    <h2 class="section-title" id="patterns-heading">Repeating Patterns</h2>
+    <div class="card-tint">
+      <p style="margin-bottom:12px">A <strong>pattern</strong> is a sequence that repeats using a <strong>core unit</strong> — the smallest part that keeps repeating. To extend a pattern, find the core and keep repeating it.</p>
+      <ol class="steps">
+        <li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Find the core:</strong> Look for the smallest repeating group. e.g., in 🔵🔴🔵🔴, the core is 🔵🔴 (AB pattern).</div></li>
+        <li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Name the pattern:</strong> Use letters — A for the first shape/colour, B for the second, C for the third.</div></li>
+        <li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Extend:</strong> Repeat the core to find what comes next. After A,B,A,B,A — the next is B.</div></li>
+      </ol>
+    </div>
+
+    <!-- Pattern visuals -->
+    <div style="margin-top:20px">
+      <p style="font-weight:700;color:var(--clr-navy);margin-bottom:8px">AB Pattern (circle, square, circle, square…):</p>
+      <div class="pattern-row">
+        <div class="pat-item a">●</div><div class="pat-item b">■</div>
+        <div class="pat-item a">●</div><div class="pat-item b">■</div>
+        <div class="pat-item a">●</div><div class="pat-item q">?</div>
+      </div>
+      <p class="visual-caption">Core = ●■ &nbsp;→&nbsp; the next is ■</p>
+
+      <p style="font-weight:700;color:var(--clr-navy);margin:16px 0 8px">ABC Pattern (circle, square, triangle…):</p>
+      <div class="pattern-row">
+        <div class="pat-item a">●</div><div class="pat-item b">■</div><div class="pat-item c">▲</div>
+        <div class="pat-item a">●</div><div class="pat-item b">■</div><div class="pat-item q">?</div>
+      </div>
+      <p class="visual-caption">Core = ●■▲ &nbsp;→&nbsp; the next is ▲</p>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="examples-heading">
+    <p class="section-label">Section 3</p>
+    <h2 class="section-title" id="examples-heading">Worked Examples</h2>
+
+    <div class="example-card">
+      <div class="example-header">Example 1 — Name by sides</div>
+      <div class="example-body">
+        <div class="example-problem">A shape has 6 sides and 6 corners. What is it?</div>
+        <div class="example-working">
+          <div class="working-line">6 sides → hexagon</div>
+        </div>
+        <span class="answer-chip">✅ Answer: Hexagon</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">Example 2 — Count corners</div>
+      <div class="example-body">
+        <div class="example-problem">How many corners does a rectangle have?</div>
+        <div class="example-working">
+          <div class="working-line">Rectangle has 4 sides and 4 corners (right-angle corners)</div>
+        </div>
+        <span class="answer-chip">✅ Answer: 4 corners</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">Example 3 — Extend a pattern</div>
+      <div class="example-body">
+        <div class="example-problem">🔵 🟡 🔵 🟡 🔵 ___ — what comes next?</div>
+        <div class="example-working">
+          <div class="working-line">Core: 🔵 🟡 (AB pattern)</div>
+          <div class="working-line">After 🔵, the next in the core is 🟡</div>
+        </div>
+        <span class="answer-chip">✅ Answer: 🟡</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">Example 4 — Find the odd one out</div>
+      <div class="example-body">
+        <div class="example-problem">Which shape has NO corners: triangle, circle, square?</div>
+        <div class="example-working">
+          <div class="working-line">Triangle → 3 corners. Square → 4 corners. Circle → 0 corners.</div>
+        </div>
+        <span class="answer-chip">✅ Answer: Circle</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">Example 5 — Word problem</div>
+      <div class="example-body">
+        <div class="example-problem">I am a flat shape. I have 3 corners and 3 sides. All my sides are the same length. What am I?</div>
+        <div class="example-working">
+          <div class="working-line">3 sides and 3 corners → triangle</div>
+          <div class="working-line">All sides equal → equilateral triangle</div>
+        </div>
+        <span class="answer-chip">✅ Answer: Triangle</span>
+      </div>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="watchout-heading">
+    <p class="section-label">Section 4</p>
+    <h2 class="section-title" id="watchout-heading">Watch Out! ⚠️</h2>
+    <div class="warning-box">
+      <h3>Common Mistakes to Avoid</h3>
+      <ul class="warning-list">
+        <li>
+          <span class="wrong">❌ Confusing square and rectangle:</span> Thinking they are totally different<br>
+          <span class="right">✅ A square IS a special rectangle where all 4 sides are equal. Both have 4 corners.</span>
+        </li>
+        <li>
+          <span class="wrong">❌ Saying a circle has 1 side:</span> The curved edge counts as a side<br>
+          <span class="right">✅ A circle has 0 straight sides and 0 corners. Its curved boundary is not a straight side.</span>
+        </li>
+        <li>
+          <span class="wrong">❌ Breaking a pattern by starting from 1 each time:</span> In ●■▲●■▲●___, guessing ● instead of ▲<br>
+          <span class="right">✅ Always find the core first (●■▲), then count where you are in it. The 7th item is ● (position 1 of core), so the 8th is ■ (position 2).</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="ref-heading">
+    <p class="section-label">Section 5</p>
+    <h2 class="section-title" id="ref-heading">Quick Reference</h2>
+    <div class="card-tint">
+      <div class="ref-grid" style="margin-top:0">
+        <div class="ref-item"><div class="ref-term">Circle</div><div class="ref-def">0 sides, 0 corners. Round.</div></div>
+        <div class="ref-item"><div class="ref-term">Triangle</div><div class="ref-def">3 sides, 3 corners.</div></div>
+        <div class="ref-item"><div class="ref-term">Square</div><div class="ref-def">4 equal sides, 4 corners.</div></div>
+        <div class="ref-item"><div class="ref-term">Rectangle</div><div class="ref-def">4 sides (2 pairs equal), 4 corners.</div></div>
+        <div class="ref-item"><div class="ref-term">Pentagon</div><div class="ref-def">5 sides, 5 corners.</div></div>
+        <div class="ref-item"><div class="ref-term">Hexagon</div><div class="ref-def">6 sides, 6 corners.</div></div>
+        <div class="ref-item"><div class="ref-term">AB pattern</div><div class="ref-def">Two-part core: 1, 2, 1, 2, 1, 2 …</div></div>
+        <div class="ref-item"><div class="ref-term">ABC pattern</div><div class="ref-def">Three-part core: 1, 2, 3, 1, 2, 3 …</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer-cta">
+    <h2>Ready to practice? Let's go! 🚀</h2>
+    <p>Test your shapes &amp; patterns skills with 10 interactive questions — Easy or Hard mode.</p>
+    <a href="math-grade1-shapes-patterns-worksheet.html" class="btn btn-white">📝 Start Worksheet →</a>
+    <a href="index.html#grade-1-math" class="back-link">← Back to Grade 1 Math topics</a>
+  </div>
+
+</div>
+</body>
+</html>

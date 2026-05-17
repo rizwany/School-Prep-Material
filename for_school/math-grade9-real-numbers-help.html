@@ -1,0 +1,251 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real Numbers – Grade 9 Math Help</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --ink: #1a1f36; --muted: #5a6076; --accent: #4361EE; --accent-dark: #3451d1;
+      --green: #06d6a0; --orange: #fb8500; --red: #ef233c;
+      --bg: #f4f6fb; --card: #ffffff; --border: #e2e6f0; --radius: 14px;
+      --mono: 'JetBrains Mono', monospace;
+    }
+    body { font-family: 'Nunito', sans-serif; background-color: var(--bg); background-image: radial-gradient(circle, #E8EDF5 1.5px, transparent 1.5px); background-size: 20px 20px; color: var(--ink); min-height: 100vh; }
+    header { background: var(--card); border-bottom: 2px solid var(--border); padding: 0 24px; }
+    .header-inner { max-width: 860px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 52px; }
+    .logo-link { text-decoration: none; display: flex; align-items: center; } .logo-img { height: 36px; width: auto; display: block; }
+    nav a { font-weight: 700; font-size: 0.85rem; color: var(--muted); text-decoration: none; margin-left: 20px; }
+    nav a:hover { color: var(--accent); }
+    .breadcrumb { max-width: 860px; margin: 0 auto; padding: 14px 24px 0; font-size: 0.8rem; color: var(--muted); }
+    .breadcrumb a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 6px; }
+    .hero { max-width: 860px; margin: 0 auto; padding: 28px 24px 0; display: flex; align-items: center; gap: 20px; }
+    .hero-icon { width: 72px; height: 72px; border-radius: 20px; background: var(--accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.6rem; color:#fff; font-family: var(--mono); font-weight:700; }
+    .hero h1 { font-size: 1.9rem; font-weight: 900; line-height: 1.15; }
+    .hero p { font-size: 1rem; color: var(--muted); margin-top: 6px; font-weight: 600; }
+    main { max-width: 860px; margin: 28px auto 60px; padding: 0 24px; display: flex; flex-direction: column; gap: 24px; }
+    .card { background: var(--card); border-radius: var(--radius); border: 2px solid var(--border); padding: 28px; }
+    .card h2 { font-size: 1.25rem; font-weight: 900; color: var(--accent); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+    .card p { font-size: 0.95rem; line-height: 1.7; color: var(--ink); margin-bottom: 12px; }
+    .card p:last-child { margin-bottom: 0; }
+    .number-hierarchy { display: flex; flex-direction: column; gap: 10px; margin: 14px 0; }
+    .nh-row { display: flex; align-items: center; gap: 14px; padding: 12px 18px; border-radius: 12px; border: 2px solid var(--border); background: #fafbff; }
+    .nh-badge { font-weight: 900; font-size: 0.85rem; min-width: 110px; color: var(--accent); }
+    .nh-desc { font-size: 0.9rem; color: var(--ink); line-height: 1.5; }
+    .nh-eg { font-family: var(--mono); font-size: 0.83rem; color: var(--muted); margin-left: auto; white-space: nowrap; font-weight: 600; }
+    .surd-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 14px 0; }
+    @media (max-width: 560px) { .surd-grid { grid-template-columns: 1fr; } }
+    .surd-card { background: #eef1fd; border: 2px solid var(--border); border-radius: 12px; padding: 14px 18px; }
+    .surd-card .rule { font-family: var(--mono); font-size: 0.95rem; font-weight: 700; color: var(--accent-dark); margin-bottom: 6px; }
+    .surd-card .eg { font-size: 0.88rem; color: var(--muted); font-weight: 600; }
+    .examples { display: flex; flex-direction: column; gap: 16px; }
+    .example { border: 2px solid var(--border); border-radius: 12px; padding: 18px 20px; background: #fafbff; }
+    .example-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+    .ex-num { width: 32px; height: 32px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 900; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .example-header h3 { font-size: 1rem; font-weight: 800; }
+    .ex-step { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; font-size: 0.9rem; }
+    .ex-step-num { background: var(--green); color: #fff; border-radius: 50%; width: 22px; height: 22px; font-size: 0.75rem; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    .ex-step p { line-height: 1.5; }
+    code { font-family: var(--mono); background: #eef1fd; border-radius: 5px; padding: 1px 6px; font-size: 0.88em; color: var(--accent-dark); }
+    .answer-box { background: #e8faf4; border: 2px solid var(--green); border-radius: 8px; padding: 10px 14px; margin-top: 10px; font-weight: 800; font-size: 0.95rem; color: #05a07a; }
+    .watch-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .watch-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.92rem; line-height: 1.55; }
+    .watch-badge { background: #fff0f0; color: var(--red); border: 2px solid #ffd6d6; border-radius: 8px; padding: 3px 9px; font-weight: 800; font-size: 0.78rem; flex-shrink: 0; margin-top: 2px; }
+    .ref-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    .ref-table th, .ref-table td { border: 2px solid var(--border); padding: 10px 14px; font-size: 0.88rem; text-align: left; }
+    .ref-table th { background: #eef1fd; font-weight: 800; color: var(--accent-dark); }
+    .cta-bar { background: linear-gradient(135deg, #4361EE 0%, #3a0ca3 100%); border-radius: var(--radius); padding: 28px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .cta-bar h2 { color: #fff; font-size: 1.2rem; font-weight: 900; }
+    .cta-bar p { color: rgba(255,255,255,.8); font-size: 0.9rem; margin-top: 4px; font-weight: 600; }
+    .cta-btn { background: #fff; color: var(--accent); border-radius: 10px; padding: 12px 24px; font-weight: 900; font-size: 1rem; text-decoration: none; white-space: nowrap; transition: transform .15s; }
+    .cta-btn:hover { transform: scale(1.04); }
+    footer { text-align: center; padding: 24px; font-size: 0.8rem; color: var(--muted); font-weight: 600; }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header>
+  <div class="header-inner">
+    <a class="logo-link" href="../index.html"><img src="../logo.png" alt="LearnPad" class="logo-img" /></a>
+    <nav><a href="../index.html">Home</a><a href="index.html">School</a><a href="../learnings/">Tech in Urdu</a></nav>
+  </div>
+</header>
+<div class="breadcrumb">
+  <a href="index.html">Home</a><span>›</span>
+  <a href="index.html#grade9">Grade 9 Math</a><span>›</span>
+  Real Numbers
+</div>
+<div class="hero">
+  <div class="hero-icon">ℝ</div>
+  <div>
+    <h1>Real Numbers</h1>
+    <p>Grade 9 Math &nbsp;·&nbsp; Number systems, irrationals &amp; surds</p>
+  </div>
+</div>
+
+<main>
+
+  <!-- Number Hierarchy -->
+  <div class="card">
+    <h2>&#x1F522; The Number Hierarchy</h2>
+    <p>Every number fits into a nested system. Each set contains all the sets above it.</p>
+    <div class="number-hierarchy">
+      <div class="nh-row">
+        <div class="nh-badge">Natural (ℕ)</div>
+        <div class="nh-desc">Counting numbers starting from 1.</div>
+        <div class="nh-eg">1, 2, 3, 4 …</div>
+      </div>
+      <div class="nh-row">
+        <div class="nh-badge">Whole (W)</div>
+        <div class="nh-desc">Natural numbers plus zero.</div>
+        <div class="nh-eg">0, 1, 2, 3 …</div>
+      </div>
+      <div class="nh-row">
+        <div class="nh-badge">Integers (ℤ)</div>
+        <div class="nh-desc">Whole numbers and their negatives.</div>
+        <div class="nh-eg">… −2, −1, 0, 1, 2 …</div>
+      </div>
+      <div class="nh-row">
+        <div class="nh-badge">Rational (ℚ)</div>
+        <div class="nh-desc">Any number expressible as p/q where p, q ∈ ℤ and q ≠ 0. Decimal terminates or repeats.</div>
+        <div class="nh-eg">½, 0.75, −3, 0.3̄</div>
+      </div>
+      <div class="nh-row">
+        <div class="nh-badge">Irrational</div>
+        <div class="nh-desc">Cannot be written as p/q. Decimal is non-terminating and non-repeating.</div>
+        <div class="nh-eg">√2, π, √3, e</div>
+      </div>
+      <div class="nh-row" style="border-color: var(--accent); background: #eef1fd;">
+        <div class="nh-badge" style="color: var(--accent-dark);">Real (ℝ)</div>
+        <div class="nh-desc" style="font-weight: 700;">ALL rational AND irrational numbers together form the real number system.</div>
+        <div class="nh-eg">any point on the number line</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Surds -->
+  <div class="card">
+    <h2>&#x221A; Surds (Irrational Roots)</h2>
+    <p>A <strong>surd</strong> is a root that cannot be simplified to a rational number: <code>√2 ≈ 1.4142…</code> (non-terminating, non-repeating).</p>
+    <p><strong>Note:</strong> √4 = 2 is <em>not</em> a surd because it simplifies to a whole number.</p>
+    <div class="surd-grid">
+      <div class="surd-card">
+        <div class="rule">√(ab) = √a × √b</div>
+        <div class="eg">√12 = √4 × √3 = 2√3</div>
+      </div>
+      <div class="surd-card">
+        <div class="rule">√(a/b) = √a / √b</div>
+        <div class="eg">√(9/25) = 3/5</div>
+      </div>
+      <div class="surd-card">
+        <div class="rule">a√n + b√n = (a+b)√n</div>
+        <div class="eg">3√5 + 2√5 = 5√5</div>
+      </div>
+      <div class="surd-card">
+        <div class="rule">√n × √n = n</div>
+        <div class="eg">√7 × √7 = 7</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Worked Examples -->
+  <div class="card">
+    <h2>&#x270F;&#xFE0F; Worked Examples</h2>
+    <div class="examples">
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">1</div><h3>Classify: −4, ½, √5, 0, π</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>−4 is an integer (and rational). ½ is rational (p/q form).</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>√5 ≈ 2.2360… non-terminating, non-repeating → irrational.</p></div>
+        <div class="ex-step"><div class="ex-step-num">3</div><p>0 is a whole number (and rational). π ≈ 3.14159… → irrational.</p></div>
+        <div class="answer-box">Rational: −4, ½, 0 &nbsp;|&nbsp; Irrational: √5, π</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">2</div><h3>Simplify √75</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Find the largest perfect-square factor of 75: 75 = 25 × 3.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>√75 = √(25 × 3) = √25 × √3 = 5√3.</p></div>
+        <div class="answer-box">√75 = 5√3</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">3</div><h3>Simplify 3√8 − √2</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Simplify √8: √8 = √(4×2) = 2√2.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>3√8 = 3 × 2√2 = 6√2.</p></div>
+        <div class="ex-step"><div class="ex-step-num">3</div><p>6√2 − √2 = (6−1)√2 = 5√2.</p></div>
+        <div class="answer-box">3√8 − √2 = 5√2</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">4</div><h3>Is 0.121212… rational or irrational?</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>The decimal pattern "12" repeats endlessly → it is a <em>recurring decimal</em>.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>Any terminating or recurring decimal can be expressed as p/q, so it is <strong>rational</strong>.</p></div>
+        <div class="ex-step"><div class="ex-step-num">3</div><p>0.12̄ = 12/99 = 4/33.</p></div>
+        <div class="answer-box">0.121212… = 4/33 → Rational</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">5</div><h3>Simplify √18 × √2</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Combine under one radical: √18 × √2 = √(18 × 2) = √36.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>√36 = 6 (a perfect square → rational).</p></div>
+        <div class="answer-box">√18 × √2 = 6</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Watch Out -->
+  <div class="card">
+    <h2>&#x26A0;&#xFE0F; Watch Out!</h2>
+    <ul class="watch-list">
+      <li><span class="watch-badge">SURD CHECK</span>√9 = 3 is rational, NOT a surd. Always check if the result simplifies to a whole number.</li>
+      <li><span class="watch-badge">LIKE SURDS</span>You can only add/subtract surds with the same radicand: 2√3 + 5√3 = 7√3, but 2√3 + 5√2 cannot be simplified further.</li>
+      <li><span class="watch-badge">π ≠ 22/7</span>22/7 is only an <em>approximation</em> of π. π itself is irrational — its decimal never repeats.</li>
+      <li><span class="watch-badge">PRODUCT</span>The product of two irrationals can be rational: √2 × √2 = 2.</li>
+    </ul>
+  </div>
+
+  <!-- Quick Reference -->
+  <div class="card">
+    <h2>&#x1F4CB; Quick Reference</h2>
+    <table class="ref-table">
+      <thead><tr><th>Set</th><th>Symbol</th><th>Examples</th><th>Decimal form</th></tr></thead>
+      <tbody>
+        <tr><td>Natural</td><td><code>ℕ</code></td><td>1, 2, 3 …</td><td>Terminates (no fraction)</td></tr>
+        <tr><td>Integer</td><td><code>ℤ</code></td><td>−3, 0, 5</td><td>No decimal part</td></tr>
+        <tr><td>Rational</td><td><code>ℚ</code></td><td>½, 0.75, −4</td><td>Terminates or repeats</td></tr>
+        <tr><td>Irrational</td><td>—</td><td>√2, π, √7</td><td>Non-terminating, non-repeating</td></tr>
+        <tr><td>Real</td><td><code>ℝ</code></td><td>All of the above</td><td>Any decimal</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-bar">
+    <div>
+      <h2>Ready to practise?</h2>
+      <p>Try the interactive worksheet with instant feedback.</p>
+    </div>
+    <a class="cta-btn" href="math-grade9-real-numbers-worksheet.html">Start Worksheet →</a>
+  </div>
+
+</main>
+<footer>© 2025 LearnBright · Free printable &amp; interactive school worksheets</footer>
+</body>
+</html>

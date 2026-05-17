@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quadratic Equations – Grade 10 Math Help</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --ink: #1a1f36; --muted: #5a6076; --accent: #4361EE; --accent-dark: #3451d1; --green: #06d6a0; --orange: #fb8500; --red: #ef233c; --bg: #f4f6fb; --card: #ffffff; --border: #e2e6f0; --radius: 14px; --mono: 'JetBrains Mono', monospace; }
+    body { font-family: 'Nunito', sans-serif; background-color: var(--bg); background-image: radial-gradient(circle, #E8EDF5 1.5px, transparent 1.5px); background-size: 20px 20px; color: var(--ink); min-height: 100vh; }
+    header { background: var(--card); border-bottom: 2px solid var(--border); padding: 0 24px; }
+    .header-inner { max-width: 860px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 52px; }
+    .logo-link { text-decoration: none; display: flex; align-items: center; } .logo-img { height: 36px; width: auto; display: block; }
+    nav a { font-weight: 700; font-size: 0.85rem; color: var(--muted); text-decoration: none; margin-left: 20px; }
+    nav a:hover { color: var(--accent); }
+    .breadcrumb { max-width: 860px; margin: 0 auto; padding: 14px 24px 0; font-size: 0.8rem; color: var(--muted); }
+    .breadcrumb a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 6px; }
+    .hero { max-width: 860px; margin: 0 auto; padding: 28px 24px 0; display: flex; align-items: center; gap: 20px; }
+    .hero-icon { width: 72px; height: 72px; border-radius: 20px; background: var(--accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.4rem; color:#fff; font-family: var(--mono); font-weight:700; }
+    .hero h1 { font-size: 1.9rem; font-weight: 900; line-height: 1.15; }
+    .hero p { font-size: 1rem; color: var(--muted); margin-top: 6px; font-weight: 600; }
+    main { max-width: 860px; margin: 28px auto 60px; padding: 0 24px; display: flex; flex-direction: column; gap: 24px; }
+    .card { background: var(--card); border-radius: var(--radius); border: 2px solid var(--border); padding: 28px; }
+    .card h2 { font-size: 1.25rem; font-weight: 900; color: var(--accent); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+    .card p { font-size: 0.95rem; line-height: 1.7; color: var(--ink); margin-bottom: 12px; }
+    .card p:last-child { margin-bottom: 0; }
+    .method-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 12px; margin: 14px 0; }
+    @media(max-width:560px){ .method-grid { grid-template-columns: 1fr; } }
+    .method-card { background: #fafbff; border: 2px solid var(--border); border-radius: 12px; padding: 14px 16px; }
+    .method-card .m-name { font-weight: 900; font-size: 0.95rem; color: var(--accent); margin-bottom: 6px; }
+    .method-card .m-formula { font-family: var(--mono); font-size: 0.85rem; color: var(--ink); margin-bottom: 4px; font-weight: 700; }
+    .method-card .m-note { font-size: 0.82rem; color: var(--muted); font-weight: 600; }
+    .disc-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin: 14px 0; }
+    @media(max-width:560px){ .disc-grid { grid-template-columns: 1fr; } }
+    .disc-card { border-radius: 10px; padding: 12px 14px; text-align: center; }
+    .disc-card .dc-val { font-family: var(--mono); font-size: 1rem; font-weight: 900; margin-bottom: 4px; }
+    .disc-card .dc-desc { font-size: 0.82rem; font-weight: 700; }
+    .disc-pos { background: #e8faf4; border: 2px solid var(--green); color: #05a07a; }
+    .disc-zero { background: #fff4e6; border: 2px solid var(--orange); color: var(--orange); }
+    .disc-neg { background: #fff0f0; border: 2px solid var(--red); color: var(--red); }
+    .examples { display: flex; flex-direction: column; gap: 16px; }
+    .example { border: 2px solid var(--border); border-radius: 12px; padding: 18px 20px; background: #fafbff; }
+    .example-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+    .ex-num { width: 32px; height: 32px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 900; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .example-header h3 { font-size: 1rem; font-weight: 800; }
+    .ex-step { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; font-size: 0.9rem; }
+    .ex-step-num { background: var(--green); color: #fff; border-radius: 50%; width: 22px; height: 22px; font-size: 0.75rem; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    .ex-step p { line-height: 1.5; }
+    code { font-family: var(--mono); background: #eef1fd; border-radius: 5px; padding: 1px 6px; font-size: 0.88em; color: var(--accent-dark); }
+    .answer-box { background: #e8faf4; border: 2px solid var(--green); border-radius: 8px; padding: 10px 14px; margin-top: 10px; font-weight: 800; font-size: 0.95rem; color: #05a07a; }
+    .watch-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .watch-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.92rem; line-height: 1.55; }
+    .watch-badge { background: #fff0f0; color: var(--red); border: 2px solid #ffd6d6; border-radius: 8px; padding: 3px 9px; font-weight: 800; font-size: 0.78rem; flex-shrink: 0; margin-top: 2px; }
+    .ref-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    .ref-table th, .ref-table td { border: 2px solid var(--border); padding: 10px 14px; font-size: 0.88rem; text-align: left; }
+    .ref-table th { background: #eef1fd; font-weight: 800; color: var(--accent-dark); }
+    .cta-bar { background: linear-gradient(135deg, #4361EE 0%, #3a0ca3 100%); border-radius: var(--radius); padding: 28px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .cta-bar h2 { color: #fff; font-size: 1.2rem; font-weight: 900; }
+    .cta-bar p { color: rgba(255,255,255,.8); font-size: 0.9rem; margin-top: 4px; font-weight: 600; }
+    .cta-btn { background: #fff; color: var(--accent); border-radius: 10px; padding: 12px 24px; font-weight: 900; font-size: 1rem; text-decoration: none; white-space: nowrap; transition: transform .15s; }
+    .cta-btn:hover { transform: scale(1.04); }
+    footer { text-align: center; padding: 24px; font-size: 0.8rem; color: var(--muted); font-weight: 600; }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header>
+  <div class="header-inner">
+    <a class="logo-link" href="../index.html"><img src="../logo.png" alt="LearnPad" class="logo-img" /></a>
+    <nav><a href="../index.html">Home</a><a href="index.html">School</a><a href="../learnings/">Tech in Urdu</a></nav>
+  </div>
+</header>
+<div class="breadcrumb">
+  <a href="index.html">Home</a><span>›</span>
+  <a href="index.html#grade10">Grade 10 Math</a><span>›</span>
+  Quadratic Equations
+</div>
+<div class="hero">
+  <div class="hero-icon">x²</div>
+  <div>
+    <h1>Quadratic Equations</h1>
+    <p>Grade 10 Math &nbsp;·&nbsp; Factoring, formula &amp; the discriminant</p>
+  </div>
+</div>
+<main>
+
+  <div class="card">
+    <h2>&#x1F4D0; Standard Form</h2>
+    <p>A <strong>quadratic equation</strong> has the form <code>ax² + bx + c = 0</code>, where <strong>a ≠ 0</strong>. It is a polynomial equation of degree 2 and always has exactly 2 roots (counting multiplicity, possibly complex).</p>
+    <p>The <strong>roots</strong> (solutions) are the x-values that make the equation true. Geometrically, they are the x-intercepts of the parabola <code>y = ax² + bx + c</code>.</p>
+  </div>
+
+  <div class="card">
+    <h2>&#x1F527; Methods of Solving</h2>
+    <div class="method-grid">
+      <div class="method-card">
+        <div class="m-name">Factoring</div>
+        <div class="m-formula">ax²+bx+c = (px+q)(rx+s)</div>
+        <div class="m-note">Fast when factors are obvious integers.</div>
+      </div>
+      <div class="method-card">
+        <div class="m-name">Quadratic Formula</div>
+        <div class="m-formula">x = (−b ± √(b²−4ac)) / 2a</div>
+        <div class="m-note">Always works. Use when factoring is hard.</div>
+      </div>
+      <div class="method-card">
+        <div class="m-name">Completing the Square</div>
+        <div class="m-formula">(x + b/2a)² = (b²−4ac)/4a²</div>
+        <div class="m-note">Useful for deriving the formula or vertex form.</div>
+      </div>
+      <div class="method-card">
+        <div class="m-name">Square Root Method</div>
+        <div class="m-formula">x² = k  →  x = ±√k</div>
+        <div class="m-note">Only when equation has no x term (b = 0).</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>&#x25B3; The Discriminant (D = b² − 4ac)</h2>
+    <div class="disc-grid">
+      <div class="disc-card disc-pos">
+        <div class="dc-val">D &gt; 0</div>
+        <div class="dc-desc">Two distinct real roots</div>
+      </div>
+      <div class="disc-card disc-zero">
+        <div class="dc-val">D = 0</div>
+        <div class="dc-desc">One repeated real root</div>
+      </div>
+      <div class="disc-card disc-neg">
+        <div class="dc-val">D &lt; 0</div>
+        <div class="dc-desc">No real roots (complex)</div>
+      </div>
+    </div>
+    <p><strong>Sum of roots:</strong> <code>α + β = −b/a</code> &nbsp;|&nbsp; <strong>Product of roots:</strong> <code>αβ = c/a</code></p>
+  </div>
+
+  <div class="card">
+    <h2>&#x270F;&#xFE0F; Worked Examples</h2>
+    <div class="examples">
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">1</div><h3>Solve x² − 5x + 6 = 0 by factoring.</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Find two numbers that multiply to 6 and add to −5: they are −2 and −3.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>Factor: (x − 2)(x − 3) = 0.</p></div>
+        <div class="ex-step"><div class="ex-step-num">3</div><p>x − 2 = 0 → x = 2, or x − 3 = 0 → x = 3.</p></div>
+        <div class="answer-box">x = 2 or x = 3</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">2</div><h3>Solve 2x² + 3x − 2 = 0 using the quadratic formula.</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>a = 2, b = 3, c = −2. D = 3² − 4(2)(−2) = 9 + 16 = 25.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>x = (−3 ± √25) / 4 = (−3 ± 5) / 4.</p></div>
+        <div class="ex-step"><div class="ex-step-num">3</div><p>x = (−3+5)/4 = 1/2 or x = (−3−5)/4 = −2.</p></div>
+        <div class="answer-box">x = ½ or x = −2</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">3</div><h3>Find the discriminant of x² + 4x + 4 = 0 and classify the roots.</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>D = 4² − 4(1)(4) = 16 − 16 = 0.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>D = 0 means one repeated root. x = −4/2 = −2.</p></div>
+        <div class="answer-box">D = 0; repeated root x = −2</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">4</div><h3>The roots of x² − px + 12 = 0 are 3 and 4. Find p.</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>Sum of roots = 3 + 4 = 7 = p/1 → p = 7.</p></div>
+        <div class="ex-step"><div class="ex-step-num">2</div><p>Check product: 3 × 4 = 12 = c/a ✓.</p></div>
+        <div class="answer-box">p = 7</div>
+      </div>
+
+      <div class="example">
+        <div class="example-header"><div class="ex-num">5</div><h3>Solve x² − 8 = 0.</h3></div>
+        <div class="ex-step"><div class="ex-step-num">1</div><p>x² = 8 → x = ±√8 = ±2√2.</p></div>
+        <div class="answer-box">x = 2√2 or x = −2√2</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>&#x26A0;&#xFE0F; Watch Out!</h2>
+    <ul class="watch-list">
+      <li><span class="watch-badge">SIGN</span>Always rearrange to <code>ax²+bx+c = 0</code> before applying the formula. Don't forget to set equal to zero first.</li>
+      <li><span class="watch-badge">DIVIDE</span>The full formula is <code>(−b ± √D) / (2a)</code> — the 2a divides the entire numerator, not just ±√D.</li>
+      <li><span class="watch-badge">TWO ROOTS</span>Even if factoring gives the same bracket twice, e.g. (x−3)² = 0, there are still two roots — they're just equal (x = 3 twice).</li>
+      <li><span class="watch-badge">a ≠ 0</span>If a = 0 the equation becomes linear (bx + c = 0), not quadratic.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>&#x1F4CB; Quick Reference</h2>
+    <table class="ref-table">
+      <thead><tr><th>Formula / Term</th><th>Expression</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td>Standard form</td><td><code>ax²+bx+c = 0</code></td><td>a ≠ 0</td></tr>
+        <tr><td>Quadratic formula</td><td><code>x = (−b±√(b²−4ac))/2a</code></td><td>Always works</td></tr>
+        <tr><td>Discriminant</td><td><code>D = b²−4ac</code></td><td>D&gt;0: 2 roots; D=0: 1 root; D&lt;0: none</td></tr>
+        <tr><td>Sum of roots</td><td><code>α+β = −b/a</code></td><td>Vieta's formula</td></tr>
+        <tr><td>Product of roots</td><td><code>αβ = c/a</code></td><td>Vieta's formula</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="cta-bar">
+    <div>
+      <h2>Ready to practise?</h2>
+      <p>Try the interactive worksheet with instant feedback.</p>
+    </div>
+    <a class="cta-btn" href="math-grade10-quadratic-equations-worksheet.html">Start Worksheet →</a>
+  </div>
+
+</main>
+<footer>© 2025 LearnBright · Free printable &amp; interactive school worksheets</footer>
+</body>
+</html>
