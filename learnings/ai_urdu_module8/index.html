@@ -7,22 +7,14 @@
   <link rel="stylesheet" href="assets/css/style.css">
 <style id="common-site-nav-style">
   .common-site-nav { position: sticky; top: 0; z-index: 1000; background: rgba(26, 26, 46, 0.93); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-bottom: 1px solid rgba(255,255,255,0.07); font-family: "Segoe UI", Tahoma, Arial, sans-serif; direction: ltr; }
-  .common-site-nav__inner { width: min(1180px, calc(100% - 24px)); min-height: 52px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 12px; position: relative; }
+  .common-site-nav__inner { width: min(1100px, calc(100% - 32px)); min-height: 66px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 18px; }
   .common-site-nav a { color: inherit; text-decoration: none; }
-  .common-site-nav__brand { flex: 0 0 auto; display: inline-flex; align-items: center; gap: 8px; padding: 6px 0; color: #fff; line-height: 1.2; font-weight: 800; white-space: nowrap; }
-  .common-site-nav__brand-name { font-size: 1.2rem; font-weight: 800; color: #fff; }
-  .common-site-nav__brand-badge { font-size: 0.7rem; font-weight: 700; color: #1A1A2E; background: linear-gradient(135deg, #FFD166, #FFC233); padding: 3px 10px; border-radius: 100px; white-space: nowrap; }
-  .common-site-nav__menu { position: relative; flex: 0 0 auto; }
-  .common-site-nav__menu summary { display: inline-flex; align-items: center; min-height: 32px; padding: 6px 12px; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.85); cursor: pointer; font-size: 0.9rem; font-weight: 700; line-height: 1.2; list-style: none; white-space: nowrap; transition: background 0.18s; }
-  .common-site-nav__menu summary:hover { background: rgba(255,255,255,0.14); color: #fff; }
-  .common-site-nav__menu summary::-webkit-details-marker { display: none; }
-  .common-site-nav__menu summary::after { content: ""; width: 0.42rem; height: 0.42rem; margin-left: 8px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(45deg) translateY(-1px); }
-  .common-site-nav__menu[open] summary::after { transform: rotate(225deg) translate(-2px, -1px); }
-  .common-site-nav__panel { position: absolute; top: calc(100% + 8px); right: 0; width: min(760px, calc(100vw - 24px)); max-height: min(72vh, 620px); overflow: auto; padding: 12px; border: 1px solid rgba(15,23,42,0.14); border-radius: 8px; background: #fff; box-shadow: 0 24px 60px rgba(15,23,42,0.18); }
-  .common-site-nav__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
-  .common-site-nav__panel a { display: block; padding: 8px 10px; border-radius: 7px; color: #1A1A2E; font-size: 0.88rem; font-weight: 700; line-height: 1.25; }
-  .common-site-nav__panel a:hover, .common-site-nav__panel a:focus-visible { background: rgba(67,97,238,0.1); outline: none; }
-  .common-site-nav__panel-section { padding: 4px 10px 2px; font-size: 0.72rem; font-weight: 800; color: #6B7280; letter-spacing: 0.07em; text-transform: uppercase; margin-top: 6px; }
+  .common-site-nav__brand { flex: 0 0 auto; display: inline-flex; align-items: center; padding: 8px 0; }
+  .common-site-nav__logo { height: 38px; width: auto; display: block; }
+  .common-site-nav__links { display: flex; align-items: center; justify-content: flex-end; gap: 6px; }
+  .common-site-nav__link { color: rgba(255,255,255,0.78); padding: 7px 14px; border-radius: 8px; font-size: 0.88rem; font-weight: 700; line-height: 1.2; transition: color 0.18s ease, background 0.18s ease; white-space: nowrap; }
+  .common-site-nav__link:hover, .common-site-nav__link:focus-visible { color: #fff; background: rgba(255,255,255,0.08); outline: none; }
+  .common-site-nav__badge { color: #1A1A2E; background: linear-gradient(135deg, #FFD166, #FFC233); padding: 5px 12px; border-radius: 100px; font-size: 0.72rem; font-weight: 800; white-space: nowrap; }
   .common-site-footer { background: #1A1A2E; color: rgba(255,255,255,0.7); font-family: "Segoe UI", Tahoma, Arial, sans-serif; direction: ltr; padding: 32px 0 0; margin-top: 40px; }
   .common-site-footer__inner { width: min(1180px, calc(100% - 24px)); margin: 0 auto; display: flex; align-items: flex-start; justify-content: space-between; gap: 32px; flex-wrap: wrap; padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,0.08); }
   .common-site-footer__brand-name { font-size: 1.15rem; font-weight: 800; color: #fff; display: block; margin-bottom: 4px; }
@@ -32,33 +24,22 @@
   .common-site-footer__links a { color: rgba(255,255,255,0.65); font-size: 0.85rem; font-weight: 600; padding: 3px 0; text-decoration: none; transition: color 0.18s; display: block; }
   .common-site-footer__links a:hover { color: #fff; }
   .common-site-footer__bottom { width: min(1180px, calc(100% - 24px)); margin: 0 auto; padding: 16px 0 20px; font-size: 0.78rem; color: rgba(255,255,255,0.3); }
-  @media (max-width: 640px) { .common-site-nav__inner { width: calc(100% - 16px); min-height: 46px; } .common-site-nav__brand-name { font-size: 0.95rem; } .common-site-nav__brand-badge { display: none; } .common-site-nav__menu summary { min-height: 30px; padding: 5px 9px; font-size: 0.82rem; } .common-site-nav__panel { position: fixed; top: 54px; left: 8px; right: 8px; width: auto; max-height: calc(100vh - 68px); } .common-site-nav__grid { grid-template-columns: 1fr; } .common-site-footer__inner { flex-direction: column; gap: 16px; } }
+  @media (max-width: 640px) { .common-site-nav__inner { width: calc(100% - 16px); min-height: 56px; gap: 10px; } .common-site-nav__logo { height: 32px; } .common-site-nav__links { gap: 2px; } .common-site-nav__link { font-size: 0.78rem; padding: 6px 8px; } .common-site-nav__badge { display: none; } .common-site-footer__inner { flex-direction: column; gap: 16px; } }
+  @media (max-width: 480px) { .common-site-nav__link:first-child { display: none; } .common-site-nav__link { font-size: 0.74rem; padding: 6px 7px; } }
 </style>
 </head>
 <body>
-<nav class="common-site-nav" aria-label="Common site navigation">
+<nav class="common-site-nav" aria-label="Main navigation">
   <div class="common-site-nav__inner">
-    <a class="common-site-nav__brand" href="../index.html"><span class="common-site-nav__brand-name">AI Urdu</span><span class="common-site-nav__brand-badge">LearnPad</span></a>
-    <details class="common-site-nav__menu">
-      <summary>Pages</summary>
-      <div class="common-site-nav__panel">
-        <div class="common-site-nav__grid">
-      <p class="common-site-nav__panel-section">LearnPad</p>
-      <a href="../../for_school/index.html">Worksheets (for_school)</a>
-      <p class="common-site-nav__panel-section">AI Urdu</p>
-          <a href="../index.html">Home</a>
-          <a href="../ai_urdu_module7/index.html">Module 7 Index</a>
-          <a href="../ai_urdu_module8/index.html">Module 8 Index</a>
-          <a href="../ai_urdu_module8/foundation-models.html">M8: Foundation Models</a>
-          <a href="../ai_urdu_module8/core-architectures.html">M8: Core Architectures</a>
-          <a href="../ai_urdu_module8/multimodal-systems.html">M8: Multimodal Systems</a>
-          <a href="../ai_urdu_module8/ai-agents.html">M8: AI Agents</a>
-          <a href="../ai_urdu_module8/transfer-learning-hands-on.html">M8: Transfer Learning</a>
-          <a href="../ai_urdu_module8/future-trends.html">M8: Future Trends</a>
-          <a href="../ai_urdu_module8/final-quiz.html">M8: Final Quiz</a>
-        </div>
-      </div>
-    </details>
+    <a class="common-site-nav__brand" href="../../index.html" aria-label="LearnPad - go to home">
+      <img class="common-site-nav__logo" src="../../logo.png" alt="LearnPad" />
+    </a>
+    <div class="common-site-nav__links">
+      <a class="common-site-nav__link" href="../../index.html">Home</a>
+      <a class="common-site-nav__link" href="../../for_school/index.html">School Worksheets</a>
+      <a class="common-site-nav__link" href="../index.html">Tech in Urdu</a>
+      <span class="common-site-nav__badge">AI Urdu</span>
+    </div>
   </div>
 </nav>
 <header class="topbar">
