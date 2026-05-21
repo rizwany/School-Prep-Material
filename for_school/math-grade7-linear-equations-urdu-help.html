@@ -1,0 +1,243 @@
+<!-- Math | Grade 7 | Linear Equations | Urdu Help -->
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>خطی مساوات — جماعت ہفتم ریاضی | LearnPad</title>
+  <meta name="description" content="جماعت ہفتم کے لیے خطی مساوات ax+b=c کو حل کرنا مرحلہ وار سیکھیں۔" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{--clr-bg:#ffffff;--clr-dot:#E8EDF5;--clr-accent:#4361EE;--clr-accent-dark:#3451D1;--clr-navy:#1A1A3E;--clr-tint:#EEF0FF;--clr-green:#2DC653;--clr-green-bg:#F0FFF4;--clr-red:#E63946;--clr-red-bg:#FFF0F1;--clr-amber:#F4A261;--clr-amber-bg:#FFFBF5;--clr-text:#2D2D4E;--clr-muted:#6B7280;--font-ur:'Noto Nastaliq Urdu',serif;--radius:12px;--shadow:0 2px 16px rgba(67,97,238,0.08);--shadow-hover:0 8px 28px rgba(67,97,238,0.18)}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:var(--font-ur);background-color:var(--clr-bg);background-image:radial-gradient(circle,var(--clr-dot) 1.5px,transparent 1.5px);background-size:20px 20px;color:var(--clr-text);line-height:2.2;min-height:100vh;font-size:1.05rem;direction:rtl}
+    .page-wrap{max-width:860px;margin:0 auto;padding:24px 20px 60px}
+    .top-bar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:20px}
+    .breadcrumb{display:flex;align-items:center;gap:6px;font-size:0.82rem;color:var(--clr-muted);flex-wrap:wrap;flex-direction:row-reverse}
+    .breadcrumb a{color:var(--clr-accent);text-decoration:none;font-weight:600}.breadcrumb a:hover{text-decoration:underline}
+    .breadcrumb span{color:var(--clr-muted)}
+    .lang-btn{display:inline-flex;align-items:center;gap:5px;font-size:0.82rem;font-weight:700;font-family:Arial,sans-serif;color:var(--clr-accent);background:var(--clr-tint);padding:5px 14px;border-radius:50px;text-decoration:none;border:1.5px solid var(--clr-accent);transition:background 0.18s;white-space:nowrap}
+    .lang-btn:hover{background:#dde1ff}
+    .hero{margin-bottom:40px}.hero-badges{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;justify-content:flex-end}
+    .badge{font-size:0.78rem;font-weight:700;padding:4px 14px;border-radius:50px;letter-spacing:0.03em;font-family:Arial,sans-serif}
+    .badge-solid{background:var(--clr-accent);color:#fff}.badge-outline{border:2px solid var(--clr-accent);color:var(--clr-accent);background:transparent}
+    .hero h1{font-size:clamp(1.8rem,5vw,2.6rem);font-weight:700;color:var(--clr-navy);line-height:1.5;margin-bottom:12px;text-align:right}
+    .hero-intro{font-size:1rem;color:var(--clr-muted);max-width:620px;margin-bottom:18px;text-align:right;margin-right:0;margin-left:auto}
+    .hero-meta{display:flex;align-items:center;gap:16px;flex-wrap:wrap;justify-content:flex-end}
+    .meta-pill{font-size:0.82rem;color:var(--clr-muted);font-weight:600;font-family:Arial,sans-serif}
+    .btn{display:inline-flex;align-items:center;gap:6px;font-family:var(--font-ur);font-weight:700;font-size:1rem;padding:10px 26px;border-radius:50px;text-decoration:none;cursor:pointer;border:none;transition:background 0.18s,color 0.18s,transform 0.18s,box-shadow 0.18s}
+    .btn-primary{background:var(--clr-accent);color:#fff}.btn-primary:hover{background:var(--clr-accent-dark);transform:translateY(-2px);box-shadow:0 6px 20px rgba(67,97,238,0.25)}
+    .btn-white{background:#fff;color:var(--clr-accent);font-weight:800}.btn-white:hover{background:#EEF0FF;transform:translateY(-2px)}
+    section{margin-bottom:48px}
+    .section-label{font-size:0.75rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--clr-accent);margin-bottom:10px;font-family:Arial,sans-serif;text-align:right}
+    .section-title{font-size:1.4rem;font-weight:700;color:var(--clr-navy);margin-bottom:16px;text-align:right}
+    .card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);border-right:5px solid var(--clr-accent);padding:24px 28px;transition:transform 0.2s,box-shadow 0.2s;animation:fadeInUp 0.4s ease both;text-align:right}
+    .card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}.card+.card{margin-top:16px}.card p+p{margin-top:10px}
+    .card-tint{background:var(--clr-tint);border-right:5px solid var(--clr-accent);border-radius:var(--radius);padding:24px 28px;text-align:right}
+    .steps{list-style:none}.step-item{display:flex;gap:16px;align-items:flex-start;margin-bottom:16px;flex-direction:row-reverse}
+    .step-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;background:var(--clr-accent);color:#fff;font-weight:800;font-size:0.9rem;display:flex;align-items:center;justify-content:center;font-family:Arial,sans-serif}
+    .step-text{padding-top:4px;font-size:1rem;text-align:right}.step-text strong{color:var(--clr-navy)}
+    .example-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;margin-bottom:16px;border-right:5px solid var(--clr-accent);animation:fadeInUp 0.4s ease both;transition:transform 0.2s,box-shadow 0.2s}
+    .example-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+    .example-header{background:#F3F4F8;padding:10px 20px;font-weight:700;font-size:0.9rem;color:var(--clr-muted);text-align:right;font-family:Arial,sans-serif}
+    .example-body{padding:20px 24px;text-align:right}
+    .example-problem{font-size:1rem;font-weight:600;color:var(--clr-navy);margin-bottom:14px;text-align:right}
+    .example-working{border-right:3px solid var(--clr-tint);padding-right:14px;margin-bottom:14px}
+    .working-line{font-family:'Courier New',monospace;font-size:0.9rem;color:var(--clr-text);margin-bottom:6px;direction:ltr;text-align:left}
+    .working-line span{color:var(--clr-muted);font-weight:400;margin-right:8px}
+    .answer-chip{display:inline-flex;align-items:center;gap:6px;background:var(--clr-green-bg);border:1.5px solid var(--clr-green);color:#1a7a3a;border-radius:50px;padding:6px 16px;font-weight:700;font-size:0.9rem}
+    .formula-highlight{background:#eff6ff;border-right:4px solid var(--clr-accent);padding:14px 18px;border-radius:8px;margin:14px 0;font-size:1.05rem;font-weight:700;text-align:center;direction:ltr}
+    .warning-box{background:var(--clr-amber-bg);border-right:5px solid var(--clr-amber);border-radius:var(--radius);padding:20px 24px;text-align:right}
+    .warning-box h3{font-size:1rem;font-weight:700;color:#8B4A00;margin-bottom:12px}
+    .warning-list{list-style:none}.warning-list li{margin-bottom:10px;font-size:0.95rem;line-height:1.9}
+    .warning-list .wrong{color:var(--clr-red);font-weight:700}.warning-list .right{color:var(--clr-green);font-weight:700}
+    .ref-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+    @media(max-width:560px){.ref-grid{grid-template-columns:1fr}}
+    .ref-item{background:#fff;border-radius:10px;padding:16px;box-shadow:0 1px 8px rgba(67,97,238,0.07);text-align:right}
+    .ref-term{font-weight:700;font-size:0.9rem;color:var(--clr-accent);margin-bottom:4px}
+    .ref-def{font-size:0.92rem;color:var(--clr-text)}
+    .footer-cta{background:linear-gradient(135deg,var(--clr-accent) 0%,#6C63FF 100%);border-radius:var(--radius);padding:36px 32px;text-align:center;color:#fff;margin-top:56px}
+    .footer-cta h2{font-size:1.5rem;font-weight:700;margin-bottom:8px}.footer-cta p{opacity:0.88;margin-bottom:22px;font-size:1.05rem}
+    .back-link{display:block;text-align:center;margin-top:18px;font-size:0.88rem;color:rgba(255,255,255,0.75);text-decoration:none}.back-link:hover{color:#fff}
+    hr{border:none;border-top:2px solid var(--clr-dot);margin:40px 0}
+    @keyframes fadeInUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+    @media(max-width:600px){.page-wrap{padding:16px 14px 48px}.example-body{padding:16px}.footer-cta{padding:28px 20px}}
+  </style>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="page-wrap">
+
+  <div class="top-bar">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <span>خطی مساوات</span><span>›</span>
+      <a href="index.html#grade-7-math">جماعت ہفتم ریاضی</a><span>›</span>
+      <a href="index.html">🏠 گھر</a>
+    </nav>
+    <a href="math-grade7-linear-equations-help.html" class="lang-btn">🇬🇧 English</a>
+  </div>
+
+  <header class="hero">
+    <div class="hero-badges">
+      <span class="badge badge-solid">جماعت ہفتم</span>
+      <span class="badge badge-outline">ریاضی ✏️</span>
+    </div>
+    <h1>خطی مساوات</h1>
+    <p class="hero-intro">خطی مساوات وہ مساوات ہے جس میں متغیر (x) کی قوت ۱ ہو۔ ax + b = c کی شکل میں x کو تنہا کرنا سیکھیں۔</p>
+    <div class="hero-meta">
+      <span class="meta-pill">⏱ ~۵ منٹ مطالعہ</span>
+      <a href="math-grade7-linear-equations-urdu-worksheet.html" class="btn btn-primary">📝 مشق پر جائیں ←</a>
+    </div>
+  </header>
+
+  <section aria-labelledby="what-heading">
+    <p class="section-label">حصہ ۱</p>
+    <h2 class="section-title" id="what-heading">خطی مساوات کیا ہے؟</h2>
+    <div class="card">
+      <p><strong>مساوات</strong> ایک ریاضی جملہ ہے جس میں دونوں طرف کی قدریں برابر ہوتی ہیں۔ خطی مساوات کی عام شکل ہے:</p>
+      <div class="formula-highlight">ax + b = c</div>
+      <p>یہاں <strong>x</strong> وہ متغیر ہے جسے ہم تلاش کرنا چاہتے ہیں۔ a، b اور c معلوم اعداد ہیں۔</p>
+      <p>مثلاً: <strong>2x + 3 = 11</strong> — یہاں a=2، b=3، c=11 ہے اور x کی قدر تلاش کرنی ہے۔</p>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="method-heading">
+    <p class="section-label">حصہ ۲</p>
+    <h2 class="section-title" id="method-heading">مساوات حل کرنے کا طریقہ</h2>
+    <div class="card-tint">
+      <ol class="steps">
+        <li class="step-item"><div class="step-num">۱</div><div class="step-text"><strong>مساوات پڑھیں۔</strong> ax + b = c کی شکل پہچانیں۔</div></li>
+        <li class="step-item"><div class="step-num">۲</div><div class="step-text"><strong>b کو دونوں طرف سے منہا کریں۔</strong> ax + b − b = c − b → ax = c − b</div></li>
+        <li class="step-item"><div class="step-num">۳</div><div class="step-text"><strong>a سے تقسیم کریں۔</strong> ax ÷ a = (c−b) ÷ a → x = (c−b)/a</div></li>
+        <li class="step-item"><div class="step-num">۴</div><div class="step-text"><strong>جواب چیک کریں۔</strong> x کی قدر اصل مساوات میں رکھ کر تصدیق کریں۔</div></li>
+      </ol>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="examples-heading">
+    <p class="section-label">حصہ ۳</p>
+    <h2 class="section-title" id="examples-heading">حل شدہ مثالیں</h2>
+
+    <div class="example-card">
+      <div class="example-header">مثال ۱ — x + 5 = 12</div>
+      <div class="example-body">
+        <div class="example-problem">x + 5 = 12 میں x کتنا ہے؟</div>
+        <div class="example-working">
+          <div class="working-line">x + 5 = 12</div>
+          <div class="working-line">x = 12 − 5 <span>(دونوں طرف سے 5 گھٹائیں)</span></div>
+          <div class="working-line">x = 7</div>
+        </div>
+        <span class="answer-chip">✅ x = 7</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">مثال ۲ — 3x = 18</div>
+      <div class="example-body">
+        <div class="example-problem">3x = 18 میں x کتنا ہے؟</div>
+        <div class="example-working">
+          <div class="working-line">3x = 18</div>
+          <div class="working-line">x = 18 ÷ 3 <span>(دونوں طرف کو 3 سے تقسیم کریں)</span></div>
+          <div class="working-line">x = 6</div>
+        </div>
+        <span class="answer-chip">✅ x = 6</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">مثال ۳ — 2x + 3 = 11</div>
+      <div class="example-body">
+        <div class="example-problem">2x + 3 = 11 میں x کتنا ہے؟</div>
+        <div class="example-working">
+          <div class="working-line">2x + 3 = 11</div>
+          <div class="working-line">2x = 11 − 3 = 8 <span>(3 منہا کریں)</span></div>
+          <div class="working-line">x = 8 ÷ 2 = 4 <span>(2 سے تقسیم)</span></div>
+        </div>
+        <span class="answer-chip">✅ x = 4</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">مثال ۴ — 5x − 7 = 13</div>
+      <div class="example-body">
+        <div class="example-problem">5x − 7 = 13 میں x کتنا ہے؟</div>
+        <div class="example-working">
+          <div class="working-line">5x − 7 = 13</div>
+          <div class="working-line">5x = 13 + 7 = 20 <span>(7 جمع کریں)</span></div>
+          <div class="working-line">x = 20 ÷ 5 = 4</div>
+        </div>
+        <span class="answer-chip">✅ x = 4</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">مثال ۵ — لفظی مسئلہ</div>
+      <div class="example-body">
+        <div class="example-problem">ایک عدد کو تین گنا کر کے ۵ جمع کریں تو ۲۰ ملتا ہے۔ وہ عدد کیا ہے؟</div>
+        <div class="example-working">
+          <div class="working-line">3x + 5 = 20</div>
+          <div class="working-line">3x = 15 → x = 5</div>
+        </div>
+        <span class="answer-chip">✅ وہ عدد 5 ہے</span>
+      </div>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="watchout-heading">
+    <p class="section-label">حصہ ۴</p>
+    <h2 class="section-title" id="watchout-heading">احتیاط کریں! ⚠️</h2>
+    <div class="warning-box">
+      <h3>عام غلطیاں</h3>
+      <ul class="warning-list">
+        <li><span class="wrong">❌ علامت بھول جانا:</span> 2x − 3 = 7 میں 2x = 7 − 3 لکھنا<br><span class="right">✅ 2x = 7 + 3 = 10 (منفی ہو تو جمع ہوگا)</span></li>
+        <li><span class="wrong">❌ صرف ایک طرف عمل:</span> 2x + 4 = 10 میں صرف بائیں سے 4 گھٹانا<br><span class="right">✅ دونوں طرف سے یکساں عمل: 2x + 4 − 4 = 10 − 4</span></li>
+        <li><span class="wrong">❌ چیک نہ کرنا:</span> جواب نکال کر مساوات میں نہ لگانا<br><span class="right">✅ ہمیشہ x کی قدر اصل مساوات میں رکھ کر تصدیق کریں</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="ref-heading">
+    <p class="section-label">حصہ ۵</p>
+    <h2 class="section-title" id="ref-heading">فوری حوالہ</h2>
+    <div class="card-tint">
+      <div class="ref-grid" style="margin-top:0">
+        <div class="ref-item"><div class="ref-term">مساوات</div><div class="ref-def">دونوں طرف برابر قدریں۔</div></div>
+        <div class="ref-item"><div class="ref-term">متغیر (x)</div><div class="ref-def">وہ نامعلوم عدد جسے تلاش کرنا ہے۔</div></div>
+        <div class="ref-item"><div class="ref-term">تنہا کرنا</div><div class="ref-def">x کو ایک طرف کرنا۔</div></div>
+        <div class="ref-item"><div class="ref-term">الٹا عمل</div><div class="ref-def">جمع ↔ منہا، ضرب ↔ تقسیم۔</div></div>
+        <div class="ref-item"><div class="ref-term">توازن</div><div class="ref-def">ایک طرف جو عمل ہو دوسری طرف بھی وہی۔</div></div>
+        <div class="ref-item"><div class="ref-term">حل</div><div class="ref-def">x کی وہ قدر جو مساوات کو درست بنائے۔</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer-cta">
+    <h2>مشق کرنے کے لیے تیار ہیں؟ 🚀</h2>
+    <p>۱۰ سوالات کے ساتھ خطی مساوات کی مہارت آزمائیں۔</p>
+    <a href="math-grade7-linear-equations-urdu-worksheet.html" class="btn btn-white">📝 مشق شروع کریں ←</a>
+    <a href="index.html#grade-7-math" class="back-link">← جماعت ہفتم کے ریاضی موضوعات پر واپس</a>
+  </div>
+
+</div>
+</body>
+</html>

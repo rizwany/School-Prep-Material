@@ -1,0 +1,362 @@
+<!-- Math | Grade 7 | Linear Equations | اردو ورک شیٹ -->
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>خطی مساوات ورک شیٹ — جماعت ۷ ریاضی | LearnPad</title>
+  <meta name="description" content="جماعت ۷ خطی مساوات کی انٹرایکٹو ورک شیٹ — ۱۰ سوالات" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{--clr-bg:#ffffff;--clr-dot:#E8EDF5;--clr-accent:#4361EE;--clr-accent-dark:#3451D1;--clr-navy:#1A1A3E;--clr-tint:#EEF0FF;--clr-green:#2DC653;--clr-green-bg:#F0FFF4;--clr-red:#E63946;--clr-red-bg:#FFF0F1;--clr-amber:#F4A261;--clr-amber-bg:#FFFBF5;--clr-text:#2D2D4E;--clr-muted:#6B7280;--font-ur:'Noto Nastaliq Urdu',serif;--radius:12px;--shadow:0 2px 16px rgba(67,97,238,0.08);--shadow-hover:0 8px 28px rgba(67,97,238,0.18)}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:var(--font-ur);background-color:var(--clr-bg);background-image:radial-gradient(circle,var(--clr-dot) 1.5px,transparent 1.5px);background-size:20px 20px;color:var(--clr-text);min-height:100vh;line-height:2.2;direction:rtl}
+    .page-wrap{max-width:860px;margin:0 auto;padding:24px 20px 60px}
+    .modal-overlay{position:fixed;inset:0;background:rgba(26,26,62,0.55);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;z-index:1000;padding:20px}
+    .modal-overlay.hidden{display:none}
+    .modal{background:#fff;border-radius:20px;padding:40px 36px;max-width:420px;width:100%;text-align:right;box-shadow:0 24px 64px rgba(67,97,238,0.22);direction:rtl}
+    .modal h2{font-size:1.4rem;font-weight:900;color:var(--clr-navy);margin-bottom:8px}
+    .modal p{color:var(--clr-muted);margin-bottom:20px;font-size:0.95rem}
+    .modal input[type=text]{width:100%;border:2px solid var(--clr-dot);border-radius:10px;padding:12px 16px;font-family:var(--font-ur);font-size:1rem;color:var(--clr-navy);outline:none;margin-bottom:14px;transition:border-color 0.2s;text-align:right}
+    .modal input[type=text]:focus{border-color:var(--clr-accent)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;font-family:var(--font-ur);font-weight:700;font-size:0.92rem;padding:10px 26px;border-radius:50px;cursor:pointer;border:none;text-decoration:none;transition:background 0.18s,color 0.18s,transform 0.18s,box-shadow 0.18s}
+    .btn-primary{background:var(--clr-accent);color:#fff}.btn-primary:hover:not(:disabled){background:var(--clr-accent-dark);transform:translateY(-2px)}.btn-primary:disabled{opacity:0.5;cursor:not-allowed}
+    .btn-outline{background:transparent;color:var(--clr-accent);border:2px solid var(--clr-accent)}.btn-outline:hover{background:var(--clr-tint)}
+    .btn-neutral{background:transparent;color:var(--clr-navy);border:2px solid #C4C9DC}.btn-neutral:hover{background:#F3F4F8}
+    .btn-full{width:100%;padding:14px 26px;font-size:1rem}
+    .lang-btn{display:inline-flex;align-items:center;gap:6px;font-size:0.82rem;font-weight:700;color:var(--clr-muted);text-decoration:none;padding:6px 14px;border:2px solid var(--clr-dot);border-radius:50px;font-family:Arial,sans-serif}
+    .lang-btn:hover{border-color:var(--clr-accent);color:var(--clr-accent);background:var(--clr-tint)}
+    .diff-pill{padding:8px 22px;border-radius:50px;font-weight:700;font-size:0.88rem;cursor:pointer;border:2px solid;transition:all 0.18s;background:transparent;font-family:var(--font-ur)}
+    .diff-pill.easy{border-color:var(--clr-green);color:#1a7a3a}.diff-pill.easy.active{background:var(--clr-green);color:#fff}
+    .diff-pill.hard{border-color:var(--clr-red);color:#8B0010}.diff-pill.hard.active{background:var(--clr-red);color:#fff}
+    .breadcrumb{display:flex;align-items:center;gap:6px;font-size:0.82rem;color:var(--clr-muted);flex-wrap:wrap;flex-direction:row-reverse}
+    .breadcrumb a{color:var(--clr-accent);text-decoration:none;font-weight:600}.breadcrumb a:hover{text-decoration:underline}
+    .top-bar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+    .welcome-bar{background:var(--clr-tint);border-radius:var(--radius);padding:14px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:14px}
+    .welcome-name{font-size:1.1rem;font-weight:800;color:var(--clr-navy)}
+    .change-name-btn{font-size:0.8rem;color:var(--clr-accent);cursor:pointer;background:none;border:none;font-family:var(--font-ur);font-weight:700;text-decoration:underline}
+    .stats-bar{display:flex;gap:20px;flex-wrap:wrap;padding:10px 0;margin-bottom:6px;border-bottom:2px solid var(--clr-dot)}
+    .stat-item{font-size:0.85rem;font-weight:700;color:var(--clr-muted)}.stat-item strong{color:var(--clr-navy)}
+    .controls{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:14px 0;margin-bottom:4px}
+    .controls-label{font-size:0.82rem;font-weight:700;color:var(--clr-muted)}
+    .controls-divider{width:1px;height:28px;background:var(--clr-dot);margin:0 6px}
+    hr.section-divider{border:none;border-top:2px solid var(--clr-dot);margin:6px 0 24px}
+    .score-banner{background:linear-gradient(135deg,#fff 0%,var(--clr-tint) 100%);border:2px solid var(--clr-accent);border-radius:var(--radius);padding:22px 26px;margin-bottom:24px;display:none}
+    .score-banner.visible{display:block}
+    .score-row{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-bottom:12px}
+    .score-num{font-family:'Courier New',monospace;font-size:2.2rem;font-weight:700;color:var(--clr-accent)}
+    .score-msg{font-size:0.97rem;color:var(--clr-navy);font-weight:700;flex:1}
+    .progress-track{height:12px;background:var(--clr-dot);border-radius:99px;overflow:hidden}
+    .progress-fill{height:100%;background:var(--clr-green);border-radius:99px;transition:width 0.6s ease}
+    .reveal-warning{background:var(--clr-amber-bg);border-right:5px solid var(--clr-amber);border-radius:var(--radius);padding:10px 16px;font-size:0.88rem;font-weight:700;color:#8B4A00;margin-top:12px;display:none}
+    .reveal-warning.visible{display:block}
+    .post-submit{display:none;gap:10px;flex-wrap:wrap;margin-top:12px}.post-submit.visible{display:flex}
+    .questions-list{list-style:none}
+    .q-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);border-right:5px solid var(--clr-accent);padding:18px 22px;margin-bottom:14px;transition:transform 0.2s,box-shadow 0.2s,border-color 0.25s;animation:fadeInUp 0.4s ease both}
+    .q-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+    .q-card.correct{border-right-color:var(--clr-green);background:var(--clr-green-bg)}
+    .q-card.wrong{border-right-color:var(--clr-red);background:var(--clr-red-bg)}
+    @keyframes fadeInUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+    .q-meta{display:flex;align-items:center;justify-content:space-between;margin-bottom:9px}
+    .q-num{font-family:'Courier New',monospace;font-size:0.75rem;font-weight:700;color:var(--clr-accent);background:var(--clr-tint);padding:2px 10px;border-radius:50px}
+    .q-icon{font-size:1.1rem;display:none}
+    .q-card.correct .q-icon-correct,.q-card.wrong .q-icon-wrong{display:inline}
+    .q-text{font-size:1rem;font-weight:700;color:var(--clr-navy);margin-bottom:12px;line-height:2.2;text-align:right}
+    .mono{font-family:'Courier New',monospace;direction:ltr;display:inline-block}
+    .q-input{font-family:'Courier New',monospace;font-size:1.05rem;font-weight:600;color:var(--clr-navy);border:2px solid var(--clr-dot);border-radius:8px;padding:8px 13px;width:110px;outline:none;transition:border-color 0.2s;direction:ltr;text-align:center}
+    .q-input:focus{border-color:var(--clr-accent)}.q-input.error{border-color:var(--clr-red)}.q-input:disabled{opacity:0.65;cursor:not-allowed}
+    .q-select{font-family:var(--font-ur);font-size:0.95rem;font-weight:700;color:var(--clr-navy);border:2px solid var(--clr-dot);border-radius:8px;padding:8px 13px;outline:none;cursor:pointer;transition:border-color 0.2s;background:#fff}
+    .q-select:focus{border-color:var(--clr-accent)}.q-select:disabled{opacity:0.65;cursor:not-allowed}
+    .radio-group{display:flex;gap:10px;flex-wrap:wrap}
+    .radio-label{display:flex;align-items:center;gap:6px;font-weight:700;font-size:0.93rem;cursor:pointer;padding:7px 15px;border:2px solid var(--clr-dot);border-radius:50px;transition:border-color 0.18s,background 0.18s}
+    .radio-label:has(input:checked){border-color:var(--clr-accent);background:var(--clr-tint)}
+    .radio-label input{accent-color:var(--clr-accent)}
+    .skip-tip{font-size:0.78rem;color:var(--clr-red);font-weight:700;margin-top:5px;display:none}.skip-tip.visible{display:block}
+    .answer-reveal-chip{margin-top:9px;display:none;font-size:0.84rem;font-weight:700;border-radius:8px;padding:7px 13px}
+    .answer-reveal-chip.visible{display:block}.answer-reveal-chip.was-correct{background:var(--clr-green-bg);border:1.5px solid var(--clr-green);color:#1a7a3a}
+    .answer-reveal-chip.was-wrong{background:var(--clr-red-bg);border:1.5px solid var(--clr-red);color:#8B0010}
+    .submit-area{margin:24px 0 18px;display:flex;flex-direction:column;gap:10px}
+    .toast{position:fixed;bottom:28px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--clr-navy);color:#fff;font-size:0.9rem;font-weight:700;padding:12px 26px;border-radius:50px;z-index:2000;transition:transform 0.35s,opacity 0.3s;opacity:0;pointer-events:none}
+    .toast.show{transform:translateX(-50%) translateY(0);opacity:1}
+    .bottom-nav{text-align:center;margin-top:44px;padding-top:20px;border-top:2px solid var(--clr-dot)}
+    .bottom-nav a{font-size:0.88rem;color:var(--clr-accent);text-decoration:none;font-weight:700}.bottom-nav a:hover{text-decoration:underline}
+    @media(max-width:600px){.page-wrap{padding:16px 14px 48px}}
+    .btn-neutral.pulse-attention{animation:pulseGlow 1.2s ease-in-out infinite;border-color:var(--clr-accent);color:var(--clr-accent)}
+    @keyframes pulseGlow{0%,100%{box-shadow:0 0 0 0 rgba(67,97,238,0.3)}50%{box-shadow:0 0 0 8px rgba(67,97,238,0)}}
+  </style>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <h2>السلام علیکم! 👋</h2>
+    <p>آپ کا نام لکھیں — ہم آپ کی پیشرفت یاد رکھیں گے!</p>
+    <input type="text" id="usernameInput" placeholder="اپنا نام لکھیں..." maxlength="32" autocomplete="off" />
+    <button class="btn btn-primary btn-full" id="modalStartBtn">شروع کریں! 🚀</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<div class="page-wrap">
+  <div class="top-bar">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <span>ورک شیٹ</span><span>›</span>
+      <a href="math-grade7-linear-equations-urdu-help.html">خطی مساوات</a><span>›</span>
+      <a href="index.html#grade-7-math">جماعت ۷ ریاضی</a><span>›</span>
+      <a href="index.html">🏠 خانہ</a>
+    </nav>
+    <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+      <a href="math-grade7-linear-equations-worksheet.html" class="lang-btn">🇬🇧 English</a>
+      <a href="math-grade7-linear-equations-urdu-help.html" class="btn btn-outline" style="padding:7px 18px;font-size:0.82rem">📘 مدد گائیڈ</a>
+    </div>
+  </div>
+
+  <div class="welcome-bar">
+    <div class="welcome-name" id="welcomeName">خوش آمدید! 👋</div>
+    <button class="change-name-btn" id="changeNameBtn">✏️ نام بدلیں</button>
+  </div>
+
+  <div class="stats-bar">
+    <div class="stat-item">📋 مکمل: <strong id="statDone">0</strong></div>
+    <div class="stat-item">🏆 بہترین: <strong id="statBest">—</strong>/10</div>
+    <div class="stat-item">📈 آخری: <strong id="statLast">—</strong>/10</div>
+  </div>
+
+  <div class="controls">
+    <span class="controls-label">مشکل:</span>
+    <button class="diff-pill easy active" id="pillEasy" aria-pressed="true">🟢 آسان</button>
+    <button class="diff-pill hard" id="pillHard" aria-pressed="false">🔴 مشکل</button>
+    <div class="controls-divider"></div>
+    <button class="btn btn-neutral" id="newWsBtn">🔄 نئی ورک شیٹ</button>
+  </div>
+  <hr class="section-divider" />
+
+  <div class="score-banner" id="scoreBanner">
+    <div class="score-row">
+      <div class="score-num" id="scoreNum">0/10</div>
+      <div class="score-msg" id="scoreMsg"></div>
+    </div>
+    <div class="progress-track"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+    <div class="reveal-warning" id="revealWarning">⚠️ جوابات ظاہر ہو گئے۔ نئی ورک شیٹ شروع کریں۔</div>
+    <div class="post-submit" id="postSubmitBtns">
+      <button class="btn btn-outline" id="showAnswersBtn">💡 جوابات دکھائیں</button>
+      <button class="btn btn-outline" id="shareBtn" style="border-color:#6C63FF;color:#6C63FF">📤 شیئر کریں</button>
+    </div>
+  </div>
+
+  <ol class="questions-list" id="questionsList"></ol>
+
+  <div class="submit-area">
+    <button class="btn btn-primary btn-full" id="submitBtn">✅ ورک شیٹ جمع کریں</button>
+    <button class="btn btn-neutral btn-full" id="newWsBtnBottom">🔄 نئی ورک شیٹ</button>
+  </div>
+
+  <div class="bottom-nav">
+    <a href="index.html#grade-7-math">← جماعت ۷ کے ریاضی موضوعات پر واپس</a>
+  </div>
+</div>
+
+<script>
+(function(){
+  'use strict';
+  const STATS_KEY='ws_math_grade7_linear-equations_stats';
+  const USERNAME_KEY='ws_username';
+  const TOPIC='خطی مساوات';
+  const GRADE=7;
+  let questions=[],difficulty='easy',submitted=false,answersRevealed=false,score=0;
+
+  function rand(a,b){return Math.floor(Math.random()*(b-a+1))+a}
+  function pick(a){return a[Math.floor(Math.random()*a.length)]}
+  function shuffle(a){const r=a.slice();for(let i=r.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[r[i],r[j]]=[r[j],r[i]]}return r}
+
+  // Easy generators
+  function makeSimpleAddQ(){
+    const x=rand(1,10),b=rand(1,10),c=x+b;
+    return{type:'number',text:`<span class="mono">x + ${b} = ${c}</span> — x کتنا ہے؟`,answer:String(x)};
+  }
+  function makeSimpleSubQ(){
+    const x=rand(1,10),b=rand(1,5),c=x-b;
+    return{type:'number',text:`<span class="mono">x − ${b} = ${c}</span> — x کتنا ہے؟`,answer:String(x)};
+  }
+  function makeSimpleMulQ(){
+    const x=rand(1,9),a=rand(2,5),c=a*x;
+    return{type:'number',text:`<span class="mono">${a}x = ${c}</span> — x کتنا ہے؟`,answer:String(x)};
+  }
+  function makeSimpleDivQ(){
+    const x=rand(2,8),a=rand(2,4),c=a*x;
+    return{type:'select',text:`<span class="mono">${a}x = ${c}</span> میں x کی قدر کیا ہے؟`,options:shuffle([String(x),String(x+1),String(x-1),String(x+2)]),answer:String(x)};
+  }
+  function makeEasyTwoStepQ(){
+    const x=rand(1,5),a=rand(2,3),b=rand(1,5),c=a*x+b;
+    return{type:'number',text:`<span class="mono">${a}x + ${b} = ${c}</span> — x کتنا ہے؟`,answer:String(x)};
+  }
+
+  // Hard generators
+  function makeHardTwoStepQ(){
+    const x=rand(2,10),a=rand(3,7),b=rand(2,9),c=a*x+b;
+    return{type:'number',text:`<span class="mono">${a}x + ${b} = ${c}</span> — x حل کریں`,answer:String(x)};
+  }
+  function makeSubtractRHSQ(){
+    const x=rand(2,9),a=rand(2,6),b=rand(1,8),c=a*x-b;
+    return{type:'number',text:`<span class="mono">${a}x − ${b} = ${c}</span> — x = ?`,answer:String(x)};
+  }
+  function makeWordProbQ(easy){
+    const x=easy?rand(2,6):rand(3,12);
+    const mul=easy?rand(2,3):rand(4,7);
+    const add=easy?rand(1,5):rand(5,15);
+    const result=mul*x+add;
+    return{type:'number',text:`ایک عدد کو ${mul} سے ضرب کر کے ${add} جمع کریں تو ${result} ملتا ہے۔ وہ عدد کیا ہے؟`,answer:String(x)};
+  }
+  function makeMCHardQ(){
+    const x=rand(3,9),a=rand(3,7),b=rand(2,10),c=a*x+b;
+    const ans=String(x);
+    const opts=shuffle([ans,String(x+1),String(x+2),String(x-1)].filter(n=>parseInt(n)>0));
+    return{type:'select',text:`<span class="mono">${a}x + ${b} = ${c}</span> کا حل کیا ہے؟`,options:opts.slice(0,4),answer:ans};
+  }
+  function makeTFQ(easy){
+    const x=easy?rand(1,5):rand(2,8);
+    const a=easy?rand(2,3):rand(3,6);
+    const b=easy?rand(1,4):rand(2,8);
+    const c=a*x+b;
+    const isTrue=Math.random()<0.5;
+    const shown=isTrue?x:x+(Math.random()<0.5?1:-1);
+    return{type:'radio',options:['درست','غلط'],text:`کیا <span class="mono">${a}x + ${b} = ${c}</span> کا حل <span class="mono">x = ${shown}</span> ہے؟`,answer:(shown===x)?'درست':'غلط'};
+  }
+
+  function generateQuestions(easy){
+    const pool=easy?[
+      makeSimpleAddQ,makeSimpleSubQ,makeSimpleMulQ,makeSimpleDivQ,makeEasyTwoStepQ,
+      makeSimpleAddQ,makeSimpleSubQ,makeSimpleMulQ,()=>makeWordProbQ(true),()=>makeTFQ(true)
+    ]:[
+      makeHardTwoStepQ,makeSubtractRHSQ,()=>makeWordProbQ(false),makeMCHardQ,()=>makeTFQ(false),
+      makeHardTwoStepQ,makeSubtractRHSQ,makeMCHardQ,makeHardTwoStepQ,makeSubtractRHSQ
+    ];
+    return pool.map(f=>{const q=f();q.userAnswer=null;q.isCorrect=null;return q});
+  }
+
+  function renderQuestions(){
+    const list=document.getElementById('questionsList');list.innerHTML='';
+    questions.forEach((q,i)=>{
+      const li=document.createElement('li');li.className='q-card';li.id=`qcard-${i}`;li.style.animationDelay=`${i*55}ms`;
+      let inputHtml='';
+      if(q.type==='number'){
+        inputHtml=`<input class="q-input" type="number" id="qinput-${i}" data-idx="${i}" autocomplete="off"/>`;
+      }else if(q.type==='radio'){
+        inputHtml=`<div class="radio-group">${q.options.map(o=>`<label class="radio-label"><input type="radio" name="qradio-${i}" data-idx="${i}" value="${o}"/>${o}</label>`).join('')}</div>`;
+      }else if(q.type==='select'){
+        inputHtml=`<select class="q-select" id="qinput-${i}" data-idx="${i}"><option value="" disabled selected>— منتخب کریں —</option>${q.options.map(o=>`<option value="${o}">${o}</option>`).join('')}</select>`;
+      }
+      li.innerHTML=`<div class="q-meta"><span class="q-num">Q${i+1}</span><span><span class="q-icon q-icon-correct">✅</span><span class="q-icon q-icon-wrong">❌</span></span></div><div class="q-text">${q.text}</div><div>${inputHtml}<div class="skip-tip" id="skiptip-${i}">جواب دیں! 😊</div><div class="answer-reveal-chip" id="revealchip-${i}"></div></div>`;
+      list.appendChild(li);
+    });
+  }
+
+  function getUserAnswer(q,i){
+    if(q.type==='number')return document.getElementById(`qinput-${i}`).value.trim();
+    if(q.type==='radio'){const c=document.querySelector(`input[name="qradio-${i}"]:checked`);return c?c.value:'';}
+    if(q.type==='select')return document.getElementById(`qinput-${i}`).value;
+    return'';
+  }
+  function answersMatch(u,c){
+    const us=u.trim().toLowerCase(),cs=c.trim().toLowerCase();
+    if(us===cs)return true;
+    const un=parseFloat(us),cn=parseFloat(cs);
+    return!isNaN(un)&&!isNaN(cn)&&Math.abs(un-cn)<0.001;
+  }
+
+  function submitWorksheet(){
+    if(submitted)return;
+    let hasBlank=false;
+    questions.forEach((q,i)=>{
+      const ua=getUserAnswer(q,i);const tip=document.getElementById(`skiptip-${i}`);
+      if(!ua){hasBlank=true;tip.classList.add('visible');if(q.type==='number'){const inp=document.getElementById(`qinput-${i}`);inp.classList.add('error');inp.addEventListener('input',()=>{inp.classList.remove('error');tip.classList.remove('visible')},{once:true});}}
+      else tip.classList.remove('visible');
+    });
+    if(hasBlank)return;
+    submitted=true;score=0;
+    questions.forEach((q,i)=>{
+      const ua=getUserAnswer(q,i);q.userAnswer=ua;q.isCorrect=answersMatch(ua,q.answer);if(q.isCorrect)score++;
+      document.getElementById(`qcard-${i}`).classList.add(q.isCorrect?'correct':'wrong');
+      if(q.type==='number')document.getElementById(`qinput-${i}`).disabled=true;
+      else if(q.type==='radio')document.querySelectorAll(`input[name="qradio-${i}"]`).forEach(r=>r.disabled=true);
+      else if(q.type==='select')document.getElementById(`qinput-${i}`).disabled=true;
+    });
+    const msgs={10:'🏆 مکمل اسکور! خطی مساوات کے ماہر!',9:'🔥 ۹/۱۰ — شاندار!',8:'😎 ۸/۱۰ — بہترین!',7:'👏 ۷/۱۰ — بہت اچھا!',6:'👍 آدھے سے زیادہ! جاری رکھیں۔'};
+    const msg=score in msgs?msgs[score]:score>=3?'📚 مشق جاری رکھیں!':'😊 مدد گائیڈ دیکھیں!';
+    document.getElementById('scoreNum').textContent=`${score}/10 🎉`;document.getElementById('scoreMsg').textContent=msg;
+    document.getElementById('progressFill').style.width=`${score*10}%`;
+    const banner=document.getElementById('scoreBanner');banner.classList.add('visible');banner.scrollIntoView({behavior:'smooth',block:'start'});
+    document.getElementById('postSubmitBtns').classList.add('visible');document.getElementById('submitBtn').disabled=true;
+    updateStats(score);
+  }
+
+  function loadStats(){try{return JSON.parse(localStorage.getItem(STATS_KEY))||{done:0,best:0,last:null}}catch{return{done:0,best:0,last:null}}}
+  function saveStats(s){localStorage.setItem(STATS_KEY,JSON.stringify(s))}
+  function updateStats(ns){const s=loadStats();s.done++;s.last=ns;if(ns>s.best)s.best=ns;saveStats(s);renderStats()}
+  function renderStats(){const s=loadStats();document.getElementById('statDone').textContent=s.done;document.getElementById('statBest').textContent=s.best;document.getElementById('statLast').textContent=s.last!==null?s.last:'—'}
+
+  function showAnswers(){
+    if(answersRevealed)return;answersRevealed=true;
+    document.getElementById('showAnswersBtn').disabled=true;document.getElementById('revealWarning').classList.add('visible');
+    document.getElementById('newWsBtn').classList.add('pulse-attention');document.getElementById('newWsBtnBottom').classList.add('pulse-attention');
+    questions.forEach((q,i)=>{
+      const chip=document.getElementById(`revealchip-${i}`);chip.classList.add('visible');
+      if(q.isCorrect){chip.classList.add('was-correct');chip.textContent=`✅ درست: ${q.answer}`;}
+      else{chip.classList.add('was-wrong');chip.innerHTML=`❌ آپ کا جواب: <strong>${q.userAnswer||'(خالی)'}</strong> ← درست: <strong>${q.answer}</strong>`;}
+    });
+  }
+
+  function shareResults(){
+    const name=localStorage.getItem(USERNAME_KEY)||'گمنام';
+    const dl=difficulty==='easy'?'آسان':'مشکل';
+    const emojis=questions.map(q=>q.isCorrect?'✅':'❌').join('');
+    const text=`✏️ ریاضی — ${TOPIC} (جماعت ${GRADE})\n👤 ${name}: ${score}/10 (${dl})\n${emojis}\n🔗 ${location.href}`;
+    if(navigator.share)navigator.share({title:TOPIC,text,url:location.href}).catch(()=>{});
+    else if(navigator.clipboard)navigator.clipboard.writeText(text).then(()=>showToast('کاپی ہوگیا! 📤'));
+    else showToast('لنک کاپی کریں 🔗');
+  }
+
+  function newWorksheet(){
+    submitted=false;answersRevealed=false;score=0;
+    questions=generateQuestions(difficulty==='easy');renderQuestions();
+    document.getElementById('scoreBanner').classList.remove('visible');document.getElementById('postSubmitBtns').classList.remove('visible');
+    document.getElementById('revealWarning').classList.remove('visible');document.getElementById('submitBtn').disabled=false;
+    document.getElementById('showAnswersBtn').disabled=false;document.getElementById('newWsBtn').classList.remove('pulse-attention');document.getElementById('newWsBtnBottom').classList.remove('pulse-attention');
+    window.scrollTo({top:0,behavior:'smooth'});showToast('✨ نئی ورک شیٹ تیار!');
+  }
+
+  function showToast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3000)}
+
+  function initUsername(){const n=localStorage.getItem(USERNAME_KEY);if(n)hideModal(n);else{document.getElementById('modalOverlay').classList.remove('hidden');document.getElementById('usernameInput').focus()}}
+  function hideModal(n){document.getElementById('modalOverlay').classList.add('hidden');document.getElementById('welcomeName').textContent=`خوش آمدید، ${n}! 👋`;localStorage.setItem(USERNAME_KEY,n)}
+
+  document.getElementById('modalStartBtn').addEventListener('click',()=>{const v=document.getElementById('usernameInput').value.trim();if(!v){document.getElementById('usernameInput').focus();return}hideModal(v)});
+  document.getElementById('usernameInput').addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('modalStartBtn').click()});
+  document.getElementById('changeNameBtn').addEventListener('click',()=>{localStorage.removeItem(USERNAME_KEY);document.getElementById('modalOverlay').classList.remove('hidden');document.getElementById('usernameInput').value='';document.getElementById('usernameInput').focus()});
+  document.getElementById('pillEasy').addEventListener('click',()=>{if(difficulty==='easy')return;difficulty='easy';document.getElementById('pillEasy').classList.add('active');document.getElementById('pillHard').classList.remove('active');newWorksheet()});
+  document.getElementById('pillHard').addEventListener('click',()=>{if(difficulty==='hard')return;difficulty='hard';document.getElementById('pillHard').classList.add('active');document.getElementById('pillEasy').classList.remove('active');newWorksheet()});
+  document.getElementById('submitBtn').addEventListener('click',submitWorksheet);
+  document.getElementById('showAnswersBtn').addEventListener('click',showAnswers);
+  document.getElementById('shareBtn').addEventListener('click',shareResults);
+  document.getElementById('newWsBtn').addEventListener('click',newWorksheet);
+  document.getElementById('newWsBtnBottom').addEventListener('click',newWorksheet);
+
+  initUsername();renderStats();questions=generateQuestions(true);renderQuestions();
+})();
+</script>
+</body>
+</html>

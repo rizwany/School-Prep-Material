@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>طویل تقسیم – ورک شیٹ | Grade 4</title>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Nastaliq Urdu',serif;background:#f0f4ff;color:#1a1a2e;direction:rtl;line-height:2.2}
+.top-bar{background:#1a1a2e;color:#fff;padding:10px 20px;display:flex;align-items:center;justify-content:space-between;flex-direction:row-reverse}
+.breadcrumb{display:flex;align-items:center;gap:8px;font-size:.85rem;flex-direction:row-reverse}
+.breadcrumb a{color:#a0aec0;text-decoration:none}.breadcrumb span{color:#a0aec0}
+.lang-btn{background:#3b82f6;color:#fff;border:none;border-radius:6px;padding:5px 14px;cursor:pointer;font-size:.85rem;font-family:Arial,sans-serif}
+.hero{background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;padding:30px 20px;text-align:center}
+.hero h1{font-size:1.8rem;margin-bottom:8px}
+.hero p{color:#a0aec0}
+.container{max-width:860px;margin:0 auto;padding:20px}
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:1000;display:flex;align-items:center;justify-content:center}
+.modal-box{background:#fff;border-radius:16px;padding:36px;width:90%;max-width:420px;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.3)}
+.modal-box h2{font-size:1.5rem;margin-bottom:10px}
+.modal-box p{color:#555;margin-bottom:20px}
+.modal-box input{width:100%;padding:12px;border:2px solid #e2e8f0;border-radius:8px;font-size:1rem;text-align:right;font-family:'Noto Nastaliq Urdu',serif;direction:rtl}
+.modal-box input:focus{outline:none;border-color:#3b82f6}
+.modal-box button{margin-top:16px;width:100%;padding:12px;background:#3b82f6;color:#fff;border:none;border-radius:8px;font-size:1.1rem;cursor:pointer;font-family:'Noto Nastaliq Urdu',serif}
+.stats-bar{display:flex;gap:12px;margin-bottom:20px;flex-wrap:wrap}
+.stat-card{flex:1;min-width:120px;background:#fff;border-radius:10px;padding:14px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.stat-label{font-size:.8rem;color:#64748b;margin-bottom:4px}
+.stat-val{font-size:1.4rem;font-weight:700}
+.diff-row{display:flex;gap:10px;margin-bottom:18px;flex-direction:row-reverse}
+.pill{padding:8px 20px;border-radius:20px;border:2px solid transparent;cursor:pointer;font-size:.95rem;font-family:'Noto Nastaliq Urdu',serif;transition:.2s}
+.pill.easy{background:#dcfce7;color:#166534;border-color:#86efac}
+.pill.hard{background:#fee2e2;color:#991b1b;border-color:#fca5a5}
+.pill.active{transform:scale(1.05);box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.q-card{background:#fff;border-radius:14px;padding:24px;box-shadow:0 4px 16px rgba(0,0,0,.08);margin-bottom:20px}
+.q-meta{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;flex-direction:row-reverse}
+.q-num{font-size:.85rem;color:#64748b}
+.q-type-badge{background:#eff6ff;color:#3b82f6;padding:4px 12px;border-radius:12px;font-size:.8rem}
+.q-text{font-size:1.15rem;line-height:2.4;margin-bottom:16px;text-align:right}
+.options{display:flex;flex-direction:column;gap:10px}
+.opt-btn{padding:12px 16px;border:2px solid #e2e8f0;border-radius:10px;background:#f8fafc;cursor:pointer;font-size:1rem;text-align:right;font-family:'Noto Nastaliq Urdu',serif;transition:.2s}
+.opt-btn:hover{border-color:#3b82f6;background:#eff6ff}
+.opt-btn.correct{background:#dcfce7;border-color:#22c55e;color:#166534}
+.opt-btn.wrong{background:#fee2e2;border-color:#ef4444;color:#991b1b}
+.tf-row{display:flex;gap:12px;flex-direction:row-reverse}
+.tf-btn{flex:1;padding:14px;border:2px solid #e2e8f0;border-radius:10px;background:#f8fafc;cursor:pointer;font-size:1.1rem;font-family:'Noto Nastaliq Urdu',serif;transition:.2s}
+.tf-btn.correct{background:#dcfce7;border-color:#22c55e}
+.tf-btn.wrong{background:#fee2e2;border-color:#ef4444}
+.fill-row{display:flex;gap:10px;align-items:center;flex-direction:row-reverse}
+.fill-inp{padding:12px;border:2px solid #e2e8f0;border-radius:8px;font-size:1.1rem;width:160px;text-align:center;font-family:'Noto Nastaliq Urdu',serif}
+.fill-inp:focus{outline:none;border-color:#3b82f6}
+.fill-inp.correct{border-color:#22c55e;background:#dcfce7}
+.fill-inp.wrong{border-color:#ef4444;background:#fee2e2}
+.submit-btn{padding:12px 24px;background:#3b82f6;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:1rem;font-family:'Noto Nastaliq Urdu',serif}
+.feedback{margin-top:12px;padding:10px 14px;border-radius:8px;font-size:.95rem;display:none;text-align:right}
+.feedback.show{display:block}
+.feedback.ok{background:#dcfce7;color:#166534}
+.feedback.err{background:#fee2e2;color:#991b1b}
+.nav-row{display:flex;justify-content:space-between;margin-top:10px;flex-direction:row-reverse}
+.nav-btn{padding:10px 24px;border:none;border-radius:8px;cursor:pointer;font-size:1rem;font-family:'Noto Nastaliq Urdu',serif}
+.nav-btn.prev{background:#e2e8f0;color:#1a1a2e}
+.nav-btn.next{background:#3b82f6;color:#fff}
+.nav-btn:hover{opacity:.85}
+.nav-btn:disabled{opacity:.4;cursor:default}
+.score-card{background:#fff;border-radius:16px;padding:32px;text-align:center;box-shadow:0 4px 20px rgba(0,0,0,.1);display:none}
+.score-card.show{display:block}
+.score-emoji{font-size:3rem;margin-bottom:12px}
+.score-title{font-size:1.5rem;font-weight:700;margin-bottom:8px}
+.score-num{font-size:2.5rem;font-weight:700;color:#3b82f6;margin-bottom:16px}
+.score-msg{color:#555;margin-bottom:20px}
+.restart-btn{padding:12px 32px;background:#3b82f6;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:1.1rem;font-family:'Noto Nastaliq Urdu',serif}
+.progress-wrap{background:#e2e8f0;border-radius:10px;height:8px;margin-bottom:20px}
+.progress-bar{height:8px;border-radius:10px;background:linear-gradient(90deg,#3b82f6,#8b5cf6);transition:.4s}
+.cv-btn{background:#7c3aed;color:#fff;border:none;border-radius:8px;padding:9px 18px;cursor:pointer;font-size:.9rem;margin-bottom:14px;font-family:'Noto Nastaliq Urdu',serif}
+.cv-overlay{position:fixed;inset:0;background:#fff;z-index:900;overflow-y:auto;padding:20px;display:none}
+.cv-overlay.show{display:block}
+.cv-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;flex-direction:row-reverse}
+.cv-close{background:#ef4444;color:#fff;border:none;border-radius:6px;padding:6px 14px;cursor:pointer;font-family:Arial,sans-serif}
+.cv-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.cv-item{border:1px solid #e2e8f0;border-radius:8px;padding:12px;font-size:.9rem;text-align:right}
+.cv-item.cv-ok{border-right:4px solid #22c55e}
+.cv-item.cv-err{border-right:4px solid #ef4444}
+.cv-item.cv-skip{border-right:4px solid #94a3b8}
+.print-btn{background:#0f172a;color:#fff;border:none;border-radius:8px;padding:9px 18px;cursor:pointer;font-size:.9rem;margin-bottom:14px;margin-right:8px;font-family:'Noto Nastaliq Urdu',serif}
+</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div class="modal-overlay" id="nameModal">
+  <div class="modal-box">
+    <h2>خوش آمدید! 👋</h2>
+    <p>براہ کرم اپنا نام لکھیں۔</p>
+    <input type="text" id="nameInput" placeholder="آپ کا نام" maxlength="30">
+    <button onclick="startWS()">شروع کریں</button>
+  </div>
+</div>
+<div class="cv-overlay" id="cvOverlay">
+  <div class="cv-header">
+    <h2 style="font-size:1.2rem">سوالات کا خلاصہ</h2>
+    <button class="cv-close" onclick="document.getElementById('cvOverlay').classList.remove('show')">بند کریں</button>
+  </div>
+  <div class="cv-grid" id="cvGrid"></div>
+</div>
+<div class="top-bar">
+  <div class="breadcrumb"><a href="index.html">ہوم</a><span>›</span><a href="math-grade4-long-division-urdu-help.html">طویل تقسیم</a><span>›</span><span>ورک شیٹ</span></div>
+  <button class="lang-btn" onclick="location.href='math-grade4-long-division-worksheet.html'">English</button>
+</div>
+<div class="hero"><h1>طویل تقسیم</h1><p>جماعت ۴ | انٹرایکٹو مشق</p></div>
+<div class="container">
+  <div class="stats-bar">
+    <div class="stat-card"><div class="stat-label">مکمل ورک شیٹس</div><div class="stat-val" id="stTotal">0</div></div>
+    <div class="stat-card"><div class="stat-label">بہترین اسکور</div><div class="stat-val" id="stBest">—</div></div>
+    <div class="stat-card"><div class="stat-label">آخری اسکور</div><div class="stat-val" id="stLast">—</div></div>
+  </div>
+  <div class="diff-row">
+    <button class="pill easy active" id="pillEasy" onclick="setDiff('easy')">🟢 آسان</button>
+    <button class="pill hard" id="pillHard" onclick="setDiff('hard')">🔴 مشکل</button>
+  </div>
+  <div class="progress-wrap"><div class="progress-bar" id="progBar" style="width:0%"></div></div>
+  <button class="cv-btn" onclick="showCV()">📋 تمام سوالات</button>
+  <button class="print-btn" onclick="window.print()">🖨️ پرنٹ</button>
+  <div id="qArea"></div>
+  <div class="score-card" id="scoreCard">
+    <div class="score-emoji" id="scoreEmoji"></div>
+    <div class="score-title" id="scoreName"></div>
+    <div class="score-num" id="scoreNum"></div>
+    <div class="score-msg" id="scoreMsg"></div>
+    <button class="restart-btn" onclick="restart()">دوبارہ کوشش کریں</button>
+  </div>
+</div>
+<script>
+const STATS_KEY='ws_math_grade4_long-division_stats';
+let userName='',difficulty='easy',questions=[],current=0,score=0,answers=[];
+function r(a,b){return Math.floor(Math.random()*(b-a+1))+a;}
+function shuffleArr(a){for(let i=a.length-1;i>0;i--){const j=r(0,i);[a[i],a[j]]=[a[j],a[i]];}}
+
+function makeDiv2x1E(){
+  const b=r(2,9), q=r(10,50);
+  const a=b*q;
+  return {type:'fill',text:`${a} ÷ ${b} = ؟`,ans:`${q}`,explanation:`${a} ÷ ${b} = ${q}`};
+}
+function makeDiv3x1E(){
+  const b=r(2,9), q=r(10,50);
+  const a=b*q;
+  const opts=[`${q}`,`${q+1}`,`${q-1}`,`${q+b}`];
+  shuffleArr(opts);
+  return {type:'mc',text:`${a} ÷ ${b} = ؟`,opts,ans:`${q}`,explanation:`${a} ÷ ${b} = ${q}`};
+}
+function makeRemainderE(){
+  const b=r(2,9), q=r(5,20), rem=r(1,b-1);
+  const a=b*q+rem;
+  return {type:'fill',text:`${a} ÷ ${b} = ؟ باقی ؟ (مثلاً: 5 باقی 2 کے لیے "5r2" لکھیں)`,ans:`${q}r${rem}`,explanation:`${q} × ${b} + ${rem} = ${a}`};
+}
+function makeTFDivE(){
+  const b=r(2,9), q=r(5,20);
+  const a=b*q;
+  const wrong=r(0,1)===1;
+  const shown=wrong?q+1:q;
+  return {type:'tf',text:`${a} ÷ ${b} = ${shown}`,ans:wrong?'غلط':'درست',explanation:`${a} ÷ ${b} = ${q}`};
+}
+function makeWordDivE(){
+  const b=r(3,8), q=r(5,20);
+  const a=b*q;
+  const opts=[`${q}`,`${q+1}`,`${q-1}`,`${a}`];
+  shuffleArr(opts);
+  return {type:'mc',text:`${a} کتابیں ${b} الماریوں میں برابر تقسیم ہوں گی۔ ہر الماری میں = ؟`,opts,ans:`${q}`,explanation:`${a} ÷ ${b} = ${q}`};
+}
+function makeDiv3x1H(){
+  const b=r(6,9), q=r(50,150);
+  const a=b*q;
+  return {type:'fill',text:`${a} ÷ ${b} = ؟`,ans:`${q}`,explanation:`${a} ÷ ${b} = ${q}`};
+}
+function makeRemainderH(){
+  const b=r(6,9), q=r(20,80), rem=r(1,b-1);
+  const a=b*q+rem;
+  const opts=[`${q} باقی ${rem}`,`${q+1} باقی ${rem}`,`${q} باقی ${rem+1}`,`${q-1} باقی ${rem}`];
+  shuffleArr(opts);
+  return {type:'mc',text:`${a} ÷ ${b} = ؟`,opts,ans:`${q} باقی ${rem}`,explanation:`${q} × ${b} + ${rem} = ${a}`};
+}
+function makeVerifyH(){
+  const b=r(4,8), q=r(20,60), rem=r(0,b-1);
+  const a=b*q+rem;
+  return {type:'fill',text:`جانچ کریں: ${q} × ${b} + ${rem} = ؟ (یہ ${a} ÷ ${b} کی جانچ ہے)`,ans:`${a}`,explanation:`${q} × ${b} = ${b*q}، پھر + ${rem} = ${a}`};
+}
+function makeMissingDivisorH(){
+  const q=r(10,50), b=r(2,9);
+  const a=q*b;
+  return {type:'fill',text:`${a} ÷ ؟ = ${q}`,ans:`${b}`,explanation:`${a} ÷ ${q} = ${b}`};
+}
+function makeWordDivH(){
+  const b=r(4,8), q=r(20,50), rem=r(0,b-1);
+  const a=b*q+rem;
+  const opts=[`${q} باقی ${rem}`,`${q+1}`,`${Math.floor(a/b)}`,`${q-1} باقی ${rem}`];
+  shuffleArr(opts);
+  return {type:'mc',text:`${a} روپے ${b} بچوں میں برابر تقسیم ہوں۔ ہر بچے کو کتنے ملیں گے؟`,opts,ans:`${q} باقی ${rem}`,explanation:`${a} ÷ ${b} = ${q} باقی ${rem}`};
+}
+
+function buildQuestions(){
+  const easy=[makeDiv2x1E,makeDiv3x1E,makeRemainderE,makeTFDivE,makeWordDivE];
+  const hard=[makeDiv3x1H,makeRemainderH,makeVerifyH,makeMissingDivisorH,makeWordDivH];
+  const pool=difficulty==='easy'?easy:hard;
+  const qs=[];while(qs.length<10){qs.push(pool[r(0,pool.length-1)]());}
+  return qs;
+}
+function loadStats(){
+  const s=JSON.parse(localStorage.getItem(STATS_KEY)||'{"total":0,"best":null,"last":null}');
+  document.getElementById('stTotal').textContent=s.total;
+  document.getElementById('stBest').textContent=s.best!=null?s.best+'/10':'—';
+  document.getElementById('stLast').textContent=s.last!=null?s.last+'/10':'—';
+}
+function saveStats(sc){
+  const s=JSON.parse(localStorage.getItem(STATS_KEY)||'{"total":0,"best":null,"last":null}');
+  s.total++;s.last=sc;if(s.best==null||sc>s.best)s.best=sc;
+  localStorage.setItem(STATS_KEY,JSON.stringify(s));loadStats();
+}
+function startWS(){
+  const n=document.getElementById('nameInput').value.trim();if(!n)return;
+  userName=n;document.getElementById('nameModal').style.display='none';
+  questions=buildQuestions();answers=new Array(10).fill(null);current=0;score=0;renderQ();
+}
+function setDiff(d){
+  difficulty=d;
+  document.getElementById('pillEasy').classList.toggle('active',d==='easy');
+  document.getElementById('pillHard').classList.toggle('active',d==='hard');
+  questions=buildQuestions();answers=new Array(10).fill(null);current=0;score=0;
+  document.getElementById('scoreCard').classList.remove('show');renderQ();
+}
+function renderQ(){
+  const q=questions[current];
+  document.getElementById('progBar').style.width=((current/10)*100)+'%';
+  let html=`<div class="q-card"><div class="q-meta"><span class="q-num">سوال ${current+1}/10</span><span class="q-type-badge">${typeName(q.type)}</span></div><div class="q-text">${q.text}</div>`;
+  if(q.type==='mc'){
+    html+=`<div class="options">`;
+    q.opts.forEach((o,i)=>{html+=`<button class="opt-btn" id="opt${i}" onclick="pickMC('${o.replace(/'/g,"\\'")}',${i})">${o}</button>`;});
+    html+=`</div>`;
+  }else if(q.type==='tf'){
+    html+=`<div class="tf-row"><button class="tf-btn" id="tfT" onclick="pickTF('درست')">✔ درست</button><button class="tf-btn" id="tfF" onclick="pickTF('غلط')">✘ غلط</button></div>`;
+  }else{
+    html+=`<div class="fill-row"><input class="fill-inp" id="fillInp" placeholder="جواب" onkeydown="if(event.key==='Enter')submitFill()"><button class="submit-btn" onclick="submitFill()">جمع کریں</button></div>`;
+  }
+  html+=`<div class="feedback" id="fb"></div><div class="nav-row"><button class="nav-btn next" id="btnNext" onclick="nextQ()" style="display:none">اگلا ›</button><button class="nav-btn prev" onclick="prevQ()" ${current===0?'disabled':''}>‹ پچھلا</button></div></div>`;
+  document.getElementById('qArea').innerHTML=html;
+  if(answers[current]!==null)restoreAnswer(q);
+  if(q.type==='fill')setTimeout(()=>{const el=document.getElementById('fillInp');if(el)el.focus();},100);
+}
+function typeName(t){return{mc:'کثیر الانتخاب',tf:'صحیح/غلط',fill:'خالی جگہ'}[t]||t;}
+function showFeedback(correct,explanation){
+  const fb=document.getElementById('fb');
+  fb.className='feedback show '+(correct?'ok':'err');
+  fb.textContent=(correct?'✔ شاباش!':'✘ غلط۔ ')+' وضاحت: '+explanation;
+  document.getElementById('btnNext').style.display='inline-block';
+}
+function pickMC(val,idx){
+  const q=questions[current];if(answers[current]!==null)return;
+  answers[current]=val;const correct=val===q.ans;if(correct)score++;
+  document.querySelectorAll('.opt-btn').forEach((b,i)=>{if(q.opts[i]===q.ans)b.classList.add('correct');else if(i===idx&&!correct)b.classList.add('wrong');b.onclick=null;});
+  showFeedback(correct,q.explanation);
+}
+function pickTF(val){
+  const q=questions[current];if(answers[current]!==null)return;
+  answers[current]=val;const correct=val===q.ans;if(correct)score++;
+  document.getElementById('tfT').classList.add(q.ans==='درست'?'correct':'wrong');
+  document.getElementById('tfF').classList.add(q.ans==='غلط'?'correct':'wrong');
+  document.getElementById('tfT').onclick=null;document.getElementById('tfF').onclick=null;
+  showFeedback(correct,q.explanation);
+}
+function submitFill(){
+  const q=questions[current];if(answers[current]!==null)return;
+  const inp=document.getElementById('fillInp');const val=inp.value.trim();if(!val)return;
+  answers[current]=val;const correct=val===q.ans;if(correct)score++;
+  inp.classList.add(correct?'correct':'wrong');inp.disabled=true;showFeedback(correct,q.explanation);
+}
+function restoreAnswer(q){
+  const a=answers[current];
+  if(q.type==='mc'){document.querySelectorAll('.opt-btn').forEach((b,i)=>{if(q.opts[i]===q.ans)b.classList.add('correct');else if(q.opts[i]===a&&a!==q.ans)b.classList.add('wrong');b.onclick=null;});}
+  else if(q.type==='tf'){document.getElementById('tfT').classList.add(q.ans==='درست'?'correct':'wrong');document.getElementById('tfF').classList.add(q.ans==='غلط'?'correct':'wrong');document.getElementById('tfT').onclick=null;document.getElementById('tfF').onclick=null;}
+  else{const inp=document.getElementById('fillInp');inp.value=a;inp.classList.add(a===q.ans?'correct':'wrong');inp.disabled=true;}
+  const fb=document.getElementById('fb');fb.className='feedback show '+(a===q.ans?'ok':'err');
+  fb.textContent=(a===q.ans?'✔ شاباش!':'✘ غلط۔ ')+' وضاحت: '+q.explanation;
+  document.getElementById('btnNext').style.display='inline-block';
+}
+function nextQ(){if(current<9){current++;renderQ();}else showScore();}
+function prevQ(){if(current>0){current--;renderQ();}}
+function showScore(){
+  document.getElementById('qArea').innerHTML='';document.getElementById('progBar').style.width='100%';
+  const card=document.getElementById('scoreCard');card.classList.add('show');
+  const pct=Math.round(score/10*100);
+  const msgs=[[100,'🏆','مکمل اسکور! تقسیم کے ماہر!'],[80,'⭐','بہت خوب!'],[60,'👍','اچھا!'],[0,'📚','ہمت رکھیں!']];
+  const [,emoji,msg]=msgs.find(([t])=>pct>=t);
+  document.getElementById('scoreEmoji').textContent=emoji;
+  document.getElementById('scoreName').textContent=`${userName}، آپ کا اسکور:`;
+  document.getElementById('scoreNum').textContent=`${score}/10 (${pct}%)`;
+  document.getElementById('scoreMsg').textContent=msg;saveStats(score);
+}
+function restart(){
+  document.getElementById('scoreCard').classList.remove('show');
+  questions=buildQuestions();answers=new Array(10).fill(null);current=0;score=0;renderQ();
+}
+function showCV(){
+  const grid=document.getElementById('cvGrid');grid.innerHTML='';
+  questions.forEach((q,i)=>{
+    const a=answers[i];const cls=a==null?'cv-skip':a===q.ans?'cv-ok':'cv-err';const icon=a==null?'⬜':a===q.ans?'✔':'✘';
+    grid.innerHTML+=`<div class="cv-item ${cls}"><strong>س${i+1}:</strong> ${q.text}<br><small>درست: ${q.ans}${a!=null&&a!==q.ans?' | آپ کا: '+a:''}</small> ${icon}</div>`;
+  });
+  document.getElementById('cvOverlay').classList.add('show');
+}
+loadStats();
+</script>
+</body>
+</html>

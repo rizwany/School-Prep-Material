@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>جمع، 20 تک ورک شیٹ — جماعت 1 ریاضی | LearnPad</title>
+  <meta name="description" content="جماعت 1 کے لیے جمع، 20 تک کی اردو انٹرایکٹو ورک شیٹ۔" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600;700&family=Nunito:wght@700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}body{font-family:'Noto Nastaliq Urdu',serif;background:#fff;background-image:radial-gradient(circle,#E8EDF5 1.5px,transparent 1.5px);background-size:20px 20px;color:#2D2D4E;line-height:2;min-height:100vh}.page-wrap{max-width:860px;margin:0 auto;padding:24px 20px 60px}.top-bar,.breadcrumb,.actions,.score-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.top-bar{justify-content:space-between;margin-bottom:24px}.breadcrumb{font-size:.82rem;color:#6B7280}.breadcrumb a,.lang-switch{color:#4361EE;text-decoration:none;font-weight:700}.hero{background:#EEF0FF;border-right:5px solid #4361EE;border-radius:14px;padding:24px;margin-bottom:22px}h1{font-size:clamp(1.8rem,4.5vw,2.6rem);font-weight:700;color:#1A1A3E;line-height:1.7}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:'Noto Nastaliq Urdu',serif;font-weight:700;font-size:.9rem;padding:8px 20px;border-radius:999px;text-decoration:none;border:2px solid #4361EE;cursor:pointer}.btn-primary{background:#4361EE;color:#fff}.btn-outline{background:#fff;color:#4361EE}.btn-neutral{background:#fff;color:#1A1A3E;border-color:#C4C9DC}.stats{display:flex;gap:16px;flex-wrap:wrap;border-bottom:2px solid #E8EDF5;padding:12px 0;margin-bottom:16px;color:#6B7280;font-weight:700}.q-card{background:#fff;border-radius:14px;box-shadow:0 2px 16px rgba(67,97,238,.08);border-right:5px solid #4361EE;padding:20px 22px;margin-bottom:14px}.q-meta{font-family:'Nunito',sans-serif;font-weight:900;color:#4361EE;font-size:.78rem;margin-bottom:8px}.q-text{font-size:1.05rem;font-weight:700;color:#1A1A3E;margin-bottom:10px}.q-input{font-family:'Noto Nastaliq Urdu',serif;font-size:1rem;font-weight:700;border:2px solid #E8EDF5;border-radius:10px;padding:8px 12px;min-width:150px;max-width:100%;outline:none}.q-input:focus{border-color:#4361EE}.feedback{display:none;margin-top:10px;font-weight:700;border-radius:10px;padding:8px 12px}.correct{background:#F0FFF4;color:#1a7a3a;border:1.5px solid #2DC653}.wrong{background:#FFF0F1;color:#8B0010;border:1.5px solid #E63946}.score-banner{display:none;background:#fff;border:2px solid #4361EE;border-radius:14px;padding:18px 20px;margin:18px 0}.score-num{font-family:'Nunito',sans-serif;font-size:2rem;font-weight:900;color:#4361EE}.question-list{list-style:none}.footer-links{text-align:center;margin-top:32px;padding-top:18px;border-top:2px solid #E8EDF5}@media(max-width:600px){.page-wrap{padding:16px 14px 48px}.hero,.q-card{padding:18px}.top-bar{align-items:flex-start}}
+  </style>
+</head>
+<body>
+<div class="page-wrap">
+  <div class="top-bar"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">ہوم</a><span>›</span><a href="index.html#grade-1-math">جماعت 1 ریاضی</a><span>›</span><a href="math-grade1-addition-within-20-help-ur.html">جمع، 20 تک</a><span>›</span><span>ورک شیٹ</span></nav><div class="actions"><a class="btn btn-outline" href="math-grade1-addition-within-20-help-ur.html">رہنما سبق</a><a class="lang-switch" href="math-grade1-addition-within-20-worksheet.html">English</a></div></div>
+  <header class="hero"><h1>جمع، 20 تک — ورک شیٹ</h1><p>ہر سوال کا جواب لکھیں، پھر نیچے بٹن سے اپنا سکور دیکھیں۔</p></header>
+  <div class="stats"><span>کل سوال: <strong>10</strong></span><span>موضوع: <strong>جمع، 20 تک</strong></span></div>
+  <div class="score-banner" id="scoreBanner"><div class="score-row"><div class="score-num" id="scoreNum">0/10</div><div id="scoreMsg">اپنے جواب چیک کریں۔</div></div></div>
+  <ol class="question-list" id="questionList"></ol>
+  <div class="actions"><button class="btn btn-primary" id="checkBtn">جوابات چیک کریں</button><button class="btn btn-neutral" id="resetBtn">دوبارہ کریں</button></div>
+  <div class="footer-links"><a class="btn btn-outline" href="math-grade1-addition-within-20-help-ur.html">سبق دوبارہ پڑھیں</a> <a class="btn btn-outline" href="index.html#grade-1-math">Grade 1 Math</a></div>
+</div>
+<script>
+  const QUESTIONS = [
+      {q:"4 + 3 = ؟",a:"7"},
+      {q:"10 + 5 = ؟",a:"15"},
+      {q:"8 + 2 = ؟",a:"10"},
+      {q:"6 + 6 = ؟",a:"12"},
+      {q:"9 + 1 = ؟",a:"10"},
+      {q:"7 + 5 = ؟",a:"12"},
+      {q:"3 + 8 = ؟",a:"11"},
+      {q:"2 + 14 = ؟",a:"16"},
+      {q:"11 + 4 = ؟",a:"15"},
+      {q:"5 + 5 = ؟",a:"10"}
+  ];
+  const list = document.getElementById('questionList');
+  function normalize(v){ return String(v || '').trim().replace(/[؟?۔.]/g,'').toLowerCase(); }
+  function render(){
+    list.innerHTML = QUESTIONS.map((item, i) => '<li class="q-card"><div class="q-meta">سوال ' + (i + 1) + '</div><div class="q-text">' + item.q + '</div><input class="q-input" aria-label="سوال ' + (i + 1) + ' کا جواب" /><div class="feedback"></div></li>').join('');
+    document.getElementById('scoreBanner').style.display = 'none';
+  }
+  function check(){
+    let score = 0;
+    [...list.querySelectorAll('.q-card')].forEach((card, i) => {
+      const input = card.querySelector('input');
+      const fb = card.querySelector('.feedback');
+      const ok = normalize(input.value) === normalize(QUESTIONS[i].a);
+      if (ok) score++;
+      fb.style.display = 'block';
+      fb.className = 'feedback ' + (ok ? 'correct' : 'wrong');
+      fb.textContent = ok ? 'درست جواب!' : 'درست جواب: ' + QUESTIONS[i].a;
+    });
+    document.getElementById('scoreNum').textContent = score + '/10';
+    document.getElementById('scoreMsg').textContent = score >= 8 ? 'بہت خوب! آپ نے اچھی مشق کی۔' : score >= 5 ? 'اچھی کوشش! سبق دوبارہ دیکھ کر مزید بہتر کریں۔' : 'کوئی بات نہیں، مثالیں پڑھیں اور دوبارہ کوشش کریں۔';
+    document.getElementById('scoreBanner').style.display = 'block';
+  }
+  document.getElementById('checkBtn').addEventListener('click', check);
+  document.getElementById('resetBtn').addEventListener('click', render);
+  render();
+</script>
+</body>
+</html>

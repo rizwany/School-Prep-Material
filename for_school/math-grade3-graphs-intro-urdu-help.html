@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>گراف کا تعارف – مدد | Grade 3</title>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Nastaliq Urdu',serif;background:#f0f4ff;color:#1a1a2e;direction:rtl;line-height:2.2}
+.top-bar{background:#1a1a2e;color:#fff;padding:10px 20px;display:flex;align-items:center;justify-content:space-between;flex-direction:row-reverse}
+.breadcrumb{display:flex;align-items:center;gap:8px;font-size:.85rem;flex-direction:row-reverse}
+.breadcrumb a{color:#a0aec0;text-decoration:none}.breadcrumb a:hover{color:#fff}
+.breadcrumb span{color:#a0aec0}
+.lang-btn{background:#3b82f6;color:#fff;border:none;border-radius:6px;padding:5px 14px;cursor:pointer;font-size:.85rem;font-family:Arial,sans-serif}
+.hero{background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;padding:40px 20px;text-align:center}
+.hero h1{font-size:2rem;margin-bottom:10px}
+.hero p{color:#a0aec0;font-size:1rem}
+.container{max-width:860px;margin:0 auto;padding:24px 20px}
+.section{background:#fff;border-radius:14px;padding:24px;margin-bottom:24px;box-shadow:0 4px 16px rgba(0,0,0,.08)}
+.section h2{font-size:1.3rem;color:#1a1a2e;margin-bottom:16px;padding-bottom:10px;border-bottom:3px solid #3b82f6;text-align:right}
+.section p{margin-bottom:12px;font-size:1rem;text-align:right}
+.formula-box{background:#eff6ff;border-right:4px solid #3b82f6;padding:16px 20px;border-radius:8px;margin:16px 0;font-size:1.1rem;font-weight:600;text-align:center;direction:rtl}
+.example-box{background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:18px;margin:12px 0}
+.example-box h3{font-size:1rem;color:#3b82f6;margin-bottom:10px;text-align:right}
+.step{display:flex;gap:12px;align-items:flex-start;margin-bottom:8px;flex-direction:row-reverse}
+.step-num{background:#3b82f6;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:.85rem;flex-shrink:0;margin-top:4px}
+.step-text{font-size:1rem;text-align:right;flex:1}
+.tip-box{background:#fef3c7;border-right:4px solid #f59e0b;padding:14px 18px;border-radius:8px;margin:14px 0;font-size:.95rem;text-align:right}
+.warning-box{background:#fee2e2;border-right:4px solid #ef4444;padding:14px 18px;border-radius:8px;margin:14px 0;font-size:.95rem;text-align:right}
+/* Bar chart demo */
+.bar-chart{margin:16px 0;padding:16px;background:#f8fafc;border-radius:10px;border:1px solid #e2e8f0}
+.bar-chart h4{text-align:right;margin-bottom:12px;color:#3b82f6;font-size:.95rem}
+.bar-row{display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-direction:row-reverse}
+.bar-label{width:80px;text-align:right;font-size:.9rem;flex-shrink:0}
+.bar-fill{height:26px;background:linear-gradient(90deg,#3b82f6,#8b5cf6);border-radius:0 4px 4px 0;min-width:8px;display:flex;align-items:center;padding-right:8px}
+.bar-val{font-size:.85rem;color:#fff;font-weight:600}
+/* Pictograph demo */
+.picto-table{width:100%;border-collapse:collapse;margin:14px 0;direction:rtl}
+.picto-table th,.picto-table td{padding:8px 12px;border:1px solid #e2e8f0;text-align:right;font-size:.95rem}
+.picto-table th{background:#eff6ff;color:#1a1a2e}
+.cta{background:linear-gradient(135deg,#3b82f6,#8b5cf6);color:#fff;border-radius:14px;padding:28px;text-align:center;margin-top:24px}
+.cta h3{font-size:1.3rem;margin-bottom:10px}
+.cta p{font-size:1rem;margin-bottom:18px;opacity:.9}
+.cta a{background:#fff;color:#3b82f6;padding:12px 28px;border-radius:8px;text-decoration:none;font-size:1rem;font-weight:600}
+.cta a:hover{background:#f0f4ff}
+@media(max-width:600px){.hero h1{font-size:1.5rem}}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div class="top-bar">
+  <div class="breadcrumb">
+    <a href="index.html">ہوم</a>
+    <span>›</span>
+    <span>جماعت ۳</span>
+    <span>›</span>
+    <span>گراف کا تعارف</span>
+  </div>
+  <button class="lang-btn" onclick="location.href='math-grade3-graphs-intro-help.html'">English</button>
+</div>
+
+<div class="hero">
+  <h1>گراف کا تعارف</h1>
+  <p>جماعت ۳ | اعداد و شمار کو تصویری شکل دینا</p>
+</div>
+
+<div class="container">
+
+  <div class="section">
+    <h2>حصہ ۱: گراف کیا ہے؟</h2>
+    <p>گراف (Graph) ایک تصویری طریقہ ہے جس سے ہم معلومات کو آسانی سے سمجھ سکتے ہیں۔ جب ہمارے پاس بہت سارے اعداد ہوں تو گراف انہیں واضح اور خوبصورت طریقے سے دکھاتا ہے۔</p>
+    <div class="formula-box">گراف = معلومات + تصویر = آسان فہم</div>
+    <div class="tip-box">💡 گرافس کا استعمال اسکولوں، دکانوں، اخباروں اور موسمیاتی پیشن گوئی میں ہوتا ہے۔</div>
+  </div>
+
+  <div class="section">
+    <h2>حصہ ۲: تصویری گراف (Pictograph)</h2>
+    <p>تصویری گراف میں ہر شے کو تصویر یا علامت سے ظاہر کیا جاتا ہے۔ ہر تصویر کی ایک قدر (value) ہوتی ہے۔</p>
+
+    <div class="example-box">
+      <h3>مثال: پھلوں کی تعداد</h3>
+      <p>اگر ہر 🍎 = 2 پھل</p>
+      <table class="picto-table">
+        <tr><th>پھل</th><th>تصویریں</th><th>تعداد</th></tr>
+        <tr><td>سیب</td><td>🍎🍎🍎</td><td>6</td></tr>
+        <tr><td>کیلا</td><td>🍎🍎</td><td>4</td></tr>
+        <tr><td>آم</td><td>🍎🍎🍎🍎</td><td>8</td></tr>
+      </table>
+      <p>سب سے زیادہ: آم (8)، سب سے کم: کیلا (4)</p>
+    </div>
+    <div class="step"><div class="step-num">۱</div><div class="step-text">سب سے پہلے قدر (Key) دیکھیں — ہر علامت کتنی ہے؟</div></div>
+    <div class="step"><div class="step-num">۲</div><div class="step-text">علامتیں گنیں اور قدر سے ضرب کریں</div></div>
+    <div class="step"><div class="step-num">۳</div><div class="step-text">جواب لکھیں</div></div>
+  </div>
+
+  <div class="section">
+    <h2>حصہ ۳: بار گراف (Bar Graph)</h2>
+    <p>بار گراف میں لمبے آیتاکار (bars) ہوتے ہیں۔ بار جتنی لمبی ہوگی، تعداد اتنی زیادہ ہوگی۔</p>
+
+    <div class="bar-chart">
+      <h4>طلباء کے پسندیدہ مضامین</h4>
+      <div class="bar-row"><div class="bar-label">ریاضی</div><div class="bar-fill" style="width:180px"><div class="bar-val">9</div></div></div>
+      <div class="bar-row"><div class="bar-label">اردو</div><div class="bar-fill" style="width:140px"><div class="bar-val">7</div></div></div>
+      <div class="bar-row"><div class="bar-label">سائنس</div><div class="bar-fill" style="width:120px"><div class="bar-val">6</div></div></div>
+      <div class="bar-row"><div class="bar-label">آرٹ</div><div class="bar-fill" style="width:80px"><div class="bar-val">4</div></div></div>
+    </div>
+
+    <div class="step"><div class="step-num">۱</div><div class="step-text">افقی محور (X-axis): زمروں کے نام دیکھیں</div></div>
+    <div class="step"><div class="step-num">۲</div><div class="step-text">عمودی محور (Y-axis): نمبر پڑھیں</div></div>
+    <div class="step"><div class="step-num">۳</div><div class="step-text">بار کی اونچائی سے تعداد معلوم کریں</div></div>
+  </div>
+
+  <div class="section">
+    <h2>حصہ ۴: حل شدہ مثالیں</h2>
+
+    <div class="example-box">
+      <h3>مثال ۱: تصویری گراف پڑھنا</h3>
+      <p>ایک تصویری گراف میں ہر ⭐ = 3 طلباء۔ کلاس A میں 4 ستارے ہیں۔ طلباء کی تعداد = ؟</p>
+      <div class="step"><div class="step-num">۱</div><div class="step-text">ستارے × قدر = 4 × 3</div></div>
+      <div class="step"><div class="step-num">۲</div><div class="step-text">4 × 3 = 12</div></div>
+      <div class="step"><div class="step-num">۳</div><div class="step-text">کلاس A میں 12 طلباء ہیں ✔</div></div>
+    </div>
+
+    <div class="example-box">
+      <h3>مثال ۲: بار گراف پڑھنا</h3>
+      <p>بار گراف میں سیب کی بار 8 تک اور کیلے کی بار 5 تک جاتی ہے۔ دونوں کا مجموعہ = ؟</p>
+      <div class="step"><div class="step-num">۱</div><div class="step-text">سیب = 8، کیلا = 5</div></div>
+      <div class="step"><div class="step-num">۲</div><div class="step-text">8 + 5 = 13</div></div>
+      <div class="step"><div class="step-num">۳</div><div class="step-text">کل = 13 ✔</div></div>
+    </div>
+
+    <div class="example-box">
+      <h3>مثال ۳: فرق نکالنا</h3>
+      <p>گراف میں سوموار کو 10 بچے آئے اور جمعہ کو 6 بچے آئے۔ فرق = ؟</p>
+      <div class="step"><div class="step-num">۱</div><div class="step-text">زیادہ - کم = 10 - 6</div></div>
+      <div class="step"><div class="step-num">۲</div><div class="step-text">10 - 6 = 4</div></div>
+      <div class="step"><div class="step-num">۳</div><div class="step-text">فرق = 4 بچے ✔</div></div>
+    </div>
+
+    <div class="example-box">
+      <h3>مثال ۴: کل معلوم کرنا</h3>
+      <p>تصویری گراف میں ہر 🌟 = 5۔ تین قطاروں میں 2، 3، 4 ستارے ہیں۔ کل = ؟</p>
+      <div class="step"><div class="step-num">۱</div><div class="step-text">کل ستارے = 2 + 3 + 4 = 9</div></div>
+      <div class="step"><div class="step-num">۲</div><div class="step-text">9 × 5 = 45</div></div>
+      <div class="step"><div class="step-num">۳</div><div class="step-text">کل = 45 ✔</div></div>
+    </div>
+
+    <div class="example-box">
+      <h3>مثال ۵: سب سے بڑا/چھوٹا</h3>
+      <p>گراف میں چار موسموں میں بارش: گرمی=3، سردی=8، بہار=5، خزاں=2۔ سب سے زیادہ بارش کب؟</p>
+      <div class="step"><div class="step-num">۱</div><div class="step-text">سب نمبر دیکھیں: 3، 8، 5، 2</div></div>
+      <div class="step"><div class="step-num">۲</div><div class="step-text">سب سے بڑا = 8</div></div>
+      <div class="step"><div class="step-num">۳</div><div class="step-text">سردی میں سب سے زیادہ بارش ✔</div></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>حصہ ۵: عام غلطیاں</h2>
+    <div class="warning-box">⚠️ تصویری گراف میں قدر (key) ضرور دیکھیں — ایک علامت = ایک نہیں ہوتی!</div>
+    <div class="warning-box">⚠️ بار گراف میں محور کے نمبر صحیح پڑھیں — وہاں سے پڑھیں جہاں بار ختم ہو۔</div>
+    <div class="warning-box">⚠️ "سب سے زیادہ" اور "سب سے کم" کا فرق یاد رکھیں۔</div>
+    <div class="tip-box">💡 گراف ہمیشہ عنوان (Title) اور محوروں کے لیبل کے ساتھ بنائیں۔</div>
+  </div>
+
+  <div class="cta">
+    <h3>مشق کے لیے تیار ہیں؟</h3>
+    <p>ورک شیٹ پر جا کر گراف کے سوالات حل کریں!</p>
+    <a href="math-grade3-graphs-intro-urdu-worksheet.html">ورک شیٹ شروع کریں ←</a>
+  </div>
+
+</div>
+</body>
+</html>

@@ -220,7 +220,7 @@
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);
       border-bottom: 1px solid rgba(255, 255, 255, 0.07);
-      padding: 14px 0;
+      padding: 8px 0;
     }
 
     .navbar__inner {
@@ -271,7 +271,7 @@
       font-weight: 600;
       font-size: 0.88rem;
       color: rgba(255, 255, 255, 0.78);
-      padding: 7px 14px;
+      padding: 5px 12px;
       border-radius: var(--radius-sm);
       transition: color var(--transition), background var(--transition);
     }
@@ -287,7 +287,7 @@
       font-size: 0.72rem;
       color: var(--ink);
       background: linear-gradient(135deg, #FFD166, #FFC233);
-      padding: 5px 12px;
+      padding: 4px 10px;
       border-radius: var(--radius-pill);
       white-space: nowrap;
     }
@@ -1217,7 +1217,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="navbar__inner">
 
       <a href="../index.html" class="navbar__brand" aria-label="LearnPad – go to home">
-        <img src="../logo.png" alt="LearnPad" style="height:38px;width:auto;display:block;" />
+        <img src="../logo.png" alt="LearnPad" style="height:30px;width:auto;display:block;" />
       </a>
 
       <div class="navbar__right">
@@ -1487,283 +1487,423 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   const LIVE_LINKS = {
     'math-grade1-counting-numbers': {
       help:      'math-grade1-counting-numbers-help.html',
-      worksheet: 'math-grade1-counting-numbers-worksheet.html'
+      worksheet: 'math-grade1-counting-numbers-worksheet.html',
+      helpUr:    'math-grade1-counting-numbers-help-ur.html',
+      worksheetUr: 'math-grade1-counting-numbers-worksheet-ur.html'
     },
     'math-grade1-number-before-after': {
       help:      'math-grade1-number-before-after-help.html',
-      worksheet: 'math-grade1-number-before-after-worksheet.html'
+      worksheet: 'math-grade1-number-before-after-worksheet.html',
+      helpUr:    'math-grade1-number-before-after-help-ur.html',
+      worksheetUr: 'math-grade1-number-before-after-worksheet-ur.html'
     },
     'math-grade1-addition-within-20': {
       help:      'math-grade1-addition-within-20-help.html',
-      worksheet: 'math-grade1-addition-within-20-worksheet.html'
+      worksheet: 'math-grade1-addition-within-20-worksheet.html',
+      helpUr:    'math-grade1-addition-within-20-help-ur.html',
+      worksheetUr: 'math-grade1-addition-within-20-worksheet-ur.html'
     },
     'math-grade1-subtraction-within-20': {
       help:      'math-grade1-subtraction-within-20-help.html',
-      worksheet: 'math-grade1-subtraction-within-20-worksheet.html'
+      worksheet: 'math-grade1-subtraction-within-20-worksheet.html',
+      helpUr:    'math-grade1-subtraction-within-20-help-ur.html',
+      worksheetUr: 'math-grade1-subtraction-within-20-worksheet-ur.html'
     },
     'math-grade1-shapes-patterns': {
       help:      'math-grade1-shapes-patterns-help.html',
-      worksheet: 'math-grade1-shapes-patterns-worksheet.html'
+      worksheet: 'math-grade1-shapes-patterns-worksheet.html',
+      helpUr:    'math-grade1-shapes-patterns-help-ur.html',
+      worksheetUr: 'math-grade1-shapes-patterns-worksheet-ur.html'
     },
     'math-grade1-basic-measurement': {
       help:      'math-grade1-basic-measurement-help.html',
-      worksheet: 'math-grade1-basic-measurement-worksheet.html'
+      worksheet: 'math-grade1-basic-measurement-worksheet.html',
+      helpUr:    'math-grade1-basic-measurement-help-ur.html',
+      worksheetUr: 'math-grade1-basic-measurement-worksheet-ur.html'
     },
     'math-grade1-skip-counting': {
       help:      'math-grade1-skip-counting-help.html',
-      worksheet: 'math-grade1-skip-counting-worksheet.html'
+      worksheet: 'math-grade1-skip-counting-worksheet.html',
+      helpUr:    'math-grade1-skip-counting-help-ur.html',
+      worksheetUr: 'math-grade1-skip-counting-worksheet-ur.html'
     },
     'math-grade2-place-value-tens-ones': {
-      help:      'math-grade2-place-value-tens-ones-help.html',
-      worksheet: 'math-grade2-place-value-tens-ones-worksheet.html'
+      help:        'math-grade2-place-value-tens-ones-help.html',
+      worksheet:   'math-grade2-place-value-tens-ones-worksheet.html',
+      helpUr:      'math-grade2-place-value-tens-ones-urdu-help.html',
+      worksheetUr: 'math-grade2-place-value-tens-ones-urdu-worksheet.html'
     },
     'math-grade2-addition-carrying': {
-      help:      'math-grade2-addition-carrying-help.html',
-      worksheet: 'math-grade2-addition-carrying-worksheet.html'
+      help:        'math-grade2-addition-carrying-help.html',
+      worksheet:   'math-grade2-addition-carrying-worksheet.html',
+      helpUr:      'math-grade2-addition-carrying-urdu-help.html',
+      worksheetUr: 'math-grade2-addition-carrying-urdu-worksheet.html'
     },
     'math-grade2-subtraction-borrowing': {
-      help:      'math-grade2-subtraction-borrowing-help.html',
-      worksheet: 'math-grade2-subtraction-borrowing-worksheet.html'
+      help:        'math-grade2-subtraction-borrowing-help.html',
+      worksheet:   'math-grade2-subtraction-borrowing-worksheet.html',
+      helpUr:      'math-grade2-subtraction-borrowing-urdu-help.html',
+      worksheetUr: 'math-grade2-subtraction-borrowing-urdu-worksheet.html'
     },
     'math-grade2-multiplication-intro': {
-      help:      'math-grade2-multiplication-intro-help.html',
-      worksheet: 'math-grade2-multiplication-intro-worksheet.html'
+      help:        'math-grade2-multiplication-intro-help.html',
+      worksheet:   'math-grade2-multiplication-intro-worksheet.html',
+      helpUr:      'math-grade2-multiplication-intro-urdu-help.html',
+      worksheetUr: 'math-grade2-multiplication-intro-urdu-worksheet.html'
     },
     'math-grade2-telling-time': {
-      help:      'math-grade2-telling-time-help.html',
-      worksheet: 'math-grade2-telling-time-worksheet.html'
+      help:        'math-grade2-telling-time-help.html',
+      worksheet:   'math-grade2-telling-time-worksheet.html',
+      helpUr:      'math-grade2-telling-time-urdu-help.html',
+      worksheetUr: 'math-grade2-telling-time-urdu-worksheet.html'
     },
     'math-grade2-money-basics': {
-      help:      'math-grade2-money-basics-help.html',
-      worksheet: 'math-grade2-money-basics-worksheet.html'
+      help:        'math-grade2-money-basics-help.html',
+      worksheet:   'math-grade2-money-basics-worksheet.html',
+      helpUr:      'math-grade2-money-basics-urdu-help.html',
+      worksheetUr: 'math-grade2-money-basics-urdu-worksheet.html'
     },
     'math-grade2-shapes-2d-3d': {
-      help:      'math-grade2-shapes-2d-3d-help.html',
-      worksheet: 'math-grade2-shapes-2d-3d-worksheet.html'
+      help:        'math-grade2-shapes-2d-3d-help.html',
+      worksheet:   'math-grade2-shapes-2d-3d-worksheet.html',
+      helpUr:      'math-grade2-shapes-2d-3d-urdu-help.html',
+      worksheetUr: 'math-grade2-shapes-2d-3d-urdu-worksheet.html'
     },
     'math-grade3-multiplication-tables': {
-      help:      'math-grade3-multiplication-tables-help.html',
-      worksheet: 'math-grade3-multiplication-tables-worksheet.html'
+      help:        'math-grade3-multiplication-tables-help.html',
+      worksheet:   'math-grade3-multiplication-tables-worksheet.html',
+      helpUr:      'math-grade3-multiplication-tables-urdu-help.html',
+      worksheetUr: 'math-grade3-multiplication-tables-urdu-worksheet.html'
     },
     'math-grade3-division-basics': {
-      help:      'math-grade3-division-basics-help.html',
-      worksheet: 'math-grade3-division-basics-worksheet.html'
+      help:        'math-grade3-division-basics-help.html',
+      worksheet:   'math-grade3-division-basics-worksheet.html',
+      helpUr:      'math-grade3-division-basics-urdu-help.html',
+      worksheetUr: 'math-grade3-division-basics-urdu-worksheet.html'
     },
     'math-grade3-fractions-intro': {
-      help:      'math-grade3-fractions-intro-help.html',
-      worksheet: 'math-grade3-fractions-intro-worksheet.html'
+      help:        'math-grade3-fractions-intro-help.html',
+      worksheet:   'math-grade3-fractions-intro-worksheet.html',
+      helpUr:      'math-grade3-fractions-intro-urdu-help.html',
+      worksheetUr: 'math-grade3-fractions-intro-urdu-worksheet.html'
     },
     'math-grade3-addition-subtraction-3-digit': {
-      help:      'math-grade3-addition-subtraction-3digit-help.html',
-      worksheet: 'math-grade3-addition-subtraction-3digit-worksheet.html'
+      help:        'math-grade3-addition-subtraction-3digit-help.html',
+      worksheet:   'math-grade3-addition-subtraction-3digit-worksheet.html',
+      helpUr:      'math-grade3-addition-subtraction-3digit-urdu-help.html',
+      worksheetUr: 'math-grade3-addition-subtraction-3digit-urdu-worksheet.html'
     },
     'math-grade3-time-calendar': {
-      help:      'math-grade3-time-calendar-help.html',
-      worksheet: 'math-grade3-time-calendar-worksheet.html'
+      help:        'math-grade3-time-calendar-help.html',
+      worksheet:   'math-grade3-time-calendar-worksheet.html',
+      helpUr:      'math-grade3-time-calendar-urdu-help.html',
+      worksheetUr: 'math-grade3-time-calendar-urdu-worksheet.html'
     },
     'math-grade3-perimeter': {
-      help:      'math-grade3-perimeter-help.html',
-      worksheet: 'math-grade3-perimeter-worksheet.html'
+      help:        'math-grade3-perimeter-help.html',
+      worksheet:   'math-grade3-perimeter-worksheet.html',
+      helpUr:      'math-grade3-perimeter-urdu-help.html',
+      worksheetUr: 'math-grade3-perimeter-urdu-worksheet.html'
     },
     'math-grade3-pictographs-bar-graphs': {
-      help:      'math-grade3-graphs-intro-help.html',
-      worksheet: 'math-grade3-graphs-intro-worksheet.html'
+      help:        'math-grade3-graphs-intro-help.html',
+      worksheet:   'math-grade3-graphs-intro-worksheet.html',
+      helpUr:      'math-grade3-graphs-intro-urdu-help.html',
+      worksheetUr: 'math-grade3-graphs-intro-urdu-worksheet.html'
     },
     'math-grade4-multi-digit-multiplication': {
-      help:      'math-grade4-multi-digit-multiplication-help.html',
-      worksheet: 'math-grade4-multi-digit-multiplication-worksheet.html'
+      help:        'math-grade4-multi-digit-multiplication-help.html',
+      worksheet:   'math-grade4-multi-digit-multiplication-worksheet.html',
+      helpUr:      'math-grade4-multi-digit-multiplication-urdu-help.html',
+      worksheetUr: 'math-grade4-multi-digit-multiplication-urdu-worksheet.html'
     },
     'math-grade4-long-division': {
-      help:      'math-grade4-long-division-help.html',
-      worksheet: 'math-grade4-long-division-worksheet.html'
+      help:        'math-grade4-long-division-help.html',
+      worksheet:   'math-grade4-long-division-worksheet.html',
+      helpUr:      'math-grade4-long-division-urdu-help.html',
+      worksheetUr: 'math-grade4-long-division-urdu-worksheet.html'
     },
     'math-grade4-fractions-equivalent': {
-      help:      'math-grade4-fractions-equivalent-help.html',
-      worksheet: 'math-grade4-fractions-equivalent-worksheet.html'
+      help:        'math-grade4-fractions-equivalent-help.html',
+      worksheet:   'math-grade4-fractions-equivalent-worksheet.html',
+      helpUr:      'math-grade4-fractions-equivalent-urdu-help.html',
+      worksheetUr: 'math-grade4-fractions-equivalent-urdu-worksheet.html'
     },
     'math-grade4-decimals-intro': {
-      help:      'math-grade4-decimals-intro-help.html',
-      worksheet: 'math-grade4-decimals-intro-worksheet.html'
+      help:        'math-grade4-decimals-intro-help.html',
+      worksheet:   'math-grade4-decimals-intro-worksheet.html',
+      helpUr:      'math-grade4-decimals-intro-urdu-help.html',
+      worksheetUr: 'math-grade4-decimals-intro-urdu-worksheet.html'
     },
     'math-grade4-area-perimeter': {
-      help:      'math-grade4-area-perimeter-help.html',
-      worksheet: 'math-grade4-area-perimeter-worksheet.html'
+      help:        'math-grade4-area-perimeter-help.html',
+      worksheet:   'math-grade4-area-perimeter-worksheet.html',
+      helpUr:      'math-grade4-area-perimeter-urdu-help.html',
+      worksheetUr: 'math-grade4-area-perimeter-urdu-worksheet.html'
     },
     'math-grade4-angles-lines': {
-      help:      'math-grade4-angles-lines-help.html',
-      worksheet: 'math-grade4-angles-lines-worksheet.html'
+      help:        'math-grade4-angles-lines-help.html',
+      worksheet:   'math-grade4-angles-lines-worksheet.html',
+      helpUr:      'math-grade4-angles-lines-urdu-help.html',
+      worksheetUr: 'math-grade4-angles-lines-urdu-worksheet.html'
     },
     'math-grade4-factors-multiples': {
-      help:      'math-grade4-factors-multiples-help.html',
-      worksheet: 'math-grade4-factors-multiples-worksheet.html'
+      help:        'math-grade4-factors-multiples-help.html',
+      worksheet:   'math-grade4-factors-multiples-worksheet.html',
+      helpUr:      'math-grade4-factors-multiples-urdu-help.html',
+      worksheetUr: 'math-grade4-factors-multiples-urdu-worksheet.html'
     },
     'math-grade5-fractions-add-subtract': {
-      help:      'math-grade5-fractions-add-subtract-help.html',
-      worksheet: 'math-grade5-fractions-add-subtract-worksheet.html'
+      help:        'math-grade5-fractions-add-subtract-help.html',
+      worksheet:   'math-grade5-fractions-add-subtract-worksheet.html',
+      helpUr:      'math-grade5-fractions-add-subtract-urdu-help.html',
+      worksheetUr: 'math-grade5-fractions-add-subtract-urdu-worksheet.html'
     },
     'math-grade5-fractions-multiply': {
-      help:      'math-grade5-fractions-multiply-help.html',
-      worksheet: 'math-grade5-fractions-multiply-worksheet.html'
+      help:        'math-grade5-fractions-multiply-help.html',
+      worksheet:   'math-grade5-fractions-multiply-worksheet.html',
+      helpUr:      'math-grade5-fractions-multiply-urdu-help.html',
+      worksheetUr: 'math-grade5-fractions-multiply-urdu-worksheet.html'
     },
     'math-grade5-decimals-operations': {
-      help:      'math-grade5-decimals-operations-help.html',
-      worksheet: 'math-grade5-decimals-operations-worksheet.html'
+      help:        'math-grade5-decimals-operations-help.html',
+      worksheet:   'math-grade5-decimals-operations-worksheet.html',
+      helpUr:      'math-grade5-decimals-operations-urdu-help.html',
+      worksheetUr: 'math-grade5-decimals-operations-urdu-worksheet.html'
     },
     'math-grade5-percentages-intro': {
-      help:      'math-grade5-percentages-intro-help.html',
-      worksheet: 'math-grade5-percentages-intro-worksheet.html'
+      help:        'math-grade5-percentages-intro-help.html',
+      worksheet:   'math-grade5-percentages-intro-worksheet.html',
+      helpUr:      'math-grade5-percentages-intro-urdu-help.html',
+      worksheetUr: 'math-grade5-percentages-intro-urdu-worksheet.html'
     },
     'math-grade5-volume-capacity': {
-      help:      'math-grade5-volume-capacity-help.html',
-      worksheet: 'math-grade5-volume-capacity-worksheet.html'
+      help:        'math-grade5-volume-capacity-help.html',
+      worksheet:   'math-grade5-volume-capacity-worksheet.html',
+      helpUr:      'math-grade5-volume-capacity-urdu-help.html',
+      worksheetUr: 'math-grade5-volume-capacity-urdu-worksheet.html'
     },
     'math-grade5-coordinate-planes': {
-      help:      'math-grade5-coordinate-planes-help.html',
-      worksheet: 'math-grade5-coordinate-planes-worksheet.html'
+      help:        'math-grade5-coordinate-planes-help.html',
+      worksheet:   'math-grade5-coordinate-planes-worksheet.html',
+      helpUr:      'math-grade5-coordinate-planes-urdu-help.html',
+      worksheetUr: 'math-grade5-coordinate-planes-urdu-worksheet.html'
     },
     'math-grade5-mean-median-mode': {
-      help:      'math-grade5-mean-median-mode-help.html',
-      worksheet: 'math-grade5-mean-median-mode-worksheet.html'
+      help:        'math-grade5-mean-median-mode-help.html',
+      worksheet:   'math-grade5-mean-median-mode-worksheet.html',
+      helpUr:      'math-grade5-mean-median-mode-urdu-help.html',
+      worksheetUr: 'math-grade5-mean-median-mode-urdu-worksheet.html'
     },
     'math-grade6-ratios-proportions': {
-      help:      'math-grade6-ratios-proportions-help.html',
-      worksheet: 'math-grade6-ratios-proportions-worksheet.html'
+      help:        'math-grade6-ratios-proportions-help.html',
+      worksheet:   'math-grade6-ratios-proportions-worksheet.html',
+      helpUr:      'math-grade6-ratios-proportions-urdu-help.html',
+      worksheetUr: 'math-grade6-ratios-proportions-urdu-worksheet.html'
     },
     'math-grade6-integers': {
-      help:      'math-grade6-integers-help.html',
-      worksheet: 'math-grade6-integers-worksheet.html'
+      help:        'math-grade6-integers-help.html',
+      worksheet:   'math-grade6-integers-worksheet.html',
+      helpUr:      'math-grade6-integers-urdu-help.html',
+      worksheetUr: 'math-grade6-integers-urdu-worksheet.html'
     },
     'math-grade6-order-of-operations': {
-      help:      'math-grade6-order-of-operations-help.html',
-      worksheet: 'math-grade6-order-of-operations-worksheet.html'
+      help:        'math-grade6-order-of-operations-help.html',
+      worksheet:   'math-grade6-order-of-operations-worksheet.html',
+      helpUr:      'math-grade6-order-of-operations-urdu-help.html',
+      worksheetUr: 'math-grade6-order-of-operations-urdu-worksheet.html'
     },
     'math-grade6-algebra-basics': {
-      help:      'math-grade6-algebra-basics-help.html',
-      worksheet: 'math-grade6-algebra-basics-worksheet.html'
+      help:        'math-grade6-algebra-basics-help.html',
+      worksheet:   'math-grade6-algebra-basics-worksheet.html',
+      helpUr:      'math-grade6-algebra-basics-urdu-help.html',
+      worksheetUr: 'math-grade6-algebra-basics-urdu-worksheet.html'
     },
     'math-grade6-percentage-calculations': {
-      help:      'math-grade6-percentage-calculations-help.html',
-      worksheet: 'math-grade6-percentage-calculations-worksheet.html'
+      help:        'math-grade6-percentage-calculations-help.html',
+      worksheet:   'math-grade6-percentage-calculations-worksheet.html',
+      helpUr:      'math-grade6-percentage-calculations-urdu-help.html',
+      worksheetUr: 'math-grade6-percentage-calculations-urdu-worksheet.html'
     },
     'math-grade6-area-triangles-quads': {
-      help:      'math-grade6-area-triangles-quads-help.html',
-      worksheet: 'math-grade6-area-triangles-quads-worksheet.html'
+      help:        'math-grade6-area-triangles-quads-help.html',
+      worksheet:   'math-grade6-area-triangles-quads-worksheet.html',
+      helpUr:      'math-grade6-area-triangles-quads-urdu-help.html',
+      worksheetUr: 'math-grade6-area-triangles-quads-urdu-worksheet.html'
     },
     'math-grade6-statistics-basics': {
-      help:      'math-grade6-statistics-basics-help.html',
-      worksheet: 'math-grade6-statistics-basics-worksheet.html'
+      help:        'math-grade6-statistics-basics-help.html',
+      worksheet:   'math-grade6-statistics-basics-worksheet.html',
+      helpUr:      'math-grade6-statistics-basics-urdu-help.html',
+      worksheetUr: 'math-grade6-statistics-basics-urdu-worksheet.html'
     },
     'math-grade7-linear-equations': {
-      help:      'math-grade7-linear-equations-help.html',
-      worksheet: 'math-grade7-linear-equations-worksheet.html'
+      help:        'math-grade7-linear-equations-help.html',
+      worksheet:   'math-grade7-linear-equations-worksheet.html',
+      helpUr:      'math-grade7-linear-equations-urdu-help.html',
+      worksheetUr: 'math-grade7-linear-equations-urdu-worksheet.html'
     },
     'math-grade7-rational-numbers': {
-      help:      'math-grade7-rational-numbers-help.html',
-      worksheet: 'math-grade7-rational-numbers-worksheet.html'
+      help:        'math-grade7-rational-numbers-help.html',
+      worksheet:   'math-grade7-rational-numbers-worksheet.html',
+      helpUr:      'math-grade7-rational-numbers-urdu-help.html',
+      worksheetUr: 'math-grade7-rational-numbers-urdu-worksheet.html'
     },
     'math-grade7-exponents-powers': {
-      help:      'math-grade7-exponents-powers-help.html',
-      worksheet: 'math-grade7-exponents-powers-worksheet.html'
+      help:        'math-grade7-exponents-powers-help.html',
+      worksheet:   'math-grade7-exponents-powers-worksheet.html',
+      helpUr:      'math-grade7-exponents-powers-urdu-help.html',
+      worksheetUr: 'math-grade7-exponents-powers-urdu-worksheet.html'
     },
     'math-grade7-geometry-triangles': {
-      help:      'math-grade7-geometry-triangles-help.html',
-      worksheet: 'math-grade7-geometry-triangles-worksheet.html'
+      help:        'math-grade7-geometry-triangles-help.html',
+      worksheet:   'math-grade7-geometry-triangles-worksheet.html',
+      helpUr:      'math-grade7-geometry-triangles-urdu-help.html',
+      worksheetUr: 'math-grade7-geometry-triangles-urdu-worksheet.html'
     },
     'math-grade7-symmetry-transformations': {
-      help:      'math-grade7-symmetry-transformations-help.html',
-      worksheet: 'math-grade7-symmetry-transformations-worksheet.html'
+      help:        'math-grade7-symmetry-transformations-help.html',
+      worksheet:   'math-grade7-symmetry-transformations-worksheet.html',
+      helpUr:      'math-grade7-symmetry-transformations-urdu-help.html',
+      worksheetUr: 'math-grade7-symmetry-transformations-urdu-worksheet.html'
     },
     'math-grade7-profit-loss': {
-      help:      'math-grade7-profit-loss-help.html',
-      worksheet: 'math-grade7-profit-loss-worksheet.html'
+      help:        'math-grade7-profit-loss-help.html',
+      worksheet:   'math-grade7-profit-loss-worksheet.html',
+      helpUr:      'math-grade7-profit-loss-urdu-help.html',
+      worksheetUr: 'math-grade7-profit-loss-urdu-worksheet.html'
     },
     'math-grade7-probability-basics': {
-      help:      'math-grade7-probability-basics-help.html',
-      worksheet: 'math-grade7-probability-basics-worksheet.html'
+      help:        'math-grade7-probability-basics-help.html',
+      worksheet:   'math-grade7-probability-basics-worksheet.html',
+      helpUr:      'math-grade7-probability-basics-urdu-help.html',
+      worksheetUr: 'math-grade7-probability-basics-urdu-worksheet.html'
     },
     'math-grade8-squares-cubes-roots': {
-      help:      'math-grade8-squares-cubes-roots-help.html',
-      worksheet: 'math-grade8-squares-cubes-roots-worksheet.html'
+      help:        'math-grade8-squares-cubes-roots-help.html',
+      worksheet:   'math-grade8-squares-cubes-roots-worksheet.html',
+      helpUr:      'math-grade8-squares-cubes-roots-urdu-help.html',
+      worksheetUr: 'math-grade8-squares-cubes-roots-urdu-worksheet.html'
     },
     'math-grade8-linear-equations-two-var': {
-      help:      'math-grade8-linear-equations-two-var-help.html',
-      worksheet: 'math-grade8-linear-equations-two-var-worksheet.html'
+      help:        'math-grade8-linear-equations-two-var-help.html',
+      worksheet:   'math-grade8-linear-equations-two-var-worksheet.html',
+      helpUr:      'math-grade8-linear-equations-two-var-urdu-help.html',
+      worksheetUr: 'math-grade8-linear-equations-two-var-urdu-worksheet.html'
     },
     'math-grade8-quadratic-expressions': {
-      help:      'math-grade8-quadratic-expressions-help.html',
-      worksheet: 'math-grade8-quadratic-expressions-worksheet.html'
+      help:        'math-grade8-quadratic-expressions-help.html',
+      worksheet:   'math-grade8-quadratic-expressions-worksheet.html',
+      helpUr:      'math-grade8-quadratic-expressions-urdu-help.html',
+      worksheetUr: 'math-grade8-quadratic-expressions-urdu-worksheet.html'
     },
     'math-grade8-coordinate-geometry': {
-      help:      'math-grade8-coordinate-geometry-help.html',
-      worksheet: 'math-grade8-coordinate-geometry-worksheet.html'
+      help:        'math-grade8-coordinate-geometry-help.html',
+      worksheet:   'math-grade8-coordinate-geometry-worksheet.html',
+      helpUr:      'math-grade8-coordinate-geometry-urdu-help.html',
+      worksheetUr: 'math-grade8-coordinate-geometry-urdu-worksheet.html'
     },
     'math-grade8-mensuration': {
-      help:      'math-grade8-mensuration-help.html',
-      worksheet: 'math-grade8-mensuration-worksheet.html'
+      help:        'math-grade8-mensuration-help.html',
+      worksheet:   'math-grade8-mensuration-worksheet.html',
+      helpUr:      'math-grade8-mensuration-urdu-help.html',
+      worksheetUr: 'math-grade8-mensuration-urdu-worksheet.html'
     },
     'math-grade8-exponents-laws': {
-      help:      'math-grade8-exponents-laws-help.html',
-      worksheet: 'math-grade8-exponents-laws-worksheet.html'
+      help:        'math-grade8-exponents-laws-help.html',
+      worksheet:   'math-grade8-exponents-laws-worksheet.html',
+      helpUr:      'math-grade8-exponents-laws-urdu-help.html',
+      worksheetUr: 'math-grade8-exponents-laws-urdu-worksheet.html'
     },
     'math-grade8-data-interpretation': {
-      help:      'math-grade8-data-interpretation-help.html',
-      worksheet: 'math-grade8-data-interpretation-worksheet.html'
+      help:        'math-grade8-data-interpretation-help.html',
+      worksheet:   'math-grade8-data-interpretation-worksheet.html',
+      helpUr:      'math-grade8-data-interpretation-urdu-help.html',
+      worksheetUr: 'math-grade8-data-interpretation-urdu-worksheet.html'
     },
     'math-grade9-real-numbers': {
-      help:      'math-grade9-real-numbers-help.html',
-      worksheet: 'math-grade9-real-numbers-worksheet.html'
+      help:        'math-grade9-real-numbers-help.html',
+      worksheet:   'math-grade9-real-numbers-worksheet.html',
+      helpUr:      'math-grade9-real-numbers-urdu-help.html',
+      worksheetUr: 'math-grade9-real-numbers-urdu-worksheet.html'
     },
     'math-grade9-polynomials': {
-      help:      'math-grade9-polynomials-help.html',
-      worksheet: 'math-grade9-polynomials-worksheet.html'
+      help:        'math-grade9-polynomials-help.html',
+      worksheet:   'math-grade9-polynomials-worksheet.html',
+      helpUr:      'math-grade9-polynomials-urdu-help.html',
+      worksheetUr: 'math-grade9-polynomials-urdu-worksheet.html'
     },
     'math-grade9-linear-eq-two-variables': {
-      help:      'math-grade9-linear-eq-two-variables-help.html',
-      worksheet: 'math-grade9-linear-eq-two-variables-worksheet.html'
+      help:        'math-grade9-linear-eq-two-variables-help.html',
+      worksheet:   'math-grade9-linear-eq-two-variables-worksheet.html',
+      helpUr:      'math-grade9-linear-eq-two-variables-urdu-help.html',
+      worksheetUr: 'math-grade9-linear-eq-two-variables-urdu-worksheet.html'
     },
     'math-grade9-trigonometry-intro': {
-      help:      'math-grade9-trigonometry-intro-help.html',
-      worksheet: 'math-grade9-trigonometry-intro-worksheet.html'
+      help:        'math-grade9-trigonometry-intro-help.html',
+      worksheet:   'math-grade9-trigonometry-intro-worksheet.html',
+      helpUr:      'math-grade9-trigonometry-intro-urdu-help.html',
+      worksheetUr: 'math-grade9-trigonometry-intro-urdu-worksheet.html'
     },
     'math-grade9-lines-angles': {
-      help:      'math-grade9-lines-angles-help.html',
-      worksheet: 'math-grade9-lines-angles-worksheet.html'
+      help:        'math-grade9-lines-angles-help.html',
+      worksheet:   'math-grade9-lines-angles-worksheet.html',
+      helpUr:      'math-grade9-lines-angles-urdu-help.html',
+      worksheetUr: 'math-grade9-lines-angles-urdu-worksheet.html'
     },
     'math-grade9-triangles-congruence': {
-      help:      'math-grade9-triangles-congruence-help.html',
-      worksheet: 'math-grade9-triangles-congruence-worksheet.html'
+      help:        'math-grade9-triangles-congruence-help.html',
+      worksheet:   'math-grade9-triangles-congruence-worksheet.html',
+      helpUr:      'math-grade9-triangles-congruence-urdu-help.html',
+      worksheetUr: 'math-grade9-triangles-congruence-urdu-worksheet.html'
     },
     'math-grade9-sets-functions': {
-      help:      'math-grade9-sets-functions-help.html',
-      worksheet: 'math-grade9-sets-functions-worksheet.html'
+      help:        'math-grade9-sets-functions-help.html',
+      worksheet:   'math-grade9-sets-functions-worksheet.html',
+      helpUr:      'math-grade9-sets-functions-urdu-help.html',
+      worksheetUr: 'math-grade9-sets-functions-urdu-worksheet.html'
     },
     'math-grade10-quadratic-equations': {
-      help:      'math-grade10-quadratic-equations-help.html',
-      worksheet: 'math-grade10-quadratic-equations-worksheet.html'
+      help:        'math-grade10-quadratic-equations-help.html',
+      worksheet:   'math-grade10-quadratic-equations-worksheet.html',
+      helpUr:      'math-grade10-quadratic-equations-urdu-help.html',
+      worksheetUr: 'math-grade10-quadratic-equations-urdu-worksheet.html'
     },
     'math-grade10-arithmetic-progressions': {
-      help:      'math-grade10-arithmetic-progressions-help.html',
-      worksheet: 'math-grade10-arithmetic-progressions-worksheet.html'
+      help:        'math-grade10-arithmetic-progressions-help.html',
+      worksheet:   'math-grade10-arithmetic-progressions-worksheet.html',
+      helpUr:      'math-grade10-arithmetic-progressions-urdu-help.html',
+      worksheetUr: 'math-grade10-arithmetic-progressions-urdu-worksheet.html'
     },
     'math-grade10-trigonometry-ratios': {
-      help:      'math-grade10-trigonometry-ratios-help.html',
-      worksheet: 'math-grade10-trigonometry-ratios-worksheet.html'
+      help:        'math-grade10-trigonometry-ratios-help.html',
+      worksheet:   'math-grade10-trigonometry-ratios-worksheet.html',
+      helpUr:      'math-grade10-trigonometry-ratios-urdu-help.html',
+      worksheetUr: 'math-grade10-trigonometry-ratios-urdu-worksheet.html'
     },
     'math-grade10-circles-tangents': {
-      help:      'math-grade10-circles-tangents-help.html',
-      worksheet: 'math-grade10-circles-tangents-worksheet.html'
+      help:        'math-grade10-circles-tangents-help.html',
+      worksheet:   'math-grade10-circles-tangents-worksheet.html',
+      helpUr:      'math-grade10-circles-tangents-urdu-help.html',
+      worksheetUr: 'math-grade10-circles-tangents-urdu-worksheet.html'
     },
     'math-grade10-geometric-constructions': {
-      help:      'math-grade10-geometric-constructions-help.html',
-      worksheet: 'math-grade10-geometric-constructions-worksheet.html'
+      help:        'math-grade10-geometric-constructions-help.html',
+      worksheet:   'math-grade10-geometric-constructions-worksheet.html',
+      helpUr:      'math-grade10-geometric-constructions-urdu-help.html',
+      worksheetUr: 'math-grade10-geometric-constructions-urdu-worksheet.html'
     },
     'math-grade10-statistics-advanced': {
-      help:      'math-grade10-statistics-advanced-help.html',
-      worksheet: 'math-grade10-statistics-advanced-worksheet.html'
+      help:        'math-grade10-statistics-advanced-help.html',
+      worksheet:   'math-grade10-statistics-advanced-worksheet.html',
+      helpUr:      'math-grade10-statistics-advanced-urdu-help.html',
+      worksheetUr: 'math-grade10-statistics-advanced-urdu-worksheet.html'
     },
     'math-grade10-probability-advanced': {
-      help:      'math-grade10-probability-advanced-help.html',
-      worksheet: 'math-grade10-probability-advanced-worksheet.html'
+      help:        'math-grade10-probability-advanced-help.html',
+      worksheet:   'math-grade10-probability-advanced-worksheet.html',
+      helpUr:      'math-grade10-probability-advanced-urdu-help.html',
+      worksheetUr: 'math-grade10-probability-advanced-urdu-worksheet.html'
     },
   };
 
@@ -1839,6 +1979,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       var helpHref      = isLive ? links.help      : '#coming-soon';
       var worksheetHref = isLive ? links.worksheet : '#coming-soon';
+      var helpUrHref    = isLive && links.helpUr ? links.helpUr : null;
+      var worksheetUrHref = isLive && links.worksheetUr ? links.worksheetUr : null;
       var csClass       = isLive ? '' : 'coming-soon';
       var tooltip       = 'Coming soon! Check back later 🚧';
 
@@ -1870,6 +2012,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             ' aria-label="' + (isLive ? 'Open worksheet for ' + topicName : topicName + ' worksheet — coming soon') + '">' +
             '📝 Worksheet' +
           '</a>' +
+          (helpUrHref ? '<a href="' + helpUrHref + '"' +
+            ' class="btn btn-guide"' +
+            ' style="--subject-color:' + hex + ';"' +
+            ' aria-label="Open Urdu guide for ' + topicName + '">' +
+            'اردو Guide' +
+          '</a>' : '') +
+          (worksheetUrHref ? '<a href="' + worksheetUrHref + '"' +
+            ' class="btn btn-worksheet"' +
+            ' style="--subject-color:' + hex + ';"' +
+            ' aria-label="Open Urdu worksheet for ' + topicName + '">' +
+            'اردو Worksheet' +
+          '</a>' : '') +
         '</div>';
 
       if (!isLive) {

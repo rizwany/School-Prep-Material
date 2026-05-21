@@ -1,0 +1,270 @@
+<!-- Math | Grade 2 | Shapes 2D & 3D | Urdu Help -->
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>دو-جہتی اور تین-جہتی اشکال — کلاس دوم ریاضی | LearnPad</title>
+  <meta name="description" content="کلاس دوم کے لیے 2D اور 3D اشکال — اطراف، کونے، پہلو، کنارے اور رؤس سیکھیں۔" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;500;600;700&family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{--clr-bg:#ffffff;--clr-dot:#E8EDF5;--clr-accent:#4361EE;--clr-accent-dark:#3451D1;--clr-navy:#1A1A3E;--clr-tint:#EEF0FF;--clr-green:#2DC653;--clr-green-bg:#F0FFF4;--clr-red:#E63946;--clr-red-bg:#FFF0F1;--clr-amber:#F4A261;--clr-amber-bg:#FFFBF5;--clr-text:#2D2D4E;--clr-muted:#6B7280;--font-ur:'Noto Nastaliq Urdu',serif;--font-display:'Nunito',sans-serif;--font-mono:'JetBrains Mono',monospace;--radius:12px;--shadow:0 2px 16px rgba(67,97,238,0.08);--shadow-hover:0 8px 28px rgba(67,97,238,0.18)}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:var(--font-ur);background-color:var(--clr-bg);background-image:radial-gradient(circle,var(--clr-dot) 1.5px,transparent 1.5px);background-size:20px 20px;color:var(--clr-text);line-height:2.2;min-height:100vh;font-size:1.1rem}
+    .page-wrap{max-width:860px;margin:0 auto;padding:24px 20px 60px}
+    .top-bar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:20px}
+    .breadcrumb{display:flex;align-items:center;gap:6px;font-size:0.82rem;color:var(--clr-muted);flex-wrap:wrap;flex-direction:row-reverse}
+    .breadcrumb a{color:var(--clr-accent);text-decoration:none;font-weight:600}
+    .lang-btn{display:inline-flex;align-items:center;gap:5px;font-size:0.82rem;font-weight:700;font-family:var(--font-display);color:var(--clr-accent);background:var(--clr-tint);padding:5px 14px;border-radius:50px;text-decoration:none;border:1.5px solid var(--clr-accent);transition:background 0.18s;white-space:nowrap}
+    .lang-btn:hover{background:#dde1ff}
+    .hero{margin-bottom:40px}.hero-badges{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;justify-content:flex-end}
+    .badge{font-size:0.78rem;font-weight:700;padding:4px 14px;border-radius:50px;font-family:var(--font-display)}
+    .badge-solid{background:var(--clr-accent);color:#fff}.badge-outline{border:2px solid var(--clr-accent);color:var(--clr-accent);background:transparent}
+    .hero h1{font-size:clamp(1.8rem,5vw,2.8rem);font-weight:700;color:var(--clr-navy);line-height:1.5;margin-bottom:12px;text-align:right}
+    .hero-intro{font-size:1.1rem;color:var(--clr-muted);max-width:620px;margin-bottom:18px;text-align:right;margin-left:auto}
+    .hero-meta{display:flex;align-items:center;gap:16px;flex-wrap:wrap;justify-content:flex-end}
+    .meta-pill{font-size:0.82rem;color:var(--clr-muted);font-weight:600;font-family:var(--font-display)}
+    .btn{display:inline-flex;align-items:center;gap:6px;font-family:var(--font-ur);font-weight:700;font-size:1rem;padding:10px 26px;border-radius:50px;text-decoration:none;cursor:pointer;border:none;transition:background 0.18s,color 0.18s,transform 0.18s,box-shadow 0.18s}
+    .btn-primary{background:var(--clr-accent);color:#fff}.btn-primary:hover{background:var(--clr-accent-dark);transform:translateY(-2px);box-shadow:0 6px 20px rgba(67,97,238,0.25)}
+    .btn-white{background:#fff;color:var(--clr-accent);font-weight:800}.btn-white:hover{background:#EEF0FF;transform:translateY(-2px)}
+    section{margin-bottom:48px}
+    .section-label{font-size:0.75rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--clr-accent);margin-bottom:10px;font-family:var(--font-display);text-align:right}
+    .section-title{font-size:1.45rem;font-weight:700;color:var(--clr-navy);margin-bottom:16px;text-align:right}
+    .card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);border-right:5px solid var(--clr-accent);border-left:none;padding:24px 28px;transition:transform 0.2s,box-shadow 0.2s;animation:fadeInUp 0.4s ease both;text-align:right}
+    .card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}.card+.card{margin-top:16px}.card p+p{margin-top:10px}
+    .example-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;margin-bottom:16px;border-right:5px solid var(--clr-accent);border-left:none;animation:fadeInUp 0.4s ease both;transition:transform 0.2s,box-shadow 0.2s}
+    .example-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+    .example-header{background:#F3F4F8;padding:10px 20px;font-weight:700;font-size:0.9rem;color:var(--clr-muted);text-align:right;font-family:var(--font-display)}
+    .example-body{padding:20px 24px;text-align:right}
+    .example-problem{font-size:1rem;font-weight:600;color:var(--clr-navy);margin-bottom:14px}
+    .example-working{border-right:3px solid var(--clr-tint);border-left:none;padding-right:14px;padding-left:0;margin-bottom:14px}
+    .working-line{font-size:0.95rem;color:var(--clr-text);margin-bottom:6px}
+    .answer-chip{display:inline-flex;align-items:center;gap:6px;background:var(--clr-green-bg);border:1.5px solid var(--clr-green);color:#1a7a3a;border-radius:50px;padding:6px 16px;font-weight:700;font-size:0.9rem}
+    .warning-box{background:var(--clr-amber-bg);border-right:5px solid var(--clr-amber);border-left:none;border-radius:var(--radius);padding:20px 24px;text-align:right}
+    .warning-box h3{font-size:1rem;font-weight:700;color:#8B4A00;margin-bottom:12px}
+    .warning-list{list-style:none}.warning-list li{margin-bottom:10px;font-size:0.95rem;line-height:1.9}
+    .warning-list .wrong{color:var(--clr-red);font-weight:700}.warning-list .right{color:var(--clr-green);font-weight:700}
+    .ref-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+    @media(max-width:560px){.ref-grid{grid-template-columns:1fr}}
+    .ref-item{background:#fff;border-radius:10px;padding:16px;box-shadow:0 1px 8px rgba(67,97,238,0.07);text-align:right}
+    .ref-term{font-weight:700;font-size:0.9rem;color:var(--clr-accent);margin-bottom:4px}
+    .ref-def{font-size:0.92rem;color:var(--clr-text)}
+    .shape-table{border-collapse:collapse;width:100%;margin:16px 0;font-size:0.88rem}
+    .shape-table th,.shape-table td{border:1.5px solid var(--clr-dot);padding:9px 12px;text-align:right}
+    .shape-table th{background:var(--clr-accent);color:#fff;font-weight:700;font-family:var(--font-ur)}
+    .shape-table td{background:#fff;color:var(--clr-navy);font-weight:600}
+    .shape-table tr:nth-child(even) td{background:var(--clr-tint)}
+    .footer-cta{background:linear-gradient(135deg,var(--clr-accent) 0%,#6C63FF 100%);border-radius:var(--radius);padding:36px 32px;text-align:center;color:#fff;margin-top:56px}
+    .footer-cta h2{font-size:1.5rem;font-weight:700;margin-bottom:8px}.footer-cta p{opacity:0.88;margin-bottom:22px;font-size:1.05rem}
+    .back-link{display:block;text-align:center;margin-top:18px;font-size:0.88rem;color:rgba(255,255,255,0.75);text-decoration:none}.back-link:hover{color:#fff}
+    hr{border:none;border-top:2px solid var(--clr-dot);margin:40px 0}
+    @keyframes fadeInUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+    @media(max-width:600px){.page-wrap{padding:16px 14px 48px}.example-body{padding:16px}.footer-cta{padding:28px 20px}}
+  </style>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="page-wrap">
+
+  <div class="top-bar">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <span>اشکال 2D اور 3D</span><span>›</span>
+      <a href="index.html#grade-2-math">کلاس دوم ریاضی</a><span>›</span>
+      <a href="index.html">🏠 گھر</a>
+    </nav>
+    <a href="math-grade2-shapes-2d-3d-help.html" class="lang-btn">🇬🇧 English</a>
+  </div>
+
+  <header class="hero">
+    <div class="hero-badges">
+      <span class="badge badge-solid">کلاس دوم</span>
+      <span class="badge badge-outline">ریاضی 🔷</span>
+    </div>
+    <h1>دو-جہتی اور تین-جہتی اشکال</h1>
+    <p class="hero-intro">اشکال ہر جگہ موجود ہیں! اس گائیڈ میں آپ چپٹی <strong>2D اشکال</strong> — ان کے اطراف اور کونے — اور ٹھوس <strong>3D اشکال</strong> — ان کے پہلو، کنارے اور رؤس سیکھیں گے۔ آپ انہیں اپنے ارد گرد کی حقیقی دنیا میں بھی پہچانیں گے۔</p>
+    <div class="hero-meta">
+      <span class="meta-pill">⏱ ~۶ منٹ مطالعہ</span>
+      <a href="math-grade2-shapes-2d-3d-urdu-worksheet.html" class="btn btn-primary">📝 مشق پر جائیں ←</a>
+    </div>
+  </header>
+
+  <section aria-labelledby="twod-heading">
+    <p class="section-label">حصہ ۱</p>
+    <h2 class="section-title" id="twod-heading">2D اشکال — چپٹی اشکال</h2>
+    <div class="card">
+      <p><strong>2D اشکال</strong> چپٹی ہوتی ہیں۔ ان میں صرف <em>لمبائی</em> اور <em>چوڑائی</em> ہوتی ہے — گہرائی نہیں۔ ہم انہیں ان کے <strong>اطراف</strong> اور <strong>کونوں</strong> (رؤس) گن کر بیان کرتے ہیں۔</p>
+    </div>
+    <div style="overflow-x:auto">
+      <table class="shape-table" aria-label="2D اشکال اور ان کی خصوصیات">
+        <thead>
+          <tr><th>شکل</th><th>علامت</th><th>اطراف</th><th>کونے</th><th>مثال</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>دائرہ (Circle)</td><td>⭕</td><td>0 (خمدار)</td><td>0</td><td>پیزا، پہیہ، سکہ</td></tr>
+          <tr><td>مثلث (Triangle)</td><td>🔺</td><td>3</td><td>3</td><td>گوشہ چھت، سڑک کا نشان</td></tr>
+          <tr><td>مربع (Square)</td><td>🟦</td><td>4 (برابر)</td><td>4</td><td>ٹائل، شطرنج کا خانہ</td></tr>
+          <tr><td>مستطیل (Rectangle)</td><td>▬</td><td>4</td><td>4</td><td>دروازہ، کتاب، ٹی وی</td></tr>
+          <tr><td>پنج ضلعی (Pentagon)</td><td>⬠</td><td>5</td><td>5</td><td>بعض سڑکی نشانات</td></tr>
+          <tr><td>شش ضلعی (Hexagon)</td><td>⬡</td><td>6</td><td>6</td><td>شہد کا خانہ</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card" style="margin-top:14px">
+      <p>💡 <strong>مربع بمقابلہ مستطیل:</strong> مربع ایک خاص مستطیل ہے جس کے چاروں اطراف برابر ہوتے ہیں۔ ہر مربع مستطیل ہے، لیکن ہر مستطیل مربع نہیں۔</p>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="threed-heading">
+    <p class="section-label">حصہ ۲</p>
+    <h2 class="section-title" id="threed-heading">3D اشکال — ٹھوس اشکال</h2>
+    <div class="card">
+      <p><strong>3D اشکال</strong> ٹھوس ہوتی ہیں — ان میں <em>لمبائی، چوڑائی اور اونچائی</em> ہوتی ہے۔ ہم انہیں اس طرح بیان کرتے ہیں:</p>
+      <p>• <strong>پہلو (Faces)</strong> — چپٹی یا خمدار سطحیں<br>
+         • <strong>کنارے (Edges)</strong> — جہاں دو پہلو ملتے ہیں (ایک لکیر)<br>
+         • <strong>رؤس (Vertices)</strong> — کونے جہاں کنارے ملتے ہیں (ایک نقطہ)</p>
+    </div>
+    <div style="overflow-x:auto;margin-top:16px">
+      <table class="shape-table" aria-label="3D اشکال اور ان کی خصوصیات">
+        <thead>
+          <tr><th>شکل</th><th>چپٹے پہلو</th><th>کنارے</th><th>رؤس</th><th>مثال</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>کرہ (Sphere) 🌐</td><td>0</td><td>0</td><td>0</td><td>گیند، سنترہ، گلوب</td></tr>
+          <tr><td>مکعب (Cube) 🎲</td><td>6 (مربع)</td><td>12</td><td>8</td><td>پانسہ، برف، بلاک</td></tr>
+          <tr><td>مستطیل مجسم (Cuboid) 📦</td><td>6 (مستطیل)</td><td>12</td><td>8</td><td>ڈبہ، جوتے کا ڈبہ</td></tr>
+          <tr><td>بیلن (Cylinder) 🥫</td><td>2 دائرے</td><td>2 خمدار</td><td>0</td><td>ٹین، گلاس، نل</td></tr>
+          <tr><td>مخروط (Cone) 🍦</td><td>1 دائرہ</td><td>1 خمدار</td><td>1 (نوک)</td><td>آئس کریم کون، ٹوپی</td></tr>
+          <tr><td>اہرام (Pyramid) 🔺</td><td>5 (1 مربع + 4 مثلث)</td><td>8</td><td>5</td><td>مصری اہرام، خیمہ</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="examples-heading">
+    <p class="section-label">حصہ ۳</p>
+    <h2 class="section-title" id="examples-heading">حل شدہ مثالیں</h2>
+
+    <div class="example-card">
+      <div class="example-header">مثال ۱ — اطراف سے 2D شکل پہچانیں</div>
+      <div class="example-body">
+        <div class="example-problem">ایک شکل میں 6 ضلع اور 6 کونے ہیں۔ اسے کیا کہتے ہیں؟</div>
+        <div class="example-working">
+          <div class="working-line">6 ضلع → شش ضلعی (hexagon) <span>2D جدول دیکھیں</span></div>
+        </div>
+        <span class="answer-chip">✅ شش ضلعی (Hexagon)</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">مثال ۲ — مکعب کے پہلو گنیں</div>
+      <div class="example-body">
+        <div class="example-problem">مکعب کے کتنے چپٹے پہلو ہوتے ہیں؟</div>
+        <div class="example-working">
+          <div class="working-line">اوپر، نیچے، آگے، پیچھے، بائیں، دائیں = 6 پہلو</div>
+        </div>
+        <span class="answer-chip">✅ 6 چپٹے پہلو</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">مثال ۳ — حقیقی دنیا کی شکل</div>
+      <div class="example-body">
+        <div class="example-problem">سوپ کا ٹین کون سی 3D شکل ہے؟</div>
+        <div class="example-working">
+          <div class="working-line">گول اوپر اور نیچے + خمدار پہلو = بیلن</div>
+        </div>
+        <span class="answer-chip">✅ بیلن (Cylinder)</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">مثال ۴ — مکعب کے کنارے</div>
+      <div class="example-body">
+        <div class="example-problem">مکعب میں کتنے کنارے ہوتے ہیں؟</div>
+        <div class="example-working">
+          <div class="working-line">اوپر کے 4 + نیچے کے 4 + ملانے والے 4 = 12 کنارے</div>
+        </div>
+        <span class="answer-chip">✅ 12 کنارے</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">مثال ۵ — 2D بمقابلہ 3D</div>
+      <div class="example-body">
+        <div class="example-problem">کیا دائرہ اور کرہ ایک چیز ہے؟</div>
+        <div class="example-working">
+          <div class="working-line">دائرہ = 2D چپٹی شکل (جیسے کاغذ پر بنی)</div>
+          <div class="working-line">کرہ = 3D ٹھوس شکل (جیسے گیند)</div>
+        </div>
+        <span class="answer-chip">✅ نہیں — دائرہ 2D ہے، کرہ 3D ہے</span>
+      </div>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="watchout-heading">
+    <p class="section-label">حصہ ۴</p>
+    <h2 class="section-title" id="watchout-heading">احتیاط کریں! ⚠️</h2>
+    <div class="warning-box">
+      <h3>عام غلطیاں جو بچنی چاہییں</h3>
+      <ul class="warning-list">
+        <li>
+          <span class="wrong">❌ 2D اور 3D ناموں میں گڑبڑ:</span> کرہ کو "دائرہ" کہنا<br>
+          <span class="right">✅ دائرہ = چپٹی شکل، کرہ = ٹھوس گیند۔ مربع 2D ہے؛ مکعب 3D ہے۔</span>
+        </li>
+        <li>
+          <span class="wrong">❌ مربع کو مستطیل نہ سمجھنا:</span> "یہ دونوں نہیں ہو سکتا"<br>
+          <span class="right">✅ مربع مستطیل ہی ہے — بس اس کے چاروں اطراف برابر ہوتے ہیں۔</span>
+        </li>
+        <li>
+          <span class="wrong">❌ خمدار کناروں کو سیدھا کنارا گننا:</span> بیلن کے 2 سیدھے کنارے کہنا<br>
+          <span class="right">✅ بیلن کے کنارے خمدار ہیں۔ اس کے 0 سیدھے اور 2 خمدار کنارے ہیں جہاں چپٹے دائرے خمدار سطح سے ملتے ہیں۔</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="ref-heading">
+    <p class="section-label">حصہ ۵</p>
+    <h2 class="section-title" id="ref-heading">فوری حوالہ</h2>
+    <div class="card" style="border-right:5px solid var(--clr-accent)">
+      <div class="ref-grid" style="margin-top:0">
+        <div class="ref-item"><div class="ref-term">2D اشکال</div><div class="ref-def">چپٹی۔ اطراف اور کونوں سے بیان ہوتی ہیں۔</div></div>
+        <div class="ref-item"><div class="ref-term">3D اشکال</div><div class="ref-def">ٹھوس۔ پہلو، کنارے اور رؤس سے بیان ہوتی ہیں۔</div></div>
+        <div class="ref-item"><div class="ref-term">مثلث</div><div class="ref-def">3 ضلع، 3 کونے</div></div>
+        <div class="ref-item"><div class="ref-term">مکعب</div><div class="ref-def">6 پہلو، 12 کنارے، 8 رؤس</div></div>
+        <div class="ref-item"><div class="ref-term">بیلن</div><div class="ref-def">2 چپٹے دائرے والے پہلو، 0 رؤس</div></div>
+        <div class="ref-item"><div class="ref-term">اہرام</div><div class="ref-def">5 پہلو، 8 کنارے، 5 رؤس</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer-cta">
+    <h2>مشق کرنے کے لیے تیار ہیں؟ چلیں! 🚀</h2>
+    <p>۱۰ سوالات کے ساتھ اپنی اشکال کی معلومات آزمائیں — آسان یا مشکل موڈ۔</p>
+    <a href="math-grade2-shapes-2d-3d-urdu-worksheet.html" class="btn btn-white">📝 مشق شروع کریں ←</a>
+    <a href="index.html#grade-2-math" class="back-link">← کلاس دوم کے ریاضی موضوعات پر واپس جائیں</a>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!-- Math | Grade 3 | Fractions Intro | Urdu Help -->
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>کسر کا تعارف — جماعت سوم ریاضی | LearnPad</title>
+  <meta name="description" content="جماعت سوم کے لیے کسر کا تعارف مرحلہ وار سیکھیں۔" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;500;600;700&family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{--clr-bg:#ffffff;--clr-dot:#E8EDF5;--clr-accent:#4361EE;--clr-accent-dark:#3451D1;--clr-navy:#1A1A3E;--clr-tint:#EEF0FF;--clr-green:#2DC653;--clr-green-bg:#F0FFF4;--clr-red:#E63946;--clr-red-bg:#FFF0F1;--clr-amber:#F4A261;--clr-amber-bg:#FFFBF5;--clr-text:#2D2D4E;--clr-muted:#6B7280;--font-ur:'Noto Nastaliq Urdu',serif;--font-display:'Nunito',sans-serif;--font-mono:'JetBrains Mono',monospace;--radius:12px;--shadow:0 2px 16px rgba(67,97,238,0.08);--shadow-hover:0 8px 28px rgba(67,97,238,0.18)}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:var(--font-ur);background-color:var(--clr-bg);background-image:radial-gradient(circle,var(--clr-dot) 1.5px,transparent 1.5px);background-size:20px 20px;color:var(--clr-text);line-height:2.2;min-height:100vh;font-size:1.1rem}
+    .page-wrap{max-width:860px;margin:0 auto;padding:24px 20px 60px}
+    .top-bar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:20px}
+    .breadcrumb{display:flex;align-items:center;gap:6px;font-size:0.82rem;color:var(--clr-muted);flex-wrap:wrap;flex-direction:row-reverse}
+    .breadcrumb a{color:var(--clr-accent);text-decoration:none;font-weight:600}.breadcrumb a:hover{text-decoration:underline}
+    .breadcrumb span{color:var(--clr-muted)}
+    .lang-btn{display:inline-flex;align-items:center;gap:5px;font-size:0.82rem;font-weight:700;font-family:var(--font-display);color:var(--clr-accent);background:var(--clr-tint);padding:5px 14px;border-radius:50px;text-decoration:none;border:1.5px solid var(--clr-accent);transition:background 0.18s;white-space:nowrap}
+    .lang-btn:hover{background:#dde1ff}
+    .hero{margin-bottom:40px}.hero-badges{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;justify-content:flex-end}
+    .badge{font-size:0.78rem;font-weight:700;padding:4px 14px;border-radius:50px;letter-spacing:0.03em;font-family:var(--font-display)}
+    .badge-solid{background:var(--clr-accent);color:#fff}.badge-outline{border:2px solid var(--clr-accent);color:var(--clr-accent);background:transparent}
+    .hero h1{font-size:clamp(1.8rem,5vw,2.8rem);font-weight:700;color:var(--clr-navy);line-height:1.5;margin-bottom:12px;text-align:right}
+    .hero-intro{font-size:1.1rem;color:var(--clr-muted);max-width:620px;margin-bottom:18px;text-align:right;margin-right:0;margin-left:auto}
+    .hero-meta{display:flex;align-items:center;gap:16px;flex-wrap:wrap;justify-content:flex-end}
+    .meta-pill{font-size:0.82rem;color:var(--clr-muted);font-weight:600;font-family:var(--font-display)}
+    .btn{display:inline-flex;align-items:center;gap:6px;font-family:var(--font-ur);font-weight:700;font-size:1rem;padding:10px 26px;border-radius:50px;text-decoration:none;cursor:pointer;border:none;transition:background 0.18s,color 0.18s,transform 0.18s,box-shadow 0.18s}
+    .btn-primary{background:var(--clr-accent);color:#fff}.btn-primary:hover{background:var(--clr-accent-dark);transform:translateY(-2px);box-shadow:0 6px 20px rgba(67,97,238,0.25)}
+    .btn-white{background:#fff;color:var(--clr-accent);font-weight:800}.btn-white:hover{background:#EEF0FF;transform:translateY(-2px)}
+    section{margin-bottom:48px}
+    .section-label{font-size:0.75rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--clr-accent);margin-bottom:10px;font-family:var(--font-display);text-align:right}
+    .section-title{font-size:1.45rem;font-weight:700;color:var(--clr-navy);margin-bottom:16px;text-align:right}
+    .card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);border-right:5px solid var(--clr-accent);border-left:none;padding:24px 28px;transition:transform 0.2s,box-shadow 0.2s;animation:fadeInUp 0.4s ease both;text-align:right}
+    .card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}.card+.card{margin-top:16px}.card p+p{margin-top:10px}
+    .card-tint{background:var(--clr-tint);border-right:5px solid var(--clr-accent);border-left:none;border-radius:var(--radius);padding:24px 28px;text-align:right}
+    .steps{list-style:none}.step-item{display:flex;gap:16px;align-items:flex-start;margin-bottom:16px;flex-direction:row-reverse}
+    .step-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;background:var(--clr-accent);color:#fff;font-weight:800;font-size:0.9rem;display:flex;align-items:center;justify-content:center;font-family:var(--font-display)}
+    .step-text{padding-top:4px;font-size:1rem;text-align:right}.step-text strong{color:var(--clr-navy)}
+    .example-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;margin-bottom:16px;border-right:5px solid var(--clr-accent);border-left:none;animation:fadeInUp 0.4s ease both;transition:transform 0.2s,box-shadow 0.2s}
+    .example-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+    .example-header{background:#F3F4F8;padding:10px 20px;font-weight:700;font-size:0.9rem;color:var(--clr-muted);text-align:right;font-family:var(--font-display)}
+    .example-body{padding:20px 24px;text-align:right}
+    .example-problem{font-size:1rem;font-weight:600;color:var(--clr-navy);margin-bottom:14px;text-align:right}
+    .example-working{border-right:3px solid var(--clr-tint);border-left:none;padding-right:14px;padding-left:0;margin-bottom:14px}
+    .working-line{font-family:var(--font-mono);font-size:0.9rem;color:var(--clr-text);margin-bottom:6px;direction:ltr;text-align:left}
+    .working-line span{color:var(--clr-muted);font-weight:400;margin-right:8px}
+    .answer-chip{display:inline-flex;align-items:center;gap:6px;background:var(--clr-green-bg);border:1.5px solid var(--clr-green);color:#1a7a3a;border-radius:50px;padding:6px 16px;font-weight:700;font-size:0.9rem}
+    .warning-box{background:var(--clr-amber-bg);border-right:5px solid var(--clr-amber);border-left:none;border-radius:var(--radius);padding:20px 24px;text-align:right}
+    .warning-box h3{font-size:1rem;font-weight:700;color:#8B4A00;margin-bottom:12px}
+    .warning-list{list-style:none}.warning-list li{margin-bottom:10px;font-size:0.95rem;line-height:1.9}
+    .warning-list .wrong{color:var(--clr-red);font-weight:700}.warning-list .right{color:var(--clr-green);font-weight:700}
+    .ref-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+    @media(max-width:560px){.ref-grid{grid-template-columns:1fr}}
+    .ref-item{background:#fff;border-radius:10px;padding:16px;box-shadow:0 1px 8px rgba(67,97,238,0.07);text-align:right}
+    .ref-term{font-weight:700;font-size:0.9rem;color:var(--clr-accent);margin-bottom:4px}
+    .ref-def{font-size:0.92rem;color:var(--clr-text)}
+    .footer-cta{background:linear-gradient(135deg,var(--clr-accent) 0%,#6C63FF 100%);border-radius:var(--radius);padding:36px 32px;text-align:center;color:#fff;margin-top:56px}
+    .footer-cta h2{font-size:1.5rem;font-weight:700;margin-bottom:8px}.footer-cta p{opacity:0.88;margin-bottom:22px;font-size:1.05rem}
+    .back-link{display:block;text-align:center;margin-top:18px;font-size:0.88rem;color:rgba(255,255,255,0.75);text-decoration:none}.back-link:hover{color:#fff}
+    hr{border:none;border-top:2px solid var(--clr-dot);margin:40px 0}
+    @keyframes fadeInUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+    @media(max-width:600px){.page-wrap{padding:16px 14px 48px}.example-body{padding:16px}.footer-cta{padding:28px 20px}}
+  </style>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="page-wrap">
+
+  <div class="top-bar">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <span>کسر کا تعارف</span><span>›</span>
+      <a href="index.html#grade-3-math">جماعت سوم ریاضی</a><span>›</span>
+      <a href="index.html">🏠 گھر</a>
+    </nav>
+    <a href="math-grade3-fractions-intro-help.html" class="lang-btn">🇬🇧 English</a>
+  </div>
+
+  <header class="hero">
+    <div class="hero-badges">
+      <span class="badge badge-solid">جماعت سوم</span>
+      <span class="badge badge-outline">ریاضی 🍕</span>
+    </div>
+    <h1>کسر کا تعارف</h1>
+    <p class="hero-intro">کسر کسی پوری چیز کے برابر حصوں کو ظاہر کرتی ہے۔ اس گائیڈ میں آپ صورت، مقام، کسر کی اقسام اور موازنہ سیکھیں گے۔</p>
+    <div class="hero-meta">
+      <span class="meta-pill">⏱ ~۵ منٹ مطالعہ</span>
+      <a href="math-grade3-fractions-intro-urdu-worksheet.html" class="btn btn-primary">📝 مشق پر جائیں ←</a>
+    </div>
+  </header>
+
+  <section aria-labelledby="what-heading">
+    <p class="section-label">حصہ ۱</p>
+    <h2 class="section-title" id="what-heading">کسر کیا ہے؟</h2>
+    <div class="card">
+      <p><strong>کسر</strong> کسی پوری چیز کے <strong>برابر حصوں</strong> کو ظاہر کرتی ہے۔ پیزہ کے 4 برابر ٹکڑوں میں سے 1 ٹکڑا = <strong>1/4</strong> (چوتھائی)۔</p>
+      <p>کسر کے دو حصے ہوتے ہیں: اوپر کے عدد کو <strong>صورت</strong> (numerator) اور نیچے کے عدد کو <strong>مقام</strong> (denominator) کہتے ہیں۔</p>
+      <p>مقام بتاتا ہے کل کتنے برابر حصے ہیں، اور صورت بتاتا ہے آپ کے پاس ان میں سے کتنے ہیں۔</p>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="method-heading">
+    <p class="section-label">حصہ ۲</p>
+    <h2 class="section-title" id="method-heading">کسر پڑھنے اور لکھنے کا طریقہ</h2>
+    <div class="card-tint">
+      <ol class="steps">
+        <li class="step-item"><div class="step-num">۱</div><div class="step-text"><strong>مقام دیکھیں۔</strong> مقام بتاتا ہے کہ چیز کو کتنے برابر حصوں میں بانٹا گیا ہے۔</div></li>
+        <li class="step-item"><div class="step-num">۲</div><div class="step-text"><strong>صورت دیکھیں۔</strong> صورت بتاتی ہے کہ ان حصوں میں سے کتنے حصے ہم لے رہے ہیں۔</div></li>
+        <li class="step-item"><div class="step-num">۳</div><div class="step-text"><strong>کسر لکھیں۔</strong> صورت/مقام کی صورت میں لکھیں: 3/8 یعنی 8 میں سے 3 حصے۔</div></li>
+        <li class="step-item"><div class="step-num">۴</div><div class="step-text"><strong>موازنہ کریں۔</strong> جب مقام ایک ہو تو بڑا صورت = بڑی کسر (1/2 > 1/4)۔ جب صورت ایک ہو تو چھوٹا مقام = بڑی کسر (1/2 > 1/4)۔</div></li>
+      </ol>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="examples-heading">
+    <p class="section-label">حصہ ۳</p>
+    <h2 class="section-title" id="examples-heading">حل شدہ مثالیں</h2>
+
+    <div class="example-card">
+      <div class="example-header">مثال ۱ — کسر پہچاننا: ½</div>
+      <div class="example-body">
+        <div class="example-problem">ایک روٹی کو 2 برابر حصوں میں بانٹیں اور 1 حصہ لیں۔ کسر کیا ہے؟</div>
+        <div class="example-working">
+          <div class="working-line">مقام = 2 <span>کل 2 برابر حصے</span></div>
+          <div class="working-line">صورت = 1 <span>1 حصہ لیا</span></div>
+          <div class="working-line">کسر = 1/2</div>
+        </div>
+        <span class="answer-chip">✅ جواب: ½ (آدھا)</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">مثال ۲ — کسر پڑھنا: 3/4</div>
+      <div class="example-body">
+        <div class="example-problem">3/4 کسر کا مطلب کیا ہے؟</div>
+        <div class="example-working">
+          <div class="working-line">مقام = 4 <span>چیز کو 4 برابر حصوں میں بانٹا</span></div>
+          <div class="working-line">صورت = 3 <span>3 حصے لیے</span></div>
+        </div>
+        <span class="answer-chip">✅ جواب: چار میں سے تین حصے</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">مثال ۳ — موازنہ: ½ بمقابلہ ¼</div>
+      <div class="example-body">
+        <div class="example-problem">½ اور ¼ میں سے کون بڑا ہے؟</div>
+        <div class="example-working">
+          <div class="working-line">صورت ایک ہے — مقام موازنہ کریں</div>
+          <div class="working-line">2 < 4 تو 1/2 > 1/4</div>
+        </div>
+        <span class="answer-chip">✅ جواب: ½ بڑا ہے</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">مثال ۴ — پوری کسر: 4/4</div>
+      <div class="example-body">
+        <div class="example-problem">4/4 کتنے کے برابر ہے؟</div>
+        <div class="example-working">
+          <div class="working-line">صورت = مقام <span>سارے حصے لیے</span></div>
+          <div class="working-line">4/4 = 1 پوری چیز</div>
+        </div>
+        <span class="answer-chip">✅ جواب: 1 (ایک پورا)</span>
+      </div>
+    </div>
+
+    <div class="example-card">
+      <div class="example-header">مثال ۵ — لفظی مسئلہ</div>
+      <div class="example-body">
+        <div class="example-problem">احمد نے پیزہ کو 8 برابر ٹکڑوں میں بانٹا اور 3 ٹکڑے کھائے۔ وہ پیزہ کا کون سا حصہ کھایا؟</div>
+        <div class="example-working">
+          <div class="working-line">مقام = 8, صورت = 3</div>
+          <div class="working-line">کسر = 3/8</div>
+        </div>
+        <span class="answer-chip">✅ جواب: 3/8</span>
+      </div>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="watchout-heading">
+    <p class="section-label">حصہ ۴</p>
+    <h2 class="section-title" id="watchout-heading">احتیاط کریں! ⚠️</h2>
+    <div class="warning-box">
+      <h3>عام غلطیاں جو بچنی چاہییں</h3>
+      <ul class="warning-list">
+        <li>
+          <span class="wrong">❌ صورت اور مقام الٹنا:</span> 1/4 کو 4/1 سمجھنا<br>
+          <span class="right">✅ یاد رکھیں: صورت اوپر، مقام نیچے — مقام کل حصے بتاتا ہے۔</span>
+        </li>
+        <li>
+          <span class="wrong">❌ حصے برابر نہ ہونا:</span> غیر مساوی حصوں کو کسر سمجھنا<br>
+          <span class="right">✅ کسر صرف اس وقت درست ہے جب سارے حصے برابر ہوں۔</span>
+        </li>
+        <li>
+          <span class="wrong">❌ موازنہ غلط کرنا:</span> 1/4 کو 1/2 سے بڑا سمجھنا<br>
+          <span class="right">✅ مقام جتنا بڑا، ہر حصہ اتنا چھوٹا: 1/4 < 1/2۔</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <hr />
+
+  <section aria-labelledby="ref-heading">
+    <p class="section-label">حصہ ۵</p>
+    <h2 class="section-title" id="ref-heading">فوری حوالہ</h2>
+    <div class="card-tint">
+      <div class="ref-grid" style="margin-top:0">
+        <div class="ref-item"><div class="ref-term">صورت</div><div class="ref-def">کسر کا اوپر والا عدد — آپ کے حصے۔</div></div>
+        <div class="ref-item"><div class="ref-term">مقام</div><div class="ref-def">کسر کا نیچے والا عدد — کل برابر حصے۔</div></div>
+        <div class="ref-item"><div class="ref-term">½ (آدھا)</div><div class="ref-def">2 حصوں میں سے 1۔</div></div>
+        <div class="ref-item"><div class="ref-term">¼ (چوتھائی)</div><div class="ref-def">4 حصوں میں سے 1۔</div></div>
+        <div class="ref-item"><div class="ref-term">⅓ (تہائی)</div><div class="ref-def">3 حصوں میں سے 1۔</div></div>
+        <div class="ref-item"><div class="ref-term">پوری کسر</div><div class="ref-def">صورت = مقام تو کسر = 1 پورا: 3/3 = 1۔</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer-cta">
+    <h2>مشق کرنے کے لیے تیار ہیں؟ چلیں! 🚀</h2>
+    <p>۱۰ سوالات کے ساتھ کسر کی مہارت آزمائیں — آسان یا مشکل موڈ۔</p>
+    <a href="math-grade3-fractions-intro-urdu-worksheet.html" class="btn btn-white">📝 مشق شروع کریں ←</a>
+    <a href="index.html#grade-3-math" class="back-link">← جماعت سوم کے ریاضی موضوعات پر واپس جائیں</a>
+  </div>
+
+</div>
+</body>
+</html>

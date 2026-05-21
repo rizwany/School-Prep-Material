@@ -1,0 +1,464 @@
+<!-- Math | Grade 2 | Telling Time | اردو ورک شیٹ -->
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>وقت بتانا ورک شیٹ — جماعت ۲ ریاضی | LearnPad</title>
+  <meta name="description" content="جماعت ۲ کے وقت بتانے کی انٹرایکٹو ورک شیٹ — ۱۰ سوالات" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;500;600;700&family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{--clr-bg:#ffffff;--clr-dot:#E8EDF5;--clr-accent:#4361EE;--clr-accent-dark:#3451D1;--clr-navy:#1A1A3E;--clr-tint:#EEF0FF;--clr-green:#2DC653;--clr-green-bg:#F0FFF4;--clr-red:#E63946;--clr-red-bg:#FFF0F1;--clr-amber:#F4A261;--clr-amber-bg:#FFFBF5;--clr-text:#2D2D4E;--clr-muted:#6B7280;--font-display:'Noto Nastaliq Urdu','Nunito',sans-serif;--font-mono:'JetBrains Mono',monospace;--radius:12px;--shadow:0 2px 16px rgba(67,97,238,0.08);--shadow-hover:0 8px 28px rgba(67,97,238,0.18)}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:var(--font-display);background-color:var(--clr-bg);background-image:radial-gradient(circle,var(--clr-dot) 1.5px,transparent 1.5px);background-size:20px 20px;color:var(--clr-text);min-height:100vh;line-height:2}
+    .page-wrap{max-width:860px;margin:0 auto;padding:24px 20px 60px}
+    .modal-overlay{position:fixed;inset:0;background:rgba(26,26,62,0.55);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;z-index:1000;padding:20px}
+    .modal-overlay.hidden{display:none}
+    .modal{background:#fff;border-radius:20px;padding:40px 36px;max-width:420px;width:100%;text-align:right;box-shadow:0 24px 64px rgba(67,97,238,0.22);animation:modalIn 0.35s cubic-bezier(0.34,1.56,0.64,1) both;direction:rtl}
+    @keyframes modalIn{from{opacity:0;transform:scale(0.85) translateY(20px)}to{opacity:1;transform:scale(1) translateY(0)}}
+    .modal-doodle{width:80px;height:80px;margin:0 auto 18px}
+    .modal h2{font-size:1.4rem;font-weight:900;color:var(--clr-navy);margin-bottom:8px}
+    .modal p{color:var(--clr-muted);margin-bottom:20px;font-size:0.95rem}
+    .modal input[type=text]{width:100%;border:2px solid var(--clr-dot);border-radius:10px;padding:12px 16px;font-family:var(--font-display);font-size:1rem;font-weight:700;color:var(--clr-navy);outline:none;margin-bottom:14px;transition:border-color 0.2s;text-align:right}
+    .modal input[type=text]:focus{border-color:var(--clr-accent)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;font-family:var(--font-display);font-weight:700;font-size:0.92rem;padding:10px 26px;border-radius:50px;cursor:pointer;border:none;text-decoration:none;transition:background 0.18s,color 0.18s,transform 0.18s,box-shadow 0.18s}
+    .btn-primary{background:var(--clr-accent);color:#fff}.btn-primary:hover:not(:disabled){background:var(--clr-accent-dark);transform:translateY(-2px);box-shadow:0 6px 20px rgba(67,97,238,0.3)}.btn-primary:disabled{opacity:0.5;cursor:not-allowed}
+    .btn-outline{background:transparent;color:var(--clr-accent);border:2px solid var(--clr-accent)}.btn-outline:hover{background:var(--clr-tint);transform:translateY(-2px)}
+    .btn-neutral{background:transparent;color:var(--clr-navy);border:2px solid #C4C9DC}.btn-neutral:hover{background:#F3F4F8;transform:translateY(-2px)}
+    .btn-full{width:100%;padding:14px 26px;font-size:1rem}.btn-lg{padding:13px 32px;font-size:1rem}
+    .lang-btn{display:inline-flex;align-items:center;gap:6px;font-size:0.82rem;font-weight:700;color:var(--clr-muted);text-decoration:none;padding:6px 14px;border:2px solid var(--clr-dot);border-radius:50px;transition:all 0.18s;font-family:'Nunito',sans-serif}
+    .lang-btn:hover{border-color:var(--clr-accent);color:var(--clr-accent);background:var(--clr-tint)}
+    .diff-pill{padding:8px 22px;border-radius:50px;font-weight:700;font-size:0.88rem;cursor:pointer;border:2px solid;transition:all 0.18s;background:transparent;font-family:var(--font-display)}
+    .diff-pill.easy{border-color:var(--clr-green);color:#1a7a3a}.diff-pill.easy.active{background:var(--clr-green);color:#fff}
+    .diff-pill.hard{border-color:var(--clr-red);color:#8B0010}.diff-pill.hard.active{background:var(--clr-red);color:#fff}
+    .btn-neutral.pulse-attention{animation:pulseGlow 1.2s ease-in-out infinite;border-color:var(--clr-accent);color:var(--clr-accent)}
+    @keyframes pulseGlow{0%,100%{box-shadow:0 0 0 0 rgba(67,97,238,0.3)}50%{box-shadow:0 0 0 8px rgba(67,97,238,0)}}
+    .breadcrumb{display:flex;align-items:center;gap:6px;font-size:0.82rem;color:var(--clr-muted);flex-wrap:wrap}
+    .breadcrumb a{color:var(--clr-accent);text-decoration:none;font-weight:600}.breadcrumb a:hover{text-decoration:underline}
+    .top-bar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+    .welcome-bar{background:var(--clr-tint);border-radius:var(--radius);padding:14px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:14px}
+    .welcome-name{font-size:1.15rem;font-weight:800;color:var(--clr-navy)}
+    .change-name-btn{font-size:0.8rem;color:var(--clr-accent);cursor:pointer;background:none;border:none;font-family:var(--font-display);font-weight:700;text-decoration:underline}
+    .stats-bar{display:flex;gap:20px;flex-wrap:wrap;padding:10px 0;margin-bottom:6px;border-bottom:2px solid var(--clr-dot)}
+    .stat-item{font-size:0.85rem;font-weight:700;color:var(--clr-muted)}.stat-item strong{color:var(--clr-navy)}
+    .controls{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:14px 0;margin-bottom:4px}
+    .controls-label{font-size:0.82rem;font-weight:700;color:var(--clr-muted)}
+    .controls-divider{width:1px;height:28px;background:var(--clr-dot);margin:0 6px}
+    hr.section-divider{border:none;border-top:2px solid var(--clr-dot);margin:6px 0 24px}
+    .score-banner{background:linear-gradient(135deg,#fff 0%,var(--clr-tint) 100%);border:2px solid var(--clr-accent);border-radius:var(--radius);padding:22px 26px;margin-bottom:24px;display:none;animation:slideDown 0.4s ease both}
+    .score-banner.visible{display:block}
+    @keyframes slideDown{from{opacity:0;transform:translateY(-16px)}to{opacity:1;transform:translateY(0)}}
+    .score-row{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-bottom:12px}
+    .score-num{font-family:var(--font-mono);font-size:2.2rem;font-weight:700;color:var(--clr-accent)}
+    .score-msg{font-size:0.97rem;color:var(--clr-navy);font-weight:700;flex:1}
+    .progress-track{height:12px;background:var(--clr-dot);border-radius:99px;overflow:hidden}
+    .progress-fill{height:100%;background:var(--clr-green);border-radius:99px;transition:width 0.6s ease}
+    .reveal-warning{background:var(--clr-amber-bg);border-right:5px solid var(--clr-amber);border-left:none;border-radius:var(--radius);padding:10px 16px;font-size:0.88rem;font-weight:700;color:#8B4A00;margin-top:12px;display:none}
+    .reveal-warning.visible{display:block}
+    .post-submit{display:none;gap:10px;flex-wrap:wrap;margin-top:12px}.post-submit.visible{display:flex}
+    .questions-list{list-style:none}
+    .q-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);border-right:5px solid var(--clr-accent);border-left:none;padding:18px 22px;margin-bottom:14px;transition:transform 0.2s,box-shadow 0.2s,border-color 0.25s;animation:fadeInUp 0.4s ease both}
+    .q-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+    .q-card.correct{border-right-color:var(--clr-green);background:var(--clr-green-bg);animation:pulseCorrect 0.5s ease}
+    .q-card.wrong{border-right-color:var(--clr-red);background:var(--clr-red-bg);animation:shakeWrong 0.45s ease}
+    @keyframes pulseCorrect{0%{box-shadow:0 0 0 0 rgba(45,198,83,0.4)}50%{box-shadow:0 0 0 10px rgba(45,198,83,0)}100%{box-shadow:var(--shadow)}}
+    @keyframes shakeWrong{0%,100%{transform:translateX(0)}20%{transform:translateX(-6px)}40%{transform:translateX(6px)}60%{transform:translateX(-4px)}80%{transform:translateX(4px)}}
+    @keyframes fadeInUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+    .q-meta{display:flex;align-items:center;justify-content:space-between;margin-bottom:9px}
+    .q-num{font-family:var(--font-mono);font-size:0.75rem;font-weight:700;color:var(--clr-accent);background:var(--clr-tint);padding:2px 10px;border-radius:50px}
+    .q-icon{font-size:1.1rem;display:none}
+    .q-card.correct .q-icon-correct,.q-card.wrong .q-icon-wrong{display:inline}
+    .q-text{font-size:1rem;font-weight:700;color:var(--clr-navy);margin-bottom:12px;line-height:2.2}
+    .mono{font-family:var(--font-mono);direction:ltr;display:inline-block}
+    .q-input{font-family:var(--font-mono);font-size:1.05rem;font-weight:600;color:var(--clr-navy);border:2px solid var(--clr-dot);border-radius:8px;padding:8px 13px;width:110px;outline:none;transition:border-color 0.2s;direction:ltr;text-align:center}
+    .q-input:focus{border-color:var(--clr-accent)}.q-input.error{border-color:var(--clr-red)}.q-input:disabled{opacity:0.65;cursor:not-allowed}
+    .q-select{font-family:var(--font-display);font-size:0.95rem;font-weight:700;color:var(--clr-navy);border:2px solid var(--clr-dot);border-radius:8px;padding:8px 13px;outline:none;cursor:pointer;transition:border-color 0.2s;background:#fff}
+    .q-select:focus{border-color:var(--clr-accent)}.q-select:disabled{opacity:0.65;cursor:not-allowed}
+    .radio-group{display:flex;gap:10px;flex-wrap:wrap}
+    .radio-label{display:flex;align-items:center;gap:6px;font-weight:700;font-size:0.93rem;cursor:pointer;padding:7px 15px;border:2px solid var(--clr-dot);border-radius:50px;transition:border-color 0.18s,background 0.18s}
+    .radio-label:has(input:checked){border-color:var(--clr-accent);background:var(--clr-tint)}
+    .radio-label input{accent-color:var(--clr-accent)}
+    .skip-tip{font-size:0.78rem;color:var(--clr-red);font-weight:700;margin-top:5px;display:none}.skip-tip.visible{display:block}
+    .answer-reveal-chip{margin-top:9px;display:none;font-size:0.84rem;font-weight:700;border-radius:8px;padding:7px 13px}
+    .answer-reveal-chip.visible{display:block}.answer-reveal-chip.was-correct{background:var(--clr-green-bg);border:1.5px solid var(--clr-green);color:#1a7a3a}
+    .answer-reveal-chip.was-wrong{background:var(--clr-red-bg);border:1.5px solid var(--clr-red);color:#8B0010}
+    .submit-area{margin:24px 0 18px;display:flex;flex-direction:column;gap:10px}
+    .toast{position:fixed;bottom:28px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--clr-navy);color:#fff;font-size:0.9rem;font-weight:700;padding:12px 26px;border-radius:50px;z-index:2000;transition:transform 0.35s cubic-bezier(0.34,1.56,0.64,1),opacity 0.3s;opacity:0;pointer-events:none}
+    .toast.show{transform:translateX(-50%) translateY(0);opacity:1}
+    .bottom-nav{text-align:center;margin-top:44px;padding-top:20px;border-top:2px solid var(--clr-dot)}
+    .bottom-nav a{font-size:0.88rem;color:var(--clr-accent);text-decoration:none;font-weight:700}.bottom-nav a:hover{text-decoration:underline}
+    @media(max-width:600px){.page-wrap{padding:16px 14px 48px}}
+    .cv-overlay{position:fixed;inset:0;background:#f4f6fb;z-index:600;display:flex;flex-direction:column;overflow:hidden}
+    .cv-overlay.hidden{display:none}
+    .cv-header{display:flex;align-items:center;justify-content:space-between;padding:10px 16px;background:#fff;border-bottom:2px solid #e2e6f0;flex-shrink:0;gap:12px}
+    .cv-exit{font-size:0.82rem;font-weight:800;color:#5a6076;background:none;border:2px solid #e2e6f0;cursor:pointer;font-family:'Nunito',sans-serif;padding:6px 14px;border-radius:8px;transition:all .15s;white-space:nowrap}
+    .cv-exit:hover{background:#e2e6f0;color:#1a1f36}
+    .cv-prog-text{font-size:0.9rem;font-weight:800;color:#1a1f36;text-align:center;flex:1;font-family:'Nunito',sans-serif}
+    .cv-score-chip{font-size:0.82rem;font-weight:700;color:#4361EE;background:#eef1fd;padding:4px 12px;border-radius:50px;white-space:nowrap;font-family:'Nunito',sans-serif}
+    .cv-progress-track{height:5px;background:#e2e6f0;flex-shrink:0}
+    .cv-progress-fill{height:100%;background:linear-gradient(90deg,#4361EE,#7B61FF);border-radius:0 99px 99px 0;transition:width .5s ease}
+    .cv-body{flex:1;display:flex;align-items:center;justify-content:center;padding:28px 20px;overflow-y:auto}
+    .cv-body.hidden{display:none}
+    .cv-card{background:#fff;border-radius:20px;box-shadow:0 8px 40px rgba(67,97,238,.13);padding:32px 28px;width:100%;max-width:520px;border:3px solid transparent;transition:border-color .25s,background .25s;direction:rtl}
+    .cv-card.cv-correct{border-color:#22c55e;background:#f0fdf4}
+    .cv-card.cv-wrong{border-color:#ef4444;background:#fef2f2}
+    .cv-slide-in{animation:cvSlideIn .32s cubic-bezier(.34,1.56,.64,1) both}
+    @keyframes cvSlideIn{from{opacity:0;transform:translateY(28px) scale(.95)}to{opacity:1;transform:translateY(0) scale(1)}}
+    .cv-q-label{font-size:.72rem;font-weight:800;color:#4361EE;text-transform:uppercase;letter-spacing:.07em;margin-bottom:14px;font-family:'Nunito',sans-serif}
+    .cv-question-text{font-size:1.1rem;font-weight:700;color:#1a1f36;line-height:2.2;margin-bottom:24px}
+    .cv-input{font-family:'JetBrains Mono',monospace;font-size:1.4rem;font-weight:700;color:#1a1f36;border:2.5px solid #e2e6f0;border-radius:12px;padding:12px 20px;width:160px;outline:none;transition:border-color .2s,box-shadow .2s;text-align:center;display:block;direction:ltr}
+    .cv-input:focus{border-color:#4361EE;box-shadow:0 0 0 4px rgba(67,97,238,.12)}
+    .cv-input.cv-shake{animation:cvShakeWrong .45s ease}
+    @keyframes cvShakeWrong{0%,100%{transform:translateX(0)}20%{transform:translateX(-6px)}40%{transform:translateX(6px)}60%{transform:translateX(-4px)}80%{transform:translateX(4px)}}
+    .cv-radio-group{display:flex;gap:12px;flex-wrap:wrap}
+    .cv-radio-label{display:flex;align-items:center;justify-content:center;gap:8px;font-weight:700;font-size:1rem;cursor:pointer;padding:13px 20px;border:2.5px solid #e2e6f0;border-radius:50px;transition:all .18s;flex:1;text-align:center;min-width:80px}
+    .cv-radio-label:has(input:checked){border-color:#4361EE;background:#eef1fd;color:#4361EE}
+    .cv-radio-label input{accent-color:#4361EE;display:none}
+    .cv-select{font-family:var(--font-display);font-size:1rem;font-weight:700;color:#1a1f36;border:2.5px solid #e2e6f0;border-radius:12px;padding:12px 16px;width:100%;outline:none;cursor:pointer;background:#fff;transition:border-color .2s}
+    .cv-select:focus{border-color:#4361EE}
+    .cv-feedback{font-size:.95rem;font-weight:700;border-radius:10px;padding:10px 14px;display:none;margin-top:16px}
+    .cv-feedback.show{display:block}
+    .cv-feedback.cv-fb-correct{background:#f0fdf4;color:#166534;border:1.5px solid #22c55e}
+    .cv-feedback.cv-fb-wrong{background:#fef2f2;color:#991b1b;border:1.5px solid #ef4444}
+    .cv-footer{flex-shrink:0;padding:16px 20px 28px;background:#fff;border-top:2px solid #e2e6f0}
+    .cv-footer.hidden{display:none}
+    .cv-ctas{display:flex;gap:12px;max-width:520px;margin:0 auto}
+    .cv-btn-skip{flex:1;padding:15px 10px;border-radius:14px;font-family:'Nunito',sans-serif;font-weight:800;font-size:1rem;border:2px solid #e2e6f0;cursor:pointer;background:#fff;color:#5a6076;transition:all .18s}
+    .cv-btn-skip:hover:not(:disabled){border-color:#1a1f36;color:#1a1f36;background:#f8f9fc}
+    .cv-btn-submit{flex:2;padding:15px 10px;border-radius:14px;font-family:'Nunito',sans-serif;font-weight:800;font-size:1rem;border:none;cursor:pointer;background:#4361EE;color:#fff;transition:all .18s}
+    .cv-btn-submit:hover:not(:disabled){background:#3451d1;transform:translateY(-2px);box-shadow:0 6px 18px rgba(67,97,238,.3)}
+    .cv-btn-skip:disabled,.cv-btn-submit:disabled{opacity:.45;cursor:not-allowed;transform:none;box-shadow:none}
+    .cv-result-body{text-align:center;width:100%;max-width:520px}
+    .cv-result-score-big{font-family:'JetBrains Mono',monospace;font-size:4rem;font-weight:700;color:#4361EE;line-height:1;margin-bottom:10px}
+    .cv-result-msg{font-size:1.05rem;font-weight:700;color:#1a1f36;margin-bottom:26px;line-height:1.8}
+    .cv-result-dots{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:30px}
+    .cv-result-dot{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.15rem}
+    .cv-result-dot.dot-correct{background:#f0fdf4}.cv-result-dot.dot-wrong{background:#fef2f2}.cv-result-dot.dot-skipped{background:#f0f1f5}
+    .cv-result-btns{display:flex;flex-direction:column;gap:12px;max-width:340px;margin:0 auto}
+    .cv-result-btns .btn-outline{background:transparent;color:#4361EE;border:2px solid #4361EE}
+    .cv-result-btns .btn-outline:hover{background:#eef1fd}
+    .cv-result-btns .btn-lg{padding:13px 32px;font-size:1rem}
+    @media(max-width:480px){.cv-card{padding:22px 16px}.cv-question-text{font-size:1rem}.cv-result-score-big{font-size:3rem}.cv-btn-skip,.cv-btn-submit{font-size:.93rem;padding:13px 8px}}
+  </style>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-expanded="true">
+  <div class="modal">
+    <div class="modal-doodle" aria-hidden="true">
+      <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="40" cy="40" r="32" fill="#EEF0FF" stroke="#4361EE" stroke-width="3"/>
+        <line x1="40" y1="40" x2="40" y2="16" stroke="#4361EE" stroke-width="3" stroke-linecap="round"/>
+        <line x1="40" y1="40" x2="58" y2="48" stroke="#2DC653" stroke-width="2.5" stroke-linecap="round"/>
+        <circle cx="40" cy="40" r="3" fill="#4361EE"/>
+        <text x="40" y="72" text-anchor="middle" font-family="JetBrains Mono" font-size="10" font-weight="700" fill="#4361EE">3:00</text>
+      </svg>
+    </div>
+    <h2 id="modalTitle">السلام علیکم، وقت کے ماہر!</h2>
+    <p>آپ کا نام کیا ہے؟ ہم آپ کے اسکور یاد رکھیں گے!</p>
+    <label for="usernameInput" style="display:none">آپ کا نام</label>
+    <input type="text" id="usernameInput" placeholder="اپنا نام لکھیں..." maxlength="32" autocomplete="off" />
+    <button class="btn btn-primary btn-full" id="modalStartBtn">شروع کریں! 🚀</button>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<div id="cvOverlay" class="cv-overlay hidden" role="dialog" aria-modal="true">
+  <div class="cv-header">
+    <button class="cv-exit" onclick="exitCompactView()">&#x2715; بند کریں</button>
+    <div class="cv-prog-text">سوال <span id="cvQNum">1</span> / 10</div>
+    <div class="cv-score-chip" id="cvScoreChip">0 &#x2713;</div>
+  </div>
+  <div class="cv-progress-track"><div class="cv-progress-fill" id="cvProgressFill" style="width:0%"></div></div>
+  <div class="cv-body" id="cvQuestionSection">
+    <div class="cv-card" id="cvCard">
+      <div class="cv-q-label" id="cvQLabel">سوال 1 / 10</div>
+      <div class="cv-question-text" id="cvQuestionText"></div>
+      <div id="cvInputArea"></div>
+      <div class="cv-feedback" id="cvFeedback"></div>
+    </div>
+  </div>
+  <div class="cv-body hidden" id="cvResultSection">
+    <div class="cv-result-body">
+      <div class="cv-result-score-big" id="cvResultScore">0/10</div>
+      <div class="cv-result-msg" id="cvResultMsg"></div>
+      <div class="cv-result-dots" id="cvResultDots"></div>
+      <div class="cv-result-btns">
+        <button class="btn btn-primary btn-lg" onclick="cvPlayAgain()">&#x1F504; دوبارہ کھیلیں</button>
+        <button class="btn btn-outline btn-lg" onclick="cvShareResults()" style="border-color:#6C63FF;color:#6C63FF">&#x1F4E4; نتائج شیئر کریں</button>
+        <button class="btn btn-outline btn-lg" onclick="exitCompactView()">&#x2715; مختصر منظر بند کریں</button>
+      </div>
+    </div>
+  </div>
+  <div class="cv-footer" id="cvFooter">
+    <div class="cv-ctas">
+      <button class="cv-btn-skip" id="cvSkipBtn" onclick="cvSkip()">&#x21AA; چھوڑیں</button>
+      <button class="cv-btn-submit" id="cvSubmitBtn" onclick="cvSubmit()">&#x2713; جمع کریں</button>
+    </div>
+  </div>
+</div>
+
+<div class="page-wrap">
+  <div class="top-bar">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">🏠 خانہ</a><span>‹</span>
+      <a href="index.html#grade-2-math">جماعت ۲ ریاضی</a><span>‹</span>
+      <a href="math-grade2-telling-time-urdu-help.html">وقت بتانا</a><span>‹</span>
+      <span>ورک شیٹ</span>
+    </nav>
+    <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+      <a href="math-grade2-telling-time-worksheet.html" class="lang-btn">🇬🇧 English</a>
+      <a href="math-grade2-telling-time-urdu-help.html" class="btn btn-outline" style="padding:7px 18px;font-size:0.82rem">📘 مدد گائیڈ</a>
+    </div>
+  </div>
+
+  <div class="welcome-bar">
+    <div class="welcome-name" id="welcomeName">خوش آمدید! 👋</div>
+    <button class="change-name-btn" id="changeNameBtn">✏️ نام بدلیں</button>
+  </div>
+
+  <div class="stats-bar" role="status" aria-live="polite">
+    <div class="stat-item">📋 مکمل ورک شیٹس: <strong id="statDone">0</strong></div>
+    <div class="stat-item">🏆 بہترین اسکور: <strong id="statBest">—</strong>/10</div>
+    <div class="stat-item">📈 آخری اسکور: <strong id="statLast">—</strong>/10</div>
+  </div>
+
+  <div class="controls" role="group">
+    <span class="controls-label">مشکل:</span>
+    <button class="diff-pill easy active" id="pillEasy" aria-pressed="true">🟢 آسان</button>
+    <button class="diff-pill hard" id="pillHard" aria-pressed="false">🔴 مشکل</button>
+    <div class="controls-divider" aria-hidden="true"></div>
+    <button class="btn btn-neutral" id="newWsBtn">🔄 نئی ورک شیٹ</button>
+    <div class="controls-divider" aria-hidden="true"></div>
+    <button class="btn btn-neutral" onclick="openCompactView()">&#x1F4F1; مختصر منظر</button>
+  </div>
+  <hr class="section-divider" />
+
+  <div class="score-banner" id="scoreBanner" aria-live="assertive" role="status">
+    <div class="score-row">
+      <div class="score-num" id="scoreNum">0/10</div>
+      <div class="score-msg" id="scoreMsg"></div>
+    </div>
+    <div class="progress-track"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+    <div class="reveal-warning" id="revealWarning">⚠️ جوابات ظاہر ہو گئے۔ دوبارہ کوشش کے لیے نئی ورک شیٹ شروع کریں۔</div>
+    <div class="post-submit" id="postSubmitBtns">
+      <button class="btn btn-outline btn-lg" id="showAnswersBtn">💡 جوابات دکھائیں</button>
+      <button class="btn btn-outline btn-lg" id="shareBtn" style="border-color:#6C63FF;color:#6C63FF">📤 نتائج شیئر کریں</button>
+    </div>
+  </div>
+
+  <ol class="questions-list" id="questionsList"></ol>
+
+  <div class="submit-area">
+    <button class="btn btn-primary btn-full" id="submitBtn">✅ ورک شیٹ جمع کریں</button>
+    <button class="btn btn-neutral btn-full" id="newWsBtnBottom">🔄 نئی ورک شیٹ</button>
+  </div>
+
+  <div class="bottom-nav">
+    <a href="index.html#grade-2-math">← جماعت ۲ کے ریاضی کے موضوعات پر واپس</a>
+  </div>
+</div>
+
+<script>
+(function(){
+  'use strict';
+  const STATS_KEY='ws_math_grade2_telling-time_stats';
+  const USERNAME_KEY='ws_username';
+  const TOPIC='وقت بتانا';
+  const GRADE=2;
+  let questions=[],difficulty='easy',submitted=false,answersRevealed=false,score=0;
+
+  function rand(a,b){return Math.floor(Math.random()*(b-a+1))+a}
+  function pick(a){return a[Math.floor(Math.random()*a.length)]}
+  function shuffle(a){const r=a.slice();for(let i=r.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[r[i],r[j]]=[r[j],r[i]]}return r}
+
+  function pad(n){return n<10?'0'+n:String(n)}
+  function fmtTime(h,m){return`${h}:${pad(m)}`}
+
+  function randomTime(easy){
+    const h=rand(1,12);
+    const minutes=easy?[0,30]:[0,15,30,45];
+    const m=pick(minutes);
+    return{h,m,str:fmtTime(h,m)};
+  }
+
+  function minuteHandPos(m){
+    if(m===0)return'سیدھا اوپر (12 کی طرف)';
+    if(m===15)return'دائیں طرف (3 کی طرف)';
+    if(m===30)return'سیدھا نیچے (6 کی طرف)';
+    if(m===45)return'بائیں طرف (9 کی طرف)';
+    return`${m} منٹ کے نشان پر`;
+  }
+
+  function makeReadClockQ(easy){
+    const{h,m,str}=randomTime(easy);
+    const desc=`گھنٹے کی سوئی <strong>${h}</strong> پر ہے۔ منٹ کی سوئی ${minuteHandPos(m)} ہے۔`;
+    const opts=shuffle([str,fmtTime(h===12?1:h+1,m),fmtTime(h===1?12:h-1,m),fmtTime(h,m===45?0:m+15)]);
+    return{type:'select',text:`${desc} گھڑی کیا وقت دکھا رہی ہے؟`,options:opts,answer:str};
+  }
+
+  function makeWriteTimeQ(easy){
+    const{h,m}=randomTime(easy);
+    const word=m===0?`${h} بجے`:m===30?`ساڑھے ${h}`:m===15?`${h} بج کر پندرہ منٹ`:`پون ${h===12?1:h+1} بجنے میں`;
+    return{type:'select',text:`"<strong>${word}</strong>" کون سا وقت ہے؟`,
+      options:shuffle([fmtTime(h,m),fmtTime(h===12?1:h+1,m),fmtTime(h,m===45?0:m+15),fmtTime(h===1?12:h-1,m)]),
+      answer:fmtTime(h,m)};
+  }
+
+  function makeHourHandQ(easy){
+    const{h,m}=randomTime(easy);
+    const opts=shuffle([String(h),String(h===12?1:h+1),String(h===1?12:h-1),String(h===11?1:h+2>12?1:h+2)]);
+    return{type:'select',text:`گھڑی <span class="mono">${fmtTime(h,m)}</span> دکھا رہی ہے۔ <strong>گھنٹے کی سوئی</strong> کس عدد پر ہے؟`,options:opts,answer:String(h)};
+  }
+
+  function makeMinuteHandQ(easy){
+    const{h,m}=randomTime(easy);
+    const opts=shuffle([String(m),String(m===45?0:m+15),String(m===0?45:m-15),String(m===30?0:30)]);
+    return{type:'select',text:`گھڑی <span class="mono">${fmtTime(h,m)}</span> دکھا رہی ہے۔ گھنٹے کے بعد کتنے منٹ ہوئے ہیں؟`,options:opts,answer:String(m)};
+  }
+
+  function makeTFTimeQ(easy){
+    const{h,m,str}=randomTime(easy);
+    const isTrue=Math.random()<0.5;
+    const desc=`گھنٹے کی سوئی ${h} پر ہے۔ منٹ کی سوئی ${minuteHandPos(m)} ہے۔`;
+    const shown=isTrue?str:fmtTime(h===12?1:h+1,m);
+    return{type:'radio',options:['درست','غلط'],text:`${desc}<br>درست یا غلط: دکھایا گیا وقت <span class="mono">${shown}</span> ہے۔`,answer:isTrue?'درست':'غلط'};
+  }
+
+  function makeHalfHourQ(easy){
+    const h=rand(1,12);
+    return{type:'select',
+      text:`ساڑھے <strong>${h}</strong>۔ یہ کون سا وقت ہے؟`,
+      options:shuffle([fmtTime(h,30),fmtTime(h,0),fmtTime(h===12?1:h+1,0),fmtTime(h,15)]),
+      answer:fmtTime(h,30)};
+  }
+
+  function makeOClockQ(easy){
+    const h=rand(1,12);
+    return{type:'select',
+      text:`<strong>${h} بجے</strong> (o'clock)۔ یہ کون سا وقت ہے؟`,
+      options:shuffle([fmtTime(h,0),fmtTime(h,30),fmtTime(h===12?1:h+1,0),fmtTime(h,15)]),
+      answer:fmtTime(h,0)};
+  }
+
+  function makeMinutesInHourQ(){
+    return{type:'number',text:'ایک گھنٹے میں کتنے منٹ ہوتے ہیں؟',answer:'60'};
+  }
+
+  function makeHoursInDayQ(){
+    return{type:'number',text:'ایک دن میں کتنے گھنٹے ہوتے ہیں؟',answer:'24'};
+  }
+
+  function makeQuarterPastQ(easy){
+    const h=rand(1,12);
+    if(easy){return makeHalfHourQ(easy);}
+    return{type:'select',
+      text:`<strong>${h} بج کر پندرہ منٹ</strong> (quarter past ${h})۔ یہ کون سا وقت ہے؟`,
+      options:shuffle([fmtTime(h,15),fmtTime(h,30),fmtTime(h,45),fmtTime(h===12?1:h+1,15)]),
+      answer:fmtTime(h,15)};
+  }
+
+  function makeQuarterToQ(easy){
+    const h=rand(1,12);
+    if(easy){return makeOClockQ(easy);}
+    const nextH=h===12?1:h+1;
+    return{type:'select',
+      text:`<strong>پون ${nextH} بجنے میں</strong> (quarter to ${nextH})۔ یہ کون سا وقت ہے؟`,
+      options:shuffle([fmtTime(h,45),fmtTime(h,30),fmtTime(nextH,0),fmtTime(h,15)]),
+      answer:fmtTime(h,45)};
+  }
+
+  function generateQuestions(easy){
+    const pool=[
+      ()=>makeReadClockQ(easy),()=>makeWriteTimeQ(easy),()=>makeHourHandQ(easy),
+      ()=>makeMinuteHandQ(easy),()=>makeTFTimeQ(easy),()=>makeHalfHourQ(easy),
+      ()=>makeOClockQ(easy),()=>makeMinutesInHourQ(),()=>makeQuarterPastQ(easy),()=>makeQuarterToQ(easy)
+    ];
+    return pool.map(f=>{const q=f();q.userAnswer=null;q.isCorrect=null;return q});
+  }
+
+  function renderQuestions(){
+    const list=document.getElementById('questionsList');list.innerHTML='';
+    questions.forEach((q,i)=>{
+      const li=document.createElement('li');li.className='q-card';li.id=`qcard-${i}`;li.style.animationDelay=`${i*55}ms`;
+      let inputHtml='';
+      if(q.type==='number'){inputHtml=`<input class="q-input" type="number" id="qinput-${i}" data-idx="${i}" min="0" max="999" autocomplete="off"/>`;}
+      else if(q.type==='radio'){inputHtml=`<div class="radio-group" role="radiogroup">${q.options.map(o=>`<label class="radio-label"><input type="radio" name="qradio-${i}" data-idx="${i}" value="${o}"/>${o}</label>`).join('')}</div>`;}
+      else if(q.type==='select'){inputHtml=`<select class="q-select" id="qinput-${i}" data-idx="${i}"><option value="" disabled selected>— منتخب کریں —</option>${q.options.map(o=>`<option value="${o}">${o}</option>`).join('')}</select>`;}
+      li.innerHTML=`<div class="q-meta"><span class="q-num">Q${i+1}</span><span><span class="q-icon q-icon-correct">✅</span><span class="q-icon q-icon-wrong">❌</span></span></div><div class="q-text">${q.text}</div><div>${inputHtml}<div class="skip-tip" id="skiptip-${i}">یہ سوال چھوڑیں مت! 😊</div><div class="answer-reveal-chip" id="revealchip-${i}"></div></div>`;
+      list.appendChild(li);
+    });
+  }
+
+  function getUserAnswer(q,i){if(q.type==='number')return document.getElementById(`qinput-${i}`).value.trim();if(q.type==='radio'){const c=document.querySelector(`input[name="qradio-${i}"]:checked`);return c?c.value:'';}if(q.type==='select')return document.getElementById(`qinput-${i}`).value;return'';}
+  function answersMatch(u,c){const us=u.trim().toLowerCase(),cs=c.trim().toLowerCase();if(us===cs)return true;const un=parseFloat(us),cn=parseFloat(cs);return!isNaN(un)&&!isNaN(cn)&&Math.abs(un-cn)<0.001;}
+
+  function submitWorksheet(){
+    if(submitted)return;let hasBlank=false;
+    questions.forEach((q,i)=>{const ua=getUserAnswer(q,i);const tip=document.getElementById(`skiptip-${i}`);if(!ua){hasBlank=true;tip.classList.add('visible');if(q.type==='number'){const inp=document.getElementById(`qinput-${i}`);inp.classList.add('error');inp.addEventListener('input',()=>{inp.classList.remove('error');tip.classList.remove('visible')},{once:true});}}else tip.classList.remove('visible');});
+    if(hasBlank)return;submitted=true;score=0;
+    questions.forEach((q,i)=>{const ua=getUserAnswer(q,i);q.userAnswer=ua;q.isCorrect=answersMatch(ua,q.answer);if(q.isCorrect)score++;document.getElementById(`qcard-${i}`).classList.add(q.isCorrect?'correct':'wrong');if(q.type==='number')document.getElementById(`qinput-${i}`).disabled=true;else if(q.type==='radio')document.querySelectorAll(`input[name="qradio-${i}"]`).forEach(r=>r.disabled=true);else if(q.type==='select')document.getElementById(`qinput-${i}`).disabled=true;});
+    const msgs={10:'🏆 مکمل اسکور! آپ وقت کے جادوگر ہیں!',9:'🔥 ۹/۱۰ — شاندار!',8:'😎 ۸/۱۰ — بہترین وقت!',7:'👏 ۷/۱۰ — بہت اچھا!',6:'👍 آدھے سے زیادہ درست! جاری رکھیں۔',5:'🤔 بالکل آدھے — آپ اور کر سکتے ہیں!'};
+    const msg=score in msgs?msgs[score]:score>=3?'😅 مشق جاری رکھیں! مدد گائیڈ دیکھیں۔ 💪':score>=1?'🐣 اچھی شروعات! گائیڈ مددگار ہوگا۔':'😲 کوئی بات نہیں! مدد گائیڈ کھولیں اور واپس آئیں۔ 📘';
+    document.getElementById('scoreNum').textContent=`${score}/10 🎉`;document.getElementById('scoreMsg').textContent=msg;
+    document.getElementById('progressFill').style.width=`${score*10}%`;
+    const banner=document.getElementById('scoreBanner');banner.classList.add('visible');banner.scrollIntoView({behavior:'smooth',block:'start'});
+    document.getElementById('postSubmitBtns').classList.add('visible');document.getElementById('submitBtn').disabled=true;updateStats(score);
+  }
+
+  function loadStats(){try{return JSON.parse(localStorage.getItem(STATS_KEY))||{done:0,best:0,last:null}}catch{return{done:0,best:0,last:null}}}
+  function saveStats(s){localStorage.setItem(STATS_KEY,JSON.stringify(s))}
+  function updateStats(ns){const s=loadStats();s.done++;s.last=ns;if(ns>s.best)s.best=ns;saveStats(s);renderStats()}
+  function renderStats(){const s=loadStats();document.getElementById('statDone').textContent=s.done;document.getElementById('statBest').textContent=s.best;document.getElementById('statLast').textContent=s.last!==null?s.last:'—'}
+
+  function showAnswers(){if(answersRevealed)return;answersRevealed=true;document.getElementById('showAnswersBtn').disabled=true;document.getElementById('revealWarning').classList.add('visible');document.getElementById('newWsBtn').classList.add('pulse-attention');document.getElementById('newWsBtnBottom').classList.add('pulse-attention');questions.forEach((q,i)=>{const chip=document.getElementById(`revealchip-${i}`);chip.classList.add('visible');if(q.isCorrect){chip.classList.add('was-correct');chip.textContent=`✅ آپ کا جواب درست تھا: ${q.answer}`;}else{chip.classList.add('was-wrong');chip.innerHTML=`❌ آپ کا جواب: <strong>${q.userAnswer||'(خالی)'}</strong> ← درست: <strong>${q.answer}</strong>`;}});}
+
+  function shareResults(){const name=localStorage.getItem(USERNAME_KEY)||'گمنام';const dl=difficulty==='easy'?'آسان':'مشکل';const emojis=questions.map(q=>q.isCorrect?'✅':'❌').join('');const text=`🕐 ریاضی ورک شیٹ — ${TOPIC} (جماعت ${GRADE})\n👤 ${name} نے ${score}/10 ${dl} موڈ میں اسکور کیا!\n${emojis}\n\nکیا آپ یہ مقابلہ جیت سکتے ہیں؟\n🔗 ${location.href}`;if(navigator.share)navigator.share({title:TOPIC,text,url:location.href}).catch(()=>{});else if(navigator.clipboard)navigator.clipboard.writeText(text).then(()=>showToast('نتائج کاپی ہوگئے! 📤'));else showToast('لنک کاپی کریں 🔗');}
+
+  function newWorksheet(){submitted=false;answersRevealed=false;score=0;questions=generateQuestions(difficulty==='easy');renderQuestions();document.getElementById('scoreBanner').classList.remove('visible');document.getElementById('postSubmitBtns').classList.remove('visible');document.getElementById('revealWarning').classList.remove('visible');document.getElementById('submitBtn').disabled=false;document.getElementById('showAnswersBtn').disabled=false;document.getElementById('newWsBtn').classList.remove('pulse-attention');document.getElementById('newWsBtnBottom').classList.remove('pulse-attention');window.scrollTo({top:0,behavior:'smooth'});showToast('✨ نئی ورک شیٹ تیار!');}
+
+  function showToast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3000)}
+  function initUsername(){const n=localStorage.getItem(USERNAME_KEY);if(n)hideModal(n);else{document.getElementById('modalOverlay').classList.remove('hidden');document.getElementById('usernameInput').focus()}}
+  function hideModal(n){document.getElementById('modalOverlay').classList.add('hidden');document.getElementById('modalOverlay').setAttribute('aria-expanded','false');document.getElementById('welcomeName').textContent=`خوش آمدید، ${n}! 👋`;localStorage.setItem(USERNAME_KEY,n)}
+
+  document.getElementById('modalStartBtn').addEventListener('click',()=>{const v=document.getElementById('usernameInput').value.trim();if(!v){document.getElementById('usernameInput').focus();return}hideModal(v)});
+  document.getElementById('usernameInput').addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('modalStartBtn').click()});
+  document.getElementById('changeNameBtn').addEventListener('click',()=>{localStorage.removeItem(USERNAME_KEY);document.getElementById('usernameInput').value='';document.getElementById('modalOverlay').classList.remove('hidden');document.getElementById('modalOverlay').setAttribute('aria-expanded','true');document.getElementById('usernameInput').focus()});
+  document.getElementById('pillEasy').addEventListener('click',()=>{if(difficulty==='easy')return;difficulty='easy';document.getElementById('pillEasy').classList.add('active');document.getElementById('pillEasy').setAttribute('aria-pressed','true');document.getElementById('pillHard').classList.remove('active');document.getElementById('pillHard').setAttribute('aria-pressed','false');newWorksheet()});
+  document.getElementById('pillHard').addEventListener('click',()=>{if(difficulty==='hard')return;difficulty='hard';document.getElementById('pillHard').classList.add('active');document.getElementById('pillHard').setAttribute('aria-pressed','true');document.getElementById('pillEasy').classList.remove('active');document.getElementById('pillEasy').setAttribute('aria-pressed','false');newWorksheet()});
+  document.getElementById('submitBtn').addEventListener('click',submitWorksheet);document.getElementById('showAnswersBtn').addEventListener('click',showAnswers);document.getElementById('shareBtn').addEventListener('click',shareResults);document.getElementById('newWsBtn').addEventListener('click',newWorksheet);document.getElementById('newWsBtnBottom').addEventListener('click',newWorksheet);
+
+  var cvQuestions=[],cvIdx=0,cvCorrect=0,cvAnswering=false,cvLog=[];
+  function cvAnswersMatch(u,c){var us=String(u).trim().toLowerCase(),cs=String(c).trim().toLowerCase();if(us===cs)return true;var un=parseFloat(us),cn=parseFloat(cs);if(!isNaN(un)&&!isNaN(cn))return Math.abs(un-cn)<0.02;return false;}
+  function openCompactView(){cvQuestions=generateQuestions(difficulty==='easy');cvIdx=0;cvCorrect=0;cvAnswering=false;cvLog=[];document.getElementById('cvOverlay').classList.remove('hidden');document.getElementById('cvQuestionSection').classList.remove('hidden');document.getElementById('cvResultSection').classList.add('hidden');document.getElementById('cvFooter').classList.remove('hidden');document.body.style.overflow='hidden';cvRenderQuestion();}
+  function exitCompactView(){document.getElementById('cvOverlay').classList.add('hidden');document.body.style.overflow='';}
+  function cvUpdateHeader(){document.getElementById('cvQNum').textContent=Math.min(cvIdx+1,10);document.getElementById('cvScoreChip').textContent=cvCorrect+' ✓';document.getElementById('cvProgressFill').style.width=(cvIdx/10*100)+'%';}
+  function cvRenderQuestion(){if(cvIdx>=10){cvShowResult();return;}var q=cvQuestions[cvIdx];cvAnswering=false;var card=document.getElementById('cvCard');card.className='cv-card';void card.offsetWidth;card.classList.add('cv-slide-in');document.getElementById('cvQLabel').textContent='سوال '+(cvIdx+1)+' / 10';document.getElementById('cvQuestionText').innerHTML=q.text;var fb=document.getElementById('cvFeedback');fb.className='cv-feedback';fb.textContent='';var area=document.getElementById('cvInputArea');var opts=q.opts||q.options||[];if(q.type==='number'){area.innerHTML='<input class="cv-input" type="number" id="cvNumInput" autocomplete="off" placeholder="?"/>';setTimeout(function(){var el=document.getElementById('cvNumInput');if(el)el.focus();},80);var inp=document.getElementById('cvNumInput');if(inp)inp.addEventListener('keydown',function(e){if(e.key==='Enter')cvSubmit();});}else if(q.type==='radio'){area.innerHTML='<div class="cv-radio-group" role="radiogroup">'+opts.map(function(o){return'<label class="cv-radio-label"><input type="radio" name="cvradio" value="'+o+'"/>'+o+'</label>';}).join('')+'</div>';}else if(q.type==='select'){area.innerHTML='<select class="cv-select" id="cvNumInput"><option value="" disabled selected>— منتخب کریں —</option>'+opts.map(function(o){return'<option value="'+o+'">'+o+'</option>';}).join('')+'</select>';}else{area.innerHTML='<input class="cv-input" type="number" id="cvNumInput" autocomplete="off" placeholder="?"/>';setTimeout(function(){var el=document.getElementById('cvNumInput');if(el)el.focus();},80);}document.getElementById('cvSubmitBtn').disabled=false;document.getElementById('cvSkipBtn').disabled=false;cvUpdateHeader();}
+  function cvGetAnswer(){var q=cvQuestions[cvIdx];if(q.type==='number'||q.type==='select'){var el=document.getElementById('cvNumInput');return el?el.value.trim():'';}var c=document.querySelector('input[name="cvradio"]:checked');return c?c.value:'';}
+  function cvSubmit(){if(cvAnswering)return;var ua=cvGetAnswer();if(!ua){var inp=document.getElementById('cvNumInput');var grp=document.querySelector('.cv-radio-group');var target=inp||grp;if(target){target.classList.add('cv-shake');setTimeout(function(){target.classList.remove('cv-shake');},500);}return;}cvAnswering=true;var q=cvQuestions[cvIdx];var ok=cvAnswersMatch(ua,q.answer);if(ok)cvCorrect++;cvLog.push({correct:ok,skipped:false});var card=document.getElementById('cvCard');card.classList.add(ok?'cv-correct':'cv-wrong');var fb=document.getElementById('cvFeedback');fb.className='cv-feedback show '+(ok?'cv-fb-correct':'cv-fb-wrong');fb.textContent=ok?'✅ درست!':'❌ درست جواب: '+q.answer;document.getElementById('cvSubmitBtn').disabled=true;document.getElementById('cvSkipBtn').disabled=true;cvUpdateHeader();setTimeout(function(){cvIdx++;cvRenderQuestion();},1400);}
+  function cvSkip(){if(cvAnswering)return;cvAnswering=true;cvLog.push({correct:false,skipped:true});cvIdx++;cvRenderQuestion();}
+  function cvShowResult(){document.getElementById('cvProgressFill').style.width='100%';document.getElementById('cvQuestionSection').classList.add('hidden');document.getElementById('cvFooter').classList.add('hidden');document.getElementById('cvResultScore').textContent=cvCorrect+'/10';var msgs=['😲 کوئی بات نہیں!','🐣 اچھی شروعات!','😅 مشق جاری رکھیں!','😅 مشق جاری رکھیں!','🤔 آگے بڑھ رہے ہیں!','🤔 آدھے درست!','👍 آدھے سے زیادہ درست!','👏 بہت اچھا!','😎 شاندار!','🔥 تقریباً مکمل!','🏆 مکمل اسکور!'];document.getElementById('cvResultMsg').textContent=msgs[cvCorrect]||'بہت اچھی کوشش!';document.getElementById('cvResultDots').innerHTML=cvLog.map(function(r,i){return'<div class="cv-result-dot '+(r.correct?'dot-correct':r.skipped?'dot-skipped':'dot-wrong')+'">'+(r.correct?'✅':r.skipped?'⭕':'❌')+'</div>';}).join('');document.getElementById('cvResultSection').classList.remove('hidden');updateStats(cvCorrect);renderStats();}
+  function cvPlayAgain(){document.getElementById('cvResultSection').classList.add('hidden');document.getElementById('cvQuestionSection').classList.remove('hidden');document.getElementById('cvFooter').classList.remove('hidden');cvQuestions=generateQuestions(difficulty==='easy');cvIdx=0;cvCorrect=0;cvAnswering=false;cvLog=[];cvRenderQuestion();}
+  function cvShareResults(){var name=localStorage.getItem(USERNAME_KEY)||'گمنام';var dl=difficulty==='easy'?'آسان':'مشکل';var emojis=cvLog.map(function(r){return r.correct?'✅':r.skipped?'⭕':'❌';}).join('');var text='🕐 '+TOPIC+' (جماعت '+GRADE+')\n👤 '+name+' نے '+cvCorrect+'/10 '+dl+' موڈ میں اسکور کیا!\n'+emojis+'\n\nکیا آپ یہ مقابلہ جیت سکتے ہیں؟\n🔗 '+location.href;if(navigator.share)navigator.share({title:TOPIC,text:text,url:location.href}).catch(function(){});else if(navigator.clipboard)navigator.clipboard.writeText(text).then(function(){showToast('کاپی ہوگیا! 📤');});else showToast('لنک کاپی کریں 🔗');}
+
+  window.openCompactView=openCompactView;window.exitCompactView=exitCompactView;
+  window.cvSubmit=cvSubmit;window.cvSkip=cvSkip;window.cvPlayAgain=cvPlayAgain;window.cvShareResults=cvShareResults;
+  initUsername();renderStats();questions=generateQuestions(true);renderQuestions();
+})();
+</script>
+</body>
+</html>
