@@ -1,4 +1,4 @@
-﻿<!-- Math | Grade 2 | Shapes (2D & 3D) | worksheet -->
+<!-- Math | Grade 2 | Shapes (2D & 3D) | worksheet -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -157,7 +157,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
   <!-- End Google Tag Manager -->
-</head>
+<style id="burger-menu-styles">
+/* ── Burger Menu ── */
+.burger-btn{display:none;flex-direction:column;justify-content:center;gap:5px;background:none;border:none;cursor:pointer;padding:8px;border-radius:8px;transition:background .15s;flex-shrink:0}
+.burger-btn:hover{background:#eef1fd}
+.burger-btn span{display:block;width:22px;height:2px;background:#1a1f36;border-radius:2px;transition:transform .25s ease,opacity .25s ease;pointer-events:none}
+.burger-btn.is-open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger-btn.is-open span:nth-child(2){opacity:0;transform:scaleX(0)}
+.burger-btn.is-open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media(max-width:640px){
+  .burger-btn{display:flex}
+  header{position:relative}
+  .header-inner nav,.header-inner>nav{display:none;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:#fff;border-bottom:2px solid #e2e6f0;padding:8px 20px 18px;z-index:99;gap:2px;box-shadow:0 6px 20px rgba(0,0,0,.1)}
+  .header-inner nav.nav-open,.header-inner>nav.nav-open{display:flex}
+  .header-inner nav a,.header-inner>nav a{padding:10px 14px;border-radius:8px;font-size:0.9rem;width:100%;margin-left:0}
+}
+</style></head>
 <body>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
@@ -221,7 +236,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div class="page-wrap">
   <div class="top-bar">
-    <nav class="breadcrumb" aria-label="Breadcrumb">
+    <nav id="siteNav" class="breadcrumb" aria-label="Breadcrumb">
       <a href="index.html">🏠 Home</a><span>›</span>
       <a href="index.html#grade-2-math">Grade 2 Math</a><span>›</span>
       <a href="math-grade2-shapes-2d-3d-help.html">Shapes (2D &amp; 3D)</a><span>›</span>
@@ -595,5 +610,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   initUsername();renderStats();questions=generateQuestions(true);renderQuestions();
 })();
 </script>
-</body>
+<script id="burger-menu-js">
+(function(){var b=document.getElementById('burgerBtn'),n=document.getElementById('siteNav');if(!b||!n)return;b.addEventListener('click',function(e){e.stopPropagation();var o=n.classList.toggle('nav-open');b.classList.toggle('is-open',o);b.setAttribute('aria-expanded',o?'true':'false');});document.addEventListener('click',function(e){if(n.classList.contains('nav-open')&&!e.target.closest('header')){n.classList.remove('nav-open');b.classList.remove('is-open');b.setAttribute('aria-expanded','false');}});})();
+</script></body>
 </html>

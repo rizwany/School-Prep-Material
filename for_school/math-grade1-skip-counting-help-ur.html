@@ -11,8 +11,45 @@
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}body{font-family:'Noto Nastaliq Urdu',serif;background:#fff;background-image:radial-gradient(circle,#E8EDF5 1.5px,transparent 1.5px);background-size:20px 20px;color:#2D2D4E;line-height:2.05;min-height:100vh}.page-wrap{max-width:860px;margin:0 auto;padding:24px 20px 60px}.breadcrumb,.hero-meta{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.breadcrumb{font-size:.82rem;color:#6B7280;margin-bottom:28px}.breadcrumb a,.lang-switch{color:#4361EE;text-decoration:none;font-weight:700}.hero{margin-bottom:38px}.hero-badges{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}.badge{font-family:'Nunito',sans-serif;font-size:.78rem;font-weight:800;padding:4px 14px;border-radius:50px}.badge-solid{background:#4361EE;color:#fff}.badge-outline{border:2px solid #4361EE;color:#4361EE;background:#fff}h1{font-size:clamp(2rem,5vw,3rem);font-weight:700;color:#1A1A3E;line-height:1.7;margin-bottom:10px}.hero-intro{font-size:1.05rem;color:#5f6677;max-width:680px;margin-bottom:18px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:'Noto Nastaliq Urdu',serif;font-weight:700;font-size:.92rem;padding:8px 22px;border-radius:999px;text-decoration:none;border:2px solid #4361EE}.btn-primary{background:#4361EE;color:#fff}.btn-outline{background:#fff;color:#4361EE}.card{background:#fff;border-radius:14px;box-shadow:0 2px 16px rgba(67,97,238,.08);border-right:5px solid #4361EE;padding:24px 28px;margin-bottom:18px}.section-label{font-family:'Nunito',sans-serif;font-weight:900;color:#4361EE;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px}.section-title{font-size:1.45rem;font-weight:700;color:#1A1A3E;margin-bottom:14px}ul{padding-right:24px}.example-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}.example-item{direction:ltr;text-align:center;font-family:'Nunito',sans-serif;font-weight:900;background:#EEF0FF;border:2px solid #DDE3FF;border-radius:12px;padding:16px;color:#1A1A3E}.footer-cta{background:linear-gradient(135deg,#4361EE,#6C63FF);border-radius:14px;padding:30px 24px;text-align:center;color:#fff;margin-top:42px}.footer-cta p{margin:8px 0 20px;opacity:.9}.footer-cta .btn{background:#fff;color:#4361EE;border-color:#fff}.meta-pill{font-size:.84rem;color:#6B7280;font-weight:700}@media(max-width:600px){.page-wrap{padding:16px 14px 48px}.card{padding:20px 18px}}
   </style>
-</head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+<style id="burger-menu-styles">
+#siteNav{display:flex;align-items:center;gap:4px;flex-wrap:wrap}
+.burger-btn{display:none;flex-direction:column;justify-content:center;gap:5px;background:none;border:none;cursor:pointer;padding:8px;border-radius:8px;flex-shrink:0}
+.burger-btn span{display:block;width:22px;height:2px;background:#1a1f36;border-radius:2px;transition:transform .25s ease,opacity .25s ease;pointer-events:none}
+.burger-btn.is-open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger-btn.is-open span:nth-child(2){opacity:0;transform:scaleX(0)}
+.burger-btn.is-open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media(max-width:640px){
+  .burger-btn{display:flex}
+  #siteNav{display:none!important;flex-direction:column;position:absolute;top:58px;left:0;right:0;background:#fff;border-bottom:2px solid #e2e6f0;padding:8px 20px 18px;z-index:199;gap:2px;box-shadow:0 6px 20px rgba(0,0,0,.1);align-items:stretch}
+  #siteNav.nav-open{display:flex!important}
+  #siteNav a{padding:10px 14px!important;border-radius:8px;font-size:0.9rem!important;width:100%;margin-left:0!important}
+}
+</style></head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header dir="ltr" style="background:#fff;border-bottom:2px solid #e2e6f0;padding:0 24px;position:sticky;top:0;z-index:200;font-family:'Nunito',sans-serif;">
+  <div style="max-width:860px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:58px;">
+    <a href="../index.html" style="text-decoration:none;display:flex;align-items:center;"><img src="../logo.png" alt="LearnPad" style="height:34px;width:auto;display:block;" /></a>
+    <nav id="siteNav" style="align-items:center;gap:4px;">
+      <a href="../index.html" style="font-weight:700;font-size:0.85rem;color:#5a6076;text-decoration:none;padding:6px 12px;border-radius:8px;">Home</a>
+      <a href="index.html" style="font-weight:700;font-size:0.85rem;color:#5a6076;text-decoration:none;padding:6px 12px;border-radius:8px;">Worksheets</a>
+      <a href="math-grade1-skip-counting-help.html" style="font-weight:700;font-size:0.85rem;color:#4361EE;background:#eef1fd;text-decoration:none;padding:6px 12px;border-radius:8px;">🇬🇧 English</a>
+      <a href="contact.html" style="font-weight:700;font-size:0.85rem;color:#5a6076;text-decoration:none;padding:6px 12px;border-radius:8px;">Contact</a>
+    </nav>
+    <button class="burger-btn" id="burgerBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="siteNav"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
 <div class="page-wrap">
   <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">ہوم</a><span>›</span><a href="index.html#grade-1-math">جماعت 1 ریاضی</a><span>›</span><span>چھوڑ کر گنتی</span><a class="lang-switch" href="math-grade1-skip-counting-help.html">English</a></nav>
   <header class="hero"><div class="hero-badges"><span class="badge badge-solid">جماعت 1</span><span class="badge badge-outline">ریاضی</span></div><h1>چھوڑ کر گنتی</h1><p class="hero-intro">اس سبق میں بچہ 2، 5، اور 10 کے وقفے سے تیز گنتی کرنا سیکھتا ہے۔</p><div class="hero-meta"><span class="meta-pill">تقریباً 5 منٹ کا سبق</span><a href="math-grade1-skip-counting-worksheet-ur.html" class="btn btn-primary">اردو ورک شیٹ شروع کریں</a></div></header>
@@ -25,5 +62,28 @@
   <section><p class="section-label">Section 3</p><h2 class="section-title">یاد رکھنے کا طریقہ</h2><div class="card"><p>سوال کو آرام سے پڑھیں، اہم نمبر یا شکل دیکھیں، پھر ایک قدم میں جواب نکالیں۔ اگر جواب مشکل لگے تو مثال دوبارہ دیکھیں۔</p></div></section>
   <div class="footer-cta"><h2>اب مشق کریں</h2><p>اسی موضوع کی اردو ورک شیٹ حل کریں اور اپنا جواب فوراً چیک کریں۔</p><a class="btn" href="math-grade1-skip-counting-worksheet-ur.html">ورک شیٹ کھولیں</a><br><a style="display:inline-block;margin-top:14px;color:#fff;text-decoration:none" href="index.html#grade-1-math">واپس Grade 1 Math پر جائیں</a></div>
 </div>
-</body>
+
+<footer dir="ltr" style="background:#1a1f36;color:rgba(255,255,255,.72);padding:40px 24px 20px;margin-top:40px;font-family:'Nunito',sans-serif;">
+  <div style="max-width:860px;margin:0 auto 20px;display:grid;grid-template-columns:1fr auto 1fr;gap:32px;align-items:start;">
+    <div>
+      <div style="font-weight:900;font-size:1.05rem;color:#fff;">LearnPad</div>
+      <div style="font-size:.78rem;color:rgba(255,255,255,.38);margin-top:3px;font-style:italic;">Learn it. Practice it. Own it.</div>
+    </div>
+    <div style="text-align:center;">
+      <div style="font-size:.66rem;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.36);margin-bottom:8px;">Quick Links</div>
+      <div style="display:flex;flex-wrap:wrap;gap:4px 8px;justify-content:center;">
+        <a href="../index.html" style="font-weight:700;font-size:.78rem;color:rgba(255,255,255,.52);text-decoration:none;">Home</a>
+        <span style="color:rgba(255,255,255,.2);">·</span>
+        <a href="index.html" style="font-weight:700;font-size:.78rem;color:rgba(255,255,255,.52);text-decoration:none;">Worksheets</a>
+        <span style="color:rgba(255,255,255,.2);">·</span>
+        <a href="contact.html" style="font-weight:700;font-size:.78rem;color:rgba(255,255,255,.52);text-decoration:none;">Contact Us</a>
+      </div>
+    </div>
+    <div style="text-align:right;font-size:.84rem;line-height:1.6;">Made with ❤️ for curious learners</div>
+  </div>
+  <div style="border-top:1px solid rgba(255,255,255,.08);max-width:860px;margin:0 auto;padding-top:14px;text-align:center;font-size:.72rem;color:rgba(255,255,255,.28);">© 2025 LearnPad · Free educational resources for every learner</div>
+</footer>
+<script id="burger-menu-js">
+(function(){var b=document.getElementById('burgerBtn'),n=document.getElementById('siteNav');if(!b||!n)return;b.addEventListener('click',function(e){e.stopPropagation();var o=n.classList.toggle('nav-open');b.classList.toggle('is-open',o);b.setAttribute('aria-expanded',o?'true':'false');});document.addEventListener('click',function(e){if(n.classList.contains('nav-open')&&!e.target.closest('header')){n.classList.remove('nav-open');b.classList.remove('is-open');b.setAttribute('aria-expanded','false');}});})();
+</script></body>
 </html>
