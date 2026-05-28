@@ -14,9 +14,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/lp-help-c.css">
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     :root {
       --ink: #1a1f36;
       --muted: #5a6076;
@@ -31,7 +30,6 @@
       --radius: 14px;
       --mono: 'JetBrains Mono', monospace;
     }
-
     body {
       font-family: 'Nunito', sans-serif;
       background-color: var(--bg);
@@ -40,7 +38,6 @@
       color: var(--ink);
       min-height: 100vh;
     }
-
     /* ── header ── */
     header {
       background: var(--card);
@@ -55,7 +52,6 @@
       justify-content: space-between;
       height: 64px;
     }
-    .logo-link { text-decoration: none; display: flex; align-items: center; } .logo-img { height: 30px; width: auto; display: block; }
     nav a {
       font-weight: 700;
       font-size: 0.85rem;
@@ -63,8 +59,6 @@
       text-decoration: none;
       margin-left: 20px;
     }
-    nav a:hover { color: var(--accent); }
-
     /* ── breadcrumb ── */
     .breadcrumb {
       max-width: 860px;
@@ -73,10 +67,7 @@
       font-size: 0.8rem;
       color: var(--muted);
     }
-    .breadcrumb a { color: var(--accent); text-decoration: none; font-weight: 600; }
     .breadcrumb a:hover { text-decoration: underline; }
-    .breadcrumb span { margin: 0 6px; }
-
     /* ── hero ── */
     .hero {
       max-width: 860px;
@@ -93,9 +84,6 @@
       flex-shrink: 0;
     }
     .hero-icon svg { width: 40px; height: 40px; }
-    .hero h1 { font-size: 1.9rem; font-weight: 900; line-height: 1.15; }
-    .hero p { font-size: 1rem; color: var(--muted); margin-top: 6px; font-weight: 600; }
-
     /* ── main layout ── */
     main {
       max-width: 860px;
@@ -105,7 +93,6 @@
       flex-direction: column;
       gap: 24px;
     }
-
     /* ── card ── */
     .card {
       background: var(--card);
@@ -123,9 +110,6 @@
       gap: 8px;
     }
     .card h2 .icon { font-size: 1.3rem; }
-    .card p { font-size: 0.95rem; line-height: 1.7; color: var(--ink); margin-bottom: 12px; }
-    .card p:last-child { margin-bottom: 0; }
-
     /* ── formula box ── */
     .formula-box {
       background: #eef1fd;
@@ -147,7 +131,6 @@
       color: var(--muted);
       margin-bottom: 6px;
     }
-
     /* ── two-column formulas ── */
     .formula-grid {
       display: grid;
@@ -156,7 +139,6 @@
       margin: 16px 0;
     }
     @media (max-width: 560px) { .formula-grid { grid-template-columns: 1fr; } }
-
     /* ── shape diagram ── */
     .shape-diagram {
       display: flex;
@@ -164,9 +146,7 @@
       margin: 20px 0;
     }
     .shape-diagram svg { max-width: 100%; }
-
     /* ── example cards ── */
-    .examples { display: flex; flex-direction: column; gap: 16px; }
     .example {
       border: 2px solid var(--border);
       border-radius: 12px;
@@ -183,7 +163,6 @@
       display: flex; align-items: center; justify-content: center;
       flex-shrink: 0;
     }
-    .example-header h3 { font-size: 1rem; font-weight: 800; }
     .ex-step {
       display: flex; align-items: flex-start; gap: 10px;
       margin-bottom: 8px; font-size: 0.9rem;
@@ -195,8 +174,6 @@
       display: flex; align-items: center; justify-content: center;
       flex-shrink: 0; margin-top: 2px;
     }
-    .ex-step p { line-height: 1.5; }
-    code { font-family: var(--mono); background: #eef1fd; border-radius: 5px; padding: 1px 6px; font-size: 0.88em; color: var(--accent-dark); }
     .answer-box {
       background: #e8faf4;
       border: 2px solid var(--green);
@@ -207,9 +184,7 @@
       font-size: 0.95rem;
       color: #05a07a;
     }
-
     /* ── watch out ── */
-    .watch-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
     .watch-list li {
       display: flex; align-items: flex-start; gap: 10px;
       font-size: 0.92rem; line-height: 1.55;
@@ -221,18 +196,14 @@
       font-weight: 800; font-size: 0.78rem;
       flex-shrink: 0; margin-top: 2px;
     }
-
     /* ── quick ref table ── */
-    .ref-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
     .ref-table th, .ref-table td {
       border: 2px solid var(--border);
       padding: 10px 14px;
       font-size: 0.88rem;
       text-align: left;
     }
-    .ref-table th { background: #eef1fd; font-weight: 800; color: var(--accent-dark); }
     .ref-table td code { display: inline-block; }
-
     /* ── CTA ── */
     .cta-bar {
       background: linear-gradient(135deg, #4361EE 0%, #3a0ca3 100%);
@@ -244,8 +215,6 @@
       gap: 20px;
       flex-wrap: wrap;
     }
-    .cta-bar h2 { color: #fff; font-size: 1.2rem; font-weight: 900; }
-    .cta-bar p { color: rgba(255,255,255,.8); font-size: 0.9rem; margin-top: 4px; font-weight: 600; }
     .cta-btn {
       background: #fff; color: var(--accent);
       border-radius: 10px; padding: 12px 24px;
@@ -253,8 +222,6 @@
       text-decoration: none; white-space: nowrap;
       transition: transform .15s;
     }
-    .cta-btn:hover { transform: scale(1.04); }
-
     /* ── footer ── */
     footer {
       text-align: center;
@@ -263,23 +230,7 @@
       color: var(--muted);
       font-weight: 600;
     }
-  </style>
-<style id="burger-menu-styles">
-/* ── Burger Menu ── */
-.burger-btn{display:none;flex-direction:column;justify-content:center;gap:5px;background:none;border:none;cursor:pointer;padding:8px;border-radius:8px;transition:background .15s;flex-shrink:0}
-.burger-btn:hover{background:#eef1fd}
-.burger-btn span{display:block;width:22px;height:2px;background:#1a1f36;border-radius:2px;transition:transform .25s ease,opacity .25s ease;pointer-events:none}
-.burger-btn.is-open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
-.burger-btn.is-open span:nth-child(2){opacity:0;transform:scaleX(0)}
-.burger-btn.is-open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-@media(max-width:640px){
-  .burger-btn{display:flex}
-  header{position:relative}
-  .header-inner nav,.header-inner>nav{display:none;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:#fff;border-bottom:2px solid #e2e6f0;padding:8px 20px 18px;z-index:99;gap:2px;box-shadow:0 6px 20px rgba(0,0,0,.1)}
-  .header-inner nav.nav-open,.header-inner>nav.nav-open{display:flex}
-  .header-inner nav a,.header-inner>nav a{padding:10px 14px;border-radius:8px;font-size:0.9rem;width:100%;margin-left:0}
-}
-</style></head>
+  </style></head>
 <body>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
@@ -518,8 +469,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 </main>
 
-<footer>© 2025 LearnBright · Free printable &amp; interactive school worksheets</footer>
-<script id="burger-menu-js">
-(function(){var b=document.getElementById('burgerBtn'),n=document.getElementById('siteNav');if(!b||!n)return;b.addEventListener('click',function(e){e.stopPropagation();var o=n.classList.toggle('nav-open');b.classList.toggle('is-open',o);b.setAttribute('aria-expanded',o?'true':'false');});document.addEventListener('click',function(e){if(n.classList.contains('nav-open')&&!e.target.closest('header')){n.classList.remove('nav-open');b.classList.remove('is-open');b.setAttribute('aria-expanded','false');}});})();
-</script></body>
+<div class="topic-prev-next">
+  <a href="math-grade4-decimals-intro-help.html">&#8592; Decimals Intro</a>
+  <a href="math-grade4-angles-lines-help.html">Angles &amp; Lines &#8594;</a>
+</div><footer>© 2025 LearnBright · Free printable &amp; interactive school worksheets</footer>
+<script src="assets/lp-burger.js"></script></body>
 </html>

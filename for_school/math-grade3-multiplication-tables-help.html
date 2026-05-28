@@ -1,4 +1,4 @@
-<!-- Math | Grade 3 | Multiplication Tables | help -->
+﻿<!-- Math | Grade 3 | Multiplication Tables | help -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/lp-help-a.css">
   <style>
     :root {
       --clr-bg: #ffffff;
@@ -31,9 +32,7 @@
       --shadow: 0 2px 16px rgba(67, 97, 238, 0.08);
       --shadow-hover: 0 8px 28px rgba(67, 97, 238, 0.18);
     }
-
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     body {
       font-family: var(--font-display);
       background-color: var(--clr-bg);
@@ -43,13 +42,11 @@
       line-height: 1.7;
       min-height: 100vh;
     }
-
     .page-wrap {
       max-width: 860px;
       margin: 0 auto;
       padding: 24px 20px 60px;
     }
-
     /* ── Breadcrumb ── */
     .breadcrumb {
       display: flex;
@@ -67,7 +64,6 @@
     }
     .breadcrumb a:hover { text-decoration: underline; }
     .breadcrumb span { color: var(--clr-muted); }
-
     /* ── Hero Header ── */
     .hero {
       margin-bottom: 40px;
@@ -87,7 +83,6 @@
     }
     .badge-solid { background: var(--clr-accent); color: #fff; }
     .badge-outline { border: 2px solid var(--clr-accent); color: var(--clr-accent); background: transparent; }
-
     .hero h1 {
       font-size: clamp(2rem, 5vw, 3rem);
       font-weight: 900;
@@ -147,7 +142,6 @@
       background: var(--clr-tint);
       transform: translateY(-2px);
     }
-
     /* ── Section ── */
     section { margin-bottom: 48px; }
     .section-label {
@@ -164,7 +158,6 @@
       color: var(--clr-navy);
       margin-bottom: 16px;
     }
-
     /* ── Card ── */
     .card {
       background: #fff;
@@ -180,7 +173,6 @@
       box-shadow: var(--shadow-hover);
     }
     .card + .card { margin-top: 16px; }
-
     .card-tint {
       background: var(--clr-tint);
       border-left: 5px solid var(--clr-accent);
@@ -188,9 +180,7 @@
       padding: 24px 28px;
       animation: fadeInUp 0.4s ease both;
     }
-
     .card p + p { margin-top: 10px; }
-
     /* ── Visual Aid — Multiplication Grid ── */
     .visual-wrap {
       margin: 24px 0;
@@ -237,7 +227,6 @@
       margin-top: 10px;
       font-style: italic;
     }
-
     /* ── Step-by-step ── */
     .steps { list-style: none; }
     .step-item {
@@ -261,7 +250,6 @@
     }
     .step-text { padding-top: 4px; font-size: 0.97rem; }
     .step-text strong { color: var(--clr-navy); }
-
     /* ── Formula Box ── */
     .formula-box {
       border: 2px solid var(--clr-accent);
@@ -282,7 +270,6 @@
       color: var(--clr-muted);
       margin-top: 4px;
     }
-
     /* ── Example Cards ── */
     .example-card {
       background: #fff;
@@ -339,7 +326,6 @@
       font-weight: 700;
       font-size: 0.9rem;
     }
-
     /* ── Warning Box ── */
     .warning-box {
       background: var(--clr-amber-bg);
@@ -362,7 +348,6 @@
     }
     .warning-list .wrong { color: var(--clr-red); font-weight: 700; }
     .warning-list .right { color: var(--clr-green); font-weight: 700; }
-
     /* ── Quick Reference ── */
     .ref-grid {
       display: grid;
@@ -384,7 +369,6 @@
       margin-bottom: 4px;
     }
     .ref-def { font-size: 0.88rem; color: var(--clr-text); }
-
     /* ── Mini Times Table (Reference) ── */
     .mini-table-wrap {
       overflow-x: auto;
@@ -410,7 +394,6 @@
       font-weight: 600;
     }
     .mini-table tr:nth-child(even) td { background: #F8F9FF; }
-
     /* ── Footer CTA ── */
     .footer-cta {
       background: linear-gradient(135deg, var(--clr-accent) 0%, #6C63FF 100%);
@@ -444,16 +427,13 @@
       text-decoration: none;
     }
     .back-link:hover { color: #fff; }
-
     /* ── Divider ── */
     hr { border: none; border-top: 2px solid var(--clr-dot); margin: 40px 0; }
-
     /* ── Animations ── */
     @keyframes fadeInUp {
       from { opacity: 0; transform: translateY(18px); }
       to   { opacity: 1; transform: translateY(0); }
     }
-
     /* Stagger cards */
     .card:nth-child(1) { animation-delay: 0ms; }
     .card:nth-child(2) { animation-delay: 80ms; }
@@ -463,7 +443,6 @@
     .example-card:nth-child(2) { animation-delay: 80ms; }
     .example-card:nth-child(3) { animation-delay: 160ms; }
     .example-card:nth-child(4) { animation-delay: 240ms; }
-
     /* ── Responsive ── */
     @media (max-width: 600px) {
       .page-wrap { padding: 16px 14px 48px; }
@@ -477,32 +456,29 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
-  <!-- End Google Tag Manager -->
-<style id="burger-menu-styles">
-/* ── Burger Menu ── */
-.burger-btn{display:none;flex-direction:column;justify-content:center;gap:5px;background:none;border:none;cursor:pointer;padding:8px;border-radius:8px;transition:background .15s;flex-shrink:0}
-.burger-btn:hover{background:#eef1fd}
-.burger-btn span{display:block;width:22px;height:2px;background:#1a1f36;border-radius:2px;transition:transform .25s ease,opacity .25s ease;pointer-events:none}
-.burger-btn.is-open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
-.burger-btn.is-open span:nth-child(2){opacity:0;transform:scaleX(0)}
-.burger-btn.is-open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-@media(max-width:640px){
-  .burger-btn{display:flex}
-  header{position:relative}
-  .header-inner nav,.header-inner>nav{display:none;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:#fff;border-bottom:2px solid #e2e6f0;padding:8px 20px 18px;z-index:99;gap:2px;box-shadow:0 6px 20px rgba(0,0,0,.1)}
-  .header-inner nav.nav-open,.header-inner>nav.nav-open{display:flex}
-  .header-inner nav a,.header-inner>nav a{padding:10px 14px;border-radius:8px;font-size:0.9rem;width:100%;margin-left:0}
-}
-</style></head>
+  <!-- End Google Tag Manager --></head>
 <body>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<div class="page-wrap">
+<header class="site-header">
+  <div class="header-inner">
+    <a href="../index.html" class="logo-link"><img src="../logo.png" alt="LearnPad" class="logo-img" /></a>
+    <nav id="siteNav">
+      <a href="../index.html">Home</a>
+      <a href="index.html">Worksheets</a>
+      <a href="../learnings/">Tech in Urdu</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="burger-btn" id="burgerBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="siteNav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header><div class="page-wrap">
 
   <!-- Breadcrumb -->
-  <nav id="siteNav" class="breadcrumb" aria-label="Breadcrumb">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
     <a href="index.html">🏠 Home</a>
     <span>›</span>
     <a href="index.html#grade-3-math">Grade 3 Math</a>
@@ -767,7 +743,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a href="index.html#grade-3-math" class="back-link">← Back to Grade 3 Math topics</a>
   </div>
 
-</div><!-- /page-wrap -->
+<div class="topic-prev-next">
+  <a href="math-grade2-shapes-2d-3d-help.html">&#8592; Shapes (2D &amp; 3D)</a>
+  <a href="math-grade3-division-basics-help.html">Division Basics &#8594;</a>
+</div></div><!-- /page-wrap -->
 
 <script>
   /* Build multiplication grid */
@@ -809,7 +788,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     }
   })();
 </script>
-<script id="burger-menu-js">
-(function(){var b=document.getElementById('burgerBtn'),n=document.getElementById('siteNav');if(!b||!n)return;b.addEventListener('click',function(e){e.stopPropagation();var o=n.classList.toggle('nav-open');b.classList.toggle('is-open',o);b.setAttribute('aria-expanded',o?'true':'false');});document.addEventListener('click',function(e){if(n.classList.contains('nav-open')&&!e.target.closest('header')){n.classList.remove('nav-open');b.classList.remove('is-open');b.setAttribute('aria-expanded','false');}});})();
-</script></body>
+<script src="assets/lp-burger.js"></script></body>
 </html>

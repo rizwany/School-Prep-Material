@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ur">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>کلود کیا ہے؟</title>
+<style>
+    /* ── Reset & base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', 'Urdu Typesetting', serif;
+      background: #f5f4ef;
+      color: #1a1a1a;
+      line-height: 2;
+      direction: rtl;
+    }
+
+    /* ── Top navigation ── */
+    .topbar {
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2rem;
+      height: 56px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .topbar .brand {
+      font-size: 1.3rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+      font-family: sans-serif;
+      color: #c4541a;
+    }
+    .topbar nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #444;
+      font-size: 0.9rem;
+      font-family: sans-serif;
+    }
+    .topbar nav a:hover { color: #c4541a; }
+
+    /* ── Layout ── */
+    .wrapper {
+      display: flex;
+      min-height: calc(100vh - 56px);
+    }
+
+    /* ── Sidebar ── */
+    .sidebar {
+      width: 300px;
+      min-width: 260px;
+      background: #edecea;
+      border-left: 1px solid #ddd;
+      padding: 1.5rem 1rem;
+      position: sticky;
+      top: 56px;
+      height: calc(100vh - 56px);
+      overflow-y: auto;
+    }
+    .sidebar .course-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+    .sidebar .course-overview {
+      font-size: 0.85rem;
+      color: #c4541a;
+      margin-bottom: 1.2rem;
+      cursor: pointer;
+    }
+    .sidebar .section-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #666;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin: 1rem 0 0.4rem;
+      font-family: sans-serif;
+    }
+    .sidebar ul { list-style: none; }
+    .sidebar ul li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      padding: 0.35rem 0;
+      font-size: 0.9rem;
+      color: #333;
+      cursor: pointer;
+    }
+    .sidebar ul li:hover { color: #c4541a; }
+    .sidebar ul li .icon {
+      margin-top: 0.3rem;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      border: 2px solid #999;
+      flex-shrink: 0;
+    }
+    .sidebar ul li.active .icon {
+      background: #c4541a;
+      border-color: #c4541a;
+    }
+    .sidebar ul li.active { font-weight: 600; color: #c4541a; }
+
+    /* ── Main content ── */
+    .main {
+      flex: 1;
+      padding: 2.5rem 3rem;
+      max-width: 820px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .meta {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 1.5rem;
+    }
+    .meta span { font-weight: 600; color: #1a1a1a; }
+
+    h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin: 2rem 0 0.75rem;
+      color: #1a1a1a;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin: 1.4rem 0 0.4rem;
+      color: #c4541a;
+    }
+
+    p { margin-bottom: 1rem; font-size: 1rem; }
+
+    ul.objectives {
+      list-style: disc;
+      padding-right: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    ul.objectives li { margin-bottom: 0.5rem; font-size: 1rem; }
+
+    /* ── Course roadmap cards ── */
+    .roadmap {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0 2rem;
+    }
+    .roadmap-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem 1.2rem;
+    }
+    .roadmap-card .card-label {
+      font-size: 0.7rem;
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-family: sans-serif;
+      margin-bottom: 0.3rem;
+    }
+    .roadmap-card h4 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+    }
+    .roadmap-card p { font-size: 0.85rem; color: #555; margin: 0; line-height: 1.6; }
+
+    /* ── Key takeaways / capabilities ── */
+    .takeaway-list { list-style: none; padding: 0; margin-bottom: 1.5rem; }
+    .takeaway-list li {
+      background: #fff;
+      border-right: 4px solid #c4541a;
+      border-radius: 6px;
+      padding: 0.85rem 1rem;
+      margin-bottom: 0.75rem;
+      font-size: 0.97rem;
+      line-height: 1.9;
+    }
+    .takeaway-list li strong { color: #c4541a; }
+
+    /* ── Access methods ── */
+    .access-list { list-style: none; padding: 0; }
+    .access-list li {
+      display: flex;
+      gap: 0.75rem;
+      align-items: flex-start;
+      padding: 0.7rem 0;
+      border-bottom: 1px solid #e8e6e0;
+      font-size: 0.97rem;
+    }
+    .access-list li:last-child { border-bottom: none; }
+    .access-list .bullet {
+      margin-top: 0.6rem;
+      width: 8px;
+      height: 8px;
+      background: #c4541a;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* ── Lesson reflection box ── */
+    .reflection-box {
+      background: #fff3e0;
+      border: 1px solid #f5c07a;
+      border-radius: 8px;
+      padding: 1.2rem 1.4rem;
+      margin: 2rem 0;
+    }
+    .reflection-box h2 { margin-top: 0; font-size: 1.15rem; }
+
+    /* ── Next lesson bar ── */
+    .next-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem 1.4rem;
+      margin-top: 2rem;
+    }
+    .next-bar .next-label { font-size: 0.85rem; color: #888; font-family: sans-serif; }
+    .next-bar .next-title { font-size: 1rem; font-weight: 600; margin-top: 0.2rem; }
+    .next-bar .btn {
+      background: #1a1a1a;
+      color: #fff;
+      border: none;
+      padding: 0.55rem 1.4rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      font-family: sans-serif;
+      white-space: nowrap;
+    }
+    .next-bar .btn:hover { background: #c4541a; }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #888;
+      padding: 1.5rem;
+      border-top: 1px solid #ddd;
+      background: #edecea;
+      font-family: sans-serif;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 768px) {
+      .wrapper { flex-direction: column; }
+      .sidebar { width: 100%; height: auto; position: relative; top: 0; }
+      .main { padding: 1.5rem 1.2rem; }
+      .roadmap { grid-template-columns: 1fr; }
+    }
+  </style>
+<link href="../../for_school/assets/lp-index.css" rel="stylesheet"/></head>
+<body>
+<!-- TOP BAR -->
+<nav aria-label="Main navigation" class="navbar" role="navigation">
+<div class="container">
+<div class="navbar__inner">
+<a aria-label="LearnPad – go to home" class="navbar__brand" href="../../index.html">
+<img alt="LearnPad" src="../../logo.png" style="height:30px;width:auto;display:block;"/>
+</a>
+<button aria-controls="navRight" aria-expanded="false" aria-label="Toggle navigation menu" class="navbar__burger" id="burgerBtn">
+<span></span><span></span><span></span>
+</button>
+<div class="navbar__right" id="navRight">
+<a class="navbar__link" href="../../index.html">Home</a>
+<a class="navbar__link" href="../../learnings/">Tech in Urdu</a>
+<a class="navbar__link" href="../../for_school/contact.html">Contact</a>
+<span aria-label="Claude 101 Urdu course" class="navbar__badge">Claude 101</span>
+</div>
+</div>
+</div>
+</nav>
+<div class="wrapper">
+<!-- SIDEBAR -->
+<aside class="sidebar">
+<div class="course-title">Claude 101</div>
+<div class="course-overview">کورس کا جائزہ</div>
+<div class="section-label">کلود سے ملاقات</div>
+<ul>
+<li class="active"><span class="icon"></span> کلود کیا ہے؟</li>
+<li><span class="icon"></span> کلود سے آپ کی پہلی گفتگو</li>
+<li><span class="icon"></span> بہتر نتائج حاصل کرنا</li>
+<li><span class="icon"></span> کلود ڈیسک ٹاپ ایپ: چیٹ، کوورک، کوڈ</li>
+</ul>
+<div class="section-label">کام اور معلومات کو منظم کرنا</div>
+<ul>
+<li><span class="icon"></span> پروجیکٹس کا تعارف</li>
+<li><span class="icon"></span> آرٹی فیکٹس کے ساتھ تخلیق</li>
+<li><span class="icon"></span> اسکلز کے ساتھ کام</li>
+</ul>
+<div class="section-label">کلود کی رسائی بڑھانا</div>
+<ul>
+<li><span class="icon"></span> اپنے ٹولز جوڑنا</li>
+<li><span class="icon"></span> انٹرپرائز سرچ</li>
+<li><span class="icon"></span> گہری تحقیق کے لیے ریسرچ موڈ</li>
+</ul>
+<div class="section-label">سب کو ملا کر</div>
+<ul>
+<li><span class="icon"></span> کلود عملی: کردار کے لحاظ سے استعمال</li>
+<li><span class="icon"></span> کلود کے ساتھ کام کرنے کے دیگر طریقے</li>
+</ul>
+<div class="section-label">اختتام اور سرٹیفکیٹ</div>
+<ul>
+<li><span class="icon"></span> آگے کیا ہے؟</li>
+<li><span class="icon"></span> تکمیل کا سرٹیفکیٹ</li>
+</ul>
+</aside>
+<!-- MAIN CONTENT -->
+<main class="main">
+<h1>کلود کیا ہے؟</h1>
+<p class="meta"><span>تخمینی وقت:</span> ۱۵ منٹ</p>
+<!-- Learning objectives -->
+<h2>سیکھنے کے مقاصد</h2>
+<p>اس سبق کے اختتام تک آپ یہ کر سکیں گے:</p>
+<ul class="objectives">
+<li>کلود کیا ہے اور وہ اصول جو اس کے ڈیزائن کی رہنمائی کرتے ہیں — وضاحت کریں</li>
+<li>کلود کی بنیادی صلاحیتوں اور ایک سادہ چیٹ بوٹ سے اس کے فرق کو بیان کریں</li>
+<li>کلود تک رسائی کے مختلف طریقے (ویب، ڈیسک ٹاپ، اور موبائل) پہچانیں</li>
+</ul>
+<!-- Course roadmap -->
+<h2>کورس کا نقشہ راہ</h2>
+<div class="roadmap">
+<div class="roadmap-card">
+<div class="card-label">کلود سے ملاقات</div>
+<h4>کلود کیا ہے؟</h4>
+<p>کلود کیا ہے، آپ اس سے کیسے بات کرتے ہیں، اور بہترین نتائج کیسے حاصل کرتے ہیں؟</p>
+</div>
+<div class="roadmap-card">
+<div class="card-label">کام منظم کرنا</div>
+<h4>کام اور معلومات کو منظم کرنا</h4>
+<p>پروجیکٹس، آرٹی فیکٹس اور اسکلز کلود کو ڈھانچہ اور دوبارہ قابلِ استعمال علم کیسے دیتے ہیں؟</p>
+</div>
+<div class="roadmap-card">
+<div class="card-label">رسائی بڑھانا</div>
+<h4>کلود کی رسائی بڑھانا</h4>
+<p>کنیکٹرز، انٹرپرائز سرچ، اور ریسرچ آپ کے ٹولز اور ویب کو گفتگو میں کیسے لاتے ہیں؟</p>
+</div>
+<div class="roadmap-card">
+<div class="card-label">سب کو ملا کر</div>
+<h4>سب کو ملا کر</h4>
+<p>کلود مختلف کرداروں میں عملی طور پر کیسا نظر آتا ہے، اور آپ اس کے ساتھ اور کہاں کام کر سکتے ہیں؟</p>
+</div>
+<div class="roadmap-card">
+<div class="card-label">اختتام</div>
+<h4>اختتام اور سرٹیفکیٹ</h4>
+<p>آگے کہاں جائیں، اور اپنا سرٹیفکیٹ کیسے حاصل کریں؟</p>
+</div>
+</div>
+<!-- What is Claude section -->
+<h2>کلود کیا ہے؟ <span style="font-size:0.8rem;color:#888;font-weight:400;">(۱۰ منٹ)</span></h2>
+<p>
+        کلود محض ایک چیٹ بوٹ سے بڑھ کر ہے — یہ ایک AI اسسٹنٹ ہے جو آپ کا سوچنے کا ساتھی بننے کے لیے ڈیزائن کیا گیا ہے۔ اس سبق میں آپ سیکھیں گے کہ کلود دیگر AI ٹولز سے کیا مختلف ہے اور یہ وسیع قسم کے کاموں میں آپ کی مدد کیسے کر سکتا ہے۔
+      </p>
+<!-- Key takeaways -->
+<h2>اہم نکات</h2>
+<ul class="takeaway-list">
+<li>
+<strong>کلود کو مددگار، بے ضرر، اور ایماندار بنایا گیا ہے:</strong>
+          بنیادی طور پر، کلود ان اصولوں کے تحت کام کرتا ہے جو اسے زہریلے یا امتیازی نتائج سے روکتے ہیں، غیر قانونی یا غیر اخلاقی سرگرمیوں میں مدد سے گریز کراتے ہیں، اور اسے ایک مددگار، ایماندار، اور بے ضرر AI نظام کے طور پر کام کرنے پر مجبور کرتے ہیں۔ اس طریقہ کار کو "Constitutional AI" کہا جاتا ہے، جس کا مطلب ہے کہ کلود کو انسانی اقدار کے ساتھ ہم آہنگ اور شفاف طریقے سے کام کرنے کی تربیت دی گئی ہے۔
+        </li>
+<li>
+<strong>کلود ایک سادہ چیٹ بوٹ سے بڑھ کر ہے:</strong>
+          کلود گفتگو اور متن کی پروسیسنگ کے متعدد کاموں میں اعلیٰ درجے کی قابلیت رکھتا ہے — جن میں خلاصہ سازی، تلاش، تخلیقی و اشتراکی تحریر، سوال و جواب، کوڈنگ وغیرہ شامل ہیں۔ کلود کو ایک سوچنے والے ساتھی کے طور پر سمجھیں جو پیچیدہ مسائل حل کرنے اور مشکل حالات سے نکلنے میں مدد کرتا ہے — نہ کہ صرف سادہ سوالوں کا جواب دیتا ہے۔
+        </li>
+<li>
+<strong>کلود قابلِ رہنمائی اور اشتراکی ہے:</strong>
+          کلود شخصیت، لہجے، اور رویے پر ہدایات قبول کر سکتا ہے۔ صارفین رپورٹ کرتے ہیں کہ کلود نقصان دہ نتائج پیدا کرنے کا بہت کم امکان رکھتا ہے، اس سے بات کرنا آسان ہے، اور یہ زیادہ قابلِ کنٹرول ہے — تاکہ آپ کم کوشش میں اپنا مطلوبہ نتیجہ حاصل کر سکیں۔
+        </li>
+<li>
+<strong>کلود تک آپ جہاں بھی کام کریں، رسائی ممکن ہے:</strong>
+          کلود ایپس تمام پلان اقسام کے لیے دستیاب ہیں — Free، Pro، Max، Team، اور Enterprise۔ جب آپ سائن ان ہوں تو آپ کی گفتگو، پروجیکٹس، یادداشت، اور ترجیحات تمام آلات پر ہم آہنگ ہو جاتی ہیں۔ خواہ آپ اپنی میز پر ہوں یا چلتے پھرتے، کلود ویب، ڈیسک ٹاپ، اور موبائل ایپس کے ذریعے دستیاب ہے۔
+        </li>
+</ul>
+<!-- Capabilities -->
+<h2>کلود کی صلاحیتوں کو سمجھنا</h2>
+<p>
+        کلود ایسے کاموں کی وسیع رینج میں مدد کر سکتا ہے جو سادہ سوال و جواب سے کہیں آگے جاتی ہے — یہ ایک اسسٹنٹ نما شراکت داری ہے جو آپ کے کام کو خودکار اور بڑھاوا دونوں دے سکتی ہے۔ چند کام جن میں کلود بہترین ہے:
+      </p>
+<ul class="takeaway-list">
+<li>
+<strong>تحریر اور مواد کی تخلیق:</strong>
+          کلود سوشل میڈیا پوسٹس، پیشہ ورانہ ای میلز، اور پیچیدہ رپورٹس میں آپ کے ساتھ مل کر کام کر سکتا ہے۔ چونکہ کلود کو شخصیت اور لہجے پر ہدایات لینے کی تربیت دی گئی ہے، آپ ساخت اور وضاحت پر مل کر تکرار کر سکتے ہیں یہاں تک کہ آپ کی آواز واضح طور پر سامنے آئے۔
+        </li>
+<li>
+<strong>تحقیق اور تجزیہ:</strong>
+          کلود تحقیقی زاویے تلاش کرنے، نتائج مرتب کرنے، اور ڈیٹا کا تجزیہ کرکے بامعنی بصیرت سامنے لانے میں مدد کرتا ہے۔ آپ دستاویزات اپ لوڈ کر سکتے ہیں اور کلود پیچیدہ معلومات کو سمجھنے میں آپ کی مدد کرے گا — یہ کلود کی بڑی سیاق و سباق کی کھڑکی کی وجہ سے ممکن ہے جو ایک ہی گفتگو میں 200K+ ٹوکنز (تقریباً 500 یا اس سے زیادہ صفحات متن) سنبھال سکتی ہے، اور Pro، Max، Team، اور Enterprise پلانز پر Opus 4.7 استعمال کرتے وقت 1M ٹوکنز تک دستیاب ہیں۔
+        </li>
+<li>
+<strong>کوڈنگ میں مدد:</strong>
+          Claude Opus 4.7 ہمارا اب تک کا سب سے طاقتور ماڈل اور دنیا کا بہترین کوڈنگ ماڈل ہے۔ حقیقی دنیا کے کوڈنگ کاموں میں یہ بہترین کارکردگی کا مطلب ہے کہ کلود متعدد پروگرامنگ زبانوں میں کوڈ لکھنے، ڈیبگ کرنے، اور سمجھانے میں آپ کی مدد کر سکتا ہے۔
+        </li>
+<li>
+<strong>مسئلہ حل کرنا اور استدلال:</strong>
+          کلود پیچیدہ ذہنی کاموں، ریاضی کے مسائل، اسٹریٹجک سوچ، تجزیے، اور تحقیق کو سنبھالتا ہے۔ Claude Opus 4.7 اور Sonnet 4.7 ہائبرڈ ماڈلز ہیں جو دو طریقے پیش کرتے ہیں: فوری جوابات اور گہرے استدلال کے لیے توسیعی سوچ۔ Anthropic Extended Thinking کلود کو مسائل کو قدم بہ قدم حل کرنے کی اجازت دیتا ہے، جو اسے محتاط تجزیے کی ضرورت والے کاموں کے لیے موزوں بناتا ہے۔
+        </li>
+<li>
+<strong>نئی چیزیں سیکھنا:</strong>
+          چاہے آپ نئی مہارت سیکھ رہے ہوں، نامانوس شعبوں کو دریافت کر رہے ہوں، یا پیچیدہ چیلنجز سے گزر رہے ہوں، کلود آپ کے سیکھنے کے انداز اور رفتار کے مطابق ڈھل سکتا ہے۔ لرننگ موڈ ایک نیا کلود تجربہ ہے جو جوابات فراہم کرنے کے بجائے آپ کے استدلال کے عمل کی رہنمائی کرتا ہے اور تنقیدی سوچ کی مہارت پیدا کرنے میں مدد دیتا ہے۔
+        </li>
+</ul>
+<!-- Ways to access Claude -->
+<h2>کلود تک رسائی کے طریقے</h2>
+<p>
+        کلود وہ ذہانت ہے — AI اسسٹنٹ جسے آپ اس کورس میں استعمال کرنا سیکھ رہے ہیں۔ یہی ذہانت متعدد انٹرفیسز میں دستیاب ہے، ہر ایک مختلف قسم کے کاموں کے لیے موزوں ہے۔
+      </p>
+<ul class="access-list">
+<li>
+<span class="bullet"></span>
+<div>
+<strong>Claude.ai</strong> (اور اس سے منسلک موبائل اور ڈیسک ٹاپ ایپس) زیادہ تر لوگوں کے لیے کلود سے تعامل کا بنیادی طریقہ ہیں۔ یہاں آپ سوال پوچھ سکتے ہیں، خیالات پر غور کر سکتے ہیں، دستاویزات بنا اور ترمیم کر سکتے ہیں، اور بہت کچھ۔ Claude.ai گفتگو، تحریری مدد، تحقیق، تجزیے، اور فائلیں بنانے کے لیے مثالی ہے۔ اس کورس میں ہمارا توجہ یہی ہے۔
+          </div>
+</li>
+<li>
+<span class="bullet"></span>
+<div>
+<strong>Claude Code</strong> ایک ایجنٹک کوڈنگ ٹول ہے جو ڈویلپرز کے لیے ڈیزائن کیا گیا ہے لیکن آپ کے ڈیسک ٹاپ پر ہر قسم کی فائل مینیپولیشن کے لیے استعمال کیا جا سکتا ہے۔ Claude Code براہِ راست فائلیں ترمیم کر سکتا ہے، کمانڈز چلا سکتا ہے، اور کمٹس بنا سکتا ہے۔
+          </div>
+</li>
+<li>
+<span class="bullet"></span>
+<div>
+<strong>Claude اور Slack</strong> کلود کو براہِ راست آپ کی ٹیم کے مواصلاتی ٹول میں لے آتا ہے۔ آپ کسی بھی چینل سے AI اسسٹنٹ ہیڈر میں کلود سے چیٹ کر سکتے ہیں یا تھریڈز میں @Claude کا ذکر کر سکتے ہیں۔ جب آپ Slack کو کلود سے جوڑتے ہیں، تو کلود آپ کے ورک اسپیس کے چینلز، ڈائریکٹ میسجز، اور مشترکہ فائلوں کو تلاش کرتا ہے۔
+          </div>
+</li>
+<li>
+<span class="bullet"></span>
+<div>
+<strong>Claude for Excel</strong> آپ کو Microsoft Excel کے سائڈبار میں براہِ راست کلود کے ساتھ کام کرنے دیتا ہے، جہاں کلود Excel ورک بکس کو پڑھ، تجزیہ، ترمیم، اور نئی بنا سکتا ہے۔ Claude for Excel ماڈل تجزیے، فرضی اعداد و شمار کی اپڈیٹ، غلطی ڈیبگنگ، ٹیمپلیٹ پُر کرنے، فارمولا کی وضاحت، اور ملٹی ٹیب نیوی گیشن کے لیے بہترین ہے۔
+          </div>
+</li>
+</ul>
+<!-- Lesson reflection -->
+<div class="reflection-box">
+<h2>سبق کا عکس</h2>
+<p>
+          آپ کے موجودہ کام میں کون سے کام ایسے ہیں جن میں کلود کو سوچنے کے ساتھی کے طور پر رکھنے سے فائدہ ہو سکتا ہے؟ اپنا کیلنڈر دیکھیں (یا بہتر یہ کہ کلود سے دیکھنے کو کہیں) اور چند ایسے کام شناخت کریں جن میں آپ کلود سے مدد لینا چاہیں۔
+        </p>
+</div>
+<!-- Feedback -->
+<h2>تاثرات</h2>
+<p>
+        جیسے جیسے آپ کورس میں آگے بڑھتے ہیں، ہم آپ سے سننا پسند کریں گے کہ آپ اپنے کام میں کورس کے تصورات کیسے استعمال کر رہے ہیں اور آپ کے کوئی تاثرات ہیں۔ اپنے تاثرات یہاں شیئر کریں۔
+      </p>
+<!-- Acknowledgment -->
+<p style="font-size:0.85rem;color:#888;margin-top:1rem;">
+        تمام حقوق محفوظ ہیں © 2025 Anthropic
+      </p>
+<!-- Next lesson bar -->
+<div class="next-bar">
+<div>
+<div class="next-label">اگلا</div>
+<div class="next-title">کلود سے آپ کی پہلی گفتگو</div>
+</div>
+<button class="btn">اگلا ←</button>
+</div>
+</main>
+</div>
+<footer class="footer" role="contentinfo">
+<div class="container">
+<div class="footer__inner">
+<div class="footer__brand">
+<span class="navbar__name">LearnPad</span>
+<p class="footer__tagline">Learn it. Practice it. Own it.</p>
+</div>
+<div class="footer__links">
+<p class="footer__links-label">Quick Links</p>
+<ul class="footer__links-list">
+<li><a href="../../index.html">Home</a></li>
+<li><a href="../../for_school/contact.html">Contact Us</a></li>
+</ul>
+</div>
+<div class="footer__right">
+<p class="footer__heart">Made with ❤️ for curious learners everywhere</p>
+<p style="font-size:0.78rem;color:rgba(255,255,255,.6);margin-top:6px;font-family:-apple-system,sans-serif;">
+          Claude 101 | اردو | Anthropic
+        </p>
+</div>
+</div>
+<div class="footer__bottom">
+<p>© 2025 LearnPad. Free educational resources for every learner.</p>
+</div>
+</div>
+</footer>
+<script>
+(function() {
+  var btn = document.getElementById('burgerBtn');
+  var nav = document.getElementById('navRight');
+  if (!btn || !nav) return;
+  btn.addEventListener('click', function(e) {
+    e.stopPropagation();
+    var open = nav.classList.toggle('nav-open');
+    btn.classList.toggle('is-open', open);
+    btn.setAttribute('aria-expanded', open);
+  });
+  document.addEventListener('click', function(e) {
+    if (nav.classList.contains('nav-open') && !e.target.closest('.navbar')) {
+      nav.classList.remove('nav-open');
+      btn.classList.remove('is-open');
+      btn.setAttribute('aria-expanded', false);
+    }
+  });
+})();
+</script></body>
+</html>

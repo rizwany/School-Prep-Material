@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ur">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>گہری غوطہ خوری کے لیے ریسرچ موڈ | Claude 101 (اردو)</title>
+<!-- Google tag (gtm.js) -->
+<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-PD85WRBD"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PD85WRBD');
+  </script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif;
+      font-size: 18px;
+      line-height: 2;
+      color: #1a1a1a;
+      background: #fafaf8;
+      direction: rtl;
+    }
+
+    header {
+      background: #cc785c;
+      color: white;
+      padding: 16px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header .brand      { font-size: 20px; font-weight: 700; }
+    header .lesson-num { font-size: 14px; opacity: 0.85; }
+
+    nav.breadcrumb {
+      background: #f0ede8;
+      padding: 10px 32px;
+      font-size: 14px;
+      color: #666;
+      border-bottom: 1px solid #e0ddd8;
+    }
+    nav.breadcrumb a { color: #cc785c; text-decoration: none; }
+    nav.breadcrumb a:hover { text-decoration: underline; }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    .section-tag {
+      display: inline-block;
+      background: #f0ede8;
+      color: #8c7060;
+      font-size: 13px;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+
+    .original-title {
+      color: #888;
+      font-size: 15px;
+      margin-bottom: 32px;
+      font-family: -apple-system, sans-serif;
+      direction: ltr;
+      text-align: right;
+    }
+
+    .content {
+      background: white;
+      border-radius: 12px;
+      padding: 40px 48px;
+      border: 1px solid #e8e4df;
+      font-size: 18px;
+      line-height: 2.2;
+    }
+
+    .content h2 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #cc785c;
+      margin: 32px 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #f0ede8;
+    }
+
+    .content h3 {
+      font-size: 19px;
+      font-weight: 700;
+      color: #333;
+      margin: 24px 0 8px;
+    }
+
+    .content p  { margin-bottom: 20px; color: #2a2a2a; }
+
+    .content ul, .content ol {
+      padding-right: 28px;
+      margin-bottom: 20px;
+    }
+
+    .content li { margin-bottom: 8px; }
+
+    .content strong { font-weight: 700; color: #1a1a1a; }
+
+    .progress-bar {
+      height: 4px;
+      background: #f0ede8;
+      border-radius: 2px;
+      margin-bottom: 32px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: #cc785c;
+      border-radius: 2px;
+    }
+
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 48px;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: 700;
+      border: none;
+    }
+
+    .btn-primary   { background: #cc785c; color: white; }
+    .btn-secondary { background: #f0ede8; color: #555; }
+    .btn:hover { opacity: 0.9; }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 13px;
+      color: #999;
+      border-top: 1px solid #ede9e4;
+      margin-top: 80px;
+      font-family: -apple-system, sans-serif;
+    }
+  </style>
+<link href="../../for_school/assets/lp-index.css" rel="stylesheet"/></head>
+<body>
+<!-- GTM noscript -->
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<nav aria-label="Main navigation" class="navbar" role="navigation">
+<div class="container">
+<div class="navbar__inner">
+<a aria-label="LearnPad – go to home" class="navbar__brand" href="../../index.html">
+<img alt="LearnPad" src="../../logo.png" style="height:30px;width:auto;display:block;"/>
+</a>
+<button aria-controls="navRight" aria-expanded="false" aria-label="Toggle navigation menu" class="navbar__burger" id="burgerBtn">
+<span></span><span></span><span></span>
+</button>
+<div class="navbar__right" id="navRight">
+<a class="navbar__link" href="../../index.html">Home</a>
+<a class="navbar__link" href="../../learnings/">Tech in Urdu</a>
+<a class="navbar__link" href="../../for_school/contact.html">Contact</a>
+<span aria-label="Claude 101 Urdu course" class="navbar__badge">Claude 101</span>
+</div>
+</div>
+</div>
+</nav>
+
+<div class="container">
+<div class="progress-bar">
+<div class="progress-fill" style="width: 83%"></div>
+</div>
+<span class="section-tag">Expanding Claude's reach</span>
+<h1>گہری غوطہ خوری کے لیے ریسرچ موڈ</h1>
+<p class="original-title">Original: Research mode for deep dives</p>
+<div class="content">
+<h2>ہیڈر نیویگیشن</h2>
+<ul>
+<li>میرا پروفائل</li>
+<li>سائن آؤٹ کریں۔</li>
+</ul>
+<p>کلاڈ 101</p>
+<h3>کلاڈ سے ملو</h3>
+<h3>اپنے کام اور علم کو منظم کرنا</h3>
+<h3>کلاڈ کی رسائی کو بڑھانا</h3>
+<h3>یہ سب ایک ساتھ ڈالنا</h3>
+<h3>نتیجہ اور سرٹیفکیٹ</h3>
+<h2>اپنے ٹولز کو جوڑ رہا ہے۔</h2>
+<p>متوقع وقت: 20 منٹ</p>
+<h3>سیکھنے کے مقاصد</h3>
+<p>اس سبق کے اختتام تک، آپ اس قابل ہو جائیں گے:</p>
+<ul>
+<li>وضاحت کریں کہ کنیکٹر کیا ہیں اور وہ Claude کے ساتھ آپ کے کام کے لیے کیوں اہمیت رکھتے ہیں۔</li>
+<li>کنیکٹر ڈائرکٹری پر جائیں اور اپنا پہلا کنکشن سیٹ کریں۔</li>
+<li>کلاڈ کے ساتھ اپنی بات چیت میں مربوط ٹولز کو مؤثر طریقے سے استعمال کریں۔</li>
+</ul>
+<h3>کنیکٹر کیا ہیں؟</h3>
+<p>اہم نکات</p>
+<ul>
+<li>کنیکٹرز Claude کو انہی ٹولز، ڈیٹا اور سیاق و سباق تک رسائی دے کر ایک اسسٹنٹ سے ایک باخبر ساتھی میں تبدیل کرتے ہیں جو آپ ہر روز استعمال کرتے ہیں۔ ہر بات چیت کو شروع سے شروع کرنے کے بجائے، Claude براہ راست آپ کی اصل معلومات کے ساتھ کام کر سکتا ہے۔</li>
+<li>کنیکٹرز Claude کو معلومات پڑھنے اور آپ کی جانب سے کارروائیاں کرنے کی اجازت دیتے ہیں۔ کنیکٹر اور اجازتوں پر منحصر ہے جو آپ دیتے ہیں، Claude آپ کی فائلوں کو تلاش کر سکتا ہے، دستاویزات کو بازیافت کر سکتا ہے، ڈیٹا کا تجزیہ کر سکتا ہے، نیا مواد بنا سکتا ہے، ریکارڈ کو اپ ڈیٹ کر سکتا ہے، اور آپ کی منسلک ایپلیکیشنز میں کاموں کو انجام دے سکتا ہے— یہ سب آپ کی گفتگو کے اندر سے۔</li>
+<li>ماڈل سیاق و سباق پروٹوکول (MCP) کنیکٹرز کو طاقت دیتا ہے۔ AI کے لیے USB-C جیسے MCP کے بارے میں سوچیں—ایک عالمگیر معیار جو کلاڈ کو ایک، مستقل انٹرفیس کے ذریعے بہت سی مختلف ایپلی کیشنز سے منسلک ہونے کی اجازت دیتا ہے۔ اس کھلے معیار کا مطلب ہے کہ ڈویلپر کسی بھی ٹول کے لیے کنیکٹر بنا سکتے ہیں، اور وہ کنیکٹر کلاڈ کے ساتھ بغیر کسی رکاوٹ کے کام کرتے ہیں۔</li>
+<li>کنیکٹر کی دو قسمیں ہیں: ویب کنیکٹر اور ڈیسک ٹاپ ایکسٹینشن۔ ویب کنیکٹر کلاڈ کو کلاؤڈ سروسز جیسے گوگل ڈرائیو، تصور، سلیک اور آسنا سے جوڑتے ہیں۔ ڈیسک ٹاپ ایکسٹینشنز Claude Desktop ایپ کے ذریعے آپ کے کمپیوٹر پر مقامی طور پر چلتی ہیں، Claude کو مقامی فائلوں اور مقامی ایپلیکیشنز تک رسائی فراہم کرتی ہے۔</li>
+</ul>
+<h3>ٹولز کو ڈھونڈنا اور جوڑنا</h3>
+<p>انتھروپک تجویز کردہ کنیکٹرز کی ایک ڈائرکٹری claude.ai/directory پر برقرار رکھتا ہے۔ ڈائریکٹری کو دو ٹیبز میں ترتیب دیا گیا ہے:</p>
+<ul>
+<li>ویب: کلاؤڈ سروسز اور ایپلی کیشنز (جی میل، تصور، سلیک، آسنا، لکیری، پٹی، اور بہت کچھ)</li>
+<li>ڈیسک ٹاپ ایکسٹینشنز: مقامی ٹولز جو آپ کے کمپیوٹر پر کلاڈ ڈیسک ٹاپ ایپ کے ذریعے چلتے ہیں۔</li>
+</ul>
+<p>دستیاب کنیکٹرز کو براؤز کرنے کے لیے، آپ چیٹ ونڈو کے نیچے بائیں جانب + بٹن پر بھی کلک کر سکتے ہیں، پھر کنیکٹرز کو منتخب کریں۔</p>
+<p>ویب کنیکٹر سیٹ اپ کرنا</p>
+<p>کلاؤڈ سروس کو جوڑنے کا طریقہ یہاں ہے:</p>
+<ul>
+<li>کنیکٹر تلاش کریں: claude.ai/directory پر جائیں، یا کسی بھی چیٹ میں +&gt; کنیکٹر پر کلک کریں۔</li>
+<li>کنیکٹ پر کلک کریں: وہ کنیکٹر منتخب کریں جسے آپ شامل کرنا چاہتے ہیں۔</li>
+<li>تصدیق کریں: آپ کو سروس کے لاگ ان صفحہ پر بھیج دیا جائے گا۔ اپنی موجودہ اسناد کے ساتھ سائن ان کریں۔</li>
+<li>اجازتیں دیں: ان مخصوص اجازتوں کا جائزہ لیں جن کی Claude درخواست کر رہا ہے، پھر رسائی کی اجازت دیں۔</li>
+<li>کنکشن کی جانچ کریں: کلاڈ پر واپس جائیں اور ایک سادہ درخواست کی کوشش کریں، جیسے "کیا آپ میرے [ٹول کا نام] تک رسائی حاصل کر سکتے ہیں؟"</li>
+</ul>
+<p>ایک بار منسلک ہو جانے کے بعد، Claude اس سروس کے اندر تلاش، پڑھ سکتا اور کچھ معاملات میں کارروائیاں کر سکتا ہے — آپ کی دی گئی اجازتوں پر منحصر ہے۔</p>
+<p>ڈیسک ٹاپ ایکسٹینشنز</p>
+<p>ڈیسک ٹاپ ایکسٹینشنز کو ویب انٹرفیس کے بجائے کلاڈ ڈیسک ٹاپ ایپ کی ضرورت ہوتی ہے۔ یہ ایکسٹینشنز کلاڈ کو مقامی ایپلی کیشنز، آپ کے فائل سسٹم، اور میک او ایس یا ونڈوز پر مقامی خصوصیات کے ساتھ تعامل کرنے دیتی ہیں۔</p>
+<p>کچھ ڈیسک ٹاپ ایکسٹینشنز میں شامل ہیں:</p>
+<ul>
+<li>دستاویزات کو پڑھنے اور ترتیب دینے کے لیے مقامی فائل تک رسائی</li>
+<li>خودکار ویب کاموں کے لیے براؤزر کنٹرول</li>
+<li>مقامی ایپلیکیشن انضمام (جیسے ڈیزائن کے کام کے لیے فگما)</li>
+</ul>
+<p>ڈیسک ٹاپ ایکسٹینشن انسٹال کرنے کے لیے:</p>
+<ul>
+<li>کلاڈ ڈیسک ٹاپ ایپ ڈاؤن لوڈ اور انسٹال کریں۔</li>
+<li>ایپ کھولیں اور ترتیبات &gt; ایکسٹینشنز پر جائیں۔</li>
+<li>دستیاب ایکسٹینشنز کو براؤز کریں اور انسٹال پر کلک کریں۔</li>
+<li>اس توسیع کے لیے مخصوص کسی بھی اضافی سیٹ اپ کے اقدامات پر عمل کریں۔</li>
+</ul>
+<h3>اپنے کام میں کنیکٹر استعمال کرنا</h3>
+<p>ایک بار جب آپ اپنے ٹولز کو جوڑ لیتے ہیں، تو Claude آپ کی درخواستوں کا جواب دیتے وقت ان پر غور کرتا ہے۔ منسلک ٹولز کو استعمال کرنے کے کچھ عملی طریقے یہ ہیں:</p>
+<p>پروجیکٹ مینجمنٹ (آسنا، لکیری، جیرا)</p>
+<ul>
+<li>"اس ہفتے میرے سب سے زیادہ ترجیحی کام کون سے ہیں؟"</li>
+<li>"Q4 بجٹ کی تجویز کا جائزہ لینے کے لیے ایک نیا ٹاسک بنائیں"</li>
+<li>"ہمارے پروڈکٹ لانچ پروجیکٹ کی صورتحال کا خلاصہ کریں"</li>
+</ul>
+<p>مواصلات (سلیک، جی میل)</p>
+<ul>
+<li>"وہ ای میل تھریڈ تلاش کریں جہاں ہم نے وینڈر کنٹریکٹ پر بات کی تھی"</li>
+<li>"#مارکیٹنگ چینل میں تازہ ترین پیغام کے جواب کا مسودہ تیار کریں"</li>
+<li>"کل کی بحث میں ٹیم نے ٹائم لائن کے بارے میں کیا فیصلہ کیا؟"</li>
+</ul>
+<p>دستاویزی (خیال، گوگل ڈرائیو، سنگم)</p>
+<ul>
+<li>"ہمارے برانڈ کی آواز کے رہنما خطوط کے لیے ہماری دستاویزات تلاش کریں"</li>
+<li>"گزشتہ ہفتے کے پروڈکٹ کے جائزے سے میٹنگ کے نوٹس کا خلاصہ کریں"</li>
+<li>"ہمارا اسٹائل گائیڈ سنکچن کے استعمال کے بارے میں کیا کہتا ہے؟"</li>
+</ul>
+<p>بزنس ٹولز (سٹرائپ، پے پال، سیلز فورس)</p>
+<ul>
+<li>"مجھے پچھلی سہ ماہی کے آمدنی کے رجحانات دکھائیں"</li>
+<li>"Acme Corp کے موقع کی کیا حیثیت ہے؟"</li>
+<li>"$1,000 سے زیادہ حالیہ لین دین کی فہرست بنائیں"</li>
+</ul>
+<h3>سیکیورٹی اور اجازتیں۔</h3>
+<p>جب آپ Claude کو بیرونی سروسز سے منسلک کرتے ہیں، تو آپ اسے ان سروسز کے اندر موجود ڈیٹا کو پڑھنے اور کبھی کبھی اس میں ترمیم کرنے کی اجازت دے رہے ہیں۔ یہاں کچھ اہم تحفظات ہیں:</p>
+<ul>
+<li>اسکوپڈ رسائی: اجازتیں کنیکٹر کی ضرورت کے لیے مخصوص ہیں اور آپ ہر ایپلیکیشن کے مینو میں انفرادی اجازتوں کو آن اور آف کر سکتے ہیں۔</li>
+<li>Claude وہ دیکھتا ہے جو آپ دیکھتے ہیں: Claude صرف اس ڈیٹا تک رسائی حاصل کر سکتا ہے جس تک آپ کی رسائی ہے۔ آپ کے کام کے ای میل کو منسلک کرنے سے Claude کو آپ کے CEO کے ان باکس تک رسائی نہیں ملتی ہے—صرف آپ کا اپنا۔</li>
+<li>کسی بھی وقت منسوخ کیا جا سکتا ہے: آپ کلاڈ کی سیٹنگز کے ذریعے یا فریق ثالث سروس کی سیکیورٹی سیٹنگز کے ذریعے کسی سروس کو منقطع کر سکتے ہیں۔ بالکل اسی طرح جیسے اسکلز کے ساتھ، آپ اپنی مرضی کے کنیکٹر بھی تلاش یا بنا سکتے ہیں۔ وہی احتیاط برتیں — صرف قابل اعتماد ذرائع سے کنیکٹر انسٹال کریں۔</li>
+</ul>
+<h3>سبق کی عکاسی۔</h3>
+<p>آگے بڑھنے سے پہلے غور کریں:</p>
+<ul>
+<li>کلاڈ سے منسلک ہونے کے لیے آپ کے روزمرہ کے کام کے اوزاروں میں سے کون سا زیادہ قیمتی ہوگا؟</li>
+<li>فی الحال کن کاموں کے لیے آپ کو ایسی معلومات کاپی اور پیسٹ کرنے کی ضرورت ہے جو کنیکٹر خود بخود سنبھال سکتے ہیں؟</li>
+<li>کیا ایسے ورک فلو ہیں جہاں متعدد منسلک ذرائع سے ڈیٹا کو یکجا کرنے سے آپ کا اہم وقت بچ جائے گا؟</li>
+</ul>
+<h3>آگے کیا ہے</h3>
+<p>اگلے سبق میں، آپ انٹرپرائز سرچ کے بارے میں سیکھیں گے—کلاڈ فار ورک کے صارفین کے لیے ایک خصوصی خصوصیت جو کلاڈ کو آپ کی کمپنی کے سیاق و سباق کے لیے بہتر بنائے گئے حسب ضرورت اشارے کے ساتھ آپ کی تنظیم کے علمی ذرائع سے جوڑتی ہے۔</p>
+<p>کنیکٹرز اور ماڈل سیاق و سباق پروٹوکول کے بارے میں مزید معلومات کے لیے، انتھروپک ہیلپ سینٹر پر جائیں یا claude.ai/directory پر کنیکٹر ڈائرکٹری کو دریافت کریں۔</p>
+<p>تاثرات</p>
+<p>جیسے جیسے آپ کورس کے ذریعے آگے بڑھیں گے، ہم آپ سے اس بارے میں سننا پسند کریں گے کہ آپ کورس کے تصورات کو اپنے کام میں کس طرح استعمال کر رہے ہیں اور آپ کے پاس کوئی بھی رائے ہو سکتی ہے۔ اپنی رائے یہاں شیئر کریں۔</p>
+<p>اعترافات اور لائسنس</p>
+<p>کاپی رائٹ 2025 Anthropic. جملہ حقوق محفوظ ہیں۔</p>
+</div>
+<div class="nav-buttons">
+<a class="btn btn-secondary" href="09_enterprise-search.html">← پچھلا سبق</a>
+<a class="btn btn-primary" href="11_use-cases-by-role.html">اگلا سبق →</a>
+</div>
+</div>
+<footer class="footer" role="contentinfo">
+<div class="container">
+<div class="footer__inner">
+<div class="footer__brand">
+<span class="navbar__name">LearnPad</span>
+<p class="footer__tagline">Learn it. Practice it. Own it.</p>
+</div>
+<div class="footer__links">
+<p class="footer__links-label">Quick Links</p>
+<ul class="footer__links-list">
+<li><a href="../../index.html">Home</a></li>
+<li><a href="../../for_school/contact.html">Contact Us</a></li>
+</ul>
+</div>
+<div class="footer__right">
+<p class="footer__heart">Made with ❤️ for curious learners everywhere</p>
+<p style="font-size:0.78rem;color:rgba(255,255,255,.6);margin-top:6px;font-family:-apple-system,sans-serif;">
+          Claude 101 | اردو | Anthropic
+        </p>
+</div>
+</div>
+<div class="footer__bottom">
+<p>© 2025 LearnPad. Free educational resources for every learner.</p>
+</div>
+</div>
+</footer>
+<script>
+(function() {
+  var btn = document.getElementById('burgerBtn');
+  var nav = document.getElementById('navRight');
+  if (!btn || !nav) return;
+  btn.addEventListener('click', function(e) {
+    e.stopPropagation();
+    var open = nav.classList.toggle('nav-open');
+    btn.classList.toggle('is-open', open);
+    btn.setAttribute('aria-expanded', open);
+  });
+  document.addEventListener('click', function(e) {
+    if (nav.classList.contains('nav-open') && !e.target.closest('.navbar')) {
+      nav.classList.remove('nav-open');
+      btn.classList.remove('is-open');
+      btn.setAttribute('aria-expanded', false);
+    }
+  });
+})();
+</script></body>
+</html>

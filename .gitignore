@@ -1,0 +1,27 @@
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+
+# Build / config files not part of site content
+package.json
+package-lock.json
+playwright.config.ts
+tests/
+
+# Scripts
+add-compact-view.ps1
+generateclause101content.py
+
+# Root-level site files (not in the three main folders)
+CNAME
+LICENSE
+README.md
+
+# Config / tooling folders
+.github/
+.claude/

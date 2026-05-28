@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ur">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>انٹرپرائز کی تلاش | Claude 101 (اردو)</title>
+<!-- Google tag (gtm.js) -->
+<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-PD85WRBD"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PD85WRBD');
+  </script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif;
+      font-size: 18px;
+      line-height: 2;
+      color: #1a1a1a;
+      background: #fafaf8;
+      direction: rtl;
+    }
+
+    header {
+      background: #cc785c;
+      color: white;
+      padding: 16px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header .brand      { font-size: 20px; font-weight: 700; }
+    header .lesson-num { font-size: 14px; opacity: 0.85; }
+
+    nav.breadcrumb {
+      background: #f0ede8;
+      padding: 10px 32px;
+      font-size: 14px;
+      color: #666;
+      border-bottom: 1px solid #e0ddd8;
+    }
+    nav.breadcrumb a { color: #cc785c; text-decoration: none; }
+    nav.breadcrumb a:hover { text-decoration: underline; }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    .section-tag {
+      display: inline-block;
+      background: #f0ede8;
+      color: #8c7060;
+      font-size: 13px;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+
+    .original-title {
+      color: #888;
+      font-size: 15px;
+      margin-bottom: 32px;
+      font-family: -apple-system, sans-serif;
+      direction: ltr;
+      text-align: right;
+    }
+
+    .content {
+      background: white;
+      border-radius: 12px;
+      padding: 40px 48px;
+      border: 1px solid #e8e4df;
+      font-size: 18px;
+      line-height: 2.2;
+    }
+
+    .content h2 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #cc785c;
+      margin: 32px 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #f0ede8;
+    }
+
+    .content h3 {
+      font-size: 19px;
+      font-weight: 700;
+      color: #333;
+      margin: 24px 0 8px;
+    }
+
+    .content p  { margin-bottom: 20px; color: #2a2a2a; }
+
+    .content ul, .content ol {
+      padding-right: 28px;
+      margin-bottom: 20px;
+    }
+
+    .content li { margin-bottom: 8px; }
+
+    .content strong { font-weight: 700; color: #1a1a1a; }
+
+    .progress-bar {
+      height: 4px;
+      background: #f0ede8;
+      border-radius: 2px;
+      margin-bottom: 32px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: #cc785c;
+      border-radius: 2px;
+    }
+
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 48px;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: 700;
+      border: none;
+    }
+
+    .btn-primary   { background: #cc785c; color: white; }
+    .btn-secondary { background: #f0ede8; color: #555; }
+    .btn:hover { opacity: 0.9; }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 13px;
+      color: #999;
+      border-top: 1px solid #ede9e4;
+      margin-top: 80px;
+      font-family: -apple-system, sans-serif;
+    }
+  </style>
+<link href="../../for_school/assets/lp-index.css" rel="stylesheet"/></head>
+<body>
+<!-- GTM noscript -->
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<nav aria-label="Main navigation" class="navbar" role="navigation">
+<div class="container">
+<div class="navbar__inner">
+<a aria-label="LearnPad – go to home" class="navbar__brand" href="../../index.html">
+<img alt="LearnPad" src="../../logo.png" style="height:30px;width:auto;display:block;"/>
+</a>
+<button aria-controls="navRight" aria-expanded="false" aria-label="Toggle navigation menu" class="navbar__burger" id="burgerBtn">
+<span></span><span></span><span></span>
+</button>
+<div class="navbar__right" id="navRight">
+<a class="navbar__link" href="../../index.html">Home</a>
+<a class="navbar__link" href="../../learnings/">Tech in Urdu</a>
+<a class="navbar__link" href="../../for_school/contact.html">Contact</a>
+<span aria-label="Claude 101 Urdu course" class="navbar__badge">Claude 101</span>
+</div>
+</div>
+</div>
+</nav>
+
+<div class="container">
+<div class="progress-bar">
+<div class="progress-fill" style="width: 75%"></div>
+</div>
+<span class="section-tag">Expanding Claude's reach</span>
+<h1>انٹرپرائز کی تلاش</h1>
+<p class="original-title">Original: Enterprise search</p>
+<div class="content">
+<h2>ہیڈر نیویگیشن</h2>
+<ul>
+<li>میرا پروفائل</li>
+<li>سائن آؤٹ کریں۔</li>
+</ul>
+<p>کلاڈ 101</p>
+<h3>کلاڈ سے ملو</h3>
+<h3>اپنے کام اور علم کو منظم کرنا</h3>
+<h3>کلاڈ کی رسائی کو بڑھانا</h3>
+<h3>یہ سب ایک ساتھ ڈالنا</h3>
+<h3>نتیجہ اور سرٹیفکیٹ</h3>
+<h2>مہارت کے ساتھ کام کرنا</h2>
+<p>متوقع وقت: 15 منٹ</p>
+<h3>سیکھنے کے مقاصد</h3>
+<p>اس سبق کے اختتام تک، آپ اس قابل ہو جائیں گے:</p>
+<ul>
+<li>وضاحت کریں کہ ہنر کیا ہیں اور کلاڈ انہیں کیسے استعمال کرتا ہے۔</li>
+<li>دستاویز بنانے کے لیے انتھروپک کی بلٹ ان اسکلز کی شناخت کریں۔</li>
+<li>اپنی ترتیبات میں ہنر کو فعال اور ان کا نظم کریں۔</li>
+</ul>
+<h3>ہنر کیا ہیں؟</h3>
+<p>ہنر ہدایات، اسکرپٹس اور وسائل کے فولڈر ہیں جنہیں کلاڈ خصوصی کاموں پر کارکردگی کو بہتر بنانے کے لیے متحرک طور پر لوڈ کرتا ہے۔ ان کے بارے میں مہارت کے پیکجز کے طور پر سوچیں — وہ کلاڈ کو سکھاتے ہیں کہ مخصوص کاموں کو دوبارہ قابل دہرانے کے طریقے سے کیسے مکمل کیا جائے۔</p>
+<p>اگر آپ نے ایکسل اسپریڈ شیٹس، پاورپوائنٹ پریزنٹیشنز، ورڈ دستاویزات، یا پی ڈی ایف بنانے کے لیے کلاڈ کا استعمال کیا ہے تو آپ نے پہلے ہی کام پر مہارت دیکھی ہے۔ فائل بنانے کی وہ صلاحیتیں پردے کے پیچھے چلنے والی مہارتوں سے چلتی ہیں۔ لیکن ہنر دستاویز کی تخلیق سے بہت آگے ہے۔ حسب ضرورت ہنر پورے دہرائے جانے والے ورک فلو کو کوڈفائی کر سکتا ہے — ایک سہ ماہی تغیر تجزیہ کا طریقہ کار، ایک برانڈ کی آواز کا جائزہ لینے کا عمل، یا ایک تعمیل چیک لسٹ — اس لیے Claude ہر بار ایک ہی سخت اقدامات کی پیروی کرتا ہے۔</p>
+<h3>ہنر کی اقسام</h3>
+<p>مہارت کی دو قسمیں ہیں جن کا آپ سامنا کریں گے:</p>
+<ul>
+<li>انتھروپک مہارتیں انتھروپک کے ذریعہ تخلیق اور برقرار رکھی جاتی ہیں۔ ان میں ایکسل، ورڈ، پاورپوائنٹ، اور پی ڈی ایف فائلوں کے لیے بہتر دستاویز بنانے کی صلاحیتیں شامل ہیں۔ Anthropic Skills تمام ادا شدہ صارفین کے لیے دستیاب ہیں اور Claude متعلقہ ہونے پر انہیں خود بخود طلب کرتا ہے — آپ کو انہیں استعمال کرنے کے لیے کچھ خاص کرنے کی ضرورت نہیں ہے۔</li>
+<li>حسب ضرورت اسکلز وہ ہیں جو آپ یا آپ کی تنظیم خصوصی ورک فلو اور ڈومین سے متعلق مخصوص کاموں کے لیے تخلیق کرتی ہیں۔ مثال کے طور پر، آپ ایک ایسی مہارت پیدا کر سکتے ہیں جو آپ کی کمپنی کے برانڈ کے رہنما خطوط کو پریزنٹیشنز پر لاگو کرتی ہے، کسی مخصوص فارمیٹ میں میٹنگ کے نوٹس کی ساخت، یا آپ کی تنظیم کے ڈیٹا کے تجزیہ کے ورک فلو کو انجام دیتی ہے۔</li>
+</ul>
+<h3>ہنر کو چالو کرنا</h3>
+<p>ہنر فی الحال پرو، میکس، ٹیم، اور انٹرپرائز پلانز پر صارفین کے لیے فیچر کے پیش نظارہ کے طور پر دستیاب ہیں۔ اسکلز کو استعمال کرنے کے لیے، آپ کو کوڈ پر عمل درآمد اور فائل تخلیق کو فعال کرنے کی ضرورت ہوگی، کیونکہ اسکلز کو کام کرنے کے لیے کلاڈ کے محفوظ سینڈ باکسڈ کمپیوٹنگ ماحول کی ضرورت ہوتی ہے۔</p>
+<p>ہنر کو فعال کرنے کا طریقہ یہاں ہے:</p>
+<ul>
+<li>ترتیبات &gt; صلاحیتوں پر جائیں۔</li>
+<li>اس بات کو یقینی بنائیں کہ کوڈ پر عمل درآمد اور فائل کی تخلیق ٹوگل آن ہے۔</li>
+<li>سکلز سیکشن تک سکرول کریں۔</li>
+<li>ضرورت کے مطابق انفرادی مہارتوں کو آن یا آف کریں۔</li>
+</ul>
+<p>انٹرپرائز پلانز کے لیے، تنظیم کے مالکان کو پہلے انفرادی ممبران تک رسائی حاصل کرنے سے پہلے ایڈمن سیٹنگز میں کوڈ پر عمل درآمد اور ہنر دونوں کو فعال کرنا چاہیے۔</p>
+<p>ٹیم کے منصوبوں کے لیے، یہ خصوصیت پیش نظارہ تنظیم کی سطح پر بطور ڈیفالٹ فعال ہے۔</p>
+<p>ایک بار فعال ہوجانے کے بعد، آپ اپنی سیٹنگز میں درج دستیاب ہنر دیکھیں گے، بشمول Anthropic کی بلٹ ان اسکلز اور کوئی بھی حسب ضرورت اسکلز جو آپ نے اپ لوڈ کی ہیں۔</p>
+<h3>عملی طور پر ہنر کا استعمال</h3>
+<p>ہنر کی خوبصورتی یہ ہے کہ آپ کو عام طور پر ان کے بارے میں سوچنے کی ضرورت نہیں ہوتی ہے — کلاڈ آپ کی درخواست کی بنیاد پر مہارت کے انتخاب کو خود بخود ہینڈل کرتا ہے۔ یہاں پرامپٹس کی کچھ مثالیں ہیں جو ہنر کو فروغ دیں گی۔</p>
+<ul>
+<li>"کل کے فارمولوں کے ساتھ ماہانہ اخراجات سے باخبر رہنے والی ایکسل اسپریڈشیٹ بنائیں"</li>
+<li>"اس میٹنگ نوٹ کی دستاویز کو پاورپوائنٹ پریزنٹیشن میں تبدیل کریں"</li>
+<li>"اس ڈیٹا کا خلاصہ کرتے ہوئے ایک پی ڈی ایف رپورٹ بنائیں"</li>
+<li>"منظر نامہ کے تجزیہ کے ساتھ ایکسل میں مالیاتی ماڈل بنائیں"</li>
+</ul>
+<p>جب کلاڈ اسکل کا استعمال کرتا ہے، تو آپ دیکھیں گے کہ اس کا ذکر کلاڈ کی سوچ کے سلسلہ میں کام کرتا ہے۔ آؤٹ پٹ ایک ڈاؤن لوڈ کے قابل فائل ہوگی جسے آپ اپنے کمپیوٹر یا براہ راست گوگل ڈرائیو پر محفوظ کرسکتے ہیں۔</p>
+<h3>فائل پر عمل درآمد</h3>
+<p>Claude آپ کے ساتھ سلائیڈز، اسپریڈ شیٹس، اور کنٹریکٹ ریڈ لائنز پر کام کرتا ہے۔</p>
+<p>اسی قابلیت کا مطلب یہ ہے کہ Claude آپ کی فائلوں کے اپ ڈیٹ ورژن بنانے کے لیے آپ کی اصل فائلوں کے ساتھ کام کر سکتا ہے (ایک موجود ماحول میں) (نوٹ: چیٹ میں، Claude اصل میں ترمیم کرنے کے بجائے دستاویز کا نیا ورژن بناتا ہے)۔ سلائیڈز، اسپریڈشیٹ، معاہدے، (یا کوئی .xlsx، .pptx، .docx، یا .pdf فائلیں) اپ لوڈ کریں اور دیکھیں کہ Claude سلائیڈز بناتا ہے، تجزیہ کرتا ہے، اور تجویز کردہ ترمیمات شامل کرتا ہے۔ جب کلاڈ ہو جائے، تو آپ ان فائلوں کو ڈاؤن لوڈ کر سکتے ہیں یا انہیں Drive میں کھول سکتے ہیں۔</p>
+<p>نوٹ: ان صلاحیتوں کو استعمال کرنے کے لیے آپ کو کلاڈ کو ڈیٹا کے بیرونی ذرائع تک رسائی دینے کی ضرورت ہوگی۔ جب اشارہ کیا جائے تو بس ٹوگل کریں محدود نیٹ ورک تک رسائی کی اجازت دیں:</p>
+<p>سیکیورٹی کے تحفظات</p>
+<p>چونکہ ہنر میں قابل عمل کوڈ شامل ہوسکتا ہے، اس لیے ان کا سوچ سمجھ کر استعمال کرنا ضروری ہے:</p>
+<ul>
+<li>صرف قابل اعتماد ذرائع سے حسب ضرورت مہارتیں انسٹال کریں۔</li>
+<li>Anthropic کی بلٹ ان Skills کی جانچ اور دیکھ بھال کی جاتی ہے۔</li>
+<li>آپ کی اپ لوڈ کردہ حسب ضرورت مہارتیں آپ کے انفرادی اکاؤنٹ میں نجی ہوتی ہیں۔</li>
+<li>اگر آپ کسی بیرونی ذریعہ سے اپنی مرضی کے مطابق مہارت کو انسٹال کر رہے ہیں، تو استعمال کرنے سے پہلے اس کے مواد کا جائزہ لیں کہ یہ کیا کرتا ہے۔</li>
+</ul>
+<h3>اپنی مرضی کے مطابق مہارت پیدا کرنا</h3>
+<p>جبکہ Anthropic کی بلٹ ان Skills عام دستاویز بنانے کے کاموں کا احاطہ کرتی ہے، ہنر کی اصل طاقت آپ کی تخلیق سے حاصل ہوتی ہے۔ حسب ضرورت اسکلز آپ کو کلاڈ کو اپنے مخصوص ورک فلوز، برانڈ گائیڈلائنز، اور کام کرنے کے طریقے سکھانے دیتی ہیں- تاکہ جب بھی متعلقہ ہو Claude اس علم کو خود بخود لاگو کر سکے۔</p>
+<p>اپنی مرضی کے مطابق مہارت بنانے کا سب سے آسان طریقہ Claude کے ساتھ بات چیت کے ذریعے ہے۔ آپ کو کوڈ لکھنے یا دستی طور پر فائلیں بنانے کی ضرورت نہیں ہے—کلاؤڈ آپ کے لیے تکنیکی ڈھانچے کو سنبھالتا ہے۔</p>
+<p>بات چیت کے ذریعے مہارت پیدا کرنے کا طریقہ یہاں ہے:</p>
+<ul>
+<li>ایک نئی چیٹ شروع کریں اور کلاڈ کو بتائیں کہ آپ کیا بنانا چاہتے ہیں۔ مثال کے طور پر: "میں سہ ماہی کاروباری جائزے لکھنے کے لیے ایک ہنر پیدا کرنا چاہتا ہوں" یا "مجھے ایسی مہارت کی ضرورت ہے جو پیشکشوں پر ہمارے برانڈ کے رہنما اصولوں کا اطلاق کرے۔"</li>
+<li>کلاڈ کے سوالات کا جواب دیں۔ کلاڈ آپ کے ورک فلو کے بارے میں آپ سے انٹرویو کرے گا، اس طرح کی چیزیں پوچھے گا: اس ہنر کو کیا کرنا چاہیے؟ اس قسم کے کام کے لیے کیا اچھا آؤٹ پٹ بناتا ہے؟ کیا آپ مثالیں دے سکتے ہیں کہ آپ اس ہنر کو کب استعمال کریں گے؟</li>
+<li>اگر آپ کے پاس حوالہ مواد ہے تو اپ لوڈ کریں۔ ٹیمپلیٹس، سٹائل گائیڈز، برانڈ اثاثے، یا کام کی مثالیں جن پر آپ کو فخر ہے کلاڈ کو یہ سمجھنے میں مدد ملتی ہے کہ آپ کیا تلاش کر رہے ہیں۔</li>
+<li>اپنی مہارت کو بچائیں۔ ختم ہونے پر، کلاڈ ایک فائل تیار کرتا ہے جس میں آپ کی مناسب ساخت کی مہارت ہوتی ہے۔ آپ کو بس اسے بچانا ہے اور مہارت کلاڈ کے استعمال کے لیے تیار ہو جائے گی۔</li>
+</ul>
+<p>اپنی صلاحیتیں دیکھیں۔ بائیں سائڈبار میں حسب ضرورت ٹیب تلاش کریں۔ وہاں آپ ان تمام مہارتوں کو دیکھ سکتے ہیں جو آپ کے لیے دستیاب ہیں اور یہاں تک کہ ان مہارتوں میں ترمیم کر سکتے ہیں جنہیں آپ دستی طور پر استعمال کرتے ہیں یا Claude کے ساتھ چیٹ کر کے۔</p>
+<p>آپ کی حسب ضرورت مہارت آپ کی مہارتوں کی فہرست میں Anthropic کی بلٹ ان اسکلز کے ساتھ ظاہر ہوگی۔ اس مقام سے آگے، جب بھی آپ متعلقہ کاموں پر کام کرتے ہیں تو Claude خود بخود اس کی درخواست کرے گا — کسی دستی ٹرگرنگ کی ضرورت نہیں ہے۔ آپ تکرار کے ساتھ اپنی صلاحیتوں کو بہتر بنا سکتے ہیں — کلاڈ سے کسی ہنر میں ترمیم کرنے کے لیے کہیں اور یہ آپ کے لیے فائلوں کو اپ ڈیٹ کر دے گا۔</p>
+<h3>ہنر بمقابلہ پروجیکٹس</h3>
+<p>آپ سوچ رہے ہوں گے کہ اگر کلاڈ کو مزید سیاق و سباق دینے کے لیے مہارت اور پروجیکٹ دونوں کا استعمال کیا جا سکتا ہے، تو مجھے ہر ایک کو کب استعمال کرنا چاہیے؟ اس کے بارے میں اس طرح سوچیں: منصوبے علم کو ذخیرہ کرتے ہیں، مہارتیں کام انجام دیتی ہیں۔</p>
+<p>منصوبے علم کے مرکز ہیں۔ وہ حوالہ جاتی مواد رکھتے ہیں جو کلاڈ کو آپ کے کام کو سمجھنے کے لیے درکار ہوتا ہے — پروجیکٹ کی تفصیلات، میٹنگ نوٹس، تحقیقی دستاویزات۔ جب آپ کسی پروجیکٹ میں فائلیں اپ لوڈ کرتے ہیں، تو کلاڈ اس پروجیکٹ کے اندر ہونے والی ہر گفتگو میں اس معلومات کو کھینچتا ہے۔</p>
+<p>مہارتیں طریقہ کار کی مشینیں ہیں۔ وہ انکوڈ کرتے ہیں کہ کلاڈ کو کسی کام کو کیسے انجام دینا چاہیے— مخصوص اقدامات، کارروائیوں کی ترتیب، اور طریقہ کار جس کی آپ ہر بار پیروی کرنا چاہتے ہیں۔ مہارت تب چمکتی ہے جب آپ کے پاس دہرائے جانے کے قابل ورک فلو ہوتے ہیں آپ چاہتے ہیں کہ کلاڈ مستقل طور پر چلتا رہے۔</p>
+<p>دونوں خصوصیات ایک دوسرے کی تکمیل کرتی ہیں۔ ایک ہنر کسی پروجیکٹ میں ذخیرہ شدہ علم کا حوالہ دے سکتا ہے — آپ کی "کسٹمر کال پریپ" کی مہارت کسی پروجیکٹ کے نالج بیس پر اپ لوڈ کردہ کسٹمر پروفائلز سے حاصل کر سکتی ہے۔ پروجیکٹ فراہم کرتا ہے کیا (معلومات)، مہارت فراہم کرتا ہے کیسے (عمل)۔</p>
+<h3>سبق کی عکاسی۔</h3>
+<p>آگے بڑھنے سے پہلے غور کریں:</p>
+<ul>
+<li>آپ باقاعدگی سے کس قسم کی دستاویزات بناتے ہیں جو کلاڈ کی بلٹ ان سکلز سے فائدہ اٹھا سکتے ہیں؟</li>
+<li>کیا آپ کے کام میں دہرائے جانے والے ورک فلو ہیں جو حسب ضرورت ہنر کے لیے اچھے امیدوار ہو سکتے ہیں؟</li>
+<li>اسکلز دستاویز کی تخلیق اور ڈیٹا کے تجزیہ کے بارے میں آپ کے سوچنے کے انداز کو کیسے بدل سکتی ہیں؟</li>
+</ul>
+<h3>آگے کیا ہے</h3>
+<p>اسباق کے اگلے سیٹ میں، آپ کنیکٹرز کے ساتھ کلاڈ کی رسائی کو بڑھانا شروع کر دیں گے۔ یہ طاقتور ٹولز معلومات اکٹھا کرنے کو ہموار بناتے ہیں، اور کلاڈ کو ان ٹولز کے اندر ہی کارروائیاں کرنے کی صلاحیت فراہم کر سکتے ہیں جہاں آپ کا کام ہو رہا ہے۔</p>
+<p>ہنر کے بارے میں مزید معلومات کے لیے، بشمول اپنی مرضی کی مہارتیں کیسے بنائیں، انتھروپک ہیلپ سینٹر پر جائیں۔</p>
+<p>تاثرات</p>
+<p>جیسے جیسے آپ کورس کے ذریعے آگے بڑھیں گے، ہم آپ سے اس بارے میں سننا پسند کریں گے کہ آپ کورس کے تصورات کو اپنے کام میں کس طرح استعمال کر رہے ہیں اور آپ کے پاس کوئی بھی رائے ہو سکتی ہے۔ اپنی رائے یہاں شیئر کریں۔</p>
+<p>اعترافات اور لائسنس</p>
+<p>کاپی رائٹ 2025 Anthropic. جملہ حقوق محفوظ ہیں۔</p>
+</div>
+<div class="nav-buttons">
+<a class="btn btn-secondary" href="08_connecting-tools.html">← پچھلا سبق</a>
+<a class="btn btn-primary" href="10_research-mode.html">اگلا سبق →</a>
+</div>
+</div>
+<footer class="footer" role="contentinfo">
+<div class="container">
+<div class="footer__inner">
+<div class="footer__brand">
+<span class="navbar__name">LearnPad</span>
+<p class="footer__tagline">Learn it. Practice it. Own it.</p>
+</div>
+<div class="footer__links">
+<p class="footer__links-label">Quick Links</p>
+<ul class="footer__links-list">
+<li><a href="../../index.html">Home</a></li>
+<li><a href="../../for_school/contact.html">Contact Us</a></li>
+</ul>
+</div>
+<div class="footer__right">
+<p class="footer__heart">Made with ❤️ for curious learners everywhere</p>
+<p style="font-size:0.78rem;color:rgba(255,255,255,.6);margin-top:6px;font-family:-apple-system,sans-serif;">
+          Claude 101 | اردو | Anthropic
+        </p>
+</div>
+</div>
+<div class="footer__bottom">
+<p>© 2025 LearnPad. Free educational resources for every learner.</p>
+</div>
+</div>
+</footer>
+<script>
+(function() {
+  var btn = document.getElementById('burgerBtn');
+  var nav = document.getElementById('navRight');
+  if (!btn || !nav) return;
+  btn.addEventListener('click', function(e) {
+    e.stopPropagation();
+    var open = nav.classList.toggle('nav-open');
+    btn.classList.toggle('is-open', open);
+    btn.setAttribute('aria-expanded', open);
+  });
+  document.addEventListener('click', function(e) {
+    if (nav.classList.contains('nav-open') && !e.target.closest('.navbar')) {
+      nav.classList.remove('nav-open');
+      btn.classList.remove('is-open');
+      btn.setAttribute('aria-expanded', false);
+    }
+  });
+})();
+</script></body>
+</html>

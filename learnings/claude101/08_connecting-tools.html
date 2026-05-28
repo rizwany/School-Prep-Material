@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ur">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>اپنے ٹولز کو جوڑ رہا ہے۔ | Claude 101 (اردو)</title>
+<!-- Google tag (gtm.js) -->
+<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-PD85WRBD"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PD85WRBD');
+  </script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif;
+      font-size: 18px;
+      line-height: 2;
+      color: #1a1a1a;
+      background: #fafaf8;
+      direction: rtl;
+    }
+
+    header {
+      background: #cc785c;
+      color: white;
+      padding: 16px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header .brand      { font-size: 20px; font-weight: 700; }
+    header .lesson-num { font-size: 14px; opacity: 0.85; }
+
+    nav.breadcrumb {
+      background: #f0ede8;
+      padding: 10px 32px;
+      font-size: 14px;
+      color: #666;
+      border-bottom: 1px solid #e0ddd8;
+    }
+    nav.breadcrumb a { color: #cc785c; text-decoration: none; }
+    nav.breadcrumb a:hover { text-decoration: underline; }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    .section-tag {
+      display: inline-block;
+      background: #f0ede8;
+      color: #8c7060;
+      font-size: 13px;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+
+    .original-title {
+      color: #888;
+      font-size: 15px;
+      margin-bottom: 32px;
+      font-family: -apple-system, sans-serif;
+      direction: ltr;
+      text-align: right;
+    }
+
+    .content {
+      background: white;
+      border-radius: 12px;
+      padding: 40px 48px;
+      border: 1px solid #e8e4df;
+      font-size: 18px;
+      line-height: 2.2;
+    }
+
+    .content h2 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #cc785c;
+      margin: 32px 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #f0ede8;
+    }
+
+    .content h3 {
+      font-size: 19px;
+      font-weight: 700;
+      color: #333;
+      margin: 24px 0 8px;
+    }
+
+    .content p  { margin-bottom: 20px; color: #2a2a2a; }
+
+    .content ul, .content ol {
+      padding-right: 28px;
+      margin-bottom: 20px;
+    }
+
+    .content li { margin-bottom: 8px; }
+
+    .content strong { font-weight: 700; color: #1a1a1a; }
+
+    .progress-bar {
+      height: 4px;
+      background: #f0ede8;
+      border-radius: 2px;
+      margin-bottom: 32px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: #cc785c;
+      border-radius: 2px;
+    }
+
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 48px;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: 700;
+      border: none;
+    }
+
+    .btn-primary   { background: #cc785c; color: white; }
+    .btn-secondary { background: #f0ede8; color: #555; }
+    .btn:hover { opacity: 0.9; }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 13px;
+      color: #999;
+      border-top: 1px solid #ede9e4;
+      margin-top: 80px;
+      font-family: -apple-system, sans-serif;
+    }
+  </style>
+<link href="../../for_school/assets/lp-index.css" rel="stylesheet"/></head>
+<body>
+<!-- GTM noscript -->
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<nav aria-label="Main navigation" class="navbar" role="navigation">
+<div class="container">
+<div class="navbar__inner">
+<a aria-label="LearnPad – go to home" class="navbar__brand" href="../../index.html">
+<img alt="LearnPad" src="../../logo.png" style="height:30px;width:auto;display:block;"/>
+</a>
+<button aria-controls="navRight" aria-expanded="false" aria-label="Toggle navigation menu" class="navbar__burger" id="burgerBtn">
+<span></span><span></span><span></span>
+</button>
+<div class="navbar__right" id="navRight">
+<a class="navbar__link" href="../../index.html">Home</a>
+<a class="navbar__link" href="../../learnings/">Tech in Urdu</a>
+<a class="navbar__link" href="../../for_school/contact.html">Contact</a>
+<span aria-label="Claude 101 Urdu course" class="navbar__badge">Claude 101</span>
+</div>
+</div>
+</div>
+</nav>
+
+<div class="container">
+<div class="progress-bar">
+<div class="progress-fill" style="width: 67%"></div>
+</div>
+<span class="section-tag">Expanding Claude's reach</span>
+<h1>اپنے ٹولز کو جوڑ رہا ہے۔</h1>
+<p class="original-title">Original: Connecting your tools</p>
+<div class="content">
+<h2>ہیڈر نیویگیشن</h2>
+<ul>
+<li>میرا پروفائل</li>
+<li>سائن آؤٹ کریں۔</li>
+</ul>
+<p>کلاڈ 101</p>
+<h3>کلاڈ سے ملو</h3>
+<h3>اپنے کام اور علم کو منظم کرنا</h3>
+<h3>کلاڈ کی رسائی کو بڑھانا</h3>
+<h3>یہ سب ایک ساتھ ڈالنا</h3>
+<h3>نتیجہ اور سرٹیفکیٹ</h3>
+<h2>نمونے کے ساتھ تخلیق کرنا</h2>
+<p>متوقع وقت: 20 منٹ</p>
+<h3>سیکھنے کے مقاصد</h3>
+<p>اس سبق کے اختتام تک، آپ اس قابل ہو جائیں گے:</p>
+<ul>
+<li>وضاحت کریں کہ نمونے کیا ہیں اور کلاڈ انہیں کب تخلیق کرتا ہے۔</li>
+<li>ساتھیوں کے ساتھ نمونے کا اشتراک کریں اور انہیں عوامی طور پر شائع کریں۔</li>
+<li>عام نمونے کے مسائل کو حل کریں۔</li>
+</ul>
+<h3>نمونے کیا ہیں؟</h3>
+<p>فن پارے اسٹینڈ لون، انٹرایکٹو آؤٹ پٹس ہیں جنہیں کلاڈ آپ کی گفتگو کے ساتھ ایک وقف شدہ ونڈو میں تخلیق کرتا ہے۔ چیٹ میں کوڈ یا ٹیکسٹ کا ایک لمبا بلاک حاصل کرنے کے بجائے، آپ دیکھتے ہیں کہ آپ کا مواد پیش کیا گیا ہے اور استعمال کے لیے تیار ہے — چاہے وہ کام کرنے والی ویب سائٹ ہو، ایک انٹرایکٹو چارٹ، یا کوئی دستاویز جسے آپ فوری طور پر ڈاؤن لوڈ کر سکتے ہیں۔</p>
+<p>جب مواد مخصوص معیار پر پورا اترتا ہے تو کلاڈ خود بخود ایک نمونہ بناتا ہے:</p>
+<ul>
+<li>یہ اہم اور خود ساختہ ہے، عام طور پر 15 لائنوں سے زیادہ</li>
+<li>یہ ایسی چیز ہے جس میں آپ ترمیم کرنا، دوبارہ کرنا یا دوبارہ استعمال کرنا چاہتے ہیں۔</li>
+<li>یہ پیچیدہ مواد کی نمائندگی کرتا ہے جو ارد گرد کی گفتگو کی ضرورت کے بغیر اپنے طور پر کھڑا ہوتا ہے۔</li>
+<li>یہ وہ مواد ہے جس کا آپ حوالہ دینا چاہیں گے یا بعد میں استعمال کریں گے۔</li>
+</ul>
+<h3>عام نمونے کی اقسام</h3>
+<p>کلاڈ مختلف نمونے بنا سکتا ہے، ہر ایک مختلف ضروریات کے لیے موزوں ہے:</p>
+<ul>
+<li>دستاویزات (بشمول مارک ڈاؤن، سادہ متن، Word docs، PDFs، PowerPoint، اور Excel): کسی بھی ایسے ٹیکسٹ کے لیے بہت اچھا جسے آپ برآمد کرنا یا ترمیم جاری رکھنا چاہیں گے — جیسے میٹنگ کے نوٹس، رپورٹس، پروجیکٹ پلان، بلاگ پوسٹس، اور دیگر تحریری مواد۔</li>
+<li>کوڈ کے ٹکڑے: کسی بھی پروگرامنگ زبان میں ورکنگ کوڈ — ازگر، جاوا اسکرپٹ، C++، اور مزید۔ آپ کوڈ دیکھ سکتے ہیں، اسے کاپی کر سکتے ہیں، یا اسے اپنے پراجیکٹس میں استعمال کرنے کے لیے ڈاؤن لوڈ کر سکتے ہیں۔</li>
+<li>HTML صفحات: ایک فائل میں HTML، CSS، اور JavaScript کے ساتھ مکمل ویب صفحات۔ لینڈنگ پیجز، فارمز، انٹرایکٹو ڈیمو، یا فوری پروٹو ٹائپس کے لیے بہترین۔</li>
+<li>SVG تصاویر: لوگو، شبیہیں، عکاسی اور دیگر بصری عناصر کے لیے قابل توسیع ویکٹر گرافکس۔ یہ براہ راست آرٹفیکٹ ونڈو میں پیش کرتے ہیں تاکہ آپ بالکل وہی دیکھ سکیں جو آپ حاصل کر رہے ہیں۔</li>
+<li>متسیستری خاکے: فلو چارٹس، ترتیب کے خاکے، گینٹ چارٹس، تنظیمی چارٹس، اور مزید۔ ان رشتوں کی وضاحت کریں جنہیں آپ تصور کرنا چاہتے ہیں، اور Claude ایک خاکہ بنائے گا جسے آپ بہتر کر سکتے ہیں۔</li>
+<li>رد عمل کے اجزاء: حقیقی فعالیت کے ساتھ انٹرایکٹو UI عناصر — کیلکولیٹر، ڈیش بورڈز، گیمز، ڈیٹا ویژولائزیشن۔ یہ صرف mockups نہیں ہیں؛ ان میں اصل منطق اور صارف کے ان پٹ کا جواب شامل ہے۔</li>
+</ul>
+<h3>اپنا پہلا نمونہ تخلیق کرنا</h3>
+<p>آرٹفیکٹ بنانا اتنا ہی آسان ہے جتنا کہ بات چیت کرنا۔ بس آپ جو چاہتے ہیں اس کی وضاحت کریں، اور کلاڈ اس بات کا تعین کرے گا کہ آیا اسے بطور نمونہ پیش کرنا ہے۔</p>
+<p>مثال کے طور پر، آپ کہہ سکتے ہیں:</p>
+<ul>
+<li>"ہمارے گاہک کے آن بورڈنگ کے عمل کو دکھانے والا ایک فلو چارٹ بنائیں (نوٹ: کلاڈ اب کوڈ پر مبنی نمونے کے علاوہ امیجن کا استعمال کرتے ہوئے HTML کے طور پر فلو چارٹ جیسے بصری خاکے تیار کر سکتا ہے۔)"</li>
+<li>"ایک انٹرایکٹو ڈیش بورڈ بنائیں جو مجھے ماہانہ اخراجات داخل کرنے اور خرابی دیکھنے دیتا ہے"</li>
+<li>"ہیرو سیکشن اور فیچر لسٹ کے ساتھ پیداواری ایپ کے لیے لینڈنگ پیج ڈیزائن کریں"</li>
+<li>"ایک پروجیکٹ کا مختصر سانچہ لکھیں جسے میں نئے اقدامات کے لیے دوبارہ استعمال کر سکتا ہوں"</li>
+</ul>
+<p>اگر آپ کی توقع کے مطابق کلاڈ خود بخود کوئی نمونہ تخلیق نہیں کرتا ہے، تو آپ واضح طور پر پوچھ سکتے ہیں: "اسے بطور نمونہ تخلیق کریں" یا "مجھے یہ ایک نمونے میں دکھائیں۔"</p>
+<p>جب کلاڈ ایک نمونہ تیار کرتا ہے، تو یہ آپ کی گفتگو کے دائیں جانب ایک وقف شدہ ونڈو میں ظاہر ہوتا ہے۔ یہاں سے، آپ کر سکتے ہیں:</p>
+<ul>
+<li>مختلف فارمیٹس دیکھیں: پیش نظارہ (یہ کیسا لگتا ہے) اور بنیادی کوڈ کے درمیان ٹوگل کریں۔</li>
+<li>مواد کاپی کریں: کسی اور جگہ استعمال کرنے کے لیے مواد کو پکڑنے کے لیے کاپی آئیکن پر کلک کریں۔</li>
+<li>فائلیں ڈاؤن لوڈ کریں: آرٹفیکٹ کو بطور فائل اپنے کمپیوٹر میں محفوظ کریں۔</li>
+<li>کوڈ دیکھیں: بالکل دیکھیں کہ کلاڈ نے ہڈ کے نیچے کیا پیدا کیا۔</li>
+</ul>
+<h3>نمونے کا اشتراک اور اشاعت</h3>
+<p>ایک بار جب آپ کوئی کارآمد چیز بنا لیتے ہیں، تو آپ کے پاس اسے شیئر کرنے کے کئی اختیارات ہوتے ہیں۔</p>
+<p>کاپی یا ڈاؤن لوڈ کریں: ذاتی استعمال یا دوسرے چینلز کے ذریعے اشتراک کے لیے، آرٹفیکٹ ونڈو کے نیچے دائیں کونے میں کاپی یا ڈاؤن لوڈ کے بٹن کا استعمال کریں۔</p>
+<p>اپنی تنظیم کے اندر اشتراک کریں (Claude for Work): ٹیم اور انٹرپرائز کے صارفین اپنے ساتھیوں کے ساتھ اندرونی طور پر نمونے شیئر کر سکتے ہیں۔ مشترکہ نمونہ آپ کی تنظیم کے اندر رہتا ہے اور اس تک رسائی کے لیے ٹیم کی توثیق کی ضرورت ہوتی ہے۔</p>
+<p>عوامی طور پر شائع کریں: مفت، پرو، اور زیادہ سے زیادہ صارفین کے لیے، آپ نمونے شائع کر سکتے ہیں تاکہ وہ لنک کے ساتھ کسی کے لیے بھی قابل رسائی ہو سکیں۔ جب آپ شائع کرتے ہیں:</p>
+<ul>
+<li>صرف منتخب کردہ ورژن ہی عوامی ہو جاتا ہے (آپ کی چیٹ نجی رہتی ہے)</li>
+<li>کلاڈ اکاؤنٹ کے بغیر کوئی بھی آرٹفیکٹ کو دیکھ اور اس کے ساتھ تعامل کر سکتا ہے۔</li>
+<li>دوسرے آپ کے فن پارے کو "ری مکس" کر سکتے ہیں — اسے اپنی کلاڈ گفتگو میں کھول کر اس میں ترمیم اور تعمیر کر سکتے ہیں۔</li>
+</ul>
+<p>شائع کرنے کے لیے، آرٹفیکٹ کے اوپری دائیں کونے میں "شیئر" یا "شائع کریں" بٹن پر کلک کریں۔ آپ کسی بھی وقت اس آرٹفیکٹ پر واپس جا کر اور عوامی رسائی کو ہٹا کر اسے ختم کر سکتے ہیں۔ نوٹ: جب آپ کوئی نمونہ شائع کرتے ہیں، تو یہ اس کے لنک کے ذریعے عوامی طور پر قابل رسائی ہوتا ہے — کوئی بھی اسے دیکھ سکتا ہے، یہاں تک کہ Claude اکاؤنٹ کے بغیر۔ شائع شدہ نمونے تلاش کے انجن کے ذریعہ ترتیب نہیں دیئے جاتے ہیں، لہذا وہ گوگل کے نتائج میں ظاہر نہیں ہوں گے۔</p>
+<h3>نمونے سے زیادہ سے زیادہ فائدہ اٹھانے کے لیے نکات</h3>
+<p>آپ جو چاہتے ہیں اس کے بارے میں مخصوص رہیں۔ "بجٹ ٹریکر بنائیں" اچھا ہے، لیکن "ایک ماہانہ بجٹ ٹریکر بنائیں جہاں میں زمرہ کے لحاظ سے اخراجات داخل کر سکوں، پائی چارٹ کی خرابی دیکھ سکوں، اور جب میں بجٹ سے زیادہ ہوں تو وارننگ حاصل کر سکوں" بہتر ہے۔</p>
+<p>آخری صارف کی وضاحت کریں۔ کلاڈ کو یہ بتانا کہ کون آرٹفیکٹ استعمال کرے گا اسے مناسب ڈیزائن کے انتخاب میں مدد ملتی ہے۔ "یہ فلو چارٹ نئے ملازمین کے لیے ہے" اس سے مختلف نتائج کی طرف لے جاتا ہے "یہ فلو چارٹ انجینئرنگ ٹیم کے لیے ہے۔"</p>
+<p>بتدریج اعادہ کریں۔ کلاڈ سے ایک خصوصیت شامل کرنے یا ایک وقت میں ایک تبدیلی کرنے کو کہیں۔ اس سے یہ شناخت کرنا آسان ہو جاتا ہے کہ کیا کام کر رہا ہے اور مسائل کو جلد پکڑتا ہے۔</p>
+<p>جب ضرورت ہو نمونے کی درخواست کریں۔ اگر آپ کوئی اہم چیز مانگتے ہیں اور کلاڈ ایک آرٹفیکٹ بنانے کے بجائے چیٹ میں جواب دیتا ہے، تو صرف اتنا کہیں کہ "براہ کرم اسے بطور نمونہ تخلیق کریں۔"</p>
+<h3>سبق کی عکاسی۔</h3>
+<p>آگے بڑھنے سے پہلے غور کریں:</p>
+<ul>
+<li>ایک انٹرایکٹو آرٹفیکٹ رکھنے سے کون سا بار بار چلنے والا کام فائدہ اٹھا سکتا ہے جسے آپ دوبارہ استعمال کر سکتے ہیں؟</li>
+<li>کیا آپ کے کام میں ایسے عمل ہیں جو فلو چارٹ یا خاکہ کے طور پر واضح ہوں گے؟</li>
+<li>کون سا پروٹو ٹائپ یا ٹول آپ کو کسی آئیڈیا کو جلدی جانچنے میں مدد دے گا؟</li>
+</ul>
+<h3>آگے کیا ہے</h3>
+<p>اگلے سبق میں، آپ ہنر کے بارے میں سیکھیں گے — دوبارہ قابل استعمال ہدایات کے سیٹ جو کلاڈ کو خصوصی ورک فلو سکھاتے ہیں۔</p>
+<p>تاثرات</p>
+<p>جیسے جیسے آپ کورس کے ذریعے آگے بڑھیں گے، ہم آپ سے اس بارے میں سننا پسند کریں گے کہ آپ کورس کے تصورات کو اپنے کام میں کس طرح استعمال کر رہے ہیں اور آپ کے پاس کوئی بھی رائے ہو سکتی ہے۔ اپنی رائے یہاں شیئر کریں۔</p>
+<p>اعترافات اور لائسنس</p>
+<p>کاپی رائٹ 2025 Anthropic. جملہ حقوق محفوظ ہیں۔</p>
+</div>
+<div class="nav-buttons">
+<a class="btn btn-secondary" href="07_working-with-skills.html">← پچھلا سبق</a>
+<a class="btn btn-primary" href="09_enterprise-search.html">اگلا سبق →</a>
+</div>
+</div>
+<footer class="footer" role="contentinfo">
+<div class="container">
+<div class="footer__inner">
+<div class="footer__brand">
+<span class="navbar__name">LearnPad</span>
+<p class="footer__tagline">Learn it. Practice it. Own it.</p>
+</div>
+<div class="footer__links">
+<p class="footer__links-label">Quick Links</p>
+<ul class="footer__links-list">
+<li><a href="../../index.html">Home</a></li>
+<li><a href="../../for_school/contact.html">Contact Us</a></li>
+</ul>
+</div>
+<div class="footer__right">
+<p class="footer__heart">Made with ❤️ for curious learners everywhere</p>
+<p style="font-size:0.78rem;color:rgba(255,255,255,.6);margin-top:6px;font-family:-apple-system,sans-serif;">
+          Claude 101 | اردو | Anthropic
+        </p>
+</div>
+</div>
+<div class="footer__bottom">
+<p>© 2025 LearnPad. Free educational resources for every learner.</p>
+</div>
+</div>
+</footer>
+<script>
+(function() {
+  var btn = document.getElementById('burgerBtn');
+  var nav = document.getElementById('navRight');
+  if (!btn || !nav) return;
+  btn.addEventListener('click', function(e) {
+    e.stopPropagation();
+    var open = nav.classList.toggle('nav-open');
+    btn.classList.toggle('is-open', open);
+    btn.setAttribute('aria-expanded', open);
+  });
+  document.addEventListener('click', function(e) {
+    if (nav.classList.contains('nav-open') && !e.target.closest('.navbar')) {
+      nav.classList.remove('nav-open');
+      btn.classList.remove('is-open');
+      btn.setAttribute('aria-expanded', false);
+    }
+  });
+})();
+</script></body>
+</html>

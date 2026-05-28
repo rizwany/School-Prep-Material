@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ur">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>بہتر نتائج حاصل کرنا | Claude 101 (اردو)</title>
+<!-- Google tag (gtm.js) -->
+<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-PD85WRBD"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PD85WRBD');
+  </script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif;
+      font-size: 18px;
+      line-height: 2;
+      color: #1a1a1a;
+      background: #fafaf8;
+      direction: rtl;
+    }
+
+    header {
+      background: #cc785c;
+      color: white;
+      padding: 16px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header .brand      { font-size: 20px; font-weight: 700; }
+    header .lesson-num { font-size: 14px; opacity: 0.85; }
+
+    nav.breadcrumb {
+      background: #f0ede8;
+      padding: 10px 32px;
+      font-size: 14px;
+      color: #666;
+      border-bottom: 1px solid #e0ddd8;
+    }
+    nav.breadcrumb a { color: #cc785c; text-decoration: none; }
+    nav.breadcrumb a:hover { text-decoration: underline; }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    .section-tag {
+      display: inline-block;
+      background: #f0ede8;
+      color: #8c7060;
+      font-size: 13px;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+
+    .original-title {
+      color: #888;
+      font-size: 15px;
+      margin-bottom: 32px;
+      font-family: -apple-system, sans-serif;
+      direction: ltr;
+      text-align: right;
+    }
+
+    .content {
+      background: white;
+      border-radius: 12px;
+      padding: 40px 48px;
+      border: 1px solid #e8e4df;
+      font-size: 18px;
+      line-height: 2.2;
+    }
+
+    .content h2 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #cc785c;
+      margin: 32px 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #f0ede8;
+    }
+
+    .content h3 {
+      font-size: 19px;
+      font-weight: 700;
+      color: #333;
+      margin: 24px 0 8px;
+    }
+
+    .content p  { margin-bottom: 20px; color: #2a2a2a; }
+
+    .content ul, .content ol {
+      padding-right: 28px;
+      margin-bottom: 20px;
+    }
+
+    .content li { margin-bottom: 8px; }
+
+    .content strong { font-weight: 700; color: #1a1a1a; }
+
+    .progress-bar {
+      height: 4px;
+      background: #f0ede8;
+      border-radius: 2px;
+      margin-bottom: 32px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: #cc785c;
+      border-radius: 2px;
+    }
+
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 48px;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: 700;
+      border: none;
+    }
+
+    .btn-primary   { background: #cc785c; color: white; }
+    .btn-secondary { background: #f0ede8; color: #555; }
+    .btn:hover { opacity: 0.9; }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 13px;
+      color: #999;
+      border-top: 1px solid #ede9e4;
+      margin-top: 80px;
+      font-family: -apple-system, sans-serif;
+    }
+  </style>
+<link href="../../for_school/assets/lp-index.css" rel="stylesheet"/></head>
+<body>
+<!-- GTM noscript -->
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<nav aria-label="Main navigation" class="navbar" role="navigation">
+<div class="container">
+<div class="navbar__inner">
+<a aria-label="LearnPad – go to home" class="navbar__brand" href="../../index.html">
+<img alt="LearnPad" src="../../logo.png" style="height:30px;width:auto;display:block;"/>
+</a>
+<button aria-controls="navRight" aria-expanded="false" aria-label="Toggle navigation menu" class="navbar__burger" id="burgerBtn">
+<span></span><span></span><span></span>
+</button>
+<div class="navbar__right" id="navRight">
+<a class="navbar__link" href="../../index.html">Home</a>
+<a class="navbar__link" href="../../learnings/">Tech in Urdu</a>
+<a class="navbar__link" href="../../for_school/contact.html">Contact</a>
+<span aria-label="Claude 101 Urdu course" class="navbar__badge">Claude 101</span>
+</div>
+</div>
+</div>
+</nav>
+
+<div class="container">
+<div class="progress-bar">
+<div class="progress-fill" style="width: 25%"></div>
+</div>
+<span class="section-tag">Meet Claude</span>
+<h1>بہتر نتائج حاصل کرنا</h1>
+<p class="original-title">Original: Getting better results</p>
+<div class="content">
+<h2>ہیڈر نیویگیشن</h2>
+<ul>
+<li>میرا پروفائل</li>
+<li>سائن آؤٹ کریں۔</li>
+</ul>
+<p>کلاڈ 101</p>
+<h3>کلاڈ سے ملو</h3>
+<h3>اپنے کام اور علم کو منظم کرنا</h3>
+<h3>کلاڈ کی رسائی کو بڑھانا</h3>
+<h3>یہ سب ایک ساتھ ڈالنا</h3>
+<h3>نتیجہ اور سرٹیفکیٹ</h3>
+<h2>کلاڈ کیا ہے؟</h2>
+<p>متوقع وقت: 15 منٹ</p>
+<h3>سیکھنے کے مقاصد</h3>
+<p>اس سبق کے اختتام تک آپ اس قابل ہو جائیں گے:</p>
+<ul>
+<li>وضاحت کریں کہ کلاڈ کیا ہے اور وہ اصول جو اس کے ڈیزائن کی رہنمائی کرتے ہیں۔</li>
+<li>Claude کی بنیادی صلاحیتوں کی وضاحت کریں اور یہ کہ یہ ایک سادہ چیٹ بوٹ سے کیسے مختلف ہے۔</li>
+<li>کلاڈ تک رسائی کے مختلف طریقوں کی شناخت کریں (ویب، ڈیسک ٹاپ، اور موبائل)</li>
+</ul>
+<p>کلاڈ کیا ہے، آپ اس سے کیسے بات کرتے ہیں، اور آپ کو بہترین نتائج کیسے ملتے ہیں؟</p>
+<p>پراجیکٹس، فن پارے، اور ہنر کس طرح کلاڈ کی ساخت اور دوبارہ قابل استعمال علم دیتے ہیں؟</p>
+<p>کنیکٹرز، انٹرپرائز سرچ، اور ریسرچ آپ کے ٹولز اور ویب کو گفتگو میں کیسے لاتے ہیں؟</p>
+<p>کلاڈ تمام کرداروں میں ایکشن میں کیسا لگتا ہے، اور آپ اس کے ساتھ اور کہاں کام کر سکتے ہیں؟</p>
+<p>آپ یہاں سے کہاں جاتے ہیں، اور آپ اپنا سرٹیفکیٹ کیسے حاصل کرتے ہیں؟</p>
+<h3>کلاڈ کیا ہے؟</h3>
+<p>(10 منٹ)</p>
+<p>Claude ایک چیٹ بوٹ سے زیادہ ہے — یہ ایک AI اسسٹنٹ ہے جسے آپ کے سوچنے کا ساتھی بننے کے لیے ڈیزائن کیا گیا ہے۔ اس سبق میں آپ یہ سیکھیں گے کہ کلاؤڈ کو دوسرے AI ٹولز سے کیا مختلف بناتا ہے اور دیکھیں گے کہ یہ کام کے مختلف کاموں میں کس طرح مدد کر سکتا ہے۔</p>
+<p>اہم نکات</p>
+<ul>
+<li>Claude کو مددگار، بے ضرر اور ایماندار بننے کے لیے بنایا گیا ہے: ایک اعلیٰ سطح پر، Claude کی رہنمائی ان اصولوں سے ہوتی ہے جو اسے زہریلے یا امتیازی نتائج سے بچنے، غیر قانونی یا غیر اخلاقی سرگرمیوں میں انسانوں کی مدد کرنے سے بچنے، اور وسیع پیمانے پر ایک مددگار، ایماندار، اور بے ضرر AI نظام کے طور پر برتاؤ کرتے ہیں۔ یہ نقطہ نظر، جسے آئینی AI کہا جاتا ہے، کا مطلب ہے کہ کلاڈ کو انسانی اقدار کے ساتھ ہم آہنگ ہونے اور شفاف طریقے سے کام کرنے کی تربیت دی گئی ہے۔</li>
+<li>Claude ایک چیٹ بوٹ سے بڑھ کر ہے: Claude اعلی درجے کی وشوسنییتا اور پیشین گوئی کو برقرار رکھتے ہوئے مختلف قسم کے بات چیت اور ٹیکسٹ پروسیسنگ کے کام کرنے کی صلاحیت رکھتا ہے، بشمول خلاصہ، تلاش، تخلیقی اور تعاونی تحریر، سوال و جواب، کوڈنگ، اور بہت کچھ۔ Claude کے بارے میں سوچئے کہ وہ ایک فکری ساتھی ہے جو آپ کو پیچیدہ مسائل سے نمٹنے میں مدد دے سکتا ہے، اور مشکل حالات میں کام کر سکتا ہے، نہ کہ صرف سادہ سوالات کے جوابات دینے میں۔</li>
+<li>Claude کو چلانے کے قابل اور باہمی تعاون کے لیے ڈیزائن کیا گیا ہے: Claude شخصیت، لہجے اور رویے کی سمت لے سکتا ہے، اور گاہک رپورٹ کرتے ہیں کہ Claude کے نقصان دہ نتائج پیدا کرنے کا امکان بہت کم ہے، اس سے بات کرنا آسان ہے، اور زیادہ چلایا جا سکتا ہے — تاکہ آپ کم کوشش کے ساتھ اپنی مطلوبہ پیداوار حاصل کر سکیں۔</li>
+<li>آپ جہاں کہیں بھی کام کرتے ہیں Claude تک رسائی حاصل کر سکتے ہیں: Claude ایپس تمام پلان اقسام کے لیے دستیاب ہیں—مفت، پرو، میکس، ٹیم، اور انٹرپرائز۔ جب آپ سائن ان ہوتے ہیں تو آپ کی گفتگو، پروجیکٹس، میموری، اور ترجیحات تمام آلات پر مطابقت پذیر ہوتی ہیں۔ چاہے آپ اپنی میز پر ہوں یا چلتے پھرتے، کلاڈ ویب، ڈیسک ٹاپ، اور موبائل ایپس کے ذریعے دستیاب ہے۔</li>
+</ul>
+<h3>کلاڈ کی صلاحیتوں کو سمجھنا</h3>
+<p>Claude کاموں کی ایک وسیع رینج میں مدد کر سکتا ہے جو اسسٹنٹ جیسی شراکت داری کے لیے آسان سوال و جواب کے تعاملات سے کہیں آگے ہیں جو آپ کے کام کو خودکار اور بڑھا سکتے ہیں۔ یہاں کچھ چیزیں ہیں جن میں کلاڈ سبقت کرتا ہے:</p>
+<ul>
+<li>تحریر اور مواد کی تخلیق: Claude سوشل میڈیا پوسٹس، پیشہ ورانہ ای میلز اور پیچیدہ رپورٹس پر آپ کے ساتھ تعاون کر سکتا ہے۔ چونکہ کلاڈ کو شخصیت اور لہجے کی سمت لینے کی تربیت دی گئی ہے، اس لیے آپ ساخت اور وضاحت پر ایک ساتھ اعادہ کر سکتے ہیں جب تک کہ آپ کی آواز واضح طور پر نہ آجائے۔</li>
+<li>تحقیق اور تجزیہ: کلاڈ آپ کو تحقیقی زاویوں کو تلاش کرنے، نتائج مرتب کرنے، اور بامعنی بصیرت کی سطح پر ڈیٹا کا تجزیہ کرنے میں مدد کرتا ہے۔ آپ دستاویزات اپ لوڈ کر سکتے ہیں اور Claude آپ کو پیچیدہ معلومات کا احساس دلانے میں مدد کرے گا—یہ Claude کی بڑی سیاق و سباق کی ونڈو کے ذریعے فعال کیا گیا ہے، جو Opus 4.7 کا استعمال کرتے وقت پرو، میکس، ٹیم اور انٹرپرائز پلانز پر دستیاب 1M ٹوکنز کے ساتھ 200K+ ٹوکنز (تقریباً 500 صفحات یا اس سے زیادہ) لے سکتا ہے۔ یہ کلاڈ کو ایک ہی گفتگو میں وسیع مواد پر غور کرنے کی اجازت دیتا ہے۔</li>
+<li>کوڈنگ میں مدد: Claude Opus 4.7 ہمارا ابھی تک کا سب سے طاقتور ماڈل اور دنیا کا بہترین کوڈنگ ماڈل ہے۔ حقیقی دنیا کے کوڈنگ کے کاموں پر اس مضبوط کارکردگی کا مطلب ہے کہ Claude آپ کو متعدد پروگرامنگ زبانوں میں کوڈ لکھنے، ڈیبگ کرنے اور اس کی وضاحت کرنے میں مدد کر سکتا ہے۔</li>
+<li>مسئلہ حل کرنا اور استدلال کرنا: کلاڈ پیچیدہ علمی کاموں، ریاضی کے مسائل، اسٹریٹجک سوچ اور تجزیہ اور تحقیق کو سنبھالتا ہے۔ Claude Opus 4.7 اور Sonnet 4.7 ہائبرڈ ماڈل ہیں جو دو طریقوں کی پیشکش کرتے ہیں: قریبی فوری ردعمل اور گہری استدلال کے لیے توسیعی سوچ۔ انتھروپک توسیعی سوچ کلاڈ کو مرحلہ وار مسائل کے ذریعے کام کرنے کی اجازت دیتی ہے، جو اسے ان کاموں کے لیے موزوں بناتی ہے جن کے لیے محتاط تجزیہ کی ضرورت ہوتی ہے۔</li>
+<li>نئی چیزیں سیکھنا: چاہے آپ کوئی نیا ہنر سیکھ رہے ہوں، ناواقف ڈومینز کی تلاش کر رہے ہوں، یا پیچیدہ چیلنجوں سے گزر رہے ہوں، Claude آپ کے سیکھنے کے انداز اور رفتار کے مطابق ڈھال سکتا ہے۔ لرننگ موڈ کلاڈ کا ایک نیا تجربہ ہے جو جوابات فراہم کرنے کے بجائے آپ کے استدلال کے عمل کی رہنمائی کرتا ہے، تنقیدی سوچ کی مہارت کو فروغ دینے میں مدد کرتا ہے۔</li>
+</ul>
+<p>claude.com پر ہماری یوز کیس گیلری کو دریافت کرکے اپنے مخصوص فنکشن میں Claude کو استعمال کرنے کے طریقوں سے متاثر ہوں۔ AI کیا کر سکتا ہے (اور نہیں کر سکتا) اس میں مزید گہرائی میں ڈوبنے کے لیے، ہمارا AI صلاحیتوں کا کورس دیکھیں۔</p>
+<h3>کلاڈ تک رسائی کے طریقے</h3>
+<p>Claude ذہانت ہے — وہ AI اسسٹنٹ جس کے ساتھ آپ پورے کورس میں کام کرنا سیکھ رہے ہیں۔ وہی ذہانت متعدد انٹرفیسز میں دستیاب ہے، ہر ایک مختلف قسم کے کاموں کے لیے موزوں ہے۔</p>
+<ul>
+<li>Claude.ai (اور اس سے منسلک موبائل اور ڈیسک ٹاپ ایپس) وہ بنیادی طریقہ ہیں جو زیادہ تر لوگ Claude کے ساتھ بات چیت کرتے ہیں۔ یہاں، آپ سوالات پوچھ سکتے ہیں، خیالات کو ذہن نشین کر سکتے ہیں، دستاویزات تخلیق اور ترمیم کر سکتے ہیں، اور بہت کچھ۔ Claude.ai بات چیت، تحریری مدد، تحقیق، تجزیہ، اور فائلیں بنانے کے لیے مثالی ہے۔ اس کورس میں ہماری توجہ یہی ہے۔</li>
+<li>Claude Code ایک ایجنٹی کوڈنگ ٹول ہے جو ڈویلپرز کے لیے ڈیزائن کیا گیا ہے لیکن آپ کے ڈیسک ٹاپ پر ہر قسم کی فائل میں ہیرا پھیری کے لیے استعمال کیا جا سکتا ہے۔ کلاڈ کوڈ براہ راست فائلوں میں ترمیم کرسکتا ہے، کمانڈ چلا سکتا ہے اور کمٹ بنا سکتا ہے۔</li>
+<li>Claude and Slack Claude کو براہ راست آپ کی ٹیم کے کمیونیکیشن ٹول میں لاتا ہے۔ آپ کسی بھی چینل یا گفتگو سے AI اسسٹنٹ ہیڈر میں Claude کے ساتھ چیٹ کر سکتے ہیں، یا تھریڈز میں @Claude کا ذکر کر کے۔ جب آپ Slack کو Claude سے جوڑتے ہیں، تو Claude آپ کے ورک اسپیس کے چینلز، براہ راست پیغامات، اور مشترکہ فائلوں کو تلاش کرتا ہے تاکہ آپ کو بہتر جوابات اور تحقیق کے لیے درکار سیاق و سباق تلاش کریں۔</li>
+<li>Claude for Excel آپ کو مائیکروسافٹ ایکسل میں سائڈبار میں Claude کے ساتھ براہ راست کام کرنے دیتا ہے، جہاں Claude نئی Excel ورک بکس کو پڑھ، تجزیہ، ترمیم اور تخلیق کرسکتا ہے۔ کلاڈ فار ایکسل ماڈل تجزیہ، مفروضہ اپ ڈیٹس، ایرر ڈیبگنگ، ٹیمپلیٹ آبادی، فارمولہ کی وضاحت، اور ملٹی ٹیب نیویگیشن کے لیے بہترین ہے۔</li>
+</ul>
+<p>یہ کورس بنیادی طور پر Claude.ai پر توجہ مرکوز کرے گا، لیکن آپ ڈیولپمنٹ ورک فلو میں Claude کے استعمال کے بارے میں مزید معلومات کے لیے Claude Code in Action بھی دیکھ سکتے ہیں۔</p>
+<h3>سبق کی عکاسی۔</h3>
+<p>کلاؤڈ کو سوچنے والے ساتھی کے طور پر رکھنے سے آپ کے موجودہ کام میں کون سے کام فائدہ اٹھا سکتے ہیں؟ اپنے کیلنڈر پر ایک نظر ڈالیں (یا ابھی تک بہتر، کلاڈ سے پوچھیں) اور کچھ کاموں کی نشاندہی کریں جن کی مدد کے لیے آپ کلاڈ کو استعمال کرنا چاہتے ہیں۔</p>
+<h3>آگے کیا ہے</h3>
+<p>اگلے سبق میں، آپ Claude انٹرفیس کو نیویگیٹ کرنے کا طریقہ سیکھیں گے، اپنی پہلی گفتگو شروع کریں گے، اور اس کی بنیادی باتوں کو سمجھیں گے کہ Claude آپ کے پیغامات کا جواب کیسے دیتا ہے۔</p>
+<p>تاثرات</p>
+<p>جیسے جیسے آپ کورس کے ذریعے آگے بڑھیں گے، ہم آپ سے اس بارے میں سننا پسند کریں گے کہ آپ کورس کے تصورات کو اپنے کام میں کس طرح استعمال کر رہے ہیں اور آپ کے پاس کوئی بھی رائے ہو سکتی ہے۔ اپنی رائے یہاں شیئر کریں۔</p>
+<p>اعترافات اور لائسنس</p>
+<p>کاپی رائٹ 2025 Anthropic. جملہ حقوق محفوظ ہیں۔</p>
+</div>
+<div class="nav-buttons">
+<a class="btn btn-secondary" href="02_first-conversation.html">← پچھلا سبق</a>
+<a class="btn btn-primary" href="04_desktop-app.html">اگلا سبق →</a>
+</div>
+</div>
+<footer class="footer" role="contentinfo">
+<div class="container">
+<div class="footer__inner">
+<div class="footer__brand">
+<span class="navbar__name">LearnPad</span>
+<p class="footer__tagline">Learn it. Practice it. Own it.</p>
+</div>
+<div class="footer__links">
+<p class="footer__links-label">Quick Links</p>
+<ul class="footer__links-list">
+<li><a href="../../index.html">Home</a></li>
+<li><a href="../../for_school/contact.html">Contact Us</a></li>
+</ul>
+</div>
+<div class="footer__right">
+<p class="footer__heart">Made with ❤️ for curious learners everywhere</p>
+<p style="font-size:0.78rem;color:rgba(255,255,255,.6);margin-top:6px;font-family:-apple-system,sans-serif;">
+          Claude 101 | اردو | Anthropic
+        </p>
+</div>
+</div>
+<div class="footer__bottom">
+<p>© 2025 LearnPad. Free educational resources for every learner.</p>
+</div>
+</div>
+</footer>
+<script>
+(function() {
+  var btn = document.getElementById('burgerBtn');
+  var nav = document.getElementById('navRight');
+  if (!btn || !nav) return;
+  btn.addEventListener('click', function(e) {
+    e.stopPropagation();
+    var open = nav.classList.toggle('nav-open');
+    btn.classList.toggle('is-open', open);
+    btn.setAttribute('aria-expanded', open);
+  });
+  document.addEventListener('click', function(e) {
+    if (nav.classList.contains('nav-open') && !e.target.closest('.navbar')) {
+      nav.classList.remove('nav-open');
+      btn.classList.remove('is-open');
+      btn.setAttribute('aria-expanded', false);
+    }
+  });
+})();
+</script></body>
+</html>
