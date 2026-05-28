@@ -34,27 +34,44 @@
     .arrow { color: #cc785c; font-size: 18px; margin-right: auto; }
     footer { text-align: center; padding: 24px; font-size: 13px; color: #999; border-top: 1px solid #ede9e4; font-family: -apple-system, sans-serif; }
   </style>
-<link href="../../for_school/assets/lp-index.css" rel="stylesheet"/></head>
+<style id="common-site-nav-style">
+  .common-site-nav { position: sticky; top: 0; z-index: 1000; background: rgba(26, 26, 46, 0.93); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-bottom: 1px solid rgba(255,255,255,0.07); font-family: "Segoe UI", Tahoma, Arial, sans-serif; direction: ltr; }
+  .common-site-nav__inner { width: min(1100px, calc(100% - 32px)); min-height: 66px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+  .common-site-nav a { color: inherit; text-decoration: none; }
+  .common-site-nav__brand { flex: 0 0 auto; display: inline-flex; align-items: center; padding: 8px 0; }
+  .common-site-nav__logo { height: 38px; width: auto; display: block; }
+  .common-site-nav__links { display: flex; align-items: center; justify-content: flex-end; gap: 6px; }
+  .common-site-nav__link { color: rgba(255,255,255,0.78); padding: 7px 14px; border-radius: 8px; font-size: 0.88rem; font-weight: 700; line-height: 1.2; transition: color 0.18s ease, background 0.18s ease; white-space: nowrap; }
+  .common-site-nav__link:hover, .common-site-nav__link:focus-visible { color: #fff; background: rgba(255,255,255,0.08); outline: none; }
+  .common-site-nav__badge { color: #1A1A2E; background: linear-gradient(135deg, #FFD166, #FFC233); padding: 5px 12px; border-radius: 100px; font-size: 0.72rem; font-weight: 800; white-space: nowrap; }
+  .common-site-footer { background: #1A1A2E; color: rgba(255,255,255,0.7); font-family: "Segoe UI", Tahoma, Arial, sans-serif; direction: ltr; padding: 32px 0 0; margin-top: 40px; }
+  .common-site-footer__inner { width: min(1180px, calc(100% - 24px)); margin: 0 auto; display: flex; align-items: flex-start; justify-content: space-between; gap: 32px; flex-wrap: wrap; padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+  .common-site-footer__brand-name { font-size: 1.15rem; font-weight: 800; color: #fff; display: block; margin-bottom: 4px; }
+  .common-site-footer__tagline { font-size: 0.82rem; color: rgba(255,255,255,0.45); }
+  .common-site-footer__links { display: flex; flex-direction: column; gap: 4px; }
+  .common-site-footer__links-label { font-size: 0.72rem; font-weight: 800; color: rgba(255,255,255,0.4); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 6px; }
+  .common-site-footer__links a { color: rgba(255,255,255,0.65); font-size: 0.85rem; font-weight: 600; padding: 3px 0; text-decoration: none; transition: color 0.18s; display: block; }
+  .common-site-footer__links a:hover { color: #fff; }
+  .common-site-footer__bottom { width: min(1180px, calc(100% - 24px)); margin: 0 auto; padding: 16px 0 20px; font-size: 0.78rem; color: rgba(255,255,255,0.3); }
+  @media (max-width: 640px) { .common-site-nav__inner { width: calc(100% - 16px); min-height: 56px; gap: 10px; } .common-site-nav__logo { height: 32px; } .common-site-nav__links { gap: 2px; } .common-site-nav__link { font-size: 0.78rem; padding: 6px 8px; } .common-site-nav__badge { display: none; } .common-site-footer__inner { flex-direction: column; gap: 16px; } }
+  @media (max-width: 480px) { .common-site-nav__link:first-child { display: none; } .common-site-nav__link { font-size: 0.74rem; padding: 6px 7px; } }
+</style>
+</head>
 <body>
 <!-- GTM noscript -->
 <noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD" style="display:none;visibility:hidden" width="0"></iframe></noscript>
-<nav aria-label="Main navigation" class="navbar" role="navigation">
-<div class="container">
-<div class="navbar__inner">
-<a aria-label="LearnPad – go to home" class="navbar__brand" href="../../index.html">
-<img alt="LearnPad" src="../../logo.png" style="height:30px;width:auto;display:block;"/>
-</a>
-<button aria-controls="navRight" aria-expanded="false" aria-label="Toggle navigation menu" class="navbar__burger" id="burgerBtn">
-<span></span><span></span><span></span>
-</button>
-<div class="navbar__right" id="navRight">
-<a class="navbar__link" href="../../index.html">Home</a>
-<a class="navbar__link" href="../../learnings/">Tech in Urdu</a>
-<a class="navbar__link" href="../../for_school/contact.html">Contact</a>
-<span aria-label="Claude 101 Urdu course" class="navbar__badge">Claude 101</span>
-</div>
-</div>
-</div>
+<nav class="common-site-nav" aria-label="Main navigation">
+  <div class="common-site-nav__inner">
+    <a class="common-site-nav__brand" href="../../index.html" aria-label="LearnPad - go to home">
+      <img class="common-site-nav__logo" src="../../logo.png" alt="LearnPad" />
+    </a>
+    <div class="common-site-nav__links">
+      <a class="common-site-nav__link" href="../../index.html">Home</a>
+      <a class="common-site-nav__link" href="../../for_school/index.html">School Worksheets</a>
+      <a class="common-site-nav__link" href="../index.html">Tech in Urdu</a>
+      <span class="common-site-nav__badge">Claude 101</span>
+    </div>
+  </div>
 </nav>
 <div class="container">
 <div class="section">
@@ -169,50 +186,22 @@
 </a>
 </div>
 </div>
-<footer class="footer" role="contentinfo">
-<div class="container">
-<div class="footer__inner">
-<div class="footer__brand">
-<span class="navbar__name">LearnPad</span>
-<p class="footer__tagline">Learn it. Practice it. Own it.</p>
-</div>
-<div class="footer__links">
-<p class="footer__links-label">Quick Links</p>
-<ul class="footer__links-list">
-<li><a href="../../index.html">Home</a></li>
-<li><a href="../../for_school/contact.html">Contact Us</a></li>
-</ul>
-</div>
-<div class="footer__right">
-<p class="footer__heart">Made with ❤️ for curious learners everywhere</p>
-<p style="font-size:0.78rem;color:rgba(255,255,255,.6);margin-top:6px;font-family:-apple-system,sans-serif;">
-          Claude 101 | اردو | Anthropic
-        </p>
-</div>
-</div>
-<div class="footer__bottom">
-<p>© 2025 LearnPad. Free educational resources for every learner.</p>
-</div>
-</div>
+<footer class="common-site-footer" role="contentinfo">
+  <div class="common-site-footer__inner">
+    <div>
+      <span class="common-site-footer__brand-name">LearnPad</span>
+      <p class="common-site-footer__tagline">Learn it. Practice it. Own it.</p>
+    </div>
+    <div class="common-site-footer__links">
+      <p class="common-site-footer__links-label">Quick Links</p>
+      <a href="../index.html">Tech in Urdu</a>
+      <a href="../../for_school/index.html">Worksheets</a>
+      <a href="../../index.html">LearnPad Home</a>
+    </div>
+  </div>
+  <div class="common-site-footer__bottom">
+    &copy; 2025 LearnPad. Free educational resources for every learner.
+  </div>
 </footer>
-<script>
-(function() {
-  var btn = document.getElementById('burgerBtn');
-  var nav = document.getElementById('navRight');
-  if (!btn || !nav) return;
-  btn.addEventListener('click', function(e) {
-    e.stopPropagation();
-    var open = nav.classList.toggle('nav-open');
-    btn.classList.toggle('is-open', open);
-    btn.setAttribute('aria-expanded', open);
-  });
-  document.addEventListener('click', function(e) {
-    if (nav.classList.contains('nav-open') && !e.target.closest('.navbar')) {
-      nav.classList.remove('nav-open');
-      btn.classList.remove('is-open');
-      btn.setAttribute('aria-expanded', false);
-    }
-  });
-})();
-</script></body>
+</body>
 </html>
