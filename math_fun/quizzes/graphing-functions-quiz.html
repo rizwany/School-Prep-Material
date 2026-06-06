@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Graphing Functions Quiz – Math Fun | LearnPad</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg:       #0e0f14;
+      --card:     #1d1f2b;
+      --border:   #2a2c3a;
+      --text:     #f0f0f8;
+      --muted:    rgba(240,240,248,.42);
+      --green:    #58cc02;
+      --green-dk: #46a301;
+      --red:      #ff4b4b;
+      --blue:     #4361ee;
+      --purple:   #7c3aed;
+      --opt-bg:   #1e2030;
+      --opt-brd:  #313446;
+      --radius:   16px;
+    }
+    body { font-family: 'Nunito', system-ui, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; display: flex; flex-direction: column; }
+
+    header { background: #fff; border-bottom: 2px solid #e2e6f0; padding: 0 24px; position: sticky; top: 0; z-index: 100; flex-shrink: 0; }
+    .header-inner { max-width: 960px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    .logo-link { text-decoration: none; display: flex; align-items: center; }
+    .logo-img  { height: 34px; width: auto; }
+    .logo-txt  { font-weight: 900; font-size: 1.15rem; color: #4361ee; }
+    nav a { font-weight: 700; font-size: 0.85rem; color: #5a6076; text-decoration: none; padding: 6px 12px; border-radius: 8px; transition: color .15s, background .15s; }
+    nav a:hover { color: #4361ee; background: #eef1fd; }
+
+    main { flex: 1; display: flex; flex-direction: column; align-items: center; }
+    .quiz-shell { width: 100%; max-width: 520px; padding: 16px 20px 80px; display: flex; flex-direction: column; flex: 1; }
+
+    /* ── Level toggle ── */
+    .level-row { display: flex; justify-content: center; gap: 8px; margin-bottom: 18px; }
+    .level-btn { font-family: inherit; font-size: 0.8rem; font-weight: 800; padding: 6px 18px; border-radius: 999px; cursor: pointer; border: 2px solid var(--opt-brd); background: var(--opt-bg); color: var(--muted); transition: all .15s; }
+    .level-btn.active-easy { border-color: var(--green);  background: #172110; color: #88e04a; }
+    .level-btn.active-hard { border-color: var(--purple); background: #1e1535; color: #c084fc; }
+
+    /* ── Progress ── */
+    .progress-wrap { margin-bottom: 16px; }
+    .progress-track { height: 8px; background: #252733; border-radius: 4px; overflow: hidden; }
+    .progress-fill  { height: 100%; background: var(--green); border-radius: 4px; width: 0%; transition: width .4s ease; }
+    .progress-meta  { display: flex; justify-content: space-between; margin-top: 6px; font-size: 0.72rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+
+    /* ── Question card ── */
+    .q-card { background: var(--card); border: 1.5px solid var(--border); border-radius: var(--radius); padding: 22px 18px 18px; margin-bottom: 14px; }
+    .q-text { font-size: 1.05rem; font-weight: 800; line-height: 1.55; margin-bottom: 16px; color: var(--text); }
+
+    /* ── f(x) banner (identify/apply) ── */
+    .fx-banner { text-align: center; margin-bottom: 12px; font-size: 1.1rem; font-weight: 800; color: #a0b4ff; font-style: italic; opacity: 0; transition: opacity .3s; }
+    .fx-banner.show { opacity: 1; }
+
+    /* ── IO Machine (identify + apply) ── */
+    .machine { margin-bottom: 12px; position: relative; }
+    .rule-row { display: flex; justify-content: center; margin-bottom: 8px; z-index: 2; position: relative; }
+    .rule-pill {
+      background: #252733; border: 1.5px solid var(--border); color: var(--muted);
+      font-weight: 800; font-size: 0.9rem; padding: 5px 20px; border-radius: 20px;
+      transition: all .25s; white-space: nowrap; max-width: 260px; text-align: center;
+    }
+    .rule-pill.known {
+      background: rgba(67,97,238,.18); border-color: rgba(67,97,238,.55); color: #a0b4ff;
+      box-shadow: 0 0 20px rgba(67,97,238,.35), 0 0 50px rgba(67,97,238,.12);
+    }
+    .diagram-labels { display: flex; justify-content: space-between; padding: 0 4px; margin-bottom: 6px; font-size: 0.72rem; font-weight: 700; color: var(--muted); letter-spacing: .05em; }
+    .diagram-wrapper { position: relative; display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; }
+    .rule-glow { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 36px; height: 80%; background: radial-gradient(ellipse at center, rgba(67,97,238,.38) 0%, transparent 70%); pointer-events: none; opacity: 0; transition: opacity .3s; }
+    .machine.rule-known .rule-glow { opacity: 1; }
+    .io-box { background: #181921; border: 1.5px solid var(--border); border-radius: 12px; padding: 6px 12px; flex-shrink: 0; min-width: 86px; position: relative; z-index: 1; }
+    .io-item { height: 40px; display: flex; align-items: center; gap: 6px; }
+    .io-item.in-item  { justify-content: flex-end; }
+    .io-item.out-item { justify-content: flex-start; }
+    .io-val { font-size: 0.9rem; font-weight: 700; color: var(--text); white-space: nowrap; }
+    .io-val.bold { font-weight: 900; color: #fff; }
+    .io-unk { background: #2a2c3a; border: 1.5px solid #3d3f52; border-radius: 7px; padding: 3px 14px; color: rgba(255,255,255,.3); font-weight: 800; font-size: 0.9rem; }
+    .io-dot { width: 9px; height: 9px; border-radius: 50%; background: rgba(255,255,255,.55); border: 1.5px solid rgba(255,255,255,.8); flex-shrink: 0; }
+    .io-arr { color: rgba(255,255,255,.4); font-size: 0.65rem; flex-shrink: 0; }
+    .lines-svg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; overflow: visible; }
+
+    /* ── Text options (identify) ── */
+    .options-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 12px; }
+    .opt-btn {
+      background: var(--opt-bg); border: 2px solid var(--opt-brd); border-radius: 14px;
+      color: var(--text); font-family: inherit; font-size: 0.88rem; font-weight: 700;
+      padding: 13px 8px; cursor: pointer; text-align: center; font-style: italic;
+      transition: border-color .15s, background .15s, transform .1s;
+    }
+    .opt-btn:hover:not(.locked) { border-color: #555870; background: #252737; }
+    .opt-btn:active:not(.locked) { transform: scale(.97); }
+    .opt-btn.selected { border-color: #6070cc; background: #1e2240; }
+    .opt-btn.correct  { border-color: var(--green) !important; background: #172110 !important; color: #88e04a; }
+    .opt-btn.wrong    { border-color: var(--red)   !important; background: #221212 !important; color: #ff8080; }
+    .opt-btn.locked   { cursor: default; }
+
+    /* ── Number tiles (apply) ── */
+    .tiles-area { margin-bottom: 12px; }
+    .tiles-formula { background: #181921; border: 1.5px solid var(--border); border-radius: 12px; padding: 12px 16px; text-align: center; font-size: 1rem; font-weight: 800; color: var(--muted); margin-bottom: 10px; font-style: italic; }
+    .tiles-formula .blank { display: inline-block; background: #2a2c3a; border: 2px solid #3d3f52; border-radius: 8px; min-width: 44px; padding: 1px 10px; color: rgba(255,255,255,.3); vertical-align: middle; font-size: 1.1rem; font-style: normal; }
+    .tiles-formula .filled { display: inline-block; background: rgba(67,97,238,.22); border: 2px solid rgba(67,97,238,.7); border-radius: 8px; min-width: 44px; padding: 1px 10px; color: #a0b4ff; vertical-align: middle; font-size: 1.1rem; font-style: normal; transition: all .2s; }
+    .tiles-formula .correct-fill { background: rgba(88,204,2,.18); border-color: var(--green); color: #88e04a; }
+    .tiles-formula .wrong-fill   { background: rgba(255,75,75,.18); border-color: var(--red);   color: #ff8080; }
+    .tiles-row { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+    .tile-btn {
+      background: var(--opt-bg); border: 2px solid var(--opt-brd); border-radius: 12px;
+      color: var(--text); font-family: inherit; font-size: 1rem; font-weight: 800;
+      width: 64px; height: 50px; cursor: pointer; display: flex; align-items: center; justify-content: center;
+      transition: border-color .15s, background .15s, transform .1s;
+    }
+    .tile-btn:hover:not(.locked) { border-color: #555870; background: #252737; }
+    .tile-btn:active:not(.locked) { transform: scale(.95); }
+    .tile-btn.selected { border-color: #6070cc; background: #1e2240; }
+    .tile-btn.correct  { border-color: var(--green) !important; background: #172110 !important; color: #88e04a; }
+    .tile-btn.wrong    { border-color: var(--red)   !important; background: #221212 !important; color: #ff8080; }
+    .tile-btn.locked   { cursor: default; }
+
+    /* ── Graph (plot) ── */
+    .graph-section { margin-bottom: 12px; }
+    .graph-wrap { display: flex; gap: 14px; align-items: flex-start; }
+    .coord-svg { cursor: crosshair; flex-shrink: 0; touch-action: none; }
+    .val-table-wrap { flex: 1; }
+    .val-table { width: 100%; border-collapse: collapse; }
+    .val-table th { font-size: 0.78rem; font-weight: 900; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; padding: 5px 8px; border-bottom: 1.5px solid var(--border); text-align: center; font-style: italic; }
+    .val-table td { font-size: 0.88rem; font-weight: 700; padding: 5px 8px; text-align: center; color: var(--text); border-bottom: 1px solid rgba(255,255,255,.05); }
+    .val-table .target-row td { color: #a0b4ff; font-weight: 900; }
+    .val-table .target-row .fx-cell { color: var(--muted); }
+    .val-table .target-row .fx-cell.placed { color: #a0b4ff; }
+    .graph-hint { text-align: center; font-size: 0.72rem; font-weight: 700; color: var(--muted); margin-top: 8px; letter-spacing: .02em; }
+    .graph-hint span { color: #a0b4ff; }
+
+    /* ── Start over ── */
+    .start-over-row { display: flex; justify-content: flex-end; margin-top: 4px; }
+    .start-over-btn { background: none; border: none; color: var(--muted); font-family: inherit; font-size: 0.8rem; font-weight: 700; cursor: pointer; padding: 4px 8px; border-radius: 8px; transition: color .15s; display: flex; align-items: center; gap: 5px; }
+    .start-over-btn:hover { color: var(--text); }
+
+    /* ── Feedback ── */
+    .feedback-bar { border-radius: 12px; padding: 12px 16px; margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px; opacity: 0; transition: opacity .2s; }
+    .feedback-bar.show { opacity: 1; }
+    .feedback-bar.ok  { background: #172110; border: 1.5px solid #2d4a1e; }
+    .feedback-bar.err { background: #221212; border: 1.5px solid #4a1f1f; }
+    .fb-icon  { font-size: 1.1rem; flex-shrink: 0; }
+    .fb-body  { flex: 1; }
+    .fb-title { font-size: 0.88rem; font-weight: 900; margin-bottom: 2px; }
+    .fb-title.ok  { color: #88e04a; }
+    .fb-title.err { color: #ff8080; }
+    .fb-hint  { font-size: 0.78rem; font-weight: 600; color: var(--muted); line-height: 1.5; }
+
+    /* ── Why panel ── */
+    .why-panel { background: #14182a; border: 1.5px solid rgba(67,97,238,.4); border-radius: 12px; padding: 14px 16px; margin-bottom: 10px; display: none; animation: slideIn .2s ease; }
+    .why-panel.show { display: block; }
+    @keyframes slideIn { from { opacity:0; transform:translateY(-6px) } to { opacity:1; transform:translateY(0) } }
+    .why-title { font-size: 0.8rem; font-weight: 900; color: #a0b4ff; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 8px; }
+    .why-steps { list-style: none; }
+    .why-steps li { font-size: 0.82rem; font-weight: 700; color: var(--muted); padding: 4px 0; border-bottom: 1px solid rgba(255,255,255,.05); line-height: 1.5; }
+    .why-steps li:last-child { border-bottom: none; color: #88e04a; }
+    .why-steps li span { color: #a0b4ff; }
+
+    /* ── Button row ── */
+    .btn-row { display: flex; gap: 10px; }
+    .why-btn { flex-shrink: 0; padding: 16px 18px; border: 2px solid var(--opt-brd); border-radius: 999px; font-family: inherit; font-size: 0.9rem; font-weight: 800; cursor: pointer; background: var(--opt-bg); color: var(--muted); transition: all .15s; display: none; }
+    .why-btn.show { display: block; }
+    .why-btn:hover { border-color: #a0b4ff; color: #a0b4ff; }
+    .why-btn.active { border-color: rgba(67,97,238,.7); background: rgba(67,97,238,.15); color: #a0b4ff; }
+    .check-btn { flex: 1; padding: 16px; border: none; border-radius: 999px; font-family: inherit; font-size: 1rem; font-weight: 900; cursor: pointer; background: #252737; color: var(--muted); transition: background .15s, color .15s; }
+    .check-btn.ready    { background: var(--blue);  color: #fff; }
+    .check-btn.ready:hover { background: #3451d1; }
+    .check-btn.continue { background: var(--green); color: #fff; }
+    .check-btn.continue:hover { background: var(--green-dk); }
+
+    /* ── Results ── */
+    .results-wrap { text-align: center; display: none; padding: 20px 0 40px; }
+    .results-wrap.show { display: block; }
+    .res-card { background: var(--card); border: 1.5px solid var(--border); border-radius: var(--radius); padding: 34px 28px 28px; }
+    .res-emoji { font-size: 3rem; margin-bottom: 10px; }
+    .res-title { font-size: 1.4rem; font-weight: 900; color: var(--text); margin-bottom: 4px; }
+    .res-level { font-size: 0.75rem; font-weight: 700; color: var(--muted); margin-bottom: 10px; text-transform: uppercase; letter-spacing: .08em; }
+    .res-score { font-size: 2.8rem; font-weight: 900; color: var(--green); margin: 14px 0 2px; }
+    .res-label { font-size: 0.82rem; font-weight: 700; color: var(--muted); margin-bottom: 14px; }
+    .res-msg   { font-size: 0.88rem; font-weight: 700; color: var(--muted); line-height: 1.6; margin-bottom: 22px; }
+    .btn-retry  { background: var(--blue); color: #fff; font-family: inherit; font-size: 0.95rem; font-weight: 800; padding: 14px 36px; border: none; border-radius: 999px; cursor: pointer; transition: background .15s; display: block; width: 100%; margin-bottom: 10px; }
+    .btn-retry:hover { background: #3451d1; }
+    .btn-switch { background: none; border: 1.5px solid var(--opt-brd); color: var(--muted); font-family: inherit; font-size: 0.85rem; font-weight: 700; padding: 10px 24px; border-radius: 999px; cursor: pointer; transition: all .15s; width: 100%; margin-bottom: 10px; }
+    .btn-switch:hover { border-color: #a0b4ff; color: #a0b4ff; }
+    .btn-home { background: none; border: 1.5px solid var(--border); color: var(--muted); font-family: inherit; font-size: 0.85rem; font-weight: 700; padding: 10px 24px; border-radius: 999px; cursor: pointer; transition: all .15s; width: 100%; }
+    .btn-home:hover { border-color: #555870; color: var(--text); }
+
+    footer { background: #0a0b10; color: rgba(255,255,255,.4); padding: 16px 24px; text-align: center; font-size: 0.75rem; font-weight: 600; }
+    footer a { color: rgba(255,255,255,.25); text-decoration: none; }
+    footer a:hover { color: rgba(255,255,255,.7); }
+
+    @media (max-width: 480px) {
+      .quiz-shell { padding: 12px 14px 70px; }
+      .opt-btn { font-size: 0.8rem; padding: 11px 6px; }
+      .tile-btn { width: 56px; height: 46px; font-size: 0.9rem; }
+      .io-box { min-width: 72px; padding: 5px 8px; }
+    }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header>
+  <div class="header-inner">
+    <a class="logo-link" href="../../index.html">
+      <img src="../../logo.png" alt="LearnPad" class="logo-img"
+           onerror="this.outerHTML='<span class=logo-txt>LearnPad</span>'" />
+    </a>
+    <nav>
+      <a href="../../for_school/index.html">School</a>
+      <a href="../../index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="quiz-shell" id="quizShell">
+
+    <div class="level-row">
+      <button class="level-btn active-easy" id="btnEasy" onclick="setLevel('easy')">Easy</button>
+      <button class="level-btn" id="btnHard"  onclick="setLevel('hard')">Hard</button>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-track"><div class="progress-fill" id="pFill"></div></div>
+      <div class="progress-meta">
+        <span>Question <span id="qNum">1</span> of 10</span>
+        <span>⭐ <span id="scoreDisp">0</span></span>
+      </div>
+    </div>
+
+    <div class="q-card" id="qCard"></div>
+
+    <div class="feedback-bar" id="feedbackBar">
+      <div class="fb-icon" id="fbIcon"></div>
+      <div class="fb-body">
+        <div class="fb-title" id="fbTitle"></div>
+        <div class="fb-hint"  id="fbHint"></div>
+      </div>
+    </div>
+
+    <div class="why-panel" id="whyPanel">
+      <div class="why-title">Step-by-step</div>
+      <ul class="why-steps" id="whySteps"></ul>
+    </div>
+
+    <div class="btn-row">
+      <button class="why-btn" id="whyBtn" onclick="toggleWhy()">Why?</button>
+      <button class="check-btn" id="checkBtn">Check</button>
+    </div>
+
+    <div class="results-wrap" id="resultsWrap">
+      <div class="res-card">
+        <div class="res-emoji" id="resEmoji">🎉</div>
+        <div class="res-title">Quiz Complete!</div>
+        <div class="res-level" id="resLevel">Easy Level</div>
+        <div class="res-score" id="resScore">0/10</div>
+        <div class="res-label">correct answers</div>
+        <div class="res-msg"   id="resMsg"></div>
+        <button class="btn-retry"  onclick="initQuiz()">Play Again →</button>
+        <button class="btn-switch" id="btnSwitch" onclick="switchLevel()">Try Hard Level →</button>
+        <button class="btn-home"   onclick="location.href='../../index.html'">← Back to Home</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <a href="../../index.html">LearnPad</a> &nbsp;·&nbsp; Free Math Practice &nbsp;·&nbsp;
+  <a href="../../for_school/index.html">School Worksheets</a>
+</footer>
+
+<script>
+/* ═══════════════════════════════════════════
+   UTILITIES
+═══════════════════════════════════════════ */
+const pick    = a => a[Math.floor(Math.random() * a.length)];
+const shuffle = a => [...a].sort(() => Math.random() - .5);
+
+/* ═══════════════════════════════════════════
+   RULE DEFINITIONS
+   xEx  = x values shown as examples in the diagram / graph
+   xTgt = the x value to apply / plot
+   yMin / yMax = graph grid bounds (inclusive)
+   whyApply(x)  → step strings for "apply" Why?
+   whyPlot(x)   → step strings for "plot" Why?
+═══════════════════════════════════════════ */
+const EASY_RULES = [
+  {
+    id:'xp1',   fxLabel:'f(x) = x + 1',
+    fn: x => x+1,
+    xEx:[1,2,3,4], xTgt:5, yMin:0, yMax:8,
+    whyApply: x => [`Substitute x = <span>${x}</span> into f(x) = x + 1`,`f(${x}) = ${x} + 1 = <span>${x+1}</span>`],
+    whyPlot:  x => [`f(x) = x + 1, substitute x = <span>${x}</span>`,`f(${x}) = ${x} + 1 = <span>${x+1}</span>`,`Plot the point (<span>${x}</span>, <span>${x+1}</span>)`],
+  },
+  {
+    id:'xp2',   fxLabel:'f(x) = x + 2',
+    fn: x => x+2,
+    xEx:[1,2,3,4], xTgt:5, yMin:0, yMax:10,
+    whyApply: x => [`Substitute x = <span>${x}</span> into f(x) = x + 2`,`f(${x}) = ${x} + 2 = <span>${x+2}</span>`],
+    whyPlot:  x => [`f(x) = x + 2, substitute x = <span>${x}</span>`,`f(${x}) = ${x} + 2 = <span>${x+2}</span>`,`Plot the point (<span>${x}</span>, <span>${x+2}</span>)`],
+  },
+  {
+    id:'xp3',   fxLabel:'f(x) = x + 3',
+    fn: x => x+3,
+    xEx:[1,2,3,4], xTgt:5, yMin:0, yMax:10,
+    whyApply: x => [`Substitute x = <span>${x}</span> into f(x) = x + 3`,`f(${x}) = ${x} + 3 = <span>${x+3}</span>`],
+    whyPlot:  x => [`f(x) = x + 3, substitute x = <span>${x}</span>`,`f(${x}) = ${x} + 3 = <span>${x+3}</span>`,`Plot the point (<span>${x}</span>, <span>${x+3}</span>)`],
+  },
+  {
+    id:'2x',    fxLabel:'f(x) = 2x',
+    fn: x => 2*x,
+    xEx:[1,2,3,4], xTgt:5, yMin:0, yMax:12,
+    whyApply: x => [`Substitute x = <span>${x}</span> into f(x) = 2x`,`f(${x}) = 2 × ${x} = <span>${2*x}</span>`],
+    whyPlot:  x => [`f(x) = 2x, substitute x = <span>${x}</span>`,`f(${x}) = 2 × ${x} = <span>${2*x}</span>`,`Plot the point (<span>${x}</span>, <span>${2*x}</span>)`],
+  },
+  {
+    id:'2xm1',  fxLabel:'f(x) = 2x − 1',
+    fn: x => 2*x-1,
+    xEx:[1,2,3,4], xTgt:5, yMin:0, yMax:10,
+    whyApply: x => [`Substitute x = <span>${x}</span> into f(x) = 2x − 1`,`Step 1: 2 × ${x} = ${2*x}`,`Step 2: ${2*x} − 1 = <span>${2*x-1}</span>`],
+    whyPlot:  x => [`f(x) = 2x − 1, substitute x = <span>${x}</span>`,`2 × ${x} − 1 = ${2*x} − 1 = <span>${2*x-1}</span>`,`Plot the point (<span>${x}</span>, <span>${2*x-1}</span>)`],
+  },
+  {
+    id:'2xp1',  fxLabel:'f(x) = 2x + 1',
+    fn: x => 2*x+1,
+    xEx:[1,2,3,4], xTgt:5, yMin:0, yMax:12,
+    whyApply: x => [`Substitute x = <span>${x}</span> into f(x) = 2x + 1`,`Step 1: 2 × ${x} = ${2*x}`,`Step 2: ${2*x} + 1 = <span>${2*x+1}</span>`],
+    whyPlot:  x => [`f(x) = 2x + 1, substitute x = <span>${x}</span>`,`2 × ${x} + 1 = ${2*x} + 1 = <span>${2*x+1}</span>`,`Plot the point (<span>${x}</span>, <span>${2*x+1}</span>)`],
+  },
+  {
+    id:'xm1',   fxLabel:'f(x) = x − 1',
+    fn: x => x-1,
+    xEx:[2,3,4,5], xTgt:6, yMin:0, yMax:8,
+    whyApply: x => [`Substitute x = <span>${x}</span> into f(x) = x − 1`,`f(${x}) = ${x} − 1 = <span>${x-1}</span>`],
+    whyPlot:  x => [`f(x) = x − 1, substitute x = <span>${x}</span>`,`f(${x}) = ${x} − 1 = <span>${x-1}</span>`,`Plot the point (<span>${x}</span>, <span>${x-1}</span>)`],
+  },
+  {
+    id:'3x',    fxLabel:'f(x) = 3x',
+    fn: x => 3*x,
+    xEx:[1,2,3,4], xTgt:5, yMin:0, yMax:16,
+    whyApply: x => [`Substitute x = <span>${x}</span> into f(x) = 3x`,`f(${x}) = 3 × ${x} = <span>${3*x}</span>`],
+    whyPlot:  x => [`f(x) = 3x, substitute x = <span>${x}</span>`,`f(${x}) = 3 × ${x} = <span>${3*x}</span>`,`Plot the point (<span>${x}</span>, <span>${3*x}</span>)`],
+  },
+];
+
+const HARD_RULES = [
+  {
+    id:'2xp3',  fxLabel:'f(x) = 2x + 3',
+    fn: x => 2*x+3,
+    xEx:[1,2,3,4], xTgt:5, yMin:0, yMax:14,
+    whyApply: x => [`Substitute x = <span>${x}</span> into f(x) = 2x + 3`,`2 × ${x} + 3 = ${2*x} + 3 = <span>${2*x+3}</span>`],
+    whyPlot:  x => [`f(x) = 2x + 3, x = <span>${x}</span>`,`2 × ${x} + 3 = <span>${2*x+3}</span>`,`Plot the point (<span>${x}</span>, <span>${2*x+3}</span>)`],
+  },
+  {
+    id:'3xm1',  fxLabel:'f(x) = 3x − 1',
+    fn: x => 3*x-1,
+    xEx:[1,2,3,4], xTgt:5, yMin:0, yMax:16,
+    whyApply: x => [`Substitute x = <span>${x}</span> into f(x) = 3x − 1`,`3 × ${x} − 1 = ${3*x} − 1 = <span>${3*x-1}</span>`],
+    whyPlot:  x => [`f(x) = 3x − 1, x = <span>${x}</span>`,`3 × ${x} − 1 = <span>${3*x-1}</span>`,`Plot the point (<span>${x}</span>, <span>${3*x-1}</span>)`],
+  },
+  {
+    id:'negxp8', fxLabel:'f(x) = −x + 8',
+    fn: x => -x+8,
+    xEx:[1,2,3,4], xTgt:5, yMin:0, yMax:10,
+    whyApply: x => [`Substitute x = <span>${x}</span> into f(x) = −x + 8`,`f(${x}) = −${x} + 8 = <span>${-x+8}</span>`],
+    whyPlot:  x => [`f(x) = −x + 8 (the graph goes DOWN as x increases)`,`f(${x}) = −${x} + 8 = <span>${-x+8}</span>`,`Plot the point (<span>${x}</span>, <span>${-x+8}</span>)`],
+  },
+  {
+    id:'3xp2',  fxLabel:'f(x) = 3x + 2',
+    fn: x => 3*x+2,
+    xEx:[1,2,3,4], xTgt:5, yMin:0, yMax:18,
+    whyApply: x => [`Substitute x = <span>${x}</span> into f(x) = 3x + 2`,`3 × ${x} + 2 = ${3*x} + 2 = <span>${3*x+2}</span>`],
+    whyPlot:  x => [`f(x) = 3x + 2, x = <span>${x}</span>`,`3 × ${x} + 2 = <span>${3*x+2}</span>`,`Plot the point (<span>${x}</span>, <span>${3*x+2}</span>)`],
+  },
+  {
+    id:'4xm2',  fxLabel:'f(x) = 4x − 2',
+    fn: x => 4*x-2,
+    xEx:[1,2,3,4], xTgt:5, yMin:0, yMax:20,
+    whyApply: x => [`Substitute x = <span>${x}</span> into f(x) = 4x − 2`,`4 × ${x} − 2 = ${4*x} − 2 = <span>${4*x-2}</span>`],
+    whyPlot:  x => [`f(x) = 4x − 2, x = <span>${x}</span>`,`4 × ${x} − 2 = <span>${4*x-2}</span>`,`Plot the point (<span>${x}</span>, <span>${4*x-2}</span>)`],
+  },
+  {
+    id:'negxp10', fxLabel:'f(x) = −x + 10',
+    fn: x => -x+10,
+    xEx:[1,2,3,4], xTgt:5, yMin:0, yMax:12,
+    whyApply: x => [`Substitute x = <span>${x}</span> into f(x) = −x + 10`,`f(${x}) = −${x} + 10 = <span>${-x+10}</span>`],
+    whyPlot:  x => [`f(x) = −x + 10 (decreasing function)`,`f(${x}) = −${x} + 10 = <span>${-x+10}</span>`,`Plot the point (<span>${x}</span>, <span>${-x+10}</span>)`],
+  },
+  {
+    id:'2xm3', fxLabel:'f(x) = 2x − 3',
+    fn: x => 2*x-3,
+    xEx:[2,3,4,5], xTgt:6, yMin:0, yMax:10,
+    whyApply: x => [`Substitute x = <span>${x}</span> into f(x) = 2x − 3`,`2 × ${x} − 3 = ${2*x} − 3 = <span>${2*x-3}</span>`],
+    whyPlot:  x => [`f(x) = 2x − 3, x = <span>${x}</span>`,`2 × ${x} − 3 = <span>${2*x-3}</span>`,`Plot the point (<span>${x}</span>, <span>${2*x-3}</span>)`],
+  },
+];
+
+/* ═══════════════════════════════════════════
+   GRAPH CONSTANTS
+═══════════════════════════════════════════ */
+const PAD_L = 34, PAD_B = 28, PAD_T = 10, PAD_R = 10;
+// Cell size computed per rule so the graph fits in ~230px wide, ~290px tall
+
+function cellSize(rule) {
+  const xVals = [...rule.xEx, rule.xTgt];
+  const xMin  = Math.min(...xVals);
+  const xMax  = Math.max(...xVals);
+  const xSpan = xMax - xMin;
+  const ySpan = rule.yMax - rule.yMin;
+  const CW = Math.floor((228 - PAD_L - PAD_R) / xSpan);
+  const CH = Math.floor((288 - PAD_T - PAD_B) / ySpan);
+  return { CW: Math.min(CW, 46), CH: Math.min(CH, 28), xMin, xMax, xSpan, ySpan };
+}
+
+/* ═══════════════════════════════════════════
+   STATE
+═══════════════════════════════════════════ */
+let currentLevel = 'easy';
+let questions = [], qIdx = 0, selOpt = null;
+let isAnswered = false, isLocked = false, score = 0, whyOpen = false;
+let plotY = null; // selected y value for plot questions
+
+function getRules() { return currentLevel === 'easy' ? EASY_RULES : HARD_RULES; }
+
+/* ═══════════════════════════════════════════
+   LEVEL
+═══════════════════════════════════════════ */
+function setLevel(lvl) {
+  currentLevel = lvl;
+  document.getElementById('btnEasy').className = 'level-btn' + (lvl === 'easy' ? ' active-easy' : '');
+  document.getElementById('btnHard').className = 'level-btn' + (lvl === 'hard' ? ' active-hard' : '');
+  initQuiz();
+}
+function switchLevel() { setLevel(currentLevel === 'easy' ? 'hard' : 'easy'); }
+
+/* ═══════════════════════════════════════════
+   DISTRACTOR HELPERS
+═══════════════════════════════════════════ */
+function numDistractors(correct, count = 3) {
+  const cands = new Set();
+  const offs  = shuffle([-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,-6,-7]);
+  for (const o of offs) { cands.add(correct + o); if (cands.size >= count * 3) break; }
+  return shuffle([...cands]).filter(v => v !== correct).slice(0, count);
+}
+
+/* ═══════════════════════════════════════════
+   QUESTION GENERATORS
+═══════════════════════════════════════════ */
+
+/* TYPE A — identify the function from IO pairs */
+function genIdentify(rule) {
+  const xs    = rule.xEx;
+  const pairs = xs.map(x => ({ x, fx: rule.fn(x) }));
+  const allRules = getRules();
+  const distractors = shuffle(allRules.filter(r => r.id !== rule.id)).slice(0, 3);
+  const allOpts = shuffle([rule, ...distractors]);
+  return {
+    qtype: 'identify', rule,
+    questionText: 'Which function would produce these outputs?',
+    pairs,
+    targetX: null, targetFx: null,
+    options: allOpts.map(r => r.fxLabel),
+    correctIndex: allOpts.indexOf(rule),
+    hint: 'Look at how the output changes as x increases by 1.',
+  };
+}
+
+/* TYPE B — apply: what is f(x) for a new input? */
+function genApply(rule) {
+  const pairs   = rule.xEx.map(x => ({ x, fx: rule.fn(x) }));
+  const tX      = rule.xTgt;
+  const correct = rule.fn(tX);
+  const wrongs  = numDistractors(correct, 3);
+  const allOpts = shuffle([correct, ...wrongs]);
+  return {
+    qtype: 'apply', rule,
+    questionText: `What is the output of this function for the input ${tX}?`,
+    pairs,
+    targetX: tX, targetFx: null,
+    options: allOpts.map(String),
+    correctIndex: allOpts.indexOf(correct),
+    hint: `Use <em>${rule.fxLabel}</em> and substitute x = ${tX}.`,
+  };
+}
+
+/* TYPE C — plot: click the graph to place the point */
+function genPlot(rule) {
+  const pairs   = rule.xEx.map(x => ({ x, fx: rule.fn(x) }));
+  const tX      = rule.xTgt;
+  const correct = rule.fn(tX);
+  return {
+    qtype: 'plot', rule,
+    questionText: `Plot the output of <em>${rule.fxLabel}</em> when x is ${tX}.`,
+    pairs,
+    targetX: tX, correctFx: correct,
+    options: [],
+    correctIndex: -1,
+    hint: `Substitute x = ${tX} into ${rule.fxLabel} to find the y coordinate, then click that height.`,
+  };
+}
+
+/* ═══════════════════════════════════════════
+   BUILD IO DIAGRAM (identify + apply)
+═══════════════════════════════════════════ */
+function buildDiagram(q) {
+  const isKnown  = q.qtype === 'apply';
+  const pillText = isKnown ? q.rule.fxLabel : '?';
+
+  const inputRows  = q.pairs.map(p => p.x);
+  const outputRows = q.pairs.map(p => p.fx);
+  if (isKnown) { inputRows.push(q.targetX); outputRows.push(null); }
+
+  const inBoxHTML = inputRows.map((v, i) => {
+    const isTarget = isKnown && i === inputRows.length - 1;
+    const valHTML  = `<span class="io-val${isTarget ? ' bold' : ''}">${v}</span>`;
+    return `<div class="io-item in-item" id="inrow-${i}">${valHTML}<span class="io-dot"></span></div>`;
+  }).join('');
+
+  const outBoxHTML = outputRows.map((v, i) => {
+    const valHTML = v === null ? `<span class="io-unk">?</span>` : `<span class="io-val">${v}</span>`;
+    return `<div class="io-item out-item" id="outrow-${i}"><span class="io-arr">▶</span>${valHTML}</div>`;
+  }).join('');
+
+  return `
+    <div class="machine${isKnown ? ' rule-known' : ''}">
+      <div class="rule-row"><div class="rule-pill${isKnown ? ' known' : ''}">${pillText}</div></div>
+      <div class="diagram-labels"><span>x</span><span>f(x)</span></div>
+      <div class="diagram-wrapper" id="diagramWrap">
+        <div class="io-box" id="inputBox">${inBoxHTML}</div>
+        <div class="io-box" id="outputBox">${outBoxHTML}</div>
+        <div class="rule-glow"></div>
+        <svg class="lines-svg" id="linesSvg"></svg>
+      </div>
+    </div>`;
+}
+
+function drawLines(rowCount) {
+  const wrap   = document.getElementById('diagramWrap');
+  const inBox  = document.getElementById('inputBox');
+  const outBox = document.getElementById('outputBox');
+  const svg    = document.getElementById('linesSvg');
+  if (!wrap || !inBox || !outBox || !svg) return;
+  const wR = wrap.getBoundingClientRect();
+  const iR = inBox.getBoundingClientRect();
+  const oR = outBox.getBoundingClientRect();
+  const lines = [];
+  for (let i = 0; i < rowCount; i++) {
+    const ir = document.getElementById(`inrow-${i}`)?.getBoundingClientRect();
+    const or = document.getElementById(`outrow-${i}`)?.getBoundingClientRect();
+    if (!ir || !or) continue;
+    lines.push({
+      x1: (iR.right - wR.left).toFixed(1), y1: (ir.top + ir.height/2 - wR.top).toFixed(1),
+      x2: (oR.left  - wR.left).toFixed(1), y2: (or.top + or.height/2 - wR.top).toFixed(1),
+    });
+  }
+  svg.setAttribute('viewBox', `0 0 ${wR.width.toFixed(1)} ${wR.height.toFixed(1)}`);
+  svg.setAttribute('width', wR.width.toFixed(1));
+  svg.setAttribute('height', wR.height.toFixed(1));
+  svg.innerHTML = `<defs><marker id="ah" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><polygon points="0 0,8 3.5,0 7" fill="rgba(255,255,255,0.35)"/></marker></defs>
+    ${lines.map(l=>`<line x1="${l.x1}" y1="${l.y1}" x2="${l.x2}" y2="${l.y2}" stroke="rgba(255,255,255,0.28)" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#ah)"/>`).join('')}`;
+}
+
+let currentRowCount = 4;
+window.addEventListener('resize', () => setTimeout(() => drawLines(currentRowCount), 80));
+
+/* ═══════════════════════════════════════════
+   BUILD GRAPH (plot question)
+═══════════════════════════════════════════ */
+function buildGraph(q, revealCorrect = false, userY = null) {
+  const rule = q.rule;
+  const { CW, CH, xMin, xMax } = cellSize(rule);
+  const yMin = rule.yMin, yMax = rule.yMax;
+  const tX = q.targetX;
+
+  const W = PAD_L + (xMax - xMin) * CW + PAD_R;
+  const H = PAD_T + (yMax - yMin) * CH + PAD_B;
+
+  const sx = x => PAD_L + (x - xMin) * CW;
+  const sy = y => PAD_T + (yMax - y) * CH;
+
+  // Grid lines
+  let grid = '';
+  for (let y = yMin; y <= yMax; y++) {
+    grid += `<line x1="${PAD_L}" y1="${sy(y)}" x2="${W-PAD_R}" y2="${sy(y)}" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>`;
+  }
+  for (let x = xMin; x <= xMax; x++) {
+    const isTarget = x === tX;
+    grid += `<line x1="${sx(x)}" y1="${PAD_T}" x2="${sx(x)}" y2="${H-PAD_B}" stroke="${isTarget ? 'rgba(67,97,238,0.25)' : 'rgba(255,255,255,0.07)'}" stroke-width="${isTarget ? 1.5 : 1}" stroke-dasharray="${isTarget ? '5,3' : 'none'}"/>`;
+  }
+
+  // Axes (with arrows)
+  const axisColor = 'rgba(255,255,255,0.45)';
+  const axes = `
+    <defs>
+      <marker id="axArr" markerWidth="7" markerHeight="6" refX="6" refY="3" orient="auto">
+        <polygon points="0 0,7 3,0 6" fill="${axisColor}"/>
+      </marker>
+    </defs>
+    <line x1="${PAD_L}" y1="${sy(yMin)}" x2="${W-PAD_R+6}" y2="${sy(yMin)}" stroke="${axisColor}" stroke-width="1.5" marker-end="url(#axArr)"/>
+    <line x1="${sx(xMin)}" y1="${H-PAD_B}" x2="${sx(xMin)}" y2="${PAD_T-6}" stroke="${axisColor}" stroke-width="1.5" marker-end="url(#axArr)"/>`;
+
+  // Y-axis labels (every 2 units, or every unit if range ≤ 10)
+  const yStep = (yMax - yMin) > 10 ? 2 : 1;
+  let yLabels = '';
+  for (let y = yMin; y <= yMax; y += yStep) {
+    if (y === 0) continue;
+    yLabels += `<text x="${PAD_L-5}" y="${sy(y)+4}" text-anchor="end" fill="rgba(255,255,255,0.38)" font-size="11" font-family="Nunito,sans-serif" font-weight="700">${y}</text>`;
+  }
+
+  // X-axis labels
+  let xLabels = '';
+  for (let x = xMin; x <= xMax; x++) {
+    xLabels += `<text x="${sx(x)}" y="${H-PAD_B+17}" text-anchor="middle" fill="rgba(255,255,255,0.38)" font-size="11" font-family="Nunito,sans-serif" font-weight="700">${x}</text>`;
+  }
+
+  // Example points (gray) + connecting line
+  const exPts = q.pairs.map(p => ({ x: p.x, y: p.fx }));
+  const lineStr = exPts.map((p,i) => `${i===0?'M':'L'}${sx(p.x)},${sy(p.y)}`).join(' ');
+  let exampleEls = `<path d="${lineStr}" fill="none" stroke="rgba(180,180,200,0.25)" stroke-width="1.5" stroke-dasharray="3,3"/>`;
+  for (const p of exPts) {
+    exampleEls += `<circle cx="${sx(p.x)}" cy="${sy(p.y)}" r="7" fill="rgba(160,170,190,0.65)" stroke="rgba(200,210,230,0.4)" stroke-width="1.5"/>`;
+  }
+
+  // Placeholder point at (tX, yMin) — the dot to place
+  let targetEl = '';
+  if (!revealCorrect && userY === null) {
+    targetEl = `<circle cx="${sx(tX)}" cy="${sy(yMin)}" r="8" fill="rgba(40,55,100,0.85)" stroke="rgba(100,130,240,0.7)" stroke-width="2"/>`;
+  }
+
+  // User-placed point
+  let userEl = '';
+  if (userY !== null && !revealCorrect) {
+    userEl = `<circle cx="${sx(tX)}" cy="${sy(userY)}" r="8" fill="#4361ee" stroke="rgba(160,180,255,0.9)" stroke-width="2.5"/>`;
+  }
+
+  // Post-answer reveal
+  let revealEl = '';
+  if (revealCorrect) {
+    if (userY !== null && userY !== q.correctFx) {
+      // Wrong placement in red
+      revealEl += `<circle cx="${sx(tX)}" cy="${sy(userY)}" r="8" fill="rgba(255,75,75,0.8)" stroke="rgba(255,130,130,0.9)" stroke-width="2"/>`;
+    }
+    // Correct position in green
+    revealEl += `<circle cx="${sx(tX)}" cy="${sy(q.correctFx)}" r="8" fill="#58cc02" stroke="rgba(160,255,100,0.9)" stroke-width="2.5"/>`;
+    // Connect correct point with line
+    const lastEx = exPts[exPts.length - 1];
+    revealEl += `<line x1="${sx(lastEx.x)}" y1="${sy(lastEx.y)}" x2="${sx(tX)}" y2="${sy(q.correctFx)}" stroke="rgba(88,204,2,0.4)" stroke-width="1.5" stroke-dasharray="3,3"/>`;
+  }
+
+  const svgHTML = `<svg class="coord-svg" id="coordSvg" width="${W}" height="${H}" onclick="handleGraphClick(event)">
+    ${grid}${axes}${yLabels}${xLabels}${exampleEls}${targetEl}${userEl}${revealEl}
+  </svg>`;
+
+  // Value table
+  const allRows = [...q.pairs.map(p => ({ x: p.x, fx: p.fx, isTarget: false })),
+                   { x: tX, fx: q.correctFx, isTarget: true }];
+  const tableRows = allRows.map(row => {
+    if (row.isTarget) {
+      const fxDisplay = revealCorrect ? row.fx : (userY !== null ? userY : '?');
+      const fxClass   = revealCorrect ? (userY === q.correctFx ? 'placed' : 'placed') : (userY !== null ? 'placed' : '');
+      return `<tr class="target-row"><td><strong>${row.x}</strong></td><td class="fx-cell ${fxClass}" id="targetFxCell">${fxDisplay}</td></tr>`;
+    }
+    return `<tr><td>${row.x}</td><td>${row.fx}</td></tr>`;
+  }).join('');
+
+  const tableHTML = `<div class="val-table-wrap">
+    <table class="val-table">
+      <tr><th>x</th><th><em>f</em>(x)</th></tr>
+      ${tableRows}
+    </table>
+    ${!revealCorrect && !isLocked ? '<p class="graph-hint">Click the graph to<br>place the point</p>' : ''}
+  </div>`;
+
+  return `<div class="graph-section">
+    <div class="graph-wrap">${svgHTML}${tableHTML}</div>
+  </div>`;
+}
+
+/* ═══════════════════════════════════════════
+   GRAPH CLICK HANDLER
+═══════════════════════════════════════════ */
+function handleGraphClick(event) {
+  const q = questions[qIdx];
+  if (q.qtype !== 'plot' || isLocked) return;
+
+  const svg  = document.getElementById('coordSvg');
+  if (!svg) return;
+  const rect = svg.getBoundingClientRect();
+  const svgY = event.clientY - rect.top;
+
+  const rule = q.rule;
+  const { CH } = cellSize(rule);
+  const yMax   = rule.yMax, yMin = rule.yMin;
+
+  const dataY  = Math.round(yMax - (svgY - PAD_T) / CH);
+  plotY = Math.max(yMin, Math.min(yMax, dataY));
+
+  // Re-render graph with placed point (no reveal yet)
+  const graphHTML = buildGraph(q, false, plotY);
+  const graphSection = document.querySelector('.graph-section');
+  if (graphSection) graphSection.outerHTML = graphHTML;
+
+  // Update table cell
+  const cell = document.getElementById('targetFxCell');
+  if (cell) { cell.textContent = plotY; cell.className = 'fx-cell placed'; }
+
+  document.getElementById('checkBtn').className = 'check-btn ready';
+}
+
+/* ═══════════════════════════════════════════
+   RENDER QUESTION
+═══════════════════════════════════════════ */
+function renderQuestion(q) {
+  plotY = null;
+  let innerHTML = `<p class="q-text">${q.questionText}</p>`;
+
+  if (q.qtype === 'identify') {
+    currentRowCount = q.pairs.length;
+    innerHTML += `
+      <div class="fx-banner" id="fxBanner"></div>
+      ${buildDiagram(q)}
+      <div class="options-grid" id="optionsGrid">
+        ${q.options.map((lbl,i) => `<button class="opt-btn" onclick="selectOpt(${i})">${lbl}</button>`).join('')}
+      </div>`;
+  } else if (q.qtype === 'apply') {
+    currentRowCount = q.pairs.length + 1;
+    innerHTML += `
+      <div class="fx-banner show">${q.rule.fxLabel}</div>
+      ${buildDiagram(q)}
+      <div class="tiles-area">
+        <div class="tiles-formula">f(<span style="color:#a0b4ff">${q.targetX}</span>) = <span class="blank" id="formulaBlank">?</span></div>
+        <div class="tiles-row" id="optionsGrid">
+          ${q.options.map((lbl,i) => `<button class="tile-btn" onclick="selectOpt(${i})">${lbl}</button>`).join('')}
+        </div>
+      </div>`;
+  } else {
+    // plot
+    innerHTML += buildGraph(q, false, null);
+  }
+
+  innerHTML += `<div class="start-over-row"><button class="start-over-btn" onclick="initQuiz()">↺ Start over</button></div>`;
+  document.getElementById('qCard').innerHTML = innerHTML;
+
+  if (q.qtype !== 'plot') {
+    requestAnimationFrame(() => requestAnimationFrame(() => drawLines(currentRowCount)));
+  }
+}
+
+/* ═══════════════════════════════════════════
+   INTERACTION
+═══════════════════════════════════════════ */
+function selectOpt(i) {
+  if (isLocked) return;
+  selOpt = i;
+  document.querySelectorAll('.opt-btn, .tile-btn').forEach((b, idx) => b.classList.toggle('selected', idx === i));
+  const blank = document.getElementById('formulaBlank');
+  if (blank) { blank.className = 'filled'; blank.textContent = questions[qIdx].options[i]; }
+  document.getElementById('checkBtn').className = 'check-btn ready';
+}
+
+function checkAnswer() {
+  const q = questions[qIdx];
+  if (isAnswered) { advanceQuestion(); return; }
+
+  const isPlot = q.qtype === 'plot';
+  if (!isPlot && selOpt === null) return;
+  if (isPlot && plotY === null) return;
+
+  isAnswered = isLocked = true;
+
+  let correct;
+  if (isPlot) {
+    correct = plotY === q.correctFx;
+    // Redraw graph with reveal
+    const graphHTML = buildGraph(q, true, plotY);
+    const graphSection = document.querySelector('.graph-section');
+    if (graphSection) graphSection.outerHTML = graphHTML;
+  } else {
+    correct = selOpt === q.correctIndex;
+    document.querySelectorAll('.opt-btn, .tile-btn').forEach((b, i) => {
+      b.classList.add('locked');
+      if (i === q.correctIndex) b.classList.add('correct');
+      else if (i === selOpt && !correct) b.classList.add('wrong');
+    });
+    const blank = document.getElementById('formulaBlank');
+    if (blank) blank.className = correct ? 'correct-fill' : 'wrong-fill';
+  }
+
+  if (correct) {
+    score++;
+    document.getElementById('scoreDisp').textContent = score;
+  }
+
+  const bar = document.getElementById('feedbackBar');
+  bar.className = `feedback-bar ${correct ? 'ok' : 'err'} show`;
+  document.getElementById('fbIcon').textContent = correct ? '✓' : '✗';
+  const titleEl = document.getElementById('fbTitle');
+  titleEl.className = `fb-title ${correct ? 'ok' : 'err'}`;
+  titleEl.textContent = correct ? 'Correct!'
+    : isPlot ? `Correct point: (${q.targetX}, ${q.correctFx})`
+    : `Answer: ${q.options[q.correctIndex]}`;
+  document.getElementById('fbHint').innerHTML = q.hint;
+
+  document.getElementById('whyBtn').className = 'why-btn show';
+  whyOpen = false;
+  document.getElementById('whyPanel').className = 'why-panel';
+
+  document.getElementById('pFill').style.width = (((qIdx+1)/10)*100) + '%';
+  const btn = document.getElementById('checkBtn');
+  btn.className = 'check-btn continue';
+  btn.textContent = qIdx < 9 ? 'Continue →' : 'See Results →';
+}
+
+function advanceQuestion() {
+  qIdx++;
+  if (qIdx >= 10) { showResults(); return; }
+  selOpt = null; plotY = null;
+  isAnswered = isLocked = whyOpen = false;
+  document.getElementById('qNum').textContent      = qIdx + 1;
+  document.getElementById('feedbackBar').className = 'feedback-bar';
+  document.getElementById('checkBtn').className    = 'check-btn';
+  document.getElementById('checkBtn').textContent  = 'Check';
+  document.getElementById('whyBtn').className      = 'why-btn';
+  document.getElementById('whyPanel').className    = 'why-panel';
+  renderQuestion(questions[qIdx]);
+}
+
+/* ═══════════════════════════════════════════
+   WHY PANEL
+═══════════════════════════════════════════ */
+function toggleWhy() {
+  const q = questions[qIdx];
+  whyOpen = !whyOpen;
+  const panel = document.getElementById('whyPanel');
+  const btn   = document.getElementById('whyBtn');
+  if (whyOpen) {
+    let steps;
+    if (q.qtype === 'identify') {
+      steps = [
+        `Check how outputs change as x increases by 1`,
+        `Each output follows the pattern: <span>${q.rule.fxLabel}</span>`,
+        `Verify: ${q.pairs.slice(0,2).map(p=>`f(${p.x}) = ${p.fx}`).join(', ')} ✓`,
+      ];
+    } else if (q.qtype === 'apply') {
+      steps = q.rule.whyApply(q.targetX);
+    } else {
+      steps = q.rule.whyPlot(q.targetX);
+    }
+    document.getElementById('whySteps').innerHTML = steps.map(s=>`<li>${s}</li>`).join('');
+    panel.className = 'why-panel show';
+    btn.className   = 'why-btn show active';
+    btn.textContent = 'Hide';
+  } else {
+    panel.className = 'why-panel';
+    btn.className   = 'why-btn show';
+    btn.textContent = 'Why?';
+  }
+}
+
+/* ═══════════════════════════════════════════
+   RESULTS
+═══════════════════════════════════════════ */
+function showResults() {
+  document.getElementById('qCard').style.display    = 'none';
+  document.getElementById('feedbackBar').className  = 'feedback-bar';
+  document.getElementById('checkBtn').style.display = 'none';
+  document.getElementById('whyBtn').className       = 'why-btn';
+  document.getElementById('whyPanel').className     = 'why-panel';
+  document.getElementById('resultsWrap').className  = 'results-wrap show';
+  const pct = score / 10;
+  const [emoji, msg] =
+    pct === 1  ? ['🏆','Perfect! You can graph any function!']
+    : pct >= .8 ? ['🎉','Excellent! Great understanding of graphing functions.']
+    : pct >= .6 ? ['👍','Good effort! Use Why? after each question to see the steps.']
+    : pct >= .4 ? ['📚','Keep practising — substitute x into the formula first!']
+                : ['💡','Tip: always substitute x into f(x) before plotting.'];
+  document.getElementById('resEmoji').textContent = emoji;
+  document.getElementById('resScore').textContent = `${score}/10`;
+  document.getElementById('resMsg').textContent   = msg;
+  document.getElementById('resLevel').textContent = currentLevel === 'easy' ? 'Easy Level' : 'Hard Level';
+  document.getElementById('btnSwitch').textContent = currentLevel === 'easy' ? 'Try Hard Level →' : 'Try Easy Level →';
+}
+
+/* ═══════════════════════════════════════════
+   INIT — 4 rules → identify + apply + plot × 3, then 1 bonus
+═══════════════════════════════════════════ */
+function initQuiz() {
+  qIdx = score = 0; selOpt = plotY = null;
+  isAnswered = isLocked = whyOpen = false;
+
+  const rules = shuffle(getRules()).slice(0, 4);
+  questions = [
+    genIdentify(rules[0]), genApply(rules[0]), genPlot(rules[0]),
+    genIdentify(rules[1]), genApply(rules[1]), genPlot(rules[1]),
+    genIdentify(rules[2]), genApply(rules[2]), genPlot(rules[2]),
+    pick([genIdentify, genApply, genPlot])(rules[3]),
+  ];
+
+  document.getElementById('qCard').style.display    = '';
+  document.getElementById('checkBtn').style.display = '';
+  document.getElementById('checkBtn').className     = 'check-btn';
+  document.getElementById('checkBtn').textContent   = 'Check';
+  document.getElementById('feedbackBar').className  = 'feedback-bar';
+  document.getElementById('whyBtn').className       = 'why-btn';
+  document.getElementById('whyPanel').className     = 'why-panel';
+  document.getElementById('resultsWrap').className  = 'results-wrap';
+  document.getElementById('scoreDisp').textContent  = 0;
+  document.getElementById('qNum').textContent       = 1;
+  document.getElementById('pFill').style.width      = '0%';
+
+  renderQuestion(questions[0]);
+}
+
+document.getElementById('checkBtn').addEventListener('click', checkAnswer);
+initQuiz();
+</script>
+</body>
+</html>

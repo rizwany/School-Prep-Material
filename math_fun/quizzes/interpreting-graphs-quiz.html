@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interpreting Graphs Quiz – Math Fun | LearnPad</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg:#0e0f14; --card:#1d1f2b; --border:#2a2c3a;
+      --text:#f0f0f8; --muted:rgba(240,240,248,.42);
+      --green:#58cc02; --green-dk:#46a301; --red:#ff4b4b;
+      --blue:#4361ee; --purple:#7c3aed; --teal:#4bc5a5;
+      --opt-bg:#1e2030; --opt-brd:#313446; --radius:16px;
+    }
+    body { font-family:'Nunito',system-ui,sans-serif; background:var(--bg); color:var(--text); min-height:100vh; display:flex; flex-direction:column; }
+
+    header { background:#fff; border-bottom:2px solid #e2e6f0; padding:0 24px; position:sticky; top:0; z-index:100; flex-shrink:0; }
+    .header-inner { max-width:960px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; height:56px; }
+    .logo-link { text-decoration:none; display:flex; align-items:center; }
+    .logo-img { height:34px; width:auto; }
+    .logo-txt { font-weight:900; font-size:1.15rem; color:#4361ee; }
+    nav a { font-weight:700; font-size:0.85rem; color:#5a6076; text-decoration:none; padding:6px 12px; border-radius:8px; transition:color .15s,background .15s; }
+    nav a:hover { color:#4361ee; background:#eef1fd; }
+
+    main { flex:1; display:flex; flex-direction:column; align-items:center; }
+    .quiz-shell { width:100%; max-width:520px; padding:16px 20px 80px; display:flex; flex-direction:column; flex:1; }
+
+    .level-row { display:flex; justify-content:center; gap:8px; margin-bottom:18px; }
+    .level-btn { font-family:inherit; font-size:0.8rem; font-weight:800; padding:6px 18px; border-radius:999px; cursor:pointer; border:2px solid var(--opt-brd); background:var(--opt-bg); color:var(--muted); transition:all .15s; }
+    .level-btn.active-easy { border-color:var(--green); background:#172110; color:#88e04a; }
+    .level-btn.active-hard { border-color:var(--purple); background:#1e1535; color:#c084fc; }
+
+    .progress-wrap { margin-bottom:16px; }
+    .progress-track { height:8px; background:#252733; border-radius:4px; overflow:hidden; }
+    .progress-fill  { height:100%; background:var(--green); border-radius:4px; width:0%; transition:width .4s ease; }
+    .progress-meta  { display:flex; justify-content:space-between; margin-top:6px; font-size:0.72rem; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:.05em; }
+
+    .q-card { background:var(--card); border:1.5px solid var(--border); border-radius:var(--radius); padding:20px 16px 18px; margin-bottom:14px; }
+    .q-text { font-size:1rem; font-weight:800; line-height:1.55; margin-bottom:16px; color:var(--text); }
+
+    /* Graph */
+    .graph-wrap { display:flex; justify-content:center; margin-bottom:14px; }
+    .coord-svg  { display:block; overflow:visible; }
+
+    /* Answer display */
+    .ans-display {
+      background:#181921; border:1.5px solid var(--border); border-radius:14px;
+      padding:14px 20px; margin-bottom:12px;
+      display:flex; align-items:center; justify-content:center; gap:8px;
+      font-size:1.15rem; font-weight:800; color:var(--muted);
+    }
+    .ans-y-tag {
+      background:#c0392b; border-radius:5px; color:#fff;
+      font-size:0.9rem; font-weight:900; padding:2px 7px;
+      font-style:italic;
+    }
+    .ans-x-tag {
+      background:#2980b9; border-radius:5px; color:#fff;
+      font-size:0.9rem; font-weight:900; padding:2px 7px;
+      font-style:italic;
+    }
+    .ans-eq { color:rgba(255,255,255,0.5); font-size:1.1rem; }
+    .ans-paren { color:rgba(255,255,255,0.45); font-size:1.1rem; }
+    .ans-known { color:#a0b4ff; font-style:italic; }
+    .ans-blank {
+      display:inline-flex; align-items:center; justify-content:center;
+      min-width:46px; height:36px; padding:0 10px;
+      background:#252733; border:2px dashed #3d3f52; border-radius:8px;
+      color:rgba(255,255,255,.25); font-size:1rem; font-weight:800;
+      transition:all .2s;
+    }
+    .ans-blank.filled    { background:rgba(67,97,238,.22); border:2px solid rgba(67,97,238,.7); color:#a0b4ff; }
+    .ans-blank.correct-f { background:rgba(88,204,2,.18); border-color:var(--green); color:#88e04a; }
+    .ans-blank.wrong-f   { background:rgba(255,75,75,.18); border-color:var(--red); color:#ff8080; }
+
+    /* Tiles */
+    .tiles-row { display:flex; justify-content:center; gap:8px; flex-wrap:wrap; margin-bottom:10px; }
+    .tile-btn {
+      background:var(--opt-bg); border:2px solid var(--opt-brd); border-radius:12px;
+      color:var(--text); font-family:inherit; font-size:0.95rem; font-weight:800;
+      min-width:60px; height:50px; padding:0 12px; cursor:pointer;
+      display:flex; align-items:center; justify-content:center;
+      transition:border-color .15s,background .15s,transform .1s;
+    }
+    .tile-btn:hover:not(.locked) { border-color:#555870; background:#252737; }
+    .tile-btn:active:not(.locked) { transform:scale(.95); }
+    .tile-btn.selected { border-color:#6070cc; background:#1e2240; }
+    .tile-btn.correct  { border-color:var(--green)!important; background:#172110!important; color:#88e04a; }
+    .tile-btn.wrong    { border-color:var(--red)!important;   background:#221212!important; color:#ff8080; }
+    .tile-btn.locked   { cursor:default; }
+
+    .start-over-row { display:flex; justify-content:flex-end; margin-top:4px; }
+    .start-over-btn { background:none; border:none; color:var(--muted); font-family:inherit; font-size:0.8rem; font-weight:700; cursor:pointer; padding:4px 8px; border-radius:8px; transition:color .15s; }
+    .start-over-btn:hover { color:var(--text); }
+
+    .feedback-bar { border-radius:12px; padding:12px 16px; margin-bottom:10px; display:flex; align-items:flex-start; gap:10px; opacity:0; transition:opacity .2s; }
+    .feedback-bar.show { opacity:1; }
+    .feedback-bar.ok  { background:#172110; border:1.5px solid #2d4a1e; }
+    .feedback-bar.err { background:#221212; border:1.5px solid #4a1f1f; }
+    .fb-icon { font-size:1.1rem; flex-shrink:0; }
+    .fb-body { flex:1; }
+    .fb-title { font-size:0.88rem; font-weight:900; margin-bottom:2px; }
+    .fb-title.ok { color:#88e04a; } .fb-title.err { color:#ff8080; }
+    .fb-hint { font-size:0.78rem; font-weight:600; color:var(--muted); line-height:1.5; }
+
+    .why-panel { background:#14182a; border:1.5px solid rgba(67,97,238,.4); border-radius:12px; padding:14px 16px; margin-bottom:10px; display:none; animation:slideIn .2s ease; }
+    .why-panel.show { display:block; }
+    @keyframes slideIn { from{opacity:0;transform:translateY(-6px)} to{opacity:1;transform:translateY(0)} }
+    .why-title { font-size:0.8rem; font-weight:900; color:#a0b4ff; text-transform:uppercase; letter-spacing:.08em; margin-bottom:8px; }
+    .why-steps { list-style:none; }
+    .why-steps li { font-size:0.82rem; font-weight:700; color:var(--muted); padding:4px 0; border-bottom:1px solid rgba(255,255,255,.05); line-height:1.5; }
+    .why-steps li:last-child { border-bottom:none; color:#88e04a; }
+    .why-steps li span { color:#a0b4ff; }
+
+    .btn-row { display:flex; gap:10px; }
+    .why-btn { flex-shrink:0; padding:16px 18px; border:2px solid var(--opt-brd); border-radius:999px; font-family:inherit; font-size:0.9rem; font-weight:800; cursor:pointer; background:var(--opt-bg); color:var(--muted); transition:all .15s; display:none; }
+    .why-btn.show { display:block; }
+    .why-btn:hover { border-color:#a0b4ff; color:#a0b4ff; }
+    .why-btn.active { border-color:rgba(67,97,238,.7); background:rgba(67,97,238,.15); color:#a0b4ff; }
+    .check-btn { flex:1; padding:16px; border:none; border-radius:999px; font-family:inherit; font-size:1rem; font-weight:900; cursor:pointer; background:#252737; color:var(--muted); transition:background .15s,color .15s; }
+    .check-btn.ready    { background:var(--blue);  color:#fff; }
+    .check-btn.ready:hover { background:#3451d1; }
+    .check-btn.continue { background:var(--green); color:#fff; }
+    .check-btn.continue:hover { background:var(--green-dk); }
+
+    .results-wrap { text-align:center; display:none; padding:20px 0 40px; }
+    .results-wrap.show { display:block; }
+    .res-card { background:var(--card); border:1.5px solid var(--border); border-radius:var(--radius); padding:34px 28px 28px; }
+    .res-emoji { font-size:3rem; margin-bottom:10px; }
+    .res-title { font-size:1.4rem; font-weight:900; color:var(--text); margin-bottom:4px; }
+    .res-level { font-size:0.75rem; font-weight:700; color:var(--muted); margin-bottom:10px; text-transform:uppercase; letter-spacing:.08em; }
+    .res-score { font-size:2.8rem; font-weight:900; color:var(--green); margin:14px 0 2px; }
+    .res-label { font-size:0.82rem; font-weight:700; color:var(--muted); margin-bottom:14px; }
+    .res-msg   { font-size:0.88rem; font-weight:700; color:var(--muted); line-height:1.6; margin-bottom:22px; }
+    .btn-retry  { background:var(--blue); color:#fff; font-family:inherit; font-size:0.95rem; font-weight:800; padding:14px 36px; border:none; border-radius:999px; cursor:pointer; transition:background .15s; display:block; width:100%; margin-bottom:10px; }
+    .btn-retry:hover { background:#3451d1; }
+    .btn-switch { background:none; border:1.5px solid var(--opt-brd); color:var(--muted); font-family:inherit; font-size:0.85rem; font-weight:700; padding:10px 24px; border-radius:999px; cursor:pointer; transition:all .15s; width:100%; margin-bottom:10px; }
+    .btn-switch:hover { border-color:#a0b4ff; color:#a0b4ff; }
+    .btn-home { background:none; border:1.5px solid var(--border); color:var(--muted); font-family:inherit; font-size:0.85rem; font-weight:700; padding:10px 24px; border-radius:999px; cursor:pointer; transition:all .15s; width:100%; }
+    .btn-home:hover { border-color:#555870; color:var(--text); }
+
+    footer { background:#0a0b10; color:rgba(255,255,255,.4); padding:16px 24px; text-align:center; font-size:0.75rem; font-weight:600; }
+    footer a { color:rgba(255,255,255,.25); text-decoration:none; }
+    footer a:hover { color:rgba(255,255,255,.7); }
+
+    @media (max-width:400px) {
+      .quiz-shell { padding:12px 12px 70px; }
+      .tile-btn { min-width:52px; height:46px; font-size:0.88rem; }
+    }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header>
+  <div class="header-inner">
+    <a class="logo-link" href="../../index.html">
+      <img src="../../logo.png" alt="LearnPad" class="logo-img"
+           onerror="this.outerHTML='<span class=logo-txt>LearnPad</span>'" />
+    </a>
+    <nav>
+      <a href="../../for_school/index.html">School</a>
+      <a href="../../index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="quiz-shell" id="quizShell">
+    <div class="level-row">
+      <button class="level-btn active-easy" id="btnEasy" onclick="setLevel('easy')">Easy</button>
+      <button class="level-btn" id="btnHard"  onclick="setLevel('hard')">Hard</button>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-track"><div class="progress-fill" id="pFill"></div></div>
+      <div class="progress-meta">
+        <span>Question <span id="qNum">1</span> of 10</span>
+        <span>⭐ <span id="scoreDisp">0</span></span>
+      </div>
+    </div>
+
+    <div class="q-card" id="qCard"></div>
+
+    <div class="feedback-bar" id="feedbackBar">
+      <div class="fb-icon" id="fbIcon"></div>
+      <div class="fb-body">
+        <div class="fb-title" id="fbTitle"></div>
+        <div class="fb-hint"  id="fbHint"></div>
+      </div>
+    </div>
+
+    <div class="why-panel" id="whyPanel">
+      <div class="why-title">Step-by-step</div>
+      <ul class="why-steps" id="whySteps"></ul>
+    </div>
+
+    <div class="btn-row">
+      <button class="why-btn" id="whyBtn" onclick="toggleWhy()">Why?</button>
+      <button class="check-btn" id="checkBtn">Check</button>
+    </div>
+
+    <div class="results-wrap" id="resultsWrap">
+      <div class="res-card">
+        <div class="res-emoji" id="resEmoji">🎉</div>
+        <div class="res-title">Quiz Complete!</div>
+        <div class="res-level" id="resLevel">Easy Level</div>
+        <div class="res-score" id="resScore">0/10</div>
+        <div class="res-label">correct answers</div>
+        <div class="res-msg"   id="resMsg"></div>
+        <button class="btn-retry"  onclick="initQuiz()">Play Again →</button>
+        <button class="btn-switch" id="btnSwitch" onclick="switchLevel()">Try Hard Level →</button>
+        <button class="btn-home"   onclick="location.href='../../index.html'">← Back to Home</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <a href="../../index.html">LearnPad</a> &nbsp;·&nbsp; Free Math Practice &nbsp;·&nbsp;
+  <a href="../../for_school/index.html">School Worksheets</a>
+</footer>
+
+<script>
+const pick    = a => a[Math.floor(Math.random() * a.length)];
+const shuffle = a => [...a].sort(() => Math.random() - .5);
+const fmt     = v => Number.isInteger(v) ? String(v) : v.toFixed(1).replace('.0','');
+
+/* ═══════════════════════════════════════════
+   CATMULL-ROM SPLINE
+   Passes exactly through all control points.
+   Tangent at point i = (p[i+1] - p[i-1]) / 2
+   → If p[i-1].y === p[i+1].y, tangent_y = 0 → guaranteed local max/min at p[i].
+═══════════════════════════════════════════ */
+function crPoint(pts, t) {
+  const n = pts.length;
+  const i = Math.max(0, Math.min(n-2, Math.floor(t)));
+  const u = t - i;
+  const p0=pts[Math.max(0,i-1)], p1=pts[i], p2=pts[i+1], p3=pts[Math.min(n-1,i+2)];
+  const t2=u*u, t3=t2*u;
+  const h1=2*t3-3*t2+1, h2=t3-2*t2+u, h3=-2*t3+3*t2, h4=t3-t2;
+  const mx1=(p2[0]-p0[0])/2, my1=(p2[1]-p0[1])/2;
+  const mx2=(p3[0]-p1[0])/2, my2=(p3[1]-p1[1])/2;
+  return { x:h1*p1[0]+h2*mx1+h3*p2[0]+h4*mx2, y:h1*p1[1]+h2*my1+h3*p2[1]+h4*my2 };
+}
+
+function crSvgPath(pts, sx, sy, SAMPLES=120) {
+  const n = pts.length;
+  const pp = [];
+  for (let s=0;s<=SAMPLES;s++) {
+    const t = s/SAMPLES*(n-1);
+    const p = crPoint(pts,t);
+    pp.push(`${sx(p.x).toFixed(1)},${sy(p.y).toFixed(1)}`);
+  }
+  return 'M '+pp.join(' L ');
+}
+
+/* ═══════════════════════════════════════════
+   CURVE DEFINITIONS
+   Each curve guarantees: tangent_y = 0 at maxPt and minPt
+   by ensuring p[maxIdx-1].y === p[maxIdx+1].y (and same for min).
+   All control points are exact — the spline passes through them.
+
+   Structure:
+     pts[]:  [[x,y], ...] control points (monotone in x)
+     xR, yR: [min, max] grid bounds
+     maxPt:  [x,y] of peak  (must be a control point)
+     minPt:  [x,y] of trough (must be a control point)
+     zeros:  x values where a control point has y=0
+     spots:  [{x,y}] for y_at_x questions (control points)
+═══════════════════════════════════════════ */
+const EASY_CURVES = [
+  { // E1 — peak=5 at x=2, trough=-2 at x=6
+    pts:[[1,1],[2,5],[3,1],[4.5,0],[6,-2],[7,0],[8,3]],
+    xR:[0,9],yR:[-3,6], maxPt:[2,5],minPt:[6,-2],
+    zeros:[4.5,7], spots:[{x:7,y:0},{x:8,y:3}],
+  },
+  { // E2 — peak=4 at x=3, trough=-3 at x=7
+    pts:[[1,2],[3,4],[5,2],[5.5,0],[7,-3],[8.5,0],[9,2]],
+    xR:[0,10],yR:[-4,5], maxPt:[3,4],minPt:[7,-3],
+    zeros:[5.5,8.5], spots:[{x:5,y:2},{x:9,y:2}],
+  },
+  { // E3 — peak=6 at x=2, trough=-1 at x=7
+    pts:[[0,3],[2,6],[4,3],[5.5,1],[7,-1],[8.5,1],[9,2]],
+    xR:[-1,10],yR:[-2,7], maxPt:[2,6],minPt:[7,-1],
+    zeros:[], spots:[{x:4,y:3},{x:9,y:2}],
+  },
+  { // E4 — peak=4 at x=2.5, trough=-2 at x=6
+    pts:[[1,1],[2.5,4],[4,1],[4.5,0],[6,-2],[7.5,0],[8,2]],
+    xR:[0,9],yR:[-3,5], maxPt:[2.5,4],minPt:[6,-2],
+    zeros:[4.5,7.5], spots:[{x:7.5,y:0},{x:8,y:2}],
+  },
+  { // E5 — peak=5 at x=2, trough=-3 at x=6
+    pts:[[1,2],[2,5],[3,2],[4.5,1],[6,-3],[7.5,1],[8,2]],
+    xR:[0,9],yR:[-4,6], maxPt:[2,5],minPt:[6,-3],
+    zeros:[], spots:[{x:3,y:2},{x:8,y:2}],
+  },
+];
+
+const HARD_CURVES = [
+  { // H1 — peak=5.5 at x=2.5, trough=-1.5 at x=6
+    pts:[[1,0.5],[2.5,5.5],[4,0.5],[5,0],[6,-1.5],[7.5,0],[8,2.5]],
+    xR:[0,9],yR:[-2.5,6.5], maxPt:[2.5,5.5],minPt:[6,-1.5],
+    zeros:[5,7.5], spots:[{x:8,y:2.5},{x:4,y:0.5}],
+  },
+  { // H2 — peak=4.5 at x=1.5, trough=-2.5 at x=5.5
+    pts:[[0.5,1],[1.5,4.5],[2.5,1],[4,0],[5.5,-2.5],[7,0],[8,3]],
+    xR:[-0.5,9],yR:[-3.5,5.5], maxPt:[1.5,4.5],minPt:[5.5,-2.5],
+    zeros:[4,7], spots:[{x:8,y:3},{x:2.5,y:1}],
+  },
+  { // H3 — peak=5 at x=3, trough=-2 at x=7.5
+    pts:[[1,1.5],[3,5],[5,1.5],[6,0],[7.5,-2],[8.5,0],[9,1.5]],
+    xR:[0,10],yR:[-3,6], maxPt:[3,5],minPt:[7.5,-2],
+    zeros:[6,8.5], spots:[{x:5,y:1.5},{x:9,y:1.5}],
+  },
+  { // H4 — peak=3.5 at x=2, trough=-3.5 at x=5.5
+    pts:[[1,0],[2,3.5],[3,0],[4,-0.5],[5.5,-3.5],[7,-0.5],[8,2.5]],
+    xR:[0,9],yR:[-4.5,4.5], maxPt:[2,3.5],minPt:[5.5,-3.5],
+    zeros:[1,3], spots:[{x:8,y:2.5},{x:3,y:0}],
+  },
+  { // H5 — peak=4.5 at x=1.5, trough=-1.5 at x=5
+    pts:[[0,2],[1.5,4.5],[3,2],[4,0],[5,-1.5],[6.5,0],[8,3.5]],
+    xR:[-1,9],yR:[-2.5,5.5], maxPt:[1.5,4.5],minPt:[5,-1.5],
+    zeros:[4,6.5], spots:[{x:8,y:3.5},{x:3,y:2}],
+  },
+];
+
+/* ═══════════════════════════════════════════
+   GRAPH CONSTANTS
+═══════════════════════════════════════════ */
+const PL=36, PB=28, PT=16, PR=18;
+
+function gSize(xR, yR) {
+  const xSpan=xR[1]-xR[0], ySpan=yR[1]-yR[0];
+  const CW=Math.min(36, Math.floor((330-PL-PR)/xSpan));
+  const CH=Math.min(26, Math.floor((256-PT-PB)/ySpan));
+  return { CW, CH, W:PL+xSpan*CW+PR, H:PT+ySpan*CH+PB };
+}
+function gCoords(xMin, yMax, CW, CH) {
+  return { sx: x=>PL+(x-xMin)*CW, sy: y=>PT+(yMax-y)*CH };
+}
+
+/* ── Build SVG string ── */
+function buildSvg(curve, highlightY=null, highlightX=null, revealPt=null) {
+  const {CW,CH,W,H}=gSize(curve.xR, curve.yR);
+  const {sx,sy}=gCoords(curve.xR[0], curve.yR[1], CW, CH);
+  const [xMin,xMax]=curve.xR, [yMin,yMax]=curve.yR;
+  const ac='rgba(255,255,255,0.5)';
+  const cid='cl'+Math.random().toString(36).slice(2,6);
+
+  let g='';
+  // Grid
+  for (let y=Math.ceil(yMin);y<=Math.floor(yMax);y++)
+    g+=`<line x1="${PL}" y1="${sy(y).toFixed(1)}" x2="${(W-PR).toFixed(1)}" y2="${sy(y).toFixed(1)}" stroke="rgba(255,255,255,.07)" stroke-width="1"/>`;
+  for (let x=Math.ceil(xMin);x<=Math.floor(xMax);x++)
+    g+=`<line x1="${sx(x).toFixed(1)}" y1="${PT}" x2="${sx(x).toFixed(1)}" y2="${(H-PB).toFixed(1)}" stroke="rgba(255,255,255,.07)" stroke-width="1"/>`;
+
+  // Axes
+  const yAx=sy(0)>=PT&&sy(0)<=H-PB?`<line x1="${sx(xMin).toFixed(1)}" y1="${sy(0).toFixed(1)}" x2="${sx(xMax)+8}" y2="${sy(0).toFixed(1)}" stroke="${ac}" stroke-width="2" marker-end="url(#axG)"/>`:'';
+  const xAx=sx(0)>=PL&&sx(0)<=W-PR?`<line x1="${sx(0).toFixed(1)}" y1="${(H-PB+8).toFixed(1)}" x2="${sx(0).toFixed(1)}" y2="${PT}" stroke="${ac}" stroke-width="1.8" marker-end="url(#axG)"/>`:'';
+
+  // Axis labels
+  let lbls='';
+  for (let y=Math.ceil(yMin);y<=Math.floor(yMax);y++) {
+    if (y===0) continue;
+    lbls+=`<text x="${PL-5}" y="${sy(y)+4}" text-anchor="end" fill="rgba(255,255,255,0.42)" font-size="11" font-family="Nunito,sans-serif" font-weight="700">${y}</text>`;
+  }
+  for (let x=Math.ceil(xMin);x<=Math.floor(xMax);x++) {
+    if (x===0) continue;
+    lbls+=`<text x="${sx(x)}" y="${H-PB+18}" text-anchor="middle" fill="rgba(255,255,255,0.42)" font-size="11" font-family="Nunito,sans-serif" font-weight="700">${x}</text>`;
+  }
+  // y label
+  lbls+=`<text x="${sx(0)+6}" y="${PT+13}" font-size="12" font-weight="900" fill="rgba(255,255,255,0.55)" font-family="Nunito,sans-serif" font-style="italic">y</text>`;
+  // x label
+  lbls+=`<text x="${sx(xMax)+8}" y="${sy(0)+5}" font-size="12" font-weight="900" fill="rgba(255,255,255,0.55)" font-family="Nunito,sans-serif" font-style="italic">x</text>`;
+
+  // Highlight lines
+  let hlines='';
+  if (highlightY!==null&&highlightY>=yMin&&highlightY<=yMax) {
+    hlines+=`<line x1="${PL}" y1="${sy(highlightY).toFixed(1)}" x2="${(W-PR).toFixed(1)}" y2="${sy(highlightY).toFixed(1)}" stroke="rgba(67,97,238,0.55)" stroke-width="1.5" stroke-dasharray="5,4"/>`;
+  }
+  if (highlightX!==null&&highlightX>=xMin&&highlightX<=xMax) {
+    hlines+=`<line x1="${sx(highlightX).toFixed(1)}" y1="${PT}" x2="${sx(highlightX).toFixed(1)}" y2="${(H-PB).toFixed(1)}" stroke="rgba(67,97,238,0.55)" stroke-width="1.5" stroke-dasharray="5,4"/>`;
+  }
+
+  // Curve (clipped)
+  const pathD = crSvgPath(curve.pts, sx, sy);
+  const curveSvg=`<defs><clipPath id="${cid}"><rect x="${PL}" y="${PT}" width="${W-PL-PR}" height="${H-PT-PB}"/></clipPath></defs>
+    <path d="${pathD}" fill="none" stroke="#4bc5a5" stroke-width="2.8" stroke-linejoin="round" clip-path="url(#${cid})"/>`;
+
+  // Reveal point after answering
+  let revealSvg='';
+  if (revealPt) {
+    const rx=sx(revealPt.x), ry=sy(revealPt.y);
+    revealSvg=`<circle cx="${rx.toFixed(1)}" cy="${ry.toFixed(1)}" r="7" fill="${revealPt.correct?'#58cc02':'#ff4b4b'}" stroke="rgba(255,255,255,0.7)" stroke-width="2"/>`;
+    if (revealPt.correct) revealSvg+=`<text x="${rx.toFixed(1)}" y="${(ry-12).toFixed(1)}" text-anchor="middle" font-size="12" fill="#88e04a">✓</text>`;
+  }
+
+  return `<svg class="coord-svg" width="${W}" height="${H}">
+    <defs><marker id="axG" markerWidth="7" markerHeight="6" refX="6" refY="3" orient="auto"><polygon points="0 0,7 3,0 6" fill="${ac}"/></marker></defs>
+    ${g}${yAx}${xAx}${lbls}${hlines}${curveSvg}${revealSvg}
+  </svg>`;
+}
+
+/* ═══════════════════════════════════════════
+   TILE GENERATORS
+═══════════════════════════════════════════ */
+function yTiles(correct, step=0.5) {
+  // 5 tiles as arithmetic sequence containing correct
+  // Put correct at a random position (not always center)
+  const pos = Math.floor(Math.random()*4)+1; // 1..4 (not 0 so one value always below)
+  const start = +(correct - (pos-1)*step).toFixed(1);
+  return Array.from({length:5},(_,i)=>+(start+i*step).toFixed(1));
+}
+
+function xTiles(correct, xR, step=1) {
+  // 5 x tiles including correct
+  const pos = Math.floor(Math.random()*3)+1; // 1..3
+  const vals = Array.from({length:5},(_,i)=>+(correct-(pos-1)*step+i*step).toFixed(1));
+  // Clamp to xR
+  return vals.map(v=>Math.max(xR[0],Math.min(xR[1],v)));
+}
+
+/* ═══════════════════════════════════════════
+   QUESTION GENERATORS
+═══════════════════════════════════════════ */
+function genMaxY(curve) {
+  const [cx,cy]=curve.maxPt;
+  const tiles=yTiles(cy, Number.isInteger(cy)?1:0.5);
+  if (!tiles.includes(cy)) tiles[Math.floor(tiles.length/2)]=cy;
+  tiles.sort((a,b)=>a-b);
+  return {
+    qtype:'max_y', curve,
+    questionText:'What is the <strong>largest</strong> value of f(x) on this part of the graph?',
+    correct:cy, tiles, highlightY:cy, highlightX:null,
+    dispFmt:'y_eq',
+    hint:`Look for the highest point on the curve — the peak.`,
+    why:[`Scan the curve for the <span>highest point</span>`,`The peak reaches y = <span>${fmt(cy)}</span> at x = ${fmt(cx)}`,`So the largest value of f(x) is <span>${fmt(cy)}</span>`],
+  };
+}
+
+function genMinY(curve) {
+  const [cx,cy]=curve.minPt;
+  const tiles=yTiles(cy, Number.isInteger(cy)?1:0.5);
+  if (!tiles.includes(cy)) tiles[Math.floor(tiles.length/2)]=cy;
+  tiles.sort((a,b)=>a-b);
+  return {
+    qtype:'min_y', curve,
+    questionText:'What is the <strong>smallest</strong> value of f(x) on this part of the graph?',
+    correct:cy, tiles, highlightY:cy, highlightX:null,
+    dispFmt:'y_eq',
+    hint:`Look for the lowest point on the curve — the trough.`,
+    why:[`Scan the curve for the <span>lowest point</span>`,`The trough dips to y = <span>${fmt(cy)}</span> at x = ${fmt(cx)}`,`So the smallest value of f(x) is <span>${fmt(cy)}</span>`],
+  };
+}
+
+function genXAtMax(curve) {
+  const [cx,cy]=curve.maxPt;
+  const step=Number.isInteger(cx)?1:0.5;
+  const tiles=xTiles(cx, curve.xR, step);
+  if (!tiles.includes(cx)) tiles[Math.floor(tiles.length/2)]=cx;
+  tiles.sort((a,b)=>a-b);
+  return {
+    qtype:'x_at_max', curve,
+    questionText:'Which x value has the <strong>largest</strong> value of f(x)?',
+    correct:cx, knownY:cy, tiles, highlightY:cy, highlightX:null,
+    dispFmt:'coord_x', // (?, cy)
+    hint:`Find the highest point on the curve and read its x coordinate.`,
+    why:[`The highest point is at <span>(${fmt(cx)}, ${fmt(cy)})</span>`,`Read the x coordinate: x = <span>${fmt(cx)}</span>`,`So x = <span>${fmt(cx)}</span> gives the largest f(x) = ${fmt(cy)}`],
+  };
+}
+
+function genXAtMin(curve) {
+  const [cx,cy]=curve.minPt;
+  const step=Number.isInteger(cx)?1:0.5;
+  const tiles=xTiles(cx, curve.xR, step);
+  if (!tiles.includes(cx)) tiles[Math.floor(tiles.length/2)]=cx;
+  tiles.sort((a,b)=>a-b);
+  return {
+    qtype:'x_at_min', curve,
+    questionText:'Which x value has the <strong>smallest</strong> value of f(x)?',
+    correct:cx, knownY:cy, tiles, highlightY:cy, highlightX:null,
+    dispFmt:'coord_x', // (?, cy)
+    hint:`Find the lowest point on the curve and read its x coordinate.`,
+    why:[`The lowest point is at <span>(${fmt(cx)}, ${fmt(cy)})</span>`,`Read the x coordinate: x = <span>${fmt(cx)}</span>`,`So x = <span>${fmt(cx)}</span> gives the smallest f(x) = ${fmt(cy)}`],
+  };
+}
+
+function genYAtX(curve, spotIdx=0) {
+  const spot=curve.spots[spotIdx % curve.spots.length];
+  const step=Number.isInteger(spot.y)?1:0.5;
+  const tiles=yTiles(spot.y, step);
+  if (!tiles.includes(spot.y)) tiles[Math.floor(tiles.length/2)]=spot.y;
+  tiles.sort((a,b)=>a-b);
+  return {
+    qtype:'y_at_x', curve,
+    questionText:`What is the value of f(x) when x = ${fmt(spot.x)}?`,
+    correct:spot.y, knownX:spot.x, tiles, highlightY:null, highlightX:spot.x,
+    dispFmt:'f_at_x', // f(knownX) = ?
+    hint:`Find x = ${fmt(spot.x)} on the x-axis and read the y value where the curve is.`,
+    why:[`Find <span>x = ${fmt(spot.x)}</span> on the horizontal axis`,`Trace up to the curve → y = <span>${fmt(spot.y)}</span>`,`So f(${fmt(spot.x)}) = <span>${fmt(spot.y)}</span>`],
+  };
+}
+
+function genXZero(curve) {
+  if (!curve.zeros.length) return genYAtX(curve, 0);
+  const z=pick(curve.zeros);
+  const step=Number.isInteger(z)?1:0.5;
+  const tiles=xTiles(z, curve.xR, step);
+  if (!tiles.includes(z)) tiles[Math.floor(tiles.length/2)]=z;
+  tiles.sort((a,b)=>a-b);
+  return {
+    qtype:'x_zero', curve,
+    questionText:'At which value of x does f(x) = 0?',
+    correct:z, tiles, highlightY:0, highlightX:null,
+    dispFmt:'x_zero', // f(?) = 0
+    hint:`Look for where the curve crosses the x-axis (y = 0).`,
+    why:[`Follow the curve to where it <span>crosses the x-axis</span>`,`The crossing occurs at x = <span>${fmt(z)}</span>`,`So f(${fmt(z)}) = <span>0</span>`],
+  };
+}
+
+/* ═══════════════════════════════════════════
+   ANSWER DISPLAY HTML
+═══════════════════════════════════════════ */
+function ansDisplayHTML(q, selVal=null, state='blank') {
+  const cls = state==='blank'?'ans-blank':state==='filled'?'ans-blank filled':state==='correct'?'ans-blank correct-f':'ans-blank wrong-f';
+  const inner = selVal!==null ? fmt(selVal) : '?';
+  const blank = `<span class="${cls}" id="ansBlank">${inner}</span>`;
+
+  if (q.dispFmt==='y_eq') {
+    return `<span class="ans-y-tag">y</span><span class="ans-eq">=</span>${blank}`;
+  }
+  if (q.dispFmt==='coord_x') {
+    return `<span class="ans-paren">(</span>${blank}<span class="ans-comma">, <span class="ans-known">${fmt(q.knownY)}</span>)</span>`;
+  }
+  if (q.dispFmt==='f_at_x') {
+    return `<span class="ans-x-tag" style="font-style:normal">f(${fmt(q.knownX)})</span><span class="ans-eq">=</span>${blank}`;
+  }
+  if (q.dispFmt==='x_zero') {
+    return `<span class="ans-x-tag" style="font-style:normal">f(</span>${blank}<span class="ans-x-tag" style="font-style:normal">) = 0</span>`;
+  }
+  return blank;
+}
+
+/* ═══════════════════════════════════════════
+   STATE
+═══════════════════════════════════════════ */
+let currentLevel='easy';
+let questions=[],qIdx=0;
+let isAnswered=false,isLocked=false,score=0,whyOpen=false;
+let selOpt=null;
+
+function getRules(){ return currentLevel==='easy'?EASY_CURVES:HARD_CURVES; }
+function setLevel(lvl){
+  currentLevel=lvl;
+  document.getElementById('btnEasy').className='level-btn'+(lvl==='easy'?' active-easy':'');
+  document.getElementById('btnHard').className='level-btn'+(lvl==='hard'?' active-hard':'');
+  initQuiz();
+}
+function switchLevel(){ setLevel(currentLevel==='easy'?'hard':'easy'); }
+
+/* ═══════════════════════════════════════════
+   QUESTION GENERATION (3 types per curve, pick 4 curves → 12 → trim to 10)
+═══════════════════════════════════════════ */
+function makeQuestions(curves) {
+  const qs = [];
+  for (const c of curves) {
+    if (currentLevel==='easy') {
+      qs.push(genMaxY(c), genMinY(c), genXAtMax(c));
+    } else {
+      qs.push(genXAtMax(c), genXAtMin(c), pick([genYAtX,genXZero])(c));
+    }
+  }
+  return qs.slice(0,10);
+}
+
+/* ═══════════════════════════════════════════
+   RENDER
+═══════════════════════════════════════════ */
+function renderQuestion(q) {
+  selOpt=null;
+  const svgHTML=buildSvg(q.curve, q.highlightY, q.highlightX);
+  const dispHTML=ansDisplayHTML(q);
+  const tilesHTML=q.tiles.map((v,i)=>`<button class="tile-btn" onclick="selectTile(${i})">${fmt(v)}</button>`).join('');
+
+  document.getElementById('qCard').innerHTML=`
+    <p class="q-text">${q.questionText}</p>
+    <div class="graph-wrap">${svgHTML}</div>
+    <div class="ans-display" id="ansDisplay">${dispHTML}</div>
+    <div class="tiles-row" id="tilesRow">${tilesHTML}</div>
+    <div class="start-over-row"><button class="start-over-btn" onclick="initQuiz()">↺ Start over</button></div>`;
+}
+
+/* ═══════════════════════════════════════════
+   INTERACTION
+═══════════════════════════════════════════ */
+function selectTile(i) {
+  if (isLocked) return;
+  selOpt=i;
+  document.querySelectorAll('.tile-btn').forEach((b,idx)=>b.classList.toggle('selected',idx===i));
+  const val=questions[qIdx].tiles[i];
+  document.getElementById('ansDisplay').innerHTML=ansDisplayHTML(questions[qIdx],val,'filled');
+  document.getElementById('checkBtn').className='check-btn ready';
+}
+
+function checkAnswer() {
+  const q=questions[qIdx];
+  if (isAnswered){advanceQuestion();return;}
+  if (selOpt===null) return;
+
+  isAnswered=isLocked=true;
+  const selVal=q.tiles[selOpt];
+  const correct=selVal===q.correct;
+
+  document.querySelectorAll('.tile-btn').forEach((b,i)=>{
+    b.classList.add('locked');
+    if (q.tiles[i]===q.correct) b.classList.add('correct');
+    else if (i===selOpt&&!correct) b.classList.add('wrong');
+  });
+  const state=correct?'correct':'wrong';
+  document.getElementById('ansDisplay').innerHTML=ansDisplayHTML(q,correct?selVal:q.correct,state);
+
+  // Redraw graph with reveal point (mark the correct point on curve)
+  if (q.qtype==='x_at_max'||q.qtype==='x_at_min') {
+    const pt=q.qtype==='x_at_max'?q.curve.maxPt:q.curve.minPt;
+    const newSvg=buildSvg(q.curve,q.highlightY,q.highlightX,{x:pt[0],y:pt[1],correct:true});
+    document.querySelector('.graph-wrap').innerHTML=newSvg;
+  } else if (q.qtype==='y_at_x') {
+    const spot=q.curve.spots.find(s=>s.x===q.knownX)||q.curve.spots[0];
+    const newSvg=buildSvg(q.curve,q.highlightY,q.highlightX,{x:spot.x,y:spot.y,correct:true});
+    document.querySelector('.graph-wrap').innerHTML=newSvg;
+  } else if (q.qtype==='x_zero') {
+    const z=q.correct;
+    const newSvg=buildSvg(q.curve,q.highlightY,q.highlightX,{x:z,y:0,correct:true});
+    document.querySelector('.graph-wrap').innerHTML=newSvg;
+  }
+
+  if (correct){score++;document.getElementById('scoreDisp').textContent=score;}
+
+  const bar=document.getElementById('feedbackBar');
+  bar.className=`feedback-bar ${correct?'ok':'err'} show`;
+  document.getElementById('fbIcon').textContent=correct?'✓':'✗';
+  const te=document.getElementById('fbTitle');
+  te.className=`fb-title ${correct?'ok':'err'}`;
+  te.textContent=correct?'Correct!':`Answer: ${fmt(q.correct)}`;
+  document.getElementById('fbHint').textContent=q.hint;
+
+  document.getElementById('whyBtn').className='why-btn show';
+  whyOpen=false; document.getElementById('whyPanel').className='why-panel';
+  document.getElementById('pFill').style.width=(((qIdx+1)/10)*100)+'%';
+  const btn=document.getElementById('checkBtn');
+  btn.className='check-btn continue';
+  btn.textContent=qIdx<9?'Continue →':'See Results →';
+}
+
+function advanceQuestion() {
+  qIdx++;
+  if(qIdx>=10){showResults();return;}
+  selOpt=null;
+  isAnswered=isLocked=whyOpen=false;
+  document.getElementById('qNum').textContent=qIdx+1;
+  document.getElementById('feedbackBar').className='feedback-bar';
+  document.getElementById('checkBtn').className='check-btn';
+  document.getElementById('checkBtn').textContent='Check';
+  document.getElementById('whyBtn').className='why-btn';
+  document.getElementById('whyPanel').className='why-panel';
+  renderQuestion(questions[qIdx]);
+}
+
+function toggleWhy(){
+  whyOpen=!whyOpen;
+  const p=document.getElementById('whyPanel'),b=document.getElementById('whyBtn');
+  if(whyOpen){
+    document.getElementById('whySteps').innerHTML=questions[qIdx].why.map(s=>`<li>${s}</li>`).join('');
+    p.className='why-panel show';b.className='why-btn show active';b.textContent='Hide';
+  } else {
+    p.className='why-panel';b.className='why-btn show';b.textContent='Why?';
+  }
+}
+
+function showResults(){
+  document.getElementById('qCard').style.display='none';
+  document.getElementById('feedbackBar').className='feedback-bar';
+  document.getElementById('checkBtn').style.display='none';
+  document.getElementById('whyBtn').className='why-btn';
+  document.getElementById('whyPanel').className='why-panel';
+  document.getElementById('resultsWrap').className='results-wrap show';
+  const pct=score/10;
+  const [emoji,msg]=pct===1?['🏆','Perfect! You can read any graph with ease!']
+    :pct>=.8?['🎉','Excellent! Great graph interpretation skills.']
+    :pct>=.6?['👍','Good effort! Trace the curve carefully to find peaks and troughs.']
+    :pct>=.4?['📚','Keep practising — scan the whole curve before picking an answer.']
+    :['💡','Tip: for max/min, find the highest/lowest point on the curve first.'];
+  document.getElementById('resEmoji').textContent=emoji;
+  document.getElementById('resScore').textContent=`${score}/10`;
+  document.getElementById('resMsg').textContent=msg;
+  document.getElementById('resLevel').textContent=currentLevel==='easy'?'Easy Level':'Hard Level';
+  document.getElementById('btnSwitch').textContent=currentLevel==='easy'?'Try Hard Level →':'Try Easy Level →';
+}
+
+/* ═══════════════════════════════════════════
+   INIT
+═══════════════════════════════════════════ */
+function initQuiz(){
+  qIdx=score=0;selOpt=null;
+  isAnswered=isLocked=whyOpen=false;
+  const curves=shuffle(getRules()).slice(0,4);
+  questions=makeQuestions(curves);
+  ['qCard','checkBtn'].forEach(id=>document.getElementById(id).style.display='');
+  document.getElementById('checkBtn').className='check-btn';
+  document.getElementById('checkBtn').textContent='Check';
+  document.getElementById('feedbackBar').className='feedback-bar';
+  document.getElementById('whyBtn').className='why-btn';
+  document.getElementById('whyPanel').className='why-panel';
+  document.getElementById('resultsWrap').className='results-wrap';
+  document.getElementById('scoreDisp').textContent=0;
+  document.getElementById('qNum').textContent=1;
+  document.getElementById('pFill').style.width='0%';
+  renderQuestion(questions[0]);
+}
+
+document.getElementById('checkBtn').addEventListener('click',checkAnswer);
+initQuiz();
+</script>
+</body>
+</html>

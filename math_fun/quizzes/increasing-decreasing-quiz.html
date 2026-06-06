@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Increasing & Decreasing – Math Fun | LearnPad</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+    :root {
+      --bg:#0e0f14; --card:#1d1f2b; --border:#2a2c3a;
+      --text:#f0f0f8; --muted:rgba(240,240,248,.42);
+      --green:#58cc02; --green-dk:#46a301; --red:#ff4b4b;
+      --blue:#4361ee; --purple:#7c3aed; --teal:#4bc5a5;
+      --opt-bg:#1e2030; --opt-brd:#313446; --radius:16px;
+    }
+    body { font-family:'Nunito',system-ui,sans-serif; background:var(--bg); color:var(--text); min-height:100vh; display:flex; flex-direction:column; }
+
+    header { background:#fff; border-bottom:2px solid #e2e6f0; padding:0 24px; position:sticky; top:0; z-index:100; flex-shrink:0; }
+    .header-inner { max-width:960px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; height:56px; }
+    .logo-link { text-decoration:none; display:flex; align-items:center; }
+    .logo-img { height:34px; width:auto; }
+    .logo-txt { font-weight:900; font-size:1.15rem; color:#4361ee; }
+    nav a { font-weight:700; font-size:0.85rem; color:#5a6076; text-decoration:none; padding:6px 12px; border-radius:8px; transition:color .15s,background .15s; }
+    nav a:hover { color:#4361ee; background:#eef1fd; }
+
+    main { flex:1; display:flex; flex-direction:column; align-items:center; }
+    .quiz-shell { width:100%; max-width:520px; padding:16px 20px 80px; display:flex; flex-direction:column; flex:1; }
+
+    .level-row { display:flex; justify-content:center; gap:8px; margin-bottom:18px; }
+    .level-btn { font-family:inherit; font-size:0.8rem; font-weight:800; padding:6px 18px; border-radius:999px; cursor:pointer; border:2px solid var(--opt-brd); background:var(--opt-bg); color:var(--muted); transition:all .15s; }
+    .level-btn.active-easy { border-color:var(--green); background:#172110; color:#88e04a; }
+    .level-btn.active-hard { border-color:var(--purple); background:#1e1535; color:#c084fc; }
+
+    .progress-wrap { margin-bottom:16px; }
+    .progress-track { height:8px; background:#252733; border-radius:4px; overflow:hidden; }
+    .progress-fill  { height:100%; background:var(--green); border-radius:4px; width:0%; transition:width .4s ease; }
+    .progress-meta  { display:flex; justify-content:space-between; margin-top:6px; font-size:0.72rem; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:.05em; }
+
+    .q-card { background:var(--card); border:1.5px solid var(--border); border-radius:var(--radius); padding:20px 16px 18px; margin-bottom:14px; }
+    .q-text { font-size:1rem; font-weight:800; line-height:1.55; margin-bottom:14px; color:var(--text); }
+
+    /* Graph */
+    .graph-wrap { display:flex; justify-content:center; margin-bottom:14px; }
+    .coord-svg  { display:block; overflow:visible; }
+
+    /* Answer display */
+    .ans-display {
+      background:#181921; border:1.5px solid var(--border); border-radius:14px;
+      padding:13px 20px; margin-bottom:12px;
+      display:flex; align-items:center; justify-content:center; gap:10px;
+      font-size:1.1rem; font-weight:800; color:var(--muted);
+    }
+    .ans-ivar { font-style:italic; color:rgba(255,255,255,.7); font-size:1.2rem; font-weight:900; }
+    .ans-y-tag { background:#c0392b; border-radius:5px; color:#fff; font-size:0.88rem; font-weight:900; padding:2px 8px; }
+    .ans-x-tag { background:#2980b9; border-radius:5px; color:#fff; font-size:0.88rem; font-weight:900; padding:2px 8px; }
+    .ans-eq { color:rgba(255,255,255,.5); font-size:1.1rem; }
+    .ans-blank {
+      display:inline-flex; align-items:center; justify-content:center;
+      min-width:46px; height:38px; padding:0 12px;
+      background:#252733; border:2px dashed #3d3f52; border-radius:8px;
+      color:rgba(255,255,255,.25); font-size:1.05rem; font-weight:800; transition:all .2s;
+    }
+    .ans-blank.filled    { background:rgba(67,97,238,.22); border:2px solid rgba(67,97,238,.7); color:#a0b4ff; }
+    .ans-blank.correct-f { background:rgba(88,204,2,.18); border-color:var(--green); color:#88e04a; }
+    .ans-blank.wrong-f   { background:rgba(255,75,75,.18); border-color:var(--red); color:#ff8080; }
+
+    /* Tiles */
+    .tiles-row { display:flex; justify-content:center; gap:8px; flex-wrap:wrap; margin-bottom:10px; }
+    .tile-btn {
+      background:var(--opt-bg); border:2px solid var(--opt-brd); border-radius:12px;
+      color:var(--text); font-family:inherit; font-size:0.95rem; font-weight:800;
+      min-width:58px; height:50px; padding:0 10px; cursor:pointer;
+      display:flex; align-items:center; justify-content:center;
+      transition:border-color .15s,background .15s,transform .1s;
+    }
+    .tile-btn:hover:not(.locked) { border-color:#555870; background:#252737; }
+    .tile-btn:active:not(.locked) { transform:scale(.95); }
+    .tile-btn.selected { border-color:#6070cc; background:#1e2240; }
+    .tile-btn.correct  { border-color:var(--green)!important; background:#172110!important; color:#88e04a; }
+    .tile-btn.wrong    { border-color:var(--red)!important;   background:#221212!important; color:#ff8080; }
+    .tile-btn.locked   { cursor:default; }
+
+    /* Operator buttons */
+    .op-row { display:flex; justify-content:center; gap:10px; margin-bottom:4px; }
+    .op-btn {
+      background:var(--opt-bg); border:2px solid var(--opt-brd); border-radius:12px;
+      color:var(--text); font-family:inherit; font-size:1.2rem; font-weight:900;
+      width:54px; height:50px; cursor:pointer;
+      display:flex; align-items:center; justify-content:center;
+      transition:border-color .15s,background .15s,transform .1s;
+    }
+    .op-btn:hover:not(.locked) { border-color:#555870; background:#252737; }
+    .op-btn:active:not(.locked) { transform:scale(.95); }
+    .op-btn.selected { border-color:#6070cc; background:#1e2240; color:#a0b4ff; }
+    .op-btn.correct  { border-color:var(--green)!important; background:#172110!important; color:#88e04a; }
+    .op-btn.locked   { cursor:default; }
+
+    .start-over-row { display:flex; justify-content:flex-end; margin-top:4px; }
+    .start-over-btn { background:none; border:none; color:var(--muted); font-family:inherit; font-size:0.8rem; font-weight:700; cursor:pointer; padding:4px 8px; border-radius:8px; transition:color .15s; }
+    .start-over-btn:hover { color:var(--text); }
+
+    .feedback-bar { border-radius:12px; padding:12px 16px; margin-bottom:10px; display:flex; align-items:flex-start; gap:10px; opacity:0; transition:opacity .2s; }
+    .feedback-bar.show { opacity:1; }
+    .feedback-bar.ok  { background:#172110; border:1.5px solid #2d4a1e; }
+    .feedback-bar.err { background:#221212; border:1.5px solid #4a1f1f; }
+    .fb-icon  { font-size:1.1rem; flex-shrink:0; }
+    .fb-body  { flex:1; }
+    .fb-title { font-size:0.88rem; font-weight:900; margin-bottom:2px; }
+    .fb-title.ok  { color:#88e04a; } .fb-title.err { color:#ff8080; }
+    .fb-hint  { font-size:0.78rem; font-weight:600; color:var(--muted); line-height:1.5; }
+
+    .why-panel { background:#14182a; border:1.5px solid rgba(67,97,238,.4); border-radius:12px; padding:14px 16px; margin-bottom:10px; display:none; animation:slideIn .2s ease; }
+    .why-panel.show { display:block; }
+    @keyframes slideIn { from{opacity:0;transform:translateY(-6px)} to{opacity:1;transform:translateY(0)} }
+    .why-title { font-size:0.8rem; font-weight:900; color:#a0b4ff; text-transform:uppercase; letter-spacing:.08em; margin-bottom:8px; }
+    .why-steps { list-style:none; }
+    .why-steps li { font-size:0.82rem; font-weight:700; color:var(--muted); padding:4px 0; border-bottom:1px solid rgba(255,255,255,.05); line-height:1.5; }
+    .why-steps li:last-child { border-bottom:none; color:#88e04a; }
+    .why-steps li span { color:#a0b4ff; }
+
+    .btn-row { display:flex; gap:10px; }
+    .why-btn { flex-shrink:0; padding:16px 18px; border:2px solid var(--opt-brd); border-radius:999px; font-family:inherit; font-size:0.9rem; font-weight:800; cursor:pointer; background:var(--opt-bg); color:var(--muted); transition:all .15s; display:none; }
+    .why-btn.show { display:block; }
+    .why-btn:hover { border-color:#a0b4ff; color:#a0b4ff; }
+    .why-btn.active { border-color:rgba(67,97,238,.7); background:rgba(67,97,238,.15); color:#a0b4ff; }
+    .check-btn { flex:1; padding:16px; border:none; border-radius:999px; font-family:inherit; font-size:1rem; font-weight:900; cursor:pointer; background:#252737; color:var(--muted); transition:background .15s,color .15s; }
+    .check-btn.ready    { background:var(--blue);  color:#fff; }
+    .check-btn.ready:hover { background:#3451d1; }
+    .check-btn.continue { background:var(--green); color:#fff; }
+    .check-btn.continue:hover { background:var(--green-dk); }
+
+    .results-wrap { text-align:center; display:none; padding:20px 0 40px; }
+    .results-wrap.show { display:block; }
+    .res-card { background:var(--card); border:1.5px solid var(--border); border-radius:var(--radius); padding:34px 28px 28px; }
+    .res-emoji { font-size:3rem; margin-bottom:10px; }
+    .res-title { font-size:1.4rem; font-weight:900; color:var(--text); margin-bottom:4px; }
+    .res-level { font-size:0.75rem; font-weight:700; color:var(--muted); margin-bottom:10px; text-transform:uppercase; letter-spacing:.08em; }
+    .res-score { font-size:2.8rem; font-weight:900; color:var(--green); margin:14px 0 2px; }
+    .res-label { font-size:0.82rem; font-weight:700; color:var(--muted); margin-bottom:14px; }
+    .res-msg   { font-size:0.88rem; font-weight:700; color:var(--muted); line-height:1.6; margin-bottom:22px; }
+    .btn-retry  { background:var(--blue); color:#fff; font-family:inherit; font-size:0.95rem; font-weight:800; padding:14px 36px; border:none; border-radius:999px; cursor:pointer; transition:background .15s; display:block; width:100%; margin-bottom:10px; }
+    .btn-retry:hover { background:#3451d1; }
+    .btn-switch { background:none; border:1.5px solid var(--opt-brd); color:var(--muted); font-family:inherit; font-size:0.85rem; font-weight:700; padding:10px 24px; border-radius:999px; cursor:pointer; transition:all .15s; width:100%; margin-bottom:10px; }
+    .btn-switch:hover { border-color:#a0b4ff; color:#a0b4ff; }
+    .btn-home { background:none; border:1.5px solid var(--border); color:var(--muted); font-family:inherit; font-size:0.85rem; font-weight:700; padding:10px 24px; border-radius:999px; cursor:pointer; transition:all .15s; width:100%; }
+    .btn-home:hover { border-color:#555870; color:var(--text); }
+
+    footer { background:#0a0b10; color:rgba(255,255,255,.4); padding:16px 24px; text-align:center; font-size:0.75rem; font-weight:600; }
+    footer a { color:rgba(255,255,255,.25); text-decoration:none; }
+    footer a:hover { color:rgba(255,255,255,.7); }
+
+    @media (max-width:400px) {
+      .quiz-shell { padding:12px 12px 70px; }
+      .tile-btn { min-width:48px; height:46px; font-size:0.88rem; }
+      .op-btn { width:48px; height:46px; }
+    }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header>
+  <div class="header-inner">
+    <a class="logo-link" href="../../index.html">
+      <img src="../../logo.png" alt="LearnPad" class="logo-img"
+           onerror="this.outerHTML='<span class=logo-txt>LearnPad</span>'" />
+    </a>
+    <nav>
+      <a href="../../for_school/index.html">School</a>
+      <a href="../../index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="quiz-shell" id="quizShell">
+    <div class="level-row">
+      <button class="level-btn active-easy" id="btnEasy" onclick="setLevel('easy')">Easy</button>
+      <button class="level-btn" id="btnHard"  onclick="setLevel('hard')">Hard</button>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-track"><div class="progress-fill" id="pFill"></div></div>
+      <div class="progress-meta">
+        <span>Question <span id="qNum">1</span> of 10</span>
+        <span>⭐ <span id="scoreDisp">0</span></span>
+      </div>
+    </div>
+
+    <div class="q-card" id="qCard"></div>
+
+    <div class="feedback-bar" id="feedbackBar">
+      <div class="fb-icon"  id="fbIcon"></div>
+      <div class="fb-body">
+        <div class="fb-title" id="fbTitle"></div>
+        <div class="fb-hint"  id="fbHint"></div>
+      </div>
+    </div>
+
+    <div class="why-panel" id="whyPanel">
+      <div class="why-title">Step-by-step</div>
+      <ul class="why-steps" id="whySteps"></ul>
+    </div>
+
+    <div class="btn-row">
+      <button class="why-btn" id="whyBtn" onclick="toggleWhy()">Why?</button>
+      <button class="check-btn" id="checkBtn" onclick="checkAnswer()">Check</button>
+    </div>
+
+    <div class="results-wrap" id="resultsWrap">
+      <div class="res-card">
+        <div class="res-emoji" id="resEmoji">🎉</div>
+        <div class="res-title">Quiz Complete!</div>
+        <div class="res-level" id="resLevel">Easy Level</div>
+        <div class="res-score" id="resScore">0/10</div>
+        <div class="res-label">correct answers</div>
+        <div class="res-msg"   id="resMsg"></div>
+        <button class="btn-retry"  onclick="initQuiz()">Play Again →</button>
+        <button class="btn-switch" id="btnSwitch" onclick="switchLevel()">Try Hard Level →</button>
+        <button class="btn-home"   onclick="location.href='../../index.html'">← Back to Home</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <a href="../../index.html">LearnPad</a> &nbsp;·&nbsp; Free Math Practice &nbsp;·&nbsp;
+  <a href="../../for_school/index.html">School Worksheets</a>
+</footer>
+
+<script>
+const pick    = a => a[Math.floor(Math.random() * a.length)];
+const shuffle = a => [...a].sort(() => Math.random() - .5);
+const fmt     = v => Number.isInteger(v) ? String(v) : v.toFixed(1).replace(/\.0$/,'');
+
+/* ═══════════════════════════════════════════════════════
+   CATMULL-ROM SPLINE
+   Horizontal tangent at extremum guaranteed when
+   pts[i-1][1] === pts[i+1][1] (same y on both sides).
+═══════════════════════════════════════════════════════ */
+function crPoint(pts, t) {
+  const n=pts.length;
+  const i=Math.max(0,Math.min(n-2,Math.floor(t))), u=t-i;
+  const p0=pts[Math.max(0,i-1)],p1=pts[i],p2=pts[i+1],p3=pts[Math.min(n-1,i+2)];
+  const t2=u*u,t3=t2*u;
+  const h1=2*t3-3*t2+1,h2=t3-2*t2+u,h3=-2*t3+3*t2,h4=t3-t2;
+  const mx1=(p2[0]-p0[0])/2,my1=(p2[1]-p0[1])/2;
+  const mx2=(p3[0]-p1[0])/2,my2=(p3[1]-p1[1])/2;
+  return {x:h1*p1[0]+h2*mx1+h3*p2[0]+h4*mx2, y:h1*p1[1]+h2*my1+h3*p2[1]+h4*my2};
+}
+function crPath(pts, sx, sy, S=150) {
+  const n=pts.length;
+  const pp=[];
+  for(let s=0;s<=S;s++){const p=crPoint(pts,s/S*(n-1));pp.push(`${sx(p.x).toFixed(1)},${sy(p.y).toFixed(1)}`);}
+  return 'M '+pp.join(' L ');
+}
+
+/* ═══════════════════════════════════════════════════════
+   GRAPH CONSTANTS
+═══════════════════════════════════════════════════════ */
+const PL=38,PB=28,PT=16,PR=18;
+function gSize(xR,yR){
+  const xs=xR[1]-xR[0],ys=yR[1]-yR[0];
+  const CW=Math.min(34,Math.floor((320-PL-PR)/xs));
+  const CH=Math.min(26,Math.floor((248-PT-PB)/ys));
+  return{CW,CH,W:PL+xs*CW+PR,H:PT+ys*CH+PB};
+}
+function gCoords(xMin,yMax,CW,CH){return{sx:x=>PL+(x-xMin)*CW, sy:y=>PT+(yMax-y)*CH};}
+
+/* ═══════════════════════════════════════════════════════
+   BUILD SVG
+   opts: { hlRegion, highlightY, highlightX, revealPt }
+   hlRegion: { from, to, boundX } → shaded interval + dashed line
+═══════════════════════════════════════════════════════ */
+function buildSvg(curve, opts={}) {
+  const{hlRegion=null,highlightY=null,highlightX=null,revealPt=null}=opts;
+  const{CW,CH,W,H}=gSize(curve.xR,curve.yR);
+  const{sx,sy}=gCoords(curve.xR[0],curve.yR[1],CW,CH);
+  const[xMin,xMax]=curve.xR,[yMin,yMax]=curve.yR;
+  const ac='rgba(255,255,255,0.5)';
+  const cid='cl'+Math.random().toString(36).slice(2,7);
+
+  // Grid
+  let g='';
+  for(let y=Math.ceil(yMin);y<=Math.floor(yMax);y++)
+    g+=`<line x1="${PL}" y1="${sy(y).toFixed(1)}" x2="${(W-PR).toFixed(1)}" y2="${sy(y).toFixed(1)}" stroke="rgba(255,255,255,.07)" stroke-width="1"/>`;
+  for(let x=Math.ceil(xMin);x<=Math.floor(xMax);x++)
+    g+=`<line x1="${sx(x).toFixed(1)}" y1="${PT}" x2="${sx(x).toFixed(1)}" y2="${(H-PB).toFixed(1)}" stroke="rgba(255,255,255,.07)" stroke-width="1"/>`;
+
+  // Interval region highlight (drawn behind curve)
+  let regEl='';
+  if(hlRegion){
+    const rx1=Math.max(PL,sx(Math.max(hlRegion.from,xMin)));
+    const rx2=Math.min(W-PR,sx(Math.min(hlRegion.to,xMax)));
+    if(rx2>rx1)
+      regEl+=`<rect x="${rx1.toFixed(1)}" y="${PT}" width="${(rx2-rx1).toFixed(1)}" height="${(H-PT-PB).toFixed(1)}" fill="rgba(88,204,2,0.18)"/>`;
+    const bx=sx(hlRegion.boundX);
+    if(bx>=PL&&bx<=W-PR)
+      regEl+=`<line x1="${bx.toFixed(1)}" y1="${PT}" x2="${bx.toFixed(1)}" y2="${(H-PB).toFixed(1)}" stroke="rgba(88,204,2,.78)" stroke-width="1.5" stroke-dasharray="5,4"/>`;
+  }
+
+  // Axes
+  const oyN=sy(0),oxN=sx(0);
+  const yAx=(oyN>=PT&&oyN<=H-PB)?`<line x1="${PL}" y1="${oyN.toFixed(1)}" x2="${(W-PR+8).toFixed(1)}" y2="${oyN.toFixed(1)}" stroke="${ac}" stroke-width="2" marker-end="url(#ax${cid})"/>`:'';
+  const xAx=(oxN>=PL&&oxN<=W-PR)?`<line x1="${oxN.toFixed(1)}" y1="${(H-PB+8).toFixed(1)}" x2="${oxN.toFixed(1)}" y2="${PT}" stroke="${ac}" stroke-width="1.8" marker-end="url(#ax${cid})"/>`:'';
+
+  // Labels
+  let lbl='';
+  for(let y=Math.ceil(yMin);y<=Math.floor(yMax);y++){
+    if(y===0)continue;
+    lbl+=`<text x="${PL-5}" y="${sy(y)+4}" text-anchor="end" fill="rgba(255,255,255,.42)" font-size="11" font-family="Nunito,sans-serif" font-weight="700">${y}</text>`;
+  }
+  for(let x=Math.ceil(xMin);x<=Math.floor(xMax);x++){
+    if(x===0)continue;
+    lbl+=`<text x="${sx(x)}" y="${H-PB+18}" text-anchor="middle" fill="rgba(255,255,255,.42)" font-size="11" font-family="Nunito,sans-serif" font-weight="700">${x}</text>`;
+  }
+  lbl+=`<text x="${oxN+6}" y="${PT+13}" font-size="12" font-weight="900" fill="rgba(255,255,255,.55)" font-family="Nunito,sans-serif" font-style="italic">y</text>`;
+  lbl+=`<text x="${W-PR+7}" y="${oyN+5}" font-size="12" font-weight="900" fill="rgba(255,255,255,.55)" font-family="Nunito,sans-serif" font-style="italic">x</text>`;
+
+  // Highlight dashed lines (for point questions)
+  let hlines='';
+  if(highlightY!==null&&highlightY>=yMin&&highlightY<=yMax)
+    hlines+=`<line x1="${PL}" y1="${sy(highlightY).toFixed(1)}" x2="${(W-PR).toFixed(1)}" y2="${sy(highlightY).toFixed(1)}" stroke="rgba(67,97,238,.55)" stroke-width="1.5" stroke-dasharray="5,4"/>`;
+  if(highlightX!==null&&highlightX>=xMin&&highlightX<=xMax)
+    hlines+=`<line x1="${sx(highlightX).toFixed(1)}" y1="${PT}" x2="${sx(highlightX).toFixed(1)}" y2="${(H-PB).toFixed(1)}" stroke="rgba(67,97,238,.55)" stroke-width="1.5" stroke-dasharray="5,4"/>`;
+
+  // Curve (clipped)
+  const pathD=crPath(curve.pts,sx,sy);
+  const curveSvg=`<defs>
+    <marker id="ax${cid}" markerWidth="7" markerHeight="6" refX="6" refY="3" orient="auto"><polygon points="0 0,7 3,0 6" fill="${ac}"/></marker>
+    <clipPath id="${cid}"><rect x="${PL}" y="${PT}" width="${W-PL-PR}" height="${H-PT-PB}"/></clipPath>
+  </defs>
+  <path d="${pathD}" fill="none" stroke="#4bc5a5" stroke-width="2.8" stroke-linejoin="round" clip-path="url(#${cid})"/>`;
+
+  // Reveal point dot
+  let revealSvg='';
+  if(revealPt){
+    const rx=sx(revealPt.x),ry=sy(revealPt.y);
+    revealSvg=`<circle cx="${rx.toFixed(1)}" cy="${ry.toFixed(1)}" r="7" fill="${revealPt.correct?'#58cc02':'#ff4b4b'}" stroke="rgba(255,255,255,.7)" stroke-width="2"/>`;
+    if(revealPt.correct) revealSvg+=`<text x="${rx.toFixed(1)}" y="${(ry-12).toFixed(1)}" text-anchor="middle" font-size="12" fill="#88e04a">✓</text>`;
+  }
+
+  return `<svg class="coord-svg" width="${W}" height="${H}">
+    ${g}${regEl}${yAx}${xAx}${lbl}${hlines}${curveSvg}${revealSvg}
+  </svg>`;
+}
+
+/* ═══════════════════════════════════════════════════════
+   CURVE DEFINITIONS
+   All curves have ONE extremum. Horizontal tangent guaranteed:
+   pts[extremumIdx - 1][1] === pts[extremumIdx + 1][1]
+═══════════════════════════════════════════════════════ */
+const EASY_CURVES = [
+  { // ∩ max at (2, 4)
+    pts:[[-7,-8],[-4,-2],[-1,2.5],[2,4],[5,2.5],[8,-1],[10,-5]],
+    xR:[-8,10], yR:[-8,5], ex:{type:'max',x:2,y:4} },
+  { // ∩ max at (-2, 5)
+    pts:[[-9,-5],[-5,-1],[-3,4],[-2,5],[-1,4],[2,1],[6,-3]],
+    xR:[-10,7], yR:[-6,6], ex:{type:'max',x:-2,y:5} },
+  { // ∩ max at (0, 4)
+    pts:[[-8,-5],[-4,-1],[-2,3],[0,4],[2,3],[5,0],[8,-4]],
+    xR:[-9,9], yR:[-6,5], ex:{type:'max',x:0,y:4} },
+  { // ∪ min at (1, -3)
+    pts:[[-7,5],[-3,1],[0,-1],[1,-3],[2,-1],[5,1],[8,5]],
+    xR:[-8,9], yR:[-4,6], ex:{type:'min',x:1,y:-3} },
+  { // ∪ min at (-2, -4)
+    pts:[[-8,3],[-5,0],[-3,-3],[-2,-4],[-1,-3],[2,0],[6,4]],
+    xR:[-9,7], yR:[-5,4], ex:{type:'min',x:-2,y:-4} },
+];
+
+const HARD_CURVES = [
+  { // ∩ max at (2.5, 5.5)
+    pts:[[-7,-4],[-3,0],[0,3.5],[2.5,5.5],[5,3.5],[8,0],[10,-3]],
+    xR:[-8,11], yR:[-5,6.5], ex:{type:'max',x:2.5,y:5.5} },
+  { // ∩ max at (1.5, 4.5)
+    pts:[[-6,-3],[-3,0],[0,3],[1.5,4.5],[3,3],[6,0.5],[9,-3]],
+    xR:[-7,10], yR:[-4,5.5], ex:{type:'max',x:1.5,y:4.5} },
+  { // ∩ max at (-0.5, 4)
+    pts:[[-8,-5],[-5,-1],[-2,3],[-0.5,4],[1,3],[4,0],[7,-4]],
+    xR:[-9,8], yR:[-6,5], ex:{type:'max',x:-0.5,y:4} },
+  { // ∪ min at (3, -2.5)
+    pts:[[-5,5],[-1,2],[1,0.5],[3,-2.5],[5,0.5],[8,3],[10,5.5]],
+    xR:[-6,11], yR:[-3.5,6.5], ex:{type:'min',x:3,y:-2.5} },
+  { // ∪ min at (-1.5, -3.5)
+    pts:[[-7,3.5],[-4,0],[-2,-2],[-1.5,-3.5],[-1,-2],[2,1],[6,4.5]],
+    xR:[-8,7], yR:[-4.5,4.5], ex:{type:'min',x:-1.5,y:-3.5} },
+];
+
+/* ═══════════════════════════════════════════════════════
+   TILE GENERATOR — 5 tiles including the correct value
+═══════════════════════════════════════════════════════ */
+function makeTiles(correct, step) {
+  const pos = Math.floor(Math.random()*4)+1;
+  const start = +(correct-(pos-1)*step).toFixed(1);
+  const t = Array.from({length:5},(_,i)=>+(start+i*step).toFixed(1));
+  if(!t.includes(correct)) t[2]=correct;
+  return t;
+}
+
+/* ═══════════════════════════════════════════════════════
+   QUESTION GENERATORS
+═══════════════════════════════════════════════════════ */
+function genSlopeUp(curve) {
+  const{ex,xR}=curve;
+  const isMax=ex.type==='max';
+  const step=Number.isInteger(ex.x)?1:0.5;
+  const tiles=makeTiles(ex.x,step); tiles.sort((a,b)=>a-b);
+  const correctOp=isMax?'<':'>';
+  const hlRegion=isMax
+    ?{from:xR[0]-1, to:ex.x, boundX:ex.x}
+    :{from:ex.x,    to:xR[1]+1, boundX:ex.x};
+  return {
+    qtype:'slope_up', curve,
+    questionText:'Give the full interval where f​(x) <strong>slopes upward</strong>.',
+    ansType:'interval', correctOp, correct:ex.x, tiles, hlRegion,
+    highlightY:null, highlightX:null,
+    hint: isMax
+      ?`The curve rises from the left until it peaks at x​=​${fmt(ex.x)}.`
+      :`After the trough at x​=​${fmt(ex.x)}, the curve rises to the right.`,
+    why:[
+      `Look at the curve — <span>where is it going uphill?</span>`,
+      `The curve ${isMax?'rises until':'rises after'} x​=​<span>${fmt(ex.x)}</span>`,
+      `Answer: f(x) slopes upward for <span>x ${correctOp} ${fmt(ex.x)}</span>`,
+    ],
+  };
+}
+
+function genSlopeDown(curve) {
+  const{ex,xR}=curve;
+  const isMax=ex.type==='max';
+  const step=Number.isInteger(ex.x)?1:0.5;
+  const tiles=makeTiles(ex.x,step); tiles.sort((a,b)=>a-b);
+  const correctOp=isMax?'>':'<';
+  const hlRegion=isMax
+    ?{from:ex.x,    to:xR[1]+1, boundX:ex.x}
+    :{from:xR[0]-1, to:ex.x,    boundX:ex.x};
+  return {
+    qtype:'slope_down', curve,
+    questionText:'Give the full interval where f​(x) <strong>slopes downward</strong>.',
+    ansType:'interval', correctOp, correct:ex.x, tiles, hlRegion,
+    highlightY:null, highlightX:null,
+    hint: isMax
+      ?`After the peak at x​=​${fmt(ex.x)}, the curve falls to the right.`
+      :`The curve falls toward the trough until x​=​${fmt(ex.x)}.`,
+    why:[
+      `Look at the curve — <span>where is it going downhill?</span>`,
+      `The curve ${isMax?'falls after':'falls until'} x​=​<span>${fmt(ex.x)}</span>`,
+      `Answer: f(x) slopes downward for <span>x ${correctOp} ${fmt(ex.x)}</span>`,
+    ],
+  };
+}
+
+function genLocalExtX(curve) {
+  const{ex}=curve;
+  const isMax=ex.type==='max';
+  const step=Number.isInteger(ex.x)?1:0.5;
+  const tiles=makeTiles(ex.x,step); tiles.sort((a,b)=>a-b);
+  return {
+    qtype:'local_ext_x', curve,
+    questionText: isMax
+      ?'At what x​-value does f​(x) reach its <strong>local maximum</strong>?'
+      :'At what x​-value does f​(x) reach its <strong>local minimum</strong>?',
+    ansType:'x_val', correct:ex.x, tiles, hlRegion:null,
+    highlightY: ex.y, highlightX: null,
+    revealX: ex.x, revealY: ex.y,
+    hint: isMax
+      ?`Find the highest point on the curve and read its x​-coordinate.`
+      :`Find the lowest point on the curve and read its x​-coordinate.`,
+    why:[
+      `Locate the <span>${isMax?'peak (highest point)':'trough (lowest point)'}</span> on the curve`,
+      `The ${isMax?'peak':'trough'} is at the point <span>(${fmt(ex.x)}, ${fmt(ex.y)})</span>`,
+      `The x​-coordinate is <span>${fmt(ex.x)}</span>`,
+    ],
+  };
+}
+
+function genLocalExtY(curve) {
+  const{ex}=curve;
+  const isMax=ex.type==='max';
+  const step=Number.isInteger(ex.y)?1:0.5;
+  const tiles=makeTiles(ex.y,step); tiles.sort((a,b)=>a-b);
+  return {
+    qtype:'local_ext_y', curve,
+    questionText: isMax
+      ?'What is the <strong>local maximum value</strong> of f​(x)?'
+      :'What is the <strong>local minimum value</strong> of f​(x)?',
+    ansType:'y_val', correct:ex.y, tiles, hlRegion:null,
+    highlightY: ex.y, highlightX: null,
+    revealX: ex.x, revealY: ex.y,
+    hint: isMax
+      ?`Look for the highest point on the curve — that y​-value is the maximum.`
+      :`Look for the lowest point on the curve — that y​-value is the minimum.`,
+    why:[
+      `Find the <span>${isMax?'highest':'lowest'}</span> point on the curve`,
+      `The ${isMax?'peak':'trough'} is at <span>(${fmt(ex.x)}, ${fmt(ex.y)})</span>`,
+      `The ${isMax?'maximum':'minimum'} value is <span>${fmt(ex.y)}</span>`,
+    ],
+  };
+}
+
+/* ═══════════════════════════════════════════════════════
+   QUESTION POOL: 3 slope_up + 3 slope_down + 2 ext_x + 2 ext_y = 10
+═══════════════════════════════════════════════════════ */
+function makeQuestions(curves) {
+  const pool={slope_up:[],slope_down:[],local_ext_x:[],local_ext_y:[]};
+  for(const c of curves){
+    pool.slope_up.push(genSlopeUp(c));
+    pool.slope_down.push(genSlopeDown(c));
+    pool.local_ext_x.push(genLocalExtX(c));
+    pool.local_ext_y.push(genLocalExtY(c));
+  }
+  return shuffle([
+    ...shuffle(pool.slope_up).slice(0,3),
+    ...shuffle(pool.slope_down).slice(0,3),
+    ...shuffle(pool.local_ext_x).slice(0,2),
+    ...shuffle(pool.local_ext_y).slice(0,2),
+  ]);
+}
+
+/* ═══════════════════════════════════════════════════════
+   STATE
+═══════════════════════════════════════════════════════ */
+let currentLevel='easy';
+let questions=[],qIdx=0,isAnswered=false,isLocked=false,score=0,whyOpen=false;
+let selOp=null,selVal=null;
+
+function getCurves(){return currentLevel==='easy'?EASY_CURVES:HARD_CURVES;}
+
+function setLevel(lvl){
+  currentLevel=lvl;
+  document.getElementById('btnEasy').className='level-btn'+(lvl==='easy'?' active-easy':'');
+  document.getElementById('btnHard').className='level-btn'+(lvl==='hard'?' active-hard':'');
+  initQuiz();
+}
+function switchLevel(){setLevel(currentLevel==='easy'?'hard':'easy');}
+
+/* ═══════════════════════════════════════════════════════
+   RENDER CARD
+═══════════════════════════════════════════════════════ */
+function renderCard(q) {
+  const svgStr = buildSvg(q.curve, {highlightY:q.highlightY, highlightX:q.highlightX});
+
+  // Answer display
+  let ansDisp;
+  if(q.ansType==='interval'){
+    ansDisp=`<div class="ans-display" id="ansDisp">
+      <span class="ans-ivar">x</span>
+      <span class="ans-blank" id="ansOp">?</span>
+      <span class="ans-blank" id="ansVal">?</span>
+    </div>`;
+  } else if(q.ansType==='x_val'){
+    ansDisp=`<div class="ans-display" id="ansDisp">
+      <span class="ans-x-tag">x</span>
+      <span class="ans-eq">=</span>
+      <span class="ans-blank" id="ansVal">?</span>
+    </div>`;
+  } else {
+    ansDisp=`<div class="ans-display" id="ansDisp">
+      <span class="ans-y-tag">f(x)</span>
+      <span class="ans-eq">=</span>
+      <span class="ans-blank" id="ansVal">?</span>
+    </div>`;
+  }
+
+  const tilesHTML=q.tiles.map(v=>
+    `<button class="tile-btn" data-v="${v}" onclick="selectVal(${v})">${fmt(v)}</button>`
+  ).join('');
+
+  const opHTML=q.ansType==='interval'
+    ?`<div class="op-row" id="opRow">
+        <button class="op-btn" data-op="<" onclick="selectOp('<')">&lt;</button>
+        <button class="op-btn" data-op=">" onclick="selectOp('>')">&gt;</button>
+      </div>`
+    :'';
+
+  document.getElementById('qCard').innerHTML=`
+    <p class="q-text">${q.questionText}</p>
+    <div class="graph-wrap" id="graphWrap">${svgStr}</div>
+    ${ansDisp}
+    <div class="tiles-row" id="tilesRow">${tilesHTML}</div>
+    ${opHTML}
+    <div class="start-over-row">
+      <button class="start-over-btn" onclick="resetAnswer()">↺ Start over</button>
+    </div>`;
+}
+
+/* ═══════════════════════════════════════════════════════
+   ANSWER SELECTION
+═══════════════════════════════════════════════════════ */
+function selectVal(v) {
+  if(isLocked)return;
+  selVal=v;
+  document.querySelectorAll('.tile-btn').forEach(b=>b.classList.toggle('selected',+b.dataset.v===v));
+  const el=document.getElementById('ansVal');
+  if(el){el.textContent=fmt(v);el.className='ans-blank filled';}
+  updateCheckBtn();
+}
+
+function selectOp(op) {
+  if(isLocked)return;
+  selOp=op;
+  document.querySelectorAll('.op-btn').forEach(b=>b.classList.toggle('selected',b.dataset.op===op));
+  const el=document.getElementById('ansOp');
+  if(el){el.textContent=op;el.className='ans-blank filled';}
+  updateCheckBtn();
+}
+
+function updateCheckBtn() {
+  const q=questions[qIdx];
+  const ready=q.ansType==='interval'?(selOp!==null&&selVal!==null):(selVal!==null);
+  document.getElementById('checkBtn').className='check-btn'+(ready?' ready':'');
+}
+
+function resetAnswer() {
+  if(isLocked)return;
+  selOp=null;selVal=null;
+  document.querySelectorAll('.tile-btn').forEach(b=>b.classList.remove('selected','correct','wrong'));
+  document.querySelectorAll('.op-btn').forEach(b=>b.classList.remove('selected','correct'));
+  const opEl=document.getElementById('ansOp'),valEl=document.getElementById('ansVal');
+  if(opEl){opEl.textContent='?';opEl.className='ans-blank';}
+  if(valEl){valEl.textContent='?';valEl.className='ans-blank';}
+  updateCheckBtn();
+}
+
+/* ═══════════════════════════════════════════════════════
+   CHECK ANSWER
+═══════════════════════════════════════════════════════ */
+function checkAnswer() {
+  if(isAnswered){advanceQ();return;}
+  const q=questions[qIdx];
+  if(q.ansType==='interval'&&(selOp===null||selVal===null))return;
+  if(q.ansType!=='interval'&&selVal===null)return;
+
+  const correct=q.ansType==='interval'
+    ?(selOp===q.correctOp&&selVal===q.correct)
+    :(selVal===q.correct);
+
+  isAnswered=isLocked=true;
+  const opEl=document.getElementById('ansOp'),valEl=document.getElementById('ansVal');
+
+  if(correct){
+    score++;
+    document.getElementById('scoreDisp').textContent=score;
+
+    if(opEl) opEl.className='ans-blank correct-f';
+    if(valEl) valEl.className='ans-blank correct-f';
+    document.querySelectorAll('.tile-btn.selected').forEach(b=>b.classList.add('correct'));
+    document.querySelectorAll('.op-btn.selected').forEach(b=>b.classList.add('correct'));
+
+    // Redraw graph with highlight
+    const gw=document.getElementById('graphWrap');
+    if(q.hlRegion){
+      gw.innerHTML=buildSvg(q.curve,{hlRegion:q.hlRegion});
+    } else {
+      gw.innerHTML=buildSvg(q.curve,{
+        highlightY:q.highlightY, highlightX:q.highlightX,
+        revealPt:q.revealX!==undefined?{x:q.revealX,y:q.revealY,correct:true}:null
+      });
+    }
+
+    showFeedback(true,'Correct!',q.hint);
+    document.getElementById('checkBtn').textContent=qIdx<questions.length-1?'Continue →':'See Results →';
+    document.getElementById('checkBtn').className='check-btn continue';
+    document.getElementById('whyBtn').classList.add('show');
+    document.getElementById('pFill').style.width=`${(qIdx+1)/questions.length*100}%`;
+
+  } else {
+    if(opEl&&q.ansType==='interval') opEl.className='ans-blank wrong-f';
+    if(valEl) valEl.className='ans-blank wrong-f';
+    document.querySelectorAll('.tile-btn.selected').forEach(b=>b.classList.add('wrong'));
+    showFeedback(false,'Not quite!',q.hint);
+
+    setTimeout(()=>{
+      isAnswered=isLocked=false;
+      if(opEl&&q.ansType==='interval') opEl.className='ans-blank'+(selOp?' filled':'');
+      if(valEl) valEl.className='ans-blank'+(selVal!==null?' filled':'');
+      document.querySelectorAll('.tile-btn').forEach(b=>b.classList.remove('wrong'));
+      hideFeedback();
+    },1600);
+  }
+}
+
+function advanceQ(){
+  qIdx++;
+  if(qIdx>=questions.length){showResults();return;}
+  document.getElementById('qNum').textContent=qIdx+1;
+  whyOpen=false;
+  document.getElementById('whyPanel').className='why-panel';
+  document.getElementById('whyBtn').className='why-btn';
+  selOp=null;selVal=null;
+  renderCard(questions[qIdx]);
+  hideFeedback();
+  document.getElementById('checkBtn').textContent='Check';
+  document.getElementById('checkBtn').className='check-btn';
+}
+
+/* ═══════════════════════════════════════════════════════
+   FEEDBACK + WHY
+═══════════════════════════════════════════════════════ */
+function showFeedback(ok,title,hint){
+  const bar=document.getElementById('feedbackBar');
+  document.getElementById('fbIcon').textContent=ok?'✅':'❌';
+  const t=document.getElementById('fbTitle');
+  t.textContent=title; t.className='fb-title '+(ok?'ok':'err');
+  document.getElementById('fbHint').textContent=hint||'';
+  bar.className='feedback-bar show '+(ok?'ok':'err');
+}
+function hideFeedback(){document.getElementById('feedbackBar').className='feedback-bar';}
+
+function toggleWhy(){
+  const q=questions[qIdx];
+  whyOpen=!whyOpen;
+  document.getElementById('whyPanel').className='why-panel'+(whyOpen?' show':'');
+  document.getElementById('whyBtn').className='why-btn show'+(whyOpen?' active':'');
+  if(whyOpen){
+    document.getElementById('whySteps').innerHTML=
+      q.why.map(s=>`<li>${s}</li>`).join('');
+  }
+}
+
+/* ═══════════════════════════════════════════════════════
+   RESULTS
+═══════════════════════════════════════════════════════ */
+function showResults(){
+  document.getElementById('quizShell').style.paddingBottom='20px';
+  document.getElementById('resultsWrap').className='results-wrap show';
+  document.getElementById('qCard').style.display='none';
+  document.getElementById('feedbackBar').className='feedback-bar';
+  document.getElementById('whyPanel').className='why-panel';
+  document.querySelectorAll('.progress-wrap,.level-row,.btn-row').forEach(e=>e.style.display='none');
+
+  const pct=score/questions.length;
+  const[emoji,msg]=
+    pct===1   ?['🏆','Perfect! You have mastered increasing & decreasing functions.']
+    :pct>=.7  ?['🎉','Great work! You understand how functions increase and decrease.']
+    :pct>=.5  ?['👍','Good effort! Review the graphs carefully and try again.']
+              :['📚','Keep practicing! Look at where curves go uphill vs downhill.'];
+
+  document.getElementById('resEmoji').textContent=emoji;
+  document.getElementById('resScore').textContent=`${score}/10`;
+  document.getElementById('resMsg').textContent=msg;
+  document.getElementById('resLevel').textContent=currentLevel==='hard'?'Hard Level':'Easy Level';
+  document.getElementById('btnSwitch').textContent=
+    currentLevel==='easy'?'Try Hard Level →':'Try Easy Level →';
+}
+
+/* ═══════════════════════════════════════════════════════
+   INIT
+═══════════════════════════════════════════════════════ */
+function initQuiz(){
+  questions=makeQuestions(getCurves());
+  qIdx=0;score=0;isAnswered=false;isLocked=false;whyOpen=false;selOp=null;selVal=null;
+
+  document.getElementById('scoreDisp').textContent=0;
+  document.getElementById('qNum').textContent=1;
+  document.getElementById('pFill').style.width='0%';
+  document.getElementById('resultsWrap').className='results-wrap';
+  document.getElementById('qCard').style.display='';
+  document.querySelectorAll('.progress-wrap,.level-row,.btn-row').forEach(e=>e.style.display='');
+  document.getElementById('quizShell').style.paddingBottom='';
+  hideFeedback();
+  document.getElementById('whyPanel').className='why-panel';
+  document.getElementById('whyBtn').className='why-btn';
+  document.getElementById('checkBtn').textContent='Check';
+  document.getElementById('checkBtn').className='check-btn';
+  renderCard(questions[0]);
+}
+
+initQuiz();
+</script>
+</body>
+</html>

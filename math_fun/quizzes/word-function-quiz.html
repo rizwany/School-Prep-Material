@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Word Functions Quiz – Math Fun | LearnPad</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg:       #0e0f14;
+      --card:     #1d1f2b;
+      --border:   #2a2c3a;
+      --text:     #f0f0f8;
+      --muted:    rgba(240,240,248,.42);
+      --green:    #58cc02;
+      --green-dk: #46a301;
+      --red:      #ff4b4b;
+      --blue:     #4361ee;
+      --opt-bg:   #1e2030;
+      --opt-brd:  #313446;
+      --radius:   16px;
+    }
+    body { font-family: 'Nunito', system-ui, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; display: flex; flex-direction: column; }
+
+    /* ── Header ── */
+    header { background: #fff; border-bottom: 2px solid #e2e6f0; padding: 0 24px; position: sticky; top: 0; z-index: 100; flex-shrink: 0; }
+    .header-inner { max-width: 960px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    .logo-link { text-decoration: none; display: flex; align-items: center; }
+    .logo-img { height: 34px; width: auto; }
+    .logo-txt { font-weight: 900; font-size: 1.15rem; color: #4361ee; }
+    nav a { font-weight: 700; font-size: 0.85rem; color: #5a6076; text-decoration: none; padding: 6px 12px; border-radius: 8px; transition: color .15s, background .15s; }
+    nav a:hover { color: #4361ee; background: #eef1fd; }
+
+    /* ── Quiz shell ── */
+    main { flex: 1; display: flex; flex-direction: column; align-items: center; }
+    .quiz-shell { width: 100%; max-width: 520px; padding: 16px 20px 80px; display: flex; flex-direction: column; flex: 1; }
+
+    /* ── Progress ── */
+    .progress-wrap { margin-bottom: 20px; }
+    .progress-track { height: 8px; background: #252733; border-radius: 4px; overflow: hidden; }
+    .progress-fill { height: 100%; background: var(--green); border-radius: 4px; width: 0%; transition: width .4s ease; }
+    .progress-meta { display: flex; justify-content: space-between; margin-top: 6px; font-size: 0.72rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+
+    /* ── Question card ── */
+    .q-card { background: var(--card); border: 1.5px solid var(--border); border-radius: var(--radius); padding: 22px 18px 18px; margin-bottom: 14px; }
+    .q-text { font-size: 1.05rem; font-weight: 800; line-height: 1.55; margin-bottom: 20px; color: var(--text); }
+
+    /* ── Machine ── */
+    .machine { margin-bottom: 16px; position: relative; }
+    .rule-row { display: flex; justify-content: center; margin-bottom: 8px; position: relative; z-index: 2; }
+    .rule-pill {
+      background: #252733; border: 1.5px solid var(--border);
+      color: var(--muted); font-weight: 800; font-size: 0.92rem;
+      padding: 5px 20px; border-radius: 20px; letter-spacing: .04em;
+      transition: background .25s, border-color .25s, color .25s, box-shadow .25s;
+      white-space: nowrap; max-width: 260px; text-align: center;
+    }
+    .rule-pill.known {
+      background: rgba(67,97,238,.18);
+      border-color: rgba(67,97,238,.55);
+      color: #a0b4ff;
+      box-shadow: 0 0 20px rgba(67,97,238,.35), 0 0 50px rgba(67,97,238,.12);
+    }
+    .diagram-labels { display: flex; justify-content: space-between; padding: 0 2px; margin-bottom: 6px; font-size: 0.72rem; font-weight: 700; color: var(--muted); letter-spacing: .05em; }
+    .diagram-wrapper { position: relative; display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; }
+
+    /* Center glow (shown when rule is known) */
+    .rule-glow {
+      position: absolute; top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 36px; height: 80%;
+      background: radial-gradient(ellipse at center, rgba(67,97,238,.38) 0%, transparent 70%);
+      pointer-events: none; opacity: 0; transition: opacity .3s;
+    }
+    .machine.rule-known .rule-glow { opacity: 1; }
+
+    /* ── IO Boxes ── */
+    .io-box { background: #181921; border: 1.5px solid var(--border); border-radius: 12px; padding: 6px 12px; flex-shrink: 0; min-width: 96px; position: relative; z-index: 1; }
+    .io-item { height: 42px; display: flex; align-items: center; gap: 7px; }
+    .io-item.in-item { justify-content: flex-end; }
+    .io-item.out-item { justify-content: flex-start; }
+
+    .io-val { font-size: 0.88rem; font-weight: 700; color: var(--text); white-space: nowrap; }
+    .io-val.bold { font-weight: 900; color: #ffffff; font-size: 0.92rem; }
+
+    /* Unknown "?" pill */
+    .io-unk {
+      background: #2a2c3a; border: 1.5px solid #3d3f52;
+      border-radius: 7px; padding: 3px 14px;
+      color: rgba(255,255,255,.3); font-weight: 800; font-size: 0.9rem;
+      white-space: nowrap;
+    }
+
+    .io-dot { width: 9px; height: 9px; border-radius: 50%; background: rgba(255,255,255,.55); border: 1.5px solid rgba(255,255,255,.8); flex-shrink: 0; }
+    .io-arr { color: rgba(255,255,255,.4); font-size: 0.65rem; flex-shrink: 0; }
+
+    /* SVG lines */
+    .lines-svg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; overflow: visible; }
+
+    /* ── Options ── */
+    .options-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 12px; }
+    .opt-btn {
+      background: var(--opt-bg); border: 2px solid var(--opt-brd);
+      border-radius: 14px; color: var(--text); font-family: inherit;
+      font-size: 0.85rem; font-weight: 800; padding: 14px 10px;
+      cursor: pointer; text-align: center; line-height: 1.4;
+      transition: border-color .15s, background .15s, transform .1s;
+    }
+    .opt-btn:hover:not(.locked) { border-color: #555870; background: #252737; }
+    .opt-btn:active:not(.locked) { transform: scale(0.97); }
+    .opt-btn.selected { border-color: #6070cc; background: #1e2240; }
+    .opt-btn.correct { border-color: var(--green) !important; background: #172110 !important; color: #88e04a; }
+    .opt-btn.wrong   { border-color: var(--red)   !important; background: #221212 !important; color: #ff8080; }
+    .opt-btn.locked  { cursor: default; }
+
+    /* ── Start over ── */
+    .start-over-row { display: flex; justify-content: flex-end; margin-top: 2px; }
+    .start-over-btn { background: none; border: none; color: var(--muted); font-family: inherit; font-size: 0.8rem; font-weight: 700; cursor: pointer; padding: 4px 8px; border-radius: 8px; transition: color .15s; display: flex; align-items: center; gap: 5px; }
+    .start-over-btn:hover { color: var(--text); }
+
+    /* ── Feedback ── */
+    .feedback-bar { border-radius: 12px; padding: 12px 16px; margin-bottom: 14px; display: flex; align-items: flex-start; gap: 10px; opacity: 0; transition: opacity .2s; }
+    .feedback-bar.show { opacity: 1; }
+    .feedback-bar.ok  { background: #172110; border: 1.5px solid #2d4a1e; }
+    .feedback-bar.err { background: #221212; border: 1.5px solid #4a1f1f; }
+    .fb-icon { font-size: 1.1rem; flex-shrink: 0; }
+    .fb-body { flex: 1; }
+    .fb-title { font-size: 0.88rem; font-weight: 900; margin-bottom: 2px; }
+    .fb-title.ok { color: #88e04a; } .fb-title.err { color: #ff8080; }
+    .fb-hint { font-size: 0.78rem; font-weight: 600; color: var(--muted); line-height: 1.5; }
+
+    /* ── Check button ── */
+    .check-btn { width: 100%; padding: 16px; border: none; border-radius: 999px; font-family: inherit; font-size: 1rem; font-weight: 900; cursor: pointer; background: #252737; color: var(--muted); transition: background .15s, color .15s, transform .1s; }
+    .check-btn.ready { background: var(--blue); color: #fff; }
+    .check-btn.ready:hover { background: #3451d1; }
+    .check-btn.continue { background: var(--green); color: #fff; }
+    .check-btn.continue:hover { background: var(--green-dk); }
+
+    /* ── Results ── */
+    .results-wrap { text-align: center; display: none; padding: 20px 0 40px; }
+    .results-wrap.show { display: block; }
+    .res-card { background: var(--card); border: 1.5px solid var(--border); border-radius: var(--radius); padding: 34px 28px 28px; }
+    .res-emoji { font-size: 3rem; margin-bottom: 10px; }
+    .res-title { font-size: 1.4rem; font-weight: 900; color: var(--text); margin-bottom: 4px; }
+    .res-score { font-size: 2.8rem; font-weight: 900; color: var(--green); margin: 14px 0 2px; }
+    .res-label { font-size: 0.82rem; font-weight: 700; color: var(--muted); margin-bottom: 14px; }
+    .res-msg   { font-size: 0.88rem; font-weight: 700; color: var(--muted); line-height: 1.6; margin-bottom: 22px; }
+    .btn-retry { background: var(--blue); color: #fff; font-family: inherit; font-size: 0.95rem; font-weight: 800; padding: 14px 36px; border: none; border-radius: 999px; cursor: pointer; transition: background .15s; display: block; width: 100%; margin-bottom: 10px; }
+    .btn-retry:hover { background: #3451d1; }
+    .btn-home { background: none; border: 1.5px solid var(--border); color: var(--muted); font-family: inherit; font-size: 0.85rem; font-weight: 700; padding: 10px 24px; border-radius: 999px; cursor: pointer; transition: border-color .15s, color .15s; width: 100%; }
+    .btn-home:hover { border-color: #555870; color: var(--text); }
+
+    /* ── Footer ── */
+    footer { background: #0a0b10; color: rgba(255,255,255,.4); padding: 16px 24px; text-align: center; font-size: 0.75rem; font-weight: 600; }
+    footer a { color: rgba(255,255,255,.25); text-decoration: none; }
+    footer a:hover { color: rgba(255,255,255,.7); }
+
+    @media (max-width: 480px) {
+      .quiz-shell { padding: 12px 14px 70px; }
+      .opt-btn { font-size: 0.8rem; padding: 12px 8px; }
+      .io-val { font-size: 0.82rem; } .io-box { min-width: 80px; padding: 5px 10px; }
+    }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header>
+  <div class="header-inner">
+    <a class="logo-link" href="../../index.html">
+      <img src="../../logo.png" alt="LearnPad" class="logo-img"
+           onerror="this.outerHTML='<span class=logo-txt>LearnPad</span>'" />
+    </a>
+    <nav>
+      <a href="../../for_school/index.html">School</a>
+      <a href="../../index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="quiz-shell" id="quizShell">
+    <div class="progress-wrap">
+      <div class="progress-track"><div class="progress-fill" id="pFill"></div></div>
+      <div class="progress-meta">
+        <span>Question <span id="qNum">1</span> of 10</span>
+        <span>⭐ <span id="scoreDisp">0</span></span>
+      </div>
+    </div>
+
+    <div class="q-card" id="qCard"></div>
+
+    <div class="feedback-bar" id="feedbackBar">
+      <div class="fb-icon" id="fbIcon"></div>
+      <div class="fb-body">
+        <div class="fb-title" id="fbTitle"></div>
+        <div class="fb-hint"  id="fbHint"></div>
+      </div>
+    </div>
+
+    <button class="check-btn" id="checkBtn">Check</button>
+
+    <div class="results-wrap" id="resultsWrap">
+      <div class="res-card">
+        <div class="res-emoji" id="resEmoji">🎉</div>
+        <div class="res-title">Quiz Complete!</div>
+        <div class="res-score" id="resScore">0/10</div>
+        <div class="res-label">correct answers</div>
+        <div class="res-msg"   id="resMsg"></div>
+        <button class="btn-retry" onclick="initQuiz()">Play Again →</button>
+        <button class="btn-home"  onclick="location.href='../../index.html'">← Back to Home</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <a href="../../index.html">LearnPad</a> &nbsp;·&nbsp; Free Math Practice &nbsp;·&nbsp;
+  <a href="../../for_school/index.html">School Worksheets</a>
+</footer>
+
+<script>
+/* ═══════════════════════════════════════════
+   UTILITIES
+═══════════════════════════════════════════ */
+const pick    = a => a[Math.floor(Math.random() * a.length)];
+const shuffle = a => [...a].sort(() => Math.random() - .5);
+const VOWELS  = new Set('aeiou');
+const isVowel = c => VOWELS.has(c.toLowerCase());
+
+/* ═══════════════════════════════════════════
+   RULE DEFINITIONS  (11 rules, 4 picked per game)
+═══════════════════════════════════════════ */
+const RULES = [
+  {
+    id: 'remove_m',
+    label: "Remove all m's",
+    fn: w => w.replace(/m/g, ''),
+    pool: ['memo','meme','minimum','moment','mammoth','mammal','medium','maximum','mushroom','phantom','diagram','madam'],
+  },
+  {
+    id: 'remove_s',
+    label: "Remove all s's",
+    fn: w => w.replace(/s/g, ''),
+    pool: ['stress','success','sunset','season','sister','thesis','status','lesson','assist','bliss','basis','oasis'],
+  },
+  {
+    id: 'remove_t',
+    label: "Remove all t's",
+    fn: w => w.replace(/t/g, ''),
+    pool: ['bottle','battle','butter','litter','kitten','talent','tablet','teeth','intent','bitter','cotton','letter'],
+  },
+  {
+    id: 'remove_l',
+    label: "Remove all l's",
+    fn: w => w.replace(/l/g, ''),
+    pool: ['hello','llama','spell','label','level','loyal','allow','pillar','collar','valley','bullet','dollar'],
+  },
+  {
+    id: 'remove_r',
+    label: "Remove all r's",
+    fn: w => w.replace(/r/g, ''),
+    pool: ['river','mirror','horror','armor','error','parrot','quarter','record','razor','radar','horror','roar'],
+  },
+  {
+    id: 'remove_vowels',
+    label: "Remove all vowels",
+    fn: w => w.replace(/[aeiou]/g, ''),
+    pool: ['hello','bright','spring','python','strong','world','crisp','trunk','dream','bloom','swift','rhythm'],
+  },
+  {
+    id: 'keep_vowels',
+    label: "Keep only vowels",
+    fn: w => [...w].filter(c => isVowel(c)).join(''),
+    pool: ['beautiful','education','audio','ocean','alien','radio','detail','region','aerial','medium','studio','casual'],
+  },
+  {
+    id: 'reverse',
+    label: "Reverse the word",
+    fn: w => [...w].reverse().join(''),
+    pool: ['stop','star','live','step','spot','net','pan','reward','stressed','drawer','repaid','deliver'],
+  },
+  {
+    id: 'remove_first',
+    label: "Remove the first letter",
+    fn: w => w.slice(1),
+    pool: ['phone','knife','write','chair','blend','crane','brain','climb','trust','smoke','steal','pride'],
+  },
+  {
+    id: 'double_vowels',
+    label: "Double each vowel",
+    fn: w => w.replace(/[aeiou]/g, c => c+c),
+    pool: ['cat','big','hop','sun','get','top','bus','sit','pet','log','fun','red','wet','pin','cut'],
+  },
+  {
+    id: 'keep_alternate',
+    label: "Keep every other letter",
+    fn: w => [...w].filter((_, i) => i % 2 === 0).join(''),
+    pool: ['banana','garden','animal','rabbit','potato','castle','sample','mother','wallet','market','napkin','button'],
+  },
+];
+
+/* ═══════════════════════════════════════════
+   DISTRACTOR GENERATORS
+═══════════════════════════════════════════ */
+
+function getWrongOutputs(rule, input, correct) {
+  const wrongs = new Set();
+
+  // Other rules applied to same input
+  for (const r of RULES) {
+    if (r.id !== rule.id) {
+      const o = r.fn(input);
+      if (o !== correct && o.length > 0 && o.length <= 16) wrongs.add(o);
+    }
+  }
+
+  // Partial: only remove FIRST instance of the targeted letter
+  if (rule.id.startsWith('remove_') && rule.id !== 'remove_vowels') {
+    const ch = rule.id.slice(7); // e.g. 'm'
+    const partial = input.replace(new RegExp(ch), '');
+    if (partial !== correct) wrongs.add(partial);
+    // Remove only LAST instance
+    const idx = input.lastIndexOf(ch);
+    if (idx > -1) {
+      const last = input.slice(0, idx) + input.slice(idx + 1);
+      if (last !== correct && last !== partial) wrongs.add(last);
+    }
+  }
+
+  // Swap two adjacent chars in the correct output
+  if (correct.length >= 2) {
+    const arr = [...correct];
+    const i = Math.floor(Math.random() * (arr.length - 1));
+    [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]];
+    const sw = arr.join('');
+    if (sw !== correct) wrongs.add(sw);
+  }
+
+  // The input itself (didn't transform)
+  if (input !== correct) wrongs.add(input);
+
+  return shuffle([...wrongs]).slice(0, 3);
+}
+
+function getWrongInputs(rule, targetOut, correct, pool) {
+  // Words in pool (excluding correct) whose output ≠ targetOut
+  const wrongs = pool.filter(w => w !== correct && rule.fn(w) !== targetOut);
+  if (wrongs.length >= 3) return shuffle(wrongs).slice(0, 3);
+
+  // Fallback: words from other rule pools
+  const extra = [];
+  for (const r of RULES) {
+    for (const w of r.pool) {
+      if (w !== correct && rule.fn(w) !== targetOut && !extra.includes(w)) extra.push(w);
+    }
+  }
+  return shuffle([...wrongs, ...extra]).slice(0, 3);
+}
+
+/* ═══════════════════════════════════════════
+   QUESTION GENERATORS
+═══════════════════════════════════════════ */
+
+/* TYPE A — identify the rule (shown as "?") */
+function genIdentify(rule) {
+  const examples = shuffle(rule.pool).slice(0, 3);
+  const pairs = examples.map(w => ({ inp: w, out: rule.fn(w) }));
+  const distractors = shuffle(RULES.filter(r => r.id !== rule.id)).slice(0, 3);
+  const allOpts = shuffle([rule, ...distractors]);
+  return {
+    qtype:       'identify',
+    questionText: 'Which function could produce these outputs?',
+    ruleLabel:   null,
+    pairs,
+    targetIn:    null,
+    targetOut:   null,
+    options:     allOpts.map(r => r.label),
+    correctIndex: allOpts.indexOf(rule),
+    hint:        'Compare each input with its output — what changed?',
+  };
+}
+
+/* TYPE B — apply the rule to a new input */
+function genApply(rule) {
+  const shuffled  = shuffle(rule.pool);
+  const examples  = shuffled.slice(0, 3);
+  const newWord   = shuffled.slice(3).find(w => rule.fn(w).length > 0) || shuffled[0];
+  const pairs     = examples.map(w => ({ inp: w, out: rule.fn(w) }));
+  const correct   = rule.fn(newWord);
+  const wrongs    = getWrongOutputs(rule, newWord, correct);
+  const allOpts   = shuffle([correct, ...wrongs]);
+  return {
+    qtype:        'apply',
+    questionText: `What output would the function produce for the input "${newWord}"?`,
+    ruleLabel:    rule.label,
+    pairs,
+    targetIn:     newWord,   // shown bold in last input row
+    targetOut:    null,      // shown as "?" in last output row
+    options:      allOpts,
+    correctIndex: allOpts.indexOf(correct),
+    hint:         `Apply "${rule.label}" to "${newWord}" step by step.`,
+  };
+}
+
+/* TYPE C — find the input that produces a given output */
+function genReverse(rule) {
+  const shuffled = shuffle(rule.pool);
+  const examples = shuffled.slice(0, 3);
+
+  // Pick a target word whose output is unique in the pool
+  const remaining = shuffled.slice(3);
+  let targetWord = remaining.find(w => {
+    const out = rule.fn(w);
+    return out.length > 0 && rule.pool.filter(p => rule.fn(p) === out).length === 1;
+  }) || remaining[0] || shuffled[shuffled.length - 1];
+
+  const targetOut = rule.fn(targetWord);
+  const pairs     = examples.map(w => ({ inp: w, out: rule.fn(w) }));
+  const wrongs    = getWrongInputs(rule, targetOut, targetWord, rule.pool);
+  const allOpts   = shuffle([targetWord, ...wrongs]);
+  return {
+    qtype:        'reverse',
+    questionText: `Which input would produce the output "${targetOut}"?`,
+    ruleLabel:    rule.label,
+    pairs,
+    targetIn:     null,      // shown as "?" in last input row
+    targetOut,               // shown bold in last output row
+    options:      allOpts,
+    correctIndex: allOpts.indexOf(targetWord),
+    hint:         `Which word, when "${rule.label}" is applied, gives "${targetOut}"?`,
+  };
+}
+
+/* ═══════════════════════════════════════════
+   BUILD DIAGRAM HTML
+═══════════════════════════════════════════ */
+function buildDiagram(q) {
+  const isKnown = q.qtype !== 'identify';
+  const pillText = isKnown ? q.ruleLabel : '?';
+
+  // Build rows: 3 example pairs + optional 4th target row
+  const inputRows  = q.pairs.map(p => p.inp);
+  const outputRows = q.pairs.map(p => p.out);
+
+  if (q.qtype === 'apply') {
+    inputRows.push(q.targetIn);     // bold
+    outputRows.push(null);          // unknown "?"
+  } else if (q.qtype === 'reverse') {
+    inputRows.push(null);           // unknown "?"
+    outputRows.push(q.targetOut);   // bold
+  }
+
+  const inBoxHTML = inputRows.map((v, i) => {
+    const isTargetRow = (q.qtype === 'apply' && i === inputRows.length - 1) ||
+                        (q.qtype === 'reverse' && i === inputRows.length - 1);
+    const valHTML = v === null
+      ? `<span class="io-unk">?</span>`
+      : `<span class="io-val${isTargetRow ? ' bold' : ''}">${v}</span>`;
+    return `<div class="io-item in-item" id="inrow-${i}">${valHTML}<span class="io-dot"></span></div>`;
+  }).join('');
+
+  const outBoxHTML = outputRows.map((v, i) => {
+    const isTargetRow = (q.qtype === 'reverse' && i === outputRows.length - 1);
+    const valHTML = v === null
+      ? `<span class="io-unk">?</span>`
+      : `<span class="io-val${isTargetRow ? ' bold' : ''}">${v}</span>`;
+    return `<div class="io-item out-item" id="outrow-${i}"><span class="io-arr">▶</span>${valHTML}</div>`;
+  }).join('');
+
+  return `
+    <div class="machine${isKnown ? ' rule-known' : ''}">
+      <div class="rule-row"><div class="rule-pill${isKnown ? ' known' : ''}">${pillText}</div></div>
+      <div class="diagram-labels"><span>inputs</span><span>outputs</span></div>
+      <div class="diagram-wrapper" id="diagramWrap">
+        <div class="io-box" id="inputBox">${inBoxHTML}</div>
+        <div class="io-box" id="outputBox">${outBoxHTML}</div>
+        <div class="rule-glow"></div>
+        <svg class="lines-svg" id="linesSvg"></svg>
+      </div>
+    </div>`;
+}
+
+/* ═══════════════════════════════════════════
+   DRAW SVG LINES
+═══════════════════════════════════════════ */
+function drawLines(rowCount) {
+  const wrap   = document.getElementById('diagramWrap');
+  const inBox  = document.getElementById('inputBox');
+  const outBox = document.getElementById('outputBox');
+  const svg    = document.getElementById('linesSvg');
+  if (!wrap || !inBox || !outBox || !svg) return;
+
+  const wR     = wrap.getBoundingClientRect();
+  const inRect = inBox.getBoundingClientRect();
+  const outRect= outBox.getBoundingClientRect();
+
+  const lines = [];
+  for (let i = 0; i < rowCount; i++) {
+    const inRow  = document.getElementById(`inrow-${i}`);
+    const outRow = document.getElementById(`outrow-${i}`);
+    if (!inRow || !outRow) continue;
+    const iR = inRow.getBoundingClientRect();
+    const oR = outRow.getBoundingClientRect();
+    lines.push({
+      x1: (inRect.right  - wR.left).toFixed(1),
+      y1: (iR.top + iR.height / 2 - wR.top).toFixed(1),
+      x2: (outRect.left  - wR.left).toFixed(1),
+      y2: (oR.top + oR.height / 2 - wR.top).toFixed(1),
+    });
+  }
+
+  svg.setAttribute('viewBox', `0 0 ${wR.width.toFixed(1)} ${wR.height.toFixed(1)}`);
+  svg.setAttribute('width',  wR.width.toFixed(1));
+  svg.setAttribute('height', wR.height.toFixed(1));
+  svg.innerHTML = `<defs>
+    <marker id="ah" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto">
+      <polygon points="0 0, 8 3.5, 0 7" fill="rgba(255,255,255,0.35)"/>
+    </marker>
+  </defs>
+  ${lines.map(l => `<line x1="${l.x1}" y1="${l.y1}" x2="${l.x2}" y2="${l.y2}"
+    stroke="rgba(255,255,255,0.28)" stroke-width="1.5"
+    stroke-dasharray="4,3" marker-end="url(#ah)"/>`).join('')}`;
+}
+
+window.addEventListener('resize', () => {
+  if (typeof currentRowCount !== 'undefined') setTimeout(() => drawLines(currentRowCount), 80);
+});
+let currentRowCount = 3;
+
+/* ═══════════════════════════════════════════
+   RENDER QUESTION
+═══════════════════════════════════════════ */
+function renderQuestion(q) {
+  currentRowCount = q.pairs.length + (q.qtype !== 'identify' ? 1 : 0);
+
+  document.getElementById('qCard').innerHTML = `
+    <p class="q-text">${q.questionText}</p>
+    ${buildDiagram(q)}
+    <div class="options-grid" id="optionsGrid">
+      ${q.options.map((lbl, i) => `<button class="opt-btn" data-opt="${i}" onclick="selectOpt(${i})">${lbl}</button>`).join('')}
+    </div>
+    <div class="start-over-row">
+      <button class="start-over-btn" onclick="initQuiz()">↺ Start over</button>
+    </div>`;
+
+  requestAnimationFrame(() => requestAnimationFrame(() => drawLines(currentRowCount)));
+}
+
+/* ═══════════════════════════════════════════
+   QUIZ LOGIC
+═══════════════════════════════════════════ */
+let questions = [], qIdx = 0, selOpt = null;
+let isAnswered = false, isLocked = false, score = 0;
+
+function selectOpt(i) {
+  if (isLocked) return;
+  selOpt = i;
+  document.querySelectorAll('.opt-btn').forEach((b, idx) => {
+    b.classList.toggle('selected', idx === i);
+  });
+  document.getElementById('checkBtn').className = 'check-btn ready';
+}
+
+function checkAnswer() {
+  const q = questions[qIdx];
+  if (isAnswered) { advanceQuestion(); return; }
+  if (selOpt === null) return;
+
+  isAnswered = isLocked = true;
+  const correct = selOpt === q.correctIndex;
+
+  // Re-render options locked
+  document.getElementById('optionsGrid').innerHTML = q.options.map((lbl, i) => {
+    let cls = 'opt-btn locked';
+    if (i === q.correctIndex) cls += ' correct';
+    else if (i === selOpt && !correct) cls += ' wrong';
+    return `<button class="${cls}">${lbl}</button>`;
+  }).join('');
+
+  if (correct) {
+    score++;
+    document.getElementById('scoreDisp').textContent = score;
+  }
+
+  const bar = document.getElementById('feedbackBar');
+  bar.className = `feedback-bar ${correct ? 'ok' : 'err'} show`;
+  document.getElementById('fbIcon').textContent = correct ? '✓' : '✗';
+  const titleEl = document.getElementById('fbTitle');
+  titleEl.className = `fb-title ${correct ? 'ok' : 'err'}`;
+  titleEl.textContent = correct ? 'Correct!' : `Answer: "${q.options[q.correctIndex]}"`;
+  document.getElementById('fbHint').textContent = q.hint;
+
+  document.getElementById('pFill').style.width = (((qIdx + 1) / 10) * 100) + '%';
+  const btn = document.getElementById('checkBtn');
+  btn.className = 'check-btn continue';
+  btn.textContent = qIdx < 9 ? 'Continue →' : 'See Results →';
+}
+
+function advanceQuestion() {
+  qIdx++;
+  if (qIdx >= 10) { showResults(); return; }
+  selOpt = null; isAnswered = isLocked = false;
+  document.getElementById('qNum').textContent = qIdx + 1;
+  document.getElementById('feedbackBar').className = 'feedback-bar';
+  document.getElementById('checkBtn').className = 'check-btn';
+  document.getElementById('checkBtn').textContent = 'Check';
+  renderQuestion(questions[qIdx]);
+}
+
+function showResults() {
+  document.getElementById('qCard').style.display    = 'none';
+  document.getElementById('feedbackBar').className  = 'feedback-bar';
+  document.getElementById('checkBtn').style.display = 'none';
+  document.getElementById('resultsWrap').className  = 'results-wrap show';
+  const pct = score / 10;
+  const [emoji, msg] =
+    pct === 1  ? ['🏆','Perfect! You cracked every word function!']
+    : pct >= .8 ? ['🎉','Excellent! You really understand how these functions work.']
+    : pct >= .6 ? ['👍','Good effort! Review the hints and try again.']
+    : pct >= .4 ? ['📚','Keep practicing — the patterns will click!']
+                : ['💡','Read the hints carefully after each question.'];
+  document.getElementById('resEmoji').textContent = emoji;
+  document.getElementById('resScore').textContent = `${score}/10`;
+  document.getElementById('resMsg').textContent   = msg;
+}
+
+/* ═══════════════════════════════════════════
+   INIT  — picks 4 rules, builds 3+3+3+1 questions
+═══════════════════════════════════════════ */
+function initQuiz() {
+  qIdx = score = 0; selOpt = null; isAnswered = isLocked = false;
+
+  const selectedRules = shuffle(RULES).slice(0, 4);
+  questions = [
+    // 3 rules × 3 question types  (identify → apply → reverse)
+    genIdentify(selectedRules[0]),
+    genApply   (selectedRules[0]),
+    genReverse (selectedRules[0]),
+
+    genIdentify(selectedRules[1]),
+    genApply   (selectedRules[1]),
+    genReverse (selectedRules[1]),
+
+    genIdentify(selectedRules[2]),
+    genApply   (selectedRules[2]),
+    genReverse (selectedRules[2]),
+
+    // 4th rule: one bonus question (randomly one of the three types)
+    pick([genIdentify, genApply, genReverse])(selectedRules[3]),
+  ];
+
+  document.getElementById('qCard').style.display    = '';
+  document.getElementById('checkBtn').style.display = '';
+  document.getElementById('checkBtn').className     = 'check-btn';
+  document.getElementById('checkBtn').textContent   = 'Check';
+  document.getElementById('feedbackBar').className  = 'feedback-bar';
+  document.getElementById('resultsWrap').className  = 'results-wrap';
+  document.getElementById('scoreDisp').textContent  = 0;
+  document.getElementById('qNum').textContent       = 1;
+  document.getElementById('pFill').style.width      = '0%';
+
+  renderQuestion(questions[0]);
+}
+
+document.getElementById('checkBtn').addEventListener('click', checkAnswer);
+initQuiz();
+</script>
+</body>
+</html>

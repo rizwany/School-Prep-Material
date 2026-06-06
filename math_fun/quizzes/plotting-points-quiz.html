@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plotting Points – Math Fun | LearnPad</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+    :root {
+      --bg:#0e0f14; --card:#1d1f2b; --border:#2a2c3a;
+      --text:#f0f0f8; --muted:rgba(240,240,248,.42);
+      --green:#58cc02; --green-dk:#46a301; --red:#ff4b4b;
+      --blue:#4361ee; --purple:#7c3aed; --teal:#4bc5a5;
+      --opt-bg:#1e2030; --opt-brd:#313446; --radius:16px;
+    }
+    body { font-family:'Nunito',system-ui,sans-serif; background:var(--bg); color:var(--text); min-height:100vh; display:flex; flex-direction:column; }
+
+    header { background:#fff; border-bottom:2px solid #e2e6f0; padding:0 24px; position:sticky; top:0; z-index:100; flex-shrink:0; }
+    .header-inner { max-width:960px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; height:56px; }
+    .logo-link { text-decoration:none; display:flex; align-items:center; }
+    .logo-img { height:34px; width:auto; }
+    .logo-txt { font-weight:900; font-size:1.15rem; color:#4361ee; }
+    nav a { font-weight:700; font-size:0.85rem; color:#5a6076; text-decoration:none; padding:6px 12px; border-radius:8px; transition:color .15s,background .15s; }
+    nav a:hover { color:#4361ee; background:#eef1fd; }
+
+    main { flex:1; display:flex; flex-direction:column; align-items:center; }
+    .quiz-shell { width:100%; max-width:520px; padding:16px 20px 80px; display:flex; flex-direction:column; flex:1; }
+
+    .level-row { display:flex; justify-content:center; gap:8px; margin-bottom:18px; }
+    .level-btn { font-family:inherit; font-size:0.8rem; font-weight:800; padding:6px 18px; border-radius:999px; cursor:pointer; border:2px solid var(--opt-brd); background:var(--opt-bg); color:var(--muted); transition:all .15s; }
+    .level-btn.active-easy { border-color:var(--green); background:#172110; color:#88e04a; }
+    .level-btn.active-hard { border-color:var(--purple); background:#1e1535; color:#c084fc; }
+
+    .progress-wrap { margin-bottom:16px; }
+    .progress-track { height:8px; background:#252733; border-radius:4px; overflow:hidden; }
+    .progress-fill  { height:100%; background:var(--green); border-radius:4px; width:0%; transition:width .4s ease; }
+    .progress-meta  { display:flex; justify-content:space-between; margin-top:6px; font-size:0.72rem; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:.05em; }
+
+    .q-card { background:var(--card); border:1.5px solid var(--border); border-radius:var(--radius); padding:20px 16px 18px; margin-bottom:14px; }
+    .q-text { font-size:1rem; font-weight:800; line-height:1.55; margin-bottom:14px; color:var(--text); }
+
+    .graph-wrap { display:flex; justify-content:center; margin-bottom:14px; }
+    .coord-svg  { display:block; overflow:visible; }
+
+    /* Two-slot answer display */
+    .slots-wrap { display:flex; flex-direction:column; gap:8px; margin-bottom:12px; }
+    .slot-row {
+      background:#181921; border:1.5px solid var(--border); border-radius:12px;
+      padding:10px 18px; display:flex; align-items:center; justify-content:center; gap:8px;
+      font-size:1.15rem; font-weight:800; color:rgba(240,240,248,.5);
+      cursor:pointer; transition:border-color .15s, background .15s;
+    }
+    .slot-row.active-row { border-color:rgba(75,197,165,.6); background:rgba(75,197,165,.06); }
+    .slot-box {
+      display:inline-flex; align-items:center; justify-content:center;
+      min-width:48px; height:38px; padding:0 12px;
+      background:#252733; border:2px dashed #3d3f52; border-radius:8px;
+      color:rgba(255,255,255,.25); font-size:1.05rem; font-weight:800;
+      transition:all .2s;
+    }
+    .slot-box.active    { border-color:var(--teal); background:rgba(75,197,165,.12); color:var(--teal); border-style:solid; }
+    .slot-box.filled    { background:rgba(67,97,238,.22); border:2px solid rgba(67,97,238,.7); color:#a0b4ff; }
+    .slot-box.correct-f { background:rgba(88,204,2,.18); border-color:var(--green); color:#88e04a; border-style:solid; }
+    .slot-box.wrong-f   { background:rgba(255,75,75,.18); border-color:var(--red); color:#ff8080; border-style:solid; }
+    .y-fixed {
+      display:inline-flex; align-items:center; justify-content:center;
+      min-width:34px; height:30px; padding:0 9px;
+      background:rgba(75,197,165,.15); border-radius:7px;
+      color:var(--teal); font-size:1rem; font-weight:900;
+    }
+    .paren { color:rgba(255,255,255,.4); font-size:1.3rem; line-height:1; }
+    .comma { color:rgba(255,255,255,.4); font-size:1.1rem; }
+
+    /* Tiles */
+    .tiles-row { display:flex; justify-content:center; gap:7px; flex-wrap:wrap; margin-bottom:10px; }
+    .tile-btn {
+      background:var(--opt-bg); border:2px solid var(--opt-brd); border-radius:12px;
+      color:var(--text); font-family:inherit; font-size:0.95rem; font-weight:800;
+      min-width:52px; height:48px; padding:0 10px; cursor:pointer;
+      display:flex; align-items:center; justify-content:center;
+      transition:border-color .15s,background .15s,transform .1s;
+    }
+    .tile-btn:hover:not(.locked) { border-color:#555870; background:#252737; }
+    .tile-btn:active:not(.locked) { transform:scale(.95); }
+    .tile-btn.sel0   { border-color:#6070cc; background:#1e2240; }
+    .tile-btn.sel1   { border-color:#a070cc; background:#221e40; }
+    .tile-btn.correct{ border-color:var(--green)!important; background:#172110!important; color:#88e04a; }
+    .tile-btn.wrong  { border-color:var(--red)!important;   background:#221212!important; color:#ff8080; }
+    .tile-btn.locked { cursor:default; }
+
+    .start-over-row { display:flex; justify-content:flex-end; margin-top:4px; }
+    .start-over-btn { background:none; border:none; color:var(--muted); font-family:inherit; font-size:0.8rem; font-weight:700; cursor:pointer; padding:4px 8px; border-radius:8px; transition:color .15s; }
+    .start-over-btn:hover { color:var(--text); }
+
+    .feedback-bar { border-radius:12px; padding:12px 16px; margin-bottom:10px; display:flex; align-items:flex-start; gap:10px; opacity:0; transition:opacity .2s; }
+    .feedback-bar.show { opacity:1; }
+    .feedback-bar.ok  { background:#172110; border:1.5px solid #2d4a1e; }
+    .feedback-bar.err { background:#221212; border:1.5px solid #4a1f1f; }
+    .fb-icon  { font-size:1.1rem; flex-shrink:0; }
+    .fb-body  { flex:1; }
+    .fb-title { font-size:0.88rem; font-weight:900; margin-bottom:2px; }
+    .fb-title.ok  { color:#88e04a; }
+    .fb-title.err { color:#ff8080; }
+    .fb-hint  { font-size:0.78rem; font-weight:600; color:var(--muted); line-height:1.5; }
+
+    .why-panel { background:#14182a; border:1.5px solid rgba(67,97,238,.4); border-radius:12px; padding:14px 16px; margin-bottom:10px; display:none; animation:slideIn .2s ease; }
+    .why-panel.show { display:block; }
+    @keyframes slideIn { from{opacity:0;transform:translateY(-6px)} to{opacity:1;transform:translateY(0)} }
+    .why-title { font-size:0.8rem; font-weight:900; color:#a0b4ff; text-transform:uppercase; letter-spacing:.08em; margin-bottom:8px; }
+    .why-steps { list-style:none; }
+    .why-steps li { font-size:0.82rem; font-weight:700; color:var(--muted); padding:4px 0; border-bottom:1px solid rgba(255,255,255,.05); line-height:1.5; }
+    .why-steps li:last-child { border-bottom:none; color:#88e04a; }
+    .why-steps li span { color:#a0b4ff; }
+
+    .btn-row { display:flex; gap:10px; }
+    .why-btn { flex-shrink:0; padding:16px 18px; border:2px solid var(--opt-brd); border-radius:999px; font-family:inherit; font-size:0.9rem; font-weight:800; cursor:pointer; background:var(--opt-bg); color:var(--muted); transition:all .15s; display:none; }
+    .why-btn.show { display:block; }
+    .why-btn:hover { border-color:#a0b4ff; color:#a0b4ff; }
+    .why-btn.active { border-color:rgba(67,97,238,.7); background:rgba(67,97,238,.15); color:#a0b4ff; }
+    .check-btn { flex:1; padding:16px; border:none; border-radius:999px; font-family:inherit; font-size:1rem; font-weight:900; cursor:pointer; background:#252737; color:var(--muted); transition:background .15s,color .15s; }
+    .check-btn.ready     { background:var(--blue);  color:#fff; }
+    .check-btn.ready:hover { background:#3451d1; }
+    .check-btn.continue  { background:var(--green); color:#fff; }
+    .check-btn.continue:hover { background:var(--green-dk); }
+
+    .results-wrap { text-align:center; display:none; padding:20px 0 40px; }
+    .results-wrap.show { display:block; }
+    .res-card { background:var(--card); border:1.5px solid var(--border); border-radius:var(--radius); padding:34px 28px 28px; }
+    .res-emoji { font-size:3rem; margin-bottom:10px; }
+    .res-title { font-size:1.4rem; font-weight:900; color:var(--text); margin-bottom:4px; }
+    .res-level { font-size:0.75rem; font-weight:700; color:var(--muted); margin-bottom:10px; text-transform:uppercase; letter-spacing:.08em; }
+    .res-score { font-size:2.8rem; font-weight:900; color:var(--green); margin:14px 0 2px; }
+    .res-label { font-size:0.82rem; font-weight:700; color:var(--muted); margin-bottom:14px; }
+    .res-msg   { font-size:0.88rem; font-weight:700; color:var(--muted); line-height:1.6; margin-bottom:22px; }
+    .btn-retry  { background:var(--blue); color:#fff; font-family:inherit; font-size:0.95rem; font-weight:800; padding:14px 36px; border:none; border-radius:999px; cursor:pointer; transition:background .15s; display:block; width:100%; margin-bottom:10px; }
+    .btn-retry:hover { background:#3451d1; }
+    .btn-switch { background:none; border:1.5px solid var(--opt-brd); color:var(--muted); font-family:inherit; font-size:0.85rem; font-weight:700; padding:10px 24px; border-radius:999px; cursor:pointer; transition:all .15s; width:100%; margin-bottom:10px; }
+    .btn-switch:hover { border-color:#a0b4ff; color:#a0b4ff; }
+    .btn-home { background:none; border:1.5px solid var(--border); color:var(--muted); font-family:inherit; font-size:0.85rem; font-weight:700; padding:10px 24px; border-radius:999px; cursor:pointer; transition:all .15s; width:100%; }
+    .btn-home:hover { border-color:#555870; color:var(--text); }
+
+    footer { background:#0a0b10; color:rgba(255,255,255,.4); padding:16px 24px; text-align:center; font-size:0.75rem; font-weight:600; }
+    footer a { color:rgba(255,255,255,.25); text-decoration:none; }
+    footer a:hover { color:rgba(255,255,255,.7); }
+
+    @media (max-width:400px) {
+      .quiz-shell { padding:12px 12px 70px; }
+      .tile-btn { min-width:44px; height:44px; font-size:0.88rem; }
+    }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header>
+  <div class="header-inner">
+    <a class="logo-link" href="../../index.html">
+      <img src="../../logo.png" alt="LearnPad" class="logo-img"
+           onerror="this.outerHTML='<span class=logo-txt>LearnPad</span>'" />
+    </a>
+    <nav>
+      <a href="../../for_school/index.html">School</a>
+      <a href="../../index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="quiz-shell" id="quizShell">
+    <div class="level-row">
+      <button class="level-btn active-easy" id="btnEasy" onclick="setLevel('easy')">Easy</button>
+      <button class="level-btn" id="btnHard"  onclick="setLevel('hard')">Hard</button>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-track"><div class="progress-fill" id="pFill"></div></div>
+      <div class="progress-meta">
+        <span>Question <span id="qNum">1</span> of 10</span>
+        <span>&#11088; <span id="scoreDisp">0</span></span>
+      </div>
+    </div>
+
+    <div class="q-card" id="qCard"></div>
+
+    <div class="feedback-bar" id="feedbackBar">
+      <div class="fb-icon"  id="fbIcon"></div>
+      <div class="fb-body">
+        <div class="fb-title" id="fbTitle"></div>
+        <div class="fb-hint"  id="fbHint"></div>
+      </div>
+    </div>
+
+    <div class="why-panel" id="whyPanel">
+      <div class="why-title">Step-by-step</div>
+      <ul class="why-steps" id="whySteps"></ul>
+    </div>
+
+    <div class="btn-row">
+      <button class="why-btn" id="whyBtn" onclick="toggleWhy()">Why?</button>
+      <button class="check-btn" id="checkBtn" onclick="checkAnswer()">Check</button>
+    </div>
+
+    <div class="results-wrap" id="resultsWrap">
+      <div class="res-card">
+        <div class="res-emoji" id="resEmoji">&#127881;</div>
+        <div class="res-title">Quiz Complete!</div>
+        <div class="res-level" id="resLevel">Easy Level</div>
+        <div class="res-score" id="resScore">0/10</div>
+        <div class="res-label">correct answers</div>
+        <div class="res-msg"   id="resMsg"></div>
+        <button class="btn-retry"  onclick="initQuiz()">Play Again &#8594;</button>
+        <button class="btn-switch" id="btnSwitch" onclick="switchLevel()">Try Hard Level &#8594;</button>
+        <button class="btn-home"   onclick="location.href='../../index.html'">&#8592; Back to Home</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <a href="../../index.html">LearnPad</a> &nbsp;&middot;&nbsp; Free Math Practice &nbsp;&middot;&nbsp;
+  <a href="../../for_school/index.html">School Worksheets</a>
+</footer>
+
+<script>
+const shuffle = a => [...a].sort(() => Math.random() - .5);
+const fmt     = v => Number.isInteger(v) ? String(v) : v.toFixed(1).replace(/\.0$/,'');
+
+/* ═══════════════════════════════════════════════════════
+   CATMULL-ROM SPLINE
+═══════════════════════════════════════════════════════ */
+function crPoint(pts, t) {
+  const n=pts.length;
+  const i=Math.max(0,Math.min(n-2,Math.floor(t))), u=t-i;
+  const p0=pts[Math.max(0,i-1)],p1=pts[i],p2=pts[i+1],p3=pts[Math.min(n-1,i+2)];
+  const t2=u*u,t3=t2*u;
+  const h1=2*t3-3*t2+1,h2=t3-2*t2+u,h3=-2*t3+3*t2,h4=t3-t2;
+  const mx1=(p2[0]-p0[0])/2,my1=(p2[1]-p0[1])/2;
+  const mx2=(p3[0]-p1[0])/2,my2=(p3[1]-p1[1])/2;
+  return {x:h1*p1[0]+h2*mx1+h3*p2[0]+h4*mx2, y:h1*p1[1]+h2*my1+h3*p2[1]+h4*my2};
+}
+function crPath(pts, sx, sy, S=150) {
+  const n=pts.length, pp=[];
+  for(let s=0;s<=S;s++){const p=crPoint(pts,s/S*(n-1));pp.push(`${sx(p.x).toFixed(1)},${sy(p.y).toFixed(1)}`);}
+  return 'M '+pp.join(' L ');
+}
+
+/* ═══════════════════════════════════════════════════════
+   GRAPH LAYOUT
+═══════════════════════════════════════════════════════ */
+const PL=38,PB=28,PT=16,PR=18;
+function gSize(xR,yR){
+  const xs=xR[1]-xR[0],ys=yR[1]-yR[0];
+  const CW=Math.min(34,Math.floor((320-PL-PR)/xs));
+  const CH=Math.min(26,Math.floor((248-PT-PB)/ys));
+  return{CW,CH,W:PL+xs*CW+PR,H:PT+ys*CH+PB};
+}
+function gCoords(xMin,yMax,CW,CH){return{sx:x=>PL+(x-xMin)*CW, sy:y=>PT+(yMax-y)*CH};}
+
+/* ═══════════════════════════════════════════════════════
+   BUILD SVG
+   opts: { guideLine: number, dots: [{x,y,state}] }
+   guideLine — dashed horizontal line at that y-value
+   dots       — teal/green/red circles at given coordinates
+═══════════════════════════════════════════════════════ */
+function buildSvg(curve, opts={}) {
+  const{guideLine=null,dots=[]}=opts;
+  const{CW,CH,W,H}=gSize(curve.xR,curve.yR);
+  const{sx,sy}=gCoords(curve.xR[0],curve.yR[1],CW,CH);
+  const[xMin,xMax]=curve.xR,[yMin,yMax]=curve.yR;
+  const ac='rgba(255,255,255,0.5)';
+  const cid='cl'+Math.random().toString(36).slice(2,7);
+
+  // Grid lines
+  let g='';
+  for(let y=Math.ceil(yMin);y<=Math.floor(yMax);y++)
+    g+=`<line x1="${PL}" y1="${sy(y).toFixed(1)}" x2="${(W-PR).toFixed(1)}" y2="${sy(y).toFixed(1)}" stroke="rgba(255,255,255,.07)" stroke-width="1"/>`;
+  for(let x=Math.ceil(xMin);x<=Math.floor(xMax);x++)
+    g+=`<line x1="${sx(x).toFixed(1)}" y1="${PT}" x2="${sx(x).toFixed(1)}" y2="${(H-PB).toFixed(1)}" stroke="rgba(255,255,255,.07)" stroke-width="1"/>`;
+
+  // Dashed guide line at yVal
+  let guideEl='';
+  if(guideLine!==null&&guideLine>=yMin&&guideLine<=yMax){
+    const gy=sy(guideLine).toFixed(1);
+    guideEl=`<line x1="${PL}" y1="${gy}" x2="${(W-PR).toFixed(1)}" y2="${gy}" stroke="rgba(75,197,165,.5)" stroke-width="1.5" stroke-dasharray="6,4"/>`;
+  }
+
+  // Axes
+  const oyN=sy(0),oxN=sx(0);
+  const yAx=(oyN>=PT&&oyN<=H-PB)?`<line x1="${PL}" y1="${oyN.toFixed(1)}" x2="${(W-PR+8).toFixed(1)}" y2="${oyN.toFixed(1)}" stroke="${ac}" stroke-width="2" marker-end="url(#ax${cid})"/>`:'';
+  const xAx=(oxN>=PL&&oxN<=W-PR)?`<line x1="${oxN.toFixed(1)}" y1="${(H-PB+8).toFixed(1)}" x2="${oxN.toFixed(1)}" y2="${PT}" stroke="${ac}" stroke-width="1.8" marker-end="url(#ax${cid})"/>`:'';
+
+  // Axis labels
+  let lbl='';
+  for(let y=Math.ceil(yMin);y<=Math.floor(yMax);y++){
+    if(y===0)continue;
+    lbl+=`<text x="${PL-5}" y="${sy(y)+4}" text-anchor="end" fill="rgba(255,255,255,.42)" font-size="11" font-family="Nunito,sans-serif" font-weight="700">${y}</text>`;
+  }
+  for(let x=Math.ceil(xMin);x<=Math.floor(xMax);x++){
+    if(x===0)continue;
+    lbl+=`<text x="${sx(x)}" y="${H-PB+18}" text-anchor="middle" fill="rgba(255,255,255,.42)" font-size="11" font-family="Nunito,sans-serif" font-weight="700">${x}</text>`;
+  }
+  lbl+=`<text x="${oxN+6}" y="${PT+13}" font-size="12" font-weight="900" fill="rgba(255,255,255,.55)" font-family="Nunito,sans-serif" font-style="italic">y</text>`;
+  lbl+=`<text x="${W-PR+7}" y="${oyN+5}" font-size="12" font-weight="900" fill="rgba(255,255,255,.55)" font-family="Nunito,sans-serif" font-style="italic">x</text>`;
+
+  // Curve (clipped)
+  const pathD=crPath(curve.pts,sx,sy);
+  const curveSvg=`<defs>
+    <marker id="ax${cid}" markerWidth="7" markerHeight="6" refX="6" refY="3" orient="auto"><polygon points="0 0,7 3,0 6" fill="${ac}"/></marker>
+    <clipPath id="${cid}"><rect x="${PL}" y="${PT}" width="${W-PL-PR}" height="${H-PT-PB}"/></clipPath>
+  </defs>
+  <path d="${pathD}" fill="none" stroke="#4bc5a5" stroke-width="2.8" stroke-linejoin="round" clip-path="url(#${cid})"/>`;
+
+  // Dots at selected/answered coordinates
+  let dotsSvg='';
+  for(const d of dots){
+    if(d.x<xMin||d.x>xMax||d.y<yMin||d.y>yMax)continue;
+    const dx=sx(d.x).toFixed(1),dy=sy(d.y).toFixed(1);
+    const col=d.state==='correct'?'#58cc02':d.state==='wrong'?'#ff4b4b':'rgba(75,197,165,0.9)';
+    const strk=d.state==='pending'?'rgba(255,255,255,.5)':'rgba(255,255,255,.85)';
+    dotsSvg+=`<circle cx="${dx}" cy="${dy}" r="7" fill="${col}" stroke="${strk}" stroke-width="2" clip-path="url(#${cid})"/>`;
+    if(d.state==='correct')
+      dotsSvg+=`<text x="${dx}" y="${(parseFloat(dy)-12).toFixed(1)}" text-anchor="middle" font-size="12" fill="#88e04a" clip-path="url(#${cid})">&#10003;</text>`;
+  }
+
+  return `<svg class="coord-svg" width="${W}" height="${H}">
+    ${g}${guideEl}${yAx}${xAx}${lbl}${curveSvg}${dotsSvg}
+  </svg>`;
+}
+
+/* ═══════════════════════════════════════════════════════
+   CURVE POOL
+   Each curve has two control points at the target yVal,
+   so Catmull-Rom passes exactly through both answer points.
+   answers = [x1, x2] sorted ascending.
+═══════════════════════════════════════════════════════ */
+const EASY_CURVES = [
+  { pts:[[-4,-5],[-3,0],[-2,3],[-1,4],[0,3],[1,0],[2,-5]],  xR:[-5,3], yR:[-6,5],  yVal:0,  answers:[-3,1]  },
+  { pts:[[-3,-4],[-2,1],[-1,4],[0,5],[1,4],[2,1],[3,-4]],   xR:[-4,4], yR:[-5,6],  yVal:1,  answers:[-2,2]  },
+  { pts:[[-2,-5],[-1,0],[0,3],[1,4],[2,3],[3,0],[4,-5]],    xR:[-3,5], yR:[-6,5],  yVal:0,  answers:[-1,3]  },
+  { pts:[[-5,-4],[-4,1],[-3,4],[-2,5],[-1,4],[0,1],[1,-4]], xR:[-6,2], yR:[-5,6],  yVal:1,  answers:[-4,0]  },
+  { pts:[[-1,-5],[0,-1],[1,2],[2,3],[3,2],[4,-1],[5,-5]],   xR:[-2,6], yR:[-6,4],  yVal:-1, answers:[0,4]   },
+  { pts:[[-3,6],[-2,1],[-1,-2],[0,-3],[1,-2],[2,1],[3,6]],  xR:[-4,4], yR:[-4,7],  yVal:1,  answers:[-2,2]  },
+  { pts:[[-2,5],[-1,0],[0,-3],[1,-4],[2,-3],[3,0],[4,5]],   xR:[-3,5], yR:[-5,6],  yVal:0,  answers:[-1,3]  },
+  { pts:[[-4,6],[-3,1],[-2,-2],[-1,-3],[0,-2],[1,1],[2,6]], xR:[-5,3], yR:[-4,7],  yVal:1,  answers:[-3,1]  },
+  { pts:[[-1,7],[0,2],[1,-1],[2,-2],[3,-1],[4,2],[5,7]],    xR:[-2,6], yR:[-3,8],  yVal:2,  answers:[0,4]   },
+  { pts:[[-5,5],[-4,0],[-3,-3],[-2,-4],[-1,-3],[0,0],[1,5]],xR:[-6,2], yR:[-5,6],  yVal:0,  answers:[-4,0]  },
+];
+
+const HARD_CURVES = [
+  { pts:[[-4,-4],[-3,0],[-2,3.5],[-0.5,4.5],[1,3.5],[2,0],[3,-4]],      xR:[-5,4], yR:[-5,5.5],  yVal:0,   answers:[-3,2]  },
+  { pts:[[-3,-3],[-2,1.5],[-1,4.5],[0.5,5.5],[2,4.5],[3,1.5],[4,-3]],   xR:[-4,5], yR:[-4,6.5],  yVal:1.5, answers:[-2,3]  },
+  { pts:[[-2,-4],[-1,-0.5],[0,2.5],[1.5,3.5],[3,2.5],[4,-0.5],[5,-4]],  xR:[-3,6], yR:[-5,4.5],  yVal:-0.5,answers:[-1,4]  },
+  { pts:[[-5,-3],[-4,0.5],[-3,3],[-1.5,4],[0,3],[1,0.5],[2,-3]],        xR:[-6,3], yR:[-4,5],    yVal:0.5, answers:[-4,1]  },
+  { pts:[[-3,4.5],[-2,0.5],[-1,-2],[0.5,-3.5],[2,-2],[3,0.5],[4,4.5]],  xR:[-4,5], yR:[-4.5,5.5],yVal:0.5, answers:[-2,3]  },
+  { pts:[[-2,4.5],[-1,-0.5],[0,-3],[1.5,-4.5],[3,-3],[4,-0.5],[5,4.5]], xR:[-3,6], yR:[-5.5,5.5],yVal:-0.5,answers:[-1,4]  },
+  { pts:[[-5,5.5],[-4,1],[-3,-1.5],[-1.5,-3],[0,-1.5],[1,1],[2,5.5]],  xR:[-6,3], yR:[-4,6.5],  yVal:1,   answers:[-4,1]  },
+  { pts:[[-1,6.5],[0,1.5],[1,-1],[2.5,-2.5],[4,-1],[5,1.5],[6,6.5]],   xR:[-2,7], yR:[-3.5,7.5], yVal:1.5, answers:[0,5]   },
+  { pts:[[0,-3],[1,1],[2,4],[3,5],[4,4],[5,1],[6,-3]],                  xR:[-1,7], yR:[-4,6],    yVal:1,   answers:[1,5]   },
+  { pts:[[-6,5],[-5,0.5],[-4,-2],[-3,-3.5],[-2,-2],[-1,0.5],[0,5]],    xR:[-7,1], yR:[-4.5,6],  yVal:0.5, answers:[-5,-1] },
+];
+
+/* ═══════════════════════════════════════════════════════
+   QUESTION BUILDER
+═══════════════════════════════════════════════════════ */
+function makeQuestions(curves) {
+  return shuffle(curves).slice(0,10).map(c => {
+    // Integer x-tiles spanning the curve's inner x-range
+    const xVals = c.pts.map(p=>p[0]);
+    const xMin  = Math.ceil(Math.min(...xVals)+1);
+    const xMax  = Math.floor(Math.max(...xVals)-1);
+    const tiles = [];
+    for(let x=xMin;x<=xMax;x++) tiles.push(x);
+    // Ensure answer x-values are always present
+    c.answers.forEach(a=>{ if(!tiles.includes(a)) tiles.push(a); });
+    tiles.sort((a,b)=>a-b);
+
+    const yStr = fmt(c.yVal);
+    return {
+      curve:   c,
+      yVal:    c.yVal,
+      answers: [...c.answers].sort((a,b)=>a-b),
+      tiles,
+      questionText:`Plot two points on this curve with a <strong>y&#8209;coordinate of ${yStr}</strong>.`,
+      hint:`Find where the dashed line y&#8198;=&#8198;${yStr} crosses the curve — those are the two points.`,
+      why:[
+        `Draw a horizontal line at <span>y = ${yStr}</span> (shown dashed)`,
+        `Find the <span>two intersections</span> between the dashed line and the curve`,
+        `Read the x&#8209;coordinate of the <span>left intersection: x = ${c.answers[0]}</span>`,
+        `Answer: <span>(${c.answers[0]},&#8194;${yStr})</span> and <span>(${c.answers[1]},&#8194;${yStr})</span>`,
+      ],
+    };
+  });
+}
+
+/* ═══════════════════════════════════════════════════════
+   STATE
+═══════════════════════════════════════════════════════ */
+let currentLevel='easy';
+let questions=[],qIdx=0,isAnswered=false,isLocked=false,score=0,whyOpen=false;
+let selSlots=[null,null],activeSlot=0;
+
+function getCurves(){ return currentLevel==='easy'?EASY_CURVES:HARD_CURVES; }
+
+function setLevel(lvl){
+  currentLevel=lvl;
+  document.getElementById('btnEasy').className='level-btn'+(lvl==='easy'?' active-easy':'');
+  document.getElementById('btnHard').className='level-btn'+(lvl==='hard'?' active-hard':'');
+  initQuiz();
+}
+function switchLevel(){ setLevel(currentLevel==='easy'?'hard':'easy'); }
+
+/* ═══════════════════════════════════════════════════════
+   RENDER CARD
+═══════════════════════════════════════════════════════ */
+function renderCard(q) {
+  const svgStr   = buildSvg(q.curve, {guideLine:q.yVal});
+  const yStr     = fmt(q.yVal);
+  const tilesHTML = q.tiles.map(v =>
+    `<button class="tile-btn" data-v="${v}" onclick="selectTile(${v})">${fmt(v)}</button>`
+  ).join('');
+
+  document.getElementById('qCard').innerHTML=`
+    <p class="q-text">${q.questionText}</p>
+    <div class="graph-wrap" id="graphWrap">${svgStr}</div>
+    <div class="slots-wrap" id="slotsWrap">
+      <div class="slot-row active-row" id="slotRow0" onclick="activateSlot(0)">
+        <span class="paren">(</span>
+        <span class="slot-box active" id="slot0">?</span>
+        <span class="comma">,</span>
+        <span class="y-fixed">${yStr}</span>
+        <span class="paren">)</span>
+      </div>
+      <div class="slot-row" id="slotRow1" onclick="activateSlot(1)">
+        <span class="paren">(</span>
+        <span class="slot-box" id="slot1">?</span>
+        <span class="comma">,</span>
+        <span class="y-fixed">${yStr}</span>
+        <span class="paren">)</span>
+      </div>
+    </div>
+    <div class="tiles-row" id="tilesRow">${tilesHTML}</div>
+    <div class="start-over-row">
+      <button class="start-over-btn" onclick="resetAnswer()">&#8635; Start over</button>
+    </div>`;
+}
+
+/* ═══════════════════════════════════════════════════════
+   SLOT + TILE INTERACTION
+═══════════════════════════════════════════════════════ */
+function activateSlot(idx) {
+  if(isLocked) return;
+  activeSlot=idx;
+  updateSlotStyles();
+}
+
+function selectTile(v) {
+  if(isLocked) return;
+  selSlots[activeSlot]=v;
+  // auto-advance to next empty slot
+  if(activeSlot===0 && selSlots[1]===null) activeSlot=1;
+  else if(activeSlot===1 && selSlots[0]===null) activeSlot=0;
+  updateSlotStyles();
+  redrawGraphDots();
+  updateCheckBtn();
+}
+
+function updateSlotStyles() {
+  for(let i=0;i<2;i++){
+    const box=document.getElementById('slot'+i);
+    const row=document.getElementById('slotRow'+i);
+    if(!box||!row) continue;
+    const v=selSlots[i], isActive=activeSlot===i;
+    box.textContent = v!==null ? fmt(v) : '?';
+    box.className   = 'slot-box ' + (v!==null ? 'filled' : isActive ? 'active' : '');
+    row.className   = 'slot-row ' + (isActive ? 'active-row' : '');
+  }
+  document.querySelectorAll('.tile-btn').forEach(b=>{
+    const bv=+b.dataset.v;
+    b.classList.remove('sel0','sel1');
+    if(selSlots[0]===bv) b.classList.add('sel0');
+    if(selSlots[1]===bv) b.classList.add('sel1');
+  });
+}
+
+function redrawGraphDots(dotState='pending') {
+  const q=questions[qIdx];
+  const dots=[];
+  for(let i=0;i<2;i++){
+    if(selSlots[i]!==null) dots.push({x:selSlots[i],y:q.yVal,state:dotState});
+  }
+  document.getElementById('graphWrap').innerHTML=buildSvg(q.curve,{guideLine:q.yVal,dots});
+}
+
+function updateCheckBtn() {
+  const ready=selSlots[0]!==null && selSlots[1]!==null;
+  document.getElementById('checkBtn').className='check-btn'+(ready?' ready':'');
+}
+
+function resetAnswer() {
+  if(isLocked) return;
+  selSlots=[null,null]; activeSlot=0;
+  updateSlotStyles();
+  redrawGraphDots();
+  updateCheckBtn();
+}
+
+/* ═══════════════════════════════════════════════════════
+   CHECK ANSWER
+═══════════════════════════════════════════════════════ */
+function checkAnswer() {
+  if(isAnswered){ advanceQ(); return; }
+  if(selSlots[0]===null||selSlots[1]===null) return;
+
+  const q=questions[qIdx];
+  const userSorted=[...selSlots].sort((a,b)=>a-b);
+  const correct=userSorted[0]===q.answers[0] && userSorted[1]===q.answers[1];
+
+  isAnswered=isLocked=true;
+
+  // Redraw graph with colored dots
+  const dotState=correct?'correct':'wrong';
+  const dots=selSlots.filter(v=>v!==null).map(v=>({x:v,y:q.yVal,state:dotState}));
+  document.getElementById('graphWrap').innerHTML=buildSvg(q.curve,{guideLine:q.yVal,dots});
+
+  if(correct){
+    score++;
+    document.getElementById('scoreDisp').textContent=score;
+    for(let i=0;i<2;i++){
+      const b=document.getElementById('slot'+i);
+      if(b) b.className='slot-box correct-f';
+      const r=document.getElementById('slotRow'+i);
+      if(r) r.className='slot-row';
+    }
+    document.querySelectorAll('.tile-btn').forEach(b=>{
+      const bv=+b.dataset.v;
+      if(selSlots.includes(bv)) b.classList.add('correct');
+      b.classList.add('locked');
+    });
+    showFeedback(true,'Correct!',q.hint);
+    document.getElementById('checkBtn').textContent=qIdx<questions.length-1?'Continue →':'See Results →';
+    document.getElementById('checkBtn').className='check-btn continue';
+    document.getElementById('whyBtn').classList.add('show');
+    document.getElementById('pFill').style.width=`${(qIdx+1)/questions.length*100}%`;
+
+  } else {
+    for(let i=0;i<2;i++){
+      const b=document.getElementById('slot'+i);
+      if(b) b.className='slot-box wrong-f';
+    }
+    document.querySelectorAll('.tile-btn').forEach(b=>{
+      if(selSlots.includes(+b.dataset.v)) b.classList.add('wrong');
+    });
+    showFeedback(false,'Not quite!',q.hint);
+
+    setTimeout(()=>{
+      isAnswered=isLocked=false;
+      for(let i=0;i<2;i++){
+        const b=document.getElementById('slot'+i);
+        if(b) b.className='slot-box'+(selSlots[i]!==null?' filled':activeSlot===i?' active':'');
+        const r=document.getElementById('slotRow'+i);
+        if(r) r.className='slot-row'+(activeSlot===i?' active-row':'');
+      }
+      document.querySelectorAll('.tile-btn').forEach(b=>b.classList.remove('wrong','locked'));
+      redrawGraphDots('pending');
+      hideFeedback();
+    },1600);
+  }
+}
+
+function advanceQ(){
+  qIdx++;
+  if(qIdx>=questions.length){ showResults(); return; }
+  document.getElementById('qNum').textContent=qIdx+1;
+  whyOpen=false;
+  document.getElementById('whyPanel').className='why-panel';
+  document.getElementById('whyBtn').className='why-btn';
+  selSlots=[null,null]; activeSlot=0;
+  renderCard(questions[qIdx]);
+  hideFeedback();
+  document.getElementById('checkBtn').textContent='Check';
+  document.getElementById('checkBtn').className='check-btn';
+}
+
+/* ═══════════════════════════════════════════════════════
+   FEEDBACK + WHY
+═══════════════════════════════════════════════════════ */
+function showFeedback(ok,title,hint){
+  const bar=document.getElementById('feedbackBar');
+  document.getElementById('fbIcon').textContent=ok?'✅':'❌';
+  const t=document.getElementById('fbTitle');
+  t.textContent=title; t.className='fb-title '+(ok?'ok':'err');
+  document.getElementById('fbHint').innerHTML=hint||'';
+  bar.className='feedback-bar show '+(ok?'ok':'err');
+}
+function hideFeedback(){ document.getElementById('feedbackBar').className='feedback-bar'; }
+
+function toggleWhy(){
+  const q=questions[qIdx];
+  whyOpen=!whyOpen;
+  document.getElementById('whyPanel').className='why-panel'+(whyOpen?' show':'');
+  document.getElementById('whyBtn').className='why-btn show'+(whyOpen?' active':'');
+  if(whyOpen) document.getElementById('whySteps').innerHTML=q.why.map(s=>`<li>${s}</li>`).join('');
+}
+
+/* ═══════════════════════════════════════════════════════
+   RESULTS
+═══════════════════════════════════════════════════════ */
+function showResults(){
+  document.getElementById('quizShell').style.paddingBottom='20px';
+  document.getElementById('resultsWrap').className='results-wrap show';
+  document.getElementById('qCard').style.display='none';
+  document.getElementById('feedbackBar').className='feedback-bar';
+  document.getElementById('whyPanel').className='why-panel';
+  document.querySelectorAll('.progress-wrap,.level-row,.btn-row').forEach(e=>e.style.display='none');
+
+  const pct=score/questions.length;
+  const[emoji,msg]=
+    pct===1   ?['🏆','Perfect! You can read any point off a graph with ease.']
+    :pct>=.7  ?['🎉','Great work! You have a solid grasp of reading graph coordinates.']
+    :pct>=.5  ?['👍','Good effort! Remember — follow the dashed line to both crossings.']
+              :['📚','Keep practicing! Draw the horizontal line and trace where it meets the curve.'];
+
+  document.getElementById('resEmoji').textContent=emoji;
+  document.getElementById('resScore').textContent=`${score}/10`;
+  document.getElementById('resMsg').textContent=msg;
+  document.getElementById('resLevel').textContent=currentLevel==='hard'?'Hard Level':'Easy Level';
+  document.getElementById('btnSwitch').textContent=
+    currentLevel==='easy'?'Try Hard Level →':'Try Easy Level →';
+}
+
+/* ═══════════════════════════════════════════════════════
+   INIT
+═══════════════════════════════════════════════════════ */
+function initQuiz(){
+  questions=makeQuestions(getCurves());
+  qIdx=0; score=0; isAnswered=false; isLocked=false; whyOpen=false;
+  selSlots=[null,null]; activeSlot=0;
+
+  document.getElementById('scoreDisp').textContent=0;
+  document.getElementById('qNum').textContent=1;
+  document.getElementById('pFill').style.width='0%';
+  document.getElementById('resultsWrap').className='results-wrap';
+  document.getElementById('qCard').style.display='';
+  document.querySelectorAll('.progress-wrap,.level-row,.btn-row').forEach(e=>e.style.display='');
+  document.getElementById('quizShell').style.paddingBottom='';
+  hideFeedback();
+  document.getElementById('whyPanel').className='why-panel';
+  document.getElementById('whyBtn').className='why-btn';
+  document.getElementById('checkBtn').textContent='Check';
+  document.getElementById('checkBtn').className='check-btn';
+  renderCard(questions[0]);
+}
+
+initQuiz();
+</script>
+</body>
+</html>

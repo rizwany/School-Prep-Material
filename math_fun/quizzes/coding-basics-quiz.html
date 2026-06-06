@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Coding Basics – Programming Quiz | LearnPad</title>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#0e0f14;--card:#1d1f2b;--border:#2a2c3a;
+      --text:#f0f0f8;--muted:rgba(240,240,248,.42);
+      --green:#58cc02;--green-dk:#46a301;--red:#ff4b4b;
+      --blue:#4361ee;--purple:#7c3aed;--teal:#4bc5a5;
+      --opt-bg:#1e2030;--opt-brd:#313446;--radius:16px;
+    }
+    body{font-family:'Nunito',system-ui,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;display:flex;flex-direction:column}
+    header{background:#fff;border-bottom:2px solid #e2e6f0;padding:0 24px;position:sticky;top:0;z-index:100;flex-shrink:0}
+    .header-inner{max-width:960px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:56px}
+    .logo-link{text-decoration:none;display:flex;align-items:center}
+    .logo-img{height:34px;width:auto}
+    .logo-txt{font-weight:900;font-size:1.15rem;color:#4361ee}
+    nav a{font-weight:700;font-size:0.85rem;color:#5a6076;text-decoration:none;padding:6px 12px;border-radius:8px;transition:color .15s,background .15s}
+    nav a:hover{color:#4361ee;background:#eef1fd}
+    main{flex:1;display:flex;flex-direction:column;align-items:center}
+    .quiz-shell{width:100%;max-width:520px;padding:16px 20px 80px;display:flex;flex-direction:column;flex:1}
+
+    .level-row{display:flex;justify-content:center;gap:8px;margin-bottom:18px}
+    .level-btn{font-family:inherit;font-size:0.8rem;font-weight:800;padding:6px 18px;border-radius:999px;cursor:pointer;border:2px solid var(--opt-brd);background:var(--opt-bg);color:var(--muted);transition:all .15s}
+    .level-btn.active-easy{border-color:var(--green);background:#172110;color:#88e04a}
+    .level-btn.active-hard{border-color:var(--purple);background:#1e1535;color:#c084fc}
+
+    .progress-wrap{margin-bottom:16px}
+    .progress-track{height:8px;background:#252733;border-radius:4px;overflow:hidden}
+    .progress-fill{height:100%;background:var(--green);border-radius:4px;width:0%;transition:width .4s ease}
+    .progress-meta{display:flex;justify-content:space-between;margin-top:6px;font-size:0.72rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+
+    .q-card{background:var(--card);border:1.5px solid var(--border);border-radius:var(--radius);padding:18px 16px 16px;margin-bottom:14px}
+    .q-title{font-size:0.78rem;font-weight:700;color:var(--muted);margin-bottom:5px;text-transform:uppercase;letter-spacing:.05em}
+    .q-task{font-size:1rem;font-weight:800;line-height:1.5;margin-bottom:14px;color:var(--text)}
+    .q-task b{color:#a0b4ff}
+
+    .canvas-wrap{display:flex;justify-content:center;margin-bottom:14px}
+    .code-canvas{display:block;border-radius:10px;border:2px solid #d4d8e6}
+
+    /* ── Command blocks ─────────────────────────────── */
+    .commands-area{margin-bottom:6px}
+    .cmd-block{display:flex;align-items:center;flex-wrap:wrap;gap:8px;background:#12141e;border:2px solid #252840;border-radius:14px;padding:11px 16px;margin-bottom:9px;font-family:'Courier New',Courier,monospace;font-size:0.95rem}
+    .cmd-block:last-child{margin-bottom:0}
+    .cmd-kw{color:#7c83ff;font-weight:700}
+    .cmd-shape-val{color:#f0f0f8;font-weight:600}
+    .cmd-palette{font-size:1rem}
+    .cmd-color-str{background:rgba(255,255,255,.08);border-radius:6px;padding:2px 9px;color:#f8d97a;font-size:0.9rem}
+
+    /* ── Inline dropdown select ─────────────────────── */
+    .cmd-sel{position:relative;display:inline-flex}
+    .cmd-sel-btn{display:inline-flex;align-items:center;gap:5px;padding:4px 8px 4px 10px;border-radius:8px;border:2px dashed rgba(75,197,165,.55);background:transparent;color:rgba(75,197,165,.75);cursor:pointer;font-family:'Courier New',Courier,monospace;font-size:0.88rem;font-weight:600;transition:border-color .15s,background .15s,color .15s;white-space:nowrap}
+    .cmd-sel-btn:hover:not([disabled]){border-color:var(--teal);background:rgba(75,197,165,.07);color:var(--teal)}
+    .dd-arr{font-size:0.58rem;opacity:.6;margin-left:1px;transition:transform .15s}
+    .cmd-sel-btn.open .dd-arr{transform:rotate(180deg)}
+    .cmd-sel-btn.shape-set{border-style:solid;border-color:rgba(200,205,240,.35);background:rgba(255,255,255,.04);color:#f0f0f8}
+    .cmd-sel-btn.color-set{border-style:solid;border-color:rgba(248,217,122,.38);background:rgba(248,217,122,.06);color:#f8d97a}
+    .sel-swatch{width:13px;height:13px;border-radius:50%;border:1.5px solid rgba(0,0,0,.3);flex-shrink:0;display:inline-block}
+    .sel-shape-ico{font-size:0.9rem;line-height:1}
+    .cmd-sel-btn.correct-f{border-style:solid!important;border-color:var(--green)!important;background:rgba(88,204,2,.1)!important;color:#88e04a!important;pointer-events:none}
+    .cmd-sel-btn.wrong-f{border-style:solid!important;border-color:var(--red)!important;background:rgba(255,75,75,.1)!important;color:#ff8080!important;pointer-events:none}
+
+    /* ── Dropdown panel ─────────────────────────────── */
+    .dd-panel{position:absolute;top:calc(100% + 6px);left:0;z-index:400;background:#1a1c2e;border:1.5px solid #363958;border-radius:13px;padding:5px;min-width:140px;box-shadow:0 10px 32px rgba(0,0,0,.6);display:none}
+    .dd-panel.open{display:block;animation:ddPop .15s ease}
+    @keyframes ddPop{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}}
+    .dd-opt{display:flex;align-items:center;gap:9px;padding:8px 11px;border-radius:9px;cursor:pointer;font-family:'Nunito',sans-serif;font-size:0.85rem;font-weight:700;color:var(--text);transition:background .1s;white-space:nowrap}
+    .dd-opt:hover{background:rgba(255,255,255,.09)}
+    .dd-opt.sel{background:rgba(75,197,165,.15);color:var(--teal)}
+    .dd-opt .opt-swatch{width:18px;height:18px;border-radius:50%;border:1.5px solid rgba(0,0,0,.3);flex-shrink:0}
+    .dd-opt .opt-ico{font-size:1rem;width:20px;text-align:center;flex-shrink:0}
+
+    /* ── Arrange type ───────────────────────────────── */
+    .arrange-hint{font-size:0.75rem;font-weight:700;color:var(--muted);margin-bottom:8px;display:flex;align-items:center;gap:6px}
+    .arrange-hint span{color:var(--teal)}
+    .arrange-slots{margin-bottom:12px}
+    .arrange-slot{display:flex;align-items:center;gap:9px;margin-bottom:8px}
+    .slot-num{width:24px;height:24px;border-radius:50%;background:#252840;border:2px solid #353860;display:flex;align-items:center;justify-content:center;font-size:0.75rem;font-weight:900;color:var(--muted);flex-shrink:0}
+    .slot-drop{flex:1;min-height:48px;background:#12141e;border:2px dashed #353860;border-radius:12px;display:flex;align-items:center;padding:0 13px;gap:8px;cursor:pointer;transition:all .15s;font-family:'Courier New',Courier,monospace;font-size:0.85rem}
+    .slot-drop.has-block{border-style:solid;border-color:rgba(75,197,165,.5);background:rgba(75,197,165,.04)}
+    .slot-drop.correct-f{border-color:var(--green)!important;background:rgba(88,204,2,.08)!important;pointer-events:none}
+    .slot-drop.wrong-f{border-color:var(--red)!important;background:rgba(255,75,75,.08)!important}
+    .slot-placeholder{color:var(--muted);font-size:0.8rem;font-weight:700;font-family:'Nunito',sans-serif}
+    .slot-remove{margin-left:auto;font-size:0.7rem;color:var(--muted);font-family:'Nunito',sans-serif;padding:2px 6px;border-radius:5px;transition:color .1s,background .1s}
+    .slot-drop:hover:not(.correct-f) .slot-remove{color:#ff8080;background:rgba(255,75,75,.1)}
+
+    .arr-section-label{font-size:0.7rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:7px}
+    .block-tiles{display:flex;flex-direction:column;gap:8px}
+
+    /* block tiles in arrange area — these have inline dropdowns */
+    .block-tile{display:flex;align-items:center;gap:8px;background:var(--opt-bg);border:2px solid var(--opt-brd);border-radius:12px;padding:10px 14px;font-family:'Courier New',Courier,monospace;font-size:0.88rem;transition:border-color .2s,background .2s,opacity .2s;cursor:pointer}
+    .block-tile:hover:not(.placed){border-color:#555870;background:#252737}
+    .block-tile.ready{border-color:rgba(75,197,165,.45);background:rgba(75,197,165,.04)}
+    .block-tile.ready:hover{border-color:var(--teal);background:rgba(75,197,165,.08)}
+    .block-tile.placed{opacity:.28;pointer-events:none}
+    .block-tile.locked{cursor:default;pointer-events:none}
+    .block-tile-tap{margin-left:auto;font-size:0.72rem;font-weight:700;color:rgba(75,197,165,.6);font-family:'Nunito',sans-serif;white-space:nowrap;display:none}
+    .block-tile.ready .block-tile-tap{display:block}
+
+    /* ── Feedback / why / buttons ───────────────────── */
+    .feedback-bar{border-radius:12px;padding:12px 16px;margin-bottom:10px;display:flex;align-items:flex-start;gap:10px;opacity:0;transition:opacity .2s}
+    .feedback-bar.show{opacity:1}
+    .feedback-bar.ok{background:#172110;border:1.5px solid #2d4a1e}
+    .feedback-bar.err{background:#221212;border:1.5px solid #4a1f1f}
+    .fb-icon{font-size:1.1rem;flex-shrink:0}
+    .fb-body{flex:1}
+    .fb-title{font-size:0.88rem;font-weight:900;margin-bottom:2px}
+    .fb-title.ok{color:#88e04a}
+    .fb-title.err{color:#ff8080}
+    .fb-hint{font-size:0.78rem;font-weight:600;color:var(--muted);line-height:1.5}
+    .fb-hint code{background:rgba(255,255,255,.07);border-radius:4px;padding:1px 5px;font-size:0.82rem;color:#f8d97a}
+
+    .why-panel{background:#14182a;border:1.5px solid rgba(67,97,238,.4);border-radius:12px;padding:14px 16px;margin-bottom:10px;display:none;animation:slideIn .2s ease}
+    .why-panel.show{display:block}
+    @keyframes slideIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
+    .why-title{font-size:0.78rem;font-weight:900;color:#a0b4ff;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px}
+    .why-steps{list-style:none}
+    .why-steps li{font-size:0.82rem;font-weight:700;color:var(--muted);padding:4px 0;border-bottom:1px solid rgba(255,255,255,.05);line-height:1.5}
+    .why-steps li:last-child{border-bottom:none;color:#88e04a}
+    .why-steps li span{color:#a0b4ff}
+    .why-steps li code{background:rgba(255,255,255,.07);border-radius:4px;padding:1px 5px;font-family:'Courier New',monospace;font-size:0.85rem;color:#f8d97a}
+
+    .btn-row{display:flex;gap:10px}
+    .why-btn{flex-shrink:0;padding:16px 18px;border:2px solid var(--opt-brd);border-radius:999px;font-family:inherit;font-size:0.9rem;font-weight:800;cursor:pointer;background:var(--opt-bg);color:var(--muted);transition:all .15s;display:none}
+    .why-btn.show{display:block}
+    .why-btn:hover{border-color:#a0b4ff;color:#a0b4ff}
+    .why-btn.active{border-color:rgba(67,97,238,.7);background:rgba(67,97,238,.15);color:#a0b4ff}
+    .check-btn{flex:1;padding:16px;border:none;border-radius:999px;font-family:inherit;font-size:1rem;font-weight:900;cursor:pointer;background:#252737;color:var(--muted);transition:background .15s,color .15s}
+    .check-btn.ready{background:var(--blue);color:#fff}
+    .check-btn.ready:hover{background:#3451d1}
+    .check-btn.continue{background:var(--green);color:#fff}
+    .check-btn.continue:hover{background:var(--green-dk)}
+
+    .results-wrap{text-align:center;display:none;padding:20px 0 40px}
+    .results-wrap.show{display:block}
+    .res-card{background:var(--card);border:1.5px solid var(--border);border-radius:var(--radius);padding:34px 28px 28px}
+    .res-emoji{font-size:3rem;margin-bottom:10px}
+    .res-title{font-size:1.4rem;font-weight:900;color:var(--text);margin-bottom:4px}
+    .res-level{font-size:0.75rem;font-weight:700;color:var(--muted);margin-bottom:10px;text-transform:uppercase;letter-spacing:.08em}
+    .res-score{font-size:2.8rem;font-weight:900;color:var(--green);margin:14px 0 2px}
+    .res-label{font-size:0.82rem;font-weight:700;color:var(--muted);margin-bottom:14px}
+    .res-msg{font-size:0.88rem;font-weight:700;color:var(--muted);line-height:1.6;margin-bottom:22px}
+    .btn-retry{background:var(--blue);color:#fff;font-family:inherit;font-size:0.95rem;font-weight:800;padding:14px 36px;border:none;border-radius:999px;cursor:pointer;transition:background .15s;display:block;width:100%;margin-bottom:10px}
+    .btn-retry:hover{background:#3451d1}
+    .btn-switch{background:none;border:1.5px solid var(--opt-brd);color:var(--muted);font-family:inherit;font-size:0.85rem;font-weight:700;padding:10px 24px;border-radius:999px;cursor:pointer;transition:all .15s;width:100%;margin-bottom:10px}
+    .btn-switch:hover{border-color:#a0b4ff;color:#a0b4ff}
+    .btn-home{background:none;border:1.5px solid var(--border);color:var(--muted);font-family:inherit;font-size:0.85rem;font-weight:700;padding:10px 24px;border-radius:999px;cursor:pointer;transition:all .15s;width:100%}
+    .btn-home:hover{border-color:#555870;color:var(--text)}
+
+    footer{background:#0a0b10;color:rgba(255,255,255,.4);padding:16px 24px;text-align:center;font-size:0.75rem;font-weight:600}
+    footer a{color:rgba(255,255,255,.25);text-decoration:none}
+    footer a:hover{color:rgba(255,255,255,.7)}
+    @media(max-width:400px){.quiz-shell{padding:12px 12px 70px}}
+  </style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<header>
+  <div class="header-inner">
+    <a class="logo-link" href="../../index.html">
+      <img src="../../logo.png" alt="LearnPad" class="logo-img" onerror="this.outerHTML='<span class=logo-txt>LearnPad</span>'"/>
+    </a>
+    <nav>
+      <a href="../../for_school/index.html">School</a>
+      <a href="../../index.html">Home</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="quiz-shell" id="quizShell">
+    <div class="level-row">
+      <button class="level-btn active-easy" id="btnEasy" onclick="setLevel('easy')">Easy</button>
+      <button class="level-btn" id="btnHard"  onclick="setLevel('hard')">Hard</button>
+    </div>
+    <div class="progress-wrap">
+      <div class="progress-track"><div class="progress-fill" id="pFill"></div></div>
+      <div class="progress-meta">
+        <span>Question <span id="qNum">1</span> of 10</span>
+        <span>⭐ <span id="scoreDisp">0</span></span>
+      </div>
+    </div>
+    <div class="q-card" id="qCard"></div>
+    <div class="feedback-bar" id="feedbackBar">
+      <div class="fb-icon" id="fbIcon"></div>
+      <div class="fb-body">
+        <div class="fb-title" id="fbTitle"></div>
+        <div class="fb-hint"  id="fbHint"></div>
+      </div>
+    </div>
+    <div class="why-panel" id="whyPanel">
+      <div class="why-title">How it works</div>
+      <ul class="why-steps" id="whySteps"></ul>
+    </div>
+    <div class="btn-row">
+      <button class="why-btn" id="whyBtn" onclick="toggleWhy()">Why?</button>
+      <button class="check-btn" id="checkBtn" onclick="handleBtn()">Check</button>
+    </div>
+    <div class="results-wrap" id="resultsWrap">
+      <div class="res-card">
+        <div class="res-emoji" id="resEmoji">🎉</div>
+        <div class="res-title">Quiz Complete!</div>
+        <div class="res-level" id="resLevel">Easy Level</div>
+        <div class="res-score" id="resScore">0/10</div>
+        <div class="res-label">correct answers</div>
+        <div class="res-msg"   id="resMsg"></div>
+        <button class="btn-retry"  onclick="initQuiz()">Play Again →</button>
+        <button class="btn-switch" id="btnSwitch" onclick="switchLevel()">Try Hard Level →</button>
+        <button class="btn-home"   onclick="location.href='../../index.html'">← Back to Home</button>
+      </div>
+    </div>
+  </div>
+</main>
+<footer>
+  <a href="../../index.html">LearnPad</a> &nbsp;·&nbsp; Free Coding Practice &nbsp;·&nbsp;
+  <a href="../../for_school/index.html">School Worksheets</a>
+</footer>
+<script>
+// ── Canvas ─────────────────────────────────────────────────────────────────────
+const COLORS_MAP  = {red:'#e74c3c',blue:'#4a90d9',green:'#27ae60',yellow:'#f1c40f',purple:'#9b59b6',orange:'#e67e22',pink:'#e91e8c',teal:'#1abc9c'};
+const SHAPE_ICONS = {circle:'●',square:'■',triangle:'▲',rectangle:'▬'};
+const ALL_COLORS  = ['red','blue','green','yellow','purple','orange'];
+const ALL_SHAPES  = ['circle','square','triangle','rectangle'];
+
+function rrect(ctx,x,y,w,h,r){ctx.moveTo(x+r,y);ctx.lineTo(x+w-r,y);ctx.arcTo(x+w,y,x+w,y+r,r);ctx.lineTo(x+w,y+h-r);ctx.arcTo(x+w,y+h,x+w-r,y+h,r);ctx.lineTo(x+r,y+h);ctx.arcTo(x,y+h,x,y+h-r,r);ctx.lineTo(x,y+r);ctx.arcTo(x,y,x+r,y,r);ctx.closePath();}
+function drawShape(ctx,shape,colorName,x,y){
+  ctx.save();ctx.fillStyle=COLORS_MAP[colorName]||'#888';ctx.strokeStyle='rgba(0,0,0,0.28)';ctx.lineWidth=2;ctx.beginPath();
+  if(shape==='circle')    ctx.arc(x,y,44,0,Math.PI*2);
+  else if(shape==='square')    rrect(ctx,x-38,y-38,76,76,7);
+  else if(shape==='triangle')  {ctx.moveTo(x,y-44);ctx.lineTo(x+42,y+32);ctx.lineTo(x-42,y+32);ctx.closePath();}
+  else if(shape==='rectangle') rrect(ctx,x-54,y-28,108,56,7);
+  ctx.fill();ctx.stroke();ctx.restore();
+}
+function renderCanvas(cv,shapes){
+  const ctx=cv.getContext('2d'),W=cv.width,H=cv.height;
+  ctx.fillStyle='#f8fafc';ctx.fillRect(0,0,W,H);
+  ctx.fillStyle='rgba(180,192,215,0.35)';
+  for(let x=22;x<W;x+=32)for(let y=22;y<H;y+=32)ctx.fillRect(x,y,1.5,1.5);
+  shapes.forEach(s=>drawShape(ctx,s.shape,s.color,s.x,s.y));
+}
+function pos(n){if(n===1)return[[170,95]];if(n===2)return[[98,95],[242,95]];return[[72,95],[170,95],[268,95]];}
+function mkS(arr){const p=pos(arr.length);return arr.map((c,i)=>({shape:c.shape,color:c.color,x:p[i][0],y:p[i][1]}));}
+
+// ── Question pools ─────────────────────────────────────────────────────────────
+// type:'fill'    → commands with null blanks, answered via inline dropdowns
+// type:'arrange' → commandBlocks with null blanks, answered via dropdowns + ordering
+//   answerSlots:[{shape,color},...] — what each numbered slot must contain
+
+const EASY_POOL=[
+  {type:'fill',title:"Let's write a simple program.",task:"Draw a <b>red</b> circle.",
+   commands:[{shape:'circle',color:null}],answers:['red'],
+   canvasShapes:mkS([{shape:'circle',color:'red'}]),tiles:{colors:ALL_COLORS},
+   why:[`<span>draw</span> tells the computer to draw a shape`,`Shape: <span>circle</span>`,`Color in quotes: <span>"red"</span>`,`Full command: <code>draw circle "red"</code>`]},
+
+  {type:'fill',title:"Let's write a simple program.",task:"Draw a <b>blue</b> square.",
+   commands:[{shape:'square',color:null}],answers:['blue'],
+   canvasShapes:mkS([{shape:'square',color:'blue'}]),tiles:{colors:ALL_COLORS},
+   why:[`A <span>square</span> has 4 equal sides`,`Color: <span>"blue"</span>`,`Full command: <code>draw square "blue"</code>`]},
+
+  {type:'fill',title:"What shape does this draw?",task:"Complete the command to draw this <b>yellow</b> shape.",
+   commands:[{shape:null,color:'yellow'}],answers:['circle'],
+   canvasShapes:mkS([{shape:'circle',color:'yellow'}]),tiles:{shapes:ALL_SHAPES},
+   why:[`Canvas shows a <span>round</span> shape`,`Round with no corners = <span>circle</span>`,`Full command: <code>draw circle "yellow"</code>`]},
+
+  {type:'fill',title:"What shape does this draw?",task:"Complete the command to draw this <b>purple</b> shape.",
+   commands:[{shape:null,color:'purple'}],answers:['square'],
+   canvasShapes:mkS([{shape:'square',color:'purple'}]),tiles:{shapes:ALL_SHAPES},
+   why:[`Canvas shows a shape with <span>4 equal sides</span>`,`4 equal sides = <span>square</span>`,`Full command: <code>draw square "purple"</code>`]},
+
+  {type:'fill',title:"Complete the command.",task:"What single command draws the shape on the canvas?",
+   commands:[{shape:null,color:null}],answers:['triangle','pink'],
+   canvasShapes:mkS([{shape:'triangle',color:'pink'}]),
+   tiles:{shapes:ALL_SHAPES,colors:['red','blue','green','yellow','pink','purple']},
+   why:[`3 sides → <span>triangle</span>`,`Color is <span>"pink"</span>`,`Full command: <code>draw triangle "pink"</code>`]},
+
+  {type:'fill',title:"Fill in both colors.",task:"Draw an <b>orange</b> circle, then a <b>purple</b> square.",
+   commands:[{shape:'circle',color:null},{shape:'square',color:null}],answers:['orange','purple'],
+   canvasShapes:[{shape:'circle',color:'orange',x:98,y:95},{shape:'square',color:'purple',x:242,y:95}],
+   tiles:{colors:ALL_COLORS},
+   why:[`Command 1: circle → <span>"orange"</span>`,`Command 2: square → <span>"purple"</span>`]},
+
+  {type:'fill',title:"Fill in both colors.",task:"Draw a <b>blue</b> triangle, then a <b>green</b> rectangle.",
+   commands:[{shape:'triangle',color:null},{shape:'rectangle',color:null}],answers:['blue','green'],
+   canvasShapes:[{shape:'triangle',color:'blue',x:98,y:95},{shape:'rectangle',color:'green',x:242,y:95}],
+   tiles:{colors:ALL_COLORS},
+   why:[`Command 1: triangle → <span>"blue"</span>`,`Command 2: rectangle → <span>"green"</span>`]},
+
+  {type:'fill',title:"One blank to fill.",task:"The first command is done. What color is the square?",
+   commands:[{shape:'circle',color:'orange'},{shape:'square',color:null}],answers:['green'],
+   canvasShapes:[{shape:'circle',color:'orange',x:98,y:95},{shape:'square',color:'green',x:242,y:95}],
+   tiles:{colors:ALL_COLORS},
+   why:[`<code>draw circle "orange"</code> is already complete`,`Look at the square — it's <span>green</span>`,`Second command: <code>draw square "green"</code>`]},
+
+  // arrange: 2 blocks, each has a color blank — must FILL colors AND ORDER correctly
+  {type:'arrange',title:"Pick the colors, then get the order right!",
+   task:"A red circle should come first, then a blue square.",
+   commandBlocks:[{shape:'circle',color:null},{shape:'square',color:null}],
+   answerSlots:[{shape:'circle',color:'red'},{shape:'square',color:'blue'}],
+   canvasShapes:[{shape:'circle',color:'red',x:98,y:95},{shape:'square',color:'blue',x:242,y:95}],
+   tiles:{colors:ALL_COLORS},
+   why:[`First fill the right <span>color</span> on each command`,`Then arrange them: circle <span>first</span>, square <span>second</span>`,`Step 1: <code>draw circle "red"</code>`,`Step 2: <code>draw square "blue"</code>`]},
+
+  {type:'arrange',title:"Pick the colors, then get the order right!",
+   task:"A green triangle should come before the yellow circle.",
+   commandBlocks:[{shape:'triangle',color:null},{shape:'circle',color:null}],
+   answerSlots:[{shape:'triangle',color:'green'},{shape:'circle',color:'yellow'}],
+   canvasShapes:[{shape:'triangle',color:'green',x:98,y:95},{shape:'circle',color:'yellow',x:242,y:95}],
+   tiles:{colors:ALL_COLORS},
+   why:[`Fill colors: triangle → <span>"green"</span>, circle → <span>"yellow"</span>`,`Triangle comes <span>first</span>`,`Step 1: <code>draw triangle "green"</code>`,`Step 2: <code>draw circle "yellow"</code>`]},
+];
+
+const HARD_POOL=[
+  {type:'fill',title:"What shapes are these?",task:"The program draws a <b>red</b> shape, then a <b>blue</b> shape.",
+   commands:[{shape:null,color:'red'},{shape:null,color:'blue'}],answers:['rectangle','triangle'],
+   canvasShapes:[{shape:'rectangle',color:'red',x:98,y:95},{shape:'triangle',color:'blue',x:242,y:95}],
+   tiles:{shapes:ALL_SHAPES},
+   why:[`Red shape: wider than tall → <span>rectangle</span>`,`Blue shape: 3 sides → <span>triangle</span>`]},
+
+  {type:'fill',title:"Complete both commands.",task:"Two commands, each with two blanks — match the canvas.",
+   commands:[{shape:null,color:null},{shape:null,color:null}],answers:['square','orange','circle','purple'],
+   canvasShapes:[{shape:'square',color:'orange',x:98,y:95},{shape:'circle',color:'purple',x:242,y:95}],
+   tiles:{shapes:ALL_SHAPES,colors:['red','blue','green','orange','purple','pink']},
+   why:[`Left: 4 equal sides → <span>square</span>, color → <span>"orange"</span>`,`Right: round → <span>circle</span>, color → <span>"purple"</span>`]},
+
+  {type:'fill',title:"Complete both commands.",task:"Two commands, each with two blanks — match the canvas.",
+   commands:[{shape:null,color:null},{shape:null,color:null}],answers:['triangle','teal','rectangle','pink'],
+   canvasShapes:[{shape:'triangle',color:'teal',x:98,y:95},{shape:'rectangle',color:'pink',x:242,y:95}],
+   tiles:{shapes:ALL_SHAPES,colors:['red','blue','teal','yellow','pink','purple']},
+   why:[`Left: 3 sides → <span>triangle</span>, color → <span>"teal"</span>`,`Right: wider than tall → <span>rectangle</span>, color → <span>"pink"</span>`]},
+
+  // arrange: 2 blocks, color blanks, TRICKY ORDER (circle must come before rectangle)
+  {type:'arrange',title:"Colors AND order — both must be right!",
+   task:"The circle comes first, then the rectangle. Choose the correct colors.",
+   commandBlocks:[{shape:'rectangle',color:null},{shape:'circle',color:null}],
+   answerSlots:[{shape:'circle',color:'blue'},{shape:'rectangle',color:'red'}],
+   canvasShapes:[{shape:'circle',color:'blue',x:98,y:95},{shape:'rectangle',color:'red',x:242,y:95}],
+   tiles:{colors:ALL_COLORS},
+   why:[`The <span>circle</span> goes in slot 1, <span>rectangle</span> in slot 2`,`Circle color: <span>"blue"</span>`,`Rectangle color: <span>"red"</span>`]},
+
+  // arrange: 2 blocks, SHAPE blanks (must pick shapes + order)
+  {type:'arrange',title:"Pick the shapes, then get the order right!",
+   task:"A red shape comes first, then a blue shape.",
+   commandBlocks:[{shape:null,color:'blue'},{shape:null,color:'red'}],
+   answerSlots:[{shape:'circle',color:'red'},{shape:'triangle',color:'blue'}],
+   canvasShapes:[{shape:'circle',color:'red',x:98,y:95},{shape:'triangle',color:'blue',x:242,y:95}],
+   tiles:{shapes:ALL_SHAPES},
+   why:[`Red shape first: round → <span>circle</span>`,`Blue shape second: 3 sides → <span>triangle</span>`,`Step 1: <code>draw circle "red"</code>`,`Step 2: <code>draw triangle "blue"</code>`]},
+
+  // arrange: 3 blocks, color blanks, complex order
+  {type:'arrange',title:"Three commands — fill colors and sort them!",
+   task:"Match the canvas left to right: triangle → square → circle.",
+   commandBlocks:[{shape:'square',color:null},{shape:'circle',color:null},{shape:'triangle',color:null}],
+   answerSlots:[{shape:'triangle',color:'green'},{shape:'square',color:'pink'},{shape:'circle',color:'teal'}],
+   canvasShapes:(()=>{const p=pos(3);return[{shape:'triangle',color:'green',x:p[0][0],y:p[0][1]},{shape:'square',color:'pink',x:p[1][0],y:p[1][1]},{shape:'circle',color:'teal',x:p[2][0],y:p[2][1]}]})(),
+   tiles:{colors:['red','blue','green','yellow','pink','teal']},
+   why:[`Step 1: <code>draw triangle "green"</code>`,`Step 2: <code>draw square "pink"</code>`,`Step 3: <code>draw circle "teal"</code>`]},
+
+  // arrange: 3 blocks, color blanks, reversed order
+  {type:'arrange',title:"Three commands — fill colors and sort them!",
+   task:"Match the canvas: circle → rectangle → triangle.",
+   commandBlocks:[{shape:'triangle',color:null},{shape:'rectangle',color:null},{shape:'circle',color:null}],
+   answerSlots:[{shape:'circle',color:'yellow'},{shape:'rectangle',color:'orange'},{shape:'triangle',color:'purple'}],
+   canvasShapes:(()=>{const p=pos(3);return[{shape:'circle',color:'yellow',x:p[0][0],y:p[0][1]},{shape:'rectangle',color:'orange',x:p[1][0],y:p[1][1]},{shape:'triangle',color:'purple',x:p[2][0],y:p[2][1]}]})(),
+   tiles:{colors:ALL_COLORS},
+   why:[`Step 1: <code>draw circle "yellow"</code>`,`Step 2: <code>draw rectangle "orange"</code>`,`Step 3: <code>draw triangle "purple"</code>`]},
+
+  // arrange: 2 blocks, BOTH blanks per block (shape + color) — hardest
+  {type:'arrange',title:"Fill shape AND color, then order them!",
+   task:"Match the canvas — every block has two blanks.",
+   commandBlocks:[{shape:null,color:null},{shape:null,color:null}],
+   answerSlots:[{shape:'circle',color:'teal'},{shape:'square',color:'pink'}],
+   canvasShapes:[{shape:'circle',color:'teal',x:98,y:95},{shape:'square',color:'pink',x:242,y:95}],
+   tiles:{shapes:ALL_SHAPES,colors:['red','blue','green','yellow','pink','teal']},
+   why:[`Slot 1: round + teal → <code>draw circle "teal"</code>`,`Slot 2: 4 sides + pink → <code>draw square "pink"</code>`]},
+
+  // arrange: 2 blocks, BOTH blanks — different colors
+  {type:'arrange',title:"Fill shape AND color, then order them!",
+   task:"Match the canvas — every block has two blanks.",
+   commandBlocks:[{shape:null,color:null},{shape:null,color:null}],
+   answerSlots:[{shape:'rectangle',color:'blue'},{shape:'triangle',color:'orange'}],
+   canvasShapes:[{shape:'rectangle',color:'blue',x:98,y:95},{shape:'triangle',color:'orange',x:242,y:95}],
+   tiles:{shapes:ALL_SHAPES,colors:ALL_COLORS},
+   why:[`Slot 1: wide + blue → <code>draw rectangle "blue"</code>`,`Slot 2: 3 sides + orange → <code>draw triangle "orange"</code>`]},
+
+  // arrange: 3 blocks, ALL blanks — maximum challenge
+  {type:'arrange',title:"Maximum challenge: build the entire program!",
+   task:"Every block has both blanks. Fill them all, then order correctly.",
+   commandBlocks:[{shape:null,color:null},{shape:null,color:null},{shape:null,color:null}],
+   answerSlots:[{shape:'rectangle',color:'blue'},{shape:'circle',color:'red'},{shape:'triangle',color:'green'}],
+   canvasShapes:(()=>{const p=pos(3);return[{shape:'rectangle',color:'blue',x:p[0][0],y:p[0][1]},{shape:'circle',color:'red',x:p[1][0],y:p[1][1]},{shape:'triangle',color:'green',x:p[2][0],y:p[2][1]}]})(),
+   tiles:{shapes:ALL_SHAPES,colors:ALL_COLORS},
+   why:[`Step 1: <code>draw rectangle "blue"</code>`,`Step 2: <code>draw circle "red"</code>`,`Step 3: <code>draw triangle "green"</code>`,`Match the canvas <span>left to right</span>`]},
+];
+
+// ── State ──────────────────────────────────────────────────────────────────────
+let currentLevel='easy',questions=[],qIdx=0,score=0;
+let isLocked=false,isContinue=false;
+
+// fill type
+let blanks=[];
+
+// arrange type
+let blockValues={};  // {[bi]:{shape,color}}
+let slots=[];
+let usedBlocks=new Set();
+
+// shared dropdown
+let openDDKey=null;
+
+const shuffle=a=>[...a].sort(()=>Math.random()-.5);
+
+// ── Dropdown system ────────────────────────────────────────────────────────────
+document.addEventListener('click',()=>closeAllDDs());
+
+function closeAllDDs(){
+  document.querySelectorAll('.dd-panel.open').forEach(el=>el.classList.remove('open'));
+  document.querySelectorAll('.cmd-sel-btn.open').forEach(el=>el.classList.remove('open'));
+  openDDKey=null;
+}
+
+function toggleDD(e,key){
+  e.stopPropagation();
+  if(isLocked)return;
+  const panel=document.getElementById('ddp_'+key);
+  const btn  =document.getElementById('ddb_'+key);
+  if(!panel||!btn)return;
+  if(openDDKey===key){panel.classList.remove('open');btn.classList.remove('open');openDDKey=null;}
+  else{closeAllDDs();panel.classList.add('open');btn.classList.add('open');openDDKey=key;}
+}
+
+// ── Shared button renderer ─────────────────────────────────────────────────────
+function renderSelBtn(btnEl,field,value){
+  let cls='cmd-sel-btn',inner='';
+  if(value){
+    if(field==='color'){
+      inner=`<span class="sel-swatch" style="background:${COLORS_MAP[value]}"></span><span>"${value}"</span><span class="dd-arr">▾</span>`;
+      cls+=' color-set';
+    }else{
+      inner=`<span class="sel-shape-ico">${SHAPE_ICONS[value]}</span><span>${value}</span><span class="dd-arr">▾</span>`;
+      cls+=' shape-set';
+    }
+  }else{
+    inner=field==='color'?`<span class="sel-ph">"color"</span><span class="dd-arr">▾</span>`:`<span class="sel-ph">shape</span><span class="dd-arr">▾</span>`;
+  }
+  btnEl.className=cls;btnEl.innerHTML=inner;
+}
+
+function markDDOption(panelEl,value){
+  if(!panelEl)return;
+  panelEl.querySelectorAll('.dd-opt').forEach(o=>o.classList.toggle('sel',o.dataset.val===value));
+}
+
+// ── Dropdown option HTML builders ─────────────────────────────────────────────
+function colorOptsHTML(key,tiles){
+  return (tiles||ALL_COLORS).map(c=>
+    `<div class="dd-opt" data-val="${c}" onclick="onColorOpt(event,'${key}','${c}')">
+       <span class="opt-swatch" style="background:${COLORS_MAP[c]}"></span>${c}
+     </div>`).join('');
+}
+function shapeOptsHTML(key,tiles){
+  return (tiles||ALL_SHAPES).map(s=>
+    `<div class="dd-opt" data-val="${s}" onclick="onShapeOpt(event,'${key}','${s}')">
+       <span class="opt-ico">${SHAPE_ICONS[s]}</span>${s}
+     </div>`).join('');
+}
+
+// ── Fill type ─────────────────────────────────────────────────────────────────
+function onColorOpt(e,key,value){
+  e.stopPropagation();closeAllDDs();
+  if(key.startsWith('f')){selectFillDD(parseInt(key.slice(1)),value);}
+  else{const[bi,f]=parseArrKey(key);selectArrangeDD(bi,f,value);}
+}
+function onShapeOpt(e,key,value){
+  e.stopPropagation();closeAllDDs();
+  if(key.startsWith('f')){selectFillDD(parseInt(key.slice(1)),value);}
+  else{const[bi,f]=parseArrKey(key);selectArrangeDD(bi,f,value);}
+}
+function parseArrKey(key){// key = "a{bi}s" or "a{bi}c"
+  const f=key.slice(-1)==='s'?'shape':'color';
+  const bi=parseInt(key.slice(1,-1));
+  return[bi,f];
+}
+
+function selectFillDD(bi,value){
+  blanks[bi].value=value;
+  const btn=document.getElementById('ddb_f'+bi);
+  if(btn)renderSelBtn(btn,blanks[bi].type,value);
+  markDDOption(document.getElementById('ddp_f'+bi),value);
+  updateCheckBtn();
+}
+
+// ── Arrange type ──────────────────────────────────────────────────────────────
+function selectArrangeDD(bi,field,value){
+  blockValues[bi][field]=value;
+  const fkey='a'+bi+(field==='shape'?'s':'c');
+  const btn=document.getElementById('ddb_'+fkey);
+  if(btn)renderSelBtn(btn,field,value);
+  markDDOption(document.getElementById('ddp_'+fkey),value);
+  refreshTileReadyState(bi);
+  updateCheckBtn();
+}
+
+function isBlockReady(bi){
+  const q=questions[qIdx];
+  const cmd=q.commandBlocks[bi],bv=blockValues[bi];
+  if(cmd.shape===null&&!bv.shape)return false;
+  if(cmd.color===null&&!bv.color)return false;
+  return true;
+}
+
+function refreshTileReadyState(bi){
+  const tile=document.getElementById('btile'+bi);
+  if(!tile||usedBlocks.has(bi))return;
+  tile.classList.toggle('ready',isBlockReady(bi));
+}
+
+function placeBlock(bi){
+  if(isLocked||usedBlocks.has(bi))return;
+  if(!isBlockReady(bi)){
+    // flash unfilled blanks
+    ['s','c'].forEach(f=>{
+      const btn=document.getElementById('ddb_a'+bi+f);
+      const cmd=questions[qIdx].commandBlocks[bi];
+      if(!btn)return;
+      const needsFill=(f==='s'&&cmd.shape===null&&!blockValues[bi].shape)||(f==='c'&&cmd.color===null&&!blockValues[bi].color);
+      if(needsFill){btn.style.borderColor='var(--red)';setTimeout(()=>btn.style.borderColor='',600);}
+    });
+    return;
+  }
+  const next=slots.findIndex(s=>s===null);if(next===-1)return;
+  slots[next]=bi;usedBlocks.add(bi);
+  const tile=document.getElementById('btile'+bi);
+  if(tile)tile.classList.add('placed');
+  refreshSlotUI(next);
+  updateCheckBtn();
+}
+
+function removeFromSlot(si){
+  if(isLocked||slots[si]===null)return;
+  const bi=slots[si];slots[si]=null;usedBlocks.delete(bi);
+  const tile=document.getElementById('btile'+bi);
+  if(tile){tile.classList.remove('placed');refreshTileReadyState(bi);}
+  const slot=document.getElementById('slot'+si);
+  if(slot){slot.innerHTML='<span class="slot-placeholder">tap a ready command below…</span>';slot.className='slot-drop';}
+  updateCheckBtn();
+}
+
+function refreshSlotUI(si){
+  const q=questions[qIdx];
+  const bi=slots[si];
+  const slot=document.getElementById('slot'+si);if(!slot)return;
+  if(bi===null){
+    slot.innerHTML='<span class="slot-placeholder">tap a ready command below…</span>';
+    slot.className='slot-drop';return;
+  }
+  const bv=blockValues[bi];
+  const cmd=q.commandBlocks[bi];
+  const shapeVal=bv.shape||cmd.shape;
+  const colorVal=bv.color||cmd.color;
+  slot.innerHTML=`<span class="cmd-kw">draw</span>
+    <span class="cmd-shape-val" style="margin:0 5px">${shapeVal}</span>
+    <span class="cmd-palette">🎨</span>
+    <span class="cmd-color-str" style="margin-left:5px">"${colorVal}"</span>
+    <span class="slot-remove">✕ remove</span>`;
+  slot.className='slot-drop has-block';
+}
+
+// ── Init quiz ─────────────────────────────────────────────────────────────────
+function setLevel(lvl){
+  currentLevel=lvl;
+  document.getElementById('btnEasy').className='level-btn'+(lvl==='easy'?' active-easy':'');
+  document.getElementById('btnHard').className='level-btn'+(lvl==='hard'?' active-hard':'');
+  initQuiz();
+}
+function switchLevel(){setLevel(currentLevel==='easy'?'hard':'easy');}
+
+function initQuiz(){
+  const pool=currentLevel==='easy'?EASY_POOL:HARD_POOL;
+  questions=shuffle(pool).slice(0,10);
+  qIdx=0;score=0;
+  document.getElementById('resultsWrap').style.display='none';
+  document.getElementById('resultsWrap').classList.remove('show');
+  document.getElementById('qCard').style.display='';
+  document.getElementById('checkBtn').style.display='';
+  document.getElementById('feedbackBar').classList.remove('show');
+  document.getElementById('whyPanel').classList.remove('show');
+  document.getElementById('whyBtn').classList.remove('show','active');
+  document.getElementById('scoreDisp').textContent='0';
+  renderQ();
+}
+
+function renderQ(){
+  const q=questions[qIdx];
+  isLocked=false;isContinue=false;openDDKey=null;
+  document.getElementById('qNum').textContent=qIdx+1;
+  document.getElementById('pFill').style.width=(qIdx/10*100)+'%';
+  document.getElementById('feedbackBar').classList.remove('show');
+  document.getElementById('whyPanel').classList.remove('show');
+  document.getElementById('whyBtn').classList.remove('show','active');
+  const cb=document.getElementById('checkBtn');cb.className='check-btn';cb.textContent='Check';
+
+  if(q.type==='arrange'){
+    slots=new Array(q.commandBlocks.length).fill(null);
+    usedBlocks=new Set();
+    blockValues={};
+    q.commandBlocks.forEach((cmd,bi)=>{
+      blockValues[bi]={shape:cmd.shape,color:cmd.color};
+    });
+  }else{
+    blanks=[];let bi=0;
+    q.commands.forEach((cmd,ci)=>{
+      if(cmd.shape===null)blanks.push({type:'shape',value:null,cmdIdx:ci,bi:bi++});
+      if(cmd.color===null)blanks.push({type:'color',value:null,cmdIdx:ci,bi:bi++});
+    });
+  }
+
+  document.getElementById('qCard').innerHTML=buildCard(q);
+  const cv=document.getElementById('codeCanvas');
+  if(cv)renderCanvas(cv,q.canvasShapes);
+  updateCheckBtn();
+}
+
+// ── Card HTML ─────────────────────────────────────────────────────────────────
+function buildCard(q){
+  let h=`<div class="q-title">${q.title}</div>`;
+  h+=`<div class="q-task">${q.task}</div>`;
+  h+=`<div class="canvas-wrap"><canvas id="codeCanvas" class="code-canvas" width="340" height="190"></canvas></div>`;
+  return h+(q.type==='arrange'?buildArrangeHTML(q):buildFillHTML(q));
+}
+
+function selWidget(key,field,tiles){
+  const opts=field==='color'?colorOptsHTML(key,tiles):shapeOptsHTML(key,tiles);
+  const ph=field==='color'?'"color"':'shape';
+  return `<div class="cmd-sel" onclick="event.stopPropagation()">
+    <button class="cmd-sel-btn" id="ddb_${key}" onclick="toggleDD(event,'${key}')">
+      <span class="sel-ph">${ph}</span><span class="dd-arr">▾</span>
+    </button>
+    <div class="dd-panel" id="ddp_${key}">${opts}</div>
+  </div>`;
+}
+
+// Fill HTML: command blocks with inline dropdown blanks
+function buildFillHTML(q){
+  let h='<div class="commands-area">',bi=0;
+  q.commands.forEach(cmd=>{
+    h+='<div class="cmd-block"><span class="cmd-kw">draw</span> ';
+    if(cmd.shape===null){h+=selWidget('f'+(bi++),'shape',q.tiles.shapes);}
+    else h+=`<span class="cmd-shape-val">${cmd.shape}</span>`;
+    h+=' <span class="cmd-palette">🎨</span> ';
+    if(cmd.color===null){h+=selWidget('f'+(bi++),'color',q.tiles.colors);}
+    else h+=`<span class="cmd-color-str">"${cmd.color}"</span>`;
+    h+='</div>';
+  });
+  return h+'</div>';
+}
+
+// Arrange HTML: numbered slots + command block tiles with inline dropdown blanks
+function buildArrangeHTML(q){
+  let h=`<div class="arrange-hint">① Fill the dropdowns &nbsp;<span>②</span> Tap block to place it in order</div>`;
+  h+='<div class="arrange-slots" id="slotsArea">';
+  q.commandBlocks.forEach((_,i)=>{
+    h+=`<div class="arrange-slot"><div class="slot-num">${i+1}</div>
+      <div class="slot-drop" id="slot${i}" onclick="removeFromSlot(${i})">
+        <span class="slot-placeholder">tap a ready command below…</span>
+      </div></div>`;
+  });
+  h+='</div>';
+  h+='<div class="arr-section-label">Available commands</div>';
+  h+='<div class="block-tiles">';
+  // Shuffle display order of blocks
+  shuffle([...q.commandBlocks.keys()]).forEach(bi=>{
+    const cmd=q.commandBlocks[bi];
+    h+=`<div class="block-tile" id="btile${bi}" onclick="placeBlock(${bi})">`;
+    h+='<span class="cmd-kw">draw</span> ';
+    if(cmd.shape===null)h+=selWidget('a'+bi+'s','shape',q.tiles.shapes);
+    else h+=`<span class="cmd-shape-val" style="margin:0 3px">${cmd.shape}</span>`;
+    h+=' <span class="cmd-palette">🎨</span> ';
+    if(cmd.color===null)h+=selWidget('a'+bi+'c','color',q.tiles.colors);
+    else h+=`<span class="cmd-color-str" style="margin-left:3px">"${cmd.color}"</span>`;
+    h+='<span class="block-tile-tap">→ place</span>';
+    h+='</div>';
+  });
+  h+='</div>';
+  return h;
+}
+
+// ── Check ready ───────────────────────────────────────────────────────────────
+function updateCheckBtn(){
+  if(isContinue)return;
+  const q=questions[qIdx];
+  let ready=false;
+  if(q.type==='arrange'){
+    // All slots filled AND all placed-block blanks filled
+    ready=slots.every(bi=>{
+      if(bi===null)return false;
+      const cmd=q.commandBlocks[bi],bv=blockValues[bi];
+      return(cmd.shape!==null||bv.shape)&&(cmd.color!==null||bv.color);
+    });
+  }else{
+    ready=blanks.every(b=>b.value!==null);
+  }
+  document.getElementById('checkBtn').className='check-btn'+(ready?' ready':'');
+}
+
+// ── Check ─────────────────────────────────────────────────────────────────────
+function handleBtn(){isContinue?advanceQ():checkAnswer();}
+
+function checkAnswer(){
+  const q=questions[qIdx];isLocked=true;
+  let correct=false;
+
+  if(q.type==='arrange'){
+    correct=q.answerSlots.every((target,si)=>{
+      const bi=slots[si];if(bi===null)return false;
+      const bv=blockValues[bi];
+      return bv.shape===target.shape&&bv.color===target.color;
+    });
+    // Mark slots
+    q.answerSlots.forEach((target,si)=>{
+      const slot=document.getElementById('slot'+si);if(!slot)return;
+      const bi=slots[si];if(bi===null)return;
+      const bv=blockValues[bi];
+      const ok=bv.shape===target.shape&&bv.color===target.color;
+      slot.classList.add(ok?'correct-f':'wrong-f');
+    });
+    document.querySelectorAll('.block-tile').forEach(el=>el.classList.add('locked'));
+  }else{
+    correct=blanks.every((b,i)=>b.value===q.answers[i]);
+    blanks.forEach((b,i)=>{
+      const btn=document.getElementById('ddb_f'+i);if(!btn)return;
+      btn.classList.remove('shape-set','color-set','open');
+      btn.classList.add(b.value===q.answers[i]?'correct-f':'wrong-f');
+    });
+  }
+
+  if(correct)score++;
+  document.getElementById('scoreDisp').textContent=score;
+
+  const fb=document.getElementById('feedbackBar');
+  const fi=document.getElementById('fbIcon');
+  const ft=document.getElementById('fbTitle');
+  const fh=document.getElementById('fbHint');
+  if(correct){
+    fb.className='feedback-bar ok show';fi.textContent='✅';
+    ft.className='fb-title ok';ft.textContent='Correct!';fh.textContent='Your program is right!';
+  }else{
+    fb.className='feedback-bar err show';fi.textContent='❌';
+    ft.className='fb-title err';ft.textContent='Not quite!';
+    if(q.type==='arrange'){
+      const hint=q.answerSlots.map(t=>`draw ${t.shape} "${t.color}"`).join(' → ');
+      fh.innerHTML='Correct order: <code>'+hint.replace(/ → /g,'</code> → <code>')+'</code>';
+    }else{
+      const res=resolvedCmds(q);
+      fh.innerHTML='Should be: '+res.map(c=>`<code>draw ${c.shape} "${c.color}"</code>`).join(' then ');
+    }
+  }
+
+  document.getElementById('whyBtn').classList.add('show');
+  isContinue=true;
+  const cb=document.getElementById('checkBtn');
+  cb.className='check-btn continue';
+  cb.textContent=qIdx>=9?'See Results →':'Continue →';
+}
+
+function resolvedCmds(q){
+  let ai=0;
+  return q.commands.map(cmd=>({
+    shape:cmd.shape!==null?cmd.shape:q.answers[ai++],
+    color:cmd.color!==null?cmd.color:q.answers[ai++]
+  }));
+}
+
+function toggleWhy(){
+  const p=document.getElementById('whyPanel'),b=document.getElementById('whyBtn');
+  if(!p.classList.contains('show')){
+    document.getElementById('whySteps').innerHTML=questions[qIdx].why.map(s=>`<li>${s}</li>`).join('');
+    p.classList.add('show');b.classList.add('active');
+  }else{p.classList.remove('show');b.classList.remove('active');}
+}
+
+function advanceQ(){
+  if(qIdx>=9){showResults();return;}
+  qIdx++;
+  document.getElementById('whyPanel').classList.remove('show');
+  document.getElementById('whyBtn').classList.remove('show','active');
+  renderQ();
+}
+
+function showResults(){
+  document.getElementById('qCard').style.display='none';
+  document.getElementById('feedbackBar').classList.remove('show');
+  document.getElementById('whyPanel').classList.remove('show');
+  document.getElementById('whyBtn').classList.remove('show','active');
+  document.getElementById('checkBtn').style.display='none';
+  document.getElementById('pFill').style.width='100%';
+  const rw=document.getElementById('resultsWrap');rw.style.display='block';rw.classList.add('show');
+  document.getElementById('resScore').textContent=score+'/10';
+  document.getElementById('resLevel').textContent=currentLevel==='easy'?'Easy Level':'Hard Level';
+  const msgs=[[9,"Amazing! You're a coding star!"],[7,"Great work! You understand programs well."],[5,"Good effort! Keep practicing."],[0,"Keep trying — every coder starts somewhere!"]];
+  const m=msgs.find(([min])=>score>=min);
+  document.getElementById('resMsg').textContent=m[1];
+  document.getElementById('resEmoji').textContent=score>=9?'🏆':score>=7?'🎉':score>=5?'👍':'💪';
+  document.getElementById('btnSwitch').textContent=currentLevel==='easy'?'Try Hard Level →':'Try Easy Level →';
+}
+
+initQuiz();
+</script>
+</body>
+</html>

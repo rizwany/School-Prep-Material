@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Code Canvas – Programming Quiz | LearnPad</title>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#0e0f14;--card:#1d1f2b;--border:#2a2c3a;
+      --text:#f0f0f8;--muted:rgba(240,240,248,.42);
+      --green:#58cc02;--green-dk:#46a301;--red:#ff4b4b;
+      --blue:#4361ee;--purple:#7c3aed;--teal:#4bc5a5;
+      --opt-bg:#1e2030;--opt-brd:#313446;--radius:16px;
+    }
+    body{font-family:'Nunito',system-ui,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;display:flex;flex-direction:column}
+    header{background:#fff;border-bottom:2px solid #e2e6f0;padding:0 24px;position:sticky;top:0;z-index:100;flex-shrink:0}
+    .header-inner{max-width:960px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:56px}
+    .logo-link{text-decoration:none;display:flex;align-items:center}
+    .logo-img{height:34px;width:auto}
+    .logo-txt{font-weight:900;font-size:1.15rem;color:#4361ee}
+    nav a{font-weight:700;font-size:0.85rem;color:#5a6076;text-decoration:none;padding:6px 12px;border-radius:8px;transition:color .15s,background .15s}
+    nav a:hover{color:#4361ee;background:#eef1fd}
+    main{flex:1;display:flex;flex-direction:column;align-items:center}
+    .quiz-shell{width:100%;max-width:520px;padding:16px 20px 80px;display:flex;flex-direction:column;flex:1}
+
+    .level-row{display:flex;justify-content:center;gap:8px;margin-bottom:18px}
+    .level-btn{font-family:inherit;font-size:0.8rem;font-weight:800;padding:6px 18px;border-radius:999px;cursor:pointer;border:2px solid var(--opt-brd);background:var(--opt-bg);color:var(--muted);transition:all .15s}
+    .level-btn.active-easy{border-color:var(--green);background:#172110;color:#88e04a}
+    .level-btn.active-hard{border-color:var(--purple);background:#1e1535;color:#c084fc}
+
+    .progress-wrap{margin-bottom:16px}
+    .progress-track{height:8px;background:#252733;border-radius:4px;overflow:hidden}
+    .progress-fill{height:100%;background:var(--green);border-radius:4px;width:0%;transition:width .4s ease}
+    .progress-meta{display:flex;justify-content:space-between;margin-top:6px;font-size:0.72rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+
+    .q-card{background:var(--card);border:1.5px solid var(--border);border-radius:var(--radius);padding:18px 16px 16px;margin-bottom:14px}
+    .q-title{font-size:0.78rem;font-weight:700;color:var(--muted);margin-bottom:5px;text-transform:uppercase;letter-spacing:.05em}
+    .q-task{font-size:1rem;font-weight:800;line-height:1.55;margin-bottom:14px;color:var(--text)}
+    .q-task b{color:#a0b4ff}
+    .hl-var{color:#c084fc;font-weight:900;font-family:'Courier New',monospace;background:rgba(192,132,252,.12);padding:1px 6px;border-radius:5px;font-size:0.95em}
+
+    /* ── Canvas + variable panel ──────────────── */
+    .canvas-area{display:flex;margin-bottom:14px;border-radius:12px;overflow:hidden;border:2px solid #d4d8e6;background:#f8fafc}
+    .code-canvas{display:block;background:#f8fafc;flex:1}
+    .var-panel{width:58px;background:#f0f2f8;border-left:1px solid #d4d8e6;display:flex;flex-direction:column;align-items:center;padding:8px 4px;gap:8px;min-height:0}
+    .vp-item{display:flex;flex-direction:column;align-items:center;gap:3px;width:100%}
+    .vp-label{font-size:0.62rem;font-weight:800;color:#5a6080;text-align:center;font-family:'Courier New',monospace;width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+    .vp-color{width:32px;height:26px;border-radius:6px;border:1.5px solid rgba(0,0,0,.2);display:block}
+    .vp-num{font-size:0.78rem;font-weight:900;color:#333;font-family:'Courier New',monospace}
+    .vp-sep{width:36px;height:1px;background:#ccd}
+    .vp-empty{font-size:0.65rem;font-weight:700;color:#aab;text-align:center;padding-top:4px}
+
+    /* ── Code block ──────────────────────────── */
+    .code-block{background:#0d0e17;border:1.5px solid #1e2030;border-radius:14px;padding:8px 14px;position:relative}
+    .cmd-line{display:flex;align-items:center;gap:6px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.05);font-family:'Courier New',Courier,monospace;font-size:0.88rem;flex-wrap:nowrap}
+    .cmd-line:last-child{border-bottom:none}
+    .ln{width:18px;flex-shrink:0;text-align:right;font-size:0.72rem;color:rgba(255,255,255,.25);user-select:none}
+    .kw-draw{color:#7c83ff;font-weight:700}
+    .kw-set{color:#c084fc;font-weight:700}
+    .kw-to{color:rgba(255,255,255,.38)}
+    .shape-tok{color:#f0f0f8;font-weight:600}
+    .pal-ico{font-size:.9rem}
+    .sz-ico{font-size:.85rem}
+    .color-tok{background:rgba(255,255,255,.07);border-radius:5px;padding:1px 7px;color:#f8d97a;font-size:0.84rem}
+    .num-tok{background:rgba(100,180,255,.1);border-radius:5px;padding:1px 7px;color:#7ec8f0;font-size:0.84rem}
+    .var-ref-tok{background:rgba(192,132,252,.14);border-radius:5px;padding:1px 7px;color:#c084fc;font-weight:600;font-size:0.84rem}
+
+    /* ── Inline dropdown ─────────────────────── */
+    .cmd-sel{position:relative;display:inline-flex}
+    .cmd-sel-btn{display:inline-flex;align-items:center;gap:4px;padding:3px 7px 3px 9px;border-radius:7px;border:2px dashed rgba(75,197,165,.55);background:transparent;color:rgba(75,197,165,.75);cursor:pointer;font-family:'Courier New',Courier,monospace;font-size:0.82rem;font-weight:600;transition:all .15s;white-space:nowrap}
+    .cmd-sel-btn:hover:not([disabled]){border-color:var(--teal);background:rgba(75,197,165,.07);color:var(--teal)}
+    .dd-arr{font-size:0.55rem;opacity:.6;transition:transform .15s}
+    .cmd-sel-btn.open .dd-arr{transform:rotate(180deg)}
+    .cmd-sel-btn.val-color{border-style:solid;border-color:rgba(248,217,122,.4);background:rgba(248,217,122,.07);color:#f8d97a}
+    .cmd-sel-btn.val-num  {border-style:solid;border-color:rgba(100,180,255,.4);background:rgba(100,180,255,.07);color:#7ec8f0}
+    .cmd-sel-btn.val-var  {border-style:solid;border-color:rgba(192,132,252,.45);background:rgba(192,132,252,.1);color:#c084fc}
+    .cmd-sel-btn.correct-f{border-style:solid!important;border-color:var(--green)!important;background:rgba(88,204,2,.1)!important;color:#88e04a!important;pointer-events:none}
+    .cmd-sel-btn.wrong-f  {border-style:solid!important;border-color:var(--red)!important;background:rgba(255,75,75,.1)!important;color:#ff8080!important;pointer-events:none}
+    .sel-swatch{width:11px;height:11px;border-radius:50%;border:1px solid rgba(0,0,0,.3);flex-shrink:0;display:inline-block}
+
+    .dd-panel{position:absolute;top:calc(100% + 5px);left:0;z-index:400;background:#1a1c2e;border:1.5px solid #363958;border-radius:12px;padding:5px;min-width:130px;box-shadow:0 10px 32px rgba(0,0,0,.6);display:none}
+    .dd-panel.open{display:block;animation:ddPop .14s ease}
+    @keyframes ddPop{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}}
+    .dd-opt{display:flex;align-items:center;gap:8px;padding:7px 10px;border-radius:8px;cursor:pointer;font-family:'Nunito',sans-serif;font-size:0.83rem;font-weight:700;color:var(--text);transition:background .1s;white-space:nowrap}
+    .dd-opt:hover{background:rgba(255,255,255,.09)}
+    .dd-opt.sel{background:rgba(75,197,165,.14);color:var(--teal)}
+    .dd-opt.var-dd-opt{color:#c084fc}
+    .dd-opt.var-dd-opt.sel{background:rgba(192,132,252,.14)}
+    .dd-opt.num-dd-opt{color:#7ec8f0}
+    .dd-opt.num-dd-opt.sel{background:rgba(100,180,255,.14)}
+    .dd-opt .opt-swatch{width:16px;height:16px;border-radius:50%;border:1.5px solid rgba(0,0,0,.3);flex-shrink:0}
+    .dd-divider{height:1px;background:rgba(255,255,255,.07);margin:4px 0}
+
+    /* ── Run button ──────────────────────────── */
+    .run-row{display:flex;justify-content:flex-start;margin:10px 0 2px}
+    .run-btn{display:inline-flex;align-items:center;gap:7px;padding:9px 20px;border-radius:999px;border:2px solid var(--opt-brd);background:var(--opt-bg);color:var(--muted);font-family:inherit;font-size:0.88rem;font-weight:800;cursor:default;transition:all .15s}
+    .run-btn.ready{border-color:var(--teal);background:rgba(75,197,165,.1);color:var(--teal);cursor:pointer}
+    .run-btn.ready:hover{background:rgba(75,197,165,.18)}
+    .run-btn.ready:active{transform:scale(.97)}
+    .run-triangle{width:0;height:0;border-style:solid;border-width:5px 0 5px 9px;border-color:transparent transparent transparent currentColor;display:inline-block}
+
+    /* ── Feedback / why / buttons ─────────────── */
+    .feedback-bar{border-radius:12px;padding:12px 16px;margin-bottom:10px;display:flex;align-items:flex-start;gap:10px;opacity:0;transition:opacity .2s}
+    .feedback-bar.show{opacity:1}
+    .feedback-bar.ok{background:#172110;border:1.5px solid #2d4a1e}
+    .feedback-bar.err{background:#221212;border:1.5px solid #4a1f1f}
+    .fb-icon{font-size:1.1rem;flex-shrink:0}
+    .fb-body{flex:1}
+    .fb-title{font-size:0.88rem;font-weight:900;margin-bottom:2px}
+    .fb-title.ok{color:#88e04a}
+    .fb-title.err{color:#ff8080}
+    .fb-hint{font-size:0.78rem;font-weight:600;color:var(--muted);line-height:1.5}
+    .fb-hint code{background:rgba(255,255,255,.07);border-radius:4px;padding:1px 5px;font-size:0.82rem;color:#f8d97a}
+
+    .why-panel{background:#14182a;border:1.5px solid rgba(67,97,238,.4);border-radius:12px;padding:14px 16px;margin-bottom:10px;display:none;animation:slideIn .2s ease}
+    .why-panel.show{display:block}
+    @keyframes slideIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
+    .why-title{font-size:0.78rem;font-weight:900;color:#a0b4ff;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px}
+    .why-steps{list-style:none}
+    .why-steps li{font-size:0.82rem;font-weight:700;color:var(--muted);padding:4px 0;border-bottom:1px solid rgba(255,255,255,.05);line-height:1.5}
+    .why-steps li:last-child{border-bottom:none;color:#88e04a}
+    .why-steps li span{color:#a0b4ff}
+    .why-steps li code{background:rgba(255,255,255,.07);border-radius:4px;padding:1px 5px;font-family:'Courier New',monospace;font-size:0.85rem;color:#f8d97a}
+
+    .btn-row{display:flex;gap:10px}
+    .why-btn{flex-shrink:0;padding:16px 18px;border:2px solid var(--opt-brd);border-radius:999px;font-family:inherit;font-size:0.9rem;font-weight:800;cursor:pointer;background:var(--opt-bg);color:var(--muted);transition:all .15s;display:none}
+    .why-btn.show{display:block}
+    .why-btn:hover{border-color:#a0b4ff;color:#a0b4ff}
+    .why-btn.active{border-color:rgba(67,97,238,.7);background:rgba(67,97,238,.15);color:#a0b4ff}
+    .check-btn{flex:1;padding:16px;border:none;border-radius:999px;font-family:inherit;font-size:1rem;font-weight:900;cursor:pointer;background:#252737;color:var(--muted);transition:background .15s,color .15s}
+    .check-btn.ready{background:var(--blue);color:#fff}
+    .check-btn.ready:hover{background:#3451d1}
+    .check-btn.continue{background:var(--green);color:#fff}
+    .check-btn.continue:hover{background:var(--green-dk)}
+
+    .results-wrap{text-align:center;display:none;padding:20px 0 40px}
+    .results-wrap.show{display:block}
+    .res-card{background:var(--card);border:1.5px solid var(--border);border-radius:var(--radius);padding:34px 28px 28px}
+    .res-emoji{font-size:3rem;margin-bottom:10px}
+    .res-title{font-size:1.4rem;font-weight:900;color:var(--text);margin-bottom:4px}
+    .res-level{font-size:0.75rem;font-weight:700;color:var(--muted);margin-bottom:10px;text-transform:uppercase;letter-spacing:.08em}
+    .res-score{font-size:2.8rem;font-weight:900;color:var(--green);margin:14px 0 2px}
+    .res-label{font-size:0.82rem;font-weight:700;color:var(--muted);margin-bottom:14px}
+    .res-msg{font-size:0.88rem;font-weight:700;color:var(--muted);line-height:1.6;margin-bottom:22px}
+    .btn-retry{background:var(--blue);color:#fff;font-family:inherit;font-size:0.95rem;font-weight:800;padding:14px 36px;border:none;border-radius:999px;cursor:pointer;transition:background .15s;display:block;width:100%;margin-bottom:10px}
+    .btn-retry:hover{background:#3451d1}
+    .btn-switch{background:none;border:1.5px solid var(--opt-brd);color:var(--muted);font-family:inherit;font-size:0.85rem;font-weight:700;padding:10px 24px;border-radius:999px;cursor:pointer;transition:all .15s;width:100%;margin-bottom:10px}
+    .btn-switch:hover{border-color:#a0b4ff;color:#a0b4ff}
+    .btn-home{background:none;border:1.5px solid var(--border);color:var(--muted);font-family:inherit;font-size:0.85rem;font-weight:700;padding:10px 24px;border-radius:999px;cursor:pointer;transition:all .15s;width:100%}
+    .btn-home:hover{border-color:#555870;color:var(--text)}
+
+    footer{background:#0a0b10;color:rgba(255,255,255,.4);padding:16px 24px;text-align:center;font-size:0.75rem;font-weight:600}
+    footer a{color:rgba(255,255,255,.25);text-decoration:none}
+    footer a:hover{color:rgba(255,255,255,.7)}
+    @media(max-width:400px){.quiz-shell{padding:12px 12px 70px}}
+  </style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<header>
+  <div class="header-inner">
+    <a class="logo-link" href="../../index.html">
+      <img src="../../logo.png" alt="LearnPad" class="logo-img" onerror="this.outerHTML='<span class=logo-txt>LearnPad</span>'"/>
+    </a>
+    <nav><a href="../../for_school/index.html">School</a><a href="../../index.html">Home</a></nav>
+  </div>
+</header>
+<main>
+  <div class="quiz-shell">
+    <div class="level-row">
+      <button class="level-btn active-easy" id="btnEasy" onclick="setLevel('easy')">Easy</button>
+      <button class="level-btn" id="btnHard"  onclick="setLevel('hard')">Hard</button>
+    </div>
+    <div class="progress-wrap">
+      <div class="progress-track"><div class="progress-fill" id="pFill"></div></div>
+      <div class="progress-meta">
+        <span>Question <span id="qNum">1</span> of 10</span>
+        <span>⭐ <span id="scoreDisp">0</span></span>
+      </div>
+    </div>
+    <div class="q-card" id="qCard"></div>
+    <div class="feedback-bar" id="feedbackBar">
+      <div class="fb-icon" id="fbIcon"></div>
+      <div class="fb-body"><div class="fb-title" id="fbTitle"></div><div class="fb-hint" id="fbHint"></div></div>
+    </div>
+    <div class="why-panel" id="whyPanel">
+      <div class="why-title">How it works</div>
+      <ul class="why-steps" id="whySteps"></ul>
+    </div>
+    <div class="btn-row">
+      <button class="why-btn" id="whyBtn" onclick="toggleWhy()">Why?</button>
+      <button class="check-btn" id="checkBtn" onclick="handleBtn()">Check</button>
+    </div>
+    <div class="results-wrap" id="resultsWrap">
+      <div class="res-card">
+        <div class="res-emoji" id="resEmoji">🎉</div>
+        <div class="res-title">Quiz Complete!</div>
+        <div class="res-level" id="resLevel">Easy Level</div>
+        <div class="res-score" id="resScore">0/10</div>
+        <div class="res-label">correct answers</div>
+        <div class="res-msg" id="resMsg"></div>
+        <button class="btn-retry" onclick="initQuiz()">Play Again →</button>
+        <button class="btn-switch" id="btnSwitch" onclick="switchLevel()">Try Hard Level →</button>
+        <button class="btn-home" onclick="location.href='../../index.html'">← Back to Home</button>
+      </div>
+    </div>
+  </div>
+</main>
+<footer>
+  <a href="../../index.html">LearnPad</a> &nbsp;·&nbsp; Free Coding Practice &nbsp;·&nbsp;
+  <a href="../../for_school/index.html">School Worksheets</a>
+</footer>
+<script>
+// ── Canvas drawing ─────────────────────────────────────────────────────────────
+const COLORS_MAP = {red:'#e74c3c',blue:'#4a90d9',green:'#27ae60',yellow:'#f1c40f',
+  purple:'#9b59b6',orange:'#e67e22',pink:'#e91e8c',teal:'#1abc9c'};
+const ALL_COLORS = ['red','blue','green','yellow','purple','orange'];
+const EXT_COLORS = ['red','blue','green','yellow','purple','orange','pink','teal'];
+const SIZES = [30, 50, 75, 100, 125];
+
+function rrect(ctx,x,y,w,h,r){
+  ctx.moveTo(x+r,y);ctx.lineTo(x+w-r,y);ctx.arcTo(x+w,y,x+w,y+r,r);
+  ctx.lineTo(x+w,y+h-r);ctx.arcTo(x+w,y+h,x+w-r,y+h,r);
+  ctx.lineTo(x+r,y+h);ctx.arcTo(x,y+h,x,y+h-r,r);
+  ctx.lineTo(x,y+r);ctx.arcTo(x,y,x+r,y,r);ctx.closePath();
+}
+
+// Build the canvas path for a shape without filling/stroking
+function shapePath(ctx, shape, cx, cy, r) {
+  ctx.beginPath();
+  if (shape==='circle')    { ctx.arc(cx,cy,r,0,Math.PI*2); }
+  else if (shape==='square')    { rrect(ctx,cx-r,cy-r,r*2,r*2,Math.max(4,r*.12)); }
+  else if (shape==='triangle')  { ctx.moveTo(cx,cy-r);ctx.lineTo(cx+r*.95,cy+r*.72);ctx.lineTo(cx-r*.95,cy+r*.72);ctx.closePath(); }
+  else if (shape==='rectangle') { rrect(ctx,cx-r*1.35,cy-r*.65,r*2.7,r*1.3,Math.max(4,r*.1)); }
+  else if (shape==='hexagon')   {
+    for(let i=0;i<6;i++){const a=(Math.PI/3)*i-Math.PI/6;i===0?ctx.moveTo(cx+r*Math.cos(a),cy+r*Math.sin(a)):ctx.lineTo(cx+r*Math.cos(a),cy+r*Math.sin(a));}
+    ctx.closePath();
+  }
+  else if (shape==='star') {
+    for(let i=0;i<10;i++){const ri=i%2===0?r:r*.4;const a=(Math.PI/5)*i-Math.PI/2;i===0?ctx.moveTo(cx+ri*Math.cos(a),cy+ri*Math.sin(a)):ctx.lineTo(cx+ri*Math.cos(a),cy+ri*Math.sin(a));}
+    ctx.closePath();
+  }
+}
+
+function clearCanvas(cv) {
+  const ctx=cv.getContext('2d'),W=cv.width,H=cv.height;
+  ctx.fillStyle='#f8fafc';ctx.fillRect(0,0,W,H);
+  ctx.fillStyle='rgba(180,192,215,0.28)';
+  for(let x=22;x<W;x+=32)for(let y=22;y<H;y+=32)ctx.fillRect(x,y,1.5,1.5);
+}
+
+// Two-pass render: fill ALL shapes first, then stroke ALL shapes on top
+// This guarantees every border stays visible even when shapes overlap with the same color
+function renderCanvas(cv, shapes) {
+  clearCanvas(cv);
+  const ctx=cv.getContext('2d');
+  const cx=cv.width/2, cy=cv.height/2;
+  const sorted=[...shapes].sort((a,b)=>b.size-a.size);  // largest drawn first (behind)
+
+  // Pass 1 – fills only
+  sorted.forEach(s=>{
+    ctx.save();
+    ctx.fillStyle = COLORS_MAP[s.color] || '#ccc';
+    shapePath(ctx, s.shape, cx, cy, s.size);
+    ctx.fill();
+    ctx.restore();
+  });
+
+  // Pass 2 – strokes only (drawn on top of every fill)
+  sorted.forEach(s=>{
+    ctx.save();
+    ctx.strokeStyle = 'rgba(0,0,0,0.72)';
+    ctx.lineWidth = 3;
+    ctx.lineJoin = 'round';
+    shapePath(ctx, s.shape, cx, cy, s.size);
+    ctx.stroke();
+    ctx.restore();
+  });
+}
+
+// ── Program execution ──────────────────────────────────────────────────────────
+// cmd.t = 'set' | 'draw'
+// set:  { t:'set',  name, val }        val = color|number|null (blank → key 's'+i)
+// draw: { t:'draw', shape,
+//          colorArg,                    fixed color|varname|null (blank → key 'c'+i)
+//          sizeArg }                    fixed number|varname|null|undefined (blank→'z'+i, undefined→no size param)
+
+function execProgram(cmds, vals) {
+  const vars = {}, shapes = [];
+  cmds.forEach((cmd,i) => {
+    if (cmd.t === 'set') {
+      const v = cmd.val !== null ? cmd.val : vals['s'+i];
+      if (v !== null && v !== undefined) vars[cmd.name] = isNaN(v)?v:Number(v);
+    } else if (cmd.t === 'draw') {
+      const cArg = cmd.colorArg !== null ? cmd.colorArg : (vals['c'+i]||null);
+      const color = cArg ? (COLORS_MAP[cArg] ? cArg : (vars[cArg]||null)) : null;
+      if (!color) return;
+      let size = 50;
+      if (cmd.sizeArg !== undefined) {
+        const sArg = cmd.sizeArg !== null ? cmd.sizeArg : (vals['z'+i]||null);
+        if (sArg !== null) size = isNaN(sArg) ? (vars[sArg]!=null?Number(vars[sArg]):50) : Number(sArg);
+      }
+      shapes.push({shape:cmd.shape, color, size});
+    }
+  });
+  return shapes;
+}
+
+function getVarValues(cmds, vals) {
+  const vars = {};
+  cmds.forEach((cmd,i) => {
+    if (cmd.t !== 'set') return;
+    const v = cmd.val !== null ? cmd.val : vals['s'+i];
+    if (v !== null && v !== undefined) vars[cmd.name] = v;
+  });
+  return vars;
+}
+
+// ── Question helpers ───────────────────────────────────────────────────────────
+function dc(shape, colorArg, sizeArg) { // draw command helper
+  return {t:'draw', shape, colorArg: colorArg??null, sizeArg};
+}
+function sc(name, val) { return {t:'set', name, val: val??null}; } // set command
+function mkTarget(shapes, color, size) {
+  return shapes.map(s=>({shape:s, color, size: size||50}));
+}
+
+// ── Question pools ─────────────────────────────────────────────────────────────
+const EASY_POOL = [
+  // color-only (no size parameter)
+  {title:"Variables update all shapes at once!",
+   task:"Set the <span class='hl-var'>color</span> variable to make all shapes <b>yellow</b>.",
+   cmds:[sc('color',null), dc('circle','color'), dc('hexagon','color'), dc('triangle','color'), dc('square','color')],
+   targetShapes:mkTarget(['circle','hexagon','triangle','square'],'yellow'),
+   checkSize:false,
+   tiles:{colors:ALL_COLORS},
+   why:[`<code>set color to ...</code> stores a value in <span>color</span>`,`All 4 shapes use <span>color</span> → they all change at once`,`Set it to <span>"yellow"</span>`]},
+
+  {title:"One variable, four shapes!",
+   task:"Set <span class='hl-var'>color</span> to make all shapes <b>blue</b>.",
+   cmds:[sc('color',null), dc('circle','color'), dc('square','color'), dc('hexagon','color'), dc('star','color')],
+   targetShapes:mkTarget(['circle','square','hexagon','star'],'blue'),
+   checkSize:false,
+   tiles:{colors:ALL_COLORS},
+   why:[`Set <span>color</span> to <span>"blue"</span>`,`All four shapes reference <span>color</span> and update`]},
+
+  {title:"Choose the right color.",
+   task:"The shapes should all be <b>orange</b>. Set the variable.",
+   cmds:[sc('color',null), dc('triangle','color'), dc('hexagon','color'), dc('circle','color')],
+   targetShapes:mkTarget(['triangle','hexagon','circle'],'orange'),
+   checkSize:false,
+   tiles:{colors:ALL_COLORS},
+   why:[`Set <span>color</span> to <span>"orange"</span>`,`All three shapes will turn orange`]},
+
+  // introduce size variable
+  {title:"New power: control the size!",
+   task:"Set <span class='hl-var'>size</span> to make all shapes <b>75</b> pixels.",
+   cmds:[sc('color','red'), sc('size',null), dc('circle','color','size'), dc('hexagon','color','size'), dc('triangle','color','size')],
+   targetShapes:mkTarget(['circle','hexagon','triangle'],'red',75),
+   checkSize:true,
+   tiles:{numbers:SIZES},
+   why:[`<code>set size to ...</code> controls how big each shape is`,`All shapes use the <span>size</span> variable → set it to <span>75</span>`]},
+
+  {title:"Make all shapes big!",
+   task:"Set <span class='hl-var'>size</span> to <b>100</b> pixels.",
+   cmds:[sc('color','blue'), sc('size',null), dc('circle','color','size'), dc('square','color','size'), dc('star','color','size')],
+   targetShapes:mkTarget(['circle','square','star'],'blue',100),
+   checkSize:true,
+   tiles:{numbers:SIZES},
+   why:[`The <span>color</span> is already set to <span>"blue"</span>`,`Set <span>size</span> to <span>100</span> to make shapes bigger`]},
+
+  {title:"Make them small.",
+   task:"Set <span class='hl-var'>size</span> to <b>30</b> pixels.",
+   cmds:[sc('color','purple'), sc('size',null), dc('hexagon','color','size'), dc('triangle','color','size'), dc('circle','color','size'), dc('square','color','size')],
+   targetShapes:mkTarget(['hexagon','triangle','circle','square'],'purple',30),
+   checkSize:true,
+   tiles:{numbers:SIZES},
+   why:[`<span>size</span> controls the radius of each shape`,`Set it to <span>30</span> for small shapes`]},
+
+  // both blanks
+  {title:"Fill in both variables!",
+   task:"Set <span class='hl-var'>color</span> to <b>green</b> and <span class='hl-var'>size</span> to <b>75</b>.",
+   cmds:[sc('color',null), sc('size',null), dc('circle','color','size'), dc('hexagon','color','size'), dc('square','color','size')],
+   targetShapes:mkTarget(['circle','hexagon','square'],'green',75),
+   checkSize:true,
+   tiles:{colors:ALL_COLORS, numbers:SIZES},
+   why:[`Set <span>color</span> to <span>"green"</span>`,`Set <span>size</span> to <span>75</span>`,`Both variables control all three shapes`]},
+
+  {title:"Two variables to fill!",
+   task:"Set <span class='hl-var'>color</span> to <b>pink</b> and <span class='hl-var'>size</span> to <b>50</b>.",
+   cmds:[sc('color',null), sc('size',null), dc('triangle','color','size'), dc('star','color','size'), dc('hexagon','color','size')],
+   targetShapes:mkTarget(['triangle','star','hexagon'],'pink',50),
+   checkSize:true,
+   tiles:{colors:['red','blue','teal','yellow','pink','orange'], numbers:SIZES},
+   why:[`Set <span>color</span> to <span>"pink"</span>`,`Set <span>size</span> to <span>50</span>`]},
+
+  {title:"Five shapes, one variable each.",
+   task:"Set <span class='hl-var'>color</span> to <b>teal</b> and <span class='hl-var'>size</span> to <b>125</b>.",
+   cmds:[sc('color',null), sc('size',null), dc('circle','color','size'), dc('square','color','size'), dc('hexagon','color','size'), dc('triangle','color','size'), dc('star','color','size')],
+   targetShapes:mkTarget(['circle','square','hexagon','triangle','star'],'teal',125),
+   checkSize:true,
+   tiles:{colors:['red','blue','teal','yellow','pink','orange'], numbers:SIZES},
+   why:[`Set <span>color</span> to <span>"teal"</span>`,`Set <span>size</span> to <span>125</span>`,`Five shapes will all be large and teal!`]},
+
+  {title:"Match the target.",
+   task:"Set <span class='hl-var'>color</span> to <b>red</b> and <span class='hl-var'>size</span> to <b>100</b>.",
+   cmds:[sc('color',null), sc('size',null), dc('hexagon','color','size'), dc('circle','color','size'), dc('rectangle','color','size')],
+   targetShapes:mkTarget(['hexagon','circle','rectangle'],'red',100),
+   checkSize:true,
+   tiles:{colors:ALL_COLORS, numbers:SIZES},
+   why:[`<span>color</span> → <span>"red"</span>`,`<span>size</span> → <span>100</span>`,`Hexagon, circle, and rectangle all overlap at center`]},
+];
+
+const HARD_POOL = [
+  // var-use: draw color blanks must reference 'color'
+  {title:"Use the variable in every draw command!",
+   task:"Fill each blank with the <span class='hl-var'>color</span> variable name.",
+   cmds:[sc('color','red'), sc('size',75), dc('circle',null,'size'), dc('hexagon',null,'size'), dc('square',null,'size'), dc('triangle',null,'size')],
+   correctBlanks:{'c2':'color','c3':'color','c4':'color','c5':'color'},
+   targetShapes:mkTarget(['circle','hexagon','square','triangle'],'red',75),
+   checkSize:false,
+   tiles:{colors:ALL_COLORS, vars:['color']},
+   why:[`<span>color</span> is set to <span>"red"</span>`,`Each <code>draw</code> command needs <code>color</code> as its color argument`,`Using the variable means changing <code>set color</code> updates everything`]},
+
+  // var-use: draw size blanks must reference 'size'
+  {title:"Use the size variable everywhere!",
+   task:"Fill each blank with the <span class='hl-var'>size</span> variable name.",
+   cmds:[sc('color','blue'), sc('size',100), dc('circle','color',null), dc('hexagon','color',null), dc('square','color',null), dc('star','color',null)],
+   correctBlanks:{'z2':'size','z3':'size','z4':'size','z5':'size'},
+   targetShapes:mkTarget(['circle','hexagon','square','star'],'blue',100),
+   checkSize:true,
+   tiles:{numbers:SIZES, vars:['size']},
+   why:[`<span>size</span> is set to <span>100</span>`,`Each <code>draw</code> command needs <code>size</code> as its size argument`,`Variable → one change updates all shapes`]},
+
+  // both blanks + var-use for size
+  {title:"Set color AND use the size variable.",
+   task:"Set <span class='hl-var'>color</span> to <b>orange</b>, then fill draw blanks with the <span class='hl-var'>size</span> variable.",
+   cmds:[sc('color',null), sc('size',75), dc('circle','color',null), dc('hexagon','color',null), dc('triangle','color',null)],
+   correctBlanks:{'s0':'orange','z2':'size','z3':'size','z4':'size'},
+   targetShapes:mkTarget(['circle','hexagon','triangle'],'orange',75),
+   checkSize:true,
+   tiles:{colors:ALL_COLORS, numbers:SIZES, vars:['size']},
+   why:[`Set <span>color</span> to <span>"orange"</span>`,`Use <code>size</code> (not a number) in the draw commands`,`This way changing <code>set size</code> updates all shapes at once`]},
+
+  // set color blank + draw size blank (var-use)
+  {title:"Fill color variable AND draw size blanks.",
+   task:"Set <span class='hl-var'>color</span> to <b>purple</b>. Use <span class='hl-var'>size</span> in the draw commands.",
+   cmds:[sc('color',null), sc('size',50), dc('circle','color',null), dc('square','color',null), dc('hexagon','color',null), dc('star','color',null)],
+   correctBlanks:{'s0':'purple','z2':'size','z3':'size','z4':'size','z5':'size'},
+   targetShapes:mkTarget(['circle','square','hexagon','star'],'purple',50),
+   checkSize:true,
+   tiles:{colors:ALL_COLORS, vars:['size']},
+   why:[`<span>color</span> → <span>"purple"</span>`,`All four draws use <code>size</code> (the variable)`,`<span>size</span> is already set to <span>50</span>`]},
+
+  // 5 shapes, both set blanks, complex
+  {title:"Two variables, five shapes!",
+   task:"Set <span class='hl-var'>color</span> to <b>teal</b> and <span class='hl-var'>size</span> to <b>30</b> — making all shapes tiny and teal.",
+   cmds:[sc('color',null), sc('size',null), dc('circle','color','size'), dc('square','color','size'), dc('hexagon','color','size'), dc('triangle','color','size'), dc('star','color','size')],
+   targetShapes:mkTarget(['circle','square','hexagon','triangle','star'],'teal',30),
+   checkSize:true,
+   tiles:{colors:['red','blue','teal','yellow','pink','orange'], numbers:SIZES},
+   why:[`<span>color</span> → <span>"teal"</span>`,`<span>size</span> → <span>30</span> (smallest option!)`,`Five shapes, all tiny and teal`]},
+
+  // var-use: both color and size blanks in draws
+  {title:"Fill ALL the draw command blanks.",
+   task:"Use <span class='hl-var'>color</span> and <span class='hl-var'>size</span> variables in every draw line.",
+   cmds:[sc('color','pink'), sc('size',75), dc('circle',null,null), dc('hexagon',null,null), dc('triangle',null,null)],
+   correctBlanks:{'c2':'color','z2':'size','c3':'color','z3':'size','c4':'color','z4':'size'},
+   targetShapes:mkTarget(['circle','hexagon','triangle'],'pink',75),
+   checkSize:true,
+   tiles:{colors:EXT_COLORS, numbers:SIZES, vars:['color','size']},
+   why:[`<span>color</span> = <span>"pink"</span>, <span>size</span> = <span>75</span>`,`Each draw needs <code>color</code> for color AND <code>size</code> for size`,`Six total blanks to fill!`]},
+
+  // partial fixed, pick right vars
+  {title:"Some shapes already have their arguments.",
+   task:"The circle is done. Fill in blanks using <span class='hl-var'>color</span> and <span class='hl-var'>size</span>.",
+   cmds:[sc('color','green'), sc('size',100), dc('circle','color','size'), dc('hexagon',null,null), dc('square',null,null)],
+   correctBlanks:{'c3':'color','z3':'size','c4':'color','z4':'size'},
+   targetShapes:mkTarget(['circle','hexagon','square'],'green',100),
+   checkSize:true,
+   tiles:{colors:ALL_COLORS, numbers:SIZES, vars:['color','size']},
+   why:[`Circle already uses <span>color</span> and <span>size</span>`,`Hexagon and square need the same variables`,`<span>color</span> = <span>"green"</span>, <span>size</span> = <span>100</span>`]},
+
+  // tricky: set size blank + all draw var-use
+  {title:"Set the size, then use it everywhere.",
+   task:"Set <span class='hl-var'>size</span> to <b>125</b>. Then use <span class='hl-var'>size</span> and <span class='hl-var'>color</span> in all draw commands.",
+   cmds:[sc('color','orange'), sc('size',null), dc('circle',null,null), dc('hexagon',null,null), dc('rectangle',null,null), dc('star',null,null)],
+   correctBlanks:{'s1':125,'c2':'color','z2':'size','c3':'color','z3':'size','c4':'color','z4':'size','c5':'color','z5':'size'},
+   targetShapes:mkTarget(['circle','hexagon','rectangle','star'],'orange',125),
+   checkSize:true,
+   tiles:{colors:ALL_COLORS, numbers:SIZES, vars:['color','size']},
+   why:[`Set <span>size</span> to <span>125</span>`,`Each draw uses <code>color</code> and <code>size</code>`,`Nine total blanks — the most complex yet!`]},
+
+  // set both blank + 4 draws var-use
+  {title:"Build the entire program from scratch!",
+   task:"Set <span class='hl-var'>color</span> to <b>blue</b>, <span class='hl-var'>size</span> to <b>75</b>. Use variables in all draw commands.",
+   cmds:[sc('color',null), sc('size',null), dc('circle',null,null), dc('square',null,null), dc('hexagon',null,null)],
+   correctBlanks:{'s0':'blue','s1':75,'c2':'color','z2':'size','c3':'color','z3':'size','c4':'color','z4':'size'},
+   targetShapes:mkTarget(['circle','square','hexagon'],'blue',75),
+   checkSize:true,
+   tiles:{colors:ALL_COLORS, numbers:SIZES, vars:['color','size']},
+   why:[`<span>color</span> → <span>"blue"</span>`,`<span>size</span> → <span>75</span>`,`All three draw commands use both variables`]},
+
+  // maximum complexity
+  {title:"Maximum challenge: 5 shapes, every blank is a variable.",
+   task:"Set both variables, then fill ALL draw blanks with <span class='hl-var'>color</span> and <span class='hl-var'>size</span>.",
+   cmds:[sc('color',null), sc('size',null), dc('circle',null,null), dc('hexagon',null,null), dc('triangle',null,null), dc('rectangle',null,null), dc('star',null,null)],
+   correctBlanks:{'s0':'purple','s1':50,'c2':'color','z2':'size','c3':'color','z3':'size','c4':'color','z4':'size','c5':'color','z5':'size','c6':'color','z6':'size'},
+   targetShapes:mkTarget(['circle','hexagon','triangle','rectangle','star'],'purple',50),
+   checkSize:true,
+   tiles:{colors:EXT_COLORS, numbers:SIZES, vars:['color','size']},
+   why:[`<span>color</span> → <span>"purple"</span>`,`<span>size</span> → <span>50</span>`,`12 blanks total — set 2 then use variables in 5 draw commands`]},
+];
+
+// ── State ──────────────────────────────────────────────────────────────────────
+let currentLevel='easy',questions=[],qIdx=0,score=0;
+let isLocked=false,isContinue=false;
+let cmdValues={};
+let hasRun=false;
+let openDDKey=null;
+const shuffle=a=>[...a].sort(()=>Math.random()-.5);
+
+// ── Dropdown ───────────────────────────────────────────────────────────────────
+document.addEventListener('click',()=>closeAllDDs());
+
+function closeAllDDs(){
+  document.querySelectorAll('.dd-panel.open').forEach(el=>el.classList.remove('open'));
+  document.querySelectorAll('.cmd-sel-btn.open').forEach(el=>el.classList.remove('open'));
+  openDDKey=null;
+}
+
+function toggleDD(e,key){
+  e.stopPropagation();if(isLocked)return;
+  const panel=document.getElementById('ddp_'+key),btn=document.getElementById('ddb_'+key);
+  if(!panel||!btn)return;
+  if(openDDKey===key){panel.classList.remove('open');btn.classList.remove('open');openDDKey=null;}
+  else{closeAllDDs();panel.classList.add('open');btn.classList.add('open');openDDKey=key;}
+}
+
+function onOpt(e,key,value){
+  e.stopPropagation();if(isLocked)return;
+  closeAllDDs();
+  cmdValues[key]=isNaN(value)?value:Number(value);
+  refreshBtn(key,value);
+  markOpt(key,value);
+  updateVarPanel();
+  updateRunBtn();
+}
+
+function refreshBtn(key,value){
+  const btn=document.getElementById('ddb_'+key);if(!btn)return;
+  let cls='cmd-sel-btn',inner='';
+  if(value!==null&&value!==undefined){
+    if(COLORS_MAP[value]){
+      inner=`<span class="sel-swatch" style="background:${COLORS_MAP[value]}"></span>"${value}"<span class="dd-arr">▾</span>`;
+      cls+=' val-color';
+    } else if(!isNaN(value)){
+      inner=`${value}px<span class="dd-arr">▾</span>`;
+      cls+=' val-num';
+    } else {
+      inner=`<span style="font-style:italic;margin-right:2px">x</span>${value}<span class="dd-arr">▾</span>`;
+      cls+=' val-var';
+    }
+  } else {
+    inner=`<span>?</span><span class="dd-arr">▾</span>`;
+  }
+  btn.className=cls;btn.innerHTML=inner;
+}
+
+function markOpt(key,value){
+  const panel=document.getElementById('ddp_'+key);if(!panel)return;
+  panel.querySelectorAll('.dd-opt').forEach(o=>o.classList.toggle('sel',String(o.dataset.val)===String(value)));
+}
+
+function updateVarPanel(){
+  const q=questions[qIdx];
+  const vars=getVarValues(q.cmds,cmdValues);
+  const panel=document.getElementById('varPanel');if(!panel)return;
+  let h='';
+  const entries=Object.entries(vars);
+  if(entries.length===0){h='<span class="vp-empty">no vars set</span>';}
+  else{
+    entries.forEach(([name,val],idx)=>{
+      if(idx>0)h+='<div class="vp-sep"></div>';
+      h+=`<div class="vp-item"><span class="vp-label">${name}</span>`;
+      if(COLORS_MAP[val])h+=`<span class="vp-color" style="background:${COLORS_MAP[val]}"></span>`;
+      else if(!isNaN(val))h+=`<span class="vp-num">${val}</span>`;
+      h+='</div>';
+    });
+  }
+  panel.innerHTML=h;
+}
+
+// ── Run button ────────────────────────────────────────────────────────────────
+function allBlanksFilled(){
+  const q=questions[qIdx];
+  const total=countBlanks(q);
+  const filled=Object.keys(cmdValues).length;
+  return filled>=total;
+}
+
+function countBlanks(q){
+  let n=0;
+  q.cmds.forEach((cmd,i)=>{
+    if(cmd.t==='set'&&cmd.val===null)n++;
+    if(cmd.t==='draw'){
+      if(cmd.colorArg===null)n++;
+      if(cmd.sizeArg===null)n++;
+    }
+  });
+  return n;
+}
+
+function updateRunBtn(){
+  const btn=document.getElementById('runBtn');if(!btn)return;
+  const ready=allBlanksFilled();
+  btn.className='run-btn'+(ready?' ready':'');
+}
+
+function runProgram(){
+  if(!allBlanksFilled())return;
+  const q=questions[qIdx];
+  const shapes=execProgram(q.cmds,cmdValues);
+  const cv=document.getElementById('codeCanvas');
+  if(cv)renderCanvas(cv,shapes);
+  hasRun=true;
+  updateCheckBtn();
+}
+
+// ── Check ─────────────────────────────────────────────────────────────────────
+function updateCheckBtn(){
+  if(isContinue)return;
+  const ready=hasRun&&allBlanksFilled();
+  document.getElementById('checkBtn').className='check-btn'+(ready?' ready':'');
+}
+
+function handleBtn(){isContinue?advanceQ():checkAnswer();}
+
+function checkAnswer(){
+  const q=questions[qIdx];isLocked=true;
+  let correct=false;
+
+  if(q.correctBlanks){
+    correct=Object.entries(q.correctBlanks).every(([k,v])=>String(cmdValues[k])===String(v));
+  } else {
+    const shapes=execProgram(q.cmds,cmdValues);
+    correct=shapes.length===q.targetShapes.length&&shapes.every((s,i)=>{
+      const t=q.targetShapes[i];
+      const colorOk=s.color===t.color;
+      const sizeOk=!q.checkSize||s.size===t.size;
+      return s.shape===t.shape&&colorOk&&sizeOk;
+    });
+  }
+
+  if(correct)score++;
+  document.getElementById('scoreDisp').textContent=score;
+
+  // Mark blank buttons
+  q.cmds.forEach((cmd,i)=>{
+    const keys=[];
+    if(cmd.t==='set'&&cmd.val===null)keys.push('s'+i);
+    if(cmd.t==='draw'){if(cmd.colorArg===null)keys.push('c'+i);if(cmd.sizeArg===null)keys.push('z'+i);}
+    keys.forEach(k=>{
+      const btn=document.getElementById('ddb_'+k);if(!btn)return;
+      let ok;
+      if(q.correctBlanks) ok=String(cmdValues[k])===String(q.correctBlanks[k]);
+      else ok=correct;
+      btn.classList.remove('val-color','val-num','val-var','open');
+      btn.classList.add(ok?'correct-f':'wrong-f');
+    });
+  });
+
+  const fb=document.getElementById('feedbackBar');
+  const fi=document.getElementById('fbIcon'),ft=document.getElementById('fbTitle'),fh=document.getElementById('fbHint');
+  if(correct){
+    fb.className='feedback-bar ok show';fi.textContent='✅';
+    ft.className='fb-title ok';ft.textContent='Correct! Your program runs perfectly!';
+    fh.textContent='The canvas shows exactly the right output.';
+  } else {
+    fb.className='feedback-bar err show';fi.textContent='❌';
+    ft.className='fb-title err';ft.textContent='Not quite!';
+    if(q.correctBlanks){
+      const expected=Object.entries(q.correctBlanks).map(([k,v])=>isNaN(v)?`<code>${v}</code>`:`<code>${v}px</code>`).join(', ');
+      fh.innerHTML='Expected: '+expected;
+    } else {
+      const t=q.targetShapes[0];
+      fh.innerHTML=`Expected: color = <code>"${t.color}"</code>`+(q.checkSize?` and size = <code>${t.size}px</code>`:'');
+    }
+  }
+
+  document.getElementById('whyBtn').classList.add('show');
+  isContinue=true;
+  const cb=document.getElementById('checkBtn');
+  cb.className='check-btn continue';
+  cb.textContent=qIdx>=9?'See Results →':'Continue →';
+}
+
+function toggleWhy(){
+  const p=document.getElementById('whyPanel'),b=document.getElementById('whyBtn');
+  if(!p.classList.contains('show')){
+    document.getElementById('whySteps').innerHTML=questions[qIdx].why.map(s=>`<li>${s}</li>`).join('');
+    p.classList.add('show');b.classList.add('active');
+  }else{p.classList.remove('show');b.classList.remove('active');}
+}
+
+// ── Init ───────────────────────────────────────────────────────────────────────
+function setLevel(lvl){
+  currentLevel=lvl;
+  document.getElementById('btnEasy').className='level-btn'+(lvl==='easy'?' active-easy':'');
+  document.getElementById('btnHard').className='level-btn'+(lvl==='hard'?' active-hard':'');
+  initQuiz();
+}
+function switchLevel(){setLevel(currentLevel==='easy'?'hard':'easy');}
+
+function initQuiz(){
+  const pool=currentLevel==='easy'?EASY_POOL:HARD_POOL;
+  questions=shuffle(pool).slice(0,10);
+  qIdx=0;score=0;
+  document.getElementById('resultsWrap').style.display='none';
+  document.getElementById('resultsWrap').classList.remove('show');
+  document.getElementById('qCard').style.display='';
+  document.getElementById('checkBtn').style.display='';
+  document.getElementById('feedbackBar').classList.remove('show');
+  document.getElementById('whyPanel').classList.remove('show');
+  document.getElementById('whyBtn').classList.remove('show','active');
+  document.getElementById('scoreDisp').textContent='0';
+  renderQ();
+}
+
+function renderQ(){
+  const q=questions[qIdx];
+  isLocked=false;isContinue=false;openDDKey=null;cmdValues={};hasRun=false;
+  document.getElementById('qNum').textContent=qIdx+1;
+  document.getElementById('pFill').style.width=(qIdx/10*100)+'%';
+  document.getElementById('feedbackBar').classList.remove('show');
+  document.getElementById('whyPanel').classList.remove('show');
+  document.getElementById('whyBtn').classList.remove('show','active');
+  const cb=document.getElementById('checkBtn');cb.className='check-btn';cb.textContent='Check';
+  document.getElementById('qCard').innerHTML=buildCard(q);
+  // Draw initial state (only fixed values, no blanks)
+  const initShapes=execProgram(q.cmds,{});
+  const cv=document.getElementById('codeCanvas');
+  if(cv){clearCanvas(cv);if(initShapes.length>0)renderCanvas(cv,initShapes);}
+  updateVarPanel();
+  updateRunBtn();
+  updateCheckBtn();
+}
+
+// ── Card HTML ─────────────────────────────────────────────────────────────────
+function buildCard(q){
+  let h=`<div class="q-title">${q.title}</div><div class="q-task">${q.task}</div>`;
+  h+=`<div class="canvas-area">
+    <canvas id="codeCanvas" class="code-canvas" width="282" height="190"></canvas>
+    <div class="var-panel" id="varPanel"><span class="vp-empty">no vars</span></div>
+  </div>`;
+  h+=buildCodeBlock(q);
+  h+=`<div class="run-row">
+    <button class="run-btn" id="runBtn" onclick="runProgram()">
+      <span class="run-triangle"></span> Run
+    </button>
+  </div>`;
+  return h;
+}
+
+function buildCodeBlock(q){
+  let h='<div class="code-block">';
+  q.cmds.forEach((cmd,i)=>{
+    h+=`<div class="cmd-line"><span class="ln">${i+1}</span>`;
+    if(cmd.t==='set'){
+      h+=`<span class="kw-set">set</span> <span class="var-ref-tok">${cmd.name}</span> <span class="kw-to">to</span> `;
+      if(cmd.val!==null){
+        h+=COLORS_MAP[cmd.val]?`<span class="color-tok">"${cmd.val}"</span>`:`<span class="num-tok">${cmd.val}</span>`;
+      } else {
+        h+=selWidget('s'+i, q.tiles, 'set', cmd.name);
+      }
+    } else {
+      // draw
+      h+=`<span class="kw-draw">draw</span> <span class="shape-tok">${cmd.shape}</span> `;
+      h+=`<span class="pal-ico">🎨</span> `;
+      if(cmd.colorArg!==null){
+        h+=COLORS_MAP[cmd.colorArg]?`<span class="color-tok">"${cmd.colorArg}"</span>`:`<span class="var-ref-tok">${cmd.colorArg}</span>`;
+      } else {
+        h+=selWidget('c'+i, q.tiles, 'draw-color');
+      }
+      // size param
+      if(cmd.sizeArg!==undefined){
+        h+=` <span class="sz-ico">📐</span> `;
+        if(cmd.sizeArg!==null){
+          h+=isNaN(cmd.sizeArg)?`<span class="var-ref-tok">${cmd.sizeArg}</span>`:`<span class="num-tok">${cmd.sizeArg}</span>`;
+        } else {
+          h+=selWidget('z'+i, q.tiles, 'draw-size');
+        }
+      }
+    }
+    h+='</div>';
+  });
+  h+='</div>';
+  return h;
+}
+
+function selWidget(key, tiles, mode, varHint){
+  let opts='';
+  // Variable name options (for draw blanks)
+  if(tiles.vars&&tiles.vars.length>0&&(mode==='draw-color'||mode==='draw-size')){
+    tiles.vars.forEach(v=>{
+      opts+=`<div class="dd-opt var-dd-opt" data-val="${v}" onclick="onOpt(event,'${key}','${v}')">
+        <span style="font-style:italic;color:#c084fc;width:16px;text-align:center;font-size:.85rem">x</span>${v}
+      </div>`;
+    });
+    const hasMore=(mode==='draw-color'&&tiles.colors)||( mode==='draw-size'&&tiles.numbers);
+    if(hasMore)opts+='<div class="dd-divider"></div>';
+  }
+  // Color options
+  if((mode==='set'&&!varHint?.match(/size|sz/i))||(mode==='draw-color')){
+    (tiles.colors||[]).forEach(c=>{
+      opts+=`<div class="dd-opt" data-val="${c}" onclick="onOpt(event,'${key}','${c}')">
+        <span class="opt-swatch" style="background:${COLORS_MAP[c]}"></span>"${c}"
+      </div>`;
+    });
+  }
+  // Number options (for size)
+  if((mode==='set'&&varHint?.match(/size|sz/i))||(mode==='draw-size')){
+    (tiles.numbers||[]).forEach(n=>{
+      opts+=`<div class="dd-opt num-dd-opt" data-val="${n}" onclick="onOpt(event,'${key}',${n})">
+        <span style="font-size:.85rem;width:16px;text-align:center">📐</span>${n}px
+      </div>`;
+    });
+  }
+  // Fallback: show whatever is in tiles
+  if(!opts){
+    (tiles.colors||[]).forEach(c=>{
+      opts+=`<div class="dd-opt" data-val="${c}" onclick="onOpt(event,'${key}','${c}')">
+        <span class="opt-swatch" style="background:${COLORS_MAP[c]}"></span>"${c}"
+      </div>`;
+    });
+    (tiles.numbers||[]).forEach(n=>{
+      opts+=`<div class="dd-opt num-dd-opt" data-val="${n}" onclick="onOpt(event,'${key}',${n})">
+        <span style="width:16px;text-align:center">📐</span>${n}px
+      </div>`;
+    });
+  }
+  return `<div class="cmd-sel" onclick="event.stopPropagation()">
+    <button class="cmd-sel-btn" id="ddb_${key}" onclick="toggleDD(event,'${key}')">
+      <span>?</span><span class="dd-arr">▾</span>
+    </button>
+    <div class="dd-panel" id="ddp_${key}">${opts}</div>
+  </div>`;
+}
+
+function advanceQ(){
+  if(qIdx>=9){showResults();return;}
+  qIdx++;
+  document.getElementById('whyPanel').classList.remove('show');
+  document.getElementById('whyBtn').classList.remove('show','active');
+  renderQ();
+}
+
+function showResults(){
+  document.getElementById('qCard').style.display='none';
+  document.getElementById('feedbackBar').classList.remove('show');
+  document.getElementById('whyPanel').classList.remove('show');
+  document.getElementById('whyBtn').classList.remove('show','active');
+  document.getElementById('checkBtn').style.display='none';
+  document.getElementById('pFill').style.width='100%';
+  const rw=document.getElementById('resultsWrap');rw.style.display='block';rw.classList.add('show');
+  document.getElementById('resScore').textContent=score+'/10';
+  document.getElementById('resLevel').textContent=currentLevel==='easy'?'Easy Level':'Hard Level';
+  const msgs=[[9,"Amazing! You're a coding star — variables and sizes are no problem!"],[7,"Great work! You understand how variables control shapes."],[5,"Good effort! Keep practicing color, size, and variable usage."],[0,"Keep going — every coder practices to get better!"]];
+  const m=msgs.find(([min])=>score>=min);
+  document.getElementById('resMsg').textContent=m[1];
+  document.getElementById('resEmoji').textContent=score>=9?'🏆':score>=7?'🎉':score>=5?'👍':'💪';
+  document.getElementById('btnSwitch').textContent=currentLevel==='easy'?'Try Hard Level →':'Try Easy Level →';
+}
+
+initQuiz();
+</script>
+</body>
+</html>

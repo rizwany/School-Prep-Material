@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conditional Rules Quiz – Math Fun | LearnPad</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg:       #0e0f14;
+      --card:     #1d1f2b;
+      --border:   #2a2c3a;
+      --text:     #f0f0f8;
+      --muted:    rgba(240,240,248,.42);
+      --green:    #58cc02;
+      --green-dk: #46a301;
+      --red:      #ff4b4b;
+      --blue:     #4361ee;
+      --purple:   #7c3aed;
+      --orange:   #f59e0b;
+      --opt-bg:   #1e2030;
+      --opt-brd:  #313446;
+      --radius:   16px;
+    }
+    body { font-family: 'Nunito', system-ui, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; display: flex; flex-direction: column; }
+
+    /* ── Header ── */
+    header { background: #fff; border-bottom: 2px solid #e2e6f0; padding: 0 24px; position: sticky; top: 0; z-index: 100; flex-shrink: 0; }
+    .header-inner { max-width: 960px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    .logo-link { text-decoration: none; display: flex; align-items: center; }
+    .logo-img  { height: 34px; width: auto; }
+    .logo-txt  { font-weight: 900; font-size: 1.15rem; color: #4361ee; }
+    nav a { font-weight: 700; font-size: 0.85rem; color: #5a6076; text-decoration: none; padding: 6px 12px; border-radius: 8px; transition: color .15s, background .15s; }
+    nav a:hover { color: #4361ee; background: #eef1fd; }
+
+    /* ── Quiz shell ── */
+    main { flex: 1; display: flex; flex-direction: column; align-items: center; }
+    .quiz-shell { width: 100%; max-width: 520px; padding: 16px 20px 80px; display: flex; flex-direction: column; flex: 1; }
+
+    /* ── Level toggle ── */
+    .level-row { display: flex; justify-content: center; gap: 8px; margin-bottom: 18px; }
+    .level-btn {
+      font-family: inherit; font-size: 0.8rem; font-weight: 800;
+      padding: 6px 18px; border-radius: 999px; cursor: pointer;
+      border: 2px solid var(--opt-brd); background: var(--opt-bg); color: var(--muted);
+      transition: all .15s;
+    }
+    .level-btn.active-easy { border-color: var(--green);  background: #172110; color: #88e04a; }
+    .level-btn.active-hard { border-color: var(--purple); background: #1e1535; color: #c084fc; }
+
+    /* ── Progress ── */
+    .progress-wrap { margin-bottom: 16px; }
+    .progress-track { height: 8px; background: #252733; border-radius: 4px; overflow: hidden; }
+    .progress-fill  { height: 100%; background: var(--green); border-radius: 4px; width: 0%; transition: width .4s ease; }
+    .progress-meta  { display: flex; justify-content: space-between; margin-top: 6px; font-size: 0.72rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+
+    /* ── Question card ── */
+    .q-card { background: var(--card); border: 1.5px solid var(--border); border-radius: var(--radius); padding: 22px 18px 18px; margin-bottom: 14px; }
+    .q-text { font-size: 1.05rem; font-weight: 800; line-height: 1.55; margin-bottom: 16px; color: var(--text); }
+
+    /* ── Conditional rule card (shown when rule is known) ── */
+    .rule-card {
+      background: rgba(67,97,238,.1); border: 1.5px solid rgba(67,97,238,.4);
+      border-radius: 12px; padding: 10px 14px; margin-bottom: 14px;
+      display: none;
+    }
+    .rule-card.show { display: block; }
+    .rule-card-title { font-size: 0.68rem; font-weight: 900; color: rgba(160,180,255,.6); text-transform: uppercase; letter-spacing: .1em; margin-bottom: 8px; }
+    .rule-lines { display: flex; flex-direction: column; gap: 5px; }
+    .rule-line { display: flex; align-items: center; gap: 8px; }
+    .rule-expr { font-size: 0.9rem; font-weight: 800; color: #a0b4ff; font-style: italic; white-space: nowrap; }
+    .rule-cond { font-size: 0.78rem; font-weight: 700; color: var(--muted); white-space: nowrap; }
+    .rule-cond .cond-badge {
+      display: inline-block; background: rgba(67,97,238,.2); border: 1px solid rgba(67,97,238,.4);
+      border-radius: 6px; padding: 1px 8px; font-size: 0.72rem; font-weight: 800;
+      color: #a0b4ff; margin-left: 2px;
+    }
+
+    /* ── Machine ── */
+    .machine { margin-bottom: 12px; position: relative; }
+    .rule-row { display: flex; justify-content: center; margin-bottom: 8px; z-index: 2; position: relative; }
+    .rule-pill {
+      background: #252733; border: 1.5px solid var(--border);
+      color: var(--muted); font-weight: 800; font-size: 0.88rem;
+      padding: 5px 20px; border-radius: 20px;
+      transition: all .25s; white-space: nowrap; max-width: 280px; text-align: center;
+    }
+    .rule-pill.known {
+      background: rgba(67,97,238,.18); border-color: rgba(67,97,238,.55);
+      color: #a0b4ff;
+      box-shadow: 0 0 20px rgba(67,97,238,.35), 0 0 50px rgba(67,97,238,.12);
+    }
+    .diagram-labels { display: flex; justify-content: space-between; padding: 0 4px; margin-bottom: 6px; font-size: 0.72rem; font-weight: 700; color: var(--muted); letter-spacing: .05em; }
+    .diagram-wrapper { position: relative; display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; }
+
+    .rule-glow {
+      position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+      width: 36px; height: 80%;
+      background: radial-gradient(ellipse at center, rgba(67,97,238,.38) 0%, transparent 70%);
+      pointer-events: none; opacity: 0; transition: opacity .3s;
+    }
+    .machine.rule-known .rule-glow { opacity: 1; }
+
+    /* IO boxes */
+    .io-box { background: #181921; border: 1.5px solid var(--border); border-radius: 12px; padding: 6px 12px; flex-shrink: 0; min-width: 86px; position: relative; z-index: 1; }
+    .io-item { height: 40px; display: flex; align-items: center; gap: 6px; }
+    .io-item.in-item  { justify-content: flex-end; }
+    .io-item.out-item { justify-content: flex-start; }
+
+    .io-val { font-size: 0.9rem; font-weight: 700; color: var(--text); white-space: nowrap; }
+    .io-val.bold    { font-weight: 900; color: #fff; font-size: 0.95rem; }
+    .io-val.branch-a { color: #a0b4ff; }
+    .io-val.branch-b { color: #f9a8d4; }
+    .io-val.target  { color: var(--green); font-weight: 900; }
+
+    .io-unk {
+      background: #2a2c3a; border: 1.5px solid #3d3f52;
+      border-radius: 7px; padding: 3px 14px;
+      color: rgba(255,255,255,.3); font-weight: 800; font-size: 0.9rem;
+    }
+    .io-dot { width: 9px; height: 9px; border-radius: 50%; background: rgba(255,255,255,.55); border: 1.5px solid rgba(255,255,255,.8); flex-shrink: 0; }
+    .io-dot.branch-a { background: rgba(160,180,255,.7); border-color: #a0b4ff; }
+    .io-dot.branch-b { background: rgba(249,168,212,.7); border-color: #f9a8d4; }
+    .io-arr { color: rgba(255,255,255,.4); font-size: 0.65rem; flex-shrink: 0; }
+
+    .lines-svg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; overflow: visible; }
+
+    /* ── Options (f(x) notation buttons) ── */
+    .options-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 12px; }
+    .opt-btn {
+      background: var(--opt-bg); border: 2px solid var(--opt-brd);
+      border-radius: 14px; color: var(--text); font-family: inherit;
+      font-size: 0.78rem; font-weight: 700; padding: 12px 8px;
+      cursor: pointer; text-align: center; line-height: 1.55;
+      transition: border-color .15s, background .15s, transform .1s;
+      font-style: italic;
+    }
+    .opt-btn:hover:not(.locked) { border-color: #555870; background: #252737; }
+    .opt-btn:active:not(.locked) { transform: scale(.97); }
+    .opt-btn.selected { border-color: #6070cc; background: #1e2240; }
+    .opt-btn.correct  { border-color: var(--green)  !important; background: #172110 !important; color: #88e04a; }
+    .opt-btn.wrong    { border-color: var(--red)    !important; background: #221212 !important; color: #ff8080; }
+    .opt-btn.locked   { cursor: default; }
+
+    /* ── Tile options (number tiles for apply/reverse) ── */
+    .tiles-area { margin-bottom: 12px; }
+    .tiles-formula {
+      background: #181921; border: 1.5px solid var(--border); border-radius: 12px;
+      padding: 12px 16px; text-align: center; font-size: 1rem; font-weight: 800;
+      color: var(--muted); margin-bottom: 10px; font-style: italic;
+    }
+    .tiles-formula .blank {
+      display: inline-block; background: #2a2c3a; border: 2px solid #3d3f52;
+      border-radius: 8px; min-width: 44px; padding: 1px 10px;
+      color: rgba(255,255,255,.3); vertical-align: middle; font-size: 1.1rem; font-style: normal;
+    }
+    .tiles-formula .filled {
+      display: inline-block; background: rgba(67,97,238,.22); border: 2px solid rgba(67,97,238,.7);
+      border-radius: 8px; min-width: 44px; padding: 1px 10px;
+      color: #a0b4ff; vertical-align: middle; font-size: 1.1rem; font-style: normal; transition: all .2s;
+    }
+    .tiles-formula .correct-fill { background: rgba(88,204,2,.18); border-color: var(--green); color: #88e04a; }
+    .tiles-formula .wrong-fill   { background: rgba(255,75,75,.18); border-color: var(--red);   color: #ff8080; }
+    .tiles-row { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+    .tile-btn {
+      background: var(--opt-bg); border: 2px solid var(--opt-brd);
+      border-radius: 12px; color: var(--text); font-family: inherit;
+      font-size: 1rem; font-weight: 800; width: 60px; height: 50px;
+      cursor: pointer; display: flex; align-items: center; justify-content: center;
+      transition: border-color .15s, background .15s, transform .1s;
+    }
+    .tile-btn:hover:not(.locked) { border-color: #555870; background: #252737; }
+    .tile-btn:active:not(.locked) { transform: scale(.95); }
+    .tile-btn.selected { border-color: #6070cc; background: #1e2240; }
+    .tile-btn.correct  { border-color: var(--green) !important; background: #172110 !important; color: #88e04a; }
+    .tile-btn.wrong    { border-color: var(--red)   !important; background: #221212 !important; color: #ff8080; }
+    .tile-btn.locked   { cursor: default; }
+
+    /* ── Start over ── */
+    .start-over-row { display: flex; justify-content: flex-end; margin-top: 4px; }
+    .start-over-btn { background: none; border: none; color: var(--muted); font-family: inherit; font-size: 0.8rem; font-weight: 700; cursor: pointer; padding: 4px 8px; border-radius: 8px; transition: color .15s; display: flex; align-items: center; gap: 5px; }
+    .start-over-btn:hover { color: var(--text); }
+
+    /* ── Feedback ── */
+    .feedback-bar { border-radius: 12px; padding: 12px 16px; margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px; opacity: 0; transition: opacity .2s; }
+    .feedback-bar.show { opacity: 1; }
+    .feedback-bar.ok  { background: #172110; border: 1.5px solid #2d4a1e; }
+    .feedback-bar.err { background: #221212; border: 1.5px solid #4a1f1f; }
+    .fb-icon  { font-size: 1.1rem; flex-shrink: 0; }
+    .fb-body  { flex: 1; }
+    .fb-title { font-size: 0.88rem; font-weight: 900; margin-bottom: 2px; }
+    .fb-title.ok  { color: #88e04a; }
+    .fb-title.err { color: #ff8080; }
+    .fb-hint  { font-size: 0.78rem; font-weight: 600; color: var(--muted); line-height: 1.5; }
+
+    /* ── Why panel ── */
+    .why-panel {
+      background: #14182a; border: 1.5px solid rgba(67,97,238,.4);
+      border-radius: 12px; padding: 14px 16px; margin-bottom: 10px;
+      display: none; animation: slideIn .2s ease;
+    }
+    .why-panel.show { display: block; }
+    @keyframes slideIn { from { opacity:0; transform:translateY(-6px) } to { opacity:1; transform:translateY(0) } }
+    .why-title { font-size: 0.8rem; font-weight: 900; color: #a0b4ff; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 8px; }
+    .why-steps { list-style: none; }
+    .why-steps li { font-size: 0.82rem; font-weight: 700; color: var(--muted); padding: 4px 0; border-bottom: 1px solid rgba(255,255,255,.05); line-height: 1.5; }
+    .why-steps li:last-child { border-bottom: none; color: #88e04a; }
+    .why-steps li span { color: #a0b4ff; }
+
+    /* ── Button row ── */
+    .btn-row { display: flex; gap: 10px; }
+    .why-btn {
+      flex-shrink: 0; padding: 16px 18px; border: 2px solid var(--opt-brd);
+      border-radius: 999px; font-family: inherit; font-size: 0.9rem; font-weight: 800;
+      cursor: pointer; background: var(--opt-bg); color: var(--muted);
+      transition: all .15s; display: none;
+    }
+    .why-btn.show { display: block; }
+    .why-btn:hover { border-color: #a0b4ff; color: #a0b4ff; }
+    .why-btn.active { border-color: rgba(67,97,238,.7); background: rgba(67,97,238,.15); color: #a0b4ff; }
+
+    .check-btn {
+      flex: 1; padding: 16px; border: none; border-radius: 999px;
+      font-family: inherit; font-size: 1rem; font-weight: 900;
+      cursor: pointer; background: #252737; color: var(--muted);
+      transition: background .15s, color .15s;
+    }
+    .check-btn.ready    { background: var(--blue);  color: #fff; }
+    .check-btn.ready:hover { background: #3451d1; }
+    .check-btn.continue { background: var(--green); color: #fff; }
+    .check-btn.continue:hover { background: var(--green-dk); }
+
+    /* ── Results ── */
+    .results-wrap { text-align: center; display: none; padding: 20px 0 40px; }
+    .results-wrap.show { display: block; }
+    .res-card { background: var(--card); border: 1.5px solid var(--border); border-radius: var(--radius); padding: 34px 28px 28px; }
+    .res-emoji { font-size: 3rem; margin-bottom: 10px; }
+    .res-title { font-size: 1.4rem; font-weight: 900; color: var(--text); margin-bottom: 4px; }
+    .res-level { font-size: 0.75rem; font-weight: 700; color: var(--muted); margin-bottom: 10px; text-transform: uppercase; letter-spacing: .08em; }
+    .res-score { font-size: 2.8rem; font-weight: 900; color: var(--green); margin: 14px 0 2px; }
+    .res-label { font-size: 0.82rem; font-weight: 700; color: var(--muted); margin-bottom: 14px; }
+    .res-msg   { font-size: 0.88rem; font-weight: 700; color: var(--muted); line-height: 1.6; margin-bottom: 22px; }
+    .btn-retry  { background: var(--blue); color: #fff; font-family: inherit; font-size: 0.95rem; font-weight: 800; padding: 14px 36px; border: none; border-radius: 999px; cursor: pointer; transition: background .15s; display: block; width: 100%; margin-bottom: 10px; }
+    .btn-retry:hover { background: #3451d1; }
+    .btn-switch { background: none; border: 1.5px solid var(--opt-brd); color: var(--muted); font-family: inherit; font-size: 0.85rem; font-weight: 700; padding: 10px 24px; border-radius: 999px; cursor: pointer; transition: all .15s; width: 100%; margin-bottom: 10px; }
+    .btn-switch:hover { border-color: #a0b4ff; color: #a0b4ff; }
+    .btn-home { background: none; border: 1.5px solid var(--border); color: var(--muted); font-family: inherit; font-size: 0.85rem; font-weight: 700; padding: 10px 24px; border-radius: 999px; cursor: pointer; transition: all .15s; width: 100%; }
+    .btn-home:hover { border-color: #555870; color: var(--text); }
+
+    /* ── Footer ── */
+    footer { background: #0a0b10; color: rgba(255,255,255,.4); padding: 16px 24px; text-align: center; font-size: 0.75rem; font-weight: 600; }
+    footer a { color: rgba(255,255,255,.25); text-decoration: none; }
+    footer a:hover { color: rgba(255,255,255,.7); }
+
+    @media (max-width: 480px) {
+      .quiz-shell { padding: 12px 14px 70px; }
+      .opt-btn { font-size: 0.72rem; padding: 10px 6px; }
+      .tile-btn { width: 52px; height: 46px; font-size: 0.9rem; }
+      .io-box { min-width: 70px; padding: 5px 8px; }
+      .io-val { font-size: 0.82rem; }
+    }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header>
+  <div class="header-inner">
+    <a class="logo-link" href="../../index.html">
+      <img src="../../logo.png" alt="LearnPad" class="logo-img"
+           onerror="this.outerHTML='<span class=logo-txt>LearnPad</span>'" />
+    </a>
+    <nav>
+      <a href="../../for_school/index.html">School</a>
+      <a href="../../index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="quiz-shell" id="quizShell">
+
+    <div class="level-row">
+      <button class="level-btn active-easy" id="btnEasy" onclick="setLevel('easy')">Easy</button>
+      <button class="level-btn" id="btnHard" onclick="setLevel('hard')">Hard</button>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-track"><div class="progress-fill" id="pFill"></div></div>
+      <div class="progress-meta">
+        <span>Question <span id="qNum">1</span> of 10</span>
+        <span>⭐ <span id="scoreDisp">0</span></span>
+      </div>
+    </div>
+
+    <div class="q-card" id="qCard"></div>
+
+    <div class="feedback-bar" id="feedbackBar">
+      <div class="fb-icon" id="fbIcon"></div>
+      <div class="fb-body">
+        <div class="fb-title" id="fbTitle"></div>
+        <div class="fb-hint"  id="fbHint"></div>
+      </div>
+    </div>
+
+    <div class="why-panel" id="whyPanel">
+      <div class="why-title">Step-by-step</div>
+      <ul class="why-steps" id="whySteps"></ul>
+    </div>
+
+    <div class="btn-row">
+      <button class="why-btn" id="whyBtn" onclick="toggleWhy()">Why?</button>
+      <button class="check-btn" id="checkBtn">Check</button>
+    </div>
+
+    <div class="results-wrap" id="resultsWrap">
+      <div class="res-card">
+        <div class="res-emoji" id="resEmoji">🎉</div>
+        <div class="res-title">Quiz Complete!</div>
+        <div class="res-level" id="resLevel">Easy Level</div>
+        <div class="res-score" id="resScore">0/10</div>
+        <div class="res-label">correct answers</div>
+        <div class="res-msg"   id="resMsg"></div>
+        <button class="btn-retry"  onclick="initQuiz()">Play Again →</button>
+        <button class="btn-switch" id="btnSwitch" onclick="switchLevel()">Try Hard Level →</button>
+        <button class="btn-home"   onclick="location.href='../../index.html'">← Back to Home</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <a href="../../index.html">LearnPad</a> &nbsp;·&nbsp; Free Math Practice &nbsp;·&nbsp;
+  <a href="../../for_school/index.html">School Worksheets</a>
+</footer>
+
+<script>
+/* ═══════════════════════════════════════════
+   UTILITIES
+═══════════════════════════════════════════ */
+const pick    = a => a[Math.floor(Math.random() * a.length)];
+const shuffle = a => [...a].sort(() => Math.random() - .5);
+
+/* ═══════════════════════════════════════════
+   RULE DEFINITIONS
+   Each rule has:
+     id, fn(x), optionLabel (shown on buttons),
+     ruleCardLines: [{expr, cond, condBadge}],
+     poolA: x values that satisfy branch A condition,
+     poolB: x values that satisfy branch B condition,
+     whyApply(x): step strings,
+     whyReverse(y): step strings
+═══════════════════════════════════════════ */
+const EASY_RULES = [
+  {
+    id: 'pos_neg_sign',
+    optionLabel: 'f(x) = x+2 if x≥0\n−x if x<0',
+    ruleCardLines: [
+      { expr: 'f(x) = x + 2', condBadge: 'if x ≥ 0' },
+      { expr: 'f(x) = −x',    condBadge: 'if x < 0'  },
+    ],
+    fn: x => x >= 0 ? x + 2 : -x,
+    poolA: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+    poolB: [-1, -2, -3, -4, -5, -6],
+    whyApply: (x) => x >= 0
+      ? [`x = ${x} satisfies <span>x ≥ 0</span>`, `Use f(x) = x + 2`, `f(${x}) = ${x} + 2 = <span>${x+2}</span>`]
+      : [`x = ${x} satisfies <span>x < 0</span>`, `Use f(x) = −x`, `f(${x}) = −(${x}) = <span>${-x}</span>`],
+    whyReverse: (y) => {
+      const xA = y - 2, xB = -y;
+      const valid = (xA >= 0) ? xA : (xB < 0 ? xB : xA);
+      if (xA >= 0) return [`Try branch A: x + 2 = ${y} → x = ${xA}`, `Check: ${xA} ≥ 0 ✓`, `Answer: x = <span>${xA}</span>`];
+      return [`Try branch B: −x = ${y} → x = ${xB}`, `Check: ${xB} < 0 ✓`, `Answer: x = <span>${xB}</span>`];
+    },
+  },
+  {
+    id: 'double_or_half',
+    optionLabel: 'f(x) = 2x if x<5\nx÷2 if x≥5',
+    ruleCardLines: [
+      { expr: 'f(x) = 2x',   condBadge: 'if x < 5' },
+      { expr: 'f(x) = x ÷ 2', condBadge: 'if x ≥ 5' },
+    ],
+    fn: x => x < 5 ? 2 * x : x / 2,
+    poolA: [0, 1, 2, 3, 4],
+    poolB: [6, 8, 10, 12, 14, 16],
+    whyApply: (x) => x < 5
+      ? [`x = ${x} satisfies <span>x < 5</span>`, `Use f(x) = 2x`, `f(${x}) = 2 × ${x} = <span>${2*x}</span>`]
+      : [`x = ${x} satisfies <span>x ≥ 5</span>`, `Use f(x) = x ÷ 2`, `f(${x}) = ${x} ÷ 2 = <span>${x/2}</span>`],
+    whyReverse: (y) => {
+      const xA = y / 2, xB = y * 2;
+      if (xA < 5) return [`Try branch A: 2x = ${y} → x = ${xA}`, `Check: ${xA} < 5 ✓`, `Answer: x = <span>${xA}</span>`];
+      return [`Try branch B: x ÷ 2 = ${y} → x = ${xB}`, `Check: ${xB} ≥ 5 ✓`, `Answer: x = <span>${xB}</span>`];
+    },
+  },
+  {
+    id: 'add5_or_sub3',
+    optionLabel: 'f(x) = x+5 if x≤4\nx−3 if x>4',
+    ruleCardLines: [
+      { expr: 'f(x) = x + 5', condBadge: 'if x ≤ 4' },
+      { expr: 'f(x) = x − 3', condBadge: 'if x > 4' },
+    ],
+    fn: x => x <= 4 ? x + 5 : x - 3,
+    poolA: [0, 1, 2, 3, 4],
+    poolB: [5, 6, 7, 8, 9, 10, 11],
+    whyApply: (x) => x <= 4
+      ? [`x = ${x} satisfies <span>x ≤ 4</span>`, `Use f(x) = x + 5`, `f(${x}) = ${x} + 5 = <span>${x+5}</span>`]
+      : [`x = ${x} satisfies <span>x > 4</span>`, `Use f(x) = x − 3`, `f(${x}) = ${x} − 3 = <span>${x-3}</span>`],
+    whyReverse: (y) => {
+      const xA = y - 5, xB = y + 3;
+      if (xA <= 4) return [`Try branch A: x + 5 = ${y} → x = ${xA}`, `Check: ${xA} ≤ 4 ✓`, `Answer: x = <span>${xA}</span>`];
+      return [`Try branch B: x − 3 = ${y} → x = ${xB}`, `Check: ${xB} > 4 ✓`, `Answer: x = <span>${xB}</span>`];
+    },
+  },
+  {
+    id: 'triple_or_add1',
+    optionLabel: 'f(x) = 3x if x<3\nx+1 otherwise',
+    ruleCardLines: [
+      { expr: 'f(x) = 3x',    condBadge: 'if x < 3'   },
+      { expr: 'f(x) = x + 1', condBadge: 'otherwise'  },
+    ],
+    fn: x => x < 3 ? 3 * x : x + 1,
+    poolA: [0, 1, 2],
+    poolB: [3, 4, 5, 6, 7, 8, 9, 10],
+    whyApply: (x) => x < 3
+      ? [`x = ${x} satisfies <span>x < 3</span>`, `Use f(x) = 3x`, `f(${x}) = 3 × ${x} = <span>${3*x}</span>`]
+      : [`x = ${x} satisfies <span>x ≥ 3</span>`, `Use f(x) = x + 1`, `f(${x}) = ${x} + 1 = <span>${x+1}</span>`],
+    whyReverse: (y) => {
+      const xA = y / 3, xB = y - 1;
+      if (Number.isInteger(xA) && xA < 3) return [`Try branch A: 3x = ${y} → x = ${xA}`, `Check: ${xA} < 3 ✓`, `Answer: x = <span>${xA}</span>`];
+      return [`Try branch B: x + 1 = ${y} → x = ${xB}`, `Check: ${xB} ≥ 3 ✓`, `Answer: x = <span>${xB}</span>`];
+    },
+  },
+  {
+    id: 'even_odd',
+    optionLabel: 'f(x) = x+4 if even\nx−1 if odd',
+    ruleCardLines: [
+      { expr: 'f(x) = x + 4', condBadge: 'if x is even' },
+      { expr: 'f(x) = x − 1', condBadge: 'if x is odd'  },
+    ],
+    fn: x => x % 2 === 0 ? x + 4 : x - 1,
+    poolA: [0, 2, 4, 6, 8, 10],
+    poolB: [1, 3, 5, 7, 9, 11],
+    whyApply: (x) => x % 2 === 0
+      ? [`x = ${x} is <span>even</span>`, `Use f(x) = x + 4`, `f(${x}) = ${x} + 4 = <span>${x+4}</span>`]
+      : [`x = ${x} is <span>odd</span>`, `Use f(x) = x − 1`, `f(${x}) = ${x} − 1 = <span>${x-1}</span>`],
+    whyReverse: (y) => {
+      const xA = y - 4, xB = y + 1;
+      if (xA >= 0 && xA % 2 === 0) return [`Try even branch: x + 4 = ${y} → x = ${xA}`, `Check: ${xA} is even ✓`, `Answer: x = <span>${xA}</span>`];
+      return [`Try odd branch: x − 1 = ${y} → x = ${xB}`, `Check: ${xB} is odd ✓`, `Answer: x = <span>${xB}</span>`];
+    },
+  },
+  {
+    id: 'negate_or_add10',
+    optionLabel: 'f(x) = −x if x>0\nx+10 if x≤0',
+    ruleCardLines: [
+      { expr: 'f(x) = −x',    condBadge: 'if x > 0' },
+      { expr: 'f(x) = x + 10', condBadge: 'if x ≤ 0' },
+    ],
+    fn: x => x > 0 ? -x : x + 10,
+    poolA: [1, 2, 3, 4, 5, 6, 7],
+    poolB: [-5, -4, -3, -2, -1, 0],
+    whyApply: (x) => x > 0
+      ? [`x = ${x} satisfies <span>x > 0</span>`, `Use f(x) = −x`, `f(${x}) = −${x} = <span>${-x}</span>`]
+      : [`x = ${x} satisfies <span>x ≤ 0</span>`, `Use f(x) = x + 10`, `f(${x}) = ${x} + 10 = <span>${x+10}</span>`],
+    whyReverse: (y) => {
+      const xA = -y, xB = y - 10;
+      if (xA > 0) return [`Try branch A: −x = ${y} → x = ${xA}`, `Check: ${xA} > 0 ✓`, `Answer: x = <span>${xA}</span>`];
+      return [`Try branch B: x + 10 = ${y} → x = ${xB}`, `Check: ${xB} ≤ 0 ✓`, `Answer: x = <span>${xB}</span>`];
+    },
+  },
+  {
+    id: 'small_large',
+    optionLabel: 'f(x) = 10−x if x<6\n2x if x≥6',
+    ruleCardLines: [
+      { expr: 'f(x) = 10 − x', condBadge: 'if x < 6' },
+      { expr: 'f(x) = 2x',     condBadge: 'if x ≥ 6' },
+    ],
+    fn: x => x < 6 ? 10 - x : 2 * x,
+    poolA: [0, 1, 2, 3, 4, 5],
+    poolB: [6, 7, 8, 9, 10],
+    whyApply: (x) => x < 6
+      ? [`x = ${x} satisfies <span>x < 6</span>`, `Use f(x) = 10 − x`, `f(${x}) = 10 − ${x} = <span>${10-x}</span>`]
+      : [`x = ${x} satisfies <span>x ≥ 6</span>`, `Use f(x) = 2x`, `f(${x}) = 2 × ${x} = <span>${2*x}</span>`],
+    whyReverse: (y) => {
+      const xA = 10 - y, xB = y / 2;
+      if (xA >= 0 && xA < 6) return [`Try branch A: 10 − x = ${y} → x = ${xA}`, `Check: ${xA} < 6 ✓`, `Answer: x = <span>${xA}</span>`];
+      return [`Try branch B: 2x = ${y} → x = ${xB}`, `Check: ${xB} ≥ 6 ✓`, `Answer: x = <span>${xB}</span>`];
+    },
+  },
+  {
+    id: 'square_or_add3',
+    optionLabel: 'f(x) = x² if x≤3\nx+3 if x>3',
+    ruleCardLines: [
+      { expr: 'f(x) = x²',    condBadge: 'if x ≤ 3' },
+      { expr: 'f(x) = x + 3', condBadge: 'if x > 3' },
+    ],
+    fn: x => x <= 3 ? x * x : x + 3,
+    poolA: [0, 1, 2, 3],
+    poolB: [4, 5, 6, 7, 8, 9, 10],
+    whyApply: (x) => x <= 3
+      ? [`x = ${x} satisfies <span>x ≤ 3</span>`, `Use f(x) = x²`, `f(${x}) = ${x} × ${x} = <span>${x*x}</span>`]
+      : [`x = ${x} satisfies <span>x > 3</span>`, `Use f(x) = x + 3`, `f(${x}) = ${x} + 3 = <span>${x+3}</span>`],
+    whyReverse: (y) => {
+      const xA = Math.sqrt(y), xB = y - 3;
+      if (Number.isInteger(xA) && xA <= 3) return [`Try branch A: x² = ${y} → x = √${y} = ${xA}`, `Check: ${xA} ≤ 3 ✓`, `Answer: x = <span>${xA}</span>`];
+      return [`Try branch B: x + 3 = ${y} → x = ${xB}`, `Check: ${xB} > 3 ✓`, `Answer: x = <span>${xB}</span>`];
+    },
+  },
+];
+
+const HARD_RULES = [
+  {
+    id: 'hard_2xp1_or_3xm2',
+    optionLabel: 'f(x) = 2x+1 if x≥0\n3x−2 if x<0',
+    ruleCardLines: [
+      { expr: 'f(x) = 2x + 1', condBadge: 'if x ≥ 0' },
+      { expr: 'f(x) = 3x − 2', condBadge: 'if x < 0' },
+    ],
+    fn: x => x >= 0 ? 2*x + 1 : 3*x - 2,
+    poolA: [0, 1, 2, 3, 4, 5, 6],
+    poolB: [-1, -2, -3, -4, -5],
+    whyApply: (x) => x >= 0
+      ? [`x = ${x} satisfies <span>x ≥ 0</span>`, `Use f(x) = 2x + 1`, `2 × ${x} + 1 = ${2*x} + 1 = <span>${2*x+1}</span>`]
+      : [`x = ${x} satisfies <span>x < 0</span>`, `Use f(x) = 3x − 2`, `3 × (${x}) − 2 = ${3*x} − 2 = <span>${3*x-2}</span>`],
+    whyReverse: (y) => {
+      const xA = (y - 1) / 2, xB = (y + 2) / 3;
+      if (Number.isInteger(xA) && xA >= 0) return [`Try branch A: 2x + 1 = ${y} → x = (${y}−1)÷2 = ${xA}`, `Check: ${xA} ≥ 0 ✓`, `Answer: x = <span>${xA}</span>`];
+      return [`Try branch B: 3x − 2 = ${y} → x = (${y}+2)÷3 = ${xB}`, `Check: ${xB} < 0 ✓`, `Answer: x = <span>${xB}</span>`];
+    },
+  },
+  {
+    id: 'hard_xsq_or_2xp3',
+    optionLabel: 'f(x) = x² if x<4\n2x+3 if x≥4',
+    ruleCardLines: [
+      { expr: 'f(x) = x²',     condBadge: 'if x < 4' },
+      { expr: 'f(x) = 2x + 3', condBadge: 'if x ≥ 4' },
+    ],
+    fn: x => x < 4 ? x*x : 2*x + 3,
+    poolA: [0, 1, 2, 3],
+    poolB: [4, 5, 6, 7, 8, 9],
+    whyApply: (x) => x < 4
+      ? [`x = ${x} satisfies <span>x < 4</span>`, `Use f(x) = x²`, `${x} × ${x} = <span>${x*x}</span>`]
+      : [`x = ${x} satisfies <span>x ≥ 4</span>`, `Use f(x) = 2x + 3`, `2 × ${x} + 3 = ${2*x} + 3 = <span>${2*x+3}</span>`],
+    whyReverse: (y) => {
+      const xA = Math.sqrt(y), xB = (y - 3) / 2;
+      if (Number.isInteger(xA) && xA < 4) return [`Try branch A: x² = ${y} → x = √${y} = ${xA}`, `Check: ${xA} < 4 ✓`, `Answer: x = <span>${xA}</span>`];
+      return [`Try branch B: 2x + 3 = ${y} → x = (${y}−3)÷2 = ${xB}`, `Check: ${xB} ≥ 4 ✓`, `Answer: x = <span>${xB}</span>`];
+    },
+  },
+  {
+    id: 'hard_3x_odd_half_even',
+    optionLabel: 'f(x) = 3x if odd\nx÷2 if even',
+    ruleCardLines: [
+      { expr: 'f(x) = 3x',   condBadge: 'if x is odd'  },
+      { expr: 'f(x) = x ÷ 2', condBadge: 'if x is even' },
+    ],
+    fn: x => x % 2 !== 0 ? 3*x : x/2,
+    poolA: [1, 3, 5, 7, 9],
+    poolB: [2, 4, 6, 8, 10, 12],
+    whyApply: (x) => x % 2 !== 0
+      ? [`x = ${x} is <span>odd</span>`, `Use f(x) = 3x`, `3 × ${x} = <span>${3*x}</span>`]
+      : [`x = ${x} is <span>even</span>`, `Use f(x) = x ÷ 2`, `${x} ÷ 2 = <span>${x/2}</span>`],
+    whyReverse: (y) => {
+      const xA = y / 3, xB = y * 2;
+      if (Number.isInteger(xA) && xA % 2 !== 0) return [`Try odd branch: 3x = ${y} → x = ${xA}`, `Check: ${xA} is odd ✓`, `Answer: x = <span>${xA}</span>`];
+      return [`Try even branch: x ÷ 2 = ${y} → x = ${xB}`, `Check: ${xB} is even ✓`, `Answer: x = <span>${xB}</span>`];
+    },
+  },
+  {
+    id: 'hard_triple_neg',
+    optionLabel: 'f(x) = −3x if x>0\n3x+4 if x≤0',
+    ruleCardLines: [
+      { expr: 'f(x) = −3x',   condBadge: 'if x > 0' },
+      { expr: 'f(x) = 3x + 4', condBadge: 'if x ≤ 0' },
+    ],
+    fn: x => x > 0 ? -3*x : 3*x + 4,
+    poolA: [1, 2, 3, 4, 5],
+    poolB: [-3, -2, -1, 0],
+    whyApply: (x) => x > 0
+      ? [`x = ${x} satisfies <span>x > 0</span>`, `Use f(x) = −3x`, `−3 × ${x} = <span>${-3*x}</span>`]
+      : [`x = ${x} satisfies <span>x ≤ 0</span>`, `Use f(x) = 3x + 4`, `3 × (${x}) + 4 = ${3*x} + 4 = <span>${3*x+4}</span>`],
+    whyReverse: (y) => {
+      const xA = y / -3, xB = (y - 4) / 3;
+      if (Number.isInteger(xA) && xA > 0) return [`Try branch A: −3x = ${y} → x = ${y}÷(−3) = ${xA}`, `Check: ${xA} > 0 ✓`, `Answer: x = <span>${xA}</span>`];
+      return [`Try branch B: 3x + 4 = ${y} → x = (${y}−4)÷3 = ${xB}`, `Check: ${xB} ≤ 0 ✓`, `Answer: x = <span>${xB}</span>`];
+    },
+  },
+  {
+    id: 'hard_three_way',
+    optionLabel: 'f(x) = x−2 if x<0\n0 if x=0\nx+2 if x>0',
+    ruleCardLines: [
+      { expr: 'f(x) = x − 2', condBadge: 'if x < 0' },
+      { expr: 'f(x) = 0',     condBadge: 'if x = 0'  },
+      { expr: 'f(x) = x + 2', condBadge: 'if x > 0'  },
+    ],
+    fn: x => x < 0 ? x - 2 : x > 0 ? x + 2 : 0,
+    poolA: [-1, -2, -3, -4],
+    poolB: [1, 2, 3, 4, 5],
+    whyApply: (x) => x < 0
+      ? [`x = ${x} satisfies <span>x < 0</span>`, `Use f(x) = x − 2`, `f(${x}) = ${x} − 2 = <span>${x-2}</span>`]
+      : x > 0
+        ? [`x = ${x} satisfies <span>x > 0</span>`, `Use f(x) = x + 2`, `f(${x}) = ${x} + 2 = <span>${x+2}</span>`]
+        : [`x = 0, special case`, `f(0) = <span>0</span>`],
+    whyReverse: (y) => {
+      const xA = y + 2, xB = y - 2;
+      if (xA < 0) return [`Try x<0 branch: x − 2 = ${y} → x = ${xA}`, `Check: ${xA} < 0 ✓`, `Answer: x = <span>${xA}</span>`];
+      return [`Try x>0 branch: x + 2 = ${y} → x = ${xB}`, `Check: ${xB} > 0 ✓`, `Answer: x = <span>${xB}</span>`];
+    },
+  },
+  {
+    id: 'hard_xp3_or_2xm5',
+    optionLabel: 'f(x) = x+3 if x≤5\n2x−5 if x>5',
+    ruleCardLines: [
+      { expr: 'f(x) = x + 3',  condBadge: 'if x ≤ 5' },
+      { expr: 'f(x) = 2x − 5', condBadge: 'if x > 5' },
+    ],
+    fn: x => x <= 5 ? x + 3 : 2*x - 5,
+    poolA: [0, 1, 2, 3, 4, 5],
+    poolB: [6, 7, 8, 9, 10],
+    whyApply: (x) => x <= 5
+      ? [`x = ${x} satisfies <span>x ≤ 5</span>`, `Use f(x) = x + 3`, `${x} + 3 = <span>${x+3}</span>`]
+      : [`x = ${x} satisfies <span>x > 5</span>`, `Use f(x) = 2x − 5`, `2 × ${x} − 5 = ${2*x} − 5 = <span>${2*x-5}</span>`],
+    whyReverse: (y) => {
+      const xA = y - 3, xB = (y + 5) / 2;
+      if (Number.isInteger(xA) && xA <= 5) return [`Try branch A: x + 3 = ${y} → x = ${xA}`, `Check: ${xA} ≤ 5 ✓`, `Answer: x = <span>${xA}</span>`];
+      return [`Try branch B: 2x − 5 = ${y} → x = (${y}+5)÷2 = ${xB}`, `Check: ${xB} > 5 ✓`, `Answer: x = <span>${xB}</span>`];
+    },
+  },
+];
+
+/* ═══════════════════════════════════════════
+   STATE
+═══════════════════════════════════════════ */
+let currentLevel = 'easy';
+let questions = [], qIdx = 0, selOpt = null;
+let isAnswered = false, isLocked = false, score = 0;
+let whyOpen = false;
+
+function getRules() { return currentLevel === 'easy' ? EASY_RULES : HARD_RULES; }
+
+/* ═══════════════════════════════════════════
+   LEVEL
+═══════════════════════════════════════════ */
+function setLevel(lvl) {
+  currentLevel = lvl;
+  document.getElementById('btnEasy').className = 'level-btn' + (lvl === 'easy' ? ' active-easy' : '');
+  document.getElementById('btnHard').className = 'level-btn' + (lvl === 'hard' ? ' active-hard' : '');
+  initQuiz();
+}
+function switchLevel() { setLevel(currentLevel === 'easy' ? 'hard' : 'easy'); }
+
+/* ═══════════════════════════════════════════
+   DISTRACTORS
+═══════════════════════════════════════════ */
+function numDistractors(correct, count = 3) {
+  const offsets = shuffle([-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8]);
+  const out = new Set();
+  for (const o of offsets) { out.add(correct + o); if (out.size >= count * 3) break; }
+  return shuffle([...out]).filter(v => v !== correct).slice(0, count);
+}
+
+/* ═══════════════════════════════════════════
+   RENDER RULE CARD
+═══════════════════════════════════════════ */
+function ruleCardHTML(rule) {
+  const lines = rule.ruleCardLines.map(l =>
+    `<div class="rule-line">
+       <span class="rule-expr">${l.expr}</span>
+       <span class="rule-cond"><span class="cond-badge">${l.condBadge}</span></span>
+     </div>`
+  ).join('');
+  return `<div class="rule-card show"><div class="rule-card-title">Rule</div><div class="rule-lines">${lines}</div></div>`;
+}
+
+/* ═══════════════════════════════════════════
+   QUESTION GENERATORS
+═══════════════════════════════════════════ */
+
+/* TYPE A — identify: show 4 pairs (2 from each branch), pick the right conditional rule */
+function genIdentify(rule) {
+  const xsA = shuffle(rule.poolA).slice(0, 2);
+  const xsB = shuffle(rule.poolB).slice(0, 2);
+  const allXs = shuffle([...xsA, ...xsB]);
+  const pairs = allXs.map(x => ({ x, fx: rule.fn(x), branch: xsA.includes(x) ? 'a' : 'b' }));
+
+  const allRules = getRules();
+  const distractors = shuffle(allRules.filter(r => r.id !== rule.id)).slice(0, 3);
+  const allOpts = shuffle([rule, ...distractors]);
+
+  return {
+    qtype: 'identify', rule,
+    questionText: 'Which rule could produce all of the outputs?',
+    pairs,
+    targetX: null, targetFx: null,
+    options: allOpts.map(r => r.optionLabel),
+    correctIndex: allOpts.indexOf(rule),
+    hint: 'Notice the outputs change pattern — a single rule can\'t explain all pairs.',
+    isTextOpts: true,
+  };
+}
+
+/* TYPE B — apply: show 3 example pairs, ask f(x) for a new x from one branch */
+function genApply(rule) {
+  const xA = pick(rule.poolA);
+  const xBs = shuffle(rule.poolB);
+  const xB = xBs[0];
+  // 3 examples: 2 from branch A/B mix, avoid target
+  const exA = rule.poolA.filter(x => x !== xA);
+  const exB = rule.poolB.filter(x => x !== xB);
+  // pick target from a random branch
+  const targetX = pick([xA, xB]);
+  const examplesXs = shuffle([
+    ...shuffle(rule.poolA.filter(x => x !== targetX)).slice(0, 2),
+    ...shuffle(rule.poolB.filter(x => x !== targetX)).slice(0, 1),
+  ]).slice(0, 3);
+  const pairs = examplesXs.map(x => ({ x, fx: rule.fn(x), branch: rule.poolA.includes(x) ? 'a' : 'b' }));
+  const correct = rule.fn(targetX);
+  const wrongs  = numDistractors(correct, 3);
+  const allOpts = shuffle([correct, ...wrongs]);
+  return {
+    qtype: 'apply', rule,
+    questionText: `What is the output when x = ${targetX}?`,
+    pairs,
+    targetX, targetFx: null,
+    options: allOpts.map(String),
+    correctIndex: allOpts.indexOf(correct),
+    hint: `Check which branch x = ${targetX} falls into, then apply that formula.`,
+    isTextOpts: false,
+  };
+}
+
+/* TYPE C — reverse: show 3 example pairs, ask which input gives a given output */
+function genReverse(rule) {
+  // Pick target from poolA so inverse is clean
+  const pool = shuffle([...rule.poolA, ...rule.poolB]);
+  const targetX  = pool[0];
+  const exampleXs = pool.slice(1, 4);
+  const pairs = exampleXs.map(x => ({ x, fx: rule.fn(x), branch: rule.poolA.includes(x) ? 'a' : 'b' }));
+  const targetFx = rule.fn(targetX);
+  // Distractors: other x values from the pools
+  const wrongXs = shuffle(pool.slice(4)).slice(0, 3);
+  const allOpts = shuffle([targetX, ...wrongXs]);
+  return {
+    qtype: 'reverse', rule,
+    questionText: `Which input gives an output of ${targetFx}?`,
+    pairs,
+    targetX: null, targetFx,
+    options: allOpts.map(String),
+    correctIndex: allOpts.indexOf(targetX),
+    hint: `Try each branch: which x satisfies the condition AND gives ${targetFx}?`,
+    isTextOpts: false,
+  };
+}
+
+/* ═══════════════════════════════════════════
+   BUILD DIAGRAM
+═══════════════════════════════════════════ */
+function buildDiagram(q) {
+  const isKnown  = q.qtype !== 'identify';
+  const pillText = isKnown ? 'see rule ↓' : '?';
+
+  const inputRows  = q.pairs.map(p => p.x);
+  const outputRows = q.pairs.map(p => p.fx);
+  const branches   = q.pairs.map(p => p.branch);
+
+  if (q.qtype === 'apply')   { inputRows.push(q.targetX);  outputRows.push(null); branches.push('target'); }
+  if (q.qtype === 'reverse') { inputRows.push(null);         outputRows.push(q.targetFx); branches.push('target'); }
+
+  const inBoxHTML = inputRows.map((v, i) => {
+    const br = branches[i];
+    const isTarget = (q.qtype !== 'identify') && i === inputRows.length - 1;
+    const dotCls = br === 'a' ? ' branch-a' : br === 'b' ? ' branch-b' : '';
+    const valHTML = v === null
+      ? `<span class="io-unk">?</span>`
+      : `<span class="io-val${isTarget && q.qtype === 'apply' ? ' bold' : isTarget && q.qtype === 'reverse' ? ' target' : (br === 'a' ? ' branch-a' : ' branch-b')}">${v}</span>`;
+    return `<div class="io-item in-item" id="inrow-${i}">${valHTML}<span class="io-dot${dotCls}"></span></div>`;
+  }).join('');
+
+  const outBoxHTML = outputRows.map((v, i) => {
+    const br = branches[i];
+    const isTarget = q.qtype === 'reverse' && i === outputRows.length - 1;
+    const valHTML  = v === null
+      ? `<span class="io-unk">?</span>`
+      : `<span class="io-val${isTarget ? ' bold target' : (br === 'a' ? ' branch-a' : br === 'b' ? ' branch-b' : '')}">${v}</span>`;
+    return `<div class="io-item out-item" id="outrow-${i}"><span class="io-arr">▶</span>${valHTML}</div>`;
+  }).join('');
+
+  return `
+    <div class="machine${isKnown ? ' rule-known' : ''}">
+      <div class="rule-row"><div class="rule-pill${isKnown ? ' known' : ''}">${pillText}</div></div>
+      <div class="diagram-labels"><span>x</span><span>f(x)</span></div>
+      <div class="diagram-wrapper" id="diagramWrap">
+        <div class="io-box" id="inputBox">${inBoxHTML}</div>
+        <div class="io-box" id="outputBox">${outBoxHTML}</div>
+        <div class="rule-glow"></div>
+        <svg class="lines-svg" id="linesSvg"></svg>
+      </div>
+    </div>`;
+}
+
+/* ═══════════════════════════════════════════
+   DRAW SVG LINES
+═══════════════════════════════════════════ */
+function drawLines(rowCount, branches) {
+  const wrap   = document.getElementById('diagramWrap');
+  const inBox  = document.getElementById('inputBox');
+  const outBox = document.getElementById('outputBox');
+  const svg    = document.getElementById('linesSvg');
+  if (!wrap || !inBox || !outBox || !svg) return;
+  const wR = wrap.getBoundingClientRect();
+  const iR = inBox.getBoundingClientRect();
+  const oR = outBox.getBoundingClientRect();
+  const lines = [];
+  for (let i = 0; i < rowCount; i++) {
+    const ir2 = document.getElementById(`inrow-${i}`);
+    const or2 = document.getElementById(`outrow-${i}`);
+    if (!ir2 || !or2) continue;
+    const irr = ir2.getBoundingClientRect();
+    const orr = or2.getBoundingClientRect();
+    const br = branches && branches[i];
+    lines.push({
+      x1: (iR.right  - wR.left).toFixed(1),
+      y1: (irr.top + irr.height / 2 - wR.top).toFixed(1),
+      x2: (oR.left   - wR.left).toFixed(1),
+      y2: (orr.top + orr.height / 2 - wR.top).toFixed(1),
+      color: br === 'a' ? 'rgba(160,180,255,0.5)' : br === 'b' ? 'rgba(249,168,212,0.45)' : 'rgba(255,255,255,0.28)',
+    });
+  }
+  svg.setAttribute('viewBox', `0 0 ${wR.width.toFixed(1)} ${wR.height.toFixed(1)}`);
+  svg.setAttribute('width', wR.width.toFixed(1));
+  svg.setAttribute('height', wR.height.toFixed(1));
+  svg.innerHTML = `<defs>
+    <marker id="aha" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><polygon points="0 0, 8 3.5, 0 7" fill="rgba(160,180,255,0.6)"/></marker>
+    <marker id="ahb" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><polygon points="0 0, 8 3.5, 0 7" fill="rgba(249,168,212,0.6)"/></marker>
+    <marker id="ahw" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><polygon points="0 0, 8 3.5, 0 7" fill="rgba(255,255,255,0.35)"/></marker>
+  </defs>
+  ${lines.map((l, i) => {
+    const br = branches && branches[i];
+    const mid = br === 'a' ? 'aha' : br === 'b' ? 'ahb' : 'ahw';
+    return `<line x1="${l.x1}" y1="${l.y1}" x2="${l.x2}" y2="${l.y2}"
+      stroke="${l.color}" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#${mid})"/>`;
+  }).join('')}`;
+}
+
+let currentRowCount = 4;
+let currentBranches = [];
+window.addEventListener('resize', () => setTimeout(() => drawLines(currentRowCount, currentBranches), 80));
+
+/* ═══════════════════════════════════════════
+   RENDER QUESTION
+═══════════════════════════════════════════ */
+function renderQuestion(q) {
+  currentRowCount = q.pairs.length + (q.qtype !== 'identify' ? 1 : 0);
+  currentBranches = q.pairs.map(p => p.branch);
+  if (q.qtype !== 'identify') currentBranches.push('target');
+
+  const isKnown = q.qtype !== 'identify';
+
+  let optsHTML = '';
+  if (q.isTextOpts) {
+    optsHTML = `<div class="options-grid" id="optionsGrid">
+      ${q.options.map((lbl, i) =>
+        `<button class="opt-btn" onclick="selectOpt(${i})">${lbl.replace(/\n/g, '<br>')}</button>`
+      ).join('')}
+    </div>`;
+  } else {
+    const formulaHTML = q.qtype === 'apply'
+      ? `<div class="tiles-formula">f(<span style="color:#a0b4ff">${q.targetX}</span>) = <span class="blank" id="formulaBlank">?</span></div>`
+      : `<div class="tiles-formula">f(<span class="blank" id="formulaBlank">?</span>) = <span style="color:#88e04a">${q.targetFx}</span></div>`;
+    optsHTML = `<div class="tiles-area">
+      ${formulaHTML}
+      <div class="tiles-row" id="optionsGrid">
+        ${q.options.map((lbl, i) => `<button class="tile-btn" onclick="selectOpt(${i})">${lbl}</button>`).join('')}
+      </div>
+    </div>`;
+  }
+
+  document.getElementById('qCard').innerHTML = `
+    <p class="q-text">${q.questionText}</p>
+    ${isKnown ? ruleCardHTML(q.rule) : ''}
+    ${buildDiagram(q)}
+    ${optsHTML}
+    <div class="start-over-row">
+      <button class="start-over-btn" onclick="initQuiz()">↺ Start over</button>
+    </div>`;
+
+  requestAnimationFrame(() => requestAnimationFrame(() => drawLines(currentRowCount, currentBranches)));
+}
+
+/* ═══════════════════════════════════════════
+   INTERACTION
+═══════════════════════════════════════════ */
+function selectOpt(i) {
+  if (isLocked) return;
+  selOpt = i;
+  document.querySelectorAll('.opt-btn, .tile-btn').forEach((b, idx) => {
+    b.classList.toggle('selected', idx === i);
+  });
+  const blank = document.getElementById('formulaBlank');
+  if (blank) {
+    blank.className = 'filled';
+    blank.textContent = questions[qIdx].options[i];
+  }
+  document.getElementById('checkBtn').className = 'check-btn ready';
+}
+
+function checkAnswer() {
+  const q = questions[qIdx];
+  if (isAnswered) { advanceQuestion(); return; }
+  if (selOpt === null) return;
+
+  isAnswered = isLocked = true;
+  const correct = selOpt === q.correctIndex;
+
+  document.querySelectorAll('.opt-btn, .tile-btn').forEach((b, i) => {
+    b.classList.add('locked');
+    if (i === q.correctIndex) b.classList.add('correct');
+    else if (i === selOpt && !correct) b.classList.add('wrong');
+  });
+
+  const blank = document.getElementById('formulaBlank');
+  if (blank) blank.className = correct ? 'correct-fill' : 'wrong-fill';
+
+  if (correct) {
+    score++;
+    document.getElementById('scoreDisp').textContent = score;
+  }
+
+  const bar = document.getElementById('feedbackBar');
+  bar.className = `feedback-bar ${correct ? 'ok' : 'err'} show`;
+  document.getElementById('fbIcon').textContent = correct ? '✓' : '✗';
+  const titleEl = document.getElementById('fbTitle');
+  titleEl.className = `fb-title ${correct ? 'ok' : 'err'}`;
+  titleEl.textContent = correct ? 'Correct!' : `Answer: ${q.options[q.correctIndex].replace(/\n/g,' / ')}`;
+  document.getElementById('fbHint').textContent = q.hint;
+
+  document.getElementById('whyBtn').className = 'why-btn show';
+  whyOpen = false;
+  document.getElementById('whyPanel').className = 'why-panel';
+
+  document.getElementById('pFill').style.width = (((qIdx + 1) / 10) * 100) + '%';
+  const btn = document.getElementById('checkBtn');
+  btn.className = 'check-btn continue';
+  btn.textContent = qIdx < 9 ? 'Continue →' : 'See Results →';
+}
+
+function advanceQuestion() {
+  qIdx++;
+  if (qIdx >= 10) { showResults(); return; }
+  selOpt = null; isAnswered = isLocked = whyOpen = false;
+  document.getElementById('qNum').textContent      = qIdx + 1;
+  document.getElementById('feedbackBar').className = 'feedback-bar';
+  document.getElementById('checkBtn').className    = 'check-btn';
+  document.getElementById('checkBtn').textContent  = 'Check';
+  document.getElementById('whyBtn').className      = 'why-btn';
+  document.getElementById('whyPanel').className    = 'why-panel';
+  renderQuestion(questions[qIdx]);
+}
+
+function toggleWhy() {
+  const q = questions[qIdx];
+  whyOpen = !whyOpen;
+  const panel = document.getElementById('whyPanel');
+  const btn   = document.getElementById('whyBtn');
+  if (whyOpen) {
+    let steps;
+    if (q.qtype === 'identify') {
+      steps = [
+        `Check all 4 pairs against each option`,
+        `Some pairs use one formula, others use another`,
+        `Only <span>${q.rule.optionLabel.replace(/\n/g,' | ')}</span> fits all pairs`,
+      ];
+    } else if (q.qtype === 'apply') {
+      steps = q.rule.whyApply(q.targetX);
+    } else {
+      steps = q.rule.whyReverse(q.targetFx);
+    }
+    document.getElementById('whySteps').innerHTML = steps.map(s => `<li>${s}</li>`).join('');
+    panel.className = 'why-panel show';
+    btn.className   = 'why-btn show active';
+    btn.textContent = 'Hide';
+  } else {
+    panel.className = 'why-panel';
+    btn.className   = 'why-btn show';
+    btn.textContent = 'Why?';
+  }
+}
+
+/* ═══════════════════════════════════════════
+   RESULTS
+═══════════════════════════════════════════ */
+function showResults() {
+  document.getElementById('qCard').style.display    = 'none';
+  document.getElementById('feedbackBar').className  = 'feedback-bar';
+  document.getElementById('checkBtn').style.display = 'none';
+  document.getElementById('whyBtn').className       = 'why-btn';
+  document.getElementById('whyPanel').className     = 'why-panel';
+  document.getElementById('resultsWrap').className  = 'results-wrap show';
+  const pct = score / 10;
+  const [emoji, msg] =
+    pct === 1  ? ['🏆','Perfect! You mastered conditional function rules!']
+    : pct >= .8 ? ['🎉','Excellent! You understand piecewise functions really well.']
+    : pct >= .6 ? ['👍','Good effort! Use Why? after each question to learn the steps.']
+    : pct >= .4 ? ['📚','Keep practising — always check which condition x satisfies first.']
+                : ['💡','Tip: read the condition (if x<…) before applying the formula.'];
+  document.getElementById('resEmoji').textContent = emoji;
+  document.getElementById('resScore').textContent = `${score}/10`;
+  document.getElementById('resMsg').textContent   = msg;
+  document.getElementById('resLevel').textContent =
+    currentLevel === 'easy' ? 'Easy Level' : 'Hard Level';
+  document.getElementById('btnSwitch').textContent =
+    currentLevel === 'easy' ? 'Try Hard Level →' : 'Try Easy Level →';
+}
+
+/* ═══════════════════════════════════════════
+   INIT
+═══════════════════════════════════════════ */
+function initQuiz() {
+  qIdx = score = 0; selOpt = null;
+  isAnswered = isLocked = whyOpen = false;
+
+  const rules = shuffle(getRules()).slice(0, 4);
+  questions = [
+    genIdentify(rules[0]), genApply(rules[0]), genReverse(rules[0]),
+    genIdentify(rules[1]), genApply(rules[1]), genReverse(rules[1]),
+    genIdentify(rules[2]), genApply(rules[2]), genReverse(rules[2]),
+    pick([genIdentify, genApply, genReverse])(rules[3]),
+  ];
+
+  document.getElementById('qCard').style.display    = '';
+  document.getElementById('checkBtn').style.display = '';
+  document.getElementById('checkBtn').className     = 'check-btn';
+  document.getElementById('checkBtn').textContent   = 'Check';
+  document.getElementById('feedbackBar').className  = 'feedback-bar';
+  document.getElementById('whyBtn').className       = 'why-btn';
+  document.getElementById('whyPanel').className     = 'why-panel';
+  document.getElementById('resultsWrap').className  = 'results-wrap';
+  document.getElementById('scoreDisp').textContent  = 0;
+  document.getElementById('qNum').textContent       = 1;
+  document.getElementById('pFill').style.width      = '0%';
+
+  renderQuestion(questions[0]);
+}
+
+document.getElementById('checkBtn').addEventListener('click', checkAnswer);
+initQuiz();
+</script>
+</body>
+</html>

@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Likelihood Quiz – Math Fun | LearnPad</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --accent:      #4361EE;
+      --accent-dark: #3451d1;
+      --ink:         #1a1f36;
+      --muted:       #5a6076;
+      --bg:          #f4f6fb;
+      --card:        #ffffff;
+      --border:      #e2e6f0;
+      --radius:      18px;
+      --green:       #22c55e;
+      --green-dark:  #16a34a;
+      --red:         #ef4444;
+      --deck-bg:     #1d5f4a;
+    }
+
+    body {
+      font-family: 'Nunito', system-ui, sans-serif;
+      background: var(--bg);
+      background-image: radial-gradient(circle, #E8EDF5 1.5px, transparent 1.5px);
+      background-size: 20px 20px;
+      color: var(--ink);
+      min-height: 100vh;
+      display: flex; flex-direction: column;
+    }
+
+    /* ── Header ── */
+    header { background: var(--card); border-bottom: 2px solid var(--border); padding: 0 24px; position: sticky; top: 0; z-index: 100; }
+    .header-inner { max-width: 960px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 58px; }
+    .logo-link { text-decoration: none; display: flex; align-items: center; }
+    .logo-img { height: 36px; width: auto; display: block; }
+    .logo-txt { font-weight: 900; font-size: 1.2rem; color: var(--accent); }
+    nav { display: flex; align-items: center; gap: 4px; }
+    nav a { font-weight: 700; font-size: 0.85rem; color: var(--muted); text-decoration: none; padding: 6px 12px; border-radius: 8px; transition: color .15s, background .15s; }
+    nav a:hover { color: var(--accent); background: #eef1fd; }
+
+    /* ── Page hero ── */
+    .page-hero { text-align: center; padding: 26px 24px 14px; }
+    .hero-badge { display: inline-block; background: #eef1fd; color: var(--accent); font-weight: 800; font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 5px 14px; border-radius: 50px; margin-bottom: 10px; }
+    .page-hero h1 { font-size: clamp(1.3rem, 3.5vw, 1.9rem); font-weight: 900; color: var(--ink); margin-bottom: 5px; }
+    .page-hero p  { font-size: 0.88rem; font-weight: 600; color: var(--muted); line-height: 1.5; }
+
+    /* ── Level screen ── */
+    .level-screen { max-width: 520px; margin: 0 auto; padding: 4px 20px 56px; }
+    .level-hero { text-align: center; padding: 20px 0 22px; }
+    .level-hero h2 { font-size: 1.5rem; font-weight: 900; color: var(--ink); margin-bottom: 6px; }
+    .level-hero p { font-size: 0.88rem; font-weight: 600; color: var(--muted); }
+    .level-cards { display: flex; flex-direction: column; gap: 14px; }
+    .level-card {
+      background: var(--card); border: 2px solid var(--border); border-radius: var(--radius);
+      padding: 22px 20px; display: flex; align-items: center; gap: 16px;
+      cursor: pointer; transition: border-color .18s, box-shadow .18s, transform .18s; position: relative;
+    }
+    .level-card:hover { border-color: var(--accent); box-shadow: 0 8px 28px rgba(67,97,238,.12); transform: translateY(-2px); }
+    .lv-icon { font-size: 2rem; flex-shrink: 0; }
+    .lv-body { flex: 1; }
+    .lv-title { font-size: 1.15rem; font-weight: 900; color: var(--ink); margin-bottom: 4px; }
+    .lv-desc  { font-size: 0.82rem; font-weight: 600; color: var(--muted); line-height: 1.5; }
+    .lv-arrow { font-size: 1.1rem; color: var(--accent); opacity: 0; transition: opacity .18s, transform .18s; }
+    .level-card:hover .lv-arrow { opacity: 1; transform: translateX(4px); }
+    .lv-badge { position: absolute; top: 14px; right: 16px; font-size: 0.68rem; font-weight: 800; padding: 3px 10px; border-radius: 50px; text-transform: uppercase; letter-spacing: 0.05em; }
+    .tag-easy { background: #e8faf4; color: #059669; }
+    .tag-hard { background: #fff0f0; color: #dc2626; }
+
+    /* ── Quiz wrap ── */
+    main { flex: 1; }
+    .quiz-wrap { max-width: 520px; margin: 0 auto; padding: 8px 20px 56px; }
+
+    /* ── Progress ── */
+    .progress-area { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; flex-wrap: nowrap; }
+    .lv-ind { font-size: 0.68rem; font-weight: 800; padding: 3px 9px; border-radius: 50px; white-space: nowrap; flex-shrink: 0; }
+    .lv-ind.easy { background: #e8faf4; color: #059669; }
+    .lv-ind.hard { background: #fff0f0; color: #dc2626; }
+    .q-counter { font-size: 0.72rem; font-weight: 800; color: var(--muted); white-space: nowrap; text-transform: uppercase; flex-shrink: 0; }
+    .progress-track { flex: 1; height: 10px; background: var(--border); border-radius: 5px; overflow: hidden; min-width: 40px; }
+    .progress-fill { height: 100%; background: var(--green); border-radius: 5px; width: 0%; transition: width .4s ease; }
+    .score-badge { font-size: 0.78rem; font-weight: 800; color: var(--accent); white-space: nowrap; flex-shrink: 0; }
+
+    /* ── Question card ── */
+    .q-card { background: var(--card); border: 2px solid var(--border); border-radius: var(--radius); padding: 22px 20px 16px; margin-bottom: 14px; box-shadow: 0 4px 24px rgba(0,0,0,.06); }
+    .q-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+    .q-badge { background: #eef1fd; color: var(--accent); font-weight: 800; font-size: 0.7rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 12px; border-radius: 50px; }
+    .q-help-btn { display: flex; align-items: center; gap: 5px; background: none; border: 2px solid var(--border); color: var(--muted); font-family: inherit; font-size: 0.73rem; font-weight: 800; cursor: pointer; padding: 4px 11px; border-radius: 50px; transition: border-color .15s, color .15s, background .15s; }
+    .q-help-btn:hover { border-color: var(--accent); color: var(--accent); background: #eef1fd; }
+
+    /* ── Help box ── */
+    .help-box { background: #fffbeb; border: 2px solid #fde68a; border-radius: 12px; padding: 12px 14px; margin-bottom: 14px; display: none; }
+    .help-box.open { display: block; }
+    .help-title { font-size: 0.83rem; font-weight: 900; color: #92400e; margin-bottom: 5px; }
+    .help-text  { font-size: 0.81rem; font-weight: 600; color: #78350f; line-height: 1.6; }
+    .help-example { margin-top: 7px; background: #fef3c7; border-radius: 8px; padding: 6px 10px; font-size: 0.76rem; font-weight: 700; color: #92400e; }
+
+    /* ── Question instruction ── */
+    .q-instruction { font-size: 1.06rem; font-weight: 800; color: var(--ink); margin-bottom: 16px; line-height: 1.5; }
+
+    /* ── Deck display ── */
+    .deck-area {
+      background: var(--deck-bg);
+      border-radius: 14px;
+      padding: 14px 14px 10px;
+      margin-bottom: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .deck-cards { display: flex; gap: 7px; justify-content: center; flex-wrap: wrap; }
+    .deck-card {
+      background: #fff;
+      border-radius: 9px;
+      width: 68px;
+      height: 84px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 6px 5px 4px;
+      box-shadow: 0 2px 6px rgba(0,0,0,.25);
+      flex-shrink: 0;
+    }
+    .deck-card.sm { width: 54px; height: 68px; }
+    .deck-card-num { font-size: 0.85rem; font-weight: 900; color: var(--ink); align-self: flex-start; line-height: 1; margin-bottom: 2px; }
+    .deck-card.sm .deck-card-num { font-size: 0.7rem; }
+    .deck-card-shape { flex: 1; display: flex; align-items: center; justify-content: center; width: 100%; }
+    .deck-card-shape svg { display: block; }
+    .deck-label {
+      font-size: 0.75rem;
+      font-weight: 800;
+      color: rgba(255,255,255,.8);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .deck-label::before,.deck-label::after { content:''; flex: 1; height: 1px; background: rgba(255,255,255,.3); width: 40px; }
+
+    /* ── Answer options ── */
+    .ans-grid { display: grid; gap: 10px; margin-bottom: 10px; }
+    .ans-grid.cols-2 { grid-template-columns: 1fr 1fr; }
+    .ans-grid.cols-3 { grid-template-columns: 1fr 1fr 1fr; }
+    .ans-grid.cols-4 { grid-template-columns: 1fr 1fr; }
+    .ans-opt {
+      border: 3px solid var(--border);
+      border-radius: 14px;
+      padding: 12px 8px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      transition: border-color .15s, box-shadow .15s, transform .12s;
+      background: var(--card);
+      min-height: 90px;
+      text-align: center;
+    }
+    .ans-opt:hover:not(.locked) { border-color: var(--accent); transform: translateY(-2px); }
+    .ans-opt.sel     { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(67,97,238,.2); }
+    .ans-opt.correct { border-color: var(--green) !important; box-shadow: 0 0 0 3px rgba(34,197,94,.22) !important; background: #f0fdf4; }
+    .ans-opt.wrong   { border-color: var(--red)   !important; box-shadow: 0 0 0 3px rgba(239,68,68,.22)  !important; background: #fff5f5; }
+    .ans-opt.locked  { cursor: default; }
+    .ans-opt-label   { font-size: 0.72rem; font-weight: 800; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+    .ans-opt-text    { font-size: 0.9rem; font-weight: 800; color: var(--ink); line-height: 1.4; }
+
+    /* ── Why box (shown after answer) ── */
+    .why-box { background: #f0fdf4; border: 2px solid #86efac; border-radius: 10px; padding: 10px 13px; margin-top: 8px; display: none; }
+    .why-box.show { display: block; }
+    .why-text { font-size: 0.82rem; font-weight: 700; color: #166534; line-height: 1.5; }
+
+    /* ── Feedback ── */
+    .feedback { text-align: center; font-size: 0.96rem; font-weight: 800; min-height: 24px; display: flex; align-items: center; justify-content: center; gap: 5px; opacity: 0; transition: opacity .2s; margin-top: 4px; }
+    .feedback.show { opacity: 1; }
+    .feedback.ok  { color: var(--green); }
+    .feedback.err { color: var(--red); }
+
+    /* ── Buttons ── */
+    .btn-row { display: flex; flex-direction: column; align-items: center; gap: 9px; }
+    .btn-check { width: 100%; padding: 15px; border: none; border-radius: 999px; font-family: inherit; font-size: 1rem; font-weight: 800; cursor: pointer; background: var(--accent); color: #fff; transition: background .15s, transform .1s; }
+    .btn-check:hover  { background: var(--accent-dark); }
+    .btn-check:active { transform: scale(0.98); }
+    .btn-check.done   { background: var(--green); }
+    .btn-check.done:hover { background: var(--green-dark); }
+
+    /* ── Animations ── */
+    @keyframes pulse { 0%{transform:scale(1)} 50%{transform:scale(1.06)} 100%{transform:scale(1)} }
+    @keyframes shake { 0%,100%{transform:translateX(0)} 20%{transform:translateX(-6px)} 40%{transform:translateX(6px)} 60%{transform:translateX(-4px)} 80%{transform:translateX(4px)} }
+    .anim-ok  { animation: pulse .35s ease; }
+    .anim-err { animation: shake  .4s ease; }
+
+    /* ── Results ── */
+    .results-wrap { max-width: 460px; margin: 32px auto; padding: 0 20px; text-align: center; }
+    .results-wrap.hidden { display: none; }
+    .results-card { background: var(--card); border: 2px solid var(--border); border-radius: var(--radius); padding: 34px 26px 26px; box-shadow: 0 4px 24px rgba(0,0,0,.07); }
+    .res-emoji { font-size: 3rem; margin-bottom: 10px; }
+    .res-title { font-size: 1.45rem; font-weight: 900; color: var(--ink); margin-bottom: 4px; }
+    .res-score { font-size: 2.7rem; font-weight: 900; color: var(--accent); margin: 12px 0 2px; }
+    .res-label { font-size: 0.82rem; font-weight: 700; color: var(--muted); }
+    .res-msg   { font-size: 0.88rem; font-weight: 700; color: var(--muted); margin: 12px 0 20px; line-height: 1.6; }
+    .res-btns  { display: flex; flex-direction: column; gap: 8px; }
+    .btn-retry { background: var(--accent); color: #fff; font-family: inherit; font-size: 0.95rem; font-weight: 800; padding: 13px 36px; border: none; border-radius: 999px; cursor: pointer; transition: background .15s; }
+    .btn-retry:hover { background: var(--accent-dark); }
+    .btn-change { background: none; border: 2px solid var(--border); color: var(--muted); font-family: inherit; font-size: 0.85rem; font-weight: 700; padding: 10px 24px; border-radius: 999px; cursor: pointer; transition: border-color .15s, color .15s; }
+    .btn-change:hover { border-color: var(--accent); color: var(--accent); }
+    .share-section { margin-top: 18px; padding-top: 18px; border-top: 2px solid var(--border); }
+    .share-label { font-size: 0.72rem; font-weight: 800; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 10px; }
+    .share-btns { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+    .sh-btn { display: flex; align-items: center; gap: 5px; border: none; border-radius: 50px; font-family: inherit; font-size: 0.78rem; font-weight: 800; cursor: pointer; padding: 8px 14px; transition: opacity .15s, transform .1s; }
+    .sh-btn:hover { opacity: 0.85; } .sh-btn:active { transform: scale(0.95); }
+    .sh-x  { background: #000; color: #fff; }
+    .sh-wa { background: #25D366; color: #fff; }
+    .sh-cp { background: var(--accent); color: #fff; }
+    .sh-cp.copied { background: var(--green); }
+
+    /* ── Footer ── */
+    footer { background: #1a1f36; color: rgba(255,255,255,.65); padding: 18px 24px; text-align: center; font-size: 0.76rem; font-weight: 600; margin-top: auto; }
+    footer a { color: rgba(255,255,255,.42); text-decoration: none; transition: color .15s; }
+    footer a:hover { color: #fff; }
+
+    @media (max-width: 480px) {
+      .quiz-wrap, .level-screen { padding: 4px 14px 44px; }
+      .deck-card { width: 58px; height: 72px; }
+      .deck-card.sm { width: 46px; height: 58px; }
+      .ans-grid.cols-3 { grid-template-columns: 1fr 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header>
+  <div class="header-inner">
+    <a class="logo-link" href="../../index.html">
+      <img src="../../logo.png" alt="LearnPad" class="logo-img"
+           onerror="this.outerHTML='<span class=logo-txt>LearnPad</span>'" />
+    </a>
+    <nav>
+      <a href="../../for_school/index.html">School</a>
+      <a href="../../index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="page-hero">
+    <div class="hero-badge">Math Fun · Probability</div>
+    <h1>Likelihood Quiz</h1>
+    <p>Compare chances &amp; identify likelihood &nbsp;·&nbsp; 10 Questions</p>
+  </div>
+
+  <!-- ── LEVEL SCREEN ── -->
+  <div class="level-screen" id="levelScreen">
+    <div class="level-hero">
+      <h2>Choose Your Level</h2>
+      <p>Pick how challenging you want the quiz to be.</p>
+    </div>
+    <div class="level-cards">
+      <div class="level-card" onclick="startQuiz('easy')">
+        <div class="lv-icon">⭐</div>
+        <div class="lv-body">
+          <div class="lv-title">Easy</div>
+          <div class="lv-desc">Small decks &nbsp;·&nbsp; 2 shapes &nbsp;·&nbsp; More or less likely</div>
+        </div>
+        <div class="lv-badge tag-easy">Beginner</div>
+        <div class="lv-arrow">→</div>
+      </div>
+      <div class="level-card" onclick="startQuiz('hard')">
+        <div class="lv-icon">🔥</div>
+        <div class="lv-body">
+          <div class="lv-title">Hard</div>
+          <div class="lv-desc">Larger decks &nbsp;·&nbsp; 3–4 shapes &nbsp;·&nbsp; Most, least &amp; impossible</div>
+        </div>
+        <div class="lv-badge tag-hard">Challenge</div>
+        <div class="lv-arrow">→</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── QUIZ ── -->
+  <div class="quiz-wrap" id="quizWrap" style="display:none;">
+    <div class="progress-area">
+      <div class="lv-ind easy" id="lvInd">⭐ Easy</div>
+      <div class="q-counter">Q <span id="qNum">1</span>/10</div>
+      <div class="progress-track"><div class="progress-fill" id="pFill"></div></div>
+      <div class="score-badge">⭐ <span id="scoreDisp">0</span></div>
+    </div>
+    <div class="q-card" id="qCard"></div>
+    <div class="btn-row">
+      <button class="btn-check" id="btnCheck">Check Answer</button>
+    </div>
+  </div>
+
+  <!-- ── RESULTS ── -->
+  <div class="results-wrap hidden" id="resultsWrap">
+    <div class="results-card">
+      <div class="res-emoji" id="resEmoji">🎉</div>
+      <div class="res-title">Quiz Complete!</div>
+      <div class="res-score" id="resScore">0/10</div>
+      <div class="res-label">correct answers</div>
+      <div class="res-msg" id="resMsg"></div>
+      <div class="res-btns">
+        <button class="btn-retry" id="btnRetry">Play Again →</button>
+        <button class="btn-change" onclick="showLevelScreen()">Change Level</button>
+      </div>
+      <div class="share-section">
+        <div class="share-label">Share your result</div>
+        <div class="share-btns">
+          <button class="sh-btn sh-x"  onclick="shareX()">𝕏 Post</button>
+          <button class="sh-btn sh-wa" onclick="shareWA()">💬 WhatsApp</button>
+          <button class="sh-btn sh-cp" id="cpBtn" onclick="copyLink()">🔗 Copy Link</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <a href="../../index.html">LearnPad</a> &nbsp;·&nbsp; Free Math Practice &nbsp;·&nbsp;
+  <a href="../../for_school/index.html">School Worksheets</a>
+</footer>
+
+<script>
+/* ═══════════════════════════════════════════
+   SHAPE DEFINITIONS
+═══════════════════════════════════════════ */
+const SHAPES = {
+  circle:   { label: 'Circle',   color: '#A855F7' },
+  square:   { label: 'Square',   color: '#3B82F6' },
+  triangle: { label: 'Triangle', color: '#F59E0B' },
+  star:     { label: 'Star',     color: '#EAB308' },
+  heart:    { label: 'Heart',    color: '#EC4899' },
+  diamond:  { label: 'Diamond',  color: '#14B8A6' },
+};
+
+function shapeBody(name, fill, stroke, sw) {
+  sw = sw || '3';
+  const c = fill, s = stroke || '#1a1f36';
+  switch (name) {
+    case 'circle':
+      return `<circle cx="50" cy="50" r="38" fill="${c}" stroke="${s}" stroke-width="${sw}"/>`;
+    case 'square':
+      return `<rect x="8" y="8" width="84" height="84" rx="7" fill="${c}" stroke="${s}" stroke-width="${sw}"/>`;
+    case 'triangle':
+      return `<polygon points="50,8 93,91 7,91" fill="${c}" stroke="${s}" stroke-width="${sw}" stroke-linejoin="round"/>`;
+    case 'star':
+      return `<polygon points="50,10 60,36 88,38 66,55 74,82 50,67 26,82 34,55 12,38 40,36" fill="${c}" stroke="${s}" stroke-width="${sw}" stroke-linejoin="round"/>`;
+    case 'heart':
+      return `<path d="M50,30 C50,20 35,10 25,20 C12,32 12,50 25,62 L50,85 L75,62 C88,50 88,32 75,20 C65,10 50,20 50,30 Z" fill="${c}" stroke="${s}" stroke-width="${sw}" stroke-linejoin="round"/>`;
+    case 'diamond':
+      return `<polygon points="50,5 93,50 50,95 7,50" fill="${c}" stroke="${s}" stroke-width="${sw}" stroke-linejoin="round"/>`;
+  }
+  return '';
+}
+
+function shapeSVG(name, size) {
+  const fill = SHAPES[name].color;
+  return `<svg viewBox="0 0 100 100" width="${size}" height="${size}" xmlns="http://www.w3.org/2000/svg">${shapeBody(name, fill, '#1a1f36', '3')}</svg>`;
+}
+
+function shapeSmSVG(name, size) {
+  const fill = SHAPES[name].color;
+  return `<svg viewBox="0 0 100 100" width="${size}" height="${size}" xmlns="http://www.w3.org/2000/svg">${shapeBody(name, fill, '#1a1f36', '4')}</svg>`;
+}
+
+/* ═══════════════════════════════════════════
+   HELP CONTENT
+═══════════════════════════════════════════ */
+const HELP = {
+  compare: {
+    title: '🔵 Comparing Likelihood',
+    text:  'Count how many of each shape is in the deck. The shape with <strong>more cards</strong> is more likely to be drawn.',
+    eg:    '2 circles vs 1 square → circles are more likely'
+  },
+  equal: {
+    title: '🟡 Equally Likely',
+    text:  'Two or more outcomes are <strong>equally likely</strong> when they each appear the same number of times in the deck.',
+    eg:    '2 diamonds and 2 circles in a deck → both are equally likely'
+  },
+  most: {
+    title: '🟢 Most Likely',
+    text:  'The shape that appears the <strong>most times</strong> in the deck is the most likely to be drawn.',
+    eg:    '3 circles, 1 square, 1 triangle → circles are most likely'
+  },
+  least: {
+    title: '🟠 Least Likely',
+    text:  'The shape that appears the <strong>fewest times</strong> in the deck is the least likely to be drawn.',
+    eg:    '4 hearts, 2 stars → stars are least likely'
+  },
+  impossible: {
+    title: '🔴 Impossible Events',
+    text:  'If a shape does <strong>not appear in the deck at all</strong>, it is impossible to draw it.',
+    eg:    'A deck with only circles and squares → drawing a triangle is impossible'
+  },
+};
+
+/* ═══════════════════════════════════════════
+   QUESTION SETS
+   Each option: {type:'shape',shape:'circle'} or {type:'text',text:'...'}
+═══════════════════════════════════════════ */
+const EASY_QS = [
+  {
+    category: 'Comparing',
+    deck: ['circle','circle','square'],
+    question: 'Are you more likely to draw a <strong>circle</strong> or a <strong>square</strong>?',
+    helpKey: 'compare',
+    options: [{type:'shape',shape:'circle'},{type:'shape',shape:'square'}],
+    correct: 0,
+    why: '2 circles vs 1 square — circles are more likely to be drawn!'
+  },
+  {
+    category: 'Comparing',
+    deck: ['star','heart','star','triangle'],
+    question: 'Are you more likely to draw a <strong>star</strong> or a <strong>triangle</strong>?',
+    helpKey: 'compare',
+    options: [{type:'shape',shape:'star'},{type:'shape',shape:'triangle'}],
+    correct: 0,
+    why: '2 stars vs 1 triangle — stars are more likely to be drawn!'
+  },
+  {
+    category: 'Equally Likely',
+    deck: ['diamond','diamond','circle','circle'],
+    question: 'Are a <strong>diamond</strong> and a <strong>circle</strong> equally likely to be drawn?',
+    helpKey: 'equal',
+    options: [
+      {type:'text', text:'Yes, equally likely'},
+      {type:'text', text:'No, diamond is more likely'},
+      {type:'text', text:'No, circle is more likely'},
+    ],
+    correct: 0,
+    why: 'Both appear 2 times — they are equally likely!'
+  },
+  {
+    category: 'Least Likely',
+    deck: ['triangle','triangle','triangle','square'],
+    question: 'Which shape are you <strong>least likely</strong> to draw?',
+    helpKey: 'least',
+    options: [{type:'shape',shape:'triangle'},{type:'shape',shape:'square'}],
+    correct: 1,
+    why: 'Only 1 square vs 3 triangles — square is least likely!'
+  },
+  {
+    category: 'Most Likely',
+    deck: ['heart','circle','heart','heart'],
+    question: 'Which shape are you <strong>most likely</strong> to draw?',
+    helpKey: 'most',
+    options: [{type:'shape',shape:'heart'},{type:'shape',shape:'circle'}],
+    correct: 0,
+    why: '3 hearts vs 1 circle — hearts are most likely!'
+  },
+  {
+    category: 'Comparing',
+    deck: ['star','star','circle','triangle','star'],
+    question: 'Are you more likely to draw a <strong>star</strong> or a <strong>circle</strong>?',
+    helpKey: 'compare',
+    options: [{type:'shape',shape:'star'},{type:'shape',shape:'circle'}],
+    correct: 0,
+    why: '3 stars vs 1 circle — stars are more likely!'
+  },
+  {
+    category: 'Equally Likely',
+    deck: ['square','square','diamond','diamond'],
+    question: 'Are a <strong>square</strong> and a <strong>diamond</strong> equally likely to be drawn?',
+    helpKey: 'equal',
+    options: [
+      {type:'text', text:'Yes, equally likely'},
+      {type:'text', text:'No, square is more likely'},
+      {type:'text', text:'No, diamond is more likely'},
+    ],
+    correct: 0,
+    why: 'Both appear 2 times — they are equally likely!'
+  },
+  {
+    category: 'Impossible',
+    deck: ['circle','circle','circle','triangle'],
+    question: 'Is it <strong>impossible</strong> to draw a square from this deck?',
+    helpKey: 'impossible',
+    options: [
+      {type:'text', text:'Yes, it is impossible'},
+      {type:'text', text:'No, it is possible'},
+    ],
+    correct: 0,
+    why: 'There are no squares in the deck at all — it is impossible!'
+  },
+  {
+    category: 'Comparing',
+    deck: ['heart','heart','star','star','star'],
+    question: 'Are you more likely to draw a <strong>heart</strong> or a <strong>star</strong>?',
+    helpKey: 'compare',
+    options: [
+      {type:'shape',shape:'heart'},
+      {type:'shape',shape:'star'},
+      {type:'text', text:'Equally likely'},
+    ],
+    correct: 1,
+    why: '3 stars vs 2 hearts — stars are more likely!'
+  },
+  {
+    category: 'Comparing',
+    deck: ['diamond','triangle','circle','square','circle'],
+    question: 'Are you more likely to draw a <strong>circle</strong> or a <strong>diamond</strong>?',
+    helpKey: 'compare',
+    options: [{type:'shape',shape:'circle'},{type:'shape',shape:'diamond'}],
+    correct: 0,
+    why: '2 circles vs 1 diamond — circles are more likely!'
+  },
+];
+
+const HARD_QS = [
+  {
+    category: 'Most Likely',
+    deck: ['circle','circle','square','triangle','circle'],
+    question: 'Which shape are you <strong>most likely</strong> to draw?',
+    helpKey: 'most',
+    options: [
+      {type:'shape',shape:'circle'},
+      {type:'shape',shape:'square'},
+      {type:'shape',shape:'triangle'},
+    ],
+    correct: 0,
+    why: '3 circles, 1 square, 1 triangle — circles are most likely!'
+  },
+  {
+    category: 'Least Likely',
+    deck: ['star','heart','star','heart','heart','heart'],
+    question: 'Which shape are you <strong>least likely</strong> to draw?',
+    helpKey: 'least',
+    options: [{type:'shape',shape:'star'},{type:'shape',shape:'heart'}],
+    correct: 0,
+    why: '2 stars vs 4 hearts — stars are least likely!'
+  },
+  {
+    category: 'Most Likely',
+    deck: ['diamond','square','circle','diamond','triangle','diamond'],
+    question: 'Which shape are you <strong>most likely</strong> to draw?',
+    helpKey: 'most',
+    options: [
+      {type:'shape',shape:'diamond'},
+      {type:'shape',shape:'circle'},
+      {type:'shape',shape:'triangle'},
+      {type:'shape',shape:'square'},
+    ],
+    correct: 0,
+    why: '3 diamonds, 1 circle, 1 triangle, 1 square — diamonds are most likely!'
+  },
+  {
+    category: 'Equally Likely',
+    deck: ['triangle','circle','square','heart','star'],
+    question: 'Are <strong>all five shapes</strong> equally likely to be drawn?',
+    helpKey: 'equal',
+    options: [
+      {type:'text', text:'Yes, all equally likely'},
+      {type:'text', text:'No, one is more likely'},
+    ],
+    correct: 0,
+    why: 'Each shape appears exactly once — all five are equally likely!'
+  },
+  {
+    category: 'Impossible',
+    deck: ['circle','circle','square','square','triangle'],
+    question: 'Is it <strong>impossible</strong> to draw a diamond from this deck?',
+    helpKey: 'impossible',
+    options: [
+      {type:'text', text:'Yes, it is impossible'},
+      {type:'text', text:'No, it is possible'},
+    ],
+    correct: 0,
+    why: 'There are no diamonds in this deck — it is impossible to draw one!'
+  },
+  {
+    category: 'Equally Likely',
+    deck: ['heart','heart','star','star','diamond','diamond'],
+    question: 'Are <strong>heart</strong>, <strong>star</strong>, and <strong>diamond</strong> all equally likely?',
+    helpKey: 'equal',
+    options: [
+      {type:'text', text:'Yes, all equally likely'},
+      {type:'text', text:'No, heart is most likely'},
+      {type:'text', text:'No, star is most likely'},
+      {type:'text', text:'No, diamond is most likely'},
+    ],
+    correct: 0,
+    why: 'Each appears 2 times — heart, star, and diamond are all equally likely!'
+  },
+  {
+    category: 'Least Likely',
+    deck: ['circle','circle','circle','square','square','triangle'],
+    question: 'Which shape are you <strong>least likely</strong> to draw?',
+    helpKey: 'least',
+    options: [
+      {type:'shape',shape:'circle'},
+      {type:'shape',shape:'square'},
+      {type:'shape',shape:'triangle'},
+    ],
+    correct: 2,
+    why: '3 circles, 2 squares, 1 triangle — triangle is least likely!'
+  },
+  {
+    category: 'Comparing',
+    deck: ['star','star','heart','heart','heart','diamond'],
+    question: 'Are you more likely to draw a <strong>heart</strong> or a <strong>star</strong>?',
+    helpKey: 'compare',
+    options: [
+      {type:'shape',shape:'heart'},
+      {type:'shape',shape:'star'},
+      {type:'text', text:'Equally likely'},
+    ],
+    correct: 0,
+    why: '3 hearts vs 2 stars — hearts are more likely!'
+  },
+  {
+    category: 'Most Likely',
+    deck: ['square','circle','diamond','circle','circle','square'],
+    question: 'Which shape are you <strong>most likely</strong> to draw?',
+    helpKey: 'most',
+    options: [
+      {type:'shape',shape:'square'},
+      {type:'shape',shape:'circle'},
+      {type:'shape',shape:'diamond'},
+    ],
+    correct: 1,
+    why: '3 circles, 2 squares, 1 diamond — circles are most likely!'
+  },
+  {
+    category: 'Comparing',
+    deck: ['triangle','triangle','heart','heart','star','star','circle'],
+    question: 'Is drawing a <strong>triangle</strong> just as likely as drawing a <strong>circle</strong>?',
+    helpKey: 'compare',
+    options: [
+      {type:'text', text:'Yes, equally likely'},
+      {type:'text', text:'No, triangle is more likely'},
+      {type:'text', text:'No, circle is more likely'},
+    ],
+    correct: 1,
+    why: '2 triangles vs 1 circle — triangles are more likely!'
+  },
+];
+
+/* ═══════════════════════════════════════════
+   BUILD HTML
+═══════════════════════════════════════════ */
+function buildDeckHTML(deck) {
+  const isLarge = deck.length >= 5;
+  const cardW   = isLarge ? 46 : 52;
+  const cards   = deck.map((shape, i) => {
+    const sm = isLarge ? ' sm' : '';
+    return `<div class="deck-card${sm}">
+      <div class="deck-card-num">${i + 1}</div>
+      <div class="deck-card-shape">${shapeSmSVG(shape, cardW)}</div>
+    </div>`;
+  }).join('');
+  return `<div class="deck-area">
+    <div class="deck-cards">${cards}</div>
+    <div class="deck-label">Draw 1</div>
+  </div>`;
+}
+
+function buildOptionsHTML(options) {
+  const cols = options.length <= 2 ? 'cols-2'
+             : options.length === 3 ? 'cols-3'
+             : 'cols-4';
+  const opts = options.map((o, i) => {
+    let inner = '';
+    if (o.type === 'shape') {
+      inner = `${shapeSVG(o.shape, 54)}<div class="ans-opt-label">${SHAPES[o.shape].label}</div>`;
+    } else {
+      inner = `<div class="ans-opt-text">${o.text}</div>`;
+    }
+    return `<div class="ans-opt" data-opt="${i}">${inner}</div>`;
+  }).join('');
+  return `<div class="ans-grid ${cols}">${opts}</div>`;
+}
+
+/* ═══════════════════════════════════════════
+   QUIZ STATE
+═══════════════════════════════════════════ */
+let questions = [], qIdx = 0, selOpt = null;
+let isLocked = false, isAnswered = false, score = 0, currentLevel = 'easy';
+
+/* ═══════════════════════════════════════════
+   RENDER QUESTION
+═══════════════════════════════════════════ */
+function renderQuestion(q) {
+  isLocked = isAnswered = false;
+  selOpt = null;
+
+  const help = HELP[q.helpKey];
+  document.getElementById('qCard').innerHTML = `
+    <div class="q-header">
+      <span class="q-badge">${q.category}</span>
+      <button class="q-help-btn" onclick="toggleHelp()">💡 Help</button>
+    </div>
+    <div class="help-box" id="helpBox">
+      <div class="help-title">${help.title}</div>
+      <div class="help-text">${help.text}</div>
+      <div class="help-example">📌 ${help.eg}</div>
+    </div>
+    <p class="q-instruction">${q.question}</p>
+    ${buildDeckHTML(q.deck)}
+    ${buildOptionsHTML(q.options)}
+    <div class="why-box" id="whyBox"><div class="why-text">💡 ${q.why}</div></div>
+    <div class="feedback" id="feedback"></div>`;
+
+  document.querySelectorAll('.ans-opt').forEach(el => {
+    el.addEventListener('click', () => {
+      if (isLocked) return;
+      document.querySelectorAll('.ans-opt').forEach(e => e.classList.remove('sel'));
+      selOpt = +el.dataset.opt;
+      el.classList.add('sel');
+    });
+  });
+
+  const btn = document.getElementById('btnCheck');
+  btn.textContent = 'Check Answer';
+  btn.classList.remove('done');
+}
+
+function toggleHelp() {
+  document.getElementById('helpBox').classList.toggle('open');
+}
+
+/* ═══════════════════════════════════════════
+   CHECK ANSWER
+═══════════════════════════════════════════ */
+function checkAnswer() {
+  if (isAnswered) { advanceQuestion(); return; }
+
+  if (selOpt === null) {
+    const fb = document.getElementById('feedback');
+    fb.innerHTML = '← Pick an answer first!';
+    fb.className = 'feedback show err';
+    return;
+  }
+
+  const q = questions[qIdx];
+  const correct = selOpt === q.correct;
+  isAnswered = isLocked = true;
+
+  const fb  = document.getElementById('feedback');
+  const btn = document.getElementById('btnCheck');
+
+  // show why box
+  document.getElementById('whyBox').classList.add('show');
+
+  if (correct) {
+    score++;
+    document.getElementById('scoreDisp').textContent = score;
+    document.querySelector(`.ans-opt[data-opt="${q.correct}"]`).classList.add('correct');
+    document.querySelector(`.ans-opt[data-opt="${q.correct}"]`).classList.add('anim-ok');
+
+    fb.innerHTML = '✓ &nbsp;Correct!';
+    fb.className = 'feedback show ok';
+    btn.textContent = qIdx < questions.length - 1 ? 'Continue →' : 'See Results →';
+    btn.classList.add('done');
+    document.getElementById('pFill').style.width = (((qIdx + 1) / questions.length) * 100) + '%';
+
+  } else {
+    document.querySelector(`.ans-opt[data-opt="${q.correct}"]`).classList.add('correct');
+    document.querySelector(`.ans-opt[data-opt="${selOpt}"]`).classList.add('wrong');
+    document.querySelector(`.ans-opt[data-opt="${selOpt}"]`).classList.add('anim-err');
+
+    fb.innerHTML = '✗ &nbsp;Not quite — see the explanation below!';
+    fb.className = 'feedback show err';
+    btn.textContent = qIdx < questions.length - 1 ? 'Continue →' : 'See Results →';
+    btn.classList.add('done');
+    document.getElementById('pFill').style.width = (((qIdx + 1) / questions.length) * 100) + '%';
+  }
+
+  // mark remaining options as locked
+  document.querySelectorAll('.ans-opt').forEach(el => el.classList.add('locked'));
+}
+
+function advanceQuestion() {
+  qIdx++;
+  if (qIdx >= questions.length) { showResults(); return; }
+  document.getElementById('qNum').textContent = qIdx + 1;
+  renderQuestion(questions[qIdx]);
+}
+
+/* ═══════════════════════════════════════════
+   RESULTS + SHARE
+═══════════════════════════════════════════ */
+function showResults() {
+  document.getElementById('quizWrap').style.display = 'none';
+  document.getElementById('resultsWrap').classList.remove('hidden');
+  const pct = score / questions.length;
+  const lvLabel = currentLevel === 'hard' ? ' (Hard)' : ' (Easy)';
+  const [emoji, msg] =
+    pct === 1  ? ['🏆', 'Perfect score! You are a likelihood champion!']
+    : pct >= .7 ? ['🎉', 'Great work! You really understand how likelihood works.']
+    : pct >= .5 ? ['👍', 'Good effort! Review the explanations and try again.']
+                : ['📚', 'Keep practicing! Use the Help button on each question.'];
+  document.getElementById('resEmoji').textContent  = emoji;
+  document.getElementById('resScore').textContent  = `${score}/10`;
+  document.getElementById('resMsg').textContent    = msg + lvLabel;
+  document.getElementById('btnRetry').onclick      = () => startQuiz(currentLevel);
+}
+function showLevelScreen() {
+  document.getElementById('resultsWrap').classList.add('hidden');
+  document.getElementById('quizWrap').style.display = 'none';
+  document.getElementById('levelScreen').style.display = '';
+}
+function shareText() { return `I scored ${score}/10 on the LearnPad Likelihood Quiz${currentLevel === 'hard' ? ' (Hard)' : ''}! 🎉`; }
+function shareX()  { window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText())}&url=${encodeURIComponent(location.href)}`, '_blank'); }
+function shareWA() { window.open(`https://wa.me/?text=${encodeURIComponent(shareText() + ' ' + location.href)}`, '_blank'); }
+function copyLink() {
+  const btn = document.getElementById('cpBtn');
+  navigator.clipboard.writeText(location.href).then(() => {
+    btn.textContent = '✓ Copied!'; btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = '🔗 Copy Link'; btn.classList.remove('copied'); }, 2000);
+  });
+}
+
+/* ═══════════════════════════════════════════
+   INIT
+═══════════════════════════════════════════ */
+function shuffle(a) { return [...a].sort(() => Math.random() - .5); }
+
+function startQuiz(level) {
+  currentLevel = level || currentLevel;
+  document.getElementById('levelScreen').style.display = 'none';
+  document.getElementById('quizWrap').style.display    = '';
+  document.getElementById('resultsWrap').classList.add('hidden');
+
+  const ind = document.getElementById('lvInd');
+  ind.textContent = currentLevel === 'hard' ? '🔥 Hard' : '⭐ Easy';
+  ind.className   = 'lv-ind ' + currentLevel;
+
+  questions = shuffle(currentLevel === 'hard' ? HARD_QS : EASY_QS);
+  qIdx = score = 0;
+  document.getElementById('scoreDisp').textContent = 0;
+  document.getElementById('qNum').textContent      = 1;
+  document.getElementById('pFill').style.width     = '0%';
+  renderQuestion(questions[0]);
+}
+
+document.getElementById('btnCheck').addEventListener('click', checkAnswer);
+</script>
+</body>
+</html>

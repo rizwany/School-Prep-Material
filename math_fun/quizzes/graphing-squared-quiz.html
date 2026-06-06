@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Graphing Squared Functions – Math Fun | LearnPad</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0e0f14; --card: #1d1f2b; --border: #2a2c3a;
+      --text: #f0f0f8; --muted: rgba(240,240,248,.42);
+      --green: #58cc02; --green-dk: #46a301; --red: #ff4b4b;
+      --blue: #4361ee; --purple: #7c3aed;
+      --opt-bg: #1e2030; --opt-brd: #313446; --radius: 16px;
+    }
+    body { font-family: 'Nunito', system-ui, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; display: flex; flex-direction: column; }
+
+    header { background: #fff; border-bottom: 2px solid #e2e6f0; padding: 0 24px; position: sticky; top: 0; z-index: 100; flex-shrink: 0; }
+    .header-inner { max-width: 960px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    .logo-link { text-decoration: none; display: flex; align-items: center; }
+    .logo-img { height: 34px; width: auto; }
+    .logo-txt { font-weight: 900; font-size: 1.15rem; color: #4361ee; }
+    nav a { font-weight: 700; font-size: 0.85rem; color: #5a6076; text-decoration: none; padding: 6px 12px; border-radius: 8px; transition: color .15s, background .15s; }
+    nav a:hover { color: #4361ee; background: #eef1fd; }
+
+    main { flex: 1; display: flex; flex-direction: column; align-items: center; }
+    .quiz-shell { width: 100%; max-width: 520px; padding: 16px 20px 80px; display: flex; flex-direction: column; flex: 1; }
+
+    .level-row { display: flex; justify-content: center; gap: 8px; margin-bottom: 18px; }
+    .level-btn { font-family: inherit; font-size: 0.8rem; font-weight: 800; padding: 6px 18px; border-radius: 999px; cursor: pointer; border: 2px solid var(--opt-brd); background: var(--opt-bg); color: var(--muted); transition: all .15s; }
+    .level-btn.active-easy { border-color: var(--green); background: #172110; color: #88e04a; }
+    .level-btn.active-hard { border-color: var(--purple); background: #1e1535; color: #c084fc; }
+
+    .progress-wrap { margin-bottom: 16px; }
+    .progress-track { height: 8px; background: #252733; border-radius: 4px; overflow: hidden; }
+    .progress-fill  { height: 100%; background: var(--green); border-radius: 4px; width: 0%; transition: width .4s ease; }
+    .progress-meta  { display: flex; justify-content: space-between; margin-top: 6px; font-size: 0.72rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+
+    .q-card { background: var(--card); border: 1.5px solid var(--border); border-radius: var(--radius); padding: 22px 18px 18px; margin-bottom: 14px; }
+    .q-text { font-size: 1.02rem; font-weight: 800; line-height: 1.55; margin-bottom: 16px; color: var(--text); }
+
+    /* ── Graph + table side by side ── */
+    .graph-area { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 10px; }
+    .coord-svg { cursor: crosshair; flex-shrink: 0; touch-action: none; display: block; }
+
+    /* Value table */
+    .val-table-wrap { flex: 1; min-width: 90px; }
+    .val-table { width: 100%; border-collapse: collapse; }
+    .val-table th { font-size: 0.75rem; font-weight: 900; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; padding: 5px 8px; border-bottom: 1.5px solid var(--border); text-align: center; font-style: italic; }
+    .val-table td { font-size: 0.88rem; font-weight: 700; padding: 5px 8px; text-align: center; color: var(--text); border-bottom: 1px solid rgba(255,255,255,.05); }
+    .val-table .tr-ok td { color: #88e04a; }
+    .val-table .tr-err td { color: #ff8080; }
+    .val-table .tr-tgt td { color: #a0b4ff; font-weight: 900; }
+    .val-table .tr-tgt .fx-q { color: var(--muted); }
+    .val-table .tr-tgt .fx-placed { color: #a0b4ff; }
+
+    /* Plot hint */
+    .plot-hint { text-align: center; font-size: 0.72rem; font-weight: 700; color: var(--muted); margin-top: 8px; }
+    .plot-hint span { color: #a0b4ff; }
+
+    /* ── Coordinate display for single-plot ── */
+    .coord-display { background: #181921; border: 1.5px solid var(--border); border-radius: 12px; padding: 12px 16px; text-align: center; font-size: 1.1rem; font-weight: 800; color: var(--muted); margin-bottom: 10px; }
+    .coord-display .cx { color: #a0b4ff; }
+    .coord-display .blank { display: inline-block; background: #2a2c3a; border: 2px dashed #3d3f52; border-radius: 8px; min-width: 44px; padding: 1px 10px; color: rgba(255,255,255,.25); font-style: normal; }
+    .coord-display .filled { display: inline-block; background: rgba(67,97,238,.22); border: 2px solid rgba(67,97,238,.7); border-radius: 8px; min-width: 44px; padding: 1px 10px; color: #a0b4ff; font-style: normal; transition: all .2s; }
+    .coord-display .correct-fill { background: rgba(88,204,2,.18); border-color: var(--green); color: #88e04a; }
+    .coord-display .wrong-fill   { background: rgba(255,75,75,.18); border-color: var(--red); color: #ff8080; }
+
+    /* ── Tiles ── */
+    .tiles-row { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; }
+    .tile-btn { background: var(--opt-bg); border: 2px solid var(--opt-brd); border-radius: 12px; color: var(--text); font-family: inherit; font-size: 1rem; font-weight: 800; width: 64px; height: 50px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: border-color .15s, background .15s, transform .1s; }
+    .tile-btn:hover:not(.locked) { border-color: #555870; background: #252737; }
+    .tile-btn:active:not(.locked) { transform: scale(.95); }
+    .tile-btn.selected { border-color: #6070cc; background: #1e2240; }
+    .tile-btn.correct  { border-color: var(--green) !important; background: #172110 !important; color: #88e04a; }
+    .tile-btn.wrong    { border-color: var(--red)   !important; background: #221212 !important; color: #ff8080; }
+    .tile-btn.locked   { cursor: default; }
+
+    /* ── Identify options ── */
+    .options-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 12px; }
+    .opt-btn { background: var(--opt-bg); border: 2px solid var(--opt-brd); border-radius: 14px; color: var(--text); font-family: inherit; font-size: 0.88rem; font-weight: 700; padding: 13px 8px; cursor: pointer; text-align: center; font-style: italic; transition: border-color .15s, background .15s, transform .1s; }
+    .opt-btn:hover:not(.locked) { border-color: #555870; background: #252737; }
+    .opt-btn:active:not(.locked) { transform: scale(.97); }
+    .opt-btn.selected { border-color: #6070cc; background: #1e2240; }
+    .opt-btn.correct  { border-color: var(--green) !important; background: #172110 !important; color: #88e04a; }
+    .opt-btn.wrong    { border-color: var(--red)   !important; background: #221212 !important; color: #ff8080; }
+    .opt-btn.locked   { cursor: default; }
+
+    .start-over-row { display: flex; justify-content: flex-end; margin-top: 4px; }
+    .start-over-btn { background: none; border: none; color: var(--muted); font-family: inherit; font-size: 0.8rem; font-weight: 700; cursor: pointer; padding: 4px 8px; border-radius: 8px; transition: color .15s; display: flex; align-items: center; gap: 5px; }
+    .start-over-btn:hover { color: var(--text); }
+
+    .feedback-bar { border-radius: 12px; padding: 12px 16px; margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px; opacity: 0; transition: opacity .2s; }
+    .feedback-bar.show { opacity: 1; }
+    .feedback-bar.ok  { background: #172110; border: 1.5px solid #2d4a1e; }
+    .feedback-bar.err { background: #221212; border: 1.5px solid #4a1f1f; }
+    .fb-icon  { font-size: 1.1rem; flex-shrink: 0; }
+    .fb-body  { flex: 1; }
+    .fb-title { font-size: 0.88rem; font-weight: 900; margin-bottom: 2px; }
+    .fb-title.ok  { color: #88e04a; }
+    .fb-title.err { color: #ff8080; }
+    .fb-hint  { font-size: 0.78rem; font-weight: 600; color: var(--muted); line-height: 1.5; }
+
+    .why-panel { background: #14182a; border: 1.5px solid rgba(67,97,238,.4); border-radius: 12px; padding: 14px 16px; margin-bottom: 10px; display: none; animation: slideIn .2s ease; }
+    .why-panel.show { display: block; }
+    @keyframes slideIn { from { opacity:0; transform:translateY(-6px) } to { opacity:1; transform:translateY(0) } }
+    .why-title { font-size: 0.8rem; font-weight: 900; color: #a0b4ff; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 8px; }
+    .why-steps { list-style: none; }
+    .why-steps li { font-size: 0.82rem; font-weight: 700; color: var(--muted); padding: 4px 0; border-bottom: 1px solid rgba(255,255,255,.05); line-height: 1.5; }
+    .why-steps li:last-child { border-bottom: none; color: #88e04a; }
+    .why-steps li span { color: #a0b4ff; }
+
+    .btn-row { display: flex; gap: 10px; }
+    .why-btn { flex-shrink: 0; padding: 16px 18px; border: 2px solid var(--opt-brd); border-radius: 999px; font-family: inherit; font-size: 0.9rem; font-weight: 800; cursor: pointer; background: var(--opt-bg); color: var(--muted); transition: all .15s; display: none; }
+    .why-btn.show { display: block; }
+    .why-btn:hover { border-color: #a0b4ff; color: #a0b4ff; }
+    .why-btn.active { border-color: rgba(67,97,238,.7); background: rgba(67,97,238,.15); color: #a0b4ff; }
+    .check-btn { flex: 1; padding: 16px; border: none; border-radius: 999px; font-family: inherit; font-size: 1rem; font-weight: 900; cursor: pointer; background: #252737; color: var(--muted); transition: background .15s, color .15s; }
+    .check-btn.ready    { background: var(--blue);  color: #fff; }
+    .check-btn.ready:hover { background: #3451d1; }
+    .check-btn.continue { background: var(--green); color: #fff; }
+    .check-btn.continue:hover { background: var(--green-dk); }
+
+    .results-wrap { text-align: center; display: none; padding: 20px 0 40px; }
+    .results-wrap.show { display: block; }
+    .res-card { background: var(--card); border: 1.5px solid var(--border); border-radius: var(--radius); padding: 34px 28px 28px; }
+    .res-emoji { font-size: 3rem; margin-bottom: 10px; }
+    .res-title { font-size: 1.4rem; font-weight: 900; color: var(--text); margin-bottom: 4px; }
+    .res-level { font-size: 0.75rem; font-weight: 700; color: var(--muted); margin-bottom: 10px; text-transform: uppercase; letter-spacing: .08em; }
+    .res-score { font-size: 2.8rem; font-weight: 900; color: var(--green); margin: 14px 0 2px; }
+    .res-label { font-size: 0.82rem; font-weight: 700; color: var(--muted); margin-bottom: 14px; }
+    .res-msg   { font-size: 0.88rem; font-weight: 700; color: var(--muted); line-height: 1.6; margin-bottom: 22px; }
+    .btn-retry  { background: var(--blue); color: #fff; font-family: inherit; font-size: 0.95rem; font-weight: 800; padding: 14px 36px; border: none; border-radius: 999px; cursor: pointer; transition: background .15s; display: block; width: 100%; margin-bottom: 10px; }
+    .btn-retry:hover { background: #3451d1; }
+    .btn-switch { background: none; border: 1.5px solid var(--opt-brd); color: var(--muted); font-family: inherit; font-size: 0.85rem; font-weight: 700; padding: 10px 24px; border-radius: 999px; cursor: pointer; transition: all .15s; width: 100%; margin-bottom: 10px; }
+    .btn-switch:hover { border-color: #a0b4ff; color: #a0b4ff; }
+    .btn-home { background: none; border: 1.5px solid var(--border); color: var(--muted); font-family: inherit; font-size: 0.85rem; font-weight: 700; padding: 10px 24px; border-radius: 999px; cursor: pointer; transition: all .15s; width: 100%; }
+    .btn-home:hover { border-color: #555870; color: var(--text); }
+
+    footer { background: #0a0b10; color: rgba(255,255,255,.4); padding: 16px 24px; text-align: center; font-size: 0.75rem; font-weight: 600; }
+    footer a { color: rgba(255,255,255,.25); text-decoration: none; }
+    footer a:hover { color: rgba(255,255,255,.7); }
+
+    @media (max-width: 400px) {
+      .quiz-shell { padding: 12px 12px 70px; }
+      .opt-btn { font-size: 0.8rem; padding: 10px 6px; }
+      .tile-btn { width: 54px; height: 46px; font-size: 0.9rem; }
+      .graph-area { gap: 8px; }
+    }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header>
+  <div class="header-inner">
+    <a class="logo-link" href="../../index.html">
+      <img src="../../logo.png" alt="LearnPad" class="logo-img"
+           onerror="this.outerHTML='<span class=logo-txt>LearnPad</span>'" />
+    </a>
+    <nav>
+      <a href="../../for_school/index.html">School</a>
+      <a href="../../index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="quiz-shell" id="quizShell">
+    <div class="level-row">
+      <button class="level-btn active-easy" id="btnEasy" onclick="setLevel('easy')">Easy</button>
+      <button class="level-btn" id="btnHard" onclick="setLevel('hard')">Hard</button>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-track"><div class="progress-fill" id="pFill"></div></div>
+      <div class="progress-meta">
+        <span>Question <span id="qNum">1</span> of 10</span>
+        <span>⭐ <span id="scoreDisp">0</span></span>
+      </div>
+    </div>
+
+    <div class="q-card" id="qCard"></div>
+
+    <div class="feedback-bar" id="feedbackBar">
+      <div class="fb-icon" id="fbIcon"></div>
+      <div class="fb-body">
+        <div class="fb-title" id="fbTitle"></div>
+        <div class="fb-hint"  id="fbHint"></div>
+      </div>
+    </div>
+
+    <div class="why-panel" id="whyPanel">
+      <div class="why-title">Step-by-step</div>
+      <ul class="why-steps" id="whySteps"></ul>
+    </div>
+
+    <div class="btn-row">
+      <button class="why-btn" id="whyBtn" onclick="toggleWhy()">Why?</button>
+      <button class="check-btn" id="checkBtn">Check</button>
+    </div>
+
+    <div class="results-wrap" id="resultsWrap">
+      <div class="res-card">
+        <div class="res-emoji" id="resEmoji">🎉</div>
+        <div class="res-title">Quiz Complete!</div>
+        <div class="res-level" id="resLevel">Easy Level</div>
+        <div class="res-score" id="resScore">0/10</div>
+        <div class="res-label">correct answers</div>
+        <div class="res-msg"   id="resMsg"></div>
+        <button class="btn-retry"  onclick="initQuiz()">Play Again →</button>
+        <button class="btn-switch" id="btnSwitch" onclick="switchLevel()">Try Hard Level →</button>
+        <button class="btn-home"   onclick="location.href='../../index.html'">← Back to Home</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <a href="../../index.html">LearnPad</a> &nbsp;·&nbsp; Free Math Practice &nbsp;·&nbsp;
+  <a href="../../for_school/index.html">School Worksheets</a>
+</footer>
+
+<script>
+/* ═══════════════════════════════════════════
+   UTILITIES
+═══════════════════════════════════════════ */
+const pick    = a => a[Math.floor(Math.random() * a.length)];
+const shuffle = a => [...a].sort(() => Math.random() - .5);
+
+/* ═══════════════════════════════════════════
+   RULE DEFINITIONS
+   xEx  = x values used as examples (placed in plot_all, shown in identify)
+   xTgt = single x to evaluate in single_plot question
+   yMin/yMax = grid range for plot_all & identify
+   pYMin/pYMax = extended grid range for single_plot (larger to show curve)
+   curveXMin/curveXMax = domain drawn for smooth curve
+═══════════════════════════════════════════ */
+const EASY_RULES = [
+  {
+    id:'xsq', fxLabel:'f(x) = x²',
+    fn: x => x*x,
+    xEx:[-2,-1,0,1,2], xTgt:3,
+    yMin:-1, yMax:5, pYMin:-1, pYMax:10, curveXMin:-2.5, curveXMax:2.5,
+    distractors:['f(x) = x + 2','f(x) = −x + 2','f(x) = 2x'],
+    why: x => [`Substitute x = <span>${x}</span> into f(x) = x²`,`f(${x}) = ${x} × ${x} = <span>${x*x}</span>`,`Plot the point (<span>${x}</span>, <span>${x*x}</span>)`],
+  },
+  {
+    id:'xsqp1', fxLabel:'f(x) = x² + 1',
+    fn: x => x*x+1,
+    xEx:[-2,-1,0,1,2], xTgt:3,
+    yMin:0, yMax:6, pYMin:0, pYMax:11, curveXMin:-2.5, curveXMax:2.5,
+    distractors:['f(x) = x²','f(x) = 2x + 1','f(x) = x + 1'],
+    why: x => [`Substitute x = <span>${x}</span> into f(x) = x² + 1`,`x² = ${x} × ${x} = ${x*x}`,`f(${x}) = ${x*x} + 1 = <span>${x*x+1}</span>`],
+  },
+  {
+    id:'xsqm1', fxLabel:'f(x) = x² − 1',
+    fn: x => x*x-1,
+    xEx:[-2,-1,0,1,2], xTgt:3,
+    yMin:-2, yMax:5, pYMin:-2, pYMax:9, curveXMin:-2.5, curveXMax:2.5,
+    distractors:['f(x) = x²','f(x) = x − 1','f(x) = 2x − 1'],
+    why: x => [`Substitute x = <span>${x}</span> into f(x) = x² − 1`,`x² = ${x} × ${x} = ${x*x}`,`f(${x}) = ${x*x} − 1 = <span>${x*x-1}</span>`],
+  },
+  {
+    id:'2xsq', fxLabel:'f(x) = 2x²',
+    fn: x => 2*x*x,
+    xEx:[-2,-1,0,1,2], xTgt:3,
+    yMin:-1, yMax:9, pYMin:-1, pYMax:19, curveXMin:-2.5, curveXMax:2.5,
+    distractors:['f(x) = x²','f(x) = 2x','f(x) = x² + 1'],
+    why: x => [`Substitute x = <span>${x}</span> into f(x) = 2x²`,`x² = ${x} × ${x} = ${x*x}`,`f(${x}) = 2 × ${x*x} = <span>${2*x*x}</span>`],
+  },
+  {
+    id:'negxsqp4', fxLabel:'f(x) = −x² + 4',
+    fn: x => -x*x+4,
+    xEx:[-2,-1,0,1,2], xTgt:3,
+    yMin:-6, yMax:5, pYMin:-6, pYMax:5, curveXMin:-2.5, curveXMax:2.5,
+    distractors:['f(x) = x²','f(x) = −x + 4','f(x) = x² + 4'],
+    why: x => [`Substitute x = <span>${x}</span> into f(x) = −x² + 4`,`x² = ${x} × ${x} = ${x*x}`,`f(${x}) = −${x*x} + 4 = <span>${-x*x+4}</span>`],
+  },
+  {
+    id:'xsqp2', fxLabel:'f(x) = x² + 2',
+    fn: x => x*x+2,
+    xEx:[-2,-1,0,1,2], xTgt:3,
+    yMin:0, yMax:8, pYMin:0, pYMax:12, curveXMin:-2.5, curveXMax:2.5,
+    distractors:['f(x) = x²','f(x) = x + 2','f(x) = 2x + 2'],
+    why: x => [`Substitute x = <span>${x}</span> into f(x) = x² + 2`,`x² = ${x} × ${x} = ${x*x}`,`f(${x}) = ${x*x} + 2 = <span>${x*x+2}</span>`],
+  },
+];
+
+const HARD_RULES = [
+  {
+    id:'xsqm2', fxLabel:'f(x) = x² − 2',
+    fn: x => x*x-2,
+    xEx:[-2,-1,0,1,2], xTgt:3,
+    yMin:-3, yMax:4, pYMin:-3, pYMax:8, curveXMin:-2.5, curveXMax:2.5,
+    distractors:['f(x) = x²','f(x) = x − 2','f(x) = 2x − 2'],
+    why: x => [`f(x) = x² − 2, x = <span>${x}</span>`,`x² = ${x*x}`,`${x*x} − 2 = <span>${x*x-2}</span>`],
+  },
+  {
+    id:'xm1sq', fxLabel:'f(x) = (x−1)²',
+    fn: x => (x-1)*(x-1),
+    xEx:[-1,0,1,2,3], xTgt:4,
+    yMin:-1, yMax:5, pYMin:-1, pYMax:10, curveXMin:-1.5, curveXMax:3.5,
+    distractors:['f(x) = x²','f(x) = x − 1','f(x) = x² − 1'],
+    why: x => [`f(x) = (x−1)², x = <span>${x}</span>`,`(${x} − 1) = ${x-1}`,`(${x-1})² = ${x-1} × ${x-1} = <span>${(x-1)*(x-1)}</span>`],
+  },
+  {
+    id:'xp1sq', fxLabel:'f(x) = (x+1)²',
+    fn: x => (x+1)*(x+1),
+    xEx:[-3,-2,-1,0,1], xTgt:2,
+    yMin:-1, yMax:5, pYMin:-1, pYMax:10, curveXMin:-3.5, curveXMax:1.5,
+    distractors:['f(x) = x²','f(x) = x + 1','f(x) = x² + 1'],
+    why: x => [`f(x) = (x+1)², x = <span>${x}</span>`,`(${x} + 1) = ${x+1}`,`(${x+1})² = ${x+1} × ${x+1} = <span>${(x+1)*(x+1)}</span>`],
+  },
+  {
+    id:'2xsqm1', fxLabel:'f(x) = 2x² − 1',
+    fn: x => 2*x*x-1,
+    xEx:[-2,-1,0,1,2], xTgt:3,
+    yMin:-2, yMax:8, pYMin:-2, pYMax:18, curveXMin:-2.5, curveXMax:2.5,
+    distractors:['f(x) = 2x²','f(x) = x² − 1','f(x) = 2x − 1'],
+    why: x => [`f(x) = 2x² − 1, x = <span>${x}</span>`,`2 × ${x}² = 2 × ${x*x} = ${2*x*x}`,`${2*x*x} − 1 = <span>${2*x*x-1}</span>`],
+  },
+  {
+    id:'negxsq', fxLabel:'f(x) = −x²',
+    fn: x => -x*x,
+    xEx:[-2,-1,0,1,2], xTgt:3,
+    yMin:-5, yMax:1, pYMin:-10, pYMax:1, curveXMin:-2.5, curveXMax:2.5,
+    distractors:['f(x) = x²','f(x) = −x','f(x) = x² − 4'],
+    why: x => [`f(x) = −x², x = <span>${x}</span>`,`x² = ${x*x}`,`−(${x*x}) = <span>${-x*x}</span> (parabola opens downward)`],
+  },
+  {
+    id:'xsqpx', fxLabel:'f(x) = x² + x',
+    fn: x => x*x+x,
+    xEx:[-2,-1,0,1,2], xTgt:3,
+    yMin:-1, yMax:7, pYMin:-1, pYMax:13, curveXMin:-2.5, curveXMax:2.5,
+    distractors:['f(x) = x²','f(x) = x + x','f(x) = x² + 1'],
+    why: x => [`f(x) = x² + x, x = <span>${x}</span>`,`x² = ${x*x}`,`${x*x} + ${x} = <span>${x*x+x}</span>`],
+  },
+];
+
+/* ═══════════════════════════════════════════
+   GRAPH CONSTANTS
+═══════════════════════════════════════════ */
+const PL = 30, PB = 28, PT = 10, PR = 10; // padding left/bottom/top/right
+
+function gSize(xMin, xMax, yMin, yMax, maxW=210, maxH=280) {
+  const CW = Math.min(46, Math.floor((maxW - PL - PR) / (xMax - xMin)));
+  const CH = Math.min(34, Math.floor((maxH - PT - PB) / (yMax - yMin)));
+  const W  = PL + (xMax - xMin) * CW + PR;
+  const H  = PT + (yMax - yMin) * CH + PB;
+  return { CW, CH, W, H };
+}
+
+function makeSvgHelpers(xMin, yMax, CW, CH) {
+  const sx = x => PL + (x - xMin) * CW;
+  const sy = y => PT + (yMax - y) * CH;
+  return { sx, sy };
+}
+
+/* ═══════════════════════════════════════════
+   SVG PRIMITIVES
+═══════════════════════════════════════════ */
+function svgGrid(xMin, xMax, yMin, yMax, sx, sy, CW, CH) {
+  let g = '';
+  const yStep = (yMax - yMin) > 10 ? 2 : 1;
+  for (let y = yMin; y <= yMax; y++) {
+    g += `<line x1="${sx(xMin)}" y1="${sy(y)}" x2="${sx(xMax)}" y2="${sy(y)}" stroke="rgba(255,255,255,.07)" stroke-width="1"/>`;
+  }
+  for (let x = xMin; x <= xMax; x++) {
+    g += `<line x1="${sx(x)}" y1="${sy(yMin)}" x2="${sx(x)}" y2="${sy(yMax)}" stroke="rgba(255,255,255,.07)" stroke-width="1"/>`;
+  }
+  return g;
+}
+
+function svgAxes(xMin, xMax, yMin, yMax, sx, sy, W, H) {
+  const ax = 'rgba(255,255,255,0.5)';
+  const yAxis = sx(0) >= PL && sx(0) <= W-PR ? `<line x1="${sx(0)}" y1="${PT}" x2="${sx(0)}" y2="${H-PB+6}" stroke="${ax}" stroke-width="1.5" marker-end="url(#axa)"/>` : '';
+  const xAxis = sy(0) >= PT && sy(0) <= H-PB ? `<line x1="${PL}" y1="${sy(0)}" x2="${W-PR+6}" y2="${sy(0)}" stroke="${ax}" stroke-width="1.5" marker-end="url(#axa)"/>` : '';
+  return `<defs><marker id="axa" markerWidth="7" markerHeight="6" refX="6" refY="3" orient="auto"><polygon points="0 0,7 3,0 6" fill="${ax}"/></marker></defs>${yAxis}${xAxis}`;
+}
+
+function svgLabels(xMin, xMax, yMin, yMax, sx, sy) {
+  let l = '';
+  const yStep = (yMax - yMin) > 10 ? 2 : 1;
+  for (let y = yMin; y <= yMax; y += yStep) {
+    if (y === 0) continue;
+    l += `<text x="${PL-5}" y="${sy(y)+4}" text-anchor="end" fill="rgba(255,255,255,0.4)" font-size="11" font-family="Nunito,sans-serif" font-weight="700">${y}</text>`;
+  }
+  for (let x = xMin; x <= xMax; x++) {
+    if (x === 0) continue;
+    l += `<text x="${sx(x)}" y="${sy(yMin)+20}" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-size="11" font-family="Nunito,sans-serif" font-weight="700">${x}</text>`;
+  }
+  // Origin label
+  l += `<text x="${PL-5}" y="${sy(0)+4}" text-anchor="end" fill="rgba(255,255,255,0.25)" font-size="10" font-family="Nunito,sans-serif">0</text>`;
+  return l;
+}
+
+function svgCurve(fn, cxMin, cxMax, sx, sy, yMin, yMax, W, H, color='rgba(67,97,238,0.85)', steps=80) {
+  const pts = [];
+  for (let i = 0; i <= steps; i++) {
+    const x = cxMin + (cxMax - cxMin) * i / steps;
+    pts.push(`${sx(x).toFixed(1)},${sy(fn(x)).toFixed(1)}`);
+  }
+  const clipId = 'gc' + Math.random().toString(36).slice(2,6);
+  return `<defs><clipPath id="${clipId}"><rect x="${PL}" y="${PT}" width="${W-PL-PR}" height="${H-PT-PB}"/></clipPath></defs>
+    <polyline points="${pts.join(' ')}" fill="none" stroke="${color}" stroke-width="2.5" stroke-linejoin="round" clip-path="url(#${clipId})"/>`;
+}
+
+/* ═══════════════════════════════════════════
+   VALUE TABLE HTML
+═══════════════════════════════════════════ */
+function buildTable(xEx, fn, opts = {}) {
+  // opts: { placed: {x:y}, revealed: bool, targetX, selY, correct: bool, afterCheck: bool }
+  const { placed={}, revealed=false, targetX=null, selY=null, correct=false, afterCheck=false } = opts;
+  let rows = xEx.map(x => {
+    const fx = fn(x);
+    let cls = '';
+    if (afterCheck && placed[x] !== undefined) {
+      cls = placed[x] === fx ? 'tr-ok' : 'tr-err';
+    }
+    const disp = placed[x] !== undefined ? placed[x] : (revealed ? fx : '');
+    const tdFx = placed[x] !== undefined || revealed
+      ? `<td>${revealed ? fx : (placed[x] !== undefined ? placed[x] : '')}</td>`
+      : `<td class="tr-tgt fx-q">?</td>`;
+
+    return `<tr class="${cls}"><td>${x}</td><td>${placed[x] !== undefined ? placed[x] : (revealed ? fx : '–')}</td></tr>`;
+  });
+
+  if (targetX !== null) {
+    const correctFx = fn(targetX);
+    let fxTd;
+    if (afterCheck) {
+      fxTd = `<td class="${correct ? 'fx-placed' : 'fx-placed'}">${correctFx}</td>`;
+    } else {
+      fxTd = selY !== null
+        ? `<td class="fx-placed">${selY}</td>`
+        : `<td class="fx-q">?</td>`;
+    }
+    rows.push(`<tr class="tr-tgt"><td><strong>${targetX}</strong></td>${fxTd}</tr>`);
+  }
+
+  return `<table class="val-table">
+    <tr><th>x</th><th><em>f</em>(x)</th></tr>
+    ${rows.join('')}
+  </table>`;
+}
+
+/* ═══════════════════════════════════════════
+   STATE
+═══════════════════════════════════════════ */
+let currentLevel = 'easy';
+let questions = [], qIdx = 0;
+let isAnswered = false, isLocked = false, score = 0, whyOpen = false;
+
+// plot_all state
+let plotPoints = {};   // {x: placedY} — built up as user clicks
+
+// single_plot / identify state
+let selOpt  = null;    // selected option index (identify)
+let singleY = null;    // selected y value (single_plot)
+
+function getRules() { return currentLevel === 'easy' ? EASY_RULES : HARD_RULES; }
+
+/* ═══════════════════════════════════════════
+   LEVEL
+═══════════════════════════════════════════ */
+function setLevel(lvl) {
+  currentLevel = lvl;
+  document.getElementById('btnEasy').className = 'level-btn' + (lvl==='easy' ? ' active-easy' : '');
+  document.getElementById('btnHard').className = 'level-btn' + (lvl==='hard' ? ' active-hard' : '');
+  initQuiz();
+}
+function switchLevel() { setLevel(currentLevel==='easy' ? 'hard' : 'easy'); }
+
+/* ═══════════════════════════════════════════
+   DISTRACTOR HELPERS
+═══════════════════════════════════════════ */
+function numDistractors(correct, count=3) {
+  const offs = shuffle([-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10]);
+  const s = new Set();
+  for (const o of offs) { s.add(correct+o); if(s.size >= count*3) break; }
+  return shuffle([...s]).filter(v => v!==correct).slice(0,count);
+}
+
+/* ═══════════════════════════════════════════
+   QUESTION GENERATORS
+═══════════════════════════════════════════ */
+
+/* TYPE A — plot_all: user places every (xEx, f(xEx)) point */
+function genPlotAll(rule) {
+  return {
+    qtype: 'plot_all', rule,
+    questionText: 'Use the table values to plot the graph of the function.',
+    hint: `Remember: ${rule.fxLabel} — square the x value${rule.fxLabel.includes('+') || rule.fxLabel.includes('−') ? ' then apply the constant' : ''}.`,
+    whySteps: rule.xEx.map(x => `f(<span>${x}</span>) = ${rule.fxLabel.replace('f(x) = ','').replace('x',`(${x})`)
+      .replace(/\(([^)]+)\)/g,(_,n)=>n)} = <span>${rule.fn(x)}</span>`),
+  };
+}
+
+/* TYPE B — identify: graph with points shown, pick the function */
+function genIdentify(rule) {
+  const allRules = getRules();
+  const distractors = shuffle(allRules.filter(r => r.id !== rule.id)).slice(0, 3);
+  const allOpts = shuffle([rule, ...distractors]);
+  return {
+    qtype: 'identify', rule,
+    questionText: 'Which function would produce these outputs?',
+    options: allOpts.map(r => r.fxLabel),
+    correctIndex: allOpts.indexOf(rule),
+    hint: 'Look at the shape: parabolas open up (x²) or down (−x²), and shift up/down or sideways.',
+    whySteps: [`The points form a <span>parabola</span> (U-shape)`,
+               `Check (0, ${rule.fn(0)}): matches only <span>${rule.fxLabel}</span>`,
+               `Also check (1, ${rule.fn(1)}) and (−1, ${rule.fn(-1)}) to confirm`],
+  };
+}
+
+/* TYPE C — single_plot: curve shown, pick y for given x */
+function genSinglePlot(rule) {
+  const tX      = rule.xTgt;
+  const correct = rule.fn(tX);
+  const wrongs  = numDistractors(correct, 3);
+  const allOpts = shuffle([correct, ...wrongs]);
+  return {
+    qtype: 'single_plot', rule,
+    questionText: `Plot f(${tX}) when ${rule.fxLabel}.`,
+    targetX: tX, correctFx: correct,
+    options: allOpts.map(String),
+    correctIndex: allOpts.indexOf(correct),
+    hint: `Substitute x = ${tX} into ${rule.fxLabel} to find the y-coordinate.`,
+    whySteps: rule.why(tX),
+  };
+}
+
+/* ═══════════════════════════════════════════
+   BUILD GRAPH SVG
+═══════════════════════════════════════════ */
+function buildSvg(q, mode = 'default') {
+  /* mode: 'default'   → plot_all in progress
+           'revealed'  → plot_all after check
+           'identify'  → identify (pre-plotted dots, no curve)
+           'identify_after' → identify with curve added
+           'single'    → single_plot (curve + no target dot yet)
+           'single_after'   → single_plot with target dot
+  */
+  const rule = q.rule;
+
+  // Determine grid bounds
+  const isPlotAll  = q.qtype === 'plot_all';
+  const isSingle   = q.qtype === 'single_plot';
+  const xMin = Math.min(...rule.xEx, isSingle ? rule.xTgt : Infinity);
+  const xMax = Math.max(...rule.xEx, isSingle ? rule.xTgt : -Infinity);
+  const yMin = isSingle ? rule.pYMin : rule.yMin;
+  const yMax = isSingle ? rule.pYMax : rule.yMax;
+  const maxH = isSingle ? 290 : 280;
+
+  const { CW, CH, W, H } = gSize(xMin, xMax, yMin, yMax, 216, maxH);
+  const { sx, sy }        = makeSvgHelpers(xMin, yMax, CW, CH);
+
+  let inner = '';
+  inner += svgGrid(xMin, xMax, yMin, yMax, sx, sy, CW, CH);
+  inner += svgAxes(xMin, xMax, yMin, yMax, sx, sy, W, H);
+  inner += svgLabels(xMin, xMax, yMin, yMax, sx, sy);
+
+  const showCurve = mode === 'revealed' || mode === 'identify_after' || mode === 'single' || mode === 'single_after';
+  const curveXMin = rule.curveXMin;
+  const curveXMax = rule.curveXMax;
+  if (showCurve) {
+    const colLocked = isAnswered ? (mode.includes('revealed') || mode.includes('after') ? 'rgba(67,97,238,0.75)' : 'rgba(67,97,238,0.75)') : 'rgba(67,97,238,0.75)';
+    inner += svgCurve(rule.fn, isSingle ? xMin-0.5 : curveXMin, isSingle ? xMax+0.5 : curveXMax, sx, sy, yMin, yMax, W, H, 'rgba(67,97,238,0.85)');
+  }
+
+  // Example points
+  if (mode === 'identify' || mode === 'identify_after') {
+    for (const x of rule.xEx) {
+      const y = rule.fn(x);
+      if (y < yMin || y > yMax) continue;
+      inner += `<circle cx="${sx(x).toFixed(1)}" cy="${sy(y).toFixed(1)}" r="7" fill="#4361ee" stroke="rgba(160,180,255,0.7)" stroke-width="1.5"/>`;
+    }
+  }
+
+  if (mode === 'single' || mode === 'single_after') {
+    for (const x of rule.xEx) {
+      const y = rule.fn(x);
+      if (y < yMin || y > yMax) continue;
+      inner += `<circle cx="${sx(x).toFixed(1)}" cy="${sy(y).toFixed(1)}" r="6" fill="rgba(160,170,190,0.65)" stroke="rgba(200,210,230,0.4)" stroke-width="1.5"/>`;
+    }
+  }
+
+  if (mode === 'single_after') {
+    const tX = q.targetX, tFx = q.correctFx;
+    if (tFx >= yMin && tFx <= yMax) {
+      inner += `<circle cx="${sx(tX).toFixed(1)}" cy="${sy(tFx).toFixed(1)}" r="8" fill="#58cc02" stroke="rgba(160,255,100,0.9)" stroke-width="2.5"/>`;
+      // checkmark
+      inner += `<text x="${sx(tX).toFixed(1)}" y="${sy(tFx)-12}" text-anchor="middle" font-size="12" fill="#88e04a">✓</text>`;
+    }
+    // wrong user point
+    if (singleY !== null && singleY !== tFx && singleY >= yMin && singleY <= yMax) {
+      inner += `<circle cx="${sx(tX).toFixed(1)}" cy="${sy(singleY).toFixed(1)}" r="7" fill="rgba(255,75,75,0.8)" stroke="rgba(255,130,130,0.9)" stroke-width="2"/>`;
+    }
+  }
+
+  // Plot_all: placed & unplaced points
+  if (mode === 'default' || mode === 'revealed') {
+    for (const x of rule.xEx) {
+      const placed = plotPoints[x];
+      const correct = rule.fn(x);
+      const atXaxis = sy(0);
+
+      if (placed !== undefined) {
+        const isRight = placed === correct;
+        const color = mode === 'revealed'
+          ? (isRight ? '#58cc02' : '#ff4b4b')
+          : '#4361ee';
+        const stroke = mode === 'revealed'
+          ? (isRight ? 'rgba(160,255,100,0.9)' : 'rgba(255,130,130,0.9)')
+          : 'rgba(160,180,255,0.8)';
+        if (placed >= yMin && placed <= yMax) {
+          inner += `<circle cx="${sx(x).toFixed(1)}" cy="${sy(placed).toFixed(1)}" r="8" fill="${color}" stroke="${stroke}" stroke-width="2"/>`;
+        }
+        if (mode === 'revealed' && isRight) {
+          inner += `<text x="${sx(x).toFixed(1)}" y="${sy(placed)-12}" text-anchor="middle" font-size="12" fill="#88e04a">✓</text>`;
+        } else if (mode === 'revealed' && !isRight && correct >= yMin && correct <= yMax) {
+          // Show correct position in green
+          inner += `<circle cx="${sx(x).toFixed(1)}" cy="${sy(correct).toFixed(1)}" r="8" fill="#58cc02" stroke="rgba(160,255,100,0.9)" stroke-width="2"/>`;
+          inner += `<text x="${sx(x).toFixed(1)}" y="${sy(correct)-12}" text-anchor="middle" font-size="12" fill="#88e04a">✓</text>`;
+        }
+      } else {
+        // Hollow unplaced circle on x-axis
+        inner += `<circle cx="${sx(x).toFixed(1)}" cy="${atXaxis.toFixed(1)}" r="8" fill="rgba(40,50,90,0.9)" stroke="rgba(100,130,220,0.6)" stroke-width="2"/>`;
+      }
+    }
+  }
+
+  const onclick = (!isLocked && (mode === 'default')) ? `onclick="handleSvgClick(event)"` : '';
+  return { svgHTML: `<svg class="coord-svg" id="coordSvg" width="${W}" height="${H}" ${onclick}>${inner}</svg>`, sx, sy, xMin, xMax, yMin, yMax, CW, CH };
+}
+
+/* ═══════════════════════════════════════════
+   RENDER QUESTION
+═══════════════════════════════════════════ */
+function renderQuestion(q) {
+  plotPoints = {};
+  selOpt = null;
+  singleY = null;
+
+  let html = `<p class="q-text">${q.questionText}</p>`;
+
+  if (q.qtype === 'plot_all') {
+    const { svgHTML } = buildSvg(q, 'default');
+    const tableHTML = buildTableForAll(q.rule, false);
+    html += `<div class="graph-area" id="graphArea">
+      ${svgHTML}
+      <div class="val-table-wrap">${tableHTML}</div>
+    </div>
+    <p class="plot-hint" id="plotHint">Tap the graph to place each point at the<br>correct height. <span>Click to adjust.</span></p>`;
+
+  } else if (q.qtype === 'identify') {
+    const { svgHTML } = buildSvg(q, 'identify');
+    const tableHTML = buildTableIdentify(q.rule);
+    html += `<div class="graph-area">
+      ${svgHTML}
+      <div class="val-table-wrap">${tableHTML}</div>
+    </div>
+    <div class="options-grid" id="optionsGrid">
+      ${q.options.map((lbl,i) => `<button class="opt-btn" onclick="selectOpt(${i})">${lbl}</button>`).join('')}
+    </div>`;
+
+  } else {
+    // single_plot
+    const { svgHTML } = buildSvg(q, 'single');
+    const tableHTML   = buildTableSingle(q.rule, q.targetX, null);
+    html += `<div class="graph-area">
+      ${svgHTML}
+      <div class="val-table-wrap">${tableHTML}</div>
+    </div>
+    <div class="coord-display">(<span class="cx">${q.targetX}</span>, <span class="blank" id="cdBlank">?</span>)</div>
+    <div class="tiles-row" id="optionsGrid">
+      ${q.options.map((lbl,i) => `<button class="tile-btn" onclick="selectTile(${i})">${lbl}</button>`).join('')}
+    </div>`;
+  }
+
+  html += `<div class="start-over-row"><button class="start-over-btn" onclick="initQuiz()">↺ Start over</button></div>`;
+  document.getElementById('qCard').innerHTML = html;
+}
+
+/* ── Table helpers ── */
+function buildTableForAll(rule, afterCheck) {
+  const rows = rule.xEx.map(x => {
+    const fx = rule.fn(x);
+    const placed = plotPoints[x];
+    if (!afterCheck) {
+      return `<tr><td>${x}</td><td>${placed !== undefined ? placed : '–'}</td></tr>`;
+    }
+    const ok = placed !== undefined && placed === fx;
+    return `<tr class="${ok ? 'tr-ok' : 'tr-err'}"><td>${x}</td><td>${fx}</td></tr>`;
+  });
+  return `<table class="val-table"><tr><th>x</th><th><em>f</em>(x)</th></tr>${rows.join('')}</table>`;
+}
+
+function buildTableIdentify(rule) {
+  const rows = rule.xEx.map(x => `<tr><td>${x}</td><td>${rule.fn(x)}</td></tr>`);
+  return `<table class="val-table"><tr><th>x</th><th><em>f</em>(x)</th></tr>${rows.join('')}</table>`;
+}
+
+function buildTableSingle(rule, tX, selY) {
+  const rows = rule.xEx.map(x => `<tr><td>${x}</td><td>${rule.fn(x)}</td></tr>`);
+  const tFxCell = selY !== null
+    ? `<td class="fx-placed">${selY}</td>`
+    : `<td class="fx-q">?</td>`;
+  rows.push(`<tr class="tr-tgt"><td><strong>${tX}</strong></td>${tFxCell}</tr>`);
+  return `<table class="val-table"><tr><th>x</th><th><em>f</em>(x)</th></tr>${rows.join('')}</table>`;
+}
+
+/* ═══════════════════════════════════════════
+   EVENT HANDLERS
+═══════════════════════════════════════════ */
+function handleSvgClick(event) {
+  const q = questions[qIdx];
+  if (q.qtype !== 'plot_all' || isLocked) return;
+
+  const svg  = document.getElementById('coordSvg');
+  const rect = svg.getBoundingClientRect();
+  const svgX = event.clientX - rect.left;
+  const svgY = event.clientY - rect.top;
+
+  const rule = q.rule;
+  const xMin = Math.min(...rule.xEx);
+  const xMax = Math.max(...rule.xEx);
+  const { CW, CH } = gSize(xMin, xMax, rule.yMin, rule.yMax, 216, 280);
+  const yMax = rule.yMax, yMin = rule.yMin;
+
+  // Find nearest xEx
+  const rawX = Math.round((svgX - PL) / CW) + xMin;
+  const nearestX = rule.xEx.reduce((a,b) => Math.abs(b-rawX) < Math.abs(a-rawX) ? b : a);
+
+  // Snap y
+  const dataY = Math.round(yMax - (svgY - PT) / CH);
+  plotPoints[nearestX] = Math.max(yMin, Math.min(yMax, dataY));
+
+  // Redraw graph + table
+  const { svgHTML } = buildSvg(q, 'default');
+  document.getElementById('coordSvg').outerHTML = svgHTML;
+  document.querySelector('.val-table-wrap').innerHTML = buildTableForAll(q.rule, false);
+
+  // Re-attach click listener
+  const newSvg = document.getElementById('coordSvg');
+  if (newSvg) newSvg.onclick = handleSvgClick;
+
+  if (rule.xEx.every(x => plotPoints[x] !== undefined)) {
+    document.getElementById('checkBtn').className = 'check-btn ready';
+  }
+}
+
+function selectOpt(i) {
+  if (isLocked) return;
+  selOpt = i;
+  document.querySelectorAll('.opt-btn').forEach((b,idx) => b.classList.toggle('selected', idx===i));
+  document.getElementById('checkBtn').className = 'check-btn ready';
+}
+
+function selectTile(i) {
+  if (isLocked) return;
+  selOpt = i;
+  singleY = parseInt(questions[qIdx].options[i]);
+  document.querySelectorAll('.tile-btn').forEach((b,idx) => b.classList.toggle('selected', idx===i));
+  const blank = document.getElementById('cdBlank');
+  if (blank) { blank.className = 'filled'; blank.textContent = singleY; }
+  // Update table
+  const rule = questions[qIdx].rule;
+  document.querySelector('.val-table-wrap').innerHTML = buildTableSingle(rule, questions[qIdx].targetX, singleY);
+  document.getElementById('checkBtn').className = 'check-btn ready';
+}
+
+/* ═══════════════════════════════════════════
+   CHECK ANSWER
+═══════════════════════════════════════════ */
+function checkAnswer() {
+  const q = questions[qIdx];
+  if (isAnswered) { advanceQuestion(); return; }
+
+  if (q.qtype === 'plot_all') {
+    if (!q.rule.xEx.every(x => plotPoints[x] !== undefined)) return;
+  } else {
+    if (selOpt === null) return;
+  }
+
+  isAnswered = isLocked = true;
+
+  let correct = false;
+
+  if (q.qtype === 'plot_all') {
+    correct = q.rule.xEx.every(x => plotPoints[x] === q.rule.fn(x));
+    // Redraw with reveal
+    const { svgHTML } = buildSvg(q, correct ? 'revealed' : 'revealed');
+    document.getElementById('coordSvg').outerHTML = svgHTML;
+    document.querySelector('.val-table-wrap').innerHTML = buildTableForAll(q.rule, true);
+
+  } else if (q.qtype === 'identify') {
+    correct = selOpt === q.correctIndex;
+    document.querySelectorAll('.opt-btn').forEach((b,i) => {
+      b.classList.add('locked');
+      if (i === q.correctIndex) b.classList.add('correct');
+      else if (i === selOpt && !correct) b.classList.add('wrong');
+    });
+    // Add curve to graph
+    const { svgHTML } = buildSvg(q, 'identify_after');
+    document.getElementById('coordSvg').outerHTML = svgHTML;
+
+  } else {
+    correct = selOpt === q.correctIndex;
+    document.querySelectorAll('.tile-btn').forEach((b,i) => {
+      b.classList.add('locked');
+      if (i === q.correctIndex) b.classList.add('correct');
+      else if (i === selOpt && !correct) b.classList.add('wrong');
+    });
+    const blank = document.getElementById('cdBlank');
+    if (blank) blank.className = correct ? 'correct-fill' : 'wrong-fill';
+    // Redraw with point
+    const { svgHTML } = buildSvg(q, 'single_after');
+    document.getElementById('coordSvg').outerHTML = svgHTML;
+    // Update table
+    document.querySelector('.val-table-wrap').innerHTML = buildTableSingle(q.rule, q.targetX, q.correctFx);
+  }
+
+  if (correct) {
+    score++;
+    document.getElementById('scoreDisp').textContent = score;
+  }
+
+  const bar = document.getElementById('feedbackBar');
+  bar.className = `feedback-bar ${correct ? 'ok' : 'err'} show`;
+  document.getElementById('fbIcon').textContent = correct ? '✓' : '✗';
+  const titleEl = document.getElementById('fbTitle');
+  titleEl.className = `fb-title ${correct ? 'ok' : 'err'}`;
+
+  if (q.qtype === 'plot_all') {
+    titleEl.textContent = correct ? 'Perfect plot!' : 'Not quite — see correct positions above.';
+  } else if (q.qtype === 'identify') {
+    titleEl.textContent = correct ? 'Correct!' : `Answer: ${q.options[q.correctIndex]}`;
+  } else {
+    titleEl.textContent = correct ? 'Correct!' : `Answer: (${q.targetX}, ${q.correctFx})`;
+  }
+  document.getElementById('fbHint').textContent = q.hint;
+
+  const plotHint = document.getElementById('plotHint');
+  if (plotHint) plotHint.remove();
+
+  document.getElementById('whyBtn').className = 'why-btn show';
+  whyOpen = false;
+  document.getElementById('whyPanel').className = 'why-panel';
+  document.getElementById('pFill').style.width = (((qIdx+1)/10)*100) + '%';
+  const btn = document.getElementById('checkBtn');
+  btn.className = 'check-btn continue';
+  btn.textContent = qIdx < 9 ? 'Continue →' : 'See Results →';
+}
+
+function advanceQuestion() {
+  qIdx++;
+  if (qIdx >= 10) { showResults(); return; }
+  selOpt = null; singleY = null; plotPoints = {};
+  isAnswered = isLocked = whyOpen = false;
+  document.getElementById('qNum').textContent      = qIdx+1;
+  document.getElementById('feedbackBar').className = 'feedback-bar';
+  document.getElementById('checkBtn').className    = 'check-btn';
+  document.getElementById('checkBtn').textContent  = 'Check';
+  document.getElementById('whyBtn').className      = 'why-btn';
+  document.getElementById('whyPanel').className    = 'why-panel';
+  renderQuestion(questions[qIdx]);
+}
+
+/* ═══════════════════════════════════════════
+   WHY PANEL
+═══════════════════════════════════════════ */
+function toggleWhy() {
+  const q = questions[qIdx];
+  whyOpen = !whyOpen;
+  const panel = document.getElementById('whyPanel');
+  const btn   = document.getElementById('whyBtn');
+  if (whyOpen) {
+    const steps = q.qtype === 'plot_all' ? q.whySteps : q.whySteps;
+    document.getElementById('whySteps').innerHTML = steps.map(s=>`<li>${s}</li>`).join('');
+    panel.className = 'why-panel show';
+    btn.className   = 'why-btn show active';
+    btn.textContent = 'Hide';
+  } else {
+    panel.className = 'why-panel';
+    btn.className   = 'why-btn show';
+    btn.textContent = 'Why?';
+  }
+}
+
+/* ═══════════════════════════════════════════
+   RESULTS
+═══════════════════════════════════════════ */
+function showResults() {
+  document.getElementById('qCard').style.display    = 'none';
+  document.getElementById('feedbackBar').className  = 'feedback-bar';
+  document.getElementById('checkBtn').style.display = 'none';
+  document.getElementById('whyBtn').className       = 'why-btn';
+  document.getElementById('whyPanel').className     = 'why-panel';
+  document.getElementById('resultsWrap').className  = 'results-wrap show';
+  const pct = score/10;
+  const [emoji,msg] =
+    pct===1  ? ['🏆','Perfect! You mastered squared function graphs!']
+    : pct>=.8 ? ['🎉','Excellent! Great grasp of parabolas.']
+    : pct>=.6 ? ['👍','Good effort! Use Why? to see step-by-step solutions.']
+    : pct>=.4 ? ['📚','Keep going — remember to square first, then add the constant!']
+              : ['💡','Tip: always substitute x² first, then adjust for constants.'];
+  document.getElementById('resEmoji').textContent = emoji;
+  document.getElementById('resScore').textContent = `${score}/10`;
+  document.getElementById('resMsg').textContent   = msg;
+  document.getElementById('resLevel').textContent = currentLevel==='easy' ? 'Easy Level' : 'Hard Level';
+  document.getElementById('btnSwitch').textContent = currentLevel==='easy' ? 'Try Hard Level →' : 'Try Easy Level →';
+}
+
+/* ═══════════════════════════════════════════
+   INIT — 4 rules → plot_all + identify + single_plot × 3, + 1 bonus
+═══════════════════════════════════════════ */
+function initQuiz() {
+  qIdx = score = 0;
+  selOpt = singleY = null;
+  plotPoints = {};
+  isAnswered = isLocked = whyOpen = false;
+
+  const rules = shuffle(getRules()).slice(0, 4);
+  questions = [
+    genPlotAll(rules[0]),   genIdentify(rules[0]),  genSinglePlot(rules[0]),
+    genPlotAll(rules[1]),   genIdentify(rules[1]),  genSinglePlot(rules[1]),
+    genPlotAll(rules[2]),   genIdentify(rules[2]),  genSinglePlot(rules[2]),
+    pick([genPlotAll, genIdentify, genSinglePlot])(rules[3]),
+  ];
+
+  document.getElementById('qCard').style.display    = '';
+  document.getElementById('checkBtn').style.display = '';
+  document.getElementById('checkBtn').className     = 'check-btn';
+  document.getElementById('checkBtn').textContent   = 'Check';
+  document.getElementById('feedbackBar').className  = 'feedback-bar';
+  document.getElementById('whyBtn').className       = 'why-btn';
+  document.getElementById('whyPanel').className     = 'why-panel';
+  document.getElementById('resultsWrap').className  = 'results-wrap';
+  document.getElementById('scoreDisp').textContent  = 0;
+  document.getElementById('qNum').textContent       = 1;
+  document.getElementById('pFill').style.width      = '0%';
+
+  renderQuestion(questions[0]);
+}
+
+document.getElementById('checkBtn').addEventListener('click', checkAnswer);
+initQuiz();
+</script>
+</body>
+</html>

@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deducing the Rule – Math Fun | LearnPad</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0e0f14; --card: #1d1f2b; --border: #2a2c3a;
+      --text: #f0f0f8; --muted: rgba(240,240,248,.42);
+      --green: #58cc02; --green-dk: #46a301; --red: #ff4b4b;
+      --blue: #4361ee; --opt-bg: #1e2030; --opt-brd: #313446; --radius: 16px;
+    }
+    body { font-family: 'Nunito', system-ui, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; display: flex; flex-direction: column; }
+
+    header { background: #fff; border-bottom: 2px solid #e2e6f0; padding: 0 24px; position: sticky; top: 0; z-index: 100; flex-shrink: 0; }
+    .header-inner { max-width: 960px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    .logo-link { text-decoration: none; display: flex; align-items: center; }
+    .logo-img { height: 34px; width: auto; }
+    .logo-txt { font-weight: 900; font-size: 1.15rem; color: #4361ee; }
+    nav a { font-weight: 700; font-size: 0.85rem; color: #5a6076; text-decoration: none; padding: 6px 12px; border-radius: 8px; transition: color .15s, background .15s; }
+    nav a:hover { color: #4361ee; background: #eef1fd; }
+
+    main { flex: 1; display: flex; flex-direction: column; align-items: center; }
+    .quiz-shell { width: 100%; max-width: 520px; padding: 16px 20px 80px; display: flex; flex-direction: column; flex: 1; }
+
+    .progress-wrap { margin-bottom: 20px; }
+    .progress-track { height: 8px; background: #252733; border-radius: 4px; overflow: hidden; }
+    .progress-fill { height: 100%; background: var(--green); border-radius: 4px; width: 0%; transition: width .4s ease; }
+    .progress-meta { display: flex; justify-content: space-between; margin-top: 6px; font-size: 0.72rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+
+    .q-card { background: var(--card); border: 1.5px solid var(--border); border-radius: var(--radius); padding: 22px 18px 18px; margin-bottom: 14px; }
+    .q-text { font-size: 1.05rem; font-weight: 800; line-height: 1.55; margin-bottom: 20px; color: var(--text); }
+
+    /* ── Machine ── */
+    .machine { margin-bottom: 16px; }
+    .rule-row { display: flex; justify-content: center; margin-bottom: 8px; }
+    .rule-pill { background: #252733; border: 1.5px solid var(--border); color: var(--muted); font-weight: 800; font-size: 0.88rem; padding: 5px 20px; border-radius: 20px; white-space: nowrap; max-width: 260px; text-align: center; }
+    .rule-pill.known { background: rgba(67,97,238,.18); border-color: rgba(67,97,238,.55); color: #a0b4ff; box-shadow: 0 0 20px rgba(67,97,238,.35); }
+    .rule-pill.correct-pill { background: rgba(88,204,2,.18); border-color: rgba(88,204,2,.55); color: #88e04a; box-shadow: 0 0 20px rgba(88,204,2,.3); }
+
+    .diagram-labels { display: flex; justify-content: space-between; padding: 0 2px; margin-bottom: 6px; font-size: 0.72rem; font-weight: 700; color: var(--muted); letter-spacing: .05em; }
+    .diagram-wrapper { position: relative; display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; }
+
+    .rule-glow { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 38px; height: 85%; background: radial-gradient(ellipse at center, rgba(67,97,238,.35) 0%, transparent 70%); pointer-events: none; opacity: 0; transition: opacity .3s; }
+    .machine.rule-known .rule-glow { opacity: 1; }
+    .machine.correct-glow .rule-glow { background: radial-gradient(ellipse at center, rgba(88,204,2,.4) 0%, transparent 70%); opacity: 1; }
+
+    .io-box { background: #181921; border: 1.5px solid var(--border); border-radius: 12px; padding: 5px 10px; flex-shrink: 0; min-width: 80px; position: relative; z-index: 1; }
+    .io-item { height: 50px; display: flex; align-items: center; gap: 6px; }
+    .io-item.in-item { justify-content: flex-end; }
+    .io-item.out-item { justify-content: flex-start; padding-left: 4px; }
+    .io-dot { width: 9px; height: 9px; border-radius: 50%; background: rgba(255,255,255,.55); border: 1.5px solid rgba(255,255,255,.8); flex-shrink: 0; }
+    .io-arr { color: rgba(255,255,255,.4); font-size: 0.65rem; flex-shrink: 0; }
+    .io-val-true  { font-size: 0.9rem; font-weight: 900; color: #58cc02; }
+    .io-val-false { font-size: 0.9rem; font-weight: 900; color: #ff6b6b; }
+    .lines-svg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; overflow: visible; }
+
+    /* Shape icon sizing */
+    .sh-icon { display: block; flex-shrink: 0; }
+    .sh-label { font-size: 0.68rem; font-weight: 700; color: var(--muted); white-space: nowrap; }
+
+    /* ── Options ── */
+    .options-grid { display: grid; gap: 10px; margin-bottom: 12px; }
+    .options-grid.g4 { grid-template-columns: 1fr 1fr; }
+    .options-grid.g2 { grid-template-columns: 1fr 1fr; }
+    .opt-btn { background: var(--opt-bg); border: 2px solid var(--opt-brd); border-radius: 14px; color: var(--text); font-family: inherit; font-size: 0.85rem; font-weight: 800; padding: 14px 10px; cursor: pointer; text-align: center; line-height: 1.4; transition: border-color .15s, background .15s, transform .1s; }
+    .opt-btn:hover:not(.locked) { border-color: #555870; background: #252737; }
+    .opt-btn:active:not(.locked) { transform: scale(0.97); }
+    .opt-btn.selected { border-color: #6070cc; background: #1e2240; }
+    .opt-btn.correct { border-color: var(--green) !important; background: #172110 !important; color: #88e04a; }
+    .opt-btn.wrong   { border-color: var(--red)   !important; background: #221212 !important; color: #ff8080; }
+    .opt-btn.locked  { cursor: default; }
+
+    .start-over-row { display: flex; justify-content: flex-end; margin-top: 2px; }
+    .start-over-btn { background: none; border: none; color: var(--muted); font-family: inherit; font-size: 0.8rem; font-weight: 700; cursor: pointer; padding: 4px 8px; border-radius: 8px; transition: color .15s; display: flex; align-items: center; gap: 5px; }
+    .start-over-btn:hover { color: var(--text); }
+
+    .feedback-bar { border-radius: 12px; padding: 12px 16px; margin-bottom: 14px; display: flex; align-items: flex-start; gap: 10px; opacity: 0; transition: opacity .2s; }
+    .feedback-bar.show { opacity: 1; }
+    .feedback-bar.ok  { background: #172110; border: 1.5px solid #2d4a1e; }
+    .feedback-bar.err { background: #221212; border: 1.5px solid #4a1f1f; }
+    .fb-icon { font-size: 1.1rem; flex-shrink: 0; }
+    .fb-title { font-size: 0.88rem; font-weight: 900; margin-bottom: 2px; }
+    .fb-title.ok { color: #88e04a; } .fb-title.err { color: #ff8080; }
+    .fb-hint { font-size: 0.78rem; font-weight: 600; color: var(--muted); line-height: 1.5; }
+
+    .check-btn { width: 100%; padding: 16px; border: none; border-radius: 999px; font-family: inherit; font-size: 1rem; font-weight: 900; cursor: pointer; background: #252737; color: var(--muted); transition: background .15s, color .15s, transform .1s; }
+    .check-btn.ready { background: var(--blue); color: #fff; }
+    .check-btn.ready:hover { background: #3451d1; }
+    .check-btn.continue { background: var(--green); color: #fff; }
+    .check-btn.continue:hover { background: var(--green-dk); }
+
+    .results-wrap { text-align: center; display: none; padding: 20px 0 40px; }
+    .results-wrap.show { display: block; }
+    .res-card { background: var(--card); border: 1.5px solid var(--border); border-radius: var(--radius); padding: 34px 28px 28px; }
+    .res-emoji { font-size: 3rem; margin-bottom: 10px; }
+    .res-title { font-size: 1.4rem; font-weight: 900; color: var(--text); margin-bottom: 4px; }
+    .res-score { font-size: 2.8rem; font-weight: 900; color: var(--green); margin: 14px 0 2px; }
+    .res-label { font-size: 0.82rem; font-weight: 700; color: var(--muted); margin-bottom: 14px; }
+    .res-msg   { font-size: 0.88rem; font-weight: 700; color: var(--muted); line-height: 1.6; margin-bottom: 22px; }
+    .btn-retry { background: var(--blue); color: #fff; font-family: inherit; font-size: 0.95rem; font-weight: 800; padding: 14px 36px; border: none; border-radius: 999px; cursor: pointer; display: block; width: 100%; margin-bottom: 10px; }
+    .btn-retry:hover { background: #3451d1; }
+    .btn-home  { background: none; border: 1.5px solid var(--border); color: var(--muted); font-family: inherit; font-size: 0.85rem; font-weight: 700; padding: 10px 24px; border-radius: 999px; cursor: pointer; width: 100%; }
+    .btn-home:hover { border-color: #555870; color: var(--text); }
+
+    footer { background: #0a0b10; color: rgba(255,255,255,.4); padding: 16px 24px; text-align: center; font-size: 0.75rem; font-weight: 600; }
+    footer a { color: rgba(255,255,255,.25); text-decoration: none; }
+    footer a:hover { color: rgba(255,255,255,.7); }
+
+    @media (max-width: 480px) {
+      .quiz-shell { padding: 12px 14px 70px; }
+      .opt-btn { font-size: 0.8rem; padding: 12px 8px; }
+    }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header>
+  <div class="header-inner">
+    <a class="logo-link" href="../../index.html">
+      <img src="../../logo.png" alt="LearnPad" class="logo-img"
+           onerror="this.outerHTML='<span class=logo-txt>LearnPad</span>'" />
+    </a>
+    <nav>
+      <a href="../../for_school/index.html">School</a>
+      <a href="../../index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="quiz-shell" id="quizShell">
+    <div class="progress-wrap">
+      <div class="progress-track"><div class="progress-fill" id="pFill"></div></div>
+      <div class="progress-meta">
+        <span>Question <span id="qNum">1</span> of 10</span>
+        <span>⭐ <span id="scoreDisp">0</span></span>
+      </div>
+    </div>
+    <div class="q-card" id="qCard"></div>
+    <div class="feedback-bar" id="feedbackBar">
+      <div class="fb-icon" id="fbIcon"></div>
+      <div class="fb-body">
+        <div class="fb-title" id="fbTitle"></div>
+        <div class="fb-hint"  id="fbHint"></div>
+      </div>
+    </div>
+    <button class="check-btn" id="checkBtn">Check</button>
+    <div class="results-wrap" id="resultsWrap">
+      <div class="res-card">
+        <div class="res-emoji" id="resEmoji">🎉</div>
+        <div class="res-title">Quiz Complete!</div>
+        <div class="res-score" id="resScore">0/10</div>
+        <div class="res-label">correct answers</div>
+        <div class="res-msg"   id="resMsg"></div>
+        <button class="btn-retry" onclick="initQuiz()">Play Again →</button>
+        <button class="btn-home"  onclick="location.href='../../index.html'">← Back to Home</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <a href="../../index.html">LearnPad</a> &nbsp;·&nbsp; Free Math Practice &nbsp;·&nbsp;
+  <a href="../../for_school/index.html">School Worksheets</a>
+</footer>
+
+<script>
+/* ═══════════════════════════════════════════════
+   SHAPE SVG GENERATORS
+═══════════════════════════════════════════════ */
+const CMAP = {
+  blue:'#3B82F6', red:'#EF4444', green:'#22C55E',
+  yellow:'#EAB308', orange:'#F97316', purple:'#A855F7',
+  pink:'#EC4899', teal:'#14B8A6'
+};
+
+function nGon(n, cx, cy, r, a0 = -Math.PI / 2) {
+  return Array.from({length: n}, (_, i) => {
+    const a = a0 + (2 * Math.PI * i / n);
+    return `${(cx + r * Math.cos(a)).toFixed(1)},${(cy + r * Math.sin(a)).toFixed(1)}`;
+  }).join(' ');
+}
+
+function starPts(cx, cy, R, ri) {
+  return Array.from({length: 10}, (_, i) => {
+    const a = -Math.PI / 2 + i * Math.PI / 5;
+    const r = i % 2 === 0 ? R : ri;
+    return `${(cx + r * Math.cos(a)).toFixed(1)},${(cy + r * Math.sin(a)).toFixed(1)}`;
+  }).join(' ');
+}
+
+function makeIcon(shape, dim = 38) {
+  const c = dim / 2;
+  const R = dim * (shape.size === 'lg' ? 0.41 : 0.27);
+  const fill   = shape.filled ? CMAP[shape.color] : 'none';
+  const stroke = CMAP[shape.color];
+  const sw = shape.filled ? 1.5 : 2.2;
+  let body = '';
+  switch (shape.type) {
+    case 'circle':
+      body = `<circle cx="${c}" cy="${c}" r="${R.toFixed(1)}" fill="${fill}" stroke="${stroke}" stroke-width="${sw}"/>`;
+      break;
+    case 'oval':
+      body = `<ellipse cx="${c}" cy="${c}" rx="${R.toFixed(1)}" ry="${(R * 0.6).toFixed(1)}" fill="${fill}" stroke="${stroke}" stroke-width="${sw}"/>`;
+      break;
+    case 'square':
+      body = `<rect x="${(c-R).toFixed(1)}" y="${(c-R).toFixed(1)}" width="${(R*2).toFixed(1)}" height="${(R*2).toFixed(1)}" rx="2" fill="${fill}" stroke="${stroke}" stroke-width="${sw}"/>`;
+      break;
+    case 'triangle':
+      body = `<polygon points="${nGon(3,c,c,R)}" fill="${fill}" stroke="${stroke}" stroke-width="${sw}" stroke-linejoin="round"/>`;
+      break;
+    case 'diamond':
+      body = `<polygon points="${c.toFixed(1)},${(c-R).toFixed(1)} ${(c+R*0.75).toFixed(1)},${c.toFixed(1)} ${c.toFixed(1)},${(c+R).toFixed(1)} ${(c-R*0.75).toFixed(1)},${c.toFixed(1)}" fill="${fill}" stroke="${stroke}" stroke-width="${sw}"/>`;
+      break;
+    case 'pentagon':
+      body = `<polygon points="${nGon(5,c,c,R)}" fill="${fill}" stroke="${stroke}" stroke-width="${sw}"/>`;
+      break;
+    case 'hexagon':
+      body = `<polygon points="${nGon(6,c,c,R,0)}" fill="${fill}" stroke="${stroke}" stroke-width="${sw}"/>`;
+      break;
+    case 'star':
+      body = `<polygon points="${starPts(c,c,R,R*0.42)}" fill="${fill}" stroke="${stroke}" stroke-width="${sw}" stroke-linejoin="round"/>`;
+      break;
+    case 'heart': {
+      const r = R * 0.85;
+      body = `<path d="M${c},${(c+r*0.8).toFixed(1)} C${(c-r*1.4).toFixed(1)},${(c+r*0.2).toFixed(1)} ${(c-r*1.4).toFixed(1)},${(c-r*0.9).toFixed(1)} ${c},${(c-r*0.15).toFixed(1)} C${(c+r*1.4).toFixed(1)},${(c-r*0.9).toFixed(1)} ${(c+r*1.4).toFixed(1)},${(c+r*0.2).toFixed(1)} ${c},${(c+r*0.8).toFixed(1)} Z" fill="${fill}" stroke="${stroke}" stroke-width="${sw}"/>`;
+      break;
+    }
+    case 'cross': {
+      const a = R * 0.42, b = R;
+      body = `<polygon points="${(c-a).toFixed(1)},${(c-b).toFixed(1)} ${(c+a).toFixed(1)},${(c-b).toFixed(1)} ${(c+a).toFixed(1)},${(c-a).toFixed(1)} ${(c+b).toFixed(1)},${(c-a).toFixed(1)} ${(c+b).toFixed(1)},${(c+a).toFixed(1)} ${(c+a).toFixed(1)},${(c+a).toFixed(1)} ${(c+a).toFixed(1)},${(c+b).toFixed(1)} ${(c-a).toFixed(1)},${(c+b).toFixed(1)} ${(c-a).toFixed(1)},${(c+a).toFixed(1)} ${(c-b).toFixed(1)},${(c+a).toFixed(1)} ${(c-b).toFixed(1)},${(c-a).toFixed(1)} ${(c-a).toFixed(1)},${(c-a).toFixed(1)}" fill="${fill}" stroke="${stroke}" stroke-width="${sw}" stroke-linejoin="round"/>`;
+      break;
+    }
+  }
+  return `<svg class="sh-icon" width="${dim}" height="${dim}" viewBox="0 0 ${dim} ${dim}" xmlns="http://www.w3.org/2000/svg">${body}</svg>`;
+}
+
+/* ═══════════════════════════════════════════════
+   SHAPE FACTORY
+═══════════════════════════════════════════════ */
+function S(type, color, size, filled) {
+  const sidesMap = {circle:0,oval:0,heart:0,cross:4,triangle:3,square:4,diamond:4,pentagon:5,hexagon:6,star:10};
+  const sides = sidesMap[type] || 0;
+  const warm  = ['red','orange','yellow','pink'];
+  const cool  = ['blue','green','purple','teal'];
+  const prim  = ['red','yellow','blue'];
+  return {
+    type, color, size, filled, sides,
+    hasCorners: sides >= 3 && type !== 'heart',
+    isCurved:   sides === 0 || type === 'heart',
+    isPolygon:  [3,4,5,6].includes(sides),
+    isWarm:     warm.includes(color),
+    isCool:     cool.includes(color),
+    isPrimary:  prim.includes(color),
+    isLarge:    size === 'lg',
+    isFilled:   filled,
+    icon: () => makeIcon({type,color,size,filled}),
+    label: `${size==='lg'?'large':'small'} ${color} ${type}`,
+  };
+}
+
+/* ═══════════════════════════════════════════════
+   TRIPLET DEFINITIONS
+   Each triplet: 4 example shapes + rule1 + rule2 + test shape
+   rule1 = Q1 answer (identify)
+   rule2 = Q2 answer (equivalent) AND Q3 answer (still works when test added)
+   test shape: rule1 gives False, rule2 gives True → test "maps to True"
+═══════════════════════════════════════════════ */
+const TRIPLETS = [
+  /* T1 — Color (Is blue) vs Size (Is large) */
+  {
+    shapes:  [S('circle','blue','lg',true), S('triangle','blue','lg',true), S('square','red','sm',true), S('diamond','yellow','sm',true)],
+    mapping: [true, true, false, false],
+    rule1: 'Is blue',
+    rule2: 'Is large',
+    test:   S('star','red','lg',true),    // red=not blue → F; large → T
+    q1Distractors: ['Is red','Has no corners','Is a warm color'],
+    q2Distractors: ['Is a circle','Has straight sides','Is a cool color'],
+    q3Hint: 'The large red star is large but not blue. Only one rule assigns it True correctly.',
+  },
+
+  /* T2 — Cool color (Is a cool color) vs No corners (Has curved edges) */
+  {
+    shapes:  [S('circle','blue','lg',true), S('oval','green','lg',true), S('square','orange','lg',true), S('triangle','red','lg',true)],
+    mapping: [true, true, false, false],
+    rule1: 'Is a cool color',
+    rule2: 'Has curved edges',
+    test:   S('heart','yellow','lg',true),  // yellow=warm → F; heart has no corners → T
+    q1Distractors: ['Is large','Has straight sides','Is a primary color'],
+    q2Distractors: ['Is a polygon','Is large','Is a warm color'],
+    q3Hint: 'The yellow heart is warm-colored but does have curved edges. Check each rule.',
+  },
+
+  /* T3 — Size (Is large) vs Sides (Fewer than 5 sides) */
+  {
+    shapes:  [S('triangle','blue','lg',true), S('square','red','lg',true), S('pentagon','green','sm',true), S('hexagon','orange','sm',true)],
+    mapping: [true, true, false, false],
+    rule1: 'Is large',
+    rule2: 'Has fewer than 5 sides',
+    test:   S('triangle','yellow','sm',true),  // small → F; triangle=3 sides <5 → T
+    q1Distractors: ['Is a cool color','Has more than 4 sides','Is filled'],
+    q2Distractors: ['Is a cool color','Has more than 4 sides','Is small'],
+    q3Hint: 'The small yellow triangle is small, but it only has 3 sides.',
+  },
+
+  /* T4 — Fewer than 5 sides vs Primary color */
+  {
+    shapes:  [S('triangle','blue','lg',true), S('square','red','lg',true), S('pentagon','green','lg',true), S('hexagon','orange','lg',true)],
+    mapping: [true, true, false, false],
+    rule1: 'Has fewer than 5 sides',
+    rule2: 'Is a primary color',
+    test:   S('hexagon','yellow','lg',true),  // 6 sides → F; yellow=primary → T
+    q1Distractors: ['Is a primary color','Is large','Has more than 4 sides'],
+    q2Distractors: ['Is large','Has straight sides','Is a cool color'],
+    q3Hint: 'The yellow hexagon has 6 sides but yellow IS a primary color (red, yellow, blue).',
+  },
+
+  /* T5 — Filled vs Warm color */
+  {
+    shapes:  [S('circle','red','lg',true), S('square','orange','lg',true), S('triangle','blue','lg',false), S('pentagon','green','lg',false)],
+    mapping: [true, true, false, false],
+    rule1: 'Is filled',
+    rule2: 'Is a warm color',
+    test:   S('heart','red','lg',false),    // outlined → F; red=warm → T
+    q1Distractors: ['Is a warm color','Is a circle or square','Is large'],
+    q2Distractors: ['Is filled','Is large','Has fewer than 5 sides'],
+    q3Hint: 'The red heart is outlined (not filled) but red is a warm color.',
+  },
+
+  /* T6 — More than 4 sides vs Not filled (outlined) */
+  {
+    shapes:  [S('pentagon','blue','lg',false), S('hexagon','purple','lg',false), S('triangle','yellow','lg',true), S('square','orange','lg',true)],
+    mapping: [true, true, false, false],
+    rule1: 'Has more than 4 sides',
+    rule2: 'Is not filled',
+    test:   S('star','red','lg',true),    // star=10 sides >4 → T; filled → F
+    q1Distractors: ['Is a cool color','Is not filled','Has straight sides'],
+    q2Distractors: ['Is a cool color','Has more than 4 sides','Is large'],
+    q3Hint: 'The red star has 10 sides (more than 4) but it IS filled.',
+  },
+];
+
+/* ═══════════════════════════════════════════════
+   BUILD DIAGRAM HTML
+═══════════════════════════════════════════════ */
+function buildInputBox(shapes, highlightLast) {
+  return shapes.map((s, i) => {
+    const isLast = highlightLast && i === shapes.length - 1;
+    return `<div class="io-item in-item" id="inrow-${i}">
+      <div style="display:flex;flex-direction:column;align-items:center;gap:1px">
+        ${s.icon()}
+        <span style="font-size:0.56rem;font-weight:700;color:${isLast?'#fff':CMAP[s.color]};opacity:${isLast?1:0.7}">${s.color} ${s.type}</span>
+      </div>
+      <span class="io-dot" style="${isLast?'border-color:#fff;background:#fff':''}"></span>
+    </div>`;
+  }).join('');
+}
+
+function buildOutputBox(rowCount) {
+  // Always 2 rows: True and False
+  // Vertically centered to span all input rows
+  const rowH = 50;
+  const totalH = rowCount * rowH;
+  const gap = Math.max(6, (totalH - 2 * rowH) / 3);
+  return `
+    <div class="io-item out-item" id="outrow-0" style="margin-bottom:${gap.toFixed(0)}px">
+      <span class="io-arr">▶</span>
+      <span class="io-val-true">True</span>
+    </div>
+    <div class="io-item out-item" id="outrow-1">
+      <span class="io-arr">▶</span>
+      <span class="io-val-false">False</span>
+    </div>`;
+}
+
+function buildDiagram(shapes, mapping, pillText, pillClass) {
+  const inputHTML  = buildInputBox(shapes, false);
+  const outputHTML = buildOutputBox(shapes.length);
+  return `
+    <div class="machine${pillClass.includes('known')||pillClass.includes('correct')?(' rule-known'+(pillClass.includes('correct')?' correct-glow':'')):''}">
+      <div class="rule-row"><div class="rule-pill ${pillClass}">${pillText}</div></div>
+      <div class="diagram-labels"><span>inputs</span><span>outputs</span></div>
+      <div class="diagram-wrapper" id="diagramWrap">
+        <div class="io-box" id="inputBox">${inputHTML}</div>
+        <div class="io-box" id="outputBox" style="display:flex;flex-direction:column;justify-content:center;min-height:${shapes.length*50}px">${outputHTML}</div>
+        <div class="rule-glow"></div>
+        <svg class="lines-svg" id="linesSvg"></svg>
+      </div>
+    </div>`;
+}
+
+function buildDiagramQ3(shapes, mapping, testShape, pillText, pillClass) {
+  const allShapes  = [...shapes, testShape];
+  const allMapping = [...mapping, true]; // test always maps to True
+  const inputHTML  = buildInputBox(allShapes, true); // highlight last row
+  const outputHTML = buildOutputBox(allShapes.length);
+  return `
+    <div class="machine${pillClass.includes('known')||pillClass.includes('correct')?(' rule-known'+(pillClass.includes('correct')?' correct-glow':'')):''}">
+      <div class="rule-row"><div class="rule-pill ${pillClass}">${pillText}</div></div>
+      <div class="diagram-labels"><span>inputs</span><span>outputs</span></div>
+      <div class="diagram-wrapper" id="diagramWrap">
+        <div class="io-box" id="inputBox">${inputHTML}</div>
+        <div class="io-box" id="outputBox" style="display:flex;flex-direction:column;justify-content:center;min-height:${allShapes.length*50}px">${outputHTML}</div>
+        <div class="rule-glow"></div>
+        <svg class="lines-svg" id="linesSvg"></svg>
+      </div>
+    </div>`;
+}
+
+/* ═══════════════════════════════════════════════
+   DRAW SVG LINES  (converging: many inputs → 2 outputs)
+═══════════════════════════════════════════════ */
+function drawLines(mapping) {
+  const wrap   = document.getElementById('diagramWrap');
+  const inBox  = document.getElementById('inputBox');
+  const outBox = document.getElementById('outputBox');
+  const svg    = document.getElementById('linesSvg');
+  if (!wrap || !inBox || !outBox || !svg) return;
+
+  const wR  = wrap.getBoundingClientRect();
+  const inR = inBox.getBoundingClientRect();
+  const outR= outBox.getBoundingClientRect();
+  const outRows = [...outBox.querySelectorAll('.io-item.out-item')];
+  const inRows  = [...inBox.querySelectorAll('.io-item.in-item')];
+  if (!inRows.length || !outRows.length) return;
+
+  svg.setAttribute('viewBox', `0 0 ${wR.width.toFixed(1)} ${wR.height.toFixed(1)}`);
+  svg.setAttribute('width',  wR.width.toFixed(1));
+  svg.setAttribute('height', wR.height.toFixed(1));
+
+  const lines = mapping.map((isTrue, i) => {
+    const iRow = inRows[i]?.getBoundingClientRect();
+    const oRow = outRows[isTrue ? 0 : 1]?.getBoundingClientRect();
+    if (!iRow || !oRow) return '';
+    return `<line
+      x1="${(inR.right  - wR.left).toFixed(1)}" y1="${(iRow.top + iRow.height/2 - wR.top).toFixed(1)}"
+      x2="${(outR.left  - wR.left).toFixed(1)}" y2="${(oRow.top + oRow.height/2 - wR.top).toFixed(1)}"
+      stroke="rgba(255,255,255,0.3)" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#ah)"/>`;
+  });
+
+  svg.innerHTML = `<defs>
+    <marker id="ah" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto">
+      <polygon points="0 0,8 3.5,0 7" fill="rgba(255,255,255,0.38)"/>
+    </marker>
+  </defs>${lines.join('')}`;
+}
+
+let _currentMapping = [];
+window.addEventListener('resize', () => setTimeout(() => drawLines(_currentMapping), 80));
+
+/* ═══════════════════════════════════════════════
+   QUESTION GENERATORS
+═══════════════════════════════════════════════ */
+const shuffle = a => [...a].sort(() => Math.random() - .5);
+const pick    = a => a[Math.floor(Math.random() * a.length)];
+
+function genIdentify(t) {
+  const opts = shuffle([t.rule1, ...t.q1Distractors]);
+  return {
+    qtype: 'identify',
+    questionText: 'Which rule could produce these outputs from these inputs?',
+    pillText: '?', pillClass: '',
+    shapes: t.shapes, mapping: t.mapping,
+    options: opts, correctIndex: opts.indexOf(t.rule1),
+    optCols: 'g4',
+    hint: `Look at all the True shapes — what single property do they share?`,
+    t,
+  };
+}
+
+function genEquivalent(t) {
+  const opts = shuffle([t.rule2, ...t.q2Distractors]);
+  return {
+    qtype: 'equivalent',
+    questionText: 'Which other rule could produce the same outputs from these inputs?',
+    pillText: '?', pillClass: '',
+    shapes: t.shapes, mapping: t.mapping,
+    options: opts, correctIndex: opts.indexOf(t.rule2),
+    optCols: 'g4',
+    hint: `"${t.rule1}" already works. Find a completely different property that also splits True/False the same way.`,
+    t,
+  };
+}
+
+function genStillWorks(t) {
+  const opts = shuffle([t.rule1, t.rule2]);
+  const correctRule = t.rule2; // rule2 maps test→True; rule1 maps test→False
+  return {
+    qtype: 'stillworks',
+    questionText: `Which rule still works if ${t.test.label} maps to True?`,
+    pillText: '?', pillClass: '',
+    shapes: t.shapes, mapping: t.mapping,
+    testShape: t.test,
+    options: opts, correctIndex: opts.indexOf(correctRule),
+    optCols: 'g2',
+    hint: t.q3Hint,
+    t,
+  };
+}
+
+/* ═══════════════════════════════════════════════
+   RENDER
+═══════════════════════════════════════════════ */
+function renderQuestion(q) {
+  const mapping = q.qtype === 'stillworks'
+    ? [...q.mapping, true]
+    : q.mapping;
+  _currentMapping = mapping;
+
+  const diagramHTML = q.qtype === 'stillworks'
+    ? buildDiagramQ3(q.shapes, q.mapping, q.testShape, q.pillText, q.pillClass)
+    : buildDiagram(q.shapes, q.mapping, q.pillText, q.pillClass);
+
+  document.getElementById('qCard').innerHTML = `
+    <p class="q-text">${q.questionText}</p>
+    ${diagramHTML}
+    <div class="options-grid ${q.optCols}" id="optionsGrid">
+      ${q.options.map((lbl, i) =>
+        `<button class="opt-btn" data-opt="${i}" onclick="selectOpt(${i})">${lbl}</button>`
+      ).join('')}
+    </div>
+    <div class="start-over-row">
+      <button class="start-over-btn" onclick="initQuiz()">↺ Start over</button>
+    </div>`;
+
+  requestAnimationFrame(() => requestAnimationFrame(() => drawLines(mapping)));
+}
+
+/* ═══════════════════════════════════════════════
+   QUIZ LOGIC
+═══════════════════════════════════════════════ */
+let questions = [], qIdx = 0, selOpt = null;
+let isAnswered = false, isLocked = false, score = 0;
+
+function selectOpt(i) {
+  if (isLocked) return;
+  selOpt = i;
+  document.querySelectorAll('.opt-btn').forEach((b, idx) => b.classList.toggle('selected', idx === i));
+  document.getElementById('checkBtn').className = 'check-btn ready';
+}
+
+function checkAnswer() {
+  const q = questions[qIdx];
+  if (isAnswered) { advanceQuestion(); return; }
+  if (selOpt === null) return;
+  isAnswered = isLocked = true;
+  const correct = selOpt === q.correctIndex;
+
+  document.getElementById('optionsGrid').innerHTML = q.options.map((lbl, i) => {
+    let cls = 'opt-btn locked';
+    if (i === q.correctIndex) cls += ' correct';
+    else if (i === selOpt) cls += ' wrong';
+    return `<button class="${cls}">${lbl}</button>`;
+  }).join('');
+
+  if (correct) {
+    score++;
+    document.getElementById('scoreDisp').textContent = score;
+  }
+
+  const bar = document.getElementById('feedbackBar');
+  bar.className = `feedback-bar ${correct ? 'ok' : 'err'} show`;
+  document.getElementById('fbIcon').textContent = correct ? '✓' : '✗';
+  const ti = document.getElementById('fbTitle');
+  ti.className = `fb-title ${correct ? 'ok' : 'err'}`;
+  ti.textContent = correct ? 'Correct!' : `Answer: "${q.options[q.correctIndex]}"`;
+  document.getElementById('fbHint').textContent = q.hint;
+
+  document.getElementById('pFill').style.width = (((qIdx + 1) / 10) * 100) + '%';
+  const btn = document.getElementById('checkBtn');
+  btn.className = 'check-btn continue';
+  btn.textContent = qIdx < 9 ? 'Continue →' : 'See Results →';
+}
+
+function advanceQuestion() {
+  qIdx++;
+  if (qIdx >= 10) { showResults(); return; }
+  selOpt = null; isAnswered = isLocked = false;
+  document.getElementById('qNum').textContent = qIdx + 1;
+  document.getElementById('feedbackBar').className = 'feedback-bar';
+  document.getElementById('checkBtn').className = 'check-btn';
+  document.getElementById('checkBtn').textContent = 'Check';
+  renderQuestion(questions[qIdx]);
+}
+
+function showResults() {
+  document.getElementById('qCard').style.display    = 'none';
+  document.getElementById('feedbackBar').className  = 'feedback-bar';
+  document.getElementById('checkBtn').style.display = 'none';
+  document.getElementById('resultsWrap').className  = 'results-wrap show';
+  const pct = score / 10;
+  const [emoji, msg] =
+    pct === 1  ? ['🏆','Perfect! You can deduce any rule!']
+    : pct >= .8 ? ['🎉','Excellent logic skills! You spotted the patterns.']
+    : pct >= .6 ? ['👍','Good work! Review the hints to sharpen your reasoning.']
+    : pct >= .4 ? ['📚','Keep practicing — look for ONE property that all True shapes share.']
+                : ['💡','Tip: compare what True shapes have in common vs False shapes.'];
+  document.getElementById('resEmoji').textContent = emoji;
+  document.getElementById('resScore').textContent = `${score}/10`;
+  document.getElementById('resMsg').textContent   = msg;
+}
+
+/* ═══════════════════════════════════════════════
+   INIT — pick 3 triplets × 3 question types + 1 bonus identify
+═══════════════════════════════════════════════ */
+function initQuiz() {
+  qIdx = score = 0; selOpt = null; isAnswered = isLocked = false;
+
+  const chosen = shuffle(TRIPLETS).slice(0, 4);
+  questions = [
+    genIdentify(chosen[0]), genEquivalent(chosen[0]), genStillWorks(chosen[0]),
+    genIdentify(chosen[1]), genEquivalent(chosen[1]), genStillWorks(chosen[1]),
+    genIdentify(chosen[2]), genEquivalent(chosen[2]), genStillWorks(chosen[2]),
+    genIdentify(chosen[3]),  // bonus 10th: identify only
+  ];
+
+  document.getElementById('qCard').style.display    = '';
+  document.getElementById('checkBtn').style.display = '';
+  document.getElementById('checkBtn').className     = 'check-btn';
+  document.getElementById('checkBtn').textContent   = 'Check';
+  document.getElementById('feedbackBar').className  = 'feedback-bar';
+  document.getElementById('resultsWrap').className  = 'results-wrap';
+  document.getElementById('scoreDisp').textContent  = 0;
+  document.getElementById('qNum').textContent       = 1;
+  document.getElementById('pFill').style.width      = '0%';
+
+  renderQuestion(questions[0]);
+}
+
+document.getElementById('checkBtn').addEventListener('click', checkAnswer);
+initQuiz();
+</script>
+</body>
+</html>
