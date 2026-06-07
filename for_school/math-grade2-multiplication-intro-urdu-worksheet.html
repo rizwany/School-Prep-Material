@@ -440,5 +440,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </footer>
 <script id="burger-menu-js">
 (function(){var b=document.getElementById('burgerBtn'),n=document.getElementById('siteNav');if(!b||!n)return;b.addEventListener('click',function(e){e.stopPropagation();var o=n.classList.toggle('nav-open');b.classList.toggle('is-open',o);b.setAttribute('aria-expanded',o?'true':'false');});document.addEventListener('click',function(e){if(n.classList.contains('nav-open')&&!e.target.closest('header')){n.classList.remove('nav-open');b.classList.remove('is-open');b.setAttribute('aria-expanded','false');}});})();
-</script></body>
+</script>
+<script src="../assets/shared-nav.js"></script>
+</body>
 </html>
