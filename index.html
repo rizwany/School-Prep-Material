@@ -630,15 +630,15 @@ function getScienceLinks(grade, topic) {
 
 function buildTopicRow(label, links) {
   const urPart = links.helpUr ? `
-    <a class="topic-link link-help-ur" href="${links.helpUr}" target="_blank">Help UR</a>
-    <a class="topic-link link-sheet-ur" href="${links.worksheetUr}" target="_blank">Sheet UR</a>
+    <a class="topic-link link-help-ur" href="${links.helpUr}">Help UR</a>
+    <a class="topic-link link-sheet-ur" href="${links.worksheetUr}">Sheet UR</a>
   ` : '';
   return `
     <div class="topic-row" data-label="${label.toLowerCase()}">
       <span class="topic-name">${label}</span>
       <div class="topic-links">
-        <a class="topic-link link-help" href="${links.help}" target="_blank">Help</a>
-        <a class="topic-link link-sheet" href="${links.worksheet}" target="_blank">Worksheet</a>
+        <a class="topic-link link-help" href="${links.help}">Help</a>
+        <a class="topic-link link-sheet" href="${links.worksheet}">Worksheet</a>
         ${urPart}
       </div>
     </div>`;
@@ -709,7 +709,7 @@ function buildLearningsGrid() {
   const grid = document.getElementById('learningsGrid');
   LEARNINGS_DATA.forEach(mod => {
     const topicLinks = mod.topics.map(t =>
-      `<a class="module-link" href="${mod.base}${t.slug}.html" target="_blank">${t.label}</a>`
+      `<a class="module-link" href="${mod.base}${t.slug}.html">${t.label}</a>`
     ).join('');
     grid.innerHTML += `
       <div class="module-card">
@@ -717,7 +717,7 @@ function buildLearningsGrid() {
           <span class="module-icon">${mod.icon}</span> ${mod.title}
         </div>
         <div class="module-links">
-          <a class="module-link is-index" href="${mod.index}" target="_blank">📋 Module Index</a>
+          <a class="module-link is-index" href="${mod.index}">📋 Module Index</a>
           ${topicLinks}
         </div>
       </div>`;
@@ -838,7 +838,7 @@ function buildMathFunGrid() {
 
   Object.entries(MATHFUN_CATEGORIES).forEach(([cat, slugs]) => {
     const links = slugs.map(slug =>
-      `<a class="module-link" href="math_fun/quizzes/${slug}.html" target="_blank">${quizMap[slug] || toTitle(slug)}</a>`
+      `<a class="module-link" href="math_fun/quizzes/${slug}.html">${quizMap[slug] || toTitle(slug)}</a>`
     ).join('');
     grid.innerHTML += `
       <div class="module-card">
