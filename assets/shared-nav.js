@@ -1,8 +1,18 @@
-/* LearnPad – Shared Navigation v1.0
+/* LearnPad – Shared Navigation v2.0
    Injects a consistent header + footer on every page.
    Auto-detects root path from its own <script src> URL. */
 (function () {
   'use strict';
+
+  /* ── 0. Username key sync (runs synchronously, before DOMContentLoaded)
+     Worksheets check 'ws_username'; the nav uses 'lp_username'.
+     Mirror whichever is set so worksheets never ask again. ──────── */
+  try {
+    var _lp = localStorage.getItem('lp_username');
+    var _ws = localStorage.getItem('ws_username');
+    if (_lp && !_ws) localStorage.setItem('ws_username', _lp);
+    else if (_ws && !_lp) localStorage.setItem('lp_username', _ws);
+  } catch (e) {}
 
   /* ── 1. Root path ─────────────────────────────────────────────── */
   var scriptEl = document.currentScript;
@@ -15,7 +25,6 @@
 
   /* ── 2. CSS ───────────────────────────────────────────────────── */
   var css = [
-    /* ─ import Nunito if not already loaded ─ */
     "@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');",
 
     /* ─ nav shell ─ */
@@ -52,6 +61,64 @@
     "  white-space:nowrap;flex-shrink:0;",
     "}",
 
+    /* ─ username button ─ */
+    ".lp-username-btn{",
+    "  display:flex;align-items:center;gap:6px;flex-shrink:0;",
+    "  background:#eef1fd;border:2px solid transparent;",
+    "  color:#4361EE;font-weight:800;font-size:0.82rem;",
+    "  padding:5px 12px;border-radius:20px;",
+    "  cursor:pointer;font-family:'Nunito',sans-serif;",
+    "  transition:background .15s,border-color .15s;white-space:nowrap;",
+    "  max-width:140px;overflow:hidden;text-overflow:ellipsis;",
+    "}",
+    ".lp-username-btn:hover{background:#d8e0fb;border-color:#4361EE;}",
+    ".lp-username-btn.has-name{background:#f0fdf4;color:#059669;border-color:transparent;}",
+    ".lp-username-btn.has-name:hover{background:#dcfce7;border-color:#059669;}",
+
+    /* ─ username popup ─ */
+    "#lp-username-popup{",
+    "  display:none;position:fixed;",
+    "  top:64px;right:20px;",
+    "  background:#fff;border:2px solid #e2e6f0;",
+    "  border-radius:14px;padding:18px;",
+    "  box-shadow:0 8px 32px rgba(0,0,0,.12);",
+    "  z-index:999999;width:240px;",
+    "  font-family:'Nunito',sans-serif;",
+    "}",
+    "#lp-username-popup.open{display:block;}",
+    "#lp-username-popup label{",
+    "  display:block;font-size:0.7rem;font-weight:800;",
+    "  text-transform:uppercase;letter-spacing:.08em;",
+    "  color:#5a6076;margin-bottom:8px;",
+    "}",
+    "#lp-username-popup input{",
+    "  width:100%;padding:9px 12px;",
+    "  border:2px solid #e2e6f0;border-radius:9px;",
+    "  font-family:'Nunito',sans-serif;font-size:0.92rem;font-weight:700;",
+    "  color:#1a1f36;outline:none;margin-bottom:12px;box-sizing:border-box;",
+    "}",
+    "#lp-username-popup input:focus{border-color:#4361EE;}",
+    ".lp-popup-actions{display:flex;gap:8px;}",
+    ".lp-popup-save{",
+    "  flex:1;padding:8px;border-radius:8px;border:none;",
+    "  background:#4361EE;color:#fff;",
+    "  font-family:'Nunito',sans-serif;font-weight:800;font-size:0.85rem;",
+    "  cursor:pointer;transition:opacity .15s;",
+    "}",
+    ".lp-popup-save:hover{opacity:.88;}",
+    ".lp-popup-cancel{",
+    "  padding:8px 12px;border-radius:8px;",
+    "  border:2px solid #e2e6f0;background:#fff;",
+    "  font-family:'Nunito',sans-serif;font-weight:700;font-size:0.85rem;",
+    "  cursor:pointer;color:#5a6076;transition:border-color .15s,color .15s;",
+    "}",
+    ".lp-popup-cancel:hover{border-color:#4361EE;color:#4361EE;}",
+    ".lp-popup-greeting{",
+    "  font-size:0.78rem;color:#5a6076;margin-bottom:12px;line-height:1.4;",
+    "  padding-bottom:12px;border-bottom:1px solid #e2e6f0;",
+    "}",
+    ".lp-popup-greeting strong{color:#1a1f36;}",
+
     /* ─ burger ─ */
     ".lp-burger{display:none;flex-direction:column;justify-content:center;gap:5px;",
     "  background:none;border:none;cursor:pointer;padding:8px;",
@@ -77,6 +144,8 @@
     "  .lp-nav-links.open{display:flex;}",
     "  .lp-nav-link{width:100%;padding:10px 12px;font-size:0.9rem;}",
     "  .lp-nav-badge{display:none;}",
+    "  .lp-username-btn{font-size:0.75rem;padding:4px 10px;max-width:110px;}",
+    "  #lp-username-popup{right:12px;width:220px;}",
     "}",
 
     /* ─ footer ─ */
@@ -152,12 +221,24 @@
         '<nav class="lp-nav-links" id="lpNavLinks" aria-label="Main navigation">',
           '<a class="lp-nav-link' + active('school')    + '" href="' + root + 'index.html#school">🏫 School</a>',
           '<a class="lp-nav-link' + active('learnings') + '" href="' + root + 'index.html#learnings">🤖 Tech in Urdu</a>',
-          '<a class="lp-nav-link' + active('mathfun')   + '" href="' + root + 'index.html#mathfun">🎮 Math Fun</a>',
-          '<a class="lp-nav-link" href="' + root + 'index.html">📋 Site Index</a>',
+          '<a class="lp-nav-link' + active('mathfun')   + '" href="' + root + 'index.html#mathfun">🎮 Fun Games</a>',
         '</nav>',
+        '<button class="lp-username-btn" id="lpUsernameBtn" aria-label="Set your name" aria-haspopup="true" aria-expanded="false">',
+          '<span id="lpUsernameBtnText">👤 Set Name</span>',
+        '</button>',
         '<button class="lp-burger" id="lpBurger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="lpNavLinks">',
           '<span></span><span></span><span></span>',
         '</button>',
+      '</div>',
+      /* username popup – appended inside nav so it scrolls with sticky header */
+      '<div id="lp-username-popup" role="dialog" aria-label="Set your name">',
+        '<div class="lp-popup-greeting" id="lpPopupGreeting" style="display:none"></div>',
+        '<label for="lp-name-input">Your Name</label>',
+        '<input type="text" id="lp-name-input" placeholder="e.g. Ali, Sara..." maxlength="30" autocomplete="off" />',
+        '<div class="lp-popup-actions">',
+          '<button class="lp-popup-save" id="lpSaveNameBtn">Save</button>',
+          '<button class="lp-popup-cancel" id="lpCancelNameBtn">Cancel</button>',
+        '</div>',
       '</div>'
     ].join('');
     return el;
@@ -180,8 +261,7 @@
             '<li><a href="' + root + 'index.html">Home</a></li>',
             '<li><a href="' + root + 'index.html#school">School Worksheets</a></li>',
             '<li><a href="' + root + 'index.html#learnings">Tech in Urdu</a></li>',
-            '<li><a href="' + root + 'index.html#mathfun">Math Fun</a></li>',
-            '<li><a href="' + root + 'index.html">Site Index</a></li>',
+            '<li><a href="' + root + 'index.html#mathfun">Fun Games</a></li>',
             '<li><a href="' + root + 'for_school/contact.html">Contact Us</a></li>',
           '</ul>',
         '</div>',
@@ -194,7 +274,7 @@
 
   /* ── 7. Inject ───────────────────────────────────────────────── */
   function inject() {
-    /* Remove old site headers/navs (not content headers like .hero) */
+    /* Remove old site headers/navs */
     [
       'header.site-header',
       'nav.common-site-nav',
@@ -204,23 +284,17 @@
       document.querySelectorAll(sel).forEach(function (el) { el.remove(); });
     });
 
-    /* Remove any first <header> in body that has no class/id — these are
-       inline nav headers on root pages, sitemap, and math_fun quizzes */
     var firstH = document.querySelector('body > header:not([class]):not([id])');
     if (firstH) firstH.remove();
 
-    /* Remove old site footers */
     ['footer.common-site-footer', 'footer#lp-footer'].forEach(function (sel) {
       document.querySelectorAll(sel).forEach(function (el) { el.remove(); });
     });
 
-    /* Prepend header */
     document.body.insertBefore(buildHeader(), document.body.firstChild);
-
-    /* Append footer */
     document.body.appendChild(buildFooter());
 
-    /* Burger toggle */
+    /* ── Burger ─────────────────────────────────────────────────── */
     var burger   = document.getElementById('lpBurger');
     var navLinks = document.getElementById('lpNavLinks');
     if (burger && navLinks) {
@@ -237,6 +311,104 @@
           burger.setAttribute('aria-expanded', 'false');
         }
       });
+    }
+
+    /* ── Username ────────────────────────────────────────────────── */
+    var USERNAME_KEY  = 'lp_username';
+    var usernameBtn   = document.getElementById('lpUsernameBtn');
+    var usernameBtnTx = document.getElementById('lpUsernameBtnText');
+    var popup         = document.getElementById('lp-username-popup');
+    var nameInput     = document.getElementById('lp-name-input');
+    var saveBtn       = document.getElementById('lpSaveNameBtn');
+    var cancelBtn     = document.getElementById('lpCancelNameBtn');
+    var greeting      = document.getElementById('lpPopupGreeting');
+
+    function getStoredName() {
+      try { return localStorage.getItem(USERNAME_KEY) || ''; } catch(e) { return ''; }
+    }
+    function storeName(n) {
+      try {
+        localStorage.setItem(USERNAME_KEY, n);
+        localStorage.setItem('ws_username', n); // keep worksheets in sync
+      } catch(e) {}
+    }
+
+    function refreshBtn() {
+      var name = getStoredName();
+      if (name) {
+        usernameBtnTx.textContent = '👤 ' + name;
+        usernameBtn.classList.add('has-name');
+        usernameBtn.setAttribute('aria-label', 'Change name: ' + name);
+      } else {
+        usernameBtnTx.textContent = '👤 Set Name';
+        usernameBtn.classList.remove('has-name');
+        usernameBtn.setAttribute('aria-label', 'Set your name');
+      }
+    }
+
+    function openPopup() {
+      var name = getStoredName();
+      nameInput.value = name;
+      if (name) {
+        greeting.textContent = 'Hello, ' + name + '! Update your name below.';
+        greeting.style.display = 'block';
+      } else {
+        greeting.style.display = 'none';
+      }
+      popup.classList.add('open');
+      usernameBtn.setAttribute('aria-expanded', 'true');
+      setTimeout(function() { nameInput.focus(); nameInput.select(); }, 50);
+    }
+
+    function closePopup() {
+      popup.classList.remove('open');
+      usernameBtn.setAttribute('aria-expanded', 'false');
+    }
+
+    function saveName() {
+      var n = nameInput.value.trim();
+      if (n) { storeName(n); refreshBtn(); }
+      closePopup();
+    }
+
+    refreshBtn();
+
+    usernameBtn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      popup.classList.contains('open') ? closePopup() : openPopup();
+    });
+
+    saveBtn.addEventListener('click', saveName);
+
+    cancelBtn.addEventListener('click', closePopup);
+
+    nameInput.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter')  saveName();
+      if (e.key === 'Escape') closePopup();
+    });
+
+    document.addEventListener('click', function (e) {
+      if (popup.classList.contains('open') &&
+          !e.target.closest('#lp-username-popup') &&
+          !e.target.closest('#lpUsernameBtn')) {
+        closePopup();
+      }
+    });
+
+    /* ── Auto-bypass Urdu worksheet name modal (nameModal pattern) ─
+       Grade 3-9 Urdu worksheets show #nameModal by default and call
+       startWS() when the user submits. If a name is already stored,
+       pre-fill the input and call startWS() so the modal is skipped. */
+    var nameModal = document.getElementById('nameModal');
+    if (nameModal) {
+      var storedName = getStoredName();
+      if (storedName) {
+        var inp = document.getElementById('nameInp') || document.getElementById('nameInput');
+        if (inp) {
+          inp.value = storedName;
+          if (typeof startWS === 'function') startWS();
+        }
+      }
     }
   }
 

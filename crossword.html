@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crossword Puzzle – LearnPad</title>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --accent: #4361EE;
+      --ink: #1a1f36;
+      --muted: #5a6076;
+      --bg: #f4f6fb;
+      --card: #ffffff;
+      --border: #e2e6f0;
+      --radius: 12px;
+      --cw-dark: #1d4e89;
+      --cw-mid:  #2980b9;
+      --cw-light: rgba(41,128,185,0.15);
+      --cw-focus: rgba(41,128,185,0.42);
+      --cw-ok:   rgba(39,174,96,0.22);
+      --cw-err:  rgba(231,76,60,0.22);
+      --cw-hint: rgba(234,179,8,0.38);
+    }
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── SCREENS ─────────────────────────────────────────────── */
+    .screen { display: none; flex: 1; }
+    .screen.active-screen { display: flex; flex-direction: column; }
+
+    /* ── SETUP ───────────────────────────────────────────────── */
+    #setupScreen { align-items: center; justify-content: center; padding: 24px 16px 60px; }
+    .setup-card {
+      background: var(--card); border: 2px solid var(--border);
+      border-radius: 20px; padding: 40px 36px;
+      max-width: 540px; width: 100%;
+      box-shadow: 0 4px 24px rgba(0,0,0,.07);
+    }
+    .setup-icon { font-size: 3rem; text-align: center; margin-bottom: 10px; }
+    .setup-card h1 { text-align:center; font-size:1.9rem; font-weight:900; color:var(--ink); margin-bottom:6px; }
+    .setup-card > p { text-align:center; color:var(--muted); font-size:.93rem; margin-bottom:28px; }
+    .form-row { margin-bottom: 22px; }
+    .form-row label { display:block; font-weight:800; font-size:.8rem; text-transform:uppercase; letter-spacing:.07em; color:var(--muted); margin-bottom:8px; }
+    #industrySelect {
+      width:100%; padding:11px 14px; border-radius:10px; border:2px solid var(--border);
+      font-family:'Nunito',sans-serif; font-size:.95rem; font-weight:700; color:var(--ink);
+      background:var(--bg); cursor:pointer; outline:none; transition:border-color .15s; appearance:auto;
+    }
+    #industrySelect:focus { border-color: var(--cw-mid); }
+    .level-pills { display:flex; gap:10px; flex-wrap:wrap; }
+    .level-pill {
+      flex:1; min-width:120px; display:flex; flex-direction:column; align-items:center; gap:3px;
+      padding:12px 10px; border-radius:12px; border:2px solid var(--border); background:var(--bg);
+      font-family:'Nunito',sans-serif; font-size:.95rem; font-weight:800; color:var(--muted);
+      cursor:pointer; transition:all .15s;
+    }
+    .level-pill .level-meta { font-size:.7rem; font-weight:600; color:var(--muted); }
+    .level-pill:hover { border-color:var(--cw-mid); color:var(--ink); }
+    .level-pill.active.easy   { border-color:#059669; background:#e8faf4; color:#059669; }
+    .level-pill.active.medium { border-color:#d97706; background:#fffbeb; color:#d97706; }
+    .level-pill.active.hard   { border-color:#dc2626; background:#fef2f2; color:#dc2626; }
+    .level-pill.active .level-meta { color:inherit; opacity:.75; }
+    .how-to-play {
+      background:#eef1fd; border-radius:10px; padding:12px 16px;
+      font-size:.82rem; color:var(--muted); margin-bottom:22px; line-height:1.5;
+    }
+    .how-to-play strong { color:var(--accent); }
+    .btn-start {
+      display:block; width:100%; padding:14px; border-radius:12px; border:none;
+      background:var(--cw-dark); color:#fff; font-family:'Nunito',sans-serif;
+      font-size:1.05rem; font-weight:900; cursor:pointer; transition:opacity .15s,transform .1s;
+    }
+    .btn-start:hover { opacity:.9; transform:translateY(-1px); }
+    .btn-start:active { transform:none; }
+
+    /* ── GAME BAR ────────────────────────────────────────────── */
+    #gameScreen { flex-direction: column; }
+    .game-bar {
+      background: var(--cw-dark); color:#fff;
+      padding:10px 16px; display:flex; align-items:center; gap:8px;
+      flex-wrap:wrap; min-height:56px; flex-shrink:0;
+    }
+    .game-bar-left  { display:flex; align-items:center; gap:8px; min-width:120px; }
+    .game-bar-center { flex:1; min-width:0; overflow:hidden; }
+    .game-bar-right { display:flex; align-items:center; gap:8px; flex-shrink:0; }
+    .industry-badge {
+      font-size:.76rem; font-weight:800; background:rgba(255,255,255,.2);
+      padding:4px 9px; border-radius:20px; white-space:nowrap;
+      max-width:130px; overflow:hidden; text-overflow:ellipsis;
+    }
+    .level-badge {
+      font-size:.68rem; font-weight:900; padding:3px 9px; border-radius:20px;
+      text-transform:uppercase; letter-spacing:.06em; white-space:nowrap;
+    }
+    .level-badge.easy   { background:#059669; }
+    .level-badge.medium { background:#d97706; }
+    .level-badge.hard   { background:#dc2626; }
+    .active-clue-bar {
+      font-size:.8rem; font-weight:700; line-height:1.3;
+      white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+      color:rgba(255,255,255,.9);
+    }
+    .active-clue-bar .clue-tag {
+      font-weight:900; background:rgba(255,255,255,.25);
+      padding:2px 7px; border-radius:10px; margin-right:6px; font-size:.7rem;
+    }
+    .stat-item { font-size:.85rem; font-weight:800; white-space:nowrap; }
+    .icon-btn {
+      background:rgba(255,255,255,.2); border:none; color:#fff;
+      font-size:.95rem; width:34px; height:34px; border-radius:8px;
+      cursor:pointer; display:flex; align-items:center; justify-content:center;
+      transition:background .15s; flex-shrink:0; font-family:'Nunito',sans-serif; font-weight:700;
+    }
+    .icon-btn:hover { background:rgba(255,255,255,.32); }
+
+    /* ── GAME BODY ───────────────────────────────────────────── */
+    .game-body { flex:1; display:flex; overflow:hidden; min-height:0; }
+    .grid-wrapper {
+      flex:1; overflow:auto; display:flex; align-items:flex-start; justify-content:center;
+      padding:16px; background:var(--bg);
+    }
+
+    /* ── CROSSWORD GRID ──────────────────────────────────────── */
+    .cw-grid { display:grid; gap:0; border:2px solid #222; }
+    .cw-cell {
+      position:relative; border:1px solid #ccc;
+    }
+    .cw-cell.black { background:#1a1a2e; border-color:#111; }
+    .cw-cell.white { background:#fff; }
+    .cw-cell.white.active-word { background:var(--cw-light); }
+    .cw-cell.white.active-cell { background:var(--cw-focus); }
+    .cw-cell.white.cell-ok  { background:var(--cw-ok); }
+    .cw-cell.white.cell-err { background:var(--cw-err); }
+    .cw-cell.white.cell-hint { background:var(--cw-hint); }
+    .cell-num {
+      position:absolute; top:1px; left:2px;
+      font-size:9px; font-weight:900; color:#333; line-height:1;
+      pointer-events:none; z-index:1;
+    }
+    .cell-input {
+      position:absolute; inset:0; width:100%; height:100%;
+      border:none; outline:none; background:transparent;
+      text-align:center; font-family:'Nunito',sans-serif;
+      font-weight:900; text-transform:uppercase;
+      caret-color:transparent; cursor:pointer; padding:0;
+      color:var(--ink);
+    }
+    .cell-input::selection { background:transparent; }
+
+    /* ── CLUE PANEL ──────────────────────────────────────────── */
+    .clue-panel {
+      width:220px; flex-shrink:0; background:var(--card);
+      border-left:2px solid var(--border); display:flex;
+      flex-direction:column; overflow:hidden;
+    }
+    .clue-panel-header {
+      padding:10px 14px; font-size:.68rem; font-weight:900;
+      text-transform:uppercase; letter-spacing:.08em; color:var(--muted);
+      border-bottom:1px solid var(--border); flex-shrink:0;
+    }
+    .clue-panel-body { flex:1; overflow-y:auto; padding:6px 0; }
+    .clue-section-label {
+      padding:6px 14px 3px; font-size:.66rem; font-weight:900;
+      text-transform:uppercase; letter-spacing:.1em; color:var(--cw-dark);
+    }
+    .clue-item {
+      padding:5px 14px; font-size:.78rem; font-weight:700;
+      line-height:1.35; display:flex; gap:5px; cursor:pointer;
+      transition:background .1s;
+    }
+    .clue-item:hover { background:var(--bg); }
+    .clue-item.active { background:var(--cw-light); }
+    .clue-item.done { opacity:.45; text-decoration:line-through; }
+    .clue-num { font-weight:900; color:var(--cw-dark); flex-shrink:0; min-width:22px; }
+
+    /* ── WIN SCREEN ──────────────────────────────────────────── */
+    #winScreen { align-items:center; justify-content:center; padding:24px 16px 80px; }
+    .win-card {
+      background:var(--card); border:2px solid var(--border); border-radius:20px;
+      padding:44px 36px; max-width:420px; width:100%; text-align:center;
+      box-shadow:0 4px 24px rgba(0,0,0,.08);
+    }
+    .win-emoji { font-size:3.2rem; margin-bottom:12px; }
+    .win-card h2 { font-size:1.8rem; font-weight:900; margin-bottom:24px; color:var(--ink); }
+    .win-stats { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:28px; }
+    .win-stat { background:var(--bg); border-radius:10px; padding:12px; display:flex; flex-direction:column; gap:2px; }
+    .win-stat span { font-size:.72rem; font-weight:700; color:var(--muted); text-transform:uppercase; }
+    .win-stat strong { font-size:1.05rem; font-weight:900; color:var(--ink); }
+    .win-actions { display:flex; gap:10px; }
+    .btn-primary {
+      flex:1; padding:13px; border-radius:10px; border:none;
+      background:var(--cw-dark); color:#fff; font-family:'Nunito',sans-serif;
+      font-size:.95rem; font-weight:900; cursor:pointer; transition:opacity .15s;
+    }
+    .btn-primary:hover { opacity:.9; }
+    .btn-secondary {
+      flex:1; padding:13px; border-radius:10px; border:2px solid var(--border);
+      background:var(--card); color:var(--ink); font-family:'Nunito',sans-serif;
+      font-size:.95rem; font-weight:800; cursor:pointer; transition:border-color .15s;
+    }
+    .btn-secondary:hover { border-color:var(--cw-mid); color:var(--cw-mid); }
+
+    /* ── RESPONSIVE ──────────────────────────────────────────── */
+    @media (max-width: 680px) {
+      .game-body { flex-direction: column; overflow: visible; }
+      .grid-wrapper { flex: none; padding: 10px; justify-content: center; }
+      .clue-panel {
+        width: 100%; border-left: none; border-top: 2px solid var(--border);
+        max-height: 240px;
+      }
+      .setup-card { padding: 28px 20px; }
+      .win-card { padding: 32px 20px; }
+    }
+    @media (max-width: 400px) {
+      .game-bar { padding: 8px 10px; gap: 6px; }
+      .industry-badge { max-width: 90px; }
+    }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- ═══════════════ SCREEN 1 – SETUP ═══════════════ -->
+<div id="setupScreen" class="screen active-screen">
+  <div class="setup-card">
+    <div class="setup-icon">✏️</div>
+    <h1>Crossword Puzzle</h1>
+    <p>Select an industry and difficulty, then fill in the grid using the clues</p>
+
+    <div class="form-row">
+      <label for="industrySelect">Industry</label>
+      <select id="industrySelect"></select>
+    </div>
+
+    <div class="form-row">
+      <label>Difficulty</label>
+      <div class="level-pills">
+        <button class="level-pill easy active" data-level="easy">
+          Easy <span class="level-meta">13×13 · 10 words</span>
+        </button>
+        <button class="level-pill medium" data-level="medium">
+          Medium <span class="level-meta">17×17 · 15 words</span>
+        </button>
+        <button class="level-pill hard" data-level="hard">
+          Hard <span class="level-meta">21×21 · 20 words</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="how-to-play">
+      <strong>How to play:</strong> Click a clue or a cell to select a word.
+      Type letters to fill the grid. Press <strong>✓ Check</strong> to see how you did,
+      💡 for a hint, or ↩ to start over.
+    </div>
+
+    <button id="startBtn" class="btn-start">Start Puzzle ▶</button>
+  </div>
+</div>
+
+<!-- ═══════════════ SCREEN 2 – GAME ════════════════ -->
+<div id="gameScreen" class="screen">
+  <div class="game-bar">
+    <div class="game-bar-left">
+      <span id="industryBadge" class="industry-badge"></span>
+      <span id="levelBadge" class="level-badge"></span>
+    </div>
+    <div class="game-bar-center">
+      <div id="activeClueBar" class="active-clue-bar"></div>
+    </div>
+    <div class="game-bar-right">
+      <span class="stat-item">⏱ <span id="timerEl">00:00</span></span>
+      <span class="stat-item">✅ <span id="progressEl">0/0</span></span>
+      <button id="checkBtn"  class="icon-btn" title="Check answers">✓</button>
+      <button id="hintBtn"   class="icon-btn" title="Reveal one letter">💡</button>
+      <button id="newGameBtn" class="icon-btn" title="New Puzzle">↺</button>
+    </div>
+  </div>
+
+  <div class="game-body">
+    <div class="grid-wrapper">
+      <div id="cwGrid" class="cw-grid"></div>
+    </div>
+    <div class="clue-panel">
+      <div class="clue-panel-header">Clues</div>
+      <div class="clue-panel-body">
+        <div class="clue-section-label">ACROSS</div>
+        <div id="acrossClues"></div>
+        <div class="clue-section-label" style="margin-top:6px">DOWN</div>
+        <div id="downClues"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ SCREEN 3 – WIN ═════════════════ -->
+<div id="winScreen" class="screen">
+  <div class="win-card">
+    <div class="win-emoji">🎉</div>
+    <h2>Puzzle Complete!</h2>
+    <div class="win-stats">
+      <div class="win-stat"><span>Time</span><strong id="winTime"></strong></div>
+      <div class="win-stat"><span>Level</span><strong id="winLevel"></strong></div>
+      <div class="win-stat"><span>Words</span><strong id="winWords"></strong></div>
+      <div class="win-stat"><span>Industry</span><strong id="winIndustry"></strong></div>
+    </div>
+    <div class="win-actions">
+      <button id="playAgainBtn" class="btn-primary">▶ Play Again</button>
+      <button id="changeBtn"    class="btn-secondary">↩ Change</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ SCRIPT ══════════════════════════ -->
+<script>
+'use strict';
+
+// ─── SHORT CLUE DICTIONARY (common words across industries) ───────────────────
+const WORD_CLUES = {
+  // A
+  ACID:"Corrosive substance",ACTOR:"Film/stage performer",AGENT:"Representative or spy",
+  ALARM:"Warning signal",ALBUM:"Music collection",ALGORITHM:"Step-by-step procedure",
+  ALLOY:"Mixed metals",ALTITUDE:"Height above ground",ANCHOR:"Ship mooring weight",
+  ANTENNA:"Signal receiver",APPEAL:"Court challenge",ARCH:"Curved structure",
+  ARRAY:"Ordered collection",ASSET:"Valuable resource",ATOM:"Smallest element unit",
+  AUDIT:"Financial review",AVATAR:"Digital representation",AXLE:"Wheel shaft",
+  // B
+  BAIT:"Fishing lure",BAND:"Music group",BARREL:"Storage cylinder",BASS:"Low musical tone",
+  BATTERY:"Power storage cell",BEAM:"Structural support",BEAT:"Music rhythm unit",
+  BILL:"Draft legislation",BLEND:"Mix together",BLOCK:"Grid chain unit",
+  BOLT:"Fastening hardware",BOND:"Financial instrument",BONE:"Skeletal structure",
+  BOSS:"Level guardian",BRAND:"Product identity",BREACH:"Security violation",
+  BRIDGE:"Connecting structure",BUG:"Software error",BYTE:"Data unit",
+  // C
+  CABLE:"Thick wire bundle",CALL:"Phone connection",CAMERA:"Image capture device",
+  CAMP:"Outdoor shelter",CAPTAIN:"Ship commander",CAPSULE:"Small container",
+  CARBON:"Chemical element",CARGO:"Shipped goods",CAST:"Mould or throw",
+  CELL:"Basic living unit",CHAIN:"Linked series",CHART:"Data visual",
+  CHIP:"Microelectronic component",CHORD:"Musical notes together",CIRCUIT:"Electrical path",
+  CLAN:"Group or team",CLASS:"Category or lesson",CLAY:"Pottery material",
+  CLOUD:"Internet storage",COAL:"Fossil fuel",CODE:"Programming instructions",
+  COIN:"Currency piece",COLUMN:"Vertical support",CONTROL:"Manage or regulate",
+  COOK:"Prepare food",CORE:"Central part",CRANE:"Lifting machine",
+  CREW:"Working team",CROP:"Harvested plant",CROWN:"Tooth covering",
+  CURE:"Healing treatment",CYCLE:"Repeated sequence",
+  // D
+  DATA:"Raw information",DEBT:"Amount owed",DECK:"Ship's floor",
+  DEED:"Legal document",DESIGN:"Creative plan",DIAL:"Control knob",
+  DOCK:"Port berth",DOOR:"Entry panel",DOSE:"Medicine amount",
+  DRAG:"Aerodynamic resistance",DRAIN:"Liquid outlet",DRILL:"Boring tool",
+  DRONE:"Unmanned aircraft",DRUG:"Medicinal compound",DUMP:"Waste site",
+  // E
+  EDIT:"Revise content",ELITE:"Top tier",ENZYME:"Biological catalyst",
+  EQUITY:"Ownership value",EXAM:"Assessment test",
+  // F
+  FABRIC:"Woven material",FARM:"Crop-growing land",FEED:"Social content stream",
+  FIBER:"Thread or data cable",FILM:"Movie or coating",FILTER:"Purification device",
+  FIRE:"Combust or kiln",FISH:"Aquatic animal",FLAP:"Wing control surface",
+  FLASH:"Sudden light",FLOW:"Fluid movement",FOCUS:"Sharp image point",
+  FONT:"Type style",FORGE:"Shape with heat",FRAME:"Structural border",
+  FUEL:"Energy source",FUND:"Financial pool",
+  // G
+  GATE:"Logic control point",GAUGE:"Measurement device",GEAR:"Toothed wheel",
+  GENE:"Hereditary unit",GEM:"Precious stone",GERM:"Disease microbe",
+  GLAZE:"Ceramic coating",GLUE:"Adhesive substance",GOAL:"Scoring point",
+  GOLD:"Precious metal",GRID:"Network structure",GRILL:"Cook over heat",
+  GRIND:"Crush material",GUM:"Dental tissue",
+  // H
+  HACK:"Unauthorized access",HASH:"Cryptographic fingerprint",HEAT:"Thermal energy",
+  HIRE:"Recruit staff",HOOD:"Engine cover",HOST:"Serve or server",
+  HULL:"Ship's body",
+  // I
+  INK:"Printing liquid",
+  // J
+  JOINT:"Connection point",
+  // K
+  KICK:"Strike with foot",KILN:"High-temp oven",
+  // L
+  LASER:"Focused light beam",LAW:"Legal rule",LAYER:"Stacked level",
+  LEAD:"Guide or metal",LEAF:"Plant part",LEASE:"Rental agreement",
+  LENS:"Optical element",LIFT:"Upward force",LIGHT:"Electromagnetic radiation",
+  LINE:"Connectivity path",LINK:"Connection point",LIVE:"Real-time broadcast",
+  LOAD:"Weight or data",LOAN:"Borrowed money",LOCK:"Security mechanism",
+  LOGO:"Brand symbol",LOOP:"Repeated cycle",LOOT:"In-game rewards",
+  LOSS:"Financial deficit",
+  // M
+  MAIL:"Postal delivery",MAST:"Ship's vertical pole",MATCH:"Competitive game",
+  MENU:"List of options",MESH:"Network or filter",METER:"Measurement unit",
+  MINE:"Extract resources",MIRROR:"Reflective surface",MOLD:"Shaping tool",
+  MONITOR:"Display screen",MOON:"Earth's satellite",MOTOR:"Electric engine",
+  // N
+  NAIL:"Fastening spike",NET:"Mesh or profit",NODE:"Network connection point",
+  NOTE:"Financial instrument",NURSE:"Healthcare professional",
+  // O
+  ORBIT:"Circular flight path",ORDER:"Purchase request",ORE:"Mineral deposit",
+  // P
+  PACK:"Bundle together",PAGE:"Document sheet",PAINT:"Decorative coating",
+  PANEL:"Flat section",PATCH:"Software fix",PATIENT:"Hospital care recipient",
+  PATTERN:"Repeated design",PHOTO:"Camera image",PILL:"Medication tablet",
+  PILOT:"Aircraft operator",PIPE:"Fluid conduit",PIT:"Open excavation",
+  PIXEL:"Screen dot unit",PLAN:"Strategic blueprint",PLOT:"Land area",
+  PORT:"Harbor or connector",POST:"Share online",PRESS:"Printing machine",
+  PRINT:"Reproduce on paper",PROBE:"Investigation tool",PUMP:"Fluid mover",
+  // Q
+  QUERY:"Database question",QUEST:"Mission objective",
+  // R
+  RADAR:"Radio detection system",RATE:"Speed or price",REEL:"Film spool",
+  RELAY:"Pass a signal",RENT:"Property payment",RESIN:"Sticky polymer",
+  RISK:"Potential harm",ROD:"Control element",ROOF:"Building top cover",
+  ROOM:"Interior space",ROUTE:"Travel path",
+  // S
+  SALE:"Revenue transaction",SALT:"Mineral compound",SCAN:"Digital capture",
+  SCENE:"Film segment",SCORE:"Game points",SCRIPT:"Written dialogue",
+  SEAL:"Airtight closure",SEED:"Plant's origin",SENSOR:"Detection device",
+  SERVO:"Precision motor",SHAFT:"Rotating rod",SHELF:"Storage level",
+  SHIP:"Large vessel",SHOT:"Camera capture",SHOW:"Broadcast program",
+  SIGNAL:"Transmitted data",SILK:"Fine natural fiber",SILO:"Grain storage tower",
+  SLOT:"Card expansion port",SOIL:"Earth for planting",SORT:"Arrange by order",
+  STACK:"Layers of data",STAGE:"Performance platform",STAR:"Celestial body",
+  STEEL:"Iron-carbon alloy",STOCK:"Inventory or shares",STORE:"Retail outlet",
+  SUITE:"Hotel room set",SWITCH:"Network device",
+  // T
+  TANK:"Storage container",TAXI:"Ground movement",TEAM:"Collaborative group",
+  TEMPO:"Music speed",TEST:"Experiment or examine",TICKET:"Entry pass",
+  TILE:"Grid surface unit",TIMER:"Countdown device",TOKEN:"Authentication key",
+  TOOL:"Instrument for work",TRACK:"Monitor or record",TRAP:"Capture device",
+  TREE:"Woody plant",TRIAL:"Clinical experiment",TUBE:"Hollow cylinder",
+  TUNE:"Musical melody",TURBINE:"Rotating engine component",
+  // V
+  VALVE:"Flow control device",VAPOR:"Gas-phase substance",VECTOR:"Direction and magnitude",
+  VENUE:"Event location",VIRUS:"Infectious agent",VOLT:"Electrical unit",
+  // W
+  WALL:"Vertical barrier",WARD:"Hospital section",WASH:"Clean with water",
+  WAVE:"Signal oscillation",WELD:"Join by fusion",WIRE:"Electrical conductor",
+  WOOL:"Animal fiber",WORM:"Self-replicating malware",
+  // Y
+  YARN:"Spun fiber thread",YOKE:"Flight control device",
+  // Z
+  ZONE:"Designated area",ZOOM:"Lens focal range",
+};
+
+// ─── INDUSTRIES (same word lists as word search) ───────────────────────────────
+const INDUSTRIES = [
+  { name:"Agriculture",        words:["FARM","CROP","SOIL","SEED","PLOW","CORN","RICE","WHEAT","BEAN","OATS","HARVEST","TRACTOR","CATTLE","BARLEY","ORCHARD","GARDEN","COTTON","GRAINS","SILO","DAIRY","FERTILIZER","IRRIGATION","PESTICIDE","GREENHOUSE","LIVESTOCK","COMPOST"] },
+  { name:"Aviation",           words:["PILOT","RADAR","WING","FUEL","YOKE","FLAP","TAXI","LIFT","CABIN","CREW","FLIGHT","RUNWAY","COCKPIT","LANDING","TURBINE","ALTITUDE","AIRSPACE","FUSELAGE","THROTTLE","APPROACH","PROPELLER","AUTOPILOT","NAVIGATION","CLEARANCE","DEPARTURE","AEROSPACE"] },
+  { name:"Automotive",         words:["GEAR","AXLE","TIRE","HOOD","BOLT","DOOR","SEAT","WELD","PUMP","COIL","ENGINE","TORQUE","CLUTCH","PISTON","CHASSIS","EXHAUST","BATTERY","STEERING","CYLINDER","IGNITION","DRIVETRAIN","SUSPENSION","HORSEPOWER","COMBUSTION","CRANKSHAFT","CARBURETOR"] },
+  { name:"Banking",            words:["LOAN","BOND","RATE","CASH","DEBT","FUND","RISK","NOTE","WIRE","SAVE","LEDGER","CREDIT","TELLER","SAVINGS","DEPOSIT","ACCOUNT","INTEREST","MORTGAGE","OVERDRAFT","STATEMENT","COLLATERAL","WITHDRAWAL","COMPLIANCE","INVESTMENT","LIQUIDITY","UNDERWRITE"] },
+  { name:"Biotechnology",      words:["DNA","GENE","CELL","CLONE","ASSAY","PROBE","VIRUS","LABS","ENZYME","GENOME","PROTEIN","VACCINE","CULTURE","ANTIGEN","ANTIBODY","MUTATION","SEQUENCE","SPECIMEN","SYNTHESIS","BIOMARKER","CHROMOSOME","LABORATORY","FERMENTATION","MICROSCOPE","PATHOGEN","TRANSCRIPTION"] },
+  { name:"Chemical Industry",  words:["ACID","SALT","ATOM","BOND","RESIN","OXIDE","VAPOR","ALLOY","ALKALI","CARBON","SOLVENT","POLYMER","CATALYST","REACTION","COMPOUND","MOLECULE","SOLUTION","DISTILL","FORMULA","ELEMENT","ISOTOPE","SYNTHESIS","CORROSION","TITRATION","PRECIPITATE","SUBLIMATION"] },
+  { name:"Construction",       words:["BEAM","BOLT","SAND","NAIL","ARCH","RAMP","BORE","CRANE","BRICK","STEEL","CEMENT","PLASTER","SCAFFOLD","PLUMBING","SURVEY","GROUT","TRUSS","WELD","BLUEPRINT","EXCAVATION","INSULATION","FOUNDATION","DEMOLITION","VENTILATION","STRUCTURAL","REINFORCED"] },
+  { name:"Consulting",         words:["PLAN","RISK","GOAL","AUDIT","BRIEF","CLIENT","REPORT","ADVICE","BUDGET","SURVEY","AGILE","SCOPE","STRATEGY","ANALYSIS","PROPOSAL","FEEDBACK","FRAMEWORK","OBJECTIVE","BENCHMARK","DELIVERABLE","STAKEHOLDER","ASSESSMENT","EVALUATION","METHODOLOGY","RECOMMENDATION","IMPLEMENTATION"] },
+  { name:"Consumer Electronics",words:["CHIP","WIFI","PORT","CORD","LENS","SLOT","DIAL","SCREEN","CABLE","SENSOR","DISPLAY","BATTERY","STORAGE","SPEAKER","TOUCHPAD","FIRMWARE","BLUETOOTH","MICROPHONE","RESOLUTION","PROCESSOR","INTERFACE","WEARABLE","CONNECTOR","GIGABYTE","STREAMING","SEMICONDUCTOR"] },
+  { name:"Cybersecurity",      words:["HACK","WORM","PATCH","TOKEN","AUDIT","CIPHER","BOTNET","THREAT","BREACH","FIREWALL","MALWARE","PHISHING","PASSWORD","NETWORK","ENCRYPT","PROTOCOL","INTRUSION","RANSOMWARE","CRYPTOGRAPHY","PENETRATION","CERTIFICATE","COMPLIANCE","MONITORING","VULNERABILITY","AUTHENTICATION","SURVEILLANCE"] },
+  { name:"Defense",            words:["RADAR","DRONE","ARMOR","FUEL","RANK","UNIT","MISSILE","WEAPON","COMBAT","SOLDIER","SQUADRON","STRATEGY","ARTILLERY","SUBMARINE","BATTALION","OPERATION","LOGISTICS","SATELLITE","DEPLOYMENT","AMMUNITION","SURVEILLANCE","INTELLIGENCE","JURISDICTION","CAMOUFLAGE","MANEUVER","DETONATOR"] },
+  { name:"E-Commerce",         words:["CART","SALE","ORDER","BUYER","SELLER","PRODUCT","PAYMENT","SHIPPING","CHECKOUT","DISCOUNT","INVENTORY","WISHLIST","FEEDBACK","WAREHOUSE","LOGISTICS","AFFILIATE","MARKETING","CATALOGUE","TRANSACTION","SUBSCRIPTION","FULFILLMENT","CONVERSION","STOREFRONT","RECOMMENDATION","MARKETPLACE","PERSONALIZATION"] },
+  { name:"Education",          words:["EXAM","DESK","GRADE","CLASS","STUDY","LESSON","SCHOOL","DEGREE","CAMPUS","LIBRARY","TEACHER","STUDENT","LECTURE","SYLLABUS","HOMEWORK","TEXTBOOK","TUTORIAL","GRADUATE","CURRICULUM","ENROLLMENT","SCHOLARSHIP","CERTIFICATE","ASSESSMENT","KNOWLEDGE","INTERNSHIP","ACCREDITATION"] },
+  { name:"Oil and Gas",        words:["OIL","GAS","WELL","FUEL","PIPE","DRILL","BARREL","TANKER","REFINE","SEISMIC","OFFSHORE","RESERVOIR","EXTRACTION","PETROLEUM","COMBUSTION","LIQUEFIED","FRACKING","HYDROCARBON","EXPLORATION","DISTILLATION","DOWNSTREAM","UPSTREAM","WELLHEAD","PLATFORM","SEPARATOR","GEOLOGIST"] },
+  { name:"Entertainment",      words:["FILM","SHOW","STAGE","ACTOR","SCRIPT","COMEDY","CONCERT","THEATRE","FESTIVAL","DIRECTOR","AUDIENCE","ANIMATION","BROADCAST","PRODUCER","STREAMING","CELEBRITY","FRANCHISE","SCREENPLAY","PERFORMANCE","CHOREOGRAPHY","DOCUMENTARY","BLOCKBUSTER","SYNDICATION","INTERMISSION","SOUNDTRACK","PRODUCTION"] },
+  { name:"Environmental",      words:["SOIL","WASTE","OZONE","CARBON","RECYCLE","ECOLOGY","HABITAT","CLIMATE","EMISSION","WILDLIFE","POLLUTION","REMEDIATION","CONSERVATION","BIODIVERSITY","SUSTAINABILITY","RENEWABLE","DEFORESTATION","CONTAMINATION","PRESERVATION","ENVIRONMENTAL","REFORESTATION","GROUNDWATER","ATMOSPHERE","COMPOSTING","ECOSYSTEM","MONITORING"] },
+  { name:"Fashion",            words:["SILK","LACE","SEAM","DENIM","STITCH","FABRIC","THREAD","DESIGN","RUNWAY","COUTURE","PATTERN","TEXTILE","GARMENT","WARDROBE","BOUTIQUE","COLLECTION","ACCESSORY","EMBROIDERY","TRENDSETTER","MERCHANDISING","SILHOUETTE","ATHLEISURE","SUSTAINABLE","LOOKBOOK","CAPSULE","COLLABORATION"] },
+  { name:"Food and Beverage",  words:["CHEF","MENU","RICE","BREAD","SPICE","BLEND","CURE","BAKE","GRILL","RECIPE","FLAVOR","BEVERAGE","CUISINE","KITCHEN","PROTEIN","NUTRIENT","CATERING","FERMENT","PASTRY","INGREDIENT","PROCESSING","PACKAGING","PRODUCTION","PRESERVATION","DISTILLERY","GASTRONOMY"] },
+  { name:"Forestry",           words:["TREE","WOOD","BARK","PINE","SOIL","FERN","GROVE","TIMBER","FOREST","LUMBER","SAWMILL","CANOPY","WILDLIFE","LOGGING","PLANTING","CLEARING","EROSION","BIOMASS","ECOSYSTEM","PLANTATION","BIODIVERSITY","REFORESTATION","CONSERVATION","HARVESTING","SUSTAINABILITY","SILVICULTURE"] },
+  { name:"Gaming",             words:["PLAY","LEVEL","QUEST","SCORE","GAME","LOOT","BOSS","CLAN","PLAYER","AVATAR","SPRITE","CONSOLE","ONLINE","ESPORT","COMBAT","PUZZLE","MISSION","PLATFORM","CHARACTER","CONTROLLER","MULTIPLAYER","LEADERBOARD","ACHIEVEMENT","SIMULATION","EXPERIENCE","PROGRESSION"] },
+  { name:"Healthcare",         words:["PILL","DOSE","WARD","SCAN","NURSE","TRIAGE","BIOPSY","DOCTOR","CLINIC","PATIENT","SURGERY","THERAPY","VACCINE","HOSPITAL","DIAGNOSE","TREATMENT","INFECTION","EMERGENCY","SPECIALIST","LABORATORY","MEDICATION","CONSULTATION","MONITORING","REHABILITATION","PRESCRIPTION","TELEMEDICINE"] },
+  { name:"Hospitality",        words:["ROOM","SUITE","GUEST","MENU","STAFF","LODGE","RESORT","LOBBY","BUFFET","CHECK","AMENITY","BOOKING","CONCIERGE","CHECKOUT","BANQUET","CATERING","HOUSEKEEPING","RECEPTION","OCCUPANCY","RESERVATION","DESTINATION","ACCOMMODATION","HOSPITALITY","VALET","TURNDOWN","BELLHOP"] },
+  { name:"Human Resources",    words:["HIRE","ROLE","TEAM","LEAVE","STAFF","BONUS","OFFER","POLICY","TALENT","RECRUIT","BENEFIT","TRAINING","APPRAISAL","RETENTION","WORKFORCE","ONBOARDING","COMPLIANCE","ENGAGEMENT","PERFORMANCE","SUCCESSION","COMPENSATION","TERMINATION","PROMOTION","INTERVIEW","GRIEVANCE","INDUCTION"] },
+  { name:"Infrastructure",     words:["ROAD","RAIL","WATER","POWER","CABLE","TUNNEL","BRIDGE","SEWER","UTILITY","NETWORK","DRAINAGE","CAPACITY","PLANNING","TRANSPORT","MAINTENANCE","FOUNDATION","INVESTMENT","EXPANSION","CORRIDOR","CONNECTIVITY","GRID","PIPELINE","OVERPASS","INTERCHANGE","RESERVOIR","BROADBAND"] },
+  { name:"Insurance",          words:["RISK","CLAIM","COVER","LOSS","TERM","BOND","POLICY","PREMIUM","BENEFIT","RENEWAL","ACTUARY","UNDERWRITE","LIABILITY","DEDUCTIBLE","COVERAGE","PORTFOLIO","REINSURANCE","INDEMNITY","ASSESSMENT","SETTLEMENT","EXCLUSION","DISCLOSURE","COMPENSATION","BENEFICIARY","ENDORSEMENT","CATASTROPHE"] },
+  { name:"Internet Technology",words:["WEB","HOST","DATA","NODE","CLOUD","SERVER","DOMAIN","COOKIE","BROWSER","NETWORK","PROTOCOL","BANDWIDTH","DATABASE","ENCRYPTION","HYPERTEXT","STREAMING","INTERFACE","ALGORITHM","APPLICATION","CONNECTIVITY","LATENCY","FIREWALL","METADATA","REPOSITORY","DEPLOYMENT","CONTAINERIZATION"] },
+  { name:"Journalism",         words:["NEWS","EDIT","PRINT","STORY","PHOTO","SCOOP","COLUMN","EDITOR","REPORT","CAPTION","HEADLINE","ARTICLE","PUBLISH","OPINION","BREAKING","BROADCAST","INTERVIEW","EDITORIAL","JOURNALISM","INVESTIGATION","CORRESPONDENT","ATTRIBUTION","CIRCULATION","COMMENTARY","INFOGRAPHIC","SYNDICATION"] },
+  { name:"Legal Services",     words:["LAW","CASE","COURT","JUDGE","JURY","TRIAL","BRIEF","CLAUSE","APPEAL","STATUTE","COUNSEL","CONTRACT","EVIDENCE","PLAINTIFF","DEFENDANT","TESTIMONY","LITIGATION","COMPLIANCE","ARBITRATION","JURISDICTION","SETTLEMENT","INJUNCTION","DEPOSITION","SUBPOENA","PRECEDENT","NOTARIZATION"] },
+  { name:"Logistics",          words:["SHIP","LOAD","PACK","ROUTE","CARGO","TRUCK","DEPOT","TRACK","FREIGHT","CUSTOMS","DELIVERY","DISPATCH","SHIPMENT","LOGISTICS","PACKAGING","CLEARANCE","TRANSPORT","WAREHOUSE","INVENTORY","DISTRIBUTION","FULFILLMENT","CONSIGNMENT","INTERMODAL","DRAYAGE","MANIFEST","PALLETIZATION"] },
+  { name:"Manufacturing",      words:["MOLD","CAST","WELD","BOLT","PRESS","DRILL","LATHE","FORGE","GRIND","ASSEMBLE","CONVEYOR","TOLERANCE","PRECISION","BLUEPRINT","MACHINERY","PRODUCTION","AUTOMATION","PROTOTYPE","INSPECTION","FABRICATION","MEASUREMENT","THROUGHPUT","CALIBRATION","LEAN","KAIZEN","ERGONOMICS"] },
+  { name:"Marine and Shipping",words:["PORT","DOCK","HULL","MAST","DECK","CARGO","ANCHOR","VESSEL","CAPTAIN","HARBOUR","TRAWLER","CHANNEL","MANIFEST","MARITIME","PROPULSION","CONTAINER","TUGBOAT","NAVIGATION","LIFEGUARD","DRYDOCK","BALLAST","BULKHEAD","GANGPLANK","PORTHOLE","DECKHAND","CHARTERAGE"] },
+  { name:"Marketing",          words:["BRAND","REACH","MEDIA","PITCH","LEADS","MARKET","VIRAL","SEGMENT","CAMPAIGN","STRATEGY","BRANDING","CONSUMER","CONTENT","ANALYTICS","TARGETING","CONVERSION","PROMOTION","AWARENESS","ENGAGEMENT","INFLUENCER","COPYWRITING","DEMOGRAPHICS","STORYTELLING","POSITIONING","ATTRIBUTION","REBRANDING"] },
+  { name:"Mining",             words:["ORE","PIT","COAL","GOLD","ROCK","SHAFT","DRILL","BLAST","SEAM","COPPER","QUARRY","REFINE","MINERALS","EXTRACTION","EQUIPMENT","GEOLOGIST","EXPLOSIVE","PROCESSING","UNDERGROUND","EXCAVATION","OVERBURDEN","TAILINGS","BENEFICIATION","RECLAMATION","VENTILATION","DEWATERING"] },
+  { name:"Music Industry",     words:["BEAT","BASS","TEMPO","PITCH","CHORD","TUNE","RIFF","ALBUM","LYRICS","MELODY","RHYTHM","STUDIO","CONCERT","PRODUCER","PLAYLIST","HARMONY","RECORDING","STREAMING","PERFORMER","INSTRUMENT","CONDUCTOR","COMPOSITION","ARRANGEMENT","ROYALTIES","SOUNDTRACK","DISTRIBUTION"] },
+  { name:"Nuclear Energy",     words:["ATOM","CORE","FUEL","ROD","FISSION","REACTOR","PLASMA","NEUTRON","URANIUM","COOLANT","CONTROL","RADIATION","ISOTOPE","MELTDOWN","GENERATOR","CONTAINMENT","MODERATOR","SAFEGUARD","ENRICHMENT","CRITICALITY","DOSIMETRY","PLUTONIUM","SHIELDING","DECOMMISSION","REPROCESSING","THERMODYNAMICS"] },
+  { name:"Pharmaceuticals",    words:["DRUG","DOSE","TRIAL","PILL","TABLET","CAPSULE","FORMULA","GENERIC","VACCINE","THERAPY","CLINICAL","SYNTHESIS","COMPOUND","APPROVAL","PHARMACIST","INGREDIENT","REGULATION","PRESCRIPTION","MANUFACTURE","BIOAVAILABILITY","PHARMACOKINETICS","EXCIPIENT","FORMULATION","STABILITY","DISSOLUTION","BIOEQUIVALENCE"] },
+  { name:"Photography",        words:["LENS","SHOT","ZOOM","FLASH","FRAME","FOCUS","PIXEL","SHUTTER","APERTURE","EXPOSURE","LIGHTING","PORTRAIT","LANDSCAPE","DARKROOM","TRIPOD","CONTRAST","COMPOSITION","RESOLUTION","HISTOGRAM","DEPTH","BRACKETING","CHROMATIC","VIGNETTE","BOKEH","MIRRORLESS","PHOTOGRAPHY"] },
+  { name:"Printing Publishing",words:["INK","PAGE","FONT","PRINT","PAPER","PRESS","COVER","LAYOUT","TYPESET","BINDING","EDITION","GRAPHIC","PUBLISH","ARTWORK","MAGAZINE","PROOFREAD","BOOKBIND","EDITORIAL","CIRCULATION","PAGINATION","TYPOGRAPHY","FOLIO","GALLEYS","IMPRINT","PREPRESS","LITHOGRAPHY"] },
+  { name:"Public Health",      words:["GERM","VIRUS","HYGIENE","POLICY","CLINIC","VACCINE","OUTBREAK","EPIDEMIC","PANDEMIC","SANITATION","NUTRITION","SCREENING","PREVENTION","COMMUNITY","QUARANTINE","IMMUNIZATION","SURVEILLANCE","EPIDEMIOLOGY","MORTALITY","MORBIDITY","DEMOGRAPHICS","INTERVENTION","BIOSTATISTICS","HEALTH","VECTOR","PROPHYLAXIS"] },
+  { name:"Real Estate",        words:["RENT","SALE","DEED","LEASE","PLOT","TITLE","BUYER","AGENT","LISTING","PROPERTY","APPRAISAL","LANDLORD","INVESTOR","ESCROW","ZONING","FORECLOSURE","COMMERCIAL","RESIDENTIAL","TRANSACTION","CONVEYANCE","AMORTIZATION","EQUITY","EASEMENT","SUBDIVISION","DEVELOPMENT","ENCUMBRANCE"] },
+  { name:"Renewable Energy",   words:["SOLAR","WIND","TIDE","PANEL","TURBINE","BATTERY","BIOFUEL","HYDRO","THERMAL","GRID","WATT","EMISSION","PHOTOVOLTAIC","CAPACITOR","GEOTHERMAL","BIOMASS","EFFICIENCY","GENERATOR","CONVERSION","SUSTAINABILITY","KILOWATT","INVERTER","MICROGRID","HYDROGEN","ELECTROLYZER","DISPATCHABLE"] },
+  { name:"Research Development",words:["TEST","DATA","LAB","TRIAL","THEORY","STUDY","GRANT","MODEL","PUBLISH","PATENT","FUNDING","RESULTS","ANALYSIS","INNOVATE","PROTOTYPE","HYPOTHESIS","EXPERIMENT","DISCOVERY","TECHNOLOGY","BREAKTHROUGH","METHODOLOGY","REPLICATION","VALIDATION","SIMULATION","DISSEMINATION","COLLABORATION"] },
+  { name:"Retail",             words:["SALE","STORE","SHELF","STOCK","PRICE","BRAND","BUYER","VENDOR","RECEIPT","DISPLAY","CHECKOUT","CUSTOMER","DISCOUNT","INVENTORY","PROMOTION","MERCHANDISE","CATALOGUE","FRANCHISE","FOOTPRINT","TRANSACTION","PLANOGRAM","SHRINKAGE","ASSORTMENT","MARGIN","REPLENISHMENT","OMNICHANNEL"] },
+  { name:"Robotics",           words:["ARM","GEAR","WIRE","CODE","SERVO","MOTOR","SENSOR","TORQUE","ACTUATOR","CONTROL","PROGRAM","GRIPPER","FEEDBACK","NAVIGATE","PRECISION","PROTOTYPE","AUTONOMY","PROCESSOR","SIMULATION","KINEMATICS","ENDEFFECTOR","CONTROLLER","TRAJECTORY","PATHPLANNING","PERCEPTION","COLLABORATION"] },
+  { name:"Social Media",       words:["POST","LIKE","FEED","SHARE","TWEET","STORY","REEL","LIVE","FOLLOW","HASHTAG","PROFILE","CONTENT","COMMENT","NETWORK","PLATFORM","TRENDING","INFLUENCER","ENGAGEMENT","ANALYTICS","COMMUNITY","ALGORITHM","NOTIFICATION","MONETIZATION","VERIFICATION","COLLABORATION","IMPRESSIONS"] },
+  { name:"Software Development",words:["CODE","BUG","TEST","LOOP","CLASS","ARRAY","DEBUG","MODULE","SYNTAX","OBJECT","METHOD","LIBRARY","DEPLOY","COMPILE","FUNCTION","INTERFACE","ALGORITHM","FRAMEWORK","REPOSITORY","INTEGRATION","REFACTORING","ABSTRACTION","POLYMORPHISM","INHERITANCE","ARCHITECTURE","MICROSERVICE"] },
+  { name:"Space Exploration",  words:["ORBIT","MOON","STAR","MARS","FUEL","ROVER","PROBE","ROCKET","PLANET","LAUNCH","GRAVITY","CAPSULE","STATION","SATELLITE","ASTRONAUT","TELESCOPE","TRAJECTORY","SPACECRAFT","COUNTDOWN","WEIGHTLESS","PROPULSION","DOCKING","REENTRY","INTERSTELLAR","EXOPLANET","MICROGRAVITY"] },
+  { name:"Sports",             words:["GOAL","KICK","RACE","TEAM","COACH","SCORE","MATCH","LEAGUE","SPRINT","TROPHY","REFEREE","STADIUM","COMPETE","CHAMPION","EXERCISE","ATHLETE","TRAINING","TOURNAMENT","DISCIPLINE","PERFORMANCE","ENDURANCE","STRATEGY","NUTRITION","ANALYTICS","SPONSORSHIP","BIOMECHANICS"] },
+  { name:"Telecommunications", words:["CALL","WAVE","SIGNAL","TOWER","CABLE","FIBER","RELAY","SWITCH","ANTENNA","CARRIER","CHANNEL","ROUTER","MODEM","BANDWIDTH","COVERAGE","PROTOCOL","SATELLITE","FREQUENCY","SPECTRUM","NETWORK","LATENCY","BROADBAND","MULTIPLEXING","HANDOVER","ENCRYPTION","INFRASTRUCTURE"] },
+  { name:"Textiles",           words:["SILK","WOOL","YARN","LOOM","WEAVE","COTTON","FABRIC","THREAD","DYEING","PATTERN","KNITTING","BLENDING","SPINNING","STITCHING","MATERIAL","PRINTING","FINISHING","SYNTHETIC","EMBROIDERY","MANUFACTURING","POLYESTER","NYLON","FLEECE","TAPESTRY","JACQUARD","NONWOVEN"] },
+  { name:"Veterinary",         words:["PET","BONE","DRUG","CURE","SCAN","ANIMAL","CLINIC","DOCTOR","VACCINE","SURGERY","DIAGNOSE","NUTRIENT","BEHAVIOR","MEDICINE","PARASITE","TREATMENT","GROOMING","EMERGENCY","SPECIALIST","REHABILITATION","ANESTHESIA","RADIOLOGY","PHARMACOLOGY","ETHOLOGY","ONCOLOGY","OPHTHALMOLOGY"] },
+  { name:"Waste Management",   words:["SORT","DUMP","TOXIC","WASTE","RECYCLE","COMPOST","COLLECT","HAZARD","DISPOSAL","CHEMICAL","SANITARY","INCINERATE","SEGREGATE","POLLUTION","TREATMENT","DECOMPOSE","EMISSION","REDUCTION","LANDFILL","REMEDIATION","SUSTAINABILITY","LEACHATE","COMPACTOR","BIOREACTOR","STERILIZATION","WASTEWATER"] },
+  { name:"Water Treatment",    words:["PIPE","PUMP","TANK","VALVE","FILTER","PURIFY","SEWAGE","CHLORINE","MINERAL","AERATION","MEMBRANE","RESERVOIR","PRESSURE","SEDIMENTATION","DISINFECTION","DISTRIBUTION","FLUORIDATION","COAGULATION","FLOCCULATION","DESALINATION","OSMOSIS","TURBIDITY","ALKALINITY","HARDNESS","SOFTENING","MONITORING"] },
+  { name:"Architecture",       words:["ARCH","DOME","WALL","ROOF","BEAM","COLUMN","DESIGN","FACADE","RENDER","SKETCH","BLUEPRINT","STRUCTURE","AESTHETIC","MATERIAL","FOUNDATION","ELEVATION","PROPORTION","COMMERCIAL","RESIDENTIAL","SUSTAINABILITY","PARAMETRIC","VISUALIZATION","FENESTRATION","CANTILEVER","MASSING","TYPOGRAPHY"] },
+  { name:"Artificial Intelligence",words:["DATA","NODE","MODEL","TRAIN","BIAS","TOKEN","AGENT","NEURAL","LEARNING","DATASET","FEATURE","ACCURACY","INFERENCE","LANGUAGE","ALGORITHM","CLASSIFY","PREDICTION","AUTOMATION","GENERATION","TRANSFORMER","ATTENTION","EMBEDDING","PERCEPTRON","BACKPROPAGATION","REINFORCEMENT","HALLUCINATION"] },
+  { name:"Blockchain",         words:["NODE","HASH","COIN","BLOCK","TOKEN","CHAIN","LEDGER","WALLET","CRYPTO","MINING","VERIFY","DECRYPT","NETWORK","CONTRACT","CONSENSUS","IMMUTABLE","TRANSACTION","DISTRIBUTE","CRYPTOGRAPHY","DECENTRALIZE","STAKING","LIQUIDITY","GOVERNANCE","TOKENIZATION","INTEROPERABILITY","PERMISSIONED"] },
+  { name:"Broadcasting",       words:["LIVE","CAST","WAVE","SIGNAL","RADIO","CHANNEL","ANCHOR","STUDIO","ANTENNA","NETWORK","BROADCAST","SATELLITE","FREQUENCY","PROGRAM","RATINGS","NEWSROOM","INTERVIEW","PRODUCTION","TRANSMISSION","COMMERCIAL","TELECAST","UPLINK","MULTIPLEX","MONITORING","CONTINUITY","SIMULCAST"] },
+  { name:"Ceramics",           words:["CLAY","KILN","GLAZE","FIRE","MOLD","BISCUIT","PORCELAIN","POTTERY","SCULPT","TEMPER","FIRING","STONEWARE","BURNISH","EARTHEN","TERRACOTTA","VITRIFIED","SINTERING","CRYSTALLINE","ENGOBE","SAGGER","PYROMETRY","KAOLIN","FELDSPAR","BISQUEWARE","RAKU","SLIPCASTING"] },
+  { name:"Cloud Computing",    words:["HOST","NODE","DATA","SCALE","STORE","CLOUD","SERVER","DEPLOY","NETWORK","LATENCY","STORAGE","VIRTUAL","PROVIDER","DATABASE","SECURITY","INSTANCE","CONTAINER","MIGRATION","COMPUTING","ORCHESTRATION","SERVERLESS","MULTICLOUD","AUTOSCALING","KUBERNETES","MICROSERVICE","ELASTICITY"] },
+  { name:"Data Analytics",     words:["DATA","MEAN","MODE","QUERY","TABLE","METRIC","CHART","TREND","PIVOT","REPORT","INSIGHT","CLUSTER","DATASET","PREDICT","VISUALIZE","DASHBOARD","BENCHMARK","ALGORITHM","REGRESSION","STATISTICS","CORRELATION","VARIANCE","OUTLIER","SAMPLING","AGGREGATION","NORMALIZATION"] },
+  { name:"Dental Care",        words:["GUM","PULL","FILL","TOOTH","DRILL","CROWN","BRACE","PLAQUE","BRIDGE","CAVITY","ENAMEL","IMPLANT","HYGIENE","VENEER","FLUORIDE","EXTRACTION","RETAINER","WHITENING","ORTHODONTIC","PERIODONTAL","ENDODONTIC","DENTURE","OCCLUSION","PROPHYLAXIS","SEALANT","RADIOGRAPH"] },
+  { name:"Drone Technology",   words:["FLY","LIFT","WING","CAMERA","MOTOR","SENSOR","RANGE","BATTERY","CONTROL","SURVEY","PAYLOAD","AUTOPILOT","MAPPING","ALTITUDE","TRACKING","DETECTION","PROPELLER","NAVIGATION","SURVEILLANCE","GEOFENCING","LIDAR","TELEMETRY","OBSTACLE","FIRMWARE","LATENCY","PRECISION"] },
+  { name:"Electric Vehicles",  words:["VOLT","CHARGE","RANGE","MOTOR","WHEEL","GRID","TORQUE","BATTERY","BRAKING","CURRENT","ELECTRIC","CHARGING","AUTONOMY","INVERTER","DRIVETRAIN","EFFICIENCY","CONNECTOR","REGENERATE","HORSEPOWER","ACCELERATION","KILOWATT","INFRASTRUCTURE","THERMAL","MANAGEMENT","AERODYNAMICS","SUPERCHARGER"] },
+  { name:"Event Management",   words:["VENUE","GUEST","HOST","STAGE","DECOR","MUSIC","TICKET","BUDGET","SPONSOR","VENDOR","LIGHTING","SECURITY","LOGISTICS","PLANNING","SCHEDULE","AUDIENCE","PROMOTION","EXHIBITION","CATERING","PRODUCTION","BRANDING","REGISTRATION","ENTERTAINMENT","SIGNAGE","TIMELINE","COORDINATION"] },
+  { name:"Film and Cinema",    words:["CUT","REEL","CREW","SCRIPT","SCENE","ACTOR","FRAME","CAMERA","EDITOR","DIRECT","STUDIO","COSTUME","LIGHTING","DIALOGUE","SEQUENCE","PRODUCER","SHOOTING","PREMIERE","SCREENPLAY","CINEMATOGRAPHY","STORYBOARD","CONTINUITY","GRADING","DUBBING","DISTRIBUTION","EXHIBITION"] },
+  { name:"Fintech",            words:["PAY","APP","LOAN","CARD","WALLET","CRYPTO","INVEST","LEDGER","CREDIT","PAYMENT","DIGITAL","LENDING","SAVINGS","TRANSFER","PLATFORM","REGULATORY","INSURANCE","SECURITY","TRANSACTION","OPEN","BANKING","NEOBANK","COMPLIANCE","KYC","TOKENIZATION","EMBEDDED"] },
+  { name:"Fisheries",          words:["FISH","NET","BOAT","BAIT","REEF","CATCH","TRAWL","VESSEL","HARVEST","AQUATIC","SPECIES","FISHING","FARMING","ECOLOGY","BREEDING","INDUSTRY","PROCESSING","LICENSING","CONSERVATION","SUSTAINABLE","AQUACULTURE","SPAWNING","BIOMASS","CERTIFICATION","TRACEABILITY","BYCATCH"] },
+  { name:"Food Technology",    words:["HEAT","COOL","BLEND","ENZYME","TEXTURE","NUTRIENT","PROTEIN","ADDITIVE","FORTIFY","PRESERVE","FERMENT","PROCESS","PACKAGING","INGREDIENT","NUTRITIONAL","IRRADIATION","PASTEURIZE","EMULSIFY","HOMOGENIZE","LYOPHILIZE","ENCAPSULATE","ANTIOXIDANT","PRESERVATIVE","MICROBIOME","PROBIOTICS","BIOFORTIFICATION"] },
+  { name:"Furniture",          words:["WOOD","NAIL","GLUE","JOINT","FRAME","POLISH","DESIGN","FABRIC","CUSHION","DRAWER","CABINET","VENEER","ASSEMBLY","CARPENTRY","UPHOLSTERY","VARNISH","HARDWARE","ERGONOMIC","MATERIAL","RESTORATION","JOINERY","LACQUER","LAMINATE","PARTICLEBOARD","DOVETAIL","TENON"] },
+  { name:"Gemology",           words:["GEM","GOLD","RING","RUBY","PEARL","SILVER","CRYSTAL","DIAMOND","EMERALD","SAPPHIRE","SETTING","FACET","CLARITY","CARAT","POLISH","PENDANT","NECKLACE","GEMSTONE","HALLMARK","CERTIFICATION","INCLUSIONS","REFRACTIVE","DISPERSION","BRILLIANCE","LAPIDARY","APPRAISAL"] },
+  { name:"Government",         words:["LAW","VOTE","BILL","COURT","SENATE","POLICY","BUDGET","ELECTION","CABINET","CONGRESS","WELFARE","MINISTRY","TAXATION","AMENDMENT","AUTHORITY","PARLIAMENT","DEMOCRACY","GOVERNANCE","LEGISLATION","CONSTITUTION","SOVEREIGNTY","BUREAUCRACY","REFERENDUM","ORDINANCE","JUDICIARY","MUNICIPALITY"] },
+  { name:"Graphic Design",     words:["FONT","LOGO","LINE","GRID","COLOR","LAYER","SHAPE","VECTOR","PIXEL","SKETCH","DESIGN","PALETTE","TEMPLATE","TYPOGRAPHY","ILLUSTRATE","MOCKUP","BRANDING","COMPOSITION","CONTRAST","WHITESPACE","KERNING","LEADING","HIERARCHY","BLEED","RASTER","SATURATION"] },
+  { name:"Healthcare IT",      words:["EMR","CLOUD","DATA","PORTAL","HEALTH","SYSTEM","PATIENT","PRIVACY","RECORD","CLINICAL","SECURITY","ANALYTICS","WORKFLOW","TELEMEDICINE","PROTOCOL","ALGORITHM","DIAGNOSE","COMPLIANCE","INTEGRATION","INTEROPERABILITY","TELEHEALTH","WEARABLE","MONITORING","DASHBOARD","AUTOMATION","GENOMICS"] },
+  { name:"Home Appliances",    words:["WASH","COOL","HEAT","MOTOR","TIMER","SENSOR","SWITCH","HEATER","FILTER","BLENDER","VOLTAGE","COMPRESSOR","THERMOSTAT","MICROWAVE","DISHWASHER","REFRIGERATOR","EFFICIENCY","INVERTER","AUTOMATION","ENERGY","CAPACITY","CYCLE","DISPLAY","CONNECTIVITY","RATING","INSTALLATION"] },
+  { name:"Hotel Industry",     words:["ROOM","STAY","SUITE","CHECK","LOBBY","GUEST","STAFF","LINEN","SERVICE","BOOKING","AMENITY","MINIBAR","CONCIERGE","CHECKOUT","BANQUET","SECURITY","CLEANING","RECEPTION","OCCUPANCY","HOSPITALITY","TURNDOWN","VALET","RENOVATION","RATING","FRANCHISE","YIELD"] },
+  { name:"Hydraulics",         words:["PUMP","FLUID","SEAL","VALVE","PISTON","HOSE","PRESSURE","CYLINDER","ACTUATOR","FLOW","RESERVOIR","CONTROL","COUPLING","FITTING","RELIEF","GAUGE","SOLENOID","FILTRATION","MECHANISM","VISCOSITY","COMPRESSIBILITY","HYSTERESIS","CAVITATION","ACCUMULATORS","MANIFOLD","BACKPRESSURE"] },
+  { name:"Industrial Design",  words:["FORM","MOLD","SKETCH","MODEL","SHAPE","DESIGN","RENDER","MATERIAL","ERGONOMIC","PROTOTYPE","FUNCTION","AESTHETIC","ASSEMBLY","TOOLING","PLASTIC","SURFACE","TEXTURE","PACKAGING","COMMERCIAL","PRODUCTION","USABILITY","BIOMIMICRY","SUSTAINABILITY","ANTHROPOMETRY","IDEATION","VISUALIZATION"] },
+  { name:"Information Security",words:["RISK","AUDIT","PATCH","THREAT","BREACH","ACCESS","POLICY","MONITOR","FIREWALL","ENCRYPT","IDENTITY","PROTOCOL","INCIDENT","PRIVILEGE","COMPLIANCE","DETECTION","PREVENTION","ASSESSMENT","VULNERABILITY","CRYPTOGRAPHY","PENTEST","ENDPOINT","REMEDIATION","HARDENING","GOVERNANCE","FORENSICS"] },
+  { name:"Interior Design",    words:["ROOM","LIGHT","COLOR","FLOOR","WALL","DECOR","SPACE","THEME","FABRIC","TEXTURE","LAYOUT","FURNISH","PALETTE","MATERIAL","CEILING","FLOORING","FURNITURE","AESTHETIC","RENOVATION","VISUALIZATION","MOODBOARD","SCALE","PROPORTION","ACCENTS","WAYFINDING","SPECIFICATION"] },
+  { name:"Investment Banking",  words:["DEAL","BOND","FUND","RISK","EQUITY","MARGIN","MERGER","CAPITAL","RETURN","MARKET","ANALYSIS","LEVERAGE","PORTFOLIO","LIQUIDITY","UNDERWRITE","VALUATION","ACQUISITION","DERIVATIVE","TRANSACTION","COMMISSION","PITCHBOOK","TOMBSTONE","COVENANT","SYNDICATION","RESTRUCTURING","ROADSHOW"] },
+  { name:"IoT",                words:["CHIP","WIFI","DATA","NODE","DEVICE","SENSOR","CLOUD","SMART","CONNECT","NETWORK","GATEWAY","PROTOCOL","WIRELESS","PLATFORM","MONITOR","ACTUATOR","SECURITY","ANALYTICS","AUTOMATION","INTEGRATION","FIRMWARE","LATENCY","BANDWIDTH","PROVISIONING","MQTT","INTEROPERABILITY"] },
+  { name:"Landscaping",        words:["SOIL","TREE","LAWN","PLANT","WATER","PRUNE","GARDEN","MULCH","FLOWER","DESIGN","IRRIGATION","DRAINAGE","PLANTING","PAVEMENT","PATHWAY","LANDSCAPE","MAINTENANCE","FERTILIZE","HARDSCAPE","SOFTSCAPE","TOPOGRAPHY","EROSION","COMPOSTING","GROUNDCOVER","SPECIMEN","ARBORICULTURE"] },
+  { name:"Library Science",    words:["BOOK","READ","CARD","INDEX","SHELF","CATALOG","PATRON","SEARCH","ARCHIVE","DIGITAL","METADATA","REFERENCE","CLASSIFY","LENDING","RESOURCE","COLLECTION","RETRIEVAL","BIBLIOGRAPHY","ACQUISITION","PERIODICAL","PRESERVATION","TAXONOMY","CURATION","CATALOGING","INTERLOANS","MICROFILM"] },
+  { name:"Luxury Goods",       words:["GOLD","SILK","BRAND","CRAFT","RARE","STYLE","DESIGN","ELITE","PRESTIGE","FASHION","DIAMOND","COUTURE","PREMIUM","HERITAGE","EXCLUSIVE","HANDCRAFT","SIGNATURE","COLLECTION","CRAFTSMANSHIP","CERTIFICATION","BESPOKE","ARTISANAL","PROVENANCE","CONNOISSEUR","AUTHENTICATION","PATINA"] },
+  { name:"Machine Learning",   words:["DATA","NODE","MODEL","TRAIN","LOSS","EPOCH","LAYER","WEIGHT","FEATURE","VECTOR","NETWORK","PREDICT","CLUSTER","CLASSIFY","ACCURACY","GRADIENT","ALGORITHM","PARAMETER","REGRESSION","OPTIMIZATION","OVERFITTING","REGULARIZATION","VALIDATION","HYPERPARAMETER","ENSEMBLE","BOOSTING"] },
+  { name:"Materials Science",  words:["ALLOY","BOND","ATOM","METAL","FIBER","GLASS","CRYSTAL","POLYMER","COMPOSITE","STRESS","STRAIN","CERAMIC","TESTING","THERMAL","HARDNESS","FRACTURE","STRENGTH","PROPERTIES","MICROSTRUCTURE","CONDUCTIVITY","DUCTILITY","CORROSION","FATIGUE","MODULUS","MORPHOLOGY","TRIBOLOGY"] },
+  { name:"Mental Health",      words:["MIND","MOOD","COPE","HEAL","STRESS","THERAPY","EMOTION","ANXIETY","TRAUMA","SUPPORT","WELLNESS","DISORDER","RECOVERY","COUNSELOR","TREATMENT","MINDFULNESS","RESILIENCE","PSYCHOLOGY","DEPRESSION","INTERVENTION","PSYCHIATRY","COGNITION","NEUROPLASTICITY","WELLBEING","DESENSITIZATION","SOCIALIZATION"] },
+  { name:"Microelectronics",   words:["CHIP","GATE","WIRE","VOLT","DIODE","TRANSISTOR","CIRCUIT","SILICON","MEMORY","WAFER","SIGNAL","CAPACITOR","FREQUENCY","AMPLIFIER","PROCESSOR","SUBSTRATE","FABRICATION","INTEGRATION","SEMICONDUCTOR","NANOTECHNOLOGY","LITHOGRAPHY","PHOTOMASK","EPITAXY","DOPING","INTERCONNECT","PACKAGING"] },
+  { name:"Nanotechnology",     words:["ATOM","NANO","TUBE","PARTICLE","QUANTUM","SURFACE","ELECTRON","POLYMER","CARBON","SENSOR","COATING","IMAGING","MATERIAL","ASSEMBLY","MOLECULE","NANOSCALE","SYNTHESIS","GRAPHENE","APPLICATION","NANOPARTICLE","SELFASSEMBLY","BIONANOMATERIAL","NANOCOMPOSITE","FUNCTIONALIZATION","SPECTROSCOPY","LITHOGRAPHY"] },
+  { name:"Nutrition",          words:["FOOD","DIET","IRON","FIBER","PROTEIN","CALORIE","VITAMIN","MINERAL","GLUCOSE","CARB","NUTRIENT","HYDRATE","BALANCE","PORTION","METABOLISM","SUPPLEMENT","ANTIOXIDANT","CHOLESTEROL","DEFICIENCY","MACRONUTRIENT","MICRONUTRIENT","PHYTOCHEMICAL","DIGESTION","ABSORPTION","GLYCEMIC","PROBIOTICS"] },
+  { name:"Optical Technology", words:["LENS","BEAM","WAVE","LIGHT","FOCUS","LASER","MIRROR","PRISM","CAMERA","FIBER","REFRACT","REFLECT","SPECTRUM","PHOTON","APERTURE","WAVELENGTH","BANDWIDTH","HOLOGRAM","MAGNIFICATION","CHROMATIC","ABERRATION","DIFFRACTION","INTERFERENCE","POLARIZATION","LUMINESCENCE","COLLIMATION"] },
+  { name:"Packaging",          words:["WRAP","BOX","SEAL","LABEL","PACK","CARTON","BOTTLE","WEIGHT","DESIGN","PLASTIC","MATERIAL","SHIPPING","BARCODE","RECYCLE","BRANDING","CONTAINER","CORRUGATED","BIODEGRADABLE","PROTECTION","SUSTAINABILITY","TAMPERPROOF","CLAMSHELL","BLISTER","SHRINKWRAP","FLEXOGRAPHY","LAMINATION"] },
+  { name:"Pediatrics",         words:["CHILD","GROWTH","VACCINE","INFANT","CARE","FEVER","DIET","SLEEP","HEALTH","CHECKUP","NUTRITION","BEHAVIOR","MILESTONE","SCREENING","IMMUNIZATION","DEVELOPMENT","SPECIALIST","MEDICATION","WELLBEING","PEDIATRIC","NEONATOLOGY","ADOLESCENT","BREASTFEEDING","ANTHROPOMETRY","IMMUNODEFICIENCY","AUDIOMETRY"] },
+  { name:"Pest Control",       words:["TRAP","SPRAY","BAIT","TOXIN","INSECT","RODENT","INSPECT","CHEMICAL","BARRIER","TREATMENT","EXTERMINATE","PREVENTION","ERADICATE","MONITORING","PESTICIDE","BIOLOGICAL","INTEGRATED","MANAGEMENT","FUMIGATION","CERTIFICATION","QUARANTINE","VECTOR","PHEROMONE","INSECTICIDE","HERBICIDE","EXCLUSION"] },
+  { name:"Plant Biotechnology",words:["GENE","SEED","CROP","GRAFT","CLONE","TISSUE","GENOME","HYBRID","CULTURE","PROTEIN","SPECIES","DROUGHT","DISEASE","BREEDING","TRANSGENIC","NITROGEN","FLOWERING","SELECTION","MODIFICATION","BIOREACTOR","CALLUS","TOTIPOTENCY","PROTOPLAST","SOMACLONAL","CRYOPRESERVATION","MUTAGENESIS"] },
+  { name:"Polymer Science",    words:["BOND","CHAIN","MELT","RESIN","FIBER","RUBBER","PLASTIC","MONOMER","POLYMER","ELASTIC","THERMAL","VISCOUS","EXTRUDE","CATALYST","COMPOSITE","PROPERTIES","SYNTHESIS","CRYSTALLIZATION","CROSSLINK","THERMOPLASTIC","THERMOSET","ELASTOMER","COPOLYMER","RHEOLOGY","EMULSION","POLYMERIZATION"] },
+  { name:"Postal Services",    words:["MAIL","POST","STAMP","ROUTE","PARCEL","COURIER","ADDRESS","SORTING","DELIVERY","PACKAGE","EXPRESS","TRACKING","POSTMARK","ENVELOPE","BARCODE","LOGISTICS","DISPATCH","PRIORITY","COLLECTION","DISTRIBUTION","REGISTERED","MANIFEST","FORWARDING","CUSTOMS","METERING","SORTATION"] },
+  { name:"Urban Planning",     words:["ZONE","ROAD","LAND","PARK","GRID","CITY","PERMIT","DESIGN","DENSITY","ZONING","TRANSIT","HOUSING","COMMUNITY","PLANNING","WALKABLE","TRANSPORT","GREENSPACE","DISTRICT","RESILIENCE","INFRASTRUCTURE","MIXEDUSE","BROWNFIELD","AFFORDABLE","CONNECTIVITY","SUSTAINABILITY","PEDESTRIAN"] },
+  { name:"Aerospace Engineering",words:["THRUST","DRAG","LIFT","MACH","ORBIT","REENTRY","FUEL","NOZZLE","PAYLOAD","FAIRING","TELEMETRY","ATTITUDE","CONTROL","GYROSCOPE","ABLATION","RENDEZVOUS","INSERTION","VELOCITY","TRAJECTORY","AVIONICS","PROPELLANT","OXIDIZER","COMBUSTION","STAGING","FAIRINGS","APOGEE"] },
+  { name:"Accounting",         words:["AUDIT","DEBIT","CREDIT","JOURNAL","LEDGER","BALANCE","ACCRUAL","DEPRECIATION","AMORTIZE","EQUITY","REVENUE","EXPENSE","INCOME","LIABILITY","ASSET","BUDGETING","CASHFLOW","PROVISION","RECONCILE","TAXATION","FISCAL","VARIANCE","PAYROLL","STATEMENT","RECEIVABLE","PAYABLE"] },
+  { name:"Supply Chain",       words:["STOCK","ORDER","LEAD","DEMAND","VENDOR","REORDER","SUPPLIER","FORECAST","TRANSPORT","INVENTORY","WAREHOUSE","LOGISTICS","PROCUREMENT","SOURCING","FULFILMENT","DISTRIBUTION","TRACEABILITY","VISIBILITY","AGILITY","COLLABORATION","RISK","NETWORK","OPTIMIZE","PLANNING","CAPACITY","REPLENISHMENT"] },
+].filter((ind, idx, arr) => arr.findIndex(i => i.name === ind.name) === idx);
+
+// ─── LEVEL CONFIG ──────────────────────────────────────────────────────────────
+const LEVEL_CFG = {
+  easy:   { size: 13, count: 10, minLen: 3, maxLen: 7,  cellPx: 38 },
+  medium: { size: 17, count: 15, minLen: 3, maxLen: 9,  cellPx: 32 },
+  hard:   { size: 21, count: 20, minLen: 3, maxLen: 13, cellPx: 26 },
+};
+
+// ─── STATE ─────────────────────────────────────────────────────────────────────
+let currentLevel = 'easy';
+let currentIndustry = INDUSTRIES[0].name;
+let gridData = [];       // null = black, letter = white
+let gridSize = 0;
+let placedWords = [];    // {word, clue, row, col, dir, number, cells:[{r,c}]}
+let cellNumbers = {};    // "r,c" -> number
+let wordDone = new Set();
+let timerSeconds = 0;
+let timerInterval = null;
+let activeWord = null;   // {word obj, dir}
+let activeCell = null;   // {r, c}
+let lastClickKey = '';
+
+// ─── UTILITIES ─────────────────────────────────────────────────────────────────
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+function formatTime(s) {
+  return String(Math.floor(s/60)).padStart(2,'0') + ':' + String(s%60).padStart(2,'0');
+}
+function getClue(word, industryName) {
+  return WORD_CLUES[word.toUpperCase()] || `${industryName} term`;
+}
+
+// ─── CROSSWORD GENERATION ──────────────────────────────────────────────────────
+function canPlace(grid, word, startRow, startCol, dir, size) {
+  const dr = dir === 'down' ? 1 : 0;
+  const dc = dir === 'across' ? 1 : 0;
+  const len = word.length;
+  const endRow = startRow + dr * (len - 1);
+  const endCol = startCol + dc * (len - 1);
+
+  if (startRow < 0 || startCol < 0 || endRow >= size || endCol >= size) return false;
+
+  // Cell before word start must be empty
+  const br = startRow - dr, bc = startCol - dc;
+  if (br >= 0 && bc >= 0 && br < size && bc < size && grid[br][bc] !== null) return false;
+  // Cell after word end must be empty
+  const ar = endRow + dr, ac = endCol + dc;
+  if (ar >= 0 && ac >= 0 && ar < size && ac < size && grid[ar][ac] !== null) return false;
+
+  let intersects = false;
+  for (let i = 0; i < len; i++) {
+    const r = startRow + i * dr;
+    const c = startCol + i * dc;
+    if (grid[r][c] !== null) {
+      if (grid[r][c] !== word[i]) return false;
+      intersects = true;
+    } else {
+      // Perpendicular neighbours must be empty (avoid unintended adjacency)
+      const p1r = r - dc, p1c = c - dr;
+      const p2r = r + dc, p2c = c + dr;
+      const n1 = p1r >= 0 && p1c >= 0 && p1r < size && p1c < size && grid[p1r][p1c] !== null;
+      const n2 = p2r >= 0 && p2c >= 0 && p2r < size && p2c < size && grid[p2r][p2c] !== null;
+      if (n1 || n2) return false;
+    }
+  }
+  return intersects; // must cross an existing word
+}
+
+function doPlace(grid, word, startRow, startCol, dir) {
+  const dr = dir === 'down' ? 1 : 0;
+  const dc = dir === 'across' ? 1 : 0;
+  const cells = [];
+  for (let i = 0; i < word.length; i++) {
+    const r = startRow + i * dr, c = startCol + i * dc;
+    grid[r][c] = word[i];
+    cells.push({r, c});
+  }
+  return cells;
+}
+
+function generateCrossword(wordObjs, gridSize) {
+  const grid = Array.from({length: gridSize}, () => Array(gridSize).fill(null));
+  const placed = [];
+  const words = shuffle([...wordObjs]);
+
+  // Place first word horizontally in center
+  const first = words[0];
+  const r0 = Math.floor(gridSize / 2);
+  const c0 = Math.floor((gridSize - first.word.length) / 2);
+  const firstCells = doPlace(grid, first.word, r0, c0, 'across');
+  placed.push({ ...first, row: r0, col: c0, dir: 'across', cells: firstCells });
+
+  // Try to place remaining words
+  for (let wi = 1; wi < words.length; wi++) {
+    const wo = words[wi];
+    const word = wo.word;
+    let found = null;
+
+    outer:
+    for (const pw of shuffle(placed)) {
+      const newDir = pw.dir === 'across' ? 'down' : 'across';
+      const pwDr = pw.dir === 'down' ? 1 : 0;
+      const pwDc = pw.dir === 'across' ? 1 : 0;
+
+      for (let pi = 0; pi < pw.word.length; pi++) {
+        const pLetter = pw.word[pi];
+        const pr = pw.row + pi * pwDr;
+        const pc = pw.col + pi * pwDc;
+
+        for (let ni = 0; ni < word.length; ni++) {
+          if (word[ni] !== pLetter) continue;
+          let sr, sc;
+          if (newDir === 'down') { sr = pr - ni; sc = pc; }
+          else                   { sr = pr;       sc = pc - ni; }
+
+          if (canPlace(grid, word, sr, sc, newDir, gridSize)) {
+            found = { row: sr, col: sc, dir: newDir };
+            break outer;
+          }
+        }
+      }
+    }
+
+    if (found) {
+      const cells = doPlace(grid, word, found.row, found.col, found.dir);
+      placed.push({ ...wo, ...found, cells });
+    }
+  }
+
+  return { grid, placed };
+}
+
+function numberGrid(grid, placed, size) {
+  const nums = {};
+  let n = 1;
+  for (let r = 0; r < size; r++) {
+    for (let c = 0; c < size; c++) {
+      if (grid[r][c] === null) continue;
+      const isAS = (c === 0 || grid[r][c-1] === null) && (c+1 < size && grid[r][c+1] !== null);
+      const isDS = (r === 0 || grid[r-1][c] === null) && (r+1 < size && grid[r+1][c] !== null);
+      if (isAS || isDS) nums[`${r},${c}`] = n++;
+    }
+  }
+  for (const pw of placed) {
+    pw.number = nums[`${pw.row},${pw.col}`] || 0;
+  }
+  return nums;
+}
+
+// ─── RENDER GRID ───────────────────────────────────────────────────────────────
+function renderGrid() {
+  const el = document.getElementById('cwGrid');
+  const cfg = LEVEL_CFG[currentLevel];
+  const px = cfg.cellPx;
+  el.style.gridTemplateColumns = `repeat(${gridSize}, ${px}px)`;
+  el.innerHTML = '';
+
+  for (let r = 0; r < gridSize; r++) {
+    for (let c = 0; c < gridSize; c++) {
+      const div = document.createElement('div');
+      div.className = 'cw-cell ' + (gridData[r][c] === null ? 'black' : 'white');
+      div.style.cssText = `width:${px}px;height:${px}px;`;
+      div.dataset.r = r; div.dataset.c = c;
+
+      if (gridData[r][c] !== null) {
+        const key = `${r},${c}`;
+        const num = cellNumbers[key];
+        if (num) {
+          const sp = document.createElement('span');
+          sp.className = 'cell-num';
+          sp.textContent = num;
+          div.appendChild(sp);
+        }
+        const inp = document.createElement('input');
+        inp.type = 'text';
+        inp.maxLength = 2;
+        inp.className = 'cell-input';
+        inp.dataset.r = r; inp.dataset.c = c;
+        inp.style.fontSize = Math.floor(px * 0.46) + 'px';
+        inp.autocomplete = 'off';
+        inp.spellcheck = false;
+        inp.addEventListener('mousedown', onCellMouseDown);
+        inp.addEventListener('keydown', onCellKeyDown);
+        inp.addEventListener('input', onCellInput);
+        inp.addEventListener('focus', () => { div.classList.add('active-cell'); });
+        inp.addEventListener('blur',  () => { div.classList.remove('active-cell'); });
+        div.appendChild(inp);
+      }
+      el.appendChild(div);
+    }
+  }
+}
+
+function renderClues() {
+  const across = placedWords.filter(p => p.dir === 'across').sort((a,b) => a.number - b.number);
+  const down   = placedWords.filter(p => p.dir === 'down'  ).sort((a,b) => a.number - b.number);
+  renderClueList('acrossClues', across, 'across');
+  renderClueList('downClues',   down,   'down');
+}
+
+function renderClueList(elId, words, dir) {
+  const el = document.getElementById(elId);
+  el.innerHTML = '';
+  for (const pw of words) {
+    const div = document.createElement('div');
+    div.className = 'clue-item';
+    div.dataset.word = pw.word; div.dataset.dir = dir;
+    div.innerHTML = `<span class="clue-num">${pw.number}.</span><span>${pw.clue}</span>`;
+    div.addEventListener('click', () => selectWordByClue(pw, dir));
+    el.appendChild(div);
+  }
+}
+
+// ─── WORD SELECTION ────────────────────────────────────────────────────────────
+function wordsAtCell(r, c) {
+  return placedWords.filter(pw => pw.cells.some(cell => cell.r === r && cell.c === c));
+}
+
+function getCell(r, c) { return document.querySelector(`.cw-cell[data-r="${r}"][data-c="${c}"]`); }
+function getInput(r, c) { return document.querySelector(`.cell-input[data-r="${r}"][data-c="${c}"]`); }
+
+function clearHighlights() {
+  document.querySelectorAll('.cw-cell.active-word').forEach(el => el.classList.remove('active-word'));
+  document.querySelectorAll('.clue-item.active').forEach(el => el.classList.remove('active'));
+}
+
+function selectWord(pw) {
+  clearHighlights();
+  activeWord = pw;
+  pw.cells.forEach(({r, c}) => {
+    const cell = getCell(r, c);
+    if (cell) cell.classList.add('active-word');
+  });
+  // Highlight clue in panel
+  const clueEl = document.querySelector(`.clue-item[data-word="${pw.word}"][data-dir="${pw.dir}"]`);
+  if (clueEl) {
+    clueEl.classList.add('active');
+    clueEl.scrollIntoView({ block: 'nearest' });
+  }
+  // Update active clue bar
+  const bar = document.getElementById('activeClueBar');
+  bar.innerHTML = `<span class="clue-tag">${pw.number} ${pw.dir === 'across' ? 'A' : 'D'}</span>${pw.clue}`;
+}
+
+function selectWordByClue(pw, dir) {
+  selectWord(pw);
+  // Focus first empty cell in word
+  const firstEmpty = pw.cells.find(({r,c}) => {
+    const inp = getInput(r, c);
+    return inp && !inp.value;
+  }) || pw.cells[0];
+  if (firstEmpty) {
+    activeCell = firstEmpty;
+    getInput(firstEmpty.r, firstEmpty.c)?.focus();
+  }
+}
+
+function selectCell(r, c) {
+  const words = wordsAtCell(r, c);
+  if (!words.length) return;
+  const ck = `${r},${c}`;
+  if (words.length === 1) {
+    selectWord(words[0]);
+    activeCell = {r, c};
+  } else {
+    // Toggle direction on repeated click of same cell
+    if (lastClickKey === ck && activeWord) {
+      const other = words.find(w => w !== activeWord) || words[0];
+      selectWord(other);
+    } else {
+      // Prefer direction of current activeWord if available
+      const sameDir = activeWord ? words.find(w => w.dir === activeWord.dir) : null;
+      selectWord(sameDir || words[0]);
+    }
+    activeCell = {r, c};
+  }
+  lastClickKey = ck;
+}
+
+// ─── KEYBOARD HANDLING ────────────────────────────────────────────────────────
+function onCellMouseDown(e) {
+  const r = +e.target.dataset.r, c = +e.target.dataset.c;
+  selectCell(r, c);
+  activeCell = {r, c};
+}
+
+function onCellKeyDown(e) {
+  if (!activeWord || !activeCell) return;
+  const {r, c} = activeCell;
+  const key = e.key;
+
+  if (key === 'Backspace') {
+    const inp = getInput(r, c);
+    if (inp && inp.value) {
+      inp.value = '';
+    } else {
+      moveCursor(-1);
+    }
+    checkWordDone(activeWord);
+    e.preventDefault();
+    return;
+  }
+  if (key === 'Tab') {
+    e.preventDefault();
+    moveToNextWord();
+    return;
+  }
+  if (key === 'ArrowRight') { moveInDir(0,1);  e.preventDefault(); return; }
+  if (key === 'ArrowLeft')  { moveInDir(0,-1); e.preventDefault(); return; }
+  if (key === 'ArrowDown')  { moveInDir(1,0);  e.preventDefault(); return; }
+  if (key === 'ArrowUp')    { moveInDir(-1,0); e.preventDefault(); return; }
+}
+
+function onCellInput(e) {
+  if (!activeWord || !activeCell) return;
+  const inp = e.target;
+  const val = inp.value.replace(/[^a-zA-Z]/g, '').toUpperCase().slice(-1);
+  inp.value = val;
+  if (val) {
+    moveCursor(1);
+    checkWordDone(activeWord);
+    checkAllDone();
+  }
+}
+
+function moveCursor(delta) {
+  if (!activeWord || !activeCell) return;
+  const cells = activeWord.cells;
+  const idx = cells.findIndex(({r,c}) => r === activeCell.r && c === activeCell.c);
+  if (idx === -1) return;
+  const next = cells[idx + delta];
+  if (next) {
+    activeCell = next;
+    getInput(next.r, next.c)?.focus();
+  }
+}
+
+function moveInDir(dr, dc) {
+  if (!activeCell) return;
+  const r = activeCell.r + dr, c = activeCell.c + dc;
+  if (r < 0 || c < 0 || r >= gridSize || c >= gridSize) return;
+  if (gridData[r][c] === null) return;
+  const inp = getInput(r, c);
+  if (!inp) return;
+  selectCell(r, c);
+  activeCell = {r, c};
+  inp.focus();
+}
+
+function moveToNextWord() {
+  const all = placedWords.slice().sort((a,b) => a.number - b.number || (a.dir < b.dir ? -1 : 1));
+  if (!activeWord) { selectWord(all[0]); return; }
+  const idx = all.findIndex(w => w === activeWord);
+  const next = all[(idx + 1) % all.length];
+  selectWord(next);
+  const firstEmpty = next.cells.find(({r,c}) => { const i=getInput(r,c); return i && !i.value; }) || next.cells[0];
+  if (firstEmpty) { activeCell = firstEmpty; getInput(firstEmpty.r, firstEmpty.c)?.focus(); }
+}
+
+// ─── DONE CHECKING ────────────────────────────────────────────────────────────
+function isWordCorrect(pw) {
+  return pw.cells.every(({r,c}) => {
+    const inp = getInput(r, c);
+    return inp && inp.value.toUpperCase() === gridData[r][c];
+  });
+}
+
+function isWordFilled(pw) {
+  return pw.cells.every(({r,c}) => { const inp = getInput(r,c); return inp && inp.value; });
+}
+
+function checkWordDone(pw) {
+  if (!pw) return;
+  if (isWordCorrect(pw)) {
+    wordDone.add(pw.word + pw.dir);
+    const clueEl = document.querySelector(`.clue-item[data-word="${pw.word}"][data-dir="${pw.dir}"]`);
+    if (clueEl) clueEl.classList.add('done');
+    updateProgress();
+  }
+}
+
+function checkAllWords() {
+  for (const pw of placedWords) checkWordDone(pw);
+}
+
+function updateProgress() {
+  document.getElementById('progressEl').textContent = `${wordDone.size}/${placedWords.length}`;
+}
+
+function checkAllDone() {
+  if (wordDone.size === placedWords.length) {
+    setTimeout(showWinScreen, 600);
+  }
+}
+
+// ─── CHECK BUTTON ─────────────────────────────────────────────────────────────
+function checkAnswers() {
+  for (const pw of placedWords) {
+    for (const {r, c} of pw.cells) {
+      const cell = getCell(r, c);
+      const inp  = getInput(r, c);
+      if (!inp || !inp.value) continue;
+      cell.classList.remove('cell-ok', 'cell-err');
+      if (inp.value.toUpperCase() === gridData[r][c]) {
+        cell.classList.add('cell-ok');
+      } else {
+        cell.classList.add('cell-err');
+      }
+    }
+    checkWordDone(pw);
+  }
+}
+
+// ─── HINT ──────────────────────────────────────────────────────────────────────
+function showHint() {
+  const pw = activeWord;
+  if (!pw) return;
+  const emptyCell = pw.cells.find(({r,c}) => { const i=getInput(r,c); return i && !i.value; });
+  const target = emptyCell || pw.cells[0];
+  const inp  = getInput(target.r, target.c);
+  const cell = getCell(target.r, target.c);
+  if (inp) inp.value = gridData[target.r][target.c];
+  cell?.classList.add('cell-hint');
+  setTimeout(() => cell?.classList.remove('cell-hint'), 1600);
+  checkWordDone(pw);
+  checkAllDone();
+}
+
+// ─── TIMER ─────────────────────────────────────────────────────────────────────
+function startTimer() {
+  stopTimer(); timerSeconds = 0;
+  timerInterval = setInterval(() => {
+    timerSeconds++;
+    document.getElementById('timerEl').textContent = formatTime(timerSeconds);
+  }, 1000);
+}
+function stopTimer() { clearInterval(timerInterval); timerInterval = null; }
+
+// ─── SCREENS ──────────────────────────────────────────────────────────────────
+function showScreen(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active-screen'));
+  document.getElementById(id).classList.add('active-screen');
+}
+
+function startGame() {
+  const cfg = LEVEL_CFG[currentLevel];
+  const ind = INDUSTRIES.find(i => i.name === currentIndustry);
+  if (!ind) return;
+
+  let pool = [...new Set(ind.words.map(w => w.replace(/\s+/g,'').toUpperCase()))]
+    .filter(w => w.length >= cfg.minLen && w.length <= cfg.maxLen);
+
+  if (pool.length < 6) {
+    pool = [...new Set(ind.words.map(w => w.replace(/\s+/g,'').toUpperCase()))]
+      .filter(w => w.length >= 3 && w.length <= cfg.size - 1);
+  }
+
+  pool = shuffle(pool).slice(0, cfg.count);
+  const wordObjs = pool.map(w => ({ word: w, clue: getClue(w, currentIndustry) }));
+
+  const result = generateCrossword(wordObjs, cfg.size);
+  gridData   = result.grid;
+  gridSize   = cfg.size;
+  placedWords = result.placed;
+  wordDone   = new Set();
+  cellNumbers = numberGrid(gridData, placedWords, gridSize);
+  activeWord = null; activeCell = null; lastClickKey = '';
+
+  // Update bar
+  const badge = document.getElementById('levelBadge');
+  badge.textContent = currentLevel.charAt(0).toUpperCase() + currentLevel.slice(1);
+  badge.className = 'level-badge ' + currentLevel;
+  document.getElementById('industryBadge').textContent = currentIndustry;
+  document.getElementById('progressEl').textContent = `0/${placedWords.length}`;
+  document.getElementById('timerEl').textContent = '00:00';
+  document.getElementById('activeClueBar').textContent = 'Click a clue or cell to start';
+
+  renderGrid();
+  renderClues();
+  startTimer();
+  showScreen('gameScreen');
+
+  // Auto-select first across word
+  const first = placedWords.find(p => p.dir === 'across') || placedWords[0];
+  if (first) selectWordByClue(first, first.dir);
+}
+
+function showWinScreen() {
+  stopTimer();
+  document.getElementById('winTime').textContent = formatTime(timerSeconds);
+  document.getElementById('winLevel').textContent = currentLevel.charAt(0).toUpperCase() + currentLevel.slice(1);
+  document.getElementById('winWords').textContent = placedWords.length;
+  document.getElementById('winIndustry').textContent = currentIndustry;
+  showScreen('winScreen');
+}
+
+// ─── INIT ──────────────────────────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', () => {
+  const sel = document.getElementById('industrySelect');
+  INDUSTRIES.forEach(ind => {
+    const opt = document.createElement('option');
+    opt.value = opt.textContent = ind.name;
+    sel.appendChild(opt);
+  });
+  sel.addEventListener('change', () => { currentIndustry = sel.value; });
+
+  document.querySelectorAll('.level-pill').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.level-pill').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentLevel = btn.dataset.level;
+    });
+  });
+
+  document.getElementById('startBtn').addEventListener('click', startGame);
+  document.getElementById('newGameBtn').addEventListener('click', startGame);
+  document.getElementById('checkBtn').addEventListener('click', checkAnswers);
+  document.getElementById('hintBtn').addEventListener('click', showHint);
+  document.getElementById('playAgainBtn').addEventListener('click', startGame);
+  document.getElementById('changeBtn').addEventListener('click', () => showScreen('setupScreen'));
+});
+</script>
+
+<script src="assets/shared-nav.js"></script>
+</body>
+</html>
