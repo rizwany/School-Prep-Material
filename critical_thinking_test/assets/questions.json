@@ -1,0 +1,3110 @@
+{
+  "meta": {
+    "title": "Critical Thinking Skills Assessment",
+    "description": "A self-reflection test that explores how you tend to analyze information, weigh evidence, and reason through everyday situations across 10 dimensions of critical thinking.",
+    "scale": {
+      "min": 1,
+      "max": 10,
+      "minLabel": "Not at all likely",
+      "maxLabel": "Extremely likely"
+    },
+    "categories": [
+      {
+        "id": "analysis",
+        "label": "Analysis & Breaking Down Arguments",
+        "icon": "🔍"
+      },
+      {
+        "id": "evaluation",
+        "label": "Evaluating Evidence & Credibility",
+        "icon": "⚖️"
+      },
+      {
+        "id": "inference",
+        "label": "Inference & Logical Reasoning",
+        "icon": "🧩"
+      },
+      {
+        "id": "bias",
+        "label": "Identifying Bias & Assumptions",
+        "icon": "🕵️"
+      },
+      {
+        "id": "problem_solving",
+        "label": "Problem-Solving & Decision-Making",
+        "icon": "🛠️"
+      },
+      {
+        "id": "interpretation",
+        "label": "Interpretation & Comprehension",
+        "icon": "📖"
+      },
+      {
+        "id": "explanation",
+        "label": "Explanation & Justification",
+        "icon": "💬"
+      },
+      {
+        "id": "self_regulation",
+        "label": "Self-Regulation & Reflective Thinking",
+        "icon": "🪞"
+      },
+      {
+        "id": "alternatives",
+        "label": "Considering Alternatives & Counterarguments",
+        "icon": "🔀"
+      },
+      {
+        "id": "data_literacy",
+        "label": "Data & Statistical Literacy",
+        "icon": "📊"
+      }
+    ],
+    "levels": [
+      {
+        "min": 9.0,
+        "max": 10.01,
+        "label": "Master Thinker",
+        "emoji": "🏆",
+        "desc": "You consistently think with rigor and discipline — questioning assumptions, weighing evidence, and following logic even when it's inconvenient. Sharp, reliable reasoning is second nature to you."
+      },
+      {
+        "min": 7.5,
+        "max": 9.0,
+        "label": "Sharp Thinker",
+        "emoji": "🌟",
+        "desc": "You reason carefully and critically in most situations, catching flawed logic and checking evidence before you commit to a view. A few blind spots are still worth watching for."
+      },
+      {
+        "min": 6.0,
+        "max": 7.5,
+        "label": "Solid Thinker",
+        "emoji": "👍",
+        "desc": "You generally think things through, but time pressure, convenience, or strong opinions sometimes shortcut your reasoning process."
+      },
+      {
+        "min": 4.5,
+        "max": 6.0,
+        "label": "Developing Thinker",
+        "emoji": "🌱",
+        "desc": "Your critical thinking is situational — sharp in some areas, more reactive in others. Deliberate practice in the weaker dimensions could make a real difference."
+      },
+      {
+        "min": 3.0,
+        "max": 4.5,
+        "label": "Inconsistent Thinker",
+        "emoji": "⚠️",
+        "desc": "Snap judgments, assumptions, or first impressions often win out over careful reasoning in your responses. Small, deliberate habits could sharpen your thinking significantly."
+      },
+      {
+        "min": 1.0,
+        "max": 3.0,
+        "label": "Needs Practice",
+        "emoji": "📚",
+        "desc": "Your answers suggest careful reasoning rarely drives your decisions right now. This is a solid starting point for building stronger critical thinking habits."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "category": "analysis",
+      "reverse": false,
+      "text": "You're reading a news article about a local policy change. How likely are you to consciously separate the factual reporting from the writer's own opinions as you read?"
+    },
+    {
+      "id": 2,
+      "category": "analysis",
+      "reverse": false,
+      "text": "You see an advertisement claim that a supplement 'boosted energy in users' and are tempted to conclude it will cure your fatigue. How likely are you to notice that the ad's evidence doesn't actually support that conclusion?"
+    },
+    {
+      "id": 3,
+      "category": "analysis",
+      "reverse": false,
+      "text": "You're handed a complicated problem at work with several moving parts. How likely are you to break it down into its separate components before deciding how to respond?"
+    },
+    {
+      "id": 4,
+      "category": "analysis",
+      "reverse": false,
+      "text": "A friend is explaining why they're upset, and partway through you notice two things they've said don't quite fit together. How likely are you to notice this contradiction rather than just nodding along?"
+    },
+    {
+      "id": 5,
+      "category": "analysis",
+      "reverse": true,
+      "text": "You're about to sign up for a new phone plan with a long terms-and-conditions page. How likely are you to skim past it quickly instead of reading the key clauses carefully?"
+    },
+    {
+      "id": 6,
+      "category": "analysis",
+      "reverse": false,
+      "text": "You're given an exam or assignment prompt that's worded in a complicated way. How likely are you to pause and identify exactly what question is being asked before you start answering?"
+    },
+    {
+      "id": 7,
+      "category": "analysis",
+      "reverse": false,
+      "text": "Someone argues 'because the new manager is young, she won't be able to lead the team.' How likely are you to notice that the reason given doesn't actually justify the conclusion?"
+    },
+    {
+      "id": 8,
+      "category": "analysis",
+      "reverse": false,
+      "text": "You and a family member keep having the same argument about chores. How likely are you to try to identify the real underlying issue rather than just reacting to the surface complaint?"
+    },
+    {
+      "id": 9,
+      "category": "analysis",
+      "reverse": false,
+      "text": "You're watching a political speech full of passionate language. How likely are you to separate the actual factual claims being made from the emotional appeals surrounding them?"
+    },
+    {
+      "id": 10,
+      "category": "analysis",
+      "reverse": false,
+      "text": "You're assigned a large, open-ended group project at school or work. How likely are you to break it into its component tasks before deciding how to proceed?"
+    },
+    {
+      "id": 11,
+      "category": "analysis",
+      "reverse": false,
+      "text": "You're following a recipe and notice a step seems to assume you've already done something the recipe never mentioned. How likely are you to stop and figure out what's missing rather than guessing?"
+    },
+    {
+      "id": 12,
+      "category": "analysis",
+      "reverse": false,
+      "text": "You see a post on social media that mixes description of an event with the poster's own take on it. How likely are you to notice which parts are factual and which are the poster's opinion?"
+    },
+    {
+      "id": 13,
+      "category": "analysis",
+      "reverse": false,
+      "text": "In a meeting, a colleague presents a recommendation that seems to skip a step in the reasoning. How likely are you to notice that they jumped to a conclusion without fully supporting it?"
+    },
+    {
+      "id": 14,
+      "category": "analysis",
+      "reverse": true,
+      "text": "You're taking out a new insurance policy and there's a page of fine print at the end. How likely are you to skip reading it closely since the summary sounds fine?"
+    },
+    {
+      "id": 15,
+      "category": "analysis",
+      "reverse": false,
+      "text": "A friend is retelling a story about what happened at a party, and two of the details don't quite line up. How likely are you to notice the inconsistency?"
+    },
+    {
+      "id": 16,
+      "category": "analysis",
+      "reverse": false,
+      "text": "You're reading an online product review that mixes descriptions of features with the reviewer's personal feelings about the product. How likely are you to separate the two as you read?"
+    },
+    {
+      "id": 17,
+      "category": "analysis",
+      "reverse": false,
+      "text": "A professor asks a question in class that's more nuanced than it first sounds. How likely are you to take a moment to work out exactly what they're really asking before responding?"
+    },
+    {
+      "id": 18,
+      "category": "analysis",
+      "reverse": false,
+      "text": "You're in a debate and your opponent makes a claim built on several smaller points. How likely are you to break their argument down into its individual premises before responding?"
+    },
+    {
+      "id": 19,
+      "category": "analysis",
+      "reverse": false,
+      "text": "You're reviewing a financial report at work that has an upbeat written summary attached. How likely are you to check whether the actual numbers support the summary's positive spin?"
+    },
+    {
+      "id": 20,
+      "category": "analysis",
+      "reverse": true,
+      "text": "You're about to sign a rental lease. How likely are you to skip reading through the clauses carefully because you're in a hurry to move in?"
+    },
+    {
+      "id": 21,
+      "category": "analysis",
+      "reverse": false,
+      "text": "You read an opinion column about a controversial issue. How likely are you to separate the writer's interpretation from the underlying facts they're citing?"
+    },
+    {
+      "id": 22,
+      "category": "analysis",
+      "reverse": false,
+      "text": "Your doctor explains your diagnosis and recommended treatment in one long explanation. How likely are you to mentally separate the cause they've identified from the recommendation that follows?"
+    },
+    {
+      "id": 23,
+      "category": "analysis",
+      "reverse": false,
+      "text": "You're reading a historical account of an event. How likely are you to consider how the author's perspective might be shaping the way the story is told?"
+    },
+    {
+      "id": 24,
+      "category": "analysis",
+      "reverse": false,
+      "text": "A salesperson gives you a pitch that sounds persuasive but jumps between points quickly. How likely are you to notice a gap in their logic as they speak?"
+    },
+    {
+      "id": 25,
+      "category": "analysis",
+      "reverse": true,
+      "text": "You're assembling furniture and the next instruction doesn't seem to follow logically from the step before it. How likely are you to just keep following along without checking whether the steps actually make sense in order?"
+    },
+    {
+      "id": 26,
+      "category": "analysis",
+      "reverse": false,
+      "text": "You're reading a job posting and notice two of the listed requirements seem to contradict each other. How likely are you to notice this rather than skimming past it?"
+    },
+    {
+      "id": 27,
+      "category": "analysis",
+      "reverse": false,
+      "text": "You and a friend are texting back and forth during a disagreement. How likely are you to try to identify exactly what the two of you actually disagree about, underneath the back-and-forth?"
+    },
+    {
+      "id": 28,
+      "category": "analysis",
+      "reverse": false,
+      "text": "You're faced with a multi-step word problem in a class or a real-life budgeting task. How likely are you to break it into smaller sub-parts before trying to solve it?"
+    },
+    {
+      "id": 29,
+      "category": "analysis",
+      "reverse": true,
+      "text": "You come across a long forum post arguing a controversial position. How likely are you to just go along with the framing of the post without noticing which parts are assumptions rather than established claims?"
+    },
+    {
+      "id": 30,
+      "category": "analysis",
+      "reverse": false,
+      "text": "In a group chat, two people seem to be arguing past each other. How likely are you to notice that they're actually responding to different points rather than the same one?"
+    },
+    {
+      "id": 31,
+      "category": "analysis",
+      "reverse": false,
+      "text": "An ad says 'customers loved it' right next to a chart of unrelated performance numbers. How likely are you to notice that the testimonial and the data are being presented as if they're the same kind of evidence, when they're not?"
+    },
+    {
+      "id": 32,
+      "category": "analysis",
+      "reverse": false,
+      "text": "You're assigned a reading with a dense central argument. How likely are you to identify the author's main claim separately from the supporting evidence they use?"
+    },
+    {
+      "id": 33,
+      "category": "analysis",
+      "reverse": false,
+      "text": "You're reviewing a proposed household or team budget. How likely are you to look for the underlying assumptions the numbers are built on, rather than just the totals?"
+    },
+    {
+      "id": 34,
+      "category": "analysis",
+      "reverse": true,
+      "text": "You file a warranty claim and assume it's covered without checking the listed conditions. How likely are you to do this rather than reading the conditions first?"
+    },
+    {
+      "id": 35,
+      "category": "analysis",
+      "reverse": false,
+      "text": "You see a dramatic news headline online. How likely are you to check whether the actual article content matches what the headline implies?"
+    },
+    {
+      "id": 36,
+      "category": "analysis",
+      "reverse": false,
+      "text": "Your sibling complains that you 'never help out.' How likely are you to consider whether this is based on specific facts or mostly on how they're feeling in the moment?"
+    },
+    {
+      "id": 37,
+      "category": "analysis",
+      "reverse": false,
+      "text": "A coworker misses a deadline and gives you an explanation. How likely are you to separate the factual reason from the parts that sound more like justification?"
+    },
+    {
+      "id": 38,
+      "category": "analysis",
+      "reverse": false,
+      "text": "You're listening to a policy debate where a speaker's argument relies on something they never actually state outright. How likely are you to notice the unstated assumption?"
+    },
+    {
+      "id": 39,
+      "category": "analysis",
+      "reverse": false,
+      "text": "A customer sends a long complaint email that wanders through several tangents. How likely are you to identify the actual core issue buried in it?"
+    },
+    {
+      "id": 40,
+      "category": "analysis",
+      "reverse": true,
+      "text": "You're installing a new app and it's requesting a list of permissions. How likely are you to just accept them without checking whether they match what the app is supposed to do?"
+    },
+    {
+      "id": 41,
+      "category": "analysis",
+      "reverse": false,
+      "text": "You read the abstract of a scientific article summarizing its findings. How likely are you to check whether the actual results described later support the claim made in the abstract?"
+    },
+    {
+      "id": 42,
+      "category": "analysis",
+      "reverse": false,
+      "text": "In a debate about climate policy, a speaker blends two separate issues together as if they were one. How likely are you to notice that they're actually talking about two different things?"
+    },
+    {
+      "id": 43,
+      "category": "analysis",
+      "reverse": true,
+      "text": "A friend cancels plans, giving you two reasons that don't quite add up together. How likely are you to just accept the explanation without noticing the reasons conflict?"
+    },
+    {
+      "id": 44,
+      "category": "analysis",
+      "reverse": false,
+      "text": "Your company sends a policy memo that includes a general rule plus one specific example. How likely are you to distinguish the actual rule from the example used to illustrate it?"
+    },
+    {
+      "id": 45,
+      "category": "analysis",
+      "reverse": true,
+      "text": "You're about to buy something from a store. How likely are you to skip checking the return policy details because you don't expect to need it?"
+    },
+    {
+      "id": 46,
+      "category": "analysis",
+      "reverse": false,
+      "text": "You're reviewing a rental agreement's clause about your security deposit. How likely are you to read through the exact conditions for getting it back before signing?"
+    },
+    {
+      "id": 47,
+      "category": "analysis",
+      "reverse": false,
+      "text": "A political ad states a fact and then draws a conclusion that doesn't really follow from it. How likely are you to notice the logical gap?"
+    },
+    {
+      "id": 48,
+      "category": "analysis",
+      "reverse": false,
+      "text": "You're filling out a medical history form with precisely worded questions. How likely are you to read each question carefully before answering, rather than answering what you assume it's asking?"
+    },
+    {
+      "id": 49,
+      "category": "analysis",
+      "reverse": false,
+      "text": "You're given a group assignment brief at school with several required components listed. How likely are you to break the brief down into each required part before starting?"
+    },
+    {
+      "id": 50,
+      "category": "analysis",
+      "reverse": true,
+      "text": "You get an email or notice about a fine or fee. How likely are you to just skim it and assume you know what it says rather than reading it in full?"
+    },
+    {
+      "id": 51,
+      "category": "evaluation",
+      "reverse": false,
+      "text": "You come across a dramatic news story and are tempted to share it. How likely are you to check the source's credibility before sharing it?"
+    },
+    {
+      "id": 52,
+      "category": "evaluation",
+      "reverse": true,
+      "text": "You see a shocking headline on social media. How likely are you to share it right away without checking whether the source is credible?"
+    },
+    {
+      "id": 53,
+      "category": "evaluation",
+      "reverse": false,
+      "text": "A social media influencer with no medical background recommends a specific supplement for a health condition. How likely are you to question the claim rather than accept it at face value?"
+    },
+    {
+      "id": 54,
+      "category": "evaluation",
+      "reverse": false,
+      "text": "An ad cites a study showing impressive results, but the study only tested 12 people. How likely are you to notice the small sample size and weigh the claim accordingly?"
+    },
+    {
+      "id": 55,
+      "category": "evaluation",
+      "reverse": false,
+      "text": "You want to use a powerful quote in an essay or speech. How likely are you to verify that the person actually said it before using it?"
+    },
+    {
+      "id": 56,
+      "category": "evaluation",
+      "reverse": true,
+      "text": "You come across an inspiring quote attributed to a famous person. How likely are you to repeat it without checking whether they actually said it?"
+    },
+    {
+      "id": 57,
+      "category": "evaluation",
+      "reverse": false,
+      "text": "A product page features a glowing customer testimonial but no actual data or test results. How likely are you to stay skeptical of the claim until you see real evidence?"
+    },
+    {
+      "id": 58,
+      "category": "evaluation",
+      "reverse": false,
+      "text": "You find an article online that looks relevant to a current question. How likely are you to check its publication date before treating it as up to date?"
+    },
+    {
+      "id": 59,
+      "category": "evaluation",
+      "reverse": true,
+      "text": "You find an article that turns out to be several years old. How likely are you to treat it as current news anyway without noticing the date?"
+    },
+    {
+      "id": 60,
+      "category": "evaluation",
+      "reverse": false,
+      "text": "An online ad features an 'expert' endorsing a product. How likely are you to check whether that person's credentials are actually relevant to the product?"
+    },
+    {
+      "id": 61,
+      "category": "evaluation",
+      "reverse": false,
+      "text": "You hear a striking statistic in conversation and want to repeat it later. How likely are you to double-check it before repeating it to others?"
+    },
+    {
+      "id": 62,
+      "category": "evaluation",
+      "reverse": false,
+      "text": "You see a claim going viral online. How likely are you to fact-check it before commenting or reacting to it?"
+    },
+    {
+      "id": 63,
+      "category": "evaluation",
+      "reverse": true,
+      "text": "A family member forwards a health tip in a WhatsApp group. How likely are you to forward it onward without checking whether it's actually true?"
+    },
+    {
+      "id": 64,
+      "category": "evaluation",
+      "reverse": false,
+      "text": "You read about a study with conclusions that seem to favor a particular product. How likely are you to check who funded the study before trusting its conclusions?"
+    },
+    {
+      "id": 65,
+      "category": "evaluation",
+      "reverse": false,
+      "text": "You're looking at glowing reviews for a product online. How likely are you to check the reviewers' histories to see whether the reviews might be fake?"
+    },
+    {
+      "id": 66,
+      "category": "evaluation",
+      "reverse": false,
+      "text": "You're considering financial advice from someone presenting themselves as an advisor. How likely are you to verify their credentials before trusting their advice?"
+    },
+    {
+      "id": 67,
+      "category": "evaluation",
+      "reverse": false,
+      "text": "Someone in an online forum gives a confident stock tip. How likely are you to verify their claims independently before acting on the tip?"
+    },
+    {
+      "id": 68,
+      "category": "evaluation",
+      "reverse": false,
+      "text": "An article quotes an 'expert' to support its claims. How likely are you to check whether that person's actual expertise is relevant to the topic?"
+    },
+    {
+      "id": 69,
+      "category": "evaluation",
+      "reverse": false,
+      "text": "You read a claim in one news source. How likely are you to check at least one other source before accepting it as true?"
+    },
+    {
+      "id": 70,
+      "category": "evaluation",
+      "reverse": true,
+      "text": "You search online for an answer to a question. How likely are you to accept the first result you see without checking any others?"
+    },
+    {
+      "id": 71,
+      "category": "evaluation",
+      "reverse": false,
+      "text": "You're reading a science or tech article. How likely are you to check the author's credentials before trusting their conclusions?"
+    },
+    {
+      "id": 72,
+      "category": "evaluation",
+      "reverse": false,
+      "text": "You come across a survey whose questions seem to be worded to push a particular answer. How likely are you to factor that into how much you trust the results?"
+    },
+    {
+      "id": 73,
+      "category": "evaluation",
+      "reverse": false,
+      "text": "A politician cites a statistic in a speech. How likely are you to look for the original data source before repeating the statistic yourself?"
+    },
+    {
+      "id": 74,
+      "category": "evaluation",
+      "reverse": true,
+      "text": "You see a political statistic in a meme shared by a page you know leans strongly one way. How likely are you to repeat it without checking whether it's accurate?"
+    },
+    {
+      "id": 75,
+      "category": "evaluation",
+      "reverse": false,
+      "text": "You find a great deal on a website you've never used before. How likely are you to check that the seller is legitimate before ordering?"
+    },
+    {
+      "id": 76,
+      "category": "evaluation",
+      "reverse": true,
+      "text": "You find a website offering a deal that seems too good to be true. How likely are you to place an order anyway without checking whether the site is legitimate?"
+    },
+    {
+      "id": 77,
+      "category": "evaluation",
+      "reverse": false,
+      "text": "An ad features a dramatic 'before and after' photo. How likely are you to consider whether the photo could have been edited or staged?"
+    },
+    {
+      "id": 78,
+      "category": "evaluation",
+      "reverse": false,
+      "text": "You get an urgent-sounding call or email claiming to be from your bank asking you to act quickly. How likely are you to verify it's genuinely from your bank before doing anything?"
+    },
+    {
+      "id": 79,
+      "category": "evaluation",
+      "reverse": false,
+      "text": "You hear a rumor about a coworker from someone else in the office. How likely are you to look for actual evidence before deciding whether to believe it?"
+    },
+    {
+      "id": 80,
+      "category": "evaluation",
+      "reverse": true,
+      "text": "A rumor about a coworker spreads around the office. How likely are you to accept it as true just because several people are repeating it, without any real evidence?"
+    },
+    {
+      "id": 81,
+      "category": "evaluation",
+      "reverse": false,
+      "text": "You find health advice from someone online who calls themselves a wellness expert. How likely are you to check what actual credentials or training they have?"
+    },
+    {
+      "id": 82,
+      "category": "evaluation",
+      "reverse": false,
+      "text": "An ad shows a dramatic testimonial with a tiny 'results not typical' disclaimer. How likely are you to factor that disclaimer into how much you trust the testimonial?"
+    },
+    {
+      "id": 83,
+      "category": "evaluation",
+      "reverse": false,
+      "text": "You're reading a Wikipedia article and want to rely on one of its claims. How likely are you to check whether the cited source actually supports that specific claim?"
+    },
+    {
+      "id": 84,
+      "category": "evaluation",
+      "reverse": true,
+      "text": "You read a claim on a Wikipedia-style page and cite it elsewhere. How likely are you to do this without checking the actual source behind the claim?"
+    },
+    {
+      "id": 85,
+      "category": "evaluation",
+      "reverse": false,
+      "text": "Someone tells you a health remedy worked for their relative and suggests you try it. How likely are you to recognize that one person's story isn't strong evidence on its own?"
+    },
+    {
+      "id": 86,
+      "category": "evaluation",
+      "reverse": false,
+      "text": "You come across a statistic that turns out to be from a report published a decade ago. How likely are you to check how current a statistic is before quoting it?"
+    },
+    {
+      "id": 87,
+      "category": "evaluation",
+      "reverse": false,
+      "text": "You're considering donating to an online crowdfunding campaign for a stranger. How likely are you to look for verifying details, like news coverage or confirmation from an official source, before donating?"
+    },
+    {
+      "id": 88,
+      "category": "evaluation",
+      "reverse": false,
+      "text": "You want to check whether a research claim in the news is solid. How likely are you to look into whether the finding has been replicated or peer-reviewed before trusting it?"
+    },
+    {
+      "id": 89,
+      "category": "evaluation",
+      "reverse": false,
+      "text": "A salesperson makes a strong claim about a product's performance. How likely are you to ask for evidence behind the claim rather than taking their word for it?"
+    },
+    {
+      "id": 90,
+      "category": "evaluation",
+      "reverse": true,
+      "text": "A salesperson makes a confident claim about a product with no evidence offered. How likely are you to trust it simply because they sound confident?"
+    },
+    {
+      "id": 91,
+      "category": "evaluation",
+      "reverse": false,
+      "text": "A screenshot of a supposed news headline is circulating online. How likely are you to look for the original source before believing it's real?"
+    },
+    {
+      "id": 92,
+      "category": "evaluation",
+      "reverse": false,
+      "text": "You're reading a report from a news outlet you're not familiar with. How likely are you to check the outlet's track record and reputation before trusting the report?"
+    },
+    {
+      "id": 93,
+      "category": "evaluation",
+      "reverse": false,
+      "text": "You see an anonymous account with a huge following make a bold claim online. How likely are you to look into whether the account is actually a reliable source before believing it?"
+    },
+    {
+      "id": 94,
+      "category": "evaluation",
+      "reverse": false,
+      "text": "You get a call or email claiming to be from a government agency asking for personal information. How likely are you to verify it's genuine before giving any details?"
+    },
+    {
+      "id": 95,
+      "category": "evaluation",
+      "reverse": false,
+      "text": "You read a diet or nutrition claim online. How likely are you to check it against the broader scientific consensus rather than relying on a single source?"
+    },
+    {
+      "id": 96,
+      "category": "evaluation",
+      "reverse": false,
+      "text": "A celebrity endorses a product in an ad. How likely are you to look for independent evidence that the product actually works, rather than assuming it does?"
+    },
+    {
+      "id": 97,
+      "category": "evaluation",
+      "reverse": false,
+      "text": "You're reading a self-published blog or book giving medical or legal advice. How likely are you to check the author's actual credentials before trusting the advice?"
+    },
+    {
+      "id": 98,
+      "category": "evaluation",
+      "reverse": false,
+      "text": "You read an interesting fact somewhere and want to share it. How likely are you to verify it with at least one more reliable source before repeating it?"
+    },
+    {
+      "id": 99,
+      "category": "evaluation",
+      "reverse": false,
+      "text": "You're researching a major purchase, like a car or an appliance. How likely are you to check multiple independent reviews rather than relying on the manufacturer's own claims?"
+    },
+    {
+      "id": 100,
+      "category": "evaluation",
+      "reverse": false,
+      "text": "You hear an impressive claim about a new technology from a company's own press release. How likely are you to look for independent verification before accepting it as accurate?"
+    },
+    {
+      "id": 101,
+      "category": "inference",
+      "reverse": false,
+      "text": "At work you notice that employee sick days spike in the same weeks as tight deadlines. How likely are you to consider other explanations (like flu season or overtime) before concluding that deadlines directly cause the sick days?"
+    },
+    {
+      "id": 102,
+      "category": "inference",
+      "reverse": true,
+      "text": "A friend's social media post confidently states a conclusion drawn from a single personal story. How likely are you to share it as fact without checking whether the evidence actually supports it?"
+    },
+    {
+      "id": 103,
+      "category": "inference",
+      "reverse": false,
+      "text": "Your group project got a lower grade than expected, but you don't yet know which section lost points. How likely are you to hold off blaming a specific teammate until you get more details from the professor?"
+    },
+    {
+      "id": 104,
+      "category": "inference",
+      "reverse": false,
+      "text": "You read a news article claiming a certain diet makes people live longer, based on a study where diet and exercise habits were never separated. How likely are you to notice that the study doesn't rule out exercise as the real cause?"
+    },
+    {
+      "id": 105,
+      "category": "inference",
+      "reverse": false,
+      "text": "Your neighbor's apartment has been noisy every night this week, right after they got a new roommate. How likely are you to consider other explanations before concluding the new roommate is definitely the cause?"
+    },
+    {
+      "id": 106,
+      "category": "inference",
+      "reverse": false,
+      "text": "Looking back at six months of bank statements, you notice your spending consistently rises in the same week every month. How likely are you to use that pattern to reasonably predict next month's expenses rather than just guessing?"
+    },
+    {
+      "id": 107,
+      "category": "inference",
+      "reverse": false,
+      "text": "A ballot measure you're about to vote on is complicated and you've only read the short summary. How likely are you to seek out the full text or expert analysis before deciding how to vote?"
+    },
+    {
+      "id": 108,
+      "category": "inference",
+      "reverse": true,
+      "text": "A headline claims 'New Study Proves Chocolate Cures Anxiety.' How likely are you to accept that conclusion without checking what the actual study found?"
+    },
+    {
+      "id": 109,
+      "category": "inference",
+      "reverse": false,
+      "text": "Your app suddenly crashes only when you open it on Wi-Fi, never on mobile data. How likely are you to use that clue to narrow down the likely cause rather than guessing randomly at a fix?"
+    },
+    {
+      "id": 110,
+      "category": "inference",
+      "reverse": false,
+      "text": "Your younger sibling's grades dropped this semester. How likely are you to consider several possible reasons, like a harder teacher or personal stress, before assuming you already know the one true cause?"
+    },
+    {
+      "id": 111,
+      "category": "inference",
+      "reverse": true,
+      "text": "A coworker gets a promotion you wanted. How likely are you to immediately conclude it was due to favoritism, without knowing anything about their actual performance or qualifications?"
+    },
+    {
+      "id": 112,
+      "category": "inference",
+      "reverse": false,
+      "text": "A product has hundreds of reviews, and the negative ones all mention the same specific defect. How likely are you to treat that repeated pattern as meaningful evidence, rather than dismissing it after reading just one glowing review?"
+    },
+    {
+      "id": 113,
+      "category": "inference",
+      "reverse": false,
+      "text": "You read that students who play more video games tend to have lower grades, and a headline claims gaming ruins grades. How likely are you to consider that other factors, like less overall study time, could explain the link instead of gaming itself?"
+    },
+    {
+      "id": 114,
+      "category": "inference",
+      "reverse": true,
+      "text": "Your car won't start one morning. How likely are you to assume it's the exact same problem as last time and pay for that repair again, without checking what's actually wrong first?"
+    },
+    {
+      "id": 115,
+      "category": "inference",
+      "reverse": false,
+      "text": "You've had a persistent headache for a few days. How likely are you to consider several possible causes, like dehydration or eye strain, and get it checked rather than immediately assuming the worst?"
+    },
+    {
+      "id": 116,
+      "category": "inference",
+      "reverse": false,
+      "text": "You see a political poll showing a small shift that falls within the margin of error. How likely are you to recognize that this shift might not represent a real change in public opinion?"
+    },
+    {
+      "id": 117,
+      "category": "inference",
+      "reverse": false,
+      "text": "You notice a celebrity got sick shortly after receiving a vaccine, and people online are blaming the vaccine. How likely are you to wait for real evidence of a causal link before accepting that conclusion?"
+    },
+    {
+      "id": 118,
+      "category": "inference",
+      "reverse": false,
+      "text": "You got a low grade on an essay with no comments explaining why. How likely are you to ask your teacher for specifics before concluding that you're just bad at the subject?"
+    },
+    {
+      "id": 119,
+      "category": "inference",
+      "reverse": false,
+      "text": "A stock you own drops three percent in one day. How likely are you to check whether this is part of a broader market dip before deciding something is specifically wrong with that company?"
+    },
+    {
+      "id": 120,
+      "category": "inference",
+      "reverse": true,
+      "text": "Your parent didn't call you back for two days. How likely are you to assume they're upset with you, without considering other explanations like being busy or unwell?"
+    },
+    {
+      "id": 121,
+      "category": "inference",
+      "reverse": false,
+      "text": "A project at work is delayed, and there are several possible reasons: a vendor issue, unclear requirements, or understaffing. How likely are you to gather information on each possibility before deciding which explanation is most likely?"
+    },
+    {
+      "id": 122,
+      "category": "inference",
+      "reverse": false,
+      "text": "You read an article where the facts describe a modest increase in a local crime rate, but the headline claims a 'crime wave.' How likely are you to notice that the headline's conclusion overstates what the data actually shows?"
+    },
+    {
+      "id": 123,
+      "category": "inference",
+      "reverse": false,
+      "text": "You see a laptop online priced much lower than competitors. How likely are you to check reviews and seller details before assuming it must be a scam or defective?"
+    },
+    {
+      "id": 124,
+      "category": "inference",
+      "reverse": false,
+      "text": "Your houseplant's leaves are turning yellow. How likely are you to consider multiple possible causes, like overwatering, light, or pests, rather than guessing the first thing that comes to mind?"
+    },
+    {
+      "id": 125,
+      "category": "inference",
+      "reverse": false,
+      "text": "Your fitness tracker shows your resting heart rate creeping up over three months. How likely are you to look at other data, like sleep and caffeine, to form a reasonable explanation rather than panicking or ignoring it?"
+    },
+    {
+      "id": 126,
+      "category": "inference",
+      "reverse": true,
+      "text": "A new city policy goes into effect, and traffic accidents drop that same month. How likely are you to conclude the policy caused the drop, without checking whether accidents were already trending down beforehand?"
+    },
+    {
+      "id": 127,
+      "category": "inference",
+      "reverse": false,
+      "text": "In a meeting, someone proposes a decision based on incomplete data. How likely are you to point out that more information is needed before a real conclusion can be reached?"
+    },
+    {
+      "id": 128,
+      "category": "inference",
+      "reverse": false,
+      "text": "A friend recommends a home remedy that 'worked for them.' How likely are you to recognize that one person's experience isn't strong evidence it will work for you, and look for more information?"
+    },
+    {
+      "id": 129,
+      "category": "inference",
+      "reverse": false,
+      "text": "You notice your answer on a quiz matches a classmate's exactly. How likely are you to consider that it might simply be the obvious correct answer, before assuming they cheated off you?"
+    },
+    {
+      "id": 130,
+      "category": "inference",
+      "reverse": false,
+      "text": "You've noticed your utility bills go up every winter for the past three years. How likely are you to plan your budget around that expected pattern rather than being surprised by it each time?"
+    },
+    {
+      "id": 131,
+      "category": "inference",
+      "reverse": false,
+      "text": "Your child has become unusually quiet lately. How likely are you to consider several possible reasons, like school stress or friendship issues, before assuming you already know what's wrong?"
+    },
+    {
+      "id": 132,
+      "category": "inference",
+      "reverse": true,
+      "text": "An article quotes a single doctor who dismisses a widely used medication. How likely are you to treat that as solid proof the medication is dangerous, without checking what the broader research actually says?"
+    },
+    {
+      "id": 133,
+      "category": "inference",
+      "reverse": false,
+      "text": "A report shows employees using a new software tool complete tasks faster, but the tool was given first to your most experienced staff. How likely are you to consider that experience, not the tool, might explain the speed difference?"
+    },
+    {
+      "id": 134,
+      "category": "inference",
+      "reverse": false,
+      "text": "A politician's quote about a controversial issue is circulating, but you've only seen a short clip. How likely are you to look for the full context before forming a judgment about what they meant?"
+    },
+    {
+      "id": 135,
+      "category": "inference",
+      "reverse": true,
+      "text": "Your Wi-Fi stopped working right after you rearranged your furniture. How likely are you to assume the furniture caused it, without considering more likely explanations like an outage or a router issue?"
+    },
+    {
+      "id": 136,
+      "category": "inference",
+      "reverse": false,
+      "text": "Customer complaints about your product all mention the same feature over the past month. How likely are you to treat this pattern as a real signal worth investigating rather than dismissing it as coincidence?"
+    },
+    {
+      "id": 137,
+      "category": "inference",
+      "reverse": false,
+      "text": "You hear that a coworker's friend tried a new sleep gadget and felt great after one night. How likely are you to recognize that one person's one-night experience isn't enough evidence that the gadget actually works?"
+    },
+    {
+      "id": 138,
+      "category": "inference",
+      "reverse": true,
+      "text": "A friend hasn't replied to your text in a few hours. How likely are you to conclude they're upset with you or avoiding you, without considering that they might just be busy?"
+    },
+    {
+      "id": 139,
+      "category": "inference",
+      "reverse": false,
+      "text": "News breaks about a sudden power outage in your city, and several rumor theories are circulating online. How likely are you to wait for official information and weigh which explanation is best supported before deciding what happened?"
+    },
+    {
+      "id": 140,
+      "category": "inference",
+      "reverse": false,
+      "text": "In a debate class, a classmate argues that because one small local study found a benefit, it must apply to everyone everywhere. How likely are you to point out that this conclusion overreaches what the study actually shows?"
+    },
+    {
+      "id": 141,
+      "category": "inference",
+      "reverse": false,
+      "text": "You see one scathing review of a restaurant with a photo of a bad dish. How likely are you to check the overall rating and how many other reviews exist before deciding you'll never eat there?"
+    },
+    {
+      "id": 142,
+      "category": "inference",
+      "reverse": false,
+      "text": "Your investment portfolio had one bad month after years of steady growth. How likely are you to check whether this is a one-time dip or part of a longer trend before making a big decision?"
+    },
+    {
+      "id": 143,
+      "category": "inference",
+      "reverse": false,
+      "text": "You arrive home to find the door unlocked and a window open. How likely are you to consider multiple explanations, like forgetting to lock it or a family member coming home early, before assuming a break-in occurred?"
+    },
+    {
+      "id": 144,
+      "category": "inference",
+      "reverse": true,
+      "text": "A client sends a short, one-line email reply instead of their usual friendly tone. How likely are you to conclude they're upset with your work, without considering that they might just be busy or in a rush?"
+    },
+    {
+      "id": 145,
+      "category": "inference",
+      "reverse": false,
+      "text": "A tech review claims a phone's battery is 'terrible' based on one day of heavy testing under unusual conditions. How likely are you to recognize that a single day of atypical use isn't strong evidence about typical battery life?"
+    },
+    {
+      "id": 146,
+      "category": "inference",
+      "reverse": false,
+      "text": "You're trying to figure out whether a local crime rate is really rising. How likely are you to look at multi-year data from a reliable source rather than basing your conclusion on a few recent stories you've seen?"
+    },
+    {
+      "id": 147,
+      "category": "inference",
+      "reverse": false,
+      "text": "After a family argument, you find yourself replaying only the final comment that was said. How likely are you to consider what led up to it, rather than deciding that single comment explains the whole fight?"
+    },
+    {
+      "id": 148,
+      "category": "inference",
+      "reverse": false,
+      "text": "You're waiting on medical test results and don't have enough information yet to know the outcome. How likely are you to avoid jumping to a worst-case conclusion and instead wait for the actual results?"
+    },
+    {
+      "id": 149,
+      "category": "inference",
+      "reverse": false,
+      "text": "Sales data shows a small two percent increase after a marketing change. How likely are you to describe this accurately as a modest improvement rather than exaggerating it into definite proof of a huge success?"
+    },
+    {
+      "id": 150,
+      "category": "inference",
+      "reverse": true,
+      "text": "A friend gives a flat 'sure, whatever' reply to your plan suggestion. How likely are you to conclude they secretly hate the idea, without considering other reasons for their short reply, like being distracted?"
+    },
+    {
+      "id": 151,
+      "category": "bias",
+      "reverse": false,
+      "text": "You realize you only follow news sources that share your political views. How likely are you to deliberately read a source with an opposing viewpoint to get a fuller picture?"
+    },
+    {
+      "id": 152,
+      "category": "bias",
+      "reverse": true,
+      "text": "You see someone with tattoos and piercings walk into a business meeting. How likely are you to assume they're less professional before they've said a word?"
+    },
+    {
+      "id": 153,
+      "category": "bias",
+      "reverse": false,
+      "text": "You notice you assumed an older relative wouldn't understand how to use a new app before even showing them. How likely are you to question that assumption and just show them?"
+    },
+    {
+      "id": 154,
+      "category": "bias",
+      "reverse": false,
+      "text": "An online article about a policy debate uses words like 'shocking betrayal' and 'outrageous scheme' throughout. How likely are you to notice that this language is designed to provoke rather than inform you?"
+    },
+    {
+      "id": 155,
+      "category": "bias",
+      "reverse": false,
+      "text": "A financial advisor who earns a commission on certain investment products recommends you buy exactly those products. How likely are you to factor in their financial incentive when weighing their advice?"
+    },
+    {
+      "id": 156,
+      "category": "bias",
+      "reverse": true,
+      "text": "You're building a case for a project idea you already love. How likely are you to look mainly for data and examples that support it while skipping over evidence that might argue against it?"
+    },
+    {
+      "id": 157,
+      "category": "bias",
+      "reverse": false,
+      "text": "You're asked to fill out a survey that says, 'Do you agree that the dangerous new policy should be stopped?' How likely are you to notice that the wording is pushing you toward a particular answer?"
+    },
+    {
+      "id": 158,
+      "category": "bias",
+      "reverse": false,
+      "text": "You form an instant negative impression of someone based on their profile picture before reading anything they've written. How likely are you to hold off on judging them until you actually read what they say?"
+    },
+    {
+      "id": 159,
+      "category": "bias",
+      "reverse": false,
+      "text": "A new classmate from a country you associate with strong math skills joins your study group. How likely are you to catch that assumption and wait to see their actual work before deciding how skilled they are at math?"
+    },
+    {
+      "id": 160,
+      "category": "bias",
+      "reverse": false,
+      "text": "A supplement company's website features an article claiming their product is essential for health. How likely are you to notice that the article's source has a financial stake in convincing you to buy it?"
+    },
+    {
+      "id": 161,
+      "category": "bias",
+      "reverse": true,
+      "text": "When scrolling news, you tend to click on headlines that confirm what you already believe and skip past ones that challenge it. How likely are you to keep doing this without noticing the pattern?"
+    },
+    {
+      "id": 162,
+      "category": "bias",
+      "reverse": false,
+      "text": "You see someone parked in a disabled parking spot without a visible placard and feel instantly annoyed. How likely are you to pause and consider that they might have a non-visible disability or a valid permit you can't see?"
+    },
+    {
+      "id": 163,
+      "category": "bias",
+      "reverse": false,
+      "text": "A report recommending a new vendor lists only the benefits and none of the risks or costs. How likely are you to notice the one-sided framing and ask for the full picture before deciding?"
+    },
+    {
+      "id": 164,
+      "category": "bias",
+      "reverse": true,
+      "text": "An online ad claims a skincare product 'eliminates wrinkles overnight' with dramatic before-and-after photos. How likely are you to take the claim at face value without questioning how the photos might be staged or edited?"
+    },
+    {
+      "id": 165,
+      "category": "bias",
+      "reverse": false,
+      "text": "A news story critical of a politician you support comes out. How likely are you to evaluate the claims on their merits rather than dismissing the story just because you like the politician?"
+    },
+    {
+      "id": 166,
+      "category": "bias",
+      "reverse": false,
+      "text": "You realize your social media feed mostly shows you posts that match your existing opinions. How likely are you to actively seek out different perspectives to balance what the algorithm shows you?"
+    },
+    {
+      "id": 167,
+      "category": "bias",
+      "reverse": true,
+      "text": "Your teenage niece gives her opinion on a serious topic. How likely are you to dismiss it as naive just because of her age, without actually considering what she said?"
+    },
+    {
+      "id": 168,
+      "category": "bias",
+      "reverse": false,
+      "text": "A wellness influencer claims a mainstream medical treatment is 'a scam' while promoting their own alternative product. How likely are you to consider their financial motive before accepting their claim?"
+    },
+    {
+      "id": 169,
+      "category": "bias",
+      "reverse": false,
+      "text": "While writing a performance review for an employee you personally like, you notice you're only recalling their successes. How likely are you to make an effort to also recall and note their actual shortcomings?"
+    },
+    {
+      "id": 170,
+      "category": "bias",
+      "reverse": true,
+      "text": "A political ad about a candidate you already dislike shows only negative, cherry-picked clips. How likely are you to accept the ad's portrayal without checking whether it's missing context?"
+    },
+    {
+      "id": 171,
+      "category": "bias",
+      "reverse": false,
+      "text": "An assigned reading about a historical conflict tells the story entirely from one country's perspective. How likely are you to seek out a source from the other side to get a fuller picture?"
+    },
+    {
+      "id": 172,
+      "category": "bias",
+      "reverse": false,
+      "text": "You meet someone who tells you they're a truck driver, and you catch yourself assuming things about their education and interests. How likely are you to check that assumption rather than let it guide how you treat them?"
+    },
+    {
+      "id": 173,
+      "category": "bias",
+      "reverse": false,
+      "text": "An article from an advocacy group presents a statistic that perfectly supports the cause they're funded to promote. How likely are you to check who funded the group before accepting the statistic at face value?"
+    },
+    {
+      "id": 174,
+      "category": "bias",
+      "reverse": false,
+      "text": "You're comparing insurance quotes and find yourself favoring the brand you grew up hearing about, even though a competitor's quote is objectively better. How likely are you to notice that bias and choose based on the actual numbers instead?"
+    },
+    {
+      "id": 175,
+      "category": "bias",
+      "reverse": false,
+      "text": "A fundraising post uses intensely emotional language and urgent countdown timers to pressure you into donating immediately. How likely are you to notice the manipulation tactic and evaluate the cause on its actual merits?"
+    },
+    {
+      "id": 176,
+      "category": "bias",
+      "reverse": true,
+      "text": "While reviewing job candidates, one reminds you of yourself at that age. How likely are you to rate them more favorably for that reason, even if their qualifications aren't actually stronger than other candidates?"
+    },
+    {
+      "id": 177,
+      "category": "bias",
+      "reverse": false,
+      "text": "A doctor's office assumes an overweight patient's knee pain is caused by their weight without examining other possibilities. How likely are you, if you were that doctor, to check for other causes rather than settling on the assumption first?"
+    },
+    {
+      "id": 178,
+      "category": "bias",
+      "reverse": false,
+      "text": "A petition you're asked to sign describes the opposing side as 'radical extremists' throughout. How likely are you to notice that this framing is meant to provoke rather than inform your decision?"
+    },
+    {
+      "id": 179,
+      "category": "bias",
+      "reverse": true,
+      "text": "Someone cuts you off in traffic. How likely are you to instantly assume they're a rude, inconsiderate person rather than consider they might be rushing to an emergency?"
+    },
+    {
+      "id": 180,
+      "category": "bias",
+      "reverse": false,
+      "text": "A product has hundreds of five-star reviews that all use suspiciously similar wording. How likely are you to consider that these might be fake or incentivized rather than taking them at face value?"
+    },
+    {
+      "id": 181,
+      "category": "bias",
+      "reverse": false,
+      "text": "While researching for an essay, you notice you're only saving sources that agree with your thesis. How likely are you to deliberately seek out sources that challenge your position too?"
+    },
+    {
+      "id": 182,
+      "category": "bias",
+      "reverse": true,
+      "text": "You come across an article that confirms exactly what you already believed about a controversial topic. How likely are you to accept it as credible without checking whether the source itself is reliable?"
+    },
+    {
+      "id": 183,
+      "category": "bias",
+      "reverse": false,
+      "text": "Your partner is quiet during dinner, and your first thought is that they're upset with you. How likely are you to consider other explanations, like a hard day at work, before assuming it's about you?"
+    },
+    {
+      "id": 184,
+      "category": "bias",
+      "reverse": false,
+      "text": "An op-ed arguing for a particular policy doesn't mention that the author's company would financially benefit from it. How likely are you to look into the author's background before fully trusting their argument?"
+    },
+    {
+      "id": 185,
+      "category": "bias",
+      "reverse": false,
+      "text": "You see one post from someone expressing a political opinion you disagree with. How likely are you to avoid assuming you now know everything about their character based on that single post?"
+    },
+    {
+      "id": 186,
+      "category": "bias",
+      "reverse": false,
+      "text": "You've always believed a certain home remedy works, and a new study finds it doesn't. How likely are you to seriously consider the new evidence rather than dismissing it just because it contradicts what you already believed?"
+    },
+    {
+      "id": 187,
+      "category": "bias",
+      "reverse": false,
+      "text": "An internal employee satisfaction survey asks, 'How much do you appreciate the great benefits we provide?' How likely are you to notice that the question is worded to encourage a positive answer?"
+    },
+    {
+      "id": 188,
+      "category": "bias",
+      "reverse": true,
+      "text": "You hear someone speaking with a foreign accent and catch yourself assuming they're less fluent in your language or less educated. How likely are you to let that assumption shape how you speak to them, without checking it?"
+    },
+    {
+      "id": 189,
+      "category": "bias",
+      "reverse": false,
+      "text": "An ad for a financial product uses a flashing 'only 3 spots left!' countdown to pressure you into signing up quickly. How likely are you to recognize this as a pressure tactic and take time to research before deciding?"
+    },
+    {
+      "id": 190,
+      "category": "bias",
+      "reverse": false,
+      "text": "A tech company publishes its own study showing its product is safer than competitors. How likely are you to consider that the company has an obvious incentive to reach that conclusion before fully trusting the results?"
+    },
+    {
+      "id": 191,
+      "category": "bias",
+      "reverse": false,
+      "text": "You see several polls before an election, and one lone poll shows your preferred candidate winning by a landslide while others show a close race. How likely are you to be skeptical of that outlier poll rather than trusting it just because you like what it says?"
+    },
+    {
+      "id": 192,
+      "category": "bias",
+      "reverse": false,
+      "text": "A new coworker seems overly quiet in their first week and you start forming an opinion that they're unfriendly. How likely are you to hold off on that judgment and give them more time before deciding what they're like?"
+    },
+    {
+      "id": 193,
+      "category": "bias",
+      "reverse": false,
+      "text": "A headline says a company 'slashes jobs' without mentioning it also opened a larger number of new positions elsewhere. How likely are you to look for the full story before forming an opinion of the company?"
+    },
+    {
+      "id": 194,
+      "category": "bias",
+      "reverse": true,
+      "text": "A doctor tells you something you don't want to hear about your health habits. How likely are you to search for other opinions that instead validate what you'd rather believe?"
+    },
+    {
+      "id": 195,
+      "category": "bias",
+      "reverse": false,
+      "text": "A struggling student in your class is often late, and you catch yourself assuming they're just lazy. How likely are you to consider other possible explanations, like a difficult home situation, before judging?"
+    },
+    {
+      "id": 196,
+      "category": "bias",
+      "reverse": false,
+      "text": "An influencer posts a glowing review of a product, and you notice it's marked as a paid partnership. How likely are you to factor in that financial relationship when deciding how much to trust the review?"
+    },
+    {
+      "id": 197,
+      "category": "bias",
+      "reverse": false,
+      "text": "Your family jokes that the youngest sibling is 'always the irresponsible one.' How likely are you to judge their actions based on what they actually do, rather than through that old label?"
+    },
+    {
+      "id": 198,
+      "category": "bias",
+      "reverse": false,
+      "text": "You catch yourself making excuses for a mistake made by a political candidate you support, while you'd have criticized the same mistake from someone you oppose. How likely are you to notice that double standard in yourself?"
+    },
+    {
+      "id": 199,
+      "category": "bias",
+      "reverse": false,
+      "text": "An influencer recommends a specific credit card and mentions they get a bonus for every signup. How likely are you to weigh that financial incentive before deciding whether to trust the recommendation?"
+    },
+    {
+      "id": 200,
+      "category": "bias",
+      "reverse": true,
+      "text": "You see a parent's child having a loud tantrum in a store. How likely are you to instantly judge the parent as bad at parenting, without considering that you're only seeing one brief moment?"
+    },
+    {
+      "id": 201,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "At work, you notice a project keeps missing deadlines. Before proposing a fix, how likely are you to pause and identify what is actually causing the delays rather than just adding more meetings?"
+    },
+    {
+      "id": 202,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You're assigned a large research paper due in a month. How likely are you to break it into smaller steps (topic, outline, research, draft, edit) with mini deadlines before you start writing?"
+    },
+    {
+      "id": 203,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "Your car starts making a strange noise. How likely are you to look into what might actually be causing it before deciding what repair to pay for?"
+    },
+    {
+      "id": 204,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "Your family is arguing about how to spend a shared bonus. How likely are you to write out the pros and cons of each option before the family decides together?"
+    },
+    {
+      "id": 205,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "While shopping online for a productivity tool, you see one that promises to fix all your organization problems. How likely are you to buy it immediately without checking whether it actually addresses what's slowing you down?"
+    },
+    {
+      "id": 206,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You've had a persistent headache for a few days. How likely are you to think through possible causes (sleep, screen time, stress, diet) before deciding what to do about it?"
+    },
+    {
+      "id": 207,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "Before voting on a local ballot measure, how likely are you to weigh its likely long-term effects on your community rather than voting based on the ad you saw last?"
+    },
+    {
+      "id": 208,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You find a bug in code you're writing. How likely are you to test a small fix in an isolated case before applying it across the whole program?"
+    },
+    {
+      "id": 209,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "You get into a disagreement with a family member over text. How likely are you to fire back a reply the moment you feel annoyed, without pausing to think about how to respond?"
+    },
+    {
+      "id": 210,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You're considering a major purchase like a new laptop. How likely are you to compare the trade-offs (price, features, longevity) before deciding rather than just going with the first one you see?"
+    },
+    {
+      "id": 211,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "A recurring complaint keeps coming up on your team. How likely are you to dig into what's actually causing it instead of just addressing the latest instance?"
+    },
+    {
+      "id": 212,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "Your group project isn't coming together well two weeks before the deadline. How likely are you to stop and rethink your approach rather than keep pushing forward the same way?"
+    },
+    {
+      "id": 213,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "A study method you tried for your last exam didn't help much. How likely are you to use the exact same method again for the next exam without changing anything?"
+    },
+    {
+      "id": 214,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You're planning a multi-city trip. How likely are you to break the planning into steps (budget, dates, bookings, itinerary) instead of trying to figure it all out at once?"
+    },
+    {
+      "id": 215,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "A news article reports on a new government spending plan. How likely are you to think through its likely downstream effects before deciding what you think of it?"
+    },
+    {
+      "id": 216,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You're deciding between two job offers. How likely are you to methodically list what matters to you and compare both offers against it before deciding?"
+    },
+    {
+      "id": 217,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You want to try a new eating pattern. How likely are you to test it out gradually and track how it affects you before fully committing to it long-term?"
+    },
+    {
+      "id": 218,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "Your team wants to change how you handle customer requests. How likely are you to trial the new process with a small group first before rolling it out to everyone?"
+    },
+    {
+      "id": 219,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "You have a big task due in two weeks. How likely are you to just start working on whatever part catches your attention first, without mapping out the steps beforehand?"
+    },
+    {
+      "id": 220,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You're running a school science experiment. How likely are you to test your hypothesis on a small scale before drawing conclusions from a single result?"
+    },
+    {
+      "id": 221,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You're thinking about investing some savings. How likely are you to write out the risks and potential returns before deciding rather than just going with a friend's tip?"
+    },
+    {
+      "id": 222,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "A leak appears under your kitchen sink. How likely are you to figure out where the water is actually coming from before buying replacement parts?"
+    },
+    {
+      "id": 223,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "You see a gadget advertised as a fix for a problem you're having around the house. How likely are you to purchase it right away without first figuring out what's actually causing the problem?"
+    },
+    {
+      "id": 224,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You have a big exam coming up in a month. How likely are you to break your studying into a step-by-step schedule instead of cramming everything the night before?"
+    },
+    {
+      "id": 225,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You want to improve a process at work. How likely are you to run a small pilot to see if it actually works before applying it company-wide?"
+    },
+    {
+      "id": 226,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "Your family is planning a vacation with a limited budget. How likely are you to weigh the trade-offs between destinations before deciding together?"
+    },
+    {
+      "id": 227,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "You see a new diet trend blowing up on social media. How likely are you to jump on it right away without checking whether it fits your actual situation?"
+    },
+    {
+      "id": 228,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "Your neighborhood has a recurring problem, like flooding after rain. How likely are you to look into what's actually causing it before proposing a solution at the community meeting?"
+    },
+    {
+      "id": 229,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "Your laptop keeps crashing. How likely are you to methodically test different possible causes (software, overheating, memory) instead of guessing at a fix?"
+    },
+    {
+      "id": 230,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You're deciding how to handle a tense situation with a friend. How likely are you to think through a few different ways to approach the conversation before picking one?"
+    },
+    {
+      "id": 231,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You're planning to confront a roommate about a recurring issue. How likely are you to think through what you want to say and how they might respond before bringing it up?"
+    },
+    {
+      "id": 232,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You're choosing between two vendors for a work project. How likely are you to compare their trade-offs (cost, quality, reliability) on paper before deciding?"
+    },
+    {
+      "id": 233,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You're weighing two possible career paths. How likely are you to methodically compare them (growth, pay, interest, stability) rather than just picking whichever feels right in the moment?"
+    },
+    {
+      "id": 234,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "You have a frustrating day at work. How likely are you to decide to quit your job that same day, without thinking through the consequences first?"
+    },
+    {
+      "id": 235,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "A treatment your doctor recommended isn't working as expected. How likely are you to go back and reconsider the approach with them rather than just continuing it anyway?"
+    },
+    {
+      "id": 236,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You want to pay off some debt. How likely are you to break the payoff into a step-by-step plan rather than just paying random amounts whenever you have extra cash?"
+    },
+    {
+      "id": 237,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "Your budgeting approach hasn't worked for months. How likely are you to keep using the exact same approach anyway instead of trying something different?"
+    },
+    {
+      "id": 238,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "Your company wants to launch new software. How likely are you to test it with a small group of users first before releasing it to everyone?"
+    },
+    {
+      "id": 239,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "There's a referendum on the ballot about a new tax. How likely are you to research its likely consequences before deciding how to vote?"
+    },
+    {
+      "id": 240,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You're trying to stick to a grocery budget. How likely are you to break your shopping plan into steps (list, prices, budget check) before you go to the store?"
+    },
+    {
+      "id": 241,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "A project at work is behind schedule. How likely are you to investigate what's actually causing the delay before assigning blame or adding resources?"
+    },
+    {
+      "id": 242,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "Something goes wrong on a group project. How likely are you to blame whoever comes to mind first without actually looking into what caused the problem?"
+    },
+    {
+      "id": 243,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "Your group presentation rehearsal goes badly. How likely are you to rework your approach before the real presentation instead of just hoping it goes better?"
+    },
+    {
+      "id": 244,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You and your partner disagree about a parenting decision. How likely are you to weigh the pros and cons of each approach together before deciding?"
+    },
+    {
+      "id": 245,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "You spot a big sale on something expensive. How likely are you to buy it on the spot without thinking through whether you actually need it?"
+    },
+    {
+      "id": 246,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "A science experiment gives you a surprising result. How likely are you to adjust your approach and retest rather than assuming your first conclusion is correct?"
+    },
+    {
+      "id": 247,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "A storm warning is issued for your area. How likely are you to think through the steps you'd need to take to prepare rather than deciding at the last minute?"
+    },
+    {
+      "id": 248,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "Before rolling out a new tool to your whole team, how likely are you to test it with a couple of people first to catch problems early?"
+    },
+    {
+      "id": 249,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "You decide to renovate a room in your house. How likely are you to start knocking down walls before mapping out a plan or budget?"
+    },
+    {
+      "id": 250,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You're deciding whether to switch banks. How likely are you to weigh the trade-offs (fees, service, features) before making the switch?"
+    },
+    {
+      "id": 251,
+      "category": "interpretation",
+      "reverse": false,
+      "text": "You receive a long work email with several requests. How likely are you to read the entire email carefully before replying, rather than skimming and responding to the first line?"
+    },
+    {
+      "id": 252,
+      "category": "interpretation",
+      "reverse": true,
+      "text": "Your professor gives an assignment with instructions you find slightly confusing. How likely are you to just guess what they meant and start working rather than asking for clarification?"
+    },
+    {
+      "id": 253,
+      "category": "interpretation",
+      "reverse": false,
+      "text": "You see a dramatic news headline about a new study. How likely are you to read the full article before forming an opinion on what it actually found?"
+    },
+    {
+      "id": 254,
+      "category": "interpretation",
+      "reverse": false,
+      "text": "A friend makes a comment that seems to disagree with something you said. How likely are you to check that you understood their actual point before responding?"
+    },
+    {
+      "id": 255,
+      "category": "interpretation",
+      "reverse": false,
+      "text": "You're reading a confusing paragraph in a textbook. How likely are you to reread it until it actually makes sense rather than skimming past it and moving on?"
+    },
+    {
+      "id": 256,
+      "category": "interpretation",
+      "reverse": true,
+      "text": "You see a chart in a social media post claiming to show a trend. How likely are you to share it right away based on the caption without checking what the chart actually shows?"
+    },
+    {
+      "id": 257,
+      "category": "interpretation",
+      "reverse": false,
+      "text": "Your manager sends a message with an ambiguous deadline (\"soon\"). How likely are you to ask them to clarify exactly when they need it rather than assuming a date?"
+    },
+    {
+      "id": 258,
+      "category": "interpretation",
+      "reverse": false,
+      "text": "You're reading the terms of an online purchase before checking out. How likely are you to actually read the return policy details rather than assuming you know what they say?"
+    },
+    {
+      "id": 259,
+      "category": "interpretation",
+      "reverse": true,
+      "text": "A friend's text message seems short and blunt. How likely are you to assume they're upset with you and react, without asking what they actually meant?"
+    },
+    {
+      "id": 260,
+      "category": "interpretation",
+      "reverse": false,
+      "text": "You receive instructions for assembling furniture. How likely are you to read through all the steps before starting rather than jumping in based on the picture alone?"
+    },
+    {
+      "id": 261,
+      "category": "interpretation",
+      "reverse": false,
+      "text": "A political candidate's quote is circulating online, seemingly out of context. How likely are you to look up the full quote before deciding what you think about it?"
+    },
+    {
+      "id": 262,
+      "category": "interpretation",
+      "reverse": true,
+      "text": "You skim the subject line of a work email and assume you know what it's about. How likely are you to reply based on that assumption without reading the body of the email?"
+    },
+    {
+      "id": 263,
+      "category": "interpretation",
+      "reverse": false,
+      "text": "A doctor explains a diagnosis using some unfamiliar terms. How likely are you to ask them to clarify what those terms actually mean before deciding what to think or do?"
+    },
+    {
+      "id": 264,
+      "category": "interpretation",
+      "reverse": false,
+      "text": "You're reading a graph in a report showing sales trends. How likely are you to check the axis labels and scale carefully before drawing a conclusion from it?"
+    },
+    {
+      "id": 265,
+      "category": "interpretation",
+      "reverse": false,
+      "text": "A classmate explains their argument in a discussion. How likely are you to make sure you've understood their point correctly before you argue against it?"
+    },
+    {
+      "id": 266,
+      "category": "interpretation",
+      "reverse": true,
+      "text": "You see a strongly worded post on social media about an issue. How likely are you to comment your reaction immediately without reading it fully first?"
+    },
+    {
+      "id": 267,
+      "category": "interpretation",
+      "reverse": false,
+      "text": "You get a text from a coworker asking you to \"handle the client thing.\" How likely are you to ask what specifically they mean before taking action?"
+    },
+    {
+      "id": 268,
+      "category": "interpretation",
+      "reverse": false,
+      "text": "You're reading an insurance policy document. How likely are you to read the fine print carefully rather than assuming it works like a similar policy you've had before?"
+    },
+    {
+      "id": 269,
+      "category": "interpretation",
+      "reverse": false,
+      "text": "A friend tells you a story that seems to imply something about their feelings. How likely are you to check what they actually meant before assuming you know?"
+    },
+    {
+      "id": 270,
+      "category": "interpretation",
+      "reverse": false,
+      "text": "You receive a form with several fields to fill out. How likely are you to read each field's instructions carefully before filling it in, rather than guessing based on a glance?"
+    },
+    {
+      "id": 271,
+      "category": "interpretation",
+      "reverse": false,
+      "text": "You see a viral post claiming a shocking statistic. How likely are you to check the original source before believing or sharing it?"
+    },
+    {
+      "id": 272,
+      "category": "interpretation",
+      "reverse": false,
+      "text": "A recipe includes a step you're unsure about. How likely are you to reread the instructions carefully to make sure you understand what it's asking before continuing?"
+    },
+    {
+      "id": 273,
+      "category": "interpretation",
+      "reverse": true,
+      "text": "You read the opening lines of a long article and think you get the gist. How likely are you to stop there and form a firm opinion without reading the rest?"
+    },
+    {
+      "id": 274,
+      "category": "interpretation",
+      "reverse": false,
+      "text": "Your professor's feedback on your essay uses some academic terms. How likely are you to look up or ask about anything you don't fully understand before revising?"
+    },
+    {
+      "id": 275,
+      "category": "interpretation",
+      "reverse": false,
+      "text": "A colleague sends a message that could be read two different ways. How likely are you to ask them what they meant rather than assuming the worse interpretation?"
+    },
+    {
+      "id": 276,
+      "category": "interpretation",
+      "reverse": false,
+      "text": "You're comparing two products online, and their spec sheets are dense with numbers. How likely are you to read through the details carefully before deciding which one is better for your needs?"
+    },
+    {
+      "id": 277,
+      "category": "interpretation",
+      "reverse": true,
+      "text": "A social media post about a health topic sounds alarming. How likely are you to accept it as true and act on it without checking a reliable source first?"
+    },
+    {
+      "id": 278,
+      "category": "interpretation",
+      "reverse": false,
+      "text": "You're reading a legal or financial document you need to sign. How likely are you to read through it fully and ask questions about anything unclear before signing?"
+    },
+    {
+      "id": 279,
+      "category": "interpretation",
+      "reverse": false,
+      "text": "A friend's message ends with just \"ok.\" How likely are you to consider more than one possible tone (neutral, annoyed, rushed) before assuming what they meant?"
+    },
+    {
+      "id": 280,
+      "category": "interpretation",
+      "reverse": false,
+      "text": "You're looking at a chart comparing prices over time in an article. How likely are you to check what time period and units it's actually showing before drawing a conclusion?"
+    },
+    {
+      "id": 281,
+      "category": "interpretation",
+      "reverse": true,
+      "text": "You see a headline that seems to confirm what you already believe. How likely are you to accept it as accurate without reading the article to check?"
+    },
+    {
+      "id": 282,
+      "category": "interpretation",
+      "reverse": false,
+      "text": "A teacher gives verbal instructions for a group activity. How likely are you to ask a clarifying question if part of it isn't clear, rather than guessing?"
+    },
+    {
+      "id": 283,
+      "category": "interpretation",
+      "reverse": false,
+      "text": "You receive a text from a family member that seems oddly formal. How likely are you to consider that you might be misreading their tone before reacting?"
+    },
+    {
+      "id": 284,
+      "category": "interpretation",
+      "reverse": false,
+      "text": "You're reading a scientific article that summarizes a study's findings. How likely are you to check what the study actually measured before repeating its claims to others?"
+    },
+    {
+      "id": 285,
+      "category": "interpretation",
+      "reverse": true,
+      "text": "You get an email that seems to criticize your work. How likely are you to fire back a defensive reply right away, before rereading it to check what it's really saying?"
+    },
+    {
+      "id": 286,
+      "category": "interpretation",
+      "reverse": false,
+      "text": "You're filling out a job application with detailed instructions. How likely are you to read every requirement carefully before submitting rather than skimming and hoping for the best?"
+    },
+    {
+      "id": 287,
+      "category": "interpretation",
+      "reverse": false,
+      "text": "A friend recommends a product and mentions some details about it. How likely are you to make sure you understood their actual experience before repeating it as fact to someone else?"
+    },
+    {
+      "id": 288,
+      "category": "interpretation",
+      "reverse": false,
+      "text": "You see a post online summarizing a court ruling. How likely are you to check what the ruling actually says before forming an opinion on it?"
+    },
+    {
+      "id": 289,
+      "category": "interpretation",
+      "reverse": true,
+      "text": "A group chat message uses sarcasm that could be missed. How likely are you to take it completely literally and respond accordingly without considering it might be a joke?"
+    },
+    {
+      "id": 290,
+      "category": "interpretation",
+      "reverse": false,
+      "text": "You're reading your utility bill and the amount looks off. How likely are you to actually read through the charges to understand what changed rather than just assuming it's a mistake?"
+    },
+    {
+      "id": 291,
+      "category": "interpretation",
+      "reverse": false,
+      "text": "You're given directions to a new place with several turns. How likely are you to read through the whole route before starting to drive rather than following it turn by turn blindly?"
+    },
+    {
+      "id": 292,
+      "category": "interpretation",
+      "reverse": false,
+      "text": "You're reading a product review that starts negatively. How likely are you to read the rest of the review for full context before deciding against the product?"
+    },
+    {
+      "id": 293,
+      "category": "interpretation",
+      "reverse": false,
+      "text": "A coworker's presentation includes a slide with a graph you find confusing. How likely are you to ask them to explain what it's showing rather than nodding along?"
+    },
+    {
+      "id": 294,
+      "category": "interpretation",
+      "reverse": false,
+      "text": "You're reading through a syllabus at the start of a course. How likely are you to go through it carefully to understand the requirements rather than skimming it once?"
+    },
+    {
+      "id": 295,
+      "category": "interpretation",
+      "reverse": false,
+      "text": "A message from your bank mentions a change to your account. How likely are you to read the full notice to understand what's actually changing before assuming the worst?"
+    },
+    {
+      "id": 296,
+      "category": "interpretation",
+      "reverse": false,
+      "text": "You catch part of a conversation about yourself that sounds critical. How likely are you to seek out more context before reacting, rather than assuming you understand the full picture?"
+    },
+    {
+      "id": 297,
+      "category": "interpretation",
+      "reverse": false,
+      "text": "You're reading a survey question that seems oddly worded. How likely are you to reread it carefully to understand what it's actually asking before answering?"
+    },
+    {
+      "id": 298,
+      "category": "interpretation",
+      "reverse": false,
+      "text": "A news segment shows a short clip of a public figure's statement. How likely are you to look for the full context before forming a judgment about what they meant?"
+    },
+    {
+      "id": 299,
+      "category": "interpretation",
+      "reverse": false,
+      "text": "You receive assembly instructions with diagrams and text. How likely are you to cross-check the diagrams against the text before proceeding to the next step?"
+    },
+    {
+      "id": 300,
+      "category": "interpretation",
+      "reverse": true,
+      "text": "You see two people arguing in a comment thread. How likely are you to jump in and take a side after reading just one comment, without reading the full exchange first?"
+    },
+    {
+      "id": 301,
+      "category": "explanation",
+      "reverse": false,
+      "text": "You make a decision on a project and a colleague asks why you chose that approach. How likely are you to walk them through your reasoning step by step, not just state the conclusion?"
+    },
+    {
+      "id": 302,
+      "category": "explanation",
+      "reverse": false,
+      "text": "A classmate asks why you answered a homework question the way you did. How likely are you to explain the actual steps of your reasoning rather than just giving the answer again?"
+    },
+    {
+      "id": 303,
+      "category": "explanation",
+      "reverse": true,
+      "text": "A friend asks why you believe something you've said. How likely are you to just say 'I just do' instead of giving them real reasons?"
+    },
+    {
+      "id": 304,
+      "category": "explanation",
+      "reverse": false,
+      "text": "Your teenager asks why you set a particular house rule. How likely are you to explain the actual reasoning behind it instead of saying 'because I said so'?"
+    },
+    {
+      "id": 305,
+      "category": "explanation",
+      "reverse": false,
+      "text": "You and a friend disagree about a news story. How likely are you to back up your opinion with specific facts and reasons rather than just repeating yourself more firmly?"
+    },
+    {
+      "id": 306,
+      "category": "explanation",
+      "reverse": false,
+      "text": "You post an opinion online and someone civilly asks you to explain your reasoning. How likely are you to give a substantive explanation rather than a dismissive one-liner?"
+    },
+    {
+      "id": 307,
+      "category": "explanation",
+      "reverse": true,
+      "text": "Your manager asks you to justify a recommendation you made. How likely are you to respond with 'just trust me, it's right' instead of explaining your reasoning?"
+    },
+    {
+      "id": 308,
+      "category": "explanation",
+      "reverse": false,
+      "text": "A friend asks why you chose one product over a similar one. How likely are you to lay out the specific criteria you compared before deciding?"
+    },
+    {
+      "id": 309,
+      "category": "explanation",
+      "reverse": false,
+      "text": "You decide against a treatment your doctor suggested, and a family member asks why. How likely are you to explain your specific reasons rather than just saying you'd rather not?"
+    },
+    {
+      "id": 310,
+      "category": "explanation",
+      "reverse": false,
+      "text": "A friend asks why you voted for a particular candidate or measure. How likely are you to explain the specific factors that led to your decision?"
+    },
+    {
+      "id": 311,
+      "category": "explanation",
+      "reverse": false,
+      "text": "Your partner asks why you chose one savings strategy over another. How likely are you to explain the actual numbers and reasoning behind it?"
+    },
+    {
+      "id": 312,
+      "category": "explanation",
+      "reverse": false,
+      "text": "A colleague asks why you chose one software tool over another for a task. How likely are you to explain the specific tradeoffs you considered?"
+    },
+    {
+      "id": 313,
+      "category": "explanation",
+      "reverse": false,
+      "text": "You're tutoring a student who got confused by a correct answer. How likely are you to walk them through the reasoning behind it rather than just repeating the answer?"
+    },
+    {
+      "id": 314,
+      "category": "explanation",
+      "reverse": true,
+      "text": "A junior colleague asks how you reached a conclusion in a report. How likely are you to brush them off with 'it's complicated, don't worry about it'?"
+    },
+    {
+      "id": 315,
+      "category": "explanation",
+      "reverse": false,
+      "text": "You decide to change the family budget and your spouse asks why. How likely are you to explain your reasoning transparently, step by step?"
+    },
+    {
+      "id": 316,
+      "category": "explanation",
+      "reverse": false,
+      "text": "A friend asks why you ended a friendship the way you did. How likely are you to give them the real reasons rather than a vague excuse?"
+    },
+    {
+      "id": 317,
+      "category": "explanation",
+      "reverse": true,
+      "text": "In a discussion about a news topic, someone asks where you got your information. How likely are you to dodge the question and change the subject?"
+    },
+    {
+      "id": 318,
+      "category": "explanation",
+      "reverse": false,
+      "text": "You leave a review for a product or restaurant. How likely are you to include the specific reasons behind your rating rather than just a number?"
+    },
+    {
+      "id": 319,
+      "category": "explanation",
+      "reverse": false,
+      "text": "A friend asks why you decided against a particular diet or exercise plan. How likely are you to explain your specific reasoning?"
+    },
+    {
+      "id": 320,
+      "category": "explanation",
+      "reverse": false,
+      "text": "You propose a change at a community meeting. How likely are you to explain your reasoning to attendees so they can evaluate it, rather than just asserting your position?"
+    },
+    {
+      "id": 321,
+      "category": "explanation",
+      "reverse": false,
+      "text": "You recommend a particular budgeting app to a friend. How likely are you to explain the specific features that led you to prefer it?"
+    },
+    {
+      "id": 322,
+      "category": "explanation",
+      "reverse": false,
+      "text": "A relative asks why you don't trust a claim they saw online. How likely are you to give specific reasons rather than just saying 'it's wrong'?"
+    },
+    {
+      "id": 323,
+      "category": "explanation",
+      "reverse": false,
+      "text": "You give a performance review to someone you manage. How likely are you to explain the specific reasoning behind the rating you gave them?"
+    },
+    {
+      "id": 324,
+      "category": "explanation",
+      "reverse": true,
+      "text": "A student on a group project questions the grade you gave. How likely are you to refuse to explain and just say 'that's the grade' instead of walking them through it?"
+    },
+    {
+      "id": 325,
+      "category": "explanation",
+      "reverse": false,
+      "text": "A roommate asks why you introduced a new household rule. How likely are you to explain your reasoning instead of just declaring it?"
+    },
+    {
+      "id": 326,
+      "category": "explanation",
+      "reverse": false,
+      "text": "A relative questions the school you chose for your child. How likely are you to explain your specific reasoning to them?"
+    },
+    {
+      "id": 327,
+      "category": "explanation",
+      "reverse": false,
+      "text": "You disagree with a friend's take on a news story. How likely are you to explain, point by point, where your reasoning diverges from theirs?"
+    },
+    {
+      "id": 328,
+      "category": "explanation",
+      "reverse": true,
+      "text": "Someone challenges a claim you posted online. How likely are you to respond with insults instead of explaining your reasoning?"
+    },
+    {
+      "id": 329,
+      "category": "explanation",
+      "reverse": false,
+      "text": "You return a product and the store asks your reason. How likely are you to give the actual specific reason rather than a vague one?"
+    },
+    {
+      "id": 330,
+      "category": "explanation",
+      "reverse": false,
+      "text": "A friend asks why you chose to get, or skip, a particular vaccine. How likely are you to walk them through your actual reasoning and sources?"
+    },
+    {
+      "id": 331,
+      "category": "explanation",
+      "reverse": false,
+      "text": "You explain to a neighbor why you oppose a local ballot measure. How likely are you to cite specific provisions rather than general impressions?"
+    },
+    {
+      "id": 332,
+      "category": "explanation",
+      "reverse": true,
+      "text": "A family member asks why you made a large purchase. How likely are you to get defensive and refuse to explain your reasoning?"
+    },
+    {
+      "id": 333,
+      "category": "explanation",
+      "reverse": false,
+      "text": "A coworker asks why a bug happened in a project. How likely are you to walk them through the actual cause step by step?"
+    },
+    {
+      "id": 334,
+      "category": "explanation",
+      "reverse": false,
+      "text": "You explain to your team why a project was delayed. How likely are you to give the actual specific reasons rather than vague excuses?"
+    },
+    {
+      "id": 335,
+      "category": "explanation",
+      "reverse": false,
+      "text": "In a class discussion, you're asked to defend your position. How likely are you to give actual reasons rather than just repeating your opinion louder?"
+    },
+    {
+      "id": 336,
+      "category": "explanation",
+      "reverse": false,
+      "text": "A friend asks why you turned down their invitation. How likely are you to give them the real reason rather than a made-up one?"
+    },
+    {
+      "id": 337,
+      "category": "explanation",
+      "reverse": true,
+      "text": "Your partner asks why you seem upset. How likely are you to say 'I don't know, just leave me alone' instead of explaining what's bothering you?"
+    },
+    {
+      "id": 338,
+      "category": "explanation",
+      "reverse": false,
+      "text": "You write a comment explaining your stance on a controversial article. How likely are you to include specific evidence supporting it?"
+    },
+    {
+      "id": 339,
+      "category": "explanation",
+      "reverse": false,
+      "text": "A friend messages asking why you unfollowed or muted them. How likely are you to explain honestly rather than avoid the question?"
+    },
+    {
+      "id": 340,
+      "category": "explanation",
+      "reverse": true,
+      "text": "A friend asks why you gave a product a 1-star review. How likely are you to just say 'it's bad, trust me' without giving specifics?"
+    },
+    {
+      "id": 341,
+      "category": "explanation",
+      "reverse": false,
+      "text": "You ask a doctor for a second opinion. How likely are you to lay out the specific concerns behind your request?"
+    },
+    {
+      "id": 342,
+      "category": "explanation",
+      "reverse": false,
+      "text": "A pollster asks why you hold a certain political view. How likely are you to explain your actual reasoning rather than repeat a slogan?"
+    },
+    {
+      "id": 343,
+      "category": "explanation",
+      "reverse": false,
+      "text": "You ask a financial advisor to change your portfolio. How likely are you to walk them through the reasoning behind the request?"
+    },
+    {
+      "id": 344,
+      "category": "explanation",
+      "reverse": false,
+      "text": "A relative forwards you a scam email and asks if it's real. How likely are you to point out the specific red flags rather than just say 'it's fake'?"
+    },
+    {
+      "id": 345,
+      "category": "explanation",
+      "reverse": false,
+      "text": "You disagree with a coworker's proposal in a meeting. How likely are you to explain the specific reasons for your objection?"
+    },
+    {
+      "id": 346,
+      "category": "explanation",
+      "reverse": true,
+      "text": "A parent asks why you disciplined their child a certain way. How likely are you to refuse to give specifics and just repeat that the rule was broken?"
+    },
+    {
+      "id": 347,
+      "category": "explanation",
+      "reverse": false,
+      "text": "Your child asks why a certain behavior isn't allowed. How likely are you to give them an age-appropriate but genuine reason?"
+    },
+    {
+      "id": 348,
+      "category": "explanation",
+      "reverse": false,
+      "text": "Your siblings question how you handled a shared family decision. How likely are you to lay out your reasoning transparently for them?"
+    },
+    {
+      "id": 349,
+      "category": "explanation",
+      "reverse": false,
+      "text": "You write to your local representative about an issue. How likely are you to explain your specific reasoning, not just state your demand?"
+    },
+    {
+      "id": 350,
+      "category": "explanation",
+      "reverse": false,
+      "text": "You give feedback on a colleague's proposal. How likely are you to explain precisely which parts you disagree with and why?"
+    },
+    {
+      "id": 351,
+      "category": "self_regulation",
+      "reverse": false,
+      "text": "You're about to send an angry email to a colleague right after a frustrating meeting. How likely are you to pause and wait before sending it?"
+    },
+    {
+      "id": 352,
+      "category": "self_regulation",
+      "reverse": false,
+      "text": "You're in a heated argument and about to say something you might regret. How likely are you to pause and let yourself cool down first?"
+    },
+    {
+      "id": 353,
+      "category": "self_regulation",
+      "reverse": false,
+      "text": "You get an essay grade back that seems unfair. How likely are you to reread it calmly later before deciding whether to dispute it, rather than reacting immediately?"
+    },
+    {
+      "id": 354,
+      "category": "self_regulation",
+      "reverse": false,
+      "text": "A friend shows you a credible source that contradicts something you believed. How likely are you to actually update your opinion?"
+    },
+    {
+      "id": 355,
+      "category": "self_regulation",
+      "reverse": true,
+      "text": "You're shown solid evidence that you were wrong about something. How likely are you to keep insisting you were right anyway?"
+    },
+    {
+      "id": 356,
+      "category": "self_regulation",
+      "reverse": false,
+      "text": "Before submitting an important report, how likely are you to reread it specifically looking for mistakes in your own reasoning?"
+    },
+    {
+      "id": 357,
+      "category": "self_regulation",
+      "reverse": false,
+      "text": "You're about to make a big decision while very angry at a family member. How likely are you to wait until you've calmed down before deciding?"
+    },
+    {
+      "id": 358,
+      "category": "self_regulation",
+      "reverse": false,
+      "text": "You're exhausted and irritable and about to make a decision about a loved one's care. How likely are you to notice that and pause before deciding?"
+    },
+    {
+      "id": 359,
+      "category": "self_regulation",
+      "reverse": true,
+      "text": "You get publicly called out for a mistake in something you posted. How likely are you to get defensive and dig in rather than consider you might be wrong?"
+    },
+    {
+      "id": 360,
+      "category": "self_regulation",
+      "reverse": false,
+      "text": "Partway through an argument, you realize you might actually be wrong. How likely are you to admit it on the spot rather than keep arguing?"
+    },
+    {
+      "id": 361,
+      "category": "self_regulation",
+      "reverse": false,
+      "text": "You're about to make an investment decision right after a stressful day. How likely are you to notice your stress might be affecting your judgment and wait?"
+    },
+    {
+      "id": 362,
+      "category": "self_regulation",
+      "reverse": false,
+      "text": "A fact-checker shows that a post you shared was false. How likely are you to correct yourself publicly?"
+    },
+    {
+      "id": 363,
+      "category": "self_regulation",
+      "reverse": false,
+      "text": "You finish a test with time to spare. How likely are you to go back and recheck your answers for errors before turning it in?"
+    },
+    {
+      "id": 364,
+      "category": "self_regulation",
+      "reverse": true,
+      "text": "You're annoyed with a coworker and about to give them feedback. How likely are you to go ahead and give it while still angry, without waiting to cool down?"
+    },
+    {
+      "id": 365,
+      "category": "self_regulation",
+      "reverse": false,
+      "text": "You catch yourself about to make a snap judgment about a stranger. How likely are you to pause and question that judgment?"
+    },
+    {
+      "id": 366,
+      "category": "self_regulation",
+      "reverse": false,
+      "text": "Your spouse points out a flaw in your reasoning during a disagreement. How likely are you to genuinely consider it instead of dismissing it?"
+    },
+    {
+      "id": 367,
+      "category": "self_regulation",
+      "reverse": false,
+      "text": "You read new research that contradicts a health habit you've kept for years. How likely are you to seriously reconsider the habit?"
+    },
+    {
+      "id": 368,
+      "category": "self_regulation",
+      "reverse": true,
+      "text": "You've built a theory or model, and someone points out a flaw in it. How likely are you to ignore the flaw and move forward anyway?"
+    },
+    {
+      "id": 369,
+      "category": "self_regulation",
+      "reverse": false,
+      "text": "You're about to send an email about a big decision, and it's not urgent. How likely are you to sleep on it overnight before sending?"
+    },
+    {
+      "id": 370,
+      "category": "self_regulation",
+      "reverse": false,
+      "text": "A teacher points out a mistake in your reasoning, not just your final answer. How likely are you to reflect on where your thinking went wrong?"
+    },
+    {
+      "id": 371,
+      "category": "self_regulation",
+      "reverse": false,
+      "text": "You're about to make an impulse purchase while feeling stressed. How likely are you to pause and ask yourself if you actually need it?"
+    },
+    {
+      "id": 372,
+      "category": "self_regulation",
+      "reverse": false,
+      "text": "You realize an article you shared was based on a source that turned out to be unreliable. How likely are you to acknowledge that and correct it?"
+    },
+    {
+      "id": 373,
+      "category": "self_regulation",
+      "reverse": true,
+      "text": "Someone points out a contradiction in something you said earlier. How likely are you to change the subject rather than address it?"
+    },
+    {
+      "id": 374,
+      "category": "self_regulation",
+      "reverse": false,
+      "text": "A candidate you support is shown, with solid evidence, to have done something wrong. How likely are you to acknowledge it rather than deny it?"
+    },
+    {
+      "id": 375,
+      "category": "self_regulation",
+      "reverse": false,
+      "text": "You're about to discipline your child while you're still angry about what they did. How likely are you to wait until you're calmer first?"
+    },
+    {
+      "id": 376,
+      "category": "self_regulation",
+      "reverse": false,
+      "text": "You finish an important analysis for your team. How likely are you to double-check your underlying assumptions before presenting it as final?"
+    },
+    {
+      "id": 377,
+      "category": "self_regulation",
+      "reverse": true,
+      "text": "Your doctor shows you evidence that a supplement you take doesn't actually work. How likely are you to keep taking it anyway without reconsidering?"
+    },
+    {
+      "id": 378,
+      "category": "self_regulation",
+      "reverse": false,
+      "text": "You notice you're extremely hungry or tired and about to make an important decision. How likely are you to recognize that and delay the decision if you can?"
+    },
+    {
+      "id": 379,
+      "category": "self_regulation",
+      "reverse": false,
+      "text": "You realize, on reflection, that something you posted was based on incomplete information. How likely are you to go back and correct or delete it?"
+    },
+    {
+      "id": 380,
+      "category": "self_regulation",
+      "reverse": false,
+      "text": "A friend points out a possible flaw in your budgeting spreadsheet. How likely are you to actually check it rather than assume you're right?"
+    },
+    {
+      "id": 381,
+      "category": "self_regulation",
+      "reverse": false,
+      "text": "While grading essays, you notice you might be judging students you like more leniently. How likely are you to catch that bias and correct for it?"
+    },
+    {
+      "id": 382,
+      "category": "self_regulation",
+      "reverse": true,
+      "text": "Partway through a project, you realize your original plan has a flaw. How likely are you to keep going with it anyway rather than admit it needs changing?"
+    },
+    {
+      "id": 383,
+      "category": "self_regulation",
+      "reverse": false,
+      "text": "You're in a political discussion and start to feel yourself getting defensive. How likely are you to notice that and try to stay open rather than dig in?"
+    },
+    {
+      "id": 384,
+      "category": "self_regulation",
+      "reverse": false,
+      "text": "You said something hurtful in the heat of the moment. How likely are you to reflect on it afterward and apologize once you've calmed down?"
+    },
+    {
+      "id": 385,
+      "category": "self_regulation",
+      "reverse": false,
+      "text": "You're in pain or distress and about to make a decision about your own treatment. How likely are you to recognize that and seek a second, calmer perspective first?"
+    },
+    {
+      "id": 386,
+      "category": "self_regulation",
+      "reverse": true,
+      "text": "A relative gives you new information that changes a situation you'd already made assumptions about. How likely are you to ignore it because your mind is already made up?"
+    },
+    {
+      "id": 387,
+      "category": "self_regulation",
+      "reverse": false,
+      "text": "A new study contradicts something you've told other people confidently in the past. How likely are you to update what you tell people going forward?"
+    },
+    {
+      "id": 388,
+      "category": "self_regulation",
+      "reverse": false,
+      "text": "You catch yourself about to blame a mistake on a coworker before checking the facts. How likely are you to stop and verify first?"
+    },
+    {
+      "id": 389,
+      "category": "self_regulation",
+      "reverse": false,
+      "text": "You disagree with a grade and want to email your professor immediately while you're frustrated. How likely are you to wait and write it calmly instead?"
+    },
+    {
+      "id": 390,
+      "category": "self_regulation",
+      "reverse": false,
+      "text": "You're about to unfollow or block someone in anger after a single disagreement. How likely are you to wait and reconsider before acting?"
+    },
+    {
+      "id": 391,
+      "category": "self_regulation",
+      "reverse": true,
+      "text": "You lose money on a financial decision and are asked to reflect on what went wrong. How likely are you to blame outside factors instead of examining your own reasoning?"
+    },
+    {
+      "id": 392,
+      "category": "self_regulation",
+      "reverse": false,
+      "text": "You realize you've been avoiding a news source because it challenges your views. How likely are you to make yourself engage with it anyway?"
+    },
+    {
+      "id": 393,
+      "category": "self_regulation",
+      "reverse": false,
+      "text": "You attend a town hall and hear a counterargument you hadn't considered. How likely are you to genuinely weigh it rather than dismiss it?"
+    },
+    {
+      "id": 394,
+      "category": "self_regulation",
+      "reverse": false,
+      "text": "Before presenting to leadership, how likely are you to review your own reasoning for gaps or weak points?"
+    },
+    {
+      "id": 395,
+      "category": "self_regulation",
+      "reverse": true,
+      "text": "A corrected test result comes back different from what you originally assumed. How likely are you to keep acting on your original assumption anyway?"
+    },
+    {
+      "id": 396,
+      "category": "self_regulation",
+      "reverse": false,
+      "text": "You realize you reacted much more strongly than the situation called for. How likely are you to recognize that and adjust your response?"
+    },
+    {
+      "id": 397,
+      "category": "self_regulation",
+      "reverse": false,
+      "text": "You're checking your own answers on a practice test. How likely are you to honestly recheck the ones you're unsure about rather than assume they're right?"
+    },
+    {
+      "id": 398,
+      "category": "self_regulation",
+      "reverse": false,
+      "text": "Your teenager challenges a decision you made with a genuinely good argument. How likely are you to actually reconsider rather than just pull rank?"
+    },
+    {
+      "id": 399,
+      "category": "self_regulation",
+      "reverse": true,
+      "text": "You're stressed and about to make a hiring or firing decision. How likely are you to go ahead without considering whether the stress is clouding your judgment?"
+    },
+    {
+      "id": 400,
+      "category": "self_regulation",
+      "reverse": false,
+      "text": "You learn new information that undermines a policy position you've held for years. How likely are you to update your position?"
+    },
+    {
+      "id": 401,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "Your team's first idea for fixing a recurring project delay seems solid. How likely are you to force yourself to think of at least one other possible cause before recommending it?"
+    },
+    {
+      "id": 402,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "You're writing an argumentative essay and already have a thesis you're confident about. How likely are you to seek out the strongest argument against your own position before finalizing your essay?"
+    },
+    {
+      "id": 403,
+      "category": "alternatives",
+      "reverse": true,
+      "text": "You come up with an explanation for why your neighbor hasn't been answering your texts. How likely are you to settle on that explanation without considering any other possibility?"
+    },
+    {
+      "id": 404,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "During a disagreement with a family member, you're sure you're in the right. How likely are you to genuinely ask them to explain their reasoning before responding?"
+    },
+    {
+      "id": 405,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "You read a news article that confirms what you already believed about a political issue. How likely are you to look for a well-argued piece from the other side before forming a final opinion?"
+    },
+    {
+      "id": 406,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "A post you agree with is getting shared a lot in your feed. How likely are you to search for people who disagree with it and read their reasoning?"
+    },
+    {
+      "id": 407,
+      "category": "alternatives",
+      "reverse": true,
+      "text": "You find a product review that says exactly what you expected to hear. How likely are you to stop reading and buy the product without checking other reviews?"
+    },
+    {
+      "id": 408,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "A doctor gives you a diagnosis for a persistent symptom. How likely are you to ask what else it could be before agreeing to a treatment plan?"
+    },
+    {
+      "id": 409,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "You're deciding how to vote on a local ballot measure and the first article you read makes a clear case for one side. How likely are you to look for the opposing case before deciding?"
+    },
+    {
+      "id": 410,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "A friend recommends an investment that sounds promising. How likely are you to ask what could go wrong with it before considering putting money in?"
+    },
+    {
+      "id": 411,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "You read a headline claiming a new study \"proves\" a surprising claim. How likely are you to look for other studies or expert opinions before accepting it?"
+    },
+    {
+      "id": 412,
+      "category": "alternatives",
+      "reverse": true,
+      "text": "In a meeting, your manager proposes a solution and no one objects. How likely are you to go along with it without asking whether there's a better option?"
+    },
+    {
+      "id": 413,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "You're picking a topic for a group project and one idea seems obviously good to you. How likely are you to still ask your group to brainstorm a couple more options before deciding?"
+    },
+    {
+      "id": 414,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "Your car starts making a strange noise and you have a guess about what's wrong. How likely are you to consider a second possible cause before taking action?"
+    },
+    {
+      "id": 415,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "Your parent gives an opinion on a family decision that matches what you already think. How likely are you to still ask if anyone in the family sees it differently before treating it as settled?"
+    },
+    {
+      "id": 416,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "You're reading commentary about a controversial event. How likely are you to deliberately seek out a source known for a different political leaning to get another angle?"
+    },
+    {
+      "id": 417,
+      "category": "alternatives",
+      "reverse": true,
+      "text": "A friend shares a confident-sounding opinion online that matches your gut feeling. How likely are you to like or share it right away without considering whether it might be wrong?"
+    },
+    {
+      "id": 418,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "You're comparing two laptops and one already seems like the clear winner. How likely are you to look for a case for the other one before finalizing your choice?"
+    },
+    {
+      "id": 419,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "You feel confident that a particular food is causing your stomach issues. How likely are you to consider other possible causes before cutting it out of your diet?"
+    },
+    {
+      "id": 420,
+      "category": "alternatives",
+      "reverse": true,
+      "text": "You're discussing a policy with someone who disagrees with you. How likely are you to dismiss their point without actually trying to understand it?"
+    },
+    {
+      "id": 421,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "You've leaned toward a bank account based on one comparison chart you saw. How likely are you to check a second, independent comparison before opening it?"
+    },
+    {
+      "id": 422,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "A tech reviewer you like says a new gadget is clearly the best on the market. How likely are you to check a reviewer with a different opinion before buying it?"
+    },
+    {
+      "id": 423,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "You're troubleshooting a bug and the first cause you think of would explain the symptoms. How likely are you to brainstorm at least one other possible cause before fixing it?"
+    },
+    {
+      "id": 424,
+      "category": "alternatives",
+      "reverse": true,
+      "text": "Your study partner suggests a method for exam prep and it sounds fine. How likely are you to adopt it without considering whether another method might work better for you?"
+    },
+    {
+      "id": 425,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "You're planning a trip and already have a route that seems efficient. How likely are you to compare it against at least one alternative route before committing?"
+    },
+    {
+      "id": 426,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "You assume your teenager is upset about something specific. How likely are you to ask them directly and consider you might be wrong, rather than just assuming?"
+    },
+    {
+      "id": 427,
+      "category": "alternatives",
+      "reverse": true,
+      "text": "You watch a documentary that presents a strong, one-sided case on an issue. How likely are you to accept its conclusion as the full picture without seeking other perspectives?"
+    },
+    {
+      "id": 428,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "You see a viral claim about a celebrity that you're inclined to believe. How likely are you to pause and consider an alternative explanation before reacting to it?"
+    },
+    {
+      "id": 429,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "A salesperson gives you one strong reason to buy a warranty plan. How likely are you to think through reasons not to buy it before deciding?"
+    },
+    {
+      "id": 430,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "You read one article online about a symptom and it matches what you're feeling. How likely are you to search for at least one other possible explanation before settling on that self-diagnosis?"
+    },
+    {
+      "id": 431,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "You're forming an opinion about a new law. How likely are you to talk to someone who opposes it and genuinely try to understand their concerns?"
+    },
+    {
+      "id": 432,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "You get a recommendation for a financial advisor from one trusted friend. How likely are you to still look into at least one other advisor before choosing?"
+    },
+    {
+      "id": 433,
+      "category": "alternatives",
+      "reverse": true,
+      "text": "A friend explains a scientific concept to you in a way that makes sense right away. How likely are you to accept it as fully correct without checking if there's more nuance to it?"
+    },
+    {
+      "id": 434,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "You're the one who came up with your team's project plan. How likely are you to ask a colleague to poke holes in it before presenting it?"
+    },
+    {
+      "id": 435,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "You're preparing for a debate and already believe your assigned position is the stronger one. How likely are you to seriously research the other side's best arguments anyway?"
+    },
+    {
+      "id": 436,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "You think you know why a recipe didn't turn out right. How likely are you to consider a second possible reason before trying again?"
+    },
+    {
+      "id": 437,
+      "category": "alternatives",
+      "reverse": true,
+      "text": "You and your sibling disagree about how to handle a shared family responsibility, and you're sure your way is right. How likely are you to insist on your approach without asking why they see it differently?"
+    },
+    {
+      "id": 438,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "You read a news story that seems to confirm a suspicion you already had. How likely are you to pause and ask yourself what other explanation could fit the same facts?"
+    },
+    {
+      "id": 439,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "You're about to comment strongly disagreeing with someone online. How likely are you to first ask yourself what a reasonable person might see in their point?"
+    },
+    {
+      "id": 440,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "You've found a product online that meets your needs. How likely are you to compare it to at least one competitor before buying it?"
+    },
+    {
+      "id": 441,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "You and your doctor discuss two possible treatment options and you already lean toward one. How likely are you to ask about the strongest argument for the option you're leaning against?"
+    },
+    {
+      "id": 442,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "You hear a compelling argument for a candidate you already support. How likely are you to actively look for the best argument against that candidate too?"
+    },
+    {
+      "id": 443,
+      "category": "alternatives",
+      "reverse": true,
+      "text": "You settle on a budgeting method that worked well for a friend. How likely are you to adopt it without weighing it against another approach first?"
+    },
+    {
+      "id": 444,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "You believe a new app update caused your phone to slow down. How likely are you to consider other possible causes before concluding the update is to blame?"
+    },
+    {
+      "id": 445,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "Your first instinct about why a customer complained seems obviously right. How likely are you to consider another possible reason before acting on it?"
+    },
+    {
+      "id": 446,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "You're choosing a research question for your thesis and one option feels right. How likely are you to deliberately brainstorm a couple of alternative questions before committing?"
+    },
+    {
+      "id": 447,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "A friend tells you their side of a falling-out with someone else. How likely are you to consider that the other person might have a different, valid perspective before forming your opinion?"
+    },
+    {
+      "id": 448,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "You're planning a family event and already have one idea for the venue picked out. How likely are you to ask other family members for alternative ideas before booking it?"
+    },
+    {
+      "id": 449,
+      "category": "alternatives",
+      "reverse": true,
+      "text": "A headline matches your existing view on an issue. How likely are you to accept the headline as accurate without reading the full article or checking other coverage?"
+    },
+    {
+      "id": 450,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "You're evaluating a policy proposal from a party you usually support. How likely are you to look for its weaknesses as carefully as you would for a proposal from the other side?"
+    },
+    {
+      "id": 451,
+      "category": "data_literacy",
+      "reverse": false,
+      "text": "You read an article claiming \"studies show\" a certain food causes cancer. How likely are you to look up the actual studies before believing the claim?"
+    },
+    {
+      "id": 452,
+      "category": "data_literacy",
+      "reverse": false,
+      "text": "A colleague presents a bar chart showing a big jump in sales. How likely are you to check whether the y-axis starts at zero before accepting that the difference is as dramatic as it looks?"
+    },
+    {
+      "id": 453,
+      "category": "data_literacy",
+      "reverse": true,
+      "text": "A post claims \"9 out of 10 people agree\" with a statement. How likely are you to share it without checking how many people were actually surveyed?"
+    },
+    {
+      "id": 454,
+      "category": "data_literacy",
+      "reverse": false,
+      "text": "An ad claims a supplement \"reduces symptoms by 50%\" based on a study. How likely are you to check the sample size of that study before trusting the claim?"
+    },
+    {
+      "id": 455,
+      "category": "data_literacy",
+      "reverse": false,
+      "text": "A classmate cites a statistic in a presentation. How likely are you to ask where the number came from before using it in your own work?"
+    },
+    {
+      "id": 456,
+      "category": "data_literacy",
+      "reverse": false,
+      "text": "A financial newsletter shows a \"before and after\" chart of a stock's performance around a policy change. How likely are you to check whether other factors might explain the change before concluding the policy caused it?"
+    },
+    {
+      "id": 457,
+      "category": "data_literacy",
+      "reverse": true,
+      "text": "A political ad cites a poll showing strong support for a position. How likely are you to accept the poll's conclusion without checking how the poll was conducted?"
+    },
+    {
+      "id": 458,
+      "category": "data_literacy",
+      "reverse": false,
+      "text": "A friend tells you a \"fact\" they read that a certain habit doubles your risk of something. How likely are you to ask what the actual baseline risk was before feeling alarmed?"
+    },
+    {
+      "id": 459,
+      "category": "data_literacy",
+      "reverse": false,
+      "text": "You see a headline saying a new gadget's battery life is \"50% better.\" How likely are you to check what it's actually being compared to before believing the claim?"
+    },
+    {
+      "id": 460,
+      "category": "data_literacy",
+      "reverse": false,
+      "text": "A product page shows a graph claiming its results are far superior to competitors. How likely are you to check the axis scale and data source before trusting the graph?"
+    },
+    {
+      "id": 461,
+      "category": "data_literacy",
+      "reverse": true,
+      "text": "A news segment shows a dramatic-looking chart to support its story. How likely are you to accept the chart's message at face value without checking how the scale was set up?"
+    },
+    {
+      "id": 462,
+      "category": "data_literacy",
+      "reverse": false,
+      "text": "Your company reports that a new policy is linked to a rise in employee satisfaction scores. How likely are you to ask whether anything else changed at the same time before assuming the policy caused the rise?"
+    },
+    {
+      "id": 463,
+      "category": "data_literacy",
+      "reverse": false,
+      "text": "A viral infographic claims a strong correlation between two unrelated-seeming things. How likely are you to remind yourself that correlation isn't proof of causation before sharing it?"
+    },
+    {
+      "id": 464,
+      "category": "data_literacy",
+      "reverse": true,
+      "text": "You read that people who take a certain vitamin live longer, on average. How likely are you to conclude the vitamin causes a longer life without considering other explanations?"
+    },
+    {
+      "id": 465,
+      "category": "data_literacy",
+      "reverse": false,
+      "text": "A textbook chart shows test scores rising sharply after a new teaching method was introduced. How likely are you to ask whether the data covers a long enough time period before crediting the method?"
+    },
+    {
+      "id": 466,
+      "category": "data_literacy",
+      "reverse": false,
+      "text": "You see a claim that \"the average return\" of an investment fund is a certain percentage. How likely are you to check whether that average is skewed by a few outlier years before trusting it?"
+    },
+    {
+      "id": 467,
+      "category": "data_literacy",
+      "reverse": false,
+      "text": "A campaign shares a statistic about crime rates dropping under a certain policy. How likely are you to check whether the comparison period was chosen to make the numbers look better than they are?"
+    },
+    {
+      "id": 468,
+      "category": "data_literacy",
+      "reverse": true,
+      "text": "A neighborhood group chat shares a statistic about local crime increasing. How likely are you to repeat the statistic to others without checking where it came from?"
+    },
+    {
+      "id": 469,
+      "category": "data_literacy",
+      "reverse": false,
+      "text": "An article claims a new study \"proves\" a link between screen time and a health outcome. How likely are you to check whether the study only shows correlation before repeating the claim as proven fact?"
+    },
+    {
+      "id": 470,
+      "category": "data_literacy",
+      "reverse": false,
+      "text": "A review site shows a product with a 4.9 star rating. How likely are you to check the number of reviews behind that rating before trusting it?"
+    },
+    {
+      "id": 471,
+      "category": "data_literacy",
+      "reverse": false,
+      "text": "Two different outlets report different numbers for the same event. How likely are you to look up the original source of the data before deciding which number to trust?"
+    },
+    {
+      "id": 472,
+      "category": "data_literacy",
+      "reverse": true,
+      "text": "A slide in a presentation shows a steep upward trend line. How likely are you to accept the trend as meaningful without checking what time range the data actually covers?"
+    },
+    {
+      "id": 473,
+      "category": "data_literacy",
+      "reverse": false,
+      "text": "An influencer claims their method \"worked for 95% of people.\" How likely are you to ask how that percentage was measured before trying the method yourself?"
+    },
+    {
+      "id": 474,
+      "category": "data_literacy",
+      "reverse": false,
+      "text": "A wellness account posts a \"before and after\" comparison to promote a product. How likely are you to consider other factors, like diet, exercise, or time, that could explain the change before crediting the product?"
+    },
+    {
+      "id": 475,
+      "category": "data_literacy",
+      "reverse": true,
+      "text": "A study cited in a lecture reports a striking result from a very small sample. How likely are you to treat the result as solid evidence without noting the small sample size?"
+    },
+    {
+      "id": 476,
+      "category": "data_literacy",
+      "reverse": false,
+      "text": "A budgeting app shows you a chart claiming users save a certain amount per month. How likely are you to check how that average was calculated before trusting the number?"
+    },
+    {
+      "id": 477,
+      "category": "data_literacy",
+      "reverse": false,
+      "text": "You see a claim that a certain policy caused unemployment to drop, based on a short time window. How likely are you to check a longer time period to see if the trend actually holds?"
+    },
+    {
+      "id": 478,
+      "category": "data_literacy",
+      "reverse": false,
+      "text": "A relative shares a statistic from a forwarded message about a health risk. How likely are you to verify the number against a credible source before believing it?"
+    },
+    {
+      "id": 479,
+      "category": "data_literacy",
+      "reverse": true,
+      "text": "A tech blog claims a new AI model is \"twice as smart\" based on one benchmark test. How likely are you to accept that claim without checking what the benchmark actually measures?"
+    },
+    {
+      "id": 480,
+      "category": "data_literacy",
+      "reverse": false,
+      "text": "An ad claims \"customers save an average of $200.\" How likely are you to ask how that average was calculated, and whether outliers skew it, before trusting the claim?"
+    },
+    {
+      "id": 481,
+      "category": "data_literacy",
+      "reverse": false,
+      "text": "A chart in a news story shows two lines that appear to move together over time. How likely are you to consider that a third factor might explain both trends before assuming one caused the other?"
+    },
+    {
+      "id": 482,
+      "category": "data_literacy",
+      "reverse": false,
+      "text": "A survey of your company's employees shows high satisfaction, but only 15% of staff responded. How likely are you to factor in the low response rate before trusting that the results represent everyone?"
+    },
+    {
+      "id": 483,
+      "category": "data_literacy",
+      "reverse": true,
+      "text": "A meme presents a statistic with no source cited. How likely are you to share it anyway because it feels true?"
+    },
+    {
+      "id": 484,
+      "category": "data_literacy",
+      "reverse": false,
+      "text": "A friend says a diet trend is proven effective because a celebrity lost weight on it. How likely are you to point out that one example isn't the same as solid evidence?"
+    },
+    {
+      "id": 485,
+      "category": "data_literacy",
+      "reverse": false,
+      "text": "A research paper you're citing reports a result with a very wide margin of error. How likely are you to take that margin of error into account before stating the finding as fact?"
+    },
+    {
+      "id": 486,
+      "category": "data_literacy",
+      "reverse": true,
+      "text": "An investment ad shows a chart of dramatic gains over a short, cherry-picked window. How likely are you to be persuaded by the chart without checking performance over a longer period?"
+    },
+    {
+      "id": 487,
+      "category": "data_literacy",
+      "reverse": false,
+      "text": "A pundit claims a survey proves most people support a policy, but the survey only polled people in one narrow group. How likely are you to question whether that sample represents the wider population?"
+    },
+    {
+      "id": 488,
+      "category": "data_literacy",
+      "reverse": false,
+      "text": "You hear that a local restaurant's rating dropped sharply. How likely are you to check how many new reviews came in before assuming the quality actually declined?"
+    },
+    {
+      "id": 489,
+      "category": "data_literacy",
+      "reverse": false,
+      "text": "A press release claims a new drug is \"significantly more effective,\" without giving numbers. How likely are you to look for the actual data before accepting the claim?"
+    },
+    {
+      "id": 490,
+      "category": "data_literacy",
+      "reverse": true,
+      "text": "A site shows \"only 2 left in stock\" and a claimed discount percentage. How likely are you to take the discount percentage at face value without checking the item's price history?"
+    },
+    {
+      "id": 491,
+      "category": "data_literacy",
+      "reverse": false,
+      "text": "A poll result gets reported with a small margin of error. How likely are you to check what that margin of error actually means before treating small differences between numbers as meaningful?"
+    },
+    {
+      "id": 492,
+      "category": "data_literacy",
+      "reverse": false,
+      "text": "Your manager credits a new training program for a rise in productivity numbers. How likely are you to ask whether the busy season or other factors could explain the rise instead?"
+    },
+    {
+      "id": 493,
+      "category": "data_literacy",
+      "reverse": false,
+      "text": "A post shows two graphs side by side using different scales to make a comparison look dramatic. How likely are you to notice the mismatched scales before accepting the comparison?"
+    },
+    {
+      "id": 494,
+      "category": "data_literacy",
+      "reverse": true,
+      "text": "A supplement label cites \"clinical studies\" without naming them. How likely are you to trust the claim anyway because it sounds scientific?"
+    },
+    {
+      "id": 495,
+      "category": "data_literacy",
+      "reverse": false,
+      "text": "You're comparing two schools using a ranking chart. How likely are you to check what factors the ranking is actually based on before trusting it?"
+    },
+    {
+      "id": 496,
+      "category": "data_literacy",
+      "reverse": false,
+      "text": "A finance influencer claims a strategy \"beats the market,\" using one good year as proof. How likely are you to ask about its performance across multiple years before trusting the claim?"
+    },
+    {
+      "id": 497,
+      "category": "data_literacy",
+      "reverse": false,
+      "text": "A news graphic shows public opinion \"shifting dramatically\" using a bar chart with a narrow y-axis range. How likely are you to check the actual percentage-point difference before accepting it as dramatic?"
+    },
+    {
+      "id": 498,
+      "category": "data_literacy",
+      "reverse": false,
+      "text": "A friend claims that most people they know agree with them on an issue, as proof they're right. How likely are you to point out that a small circle of friends isn't a representative sample?"
+    },
+    {
+      "id": 499,
+      "category": "data_literacy",
+      "reverse": false,
+      "text": "An article says a new study \"links\" a common habit to a health outcome. How likely are you to check whether the study actually shows causation, not just a correlation, before repeating the claim?"
+    },
+    {
+      "id": 500,
+      "category": "data_literacy",
+      "reverse": false,
+      "text": "You see a graph on a product page with no labeled units on one axis. How likely are you to notice this missing detail before trusting the chart's message?"
+    }
+  ]
+}
