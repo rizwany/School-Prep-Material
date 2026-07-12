@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <meta name="description" content="Play LearnPad fun games and quizzes, including Word Search, Crossword, Sudoku, math quizzes, and online self-assessment tests in English and Urdu." />
-  <meta property="og:title" content="Fun Games/Quizzes | LearnPad" />
+  <meta property="og:title" content="Knowledge Check | LearnPad" />
   <meta property="og:description" content="Play LearnPad fun games and quizzes, including Word Search, Crossword, Sudoku, math quizzes, and online self-assessment tests in English and Urdu." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://mypkweb.com/" />
   <meta property="og:site_name" content="LearnPad" />
   <meta property="og:image" content="https://mypkweb.com/logo.png" />
-<title>Fun Games/Quizzes | LearnPad</title>
+<title>Knowledge Check | LearnPad</title>
 
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -64,7 +64,26 @@
       gap: 16px;
     }
     .logo { font-weight: 900; font-size: 1.1rem; color: var(--accent); text-decoration: none; white-space: nowrap; }
-    .page-title { font-weight: 800; font-size: 0.9rem; color: var(--muted); }
+    .page-title {
+      display: grid;
+      gap: 1px;
+      font-weight: 800;
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.25;
+    }
+    .page-title-urdu,
+    .heading-urdu {
+      direction: rtl;
+      text-align: right;
+      font-family: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", "Segoe UI", Tahoma, Arial, sans-serif;
+      font-weight: 800;
+      line-height: 1.6;
+    }
+    .page-title-urdu {
+      font-size: 0.72rem;
+      color: var(--accent);
+    }
     #searchBox {
       flex: 1;
       max-width: 340px;
@@ -177,6 +196,24 @@
       display: flex; align-items: center; gap: 8px;
     }
     .module-icon { font-size: 1.1rem; }
+    .heading-stack { display: grid; gap: 1px; }
+    .heading-urdu {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    .knowledge-section-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 4px 0 12px;
+    }
+    .knowledge-section-title__text {
+      display: grid;
+      gap: 1px;
+      font-weight: 900;
+      font-size: 1.02rem;
+      color: #1a1f36;
+    }
     .module-title-text { display: grid; gap: 2px; }
     .module-title-urdu {
       direction: rtl;
@@ -281,7 +318,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <header>
   <div class="header-inner">
     <a class="logo" href="index.html">LearnPad</a>
-    <span class="page-title">Fun Games/Quizzes</span>
+    <span class="page-title">
+      <span>Knowledge Check</span>
+      <span class="page-title-urdu" lang="ur" dir="rtl">علمی جائزہ</span>
+    </span>
     <input type="search" id="searchBox" placeholder="Search games, quizzes, worksheets..." autocomplete="off" />
   </div>
 </header>
@@ -289,7 +329,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="container">
 
 <div class="section-tabs">
-    <button class="tab-btn active" data-tab="mathfun">🎮 Fun Games/Quizzes</button>
+    <button class="tab-btn active" data-tab="mathfun">🎮 Knowledge Check</button>
     <button class="tab-btn" data-tab="learnings">🤖 Tech in Urdu / AI</button>
     <button class="tab-btn" data-tab="school">🏫 School (Grades 1-10)</button>
   </div>
@@ -301,65 +341,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <span class="stat">Total: <strong>22 quizzes + Word Search + Crossword + Sudoku + Ethics Test + EQ Test + Leadership Test + Growth Mindset Test + Personal Values Test + Digital Wellbeing Test</strong></span>
     </div>
 
-    <!-- Games feature cards -->
-    <div class="module-grid" style="margin-bottom:20px">
-      <div class="module-card" style="border-color:#b85450;background:linear-gradient(135deg,#fff 60%,#fdf3f3);">
-        <div class="module-card-title" style="color:#b85450;">
-          <span class="module-icon">🔤</span> Industry Word Search
-        </div>
-        <p style="font-size:.8rem;color:#5a6076;margin-bottom:12px;line-height:1.5;">
-          Pick from <strong>100 industries</strong>, choose Easy / Medium / Hard, then find all the hidden words
-          in the letter grid. Words run horizontal, vertical, and diagonal!
-        </p>
-        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px;">
-          <span style="font-size:.7rem;font-weight:800;background:#e8faf4;color:#059669;padding:3px 9px;border-radius:20px;">Easy · 12×12</span>
-          <span style="font-size:.7rem;font-weight:800;background:#fffbeb;color:#d97706;padding:3px 9px;border-radius:20px;">Medium · 15×15</span>
-          <span style="font-size:.7rem;font-weight:800;background:#fef2f2;color:#dc2626;padding:3px 9px;border-radius:20px;">Hard · 19×19</span>
-        </div>
-        <a class="module-link is-index" href="word-search.html" style="background:#b85450;color:#fff;text-align:center;padding:8px;font-size:.88rem;">
-          ▶ Play Word Search
-        </a>
-      </div>
-
-      <div class="module-card" style="border-color:#1d4e89;background:linear-gradient(135deg,#fff 60%,#f0f5ff);">
-        <div class="module-card-title" style="color:#1d4e89;">
-          <span class="module-icon">✏️</span> Industry Crossword
-        </div>
-        <p style="font-size:.8rem;color:#5a6076;margin-bottom:12px;line-height:1.5;">
-          Choose from <strong>100 industries</strong>, read the clues and fill the intersecting grid. Tests vocabulary and spelling!
-        </p>
-        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px;">
-          <span style="font-size:.7rem;font-weight:800;background:#e8faf4;color:#059669;padding:3px 9px;border-radius:20px;">Easy · 13×13</span>
-          <span style="font-size:.7rem;font-weight:800;background:#fffbeb;color:#d97706;padding:3px 9px;border-radius:20px;">Medium · 17×17</span>
-          <span style="font-size:.7rem;font-weight:800;background:#fef2f2;color:#dc2626;padding:3px 9px;border-radius:20px;">Hard · 21×21</span>
-        </div>
-        <a class="module-link is-index" href="crossword.html" style="background:#1d4e89;color:#fff;text-align:center;padding:8px;font-size:.88rem;">
-          ▶ Play Crossword
-        </a>
-      </div>
-
-      <div class="module-card" style="border-color:#6d28d9;background:linear-gradient(135deg,#fff 60%,#f5f3ff);">
-        <div class="module-card-title" style="color:#6d28d9;">
-          <span class="module-icon">🔢</span> Sudoku
-        </div>
-        <p style="font-size:.8rem;color:#5a6076;margin-bottom:12px;line-height:1.5;">
-          Classic 9×9 number puzzle. Fill every row, column, and 3×3 box with digits 1–9. Notes mode, hints, and error checking included!
-        </p>
-        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px;">
-          <span style="font-size:.7rem;font-weight:800;background:#e8faf4;color:#059669;padding:3px 9px;border-radius:20px;">Easy · 40 clues</span>
-          <span style="font-size:.7rem;font-weight:800;background:#fffbeb;color:#d97706;padding:3px 9px;border-radius:20px;">Medium · 30 clues</span>
-          <span style="font-size:.7rem;font-weight:800;background:#fef2f2;color:#dc2626;padding:3px 9px;border-radius:20px;">Hard · 22 clues</span>
-        </div>
-        <a class="module-link is-index" href="sudoku.html" style="background:#6d28d9;color:#fff;text-align:center;padding:8px;font-size:.88rem;">
-          ▶ Play Sudoku
-        </a>
-      </div>
-    </div>
-
     <!-- Ethics & Moral Understanding Test section -->
-    <div style="display:flex;align-items:center;gap:8px;margin:4px 0 12px;">
+    <div class="knowledge-section-title">
       <span style="font-size:1.15rem;">🧭</span>
-      <span style="font-weight:900;font-size:1.02rem;color:#1a1f36;">Ethics & Moral Understanding Test</span>
+      <span class="knowledge-section-title__text">
+        <span>Ethics & Moral Understanding Test</span>
+        <span class="heading-urdu" lang="ur" dir="rtl">اخلاقیات اور اخلاقی سمجھ کا ٹیسٹ</span>
+      </span>
     </div>
     <div class="module-grid" style="margin-bottom:20px">
       <div class="module-card" style="grid-column:1/-1;border-color:#0d9488;background:linear-gradient(135deg,#fff 60%,#f0fdfa);">
@@ -384,9 +372,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <!-- Emotional Intelligence Test section -->
-    <div style="display:flex;align-items:center;gap:8px;margin:4px 0 12px;">
+    <div class="knowledge-section-title">
       <span style="font-size:1.15rem;">🧠</span>
-      <span style="font-weight:900;font-size:1.02rem;color:#1a1f36;">Emotional Intelligence Test</span>
+      <span class="knowledge-section-title__text">
+        <span>Emotional Intelligence Test</span>
+        <span class="heading-urdu" lang="ur" dir="rtl">جذباتی ذہانت کا ٹیسٹ</span>
+      </span>
     </div>
     <div class="module-grid" style="margin-bottom:20px">
       <div class="module-card" style="grid-column:1/-1;border-color:#db2777;background:linear-gradient(135deg,#fff 60%,#fdf2f8);">
@@ -411,9 +402,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <!-- Leadership Style Test section -->
-    <div style="display:flex;align-items:center;gap:8px;margin:4px 0 12px;">
+    <div class="knowledge-section-title">
       <span style="font-size:1.15rem;">🧑‍💼</span>
-      <span style="font-weight:900;font-size:1.02rem;color:#1a1f36;">Leadership Style Test</span>
+      <span class="knowledge-section-title__text">
+        <span>Leadership Style Test</span>
+        <span class="heading-urdu" lang="ur" dir="rtl">قیادت کے انداز کا ٹیسٹ</span>
+      </span>
     </div>
     <div class="module-grid" style="margin-bottom:20px">
       <div class="module-card" style="grid-column:1/-1;border-color:#4338ca;background:linear-gradient(135deg,#fff 60%,#eef0fd);">
@@ -438,9 +432,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <!-- Growth Mindset Test section -->
-    <div style="display:flex;align-items:center;gap:8px;margin:4px 0 12px;">
+    <div class="knowledge-section-title">
       <span style="font-size:1.15rem;">🌱</span>
-      <span style="font-weight:900;font-size:1.02rem;color:#1a1f36;">Growth Mindset Test</span>
+      <span class="knowledge-section-title__text">
+        <span>Growth Mindset Test</span>
+        <span class="heading-urdu" lang="ur" dir="rtl">گروتھ مائنڈسیٹ ٹیسٹ</span>
+      </span>
     </div>
     <div class="module-grid" style="margin-bottom:20px">
       <div class="module-card" style="grid-column:1/-1;border-color:#16a34a;background:linear-gradient(135deg,#fff 60%,#f0fdf4);">
@@ -465,9 +462,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <!-- Personal Values Test section -->
-    <div style="display:flex;align-items:center;gap:8px;margin:4px 0 12px;">
+    <div class="knowledge-section-title">
       <span style="font-size:1.15rem;">🧭</span>
-      <span style="font-weight:900;font-size:1.02rem;color:#1a1f36;">Personal Values Test</span>
+      <span class="knowledge-section-title__text">
+        <span>Personal Values Test</span>
+        <span class="heading-urdu" lang="ur" dir="rtl">ذاتی اقدار کا ٹیسٹ</span>
+      </span>
     </div>
     <div class="module-grid" style="margin-bottom:20px">
       <div class="module-card" style="grid-column:1/-1;border-color:#7c3aed;background:linear-gradient(135deg,#fff 60%,#f5f3ff);">
@@ -492,9 +492,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <!-- Digital Wellbeing Test section -->
-    <div style="display:flex;align-items:center;gap:8px;margin:4px 0 12px;">
+    <div class="knowledge-section-title">
       <span style="font-size:1.15rem;">📱</span>
-      <span style="font-weight:900;font-size:1.02rem;color:#1a1f36;">Digital Wellbeing Test</span>
+      <span class="knowledge-section-title__text">
+        <span>Digital Wellbeing Test</span>
+        <span class="heading-urdu" lang="ur" dir="rtl">ڈیجیٹل فلاح و بہبود کا ٹیسٹ</span>
+      </span>
     </div>
     <div class="module-grid" style="margin-bottom:20px">
       <div class="module-card" style="grid-column:1/-1;border-color:#0891b2;background:linear-gradient(135deg,#fff 60%,#ecfeff);">
@@ -515,6 +518,73 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             🇵🇰 اردو میں امتحان دیں
           </a>
         </div>
+      </div>
+    </div>
+
+    <!-- Games feature cards -->
+    <div class="module-grid" style="margin-bottom:20px">
+      <div class="module-card" style="border-color:#b85450;background:linear-gradient(135deg,#fff 60%,#fdf3f3);">
+        <div class="module-card-title" style="color:#b85450;">
+          <span class="module-icon">🔤</span>
+          <span class="heading-stack">
+            <span>Industry Word Search</span>
+            <span class="heading-urdu" lang="ur" dir="rtl">انڈسٹری ورڈ سرچ</span>
+          </span>
+        </div>
+        <p style="font-size:.8rem;color:#5a6076;margin-bottom:12px;line-height:1.5;">
+          Pick from <strong>100 industries</strong>, choose Easy / Medium / Hard, then find all the hidden words
+          in the letter grid. Words run horizontal, vertical, and diagonal!
+        </p>
+        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px;">
+          <span style="font-size:.7rem;font-weight:800;background:#e8faf4;color:#059669;padding:3px 9px;border-radius:20px;">Easy · 12×12</span>
+          <span style="font-size:.7rem;font-weight:800;background:#fffbeb;color:#d97706;padding:3px 9px;border-radius:20px;">Medium · 15×15</span>
+          <span style="font-size:.7rem;font-weight:800;background:#fef2f2;color:#dc2626;padding:3px 9px;border-radius:20px;">Hard · 19×19</span>
+        </div>
+        <a class="module-link is-index" href="word-search.html" style="background:#b85450;color:#fff;text-align:center;padding:8px;font-size:.88rem;">
+          ▶ Play Word Search
+        </a>
+      </div>
+
+      <div class="module-card" style="border-color:#1d4e89;background:linear-gradient(135deg,#fff 60%,#f0f5ff);">
+        <div class="module-card-title" style="color:#1d4e89;">
+          <span class="module-icon">✏️</span>
+          <span class="heading-stack">
+            <span>Industry Crossword</span>
+            <span class="heading-urdu" lang="ur" dir="rtl">انڈسٹری کراس ورڈ</span>
+          </span>
+        </div>
+        <p style="font-size:.8rem;color:#5a6076;margin-bottom:12px;line-height:1.5;">
+          Choose from <strong>100 industries</strong>, read the clues and fill the intersecting grid. Tests vocabulary and spelling!
+        </p>
+        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px;">
+          <span style="font-size:.7rem;font-weight:800;background:#e8faf4;color:#059669;padding:3px 9px;border-radius:20px;">Easy · 13×13</span>
+          <span style="font-size:.7rem;font-weight:800;background:#fffbeb;color:#d97706;padding:3px 9px;border-radius:20px;">Medium · 17×17</span>
+          <span style="font-size:.7rem;font-weight:800;background:#fef2f2;color:#dc2626;padding:3px 9px;border-radius:20px;">Hard · 21×21</span>
+        </div>
+        <a class="module-link is-index" href="crossword.html" style="background:#1d4e89;color:#fff;text-align:center;padding:8px;font-size:.88rem;">
+          ▶ Play Crossword
+        </a>
+      </div>
+
+      <div class="module-card" style="border-color:#6d28d9;background:linear-gradient(135deg,#fff 60%,#f5f3ff);">
+        <div class="module-card-title" style="color:#6d28d9;">
+          <span class="module-icon">🔢</span>
+          <span class="heading-stack">
+            <span>Sudoku</span>
+            <span class="heading-urdu" lang="ur" dir="rtl">سوڈوکو</span>
+          </span>
+        </div>
+        <p style="font-size:.8rem;color:#5a6076;margin-bottom:12px;line-height:1.5;">
+          Classic 9×9 number puzzle. Fill every row, column, and 3×3 box with digits 1–9. Notes mode, hints, and error checking included!
+        </p>
+        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px;">
+          <span style="font-size:.7rem;font-weight:800;background:#e8faf4;color:#059669;padding:3px 9px;border-radius:20px;">Easy · 40 clues</span>
+          <span style="font-size:.7rem;font-weight:800;background:#fffbeb;color:#d97706;padding:3px 9px;border-radius:20px;">Medium · 30 clues</span>
+          <span style="font-size:.7rem;font-weight:800;background:#fef2f2;color:#dc2626;padding:3px 9px;border-radius:20px;">Hard · 22 clues</span>
+        </div>
+        <a class="module-link is-index" href="sudoku.html" style="background:#6d28d9;color:#fff;text-align:center;padding:8px;font-size:.88rem;">
+          ▶ Play Sudoku
+        </a>
       </div>
     </div>
 
@@ -1194,6 +1264,13 @@ const MATHFUN_CATEGORIES = {
   ]
 };
 
+const MATHFUN_CATEGORY_URDU = {
+  "Functions & Graphs": "فنکشنز اور گرافس",
+  "Numbers & Fractions": "اعداد اور کسر",
+  "Logic & Coding": "منطق اور کوڈنگ",
+  "Science & Probability": "سائنس اور احتمال"
+};
+
 function buildMathFunGrid() {
   const grid = document.getElementById('mathfunGrid');
   const quizMap = Object.fromEntries(MATHFUN_QUIZZES.map(q => [q.slug, q.label]));
@@ -1204,7 +1281,13 @@ function buildMathFunGrid() {
     ).join('');
     grid.innerHTML += `
       <div class="module-card">
-        <div class="module-card-title"><span class="module-icon">🎮</span> ${cat}</div>
+        <div class="module-card-title">
+          <span class="module-icon">🎮</span>
+          <span class="heading-stack">
+            <span>${cat}</span>
+            <span class="heading-urdu" lang="ur" dir="rtl">${MATHFUN_CATEGORY_URDU[cat] || ''}</span>
+          </span>
+        </div>
         <div class="module-links">${links}</div>
       </div>`;
   });
