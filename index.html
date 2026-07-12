@@ -177,6 +177,16 @@
       display: flex; align-items: center; gap: 8px;
     }
     .module-icon { font-size: 1.1rem; }
+    .module-title-text { display: grid; gap: 2px; }
+    .module-title-urdu {
+      direction: rtl;
+      text-align: right;
+      font-family: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", "Segoe UI", Tahoma, Arial, sans-serif;
+      font-size: 0.82rem;
+      font-weight: 800;
+      line-height: 1.65;
+      color: var(--muted);
+    }
     .module-links { display: flex; flex-direction: column; gap: 4px; }
     .module-link {
       display: block;
@@ -191,6 +201,23 @@
     }
     .module-link:hover { background: #eef1fd; color: var(--accent); }
     .module-link.is-index { font-weight: 900; color: var(--accent); background: #eef1fd; }
+    .module-link-title {
+      display: grid;
+      gap: 1px;
+    }
+    .module-link-title-urdu {
+      direction: rtl;
+      text-align: right;
+      font-family: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", "Segoe UI", Tahoma, Arial, sans-serif;
+      font-size: 0.74rem;
+      font-weight: 800;
+      line-height: 1.55;
+      color: var(--muted);
+    }
+    .module-link:hover .module-link-title-urdu,
+    .module-link.is-index .module-link-title-urdu {
+      color: var(--accent);
+    }
 
     /* Root pages */
     .root-links { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 24px; }
@@ -205,6 +232,29 @@
 
     .section-panel { display: none; }
     .section-panel.active { display: block; }
+
+    .panel-heading {
+      margin: 0 0 18px;
+      padding: 18px;
+      border: 2px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--card);
+    }
+    .panel-heading h2 {
+      margin: 0 0 4px;
+      font-size: clamp(1.2rem, 3vw, 1.8rem);
+      line-height: 1.25;
+    }
+    .panel-heading-urdu {
+      margin: 0;
+      direction: rtl;
+      text-align: right;
+      font-family: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", "Segoe UI", Tahoma, Arial, sans-serif;
+      font-size: clamp(1rem, 2.3vw, 1.35rem);
+      font-weight: 800;
+      line-height: 1.7;
+      color: var(--ai-color);
+    }
 
     .stats-bar {
       display: flex; gap: 20px; margin-bottom: 20px; flex-wrap: wrap;
@@ -472,6 +522,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
   <!-- LEARNINGS PANEL -->
   <div class="section-panel" id="panel-learnings">
+    <div class="panel-heading">
+      <h2>Tech in Urdu / AI</h2>
+      <p class="panel-heading-urdu" lang="ur" dir="rtl">ٹیکنالوجی اور اے آئی اردو میں</p>
+    </div>
     <div id="learningsGrid" class="module-grid"></div>
   </div>
 
@@ -669,7 +723,7 @@ const SCHOOL_DATA = {
 
 const LEARNINGS_DATA = [
   {
-    id: "module1", title: "Module 1 – AI Foundations", icon: "🤖",
+    id: "module1", title: "Module 1 – AI Foundations", titleUr: "مصنوعی ذہانت کی بنیادیں", icon: "🤖",
     index: "learnings/ai_urdu_module1/index.html",
     topics: [
       {slug:"01-what-is-ai", label:"What is AI?"},
@@ -684,7 +738,7 @@ const LEARNINGS_DATA = [
     base: "learnings/ai_urdu_module1/topics/"
   },
   {
-    id: "module2", title: "Module 2 – Using AI", icon: "💡",
+    id: "module2", title: "Module 2 – Using AI", titleUr: "اے آئی کا استعمال", icon: "💡",
     index: "learnings/ai_urdu_module2/index.html",
     topics: [
       {slug:"09-how-to-use-ai-effectively", label:"How to Use AI Effectively"},
@@ -699,7 +753,7 @@ const LEARNINGS_DATA = [
     base: "learnings/ai_urdu_module2/topics/"
   },
   {
-    id: "module3", title: "Module 3 – AI Ethics & Safety", icon: "🛡️",
+    id: "module3", title: "Module 3 – AI Ethics & Safety", titleUr: "اے آئی اخلاقیات اور حفاظت", icon: "🛡️",
     index: "learnings/ai_urdu_module3/index.html",
     topics: [
       {slug:"17-ai-accuracy-mistakes", label:"AI Accuracy & Mistakes"},
@@ -713,7 +767,7 @@ const LEARNINGS_DATA = [
     base: "learnings/ai_urdu_module3/topics/"
   },
   {
-    id: "module4", title: "Module 4 – AI Technical Concepts", icon: "⚙️",
+    id: "module4", title: "Module 4 – AI Technical Concepts", titleUr: "اے آئی کے تکنیکی تصورات", icon: "⚙️",
     index: "learnings/ai_urdu_module4/index.html",
     topics: [
       {slug:"algorithms-simple", label:"Algorithms (Simplified)"},
@@ -727,7 +781,7 @@ const LEARNINGS_DATA = [
     base: "learnings/ai_urdu_module4/"
   },
   {
-    id: "module5", title: "Module 5 – Advanced AI Topics", icon: "🔬",
+    id: "module5", title: "Module 5 – Advanced AI Topics", titleUr: "اے آئی کے جدید موضوعات", icon: "🔬",
     index: "learnings/ai_urdu_module5/index.html",
     topics: [
       {slug:"large-language-models", label:"Large Language Models"},
@@ -740,7 +794,7 @@ const LEARNINGS_DATA = [
     base: "learnings/ai_urdu_module5/"
   },
   {
-    id: "module6", title: "Module 6 – Prompt Engineering", icon: "✍️",
+    id: "module6", title: "Module 6 – Prompt Engineering", titleUr: "مؤثر پرامپٹس لکھنے کا طریقہ", icon: "✍️",
     index: "learnings/ai_urdu_module6/index.html",
     topics: [
       {slug:"prompt-basics", label:"Prompt Basics"},
@@ -753,7 +807,7 @@ const LEARNINGS_DATA = [
     base: "learnings/ai_urdu_module6/"
   },
   {
-    id: "module7", title: "Module 7 – NLP & Transformers", icon: "🧠",
+    id: "module7", title: "Module 7 – NLP & Transformers", titleUr: "این ایل پی اور ٹرانسفارمر ماڈلز", icon: "🧠",
     index: "learnings/ai_urdu_module7/index.html",
     topics: [
       {slug:"nlp-fundamentals", label:"NLP Fundamentals"},
@@ -764,7 +818,7 @@ const LEARNINGS_DATA = [
     base: "learnings/ai_urdu_module7/"
   },
   {
-    id: "module8", title: "Module 8 – Advanced Architectures", icon: "🏗️",
+    id: "module8", title: "Module 8 – Advanced Architectures", titleUr: "جدید اے آئی آرکیٹیکچرز", icon: "🏗️",
     index: "learnings/ai_urdu_module8/index.html",
     topics: [
       {slug:"foundation-models", label:"Foundation Models"},
@@ -778,7 +832,7 @@ const LEARNINGS_DATA = [
     base: "learnings/ai_urdu_module8/"
   },
   {
-    id: "claude101", title: "Claude 101 – Getting Started", icon: "💬",
+    id: "claude101", title: "Claude 101 – Getting Started", titleUr: "کلاڈ 101 - آغاز کریں", icon: "💬",
     index: "learnings/claude101/index.html",
     topics: [
       {slug:"01_what-is-claude", label:"What is Claude?"},
@@ -798,6 +852,73 @@ const LEARNINGS_DATA = [
     base: "learnings/claude101/"
   }
 ];
+
+const LEARNING_TOPIC_URDU = {
+  "01-what-is-ai": "مصنوعی ذہانت کیا ہے؟",
+  "02-ai-in-everyday-life": "روزمرہ زندگی میں اے آئی",
+  "03-ai-automation-software": "اے آئی، آٹومیشن اور سافٹ ویئر",
+  "04-types-of-ai": "اے آئی کی اقسام",
+  "05-how-ai-learns": "اے آئی کیسے سیکھتا ہے",
+  "06-machine-learning": "مشین لرننگ",
+  "07-generative-ai": "جنریٹو اے آئی",
+  "08-popular-ai-tools": "مشہور اے آئی ٹولز",
+  "09-how-to-use-ai-effectively": "اے آئی کو مؤثر طریقے سے استعمال کرنا",
+  "10-prompting-basics": "پرامپٹنگ کی بنیادی باتیں",
+  "11-ai-for-productivity": "پیداواری صلاحیت کے لیے اے آئی",
+  "12-ai-for-students-education": "طلبہ اور تعلیم کے لیے اے آئی",
+  "13-ai-for-business": "کاروبار کے لیے اے آئی",
+  "14-ai-for-marketing-content": "مارکیٹنگ اور مواد کے لیے اے آئی",
+  "15-ai-for-creativity": "تخلیقی کاموں کے لیے اے آئی",
+  "16-ai-for-communication": "رابطے کے لیے اے آئی",
+  "17-ai-accuracy-mistakes": "اے آئی کی درستگی اور غلطیاں",
+  "18-ai-bias": "اے آئی میں تعصب",
+  "19-ai-privacy-data-safety": "اے آئی، رازداری اور ڈیٹا سیفٹی",
+  "20-ai-ethics": "اے آئی اخلاقیات",
+  "21-ai-copyright": "اے آئی اور کاپی رائٹ",
+  "22-ai-workplace": "کام کی جگہ پر اے آئی",
+  "23-ai-human-skills": "اے آئی اور انسانی مہارتیں",
+  "algorithms-simple": "الگورتھمز آسان الفاظ میں",
+  "computer-vision": "کمپیوٹر وژن",
+  "human-language-ai": "انسانی زبان اور اے آئی",
+  "data-and-ai": "ڈیٹا اور اے آئی",
+  "predictive-ai": "پریڈکٹو اے آئی",
+  "ai-search-research": "اے آئی سرچ اور تحقیق",
+  "ai-agents": "اے آئی ایجنٹس",
+  "large-language-models": "لارج لینگویج ماڈلز",
+  "training-ai-models": "اے آئی ماڈلز کی تربیت",
+  "ai-governance": "اے آئی گورننس",
+  "ai-limitations": "اے آئی کی حدود",
+  "future-of-ai": "اے آئی کا مستقبل",
+  "keep-learning-ai": "اے آئی سیکھنا جاری رکھیں",
+  "prompt-basics": "پرامپٹ کی بنیادی باتیں",
+  "prompt-structure": "پرامپٹ کی ساخت",
+  "improve-prompts": "پرامپٹس بہتر بنانا",
+  "prompt-checklist": "پرامپٹ چیک لسٹ",
+  "use-case-prompts": "استعمال کے مطابق پرامپٹس",
+  "dos-donts": "کیا کریں اور کیا نہ کریں",
+  "nlp-fundamentals": "این ایل پی کی بنیادیں",
+  "transformer-architecture": "ٹرانسفارمر آرکیٹیکچر",
+  "real-world-nlp-tasks": "حقیقی دنیا کے این ایل پی کام",
+  "final-quiz": "آخری کوئز",
+  "foundation-models": "فاؤنڈیشن ماڈلز",
+  "core-architectures": "بنیادی آرکیٹیکچرز",
+  "multimodal-systems": "ملٹی موڈل سسٹمز",
+  "transfer-learning-hands-on": "ٹرانسفر لرننگ عملی مشق",
+  "future-trends": "مستقبل کے رجحانات",
+  "01_what-is-claude": "کلاڈ کیا ہے؟",
+  "1": "تعارف",
+  "02_first-conversation": "آپ کی پہلی گفتگو",
+  "03_getting-better-results": "بہتر نتائج حاصل کرنا",
+  "04_desktop-app": "ڈیسک ٹاپ ایپ",
+  "05_intro-projects": "پروجیکٹس کا تعارف",
+  "06_creating-artifacts": "آرٹیفیکٹس بنانا",
+  "07_working-with-skills": "اسکلز کے ساتھ کام کرنا",
+  "08_connecting-tools": "ٹولز کو جوڑنا",
+  "09_enterprise-search": "انٹرپرائز سرچ",
+  "10_research-mode": "ریسرچ موڈ",
+  "11_use-cases-by-role": "کردار کے مطابق استعمالات",
+  "12_whats-next": "آگے کیا ہے؟"
+};
 
 // ─── HELPERS ────────────────────────────────────────────────────────────────
 
@@ -934,16 +1055,31 @@ function buildGradeBlock(grade) {
 function buildLearningsGrid() {
   const grid = document.getElementById('learningsGrid');
   LEARNINGS_DATA.forEach(mod => {
-    const topicLinks = mod.topics.map(t =>
-      `<a class="module-link" href="${mod.base}${t.slug}.html">${t.label}</a>`
-    ).join('');
+    const topicLinks = mod.topics.map(t => {
+      const titleUr = LEARNING_TOPIC_URDU[t.slug];
+      return `<a class="module-link" href="${mod.base}${t.slug}.html">
+        <span class="module-link-title">
+          <span>${t.label}</span>
+          ${titleUr ? `<span class="module-link-title-urdu" lang="ur" dir="rtl">${titleUr}</span>` : ''}
+        </span>
+      </a>`;
+    }).join('');
     grid.innerHTML += `
       <div class="module-card">
         <div class="module-card-title">
-          <span class="module-icon">${mod.icon}</span> ${mod.title}
+          <span class="module-icon">${mod.icon}</span>
+          <span class="module-title-text">
+            <span>${mod.title}</span>
+            ${mod.titleUr ? `<span class="module-title-urdu" lang="ur" dir="rtl">${mod.titleUr}</span>` : ''}
+          </span>
         </div>
         <div class="module-links">
-          <a class="module-link is-index" href="${mod.index}">📋 Module Index</a>
+          <a class="module-link is-index" href="${mod.index}">
+            <span class="module-link-title">
+              <span>📋 Module Index</span>
+              <span class="module-link-title-urdu" lang="ur" dir="rtl">ماڈیول فہرست</span>
+            </span>
+          </a>
           ${topicLinks}
         </div>
       </div>`;
