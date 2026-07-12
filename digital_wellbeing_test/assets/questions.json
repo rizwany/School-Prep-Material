@@ -1,0 +1,3110 @@
+{
+  "meta": {
+    "title": "Digital Wellbeing Test",
+    "description": "A self-reflection test that explores how intentionally you manage your relationship with devices and social media — your screen habits, online boundaries, and tech-life balance — across 10 dimensions of digital wellbeing.",
+    "scale": {
+      "min": 1,
+      "max": 10,
+      "minLabel": "Not at all likely",
+      "maxLabel": "Extremely likely"
+    },
+    "categories": [
+      {
+        "id": "screen_awareness",
+        "label": "Screen Time Awareness",
+        "icon": "📱"
+      },
+      {
+        "id": "notification_control",
+        "label": "Notification Management",
+        "icon": "🔔"
+      },
+      {
+        "id": "social_media_boundaries",
+        "label": "Social Media Boundaries",
+        "icon": "🌐"
+      },
+      {
+        "id": "digital_detox",
+        "label": "Digital Detox & Unplugging",
+        "icon": "🌙"
+      },
+      {
+        "id": "sleep_and_tech",
+        "label": "Sleep & Tech Habits",
+        "icon": "😴"
+      },
+      {
+        "id": "focus_distraction",
+        "label": "Focus & Attention Management",
+        "icon": "🎯"
+      },
+      {
+        "id": "comparison_wellbeing",
+        "label": "Online Comparison & Self-Worth",
+        "icon": "🪞"
+      },
+      {
+        "id": "digital_communication",
+        "label": "Digital Communication Habits",
+        "icon": "💬"
+      },
+      {
+        "id": "privacy_security",
+        "label": "Privacy & Digital Boundaries",
+        "icon": "🔒"
+      },
+      {
+        "id": "intentional_use",
+        "label": "Intentional & Purposeful Use",
+        "icon": "🧭"
+      }
+    ],
+    "levels": [
+      {
+        "min": 9.0,
+        "max": 10.01,
+        "label": "Exceptional",
+        "emoji": "🌟",
+        "desc": "You manage your relationship with technology with real intention — screens serve you, not the other way around, even when habits and app design are working against you."
+      },
+      {
+        "min": 7.5,
+        "max": 9.0,
+        "label": "Strong",
+        "emoji": "💪",
+        "desc": "You have solid awareness and control over your digital habits in most situations. A few specific triggers still pull you in, but your instincts are good."
+      },
+      {
+        "min": 6.0,
+        "max": 7.5,
+        "label": "Solid",
+        "emoji": "👍",
+        "desc": "You generally keep a healthy balance with technology, but stress, boredom, or certain apps can throw off your usual discipline."
+      },
+      {
+        "min": 4.5,
+        "max": 6.0,
+        "label": "Developing",
+        "emoji": "🌱",
+        "desc": "Your digital habits are inconsistent — intentional in some areas, reactive in others. A few focused changes could shift this a lot."
+      },
+      {
+        "min": 3.0,
+        "max": 4.5,
+        "label": "Limited",
+        "emoji": "⚠️",
+        "desc": "Screens and notifications often pull you away from what you actually intended to do. Small, consistent boundaries could make a real difference."
+      },
+      {
+        "min": 1.0,
+        "max": 3.0,
+        "label": "Needs Growth",
+        "emoji": "📚",
+        "desc": "Your answers suggest technology is currently steering more of your time and attention than you'd like. This is a good starting point for focused change."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "You pick up your phone to check one notification. How likely are you to notice if you end up scrolling for far longer than you meant to?"
+    },
+    {
+      "id": 2,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "You've been using an app for a while. How likely are you to check how much time has actually gone by?"
+    },
+    {
+      "id": 3,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "Your phone shows you a weekly screen time report. How likely are you to actually look at it instead of swiping it away?"
+    },
+    {
+      "id": 4,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "You feel your hand reaching for your phone without a clear reason. How likely are you to notice that automatic reach before you unlock it?"
+    },
+    {
+      "id": 5,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "You said you'd watch \"just one more episode.\" How likely are you to notice when that turns into three or four?"
+    },
+    {
+      "id": 6,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "You're waiting for the kettle to boil or a page to load. How likely are you to notice yourself reaching for your phone out of habit rather than need?"
+    },
+    {
+      "id": 7,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "A friend asks how much time you spend on your phone daily. How likely are you to give an honest estimate rather than one that's clearly too low?"
+    },
+    {
+      "id": 8,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "You open your phone just to check the time. How likely are you to notice if you end up opening an app instead?"
+    },
+    {
+      "id": 9,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "You've set a daily limit on an app. How likely are you to notice the moment you're about to tap \"ignore limit\"?"
+    },
+    {
+      "id": 10,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "You finish a task on your laptop. How likely are you to notice the urge to immediately open a new tab out of habit?"
+    },
+    {
+      "id": 11,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "You sit down to eat a meal alone. How likely are you to notice how automatically your phone comes out?"
+    },
+    {
+      "id": 12,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "You open social media to check one specific thing. How likely are you to notice when you've drifted away from that original reason?"
+    },
+    {
+      "id": 13,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "A day goes by unusually fast. How likely are you to consider how much of it was spent looking at a screen?"
+    },
+    {
+      "id": 14,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "You get a low-battery warning. How likely are you to notice any anxiety that comes with it, and reflect on what that says about your usage?"
+    },
+    {
+      "id": 15,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "You're mid-conversation and check your phone. How likely are you to notice you did it, even if the other person doesn't say anything?"
+    },
+    {
+      "id": 16,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "You wake up and the first thing you do is unlock your phone. How likely are you to notice that pattern rather than treat it as invisible?"
+    },
+    {
+      "id": 17,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "You've been telling yourself you don't use your phone that much. How likely are you to actually check the data to confirm or correct that belief?"
+    },
+    {
+      "id": 18,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "You finish scrolling a feed and realize you've reached content you already saw. How likely are you to notice that as a signal to stop?"
+    },
+    {
+      "id": 19,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "You sit down to work and open your phone \"for a second.\" How likely are you to notice how often that second becomes ten minutes?"
+    },
+    {
+      "id": 20,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "Someone mentions a new challenge or trend they've seen. How likely are you to notice your own curiosity as a pull toward the app rather than dismiss it?"
+    },
+    {
+      "id": 21,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "You reach for your phone during a lull in a movie or show you're already watching. How likely are you to notice the redundancy of that habit?"
+    },
+    {
+      "id": 22,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "You check an app multiple times in an hour out of boredom. How likely are you to notice the pattern rather than let each check feel like a one-off?"
+    },
+    {
+      "id": 23,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "Your screen time this week looks different from last week. How likely are you to wonder why, rather than not notice at all?"
+    },
+    {
+      "id": 24,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "You catch yourself opening an app you didn't consciously choose to open. How likely are you to pause and notice that automatic behavior?"
+    },
+    {
+      "id": 25,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "You're about to hand your child or a young relative a device. How likely are you to think about your own screen habits as a model for theirs?"
+    },
+    {
+      "id": 26,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "You've been on your phone in bed for a while. How likely are you to check the actual time rather than guess?"
+    },
+    {
+      "id": 27,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "You notice a specific app you always open first when you unlock your phone. How likely are you to question why that one, specifically?"
+    },
+    {
+      "id": 28,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "A notification badge shows a number you haven't looked at yet. How likely are you to notice the urge to clear it immediately, rather than on your own schedule?"
+    },
+    {
+      "id": 29,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "You're walking somewhere short, like to the mailbox. How likely are you to notice if you instinctively pull out your phone for the walk?"
+    },
+    {
+      "id": 30,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "Someone points out you've been staring at your phone for a while. How likely are you to consider it honestly rather than get defensive?"
+    },
+    {
+      "id": 31,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "You open an app \"just to check something quick.\" How likely are you to set a mental time check for yourself before you start?"
+    },
+    {
+      "id": 32,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "You notice you feel more tired or unfocused after a long stretch on your phone. How likely are you to connect that feeling to the screen time itself?"
+    },
+    {
+      "id": 33,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "You're bored waiting somewhere. How likely are you to notice the phone as your default first move, rather than one option among several?"
+    },
+    {
+      "id": 34,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "A new app update changes how it grabs your attention. How likely are you to notice the change in your own behavior around it?"
+    },
+    {
+      "id": 35,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "You look up and realize significant time has passed since you started scrolling. How likely are you to register genuine surprise rather than shrug it off?"
+    },
+    {
+      "id": 36,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "You're deciding whether to bring your phone into a room where you don't need it. How likely are you to notice yourself bringing it \"just in case\"?"
+    },
+    {
+      "id": 37,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "You've read the same paragraph of a book several times because you're distracted. How likely are you to notice your phone is nearby and part of the reason?"
+    },
+    {
+      "id": 38,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "You check your phone right after finishing a task, even a tiny one. How likely are you to notice this as a habitual reflex?"
+    },
+    {
+      "id": 39,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "Your screen lights up with a notification you weren't expecting. How likely are you to notice how quickly your attention jumps to it?"
+    },
+    {
+      "id": 40,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "You're trying to remember what you did online yesterday evening. How likely are you to be able to genuinely account for the time?"
+    },
+    {
+      "id": 41,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "You notice you've unlocked your phone without a specific task in mind. How likely are you to catch that and ask yourself what you actually need?"
+    },
+    {
+      "id": 42,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "Someone asks you to put your phone away for an hour. How likely are you to notice how you feel during that hour, rather than just endure it?"
+    },
+    {
+      "id": 43,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "You reach the end of your data plan cycle. How likely are you to look at which apps used the most time, out of genuine curiosity?"
+    },
+    {
+      "id": 44,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "You've been half-watching a show while scrolling your phone. How likely are you to notice you can't recall much of either?"
+    },
+    {
+      "id": 45,
+      "category": "screen_awareness",
+      "reverse": false,
+      "text": "You feel a small hit of relief or pleasure when you open a specific app. How likely are you to notice that reaction rather than take it for granted?"
+    },
+    {
+      "id": 46,
+      "category": "screen_awareness",
+      "reverse": true,
+      "text": "You could scroll through an app for twenty minutes without registering anything you saw. How likely are you to let that happen without noticing?"
+    },
+    {
+      "id": 47,
+      "category": "screen_awareness",
+      "reverse": true,
+      "text": "You could tell yourself \"I'll just check quickly\" and lose track of time every single day. How likely are you to keep doing this without questioning it?"
+    },
+    {
+      "id": 48,
+      "category": "screen_awareness",
+      "reverse": true,
+      "text": "You could ignore your weekly screen time report entirely because you'd rather not know. How likely are you to do this?"
+    },
+    {
+      "id": 49,
+      "category": "screen_awareness",
+      "reverse": true,
+      "text": "You could pick up your phone dozens of times a day without ever noticing the pattern. How likely are you to let this go unexamined?"
+    },
+    {
+      "id": 50,
+      "category": "screen_awareness",
+      "reverse": true,
+      "text": "You could assume your phone use is \"normal\" without ever comparing it to how you actually want to spend your time. How likely are you to do this?"
+    },
+    {
+      "id": 51,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "Your phone buzzes with a notification. How likely are you to finish your current task before checking it?"
+    },
+    {
+      "id": 52,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "You get a notification from a group chat that isn't urgent. How likely are you to let it wait until a natural break?"
+    },
+    {
+      "id": 53,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "You're deciding which apps get to send you notifications. How likely are you to actually review and prune that list?"
+    },
+    {
+      "id": 54,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "You start a focused work session. How likely are you to put your phone on silent or do-not-disturb beforehand?"
+    },
+    {
+      "id": 55,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "An app sends you a \"we miss you\" style notification. How likely are you to recognize it as a re-engagement tactic rather than something meaningful?"
+    },
+    {
+      "id": 56,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "Your phone buzzes during a meal with others. How likely are you to leave it unchecked until the meal is over?"
+    },
+    {
+      "id": 57,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "You notice a specific app sends far more notifications than the others. How likely are you to actually adjust its settings rather than just tolerate it?"
+    },
+    {
+      "id": 58,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "You're falling asleep and your phone lights up. How likely are you to leave it face-down or in another room?"
+    },
+    {
+      "id": 59,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "A notification sound goes off while you're mid-conversation with someone in person. How likely are you to ignore it until the conversation naturally ends?"
+    },
+    {
+      "id": 60,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "You get a badge count building up on an app icon. How likely are you to resist the urge to clear it immediately just because it's there?"
+    },
+    {
+      "id": 61,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "You're setting up a new app. How likely are you to turn off notifications by default rather than accept them automatically?"
+    },
+    {
+      "id": 62,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "Your phone buzzes with a breaking-news alert about something outside your control. How likely are you to notice you don't need to act on it right away?"
+    },
+    {
+      "id": 63,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "You get a notification while driving or about to drive. How likely are you to leave the phone completely alone until you've stopped?"
+    },
+    {
+      "id": 64,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "Someone messages you something non-urgent late at night. How likely are you to reply in the morning instead of right away?"
+    },
+    {
+      "id": 65,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "You're deciding whether email should ping your phone in real time. How likely are you to choose batched or scheduled checks instead?"
+    },
+    {
+      "id": 66,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "A game or app sends a notification designed to pull you back in. How likely are you to recognize the design intent rather than respond automatically?"
+    },
+    {
+      "id": 67,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "You're in an important meeting and your phone buzzes. How likely are you to leave it in your bag or pocket rather than glance at it?"
+    },
+    {
+      "id": 68,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "You notice you flinch or feel pulled toward your phone every time it makes a sound. How likely are you to actively work on reducing that reflex?"
+    },
+    {
+      "id": 69,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "You get to choose between \"notify immediately\" and \"notify at set times\" for an app. How likely are you to choose the less intrusive option?"
+    },
+    {
+      "id": 70,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "A friend sends a message you can tell isn't time-sensitive. How likely are you to resist replying within seconds just because you saw it?"
+    },
+    {
+      "id": 71,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "You're trying to read or study and your phone is nearby. How likely are you to turn off notifications for that stretch of time rather than just \"try to ignore\" them?"
+    },
+    {
+      "id": 72,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "You notice one app's notifications consistently make you anxious. How likely are you to mute or remove that specific one?"
+    },
+    {
+      "id": 73,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "You get a calendar reminder for something trivial. How likely are you to consider whether you actually need that reminder at all?"
+    },
+    {
+      "id": 74,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "Your phone offers a \"focus mode\" or similar feature. How likely are you to actually set it up and use it?"
+    },
+    {
+      "id": 75,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "You're on vacation or time off. How likely are you to adjust your notification settings in advance rather than let work notifications interrupt you the same as always?"
+    },
+    {
+      "id": 76,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "A notification pops up mid-task with something mildly interesting but not important. How likely are you to note it and return to it later, rather than immediately clicking through?"
+    },
+    {
+      "id": 77,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "You notice how many notifications you get in a typical day. How likely are you to actually count or check, rather than just assume it's fine?"
+    },
+    {
+      "id": 78,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "You're setting boundaries with a new group chat. How likely are you to mute it during hours that matter to you, like work or sleep?"
+    },
+    {
+      "id": 79,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "Your phone buzzes while you're helping someone or in a live conversation. How likely are you to keep your attention on the person in front of you?"
+    },
+    {
+      "id": 80,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "An app asks for notification permission when you first install it. How likely are you to pause and consider whether you actually want that, rather than tap \"allow\" automatically?"
+    },
+    {
+      "id": 81,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "You feel restless when your phone hasn't buzzed in a while. How likely are you to notice that restlessness as a withdrawal-like reaction rather than a real need?"
+    },
+    {
+      "id": 82,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "You're deciding how to handle work messages outside of work hours. How likely are you to set an actual boundary, like an auto-reply or scheduled notifications?"
+    },
+    {
+      "id": 83,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "A notification interrupts something you were enjoying, like time with family. How likely are you to protect that moment rather than default to checking?"
+    },
+    {
+      "id": 84,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "You notice certain apps use red badges and urgent-sounding alerts to grab attention. How likely are you to consciously discount that urgency rather than react to it?"
+    },
+    {
+      "id": 85,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "You get a reminder notification for a habit tracker or app you signed up for. How likely are you to evaluate whether it's still useful rather than just dismiss it reflexively?"
+    },
+    {
+      "id": 86,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "You're deciding whether to enable notifications for a new social app. How likely are you to think it through rather than accept the defaults?"
+    },
+    {
+      "id": 87,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "You notice you check your phone the instant you hear any phone's notification sound, even someone else's. How likely are you to notice that conditioned response?"
+    },
+    {
+      "id": 88,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "You have a \"do not disturb\" feature available during sleep hours. How likely are you to actually schedule it rather than leave notifications on overnight?"
+    },
+    {
+      "id": 89,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "A notification from a shopping app tells you about a \"limited time\" deal. How likely are you to recognize the urgency tactic rather than act on impulse?"
+    },
+    {
+      "id": 90,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "You're trying to have an uninterrupted evening. How likely are you to proactively silence your phone rather than just hope you'll ignore it?"
+    },
+    {
+      "id": 91,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "You realize a specific app's notifications are almost always something you could see later without any loss. How likely are you to turn them off?"
+    },
+    {
+      "id": 92,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "Someone in a group chat is having a long back-and-forth that doesn't involve you. How likely are you to mute that specific thread rather than get pulled into every buzz?"
+    },
+    {
+      "id": 93,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "You get a notification during focused creative or deep work. How likely are you to have already set up a system to prevent that interruption?"
+    },
+    {
+      "id": 94,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "Your phone shows you which apps sent the most notifications this week. How likely are you to actually use that information to make a change?"
+    },
+    {
+      "id": 95,
+      "category": "notification_control",
+      "reverse": false,
+      "text": "You notice you're anxious about missing something if you turn notifications off. How likely are you to examine whether that anxiety matches reality?"
+    },
+    {
+      "id": 96,
+      "category": "notification_control",
+      "reverse": true,
+      "text": "You could let every app send you notifications by default and never review the list. How likely are you to do this?"
+    },
+    {
+      "id": 97,
+      "category": "notification_control",
+      "reverse": true,
+      "text": "You could check your phone the instant it buzzes, no matter what you're doing or who you're with. How likely are you to do this?"
+    },
+    {
+      "id": 98,
+      "category": "notification_control",
+      "reverse": true,
+      "text": "You could leave notifications on overnight and let your sleep get interrupted by them regularly. How likely are you to do this?"
+    },
+    {
+      "id": 99,
+      "category": "notification_control",
+      "reverse": true,
+      "text": "You could feel obligated to respond to a non-urgent notification within seconds of seeing it. How likely are you to do this?"
+    },
+    {
+      "id": 100,
+      "category": "notification_control",
+      "reverse": true,
+      "text": "You could let badge counts and alert sounds dictate what you do next, rather than your own plan for the day. How likely are you to do this?"
+    },
+    {
+      "id": 101,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "You follow an account that consistently leaves you feeling bad after viewing it. How likely are you to actually unfollow or mute it?"
+    },
+    {
+      "id": 102,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "You open social media without a specific reason. How likely are you to ask yourself why before you start scrolling?"
+    },
+    {
+      "id": 103,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "A heated argument breaks out in the comments of something you posted. How likely are you to decide not to engage rather than get pulled in?"
+    },
+    {
+      "id": 104,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "You notice a platform's algorithm keeps showing you content that upsets you. How likely are you to adjust your settings or habits in response?"
+    },
+    {
+      "id": 105,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "You're deciding whether to check social media right when you wake up. How likely are you to build in some space before you do?"
+    },
+    {
+      "id": 106,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "You see a post that makes you angry. How likely are you to pause before commenting rather than react immediately?"
+    },
+    {
+      "id": 107,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "You've been scrolling for a while and don't feel any better for it. How likely are you to close the app rather than keep going hoping it'll improve?"
+    },
+    {
+      "id": 108,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "A friend posts something you disagree with strongly. How likely are you to consider whether a public reply actually helps anything?"
+    },
+    {
+      "id": 109,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "You're deciding which platforms deserve a place on your home screen. How likely are you to remove the ones that don't add real value to you?"
+    },
+    {
+      "id": 110,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "You notice you're scrolling through people you don't actually know well or care about. How likely are you to trim that list down?"
+    },
+    {
+      "id": 111,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "You feel the urge to check social media during a conversation with someone in person. How likely are you to resist it and stay present?"
+    },
+    {
+      "id": 112,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "A platform introduces a new feature designed to keep you scrolling longer. How likely are you to notice the intent behind it?"
+    },
+    {
+      "id": 113,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "You're deciding whether to post something. How likely are you to consider your own reasons for posting rather than just habit?"
+    },
+    {
+      "id": 114,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "You come across a divisive news story on social media. How likely are you to seek a second source before forming a strong reaction?"
+    },
+    {
+      "id": 115,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "You notice certain accounts always trigger comparison or envy in you. How likely are you to mute them rather than keep scrolling past the discomfort?"
+    },
+    {
+      "id": 116,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "You're bored and reach for a social app out of habit. How likely are you to check in with yourself about what you actually need in that moment?"
+    },
+    {
+      "id": 117,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "Someone you don't get along with sends a friend or follow request. How likely are you to think it through rather than accept automatically?"
+    },
+    {
+      "id": 118,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "You feel a pull to check how a post you made is performing. How likely are you to notice that pull rather than compulsively refresh?"
+    },
+    {
+      "id": 119,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "You're deciding how much of your day to allow for social media, in advance. How likely are you to actually set that intention before you open the app?"
+    },
+    {
+      "id": 120,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "A platform shows you an endless feed with no natural stopping point. How likely are you to set your own stopping point anyway?"
+    },
+    {
+      "id": 121,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "You notice you feel worse about your life after browsing a particular type of content. How likely are you to make a change based on that?"
+    },
+    {
+      "id": 122,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "You're tagged in a post you're not comfortable with. How likely are you to ask for it to be removed or adjust your own tags/settings?"
+    },
+    {
+      "id": 123,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "You catch yourself performing for an audience rather than sharing something genuine. How likely are you to notice that shift in motivation?"
+    },
+    {
+      "id": 124,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "A stranger online says something hostile to you. How likely are you to decide not to respond rather than get drawn into a back-and-forth?"
+    },
+    {
+      "id": 125,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "You're deciding whether to keep a muted or blocked list updated. How likely are you to actually maintain it rather than let it go stale?"
+    },
+    {
+      "id": 126,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "You notice you check a specific person's profile repeatedly, even though it doesn't feel good. How likely are you to notice and address that pattern?"
+    },
+    {
+      "id": 127,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "A friend's post makes you feel like you're missing out on something. How likely are you to recognize that as a common feeling rather than reality?"
+    },
+    {
+      "id": 128,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "You're deciding whether to join a new platform everyone's talking about. How likely are you to think about your reasons rather than just follow the trend?"
+    },
+    {
+      "id": 129,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "You notice a group chat or feed regularly pulls you into low-value arguments. How likely are you to step back from it?"
+    },
+    {
+      "id": 130,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "You feel anxious when you haven't posted in a while. How likely are you to examine that anxiety rather than post just to relieve it?"
+    },
+    {
+      "id": 131,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "You're scrolling and see an ad clearly targeted at an insecurity of yours. How likely are you to notice the targeting rather than just feel the insecurity?"
+    },
+    {
+      "id": 132,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "You realize your feed is mostly outrage-driven content. How likely are you to actively curate it toward something healthier?"
+    },
+    {
+      "id": 133,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "Someone posts something that seems to be subtly about you. How likely are you to resist reading into it and reacting publicly?"
+    },
+    {
+      "id": 134,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "You're deciding whether to compare your life to what you see online. How likely are you to remind yourself that feeds are curated highlights?"
+    },
+    {
+      "id": 135,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "You notice you feel calmer on days you don't check a specific platform. How likely are you to act on that observation?"
+    },
+    {
+      "id": 136,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "A platform asks you to rate or review something impulsively after a strong emotional reaction. How likely are you to wait until you've cooled down?"
+    },
+    {
+      "id": 137,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "You're deciding how to respond to a message that upset you. How likely are you to write a draft and revisit it later rather than send immediately?"
+    },
+    {
+      "id": 138,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "You notice you're following accounts purely out of obligation, like distant acquaintances. How likely are you to unfollow without guilt?"
+    },
+    {
+      "id": 139,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "You come across content clearly designed to provoke outrage for engagement. How likely are you to recognize it and scroll past rather than engage?"
+    },
+    {
+      "id": 140,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "You're deciding how public to make your own content. How likely are you to choose based on your own comfort rather than what gets the most attention?"
+    },
+    {
+      "id": 141,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "You notice a specific time of day you always check social media, out of pure habit. How likely are you to question whether that time still serves you?"
+    },
+    {
+      "id": 142,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "A close friend asks you to be less online to spend more time together. How likely are you to take the feedback seriously rather than get defensive?"
+    },
+    {
+      "id": 143,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "You're deciding whether to keep using a platform that consistently makes you feel worse. How likely are you to actually consider leaving it?"
+    },
+    {
+      "id": 144,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "You notice yourself building an identity around your online following or engagement. How likely are you to check that against how you actually want to define yourself?"
+    },
+    {
+      "id": 145,
+      "category": "social_media_boundaries",
+      "reverse": false,
+      "text": "You're about to share something a friend told you privately. How likely are you to stop and consider their consent before posting it?"
+    },
+    {
+      "id": 146,
+      "category": "social_media_boundaries",
+      "reverse": true,
+      "text": "You could keep following accounts that consistently make you feel worse, just out of habit. How likely are you to do this?"
+    },
+    {
+      "id": 147,
+      "category": "social_media_boundaries",
+      "reverse": true,
+      "text": "You could get pulled into online arguments with strangers regularly, even when you know it won't change anything. How likely are you to do this?"
+    },
+    {
+      "id": 148,
+      "category": "social_media_boundaries",
+      "reverse": true,
+      "text": "You could scroll an endless feed until you're too tired to continue, without ever deciding to stop. How likely are you to do this?"
+    },
+    {
+      "id": 149,
+      "category": "social_media_boundaries",
+      "reverse": true,
+      "text": "You could compare your life to curated posts from others and take it at face value. How likely are you to do this?"
+    },
+    {
+      "id": 150,
+      "category": "social_media_boundaries",
+      "reverse": true,
+      "text": "You could check social media reflexively during conversations with people right in front of you. How likely are you to do this?"
+    },
+    {
+      "id": 151,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "You're going on vacation. How likely are you to plan real stretches of time away from your phone rather than just hope it happens?"
+    },
+    {
+      "id": 152,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "You have a free weekend with no obligations. How likely are you to consider spending part of it completely offline?"
+    },
+    {
+      "id": 153,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "You notice you haven't gone more than a couple of hours without checking a screen in a long time. How likely are you to try to change that?"
+    },
+    {
+      "id": 154,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "Someone suggests a phone-free dinner or outing. How likely are you to agree without needing convincing?"
+    },
+    {
+      "id": 155,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "You're deciding how to spend a quiet evening. How likely are you to consider an offline activity as a real option, not just background thought?"
+    },
+    {
+      "id": 156,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "You feel a flicker of anxiety at the idea of leaving your phone at home for a few hours. How likely are you to examine that anxiety rather than avoid the situation?"
+    },
+    {
+      "id": 157,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "You're on a walk or hike. How likely are you to leave your phone in your pocket rather than use it as a camera or distraction the whole time?"
+    },
+    {
+      "id": 158,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "You have a long flight or commute ahead. How likely are you to use at least part of it without a screen, rather than filling every minute?"
+    },
+    {
+      "id": 159,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "A friend proposes a \"digital detox\" day. How likely are you to genuinely try it rather than quietly check your phone anyway?"
+    },
+    {
+      "id": 160,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "You notice a specific time of year, like a holiday, when you could unplug more. How likely are you to actually plan for it?"
+    },
+    {
+      "id": 161,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "You're deciding how to recover after a stressful week. How likely are you to consider unplugging as part of that recovery, not just more screen time?"
+    },
+    {
+      "id": 162,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "You've been offline for a few hours and feel a pull to check what you missed. How likely are you to sit with that discomfort rather than immediately reconnect?"
+    },
+    {
+      "id": 163,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "You're at a family gathering. How likely are you to set your phone aside for real stretches rather than check it between conversations?"
+    },
+    {
+      "id": 164,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "You have the option to take a \"no-phone\" morning before starting your day. How likely are you to actually try it?"
+    },
+    {
+      "id": 165,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "You notice screens are your default way of relaxing. How likely are you to intentionally choose a non-screen way to unwind sometimes?"
+    },
+    {
+      "id": 166,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "You're deciding whether to bring your phone into nature or outdoor time. How likely are you to leave it behind or in a bag, not in your hand?"
+    },
+    {
+      "id": 167,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "A retreat, class, or event asks you to go phone-free for a few hours. How likely are you to see that as a relief rather than a burden?"
+    },
+    {
+      "id": 168,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "You notice you feel more present after time spent without a screen. How likely are you to seek that out again, rather than let it be a one-off?"
+    },
+    {
+      "id": 169,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "You're deciding how to structure a Sunday. How likely are you to build in real offline time rather than let screens fill every gap?"
+    },
+    {
+      "id": 170,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "You have a hobby that doesn't involve a screen. How likely are you to actually make time for it regularly?"
+    },
+    {
+      "id": 171,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "You're on a trip somewhere beautiful. How likely are you to put the phone down and actually experience the moment rather than mostly document it?"
+    },
+    {
+      "id": 172,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "You notice you check your phone the moment a task or activity has a small lull. How likely are you to practice sitting in that lull instead?"
+    },
+    {
+      "id": 173,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "You're deciding how to spend the first hour after work. How likely are you to consider a screen-free transition rather than going straight to a device?"
+    },
+    {
+      "id": 174,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "Someone suggests turning off phones during a game night or shared activity. How likely are you to support that idea rather than resist it?"
+    },
+    {
+      "id": 175,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "You notice you've never gone a full day without your phone as an adult. How likely are you to actually try it at some point?"
+    },
+    {
+      "id": 176,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "You're deciding how to handle a long weekend. How likely are you to build in at least one screen-light day?"
+    },
+    {
+      "id": 177,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "You feel like you \"need\" your phone constantly nearby, even in the shower or bathroom. How likely are you to question that need?"
+    },
+    {
+      "id": 178,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "You're at a concert or live event. How likely are you to spend most of it experiencing it directly rather than through a screen?"
+    },
+    {
+      "id": 179,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "You notice unplugging always feels harder than you expect. How likely are you to start with small, achievable stretches rather than give up?"
+    },
+    {
+      "id": 180,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "You're deciding whether to keep your phone in the room while doing a focused hobby like reading, cooking, or exercising. How likely are you to leave it elsewhere?"
+    },
+    {
+      "id": 181,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "A friend goes offline for an extended period and comes back seeming calmer. How likely are you to take that as a genuine signal worth trying yourself?"
+    },
+    {
+      "id": 182,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "You're deciding how to spend time with your kids or family. How likely are you to make that time genuinely device-free, not just half-attentive?"
+    },
+    {
+      "id": 183,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "You notice charging your phone outside the bedroom would help you unplug at night. How likely are you to actually set that up?"
+    },
+    {
+      "id": 184,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "You have a day off with nothing planned. How likely are you to resist the urge to fill every quiet moment with a screen?"
+    },
+    {
+      "id": 185,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "You're deciding how to celebrate an achievement or milestone. How likely are you to be present for it rather than mostly narrate it online?"
+    },
+    {
+      "id": 186,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "You notice you reach for your phone the moment you feel any boredom at all. How likely are you to let yourself be bored sometimes instead?"
+    },
+    {
+      "id": 187,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "You're on a device-free retreat or trip and it's harder than expected. How likely are you to push through rather than quit early?"
+    },
+    {
+      "id": 188,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "You have the chance to leave your phone in another room while you sleep. How likely are you to actually do it?"
+    },
+    {
+      "id": 189,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "You're deciding how mornings should start. How likely are you to delay checking your phone until after some other ritual, like breakfast or a walk?"
+    },
+    {
+      "id": 190,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "You notice you feel disconnected from a hobby or interest you used to love because screens took its place. How likely are you to make space for it again?"
+    },
+    {
+      "id": 191,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "You're at the beach, in the mountains, or somewhere scenic. How likely are you to notice the place with your own eyes before reaching for a camera?"
+    },
+    {
+      "id": 192,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "You have a choice between scrolling and doing nothing for ten minutes. How likely are you to genuinely consider doing nothing?"
+    },
+    {
+      "id": 193,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "You notice unplugging even briefly improves your mood afterward. How likely are you to build that observation into a habit?"
+    },
+    {
+      "id": 194,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "You're deciding how to spend time recovering from being sick. How likely are you to rest properly rather than just switch from work screens to entertainment screens?"
+    },
+    {
+      "id": 195,
+      "category": "digital_detox",
+      "reverse": false,
+      "text": "You have a standing weekly commitment that's screen-free, like a class or a walk with a friend. How likely are you to protect that time consistently?"
+    },
+    {
+      "id": 196,
+      "category": "digital_detox",
+      "reverse": true,
+      "text": "You could fill every quiet, unstructured moment with a screen, without ever considering an alternative. How likely are you to do this?"
+    },
+    {
+      "id": 197,
+      "category": "digital_detox",
+      "reverse": true,
+      "text": "You could bring your phone to every meal, every walk, and every quiet moment out of pure habit. How likely are you to do this?"
+    },
+    {
+      "id": 198,
+      "category": "digital_detox",
+      "reverse": true,
+      "text": "You could feel unable to sit through even a short lull without reaching for a device. How likely are you to let this go unaddressed?"
+    },
+    {
+      "id": 199,
+      "category": "digital_detox",
+      "reverse": true,
+      "text": "You could go an entire vacation checking your phone as often as you do at home. How likely are you to do this?"
+    },
+    {
+      "id": 200,
+      "category": "digital_detox",
+      "reverse": true,
+      "text": "You could avoid ever trying a screen-free stretch because the idea makes you uncomfortable. How likely are you to do this?"
+    },
+    {
+      "id": 201,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "It's close to bedtime and you're still scrolling. How likely are you to actually put the phone down at a set time rather than \"just one more thing\"?"
+    },
+    {
+      "id": 202,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You wake up in the middle of the night. How likely are you to avoid checking your phone rather than reach for it automatically?"
+    },
+    {
+      "id": 203,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You're deciding where to charge your phone overnight. How likely are you to keep it outside the bedroom rather than on your nightstand?"
+    },
+    {
+      "id": 204,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You notice scrolling in bed is making it harder to fall asleep. How likely are you to actually change the habit rather than keep doing it anyway?"
+    },
+    {
+      "id": 205,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You wake up and the first thing available is your phone. How likely are you to delay checking it until after you're properly awake?"
+    },
+    {
+      "id": 206,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You're deciding on a wind-down routine before sleep. How likely are you to include a real screen cut-off time?"
+    },
+    {
+      "id": 207,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You notice blue light or bright screens keep you more alert at night. How likely are you to use night mode or simply stop earlier?"
+    },
+    {
+      "id": 208,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You're lying awake and reach for your phone \"to help you fall asleep.\" How likely are you to notice that it usually does the opposite?"
+    },
+    {
+      "id": 209,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "A show or video autoplays late at night. How likely are you to turn it off rather than let it keep playing past your bedtime?"
+    },
+    {
+      "id": 210,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You're deciding whether your phone should be your alarm clock. How likely are you to use a separate alarm so you're not tempted to scroll first thing?"
+    },
+    {
+      "id": 211,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You notice you feel groggier on mornings after late-night scrolling. How likely are you to connect that grogginess to the habit?"
+    },
+    {
+      "id": 212,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You're in bed and get a notification. How likely are you to leave it until morning rather than check it immediately?"
+    },
+    {
+      "id": 213,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You're deciding how to handle work messages that come in at night. How likely are you to let them wait until your normal hours?"
+    },
+    {
+      "id": 214,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You notice you've been in bed for a while but haven't actually tried to sleep because you're on your phone. How likely are you to catch that and put it down?"
+    },
+    {
+      "id": 215,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You're setting a bedtime for yourself. How likely are you to also set a \"phone down\" time that comes before it?"
+    },
+    {
+      "id": 216,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You wake up during the night and can't fall back asleep easily. How likely are you to try a non-screen method before reaching for your phone?"
+    },
+    {
+      "id": 217,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You notice weekends involve much later phone use at night than weekdays. How likely are you to bring some consistency to both?"
+    },
+    {
+      "id": 218,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You're deciding whether to keep your phone's screen brightness high at night. How likely are you to lower it or switch to night mode?"
+    },
+    {
+      "id": 219,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You have a habit of checking work email right before sleep. How likely are you to stop that habit, knowing it affects your rest?"
+    },
+    {
+      "id": 220,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You notice you often lose 30-60 minutes of sleep time to scrolling you don't even remember clearly. How likely are you to take that seriously?"
+    },
+    {
+      "id": 221,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You're deciding how to handle a sleepless night. How likely are you to avoid bright screens rather than default to scrolling to pass the time?"
+    },
+    {
+      "id": 222,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You wake up and immediately check notifications before getting out of bed. How likely are you to notice how this shapes your mood for the day?"
+    },
+    {
+      "id": 223,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You're deciding on a phone-charging spot for the house. How likely are you to choose somewhere outside your bedroom?"
+    },
+    {
+      "id": 224,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You notice you feel anxious about missing something overnight if your phone isn't nearby. How likely are you to examine whether that's realistic?"
+    },
+    {
+      "id": 225,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You're getting ready for bed and a notification arrives that could easily wait. How likely are you to let it wait?"
+    },
+    {
+      "id": 226,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You have an early morning ahead. How likely are you to actually stop screen use earlier the night before to protect your sleep?"
+    },
+    {
+      "id": 227,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You're deciding whether to read a physical book or scroll before sleep. How likely are you to choose the option less likely to keep you up?"
+    },
+    {
+      "id": 228,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You notice you've trained yourself to associate bed with your phone rather than sleep. How likely are you to work on separating the two?"
+    },
+    {
+      "id": 229,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You're on a trip and your usual routine is disrupted. How likely are you to still try to protect your pre-sleep screen habits?"
+    },
+    {
+      "id": 230,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You catch yourself setting \"just five more minutes\" before sleep with your phone repeatedly. How likely are you to notice that pattern lying to you?"
+    },
+    {
+      "id": 231,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You're deciding how to respond to late-night messages from friends. How likely are you to reply the next day if it's not urgent?"
+    },
+    {
+      "id": 232,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You notice caffeine and screens both affect your sleep, but you only address one. How likely are you to also address your nighttime screen use?"
+    },
+    {
+      "id": 233,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You're deciding on rules for phones in the bedroom generally, not just at night. How likely are you to set any at all?"
+    },
+    {
+      "id": 234,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You wake up feeling like you didn't get quality rest. How likely are you to consider your phone use as part of the cause?"
+    },
+    {
+      "id": 235,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You're deciding whether to check your phone's screen time report specifically for the hour before bed. How likely are you to actually look at it?"
+    },
+    {
+      "id": 236,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You notice a partner or family member scrolling in bed affects your own sleep habits too. How likely are you to talk about it together rather than ignore it?"
+    },
+    {
+      "id": 237,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You're deciding how to end a long day. How likely are you to choose a calming, non-screen activity for at least part of the wind-down?"
+    },
+    {
+      "id": 238,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You notice weekend sleep-ins are partly because of late-night phone use. How likely are you to connect those two things?"
+    },
+    {
+      "id": 239,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You're setting up your bedroom environment for better sleep. How likely are you to remove or silence devices as part of that?"
+    },
+    {
+      "id": 240,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You feel tempted to \"check just one thing\" right as you're falling asleep. How likely are you to resist and let yourself actually drift off?"
+    },
+    {
+      "id": 241,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You're deciding whether an alarm app that requires you to unlock your phone and see notifications is the best choice. How likely are you to use a simpler option instead?"
+    },
+    {
+      "id": 242,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You notice you're more likely to doomscroll news right before bed than any other time. How likely are you to change when you check the news?"
+    },
+    {
+      "id": 243,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You're deciding how strict to be about a \"no screens in bed\" rule for yourself. How likely are you to actually stick to it once you set it?"
+    },
+    {
+      "id": 244,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You feel the urge to reply to a message the second you see it, even at 1am. How likely are you to let it wait until morning?"
+    },
+    {
+      "id": 245,
+      "category": "sleep_and_tech",
+      "reverse": false,
+      "text": "You're deciding whether your evening routine supports good sleep. How likely are you to honestly assess where your phone fits into it?"
+    },
+    {
+      "id": 246,
+      "category": "sleep_and_tech",
+      "reverse": true,
+      "text": "You could scroll on your phone in bed until you're too tired to keep your eyes open, night after night. How likely are you to keep doing this?"
+    },
+    {
+      "id": 247,
+      "category": "sleep_and_tech",
+      "reverse": true,
+      "text": "You could keep your phone on your nightstand, face up, with notifications on, every night. How likely are you to do this without a second thought?"
+    },
+    {
+      "id": 248,
+      "category": "sleep_and_tech",
+      "reverse": true,
+      "text": "You could check your phone the instant you wake up during the night, every time. How likely are you to do this?"
+    },
+    {
+      "id": 249,
+      "category": "sleep_and_tech",
+      "reverse": true,
+      "text": "You could let \"just five more minutes\" of scrolling turn into an hour before sleep, repeatedly. How likely are you to let this continue unaddressed?"
+    },
+    {
+      "id": 250,
+      "category": "sleep_and_tech",
+      "reverse": true,
+      "text": "You could ignore clear signs that nighttime screen use is hurting your sleep. How likely are you to do this?"
+    },
+    {
+      "id": 251,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You sit down to do focused, important work. How likely are you to put your phone out of reach beforehand?"
+    },
+    {
+      "id": 252,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You're deep in a task and think of something unrelated to check online. How likely are you to write it down for later rather than check immediately?"
+    },
+    {
+      "id": 253,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You notice you switch between tabs or apps every few minutes while working. How likely are you to notice that pattern and try to reduce it?"
+    },
+    {
+      "id": 254,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You're reading something that requires real concentration. How likely are you to keep your phone in another room rather than face-down beside you?"
+    },
+    {
+      "id": 255,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You feel a small itch of boredom during a task. How likely are you to sit with it rather than immediately reach for a distraction?"
+    },
+    {
+      "id": 256,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You're deciding how to structure a work session. How likely are you to use a method like timed focus blocks rather than open-ended multitasking?"
+    },
+    {
+      "id": 257,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You notice a task took much longer than expected because of interruptions you caused yourself. How likely are you to reflect on what pulled your attention?"
+    },
+    {
+      "id": 258,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You're in the middle of a conversation and your mind drifts to your phone. How likely are you to notice that drift and bring your attention back?"
+    },
+    {
+      "id": 259,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You have multiple tabs, apps, and notifications open while trying to focus. How likely are you to close the ones you don't need?"
+    },
+    {
+      "id": 260,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You're deciding whether to check messages between every small step of a task. How likely are you to batch that checking instead?"
+    },
+    {
+      "id": 261,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You notice you feel scattered by the end of a day full of switching between apps and tasks. How likely are you to trace that feeling back to the habit?"
+    },
+    {
+      "id": 262,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You're working on something and hit a hard part. How likely are you to push through for a bit before reaching for a distraction?"
+    },
+    {
+      "id": 263,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You have a habit of having a video or feed running in the background \"for company\" while you work. How likely are you to question whether it's actually helping you focus?"
+    },
+    {
+      "id": 264,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You're deciding how to handle a long, tedious task. How likely are you to resist breaking it up with frequent phone checks?"
+    },
+    {
+      "id": 265,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You notice certain apps are specifically designed to interrupt focus with alerts. How likely are you to disable those specifically during work?"
+    },
+    {
+      "id": 266,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You're trying to read a long article or document. How likely are you to finish it in one sitting rather than keep switching away and back?"
+    },
+    {
+      "id": 267,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You catch yourself opening an app on autopilot in the middle of a task. How likely are you to notice it and close it right away?"
+    },
+    {
+      "id": 268,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You're deciding on your phone's placement while doing homework, studying, or focused hobbies. How likely are you to keep it out of arm's reach?"
+    },
+    {
+      "id": 269,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You notice your attention span for single tasks has been shrinking. How likely are you to actively work on rebuilding it rather than accept it as fixed?"
+    },
+    {
+      "id": 270,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You're about to start something that requires deep focus. How likely are you to silence notifications across all devices, not just one?"
+    },
+    {
+      "id": 271,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You feel restless a few minutes into a task and want to check something online. How likely are you to notice that restlessness as a normal part of starting, rather than a signal to stop?"
+    },
+    {
+      "id": 272,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You're deciding whether background noise or content helps or hurts your concentration. How likely are you to honestly test that rather than assume?"
+    },
+    {
+      "id": 273,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You notice multitasking makes you feel busy but you accomplish less. How likely are you to choose single-tasking instead, even though it feels slower?"
+    },
+    {
+      "id": 274,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You're working alongside your phone and it's face-up. How likely are you to turn it face-down or move it, knowing that reduces the pull?"
+    },
+    {
+      "id": 275,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You catch yourself rereading the same sentence multiple times because your attention keeps drifting to your phone nearby. How likely are you to physically remove it?"
+    },
+    {
+      "id": 276,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You're deciding how to handle constant small interruptions at work, like messages from colleagues. How likely are you to set expectations about response times?"
+    },
+    {
+      "id": 277,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You notice you feel a small dopamine hit each time you switch to something new and stimulating. How likely are you to recognize that as part of why focus is hard?"
+    },
+    {
+      "id": 278,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You're planning your day. How likely are you to schedule specific blocks of focused, distraction-free time?"
+    },
+    {
+      "id": 279,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You catch yourself checking your phone the second a task gets slightly boring or difficult. How likely are you to notice that as an avoidance pattern?"
+    },
+    {
+      "id": 280,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You're deciding what to do about frequent context-switching between work and personal apps during the day. How likely are you to build clearer separation?"
+    },
+    {
+      "id": 281,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You notice a specific time of day when your focus is naturally strongest. How likely are you to protect that time from interruptions specifically?"
+    },
+    {
+      "id": 282,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You're working on a creative project that needs sustained attention. How likely are you to remove digital distractions before you start, not after you notice you're distracted?"
+    },
+    {
+      "id": 283,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You catch yourself feeling proud of \"being productive\" while actually just switching rapidly between shallow tasks. How likely are you to question that feeling?"
+    },
+    {
+      "id": 284,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You're deciding whether an app blocker or website blocker could help you during work hours. How likely are you to actually try one?"
+    },
+    {
+      "id": 285,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You notice conversations or meetings are less effective when you're partially checking your phone during them. How likely are you to give them your full attention instead?"
+    },
+    {
+      "id": 286,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You're deciding how to recover focus after an interruption. How likely are you to take a moment to reorient rather than immediately dive back in scattered?"
+    },
+    {
+      "id": 287,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You catch yourself opening three or four apps in a row without finishing a task in any of them. How likely are you to notice and correct that loop?"
+    },
+    {
+      "id": 288,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You're deciding how to handle an urge to check something \"quickly\" mid-task. How likely are you to recognize that these checks rarely stay quick?"
+    },
+    {
+      "id": 289,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You notice tasks that require deep focus get pushed later and later in the day because of constant smaller interruptions. How likely are you to protect earlier time for them instead?"
+    },
+    {
+      "id": 290,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You're deciding whether to keep a running list of \"later\" thoughts that pop up during focused work. How likely are you to actually use that system rather than act on each thought immediately?"
+    },
+    {
+      "id": 291,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You catch yourself feeling anxious when you can't check your phone during a long meeting or class. How likely are you to notice that anxiety as separate from any real need?"
+    },
+    {
+      "id": 292,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You're deciding how to end a distracted, low-focus day. How likely are you to reflect on what pulled your attention rather than just repeat the same pattern tomorrow?"
+    },
+    {
+      "id": 293,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You notice music, podcasts, or videos playing during tasks that need real thought. How likely are you to turn them off to test whether focus improves?"
+    },
+    {
+      "id": 294,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You're deciding whether to answer a call during a task that needs concentration. How likely are you to let it go to voicemail if it's not urgent?"
+    },
+    {
+      "id": 295,
+      "category": "focus_distraction",
+      "reverse": false,
+      "text": "You catch yourself measuring a productive day by how many notifications you cleared rather than what you actually finished. How likely are you to notice and correct that measure?"
+    },
+    {
+      "id": 296,
+      "category": "focus_distraction",
+      "reverse": true,
+      "text": "You could keep every app and tab open and switch between them constantly while \"working.\" How likely are you to keep doing this without change?"
+    },
+    {
+      "id": 297,
+      "category": "focus_distraction",
+      "reverse": true,
+      "text": "You could check your phone the moment any task gets slightly boring, every time. How likely are you to let this continue?"
+    },
+    {
+      "id": 298,
+      "category": "focus_distraction",
+      "reverse": true,
+      "text": "You could let a background feed or video run through every task, never testing whether it actually helps. How likely are you to do this?"
+    },
+    {
+      "id": 299,
+      "category": "focus_distraction",
+      "reverse": true,
+      "text": "You could measure your day by notifications cleared rather than what you actually completed. How likely are you to keep doing this?"
+    },
+    {
+      "id": 300,
+      "category": "focus_distraction",
+      "reverse": true,
+      "text": "You could let small interruptions push your most important, focus-heavy work later and later every day. How likely are you to let this keep happening?"
+    },
+    {
+      "id": 301,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You see a friend's highlight-reel post about their life. How likely are you to remind yourself it's a curated moment, not the whole picture?"
+    },
+    {
+      "id": 302,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You post something and it doesn't get much engagement. How likely are you to notice any dip in mood and question whether that reaction makes sense?"
+    },
+    {
+      "id": 303,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You come across images that trigger insecurity about your appearance. How likely are you to recognize filters or editing rather than compare directly?"
+    },
+    {
+      "id": 304,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You notice you feel a pang of envy scrolling through others' achievements. How likely are you to acknowledge the feeling honestly rather than suppress it?"
+    },
+    {
+      "id": 305,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You're deciding how much weight to give likes or followers as a measure of your worth. How likely are you to consciously separate the two?"
+    },
+    {
+      "id": 306,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You see someone your age reach a milestone you haven't. How likely are you to remind yourself that timelines differ widely rather than measure yourself against theirs?"
+    },
+    {
+      "id": 307,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You notice a specific account always makes you feel inadequate. How likely are you to mute or unfollow it rather than keep absorbing that feeling?"
+    },
+    {
+      "id": 308,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You post a photo and immediately check back for reactions. How likely are you to notice that checking behavior and its effect on your mood?"
+    },
+    {
+      "id": 309,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You see a \"perfect\" home, body, or vacation online. How likely are you to remind yourself you're seeing one curated frame, not the full reality?"
+    },
+    {
+      "id": 310,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You feel like everyone else's life looks more exciting than yours based on their posts. How likely are you to remember that people rarely post the boring or hard parts?"
+    },
+    {
+      "id": 311,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You notice your mood tracks closely with how a recent post performed. How likely are you to recognize that link and question it?"
+    },
+    {
+      "id": 312,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You're comparing your career or relationship status to people online. How likely are you to catch yourself doing this and refocus on your own path?"
+    },
+    {
+      "id": 313,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You see heavily edited or filtered images regularly. How likely are you to remind yourself of that editing before comparing your own appearance?"
+    },
+    {
+      "id": 314,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You notice you feel FOMO looking at photos from an event you weren't invited to. How likely are you to recognize that as a normal but manageable feeling?"
+    },
+    {
+      "id": 315,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You're deciding how to feel about your body after scrolling fitness or beauty content. How likely are you to separate your self-worth from that content?"
+    },
+    {
+      "id": 316,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You notice yourself scrolling an ex's or rival's profile repeatedly. How likely are you to recognize the pattern and choose to stop?"
+    },
+    {
+      "id": 317,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You see someone post about a struggle you're also facing, but they seem to have it together. How likely are you to remember that posts rarely show the messy middle?"
+    },
+    {
+      "id": 318,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You feel your self-esteem rise and fall with your social media numbers. How likely are you to notice that pattern as something worth examining?"
+    },
+    {
+      "id": 319,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You come across a \"perfect family\" or \"perfect relationship\" post. How likely are you to remember that most relationships aren't fully visible online?"
+    },
+    {
+      "id": 320,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You notice a specific type of content, like fitness transformations, consistently affects your self-image. How likely are you to limit your exposure to it?"
+    },
+    {
+      "id": 321,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You're deciding whether to base a big life decision partly on what looks good online. How likely are you to catch that influence and set it aside?"
+    },
+    {
+      "id": 322,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You see someone with a body type different from yours being praised online. How likely are you to separate that praise from your own sense of worth?"
+    },
+    {
+      "id": 323,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You notice you feel behind in life after a scrolling session. How likely are you to recognize that feeling as a common effect of the platform, not an accurate read on your life?"
+    },
+    {
+      "id": 324,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You're deciding how honestly to represent your own life online. How likely are you to resist over-curating it purely to look better than you feel?"
+    },
+    {
+      "id": 325,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You see influencers presenting products or lifestyles as essential. How likely are you to recognize the marketing rather than feel you're missing something?"
+    },
+    {
+      "id": 326,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You notice comparing yourself to others online happens most on certain platforms. How likely are you to reduce your time on those specifically?"
+    },
+    {
+      "id": 327,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You feel jealousy looking at someone's travel photos. How likely are you to notice the feeling without letting it turn into resentment?"
+    },
+    {
+      "id": 328,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You're deciding how to respond to your own insecurity after browsing. How likely are you to address the actual feeling rather than seek more content to numb it?"
+    },
+    {
+      "id": 329,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You notice a friend seems to only post good news, but you know their life has struggles too. How likely are you to remember that about everyone you see online?"
+    },
+    {
+      "id": 330,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You catch yourself assuming strangers online have it easier based on a few photos. How likely are you to question that assumption?"
+    },
+    {
+      "id": 331,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You notice certain accounts are aspirational to the point of feeling unattainable. How likely are you to consider whether following them helps or hurts you?"
+    },
+    {
+      "id": 332,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You feel your worth tied to a follower count or engagement metric. How likely are you to actively work on detaching the two?"
+    },
+    {
+      "id": 333,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You see a post about someone's success that used to be a shared goal of yours. How likely are you to feel genuine happiness for them rather than only comparison?"
+    },
+    {
+      "id": 334,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You notice you scroll further when you're already feeling low, even though it usually makes it worse. How likely are you to catch that pattern and stop?"
+    },
+    {
+      "id": 335,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You're deciding how to talk to yourself about a body-image trigger you saw online. How likely are you to use kinder language than the platform encourages?"
+    },
+    {
+      "id": 336,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You notice a specific comparison you make regularly, like income or relationship status. How likely are you to name it honestly rather than let it stay vague and constant?"
+    },
+    {
+      "id": 337,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You see a \"before and after\" post that seems too good to be true. How likely are you to question the full story rather than take it at face value?"
+    },
+    {
+      "id": 338,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You're deciding how much of your identity is built around your online image. How likely are you to check that against how you actually want to define yourself?"
+    },
+    {
+      "id": 339,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You notice a friend's post gets far more engagement than yours on a similar topic. How likely are you to resist letting that affect how you value your own contribution?"
+    },
+    {
+      "id": 340,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You feel drawn to accounts that make you feel worse but that you can't stop checking. How likely are you to recognize that pattern as worth breaking?"
+    },
+    {
+      "id": 341,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You come across someone publicly criticizing their own appearance in a joking way. How likely are you to notice if you do the same to yourself and question it?"
+    },
+    {
+      "id": 342,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You're deciding how to react to comments on your own posts. How likely are you to let supportive ones matter more than one critical one?"
+    },
+    {
+      "id": 343,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You notice you feel most insecure after specific types of content, like fitness or wealth. How likely are you to name that trigger clearly to yourself?"
+    },
+    {
+      "id": 344,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You see a peer being praised for something you also do, but not being praised for it. How likely are you to notice any resentment and address it rather than let it fester?"
+    },
+    {
+      "id": 345,
+      "category": "comparison_wellbeing",
+      "reverse": false,
+      "text": "You're deciding whether to keep comparing your beginning to someone else's middle or end. How likely are you to catch that unfair comparison?"
+    },
+    {
+      "id": 346,
+      "category": "comparison_wellbeing",
+      "reverse": true,
+      "text": "You could take curated, filtered posts completely at face value and compare your real life to them. How likely are you to keep doing this?"
+    },
+    {
+      "id": 347,
+      "category": "comparison_wellbeing",
+      "reverse": true,
+      "text": "You could let your mood rise and fall entirely based on likes and comments. How likely are you to let this continue unexamined?"
+    },
+    {
+      "id": 348,
+      "category": "comparison_wellbeing",
+      "reverse": true,
+      "text": "You could keep following accounts that consistently make you feel inadequate, just to stay updated on them. How likely are you to do this?"
+    },
+    {
+      "id": 349,
+      "category": "comparison_wellbeing",
+      "reverse": true,
+      "text": "You could assume everyone else's life is as good as their online presence suggests. How likely are you to keep believing this?"
+    },
+    {
+      "id": 350,
+      "category": "comparison_wellbeing",
+      "reverse": true,
+      "text": "You could scroll more when you're already feeling low, even knowing it tends to make things worse. How likely are you to keep doing this?"
+    },
+    {
+      "id": 351,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You need to have a difficult conversation with someone. How likely are you to choose a call or in-person talk over a text message?"
+    },
+    {
+      "id": 352,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You're about to send a message when you're upset. How likely are you to wait until you've calmed down before sending it?"
+    },
+    {
+      "id": 353,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You receive a message that could be read multiple ways. How likely are you to ask for clarification rather than assume the worst tone?"
+    },
+    {
+      "id": 354,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You're deciding how to end a relationship, friendship, or working arrangement. How likely are you to avoid doing it purely over text if the other option is available?"
+    },
+    {
+      "id": 355,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You notice a text conversation is going in circles. How likely are you to suggest switching to a call rather than keep typing back and forth?"
+    },
+    {
+      "id": 356,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You're drafting a message that could come across as harsh. How likely are you to reread it from the other person's perspective before sending?"
+    },
+    {
+      "id": 357,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You feel pressure to respond to messages instantly, all day. How likely are you to set realistic expectations with others about your response time?"
+    },
+    {
+      "id": 358,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You're deciding whether to deliver feedback to a colleague by chat or in person. How likely are you to choose the option that reduces misunderstanding?"
+    },
+    {
+      "id": 359,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You notice you've left someone on \"read\" without a plan to reply. How likely are you to eventually follow up rather than let it fade uncomfortably?"
+    },
+    {
+      "id": 360,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You're in a video call and feel the urge to multitask. How likely are you to stay present and engaged instead?"
+    },
+    {
+      "id": 361,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You receive a long, emotional message. How likely are you to give it a thoughtful reply rather than a quick, dismissive one?"
+    },
+    {
+      "id": 362,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You're deciding how to apologize to someone. How likely are you to choose a method that matches how serious the situation is, rather than the easiest one?"
+    },
+    {
+      "id": 363,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You notice your texts to close people have become mostly transactional. How likely are you to add warmth back in occasionally?"
+    },
+    {
+      "id": 364,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You're about to send a message late at night to someone who might be asleep. How likely are you to consider their time before sending it urgently-worded?"
+    },
+    {
+      "id": 365,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You feel unsure about someone's tone in a message. How likely are you to ask them directly rather than spiral into assumptions?"
+    },
+    {
+      "id": 366,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You're deciding whether a group chat is the right place for a sensitive topic. How likely are you to move it to a private conversation instead?"
+    },
+    {
+      "id": 367,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You notice you've been avoiding a phone call by hiding behind texting. How likely are you to make the call anyway when it's actually needed?"
+    },
+    {
+      "id": 368,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You're on a video call and someone is talking. How likely are you to close other tabs and give them full attention?"
+    },
+    {
+      "id": 369,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You receive criticism over text that stings. How likely are you to consider it might read harsher than intended before reacting?"
+    },
+    {
+      "id": 370,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You're deciding how to check in on a friend going through something hard. How likely are you to call instead of just sending a quick text?"
+    },
+    {
+      "id": 371,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You notice a pattern of miscommunication over text with a specific person. How likely are you to suggest talking it through directly?"
+    },
+    {
+      "id": 372,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You're drafting a message and it's getting long and complicated. How likely are you to consider whether a call would actually be faster and clearer?"
+    },
+    {
+      "id": 373,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You feel the urge to fire back a quick, sharp reply to a frustrating message. How likely are you to pause and choose your words more carefully instead?"
+    },
+    {
+      "id": 374,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You're deciding whether to use humor or sarcasm in a text with someone who might not read your tone correctly. How likely are you to consider how it could land?"
+    },
+    {
+      "id": 375,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You notice back-to-back video calls are leaving you drained. How likely are you to build in breaks between them rather than stack them without pause?"
+    },
+    {
+      "id": 376,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You're deciding how to give someone difficult news. How likely are you to choose a method that lets them ask questions and process, rather than a one-way message?"
+    },
+    {
+      "id": 377,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You receive a message you meant to reply to and forgot. How likely are you to acknowledge the delay honestly rather than ignore it entirely?"
+    },
+    {
+      "id": 378,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You're in a text argument that's escalating. How likely are you to suggest pausing and revisiting the topic in person or by call?"
+    },
+    {
+      "id": 379,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You notice you type differently, more carelessly, to people online than you'd speak to them in person. How likely are you to notice and adjust that?"
+    },
+    {
+      "id": 380,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You're deciding how to phrase a request to a colleague or friend. How likely are you to make sure your tone is clear rather than assume it'll be read correctly?"
+    },
+    {
+      "id": 381,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You feel like a conversation over chat isn't landing well. How likely are you to suggest switching mediums rather than push through with more text?"
+    },
+    {
+      "id": 382,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You're deciding whether to leave a voice message or a written one. How likely are you to pick based on what actually serves the other person better?"
+    },
+    {
+      "id": 383,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You notice you've been one-word-answer texting someone who clearly wants more engagement. How likely are you to notice and adjust your effort?"
+    },
+    {
+      "id": 384,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You're on a call and distracted by your phone. How likely are you to put it aside so you're actually listening?"
+    },
+    {
+      "id": 385,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You receive an emotionally charged message. How likely are you to respond to the emotion first, not just the logistics of what they're asking?"
+    },
+    {
+      "id": 386,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You're deciding how to resolve a misunderstanding that started over text. How likely are you to address it directly rather than let resentment build silently?"
+    },
+    {
+      "id": 387,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You notice you avoid calling people even when a call would clearly help, simply because texting feels easier. How likely are you to push past that avoidance?"
+    },
+    {
+      "id": 388,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You're deciding how to respond to a message you don't have time to properly answer yet. How likely are you to say so, rather than send a rushed, unclear reply?"
+    },
+    {
+      "id": 389,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You notice video call fatigue building up over a busy week. How likely are you to consolidate or shorten meetings where possible?"
+    },
+    {
+      "id": 390,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You're deciding whether to send a correction or clarification after realizing your last message could be misread. How likely are you to send it rather than let it sit?"
+    },
+    {
+      "id": 391,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You feel a strong reaction reading a message and want to reply immediately. How likely are you to give it a few minutes before responding?"
+    },
+    {
+      "id": 392,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You're deciding how to end a video call that's run long. How likely are you to name the time honestly rather than let it drag on unspoken?"
+    },
+    {
+      "id": 393,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You notice you interpret a short reply, like \"ok,\" as more negative than it was probably meant. How likely are you to check that assumption before reacting?"
+    },
+    {
+      "id": 394,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You're deciding whether to include someone in a group chat versus a separate message. How likely are you to think about their comfort, not just convenience?"
+    },
+    {
+      "id": 395,
+      "category": "digital_communication",
+      "reverse": false,
+      "text": "You feel awkward after a miscommunication over text. How likely are you to address it directly rather than let it quietly change the relationship?"
+    },
+    {
+      "id": 396,
+      "category": "digital_communication",
+      "reverse": true,
+      "text": "You could handle serious, sensitive conversations entirely over text just because it's easier, regardless of the impact. How likely are you to keep doing this?"
+    },
+    {
+      "id": 397,
+      "category": "digital_communication",
+      "reverse": true,
+      "text": "You could fire off a sharp reply the instant a message frustrates you, without waiting to cool down. How likely are you to keep doing this?"
+    },
+    {
+      "id": 398,
+      "category": "digital_communication",
+      "reverse": true,
+      "text": "You could multitask through video calls without really listening, call after call. How likely are you to keep doing this?"
+    },
+    {
+      "id": 399,
+      "category": "digital_communication",
+      "reverse": true,
+      "text": "You could avoid a needed phone call indefinitely by hiding behind texts, even when it's clearly hurting the relationship. How likely are you to keep doing this?"
+    },
+    {
+      "id": 400,
+      "category": "digital_communication",
+      "reverse": true,
+      "text": "You could assume the worst tone in an ambiguous message without ever asking for clarification. How likely are you to keep doing this?"
+    },
+    {
+      "id": 401,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "An app asks for access to your contacts, location, or camera. How likely are you to consider whether it actually needs that before allowing it?"
+    },
+    {
+      "id": 402,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You're about to post your real-time location publicly. How likely are you to think twice about who could see it?"
+    },
+    {
+      "id": 403,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You notice you reuse the same password across many accounts. How likely are you to actually take steps to change that?"
+    },
+    {
+      "id": 404,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You're deciding whether to share details about your children or family online. How likely are you to think about their future consent, not just your own comfort?"
+    },
+    {
+      "id": 405,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You get a message asking for personal information that feels slightly off. How likely are you to verify it rather than respond automatically?"
+    },
+    {
+      "id": 406,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You're setting up a new account. How likely are you to actually glance at the privacy settings rather than accept every default?"
+    },
+    {
+      "id": 407,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You notice an app tracking your activity across other apps and websites. How likely are you to check and adjust that setting?"
+    },
+    {
+      "id": 408,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You're deciding whether to post a photo that includes other people. How likely are you to consider asking them before sharing it?"
+    },
+    {
+      "id": 409,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You get an offer that seems designed to get you to overshare personal data for a small reward. How likely are you to notice the trade-off before accepting?"
+    },
+    {
+      "id": 410,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You're deciding whether to enable two-factor authentication on an important account. How likely are you to actually set it up rather than skip it?"
+    },
+    {
+      "id": 411,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You notice a website asking for far more information than the service requires. How likely are you to question why before providing it?"
+    },
+    {
+      "id": 412,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You're deciding what to share publicly about a personal struggle. How likely are you to consider your future self's comfort with that post, not just today's?"
+    },
+    {
+      "id": 413,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You get a friend or follow request from someone you don't recognize. How likely are you to verify who they are before accepting?"
+    },
+    {
+      "id": 414,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You're deciding whether to check an app's permissions after not using it for a while. How likely are you to actually review and revoke unnecessary access?"
+    },
+    {
+      "id": 415,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You notice you've never read the terms of service for an app you use daily. How likely are you to at least skim the key privacy points?"
+    },
+    {
+      "id": 416,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You're deciding whether to post that you're away from home for an extended trip. How likely are you to consider the security implications first?"
+    },
+    {
+      "id": 417,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You get a \"quiz\" or \"which character are you\" post asking oddly specific personal questions. How likely are you to recognize it as a possible data-harvesting tactic?"
+    },
+    {
+      "id": 418,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You're deciding whether to use a public Wi-Fi network for something sensitive, like banking. How likely are you to avoid it or use extra protection?"
+    },
+    {
+      "id": 419,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You notice an old account you no longer use still has your personal data active. How likely are you to actually delete or deactivate it?"
+    },
+    {
+      "id": 420,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You're deciding how much of your daily routine to make visible online, like where you work out or which route you take home. How likely are you to limit that?"
+    },
+    {
+      "id": 421,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You get asked to share someone else's personal story or photo without their explicit okay. How likely are you to check with them first?"
+    },
+    {
+      "id": 422,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You're deciding on privacy settings for a new social account. How likely are you to set them intentionally rather than leave everything public by default?"
+    },
+    {
+      "id": 423,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You notice you've saved passwords in a way that isn't very secure. How likely are you to move to a proper password manager?"
+    },
+    {
+      "id": 424,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You're deciding whether to link multiple accounts or apps together for convenience. How likely are you to weigh that convenience against the shared data risk?"
+    },
+    {
+      "id": 425,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You get a notification that a service had a data breach. How likely are you to actually change your password there rather than ignore the alert?"
+    },
+    {
+      "id": 426,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You're deciding whether to geotag a post from your home. How likely are you to think about what that reveals to strangers?"
+    },
+    {
+      "id": 427,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You notice a smart device in your home, like a speaker or camera, has broad permissions. How likely are you to review what it actually has access to?"
+    },
+    {
+      "id": 428,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You're deciding whether to accept cookies or tracking on a website you rarely visit. How likely are you to decline where possible rather than accept by default?"
+    },
+    {
+      "id": 429,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You get asked to verify your identity through an unfamiliar link. How likely are you to check the source independently before clicking?"
+    },
+    {
+      "id": 430,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You're deciding how much financial or health information to store in apps on your phone. How likely are you to think about what happens if your phone is lost?"
+    },
+    {
+      "id": 431,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You notice you've given an old job's app or account access to something you still use. How likely are you to revoke that access once it's no longer needed?"
+    },
+    {
+      "id": 432,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You're deciding whether to post about a relationship milestone that also involves someone else's privacy. How likely are you to check with them first?"
+    },
+    {
+      "id": 433,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You get a request from an app to access your microphone when it doesn't clearly need it. How likely are you to deny that permission?"
+    },
+    {
+      "id": 434,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You're deciding how to store sensitive documents, like ID scans, on your devices. How likely are you to use secure, intentional storage rather than a random folder?"
+    },
+    {
+      "id": 435,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You notice you're using the same weak password recovery questions across accounts. How likely are you to actually vary them or avoid guessable answers?"
+    },
+    {
+      "id": 436,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You're deciding whether to share your live location with an app \"temporarily.\" How likely are you to turn it off again once you no longer need it?"
+    },
+    {
+      "id": 437,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You get a friend's request to be tagged in a location-heavy post about a private event. How likely are you to consider your own comfort with that visibility?"
+    },
+    {
+      "id": 438,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You're deciding whether to leave old, unused apps installed with standing permissions. How likely are you to clean those up periodically?"
+    },
+    {
+      "id": 439,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You notice a public account of yours reveals more personal detail than you'd want a stranger to have. How likely are you to trim what's visible?"
+    },
+    {
+      "id": 440,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You're deciding whether to click a link from an unknown sender promising something appealing. How likely are you to verify before clicking?"
+    },
+    {
+      "id": 441,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You get a chance to review which apps have access to your photos or files. How likely are you to actually go through that list?"
+    },
+    {
+      "id": 442,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You're deciding whether to post identifying details about your daily schedule, like school pickup times. How likely are you to leave that information out?"
+    },
+    {
+      "id": 443,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You notice you've never checked what data a major platform has collected about you. How likely are you to look it up at some point?"
+    },
+    {
+      "id": 444,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You're deciding how to respond to a request for personal details that seems reasonable but unfamiliar. How likely are you to pause and confirm legitimacy first?"
+    },
+    {
+      "id": 445,
+      "category": "privacy_security",
+      "reverse": false,
+      "text": "You get the chance to set boundaries with family about posting photos of you without asking. How likely are you to actually have that conversation?"
+    },
+    {
+      "id": 446,
+      "category": "privacy_security",
+      "reverse": true,
+      "text": "You could accept every app permission request without reading what it's actually asking for. How likely are you to keep doing this?"
+    },
+    {
+      "id": 447,
+      "category": "privacy_security",
+      "reverse": true,
+      "text": "You could reuse the same password everywhere and never update it, even after a breach alert. How likely are you to keep doing this?"
+    },
+    {
+      "id": 448,
+      "category": "privacy_security",
+      "reverse": true,
+      "text": "You could post detailed real-time location information publicly without a second thought. How likely are you to keep doing this?"
+    },
+    {
+      "id": 449,
+      "category": "privacy_security",
+      "reverse": true,
+      "text": "You could share photos or stories involving other people without ever asking them first. How likely are you to keep doing this?"
+    },
+    {
+      "id": 450,
+      "category": "privacy_security",
+      "reverse": true,
+      "text": "You could click links from unfamiliar senders promising something appealing, without verifying them. How likely are you to keep doing this?"
+    },
+    {
+      "id": 451,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You're deciding which apps stay on your phone long-term. How likely are you to keep only the ones that genuinely add value to your life?"
+    },
+    {
+      "id": 452,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You notice a habit of opening your phone without any real purpose. How likely are you to pause and ask yourself what you're actually looking for?"
+    },
+    {
+      "id": 453,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You're setting a goal for how you want technology to fit into your life. How likely are you to actually write it down or make it concrete, rather than keep it vague?"
+    },
+    {
+      "id": 454,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You notice a tool or app you use daily hasn't been reevaluated in a long time. How likely are you to check whether it still serves you?"
+    },
+    {
+      "id": 455,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You're deciding how to spend a free evening. How likely are you to consider tech use as one option among many, not the automatic default?"
+    },
+    {
+      "id": 456,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You notice your phone use doesn't match your stated values, like wanting more time with family or hobbies. How likely are you to actually adjust your behavior to close that gap?"
+    },
+    {
+      "id": 457,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You're choosing a new app or platform to try. How likely are you to think about your reason for adopting it, rather than just following everyone else?"
+    },
+    {
+      "id": 458,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You notice you use technology reactively most of the time, responding to whatever grabs your attention. How likely are you to build in moments of proactive, chosen use instead?"
+    },
+    {
+      "id": 459,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You're deciding how to define a \"good\" relationship with technology for yourself. How likely are you to define it in your own terms rather than by comparison to others?"
+    },
+    {
+      "id": 460,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You notice a specific tool, like a to-do app or calendar, genuinely helps you. How likely are you to keep investing in using it well, rather than switching constantly?"
+    },
+    {
+      "id": 461,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You're reflecting on the past month of technology use. How likely are you to actually do this reflection rather than let habits run unexamined?"
+    },
+    {
+      "id": 462,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You notice you feel more like your best self on days with less passive scrolling. How likely are you to use that information to guide future choices?"
+    },
+    {
+      "id": 463,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You're deciding whether a new gadget or subscription will genuinely improve your life. How likely are you to consider that honestly before buying it?"
+    },
+    {
+      "id": 464,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You notice you've adopted a tech habit purely because it's the default, not because you chose it. How likely are you to question that default?"
+    },
+    {
+      "id": 465,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You're setting boundaries around technology for a specific part of your life, like work-life balance. How likely are you to actually define and hold that boundary?"
+    },
+    {
+      "id": 466,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You notice a tension between what technology offers and what actually makes you feel fulfilled. How likely are you to lean toward fulfillment even if it's less convenient?"
+    },
+    {
+      "id": 467,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You're deciding how much of your identity should be shaped by your online presence versus offline life. How likely are you to consciously choose that balance?"
+    },
+    {
+      "id": 468,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You notice you've let an app or platform's design choices dictate your habits rather than deciding for yourself. How likely are you to take back that control?"
+    },
+    {
+      "id": 469,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You're deciding whether to try a period of more intentional, limited tech use. How likely are you to actually follow through on it?"
+    },
+    {
+      "id": 470,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You notice a specific value of yours, like deep relationships or creativity, gets crowded out by screen time. How likely are you to protect space for it?"
+    },
+    {
+      "id": 471,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You're reflecting on whether your tech habits align with the kind of person you want to be. How likely are you to actually do that reflection honestly?"
+    },
+    {
+      "id": 472,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You notice you often let technology choose for you, like autoplay or algorithmic feeds, rather than choosing content yourself. How likely are you to seek out more active choices?"
+    },
+    {
+      "id": 473,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You're deciding what role technology should play in a relationship or friendship. How likely are you to talk about that explicitly rather than let it happen by default?"
+    },
+    {
+      "id": 474,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You notice a habit that technically saves time but doesn't actually improve your life. How likely are you to question whether it's worth keeping?"
+    },
+    {
+      "id": 475,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You're deciding how to teach or model healthy tech habits for someone younger who looks up to you. How likely are you to actually think this through, not just react in the moment?"
+    },
+    {
+      "id": 476,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You notice you feel more anxious, not less, after periods of heavy tech use. How likely are you to treat that as useful information rather than ignore it?"
+    },
+    {
+      "id": 477,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You're deciding whether convenience or long-term wellbeing should win in a specific tech choice. How likely are you to at least weigh both consciously?"
+    },
+    {
+      "id": 478,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You notice you've never really asked why you use a specific platform, you just always have. How likely are you to actually examine that question?"
+    },
+    {
+      "id": 479,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You're deciding how to balance staying informed with protecting your mental health from constant news exposure. How likely are you to set intentional limits?"
+    },
+    {
+      "id": 480,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You notice a gap between the time you'd like to spend on meaningful offline activities and the time you actually spend. How likely are you to work on closing that gap?"
+    },
+    {
+      "id": 481,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You're deciding whether a new productivity tool is actually making you more productive or just busier. How likely are you to evaluate that honestly?"
+    },
+    {
+      "id": 482,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You notice you use technology to avoid difficult feelings rather than face them. How likely are you to notice that pattern and address the underlying feeling instead?"
+    },
+    {
+      "id": 483,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You're deciding how present to be for major life moments, versus documenting or sharing them. How likely are you to prioritize being present?"
+    },
+    {
+      "id": 484,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You notice your values around technology have shifted over time but your habits haven't caught up. How likely are you to update your habits to match?"
+    },
+    {
+      "id": 485,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You're deciding whether to keep a specific tech habit simply because you've always had it. How likely are you to question it rather than assume it's fine?"
+    },
+    {
+      "id": 486,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You notice you feel more like yourself when you use technology on your own terms rather than reactively. How likely are you to build more of that intentional use into your routine?"
+    },
+    {
+      "id": 487,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You're deciding how to weigh a platform's benefits against its costs to your time and attention. How likely are you to actually make that trade-off consciously?"
+    },
+    {
+      "id": 488,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You notice you often justify tech habits after the fact rather than choosing them ahead of time. How likely are you to try planning your use in advance instead?"
+    },
+    {
+      "id": 489,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You're deciding whether your current tech habits would make sense to someone who didn't grow up with constant connectivity. How likely are you to consider that outside perspective?"
+    },
+    {
+      "id": 490,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You notice you've built genuinely good systems around one area of tech use, like work email, but not others. How likely are you to apply that same intentionality elsewhere?"
+    },
+    {
+      "id": 491,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You're deciding how to respond when a habit you thought was harmless turns out to be taking more time or energy than you realized. How likely are you to actually adjust it?"
+    },
+    {
+      "id": 492,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You notice you feel a sense of control over your technology rather than the other way around, more often than not. How likely are you to notice and appreciate that when it's true?"
+    },
+    {
+      "id": 493,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You're deciding how to introduce more intentional tech habits without making it feel like punishment. How likely are you to frame it around what you're gaining, not just what you're giving up?"
+    },
+    {
+      "id": 494,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You notice a friend or family member has a healthier relationship with technology in one specific area. How likely are you to genuinely learn from that rather than dismiss it?"
+    },
+    {
+      "id": 495,
+      "category": "intentional_use",
+      "reverse": false,
+      "text": "You're deciding whether to revisit your technology habits periodically, like a regular check-in with yourself. How likely are you to actually build that habit?"
+    },
+    {
+      "id": 496,
+      "category": "intentional_use",
+      "reverse": true,
+      "text": "You could let your phone's default settings and algorithms fully dictate your daily habits without ever questioning them. How likely are you to keep doing this?"
+    },
+    {
+      "id": 497,
+      "category": "intentional_use",
+      "reverse": true,
+      "text": "You could keep using an app or habit purely because you've always had it, without asking if it still serves you. How likely are you to keep doing this?"
+    },
+    {
+      "id": 498,
+      "category": "intentional_use",
+      "reverse": true,
+      "text": "You could let technology be your go-to way of avoiding difficult feelings, again and again. How likely are you to keep doing this?"
+    },
+    {
+      "id": 499,
+      "category": "intentional_use",
+      "reverse": true,
+      "text": "You could never reflect on whether your tech use matches your actual values, and just let habits run on autopilot. How likely are you to keep doing this?"
+    },
+    {
+      "id": 500,
+      "category": "intentional_use",
+      "reverse": true,
+      "text": "You could justify your tech habits after the fact rather than ever choosing them intentionally ahead of time. How likely are you to keep doing this?"
+    }
+  ]
+}

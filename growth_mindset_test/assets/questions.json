@@ -1,0 +1,3110 @@
+{
+  "meta": {
+    "title": "Growth Mindset Test",
+    "description": "A self-reflection test that explores how you respond to failure, feedback, and challenge — revealing a fixed vs. growth orientation toward learning and ability, across 10 dimensions.",
+    "scale": {
+      "min": 1,
+      "max": 10,
+      "minLabel": "Not at all likely",
+      "maxLabel": "Extremely likely"
+    },
+    "categories": [
+      {
+        "id": "failure_response",
+        "label": "Response to Failure",
+        "icon": "💥"
+      },
+      {
+        "id": "feedback_reception",
+        "label": "Openness to Feedback",
+        "icon": "📝"
+      },
+      {
+        "id": "effort_beliefs",
+        "label": "Effort & Persistence",
+        "icon": "💪"
+      },
+      {
+        "id": "challenge_seeking",
+        "label": "Challenge Seeking",
+        "icon": "🧗"
+      },
+      {
+        "id": "ability_beliefs",
+        "label": "Beliefs About Ability",
+        "icon": "🧠"
+      },
+      {
+        "id": "resilience",
+        "label": "Resilience After Setbacks",
+        "icon": "🛡️"
+      },
+      {
+        "id": "comparison_mindset",
+        "label": "Response to Others' Success",
+        "icon": "🤝"
+      },
+      {
+        "id": "process_focus",
+        "label": "Focus on Process & Strategy",
+        "icon": "🔧"
+      },
+      {
+        "id": "comfort_with_struggle",
+        "label": "Comfort with Struggle",
+        "icon": "🌱"
+      },
+      {
+        "id": "self_talk",
+        "label": "Growth Self-Talk & Identity",
+        "icon": "💬"
+      }
+    ],
+    "levels": [
+      {
+        "min": 9,
+        "max": 10.01,
+        "label": "Growth Champion",
+        "emoji": "🌟",
+        "desc": "You consistently treat challenges, effort, and setbacks as fuel for growth. Failure rarely shakes your sense of what you're capable of — you use it."
+      },
+      {
+        "min": 7.5,
+        "max": 9,
+        "label": "Growth-Oriented",
+        "emoji": "🌿",
+        "desc": "You lean strongly toward a growth mindset. A few specific situations still trigger fixed-mindset reactions, but your default response to difficulty is to lean in."
+      },
+      {
+        "min": 6,
+        "max": 7.5,
+        "label": "Balanced Mindset",
+        "emoji": "👍",
+        "desc": "You show a healthy mix of growth and fixed responses. In comfortable areas you take risks and learn from failure; under real pressure, old fixed patterns can resurface."
+      },
+      {
+        "min": 4.5,
+        "max": 6,
+        "label": "Mixed Mindset",
+        "emoji": "🌗",
+        "desc": "Your responses to challenge and feedback are inconsistent — genuinely growth-oriented in some areas, protective and fixed in others. A few key shifts could change a lot."
+      },
+      {
+        "min": 3,
+        "max": 4.5,
+        "label": "Fixed-Leaning",
+        "emoji": "⚠️",
+        "desc": "Failure, feedback, and challenge often feel like threats to your sense of ability rather than opportunities to build it. Small, deliberate reframes could open this up."
+      },
+      {
+        "min": 1,
+        "max": 3,
+        "label": "Fixed Mindset",
+        "emoji": "🔒",
+        "desc": "Your answers suggest ability currently feels fixed to you — mistakes and difficulty are read as verdicts rather than data. This is a strong starting point for practicing a growth-oriented response."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "You just failed an important test despite studying hard. How likely are you to treat it as useful information about what to adjust next time?"
+    },
+    {
+      "id": 2,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "You just failed an important test despite studying hard. How likely are you to look for the specific lesson hidden in what went wrong?"
+    },
+    {
+      "id": 3,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "You just failed an important test despite studying hard. How likely are you to remind yourself that this one result doesn't define your ability?"
+    },
+    {
+      "id": 4,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "You just failed an important test despite studying hard. How likely are you to get curious about what you'd do differently on a second attempt?"
+    },
+    {
+      "id": 5,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "You just failed an important test despite studying hard. How likely are you to see it as a normal part of learning something hard?"
+    },
+    {
+      "id": 6,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "A project you led at work falls apart in front of your team. How likely are you to treat it as useful information about what to adjust next time?"
+    },
+    {
+      "id": 7,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "A project you led at work falls apart in front of your team. How likely are you to look for the specific lesson hidden in what went wrong?"
+    },
+    {
+      "id": 8,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "A project you led at work falls apart in front of your team. How likely are you to remind yourself that this one result doesn't define your ability?"
+    },
+    {
+      "id": 9,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "A project you led at work falls apart in front of your team. How likely are you to get curious about what you'd do differently on a second attempt?"
+    },
+    {
+      "id": 10,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "A project you led at work falls apart in front of your team. How likely are you to see it as a normal part of learning something hard?"
+    },
+    {
+      "id": 11,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "You try out for a team or role and don't make the cut. How likely are you to treat it as useful information about what to adjust next time?"
+    },
+    {
+      "id": 12,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "You try out for a team or role and don't make the cut. How likely are you to look for the specific lesson hidden in what went wrong?"
+    },
+    {
+      "id": 13,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "You try out for a team or role and don't make the cut. How likely are you to remind yourself that this one result doesn't define your ability?"
+    },
+    {
+      "id": 14,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "You try out for a team or role and don't make the cut. How likely are you to get curious about what you'd do differently on a second attempt?"
+    },
+    {
+      "id": 15,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "You try out for a team or role and don't make the cut. How likely are you to see it as a normal part of learning something hard?"
+    },
+    {
+      "id": 16,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "Your business idea flops after months of effort. How likely are you to treat it as useful information about what to adjust next time?"
+    },
+    {
+      "id": 17,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "Your business idea flops after months of effort. How likely are you to look for the specific lesson hidden in what went wrong?"
+    },
+    {
+      "id": 18,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "Your business idea flops after months of effort. How likely are you to remind yourself that this one result doesn't define your ability?"
+    },
+    {
+      "id": 19,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "Your business idea flops after months of effort. How likely are you to get curious about what you'd do differently on a second attempt?"
+    },
+    {
+      "id": 20,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "Your business idea flops after months of effort. How likely are you to see it as a normal part of learning something hard?"
+    },
+    {
+      "id": 21,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "You bomb a presentation in front of people you wanted to impress. How likely are you to treat it as useful information about what to adjust next time?"
+    },
+    {
+      "id": 22,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "You bomb a presentation in front of people you wanted to impress. How likely are you to look for the specific lesson hidden in what went wrong?"
+    },
+    {
+      "id": 23,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "You bomb a presentation in front of people you wanted to impress. How likely are you to remind yourself that this one result doesn't define your ability?"
+    },
+    {
+      "id": 24,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "You bomb a presentation in front of people you wanted to impress. How likely are you to get curious about what you'd do differently on a second attempt?"
+    },
+    {
+      "id": 25,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "You bomb a presentation in front of people you wanted to impress. How likely are you to see it as a normal part of learning something hard?"
+    },
+    {
+      "id": 26,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "You miss a deadline because your approach didn't work. How likely are you to treat it as useful information about what to adjust next time?"
+    },
+    {
+      "id": 27,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "You miss a deadline because your approach didn't work. How likely are you to look for the specific lesson hidden in what went wrong?"
+    },
+    {
+      "id": 28,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "You miss a deadline because your approach didn't work. How likely are you to remind yourself that this one result doesn't define your ability?"
+    },
+    {
+      "id": 29,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "You miss a deadline because your approach didn't work. How likely are you to get curious about what you'd do differently on a second attempt?"
+    },
+    {
+      "id": 30,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "You miss a deadline because your approach didn't work. How likely are you to see it as a normal part of learning something hard?"
+    },
+    {
+      "id": 31,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "A recipe you attempted turns out inedible after multiple tries. How likely are you to treat it as useful information about what to adjust next time?"
+    },
+    {
+      "id": 32,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "A recipe you attempted turns out inedible after multiple tries. How likely are you to look for the specific lesson hidden in what went wrong?"
+    },
+    {
+      "id": 33,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "A recipe you attempted turns out inedible after multiple tries. How likely are you to remind yourself that this one result doesn't define your ability?"
+    },
+    {
+      "id": 34,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "A recipe you attempted turns out inedible after multiple tries. How likely are you to get curious about what you'd do differently on a second attempt?"
+    },
+    {
+      "id": 35,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "A recipe you attempted turns out inedible after multiple tries. How likely are you to see it as a normal part of learning something hard?"
+    },
+    {
+      "id": 36,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "You lose a competition you trained hard for. How likely are you to treat it as useful information about what to adjust next time?"
+    },
+    {
+      "id": 37,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "You lose a competition you trained hard for. How likely are you to look for the specific lesson hidden in what went wrong?"
+    },
+    {
+      "id": 38,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "You lose a competition you trained hard for. How likely are you to remind yourself that this one result doesn't define your ability?"
+    },
+    {
+      "id": 39,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "You lose a competition you trained hard for. How likely are you to get curious about what you'd do differently on a second attempt?"
+    },
+    {
+      "id": 40,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "You lose a competition you trained hard for. How likely are you to see it as a normal part of learning something hard?"
+    },
+    {
+      "id": 41,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "Your first attempt at a new skill ends in an embarrassing mistake. How likely are you to treat it as useful information about what to adjust next time?"
+    },
+    {
+      "id": 42,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "Your first attempt at a new skill ends in an embarrassing mistake. How likely are you to look for the specific lesson hidden in what went wrong?"
+    },
+    {
+      "id": 43,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "Your first attempt at a new skill ends in an embarrassing mistake. How likely are you to remind yourself that this one result doesn't define your ability?"
+    },
+    {
+      "id": 44,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "Your first attempt at a new skill ends in an embarrassing mistake. How likely are you to get curious about what you'd do differently on a second attempt?"
+    },
+    {
+      "id": 45,
+      "category": "failure_response",
+      "reverse": false,
+      "text": "Your first attempt at a new skill ends in an embarrassing mistake. How likely are you to see it as a normal part of learning something hard?"
+    },
+    {
+      "id": 46,
+      "category": "failure_response",
+      "reverse": true,
+      "text": "You fail at something on your first try. How likely are you to decide you're simply not talented enough and stop trying?"
+    },
+    {
+      "id": 47,
+      "category": "failure_response",
+      "reverse": true,
+      "text": "A plan you were proud of collapses publicly. How likely are you to avoid that activity altogether so you don't have to feel that way again?"
+    },
+    {
+      "id": 48,
+      "category": "failure_response",
+      "reverse": true,
+      "text": "You get a much lower grade than you expected. How likely are you to conclude that failing this badly means you should quit for good?"
+    },
+    {
+      "id": 49,
+      "category": "failure_response",
+      "reverse": true,
+      "text": "An attempt to learn something new falls flat immediately. How likely are you to assume the outcome proves you were never cut out for it?"
+    },
+    {
+      "id": 50,
+      "category": "failure_response",
+      "reverse": true,
+      "text": "You don't succeed at a goal you set for yourself. How likely are you to let the setback convince you it isn't worth attempting again?"
+    },
+    {
+      "id": 51,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "Your manager gives you detailed critical feedback on a report you were proud of. How likely are you to listen fully before deciding how you feel about it?"
+    },
+    {
+      "id": 52,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "Your manager gives you detailed critical feedback on a report you were proud of. How likely are you to look for the one or two points that could actually help you improve?"
+    },
+    {
+      "id": 53,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "Your manager gives you detailed critical feedback on a report you were proud of. How likely are you to thank them and ask a follow-up question to understand more?"
+    },
+    {
+      "id": 54,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "Your manager gives you detailed critical feedback on a report you were proud of. How likely are you to separate the criticism of your work from criticism of you as a person?"
+    },
+    {
+      "id": 55,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "Your manager gives you detailed critical feedback on a report you were proud of. How likely are you to use the feedback to revise your approach right away?"
+    },
+    {
+      "id": 56,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "A friend points out a flaw in a plan you've been excited about. How likely are you to listen fully before deciding how you feel about it?"
+    },
+    {
+      "id": 57,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "A friend points out a flaw in a plan you've been excited about. How likely are you to look for the one or two points that could actually help you improve?"
+    },
+    {
+      "id": 58,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "A friend points out a flaw in a plan you've been excited about. How likely are you to thank them and ask a follow-up question to understand more?"
+    },
+    {
+      "id": 59,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "A friend points out a flaw in a plan you've been excited about. How likely are you to separate the criticism of your work from criticism of you as a person?"
+    },
+    {
+      "id": 60,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "A friend points out a flaw in a plan you've been excited about. How likely are you to use the feedback to revise your approach right away?"
+    },
+    {
+      "id": 61,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "A teacher marks up your essay with many corrections. How likely are you to listen fully before deciding how you feel about it?"
+    },
+    {
+      "id": 62,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "A teacher marks up your essay with many corrections. How likely are you to look for the one or two points that could actually help you improve?"
+    },
+    {
+      "id": 63,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "A teacher marks up your essay with many corrections. How likely are you to thank them and ask a follow-up question to understand more?"
+    },
+    {
+      "id": 64,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "A teacher marks up your essay with many corrections. How likely are you to separate the criticism of your work from criticism of you as a person?"
+    },
+    {
+      "id": 65,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "A teacher marks up your essay with many corrections. How likely are you to use the feedback to revise your approach right away?"
+    },
+    {
+      "id": 66,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "A coworker suggests a completely different way to do your job. How likely are you to listen fully before deciding how you feel about it?"
+    },
+    {
+      "id": 67,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "A coworker suggests a completely different way to do your job. How likely are you to look for the one or two points that could actually help you improve?"
+    },
+    {
+      "id": 68,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "A coworker suggests a completely different way to do your job. How likely are you to thank them and ask a follow-up question to understand more?"
+    },
+    {
+      "id": 69,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "A coworker suggests a completely different way to do your job. How likely are you to separate the criticism of your work from criticism of you as a person?"
+    },
+    {
+      "id": 70,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "A coworker suggests a completely different way to do your job. How likely are you to use the feedback to revise your approach right away?"
+    },
+    {
+      "id": 71,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "Someone reviews your work and focuses mostly on what needs fixing. How likely are you to listen fully before deciding how you feel about it?"
+    },
+    {
+      "id": 72,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "Someone reviews your work and focuses mostly on what needs fixing. How likely are you to look for the one or two points that could actually help you improve?"
+    },
+    {
+      "id": 73,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "Someone reviews your work and focuses mostly on what needs fixing. How likely are you to thank them and ask a follow-up question to understand more?"
+    },
+    {
+      "id": 74,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "Someone reviews your work and focuses mostly on what needs fixing. How likely are you to separate the criticism of your work from criticism of you as a person?"
+    },
+    {
+      "id": 75,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "Someone reviews your work and focuses mostly on what needs fixing. How likely are you to use the feedback to revise your approach right away?"
+    },
+    {
+      "id": 76,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "You receive a performance review that's more critical than you expected. How likely are you to listen fully before deciding how you feel about it?"
+    },
+    {
+      "id": 77,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "You receive a performance review that's more critical than you expected. How likely are you to look for the one or two points that could actually help you improve?"
+    },
+    {
+      "id": 78,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "You receive a performance review that's more critical than you expected. How likely are you to thank them and ask a follow-up question to understand more?"
+    },
+    {
+      "id": 79,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "You receive a performance review that's more critical than you expected. How likely are you to separate the criticism of your work from criticism of you as a person?"
+    },
+    {
+      "id": 80,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "You receive a performance review that's more critical than you expected. How likely are you to use the feedback to revise your approach right away?"
+    },
+    {
+      "id": 81,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "A mentor tells you your approach to a problem isn't working. How likely are you to listen fully before deciding how you feel about it?"
+    },
+    {
+      "id": 82,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "A mentor tells you your approach to a problem isn't working. How likely are you to look for the one or two points that could actually help you improve?"
+    },
+    {
+      "id": 83,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "A mentor tells you your approach to a problem isn't working. How likely are you to thank them and ask a follow-up question to understand more?"
+    },
+    {
+      "id": 84,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "A mentor tells you your approach to a problem isn't working. How likely are you to separate the criticism of your work from criticism of you as a person?"
+    },
+    {
+      "id": 85,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "A mentor tells you your approach to a problem isn't working. How likely are you to use the feedback to revise your approach right away?"
+    },
+    {
+      "id": 86,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "A client sends back your work with a long list of changes. How likely are you to listen fully before deciding how you feel about it?"
+    },
+    {
+      "id": 87,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "A client sends back your work with a long list of changes. How likely are you to look for the one or two points that could actually help you improve?"
+    },
+    {
+      "id": 88,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "A client sends back your work with a long list of changes. How likely are you to thank them and ask a follow-up question to understand more?"
+    },
+    {
+      "id": 89,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "A client sends back your work with a long list of changes. How likely are you to separate the criticism of your work from criticism of you as a person?"
+    },
+    {
+      "id": 90,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "A client sends back your work with a long list of changes. How likely are you to use the feedback to revise your approach right away?"
+    },
+    {
+      "id": 91,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "Someone younger or less experienced than you offers a correction. How likely are you to listen fully before deciding how you feel about it?"
+    },
+    {
+      "id": 92,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "Someone younger or less experienced than you offers a correction. How likely are you to look for the one or two points that could actually help you improve?"
+    },
+    {
+      "id": 93,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "Someone younger or less experienced than you offers a correction. How likely are you to thank them and ask a follow-up question to understand more?"
+    },
+    {
+      "id": 94,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "Someone younger or less experienced than you offers a correction. How likely are you to separate the criticism of your work from criticism of you as a person?"
+    },
+    {
+      "id": 95,
+      "category": "feedback_reception",
+      "reverse": false,
+      "text": "Someone younger or less experienced than you offers a correction. How likely are you to use the feedback to revise your approach right away?"
+    },
+    {
+      "id": 96,
+      "category": "feedback_reception",
+      "reverse": true,
+      "text": "Someone offers you unsolicited feedback on your work. How likely are you to get defensive and explain why the feedback is wrong before really considering it?"
+    },
+    {
+      "id": 97,
+      "category": "feedback_reception",
+      "reverse": true,
+      "text": "A review of your project includes several suggested changes. How likely are you to assume the person is just being overly critical or doesn't understand your work?"
+    },
+    {
+      "id": 98,
+      "category": "feedback_reception",
+      "reverse": true,
+      "text": "You're told your first draft needs significant revision. How likely are you to feel like your abilities are being attacked and shut down?"
+    },
+    {
+      "id": 99,
+      "category": "feedback_reception",
+      "reverse": true,
+      "text": "A colleague questions a decision you made. How likely are you to dismiss the feedback because you already believe you know best?"
+    },
+    {
+      "id": 100,
+      "category": "feedback_reception",
+      "reverse": true,
+      "text": "Your work gets more corrections than you expected. How likely are you to avoid asking that person for input again?"
+    },
+    {
+      "id": 101,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "You're several hours into a difficult task with no progress in sight. How likely are you to keep going, trusting that consistent effort will pay off?"
+    },
+    {
+      "id": 102,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "You're several hours into a difficult task with no progress in sight. How likely are you to treat the extra hours as the price of getting genuinely good?"
+    },
+    {
+      "id": 103,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "You're several hours into a difficult task with no progress in sight. How likely are you to push through the tiredness because you know effort compounds over time?"
+    },
+    {
+      "id": 104,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "You're several hours into a difficult task with no progress in sight. How likely are you to adjust your method and keep working rather than assume you've hit a ceiling?"
+    },
+    {
+      "id": 105,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "You're several hours into a difficult task with no progress in sight. How likely are you to remind yourself that slow progress is still progress?"
+    },
+    {
+      "id": 106,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "A skill you're building is improving much slower than you hoped. How likely are you to keep going, trusting that consistent effort will pay off?"
+    },
+    {
+      "id": 107,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "A skill you're building is improving much slower than you hoped. How likely are you to treat the extra hours as the price of getting genuinely good?"
+    },
+    {
+      "id": 108,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "A skill you're building is improving much slower than you hoped. How likely are you to push through the tiredness because you know effort compounds over time?"
+    },
+    {
+      "id": 109,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "A skill you're building is improving much slower than you hoped. How likely are you to adjust your method and keep working rather than assume you've hit a ceiling?"
+    },
+    {
+      "id": 110,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "A skill you're building is improving much slower than you hoped. How likely are you to remind yourself that slow progress is still progress?"
+    },
+    {
+      "id": 111,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "You've practiced something for weeks and still aren't 'good' at it. How likely are you to keep going, trusting that consistent effort will pay off?"
+    },
+    {
+      "id": 112,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "You've practiced something for weeks and still aren't 'good' at it. How likely are you to treat the extra hours as the price of getting genuinely good?"
+    },
+    {
+      "id": 113,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "You've practiced something for weeks and still aren't 'good' at it. How likely are you to push through the tiredness because you know effort compounds over time?"
+    },
+    {
+      "id": 114,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "You've practiced something for weeks and still aren't 'good' at it. How likely are you to adjust your method and keep working rather than assume you've hit a ceiling?"
+    },
+    {
+      "id": 115,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "You've practiced something for weeks and still aren't 'good' at it. How likely are you to remind yourself that slow progress is still progress?"
+    },
+    {
+      "id": 116,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "A task requires far more repetition and drilling than you expected. How likely are you to keep going, trusting that consistent effort will pay off?"
+    },
+    {
+      "id": 117,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "A task requires far more repetition and drilling than you expected. How likely are you to treat the extra hours as the price of getting genuinely good?"
+    },
+    {
+      "id": 118,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "A task requires far more repetition and drilling than you expected. How likely are you to push through the tiredness because you know effort compounds over time?"
+    },
+    {
+      "id": 119,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "A task requires far more repetition and drilling than you expected. How likely are you to adjust your method and keep working rather than assume you've hit a ceiling?"
+    },
+    {
+      "id": 120,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "A task requires far more repetition and drilling than you expected. How likely are you to remind yourself that slow progress is still progress?"
+    },
+    {
+      "id": 121,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "You notice someone else picked up a skill faster than you. How likely are you to keep going, trusting that consistent effort will pay off?"
+    },
+    {
+      "id": 122,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "You notice someone else picked up a skill faster than you. How likely are you to treat the extra hours as the price of getting genuinely good?"
+    },
+    {
+      "id": 123,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "You notice someone else picked up a skill faster than you. How likely are you to push through the tiredness because you know effort compounds over time?"
+    },
+    {
+      "id": 124,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "You notice someone else picked up a skill faster than you. How likely are you to adjust your method and keep working rather than assume you've hit a ceiling?"
+    },
+    {
+      "id": 125,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "You notice someone else picked up a skill faster than you. How likely are you to remind yourself that slow progress is still progress?"
+    },
+    {
+      "id": 126,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "Progress on a long project has stalled for days. How likely are you to keep going, trusting that consistent effort will pay off?"
+    },
+    {
+      "id": 127,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "Progress on a long project has stalled for days. How likely are you to treat the extra hours as the price of getting genuinely good?"
+    },
+    {
+      "id": 128,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "Progress on a long project has stalled for days. How likely are you to push through the tiredness because you know effort compounds over time?"
+    },
+    {
+      "id": 129,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "Progress on a long project has stalled for days. How likely are you to adjust your method and keep working rather than assume you've hit a ceiling?"
+    },
+    {
+      "id": 130,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "Progress on a long project has stalled for days. How likely are you to remind yourself that slow progress is still progress?"
+    },
+    {
+      "id": 131,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "You're tired and tempted to stop practicing early. How likely are you to keep going, trusting that consistent effort will pay off?"
+    },
+    {
+      "id": 132,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "You're tired and tempted to stop practicing early. How likely are you to treat the extra hours as the price of getting genuinely good?"
+    },
+    {
+      "id": 133,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "You're tired and tempted to stop practicing early. How likely are you to push through the tiredness because you know effort compounds over time?"
+    },
+    {
+      "id": 134,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "You're tired and tempted to stop practicing early. How likely are you to adjust your method and keep working rather than assume you've hit a ceiling?"
+    },
+    {
+      "id": 135,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "You're tired and tempted to stop practicing early. How likely are you to remind yourself that slow progress is still progress?"
+    },
+    {
+      "id": 136,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "A difficult subject takes you much longer to understand than easier ones did. How likely are you to keep going, trusting that consistent effort will pay off?"
+    },
+    {
+      "id": 137,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "A difficult subject takes you much longer to understand than easier ones did. How likely are you to treat the extra hours as the price of getting genuinely good?"
+    },
+    {
+      "id": 138,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "A difficult subject takes you much longer to understand than easier ones did. How likely are you to push through the tiredness because you know effort compounds over time?"
+    },
+    {
+      "id": 139,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "A difficult subject takes you much longer to understand than easier ones did. How likely are you to adjust your method and keep working rather than assume you've hit a ceiling?"
+    },
+    {
+      "id": 140,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "A difficult subject takes you much longer to understand than easier ones did. How likely are you to remind yourself that slow progress is still progress?"
+    },
+    {
+      "id": 141,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "You've hit a plateau after early quick improvement. How likely are you to keep going, trusting that consistent effort will pay off?"
+    },
+    {
+      "id": 142,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "You've hit a plateau after early quick improvement. How likely are you to treat the extra hours as the price of getting genuinely good?"
+    },
+    {
+      "id": 143,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "You've hit a plateau after early quick improvement. How likely are you to push through the tiredness because you know effort compounds over time?"
+    },
+    {
+      "id": 144,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "You've hit a plateau after early quick improvement. How likely are you to adjust your method and keep working rather than assume you've hit a ceiling?"
+    },
+    {
+      "id": 145,
+      "category": "effort_beliefs",
+      "reverse": false,
+      "text": "You've hit a plateau after early quick improvement. How likely are you to remind yourself that slow progress is still progress?"
+    },
+    {
+      "id": 146,
+      "category": "effort_beliefs",
+      "reverse": true,
+      "text": "A new skill isn't clicking as quickly as you expected. How likely are you to conclude that needing this much effort means you don't have natural talent for it?"
+    },
+    {
+      "id": 147,
+      "category": "effort_beliefs",
+      "reverse": true,
+      "text": "You have to put in real effort to understand something. How likely are you to decide that if it were meant for you, it would come easily?"
+    },
+    {
+      "id": 148,
+      "category": "effort_beliefs",
+      "reverse": true,
+      "text": "Something you're learning requires repeated practice to improve. How likely are you to give up early because the effort required seems like a bad sign?"
+    },
+    {
+      "id": 149,
+      "category": "effort_beliefs",
+      "reverse": true,
+      "text": "Progress on a goal is slower than you'd like. How likely are you to assume that struggling this much means you should switch to something else?"
+    },
+    {
+      "id": 150,
+      "category": "effort_beliefs",
+      "reverse": true,
+      "text": "You realize mastering something will take sustained work. How likely are you to feel like putting in visible effort makes you look less capable?"
+    },
+    {
+      "id": 151,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "You're offered a task that's clearly above your current skill level. How likely are you to lean toward the harder option because of what you'd learn?"
+    },
+    {
+      "id": 152,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "You're offered a task that's clearly above your current skill level. How likely are you to say yes, even knowing you might struggle at first?"
+    },
+    {
+      "id": 153,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "You're offered a task that's clearly above your current skill level. How likely are you to see the difficulty as the main reason it's worth doing?"
+    },
+    {
+      "id": 154,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "You're offered a task that's clearly above your current skill level. How likely are you to get genuinely excited about the stretch instead of anxious about it?"
+    },
+    {
+      "id": 155,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "You're offered a task that's clearly above your current skill level. How likely are you to choose the option that will grow your abilities the most?"
+    },
+    {
+      "id": 156,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "You can pick between an easy assignment and a much harder one. How likely are you to lean toward the harder option because of what you'd learn?"
+    },
+    {
+      "id": 157,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "You can pick between an easy assignment and a much harder one. How likely are you to say yes, even knowing you might struggle at first?"
+    },
+    {
+      "id": 158,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "You can pick between an easy assignment and a much harder one. How likely are you to see the difficulty as the main reason it's worth doing?"
+    },
+    {
+      "id": 159,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "You can pick between an easy assignment and a much harder one. How likely are you to get genuinely excited about the stretch instead of anxious about it?"
+    },
+    {
+      "id": 160,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "You can pick between an easy assignment and a much harder one. How likely are you to choose the option that will grow your abilities the most?"
+    },
+    {
+      "id": 161,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "A new opportunity would stretch abilities you haven't fully developed yet. How likely are you to lean toward the harder option because of what you'd learn?"
+    },
+    {
+      "id": 162,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "A new opportunity would stretch abilities you haven't fully developed yet. How likely are you to say yes, even knowing you might struggle at first?"
+    },
+    {
+      "id": 163,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "A new opportunity would stretch abilities you haven't fully developed yet. How likely are you to see the difficulty as the main reason it's worth doing?"
+    },
+    {
+      "id": 164,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "A new opportunity would stretch abilities you haven't fully developed yet. How likely are you to get genuinely excited about the stretch instead of anxious about it?"
+    },
+    {
+      "id": 165,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "A new opportunity would stretch abilities you haven't fully developed yet. How likely are you to choose the option that will grow your abilities the most?"
+    },
+    {
+      "id": 166,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "You're invited to take on a role you've never done before. How likely are you to lean toward the harder option because of what you'd learn?"
+    },
+    {
+      "id": 167,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "You're invited to take on a role you've never done before. How likely are you to say yes, even knowing you might struggle at first?"
+    },
+    {
+      "id": 168,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "You're invited to take on a role you've never done before. How likely are you to see the difficulty as the main reason it's worth doing?"
+    },
+    {
+      "id": 169,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "You're invited to take on a role you've never done before. How likely are you to get genuinely excited about the stretch instead of anxious about it?"
+    },
+    {
+      "id": 170,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "You're invited to take on a role you've never done before. How likely are you to choose the option that will grow your abilities the most?"
+    },
+    {
+      "id": 171,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "A course or class is available that's known to be very demanding. How likely are you to lean toward the harder option because of what you'd learn?"
+    },
+    {
+      "id": 172,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "A course or class is available that's known to be very demanding. How likely are you to say yes, even knowing you might struggle at first?"
+    },
+    {
+      "id": 173,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "A course or class is available that's known to be very demanding. How likely are you to see the difficulty as the main reason it's worth doing?"
+    },
+    {
+      "id": 174,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "A course or class is available that's known to be very demanding. How likely are you to get genuinely excited about the stretch instead of anxious about it?"
+    },
+    {
+      "id": 175,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "A course or class is available that's known to be very demanding. How likely are you to choose the option that will grow your abilities the most?"
+    },
+    {
+      "id": 176,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "You have the option to redo something the easy, familiar way or try a harder new way. How likely are you to lean toward the harder option because of what you'd learn?"
+    },
+    {
+      "id": 177,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "You have the option to redo something the easy, familiar way or try a harder new way. How likely are you to say yes, even knowing you might struggle at first?"
+    },
+    {
+      "id": 178,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "You have the option to redo something the easy, familiar way or try a harder new way. How likely are you to see the difficulty as the main reason it's worth doing?"
+    },
+    {
+      "id": 179,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "You have the option to redo something the easy, familiar way or try a harder new way. How likely are you to get genuinely excited about the stretch instead of anxious about it?"
+    },
+    {
+      "id": 180,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "You have the option to redo something the easy, familiar way or try a harder new way. How likely are you to choose the option that will grow your abilities the most?"
+    },
+    {
+      "id": 181,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "A project would require learning several new skills at once. How likely are you to lean toward the harder option because of what you'd learn?"
+    },
+    {
+      "id": 182,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "A project would require learning several new skills at once. How likely are you to say yes, even knowing you might struggle at first?"
+    },
+    {
+      "id": 183,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "A project would require learning several new skills at once. How likely are you to see the difficulty as the main reason it's worth doing?"
+    },
+    {
+      "id": 184,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "A project would require learning several new skills at once. How likely are you to get genuinely excited about the stretch instead of anxious about it?"
+    },
+    {
+      "id": 185,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "A project would require learning several new skills at once. How likely are you to choose the option that will grow your abilities the most?"
+    },
+    {
+      "id": 186,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "You could stick with what's comfortable or volunteer for something uncertain. How likely are you to lean toward the harder option because of what you'd learn?"
+    },
+    {
+      "id": 187,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "You could stick with what's comfortable or volunteer for something uncertain. How likely are you to say yes, even knowing you might struggle at first?"
+    },
+    {
+      "id": 188,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "You could stick with what's comfortable or volunteer for something uncertain. How likely are you to see the difficulty as the main reason it's worth doing?"
+    },
+    {
+      "id": 189,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "You could stick with what's comfortable or volunteer for something uncertain. How likely are you to get genuinely excited about the stretch instead of anxious about it?"
+    },
+    {
+      "id": 190,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "You could stick with what's comfortable or volunteer for something uncertain. How likely are you to choose the option that will grow your abilities the most?"
+    },
+    {
+      "id": 191,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "An unfamiliar problem is placed in front of you with no clear solution. How likely are you to lean toward the harder option because of what you'd learn?"
+    },
+    {
+      "id": 192,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "An unfamiliar problem is placed in front of you with no clear solution. How likely are you to say yes, even knowing you might struggle at first?"
+    },
+    {
+      "id": 193,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "An unfamiliar problem is placed in front of you with no clear solution. How likely are you to see the difficulty as the main reason it's worth doing?"
+    },
+    {
+      "id": 194,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "An unfamiliar problem is placed in front of you with no clear solution. How likely are you to get genuinely excited about the stretch instead of anxious about it?"
+    },
+    {
+      "id": 195,
+      "category": "challenge_seeking",
+      "reverse": false,
+      "text": "An unfamiliar problem is placed in front of you with no clear solution. How likely are you to choose the option that will grow your abilities the most?"
+    },
+    {
+      "id": 196,
+      "category": "challenge_seeking",
+      "reverse": true,
+      "text": "You're deciding between something easy and something challenging. How likely are you to pick the easier option so you can be sure to succeed?"
+    },
+    {
+      "id": 197,
+      "category": "challenge_seeking",
+      "reverse": true,
+      "text": "A task is offered that would push you outside your comfort zone. How likely are you to avoid the challenge because looking incompetent feels too risky?"
+    },
+    {
+      "id": 198,
+      "category": "challenge_seeking",
+      "reverse": true,
+      "text": "You could attempt something you're not sure you can do. How likely are you to stick to tasks you already know you're good at?"
+    },
+    {
+      "id": 199,
+      "category": "challenge_seeking",
+      "reverse": true,
+      "text": "An opportunity involves real risk of struggling in front of others. How likely are you to turn down the opportunity rather than risk struggling publicly?"
+    },
+    {
+      "id": 200,
+      "category": "challenge_seeking",
+      "reverse": true,
+      "text": "A new challenge would require you to be a beginner again. How likely are you to let the fear of not being good enough make the choice for you?"
+    },
+    {
+      "id": 201,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "Someone says a certain skill is something 'you either have or you don't.' How likely are you to believe that consistent practice can meaningfully close the gap?"
+    },
+    {
+      "id": 202,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "Someone says a certain skill is something 'you either have or you don't.' How likely are you to assume that most of the difference comes down to experience and effort, not fixed traits?"
+    },
+    {
+      "id": 203,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "Someone says a certain skill is something 'you either have or you don't.' How likely are you to believe your own abilities can still grow substantially with the right effort?"
+    },
+    {
+      "id": 204,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "Someone says a certain skill is something 'you either have or you don't.' How likely are you to push back on the idea that ability is fixed at birth?"
+    },
+    {
+      "id": 205,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "Someone says a certain skill is something 'you either have or you don't.' How likely are you to focus on what you did or didn't practice rather than 'natural' ability?"
+    },
+    {
+      "id": 206,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "You compare your natural aptitude for something to a peer's. How likely are you to believe that consistent practice can meaningfully close the gap?"
+    },
+    {
+      "id": 207,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "You compare your natural aptitude for something to a peer's. How likely are you to assume that most of the difference comes down to experience and effort, not fixed traits?"
+    },
+    {
+      "id": 208,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "You compare your natural aptitude for something to a peer's. How likely are you to believe your own abilities can still grow substantially with the right effort?"
+    },
+    {
+      "id": 209,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "You compare your natural aptitude for something to a peer's. How likely are you to push back on the idea that ability is fixed at birth?"
+    },
+    {
+      "id": 210,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "You compare your natural aptitude for something to a peer's. How likely are you to focus on what you did or didn't practice rather than 'natural' ability?"
+    },
+    {
+      "id": 211,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "You're trying to figure out why one person is better at something than another. How likely are you to believe that consistent practice can meaningfully close the gap?"
+    },
+    {
+      "id": 212,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "You're trying to figure out why one person is better at something than another. How likely are you to assume that most of the difference comes down to experience and effort, not fixed traits?"
+    },
+    {
+      "id": 213,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "You're trying to figure out why one person is better at something than another. How likely are you to believe your own abilities can still grow substantially with the right effort?"
+    },
+    {
+      "id": 214,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "You're trying to figure out why one person is better at something than another. How likely are you to push back on the idea that ability is fixed at birth?"
+    },
+    {
+      "id": 215,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "You're trying to figure out why one person is better at something than another. How likely are you to focus on what you did or didn't practice rather than 'natural' ability?"
+    },
+    {
+      "id": 216,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "A conversation turns to whether intelligence can really change over time. How likely are you to believe that consistent practice can meaningfully close the gap?"
+    },
+    {
+      "id": 217,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "A conversation turns to whether intelligence can really change over time. How likely are you to assume that most of the difference comes down to experience and effort, not fixed traits?"
+    },
+    {
+      "id": 218,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "A conversation turns to whether intelligence can really change over time. How likely are you to believe your own abilities can still grow substantially with the right effort?"
+    },
+    {
+      "id": 219,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "A conversation turns to whether intelligence can really change over time. How likely are you to push back on the idea that ability is fixed at birth?"
+    },
+    {
+      "id": 220,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "A conversation turns to whether intelligence can really change over time. How likely are you to focus on what you did or didn't practice rather than 'natural' ability?"
+    },
+    {
+      "id": 221,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "You reflect on why you're better at some things than others. How likely are you to believe that consistent practice can meaningfully close the gap?"
+    },
+    {
+      "id": 222,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "You reflect on why you're better at some things than others. How likely are you to assume that most of the difference comes down to experience and effort, not fixed traits?"
+    },
+    {
+      "id": 223,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "You reflect on why you're better at some things than others. How likely are you to believe your own abilities can still grow substantially with the right effort?"
+    },
+    {
+      "id": 224,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "You reflect on why you're better at some things than others. How likely are you to push back on the idea that ability is fixed at birth?"
+    },
+    {
+      "id": 225,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "You reflect on why you're better at some things than others. How likely are you to focus on what you did or didn't practice rather than 'natural' ability?"
+    },
+    {
+      "id": 226,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "Someone describes talent as fixed from birth. How likely are you to believe that consistent practice can meaningfully close the gap?"
+    },
+    {
+      "id": 227,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "Someone describes talent as fixed from birth. How likely are you to assume that most of the difference comes down to experience and effort, not fixed traits?"
+    },
+    {
+      "id": 228,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "Someone describes talent as fixed from birth. How likely are you to believe your own abilities can still grow substantially with the right effort?"
+    },
+    {
+      "id": 229,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "Someone describes talent as fixed from birth. How likely are you to push back on the idea that ability is fixed at birth?"
+    },
+    {
+      "id": 230,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "Someone describes talent as fixed from birth. How likely are you to focus on what you did or didn't practice rather than 'natural' ability?"
+    },
+    {
+      "id": 231,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "You think about what separates experts from beginners in a field. How likely are you to believe that consistent practice can meaningfully close the gap?"
+    },
+    {
+      "id": 232,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "You think about what separates experts from beginners in a field. How likely are you to assume that most of the difference comes down to experience and effort, not fixed traits?"
+    },
+    {
+      "id": 233,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "You think about what separates experts from beginners in a field. How likely are you to believe your own abilities can still grow substantially with the right effort?"
+    },
+    {
+      "id": 234,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "You think about what separates experts from beginners in a field. How likely are you to push back on the idea that ability is fixed at birth?"
+    },
+    {
+      "id": 235,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "You think about what separates experts from beginners in a field. How likely are you to focus on what you did or didn't practice rather than 'natural' ability?"
+    },
+    {
+      "id": 236,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "A discussion raises whether personality traits can be developed. How likely are you to believe that consistent practice can meaningfully close the gap?"
+    },
+    {
+      "id": 237,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "A discussion raises whether personality traits can be developed. How likely are you to assume that most of the difference comes down to experience and effort, not fixed traits?"
+    },
+    {
+      "id": 238,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "A discussion raises whether personality traits can be developed. How likely are you to believe your own abilities can still grow substantially with the right effort?"
+    },
+    {
+      "id": 239,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "A discussion raises whether personality traits can be developed. How likely are you to push back on the idea that ability is fixed at birth?"
+    },
+    {
+      "id": 240,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "A discussion raises whether personality traits can be developed. How likely are you to focus on what you did or didn't practice rather than 'natural' ability?"
+    },
+    {
+      "id": 241,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "You consider what determined your current level of skill in something. How likely are you to believe that consistent practice can meaningfully close the gap?"
+    },
+    {
+      "id": 242,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "You consider what determined your current level of skill in something. How likely are you to assume that most of the difference comes down to experience and effort, not fixed traits?"
+    },
+    {
+      "id": 243,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "You consider what determined your current level of skill in something. How likely are you to believe your own abilities can still grow substantially with the right effort?"
+    },
+    {
+      "id": 244,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "You consider what determined your current level of skill in something. How likely are you to push back on the idea that ability is fixed at birth?"
+    },
+    {
+      "id": 245,
+      "category": "ability_beliefs",
+      "reverse": false,
+      "text": "You consider what determined your current level of skill in something. How likely are you to focus on what you did or didn't practice rather than 'natural' ability?"
+    },
+    {
+      "id": 246,
+      "category": "ability_beliefs",
+      "reverse": true,
+      "text": "You think about why someone is better than you at something. How likely are you to conclude that they were just born more talented and leave it at that?"
+    },
+    {
+      "id": 247,
+      "category": "ability_beliefs",
+      "reverse": true,
+      "text": "A skill gap between you and someone else becomes obvious. How likely are you to believe your current level of skill is basically fixed for life?"
+    },
+    {
+      "id": 248,
+      "category": "ability_beliefs",
+      "reverse": true,
+      "text": "You consider whether your abilities in an area could still change. How likely are you to decide that some people are 'naturals' and others simply aren't?"
+    },
+    {
+      "id": 249,
+      "category": "ability_beliefs",
+      "reverse": true,
+      "text": "Someone attributes success mainly to natural talent. How likely are you to assume no amount of practice would change your weaker areas?"
+    },
+    {
+      "id": 250,
+      "category": "ability_beliefs",
+      "reverse": true,
+      "text": "You reflect on your own strengths and weaknesses. How likely are you to treat talent as something you either have or you don't?"
+    },
+    {
+      "id": 251,
+      "category": "resilience",
+      "reverse": false,
+      "text": "A setback knocks your confidence right before an important moment. How likely are you to give yourself a short recovery period and then get back to it?"
+    },
+    {
+      "id": 252,
+      "category": "resilience",
+      "reverse": false,
+      "text": "A setback knocks your confidence right before an important moment. How likely are you to remind yourself that this setback is temporary, not permanent?"
+    },
+    {
+      "id": 253,
+      "category": "resilience",
+      "reverse": false,
+      "text": "A setback knocks your confidence right before an important moment. How likely are you to look for what you can carry forward into the next attempt?"
+    },
+    {
+      "id": 254,
+      "category": "resilience",
+      "reverse": false,
+      "text": "A setback knocks your confidence right before an important moment. How likely are you to keep your long-term goal in view even while it stings?"
+    },
+    {
+      "id": 255,
+      "category": "resilience",
+      "reverse": false,
+      "text": "A setback knocks your confidence right before an important moment. How likely are you to treat the setback as one chapter, not the whole story?"
+    },
+    {
+      "id": 256,
+      "category": "resilience",
+      "reverse": false,
+      "text": "You're rejected from something you really wanted. How likely are you to give yourself a short recovery period and then get back to it?"
+    },
+    {
+      "id": 257,
+      "category": "resilience",
+      "reverse": false,
+      "text": "You're rejected from something you really wanted. How likely are you to remind yourself that this setback is temporary, not permanent?"
+    },
+    {
+      "id": 258,
+      "category": "resilience",
+      "reverse": false,
+      "text": "You're rejected from something you really wanted. How likely are you to look for what you can carry forward into the next attempt?"
+    },
+    {
+      "id": 259,
+      "category": "resilience",
+      "reverse": false,
+      "text": "You're rejected from something you really wanted. How likely are you to keep your long-term goal in view even while it stings?"
+    },
+    {
+      "id": 260,
+      "category": "resilience",
+      "reverse": false,
+      "text": "You're rejected from something you really wanted. How likely are you to treat the setback as one chapter, not the whole story?"
+    },
+    {
+      "id": 261,
+      "category": "resilience",
+      "reverse": false,
+      "text": "A string of small failures happens in the same week. How likely are you to give yourself a short recovery period and then get back to it?"
+    },
+    {
+      "id": 262,
+      "category": "resilience",
+      "reverse": false,
+      "text": "A string of small failures happens in the same week. How likely are you to remind yourself that this setback is temporary, not permanent?"
+    },
+    {
+      "id": 263,
+      "category": "resilience",
+      "reverse": false,
+      "text": "A string of small failures happens in the same week. How likely are you to look for what you can carry forward into the next attempt?"
+    },
+    {
+      "id": 264,
+      "category": "resilience",
+      "reverse": false,
+      "text": "A string of small failures happens in the same week. How likely are you to keep your long-term goal in view even while it stings?"
+    },
+    {
+      "id": 265,
+      "category": "resilience",
+      "reverse": false,
+      "text": "A string of small failures happens in the same week. How likely are you to treat the setback as one chapter, not the whole story?"
+    },
+    {
+      "id": 266,
+      "category": "resilience",
+      "reverse": false,
+      "text": "You have to start over after a major setback wipes out earlier progress. How likely are you to give yourself a short recovery period and then get back to it?"
+    },
+    {
+      "id": 267,
+      "category": "resilience",
+      "reverse": false,
+      "text": "You have to start over after a major setback wipes out earlier progress. How likely are you to remind yourself that this setback is temporary, not permanent?"
+    },
+    {
+      "id": 268,
+      "category": "resilience",
+      "reverse": false,
+      "text": "You have to start over after a major setback wipes out earlier progress. How likely are you to look for what you can carry forward into the next attempt?"
+    },
+    {
+      "id": 269,
+      "category": "resilience",
+      "reverse": false,
+      "text": "You have to start over after a major setback wipes out earlier progress. How likely are you to keep your long-term goal in view even while it stings?"
+    },
+    {
+      "id": 270,
+      "category": "resilience",
+      "reverse": false,
+      "text": "You have to start over after a major setback wipes out earlier progress. How likely are you to treat the setback as one chapter, not the whole story?"
+    },
+    {
+      "id": 271,
+      "category": "resilience",
+      "reverse": false,
+      "text": "Something you worked toward for a long time doesn't happen. How likely are you to give yourself a short recovery period and then get back to it?"
+    },
+    {
+      "id": 272,
+      "category": "resilience",
+      "reverse": false,
+      "text": "Something you worked toward for a long time doesn't happen. How likely are you to remind yourself that this setback is temporary, not permanent?"
+    },
+    {
+      "id": 273,
+      "category": "resilience",
+      "reverse": false,
+      "text": "Something you worked toward for a long time doesn't happen. How likely are you to look for what you can carry forward into the next attempt?"
+    },
+    {
+      "id": 274,
+      "category": "resilience",
+      "reverse": false,
+      "text": "Something you worked toward for a long time doesn't happen. How likely are you to keep your long-term goal in view even while it stings?"
+    },
+    {
+      "id": 275,
+      "category": "resilience",
+      "reverse": false,
+      "text": "Something you worked toward for a long time doesn't happen. How likely are you to treat the setback as one chapter, not the whole story?"
+    },
+    {
+      "id": 276,
+      "category": "resilience",
+      "reverse": false,
+      "text": "A hard week leaves you doubting whether you should continue at all. How likely are you to give yourself a short recovery period and then get back to it?"
+    },
+    {
+      "id": 277,
+      "category": "resilience",
+      "reverse": false,
+      "text": "A hard week leaves you doubting whether you should continue at all. How likely are you to remind yourself that this setback is temporary, not permanent?"
+    },
+    {
+      "id": 278,
+      "category": "resilience",
+      "reverse": false,
+      "text": "A hard week leaves you doubting whether you should continue at all. How likely are you to look for what you can carry forward into the next attempt?"
+    },
+    {
+      "id": 279,
+      "category": "resilience",
+      "reverse": false,
+      "text": "A hard week leaves you doubting whether you should continue at all. How likely are you to keep your long-term goal in view even while it stings?"
+    },
+    {
+      "id": 280,
+      "category": "resilience",
+      "reverse": false,
+      "text": "A hard week leaves you doubting whether you should continue at all. How likely are you to treat the setback as one chapter, not the whole story?"
+    },
+    {
+      "id": 281,
+      "category": "resilience",
+      "reverse": false,
+      "text": "You're recovering from a disappointing result that stung more than expected. How likely are you to give yourself a short recovery period and then get back to it?"
+    },
+    {
+      "id": 282,
+      "category": "resilience",
+      "reverse": false,
+      "text": "You're recovering from a disappointing result that stung more than expected. How likely are you to remind yourself that this setback is temporary, not permanent?"
+    },
+    {
+      "id": 283,
+      "category": "resilience",
+      "reverse": false,
+      "text": "You're recovering from a disappointing result that stung more than expected. How likely are you to look for what you can carry forward into the next attempt?"
+    },
+    {
+      "id": 284,
+      "category": "resilience",
+      "reverse": false,
+      "text": "You're recovering from a disappointing result that stung more than expected. How likely are you to keep your long-term goal in view even while it stings?"
+    },
+    {
+      "id": 285,
+      "category": "resilience",
+      "reverse": false,
+      "text": "You're recovering from a disappointing result that stung more than expected. How likely are you to treat the setback as one chapter, not the whole story?"
+    },
+    {
+      "id": 286,
+      "category": "resilience",
+      "reverse": false,
+      "text": "A goal takes a serious hit and needs to be reworked. How likely are you to give yourself a short recovery period and then get back to it?"
+    },
+    {
+      "id": 287,
+      "category": "resilience",
+      "reverse": false,
+      "text": "A goal takes a serious hit and needs to be reworked. How likely are you to remind yourself that this setback is temporary, not permanent?"
+    },
+    {
+      "id": 288,
+      "category": "resilience",
+      "reverse": false,
+      "text": "A goal takes a serious hit and needs to be reworked. How likely are you to look for what you can carry forward into the next attempt?"
+    },
+    {
+      "id": 289,
+      "category": "resilience",
+      "reverse": false,
+      "text": "A goal takes a serious hit and needs to be reworked. How likely are you to keep your long-term goal in view even while it stings?"
+    },
+    {
+      "id": 290,
+      "category": "resilience",
+      "reverse": false,
+      "text": "A goal takes a serious hit and needs to be reworked. How likely are you to treat the setback as one chapter, not the whole story?"
+    },
+    {
+      "id": 291,
+      "category": "resilience",
+      "reverse": false,
+      "text": "You face a setback right after finally building some momentum. How likely are you to give yourself a short recovery period and then get back to it?"
+    },
+    {
+      "id": 292,
+      "category": "resilience",
+      "reverse": false,
+      "text": "You face a setback right after finally building some momentum. How likely are you to remind yourself that this setback is temporary, not permanent?"
+    },
+    {
+      "id": 293,
+      "category": "resilience",
+      "reverse": false,
+      "text": "You face a setback right after finally building some momentum. How likely are you to look for what you can carry forward into the next attempt?"
+    },
+    {
+      "id": 294,
+      "category": "resilience",
+      "reverse": false,
+      "text": "You face a setback right after finally building some momentum. How likely are you to keep your long-term goal in view even while it stings?"
+    },
+    {
+      "id": 295,
+      "category": "resilience",
+      "reverse": false,
+      "text": "You face a setback right after finally building some momentum. How likely are you to treat the setback as one chapter, not the whole story?"
+    },
+    {
+      "id": 296,
+      "category": "resilience",
+      "reverse": true,
+      "text": "You experience a disappointing setback on something important to you. How likely are you to let the setback convince you the whole goal was a mistake?"
+    },
+    {
+      "id": 297,
+      "category": "resilience",
+      "reverse": true,
+      "text": "A goal you cared about doesn't work out. How likely are you to spiral into thinking that one bad result predicts everything ahead?"
+    },
+    {
+      "id": 298,
+      "category": "resilience",
+      "reverse": true,
+      "text": "You're rejected after putting in real effort. How likely are you to abandon the goal rather than risk feeling that way again?"
+    },
+    {
+      "id": 299,
+      "category": "resilience",
+      "reverse": true,
+      "text": "Momentum you built gets interrupted by a failure. How likely are you to let a single disappointment define how you see your overall potential?"
+    },
+    {
+      "id": 300,
+      "category": "resilience",
+      "reverse": true,
+      "text": "A hard result leaves you shaken for a while. How likely are you to assume the setback means you were never going to succeed anyway?"
+    },
+    {
+      "id": 301,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "A peer gets promoted for something you were also working toward. How likely are you to ask them how they did it so you can learn from it?"
+    },
+    {
+      "id": 302,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "A peer gets promoted for something you were also working toward. How likely are you to feel genuinely happy for them while staying focused on your own path?"
+    },
+    {
+      "id": 303,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "A peer gets promoted for something you were also working toward. How likely are you to treat their success as proof that it's possible, not a threat?"
+    },
+    {
+      "id": 304,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "A peer gets promoted for something you were also working toward. How likely are you to look at what they did differently as useful data for yourself?"
+    },
+    {
+      "id": 305,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "A peer gets promoted for something you were also working toward. How likely are you to let their progress motivate rather than discourage you?"
+    },
+    {
+      "id": 306,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "Someone in your field publishes work that gets a lot of praise. How likely are you to ask them how they did it so you can learn from it?"
+    },
+    {
+      "id": 307,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "Someone in your field publishes work that gets a lot of praise. How likely are you to feel genuinely happy for them while staying focused on your own path?"
+    },
+    {
+      "id": 308,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "Someone in your field publishes work that gets a lot of praise. How likely are you to treat their success as proof that it's possible, not a threat?"
+    },
+    {
+      "id": 309,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "Someone in your field publishes work that gets a lot of praise. How likely are you to look at what they did differently as useful data for yourself?"
+    },
+    {
+      "id": 310,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "Someone in your field publishes work that gets a lot of praise. How likely are you to let their progress motivate rather than discourage you?"
+    },
+    {
+      "id": 311,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "A friend achieves a milestone you haven't reached yet. How likely are you to ask them how they did it so you can learn from it?"
+    },
+    {
+      "id": 312,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "A friend achieves a milestone you haven't reached yet. How likely are you to feel genuinely happy for them while staying focused on your own path?"
+    },
+    {
+      "id": 313,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "A friend achieves a milestone you haven't reached yet. How likely are you to treat their success as proof that it's possible, not a threat?"
+    },
+    {
+      "id": 314,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "A friend achieves a milestone you haven't reached yet. How likely are you to look at what they did differently as useful data for yourself?"
+    },
+    {
+      "id": 315,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "A friend achieves a milestone you haven't reached yet. How likely are you to let their progress motivate rather than discourage you?"
+    },
+    {
+      "id": 316,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "You hear about someone succeeding at something you've struggled with. How likely are you to ask them how they did it so you can learn from it?"
+    },
+    {
+      "id": 317,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "You hear about someone succeeding at something you've struggled with. How likely are you to feel genuinely happy for them while staying focused on your own path?"
+    },
+    {
+      "id": 318,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "You hear about someone succeeding at something you've struggled with. How likely are you to treat their success as proof that it's possible, not a threat?"
+    },
+    {
+      "id": 319,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "You hear about someone succeeding at something you've struggled with. How likely are you to look at what they did differently as useful data for yourself?"
+    },
+    {
+      "id": 320,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "You hear about someone succeeding at something you've struggled with. How likely are you to let their progress motivate rather than discourage you?"
+    },
+    {
+      "id": 321,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "A classmate or colleague clearly outperforms you on a shared task. How likely are you to ask them how they did it so you can learn from it?"
+    },
+    {
+      "id": 322,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "A classmate or colleague clearly outperforms you on a shared task. How likely are you to feel genuinely happy for them while staying focused on your own path?"
+    },
+    {
+      "id": 323,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "A classmate or colleague clearly outperforms you on a shared task. How likely are you to treat their success as proof that it's possible, not a threat?"
+    },
+    {
+      "id": 324,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "A classmate or colleague clearly outperforms you on a shared task. How likely are you to look at what they did differently as useful data for yourself?"
+    },
+    {
+      "id": 325,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "A classmate or colleague clearly outperforms you on a shared task. How likely are you to let their progress motivate rather than discourage you?"
+    },
+    {
+      "id": 326,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "Someone asks you to help them do something you're not yet great at yourself. How likely are you to ask them how they did it so you can learn from it?"
+    },
+    {
+      "id": 327,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "Someone asks you to help them do something you're not yet great at yourself. How likely are you to feel genuinely happy for them while staying focused on your own path?"
+    },
+    {
+      "id": 328,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "Someone asks you to help them do something you're not yet great at yourself. How likely are you to treat their success as proof that it's possible, not a threat?"
+    },
+    {
+      "id": 329,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "Someone asks you to help them do something you're not yet great at yourself. How likely are you to look at what they did differently as useful data for yourself?"
+    },
+    {
+      "id": 330,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "Someone asks you to help them do something you're not yet great at yourself. How likely are you to let their progress motivate rather than discourage you?"
+    },
+    {
+      "id": 331,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "You see someone else get recognition for skills similar to yours. How likely are you to ask them how they did it so you can learn from it?"
+    },
+    {
+      "id": 332,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "You see someone else get recognition for skills similar to yours. How likely are you to feel genuinely happy for them while staying focused on your own path?"
+    },
+    {
+      "id": 333,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "You see someone else get recognition for skills similar to yours. How likely are you to treat their success as proof that it's possible, not a threat?"
+    },
+    {
+      "id": 334,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "You see someone else get recognition for skills similar to yours. How likely are you to look at what they did differently as useful data for yourself?"
+    },
+    {
+      "id": 335,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "You see someone else get recognition for skills similar to yours. How likely are you to let their progress motivate rather than discourage you?"
+    },
+    {
+      "id": 336,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "A rival or competitor has a breakthrough. How likely are you to ask them how they did it so you can learn from it?"
+    },
+    {
+      "id": 337,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "A rival or competitor has a breakthrough. How likely are you to feel genuinely happy for them while staying focused on your own path?"
+    },
+    {
+      "id": 338,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "A rival or competitor has a breakthrough. How likely are you to treat their success as proof that it's possible, not a threat?"
+    },
+    {
+      "id": 339,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "A rival or competitor has a breakthrough. How likely are you to look at what they did differently as useful data for yourself?"
+    },
+    {
+      "id": 340,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "A rival or competitor has a breakthrough. How likely are you to let their progress motivate rather than discourage you?"
+    },
+    {
+      "id": 341,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "Someone shares that they finally mastered something you're still working on. How likely are you to ask them how they did it so you can learn from it?"
+    },
+    {
+      "id": 342,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "Someone shares that they finally mastered something you're still working on. How likely are you to feel genuinely happy for them while staying focused on your own path?"
+    },
+    {
+      "id": 343,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "Someone shares that they finally mastered something you're still working on. How likely are you to treat their success as proof that it's possible, not a threat?"
+    },
+    {
+      "id": 344,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "Someone shares that they finally mastered something you're still working on. How likely are you to look at what they did differently as useful data for yourself?"
+    },
+    {
+      "id": 345,
+      "category": "comparison_mindset",
+      "reverse": false,
+      "text": "Someone shares that they finally mastered something you're still working on. How likely are you to let their progress motivate rather than discourage you?"
+    },
+    {
+      "id": 346,
+      "category": "comparison_mindset",
+      "reverse": true,
+      "text": "Someone close to you succeeds at something you're still working toward. How likely are you to feel threatened and quietly resent their success?"
+    },
+    {
+      "id": 347,
+      "category": "comparison_mindset",
+      "reverse": true,
+      "text": "A peer's achievement gets more attention than yours. How likely are you to assume they must have had advantages you didn't, rather than looking at what they did?"
+    },
+    {
+      "id": 348,
+      "category": "comparison_mindset",
+      "reverse": true,
+      "text": "You notice someone improving faster than you in the same area. How likely are you to compare yourself harshly and feel worse about your own ability?"
+    },
+    {
+      "id": 349,
+      "category": "comparison_mindset",
+      "reverse": true,
+      "text": "A colleague's success highlights an area where you're behind. How likely are you to avoid them a little because their progress stings?"
+    },
+    {
+      "id": 350,
+      "category": "comparison_mindset",
+      "reverse": true,
+      "text": "Someone reaches a goal you haven't gotten to yet. How likely are you to conclude that their success just proves you're falling behind for good?"
+    },
+    {
+      "id": 351,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "You're reviewing how a project went, good or bad. How likely are you to break down which specific steps worked and which didn't?"
+    },
+    {
+      "id": 352,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "You're reviewing how a project went, good or bad. How likely are you to focus on the strategy you used rather than just the final score?"
+    },
+    {
+      "id": 353,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "You're reviewing how a project went, good or bad. How likely are you to write down one concrete change to try next time?"
+    },
+    {
+      "id": 354,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "You're reviewing how a project went, good or bad. How likely are you to ask what process led to the result, not just what the result was?"
+    },
+    {
+      "id": 355,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "You're reviewing how a project went, good or bad. How likely are you to treat the outcome as data about your method, not a verdict on you?"
+    },
+    {
+      "id": 356,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "A task didn't go as planned and you're figuring out why. How likely are you to break down which specific steps worked and which didn't?"
+    },
+    {
+      "id": 357,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "A task didn't go as planned and you're figuring out why. How likely are you to focus on the strategy you used rather than just the final score?"
+    },
+    {
+      "id": 358,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "A task didn't go as planned and you're figuring out why. How likely are you to write down one concrete change to try next time?"
+    },
+    {
+      "id": 359,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "A task didn't go as planned and you're figuring out why. How likely are you to ask what process led to the result, not just what the result was?"
+    },
+    {
+      "id": 360,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "A task didn't go as planned and you're figuring out why. How likely are you to treat the outcome as data about your method, not a verdict on you?"
+    },
+    {
+      "id": 361,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "You finish something and have a moment to reflect before moving on. How likely are you to break down which specific steps worked and which didn't?"
+    },
+    {
+      "id": 362,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "You finish something and have a moment to reflect before moving on. How likely are you to focus on the strategy you used rather than just the final score?"
+    },
+    {
+      "id": 363,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "You finish something and have a moment to reflect before moving on. How likely are you to write down one concrete change to try next time?"
+    },
+    {
+      "id": 364,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "You finish something and have a moment to reflect before moving on. How likely are you to ask what process led to the result, not just what the result was?"
+    },
+    {
+      "id": 365,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "You finish something and have a moment to reflect before moving on. How likely are you to treat the outcome as data about your method, not a verdict on you?"
+    },
+    {
+      "id": 366,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "A result comes in — better or worse than expected. How likely are you to break down which specific steps worked and which didn't?"
+    },
+    {
+      "id": 367,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "A result comes in — better or worse than expected. How likely are you to focus on the strategy you used rather than just the final score?"
+    },
+    {
+      "id": 368,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "A result comes in — better or worse than expected. How likely are you to write down one concrete change to try next time?"
+    },
+    {
+      "id": 369,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "A result comes in — better or worse than expected. How likely are you to ask what process led to the result, not just what the result was?"
+    },
+    {
+      "id": 370,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "A result comes in — better or worse than expected. How likely are you to treat the outcome as data about your method, not a verdict on you?"
+    },
+    {
+      "id": 371,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "You're deciding how to approach a similar task next time. How likely are you to break down which specific steps worked and which didn't?"
+    },
+    {
+      "id": 372,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "You're deciding how to approach a similar task next time. How likely are you to focus on the strategy you used rather than just the final score?"
+    },
+    {
+      "id": 373,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "You're deciding how to approach a similar task next time. How likely are you to write down one concrete change to try next time?"
+    },
+    {
+      "id": 374,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "You're deciding how to approach a similar task next time. How likely are you to ask what process led to the result, not just what the result was?"
+    },
+    {
+      "id": 375,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "You're deciding how to approach a similar task next time. How likely are you to treat the outcome as data about your method, not a verdict on you?"
+    },
+    {
+      "id": 376,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "Someone asks you what you learned from a recent experience. How likely are you to break down which specific steps worked and which didn't?"
+    },
+    {
+      "id": 377,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "Someone asks you what you learned from a recent experience. How likely are you to focus on the strategy you used rather than just the final score?"
+    },
+    {
+      "id": 378,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "Someone asks you what you learned from a recent experience. How likely are you to write down one concrete change to try next time?"
+    },
+    {
+      "id": 379,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "Someone asks you what you learned from a recent experience. How likely are you to ask what process led to the result, not just what the result was?"
+    },
+    {
+      "id": 380,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "Someone asks you what you learned from a recent experience. How likely are you to treat the outcome as data about your method, not a verdict on you?"
+    },
+    {
+      "id": 381,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "You notice the same mistake happening more than once. How likely are you to break down which specific steps worked and which didn't?"
+    },
+    {
+      "id": 382,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "You notice the same mistake happening more than once. How likely are you to focus on the strategy you used rather than just the final score?"
+    },
+    {
+      "id": 383,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "You notice the same mistake happening more than once. How likely are you to write down one concrete change to try next time?"
+    },
+    {
+      "id": 384,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "You notice the same mistake happening more than once. How likely are you to ask what process led to the result, not just what the result was?"
+    },
+    {
+      "id": 385,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "You notice the same mistake happening more than once. How likely are you to treat the outcome as data about your method, not a verdict on you?"
+    },
+    {
+      "id": 386,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "A strategy you used clearly wasn't the most effective one. How likely are you to break down which specific steps worked and which didn't?"
+    },
+    {
+      "id": 387,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "A strategy you used clearly wasn't the most effective one. How likely are you to focus on the strategy you used rather than just the final score?"
+    },
+    {
+      "id": 388,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "A strategy you used clearly wasn't the most effective one. How likely are you to write down one concrete change to try next time?"
+    },
+    {
+      "id": 389,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "A strategy you used clearly wasn't the most effective one. How likely are you to ask what process led to the result, not just what the result was?"
+    },
+    {
+      "id": 390,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "A strategy you used clearly wasn't the most effective one. How likely are you to treat the outcome as data about your method, not a verdict on you?"
+    },
+    {
+      "id": 391,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "You're planning your next attempt at something you've tried before. How likely are you to break down which specific steps worked and which didn't?"
+    },
+    {
+      "id": 392,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "You're planning your next attempt at something you've tried before. How likely are you to focus on the strategy you used rather than just the final score?"
+    },
+    {
+      "id": 393,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "You're planning your next attempt at something you've tried before. How likely are you to write down one concrete change to try next time?"
+    },
+    {
+      "id": 394,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "You're planning your next attempt at something you've tried before. How likely are you to ask what process led to the result, not just what the result was?"
+    },
+    {
+      "id": 395,
+      "category": "process_focus",
+      "reverse": false,
+      "text": "You're planning your next attempt at something you've tried before. How likely are you to treat the outcome as data about your method, not a verdict on you?"
+    },
+    {
+      "id": 396,
+      "category": "process_focus",
+      "reverse": true,
+      "text": "You get a result, whether good or disappointing. How likely are you to focus only on the final score and skip thinking about how you got there?"
+    },
+    {
+      "id": 397,
+      "category": "process_focus",
+      "reverse": true,
+      "text": "A task is finished and it's time to move on to the next thing. How likely are you to move on immediately without reviewing what actually happened?"
+    },
+    {
+      "id": 398,
+      "category": "process_focus",
+      "reverse": true,
+      "text": "You reflect briefly on how something went. How likely are you to credit or blame the outcome entirely on luck rather than method?"
+    },
+    {
+      "id": 399,
+      "category": "process_focus",
+      "reverse": true,
+      "text": "An outcome comes in that you didn't expect. How likely are you to avoid looking closely at what you actually did during the process?"
+    },
+    {
+      "id": 400,
+      "category": "process_focus",
+      "reverse": true,
+      "text": "You've just wrapped up an attempt at something. How likely are you to treat the result as the whole story, with nothing more to learn from it?"
+    },
+    {
+      "id": 401,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "You're in a situation where you clearly don't know what you're doing yet. How likely are you to stay with the confusion long enough to work through it?"
+    },
+    {
+      "id": 402,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "You're in a situation where you clearly don't know what you're doing yet. How likely are you to ask the 'basic' question anyway because understanding matters more than appearances?"
+    },
+    {
+      "id": 403,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "You're in a situation where you clearly don't know what you're doing yet. How likely are you to treat not-knowing-yet as a normal, temporary stage rather than a flaw?"
+    },
+    {
+      "id": 404,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "You're in a situation where you clearly don't know what you're doing yet. How likely are you to keep going instead of rushing to look competent?"
+    },
+    {
+      "id": 405,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "You're in a situation where you clearly don't know what you're doing yet. How likely are you to get curious about the confusion instead of anxious about it?"
+    },
+    {
+      "id": 406,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "A concept takes several tries before it starts making sense. How likely are you to stay with the confusion long enough to work through it?"
+    },
+    {
+      "id": 407,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "A concept takes several tries before it starts making sense. How likely are you to ask the 'basic' question anyway because understanding matters more than appearances?"
+    },
+    {
+      "id": 408,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "A concept takes several tries before it starts making sense. How likely are you to treat not-knowing-yet as a normal, temporary stage rather than a flaw?"
+    },
+    {
+      "id": 409,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "A concept takes several tries before it starts making sense. How likely are you to keep going instead of rushing to look competent?"
+    },
+    {
+      "id": 410,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "A concept takes several tries before it starts making sense. How likely are you to get curious about the confusion instead of anxious about it?"
+    },
+    {
+      "id": 411,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "You're the least experienced person in a room full of experts. How likely are you to stay with the confusion long enough to work through it?"
+    },
+    {
+      "id": 412,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "You're the least experienced person in a room full of experts. How likely are you to ask the 'basic' question anyway because understanding matters more than appearances?"
+    },
+    {
+      "id": 413,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "You're the least experienced person in a room full of experts. How likely are you to treat not-knowing-yet as a normal, temporary stage rather than a flaw?"
+    },
+    {
+      "id": 414,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "You're the least experienced person in a room full of experts. How likely are you to keep going instead of rushing to look competent?"
+    },
+    {
+      "id": 415,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "You're the least experienced person in a room full of experts. How likely are you to get curious about the confusion instead of anxious about it?"
+    },
+    {
+      "id": 416,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "You have to ask a basic question that might make you look inexperienced. How likely are you to stay with the confusion long enough to work through it?"
+    },
+    {
+      "id": 417,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "You have to ask a basic question that might make you look inexperienced. How likely are you to ask the 'basic' question anyway because understanding matters more than appearances?"
+    },
+    {
+      "id": 418,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "You have to ask a basic question that might make you look inexperienced. How likely are you to treat not-knowing-yet as a normal, temporary stage rather than a flaw?"
+    },
+    {
+      "id": 419,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "You have to ask a basic question that might make you look inexperienced. How likely are you to keep going instead of rushing to look competent?"
+    },
+    {
+      "id": 420,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "You have to ask a basic question that might make you look inexperienced. How likely are you to get curious about the confusion instead of anxious about it?"
+    },
+    {
+      "id": 421,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "Confusion sets in partway through learning something new. How likely are you to stay with the confusion long enough to work through it?"
+    },
+    {
+      "id": 422,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "Confusion sets in partway through learning something new. How likely are you to ask the 'basic' question anyway because understanding matters more than appearances?"
+    },
+    {
+      "id": 423,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "Confusion sets in partway through learning something new. How likely are you to treat not-knowing-yet as a normal, temporary stage rather than a flaw?"
+    },
+    {
+      "id": 424,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "Confusion sets in partway through learning something new. How likely are you to keep going instead of rushing to look competent?"
+    },
+    {
+      "id": 425,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "Confusion sets in partway through learning something new. How likely are you to get curious about the confusion instead of anxious about it?"
+    },
+    {
+      "id": 426,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "You're stuck on a problem with no obvious next step. How likely are you to stay with the confusion long enough to work through it?"
+    },
+    {
+      "id": 427,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "You're stuck on a problem with no obvious next step. How likely are you to ask the 'basic' question anyway because understanding matters more than appearances?"
+    },
+    {
+      "id": 428,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "You're stuck on a problem with no obvious next step. How likely are you to treat not-knowing-yet as a normal, temporary stage rather than a flaw?"
+    },
+    {
+      "id": 429,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "You're stuck on a problem with no obvious next step. How likely are you to keep going instead of rushing to look competent?"
+    },
+    {
+      "id": 430,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "You're stuck on a problem with no obvious next step. How likely are you to get curious about the confusion instead of anxious about it?"
+    },
+    {
+      "id": 431,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "Being a beginner again feels uncomfortable and unfamiliar. How likely are you to stay with the confusion long enough to work through it?"
+    },
+    {
+      "id": 432,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "Being a beginner again feels uncomfortable and unfamiliar. How likely are you to ask the 'basic' question anyway because understanding matters more than appearances?"
+    },
+    {
+      "id": 433,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "Being a beginner again feels uncomfortable and unfamiliar. How likely are you to treat not-knowing-yet as a normal, temporary stage rather than a flaw?"
+    },
+    {
+      "id": 434,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "Being a beginner again feels uncomfortable and unfamiliar. How likely are you to keep going instead of rushing to look competent?"
+    },
+    {
+      "id": 435,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "Being a beginner again feels uncomfortable and unfamiliar. How likely are you to get curious about the confusion instead of anxious about it?"
+    },
+    {
+      "id": 436,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "You don't understand something that everyone else seems to get. How likely are you to stay with the confusion long enough to work through it?"
+    },
+    {
+      "id": 437,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "You don't understand something that everyone else seems to get. How likely are you to ask the 'basic' question anyway because understanding matters more than appearances?"
+    },
+    {
+      "id": 438,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "You don't understand something that everyone else seems to get. How likely are you to treat not-knowing-yet as a normal, temporary stage rather than a flaw?"
+    },
+    {
+      "id": 439,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "You don't understand something that everyone else seems to get. How likely are you to keep going instead of rushing to look competent?"
+    },
+    {
+      "id": 440,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "You don't understand something that everyone else seems to get. How likely are you to get curious about the confusion instead of anxious about it?"
+    },
+    {
+      "id": 441,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "A task requires you to sit with uncertainty for longer than feels comfortable. How likely are you to stay with the confusion long enough to work through it?"
+    },
+    {
+      "id": 442,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "A task requires you to sit with uncertainty for longer than feels comfortable. How likely are you to ask the 'basic' question anyway because understanding matters more than appearances?"
+    },
+    {
+      "id": 443,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "A task requires you to sit with uncertainty for longer than feels comfortable. How likely are you to treat not-knowing-yet as a normal, temporary stage rather than a flaw?"
+    },
+    {
+      "id": 444,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "A task requires you to sit with uncertainty for longer than feels comfortable. How likely are you to keep going instead of rushing to look competent?"
+    },
+    {
+      "id": 445,
+      "category": "comfort_with_struggle",
+      "reverse": false,
+      "text": "A task requires you to sit with uncertainty for longer than feels comfortable. How likely are you to get curious about the confusion instead of anxious about it?"
+    },
+    {
+      "id": 446,
+      "category": "comfort_with_struggle",
+      "reverse": true,
+      "text": "You realize you don't understand something you're supposed to know. How likely are you to pretend to understand rather than admit you're lost?"
+    },
+    {
+      "id": 447,
+      "category": "comfort_with_struggle",
+      "reverse": true,
+      "text": "You're clearly the least skilled person in a group setting. How likely are you to feel embarrassed enough that you consider dropping out or disengaging?"
+    },
+    {
+      "id": 448,
+      "category": "comfort_with_struggle",
+      "reverse": true,
+      "text": "A concept doesn't make sense to you the first time. How likely are you to avoid asking questions so no one notices you're behind?"
+    },
+    {
+      "id": 449,
+      "category": "comfort_with_struggle",
+      "reverse": true,
+      "text": "You have to admit you're confused about something basic. How likely are you to assume that struggling this early means you don't belong there?"
+    },
+    {
+      "id": 450,
+      "category": "comfort_with_struggle",
+      "reverse": true,
+      "text": "Uncertainty lingers longer than you'd like while learning something new. How likely are you to rush to seem competent instead of actually working through the confusion?"
+    },
+    {
+      "id": 451,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "You catch yourself thinking about your own limits mid-task. How likely are you to add the word 'yet' to whatever you can't do right now?"
+    },
+    {
+      "id": 452,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "You catch yourself thinking about your own limits mid-task. How likely are you to describe yourself as someone who is capable of growing, not fixed?"
+    },
+    {
+      "id": 453,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "You catch yourself thinking about your own limits mid-task. How likely are you to notice the negative thought and reframe it without believing it fully?"
+    },
+    {
+      "id": 454,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "You catch yourself thinking about your own limits mid-task. How likely are you to talk to yourself the way you'd encourage a friend in the same spot?"
+    },
+    {
+      "id": 455,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "You catch yourself thinking about your own limits mid-task. How likely are you to focus your self-description on effort and growth rather than fixed labels?"
+    },
+    {
+      "id": 456,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "An inner voice comments on how a difficult task is going. How likely are you to add the word 'yet' to whatever you can't do right now?"
+    },
+    {
+      "id": 457,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "An inner voice comments on how a difficult task is going. How likely are you to describe yourself as someone who is capable of growing, not fixed?"
+    },
+    {
+      "id": 458,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "An inner voice comments on how a difficult task is going. How likely are you to notice the negative thought and reframe it without believing it fully?"
+    },
+    {
+      "id": 459,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "An inner voice comments on how a difficult task is going. How likely are you to talk to yourself the way you'd encourage a friend in the same spot?"
+    },
+    {
+      "id": 460,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "An inner voice comments on how a difficult task is going. How likely are you to focus your self-description on effort and growth rather than fixed labels?"
+    },
+    {
+      "id": 461,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "You're describing your own abilities to someone else. How likely are you to add the word 'yet' to whatever you can't do right now?"
+    },
+    {
+      "id": 462,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "You're describing your own abilities to someone else. How likely are you to describe yourself as someone who is capable of growing, not fixed?"
+    },
+    {
+      "id": 463,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "You're describing your own abilities to someone else. How likely are you to notice the negative thought and reframe it without believing it fully?"
+    },
+    {
+      "id": 464,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "You're describing your own abilities to someone else. How likely are you to talk to yourself the way you'd encourage a friend in the same spot?"
+    },
+    {
+      "id": 465,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "You're describing your own abilities to someone else. How likely are you to focus your self-description on effort and growth rather than fixed labels?"
+    },
+    {
+      "id": 466,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "A hard moment brings up a thought about who you 'really are.' How likely are you to add the word 'yet' to whatever you can't do right now?"
+    },
+    {
+      "id": 467,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "A hard moment brings up a thought about who you 'really are.' How likely are you to describe yourself as someone who is capable of growing, not fixed?"
+    },
+    {
+      "id": 468,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "A hard moment brings up a thought about who you 'really are.' How likely are you to notice the negative thought and reframe it without believing it fully?"
+    },
+    {
+      "id": 469,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "A hard moment brings up a thought about who you 'really are.' How likely are you to talk to yourself the way you'd encourage a friend in the same spot?"
+    },
+    {
+      "id": 470,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "A hard moment brings up a thought about who you 'really are.' How likely are you to focus your self-description on effort and growth rather than fixed labels?"
+    },
+    {
+      "id": 471,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "You're deciding how to talk to yourself after a mistake. How likely are you to add the word 'yet' to whatever you can't do right now?"
+    },
+    {
+      "id": 472,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "You're deciding how to talk to yourself after a mistake. How likely are you to describe yourself as someone who is capable of growing, not fixed?"
+    },
+    {
+      "id": 473,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "You're deciding how to talk to yourself after a mistake. How likely are you to notice the negative thought and reframe it without believing it fully?"
+    },
+    {
+      "id": 474,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "You're deciding how to talk to yourself after a mistake. How likely are you to talk to yourself the way you'd encourage a friend in the same spot?"
+    },
+    {
+      "id": 475,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "You're deciding how to talk to yourself after a mistake. How likely are you to focus your self-description on effort and growth rather than fixed labels?"
+    },
+    {
+      "id": 476,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "You reflect on a label — 'smart,' 'talented,' 'not a math person' — that's been applied to you. How likely are you to add the word 'yet' to whatever you can't do right now?"
+    },
+    {
+      "id": 477,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "You reflect on a label — 'smart,' 'talented,' 'not a math person' — that's been applied to you. How likely are you to describe yourself as someone who is capable of growing, not fixed?"
+    },
+    {
+      "id": 478,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "You reflect on a label — 'smart,' 'talented,' 'not a math person' — that's been applied to you. How likely are you to notice the negative thought and reframe it without believing it fully?"
+    },
+    {
+      "id": 479,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "You reflect on a label — 'smart,' 'talented,' 'not a math person' — that's been applied to you. How likely are you to talk to yourself the way you'd encourage a friend in the same spot?"
+    },
+    {
+      "id": 480,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "You reflect on a label — 'smart,' 'talented,' 'not a math person' — that's been applied to you. How likely are you to focus your self-description on effort and growth rather than fixed labels?"
+    },
+    {
+      "id": 481,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "A tough stretch of work brings self-doubt to the surface. How likely are you to add the word 'yet' to whatever you can't do right now?"
+    },
+    {
+      "id": 482,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "A tough stretch of work brings self-doubt to the surface. How likely are you to describe yourself as someone who is capable of growing, not fixed?"
+    },
+    {
+      "id": 483,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "A tough stretch of work brings self-doubt to the surface. How likely are you to notice the negative thought and reframe it without believing it fully?"
+    },
+    {
+      "id": 484,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "A tough stretch of work brings self-doubt to the surface. How likely are you to talk to yourself the way you'd encourage a friend in the same spot?"
+    },
+    {
+      "id": 485,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "A tough stretch of work brings self-doubt to the surface. How likely are you to focus your self-description on effort and growth rather than fixed labels?"
+    },
+    {
+      "id": 486,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "You're forming a sentence in your head about why something is hard for you. How likely are you to add the word 'yet' to whatever you can't do right now?"
+    },
+    {
+      "id": 487,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "You're forming a sentence in your head about why something is hard for you. How likely are you to describe yourself as someone who is capable of growing, not fixed?"
+    },
+    {
+      "id": 488,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "You're forming a sentence in your head about why something is hard for you. How likely are you to notice the negative thought and reframe it without believing it fully?"
+    },
+    {
+      "id": 489,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "You're forming a sentence in your head about why something is hard for you. How likely are you to talk to yourself the way you'd encourage a friend in the same spot?"
+    },
+    {
+      "id": 490,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "You're forming a sentence in your head about why something is hard for you. How likely are you to focus your self-description on effort and growth rather than fixed labels?"
+    },
+    {
+      "id": 491,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "Someone asks how you'd describe yourself as a learner. How likely are you to add the word 'yet' to whatever you can't do right now?"
+    },
+    {
+      "id": 492,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "Someone asks how you'd describe yourself as a learner. How likely are you to describe yourself as someone who is capable of growing, not fixed?"
+    },
+    {
+      "id": 493,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "Someone asks how you'd describe yourself as a learner. How likely are you to notice the negative thought and reframe it without believing it fully?"
+    },
+    {
+      "id": 494,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "Someone asks how you'd describe yourself as a learner. How likely are you to talk to yourself the way you'd encourage a friend in the same spot?"
+    },
+    {
+      "id": 495,
+      "category": "self_talk",
+      "reverse": false,
+      "text": "Someone asks how you'd describe yourself as a learner. How likely are you to focus your self-description on effort and growth rather than fixed labels?"
+    },
+    {
+      "id": 496,
+      "category": "self_talk",
+      "reverse": true,
+      "text": "You think about something you're currently struggling with. How likely are you to tell yourself 'I'm just not a ___ person' and leave it at that?"
+    },
+    {
+      "id": 497,
+      "category": "self_talk",
+      "reverse": true,
+      "text": "You describe your own abilities in a certain area. How likely are you to let a fixed label decide what you will and won't attempt?"
+    },
+    {
+      "id": 498,
+      "category": "self_talk",
+      "reverse": true,
+      "text": "A difficult moment brings up thoughts about your limits. How likely are you to assume the difficulty reveals a permanent trait about who you are?"
+    },
+    {
+      "id": 499,
+      "category": "self_talk",
+      "reverse": true,
+      "text": "You reflect on a label that's been applied to you. How likely are you to let self-doubt convince you the outcome was inevitable?"
+    },
+    {
+      "id": 500,
+      "category": "self_talk",
+      "reverse": true,
+      "text": "Self-doubt comes up during a hard task. How likely are you to define yourself by your current weaknesses rather than your potential?"
+    }
+  ]
+}
