@@ -2,8 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <script>
+    if (window.location.pathname === '/index.html') {
+      window.location.replace('/' + window.location.search + window.location.hash);
+    }
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
+
   <meta name="description" content="Play LearnPad fun games and quizzes, including Word Search, Crossword, Sudoku, math quizzes, and online self-assessment tests in English and Urdu." />
   <meta property="og:title" content="Knowledge Check | LearnPad" />
   <meta property="og:description" content="Play LearnPad fun games and quizzes, including Word Search, Crossword, Sudoku, math quizzes, and online self-assessment tests in English and Urdu." />
@@ -11,6 +16,7 @@
   <meta property="og:url" content="https://mypkweb.com/" />
   <meta property="og:site_name" content="LearnPad" />
   <meta property="og:image" content="https://mypkweb.com/logo.png" />
+  <link rel="canonical" href="https://mypkweb.com/" />
 <title>Knowledge Check | LearnPad</title>
 
   <!-- Google Tag Manager -->
