@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description" content="Personal Character Test" />
+  <meta property="og:title" content="Personal Character Test | LearnPad" />
+  <meta property="og:description" content="Personal Character Test" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mypkweb.com/personal_character_test/index.html" />
+  <meta property="og:site_name" content="LearnPad" />
+  <meta property="og:image" content="https://mypkweb.com/logo.png" />
+<title>Personal Character Test | LearnPad</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --accent:      #a16207;
+      --accent-dark: #854d0e;
+      --ink:         #1a1f36;
+      --muted:       #5a6076;
+      --bg:          #f4f6fb;
+      --card:        #ffffff;
+      --border:      #e2e6f0;
+      --radius:      18px;
+      --green:       #22c55e;
+      --green-dark:  #16a34a;
+      --amber:       #f59e0b;
+      --red:         #ef4444;
+    }
+
+    body {
+      font-family: 'Nunito', system-ui, sans-serif;
+      background: var(--bg);
+      background-image: radial-gradient(circle, #E8EDF5 1.5px, transparent 1.5px);
+      background-size: 20px 20px;
+      color: var(--ink);
+      min-height: 100vh;
+      display: flex; flex-direction: column;
+    }
+
+    /* ── Header ── */
+    header { background: var(--card); border-bottom: 2px solid var(--border); padding: 0 24px; position: sticky; top: 0; z-index: 100; }
+    .header-inner { max-width: 960px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 58px; }
+    .logo-link { text-decoration: none; display: flex; align-items: center; }
+    .logo-img { height: 36px; width: auto; display: block; }
+    .logo-txt { font-weight: 900; font-size: 1.2rem; color: var(--accent); }
+    nav { display: flex; align-items: center; gap: 4px; }
+    nav a { font-weight: 700; font-size: 0.85rem; color: var(--muted); text-decoration: none; padding: 6px 12px; border-radius: 8px; transition: color .15s, background .15s; }
+    nav a:hover { color: var(--accent); background: #fef9c3; }
+
+    /* ── Language toggle (lives outside <header> — shared-nav.js replaces the header at runtime) ── */
+    .lang-toggle { display: flex; justify-content: center; gap: 6px; padding: 14px 24px 0; }
+    .lang-link { font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 0.82rem; color: var(--muted); text-decoration: none; padding: 6px 16px; border-radius: 50px; border: 2px solid var(--border); transition: border-color .15s, color .15s, background .15s; }
+    .lang-link:hover { border-color: var(--accent); color: var(--accent); }
+    .lang-link.active { border-color: var(--accent); color: var(--accent); background: #fef9c3; }
+
+    /* ── Page hero ── */
+    .page-hero { text-align: center; padding: 26px 24px 14px; }
+    .hero-badge { display: inline-block; background: #fef9c3; color: var(--accent); font-weight: 800; font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 5px 14px; border-radius: 50px; margin-bottom: 10px; }
+    .page-hero h1 { font-size: clamp(1.3rem, 3.5vw, 1.9rem); font-weight: 900; color: var(--ink); margin-bottom: 5px; }
+    .page-hero p  { font-size: 0.88rem; font-weight: 600; color: var(--muted); line-height: 1.5; max-width: 560px; margin: 0 auto; }
+
+    main { flex: 1; }
+
+    /* ── Length screen ── */
+    .level-screen { max-width: 560px; margin: 0 auto; padding: 4px 20px 56px; }
+    .level-hero { text-align: center; padding: 20px 0 22px; }
+    .level-hero h2 { font-size: 1.5rem; font-weight: 900; color: var(--ink); margin-bottom: 6px; }
+    .level-hero p { font-size: 0.88rem; font-weight: 600; color: var(--muted); }
+    .level-cards { display: flex; flex-direction: column; gap: 14px; }
+    .level-card {
+      background: var(--card); border: 2px solid var(--border); border-radius: var(--radius);
+      padding: 22px 20px; display: flex; align-items: center; gap: 16px;
+      cursor: pointer; transition: border-color .18s, box-shadow .18s, transform .18s; position: relative;
+    }
+    .level-card:hover { border-color: var(--accent); box-shadow: 0 8px 28px rgba(161,98,7,.14); transform: translateY(-2px); }
+    .lv-icon { font-size: 2rem; flex-shrink: 0; }
+    .lv-body { flex: 1; }
+    .lv-title { font-size: 1.15rem; font-weight: 900; color: var(--ink); margin-bottom: 4px; }
+    .lv-desc  { font-size: 0.82rem; font-weight: 600; color: var(--muted); line-height: 1.5; }
+    .lv-arrow { font-size: 1.1rem; color: var(--accent); opacity: 0; transition: opacity .18s, transform .18s; }
+    .level-card:hover .lv-arrow { opacity: 1; transform: translateX(4px); }
+    .lv-badge { position: absolute; top: 14px; right: 16px; font-size: 0.68rem; font-weight: 800; padding: 3px 10px; border-radius: 50px; text-transform: uppercase; letter-spacing: 0.05em; background: #fef9c3; color: var(--accent); }
+    .disclaimer { margin-top: 24px; text-align: center; font-size: 0.76rem; font-weight: 600; color: var(--muted); line-height: 1.6; }
+
+    /* ── Quiz wrap ── */
+    .quiz-wrap { max-width: 560px; margin: 0 auto; padding: 8px 20px 56px; }
+
+    /* ── Progress ── */
+    .progress-area { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; flex-wrap: nowrap; }
+    .q-counter { font-size: 0.72rem; font-weight: 800; color: var(--muted); white-space: nowrap; text-transform: uppercase; flex-shrink: 0; }
+    .progress-track { flex: 1; height: 10px; background: var(--border); border-radius: 5px; overflow: hidden; min-width: 40px; }
+    .progress-fill { height: 100%; background: var(--accent); border-radius: 5px; width: 0%; transition: width .4s ease; }
+
+    /* ── Question card ── */
+    .q-card { background: var(--card); border: 2px solid var(--border); border-radius: var(--radius); padding: 26px 22px 20px; margin-bottom: 14px; box-shadow: 0 4px 24px rgba(0,0,0,.06); }
+    .q-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+    .q-badge { background: #fef9c3; color: var(--accent); font-weight: 800; font-size: 0.7rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 12px; border-radius: 50px; }
+
+    .q-instruction { font-size: 1.08rem; font-weight: 800; color: var(--ink); margin-bottom: 22px; line-height: 1.55; }
+
+    /* ── Scale ── */
+    .scale-labels { display: flex; justify-content: space-between; font-size: 0.72rem; font-weight: 800; color: var(--muted); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.02em; }
+    .scale-grid { display: grid; grid-template-columns: repeat(10, 1fr); gap: 6px; margin-bottom: 6px; }
+    .scale-opt {
+      aspect-ratio: 1; border: 2px solid var(--border); border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 800; font-size: 0.95rem; color: var(--ink);
+      cursor: pointer; background: var(--card);
+      transition: border-color .15s, background .15s, transform .1s, color .15s;
+    }
+    .scale-opt:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .scale-opt.sel { border-color: var(--accent); background: var(--accent); color: #fff; box-shadow: 0 0 0 3px rgba(161,98,7,.2); }
+
+    /* ── Buttons ── */
+    .btn-row { display: flex; flex-direction: column; align-items: center; gap: 9px; margin-top: 18px; }
+    .btn-check { width: 100%; padding: 15px; border: none; border-radius: 999px; font-family: inherit; font-size: 1rem; font-weight: 800; cursor: pointer; background: var(--accent); color: #fff; transition: background .15s, transform .1s, opacity .15s; }
+    .btn-check:hover  { background: var(--accent-dark); }
+    .btn-check:active { transform: scale(0.98); }
+    .btn-check:disabled { opacity: .45; cursor: not-allowed; }
+    .btn-back { background: none; border: none; color: var(--muted); font-family: inherit; font-size: 0.82rem; font-weight: 700; cursor: pointer; padding: 6px; }
+    .btn-back:hover { color: var(--accent); }
+
+    /* ── Results ── */
+    .results-wrap { max-width: 620px; margin: 32px auto; padding: 0 20px; text-align: center; }
+    .results-wrap.hidden { display: none; }
+    .results-card { background: var(--card); border: 2px solid var(--border); border-radius: var(--radius); padding: 34px 26px 26px; box-shadow: 0 4px 24px rgba(0,0,0,.07); }
+    .res-emoji { font-size: 3rem; margin-bottom: 10px; }
+    .res-title { font-size: 1.1rem; font-weight: 800; color: var(--muted); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.04em; }
+    .res-level { font-size: 1.8rem; font-weight: 900; color: var(--ink); margin-bottom: 6px; }
+    .res-score { font-size: 2.4rem; font-weight: 900; color: var(--accent); margin: 6px 0 2px; }
+    .res-label { font-size: 0.78rem; font-weight: 700; color: var(--muted); margin-bottom: 14px; }
+    .res-msg   { font-size: 0.9rem; font-weight: 700; color: var(--muted); margin: 10px auto 26px; line-height: 1.6; max-width: 460px; }
+
+    .breakdown { text-align: left; margin: 0 0 26px; }
+    .breakdown-title { font-size: 0.78rem; font-weight: 800; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 14px; text-align: center; }
+    .bd-row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+    .bd-label { flex: 0 0 190px; font-size: 0.82rem; font-weight: 700; color: var(--ink); display: flex; align-items: center; gap: 6px; }
+    .bd-track { flex: 1; height: 12px; background: var(--border); border-radius: 6px; overflow: hidden; }
+    .bd-fill { height: 100%; border-radius: 6px; background: var(--accent); transition: width .5s ease; }
+    .bd-val { flex: 0 0 34px; text-align: right; font-size: 0.78rem; font-weight: 800; color: var(--muted); }
+
+    .res-btns  { display: flex; flex-direction: column; gap: 8px; }
+    .btn-retry { background: var(--accent); color: #fff; font-family: inherit; font-size: 0.95rem; font-weight: 800; padding: 13px 36px; border: none; border-radius: 999px; cursor: pointer; transition: background .15s; }
+    .btn-retry:hover { background: var(--accent-dark); }
+    .btn-change { background: none; border: 2px solid var(--border); color: var(--muted); font-family: inherit; font-size: 0.85rem; font-weight: 700; padding: 10px 24px; border-radius: 999px; cursor: pointer; transition: border-color .15s, color .15s; }
+    .btn-change:hover { border-color: var(--accent); color: var(--accent); }
+
+    .share-section { margin-top: 18px; padding-top: 18px; border-top: 2px solid var(--border); }
+    .share-label { font-size: 0.72rem; font-weight: 800; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 10px; }
+    .sh-btn { display: inline-flex; align-items: center; gap: 5px; border: none; border-radius: 50px; font-family: inherit; font-size: 0.78rem; font-weight: 800; cursor: pointer; padding: 8px 14px; transition: opacity .15s, transform .1s; background: var(--accent); color: #fff; }
+    .sh-btn:hover { opacity: 0.85; } .sh-btn:active { transform: scale(0.95); }
+    .sh-btn.copied { background: var(--green); }
+
+    .loading-msg, .error-msg { text-align: center; padding: 60px 20px; font-weight: 700; color: var(--muted); }
+    .error-msg { color: var(--red); }
+
+    /* ── Footer ── */
+    footer { background: #1a1f36; color: rgba(255,255,255,.65); padding: 18px 24px; text-align: center; font-size: 0.76rem; font-weight: 600; margin-top: auto; }
+    footer a { color: rgba(255,255,255,.42); text-decoration: none; transition: color .15s; }
+    footer a:hover { color: #fff; }
+
+    @media (max-width: 480px) {
+      .quiz-wrap, .level-screen { padding: 4px 14px 44px; }
+      .scale-grid { grid-template-columns: repeat(5, 1fr); gap: 6px 6px; }
+      .bd-label { flex-basis: 130px; font-size: 0.76rem; }
+    }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header>
+  <div class="header-inner">
+    <a class="logo-link" href="../index.html">
+      <img src="../logo.png" alt="LearnPad" class="logo-img"
+           onerror="this.outerHTML='<span class=logo-txt>LearnPad</span>'" />
+    </a>
+    <nav>
+      <a href="../for_school/index.html">School</a>
+      <a href="../index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+<div class="lang-toggle">
+  <a href="index.html" class="lang-link active">🇬🇧 English</a>
+  <a href="urdu.html" class="lang-link">🇵🇰 اردو</a>
+</div>
+
+<main>
+  <div class="page-hero">
+    <div class="hero-badge">Self-Assessment · Character</div>
+    <h1>Personal Character Test</h1>
+    <p>Reflect on how you actually act — not just what you believe — across 10 core dimensions of personal character, from self-discipline and courage to gratitude and authenticity. There are no right or wrong answers — just answer honestly.</p>
+  </div>
+
+  <!-- ── LENGTH SCREEN ── -->
+  <div class="level-screen" id="levelScreen">
+    <div class="level-hero">
+      <h2>Choose Your Test Length</h2>
+      <p>Questions are drawn evenly across all 10 character dimensions.</p>
+    </div>
+    <div class="level-cards">
+      <div class="level-card" data-len="10">
+        <div class="lv-icon">🌤️</div>
+        <div class="lv-body">
+          <div class="lv-title">Quick Check</div>
+          <div class="lv-desc">10 questions &nbsp;·&nbsp; ~3 minutes &nbsp;·&nbsp; 1 per dimension</div>
+        </div>
+        <div class="lv-badge">Fast</div>
+        <div class="lv-arrow">→</div>
+      </div>
+      <div class="level-card" data-len="20">
+        <div class="lv-icon">🧭</div>
+        <div class="lv-body">
+          <div class="lv-title">Standard Test</div>
+          <div class="lv-desc">20 questions &nbsp;·&nbsp; ~6 minutes &nbsp;·&nbsp; 2 per dimension</div>
+        </div>
+        <div class="lv-badge">Balanced</div>
+        <div class="lv-arrow">→</div>
+      </div>
+      <div class="level-card" data-len="30">
+        <div class="lv-icon">🔬</div>
+        <div class="lv-body">
+          <div class="lv-title">Deep Dive</div>
+          <div class="lv-desc">30 questions &nbsp;·&nbsp; ~10 minutes &nbsp;·&nbsp; 3 per dimension</div>
+        </div>
+        <div class="lv-badge">Thorough</div>
+        <div class="lv-arrow">→</div>
+      </div>
+    </div>
+    <p class="disclaimer">This is a self-reflection tool for personal insight, not a clinical, psychological, or professional assessment. Answers are scored on your device only and are not stored or sent anywhere.</p>
+  </div>
+
+  <!-- ── QUIZ ── -->
+  <div class="quiz-wrap" id="quizWrap" style="display:none;">
+    <div class="progress-area">
+      <div class="q-counter">Q <span id="qNum">1</span>/<span id="qTotal">10</span></div>
+      <div class="progress-track"><div class="progress-fill" id="pFill"></div></div>
+    </div>
+    <div class="q-card" id="qCard"></div>
+    <div class="btn-row">
+      <button class="btn-check" id="btnNext" disabled>Next →</button>
+      <button class="btn-back" onclick="showLevelScreen()">← Change test length</button>
+    </div>
+  </div>
+
+  <!-- ── RESULTS ── -->
+  <div class="results-wrap hidden" id="resultsWrap">
+    <div class="results-card">
+      <div class="res-emoji" id="resEmoji">🌟</div>
+      <div class="res-title">Your Character Level</div>
+      <div class="res-level" id="resLevel">—</div>
+      <div class="res-score" id="resScore">0.0</div>
+      <div class="res-label">average score out of 10</div>
+      <div class="res-msg" id="resMsg"></div>
+
+      <div class="breakdown">
+        <div class="breakdown-title">Breakdown by Dimension</div>
+        <div id="bdList"></div>
+      </div>
+
+      <div class="res-btns">
+        <button class="btn-retry" id="btnRetry">Retake This Length →</button>
+        <button class="btn-change" onclick="showLevelScreen()">Change Length</button>
+      </div>
+      <div class="share-section">
+        <div class="share-label">Share your result</div>
+        <button class="sh-btn" id="cpBtn" onclick="copyLink()">🔗 Copy Result Summary</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <a href="../index.html">LearnPad</a> &nbsp;·&nbsp; Free Self-Assessment Tools &nbsp;·&nbsp;
+  <a href="../for_school/index.html">School Worksheets</a>
+</footer>
+
+<script>
+/* ═══════════════════════════════════════════
+   DATA LOADING
+═══════════════════════════════════════════ */
+let BANK = null;      // full parsed questions.json
+let CAT_MAP = {};      // id -> {label, icon}
+let LEVELS = [];
+
+let questions = [];    // active question set for this test
+let qIdx = 0;
+let answers = [];       // {id, category, reverse, value}
+let currentLength = 10;
+let selectedValue = null;
+
+fetch('/personal_character_test/assets/questions.json')
+  .then(r => { if (!r.ok) throw new Error('Failed to load'); return r.json(); })
+  .then(data => {
+    BANK = data;
+    LEVELS = data.meta.levels;
+    data.meta.categories.forEach(c => { CAT_MAP[c.id] = c; });
+  })
+  .catch(err => {
+    document.getElementById('levelScreen').innerHTML =
+      '<p class="error-msg">Could not load the question bank (assets/questions.json). If you opened this file directly from disk, please serve it via a local web server instead.</p>';
+    console.error(err);
+  });
+
+/* ═══════════════════════════════════════════
+   SAMPLING
+═══════════════════════════════════════════ */
+function shuffle(a) { return [...a].sort(() => Math.random() - .5); }
+
+function buildQuestionSet(length) {
+  const perCategory = length / 10;
+  let set = [];
+  BANK.meta.categories.forEach(cat => {
+    const pool = BANK.questions.filter(q => q.category === cat.id);
+    set = set.concat(shuffle(pool).slice(0, perCategory));
+  });
+  return shuffle(set);
+}
+
+/* ═══════════════════════════════════════════
+   LENGTH SELECTION
+═══════════════════════════════════════════ */
+document.querySelectorAll('.level-card').forEach(card => {
+  card.addEventListener('click', () => {
+    if (!BANK) return;
+    startQuiz(parseInt(card.dataset.len, 10));
+  });
+});
+
+function showLevelScreen() {
+  document.getElementById('resultsWrap').classList.add('hidden');
+  document.getElementById('quizWrap').style.display = 'none';
+  document.getElementById('levelScreen').style.display = '';
+}
+
+/* ═══════════════════════════════════════════
+   QUIZ FLOW
+═══════════════════════════════════════════ */
+function startQuiz(length) {
+  currentLength = length;
+  questions = buildQuestionSet(length);
+  qIdx = 0;
+  answers = [];
+
+  document.getElementById('levelScreen').style.display = 'none';
+  document.getElementById('resultsWrap').classList.add('hidden');
+  document.getElementById('quizWrap').style.display = '';
+  document.getElementById('qTotal').textContent = length;
+  document.getElementById('pFill').style.width = '0%';
+
+  renderQuestion();
+}
+
+function renderQuestion() {
+  selectedValue = null;
+  const q = questions[qIdx];
+  const cat = CAT_MAP[q.category];
+  const scale = BANK.meta.scale;
+
+  document.getElementById('qNum').textContent = qIdx + 1;
+
+  let cells = '';
+  for (let i = scale.min; i <= scale.max; i++) {
+    cells += `<div class="scale-opt" data-val="${i}">${i}</div>`;
+  }
+
+  document.getElementById('qCard').innerHTML = `
+    <div class="q-header">
+      <span class="q-badge">${cat.icon} ${cat.label}</span>
+    </div>
+    <p class="q-instruction">${q.text}</p>
+    <div class="scale-labels"><span>${scale.minLabel}</span><span>${scale.maxLabel}</span></div>
+    <div class="scale-grid" id="scaleGrid">${cells}</div>
+  `;
+
+  document.querySelectorAll('.scale-opt').forEach(el => {
+    el.addEventListener('click', () => {
+      document.querySelectorAll('.scale-opt').forEach(e => e.classList.remove('sel'));
+      el.classList.add('sel');
+      selectedValue = parseInt(el.dataset.val, 10);
+      document.getElementById('btnNext').disabled = false;
+    });
+  });
+
+  const btn = document.getElementById('btnNext');
+  btn.disabled = true;
+  btn.textContent = qIdx < questions.length - 1 ? 'Next →' : 'See My Results →';
+}
+
+document.getElementById('btnNext').addEventListener('click', () => {
+  if (selectedValue === null) return;
+  const q = questions[qIdx];
+  answers.push({ id: q.id, category: q.category, reverse: !!q.reverse, value: selectedValue });
+
+  qIdx++;
+  document.getElementById('pFill').style.width = ((qIdx / questions.length) * 100) + '%';
+
+  if (qIdx >= questions.length) { showResults(); return; }
+  renderQuestion();
+});
+
+/* ═══════════════════════════════════════════
+   SCORING
+═══════════════════════════════════════════ */
+function adjustedScore(a) {
+  return a.reverse ? (11 - a.value) : a.value;
+}
+
+function computeScores() {
+  const catTotals = {};
+  answers.forEach(a => {
+    if (!catTotals[a.category]) catTotals[a.category] = { sum: 0, count: 0 };
+    catTotals[a.category].sum += adjustedScore(a);
+    catTotals[a.category].count++;
+  });
+
+  const catAverages = Object.keys(catTotals).map(id => ({
+    id,
+    label: CAT_MAP[id].label,
+    icon: CAT_MAP[id].icon,
+    avg: catTotals[id].sum / catTotals[id].count
+  })).sort((a, b) => b.avg - a.avg);
+
+  const overall = answers.reduce((sum, a) => sum + adjustedScore(a), 0) / answers.length;
+
+  return { overall, catAverages };
+}
+
+function levelFor(score) {
+  return LEVELS.find(l => score >= l.min && score < l.max) || LEVELS[LEVELS.length - 1];
+}
+
+/* ═══════════════════════════════════════════
+   RESULTS
+═══════════════════════════════════════════ */
+function showResults() {
+  document.getElementById('quizWrap').style.display = 'none';
+  document.getElementById('resultsWrap').classList.remove('hidden');
+
+  const { overall, catAverages } = computeScores();
+  const level = levelFor(overall);
+
+  document.getElementById('resEmoji').textContent = level.emoji;
+  document.getElementById('resLevel').textContent = level.label;
+  document.getElementById('resScore').textContent = overall.toFixed(1);
+  document.getElementById('resMsg').textContent = level.desc;
+
+  const bdList = document.getElementById('bdList');
+  bdList.innerHTML = catAverages.map(c => `
+    <div class="bd-row">
+      <div class="bd-label">${c.icon} ${c.label}</div>
+      <div class="bd-track"><div class="bd-fill" style="width:${(c.avg / 10 * 100).toFixed(0)}%"></div></div>
+      <div class="bd-val">${c.avg.toFixed(1)}</div>
+    </div>
+  `).join('');
+
+  window._lastResult = { overall, level, catAverages, length: currentLength };
+  document.getElementById('btnRetry').onclick = () => startQuiz(currentLength);
+}
+
+function copyLink() {
+  const r = window._lastResult;
+  if (!r) return;
+  const lines = [
+    `Personal Character Test — ${r.length} questions`,
+    `Overall: ${r.overall.toFixed(1)}/10 — ${r.level.label}`,
+    ...r.catAverages.map(c => `${c.label}: ${c.avg.toFixed(1)}/10`)
+  ];
+  const btn = document.getElementById('cpBtn');
+  navigator.clipboard.writeText(lines.join('\n')).then(() => {
+    btn.textContent = '✓ Copied!'; btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = '🔗 Copy Result Summary'; btn.classList.remove('copied'); }, 2000);
+  });
+}
+</script>
+
+<script src="../assets/shared-nav.js"></script>
+</body>
+</html>
