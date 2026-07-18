@@ -16,6 +16,7 @@ const blockLines = [
   '<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">',
   '<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png">',
   '<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">',
+  '<link rel="icon" type="image/x-icon" href="/assets/favicons/favicon.ico">',
   '<link rel="manifest" href="/assets/favicons/manifest.json">',
   '<meta name="msapplication-TileColor" content="#ffffff">',
   '<meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">',
@@ -39,7 +40,7 @@ const faviconAssets = [
   'apple-icon-57x57.png', 'apple-icon-60x60.png', 'apple-icon-72x72.png', 'apple-icon-76x76.png',
   'apple-icon-114x114.png', 'apple-icon-120x120.png', 'apple-icon-144x144.png',
   'apple-icon-152x152.png', 'apple-icon-180x180.png', 'android-icon-192x192.png',
-  'favicon-32x32.png', 'favicon-96x96.png', 'favicon-16x16.png', 'manifest.json', 'ms-icon-144x144.png'
+  'favicon-32x32.png', 'favicon-96x96.png', 'favicon-16x16.png', 'favicon.ico', 'manifest.json', 'ms-icon-144x144.png'
 ];
 
 let updated = 0;
@@ -55,6 +56,15 @@ for (const relative of files) {
     continue;
   }
   if (source.includes('href="/assets/favicons/apple-icon-57x57.png"')) {
+    const missingLines = blockLines.filter(line => !source.includes(line));
+    if (missingLines.length) {
+      const newline = source.includes('\r\n') ? '\r\n' : '\n';
+      const manifestLine = '<link rel="manifest" href="/assets/favicons/manifest.json">';
+      const output = source.replace(manifestLine, missingLines.join(newline) + newline + manifestLine);
+      fs.writeFileSync(file, output, 'utf8');
+      updated++;
+      continue;
+    }
     skipped++;
     continue;
   }
