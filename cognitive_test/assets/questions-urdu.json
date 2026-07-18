@@ -1,0 +1,3110 @@
+{
+  "meta": {
+    "title": "علمی ذہانت کا امتحان",
+    "description": "ایک خود شناسی ٹیسٹ جو Wechsler Adult Intelligence Scale (WAIS) جیسے عمومی علمی صلاحیت کے جائزوں سے متاثر ہے، جو یہ دریافت کرتا ہے کہ آپ 10 علمی پہلوؤں میں کس طرح سوچتے، مسائل حل کرتے اور معلومات پر عمل کرتے ہیں۔",
+    "scale": {
+      "min": 1,
+      "max": 10,
+      "minLabel": "آپ کے لیے بالکل درست نہیں",
+      "maxLabel": "آپ کے لیے مکمل طور پر درست"
+    },
+    "categories": [
+      {
+        "id": "verbal_comprehension",
+        "label": "زبان کی فہم",
+        "icon": "🗣️"
+      },
+      {
+        "id": "vocabulary",
+        "label": "ذخیرہ الفاظ اور لغوی معلومات",
+        "icon": "📚"
+      },
+      {
+        "id": "numerical_reasoning",
+        "label": "عددی اور مقداری استدلال",
+        "icon": "🔢"
+      },
+      {
+        "id": "logical_reasoning",
+        "label": "منطقی اور استخراجی استدلال",
+        "icon": "🧩"
+      },
+      {
+        "id": "abstract_reasoning",
+        "label": "تجریدی اور نمونہ جاتی استدلال",
+        "icon": "🔷"
+      },
+      {
+        "id": "spatial_reasoning",
+        "label": "بصری و مکانی استدلال",
+        "icon": "🧭"
+      },
+      {
+        "id": "working_memory",
+        "label": "عاملہ حافظہ",
+        "icon": "🧠"
+      },
+      {
+        "id": "processing_speed",
+        "label": "ذہنی رفتار",
+        "icon": "⚡"
+      },
+      {
+        "id": "problem_solving",
+        "label": "مسئلہ حل کرنا اور فیصلہ سازی",
+        "icon": "🛠️"
+      },
+      {
+        "id": "attention_flexibility",
+        "label": "توجہ، ارتکاز اور ذہنی لچک",
+        "icon": "🎯"
+      }
+    ],
+    "levels": [
+      {
+        "min": 9,
+        "max": 10.01,
+        "label": "غیر معمولی ذہانت",
+        "emoji": "🧠",
+        "desc": "آپ مسلسل تیز اور لچکدار سوچ کا مظاہرہ کرتے ہیں — نمونے پہچاننا، مسائل حل کرنا، اور پیچیدہ صورتحال میں استدلال کرنا آپ کے لیے فطری ہے۔ یہ آپ کی ایک مضبوط اور قابلِ اعتماد ذہنی صلاحیت معلوم ہوتی ہے۔"
+      },
+      {
+        "min": 7.5,
+        "max": 9,
+        "label": "تیز اور قابل",
+        "emoji": "🌟",
+        "desc": "زیادہ تر حالات میں آپ واضح طور پر سوچتے اور مسائل کو اچھے طریقے سے حل کرتے ہیں، اور نمونوں و منطق کو جلدی پہچان لیتے ہیں۔ چند مخصوص شعبوں میں مزید توجہ کی ضرورت ہو سکتی ہے۔"
+      },
+      {
+        "min": 6,
+        "max": 7.5,
+        "label": "مستحکم مفکر",
+        "emoji": "👍",
+        "desc": "عام طور پر آپ مؤثر انداز میں سوچتے اور مسائل حل کرتے ہیں، تاہم غیر مانوس یا پیچیدہ صورتحال بعض اوقات آپ کو سست کر سکتی ہے۔"
+      },
+      {
+        "min": 4.5,
+        "max": 6,
+        "label": "ترقی پذیر مفکر",
+        "emoji": "🌱",
+        "desc": "آپ کی استدلالی صلاحیت غیر مستقل ہے — کچھ شعبوں میں مضبوط اور کچھ میں کمزور۔ چند اہم پہلوؤں پر توجہ مرکوز مشق سے کافی بہتری آ سکتی ہے۔"
+      },
+      {
+        "min": 3,
+        "max": 4.5,
+        "label": "ابھرتا ہوا مفکر",
+        "emoji": "⚠️",
+        "desc": "فی الحال مسئلہ حل کرنے اور استدلال کے کام آپ کو مشکل محسوس ہوتے ہیں۔ تھوڑی مگر مستقل مشق وقت کے ساتھ ان صلاحیتوں کو نمایاں طور پر بہتر بنا سکتی ہے۔"
+      },
+      {
+        "min": 1,
+        "max": 3,
+        "label": "بنیادیں مضبوط کرنا",
+        "emoji": "📚",
+        "desc": "آپ کے جوابات بتاتے ہیں کہ یہ استدلالی صلاحیتیں ابھی ترقی کے مراحل میں ہیں۔ یہ توجہ اور صبر کے ساتھ مشق شروع کرنے کے لیے ایک اچھا نقطہ آغاز ہے۔"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ کسی پیچیدہ پیراگراف کا مرکزی نکتہ فوراً سمجھ سکتے ہیں۔"
+    },
+    {
+      "id": 2,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ کسی پیچیدہ خیال کو اتنے آسان الفاظ میں بیان کر سکتے ہیں کہ دوسرے آسانی سے سمجھ جائیں۔"
+    },
+    {
+      "id": 3,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ گفتگو کے پیچھے چھپے مفہوم کو بھی محسوس کر لیتے ہیں، صرف بولے گئے الفاظ پر نہیں رکتے۔"
+    },
+    {
+      "id": 4,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ کئی مراحل پر مشتمل زبانی ہدایات کو بغیر دہرائے سمجھ لیتے ہیں۔"
+    },
+    {
+      "id": 5,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ محسوس کر لیتے ہیں جب کوئی جملہ مبہم ہو اور اس کا ممکنہ مطلب اخذ کر سکتے ہیں۔"
+    },
+    {
+      "id": 6,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ ایک طویل مضمون کا درست خلاصہ صرف چند جملوں میں بیان کر سکتے ہیں۔"
+    },
+    {
+      "id": 7,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ لطیفے اور الفاظ کی چابکدستی کو جلدی سمجھ لیتے ہیں، چاہے وہ باریک ہوں۔"
+    },
+    {
+      "id": 8,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ کسی مقرر کی دلیل کی منطق کو، جیسے جیسے وہ آگے بڑھتی ہے، سمجھ سکتے ہیں۔"
+    },
+    {
+      "id": 9,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ گفتگو کے دوران ہی تضادات کو محسوس کر لیتے ہیں۔"
+    },
+    {
+      "id": 10,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ تکنیکی زبان کو عام فہم الفاظ میں کسی ناواقف شخص کے لیے دوبارہ بیان کر سکتے ہیں۔"
+    },
+    {
+      "id": 11,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ پیغام کے پیچھے موجود لہجے اور ارادے کو سمجھتے ہیں، نہ کہ صرف اس کے ظاہری الفاظ کو۔"
+    },
+    {
+      "id": 12,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ کسی رسمی خط یا ای میل میں سطروں کے درمیان چھپا مطلب پڑھ سکتے ہیں۔"
+    },
+    {
+      "id": 13,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ زبانی طور پر بیان کیے گئے نئے تصورات کو بغیر کسی بصری مدد کے سمجھ لیتے ہیں۔"
+    },
+    {
+      "id": 14,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ کسی تحریری دلیل کا کمزور ترین نکتہ شناخت کر سکتے ہیں۔"
+    },
+    {
+      "id": 15,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ استعارے اور تشبیہات سنتے ہی سمجھ جاتے ہیں۔"
+    },
+    {
+      "id": 16,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ کسی پیچیدہ زبانی وضاحت کو، جب تک بولنے والا اپنی بات مکمل نہ کرے، ذہن میں رکھ سکتے ہیں۔"
+    },
+    {
+      "id": 17,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ محسوس کر لیتے ہیں جب کوئی مقرر اپنی پہلے کہی ہوئی بات سے متضاد بات کہے۔"
+    },
+    {
+      "id": 18,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ ابھی پڑھی یا سنی گئی کسی بات میں حقیقت اور رائے میں فرق کر سکتے ہیں۔"
+    },
+    {
+      "id": 19,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ رسمی اور مشکل انداز میں لکھی گئی ہدایات کو بغیر زیادہ دقت کے سمجھ لیتے ہیں۔"
+    },
+    {
+      "id": 20,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ کسی مباحثے کا مرکزی دلیل شناخت کر سکتے ہیں چاہے وہ بے ترتیب انداز میں پیش کی گئی ہو۔"
+    },
+    {
+      "id": 21,
+      "category": "verbal_comprehension",
+      "reverse": true,
+      "text": "آپ کو اکثر ہدایات کو دوبارہ آسان الفاظ میں بتانا پڑتا ہے تاکہ آپ سمجھ سکیں کہ کیا کرنا ہے۔"
+    },
+    {
+      "id": 22,
+      "category": "verbal_comprehension",
+      "reverse": true,
+      "text": "جب گفتگو پیچیدہ ہو جائے تو آپ اس کا نکتہ بھول جاتے ہیں۔"
+    },
+    {
+      "id": 23,
+      "category": "verbal_comprehension",
+      "reverse": true,
+      "text": "آپ کو ابھی پڑھی گئی چیز کا خلاصہ بیان کرنا مشکل لگتا ہے۔"
+    },
+    {
+      "id": 24,
+      "category": "verbal_comprehension",
+      "reverse": true,
+      "text": "دو یا تین سے زیادہ مراحل پر مشتمل دلائل کی پیروی کرنا آپ کے لیے مشکل ہے۔"
+    },
+    {
+      "id": 25,
+      "category": "verbal_comprehension",
+      "reverse": true,
+      "text": "آپ اکثر کسی کی بات کا اصل پیغام سمجھنے سے چوک جاتے ہیں۔"
+    },
+    {
+      "id": 26,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ فوراً سمجھ سکتے ہیں کہ کوئی مبہم سوال دراصل کیا پوچھ رہا ہے۔"
+    },
+    {
+      "id": 27,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ بتا سکتے ہیں جب کوئی تحریری متن صرف معلومات دینے کے بجائے قائل کرنے کی کوشش کر رہا ہو۔"
+    },
+    {
+      "id": 28,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ نامانوس الفاظ کا مطلب سیاق و سباق سے سمجھ لیتے ہیں، بغیر لغت دیکھے۔"
+    },
+    {
+      "id": 29,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ کسی کے بیان میں چھپی مفروضات شناخت کر سکتے ہیں۔"
+    },
+    {
+      "id": 30,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "جب کوئی مرحلہ وار طریقہ زبانی بیان کرے تو آپ آسانی سے اس کی پیروی کرتے ہیں۔"
+    },
+    {
+      "id": 31,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ ابھی سنی گئی بات کو اپنے الفاظ میں درست طور پر دہرا سکتے ہیں۔"
+    },
+    {
+      "id": 32,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ محسوس کرتے ہیں جب کسی لفظ کا مطلب مختلف سیاق میں تھوڑا بدل جاتا ہے۔"
+    },
+    {
+      "id": 33,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ ایک لمبی اور بے ترتیب وضاحت میں سے اہم حقائق نکال سکتے ہیں۔"
+    },
+    {
+      "id": 34,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ فارمز اور سرکاری دستاویزات کی ہدایات بغیر الجھن کے سمجھ لیتے ہیں۔"
+    },
+    {
+      "id": 35,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ کئی کرداروں اور وقت کی ترتیب والی کہانی کو بغیر الجھے سمجھ سکتے ہیں۔"
+    },
+    {
+      "id": 36,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ محسوس کر لیتے ہیں جب زبان طنزیہ انداز میں استعمال ہو رہی ہو، لفظی معنوں میں نہیں۔"
+    },
+    {
+      "id": 37,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ اپنی سوچ کو واضح اور منظم انداز میں بیان کر سکتے ہیں۔"
+    },
+    {
+      "id": 38,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ تکنیکی کتابچے یا ہدایات پہلی ہی بار میں سمجھ لیتے ہیں۔"
+    },
+    {
+      "id": 39,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ کسی نظم، کہانی یا تقریر کا مرکزی خیال شناخت کر سکتے ہیں۔"
+    },
+    {
+      "id": 40,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ ملتے جلتے الفاظ کے درمیان باریک فرق محسوس کر لیتے ہیں۔"
+    },
+    {
+      "id": 41,
+      "category": "verbal_comprehension",
+      "reverse": true,
+      "text": "کسی بات کو سمجھنے کے لیے آپ کو اسے کئی بار دوبارہ پڑھنا پڑتا ہے۔"
+    },
+    {
+      "id": 42,
+      "category": "verbal_comprehension",
+      "reverse": true,
+      "text": "آپ اکثر سادہ گفتگو میں بھی کسی کی بات کا غلط مطلب سمجھ لیتے ہیں۔"
+    },
+    {
+      "id": 43,
+      "category": "verbal_comprehension",
+      "reverse": true,
+      "text": "آپ کو اپنے خیالات دوسروں کے سامنے واضح طور پر بیان کرنا مشکل لگتا ہے۔"
+    },
+    {
+      "id": 44,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ ایک الجھے ہوئے سوال میں سے اصل سوال فوراً پہچان سکتے ہیں۔"
+    },
+    {
+      "id": 45,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ کسی قاعدے کے پیچھے موجود وجہ سمجھتے ہیں، نہ کہ صرف قاعدہ خود۔"
+    },
+    {
+      "id": 46,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ نامانوس لہجوں یا بولنے کے انداز کو بغیر زیادہ کوشش کے سمجھ لیتے ہیں۔"
+    },
+    {
+      "id": 47,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ محسوس کرتے ہیں جب کوئی ترجمہ یا تلخیص اصل مطلب کو بدل دے۔"
+    },
+    {
+      "id": 48,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ پیچیدہ قانونی یا علمی زبان کو نسبتاً آسانی سے سمجھ سکتے ہیں۔"
+    },
+    {
+      "id": 49,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ فوراً پہچان لیتے ہیں کہ کسی وضاحت میں کون سی معلومات کمی ہے۔"
+    },
+    {
+      "id": 50,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "آپ کئی متعلقہ خیالات کو ذہن میں رکھتے ہوئے یہ سمجھ سکتے ہیں کہ وہ آپس میں کیسے جڑے ہیں۔"
+    },
+    {
+      "id": 51,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "روزمرہ مطالعے میں آنے والے زیادہ تر الفاظ کا درست مطلب آپ کو معلوم ہوتا ہے۔"
+    },
+    {
+      "id": 52,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ کسی عام لفظ کے کئی مترادفات فوراً سوچ سکتے ہیں۔"
+    },
+    {
+      "id": 53,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ ملتے جلتے الفاظ کی فہرست میں سے وہ لفظ شناخت کر سکتے ہیں جو باقیوں سے مختلف ہو۔"
+    },
+    {
+      "id": 54,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ \"حسد\" اور \"رشک\" جیسے ملتے جلتے الفاظ کے فرق کو سمجھتے ہیں۔"
+    },
+    {
+      "id": 55,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ کتابوں یا مضامین میں ملنے والے نامانوس الفاظ کی تعریف بیان کر سکتے ہیں۔"
+    },
+    {
+      "id": 56,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ محسوس کر لیتے ہیں جب کوئی لفظ جملے میں غلط طریقے سے استعمال ہو رہا ہو۔"
+    },
+    {
+      "id": 57,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ کسی نامانوس لفظ کا مطلب اس کی جڑ یا سابقے سے اندازہ لگا سکتے ہیں۔"
+    },
+    {
+      "id": 58,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ نئے الفاظ سیکھنے اور ان کے درست مطلب یاد رکھنے سے لطف اندوز ہوتے ہیں۔"
+    },
+    {
+      "id": 59,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ تقریباً کسی بھی لفظ کا متضاد فوراً سوچ سکتے ہیں۔"
+    },
+    {
+      "id": 60,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ کو \"کثرت\" کے ہم معنی کئی الفاظ معلوم ہیں۔"
+    },
+    {
+      "id": 61,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ \"امید\" اور \"توقع\" جیسے الفاظ کے درمیان باریک فرق محسوس کر سکتے ہیں۔"
+    },
+    {
+      "id": 62,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ دوسری زبانوں سے آئے ہوئے الفاظ پہچانتے ہیں اور ان کا تقریباً مطلب جانتے ہیں۔"
+    },
+    {
+      "id": 63,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ \"کتاب کا تعلق پڑھنے سے ہے جیسے کانٹے کا تعلق ___ سے ہے\" جیسی تشبیہ مکمل کر سکتے ہیں۔"
+    },
+    {
+      "id": 64,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ محاورات اور تشبیہاتی زبان کو بغیر وضاحت کے سمجھ لیتے ہیں۔"
+    },
+    {
+      "id": 65,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ کئی قریبی متبادلات میں سے وہ لفظ چن سکتے ہیں جو جملے پر بہترین طور پر فٹ ہو۔"
+    },
+    {
+      "id": 66,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ کو عام سابقوں اور لاحقوں کا مطلب معلوم ہے۔"
+    },
+    {
+      "id": 67,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ \"اچھا\" یا \"ٹھیک\" جیسے مبہم لفظ کی بجائے زیادہ درست لفظ استعمال کر سکتے ہیں۔"
+    },
+    {
+      "id": 68,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ محسوس کر لیتے ہیں جب کوئی لفظ تھوڑا غلط استعمال ہو، چاہے مطلب قریب ہی کیوں نہ ہو۔"
+    },
+    {
+      "id": 69,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ کا ذخیرہ الفاظ زیادہ تر لوگوں کے مقابلے میں وسیع ہے۔"
+    },
+    {
+      "id": 70,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ \"اثر\" اور \"اثر انداز ہونا\" جیسے اکثر الجھنے والے الفاظ کا فرق بیان کر سکتے ہیں۔"
+    },
+    {
+      "id": 71,
+      "category": "vocabulary",
+      "reverse": true,
+      "text": "آپ اکثر پہلے سیکھے گئے الفاظ کا درست مطلب بھول جاتے ہیں۔"
+    },
+    {
+      "id": 72,
+      "category": "vocabulary",
+      "reverse": true,
+      "text": "لکھتے یا بولتے وقت آپ کو مترادفات سوچنا مشکل لگتا ہے۔"
+    },
+    {
+      "id": 73,
+      "category": "vocabulary",
+      "reverse": true,
+      "text": "آپ ملتے جلتے آواز والے مگر مختلف مطلب رکھنے والے الفاظ کو ملا دیتے ہیں۔"
+    },
+    {
+      "id": 74,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ ایک گروہ میں سے وہ لفظ شناخت کر سکتے ہیں جو معنوی طور پر باقیوں سے تعلق نہیں رکھتا۔"
+    },
+    {
+      "id": 75,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ کسی مخصوص یا تکنیکی خیال کے لیے درست لفظ فوراً یاد کر لیتے ہیں۔"
+    },
+    {
+      "id": 76,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ کو روزمرہ تصورات کے لیے کم معروف الفاظ بھی معلوم ہیں۔"
+    },
+    {
+      "id": 77,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ محسوس کر لیتے ہیں جب کوئی ترجمہ شدہ لفظ اصل مطلب پوری طرح ادا نہ کر پائے۔"
+    },
+    {
+      "id": 78,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ اپنے شعبے سے باہر کی مخصوص اصطلاحات، جیسے قانون یا طب، سمجھ لیتے ہیں۔"
+    },
+    {
+      "id": 79,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ ایک ہی لفظ کی رسمی اور غیر رسمی شکل میں فرق بتا سکتے ہیں۔"
+    },
+    {
+      "id": 80,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ پرانی تحریروں میں استعمال ہونے والے قدیم یا متروک الفاظ پہچانتے ہیں۔"
+    },
+    {
+      "id": 81,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ کسی لفظ کے احساساتی رنگ کو محسوس کر سکتے ہیں، جیسے \"کفایت شعار\" کا مثبت اور \"کنجوس\" کا منفی تاثر۔"
+    },
+    {
+      "id": 82,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ کو عام الفاظ کے متعدد مطالب معلوم ہیں، جیسے ایک لفظ کے کئی استعمال۔"
+    },
+    {
+      "id": 83,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "ابھی سیکھے گئے نامانوس لفظ کو آپ درست طریقے سے جملے میں استعمال کر سکتے ہیں۔"
+    },
+    {
+      "id": 84,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ محسوس کر لیتے ہیں جب کوئی سرخی کسی لفظ کو گمراہ کن انداز میں استعمال کرے۔"
+    },
+    {
+      "id": 85,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ کسی مخصوص سیاق کے لیے مترادفات کی فہرست میں سے موزوں ترین لفظ چن سکتے ہیں۔"
+    },
+    {
+      "id": 86,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ مرکب الفاظ کو ان کے اجزاء میں توڑ کر سمجھ سکتے ہیں۔"
+    },
+    {
+      "id": 87,
+      "category": "vocabulary",
+      "reverse": true,
+      "text": "آپ بعض الفاظ استعمال کرنے سے گریز کرتے ہیں کیونکہ آپ کو ان کا مکمل مطلب یقین سے معلوم نہیں ہوتا۔"
+    },
+    {
+      "id": 88,
+      "category": "vocabulary",
+      "reverse": true,
+      "text": "عام گفتگو میں آنے والے الفاظ کے لیے بھی آپ کو اکثر لغت دیکھنی پڑتی ہے۔"
+    },
+    {
+      "id": 89,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ \"تھکا ہوا\"، \"نڈھال\" اور \"کوفت زدہ\" جیسے قریبی مترادفات میں فرق کر سکتے ہیں۔"
+    },
+    {
+      "id": 90,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ محسوس کر لیتے ہیں جب کسی لفظ کا تکنیکی مطلب اس کے روزمرہ استعمال سے مختلف ہو۔"
+    },
+    {
+      "id": 91,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ الفاظ کے کسی گروہ کا مشترکہ زمرہ فوراً بتا سکتے ہیں۔"
+    },
+    {
+      "id": 92,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ ایسے الفاظ سمجھتے ہیں جن کے کئی سطحی معنی ہوں، جیسا کہ لفظی چٹکلوں میں ہوتا ہے۔"
+    },
+    {
+      "id": 93,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ کسی سادہ لفظ کی جگہ زیادہ واضح یا اثر انگیز لفظ تجویز کر سکتے ہیں۔"
+    },
+    {
+      "id": 94,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ کو عام لاطینی یا یونانی نژاد سائنسی اصطلاحات کا مطلب معلوم ہے۔"
+    },
+    {
+      "id": 95,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ ایک ہی لفظ کی علاقائی یا لہجاتی مختلف صورتیں پہچانتے ہیں۔"
+    },
+    {
+      "id": 96,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ بیان کر سکتے ہیں کہ ملتے جلتے دو الفاظ ایک دوسرے کی جگہ کیوں استعمال نہیں ہو سکتے۔"
+    },
+    {
+      "id": 97,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ رائج ہونے والے نئے الفاظ کو محسوس کرتے ہیں اور ان کا مطلب جلدی سیکھ لیتے ہیں۔"
+    },
+    {
+      "id": 98,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ سیاق و سباق کے اشاروں سے کراس ورڈ یا ورڈ پزل مکمل کر سکتے ہیں۔"
+    },
+    {
+      "id": 99,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ ایسے الفاظ سمجھتے ہیں جو اپنے لفظی معنی سے بڑھ کر ثقافتی یا تاریخی اہمیت رکھتے ہیں۔"
+    },
+    {
+      "id": 100,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "آپ درست طور پر جانچ سکتے ہیں کہ کوئی لفظ لفظی معنوں میں استعمال ہو رہا ہے یا استعاراتی طور پر۔"
+    },
+    {
+      "id": 101,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "کسی حساب کو درست طریقے سے کرنے سے پہلے آپ اس کا موٹا اندازہ لگا سکتے ہیں۔"
+    },
+    {
+      "id": 102,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ ذہن میں فوراً ٹپ یا رعایت کا فیصد نکال سکتے ہیں۔"
+    },
+    {
+      "id": 103,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ محسوس کر لیتے ہیں جب خبروں میں دیا گیا کوئی اعداد و شمار درست نہ ہو۔"
+    },
+    {
+      "id": 104,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ کلومیٹر اور میل جیسی اکائیوں کو بغیر کیلکولیٹر کے آپس میں تبدیل کر سکتے ہیں۔"
+    },
+    {
+      "id": 105,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "مختلف مقداروں کی قیمتوں کا موازنہ کرتے ہوئے آپ بہتر سودا شناخت کر سکتے ہیں۔"
+    },
+    {
+      "id": 106,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ سمجھتے ہیں کہ وقت کے ساتھ مرکب سود کسی رقم کو کیسے بدلتا ہے۔"
+    },
+    {
+      "id": 107,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ کسی سادہ حساب میں غلطی محسوس کر سکتے ہیں صرف یہ جانچ کر کہ جواب مناسب لگتا ہے یا نہیں۔"
+    },
+    {
+      "id": 108,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ روزمرہ حالات میں کسر، تناسب اور فیصد کے ساتھ آسانی سے کام کر سکتے ہیں۔"
+    },
+    {
+      "id": 109,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "فاصلے اور رفتار دیے جانے پر آپ اندازہ لگا سکتے ہیں کہ سفر میں کتنا وقت لگے گا۔"
+    },
+    {
+      "id": 110,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ ایک نظر میں سمجھ لیتے ہیں کہ گراف یا چارٹ کیا بتا رہا ہے۔"
+    },
+    {
+      "id": 111,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ کئی افراد کے درمیان بل کی منصفانہ تقسیم فوراً حساب کر سکتے ہیں۔"
+    },
+    {
+      "id": 112,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ اعداد کے نمونے محسوس کر لیتے ہیں، جیسے ایک مستقل مقدار سے بڑھتی ہوئی ترتیب۔"
+    },
+    {
+      "id": 113,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "اگر آپ کسی ترکیب کو دوگنا کریں تو آپ اندازہ لگا سکتے ہیں کہ کتنی مقدار درکار ہوگی۔"
+    },
+    {
+      "id": 114,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ امکان (probability) کو اتنا سمجھتے ہیں کہ اندازہ لگا سکیں کوئی نتیجہ ممکن ہے یا نہیں۔"
+    },
+    {
+      "id": 115,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ کئی اعداد جمع کرتے وقت ذہنی طور پر مجموعی تعداد یاد رکھ سکتے ہیں۔"
+    },
+    {
+      "id": 116,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ فوراً بتا سکتے ہیں کہ کوئی بتایا گیا اوسط بنیادی اعداد کے مطابق درست لگتا ہے یا نہیں۔"
+    },
+    {
+      "id": 117,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ سمجھتے ہیں کہ نمونے کا حجم کسی اعداد و شمار پر اعتماد کو کیسے متاثر کرتا ہے۔"
+    },
+    {
+      "id": 118,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ کسی مجموعی رقم سے پیچھے کی طرف کام کر کے انفرادی قدر معلوم کر سکتے ہیں۔"
+    },
+    {
+      "id": 119,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ محسوس کر لیتے ہیں جب کسی فیصدی تبدیلی کو گمراہ کن انداز میں بیان کیا جائے۔"
+    },
+    {
+      "id": 120,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ روزمرہ اشیاء کے رقبے یا حجم کا مناسب حد تک درست اندازہ لگا سکتے ہیں۔"
+    },
+    {
+      "id": 121,
+      "category": "numerical_reasoning",
+      "reverse": true,
+      "text": "آپ ذہنی حساب کتاب کی ضرورت والے حالات سے گریز کرتے ہیں۔"
+    },
+    {
+      "id": 122,
+      "category": "numerical_reasoning",
+      "reverse": true,
+      "text": "حساب کے دوران آپ اکثر اعداد کا سلسلہ بھول جاتے ہیں۔"
+    },
+    {
+      "id": 123,
+      "category": "numerical_reasoning",
+      "reverse": true,
+      "text": "آپ کو یہ اندازہ لگانا مشکل لگتا ہے کہ قیمت میں اضافے کا فیصد مناسب ہے یا نہیں۔"
+    },
+    {
+      "id": 124,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ کرنسی کی شرح تبادلہ نکال کر رقم کو معقول حد تک تبدیل کر سکتے ہیں۔"
+    },
+    {
+      "id": 125,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ ڈیٹا میں تعلق (correlation) اور سبب (causation) کے فرق کو سمجھتے ہیں۔"
+    },
+    {
+      "id": 126,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ فوراً بتا سکتے ہیں کہ کسی عددی سلسلے میں اگلا نمبر کیا ہوگا۔"
+    },
+    {
+      "id": 127,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ جانچ سکتے ہیں کہ چارٹ میں دکھایا گیا رجحان واقعی اہم ہے یا نہیں۔"
+    },
+    {
+      "id": 128,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ اوسط، وسطانی اور موڈ جیسے بنیادی شماریاتی تصورات بغیر دقت کے سمجھتے ہیں۔"
+    },
+    {
+      "id": 129,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ سادہ الجبرا کے مسائل حل کر سکتے ہیں، جیسے کسی مساوات میں نامعلوم قدر تلاش کرنا۔"
+    },
+    {
+      "id": 130,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ ایسی گول رقم کی غلطیاں محسوس کر لیتے ہیں جو کسی عدد کا مطلب بدل دیں۔"
+    },
+    {
+      "id": 131,
+      "category": "numerical_reasoning",
+      "reverse": true,
+      "text": "بہت سادہ حساب کے لیے بھی آپ کو اکثر کیلکولیٹر کی ضرورت پڑتی ہے۔"
+    },
+    {
+      "id": 132,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ صرف دیکھ کر اندازہ لگا سکتے ہیں کہ کسی ڈبے میں کتنی چیزیں سما سکتی ہیں۔"
+    },
+    {
+      "id": 133,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ سمجھتے ہیں کہ دو واقعات کا ایک ساتھ پیش آنے کا امکان کیسے ملایا جاتا ہے۔"
+    },
+    {
+      "id": 134,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ آمدنی اور اخراجات کا موازنہ کر کے بجٹ بنا سکتے ہیں۔"
+    },
+    {
+      "id": 135,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ محسوس کر لیتے ہیں جب کوئی دلیل میں اعداد کو مبالغہ آمیز یا گمراہ کن انداز میں استعمال کرے۔"
+    },
+    {
+      "id": 136,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ ذہن میں فوراً کسر کو اعشاریہ یا فیصد میں بدل سکتے ہیں۔"
+    },
+    {
+      "id": 137,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ سمجھتے ہیں کہ سود کی شرح وقت کے ساتھ قرض کی ادائیگی کو کیسے متاثر کرتی ہے۔"
+    },
+    {
+      "id": 138,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ متناسب تعلقات نکال سکتے ہیں، جیسے کسی ترکیب یا نقشے کو بڑا یا چھوٹا کرنا۔"
+    },
+    {
+      "id": 139,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ محسوس کر لیتے ہیں جب دو اعداد جنہیں برابر ہونا چاہیے وہ میل نہ کھائیں۔"
+    },
+    {
+      "id": 140,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ ایسے سوالات حل کر سکتے ہیں جن میں رفتار یا کام کی شرح شامل ہو۔"
+    },
+    {
+      "id": 141,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ موٹے عددی اندازوں کی مدد سے خطرے اور فائدے کا موازنہ کر سکتے ہیں۔"
+    },
+    {
+      "id": 142,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ محسوس کر لیتے ہیں جب \"50% رعایت\" دراصل اتنی بڑی بچت نہ ہو جتنی نظر آتی ہے۔"
+    },
+    {
+      "id": 143,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ ذہنی طور پر چھوٹے اعداد کے جذر یا قوت (power) نکال سکتے ہیں۔"
+    },
+    {
+      "id": 144,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ معیاری انحراف جیسے شماریاتی تصورات کو عملی سطح پر سمجھتے ہیں۔"
+    },
+    {
+      "id": 145,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ فوراً جانچ سکتے ہیں کہ کوئی بل یا رسید درست حساب سے بنی ہے یا نہیں۔"
+    },
+    {
+      "id": 146,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ کسی مالی رپورٹ یا بجٹ میں منطقی تضادات محسوس کر لیتے ہیں۔"
+    },
+    {
+      "id": 147,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ کھیلوں میں امکانات کا مناسب حد تک درست اندازہ لگا سکتے ہیں۔"
+    },
+    {
+      "id": 148,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ سمجھتے ہیں کہ نمائی (exponential) اضافہ مستقل، خطی اضافے سے کیسے مختلف ہے۔"
+    },
+    {
+      "id": 149,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "آپ کسی بڑے عدد کو آسان حصوں میں تقسیم کر کے اس کے ساتھ حساب کر سکتے ہیں۔"
+    },
+    {
+      "id": 150,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "جب کسی منصوبے میں شامل کوئی عدد بدل جائے تو آپ فوراً نئے سرے سے حساب لگا سکتے ہیں۔"
+    },
+    {
+      "id": 151,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ \"اگر یہ تو وہ\" والی استدلال کی زنجیر کو بغیر الجھے پیروی کر سکتے ہیں۔"
+    },
+    {
+      "id": 152,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ محسوس کر لیتے ہیں جب کوئی نتیجہ دیے گئے شواہد سے حقیقتاً نہ نکلتا ہو۔"
+    },
+    {
+      "id": 153,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ کسی کی دلیل میں چھپا منطقی تضاد شناخت کر سکتے ہیں۔"
+    },
+    {
+      "id": 154,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "جب بیانات ایک دوسرے سے متصادم ہوں تو آپ معلوم کر سکتے ہیں کہ کون سچ بول رہا ہے۔"
+    },
+    {
+      "id": 155,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "دیے گئے حقائق کی بنیاد پر آپ طے کر سکتے ہیں کہ کیا لازمی طور پر درست ہے۔"
+    },
+    {
+      "id": 156,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ دوری استدلال (circular reasoning) محسوس کر لیتے ہیں، جہاں نتیجہ محض مقدمے کو دہرا رہا ہو۔"
+    },
+    {
+      "id": 157,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ ایسی پہیلیاں حل کر سکتے ہیں جن میں ایک ایک کر کے امکانات خارج کرنا ضروری ہو۔"
+    },
+    {
+      "id": 158,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ کسی دلیل میں غلط سبب و اثر کا دعویٰ شناخت کر سکتے ہیں۔"
+    },
+    {
+      "id": 159,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ کئی مراحل پر مشتمل استخراج (deduction) کے ذریعے ایک ہی درست جواب تک پہنچ سکتے ہیں۔"
+    },
+    {
+      "id": 160,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ محسوس کر لیتے ہیں جب کوئی ایسی بات فرض کر لے جو ثابت ہی نہ ہوئی ہو۔"
+    },
+    {
+      "id": 161,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ کسی خامی والے موازنے کو پہچان سکتے ہیں، جیسے دو غیر مماثل چیزوں کا موازنہ۔"
+    },
+    {
+      "id": 162,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ کسی نتیجے تک پہنچنے کے لیے درکار گمشدہ معلومات شناخت کر سکتے ہیں۔"
+    },
+    {
+      "id": 163,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ محسوس کر لیتے ہیں جب کوئی دلیل منطق کی بجائے جذباتی اپیل پر انحصار کرے۔"
+    },
+    {
+      "id": 164,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ بکھرے ہوئے سراغوں سے واقعات کی ترتیب معلوم کر سکتے ہیں۔"
+    },
+    {
+      "id": 165,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ پہچان سکتے ہیں جب دو بیانات منطقی طور پر ایک دوسرے سے متضاد ہوں۔"
+    },
+    {
+      "id": 166,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ محسوس کر لیتے ہیں جب کسی عمومی اصول کو کسی مخصوص استثنا پر غلط طریقے سے لاگو کیا جائے۔"
+    },
+    {
+      "id": 167,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "دیے گئے حقائق میں سے آپ طے کر سکتے ہیں کہ کون سا نتیجہ سب سے زیادہ درست ہے۔"
+    },
+    {
+      "id": 168,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ \"پھسلن دار ڈھلوان\" استدلال محسوس کر لیتے ہیں، جہاں ایک چھوٹا قدم انتہائی نتیجے کی طرف لے جانے کا دعویٰ کیا جائے۔"
+    },
+    {
+      "id": 169,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ ایسی منطقی پہیلیاں حل کر سکتے ہیں جن میں سراغوں کو درست جوابات سے ملانا ہو۔"
+    },
+    {
+      "id": 170,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ محسوس کر لیتے ہیں جب کوئی اپنے استدلال میں \"کچھ\" اور \"سب\" کو گڈمڈ کر دے۔"
+    },
+    {
+      "id": 171,
+      "category": "logical_reasoning",
+      "reverse": true,
+      "text": "کبھی کبھار آپ کسی نتیجے کو قبول کر لیتے ہیں بغیر یہ جانچے کہ اس کے پیچھے کی منطق درست ہے یا نہیں۔"
+    },
+    {
+      "id": 172,
+      "category": "logical_reasoning",
+      "reverse": true,
+      "text": "جب کسی دلیل میں کئی مراحل ہوں تو آپ اس کی منطق کھو دیتے ہیں۔"
+    },
+    {
+      "id": 173,
+      "category": "logical_reasoning",
+      "reverse": true,
+      "text": "آپ کو یہ بتانا مشکل لگتا ہے کہ دو دعوے دراصل ایک دوسرے سے متصادم ہیں یا نہیں۔"
+    },
+    {
+      "id": 174,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ ابھی پڑھے گئے کسی دعوے کا مضبوط ترین جوابی دلیل شناخت کر سکتے ہیں۔"
+    },
+    {
+      "id": 175,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ محسوس کر لیتے ہیں جب کوئی نتیجہ بہت چھوٹے یا غیر معمولی نمونے پر مبنی ہو۔"
+    },
+    {
+      "id": 176,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "دو دیے گئے مقدمات سے آپ معلوم کر سکتے ہیں کہ کون سا نتیجہ لازمی طور پر نکلتا ہے۔"
+    },
+    {
+      "id": 177,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ ایک جھوٹی دو راہی (false dilemma) شناخت کر سکتے ہیں، جہاں دراصل مزید اختیارات موجود ہوں مگر صرف دو پیش کیے جائیں۔"
+    },
+    {
+      "id": 178,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ محسوس کر لیتے ہیں جب کوئی کسی دلیل کا جواب دینے کے بجائے صرف اسے کوئی لیبل لگا کر رد کر دے۔"
+    },
+    {
+      "id": 179,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ کسی منطقی پہیلی کو حل کرنے کے لیے سب سے مؤثر ترتیب معلوم کر سکتے ہیں۔"
+    },
+    {
+      "id": 180,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ محسوس کر لیتے ہیں جب صرف ایک طرف کی حمایت کے لیے چنیدہ شواہد پیش کیے جائیں۔"
+    },
+    {
+      "id": 181,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ کسی دلیل میں خامی محسوس کر لیتے ہیں جو کسی غیر متعلقہ موازنے پر انحصار کرتی ہو۔"
+    },
+    {
+      "id": 182,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "متضاد بیانات کی بنیاد پر آپ معلوم کر سکتے ہیں کہ کون سا مشتبہ شخص جھوٹ بول رہا ہے۔"
+    },
+    {
+      "id": 183,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ محسوس کر لیتے ہیں جب کوئی دعویٰ تعلق کو یقینی سبب سمجھ بیٹھے۔"
+    },
+    {
+      "id": 184,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ کسی دلیل کی بنیاد بننے والے غیر بیان کردہ مفروضات شناخت کر سکتے ہیں۔"
+    },
+    {
+      "id": 185,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ \"کس کا کیا ہے\" یا \"کون کہاں بیٹھا ہے\" جیسی منطقی پہیلیوں کو ترتیب وار حل کر سکتے ہیں۔"
+    },
+    {
+      "id": 186,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ محسوس کر لیتے ہیں جب کوئی اصول پہلے دی گئی کسی استثنا سے متصادم ہو۔"
+    },
+    {
+      "id": 187,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ طے کر سکتے ہیں کہ کوئی دلیل درست ہے یا نہیں، چاہے آپ اس کے نتیجے سے متفق نہ ہوں۔"
+    },
+    {
+      "id": 188,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ محسوس کر لیتے ہیں جب کوئی مخالف دلیل کی توڑی مروڑی (strawman) صورت پیش کرے۔"
+    },
+    {
+      "id": 189,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ سراغوں کے سلسلے کو پیچھے کی طرف دیکھ کر وہ سراغ تلاش کر سکتے ہیں جو فٹ نہیں بیٹھتا۔"
+    },
+    {
+      "id": 190,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ محسوس کر لیتے ہیں جب کسی امکان کے بارے میں غلط استدلال کیا جا رہا ہو۔"
+    },
+    {
+      "id": 191,
+      "category": "logical_reasoning",
+      "reverse": true,
+      "text": "آپ پراعتماد انداز میں پیش کی گئی دلیلوں پر یقین کر لیتے ہیں چاہے ان کی منطق کمزور ہو۔"
+    },
+    {
+      "id": 192,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ وہ واحد وضاحت معلوم کر سکتے ہیں جو دیے گئے تمام شواہد کی وضاحت کرتی ہو۔"
+    },
+    {
+      "id": 193,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ محسوس کر لیتے ہیں جب دو الگ زمروں کو غلط طور پر ایک جیسا سمجھا جا رہا ہو۔"
+    },
+    {
+      "id": 194,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ کسی طویل استدلالی زنجیر کی کمزور ترین کڑی شناخت کر سکتے ہیں۔"
+    },
+    {
+      "id": 195,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ محسوس کر لیتے ہیں جب دلیل جیتنے کے لیے کسی تعریف کو درمیان میں بدل دیا جائے۔"
+    },
+    {
+      "id": 196,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ معلوم کر سکتے ہیں کہ کسی اختلاف کو حل کرنے کے لیے مزید کون سی معلومات درکار ہوں گی۔"
+    },
+    {
+      "id": 197,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ محسوس کر لیتے ہیں جب وقت کی ترتیب کو غلط طور پر یہ ظاہر کرنے کے لیے استعمال کیا جائے کہ ایک واقعے نے دوسرے کو جنم دیا۔"
+    },
+    {
+      "id": 198,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ کسی بیان کا منطقی متضاد معلوم کر سکتے ہیں۔"
+    },
+    {
+      "id": 199,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ محسوس کر لیتے ہیں جب کوئی دلیل حقیقی شواہد کی بجائے صرف اختیار (authority) پر انحصار کرے۔"
+    },
+    {
+      "id": 200,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "آپ منظم انداز میں غلط اختیارات کو خارج کرتے ہوئے صرف درست جواب تک پہنچ سکتے ہیں۔"
+    },
+    {
+      "id": 201,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ اشکال یا علامتوں کے سلسلے کو جوڑنے والا اصول فوراً پہچان سکتے ہیں۔"
+    },
+    {
+      "id": 202,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ ایسی چیزوں میں دہرائے جانے والے نمونے محسوس کر لیتے ہیں جنہیں دوسرے بے ترتیب سمجھیں۔"
+    },
+    {
+      "id": 203,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "صرف مختصر جائزے سے آپ بتا سکتے ہیں کہ سلسلے میں اگلا کیا آئے گا۔"
+    },
+    {
+      "id": 204,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ اس ایک چیز کو شناخت کر سکتے ہیں جو ورنہ یکساں نمونے کو توڑتی ہے۔"
+    },
+    {
+      "id": 205,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ کوئی تجریدی تعلق معلوم کر سکتے ہیں، جیسے ایک شکل دوسری میں کیسے بدلتی ہے۔"
+    },
+    {
+      "id": 206,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ بظاہر غیر متعلقہ حالات یا خیالات کے درمیان مماثلت محسوس کر لیتے ہیں۔"
+    },
+    {
+      "id": 207,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ چیزوں کو کسی چھپے مشترکہ اصول کی بنیاد پر زمروں میں تقسیم کر سکتے ہیں۔"
+    },
+    {
+      "id": 208,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ کسی پہیلی کی بنیادی منطق بغیر وضاحت کے سمجھ سکتے ہیں۔"
+    },
+    {
+      "id": 209,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ محسوس کر لیتے ہیں جب سلسلے کے درمیان میں کوئی نمونہ بدل جائے۔"
+    },
+    {
+      "id": 210,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ دو بہت مختلف مثالوں میں ایک جیسا تجریدی ڈھانچہ پہچان سکتے ہیں۔"
+    },
+    {
+      "id": 211,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "صرف چند مثالوں سے آپ اندازہ لگا سکتے ہیں کہ نمونہ آگے کیسے جاری رہے گا۔"
+    },
+    {
+      "id": 212,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ بصری یا عددی نمونوں میں تناسب یا تکرار جلدی محسوس کر لیتے ہیں۔"
+    },
+    {
+      "id": 213,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ کسی \"پہلے\" اور \"بعد\" کے جوڑے کے درمیان لاگو ہونے والا تبدیلی کا اصول شناخت کر سکتے ہیں۔"
+    },
+    {
+      "id": 214,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ ایسی پہیلیاں حل کر سکتے ہیں جن میں کئی غیر متعلقہ چیزوں کے مابین تعلق تلاش کرنا ہو۔"
+    },
+    {
+      "id": 215,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ وقت کے ساتھ دہرائے جانے والے رویوں یا واقعات کے نمونے محسوس کر لیتے ہیں۔"
+    },
+    {
+      "id": 216,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ کسی نامکمل نمونے میں گمشدہ عناصر معلوم کر سکتے ہیں۔"
+    },
+    {
+      "id": 217,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ کئی مثالوں کو جوڑنے والا بنیادی موضوع پہچان سکتے ہیں۔"
+    },
+    {
+      "id": 218,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ محسوس کر لیتے ہیں جب کوئی سلسلہ ایک وقت میں ایک سے زیادہ اصولوں کی پیروی کرے۔"
+    },
+    {
+      "id": 219,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ ابھی سیکھا ہوا اصول کسی بالکل نئی مثال پر ذہنی طور پر لاگو کر سکتے ہیں۔"
+    },
+    {
+      "id": 220,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ موسیقی، فن یا ڈیزائن میں دہرائے جانے والے ڈھانچے بغیر باقاعدہ تربیت کے محسوس کر لیتے ہیں۔"
+    },
+    {
+      "id": 221,
+      "category": "abstract_reasoning",
+      "reverse": true,
+      "text": "آپ اکثر یہ نہیں بتا پاتے کہ متعلقہ اشیاء کے کسی گروہ کو کیا چیز جوڑتی ہے۔"
+    },
+    {
+      "id": 222,
+      "category": "abstract_reasoning",
+      "reverse": true,
+      "text": "آپ کو یہ اندازہ لگانا مشکل لگتا ہے کہ کسی نمونے یا سلسلے میں اگلا کیا آئے گا۔"
+    },
+    {
+      "id": 223,
+      "category": "abstract_reasoning",
+      "reverse": true,
+      "text": "عام طور پر آپ محسوس نہیں کرتے جب کوئی چیز کسی قائم شدہ نمونے کو توڑتی ہو۔"
+    },
+    {
+      "id": 224,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ اشکال یا علامتوں کے مجموعے میں سے مختلف چیز شناخت کر سکتے ہیں۔"
+    },
+    {
+      "id": 225,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ \"دائرہ اور کرہ\" جیسی تشبیہات پر استدلال کر سکتے ہیں کہ مربع کا تعلق ___ سے ہے۔"
+    },
+    {
+      "id": 226,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ محسوس کر لیتے ہیں جب کوئی اصول جو پہلے کی مثالوں پر لاگو ہوتا تھا، نئی مثال پر ناکام ہو جائے۔"
+    },
+    {
+      "id": 227,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ چند مثالوں سے کسی کوڈ یا رمز کے کام کرنے کا طریقہ معلوم کر سکتے ہیں۔"
+    },
+    {
+      "id": 228,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ مختلف ذرائع سے آنے والی کہانیوں، دلائل یا خیالات میں دہرائے جانے والے موضوعات محسوس کر لیتے ہیں۔"
+    },
+    {
+      "id": 229,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ وہ واحد اصول شناخت کر سکتے ہیں جو کئی مختلف مشاہدات کی وضاحت کرتا ہو۔"
+    },
+    {
+      "id": 230,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ کسی میٹرکس نما پہیلی کی گمشدہ کڑی معلوم کر کے اسے مکمل کر سکتے ہیں۔"
+    },
+    {
+      "id": 231,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ محسوس کر لیتے ہیں جب دو بظاہر مختلف نمونے دراصل ڈھانچے کے اعتبار سے ایک جیسے ہوں۔"
+    },
+    {
+      "id": 232,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ کسی مانوس نمونے کو پہچان سکتے ہیں چاہے وہ غیرمعمولی انداز میں پیش کیا گیا ہو۔"
+    },
+    {
+      "id": 233,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ ڈیٹا میں ابھرتے رجحانات کو دوسروں سے پہلے محسوس کر لیتے ہیں۔"
+    },
+    {
+      "id": 234,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ گھومتے یا بدلتے سلسلے میں اگلی شکل معلوم کر سکتے ہیں۔"
+    },
+    {
+      "id": 235,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ محسوس کر لیتے ہیں جب کوئی نظام یا عمل ایک دہرائے جانے والے، قابلِ پیش گوئی ڈھانچے کی پیروی کرے۔"
+    },
+    {
+      "id": 236,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "دیے گئے مثالوں کے مجموعے میں سے آپ طے کر سکتے ہیں کہ کون سا اصول بہترین وضاحت پیش کرتا ہے۔"
+    },
+    {
+      "id": 237,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ بالکل مختلف شعبوں کے خیالات کے درمیان تجریدی تعلق محسوس کر لیتے ہیں۔"
+    },
+    {
+      "id": 238,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ گروہ بند اشیاء میں چھپا ہوا عددی نمونہ معلوم کر سکتے ہیں۔"
+    },
+    {
+      "id": 239,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ محسوس کر لیتے ہیں جب کوئی نمونہ پہلی نظر سے کہیں زیادہ پیچیدہ ہو۔"
+    },
+    {
+      "id": 240,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ تصاویر یا آئیکنز کے سلسلے کو جوڑنے والا بصری اصول شناخت کر سکتے ہیں۔"
+    },
+    {
+      "id": 241,
+      "category": "abstract_reasoning",
+      "reverse": true,
+      "text": "نمونوں کو محسوس کرنے کے لیے آپ کو یہ کسی کو بتانا پڑتا ہے۔"
+    },
+    {
+      "id": 242,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ ایک سیاق میں سیکھا اصول بالکل مختلف سیاق پر عام (generalize) کر سکتے ہیں۔"
+    },
+    {
+      "id": 243,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ دہرائے جانے والے چکر محسوس کر لیتے ہیں، جیسے چند قدموں کے بعد دہرایا جانے والا نمونہ۔"
+    },
+    {
+      "id": 244,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ معلوم کر سکتے ہیں کہ کون سی شکل منطقی طور پر بصری سلسلے کو مکمل کرتی ہے۔"
+    },
+    {
+      "id": 245,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ محسوس کر لیتے ہیں جب کوئی مبینہ نمونہ دراصل محض اتفاق ہو۔"
+    },
+    {
+      "id": 246,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ مختلف اقسام کی پہیلیوں میں ایک جیسا بنیادی ڈھانچہ پہچان سکتے ہیں۔"
+    },
+    {
+      "id": 247,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ اس بات کے نمونے محسوس کر لیتے ہیں کہ لوگ یا نظام ملتے جلتے حالات میں عموماً کیسا برتاؤ کرتے ہیں۔"
+    },
+    {
+      "id": 248,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ کسی شکل یا علامت پر لاگو کیے گئے کئی مراحل کی تبدیلیاں معلوم کر سکتے ہیں۔"
+    },
+    {
+      "id": 249,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ محسوس کر لیتے ہیں جب کسی سلسلے میں مستقل رجحان کی بجائے دہرایا جانے والا چکر ہو۔"
+    },
+    {
+      "id": 250,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "آپ کسی نمونے کے بارے میں مفروضے کو نئی مثالوں پر جانچ کر فوراً پرکھ سکتے ہیں۔"
+    },
+    {
+      "id": 251,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "آپ تصور کر سکتے ہیں کہ گھمانے پر کوئی چیز ذہن میں کیسی نظر آئے گی۔"
+    },
+    {
+      "id": 252,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "آپ ذہنی طور پر کسی چپٹے خاکے کو تہہ کر کے اس کی سہ جہتی شکل بنا سکتے ہیں۔"
+    },
+    {
+      "id": 253,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "آپ صرف دیکھ کر فاصلوں اور سائز کا درست اندازہ لگا سکتے ہیں۔"
+    },
+    {
+      "id": 254,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "کمرے میں فرنیچر منتقل کرنے سے پہلے آپ تصور کر سکتے ہیں کہ وہ کیسے فٹ ہوگا۔"
+    },
+    {
+      "id": 255,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "آپ نقشہ پڑھ کر راستہ تصور کر سکتے ہیں بغیر بار بار اسے دیکھنے کی ضرورت کے۔"
+    },
+    {
+      "id": 256,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "عملی طور پر آزمانے سے پہلے آپ ذہنی طور پر پہیلی کے ٹکڑوں کو ترتیب دے سکتے ہیں۔"
+    },
+    {
+      "id": 257,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "آپ تصور کر سکتے ہیں کہ کسی چیز کا دوسرا رخ کیسا نظر آئے گا بغیر دیکھے۔"
+    },
+    {
+      "id": 258,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "آپ صرف دیکھ کر اندازہ لگا سکتے ہیں کہ کوئی چیز کسی خلا میں سے گزر سکے گی یا نہیں۔"
+    },
+    {
+      "id": 259,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "کچے خاکے سے آپ کسی منصوبے کے مکمل نتیجے کا تصور کر سکتے ہیں۔"
+    },
+    {
+      "id": 260,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "آپ ذہنی طور پر کسی چیز کے راستے کو ٹریک کر کے اندازہ لگا سکتے ہیں کہ وہ کہاں جا کر رکے گی۔"
+    },
+    {
+      "id": 261,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "آپ تصور کر سکتے ہیں کہ دو اشکال مل کر کون سی نئی شکل بنائیں گی۔"
+    },
+    {
+      "id": 262,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "کسی نئی جگہ کو صرف ایک بار دیکھنے یا نقشے پر دیکھنے کے بعد آپ آسانی سے وہاں راستہ ڈھونڈ سکتے ہیں۔"
+    },
+    {
+      "id": 263,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "آپ ذہنی طور پر کسی تصویر کو الٹا یا آئینے کی طرح دیکھ سکتے ہیں کہ وہ کیسی نظر آئے گی۔"
+    },
+    {
+      "id": 264,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "آپ زاویوں اور تناسب کا درست اندازہ لگا سکتے ہیں بغیر ناپے۔"
+    },
+    {
+      "id": 265,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "کسی عمارت میں ایک بار چل کر آپ اس کا نقشہ ذہن میں محفوظ کر لیتے ہیں۔"
+    },
+    {
+      "id": 266,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "آپ محدود جگہ میں اشیاء کو مؤثر انداز میں رکھنے کا طریقہ نکال سکتے ہیں۔"
+    },
+    {
+      "id": 267,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "آپ تصور کر سکتے ہیں کہ کسی چیز کو کاٹنے پر اس کا اندرونی حصہ کیسا نظر آئے گا۔"
+    },
+    {
+      "id": 268,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "شروع کرنے سے پہلے آپ خاکے سے فرنیچر کا کوئی سامان ذہنی طور پر جوڑ سکتے ہیں۔"
+    },
+    {
+      "id": 269,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "صرف شکل دیکھ کر آپ بتا سکتے ہیں کہ کون سا برتن زیادہ گنجائش رکھتا ہے۔"
+    },
+    {
+      "id": 270,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "آپ تصور کر سکتے ہیں کہ کوئی نمونہ بڑی سطح پر دہرانے سے کیسا نظر آئے گا۔"
+    },
+    {
+      "id": 271,
+      "category": "spatial_reasoning",
+      "reverse": true,
+      "text": "کئی بار جانے کے باوجود آپ آسانی سے راستہ بھول جاتے ہیں۔"
+    },
+    {
+      "id": 272,
+      "category": "spatial_reasoning",
+      "reverse": true,
+      "text": "کسی چیز کو مختلف زاویے سے تصور کرنا آپ کے لیے مشکل ہے۔"
+    },
+    {
+      "id": 273,
+      "category": "spatial_reasoning",
+      "reverse": true,
+      "text": "صرف دیکھ کر فاصلے یا سائز کا اندازہ لگانا آپ کے لیے مشکل ہے۔"
+    },
+    {
+      "id": 274,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "آپ کسی بھول بھلیوں میں اصل حرکت سے پہلے ذہنی طور پر راستہ طے کر سکتے ہیں۔"
+    },
+    {
+      "id": 275,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "آپ صرف دیکھ کر اندازہ لگا سکتے ہیں کہ گیئر، چرخی یا میکانزم کیسے حرکت کریں گے۔"
+    },
+    {
+      "id": 276,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "آپ فرش کے نقشے سے کمرے کی ترتیب تصور کر سکتے ہیں۔"
+    },
+    {
+      "id": 277,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "آپ اندازہ لگا سکتے ہیں کہ کسی سطح کو ڈھانپنے کے لیے کتنے میٹریل یا رنگ کی ضرورت ہوگی۔"
+    },
+    {
+      "id": 278,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "آپ تصور کر سکتے ہیں کہ کسی مخصوص زاویے سے روشنی اور سایہ کسی چیز پر کیسے پڑے گا۔"
+    },
+    {
+      "id": 279,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "آپ ذہنی طور پر کسی سہ جہتی چیز کو گھما کر جانچ سکتے ہیں کہ وہ دوسری سے میل کھاتی ہے یا نہیں۔"
+    },
+    {
+      "id": 280,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "آپ تصور کر سکتے ہیں کہ چپٹا نمونہ کسی خمیدہ سطح پر لپیٹے جانے کے بعد کیسا نظر آئے گا۔"
+    },
+    {
+      "id": 281,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "آپ فوراً نقشے پر دو مقامات کے درمیان سب سے مختصر راستہ معلوم کر سکتے ہیں۔"
+    },
+    {
+      "id": 282,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "آپ تصور کر سکتے ہیں کہ کسی شکل کو بڑا یا چھوٹا کرنے پر وہ کیسی نظر آئے گی۔"
+    },
+    {
+      "id": 283,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "آپ صرف دیکھ کر کسی چیز یا ڈیزائن کی توازن (symmetry) جانچ سکتے ہیں۔"
+    },
+    {
+      "id": 284,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "آپ کسی مشین کے پھیلے ہوئے خاکے سے اندازہ لگا سکتے ہیں کہ اس کے پرزے کیسے جڑتے ہیں۔"
+    },
+    {
+      "id": 285,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "آپ ذہنی طور پر تصور کر سکتے ہیں کہ گیند یا کوئی چیز کیسے اچھلے گی یا لڑھکے گی۔"
+    },
+    {
+      "id": 286,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "آپ تصور کر سکتے ہیں کہ مختلف فرنیچر کی ترتیب سے کمرہ کیسا محسوس ہوگا۔"
+    },
+    {
+      "id": 287,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "آپ اندازہ لگا سکتے ہیں کہ دو بے ترتیب اشکال پہیلی کے ٹکڑوں کی طرح آپس میں فٹ ہوں گی یا نہیں۔"
+    },
+    {
+      "id": 288,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "آپ ذہنی طور پر ایک ساتھ کئی متحرک اشیاء کو بغیر کھوئے ٹریک کر سکتے ہیں۔"
+    },
+    {
+      "id": 289,
+      "category": "spatial_reasoning",
+      "reverse": true,
+      "text": "آپ اکثر یہ غلط اندازہ لگاتے ہیں کہ کسی چیز کو کتنی جگہ درکار ہوگی۔"
+    },
+    {
+      "id": 290,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "آپ تصور کر سکتے ہیں کہ کوئی ڈیزائن مختلف سائز میں چھپنے یا دکھنے پر کیسا نظر آئے گا۔"
+    },
+    {
+      "id": 291,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "آپ بغیر قطب نما یا جی پی ایس کے بھی سمتوں کا فطری اندازہ لگا سکتے ہیں۔"
+    },
+    {
+      "id": 292,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "آپ پرانی تصویر یا خاکے سے تصور کر سکتے ہیں کہ کوئی عمارت یا چیز پہلے کیسی تھی۔"
+    },
+    {
+      "id": 293,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "آپ کسی تصویر یا پینٹنگ میں گہرائی اور تہہ بندی کا درست اندازہ لگا سکتے ہیں۔"
+    },
+    {
+      "id": 294,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "آپ تصور کر سکتے ہیں کہ کوئی گرہ یا تہہ مکمل ہونے پر کیسی نظر آئے گی۔"
+    },
+    {
+      "id": 295,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "آپ سادہ طبیعیاتی حرکات کا تصور کر سکتے ہیں، جیسے اشیاء کا ڈھیر کیسے گر سکتا ہے۔"
+    },
+    {
+      "id": 296,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "کئی کام نمٹانے کے دوران آپ سب سے مؤثر راستہ نکال سکتے ہیں۔"
+    },
+    {
+      "id": 297,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "آپ تصور کر سکتے ہیں کہ کچھ لگانے یا بنانے سے پہلے کوئی باغ یا خاکہ کیسا نظر آئے گا۔"
+    },
+    {
+      "id": 298,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "آپ صرف نقشہ دیکھ کر بتا سکتے ہیں کہ دو راستوں میں سے کون سا مختصر ہے۔"
+    },
+    {
+      "id": 299,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "آپ کسی چیز کا ڈھانچہ اتنی اچھی طرح تصور کر سکتے ہیں کہ اسے یادداشت سے خاکہ بنا سکیں۔"
+    },
+    {
+      "id": 300,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "آپ ذہنی طور پر کسی چیز کے الگ الگ زاویوں کو ملا کر ایک مکمل سہ جہتی تصویر بنا سکتے ہیں۔"
+    },
+    {
+      "id": 301,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "پہلی ہدایت پر عمل کرتے ہوئے آپ باقی کئی ہدایات بھی ذہن میں رکھ سکتے ہیں۔"
+    },
+    {
+      "id": 302,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "آپ کسی فون نمبر کو لکھے بغیر اتنی دیر یاد رکھ سکتے ہیں کہ اسے ڈائل کر سکیں۔"
+    },
+    {
+      "id": 303,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "آپ گفتگو کے کئی نکات یاد رکھ کر ہر ایک کا جواب دے سکتے ہیں۔"
+    },
+    {
+      "id": 304,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "آپ ایسا ذہنی حساب کر سکتے ہیں جس میں درمیانی نتائج یاد رکھنا ضروری ہو۔"
+    },
+    {
+      "id": 305,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "آپ بار بار دیکھے بغیر کئی مراحل والی ترکیب کی پیروی کر سکتے ہیں۔"
+    },
+    {
+      "id": 306,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "مختصر مداخلت کے بعد بھی آپ کو یاد رہتا ہے کہ آپ کیا کہنے والے تھے۔"
+    },
+    {
+      "id": 307,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "آپ بغیر تحریری فہرست کے خریداری کرتے وقت کئی چیزیں ذہن میں رکھ سکتے ہیں۔"
+    },
+    {
+      "id": 308,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "آپ اعداد کے کسی مجموعے کو اتنی دیر یاد رکھ سکتے ہیں کہ انہیں ذہنی طور پر نئی ترتیب دے سکیں۔"
+    },
+    {
+      "id": 309,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "کھیل کھیلتے ہوئے آپ اسکور اور قوانین دونوں یاد رکھ سکتے ہیں۔"
+    },
+    {
+      "id": 310,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "کسی طویل جملے کے آخر تک پہنچتے پہنچتے آپ کو اس کی ابتدا یاد رہتی ہے۔"
+    },
+    {
+      "id": 311,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "آپ ایک ساتھ کئی چھوٹے کام کر سکتے ہیں بغیر کسی کو بھولے۔"
+    },
+    {
+      "id": 312,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "گروہی گفتگو میں آپ یاد رکھ سکتے ہیں کہ کس نے کیا کہا۔"
+    },
+    {
+      "id": 313,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "آپ کوئی مختصر فہرست صرف ایک بار سننے کے بعد یاد رکھ سکتے ہیں۔"
+    },
+    {
+      "id": 314,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "آپ بغیر لکھے ذہنی \"کرنے کے کام\" کی فہرست یاد رکھ کر ہر کام مکمل کر سکتے ہیں۔"
+    },
+    {
+      "id": 315,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "کئی اعداد ترتیب وار جمع کرتے ہوئے آپ ذہن میں مجموعی تعداد یاد رکھ سکتے ہیں۔"
+    },
+    {
+      "id": 316,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "راستہ ایک بار سننے کے بعد آپ کو دوبارہ پوچھنے کی ضرورت نہیں پڑتی۔"
+    },
+    {
+      "id": 317,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "آپ کئی مراحل والی زبانی ہدایات کو صحیح ترتیب میں عمل میں لا سکتے ہیں۔"
+    },
+    {
+      "id": 318,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "آپ دو متضاد معلومات ذہن میں رکھ کر ان کا موازنہ کر سکتے ہیں۔"
+    },
+    {
+      "id": 319,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "میٹنگ کے شروع میں کہی گئی بات بعد میں کام آنے پر آپ کو یاد رہتی ہے۔"
+    },
+    {
+      "id": 320,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "کہانی پڑھتے وقت آپ کئی کرداروں اور ان کے تعلقات کو یاد رکھ سکتے ہیں۔"
+    },
+    {
+      "id": 321,
+      "category": "working_memory",
+      "reverse": true,
+      "text": "اکثر ہدایت کا باقی حصہ سننے تک آپ اس کا پہلا حصہ بھول جاتے ہیں۔"
+    },
+    {
+      "id": 322,
+      "category": "working_memory",
+      "reverse": true,
+      "text": "اگر آپ کسی کام کے دوران روک دیے جائیں تو آپ بھول جاتے ہیں کہ کیا کر رہے تھے۔"
+    },
+    {
+      "id": 323,
+      "category": "working_memory",
+      "reverse": true,
+      "text": "کوئی بات فوراً نہ لکھیں تو آپ اسے بھول جاتے ہیں۔"
+    },
+    {
+      "id": 324,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "آپ ذہنی طور پر کسی مختصر فہرست کو نئی ترتیب دے سکتے ہیں۔"
+    },
+    {
+      "id": 325,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "آپ اعداد کے کسی سلسلے کو اتنا یاد رکھ سکتے ہیں کہ اسے الٹا دہرا سکیں۔"
+    },
+    {
+      "id": 326,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "کسی کثیر مرحلہ مسئلے کو حل کرتے ہوئے آپ کئی متغیرات ذہن میں رکھ سکتے ہیں۔"
+    },
+    {
+      "id": 327,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "اسی گفتگو میں کچھ دیر پہلے کہی گئی بات آپ کو یاد رہتی ہے۔"
+    },
+    {
+      "id": 328,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "نئی معلومات آنے پر بھی آپ اپنا منصوبہ ذہن میں رکھتے ہوئے اسے ڈھال سکتے ہیں۔"
+    },
+    {
+      "id": 329,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "کسی طویل کام میں آپ کو یاد رہتا ہے کہ کون سے مراحل آپ مکمل کر چکے ہیں۔"
+    },
+    {
+      "id": 330,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "بغیر لکھی یاددہانی کے آپ کئی آخری تاریخوں یا ملاقاتوں کو یاد رکھ سکتے ہیں۔"
+    },
+    {
+      "id": 331,
+      "category": "working_memory",
+      "reverse": true,
+      "text": "کسی بات کی وضاحت کرتے ہوئے آپ اکثر اپنا سلسلہ خیال بھول جاتے ہیں۔"
+    },
+    {
+      "id": 332,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "نئے اعداد شامل ہونے پر آپ ذہنی طور پر مجموعی تعداد اپ ڈیٹ کر سکتے ہیں۔"
+    },
+    {
+      "id": 333,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "آپ کسی مختصر عبارت کو اتنا یاد رکھ سکتے ہیں کہ بعد میں اس کے اہم نکات دہرا سکیں۔"
+    },
+    {
+      "id": 334,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "کچھ اور کرتے ہوئے بھی آپ ہدایات ذہن میں رکھ سکتے ہیں۔"
+    },
+    {
+      "id": 335,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "کوئی کہانی سنتے ہوئے آپ واقعات کی ترتیب یاد رکھ سکتے ہیں۔"
+    },
+    {
+      "id": 336,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "آپ کئی غیر متعلقہ چیزیں اتنی دیر یاد رکھ سکتے ہیں کہ بعد میں انہیں لکھ سکیں۔"
+    },
+    {
+      "id": 337,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "آپ بیک وقت دو سے زیادہ اختیارات کا موازنہ کر سکتے ہیں بغیر کسی کو بھولے۔"
+    },
+    {
+      "id": 338,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "طویل وضاحت سننے کے دوران آپ اپنا سوال ذہن میں رکھ سکتے ہیں یہاں تک کہ اس کا جواب مل جائے۔"
+    },
+    {
+      "id": 339,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "کسی خلل کے بعد بھی آپ کو منصوبے کی مخصوص تفصیلات یاد رہتی ہیں۔"
+    },
+    {
+      "id": 340,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "کھیل کھیلتے یا پہیلی حل کرتے ہوئے آپ کئی قوانین یاد رکھ سکتے ہیں۔"
+    },
+    {
+      "id": 341,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "آپ ہدایات کی فہرست اتنی اچھی طرح یاد رکھ سکتے ہیں کہ انہیں الٹی ترتیب میں انجام دے سکیں۔"
+    },
+    {
+      "id": 342,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "موضوع بدلنے اور دوبارہ واپس آنے کے بعد بھی آپ کو گفتگو کا سیاق یاد رہتا ہے۔"
+    },
+    {
+      "id": 343,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "آپ ایک ساتھ کئی مجموعی تعداد ٹریک کر سکتے ہیں، جیسے مختلف زمروں کے اسکور۔"
+    },
+    {
+      "id": 344,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "بغیر تحریری فہرست کے آپ کو یاد رہتا ہے کہ آپ کون سی چیزیں پہلے ہی چیک کر چکے ہیں۔"
+    },
+    {
+      "id": 345,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "کسی مقام کی طرف یادداشت سے رہنمائی کرتے ہوئے آپ وہ مقام ذہن میں رکھ سکتے ہیں۔"
+    },
+    {
+      "id": 346,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "آپ کئی ملاقاتوں کی تفصیلات کو گڈمڈ کیے بغیر یاد رکھ سکتے ہیں۔"
+    },
+    {
+      "id": 347,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "آپ کچھ دیر کے لیے بغیر لکھے کوڈز یا پاس ورڈز یاد رکھ سکتے ہیں۔"
+    },
+    {
+      "id": 348,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "آپ دو ہدایات ذہن میں رکھ کر طے کر سکتے ہیں کہ کس کو ترجیح دینی ہے۔"
+    },
+    {
+      "id": 349,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "کچھ منٹ پہلے کہی گئی بات کے عین الفاظ آپ کو یاد رہتے ہیں۔"
+    },
+    {
+      "id": 350,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "جواب تشکیل دیتے وقت آپ کسی دلیل کے کئی دھاگے ذہن میں رکھ سکتے ہیں۔"
+    },
+    {
+      "id": 351,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "آپ کسی صفحے پر نظر دوڑا کر مطلوبہ تفصیل فوراً ڈھونڈ سکتے ہیں۔"
+    },
+    {
+      "id": 352,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "آپ سادہ فیصلے بغیر اضافی وقت لیے تیزی سے کر سکتے ہیں۔"
+    },
+    {
+      "id": 353,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "آپ ملتی جلتی چیزوں کو، جیسے سائز یا رنگ کے مطابق، فوراً چھانٹ سکتے ہیں۔"
+    },
+    {
+      "id": 354,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "آپ بنیادی معلومات پڑھ کر بغیر سست ہوئے سمجھ لیتے ہیں۔"
+    },
+    {
+      "id": 355,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "آپ دو ملتی جلتی تصاویر یا دستاویزات کے فرق فوراً محسوس کر لیتے ہیں۔"
+    },
+    {
+      "id": 356,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "آپ زبانی ہدایات کو حقیقی وقت میں سمجھ لیتے ہیں بغیر سست کیے۔"
+    },
+    {
+      "id": 357,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "آپ آسان مگر بار بار دہرائے جانے والے کام درستگی برقرار رکھتے ہوئے تیزی سے مکمل کر سکتے ہیں۔"
+    },
+    {
+      "id": 358,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "آپ اپنی جگہ کھوئے بغیر چیزوں کو تیزی سے گن سکتے ہیں۔"
+    },
+    {
+      "id": 359,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "تیز رفتار گفتگو میں آپ پیچھے رہے بغیر فوراً جواب دے سکتے ہیں۔"
+    },
+    {
+      "id": 360,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "آپ کسی دستاویز پر نظر دوڑا کر اہم نکات فوراً نکال سکتے ہیں۔"
+    },
+    {
+      "id": 361,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "آپ کئی ملتی جلتی چیزوں میں سے مختلف چیز فوراً شناخت کر سکتے ہیں۔"
+    },
+    {
+      "id": 362,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "کسی کھیل یا کام میں غیر متوقع بات ہونے پر آپ فوراً ردعمل دے سکتے ہیں۔"
+    },
+    {
+      "id": 363,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "آپ کسی مصروف بصری منظر کو تیزی سے پروسیس کر کے جان سکتے ہیں کہ کہاں توجہ دینی ہے۔"
+    },
+    {
+      "id": 364,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "آپ سادہ فارم بغیر زیادہ سوچے فوراً پُر کر سکتے ہیں۔"
+    },
+    {
+      "id": 365,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "تیز بولنے والے شخص کی بات سے آپ پیچھے نہیں رہتے۔"
+    },
+    {
+      "id": 366,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "آپ چیزوں کو بغیر ہچکچائے فوراً درست زمروں میں تقسیم کر سکتے ہیں۔"
+    },
+    {
+      "id": 367,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "آپ فوراً جانچ سکتے ہیں کہ کوئی مخصوص چیز فہرست میں موجود ہے یا نہیں۔"
+    },
+    {
+      "id": 368,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "آپ علامتوں یا کوڈز کو فوراً ان کے متعلقہ مطلب سے ملا سکتے ہیں۔"
+    },
+    {
+      "id": 369,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "آپ ڈیش بورڈ یا نقشے جیسی بصری معلومات فوراً پروسیس کر سکتے ہیں۔"
+    },
+    {
+      "id": 370,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "حالات اچانک بدلنے پر آپ فوراً منصوبے کا نیا حساب لگا سکتے ہیں۔"
+    },
+    {
+      "id": 371,
+      "category": "processing_speed",
+      "reverse": true,
+      "text": "معلومات پروسیس کرنے میں آپ کو زیادہ تر لوگوں کے مقابلے میں زیادہ وقت لگتا ہے۔"
+    },
+    {
+      "id": 372,
+      "category": "processing_speed",
+      "reverse": true,
+      "text": "تیز رفتار گفتگو یا کاموں میں آپ پیچھے رہ جاتے ہیں۔"
+    },
+    {
+      "id": 373,
+      "category": "processing_speed",
+      "reverse": true,
+      "text": "ملتی جلتی چیزوں کے چھوٹے فرق محسوس کرنے میں آپ کو وقت لگتا ہے۔"
+    },
+    {
+      "id": 374,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "کئی ممکنہ جوابات میں سے آپ درست جواب فوراً شناخت کر سکتے ہیں۔"
+    },
+    {
+      "id": 375,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "کچھ اور کرتے ہوئے بھی آپ فوراً ہدایات پر عمل کر سکتے ہیں۔"
+    },
+    {
+      "id": 376,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "آپ کسی دستاویز کو فوراً پروف ریڈ کر کے واضح غلطیاں پکڑ سکتے ہیں۔"
+    },
+    {
+      "id": 377,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "آپ مختلف سادہ کاموں کے درمیان بغیر رفتار کھوئے فوراً سوئچ کر سکتے ہیں۔"
+    },
+    {
+      "id": 378,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "آپ کسی صورتحال کا فوراً جائزہ لے کر مناسب پہلا قدم طے کر سکتے ہیں۔"
+    },
+    {
+      "id": 379,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "تیز سوال جواب کے تبادلے میں آپ اپنی رفتار برقرار رکھ سکتے ہیں۔"
+    },
+    {
+      "id": 380,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "آپ فوراً بتا سکتے ہیں کہ دو تحریری اقتباسات ایک جیسے ہیں یا مختلف۔"
+    },
+    {
+      "id": 381,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "آپ کسی تیز رفتار ویڈیو گیم جیسی اسکرین کی تبدیلیوں کو پروسیس کر سکتے ہیں۔"
+    },
+    {
+      "id": 382,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "آپ چند اشیاء کی تعداد فوراً بغیر تاخیر کے جمع کر سکتے ہیں۔"
+    },
+    {
+      "id": 383,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "بدلتی ہدایات پر آپ بغیر گھبرائے فوراً ردعمل دے سکتے ہیں۔"
+    },
+    {
+      "id": 384,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "کسی بھیڑ والے منظر میں آپ کسی جانے پہچانے چہرے یا چیز کو فوراً شناخت کر سکتے ہیں۔"
+    },
+    {
+      "id": 385,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "آپ ہدایات کا تیز سلسلہ بغیر دہرائے پروسیس کر سکتے ہیں۔"
+    },
+    {
+      "id": 386,
+      "category": "processing_speed",
+      "reverse": true,
+      "text": "آپ کو ساتھ چلنے کے لیے اکثر باتیں دہرانے یا سست کرنے کی ضرورت پڑتی ہے۔"
+    },
+    {
+      "id": 387,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "آپ سادہ، دہرائی جانے والی پہیلیاں بغیر سست ہوئے فوراً مکمل کر سکتے ہیں۔"
+    },
+    {
+      "id": 388,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "خریداری کرتے وقت آپ قیمتوں یا قدر کا موازنہ فوراً کر سکتے ہیں۔"
+    },
+    {
+      "id": 389,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "آپ کسی بھرے چارٹ یا جدول میں مخصوص قدر فوراً ڈھونڈ سکتے ہیں۔"
+    },
+    {
+      "id": 390,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "گاڑی چلاتے وقت ٹریفک سگنلز جیسے تیز بصری اشاروں کو آپ فوراً پروسیس کر سکتے ہیں۔"
+    },
+    {
+      "id": 391,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "آپ چھوٹے فیصلوں پر زیادہ سوچے بغیر آسان اختیارات میں سے فوراً انتخاب کر سکتے ہیں۔"
+    },
+    {
+      "id": 392,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "آپ کسی قطار میں وہ چیز فوراً شناخت کر سکتے ہیں جو باقیوں سے میل نہیں کھاتی۔"
+    },
+    {
+      "id": 393,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "مباحثے جیسے تیز زبانی تبادلوں کو آپ بغیر پیچھے رہے پروسیس کر سکتے ہیں۔"
+    },
+    {
+      "id": 394,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "آپ کم سے کم غلطیوں کے ساتھ سادہ ڈیٹا انٹری کا کام فوراً مکمل کر سکتے ہیں۔"
+    },
+    {
+      "id": 395,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "آپ گفتگو یا سرگرمی کی تیزی سے بدلتی رفتار کے ساتھ فوراً خود کو ڈھال سکتے ہیں۔"
+    },
+    {
+      "id": 396,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "آپ گزرتے ہوئے اعداد یا علامتوں کا نمونہ فوراً پہچان سکتے ہیں۔"
+    },
+    {
+      "id": 397,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "کسی کام کے دوران پیچھے رہے بغیر آپ ہدایات کا تیز تسلسل پروسیس کر سکتے ہیں۔"
+    },
+    {
+      "id": 398,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "آپ کئی اختیارات میں سے سب سے مختصر یا تیز ترین راستہ فوراً شناخت کر سکتے ہیں۔"
+    },
+    {
+      "id": 399,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "آپ سرچ نتائج کو تیزی سے دیکھ کر سب سے موزوں نتیجہ فوراً تلاش کر سکتے ہیں۔"
+    },
+    {
+      "id": 400,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "آپ فوراً سادہ ذہنی جانچ کر سکتے ہیں، جیسے یہ تصدیق کرنا کہ کوئی مجموعی رقم درست لگتی ہے۔"
+    },
+    {
+      "id": 401,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "آپ کسی بڑے اور الجھے ہوئے مسئلے کو چھوٹے، قابلِ عمل مراحل میں تقسیم کر سکتے ہیں۔"
+    },
+    {
+      "id": 402,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "آپ کسی مشکل مسئلے کے لیے ایک سے زیادہ قابلِ عمل حل سوچ سکتے ہیں۔"
+    },
+    {
+      "id": 403,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "جب معمول کا طریقہ دستیاب نہ ہو تو آپ کوئی عملی متبادل تلاش کر سکتے ہیں۔"
+    },
+    {
+      "id": 404,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "فیصلہ کرنے سے پہلے آپ مختلف اختیارات کے فوائد و نقصانات تول سکتے ہیں۔"
+    },
+    {
+      "id": 405,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "آپ کسی مسئلے کی اصل بنیادی وجہ شناخت کر سکتے ہیں، نہ کہ صرف اس کی علامات۔"
+    },
+    {
+      "id": 406,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "حالات اچانک بدلنے پر آپ اپنا منصوبہ فوراً ڈھال سکتے ہیں۔"
+    },
+    {
+      "id": 407,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "نامکمل معلومات کے باوجود آپ کوئی لائحہ عمل بنا سکتے ہیں۔"
+    },
+    {
+      "id": 408,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "جب ایک ساتھ کئی مسائل سامنے آئیں تو آپ طے کر سکتے ہیں کہ پہلے کس پر کام کرنا ہے۔"
+    },
+    {
+      "id": 409,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "آپ ایک ایک عنصر جانچ کر یہ معلوم کر سکتے ہیں کہ کوئی چیز کیوں کام نہیں کر رہی۔"
+    },
+    {
+      "id": 410,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "جب واضح طریقہ کارگر نہ ہو تو آپ کوئی تخلیقی حل نکال سکتے ہیں۔"
+    },
+    {
+      "id": 411,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "آپ ممکنہ مسائل کے پیش آنے سے پہلے ہی ان کا اندازہ لگا سکتے ہیں۔"
+    },
+    {
+      "id": 412,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "وقت کے دباؤ میں بھی آپ اعتماد کے ساتھ اختیارات میں سے فیصلہ کر سکتے ہیں۔"
+    },
+    {
+      "id": 413,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "آپ معلوم کر سکتے ہیں کہ کسی مسئلے کو حل کرنے کے لیے دراصل کن وسائل کی ضرورت ہے۔"
+    },
+    {
+      "id": 414,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "آپ جانچ سکتے ہیں کہ تجویز کردہ حل واقعی بنیادی مسئلے کو ٹھیک کرے گا یا نہیں۔"
+    },
+    {
+      "id": 415,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "مناسب اوزار میسر نہ ہونے کے باوجود آپ کوئی معقول حل تجویز کر سکتے ہیں۔"
+    },
+    {
+      "id": 416,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "آپ کئی کاموں کو مکمل کرنے کا سب سے مؤثر طریقہ معلوم کر سکتے ہیں۔"
+    },
+    {
+      "id": 417,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "آپ محسوس کر لیتے ہیں جب کوئی منتخب حل کارگر نہ ہو اور راستہ بدل سکتے ہیں۔"
+    },
+    {
+      "id": 418,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "آپ کسی مبہم مقصد کو ٹھوس اور قابلِ عمل مراحل میں تقسیم کر سکتے ہیں۔"
+    },
+    {
+      "id": 419,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "فیصلہ کرتے وقت آپ فوری آسانی اور طویل مدتی نتائج کا موازنہ کر سکتے ہیں۔"
+    },
+    {
+      "id": 420,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "کوئی چیز کیسے کام کرتی ہے یہ سمجھ کر آپ اسے ٹھیک کرنے کا طریقہ معلوم کر سکتے ہیں۔"
+    },
+    {
+      "id": 421,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "جب کسی مسئلے کا واضح حل نہ ہو تو آپ اٹک جاتے ہیں۔"
+    },
+    {
+      "id": 422,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "کئی معقول اختیارات میں سے فیصلہ کرنا آپ کے لیے مشکل ہے۔"
+    },
+    {
+      "id": 423,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "آپ عام طور پر پہلے سوچے گئے حل پر ہی قائم رہتے ہیں، چاہے وہ بہترین نہ ہو۔"
+    },
+    {
+      "id": 424,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "جب آپ کا اصل منصوبہ کسی رکاوٹ سے ٹکرائے تو آپ متبادل طریقے تلاش کر سکتے ہیں۔"
+    },
+    {
+      "id": 425,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "آپ معلوم کر سکتے ہیں کہ کوئی چیز غلط ہونے کی سب سے ممکنہ وجہ کیا ہے۔"
+    },
+    {
+      "id": 426,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "تمام مطلوبہ معلومات نہ ہونے کے باوجود آپ اچھا فیصلہ کر سکتے ہیں۔"
+    },
+    {
+      "id": 427,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "آپ محدود وقت، رقم یا وسائل جیسی پابندی کے اردگرد منصوبہ بندی کر سکتے ہیں۔"
+    },
+    {
+      "id": 428,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "آپ بڑے مسئلے کے اس حصے کو پہچان سکتے ہیں جو ابھی حل کیا جا سکتا ہے۔"
+    },
+    {
+      "id": 429,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "جب دو مقاصد آپس میں ٹکرائیں تو آپ کوئی معقول درمیانی راستہ نکال سکتے ہیں۔"
+    },
+    {
+      "id": 430,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "آپ طے کر سکتے ہیں کہ کب اکیلے حل کرنے کے بجائے مدد مانگنا بہتر ہے۔"
+    },
+    {
+      "id": 431,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "فیصلہ کرنے سے پہلے آپ اس کے ممکنہ نتائج پر غور کر سکتے ہیں۔"
+    },
+    {
+      "id": 432,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "آپ کسی موجودہ حل کو تھوڑا مختلف نئے مسئلے کے مطابق ڈھال سکتے ہیں۔"
+    },
+    {
+      "id": 433,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "آپ کسی طویل مدتی مقصد تک پہنچنے کے لیے مرحلہ وار منصوبہ بنا سکتے ہیں۔"
+    },
+    {
+      "id": 434,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "مسئلہ حل کرتے وقت آپ پہچان سکتے ہیں کہ کون سی تفصیلات اہم ہیں اور کون سی محض توجہ ہٹاتی ہیں۔"
+    },
+    {
+      "id": 435,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "آپ محفوظ مگر معمولی حل اور زیادہ خطرناک مگر ممکنہ طور پر بہتر حل کے درمیان فیصلہ کر سکتے ہیں۔"
+    },
+    {
+      "id": 436,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "آپ کسی ایسے مسئلے کو حل کرنے کا طریقہ نکال سکتے ہیں جس کا آپ کو پہلے کبھی سامنا نہ ہوا ہو۔"
+    },
+    {
+      "id": 437,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "آپ ہر ممکنہ حل میں شامل سمجھوتوں (trade-offs) کو شناخت کر سکتے ہیں۔"
+    },
+    {
+      "id": 438,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "آپ محسوس کر لیتے ہیں جب کسی مسئلے کو معمولی تبدیلی کی بجائے بالکل نئے طریقے کی ضرورت ہو۔"
+    },
+    {
+      "id": 439,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "پیچیدہ مسئلے کا سامنا کرتے وقت آپ اکثر توجہ مرکوز کرنے کے بجائے مغلوب محسوس کرتے ہیں۔"
+    },
+    {
+      "id": 440,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "حقیقی وقت کے دباؤ والی صورتحال میں آپ فوری مگر معقول فیصلے کر سکتے ہیں۔"
+    },
+    {
+      "id": 441,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "آپ حالات مزید خراب کیے بغیر کسی غلطی کو ٹھیک کرنے کا طریقہ نکال سکتے ہیں۔"
+    },
+    {
+      "id": 442,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "فیصلہ کرنے سے پہلے آپ پہچان سکتے ہیں کہ کن فریقین یا عوامل پر غور ضروری ہے۔"
+    },
+    {
+      "id": 443,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "آپ کسی غیرمتوقع نتیجے کی کئی ممکنہ وضاحتیں پیش کر سکتے ہیں۔"
+    },
+    {
+      "id": 444,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "آپ طے کر سکتے ہیں کہ مزید تاخیر کی بجائے عمل کرنے کے لیے کافی معلومات جمع ہو چکی ہیں۔"
+    },
+    {
+      "id": 445,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "جب آپ کا پہلا منصوبہ واضح طور پر ناکام ہو رہا ہو تو آپ متبادل منصوبہ بنا سکتے ہیں۔"
+    },
+    {
+      "id": 446,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "فیصلہ کرنے سے پہلے آپ معلومات کے مختلف ذرائع کی وقعت تول سکتے ہیں۔"
+    },
+    {
+      "id": 447,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "آپ ایسا سادہ ترین حل شناخت کر سکتے ہیں جو مسئلے کو مکمل طور پر حل کرتا ہو۔"
+    },
+    {
+      "id": 448,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "آپ کاموں کو اس ترتیب میں رکھنے کا طریقہ نکال سکتے ہیں کہ ایک مسئلہ دوسرا مسئلہ پیدا نہ کرے۔"
+    },
+    {
+      "id": 449,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "آپ طے کر سکتے ہیں کہ کوشش کے باوجود ناکام ہوتے طریقے کو کب ترک کرنا ہے۔"
+    },
+    {
+      "id": 450,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "آپ کسی مسئلے کو کسی جانے پہچانے ذیلی مسئلے میں تقسیم کر کے حل کرنے کا طریقہ نکال سکتے ہیں جسے آپ پہلے حل کر چکے ہیں۔"
+    },
+    {
+      "id": 451,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "آپ بغیر توجہ ہٹے کسی کام پر طویل عرصے تک توجہ مرکوز رکھ سکتے ہیں۔"
+    },
+    {
+      "id": 452,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "آپ دو مختلف کاموں کے درمیان اپنی جگہ کھوئے بغیر فوراً توجہ منتقل کر سکتے ہیں۔"
+    },
+    {
+      "id": 453,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "آپ پس منظر کے شور کو نظر انداز کر کے اہم چیز پر توجہ مرکوز رکھ سکتے ہیں۔"
+    },
+    {
+      "id": 454,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "بڑی تصویر پر توجہ دیتے ہوئے بھی آپ کوئی چھوٹی مگر اہم تفصیل محسوس کر لیتے ہیں۔"
+    },
+    {
+      "id": 455,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "توجہ سے کام کرتے ہوئے آپ فون دیکھنے یا توجہ ہٹنے کی خواہش پر قابو پا سکتے ہیں۔"
+    },
+    {
+      "id": 456,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "آخری لمحے میں منصوبہ بدلنے پر آپ فوراً خود کو ڈھال سکتے ہیں۔"
+    },
+    {
+      "id": 457,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "جب پہلا طریقہ کارگر نہ ہو تو آپ اپنا انداز بدل سکتے ہیں۔"
+    },
+    {
+      "id": 458,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "ماحول شور شرابے یا مصروف ہونے کے باوجود آپ کسی کام پر توجہ مرکوز رکھ سکتے ہیں۔"
+    },
+    {
+      "id": 459,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "کسی بورنگ مگر ضروری کام کو مکمل ہونے تک آپ اپنی توجہ برقرار رکھ سکتے ہیں۔"
+    },
+    {
+      "id": 460,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "کسی مداخلت کے بعد آپ فوراً دوبارہ توجہ مرکوز کر سکتے ہیں۔"
+    },
+    {
+      "id": 461,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "نئی معلومات آپ کے پہلے تصور سے متصادم ہونے پر آپ اپنی سوچ ایڈجسٹ کر سکتے ہیں۔"
+    },
+    {
+      "id": 462,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "جب آپ کی توجہ بھٹک جائے تو آپ محسوس کر کے اسے واپس لا سکتے ہیں۔"
+    },
+    {
+      "id": 463,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "دن بھر مختلف اقسام کے کاموں کے درمیان آپ آسانی سے سوئچ کر سکتے ہیں۔"
+    },
+    {
+      "id": 464,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "طویل، دہرائے جانے والے کام کے دوران بھی آپ چوکس اور توجہ مرکوز رہتے ہیں۔"
+    },
+    {
+      "id": 465,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "جب آپ اٹک جائیں تو آپ مسئلے کو بالکل مختلف زاویے سے دیکھ سکتے ہیں۔"
+    },
+    {
+      "id": 466,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "آپ ایک کام کو دوسرے کی قیمت پر متاثر کیے بغیر مؤثر انداز میں ملٹی ٹاسک کر سکتے ہیں۔"
+    },
+    {
+      "id": 467,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "آپ اپنے بات چیت کے انداز کو اس شخص کے مطابق ڈھال سکتے ہیں جس سے آپ بات کر رہے ہیں۔"
+    },
+    {
+      "id": 468,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "آپ کسی صورتحال میں باریک تبدیلیاں محسوس کر لیتے ہیں جنہیں دوسرے نظر انداز کر سکتے ہیں۔"
+    },
+    {
+      "id": 469,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "ضرورت پڑنے پر آپ پرانا طریقہ چھوڑ کر کوئی نیا طریقہ آزما سکتے ہیں۔"
+    },
+    {
+      "id": 470,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "مشغول ماحول میں بھی آپ گفتگو پر توجہ مرکوز رکھ سکتے ہیں۔"
+    },
+    {
+      "id": 471,
+      "category": "attention_flexibility",
+      "reverse": true,
+      "text": "اہم کاموں کے دوران بھی آپ کی توجہ آسانی سے بھٹک جاتی ہے۔"
+    },
+    {
+      "id": 472,
+      "category": "attention_flexibility",
+      "reverse": true,
+      "text": "ایک کام شروع کرنے کے بعد دوسرے کام کی طرف سوئچ کرنا آپ کے لیے مشکل ہے۔"
+    },
+    {
+      "id": 473,
+      "category": "attention_flexibility",
+      "reverse": true,
+      "text": "کارگر نہ ہونے کے باوجود آپ اپنے اصل طریقے پر قائم رہتے ہیں۔"
+    },
+    {
+      "id": 474,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "طویل میٹنگز یا لیکچرز کے دوران آپ اپنا ارتکاز برقرار رکھ سکتے ہیں۔"
+    },
+    {
+      "id": 475,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "غیرمتوقع مداخلت کے بعد آپ فوراً خود کو دوبارہ ترتیب دے سکتے ہیں۔"
+    },
+    {
+      "id": 476,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "آپ کسی معاملے پر مختلف نقطہ ہائے نظر پر غور کر سکتے ہیں، چاہے آپ ابتدا میں ان سے متفق نہ ہوں۔"
+    },
+    {
+      "id": 477,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "کسی اہم کام کے دوران جب آپ کا ذہن بھٹکنے لگے تو آپ خود کو محسوس کر لیتے ہیں۔"
+    },
+    {
+      "id": 478,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "ترجیحات اچانک بدلنے پر آپ اپنے منصوبے آسانی سے ایڈجسٹ کر سکتے ہیں۔"
+    },
+    {
+      "id": 479,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "مجموعی مقصد کو نظر انداز کیے بغیر آپ باریک تفصیلات پر توجہ دے سکتے ہیں۔"
+    },
+    {
+      "id": 480,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "اگر آپ محسوس کریں کہ آپ کی حکمتِ عملی کارگر نہیں تو کام کے دوران ہی اسے بدل سکتے ہیں۔"
+    },
+    {
+      "id": 481,
+      "category": "attention_flexibility",
+      "reverse": true,
+      "text": "کسی طویل یا پیچیدہ کام کے دوران آپ اکثر توجہ کھو دیتے ہیں۔"
+    },
+    {
+      "id": 482,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "تھکاوٹ یا بے دلی کے باوجود آپ کسی کام پر توجہ مرکوز رکھ سکتے ہیں۔"
+    },
+    {
+      "id": 483,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "آپ محسوس کر لیتے ہیں جب کوئی قاعدہ یا مفروضہ جسے آپ استعمال کرتے آئے ہیں اب لاگو نہیں ہوتا۔"
+    },
+    {
+      "id": 484,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "ضرورت کے مطابق آپ وسیع سوچ اور باریک تفصیل کی سوچ کے درمیان سوئچ کر سکتے ہیں۔"
+    },
+    {
+      "id": 485,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "ابتدائی دلچسپی ختم ہونے کے بعد بھی آپ کسی کام سے جڑے رہ سکتے ہیں۔"
+    },
+    {
+      "id": 486,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "معمول یا شیڈول میں اچانک تبدیلی پر آپ فوراً خود کو ڈھال سکتے ہیں۔"
+    },
+    {
+      "id": 487,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "غیر متعلقہ تفصیلات کو نظر انداز کرتے ہوئے آپ متعلقہ معلومات پر خاص توجہ دے سکتے ہیں۔"
+    },
+    {
+      "id": 488,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "کوئی خیال ابتدا میں ناواقف یا عجیب لگنے کے باوجود آپ اسے سنجیدگی سے سوچ سکتے ہیں۔"
+    },
+    {
+      "id": 489,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "دہرائے جانے والے یا یکسانیت والے کام کے دوران بھی آپ تفصیل پر توجہ برقرار رکھ سکتے ہیں۔"
+    },
+    {
+      "id": 490,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "آپ اپنا نقطہ نظر بدل کر سمجھ سکتے ہیں کہ کوئی آپ سے کیوں اختلاف کر رہا ہے۔"
+    },
+    {
+      "id": 491,
+      "category": "attention_flexibility",
+      "reverse": true,
+      "text": "ایک بار رائے قائم کرنے کے بعد اس پر دوبارہ غور کرنا آپ کے لیے مشکل ہے۔"
+    },
+    {
+      "id": 492,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "غیرمتوقع رکاوٹوں کے دوران بھی آپ اپنا سکون اور توجہ برقرار رکھ سکتے ہیں۔"
+    },
+    {
+      "id": 493,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "آپ ایک سیاق میں سیکھی گئی مہارت کو بالکل مختلف سیاق میں لچکدار انداز میں لاگو کر سکتے ہیں۔"
+    },
+    {
+      "id": 494,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "معمولی رکاوٹوں کو نظر انداز کرتے ہوئے آپ کسی کام پر گہری توجہ مرکوز رکھ سکتے ہیں۔"
+    },
+    {
+      "id": 495,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "آپ فوراً محسوس کر لیتے ہیں کہ آپ سے غلطی ہوئی ہے اور اپنا طریقہ درست کر سکتے ہیں۔"
+    },
+    {
+      "id": 496,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "جاری کام اور نئی آنے والی معلومات کے درمیان آپ توجہ کا توازن رکھ سکتے ہیں۔"
+    },
+    {
+      "id": 497,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "جب پرانا طریقہ ناکام ہو جائے تو آپ کسی مانوس مسئلے کو نئے انداز سے دیکھ سکتے ہیں۔"
+    },
+    {
+      "id": 498,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "دلچسپی ختم ہو جانے کے کافی عرصے بعد بھی آپ کسی کام پر توجہ برقرار رکھ سکتے ہیں۔"
+    },
+    {
+      "id": 499,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "یہ محسوس ہونے پر کہ آپ کا ابتدائی مفروضہ غلط تھا، آپ فوراً خود کو ایڈجسٹ کر سکتے ہیں۔"
+    },
+    {
+      "id": 500,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "آپ پہچان سکتے ہیں کہ کب پیچھے ہٹ کر اپنے پورے طریقہ کار پر دوبارہ غور کرنے کا وقت ہے۔"
+    }
+  ]
+}

@@ -1,0 +1,3110 @@
+{
+  "meta": {
+    "title": "Cognitive Intelligence Test",
+    "description": "A self-reflection test inspired by dimensions used in general cognitive ability assessments like the Wechsler Adult Intelligence Scale (WAIS), exploring how you tend to reason, solve problems, and process information across 10 cognitive dimensions.",
+    "scale": {
+      "min": 1,
+      "max": 10,
+      "minLabel": "Not at all true of you",
+      "maxLabel": "Extremely true of you"
+    },
+    "categories": [
+      {
+        "id": "verbal_comprehension",
+        "label": "Verbal Comprehension",
+        "icon": "🗣️"
+      },
+      {
+        "id": "vocabulary",
+        "label": "Vocabulary & Word Knowledge",
+        "icon": "📚"
+      },
+      {
+        "id": "numerical_reasoning",
+        "label": "Numerical & Quantitative Reasoning",
+        "icon": "🔢"
+      },
+      {
+        "id": "logical_reasoning",
+        "label": "Logical & Deductive Reasoning",
+        "icon": "🧩"
+      },
+      {
+        "id": "abstract_reasoning",
+        "label": "Abstract & Pattern Reasoning",
+        "icon": "🔷"
+      },
+      {
+        "id": "spatial_reasoning",
+        "label": "Visual-Spatial Reasoning",
+        "icon": "🧭"
+      },
+      {
+        "id": "working_memory",
+        "label": "Working Memory",
+        "icon": "🧠"
+      },
+      {
+        "id": "processing_speed",
+        "label": "Processing Speed",
+        "icon": "⚡"
+      },
+      {
+        "id": "problem_solving",
+        "label": "Problem-Solving & Decision-Making",
+        "icon": "🛠️"
+      },
+      {
+        "id": "attention_flexibility",
+        "label": "Attention, Focus & Cognitive Flexibility",
+        "icon": "🎯"
+      }
+    ],
+    "levels": [
+      {
+        "min": 9,
+        "max": 10.01,
+        "label": "Exceptional Reasoner",
+        "emoji": "🧠",
+        "desc": "You consistently show sharp, flexible thinking — spotting patterns, solving problems, and reasoning through complexity with real confidence. This looks like a strong, reliable cognitive strength for you."
+      },
+      {
+        "min": 7.5,
+        "max": 9,
+        "label": "Sharp & Capable",
+        "emoji": "🌟",
+        "desc": "You reason clearly and solve problems well in most situations, picking up patterns and logic quickly. A few specific areas may still need more deliberate effort."
+      },
+      {
+        "min": 6,
+        "max": 7.5,
+        "label": "Solid Thinker",
+        "emoji": "👍",
+        "desc": "You generally reason and solve problems effectively, though unfamiliar or complex situations can sometimes slow you down."
+      },
+      {
+        "min": 4.5,
+        "max": 6,
+        "label": "Developing Thinker",
+        "emoji": "🌱",
+        "desc": "Your reasoning is inconsistent — strong in some areas, less confident in others. Focused practice in a few key dimensions could help a lot."
+      },
+      {
+        "min": 3,
+        "max": 4.5,
+        "label": "Emerging Thinker",
+        "emoji": "⚠️",
+        "desc": "Problem-solving and reasoning tasks often feel effortful right now. Small, consistent practice could meaningfully build these skills over time."
+      },
+      {
+        "min": 1,
+        "max": 3,
+        "label": "Building Foundations",
+        "emoji": "📚",
+        "desc": "Your answers suggest these reasoning skills are still developing. This is a good starting point for focused, patient practice."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You can quickly understand the main point of a complicated paragraph."
+    },
+    {
+      "id": 2,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You can explain a complex idea in simple terms so others understand it easily."
+    },
+    {
+      "id": 3,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You pick up on the underlying meaning of a conversation, not just the words spoken."
+    },
+    {
+      "id": 4,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You can follow multi-step verbal instructions without needing them repeated."
+    },
+    {
+      "id": 5,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You notice when a sentence is ambiguous and can work out what it likely means."
+    },
+    {
+      "id": 6,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You can summarize a long article accurately in just a few sentences."
+    },
+    {
+      "id": 7,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You understand jokes and wordplay quickly, even when they're subtle."
+    },
+    {
+      "id": 8,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You can follow the logic of a speaker's argument as they build it point by point."
+    },
+    {
+      "id": 9,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You catch inconsistencies in what someone is telling you while they're still speaking."
+    },
+    {
+      "id": 10,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You can rephrase technical language into everyday terms for someone unfamiliar with the topic."
+    },
+    {
+      "id": 11,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You understand the tone and intent behind a message, not just its literal content."
+    },
+    {
+      "id": 12,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You can read between the lines of a formal letter or email."
+    },
+    {
+      "id": 13,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You grasp new concepts explained verbally without needing a visual aid."
+    },
+    {
+      "id": 14,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You can identify the weakest point in a written argument."
+    },
+    {
+      "id": 15,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You understand analogies and metaphors as soon as you hear them."
+    },
+    {
+      "id": 16,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You can hold a complex verbal explanation in mind while someone finishes speaking."
+    },
+    {
+      "id": 17,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You notice when a speaker contradicts something they said earlier."
+    },
+    {
+      "id": 18,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You can distinguish fact from opinion in something you've just read or heard."
+    },
+    {
+      "id": 19,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You understand instructions written in a dense, formal style without much trouble."
+    },
+    {
+      "id": 20,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You can identify the main argument in a debate even when it's poorly organized."
+    },
+    {
+      "id": 21,
+      "category": "verbal_comprehension",
+      "reverse": true,
+      "text": "You often need someone to reword instructions before you understand what to do."
+    },
+    {
+      "id": 22,
+      "category": "verbal_comprehension",
+      "reverse": true,
+      "text": "You lose track of the point when a conversation gets complicated."
+    },
+    {
+      "id": 23,
+      "category": "verbal_comprehension",
+      "reverse": true,
+      "text": "You find it hard to summarize what you just read."
+    },
+    {
+      "id": 24,
+      "category": "verbal_comprehension",
+      "reverse": true,
+      "text": "You struggle to follow arguments that have more than two or three steps."
+    },
+    {
+      "id": 25,
+      "category": "verbal_comprehension",
+      "reverse": true,
+      "text": "You often miss the underlying message in what someone says."
+    },
+    {
+      "id": 26,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You can quickly figure out what a confusing question is actually asking."
+    },
+    {
+      "id": 27,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You can tell when a written passage is trying to persuade rather than just inform."
+    },
+    {
+      "id": 28,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You understand unfamiliar vocabulary from its context without needing a dictionary."
+    },
+    {
+      "id": 29,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You can identify the assumptions hidden inside someone's statement."
+    },
+    {
+      "id": 30,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You follow along easily when someone explains a process verbally, step by step."
+    },
+    {
+      "id": 31,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You can accurately paraphrase what someone just told you in your own words."
+    },
+    {
+      "id": 32,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You notice subtle shifts in meaning when a word is used in a different context."
+    },
+    {
+      "id": 33,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You can pick out the key facts from a wordy, cluttered explanation."
+    },
+    {
+      "id": 34,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You understand instructions on forms and official documents without confusion."
+    },
+    {
+      "id": 35,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You can follow a story with multiple characters and timelines without getting lost."
+    },
+    {
+      "id": 36,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You recognize when language is being used sarcastically rather than literally."
+    },
+    {
+      "id": 37,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You can construct a clear, well-organized explanation of your own thinking."
+    },
+    {
+      "id": 38,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You understand technical manuals or instructions on the first read."
+    },
+    {
+      "id": 39,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You can identify the central theme of a poem, story, or speech."
+    },
+    {
+      "id": 40,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You catch subtle differences in meaning between similar-sounding words."
+    },
+    {
+      "id": 41,
+      "category": "verbal_comprehension",
+      "reverse": true,
+      "text": "You have to reread things several times before they make sense to you."
+    },
+    {
+      "id": 42,
+      "category": "verbal_comprehension",
+      "reverse": true,
+      "text": "You often misunderstand what someone meant, even in simple conversations."
+    },
+    {
+      "id": 43,
+      "category": "verbal_comprehension",
+      "reverse": true,
+      "text": "You find it difficult to explain your own ideas clearly to others."
+    },
+    {
+      "id": 44,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You can quickly identify the question being asked inside a wordy problem."
+    },
+    {
+      "id": 45,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You understand the reasoning behind a rule, not just the rule itself."
+    },
+    {
+      "id": 46,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You can follow along with unfamiliar accents or speaking styles without much effort."
+    },
+    {
+      "id": 47,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You notice when a translation or paraphrase changes the original meaning."
+    },
+    {
+      "id": 48,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You can understand complex legal or academic language with reasonable ease."
+    },
+    {
+      "id": 49,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You quickly identify what information is missing from an explanation."
+    },
+    {
+      "id": 50,
+      "category": "verbal_comprehension",
+      "reverse": false,
+      "text": "You can hold multiple related ideas in mind while working out how they connect."
+    },
+    {
+      "id": 51,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You know the precise meaning of most words you come across in daily reading."
+    },
+    {
+      "id": 52,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You can think of several synonyms for a common word without much effort."
+    },
+    {
+      "id": 53,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You can identify the odd word out in a list of related terms."
+    },
+    {
+      "id": 54,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You understand the difference between similar words like \"envy\" and \"jealousy.\""
+    },
+    {
+      "id": 55,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You can define uncommon words you encounter in books or articles."
+    },
+    {
+      "id": 56,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You notice when a word is being used incorrectly in a sentence."
+    },
+    {
+      "id": 57,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You can guess the meaning of an unfamiliar word from its root or prefix."
+    },
+    {
+      "id": 58,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You enjoy learning new words and remembering their exact meanings."
+    },
+    {
+      "id": 59,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You can quickly think of the antonym for almost any word."
+    },
+    {
+      "id": 60,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You know several words that mean roughly the same thing as \"abundant.\""
+    },
+    {
+      "id": 61,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You can spot subtle shades of meaning between words like \"hope\" and \"expect.\""
+    },
+    {
+      "id": 62,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You recognize words borrowed from other languages and roughly know what they mean."
+    },
+    {
+      "id": 63,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You can complete an analogy like \"book is to reading as fork is to ___.\""
+    },
+    {
+      "id": 64,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You understand idioms and figures of speech without needing them explained."
+    },
+    {
+      "id": 65,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You can identify which word best fits a sentence among several close options."
+    },
+    {
+      "id": 66,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You know the meanings of common prefixes and suffixes like \"pre-\" or \"-ology.\""
+    },
+    {
+      "id": 67,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You can name a more precise word instead of a vague one like \"good\" or \"nice.\""
+    },
+    {
+      "id": 68,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You recognize when someone uses a word slightly incorrectly, even if the meaning is close."
+    },
+    {
+      "id": 69,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You have a large vocabulary compared to most people you know."
+    },
+    {
+      "id": 70,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You can explain the difference between commonly confused words like \"affect\" and \"effect.\""
+    },
+    {
+      "id": 71,
+      "category": "vocabulary",
+      "reverse": true,
+      "text": "You often forget the exact meaning of words you've learned before."
+    },
+    {
+      "id": 72,
+      "category": "vocabulary",
+      "reverse": true,
+      "text": "You struggle to think of synonyms when writing or speaking."
+    },
+    {
+      "id": 73,
+      "category": "vocabulary",
+      "reverse": true,
+      "text": "You mix up words that sound similar but mean different things."
+    },
+    {
+      "id": 74,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You can identify which word in a group doesn't belong based on meaning."
+    },
+    {
+      "id": 75,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You quickly recall the right word for a very specific or technical idea."
+    },
+    {
+      "id": 76,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You know less common words for everyday concepts, like \"ephemeral\" for \"brief.\""
+    },
+    {
+      "id": 77,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You can spot when a translated word doesn't quite capture the original meaning."
+    },
+    {
+      "id": 78,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You understand specialized vocabulary from fields you don't work in, like law or medicine."
+    },
+    {
+      "id": 79,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You can tell the difference between formal and informal versions of the same word."
+    },
+    {
+      "id": 80,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You recognize archaic or old-fashioned words used in older texts."
+    },
+    {
+      "id": 81,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You can identify a word's connotation, like whether \"frugal\" sounds more positive than \"stingy.\""
+    },
+    {
+      "id": 82,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You know multiple meanings of common words, like \"bank\" or \"spring.\""
+    },
+    {
+      "id": 83,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You can construct a sentence that correctly uses an unfamiliar word you just learned."
+    },
+    {
+      "id": 84,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You notice when a headline uses a word in a misleading way."
+    },
+    {
+      "id": 85,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You can pick the most fitting word from a thesaurus for a specific context."
+    },
+    {
+      "id": 86,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You understand compound words by breaking them into their component parts."
+    },
+    {
+      "id": 87,
+      "category": "vocabulary",
+      "reverse": true,
+      "text": "You avoid using certain words because you're not fully sure what they mean."
+    },
+    {
+      "id": 88,
+      "category": "vocabulary",
+      "reverse": true,
+      "text": "You often have to look up words that come up in normal conversation."
+    },
+    {
+      "id": 89,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You can distinguish between near-synonyms like \"tired,\" \"exhausted,\" and \"weary.\""
+    },
+    {
+      "id": 90,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You recognize when a word has a technical meaning that differs from its everyday use."
+    },
+    {
+      "id": 91,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You can quickly name a category that a group of words belongs to."
+    },
+    {
+      "id": 92,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You understand words with multiple layers of meaning, like puns rely on."
+    },
+    {
+      "id": 93,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You can identify a more vivid or precise word to replace a bland one."
+    },
+    {
+      "id": 94,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You know the meaning of common Latin or Greek-derived scientific terms."
+    },
+    {
+      "id": 95,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You recognize regional or dialect variations of the same word."
+    },
+    {
+      "id": 96,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You can explain why two words that seem similar aren't interchangeable."
+    },
+    {
+      "id": 97,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You notice new words entering common usage and pick up their meaning quickly."
+    },
+    {
+      "id": 98,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You can complete a crossword or word puzzle using contextual clues."
+    },
+    {
+      "id": 99,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You understand words that carry cultural or historical significance beyond their literal meaning."
+    },
+    {
+      "id": 100,
+      "category": "vocabulary",
+      "reverse": false,
+      "text": "You can accurately judge whether a word is being used in its literal or figurative sense."
+    },
+    {
+      "id": 101,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can estimate a rough answer to a math problem before calculating it exactly."
+    },
+    {
+      "id": 102,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can work out a tip or discount percentage quickly in your head."
+    },
+    {
+      "id": 103,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You notice when a statistic or figure in the news doesn't add up."
+    },
+    {
+      "id": 104,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can convert between units, like kilometers and miles, without needing a calculator."
+    },
+    {
+      "id": 105,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can figure out the better deal when comparing prices with different quantities."
+    },
+    {
+      "id": 106,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You understand how compound interest changes an amount over time."
+    },
+    {
+      "id": 107,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can spot a mistake in a simple calculation just by checking if the answer feels right."
+    },
+    {
+      "id": 108,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can work with fractions, ratios, and percentages comfortably in everyday situations."
+    },
+    {
+      "id": 109,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can figure out how long a trip will take given distance and speed."
+    },
+    {
+      "id": 110,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You understand what a graph or chart is telling you at a glance."
+    },
+    {
+      "id": 111,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can calculate a fair split of a bill among several people quickly."
+    },
+    {
+      "id": 112,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You notice patterns in numbers, like a sequence that's increasing by a fixed amount."
+    },
+    {
+      "id": 113,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can work out how much of an ingredient you need if you double a recipe."
+    },
+    {
+      "id": 114,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You understand probability well enough to judge if an outcome is likely or unlikely."
+    },
+    {
+      "id": 115,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can mentally keep a running total while adding up several numbers."
+    },
+    {
+      "id": 116,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can quickly tell if a claimed average makes sense given the underlying numbers."
+    },
+    {
+      "id": 117,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You understand how sample size affects how much to trust a statistic."
+    },
+    {
+      "id": 118,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can work backward from a total to figure out an individual value."
+    },
+    {
+      "id": 119,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You notice when a percentage change is being described in a misleading way."
+    },
+    {
+      "id": 120,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can estimate area or volume of everyday objects reasonably accurately."
+    },
+    {
+      "id": 121,
+      "category": "numerical_reasoning",
+      "reverse": true,
+      "text": "You avoid situations that require doing math in your head."
+    },
+    {
+      "id": 122,
+      "category": "numerical_reasoning",
+      "reverse": true,
+      "text": "You often lose track of numbers partway through a calculation."
+    },
+    {
+      "id": 123,
+      "category": "numerical_reasoning",
+      "reverse": true,
+      "text": "You find it hard to tell if a price increase percentage is reasonable."
+    },
+    {
+      "id": 124,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can figure out exchange rates and convert currency reasonably well."
+    },
+    {
+      "id": 125,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You understand the difference between correlation and causation in data."
+    },
+    {
+      "id": 126,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can quickly work out what number comes next in a numerical pattern."
+    },
+    {
+      "id": 127,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can judge whether a data trend shown in a chart is really significant."
+    },
+    {
+      "id": 128,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You understand basic statistics like mean, median, and mode without difficulty."
+    },
+    {
+      "id": 129,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can solve simple algebra problems, like finding an unknown value in an equation."
+    },
+    {
+      "id": 130,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You notice rounding errors that change the meaning of a number."
+    },
+    {
+      "id": 131,
+      "category": "numerical_reasoning",
+      "reverse": true,
+      "text": "You often need a calculator even for very simple arithmetic."
+    },
+    {
+      "id": 132,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can estimate how many items fit into a container just by looking."
+    },
+    {
+      "id": 133,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You understand how probabilities combine, like the chance of two events both happening."
+    },
+    {
+      "id": 134,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can work out a budget by comparing income and expenses across categories."
+    },
+    {
+      "id": 135,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You notice when someone uses numbers to exaggerate or mislead in an argument."
+    },
+    {
+      "id": 136,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can quickly convert a fraction to a decimal or percentage in your head."
+    },
+    {
+      "id": 137,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You understand how interest rates affect loan repayments over time."
+    },
+    {
+      "id": 138,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can figure out proportional relationships, like scaling a recipe or a map."
+    },
+    {
+      "id": 139,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You notice when two numbers that should match don't quite add up."
+    },
+    {
+      "id": 140,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can solve word problems that involve rates, like speed or work done over time."
+    },
+    {
+      "id": 141,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You understand how to weigh risk versus reward using rough numerical estimates."
+    },
+    {
+      "id": 142,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can spot when a \"50% off\" deal is actually a smaller saving than it sounds."
+    },
+    {
+      "id": 143,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can mentally calculate square roots or powers of small numbers."
+    },
+    {
+      "id": 144,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You understand statistical concepts like standard deviation at a practical level."
+    },
+    {
+      "id": 145,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can quickly judge whether a bill or receipt has been calculated correctly."
+    },
+    {
+      "id": 146,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You notice logical inconsistencies in a financial report or budget."
+    },
+    {
+      "id": 147,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can estimate probabilities in games of chance reasonably accurately."
+    },
+    {
+      "id": 148,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You understand how exponential growth differs from steady, linear growth."
+    },
+    {
+      "id": 149,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can break a large number down into simpler parts to calculate with it."
+    },
+    {
+      "id": 150,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can quickly recalculate a plan when one of the numbers involved changes."
+    },
+    {
+      "id": 151,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You can follow a chain of \"if this, then that\" reasoning without losing track."
+    },
+    {
+      "id": 152,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You notice when a conclusion doesn't actually follow from the evidence given."
+    },
+    {
+      "id": 153,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You can identify a logical contradiction hidden in someone's argument."
+    },
+    {
+      "id": 154,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You can work out who is telling the truth when statements conflict with each other."
+    },
+    {
+      "id": 155,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You can determine what must be true given a set of stated facts."
+    },
+    {
+      "id": 156,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You notice circular reasoning, where the conclusion is just restating the premise."
+    },
+    {
+      "id": 157,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You can solve puzzles that require ruling out possibilities one by one."
+    },
+    {
+      "id": 158,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You can identify a false cause-and-effect claim in an argument."
+    },
+    {
+      "id": 159,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You can work through a multi-step deduction to reach a single correct answer."
+    },
+    {
+      "id": 160,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You notice when someone assumes something that hasn't actually been proven."
+    },
+    {
+      "id": 161,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You can spot a flawed comparison, like comparing two things that aren't really alike."
+    },
+    {
+      "id": 162,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You can identify the missing piece of information needed to reach a conclusion."
+    },
+    {
+      "id": 163,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You notice when an argument relies on an appeal to emotion rather than logic."
+    },
+    {
+      "id": 164,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You can work out the order of events from a set of scattered clues."
+    },
+    {
+      "id": 165,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You can identify when two statements logically contradict each other."
+    },
+    {
+      "id": 166,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You notice when a general rule is being wrongly applied to a specific exception."
+    },
+    {
+      "id": 167,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You can determine which conclusion is best supported by a set of given facts."
+    },
+    {
+      "id": 168,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You notice slippery-slope reasoning, where one small step is claimed to lead inevitably to an extreme outcome."
+    },
+    {
+      "id": 169,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You can solve logic grid puzzles that involve matching clues to correct answers."
+    },
+    {
+      "id": 170,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You notice when someone confuses \"some\" with \"all\" in their reasoning."
+    },
+    {
+      "id": 171,
+      "category": "logical_reasoning",
+      "reverse": true,
+      "text": "You sometimes accept a conclusion without checking if the reasoning behind it holds up."
+    },
+    {
+      "id": 172,
+      "category": "logical_reasoning",
+      "reverse": true,
+      "text": "You lose track of the logic when an argument has several steps."
+    },
+    {
+      "id": 173,
+      "category": "logical_reasoning",
+      "reverse": true,
+      "text": "You find it difficult to tell when two claims actually contradict each other."
+    },
+    {
+      "id": 174,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You can identify the strongest counterargument to a claim you've just read."
+    },
+    {
+      "id": 175,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You notice when a conclusion is based on a very small or unusual sample."
+    },
+    {
+      "id": 176,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You can work out what conclusion necessarily follows from two given premises."
+    },
+    {
+      "id": 177,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You can identify a false dilemma, where only two options are presented when more exist."
+    },
+    {
+      "id": 178,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You notice when someone uses a label to dismiss an argument instead of addressing it."
+    },
+    {
+      "id": 179,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You can determine the most efficient sequence of steps to solve a logic puzzle."
+    },
+    {
+      "id": 180,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You notice when evidence is being cherry-picked to support only one side."
+    },
+    {
+      "id": 181,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You can spot the flaw in an argument that relies on an irrelevant comparison."
+    },
+    {
+      "id": 182,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You can figure out which suspect is lying based on inconsistent statements."
+    },
+    {
+      "id": 183,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You notice when a claim confuses correlation with a guaranteed cause."
+    },
+    {
+      "id": 184,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You can identify unstated assumptions that an argument depends on."
+    },
+    {
+      "id": 185,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You can work through \"who owns what\" or \"who sits where\" logic puzzles methodically."
+    },
+    {
+      "id": 186,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You notice when a rule contradicts an earlier exception that was already granted."
+    },
+    {
+      "id": 187,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You can determine whether an argument is valid even if you disagree with its conclusion."
+    },
+    {
+      "id": 188,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You notice when someone uses a strawman version of an opposing argument."
+    },
+    {
+      "id": 189,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You can trace back through a series of clues to find the one that doesn't fit."
+    },
+    {
+      "id": 190,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You notice when a probability claim is being reasoned about incorrectly."
+    },
+    {
+      "id": 191,
+      "category": "logical_reasoning",
+      "reverse": true,
+      "text": "You tend to go along with confident-sounding arguments even if the logic is shaky."
+    },
+    {
+      "id": 192,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You can determine the single explanation that accounts for all the given evidence."
+    },
+    {
+      "id": 193,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You notice when two categories are being conflated that shouldn't be treated the same."
+    },
+    {
+      "id": 194,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You can identify the weak link in a long chain of reasoning."
+    },
+    {
+      "id": 195,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You notice when a definition is shifted midway through an argument to win a point."
+    },
+    {
+      "id": 196,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You can determine what additional fact would be needed to settle a disagreement."
+    },
+    {
+      "id": 197,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You notice when timing is used to wrongly imply that one event caused another."
+    },
+    {
+      "id": 198,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You can work out the logical opposite of a given statement."
+    },
+    {
+      "id": 199,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You notice when an argument relies on authority rather than actual evidence."
+    },
+    {
+      "id": 200,
+      "category": "logical_reasoning",
+      "reverse": false,
+      "text": "You can systematically eliminate incorrect options until only the right answer remains."
+    },
+    {
+      "id": 201,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can quickly spot the rule connecting a sequence of shapes or symbols."
+    },
+    {
+      "id": 202,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You notice recurring patterns in things that others might see as random."
+    },
+    {
+      "id": 203,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can figure out what comes next in a sequence just by studying it briefly."
+    },
+    {
+      "id": 204,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can identify the one item that breaks an otherwise consistent pattern."
+    },
+    {
+      "id": 205,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can work out an abstract relationship, like how one shape transforms into another."
+    },
+    {
+      "id": 206,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You notice similarities between seemingly unrelated situations or ideas."
+    },
+    {
+      "id": 207,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can group things into categories based on a hidden shared rule."
+    },
+    {
+      "id": 208,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can figure out a puzzle's underlying logic without needing it explained."
+    },
+    {
+      "id": 209,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You notice when a pattern changes partway through a sequence."
+    },
+    {
+      "id": 210,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can recognize the same abstract structure across two very different examples."
+    },
+    {
+      "id": 211,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can predict how a pattern will continue based on just a few examples."
+    },
+    {
+      "id": 212,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You notice symmetry or repetition in visual or numerical patterns quickly."
+    },
+    {
+      "id": 213,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can identify the transformation rule applied between a \"before\" and \"after\" pair."
+    },
+    {
+      "id": 214,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can solve puzzles where you need to find what connects several unrelated items."
+    },
+    {
+      "id": 215,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You notice patterns in behavior or events that repeat over time."
+    },
+    {
+      "id": 216,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can figure out missing elements in an incomplete pattern."
+    },
+    {
+      "id": 217,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can spot the underlying theme linking a set of examples together."
+    },
+    {
+      "id": 218,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You notice when a sequence follows more than one rule at the same time."
+    },
+    {
+      "id": 219,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can mentally apply a rule you just learned to a brand-new example."
+    },
+    {
+      "id": 220,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You notice recurring structures in music, art, or design without formal training."
+    },
+    {
+      "id": 221,
+      "category": "abstract_reasoning",
+      "reverse": true,
+      "text": "You often can't tell what connects a group of related items."
+    },
+    {
+      "id": 222,
+      "category": "abstract_reasoning",
+      "reverse": true,
+      "text": "You struggle to figure out what comes next in a pattern or sequence."
+    },
+    {
+      "id": 223,
+      "category": "abstract_reasoning",
+      "reverse": true,
+      "text": "You don't usually notice when something breaks an established pattern."
+    },
+    {
+      "id": 224,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can identify the odd one out in a set of shapes or symbols."
+    },
+    {
+      "id": 225,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can reason through analogies like \"circle is to sphere as square is to ___.\""
+    },
+    {
+      "id": 226,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You notice when a rule that worked for earlier examples fails for a new one."
+    },
+    {
+      "id": 227,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can figure out how a code or cipher pattern works from a few examples."
+    },
+    {
+      "id": 228,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You notice recurring themes across stories, arguments, or ideas from different sources."
+    },
+    {
+      "id": 229,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can identify the single principle that explains several different observations."
+    },
+    {
+      "id": 230,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can complete a matrix-style puzzle by working out the missing piece."
+    },
+    {
+      "id": 231,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You notice when two patterns that look different are actually structurally the same."
+    },
+    {
+      "id": 232,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can recognize a familiar pattern even when it's presented in an unusual way."
+    },
+    {
+      "id": 233,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You notice trends emerging in data before they become obvious to everyone else."
+    },
+    {
+      "id": 234,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can figure out the next shape in a rotating or transforming sequence."
+    },
+    {
+      "id": 235,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You notice when a system or process follows a repeatable, predictable structure."
+    },
+    {
+      "id": 236,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can identify which of several rules best explains a given set of examples."
+    },
+    {
+      "id": 237,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You notice abstract connections between ideas from completely different fields."
+    },
+    {
+      "id": 238,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can work out a hidden numerical pattern within a set of grouped items."
+    },
+    {
+      "id": 239,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You notice when a pattern is more complex than it first appears."
+    },
+    {
+      "id": 240,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can spot the visual rule connecting a series of images or icons."
+    },
+    {
+      "id": 241,
+      "category": "abstract_reasoning",
+      "reverse": true,
+      "text": "You need patterns to be pointed out to you before you notice them."
+    },
+    {
+      "id": 242,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can generalize a rule you learned in one context to a completely different one."
+    },
+    {
+      "id": 243,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You notice recurring cycles, like patterns that repeat every few steps."
+    },
+    {
+      "id": 244,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can identify which shape logically completes a visual sequence."
+    },
+    {
+      "id": 245,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You notice when a claimed pattern is actually just coincidence."
+    },
+    {
+      "id": 246,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can recognize the same underlying structure in different types of puzzles."
+    },
+    {
+      "id": 247,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You notice patterns in how people or systems typically behave in similar situations."
+    },
+    {
+      "id": 248,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can work out multi-step transformations applied to a shape or symbol."
+    },
+    {
+      "id": 249,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You notice when a sequence has a repeating cycle rather than a constant trend."
+    },
+    {
+      "id": 250,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can quickly test a hypothesis about a pattern against new examples to see if it holds."
+    },
+    {
+      "id": 251,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can picture how an object would look if rotated in your mind."
+    },
+    {
+      "id": 252,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can mentally fold a flat diagram into the 3D shape it would form."
+    },
+    {
+      "id": 253,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can judge distances and sizes accurately just by looking."
+    },
+    {
+      "id": 254,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can visualize how furniture will fit in a room before moving it."
+    },
+    {
+      "id": 255,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can read a map and picture the route without needing to look at it constantly."
+    },
+    {
+      "id": 256,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can mentally rearrange the pieces of a puzzle before physically trying them."
+    },
+    {
+      "id": 257,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can picture what the other side of an object looks like without seeing it."
+    },
+    {
+      "id": 258,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can judge whether an object will fit through a gap just by eyeing it."
+    },
+    {
+      "id": 259,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can visualize the finished result of a project from a rough sketch."
+    },
+    {
+      "id": 260,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can mentally track an object's path as it moves and predict where it will end up."
+    },
+    {
+      "id": 261,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can picture how two shapes would combine to form a different shape."
+    },
+    {
+      "id": 262,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can navigate a new place well after seeing it only once or on a map."
+    },
+    {
+      "id": 263,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can mentally reverse or mirror an image to see how it would look flipped."
+    },
+    {
+      "id": 264,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can judge angles and proportions accurately without needing to measure them."
+    },
+    {
+      "id": 265,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can visualize a building's layout after walking through it just once."
+    },
+    {
+      "id": 266,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can figure out how to pack items efficiently into a limited space."
+    },
+    {
+      "id": 267,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can picture a cross-section of an object, like what a sliced shape would look like inside."
+    },
+    {
+      "id": 268,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can mentally assemble a piece of furniture from a diagram before starting."
+    },
+    {
+      "id": 269,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can judge which of several containers holds more just by looking at their shapes."
+    },
+    {
+      "id": 270,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can visualize how a pattern would look if it were repeated across a larger surface."
+    },
+    {
+      "id": 271,
+      "category": "spatial_reasoning",
+      "reverse": true,
+      "text": "You get lost easily even in places you've visited a few times before."
+    },
+    {
+      "id": 272,
+      "category": "spatial_reasoning",
+      "reverse": true,
+      "text": "You find it hard to picture how an object looks from a different angle."
+    },
+    {
+      "id": 273,
+      "category": "spatial_reasoning",
+      "reverse": true,
+      "text": "You struggle to judge distances or sizes accurately just by looking."
+    },
+    {
+      "id": 274,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can mentally trace a path through a maze before actually moving through it."
+    },
+    {
+      "id": 275,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can figure out how gears, pulleys, or mechanisms would move just by looking at them."
+    },
+    {
+      "id": 276,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can visualize the layout of a room from a floor plan."
+    },
+    {
+      "id": 277,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can judge how much material or paint you'd need to cover a given surface."
+    },
+    {
+      "id": 278,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can picture how light and shadow would fall on an object from a given angle."
+    },
+    {
+      "id": 279,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can mentally rotate a 3D object to check if it matches another one."
+    },
+    {
+      "id": 280,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can visualize how a flat pattern will look once it's wrapped around a curved surface."
+    },
+    {
+      "id": 281,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can quickly figure out the shortest path between two points on a map."
+    },
+    {
+      "id": 282,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can picture how a shape would look if it were scaled up or down."
+    },
+    {
+      "id": 283,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can judge symmetry in an object or design just by looking at it."
+    },
+    {
+      "id": 284,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can visualize how parts of a machine fit together from an exploded diagram."
+    },
+    {
+      "id": 285,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can mentally simulate how a ball or object would bounce or roll."
+    },
+    {
+      "id": 286,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can picture how a room would feel with different furniture arrangements."
+    },
+    {
+      "id": 287,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can judge whether two irregular shapes would fit together like puzzle pieces."
+    },
+    {
+      "id": 288,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can mentally track multiple moving objects at once without losing any of them."
+    },
+    {
+      "id": 289,
+      "category": "spatial_reasoning",
+      "reverse": true,
+      "text": "You often misjudge how much space something will take up."
+    },
+    {
+      "id": 290,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can visualize how a design will look printed or displayed at a different scale."
+    },
+    {
+      "id": 291,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can figure out directions intuitively, even without a compass or GPS."
+    },
+    {
+      "id": 292,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can picture what a building or object looked like from an old photo or sketch."
+    },
+    {
+      "id": 293,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can judge the depth and layering in a photo or painting accurately."
+    },
+    {
+      "id": 294,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can visualize how a knot or fold would look once completed."
+    },
+    {
+      "id": 295,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can mentally simulate simple physics, like how a stack of objects might topple."
+    },
+    {
+      "id": 296,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can figure out the most efficient route when running several errands."
+    },
+    {
+      "id": 297,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can picture how a garden or layout would look before anything is planted or built."
+    },
+    {
+      "id": 298,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can judge which of two paths is shorter just by looking at a map."
+    },
+    {
+      "id": 299,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can visualize an object's structure well enough to sketch it from memory."
+    },
+    {
+      "id": 300,
+      "category": "spatial_reasoning",
+      "reverse": false,
+      "text": "You can mentally combine separate views of an object into a single 3D picture."
+    },
+    {
+      "id": 301,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can hold several instructions in mind while carrying out the first one."
+    },
+    {
+      "id": 302,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can remember a phone number long enough to dial it without writing it down."
+    },
+    {
+      "id": 303,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can keep track of multiple points in a conversation and respond to each one."
+    },
+    {
+      "id": 304,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can do mental math that requires holding intermediate results in mind."
+    },
+    {
+      "id": 305,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can follow a recipe with several steps without constantly rechecking it."
+    },
+    {
+      "id": 306,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can remember what you were about to say even after a brief interruption."
+    },
+    {
+      "id": 307,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can keep several items in mind while shopping without needing a written list."
+    },
+    {
+      "id": 308,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can hold a set of numbers in mind long enough to reorder them mentally."
+    },
+    {
+      "id": 309,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can track the score and rules of a game while playing it."
+    },
+    {
+      "id": 310,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can remember the beginning of a long sentence by the time you reach the end."
+    },
+    {
+      "id": 311,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can juggle multiple small tasks at once without forgetting any of them."
+    },
+    {
+      "id": 312,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can keep track of who said what during a group discussion."
+    },
+    {
+      "id": 313,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can remember a short list of items after hearing them just once."
+    },
+    {
+      "id": 314,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can hold a mental \"to-do\" list without writing it down and still complete each item."
+    },
+    {
+      "id": 315,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can keep a running total in your head while adding several numbers in sequence."
+    },
+    {
+      "id": 316,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can remember directions after hearing them once, without needing them repeated."
+    },
+    {
+      "id": 317,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can follow multi-step verbal instructions and execute them in the right order."
+    },
+    {
+      "id": 318,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can hold two competing pieces of information in mind and compare them."
+    },
+    {
+      "id": 319,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can recall details from earlier in a meeting when they become relevant later."
+    },
+    {
+      "id": 320,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can keep track of several characters and their relationships while reading a story."
+    },
+    {
+      "id": 321,
+      "category": "working_memory",
+      "reverse": true,
+      "text": "You often forget the first part of an instruction by the time you hear the rest."
+    },
+    {
+      "id": 322,
+      "category": "working_memory",
+      "reverse": true,
+      "text": "You lose track of what you were doing if you're interrupted mid-task."
+    },
+    {
+      "id": 323,
+      "category": "working_memory",
+      "reverse": true,
+      "text": "You need to write things down immediately or you'll forget them."
+    },
+    {
+      "id": 324,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can mentally rearrange a short list of items into a new order."
+    },
+    {
+      "id": 325,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can remember a sequence of numbers well enough to repeat it backward."
+    },
+    {
+      "id": 326,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can keep several variables in mind while solving a multi-step problem."
+    },
+    {
+      "id": 327,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can recall what someone said several sentences ago in the same conversation."
+    },
+    {
+      "id": 328,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can hold a plan in mind while adapting it as new information comes in."
+    },
+    {
+      "id": 329,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can remember which steps you've already completed in a longer task."
+    },
+    {
+      "id": 330,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can keep track of multiple deadlines or appointments without a written reminder."
+    },
+    {
+      "id": 331,
+      "category": "working_memory",
+      "reverse": true,
+      "text": "You often lose your train of thought partway through explaining something."
+    },
+    {
+      "id": 332,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can mentally update a total as new numbers or information are added."
+    },
+    {
+      "id": 333,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can remember a short passage well enough to repeat its key points afterward."
+    },
+    {
+      "id": 334,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can hold instructions in mind while simultaneously doing something else."
+    },
+    {
+      "id": 335,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can keep track of the order of events in a story someone is telling you."
+    },
+    {
+      "id": 336,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can remember several unrelated items long enough to write them all down later."
+    },
+    {
+      "id": 337,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can mentally compare more than two options at once without losing track of any."
+    },
+    {
+      "id": 338,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can hold a question in mind while listening to a long explanation before it's answered."
+    },
+    {
+      "id": 339,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can recall the specific details of a plan even after a distraction."
+    },
+    {
+      "id": 340,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can keep several rules in mind while playing a game or solving a puzzle."
+    },
+    {
+      "id": 341,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can remember a list of instructions well enough to perform them in reverse order."
+    },
+    {
+      "id": 342,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can hold a conversation's context in mind even after a topic shift and back."
+    },
+    {
+      "id": 343,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can track multiple running totals at once, like scores in different categories."
+    },
+    {
+      "id": 344,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can remember which items you've already checked off without needing a written list."
+    },
+    {
+      "id": 345,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can mentally hold a location in mind while navigating toward it from memory."
+    },
+    {
+      "id": 346,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can keep track of several appointments' details without mixing them up."
+    },
+    {
+      "id": 347,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can remember a set of codes or passwords for short stretches without writing them down."
+    },
+    {
+      "id": 348,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can hold two instructions in mind and decide which one to prioritize."
+    },
+    {
+      "id": 349,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can recall the exact wording of something said a few minutes earlier."
+    },
+    {
+      "id": 350,
+      "category": "working_memory",
+      "reverse": false,
+      "text": "You can keep multiple threads of an argument in mind while forming your response."
+    },
+    {
+      "id": 351,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can quickly scan a page and spot the specific detail you're looking for."
+    },
+    {
+      "id": 352,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can make simple decisions rapidly without needing extra time to think them through."
+    },
+    {
+      "id": 353,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can quickly match similar items, like sorting objects by size or color."
+    },
+    {
+      "id": 354,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can read through basic information and understand it without needing to slow down."
+    },
+    {
+      "id": 355,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can quickly spot the differences between two similar images or documents."
+    },
+    {
+      "id": 356,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can process spoken instructions in real time without needing them slowed down."
+    },
+    {
+      "id": 357,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can complete repetitive simple tasks quickly without losing accuracy."
+    },
+    {
+      "id": 358,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can quickly count or tally items without losing your place."
+    },
+    {
+      "id": 359,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can respond quickly in a fast-paced conversation without falling behind."
+    },
+    {
+      "id": 360,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can skim a document and pull out the key points quickly."
+    },
+    {
+      "id": 361,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can quickly identify which of several similar options is the odd one out."
+    },
+    {
+      "id": 362,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can react quickly when something unexpected happens in a game or task."
+    },
+    {
+      "id": 363,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can process a busy visual scene quickly and know where to focus."
+    },
+    {
+      "id": 364,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can quickly fill in simple forms without needing extra time to think."
+    },
+    {
+      "id": 365,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can keep up with fast-talking speakers without losing the thread."
+    },
+    {
+      "id": 366,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can quickly sort items into the correct categories without hesitating."
+    },
+    {
+      "id": 367,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can rapidly scan a list to check if a specific item is present."
+    },
+    {
+      "id": 368,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can quickly match symbols or codes to their corresponding meaning."
+    },
+    {
+      "id": 369,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can process visual information, like a dashboard or map, quickly."
+    },
+    {
+      "id": 370,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can quickly recalculate a plan when circumstances change unexpectedly."
+    },
+    {
+      "id": 371,
+      "category": "processing_speed",
+      "reverse": true,
+      "text": "You need extra time to process information compared to most people."
+    },
+    {
+      "id": 372,
+      "category": "processing_speed",
+      "reverse": true,
+      "text": "You find yourself falling behind in fast-paced conversations or tasks."
+    },
+    {
+      "id": 373,
+      "category": "processing_speed",
+      "reverse": true,
+      "text": "You take a while to notice small differences between similar things."
+    },
+    {
+      "id": 374,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can quickly identify the correct answer among several plausible options."
+    },
+    {
+      "id": 375,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can process instructions on the fly while also doing something else."
+    },
+    {
+      "id": 376,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can quickly proofread a document and catch obvious errors."
+    },
+    {
+      "id": 377,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can rapidly switch between different simple tasks without losing speed."
+    },
+    {
+      "id": 378,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can quickly assess a situation and decide on an appropriate first step."
+    },
+    {
+      "id": 379,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can keep pace with quick back-and-forth question-and-answer exchanges."
+    },
+    {
+      "id": 380,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can quickly tell whether two pieces of text are identical or different."
+    },
+    {
+      "id": 381,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can process rapid changes on a screen, like in a fast video game."
+    },
+    {
+      "id": 382,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can quickly total up small numbers of items without much delay."
+    },
+    {
+      "id": 383,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can respond promptly to changing instructions without getting flustered."
+    },
+    {
+      "id": 384,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can quickly identify a familiar face or object in a crowded scene."
+    },
+    {
+      "id": 385,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can process a rapid sequence of instructions without needing them repeated."
+    },
+    {
+      "id": 386,
+      "category": "processing_speed",
+      "reverse": true,
+      "text": "You tend to need things repeated or slowed down to keep up."
+    },
+    {
+      "id": 387,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can quickly complete simple, repetitive puzzles without slowing down."
+    },
+    {
+      "id": 388,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can rapidly compare prices or values while shopping without much delay."
+    },
+    {
+      "id": 389,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can quickly scan a crowded chart or table to find a specific value."
+    },
+    {
+      "id": 390,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can process a fast sequence of visual cues, like traffic signals while driving."
+    },
+    {
+      "id": 391,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can quickly decide between simple options without overthinking small decisions."
+    },
+    {
+      "id": 392,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can rapidly identify which item in a row doesn't match the rest."
+    },
+    {
+      "id": 393,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can process quick verbal exchanges, like in a debate, without lagging behind."
+    },
+    {
+      "id": 394,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can quickly complete simple data entry tasks with minimal errors."
+    },
+    {
+      "id": 395,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can rapidly adjust to a fast-changing pace of conversation or activity."
+    },
+    {
+      "id": 396,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can quickly recognize a pattern of numbers or symbols scrolling past."
+    },
+    {
+      "id": 397,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can process quick successive instructions during a task without falling behind."
+    },
+    {
+      "id": 398,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can quickly identify the shortest or fastest option among several choices."
+    },
+    {
+      "id": 399,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can rapidly skim through search results to find the most relevant one."
+    },
+    {
+      "id": 400,
+      "category": "processing_speed",
+      "reverse": false,
+      "text": "You can quickly perform simple mental checks, like confirming a total looks about right."
+    },
+    {
+      "id": 401,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can break a large, messy problem down into smaller, manageable steps."
+    },
+    {
+      "id": 402,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can come up with more than one workable solution to a tricky problem."
+    },
+    {
+      "id": 403,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can figure out a practical workaround when the usual method isn't available."
+    },
+    {
+      "id": 404,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can weigh the pros and cons of different options before deciding."
+    },
+    {
+      "id": 405,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can identify the actual root cause of a problem rather than just its symptoms."
+    },
+    {
+      "id": 406,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can adapt your plan quickly when the situation changes unexpectedly."
+    },
+    {
+      "id": 407,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can figure out a plan of action even with incomplete information."
+    },
+    {
+      "id": 408,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can prioritize which problem to tackle first when several arise at once."
+    },
+    {
+      "id": 409,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can troubleshoot something that's not working by testing one factor at a time."
+    },
+    {
+      "id": 410,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can find a creative solution when the obvious approach doesn't work."
+    },
+    {
+      "id": 411,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can anticipate potential problems before they actually happen."
+    },
+    {
+      "id": 412,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can decide confidently between options even under time pressure."
+    },
+    {
+      "id": 413,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can figure out what resources you actually need to solve a given problem."
+    },
+    {
+      "id": 414,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can evaluate whether a proposed solution will really fix the underlying issue."
+    },
+    {
+      "id": 415,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can improvise a reasonable solution when you don't have the ideal tools on hand."
+    },
+    {
+      "id": 416,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can figure out the most efficient way to complete a set of tasks."
+    },
+    {
+      "id": 417,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can identify when a chosen solution isn't working and change course."
+    },
+    {
+      "id": 418,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can break down a vague goal into concrete, actionable steps."
+    },
+    {
+      "id": 419,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can weigh short-term convenience against long-term consequences when deciding."
+    },
+    {
+      "id": 420,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can figure out how to fix something by understanding how it's supposed to work."
+    },
+    {
+      "id": 421,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "You tend to get stuck when a problem doesn't have an obvious solution."
+    },
+    {
+      "id": 422,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "You struggle to decide between multiple reasonable options."
+    },
+    {
+      "id": 423,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "You usually stick with the first solution you think of, even if it's not the best one."
+    },
+    {
+      "id": 424,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can find alternative approaches when your original plan hits an obstacle."
+    },
+    {
+      "id": 425,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can figure out the most likely reason something went wrong."
+    },
+    {
+      "id": 426,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can make a good decision even without having all the information you'd like."
+    },
+    {
+      "id": 427,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can plan around a constraint, like limited time, money, or resources."
+    },
+    {
+      "id": 428,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can spot which part of a bigger problem is actually solvable right now."
+    },
+    {
+      "id": 429,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can figure out a reasonable compromise when two goals conflict."
+    },
+    {
+      "id": 430,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can decide when it's better to ask for help rather than solve something alone."
+    },
+    {
+      "id": 431,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can think through the likely consequences of a decision before making it."
+    },
+    {
+      "id": 432,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can adjust an existing solution to fit a new, slightly different problem."
+    },
+    {
+      "id": 433,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can figure out a step-by-step plan to reach a long-term goal."
+    },
+    {
+      "id": 434,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can identify which details matter and which are just distractions when solving a problem."
+    },
+    {
+      "id": 435,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can decide between a safe, reliable option and a riskier, potentially better one."
+    },
+    {
+      "id": 436,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can figure out how to solve a problem you've never encountered before."
+    },
+    {
+      "id": 437,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can identify the trade-offs involved in each possible solution."
+    },
+    {
+      "id": 438,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can recognize when a problem needs a completely new approach rather than a tweak."
+    },
+    {
+      "id": 439,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "You often feel overwhelmed rather than focused when facing a complex problem."
+    },
+    {
+      "id": 440,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can make quick, reasonable decisions in situations with real time pressure."
+    },
+    {
+      "id": 441,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can figure out how to fix a mistake without making things worse."
+    },
+    {
+      "id": 442,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can identify which stakeholders or factors need to be considered before deciding."
+    },
+    {
+      "id": 443,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can generate several possible explanations for an unexpected result."
+    },
+    {
+      "id": 444,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can decide when enough information has been gathered to act, rather than delaying further."
+    },
+    {
+      "id": 445,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can figure out a plan B when your first plan clearly isn't working."
+    },
+    {
+      "id": 446,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can weigh the reliability of different sources of information before deciding what to do."
+    },
+    {
+      "id": 447,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can identify the simplest solution that still fully solves the problem."
+    },
+    {
+      "id": 448,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can figure out how to sequence tasks so that one problem doesn't create another."
+    },
+    {
+      "id": 449,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can decide when to abandon an approach that keeps failing despite effort."
+    },
+    {
+      "id": 450,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "You can figure out how to solve a problem by breaking it into a familiar sub-problem you've solved before."
+    },
+    {
+      "id": 451,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can stay focused on a task for a long stretch without getting distracted."
+    },
+    {
+      "id": 452,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can quickly switch your attention between two different tasks without losing your place in either."
+    },
+    {
+      "id": 453,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can filter out background noise and stay focused on what matters."
+    },
+    {
+      "id": 454,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can notice a small but important detail even while focused on the bigger picture."
+    },
+    {
+      "id": 455,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can resist the urge to check your phone or get distracted during focused work."
+    },
+    {
+      "id": 456,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can adapt quickly when a plan changes at the last minute."
+    },
+    {
+      "id": 457,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can shift your approach when the first method you try doesn't work."
+    },
+    {
+      "id": 458,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can concentrate on a task even when the environment around you is noisy or busy."
+    },
+    {
+      "id": 459,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can hold your focus on a boring but necessary task until it's finished."
+    },
+    {
+      "id": 460,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can quickly regain focus after being interrupted mid-task."
+    },
+    {
+      "id": 461,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can adjust your thinking when new information contradicts what you originally assumed."
+    },
+    {
+      "id": 462,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can notice when your attention has drifted and bring it back on track."
+    },
+    {
+      "id": 463,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can switch smoothly between different types of tasks throughout the day."
+    },
+    {
+      "id": 464,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can stay alert and attentive even during a long, repetitive task."
+    },
+    {
+      "id": 465,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can consider a problem from a completely different angle when stuck."
+    },
+    {
+      "id": 466,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can multitask effectively without one task suffering because of the other."
+    },
+    {
+      "id": 467,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can adapt your communication style depending on who you're talking to."
+    },
+    {
+      "id": 468,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can notice subtle changes in a situation that others might overlook."
+    },
+    {
+      "id": 469,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can let go of an old approach and try something new when needed."
+    },
+    {
+      "id": 470,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can stay focused on a conversation even in a distracting environment."
+    },
+    {
+      "id": 471,
+      "category": "attention_flexibility",
+      "reverse": true,
+      "text": "You get distracted easily, even during tasks that matter to you."
+    },
+    {
+      "id": 472,
+      "category": "attention_flexibility",
+      "reverse": true,
+      "text": "You find it hard to switch between tasks once you've started one."
+    },
+    {
+      "id": 473,
+      "category": "attention_flexibility",
+      "reverse": true,
+      "text": "You tend to stick to your original approach even after it's stopped working."
+    },
+    {
+      "id": 474,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can maintain concentration during long meetings or lectures."
+    },
+    {
+      "id": 475,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can quickly reorient yourself after an unexpected interruption."
+    },
+    {
+      "id": 476,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can consider multiple viewpoints on an issue, even ones you initially disagree with."
+    },
+    {
+      "id": 477,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can catch yourself when your mind starts to wander during an important task."
+    },
+    {
+      "id": 478,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can adjust your plans smoothly when priorities shift unexpectedly."
+    },
+    {
+      "id": 479,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can pay attention to fine details without losing sight of the overall goal."
+    },
+    {
+      "id": 480,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can change your strategy mid-task if you realize it isn't working."
+    },
+    {
+      "id": 481,
+      "category": "attention_flexibility",
+      "reverse": true,
+      "text": "You often lose focus partway through a long or complex task."
+    },
+    {
+      "id": 482,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can concentrate on a task despite feeling tired or unmotivated."
+    },
+    {
+      "id": 483,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can notice when a rule or assumption you've been using no longer applies."
+    },
+    {
+      "id": 484,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can switch between thinking broadly and thinking in fine detail as needed."
+    },
+    {
+      "id": 485,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can stay engaged with a task even after the initial novelty wears off."
+    },
+    {
+      "id": 486,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can adapt quickly to a sudden change in routine or schedule."
+    },
+    {
+      "id": 487,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can focus selectively on relevant information while ignoring irrelevant details."
+    },
+    {
+      "id": 488,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can consider an idea seriously even if it initially seems unfamiliar or strange."
+    },
+    {
+      "id": 489,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can maintain attention to detail even during repetitive or monotonous work."
+    },
+    {
+      "id": 490,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can shift your perspective to understand why someone disagrees with you."
+    },
+    {
+      "id": 491,
+      "category": "attention_flexibility",
+      "reverse": true,
+      "text": "You struggle to reconsider your opinion once you've settled on one."
+    },
+    {
+      "id": 492,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can keep your composure and attention steady during unexpected disruptions."
+    },
+    {
+      "id": 493,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can flexibly apply a skill you learned in one context to a very different one."
+    },
+    {
+      "id": 494,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can concentrate deeply on a task while tuning out minor distractions."
+    },
+    {
+      "id": 495,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can quickly notice if you've made an error and correct your approach."
+    },
+    {
+      "id": 496,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can balance attention between an ongoing task and new incoming information."
+    },
+    {
+      "id": 497,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can approach a familiar problem in a new way when the old method fails."
+    },
+    {
+      "id": 498,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can sustain focus during a task long after it stops being interesting."
+    },
+    {
+      "id": 499,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can adjust quickly when you realize your original assumption was wrong."
+    },
+    {
+      "id": 500,
+      "category": "attention_flexibility",
+      "reverse": false,
+      "text": "You can recognize when it's time to step back and reconsider your whole approach."
+    }
+  ]
+}

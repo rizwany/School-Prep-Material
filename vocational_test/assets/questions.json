@@ -1,0 +1,3110 @@
+{
+  "meta": {
+    "title": "Vocational & Technical Aptitude Test",
+    "description": "A self-reflection test inspired by dimensions used in vocational and technical aptitude assessments like the Differential Aptitude Test (DAT), exploring how you tend to handle mechanical, spatial, clerical, numerical, and hands-on technical tasks across 10 dimensions.",
+    "scale": {
+      "min": 1,
+      "max": 10,
+      "minLabel": "Not at all true of you",
+      "maxLabel": "Extremely true of you"
+    },
+    "categories": [
+      {
+        "id": "mechanical_comprehension",
+        "label": "Mechanical Comprehension",
+        "icon": "🔧"
+      },
+      {
+        "id": "spatial_visualization",
+        "label": "Spatial Visualization",
+        "icon": "🧊"
+      },
+      {
+        "id": "clerical_speed_accuracy",
+        "label": "Clerical Speed & Accuracy",
+        "icon": "📋"
+      },
+      {
+        "id": "numerical_reasoning",
+        "label": "Numerical Reasoning",
+        "icon": "🔢"
+      },
+      {
+        "id": "abstract_reasoning",
+        "label": "Abstract & Pattern Reasoning",
+        "icon": "🧩"
+      },
+      {
+        "id": "verbal_reasoning",
+        "label": "Verbal Reasoning",
+        "icon": "🗣️"
+      },
+      {
+        "id": "language_usage_spelling",
+        "label": "Language Usage & Spelling",
+        "icon": "✍️"
+      },
+      {
+        "id": "technical_tool_knowledge",
+        "label": "Technical & Tool Knowledge",
+        "icon": "🛠️"
+      },
+      {
+        "id": "manual_dexterity_coordination",
+        "label": "Manual Dexterity & Coordination",
+        "icon": "✋"
+      },
+      {
+        "id": "practical_problem_solving",
+        "label": "Practical Problem-Solving",
+        "icon": "⚙️"
+      }
+    ],
+    "levels": [
+      {
+        "min": 9.0,
+        "max": 10.01,
+        "label": "Exceptional Aptitude",
+        "emoji": "🛠️",
+        "desc": "You consistently show strong, ready-to-apply skill across mechanical, spatial, numerical, and hands-on tasks — the kind of practical aptitude that trades, technical, and clerical roles rely on."
+      },
+      {
+        "min": 7.5,
+        "max": 9.0,
+        "label": "Strong Aptitude",
+        "emoji": "🌟",
+        "desc": "You handle most mechanical, spatial, and technical tasks confidently and accurately. A few specific areas could still use more hands-on practice."
+      },
+      {
+        "min": 6.0,
+        "max": 7.5,
+        "label": "Solid Aptitude",
+        "emoji": "👍",
+        "desc": "You generally perform well on practical and technical tasks, though unfamiliar tools or complex problems can sometimes slow you down."
+      },
+      {
+        "min": 4.5,
+        "max": 6.0,
+        "label": "Developing Aptitude",
+        "emoji": "🌱",
+        "desc": "Your vocational skills are inconsistent — strong in some areas, less confident in others. Focused practice in a few key dimensions could help a lot."
+      },
+      {
+        "min": 3.0,
+        "max": 4.5,
+        "label": "Emerging Aptitude",
+        "emoji": "⚠️",
+        "desc": "Hands-on, mechanical, and technical tasks often feel effortful right now. Small, consistent practice could meaningfully build these skills over time."
+      },
+      {
+        "min": 1.0,
+        "max": 3.0,
+        "label": "Needs Foundational Practice",
+        "emoji": "📚",
+        "desc": "Your answers suggest these vocational and technical skills rarely feel natural to you yet. This is a good starting point for focused, hands-on learning."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "category": "mechanical_comprehension",
+      "reverse": false,
+      "text": "You can quickly work out which direction each part of a set of meshed gears will move, just by looking at it."
+    },
+    {
+      "id": 2,
+      "category": "mechanical_comprehension",
+      "reverse": false,
+      "text": "You can quickly work out which direction each part of a pulley and weight system will move, just by looking at it."
+    },
+    {
+      "id": 3,
+      "category": "mechanical_comprehension",
+      "reverse": false,
+      "text": "You can quickly work out which direction each part of a bicycle's gear and chain system will move, just by looking at it."
+    },
+    {
+      "id": 4,
+      "category": "mechanical_comprehension",
+      "reverse": false,
+      "text": "You can quickly work out which direction each part of a hydraulic car jack will move, just by looking at it."
+    },
+    {
+      "id": 5,
+      "category": "mechanical_comprehension",
+      "reverse": false,
+      "text": "You can quickly work out which direction each part of a simple lever and fulcrum will move, just by looking at it."
+    },
+    {
+      "id": 6,
+      "category": "mechanical_comprehension",
+      "reverse": false,
+      "text": "You can predict what happens to a set of meshed gears if one part speeds up or slows down."
+    },
+    {
+      "id": 7,
+      "category": "mechanical_comprehension",
+      "reverse": false,
+      "text": "You can predict what happens to a pulley and weight system if one part speeds up or slows down."
+    },
+    {
+      "id": 8,
+      "category": "mechanical_comprehension",
+      "reverse": false,
+      "text": "You can predict what happens to a bicycle's gear and chain system if one part speeds up or slows down."
+    },
+    {
+      "id": 9,
+      "category": "mechanical_comprehension",
+      "reverse": false,
+      "text": "You can predict what happens to a hydraulic car jack if one part speeds up or slows down."
+    },
+    {
+      "id": 10,
+      "category": "mechanical_comprehension",
+      "reverse": false,
+      "text": "You can predict what happens to a simple lever and fulcrum if one part speeds up or slows down."
+    },
+    {
+      "id": 11,
+      "category": "mechanical_comprehension",
+      "reverse": false,
+      "text": "You can estimate how much force a set of meshed gears needs to lift or move a load."
+    },
+    {
+      "id": 12,
+      "category": "mechanical_comprehension",
+      "reverse": false,
+      "text": "You can estimate how much force a pulley and weight system needs to lift or move a load."
+    },
+    {
+      "id": 13,
+      "category": "mechanical_comprehension",
+      "reverse": false,
+      "text": "You can estimate how much force a bicycle's gear and chain system needs to lift or move a load."
+    },
+    {
+      "id": 14,
+      "category": "mechanical_comprehension",
+      "reverse": false,
+      "text": "You can estimate how much force a hydraulic car jack needs to lift or move a load."
+    },
+    {
+      "id": 15,
+      "category": "mechanical_comprehension",
+      "reverse": false,
+      "text": "You can estimate how much force a simple lever and fulcrum needs to lift or move a load."
+    },
+    {
+      "id": 16,
+      "category": "mechanical_comprehension",
+      "reverse": false,
+      "text": "You understand why a set of meshed gears makes a hard task easier, without needing it explained."
+    },
+    {
+      "id": 17,
+      "category": "mechanical_comprehension",
+      "reverse": false,
+      "text": "You understand why a pulley and weight system makes a hard task easier, without needing it explained."
+    },
+    {
+      "id": 18,
+      "category": "mechanical_comprehension",
+      "reverse": false,
+      "text": "You understand why a bicycle's gear and chain system makes a hard task easier, without needing it explained."
+    },
+    {
+      "id": 19,
+      "category": "mechanical_comprehension",
+      "reverse": false,
+      "text": "You understand why a hydraulic car jack makes a hard task easier, without needing it explained."
+    },
+    {
+      "id": 20,
+      "category": "mechanical_comprehension",
+      "reverse": false,
+      "text": "You understand why a simple lever and fulcrum makes a hard task easier, without needing it explained."
+    },
+    {
+      "id": 21,
+      "category": "mechanical_comprehension",
+      "reverse": false,
+      "text": "You notice small details in how a set of meshed gears is built that reveal how it will behave."
+    },
+    {
+      "id": 22,
+      "category": "mechanical_comprehension",
+      "reverse": false,
+      "text": "You notice small details in how a pulley and weight system is built that reveal how it will behave."
+    },
+    {
+      "id": 23,
+      "category": "mechanical_comprehension",
+      "reverse": false,
+      "text": "You notice small details in how a bicycle's gear and chain system is built that reveal how it will behave."
+    },
+    {
+      "id": 24,
+      "category": "mechanical_comprehension",
+      "reverse": false,
+      "text": "You notice small details in how a hydraulic car jack is built that reveal how it will behave."
+    },
+    {
+      "id": 25,
+      "category": "mechanical_comprehension",
+      "reverse": false,
+      "text": "You notice small details in how a simple lever and fulcrum is built that reveal how it will behave."
+    },
+    {
+      "id": 26,
+      "category": "mechanical_comprehension",
+      "reverse": false,
+      "text": "If a set of meshed gears stopped working, you could usually guess which part is causing the problem just by watching it run."
+    },
+    {
+      "id": 27,
+      "category": "mechanical_comprehension",
+      "reverse": false,
+      "text": "If a pulley and weight system stopped working, you could usually guess which part is causing the problem just by watching it run."
+    },
+    {
+      "id": 28,
+      "category": "mechanical_comprehension",
+      "reverse": false,
+      "text": "If a bicycle's gear and chain system stopped working, you could usually guess which part is causing the problem just by watching it run."
+    },
+    {
+      "id": 29,
+      "category": "mechanical_comprehension",
+      "reverse": false,
+      "text": "If a hydraulic car jack stopped working, you could usually guess which part is causing the problem just by watching it run."
+    },
+    {
+      "id": 30,
+      "category": "mechanical_comprehension",
+      "reverse": false,
+      "text": "If a simple lever and fulcrum stopped working, you could usually guess which part is causing the problem just by watching it run."
+    },
+    {
+      "id": 31,
+      "category": "mechanical_comprehension",
+      "reverse": false,
+      "text": "You can picture how a set of meshed gears works clearly enough to explain it to someone else in simple terms."
+    },
+    {
+      "id": 32,
+      "category": "mechanical_comprehension",
+      "reverse": false,
+      "text": "You can picture how a pulley and weight system works clearly enough to explain it to someone else in simple terms."
+    },
+    {
+      "id": 33,
+      "category": "mechanical_comprehension",
+      "reverse": false,
+      "text": "You can picture how a bicycle's gear and chain system works clearly enough to explain it to someone else in simple terms."
+    },
+    {
+      "id": 34,
+      "category": "mechanical_comprehension",
+      "reverse": false,
+      "text": "You can picture how a hydraulic car jack works clearly enough to explain it to someone else in simple terms."
+    },
+    {
+      "id": 35,
+      "category": "mechanical_comprehension",
+      "reverse": false,
+      "text": "You can picture how a simple lever and fulcrum works clearly enough to explain it to someone else in simple terms."
+    },
+    {
+      "id": 36,
+      "category": "mechanical_comprehension",
+      "reverse": false,
+      "text": "You find it satisfying to figure out exactly how a set of meshed gears transfers motion from one part to another."
+    },
+    {
+      "id": 37,
+      "category": "mechanical_comprehension",
+      "reverse": false,
+      "text": "You find it satisfying to figure out exactly how a pulley and weight system transfers motion from one part to another."
+    },
+    {
+      "id": 38,
+      "category": "mechanical_comprehension",
+      "reverse": false,
+      "text": "You find it satisfying to figure out exactly how a bicycle's gear and chain system transfers motion from one part to another."
+    },
+    {
+      "id": 39,
+      "category": "mechanical_comprehension",
+      "reverse": false,
+      "text": "You find it satisfying to figure out exactly how a hydraulic car jack transfers motion from one part to another."
+    },
+    {
+      "id": 40,
+      "category": "mechanical_comprehension",
+      "reverse": false,
+      "text": "You find it satisfying to figure out exactly how a simple lever and fulcrum transfers motion from one part to another."
+    },
+    {
+      "id": 41,
+      "category": "mechanical_comprehension",
+      "reverse": true,
+      "text": "Diagrams explaining how a set of meshed gears works confuse you more than they help."
+    },
+    {
+      "id": 42,
+      "category": "mechanical_comprehension",
+      "reverse": true,
+      "text": "Diagrams explaining how a pulley and weight system works confuse you more than they help."
+    },
+    {
+      "id": 43,
+      "category": "mechanical_comprehension",
+      "reverse": true,
+      "text": "Diagrams explaining how a bicycle's gear and chain system works confuse you more than they help."
+    },
+    {
+      "id": 44,
+      "category": "mechanical_comprehension",
+      "reverse": true,
+      "text": "Diagrams explaining how a hydraulic car jack works confuse you more than they help."
+    },
+    {
+      "id": 45,
+      "category": "mechanical_comprehension",
+      "reverse": true,
+      "text": "Diagrams explaining how a simple lever and fulcrum works confuse you more than they help."
+    },
+    {
+      "id": 46,
+      "category": "mechanical_comprehension",
+      "reverse": true,
+      "text": "You would rather avoid working with a set of meshed gears than try to understand how it operates."
+    },
+    {
+      "id": 47,
+      "category": "mechanical_comprehension",
+      "reverse": true,
+      "text": "You would rather avoid working with a pulley and weight system than try to understand how it operates."
+    },
+    {
+      "id": 48,
+      "category": "mechanical_comprehension",
+      "reverse": true,
+      "text": "You would rather avoid working with a bicycle's gear and chain system than try to understand how it operates."
+    },
+    {
+      "id": 49,
+      "category": "mechanical_comprehension",
+      "reverse": true,
+      "text": "You would rather avoid working with a hydraulic car jack than try to understand how it operates."
+    },
+    {
+      "id": 50,
+      "category": "mechanical_comprehension",
+      "reverse": true,
+      "text": "You would rather avoid working with a simple lever and fulcrum than try to understand how it operates."
+    },
+    {
+      "id": 51,
+      "category": "spatial_visualization",
+      "reverse": false,
+      "text": "You can picture what a flat paper pattern before it's folded into a box will look like from a different angle without physically turning it."
+    },
+    {
+      "id": 52,
+      "category": "spatial_visualization",
+      "reverse": false,
+      "text": "You can picture what a blueprint of a room before it's built will look like from a different angle without physically turning it."
+    },
+    {
+      "id": 53,
+      "category": "spatial_visualization",
+      "reverse": false,
+      "text": "You can picture what a rotated 3D shape in your mind will look like from a different angle without physically turning it."
+    },
+    {
+      "id": 54,
+      "category": "spatial_visualization",
+      "reverse": false,
+      "text": "You can picture what a piece of furniture you're assembling from a diagram will look like from a different angle without physically turning it."
+    },
+    {
+      "id": 55,
+      "category": "spatial_visualization",
+      "reverse": false,
+      "text": "You can picture what a map you're using to find a shortcut will look like from a different angle without physically turning it."
+    },
+    {
+      "id": 56,
+      "category": "spatial_visualization",
+      "reverse": false,
+      "text": "You can mentally rotate a flat paper pattern before it's folded into a box and still keep track of which side is which."
+    },
+    {
+      "id": 57,
+      "category": "spatial_visualization",
+      "reverse": false,
+      "text": "You can mentally rotate a blueprint of a room before it's built and still keep track of which side is which."
+    },
+    {
+      "id": 58,
+      "category": "spatial_visualization",
+      "reverse": false,
+      "text": "You can mentally rotate a rotated 3D shape in your mind and still keep track of which side is which."
+    },
+    {
+      "id": 59,
+      "category": "spatial_visualization",
+      "reverse": false,
+      "text": "You can mentally rotate a piece of furniture you're assembling from a diagram and still keep track of which side is which."
+    },
+    {
+      "id": 60,
+      "category": "spatial_visualization",
+      "reverse": false,
+      "text": "You can mentally rotate a map you're using to find a shortcut and still keep track of which side is which."
+    },
+    {
+      "id": 61,
+      "category": "spatial_visualization",
+      "reverse": false,
+      "text": "You can tell in advance whether a flat paper pattern before it's folded into a box will fit together the way the instructions show."
+    },
+    {
+      "id": 62,
+      "category": "spatial_visualization",
+      "reverse": false,
+      "text": "You can tell in advance whether a blueprint of a room before it's built will fit together the way the instructions show."
+    },
+    {
+      "id": 63,
+      "category": "spatial_visualization",
+      "reverse": false,
+      "text": "You can tell in advance whether a rotated 3D shape in your mind will fit together the way the instructions show."
+    },
+    {
+      "id": 64,
+      "category": "spatial_visualization",
+      "reverse": false,
+      "text": "You can tell in advance whether a piece of furniture you're assembling from a diagram will fit together the way the instructions show."
+    },
+    {
+      "id": 65,
+      "category": "spatial_visualization",
+      "reverse": false,
+      "text": "You can tell in advance whether a map you're using to find a shortcut will fit together the way the instructions show."
+    },
+    {
+      "id": 66,
+      "category": "spatial_visualization",
+      "reverse": false,
+      "text": "You can visualize a flat paper pattern before it's folded into a box clearly enough to spot a mistake before you start."
+    },
+    {
+      "id": 67,
+      "category": "spatial_visualization",
+      "reverse": false,
+      "text": "You can visualize a blueprint of a room before it's built clearly enough to spot a mistake before you start."
+    },
+    {
+      "id": 68,
+      "category": "spatial_visualization",
+      "reverse": false,
+      "text": "You can visualize a rotated 3D shape in your mind clearly enough to spot a mistake before you start."
+    },
+    {
+      "id": 69,
+      "category": "spatial_visualization",
+      "reverse": false,
+      "text": "You can visualize a piece of furniture you're assembling from a diagram clearly enough to spot a mistake before you start."
+    },
+    {
+      "id": 70,
+      "category": "spatial_visualization",
+      "reverse": false,
+      "text": "You can visualize a map you're using to find a shortcut clearly enough to spot a mistake before you start."
+    },
+    {
+      "id": 71,
+      "category": "spatial_visualization",
+      "reverse": false,
+      "text": "You can imagine the finished result of a flat paper pattern before it's folded into a box just by studying the plan."
+    },
+    {
+      "id": 72,
+      "category": "spatial_visualization",
+      "reverse": false,
+      "text": "You can imagine the finished result of a blueprint of a room before it's built just by studying the plan."
+    },
+    {
+      "id": 73,
+      "category": "spatial_visualization",
+      "reverse": false,
+      "text": "You can imagine the finished result of a rotated 3D shape in your mind just by studying the plan."
+    },
+    {
+      "id": 74,
+      "category": "spatial_visualization",
+      "reverse": false,
+      "text": "You can imagine the finished result of a piece of furniture you're assembling from a diagram just by studying the plan."
+    },
+    {
+      "id": 75,
+      "category": "spatial_visualization",
+      "reverse": false,
+      "text": "You can imagine the finished result of a map you're using to find a shortcut just by studying the plan."
+    },
+    {
+      "id": 76,
+      "category": "spatial_visualization",
+      "reverse": false,
+      "text": "You rarely get confused about left, right, up, or down when working with a flat paper pattern before it's folded into a box."
+    },
+    {
+      "id": 77,
+      "category": "spatial_visualization",
+      "reverse": false,
+      "text": "You rarely get confused about left, right, up, or down when working with a blueprint of a room before it's built."
+    },
+    {
+      "id": 78,
+      "category": "spatial_visualization",
+      "reverse": false,
+      "text": "You rarely get confused about left, right, up, or down when working with a rotated 3D shape in your mind."
+    },
+    {
+      "id": 79,
+      "category": "spatial_visualization",
+      "reverse": false,
+      "text": "You rarely get confused about left, right, up, or down when working with a piece of furniture you're assembling from a diagram."
+    },
+    {
+      "id": 80,
+      "category": "spatial_visualization",
+      "reverse": false,
+      "text": "You rarely get confused about left, right, up, or down when working with a map you're using to find a shortcut."
+    },
+    {
+      "id": 81,
+      "category": "spatial_visualization",
+      "reverse": false,
+      "text": "You can hold an accurate mental image of a flat paper pattern before it's folded into a box while also listening to instructions."
+    },
+    {
+      "id": 82,
+      "category": "spatial_visualization",
+      "reverse": false,
+      "text": "You can hold an accurate mental image of a blueprint of a room before it's built while also listening to instructions."
+    },
+    {
+      "id": 83,
+      "category": "spatial_visualization",
+      "reverse": false,
+      "text": "You can hold an accurate mental image of a rotated 3D shape in your mind while also listening to instructions."
+    },
+    {
+      "id": 84,
+      "category": "spatial_visualization",
+      "reverse": false,
+      "text": "You can hold an accurate mental image of a piece of furniture you're assembling from a diagram while also listening to instructions."
+    },
+    {
+      "id": 85,
+      "category": "spatial_visualization",
+      "reverse": false,
+      "text": "You can hold an accurate mental image of a map you're using to find a shortcut while also listening to instructions."
+    },
+    {
+      "id": 86,
+      "category": "spatial_visualization",
+      "reverse": false,
+      "text": "You can judge distances and proportions in a flat paper pattern before it's folded into a box fairly accurately just by looking."
+    },
+    {
+      "id": 87,
+      "category": "spatial_visualization",
+      "reverse": false,
+      "text": "You can judge distances and proportions in a blueprint of a room before it's built fairly accurately just by looking."
+    },
+    {
+      "id": 88,
+      "category": "spatial_visualization",
+      "reverse": false,
+      "text": "You can judge distances and proportions in a rotated 3D shape in your mind fairly accurately just by looking."
+    },
+    {
+      "id": 89,
+      "category": "spatial_visualization",
+      "reverse": false,
+      "text": "You can judge distances and proportions in a piece of furniture you're assembling from a diagram fairly accurately just by looking."
+    },
+    {
+      "id": 90,
+      "category": "spatial_visualization",
+      "reverse": false,
+      "text": "You can judge distances and proportions in a map you're using to find a shortcut fairly accurately just by looking."
+    },
+    {
+      "id": 91,
+      "category": "spatial_visualization",
+      "reverse": true,
+      "text": "You lose track of orientation and get confused when you try to mentally rotate a flat paper pattern before it's folded into a box."
+    },
+    {
+      "id": 92,
+      "category": "spatial_visualization",
+      "reverse": true,
+      "text": "You lose track of orientation and get confused when you try to mentally rotate a blueprint of a room before it's built."
+    },
+    {
+      "id": 93,
+      "category": "spatial_visualization",
+      "reverse": true,
+      "text": "You lose track of orientation and get confused when you try to mentally rotate a rotated 3D shape in your mind."
+    },
+    {
+      "id": 94,
+      "category": "spatial_visualization",
+      "reverse": true,
+      "text": "You lose track of orientation and get confused when you try to mentally rotate a piece of furniture you're assembling from a diagram."
+    },
+    {
+      "id": 95,
+      "category": "spatial_visualization",
+      "reverse": true,
+      "text": "You lose track of orientation and get confused when you try to mentally rotate a map you're using to find a shortcut."
+    },
+    {
+      "id": 96,
+      "category": "spatial_visualization",
+      "reverse": true,
+      "text": "You need to physically handle a flat paper pattern before it's folded into a box several times before you can picture how it fits together."
+    },
+    {
+      "id": 97,
+      "category": "spatial_visualization",
+      "reverse": true,
+      "text": "You need to physically handle a blueprint of a room before it's built several times before you can picture how it fits together."
+    },
+    {
+      "id": 98,
+      "category": "spatial_visualization",
+      "reverse": true,
+      "text": "You need to physically handle a rotated 3D shape in your mind several times before you can picture how it fits together."
+    },
+    {
+      "id": 99,
+      "category": "spatial_visualization",
+      "reverse": true,
+      "text": "You need to physically handle a piece of furniture you're assembling from a diagram several times before you can picture how it fits together."
+    },
+    {
+      "id": 100,
+      "category": "spatial_visualization",
+      "reverse": true,
+      "text": "You need to physically handle a map you're using to find a shortcut several times before you can picture how it fits together."
+    },
+    {
+      "id": 101,
+      "category": "clerical_speed_accuracy",
+      "reverse": false,
+      "text": "You can scan through a long list of names and numbers quickly and still catch small errors."
+    },
+    {
+      "id": 102,
+      "category": "clerical_speed_accuracy",
+      "reverse": false,
+      "text": "You can scan through a stack of similar-looking invoices quickly and still catch small errors."
+    },
+    {
+      "id": 103,
+      "category": "clerical_speed_accuracy",
+      "reverse": false,
+      "text": "You can scan through a spreadsheet full of codes quickly and still catch small errors."
+    },
+    {
+      "id": 104,
+      "category": "clerical_speed_accuracy",
+      "reverse": false,
+      "text": "You can scan through a set of files that need to be sorted alphabetically quickly and still catch small errors."
+    },
+    {
+      "id": 105,
+      "category": "clerical_speed_accuracy",
+      "reverse": false,
+      "text": "You can scan through a page of numbers that need to be double-checked quickly and still catch small errors."
+    },
+    {
+      "id": 106,
+      "category": "clerical_speed_accuracy",
+      "reverse": false,
+      "text": "You can compare a long list of names and numbers against another copy and spot mismatches fast."
+    },
+    {
+      "id": 107,
+      "category": "clerical_speed_accuracy",
+      "reverse": false,
+      "text": "You can compare a stack of similar-looking invoices against another copy and spot mismatches fast."
+    },
+    {
+      "id": 108,
+      "category": "clerical_speed_accuracy",
+      "reverse": false,
+      "text": "You can compare a spreadsheet full of codes against another copy and spot mismatches fast."
+    },
+    {
+      "id": 109,
+      "category": "clerical_speed_accuracy",
+      "reverse": false,
+      "text": "You can compare a set of files that need to be sorted alphabetically against another copy and spot mismatches fast."
+    },
+    {
+      "id": 110,
+      "category": "clerical_speed_accuracy",
+      "reverse": false,
+      "text": "You can compare a page of numbers that need to be double-checked against another copy and spot mismatches fast."
+    },
+    {
+      "id": 111,
+      "category": "clerical_speed_accuracy",
+      "reverse": false,
+      "text": "You stay accurate even when you're asked to work through a long list of names and numbers quickly."
+    },
+    {
+      "id": 112,
+      "category": "clerical_speed_accuracy",
+      "reverse": false,
+      "text": "You stay accurate even when you're asked to work through a stack of similar-looking invoices quickly."
+    },
+    {
+      "id": 113,
+      "category": "clerical_speed_accuracy",
+      "reverse": false,
+      "text": "You stay accurate even when you're asked to work through a spreadsheet full of codes quickly."
+    },
+    {
+      "id": 114,
+      "category": "clerical_speed_accuracy",
+      "reverse": false,
+      "text": "You stay accurate even when you're asked to work through a set of files that need to be sorted alphabetically quickly."
+    },
+    {
+      "id": 115,
+      "category": "clerical_speed_accuracy",
+      "reverse": false,
+      "text": "You stay accurate even when you're asked to work through a page of numbers that need to be double-checked quickly."
+    },
+    {
+      "id": 116,
+      "category": "clerical_speed_accuracy",
+      "reverse": false,
+      "text": "You can keep your place in a long list of names and numbers without losing track, even when interrupted."
+    },
+    {
+      "id": 117,
+      "category": "clerical_speed_accuracy",
+      "reverse": false,
+      "text": "You can keep your place in a stack of similar-looking invoices without losing track, even when interrupted."
+    },
+    {
+      "id": 118,
+      "category": "clerical_speed_accuracy",
+      "reverse": false,
+      "text": "You can keep your place in a spreadsheet full of codes without losing track, even when interrupted."
+    },
+    {
+      "id": 119,
+      "category": "clerical_speed_accuracy",
+      "reverse": false,
+      "text": "You can keep your place in a set of files that need to be sorted alphabetically without losing track, even when interrupted."
+    },
+    {
+      "id": 120,
+      "category": "clerical_speed_accuracy",
+      "reverse": false,
+      "text": "You can keep your place in a page of numbers that need to be double-checked without losing track, even when interrupted."
+    },
+    {
+      "id": 121,
+      "category": "clerical_speed_accuracy",
+      "reverse": false,
+      "text": "You notice when something in a long list of names and numbers is out of order or misfiled."
+    },
+    {
+      "id": 122,
+      "category": "clerical_speed_accuracy",
+      "reverse": false,
+      "text": "You notice when something in a stack of similar-looking invoices is out of order or misfiled."
+    },
+    {
+      "id": 123,
+      "category": "clerical_speed_accuracy",
+      "reverse": false,
+      "text": "You notice when something in a spreadsheet full of codes is out of order or misfiled."
+    },
+    {
+      "id": 124,
+      "category": "clerical_speed_accuracy",
+      "reverse": false,
+      "text": "You notice when something in a set of files that need to be sorted alphabetically is out of order or misfiled."
+    },
+    {
+      "id": 125,
+      "category": "clerical_speed_accuracy",
+      "reverse": false,
+      "text": "You notice when something in a page of numbers that need to be double-checked is out of order or misfiled."
+    },
+    {
+      "id": 126,
+      "category": "clerical_speed_accuracy",
+      "reverse": false,
+      "text": "You can copy information from a long list of names and numbers without making transcription errors."
+    },
+    {
+      "id": 127,
+      "category": "clerical_speed_accuracy",
+      "reverse": false,
+      "text": "You can copy information from a stack of similar-looking invoices without making transcription errors."
+    },
+    {
+      "id": 128,
+      "category": "clerical_speed_accuracy",
+      "reverse": false,
+      "text": "You can copy information from a spreadsheet full of codes without making transcription errors."
+    },
+    {
+      "id": 129,
+      "category": "clerical_speed_accuracy",
+      "reverse": false,
+      "text": "You can copy information from a set of files that need to be sorted alphabetically without making transcription errors."
+    },
+    {
+      "id": 130,
+      "category": "clerical_speed_accuracy",
+      "reverse": false,
+      "text": "You can copy information from a page of numbers that need to be double-checked without making transcription errors."
+    },
+    {
+      "id": 131,
+      "category": "clerical_speed_accuracy",
+      "reverse": false,
+      "text": "You work through a long list of names and numbers at a steady, reliable pace without slowing down toward the end."
+    },
+    {
+      "id": 132,
+      "category": "clerical_speed_accuracy",
+      "reverse": false,
+      "text": "You work through a stack of similar-looking invoices at a steady, reliable pace without slowing down toward the end."
+    },
+    {
+      "id": 133,
+      "category": "clerical_speed_accuracy",
+      "reverse": false,
+      "text": "You work through a spreadsheet full of codes at a steady, reliable pace without slowing down toward the end."
+    },
+    {
+      "id": 134,
+      "category": "clerical_speed_accuracy",
+      "reverse": false,
+      "text": "You work through a set of files that need to be sorted alphabetically at a steady, reliable pace without slowing down toward the end."
+    },
+    {
+      "id": 135,
+      "category": "clerical_speed_accuracy",
+      "reverse": false,
+      "text": "You work through a page of numbers that need to be double-checked at a steady, reliable pace without slowing down toward the end."
+    },
+    {
+      "id": 136,
+      "category": "clerical_speed_accuracy",
+      "reverse": false,
+      "text": "You can tell almost immediately when two entries in a long list of names and numbers don't match."
+    },
+    {
+      "id": 137,
+      "category": "clerical_speed_accuracy",
+      "reverse": false,
+      "text": "You can tell almost immediately when two entries in a stack of similar-looking invoices don't match."
+    },
+    {
+      "id": 138,
+      "category": "clerical_speed_accuracy",
+      "reverse": false,
+      "text": "You can tell almost immediately when two entries in a spreadsheet full of codes don't match."
+    },
+    {
+      "id": 139,
+      "category": "clerical_speed_accuracy",
+      "reverse": false,
+      "text": "You can tell almost immediately when two entries in a set of files that need to be sorted alphabetically don't match."
+    },
+    {
+      "id": 140,
+      "category": "clerical_speed_accuracy",
+      "reverse": false,
+      "text": "You can tell almost immediately when two entries in a page of numbers that need to be double-checked don't match."
+    },
+    {
+      "id": 141,
+      "category": "clerical_speed_accuracy",
+      "reverse": true,
+      "text": "You make more small mistakes than you'd like when you rush through a long list of names and numbers."
+    },
+    {
+      "id": 142,
+      "category": "clerical_speed_accuracy",
+      "reverse": true,
+      "text": "You make more small mistakes than you'd like when you rush through a stack of similar-looking invoices."
+    },
+    {
+      "id": 143,
+      "category": "clerical_speed_accuracy",
+      "reverse": true,
+      "text": "You make more small mistakes than you'd like when you rush through a spreadsheet full of codes."
+    },
+    {
+      "id": 144,
+      "category": "clerical_speed_accuracy",
+      "reverse": true,
+      "text": "You make more small mistakes than you'd like when you rush through a set of files that need to be sorted alphabetically."
+    },
+    {
+      "id": 145,
+      "category": "clerical_speed_accuracy",
+      "reverse": true,
+      "text": "You make more small mistakes than you'd like when you rush through a page of numbers that need to be double-checked."
+    },
+    {
+      "id": 146,
+      "category": "clerical_speed_accuracy",
+      "reverse": true,
+      "text": "Working through a long list of names and numbers for a long stretch makes your accuracy drop noticeably."
+    },
+    {
+      "id": 147,
+      "category": "clerical_speed_accuracy",
+      "reverse": true,
+      "text": "Working through a stack of similar-looking invoices for a long stretch makes your accuracy drop noticeably."
+    },
+    {
+      "id": 148,
+      "category": "clerical_speed_accuracy",
+      "reverse": true,
+      "text": "Working through a spreadsheet full of codes for a long stretch makes your accuracy drop noticeably."
+    },
+    {
+      "id": 149,
+      "category": "clerical_speed_accuracy",
+      "reverse": true,
+      "text": "Working through a set of files that need to be sorted alphabetically for a long stretch makes your accuracy drop noticeably."
+    },
+    {
+      "id": 150,
+      "category": "clerical_speed_accuracy",
+      "reverse": true,
+      "text": "Working through a page of numbers that need to be double-checked for a long stretch makes your accuracy drop noticeably."
+    },
+    {
+      "id": 151,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can work out measurements for a job that need converting between units in your head without needing a calculator for the basics."
+    },
+    {
+      "id": 152,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can work out a materials budget for a small project in your head without needing a calculator for the basics."
+    },
+    {
+      "id": 153,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can work out a ratio of ingredients or parts that needs to be scaled up in your head without needing a calculator for the basics."
+    },
+    {
+      "id": 154,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can work out an hourly wage calculation with overtime in your head without needing a calculator for the basics."
+    },
+    {
+      "id": 155,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can work out a set of measurements that need to add up correctly in your head without needing a calculator for the basics."
+    },
+    {
+      "id": 156,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You catch it quickly when measurements for a job that need converting between units doesn't add up correctly."
+    },
+    {
+      "id": 157,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You catch it quickly when a materials budget for a small project doesn't add up correctly."
+    },
+    {
+      "id": 158,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You catch it quickly when a ratio of ingredients or parts that needs to be scaled up doesn't add up correctly."
+    },
+    {
+      "id": 159,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You catch it quickly when an hourly wage calculation with overtime doesn't add up correctly."
+    },
+    {
+      "id": 160,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You catch it quickly when a set of measurements that need to add up correctly doesn't add up correctly."
+    },
+    {
+      "id": 161,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can estimate measurements for a job that need converting between units closely enough to know if a final answer looks right."
+    },
+    {
+      "id": 162,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can estimate a materials budget for a small project closely enough to know if a final answer looks right."
+    },
+    {
+      "id": 163,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can estimate a ratio of ingredients or parts that needs to be scaled up closely enough to know if a final answer looks right."
+    },
+    {
+      "id": 164,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can estimate an hourly wage calculation with overtime closely enough to know if a final answer looks right."
+    },
+    {
+      "id": 165,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can estimate a set of measurements that need to add up correctly closely enough to know if a final answer looks right."
+    },
+    {
+      "id": 166,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You feel comfortable double-checking measurements for a job that need converting between units under time pressure."
+    },
+    {
+      "id": 167,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You feel comfortable double-checking a materials budget for a small project under time pressure."
+    },
+    {
+      "id": 168,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You feel comfortable double-checking a ratio of ingredients or parts that needs to be scaled up under time pressure."
+    },
+    {
+      "id": 169,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You feel comfortable double-checking an hourly wage calculation with overtime under time pressure."
+    },
+    {
+      "id": 170,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You feel comfortable double-checking a set of measurements that need to add up correctly under time pressure."
+    },
+    {
+      "id": 171,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can convert between units confidently when dealing with measurements for a job that need converting between units."
+    },
+    {
+      "id": 172,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can convert between units confidently when dealing with a materials budget for a small project."
+    },
+    {
+      "id": 173,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can convert between units confidently when dealing with a ratio of ingredients or parts that needs to be scaled up."
+    },
+    {
+      "id": 174,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can convert between units confidently when dealing with an hourly wage calculation with overtime."
+    },
+    {
+      "id": 175,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can convert between units confidently when dealing with a set of measurements that need to add up correctly."
+    },
+    {
+      "id": 176,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "Numbers involved in measurements for a job that need converting between units make sense to you practically, not just on paper."
+    },
+    {
+      "id": 177,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "Numbers involved in a materials budget for a small project make sense to you practically, not just on paper."
+    },
+    {
+      "id": 178,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "Numbers involved in a ratio of ingredients or parts that needs to be scaled up make sense to you practically, not just on paper."
+    },
+    {
+      "id": 179,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "Numbers involved in an hourly wage calculation with overtime make sense to you practically, not just on paper."
+    },
+    {
+      "id": 180,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "Numbers involved in a set of measurements that need to add up correctly make sense to you practically, not just on paper."
+    },
+    {
+      "id": 181,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can break measurements for a job that need converting between units into simple steps and solve it without getting lost."
+    },
+    {
+      "id": 182,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can break a materials budget for a small project into simple steps and solve it without getting lost."
+    },
+    {
+      "id": 183,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can break a ratio of ingredients or parts that needs to be scaled up into simple steps and solve it without getting lost."
+    },
+    {
+      "id": 184,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can break an hourly wage calculation with overtime into simple steps and solve it without getting lost."
+    },
+    {
+      "id": 185,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You can break a set of measurements that need to add up correctly into simple steps and solve it without getting lost."
+    },
+    {
+      "id": 186,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You trust your own math when working through measurements for a job that need converting between units on the job."
+    },
+    {
+      "id": 187,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You trust your own math when working through a materials budget for a small project on the job."
+    },
+    {
+      "id": 188,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You trust your own math when working through a ratio of ingredients or parts that needs to be scaled up on the job."
+    },
+    {
+      "id": 189,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You trust your own math when working through an hourly wage calculation with overtime on the job."
+    },
+    {
+      "id": 190,
+      "category": "numerical_reasoning",
+      "reverse": false,
+      "text": "You trust your own math when working through a set of measurements that need to add up correctly on the job."
+    },
+    {
+      "id": 191,
+      "category": "numerical_reasoning",
+      "reverse": true,
+      "text": "You avoid tasks involving measurements for a job that need converting between units whenever you can because numbers make you anxious."
+    },
+    {
+      "id": 192,
+      "category": "numerical_reasoning",
+      "reverse": true,
+      "text": "You avoid tasks involving a materials budget for a small project whenever you can because numbers make you anxious."
+    },
+    {
+      "id": 193,
+      "category": "numerical_reasoning",
+      "reverse": true,
+      "text": "You avoid tasks involving a ratio of ingredients or parts that needs to be scaled up whenever you can because numbers make you anxious."
+    },
+    {
+      "id": 194,
+      "category": "numerical_reasoning",
+      "reverse": true,
+      "text": "You avoid tasks involving an hourly wage calculation with overtime whenever you can because numbers make you anxious."
+    },
+    {
+      "id": 195,
+      "category": "numerical_reasoning",
+      "reverse": true,
+      "text": "You avoid tasks involving a set of measurements that need to add up correctly whenever you can because numbers make you anxious."
+    },
+    {
+      "id": 196,
+      "category": "numerical_reasoning",
+      "reverse": true,
+      "text": "You often need someone else to check measurements for a job that need converting between units because you don't trust your own calculations."
+    },
+    {
+      "id": 197,
+      "category": "numerical_reasoning",
+      "reverse": true,
+      "text": "You often need someone else to check a materials budget for a small project because you don't trust your own calculations."
+    },
+    {
+      "id": 198,
+      "category": "numerical_reasoning",
+      "reverse": true,
+      "text": "You often need someone else to check a ratio of ingredients or parts that needs to be scaled up because you don't trust your own calculations."
+    },
+    {
+      "id": 199,
+      "category": "numerical_reasoning",
+      "reverse": true,
+      "text": "You often need someone else to check an hourly wage calculation with overtime because you don't trust your own calculations."
+    },
+    {
+      "id": 200,
+      "category": "numerical_reasoning",
+      "reverse": true,
+      "text": "You often need someone else to check a set of measurements that need to add up correctly because you don't trust your own calculations."
+    },
+    {
+      "id": 201,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can spot the rule behind a sequence of shapes that follows a hidden rule faster than most people you know."
+    },
+    {
+      "id": 202,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can spot the rule behind a pattern of symbols that skips every so often faster than most people you know."
+    },
+    {
+      "id": 203,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can spot the rule behind a puzzle piece that needs to fit a specific rotation faster than most people you know."
+    },
+    {
+      "id": 204,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can spot the rule behind a series of numbers or shapes with one that doesn't belong faster than most people you know."
+    },
+    {
+      "id": 205,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can spot the rule behind an unfamiliar diagram with a logical pattern to it faster than most people you know."
+    },
+    {
+      "id": 206,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You enjoy figuring out a sequence of shapes that follows a hidden rule even when there are no instructions."
+    },
+    {
+      "id": 207,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You enjoy figuring out a pattern of symbols that skips every so often even when there are no instructions."
+    },
+    {
+      "id": 208,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You enjoy figuring out a puzzle piece that needs to fit a specific rotation even when there are no instructions."
+    },
+    {
+      "id": 209,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You enjoy figuring out a series of numbers or shapes with one that doesn't belong even when there are no instructions."
+    },
+    {
+      "id": 210,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You enjoy figuring out an unfamiliar diagram with a logical pattern to it even when there are no instructions."
+    },
+    {
+      "id": 211,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can predict what comes next in a sequence of shapes that follows a hidden rule after seeing just a few examples."
+    },
+    {
+      "id": 212,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can predict what comes next in a pattern of symbols that skips every so often after seeing just a few examples."
+    },
+    {
+      "id": 213,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can predict what comes next in a puzzle piece that needs to fit a specific rotation after seeing just a few examples."
+    },
+    {
+      "id": 214,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can predict what comes next in a series of numbers or shapes with one that doesn't belong after seeing just a few examples."
+    },
+    {
+      "id": 215,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can predict what comes next in an unfamiliar diagram with a logical pattern to it after seeing just a few examples."
+    },
+    {
+      "id": 216,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You notice the odd one out in a sequence of shapes that follows a hidden rule almost immediately."
+    },
+    {
+      "id": 217,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You notice the odd one out in a pattern of symbols that skips every so often almost immediately."
+    },
+    {
+      "id": 218,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You notice the odd one out in a puzzle piece that needs to fit a specific rotation almost immediately."
+    },
+    {
+      "id": 219,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You notice the odd one out in a series of numbers or shapes with one that doesn't belong almost immediately."
+    },
+    {
+      "id": 220,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You notice the odd one out in an unfamiliar diagram with a logical pattern to it almost immediately."
+    },
+    {
+      "id": 221,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can find patterns in a sequence of shapes that follows a hidden rule without needing them explained first."
+    },
+    {
+      "id": 222,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can find patterns in a pattern of symbols that skips every so often without needing them explained first."
+    },
+    {
+      "id": 223,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can find patterns in a puzzle piece that needs to fit a specific rotation without needing them explained first."
+    },
+    {
+      "id": 224,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can find patterns in a series of numbers or shapes with one that doesn't belong without needing them explained first."
+    },
+    {
+      "id": 225,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can find patterns in an unfamiliar diagram with a logical pattern to it without needing them explained first."
+    },
+    {
+      "id": 226,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You stay calm and methodical when working through a sequence of shapes that follows a hidden rule, rather than guessing randomly."
+    },
+    {
+      "id": 227,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You stay calm and methodical when working through a pattern of symbols that skips every so often, rather than guessing randomly."
+    },
+    {
+      "id": 228,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You stay calm and methodical when working through a puzzle piece that needs to fit a specific rotation, rather than guessing randomly."
+    },
+    {
+      "id": 229,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You stay calm and methodical when working through a series of numbers or shapes with one that doesn't belong, rather than guessing randomly."
+    },
+    {
+      "id": 230,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You stay calm and methodical when working through an unfamiliar diagram with a logical pattern to it, rather than guessing randomly."
+    },
+    {
+      "id": 231,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can apply a rule you found in a sequence of shapes that follows a hidden rule to a completely new example."
+    },
+    {
+      "id": 232,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can apply a rule you found in a pattern of symbols that skips every so often to a completely new example."
+    },
+    {
+      "id": 233,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can apply a rule you found in a puzzle piece that needs to fit a specific rotation to a completely new example."
+    },
+    {
+      "id": 234,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can apply a rule you found in a series of numbers or shapes with one that doesn't belong to a completely new example."
+    },
+    {
+      "id": 235,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You can apply a rule you found in an unfamiliar diagram with a logical pattern to it to a completely new example."
+    },
+    {
+      "id": 236,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You like the challenge of a sequence of shapes that follows a hidden rule more than most people do."
+    },
+    {
+      "id": 237,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You like the challenge of a pattern of symbols that skips every so often more than most people do."
+    },
+    {
+      "id": 238,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You like the challenge of a puzzle piece that needs to fit a specific rotation more than most people do."
+    },
+    {
+      "id": 239,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You like the challenge of a series of numbers or shapes with one that doesn't belong more than most people do."
+    },
+    {
+      "id": 240,
+      "category": "abstract_reasoning",
+      "reverse": false,
+      "text": "You like the challenge of an unfamiliar diagram with a logical pattern to it more than most people do."
+    },
+    {
+      "id": 241,
+      "category": "abstract_reasoning",
+      "reverse": true,
+      "text": "a sequence of shapes that follows a hidden rule usually leaves you stuck, and you end up guessing instead of reasoning it out."
+    },
+    {
+      "id": 242,
+      "category": "abstract_reasoning",
+      "reverse": true,
+      "text": "a pattern of symbols that skips every so often usually leaves you stuck, and you end up guessing instead of reasoning it out."
+    },
+    {
+      "id": 243,
+      "category": "abstract_reasoning",
+      "reverse": true,
+      "text": "a puzzle piece that needs to fit a specific rotation usually leaves you stuck, and you end up guessing instead of reasoning it out."
+    },
+    {
+      "id": 244,
+      "category": "abstract_reasoning",
+      "reverse": true,
+      "text": "a series of numbers or shapes with one that doesn't belong usually leaves you stuck, and you end up guessing instead of reasoning it out."
+    },
+    {
+      "id": 245,
+      "category": "abstract_reasoning",
+      "reverse": true,
+      "text": "an unfamiliar diagram with a logical pattern to it usually leaves you stuck, and you end up guessing instead of reasoning it out."
+    },
+    {
+      "id": 246,
+      "category": "abstract_reasoning",
+      "reverse": true,
+      "text": "You give up on a sequence of shapes that follows a hidden rule faster than you'd like to admit."
+    },
+    {
+      "id": 247,
+      "category": "abstract_reasoning",
+      "reverse": true,
+      "text": "You give up on a pattern of symbols that skips every so often faster than you'd like to admit."
+    },
+    {
+      "id": 248,
+      "category": "abstract_reasoning",
+      "reverse": true,
+      "text": "You give up on a puzzle piece that needs to fit a specific rotation faster than you'd like to admit."
+    },
+    {
+      "id": 249,
+      "category": "abstract_reasoning",
+      "reverse": true,
+      "text": "You give up on a series of numbers or shapes with one that doesn't belong faster than you'd like to admit."
+    },
+    {
+      "id": 250,
+      "category": "abstract_reasoning",
+      "reverse": true,
+      "text": "You give up on an unfamiliar diagram with a logical pattern to it faster than you'd like to admit."
+    },
+    {
+      "id": 251,
+      "category": "verbal_reasoning",
+      "reverse": false,
+      "text": "You can read a technical manual written in plain but detailed language once and understand the main point without re-reading."
+    },
+    {
+      "id": 252,
+      "category": "verbal_reasoning",
+      "reverse": false,
+      "text": "You can read written instructions for assembling or repairing something once and understand the main point without re-reading."
+    },
+    {
+      "id": 253,
+      "category": "verbal_reasoning",
+      "reverse": false,
+      "text": "You can read a safety notice with several steps to follow in order once and understand the main point without re-reading."
+    },
+    {
+      "id": 254,
+      "category": "verbal_reasoning",
+      "reverse": false,
+      "text": "You can read a short passage that you need to summarize accurately once and understand the main point without re-reading."
+    },
+    {
+      "id": 255,
+      "category": "verbal_reasoning",
+      "reverse": false,
+      "text": "You can read an argument or explanation that you need to follow closely once and understand the main point without re-reading."
+    },
+    {
+      "id": 256,
+      "category": "verbal_reasoning",
+      "reverse": false,
+      "text": "You can follow a technical manual written in plain but detailed language step by step without losing your place."
+    },
+    {
+      "id": 257,
+      "category": "verbal_reasoning",
+      "reverse": false,
+      "text": "You can follow written instructions for assembling or repairing something step by step without losing your place."
+    },
+    {
+      "id": 258,
+      "category": "verbal_reasoning",
+      "reverse": false,
+      "text": "You can follow a safety notice with several steps to follow in order step by step without losing your place."
+    },
+    {
+      "id": 259,
+      "category": "verbal_reasoning",
+      "reverse": false,
+      "text": "You can follow a short passage that you need to summarize accurately step by step without losing your place."
+    },
+    {
+      "id": 260,
+      "category": "verbal_reasoning",
+      "reverse": false,
+      "text": "You can follow an argument or explanation that you need to follow closely step by step without losing your place."
+    },
+    {
+      "id": 261,
+      "category": "verbal_reasoning",
+      "reverse": false,
+      "text": "You can pick out the most important detail in a technical manual written in plain but detailed language quickly."
+    },
+    {
+      "id": 262,
+      "category": "verbal_reasoning",
+      "reverse": false,
+      "text": "You can pick out the most important detail in written instructions for assembling or repairing something quickly."
+    },
+    {
+      "id": 263,
+      "category": "verbal_reasoning",
+      "reverse": false,
+      "text": "You can pick out the most important detail in a safety notice with several steps to follow in order quickly."
+    },
+    {
+      "id": 264,
+      "category": "verbal_reasoning",
+      "reverse": false,
+      "text": "You can pick out the most important detail in a short passage that you need to summarize accurately quickly."
+    },
+    {
+      "id": 265,
+      "category": "verbal_reasoning",
+      "reverse": false,
+      "text": "You can pick out the most important detail in an argument or explanation that you need to follow closely quickly."
+    },
+    {
+      "id": 266,
+      "category": "verbal_reasoning",
+      "reverse": false,
+      "text": "You notice when a technical manual written in plain but detailed language is unclear or missing a step."
+    },
+    {
+      "id": 267,
+      "category": "verbal_reasoning",
+      "reverse": false,
+      "text": "You notice when written instructions for assembling or repairing something is unclear or missing a step."
+    },
+    {
+      "id": 268,
+      "category": "verbal_reasoning",
+      "reverse": false,
+      "text": "You notice when a safety notice with several steps to follow in order is unclear or missing a step."
+    },
+    {
+      "id": 269,
+      "category": "verbal_reasoning",
+      "reverse": false,
+      "text": "You notice when a short passage that you need to summarize accurately is unclear or missing a step."
+    },
+    {
+      "id": 270,
+      "category": "verbal_reasoning",
+      "reverse": false,
+      "text": "You notice when an argument or explanation that you need to follow closely is unclear or missing a step."
+    },
+    {
+      "id": 271,
+      "category": "verbal_reasoning",
+      "reverse": false,
+      "text": "You can explain a technical manual written in plain but detailed language back to someone else accurately in your own words."
+    },
+    {
+      "id": 272,
+      "category": "verbal_reasoning",
+      "reverse": false,
+      "text": "You can explain written instructions for assembling or repairing something back to someone else accurately in your own words."
+    },
+    {
+      "id": 273,
+      "category": "verbal_reasoning",
+      "reverse": false,
+      "text": "You can explain a safety notice with several steps to follow in order back to someone else accurately in your own words."
+    },
+    {
+      "id": 274,
+      "category": "verbal_reasoning",
+      "reverse": false,
+      "text": "You can explain a short passage that you need to summarize accurately back to someone else accurately in your own words."
+    },
+    {
+      "id": 275,
+      "category": "verbal_reasoning",
+      "reverse": false,
+      "text": "You can explain an argument or explanation that you need to follow closely back to someone else accurately in your own words."
+    },
+    {
+      "id": 276,
+      "category": "verbal_reasoning",
+      "reverse": false,
+      "text": "You understand a technical manual written in plain but detailed language even when it uses some unfamiliar technical terms."
+    },
+    {
+      "id": 277,
+      "category": "verbal_reasoning",
+      "reverse": false,
+      "text": "You understand written instructions for assembling or repairing something even when it uses some unfamiliar technical terms."
+    },
+    {
+      "id": 278,
+      "category": "verbal_reasoning",
+      "reverse": false,
+      "text": "You understand a safety notice with several steps to follow in order even when it uses some unfamiliar technical terms."
+    },
+    {
+      "id": 279,
+      "category": "verbal_reasoning",
+      "reverse": false,
+      "text": "You understand a short passage that you need to summarize accurately even when it uses some unfamiliar technical terms."
+    },
+    {
+      "id": 280,
+      "category": "verbal_reasoning",
+      "reverse": false,
+      "text": "You understand an argument or explanation that you need to follow closely even when it uses some unfamiliar technical terms."
+    },
+    {
+      "id": 281,
+      "category": "verbal_reasoning",
+      "reverse": false,
+      "text": "You can tell the difference between the main idea and a minor detail in a technical manual written in plain but detailed language."
+    },
+    {
+      "id": 282,
+      "category": "verbal_reasoning",
+      "reverse": false,
+      "text": "You can tell the difference between the main idea and a minor detail in written instructions for assembling or repairing something."
+    },
+    {
+      "id": 283,
+      "category": "verbal_reasoning",
+      "reverse": false,
+      "text": "You can tell the difference between the main idea and a minor detail in a safety notice with several steps to follow in order."
+    },
+    {
+      "id": 284,
+      "category": "verbal_reasoning",
+      "reverse": false,
+      "text": "You can tell the difference between the main idea and a minor detail in a short passage that you need to summarize accurately."
+    },
+    {
+      "id": 285,
+      "category": "verbal_reasoning",
+      "reverse": false,
+      "text": "You can tell the difference between the main idea and a minor detail in an argument or explanation that you need to follow closely."
+    },
+    {
+      "id": 286,
+      "category": "verbal_reasoning",
+      "reverse": false,
+      "text": "You read a technical manual written in plain but detailed language carefully enough to catch a mistake before acting on it."
+    },
+    {
+      "id": 287,
+      "category": "verbal_reasoning",
+      "reverse": false,
+      "text": "You read written instructions for assembling or repairing something carefully enough to catch a mistake before acting on it."
+    },
+    {
+      "id": 288,
+      "category": "verbal_reasoning",
+      "reverse": false,
+      "text": "You read a safety notice with several steps to follow in order carefully enough to catch a mistake before acting on it."
+    },
+    {
+      "id": 289,
+      "category": "verbal_reasoning",
+      "reverse": false,
+      "text": "You read a short passage that you need to summarize accurately carefully enough to catch a mistake before acting on it."
+    },
+    {
+      "id": 290,
+      "category": "verbal_reasoning",
+      "reverse": false,
+      "text": "You read an argument or explanation that you need to follow closely carefully enough to catch a mistake before acting on it."
+    },
+    {
+      "id": 291,
+      "category": "verbal_reasoning",
+      "reverse": true,
+      "text": "You have to read a technical manual written in plain but detailed language several times before it really makes sense to you."
+    },
+    {
+      "id": 292,
+      "category": "verbal_reasoning",
+      "reverse": true,
+      "text": "You have to read written instructions for assembling or repairing something several times before it really makes sense to you."
+    },
+    {
+      "id": 293,
+      "category": "verbal_reasoning",
+      "reverse": true,
+      "text": "You have to read a safety notice with several steps to follow in order several times before it really makes sense to you."
+    },
+    {
+      "id": 294,
+      "category": "verbal_reasoning",
+      "reverse": true,
+      "text": "You have to read a short passage that you need to summarize accurately several times before it really makes sense to you."
+    },
+    {
+      "id": 295,
+      "category": "verbal_reasoning",
+      "reverse": true,
+      "text": "You have to read an argument or explanation that you need to follow closely several times before it really makes sense to you."
+    },
+    {
+      "id": 296,
+      "category": "verbal_reasoning",
+      "reverse": true,
+      "text": "You sometimes skip over important details in a technical manual written in plain but detailed language without meaning to."
+    },
+    {
+      "id": 297,
+      "category": "verbal_reasoning",
+      "reverse": true,
+      "text": "You sometimes skip over important details in written instructions for assembling or repairing something without meaning to."
+    },
+    {
+      "id": 298,
+      "category": "verbal_reasoning",
+      "reverse": true,
+      "text": "You sometimes skip over important details in a safety notice with several steps to follow in order without meaning to."
+    },
+    {
+      "id": 299,
+      "category": "verbal_reasoning",
+      "reverse": true,
+      "text": "You sometimes skip over important details in a short passage that you need to summarize accurately without meaning to."
+    },
+    {
+      "id": 300,
+      "category": "verbal_reasoning",
+      "reverse": true,
+      "text": "You sometimes skip over important details in an argument or explanation that you need to follow closely without meaning to."
+    },
+    {
+      "id": 301,
+      "category": "language_usage_spelling",
+      "reverse": false,
+      "text": "You catch spelling mistakes in a work report before you send it without needing spellcheck."
+    },
+    {
+      "id": 302,
+      "category": "language_usage_spelling",
+      "reverse": false,
+      "text": "You catch spelling mistakes in a label or sign you're writing for equipment without needing spellcheck."
+    },
+    {
+      "id": 303,
+      "category": "language_usage_spelling",
+      "reverse": false,
+      "text": "You catch spelling mistakes in a form you're filling out without needing spellcheck."
+    },
+    {
+      "id": 304,
+      "category": "language_usage_spelling",
+      "reverse": false,
+      "text": "You catch spelling mistakes in a short message or email to a supervisor without needing spellcheck."
+    },
+    {
+      "id": 305,
+      "category": "language_usage_spelling",
+      "reverse": false,
+      "text": "You catch spelling mistakes in a set of instructions you're writing for someone else without needing spellcheck."
+    },
+    {
+      "id": 306,
+      "category": "language_usage_spelling",
+      "reverse": false,
+      "text": "You use the correct word, not just a similar-sounding one, when you write a work report before you send it."
+    },
+    {
+      "id": 307,
+      "category": "language_usage_spelling",
+      "reverse": false,
+      "text": "You use the correct word, not just a similar-sounding one, when you write a label or sign you're writing for equipment."
+    },
+    {
+      "id": 308,
+      "category": "language_usage_spelling",
+      "reverse": false,
+      "text": "You use the correct word, not just a similar-sounding one, when you write a form you're filling out."
+    },
+    {
+      "id": 309,
+      "category": "language_usage_spelling",
+      "reverse": false,
+      "text": "You use the correct word, not just a similar-sounding one, when you write a short message or email to a supervisor."
+    },
+    {
+      "id": 310,
+      "category": "language_usage_spelling",
+      "reverse": false,
+      "text": "You use the correct word, not just a similar-sounding one, when you write a set of instructions you're writing for someone else."
+    },
+    {
+      "id": 311,
+      "category": "language_usage_spelling",
+      "reverse": false,
+      "text": "You get the grammar right in a work report before you send it without having to think hard about it."
+    },
+    {
+      "id": 312,
+      "category": "language_usage_spelling",
+      "reverse": false,
+      "text": "You get the grammar right in a label or sign you're writing for equipment without having to think hard about it."
+    },
+    {
+      "id": 313,
+      "category": "language_usage_spelling",
+      "reverse": false,
+      "text": "You get the grammar right in a form you're filling out without having to think hard about it."
+    },
+    {
+      "id": 314,
+      "category": "language_usage_spelling",
+      "reverse": false,
+      "text": "You get the grammar right in a short message or email to a supervisor without having to think hard about it."
+    },
+    {
+      "id": 315,
+      "category": "language_usage_spelling",
+      "reverse": false,
+      "text": "You get the grammar right in a set of instructions you're writing for someone else without having to think hard about it."
+    },
+    {
+      "id": 316,
+      "category": "language_usage_spelling",
+      "reverse": false,
+      "text": "You notice when punctuation is missing or wrong in a work report before you send it."
+    },
+    {
+      "id": 317,
+      "category": "language_usage_spelling",
+      "reverse": false,
+      "text": "You notice when punctuation is missing or wrong in a label or sign you're writing for equipment."
+    },
+    {
+      "id": 318,
+      "category": "language_usage_spelling",
+      "reverse": false,
+      "text": "You notice when punctuation is missing or wrong in a form you're filling out."
+    },
+    {
+      "id": 319,
+      "category": "language_usage_spelling",
+      "reverse": false,
+      "text": "You notice when punctuation is missing or wrong in a short message or email to a supervisor."
+    },
+    {
+      "id": 320,
+      "category": "language_usage_spelling",
+      "reverse": false,
+      "text": "You notice when punctuation is missing or wrong in a set of instructions you're writing for someone else."
+    },
+    {
+      "id": 321,
+      "category": "language_usage_spelling",
+      "reverse": false,
+      "text": "You can proofread a work report before you send it and find errors that others miss."
+    },
+    {
+      "id": 322,
+      "category": "language_usage_spelling",
+      "reverse": false,
+      "text": "You can proofread a label or sign you're writing for equipment and find errors that others miss."
+    },
+    {
+      "id": 323,
+      "category": "language_usage_spelling",
+      "reverse": false,
+      "text": "You can proofread a form you're filling out and find errors that others miss."
+    },
+    {
+      "id": 324,
+      "category": "language_usage_spelling",
+      "reverse": false,
+      "text": "You can proofread a short message or email to a supervisor and find errors that others miss."
+    },
+    {
+      "id": 325,
+      "category": "language_usage_spelling",
+      "reverse": false,
+      "text": "You can proofread a set of instructions you're writing for someone else and find errors that others miss."
+    },
+    {
+      "id": 326,
+      "category": "language_usage_spelling",
+      "reverse": false,
+      "text": "Your writing in a work report before you send it is clear enough that others don't need to ask what you meant."
+    },
+    {
+      "id": 327,
+      "category": "language_usage_spelling",
+      "reverse": false,
+      "text": "Your writing in a label or sign you're writing for equipment is clear enough that others don't need to ask what you meant."
+    },
+    {
+      "id": 328,
+      "category": "language_usage_spelling",
+      "reverse": false,
+      "text": "Your writing in a form you're filling out is clear enough that others don't need to ask what you meant."
+    },
+    {
+      "id": 329,
+      "category": "language_usage_spelling",
+      "reverse": false,
+      "text": "Your writing in a short message or email to a supervisor is clear enough that others don't need to ask what you meant."
+    },
+    {
+      "id": 330,
+      "category": "language_usage_spelling",
+      "reverse": false,
+      "text": "Your writing in a set of instructions you're writing for someone else is clear enough that others don't need to ask what you meant."
+    },
+    {
+      "id": 331,
+      "category": "language_usage_spelling",
+      "reverse": false,
+      "text": "You choose precise, correct words when writing a work report before you send it, not just close-enough ones."
+    },
+    {
+      "id": 332,
+      "category": "language_usage_spelling",
+      "reverse": false,
+      "text": "You choose precise, correct words when writing a label or sign you're writing for equipment, not just close-enough ones."
+    },
+    {
+      "id": 333,
+      "category": "language_usage_spelling",
+      "reverse": false,
+      "text": "You choose precise, correct words when writing a form you're filling out, not just close-enough ones."
+    },
+    {
+      "id": 334,
+      "category": "language_usage_spelling",
+      "reverse": false,
+      "text": "You choose precise, correct words when writing a short message or email to a supervisor, not just close-enough ones."
+    },
+    {
+      "id": 335,
+      "category": "language_usage_spelling",
+      "reverse": false,
+      "text": "You choose precise, correct words when writing a set of instructions you're writing for someone else, not just close-enough ones."
+    },
+    {
+      "id": 336,
+      "category": "language_usage_spelling",
+      "reverse": false,
+      "text": "You can spot when a work report before you send it has a typo, even a small one, at a glance."
+    },
+    {
+      "id": 337,
+      "category": "language_usage_spelling",
+      "reverse": false,
+      "text": "You can spot when a label or sign you're writing for equipment has a typo, even a small one, at a glance."
+    },
+    {
+      "id": 338,
+      "category": "language_usage_spelling",
+      "reverse": false,
+      "text": "You can spot when a form you're filling out has a typo, even a small one, at a glance."
+    },
+    {
+      "id": 339,
+      "category": "language_usage_spelling",
+      "reverse": false,
+      "text": "You can spot when a short message or email to a supervisor has a typo, even a small one, at a glance."
+    },
+    {
+      "id": 340,
+      "category": "language_usage_spelling",
+      "reverse": false,
+      "text": "You can spot when a set of instructions you're writing for someone else has a typo, even a small one, at a glance."
+    },
+    {
+      "id": 341,
+      "category": "language_usage_spelling",
+      "reverse": true,
+      "text": "You mix up similar-sounding words more often than you'd like when writing a work report before you send it."
+    },
+    {
+      "id": 342,
+      "category": "language_usage_spelling",
+      "reverse": true,
+      "text": "You mix up similar-sounding words more often than you'd like when writing a label or sign you're writing for equipment."
+    },
+    {
+      "id": 343,
+      "category": "language_usage_spelling",
+      "reverse": true,
+      "text": "You mix up similar-sounding words more often than you'd like when writing a form you're filling out."
+    },
+    {
+      "id": 344,
+      "category": "language_usage_spelling",
+      "reverse": true,
+      "text": "You mix up similar-sounding words more often than you'd like when writing a short message or email to a supervisor."
+    },
+    {
+      "id": 345,
+      "category": "language_usage_spelling",
+      "reverse": true,
+      "text": "You mix up similar-sounding words more often than you'd like when writing a set of instructions you're writing for someone else."
+    },
+    {
+      "id": 346,
+      "category": "language_usage_spelling",
+      "reverse": true,
+      "text": "You rely on someone else to catch your spelling and grammar mistakes in a work report before you send it."
+    },
+    {
+      "id": 347,
+      "category": "language_usage_spelling",
+      "reverse": true,
+      "text": "You rely on someone else to catch your spelling and grammar mistakes in a label or sign you're writing for equipment."
+    },
+    {
+      "id": 348,
+      "category": "language_usage_spelling",
+      "reverse": true,
+      "text": "You rely on someone else to catch your spelling and grammar mistakes in a form you're filling out."
+    },
+    {
+      "id": 349,
+      "category": "language_usage_spelling",
+      "reverse": true,
+      "text": "You rely on someone else to catch your spelling and grammar mistakes in a short message or email to a supervisor."
+    },
+    {
+      "id": 350,
+      "category": "language_usage_spelling",
+      "reverse": true,
+      "text": "You rely on someone else to catch your spelling and grammar mistakes in a set of instructions you're writing for someone else."
+    },
+    {
+      "id": 351,
+      "category": "technical_tool_knowledge",
+      "reverse": false,
+      "text": "You know which tool from a standard toolbox on a job site is the right one for a specific job."
+    },
+    {
+      "id": 352,
+      "category": "technical_tool_knowledge",
+      "reverse": false,
+      "text": "You know which tool from basic electrical wiring and connections is the right one for a specific job."
+    },
+    {
+      "id": 353,
+      "category": "technical_tool_knowledge",
+      "reverse": false,
+      "text": "You know which tool from hand and power tools used in a workshop is the right one for a specific job."
+    },
+    {
+      "id": 354,
+      "category": "technical_tool_knowledge",
+      "reverse": false,
+      "text": "You know which tool from safety equipment required for a technical task is the right one for a specific job."
+    },
+    {
+      "id": 355,
+      "category": "technical_tool_knowledge",
+      "reverse": false,
+      "text": "You know which tool from common fasteners, like bolts, screws, and clamps is the right one for a specific job."
+    },
+    {
+      "id": 356,
+      "category": "technical_tool_knowledge",
+      "reverse": false,
+      "text": "You understand the basic safety precautions needed when working with a standard toolbox on a job site."
+    },
+    {
+      "id": 357,
+      "category": "technical_tool_knowledge",
+      "reverse": false,
+      "text": "You understand the basic safety precautions needed when working with basic electrical wiring and connections."
+    },
+    {
+      "id": 358,
+      "category": "technical_tool_knowledge",
+      "reverse": false,
+      "text": "You understand the basic safety precautions needed when working with hand and power tools used in a workshop."
+    },
+    {
+      "id": 359,
+      "category": "technical_tool_knowledge",
+      "reverse": false,
+      "text": "You understand the basic safety precautions needed when working with safety equipment required for a technical task."
+    },
+    {
+      "id": 360,
+      "category": "technical_tool_knowledge",
+      "reverse": false,
+      "text": "You understand the basic safety precautions needed when working with common fasteners, like bolts, screws, and clamps."
+    },
+    {
+      "id": 361,
+      "category": "technical_tool_knowledge",
+      "reverse": false,
+      "text": "You can identify a standard toolbox on a job site correctly, even if you haven't used every piece before."
+    },
+    {
+      "id": 362,
+      "category": "technical_tool_knowledge",
+      "reverse": false,
+      "text": "You can identify basic electrical wiring and connections correctly, even if you haven't used every piece before."
+    },
+    {
+      "id": 363,
+      "category": "technical_tool_knowledge",
+      "reverse": false,
+      "text": "You can identify hand and power tools used in a workshop correctly, even if you haven't used every piece before."
+    },
+    {
+      "id": 364,
+      "category": "technical_tool_knowledge",
+      "reverse": false,
+      "text": "You can identify safety equipment required for a technical task correctly, even if you haven't used every piece before."
+    },
+    {
+      "id": 365,
+      "category": "technical_tool_knowledge",
+      "reverse": false,
+      "text": "You can identify common fasteners, like bolts, screws, and clamps correctly, even if you haven't used every piece before."
+    },
+    {
+      "id": 366,
+      "category": "technical_tool_knowledge",
+      "reverse": false,
+      "text": "You know how to use a standard toolbox on a job site properly without needing step-by-step supervision."
+    },
+    {
+      "id": 367,
+      "category": "technical_tool_knowledge",
+      "reverse": false,
+      "text": "You know how to use basic electrical wiring and connections properly without needing step-by-step supervision."
+    },
+    {
+      "id": 368,
+      "category": "technical_tool_knowledge",
+      "reverse": false,
+      "text": "You know how to use hand and power tools used in a workshop properly without needing step-by-step supervision."
+    },
+    {
+      "id": 369,
+      "category": "technical_tool_knowledge",
+      "reverse": false,
+      "text": "You know how to use safety equipment required for a technical task properly without needing step-by-step supervision."
+    },
+    {
+      "id": 370,
+      "category": "technical_tool_knowledge",
+      "reverse": false,
+      "text": "You know how to use common fasteners, like bolts, screws, and clamps properly without needing step-by-step supervision."
+    },
+    {
+      "id": 371,
+      "category": "technical_tool_knowledge",
+      "reverse": false,
+      "text": "You can tell when a standard toolbox on a job site is being used incorrectly or unsafely."
+    },
+    {
+      "id": 372,
+      "category": "technical_tool_knowledge",
+      "reverse": false,
+      "text": "You can tell when basic electrical wiring and connections is being used incorrectly or unsafely."
+    },
+    {
+      "id": 373,
+      "category": "technical_tool_knowledge",
+      "reverse": false,
+      "text": "You can tell when hand and power tools used in a workshop is being used incorrectly or unsafely."
+    },
+    {
+      "id": 374,
+      "category": "technical_tool_knowledge",
+      "reverse": false,
+      "text": "You can tell when safety equipment required for a technical task is being used incorrectly or unsafely."
+    },
+    {
+      "id": 375,
+      "category": "technical_tool_knowledge",
+      "reverse": false,
+      "text": "You can tell when common fasteners, like bolts, screws, and clamps is being used incorrectly or unsafely."
+    },
+    {
+      "id": 376,
+      "category": "technical_tool_knowledge",
+      "reverse": false,
+      "text": "You're comfortable learning a new piece of equipment related to a standard toolbox on a job site on your own."
+    },
+    {
+      "id": 377,
+      "category": "technical_tool_knowledge",
+      "reverse": false,
+      "text": "You're comfortable learning a new piece of equipment related to basic electrical wiring and connections on your own."
+    },
+    {
+      "id": 378,
+      "category": "technical_tool_knowledge",
+      "reverse": false,
+      "text": "You're comfortable learning a new piece of equipment related to hand and power tools used in a workshop on your own."
+    },
+    {
+      "id": 379,
+      "category": "technical_tool_knowledge",
+      "reverse": false,
+      "text": "You're comfortable learning a new piece of equipment related to safety equipment required for a technical task on your own."
+    },
+    {
+      "id": 380,
+      "category": "technical_tool_knowledge",
+      "reverse": false,
+      "text": "You're comfortable learning a new piece of equipment related to common fasteners, like bolts, screws, and clamps on your own."
+    },
+    {
+      "id": 381,
+      "category": "technical_tool_knowledge",
+      "reverse": false,
+      "text": "You know the difference between similar-looking items within a standard toolbox on a job site."
+    },
+    {
+      "id": 382,
+      "category": "technical_tool_knowledge",
+      "reverse": false,
+      "text": "You know the difference between similar-looking items within basic electrical wiring and connections."
+    },
+    {
+      "id": 383,
+      "category": "technical_tool_knowledge",
+      "reverse": false,
+      "text": "You know the difference between similar-looking items within hand and power tools used in a workshop."
+    },
+    {
+      "id": 384,
+      "category": "technical_tool_knowledge",
+      "reverse": false,
+      "text": "You know the difference between similar-looking items within safety equipment required for a technical task."
+    },
+    {
+      "id": 385,
+      "category": "technical_tool_knowledge",
+      "reverse": false,
+      "text": "You know the difference between similar-looking items within common fasteners, like bolts, screws, and clamps."
+    },
+    {
+      "id": 386,
+      "category": "technical_tool_knowledge",
+      "reverse": false,
+      "text": "You take proper care of a standard toolbox on a job site so it stays in good working condition."
+    },
+    {
+      "id": 387,
+      "category": "technical_tool_knowledge",
+      "reverse": false,
+      "text": "You take proper care of basic electrical wiring and connections so it stays in good working condition."
+    },
+    {
+      "id": 388,
+      "category": "technical_tool_knowledge",
+      "reverse": false,
+      "text": "You take proper care of hand and power tools used in a workshop so it stays in good working condition."
+    },
+    {
+      "id": 389,
+      "category": "technical_tool_knowledge",
+      "reverse": false,
+      "text": "You take proper care of safety equipment required for a technical task so it stays in good working condition."
+    },
+    {
+      "id": 390,
+      "category": "technical_tool_knowledge",
+      "reverse": false,
+      "text": "You take proper care of common fasteners, like bolts, screws, and clamps so it stays in good working condition."
+    },
+    {
+      "id": 391,
+      "category": "technical_tool_knowledge",
+      "reverse": true,
+      "text": "You feel uneasy or unsure around a standard toolbox on a job site because you haven't learned it well."
+    },
+    {
+      "id": 392,
+      "category": "technical_tool_knowledge",
+      "reverse": true,
+      "text": "You feel uneasy or unsure around basic electrical wiring and connections because you haven't learned it well."
+    },
+    {
+      "id": 393,
+      "category": "technical_tool_knowledge",
+      "reverse": true,
+      "text": "You feel uneasy or unsure around hand and power tools used in a workshop because you haven't learned it well."
+    },
+    {
+      "id": 394,
+      "category": "technical_tool_knowledge",
+      "reverse": true,
+      "text": "You feel uneasy or unsure around safety equipment required for a technical task because you haven't learned it well."
+    },
+    {
+      "id": 395,
+      "category": "technical_tool_knowledge",
+      "reverse": true,
+      "text": "You feel uneasy or unsure around common fasteners, like bolts, screws, and clamps because you haven't learned it well."
+    },
+    {
+      "id": 396,
+      "category": "technical_tool_knowledge",
+      "reverse": true,
+      "text": "You need someone to walk you through a standard toolbox on a job site every time, even for basic tasks."
+    },
+    {
+      "id": 397,
+      "category": "technical_tool_knowledge",
+      "reverse": true,
+      "text": "You need someone to walk you through basic electrical wiring and connections every time, even for basic tasks."
+    },
+    {
+      "id": 398,
+      "category": "technical_tool_knowledge",
+      "reverse": true,
+      "text": "You need someone to walk you through hand and power tools used in a workshop every time, even for basic tasks."
+    },
+    {
+      "id": 399,
+      "category": "technical_tool_knowledge",
+      "reverse": true,
+      "text": "You need someone to walk you through safety equipment required for a technical task every time, even for basic tasks."
+    },
+    {
+      "id": 400,
+      "category": "technical_tool_knowledge",
+      "reverse": true,
+      "text": "You need someone to walk you through common fasteners, like bolts, screws, and clamps every time, even for basic tasks."
+    },
+    {
+      "id": 401,
+      "category": "manual_dexterity_coordination",
+      "reverse": false,
+      "text": "You can work with small parts that need to be assembled precisely steadily, without your hands shaking or slipping."
+    },
+    {
+      "id": 402,
+      "category": "manual_dexterity_coordination",
+      "reverse": false,
+      "text": "You can work with a task that requires a steady hand, like threading or soldering steadily, without your hands shaking or slipping."
+    },
+    {
+      "id": 403,
+      "category": "manual_dexterity_coordination",
+      "reverse": false,
+      "text": "You can work with tools that need precise, controlled hand movements steadily, without your hands shaking or slipping."
+    },
+    {
+      "id": 404,
+      "category": "manual_dexterity_coordination",
+      "reverse": false,
+      "text": "You can work with a job that requires good hand-eye coordination steadily, without your hands shaking or slipping."
+    },
+    {
+      "id": 405,
+      "category": "manual_dexterity_coordination",
+      "reverse": false,
+      "text": "You can work with delicate materials that could be damaged by a rough touch steadily, without your hands shaking or slipping."
+    },
+    {
+      "id": 406,
+      "category": "manual_dexterity_coordination",
+      "reverse": false,
+      "text": "You can complete small parts that need to be assembled precisely accurately, even in a small or tight space."
+    },
+    {
+      "id": 407,
+      "category": "manual_dexterity_coordination",
+      "reverse": false,
+      "text": "You can complete a task that requires a steady hand, like threading or soldering accurately, even in a small or tight space."
+    },
+    {
+      "id": 408,
+      "category": "manual_dexterity_coordination",
+      "reverse": false,
+      "text": "You can complete tools that need precise, controlled hand movements accurately, even in a small or tight space."
+    },
+    {
+      "id": 409,
+      "category": "manual_dexterity_coordination",
+      "reverse": false,
+      "text": "You can complete a job that requires good hand-eye coordination accurately, even in a small or tight space."
+    },
+    {
+      "id": 410,
+      "category": "manual_dexterity_coordination",
+      "reverse": false,
+      "text": "You can complete delicate materials that could be damaged by a rough touch accurately, even in a small or tight space."
+    },
+    {
+      "id": 411,
+      "category": "manual_dexterity_coordination",
+      "reverse": false,
+      "text": "Your hands stay coordinated and controlled when handling small parts that need to be assembled precisely."
+    },
+    {
+      "id": 412,
+      "category": "manual_dexterity_coordination",
+      "reverse": false,
+      "text": "Your hands stay coordinated and controlled when handling a task that requires a steady hand, like threading or soldering."
+    },
+    {
+      "id": 413,
+      "category": "manual_dexterity_coordination",
+      "reverse": false,
+      "text": "Your hands stay coordinated and controlled when handling tools that need precise, controlled hand movements."
+    },
+    {
+      "id": 414,
+      "category": "manual_dexterity_coordination",
+      "reverse": false,
+      "text": "Your hands stay coordinated and controlled when handling a job that requires good hand-eye coordination."
+    },
+    {
+      "id": 415,
+      "category": "manual_dexterity_coordination",
+      "reverse": false,
+      "text": "Your hands stay coordinated and controlled when handling delicate materials that could be damaged by a rough touch."
+    },
+    {
+      "id": 416,
+      "category": "manual_dexterity_coordination",
+      "reverse": false,
+      "text": "You can repeat a fine motor task involving small parts that need to be assembled precisely consistently, without it getting sloppy over time."
+    },
+    {
+      "id": 417,
+      "category": "manual_dexterity_coordination",
+      "reverse": false,
+      "text": "You can repeat a fine motor task involving a task that requires a steady hand, like threading or soldering consistently, without it getting sloppy over time."
+    },
+    {
+      "id": 418,
+      "category": "manual_dexterity_coordination",
+      "reverse": false,
+      "text": "You can repeat a fine motor task involving tools that need precise, controlled hand movements consistently, without it getting sloppy over time."
+    },
+    {
+      "id": 419,
+      "category": "manual_dexterity_coordination",
+      "reverse": false,
+      "text": "You can repeat a fine motor task involving a job that requires good hand-eye coordination consistently, without it getting sloppy over time."
+    },
+    {
+      "id": 420,
+      "category": "manual_dexterity_coordination",
+      "reverse": false,
+      "text": "You can repeat a fine motor task involving delicate materials that could be damaged by a rough touch consistently, without it getting sloppy over time."
+    },
+    {
+      "id": 421,
+      "category": "manual_dexterity_coordination",
+      "reverse": false,
+      "text": "You can handle small parts that need to be assembled precisely carefully enough to avoid damaging anything."
+    },
+    {
+      "id": 422,
+      "category": "manual_dexterity_coordination",
+      "reverse": false,
+      "text": "You can handle a task that requires a steady hand, like threading or soldering carefully enough to avoid damaging anything."
+    },
+    {
+      "id": 423,
+      "category": "manual_dexterity_coordination",
+      "reverse": false,
+      "text": "You can handle tools that need precise, controlled hand movements carefully enough to avoid damaging anything."
+    },
+    {
+      "id": 424,
+      "category": "manual_dexterity_coordination",
+      "reverse": false,
+      "text": "You can handle a job that requires good hand-eye coordination carefully enough to avoid damaging anything."
+    },
+    {
+      "id": 425,
+      "category": "manual_dexterity_coordination",
+      "reverse": false,
+      "text": "You can handle delicate materials that could be damaged by a rough touch carefully enough to avoid damaging anything."
+    },
+    {
+      "id": 426,
+      "category": "manual_dexterity_coordination",
+      "reverse": false,
+      "text": "You trust your hands to do small parts that need to be assembled precisely correctly without watching every single movement."
+    },
+    {
+      "id": 427,
+      "category": "manual_dexterity_coordination",
+      "reverse": false,
+      "text": "You trust your hands to do a task that requires a steady hand, like threading or soldering correctly without watching every single movement."
+    },
+    {
+      "id": 428,
+      "category": "manual_dexterity_coordination",
+      "reverse": false,
+      "text": "You trust your hands to do tools that need precise, controlled hand movements correctly without watching every single movement."
+    },
+    {
+      "id": 429,
+      "category": "manual_dexterity_coordination",
+      "reverse": false,
+      "text": "You trust your hands to do a job that requires good hand-eye coordination correctly without watching every single movement."
+    },
+    {
+      "id": 430,
+      "category": "manual_dexterity_coordination",
+      "reverse": false,
+      "text": "You trust your hands to do delicate materials that could be damaged by a rough touch correctly without watching every single movement."
+    },
+    {
+      "id": 431,
+      "category": "manual_dexterity_coordination",
+      "reverse": false,
+      "text": "You can work with small parts that need to be assembled precisely for an extended period without your accuracy dropping."
+    },
+    {
+      "id": 432,
+      "category": "manual_dexterity_coordination",
+      "reverse": false,
+      "text": "You can work with a task that requires a steady hand, like threading or soldering for an extended period without your accuracy dropping."
+    },
+    {
+      "id": 433,
+      "category": "manual_dexterity_coordination",
+      "reverse": false,
+      "text": "You can work with tools that need precise, controlled hand movements for an extended period without your accuracy dropping."
+    },
+    {
+      "id": 434,
+      "category": "manual_dexterity_coordination",
+      "reverse": false,
+      "text": "You can work with a job that requires good hand-eye coordination for an extended period without your accuracy dropping."
+    },
+    {
+      "id": 435,
+      "category": "manual_dexterity_coordination",
+      "reverse": false,
+      "text": "You can work with delicate materials that could be damaged by a rough touch for an extended period without your accuracy dropping."
+    },
+    {
+      "id": 436,
+      "category": "manual_dexterity_coordination",
+      "reverse": false,
+      "text": "You adjust quickly and keep good control when small parts that need to be assembled precisely requires a change in grip or angle."
+    },
+    {
+      "id": 437,
+      "category": "manual_dexterity_coordination",
+      "reverse": false,
+      "text": "You adjust quickly and keep good control when a task that requires a steady hand, like threading or soldering requires a change in grip or angle."
+    },
+    {
+      "id": 438,
+      "category": "manual_dexterity_coordination",
+      "reverse": false,
+      "text": "You adjust quickly and keep good control when tools that need precise, controlled hand movements requires a change in grip or angle."
+    },
+    {
+      "id": 439,
+      "category": "manual_dexterity_coordination",
+      "reverse": false,
+      "text": "You adjust quickly and keep good control when a job that requires good hand-eye coordination requires a change in grip or angle."
+    },
+    {
+      "id": 440,
+      "category": "manual_dexterity_coordination",
+      "reverse": false,
+      "text": "You adjust quickly and keep good control when delicate materials that could be damaged by a rough touch requires a change in grip or angle."
+    },
+    {
+      "id": 441,
+      "category": "manual_dexterity_coordination",
+      "reverse": true,
+      "text": "Your hands tend to feel clumsy or unsteady when working with small parts that need to be assembled precisely."
+    },
+    {
+      "id": 442,
+      "category": "manual_dexterity_coordination",
+      "reverse": true,
+      "text": "Your hands tend to feel clumsy or unsteady when working with a task that requires a steady hand, like threading or soldering."
+    },
+    {
+      "id": 443,
+      "category": "manual_dexterity_coordination",
+      "reverse": true,
+      "text": "Your hands tend to feel clumsy or unsteady when working with tools that need precise, controlled hand movements."
+    },
+    {
+      "id": 444,
+      "category": "manual_dexterity_coordination",
+      "reverse": true,
+      "text": "Your hands tend to feel clumsy or unsteady when working with a job that requires good hand-eye coordination."
+    },
+    {
+      "id": 445,
+      "category": "manual_dexterity_coordination",
+      "reverse": true,
+      "text": "Your hands tend to feel clumsy or unsteady when working with delicate materials that could be damaged by a rough touch."
+    },
+    {
+      "id": 446,
+      "category": "manual_dexterity_coordination",
+      "reverse": true,
+      "text": "You make more small physical errors than you'd like when handling small parts that need to be assembled precisely."
+    },
+    {
+      "id": 447,
+      "category": "manual_dexterity_coordination",
+      "reverse": true,
+      "text": "You make more small physical errors than you'd like when handling a task that requires a steady hand, like threading or soldering."
+    },
+    {
+      "id": 448,
+      "category": "manual_dexterity_coordination",
+      "reverse": true,
+      "text": "You make more small physical errors than you'd like when handling tools that need precise, controlled hand movements."
+    },
+    {
+      "id": 449,
+      "category": "manual_dexterity_coordination",
+      "reverse": true,
+      "text": "You make more small physical errors than you'd like when handling a job that requires good hand-eye coordination."
+    },
+    {
+      "id": 450,
+      "category": "manual_dexterity_coordination",
+      "reverse": true,
+      "text": "You make more small physical errors than you'd like when handling delicate materials that could be damaged by a rough touch."
+    },
+    {
+      "id": 451,
+      "category": "practical_problem_solving",
+      "reverse": false,
+      "text": "When you encounter a machine that suddenly stops working, you start by checking the most likely cause first, rather than guessing randomly."
+    },
+    {
+      "id": 452,
+      "category": "practical_problem_solving",
+      "reverse": false,
+      "text": "When you encounter a process on the job that isn't producing the expected result, you start by checking the most likely cause first, rather than guessing randomly."
+    },
+    {
+      "id": 453,
+      "category": "practical_problem_solving",
+      "reverse": false,
+      "text": "When you encounter a piece of equipment that's making an unusual noise, you start by checking the most likely cause first, rather than guessing randomly."
+    },
+    {
+      "id": 454,
+      "category": "practical_problem_solving",
+      "reverse": false,
+      "text": "When you encounter a system where something is clearly wrong but the cause isn't obvious, you start by checking the most likely cause first, rather than guessing randomly."
+    },
+    {
+      "id": 455,
+      "category": "practical_problem_solving",
+      "reverse": false,
+      "text": "When you encounter a repair that has more than one possible cause, you start by checking the most likely cause first, rather than guessing randomly."
+    },
+    {
+      "id": 456,
+      "category": "practical_problem_solving",
+      "reverse": false,
+      "text": "You can narrow down the possible causes of a machine that suddenly stops working through logical elimination."
+    },
+    {
+      "id": 457,
+      "category": "practical_problem_solving",
+      "reverse": false,
+      "text": "You can narrow down the possible causes of a process on the job that isn't producing the expected result through logical elimination."
+    },
+    {
+      "id": 458,
+      "category": "practical_problem_solving",
+      "reverse": false,
+      "text": "You can narrow down the possible causes of a piece of equipment that's making an unusual noise through logical elimination."
+    },
+    {
+      "id": 459,
+      "category": "practical_problem_solving",
+      "reverse": false,
+      "text": "You can narrow down the possible causes of a system where something is clearly wrong but the cause isn't obvious through logical elimination."
+    },
+    {
+      "id": 460,
+      "category": "practical_problem_solving",
+      "reverse": false,
+      "text": "You can narrow down the possible causes of a repair that has more than one possible cause through logical elimination."
+    },
+    {
+      "id": 461,
+      "category": "practical_problem_solving",
+      "reverse": false,
+      "text": "You stay calm and methodical when dealing with a machine that suddenly stops working, rather than getting frustrated."
+    },
+    {
+      "id": 462,
+      "category": "practical_problem_solving",
+      "reverse": false,
+      "text": "You stay calm and methodical when dealing with a process on the job that isn't producing the expected result, rather than getting frustrated."
+    },
+    {
+      "id": 463,
+      "category": "practical_problem_solving",
+      "reverse": false,
+      "text": "You stay calm and methodical when dealing with a piece of equipment that's making an unusual noise, rather than getting frustrated."
+    },
+    {
+      "id": 464,
+      "category": "practical_problem_solving",
+      "reverse": false,
+      "text": "You stay calm and methodical when dealing with a system where something is clearly wrong but the cause isn't obvious, rather than getting frustrated."
+    },
+    {
+      "id": 465,
+      "category": "practical_problem_solving",
+      "reverse": false,
+      "text": "You stay calm and methodical when dealing with a repair that has more than one possible cause, rather than getting frustrated."
+    },
+    {
+      "id": 466,
+      "category": "practical_problem_solving",
+      "reverse": false,
+      "text": "You can usually find a workable fix for a machine that suddenly stops working, even without a manual in hand."
+    },
+    {
+      "id": 467,
+      "category": "practical_problem_solving",
+      "reverse": false,
+      "text": "You can usually find a workable fix for a process on the job that isn't producing the expected result, even without a manual in hand."
+    },
+    {
+      "id": 468,
+      "category": "practical_problem_solving",
+      "reverse": false,
+      "text": "You can usually find a workable fix for a piece of equipment that's making an unusual noise, even without a manual in hand."
+    },
+    {
+      "id": 469,
+      "category": "practical_problem_solving",
+      "reverse": false,
+      "text": "You can usually find a workable fix for a system where something is clearly wrong but the cause isn't obvious, even without a manual in hand."
+    },
+    {
+      "id": 470,
+      "category": "practical_problem_solving",
+      "reverse": false,
+      "text": "You can usually find a workable fix for a repair that has more than one possible cause, even without a manual in hand."
+    },
+    {
+      "id": 471,
+      "category": "practical_problem_solving",
+      "reverse": false,
+      "text": "You ask the right questions to diagnose a machine that suddenly stops working before jumping to a solution."
+    },
+    {
+      "id": 472,
+      "category": "practical_problem_solving",
+      "reverse": false,
+      "text": "You ask the right questions to diagnose a process on the job that isn't producing the expected result before jumping to a solution."
+    },
+    {
+      "id": 473,
+      "category": "practical_problem_solving",
+      "reverse": false,
+      "text": "You ask the right questions to diagnose a piece of equipment that's making an unusual noise before jumping to a solution."
+    },
+    {
+      "id": 474,
+      "category": "practical_problem_solving",
+      "reverse": false,
+      "text": "You ask the right questions to diagnose a system where something is clearly wrong but the cause isn't obvious before jumping to a solution."
+    },
+    {
+      "id": 475,
+      "category": "practical_problem_solving",
+      "reverse": false,
+      "text": "You ask the right questions to diagnose a repair that has more than one possible cause before jumping to a solution."
+    },
+    {
+      "id": 476,
+      "category": "practical_problem_solving",
+      "reverse": false,
+      "text": "You learn from a similar past problem when facing a machine that suddenly stops working again in a new form."
+    },
+    {
+      "id": 477,
+      "category": "practical_problem_solving",
+      "reverse": false,
+      "text": "You learn from a similar past problem when facing a process on the job that isn't producing the expected result again in a new form."
+    },
+    {
+      "id": 478,
+      "category": "practical_problem_solving",
+      "reverse": false,
+      "text": "You learn from a similar past problem when facing a piece of equipment that's making an unusual noise again in a new form."
+    },
+    {
+      "id": 479,
+      "category": "practical_problem_solving",
+      "reverse": false,
+      "text": "You learn from a similar past problem when facing a system where something is clearly wrong but the cause isn't obvious again in a new form."
+    },
+    {
+      "id": 480,
+      "category": "practical_problem_solving",
+      "reverse": false,
+      "text": "You learn from a similar past problem when facing a repair that has more than one possible cause again in a new form."
+    },
+    {
+      "id": 481,
+      "category": "practical_problem_solving",
+      "reverse": false,
+      "text": "You can tell the difference between a quick fix and the real underlying cause of a machine that suddenly stops working."
+    },
+    {
+      "id": 482,
+      "category": "practical_problem_solving",
+      "reverse": false,
+      "text": "You can tell the difference between a quick fix and the real underlying cause of a process on the job that isn't producing the expected result."
+    },
+    {
+      "id": 483,
+      "category": "practical_problem_solving",
+      "reverse": false,
+      "text": "You can tell the difference between a quick fix and the real underlying cause of a piece of equipment that's making an unusual noise."
+    },
+    {
+      "id": 484,
+      "category": "practical_problem_solving",
+      "reverse": false,
+      "text": "You can tell the difference between a quick fix and the real underlying cause of a system where something is clearly wrong but the cause isn't obvious."
+    },
+    {
+      "id": 485,
+      "category": "practical_problem_solving",
+      "reverse": false,
+      "text": "You can tell the difference between a quick fix and the real underlying cause of a repair that has more than one possible cause."
+    },
+    {
+      "id": 486,
+      "category": "practical_problem_solving",
+      "reverse": false,
+      "text": "You keep trying different approaches to a machine that suddenly stops working instead of giving up after one attempt."
+    },
+    {
+      "id": 487,
+      "category": "practical_problem_solving",
+      "reverse": false,
+      "text": "You keep trying different approaches to a process on the job that isn't producing the expected result instead of giving up after one attempt."
+    },
+    {
+      "id": 488,
+      "category": "practical_problem_solving",
+      "reverse": false,
+      "text": "You keep trying different approaches to a piece of equipment that's making an unusual noise instead of giving up after one attempt."
+    },
+    {
+      "id": 489,
+      "category": "practical_problem_solving",
+      "reverse": false,
+      "text": "You keep trying different approaches to a system where something is clearly wrong but the cause isn't obvious instead of giving up after one attempt."
+    },
+    {
+      "id": 490,
+      "category": "practical_problem_solving",
+      "reverse": false,
+      "text": "You keep trying different approaches to a repair that has more than one possible cause instead of giving up after one attempt."
+    },
+    {
+      "id": 491,
+      "category": "practical_problem_solving",
+      "reverse": true,
+      "text": "You tend to guess and try random fixes when you run into a machine that suddenly stops working, instead of diagnosing it properly."
+    },
+    {
+      "id": 492,
+      "category": "practical_problem_solving",
+      "reverse": true,
+      "text": "You tend to guess and try random fixes when you run into a process on the job that isn't producing the expected result, instead of diagnosing it properly."
+    },
+    {
+      "id": 493,
+      "category": "practical_problem_solving",
+      "reverse": true,
+      "text": "You tend to guess and try random fixes when you run into a piece of equipment that's making an unusual noise, instead of diagnosing it properly."
+    },
+    {
+      "id": 494,
+      "category": "practical_problem_solving",
+      "reverse": true,
+      "text": "You tend to guess and try random fixes when you run into a system where something is clearly wrong but the cause isn't obvious, instead of diagnosing it properly."
+    },
+    {
+      "id": 495,
+      "category": "practical_problem_solving",
+      "reverse": true,
+      "text": "You tend to guess and try random fixes when you run into a repair that has more than one possible cause, instead of diagnosing it properly."
+    },
+    {
+      "id": 496,
+      "category": "practical_problem_solving",
+      "reverse": true,
+      "text": "a machine that suddenly stops working tends to frustrate you quickly, and you struggle to think it through calmly."
+    },
+    {
+      "id": 497,
+      "category": "practical_problem_solving",
+      "reverse": true,
+      "text": "a process on the job that isn't producing the expected result tends to frustrate you quickly, and you struggle to think it through calmly."
+    },
+    {
+      "id": 498,
+      "category": "practical_problem_solving",
+      "reverse": true,
+      "text": "a piece of equipment that's making an unusual noise tends to frustrate you quickly, and you struggle to think it through calmly."
+    },
+    {
+      "id": 499,
+      "category": "practical_problem_solving",
+      "reverse": true,
+      "text": "a system where something is clearly wrong but the cause isn't obvious tends to frustrate you quickly, and you struggle to think it through calmly."
+    },
+    {
+      "id": 500,
+      "category": "practical_problem_solving",
+      "reverse": true,
+      "text": "a repair that has more than one possible cause tends to frustrate you quickly, and you struggle to think it through calmly."
+    }
+  ]
+}
