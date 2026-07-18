@@ -1,0 +1,3653 @@
+{
+  "meta": {
+    "title": "افسردگی کی علامات اور بہبود کا جائزہ",
+    "description": "افسردگی سے متعلق 20 پہلوؤں پر 500 بیانات کا نجی، غیر تشخیصی جائزہ۔",
+    "scale": {
+      "min": 1,
+      "max": 10,
+      "minLabel": "بالکل نہیں",
+      "maxLabel": "تقریباً ہر وقت"
+    },
+    "categories": [
+      {
+        "id": "low_mood",
+        "label": "اداسی اور پست مزاج",
+        "icon": "🌧️"
+      },
+      {
+        "id": "interest",
+        "label": "دلچسپی اور لطف",
+        "icon": "🎨"
+      },
+      {
+        "id": "energy",
+        "label": "توانائی اور تھکن",
+        "icon": "🔋"
+      },
+      {
+        "id": "sleep",
+        "label": "نیند میں تبدیلی",
+        "icon": "🌙"
+      },
+      {
+        "id": "appetite",
+        "label": "بھوک اور کھانے میں تبدیلی",
+        "icon": "🍽️"
+      },
+      {
+        "id": "concentration",
+        "label": "توجہ اور یادداشت",
+        "icon": "🎯"
+      },
+      {
+        "id": "self_worth",
+        "label": "خود قدر",
+        "icon": "💎"
+      },
+      {
+        "id": "guilt",
+        "label": "احساسِ جرم اور خود الزام",
+        "icon": "⚖️"
+      },
+      {
+        "id": "hopelessness",
+        "label": "امید اور مستقبل کا تصور",
+        "icon": "🌅"
+      },
+      {
+        "id": "motivation",
+        "label": "ترغیب اور پہل",
+        "icon": "🚶"
+      },
+      {
+        "id": "decisions",
+        "label": "فیصلہ سازی",
+        "icon": "🧭"
+      },
+      {
+        "id": "movement",
+        "label": "حرکت اور بے قراری",
+        "icon": "⏱️"
+      },
+      {
+        "id": "irritability",
+        "label": "چڑچڑاپن اور مایوسی",
+        "icon": "🌋"
+      },
+      {
+        "id": "withdrawal",
+        "label": "سماجی کنارہ کشی",
+        "icon": "🚪"
+      },
+      {
+        "id": "functioning",
+        "label": "روزمرہ کارکردگی",
+        "icon": "📋"
+      },
+      {
+        "id": "self_care",
+        "label": "خود نگہداشت اور صفائی",
+        "icon": "🧼"
+      },
+      {
+        "id": "physical",
+        "label": "جسمانی بے آرامی",
+        "icon": "🫁"
+      },
+      {
+        "id": "rumination",
+        "label": "منفی سوچ اور ذہنی تکرار",
+        "icon": "🔁"
+      },
+      {
+        "id": "emotional_expression",
+        "label": "آنسو اور جذباتی سن پن",
+        "icon": "💧"
+      },
+      {
+        "id": "safety",
+        "label": "حفاظت اور فوری تعاون",
+        "icon": "🛟"
+      }
+    ],
+    "levels": [
+      {
+        "min": 1,
+        "max": 2.5,
+        "label": "کم رپورٹ شدہ علامات",
+        "emoji": "🌿",
+        "desc": "اس غیر تشخیصی جائزے میں آپ نے کم مشکلات رپورٹ کیں۔ خاص طور پر کارکردگی یا حفاظت متاثر ہونے پر تبدیلیوں پر توجہ جاری رکھیں۔"
+      },
+      {
+        "min": 2.5,
+        "max": 4,
+        "label": "کچھ رپورٹ شدہ مشکلات",
+        "emoji": "🌦️",
+        "desc": "آپ نے کچھ افسردہ تجربات رپورٹ کیے۔ معاون معمول اور قابلِ اعتماد شخص سے گفتگو مدد دے سکتی ہے؛ علامات برقرار رہنے پر پیشہ ورانہ مشورہ لیں۔"
+      },
+      {
+        "min": 4,
+        "max": 5.5,
+        "label": "تشویش کے کئی پہلو",
+        "emoji": "🤲",
+        "desc": "کئی پہلو مشکل دکھائی دیتے ہیں۔ خاص طور پر دو ہفتے جاری رہنے یا روزمرہ زندگی متاثر ہونے پر مستند صحت کے ماہر سے بات کریں۔"
+      },
+      {
+        "min": 5.5,
+        "max": 7.5,
+        "label": "زیادہ رپورٹ شدہ علامات",
+        "emoji": "💛",
+        "desc": "جوابات نمایاں موجودہ مشکل کی نشاندہی کرتے ہیں۔ جلد مستند صحت کے ماہر سے رابطہ اور قابلِ اعتماد شخص کو شامل کرنے پر غور کریں۔"
+      },
+      {
+        "min": 7.5,
+        "max": 10.01,
+        "label": "نمایاں رپورٹ شدہ تکلیف",
+        "emoji": "🧡",
+        "desc": "آپ نے نمایاں تکلیف یا کارکردگی میں خلل رپورٹ کیا۔ فوری پیشہ ورانہ تعاون لیں۔ غیر محفوظ ہونے کی صورت میں ابھی ایمرجنسی یا بحران تعاون استعمال کریں۔"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "DP-001",
+      "category": "low_mood",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ دو ہفتوں کے دوران، میرا مزاج کچھ اوقات مناسب حد تک متوازن رہا۔"
+    },
+    {
+      "id": "DP-002",
+      "category": "low_mood",
+      "reverse": false,
+      "urgent": false,
+      "text": "زیادہ تر صبحوں میں، میں نے اداسی، خالی پن یا پست مزاج محسوس کیا۔"
+    },
+    {
+      "id": "DP-003",
+      "category": "low_mood",
+      "reverse": true,
+      "urgent": false,
+      "text": "عام ذمہ داریاں سنبھالتے ہوئے، میں اداسی کو پورے دن پر حاوی ہوئے بغیر محسوس کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-004",
+      "category": "low_mood",
+      "reverse": false,
+      "urgent": false,
+      "text": "مایوس کن واقعے کے بعد، بھاری اداسی دن کے زیادہ حصے میں میرے ساتھ رہی۔"
+    },
+    {
+      "id": "DP-005",
+      "category": "low_mood",
+      "reverse": true,
+      "urgent": false,
+      "text": "بغیر طے شدہ مصروفیت کے وقت، میرا مزاج کچھ اوقات مناسب حد تک متوازن رہا۔"
+    },
+    {
+      "id": "DP-006",
+      "category": "low_mood",
+      "reverse": false,
+      "urgent": false,
+      "text": "کام یا تعلیم کے دوران، میں نے اداسی، خالی پن یا پست مزاج محسوس کیا۔"
+    },
+    {
+      "id": "DP-007",
+      "category": "low_mood",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنہائی میں وقت گزارتے ہوئے، میں اداسی کو پورے دن پر حاوی ہوئے بغیر محسوس کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-008",
+      "category": "low_mood",
+      "reverse": false,
+      "urgent": false,
+      "text": "اپنے جاننے والوں کے درمیان، بھاری اداسی دن کے زیادہ حصے میں میرے ساتھ رہی۔"
+    },
+    {
+      "id": "DP-009",
+      "category": "low_mood",
+      "reverse": true,
+      "urgent": false,
+      "text": "کسی پسندیدہ سرگرمی کے بارے میں سوچتے ہوئے، میرا مزاج کچھ اوقات مناسب حد تک متوازن رہا۔"
+    },
+    {
+      "id": "DP-010",
+      "category": "low_mood",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اختتام کے قریب، میں نے اداسی، خالی پن یا پست مزاج محسوس کیا۔"
+    },
+    {
+      "id": "DP-011",
+      "category": "low_mood",
+      "reverse": true,
+      "urgent": false,
+      "text": "خراب نیند والی رات کے بعد، میں اداسی کو پورے دن پر حاوی ہوئے بغیر محسوس کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-012",
+      "category": "low_mood",
+      "reverse": false,
+      "urgent": false,
+      "text": "توجہ مانگنے والے کام کے دوران، بھاری اداسی دن کے زیادہ حصے میں میرے ساتھ رہی۔"
+    },
+    {
+      "id": "DP-013",
+      "category": "low_mood",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ غلطیوں کے بارے میں سوچتے ہوئے، میرا مزاج کچھ اوقات مناسب حد تک متوازن رہا۔"
+    },
+    {
+      "id": "DP-014",
+      "category": "low_mood",
+      "reverse": false,
+      "urgent": false,
+      "text": "مستقبل کی طرف دیکھتے ہوئے، میں نے اداسی، خالی پن یا پست مزاج محسوس کیا۔"
+    },
+    {
+      "id": "DP-015",
+      "category": "low_mood",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب کسی نے تعاون پیش کیا، میں اداسی کو پورے دن پر حاوی ہوئے بغیر محسوس کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-016",
+      "category": "low_mood",
+      "reverse": false,
+      "urgent": false,
+      "text": "سادہ انتخاب کرتے ہوئے، بھاری اداسی دن کے زیادہ حصے میں میرے ساتھ رہی۔"
+    },
+    {
+      "id": "DP-017",
+      "category": "low_mood",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب مجھے اپنی نگہداشت کرنی تھی، میرا مزاج کچھ اوقات مناسب حد تک متوازن رہا۔"
+    },
+    {
+      "id": "DP-018",
+      "category": "low_mood",
+      "reverse": false,
+      "urgent": false,
+      "text": "گفتگو کے دوران، میں نے اداسی، خالی پن یا پست مزاج محسوس کیا۔"
+    },
+    {
+      "id": "DP-019",
+      "category": "low_mood",
+      "reverse": true,
+      "urgent": false,
+      "text": "منصوبے بدلنے پر، میں اداسی کو پورے دن پر حاوی ہوئے بغیر محسوس کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-020",
+      "category": "low_mood",
+      "reverse": false,
+      "urgent": false,
+      "text": "چھوٹا کام مکمل کرنے کے بعد، بھاری اداسی دن کے زیادہ حصے میں میرے ساتھ رہی۔"
+    },
+    {
+      "id": "DP-021",
+      "category": "low_mood",
+      "reverse": true,
+      "urgent": false,
+      "text": "اپنا معمول جاری رکھتے ہوئے، میرا مزاج کچھ اوقات مناسب حد تک متوازن رہا۔"
+    },
+    {
+      "id": "DP-022",
+      "category": "low_mood",
+      "reverse": false,
+      "urgent": false,
+      "text": "جسمانی بے آرامی ظاہر ہونے پر، میں نے اداسی، خالی پن یا پست مزاج محسوس کیا۔"
+    },
+    {
+      "id": "DP-023",
+      "category": "low_mood",
+      "reverse": true,
+      "urgent": false,
+      "text": "دوسروں سے اپنا موازنہ کرتے ہوئے، میں اداسی کو پورے دن پر حاوی ہوئے بغیر محسوس کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-024",
+      "category": "low_mood",
+      "reverse": false,
+      "urgent": false,
+      "text": "آرام کی کوشش کرتے ہوئے، بھاری اداسی دن کے زیادہ حصے میں میرے ساتھ رہی۔"
+    },
+    {
+      "id": "DP-025",
+      "category": "low_mood",
+      "reverse": true,
+      "urgent": false,
+      "text": "اس وقت بھی جب دوسرے میرے احساسات نہیں دیکھ سکتے تھے، میرا مزاج کچھ اوقات مناسب حد تک متوازن رہا۔"
+    },
+    {
+      "id": "DP-026",
+      "category": "interest",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ دو ہفتوں کے دوران، میں نے اپنی اہم سرگرمیوں میں کچھ دلچسپی محسوس کی۔"
+    },
+    {
+      "id": "DP-027",
+      "category": "interest",
+      "reverse": false,
+      "urgent": false,
+      "text": "زیادہ تر صبحوں میں، عام طور پر اہم سرگرمیاں بے دلچسپ محسوس ہوئیں۔"
+    },
+    {
+      "id": "DP-028",
+      "category": "interest",
+      "reverse": true,
+      "urgent": false,
+      "text": "عام ذمہ داریاں سنبھالتے ہوئے، میں کم از کم ایک عام تجربے سے لطف لے سکا/سکی۔"
+    },
+    {
+      "id": "DP-029",
+      "category": "interest",
+      "reverse": false,
+      "urgent": false,
+      "text": "مایوس کن واقعے کے بعد، مجھے معمول کی پسندیدہ چیزوں میں بہت کم یا کوئی لطف نہیں ملا۔"
+    },
+    {
+      "id": "DP-030",
+      "category": "interest",
+      "reverse": true,
+      "urgent": false,
+      "text": "بغیر طے شدہ مصروفیت کے وقت، میں نے اپنی اہم سرگرمیوں میں کچھ دلچسپی محسوس کی۔"
+    },
+    {
+      "id": "DP-031",
+      "category": "interest",
+      "reverse": false,
+      "urgent": false,
+      "text": "کام یا تعلیم کے دوران، عام طور پر اہم سرگرمیاں بے دلچسپ محسوس ہوئیں۔"
+    },
+    {
+      "id": "DP-032",
+      "category": "interest",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنہائی میں وقت گزارتے ہوئے، میں کم از کم ایک عام تجربے سے لطف لے سکا/سکی۔"
+    },
+    {
+      "id": "DP-033",
+      "category": "interest",
+      "reverse": false,
+      "urgent": false,
+      "text": "اپنے جاننے والوں کے درمیان، مجھے معمول کی پسندیدہ چیزوں میں بہت کم یا کوئی لطف نہیں ملا۔"
+    },
+    {
+      "id": "DP-034",
+      "category": "interest",
+      "reverse": true,
+      "urgent": false,
+      "text": "کسی پسندیدہ سرگرمی کے بارے میں سوچتے ہوئے، میں نے اپنی اہم سرگرمیوں میں کچھ دلچسپی محسوس کی۔"
+    },
+    {
+      "id": "DP-035",
+      "category": "interest",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اختتام کے قریب، عام طور پر اہم سرگرمیاں بے دلچسپ محسوس ہوئیں۔"
+    },
+    {
+      "id": "DP-036",
+      "category": "interest",
+      "reverse": true,
+      "urgent": false,
+      "text": "خراب نیند والی رات کے بعد، میں کم از کم ایک عام تجربے سے لطف لے سکا/سکی۔"
+    },
+    {
+      "id": "DP-037",
+      "category": "interest",
+      "reverse": false,
+      "urgent": false,
+      "text": "توجہ مانگنے والے کام کے دوران، مجھے معمول کی پسندیدہ چیزوں میں بہت کم یا کوئی لطف نہیں ملا۔"
+    },
+    {
+      "id": "DP-038",
+      "category": "interest",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ غلطیوں کے بارے میں سوچتے ہوئے، میں نے اپنی اہم سرگرمیوں میں کچھ دلچسپی محسوس کی۔"
+    },
+    {
+      "id": "DP-039",
+      "category": "interest",
+      "reverse": false,
+      "urgent": false,
+      "text": "مستقبل کی طرف دیکھتے ہوئے، عام طور پر اہم سرگرمیاں بے دلچسپ محسوس ہوئیں۔"
+    },
+    {
+      "id": "DP-040",
+      "category": "interest",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب کسی نے تعاون پیش کیا، میں کم از کم ایک عام تجربے سے لطف لے سکا/سکی۔"
+    },
+    {
+      "id": "DP-041",
+      "category": "interest",
+      "reverse": false,
+      "urgent": false,
+      "text": "سادہ انتخاب کرتے ہوئے، مجھے معمول کی پسندیدہ چیزوں میں بہت کم یا کوئی لطف نہیں ملا۔"
+    },
+    {
+      "id": "DP-042",
+      "category": "interest",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب مجھے اپنی نگہداشت کرنی تھی، میں نے اپنی اہم سرگرمیوں میں کچھ دلچسپی محسوس کی۔"
+    },
+    {
+      "id": "DP-043",
+      "category": "interest",
+      "reverse": false,
+      "urgent": false,
+      "text": "گفتگو کے دوران، عام طور پر اہم سرگرمیاں بے دلچسپ محسوس ہوئیں۔"
+    },
+    {
+      "id": "DP-044",
+      "category": "interest",
+      "reverse": true,
+      "urgent": false,
+      "text": "منصوبے بدلنے پر، میں کم از کم ایک عام تجربے سے لطف لے سکا/سکی۔"
+    },
+    {
+      "id": "DP-045",
+      "category": "interest",
+      "reverse": false,
+      "urgent": false,
+      "text": "چھوٹا کام مکمل کرنے کے بعد، مجھے معمول کی پسندیدہ چیزوں میں بہت کم یا کوئی لطف نہیں ملا۔"
+    },
+    {
+      "id": "DP-046",
+      "category": "interest",
+      "reverse": true,
+      "urgent": false,
+      "text": "اپنا معمول جاری رکھتے ہوئے، میں نے اپنی اہم سرگرمیوں میں کچھ دلچسپی محسوس کی۔"
+    },
+    {
+      "id": "DP-047",
+      "category": "interest",
+      "reverse": false,
+      "urgent": false,
+      "text": "جسمانی بے آرامی ظاہر ہونے پر، عام طور پر اہم سرگرمیاں بے دلچسپ محسوس ہوئیں۔"
+    },
+    {
+      "id": "DP-048",
+      "category": "interest",
+      "reverse": true,
+      "urgent": false,
+      "text": "دوسروں سے اپنا موازنہ کرتے ہوئے، میں کم از کم ایک عام تجربے سے لطف لے سکا/سکی۔"
+    },
+    {
+      "id": "DP-049",
+      "category": "interest",
+      "reverse": false,
+      "urgent": false,
+      "text": "آرام کی کوشش کرتے ہوئے، مجھے معمول کی پسندیدہ چیزوں میں بہت کم یا کوئی لطف نہیں ملا۔"
+    },
+    {
+      "id": "DP-050",
+      "category": "interest",
+      "reverse": true,
+      "urgent": false,
+      "text": "اس وقت بھی جب دوسرے میرے احساسات نہیں دیکھ سکتے تھے، میں نے اپنی اہم سرگرمیوں میں کچھ دلچسپی محسوس کی۔"
+    },
+    {
+      "id": "DP-051",
+      "category": "energy",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ دو ہفتوں کے دوران، میرے پاس بنیادی روزمرہ سرگرمیوں کے لیے کافی توانائی تھی۔"
+    },
+    {
+      "id": "DP-052",
+      "category": "energy",
+      "reverse": false,
+      "urgent": false,
+      "text": "زیادہ تر صبحوں میں، میں نے غیر معمولی تھکن یا کم توانائی محسوس کی۔"
+    },
+    {
+      "id": "DP-053",
+      "category": "energy",
+      "reverse": true,
+      "urgent": false,
+      "text": "عام ذمہ داریاں سنبھالتے ہوئے، آرام سے میری کچھ توانائی بحال ہوئی۔"
+    },
+    {
+      "id": "DP-054",
+      "category": "energy",
+      "reverse": false,
+      "urgent": false,
+      "text": "مایوس کن واقعے کے بعد، چھوٹی سرگرمیوں میں بھی بہت زیادہ کوشش درکار ہوئی۔"
+    },
+    {
+      "id": "DP-055",
+      "category": "energy",
+      "reverse": true,
+      "urgent": false,
+      "text": "بغیر طے شدہ مصروفیت کے وقت، میرے پاس بنیادی روزمرہ سرگرمیوں کے لیے کافی توانائی تھی۔"
+    },
+    {
+      "id": "DP-056",
+      "category": "energy",
+      "reverse": false,
+      "urgent": false,
+      "text": "کام یا تعلیم کے دوران، میں نے غیر معمولی تھکن یا کم توانائی محسوس کی۔"
+    },
+    {
+      "id": "DP-057",
+      "category": "energy",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنہائی میں وقت گزارتے ہوئے، آرام سے میری کچھ توانائی بحال ہوئی۔"
+    },
+    {
+      "id": "DP-058",
+      "category": "energy",
+      "reverse": false,
+      "urgent": false,
+      "text": "اپنے جاننے والوں کے درمیان، چھوٹی سرگرمیوں میں بھی بہت زیادہ کوشش درکار ہوئی۔"
+    },
+    {
+      "id": "DP-059",
+      "category": "energy",
+      "reverse": true,
+      "urgent": false,
+      "text": "کسی پسندیدہ سرگرمی کے بارے میں سوچتے ہوئے، میرے پاس بنیادی روزمرہ سرگرمیوں کے لیے کافی توانائی تھی۔"
+    },
+    {
+      "id": "DP-060",
+      "category": "energy",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اختتام کے قریب، میں نے غیر معمولی تھکن یا کم توانائی محسوس کی۔"
+    },
+    {
+      "id": "DP-061",
+      "category": "energy",
+      "reverse": true,
+      "urgent": false,
+      "text": "خراب نیند والی رات کے بعد، آرام سے میری کچھ توانائی بحال ہوئی۔"
+    },
+    {
+      "id": "DP-062",
+      "category": "energy",
+      "reverse": false,
+      "urgent": false,
+      "text": "توجہ مانگنے والے کام کے دوران، چھوٹی سرگرمیوں میں بھی بہت زیادہ کوشش درکار ہوئی۔"
+    },
+    {
+      "id": "DP-063",
+      "category": "energy",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ غلطیوں کے بارے میں سوچتے ہوئے، میرے پاس بنیادی روزمرہ سرگرمیوں کے لیے کافی توانائی تھی۔"
+    },
+    {
+      "id": "DP-064",
+      "category": "energy",
+      "reverse": false,
+      "urgent": false,
+      "text": "مستقبل کی طرف دیکھتے ہوئے، میں نے غیر معمولی تھکن یا کم توانائی محسوس کی۔"
+    },
+    {
+      "id": "DP-065",
+      "category": "energy",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب کسی نے تعاون پیش کیا، آرام سے میری کچھ توانائی بحال ہوئی۔"
+    },
+    {
+      "id": "DP-066",
+      "category": "energy",
+      "reverse": false,
+      "urgent": false,
+      "text": "سادہ انتخاب کرتے ہوئے، چھوٹی سرگرمیوں میں بھی بہت زیادہ کوشش درکار ہوئی۔"
+    },
+    {
+      "id": "DP-067",
+      "category": "energy",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب مجھے اپنی نگہداشت کرنی تھی، میرے پاس بنیادی روزمرہ سرگرمیوں کے لیے کافی توانائی تھی۔"
+    },
+    {
+      "id": "DP-068",
+      "category": "energy",
+      "reverse": false,
+      "urgent": false,
+      "text": "گفتگو کے دوران، میں نے غیر معمولی تھکن یا کم توانائی محسوس کی۔"
+    },
+    {
+      "id": "DP-069",
+      "category": "energy",
+      "reverse": true,
+      "urgent": false,
+      "text": "منصوبے بدلنے پر، آرام سے میری کچھ توانائی بحال ہوئی۔"
+    },
+    {
+      "id": "DP-070",
+      "category": "energy",
+      "reverse": false,
+      "urgent": false,
+      "text": "چھوٹا کام مکمل کرنے کے بعد، چھوٹی سرگرمیوں میں بھی بہت زیادہ کوشش درکار ہوئی۔"
+    },
+    {
+      "id": "DP-071",
+      "category": "energy",
+      "reverse": true,
+      "urgent": false,
+      "text": "اپنا معمول جاری رکھتے ہوئے، میرے پاس بنیادی روزمرہ سرگرمیوں کے لیے کافی توانائی تھی۔"
+    },
+    {
+      "id": "DP-072",
+      "category": "energy",
+      "reverse": false,
+      "urgent": false,
+      "text": "جسمانی بے آرامی ظاہر ہونے پر، میں نے غیر معمولی تھکن یا کم توانائی محسوس کی۔"
+    },
+    {
+      "id": "DP-073",
+      "category": "energy",
+      "reverse": true,
+      "urgent": false,
+      "text": "دوسروں سے اپنا موازنہ کرتے ہوئے، آرام سے میری کچھ توانائی بحال ہوئی۔"
+    },
+    {
+      "id": "DP-074",
+      "category": "energy",
+      "reverse": false,
+      "urgent": false,
+      "text": "آرام کی کوشش کرتے ہوئے، چھوٹی سرگرمیوں میں بھی بہت زیادہ کوشش درکار ہوئی۔"
+    },
+    {
+      "id": "DP-075",
+      "category": "energy",
+      "reverse": true,
+      "urgent": false,
+      "text": "اس وقت بھی جب دوسرے میرے احساسات نہیں دیکھ سکتے تھے، میرے پاس بنیادی روزمرہ سرگرمیوں کے لیے کافی توانائی تھی۔"
+    },
+    {
+      "id": "DP-076",
+      "category": "sleep",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ دو ہفتوں کے دوران، میری نیند کا معمول مناسب حد تک متوازن تھا۔"
+    },
+    {
+      "id": "DP-077",
+      "category": "sleep",
+      "reverse": false,
+      "urgent": false,
+      "text": "زیادہ تر صبحوں میں، مجھے سونے، نیند برقرار رکھنے یا مناسب وقت پر سونے میں مشکل ہوئی۔"
+    },
+    {
+      "id": "DP-078",
+      "category": "sleep",
+      "reverse": true,
+      "urgent": false,
+      "text": "عام ذمہ داریاں سنبھالتے ہوئے، میں عموماً آرام محسوس کرتے ہوئے بیدار ہوا/ہوئی۔"
+    },
+    {
+      "id": "DP-079",
+      "category": "sleep",
+      "reverse": false,
+      "urgent": false,
+      "text": "مایوس کن واقعے کے بعد، میری نیند معمول سے نمایاں طور پر بدل گئی۔"
+    },
+    {
+      "id": "DP-080",
+      "category": "sleep",
+      "reverse": true,
+      "urgent": false,
+      "text": "بغیر طے شدہ مصروفیت کے وقت، میری نیند کا معمول مناسب حد تک متوازن تھا۔"
+    },
+    {
+      "id": "DP-081",
+      "category": "sleep",
+      "reverse": false,
+      "urgent": false,
+      "text": "کام یا تعلیم کے دوران، مجھے سونے، نیند برقرار رکھنے یا مناسب وقت پر سونے میں مشکل ہوئی۔"
+    },
+    {
+      "id": "DP-082",
+      "category": "sleep",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنہائی میں وقت گزارتے ہوئے، میں عموماً آرام محسوس کرتے ہوئے بیدار ہوا/ہوئی۔"
+    },
+    {
+      "id": "DP-083",
+      "category": "sleep",
+      "reverse": false,
+      "urgent": false,
+      "text": "اپنے جاننے والوں کے درمیان، میری نیند معمول سے نمایاں طور پر بدل گئی۔"
+    },
+    {
+      "id": "DP-084",
+      "category": "sleep",
+      "reverse": true,
+      "urgent": false,
+      "text": "کسی پسندیدہ سرگرمی کے بارے میں سوچتے ہوئے، میری نیند کا معمول مناسب حد تک متوازن تھا۔"
+    },
+    {
+      "id": "DP-085",
+      "category": "sleep",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اختتام کے قریب، مجھے سونے، نیند برقرار رکھنے یا مناسب وقت پر سونے میں مشکل ہوئی۔"
+    },
+    {
+      "id": "DP-086",
+      "category": "sleep",
+      "reverse": true,
+      "urgent": false,
+      "text": "خراب نیند والی رات کے بعد، میں عموماً آرام محسوس کرتے ہوئے بیدار ہوا/ہوئی۔"
+    },
+    {
+      "id": "DP-087",
+      "category": "sleep",
+      "reverse": false,
+      "urgent": false,
+      "text": "توجہ مانگنے والے کام کے دوران، میری نیند معمول سے نمایاں طور پر بدل گئی۔"
+    },
+    {
+      "id": "DP-088",
+      "category": "sleep",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ غلطیوں کے بارے میں سوچتے ہوئے، میری نیند کا معمول مناسب حد تک متوازن تھا۔"
+    },
+    {
+      "id": "DP-089",
+      "category": "sleep",
+      "reverse": false,
+      "urgent": false,
+      "text": "مستقبل کی طرف دیکھتے ہوئے، مجھے سونے، نیند برقرار رکھنے یا مناسب وقت پر سونے میں مشکل ہوئی۔"
+    },
+    {
+      "id": "DP-090",
+      "category": "sleep",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب کسی نے تعاون پیش کیا، میں عموماً آرام محسوس کرتے ہوئے بیدار ہوا/ہوئی۔"
+    },
+    {
+      "id": "DP-091",
+      "category": "sleep",
+      "reverse": false,
+      "urgent": false,
+      "text": "سادہ انتخاب کرتے ہوئے، میری نیند معمول سے نمایاں طور پر بدل گئی۔"
+    },
+    {
+      "id": "DP-092",
+      "category": "sleep",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب مجھے اپنی نگہداشت کرنی تھی، میری نیند کا معمول مناسب حد تک متوازن تھا۔"
+    },
+    {
+      "id": "DP-093",
+      "category": "sleep",
+      "reverse": false,
+      "urgent": false,
+      "text": "گفتگو کے دوران، مجھے سونے، نیند برقرار رکھنے یا مناسب وقت پر سونے میں مشکل ہوئی۔"
+    },
+    {
+      "id": "DP-094",
+      "category": "sleep",
+      "reverse": true,
+      "urgent": false,
+      "text": "منصوبے بدلنے پر، میں عموماً آرام محسوس کرتے ہوئے بیدار ہوا/ہوئی۔"
+    },
+    {
+      "id": "DP-095",
+      "category": "sleep",
+      "reverse": false,
+      "urgent": false,
+      "text": "چھوٹا کام مکمل کرنے کے بعد، میری نیند معمول سے نمایاں طور پر بدل گئی۔"
+    },
+    {
+      "id": "DP-096",
+      "category": "sleep",
+      "reverse": true,
+      "urgent": false,
+      "text": "اپنا معمول جاری رکھتے ہوئے، میری نیند کا معمول مناسب حد تک متوازن تھا۔"
+    },
+    {
+      "id": "DP-097",
+      "category": "sleep",
+      "reverse": false,
+      "urgent": false,
+      "text": "جسمانی بے آرامی ظاہر ہونے پر، مجھے سونے، نیند برقرار رکھنے یا مناسب وقت پر سونے میں مشکل ہوئی۔"
+    },
+    {
+      "id": "DP-098",
+      "category": "sleep",
+      "reverse": true,
+      "urgent": false,
+      "text": "دوسروں سے اپنا موازنہ کرتے ہوئے، میں عموماً آرام محسوس کرتے ہوئے بیدار ہوا/ہوئی۔"
+    },
+    {
+      "id": "DP-099",
+      "category": "sleep",
+      "reverse": false,
+      "urgent": false,
+      "text": "آرام کی کوشش کرتے ہوئے، میری نیند معمول سے نمایاں طور پر بدل گئی۔"
+    },
+    {
+      "id": "DP-100",
+      "category": "sleep",
+      "reverse": true,
+      "urgent": false,
+      "text": "اس وقت بھی جب دوسرے میرے احساسات نہیں دیکھ سکتے تھے، میری نیند کا معمول مناسب حد تک متوازن تھا۔"
+    },
+    {
+      "id": "DP-101",
+      "category": "appetite",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ دو ہفتوں کے دوران، میری بھوک مناسب حد تک معمول کے قریب رہی۔"
+    },
+    {
+      "id": "DP-102",
+      "category": "appetite",
+      "reverse": false,
+      "urgent": false,
+      "text": "زیادہ تر صبحوں میں، میری بھوک معمول سے بہت کم یا زیادہ ہو گئی۔"
+    },
+    {
+      "id": "DP-103",
+      "category": "appetite",
+      "reverse": true,
+      "urgent": false,
+      "text": "عام ذمہ داریاں سنبھالتے ہوئے، میں جسم کی ضرورت کے مطابق باقاعدہ کھانا کھا سکا/سکی۔"
+    },
+    {
+      "id": "DP-104",
+      "category": "appetite",
+      "reverse": false,
+      "urgent": false,
+      "text": "مایوس کن واقعے کے بعد، مزاج کی تبدیلی نے میرے کھانے کے معمول کو متاثر کیا۔"
+    },
+    {
+      "id": "DP-105",
+      "category": "appetite",
+      "reverse": true,
+      "urgent": false,
+      "text": "بغیر طے شدہ مصروفیت کے وقت، میری بھوک مناسب حد تک معمول کے قریب رہی۔"
+    },
+    {
+      "id": "DP-106",
+      "category": "appetite",
+      "reverse": false,
+      "urgent": false,
+      "text": "کام یا تعلیم کے دوران، میری بھوک معمول سے بہت کم یا زیادہ ہو گئی۔"
+    },
+    {
+      "id": "DP-107",
+      "category": "appetite",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنہائی میں وقت گزارتے ہوئے، میں جسم کی ضرورت کے مطابق باقاعدہ کھانا کھا سکا/سکی۔"
+    },
+    {
+      "id": "DP-108",
+      "category": "appetite",
+      "reverse": false,
+      "urgent": false,
+      "text": "اپنے جاننے والوں کے درمیان، مزاج کی تبدیلی نے میرے کھانے کے معمول کو متاثر کیا۔"
+    },
+    {
+      "id": "DP-109",
+      "category": "appetite",
+      "reverse": true,
+      "urgent": false,
+      "text": "کسی پسندیدہ سرگرمی کے بارے میں سوچتے ہوئے، میری بھوک مناسب حد تک معمول کے قریب رہی۔"
+    },
+    {
+      "id": "DP-110",
+      "category": "appetite",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اختتام کے قریب، میری بھوک معمول سے بہت کم یا زیادہ ہو گئی۔"
+    },
+    {
+      "id": "DP-111",
+      "category": "appetite",
+      "reverse": true,
+      "urgent": false,
+      "text": "خراب نیند والی رات کے بعد، میں جسم کی ضرورت کے مطابق باقاعدہ کھانا کھا سکا/سکی۔"
+    },
+    {
+      "id": "DP-112",
+      "category": "appetite",
+      "reverse": false,
+      "urgent": false,
+      "text": "توجہ مانگنے والے کام کے دوران، مزاج کی تبدیلی نے میرے کھانے کے معمول کو متاثر کیا۔"
+    },
+    {
+      "id": "DP-113",
+      "category": "appetite",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ غلطیوں کے بارے میں سوچتے ہوئے، میری بھوک مناسب حد تک معمول کے قریب رہی۔"
+    },
+    {
+      "id": "DP-114",
+      "category": "appetite",
+      "reverse": false,
+      "urgent": false,
+      "text": "مستقبل کی طرف دیکھتے ہوئے، میری بھوک معمول سے بہت کم یا زیادہ ہو گئی۔"
+    },
+    {
+      "id": "DP-115",
+      "category": "appetite",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب کسی نے تعاون پیش کیا، میں جسم کی ضرورت کے مطابق باقاعدہ کھانا کھا سکا/سکی۔"
+    },
+    {
+      "id": "DP-116",
+      "category": "appetite",
+      "reverse": false,
+      "urgent": false,
+      "text": "سادہ انتخاب کرتے ہوئے، مزاج کی تبدیلی نے میرے کھانے کے معمول کو متاثر کیا۔"
+    },
+    {
+      "id": "DP-117",
+      "category": "appetite",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب مجھے اپنی نگہداشت کرنی تھی، میری بھوک مناسب حد تک معمول کے قریب رہی۔"
+    },
+    {
+      "id": "DP-118",
+      "category": "appetite",
+      "reverse": false,
+      "urgent": false,
+      "text": "گفتگو کے دوران، میری بھوک معمول سے بہت کم یا زیادہ ہو گئی۔"
+    },
+    {
+      "id": "DP-119",
+      "category": "appetite",
+      "reverse": true,
+      "urgent": false,
+      "text": "منصوبے بدلنے پر، میں جسم کی ضرورت کے مطابق باقاعدہ کھانا کھا سکا/سکی۔"
+    },
+    {
+      "id": "DP-120",
+      "category": "appetite",
+      "reverse": false,
+      "urgent": false,
+      "text": "چھوٹا کام مکمل کرنے کے بعد، مزاج کی تبدیلی نے میرے کھانے کے معمول کو متاثر کیا۔"
+    },
+    {
+      "id": "DP-121",
+      "category": "appetite",
+      "reverse": true,
+      "urgent": false,
+      "text": "اپنا معمول جاری رکھتے ہوئے، میری بھوک مناسب حد تک معمول کے قریب رہی۔"
+    },
+    {
+      "id": "DP-122",
+      "category": "appetite",
+      "reverse": false,
+      "urgent": false,
+      "text": "جسمانی بے آرامی ظاہر ہونے پر، میری بھوک معمول سے بہت کم یا زیادہ ہو گئی۔"
+    },
+    {
+      "id": "DP-123",
+      "category": "appetite",
+      "reverse": true,
+      "urgent": false,
+      "text": "دوسروں سے اپنا موازنہ کرتے ہوئے، میں جسم کی ضرورت کے مطابق باقاعدہ کھانا کھا سکا/سکی۔"
+    },
+    {
+      "id": "DP-124",
+      "category": "appetite",
+      "reverse": false,
+      "urgent": false,
+      "text": "آرام کی کوشش کرتے ہوئے، مزاج کی تبدیلی نے میرے کھانے کے معمول کو متاثر کیا۔"
+    },
+    {
+      "id": "DP-125",
+      "category": "appetite",
+      "reverse": true,
+      "urgent": false,
+      "text": "اس وقت بھی جب دوسرے میرے احساسات نہیں دیکھ سکتے تھے، میری بھوک مناسب حد تک معمول کے قریب رہی۔"
+    },
+    {
+      "id": "DP-126",
+      "category": "concentration",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ دو ہفتوں کے دوران، میں عام کام مکمل کرنے تک توجہ برقرار رکھ سکا/سکی۔"
+    },
+    {
+      "id": "DP-127",
+      "category": "concentration",
+      "reverse": false,
+      "urgent": false,
+      "text": "زیادہ تر صبحوں میں، مجھے پڑھنے، گفتگو یا کام پر توجہ دینا مشکل لگا۔"
+    },
+    {
+      "id": "DP-128",
+      "category": "concentration",
+      "reverse": true,
+      "urgent": false,
+      "text": "عام ذمہ داریاں سنبھالتے ہوئے، میری یادداشت اور توجہ مناسب طور پر کام کرتی رہی۔"
+    },
+    {
+      "id": "DP-129",
+      "category": "concentration",
+      "reverse": false,
+      "urgent": false,
+      "text": "مایوس کن واقعے کے بعد، میں معمول کی تفصیلات پہلے سے زیادہ بھولتا/بھولتی رہا/رہی۔"
+    },
+    {
+      "id": "DP-130",
+      "category": "concentration",
+      "reverse": true,
+      "urgent": false,
+      "text": "بغیر طے شدہ مصروفیت کے وقت، میں عام کام مکمل کرنے تک توجہ برقرار رکھ سکا/سکی۔"
+    },
+    {
+      "id": "DP-131",
+      "category": "concentration",
+      "reverse": false,
+      "urgent": false,
+      "text": "کام یا تعلیم کے دوران، مجھے پڑھنے، گفتگو یا کام پر توجہ دینا مشکل لگا۔"
+    },
+    {
+      "id": "DP-132",
+      "category": "concentration",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنہائی میں وقت گزارتے ہوئے، میری یادداشت اور توجہ مناسب طور پر کام کرتی رہی۔"
+    },
+    {
+      "id": "DP-133",
+      "category": "concentration",
+      "reverse": false,
+      "urgent": false,
+      "text": "اپنے جاننے والوں کے درمیان، میں معمول کی تفصیلات پہلے سے زیادہ بھولتا/بھولتی رہا/رہی۔"
+    },
+    {
+      "id": "DP-134",
+      "category": "concentration",
+      "reverse": true,
+      "urgent": false,
+      "text": "کسی پسندیدہ سرگرمی کے بارے میں سوچتے ہوئے، میں عام کام مکمل کرنے تک توجہ برقرار رکھ سکا/سکی۔"
+    },
+    {
+      "id": "DP-135",
+      "category": "concentration",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اختتام کے قریب، مجھے پڑھنے، گفتگو یا کام پر توجہ دینا مشکل لگا۔"
+    },
+    {
+      "id": "DP-136",
+      "category": "concentration",
+      "reverse": true,
+      "urgent": false,
+      "text": "خراب نیند والی رات کے بعد، میری یادداشت اور توجہ مناسب طور پر کام کرتی رہی۔"
+    },
+    {
+      "id": "DP-137",
+      "category": "concentration",
+      "reverse": false,
+      "urgent": false,
+      "text": "توجہ مانگنے والے کام کے دوران، میں معمول کی تفصیلات پہلے سے زیادہ بھولتا/بھولتی رہا/رہی۔"
+    },
+    {
+      "id": "DP-138",
+      "category": "concentration",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ غلطیوں کے بارے میں سوچتے ہوئے، میں عام کام مکمل کرنے تک توجہ برقرار رکھ سکا/سکی۔"
+    },
+    {
+      "id": "DP-139",
+      "category": "concentration",
+      "reverse": false,
+      "urgent": false,
+      "text": "مستقبل کی طرف دیکھتے ہوئے، مجھے پڑھنے، گفتگو یا کام پر توجہ دینا مشکل لگا۔"
+    },
+    {
+      "id": "DP-140",
+      "category": "concentration",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب کسی نے تعاون پیش کیا، میری یادداشت اور توجہ مناسب طور پر کام کرتی رہی۔"
+    },
+    {
+      "id": "DP-141",
+      "category": "concentration",
+      "reverse": false,
+      "urgent": false,
+      "text": "سادہ انتخاب کرتے ہوئے، میں معمول کی تفصیلات پہلے سے زیادہ بھولتا/بھولتی رہا/رہی۔"
+    },
+    {
+      "id": "DP-142",
+      "category": "concentration",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب مجھے اپنی نگہداشت کرنی تھی، میں عام کام مکمل کرنے تک توجہ برقرار رکھ سکا/سکی۔"
+    },
+    {
+      "id": "DP-143",
+      "category": "concentration",
+      "reverse": false,
+      "urgent": false,
+      "text": "گفتگو کے دوران، مجھے پڑھنے، گفتگو یا کام پر توجہ دینا مشکل لگا۔"
+    },
+    {
+      "id": "DP-144",
+      "category": "concentration",
+      "reverse": true,
+      "urgent": false,
+      "text": "منصوبے بدلنے پر، میری یادداشت اور توجہ مناسب طور پر کام کرتی رہی۔"
+    },
+    {
+      "id": "DP-145",
+      "category": "concentration",
+      "reverse": false,
+      "urgent": false,
+      "text": "چھوٹا کام مکمل کرنے کے بعد، میں معمول کی تفصیلات پہلے سے زیادہ بھولتا/بھولتی رہا/رہی۔"
+    },
+    {
+      "id": "DP-146",
+      "category": "concentration",
+      "reverse": true,
+      "urgent": false,
+      "text": "اپنا معمول جاری رکھتے ہوئے، میں عام کام مکمل کرنے تک توجہ برقرار رکھ سکا/سکی۔"
+    },
+    {
+      "id": "DP-147",
+      "category": "concentration",
+      "reverse": false,
+      "urgent": false,
+      "text": "جسمانی بے آرامی ظاہر ہونے پر، مجھے پڑھنے، گفتگو یا کام پر توجہ دینا مشکل لگا۔"
+    },
+    {
+      "id": "DP-148",
+      "category": "concentration",
+      "reverse": true,
+      "urgent": false,
+      "text": "دوسروں سے اپنا موازنہ کرتے ہوئے، میری یادداشت اور توجہ مناسب طور پر کام کرتی رہی۔"
+    },
+    {
+      "id": "DP-149",
+      "category": "concentration",
+      "reverse": false,
+      "urgent": false,
+      "text": "آرام کی کوشش کرتے ہوئے، میں معمول کی تفصیلات پہلے سے زیادہ بھولتا/بھولتی رہا/رہی۔"
+    },
+    {
+      "id": "DP-150",
+      "category": "concentration",
+      "reverse": true,
+      "urgent": false,
+      "text": "اس وقت بھی جب دوسرے میرے احساسات نہیں دیکھ سکتے تھے، میں عام کام مکمل کرنے تک توجہ برقرار رکھ سکا/سکی۔"
+    },
+    {
+      "id": "DP-151",
+      "category": "self_worth",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ دو ہفتوں کے دوران، میں یاد رکھ سکا/سکی کہ ایک انسان کے طور پر میری قدر ہے۔"
+    },
+    {
+      "id": "DP-152",
+      "category": "self_worth",
+      "reverse": false,
+      "urgent": false,
+      "text": "زیادہ تر صبحوں میں، میں نے خود کو بے قدر یا بہت کم اہم محسوس کیا۔"
+    },
+    {
+      "id": "DP-153",
+      "category": "self_worth",
+      "reverse": true,
+      "urgent": false,
+      "text": "عام ذمہ داریاں سنبھالتے ہوئے، میری مشکلات نے میری پوری خود تصویر متعین نہیں کی۔"
+    },
+    {
+      "id": "DP-154",
+      "category": "self_worth",
+      "reverse": false,
+      "urgent": false,
+      "text": "مایوس کن واقعے کے بعد، میں نے خود کو بوجھ یا دوسروں سے کم حق دار سمجھا۔"
+    },
+    {
+      "id": "DP-155",
+      "category": "self_worth",
+      "reverse": true,
+      "urgent": false,
+      "text": "بغیر طے شدہ مصروفیت کے وقت، میں یاد رکھ سکا/سکی کہ ایک انسان کے طور پر میری قدر ہے۔"
+    },
+    {
+      "id": "DP-156",
+      "category": "self_worth",
+      "reverse": false,
+      "urgent": false,
+      "text": "کام یا تعلیم کے دوران، میں نے خود کو بے قدر یا بہت کم اہم محسوس کیا۔"
+    },
+    {
+      "id": "DP-157",
+      "category": "self_worth",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنہائی میں وقت گزارتے ہوئے، میری مشکلات نے میری پوری خود تصویر متعین نہیں کی۔"
+    },
+    {
+      "id": "DP-158",
+      "category": "self_worth",
+      "reverse": false,
+      "urgent": false,
+      "text": "اپنے جاننے والوں کے درمیان، میں نے خود کو بوجھ یا دوسروں سے کم حق دار سمجھا۔"
+    },
+    {
+      "id": "DP-159",
+      "category": "self_worth",
+      "reverse": true,
+      "urgent": false,
+      "text": "کسی پسندیدہ سرگرمی کے بارے میں سوچتے ہوئے، میں یاد رکھ سکا/سکی کہ ایک انسان کے طور پر میری قدر ہے۔"
+    },
+    {
+      "id": "DP-160",
+      "category": "self_worth",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اختتام کے قریب، میں نے خود کو بے قدر یا بہت کم اہم محسوس کیا۔"
+    },
+    {
+      "id": "DP-161",
+      "category": "self_worth",
+      "reverse": true,
+      "urgent": false,
+      "text": "خراب نیند والی رات کے بعد، میری مشکلات نے میری پوری خود تصویر متعین نہیں کی۔"
+    },
+    {
+      "id": "DP-162",
+      "category": "self_worth",
+      "reverse": false,
+      "urgent": false,
+      "text": "توجہ مانگنے والے کام کے دوران، میں نے خود کو بوجھ یا دوسروں سے کم حق دار سمجھا۔"
+    },
+    {
+      "id": "DP-163",
+      "category": "self_worth",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ غلطیوں کے بارے میں سوچتے ہوئے، میں یاد رکھ سکا/سکی کہ ایک انسان کے طور پر میری قدر ہے۔"
+    },
+    {
+      "id": "DP-164",
+      "category": "self_worth",
+      "reverse": false,
+      "urgent": false,
+      "text": "مستقبل کی طرف دیکھتے ہوئے، میں نے خود کو بے قدر یا بہت کم اہم محسوس کیا۔"
+    },
+    {
+      "id": "DP-165",
+      "category": "self_worth",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب کسی نے تعاون پیش کیا، میری مشکلات نے میری پوری خود تصویر متعین نہیں کی۔"
+    },
+    {
+      "id": "DP-166",
+      "category": "self_worth",
+      "reverse": false,
+      "urgent": false,
+      "text": "سادہ انتخاب کرتے ہوئے، میں نے خود کو بوجھ یا دوسروں سے کم حق دار سمجھا۔"
+    },
+    {
+      "id": "DP-167",
+      "category": "self_worth",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب مجھے اپنی نگہداشت کرنی تھی، میں یاد رکھ سکا/سکی کہ ایک انسان کے طور پر میری قدر ہے۔"
+    },
+    {
+      "id": "DP-168",
+      "category": "self_worth",
+      "reverse": false,
+      "urgent": false,
+      "text": "گفتگو کے دوران، میں نے خود کو بے قدر یا بہت کم اہم محسوس کیا۔"
+    },
+    {
+      "id": "DP-169",
+      "category": "self_worth",
+      "reverse": true,
+      "urgent": false,
+      "text": "منصوبے بدلنے پر، میری مشکلات نے میری پوری خود تصویر متعین نہیں کی۔"
+    },
+    {
+      "id": "DP-170",
+      "category": "self_worth",
+      "reverse": false,
+      "urgent": false,
+      "text": "چھوٹا کام مکمل کرنے کے بعد، میں نے خود کو بوجھ یا دوسروں سے کم حق دار سمجھا۔"
+    },
+    {
+      "id": "DP-171",
+      "category": "self_worth",
+      "reverse": true,
+      "urgent": false,
+      "text": "اپنا معمول جاری رکھتے ہوئے، میں یاد رکھ سکا/سکی کہ ایک انسان کے طور پر میری قدر ہے۔"
+    },
+    {
+      "id": "DP-172",
+      "category": "self_worth",
+      "reverse": false,
+      "urgent": false,
+      "text": "جسمانی بے آرامی ظاہر ہونے پر، میں نے خود کو بے قدر یا بہت کم اہم محسوس کیا۔"
+    },
+    {
+      "id": "DP-173",
+      "category": "self_worth",
+      "reverse": true,
+      "urgent": false,
+      "text": "دوسروں سے اپنا موازنہ کرتے ہوئے، میری مشکلات نے میری پوری خود تصویر متعین نہیں کی۔"
+    },
+    {
+      "id": "DP-174",
+      "category": "self_worth",
+      "reverse": false,
+      "urgent": false,
+      "text": "آرام کی کوشش کرتے ہوئے، میں نے خود کو بوجھ یا دوسروں سے کم حق دار سمجھا۔"
+    },
+    {
+      "id": "DP-175",
+      "category": "self_worth",
+      "reverse": true,
+      "urgent": false,
+      "text": "اس وقت بھی جب دوسرے میرے احساسات نہیں دیکھ سکتے تھے، میں یاد رکھ سکا/سکی کہ ایک انسان کے طور پر میری قدر ہے۔"
+    },
+    {
+      "id": "DP-176",
+      "category": "guilt",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ دو ہفتوں کے دوران، میں اپنی غلطیوں کو منصفانہ اور متناسب انداز میں دیکھ سکا/سکی۔"
+    },
+    {
+      "id": "DP-177",
+      "category": "guilt",
+      "reverse": false,
+      "urgent": false,
+      "text": "زیادہ تر صبحوں میں، غلط حالات پر میں نے خود کو حد سے زیادہ الزام دیا۔"
+    },
+    {
+      "id": "DP-178",
+      "category": "guilt",
+      "reverse": true,
+      "urgent": false,
+      "text": "عام ذمہ داریاں سنبھالتے ہوئے، میں حقیقی ذمہ داری اور حد سے زیادہ خود الزام میں فرق کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-179",
+      "category": "guilt",
+      "reverse": false,
+      "urgent": false,
+      "text": "مایوس کن واقعے کے بعد، مکمل ذمہ داری نہ ہونے کے باوجود احساسِ جرم شدید رہا۔"
+    },
+    {
+      "id": "DP-180",
+      "category": "guilt",
+      "reverse": true,
+      "urgent": false,
+      "text": "بغیر طے شدہ مصروفیت کے وقت، میں اپنی غلطیوں کو منصفانہ اور متناسب انداز میں دیکھ سکا/سکی۔"
+    },
+    {
+      "id": "DP-181",
+      "category": "guilt",
+      "reverse": false,
+      "urgent": false,
+      "text": "کام یا تعلیم کے دوران، غلط حالات پر میں نے خود کو حد سے زیادہ الزام دیا۔"
+    },
+    {
+      "id": "DP-182",
+      "category": "guilt",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنہائی میں وقت گزارتے ہوئے، میں حقیقی ذمہ داری اور حد سے زیادہ خود الزام میں فرق کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-183",
+      "category": "guilt",
+      "reverse": false,
+      "urgent": false,
+      "text": "اپنے جاننے والوں کے درمیان، مکمل ذمہ داری نہ ہونے کے باوجود احساسِ جرم شدید رہا۔"
+    },
+    {
+      "id": "DP-184",
+      "category": "guilt",
+      "reverse": true,
+      "urgent": false,
+      "text": "کسی پسندیدہ سرگرمی کے بارے میں سوچتے ہوئے، میں اپنی غلطیوں کو منصفانہ اور متناسب انداز میں دیکھ سکا/سکی۔"
+    },
+    {
+      "id": "DP-185",
+      "category": "guilt",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اختتام کے قریب، غلط حالات پر میں نے خود کو حد سے زیادہ الزام دیا۔"
+    },
+    {
+      "id": "DP-186",
+      "category": "guilt",
+      "reverse": true,
+      "urgent": false,
+      "text": "خراب نیند والی رات کے بعد، میں حقیقی ذمہ داری اور حد سے زیادہ خود الزام میں فرق کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-187",
+      "category": "guilt",
+      "reverse": false,
+      "urgent": false,
+      "text": "توجہ مانگنے والے کام کے دوران، مکمل ذمہ داری نہ ہونے کے باوجود احساسِ جرم شدید رہا۔"
+    },
+    {
+      "id": "DP-188",
+      "category": "guilt",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ غلطیوں کے بارے میں سوچتے ہوئے، میں اپنی غلطیوں کو منصفانہ اور متناسب انداز میں دیکھ سکا/سکی۔"
+    },
+    {
+      "id": "DP-189",
+      "category": "guilt",
+      "reverse": false,
+      "urgent": false,
+      "text": "مستقبل کی طرف دیکھتے ہوئے، غلط حالات پر میں نے خود کو حد سے زیادہ الزام دیا۔"
+    },
+    {
+      "id": "DP-190",
+      "category": "guilt",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب کسی نے تعاون پیش کیا، میں حقیقی ذمہ داری اور حد سے زیادہ خود الزام میں فرق کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-191",
+      "category": "guilt",
+      "reverse": false,
+      "urgent": false,
+      "text": "سادہ انتخاب کرتے ہوئے، مکمل ذمہ داری نہ ہونے کے باوجود احساسِ جرم شدید رہا۔"
+    },
+    {
+      "id": "DP-192",
+      "category": "guilt",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب مجھے اپنی نگہداشت کرنی تھی، میں اپنی غلطیوں کو منصفانہ اور متناسب انداز میں دیکھ سکا/سکی۔"
+    },
+    {
+      "id": "DP-193",
+      "category": "guilt",
+      "reverse": false,
+      "urgent": false,
+      "text": "گفتگو کے دوران، غلط حالات پر میں نے خود کو حد سے زیادہ الزام دیا۔"
+    },
+    {
+      "id": "DP-194",
+      "category": "guilt",
+      "reverse": true,
+      "urgent": false,
+      "text": "منصوبے بدلنے پر، میں حقیقی ذمہ داری اور حد سے زیادہ خود الزام میں فرق کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-195",
+      "category": "guilt",
+      "reverse": false,
+      "urgent": false,
+      "text": "چھوٹا کام مکمل کرنے کے بعد، مکمل ذمہ داری نہ ہونے کے باوجود احساسِ جرم شدید رہا۔"
+    },
+    {
+      "id": "DP-196",
+      "category": "guilt",
+      "reverse": true,
+      "urgent": false,
+      "text": "اپنا معمول جاری رکھتے ہوئے، میں اپنی غلطیوں کو منصفانہ اور متناسب انداز میں دیکھ سکا/سکی۔"
+    },
+    {
+      "id": "DP-197",
+      "category": "guilt",
+      "reverse": false,
+      "urgent": false,
+      "text": "جسمانی بے آرامی ظاہر ہونے پر، غلط حالات پر میں نے خود کو حد سے زیادہ الزام دیا۔"
+    },
+    {
+      "id": "DP-198",
+      "category": "guilt",
+      "reverse": true,
+      "urgent": false,
+      "text": "دوسروں سے اپنا موازنہ کرتے ہوئے، میں حقیقی ذمہ داری اور حد سے زیادہ خود الزام میں فرق کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-199",
+      "category": "guilt",
+      "reverse": false,
+      "urgent": false,
+      "text": "آرام کی کوشش کرتے ہوئے، مکمل ذمہ داری نہ ہونے کے باوجود احساسِ جرم شدید رہا۔"
+    },
+    {
+      "id": "DP-200",
+      "category": "guilt",
+      "reverse": true,
+      "urgent": false,
+      "text": "اس وقت بھی جب دوسرے میرے احساسات نہیں دیکھ سکتے تھے، میں اپنی غلطیوں کو منصفانہ اور متناسب انداز میں دیکھ سکا/سکی۔"
+    },
+    {
+      "id": "DP-201",
+      "category": "hopelessness",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ دو ہفتوں کے دوران، میں تصور کر سکا/سکی کہ کم از کم کچھ حالات بہتر ہو سکتے ہیں۔"
+    },
+    {
+      "id": "DP-202",
+      "category": "hopelessness",
+      "reverse": false,
+      "urgent": false,
+      "text": "زیادہ تر صبحوں میں، مستقبل ناامید یا خالی محسوس ہوا۔"
+    },
+    {
+      "id": "DP-203",
+      "category": "hopelessness",
+      "reverse": true,
+      "urgent": false,
+      "text": "عام ذمہ داریاں سنبھالتے ہوئے، مستقبل میں کوئی ایسی چیز تھی جس کی طرف بڑھا جا سکے۔"
+    },
+    {
+      "id": "DP-204",
+      "category": "hopelessness",
+      "reverse": false,
+      "urgent": false,
+      "text": "مایوس کن واقعے کے بعد، مجھے حالات بہتر ہونے کا تصور کرنا مشکل لگا۔"
+    },
+    {
+      "id": "DP-205",
+      "category": "hopelessness",
+      "reverse": true,
+      "urgent": false,
+      "text": "بغیر طے شدہ مصروفیت کے وقت، میں تصور کر سکا/سکی کہ کم از کم کچھ حالات بہتر ہو سکتے ہیں۔"
+    },
+    {
+      "id": "DP-206",
+      "category": "hopelessness",
+      "reverse": false,
+      "urgent": false,
+      "text": "کام یا تعلیم کے دوران، مستقبل ناامید یا خالی محسوس ہوا۔"
+    },
+    {
+      "id": "DP-207",
+      "category": "hopelessness",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنہائی میں وقت گزارتے ہوئے، مستقبل میں کوئی ایسی چیز تھی جس کی طرف بڑھا جا سکے۔"
+    },
+    {
+      "id": "DP-208",
+      "category": "hopelessness",
+      "reverse": false,
+      "urgent": false,
+      "text": "اپنے جاننے والوں کے درمیان، مجھے حالات بہتر ہونے کا تصور کرنا مشکل لگا۔"
+    },
+    {
+      "id": "DP-209",
+      "category": "hopelessness",
+      "reverse": true,
+      "urgent": false,
+      "text": "کسی پسندیدہ سرگرمی کے بارے میں سوچتے ہوئے، میں تصور کر سکا/سکی کہ کم از کم کچھ حالات بہتر ہو سکتے ہیں۔"
+    },
+    {
+      "id": "DP-210",
+      "category": "hopelessness",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اختتام کے قریب، مستقبل ناامید یا خالی محسوس ہوا۔"
+    },
+    {
+      "id": "DP-211",
+      "category": "hopelessness",
+      "reverse": true,
+      "urgent": false,
+      "text": "خراب نیند والی رات کے بعد، مستقبل میں کوئی ایسی چیز تھی جس کی طرف بڑھا جا سکے۔"
+    },
+    {
+      "id": "DP-212",
+      "category": "hopelessness",
+      "reverse": false,
+      "urgent": false,
+      "text": "توجہ مانگنے والے کام کے دوران، مجھے حالات بہتر ہونے کا تصور کرنا مشکل لگا۔"
+    },
+    {
+      "id": "DP-213",
+      "category": "hopelessness",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ غلطیوں کے بارے میں سوچتے ہوئے، میں تصور کر سکا/سکی کہ کم از کم کچھ حالات بہتر ہو سکتے ہیں۔"
+    },
+    {
+      "id": "DP-214",
+      "category": "hopelessness",
+      "reverse": false,
+      "urgent": false,
+      "text": "مستقبل کی طرف دیکھتے ہوئے، مستقبل ناامید یا خالی محسوس ہوا۔"
+    },
+    {
+      "id": "DP-215",
+      "category": "hopelessness",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب کسی نے تعاون پیش کیا، مستقبل میں کوئی ایسی چیز تھی جس کی طرف بڑھا جا سکے۔"
+    },
+    {
+      "id": "DP-216",
+      "category": "hopelessness",
+      "reverse": false,
+      "urgent": false,
+      "text": "سادہ انتخاب کرتے ہوئے، مجھے حالات بہتر ہونے کا تصور کرنا مشکل لگا۔"
+    },
+    {
+      "id": "DP-217",
+      "category": "hopelessness",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب مجھے اپنی نگہداشت کرنی تھی، میں تصور کر سکا/سکی کہ کم از کم کچھ حالات بہتر ہو سکتے ہیں۔"
+    },
+    {
+      "id": "DP-218",
+      "category": "hopelessness",
+      "reverse": false,
+      "urgent": false,
+      "text": "گفتگو کے دوران، مستقبل ناامید یا خالی محسوس ہوا۔"
+    },
+    {
+      "id": "DP-219",
+      "category": "hopelessness",
+      "reverse": true,
+      "urgent": false,
+      "text": "منصوبے بدلنے پر، مستقبل میں کوئی ایسی چیز تھی جس کی طرف بڑھا جا سکے۔"
+    },
+    {
+      "id": "DP-220",
+      "category": "hopelessness",
+      "reverse": false,
+      "urgent": false,
+      "text": "چھوٹا کام مکمل کرنے کے بعد، مجھے حالات بہتر ہونے کا تصور کرنا مشکل لگا۔"
+    },
+    {
+      "id": "DP-221",
+      "category": "hopelessness",
+      "reverse": true,
+      "urgent": false,
+      "text": "اپنا معمول جاری رکھتے ہوئے، میں تصور کر سکا/سکی کہ کم از کم کچھ حالات بہتر ہو سکتے ہیں۔"
+    },
+    {
+      "id": "DP-222",
+      "category": "hopelessness",
+      "reverse": false,
+      "urgent": false,
+      "text": "جسمانی بے آرامی ظاہر ہونے پر، مستقبل ناامید یا خالی محسوس ہوا۔"
+    },
+    {
+      "id": "DP-223",
+      "category": "hopelessness",
+      "reverse": true,
+      "urgent": false,
+      "text": "دوسروں سے اپنا موازنہ کرتے ہوئے، مستقبل میں کوئی ایسی چیز تھی جس کی طرف بڑھا جا سکے۔"
+    },
+    {
+      "id": "DP-224",
+      "category": "hopelessness",
+      "reverse": false,
+      "urgent": false,
+      "text": "آرام کی کوشش کرتے ہوئے، مجھے حالات بہتر ہونے کا تصور کرنا مشکل لگا۔"
+    },
+    {
+      "id": "DP-225",
+      "category": "hopelessness",
+      "reverse": true,
+      "urgent": false,
+      "text": "اس وقت بھی جب دوسرے میرے احساسات نہیں دیکھ سکتے تھے، میں تصور کر سکا/سکی کہ کم از کم کچھ حالات بہتر ہو سکتے ہیں۔"
+    },
+    {
+      "id": "DP-226",
+      "category": "motivation",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ دو ہفتوں کے دوران، میں کم از کم کچھ ضروری کام شروع کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-227",
+      "category": "motivation",
+      "reverse": false,
+      "urgent": false,
+      "text": "زیادہ تر صبحوں میں، اہم کام بھی شروع کرنا انتہائی مشکل محسوس ہوا۔"
+    },
+    {
+      "id": "DP-228",
+      "category": "motivation",
+      "reverse": true,
+      "urgent": false,
+      "text": "عام ذمہ داریاں سنبھالتے ہوئے، میں نے اگلا مفید قدم اٹھانے کی کچھ ترغیب محسوس کی۔"
+    },
+    {
+      "id": "DP-229",
+      "category": "motivation",
+      "reverse": false,
+      "urgent": false,
+      "text": "مایوس کن واقعے کے بعد، میں ایسی ترغیب کا انتظار کرتا/کرتی رہا/رہی جو شاذ ہی آئی۔"
+    },
+    {
+      "id": "DP-230",
+      "category": "motivation",
+      "reverse": true,
+      "urgent": false,
+      "text": "بغیر طے شدہ مصروفیت کے وقت، میں کم از کم کچھ ضروری کام شروع کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-231",
+      "category": "motivation",
+      "reverse": false,
+      "urgent": false,
+      "text": "کام یا تعلیم کے دوران، اہم کام بھی شروع کرنا انتہائی مشکل محسوس ہوا۔"
+    },
+    {
+      "id": "DP-232",
+      "category": "motivation",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنہائی میں وقت گزارتے ہوئے، میں نے اگلا مفید قدم اٹھانے کی کچھ ترغیب محسوس کی۔"
+    },
+    {
+      "id": "DP-233",
+      "category": "motivation",
+      "reverse": false,
+      "urgent": false,
+      "text": "اپنے جاننے والوں کے درمیان، میں ایسی ترغیب کا انتظار کرتا/کرتی رہا/رہی جو شاذ ہی آئی۔"
+    },
+    {
+      "id": "DP-234",
+      "category": "motivation",
+      "reverse": true,
+      "urgent": false,
+      "text": "کسی پسندیدہ سرگرمی کے بارے میں سوچتے ہوئے، میں کم از کم کچھ ضروری کام شروع کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-235",
+      "category": "motivation",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اختتام کے قریب، اہم کام بھی شروع کرنا انتہائی مشکل محسوس ہوا۔"
+    },
+    {
+      "id": "DP-236",
+      "category": "motivation",
+      "reverse": true,
+      "urgent": false,
+      "text": "خراب نیند والی رات کے بعد، میں نے اگلا مفید قدم اٹھانے کی کچھ ترغیب محسوس کی۔"
+    },
+    {
+      "id": "DP-237",
+      "category": "motivation",
+      "reverse": false,
+      "urgent": false,
+      "text": "توجہ مانگنے والے کام کے دوران، میں ایسی ترغیب کا انتظار کرتا/کرتی رہا/رہی جو شاذ ہی آئی۔"
+    },
+    {
+      "id": "DP-238",
+      "category": "motivation",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ غلطیوں کے بارے میں سوچتے ہوئے، میں کم از کم کچھ ضروری کام شروع کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-239",
+      "category": "motivation",
+      "reverse": false,
+      "urgent": false,
+      "text": "مستقبل کی طرف دیکھتے ہوئے، اہم کام بھی شروع کرنا انتہائی مشکل محسوس ہوا۔"
+    },
+    {
+      "id": "DP-240",
+      "category": "motivation",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب کسی نے تعاون پیش کیا، میں نے اگلا مفید قدم اٹھانے کی کچھ ترغیب محسوس کی۔"
+    },
+    {
+      "id": "DP-241",
+      "category": "motivation",
+      "reverse": false,
+      "urgent": false,
+      "text": "سادہ انتخاب کرتے ہوئے، میں ایسی ترغیب کا انتظار کرتا/کرتی رہا/رہی جو شاذ ہی آئی۔"
+    },
+    {
+      "id": "DP-242",
+      "category": "motivation",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب مجھے اپنی نگہداشت کرنی تھی، میں کم از کم کچھ ضروری کام شروع کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-243",
+      "category": "motivation",
+      "reverse": false,
+      "urgent": false,
+      "text": "گفتگو کے دوران، اہم کام بھی شروع کرنا انتہائی مشکل محسوس ہوا۔"
+    },
+    {
+      "id": "DP-244",
+      "category": "motivation",
+      "reverse": true,
+      "urgent": false,
+      "text": "منصوبے بدلنے پر، میں نے اگلا مفید قدم اٹھانے کی کچھ ترغیب محسوس کی۔"
+    },
+    {
+      "id": "DP-245",
+      "category": "motivation",
+      "reverse": false,
+      "urgent": false,
+      "text": "چھوٹا کام مکمل کرنے کے بعد، میں ایسی ترغیب کا انتظار کرتا/کرتی رہا/رہی جو شاذ ہی آئی۔"
+    },
+    {
+      "id": "DP-246",
+      "category": "motivation",
+      "reverse": true,
+      "urgent": false,
+      "text": "اپنا معمول جاری رکھتے ہوئے، میں کم از کم کچھ ضروری کام شروع کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-247",
+      "category": "motivation",
+      "reverse": false,
+      "urgent": false,
+      "text": "جسمانی بے آرامی ظاہر ہونے پر، اہم کام بھی شروع کرنا انتہائی مشکل محسوس ہوا۔"
+    },
+    {
+      "id": "DP-248",
+      "category": "motivation",
+      "reverse": true,
+      "urgent": false,
+      "text": "دوسروں سے اپنا موازنہ کرتے ہوئے، میں نے اگلا مفید قدم اٹھانے کی کچھ ترغیب محسوس کی۔"
+    },
+    {
+      "id": "DP-249",
+      "category": "motivation",
+      "reverse": false,
+      "urgent": false,
+      "text": "آرام کی کوشش کرتے ہوئے، میں ایسی ترغیب کا انتظار کرتا/کرتی رہا/رہی جو شاذ ہی آئی۔"
+    },
+    {
+      "id": "DP-250",
+      "category": "motivation",
+      "reverse": true,
+      "urgent": false,
+      "text": "اس وقت بھی جب دوسرے میرے احساسات نہیں دیکھ سکتے تھے، میں کم از کم کچھ ضروری کام شروع کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-251",
+      "category": "decisions",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ دو ہفتوں کے دوران، میں رکے بغیر عام فیصلے کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-252",
+      "category": "decisions",
+      "reverse": false,
+      "urgent": false,
+      "text": "زیادہ تر صبحوں میں، سادہ انتخاب غیر معمولی مشکل یا بھاری محسوس ہوئے۔"
+    },
+    {
+      "id": "DP-253",
+      "category": "decisions",
+      "reverse": true,
+      "urgent": false,
+      "text": "عام ذمہ داریاں سنبھالتے ہوئے، میں مناسب وضاحت کے ساتھ اختیارات کا موازنہ کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-254",
+      "category": "decisions",
+      "reverse": false,
+      "urgent": false,
+      "text": "مایوس کن واقعے کے بعد، سوچ رکنے کے باعث میں فیصلے مؤخر کرتا/کرتی رہا/رہی۔"
+    },
+    {
+      "id": "DP-255",
+      "category": "decisions",
+      "reverse": true,
+      "urgent": false,
+      "text": "بغیر طے شدہ مصروفیت کے وقت، میں رکے بغیر عام فیصلے کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-256",
+      "category": "decisions",
+      "reverse": false,
+      "urgent": false,
+      "text": "کام یا تعلیم کے دوران، سادہ انتخاب غیر معمولی مشکل یا بھاری محسوس ہوئے۔"
+    },
+    {
+      "id": "DP-257",
+      "category": "decisions",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنہائی میں وقت گزارتے ہوئے، میں مناسب وضاحت کے ساتھ اختیارات کا موازنہ کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-258",
+      "category": "decisions",
+      "reverse": false,
+      "urgent": false,
+      "text": "اپنے جاننے والوں کے درمیان، سوچ رکنے کے باعث میں فیصلے مؤخر کرتا/کرتی رہا/رہی۔"
+    },
+    {
+      "id": "DP-259",
+      "category": "decisions",
+      "reverse": true,
+      "urgent": false,
+      "text": "کسی پسندیدہ سرگرمی کے بارے میں سوچتے ہوئے، میں رکے بغیر عام فیصلے کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-260",
+      "category": "decisions",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اختتام کے قریب، سادہ انتخاب غیر معمولی مشکل یا بھاری محسوس ہوئے۔"
+    },
+    {
+      "id": "DP-261",
+      "category": "decisions",
+      "reverse": true,
+      "urgent": false,
+      "text": "خراب نیند والی رات کے بعد، میں مناسب وضاحت کے ساتھ اختیارات کا موازنہ کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-262",
+      "category": "decisions",
+      "reverse": false,
+      "urgent": false,
+      "text": "توجہ مانگنے والے کام کے دوران، سوچ رکنے کے باعث میں فیصلے مؤخر کرتا/کرتی رہا/رہی۔"
+    },
+    {
+      "id": "DP-263",
+      "category": "decisions",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ غلطیوں کے بارے میں سوچتے ہوئے، میں رکے بغیر عام فیصلے کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-264",
+      "category": "decisions",
+      "reverse": false,
+      "urgent": false,
+      "text": "مستقبل کی طرف دیکھتے ہوئے، سادہ انتخاب غیر معمولی مشکل یا بھاری محسوس ہوئے۔"
+    },
+    {
+      "id": "DP-265",
+      "category": "decisions",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب کسی نے تعاون پیش کیا، میں مناسب وضاحت کے ساتھ اختیارات کا موازنہ کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-266",
+      "category": "decisions",
+      "reverse": false,
+      "urgent": false,
+      "text": "سادہ انتخاب کرتے ہوئے، سوچ رکنے کے باعث میں فیصلے مؤخر کرتا/کرتی رہا/رہی۔"
+    },
+    {
+      "id": "DP-267",
+      "category": "decisions",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب مجھے اپنی نگہداشت کرنی تھی، میں رکے بغیر عام فیصلے کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-268",
+      "category": "decisions",
+      "reverse": false,
+      "urgent": false,
+      "text": "گفتگو کے دوران، سادہ انتخاب غیر معمولی مشکل یا بھاری محسوس ہوئے۔"
+    },
+    {
+      "id": "DP-269",
+      "category": "decisions",
+      "reverse": true,
+      "urgent": false,
+      "text": "منصوبے بدلنے پر، میں مناسب وضاحت کے ساتھ اختیارات کا موازنہ کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-270",
+      "category": "decisions",
+      "reverse": false,
+      "urgent": false,
+      "text": "چھوٹا کام مکمل کرنے کے بعد، سوچ رکنے کے باعث میں فیصلے مؤخر کرتا/کرتی رہا/رہی۔"
+    },
+    {
+      "id": "DP-271",
+      "category": "decisions",
+      "reverse": true,
+      "urgent": false,
+      "text": "اپنا معمول جاری رکھتے ہوئے، میں رکے بغیر عام فیصلے کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-272",
+      "category": "decisions",
+      "reverse": false,
+      "urgent": false,
+      "text": "جسمانی بے آرامی ظاہر ہونے پر، سادہ انتخاب غیر معمولی مشکل یا بھاری محسوس ہوئے۔"
+    },
+    {
+      "id": "DP-273",
+      "category": "decisions",
+      "reverse": true,
+      "urgent": false,
+      "text": "دوسروں سے اپنا موازنہ کرتے ہوئے، میں مناسب وضاحت کے ساتھ اختیارات کا موازنہ کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-274",
+      "category": "decisions",
+      "reverse": false,
+      "urgent": false,
+      "text": "آرام کی کوشش کرتے ہوئے، سوچ رکنے کے باعث میں فیصلے مؤخر کرتا/کرتی رہا/رہی۔"
+    },
+    {
+      "id": "DP-275",
+      "category": "decisions",
+      "reverse": true,
+      "urgent": false,
+      "text": "اس وقت بھی جب دوسرے میرے احساسات نہیں دیکھ سکتے تھے، میں رکے بغیر عام فیصلے کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-276",
+      "category": "movement",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ دو ہفتوں کے دوران، میری حرکت اور گفتگو کی رفتار معمول کے قریب رہی۔"
+    },
+    {
+      "id": "DP-277",
+      "category": "movement",
+      "reverse": false,
+      "urgent": false,
+      "text": "زیادہ تر صبحوں میں، میری حرکت یا گفتگو معمول سے نمایاں طور پر سست ہوئی۔"
+    },
+    {
+      "id": "DP-278",
+      "category": "movement",
+      "reverse": true,
+      "urgent": false,
+      "text": "عام ذمہ داریاں سنبھالتے ہوئے، میں نمایاں بے قراری کے بغیر بیٹھ یا حرکت کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-279",
+      "category": "movement",
+      "reverse": false,
+      "urgent": false,
+      "text": "مایوس کن واقعے کے بعد، میں جسمانی بے قراری اور سکون نہ پانے کا شکار رہا/رہی۔"
+    },
+    {
+      "id": "DP-280",
+      "category": "movement",
+      "reverse": true,
+      "urgent": false,
+      "text": "بغیر طے شدہ مصروفیت کے وقت، میری حرکت اور گفتگو کی رفتار معمول کے قریب رہی۔"
+    },
+    {
+      "id": "DP-281",
+      "category": "movement",
+      "reverse": false,
+      "urgent": false,
+      "text": "کام یا تعلیم کے دوران، میری حرکت یا گفتگو معمول سے نمایاں طور پر سست ہوئی۔"
+    },
+    {
+      "id": "DP-282",
+      "category": "movement",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنہائی میں وقت گزارتے ہوئے، میں نمایاں بے قراری کے بغیر بیٹھ یا حرکت کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-283",
+      "category": "movement",
+      "reverse": false,
+      "urgent": false,
+      "text": "اپنے جاننے والوں کے درمیان، میں جسمانی بے قراری اور سکون نہ پانے کا شکار رہا/رہی۔"
+    },
+    {
+      "id": "DP-284",
+      "category": "movement",
+      "reverse": true,
+      "urgent": false,
+      "text": "کسی پسندیدہ سرگرمی کے بارے میں سوچتے ہوئے، میری حرکت اور گفتگو کی رفتار معمول کے قریب رہی۔"
+    },
+    {
+      "id": "DP-285",
+      "category": "movement",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اختتام کے قریب، میری حرکت یا گفتگو معمول سے نمایاں طور پر سست ہوئی۔"
+    },
+    {
+      "id": "DP-286",
+      "category": "movement",
+      "reverse": true,
+      "urgent": false,
+      "text": "خراب نیند والی رات کے بعد، میں نمایاں بے قراری کے بغیر بیٹھ یا حرکت کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-287",
+      "category": "movement",
+      "reverse": false,
+      "urgent": false,
+      "text": "توجہ مانگنے والے کام کے دوران، میں جسمانی بے قراری اور سکون نہ پانے کا شکار رہا/رہی۔"
+    },
+    {
+      "id": "DP-288",
+      "category": "movement",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ غلطیوں کے بارے میں سوچتے ہوئے، میری حرکت اور گفتگو کی رفتار معمول کے قریب رہی۔"
+    },
+    {
+      "id": "DP-289",
+      "category": "movement",
+      "reverse": false,
+      "urgent": false,
+      "text": "مستقبل کی طرف دیکھتے ہوئے، میری حرکت یا گفتگو معمول سے نمایاں طور پر سست ہوئی۔"
+    },
+    {
+      "id": "DP-290",
+      "category": "movement",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب کسی نے تعاون پیش کیا، میں نمایاں بے قراری کے بغیر بیٹھ یا حرکت کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-291",
+      "category": "movement",
+      "reverse": false,
+      "urgent": false,
+      "text": "سادہ انتخاب کرتے ہوئے، میں جسمانی بے قراری اور سکون نہ پانے کا شکار رہا/رہی۔"
+    },
+    {
+      "id": "DP-292",
+      "category": "movement",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب مجھے اپنی نگہداشت کرنی تھی، میری حرکت اور گفتگو کی رفتار معمول کے قریب رہی۔"
+    },
+    {
+      "id": "DP-293",
+      "category": "movement",
+      "reverse": false,
+      "urgent": false,
+      "text": "گفتگو کے دوران، میری حرکت یا گفتگو معمول سے نمایاں طور پر سست ہوئی۔"
+    },
+    {
+      "id": "DP-294",
+      "category": "movement",
+      "reverse": true,
+      "urgent": false,
+      "text": "منصوبے بدلنے پر، میں نمایاں بے قراری کے بغیر بیٹھ یا حرکت کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-295",
+      "category": "movement",
+      "reverse": false,
+      "urgent": false,
+      "text": "چھوٹا کام مکمل کرنے کے بعد، میں جسمانی بے قراری اور سکون نہ پانے کا شکار رہا/رہی۔"
+    },
+    {
+      "id": "DP-296",
+      "category": "movement",
+      "reverse": true,
+      "urgent": false,
+      "text": "اپنا معمول جاری رکھتے ہوئے، میری حرکت اور گفتگو کی رفتار معمول کے قریب رہی۔"
+    },
+    {
+      "id": "DP-297",
+      "category": "movement",
+      "reverse": false,
+      "urgent": false,
+      "text": "جسمانی بے آرامی ظاہر ہونے پر، میری حرکت یا گفتگو معمول سے نمایاں طور پر سست ہوئی۔"
+    },
+    {
+      "id": "DP-298",
+      "category": "movement",
+      "reverse": true,
+      "urgent": false,
+      "text": "دوسروں سے اپنا موازنہ کرتے ہوئے، میں نمایاں بے قراری کے بغیر بیٹھ یا حرکت کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-299",
+      "category": "movement",
+      "reverse": false,
+      "urgent": false,
+      "text": "آرام کی کوشش کرتے ہوئے، میں جسمانی بے قراری اور سکون نہ پانے کا شکار رہا/رہی۔"
+    },
+    {
+      "id": "DP-300",
+      "category": "movement",
+      "reverse": true,
+      "urgent": false,
+      "text": "اس وقت بھی جب دوسرے میرے احساسات نہیں دیکھ سکتے تھے، میری حرکت اور گفتگو کی رفتار معمول کے قریب رہی۔"
+    },
+    {
+      "id": "DP-301",
+      "category": "irritability",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ دو ہفتوں کے دوران، میں نے مایوسی کو تعلقات پر حاوی ہوئے بغیر سنبھالا۔"
+    },
+    {
+      "id": "DP-302",
+      "category": "irritability",
+      "reverse": false,
+      "urgent": false,
+      "text": "زیادہ تر صبحوں میں، میں نے غیر معمولی چڑچڑاپن یا جلد مایوسی محسوس کی۔"
+    },
+    {
+      "id": "DP-303",
+      "category": "irritability",
+      "reverse": true,
+      "urgent": false,
+      "text": "عام ذمہ داریاں سنبھالتے ہوئے، چڑچڑاپن میں ردعمل سے پہلے رک سکا/سکی۔"
+    },
+    {
+      "id": "DP-304",
+      "category": "irritability",
+      "reverse": false,
+      "urgent": false,
+      "text": "مایوس کن واقعے کے بعد، چھوٹی مشکلات نے معمول سے زیادہ غصہ پیدا کیا۔"
+    },
+    {
+      "id": "DP-305",
+      "category": "irritability",
+      "reverse": true,
+      "urgent": false,
+      "text": "بغیر طے شدہ مصروفیت کے وقت، میں نے مایوسی کو تعلقات پر حاوی ہوئے بغیر سنبھالا۔"
+    },
+    {
+      "id": "DP-306",
+      "category": "irritability",
+      "reverse": false,
+      "urgent": false,
+      "text": "کام یا تعلیم کے دوران، میں نے غیر معمولی چڑچڑاپن یا جلد مایوسی محسوس کی۔"
+    },
+    {
+      "id": "DP-307",
+      "category": "irritability",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنہائی میں وقت گزارتے ہوئے، چڑچڑاپن میں ردعمل سے پہلے رک سکا/سکی۔"
+    },
+    {
+      "id": "DP-308",
+      "category": "irritability",
+      "reverse": false,
+      "urgent": false,
+      "text": "اپنے جاننے والوں کے درمیان، چھوٹی مشکلات نے معمول سے زیادہ غصہ پیدا کیا۔"
+    },
+    {
+      "id": "DP-309",
+      "category": "irritability",
+      "reverse": true,
+      "urgent": false,
+      "text": "کسی پسندیدہ سرگرمی کے بارے میں سوچتے ہوئے، میں نے مایوسی کو تعلقات پر حاوی ہوئے بغیر سنبھالا۔"
+    },
+    {
+      "id": "DP-310",
+      "category": "irritability",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اختتام کے قریب، میں نے غیر معمولی چڑچڑاپن یا جلد مایوسی محسوس کی۔"
+    },
+    {
+      "id": "DP-311",
+      "category": "irritability",
+      "reverse": true,
+      "urgent": false,
+      "text": "خراب نیند والی رات کے بعد، چڑچڑاپن میں ردعمل سے پہلے رک سکا/سکی۔"
+    },
+    {
+      "id": "DP-312",
+      "category": "irritability",
+      "reverse": false,
+      "urgent": false,
+      "text": "توجہ مانگنے والے کام کے دوران، چھوٹی مشکلات نے معمول سے زیادہ غصہ پیدا کیا۔"
+    },
+    {
+      "id": "DP-313",
+      "category": "irritability",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ غلطیوں کے بارے میں سوچتے ہوئے، میں نے مایوسی کو تعلقات پر حاوی ہوئے بغیر سنبھالا۔"
+    },
+    {
+      "id": "DP-314",
+      "category": "irritability",
+      "reverse": false,
+      "urgent": false,
+      "text": "مستقبل کی طرف دیکھتے ہوئے، میں نے غیر معمولی چڑچڑاپن یا جلد مایوسی محسوس کی۔"
+    },
+    {
+      "id": "DP-315",
+      "category": "irritability",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب کسی نے تعاون پیش کیا، چڑچڑاپن میں ردعمل سے پہلے رک سکا/سکی۔"
+    },
+    {
+      "id": "DP-316",
+      "category": "irritability",
+      "reverse": false,
+      "urgent": false,
+      "text": "سادہ انتخاب کرتے ہوئے، چھوٹی مشکلات نے معمول سے زیادہ غصہ پیدا کیا۔"
+    },
+    {
+      "id": "DP-317",
+      "category": "irritability",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب مجھے اپنی نگہداشت کرنی تھی، میں نے مایوسی کو تعلقات پر حاوی ہوئے بغیر سنبھالا۔"
+    },
+    {
+      "id": "DP-318",
+      "category": "irritability",
+      "reverse": false,
+      "urgent": false,
+      "text": "گفتگو کے دوران، میں نے غیر معمولی چڑچڑاپن یا جلد مایوسی محسوس کی۔"
+    },
+    {
+      "id": "DP-319",
+      "category": "irritability",
+      "reverse": true,
+      "urgent": false,
+      "text": "منصوبے بدلنے پر، چڑچڑاپن میں ردعمل سے پہلے رک سکا/سکی۔"
+    },
+    {
+      "id": "DP-320",
+      "category": "irritability",
+      "reverse": false,
+      "urgent": false,
+      "text": "چھوٹا کام مکمل کرنے کے بعد، چھوٹی مشکلات نے معمول سے زیادہ غصہ پیدا کیا۔"
+    },
+    {
+      "id": "DP-321",
+      "category": "irritability",
+      "reverse": true,
+      "urgent": false,
+      "text": "اپنا معمول جاری رکھتے ہوئے، میں نے مایوسی کو تعلقات پر حاوی ہوئے بغیر سنبھالا۔"
+    },
+    {
+      "id": "DP-322",
+      "category": "irritability",
+      "reverse": false,
+      "urgent": false,
+      "text": "جسمانی بے آرامی ظاہر ہونے پر، میں نے غیر معمولی چڑچڑاپن یا جلد مایوسی محسوس کی۔"
+    },
+    {
+      "id": "DP-323",
+      "category": "irritability",
+      "reverse": true,
+      "urgent": false,
+      "text": "دوسروں سے اپنا موازنہ کرتے ہوئے، چڑچڑاپن میں ردعمل سے پہلے رک سکا/سکی۔"
+    },
+    {
+      "id": "DP-324",
+      "category": "irritability",
+      "reverse": false,
+      "urgent": false,
+      "text": "آرام کی کوشش کرتے ہوئے، چھوٹی مشکلات نے معمول سے زیادہ غصہ پیدا کیا۔"
+    },
+    {
+      "id": "DP-325",
+      "category": "irritability",
+      "reverse": true,
+      "urgent": false,
+      "text": "اس وقت بھی جب دوسرے میرے احساسات نہیں دیکھ سکتے تھے، میں نے مایوسی کو تعلقات پر حاوی ہوئے بغیر سنبھالا۔"
+    },
+    {
+      "id": "DP-326",
+      "category": "withdrawal",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ دو ہفتوں کے دوران، میں کم از کم ایک معاون شخص سے تعلق میں رہا/رہی۔"
+    },
+    {
+      "id": "DP-327",
+      "category": "withdrawal",
+      "reverse": false,
+      "urgent": false,
+      "text": "زیادہ تر صبحوں میں، میں لوگوں سے اس وقت بھی بچا/بچی جب تعاون مدد دے سکتا تھا۔"
+    },
+    {
+      "id": "DP-328",
+      "category": "withdrawal",
+      "reverse": true,
+      "urgent": false,
+      "text": "عام ذمہ داریاں سنبھالتے ہوئے، میں مکمل کنارہ کشی کے بغیر کچھ سماجی رابطہ برداشت کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-329",
+      "category": "withdrawal",
+      "reverse": false,
+      "urgent": false,
+      "text": "مایوس کن واقعے کے بعد، میں اپنے اہم تعلقات سے دور ہو گیا/گئی۔"
+    },
+    {
+      "id": "DP-330",
+      "category": "withdrawal",
+      "reverse": true,
+      "urgent": false,
+      "text": "بغیر طے شدہ مصروفیت کے وقت، میں کم از کم ایک معاون شخص سے تعلق میں رہا/رہی۔"
+    },
+    {
+      "id": "DP-331",
+      "category": "withdrawal",
+      "reverse": false,
+      "urgent": false,
+      "text": "کام یا تعلیم کے دوران، میں لوگوں سے اس وقت بھی بچا/بچی جب تعاون مدد دے سکتا تھا۔"
+    },
+    {
+      "id": "DP-332",
+      "category": "withdrawal",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنہائی میں وقت گزارتے ہوئے، میں مکمل کنارہ کشی کے بغیر کچھ سماجی رابطہ برداشت کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-333",
+      "category": "withdrawal",
+      "reverse": false,
+      "urgent": false,
+      "text": "اپنے جاننے والوں کے درمیان، میں اپنے اہم تعلقات سے دور ہو گیا/گئی۔"
+    },
+    {
+      "id": "DP-334",
+      "category": "withdrawal",
+      "reverse": true,
+      "urgent": false,
+      "text": "کسی پسندیدہ سرگرمی کے بارے میں سوچتے ہوئے، میں کم از کم ایک معاون شخص سے تعلق میں رہا/رہی۔"
+    },
+    {
+      "id": "DP-335",
+      "category": "withdrawal",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اختتام کے قریب، میں لوگوں سے اس وقت بھی بچا/بچی جب تعاون مدد دے سکتا تھا۔"
+    },
+    {
+      "id": "DP-336",
+      "category": "withdrawal",
+      "reverse": true,
+      "urgent": false,
+      "text": "خراب نیند والی رات کے بعد، میں مکمل کنارہ کشی کے بغیر کچھ سماجی رابطہ برداشت کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-337",
+      "category": "withdrawal",
+      "reverse": false,
+      "urgent": false,
+      "text": "توجہ مانگنے والے کام کے دوران، میں اپنے اہم تعلقات سے دور ہو گیا/گئی۔"
+    },
+    {
+      "id": "DP-338",
+      "category": "withdrawal",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ غلطیوں کے بارے میں سوچتے ہوئے، میں کم از کم ایک معاون شخص سے تعلق میں رہا/رہی۔"
+    },
+    {
+      "id": "DP-339",
+      "category": "withdrawal",
+      "reverse": false,
+      "urgent": false,
+      "text": "مستقبل کی طرف دیکھتے ہوئے، میں لوگوں سے اس وقت بھی بچا/بچی جب تعاون مدد دے سکتا تھا۔"
+    },
+    {
+      "id": "DP-340",
+      "category": "withdrawal",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب کسی نے تعاون پیش کیا، میں مکمل کنارہ کشی کے بغیر کچھ سماجی رابطہ برداشت کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-341",
+      "category": "withdrawal",
+      "reverse": false,
+      "urgent": false,
+      "text": "سادہ انتخاب کرتے ہوئے، میں اپنے اہم تعلقات سے دور ہو گیا/گئی۔"
+    },
+    {
+      "id": "DP-342",
+      "category": "withdrawal",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب مجھے اپنی نگہداشت کرنی تھی، میں کم از کم ایک معاون شخص سے تعلق میں رہا/رہی۔"
+    },
+    {
+      "id": "DP-343",
+      "category": "withdrawal",
+      "reverse": false,
+      "urgent": false,
+      "text": "گفتگو کے دوران، میں لوگوں سے اس وقت بھی بچا/بچی جب تعاون مدد دے سکتا تھا۔"
+    },
+    {
+      "id": "DP-344",
+      "category": "withdrawal",
+      "reverse": true,
+      "urgent": false,
+      "text": "منصوبے بدلنے پر، میں مکمل کنارہ کشی کے بغیر کچھ سماجی رابطہ برداشت کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-345",
+      "category": "withdrawal",
+      "reverse": false,
+      "urgent": false,
+      "text": "چھوٹا کام مکمل کرنے کے بعد، میں اپنے اہم تعلقات سے دور ہو گیا/گئی۔"
+    },
+    {
+      "id": "DP-346",
+      "category": "withdrawal",
+      "reverse": true,
+      "urgent": false,
+      "text": "اپنا معمول جاری رکھتے ہوئے، میں کم از کم ایک معاون شخص سے تعلق میں رہا/رہی۔"
+    },
+    {
+      "id": "DP-347",
+      "category": "withdrawal",
+      "reverse": false,
+      "urgent": false,
+      "text": "جسمانی بے آرامی ظاہر ہونے پر، میں لوگوں سے اس وقت بھی بچا/بچی جب تعاون مدد دے سکتا تھا۔"
+    },
+    {
+      "id": "DP-348",
+      "category": "withdrawal",
+      "reverse": true,
+      "urgent": false,
+      "text": "دوسروں سے اپنا موازنہ کرتے ہوئے، میں مکمل کنارہ کشی کے بغیر کچھ سماجی رابطہ برداشت کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-349",
+      "category": "withdrawal",
+      "reverse": false,
+      "urgent": false,
+      "text": "آرام کی کوشش کرتے ہوئے، میں اپنے اہم تعلقات سے دور ہو گیا/گئی۔"
+    },
+    {
+      "id": "DP-350",
+      "category": "withdrawal",
+      "reverse": true,
+      "urgent": false,
+      "text": "اس وقت بھی جب دوسرے میرے احساسات نہیں دیکھ سکتے تھے، میں کم از کم ایک معاون شخص سے تعلق میں رہا/رہی۔"
+    },
+    {
+      "id": "DP-351",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ دو ہفتوں کے دوران، میں ضروری ذمہ داریاں مناسب تسلسل سے سنبھال سکا/سکی۔"
+    },
+    {
+      "id": "DP-352",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "زیادہ تر صبحوں میں، میرے مزاج نے کام، تعلیم، گھر یا ذاتی ذمہ داریوں میں خلل ڈالا۔"
+    },
+    {
+      "id": "DP-353",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "عام ذمہ داریاں سنبھالتے ہوئے، میرے معمول نے بنیادی کام مکمل کرنے کے لیے کافی ترتیب دی۔"
+    },
+    {
+      "id": "DP-354",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "مایوس کن واقعے کے بعد، عام ذمہ داریاں برقرار رکھنا مشکل ہو گیا۔"
+    },
+    {
+      "id": "DP-355",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "بغیر طے شدہ مصروفیت کے وقت، میں ضروری ذمہ داریاں مناسب تسلسل سے سنبھال سکا/سکی۔"
+    },
+    {
+      "id": "DP-356",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "کام یا تعلیم کے دوران، میرے مزاج نے کام، تعلیم، گھر یا ذاتی ذمہ داریوں میں خلل ڈالا۔"
+    },
+    {
+      "id": "DP-357",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنہائی میں وقت گزارتے ہوئے، میرے معمول نے بنیادی کام مکمل کرنے کے لیے کافی ترتیب دی۔"
+    },
+    {
+      "id": "DP-358",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "اپنے جاننے والوں کے درمیان، عام ذمہ داریاں برقرار رکھنا مشکل ہو گیا۔"
+    },
+    {
+      "id": "DP-359",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "کسی پسندیدہ سرگرمی کے بارے میں سوچتے ہوئے، میں ضروری ذمہ داریاں مناسب تسلسل سے سنبھال سکا/سکی۔"
+    },
+    {
+      "id": "DP-360",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اختتام کے قریب، میرے مزاج نے کام، تعلیم، گھر یا ذاتی ذمہ داریوں میں خلل ڈالا۔"
+    },
+    {
+      "id": "DP-361",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "خراب نیند والی رات کے بعد، میرے معمول نے بنیادی کام مکمل کرنے کے لیے کافی ترتیب دی۔"
+    },
+    {
+      "id": "DP-362",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "توجہ مانگنے والے کام کے دوران، عام ذمہ داریاں برقرار رکھنا مشکل ہو گیا۔"
+    },
+    {
+      "id": "DP-363",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ غلطیوں کے بارے میں سوچتے ہوئے، میں ضروری ذمہ داریاں مناسب تسلسل سے سنبھال سکا/سکی۔"
+    },
+    {
+      "id": "DP-364",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "مستقبل کی طرف دیکھتے ہوئے، میرے مزاج نے کام، تعلیم، گھر یا ذاتی ذمہ داریوں میں خلل ڈالا۔"
+    },
+    {
+      "id": "DP-365",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب کسی نے تعاون پیش کیا، میرے معمول نے بنیادی کام مکمل کرنے کے لیے کافی ترتیب دی۔"
+    },
+    {
+      "id": "DP-366",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "سادہ انتخاب کرتے ہوئے، عام ذمہ داریاں برقرار رکھنا مشکل ہو گیا۔"
+    },
+    {
+      "id": "DP-367",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب مجھے اپنی نگہداشت کرنی تھی، میں ضروری ذمہ داریاں مناسب تسلسل سے سنبھال سکا/سکی۔"
+    },
+    {
+      "id": "DP-368",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "گفتگو کے دوران، میرے مزاج نے کام، تعلیم، گھر یا ذاتی ذمہ داریوں میں خلل ڈالا۔"
+    },
+    {
+      "id": "DP-369",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "منصوبے بدلنے پر، میرے معمول نے بنیادی کام مکمل کرنے کے لیے کافی ترتیب دی۔"
+    },
+    {
+      "id": "DP-370",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "چھوٹا کام مکمل کرنے کے بعد، عام ذمہ داریاں برقرار رکھنا مشکل ہو گیا۔"
+    },
+    {
+      "id": "DP-371",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "اپنا معمول جاری رکھتے ہوئے، میں ضروری ذمہ داریاں مناسب تسلسل سے سنبھال سکا/سکی۔"
+    },
+    {
+      "id": "DP-372",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "جسمانی بے آرامی ظاہر ہونے پر، میرے مزاج نے کام، تعلیم، گھر یا ذاتی ذمہ داریوں میں خلل ڈالا۔"
+    },
+    {
+      "id": "DP-373",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "دوسروں سے اپنا موازنہ کرتے ہوئے، میرے معمول نے بنیادی کام مکمل کرنے کے لیے کافی ترتیب دی۔"
+    },
+    {
+      "id": "DP-374",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "آرام کی کوشش کرتے ہوئے، عام ذمہ داریاں برقرار رکھنا مشکل ہو گیا۔"
+    },
+    {
+      "id": "DP-375",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "اس وقت بھی جب دوسرے میرے احساسات نہیں دیکھ سکتے تھے، میں ضروری ذمہ داریاں مناسب تسلسل سے سنبھال سکا/سکی۔"
+    },
+    {
+      "id": "DP-376",
+      "category": "self_care",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ دو ہفتوں کے دوران، میں نے صفائی، لباس، غذا یا دوا جیسی بنیادی نگہداشت برقرار رکھی۔"
+    },
+    {
+      "id": "DP-377",
+      "category": "self_care",
+      "reverse": false,
+      "urgent": false,
+      "text": "زیادہ تر صبحوں میں، بنیادی خود نگہداشت برقرار رکھنا بہت مشکل لگا۔"
+    },
+    {
+      "id": "DP-378",
+      "category": "self_care",
+      "reverse": true,
+      "urgent": false,
+      "text": "عام ذمہ داریاں سنبھالتے ہوئے، میں نے بنیادی جسمانی نگہداشت کو کوشش کے قابل سمجھا۔"
+    },
+    {
+      "id": "DP-379",
+      "category": "self_care",
+      "reverse": false,
+      "urgent": false,
+      "text": "مایوس کن واقعے کے بعد، عمل کی طاقت نہ ہونے کے باعث ذاتی ضروریات نظر انداز ہوئیں۔"
+    },
+    {
+      "id": "DP-380",
+      "category": "self_care",
+      "reverse": true,
+      "urgent": false,
+      "text": "بغیر طے شدہ مصروفیت کے وقت، میں نے صفائی، لباس، غذا یا دوا جیسی بنیادی نگہداشت برقرار رکھی۔"
+    },
+    {
+      "id": "DP-381",
+      "category": "self_care",
+      "reverse": false,
+      "urgent": false,
+      "text": "کام یا تعلیم کے دوران، بنیادی خود نگہداشت برقرار رکھنا بہت مشکل لگا۔"
+    },
+    {
+      "id": "DP-382",
+      "category": "self_care",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنہائی میں وقت گزارتے ہوئے، میں نے بنیادی جسمانی نگہداشت کو کوشش کے قابل سمجھا۔"
+    },
+    {
+      "id": "DP-383",
+      "category": "self_care",
+      "reverse": false,
+      "urgent": false,
+      "text": "اپنے جاننے والوں کے درمیان، عمل کی طاقت نہ ہونے کے باعث ذاتی ضروریات نظر انداز ہوئیں۔"
+    },
+    {
+      "id": "DP-384",
+      "category": "self_care",
+      "reverse": true,
+      "urgent": false,
+      "text": "کسی پسندیدہ سرگرمی کے بارے میں سوچتے ہوئے، میں نے صفائی، لباس، غذا یا دوا جیسی بنیادی نگہداشت برقرار رکھی۔"
+    },
+    {
+      "id": "DP-385",
+      "category": "self_care",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اختتام کے قریب، بنیادی خود نگہداشت برقرار رکھنا بہت مشکل لگا۔"
+    },
+    {
+      "id": "DP-386",
+      "category": "self_care",
+      "reverse": true,
+      "urgent": false,
+      "text": "خراب نیند والی رات کے بعد، میں نے بنیادی جسمانی نگہداشت کو کوشش کے قابل سمجھا۔"
+    },
+    {
+      "id": "DP-387",
+      "category": "self_care",
+      "reverse": false,
+      "urgent": false,
+      "text": "توجہ مانگنے والے کام کے دوران، عمل کی طاقت نہ ہونے کے باعث ذاتی ضروریات نظر انداز ہوئیں۔"
+    },
+    {
+      "id": "DP-388",
+      "category": "self_care",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ غلطیوں کے بارے میں سوچتے ہوئے، میں نے صفائی، لباس، غذا یا دوا جیسی بنیادی نگہداشت برقرار رکھی۔"
+    },
+    {
+      "id": "DP-389",
+      "category": "self_care",
+      "reverse": false,
+      "urgent": false,
+      "text": "مستقبل کی طرف دیکھتے ہوئے، بنیادی خود نگہداشت برقرار رکھنا بہت مشکل لگا۔"
+    },
+    {
+      "id": "DP-390",
+      "category": "self_care",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب کسی نے تعاون پیش کیا، میں نے بنیادی جسمانی نگہداشت کو کوشش کے قابل سمجھا۔"
+    },
+    {
+      "id": "DP-391",
+      "category": "self_care",
+      "reverse": false,
+      "urgent": false,
+      "text": "سادہ انتخاب کرتے ہوئے، عمل کی طاقت نہ ہونے کے باعث ذاتی ضروریات نظر انداز ہوئیں۔"
+    },
+    {
+      "id": "DP-392",
+      "category": "self_care",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب مجھے اپنی نگہداشت کرنی تھی، میں نے صفائی، لباس، غذا یا دوا جیسی بنیادی نگہداشت برقرار رکھی۔"
+    },
+    {
+      "id": "DP-393",
+      "category": "self_care",
+      "reverse": false,
+      "urgent": false,
+      "text": "گفتگو کے دوران، بنیادی خود نگہداشت برقرار رکھنا بہت مشکل لگا۔"
+    },
+    {
+      "id": "DP-394",
+      "category": "self_care",
+      "reverse": true,
+      "urgent": false,
+      "text": "منصوبے بدلنے پر، میں نے بنیادی جسمانی نگہداشت کو کوشش کے قابل سمجھا۔"
+    },
+    {
+      "id": "DP-395",
+      "category": "self_care",
+      "reverse": false,
+      "urgent": false,
+      "text": "چھوٹا کام مکمل کرنے کے بعد، عمل کی طاقت نہ ہونے کے باعث ذاتی ضروریات نظر انداز ہوئیں۔"
+    },
+    {
+      "id": "DP-396",
+      "category": "self_care",
+      "reverse": true,
+      "urgent": false,
+      "text": "اپنا معمول جاری رکھتے ہوئے، میں نے صفائی، لباس، غذا یا دوا جیسی بنیادی نگہداشت برقرار رکھی۔"
+    },
+    {
+      "id": "DP-397",
+      "category": "self_care",
+      "reverse": false,
+      "urgent": false,
+      "text": "جسمانی بے آرامی ظاہر ہونے پر، بنیادی خود نگہداشت برقرار رکھنا بہت مشکل لگا۔"
+    },
+    {
+      "id": "DP-398",
+      "category": "self_care",
+      "reverse": true,
+      "urgent": false,
+      "text": "دوسروں سے اپنا موازنہ کرتے ہوئے، میں نے بنیادی جسمانی نگہداشت کو کوشش کے قابل سمجھا۔"
+    },
+    {
+      "id": "DP-399",
+      "category": "self_care",
+      "reverse": false,
+      "urgent": false,
+      "text": "آرام کی کوشش کرتے ہوئے، عمل کی طاقت نہ ہونے کے باعث ذاتی ضروریات نظر انداز ہوئیں۔"
+    },
+    {
+      "id": "DP-400",
+      "category": "self_care",
+      "reverse": true,
+      "urgent": false,
+      "text": "اس وقت بھی جب دوسرے میرے احساسات نہیں دیکھ سکتے تھے، میں نے صفائی، لباس، غذا یا دوا جیسی بنیادی نگہداشت برقرار رکھی۔"
+    },
+    {
+      "id": "DP-401",
+      "category": "physical",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ دو ہفتوں کے دوران، میرے جسم نے مناسب آرام کے اوقات محسوس کیے۔"
+    },
+    {
+      "id": "DP-402",
+      "category": "physical",
+      "reverse": false,
+      "urgent": false,
+      "text": "زیادہ تر صبحوں میں، غیر واضح درد، بوجھ یا جسمانی بے آرامی نے مجھے پریشان کیا۔"
+    },
+    {
+      "id": "DP-403",
+      "category": "physical",
+      "reverse": true,
+      "urgent": false,
+      "text": "عام ذمہ داریاں سنبھالتے ہوئے، جسمانی بے آرامی میری توجہ پر مکمل طور پر حاوی نہیں ہوئی۔"
+    },
+    {
+      "id": "DP-404",
+      "category": "physical",
+      "reverse": false,
+      "urgent": false,
+      "text": "مایوس کن واقعے کے بعد، میرا جسم بوجھل یا مسلسل تناؤ میں محسوس ہوا۔"
+    },
+    {
+      "id": "DP-405",
+      "category": "physical",
+      "reverse": true,
+      "urgent": false,
+      "text": "بغیر طے شدہ مصروفیت کے وقت، میرے جسم نے مناسب آرام کے اوقات محسوس کیے۔"
+    },
+    {
+      "id": "DP-406",
+      "category": "physical",
+      "reverse": false,
+      "urgent": false,
+      "text": "کام یا تعلیم کے دوران، غیر واضح درد، بوجھ یا جسمانی بے آرامی نے مجھے پریشان کیا۔"
+    },
+    {
+      "id": "DP-407",
+      "category": "physical",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنہائی میں وقت گزارتے ہوئے، جسمانی بے آرامی میری توجہ پر مکمل طور پر حاوی نہیں ہوئی۔"
+    },
+    {
+      "id": "DP-408",
+      "category": "physical",
+      "reverse": false,
+      "urgent": false,
+      "text": "اپنے جاننے والوں کے درمیان، میرا جسم بوجھل یا مسلسل تناؤ میں محسوس ہوا۔"
+    },
+    {
+      "id": "DP-409",
+      "category": "physical",
+      "reverse": true,
+      "urgent": false,
+      "text": "کسی پسندیدہ سرگرمی کے بارے میں سوچتے ہوئے، میرے جسم نے مناسب آرام کے اوقات محسوس کیے۔"
+    },
+    {
+      "id": "DP-410",
+      "category": "physical",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اختتام کے قریب، غیر واضح درد، بوجھ یا جسمانی بے آرامی نے مجھے پریشان کیا۔"
+    },
+    {
+      "id": "DP-411",
+      "category": "physical",
+      "reverse": true,
+      "urgent": false,
+      "text": "خراب نیند والی رات کے بعد، جسمانی بے آرامی میری توجہ پر مکمل طور پر حاوی نہیں ہوئی۔"
+    },
+    {
+      "id": "DP-412",
+      "category": "physical",
+      "reverse": false,
+      "urgent": false,
+      "text": "توجہ مانگنے والے کام کے دوران، میرا جسم بوجھل یا مسلسل تناؤ میں محسوس ہوا۔"
+    },
+    {
+      "id": "DP-413",
+      "category": "physical",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ غلطیوں کے بارے میں سوچتے ہوئے، میرے جسم نے مناسب آرام کے اوقات محسوس کیے۔"
+    },
+    {
+      "id": "DP-414",
+      "category": "physical",
+      "reverse": false,
+      "urgent": false,
+      "text": "مستقبل کی طرف دیکھتے ہوئے، غیر واضح درد، بوجھ یا جسمانی بے آرامی نے مجھے پریشان کیا۔"
+    },
+    {
+      "id": "DP-415",
+      "category": "physical",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب کسی نے تعاون پیش کیا، جسمانی بے آرامی میری توجہ پر مکمل طور پر حاوی نہیں ہوئی۔"
+    },
+    {
+      "id": "DP-416",
+      "category": "physical",
+      "reverse": false,
+      "urgent": false,
+      "text": "سادہ انتخاب کرتے ہوئے، میرا جسم بوجھل یا مسلسل تناؤ میں محسوس ہوا۔"
+    },
+    {
+      "id": "DP-417",
+      "category": "physical",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب مجھے اپنی نگہداشت کرنی تھی، میرے جسم نے مناسب آرام کے اوقات محسوس کیے۔"
+    },
+    {
+      "id": "DP-418",
+      "category": "physical",
+      "reverse": false,
+      "urgent": false,
+      "text": "گفتگو کے دوران، غیر واضح درد، بوجھ یا جسمانی بے آرامی نے مجھے پریشان کیا۔"
+    },
+    {
+      "id": "DP-419",
+      "category": "physical",
+      "reverse": true,
+      "urgent": false,
+      "text": "منصوبے بدلنے پر، جسمانی بے آرامی میری توجہ پر مکمل طور پر حاوی نہیں ہوئی۔"
+    },
+    {
+      "id": "DP-420",
+      "category": "physical",
+      "reverse": false,
+      "urgent": false,
+      "text": "چھوٹا کام مکمل کرنے کے بعد، میرا جسم بوجھل یا مسلسل تناؤ میں محسوس ہوا۔"
+    },
+    {
+      "id": "DP-421",
+      "category": "physical",
+      "reverse": true,
+      "urgent": false,
+      "text": "اپنا معمول جاری رکھتے ہوئے، میرے جسم نے مناسب آرام کے اوقات محسوس کیے۔"
+    },
+    {
+      "id": "DP-422",
+      "category": "physical",
+      "reverse": false,
+      "urgent": false,
+      "text": "جسمانی بے آرامی ظاہر ہونے پر، غیر واضح درد، بوجھ یا جسمانی بے آرامی نے مجھے پریشان کیا۔"
+    },
+    {
+      "id": "DP-423",
+      "category": "physical",
+      "reverse": true,
+      "urgent": false,
+      "text": "دوسروں سے اپنا موازنہ کرتے ہوئے، جسمانی بے آرامی میری توجہ پر مکمل طور پر حاوی نہیں ہوئی۔"
+    },
+    {
+      "id": "DP-424",
+      "category": "physical",
+      "reverse": false,
+      "urgent": false,
+      "text": "آرام کی کوشش کرتے ہوئے، میرا جسم بوجھل یا مسلسل تناؤ میں محسوس ہوا۔"
+    },
+    {
+      "id": "DP-425",
+      "category": "physical",
+      "reverse": true,
+      "urgent": false,
+      "text": "اس وقت بھی جب دوسرے میرے احساسات نہیں دیکھ سکتے تھے، میرے جسم نے مناسب آرام کے اوقات محسوس کیے۔"
+    },
+    {
+      "id": "DP-426",
+      "category": "rumination",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ دو ہفتوں کے دوران، میں بار بار آنے والے منفی خیالات سے توجہ ہٹا سکا/سکی۔"
+    },
+    {
+      "id": "DP-427",
+      "category": "rumination",
+      "reverse": false,
+      "urgent": false,
+      "text": "زیادہ تر صبحوں میں، وہی تکلیف دہ خیالات طویل وقت تک دہراتے رہے۔"
+    },
+    {
+      "id": "DP-428",
+      "category": "rumination",
+      "reverse": true,
+      "urgent": false,
+      "text": "عام ذمہ داریاں سنبھالتے ہوئے، میں نے پہچانا کہ تکلیف دہ خیال لازماً حقیقت نہیں۔"
+    },
+    {
+      "id": "DP-429",
+      "category": "rumination",
+      "reverse": false,
+      "urgent": false,
+      "text": "مایوس کن واقعے کے بعد، میں ماضی یا اپنے بارے میں منفی سوچ میں پھنس گیا/گئی۔"
+    },
+    {
+      "id": "DP-430",
+      "category": "rumination",
+      "reverse": true,
+      "urgent": false,
+      "text": "بغیر طے شدہ مصروفیت کے وقت، میں بار بار آنے والے منفی خیالات سے توجہ ہٹا سکا/سکی۔"
+    },
+    {
+      "id": "DP-431",
+      "category": "rumination",
+      "reverse": false,
+      "urgent": false,
+      "text": "کام یا تعلیم کے دوران، وہی تکلیف دہ خیالات طویل وقت تک دہراتے رہے۔"
+    },
+    {
+      "id": "DP-432",
+      "category": "rumination",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنہائی میں وقت گزارتے ہوئے، میں نے پہچانا کہ تکلیف دہ خیال لازماً حقیقت نہیں۔"
+    },
+    {
+      "id": "DP-433",
+      "category": "rumination",
+      "reverse": false,
+      "urgent": false,
+      "text": "اپنے جاننے والوں کے درمیان، میں ماضی یا اپنے بارے میں منفی سوچ میں پھنس گیا/گئی۔"
+    },
+    {
+      "id": "DP-434",
+      "category": "rumination",
+      "reverse": true,
+      "urgent": false,
+      "text": "کسی پسندیدہ سرگرمی کے بارے میں سوچتے ہوئے، میں بار بار آنے والے منفی خیالات سے توجہ ہٹا سکا/سکی۔"
+    },
+    {
+      "id": "DP-435",
+      "category": "rumination",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اختتام کے قریب، وہی تکلیف دہ خیالات طویل وقت تک دہراتے رہے۔"
+    },
+    {
+      "id": "DP-436",
+      "category": "rumination",
+      "reverse": true,
+      "urgent": false,
+      "text": "خراب نیند والی رات کے بعد، میں نے پہچانا کہ تکلیف دہ خیال لازماً حقیقت نہیں۔"
+    },
+    {
+      "id": "DP-437",
+      "category": "rumination",
+      "reverse": false,
+      "urgent": false,
+      "text": "توجہ مانگنے والے کام کے دوران، میں ماضی یا اپنے بارے میں منفی سوچ میں پھنس گیا/گئی۔"
+    },
+    {
+      "id": "DP-438",
+      "category": "rumination",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ غلطیوں کے بارے میں سوچتے ہوئے، میں بار بار آنے والے منفی خیالات سے توجہ ہٹا سکا/سکی۔"
+    },
+    {
+      "id": "DP-439",
+      "category": "rumination",
+      "reverse": false,
+      "urgent": false,
+      "text": "مستقبل کی طرف دیکھتے ہوئے، وہی تکلیف دہ خیالات طویل وقت تک دہراتے رہے۔"
+    },
+    {
+      "id": "DP-440",
+      "category": "rumination",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب کسی نے تعاون پیش کیا، میں نے پہچانا کہ تکلیف دہ خیال لازماً حقیقت نہیں۔"
+    },
+    {
+      "id": "DP-441",
+      "category": "rumination",
+      "reverse": false,
+      "urgent": false,
+      "text": "سادہ انتخاب کرتے ہوئے، میں ماضی یا اپنے بارے میں منفی سوچ میں پھنس گیا/گئی۔"
+    },
+    {
+      "id": "DP-442",
+      "category": "rumination",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب مجھے اپنی نگہداشت کرنی تھی، میں بار بار آنے والے منفی خیالات سے توجہ ہٹا سکا/سکی۔"
+    },
+    {
+      "id": "DP-443",
+      "category": "rumination",
+      "reverse": false,
+      "urgent": false,
+      "text": "گفتگو کے دوران، وہی تکلیف دہ خیالات طویل وقت تک دہراتے رہے۔"
+    },
+    {
+      "id": "DP-444",
+      "category": "rumination",
+      "reverse": true,
+      "urgent": false,
+      "text": "منصوبے بدلنے پر، میں نے پہچانا کہ تکلیف دہ خیال لازماً حقیقت نہیں۔"
+    },
+    {
+      "id": "DP-445",
+      "category": "rumination",
+      "reverse": false,
+      "urgent": false,
+      "text": "چھوٹا کام مکمل کرنے کے بعد، میں ماضی یا اپنے بارے میں منفی سوچ میں پھنس گیا/گئی۔"
+    },
+    {
+      "id": "DP-446",
+      "category": "rumination",
+      "reverse": true,
+      "urgent": false,
+      "text": "اپنا معمول جاری رکھتے ہوئے، میں بار بار آنے والے منفی خیالات سے توجہ ہٹا سکا/سکی۔"
+    },
+    {
+      "id": "DP-447",
+      "category": "rumination",
+      "reverse": false,
+      "urgent": false,
+      "text": "جسمانی بے آرامی ظاہر ہونے پر، وہی تکلیف دہ خیالات طویل وقت تک دہراتے رہے۔"
+    },
+    {
+      "id": "DP-448",
+      "category": "rumination",
+      "reverse": true,
+      "urgent": false,
+      "text": "دوسروں سے اپنا موازنہ کرتے ہوئے، میں نے پہچانا کہ تکلیف دہ خیال لازماً حقیقت نہیں۔"
+    },
+    {
+      "id": "DP-449",
+      "category": "rumination",
+      "reverse": false,
+      "urgent": false,
+      "text": "آرام کی کوشش کرتے ہوئے، میں ماضی یا اپنے بارے میں منفی سوچ میں پھنس گیا/گئی۔"
+    },
+    {
+      "id": "DP-450",
+      "category": "rumination",
+      "reverse": true,
+      "urgent": false,
+      "text": "اس وقت بھی جب دوسرے میرے احساسات نہیں دیکھ سکتے تھے، میں بار بار آنے والے منفی خیالات سے توجہ ہٹا سکا/سکی۔"
+    },
+    {
+      "id": "DP-451",
+      "category": "emotional_expression",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ دو ہفتوں کے دوران، میں جذبات کو قابلِ انتظام انداز میں محسوس اور بیان کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-452",
+      "category": "emotional_expression",
+      "reverse": false,
+      "urgent": false,
+      "text": "زیادہ تر صبحوں میں، میں معمول سے زیادہ رویا/روئی یا رونے کے قریب محسوس کیا۔"
+    },
+    {
+      "id": "DP-453",
+      "category": "emotional_expression",
+      "reverse": true,
+      "urgent": false,
+      "text": "عام ذمہ داریاں سنبھالتے ہوئے، میرے جذبات مکمل سن ہونے کے بجائے موجود محسوس ہوئے۔"
+    },
+    {
+      "id": "DP-454",
+      "category": "emotional_expression",
+      "reverse": false,
+      "urgent": false,
+      "text": "مایوس کن واقعے کے بعد، میں جذباتی طور پر سن یا اپنے احساسات سے کٹا ہوا محسوس ہوا۔"
+    },
+    {
+      "id": "DP-455",
+      "category": "emotional_expression",
+      "reverse": true,
+      "urgent": false,
+      "text": "بغیر طے شدہ مصروفیت کے وقت، میں جذبات کو قابلِ انتظام انداز میں محسوس اور بیان کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-456",
+      "category": "emotional_expression",
+      "reverse": false,
+      "urgent": false,
+      "text": "کام یا تعلیم کے دوران، میں معمول سے زیادہ رویا/روئی یا رونے کے قریب محسوس کیا۔"
+    },
+    {
+      "id": "DP-457",
+      "category": "emotional_expression",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنہائی میں وقت گزارتے ہوئے، میرے جذبات مکمل سن ہونے کے بجائے موجود محسوس ہوئے۔"
+    },
+    {
+      "id": "DP-458",
+      "category": "emotional_expression",
+      "reverse": false,
+      "urgent": false,
+      "text": "اپنے جاننے والوں کے درمیان، میں جذباتی طور پر سن یا اپنے احساسات سے کٹا ہوا محسوس ہوا۔"
+    },
+    {
+      "id": "DP-459",
+      "category": "emotional_expression",
+      "reverse": true,
+      "urgent": false,
+      "text": "کسی پسندیدہ سرگرمی کے بارے میں سوچتے ہوئے، میں جذبات کو قابلِ انتظام انداز میں محسوس اور بیان کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-460",
+      "category": "emotional_expression",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اختتام کے قریب، میں معمول سے زیادہ رویا/روئی یا رونے کے قریب محسوس کیا۔"
+    },
+    {
+      "id": "DP-461",
+      "category": "emotional_expression",
+      "reverse": true,
+      "urgent": false,
+      "text": "خراب نیند والی رات کے بعد، میرے جذبات مکمل سن ہونے کے بجائے موجود محسوس ہوئے۔"
+    },
+    {
+      "id": "DP-462",
+      "category": "emotional_expression",
+      "reverse": false,
+      "urgent": false,
+      "text": "توجہ مانگنے والے کام کے دوران، میں جذباتی طور پر سن یا اپنے احساسات سے کٹا ہوا محسوس ہوا۔"
+    },
+    {
+      "id": "DP-463",
+      "category": "emotional_expression",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ غلطیوں کے بارے میں سوچتے ہوئے، میں جذبات کو قابلِ انتظام انداز میں محسوس اور بیان کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-464",
+      "category": "emotional_expression",
+      "reverse": false,
+      "urgent": false,
+      "text": "مستقبل کی طرف دیکھتے ہوئے، میں معمول سے زیادہ رویا/روئی یا رونے کے قریب محسوس کیا۔"
+    },
+    {
+      "id": "DP-465",
+      "category": "emotional_expression",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب کسی نے تعاون پیش کیا، میرے جذبات مکمل سن ہونے کے بجائے موجود محسوس ہوئے۔"
+    },
+    {
+      "id": "DP-466",
+      "category": "emotional_expression",
+      "reverse": false,
+      "urgent": false,
+      "text": "سادہ انتخاب کرتے ہوئے، میں جذباتی طور پر سن یا اپنے احساسات سے کٹا ہوا محسوس ہوا۔"
+    },
+    {
+      "id": "DP-467",
+      "category": "emotional_expression",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب مجھے اپنی نگہداشت کرنی تھی، میں جذبات کو قابلِ انتظام انداز میں محسوس اور بیان کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-468",
+      "category": "emotional_expression",
+      "reverse": false,
+      "urgent": false,
+      "text": "گفتگو کے دوران، میں معمول سے زیادہ رویا/روئی یا رونے کے قریب محسوس کیا۔"
+    },
+    {
+      "id": "DP-469",
+      "category": "emotional_expression",
+      "reverse": true,
+      "urgent": false,
+      "text": "منصوبے بدلنے پر، میرے جذبات مکمل سن ہونے کے بجائے موجود محسوس ہوئے۔"
+    },
+    {
+      "id": "DP-470",
+      "category": "emotional_expression",
+      "reverse": false,
+      "urgent": false,
+      "text": "چھوٹا کام مکمل کرنے کے بعد، میں جذباتی طور پر سن یا اپنے احساسات سے کٹا ہوا محسوس ہوا۔"
+    },
+    {
+      "id": "DP-471",
+      "category": "emotional_expression",
+      "reverse": true,
+      "urgent": false,
+      "text": "اپنا معمول جاری رکھتے ہوئے، میں جذبات کو قابلِ انتظام انداز میں محسوس اور بیان کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-472",
+      "category": "emotional_expression",
+      "reverse": false,
+      "urgent": false,
+      "text": "جسمانی بے آرامی ظاہر ہونے پر، میں معمول سے زیادہ رویا/روئی یا رونے کے قریب محسوس کیا۔"
+    },
+    {
+      "id": "DP-473",
+      "category": "emotional_expression",
+      "reverse": true,
+      "urgent": false,
+      "text": "دوسروں سے اپنا موازنہ کرتے ہوئے، میرے جذبات مکمل سن ہونے کے بجائے موجود محسوس ہوئے۔"
+    },
+    {
+      "id": "DP-474",
+      "category": "emotional_expression",
+      "reverse": false,
+      "urgent": false,
+      "text": "آرام کی کوشش کرتے ہوئے، میں جذباتی طور پر سن یا اپنے احساسات سے کٹا ہوا محسوس ہوا۔"
+    },
+    {
+      "id": "DP-475",
+      "category": "emotional_expression",
+      "reverse": true,
+      "urgent": false,
+      "text": "اس وقت بھی جب دوسرے میرے احساسات نہیں دیکھ سکتے تھے، میں جذبات کو قابلِ انتظام انداز میں محسوس اور بیان کر سکا/سکی۔"
+    },
+    {
+      "id": "DP-476",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "میں خود کو نقصان پہنچانے کے خیالات پر عمل سے محفوظ محسوس کرتا/کرتی رہا/رہی۔"
+    },
+    {
+      "id": "DP-477",
+      "category": "safety",
+      "reverse": false,
+      "urgent": true,
+      "text": "میرے ذہن میں خود کو نقصان پہنچانے کے خیالات آئے۔"
+    },
+    {
+      "id": "DP-478",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "میں کسی ایسے شخص یا خدمت کو جانتا/جانتی تھا/تھی جس سے غیر محفوظ محسوس ہونے پر فوراً رابطہ کیا جا سکے۔"
+    },
+    {
+      "id": "DP-479",
+      "category": "safety",
+      "reverse": false,
+      "urgent": true,
+      "text": "مجھے محسوس ہوا کہ شاید میں اپنے ساتھ محفوظ نہ رہوں۔"
+    },
+    {
+      "id": "DP-480",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "میں مشکل لمحے میں زندہ رہنے کی وجوہات پہچان سکا/سکی۔"
+    },
+    {
+      "id": "DP-481",
+      "category": "safety",
+      "reverse": false,
+      "urgent": true,
+      "text": "میرے ذہن میں یہ خیال آیا کہ مر جانا بہتر ہوگا۔"
+    },
+    {
+      "id": "DP-482",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "خود کو نقصان پہنچانے کے خیالات آنے پر میں کسی کو بتانے کے لیے تیار تھا/تھی۔"
+    },
+    {
+      "id": "DP-483",
+      "category": "safety",
+      "reverse": false,
+      "urgent": true,
+      "text": "میں نے سوچا کہ خود کو کس طرح نقصان پہنچا سکتا/سکتی ہوں۔"
+    },
+    {
+      "id": "DP-484",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "شدید پریشانی میں محفوظ جگہ یا معاون شخص کی طرف جا سکا/سکی۔"
+    },
+    {
+      "id": "DP-485",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "میں نے بحران یا ایمرجنسی رابطے کی معلومات دستیاب رکھیں۔"
+    },
+    {
+      "id": "DP-486",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "مجھے یقین تھا کہ عمل مؤخر کرنے اور مدد لینے سے شدید خواہش گزر سکتی ہے۔"
+    },
+    {
+      "id": "DP-487",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "میں نقصان پہنچانے والی چیزوں تک رسائی کم کر سکتا/سکتی تھا/تھی۔"
+    },
+    {
+      "id": "DP-488",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "میرے پاس کم از کم ایک تعلق تھا جو میری حفاظت میں مدد دیتا تھا۔"
+    },
+    {
+      "id": "DP-489",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "بحران میں میں کسی کو اپنے ساتھ رہنے کے لیے کہہ سکتا/سکتی تھا/تھی۔"
+    },
+    {
+      "id": "DP-490",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "ذاتی حفاظت غیر یقینی ہونے پر میں فوری مدد کو مناسب سمجھتا/سمجھتی تھا/تھی۔"
+    },
+    {
+      "id": "DP-491",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "مجھے معلوم تھا کہ قریب ترین ہنگامی مدد کہاں مل سکتی ہے۔"
+    },
+    {
+      "id": "DP-492",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "میں وہ انتباہی علامات پہچان سکتا/سکتی تھا/تھی جن پر فوری مدد ضروری ہے۔"
+    },
+    {
+      "id": "DP-493",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "میں شدید جذباتی تکلیف کے بارے میں ایمانداری سے بات کر سکتا/سکتی تھا/تھی۔"
+    },
+    {
+      "id": "DP-494",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "غیر محفوظ لمحے میں میں اکیلا نہ رہنے کا انتخاب کر سکتا/سکتی تھا/تھی۔"
+    },
+    {
+      "id": "DP-495",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "بحران میں تعاون سے رابطے کا ایک سادہ منصوبہ میرے پاس تھا۔"
+    },
+    {
+      "id": "DP-496",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "میں سمجھتا/سمجھتی تھا/تھی کہ ہنگامی مدد لینا ذاتی ناکامی نہیں۔"
+    },
+    {
+      "id": "DP-497",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "میں ایک وقت میں ایک مشکل لمحہ گزارنے پر توجہ دے سکتا/سکتی تھا/تھی۔"
+    },
+    {
+      "id": "DP-498",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "مجھے یقین تھا کہ میں حفاظت اور فوری تعاون کا حق دار ہوں۔"
+    },
+    {
+      "id": "DP-499",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "اپنی حفاظت غیر یقینی ہونے پر میں قابلِ اعتماد شخص کو بتا سکتا/سکتی تھا/تھی۔"
+    },
+    {
+      "id": "DP-500",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "میں جانتا/جانتی تھا/تھی کہ یہ سوالنامہ میری حفاظت کا فیصلہ نہیں کر سکتا۔"
+    }
+  ]
+}

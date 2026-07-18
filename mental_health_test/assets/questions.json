@@ -1,0 +1,3153 @@
+{
+  "meta": {
+    "title": "Mental Health & Wellbeing Check-In",
+    "description": "A private 500-statement wellbeing reflection across 20 related areas. It is not a diagnostic instrument.",
+    "scale": {
+      "min": 1,
+      "max": 10,
+      "minLabel": "Not at all true recently",
+      "maxLabel": "Very true recently"
+    },
+    "categories": [
+      {
+        "id": "mood",
+        "label": "Mood & Emotional Balance",
+        "icon": "🌤️"
+      },
+      {
+        "id": "anxiety",
+        "label": "Worry & Anxiety Load",
+        "icon": "🫧"
+      },
+      {
+        "id": "stress",
+        "label": "Stress & Pressure",
+        "icon": "⚖️"
+      },
+      {
+        "id": "sleep",
+        "label": "Sleep & Rest",
+        "icon": "🌙"
+      },
+      {
+        "id": "energy",
+        "label": "Energy & Motivation",
+        "icon": "🔋"
+      },
+      {
+        "id": "concentration",
+        "label": "Concentration & Mental Clarity",
+        "icon": "🎯"
+      },
+      {
+        "id": "emotional_regulation",
+        "label": "Emotional Regulation",
+        "icon": "🌊"
+      },
+      {
+        "id": "functioning",
+        "label": "Daily Functioning",
+        "icon": "📋"
+      },
+      {
+        "id": "connection",
+        "label": "Social Connection",
+        "icon": "🤝"
+      },
+      {
+        "id": "loneliness",
+        "label": "Loneliness & Belonging",
+        "icon": "🏡"
+      },
+      {
+        "id": "self_care",
+        "label": "Self-Care & Basic Needs",
+        "icon": "🥗"
+      },
+      {
+        "id": "coping",
+        "label": "Healthy Coping Skills",
+        "icon": "🧰"
+      },
+      {
+        "id": "resilience",
+        "label": "Resilience & Recovery",
+        "icon": "🌱"
+      },
+      {
+        "id": "burnout",
+        "label": "Burnout & Recovery Time",
+        "icon": "🕯️"
+      },
+      {
+        "id": "irritability",
+        "label": "Irritability & Anger",
+        "icon": "🌋"
+      },
+      {
+        "id": "physical_tension",
+        "label": "Physical Signs of Stress",
+        "icon": "🫁"
+      },
+      {
+        "id": "hope",
+        "label": "Hope & Sense of Purpose",
+        "icon": "🌅"
+      },
+      {
+        "id": "adaptability",
+        "label": "Adaptability & Uncertainty",
+        "icon": "🧭"
+      },
+      {
+        "id": "digital_balance",
+        "label": "Digital & Information Balance",
+        "icon": "📱"
+      },
+      {
+        "id": "help_seeking",
+        "label": "Help-Seeking & Support Safety",
+        "icon": "🛟"
+      }
+    ],
+    "levels": [
+      {
+        "min": 8.5,
+        "max": 10.01,
+        "label": "Strong Current Wellbeing",
+        "emoji": "🌟",
+        "desc": "Your responses suggest many current protective strengths across mood, coping, connection, and daily functioning."
+      },
+      {
+        "min": 7,
+        "max": 8.5,
+        "label": "Generally Steady",
+        "emoji": "🌿",
+        "desc": "Your wellbeing appears broadly steady, with some areas that may benefit from attention or additional recovery time."
+      },
+      {
+        "min": 5.5,
+        "max": 7,
+        "label": "Mixed Wellbeing",
+        "emoji": "🌦️",
+        "desc": "Your responses show both supports and strains. Focus on the lowest areas and consider sharing concerns with someone you trust."
+      },
+      {
+        "min": 4,
+        "max": 5.5,
+        "label": "Wellbeing Under Strain",
+        "emoji": "🤲",
+        "desc": "Several areas may be difficult right now. Consider contacting a health professional or trusted support person, especially if difficulties persist or affect daily life."
+      },
+      {
+        "min": 1,
+        "max": 4,
+        "label": "Significant Current Strain",
+        "emoji": "💛",
+        "desc": "Your responses suggest substantial distress or reduced functioning. Please consider reaching out to a qualified health professional or trusted person soon."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "MH-001",
+      "category": "mood",
+      "reverse": false,
+      "text": "During the past two weeks, I have experienced moments of emotional steadiness."
+    },
+    {
+      "id": "MH-002",
+      "category": "mood",
+      "reverse": true,
+      "text": "On demanding days, Low or unsettled feelings have dominated much of my time."
+    },
+    {
+      "id": "MH-003",
+      "category": "mood",
+      "reverse": false,
+      "text": "When plans changed unexpectedly, My mood has felt manageable rather than overwhelming."
+    },
+    {
+      "id": "MH-004",
+      "category": "mood",
+      "reverse": true,
+      "text": "While managing school, work, or home duties, My mood has felt difficult to manage."
+    },
+    {
+      "id": "MH-005",
+      "category": "mood",
+      "reverse": false,
+      "text": "After a difficult conversation, I have experienced moments of emotional steadiness."
+    },
+    {
+      "id": "MH-006",
+      "category": "mood",
+      "reverse": true,
+      "text": "When I woke up in the morning, Low or unsettled feelings have dominated much of my time."
+    },
+    {
+      "id": "MH-007",
+      "category": "mood",
+      "reverse": false,
+      "text": "Toward the end of the day, My mood has felt manageable rather than overwhelming."
+    },
+    {
+      "id": "MH-008",
+      "category": "mood",
+      "reverse": true,
+      "text": "When several tasks competed for attention, My mood has felt difficult to manage."
+    },
+    {
+      "id": "MH-009",
+      "category": "mood",
+      "reverse": false,
+      "text": "During quiet time by myself, I have experienced moments of emotional steadiness."
+    },
+    {
+      "id": "MH-010",
+      "category": "mood",
+      "reverse": true,
+      "text": "When I needed support, Low or unsettled feelings have dominated much of my time."
+    },
+    {
+      "id": "MH-011",
+      "category": "mood",
+      "reverse": false,
+      "text": "After receiving disappointing news, My mood has felt manageable rather than overwhelming."
+    },
+    {
+      "id": "MH-012",
+      "category": "mood",
+      "reverse": true,
+      "text": "While thinking about the future, My mood has felt difficult to manage."
+    },
+    {
+      "id": "MH-013",
+      "category": "mood",
+      "reverse": false,
+      "text": "When I made a mistake, I have experienced moments of emotional steadiness."
+    },
+    {
+      "id": "MH-014",
+      "category": "mood",
+      "reverse": true,
+      "text": "During social interactions, Low or unsettled feelings have dominated much of my time."
+    },
+    {
+      "id": "MH-015",
+      "category": "mood",
+      "reverse": false,
+      "text": "When I had time to rest, My mood has felt manageable rather than overwhelming."
+    },
+    {
+      "id": "MH-016",
+      "category": "mood",
+      "reverse": true,
+      "text": "While using my phone or computer, My mood has felt difficult to manage."
+    },
+    {
+      "id": "MH-017",
+      "category": "mood",
+      "reverse": false,
+      "text": "When physical tension appeared, I have experienced moments of emotional steadiness."
+    },
+    {
+      "id": "MH-018",
+      "category": "mood",
+      "reverse": true,
+      "text": "When I had to make a decision, Low or unsettled feelings have dominated much of my time."
+    },
+    {
+      "id": "MH-019",
+      "category": "mood",
+      "reverse": false,
+      "text": "After completing an important task, My mood has felt manageable rather than overwhelming."
+    },
+    {
+      "id": "MH-020",
+      "category": "mood",
+      "reverse": true,
+      "text": "When I felt uncertain, My mood has felt difficult to manage."
+    },
+    {
+      "id": "MH-021",
+      "category": "mood",
+      "reverse": false,
+      "text": "While following my usual routine, I have experienced moments of emotional steadiness."
+    },
+    {
+      "id": "MH-022",
+      "category": "mood",
+      "reverse": true,
+      "text": "When someone checked in on me, Low or unsettled feelings have dominated much of my time."
+    },
+    {
+      "id": "MH-023",
+      "category": "mood",
+      "reverse": false,
+      "text": "After a poor night of sleep, My mood has felt manageable rather than overwhelming."
+    },
+    {
+      "id": "MH-024",
+      "category": "mood",
+      "reverse": true,
+      "text": "When emotions became strong, My mood has felt difficult to manage."
+    },
+    {
+      "id": "MH-025",
+      "category": "mood",
+      "reverse": false,
+      "text": "Even when no one else could see my struggle, I have experienced moments of emotional steadiness."
+    },
+    {
+      "id": "MH-026",
+      "category": "anxiety",
+      "reverse": false,
+      "text": "During the past two weeks, I have been able to calm worries before they take over."
+    },
+    {
+      "id": "MH-027",
+      "category": "anxiety",
+      "reverse": true,
+      "text": "On demanding days, Worry has been hard to switch off."
+    },
+    {
+      "id": "MH-028",
+      "category": "anxiety",
+      "reverse": false,
+      "text": "When plans changed unexpectedly, I can notice anxious thoughts without automatically believing them."
+    },
+    {
+      "id": "MH-029",
+      "category": "anxiety",
+      "reverse": true,
+      "text": "While managing school, work, or home duties, Anxious thoughts have repeatedly pulled my attention away."
+    },
+    {
+      "id": "MH-030",
+      "category": "anxiety",
+      "reverse": false,
+      "text": "After a difficult conversation, I have been able to calm worries before they take over."
+    },
+    {
+      "id": "MH-031",
+      "category": "anxiety",
+      "reverse": true,
+      "text": "When I woke up in the morning, Worry has been hard to switch off."
+    },
+    {
+      "id": "MH-032",
+      "category": "anxiety",
+      "reverse": false,
+      "text": "Toward the end of the day, I can notice anxious thoughts without automatically believing them."
+    },
+    {
+      "id": "MH-033",
+      "category": "anxiety",
+      "reverse": true,
+      "text": "When several tasks competed for attention, Anxious thoughts have repeatedly pulled my attention away."
+    },
+    {
+      "id": "MH-034",
+      "category": "anxiety",
+      "reverse": false,
+      "text": "During quiet time by myself, I have been able to calm worries before they take over."
+    },
+    {
+      "id": "MH-035",
+      "category": "anxiety",
+      "reverse": true,
+      "text": "When I needed support, Worry has been hard to switch off."
+    },
+    {
+      "id": "MH-036",
+      "category": "anxiety",
+      "reverse": false,
+      "text": "After receiving disappointing news, I can notice anxious thoughts without automatically believing them."
+    },
+    {
+      "id": "MH-037",
+      "category": "anxiety",
+      "reverse": true,
+      "text": "While thinking about the future, Anxious thoughts have repeatedly pulled my attention away."
+    },
+    {
+      "id": "MH-038",
+      "category": "anxiety",
+      "reverse": false,
+      "text": "When I made a mistake, I have been able to calm worries before they take over."
+    },
+    {
+      "id": "MH-039",
+      "category": "anxiety",
+      "reverse": true,
+      "text": "During social interactions, Worry has been hard to switch off."
+    },
+    {
+      "id": "MH-040",
+      "category": "anxiety",
+      "reverse": false,
+      "text": "When I had time to rest, I can notice anxious thoughts without automatically believing them."
+    },
+    {
+      "id": "MH-041",
+      "category": "anxiety",
+      "reverse": true,
+      "text": "While using my phone or computer, Anxious thoughts have repeatedly pulled my attention away."
+    },
+    {
+      "id": "MH-042",
+      "category": "anxiety",
+      "reverse": false,
+      "text": "When physical tension appeared, I have been able to calm worries before they take over."
+    },
+    {
+      "id": "MH-043",
+      "category": "anxiety",
+      "reverse": true,
+      "text": "When I had to make a decision, Worry has been hard to switch off."
+    },
+    {
+      "id": "MH-044",
+      "category": "anxiety",
+      "reverse": false,
+      "text": "After completing an important task, I can notice anxious thoughts without automatically believing them."
+    },
+    {
+      "id": "MH-045",
+      "category": "anxiety",
+      "reverse": true,
+      "text": "When I felt uncertain, Anxious thoughts have repeatedly pulled my attention away."
+    },
+    {
+      "id": "MH-046",
+      "category": "anxiety",
+      "reverse": false,
+      "text": "While following my usual routine, I have been able to calm worries before they take over."
+    },
+    {
+      "id": "MH-047",
+      "category": "anxiety",
+      "reverse": true,
+      "text": "When someone checked in on me, Worry has been hard to switch off."
+    },
+    {
+      "id": "MH-048",
+      "category": "anxiety",
+      "reverse": false,
+      "text": "After a poor night of sleep, I can notice anxious thoughts without automatically believing them."
+    },
+    {
+      "id": "MH-049",
+      "category": "anxiety",
+      "reverse": true,
+      "text": "When emotions became strong, Anxious thoughts have repeatedly pulled my attention away."
+    },
+    {
+      "id": "MH-050",
+      "category": "anxiety",
+      "reverse": false,
+      "text": "Even when no one else could see my struggle, I have been able to calm worries before they take over."
+    },
+    {
+      "id": "MH-051",
+      "category": "stress",
+      "reverse": false,
+      "text": "During the past two weeks, I have had enough capacity to manage ordinary pressures."
+    },
+    {
+      "id": "MH-052",
+      "category": "stress",
+      "reverse": true,
+      "text": "On demanding days, Daily demands have felt greater than my ability to cope."
+    },
+    {
+      "id": "MH-053",
+      "category": "stress",
+      "reverse": false,
+      "text": "When plans changed unexpectedly, I can recognise stress and respond before it builds too far."
+    },
+    {
+      "id": "MH-054",
+      "category": "stress",
+      "reverse": true,
+      "text": "While managing school, work, or home duties, Pressure has remained high even when the immediate task ended."
+    },
+    {
+      "id": "MH-055",
+      "category": "stress",
+      "reverse": false,
+      "text": "After a difficult conversation, I have had enough capacity to manage ordinary pressures."
+    },
+    {
+      "id": "MH-056",
+      "category": "stress",
+      "reverse": true,
+      "text": "When I woke up in the morning, Daily demands have felt greater than my ability to cope."
+    },
+    {
+      "id": "MH-057",
+      "category": "stress",
+      "reverse": false,
+      "text": "Toward the end of the day, I can recognise stress and respond before it builds too far."
+    },
+    {
+      "id": "MH-058",
+      "category": "stress",
+      "reverse": true,
+      "text": "When several tasks competed for attention, Pressure has remained high even when the immediate task ended."
+    },
+    {
+      "id": "MH-059",
+      "category": "stress",
+      "reverse": false,
+      "text": "During quiet time by myself, I have had enough capacity to manage ordinary pressures."
+    },
+    {
+      "id": "MH-060",
+      "category": "stress",
+      "reverse": true,
+      "text": "When I needed support, Daily demands have felt greater than my ability to cope."
+    },
+    {
+      "id": "MH-061",
+      "category": "stress",
+      "reverse": false,
+      "text": "After receiving disappointing news, I can recognise stress and respond before it builds too far."
+    },
+    {
+      "id": "MH-062",
+      "category": "stress",
+      "reverse": true,
+      "text": "While thinking about the future, Pressure has remained high even when the immediate task ended."
+    },
+    {
+      "id": "MH-063",
+      "category": "stress",
+      "reverse": false,
+      "text": "When I made a mistake, I have had enough capacity to manage ordinary pressures."
+    },
+    {
+      "id": "MH-064",
+      "category": "stress",
+      "reverse": true,
+      "text": "During social interactions, Daily demands have felt greater than my ability to cope."
+    },
+    {
+      "id": "MH-065",
+      "category": "stress",
+      "reverse": false,
+      "text": "When I had time to rest, I can recognise stress and respond before it builds too far."
+    },
+    {
+      "id": "MH-066",
+      "category": "stress",
+      "reverse": true,
+      "text": "While using my phone or computer, Pressure has remained high even when the immediate task ended."
+    },
+    {
+      "id": "MH-067",
+      "category": "stress",
+      "reverse": false,
+      "text": "When physical tension appeared, I have had enough capacity to manage ordinary pressures."
+    },
+    {
+      "id": "MH-068",
+      "category": "stress",
+      "reverse": true,
+      "text": "When I had to make a decision, Daily demands have felt greater than my ability to cope."
+    },
+    {
+      "id": "MH-069",
+      "category": "stress",
+      "reverse": false,
+      "text": "After completing an important task, I can recognise stress and respond before it builds too far."
+    },
+    {
+      "id": "MH-070",
+      "category": "stress",
+      "reverse": true,
+      "text": "When I felt uncertain, Pressure has remained high even when the immediate task ended."
+    },
+    {
+      "id": "MH-071",
+      "category": "stress",
+      "reverse": false,
+      "text": "While following my usual routine, I have had enough capacity to manage ordinary pressures."
+    },
+    {
+      "id": "MH-072",
+      "category": "stress",
+      "reverse": true,
+      "text": "When someone checked in on me, Daily demands have felt greater than my ability to cope."
+    },
+    {
+      "id": "MH-073",
+      "category": "stress",
+      "reverse": false,
+      "text": "After a poor night of sleep, I can recognise stress and respond before it builds too far."
+    },
+    {
+      "id": "MH-074",
+      "category": "stress",
+      "reverse": true,
+      "text": "When emotions became strong, Pressure has remained high even when the immediate task ended."
+    },
+    {
+      "id": "MH-075",
+      "category": "stress",
+      "reverse": false,
+      "text": "Even when no one else could see my struggle, I have had enough capacity to manage ordinary pressures."
+    },
+    {
+      "id": "MH-076",
+      "category": "sleep",
+      "reverse": false,
+      "text": "During the past two weeks, My sleep has generally helped me feel restored."
+    },
+    {
+      "id": "MH-077",
+      "category": "sleep",
+      "reverse": true,
+      "text": "On demanding days, Sleep difficulties have left me feeling unrested."
+    },
+    {
+      "id": "MH-078",
+      "category": "sleep",
+      "reverse": false,
+      "text": "When plans changed unexpectedly, I have been able to settle into rest at a reasonable time."
+    },
+    {
+      "id": "MH-079",
+      "category": "sleep",
+      "reverse": true,
+      "text": "While managing school, work, or home duties, My mind or body has struggled to settle at night."
+    },
+    {
+      "id": "MH-080",
+      "category": "sleep",
+      "reverse": false,
+      "text": "After a difficult conversation, My sleep has generally helped me feel restored."
+    },
+    {
+      "id": "MH-081",
+      "category": "sleep",
+      "reverse": true,
+      "text": "When I woke up in the morning, Sleep difficulties have left me feeling unrested."
+    },
+    {
+      "id": "MH-082",
+      "category": "sleep",
+      "reverse": false,
+      "text": "Toward the end of the day, I have been able to settle into rest at a reasonable time."
+    },
+    {
+      "id": "MH-083",
+      "category": "sleep",
+      "reverse": true,
+      "text": "When several tasks competed for attention, My mind or body has struggled to settle at night."
+    },
+    {
+      "id": "MH-084",
+      "category": "sleep",
+      "reverse": false,
+      "text": "During quiet time by myself, My sleep has generally helped me feel restored."
+    },
+    {
+      "id": "MH-085",
+      "category": "sleep",
+      "reverse": true,
+      "text": "When I needed support, Sleep difficulties have left me feeling unrested."
+    },
+    {
+      "id": "MH-086",
+      "category": "sleep",
+      "reverse": false,
+      "text": "After receiving disappointing news, I have been able to settle into rest at a reasonable time."
+    },
+    {
+      "id": "MH-087",
+      "category": "sleep",
+      "reverse": true,
+      "text": "While thinking about the future, My mind or body has struggled to settle at night."
+    },
+    {
+      "id": "MH-088",
+      "category": "sleep",
+      "reverse": false,
+      "text": "When I made a mistake, My sleep has generally helped me feel restored."
+    },
+    {
+      "id": "MH-089",
+      "category": "sleep",
+      "reverse": true,
+      "text": "During social interactions, Sleep difficulties have left me feeling unrested."
+    },
+    {
+      "id": "MH-090",
+      "category": "sleep",
+      "reverse": false,
+      "text": "When I had time to rest, I have been able to settle into rest at a reasonable time."
+    },
+    {
+      "id": "MH-091",
+      "category": "sleep",
+      "reverse": true,
+      "text": "While using my phone or computer, My mind or body has struggled to settle at night."
+    },
+    {
+      "id": "MH-092",
+      "category": "sleep",
+      "reverse": false,
+      "text": "When physical tension appeared, My sleep has generally helped me feel restored."
+    },
+    {
+      "id": "MH-093",
+      "category": "sleep",
+      "reverse": true,
+      "text": "When I had to make a decision, Sleep difficulties have left me feeling unrested."
+    },
+    {
+      "id": "MH-094",
+      "category": "sleep",
+      "reverse": false,
+      "text": "After completing an important task, I have been able to settle into rest at a reasonable time."
+    },
+    {
+      "id": "MH-095",
+      "category": "sleep",
+      "reverse": true,
+      "text": "When I felt uncertain, My mind or body has struggled to settle at night."
+    },
+    {
+      "id": "MH-096",
+      "category": "sleep",
+      "reverse": false,
+      "text": "While following my usual routine, My sleep has generally helped me feel restored."
+    },
+    {
+      "id": "MH-097",
+      "category": "sleep",
+      "reverse": true,
+      "text": "When someone checked in on me, Sleep difficulties have left me feeling unrested."
+    },
+    {
+      "id": "MH-098",
+      "category": "sleep",
+      "reverse": false,
+      "text": "After a poor night of sleep, I have been able to settle into rest at a reasonable time."
+    },
+    {
+      "id": "MH-099",
+      "category": "sleep",
+      "reverse": true,
+      "text": "When emotions became strong, My mind or body has struggled to settle at night."
+    },
+    {
+      "id": "MH-100",
+      "category": "sleep",
+      "reverse": false,
+      "text": "Even when no one else could see my struggle, My sleep has generally helped me feel restored."
+    },
+    {
+      "id": "MH-101",
+      "category": "energy",
+      "reverse": false,
+      "text": "During the past two weeks, I have had enough energy for essential activities."
+    },
+    {
+      "id": "MH-102",
+      "category": "energy",
+      "reverse": true,
+      "text": "On demanding days, Low energy has made basic activities feel unusually difficult."
+    },
+    {
+      "id": "MH-103",
+      "category": "energy",
+      "reverse": false,
+      "text": "When plans changed unexpectedly, I have felt some motivation to begin meaningful tasks."
+    },
+    {
+      "id": "MH-104",
+      "category": "energy",
+      "reverse": true,
+      "text": "While managing school, work, or home duties, I have struggled to begin even tasks that matter to me."
+    },
+    {
+      "id": "MH-105",
+      "category": "energy",
+      "reverse": false,
+      "text": "After a difficult conversation, I have had enough energy for essential activities."
+    },
+    {
+      "id": "MH-106",
+      "category": "energy",
+      "reverse": true,
+      "text": "When I woke up in the morning, Low energy has made basic activities feel unusually difficult."
+    },
+    {
+      "id": "MH-107",
+      "category": "energy",
+      "reverse": false,
+      "text": "Toward the end of the day, I have felt some motivation to begin meaningful tasks."
+    },
+    {
+      "id": "MH-108",
+      "category": "energy",
+      "reverse": true,
+      "text": "When several tasks competed for attention, I have struggled to begin even tasks that matter to me."
+    },
+    {
+      "id": "MH-109",
+      "category": "energy",
+      "reverse": false,
+      "text": "During quiet time by myself, I have had enough energy for essential activities."
+    },
+    {
+      "id": "MH-110",
+      "category": "energy",
+      "reverse": true,
+      "text": "When I needed support, Low energy has made basic activities feel unusually difficult."
+    },
+    {
+      "id": "MH-111",
+      "category": "energy",
+      "reverse": false,
+      "text": "After receiving disappointing news, I have felt some motivation to begin meaningful tasks."
+    },
+    {
+      "id": "MH-112",
+      "category": "energy",
+      "reverse": true,
+      "text": "While thinking about the future, I have struggled to begin even tasks that matter to me."
+    },
+    {
+      "id": "MH-113",
+      "category": "energy",
+      "reverse": false,
+      "text": "When I made a mistake, I have had enough energy for essential activities."
+    },
+    {
+      "id": "MH-114",
+      "category": "energy",
+      "reverse": true,
+      "text": "During social interactions, Low energy has made basic activities feel unusually difficult."
+    },
+    {
+      "id": "MH-115",
+      "category": "energy",
+      "reverse": false,
+      "text": "When I had time to rest, I have felt some motivation to begin meaningful tasks."
+    },
+    {
+      "id": "MH-116",
+      "category": "energy",
+      "reverse": true,
+      "text": "While using my phone or computer, I have struggled to begin even tasks that matter to me."
+    },
+    {
+      "id": "MH-117",
+      "category": "energy",
+      "reverse": false,
+      "text": "When physical tension appeared, I have had enough energy for essential activities."
+    },
+    {
+      "id": "MH-118",
+      "category": "energy",
+      "reverse": true,
+      "text": "When I had to make a decision, Low energy has made basic activities feel unusually difficult."
+    },
+    {
+      "id": "MH-119",
+      "category": "energy",
+      "reverse": false,
+      "text": "After completing an important task, I have felt some motivation to begin meaningful tasks."
+    },
+    {
+      "id": "MH-120",
+      "category": "energy",
+      "reverse": true,
+      "text": "When I felt uncertain, I have struggled to begin even tasks that matter to me."
+    },
+    {
+      "id": "MH-121",
+      "category": "energy",
+      "reverse": false,
+      "text": "While following my usual routine, I have had enough energy for essential activities."
+    },
+    {
+      "id": "MH-122",
+      "category": "energy",
+      "reverse": true,
+      "text": "When someone checked in on me, Low energy has made basic activities feel unusually difficult."
+    },
+    {
+      "id": "MH-123",
+      "category": "energy",
+      "reverse": false,
+      "text": "After a poor night of sleep, I have felt some motivation to begin meaningful tasks."
+    },
+    {
+      "id": "MH-124",
+      "category": "energy",
+      "reverse": true,
+      "text": "When emotions became strong, I have struggled to begin even tasks that matter to me."
+    },
+    {
+      "id": "MH-125",
+      "category": "energy",
+      "reverse": false,
+      "text": "Even when no one else could see my struggle, I have had enough energy for essential activities."
+    },
+    {
+      "id": "MH-126",
+      "category": "concentration",
+      "reverse": false,
+      "text": "During the past two weeks, I have been able to focus long enough to complete ordinary tasks."
+    },
+    {
+      "id": "MH-127",
+      "category": "concentration",
+      "reverse": true,
+      "text": "On demanding days, My attention has scattered so often that tasks remain unfinished."
+    },
+    {
+      "id": "MH-128",
+      "category": "concentration",
+      "reverse": false,
+      "text": "When plans changed unexpectedly, My thinking has felt reasonably clear."
+    },
+    {
+      "id": "MH-129",
+      "category": "concentration",
+      "reverse": true,
+      "text": "While managing school, work, or home duties, Mental fog has made simple decisions harder."
+    },
+    {
+      "id": "MH-130",
+      "category": "concentration",
+      "reverse": false,
+      "text": "After a difficult conversation, I have been able to focus long enough to complete ordinary tasks."
+    },
+    {
+      "id": "MH-131",
+      "category": "concentration",
+      "reverse": true,
+      "text": "When I woke up in the morning, My attention has scattered so often that tasks remain unfinished."
+    },
+    {
+      "id": "MH-132",
+      "category": "concentration",
+      "reverse": false,
+      "text": "Toward the end of the day, My thinking has felt reasonably clear."
+    },
+    {
+      "id": "MH-133",
+      "category": "concentration",
+      "reverse": true,
+      "text": "When several tasks competed for attention, Mental fog has made simple decisions harder."
+    },
+    {
+      "id": "MH-134",
+      "category": "concentration",
+      "reverse": false,
+      "text": "During quiet time by myself, I have been able to focus long enough to complete ordinary tasks."
+    },
+    {
+      "id": "MH-135",
+      "category": "concentration",
+      "reverse": true,
+      "text": "When I needed support, My attention has scattered so often that tasks remain unfinished."
+    },
+    {
+      "id": "MH-136",
+      "category": "concentration",
+      "reverse": false,
+      "text": "After receiving disappointing news, My thinking has felt reasonably clear."
+    },
+    {
+      "id": "MH-137",
+      "category": "concentration",
+      "reverse": true,
+      "text": "While thinking about the future, Mental fog has made simple decisions harder."
+    },
+    {
+      "id": "MH-138",
+      "category": "concentration",
+      "reverse": false,
+      "text": "When I made a mistake, I have been able to focus long enough to complete ordinary tasks."
+    },
+    {
+      "id": "MH-139",
+      "category": "concentration",
+      "reverse": true,
+      "text": "During social interactions, My attention has scattered so often that tasks remain unfinished."
+    },
+    {
+      "id": "MH-140",
+      "category": "concentration",
+      "reverse": false,
+      "text": "When I had time to rest, My thinking has felt reasonably clear."
+    },
+    {
+      "id": "MH-141",
+      "category": "concentration",
+      "reverse": true,
+      "text": "While using my phone or computer, Mental fog has made simple decisions harder."
+    },
+    {
+      "id": "MH-142",
+      "category": "concentration",
+      "reverse": false,
+      "text": "When physical tension appeared, I have been able to focus long enough to complete ordinary tasks."
+    },
+    {
+      "id": "MH-143",
+      "category": "concentration",
+      "reverse": true,
+      "text": "When I had to make a decision, My attention has scattered so often that tasks remain unfinished."
+    },
+    {
+      "id": "MH-144",
+      "category": "concentration",
+      "reverse": false,
+      "text": "After completing an important task, My thinking has felt reasonably clear."
+    },
+    {
+      "id": "MH-145",
+      "category": "concentration",
+      "reverse": true,
+      "text": "When I felt uncertain, Mental fog has made simple decisions harder."
+    },
+    {
+      "id": "MH-146",
+      "category": "concentration",
+      "reverse": false,
+      "text": "While following my usual routine, I have been able to focus long enough to complete ordinary tasks."
+    },
+    {
+      "id": "MH-147",
+      "category": "concentration",
+      "reverse": true,
+      "text": "When someone checked in on me, My attention has scattered so often that tasks remain unfinished."
+    },
+    {
+      "id": "MH-148",
+      "category": "concentration",
+      "reverse": false,
+      "text": "After a poor night of sleep, My thinking has felt reasonably clear."
+    },
+    {
+      "id": "MH-149",
+      "category": "concentration",
+      "reverse": true,
+      "text": "When emotions became strong, Mental fog has made simple decisions harder."
+    },
+    {
+      "id": "MH-150",
+      "category": "concentration",
+      "reverse": false,
+      "text": "Even when no one else could see my struggle, I have been able to focus long enough to complete ordinary tasks."
+    },
+    {
+      "id": "MH-151",
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "During the past two weeks, I can let strong feelings pass without acting impulsively."
+    },
+    {
+      "id": "MH-152",
+      "category": "emotional_regulation",
+      "reverse": true,
+      "text": "On demanding days, Strong emotions have pushed me toward reactions I later regret."
+    },
+    {
+      "id": "MH-153",
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "When plans changed unexpectedly, I have useful ways to bring intense emotions down."
+    },
+    {
+      "id": "MH-154",
+      "category": "emotional_regulation",
+      "reverse": true,
+      "text": "While managing school, work, or home duties, Once upset, I have found it very hard to settle."
+    },
+    {
+      "id": "MH-155",
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "After a difficult conversation, I can let strong feelings pass without acting impulsively."
+    },
+    {
+      "id": "MH-156",
+      "category": "emotional_regulation",
+      "reverse": true,
+      "text": "When I woke up in the morning, Strong emotions have pushed me toward reactions I later regret."
+    },
+    {
+      "id": "MH-157",
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "Toward the end of the day, I have useful ways to bring intense emotions down."
+    },
+    {
+      "id": "MH-158",
+      "category": "emotional_regulation",
+      "reverse": true,
+      "text": "When several tasks competed for attention, Once upset, I have found it very hard to settle."
+    },
+    {
+      "id": "MH-159",
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "During quiet time by myself, I can let strong feelings pass without acting impulsively."
+    },
+    {
+      "id": "MH-160",
+      "category": "emotional_regulation",
+      "reverse": true,
+      "text": "When I needed support, Strong emotions have pushed me toward reactions I later regret."
+    },
+    {
+      "id": "MH-161",
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "After receiving disappointing news, I have useful ways to bring intense emotions down."
+    },
+    {
+      "id": "MH-162",
+      "category": "emotional_regulation",
+      "reverse": true,
+      "text": "While thinking about the future, Once upset, I have found it very hard to settle."
+    },
+    {
+      "id": "MH-163",
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "When I made a mistake, I can let strong feelings pass without acting impulsively."
+    },
+    {
+      "id": "MH-164",
+      "category": "emotional_regulation",
+      "reverse": true,
+      "text": "During social interactions, Strong emotions have pushed me toward reactions I later regret."
+    },
+    {
+      "id": "MH-165",
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "When I had time to rest, I have useful ways to bring intense emotions down."
+    },
+    {
+      "id": "MH-166",
+      "category": "emotional_regulation",
+      "reverse": true,
+      "text": "While using my phone or computer, Once upset, I have found it very hard to settle."
+    },
+    {
+      "id": "MH-167",
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "When physical tension appeared, I can let strong feelings pass without acting impulsively."
+    },
+    {
+      "id": "MH-168",
+      "category": "emotional_regulation",
+      "reverse": true,
+      "text": "When I had to make a decision, Strong emotions have pushed me toward reactions I later regret."
+    },
+    {
+      "id": "MH-169",
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "After completing an important task, I have useful ways to bring intense emotions down."
+    },
+    {
+      "id": "MH-170",
+      "category": "emotional_regulation",
+      "reverse": true,
+      "text": "When I felt uncertain, Once upset, I have found it very hard to settle."
+    },
+    {
+      "id": "MH-171",
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "While following my usual routine, I can let strong feelings pass without acting impulsively."
+    },
+    {
+      "id": "MH-172",
+      "category": "emotional_regulation",
+      "reverse": true,
+      "text": "When someone checked in on me, Strong emotions have pushed me toward reactions I later regret."
+    },
+    {
+      "id": "MH-173",
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "After a poor night of sleep, I have useful ways to bring intense emotions down."
+    },
+    {
+      "id": "MH-174",
+      "category": "emotional_regulation",
+      "reverse": true,
+      "text": "When emotions became strong, Once upset, I have found it very hard to settle."
+    },
+    {
+      "id": "MH-175",
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "Even when no one else could see my struggle, I can let strong feelings pass without acting impulsively."
+    },
+    {
+      "id": "MH-176",
+      "category": "functioning",
+      "reverse": false,
+      "text": "During the past two weeks, I have managed my essential daily responsibilities."
+    },
+    {
+      "id": "MH-177",
+      "category": "functioning",
+      "reverse": true,
+      "text": "On demanding days, Emotional strain has interfered with ordinary responsibilities."
+    },
+    {
+      "id": "MH-178",
+      "category": "functioning",
+      "reverse": false,
+      "text": "When plans changed unexpectedly, My routine has given me enough structure to keep going."
+    },
+    {
+      "id": "MH-179",
+      "category": "functioning",
+      "reverse": true,
+      "text": "While managing school, work, or home duties, My daily routine has become difficult to maintain."
+    },
+    {
+      "id": "MH-180",
+      "category": "functioning",
+      "reverse": false,
+      "text": "After a difficult conversation, I have managed my essential daily responsibilities."
+    },
+    {
+      "id": "MH-181",
+      "category": "functioning",
+      "reverse": true,
+      "text": "When I woke up in the morning, Emotional strain has interfered with ordinary responsibilities."
+    },
+    {
+      "id": "MH-182",
+      "category": "functioning",
+      "reverse": false,
+      "text": "Toward the end of the day, My routine has given me enough structure to keep going."
+    },
+    {
+      "id": "MH-183",
+      "category": "functioning",
+      "reverse": true,
+      "text": "When several tasks competed for attention, My daily routine has become difficult to maintain."
+    },
+    {
+      "id": "MH-184",
+      "category": "functioning",
+      "reverse": false,
+      "text": "During quiet time by myself, I have managed my essential daily responsibilities."
+    },
+    {
+      "id": "MH-185",
+      "category": "functioning",
+      "reverse": true,
+      "text": "When I needed support, Emotional strain has interfered with ordinary responsibilities."
+    },
+    {
+      "id": "MH-186",
+      "category": "functioning",
+      "reverse": false,
+      "text": "After receiving disappointing news, My routine has given me enough structure to keep going."
+    },
+    {
+      "id": "MH-187",
+      "category": "functioning",
+      "reverse": true,
+      "text": "While thinking about the future, My daily routine has become difficult to maintain."
+    },
+    {
+      "id": "MH-188",
+      "category": "functioning",
+      "reverse": false,
+      "text": "When I made a mistake, I have managed my essential daily responsibilities."
+    },
+    {
+      "id": "MH-189",
+      "category": "functioning",
+      "reverse": true,
+      "text": "During social interactions, Emotional strain has interfered with ordinary responsibilities."
+    },
+    {
+      "id": "MH-190",
+      "category": "functioning",
+      "reverse": false,
+      "text": "When I had time to rest, My routine has given me enough structure to keep going."
+    },
+    {
+      "id": "MH-191",
+      "category": "functioning",
+      "reverse": true,
+      "text": "While using my phone or computer, My daily routine has become difficult to maintain."
+    },
+    {
+      "id": "MH-192",
+      "category": "functioning",
+      "reverse": false,
+      "text": "When physical tension appeared, I have managed my essential daily responsibilities."
+    },
+    {
+      "id": "MH-193",
+      "category": "functioning",
+      "reverse": true,
+      "text": "When I had to make a decision, Emotional strain has interfered with ordinary responsibilities."
+    },
+    {
+      "id": "MH-194",
+      "category": "functioning",
+      "reverse": false,
+      "text": "After completing an important task, My routine has given me enough structure to keep going."
+    },
+    {
+      "id": "MH-195",
+      "category": "functioning",
+      "reverse": true,
+      "text": "When I felt uncertain, My daily routine has become difficult to maintain."
+    },
+    {
+      "id": "MH-196",
+      "category": "functioning",
+      "reverse": false,
+      "text": "While following my usual routine, I have managed my essential daily responsibilities."
+    },
+    {
+      "id": "MH-197",
+      "category": "functioning",
+      "reverse": true,
+      "text": "When someone checked in on me, Emotional strain has interfered with ordinary responsibilities."
+    },
+    {
+      "id": "MH-198",
+      "category": "functioning",
+      "reverse": false,
+      "text": "After a poor night of sleep, My routine has given me enough structure to keep going."
+    },
+    {
+      "id": "MH-199",
+      "category": "functioning",
+      "reverse": true,
+      "text": "When emotions became strong, My daily routine has become difficult to maintain."
+    },
+    {
+      "id": "MH-200",
+      "category": "functioning",
+      "reverse": false,
+      "text": "Even when no one else could see my struggle, I have managed my essential daily responsibilities."
+    },
+    {
+      "id": "MH-201",
+      "category": "connection",
+      "reverse": false,
+      "text": "During the past two weeks, I have felt able to connect with at least one supportive person."
+    },
+    {
+      "id": "MH-202",
+      "category": "connection",
+      "reverse": true,
+      "text": "On demanding days, I have withdrawn even when connection might have helped."
+    },
+    {
+      "id": "MH-203",
+      "category": "connection",
+      "reverse": false,
+      "text": "When plans changed unexpectedly, My relationships have included moments of genuine understanding."
+    },
+    {
+      "id": "MH-204",
+      "category": "connection",
+      "reverse": true,
+      "text": "While managing school, work, or home duties, I have felt emotionally distant from the people around me."
+    },
+    {
+      "id": "MH-205",
+      "category": "connection",
+      "reverse": false,
+      "text": "After a difficult conversation, I have felt able to connect with at least one supportive person."
+    },
+    {
+      "id": "MH-206",
+      "category": "connection",
+      "reverse": true,
+      "text": "When I woke up in the morning, I have withdrawn even when connection might have helped."
+    },
+    {
+      "id": "MH-207",
+      "category": "connection",
+      "reverse": false,
+      "text": "Toward the end of the day, My relationships have included moments of genuine understanding."
+    },
+    {
+      "id": "MH-208",
+      "category": "connection",
+      "reverse": true,
+      "text": "When several tasks competed for attention, I have felt emotionally distant from the people around me."
+    },
+    {
+      "id": "MH-209",
+      "category": "connection",
+      "reverse": false,
+      "text": "During quiet time by myself, I have felt able to connect with at least one supportive person."
+    },
+    {
+      "id": "MH-210",
+      "category": "connection",
+      "reverse": true,
+      "text": "When I needed support, I have withdrawn even when connection might have helped."
+    },
+    {
+      "id": "MH-211",
+      "category": "connection",
+      "reverse": false,
+      "text": "After receiving disappointing news, My relationships have included moments of genuine understanding."
+    },
+    {
+      "id": "MH-212",
+      "category": "connection",
+      "reverse": true,
+      "text": "While thinking about the future, I have felt emotionally distant from the people around me."
+    },
+    {
+      "id": "MH-213",
+      "category": "connection",
+      "reverse": false,
+      "text": "When I made a mistake, I have felt able to connect with at least one supportive person."
+    },
+    {
+      "id": "MH-214",
+      "category": "connection",
+      "reverse": true,
+      "text": "During social interactions, I have withdrawn even when connection might have helped."
+    },
+    {
+      "id": "MH-215",
+      "category": "connection",
+      "reverse": false,
+      "text": "When I had time to rest, My relationships have included moments of genuine understanding."
+    },
+    {
+      "id": "MH-216",
+      "category": "connection",
+      "reverse": true,
+      "text": "While using my phone or computer, I have felt emotionally distant from the people around me."
+    },
+    {
+      "id": "MH-217",
+      "category": "connection",
+      "reverse": false,
+      "text": "When physical tension appeared, I have felt able to connect with at least one supportive person."
+    },
+    {
+      "id": "MH-218",
+      "category": "connection",
+      "reverse": true,
+      "text": "When I had to make a decision, I have withdrawn even when connection might have helped."
+    },
+    {
+      "id": "MH-219",
+      "category": "connection",
+      "reverse": false,
+      "text": "After completing an important task, My relationships have included moments of genuine understanding."
+    },
+    {
+      "id": "MH-220",
+      "category": "connection",
+      "reverse": true,
+      "text": "When I felt uncertain, I have felt emotionally distant from the people around me."
+    },
+    {
+      "id": "MH-221",
+      "category": "connection",
+      "reverse": false,
+      "text": "While following my usual routine, I have felt able to connect with at least one supportive person."
+    },
+    {
+      "id": "MH-222",
+      "category": "connection",
+      "reverse": true,
+      "text": "When someone checked in on me, I have withdrawn even when connection might have helped."
+    },
+    {
+      "id": "MH-223",
+      "category": "connection",
+      "reverse": false,
+      "text": "After a poor night of sleep, My relationships have included moments of genuine understanding."
+    },
+    {
+      "id": "MH-224",
+      "category": "connection",
+      "reverse": true,
+      "text": "When emotions became strong, I have felt emotionally distant from the people around me."
+    },
+    {
+      "id": "MH-225",
+      "category": "connection",
+      "reverse": false,
+      "text": "Even when no one else could see my struggle, I have felt able to connect with at least one supportive person."
+    },
+    {
+      "id": "MH-226",
+      "category": "loneliness",
+      "reverse": false,
+      "text": "During the past two weeks, I have felt that I belong somewhere."
+    },
+    {
+      "id": "MH-227",
+      "category": "loneliness",
+      "reverse": true,
+      "text": "On demanding days, Loneliness has felt heavy even when others were nearby."
+    },
+    {
+      "id": "MH-228",
+      "category": "loneliness",
+      "reverse": false,
+      "text": "When plans changed unexpectedly, I can remember people or communities where my presence matters."
+    },
+    {
+      "id": "MH-229",
+      "category": "loneliness",
+      "reverse": true,
+      "text": "While managing school, work, or home duties, I have felt as though I do not belong anywhere."
+    },
+    {
+      "id": "MH-230",
+      "category": "loneliness",
+      "reverse": false,
+      "text": "After a difficult conversation, I have felt that I belong somewhere."
+    },
+    {
+      "id": "MH-231",
+      "category": "loneliness",
+      "reverse": true,
+      "text": "When I woke up in the morning, Loneliness has felt heavy even when others were nearby."
+    },
+    {
+      "id": "MH-232",
+      "category": "loneliness",
+      "reverse": false,
+      "text": "Toward the end of the day, I can remember people or communities where my presence matters."
+    },
+    {
+      "id": "MH-233",
+      "category": "loneliness",
+      "reverse": true,
+      "text": "When several tasks competed for attention, I have felt as though I do not belong anywhere."
+    },
+    {
+      "id": "MH-234",
+      "category": "loneliness",
+      "reverse": false,
+      "text": "During quiet time by myself, I have felt that I belong somewhere."
+    },
+    {
+      "id": "MH-235",
+      "category": "loneliness",
+      "reverse": true,
+      "text": "When I needed support, Loneliness has felt heavy even when others were nearby."
+    },
+    {
+      "id": "MH-236",
+      "category": "loneliness",
+      "reverse": false,
+      "text": "After receiving disappointing news, I can remember people or communities where my presence matters."
+    },
+    {
+      "id": "MH-237",
+      "category": "loneliness",
+      "reverse": true,
+      "text": "While thinking about the future, I have felt as though I do not belong anywhere."
+    },
+    {
+      "id": "MH-238",
+      "category": "loneliness",
+      "reverse": false,
+      "text": "When I made a mistake, I have felt that I belong somewhere."
+    },
+    {
+      "id": "MH-239",
+      "category": "loneliness",
+      "reverse": true,
+      "text": "During social interactions, Loneliness has felt heavy even when others were nearby."
+    },
+    {
+      "id": "MH-240",
+      "category": "loneliness",
+      "reverse": false,
+      "text": "When I had time to rest, I can remember people or communities where my presence matters."
+    },
+    {
+      "id": "MH-241",
+      "category": "loneliness",
+      "reverse": true,
+      "text": "While using my phone or computer, I have felt as though I do not belong anywhere."
+    },
+    {
+      "id": "MH-242",
+      "category": "loneliness",
+      "reverse": false,
+      "text": "When physical tension appeared, I have felt that I belong somewhere."
+    },
+    {
+      "id": "MH-243",
+      "category": "loneliness",
+      "reverse": true,
+      "text": "When I had to make a decision, Loneliness has felt heavy even when others were nearby."
+    },
+    {
+      "id": "MH-244",
+      "category": "loneliness",
+      "reverse": false,
+      "text": "After completing an important task, I can remember people or communities where my presence matters."
+    },
+    {
+      "id": "MH-245",
+      "category": "loneliness",
+      "reverse": true,
+      "text": "When I felt uncertain, I have felt as though I do not belong anywhere."
+    },
+    {
+      "id": "MH-246",
+      "category": "loneliness",
+      "reverse": false,
+      "text": "While following my usual routine, I have felt that I belong somewhere."
+    },
+    {
+      "id": "MH-247",
+      "category": "loneliness",
+      "reverse": true,
+      "text": "When someone checked in on me, Loneliness has felt heavy even when others were nearby."
+    },
+    {
+      "id": "MH-248",
+      "category": "loneliness",
+      "reverse": false,
+      "text": "After a poor night of sleep, I can remember people or communities where my presence matters."
+    },
+    {
+      "id": "MH-249",
+      "category": "loneliness",
+      "reverse": true,
+      "text": "When emotions became strong, I have felt as though I do not belong anywhere."
+    },
+    {
+      "id": "MH-250",
+      "category": "loneliness",
+      "reverse": false,
+      "text": "Even when no one else could see my struggle, I have felt that I belong somewhere."
+    },
+    {
+      "id": "MH-251",
+      "category": "self_care",
+      "reverse": false,
+      "text": "During the past two weeks, I have made reasonable space for food, movement, hygiene, or rest."
+    },
+    {
+      "id": "MH-252",
+      "category": "self_care",
+      "reverse": true,
+      "text": "On demanding days, I have regularly neglected basic care because everything felt too much."
+    },
+    {
+      "id": "MH-253",
+      "category": "self_care",
+      "reverse": false,
+      "text": "When plans changed unexpectedly, I notice basic needs before they become urgent."
+    },
+    {
+      "id": "MH-254",
+      "category": "self_care",
+      "reverse": true,
+      "text": "While managing school, work, or home duties, My own physical needs have stayed at the bottom of the list."
+    },
+    {
+      "id": "MH-255",
+      "category": "self_care",
+      "reverse": false,
+      "text": "After a difficult conversation, I have made reasonable space for food, movement, hygiene, or rest."
+    },
+    {
+      "id": "MH-256",
+      "category": "self_care",
+      "reverse": true,
+      "text": "When I woke up in the morning, I have regularly neglected basic care because everything felt too much."
+    },
+    {
+      "id": "MH-257",
+      "category": "self_care",
+      "reverse": false,
+      "text": "Toward the end of the day, I notice basic needs before they become urgent."
+    },
+    {
+      "id": "MH-258",
+      "category": "self_care",
+      "reverse": true,
+      "text": "When several tasks competed for attention, My own physical needs have stayed at the bottom of the list."
+    },
+    {
+      "id": "MH-259",
+      "category": "self_care",
+      "reverse": false,
+      "text": "During quiet time by myself, I have made reasonable space for food, movement, hygiene, or rest."
+    },
+    {
+      "id": "MH-260",
+      "category": "self_care",
+      "reverse": true,
+      "text": "When I needed support, I have regularly neglected basic care because everything felt too much."
+    },
+    {
+      "id": "MH-261",
+      "category": "self_care",
+      "reverse": false,
+      "text": "After receiving disappointing news, I notice basic needs before they become urgent."
+    },
+    {
+      "id": "MH-262",
+      "category": "self_care",
+      "reverse": true,
+      "text": "While thinking about the future, My own physical needs have stayed at the bottom of the list."
+    },
+    {
+      "id": "MH-263",
+      "category": "self_care",
+      "reverse": false,
+      "text": "When I made a mistake, I have made reasonable space for food, movement, hygiene, or rest."
+    },
+    {
+      "id": "MH-264",
+      "category": "self_care",
+      "reverse": true,
+      "text": "During social interactions, I have regularly neglected basic care because everything felt too much."
+    },
+    {
+      "id": "MH-265",
+      "category": "self_care",
+      "reverse": false,
+      "text": "When I had time to rest, I notice basic needs before they become urgent."
+    },
+    {
+      "id": "MH-266",
+      "category": "self_care",
+      "reverse": true,
+      "text": "While using my phone or computer, My own physical needs have stayed at the bottom of the list."
+    },
+    {
+      "id": "MH-267",
+      "category": "self_care",
+      "reverse": false,
+      "text": "When physical tension appeared, I have made reasonable space for food, movement, hygiene, or rest."
+    },
+    {
+      "id": "MH-268",
+      "category": "self_care",
+      "reverse": true,
+      "text": "When I had to make a decision, I have regularly neglected basic care because everything felt too much."
+    },
+    {
+      "id": "MH-269",
+      "category": "self_care",
+      "reverse": false,
+      "text": "After completing an important task, I notice basic needs before they become urgent."
+    },
+    {
+      "id": "MH-270",
+      "category": "self_care",
+      "reverse": true,
+      "text": "When I felt uncertain, My own physical needs have stayed at the bottom of the list."
+    },
+    {
+      "id": "MH-271",
+      "category": "self_care",
+      "reverse": false,
+      "text": "While following my usual routine, I have made reasonable space for food, movement, hygiene, or rest."
+    },
+    {
+      "id": "MH-272",
+      "category": "self_care",
+      "reverse": true,
+      "text": "When someone checked in on me, I have regularly neglected basic care because everything felt too much."
+    },
+    {
+      "id": "MH-273",
+      "category": "self_care",
+      "reverse": false,
+      "text": "After a poor night of sleep, I notice basic needs before they become urgent."
+    },
+    {
+      "id": "MH-274",
+      "category": "self_care",
+      "reverse": true,
+      "text": "When emotions became strong, My own physical needs have stayed at the bottom of the list."
+    },
+    {
+      "id": "MH-275",
+      "category": "self_care",
+      "reverse": false,
+      "text": "Even when no one else could see my struggle, I have made reasonable space for food, movement, hygiene, or rest."
+    },
+    {
+      "id": "MH-276",
+      "category": "coping",
+      "reverse": false,
+      "text": "During the past two weeks, I have at least one healthy strategy that eases distress."
+    },
+    {
+      "id": "MH-277",
+      "category": "coping",
+      "reverse": true,
+      "text": "On demanding days, My usual coping has often made things harder afterward."
+    },
+    {
+      "id": "MH-278",
+      "category": "coping",
+      "reverse": false,
+      "text": "When plans changed unexpectedly, I can choose coping actions that do not create bigger problems later."
+    },
+    {
+      "id": "MH-279",
+      "category": "coping",
+      "reverse": true,
+      "text": "While managing school, work, or home duties, I have felt unsure how to respond when distress rises."
+    },
+    {
+      "id": "MH-280",
+      "category": "coping",
+      "reverse": false,
+      "text": "After a difficult conversation, I have at least one healthy strategy that eases distress."
+    },
+    {
+      "id": "MH-281",
+      "category": "coping",
+      "reverse": true,
+      "text": "When I woke up in the morning, My usual coping has often made things harder afterward."
+    },
+    {
+      "id": "MH-282",
+      "category": "coping",
+      "reverse": false,
+      "text": "Toward the end of the day, I can choose coping actions that do not create bigger problems later."
+    },
+    {
+      "id": "MH-283",
+      "category": "coping",
+      "reverse": true,
+      "text": "When several tasks competed for attention, I have felt unsure how to respond when distress rises."
+    },
+    {
+      "id": "MH-284",
+      "category": "coping",
+      "reverse": false,
+      "text": "During quiet time by myself, I have at least one healthy strategy that eases distress."
+    },
+    {
+      "id": "MH-285",
+      "category": "coping",
+      "reverse": true,
+      "text": "When I needed support, My usual coping has often made things harder afterward."
+    },
+    {
+      "id": "MH-286",
+      "category": "coping",
+      "reverse": false,
+      "text": "After receiving disappointing news, I can choose coping actions that do not create bigger problems later."
+    },
+    {
+      "id": "MH-287",
+      "category": "coping",
+      "reverse": true,
+      "text": "While thinking about the future, I have felt unsure how to respond when distress rises."
+    },
+    {
+      "id": "MH-288",
+      "category": "coping",
+      "reverse": false,
+      "text": "When I made a mistake, I have at least one healthy strategy that eases distress."
+    },
+    {
+      "id": "MH-289",
+      "category": "coping",
+      "reverse": true,
+      "text": "During social interactions, My usual coping has often made things harder afterward."
+    },
+    {
+      "id": "MH-290",
+      "category": "coping",
+      "reverse": false,
+      "text": "When I had time to rest, I can choose coping actions that do not create bigger problems later."
+    },
+    {
+      "id": "MH-291",
+      "category": "coping",
+      "reverse": true,
+      "text": "While using my phone or computer, I have felt unsure how to respond when distress rises."
+    },
+    {
+      "id": "MH-292",
+      "category": "coping",
+      "reverse": false,
+      "text": "When physical tension appeared, I have at least one healthy strategy that eases distress."
+    },
+    {
+      "id": "MH-293",
+      "category": "coping",
+      "reverse": true,
+      "text": "When I had to make a decision, My usual coping has often made things harder afterward."
+    },
+    {
+      "id": "MH-294",
+      "category": "coping",
+      "reverse": false,
+      "text": "After completing an important task, I can choose coping actions that do not create bigger problems later."
+    },
+    {
+      "id": "MH-295",
+      "category": "coping",
+      "reverse": true,
+      "text": "When I felt uncertain, I have felt unsure how to respond when distress rises."
+    },
+    {
+      "id": "MH-296",
+      "category": "coping",
+      "reverse": false,
+      "text": "While following my usual routine, I have at least one healthy strategy that eases distress."
+    },
+    {
+      "id": "MH-297",
+      "category": "coping",
+      "reverse": true,
+      "text": "When someone checked in on me, My usual coping has often made things harder afterward."
+    },
+    {
+      "id": "MH-298",
+      "category": "coping",
+      "reverse": false,
+      "text": "After a poor night of sleep, I can choose coping actions that do not create bigger problems later."
+    },
+    {
+      "id": "MH-299",
+      "category": "coping",
+      "reverse": true,
+      "text": "When emotions became strong, I have felt unsure how to respond when distress rises."
+    },
+    {
+      "id": "MH-300",
+      "category": "coping",
+      "reverse": false,
+      "text": "Even when no one else could see my struggle, I have at least one healthy strategy that eases distress."
+    },
+    {
+      "id": "MH-301",
+      "category": "resilience",
+      "reverse": false,
+      "text": "During the past two weeks, I have been able to recover after difficult moments."
+    },
+    {
+      "id": "MH-302",
+      "category": "resilience",
+      "reverse": true,
+      "text": "On demanding days, Difficult moments have left me feeling unable to recover."
+    },
+    {
+      "id": "MH-303",
+      "category": "resilience",
+      "reverse": false,
+      "text": "When plans changed unexpectedly, Setbacks have not erased my belief that things can improve."
+    },
+    {
+      "id": "MH-304",
+      "category": "resilience",
+      "reverse": true,
+      "text": "While managing school, work, or home duties, A setback has made improvement feel impossible."
+    },
+    {
+      "id": "MH-305",
+      "category": "resilience",
+      "reverse": false,
+      "text": "After a difficult conversation, I have been able to recover after difficult moments."
+    },
+    {
+      "id": "MH-306",
+      "category": "resilience",
+      "reverse": true,
+      "text": "When I woke up in the morning, Difficult moments have left me feeling unable to recover."
+    },
+    {
+      "id": "MH-307",
+      "category": "resilience",
+      "reverse": false,
+      "text": "Toward the end of the day, Setbacks have not erased my belief that things can improve."
+    },
+    {
+      "id": "MH-308",
+      "category": "resilience",
+      "reverse": true,
+      "text": "When several tasks competed for attention, A setback has made improvement feel impossible."
+    },
+    {
+      "id": "MH-309",
+      "category": "resilience",
+      "reverse": false,
+      "text": "During quiet time by myself, I have been able to recover after difficult moments."
+    },
+    {
+      "id": "MH-310",
+      "category": "resilience",
+      "reverse": true,
+      "text": "When I needed support, Difficult moments have left me feeling unable to recover."
+    },
+    {
+      "id": "MH-311",
+      "category": "resilience",
+      "reverse": false,
+      "text": "After receiving disappointing news, Setbacks have not erased my belief that things can improve."
+    },
+    {
+      "id": "MH-312",
+      "category": "resilience",
+      "reverse": true,
+      "text": "While thinking about the future, A setback has made improvement feel impossible."
+    },
+    {
+      "id": "MH-313",
+      "category": "resilience",
+      "reverse": false,
+      "text": "When I made a mistake, I have been able to recover after difficult moments."
+    },
+    {
+      "id": "MH-314",
+      "category": "resilience",
+      "reverse": true,
+      "text": "During social interactions, Difficult moments have left me feeling unable to recover."
+    },
+    {
+      "id": "MH-315",
+      "category": "resilience",
+      "reverse": false,
+      "text": "When I had time to rest, Setbacks have not erased my belief that things can improve."
+    },
+    {
+      "id": "MH-316",
+      "category": "resilience",
+      "reverse": true,
+      "text": "While using my phone or computer, A setback has made improvement feel impossible."
+    },
+    {
+      "id": "MH-317",
+      "category": "resilience",
+      "reverse": false,
+      "text": "When physical tension appeared, I have been able to recover after difficult moments."
+    },
+    {
+      "id": "MH-318",
+      "category": "resilience",
+      "reverse": true,
+      "text": "When I had to make a decision, Difficult moments have left me feeling unable to recover."
+    },
+    {
+      "id": "MH-319",
+      "category": "resilience",
+      "reverse": false,
+      "text": "After completing an important task, Setbacks have not erased my belief that things can improve."
+    },
+    {
+      "id": "MH-320",
+      "category": "resilience",
+      "reverse": true,
+      "text": "When I felt uncertain, A setback has made improvement feel impossible."
+    },
+    {
+      "id": "MH-321",
+      "category": "resilience",
+      "reverse": false,
+      "text": "While following my usual routine, I have been able to recover after difficult moments."
+    },
+    {
+      "id": "MH-322",
+      "category": "resilience",
+      "reverse": true,
+      "text": "When someone checked in on me, Difficult moments have left me feeling unable to recover."
+    },
+    {
+      "id": "MH-323",
+      "category": "resilience",
+      "reverse": false,
+      "text": "After a poor night of sleep, Setbacks have not erased my belief that things can improve."
+    },
+    {
+      "id": "MH-324",
+      "category": "resilience",
+      "reverse": true,
+      "text": "When emotions became strong, A setback has made improvement feel impossible."
+    },
+    {
+      "id": "MH-325",
+      "category": "resilience",
+      "reverse": false,
+      "text": "Even when no one else could see my struggle, I have been able to recover after difficult moments."
+    },
+    {
+      "id": "MH-326",
+      "category": "burnout",
+      "reverse": false,
+      "text": "During the past two weeks, I have had some genuine time to recover from demands."
+    },
+    {
+      "id": "MH-327",
+      "category": "burnout",
+      "reverse": true,
+      "text": "On demanding days, I have felt emotionally depleted by ongoing demands."
+    },
+    {
+      "id": "MH-328",
+      "category": "burnout",
+      "reverse": false,
+      "text": "When plans changed unexpectedly, Rest has reduced at least part of my exhaustion."
+    },
+    {
+      "id": "MH-329",
+      "category": "burnout",
+      "reverse": true,
+      "text": "While managing school, work, or home duties, Even after resting, I have remained deeply drained."
+    },
+    {
+      "id": "MH-330",
+      "category": "burnout",
+      "reverse": false,
+      "text": "After a difficult conversation, I have had some genuine time to recover from demands."
+    },
+    {
+      "id": "MH-331",
+      "category": "burnout",
+      "reverse": true,
+      "text": "When I woke up in the morning, I have felt emotionally depleted by ongoing demands."
+    },
+    {
+      "id": "MH-332",
+      "category": "burnout",
+      "reverse": false,
+      "text": "Toward the end of the day, Rest has reduced at least part of my exhaustion."
+    },
+    {
+      "id": "MH-333",
+      "category": "burnout",
+      "reverse": true,
+      "text": "When several tasks competed for attention, Even after resting, I have remained deeply drained."
+    },
+    {
+      "id": "MH-334",
+      "category": "burnout",
+      "reverse": false,
+      "text": "During quiet time by myself, I have had some genuine time to recover from demands."
+    },
+    {
+      "id": "MH-335",
+      "category": "burnout",
+      "reverse": true,
+      "text": "When I needed support, I have felt emotionally depleted by ongoing demands."
+    },
+    {
+      "id": "MH-336",
+      "category": "burnout",
+      "reverse": false,
+      "text": "After receiving disappointing news, Rest has reduced at least part of my exhaustion."
+    },
+    {
+      "id": "MH-337",
+      "category": "burnout",
+      "reverse": true,
+      "text": "While thinking about the future, Even after resting, I have remained deeply drained."
+    },
+    {
+      "id": "MH-338",
+      "category": "burnout",
+      "reverse": false,
+      "text": "When I made a mistake, I have had some genuine time to recover from demands."
+    },
+    {
+      "id": "MH-339",
+      "category": "burnout",
+      "reverse": true,
+      "text": "During social interactions, I have felt emotionally depleted by ongoing demands."
+    },
+    {
+      "id": "MH-340",
+      "category": "burnout",
+      "reverse": false,
+      "text": "When I had time to rest, Rest has reduced at least part of my exhaustion."
+    },
+    {
+      "id": "MH-341",
+      "category": "burnout",
+      "reverse": true,
+      "text": "While using my phone or computer, Even after resting, I have remained deeply drained."
+    },
+    {
+      "id": "MH-342",
+      "category": "burnout",
+      "reverse": false,
+      "text": "When physical tension appeared, I have had some genuine time to recover from demands."
+    },
+    {
+      "id": "MH-343",
+      "category": "burnout",
+      "reverse": true,
+      "text": "When I had to make a decision, I have felt emotionally depleted by ongoing demands."
+    },
+    {
+      "id": "MH-344",
+      "category": "burnout",
+      "reverse": false,
+      "text": "After completing an important task, Rest has reduced at least part of my exhaustion."
+    },
+    {
+      "id": "MH-345",
+      "category": "burnout",
+      "reverse": true,
+      "text": "When I felt uncertain, Even after resting, I have remained deeply drained."
+    },
+    {
+      "id": "MH-346",
+      "category": "burnout",
+      "reverse": false,
+      "text": "While following my usual routine, I have had some genuine time to recover from demands."
+    },
+    {
+      "id": "MH-347",
+      "category": "burnout",
+      "reverse": true,
+      "text": "When someone checked in on me, I have felt emotionally depleted by ongoing demands."
+    },
+    {
+      "id": "MH-348",
+      "category": "burnout",
+      "reverse": false,
+      "text": "After a poor night of sleep, Rest has reduced at least part of my exhaustion."
+    },
+    {
+      "id": "MH-349",
+      "category": "burnout",
+      "reverse": true,
+      "text": "When emotions became strong, Even after resting, I have remained deeply drained."
+    },
+    {
+      "id": "MH-350",
+      "category": "burnout",
+      "reverse": false,
+      "text": "Even when no one else could see my struggle, I have had some genuine time to recover from demands."
+    },
+    {
+      "id": "MH-351",
+      "category": "irritability",
+      "reverse": false,
+      "text": "During the past two weeks, I have been able to express frustration without harming relationships."
+    },
+    {
+      "id": "MH-352",
+      "category": "irritability",
+      "reverse": true,
+      "text": "On demanding days, Small frustrations have triggered unusually strong anger."
+    },
+    {
+      "id": "MH-353",
+      "category": "irritability",
+      "reverse": false,
+      "text": "When plans changed unexpectedly, I can pause before responding when irritation rises."
+    },
+    {
+      "id": "MH-354",
+      "category": "irritability",
+      "reverse": true,
+      "text": "While managing school, work, or home duties, Irritability has spilled into interactions I care about."
+    },
+    {
+      "id": "MH-355",
+      "category": "irritability",
+      "reverse": false,
+      "text": "After a difficult conversation, I have been able to express frustration without harming relationships."
+    },
+    {
+      "id": "MH-356",
+      "category": "irritability",
+      "reverse": true,
+      "text": "When I woke up in the morning, Small frustrations have triggered unusually strong anger."
+    },
+    {
+      "id": "MH-357",
+      "category": "irritability",
+      "reverse": false,
+      "text": "Toward the end of the day, I can pause before responding when irritation rises."
+    },
+    {
+      "id": "MH-358",
+      "category": "irritability",
+      "reverse": true,
+      "text": "When several tasks competed for attention, Irritability has spilled into interactions I care about."
+    },
+    {
+      "id": "MH-359",
+      "category": "irritability",
+      "reverse": false,
+      "text": "During quiet time by myself, I have been able to express frustration without harming relationships."
+    },
+    {
+      "id": "MH-360",
+      "category": "irritability",
+      "reverse": true,
+      "text": "When I needed support, Small frustrations have triggered unusually strong anger."
+    },
+    {
+      "id": "MH-361",
+      "category": "irritability",
+      "reverse": false,
+      "text": "After receiving disappointing news, I can pause before responding when irritation rises."
+    },
+    {
+      "id": "MH-362",
+      "category": "irritability",
+      "reverse": true,
+      "text": "While thinking about the future, Irritability has spilled into interactions I care about."
+    },
+    {
+      "id": "MH-363",
+      "category": "irritability",
+      "reverse": false,
+      "text": "When I made a mistake, I have been able to express frustration without harming relationships."
+    },
+    {
+      "id": "MH-364",
+      "category": "irritability",
+      "reverse": true,
+      "text": "During social interactions, Small frustrations have triggered unusually strong anger."
+    },
+    {
+      "id": "MH-365",
+      "category": "irritability",
+      "reverse": false,
+      "text": "When I had time to rest, I can pause before responding when irritation rises."
+    },
+    {
+      "id": "MH-366",
+      "category": "irritability",
+      "reverse": true,
+      "text": "While using my phone or computer, Irritability has spilled into interactions I care about."
+    },
+    {
+      "id": "MH-367",
+      "category": "irritability",
+      "reverse": false,
+      "text": "When physical tension appeared, I have been able to express frustration without harming relationships."
+    },
+    {
+      "id": "MH-368",
+      "category": "irritability",
+      "reverse": true,
+      "text": "When I had to make a decision, Small frustrations have triggered unusually strong anger."
+    },
+    {
+      "id": "MH-369",
+      "category": "irritability",
+      "reverse": false,
+      "text": "After completing an important task, I can pause before responding when irritation rises."
+    },
+    {
+      "id": "MH-370",
+      "category": "irritability",
+      "reverse": true,
+      "text": "When I felt uncertain, Irritability has spilled into interactions I care about."
+    },
+    {
+      "id": "MH-371",
+      "category": "irritability",
+      "reverse": false,
+      "text": "While following my usual routine, I have been able to express frustration without harming relationships."
+    },
+    {
+      "id": "MH-372",
+      "category": "irritability",
+      "reverse": true,
+      "text": "When someone checked in on me, Small frustrations have triggered unusually strong anger."
+    },
+    {
+      "id": "MH-373",
+      "category": "irritability",
+      "reverse": false,
+      "text": "After a poor night of sleep, I can pause before responding when irritation rises."
+    },
+    {
+      "id": "MH-374",
+      "category": "irritability",
+      "reverse": true,
+      "text": "When emotions became strong, Irritability has spilled into interactions I care about."
+    },
+    {
+      "id": "MH-375",
+      "category": "irritability",
+      "reverse": false,
+      "text": "Even when no one else could see my struggle, I have been able to express frustration without harming relationships."
+    },
+    {
+      "id": "MH-376",
+      "category": "physical_tension",
+      "reverse": false,
+      "text": "During the past two weeks, My body has had periods of feeling relaxed and safe."
+    },
+    {
+      "id": "MH-377",
+      "category": "physical_tension",
+      "reverse": true,
+      "text": "On demanding days, Tension, restlessness, or discomfort has stayed in my body."
+    },
+    {
+      "id": "MH-378",
+      "category": "physical_tension",
+      "reverse": false,
+      "text": "When plans changed unexpectedly, I can notice and release some physical tension."
+    },
+    {
+      "id": "MH-379",
+      "category": "physical_tension",
+      "reverse": true,
+      "text": "While managing school, work, or home duties, My body has remained on alert when no immediate danger was present."
+    },
+    {
+      "id": "MH-380",
+      "category": "physical_tension",
+      "reverse": false,
+      "text": "After a difficult conversation, My body has had periods of feeling relaxed and safe."
+    },
+    {
+      "id": "MH-381",
+      "category": "physical_tension",
+      "reverse": true,
+      "text": "When I woke up in the morning, Tension, restlessness, or discomfort has stayed in my body."
+    },
+    {
+      "id": "MH-382",
+      "category": "physical_tension",
+      "reverse": false,
+      "text": "Toward the end of the day, I can notice and release some physical tension."
+    },
+    {
+      "id": "MH-383",
+      "category": "physical_tension",
+      "reverse": true,
+      "text": "When several tasks competed for attention, My body has remained on alert when no immediate danger was present."
+    },
+    {
+      "id": "MH-384",
+      "category": "physical_tension",
+      "reverse": false,
+      "text": "During quiet time by myself, My body has had periods of feeling relaxed and safe."
+    },
+    {
+      "id": "MH-385",
+      "category": "physical_tension",
+      "reverse": true,
+      "text": "When I needed support, Tension, restlessness, or discomfort has stayed in my body."
+    },
+    {
+      "id": "MH-386",
+      "category": "physical_tension",
+      "reverse": false,
+      "text": "After receiving disappointing news, I can notice and release some physical tension."
+    },
+    {
+      "id": "MH-387",
+      "category": "physical_tension",
+      "reverse": true,
+      "text": "While thinking about the future, My body has remained on alert when no immediate danger was present."
+    },
+    {
+      "id": "MH-388",
+      "category": "physical_tension",
+      "reverse": false,
+      "text": "When I made a mistake, My body has had periods of feeling relaxed and safe."
+    },
+    {
+      "id": "MH-389",
+      "category": "physical_tension",
+      "reverse": true,
+      "text": "During social interactions, Tension, restlessness, or discomfort has stayed in my body."
+    },
+    {
+      "id": "MH-390",
+      "category": "physical_tension",
+      "reverse": false,
+      "text": "When I had time to rest, I can notice and release some physical tension."
+    },
+    {
+      "id": "MH-391",
+      "category": "physical_tension",
+      "reverse": true,
+      "text": "While using my phone or computer, My body has remained on alert when no immediate danger was present."
+    },
+    {
+      "id": "MH-392",
+      "category": "physical_tension",
+      "reverse": false,
+      "text": "When physical tension appeared, My body has had periods of feeling relaxed and safe."
+    },
+    {
+      "id": "MH-393",
+      "category": "physical_tension",
+      "reverse": true,
+      "text": "When I had to make a decision, Tension, restlessness, or discomfort has stayed in my body."
+    },
+    {
+      "id": "MH-394",
+      "category": "physical_tension",
+      "reverse": false,
+      "text": "After completing an important task, I can notice and release some physical tension."
+    },
+    {
+      "id": "MH-395",
+      "category": "physical_tension",
+      "reverse": true,
+      "text": "When I felt uncertain, My body has remained on alert when no immediate danger was present."
+    },
+    {
+      "id": "MH-396",
+      "category": "physical_tension",
+      "reverse": false,
+      "text": "While following my usual routine, My body has had periods of feeling relaxed and safe."
+    },
+    {
+      "id": "MH-397",
+      "category": "physical_tension",
+      "reverse": true,
+      "text": "When someone checked in on me, Tension, restlessness, or discomfort has stayed in my body."
+    },
+    {
+      "id": "MH-398",
+      "category": "physical_tension",
+      "reverse": false,
+      "text": "After a poor night of sleep, I can notice and release some physical tension."
+    },
+    {
+      "id": "MH-399",
+      "category": "physical_tension",
+      "reverse": true,
+      "text": "When emotions became strong, My body has remained on alert when no immediate danger was present."
+    },
+    {
+      "id": "MH-400",
+      "category": "physical_tension",
+      "reverse": false,
+      "text": "Even when no one else could see my struggle, My body has had periods of feeling relaxed and safe."
+    },
+    {
+      "id": "MH-401",
+      "category": "hope",
+      "reverse": false,
+      "text": "During the past two weeks, I can identify something meaningful to move toward."
+    },
+    {
+      "id": "MH-402",
+      "category": "hope",
+      "reverse": true,
+      "text": "On demanding days, The future has felt empty or without direction."
+    },
+    {
+      "id": "MH-403",
+      "category": "hope",
+      "reverse": false,
+      "text": "When plans changed unexpectedly, I have had at least a small sense that the future can improve."
+    },
+    {
+      "id": "MH-404",
+      "category": "hope",
+      "reverse": true,
+      "text": "While managing school, work, or home duties, I have struggled to find meaning in activities that once mattered."
+    },
+    {
+      "id": "MH-405",
+      "category": "hope",
+      "reverse": false,
+      "text": "After a difficult conversation, I can identify something meaningful to move toward."
+    },
+    {
+      "id": "MH-406",
+      "category": "hope",
+      "reverse": true,
+      "text": "When I woke up in the morning, The future has felt empty or without direction."
+    },
+    {
+      "id": "MH-407",
+      "category": "hope",
+      "reverse": false,
+      "text": "Toward the end of the day, I have had at least a small sense that the future can improve."
+    },
+    {
+      "id": "MH-408",
+      "category": "hope",
+      "reverse": true,
+      "text": "When several tasks competed for attention, I have struggled to find meaning in activities that once mattered."
+    },
+    {
+      "id": "MH-409",
+      "category": "hope",
+      "reverse": false,
+      "text": "During quiet time by myself, I can identify something meaningful to move toward."
+    },
+    {
+      "id": "MH-410",
+      "category": "hope",
+      "reverse": true,
+      "text": "When I needed support, The future has felt empty or without direction."
+    },
+    {
+      "id": "MH-411",
+      "category": "hope",
+      "reverse": false,
+      "text": "After receiving disappointing news, I have had at least a small sense that the future can improve."
+    },
+    {
+      "id": "MH-412",
+      "category": "hope",
+      "reverse": true,
+      "text": "While thinking about the future, I have struggled to find meaning in activities that once mattered."
+    },
+    {
+      "id": "MH-413",
+      "category": "hope",
+      "reverse": false,
+      "text": "When I made a mistake, I can identify something meaningful to move toward."
+    },
+    {
+      "id": "MH-414",
+      "category": "hope",
+      "reverse": true,
+      "text": "During social interactions, The future has felt empty or without direction."
+    },
+    {
+      "id": "MH-415",
+      "category": "hope",
+      "reverse": false,
+      "text": "When I had time to rest, I have had at least a small sense that the future can improve."
+    },
+    {
+      "id": "MH-416",
+      "category": "hope",
+      "reverse": true,
+      "text": "While using my phone or computer, I have struggled to find meaning in activities that once mattered."
+    },
+    {
+      "id": "MH-417",
+      "category": "hope",
+      "reverse": false,
+      "text": "When physical tension appeared, I can identify something meaningful to move toward."
+    },
+    {
+      "id": "MH-418",
+      "category": "hope",
+      "reverse": true,
+      "text": "When I had to make a decision, The future has felt empty or without direction."
+    },
+    {
+      "id": "MH-419",
+      "category": "hope",
+      "reverse": false,
+      "text": "After completing an important task, I have had at least a small sense that the future can improve."
+    },
+    {
+      "id": "MH-420",
+      "category": "hope",
+      "reverse": true,
+      "text": "When I felt uncertain, I have struggled to find meaning in activities that once mattered."
+    },
+    {
+      "id": "MH-421",
+      "category": "hope",
+      "reverse": false,
+      "text": "While following my usual routine, I can identify something meaningful to move toward."
+    },
+    {
+      "id": "MH-422",
+      "category": "hope",
+      "reverse": true,
+      "text": "When someone checked in on me, The future has felt empty or without direction."
+    },
+    {
+      "id": "MH-423",
+      "category": "hope",
+      "reverse": false,
+      "text": "After a poor night of sleep, I have had at least a small sense that the future can improve."
+    },
+    {
+      "id": "MH-424",
+      "category": "hope",
+      "reverse": true,
+      "text": "When emotions became strong, I have struggled to find meaning in activities that once mattered."
+    },
+    {
+      "id": "MH-425",
+      "category": "hope",
+      "reverse": false,
+      "text": "Even when no one else could see my struggle, I can identify something meaningful to move toward."
+    },
+    {
+      "id": "MH-426",
+      "category": "adaptability",
+      "reverse": false,
+      "text": "During the past two weeks, I can adjust plans when circumstances change."
+    },
+    {
+      "id": "MH-427",
+      "category": "adaptability",
+      "reverse": true,
+      "text": "On demanding days, Unexpected change has felt almost impossible to manage."
+    },
+    {
+      "id": "MH-428",
+      "category": "adaptability",
+      "reverse": false,
+      "text": "When plans changed unexpectedly, I have tolerated some uncertainty without needing immediate answers."
+    },
+    {
+      "id": "MH-429",
+      "category": "adaptability",
+      "reverse": true,
+      "text": "While managing school, work, or home duties, Uncertainty has kept me in a constant state of alarm."
+    },
+    {
+      "id": "MH-430",
+      "category": "adaptability",
+      "reverse": false,
+      "text": "After a difficult conversation, I can adjust plans when circumstances change."
+    },
+    {
+      "id": "MH-431",
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When I woke up in the morning, Unexpected change has felt almost impossible to manage."
+    },
+    {
+      "id": "MH-432",
+      "category": "adaptability",
+      "reverse": false,
+      "text": "Toward the end of the day, I have tolerated some uncertainty without needing immediate answers."
+    },
+    {
+      "id": "MH-433",
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When several tasks competed for attention, Uncertainty has kept me in a constant state of alarm."
+    },
+    {
+      "id": "MH-434",
+      "category": "adaptability",
+      "reverse": false,
+      "text": "During quiet time by myself, I can adjust plans when circumstances change."
+    },
+    {
+      "id": "MH-435",
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When I needed support, Unexpected change has felt almost impossible to manage."
+    },
+    {
+      "id": "MH-436",
+      "category": "adaptability",
+      "reverse": false,
+      "text": "After receiving disappointing news, I have tolerated some uncertainty without needing immediate answers."
+    },
+    {
+      "id": "MH-437",
+      "category": "adaptability",
+      "reverse": true,
+      "text": "While thinking about the future, Uncertainty has kept me in a constant state of alarm."
+    },
+    {
+      "id": "MH-438",
+      "category": "adaptability",
+      "reverse": false,
+      "text": "When I made a mistake, I can adjust plans when circumstances change."
+    },
+    {
+      "id": "MH-439",
+      "category": "adaptability",
+      "reverse": true,
+      "text": "During social interactions, Unexpected change has felt almost impossible to manage."
+    },
+    {
+      "id": "MH-440",
+      "category": "adaptability",
+      "reverse": false,
+      "text": "When I had time to rest, I have tolerated some uncertainty without needing immediate answers."
+    },
+    {
+      "id": "MH-441",
+      "category": "adaptability",
+      "reverse": true,
+      "text": "While using my phone or computer, Uncertainty has kept me in a constant state of alarm."
+    },
+    {
+      "id": "MH-442",
+      "category": "adaptability",
+      "reverse": false,
+      "text": "When physical tension appeared, I can adjust plans when circumstances change."
+    },
+    {
+      "id": "MH-443",
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When I had to make a decision, Unexpected change has felt almost impossible to manage."
+    },
+    {
+      "id": "MH-444",
+      "category": "adaptability",
+      "reverse": false,
+      "text": "After completing an important task, I have tolerated some uncertainty without needing immediate answers."
+    },
+    {
+      "id": "MH-445",
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When I felt uncertain, Uncertainty has kept me in a constant state of alarm."
+    },
+    {
+      "id": "MH-446",
+      "category": "adaptability",
+      "reverse": false,
+      "text": "While following my usual routine, I can adjust plans when circumstances change."
+    },
+    {
+      "id": "MH-447",
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When someone checked in on me, Unexpected change has felt almost impossible to manage."
+    },
+    {
+      "id": "MH-448",
+      "category": "adaptability",
+      "reverse": false,
+      "text": "After a poor night of sleep, I have tolerated some uncertainty without needing immediate answers."
+    },
+    {
+      "id": "MH-449",
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When emotions became strong, Uncertainty has kept me in a constant state of alarm."
+    },
+    {
+      "id": "MH-450",
+      "category": "adaptability",
+      "reverse": false,
+      "text": "Even when no one else could see my struggle, I can adjust plans when circumstances change."
+    },
+    {
+      "id": "MH-451",
+      "category": "digital_balance",
+      "reverse": false,
+      "text": "During the past two weeks, I have been able to step away from upsetting digital content."
+    },
+    {
+      "id": "MH-452",
+      "category": "digital_balance",
+      "reverse": true,
+      "text": "On demanding days, Online content has repeatedly worsened my mood or anxiety."
+    },
+    {
+      "id": "MH-453",
+      "category": "digital_balance",
+      "reverse": false,
+      "text": "When plans changed unexpectedly, My use of news or social media has included reasonable limits."
+    },
+    {
+      "id": "MH-454",
+      "category": "digital_balance",
+      "reverse": true,
+      "text": "While managing school, work, or home duties, I have kept scrolling even when I noticed it harming my wellbeing."
+    },
+    {
+      "id": "MH-455",
+      "category": "digital_balance",
+      "reverse": false,
+      "text": "After a difficult conversation, I have been able to step away from upsetting digital content."
+    },
+    {
+      "id": "MH-456",
+      "category": "digital_balance",
+      "reverse": true,
+      "text": "When I woke up in the morning, Online content has repeatedly worsened my mood or anxiety."
+    },
+    {
+      "id": "MH-457",
+      "category": "digital_balance",
+      "reverse": false,
+      "text": "Toward the end of the day, My use of news or social media has included reasonable limits."
+    },
+    {
+      "id": "MH-458",
+      "category": "digital_balance",
+      "reverse": true,
+      "text": "When several tasks competed for attention, I have kept scrolling even when I noticed it harming my wellbeing."
+    },
+    {
+      "id": "MH-459",
+      "category": "digital_balance",
+      "reverse": false,
+      "text": "During quiet time by myself, I have been able to step away from upsetting digital content."
+    },
+    {
+      "id": "MH-460",
+      "category": "digital_balance",
+      "reverse": true,
+      "text": "When I needed support, Online content has repeatedly worsened my mood or anxiety."
+    },
+    {
+      "id": "MH-461",
+      "category": "digital_balance",
+      "reverse": false,
+      "text": "After receiving disappointing news, My use of news or social media has included reasonable limits."
+    },
+    {
+      "id": "MH-462",
+      "category": "digital_balance",
+      "reverse": true,
+      "text": "While thinking about the future, I have kept scrolling even when I noticed it harming my wellbeing."
+    },
+    {
+      "id": "MH-463",
+      "category": "digital_balance",
+      "reverse": false,
+      "text": "When I made a mistake, I have been able to step away from upsetting digital content."
+    },
+    {
+      "id": "MH-464",
+      "category": "digital_balance",
+      "reverse": true,
+      "text": "During social interactions, Online content has repeatedly worsened my mood or anxiety."
+    },
+    {
+      "id": "MH-465",
+      "category": "digital_balance",
+      "reverse": false,
+      "text": "When I had time to rest, My use of news or social media has included reasonable limits."
+    },
+    {
+      "id": "MH-466",
+      "category": "digital_balance",
+      "reverse": true,
+      "text": "While using my phone or computer, I have kept scrolling even when I noticed it harming my wellbeing."
+    },
+    {
+      "id": "MH-467",
+      "category": "digital_balance",
+      "reverse": false,
+      "text": "When physical tension appeared, I have been able to step away from upsetting digital content."
+    },
+    {
+      "id": "MH-468",
+      "category": "digital_balance",
+      "reverse": true,
+      "text": "When I had to make a decision, Online content has repeatedly worsened my mood or anxiety."
+    },
+    {
+      "id": "MH-469",
+      "category": "digital_balance",
+      "reverse": false,
+      "text": "After completing an important task, My use of news or social media has included reasonable limits."
+    },
+    {
+      "id": "MH-470",
+      "category": "digital_balance",
+      "reverse": true,
+      "text": "When I felt uncertain, I have kept scrolling even when I noticed it harming my wellbeing."
+    },
+    {
+      "id": "MH-471",
+      "category": "digital_balance",
+      "reverse": false,
+      "text": "While following my usual routine, I have been able to step away from upsetting digital content."
+    },
+    {
+      "id": "MH-472",
+      "category": "digital_balance",
+      "reverse": true,
+      "text": "When someone checked in on me, Online content has repeatedly worsened my mood or anxiety."
+    },
+    {
+      "id": "MH-473",
+      "category": "digital_balance",
+      "reverse": false,
+      "text": "After a poor night of sleep, My use of news or social media has included reasonable limits."
+    },
+    {
+      "id": "MH-474",
+      "category": "digital_balance",
+      "reverse": true,
+      "text": "When emotions became strong, I have kept scrolling even when I noticed it harming my wellbeing."
+    },
+    {
+      "id": "MH-475",
+      "category": "digital_balance",
+      "reverse": false,
+      "text": "Even when no one else could see my struggle, I have been able to step away from upsetting digital content."
+    },
+    {
+      "id": "MH-476",
+      "category": "help_seeking",
+      "reverse": false,
+      "text": "During the past two weeks, I know at least one person or service I could contact for support."
+    },
+    {
+      "id": "MH-477",
+      "category": "help_seeking",
+      "reverse": true,
+      "text": "On demanding days, I feel I must hide emotional struggles from everyone."
+    },
+    {
+      "id": "MH-478",
+      "category": "help_seeking",
+      "reverse": false,
+      "text": "When plans changed unexpectedly, I believe asking for mental-health support is a valid form of care."
+    },
+    {
+      "id": "MH-479",
+      "category": "help_seeking",
+      "reverse": true,
+      "text": "While managing school, work, or home duties, I would not know where to turn if distress became overwhelming."
+    },
+    {
+      "id": "MH-480",
+      "category": "help_seeking",
+      "reverse": false,
+      "text": "After a difficult conversation, I know at least one person or service I could contact for support."
+    },
+    {
+      "id": "MH-481",
+      "category": "help_seeking",
+      "reverse": true,
+      "text": "When I woke up in the morning, I feel I must hide emotional struggles from everyone."
+    },
+    {
+      "id": "MH-482",
+      "category": "help_seeking",
+      "reverse": false,
+      "text": "Toward the end of the day, I believe asking for mental-health support is a valid form of care."
+    },
+    {
+      "id": "MH-483",
+      "category": "help_seeking",
+      "reverse": true,
+      "text": "When several tasks competed for attention, I would not know where to turn if distress became overwhelming."
+    },
+    {
+      "id": "MH-484",
+      "category": "help_seeking",
+      "reverse": false,
+      "text": "During quiet time by myself, I know at least one person or service I could contact for support."
+    },
+    {
+      "id": "MH-485",
+      "category": "help_seeking",
+      "reverse": true,
+      "text": "When I needed support, I feel I must hide emotional struggles from everyone."
+    },
+    {
+      "id": "MH-486",
+      "category": "help_seeking",
+      "reverse": false,
+      "text": "After receiving disappointing news, I believe asking for mental-health support is a valid form of care."
+    },
+    {
+      "id": "MH-487",
+      "category": "help_seeking",
+      "reverse": true,
+      "text": "While thinking about the future, I would not know where to turn if distress became overwhelming."
+    },
+    {
+      "id": "MH-488",
+      "category": "help_seeking",
+      "reverse": false,
+      "text": "When I made a mistake, I know at least one person or service I could contact for support."
+    },
+    {
+      "id": "MH-489",
+      "category": "help_seeking",
+      "reverse": true,
+      "text": "During social interactions, I feel I must hide emotional struggles from everyone."
+    },
+    {
+      "id": "MH-490",
+      "category": "help_seeking",
+      "reverse": false,
+      "text": "When I had time to rest, I believe asking for mental-health support is a valid form of care."
+    },
+    {
+      "id": "MH-491",
+      "category": "help_seeking",
+      "reverse": true,
+      "text": "While using my phone or computer, I would not know where to turn if distress became overwhelming."
+    },
+    {
+      "id": "MH-492",
+      "category": "help_seeking",
+      "reverse": false,
+      "text": "When physical tension appeared, I know at least one person or service I could contact for support."
+    },
+    {
+      "id": "MH-493",
+      "category": "help_seeking",
+      "reverse": true,
+      "text": "When I had to make a decision, I feel I must hide emotional struggles from everyone."
+    },
+    {
+      "id": "MH-494",
+      "category": "help_seeking",
+      "reverse": false,
+      "text": "After completing an important task, I believe asking for mental-health support is a valid form of care."
+    },
+    {
+      "id": "MH-495",
+      "category": "help_seeking",
+      "reverse": true,
+      "text": "When I felt uncertain, I would not know where to turn if distress became overwhelming."
+    },
+    {
+      "id": "MH-496",
+      "category": "help_seeking",
+      "reverse": false,
+      "text": "While following my usual routine, I know at least one person or service I could contact for support."
+    },
+    {
+      "id": "MH-497",
+      "category": "help_seeking",
+      "reverse": true,
+      "text": "When someone checked in on me, I feel I must hide emotional struggles from everyone."
+    },
+    {
+      "id": "MH-498",
+      "category": "help_seeking",
+      "reverse": false,
+      "text": "After a poor night of sleep, I believe asking for mental-health support is a valid form of care."
+    },
+    {
+      "id": "MH-499",
+      "category": "help_seeking",
+      "reverse": true,
+      "text": "When emotions became strong, I would not know where to turn if distress became overwhelming."
+    },
+    {
+      "id": "MH-500",
+      "category": "help_seeking",
+      "reverse": false,
+      "text": "Even when no one else could see my struggle, I know at least one person or service I could contact for support."
+    }
+  ]
+}

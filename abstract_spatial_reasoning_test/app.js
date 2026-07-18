@@ -28,7 +28,7 @@ function renderQuestion(){
   $('.counter').textContent=`${config.question} ${at+1} / ${quiz.length}`;
   $('.fill').style.width=`${at/quiz.length*100}%`;
   $('.category').textContent=`${cat.icon} ${cat.label}`;$('.difficulty').textContent=config[q.difficulty];
-  $('.prompt').textContent=q.prompt;$('.visual').textContent=q.visual;
+  $('.prompt').textContent=q.prompt;$('.visual').textContent=q.visual;$('.visual').classList.toggle('hidden',!q.visual);
   $('.options').innerHTML=q.options.map((o,i)=>`<button class="option" data-i="${i}"><span>${String.fromCharCode(65+i)}.</span> ${escapeHtml(o)}</button>`).join('');
   $('.feedback').classList.add('hidden');$('.feedback').textContent='';$('.next').disabled=true;$('.next').textContent=at===quiz.length-1?config.finish:config.next;answered=false;
   document.querySelectorAll('.option').forEach(b=>b.addEventListener('click',choose));

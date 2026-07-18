@@ -1,0 +1,3153 @@
+{
+  "meta": {
+    "title": "Emotional Availability Test",
+    "description": "A private 500-statement reflection across 20 dimensions of emotional availability.",
+    "scale": {
+      "min": 1,
+      "max": 10,
+      "minLabel": "Not at all true",
+      "maxLabel": "Very true"
+    },
+    "categories": [
+      {
+        "id": "awareness",
+        "label": "Emotional Awareness",
+        "icon": "🧠"
+      },
+      {
+        "id": "expression",
+        "label": "Emotional Expression",
+        "icon": "🗣️"
+      },
+      {
+        "id": "receptivity",
+        "label": "Receptivity to Others",
+        "icon": "📬"
+      },
+      {
+        "id": "empathy",
+        "label": "Empathy & Perspective-Taking",
+        "icon": "💗"
+      },
+      {
+        "id": "listening",
+        "label": "Active Listening",
+        "icon": "👂"
+      },
+      {
+        "id": "vulnerability",
+        "label": "Vulnerability & Openness",
+        "icon": "🌱"
+      },
+      {
+        "id": "trust",
+        "label": "Emotional Trust",
+        "icon": "🤝"
+      },
+      {
+        "id": "consistency",
+        "label": "Consistency & Reliability",
+        "icon": "🧱"
+      },
+      {
+        "id": "presence",
+        "label": "Presence & Attention",
+        "icon": "🕯️"
+      },
+      {
+        "id": "responsiveness",
+        "label": "Emotional Responsiveness",
+        "icon": "🔔"
+      },
+      {
+        "id": "validation",
+        "label": "Validation",
+        "icon": "✅"
+      },
+      {
+        "id": "warmth",
+        "label": "Warmth & Affection",
+        "icon": "☀️"
+      },
+      {
+        "id": "boundaries",
+        "label": "Emotional Boundaries",
+        "icon": "🚧"
+      },
+      {
+        "id": "conflict",
+        "label": "Availability During Conflict",
+        "icon": "⚖️"
+      },
+      {
+        "id": "repair",
+        "label": "Repair & Accountability",
+        "icon": "🧵"
+      },
+      {
+        "id": "giving_support",
+        "label": "Giving Support",
+        "icon": "🤲"
+      },
+      {
+        "id": "receiving_support",
+        "label": "Receiving Support",
+        "icon": "📥"
+      },
+      {
+        "id": "intimacy",
+        "label": "Emotional Intimacy",
+        "icon": "💞"
+      },
+      {
+        "id": "autonomy",
+        "label": "Autonomy & Interdependence",
+        "icon": "🧭"
+      },
+      {
+        "id": "stress_capacity",
+        "label": "Availability Under Stress",
+        "icon": "🌧️"
+      }
+    ],
+    "levels": [
+      {
+        "min": 8.5,
+        "max": 10.01,
+        "label": "Strong Emotional Availability",
+        "emoji": "🌟",
+        "desc": "Your responses suggest consistent emotional awareness, openness, responsiveness, and capacity for connected boundaries."
+      },
+      {
+        "min": 7,
+        "max": 8.5,
+        "label": "Generally Available",
+        "emoji": "🌿",
+        "desc": "You appear emotionally available in many situations, with a few contexts where stress, vulnerability, or conflict may reduce access."
+      },
+      {
+        "min": 5.5,
+        "max": 7,
+        "label": "Developing Availability",
+        "emoji": "🌱",
+        "desc": "You show meaningful relational strengths alongside areas where expression, listening, trust, or repair could grow."
+      },
+      {
+        "min": 4,
+        "max": 5.5,
+        "label": "Availability Under Strain",
+        "emoji": "🤲",
+        "desc": "Emotional connection may feel difficult in several situations. Focused communication and relationship skills practice may help."
+      },
+      {
+        "min": 1,
+        "max": 4,
+        "label": "Limited Current Availability",
+        "emoji": "💛",
+        "desc": "You may currently find emotional openness or responsiveness difficult. Consider gentle skills practice or support from a qualified counsellor if this causes distress."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "EA-001",
+      "category": "awareness",
+      "reverse": false,
+      "text": "In my closest relationships, I can usually identify what I am feeling."
+    },
+    {
+      "id": "EA-002",
+      "category": "awareness",
+      "reverse": true,
+      "text": "During an ordinary conversation, I often feel something strongly without knowing what it is."
+    },
+    {
+      "id": "EA-003",
+      "category": "awareness",
+      "reverse": false,
+      "text": "When someone shares difficult news, I notice emotional changes before they strongly affect my behaviour."
+    },
+    {
+      "id": "EA-004",
+      "category": "awareness",
+      "reverse": true,
+      "text": "After a misunderstanding, I recognise my feelings only after they have already shaped my actions."
+    },
+    {
+      "id": "EA-005",
+      "category": "awareness",
+      "reverse": false,
+      "text": "When emotions become intense, I can usually identify what I am feeling."
+    },
+    {
+      "id": "EA-006",
+      "category": "awareness",
+      "reverse": true,
+      "text": "While spending time together, I often feel something strongly without knowing what it is."
+    },
+    {
+      "id": "EA-007",
+      "category": "awareness",
+      "reverse": false,
+      "text": "When I feel criticised, I notice emotional changes before they strongly affect my behaviour."
+    },
+    {
+      "id": "EA-008",
+      "category": "awareness",
+      "reverse": true,
+      "text": "When another person needs reassurance, I recognise my feelings only after they have already shaped my actions."
+    },
+    {
+      "id": "EA-009",
+      "category": "awareness",
+      "reverse": false,
+      "text": "After a stressful day, I can usually identify what I am feeling."
+    },
+    {
+      "id": "EA-010",
+      "category": "awareness",
+      "reverse": true,
+      "text": "When I need support myself, I often feel something strongly without knowing what it is."
+    },
+    {
+      "id": "EA-011",
+      "category": "awareness",
+      "reverse": false,
+      "text": "During disagreement, I notice emotional changes before they strongly affect my behaviour."
+    },
+    {
+      "id": "EA-012",
+      "category": "awareness",
+      "reverse": true,
+      "text": "When someone sets a boundary, I recognise my feelings only after they have already shaped my actions."
+    },
+    {
+      "id": "EA-013",
+      "category": "awareness",
+      "reverse": false,
+      "text": "When I have limited time or energy, I can usually identify what I am feeling."
+    },
+    {
+      "id": "EA-014",
+      "category": "awareness",
+      "reverse": true,
+      "text": "While discussing a sensitive subject, I often feel something strongly without knowing what it is."
+    },
+    {
+      "id": "EA-015",
+      "category": "awareness",
+      "reverse": false,
+      "text": "When another person becomes tearful, I notice emotional changes before they strongly affect my behaviour."
+    },
+    {
+      "id": "EA-016",
+      "category": "awareness",
+      "reverse": true,
+      "text": "After I realise I caused hurt, I recognise my feelings only after they have already shaped my actions."
+    },
+    {
+      "id": "EA-017",
+      "category": "awareness",
+      "reverse": false,
+      "text": "When trust is still developing, I can usually identify what I am feeling."
+    },
+    {
+      "id": "EA-018",
+      "category": "awareness",
+      "reverse": true,
+      "text": "When someone’s feelings differ from mine, I often feel something strongly without knowing what it is."
+    },
+    {
+      "id": "EA-019",
+      "category": "awareness",
+      "reverse": false,
+      "text": "During periods of distance, I notice emotional changes before they strongly affect my behaviour."
+    },
+    {
+      "id": "EA-020",
+      "category": "awareness",
+      "reverse": true,
+      "text": "When closeness feels vulnerable, I recognise my feelings only after they have already shaped my actions."
+    },
+    {
+      "id": "EA-021",
+      "category": "awareness",
+      "reverse": false,
+      "text": "While balancing several responsibilities, I can usually identify what I am feeling."
+    },
+    {
+      "id": "EA-022",
+      "category": "awareness",
+      "reverse": true,
+      "text": "When a relationship changes, I often feel something strongly without knowing what it is."
+    },
+    {
+      "id": "EA-023",
+      "category": "awareness",
+      "reverse": false,
+      "text": "When words are hard to find, I notice emotional changes before they strongly affect my behaviour."
+    },
+    {
+      "id": "EA-024",
+      "category": "awareness",
+      "reverse": true,
+      "text": "While trying to reconnect, I recognise my feelings only after they have already shaped my actions."
+    },
+    {
+      "id": "EA-025",
+      "category": "awareness",
+      "reverse": false,
+      "text": "When my care is not immediately recognised, I can usually identify what I am feeling."
+    },
+    {
+      "id": "EA-026",
+      "category": "expression",
+      "reverse": false,
+      "text": "In my closest relationships, I can describe my feelings in understandable words."
+    },
+    {
+      "id": "EA-027",
+      "category": "expression",
+      "reverse": true,
+      "text": "During an ordinary conversation, I hide important feelings until they become overwhelming."
+    },
+    {
+      "id": "EA-028",
+      "category": "expression",
+      "reverse": false,
+      "text": "When someone shares difficult news, I express emotions without expecting others to read my mind."
+    },
+    {
+      "id": "EA-029",
+      "category": "expression",
+      "reverse": true,
+      "text": "After a misunderstanding, I expect people to know how I feel without telling them."
+    },
+    {
+      "id": "EA-030",
+      "category": "expression",
+      "reverse": false,
+      "text": "When emotions become intense, I can describe my feelings in understandable words."
+    },
+    {
+      "id": "EA-031",
+      "category": "expression",
+      "reverse": true,
+      "text": "While spending time together, I hide important feelings until they become overwhelming."
+    },
+    {
+      "id": "EA-032",
+      "category": "expression",
+      "reverse": false,
+      "text": "When I feel criticised, I express emotions without expecting others to read my mind."
+    },
+    {
+      "id": "EA-033",
+      "category": "expression",
+      "reverse": true,
+      "text": "When another person needs reassurance, I expect people to know how I feel without telling them."
+    },
+    {
+      "id": "EA-034",
+      "category": "expression",
+      "reverse": false,
+      "text": "After a stressful day, I can describe my feelings in understandable words."
+    },
+    {
+      "id": "EA-035",
+      "category": "expression",
+      "reverse": true,
+      "text": "When I need support myself, I hide important feelings until they become overwhelming."
+    },
+    {
+      "id": "EA-036",
+      "category": "expression",
+      "reverse": false,
+      "text": "During disagreement, I express emotions without expecting others to read my mind."
+    },
+    {
+      "id": "EA-037",
+      "category": "expression",
+      "reverse": true,
+      "text": "When someone sets a boundary, I expect people to know how I feel without telling them."
+    },
+    {
+      "id": "EA-038",
+      "category": "expression",
+      "reverse": false,
+      "text": "When I have limited time or energy, I can describe my feelings in understandable words."
+    },
+    {
+      "id": "EA-039",
+      "category": "expression",
+      "reverse": true,
+      "text": "While discussing a sensitive subject, I hide important feelings until they become overwhelming."
+    },
+    {
+      "id": "EA-040",
+      "category": "expression",
+      "reverse": false,
+      "text": "When another person becomes tearful, I express emotions without expecting others to read my mind."
+    },
+    {
+      "id": "EA-041",
+      "category": "expression",
+      "reverse": true,
+      "text": "After I realise I caused hurt, I expect people to know how I feel without telling them."
+    },
+    {
+      "id": "EA-042",
+      "category": "expression",
+      "reverse": false,
+      "text": "When trust is still developing, I can describe my feelings in understandable words."
+    },
+    {
+      "id": "EA-043",
+      "category": "expression",
+      "reverse": true,
+      "text": "When someone’s feelings differ from mine, I hide important feelings until they become overwhelming."
+    },
+    {
+      "id": "EA-044",
+      "category": "expression",
+      "reverse": false,
+      "text": "During periods of distance, I express emotions without expecting others to read my mind."
+    },
+    {
+      "id": "EA-045",
+      "category": "expression",
+      "reverse": true,
+      "text": "When closeness feels vulnerable, I expect people to know how I feel without telling them."
+    },
+    {
+      "id": "EA-046",
+      "category": "expression",
+      "reverse": false,
+      "text": "While balancing several responsibilities, I can describe my feelings in understandable words."
+    },
+    {
+      "id": "EA-047",
+      "category": "expression",
+      "reverse": true,
+      "text": "When a relationship changes, I hide important feelings until they become overwhelming."
+    },
+    {
+      "id": "EA-048",
+      "category": "expression",
+      "reverse": false,
+      "text": "When words are hard to find, I express emotions without expecting others to read my mind."
+    },
+    {
+      "id": "EA-049",
+      "category": "expression",
+      "reverse": true,
+      "text": "While trying to reconnect, I expect people to know how I feel without telling them."
+    },
+    {
+      "id": "EA-050",
+      "category": "expression",
+      "reverse": false,
+      "text": "When my care is not immediately recognised, I can describe my feelings in understandable words."
+    },
+    {
+      "id": "EA-051",
+      "category": "receptivity",
+      "reverse": false,
+      "text": "In my closest relationships, I make room for another person’s feelings even when they differ from mine."
+    },
+    {
+      "id": "EA-052",
+      "category": "receptivity",
+      "reverse": true,
+      "text": "During an ordinary conversation, I become uncomfortable when someone brings strong feelings to me."
+    },
+    {
+      "id": "EA-053",
+      "category": "receptivity",
+      "reverse": false,
+      "text": "When someone shares difficult news, I can hear emotional information without immediately defending myself."
+    },
+    {
+      "id": "EA-054",
+      "category": "receptivity",
+      "reverse": true,
+      "text": "After a misunderstanding, I dismiss emotions that do not match my own view of the situation."
+    },
+    {
+      "id": "EA-055",
+      "category": "receptivity",
+      "reverse": false,
+      "text": "When emotions become intense, I make room for another person’s feelings even when they differ from mine."
+    },
+    {
+      "id": "EA-056",
+      "category": "receptivity",
+      "reverse": true,
+      "text": "While spending time together, I become uncomfortable when someone brings strong feelings to me."
+    },
+    {
+      "id": "EA-057",
+      "category": "receptivity",
+      "reverse": false,
+      "text": "When I feel criticised, I can hear emotional information without immediately defending myself."
+    },
+    {
+      "id": "EA-058",
+      "category": "receptivity",
+      "reverse": true,
+      "text": "When another person needs reassurance, I dismiss emotions that do not match my own view of the situation."
+    },
+    {
+      "id": "EA-059",
+      "category": "receptivity",
+      "reverse": false,
+      "text": "After a stressful day, I make room for another person’s feelings even when they differ from mine."
+    },
+    {
+      "id": "EA-060",
+      "category": "receptivity",
+      "reverse": true,
+      "text": "When I need support myself, I become uncomfortable when someone brings strong feelings to me."
+    },
+    {
+      "id": "EA-061",
+      "category": "receptivity",
+      "reverse": false,
+      "text": "During disagreement, I can hear emotional information without immediately defending myself."
+    },
+    {
+      "id": "EA-062",
+      "category": "receptivity",
+      "reverse": true,
+      "text": "When someone sets a boundary, I dismiss emotions that do not match my own view of the situation."
+    },
+    {
+      "id": "EA-063",
+      "category": "receptivity",
+      "reverse": false,
+      "text": "When I have limited time or energy, I make room for another person’s feelings even when they differ from mine."
+    },
+    {
+      "id": "EA-064",
+      "category": "receptivity",
+      "reverse": true,
+      "text": "While discussing a sensitive subject, I become uncomfortable when someone brings strong feelings to me."
+    },
+    {
+      "id": "EA-065",
+      "category": "receptivity",
+      "reverse": false,
+      "text": "When another person becomes tearful, I can hear emotional information without immediately defending myself."
+    },
+    {
+      "id": "EA-066",
+      "category": "receptivity",
+      "reverse": true,
+      "text": "After I realise I caused hurt, I dismiss emotions that do not match my own view of the situation."
+    },
+    {
+      "id": "EA-067",
+      "category": "receptivity",
+      "reverse": false,
+      "text": "When trust is still developing, I make room for another person’s feelings even when they differ from mine."
+    },
+    {
+      "id": "EA-068",
+      "category": "receptivity",
+      "reverse": true,
+      "text": "When someone’s feelings differ from mine, I become uncomfortable when someone brings strong feelings to me."
+    },
+    {
+      "id": "EA-069",
+      "category": "receptivity",
+      "reverse": false,
+      "text": "During periods of distance, I can hear emotional information without immediately defending myself."
+    },
+    {
+      "id": "EA-070",
+      "category": "receptivity",
+      "reverse": true,
+      "text": "When closeness feels vulnerable, I dismiss emotions that do not match my own view of the situation."
+    },
+    {
+      "id": "EA-071",
+      "category": "receptivity",
+      "reverse": false,
+      "text": "While balancing several responsibilities, I make room for another person’s feelings even when they differ from mine."
+    },
+    {
+      "id": "EA-072",
+      "category": "receptivity",
+      "reverse": true,
+      "text": "When a relationship changes, I become uncomfortable when someone brings strong feelings to me."
+    },
+    {
+      "id": "EA-073",
+      "category": "receptivity",
+      "reverse": false,
+      "text": "When words are hard to find, I can hear emotional information without immediately defending myself."
+    },
+    {
+      "id": "EA-074",
+      "category": "receptivity",
+      "reverse": true,
+      "text": "While trying to reconnect, I dismiss emotions that do not match my own view of the situation."
+    },
+    {
+      "id": "EA-075",
+      "category": "receptivity",
+      "reverse": false,
+      "text": "When my care is not immediately recognised, I make room for another person’s feelings even when they differ from mine."
+    },
+    {
+      "id": "EA-076",
+      "category": "empathy",
+      "reverse": false,
+      "text": "In my closest relationships, I try to understand what an experience feels like for the other person."
+    },
+    {
+      "id": "EA-077",
+      "category": "empathy",
+      "reverse": true,
+      "text": "During an ordinary conversation, I struggle to imagine why someone feels differently from me."
+    },
+    {
+      "id": "EA-078",
+      "category": "empathy",
+      "reverse": false,
+      "text": "When someone shares difficult news, I can recognise another person’s pain without making it about me."
+    },
+    {
+      "id": "EA-079",
+      "category": "empathy",
+      "reverse": true,
+      "text": "After a misunderstanding, I redirect another person’s pain toward my own experience."
+    },
+    {
+      "id": "EA-080",
+      "category": "empathy",
+      "reverse": false,
+      "text": "When emotions become intense, I try to understand what an experience feels like for the other person."
+    },
+    {
+      "id": "EA-081",
+      "category": "empathy",
+      "reverse": true,
+      "text": "While spending time together, I struggle to imagine why someone feels differently from me."
+    },
+    {
+      "id": "EA-082",
+      "category": "empathy",
+      "reverse": false,
+      "text": "When I feel criticised, I can recognise another person’s pain without making it about me."
+    },
+    {
+      "id": "EA-083",
+      "category": "empathy",
+      "reverse": true,
+      "text": "When another person needs reassurance, I redirect another person’s pain toward my own experience."
+    },
+    {
+      "id": "EA-084",
+      "category": "empathy",
+      "reverse": false,
+      "text": "After a stressful day, I try to understand what an experience feels like for the other person."
+    },
+    {
+      "id": "EA-085",
+      "category": "empathy",
+      "reverse": true,
+      "text": "When I need support myself, I struggle to imagine why someone feels differently from me."
+    },
+    {
+      "id": "EA-086",
+      "category": "empathy",
+      "reverse": false,
+      "text": "During disagreement, I can recognise another person’s pain without making it about me."
+    },
+    {
+      "id": "EA-087",
+      "category": "empathy",
+      "reverse": true,
+      "text": "When someone sets a boundary, I redirect another person’s pain toward my own experience."
+    },
+    {
+      "id": "EA-088",
+      "category": "empathy",
+      "reverse": false,
+      "text": "When I have limited time or energy, I try to understand what an experience feels like for the other person."
+    },
+    {
+      "id": "EA-089",
+      "category": "empathy",
+      "reverse": true,
+      "text": "While discussing a sensitive subject, I struggle to imagine why someone feels differently from me."
+    },
+    {
+      "id": "EA-090",
+      "category": "empathy",
+      "reverse": false,
+      "text": "When another person becomes tearful, I can recognise another person’s pain without making it about me."
+    },
+    {
+      "id": "EA-091",
+      "category": "empathy",
+      "reverse": true,
+      "text": "After I realise I caused hurt, I redirect another person’s pain toward my own experience."
+    },
+    {
+      "id": "EA-092",
+      "category": "empathy",
+      "reverse": false,
+      "text": "When trust is still developing, I try to understand what an experience feels like for the other person."
+    },
+    {
+      "id": "EA-093",
+      "category": "empathy",
+      "reverse": true,
+      "text": "When someone’s feelings differ from mine, I struggle to imagine why someone feels differently from me."
+    },
+    {
+      "id": "EA-094",
+      "category": "empathy",
+      "reverse": false,
+      "text": "During periods of distance, I can recognise another person’s pain without making it about me."
+    },
+    {
+      "id": "EA-095",
+      "category": "empathy",
+      "reverse": true,
+      "text": "When closeness feels vulnerable, I redirect another person’s pain toward my own experience."
+    },
+    {
+      "id": "EA-096",
+      "category": "empathy",
+      "reverse": false,
+      "text": "While balancing several responsibilities, I try to understand what an experience feels like for the other person."
+    },
+    {
+      "id": "EA-097",
+      "category": "empathy",
+      "reverse": true,
+      "text": "When a relationship changes, I struggle to imagine why someone feels differently from me."
+    },
+    {
+      "id": "EA-098",
+      "category": "empathy",
+      "reverse": false,
+      "text": "When words are hard to find, I can recognise another person’s pain without making it about me."
+    },
+    {
+      "id": "EA-099",
+      "category": "empathy",
+      "reverse": true,
+      "text": "While trying to reconnect, I redirect another person’s pain toward my own experience."
+    },
+    {
+      "id": "EA-100",
+      "category": "empathy",
+      "reverse": false,
+      "text": "When my care is not immediately recognised, I try to understand what an experience feels like for the other person."
+    },
+    {
+      "id": "EA-101",
+      "category": "listening",
+      "reverse": false,
+      "text": "In my closest relationships, I listen to understand before preparing my response."
+    },
+    {
+      "id": "EA-102",
+      "category": "listening",
+      "reverse": true,
+      "text": "During an ordinary conversation, I plan my reply while the other person is still speaking."
+    },
+    {
+      "id": "EA-103",
+      "category": "listening",
+      "reverse": false,
+      "text": "When someone shares difficult news, I check that I understood rather than assuming."
+    },
+    {
+      "id": "EA-104",
+      "category": "listening",
+      "reverse": true,
+      "text": "After a misunderstanding, I interrupt or change the subject when emotions become uncomfortable."
+    },
+    {
+      "id": "EA-105",
+      "category": "listening",
+      "reverse": false,
+      "text": "When emotions become intense, I listen to understand before preparing my response."
+    },
+    {
+      "id": "EA-106",
+      "category": "listening",
+      "reverse": true,
+      "text": "While spending time together, I plan my reply while the other person is still speaking."
+    },
+    {
+      "id": "EA-107",
+      "category": "listening",
+      "reverse": false,
+      "text": "When I feel criticised, I check that I understood rather than assuming."
+    },
+    {
+      "id": "EA-108",
+      "category": "listening",
+      "reverse": true,
+      "text": "When another person needs reassurance, I interrupt or change the subject when emotions become uncomfortable."
+    },
+    {
+      "id": "EA-109",
+      "category": "listening",
+      "reverse": false,
+      "text": "After a stressful day, I listen to understand before preparing my response."
+    },
+    {
+      "id": "EA-110",
+      "category": "listening",
+      "reverse": true,
+      "text": "When I need support myself, I plan my reply while the other person is still speaking."
+    },
+    {
+      "id": "EA-111",
+      "category": "listening",
+      "reverse": false,
+      "text": "During disagreement, I check that I understood rather than assuming."
+    },
+    {
+      "id": "EA-112",
+      "category": "listening",
+      "reverse": true,
+      "text": "When someone sets a boundary, I interrupt or change the subject when emotions become uncomfortable."
+    },
+    {
+      "id": "EA-113",
+      "category": "listening",
+      "reverse": false,
+      "text": "When I have limited time or energy, I listen to understand before preparing my response."
+    },
+    {
+      "id": "EA-114",
+      "category": "listening",
+      "reverse": true,
+      "text": "While discussing a sensitive subject, I plan my reply while the other person is still speaking."
+    },
+    {
+      "id": "EA-115",
+      "category": "listening",
+      "reverse": false,
+      "text": "When another person becomes tearful, I check that I understood rather than assuming."
+    },
+    {
+      "id": "EA-116",
+      "category": "listening",
+      "reverse": true,
+      "text": "After I realise I caused hurt, I interrupt or change the subject when emotions become uncomfortable."
+    },
+    {
+      "id": "EA-117",
+      "category": "listening",
+      "reverse": false,
+      "text": "When trust is still developing, I listen to understand before preparing my response."
+    },
+    {
+      "id": "EA-118",
+      "category": "listening",
+      "reverse": true,
+      "text": "When someone’s feelings differ from mine, I plan my reply while the other person is still speaking."
+    },
+    {
+      "id": "EA-119",
+      "category": "listening",
+      "reverse": false,
+      "text": "During periods of distance, I check that I understood rather than assuming."
+    },
+    {
+      "id": "EA-120",
+      "category": "listening",
+      "reverse": true,
+      "text": "When closeness feels vulnerable, I interrupt or change the subject when emotions become uncomfortable."
+    },
+    {
+      "id": "EA-121",
+      "category": "listening",
+      "reverse": false,
+      "text": "While balancing several responsibilities, I listen to understand before preparing my response."
+    },
+    {
+      "id": "EA-122",
+      "category": "listening",
+      "reverse": true,
+      "text": "When a relationship changes, I plan my reply while the other person is still speaking."
+    },
+    {
+      "id": "EA-123",
+      "category": "listening",
+      "reverse": false,
+      "text": "When words are hard to find, I check that I understood rather than assuming."
+    },
+    {
+      "id": "EA-124",
+      "category": "listening",
+      "reverse": true,
+      "text": "While trying to reconnect, I interrupt or change the subject when emotions become uncomfortable."
+    },
+    {
+      "id": "EA-125",
+      "category": "listening",
+      "reverse": false,
+      "text": "When my care is not immediately recognised, I listen to understand before preparing my response."
+    },
+    {
+      "id": "EA-126",
+      "category": "vulnerability",
+      "reverse": false,
+      "text": "In my closest relationships, I can share uncertainty or hurt with a trustworthy person."
+    },
+    {
+      "id": "EA-127",
+      "category": "vulnerability",
+      "reverse": true,
+      "text": "During an ordinary conversation, I avoid emotional openness because it feels automatically unsafe."
+    },
+    {
+      "id": "EA-128",
+      "category": "vulnerability",
+      "reverse": false,
+      "text": "When someone shares difficult news, I allow close people to see more than my polished surface."
+    },
+    {
+      "id": "EA-129",
+      "category": "vulnerability",
+      "reverse": true,
+      "text": "After a misunderstanding, I show only competence and hide every vulnerable part."
+    },
+    {
+      "id": "EA-130",
+      "category": "vulnerability",
+      "reverse": false,
+      "text": "When emotions become intense, I can share uncertainty or hurt with a trustworthy person."
+    },
+    {
+      "id": "EA-131",
+      "category": "vulnerability",
+      "reverse": true,
+      "text": "While spending time together, I avoid emotional openness because it feels automatically unsafe."
+    },
+    {
+      "id": "EA-132",
+      "category": "vulnerability",
+      "reverse": false,
+      "text": "When I feel criticised, I allow close people to see more than my polished surface."
+    },
+    {
+      "id": "EA-133",
+      "category": "vulnerability",
+      "reverse": true,
+      "text": "When another person needs reassurance, I show only competence and hide every vulnerable part."
+    },
+    {
+      "id": "EA-134",
+      "category": "vulnerability",
+      "reverse": false,
+      "text": "After a stressful day, I can share uncertainty or hurt with a trustworthy person."
+    },
+    {
+      "id": "EA-135",
+      "category": "vulnerability",
+      "reverse": true,
+      "text": "When I need support myself, I avoid emotional openness because it feels automatically unsafe."
+    },
+    {
+      "id": "EA-136",
+      "category": "vulnerability",
+      "reverse": false,
+      "text": "During disagreement, I allow close people to see more than my polished surface."
+    },
+    {
+      "id": "EA-137",
+      "category": "vulnerability",
+      "reverse": true,
+      "text": "When someone sets a boundary, I show only competence and hide every vulnerable part."
+    },
+    {
+      "id": "EA-138",
+      "category": "vulnerability",
+      "reverse": false,
+      "text": "When I have limited time or energy, I can share uncertainty or hurt with a trustworthy person."
+    },
+    {
+      "id": "EA-139",
+      "category": "vulnerability",
+      "reverse": true,
+      "text": "While discussing a sensitive subject, I avoid emotional openness because it feels automatically unsafe."
+    },
+    {
+      "id": "EA-140",
+      "category": "vulnerability",
+      "reverse": false,
+      "text": "When another person becomes tearful, I allow close people to see more than my polished surface."
+    },
+    {
+      "id": "EA-141",
+      "category": "vulnerability",
+      "reverse": true,
+      "text": "After I realise I caused hurt, I show only competence and hide every vulnerable part."
+    },
+    {
+      "id": "EA-142",
+      "category": "vulnerability",
+      "reverse": false,
+      "text": "When trust is still developing, I can share uncertainty or hurt with a trustworthy person."
+    },
+    {
+      "id": "EA-143",
+      "category": "vulnerability",
+      "reverse": true,
+      "text": "When someone’s feelings differ from mine, I avoid emotional openness because it feels automatically unsafe."
+    },
+    {
+      "id": "EA-144",
+      "category": "vulnerability",
+      "reverse": false,
+      "text": "During periods of distance, I allow close people to see more than my polished surface."
+    },
+    {
+      "id": "EA-145",
+      "category": "vulnerability",
+      "reverse": true,
+      "text": "When closeness feels vulnerable, I show only competence and hide every vulnerable part."
+    },
+    {
+      "id": "EA-146",
+      "category": "vulnerability",
+      "reverse": false,
+      "text": "While balancing several responsibilities, I can share uncertainty or hurt with a trustworthy person."
+    },
+    {
+      "id": "EA-147",
+      "category": "vulnerability",
+      "reverse": true,
+      "text": "When a relationship changes, I avoid emotional openness because it feels automatically unsafe."
+    },
+    {
+      "id": "EA-148",
+      "category": "vulnerability",
+      "reverse": false,
+      "text": "When words are hard to find, I allow close people to see more than my polished surface."
+    },
+    {
+      "id": "EA-149",
+      "category": "vulnerability",
+      "reverse": true,
+      "text": "While trying to reconnect, I show only competence and hide every vulnerable part."
+    },
+    {
+      "id": "EA-150",
+      "category": "vulnerability",
+      "reverse": false,
+      "text": "When my care is not immediately recognised, I can share uncertainty or hurt with a trustworthy person."
+    },
+    {
+      "id": "EA-151",
+      "category": "trust",
+      "reverse": false,
+      "text": "In my closest relationships, I can gradually trust people who behave consistently and respectfully."
+    },
+    {
+      "id": "EA-152",
+      "category": "trust",
+      "reverse": true,
+      "text": "During an ordinary conversation, I assume emotional closeness will eventually be used against me."
+    },
+    {
+      "id": "EA-153",
+      "category": "trust",
+      "reverse": false,
+      "text": "When someone shares difficult news, I distinguish current trustworthy behaviour from past hurt."
+    },
+    {
+      "id": "EA-154",
+      "category": "trust",
+      "reverse": true,
+      "text": "After a misunderstanding, past hurt makes all present trust feel impossible."
+    },
+    {
+      "id": "EA-155",
+      "category": "trust",
+      "reverse": false,
+      "text": "When emotions become intense, I can gradually trust people who behave consistently and respectfully."
+    },
+    {
+      "id": "EA-156",
+      "category": "trust",
+      "reverse": true,
+      "text": "While spending time together, I assume emotional closeness will eventually be used against me."
+    },
+    {
+      "id": "EA-157",
+      "category": "trust",
+      "reverse": false,
+      "text": "When I feel criticised, I distinguish current trustworthy behaviour from past hurt."
+    },
+    {
+      "id": "EA-158",
+      "category": "trust",
+      "reverse": true,
+      "text": "When another person needs reassurance, past hurt makes all present trust feel impossible."
+    },
+    {
+      "id": "EA-159",
+      "category": "trust",
+      "reverse": false,
+      "text": "After a stressful day, I can gradually trust people who behave consistently and respectfully."
+    },
+    {
+      "id": "EA-160",
+      "category": "trust",
+      "reverse": true,
+      "text": "When I need support myself, I assume emotional closeness will eventually be used against me."
+    },
+    {
+      "id": "EA-161",
+      "category": "trust",
+      "reverse": false,
+      "text": "During disagreement, I distinguish current trustworthy behaviour from past hurt."
+    },
+    {
+      "id": "EA-162",
+      "category": "trust",
+      "reverse": true,
+      "text": "When someone sets a boundary, past hurt makes all present trust feel impossible."
+    },
+    {
+      "id": "EA-163",
+      "category": "trust",
+      "reverse": false,
+      "text": "When I have limited time or energy, I can gradually trust people who behave consistently and respectfully."
+    },
+    {
+      "id": "EA-164",
+      "category": "trust",
+      "reverse": true,
+      "text": "While discussing a sensitive subject, I assume emotional closeness will eventually be used against me."
+    },
+    {
+      "id": "EA-165",
+      "category": "trust",
+      "reverse": false,
+      "text": "When another person becomes tearful, I distinguish current trustworthy behaviour from past hurt."
+    },
+    {
+      "id": "EA-166",
+      "category": "trust",
+      "reverse": true,
+      "text": "After I realise I caused hurt, past hurt makes all present trust feel impossible."
+    },
+    {
+      "id": "EA-167",
+      "category": "trust",
+      "reverse": false,
+      "text": "When trust is still developing, I can gradually trust people who behave consistently and respectfully."
+    },
+    {
+      "id": "EA-168",
+      "category": "trust",
+      "reverse": true,
+      "text": "When someone’s feelings differ from mine, I assume emotional closeness will eventually be used against me."
+    },
+    {
+      "id": "EA-169",
+      "category": "trust",
+      "reverse": false,
+      "text": "During periods of distance, I distinguish current trustworthy behaviour from past hurt."
+    },
+    {
+      "id": "EA-170",
+      "category": "trust",
+      "reverse": true,
+      "text": "When closeness feels vulnerable, past hurt makes all present trust feel impossible."
+    },
+    {
+      "id": "EA-171",
+      "category": "trust",
+      "reverse": false,
+      "text": "While balancing several responsibilities, I can gradually trust people who behave consistently and respectfully."
+    },
+    {
+      "id": "EA-172",
+      "category": "trust",
+      "reverse": true,
+      "text": "When a relationship changes, I assume emotional closeness will eventually be used against me."
+    },
+    {
+      "id": "EA-173",
+      "category": "trust",
+      "reverse": false,
+      "text": "When words are hard to find, I distinguish current trustworthy behaviour from past hurt."
+    },
+    {
+      "id": "EA-174",
+      "category": "trust",
+      "reverse": true,
+      "text": "While trying to reconnect, past hurt makes all present trust feel impossible."
+    },
+    {
+      "id": "EA-175",
+      "category": "trust",
+      "reverse": false,
+      "text": "When my care is not immediately recognised, I can gradually trust people who behave consistently and respectfully."
+    },
+    {
+      "id": "EA-176",
+      "category": "consistency",
+      "reverse": false,
+      "text": "In my closest relationships, my emotional presence is reasonably consistent over time."
+    },
+    {
+      "id": "EA-177",
+      "category": "consistency",
+      "reverse": true,
+      "text": "During an ordinary conversation, I offer intense closeness and then disappear without explanation."
+    },
+    {
+      "id": "EA-178",
+      "category": "consistency",
+      "reverse": false,
+      "text": "When someone shares difficult news, people close to me generally know what support they can expect."
+    },
+    {
+      "id": "EA-179",
+      "category": "consistency",
+      "reverse": true,
+      "text": "After a misunderstanding, my emotional involvement changes so unpredictably that others cannot rely on it."
+    },
+    {
+      "id": "EA-180",
+      "category": "consistency",
+      "reverse": false,
+      "text": "When emotions become intense, my emotional presence is reasonably consistent over time."
+    },
+    {
+      "id": "EA-181",
+      "category": "consistency",
+      "reverse": true,
+      "text": "While spending time together, I offer intense closeness and then disappear without explanation."
+    },
+    {
+      "id": "EA-182",
+      "category": "consistency",
+      "reverse": false,
+      "text": "When I feel criticised, people close to me generally know what support they can expect."
+    },
+    {
+      "id": "EA-183",
+      "category": "consistency",
+      "reverse": true,
+      "text": "When another person needs reassurance, my emotional involvement changes so unpredictably that others cannot rely on it."
+    },
+    {
+      "id": "EA-184",
+      "category": "consistency",
+      "reverse": false,
+      "text": "After a stressful day, my emotional presence is reasonably consistent over time."
+    },
+    {
+      "id": "EA-185",
+      "category": "consistency",
+      "reverse": true,
+      "text": "When I need support myself, I offer intense closeness and then disappear without explanation."
+    },
+    {
+      "id": "EA-186",
+      "category": "consistency",
+      "reverse": false,
+      "text": "During disagreement, people close to me generally know what support they can expect."
+    },
+    {
+      "id": "EA-187",
+      "category": "consistency",
+      "reverse": true,
+      "text": "When someone sets a boundary, my emotional involvement changes so unpredictably that others cannot rely on it."
+    },
+    {
+      "id": "EA-188",
+      "category": "consistency",
+      "reverse": false,
+      "text": "When I have limited time or energy, my emotional presence is reasonably consistent over time."
+    },
+    {
+      "id": "EA-189",
+      "category": "consistency",
+      "reverse": true,
+      "text": "While discussing a sensitive subject, I offer intense closeness and then disappear without explanation."
+    },
+    {
+      "id": "EA-190",
+      "category": "consistency",
+      "reverse": false,
+      "text": "When another person becomes tearful, people close to me generally know what support they can expect."
+    },
+    {
+      "id": "EA-191",
+      "category": "consistency",
+      "reverse": true,
+      "text": "After I realise I caused hurt, my emotional involvement changes so unpredictably that others cannot rely on it."
+    },
+    {
+      "id": "EA-192",
+      "category": "consistency",
+      "reverse": false,
+      "text": "When trust is still developing, my emotional presence is reasonably consistent over time."
+    },
+    {
+      "id": "EA-193",
+      "category": "consistency",
+      "reverse": true,
+      "text": "When someone’s feelings differ from mine, I offer intense closeness and then disappear without explanation."
+    },
+    {
+      "id": "EA-194",
+      "category": "consistency",
+      "reverse": false,
+      "text": "During periods of distance, people close to me generally know what support they can expect."
+    },
+    {
+      "id": "EA-195",
+      "category": "consistency",
+      "reverse": true,
+      "text": "When closeness feels vulnerable, my emotional involvement changes so unpredictably that others cannot rely on it."
+    },
+    {
+      "id": "EA-196",
+      "category": "consistency",
+      "reverse": false,
+      "text": "While balancing several responsibilities, my emotional presence is reasonably consistent over time."
+    },
+    {
+      "id": "EA-197",
+      "category": "consistency",
+      "reverse": true,
+      "text": "When a relationship changes, I offer intense closeness and then disappear without explanation."
+    },
+    {
+      "id": "EA-198",
+      "category": "consistency",
+      "reverse": false,
+      "text": "When words are hard to find, people close to me generally know what support they can expect."
+    },
+    {
+      "id": "EA-199",
+      "category": "consistency",
+      "reverse": true,
+      "text": "While trying to reconnect, my emotional involvement changes so unpredictably that others cannot rely on it."
+    },
+    {
+      "id": "EA-200",
+      "category": "consistency",
+      "reverse": false,
+      "text": "When my care is not immediately recognised, my emotional presence is reasonably consistent over time."
+    },
+    {
+      "id": "EA-201",
+      "category": "presence",
+      "reverse": false,
+      "text": "In my closest relationships, I can give someone my attention during an important emotional moment."
+    },
+    {
+      "id": "EA-202",
+      "category": "presence",
+      "reverse": true,
+      "text": "During an ordinary conversation, I remain physically present while emotionally checking out."
+    },
+    {
+      "id": "EA-203",
+      "category": "presence",
+      "reverse": false,
+      "text": "When someone shares difficult news, I put distractions aside when a close person needs connection."
+    },
+    {
+      "id": "EA-204",
+      "category": "presence",
+      "reverse": true,
+      "text": "After a misunderstanding, devices or other distractions repeatedly replace emotional attention."
+    },
+    {
+      "id": "EA-205",
+      "category": "presence",
+      "reverse": false,
+      "text": "When emotions become intense, I can give someone my attention during an important emotional moment."
+    },
+    {
+      "id": "EA-206",
+      "category": "presence",
+      "reverse": true,
+      "text": "While spending time together, I remain physically present while emotionally checking out."
+    },
+    {
+      "id": "EA-207",
+      "category": "presence",
+      "reverse": false,
+      "text": "When I feel criticised, I put distractions aside when a close person needs connection."
+    },
+    {
+      "id": "EA-208",
+      "category": "presence",
+      "reverse": true,
+      "text": "When another person needs reassurance, devices or other distractions repeatedly replace emotional attention."
+    },
+    {
+      "id": "EA-209",
+      "category": "presence",
+      "reverse": false,
+      "text": "After a stressful day, I can give someone my attention during an important emotional moment."
+    },
+    {
+      "id": "EA-210",
+      "category": "presence",
+      "reverse": true,
+      "text": "When I need support myself, I remain physically present while emotionally checking out."
+    },
+    {
+      "id": "EA-211",
+      "category": "presence",
+      "reverse": false,
+      "text": "During disagreement, I put distractions aside when a close person needs connection."
+    },
+    {
+      "id": "EA-212",
+      "category": "presence",
+      "reverse": true,
+      "text": "When someone sets a boundary, devices or other distractions repeatedly replace emotional attention."
+    },
+    {
+      "id": "EA-213",
+      "category": "presence",
+      "reverse": false,
+      "text": "When I have limited time or energy, I can give someone my attention during an important emotional moment."
+    },
+    {
+      "id": "EA-214",
+      "category": "presence",
+      "reverse": true,
+      "text": "While discussing a sensitive subject, I remain physically present while emotionally checking out."
+    },
+    {
+      "id": "EA-215",
+      "category": "presence",
+      "reverse": false,
+      "text": "When another person becomes tearful, I put distractions aside when a close person needs connection."
+    },
+    {
+      "id": "EA-216",
+      "category": "presence",
+      "reverse": true,
+      "text": "After I realise I caused hurt, devices or other distractions repeatedly replace emotional attention."
+    },
+    {
+      "id": "EA-217",
+      "category": "presence",
+      "reverse": false,
+      "text": "When trust is still developing, I can give someone my attention during an important emotional moment."
+    },
+    {
+      "id": "EA-218",
+      "category": "presence",
+      "reverse": true,
+      "text": "When someone’s feelings differ from mine, I remain physically present while emotionally checking out."
+    },
+    {
+      "id": "EA-219",
+      "category": "presence",
+      "reverse": false,
+      "text": "During periods of distance, I put distractions aside when a close person needs connection."
+    },
+    {
+      "id": "EA-220",
+      "category": "presence",
+      "reverse": true,
+      "text": "When closeness feels vulnerable, devices or other distractions repeatedly replace emotional attention."
+    },
+    {
+      "id": "EA-221",
+      "category": "presence",
+      "reverse": false,
+      "text": "While balancing several responsibilities, I can give someone my attention during an important emotional moment."
+    },
+    {
+      "id": "EA-222",
+      "category": "presence",
+      "reverse": true,
+      "text": "When a relationship changes, I remain physically present while emotionally checking out."
+    },
+    {
+      "id": "EA-223",
+      "category": "presence",
+      "reverse": false,
+      "text": "When words are hard to find, I put distractions aside when a close person needs connection."
+    },
+    {
+      "id": "EA-224",
+      "category": "presence",
+      "reverse": true,
+      "text": "While trying to reconnect, devices or other distractions repeatedly replace emotional attention."
+    },
+    {
+      "id": "EA-225",
+      "category": "presence",
+      "reverse": false,
+      "text": "When my care is not immediately recognised, I can give someone my attention during an important emotional moment."
+    },
+    {
+      "id": "EA-226",
+      "category": "responsiveness",
+      "reverse": false,
+      "text": "In my closest relationships, I respond when someone signals that they need emotional support."
+    },
+    {
+      "id": "EA-227",
+      "category": "responsiveness",
+      "reverse": true,
+      "text": "During an ordinary conversation, I ignore emotional bids because I do not know how to respond."
+    },
+    {
+      "id": "EA-228",
+      "category": "responsiveness",
+      "reverse": false,
+      "text": "When someone shares difficult news, my response generally matches the seriousness of the other person’s need."
+    },
+    {
+      "id": "EA-229",
+      "category": "responsiveness",
+      "reverse": true,
+      "text": "After a misunderstanding, I respond too little or too intensely for what the moment requires."
+    },
+    {
+      "id": "EA-230",
+      "category": "responsiveness",
+      "reverse": false,
+      "text": "When emotions become intense, I respond when someone signals that they need emotional support."
+    },
+    {
+      "id": "EA-231",
+      "category": "responsiveness",
+      "reverse": true,
+      "text": "While spending time together, I ignore emotional bids because I do not know how to respond."
+    },
+    {
+      "id": "EA-232",
+      "category": "responsiveness",
+      "reverse": false,
+      "text": "When I feel criticised, my response generally matches the seriousness of the other person’s need."
+    },
+    {
+      "id": "EA-233",
+      "category": "responsiveness",
+      "reverse": true,
+      "text": "When another person needs reassurance, I respond too little or too intensely for what the moment requires."
+    },
+    {
+      "id": "EA-234",
+      "category": "responsiveness",
+      "reverse": false,
+      "text": "After a stressful day, I respond when someone signals that they need emotional support."
+    },
+    {
+      "id": "EA-235",
+      "category": "responsiveness",
+      "reverse": true,
+      "text": "When I need support myself, I ignore emotional bids because I do not know how to respond."
+    },
+    {
+      "id": "EA-236",
+      "category": "responsiveness",
+      "reverse": false,
+      "text": "During disagreement, my response generally matches the seriousness of the other person’s need."
+    },
+    {
+      "id": "EA-237",
+      "category": "responsiveness",
+      "reverse": true,
+      "text": "When someone sets a boundary, I respond too little or too intensely for what the moment requires."
+    },
+    {
+      "id": "EA-238",
+      "category": "responsiveness",
+      "reverse": false,
+      "text": "When I have limited time or energy, I respond when someone signals that they need emotional support."
+    },
+    {
+      "id": "EA-239",
+      "category": "responsiveness",
+      "reverse": true,
+      "text": "While discussing a sensitive subject, I ignore emotional bids because I do not know how to respond."
+    },
+    {
+      "id": "EA-240",
+      "category": "responsiveness",
+      "reverse": false,
+      "text": "When another person becomes tearful, my response generally matches the seriousness of the other person’s need."
+    },
+    {
+      "id": "EA-241",
+      "category": "responsiveness",
+      "reverse": true,
+      "text": "After I realise I caused hurt, I respond too little or too intensely for what the moment requires."
+    },
+    {
+      "id": "EA-242",
+      "category": "responsiveness",
+      "reverse": false,
+      "text": "When trust is still developing, I respond when someone signals that they need emotional support."
+    },
+    {
+      "id": "EA-243",
+      "category": "responsiveness",
+      "reverse": true,
+      "text": "When someone’s feelings differ from mine, I ignore emotional bids because I do not know how to respond."
+    },
+    {
+      "id": "EA-244",
+      "category": "responsiveness",
+      "reverse": false,
+      "text": "During periods of distance, my response generally matches the seriousness of the other person’s need."
+    },
+    {
+      "id": "EA-245",
+      "category": "responsiveness",
+      "reverse": true,
+      "text": "When closeness feels vulnerable, I respond too little or too intensely for what the moment requires."
+    },
+    {
+      "id": "EA-246",
+      "category": "responsiveness",
+      "reverse": false,
+      "text": "While balancing several responsibilities, I respond when someone signals that they need emotional support."
+    },
+    {
+      "id": "EA-247",
+      "category": "responsiveness",
+      "reverse": true,
+      "text": "When a relationship changes, I ignore emotional bids because I do not know how to respond."
+    },
+    {
+      "id": "EA-248",
+      "category": "responsiveness",
+      "reverse": false,
+      "text": "When words are hard to find, my response generally matches the seriousness of the other person’s need."
+    },
+    {
+      "id": "EA-249",
+      "category": "responsiveness",
+      "reverse": true,
+      "text": "While trying to reconnect, I respond too little or too intensely for what the moment requires."
+    },
+    {
+      "id": "EA-250",
+      "category": "responsiveness",
+      "reverse": false,
+      "text": "When my care is not immediately recognised, I respond when someone signals that they need emotional support."
+    },
+    {
+      "id": "EA-251",
+      "category": "validation",
+      "reverse": false,
+      "text": "In my closest relationships, I can acknowledge a feeling without having to agree with every conclusion."
+    },
+    {
+      "id": "EA-252",
+      "category": "validation",
+      "reverse": true,
+      "text": "During an ordinary conversation, I tell people they should not feel what they feel."
+    },
+    {
+      "id": "EA-253",
+      "category": "validation",
+      "reverse": false,
+      "text": "When someone shares difficult news, I communicate that another person’s emotional experience makes sense."
+    },
+    {
+      "id": "EA-254",
+      "category": "validation",
+      "reverse": true,
+      "text": "After a misunderstanding, I treat validation as surrendering my own point of view."
+    },
+    {
+      "id": "EA-255",
+      "category": "validation",
+      "reverse": false,
+      "text": "When emotions become intense, I can acknowledge a feeling without having to agree with every conclusion."
+    },
+    {
+      "id": "EA-256",
+      "category": "validation",
+      "reverse": true,
+      "text": "While spending time together, I tell people they should not feel what they feel."
+    },
+    {
+      "id": "EA-257",
+      "category": "validation",
+      "reverse": false,
+      "text": "When I feel criticised, I communicate that another person’s emotional experience makes sense."
+    },
+    {
+      "id": "EA-258",
+      "category": "validation",
+      "reverse": true,
+      "text": "When another person needs reassurance, I treat validation as surrendering my own point of view."
+    },
+    {
+      "id": "EA-259",
+      "category": "validation",
+      "reverse": false,
+      "text": "After a stressful day, I can acknowledge a feeling without having to agree with every conclusion."
+    },
+    {
+      "id": "EA-260",
+      "category": "validation",
+      "reverse": true,
+      "text": "When I need support myself, I tell people they should not feel what they feel."
+    },
+    {
+      "id": "EA-261",
+      "category": "validation",
+      "reverse": false,
+      "text": "During disagreement, I communicate that another person’s emotional experience makes sense."
+    },
+    {
+      "id": "EA-262",
+      "category": "validation",
+      "reverse": true,
+      "text": "When someone sets a boundary, I treat validation as surrendering my own point of view."
+    },
+    {
+      "id": "EA-263",
+      "category": "validation",
+      "reverse": false,
+      "text": "When I have limited time or energy, I can acknowledge a feeling without having to agree with every conclusion."
+    },
+    {
+      "id": "EA-264",
+      "category": "validation",
+      "reverse": true,
+      "text": "While discussing a sensitive subject, I tell people they should not feel what they feel."
+    },
+    {
+      "id": "EA-265",
+      "category": "validation",
+      "reverse": false,
+      "text": "When another person becomes tearful, I communicate that another person’s emotional experience makes sense."
+    },
+    {
+      "id": "EA-266",
+      "category": "validation",
+      "reverse": true,
+      "text": "After I realise I caused hurt, I treat validation as surrendering my own point of view."
+    },
+    {
+      "id": "EA-267",
+      "category": "validation",
+      "reverse": false,
+      "text": "When trust is still developing, I can acknowledge a feeling without having to agree with every conclusion."
+    },
+    {
+      "id": "EA-268",
+      "category": "validation",
+      "reverse": true,
+      "text": "When someone’s feelings differ from mine, I tell people they should not feel what they feel."
+    },
+    {
+      "id": "EA-269",
+      "category": "validation",
+      "reverse": false,
+      "text": "During periods of distance, I communicate that another person’s emotional experience makes sense."
+    },
+    {
+      "id": "EA-270",
+      "category": "validation",
+      "reverse": true,
+      "text": "When closeness feels vulnerable, I treat validation as surrendering my own point of view."
+    },
+    {
+      "id": "EA-271",
+      "category": "validation",
+      "reverse": false,
+      "text": "While balancing several responsibilities, I can acknowledge a feeling without having to agree with every conclusion."
+    },
+    {
+      "id": "EA-272",
+      "category": "validation",
+      "reverse": true,
+      "text": "When a relationship changes, I tell people they should not feel what they feel."
+    },
+    {
+      "id": "EA-273",
+      "category": "validation",
+      "reverse": false,
+      "text": "When words are hard to find, I communicate that another person’s emotional experience makes sense."
+    },
+    {
+      "id": "EA-274",
+      "category": "validation",
+      "reverse": true,
+      "text": "While trying to reconnect, I treat validation as surrendering my own point of view."
+    },
+    {
+      "id": "EA-275",
+      "category": "validation",
+      "reverse": false,
+      "text": "When my care is not immediately recognised, I can acknowledge a feeling without having to agree with every conclusion."
+    },
+    {
+      "id": "EA-276",
+      "category": "warmth",
+      "reverse": false,
+      "text": "In my closest relationships, I show care in ways that feel genuine and appropriate."
+    },
+    {
+      "id": "EA-277",
+      "category": "warmth",
+      "reverse": true,
+      "text": "During an ordinary conversation, I care internally but rarely communicate it in any form."
+    },
+    {
+      "id": "EA-278",
+      "category": "warmth",
+      "reverse": false,
+      "text": "When someone shares difficult news, I can offer warmth without using it to control the relationship."
+    },
+    {
+      "id": "EA-279",
+      "category": "warmth",
+      "reverse": true,
+      "text": "After a misunderstanding, I withdraw affection to punish or control another person."
+    },
+    {
+      "id": "EA-280",
+      "category": "warmth",
+      "reverse": false,
+      "text": "When emotions become intense, I show care in ways that feel genuine and appropriate."
+    },
+    {
+      "id": "EA-281",
+      "category": "warmth",
+      "reverse": true,
+      "text": "While spending time together, I care internally but rarely communicate it in any form."
+    },
+    {
+      "id": "EA-282",
+      "category": "warmth",
+      "reverse": false,
+      "text": "When I feel criticised, I can offer warmth without using it to control the relationship."
+    },
+    {
+      "id": "EA-283",
+      "category": "warmth",
+      "reverse": true,
+      "text": "When another person needs reassurance, I withdraw affection to punish or control another person."
+    },
+    {
+      "id": "EA-284",
+      "category": "warmth",
+      "reverse": false,
+      "text": "After a stressful day, I show care in ways that feel genuine and appropriate."
+    },
+    {
+      "id": "EA-285",
+      "category": "warmth",
+      "reverse": true,
+      "text": "When I need support myself, I care internally but rarely communicate it in any form."
+    },
+    {
+      "id": "EA-286",
+      "category": "warmth",
+      "reverse": false,
+      "text": "During disagreement, I can offer warmth without using it to control the relationship."
+    },
+    {
+      "id": "EA-287",
+      "category": "warmth",
+      "reverse": true,
+      "text": "When someone sets a boundary, I withdraw affection to punish or control another person."
+    },
+    {
+      "id": "EA-288",
+      "category": "warmth",
+      "reverse": false,
+      "text": "When I have limited time or energy, I show care in ways that feel genuine and appropriate."
+    },
+    {
+      "id": "EA-289",
+      "category": "warmth",
+      "reverse": true,
+      "text": "While discussing a sensitive subject, I care internally but rarely communicate it in any form."
+    },
+    {
+      "id": "EA-290",
+      "category": "warmth",
+      "reverse": false,
+      "text": "When another person becomes tearful, I can offer warmth without using it to control the relationship."
+    },
+    {
+      "id": "EA-291",
+      "category": "warmth",
+      "reverse": true,
+      "text": "After I realise I caused hurt, I withdraw affection to punish or control another person."
+    },
+    {
+      "id": "EA-292",
+      "category": "warmth",
+      "reverse": false,
+      "text": "When trust is still developing, I show care in ways that feel genuine and appropriate."
+    },
+    {
+      "id": "EA-293",
+      "category": "warmth",
+      "reverse": true,
+      "text": "When someone’s feelings differ from mine, I care internally but rarely communicate it in any form."
+    },
+    {
+      "id": "EA-294",
+      "category": "warmth",
+      "reverse": false,
+      "text": "During periods of distance, I can offer warmth without using it to control the relationship."
+    },
+    {
+      "id": "EA-295",
+      "category": "warmth",
+      "reverse": true,
+      "text": "When closeness feels vulnerable, I withdraw affection to punish or control another person."
+    },
+    {
+      "id": "EA-296",
+      "category": "warmth",
+      "reverse": false,
+      "text": "While balancing several responsibilities, I show care in ways that feel genuine and appropriate."
+    },
+    {
+      "id": "EA-297",
+      "category": "warmth",
+      "reverse": true,
+      "text": "When a relationship changes, I care internally but rarely communicate it in any form."
+    },
+    {
+      "id": "EA-298",
+      "category": "warmth",
+      "reverse": false,
+      "text": "When words are hard to find, I can offer warmth without using it to control the relationship."
+    },
+    {
+      "id": "EA-299",
+      "category": "warmth",
+      "reverse": true,
+      "text": "While trying to reconnect, I withdraw affection to punish or control another person."
+    },
+    {
+      "id": "EA-300",
+      "category": "warmth",
+      "reverse": false,
+      "text": "When my care is not immediately recognised, I show care in ways that feel genuine and appropriate."
+    },
+    {
+      "id": "EA-301",
+      "category": "boundaries",
+      "reverse": false,
+      "text": "In my closest relationships, I can care deeply without taking responsibility for every feeling another person has."
+    },
+    {
+      "id": "EA-302",
+      "category": "boundaries",
+      "reverse": true,
+      "text": "During an ordinary conversation, I feel responsible for fixing every emotion in people close to me."
+    },
+    {
+      "id": "EA-303",
+      "category": "boundaries",
+      "reverse": false,
+      "text": "When someone shares difficult news, I communicate limits while remaining respectful and connected."
+    },
+    {
+      "id": "EA-304",
+      "category": "boundaries",
+      "reverse": true,
+      "text": "After a misunderstanding, I use distance or silence instead of clearly stating a boundary."
+    },
+    {
+      "id": "EA-305",
+      "category": "boundaries",
+      "reverse": false,
+      "text": "When emotions become intense, I can care deeply without taking responsibility for every feeling another person has."
+    },
+    {
+      "id": "EA-306",
+      "category": "boundaries",
+      "reverse": true,
+      "text": "While spending time together, I feel responsible for fixing every emotion in people close to me."
+    },
+    {
+      "id": "EA-307",
+      "category": "boundaries",
+      "reverse": false,
+      "text": "When I feel criticised, I communicate limits while remaining respectful and connected."
+    },
+    {
+      "id": "EA-308",
+      "category": "boundaries",
+      "reverse": true,
+      "text": "When another person needs reassurance, I use distance or silence instead of clearly stating a boundary."
+    },
+    {
+      "id": "EA-309",
+      "category": "boundaries",
+      "reverse": false,
+      "text": "After a stressful day, I can care deeply without taking responsibility for every feeling another person has."
+    },
+    {
+      "id": "EA-310",
+      "category": "boundaries",
+      "reverse": true,
+      "text": "When I need support myself, I feel responsible for fixing every emotion in people close to me."
+    },
+    {
+      "id": "EA-311",
+      "category": "boundaries",
+      "reverse": false,
+      "text": "During disagreement, I communicate limits while remaining respectful and connected."
+    },
+    {
+      "id": "EA-312",
+      "category": "boundaries",
+      "reverse": true,
+      "text": "When someone sets a boundary, I use distance or silence instead of clearly stating a boundary."
+    },
+    {
+      "id": "EA-313",
+      "category": "boundaries",
+      "reverse": false,
+      "text": "When I have limited time or energy, I can care deeply without taking responsibility for every feeling another person has."
+    },
+    {
+      "id": "EA-314",
+      "category": "boundaries",
+      "reverse": true,
+      "text": "While discussing a sensitive subject, I feel responsible for fixing every emotion in people close to me."
+    },
+    {
+      "id": "EA-315",
+      "category": "boundaries",
+      "reverse": false,
+      "text": "When another person becomes tearful, I communicate limits while remaining respectful and connected."
+    },
+    {
+      "id": "EA-316",
+      "category": "boundaries",
+      "reverse": true,
+      "text": "After I realise I caused hurt, I use distance or silence instead of clearly stating a boundary."
+    },
+    {
+      "id": "EA-317",
+      "category": "boundaries",
+      "reverse": false,
+      "text": "When trust is still developing, I can care deeply without taking responsibility for every feeling another person has."
+    },
+    {
+      "id": "EA-318",
+      "category": "boundaries",
+      "reverse": true,
+      "text": "When someone’s feelings differ from mine, I feel responsible for fixing every emotion in people close to me."
+    },
+    {
+      "id": "EA-319",
+      "category": "boundaries",
+      "reverse": false,
+      "text": "During periods of distance, I communicate limits while remaining respectful and connected."
+    },
+    {
+      "id": "EA-320",
+      "category": "boundaries",
+      "reverse": true,
+      "text": "When closeness feels vulnerable, I use distance or silence instead of clearly stating a boundary."
+    },
+    {
+      "id": "EA-321",
+      "category": "boundaries",
+      "reverse": false,
+      "text": "While balancing several responsibilities, I can care deeply without taking responsibility for every feeling another person has."
+    },
+    {
+      "id": "EA-322",
+      "category": "boundaries",
+      "reverse": true,
+      "text": "When a relationship changes, I feel responsible for fixing every emotion in people close to me."
+    },
+    {
+      "id": "EA-323",
+      "category": "boundaries",
+      "reverse": false,
+      "text": "When words are hard to find, I communicate limits while remaining respectful and connected."
+    },
+    {
+      "id": "EA-324",
+      "category": "boundaries",
+      "reverse": true,
+      "text": "While trying to reconnect, I use distance or silence instead of clearly stating a boundary."
+    },
+    {
+      "id": "EA-325",
+      "category": "boundaries",
+      "reverse": false,
+      "text": "When my care is not immediately recognised, I can care deeply without taking responsibility for every feeling another person has."
+    },
+    {
+      "id": "EA-326",
+      "category": "conflict",
+      "reverse": false,
+      "text": "In my closest relationships, I remain emotionally engaged while discussing disagreement respectfully."
+    },
+    {
+      "id": "EA-327",
+      "category": "conflict",
+      "reverse": true,
+      "text": "During an ordinary conversation, I shut down, attack, or disappear whenever conflict appears."
+    },
+    {
+      "id": "EA-328",
+      "category": "conflict",
+      "reverse": false,
+      "text": "When someone shares difficult news, I can take a pause without abandoning the conversation indefinitely."
+    },
+    {
+      "id": "EA-329",
+      "category": "conflict",
+      "reverse": true,
+      "text": "After a misunderstanding, I treat disagreement as proof that emotional connection is over."
+    },
+    {
+      "id": "EA-330",
+      "category": "conflict",
+      "reverse": false,
+      "text": "When emotions become intense, I remain emotionally engaged while discussing disagreement respectfully."
+    },
+    {
+      "id": "EA-331",
+      "category": "conflict",
+      "reverse": true,
+      "text": "While spending time together, I shut down, attack, or disappear whenever conflict appears."
+    },
+    {
+      "id": "EA-332",
+      "category": "conflict",
+      "reverse": false,
+      "text": "When I feel criticised, I can take a pause without abandoning the conversation indefinitely."
+    },
+    {
+      "id": "EA-333",
+      "category": "conflict",
+      "reverse": true,
+      "text": "When another person needs reassurance, I treat disagreement as proof that emotional connection is over."
+    },
+    {
+      "id": "EA-334",
+      "category": "conflict",
+      "reverse": false,
+      "text": "After a stressful day, I remain emotionally engaged while discussing disagreement respectfully."
+    },
+    {
+      "id": "EA-335",
+      "category": "conflict",
+      "reverse": true,
+      "text": "When I need support myself, I shut down, attack, or disappear whenever conflict appears."
+    },
+    {
+      "id": "EA-336",
+      "category": "conflict",
+      "reverse": false,
+      "text": "During disagreement, I can take a pause without abandoning the conversation indefinitely."
+    },
+    {
+      "id": "EA-337",
+      "category": "conflict",
+      "reverse": true,
+      "text": "When someone sets a boundary, I treat disagreement as proof that emotional connection is over."
+    },
+    {
+      "id": "EA-338",
+      "category": "conflict",
+      "reverse": false,
+      "text": "When I have limited time or energy, I remain emotionally engaged while discussing disagreement respectfully."
+    },
+    {
+      "id": "EA-339",
+      "category": "conflict",
+      "reverse": true,
+      "text": "While discussing a sensitive subject, I shut down, attack, or disappear whenever conflict appears."
+    },
+    {
+      "id": "EA-340",
+      "category": "conflict",
+      "reverse": false,
+      "text": "When another person becomes tearful, I can take a pause without abandoning the conversation indefinitely."
+    },
+    {
+      "id": "EA-341",
+      "category": "conflict",
+      "reverse": true,
+      "text": "After I realise I caused hurt, I treat disagreement as proof that emotional connection is over."
+    },
+    {
+      "id": "EA-342",
+      "category": "conflict",
+      "reverse": false,
+      "text": "When trust is still developing, I remain emotionally engaged while discussing disagreement respectfully."
+    },
+    {
+      "id": "EA-343",
+      "category": "conflict",
+      "reverse": true,
+      "text": "When someone’s feelings differ from mine, I shut down, attack, or disappear whenever conflict appears."
+    },
+    {
+      "id": "EA-344",
+      "category": "conflict",
+      "reverse": false,
+      "text": "During periods of distance, I can take a pause without abandoning the conversation indefinitely."
+    },
+    {
+      "id": "EA-345",
+      "category": "conflict",
+      "reverse": true,
+      "text": "When closeness feels vulnerable, I treat disagreement as proof that emotional connection is over."
+    },
+    {
+      "id": "EA-346",
+      "category": "conflict",
+      "reverse": false,
+      "text": "While balancing several responsibilities, I remain emotionally engaged while discussing disagreement respectfully."
+    },
+    {
+      "id": "EA-347",
+      "category": "conflict",
+      "reverse": true,
+      "text": "When a relationship changes, I shut down, attack, or disappear whenever conflict appears."
+    },
+    {
+      "id": "EA-348",
+      "category": "conflict",
+      "reverse": false,
+      "text": "When words are hard to find, I can take a pause without abandoning the conversation indefinitely."
+    },
+    {
+      "id": "EA-349",
+      "category": "conflict",
+      "reverse": true,
+      "text": "While trying to reconnect, I treat disagreement as proof that emotional connection is over."
+    },
+    {
+      "id": "EA-350",
+      "category": "conflict",
+      "reverse": false,
+      "text": "When my care is not immediately recognised, I remain emotionally engaged while discussing disagreement respectfully."
+    },
+    {
+      "id": "EA-351",
+      "category": "repair",
+      "reverse": false,
+      "text": "In my closest relationships, I can acknowledge emotional harm and make a specific repair."
+    },
+    {
+      "id": "EA-352",
+      "category": "repair",
+      "reverse": true,
+      "text": "During an ordinary conversation, I avoid repair because apologising feels too threatening."
+    },
+    {
+      "id": "EA-353",
+      "category": "repair",
+      "reverse": false,
+      "text": "When someone shares difficult news, I return to unresolved conversations when both people are calmer."
+    },
+    {
+      "id": "EA-354",
+      "category": "repair",
+      "reverse": true,
+      "text": "After a misunderstanding, I expect time alone to fix harm that has never been discussed."
+    },
+    {
+      "id": "EA-355",
+      "category": "repair",
+      "reverse": false,
+      "text": "When emotions become intense, I can acknowledge emotional harm and make a specific repair."
+    },
+    {
+      "id": "EA-356",
+      "category": "repair",
+      "reverse": true,
+      "text": "While spending time together, I avoid repair because apologising feels too threatening."
+    },
+    {
+      "id": "EA-357",
+      "category": "repair",
+      "reverse": false,
+      "text": "When I feel criticised, I return to unresolved conversations when both people are calmer."
+    },
+    {
+      "id": "EA-358",
+      "category": "repair",
+      "reverse": true,
+      "text": "When another person needs reassurance, I expect time alone to fix harm that has never been discussed."
+    },
+    {
+      "id": "EA-359",
+      "category": "repair",
+      "reverse": false,
+      "text": "After a stressful day, I can acknowledge emotional harm and make a specific repair."
+    },
+    {
+      "id": "EA-360",
+      "category": "repair",
+      "reverse": true,
+      "text": "When I need support myself, I avoid repair because apologising feels too threatening."
+    },
+    {
+      "id": "EA-361",
+      "category": "repair",
+      "reverse": false,
+      "text": "During disagreement, I return to unresolved conversations when both people are calmer."
+    },
+    {
+      "id": "EA-362",
+      "category": "repair",
+      "reverse": true,
+      "text": "When someone sets a boundary, I expect time alone to fix harm that has never been discussed."
+    },
+    {
+      "id": "EA-363",
+      "category": "repair",
+      "reverse": false,
+      "text": "When I have limited time or energy, I can acknowledge emotional harm and make a specific repair."
+    },
+    {
+      "id": "EA-364",
+      "category": "repair",
+      "reverse": true,
+      "text": "While discussing a sensitive subject, I avoid repair because apologising feels too threatening."
+    },
+    {
+      "id": "EA-365",
+      "category": "repair",
+      "reverse": false,
+      "text": "When another person becomes tearful, I return to unresolved conversations when both people are calmer."
+    },
+    {
+      "id": "EA-366",
+      "category": "repair",
+      "reverse": true,
+      "text": "After I realise I caused hurt, I expect time alone to fix harm that has never been discussed."
+    },
+    {
+      "id": "EA-367",
+      "category": "repair",
+      "reverse": false,
+      "text": "When trust is still developing, I can acknowledge emotional harm and make a specific repair."
+    },
+    {
+      "id": "EA-368",
+      "category": "repair",
+      "reverse": true,
+      "text": "When someone’s feelings differ from mine, I avoid repair because apologising feels too threatening."
+    },
+    {
+      "id": "EA-369",
+      "category": "repair",
+      "reverse": false,
+      "text": "During periods of distance, I return to unresolved conversations when both people are calmer."
+    },
+    {
+      "id": "EA-370",
+      "category": "repair",
+      "reverse": true,
+      "text": "When closeness feels vulnerable, I expect time alone to fix harm that has never been discussed."
+    },
+    {
+      "id": "EA-371",
+      "category": "repair",
+      "reverse": false,
+      "text": "While balancing several responsibilities, I can acknowledge emotional harm and make a specific repair."
+    },
+    {
+      "id": "EA-372",
+      "category": "repair",
+      "reverse": true,
+      "text": "When a relationship changes, I avoid repair because apologising feels too threatening."
+    },
+    {
+      "id": "EA-373",
+      "category": "repair",
+      "reverse": false,
+      "text": "When words are hard to find, I return to unresolved conversations when both people are calmer."
+    },
+    {
+      "id": "EA-374",
+      "category": "repair",
+      "reverse": true,
+      "text": "While trying to reconnect, I expect time alone to fix harm that has never been discussed."
+    },
+    {
+      "id": "EA-375",
+      "category": "repair",
+      "reverse": false,
+      "text": "When my care is not immediately recognised, I can acknowledge emotional harm and make a specific repair."
+    },
+    {
+      "id": "EA-376",
+      "category": "giving_support",
+      "reverse": false,
+      "text": "In my closest relationships, I ask what kind of support would be useful instead of guessing."
+    },
+    {
+      "id": "EA-377",
+      "category": "giving_support",
+      "reverse": true,
+      "text": "During an ordinary conversation, I offer solutions before understanding what support is wanted."
+    },
+    {
+      "id": "EA-378",
+      "category": "giving_support",
+      "reverse": false,
+      "text": "When someone shares difficult news, I can support someone without taking over their choices."
+    },
+    {
+      "id": "EA-379",
+      "category": "giving_support",
+      "reverse": true,
+      "text": "After a misunderstanding, I become resentful when my support is not accepted exactly as offered."
+    },
+    {
+      "id": "EA-380",
+      "category": "giving_support",
+      "reverse": false,
+      "text": "When emotions become intense, I ask what kind of support would be useful instead of guessing."
+    },
+    {
+      "id": "EA-381",
+      "category": "giving_support",
+      "reverse": true,
+      "text": "While spending time together, I offer solutions before understanding what support is wanted."
+    },
+    {
+      "id": "EA-382",
+      "category": "giving_support",
+      "reverse": false,
+      "text": "When I feel criticised, I can support someone without taking over their choices."
+    },
+    {
+      "id": "EA-383",
+      "category": "giving_support",
+      "reverse": true,
+      "text": "When another person needs reassurance, I become resentful when my support is not accepted exactly as offered."
+    },
+    {
+      "id": "EA-384",
+      "category": "giving_support",
+      "reverse": false,
+      "text": "After a stressful day, I ask what kind of support would be useful instead of guessing."
+    },
+    {
+      "id": "EA-385",
+      "category": "giving_support",
+      "reverse": true,
+      "text": "When I need support myself, I offer solutions before understanding what support is wanted."
+    },
+    {
+      "id": "EA-386",
+      "category": "giving_support",
+      "reverse": false,
+      "text": "During disagreement, I can support someone without taking over their choices."
+    },
+    {
+      "id": "EA-387",
+      "category": "giving_support",
+      "reverse": true,
+      "text": "When someone sets a boundary, I become resentful when my support is not accepted exactly as offered."
+    },
+    {
+      "id": "EA-388",
+      "category": "giving_support",
+      "reverse": false,
+      "text": "When I have limited time or energy, I ask what kind of support would be useful instead of guessing."
+    },
+    {
+      "id": "EA-389",
+      "category": "giving_support",
+      "reverse": true,
+      "text": "While discussing a sensitive subject, I offer solutions before understanding what support is wanted."
+    },
+    {
+      "id": "EA-390",
+      "category": "giving_support",
+      "reverse": false,
+      "text": "When another person becomes tearful, I can support someone without taking over their choices."
+    },
+    {
+      "id": "EA-391",
+      "category": "giving_support",
+      "reverse": true,
+      "text": "After I realise I caused hurt, I become resentful when my support is not accepted exactly as offered."
+    },
+    {
+      "id": "EA-392",
+      "category": "giving_support",
+      "reverse": false,
+      "text": "When trust is still developing, I ask what kind of support would be useful instead of guessing."
+    },
+    {
+      "id": "EA-393",
+      "category": "giving_support",
+      "reverse": true,
+      "text": "When someone’s feelings differ from mine, I offer solutions before understanding what support is wanted."
+    },
+    {
+      "id": "EA-394",
+      "category": "giving_support",
+      "reverse": false,
+      "text": "During periods of distance, I can support someone without taking over their choices."
+    },
+    {
+      "id": "EA-395",
+      "category": "giving_support",
+      "reverse": true,
+      "text": "When closeness feels vulnerable, I become resentful when my support is not accepted exactly as offered."
+    },
+    {
+      "id": "EA-396",
+      "category": "giving_support",
+      "reverse": false,
+      "text": "While balancing several responsibilities, I ask what kind of support would be useful instead of guessing."
+    },
+    {
+      "id": "EA-397",
+      "category": "giving_support",
+      "reverse": true,
+      "text": "When a relationship changes, I offer solutions before understanding what support is wanted."
+    },
+    {
+      "id": "EA-398",
+      "category": "giving_support",
+      "reverse": false,
+      "text": "When words are hard to find, I can support someone without taking over their choices."
+    },
+    {
+      "id": "EA-399",
+      "category": "giving_support",
+      "reverse": true,
+      "text": "While trying to reconnect, I become resentful when my support is not accepted exactly as offered."
+    },
+    {
+      "id": "EA-400",
+      "category": "giving_support",
+      "reverse": false,
+      "text": "When my care is not immediately recognised, I ask what kind of support would be useful instead of guessing."
+    },
+    {
+      "id": "EA-401",
+      "category": "receiving_support",
+      "reverse": false,
+      "text": "In my closest relationships, I can let a trustworthy person support me emotionally."
+    },
+    {
+      "id": "EA-402",
+      "category": "receiving_support",
+      "reverse": true,
+      "text": "During an ordinary conversation, I reject support automatically even when I need it."
+    },
+    {
+      "id": "EA-403",
+      "category": "receiving_support",
+      "reverse": false,
+      "text": "When someone shares difficult news, I can state what kind of help would actually feel useful."
+    },
+    {
+      "id": "EA-404",
+      "category": "receiving_support",
+      "reverse": true,
+      "text": "After a misunderstanding, I test whether people care instead of directly asking for support."
+    },
+    {
+      "id": "EA-405",
+      "category": "receiving_support",
+      "reverse": false,
+      "text": "When emotions become intense, I can let a trustworthy person support me emotionally."
+    },
+    {
+      "id": "EA-406",
+      "category": "receiving_support",
+      "reverse": true,
+      "text": "While spending time together, I reject support automatically even when I need it."
+    },
+    {
+      "id": "EA-407",
+      "category": "receiving_support",
+      "reverse": false,
+      "text": "When I feel criticised, I can state what kind of help would actually feel useful."
+    },
+    {
+      "id": "EA-408",
+      "category": "receiving_support",
+      "reverse": true,
+      "text": "When another person needs reassurance, I test whether people care instead of directly asking for support."
+    },
+    {
+      "id": "EA-409",
+      "category": "receiving_support",
+      "reverse": false,
+      "text": "After a stressful day, I can let a trustworthy person support me emotionally."
+    },
+    {
+      "id": "EA-410",
+      "category": "receiving_support",
+      "reverse": true,
+      "text": "When I need support myself, I reject support automatically even when I need it."
+    },
+    {
+      "id": "EA-411",
+      "category": "receiving_support",
+      "reverse": false,
+      "text": "During disagreement, I can state what kind of help would actually feel useful."
+    },
+    {
+      "id": "EA-412",
+      "category": "receiving_support",
+      "reverse": true,
+      "text": "When someone sets a boundary, I test whether people care instead of directly asking for support."
+    },
+    {
+      "id": "EA-413",
+      "category": "receiving_support",
+      "reverse": false,
+      "text": "When I have limited time or energy, I can let a trustworthy person support me emotionally."
+    },
+    {
+      "id": "EA-414",
+      "category": "receiving_support",
+      "reverse": true,
+      "text": "While discussing a sensitive subject, I reject support automatically even when I need it."
+    },
+    {
+      "id": "EA-415",
+      "category": "receiving_support",
+      "reverse": false,
+      "text": "When another person becomes tearful, I can state what kind of help would actually feel useful."
+    },
+    {
+      "id": "EA-416",
+      "category": "receiving_support",
+      "reverse": true,
+      "text": "After I realise I caused hurt, I test whether people care instead of directly asking for support."
+    },
+    {
+      "id": "EA-417",
+      "category": "receiving_support",
+      "reverse": false,
+      "text": "When trust is still developing, I can let a trustworthy person support me emotionally."
+    },
+    {
+      "id": "EA-418",
+      "category": "receiving_support",
+      "reverse": true,
+      "text": "When someone’s feelings differ from mine, I reject support automatically even when I need it."
+    },
+    {
+      "id": "EA-419",
+      "category": "receiving_support",
+      "reverse": false,
+      "text": "During periods of distance, I can state what kind of help would actually feel useful."
+    },
+    {
+      "id": "EA-420",
+      "category": "receiving_support",
+      "reverse": true,
+      "text": "When closeness feels vulnerable, I test whether people care instead of directly asking for support."
+    },
+    {
+      "id": "EA-421",
+      "category": "receiving_support",
+      "reverse": false,
+      "text": "While balancing several responsibilities, I can let a trustworthy person support me emotionally."
+    },
+    {
+      "id": "EA-422",
+      "category": "receiving_support",
+      "reverse": true,
+      "text": "When a relationship changes, I reject support automatically even when I need it."
+    },
+    {
+      "id": "EA-423",
+      "category": "receiving_support",
+      "reverse": false,
+      "text": "When words are hard to find, I can state what kind of help would actually feel useful."
+    },
+    {
+      "id": "EA-424",
+      "category": "receiving_support",
+      "reverse": true,
+      "text": "While trying to reconnect, I test whether people care instead of directly asking for support."
+    },
+    {
+      "id": "EA-425",
+      "category": "receiving_support",
+      "reverse": false,
+      "text": "When my care is not immediately recognised, I can let a trustworthy person support me emotionally."
+    },
+    {
+      "id": "EA-426",
+      "category": "intimacy",
+      "reverse": false,
+      "text": "In my closest relationships, I can build closeness through honest, gradual sharing."
+    },
+    {
+      "id": "EA-427",
+      "category": "intimacy",
+      "reverse": true,
+      "text": "During an ordinary conversation, closeness feels possible only when there are no emotional differences."
+    },
+    {
+      "id": "EA-428",
+      "category": "intimacy",
+      "reverse": false,
+      "text": "When someone shares difficult news, I tolerate being known without losing my separate sense of self."
+    },
+    {
+      "id": "EA-429",
+      "category": "intimacy",
+      "reverse": true,
+      "text": "After a misunderstanding, I either merge completely with someone or keep them entirely distant."
+    },
+    {
+      "id": "EA-430",
+      "category": "intimacy",
+      "reverse": false,
+      "text": "When emotions become intense, I can build closeness through honest, gradual sharing."
+    },
+    {
+      "id": "EA-431",
+      "category": "intimacy",
+      "reverse": true,
+      "text": "While spending time together, closeness feels possible only when there are no emotional differences."
+    },
+    {
+      "id": "EA-432",
+      "category": "intimacy",
+      "reverse": false,
+      "text": "When I feel criticised, I tolerate being known without losing my separate sense of self."
+    },
+    {
+      "id": "EA-433",
+      "category": "intimacy",
+      "reverse": true,
+      "text": "When another person needs reassurance, I either merge completely with someone or keep them entirely distant."
+    },
+    {
+      "id": "EA-434",
+      "category": "intimacy",
+      "reverse": false,
+      "text": "After a stressful day, I can build closeness through honest, gradual sharing."
+    },
+    {
+      "id": "EA-435",
+      "category": "intimacy",
+      "reverse": true,
+      "text": "When I need support myself, closeness feels possible only when there are no emotional differences."
+    },
+    {
+      "id": "EA-436",
+      "category": "intimacy",
+      "reverse": false,
+      "text": "During disagreement, I tolerate being known without losing my separate sense of self."
+    },
+    {
+      "id": "EA-437",
+      "category": "intimacy",
+      "reverse": true,
+      "text": "When someone sets a boundary, I either merge completely with someone or keep them entirely distant."
+    },
+    {
+      "id": "EA-438",
+      "category": "intimacy",
+      "reverse": false,
+      "text": "When I have limited time or energy, I can build closeness through honest, gradual sharing."
+    },
+    {
+      "id": "EA-439",
+      "category": "intimacy",
+      "reverse": true,
+      "text": "While discussing a sensitive subject, closeness feels possible only when there are no emotional differences."
+    },
+    {
+      "id": "EA-440",
+      "category": "intimacy",
+      "reverse": false,
+      "text": "When another person becomes tearful, I tolerate being known without losing my separate sense of self."
+    },
+    {
+      "id": "EA-441",
+      "category": "intimacy",
+      "reverse": true,
+      "text": "After I realise I caused hurt, I either merge completely with someone or keep them entirely distant."
+    },
+    {
+      "id": "EA-442",
+      "category": "intimacy",
+      "reverse": false,
+      "text": "When trust is still developing, I can build closeness through honest, gradual sharing."
+    },
+    {
+      "id": "EA-443",
+      "category": "intimacy",
+      "reverse": true,
+      "text": "When someone’s feelings differ from mine, closeness feels possible only when there are no emotional differences."
+    },
+    {
+      "id": "EA-444",
+      "category": "intimacy",
+      "reverse": false,
+      "text": "During periods of distance, I tolerate being known without losing my separate sense of self."
+    },
+    {
+      "id": "EA-445",
+      "category": "intimacy",
+      "reverse": true,
+      "text": "When closeness feels vulnerable, I either merge completely with someone or keep them entirely distant."
+    },
+    {
+      "id": "EA-446",
+      "category": "intimacy",
+      "reverse": false,
+      "text": "While balancing several responsibilities, I can build closeness through honest, gradual sharing."
+    },
+    {
+      "id": "EA-447",
+      "category": "intimacy",
+      "reverse": true,
+      "text": "When a relationship changes, closeness feels possible only when there are no emotional differences."
+    },
+    {
+      "id": "EA-448",
+      "category": "intimacy",
+      "reverse": false,
+      "text": "When words are hard to find, I tolerate being known without losing my separate sense of self."
+    },
+    {
+      "id": "EA-449",
+      "category": "intimacy",
+      "reverse": true,
+      "text": "While trying to reconnect, I either merge completely with someone or keep them entirely distant."
+    },
+    {
+      "id": "EA-450",
+      "category": "intimacy",
+      "reverse": false,
+      "text": "When my care is not immediately recognised, I can build closeness through honest, gradual sharing."
+    },
+    {
+      "id": "EA-451",
+      "category": "autonomy",
+      "reverse": false,
+      "text": "In my closest relationships, I balance emotional connection with independent interests and choices."
+    },
+    {
+      "id": "EA-452",
+      "category": "autonomy",
+      "reverse": true,
+      "text": "During an ordinary conversation, I believe emotional availability requires constant access to each other."
+    },
+    {
+      "id": "EA-453",
+      "category": "autonomy",
+      "reverse": false,
+      "text": "When someone shares difficult news, I can depend on others in some ways without giving up my agency."
+    },
+    {
+      "id": "EA-454",
+      "category": "autonomy",
+      "reverse": true,
+      "text": "After a misunderstanding, I experience independence as rejection rather than a healthy difference."
+    },
+    {
+      "id": "EA-455",
+      "category": "autonomy",
+      "reverse": false,
+      "text": "When emotions become intense, I balance emotional connection with independent interests and choices."
+    },
+    {
+      "id": "EA-456",
+      "category": "autonomy",
+      "reverse": true,
+      "text": "While spending time together, I believe emotional availability requires constant access to each other."
+    },
+    {
+      "id": "EA-457",
+      "category": "autonomy",
+      "reverse": false,
+      "text": "When I feel criticised, I can depend on others in some ways without giving up my agency."
+    },
+    {
+      "id": "EA-458",
+      "category": "autonomy",
+      "reverse": true,
+      "text": "When another person needs reassurance, I experience independence as rejection rather than a healthy difference."
+    },
+    {
+      "id": "EA-459",
+      "category": "autonomy",
+      "reverse": false,
+      "text": "After a stressful day, I balance emotional connection with independent interests and choices."
+    },
+    {
+      "id": "EA-460",
+      "category": "autonomy",
+      "reverse": true,
+      "text": "When I need support myself, I believe emotional availability requires constant access to each other."
+    },
+    {
+      "id": "EA-461",
+      "category": "autonomy",
+      "reverse": false,
+      "text": "During disagreement, I can depend on others in some ways without giving up my agency."
+    },
+    {
+      "id": "EA-462",
+      "category": "autonomy",
+      "reverse": true,
+      "text": "When someone sets a boundary, I experience independence as rejection rather than a healthy difference."
+    },
+    {
+      "id": "EA-463",
+      "category": "autonomy",
+      "reverse": false,
+      "text": "When I have limited time or energy, I balance emotional connection with independent interests and choices."
+    },
+    {
+      "id": "EA-464",
+      "category": "autonomy",
+      "reverse": true,
+      "text": "While discussing a sensitive subject, I believe emotional availability requires constant access to each other."
+    },
+    {
+      "id": "EA-465",
+      "category": "autonomy",
+      "reverse": false,
+      "text": "When another person becomes tearful, I can depend on others in some ways without giving up my agency."
+    },
+    {
+      "id": "EA-466",
+      "category": "autonomy",
+      "reverse": true,
+      "text": "After I realise I caused hurt, I experience independence as rejection rather than a healthy difference."
+    },
+    {
+      "id": "EA-467",
+      "category": "autonomy",
+      "reverse": false,
+      "text": "When trust is still developing, I balance emotional connection with independent interests and choices."
+    },
+    {
+      "id": "EA-468",
+      "category": "autonomy",
+      "reverse": true,
+      "text": "When someone’s feelings differ from mine, I believe emotional availability requires constant access to each other."
+    },
+    {
+      "id": "EA-469",
+      "category": "autonomy",
+      "reverse": false,
+      "text": "During periods of distance, I can depend on others in some ways without giving up my agency."
+    },
+    {
+      "id": "EA-470",
+      "category": "autonomy",
+      "reverse": true,
+      "text": "When closeness feels vulnerable, I experience independence as rejection rather than a healthy difference."
+    },
+    {
+      "id": "EA-471",
+      "category": "autonomy",
+      "reverse": false,
+      "text": "While balancing several responsibilities, I balance emotional connection with independent interests and choices."
+    },
+    {
+      "id": "EA-472",
+      "category": "autonomy",
+      "reverse": true,
+      "text": "When a relationship changes, I believe emotional availability requires constant access to each other."
+    },
+    {
+      "id": "EA-473",
+      "category": "autonomy",
+      "reverse": false,
+      "text": "When words are hard to find, I can depend on others in some ways without giving up my agency."
+    },
+    {
+      "id": "EA-474",
+      "category": "autonomy",
+      "reverse": true,
+      "text": "While trying to reconnect, I experience independence as rejection rather than a healthy difference."
+    },
+    {
+      "id": "EA-475",
+      "category": "autonomy",
+      "reverse": false,
+      "text": "When my care is not immediately recognised, I balance emotional connection with independent interests and choices."
+    },
+    {
+      "id": "EA-476",
+      "category": "stress_capacity",
+      "reverse": false,
+      "text": "In my closest relationships, I communicate when stress temporarily reduces my emotional capacity."
+    },
+    {
+      "id": "EA-477",
+      "category": "stress_capacity",
+      "reverse": true,
+      "text": "During an ordinary conversation, stress makes me emotionally disappear without explanation."
+    },
+    {
+      "id": "EA-478",
+      "category": "stress_capacity",
+      "reverse": false,
+      "text": "When someone shares difficult news, even under pressure, I preserve some respectful connection."
+    },
+    {
+      "id": "EA-479",
+      "category": "stress_capacity",
+      "reverse": true,
+      "text": "After a misunderstanding, when overwhelmed, I treat every emotional need as an unreasonable demand."
+    },
+    {
+      "id": "EA-480",
+      "category": "stress_capacity",
+      "reverse": false,
+      "text": "When emotions become intense, I communicate when stress temporarily reduces my emotional capacity."
+    },
+    {
+      "id": "EA-481",
+      "category": "stress_capacity",
+      "reverse": true,
+      "text": "While spending time together, stress makes me emotionally disappear without explanation."
+    },
+    {
+      "id": "EA-482",
+      "category": "stress_capacity",
+      "reverse": false,
+      "text": "When I feel criticised, even under pressure, I preserve some respectful connection."
+    },
+    {
+      "id": "EA-483",
+      "category": "stress_capacity",
+      "reverse": true,
+      "text": "When another person needs reassurance, when overwhelmed, I treat every emotional need as an unreasonable demand."
+    },
+    {
+      "id": "EA-484",
+      "category": "stress_capacity",
+      "reverse": false,
+      "text": "After a stressful day, I communicate when stress temporarily reduces my emotional capacity."
+    },
+    {
+      "id": "EA-485",
+      "category": "stress_capacity",
+      "reverse": true,
+      "text": "When I need support myself, stress makes me emotionally disappear without explanation."
+    },
+    {
+      "id": "EA-486",
+      "category": "stress_capacity",
+      "reverse": false,
+      "text": "During disagreement, even under pressure, I preserve some respectful connection."
+    },
+    {
+      "id": "EA-487",
+      "category": "stress_capacity",
+      "reverse": true,
+      "text": "When someone sets a boundary, when overwhelmed, I treat every emotional need as an unreasonable demand."
+    },
+    {
+      "id": "EA-488",
+      "category": "stress_capacity",
+      "reverse": false,
+      "text": "When I have limited time or energy, I communicate when stress temporarily reduces my emotional capacity."
+    },
+    {
+      "id": "EA-489",
+      "category": "stress_capacity",
+      "reverse": true,
+      "text": "While discussing a sensitive subject, stress makes me emotionally disappear without explanation."
+    },
+    {
+      "id": "EA-490",
+      "category": "stress_capacity",
+      "reverse": false,
+      "text": "When another person becomes tearful, even under pressure, I preserve some respectful connection."
+    },
+    {
+      "id": "EA-491",
+      "category": "stress_capacity",
+      "reverse": true,
+      "text": "After I realise I caused hurt, when overwhelmed, I treat every emotional need as an unreasonable demand."
+    },
+    {
+      "id": "EA-492",
+      "category": "stress_capacity",
+      "reverse": false,
+      "text": "When trust is still developing, I communicate when stress temporarily reduces my emotional capacity."
+    },
+    {
+      "id": "EA-493",
+      "category": "stress_capacity",
+      "reverse": true,
+      "text": "When someone’s feelings differ from mine, stress makes me emotionally disappear without explanation."
+    },
+    {
+      "id": "EA-494",
+      "category": "stress_capacity",
+      "reverse": false,
+      "text": "During periods of distance, even under pressure, I preserve some respectful connection."
+    },
+    {
+      "id": "EA-495",
+      "category": "stress_capacity",
+      "reverse": true,
+      "text": "When closeness feels vulnerable, when overwhelmed, I treat every emotional need as an unreasonable demand."
+    },
+    {
+      "id": "EA-496",
+      "category": "stress_capacity",
+      "reverse": false,
+      "text": "While balancing several responsibilities, I communicate when stress temporarily reduces my emotional capacity."
+    },
+    {
+      "id": "EA-497",
+      "category": "stress_capacity",
+      "reverse": true,
+      "text": "When a relationship changes, stress makes me emotionally disappear without explanation."
+    },
+    {
+      "id": "EA-498",
+      "category": "stress_capacity",
+      "reverse": false,
+      "text": "When words are hard to find, even under pressure, I preserve some respectful connection."
+    },
+    {
+      "id": "EA-499",
+      "category": "stress_capacity",
+      "reverse": true,
+      "text": "While trying to reconnect, when overwhelmed, I treat every emotional need as an unreasonable demand."
+    },
+    {
+      "id": "EA-500",
+      "category": "stress_capacity",
+      "reverse": false,
+      "text": "When my care is not immediately recognised, I communicate when stress temporarily reduces my emotional capacity."
+    }
+  ]
+}

@@ -1,0 +1,3653 @@
+{
+  "meta": {
+    "title": "Depression Symptoms & Wellbeing Check-In",
+    "description": "A private 500-statement, non-diagnostic reflection across 20 depression-related areas.",
+    "scale": {
+      "min": 1,
+      "max": 10,
+      "minLabel": "Not at all",
+      "maxLabel": "Nearly all the time"
+    },
+    "categories": [
+      {
+        "id": "low_mood",
+        "label": "Low Mood & Sadness",
+        "icon": "🌧️"
+      },
+      {
+        "id": "interest",
+        "label": "Interest & Enjoyment",
+        "icon": "🎨"
+      },
+      {
+        "id": "energy",
+        "label": "Energy & Fatigue",
+        "icon": "🔋"
+      },
+      {
+        "id": "sleep",
+        "label": "Sleep Changes",
+        "icon": "🌙"
+      },
+      {
+        "id": "appetite",
+        "label": "Appetite & Eating Changes",
+        "icon": "🍽️"
+      },
+      {
+        "id": "concentration",
+        "label": "Concentration & Memory",
+        "icon": "🎯"
+      },
+      {
+        "id": "self_worth",
+        "label": "Self-Worth",
+        "icon": "💎"
+      },
+      {
+        "id": "guilt",
+        "label": "Guilt & Self-Blame",
+        "icon": "⚖️"
+      },
+      {
+        "id": "hopelessness",
+        "label": "Hope & Future Outlook",
+        "icon": "🌅"
+      },
+      {
+        "id": "motivation",
+        "label": "Motivation & Initiative",
+        "icon": "🚶"
+      },
+      {
+        "id": "decisions",
+        "label": "Decision-Making",
+        "icon": "🧭"
+      },
+      {
+        "id": "movement",
+        "label": "Movement & Restlessness",
+        "icon": "⏱️"
+      },
+      {
+        "id": "irritability",
+        "label": "Irritability & Frustration",
+        "icon": "🌋"
+      },
+      {
+        "id": "withdrawal",
+        "label": "Social Withdrawal",
+        "icon": "🚪"
+      },
+      {
+        "id": "functioning",
+        "label": "Daily Functioning",
+        "icon": "📋"
+      },
+      {
+        "id": "self_care",
+        "label": "Self-Care & Hygiene",
+        "icon": "🧼"
+      },
+      {
+        "id": "physical",
+        "label": "Physical Discomfort",
+        "icon": "🫁"
+      },
+      {
+        "id": "rumination",
+        "label": "Rumination & Negative Thinking",
+        "icon": "🔁"
+      },
+      {
+        "id": "emotional_expression",
+        "label": "Tearfulness & Emotional Numbness",
+        "icon": "💧"
+      },
+      {
+        "id": "safety",
+        "label": "Safety & Urgent Support",
+        "icon": "🛟"
+      }
+    ],
+    "levels": [
+      {
+        "min": 1,
+        "max": 2.5,
+        "label": "Lower Reported Symptom Load",
+        "emoji": "🌿",
+        "desc": "You reported fewer difficulties across this non-diagnostic check-in. Continue noticing changes, especially if functioning or safety becomes affected."
+      },
+      {
+        "min": 2.5,
+        "max": 4,
+        "label": "Some Reported Difficulties",
+        "emoji": "🌦️",
+        "desc": "You reported some depressive experiences. Supportive routines and a conversation with someone you trust may help; seek professional advice if symptoms persist."
+      },
+      {
+        "min": 4,
+        "max": 5.5,
+        "label": "Several Areas of Concern",
+        "emoji": "🤲",
+        "desc": "Several areas appear difficult. Consider discussing these experiences with a qualified health professional, especially if they have lasted two weeks or affect daily life."
+      },
+      {
+        "min": 5.5,
+        "max": 7.5,
+        "label": "High Reported Symptom Load",
+        "emoji": "💛",
+        "desc": "Your responses suggest substantial current difficulty. Please consider contacting a qualified health professional soon and involve a trusted support person."
+      },
+      {
+        "min": 7.5,
+        "max": 10.01,
+        "label": "Significant Reported Distress",
+        "emoji": "🧡",
+        "desc": "You reported significant distress or impairment. Please seek professional support promptly. If you may be unsafe, use emergency or crisis support now."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "DP-001",
+      "category": "low_mood",
+      "reverse": true,
+      "urgent": false,
+      "text": "During the past two weeks, I experienced periods when my mood felt reasonably steady."
+    },
+    {
+      "id": "DP-002",
+      "category": "low_mood",
+      "reverse": false,
+      "urgent": false,
+      "text": "On most mornings, I felt sad, empty, or emotionally low."
+    },
+    {
+      "id": "DP-003",
+      "category": "low_mood",
+      "reverse": true,
+      "urgent": false,
+      "text": "While handling ordinary responsibilities, I could notice sadness without it filling the entire day."
+    },
+    {
+      "id": "DP-004",
+      "category": "low_mood",
+      "reverse": false,
+      "urgent": false,
+      "text": "After a disappointing event, A heavy low mood stayed with me for much of the day."
+    },
+    {
+      "id": "DP-005",
+      "category": "low_mood",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I had unstructured time, I experienced periods when my mood felt reasonably steady."
+    },
+    {
+      "id": "DP-006",
+      "category": "low_mood",
+      "reverse": false,
+      "urgent": false,
+      "text": "During work or study, I felt sad, empty, or emotionally low."
+    },
+    {
+      "id": "DP-007",
+      "category": "low_mood",
+      "reverse": true,
+      "urgent": false,
+      "text": "While spending time alone, I could notice sadness without it filling the entire day."
+    },
+    {
+      "id": "DP-008",
+      "category": "low_mood",
+      "reverse": false,
+      "urgent": false,
+      "text": "Around people I know, A heavy low mood stayed with me for much of the day."
+    },
+    {
+      "id": "DP-009",
+      "category": "low_mood",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I considered doing something I usually enjoy, I experienced periods when my mood felt reasonably steady."
+    },
+    {
+      "id": "DP-010",
+      "category": "low_mood",
+      "reverse": false,
+      "urgent": false,
+      "text": "Toward the end of the day, I felt sad, empty, or emotionally low."
+    },
+    {
+      "id": "DP-011",
+      "category": "low_mood",
+      "reverse": true,
+      "urgent": false,
+      "text": "After a poor night of sleep, I could notice sadness without it filling the entire day."
+    },
+    {
+      "id": "DP-012",
+      "category": "low_mood",
+      "reverse": false,
+      "urgent": false,
+      "text": "When a task required concentration, A heavy low mood stayed with me for much of the day."
+    },
+    {
+      "id": "DP-013",
+      "category": "low_mood",
+      "reverse": true,
+      "urgent": false,
+      "text": "While thinking about past mistakes, I experienced periods when my mood felt reasonably steady."
+    },
+    {
+      "id": "DP-014",
+      "category": "low_mood",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I looked ahead to the future, I felt sad, empty, or emotionally low."
+    },
+    {
+      "id": "DP-015",
+      "category": "low_mood",
+      "reverse": true,
+      "urgent": false,
+      "text": "When someone offered support, I could notice sadness without it filling the entire day."
+    },
+    {
+      "id": "DP-016",
+      "category": "low_mood",
+      "reverse": false,
+      "urgent": false,
+      "text": "While making a simple choice, A heavy low mood stayed with me for much of the day."
+    },
+    {
+      "id": "DP-017",
+      "category": "low_mood",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I needed to care for myself, I experienced periods when my mood felt reasonably steady."
+    },
+    {
+      "id": "DP-018",
+      "category": "low_mood",
+      "reverse": false,
+      "urgent": false,
+      "text": "During conversations, I felt sad, empty, or emotionally low."
+    },
+    {
+      "id": "DP-019",
+      "category": "low_mood",
+      "reverse": true,
+      "urgent": false,
+      "text": "When plans changed, I could notice sadness without it filling the entire day."
+    },
+    {
+      "id": "DP-020",
+      "category": "low_mood",
+      "reverse": false,
+      "urgent": false,
+      "text": "After completing a small task, A heavy low mood stayed with me for much of the day."
+    },
+    {
+      "id": "DP-021",
+      "category": "low_mood",
+      "reverse": true,
+      "urgent": false,
+      "text": "While following my usual routine, I experienced periods when my mood felt reasonably steady."
+    },
+    {
+      "id": "DP-022",
+      "category": "low_mood",
+      "reverse": false,
+      "urgent": false,
+      "text": "When physical discomfort appeared, I felt sad, empty, or emotionally low."
+    },
+    {
+      "id": "DP-023",
+      "category": "low_mood",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I compared myself with others, I could notice sadness without it filling the entire day."
+    },
+    {
+      "id": "DP-024",
+      "category": "low_mood",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I tried to rest, A heavy low mood stayed with me for much of the day."
+    },
+    {
+      "id": "DP-025",
+      "category": "low_mood",
+      "reverse": true,
+      "urgent": false,
+      "text": "Even when others could not see how I felt, I experienced periods when my mood felt reasonably steady."
+    },
+    {
+      "id": "DP-026",
+      "category": "interest",
+      "reverse": true,
+      "urgent": false,
+      "text": "During the past two weeks, I felt some interest in activities that usually matter to me."
+    },
+    {
+      "id": "DP-027",
+      "category": "interest",
+      "reverse": false,
+      "urgent": false,
+      "text": "On most mornings, Activities I usually value felt uninteresting."
+    },
+    {
+      "id": "DP-028",
+      "category": "interest",
+      "reverse": true,
+      "urgent": false,
+      "text": "While handling ordinary responsibilities, I was able to enjoy at least one ordinary experience."
+    },
+    {
+      "id": "DP-029",
+      "category": "interest",
+      "reverse": false,
+      "urgent": false,
+      "text": "After a disappointing event, I found little or no pleasure in things I normally enjoy."
+    },
+    {
+      "id": "DP-030",
+      "category": "interest",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I had unstructured time, I felt some interest in activities that usually matter to me."
+    },
+    {
+      "id": "DP-031",
+      "category": "interest",
+      "reverse": false,
+      "urgent": false,
+      "text": "During work or study, Activities I usually value felt uninteresting."
+    },
+    {
+      "id": "DP-032",
+      "category": "interest",
+      "reverse": true,
+      "urgent": false,
+      "text": "While spending time alone, I was able to enjoy at least one ordinary experience."
+    },
+    {
+      "id": "DP-033",
+      "category": "interest",
+      "reverse": false,
+      "urgent": false,
+      "text": "Around people I know, I found little or no pleasure in things I normally enjoy."
+    },
+    {
+      "id": "DP-034",
+      "category": "interest",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I considered doing something I usually enjoy, I felt some interest in activities that usually matter to me."
+    },
+    {
+      "id": "DP-035",
+      "category": "interest",
+      "reverse": false,
+      "urgent": false,
+      "text": "Toward the end of the day, Activities I usually value felt uninteresting."
+    },
+    {
+      "id": "DP-036",
+      "category": "interest",
+      "reverse": true,
+      "urgent": false,
+      "text": "After a poor night of sleep, I was able to enjoy at least one ordinary experience."
+    },
+    {
+      "id": "DP-037",
+      "category": "interest",
+      "reverse": false,
+      "urgent": false,
+      "text": "When a task required concentration, I found little or no pleasure in things I normally enjoy."
+    },
+    {
+      "id": "DP-038",
+      "category": "interest",
+      "reverse": true,
+      "urgent": false,
+      "text": "While thinking about past mistakes, I felt some interest in activities that usually matter to me."
+    },
+    {
+      "id": "DP-039",
+      "category": "interest",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I looked ahead to the future, Activities I usually value felt uninteresting."
+    },
+    {
+      "id": "DP-040",
+      "category": "interest",
+      "reverse": true,
+      "urgent": false,
+      "text": "When someone offered support, I was able to enjoy at least one ordinary experience."
+    },
+    {
+      "id": "DP-041",
+      "category": "interest",
+      "reverse": false,
+      "urgent": false,
+      "text": "While making a simple choice, I found little or no pleasure in things I normally enjoy."
+    },
+    {
+      "id": "DP-042",
+      "category": "interest",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I needed to care for myself, I felt some interest in activities that usually matter to me."
+    },
+    {
+      "id": "DP-043",
+      "category": "interest",
+      "reverse": false,
+      "urgent": false,
+      "text": "During conversations, Activities I usually value felt uninteresting."
+    },
+    {
+      "id": "DP-044",
+      "category": "interest",
+      "reverse": true,
+      "urgent": false,
+      "text": "When plans changed, I was able to enjoy at least one ordinary experience."
+    },
+    {
+      "id": "DP-045",
+      "category": "interest",
+      "reverse": false,
+      "urgent": false,
+      "text": "After completing a small task, I found little or no pleasure in things I normally enjoy."
+    },
+    {
+      "id": "DP-046",
+      "category": "interest",
+      "reverse": true,
+      "urgent": false,
+      "text": "While following my usual routine, I felt some interest in activities that usually matter to me."
+    },
+    {
+      "id": "DP-047",
+      "category": "interest",
+      "reverse": false,
+      "urgent": false,
+      "text": "When physical discomfort appeared, Activities I usually value felt uninteresting."
+    },
+    {
+      "id": "DP-048",
+      "category": "interest",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I compared myself with others, I was able to enjoy at least one ordinary experience."
+    },
+    {
+      "id": "DP-049",
+      "category": "interest",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I tried to rest, I found little or no pleasure in things I normally enjoy."
+    },
+    {
+      "id": "DP-050",
+      "category": "interest",
+      "reverse": true,
+      "urgent": false,
+      "text": "Even when others could not see how I felt, I felt some interest in activities that usually matter to me."
+    },
+    {
+      "id": "DP-051",
+      "category": "energy",
+      "reverse": true,
+      "urgent": false,
+      "text": "During the past two weeks, I had enough energy for basic daily activities."
+    },
+    {
+      "id": "DP-052",
+      "category": "energy",
+      "reverse": false,
+      "urgent": false,
+      "text": "On most mornings, I felt unusually tired or low in energy."
+    },
+    {
+      "id": "DP-053",
+      "category": "energy",
+      "reverse": true,
+      "urgent": false,
+      "text": "While handling ordinary responsibilities, Rest restored at least part of my energy."
+    },
+    {
+      "id": "DP-054",
+      "category": "energy",
+      "reverse": false,
+      "urgent": false,
+      "text": "After a disappointing event, Even small activities required excessive effort."
+    },
+    {
+      "id": "DP-055",
+      "category": "energy",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I had unstructured time, I had enough energy for basic daily activities."
+    },
+    {
+      "id": "DP-056",
+      "category": "energy",
+      "reverse": false,
+      "urgent": false,
+      "text": "During work or study, I felt unusually tired or low in energy."
+    },
+    {
+      "id": "DP-057",
+      "category": "energy",
+      "reverse": true,
+      "urgent": false,
+      "text": "While spending time alone, Rest restored at least part of my energy."
+    },
+    {
+      "id": "DP-058",
+      "category": "energy",
+      "reverse": false,
+      "urgent": false,
+      "text": "Around people I know, Even small activities required excessive effort."
+    },
+    {
+      "id": "DP-059",
+      "category": "energy",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I considered doing something I usually enjoy, I had enough energy for basic daily activities."
+    },
+    {
+      "id": "DP-060",
+      "category": "energy",
+      "reverse": false,
+      "urgent": false,
+      "text": "Toward the end of the day, I felt unusually tired or low in energy."
+    },
+    {
+      "id": "DP-061",
+      "category": "energy",
+      "reverse": true,
+      "urgent": false,
+      "text": "After a poor night of sleep, Rest restored at least part of my energy."
+    },
+    {
+      "id": "DP-062",
+      "category": "energy",
+      "reverse": false,
+      "urgent": false,
+      "text": "When a task required concentration, Even small activities required excessive effort."
+    },
+    {
+      "id": "DP-063",
+      "category": "energy",
+      "reverse": true,
+      "urgent": false,
+      "text": "While thinking about past mistakes, I had enough energy for basic daily activities."
+    },
+    {
+      "id": "DP-064",
+      "category": "energy",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I looked ahead to the future, I felt unusually tired or low in energy."
+    },
+    {
+      "id": "DP-065",
+      "category": "energy",
+      "reverse": true,
+      "urgent": false,
+      "text": "When someone offered support, Rest restored at least part of my energy."
+    },
+    {
+      "id": "DP-066",
+      "category": "energy",
+      "reverse": false,
+      "urgent": false,
+      "text": "While making a simple choice, Even small activities required excessive effort."
+    },
+    {
+      "id": "DP-067",
+      "category": "energy",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I needed to care for myself, I had enough energy for basic daily activities."
+    },
+    {
+      "id": "DP-068",
+      "category": "energy",
+      "reverse": false,
+      "urgent": false,
+      "text": "During conversations, I felt unusually tired or low in energy."
+    },
+    {
+      "id": "DP-069",
+      "category": "energy",
+      "reverse": true,
+      "urgent": false,
+      "text": "When plans changed, Rest restored at least part of my energy."
+    },
+    {
+      "id": "DP-070",
+      "category": "energy",
+      "reverse": false,
+      "urgent": false,
+      "text": "After completing a small task, Even small activities required excessive effort."
+    },
+    {
+      "id": "DP-071",
+      "category": "energy",
+      "reverse": true,
+      "urgent": false,
+      "text": "While following my usual routine, I had enough energy for basic daily activities."
+    },
+    {
+      "id": "DP-072",
+      "category": "energy",
+      "reverse": false,
+      "urgent": false,
+      "text": "When physical discomfort appeared, I felt unusually tired or low in energy."
+    },
+    {
+      "id": "DP-073",
+      "category": "energy",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I compared myself with others, Rest restored at least part of my energy."
+    },
+    {
+      "id": "DP-074",
+      "category": "energy",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I tried to rest, Even small activities required excessive effort."
+    },
+    {
+      "id": "DP-075",
+      "category": "energy",
+      "reverse": true,
+      "urgent": false,
+      "text": "Even when others could not see how I felt, I had enough energy for basic daily activities."
+    },
+    {
+      "id": "DP-076",
+      "category": "sleep",
+      "reverse": true,
+      "urgent": false,
+      "text": "During the past two weeks, My sleep pattern was reasonably settled."
+    },
+    {
+      "id": "DP-077",
+      "category": "sleep",
+      "reverse": false,
+      "urgent": false,
+      "text": "On most mornings, I had difficulty falling asleep, staying asleep, or sleeping at suitable times."
+    },
+    {
+      "id": "DP-078",
+      "category": "sleep",
+      "reverse": true,
+      "urgent": false,
+      "text": "While handling ordinary responsibilities, I generally woke feeling that I had rested."
+    },
+    {
+      "id": "DP-079",
+      "category": "sleep",
+      "reverse": false,
+      "urgent": false,
+      "text": "After a disappointing event, My sleep changed noticeably from my usual pattern."
+    },
+    {
+      "id": "DP-080",
+      "category": "sleep",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I had unstructured time, My sleep pattern was reasonably settled."
+    },
+    {
+      "id": "DP-081",
+      "category": "sleep",
+      "reverse": false,
+      "urgent": false,
+      "text": "During work or study, I had difficulty falling asleep, staying asleep, or sleeping at suitable times."
+    },
+    {
+      "id": "DP-082",
+      "category": "sleep",
+      "reverse": true,
+      "urgent": false,
+      "text": "While spending time alone, I generally woke feeling that I had rested."
+    },
+    {
+      "id": "DP-083",
+      "category": "sleep",
+      "reverse": false,
+      "urgent": false,
+      "text": "Around people I know, My sleep changed noticeably from my usual pattern."
+    },
+    {
+      "id": "DP-084",
+      "category": "sleep",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I considered doing something I usually enjoy, My sleep pattern was reasonably settled."
+    },
+    {
+      "id": "DP-085",
+      "category": "sleep",
+      "reverse": false,
+      "urgent": false,
+      "text": "Toward the end of the day, I had difficulty falling asleep, staying asleep, or sleeping at suitable times."
+    },
+    {
+      "id": "DP-086",
+      "category": "sleep",
+      "reverse": true,
+      "urgent": false,
+      "text": "After a poor night of sleep, I generally woke feeling that I had rested."
+    },
+    {
+      "id": "DP-087",
+      "category": "sleep",
+      "reverse": false,
+      "urgent": false,
+      "text": "When a task required concentration, My sleep changed noticeably from my usual pattern."
+    },
+    {
+      "id": "DP-088",
+      "category": "sleep",
+      "reverse": true,
+      "urgent": false,
+      "text": "While thinking about past mistakes, My sleep pattern was reasonably settled."
+    },
+    {
+      "id": "DP-089",
+      "category": "sleep",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I looked ahead to the future, I had difficulty falling asleep, staying asleep, or sleeping at suitable times."
+    },
+    {
+      "id": "DP-090",
+      "category": "sleep",
+      "reverse": true,
+      "urgent": false,
+      "text": "When someone offered support, I generally woke feeling that I had rested."
+    },
+    {
+      "id": "DP-091",
+      "category": "sleep",
+      "reverse": false,
+      "urgent": false,
+      "text": "While making a simple choice, My sleep changed noticeably from my usual pattern."
+    },
+    {
+      "id": "DP-092",
+      "category": "sleep",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I needed to care for myself, My sleep pattern was reasonably settled."
+    },
+    {
+      "id": "DP-093",
+      "category": "sleep",
+      "reverse": false,
+      "urgent": false,
+      "text": "During conversations, I had difficulty falling asleep, staying asleep, or sleeping at suitable times."
+    },
+    {
+      "id": "DP-094",
+      "category": "sleep",
+      "reverse": true,
+      "urgent": false,
+      "text": "When plans changed, I generally woke feeling that I had rested."
+    },
+    {
+      "id": "DP-095",
+      "category": "sleep",
+      "reverse": false,
+      "urgent": false,
+      "text": "After completing a small task, My sleep changed noticeably from my usual pattern."
+    },
+    {
+      "id": "DP-096",
+      "category": "sleep",
+      "reverse": true,
+      "urgent": false,
+      "text": "While following my usual routine, My sleep pattern was reasonably settled."
+    },
+    {
+      "id": "DP-097",
+      "category": "sleep",
+      "reverse": false,
+      "urgent": false,
+      "text": "When physical discomfort appeared, I had difficulty falling asleep, staying asleep, or sleeping at suitable times."
+    },
+    {
+      "id": "DP-098",
+      "category": "sleep",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I compared myself with others, I generally woke feeling that I had rested."
+    },
+    {
+      "id": "DP-099",
+      "category": "sleep",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I tried to rest, My sleep changed noticeably from my usual pattern."
+    },
+    {
+      "id": "DP-100",
+      "category": "sleep",
+      "reverse": true,
+      "urgent": false,
+      "text": "Even when others could not see how I felt, My sleep pattern was reasonably settled."
+    },
+    {
+      "id": "DP-101",
+      "category": "appetite",
+      "reverse": true,
+      "urgent": false,
+      "text": "During the past two weeks, My appetite stayed reasonably close to its usual pattern."
+    },
+    {
+      "id": "DP-102",
+      "category": "appetite",
+      "reverse": false,
+      "urgent": false,
+      "text": "On most mornings, My appetite became much lower or higher than usual."
+    },
+    {
+      "id": "DP-103",
+      "category": "appetite",
+      "reverse": true,
+      "urgent": false,
+      "text": "While handling ordinary responsibilities, I was able to eat regular meals that supported my body."
+    },
+    {
+      "id": "DP-104",
+      "category": "appetite",
+      "reverse": false,
+      "urgent": false,
+      "text": "After a disappointing event, Changes in mood disrupted my normal eating pattern."
+    },
+    {
+      "id": "DP-105",
+      "category": "appetite",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I had unstructured time, My appetite stayed reasonably close to its usual pattern."
+    },
+    {
+      "id": "DP-106",
+      "category": "appetite",
+      "reverse": false,
+      "urgent": false,
+      "text": "During work or study, My appetite became much lower or higher than usual."
+    },
+    {
+      "id": "DP-107",
+      "category": "appetite",
+      "reverse": true,
+      "urgent": false,
+      "text": "While spending time alone, I was able to eat regular meals that supported my body."
+    },
+    {
+      "id": "DP-108",
+      "category": "appetite",
+      "reverse": false,
+      "urgent": false,
+      "text": "Around people I know, Changes in mood disrupted my normal eating pattern."
+    },
+    {
+      "id": "DP-109",
+      "category": "appetite",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I considered doing something I usually enjoy, My appetite stayed reasonably close to its usual pattern."
+    },
+    {
+      "id": "DP-110",
+      "category": "appetite",
+      "reverse": false,
+      "urgent": false,
+      "text": "Toward the end of the day, My appetite became much lower or higher than usual."
+    },
+    {
+      "id": "DP-111",
+      "category": "appetite",
+      "reverse": true,
+      "urgent": false,
+      "text": "After a poor night of sleep, I was able to eat regular meals that supported my body."
+    },
+    {
+      "id": "DP-112",
+      "category": "appetite",
+      "reverse": false,
+      "urgent": false,
+      "text": "When a task required concentration, Changes in mood disrupted my normal eating pattern."
+    },
+    {
+      "id": "DP-113",
+      "category": "appetite",
+      "reverse": true,
+      "urgent": false,
+      "text": "While thinking about past mistakes, My appetite stayed reasonably close to its usual pattern."
+    },
+    {
+      "id": "DP-114",
+      "category": "appetite",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I looked ahead to the future, My appetite became much lower or higher than usual."
+    },
+    {
+      "id": "DP-115",
+      "category": "appetite",
+      "reverse": true,
+      "urgent": false,
+      "text": "When someone offered support, I was able to eat regular meals that supported my body."
+    },
+    {
+      "id": "DP-116",
+      "category": "appetite",
+      "reverse": false,
+      "urgent": false,
+      "text": "While making a simple choice, Changes in mood disrupted my normal eating pattern."
+    },
+    {
+      "id": "DP-117",
+      "category": "appetite",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I needed to care for myself, My appetite stayed reasonably close to its usual pattern."
+    },
+    {
+      "id": "DP-118",
+      "category": "appetite",
+      "reverse": false,
+      "urgent": false,
+      "text": "During conversations, My appetite became much lower or higher than usual."
+    },
+    {
+      "id": "DP-119",
+      "category": "appetite",
+      "reverse": true,
+      "urgent": false,
+      "text": "When plans changed, I was able to eat regular meals that supported my body."
+    },
+    {
+      "id": "DP-120",
+      "category": "appetite",
+      "reverse": false,
+      "urgent": false,
+      "text": "After completing a small task, Changes in mood disrupted my normal eating pattern."
+    },
+    {
+      "id": "DP-121",
+      "category": "appetite",
+      "reverse": true,
+      "urgent": false,
+      "text": "While following my usual routine, My appetite stayed reasonably close to its usual pattern."
+    },
+    {
+      "id": "DP-122",
+      "category": "appetite",
+      "reverse": false,
+      "urgent": false,
+      "text": "When physical discomfort appeared, My appetite became much lower or higher than usual."
+    },
+    {
+      "id": "DP-123",
+      "category": "appetite",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I compared myself with others, I was able to eat regular meals that supported my body."
+    },
+    {
+      "id": "DP-124",
+      "category": "appetite",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I tried to rest, Changes in mood disrupted my normal eating pattern."
+    },
+    {
+      "id": "DP-125",
+      "category": "appetite",
+      "reverse": true,
+      "urgent": false,
+      "text": "Even when others could not see how I felt, My appetite stayed reasonably close to its usual pattern."
+    },
+    {
+      "id": "DP-126",
+      "category": "concentration",
+      "reverse": true,
+      "urgent": false,
+      "text": "During the past two weeks, I could focus long enough to complete ordinary tasks."
+    },
+    {
+      "id": "DP-127",
+      "category": "concentration",
+      "reverse": false,
+      "urgent": false,
+      "text": "On most mornings, I struggled to concentrate on reading, conversation, or tasks."
+    },
+    {
+      "id": "DP-128",
+      "category": "concentration",
+      "reverse": true,
+      "urgent": false,
+      "text": "While handling ordinary responsibilities, My memory and attention worked reasonably well."
+    },
+    {
+      "id": "DP-129",
+      "category": "concentration",
+      "reverse": false,
+      "urgent": false,
+      "text": "After a disappointing event, I forgot ordinary details more often than usual."
+    },
+    {
+      "id": "DP-130",
+      "category": "concentration",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I had unstructured time, I could focus long enough to complete ordinary tasks."
+    },
+    {
+      "id": "DP-131",
+      "category": "concentration",
+      "reverse": false,
+      "urgent": false,
+      "text": "During work or study, I struggled to concentrate on reading, conversation, or tasks."
+    },
+    {
+      "id": "DP-132",
+      "category": "concentration",
+      "reverse": true,
+      "urgent": false,
+      "text": "While spending time alone, My memory and attention worked reasonably well."
+    },
+    {
+      "id": "DP-133",
+      "category": "concentration",
+      "reverse": false,
+      "urgent": false,
+      "text": "Around people I know, I forgot ordinary details more often than usual."
+    },
+    {
+      "id": "DP-134",
+      "category": "concentration",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I considered doing something I usually enjoy, I could focus long enough to complete ordinary tasks."
+    },
+    {
+      "id": "DP-135",
+      "category": "concentration",
+      "reverse": false,
+      "urgent": false,
+      "text": "Toward the end of the day, I struggled to concentrate on reading, conversation, or tasks."
+    },
+    {
+      "id": "DP-136",
+      "category": "concentration",
+      "reverse": true,
+      "urgent": false,
+      "text": "After a poor night of sleep, My memory and attention worked reasonably well."
+    },
+    {
+      "id": "DP-137",
+      "category": "concentration",
+      "reverse": false,
+      "urgent": false,
+      "text": "When a task required concentration, I forgot ordinary details more often than usual."
+    },
+    {
+      "id": "DP-138",
+      "category": "concentration",
+      "reverse": true,
+      "urgent": false,
+      "text": "While thinking about past mistakes, I could focus long enough to complete ordinary tasks."
+    },
+    {
+      "id": "DP-139",
+      "category": "concentration",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I looked ahead to the future, I struggled to concentrate on reading, conversation, or tasks."
+    },
+    {
+      "id": "DP-140",
+      "category": "concentration",
+      "reverse": true,
+      "urgent": false,
+      "text": "When someone offered support, My memory and attention worked reasonably well."
+    },
+    {
+      "id": "DP-141",
+      "category": "concentration",
+      "reverse": false,
+      "urgent": false,
+      "text": "While making a simple choice, I forgot ordinary details more often than usual."
+    },
+    {
+      "id": "DP-142",
+      "category": "concentration",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I needed to care for myself, I could focus long enough to complete ordinary tasks."
+    },
+    {
+      "id": "DP-143",
+      "category": "concentration",
+      "reverse": false,
+      "urgent": false,
+      "text": "During conversations, I struggled to concentrate on reading, conversation, or tasks."
+    },
+    {
+      "id": "DP-144",
+      "category": "concentration",
+      "reverse": true,
+      "urgent": false,
+      "text": "When plans changed, My memory and attention worked reasonably well."
+    },
+    {
+      "id": "DP-145",
+      "category": "concentration",
+      "reverse": false,
+      "urgent": false,
+      "text": "After completing a small task, I forgot ordinary details more often than usual."
+    },
+    {
+      "id": "DP-146",
+      "category": "concentration",
+      "reverse": true,
+      "urgent": false,
+      "text": "While following my usual routine, I could focus long enough to complete ordinary tasks."
+    },
+    {
+      "id": "DP-147",
+      "category": "concentration",
+      "reverse": false,
+      "urgent": false,
+      "text": "When physical discomfort appeared, I struggled to concentrate on reading, conversation, or tasks."
+    },
+    {
+      "id": "DP-148",
+      "category": "concentration",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I compared myself with others, My memory and attention worked reasonably well."
+    },
+    {
+      "id": "DP-149",
+      "category": "concentration",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I tried to rest, I forgot ordinary details more often than usual."
+    },
+    {
+      "id": "DP-150",
+      "category": "concentration",
+      "reverse": true,
+      "urgent": false,
+      "text": "Even when others could not see how I felt, I could focus long enough to complete ordinary tasks."
+    },
+    {
+      "id": "DP-151",
+      "category": "self_worth",
+      "reverse": true,
+      "urgent": false,
+      "text": "During the past two weeks, I could remember that I still have value as a person."
+    },
+    {
+      "id": "DP-152",
+      "category": "self_worth",
+      "reverse": false,
+      "urgent": false,
+      "text": "On most mornings, I felt worthless or of little value."
+    },
+    {
+      "id": "DP-153",
+      "category": "self_worth",
+      "reverse": true,
+      "urgent": false,
+      "text": "While handling ordinary responsibilities, My difficulties did not completely define how I saw myself."
+    },
+    {
+      "id": "DP-154",
+      "category": "self_worth",
+      "reverse": false,
+      "urgent": false,
+      "text": "After a disappointing event, I viewed myself as a burden or as less deserving than others."
+    },
+    {
+      "id": "DP-155",
+      "category": "self_worth",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I had unstructured time, I could remember that I still have value as a person."
+    },
+    {
+      "id": "DP-156",
+      "category": "self_worth",
+      "reverse": false,
+      "urgent": false,
+      "text": "During work or study, I felt worthless or of little value."
+    },
+    {
+      "id": "DP-157",
+      "category": "self_worth",
+      "reverse": true,
+      "urgent": false,
+      "text": "While spending time alone, My difficulties did not completely define how I saw myself."
+    },
+    {
+      "id": "DP-158",
+      "category": "self_worth",
+      "reverse": false,
+      "urgent": false,
+      "text": "Around people I know, I viewed myself as a burden or as less deserving than others."
+    },
+    {
+      "id": "DP-159",
+      "category": "self_worth",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I considered doing something I usually enjoy, I could remember that I still have value as a person."
+    },
+    {
+      "id": "DP-160",
+      "category": "self_worth",
+      "reverse": false,
+      "urgent": false,
+      "text": "Toward the end of the day, I felt worthless or of little value."
+    },
+    {
+      "id": "DP-161",
+      "category": "self_worth",
+      "reverse": true,
+      "urgent": false,
+      "text": "After a poor night of sleep, My difficulties did not completely define how I saw myself."
+    },
+    {
+      "id": "DP-162",
+      "category": "self_worth",
+      "reverse": false,
+      "urgent": false,
+      "text": "When a task required concentration, I viewed myself as a burden or as less deserving than others."
+    },
+    {
+      "id": "DP-163",
+      "category": "self_worth",
+      "reverse": true,
+      "urgent": false,
+      "text": "While thinking about past mistakes, I could remember that I still have value as a person."
+    },
+    {
+      "id": "DP-164",
+      "category": "self_worth",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I looked ahead to the future, I felt worthless or of little value."
+    },
+    {
+      "id": "DP-165",
+      "category": "self_worth",
+      "reverse": true,
+      "urgent": false,
+      "text": "When someone offered support, My difficulties did not completely define how I saw myself."
+    },
+    {
+      "id": "DP-166",
+      "category": "self_worth",
+      "reverse": false,
+      "urgent": false,
+      "text": "While making a simple choice, I viewed myself as a burden or as less deserving than others."
+    },
+    {
+      "id": "DP-167",
+      "category": "self_worth",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I needed to care for myself, I could remember that I still have value as a person."
+    },
+    {
+      "id": "DP-168",
+      "category": "self_worth",
+      "reverse": false,
+      "urgent": false,
+      "text": "During conversations, I felt worthless or of little value."
+    },
+    {
+      "id": "DP-169",
+      "category": "self_worth",
+      "reverse": true,
+      "urgent": false,
+      "text": "When plans changed, My difficulties did not completely define how I saw myself."
+    },
+    {
+      "id": "DP-170",
+      "category": "self_worth",
+      "reverse": false,
+      "urgent": false,
+      "text": "After completing a small task, I viewed myself as a burden or as less deserving than others."
+    },
+    {
+      "id": "DP-171",
+      "category": "self_worth",
+      "reverse": true,
+      "urgent": false,
+      "text": "While following my usual routine, I could remember that I still have value as a person."
+    },
+    {
+      "id": "DP-172",
+      "category": "self_worth",
+      "reverse": false,
+      "urgent": false,
+      "text": "When physical discomfort appeared, I felt worthless or of little value."
+    },
+    {
+      "id": "DP-173",
+      "category": "self_worth",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I compared myself with others, My difficulties did not completely define how I saw myself."
+    },
+    {
+      "id": "DP-174",
+      "category": "self_worth",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I tried to rest, I viewed myself as a burden or as less deserving than others."
+    },
+    {
+      "id": "DP-175",
+      "category": "self_worth",
+      "reverse": true,
+      "urgent": false,
+      "text": "Even when others could not see how I felt, I could remember that I still have value as a person."
+    },
+    {
+      "id": "DP-176",
+      "category": "guilt",
+      "reverse": true,
+      "urgent": false,
+      "text": "During the past two weeks, I could judge my mistakes in a fair and proportionate way."
+    },
+    {
+      "id": "DP-177",
+      "category": "guilt",
+      "reverse": false,
+      "urgent": false,
+      "text": "On most mornings, I blamed myself excessively for things that went wrong."
+    },
+    {
+      "id": "DP-178",
+      "category": "guilt",
+      "reverse": true,
+      "urgent": false,
+      "text": "While handling ordinary responsibilities, I distinguished genuine responsibility from excessive self-blame."
+    },
+    {
+      "id": "DP-179",
+      "category": "guilt",
+      "reverse": false,
+      "urgent": false,
+      "text": "After a disappointing event, Guilt remained intense even when I was not fully responsible."
+    },
+    {
+      "id": "DP-180",
+      "category": "guilt",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I had unstructured time, I could judge my mistakes in a fair and proportionate way."
+    },
+    {
+      "id": "DP-181",
+      "category": "guilt",
+      "reverse": false,
+      "urgent": false,
+      "text": "During work or study, I blamed myself excessively for things that went wrong."
+    },
+    {
+      "id": "DP-182",
+      "category": "guilt",
+      "reverse": true,
+      "urgent": false,
+      "text": "While spending time alone, I distinguished genuine responsibility from excessive self-blame."
+    },
+    {
+      "id": "DP-183",
+      "category": "guilt",
+      "reverse": false,
+      "urgent": false,
+      "text": "Around people I know, Guilt remained intense even when I was not fully responsible."
+    },
+    {
+      "id": "DP-184",
+      "category": "guilt",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I considered doing something I usually enjoy, I could judge my mistakes in a fair and proportionate way."
+    },
+    {
+      "id": "DP-185",
+      "category": "guilt",
+      "reverse": false,
+      "urgent": false,
+      "text": "Toward the end of the day, I blamed myself excessively for things that went wrong."
+    },
+    {
+      "id": "DP-186",
+      "category": "guilt",
+      "reverse": true,
+      "urgent": false,
+      "text": "After a poor night of sleep, I distinguished genuine responsibility from excessive self-blame."
+    },
+    {
+      "id": "DP-187",
+      "category": "guilt",
+      "reverse": false,
+      "urgent": false,
+      "text": "When a task required concentration, Guilt remained intense even when I was not fully responsible."
+    },
+    {
+      "id": "DP-188",
+      "category": "guilt",
+      "reverse": true,
+      "urgent": false,
+      "text": "While thinking about past mistakes, I could judge my mistakes in a fair and proportionate way."
+    },
+    {
+      "id": "DP-189",
+      "category": "guilt",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I looked ahead to the future, I blamed myself excessively for things that went wrong."
+    },
+    {
+      "id": "DP-190",
+      "category": "guilt",
+      "reverse": true,
+      "urgent": false,
+      "text": "When someone offered support, I distinguished genuine responsibility from excessive self-blame."
+    },
+    {
+      "id": "DP-191",
+      "category": "guilt",
+      "reverse": false,
+      "urgent": false,
+      "text": "While making a simple choice, Guilt remained intense even when I was not fully responsible."
+    },
+    {
+      "id": "DP-192",
+      "category": "guilt",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I needed to care for myself, I could judge my mistakes in a fair and proportionate way."
+    },
+    {
+      "id": "DP-193",
+      "category": "guilt",
+      "reverse": false,
+      "urgent": false,
+      "text": "During conversations, I blamed myself excessively for things that went wrong."
+    },
+    {
+      "id": "DP-194",
+      "category": "guilt",
+      "reverse": true,
+      "urgent": false,
+      "text": "When plans changed, I distinguished genuine responsibility from excessive self-blame."
+    },
+    {
+      "id": "DP-195",
+      "category": "guilt",
+      "reverse": false,
+      "urgent": false,
+      "text": "After completing a small task, Guilt remained intense even when I was not fully responsible."
+    },
+    {
+      "id": "DP-196",
+      "category": "guilt",
+      "reverse": true,
+      "urgent": false,
+      "text": "While following my usual routine, I could judge my mistakes in a fair and proportionate way."
+    },
+    {
+      "id": "DP-197",
+      "category": "guilt",
+      "reverse": false,
+      "urgent": false,
+      "text": "When physical discomfort appeared, I blamed myself excessively for things that went wrong."
+    },
+    {
+      "id": "DP-198",
+      "category": "guilt",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I compared myself with others, I distinguished genuine responsibility from excessive self-blame."
+    },
+    {
+      "id": "DP-199",
+      "category": "guilt",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I tried to rest, Guilt remained intense even when I was not fully responsible."
+    },
+    {
+      "id": "DP-200",
+      "category": "guilt",
+      "reverse": true,
+      "urgent": false,
+      "text": "Even when others could not see how I felt, I could judge my mistakes in a fair and proportionate way."
+    },
+    {
+      "id": "DP-201",
+      "category": "hopelessness",
+      "reverse": true,
+      "urgent": false,
+      "text": "During the past two weeks, I could imagine that at least some things may improve."
+    },
+    {
+      "id": "DP-202",
+      "category": "hopelessness",
+      "reverse": false,
+      "urgent": false,
+      "text": "On most mornings, The future felt hopeless or empty."
+    },
+    {
+      "id": "DP-203",
+      "category": "hopelessness",
+      "reverse": true,
+      "urgent": false,
+      "text": "While handling ordinary responsibilities, The future contained something I could move toward."
+    },
+    {
+      "id": "DP-204",
+      "category": "hopelessness",
+      "reverse": false,
+      "urgent": false,
+      "text": "After a disappointing event, I found it difficult to imagine circumstances getting better."
+    },
+    {
+      "id": "DP-205",
+      "category": "hopelessness",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I had unstructured time, I could imagine that at least some things may improve."
+    },
+    {
+      "id": "DP-206",
+      "category": "hopelessness",
+      "reverse": false,
+      "urgent": false,
+      "text": "During work or study, The future felt hopeless or empty."
+    },
+    {
+      "id": "DP-207",
+      "category": "hopelessness",
+      "reverse": true,
+      "urgent": false,
+      "text": "While spending time alone, The future contained something I could move toward."
+    },
+    {
+      "id": "DP-208",
+      "category": "hopelessness",
+      "reverse": false,
+      "urgent": false,
+      "text": "Around people I know, I found it difficult to imagine circumstances getting better."
+    },
+    {
+      "id": "DP-209",
+      "category": "hopelessness",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I considered doing something I usually enjoy, I could imagine that at least some things may improve."
+    },
+    {
+      "id": "DP-210",
+      "category": "hopelessness",
+      "reverse": false,
+      "urgent": false,
+      "text": "Toward the end of the day, The future felt hopeless or empty."
+    },
+    {
+      "id": "DP-211",
+      "category": "hopelessness",
+      "reverse": true,
+      "urgent": false,
+      "text": "After a poor night of sleep, The future contained something I could move toward."
+    },
+    {
+      "id": "DP-212",
+      "category": "hopelessness",
+      "reverse": false,
+      "urgent": false,
+      "text": "When a task required concentration, I found it difficult to imagine circumstances getting better."
+    },
+    {
+      "id": "DP-213",
+      "category": "hopelessness",
+      "reverse": true,
+      "urgent": false,
+      "text": "While thinking about past mistakes, I could imagine that at least some things may improve."
+    },
+    {
+      "id": "DP-214",
+      "category": "hopelessness",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I looked ahead to the future, The future felt hopeless or empty."
+    },
+    {
+      "id": "DP-215",
+      "category": "hopelessness",
+      "reverse": true,
+      "urgent": false,
+      "text": "When someone offered support, The future contained something I could move toward."
+    },
+    {
+      "id": "DP-216",
+      "category": "hopelessness",
+      "reverse": false,
+      "urgent": false,
+      "text": "While making a simple choice, I found it difficult to imagine circumstances getting better."
+    },
+    {
+      "id": "DP-217",
+      "category": "hopelessness",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I needed to care for myself, I could imagine that at least some things may improve."
+    },
+    {
+      "id": "DP-218",
+      "category": "hopelessness",
+      "reverse": false,
+      "urgent": false,
+      "text": "During conversations, The future felt hopeless or empty."
+    },
+    {
+      "id": "DP-219",
+      "category": "hopelessness",
+      "reverse": true,
+      "urgent": false,
+      "text": "When plans changed, The future contained something I could move toward."
+    },
+    {
+      "id": "DP-220",
+      "category": "hopelessness",
+      "reverse": false,
+      "urgent": false,
+      "text": "After completing a small task, I found it difficult to imagine circumstances getting better."
+    },
+    {
+      "id": "DP-221",
+      "category": "hopelessness",
+      "reverse": true,
+      "urgent": false,
+      "text": "While following my usual routine, I could imagine that at least some things may improve."
+    },
+    {
+      "id": "DP-222",
+      "category": "hopelessness",
+      "reverse": false,
+      "urgent": false,
+      "text": "When physical discomfort appeared, The future felt hopeless or empty."
+    },
+    {
+      "id": "DP-223",
+      "category": "hopelessness",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I compared myself with others, The future contained something I could move toward."
+    },
+    {
+      "id": "DP-224",
+      "category": "hopelessness",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I tried to rest, I found it difficult to imagine circumstances getting better."
+    },
+    {
+      "id": "DP-225",
+      "category": "hopelessness",
+      "reverse": true,
+      "urgent": false,
+      "text": "Even when others could not see how I felt, I could imagine that at least some things may improve."
+    },
+    {
+      "id": "DP-226",
+      "category": "motivation",
+      "reverse": true,
+      "urgent": false,
+      "text": "During the past two weeks, I could begin at least some necessary tasks."
+    },
+    {
+      "id": "DP-227",
+      "category": "motivation",
+      "reverse": false,
+      "urgent": false,
+      "text": "On most mornings, Starting even important tasks felt extremely difficult."
+    },
+    {
+      "id": "DP-228",
+      "category": "motivation",
+      "reverse": true,
+      "urgent": false,
+      "text": "While handling ordinary responsibilities, I felt some drive to take a useful next step."
+    },
+    {
+      "id": "DP-229",
+      "category": "motivation",
+      "reverse": false,
+      "urgent": false,
+      "text": "After a disappointing event, I waited for motivation that rarely arrived."
+    },
+    {
+      "id": "DP-230",
+      "category": "motivation",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I had unstructured time, I could begin at least some necessary tasks."
+    },
+    {
+      "id": "DP-231",
+      "category": "motivation",
+      "reverse": false,
+      "urgent": false,
+      "text": "During work or study, Starting even important tasks felt extremely difficult."
+    },
+    {
+      "id": "DP-232",
+      "category": "motivation",
+      "reverse": true,
+      "urgent": false,
+      "text": "While spending time alone, I felt some drive to take a useful next step."
+    },
+    {
+      "id": "DP-233",
+      "category": "motivation",
+      "reverse": false,
+      "urgent": false,
+      "text": "Around people I know, I waited for motivation that rarely arrived."
+    },
+    {
+      "id": "DP-234",
+      "category": "motivation",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I considered doing something I usually enjoy, I could begin at least some necessary tasks."
+    },
+    {
+      "id": "DP-235",
+      "category": "motivation",
+      "reverse": false,
+      "urgent": false,
+      "text": "Toward the end of the day, Starting even important tasks felt extremely difficult."
+    },
+    {
+      "id": "DP-236",
+      "category": "motivation",
+      "reverse": true,
+      "urgent": false,
+      "text": "After a poor night of sleep, I felt some drive to take a useful next step."
+    },
+    {
+      "id": "DP-237",
+      "category": "motivation",
+      "reverse": false,
+      "urgent": false,
+      "text": "When a task required concentration, I waited for motivation that rarely arrived."
+    },
+    {
+      "id": "DP-238",
+      "category": "motivation",
+      "reverse": true,
+      "urgent": false,
+      "text": "While thinking about past mistakes, I could begin at least some necessary tasks."
+    },
+    {
+      "id": "DP-239",
+      "category": "motivation",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I looked ahead to the future, Starting even important tasks felt extremely difficult."
+    },
+    {
+      "id": "DP-240",
+      "category": "motivation",
+      "reverse": true,
+      "urgent": false,
+      "text": "When someone offered support, I felt some drive to take a useful next step."
+    },
+    {
+      "id": "DP-241",
+      "category": "motivation",
+      "reverse": false,
+      "urgent": false,
+      "text": "While making a simple choice, I waited for motivation that rarely arrived."
+    },
+    {
+      "id": "DP-242",
+      "category": "motivation",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I needed to care for myself, I could begin at least some necessary tasks."
+    },
+    {
+      "id": "DP-243",
+      "category": "motivation",
+      "reverse": false,
+      "urgent": false,
+      "text": "During conversations, Starting even important tasks felt extremely difficult."
+    },
+    {
+      "id": "DP-244",
+      "category": "motivation",
+      "reverse": true,
+      "urgent": false,
+      "text": "When plans changed, I felt some drive to take a useful next step."
+    },
+    {
+      "id": "DP-245",
+      "category": "motivation",
+      "reverse": false,
+      "urgent": false,
+      "text": "After completing a small task, I waited for motivation that rarely arrived."
+    },
+    {
+      "id": "DP-246",
+      "category": "motivation",
+      "reverse": true,
+      "urgent": false,
+      "text": "While following my usual routine, I could begin at least some necessary tasks."
+    },
+    {
+      "id": "DP-247",
+      "category": "motivation",
+      "reverse": false,
+      "urgent": false,
+      "text": "When physical discomfort appeared, Starting even important tasks felt extremely difficult."
+    },
+    {
+      "id": "DP-248",
+      "category": "motivation",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I compared myself with others, I felt some drive to take a useful next step."
+    },
+    {
+      "id": "DP-249",
+      "category": "motivation",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I tried to rest, I waited for motivation that rarely arrived."
+    },
+    {
+      "id": "DP-250",
+      "category": "motivation",
+      "reverse": true,
+      "urgent": false,
+      "text": "Even when others could not see how I felt, I could begin at least some necessary tasks."
+    },
+    {
+      "id": "DP-251",
+      "category": "decisions",
+      "reverse": true,
+      "urgent": false,
+      "text": "During the past two weeks, I could make ordinary decisions without becoming stuck."
+    },
+    {
+      "id": "DP-252",
+      "category": "decisions",
+      "reverse": false,
+      "urgent": false,
+      "text": "On most mornings, Simple choices felt unusually difficult or overwhelming."
+    },
+    {
+      "id": "DP-253",
+      "category": "decisions",
+      "reverse": true,
+      "urgent": false,
+      "text": "While handling ordinary responsibilities, I was able to compare options with reasonable clarity."
+    },
+    {
+      "id": "DP-254",
+      "category": "decisions",
+      "reverse": false,
+      "urgent": false,
+      "text": "After a disappointing event, I delayed decisions because my thinking felt blocked."
+    },
+    {
+      "id": "DP-255",
+      "category": "decisions",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I had unstructured time, I could make ordinary decisions without becoming stuck."
+    },
+    {
+      "id": "DP-256",
+      "category": "decisions",
+      "reverse": false,
+      "urgent": false,
+      "text": "During work or study, Simple choices felt unusually difficult or overwhelming."
+    },
+    {
+      "id": "DP-257",
+      "category": "decisions",
+      "reverse": true,
+      "urgent": false,
+      "text": "While spending time alone, I was able to compare options with reasonable clarity."
+    },
+    {
+      "id": "DP-258",
+      "category": "decisions",
+      "reverse": false,
+      "urgent": false,
+      "text": "Around people I know, I delayed decisions because my thinking felt blocked."
+    },
+    {
+      "id": "DP-259",
+      "category": "decisions",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I considered doing something I usually enjoy, I could make ordinary decisions without becoming stuck."
+    },
+    {
+      "id": "DP-260",
+      "category": "decisions",
+      "reverse": false,
+      "urgent": false,
+      "text": "Toward the end of the day, Simple choices felt unusually difficult or overwhelming."
+    },
+    {
+      "id": "DP-261",
+      "category": "decisions",
+      "reverse": true,
+      "urgent": false,
+      "text": "After a poor night of sleep, I was able to compare options with reasonable clarity."
+    },
+    {
+      "id": "DP-262",
+      "category": "decisions",
+      "reverse": false,
+      "urgent": false,
+      "text": "When a task required concentration, I delayed decisions because my thinking felt blocked."
+    },
+    {
+      "id": "DP-263",
+      "category": "decisions",
+      "reverse": true,
+      "urgent": false,
+      "text": "While thinking about past mistakes, I could make ordinary decisions without becoming stuck."
+    },
+    {
+      "id": "DP-264",
+      "category": "decisions",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I looked ahead to the future, Simple choices felt unusually difficult or overwhelming."
+    },
+    {
+      "id": "DP-265",
+      "category": "decisions",
+      "reverse": true,
+      "urgent": false,
+      "text": "When someone offered support, I was able to compare options with reasonable clarity."
+    },
+    {
+      "id": "DP-266",
+      "category": "decisions",
+      "reverse": false,
+      "urgent": false,
+      "text": "While making a simple choice, I delayed decisions because my thinking felt blocked."
+    },
+    {
+      "id": "DP-267",
+      "category": "decisions",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I needed to care for myself, I could make ordinary decisions without becoming stuck."
+    },
+    {
+      "id": "DP-268",
+      "category": "decisions",
+      "reverse": false,
+      "urgent": false,
+      "text": "During conversations, Simple choices felt unusually difficult or overwhelming."
+    },
+    {
+      "id": "DP-269",
+      "category": "decisions",
+      "reverse": true,
+      "urgent": false,
+      "text": "When plans changed, I was able to compare options with reasonable clarity."
+    },
+    {
+      "id": "DP-270",
+      "category": "decisions",
+      "reverse": false,
+      "urgent": false,
+      "text": "After completing a small task, I delayed decisions because my thinking felt blocked."
+    },
+    {
+      "id": "DP-271",
+      "category": "decisions",
+      "reverse": true,
+      "urgent": false,
+      "text": "While following my usual routine, I could make ordinary decisions without becoming stuck."
+    },
+    {
+      "id": "DP-272",
+      "category": "decisions",
+      "reverse": false,
+      "urgent": false,
+      "text": "When physical discomfort appeared, Simple choices felt unusually difficult or overwhelming."
+    },
+    {
+      "id": "DP-273",
+      "category": "decisions",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I compared myself with others, I was able to compare options with reasonable clarity."
+    },
+    {
+      "id": "DP-274",
+      "category": "decisions",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I tried to rest, I delayed decisions because my thinking felt blocked."
+    },
+    {
+      "id": "DP-275",
+      "category": "decisions",
+      "reverse": true,
+      "urgent": false,
+      "text": "Even when others could not see how I felt, I could make ordinary decisions without becoming stuck."
+    },
+    {
+      "id": "DP-276",
+      "category": "movement",
+      "reverse": true,
+      "urgent": false,
+      "text": "During the past two weeks, My pace of movement and speech felt close to usual."
+    },
+    {
+      "id": "DP-277",
+      "category": "movement",
+      "reverse": false,
+      "urgent": false,
+      "text": "On most mornings, I moved or spoke noticeably more slowly than usual."
+    },
+    {
+      "id": "DP-278",
+      "category": "movement",
+      "reverse": true,
+      "urgent": false,
+      "text": "While handling ordinary responsibilities, I could sit or move without marked agitation."
+    },
+    {
+      "id": "DP-279",
+      "category": "movement",
+      "reverse": false,
+      "urgent": false,
+      "text": "After a disappointing event, I felt physically restless and unable to settle."
+    },
+    {
+      "id": "DP-280",
+      "category": "movement",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I had unstructured time, My pace of movement and speech felt close to usual."
+    },
+    {
+      "id": "DP-281",
+      "category": "movement",
+      "reverse": false,
+      "urgent": false,
+      "text": "During work or study, I moved or spoke noticeably more slowly than usual."
+    },
+    {
+      "id": "DP-282",
+      "category": "movement",
+      "reverse": true,
+      "urgent": false,
+      "text": "While spending time alone, I could sit or move without marked agitation."
+    },
+    {
+      "id": "DP-283",
+      "category": "movement",
+      "reverse": false,
+      "urgent": false,
+      "text": "Around people I know, I felt physically restless and unable to settle."
+    },
+    {
+      "id": "DP-284",
+      "category": "movement",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I considered doing something I usually enjoy, My pace of movement and speech felt close to usual."
+    },
+    {
+      "id": "DP-285",
+      "category": "movement",
+      "reverse": false,
+      "urgent": false,
+      "text": "Toward the end of the day, I moved or spoke noticeably more slowly than usual."
+    },
+    {
+      "id": "DP-286",
+      "category": "movement",
+      "reverse": true,
+      "urgent": false,
+      "text": "After a poor night of sleep, I could sit or move without marked agitation."
+    },
+    {
+      "id": "DP-287",
+      "category": "movement",
+      "reverse": false,
+      "urgent": false,
+      "text": "When a task required concentration, I felt physically restless and unable to settle."
+    },
+    {
+      "id": "DP-288",
+      "category": "movement",
+      "reverse": true,
+      "urgent": false,
+      "text": "While thinking about past mistakes, My pace of movement and speech felt close to usual."
+    },
+    {
+      "id": "DP-289",
+      "category": "movement",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I looked ahead to the future, I moved or spoke noticeably more slowly than usual."
+    },
+    {
+      "id": "DP-290",
+      "category": "movement",
+      "reverse": true,
+      "urgent": false,
+      "text": "When someone offered support, I could sit or move without marked agitation."
+    },
+    {
+      "id": "DP-291",
+      "category": "movement",
+      "reverse": false,
+      "urgent": false,
+      "text": "While making a simple choice, I felt physically restless and unable to settle."
+    },
+    {
+      "id": "DP-292",
+      "category": "movement",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I needed to care for myself, My pace of movement and speech felt close to usual."
+    },
+    {
+      "id": "DP-293",
+      "category": "movement",
+      "reverse": false,
+      "urgent": false,
+      "text": "During conversations, I moved or spoke noticeably more slowly than usual."
+    },
+    {
+      "id": "DP-294",
+      "category": "movement",
+      "reverse": true,
+      "urgent": false,
+      "text": "When plans changed, I could sit or move without marked agitation."
+    },
+    {
+      "id": "DP-295",
+      "category": "movement",
+      "reverse": false,
+      "urgent": false,
+      "text": "After completing a small task, I felt physically restless and unable to settle."
+    },
+    {
+      "id": "DP-296",
+      "category": "movement",
+      "reverse": true,
+      "urgent": false,
+      "text": "While following my usual routine, My pace of movement and speech felt close to usual."
+    },
+    {
+      "id": "DP-297",
+      "category": "movement",
+      "reverse": false,
+      "urgent": false,
+      "text": "When physical discomfort appeared, I moved or spoke noticeably more slowly than usual."
+    },
+    {
+      "id": "DP-298",
+      "category": "movement",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I compared myself with others, I could sit or move without marked agitation."
+    },
+    {
+      "id": "DP-299",
+      "category": "movement",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I tried to rest, I felt physically restless and unable to settle."
+    },
+    {
+      "id": "DP-300",
+      "category": "movement",
+      "reverse": true,
+      "urgent": false,
+      "text": "Even when others could not see how I felt, My pace of movement and speech felt close to usual."
+    },
+    {
+      "id": "DP-301",
+      "category": "irritability",
+      "reverse": true,
+      "urgent": false,
+      "text": "During the past two weeks, I managed frustration without it controlling my interactions."
+    },
+    {
+      "id": "DP-302",
+      "category": "irritability",
+      "reverse": false,
+      "urgent": false,
+      "text": "On most mornings, I felt unusually irritable or easily frustrated."
+    },
+    {
+      "id": "DP-303",
+      "category": "irritability",
+      "reverse": true,
+      "urgent": false,
+      "text": "While handling ordinary responsibilities, I could pause before reacting when irritated."
+    },
+    {
+      "id": "DP-304",
+      "category": "irritability",
+      "reverse": false,
+      "urgent": false,
+      "text": "After a disappointing event, Small difficulties triggered stronger anger than usual."
+    },
+    {
+      "id": "DP-305",
+      "category": "irritability",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I had unstructured time, I managed frustration without it controlling my interactions."
+    },
+    {
+      "id": "DP-306",
+      "category": "irritability",
+      "reverse": false,
+      "urgent": false,
+      "text": "During work or study, I felt unusually irritable or easily frustrated."
+    },
+    {
+      "id": "DP-307",
+      "category": "irritability",
+      "reverse": true,
+      "urgent": false,
+      "text": "While spending time alone, I could pause before reacting when irritated."
+    },
+    {
+      "id": "DP-308",
+      "category": "irritability",
+      "reverse": false,
+      "urgent": false,
+      "text": "Around people I know, Small difficulties triggered stronger anger than usual."
+    },
+    {
+      "id": "DP-309",
+      "category": "irritability",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I considered doing something I usually enjoy, I managed frustration without it controlling my interactions."
+    },
+    {
+      "id": "DP-310",
+      "category": "irritability",
+      "reverse": false,
+      "urgent": false,
+      "text": "Toward the end of the day, I felt unusually irritable or easily frustrated."
+    },
+    {
+      "id": "DP-311",
+      "category": "irritability",
+      "reverse": true,
+      "urgent": false,
+      "text": "After a poor night of sleep, I could pause before reacting when irritated."
+    },
+    {
+      "id": "DP-312",
+      "category": "irritability",
+      "reverse": false,
+      "urgent": false,
+      "text": "When a task required concentration, Small difficulties triggered stronger anger than usual."
+    },
+    {
+      "id": "DP-313",
+      "category": "irritability",
+      "reverse": true,
+      "urgent": false,
+      "text": "While thinking about past mistakes, I managed frustration without it controlling my interactions."
+    },
+    {
+      "id": "DP-314",
+      "category": "irritability",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I looked ahead to the future, I felt unusually irritable or easily frustrated."
+    },
+    {
+      "id": "DP-315",
+      "category": "irritability",
+      "reverse": true,
+      "urgent": false,
+      "text": "When someone offered support, I could pause before reacting when irritated."
+    },
+    {
+      "id": "DP-316",
+      "category": "irritability",
+      "reverse": false,
+      "urgent": false,
+      "text": "While making a simple choice, Small difficulties triggered stronger anger than usual."
+    },
+    {
+      "id": "DP-317",
+      "category": "irritability",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I needed to care for myself, I managed frustration without it controlling my interactions."
+    },
+    {
+      "id": "DP-318",
+      "category": "irritability",
+      "reverse": false,
+      "urgent": false,
+      "text": "During conversations, I felt unusually irritable or easily frustrated."
+    },
+    {
+      "id": "DP-319",
+      "category": "irritability",
+      "reverse": true,
+      "urgent": false,
+      "text": "When plans changed, I could pause before reacting when irritated."
+    },
+    {
+      "id": "DP-320",
+      "category": "irritability",
+      "reverse": false,
+      "urgent": false,
+      "text": "After completing a small task, Small difficulties triggered stronger anger than usual."
+    },
+    {
+      "id": "DP-321",
+      "category": "irritability",
+      "reverse": true,
+      "urgent": false,
+      "text": "While following my usual routine, I managed frustration without it controlling my interactions."
+    },
+    {
+      "id": "DP-322",
+      "category": "irritability",
+      "reverse": false,
+      "urgent": false,
+      "text": "When physical discomfort appeared, I felt unusually irritable or easily frustrated."
+    },
+    {
+      "id": "DP-323",
+      "category": "irritability",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I compared myself with others, I could pause before reacting when irritated."
+    },
+    {
+      "id": "DP-324",
+      "category": "irritability",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I tried to rest, Small difficulties triggered stronger anger than usual."
+    },
+    {
+      "id": "DP-325",
+      "category": "irritability",
+      "reverse": true,
+      "urgent": false,
+      "text": "Even when others could not see how I felt, I managed frustration without it controlling my interactions."
+    },
+    {
+      "id": "DP-326",
+      "category": "withdrawal",
+      "reverse": true,
+      "urgent": false,
+      "text": "During the past two weeks, I stayed connected with at least one supportive person."
+    },
+    {
+      "id": "DP-327",
+      "category": "withdrawal",
+      "reverse": false,
+      "urgent": false,
+      "text": "On most mornings, I avoided people even when support might have helped."
+    },
+    {
+      "id": "DP-328",
+      "category": "withdrawal",
+      "reverse": true,
+      "urgent": false,
+      "text": "While handling ordinary responsibilities, I could tolerate some social contact without completely withdrawing."
+    },
+    {
+      "id": "DP-329",
+      "category": "withdrawal",
+      "reverse": false,
+      "urgent": false,
+      "text": "After a disappointing event, I pulled away from relationships that usually matter to me."
+    },
+    {
+      "id": "DP-330",
+      "category": "withdrawal",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I had unstructured time, I stayed connected with at least one supportive person."
+    },
+    {
+      "id": "DP-331",
+      "category": "withdrawal",
+      "reverse": false,
+      "urgent": false,
+      "text": "During work or study, I avoided people even when support might have helped."
+    },
+    {
+      "id": "DP-332",
+      "category": "withdrawal",
+      "reverse": true,
+      "urgent": false,
+      "text": "While spending time alone, I could tolerate some social contact without completely withdrawing."
+    },
+    {
+      "id": "DP-333",
+      "category": "withdrawal",
+      "reverse": false,
+      "urgent": false,
+      "text": "Around people I know, I pulled away from relationships that usually matter to me."
+    },
+    {
+      "id": "DP-334",
+      "category": "withdrawal",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I considered doing something I usually enjoy, I stayed connected with at least one supportive person."
+    },
+    {
+      "id": "DP-335",
+      "category": "withdrawal",
+      "reverse": false,
+      "urgent": false,
+      "text": "Toward the end of the day, I avoided people even when support might have helped."
+    },
+    {
+      "id": "DP-336",
+      "category": "withdrawal",
+      "reverse": true,
+      "urgent": false,
+      "text": "After a poor night of sleep, I could tolerate some social contact without completely withdrawing."
+    },
+    {
+      "id": "DP-337",
+      "category": "withdrawal",
+      "reverse": false,
+      "urgent": false,
+      "text": "When a task required concentration, I pulled away from relationships that usually matter to me."
+    },
+    {
+      "id": "DP-338",
+      "category": "withdrawal",
+      "reverse": true,
+      "urgent": false,
+      "text": "While thinking about past mistakes, I stayed connected with at least one supportive person."
+    },
+    {
+      "id": "DP-339",
+      "category": "withdrawal",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I looked ahead to the future, I avoided people even when support might have helped."
+    },
+    {
+      "id": "DP-340",
+      "category": "withdrawal",
+      "reverse": true,
+      "urgent": false,
+      "text": "When someone offered support, I could tolerate some social contact without completely withdrawing."
+    },
+    {
+      "id": "DP-341",
+      "category": "withdrawal",
+      "reverse": false,
+      "urgent": false,
+      "text": "While making a simple choice, I pulled away from relationships that usually matter to me."
+    },
+    {
+      "id": "DP-342",
+      "category": "withdrawal",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I needed to care for myself, I stayed connected with at least one supportive person."
+    },
+    {
+      "id": "DP-343",
+      "category": "withdrawal",
+      "reverse": false,
+      "urgent": false,
+      "text": "During conversations, I avoided people even when support might have helped."
+    },
+    {
+      "id": "DP-344",
+      "category": "withdrawal",
+      "reverse": true,
+      "urgent": false,
+      "text": "When plans changed, I could tolerate some social contact without completely withdrawing."
+    },
+    {
+      "id": "DP-345",
+      "category": "withdrawal",
+      "reverse": false,
+      "urgent": false,
+      "text": "After completing a small task, I pulled away from relationships that usually matter to me."
+    },
+    {
+      "id": "DP-346",
+      "category": "withdrawal",
+      "reverse": true,
+      "urgent": false,
+      "text": "While following my usual routine, I stayed connected with at least one supportive person."
+    },
+    {
+      "id": "DP-347",
+      "category": "withdrawal",
+      "reverse": false,
+      "urgent": false,
+      "text": "When physical discomfort appeared, I avoided people even when support might have helped."
+    },
+    {
+      "id": "DP-348",
+      "category": "withdrawal",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I compared myself with others, I could tolerate some social contact without completely withdrawing."
+    },
+    {
+      "id": "DP-349",
+      "category": "withdrawal",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I tried to rest, I pulled away from relationships that usually matter to me."
+    },
+    {
+      "id": "DP-350",
+      "category": "withdrawal",
+      "reverse": true,
+      "urgent": false,
+      "text": "Even when others could not see how I felt, I stayed connected with at least one supportive person."
+    },
+    {
+      "id": "DP-351",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "During the past two weeks, I managed essential responsibilities with reasonable consistency."
+    },
+    {
+      "id": "DP-352",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "On most mornings, My mood interfered with work, study, home, or personal responsibilities."
+    },
+    {
+      "id": "DP-353",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "While handling ordinary responsibilities, My routine provided enough structure to complete basic tasks."
+    },
+    {
+      "id": "DP-354",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "After a disappointing event, Ordinary responsibilities became difficult to maintain."
+    },
+    {
+      "id": "DP-355",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I had unstructured time, I managed essential responsibilities with reasonable consistency."
+    },
+    {
+      "id": "DP-356",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "During work or study, My mood interfered with work, study, home, or personal responsibilities."
+    },
+    {
+      "id": "DP-357",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "While spending time alone, My routine provided enough structure to complete basic tasks."
+    },
+    {
+      "id": "DP-358",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "Around people I know, Ordinary responsibilities became difficult to maintain."
+    },
+    {
+      "id": "DP-359",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I considered doing something I usually enjoy, I managed essential responsibilities with reasonable consistency."
+    },
+    {
+      "id": "DP-360",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "Toward the end of the day, My mood interfered with work, study, home, or personal responsibilities."
+    },
+    {
+      "id": "DP-361",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "After a poor night of sleep, My routine provided enough structure to complete basic tasks."
+    },
+    {
+      "id": "DP-362",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "When a task required concentration, Ordinary responsibilities became difficult to maintain."
+    },
+    {
+      "id": "DP-363",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "While thinking about past mistakes, I managed essential responsibilities with reasonable consistency."
+    },
+    {
+      "id": "DP-364",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I looked ahead to the future, My mood interfered with work, study, home, or personal responsibilities."
+    },
+    {
+      "id": "DP-365",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "When someone offered support, My routine provided enough structure to complete basic tasks."
+    },
+    {
+      "id": "DP-366",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "While making a simple choice, Ordinary responsibilities became difficult to maintain."
+    },
+    {
+      "id": "DP-367",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I needed to care for myself, I managed essential responsibilities with reasonable consistency."
+    },
+    {
+      "id": "DP-368",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "During conversations, My mood interfered with work, study, home, or personal responsibilities."
+    },
+    {
+      "id": "DP-369",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "When plans changed, My routine provided enough structure to complete basic tasks."
+    },
+    {
+      "id": "DP-370",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "After completing a small task, Ordinary responsibilities became difficult to maintain."
+    },
+    {
+      "id": "DP-371",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "While following my usual routine, I managed essential responsibilities with reasonable consistency."
+    },
+    {
+      "id": "DP-372",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "When physical discomfort appeared, My mood interfered with work, study, home, or personal responsibilities."
+    },
+    {
+      "id": "DP-373",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I compared myself with others, My routine provided enough structure to complete basic tasks."
+    },
+    {
+      "id": "DP-374",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I tried to rest, Ordinary responsibilities became difficult to maintain."
+    },
+    {
+      "id": "DP-375",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "Even when others could not see how I felt, I managed essential responsibilities with reasonable consistency."
+    },
+    {
+      "id": "DP-376",
+      "category": "self_care",
+      "reverse": true,
+      "urgent": false,
+      "text": "During the past two weeks, I maintained basic care such as washing, dressing, eating, or medication."
+    },
+    {
+      "id": "DP-377",
+      "category": "self_care",
+      "reverse": false,
+      "urgent": false,
+      "text": "On most mornings, Basic self-care felt too difficult to maintain."
+    },
+    {
+      "id": "DP-378",
+      "category": "self_care",
+      "reverse": true,
+      "urgent": false,
+      "text": "While handling ordinary responsibilities, I treated basic physical care as worth the effort."
+    },
+    {
+      "id": "DP-379",
+      "category": "self_care",
+      "reverse": false,
+      "urgent": false,
+      "text": "After a disappointing event, I neglected personal needs because I felt unable to act."
+    },
+    {
+      "id": "DP-380",
+      "category": "self_care",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I had unstructured time, I maintained basic care such as washing, dressing, eating, or medication."
+    },
+    {
+      "id": "DP-381",
+      "category": "self_care",
+      "reverse": false,
+      "urgent": false,
+      "text": "During work or study, Basic self-care felt too difficult to maintain."
+    },
+    {
+      "id": "DP-382",
+      "category": "self_care",
+      "reverse": true,
+      "urgent": false,
+      "text": "While spending time alone, I treated basic physical care as worth the effort."
+    },
+    {
+      "id": "DP-383",
+      "category": "self_care",
+      "reverse": false,
+      "urgent": false,
+      "text": "Around people I know, I neglected personal needs because I felt unable to act."
+    },
+    {
+      "id": "DP-384",
+      "category": "self_care",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I considered doing something I usually enjoy, I maintained basic care such as washing, dressing, eating, or medication."
+    },
+    {
+      "id": "DP-385",
+      "category": "self_care",
+      "reverse": false,
+      "urgent": false,
+      "text": "Toward the end of the day, Basic self-care felt too difficult to maintain."
+    },
+    {
+      "id": "DP-386",
+      "category": "self_care",
+      "reverse": true,
+      "urgent": false,
+      "text": "After a poor night of sleep, I treated basic physical care as worth the effort."
+    },
+    {
+      "id": "DP-387",
+      "category": "self_care",
+      "reverse": false,
+      "urgent": false,
+      "text": "When a task required concentration, I neglected personal needs because I felt unable to act."
+    },
+    {
+      "id": "DP-388",
+      "category": "self_care",
+      "reverse": true,
+      "urgent": false,
+      "text": "While thinking about past mistakes, I maintained basic care such as washing, dressing, eating, or medication."
+    },
+    {
+      "id": "DP-389",
+      "category": "self_care",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I looked ahead to the future, Basic self-care felt too difficult to maintain."
+    },
+    {
+      "id": "DP-390",
+      "category": "self_care",
+      "reverse": true,
+      "urgent": false,
+      "text": "When someone offered support, I treated basic physical care as worth the effort."
+    },
+    {
+      "id": "DP-391",
+      "category": "self_care",
+      "reverse": false,
+      "urgent": false,
+      "text": "While making a simple choice, I neglected personal needs because I felt unable to act."
+    },
+    {
+      "id": "DP-392",
+      "category": "self_care",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I needed to care for myself, I maintained basic care such as washing, dressing, eating, or medication."
+    },
+    {
+      "id": "DP-393",
+      "category": "self_care",
+      "reverse": false,
+      "urgent": false,
+      "text": "During conversations, Basic self-care felt too difficult to maintain."
+    },
+    {
+      "id": "DP-394",
+      "category": "self_care",
+      "reverse": true,
+      "urgent": false,
+      "text": "When plans changed, I treated basic physical care as worth the effort."
+    },
+    {
+      "id": "DP-395",
+      "category": "self_care",
+      "reverse": false,
+      "urgent": false,
+      "text": "After completing a small task, I neglected personal needs because I felt unable to act."
+    },
+    {
+      "id": "DP-396",
+      "category": "self_care",
+      "reverse": true,
+      "urgent": false,
+      "text": "While following my usual routine, I maintained basic care such as washing, dressing, eating, or medication."
+    },
+    {
+      "id": "DP-397",
+      "category": "self_care",
+      "reverse": false,
+      "urgent": false,
+      "text": "When physical discomfort appeared, Basic self-care felt too difficult to maintain."
+    },
+    {
+      "id": "DP-398",
+      "category": "self_care",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I compared myself with others, I treated basic physical care as worth the effort."
+    },
+    {
+      "id": "DP-399",
+      "category": "self_care",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I tried to rest, I neglected personal needs because I felt unable to act."
+    },
+    {
+      "id": "DP-400",
+      "category": "self_care",
+      "reverse": true,
+      "urgent": false,
+      "text": "Even when others could not see how I felt, I maintained basic care such as washing, dressing, eating, or medication."
+    },
+    {
+      "id": "DP-401",
+      "category": "physical",
+      "reverse": true,
+      "urgent": false,
+      "text": "During the past two weeks, My body had periods of feeling reasonably comfortable."
+    },
+    {
+      "id": "DP-402",
+      "category": "physical",
+      "reverse": false,
+      "urgent": false,
+      "text": "On most mornings, Unexplained aches, heaviness, or physical discomfort bothered me."
+    },
+    {
+      "id": "DP-403",
+      "category": "physical",
+      "reverse": true,
+      "urgent": false,
+      "text": "While handling ordinary responsibilities, Physical discomfort did not dominate my attention."
+    },
+    {
+      "id": "DP-404",
+      "category": "physical",
+      "reverse": false,
+      "urgent": false,
+      "text": "After a disappointing event, My body felt weighed down or persistently tense."
+    },
+    {
+      "id": "DP-405",
+      "category": "physical",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I had unstructured time, My body had periods of feeling reasonably comfortable."
+    },
+    {
+      "id": "DP-406",
+      "category": "physical",
+      "reverse": false,
+      "urgent": false,
+      "text": "During work or study, Unexplained aches, heaviness, or physical discomfort bothered me."
+    },
+    {
+      "id": "DP-407",
+      "category": "physical",
+      "reverse": true,
+      "urgent": false,
+      "text": "While spending time alone, Physical discomfort did not dominate my attention."
+    },
+    {
+      "id": "DP-408",
+      "category": "physical",
+      "reverse": false,
+      "urgent": false,
+      "text": "Around people I know, My body felt weighed down or persistently tense."
+    },
+    {
+      "id": "DP-409",
+      "category": "physical",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I considered doing something I usually enjoy, My body had periods of feeling reasonably comfortable."
+    },
+    {
+      "id": "DP-410",
+      "category": "physical",
+      "reverse": false,
+      "urgent": false,
+      "text": "Toward the end of the day, Unexplained aches, heaviness, or physical discomfort bothered me."
+    },
+    {
+      "id": "DP-411",
+      "category": "physical",
+      "reverse": true,
+      "urgent": false,
+      "text": "After a poor night of sleep, Physical discomfort did not dominate my attention."
+    },
+    {
+      "id": "DP-412",
+      "category": "physical",
+      "reverse": false,
+      "urgent": false,
+      "text": "When a task required concentration, My body felt weighed down or persistently tense."
+    },
+    {
+      "id": "DP-413",
+      "category": "physical",
+      "reverse": true,
+      "urgent": false,
+      "text": "While thinking about past mistakes, My body had periods of feeling reasonably comfortable."
+    },
+    {
+      "id": "DP-414",
+      "category": "physical",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I looked ahead to the future, Unexplained aches, heaviness, or physical discomfort bothered me."
+    },
+    {
+      "id": "DP-415",
+      "category": "physical",
+      "reverse": true,
+      "urgent": false,
+      "text": "When someone offered support, Physical discomfort did not dominate my attention."
+    },
+    {
+      "id": "DP-416",
+      "category": "physical",
+      "reverse": false,
+      "urgent": false,
+      "text": "While making a simple choice, My body felt weighed down or persistently tense."
+    },
+    {
+      "id": "DP-417",
+      "category": "physical",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I needed to care for myself, My body had periods of feeling reasonably comfortable."
+    },
+    {
+      "id": "DP-418",
+      "category": "physical",
+      "reverse": false,
+      "urgent": false,
+      "text": "During conversations, Unexplained aches, heaviness, or physical discomfort bothered me."
+    },
+    {
+      "id": "DP-419",
+      "category": "physical",
+      "reverse": true,
+      "urgent": false,
+      "text": "When plans changed, Physical discomfort did not dominate my attention."
+    },
+    {
+      "id": "DP-420",
+      "category": "physical",
+      "reverse": false,
+      "urgent": false,
+      "text": "After completing a small task, My body felt weighed down or persistently tense."
+    },
+    {
+      "id": "DP-421",
+      "category": "physical",
+      "reverse": true,
+      "urgent": false,
+      "text": "While following my usual routine, My body had periods of feeling reasonably comfortable."
+    },
+    {
+      "id": "DP-422",
+      "category": "physical",
+      "reverse": false,
+      "urgent": false,
+      "text": "When physical discomfort appeared, Unexplained aches, heaviness, or physical discomfort bothered me."
+    },
+    {
+      "id": "DP-423",
+      "category": "physical",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I compared myself with others, Physical discomfort did not dominate my attention."
+    },
+    {
+      "id": "DP-424",
+      "category": "physical",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I tried to rest, My body felt weighed down or persistently tense."
+    },
+    {
+      "id": "DP-425",
+      "category": "physical",
+      "reverse": true,
+      "urgent": false,
+      "text": "Even when others could not see how I felt, My body had periods of feeling reasonably comfortable."
+    },
+    {
+      "id": "DP-426",
+      "category": "rumination",
+      "reverse": true,
+      "urgent": false,
+      "text": "During the past two weeks, I could redirect attention away from repetitive negative thoughts."
+    },
+    {
+      "id": "DP-427",
+      "category": "rumination",
+      "reverse": false,
+      "urgent": false,
+      "text": "On most mornings, The same painful thoughts repeated for long periods."
+    },
+    {
+      "id": "DP-428",
+      "category": "rumination",
+      "reverse": true,
+      "urgent": false,
+      "text": "While handling ordinary responsibilities, I recognised that a painful thought was not automatically a fact."
+    },
+    {
+      "id": "DP-429",
+      "category": "rumination",
+      "reverse": false,
+      "urgent": false,
+      "text": "After a disappointing event, I became trapped in negative thinking about the past or myself."
+    },
+    {
+      "id": "DP-430",
+      "category": "rumination",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I had unstructured time, I could redirect attention away from repetitive negative thoughts."
+    },
+    {
+      "id": "DP-431",
+      "category": "rumination",
+      "reverse": false,
+      "urgent": false,
+      "text": "During work or study, The same painful thoughts repeated for long periods."
+    },
+    {
+      "id": "DP-432",
+      "category": "rumination",
+      "reverse": true,
+      "urgent": false,
+      "text": "While spending time alone, I recognised that a painful thought was not automatically a fact."
+    },
+    {
+      "id": "DP-433",
+      "category": "rumination",
+      "reverse": false,
+      "urgent": false,
+      "text": "Around people I know, I became trapped in negative thinking about the past or myself."
+    },
+    {
+      "id": "DP-434",
+      "category": "rumination",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I considered doing something I usually enjoy, I could redirect attention away from repetitive negative thoughts."
+    },
+    {
+      "id": "DP-435",
+      "category": "rumination",
+      "reverse": false,
+      "urgent": false,
+      "text": "Toward the end of the day, The same painful thoughts repeated for long periods."
+    },
+    {
+      "id": "DP-436",
+      "category": "rumination",
+      "reverse": true,
+      "urgent": false,
+      "text": "After a poor night of sleep, I recognised that a painful thought was not automatically a fact."
+    },
+    {
+      "id": "DP-437",
+      "category": "rumination",
+      "reverse": false,
+      "urgent": false,
+      "text": "When a task required concentration, I became trapped in negative thinking about the past or myself."
+    },
+    {
+      "id": "DP-438",
+      "category": "rumination",
+      "reverse": true,
+      "urgent": false,
+      "text": "While thinking about past mistakes, I could redirect attention away from repetitive negative thoughts."
+    },
+    {
+      "id": "DP-439",
+      "category": "rumination",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I looked ahead to the future, The same painful thoughts repeated for long periods."
+    },
+    {
+      "id": "DP-440",
+      "category": "rumination",
+      "reverse": true,
+      "urgent": false,
+      "text": "When someone offered support, I recognised that a painful thought was not automatically a fact."
+    },
+    {
+      "id": "DP-441",
+      "category": "rumination",
+      "reverse": false,
+      "urgent": false,
+      "text": "While making a simple choice, I became trapped in negative thinking about the past or myself."
+    },
+    {
+      "id": "DP-442",
+      "category": "rumination",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I needed to care for myself, I could redirect attention away from repetitive negative thoughts."
+    },
+    {
+      "id": "DP-443",
+      "category": "rumination",
+      "reverse": false,
+      "urgent": false,
+      "text": "During conversations, The same painful thoughts repeated for long periods."
+    },
+    {
+      "id": "DP-444",
+      "category": "rumination",
+      "reverse": true,
+      "urgent": false,
+      "text": "When plans changed, I recognised that a painful thought was not automatically a fact."
+    },
+    {
+      "id": "DP-445",
+      "category": "rumination",
+      "reverse": false,
+      "urgent": false,
+      "text": "After completing a small task, I became trapped in negative thinking about the past or myself."
+    },
+    {
+      "id": "DP-446",
+      "category": "rumination",
+      "reverse": true,
+      "urgent": false,
+      "text": "While following my usual routine, I could redirect attention away from repetitive negative thoughts."
+    },
+    {
+      "id": "DP-447",
+      "category": "rumination",
+      "reverse": false,
+      "urgent": false,
+      "text": "When physical discomfort appeared, The same painful thoughts repeated for long periods."
+    },
+    {
+      "id": "DP-448",
+      "category": "rumination",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I compared myself with others, I recognised that a painful thought was not automatically a fact."
+    },
+    {
+      "id": "DP-449",
+      "category": "rumination",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I tried to rest, I became trapped in negative thinking about the past or myself."
+    },
+    {
+      "id": "DP-450",
+      "category": "rumination",
+      "reverse": true,
+      "urgent": false,
+      "text": "Even when others could not see how I felt, I could redirect attention away from repetitive negative thoughts."
+    },
+    {
+      "id": "DP-451",
+      "category": "emotional_expression",
+      "reverse": true,
+      "urgent": false,
+      "text": "During the past two weeks, I could feel and express emotions in a manageable way."
+    },
+    {
+      "id": "DP-452",
+      "category": "emotional_expression",
+      "reverse": false,
+      "urgent": false,
+      "text": "On most mornings, I cried more often than usual or felt close to tears."
+    },
+    {
+      "id": "DP-453",
+      "category": "emotional_expression",
+      "reverse": true,
+      "urgent": false,
+      "text": "While handling ordinary responsibilities, My emotions felt present rather than completely numb."
+    },
+    {
+      "id": "DP-454",
+      "category": "emotional_expression",
+      "reverse": false,
+      "urgent": false,
+      "text": "After a disappointing event, I felt emotionally numb or disconnected from my feelings."
+    },
+    {
+      "id": "DP-455",
+      "category": "emotional_expression",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I had unstructured time, I could feel and express emotions in a manageable way."
+    },
+    {
+      "id": "DP-456",
+      "category": "emotional_expression",
+      "reverse": false,
+      "urgent": false,
+      "text": "During work or study, I cried more often than usual or felt close to tears."
+    },
+    {
+      "id": "DP-457",
+      "category": "emotional_expression",
+      "reverse": true,
+      "urgent": false,
+      "text": "While spending time alone, My emotions felt present rather than completely numb."
+    },
+    {
+      "id": "DP-458",
+      "category": "emotional_expression",
+      "reverse": false,
+      "urgent": false,
+      "text": "Around people I know, I felt emotionally numb or disconnected from my feelings."
+    },
+    {
+      "id": "DP-459",
+      "category": "emotional_expression",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I considered doing something I usually enjoy, I could feel and express emotions in a manageable way."
+    },
+    {
+      "id": "DP-460",
+      "category": "emotional_expression",
+      "reverse": false,
+      "urgent": false,
+      "text": "Toward the end of the day, I cried more often than usual or felt close to tears."
+    },
+    {
+      "id": "DP-461",
+      "category": "emotional_expression",
+      "reverse": true,
+      "urgent": false,
+      "text": "After a poor night of sleep, My emotions felt present rather than completely numb."
+    },
+    {
+      "id": "DP-462",
+      "category": "emotional_expression",
+      "reverse": false,
+      "urgent": false,
+      "text": "When a task required concentration, I felt emotionally numb or disconnected from my feelings."
+    },
+    {
+      "id": "DP-463",
+      "category": "emotional_expression",
+      "reverse": true,
+      "urgent": false,
+      "text": "While thinking about past mistakes, I could feel and express emotions in a manageable way."
+    },
+    {
+      "id": "DP-464",
+      "category": "emotional_expression",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I looked ahead to the future, I cried more often than usual or felt close to tears."
+    },
+    {
+      "id": "DP-465",
+      "category": "emotional_expression",
+      "reverse": true,
+      "urgent": false,
+      "text": "When someone offered support, My emotions felt present rather than completely numb."
+    },
+    {
+      "id": "DP-466",
+      "category": "emotional_expression",
+      "reverse": false,
+      "urgent": false,
+      "text": "While making a simple choice, I felt emotionally numb or disconnected from my feelings."
+    },
+    {
+      "id": "DP-467",
+      "category": "emotional_expression",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I needed to care for myself, I could feel and express emotions in a manageable way."
+    },
+    {
+      "id": "DP-468",
+      "category": "emotional_expression",
+      "reverse": false,
+      "urgent": false,
+      "text": "During conversations, I cried more often than usual or felt close to tears."
+    },
+    {
+      "id": "DP-469",
+      "category": "emotional_expression",
+      "reverse": true,
+      "urgent": false,
+      "text": "When plans changed, My emotions felt present rather than completely numb."
+    },
+    {
+      "id": "DP-470",
+      "category": "emotional_expression",
+      "reverse": false,
+      "urgent": false,
+      "text": "After completing a small task, I felt emotionally numb or disconnected from my feelings."
+    },
+    {
+      "id": "DP-471",
+      "category": "emotional_expression",
+      "reverse": true,
+      "urgent": false,
+      "text": "While following my usual routine, I could feel and express emotions in a manageable way."
+    },
+    {
+      "id": "DP-472",
+      "category": "emotional_expression",
+      "reverse": false,
+      "urgent": false,
+      "text": "When physical discomfort appeared, I cried more often than usual or felt close to tears."
+    },
+    {
+      "id": "DP-473",
+      "category": "emotional_expression",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I compared myself with others, My emotions felt present rather than completely numb."
+    },
+    {
+      "id": "DP-474",
+      "category": "emotional_expression",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I tried to rest, I felt emotionally numb or disconnected from my feelings."
+    },
+    {
+      "id": "DP-475",
+      "category": "emotional_expression",
+      "reverse": true,
+      "urgent": false,
+      "text": "Even when others could not see how I felt, I could feel and express emotions in a manageable way."
+    },
+    {
+      "id": "DP-476",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I felt safe from acting on thoughts of self-harm."
+    },
+    {
+      "id": "DP-477",
+      "category": "safety",
+      "reverse": false,
+      "urgent": true,
+      "text": "I had thoughts about harming myself."
+    },
+    {
+      "id": "DP-478",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I knew a person or service I could contact immediately if I felt unsafe."
+    },
+    {
+      "id": "DP-479",
+      "category": "safety",
+      "reverse": false,
+      "urgent": true,
+      "text": "I felt that I might not be safe with myself."
+    },
+    {
+      "id": "DP-480",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I could identify reasons to stay alive through a difficult moment."
+    },
+    {
+      "id": "DP-481",
+      "category": "safety",
+      "reverse": false,
+      "urgent": true,
+      "text": "I had thoughts that I would be better off dead."
+    },
+    {
+      "id": "DP-482",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I was willing to tell someone if thoughts of self-harm appeared."
+    },
+    {
+      "id": "DP-483",
+      "category": "safety",
+      "reverse": false,
+      "urgent": true,
+      "text": "I thought about how I might harm myself."
+    },
+    {
+      "id": "DP-484",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I could move toward a safer place or supportive person when overwhelmed."
+    },
+    {
+      "id": "DP-485",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I kept crisis or emergency contact information available."
+    },
+    {
+      "id": "DP-486",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I believed intense urges could pass if I delayed action and sought help."
+    },
+    {
+      "id": "DP-487",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I could reduce access to anything I might use to hurt myself."
+    },
+    {
+      "id": "DP-488",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I had at least one relationship that supported my safety."
+    },
+    {
+      "id": "DP-489",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I could ask someone to stay with me during a crisis."
+    },
+    {
+      "id": "DP-490",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I viewed urgent help as appropriate when personal safety was uncertain."
+    },
+    {
+      "id": "DP-491",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I knew where the nearest emergency support could be found."
+    },
+    {
+      "id": "DP-492",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I could describe warning signs that mean I need immediate support."
+    },
+    {
+      "id": "DP-493",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I felt able to speak honestly about serious emotional pain."
+    },
+    {
+      "id": "DP-494",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I could choose not to remain alone during an unsafe moment."
+    },
+    {
+      "id": "DP-495",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I had a simple plan for contacting support in a crisis."
+    },
+    {
+      "id": "DP-496",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I understood that seeking emergency help is not a personal failure."
+    },
+    {
+      "id": "DP-497",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I could focus on getting through one difficult moment at a time."
+    },
+    {
+      "id": "DP-498",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I believed I deserved protection and immediate support."
+    },
+    {
+      "id": "DP-499",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I could tell a trusted person when my safety felt uncertain."
+    },
+    {
+      "id": "DP-500",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I knew that this questionnaire cannot determine whether I am safe."
+    }
+  ]
+}

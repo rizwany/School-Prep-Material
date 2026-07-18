@@ -1,0 +1,3653 @@
+{
+  "meta": {
+    "title": "بارڈر لائن شخصیت سے متعلق خصوصیات کا جائزہ",
+    "description": "20 متعلقہ پہلوؤں پر 500 بیانات کا نجی، غیر تشخیصی جائزہ۔",
+    "scale": {
+      "min": 1,
+      "max": 10,
+      "minLabel": "بالکل نہیں",
+      "maxLabel": "بہت زیادہ"
+    },
+    "categories": [
+      {
+        "id": "emotional_intensity",
+        "label": "جذبات کی شدت",
+        "icon": "🌊"
+      },
+      {
+        "id": "mood_shifts",
+        "label": "مزاج میں تیز تبدیلی",
+        "icon": "🎢"
+      },
+      {
+        "id": "abandonment",
+        "label": "چھوڑ دیے جانے کا خوف",
+        "icon": "🚪"
+      },
+      {
+        "id": "relationships",
+        "label": "تعلقات کا استحکام",
+        "icon": "🤝"
+      },
+      {
+        "id": "identity",
+        "label": "شناخت اور خودی کا احساس",
+        "icon": "🧭"
+      },
+      {
+        "id": "self_image",
+        "label": "خود تصویر کا استحکام",
+        "icon": "🪞"
+      },
+      {
+        "id": "impulsivity",
+        "label": "بے ساختگی اور خطرہ مول لینا",
+        "icon": "⚡"
+      },
+      {
+        "id": "anger",
+        "label": "غصہ اور اختلاف",
+        "icon": "🌋"
+      },
+      {
+        "id": "emptiness",
+        "label": "خالی پن اور لاتعلقی",
+        "icon": "🕳️"
+      },
+      {
+        "id": "dissociation",
+        "label": "لاتعلقی اور غیر حقیقی احساس",
+        "icon": "🌫️"
+      },
+      {
+        "id": "stress_mistrust",
+        "label": "دباؤ سے متعلق بداعتمادی",
+        "icon": "🔍"
+      },
+      {
+        "id": "rejection",
+        "label": "رد کیے جانے کی حساسیت",
+        "icon": "💬"
+      },
+      {
+        "id": "all_or_nothing",
+        "label": "انتہائی یا دو رخی سوچ",
+        "icon": "◐"
+      },
+      {
+        "id": "boundaries",
+        "label": "حدود اور قربت",
+        "icon": "🚧"
+      },
+      {
+        "id": "distress_tolerance",
+        "label": "تکلیف برداشت کرنے کی صلاحیت",
+        "icon": "🧰"
+      },
+      {
+        "id": "interpersonal_skills",
+        "label": "باہمی تعلق کی مہارت",
+        "icon": "🗣️"
+      },
+      {
+        "id": "conflict_repair",
+        "label": "اختلاف کے بعد تعلق کی مرمت",
+        "icon": "🧵"
+      },
+      {
+        "id": "functioning",
+        "label": "روزمرہ کارکردگی",
+        "icon": "📋"
+      },
+      {
+        "id": "help_seeking",
+        "label": "مدد حاصل کرنا اور علاج میں شمولیت",
+        "icon": "🤲"
+      },
+      {
+        "id": "safety",
+        "label": "حفاظت اور بحران تعاون",
+        "icon": "🛟"
+      }
+    ],
+    "levels": [
+      {
+        "min": 1,
+        "max": 2.5,
+        "label": "کم رپورٹ شدہ مشکلات",
+        "emoji": "🌿",
+        "desc": "اس غیر تشخیصی جائزے میں آپ نے کم مشکلات رپورٹ کیں۔ یہ BPD یا کسی اور کیفیت کی تصدیق یا تردید نہیں کر سکتا۔"
+      },
+      {
+        "min": 2.5,
+        "max": 4,
+        "label": "کچھ بار بار آنے والی مشکلات",
+        "emoji": "🌦️",
+        "desc": "آپ نے کچھ جذباتی یا باہمی مشکلات رپورٹ کیں۔ مہارتوں کی مشق یا مستند ماہر سے گفتگو مدد دے سکتی ہے۔"
+      },
+      {
+        "min": 4,
+        "max": 5.5,
+        "label": "دباؤ کے کئی پہلو",
+        "emoji": "🤲",
+        "desc": "کئی نمونے مشکل دکھائی دیتے ہیں۔ ان کی مدت، حالات اور اثرات پر لائسنس یافتہ ذہنی صحت کے ماہر سے بات کریں۔"
+      },
+      {
+        "min": 5.5,
+        "max": 7.5,
+        "label": "زیادہ رپورٹ شدہ نمونے",
+        "emoji": "💛",
+        "desc": "جوابات نمایاں جذباتی یا باہمی دباؤ دکھاتے ہیں۔ جامع پیشہ ورانہ تشخیص اور تعاون لینے پر غور کریں۔"
+      },
+      {
+        "min": 7.5,
+        "max": 10.01,
+        "label": "نمایاں رپورٹ شدہ تکلیف",
+        "emoji": "🧡",
+        "desc": "آپ نے نمایاں تکلیف یا کارکردگی میں خلل رپورٹ کیا۔ فوری پیشہ ورانہ تعاون لیں؛ حفاظت غیر یقینی ہو تو ابھی ایمرجنسی مدد استعمال کریں۔"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "BP-001",
+      "category": "emotional_intensity",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ چند ماہ میں، میں شدید جذبات کو مکمل طور پر مغلوب ہوئے بغیر محسوس کر سکا/سکی۔"
+    },
+    {
+      "id": "BP-002",
+      "category": "emotional_intensity",
+      "reverse": false,
+      "urgent": false,
+      "text": "مختلف حالات میں، میرے جذبات اتنے شدید ہوئے کہ ناقابلِ برداشت محسوس ہوئے۔"
+    },
+    {
+      "id": "BP-003",
+      "category": "emotional_intensity",
+      "reverse": true,
+      "urgent": false,
+      "text": "قریبی تعلقات کے دوران، شدید جذبات بالآخر کم ہوئے اور میرے تمام اعمال پر حاوی نہیں رہے۔"
+    },
+    {
+      "id": "BP-004",
+      "category": "emotional_intensity",
+      "reverse": false,
+      "urgent": false,
+      "text": "اختلاف کے بعد، شدید احساسات نے تیزی سے میری سوچ اور رویے کو گھیر لیا۔"
+    },
+    {
+      "id": "BP-005",
+      "category": "emotional_intensity",
+      "reverse": true,
+      "urgent": false,
+      "text": "رد کیے جانے کے خوف میں، میں شدید جذبات کو مکمل طور پر مغلوب ہوئے بغیر محسوس کر سکا/سکی۔"
+    },
+    {
+      "id": "BP-006",
+      "category": "emotional_intensity",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب کسی کو کچھ فاصلہ درکار تھا، میرے جذبات اتنے شدید ہوئے کہ ناقابلِ برداشت محسوس ہوئے۔"
+    },
+    {
+      "id": "BP-007",
+      "category": "emotional_intensity",
+      "reverse": true,
+      "urgent": false,
+      "text": "جذباتی دباؤ کے دوران، شدید جذبات بالآخر کم ہوئے اور میرے تمام اعمال پر حاوی نہیں رہے۔"
+    },
+    {
+      "id": "BP-008",
+      "category": "emotional_intensity",
+      "reverse": false,
+      "urgent": false,
+      "text": "منصوبے اچانک بدلنے پر، شدید احساسات نے تیزی سے میری سوچ اور رویے کو گھیر لیا۔"
+    },
+    {
+      "id": "BP-009",
+      "category": "emotional_intensity",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنقید ملنے کے بعد، میں شدید جذبات کو مکمل طور پر مغلوب ہوئے بغیر محسوس کر سکا/سکی۔"
+    },
+    {
+      "id": "BP-010",
+      "category": "emotional_intensity",
+      "reverse": false,
+      "urgent": false,
+      "text": "غلط سمجھے جانے پر، میرے جذبات اتنے شدید ہوئے کہ ناقابلِ برداشت محسوس ہوئے۔"
+    },
+    {
+      "id": "BP-011",
+      "category": "emotional_intensity",
+      "reverse": true,
+      "urgent": false,
+      "text": "اہم انتخاب کرتے ہوئے، شدید جذبات بالآخر کم ہوئے اور میرے تمام اعمال پر حاوی نہیں رہے۔"
+    },
+    {
+      "id": "BP-012",
+      "category": "emotional_intensity",
+      "reverse": false,
+      "urgent": false,
+      "text": "شدید قربت کے لمحات میں، شدید احساسات نے تیزی سے میری سوچ اور رویے کو گھیر لیا۔"
+    },
+    {
+      "id": "BP-013",
+      "category": "emotional_intensity",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنہائی میں، میں شدید جذبات کو مکمل طور پر مغلوب ہوئے بغیر محسوس کر سکا/سکی۔"
+    },
+    {
+      "id": "BP-014",
+      "category": "emotional_intensity",
+      "reverse": false,
+      "urgent": false,
+      "text": "غصہ بڑھنے پر، میرے جذبات اتنے شدید ہوئے کہ ناقابلِ برداشت محسوس ہوئے۔"
+    },
+    {
+      "id": "BP-015",
+      "category": "emotional_intensity",
+      "reverse": true,
+      "urgent": false,
+      "text": "شدید خواہش محسوس ہونے پر، شدید جذبات بالآخر کم ہوئے اور میرے تمام اعمال پر حاوی نہیں رہے۔"
+    },
+    {
+      "id": "BP-016",
+      "category": "emotional_intensity",
+      "reverse": false,
+      "urgent": false,
+      "text": "غلطی کرنے کے بعد، شدید احساسات نے تیزی سے میری سوچ اور رویے کو گھیر لیا۔"
+    },
+    {
+      "id": "BP-017",
+      "category": "emotional_intensity",
+      "reverse": true,
+      "urgent": false,
+      "text": "اعتماد غیر یقینی ہونے پر، میں شدید جذبات کو مکمل طور پر مغلوب ہوئے بغیر محسوس کر سکا/سکی۔"
+    },
+    {
+      "id": "BP-018",
+      "category": "emotional_intensity",
+      "reverse": false,
+      "urgent": false,
+      "text": "عام ذمہ داریوں کے دوران، میرے جذبات اتنے شدید ہوئے کہ ناقابلِ برداشت محسوس ہوئے۔"
+    },
+    {
+      "id": "BP-019",
+      "category": "emotional_intensity",
+      "reverse": true,
+      "urgent": false,
+      "text": "تسلی کی ضرورت کے وقت، شدید جذبات بالآخر کم ہوئے اور میرے تمام اعمال پر حاوی نہیں رہے۔"
+    },
+    {
+      "id": "BP-020",
+      "category": "emotional_intensity",
+      "reverse": false,
+      "urgent": false,
+      "text": "خود کو خارج محسوس کرنے کے بعد، شدید احساسات نے تیزی سے میری سوچ اور رویے کو گھیر لیا۔"
+    },
+    {
+      "id": "BP-021",
+      "category": "emotional_intensity",
+      "reverse": true,
+      "urgent": false,
+      "text": "اپنی شناخت کے بارے میں سوچتے ہوئے، میں شدید جذبات کو مکمل طور پر مغلوب ہوئے بغیر محسوس کر سکا/سکی۔"
+    },
+    {
+      "id": "BP-022",
+      "category": "emotional_intensity",
+      "reverse": false,
+      "urgent": false,
+      "text": "کسی کے مایوس کرنے پر، میرے جذبات اتنے شدید ہوئے کہ ناقابلِ برداشت محسوس ہوئے۔"
+    },
+    {
+      "id": "BP-023",
+      "category": "emotional_intensity",
+      "reverse": true,
+      "urgent": false,
+      "text": "جذبات تیزی سے بدلنے پر، شدید جذبات بالآخر کم ہوئے اور میرے تمام اعمال پر حاوی نہیں رہے۔"
+    },
+    {
+      "id": "BP-024",
+      "category": "emotional_intensity",
+      "reverse": false,
+      "urgent": false,
+      "text": "پرسکون ہونے کی کوشش میں، شدید احساسات نے تیزی سے میری سوچ اور رویے کو گھیر لیا۔"
+    },
+    {
+      "id": "BP-025",
+      "category": "emotional_intensity",
+      "reverse": true,
+      "urgent": false,
+      "text": "اس وقت بھی جب دوسرے میری تکلیف نہیں دیکھ سکتے تھے، میں شدید جذبات کو مکمل طور پر مغلوب ہوئے بغیر محسوس کر سکا/سکی۔"
+    },
+    {
+      "id": "BP-026",
+      "category": "mood_shifts",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ چند ماہ میں، میرے مزاج کی تبدیلی قابلِ فہم اور قابلِ انتظام رہی۔"
+    },
+    {
+      "id": "BP-027",
+      "category": "mood_shifts",
+      "reverse": false,
+      "urgent": false,
+      "text": "مختلف حالات میں، میرا مزاج مختصر وقت میں تیزی سے بدل گیا۔"
+    },
+    {
+      "id": "BP-028",
+      "category": "mood_shifts",
+      "reverse": true,
+      "urgent": false,
+      "text": "قریبی تعلقات کے دوران، میں ردعمل سے پہلے مزاج کی تبدیلی پہچان سکا/سکی۔"
+    },
+    {
+      "id": "BP-029",
+      "category": "mood_shifts",
+      "reverse": false,
+      "urgent": false,
+      "text": "اختلاف کے بعد، چھوٹے واقعے نے غیر متوقع طور پر بڑی جذباتی تبدیلی پیدا کی۔"
+    },
+    {
+      "id": "BP-030",
+      "category": "mood_shifts",
+      "reverse": true,
+      "urgent": false,
+      "text": "رد کیے جانے کے خوف میں، میرے مزاج کی تبدیلی قابلِ فہم اور قابلِ انتظام رہی۔"
+    },
+    {
+      "id": "BP-031",
+      "category": "mood_shifts",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب کسی کو کچھ فاصلہ درکار تھا، میرا مزاج مختصر وقت میں تیزی سے بدل گیا۔"
+    },
+    {
+      "id": "BP-032",
+      "category": "mood_shifts",
+      "reverse": true,
+      "urgent": false,
+      "text": "جذباتی دباؤ کے دوران، میں ردعمل سے پہلے مزاج کی تبدیلی پہچان سکا/سکی۔"
+    },
+    {
+      "id": "BP-033",
+      "category": "mood_shifts",
+      "reverse": false,
+      "urgent": false,
+      "text": "منصوبے اچانک بدلنے پر، چھوٹے واقعے نے غیر متوقع طور پر بڑی جذباتی تبدیلی پیدا کی۔"
+    },
+    {
+      "id": "BP-034",
+      "category": "mood_shifts",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنقید ملنے کے بعد، میرے مزاج کی تبدیلی قابلِ فہم اور قابلِ انتظام رہی۔"
+    },
+    {
+      "id": "BP-035",
+      "category": "mood_shifts",
+      "reverse": false,
+      "urgent": false,
+      "text": "غلط سمجھے جانے پر، میرا مزاج مختصر وقت میں تیزی سے بدل گیا۔"
+    },
+    {
+      "id": "BP-036",
+      "category": "mood_shifts",
+      "reverse": true,
+      "urgent": false,
+      "text": "اہم انتخاب کرتے ہوئے، میں ردعمل سے پہلے مزاج کی تبدیلی پہچان سکا/سکی۔"
+    },
+    {
+      "id": "BP-037",
+      "category": "mood_shifts",
+      "reverse": false,
+      "urgent": false,
+      "text": "شدید قربت کے لمحات میں، چھوٹے واقعے نے غیر متوقع طور پر بڑی جذباتی تبدیلی پیدا کی۔"
+    },
+    {
+      "id": "BP-038",
+      "category": "mood_shifts",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنہائی میں، میرے مزاج کی تبدیلی قابلِ فہم اور قابلِ انتظام رہی۔"
+    },
+    {
+      "id": "BP-039",
+      "category": "mood_shifts",
+      "reverse": false,
+      "urgent": false,
+      "text": "غصہ بڑھنے پر، میرا مزاج مختصر وقت میں تیزی سے بدل گیا۔"
+    },
+    {
+      "id": "BP-040",
+      "category": "mood_shifts",
+      "reverse": true,
+      "urgent": false,
+      "text": "شدید خواہش محسوس ہونے پر، میں ردعمل سے پہلے مزاج کی تبدیلی پہچان سکا/سکی۔"
+    },
+    {
+      "id": "BP-041",
+      "category": "mood_shifts",
+      "reverse": false,
+      "urgent": false,
+      "text": "غلطی کرنے کے بعد، چھوٹے واقعے نے غیر متوقع طور پر بڑی جذباتی تبدیلی پیدا کی۔"
+    },
+    {
+      "id": "BP-042",
+      "category": "mood_shifts",
+      "reverse": true,
+      "urgent": false,
+      "text": "اعتماد غیر یقینی ہونے پر، میرے مزاج کی تبدیلی قابلِ فہم اور قابلِ انتظام رہی۔"
+    },
+    {
+      "id": "BP-043",
+      "category": "mood_shifts",
+      "reverse": false,
+      "urgent": false,
+      "text": "عام ذمہ داریوں کے دوران، میرا مزاج مختصر وقت میں تیزی سے بدل گیا۔"
+    },
+    {
+      "id": "BP-044",
+      "category": "mood_shifts",
+      "reverse": true,
+      "urgent": false,
+      "text": "تسلی کی ضرورت کے وقت، میں ردعمل سے پہلے مزاج کی تبدیلی پہچان سکا/سکی۔"
+    },
+    {
+      "id": "BP-045",
+      "category": "mood_shifts",
+      "reverse": false,
+      "urgent": false,
+      "text": "خود کو خارج محسوس کرنے کے بعد، چھوٹے واقعے نے غیر متوقع طور پر بڑی جذباتی تبدیلی پیدا کی۔"
+    },
+    {
+      "id": "BP-046",
+      "category": "mood_shifts",
+      "reverse": true,
+      "urgent": false,
+      "text": "اپنی شناخت کے بارے میں سوچتے ہوئے، میرے مزاج کی تبدیلی قابلِ فہم اور قابلِ انتظام رہی۔"
+    },
+    {
+      "id": "BP-047",
+      "category": "mood_shifts",
+      "reverse": false,
+      "urgent": false,
+      "text": "کسی کے مایوس کرنے پر، میرا مزاج مختصر وقت میں تیزی سے بدل گیا۔"
+    },
+    {
+      "id": "BP-048",
+      "category": "mood_shifts",
+      "reverse": true,
+      "urgent": false,
+      "text": "جذبات تیزی سے بدلنے پر، میں ردعمل سے پہلے مزاج کی تبدیلی پہچان سکا/سکی۔"
+    },
+    {
+      "id": "BP-049",
+      "category": "mood_shifts",
+      "reverse": false,
+      "urgent": false,
+      "text": "پرسکون ہونے کی کوشش میں، چھوٹے واقعے نے غیر متوقع طور پر بڑی جذباتی تبدیلی پیدا کی۔"
+    },
+    {
+      "id": "BP-050",
+      "category": "mood_shifts",
+      "reverse": true,
+      "urgent": false,
+      "text": "اس وقت بھی جب دوسرے میری تکلیف نہیں دیکھ سکتے تھے، میرے مزاج کی تبدیلی قابلِ فہم اور قابلِ انتظام رہی۔"
+    },
+    {
+      "id": "BP-051",
+      "category": "abandonment",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ چند ماہ میں، میں عارضی دوری کو چھوڑ دیے جانے کا ثبوت سمجھے بغیر برداشت کر سکا/سکی۔"
+    },
+    {
+      "id": "BP-052",
+      "category": "abandonment",
+      "reverse": false,
+      "urgent": false,
+      "text": "مختلف حالات میں، مجھے شدید خوف ہوا کہ کوئی اہم شخص مجھے چھوڑ دے گا۔"
+    },
+    {
+      "id": "BP-053",
+      "category": "abandonment",
+      "reverse": true,
+      "urgent": false,
+      "text": "قریبی تعلقات کے دوران، چھوڑے جانے کے خوف پر ردعمل سے پہلے میں نے وضاحت مانگی۔"
+    },
+    {
+      "id": "BP-054",
+      "category": "abandonment",
+      "reverse": false,
+      "urgent": false,
+      "text": "اختلاف کے بعد، دیر سے جواب ملنا رد یا ترک کیے جانے کا ثبوت محسوس ہوا۔"
+    },
+    {
+      "id": "BP-055",
+      "category": "abandonment",
+      "reverse": true,
+      "urgent": false,
+      "text": "رد کیے جانے کے خوف میں، میں عارضی دوری کو چھوڑ دیے جانے کا ثبوت سمجھے بغیر برداشت کر سکا/سکی۔"
+    },
+    {
+      "id": "BP-056",
+      "category": "abandonment",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب کسی کو کچھ فاصلہ درکار تھا، مجھے شدید خوف ہوا کہ کوئی اہم شخص مجھے چھوڑ دے گا۔"
+    },
+    {
+      "id": "BP-057",
+      "category": "abandonment",
+      "reverse": true,
+      "urgent": false,
+      "text": "جذباتی دباؤ کے دوران، چھوڑے جانے کے خوف پر ردعمل سے پہلے میں نے وضاحت مانگی۔"
+    },
+    {
+      "id": "BP-058",
+      "category": "abandonment",
+      "reverse": false,
+      "urgent": false,
+      "text": "منصوبے اچانک بدلنے پر، دیر سے جواب ملنا رد یا ترک کیے جانے کا ثبوت محسوس ہوا۔"
+    },
+    {
+      "id": "BP-059",
+      "category": "abandonment",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنقید ملنے کے بعد، میں عارضی دوری کو چھوڑ دیے جانے کا ثبوت سمجھے بغیر برداشت کر سکا/سکی۔"
+    },
+    {
+      "id": "BP-060",
+      "category": "abandonment",
+      "reverse": false,
+      "urgent": false,
+      "text": "غلط سمجھے جانے پر، مجھے شدید خوف ہوا کہ کوئی اہم شخص مجھے چھوڑ دے گا۔"
+    },
+    {
+      "id": "BP-061",
+      "category": "abandonment",
+      "reverse": true,
+      "urgent": false,
+      "text": "اہم انتخاب کرتے ہوئے، چھوڑے جانے کے خوف پر ردعمل سے پہلے میں نے وضاحت مانگی۔"
+    },
+    {
+      "id": "BP-062",
+      "category": "abandonment",
+      "reverse": false,
+      "urgent": false,
+      "text": "شدید قربت کے لمحات میں، دیر سے جواب ملنا رد یا ترک کیے جانے کا ثبوت محسوس ہوا۔"
+    },
+    {
+      "id": "BP-063",
+      "category": "abandonment",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنہائی میں، میں عارضی دوری کو چھوڑ دیے جانے کا ثبوت سمجھے بغیر برداشت کر سکا/سکی۔"
+    },
+    {
+      "id": "BP-064",
+      "category": "abandonment",
+      "reverse": false,
+      "urgent": false,
+      "text": "غصہ بڑھنے پر، مجھے شدید خوف ہوا کہ کوئی اہم شخص مجھے چھوڑ دے گا۔"
+    },
+    {
+      "id": "BP-065",
+      "category": "abandonment",
+      "reverse": true,
+      "urgent": false,
+      "text": "شدید خواہش محسوس ہونے پر، چھوڑے جانے کے خوف پر ردعمل سے پہلے میں نے وضاحت مانگی۔"
+    },
+    {
+      "id": "BP-066",
+      "category": "abandonment",
+      "reverse": false,
+      "urgent": false,
+      "text": "غلطی کرنے کے بعد، دیر سے جواب ملنا رد یا ترک کیے جانے کا ثبوت محسوس ہوا۔"
+    },
+    {
+      "id": "BP-067",
+      "category": "abandonment",
+      "reverse": true,
+      "urgent": false,
+      "text": "اعتماد غیر یقینی ہونے پر، میں عارضی دوری کو چھوڑ دیے جانے کا ثبوت سمجھے بغیر برداشت کر سکا/سکی۔"
+    },
+    {
+      "id": "BP-068",
+      "category": "abandonment",
+      "reverse": false,
+      "urgent": false,
+      "text": "عام ذمہ داریوں کے دوران، مجھے شدید خوف ہوا کہ کوئی اہم شخص مجھے چھوڑ دے گا۔"
+    },
+    {
+      "id": "BP-069",
+      "category": "abandonment",
+      "reverse": true,
+      "urgent": false,
+      "text": "تسلی کی ضرورت کے وقت، چھوڑے جانے کے خوف پر ردعمل سے پہلے میں نے وضاحت مانگی۔"
+    },
+    {
+      "id": "BP-070",
+      "category": "abandonment",
+      "reverse": false,
+      "urgent": false,
+      "text": "خود کو خارج محسوس کرنے کے بعد، دیر سے جواب ملنا رد یا ترک کیے جانے کا ثبوت محسوس ہوا۔"
+    },
+    {
+      "id": "BP-071",
+      "category": "abandonment",
+      "reverse": true,
+      "urgent": false,
+      "text": "اپنی شناخت کے بارے میں سوچتے ہوئے، میں عارضی دوری کو چھوڑ دیے جانے کا ثبوت سمجھے بغیر برداشت کر سکا/سکی۔"
+    },
+    {
+      "id": "BP-072",
+      "category": "abandonment",
+      "reverse": false,
+      "urgent": false,
+      "text": "کسی کے مایوس کرنے پر، مجھے شدید خوف ہوا کہ کوئی اہم شخص مجھے چھوڑ دے گا۔"
+    },
+    {
+      "id": "BP-073",
+      "category": "abandonment",
+      "reverse": true,
+      "urgent": false,
+      "text": "جذبات تیزی سے بدلنے پر، چھوڑے جانے کے خوف پر ردعمل سے پہلے میں نے وضاحت مانگی۔"
+    },
+    {
+      "id": "BP-074",
+      "category": "abandonment",
+      "reverse": false,
+      "urgent": false,
+      "text": "پرسکون ہونے کی کوشش میں، دیر سے جواب ملنا رد یا ترک کیے جانے کا ثبوت محسوس ہوا۔"
+    },
+    {
+      "id": "BP-075",
+      "category": "abandonment",
+      "reverse": true,
+      "urgent": false,
+      "text": "اس وقت بھی جب دوسرے میری تکلیف نہیں دیکھ سکتے تھے، میں عارضی دوری کو چھوڑ دیے جانے کا ثبوت سمجھے بغیر برداشت کر سکا/سکی۔"
+    },
+    {
+      "id": "BP-076",
+      "category": "relationships",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ چند ماہ میں، اختلاف کے دوران بھی میں کسی شخص کے بارے میں متوازن رائے رکھ سکا/سکی۔"
+    },
+    {
+      "id": "BP-077",
+      "category": "relationships",
+      "reverse": false,
+      "urgent": false,
+      "text": "مختلف حالات میں، کسی کے بارے میں میری رائے تیزی سے بہترین سے بدترین ہو گئی۔"
+    },
+    {
+      "id": "BP-078",
+      "category": "relationships",
+      "reverse": true,
+      "urgent": false,
+      "text": "قریبی تعلقات کے دوران، قریبی لوگوں کے بارے میں میرے احساسات مناسب حد تک مستحکم رہے۔"
+    },
+    {
+      "id": "BP-079",
+      "category": "relationships",
+      "reverse": false,
+      "urgent": false,
+      "text": "اختلاف کے بعد، قریبی تعلقات شدید قربت اور تکلیف دہ اختلاف کے درمیان جھولتے رہے۔"
+    },
+    {
+      "id": "BP-080",
+      "category": "relationships",
+      "reverse": true,
+      "urgent": false,
+      "text": "رد کیے جانے کے خوف میں، اختلاف کے دوران بھی میں کسی شخص کے بارے میں متوازن رائے رکھ سکا/سکی۔"
+    },
+    {
+      "id": "BP-081",
+      "category": "relationships",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب کسی کو کچھ فاصلہ درکار تھا، کسی کے بارے میں میری رائے تیزی سے بہترین سے بدترین ہو گئی۔"
+    },
+    {
+      "id": "BP-082",
+      "category": "relationships",
+      "reverse": true,
+      "urgent": false,
+      "text": "جذباتی دباؤ کے دوران، قریبی لوگوں کے بارے میں میرے احساسات مناسب حد تک مستحکم رہے۔"
+    },
+    {
+      "id": "BP-083",
+      "category": "relationships",
+      "reverse": false,
+      "urgent": false,
+      "text": "منصوبے اچانک بدلنے پر، قریبی تعلقات شدید قربت اور تکلیف دہ اختلاف کے درمیان جھولتے رہے۔"
+    },
+    {
+      "id": "BP-084",
+      "category": "relationships",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنقید ملنے کے بعد، اختلاف کے دوران بھی میں کسی شخص کے بارے میں متوازن رائے رکھ سکا/سکی۔"
+    },
+    {
+      "id": "BP-085",
+      "category": "relationships",
+      "reverse": false,
+      "urgent": false,
+      "text": "غلط سمجھے جانے پر، کسی کے بارے میں میری رائے تیزی سے بہترین سے بدترین ہو گئی۔"
+    },
+    {
+      "id": "BP-086",
+      "category": "relationships",
+      "reverse": true,
+      "urgent": false,
+      "text": "اہم انتخاب کرتے ہوئے، قریبی لوگوں کے بارے میں میرے احساسات مناسب حد تک مستحکم رہے۔"
+    },
+    {
+      "id": "BP-087",
+      "category": "relationships",
+      "reverse": false,
+      "urgent": false,
+      "text": "شدید قربت کے لمحات میں، قریبی تعلقات شدید قربت اور تکلیف دہ اختلاف کے درمیان جھولتے رہے۔"
+    },
+    {
+      "id": "BP-088",
+      "category": "relationships",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنہائی میں، اختلاف کے دوران بھی میں کسی شخص کے بارے میں متوازن رائے رکھ سکا/سکی۔"
+    },
+    {
+      "id": "BP-089",
+      "category": "relationships",
+      "reverse": false,
+      "urgent": false,
+      "text": "غصہ بڑھنے پر، کسی کے بارے میں میری رائے تیزی سے بہترین سے بدترین ہو گئی۔"
+    },
+    {
+      "id": "BP-090",
+      "category": "relationships",
+      "reverse": true,
+      "urgent": false,
+      "text": "شدید خواہش محسوس ہونے پر، قریبی لوگوں کے بارے میں میرے احساسات مناسب حد تک مستحکم رہے۔"
+    },
+    {
+      "id": "BP-091",
+      "category": "relationships",
+      "reverse": false,
+      "urgent": false,
+      "text": "غلطی کرنے کے بعد، قریبی تعلقات شدید قربت اور تکلیف دہ اختلاف کے درمیان جھولتے رہے۔"
+    },
+    {
+      "id": "BP-092",
+      "category": "relationships",
+      "reverse": true,
+      "urgent": false,
+      "text": "اعتماد غیر یقینی ہونے پر، اختلاف کے دوران بھی میں کسی شخص کے بارے میں متوازن رائے رکھ سکا/سکی۔"
+    },
+    {
+      "id": "BP-093",
+      "category": "relationships",
+      "reverse": false,
+      "urgent": false,
+      "text": "عام ذمہ داریوں کے دوران، کسی کے بارے میں میری رائے تیزی سے بہترین سے بدترین ہو گئی۔"
+    },
+    {
+      "id": "BP-094",
+      "category": "relationships",
+      "reverse": true,
+      "urgent": false,
+      "text": "تسلی کی ضرورت کے وقت، قریبی لوگوں کے بارے میں میرے احساسات مناسب حد تک مستحکم رہے۔"
+    },
+    {
+      "id": "BP-095",
+      "category": "relationships",
+      "reverse": false,
+      "urgent": false,
+      "text": "خود کو خارج محسوس کرنے کے بعد، قریبی تعلقات شدید قربت اور تکلیف دہ اختلاف کے درمیان جھولتے رہے۔"
+    },
+    {
+      "id": "BP-096",
+      "category": "relationships",
+      "reverse": true,
+      "urgent": false,
+      "text": "اپنی شناخت کے بارے میں سوچتے ہوئے، اختلاف کے دوران بھی میں کسی شخص کے بارے میں متوازن رائے رکھ سکا/سکی۔"
+    },
+    {
+      "id": "BP-097",
+      "category": "relationships",
+      "reverse": false,
+      "urgent": false,
+      "text": "کسی کے مایوس کرنے پر، کسی کے بارے میں میری رائے تیزی سے بہترین سے بدترین ہو گئی۔"
+    },
+    {
+      "id": "BP-098",
+      "category": "relationships",
+      "reverse": true,
+      "urgent": false,
+      "text": "جذبات تیزی سے بدلنے پر، قریبی لوگوں کے بارے میں میرے احساسات مناسب حد تک مستحکم رہے۔"
+    },
+    {
+      "id": "BP-099",
+      "category": "relationships",
+      "reverse": false,
+      "urgent": false,
+      "text": "پرسکون ہونے کی کوشش میں، قریبی تعلقات شدید قربت اور تکلیف دہ اختلاف کے درمیان جھولتے رہے۔"
+    },
+    {
+      "id": "BP-100",
+      "category": "relationships",
+      "reverse": true,
+      "urgent": false,
+      "text": "اس وقت بھی جب دوسرے میری تکلیف نہیں دیکھ سکتے تھے، اختلاف کے دوران بھی میں کسی شخص کے بارے میں متوازن رائے رکھ سکا/سکی۔"
+    },
+    {
+      "id": "BP-101",
+      "category": "identity",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ چند ماہ میں، مجھے مناسب حد تک مستقل احساس رہا کہ میں کون ہوں۔"
+    },
+    {
+      "id": "BP-102",
+      "category": "identity",
+      "reverse": false,
+      "urgent": false,
+      "text": "مختلف حالات میں، مجھے اپنی شناخت یا اہم چیزوں کے بارے میں غیر یقینی محسوس ہوا۔"
+    },
+    {
+      "id": "BP-103",
+      "category": "identity",
+      "reverse": true,
+      "urgent": false,
+      "text": "قریبی تعلقات کے دوران، مختلف حالات میں میری اقدار پہچانی جا سکتی تھیں۔"
+    },
+    {
+      "id": "BP-104",
+      "category": "identity",
+      "reverse": false,
+      "urgent": false,
+      "text": "اختلاف کے بعد، حالات کے مطابق میرے اہداف، اقدار یا شناخت تیزی سے بدل گئے۔"
+    },
+    {
+      "id": "BP-105",
+      "category": "identity",
+      "reverse": true,
+      "urgent": false,
+      "text": "رد کیے جانے کے خوف میں، مجھے مناسب حد تک مستقل احساس رہا کہ میں کون ہوں۔"
+    },
+    {
+      "id": "BP-106",
+      "category": "identity",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب کسی کو کچھ فاصلہ درکار تھا، مجھے اپنی شناخت یا اہم چیزوں کے بارے میں غیر یقینی محسوس ہوا۔"
+    },
+    {
+      "id": "BP-107",
+      "category": "identity",
+      "reverse": true,
+      "urgent": false,
+      "text": "جذباتی دباؤ کے دوران، مختلف حالات میں میری اقدار پہچانی جا سکتی تھیں۔"
+    },
+    {
+      "id": "BP-108",
+      "category": "identity",
+      "reverse": false,
+      "urgent": false,
+      "text": "منصوبے اچانک بدلنے پر، حالات کے مطابق میرے اہداف، اقدار یا شناخت تیزی سے بدل گئے۔"
+    },
+    {
+      "id": "BP-109",
+      "category": "identity",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنقید ملنے کے بعد، مجھے مناسب حد تک مستقل احساس رہا کہ میں کون ہوں۔"
+    },
+    {
+      "id": "BP-110",
+      "category": "identity",
+      "reverse": false,
+      "urgent": false,
+      "text": "غلط سمجھے جانے پر، مجھے اپنی شناخت یا اہم چیزوں کے بارے میں غیر یقینی محسوس ہوا۔"
+    },
+    {
+      "id": "BP-111",
+      "category": "identity",
+      "reverse": true,
+      "urgent": false,
+      "text": "اہم انتخاب کرتے ہوئے، مختلف حالات میں میری اقدار پہچانی جا سکتی تھیں۔"
+    },
+    {
+      "id": "BP-112",
+      "category": "identity",
+      "reverse": false,
+      "urgent": false,
+      "text": "شدید قربت کے لمحات میں، حالات کے مطابق میرے اہداف، اقدار یا شناخت تیزی سے بدل گئے۔"
+    },
+    {
+      "id": "BP-113",
+      "category": "identity",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنہائی میں، مجھے مناسب حد تک مستقل احساس رہا کہ میں کون ہوں۔"
+    },
+    {
+      "id": "BP-114",
+      "category": "identity",
+      "reverse": false,
+      "urgent": false,
+      "text": "غصہ بڑھنے پر، مجھے اپنی شناخت یا اہم چیزوں کے بارے میں غیر یقینی محسوس ہوا۔"
+    },
+    {
+      "id": "BP-115",
+      "category": "identity",
+      "reverse": true,
+      "urgent": false,
+      "text": "شدید خواہش محسوس ہونے پر، مختلف حالات میں میری اقدار پہچانی جا سکتی تھیں۔"
+    },
+    {
+      "id": "BP-116",
+      "category": "identity",
+      "reverse": false,
+      "urgent": false,
+      "text": "غلطی کرنے کے بعد، حالات کے مطابق میرے اہداف، اقدار یا شناخت تیزی سے بدل گئے۔"
+    },
+    {
+      "id": "BP-117",
+      "category": "identity",
+      "reverse": true,
+      "urgent": false,
+      "text": "اعتماد غیر یقینی ہونے پر، مجھے مناسب حد تک مستقل احساس رہا کہ میں کون ہوں۔"
+    },
+    {
+      "id": "BP-118",
+      "category": "identity",
+      "reverse": false,
+      "urgent": false,
+      "text": "عام ذمہ داریوں کے دوران، مجھے اپنی شناخت یا اہم چیزوں کے بارے میں غیر یقینی محسوس ہوا۔"
+    },
+    {
+      "id": "BP-119",
+      "category": "identity",
+      "reverse": true,
+      "urgent": false,
+      "text": "تسلی کی ضرورت کے وقت، مختلف حالات میں میری اقدار پہچانی جا سکتی تھیں۔"
+    },
+    {
+      "id": "BP-120",
+      "category": "identity",
+      "reverse": false,
+      "urgent": false,
+      "text": "خود کو خارج محسوس کرنے کے بعد، حالات کے مطابق میرے اہداف، اقدار یا شناخت تیزی سے بدل گئے۔"
+    },
+    {
+      "id": "BP-121",
+      "category": "identity",
+      "reverse": true,
+      "urgent": false,
+      "text": "اپنی شناخت کے بارے میں سوچتے ہوئے، مجھے مناسب حد تک مستقل احساس رہا کہ میں کون ہوں۔"
+    },
+    {
+      "id": "BP-122",
+      "category": "identity",
+      "reverse": false,
+      "urgent": false,
+      "text": "کسی کے مایوس کرنے پر، مجھے اپنی شناخت یا اہم چیزوں کے بارے میں غیر یقینی محسوس ہوا۔"
+    },
+    {
+      "id": "BP-123",
+      "category": "identity",
+      "reverse": true,
+      "urgent": false,
+      "text": "جذبات تیزی سے بدلنے پر، مختلف حالات میں میری اقدار پہچانی جا سکتی تھیں۔"
+    },
+    {
+      "id": "BP-124",
+      "category": "identity",
+      "reverse": false,
+      "urgent": false,
+      "text": "پرسکون ہونے کی کوشش میں، حالات کے مطابق میرے اہداف، اقدار یا شناخت تیزی سے بدل گئے۔"
+    },
+    {
+      "id": "BP-125",
+      "category": "identity",
+      "reverse": true,
+      "urgent": false,
+      "text": "اس وقت بھی جب دوسرے میری تکلیف نہیں دیکھ سکتے تھے، مجھے مناسب حد تک مستقل احساس رہا کہ میں کون ہوں۔"
+    },
+    {
+      "id": "BP-126",
+      "category": "self_image",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ چند ماہ میں، غلطیوں کے بعد بھی اپنے بارے میں میری رائے متوازن رہی۔"
+    },
+    {
+      "id": "BP-127",
+      "category": "self_image",
+      "reverse": false,
+      "urgent": false,
+      "text": "مختلف حالات میں، اپنے بارے میں میری رائے بہت اچھے اور مکمل برے کے درمیان تیزی سے بدلی۔"
+    },
+    {
+      "id": "BP-128",
+      "category": "self_image",
+      "reverse": true,
+      "urgent": false,
+      "text": "قریبی تعلقات کے دوران، میں اپنی خوبیاں اور حدود ایک ساتھ یاد رکھ سکا/سکی۔"
+    },
+    {
+      "id": "BP-129",
+      "category": "self_image",
+      "reverse": false,
+      "urgent": false,
+      "text": "اختلاف کے بعد، ایک غلطی نے میری پوری شناخت کو بے قدر محسوس کرایا۔"
+    },
+    {
+      "id": "BP-130",
+      "category": "self_image",
+      "reverse": true,
+      "urgent": false,
+      "text": "رد کیے جانے کے خوف میں، غلطیوں کے بعد بھی اپنے بارے میں میری رائے متوازن رہی۔"
+    },
+    {
+      "id": "BP-131",
+      "category": "self_image",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب کسی کو کچھ فاصلہ درکار تھا، اپنے بارے میں میری رائے بہت اچھے اور مکمل برے کے درمیان تیزی سے بدلی۔"
+    },
+    {
+      "id": "BP-132",
+      "category": "self_image",
+      "reverse": true,
+      "urgent": false,
+      "text": "جذباتی دباؤ کے دوران، میں اپنی خوبیاں اور حدود ایک ساتھ یاد رکھ سکا/سکی۔"
+    },
+    {
+      "id": "BP-133",
+      "category": "self_image",
+      "reverse": false,
+      "urgent": false,
+      "text": "منصوبے اچانک بدلنے پر، ایک غلطی نے میری پوری شناخت کو بے قدر محسوس کرایا۔"
+    },
+    {
+      "id": "BP-134",
+      "category": "self_image",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنقید ملنے کے بعد، غلطیوں کے بعد بھی اپنے بارے میں میری رائے متوازن رہی۔"
+    },
+    {
+      "id": "BP-135",
+      "category": "self_image",
+      "reverse": false,
+      "urgent": false,
+      "text": "غلط سمجھے جانے پر، اپنے بارے میں میری رائے بہت اچھے اور مکمل برے کے درمیان تیزی سے بدلی۔"
+    },
+    {
+      "id": "BP-136",
+      "category": "self_image",
+      "reverse": true,
+      "urgent": false,
+      "text": "اہم انتخاب کرتے ہوئے، میں اپنی خوبیاں اور حدود ایک ساتھ یاد رکھ سکا/سکی۔"
+    },
+    {
+      "id": "BP-137",
+      "category": "self_image",
+      "reverse": false,
+      "urgent": false,
+      "text": "شدید قربت کے لمحات میں، ایک غلطی نے میری پوری شناخت کو بے قدر محسوس کرایا۔"
+    },
+    {
+      "id": "BP-138",
+      "category": "self_image",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنہائی میں، غلطیوں کے بعد بھی اپنے بارے میں میری رائے متوازن رہی۔"
+    },
+    {
+      "id": "BP-139",
+      "category": "self_image",
+      "reverse": false,
+      "urgent": false,
+      "text": "غصہ بڑھنے پر، اپنے بارے میں میری رائے بہت اچھے اور مکمل برے کے درمیان تیزی سے بدلی۔"
+    },
+    {
+      "id": "BP-140",
+      "category": "self_image",
+      "reverse": true,
+      "urgent": false,
+      "text": "شدید خواہش محسوس ہونے پر، میں اپنی خوبیاں اور حدود ایک ساتھ یاد رکھ سکا/سکی۔"
+    },
+    {
+      "id": "BP-141",
+      "category": "self_image",
+      "reverse": false,
+      "urgent": false,
+      "text": "غلطی کرنے کے بعد، ایک غلطی نے میری پوری شناخت کو بے قدر محسوس کرایا۔"
+    },
+    {
+      "id": "BP-142",
+      "category": "self_image",
+      "reverse": true,
+      "urgent": false,
+      "text": "اعتماد غیر یقینی ہونے پر، غلطیوں کے بعد بھی اپنے بارے میں میری رائے متوازن رہی۔"
+    },
+    {
+      "id": "BP-143",
+      "category": "self_image",
+      "reverse": false,
+      "urgent": false,
+      "text": "عام ذمہ داریوں کے دوران، اپنے بارے میں میری رائے بہت اچھے اور مکمل برے کے درمیان تیزی سے بدلی۔"
+    },
+    {
+      "id": "BP-144",
+      "category": "self_image",
+      "reverse": true,
+      "urgent": false,
+      "text": "تسلی کی ضرورت کے وقت، میں اپنی خوبیاں اور حدود ایک ساتھ یاد رکھ سکا/سکی۔"
+    },
+    {
+      "id": "BP-145",
+      "category": "self_image",
+      "reverse": false,
+      "urgent": false,
+      "text": "خود کو خارج محسوس کرنے کے بعد، ایک غلطی نے میری پوری شناخت کو بے قدر محسوس کرایا۔"
+    },
+    {
+      "id": "BP-146",
+      "category": "self_image",
+      "reverse": true,
+      "urgent": false,
+      "text": "اپنی شناخت کے بارے میں سوچتے ہوئے، غلطیوں کے بعد بھی اپنے بارے میں میری رائے متوازن رہی۔"
+    },
+    {
+      "id": "BP-147",
+      "category": "self_image",
+      "reverse": false,
+      "urgent": false,
+      "text": "کسی کے مایوس کرنے پر، اپنے بارے میں میری رائے بہت اچھے اور مکمل برے کے درمیان تیزی سے بدلی۔"
+    },
+    {
+      "id": "BP-148",
+      "category": "self_image",
+      "reverse": true,
+      "urgent": false,
+      "text": "جذبات تیزی سے بدلنے پر، میں اپنی خوبیاں اور حدود ایک ساتھ یاد رکھ سکا/سکی۔"
+    },
+    {
+      "id": "BP-149",
+      "category": "self_image",
+      "reverse": false,
+      "urgent": false,
+      "text": "پرسکون ہونے کی کوشش میں، ایک غلطی نے میری پوری شناخت کو بے قدر محسوس کرایا۔"
+    },
+    {
+      "id": "BP-150",
+      "category": "self_image",
+      "reverse": true,
+      "urgent": false,
+      "text": "اس وقت بھی جب دوسرے میری تکلیف نہیں دیکھ سکتے تھے، غلطیوں کے بعد بھی اپنے بارے میں میری رائے متوازن رہی۔"
+    },
+    {
+      "id": "BP-151",
+      "category": "impulsivity",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ چند ماہ میں، اہم عمل سے پہلے میں نے نتائج پر غور کیا۔"
+    },
+    {
+      "id": "BP-152",
+      "category": "impulsivity",
+      "reverse": false,
+      "urgent": false,
+      "text": "مختلف حالات میں، میں نے ممکنہ نتائج سوچے بغیر شدید خواہش پر عمل کیا۔"
+    },
+    {
+      "id": "BP-153",
+      "category": "impulsivity",
+      "reverse": true,
+      "urgent": false,
+      "text": "قریبی تعلقات کے دوران، میں زیادہ محفوظ انتخاب کے لیے خواہش کو کافی دیر مؤخر کر سکا/سکی۔"
+    },
+    {
+      "id": "BP-154",
+      "category": "impulsivity",
+      "reverse": false,
+      "urgent": false,
+      "text": "اختلاف کے بعد، جذباتی تکلیف نے مجھے خطرناک یا نقصان دہ انتخاب کی طرف دھکیلا۔"
+    },
+    {
+      "id": "BP-155",
+      "category": "impulsivity",
+      "reverse": true,
+      "urgent": false,
+      "text": "رد کیے جانے کے خوف میں، اہم عمل سے پہلے میں نے نتائج پر غور کیا۔"
+    },
+    {
+      "id": "BP-156",
+      "category": "impulsivity",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب کسی کو کچھ فاصلہ درکار تھا، میں نے ممکنہ نتائج سوچے بغیر شدید خواہش پر عمل کیا۔"
+    },
+    {
+      "id": "BP-157",
+      "category": "impulsivity",
+      "reverse": true,
+      "urgent": false,
+      "text": "جذباتی دباؤ کے دوران، میں زیادہ محفوظ انتخاب کے لیے خواہش کو کافی دیر مؤخر کر سکا/سکی۔"
+    },
+    {
+      "id": "BP-158",
+      "category": "impulsivity",
+      "reverse": false,
+      "urgent": false,
+      "text": "منصوبے اچانک بدلنے پر، جذباتی تکلیف نے مجھے خطرناک یا نقصان دہ انتخاب کی طرف دھکیلا۔"
+    },
+    {
+      "id": "BP-159",
+      "category": "impulsivity",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنقید ملنے کے بعد، اہم عمل سے پہلے میں نے نتائج پر غور کیا۔"
+    },
+    {
+      "id": "BP-160",
+      "category": "impulsivity",
+      "reverse": false,
+      "urgent": false,
+      "text": "غلط سمجھے جانے پر، میں نے ممکنہ نتائج سوچے بغیر شدید خواہش پر عمل کیا۔"
+    },
+    {
+      "id": "BP-161",
+      "category": "impulsivity",
+      "reverse": true,
+      "urgent": false,
+      "text": "اہم انتخاب کرتے ہوئے، میں زیادہ محفوظ انتخاب کے لیے خواہش کو کافی دیر مؤخر کر سکا/سکی۔"
+    },
+    {
+      "id": "BP-162",
+      "category": "impulsivity",
+      "reverse": false,
+      "urgent": false,
+      "text": "شدید قربت کے لمحات میں، جذباتی تکلیف نے مجھے خطرناک یا نقصان دہ انتخاب کی طرف دھکیلا۔"
+    },
+    {
+      "id": "BP-163",
+      "category": "impulsivity",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنہائی میں، اہم عمل سے پہلے میں نے نتائج پر غور کیا۔"
+    },
+    {
+      "id": "BP-164",
+      "category": "impulsivity",
+      "reverse": false,
+      "urgent": false,
+      "text": "غصہ بڑھنے پر، میں نے ممکنہ نتائج سوچے بغیر شدید خواہش پر عمل کیا۔"
+    },
+    {
+      "id": "BP-165",
+      "category": "impulsivity",
+      "reverse": true,
+      "urgent": false,
+      "text": "شدید خواہش محسوس ہونے پر، میں زیادہ محفوظ انتخاب کے لیے خواہش کو کافی دیر مؤخر کر سکا/سکی۔"
+    },
+    {
+      "id": "BP-166",
+      "category": "impulsivity",
+      "reverse": false,
+      "urgent": false,
+      "text": "غلطی کرنے کے بعد، جذباتی تکلیف نے مجھے خطرناک یا نقصان دہ انتخاب کی طرف دھکیلا۔"
+    },
+    {
+      "id": "BP-167",
+      "category": "impulsivity",
+      "reverse": true,
+      "urgent": false,
+      "text": "اعتماد غیر یقینی ہونے پر، اہم عمل سے پہلے میں نے نتائج پر غور کیا۔"
+    },
+    {
+      "id": "BP-168",
+      "category": "impulsivity",
+      "reverse": false,
+      "urgent": false,
+      "text": "عام ذمہ داریوں کے دوران، میں نے ممکنہ نتائج سوچے بغیر شدید خواہش پر عمل کیا۔"
+    },
+    {
+      "id": "BP-169",
+      "category": "impulsivity",
+      "reverse": true,
+      "urgent": false,
+      "text": "تسلی کی ضرورت کے وقت، میں زیادہ محفوظ انتخاب کے لیے خواہش کو کافی دیر مؤخر کر سکا/سکی۔"
+    },
+    {
+      "id": "BP-170",
+      "category": "impulsivity",
+      "reverse": false,
+      "urgent": false,
+      "text": "خود کو خارج محسوس کرنے کے بعد، جذباتی تکلیف نے مجھے خطرناک یا نقصان دہ انتخاب کی طرف دھکیلا۔"
+    },
+    {
+      "id": "BP-171",
+      "category": "impulsivity",
+      "reverse": true,
+      "urgent": false,
+      "text": "اپنی شناخت کے بارے میں سوچتے ہوئے، اہم عمل سے پہلے میں نے نتائج پر غور کیا۔"
+    },
+    {
+      "id": "BP-172",
+      "category": "impulsivity",
+      "reverse": false,
+      "urgent": false,
+      "text": "کسی کے مایوس کرنے پر، میں نے ممکنہ نتائج سوچے بغیر شدید خواہش پر عمل کیا۔"
+    },
+    {
+      "id": "BP-173",
+      "category": "impulsivity",
+      "reverse": true,
+      "urgent": false,
+      "text": "جذبات تیزی سے بدلنے پر، میں زیادہ محفوظ انتخاب کے لیے خواہش کو کافی دیر مؤخر کر سکا/سکی۔"
+    },
+    {
+      "id": "BP-174",
+      "category": "impulsivity",
+      "reverse": false,
+      "urgent": false,
+      "text": "پرسکون ہونے کی کوشش میں، جذباتی تکلیف نے مجھے خطرناک یا نقصان دہ انتخاب کی طرف دھکیلا۔"
+    },
+    {
+      "id": "BP-175",
+      "category": "impulsivity",
+      "reverse": true,
+      "urgent": false,
+      "text": "اس وقت بھی جب دوسرے میری تکلیف نہیں دیکھ سکتے تھے، اہم عمل سے پہلے میں نے نتائج پر غور کیا۔"
+    },
+    {
+      "id": "BP-176",
+      "category": "anger",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ چند ماہ میں، میں نے کسی کو دھمکائے یا ذلیل کیے بغیر غصہ بیان کیا۔"
+    },
+    {
+      "id": "BP-177",
+      "category": "anger",
+      "reverse": false,
+      "urgent": false,
+      "text": "مختلف حالات میں، میرا غصہ شدید اور قابو سے باہر ہو گیا۔"
+    },
+    {
+      "id": "BP-178",
+      "category": "anger",
+      "reverse": true,
+      "urgent": false,
+      "text": "قریبی تعلقات کے دوران، غصہ تباہ کن ہونے سے پہلے میں دور ہو سکا/سکی۔"
+    },
+    {
+      "id": "BP-179",
+      "category": "anger",
+      "reverse": false,
+      "urgent": false,
+      "text": "اختلاف کے بعد، غصے میں میں نے تکلیف دہ بات یا عمل کیا جس پر بعد میں افسوس ہوا۔"
+    },
+    {
+      "id": "BP-180",
+      "category": "anger",
+      "reverse": true,
+      "urgent": false,
+      "text": "رد کیے جانے کے خوف میں، میں نے کسی کو دھمکائے یا ذلیل کیے بغیر غصہ بیان کیا۔"
+    },
+    {
+      "id": "BP-181",
+      "category": "anger",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب کسی کو کچھ فاصلہ درکار تھا، میرا غصہ شدید اور قابو سے باہر ہو گیا۔"
+    },
+    {
+      "id": "BP-182",
+      "category": "anger",
+      "reverse": true,
+      "urgent": false,
+      "text": "جذباتی دباؤ کے دوران، غصہ تباہ کن ہونے سے پہلے میں دور ہو سکا/سکی۔"
+    },
+    {
+      "id": "BP-183",
+      "category": "anger",
+      "reverse": false,
+      "urgent": false,
+      "text": "منصوبے اچانک بدلنے پر، غصے میں میں نے تکلیف دہ بات یا عمل کیا جس پر بعد میں افسوس ہوا۔"
+    },
+    {
+      "id": "BP-184",
+      "category": "anger",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنقید ملنے کے بعد، میں نے کسی کو دھمکائے یا ذلیل کیے بغیر غصہ بیان کیا۔"
+    },
+    {
+      "id": "BP-185",
+      "category": "anger",
+      "reverse": false,
+      "urgent": false,
+      "text": "غلط سمجھے جانے پر، میرا غصہ شدید اور قابو سے باہر ہو گیا۔"
+    },
+    {
+      "id": "BP-186",
+      "category": "anger",
+      "reverse": true,
+      "urgent": false,
+      "text": "اہم انتخاب کرتے ہوئے، غصہ تباہ کن ہونے سے پہلے میں دور ہو سکا/سکی۔"
+    },
+    {
+      "id": "BP-187",
+      "category": "anger",
+      "reverse": false,
+      "urgent": false,
+      "text": "شدید قربت کے لمحات میں، غصے میں میں نے تکلیف دہ بات یا عمل کیا جس پر بعد میں افسوس ہوا۔"
+    },
+    {
+      "id": "BP-188",
+      "category": "anger",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنہائی میں، میں نے کسی کو دھمکائے یا ذلیل کیے بغیر غصہ بیان کیا۔"
+    },
+    {
+      "id": "BP-189",
+      "category": "anger",
+      "reverse": false,
+      "urgent": false,
+      "text": "غصہ بڑھنے پر، میرا غصہ شدید اور قابو سے باہر ہو گیا۔"
+    },
+    {
+      "id": "BP-190",
+      "category": "anger",
+      "reverse": true,
+      "urgent": false,
+      "text": "شدید خواہش محسوس ہونے پر، غصہ تباہ کن ہونے سے پہلے میں دور ہو سکا/سکی۔"
+    },
+    {
+      "id": "BP-191",
+      "category": "anger",
+      "reverse": false,
+      "urgent": false,
+      "text": "غلطی کرنے کے بعد، غصے میں میں نے تکلیف دہ بات یا عمل کیا جس پر بعد میں افسوس ہوا۔"
+    },
+    {
+      "id": "BP-192",
+      "category": "anger",
+      "reverse": true,
+      "urgent": false,
+      "text": "اعتماد غیر یقینی ہونے پر، میں نے کسی کو دھمکائے یا ذلیل کیے بغیر غصہ بیان کیا۔"
+    },
+    {
+      "id": "BP-193",
+      "category": "anger",
+      "reverse": false,
+      "urgent": false,
+      "text": "عام ذمہ داریوں کے دوران، میرا غصہ شدید اور قابو سے باہر ہو گیا۔"
+    },
+    {
+      "id": "BP-194",
+      "category": "anger",
+      "reverse": true,
+      "urgent": false,
+      "text": "تسلی کی ضرورت کے وقت، غصہ تباہ کن ہونے سے پہلے میں دور ہو سکا/سکی۔"
+    },
+    {
+      "id": "BP-195",
+      "category": "anger",
+      "reverse": false,
+      "urgent": false,
+      "text": "خود کو خارج محسوس کرنے کے بعد، غصے میں میں نے تکلیف دہ بات یا عمل کیا جس پر بعد میں افسوس ہوا۔"
+    },
+    {
+      "id": "BP-196",
+      "category": "anger",
+      "reverse": true,
+      "urgent": false,
+      "text": "اپنی شناخت کے بارے میں سوچتے ہوئے، میں نے کسی کو دھمکائے یا ذلیل کیے بغیر غصہ بیان کیا۔"
+    },
+    {
+      "id": "BP-197",
+      "category": "anger",
+      "reverse": false,
+      "urgent": false,
+      "text": "کسی کے مایوس کرنے پر، میرا غصہ شدید اور قابو سے باہر ہو گیا۔"
+    },
+    {
+      "id": "BP-198",
+      "category": "anger",
+      "reverse": true,
+      "urgent": false,
+      "text": "جذبات تیزی سے بدلنے پر، غصہ تباہ کن ہونے سے پہلے میں دور ہو سکا/سکی۔"
+    },
+    {
+      "id": "BP-199",
+      "category": "anger",
+      "reverse": false,
+      "urgent": false,
+      "text": "پرسکون ہونے کی کوشش میں، غصے میں میں نے تکلیف دہ بات یا عمل کیا جس پر بعد میں افسوس ہوا۔"
+    },
+    {
+      "id": "BP-200",
+      "category": "anger",
+      "reverse": true,
+      "urgent": false,
+      "text": "اس وقت بھی جب دوسرے میری تکلیف نہیں دیکھ سکتے تھے، میں نے کسی کو دھمکائے یا ذلیل کیے بغیر غصہ بیان کیا۔"
+    },
+    {
+      "id": "BP-201",
+      "category": "emptiness",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ چند ماہ میں، میں نے زندگی کے کم از کم ایک بامعنی حصے سے تعلق محسوس کیا۔"
+    },
+    {
+      "id": "BP-202",
+      "category": "emptiness",
+      "reverse": false,
+      "urgent": false,
+      "text": "مختلف حالات میں، میں نے مسلسل اندرونی خالی پن محسوس کیا۔"
+    },
+    {
+      "id": "BP-203",
+      "category": "emptiness",
+      "reverse": true,
+      "urgent": false,
+      "text": "قریبی تعلقات کے دوران، خالی پن کے لمحات میرے پورے تجربے کی تعریف کیے بغیر گزر گئے۔"
+    },
+    {
+      "id": "BP-204",
+      "category": "emptiness",
+      "reverse": false,
+      "urgent": false,
+      "text": "اختلاف کے بعد، سرگرمیوں یا لوگوں کی موجودگی میں بھی زندگی کھوکھلی محسوس ہوئی۔"
+    },
+    {
+      "id": "BP-205",
+      "category": "emptiness",
+      "reverse": true,
+      "urgent": false,
+      "text": "رد کیے جانے کے خوف میں، میں نے زندگی کے کم از کم ایک بامعنی حصے سے تعلق محسوس کیا۔"
+    },
+    {
+      "id": "BP-206",
+      "category": "emptiness",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب کسی کو کچھ فاصلہ درکار تھا، میں نے مسلسل اندرونی خالی پن محسوس کیا۔"
+    },
+    {
+      "id": "BP-207",
+      "category": "emptiness",
+      "reverse": true,
+      "urgent": false,
+      "text": "جذباتی دباؤ کے دوران، خالی پن کے لمحات میرے پورے تجربے کی تعریف کیے بغیر گزر گئے۔"
+    },
+    {
+      "id": "BP-208",
+      "category": "emptiness",
+      "reverse": false,
+      "urgent": false,
+      "text": "منصوبے اچانک بدلنے پر، سرگرمیوں یا لوگوں کی موجودگی میں بھی زندگی کھوکھلی محسوس ہوئی۔"
+    },
+    {
+      "id": "BP-209",
+      "category": "emptiness",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنقید ملنے کے بعد، میں نے زندگی کے کم از کم ایک بامعنی حصے سے تعلق محسوس کیا۔"
+    },
+    {
+      "id": "BP-210",
+      "category": "emptiness",
+      "reverse": false,
+      "urgent": false,
+      "text": "غلط سمجھے جانے پر، میں نے مسلسل اندرونی خالی پن محسوس کیا۔"
+    },
+    {
+      "id": "BP-211",
+      "category": "emptiness",
+      "reverse": true,
+      "urgent": false,
+      "text": "اہم انتخاب کرتے ہوئے، خالی پن کے لمحات میرے پورے تجربے کی تعریف کیے بغیر گزر گئے۔"
+    },
+    {
+      "id": "BP-212",
+      "category": "emptiness",
+      "reverse": false,
+      "urgent": false,
+      "text": "شدید قربت کے لمحات میں، سرگرمیوں یا لوگوں کی موجودگی میں بھی زندگی کھوکھلی محسوس ہوئی۔"
+    },
+    {
+      "id": "BP-213",
+      "category": "emptiness",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنہائی میں، میں نے زندگی کے کم از کم ایک بامعنی حصے سے تعلق محسوس کیا۔"
+    },
+    {
+      "id": "BP-214",
+      "category": "emptiness",
+      "reverse": false,
+      "urgent": false,
+      "text": "غصہ بڑھنے پر، میں نے مسلسل اندرونی خالی پن محسوس کیا۔"
+    },
+    {
+      "id": "BP-215",
+      "category": "emptiness",
+      "reverse": true,
+      "urgent": false,
+      "text": "شدید خواہش محسوس ہونے پر، خالی پن کے لمحات میرے پورے تجربے کی تعریف کیے بغیر گزر گئے۔"
+    },
+    {
+      "id": "BP-216",
+      "category": "emptiness",
+      "reverse": false,
+      "urgent": false,
+      "text": "غلطی کرنے کے بعد، سرگرمیوں یا لوگوں کی موجودگی میں بھی زندگی کھوکھلی محسوس ہوئی۔"
+    },
+    {
+      "id": "BP-217",
+      "category": "emptiness",
+      "reverse": true,
+      "urgent": false,
+      "text": "اعتماد غیر یقینی ہونے پر، میں نے زندگی کے کم از کم ایک بامعنی حصے سے تعلق محسوس کیا۔"
+    },
+    {
+      "id": "BP-218",
+      "category": "emptiness",
+      "reverse": false,
+      "urgent": false,
+      "text": "عام ذمہ داریوں کے دوران، میں نے مسلسل اندرونی خالی پن محسوس کیا۔"
+    },
+    {
+      "id": "BP-219",
+      "category": "emptiness",
+      "reverse": true,
+      "urgent": false,
+      "text": "تسلی کی ضرورت کے وقت، خالی پن کے لمحات میرے پورے تجربے کی تعریف کیے بغیر گزر گئے۔"
+    },
+    {
+      "id": "BP-220",
+      "category": "emptiness",
+      "reverse": false,
+      "urgent": false,
+      "text": "خود کو خارج محسوس کرنے کے بعد، سرگرمیوں یا لوگوں کی موجودگی میں بھی زندگی کھوکھلی محسوس ہوئی۔"
+    },
+    {
+      "id": "BP-221",
+      "category": "emptiness",
+      "reverse": true,
+      "urgent": false,
+      "text": "اپنی شناخت کے بارے میں سوچتے ہوئے، میں نے زندگی کے کم از کم ایک بامعنی حصے سے تعلق محسوس کیا۔"
+    },
+    {
+      "id": "BP-222",
+      "category": "emptiness",
+      "reverse": false,
+      "urgent": false,
+      "text": "کسی کے مایوس کرنے پر، میں نے مسلسل اندرونی خالی پن محسوس کیا۔"
+    },
+    {
+      "id": "BP-223",
+      "category": "emptiness",
+      "reverse": true,
+      "urgent": false,
+      "text": "جذبات تیزی سے بدلنے پر، خالی پن کے لمحات میرے پورے تجربے کی تعریف کیے بغیر گزر گئے۔"
+    },
+    {
+      "id": "BP-224",
+      "category": "emptiness",
+      "reverse": false,
+      "urgent": false,
+      "text": "پرسکون ہونے کی کوشش میں، سرگرمیوں یا لوگوں کی موجودگی میں بھی زندگی کھوکھلی محسوس ہوئی۔"
+    },
+    {
+      "id": "BP-225",
+      "category": "emptiness",
+      "reverse": true,
+      "urgent": false,
+      "text": "اس وقت بھی جب دوسرے میری تکلیف نہیں دیکھ سکتے تھے، میں نے زندگی کے کم از کم ایک بامعنی حصے سے تعلق محسوس کیا۔"
+    },
+    {
+      "id": "BP-226",
+      "category": "dissociation",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ چند ماہ میں، میں عموماً اپنے جسم اور ماحول میں موجود محسوس ہوا/ہوئی۔"
+    },
+    {
+      "id": "BP-227",
+      "category": "dissociation",
+      "reverse": false,
+      "urgent": false,
+      "text": "مختلف حالات میں، میں نے خود، اپنے جسم یا ماحول سے لاتعلقی محسوس کی۔"
+    },
+    {
+      "id": "BP-228",
+      "category": "dissociation",
+      "reverse": true,
+      "urgent": false,
+      "text": "قریبی تعلقات کے دوران، غیر حقیقی احساس پر میں خود کو حال سے دوبارہ جوڑ سکا/سکی۔"
+    },
+    {
+      "id": "BP-229",
+      "category": "dissociation",
+      "reverse": false,
+      "urgent": false,
+      "text": "اختلاف کے بعد، دنیا یا میرا اپنا تجربہ غیر حقیقی یا خواب جیسا محسوس ہوا۔"
+    },
+    {
+      "id": "BP-230",
+      "category": "dissociation",
+      "reverse": true,
+      "urgent": false,
+      "text": "رد کیے جانے کے خوف میں، میں عموماً اپنے جسم اور ماحول میں موجود محسوس ہوا/ہوئی۔"
+    },
+    {
+      "id": "BP-231",
+      "category": "dissociation",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب کسی کو کچھ فاصلہ درکار تھا، میں نے خود، اپنے جسم یا ماحول سے لاتعلقی محسوس کی۔"
+    },
+    {
+      "id": "BP-232",
+      "category": "dissociation",
+      "reverse": true,
+      "urgent": false,
+      "text": "جذباتی دباؤ کے دوران، غیر حقیقی احساس پر میں خود کو حال سے دوبارہ جوڑ سکا/سکی۔"
+    },
+    {
+      "id": "BP-233",
+      "category": "dissociation",
+      "reverse": false,
+      "urgent": false,
+      "text": "منصوبے اچانک بدلنے پر، دنیا یا میرا اپنا تجربہ غیر حقیقی یا خواب جیسا محسوس ہوا۔"
+    },
+    {
+      "id": "BP-234",
+      "category": "dissociation",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنقید ملنے کے بعد، میں عموماً اپنے جسم اور ماحول میں موجود محسوس ہوا/ہوئی۔"
+    },
+    {
+      "id": "BP-235",
+      "category": "dissociation",
+      "reverse": false,
+      "urgent": false,
+      "text": "غلط سمجھے جانے پر، میں نے خود، اپنے جسم یا ماحول سے لاتعلقی محسوس کی۔"
+    },
+    {
+      "id": "BP-236",
+      "category": "dissociation",
+      "reverse": true,
+      "urgent": false,
+      "text": "اہم انتخاب کرتے ہوئے، غیر حقیقی احساس پر میں خود کو حال سے دوبارہ جوڑ سکا/سکی۔"
+    },
+    {
+      "id": "BP-237",
+      "category": "dissociation",
+      "reverse": false,
+      "urgent": false,
+      "text": "شدید قربت کے لمحات میں، دنیا یا میرا اپنا تجربہ غیر حقیقی یا خواب جیسا محسوس ہوا۔"
+    },
+    {
+      "id": "BP-238",
+      "category": "dissociation",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنہائی میں، میں عموماً اپنے جسم اور ماحول میں موجود محسوس ہوا/ہوئی۔"
+    },
+    {
+      "id": "BP-239",
+      "category": "dissociation",
+      "reverse": false,
+      "urgent": false,
+      "text": "غصہ بڑھنے پر، میں نے خود، اپنے جسم یا ماحول سے لاتعلقی محسوس کی۔"
+    },
+    {
+      "id": "BP-240",
+      "category": "dissociation",
+      "reverse": true,
+      "urgent": false,
+      "text": "شدید خواہش محسوس ہونے پر، غیر حقیقی احساس پر میں خود کو حال سے دوبارہ جوڑ سکا/سکی۔"
+    },
+    {
+      "id": "BP-241",
+      "category": "dissociation",
+      "reverse": false,
+      "urgent": false,
+      "text": "غلطی کرنے کے بعد، دنیا یا میرا اپنا تجربہ غیر حقیقی یا خواب جیسا محسوس ہوا۔"
+    },
+    {
+      "id": "BP-242",
+      "category": "dissociation",
+      "reverse": true,
+      "urgent": false,
+      "text": "اعتماد غیر یقینی ہونے پر، میں عموماً اپنے جسم اور ماحول میں موجود محسوس ہوا/ہوئی۔"
+    },
+    {
+      "id": "BP-243",
+      "category": "dissociation",
+      "reverse": false,
+      "urgent": false,
+      "text": "عام ذمہ داریوں کے دوران، میں نے خود، اپنے جسم یا ماحول سے لاتعلقی محسوس کی۔"
+    },
+    {
+      "id": "BP-244",
+      "category": "dissociation",
+      "reverse": true,
+      "urgent": false,
+      "text": "تسلی کی ضرورت کے وقت، غیر حقیقی احساس پر میں خود کو حال سے دوبارہ جوڑ سکا/سکی۔"
+    },
+    {
+      "id": "BP-245",
+      "category": "dissociation",
+      "reverse": false,
+      "urgent": false,
+      "text": "خود کو خارج محسوس کرنے کے بعد، دنیا یا میرا اپنا تجربہ غیر حقیقی یا خواب جیسا محسوس ہوا۔"
+    },
+    {
+      "id": "BP-246",
+      "category": "dissociation",
+      "reverse": true,
+      "urgent": false,
+      "text": "اپنی شناخت کے بارے میں سوچتے ہوئے، میں عموماً اپنے جسم اور ماحول میں موجود محسوس ہوا/ہوئی۔"
+    },
+    {
+      "id": "BP-247",
+      "category": "dissociation",
+      "reverse": false,
+      "urgent": false,
+      "text": "کسی کے مایوس کرنے پر، میں نے خود، اپنے جسم یا ماحول سے لاتعلقی محسوس کی۔"
+    },
+    {
+      "id": "BP-248",
+      "category": "dissociation",
+      "reverse": true,
+      "urgent": false,
+      "text": "جذبات تیزی سے بدلنے پر، غیر حقیقی احساس پر میں خود کو حال سے دوبارہ جوڑ سکا/سکی۔"
+    },
+    {
+      "id": "BP-249",
+      "category": "dissociation",
+      "reverse": false,
+      "urgent": false,
+      "text": "پرسکون ہونے کی کوشش میں، دنیا یا میرا اپنا تجربہ غیر حقیقی یا خواب جیسا محسوس ہوا۔"
+    },
+    {
+      "id": "BP-250",
+      "category": "dissociation",
+      "reverse": true,
+      "urgent": false,
+      "text": "اس وقت بھی جب دوسرے میری تکلیف نہیں دیکھ سکتے تھے، میں عموماً اپنے جسم اور ماحول میں موجود محسوس ہوا/ہوئی۔"
+    },
+    {
+      "id": "BP-251",
+      "category": "stress_mistrust",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ چند ماہ میں، میں نے کسی کے نقصان پہنچانے کا گمان کرنے سے پہلے ثبوت دیکھا۔"
+    },
+    {
+      "id": "BP-252",
+      "category": "stress_mistrust",
+      "reverse": false,
+      "urgent": false,
+      "text": "مختلف حالات میں، دباؤ میں میں دوسروں سے غیر معمولی طور پر مشکوک ہو گیا/گئی۔"
+    },
+    {
+      "id": "BP-253",
+      "category": "stress_mistrust",
+      "reverse": true,
+      "urgent": false,
+      "text": "قریبی تعلقات کے دوران، دباؤ میں بھی میں واقعات کی ایک سے زیادہ وضاحت پر غور کر سکا/سکی۔"
+    },
+    {
+      "id": "BP-254",
+      "category": "stress_mistrust",
+      "reverse": false,
+      "urgent": false,
+      "text": "اختلاف کے بعد، کم ثبوت کے باوجود مجھے یقین ہوا کہ دوسرے نقصان چاہتے ہیں۔"
+    },
+    {
+      "id": "BP-255",
+      "category": "stress_mistrust",
+      "reverse": true,
+      "urgent": false,
+      "text": "رد کیے جانے کے خوف میں، میں نے کسی کے نقصان پہنچانے کا گمان کرنے سے پہلے ثبوت دیکھا۔"
+    },
+    {
+      "id": "BP-256",
+      "category": "stress_mistrust",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب کسی کو کچھ فاصلہ درکار تھا، دباؤ میں میں دوسروں سے غیر معمولی طور پر مشکوک ہو گیا/گئی۔"
+    },
+    {
+      "id": "BP-257",
+      "category": "stress_mistrust",
+      "reverse": true,
+      "urgent": false,
+      "text": "جذباتی دباؤ کے دوران، دباؤ میں بھی میں واقعات کی ایک سے زیادہ وضاحت پر غور کر سکا/سکی۔"
+    },
+    {
+      "id": "BP-258",
+      "category": "stress_mistrust",
+      "reverse": false,
+      "urgent": false,
+      "text": "منصوبے اچانک بدلنے پر، کم ثبوت کے باوجود مجھے یقین ہوا کہ دوسرے نقصان چاہتے ہیں۔"
+    },
+    {
+      "id": "BP-259",
+      "category": "stress_mistrust",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنقید ملنے کے بعد، میں نے کسی کے نقصان پہنچانے کا گمان کرنے سے پہلے ثبوت دیکھا۔"
+    },
+    {
+      "id": "BP-260",
+      "category": "stress_mistrust",
+      "reverse": false,
+      "urgent": false,
+      "text": "غلط سمجھے جانے پر، دباؤ میں میں دوسروں سے غیر معمولی طور پر مشکوک ہو گیا/گئی۔"
+    },
+    {
+      "id": "BP-261",
+      "category": "stress_mistrust",
+      "reverse": true,
+      "urgent": false,
+      "text": "اہم انتخاب کرتے ہوئے، دباؤ میں بھی میں واقعات کی ایک سے زیادہ وضاحت پر غور کر سکا/سکی۔"
+    },
+    {
+      "id": "BP-262",
+      "category": "stress_mistrust",
+      "reverse": false,
+      "urgent": false,
+      "text": "شدید قربت کے لمحات میں، کم ثبوت کے باوجود مجھے یقین ہوا کہ دوسرے نقصان چاہتے ہیں۔"
+    },
+    {
+      "id": "BP-263",
+      "category": "stress_mistrust",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنہائی میں، میں نے کسی کے نقصان پہنچانے کا گمان کرنے سے پہلے ثبوت دیکھا۔"
+    },
+    {
+      "id": "BP-264",
+      "category": "stress_mistrust",
+      "reverse": false,
+      "urgent": false,
+      "text": "غصہ بڑھنے پر، دباؤ میں میں دوسروں سے غیر معمولی طور پر مشکوک ہو گیا/گئی۔"
+    },
+    {
+      "id": "BP-265",
+      "category": "stress_mistrust",
+      "reverse": true,
+      "urgent": false,
+      "text": "شدید خواہش محسوس ہونے پر، دباؤ میں بھی میں واقعات کی ایک سے زیادہ وضاحت پر غور کر سکا/سکی۔"
+    },
+    {
+      "id": "BP-266",
+      "category": "stress_mistrust",
+      "reverse": false,
+      "urgent": false,
+      "text": "غلطی کرنے کے بعد، کم ثبوت کے باوجود مجھے یقین ہوا کہ دوسرے نقصان چاہتے ہیں۔"
+    },
+    {
+      "id": "BP-267",
+      "category": "stress_mistrust",
+      "reverse": true,
+      "urgent": false,
+      "text": "اعتماد غیر یقینی ہونے پر، میں نے کسی کے نقصان پہنچانے کا گمان کرنے سے پہلے ثبوت دیکھا۔"
+    },
+    {
+      "id": "BP-268",
+      "category": "stress_mistrust",
+      "reverse": false,
+      "urgent": false,
+      "text": "عام ذمہ داریوں کے دوران، دباؤ میں میں دوسروں سے غیر معمولی طور پر مشکوک ہو گیا/گئی۔"
+    },
+    {
+      "id": "BP-269",
+      "category": "stress_mistrust",
+      "reverse": true,
+      "urgent": false,
+      "text": "تسلی کی ضرورت کے وقت، دباؤ میں بھی میں واقعات کی ایک سے زیادہ وضاحت پر غور کر سکا/سکی۔"
+    },
+    {
+      "id": "BP-270",
+      "category": "stress_mistrust",
+      "reverse": false,
+      "urgent": false,
+      "text": "خود کو خارج محسوس کرنے کے بعد، کم ثبوت کے باوجود مجھے یقین ہوا کہ دوسرے نقصان چاہتے ہیں۔"
+    },
+    {
+      "id": "BP-271",
+      "category": "stress_mistrust",
+      "reverse": true,
+      "urgent": false,
+      "text": "اپنی شناخت کے بارے میں سوچتے ہوئے، میں نے کسی کے نقصان پہنچانے کا گمان کرنے سے پہلے ثبوت دیکھا۔"
+    },
+    {
+      "id": "BP-272",
+      "category": "stress_mistrust",
+      "reverse": false,
+      "urgent": false,
+      "text": "کسی کے مایوس کرنے پر، دباؤ میں میں دوسروں سے غیر معمولی طور پر مشکوک ہو گیا/گئی۔"
+    },
+    {
+      "id": "BP-273",
+      "category": "stress_mistrust",
+      "reverse": true,
+      "urgent": false,
+      "text": "جذبات تیزی سے بدلنے پر، دباؤ میں بھی میں واقعات کی ایک سے زیادہ وضاحت پر غور کر سکا/سکی۔"
+    },
+    {
+      "id": "BP-274",
+      "category": "stress_mistrust",
+      "reverse": false,
+      "urgent": false,
+      "text": "پرسکون ہونے کی کوشش میں، کم ثبوت کے باوجود مجھے یقین ہوا کہ دوسرے نقصان چاہتے ہیں۔"
+    },
+    {
+      "id": "BP-275",
+      "category": "stress_mistrust",
+      "reverse": true,
+      "urgent": false,
+      "text": "اس وقت بھی جب دوسرے میری تکلیف نہیں دیکھ سکتے تھے، میں نے کسی کے نقصان پہنچانے کا گمان کرنے سے پہلے ثبوت دیکھا۔"
+    },
+    {
+      "id": "BP-276",
+      "category": "rejection",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ چند ماہ میں، میں غیر جانب دار رائے کو رد کیے جانے کے طور پر سنے بغیر قبول کر سکا/سکی۔"
+    },
+    {
+      "id": "BP-277",
+      "category": "rejection",
+      "reverse": false,
+      "urgent": false,
+      "text": "مختلف حالات میں، ناپسندیدگی کا چھوٹا اشارہ مکمل رد محسوس ہوا۔"
+    },
+    {
+      "id": "BP-278",
+      "category": "rejection",
+      "reverse": true,
+      "urgent": false,
+      "text": "قریبی تعلقات کے دوران، بدترین مطلب فرض کرنے سے پہلے میں نے وضاحت پوچھی۔"
+    },
+    {
+      "id": "BP-279",
+      "category": "rejection",
+      "reverse": false,
+      "urgent": false,
+      "text": "اختلاف کے بعد، میں نے غیر جانب دار میل جول میں بھی ممکنہ رد دیکھا۔"
+    },
+    {
+      "id": "BP-280",
+      "category": "rejection",
+      "reverse": true,
+      "urgent": false,
+      "text": "رد کیے جانے کے خوف میں، میں غیر جانب دار رائے کو رد کیے جانے کے طور پر سنے بغیر قبول کر سکا/سکی۔"
+    },
+    {
+      "id": "BP-281",
+      "category": "rejection",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب کسی کو کچھ فاصلہ درکار تھا، ناپسندیدگی کا چھوٹا اشارہ مکمل رد محسوس ہوا۔"
+    },
+    {
+      "id": "BP-282",
+      "category": "rejection",
+      "reverse": true,
+      "urgent": false,
+      "text": "جذباتی دباؤ کے دوران، بدترین مطلب فرض کرنے سے پہلے میں نے وضاحت پوچھی۔"
+    },
+    {
+      "id": "BP-283",
+      "category": "rejection",
+      "reverse": false,
+      "urgent": false,
+      "text": "منصوبے اچانک بدلنے پر، میں نے غیر جانب دار میل جول میں بھی ممکنہ رد دیکھا۔"
+    },
+    {
+      "id": "BP-284",
+      "category": "rejection",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنقید ملنے کے بعد، میں غیر جانب دار رائے کو رد کیے جانے کے طور پر سنے بغیر قبول کر سکا/سکی۔"
+    },
+    {
+      "id": "BP-285",
+      "category": "rejection",
+      "reverse": false,
+      "urgent": false,
+      "text": "غلط سمجھے جانے پر، ناپسندیدگی کا چھوٹا اشارہ مکمل رد محسوس ہوا۔"
+    },
+    {
+      "id": "BP-286",
+      "category": "rejection",
+      "reverse": true,
+      "urgent": false,
+      "text": "اہم انتخاب کرتے ہوئے، بدترین مطلب فرض کرنے سے پہلے میں نے وضاحت پوچھی۔"
+    },
+    {
+      "id": "BP-287",
+      "category": "rejection",
+      "reverse": false,
+      "urgent": false,
+      "text": "شدید قربت کے لمحات میں، میں نے غیر جانب دار میل جول میں بھی ممکنہ رد دیکھا۔"
+    },
+    {
+      "id": "BP-288",
+      "category": "rejection",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنہائی میں، میں غیر جانب دار رائے کو رد کیے جانے کے طور پر سنے بغیر قبول کر سکا/سکی۔"
+    },
+    {
+      "id": "BP-289",
+      "category": "rejection",
+      "reverse": false,
+      "urgent": false,
+      "text": "غصہ بڑھنے پر، ناپسندیدگی کا چھوٹا اشارہ مکمل رد محسوس ہوا۔"
+    },
+    {
+      "id": "BP-290",
+      "category": "rejection",
+      "reverse": true,
+      "urgent": false,
+      "text": "شدید خواہش محسوس ہونے پر، بدترین مطلب فرض کرنے سے پہلے میں نے وضاحت پوچھی۔"
+    },
+    {
+      "id": "BP-291",
+      "category": "rejection",
+      "reverse": false,
+      "urgent": false,
+      "text": "غلطی کرنے کے بعد، میں نے غیر جانب دار میل جول میں بھی ممکنہ رد دیکھا۔"
+    },
+    {
+      "id": "BP-292",
+      "category": "rejection",
+      "reverse": true,
+      "urgent": false,
+      "text": "اعتماد غیر یقینی ہونے پر، میں غیر جانب دار رائے کو رد کیے جانے کے طور پر سنے بغیر قبول کر سکا/سکی۔"
+    },
+    {
+      "id": "BP-293",
+      "category": "rejection",
+      "reverse": false,
+      "urgent": false,
+      "text": "عام ذمہ داریوں کے دوران، ناپسندیدگی کا چھوٹا اشارہ مکمل رد محسوس ہوا۔"
+    },
+    {
+      "id": "BP-294",
+      "category": "rejection",
+      "reverse": true,
+      "urgent": false,
+      "text": "تسلی کی ضرورت کے وقت، بدترین مطلب فرض کرنے سے پہلے میں نے وضاحت پوچھی۔"
+    },
+    {
+      "id": "BP-295",
+      "category": "rejection",
+      "reverse": false,
+      "urgent": false,
+      "text": "خود کو خارج محسوس کرنے کے بعد، میں نے غیر جانب دار میل جول میں بھی ممکنہ رد دیکھا۔"
+    },
+    {
+      "id": "BP-296",
+      "category": "rejection",
+      "reverse": true,
+      "urgent": false,
+      "text": "اپنی شناخت کے بارے میں سوچتے ہوئے، میں غیر جانب دار رائے کو رد کیے جانے کے طور پر سنے بغیر قبول کر سکا/سکی۔"
+    },
+    {
+      "id": "BP-297",
+      "category": "rejection",
+      "reverse": false,
+      "urgent": false,
+      "text": "کسی کے مایوس کرنے پر، ناپسندیدگی کا چھوٹا اشارہ مکمل رد محسوس ہوا۔"
+    },
+    {
+      "id": "BP-298",
+      "category": "rejection",
+      "reverse": true,
+      "urgent": false,
+      "text": "جذبات تیزی سے بدلنے پر، بدترین مطلب فرض کرنے سے پہلے میں نے وضاحت پوچھی۔"
+    },
+    {
+      "id": "BP-299",
+      "category": "rejection",
+      "reverse": false,
+      "urgent": false,
+      "text": "پرسکون ہونے کی کوشش میں، میں نے غیر جانب دار میل جول میں بھی ممکنہ رد دیکھا۔"
+    },
+    {
+      "id": "BP-300",
+      "category": "rejection",
+      "reverse": true,
+      "urgent": false,
+      "text": "اس وقت بھی جب دوسرے میری تکلیف نہیں دیکھ سکتے تھے، میں غیر جانب دار رائے کو رد کیے جانے کے طور پر سنے بغیر قبول کر سکا/سکی۔"
+    },
+    {
+      "id": "BP-301",
+      "category": "all_or_nothing",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ چند ماہ میں، میں لوگوں اور حالات میں ملی جلی خصوصیات پہچان سکا/سکی۔"
+    },
+    {
+      "id": "BP-302",
+      "category": "all_or_nothing",
+      "reverse": false,
+      "urgent": false,
+      "text": "مختلف حالات میں، میں نے لوگوں یا حالات کو مکمل اچھا یا مکمل برا سمجھا۔"
+    },
+    {
+      "id": "BP-303",
+      "category": "all_or_nothing",
+      "reverse": true,
+      "urgent": false,
+      "text": "قریبی تعلقات کے دوران، میں مکمل اچھے اور مکمل برے کے درمیان درمیانی حقیقت دیکھ سکا/سکی۔"
+    },
+    {
+      "id": "BP-304",
+      "category": "all_or_nothing",
+      "reverse": false,
+      "urgent": false,
+      "text": "اختلاف کے بعد، ایک منفی واقعے نے ذہن میں ہر مثبت تفصیل مٹا دی۔"
+    },
+    {
+      "id": "BP-305",
+      "category": "all_or_nothing",
+      "reverse": true,
+      "urgent": false,
+      "text": "رد کیے جانے کے خوف میں، میں لوگوں اور حالات میں ملی جلی خصوصیات پہچان سکا/سکی۔"
+    },
+    {
+      "id": "BP-306",
+      "category": "all_or_nothing",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب کسی کو کچھ فاصلہ درکار تھا، میں نے لوگوں یا حالات کو مکمل اچھا یا مکمل برا سمجھا۔"
+    },
+    {
+      "id": "BP-307",
+      "category": "all_or_nothing",
+      "reverse": true,
+      "urgent": false,
+      "text": "جذباتی دباؤ کے دوران، میں مکمل اچھے اور مکمل برے کے درمیان درمیانی حقیقت دیکھ سکا/سکی۔"
+    },
+    {
+      "id": "BP-308",
+      "category": "all_or_nothing",
+      "reverse": false,
+      "urgent": false,
+      "text": "منصوبے اچانک بدلنے پر، ایک منفی واقعے نے ذہن میں ہر مثبت تفصیل مٹا دی۔"
+    },
+    {
+      "id": "BP-309",
+      "category": "all_or_nothing",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنقید ملنے کے بعد، میں لوگوں اور حالات میں ملی جلی خصوصیات پہچان سکا/سکی۔"
+    },
+    {
+      "id": "BP-310",
+      "category": "all_or_nothing",
+      "reverse": false,
+      "urgent": false,
+      "text": "غلط سمجھے جانے پر، میں نے لوگوں یا حالات کو مکمل اچھا یا مکمل برا سمجھا۔"
+    },
+    {
+      "id": "BP-311",
+      "category": "all_or_nothing",
+      "reverse": true,
+      "urgent": false,
+      "text": "اہم انتخاب کرتے ہوئے، میں مکمل اچھے اور مکمل برے کے درمیان درمیانی حقیقت دیکھ سکا/سکی۔"
+    },
+    {
+      "id": "BP-312",
+      "category": "all_or_nothing",
+      "reverse": false,
+      "urgent": false,
+      "text": "شدید قربت کے لمحات میں، ایک منفی واقعے نے ذہن میں ہر مثبت تفصیل مٹا دی۔"
+    },
+    {
+      "id": "BP-313",
+      "category": "all_or_nothing",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنہائی میں، میں لوگوں اور حالات میں ملی جلی خصوصیات پہچان سکا/سکی۔"
+    },
+    {
+      "id": "BP-314",
+      "category": "all_or_nothing",
+      "reverse": false,
+      "urgent": false,
+      "text": "غصہ بڑھنے پر، میں نے لوگوں یا حالات کو مکمل اچھا یا مکمل برا سمجھا۔"
+    },
+    {
+      "id": "BP-315",
+      "category": "all_or_nothing",
+      "reverse": true,
+      "urgent": false,
+      "text": "شدید خواہش محسوس ہونے پر، میں مکمل اچھے اور مکمل برے کے درمیان درمیانی حقیقت دیکھ سکا/سکی۔"
+    },
+    {
+      "id": "BP-316",
+      "category": "all_or_nothing",
+      "reverse": false,
+      "urgent": false,
+      "text": "غلطی کرنے کے بعد، ایک منفی واقعے نے ذہن میں ہر مثبت تفصیل مٹا دی۔"
+    },
+    {
+      "id": "BP-317",
+      "category": "all_or_nothing",
+      "reverse": true,
+      "urgent": false,
+      "text": "اعتماد غیر یقینی ہونے پر، میں لوگوں اور حالات میں ملی جلی خصوصیات پہچان سکا/سکی۔"
+    },
+    {
+      "id": "BP-318",
+      "category": "all_or_nothing",
+      "reverse": false,
+      "urgent": false,
+      "text": "عام ذمہ داریوں کے دوران، میں نے لوگوں یا حالات کو مکمل اچھا یا مکمل برا سمجھا۔"
+    },
+    {
+      "id": "BP-319",
+      "category": "all_or_nothing",
+      "reverse": true,
+      "urgent": false,
+      "text": "تسلی کی ضرورت کے وقت، میں مکمل اچھے اور مکمل برے کے درمیان درمیانی حقیقت دیکھ سکا/سکی۔"
+    },
+    {
+      "id": "BP-320",
+      "category": "all_or_nothing",
+      "reverse": false,
+      "urgent": false,
+      "text": "خود کو خارج محسوس کرنے کے بعد، ایک منفی واقعے نے ذہن میں ہر مثبت تفصیل مٹا دی۔"
+    },
+    {
+      "id": "BP-321",
+      "category": "all_or_nothing",
+      "reverse": true,
+      "urgent": false,
+      "text": "اپنی شناخت کے بارے میں سوچتے ہوئے، میں لوگوں اور حالات میں ملی جلی خصوصیات پہچان سکا/سکی۔"
+    },
+    {
+      "id": "BP-322",
+      "category": "all_or_nothing",
+      "reverse": false,
+      "urgent": false,
+      "text": "کسی کے مایوس کرنے پر، میں نے لوگوں یا حالات کو مکمل اچھا یا مکمل برا سمجھا۔"
+    },
+    {
+      "id": "BP-323",
+      "category": "all_or_nothing",
+      "reverse": true,
+      "urgent": false,
+      "text": "جذبات تیزی سے بدلنے پر، میں مکمل اچھے اور مکمل برے کے درمیان درمیانی حقیقت دیکھ سکا/سکی۔"
+    },
+    {
+      "id": "BP-324",
+      "category": "all_or_nothing",
+      "reverse": false,
+      "urgent": false,
+      "text": "پرسکون ہونے کی کوشش میں، ایک منفی واقعے نے ذہن میں ہر مثبت تفصیل مٹا دی۔"
+    },
+    {
+      "id": "BP-325",
+      "category": "all_or_nothing",
+      "reverse": true,
+      "urgent": false,
+      "text": "اس وقت بھی جب دوسرے میری تکلیف نہیں دیکھ سکتے تھے، میں لوگوں اور حالات میں ملی جلی خصوصیات پہچان سکا/سکی۔"
+    },
+    {
+      "id": "BP-326",
+      "category": "boundaries",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ چند ماہ میں، میں دونوں افراد کی حدود کا احترام کرتے ہوئے قربت برقرار رکھ سکا/سکی۔"
+    },
+    {
+      "id": "BP-327",
+      "category": "boundaries",
+      "reverse": false,
+      "urgent": false,
+      "text": "مختلف حالات میں، مجھے اپنی اور دوسرے شخص کی ضروریات کی حد سمجھنا مشکل لگا۔"
+    },
+    {
+      "id": "BP-328",
+      "category": "boundaries",
+      "reverse": true,
+      "urgent": false,
+      "text": "قریبی تعلقات کے دوران، میں نے فوری تسلی کا مطالبہ کیے بغیر اپنی ضرورت بیان کی۔"
+    },
+    {
+      "id": "BP-329",
+      "category": "boundaries",
+      "reverse": false,
+      "urgent": false,
+      "text": "اختلاف کے بعد، دوری کے خوف نے مجھے اپنی یا دوسرے کی حدود پار کرائیں۔"
+    },
+    {
+      "id": "BP-330",
+      "category": "boundaries",
+      "reverse": true,
+      "urgent": false,
+      "text": "رد کیے جانے کے خوف میں، میں دونوں افراد کی حدود کا احترام کرتے ہوئے قربت برقرار رکھ سکا/سکی۔"
+    },
+    {
+      "id": "BP-331",
+      "category": "boundaries",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب کسی کو کچھ فاصلہ درکار تھا، مجھے اپنی اور دوسرے شخص کی ضروریات کی حد سمجھنا مشکل لگا۔"
+    },
+    {
+      "id": "BP-332",
+      "category": "boundaries",
+      "reverse": true,
+      "urgent": false,
+      "text": "جذباتی دباؤ کے دوران، میں نے فوری تسلی کا مطالبہ کیے بغیر اپنی ضرورت بیان کی۔"
+    },
+    {
+      "id": "BP-333",
+      "category": "boundaries",
+      "reverse": false,
+      "urgent": false,
+      "text": "منصوبے اچانک بدلنے پر، دوری کے خوف نے مجھے اپنی یا دوسرے کی حدود پار کرائیں۔"
+    },
+    {
+      "id": "BP-334",
+      "category": "boundaries",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنقید ملنے کے بعد، میں دونوں افراد کی حدود کا احترام کرتے ہوئے قربت برقرار رکھ سکا/سکی۔"
+    },
+    {
+      "id": "BP-335",
+      "category": "boundaries",
+      "reverse": false,
+      "urgent": false,
+      "text": "غلط سمجھے جانے پر، مجھے اپنی اور دوسرے شخص کی ضروریات کی حد سمجھنا مشکل لگا۔"
+    },
+    {
+      "id": "BP-336",
+      "category": "boundaries",
+      "reverse": true,
+      "urgent": false,
+      "text": "اہم انتخاب کرتے ہوئے، میں نے فوری تسلی کا مطالبہ کیے بغیر اپنی ضرورت بیان کی۔"
+    },
+    {
+      "id": "BP-337",
+      "category": "boundaries",
+      "reverse": false,
+      "urgent": false,
+      "text": "شدید قربت کے لمحات میں، دوری کے خوف نے مجھے اپنی یا دوسرے کی حدود پار کرائیں۔"
+    },
+    {
+      "id": "BP-338",
+      "category": "boundaries",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنہائی میں، میں دونوں افراد کی حدود کا احترام کرتے ہوئے قربت برقرار رکھ سکا/سکی۔"
+    },
+    {
+      "id": "BP-339",
+      "category": "boundaries",
+      "reverse": false,
+      "urgent": false,
+      "text": "غصہ بڑھنے پر، مجھے اپنی اور دوسرے شخص کی ضروریات کی حد سمجھنا مشکل لگا۔"
+    },
+    {
+      "id": "BP-340",
+      "category": "boundaries",
+      "reverse": true,
+      "urgent": false,
+      "text": "شدید خواہش محسوس ہونے پر، میں نے فوری تسلی کا مطالبہ کیے بغیر اپنی ضرورت بیان کی۔"
+    },
+    {
+      "id": "BP-341",
+      "category": "boundaries",
+      "reverse": false,
+      "urgent": false,
+      "text": "غلطی کرنے کے بعد، دوری کے خوف نے مجھے اپنی یا دوسرے کی حدود پار کرائیں۔"
+    },
+    {
+      "id": "BP-342",
+      "category": "boundaries",
+      "reverse": true,
+      "urgent": false,
+      "text": "اعتماد غیر یقینی ہونے پر، میں دونوں افراد کی حدود کا احترام کرتے ہوئے قربت برقرار رکھ سکا/سکی۔"
+    },
+    {
+      "id": "BP-343",
+      "category": "boundaries",
+      "reverse": false,
+      "urgent": false,
+      "text": "عام ذمہ داریوں کے دوران، مجھے اپنی اور دوسرے شخص کی ضروریات کی حد سمجھنا مشکل لگا۔"
+    },
+    {
+      "id": "BP-344",
+      "category": "boundaries",
+      "reverse": true,
+      "urgent": false,
+      "text": "تسلی کی ضرورت کے وقت، میں نے فوری تسلی کا مطالبہ کیے بغیر اپنی ضرورت بیان کی۔"
+    },
+    {
+      "id": "BP-345",
+      "category": "boundaries",
+      "reverse": false,
+      "urgent": false,
+      "text": "خود کو خارج محسوس کرنے کے بعد، دوری کے خوف نے مجھے اپنی یا دوسرے کی حدود پار کرائیں۔"
+    },
+    {
+      "id": "BP-346",
+      "category": "boundaries",
+      "reverse": true,
+      "urgent": false,
+      "text": "اپنی شناخت کے بارے میں سوچتے ہوئے، میں دونوں افراد کی حدود کا احترام کرتے ہوئے قربت برقرار رکھ سکا/سکی۔"
+    },
+    {
+      "id": "BP-347",
+      "category": "boundaries",
+      "reverse": false,
+      "urgent": false,
+      "text": "کسی کے مایوس کرنے پر، مجھے اپنی اور دوسرے شخص کی ضروریات کی حد سمجھنا مشکل لگا۔"
+    },
+    {
+      "id": "BP-348",
+      "category": "boundaries",
+      "reverse": true,
+      "urgent": false,
+      "text": "جذبات تیزی سے بدلنے پر، میں نے فوری تسلی کا مطالبہ کیے بغیر اپنی ضرورت بیان کی۔"
+    },
+    {
+      "id": "BP-349",
+      "category": "boundaries",
+      "reverse": false,
+      "urgent": false,
+      "text": "پرسکون ہونے کی کوشش میں، دوری کے خوف نے مجھے اپنی یا دوسرے کی حدود پار کرائیں۔"
+    },
+    {
+      "id": "BP-350",
+      "category": "boundaries",
+      "reverse": true,
+      "urgent": false,
+      "text": "اس وقت بھی جب دوسرے میری تکلیف نہیں دیکھ سکتے تھے، میں دونوں افراد کی حدود کا احترام کرتے ہوئے قربت برقرار رکھ سکا/سکی۔"
+    },
+    {
+      "id": "BP-351",
+      "category": "distress_tolerance",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ چند ماہ میں، تکلیف گزرنے تک میں نے زیادہ محفوظ مقابلہ کرنے کی مہارت استعمال کی۔"
+    },
+    {
+      "id": "BP-352",
+      "category": "distress_tolerance",
+      "reverse": false,
+      "urgent": false,
+      "text": "مختلف حالات میں، تکلیف اتنی فوری لگی کہ ہر قیمت پر فوراً بچنا ضروری محسوس ہوا۔"
+    },
+    {
+      "id": "BP-353",
+      "category": "distress_tolerance",
+      "reverse": true,
+      "urgent": false,
+      "text": "قریبی تعلقات کے دوران، میں شدید لمحے کو مزید خراب کیے بغیر گزار سکا/سکی۔"
+    },
+    {
+      "id": "BP-354",
+      "category": "distress_tolerance",
+      "reverse": false,
+      "urgent": false,
+      "text": "اختلاف کے بعد، میں نے ایسے عمل کیے جنہوں نے عارضی سکون مگر بعد میں بڑا مسئلہ پیدا کیا۔"
+    },
+    {
+      "id": "BP-355",
+      "category": "distress_tolerance",
+      "reverse": true,
+      "urgent": false,
+      "text": "رد کیے جانے کے خوف میں، تکلیف گزرنے تک میں نے زیادہ محفوظ مقابلہ کرنے کی مہارت استعمال کی۔"
+    },
+    {
+      "id": "BP-356",
+      "category": "distress_tolerance",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب کسی کو کچھ فاصلہ درکار تھا، تکلیف اتنی فوری لگی کہ ہر قیمت پر فوراً بچنا ضروری محسوس ہوا۔"
+    },
+    {
+      "id": "BP-357",
+      "category": "distress_tolerance",
+      "reverse": true,
+      "urgent": false,
+      "text": "جذباتی دباؤ کے دوران، میں شدید لمحے کو مزید خراب کیے بغیر گزار سکا/سکی۔"
+    },
+    {
+      "id": "BP-358",
+      "category": "distress_tolerance",
+      "reverse": false,
+      "urgent": false,
+      "text": "منصوبے اچانک بدلنے پر، میں نے ایسے عمل کیے جنہوں نے عارضی سکون مگر بعد میں بڑا مسئلہ پیدا کیا۔"
+    },
+    {
+      "id": "BP-359",
+      "category": "distress_tolerance",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنقید ملنے کے بعد، تکلیف گزرنے تک میں نے زیادہ محفوظ مقابلہ کرنے کی مہارت استعمال کی۔"
+    },
+    {
+      "id": "BP-360",
+      "category": "distress_tolerance",
+      "reverse": false,
+      "urgent": false,
+      "text": "غلط سمجھے جانے پر، تکلیف اتنی فوری لگی کہ ہر قیمت پر فوراً بچنا ضروری محسوس ہوا۔"
+    },
+    {
+      "id": "BP-361",
+      "category": "distress_tolerance",
+      "reverse": true,
+      "urgent": false,
+      "text": "اہم انتخاب کرتے ہوئے، میں شدید لمحے کو مزید خراب کیے بغیر گزار سکا/سکی۔"
+    },
+    {
+      "id": "BP-362",
+      "category": "distress_tolerance",
+      "reverse": false,
+      "urgent": false,
+      "text": "شدید قربت کے لمحات میں، میں نے ایسے عمل کیے جنہوں نے عارضی سکون مگر بعد میں بڑا مسئلہ پیدا کیا۔"
+    },
+    {
+      "id": "BP-363",
+      "category": "distress_tolerance",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنہائی میں، تکلیف گزرنے تک میں نے زیادہ محفوظ مقابلہ کرنے کی مہارت استعمال کی۔"
+    },
+    {
+      "id": "BP-364",
+      "category": "distress_tolerance",
+      "reverse": false,
+      "urgent": false,
+      "text": "غصہ بڑھنے پر، تکلیف اتنی فوری لگی کہ ہر قیمت پر فوراً بچنا ضروری محسوس ہوا۔"
+    },
+    {
+      "id": "BP-365",
+      "category": "distress_tolerance",
+      "reverse": true,
+      "urgent": false,
+      "text": "شدید خواہش محسوس ہونے پر، میں شدید لمحے کو مزید خراب کیے بغیر گزار سکا/سکی۔"
+    },
+    {
+      "id": "BP-366",
+      "category": "distress_tolerance",
+      "reverse": false,
+      "urgent": false,
+      "text": "غلطی کرنے کے بعد، میں نے ایسے عمل کیے جنہوں نے عارضی سکون مگر بعد میں بڑا مسئلہ پیدا کیا۔"
+    },
+    {
+      "id": "BP-367",
+      "category": "distress_tolerance",
+      "reverse": true,
+      "urgent": false,
+      "text": "اعتماد غیر یقینی ہونے پر، تکلیف گزرنے تک میں نے زیادہ محفوظ مقابلہ کرنے کی مہارت استعمال کی۔"
+    },
+    {
+      "id": "BP-368",
+      "category": "distress_tolerance",
+      "reverse": false,
+      "urgent": false,
+      "text": "عام ذمہ داریوں کے دوران، تکلیف اتنی فوری لگی کہ ہر قیمت پر فوراً بچنا ضروری محسوس ہوا۔"
+    },
+    {
+      "id": "BP-369",
+      "category": "distress_tolerance",
+      "reverse": true,
+      "urgent": false,
+      "text": "تسلی کی ضرورت کے وقت، میں شدید لمحے کو مزید خراب کیے بغیر گزار سکا/سکی۔"
+    },
+    {
+      "id": "BP-370",
+      "category": "distress_tolerance",
+      "reverse": false,
+      "urgent": false,
+      "text": "خود کو خارج محسوس کرنے کے بعد، میں نے ایسے عمل کیے جنہوں نے عارضی سکون مگر بعد میں بڑا مسئلہ پیدا کیا۔"
+    },
+    {
+      "id": "BP-371",
+      "category": "distress_tolerance",
+      "reverse": true,
+      "urgent": false,
+      "text": "اپنی شناخت کے بارے میں سوچتے ہوئے، تکلیف گزرنے تک میں نے زیادہ محفوظ مقابلہ کرنے کی مہارت استعمال کی۔"
+    },
+    {
+      "id": "BP-372",
+      "category": "distress_tolerance",
+      "reverse": false,
+      "urgent": false,
+      "text": "کسی کے مایوس کرنے پر، تکلیف اتنی فوری لگی کہ ہر قیمت پر فوراً بچنا ضروری محسوس ہوا۔"
+    },
+    {
+      "id": "BP-373",
+      "category": "distress_tolerance",
+      "reverse": true,
+      "urgent": false,
+      "text": "جذبات تیزی سے بدلنے پر، میں شدید لمحے کو مزید خراب کیے بغیر گزار سکا/سکی۔"
+    },
+    {
+      "id": "BP-374",
+      "category": "distress_tolerance",
+      "reverse": false,
+      "urgent": false,
+      "text": "پرسکون ہونے کی کوشش میں، میں نے ایسے عمل کیے جنہوں نے عارضی سکون مگر بعد میں بڑا مسئلہ پیدا کیا۔"
+    },
+    {
+      "id": "BP-375",
+      "category": "distress_tolerance",
+      "reverse": true,
+      "urgent": false,
+      "text": "اس وقت بھی جب دوسرے میری تکلیف نہیں دیکھ سکتے تھے، تکلیف گزرنے تک میں نے زیادہ محفوظ مقابلہ کرنے کی مہارت استعمال کی۔"
+    },
+    {
+      "id": "BP-376",
+      "category": "interpersonal_skills",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ چند ماہ میں، میں اپنی ضرورت واضح اور احترام سے مانگ سکا/سکی۔"
+    },
+    {
+      "id": "BP-377",
+      "category": "interpersonal_skills",
+      "reverse": false,
+      "urgent": false,
+      "text": "مختلف حالات میں، میں نے توقع کی کہ دوسرے خود میری ضرورت سمجھیں اور نہ سمجھنے پر دکھ ہوا۔"
+    },
+    {
+      "id": "BP-378",
+      "category": "interpersonal_skills",
+      "reverse": true,
+      "urgent": false,
+      "text": "قریبی تعلقات کے دوران، میں نے اپنے مقصد، تعلق اور عزتِ نفس میں توازن رکھا۔"
+    },
+    {
+      "id": "BP-379",
+      "category": "interpersonal_skills",
+      "reverse": false,
+      "urgent": false,
+      "text": "اختلاف کے بعد، اختلاف میں میں نے اپنی ضرورت چھوڑ دی یا تعلق پر حملہ کیا۔"
+    },
+    {
+      "id": "BP-380",
+      "category": "interpersonal_skills",
+      "reverse": true,
+      "urgent": false,
+      "text": "رد کیے جانے کے خوف میں، میں اپنی ضرورت واضح اور احترام سے مانگ سکا/سکی۔"
+    },
+    {
+      "id": "BP-381",
+      "category": "interpersonal_skills",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب کسی کو کچھ فاصلہ درکار تھا، میں نے توقع کی کہ دوسرے خود میری ضرورت سمجھیں اور نہ سمجھنے پر دکھ ہوا۔"
+    },
+    {
+      "id": "BP-382",
+      "category": "interpersonal_skills",
+      "reverse": true,
+      "urgent": false,
+      "text": "جذباتی دباؤ کے دوران، میں نے اپنے مقصد، تعلق اور عزتِ نفس میں توازن رکھا۔"
+    },
+    {
+      "id": "BP-383",
+      "category": "interpersonal_skills",
+      "reverse": false,
+      "urgent": false,
+      "text": "منصوبے اچانک بدلنے پر، اختلاف میں میں نے اپنی ضرورت چھوڑ دی یا تعلق پر حملہ کیا۔"
+    },
+    {
+      "id": "BP-384",
+      "category": "interpersonal_skills",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنقید ملنے کے بعد، میں اپنی ضرورت واضح اور احترام سے مانگ سکا/سکی۔"
+    },
+    {
+      "id": "BP-385",
+      "category": "interpersonal_skills",
+      "reverse": false,
+      "urgent": false,
+      "text": "غلط سمجھے جانے پر، میں نے توقع کی کہ دوسرے خود میری ضرورت سمجھیں اور نہ سمجھنے پر دکھ ہوا۔"
+    },
+    {
+      "id": "BP-386",
+      "category": "interpersonal_skills",
+      "reverse": true,
+      "urgent": false,
+      "text": "اہم انتخاب کرتے ہوئے، میں نے اپنے مقصد، تعلق اور عزتِ نفس میں توازن رکھا۔"
+    },
+    {
+      "id": "BP-387",
+      "category": "interpersonal_skills",
+      "reverse": false,
+      "urgent": false,
+      "text": "شدید قربت کے لمحات میں، اختلاف میں میں نے اپنی ضرورت چھوڑ دی یا تعلق پر حملہ کیا۔"
+    },
+    {
+      "id": "BP-388",
+      "category": "interpersonal_skills",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنہائی میں، میں اپنی ضرورت واضح اور احترام سے مانگ سکا/سکی۔"
+    },
+    {
+      "id": "BP-389",
+      "category": "interpersonal_skills",
+      "reverse": false,
+      "urgent": false,
+      "text": "غصہ بڑھنے پر، میں نے توقع کی کہ دوسرے خود میری ضرورت سمجھیں اور نہ سمجھنے پر دکھ ہوا۔"
+    },
+    {
+      "id": "BP-390",
+      "category": "interpersonal_skills",
+      "reverse": true,
+      "urgent": false,
+      "text": "شدید خواہش محسوس ہونے پر، میں نے اپنے مقصد، تعلق اور عزتِ نفس میں توازن رکھا۔"
+    },
+    {
+      "id": "BP-391",
+      "category": "interpersonal_skills",
+      "reverse": false,
+      "urgent": false,
+      "text": "غلطی کرنے کے بعد، اختلاف میں میں نے اپنی ضرورت چھوڑ دی یا تعلق پر حملہ کیا۔"
+    },
+    {
+      "id": "BP-392",
+      "category": "interpersonal_skills",
+      "reverse": true,
+      "urgent": false,
+      "text": "اعتماد غیر یقینی ہونے پر، میں اپنی ضرورت واضح اور احترام سے مانگ سکا/سکی۔"
+    },
+    {
+      "id": "BP-393",
+      "category": "interpersonal_skills",
+      "reverse": false,
+      "urgent": false,
+      "text": "عام ذمہ داریوں کے دوران، میں نے توقع کی کہ دوسرے خود میری ضرورت سمجھیں اور نہ سمجھنے پر دکھ ہوا۔"
+    },
+    {
+      "id": "BP-394",
+      "category": "interpersonal_skills",
+      "reverse": true,
+      "urgent": false,
+      "text": "تسلی کی ضرورت کے وقت، میں نے اپنے مقصد، تعلق اور عزتِ نفس میں توازن رکھا۔"
+    },
+    {
+      "id": "BP-395",
+      "category": "interpersonal_skills",
+      "reverse": false,
+      "urgent": false,
+      "text": "خود کو خارج محسوس کرنے کے بعد، اختلاف میں میں نے اپنی ضرورت چھوڑ دی یا تعلق پر حملہ کیا۔"
+    },
+    {
+      "id": "BP-396",
+      "category": "interpersonal_skills",
+      "reverse": true,
+      "urgent": false,
+      "text": "اپنی شناخت کے بارے میں سوچتے ہوئے، میں اپنی ضرورت واضح اور احترام سے مانگ سکا/سکی۔"
+    },
+    {
+      "id": "BP-397",
+      "category": "interpersonal_skills",
+      "reverse": false,
+      "urgent": false,
+      "text": "کسی کے مایوس کرنے پر، میں نے توقع کی کہ دوسرے خود میری ضرورت سمجھیں اور نہ سمجھنے پر دکھ ہوا۔"
+    },
+    {
+      "id": "BP-398",
+      "category": "interpersonal_skills",
+      "reverse": true,
+      "urgent": false,
+      "text": "جذبات تیزی سے بدلنے پر، میں نے اپنے مقصد، تعلق اور عزتِ نفس میں توازن رکھا۔"
+    },
+    {
+      "id": "BP-399",
+      "category": "interpersonal_skills",
+      "reverse": false,
+      "urgent": false,
+      "text": "پرسکون ہونے کی کوشش میں، اختلاف میں میں نے اپنی ضرورت چھوڑ دی یا تعلق پر حملہ کیا۔"
+    },
+    {
+      "id": "BP-400",
+      "category": "interpersonal_skills",
+      "reverse": true,
+      "urgent": false,
+      "text": "اس وقت بھی جب دوسرے میری تکلیف نہیں دیکھ سکتے تھے، میں اپنی ضرورت واضح اور احترام سے مانگ سکا/سکی۔"
+    },
+    {
+      "id": "BP-401",
+      "category": "conflict_repair",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ چند ماہ میں، اختلاف کے بعد میں خود کو مجرم ٹھہرائے بغیر ذمہ داری لے سکا/سکی۔"
+    },
+    {
+      "id": "BP-402",
+      "category": "conflict_repair",
+      "reverse": false,
+      "urgent": false,
+      "text": "مختلف حالات میں، اختلاف کے بعد میں نے فوراً رابطہ یا تعلق ختم کرنے کی کوشش کی۔"
+    },
+    {
+      "id": "BP-403",
+      "category": "conflict_repair",
+      "reverse": true,
+      "urgent": false,
+      "text": "قریبی تعلقات کے دوران، دونوں کے پرسکون ہونے پر میں مشکل گفتگو کی طرف واپس آ سکا/سکی۔"
+    },
+    {
+      "id": "BP-404",
+      "category": "conflict_repair",
+      "reverse": false,
+      "urgent": false,
+      "text": "اختلاف کے بعد، شرمندگی یا غصے نے تعلق کی مرمت ناممکن محسوس کرائی۔"
+    },
+    {
+      "id": "BP-405",
+      "category": "conflict_repair",
+      "reverse": true,
+      "urgent": false,
+      "text": "رد کیے جانے کے خوف میں، اختلاف کے بعد میں خود کو مجرم ٹھہرائے بغیر ذمہ داری لے سکا/سکی۔"
+    },
+    {
+      "id": "BP-406",
+      "category": "conflict_repair",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب کسی کو کچھ فاصلہ درکار تھا، اختلاف کے بعد میں نے فوراً رابطہ یا تعلق ختم کرنے کی کوشش کی۔"
+    },
+    {
+      "id": "BP-407",
+      "category": "conflict_repair",
+      "reverse": true,
+      "urgent": false,
+      "text": "جذباتی دباؤ کے دوران، دونوں کے پرسکون ہونے پر میں مشکل گفتگو کی طرف واپس آ سکا/سکی۔"
+    },
+    {
+      "id": "BP-408",
+      "category": "conflict_repair",
+      "reverse": false,
+      "urgent": false,
+      "text": "منصوبے اچانک بدلنے پر، شرمندگی یا غصے نے تعلق کی مرمت ناممکن محسوس کرائی۔"
+    },
+    {
+      "id": "BP-409",
+      "category": "conflict_repair",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنقید ملنے کے بعد، اختلاف کے بعد میں خود کو مجرم ٹھہرائے بغیر ذمہ داری لے سکا/سکی۔"
+    },
+    {
+      "id": "BP-410",
+      "category": "conflict_repair",
+      "reverse": false,
+      "urgent": false,
+      "text": "غلط سمجھے جانے پر، اختلاف کے بعد میں نے فوراً رابطہ یا تعلق ختم کرنے کی کوشش کی۔"
+    },
+    {
+      "id": "BP-411",
+      "category": "conflict_repair",
+      "reverse": true,
+      "urgent": false,
+      "text": "اہم انتخاب کرتے ہوئے، دونوں کے پرسکون ہونے پر میں مشکل گفتگو کی طرف واپس آ سکا/سکی۔"
+    },
+    {
+      "id": "BP-412",
+      "category": "conflict_repair",
+      "reverse": false,
+      "urgent": false,
+      "text": "شدید قربت کے لمحات میں، شرمندگی یا غصے نے تعلق کی مرمت ناممکن محسوس کرائی۔"
+    },
+    {
+      "id": "BP-413",
+      "category": "conflict_repair",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنہائی میں، اختلاف کے بعد میں خود کو مجرم ٹھہرائے بغیر ذمہ داری لے سکا/سکی۔"
+    },
+    {
+      "id": "BP-414",
+      "category": "conflict_repair",
+      "reverse": false,
+      "urgent": false,
+      "text": "غصہ بڑھنے پر، اختلاف کے بعد میں نے فوراً رابطہ یا تعلق ختم کرنے کی کوشش کی۔"
+    },
+    {
+      "id": "BP-415",
+      "category": "conflict_repair",
+      "reverse": true,
+      "urgent": false,
+      "text": "شدید خواہش محسوس ہونے پر، دونوں کے پرسکون ہونے پر میں مشکل گفتگو کی طرف واپس آ سکا/سکی۔"
+    },
+    {
+      "id": "BP-416",
+      "category": "conflict_repair",
+      "reverse": false,
+      "urgent": false,
+      "text": "غلطی کرنے کے بعد، شرمندگی یا غصے نے تعلق کی مرمت ناممکن محسوس کرائی۔"
+    },
+    {
+      "id": "BP-417",
+      "category": "conflict_repair",
+      "reverse": true,
+      "urgent": false,
+      "text": "اعتماد غیر یقینی ہونے پر، اختلاف کے بعد میں خود کو مجرم ٹھہرائے بغیر ذمہ داری لے سکا/سکی۔"
+    },
+    {
+      "id": "BP-418",
+      "category": "conflict_repair",
+      "reverse": false,
+      "urgent": false,
+      "text": "عام ذمہ داریوں کے دوران، اختلاف کے بعد میں نے فوراً رابطہ یا تعلق ختم کرنے کی کوشش کی۔"
+    },
+    {
+      "id": "BP-419",
+      "category": "conflict_repair",
+      "reverse": true,
+      "urgent": false,
+      "text": "تسلی کی ضرورت کے وقت، دونوں کے پرسکون ہونے پر میں مشکل گفتگو کی طرف واپس آ سکا/سکی۔"
+    },
+    {
+      "id": "BP-420",
+      "category": "conflict_repair",
+      "reverse": false,
+      "urgent": false,
+      "text": "خود کو خارج محسوس کرنے کے بعد، شرمندگی یا غصے نے تعلق کی مرمت ناممکن محسوس کرائی۔"
+    },
+    {
+      "id": "BP-421",
+      "category": "conflict_repair",
+      "reverse": true,
+      "urgent": false,
+      "text": "اپنی شناخت کے بارے میں سوچتے ہوئے، اختلاف کے بعد میں خود کو مجرم ٹھہرائے بغیر ذمہ داری لے سکا/سکی۔"
+    },
+    {
+      "id": "BP-422",
+      "category": "conflict_repair",
+      "reverse": false,
+      "urgent": false,
+      "text": "کسی کے مایوس کرنے پر، اختلاف کے بعد میں نے فوراً رابطہ یا تعلق ختم کرنے کی کوشش کی۔"
+    },
+    {
+      "id": "BP-423",
+      "category": "conflict_repair",
+      "reverse": true,
+      "urgent": false,
+      "text": "جذبات تیزی سے بدلنے پر، دونوں کے پرسکون ہونے پر میں مشکل گفتگو کی طرف واپس آ سکا/سکی۔"
+    },
+    {
+      "id": "BP-424",
+      "category": "conflict_repair",
+      "reverse": false,
+      "urgent": false,
+      "text": "پرسکون ہونے کی کوشش میں، شرمندگی یا غصے نے تعلق کی مرمت ناممکن محسوس کرائی۔"
+    },
+    {
+      "id": "BP-425",
+      "category": "conflict_repair",
+      "reverse": true,
+      "urgent": false,
+      "text": "اس وقت بھی جب دوسرے میری تکلیف نہیں دیکھ سکتے تھے، اختلاف کے بعد میں خود کو مجرم ٹھہرائے بغیر ذمہ داری لے سکا/سکی۔"
+    },
+    {
+      "id": "BP-426",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ چند ماہ میں، جذباتی مشکل کے باوجود میں نے ضروری ذمہ داریاں برقرار رکھیں۔"
+    },
+    {
+      "id": "BP-427",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "مختلف حالات میں، جذباتی یا تعلقاتی بحران نے بار بار روزمرہ ذمہ داریاں متاثر کیں۔"
+    },
+    {
+      "id": "BP-428",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "قریبی تعلقات کے دوران، میرے معمول نے کارکردگی جاری رکھنے کے لیے کافی ترتیب دی۔"
+    },
+    {
+      "id": "BP-429",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "اختلاف کے بعد، تیز اندرونی تبدیلیوں نے کام، تعلیم یا خود نگہداشت مشکل بنائی۔"
+    },
+    {
+      "id": "BP-430",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "رد کیے جانے کے خوف میں، جذباتی مشکل کے باوجود میں نے ضروری ذمہ داریاں برقرار رکھیں۔"
+    },
+    {
+      "id": "BP-431",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب کسی کو کچھ فاصلہ درکار تھا، جذباتی یا تعلقاتی بحران نے بار بار روزمرہ ذمہ داریاں متاثر کیں۔"
+    },
+    {
+      "id": "BP-432",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "جذباتی دباؤ کے دوران، میرے معمول نے کارکردگی جاری رکھنے کے لیے کافی ترتیب دی۔"
+    },
+    {
+      "id": "BP-433",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "منصوبے اچانک بدلنے پر، تیز اندرونی تبدیلیوں نے کام، تعلیم یا خود نگہداشت مشکل بنائی۔"
+    },
+    {
+      "id": "BP-434",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنقید ملنے کے بعد، جذباتی مشکل کے باوجود میں نے ضروری ذمہ داریاں برقرار رکھیں۔"
+    },
+    {
+      "id": "BP-435",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "غلط سمجھے جانے پر، جذباتی یا تعلقاتی بحران نے بار بار روزمرہ ذمہ داریاں متاثر کیں۔"
+    },
+    {
+      "id": "BP-436",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "اہم انتخاب کرتے ہوئے، میرے معمول نے کارکردگی جاری رکھنے کے لیے کافی ترتیب دی۔"
+    },
+    {
+      "id": "BP-437",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "شدید قربت کے لمحات میں، تیز اندرونی تبدیلیوں نے کام، تعلیم یا خود نگہداشت مشکل بنائی۔"
+    },
+    {
+      "id": "BP-438",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنہائی میں، جذباتی مشکل کے باوجود میں نے ضروری ذمہ داریاں برقرار رکھیں۔"
+    },
+    {
+      "id": "BP-439",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "غصہ بڑھنے پر، جذباتی یا تعلقاتی بحران نے بار بار روزمرہ ذمہ داریاں متاثر کیں۔"
+    },
+    {
+      "id": "BP-440",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "شدید خواہش محسوس ہونے پر، میرے معمول نے کارکردگی جاری رکھنے کے لیے کافی ترتیب دی۔"
+    },
+    {
+      "id": "BP-441",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "غلطی کرنے کے بعد، تیز اندرونی تبدیلیوں نے کام، تعلیم یا خود نگہداشت مشکل بنائی۔"
+    },
+    {
+      "id": "BP-442",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "اعتماد غیر یقینی ہونے پر، جذباتی مشکل کے باوجود میں نے ضروری ذمہ داریاں برقرار رکھیں۔"
+    },
+    {
+      "id": "BP-443",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "عام ذمہ داریوں کے دوران، جذباتی یا تعلقاتی بحران نے بار بار روزمرہ ذمہ داریاں متاثر کیں۔"
+    },
+    {
+      "id": "BP-444",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "تسلی کی ضرورت کے وقت، میرے معمول نے کارکردگی جاری رکھنے کے لیے کافی ترتیب دی۔"
+    },
+    {
+      "id": "BP-445",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "خود کو خارج محسوس کرنے کے بعد، تیز اندرونی تبدیلیوں نے کام، تعلیم یا خود نگہداشت مشکل بنائی۔"
+    },
+    {
+      "id": "BP-446",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "اپنی شناخت کے بارے میں سوچتے ہوئے، جذباتی مشکل کے باوجود میں نے ضروری ذمہ داریاں برقرار رکھیں۔"
+    },
+    {
+      "id": "BP-447",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "کسی کے مایوس کرنے پر، جذباتی یا تعلقاتی بحران نے بار بار روزمرہ ذمہ داریاں متاثر کیں۔"
+    },
+    {
+      "id": "BP-448",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "جذبات تیزی سے بدلنے پر، میرے معمول نے کارکردگی جاری رکھنے کے لیے کافی ترتیب دی۔"
+    },
+    {
+      "id": "BP-449",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "پرسکون ہونے کی کوشش میں، تیز اندرونی تبدیلیوں نے کام، تعلیم یا خود نگہداشت مشکل بنائی۔"
+    },
+    {
+      "id": "BP-450",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "اس وقت بھی جب دوسرے میری تکلیف نہیں دیکھ سکتے تھے، جذباتی مشکل کے باوجود میں نے ضروری ذمہ داریاں برقرار رکھیں۔"
+    },
+    {
+      "id": "BP-451",
+      "category": "help_seeking",
+      "reverse": true,
+      "urgent": false,
+      "text": "گزشتہ چند ماہ میں، میں مستند ماہر یا قابلِ اعتماد شخص سے مدد مانگ سکا/سکی۔"
+    },
+    {
+      "id": "BP-452",
+      "category": "help_seeking",
+      "reverse": false,
+      "urgent": false,
+      "text": "مختلف حالات میں، میں نے فیصلے یا رد کے خوف سے شدید تکلیف چھپائی۔"
+    },
+    {
+      "id": "BP-453",
+      "category": "help_seeking",
+      "reverse": true,
+      "urgent": false,
+      "text": "قریبی تعلقات کے دوران، میں جذباتی استحکام کی مہارتیں سیکھنے کے لیے تیار رہا/رہی۔"
+    },
+    {
+      "id": "BP-454",
+      "category": "help_seeking",
+      "reverse": false,
+      "urgent": false,
+      "text": "اختلاف کے بعد، تعلق مشکل محسوس ہوتے ہی میں نے تعاون لینا چھوڑ دیا۔"
+    },
+    {
+      "id": "BP-455",
+      "category": "help_seeking",
+      "reverse": true,
+      "urgent": false,
+      "text": "رد کیے جانے کے خوف میں، میں مستند ماہر یا قابلِ اعتماد شخص سے مدد مانگ سکا/سکی۔"
+    },
+    {
+      "id": "BP-456",
+      "category": "help_seeking",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب کسی کو کچھ فاصلہ درکار تھا، میں نے فیصلے یا رد کے خوف سے شدید تکلیف چھپائی۔"
+    },
+    {
+      "id": "BP-457",
+      "category": "help_seeking",
+      "reverse": true,
+      "urgent": false,
+      "text": "جذباتی دباؤ کے دوران، میں جذباتی استحکام کی مہارتیں سیکھنے کے لیے تیار رہا/رہی۔"
+    },
+    {
+      "id": "BP-458",
+      "category": "help_seeking",
+      "reverse": false,
+      "urgent": false,
+      "text": "منصوبے اچانک بدلنے پر، تعلق مشکل محسوس ہوتے ہی میں نے تعاون لینا چھوڑ دیا۔"
+    },
+    {
+      "id": "BP-459",
+      "category": "help_seeking",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنقید ملنے کے بعد، میں مستند ماہر یا قابلِ اعتماد شخص سے مدد مانگ سکا/سکی۔"
+    },
+    {
+      "id": "BP-460",
+      "category": "help_seeking",
+      "reverse": false,
+      "urgent": false,
+      "text": "غلط سمجھے جانے پر، میں نے فیصلے یا رد کے خوف سے شدید تکلیف چھپائی۔"
+    },
+    {
+      "id": "BP-461",
+      "category": "help_seeking",
+      "reverse": true,
+      "urgent": false,
+      "text": "اہم انتخاب کرتے ہوئے، میں جذباتی استحکام کی مہارتیں سیکھنے کے لیے تیار رہا/رہی۔"
+    },
+    {
+      "id": "BP-462",
+      "category": "help_seeking",
+      "reverse": false,
+      "urgent": false,
+      "text": "شدید قربت کے لمحات میں، تعلق مشکل محسوس ہوتے ہی میں نے تعاون لینا چھوڑ دیا۔"
+    },
+    {
+      "id": "BP-463",
+      "category": "help_seeking",
+      "reverse": true,
+      "urgent": false,
+      "text": "تنہائی میں، میں مستند ماہر یا قابلِ اعتماد شخص سے مدد مانگ سکا/سکی۔"
+    },
+    {
+      "id": "BP-464",
+      "category": "help_seeking",
+      "reverse": false,
+      "urgent": false,
+      "text": "غصہ بڑھنے پر، میں نے فیصلے یا رد کے خوف سے شدید تکلیف چھپائی۔"
+    },
+    {
+      "id": "BP-465",
+      "category": "help_seeking",
+      "reverse": true,
+      "urgent": false,
+      "text": "شدید خواہش محسوس ہونے پر، میں جذباتی استحکام کی مہارتیں سیکھنے کے لیے تیار رہا/رہی۔"
+    },
+    {
+      "id": "BP-466",
+      "category": "help_seeking",
+      "reverse": false,
+      "urgent": false,
+      "text": "غلطی کرنے کے بعد، تعلق مشکل محسوس ہوتے ہی میں نے تعاون لینا چھوڑ دیا۔"
+    },
+    {
+      "id": "BP-467",
+      "category": "help_seeking",
+      "reverse": true,
+      "urgent": false,
+      "text": "اعتماد غیر یقینی ہونے پر، میں مستند ماہر یا قابلِ اعتماد شخص سے مدد مانگ سکا/سکی۔"
+    },
+    {
+      "id": "BP-468",
+      "category": "help_seeking",
+      "reverse": false,
+      "urgent": false,
+      "text": "عام ذمہ داریوں کے دوران، میں نے فیصلے یا رد کے خوف سے شدید تکلیف چھپائی۔"
+    },
+    {
+      "id": "BP-469",
+      "category": "help_seeking",
+      "reverse": true,
+      "urgent": false,
+      "text": "تسلی کی ضرورت کے وقت، میں جذباتی استحکام کی مہارتیں سیکھنے کے لیے تیار رہا/رہی۔"
+    },
+    {
+      "id": "BP-470",
+      "category": "help_seeking",
+      "reverse": false,
+      "urgent": false,
+      "text": "خود کو خارج محسوس کرنے کے بعد، تعلق مشکل محسوس ہوتے ہی میں نے تعاون لینا چھوڑ دیا۔"
+    },
+    {
+      "id": "BP-471",
+      "category": "help_seeking",
+      "reverse": true,
+      "urgent": false,
+      "text": "اپنی شناخت کے بارے میں سوچتے ہوئے، میں مستند ماہر یا قابلِ اعتماد شخص سے مدد مانگ سکا/سکی۔"
+    },
+    {
+      "id": "BP-472",
+      "category": "help_seeking",
+      "reverse": false,
+      "urgent": false,
+      "text": "کسی کے مایوس کرنے پر، میں نے فیصلے یا رد کے خوف سے شدید تکلیف چھپائی۔"
+    },
+    {
+      "id": "BP-473",
+      "category": "help_seeking",
+      "reverse": true,
+      "urgent": false,
+      "text": "جذبات تیزی سے بدلنے پر، میں جذباتی استحکام کی مہارتیں سیکھنے کے لیے تیار رہا/رہی۔"
+    },
+    {
+      "id": "BP-474",
+      "category": "help_seeking",
+      "reverse": false,
+      "urgent": false,
+      "text": "پرسکون ہونے کی کوشش میں، تعلق مشکل محسوس ہوتے ہی میں نے تعاون لینا چھوڑ دیا۔"
+    },
+    {
+      "id": "BP-475",
+      "category": "help_seeking",
+      "reverse": true,
+      "urgent": false,
+      "text": "اس وقت بھی جب دوسرے میری تکلیف نہیں دیکھ سکتے تھے، میں مستند ماہر یا قابلِ اعتماد شخص سے مدد مانگ سکا/سکی۔"
+    },
+    {
+      "id": "BP-476",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "میں خود کو نقصان پہنچانے کی خواہش پر عمل سے محفوظ محسوس کرتا/کرتی رہا/رہی۔"
+    },
+    {
+      "id": "BP-477",
+      "category": "safety",
+      "reverse": false,
+      "urgent": true,
+      "text": "میرے ذہن میں خود کو نقصان پہنچانے کے خیالات آئے۔"
+    },
+    {
+      "id": "BP-478",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "مجھے معلوم تھا کہ غیر محفوظ محسوس ہونے پر فوراً کس سے رابطہ کروں۔"
+    },
+    {
+      "id": "BP-479",
+      "category": "safety",
+      "reverse": false,
+      "urgent": true,
+      "text": "مجھے لگا کہ شاید میں خود کو نقصان پہنچانے کی خواہش پر عمل کر دوں۔"
+    },
+    {
+      "id": "BP-480",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "میں محفوظ جگہ یا معاون شخص کی طرف جا سکا/سکی۔"
+    },
+    {
+      "id": "BP-481",
+      "category": "safety",
+      "reverse": false,
+      "urgent": true,
+      "text": "میرے ذہن میں اپنی زندگی ختم کرنے کے خیالات آئے۔"
+    },
+    {
+      "id": "BP-482",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "میں خود کو نقصان یا خودکشی کے خیالات کسی کو بتانے کے لیے تیار تھا/تھی۔"
+    },
+    {
+      "id": "BP-483",
+      "category": "safety",
+      "reverse": false,
+      "urgent": true,
+      "text": "میں نے سوچا کہ خود کو کیسے یا کب نقصان پہنچا سکتا/سکتی ہوں۔"
+    },
+    {
+      "id": "BP-484",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "شدید جذباتی لمحے میں میرے پاس زندہ رہنے کی وجوہات تھیں۔"
+    },
+    {
+      "id": "BP-485",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "میں نقصان پہنچانے والی چیزوں تک رسائی کم کر سکتا/سکتی تھا/تھی۔"
+    },
+    {
+      "id": "BP-486",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "میں نے بحران یا ایمرجنسی رابطے کی معلومات دستیاب رکھیں۔"
+    },
+    {
+      "id": "BP-487",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "بحران میں کسی کو اپنے ساتھ رہنے کے لیے کہہ سکتا/سکتی تھا/تھی۔"
+    },
+    {
+      "id": "BP-488",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "مجھے یقین تھا کہ شدید خواہش عمل کے بغیر گزر سکتی ہے۔"
+    },
+    {
+      "id": "BP-489",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "حفاظت غیر یقینی ہونے پر ہنگامی تعاون کو مناسب سمجھتا/سمجھتی تھا/تھی۔"
+    },
+    {
+      "id": "BP-490",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "میں فوری مدد کی ضرورت والی انتباہی علامات پہچان سکا/سکی۔"
+    },
+    {
+      "id": "BP-491",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "میرے پاس بنیادی بحران یا حفاظتی منصوبہ تھا۔"
+    },
+    {
+      "id": "BP-492",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "غیر محفوظ لمحے میں اکیلا رہنے سے بچ سکتا/سکتی تھا/تھی۔"
+    },
+    {
+      "id": "BP-493",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "مجھے یقین تھا کہ میں حفاظت اور فوری تعاون کا حق دار ہوں۔"
+    },
+    {
+      "id": "BP-494",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "میں سنگین خطرے کے بارے میں ماہر کو ایمانداری سے بتا سکتا/سکتی تھا/تھی۔"
+    },
+    {
+      "id": "BP-495",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "مجھے معلوم تھا کہ مقامی ہنگامی مدد کہاں مل سکتی ہے۔"
+    },
+    {
+      "id": "BP-496",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "میں ایک وقت میں ایک شدید لمحہ گزارنے پر توجہ دے سکتا/سکتی تھا/تھی۔"
+    },
+    {
+      "id": "BP-497",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "کم از کم ایک شخص یا خدمت میری حفاظت میں مدد دیتی تھی۔"
+    },
+    {
+      "id": "BP-498",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "میں سمجھتا/سمجھتی تھا/تھی کہ فوری مدد لینا ذاتی ناکامی نہیں۔"
+    },
+    {
+      "id": "BP-499",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "تعاون کے انتظار میں زیادہ محفوظ مقابلہ کرنے کا عمل استعمال کر سکتا/سکتی تھا/تھی۔"
+    },
+    {
+      "id": "BP-500",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "میں جانتا/جانتی تھا/تھی کہ یہ جائزہ میری حفاظت کا فیصلہ نہیں کر سکتا۔"
+    }
+  ]
+}

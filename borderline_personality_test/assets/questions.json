@@ -1,0 +1,3653 @@
+{
+  "meta": {
+    "title": "Borderline Personality–Related Traits Reflection",
+    "description": "A private 500-statement, non-diagnostic reflection across 20 related areas.",
+    "scale": {
+      "min": 1,
+      "max": 10,
+      "minLabel": "Not at all",
+      "maxLabel": "Very often"
+    },
+    "categories": [
+      {
+        "id": "emotional_intensity",
+        "label": "Emotional Intensity",
+        "icon": "🌊"
+      },
+      {
+        "id": "mood_shifts",
+        "label": "Rapid Mood Shifts",
+        "icon": "🎢"
+      },
+      {
+        "id": "abandonment",
+        "label": "Abandonment Fears",
+        "icon": "🚪"
+      },
+      {
+        "id": "relationships",
+        "label": "Relationship Stability",
+        "icon": "🤝"
+      },
+      {
+        "id": "identity",
+        "label": "Identity & Sense of Self",
+        "icon": "🧭"
+      },
+      {
+        "id": "self_image",
+        "label": "Self-Image Stability",
+        "icon": "🪞"
+      },
+      {
+        "id": "impulsivity",
+        "label": "Impulsivity & Risk-Taking",
+        "icon": "⚡"
+      },
+      {
+        "id": "anger",
+        "label": "Anger & Conflict",
+        "icon": "🌋"
+      },
+      {
+        "id": "emptiness",
+        "label": "Emptiness & Disconnection",
+        "icon": "🕳️"
+      },
+      {
+        "id": "dissociation",
+        "label": "Dissociation & Feeling Unreal",
+        "icon": "🌫️"
+      },
+      {
+        "id": "stress_mistrust",
+        "label": "Stress-Related Mistrust",
+        "icon": "🔍"
+      },
+      {
+        "id": "rejection",
+        "label": "Rejection Sensitivity",
+        "icon": "💬"
+      },
+      {
+        "id": "all_or_nothing",
+        "label": "All-or-Nothing Thinking",
+        "icon": "◐"
+      },
+      {
+        "id": "boundaries",
+        "label": "Boundaries & Closeness",
+        "icon": "🚧"
+      },
+      {
+        "id": "distress_tolerance",
+        "label": "Distress Tolerance",
+        "icon": "🧰"
+      },
+      {
+        "id": "interpersonal_skills",
+        "label": "Interpersonal Effectiveness",
+        "icon": "🗣️"
+      },
+      {
+        "id": "conflict_repair",
+        "label": "Repair After Conflict",
+        "icon": "🧵"
+      },
+      {
+        "id": "functioning",
+        "label": "Daily Functioning",
+        "icon": "📋"
+      },
+      {
+        "id": "help_seeking",
+        "label": "Help-Seeking & Treatment Engagement",
+        "icon": "🤲"
+      },
+      {
+        "id": "safety",
+        "label": "Safety & Crisis Support",
+        "icon": "🛟"
+      }
+    ],
+    "levels": [
+      {
+        "min": 1,
+        "max": 2.5,
+        "label": "Fewer Reported Difficulties",
+        "emoji": "🌿",
+        "desc": "You reported fewer difficulties in this non-diagnostic reflection. This cannot confirm or rule out BPD or another condition."
+      },
+      {
+        "min": 2.5,
+        "max": 4,
+        "label": "Some Recurring Difficulties",
+        "emoji": "🌦️",
+        "desc": "You reported some recurring emotional or interpersonal difficulties. Skills practice or a conversation with a qualified professional may help."
+      },
+      {
+        "min": 4,
+        "max": 5.5,
+        "label": "Several Areas of Strain",
+        "emoji": "🤲",
+        "desc": "Several patterns appear difficult. Consider discussing their duration, context, and impact with a licensed mental health professional."
+      },
+      {
+        "min": 5.5,
+        "max": 7.5,
+        "label": "High Reported Pattern Load",
+        "emoji": "💛",
+        "desc": "Your responses suggest substantial emotional or interpersonal strain. Please consider seeking a comprehensive professional assessment and support."
+      },
+      {
+        "min": 7.5,
+        "max": 10.01,
+        "label": "Significant Reported Distress",
+        "emoji": "🧡",
+        "desc": "You reported significant distress or impairment. Seek professional support promptly; use emergency or crisis help now if safety is uncertain."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "BP-001",
+      "category": "emotional_intensity",
+      "reverse": true,
+      "urgent": false,
+      "text": "Over recent months, I could experience strong feelings without becoming completely overwhelmed."
+    },
+    {
+      "id": "BP-002",
+      "category": "emotional_intensity",
+      "reverse": false,
+      "urgent": false,
+      "text": "Across different settings, My emotions became so intense that they felt unbearable."
+    },
+    {
+      "id": "BP-003",
+      "category": "emotional_intensity",
+      "reverse": true,
+      "urgent": false,
+      "text": "During close relationships, Intense emotions eventually reduced without controlling all of my actions."
+    },
+    {
+      "id": "BP-004",
+      "category": "emotional_intensity",
+      "reverse": false,
+      "urgent": false,
+      "text": "After a disagreement, Strong feelings rapidly took over my thinking and behaviour."
+    },
+    {
+      "id": "BP-005",
+      "category": "emotional_intensity",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I feared rejection, I could experience strong feelings without becoming completely overwhelmed."
+    },
+    {
+      "id": "BP-006",
+      "category": "emotional_intensity",
+      "reverse": false,
+      "urgent": false,
+      "text": "When someone needed space, My emotions became so intense that they felt unbearable."
+    },
+    {
+      "id": "BP-007",
+      "category": "emotional_intensity",
+      "reverse": true,
+      "urgent": false,
+      "text": "During emotional stress, Intense emotions eventually reduced without controlling all of my actions."
+    },
+    {
+      "id": "BP-008",
+      "category": "emotional_intensity",
+      "reverse": false,
+      "urgent": false,
+      "text": "When plans changed suddenly, Strong feelings rapidly took over my thinking and behaviour."
+    },
+    {
+      "id": "BP-009",
+      "category": "emotional_intensity",
+      "reverse": true,
+      "urgent": false,
+      "text": "After receiving criticism, I could experience strong feelings without becoming completely overwhelmed."
+    },
+    {
+      "id": "BP-010",
+      "category": "emotional_intensity",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I felt misunderstood, My emotions became so intense that they felt unbearable."
+    },
+    {
+      "id": "BP-011",
+      "category": "emotional_intensity",
+      "reverse": true,
+      "urgent": false,
+      "text": "While making an important choice, Intense emotions eventually reduced without controlling all of my actions."
+    },
+    {
+      "id": "BP-012",
+      "category": "emotional_intensity",
+      "reverse": false,
+      "urgent": false,
+      "text": "During moments of intense closeness, Strong feelings rapidly took over my thinking and behaviour."
+    },
+    {
+      "id": "BP-013",
+      "category": "emotional_intensity",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I was alone, I could experience strong feelings without becoming completely overwhelmed."
+    },
+    {
+      "id": "BP-014",
+      "category": "emotional_intensity",
+      "reverse": false,
+      "urgent": false,
+      "text": "When anger began to rise, My emotions became so intense that they felt unbearable."
+    },
+    {
+      "id": "BP-015",
+      "category": "emotional_intensity",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I noticed a strong urge, Intense emotions eventually reduced without controlling all of my actions."
+    },
+    {
+      "id": "BP-016",
+      "category": "emotional_intensity",
+      "reverse": false,
+      "urgent": false,
+      "text": "After making a mistake, Strong feelings rapidly took over my thinking and behaviour."
+    },
+    {
+      "id": "BP-017",
+      "category": "emotional_intensity",
+      "reverse": true,
+      "urgent": false,
+      "text": "When trust felt uncertain, I could experience strong feelings without becoming completely overwhelmed."
+    },
+    {
+      "id": "BP-018",
+      "category": "emotional_intensity",
+      "reverse": false,
+      "urgent": false,
+      "text": "During ordinary responsibilities, My emotions became so intense that they felt unbearable."
+    },
+    {
+      "id": "BP-019",
+      "category": "emotional_intensity",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I needed reassurance, Intense emotions eventually reduced without controlling all of my actions."
+    },
+    {
+      "id": "BP-020",
+      "category": "emotional_intensity",
+      "reverse": false,
+      "urgent": false,
+      "text": "After feeling excluded, Strong feelings rapidly took over my thinking and behaviour."
+    },
+    {
+      "id": "BP-021",
+      "category": "emotional_intensity",
+      "reverse": true,
+      "urgent": false,
+      "text": "While thinking about who I am, I could experience strong feelings without becoming completely overwhelmed."
+    },
+    {
+      "id": "BP-022",
+      "category": "emotional_intensity",
+      "reverse": false,
+      "urgent": false,
+      "text": "When another person disappointed me, My emotions became so intense that they felt unbearable."
+    },
+    {
+      "id": "BP-023",
+      "category": "emotional_intensity",
+      "reverse": true,
+      "urgent": false,
+      "text": "When my emotions shifted quickly, Intense emotions eventually reduced without controlling all of my actions."
+    },
+    {
+      "id": "BP-024",
+      "category": "emotional_intensity",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to calm down, Strong feelings rapidly took over my thinking and behaviour."
+    },
+    {
+      "id": "BP-025",
+      "category": "emotional_intensity",
+      "reverse": true,
+      "urgent": false,
+      "text": "Even when others could not see my distress, I could experience strong feelings without becoming completely overwhelmed."
+    },
+    {
+      "id": "BP-026",
+      "category": "mood_shifts",
+      "reverse": true,
+      "urgent": false,
+      "text": "Over recent months, My mood changes were understandable and manageable."
+    },
+    {
+      "id": "BP-027",
+      "category": "mood_shifts",
+      "reverse": false,
+      "urgent": false,
+      "text": "Across different settings, My mood changed sharply within a short period."
+    },
+    {
+      "id": "BP-028",
+      "category": "mood_shifts",
+      "reverse": true,
+      "urgent": false,
+      "text": "During close relationships, I could notice a mood shift before reacting to it."
+    },
+    {
+      "id": "BP-029",
+      "category": "mood_shifts",
+      "reverse": false,
+      "urgent": false,
+      "text": "After a disagreement, A small event caused an unexpectedly large emotional shift."
+    },
+    {
+      "id": "BP-030",
+      "category": "mood_shifts",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I feared rejection, My mood changes were understandable and manageable."
+    },
+    {
+      "id": "BP-031",
+      "category": "mood_shifts",
+      "reverse": false,
+      "urgent": false,
+      "text": "When someone needed space, My mood changed sharply within a short period."
+    },
+    {
+      "id": "BP-032",
+      "category": "mood_shifts",
+      "reverse": true,
+      "urgent": false,
+      "text": "During emotional stress, I could notice a mood shift before reacting to it."
+    },
+    {
+      "id": "BP-033",
+      "category": "mood_shifts",
+      "reverse": false,
+      "urgent": false,
+      "text": "When plans changed suddenly, A small event caused an unexpectedly large emotional shift."
+    },
+    {
+      "id": "BP-034",
+      "category": "mood_shifts",
+      "reverse": true,
+      "urgent": false,
+      "text": "After receiving criticism, My mood changes were understandable and manageable."
+    },
+    {
+      "id": "BP-035",
+      "category": "mood_shifts",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I felt misunderstood, My mood changed sharply within a short period."
+    },
+    {
+      "id": "BP-036",
+      "category": "mood_shifts",
+      "reverse": true,
+      "urgent": false,
+      "text": "While making an important choice, I could notice a mood shift before reacting to it."
+    },
+    {
+      "id": "BP-037",
+      "category": "mood_shifts",
+      "reverse": false,
+      "urgent": false,
+      "text": "During moments of intense closeness, A small event caused an unexpectedly large emotional shift."
+    },
+    {
+      "id": "BP-038",
+      "category": "mood_shifts",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I was alone, My mood changes were understandable and manageable."
+    },
+    {
+      "id": "BP-039",
+      "category": "mood_shifts",
+      "reverse": false,
+      "urgent": false,
+      "text": "When anger began to rise, My mood changed sharply within a short period."
+    },
+    {
+      "id": "BP-040",
+      "category": "mood_shifts",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I noticed a strong urge, I could notice a mood shift before reacting to it."
+    },
+    {
+      "id": "BP-041",
+      "category": "mood_shifts",
+      "reverse": false,
+      "urgent": false,
+      "text": "After making a mistake, A small event caused an unexpectedly large emotional shift."
+    },
+    {
+      "id": "BP-042",
+      "category": "mood_shifts",
+      "reverse": true,
+      "urgent": false,
+      "text": "When trust felt uncertain, My mood changes were understandable and manageable."
+    },
+    {
+      "id": "BP-043",
+      "category": "mood_shifts",
+      "reverse": false,
+      "urgent": false,
+      "text": "During ordinary responsibilities, My mood changed sharply within a short period."
+    },
+    {
+      "id": "BP-044",
+      "category": "mood_shifts",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I needed reassurance, I could notice a mood shift before reacting to it."
+    },
+    {
+      "id": "BP-045",
+      "category": "mood_shifts",
+      "reverse": false,
+      "urgent": false,
+      "text": "After feeling excluded, A small event caused an unexpectedly large emotional shift."
+    },
+    {
+      "id": "BP-046",
+      "category": "mood_shifts",
+      "reverse": true,
+      "urgent": false,
+      "text": "While thinking about who I am, My mood changes were understandable and manageable."
+    },
+    {
+      "id": "BP-047",
+      "category": "mood_shifts",
+      "reverse": false,
+      "urgent": false,
+      "text": "When another person disappointed me, My mood changed sharply within a short period."
+    },
+    {
+      "id": "BP-048",
+      "category": "mood_shifts",
+      "reverse": true,
+      "urgent": false,
+      "text": "When my emotions shifted quickly, I could notice a mood shift before reacting to it."
+    },
+    {
+      "id": "BP-049",
+      "category": "mood_shifts",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to calm down, A small event caused an unexpectedly large emotional shift."
+    },
+    {
+      "id": "BP-050",
+      "category": "mood_shifts",
+      "reverse": true,
+      "urgent": false,
+      "text": "Even when others could not see my distress, My mood changes were understandable and manageable."
+    },
+    {
+      "id": "BP-051",
+      "category": "abandonment",
+      "reverse": true,
+      "urgent": false,
+      "text": "Over recent months, I could tolerate temporary distance without assuming I was being abandoned."
+    },
+    {
+      "id": "BP-052",
+      "category": "abandonment",
+      "reverse": false,
+      "urgent": false,
+      "text": "Across different settings, I became intensely afraid that an important person would leave me."
+    },
+    {
+      "id": "BP-053",
+      "category": "abandonment",
+      "reverse": true,
+      "urgent": false,
+      "text": "During close relationships, I sought clarification before reacting to fears of being left."
+    },
+    {
+      "id": "BP-054",
+      "category": "abandonment",
+      "reverse": false,
+      "urgent": false,
+      "text": "After a disagreement, A delayed reply felt like proof that I was being rejected or abandoned."
+    },
+    {
+      "id": "BP-055",
+      "category": "abandonment",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I feared rejection, I could tolerate temporary distance without assuming I was being abandoned."
+    },
+    {
+      "id": "BP-056",
+      "category": "abandonment",
+      "reverse": false,
+      "urgent": false,
+      "text": "When someone needed space, I became intensely afraid that an important person would leave me."
+    },
+    {
+      "id": "BP-057",
+      "category": "abandonment",
+      "reverse": true,
+      "urgent": false,
+      "text": "During emotional stress, I sought clarification before reacting to fears of being left."
+    },
+    {
+      "id": "BP-058",
+      "category": "abandonment",
+      "reverse": false,
+      "urgent": false,
+      "text": "When plans changed suddenly, A delayed reply felt like proof that I was being rejected or abandoned."
+    },
+    {
+      "id": "BP-059",
+      "category": "abandonment",
+      "reverse": true,
+      "urgent": false,
+      "text": "After receiving criticism, I could tolerate temporary distance without assuming I was being abandoned."
+    },
+    {
+      "id": "BP-060",
+      "category": "abandonment",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I felt misunderstood, I became intensely afraid that an important person would leave me."
+    },
+    {
+      "id": "BP-061",
+      "category": "abandonment",
+      "reverse": true,
+      "urgent": false,
+      "text": "While making an important choice, I sought clarification before reacting to fears of being left."
+    },
+    {
+      "id": "BP-062",
+      "category": "abandonment",
+      "reverse": false,
+      "urgent": false,
+      "text": "During moments of intense closeness, A delayed reply felt like proof that I was being rejected or abandoned."
+    },
+    {
+      "id": "BP-063",
+      "category": "abandonment",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I was alone, I could tolerate temporary distance without assuming I was being abandoned."
+    },
+    {
+      "id": "BP-064",
+      "category": "abandonment",
+      "reverse": false,
+      "urgent": false,
+      "text": "When anger began to rise, I became intensely afraid that an important person would leave me."
+    },
+    {
+      "id": "BP-065",
+      "category": "abandonment",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I noticed a strong urge, I sought clarification before reacting to fears of being left."
+    },
+    {
+      "id": "BP-066",
+      "category": "abandonment",
+      "reverse": false,
+      "urgent": false,
+      "text": "After making a mistake, A delayed reply felt like proof that I was being rejected or abandoned."
+    },
+    {
+      "id": "BP-067",
+      "category": "abandonment",
+      "reverse": true,
+      "urgent": false,
+      "text": "When trust felt uncertain, I could tolerate temporary distance without assuming I was being abandoned."
+    },
+    {
+      "id": "BP-068",
+      "category": "abandonment",
+      "reverse": false,
+      "urgent": false,
+      "text": "During ordinary responsibilities, I became intensely afraid that an important person would leave me."
+    },
+    {
+      "id": "BP-069",
+      "category": "abandonment",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I needed reassurance, I sought clarification before reacting to fears of being left."
+    },
+    {
+      "id": "BP-070",
+      "category": "abandonment",
+      "reverse": false,
+      "urgent": false,
+      "text": "After feeling excluded, A delayed reply felt like proof that I was being rejected or abandoned."
+    },
+    {
+      "id": "BP-071",
+      "category": "abandonment",
+      "reverse": true,
+      "urgent": false,
+      "text": "While thinking about who I am, I could tolerate temporary distance without assuming I was being abandoned."
+    },
+    {
+      "id": "BP-072",
+      "category": "abandonment",
+      "reverse": false,
+      "urgent": false,
+      "text": "When another person disappointed me, I became intensely afraid that an important person would leave me."
+    },
+    {
+      "id": "BP-073",
+      "category": "abandonment",
+      "reverse": true,
+      "urgent": false,
+      "text": "When my emotions shifted quickly, I sought clarification before reacting to fears of being left."
+    },
+    {
+      "id": "BP-074",
+      "category": "abandonment",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to calm down, A delayed reply felt like proof that I was being rejected or abandoned."
+    },
+    {
+      "id": "BP-075",
+      "category": "abandonment",
+      "reverse": true,
+      "urgent": false,
+      "text": "Even when others could not see my distress, I could tolerate temporary distance without assuming I was being abandoned."
+    },
+    {
+      "id": "BP-076",
+      "category": "relationships",
+      "reverse": true,
+      "urgent": false,
+      "text": "Over recent months, I could hold a balanced view of someone even during conflict."
+    },
+    {
+      "id": "BP-077",
+      "category": "relationships",
+      "reverse": false,
+      "urgent": false,
+      "text": "Across different settings, My view of someone shifted quickly from ideal to terrible."
+    },
+    {
+      "id": "BP-078",
+      "category": "relationships",
+      "reverse": true,
+      "urgent": false,
+      "text": "During close relationships, My feelings about close people remained reasonably stable."
+    },
+    {
+      "id": "BP-079",
+      "category": "relationships",
+      "reverse": false,
+      "urgent": false,
+      "text": "After a disagreement, Close relationships moved between intense closeness and painful conflict."
+    },
+    {
+      "id": "BP-080",
+      "category": "relationships",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I feared rejection, I could hold a balanced view of someone even during conflict."
+    },
+    {
+      "id": "BP-081",
+      "category": "relationships",
+      "reverse": false,
+      "urgent": false,
+      "text": "When someone needed space, My view of someone shifted quickly from ideal to terrible."
+    },
+    {
+      "id": "BP-082",
+      "category": "relationships",
+      "reverse": true,
+      "urgent": false,
+      "text": "During emotional stress, My feelings about close people remained reasonably stable."
+    },
+    {
+      "id": "BP-083",
+      "category": "relationships",
+      "reverse": false,
+      "urgent": false,
+      "text": "When plans changed suddenly, Close relationships moved between intense closeness and painful conflict."
+    },
+    {
+      "id": "BP-084",
+      "category": "relationships",
+      "reverse": true,
+      "urgent": false,
+      "text": "After receiving criticism, I could hold a balanced view of someone even during conflict."
+    },
+    {
+      "id": "BP-085",
+      "category": "relationships",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I felt misunderstood, My view of someone shifted quickly from ideal to terrible."
+    },
+    {
+      "id": "BP-086",
+      "category": "relationships",
+      "reverse": true,
+      "urgent": false,
+      "text": "While making an important choice, My feelings about close people remained reasonably stable."
+    },
+    {
+      "id": "BP-087",
+      "category": "relationships",
+      "reverse": false,
+      "urgent": false,
+      "text": "During moments of intense closeness, Close relationships moved between intense closeness and painful conflict."
+    },
+    {
+      "id": "BP-088",
+      "category": "relationships",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I was alone, I could hold a balanced view of someone even during conflict."
+    },
+    {
+      "id": "BP-089",
+      "category": "relationships",
+      "reverse": false,
+      "urgent": false,
+      "text": "When anger began to rise, My view of someone shifted quickly from ideal to terrible."
+    },
+    {
+      "id": "BP-090",
+      "category": "relationships",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I noticed a strong urge, My feelings about close people remained reasonably stable."
+    },
+    {
+      "id": "BP-091",
+      "category": "relationships",
+      "reverse": false,
+      "urgent": false,
+      "text": "After making a mistake, Close relationships moved between intense closeness and painful conflict."
+    },
+    {
+      "id": "BP-092",
+      "category": "relationships",
+      "reverse": true,
+      "urgent": false,
+      "text": "When trust felt uncertain, I could hold a balanced view of someone even during conflict."
+    },
+    {
+      "id": "BP-093",
+      "category": "relationships",
+      "reverse": false,
+      "urgent": false,
+      "text": "During ordinary responsibilities, My view of someone shifted quickly from ideal to terrible."
+    },
+    {
+      "id": "BP-094",
+      "category": "relationships",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I needed reassurance, My feelings about close people remained reasonably stable."
+    },
+    {
+      "id": "BP-095",
+      "category": "relationships",
+      "reverse": false,
+      "urgent": false,
+      "text": "After feeling excluded, Close relationships moved between intense closeness and painful conflict."
+    },
+    {
+      "id": "BP-096",
+      "category": "relationships",
+      "reverse": true,
+      "urgent": false,
+      "text": "While thinking about who I am, I could hold a balanced view of someone even during conflict."
+    },
+    {
+      "id": "BP-097",
+      "category": "relationships",
+      "reverse": false,
+      "urgent": false,
+      "text": "When another person disappointed me, My view of someone shifted quickly from ideal to terrible."
+    },
+    {
+      "id": "BP-098",
+      "category": "relationships",
+      "reverse": true,
+      "urgent": false,
+      "text": "When my emotions shifted quickly, My feelings about close people remained reasonably stable."
+    },
+    {
+      "id": "BP-099",
+      "category": "relationships",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to calm down, Close relationships moved between intense closeness and painful conflict."
+    },
+    {
+      "id": "BP-100",
+      "category": "relationships",
+      "reverse": true,
+      "urgent": false,
+      "text": "Even when others could not see my distress, I could hold a balanced view of someone even during conflict."
+    },
+    {
+      "id": "BP-101",
+      "category": "identity",
+      "reverse": true,
+      "urgent": false,
+      "text": "Over recent months, I had a reasonably consistent sense of who I am."
+    },
+    {
+      "id": "BP-102",
+      "category": "identity",
+      "reverse": false,
+      "urgent": false,
+      "text": "Across different settings, I felt uncertain about who I am or what matters to me."
+    },
+    {
+      "id": "BP-103",
+      "category": "identity",
+      "reverse": true,
+      "urgent": false,
+      "text": "During close relationships, My values remained recognisable across different settings."
+    },
+    {
+      "id": "BP-104",
+      "category": "identity",
+      "reverse": false,
+      "urgent": false,
+      "text": "After a disagreement, My goals, values, or identity changed sharply depending on the situation."
+    },
+    {
+      "id": "BP-105",
+      "category": "identity",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I feared rejection, I had a reasonably consistent sense of who I am."
+    },
+    {
+      "id": "BP-106",
+      "category": "identity",
+      "reverse": false,
+      "urgent": false,
+      "text": "When someone needed space, I felt uncertain about who I am or what matters to me."
+    },
+    {
+      "id": "BP-107",
+      "category": "identity",
+      "reverse": true,
+      "urgent": false,
+      "text": "During emotional stress, My values remained recognisable across different settings."
+    },
+    {
+      "id": "BP-108",
+      "category": "identity",
+      "reverse": false,
+      "urgent": false,
+      "text": "When plans changed suddenly, My goals, values, or identity changed sharply depending on the situation."
+    },
+    {
+      "id": "BP-109",
+      "category": "identity",
+      "reverse": true,
+      "urgent": false,
+      "text": "After receiving criticism, I had a reasonably consistent sense of who I am."
+    },
+    {
+      "id": "BP-110",
+      "category": "identity",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I felt misunderstood, I felt uncertain about who I am or what matters to me."
+    },
+    {
+      "id": "BP-111",
+      "category": "identity",
+      "reverse": true,
+      "urgent": false,
+      "text": "While making an important choice, My values remained recognisable across different settings."
+    },
+    {
+      "id": "BP-112",
+      "category": "identity",
+      "reverse": false,
+      "urgent": false,
+      "text": "During moments of intense closeness, My goals, values, or identity changed sharply depending on the situation."
+    },
+    {
+      "id": "BP-113",
+      "category": "identity",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I was alone, I had a reasonably consistent sense of who I am."
+    },
+    {
+      "id": "BP-114",
+      "category": "identity",
+      "reverse": false,
+      "urgent": false,
+      "text": "When anger began to rise, I felt uncertain about who I am or what matters to me."
+    },
+    {
+      "id": "BP-115",
+      "category": "identity",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I noticed a strong urge, My values remained recognisable across different settings."
+    },
+    {
+      "id": "BP-116",
+      "category": "identity",
+      "reverse": false,
+      "urgent": false,
+      "text": "After making a mistake, My goals, values, or identity changed sharply depending on the situation."
+    },
+    {
+      "id": "BP-117",
+      "category": "identity",
+      "reverse": true,
+      "urgent": false,
+      "text": "When trust felt uncertain, I had a reasonably consistent sense of who I am."
+    },
+    {
+      "id": "BP-118",
+      "category": "identity",
+      "reverse": false,
+      "urgent": false,
+      "text": "During ordinary responsibilities, I felt uncertain about who I am or what matters to me."
+    },
+    {
+      "id": "BP-119",
+      "category": "identity",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I needed reassurance, My values remained recognisable across different settings."
+    },
+    {
+      "id": "BP-120",
+      "category": "identity",
+      "reverse": false,
+      "urgent": false,
+      "text": "After feeling excluded, My goals, values, or identity changed sharply depending on the situation."
+    },
+    {
+      "id": "BP-121",
+      "category": "identity",
+      "reverse": true,
+      "urgent": false,
+      "text": "While thinking about who I am, I had a reasonably consistent sense of who I am."
+    },
+    {
+      "id": "BP-122",
+      "category": "identity",
+      "reverse": false,
+      "urgent": false,
+      "text": "When another person disappointed me, I felt uncertain about who I am or what matters to me."
+    },
+    {
+      "id": "BP-123",
+      "category": "identity",
+      "reverse": true,
+      "urgent": false,
+      "text": "When my emotions shifted quickly, My values remained recognisable across different settings."
+    },
+    {
+      "id": "BP-124",
+      "category": "identity",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to calm down, My goals, values, or identity changed sharply depending on the situation."
+    },
+    {
+      "id": "BP-125",
+      "category": "identity",
+      "reverse": true,
+      "urgent": false,
+      "text": "Even when others could not see my distress, I had a reasonably consistent sense of who I am."
+    },
+    {
+      "id": "BP-126",
+      "category": "self_image",
+      "reverse": true,
+      "urgent": false,
+      "text": "Over recent months, My opinion of myself remained balanced after mistakes."
+    },
+    {
+      "id": "BP-127",
+      "category": "self_image",
+      "reverse": false,
+      "urgent": false,
+      "text": "Across different settings, My view of myself shifted rapidly between very good and completely bad."
+    },
+    {
+      "id": "BP-128",
+      "category": "self_image",
+      "reverse": true,
+      "urgent": false,
+      "text": "During close relationships, I could remember both strengths and limitations at the same time."
+    },
+    {
+      "id": "BP-129",
+      "category": "self_image",
+      "reverse": false,
+      "urgent": false,
+      "text": "After a disagreement, One mistake made my entire identity feel worthless."
+    },
+    {
+      "id": "BP-130",
+      "category": "self_image",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I feared rejection, My opinion of myself remained balanced after mistakes."
+    },
+    {
+      "id": "BP-131",
+      "category": "self_image",
+      "reverse": false,
+      "urgent": false,
+      "text": "When someone needed space, My view of myself shifted rapidly between very good and completely bad."
+    },
+    {
+      "id": "BP-132",
+      "category": "self_image",
+      "reverse": true,
+      "urgent": false,
+      "text": "During emotional stress, I could remember both strengths and limitations at the same time."
+    },
+    {
+      "id": "BP-133",
+      "category": "self_image",
+      "reverse": false,
+      "urgent": false,
+      "text": "When plans changed suddenly, One mistake made my entire identity feel worthless."
+    },
+    {
+      "id": "BP-134",
+      "category": "self_image",
+      "reverse": true,
+      "urgent": false,
+      "text": "After receiving criticism, My opinion of myself remained balanced after mistakes."
+    },
+    {
+      "id": "BP-135",
+      "category": "self_image",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I felt misunderstood, My view of myself shifted rapidly between very good and completely bad."
+    },
+    {
+      "id": "BP-136",
+      "category": "self_image",
+      "reverse": true,
+      "urgent": false,
+      "text": "While making an important choice, I could remember both strengths and limitations at the same time."
+    },
+    {
+      "id": "BP-137",
+      "category": "self_image",
+      "reverse": false,
+      "urgent": false,
+      "text": "During moments of intense closeness, One mistake made my entire identity feel worthless."
+    },
+    {
+      "id": "BP-138",
+      "category": "self_image",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I was alone, My opinion of myself remained balanced after mistakes."
+    },
+    {
+      "id": "BP-139",
+      "category": "self_image",
+      "reverse": false,
+      "urgent": false,
+      "text": "When anger began to rise, My view of myself shifted rapidly between very good and completely bad."
+    },
+    {
+      "id": "BP-140",
+      "category": "self_image",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I noticed a strong urge, I could remember both strengths and limitations at the same time."
+    },
+    {
+      "id": "BP-141",
+      "category": "self_image",
+      "reverse": false,
+      "urgent": false,
+      "text": "After making a mistake, One mistake made my entire identity feel worthless."
+    },
+    {
+      "id": "BP-142",
+      "category": "self_image",
+      "reverse": true,
+      "urgent": false,
+      "text": "When trust felt uncertain, My opinion of myself remained balanced after mistakes."
+    },
+    {
+      "id": "BP-143",
+      "category": "self_image",
+      "reverse": false,
+      "urgent": false,
+      "text": "During ordinary responsibilities, My view of myself shifted rapidly between very good and completely bad."
+    },
+    {
+      "id": "BP-144",
+      "category": "self_image",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I needed reassurance, I could remember both strengths and limitations at the same time."
+    },
+    {
+      "id": "BP-145",
+      "category": "self_image",
+      "reverse": false,
+      "urgent": false,
+      "text": "After feeling excluded, One mistake made my entire identity feel worthless."
+    },
+    {
+      "id": "BP-146",
+      "category": "self_image",
+      "reverse": true,
+      "urgent": false,
+      "text": "While thinking about who I am, My opinion of myself remained balanced after mistakes."
+    },
+    {
+      "id": "BP-147",
+      "category": "self_image",
+      "reverse": false,
+      "urgent": false,
+      "text": "When another person disappointed me, My view of myself shifted rapidly between very good and completely bad."
+    },
+    {
+      "id": "BP-148",
+      "category": "self_image",
+      "reverse": true,
+      "urgent": false,
+      "text": "When my emotions shifted quickly, I could remember both strengths and limitations at the same time."
+    },
+    {
+      "id": "BP-149",
+      "category": "self_image",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to calm down, One mistake made my entire identity feel worthless."
+    },
+    {
+      "id": "BP-150",
+      "category": "self_image",
+      "reverse": true,
+      "urgent": false,
+      "text": "Even when others could not see my distress, My opinion of myself remained balanced after mistakes."
+    },
+    {
+      "id": "BP-151",
+      "category": "impulsivity",
+      "reverse": true,
+      "urgent": false,
+      "text": "Over recent months, I paused to consider consequences before important actions."
+    },
+    {
+      "id": "BP-152",
+      "category": "impulsivity",
+      "reverse": false,
+      "urgent": false,
+      "text": "Across different settings, I acted on a strong urge without considering likely consequences."
+    },
+    {
+      "id": "BP-153",
+      "category": "impulsivity",
+      "reverse": true,
+      "urgent": false,
+      "text": "During close relationships, I could delay an urge long enough to choose more safely."
+    },
+    {
+      "id": "BP-154",
+      "category": "impulsivity",
+      "reverse": false,
+      "urgent": false,
+      "text": "After a disagreement, Emotional distress pushed me toward risky or damaging choices."
+    },
+    {
+      "id": "BP-155",
+      "category": "impulsivity",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I feared rejection, I paused to consider consequences before important actions."
+    },
+    {
+      "id": "BP-156",
+      "category": "impulsivity",
+      "reverse": false,
+      "urgent": false,
+      "text": "When someone needed space, I acted on a strong urge without considering likely consequences."
+    },
+    {
+      "id": "BP-157",
+      "category": "impulsivity",
+      "reverse": true,
+      "urgent": false,
+      "text": "During emotional stress, I could delay an urge long enough to choose more safely."
+    },
+    {
+      "id": "BP-158",
+      "category": "impulsivity",
+      "reverse": false,
+      "urgent": false,
+      "text": "When plans changed suddenly, Emotional distress pushed me toward risky or damaging choices."
+    },
+    {
+      "id": "BP-159",
+      "category": "impulsivity",
+      "reverse": true,
+      "urgent": false,
+      "text": "After receiving criticism, I paused to consider consequences before important actions."
+    },
+    {
+      "id": "BP-160",
+      "category": "impulsivity",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I felt misunderstood, I acted on a strong urge without considering likely consequences."
+    },
+    {
+      "id": "BP-161",
+      "category": "impulsivity",
+      "reverse": true,
+      "urgent": false,
+      "text": "While making an important choice, I could delay an urge long enough to choose more safely."
+    },
+    {
+      "id": "BP-162",
+      "category": "impulsivity",
+      "reverse": false,
+      "urgent": false,
+      "text": "During moments of intense closeness, Emotional distress pushed me toward risky or damaging choices."
+    },
+    {
+      "id": "BP-163",
+      "category": "impulsivity",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I was alone, I paused to consider consequences before important actions."
+    },
+    {
+      "id": "BP-164",
+      "category": "impulsivity",
+      "reverse": false,
+      "urgent": false,
+      "text": "When anger began to rise, I acted on a strong urge without considering likely consequences."
+    },
+    {
+      "id": "BP-165",
+      "category": "impulsivity",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I noticed a strong urge, I could delay an urge long enough to choose more safely."
+    },
+    {
+      "id": "BP-166",
+      "category": "impulsivity",
+      "reverse": false,
+      "urgent": false,
+      "text": "After making a mistake, Emotional distress pushed me toward risky or damaging choices."
+    },
+    {
+      "id": "BP-167",
+      "category": "impulsivity",
+      "reverse": true,
+      "urgent": false,
+      "text": "When trust felt uncertain, I paused to consider consequences before important actions."
+    },
+    {
+      "id": "BP-168",
+      "category": "impulsivity",
+      "reverse": false,
+      "urgent": false,
+      "text": "During ordinary responsibilities, I acted on a strong urge without considering likely consequences."
+    },
+    {
+      "id": "BP-169",
+      "category": "impulsivity",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I needed reassurance, I could delay an urge long enough to choose more safely."
+    },
+    {
+      "id": "BP-170",
+      "category": "impulsivity",
+      "reverse": false,
+      "urgent": false,
+      "text": "After feeling excluded, Emotional distress pushed me toward risky or damaging choices."
+    },
+    {
+      "id": "BP-171",
+      "category": "impulsivity",
+      "reverse": true,
+      "urgent": false,
+      "text": "While thinking about who I am, I paused to consider consequences before important actions."
+    },
+    {
+      "id": "BP-172",
+      "category": "impulsivity",
+      "reverse": false,
+      "urgent": false,
+      "text": "When another person disappointed me, I acted on a strong urge without considering likely consequences."
+    },
+    {
+      "id": "BP-173",
+      "category": "impulsivity",
+      "reverse": true,
+      "urgent": false,
+      "text": "When my emotions shifted quickly, I could delay an urge long enough to choose more safely."
+    },
+    {
+      "id": "BP-174",
+      "category": "impulsivity",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to calm down, Emotional distress pushed me toward risky or damaging choices."
+    },
+    {
+      "id": "BP-175",
+      "category": "impulsivity",
+      "reverse": true,
+      "urgent": false,
+      "text": "Even when others could not see my distress, I paused to consider consequences before important actions."
+    },
+    {
+      "id": "BP-176",
+      "category": "anger",
+      "reverse": true,
+      "urgent": false,
+      "text": "Over recent months, I expressed anger without threatening or humiliating anyone."
+    },
+    {
+      "id": "BP-177",
+      "category": "anger",
+      "reverse": false,
+      "urgent": false,
+      "text": "Across different settings, My anger became intense and difficult to control."
+    },
+    {
+      "id": "BP-178",
+      "category": "anger",
+      "reverse": true,
+      "urgent": false,
+      "text": "During close relationships, I could step away before anger became destructive."
+    },
+    {
+      "id": "BP-179",
+      "category": "anger",
+      "reverse": false,
+      "urgent": false,
+      "text": "After a disagreement, I said or did hurtful things during anger that I later regretted."
+    },
+    {
+      "id": "BP-180",
+      "category": "anger",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I feared rejection, I expressed anger without threatening or humiliating anyone."
+    },
+    {
+      "id": "BP-181",
+      "category": "anger",
+      "reverse": false,
+      "urgent": false,
+      "text": "When someone needed space, My anger became intense and difficult to control."
+    },
+    {
+      "id": "BP-182",
+      "category": "anger",
+      "reverse": true,
+      "urgent": false,
+      "text": "During emotional stress, I could step away before anger became destructive."
+    },
+    {
+      "id": "BP-183",
+      "category": "anger",
+      "reverse": false,
+      "urgent": false,
+      "text": "When plans changed suddenly, I said or did hurtful things during anger that I later regretted."
+    },
+    {
+      "id": "BP-184",
+      "category": "anger",
+      "reverse": true,
+      "urgent": false,
+      "text": "After receiving criticism, I expressed anger without threatening or humiliating anyone."
+    },
+    {
+      "id": "BP-185",
+      "category": "anger",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I felt misunderstood, My anger became intense and difficult to control."
+    },
+    {
+      "id": "BP-186",
+      "category": "anger",
+      "reverse": true,
+      "urgent": false,
+      "text": "While making an important choice, I could step away before anger became destructive."
+    },
+    {
+      "id": "BP-187",
+      "category": "anger",
+      "reverse": false,
+      "urgent": false,
+      "text": "During moments of intense closeness, I said or did hurtful things during anger that I later regretted."
+    },
+    {
+      "id": "BP-188",
+      "category": "anger",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I was alone, I expressed anger without threatening or humiliating anyone."
+    },
+    {
+      "id": "BP-189",
+      "category": "anger",
+      "reverse": false,
+      "urgent": false,
+      "text": "When anger began to rise, My anger became intense and difficult to control."
+    },
+    {
+      "id": "BP-190",
+      "category": "anger",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I noticed a strong urge, I could step away before anger became destructive."
+    },
+    {
+      "id": "BP-191",
+      "category": "anger",
+      "reverse": false,
+      "urgent": false,
+      "text": "After making a mistake, I said or did hurtful things during anger that I later regretted."
+    },
+    {
+      "id": "BP-192",
+      "category": "anger",
+      "reverse": true,
+      "urgent": false,
+      "text": "When trust felt uncertain, I expressed anger without threatening or humiliating anyone."
+    },
+    {
+      "id": "BP-193",
+      "category": "anger",
+      "reverse": false,
+      "urgent": false,
+      "text": "During ordinary responsibilities, My anger became intense and difficult to control."
+    },
+    {
+      "id": "BP-194",
+      "category": "anger",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I needed reassurance, I could step away before anger became destructive."
+    },
+    {
+      "id": "BP-195",
+      "category": "anger",
+      "reverse": false,
+      "urgent": false,
+      "text": "After feeling excluded, I said or did hurtful things during anger that I later regretted."
+    },
+    {
+      "id": "BP-196",
+      "category": "anger",
+      "reverse": true,
+      "urgent": false,
+      "text": "While thinking about who I am, I expressed anger without threatening or humiliating anyone."
+    },
+    {
+      "id": "BP-197",
+      "category": "anger",
+      "reverse": false,
+      "urgent": false,
+      "text": "When another person disappointed me, My anger became intense and difficult to control."
+    },
+    {
+      "id": "BP-198",
+      "category": "anger",
+      "reverse": true,
+      "urgent": false,
+      "text": "When my emotions shifted quickly, I could step away before anger became destructive."
+    },
+    {
+      "id": "BP-199",
+      "category": "anger",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to calm down, I said or did hurtful things during anger that I later regretted."
+    },
+    {
+      "id": "BP-200",
+      "category": "anger",
+      "reverse": true,
+      "urgent": false,
+      "text": "Even when others could not see my distress, I expressed anger without threatening or humiliating anyone."
+    },
+    {
+      "id": "BP-201",
+      "category": "emptiness",
+      "reverse": true,
+      "urgent": false,
+      "text": "Over recent months, I felt connected to at least one meaningful part of my life."
+    },
+    {
+      "id": "BP-202",
+      "category": "emptiness",
+      "reverse": false,
+      "urgent": false,
+      "text": "Across different settings, I felt a persistent inner emptiness."
+    },
+    {
+      "id": "BP-203",
+      "category": "emptiness",
+      "reverse": true,
+      "urgent": false,
+      "text": "During close relationships, Moments of emptiness passed without defining my whole experience."
+    },
+    {
+      "id": "BP-204",
+      "category": "emptiness",
+      "reverse": false,
+      "urgent": false,
+      "text": "After a disagreement, Life felt hollow even when activities or people were present."
+    },
+    {
+      "id": "BP-205",
+      "category": "emptiness",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I feared rejection, I felt connected to at least one meaningful part of my life."
+    },
+    {
+      "id": "BP-206",
+      "category": "emptiness",
+      "reverse": false,
+      "urgent": false,
+      "text": "When someone needed space, I felt a persistent inner emptiness."
+    },
+    {
+      "id": "BP-207",
+      "category": "emptiness",
+      "reverse": true,
+      "urgent": false,
+      "text": "During emotional stress, Moments of emptiness passed without defining my whole experience."
+    },
+    {
+      "id": "BP-208",
+      "category": "emptiness",
+      "reverse": false,
+      "urgent": false,
+      "text": "When plans changed suddenly, Life felt hollow even when activities or people were present."
+    },
+    {
+      "id": "BP-209",
+      "category": "emptiness",
+      "reverse": true,
+      "urgent": false,
+      "text": "After receiving criticism, I felt connected to at least one meaningful part of my life."
+    },
+    {
+      "id": "BP-210",
+      "category": "emptiness",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I felt misunderstood, I felt a persistent inner emptiness."
+    },
+    {
+      "id": "BP-211",
+      "category": "emptiness",
+      "reverse": true,
+      "urgent": false,
+      "text": "While making an important choice, Moments of emptiness passed without defining my whole experience."
+    },
+    {
+      "id": "BP-212",
+      "category": "emptiness",
+      "reverse": false,
+      "urgent": false,
+      "text": "During moments of intense closeness, Life felt hollow even when activities or people were present."
+    },
+    {
+      "id": "BP-213",
+      "category": "emptiness",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I was alone, I felt connected to at least one meaningful part of my life."
+    },
+    {
+      "id": "BP-214",
+      "category": "emptiness",
+      "reverse": false,
+      "urgent": false,
+      "text": "When anger began to rise, I felt a persistent inner emptiness."
+    },
+    {
+      "id": "BP-215",
+      "category": "emptiness",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I noticed a strong urge, Moments of emptiness passed without defining my whole experience."
+    },
+    {
+      "id": "BP-216",
+      "category": "emptiness",
+      "reverse": false,
+      "urgent": false,
+      "text": "After making a mistake, Life felt hollow even when activities or people were present."
+    },
+    {
+      "id": "BP-217",
+      "category": "emptiness",
+      "reverse": true,
+      "urgent": false,
+      "text": "When trust felt uncertain, I felt connected to at least one meaningful part of my life."
+    },
+    {
+      "id": "BP-218",
+      "category": "emptiness",
+      "reverse": false,
+      "urgent": false,
+      "text": "During ordinary responsibilities, I felt a persistent inner emptiness."
+    },
+    {
+      "id": "BP-219",
+      "category": "emptiness",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I needed reassurance, Moments of emptiness passed without defining my whole experience."
+    },
+    {
+      "id": "BP-220",
+      "category": "emptiness",
+      "reverse": false,
+      "urgent": false,
+      "text": "After feeling excluded, Life felt hollow even when activities or people were present."
+    },
+    {
+      "id": "BP-221",
+      "category": "emptiness",
+      "reverse": true,
+      "urgent": false,
+      "text": "While thinking about who I am, I felt connected to at least one meaningful part of my life."
+    },
+    {
+      "id": "BP-222",
+      "category": "emptiness",
+      "reverse": false,
+      "urgent": false,
+      "text": "When another person disappointed me, I felt a persistent inner emptiness."
+    },
+    {
+      "id": "BP-223",
+      "category": "emptiness",
+      "reverse": true,
+      "urgent": false,
+      "text": "When my emotions shifted quickly, Moments of emptiness passed without defining my whole experience."
+    },
+    {
+      "id": "BP-224",
+      "category": "emptiness",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to calm down, Life felt hollow even when activities or people were present."
+    },
+    {
+      "id": "BP-225",
+      "category": "emptiness",
+      "reverse": true,
+      "urgent": false,
+      "text": "Even when others could not see my distress, I felt connected to at least one meaningful part of my life."
+    },
+    {
+      "id": "BP-226",
+      "category": "dissociation",
+      "reverse": true,
+      "urgent": false,
+      "text": "Over recent months, I generally felt present in my body and surroundings."
+    },
+    {
+      "id": "BP-227",
+      "category": "dissociation",
+      "reverse": false,
+      "urgent": false,
+      "text": "Across different settings, I felt detached from myself, my body, or my surroundings."
+    },
+    {
+      "id": "BP-228",
+      "category": "dissociation",
+      "reverse": true,
+      "urgent": false,
+      "text": "During close relationships, I could use grounding to reconnect when things felt unreal."
+    },
+    {
+      "id": "BP-229",
+      "category": "dissociation",
+      "reverse": false,
+      "urgent": false,
+      "text": "After a disagreement, The world or my own experience felt unreal or dreamlike."
+    },
+    {
+      "id": "BP-230",
+      "category": "dissociation",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I feared rejection, I generally felt present in my body and surroundings."
+    },
+    {
+      "id": "BP-231",
+      "category": "dissociation",
+      "reverse": false,
+      "urgent": false,
+      "text": "When someone needed space, I felt detached from myself, my body, or my surroundings."
+    },
+    {
+      "id": "BP-232",
+      "category": "dissociation",
+      "reverse": true,
+      "urgent": false,
+      "text": "During emotional stress, I could use grounding to reconnect when things felt unreal."
+    },
+    {
+      "id": "BP-233",
+      "category": "dissociation",
+      "reverse": false,
+      "urgent": false,
+      "text": "When plans changed suddenly, The world or my own experience felt unreal or dreamlike."
+    },
+    {
+      "id": "BP-234",
+      "category": "dissociation",
+      "reverse": true,
+      "urgent": false,
+      "text": "After receiving criticism, I generally felt present in my body and surroundings."
+    },
+    {
+      "id": "BP-235",
+      "category": "dissociation",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I felt misunderstood, I felt detached from myself, my body, or my surroundings."
+    },
+    {
+      "id": "BP-236",
+      "category": "dissociation",
+      "reverse": true,
+      "urgent": false,
+      "text": "While making an important choice, I could use grounding to reconnect when things felt unreal."
+    },
+    {
+      "id": "BP-237",
+      "category": "dissociation",
+      "reverse": false,
+      "urgent": false,
+      "text": "During moments of intense closeness, The world or my own experience felt unreal or dreamlike."
+    },
+    {
+      "id": "BP-238",
+      "category": "dissociation",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I was alone, I generally felt present in my body and surroundings."
+    },
+    {
+      "id": "BP-239",
+      "category": "dissociation",
+      "reverse": false,
+      "urgent": false,
+      "text": "When anger began to rise, I felt detached from myself, my body, or my surroundings."
+    },
+    {
+      "id": "BP-240",
+      "category": "dissociation",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I noticed a strong urge, I could use grounding to reconnect when things felt unreal."
+    },
+    {
+      "id": "BP-241",
+      "category": "dissociation",
+      "reverse": false,
+      "urgent": false,
+      "text": "After making a mistake, The world or my own experience felt unreal or dreamlike."
+    },
+    {
+      "id": "BP-242",
+      "category": "dissociation",
+      "reverse": true,
+      "urgent": false,
+      "text": "When trust felt uncertain, I generally felt present in my body and surroundings."
+    },
+    {
+      "id": "BP-243",
+      "category": "dissociation",
+      "reverse": false,
+      "urgent": false,
+      "text": "During ordinary responsibilities, I felt detached from myself, my body, or my surroundings."
+    },
+    {
+      "id": "BP-244",
+      "category": "dissociation",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I needed reassurance, I could use grounding to reconnect when things felt unreal."
+    },
+    {
+      "id": "BP-245",
+      "category": "dissociation",
+      "reverse": false,
+      "urgent": false,
+      "text": "After feeling excluded, The world or my own experience felt unreal or dreamlike."
+    },
+    {
+      "id": "BP-246",
+      "category": "dissociation",
+      "reverse": true,
+      "urgent": false,
+      "text": "While thinking about who I am, I generally felt present in my body and surroundings."
+    },
+    {
+      "id": "BP-247",
+      "category": "dissociation",
+      "reverse": false,
+      "urgent": false,
+      "text": "When another person disappointed me, I felt detached from myself, my body, or my surroundings."
+    },
+    {
+      "id": "BP-248",
+      "category": "dissociation",
+      "reverse": true,
+      "urgent": false,
+      "text": "When my emotions shifted quickly, I could use grounding to reconnect when things felt unreal."
+    },
+    {
+      "id": "BP-249",
+      "category": "dissociation",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to calm down, The world or my own experience felt unreal or dreamlike."
+    },
+    {
+      "id": "BP-250",
+      "category": "dissociation",
+      "reverse": true,
+      "urgent": false,
+      "text": "Even when others could not see my distress, I generally felt present in my body and surroundings."
+    },
+    {
+      "id": "BP-251",
+      "category": "stress_mistrust",
+      "reverse": true,
+      "urgent": false,
+      "text": "Over recent months, I checked evidence before assuming another person intended harm."
+    },
+    {
+      "id": "BP-252",
+      "category": "stress_mistrust",
+      "reverse": false,
+      "urgent": false,
+      "text": "Across different settings, Under stress, I became unusually suspicious of other people."
+    },
+    {
+      "id": "BP-253",
+      "category": "stress_mistrust",
+      "reverse": true,
+      "urgent": false,
+      "text": "During close relationships, Under stress, I could consider more than one explanation for events."
+    },
+    {
+      "id": "BP-254",
+      "category": "stress_mistrust",
+      "reverse": false,
+      "urgent": false,
+      "text": "After a disagreement, I felt certain others intended harm despite limited evidence."
+    },
+    {
+      "id": "BP-255",
+      "category": "stress_mistrust",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I feared rejection, I checked evidence before assuming another person intended harm."
+    },
+    {
+      "id": "BP-256",
+      "category": "stress_mistrust",
+      "reverse": false,
+      "urgent": false,
+      "text": "When someone needed space, Under stress, I became unusually suspicious of other people."
+    },
+    {
+      "id": "BP-257",
+      "category": "stress_mistrust",
+      "reverse": true,
+      "urgent": false,
+      "text": "During emotional stress, Under stress, I could consider more than one explanation for events."
+    },
+    {
+      "id": "BP-258",
+      "category": "stress_mistrust",
+      "reverse": false,
+      "urgent": false,
+      "text": "When plans changed suddenly, I felt certain others intended harm despite limited evidence."
+    },
+    {
+      "id": "BP-259",
+      "category": "stress_mistrust",
+      "reverse": true,
+      "urgent": false,
+      "text": "After receiving criticism, I checked evidence before assuming another person intended harm."
+    },
+    {
+      "id": "BP-260",
+      "category": "stress_mistrust",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I felt misunderstood, Under stress, I became unusually suspicious of other people."
+    },
+    {
+      "id": "BP-261",
+      "category": "stress_mistrust",
+      "reverse": true,
+      "urgent": false,
+      "text": "While making an important choice, Under stress, I could consider more than one explanation for events."
+    },
+    {
+      "id": "BP-262",
+      "category": "stress_mistrust",
+      "reverse": false,
+      "urgent": false,
+      "text": "During moments of intense closeness, I felt certain others intended harm despite limited evidence."
+    },
+    {
+      "id": "BP-263",
+      "category": "stress_mistrust",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I was alone, I checked evidence before assuming another person intended harm."
+    },
+    {
+      "id": "BP-264",
+      "category": "stress_mistrust",
+      "reverse": false,
+      "urgent": false,
+      "text": "When anger began to rise, Under stress, I became unusually suspicious of other people."
+    },
+    {
+      "id": "BP-265",
+      "category": "stress_mistrust",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I noticed a strong urge, Under stress, I could consider more than one explanation for events."
+    },
+    {
+      "id": "BP-266",
+      "category": "stress_mistrust",
+      "reverse": false,
+      "urgent": false,
+      "text": "After making a mistake, I felt certain others intended harm despite limited evidence."
+    },
+    {
+      "id": "BP-267",
+      "category": "stress_mistrust",
+      "reverse": true,
+      "urgent": false,
+      "text": "When trust felt uncertain, I checked evidence before assuming another person intended harm."
+    },
+    {
+      "id": "BP-268",
+      "category": "stress_mistrust",
+      "reverse": false,
+      "urgent": false,
+      "text": "During ordinary responsibilities, Under stress, I became unusually suspicious of other people."
+    },
+    {
+      "id": "BP-269",
+      "category": "stress_mistrust",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I needed reassurance, Under stress, I could consider more than one explanation for events."
+    },
+    {
+      "id": "BP-270",
+      "category": "stress_mistrust",
+      "reverse": false,
+      "urgent": false,
+      "text": "After feeling excluded, I felt certain others intended harm despite limited evidence."
+    },
+    {
+      "id": "BP-271",
+      "category": "stress_mistrust",
+      "reverse": true,
+      "urgent": false,
+      "text": "While thinking about who I am, I checked evidence before assuming another person intended harm."
+    },
+    {
+      "id": "BP-272",
+      "category": "stress_mistrust",
+      "reverse": false,
+      "urgent": false,
+      "text": "When another person disappointed me, Under stress, I became unusually suspicious of other people."
+    },
+    {
+      "id": "BP-273",
+      "category": "stress_mistrust",
+      "reverse": true,
+      "urgent": false,
+      "text": "When my emotions shifted quickly, Under stress, I could consider more than one explanation for events."
+    },
+    {
+      "id": "BP-274",
+      "category": "stress_mistrust",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to calm down, I felt certain others intended harm despite limited evidence."
+    },
+    {
+      "id": "BP-275",
+      "category": "stress_mistrust",
+      "reverse": true,
+      "urgent": false,
+      "text": "Even when others could not see my distress, I checked evidence before assuming another person intended harm."
+    },
+    {
+      "id": "BP-276",
+      "category": "rejection",
+      "reverse": true,
+      "urgent": false,
+      "text": "Over recent months, I could receive neutral feedback without hearing it as rejection."
+    },
+    {
+      "id": "BP-277",
+      "category": "rejection",
+      "reverse": false,
+      "urgent": false,
+      "text": "Across different settings, A small sign of disapproval felt like total rejection."
+    },
+    {
+      "id": "BP-278",
+      "category": "rejection",
+      "reverse": true,
+      "urgent": false,
+      "text": "During close relationships, I asked what someone meant before assuming the worst."
+    },
+    {
+      "id": "BP-279",
+      "category": "rejection",
+      "reverse": false,
+      "urgent": false,
+      "text": "After a disagreement, I noticed possible rejection even in neutral interactions."
+    },
+    {
+      "id": "BP-280",
+      "category": "rejection",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I feared rejection, I could receive neutral feedback without hearing it as rejection."
+    },
+    {
+      "id": "BP-281",
+      "category": "rejection",
+      "reverse": false,
+      "urgent": false,
+      "text": "When someone needed space, A small sign of disapproval felt like total rejection."
+    },
+    {
+      "id": "BP-282",
+      "category": "rejection",
+      "reverse": true,
+      "urgent": false,
+      "text": "During emotional stress, I asked what someone meant before assuming the worst."
+    },
+    {
+      "id": "BP-283",
+      "category": "rejection",
+      "reverse": false,
+      "urgent": false,
+      "text": "When plans changed suddenly, I noticed possible rejection even in neutral interactions."
+    },
+    {
+      "id": "BP-284",
+      "category": "rejection",
+      "reverse": true,
+      "urgent": false,
+      "text": "After receiving criticism, I could receive neutral feedback without hearing it as rejection."
+    },
+    {
+      "id": "BP-285",
+      "category": "rejection",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I felt misunderstood, A small sign of disapproval felt like total rejection."
+    },
+    {
+      "id": "BP-286",
+      "category": "rejection",
+      "reverse": true,
+      "urgent": false,
+      "text": "While making an important choice, I asked what someone meant before assuming the worst."
+    },
+    {
+      "id": "BP-287",
+      "category": "rejection",
+      "reverse": false,
+      "urgent": false,
+      "text": "During moments of intense closeness, I noticed possible rejection even in neutral interactions."
+    },
+    {
+      "id": "BP-288",
+      "category": "rejection",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I was alone, I could receive neutral feedback without hearing it as rejection."
+    },
+    {
+      "id": "BP-289",
+      "category": "rejection",
+      "reverse": false,
+      "urgent": false,
+      "text": "When anger began to rise, A small sign of disapproval felt like total rejection."
+    },
+    {
+      "id": "BP-290",
+      "category": "rejection",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I noticed a strong urge, I asked what someone meant before assuming the worst."
+    },
+    {
+      "id": "BP-291",
+      "category": "rejection",
+      "reverse": false,
+      "urgent": false,
+      "text": "After making a mistake, I noticed possible rejection even in neutral interactions."
+    },
+    {
+      "id": "BP-292",
+      "category": "rejection",
+      "reverse": true,
+      "urgent": false,
+      "text": "When trust felt uncertain, I could receive neutral feedback without hearing it as rejection."
+    },
+    {
+      "id": "BP-293",
+      "category": "rejection",
+      "reverse": false,
+      "urgent": false,
+      "text": "During ordinary responsibilities, A small sign of disapproval felt like total rejection."
+    },
+    {
+      "id": "BP-294",
+      "category": "rejection",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I needed reassurance, I asked what someone meant before assuming the worst."
+    },
+    {
+      "id": "BP-295",
+      "category": "rejection",
+      "reverse": false,
+      "urgent": false,
+      "text": "After feeling excluded, I noticed possible rejection even in neutral interactions."
+    },
+    {
+      "id": "BP-296",
+      "category": "rejection",
+      "reverse": true,
+      "urgent": false,
+      "text": "While thinking about who I am, I could receive neutral feedback without hearing it as rejection."
+    },
+    {
+      "id": "BP-297",
+      "category": "rejection",
+      "reverse": false,
+      "urgent": false,
+      "text": "When another person disappointed me, A small sign of disapproval felt like total rejection."
+    },
+    {
+      "id": "BP-298",
+      "category": "rejection",
+      "reverse": true,
+      "urgent": false,
+      "text": "When my emotions shifted quickly, I asked what someone meant before assuming the worst."
+    },
+    {
+      "id": "BP-299",
+      "category": "rejection",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to calm down, I noticed possible rejection even in neutral interactions."
+    },
+    {
+      "id": "BP-300",
+      "category": "rejection",
+      "reverse": true,
+      "urgent": false,
+      "text": "Even when others could not see my distress, I could receive neutral feedback without hearing it as rejection."
+    },
+    {
+      "id": "BP-301",
+      "category": "all_or_nothing",
+      "reverse": true,
+      "urgent": false,
+      "text": "Over recent months, I could recognise mixed qualities in people and situations."
+    },
+    {
+      "id": "BP-302",
+      "category": "all_or_nothing",
+      "reverse": false,
+      "urgent": false,
+      "text": "Across different settings, I judged people or situations as entirely good or entirely bad."
+    },
+    {
+      "id": "BP-303",
+      "category": "all_or_nothing",
+      "reverse": true,
+      "urgent": false,
+      "text": "During close relationships, I found middle ground between completely good and completely bad."
+    },
+    {
+      "id": "BP-304",
+      "category": "all_or_nothing",
+      "reverse": false,
+      "urgent": false,
+      "text": "After a disagreement, One negative event erased every positive detail in my mind."
+    },
+    {
+      "id": "BP-305",
+      "category": "all_or_nothing",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I feared rejection, I could recognise mixed qualities in people and situations."
+    },
+    {
+      "id": "BP-306",
+      "category": "all_or_nothing",
+      "reverse": false,
+      "urgent": false,
+      "text": "When someone needed space, I judged people or situations as entirely good or entirely bad."
+    },
+    {
+      "id": "BP-307",
+      "category": "all_or_nothing",
+      "reverse": true,
+      "urgent": false,
+      "text": "During emotional stress, I found middle ground between completely good and completely bad."
+    },
+    {
+      "id": "BP-308",
+      "category": "all_or_nothing",
+      "reverse": false,
+      "urgent": false,
+      "text": "When plans changed suddenly, One negative event erased every positive detail in my mind."
+    },
+    {
+      "id": "BP-309",
+      "category": "all_or_nothing",
+      "reverse": true,
+      "urgent": false,
+      "text": "After receiving criticism, I could recognise mixed qualities in people and situations."
+    },
+    {
+      "id": "BP-310",
+      "category": "all_or_nothing",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I felt misunderstood, I judged people or situations as entirely good or entirely bad."
+    },
+    {
+      "id": "BP-311",
+      "category": "all_or_nothing",
+      "reverse": true,
+      "urgent": false,
+      "text": "While making an important choice, I found middle ground between completely good and completely bad."
+    },
+    {
+      "id": "BP-312",
+      "category": "all_or_nothing",
+      "reverse": false,
+      "urgent": false,
+      "text": "During moments of intense closeness, One negative event erased every positive detail in my mind."
+    },
+    {
+      "id": "BP-313",
+      "category": "all_or_nothing",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I was alone, I could recognise mixed qualities in people and situations."
+    },
+    {
+      "id": "BP-314",
+      "category": "all_or_nothing",
+      "reverse": false,
+      "urgent": false,
+      "text": "When anger began to rise, I judged people or situations as entirely good or entirely bad."
+    },
+    {
+      "id": "BP-315",
+      "category": "all_or_nothing",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I noticed a strong urge, I found middle ground between completely good and completely bad."
+    },
+    {
+      "id": "BP-316",
+      "category": "all_or_nothing",
+      "reverse": false,
+      "urgent": false,
+      "text": "After making a mistake, One negative event erased every positive detail in my mind."
+    },
+    {
+      "id": "BP-317",
+      "category": "all_or_nothing",
+      "reverse": true,
+      "urgent": false,
+      "text": "When trust felt uncertain, I could recognise mixed qualities in people and situations."
+    },
+    {
+      "id": "BP-318",
+      "category": "all_or_nothing",
+      "reverse": false,
+      "urgent": false,
+      "text": "During ordinary responsibilities, I judged people or situations as entirely good or entirely bad."
+    },
+    {
+      "id": "BP-319",
+      "category": "all_or_nothing",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I needed reassurance, I found middle ground between completely good and completely bad."
+    },
+    {
+      "id": "BP-320",
+      "category": "all_or_nothing",
+      "reverse": false,
+      "urgent": false,
+      "text": "After feeling excluded, One negative event erased every positive detail in my mind."
+    },
+    {
+      "id": "BP-321",
+      "category": "all_or_nothing",
+      "reverse": true,
+      "urgent": false,
+      "text": "While thinking about who I am, I could recognise mixed qualities in people and situations."
+    },
+    {
+      "id": "BP-322",
+      "category": "all_or_nothing",
+      "reverse": false,
+      "urgent": false,
+      "text": "When another person disappointed me, I judged people or situations as entirely good or entirely bad."
+    },
+    {
+      "id": "BP-323",
+      "category": "all_or_nothing",
+      "reverse": true,
+      "urgent": false,
+      "text": "When my emotions shifted quickly, I found middle ground between completely good and completely bad."
+    },
+    {
+      "id": "BP-324",
+      "category": "all_or_nothing",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to calm down, One negative event erased every positive detail in my mind."
+    },
+    {
+      "id": "BP-325",
+      "category": "all_or_nothing",
+      "reverse": true,
+      "urgent": false,
+      "text": "Even when others could not see my distress, I could recognise mixed qualities in people and situations."
+    },
+    {
+      "id": "BP-326",
+      "category": "boundaries",
+      "reverse": true,
+      "urgent": false,
+      "text": "Over recent months, I could stay close to someone while respecting both people’s limits."
+    },
+    {
+      "id": "BP-327",
+      "category": "boundaries",
+      "reverse": false,
+      "urgent": false,
+      "text": "Across different settings, I struggled to tell where my needs ended and another person’s began."
+    },
+    {
+      "id": "BP-328",
+      "category": "boundaries",
+      "reverse": true,
+      "urgent": false,
+      "text": "During close relationships, I communicated my needs without demanding immediate reassurance."
+    },
+    {
+      "id": "BP-329",
+      "category": "boundaries",
+      "reverse": false,
+      "urgent": false,
+      "text": "After a disagreement, Fear of distance led me to cross my own or another person’s boundaries."
+    },
+    {
+      "id": "BP-330",
+      "category": "boundaries",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I feared rejection, I could stay close to someone while respecting both people’s limits."
+    },
+    {
+      "id": "BP-331",
+      "category": "boundaries",
+      "reverse": false,
+      "urgent": false,
+      "text": "When someone needed space, I struggled to tell where my needs ended and another person’s began."
+    },
+    {
+      "id": "BP-332",
+      "category": "boundaries",
+      "reverse": true,
+      "urgent": false,
+      "text": "During emotional stress, I communicated my needs without demanding immediate reassurance."
+    },
+    {
+      "id": "BP-333",
+      "category": "boundaries",
+      "reverse": false,
+      "urgent": false,
+      "text": "When plans changed suddenly, Fear of distance led me to cross my own or another person’s boundaries."
+    },
+    {
+      "id": "BP-334",
+      "category": "boundaries",
+      "reverse": true,
+      "urgent": false,
+      "text": "After receiving criticism, I could stay close to someone while respecting both people’s limits."
+    },
+    {
+      "id": "BP-335",
+      "category": "boundaries",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I felt misunderstood, I struggled to tell where my needs ended and another person’s began."
+    },
+    {
+      "id": "BP-336",
+      "category": "boundaries",
+      "reverse": true,
+      "urgent": false,
+      "text": "While making an important choice, I communicated my needs without demanding immediate reassurance."
+    },
+    {
+      "id": "BP-337",
+      "category": "boundaries",
+      "reverse": false,
+      "urgent": false,
+      "text": "During moments of intense closeness, Fear of distance led me to cross my own or another person’s boundaries."
+    },
+    {
+      "id": "BP-338",
+      "category": "boundaries",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I was alone, I could stay close to someone while respecting both people’s limits."
+    },
+    {
+      "id": "BP-339",
+      "category": "boundaries",
+      "reverse": false,
+      "urgent": false,
+      "text": "When anger began to rise, I struggled to tell where my needs ended and another person’s began."
+    },
+    {
+      "id": "BP-340",
+      "category": "boundaries",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I noticed a strong urge, I communicated my needs without demanding immediate reassurance."
+    },
+    {
+      "id": "BP-341",
+      "category": "boundaries",
+      "reverse": false,
+      "urgent": false,
+      "text": "After making a mistake, Fear of distance led me to cross my own or another person’s boundaries."
+    },
+    {
+      "id": "BP-342",
+      "category": "boundaries",
+      "reverse": true,
+      "urgent": false,
+      "text": "When trust felt uncertain, I could stay close to someone while respecting both people’s limits."
+    },
+    {
+      "id": "BP-343",
+      "category": "boundaries",
+      "reverse": false,
+      "urgent": false,
+      "text": "During ordinary responsibilities, I struggled to tell where my needs ended and another person’s began."
+    },
+    {
+      "id": "BP-344",
+      "category": "boundaries",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I needed reassurance, I communicated my needs without demanding immediate reassurance."
+    },
+    {
+      "id": "BP-345",
+      "category": "boundaries",
+      "reverse": false,
+      "urgent": false,
+      "text": "After feeling excluded, Fear of distance led me to cross my own or another person’s boundaries."
+    },
+    {
+      "id": "BP-346",
+      "category": "boundaries",
+      "reverse": true,
+      "urgent": false,
+      "text": "While thinking about who I am, I could stay close to someone while respecting both people’s limits."
+    },
+    {
+      "id": "BP-347",
+      "category": "boundaries",
+      "reverse": false,
+      "urgent": false,
+      "text": "When another person disappointed me, I struggled to tell where my needs ended and another person’s began."
+    },
+    {
+      "id": "BP-348",
+      "category": "boundaries",
+      "reverse": true,
+      "urgent": false,
+      "text": "When my emotions shifted quickly, I communicated my needs without demanding immediate reassurance."
+    },
+    {
+      "id": "BP-349",
+      "category": "boundaries",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to calm down, Fear of distance led me to cross my own or another person’s boundaries."
+    },
+    {
+      "id": "BP-350",
+      "category": "boundaries",
+      "reverse": true,
+      "urgent": false,
+      "text": "Even when others could not see my distress, I could stay close to someone while respecting both people’s limits."
+    },
+    {
+      "id": "BP-351",
+      "category": "distress_tolerance",
+      "reverse": true,
+      "urgent": false,
+      "text": "Over recent months, I used a safer coping skill while waiting for distress to pass."
+    },
+    {
+      "id": "BP-352",
+      "category": "distress_tolerance",
+      "reverse": false,
+      "urgent": false,
+      "text": "Across different settings, Distress felt so urgent that I needed immediate escape at any cost."
+    },
+    {
+      "id": "BP-353",
+      "category": "distress_tolerance",
+      "reverse": true,
+      "urgent": false,
+      "text": "During close relationships, I could survive an intense moment without making it worse."
+    },
+    {
+      "id": "BP-354",
+      "category": "distress_tolerance",
+      "reverse": false,
+      "urgent": false,
+      "text": "After a disagreement, I used actions that reduced pain briefly but caused larger problems later."
+    },
+    {
+      "id": "BP-355",
+      "category": "distress_tolerance",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I feared rejection, I used a safer coping skill while waiting for distress to pass."
+    },
+    {
+      "id": "BP-356",
+      "category": "distress_tolerance",
+      "reverse": false,
+      "urgent": false,
+      "text": "When someone needed space, Distress felt so urgent that I needed immediate escape at any cost."
+    },
+    {
+      "id": "BP-357",
+      "category": "distress_tolerance",
+      "reverse": true,
+      "urgent": false,
+      "text": "During emotional stress, I could survive an intense moment without making it worse."
+    },
+    {
+      "id": "BP-358",
+      "category": "distress_tolerance",
+      "reverse": false,
+      "urgent": false,
+      "text": "When plans changed suddenly, I used actions that reduced pain briefly but caused larger problems later."
+    },
+    {
+      "id": "BP-359",
+      "category": "distress_tolerance",
+      "reverse": true,
+      "urgent": false,
+      "text": "After receiving criticism, I used a safer coping skill while waiting for distress to pass."
+    },
+    {
+      "id": "BP-360",
+      "category": "distress_tolerance",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I felt misunderstood, Distress felt so urgent that I needed immediate escape at any cost."
+    },
+    {
+      "id": "BP-361",
+      "category": "distress_tolerance",
+      "reverse": true,
+      "urgent": false,
+      "text": "While making an important choice, I could survive an intense moment without making it worse."
+    },
+    {
+      "id": "BP-362",
+      "category": "distress_tolerance",
+      "reverse": false,
+      "urgent": false,
+      "text": "During moments of intense closeness, I used actions that reduced pain briefly but caused larger problems later."
+    },
+    {
+      "id": "BP-363",
+      "category": "distress_tolerance",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I was alone, I used a safer coping skill while waiting for distress to pass."
+    },
+    {
+      "id": "BP-364",
+      "category": "distress_tolerance",
+      "reverse": false,
+      "urgent": false,
+      "text": "When anger began to rise, Distress felt so urgent that I needed immediate escape at any cost."
+    },
+    {
+      "id": "BP-365",
+      "category": "distress_tolerance",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I noticed a strong urge, I could survive an intense moment without making it worse."
+    },
+    {
+      "id": "BP-366",
+      "category": "distress_tolerance",
+      "reverse": false,
+      "urgent": false,
+      "text": "After making a mistake, I used actions that reduced pain briefly but caused larger problems later."
+    },
+    {
+      "id": "BP-367",
+      "category": "distress_tolerance",
+      "reverse": true,
+      "urgent": false,
+      "text": "When trust felt uncertain, I used a safer coping skill while waiting for distress to pass."
+    },
+    {
+      "id": "BP-368",
+      "category": "distress_tolerance",
+      "reverse": false,
+      "urgent": false,
+      "text": "During ordinary responsibilities, Distress felt so urgent that I needed immediate escape at any cost."
+    },
+    {
+      "id": "BP-369",
+      "category": "distress_tolerance",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I needed reassurance, I could survive an intense moment without making it worse."
+    },
+    {
+      "id": "BP-370",
+      "category": "distress_tolerance",
+      "reverse": false,
+      "urgent": false,
+      "text": "After feeling excluded, I used actions that reduced pain briefly but caused larger problems later."
+    },
+    {
+      "id": "BP-371",
+      "category": "distress_tolerance",
+      "reverse": true,
+      "urgent": false,
+      "text": "While thinking about who I am, I used a safer coping skill while waiting for distress to pass."
+    },
+    {
+      "id": "BP-372",
+      "category": "distress_tolerance",
+      "reverse": false,
+      "urgent": false,
+      "text": "When another person disappointed me, Distress felt so urgent that I needed immediate escape at any cost."
+    },
+    {
+      "id": "BP-373",
+      "category": "distress_tolerance",
+      "reverse": true,
+      "urgent": false,
+      "text": "When my emotions shifted quickly, I could survive an intense moment without making it worse."
+    },
+    {
+      "id": "BP-374",
+      "category": "distress_tolerance",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to calm down, I used actions that reduced pain briefly but caused larger problems later."
+    },
+    {
+      "id": "BP-375",
+      "category": "distress_tolerance",
+      "reverse": true,
+      "urgent": false,
+      "text": "Even when others could not see my distress, I used a safer coping skill while waiting for distress to pass."
+    },
+    {
+      "id": "BP-376",
+      "category": "interpersonal_skills",
+      "reverse": true,
+      "urgent": false,
+      "text": "Over recent months, I could ask for what I needed clearly and respectfully."
+    },
+    {
+      "id": "BP-377",
+      "category": "interpersonal_skills",
+      "reverse": false,
+      "urgent": false,
+      "text": "Across different settings, I expected others to guess my needs and felt hurt when they did not."
+    },
+    {
+      "id": "BP-378",
+      "category": "interpersonal_skills",
+      "reverse": true,
+      "urgent": false,
+      "text": "During close relationships, I balanced my goals, the relationship, and my self-respect."
+    },
+    {
+      "id": "BP-379",
+      "category": "interpersonal_skills",
+      "reverse": false,
+      "urgent": false,
+      "text": "After a disagreement, I gave up my needs or attacked the relationship during disagreement."
+    },
+    {
+      "id": "BP-380",
+      "category": "interpersonal_skills",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I feared rejection, I could ask for what I needed clearly and respectfully."
+    },
+    {
+      "id": "BP-381",
+      "category": "interpersonal_skills",
+      "reverse": false,
+      "urgent": false,
+      "text": "When someone needed space, I expected others to guess my needs and felt hurt when they did not."
+    },
+    {
+      "id": "BP-382",
+      "category": "interpersonal_skills",
+      "reverse": true,
+      "urgent": false,
+      "text": "During emotional stress, I balanced my goals, the relationship, and my self-respect."
+    },
+    {
+      "id": "BP-383",
+      "category": "interpersonal_skills",
+      "reverse": false,
+      "urgent": false,
+      "text": "When plans changed suddenly, I gave up my needs or attacked the relationship during disagreement."
+    },
+    {
+      "id": "BP-384",
+      "category": "interpersonal_skills",
+      "reverse": true,
+      "urgent": false,
+      "text": "After receiving criticism, I could ask for what I needed clearly and respectfully."
+    },
+    {
+      "id": "BP-385",
+      "category": "interpersonal_skills",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I felt misunderstood, I expected others to guess my needs and felt hurt when they did not."
+    },
+    {
+      "id": "BP-386",
+      "category": "interpersonal_skills",
+      "reverse": true,
+      "urgent": false,
+      "text": "While making an important choice, I balanced my goals, the relationship, and my self-respect."
+    },
+    {
+      "id": "BP-387",
+      "category": "interpersonal_skills",
+      "reverse": false,
+      "urgent": false,
+      "text": "During moments of intense closeness, I gave up my needs or attacked the relationship during disagreement."
+    },
+    {
+      "id": "BP-388",
+      "category": "interpersonal_skills",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I was alone, I could ask for what I needed clearly and respectfully."
+    },
+    {
+      "id": "BP-389",
+      "category": "interpersonal_skills",
+      "reverse": false,
+      "urgent": false,
+      "text": "When anger began to rise, I expected others to guess my needs and felt hurt when they did not."
+    },
+    {
+      "id": "BP-390",
+      "category": "interpersonal_skills",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I noticed a strong urge, I balanced my goals, the relationship, and my self-respect."
+    },
+    {
+      "id": "BP-391",
+      "category": "interpersonal_skills",
+      "reverse": false,
+      "urgent": false,
+      "text": "After making a mistake, I gave up my needs or attacked the relationship during disagreement."
+    },
+    {
+      "id": "BP-392",
+      "category": "interpersonal_skills",
+      "reverse": true,
+      "urgent": false,
+      "text": "When trust felt uncertain, I could ask for what I needed clearly and respectfully."
+    },
+    {
+      "id": "BP-393",
+      "category": "interpersonal_skills",
+      "reverse": false,
+      "urgent": false,
+      "text": "During ordinary responsibilities, I expected others to guess my needs and felt hurt when they did not."
+    },
+    {
+      "id": "BP-394",
+      "category": "interpersonal_skills",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I needed reassurance, I balanced my goals, the relationship, and my self-respect."
+    },
+    {
+      "id": "BP-395",
+      "category": "interpersonal_skills",
+      "reverse": false,
+      "urgent": false,
+      "text": "After feeling excluded, I gave up my needs or attacked the relationship during disagreement."
+    },
+    {
+      "id": "BP-396",
+      "category": "interpersonal_skills",
+      "reverse": true,
+      "urgent": false,
+      "text": "While thinking about who I am, I could ask for what I needed clearly and respectfully."
+    },
+    {
+      "id": "BP-397",
+      "category": "interpersonal_skills",
+      "reverse": false,
+      "urgent": false,
+      "text": "When another person disappointed me, I expected others to guess my needs and felt hurt when they did not."
+    },
+    {
+      "id": "BP-398",
+      "category": "interpersonal_skills",
+      "reverse": true,
+      "urgent": false,
+      "text": "When my emotions shifted quickly, I balanced my goals, the relationship, and my self-respect."
+    },
+    {
+      "id": "BP-399",
+      "category": "interpersonal_skills",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to calm down, I gave up my needs or attacked the relationship during disagreement."
+    },
+    {
+      "id": "BP-400",
+      "category": "interpersonal_skills",
+      "reverse": true,
+      "urgent": false,
+      "text": "Even when others could not see my distress, I could ask for what I needed clearly and respectfully."
+    },
+    {
+      "id": "BP-401",
+      "category": "conflict_repair",
+      "reverse": true,
+      "urgent": false,
+      "text": "Over recent months, After conflict, I could take responsibility without condemning myself."
+    },
+    {
+      "id": "BP-402",
+      "category": "conflict_repair",
+      "reverse": false,
+      "urgent": false,
+      "text": "Across different settings, After conflict, I cut off contact or tried to end the relationship immediately."
+    },
+    {
+      "id": "BP-403",
+      "category": "conflict_repair",
+      "reverse": true,
+      "urgent": false,
+      "text": "During close relationships, I could return to a difficult conversation when both people were calmer."
+    },
+    {
+      "id": "BP-404",
+      "category": "conflict_repair",
+      "reverse": false,
+      "urgent": false,
+      "text": "After a disagreement, Shame or anger made repair feel impossible."
+    },
+    {
+      "id": "BP-405",
+      "category": "conflict_repair",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I feared rejection, After conflict, I could take responsibility without condemning myself."
+    },
+    {
+      "id": "BP-406",
+      "category": "conflict_repair",
+      "reverse": false,
+      "urgent": false,
+      "text": "When someone needed space, After conflict, I cut off contact or tried to end the relationship immediately."
+    },
+    {
+      "id": "BP-407",
+      "category": "conflict_repair",
+      "reverse": true,
+      "urgent": false,
+      "text": "During emotional stress, I could return to a difficult conversation when both people were calmer."
+    },
+    {
+      "id": "BP-408",
+      "category": "conflict_repair",
+      "reverse": false,
+      "urgent": false,
+      "text": "When plans changed suddenly, Shame or anger made repair feel impossible."
+    },
+    {
+      "id": "BP-409",
+      "category": "conflict_repair",
+      "reverse": true,
+      "urgent": false,
+      "text": "After receiving criticism, After conflict, I could take responsibility without condemning myself."
+    },
+    {
+      "id": "BP-410",
+      "category": "conflict_repair",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I felt misunderstood, After conflict, I cut off contact or tried to end the relationship immediately."
+    },
+    {
+      "id": "BP-411",
+      "category": "conflict_repair",
+      "reverse": true,
+      "urgent": false,
+      "text": "While making an important choice, I could return to a difficult conversation when both people were calmer."
+    },
+    {
+      "id": "BP-412",
+      "category": "conflict_repair",
+      "reverse": false,
+      "urgent": false,
+      "text": "During moments of intense closeness, Shame or anger made repair feel impossible."
+    },
+    {
+      "id": "BP-413",
+      "category": "conflict_repair",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I was alone, After conflict, I could take responsibility without condemning myself."
+    },
+    {
+      "id": "BP-414",
+      "category": "conflict_repair",
+      "reverse": false,
+      "urgent": false,
+      "text": "When anger began to rise, After conflict, I cut off contact or tried to end the relationship immediately."
+    },
+    {
+      "id": "BP-415",
+      "category": "conflict_repair",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I noticed a strong urge, I could return to a difficult conversation when both people were calmer."
+    },
+    {
+      "id": "BP-416",
+      "category": "conflict_repair",
+      "reverse": false,
+      "urgent": false,
+      "text": "After making a mistake, Shame or anger made repair feel impossible."
+    },
+    {
+      "id": "BP-417",
+      "category": "conflict_repair",
+      "reverse": true,
+      "urgent": false,
+      "text": "When trust felt uncertain, After conflict, I could take responsibility without condemning myself."
+    },
+    {
+      "id": "BP-418",
+      "category": "conflict_repair",
+      "reverse": false,
+      "urgent": false,
+      "text": "During ordinary responsibilities, After conflict, I cut off contact or tried to end the relationship immediately."
+    },
+    {
+      "id": "BP-419",
+      "category": "conflict_repair",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I needed reassurance, I could return to a difficult conversation when both people were calmer."
+    },
+    {
+      "id": "BP-420",
+      "category": "conflict_repair",
+      "reverse": false,
+      "urgent": false,
+      "text": "After feeling excluded, Shame or anger made repair feel impossible."
+    },
+    {
+      "id": "BP-421",
+      "category": "conflict_repair",
+      "reverse": true,
+      "urgent": false,
+      "text": "While thinking about who I am, After conflict, I could take responsibility without condemning myself."
+    },
+    {
+      "id": "BP-422",
+      "category": "conflict_repair",
+      "reverse": false,
+      "urgent": false,
+      "text": "When another person disappointed me, After conflict, I cut off contact or tried to end the relationship immediately."
+    },
+    {
+      "id": "BP-423",
+      "category": "conflict_repair",
+      "reverse": true,
+      "urgent": false,
+      "text": "When my emotions shifted quickly, I could return to a difficult conversation when both people were calmer."
+    },
+    {
+      "id": "BP-424",
+      "category": "conflict_repair",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to calm down, Shame or anger made repair feel impossible."
+    },
+    {
+      "id": "BP-425",
+      "category": "conflict_repair",
+      "reverse": true,
+      "urgent": false,
+      "text": "Even when others could not see my distress, After conflict, I could take responsibility without condemning myself."
+    },
+    {
+      "id": "BP-426",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "Over recent months, I maintained essential responsibilities despite emotional difficulty."
+    },
+    {
+      "id": "BP-427",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "Across different settings, Emotional or relationship crises repeatedly disrupted daily responsibilities."
+    },
+    {
+      "id": "BP-428",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "During close relationships, My routines gave me enough structure to keep functioning."
+    },
+    {
+      "id": "BP-429",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "After a disagreement, Rapid internal changes made work, study, or self-care difficult."
+    },
+    {
+      "id": "BP-430",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I feared rejection, I maintained essential responsibilities despite emotional difficulty."
+    },
+    {
+      "id": "BP-431",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "When someone needed space, Emotional or relationship crises repeatedly disrupted daily responsibilities."
+    },
+    {
+      "id": "BP-432",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "During emotional stress, My routines gave me enough structure to keep functioning."
+    },
+    {
+      "id": "BP-433",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "When plans changed suddenly, Rapid internal changes made work, study, or self-care difficult."
+    },
+    {
+      "id": "BP-434",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "After receiving criticism, I maintained essential responsibilities despite emotional difficulty."
+    },
+    {
+      "id": "BP-435",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I felt misunderstood, Emotional or relationship crises repeatedly disrupted daily responsibilities."
+    },
+    {
+      "id": "BP-436",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "While making an important choice, My routines gave me enough structure to keep functioning."
+    },
+    {
+      "id": "BP-437",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "During moments of intense closeness, Rapid internal changes made work, study, or self-care difficult."
+    },
+    {
+      "id": "BP-438",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I was alone, I maintained essential responsibilities despite emotional difficulty."
+    },
+    {
+      "id": "BP-439",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "When anger began to rise, Emotional or relationship crises repeatedly disrupted daily responsibilities."
+    },
+    {
+      "id": "BP-440",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I noticed a strong urge, My routines gave me enough structure to keep functioning."
+    },
+    {
+      "id": "BP-441",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "After making a mistake, Rapid internal changes made work, study, or self-care difficult."
+    },
+    {
+      "id": "BP-442",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "When trust felt uncertain, I maintained essential responsibilities despite emotional difficulty."
+    },
+    {
+      "id": "BP-443",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "During ordinary responsibilities, Emotional or relationship crises repeatedly disrupted daily responsibilities."
+    },
+    {
+      "id": "BP-444",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I needed reassurance, My routines gave me enough structure to keep functioning."
+    },
+    {
+      "id": "BP-445",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "After feeling excluded, Rapid internal changes made work, study, or self-care difficult."
+    },
+    {
+      "id": "BP-446",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "While thinking about who I am, I maintained essential responsibilities despite emotional difficulty."
+    },
+    {
+      "id": "BP-447",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "When another person disappointed me, Emotional or relationship crises repeatedly disrupted daily responsibilities."
+    },
+    {
+      "id": "BP-448",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "When my emotions shifted quickly, My routines gave me enough structure to keep functioning."
+    },
+    {
+      "id": "BP-449",
+      "category": "functioning",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to calm down, Rapid internal changes made work, study, or self-care difficult."
+    },
+    {
+      "id": "BP-450",
+      "category": "functioning",
+      "reverse": true,
+      "urgent": false,
+      "text": "Even when others could not see my distress, I maintained essential responsibilities despite emotional difficulty."
+    },
+    {
+      "id": "BP-451",
+      "category": "help_seeking",
+      "reverse": true,
+      "urgent": false,
+      "text": "Over recent months, I could ask a qualified professional or trusted person for support."
+    },
+    {
+      "id": "BP-452",
+      "category": "help_seeking",
+      "reverse": false,
+      "urgent": false,
+      "text": "Across different settings, I hid severe distress because I expected judgement or rejection."
+    },
+    {
+      "id": "BP-453",
+      "category": "help_seeking",
+      "reverse": true,
+      "urgent": false,
+      "text": "During close relationships, I stayed open to learning skills that may improve emotional stability."
+    },
+    {
+      "id": "BP-454",
+      "category": "help_seeking",
+      "reverse": false,
+      "urgent": false,
+      "text": "After a disagreement, I stopped seeking support as soon as a relationship felt difficult."
+    },
+    {
+      "id": "BP-455",
+      "category": "help_seeking",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I feared rejection, I could ask a qualified professional or trusted person for support."
+    },
+    {
+      "id": "BP-456",
+      "category": "help_seeking",
+      "reverse": false,
+      "urgent": false,
+      "text": "When someone needed space, I hid severe distress because I expected judgement or rejection."
+    },
+    {
+      "id": "BP-457",
+      "category": "help_seeking",
+      "reverse": true,
+      "urgent": false,
+      "text": "During emotional stress, I stayed open to learning skills that may improve emotional stability."
+    },
+    {
+      "id": "BP-458",
+      "category": "help_seeking",
+      "reverse": false,
+      "urgent": false,
+      "text": "When plans changed suddenly, I stopped seeking support as soon as a relationship felt difficult."
+    },
+    {
+      "id": "BP-459",
+      "category": "help_seeking",
+      "reverse": true,
+      "urgent": false,
+      "text": "After receiving criticism, I could ask a qualified professional or trusted person for support."
+    },
+    {
+      "id": "BP-460",
+      "category": "help_seeking",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I felt misunderstood, I hid severe distress because I expected judgement or rejection."
+    },
+    {
+      "id": "BP-461",
+      "category": "help_seeking",
+      "reverse": true,
+      "urgent": false,
+      "text": "While making an important choice, I stayed open to learning skills that may improve emotional stability."
+    },
+    {
+      "id": "BP-462",
+      "category": "help_seeking",
+      "reverse": false,
+      "urgent": false,
+      "text": "During moments of intense closeness, I stopped seeking support as soon as a relationship felt difficult."
+    },
+    {
+      "id": "BP-463",
+      "category": "help_seeking",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I was alone, I could ask a qualified professional or trusted person for support."
+    },
+    {
+      "id": "BP-464",
+      "category": "help_seeking",
+      "reverse": false,
+      "urgent": false,
+      "text": "When anger began to rise, I hid severe distress because I expected judgement or rejection."
+    },
+    {
+      "id": "BP-465",
+      "category": "help_seeking",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I noticed a strong urge, I stayed open to learning skills that may improve emotional stability."
+    },
+    {
+      "id": "BP-466",
+      "category": "help_seeking",
+      "reverse": false,
+      "urgent": false,
+      "text": "After making a mistake, I stopped seeking support as soon as a relationship felt difficult."
+    },
+    {
+      "id": "BP-467",
+      "category": "help_seeking",
+      "reverse": true,
+      "urgent": false,
+      "text": "When trust felt uncertain, I could ask a qualified professional or trusted person for support."
+    },
+    {
+      "id": "BP-468",
+      "category": "help_seeking",
+      "reverse": false,
+      "urgent": false,
+      "text": "During ordinary responsibilities, I hid severe distress because I expected judgement or rejection."
+    },
+    {
+      "id": "BP-469",
+      "category": "help_seeking",
+      "reverse": true,
+      "urgent": false,
+      "text": "When I needed reassurance, I stayed open to learning skills that may improve emotional stability."
+    },
+    {
+      "id": "BP-470",
+      "category": "help_seeking",
+      "reverse": false,
+      "urgent": false,
+      "text": "After feeling excluded, I stopped seeking support as soon as a relationship felt difficult."
+    },
+    {
+      "id": "BP-471",
+      "category": "help_seeking",
+      "reverse": true,
+      "urgent": false,
+      "text": "While thinking about who I am, I could ask a qualified professional or trusted person for support."
+    },
+    {
+      "id": "BP-472",
+      "category": "help_seeking",
+      "reverse": false,
+      "urgent": false,
+      "text": "When another person disappointed me, I hid severe distress because I expected judgement or rejection."
+    },
+    {
+      "id": "BP-473",
+      "category": "help_seeking",
+      "reverse": true,
+      "urgent": false,
+      "text": "When my emotions shifted quickly, I stayed open to learning skills that may improve emotional stability."
+    },
+    {
+      "id": "BP-474",
+      "category": "help_seeking",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to calm down, I stopped seeking support as soon as a relationship felt difficult."
+    },
+    {
+      "id": "BP-475",
+      "category": "help_seeking",
+      "reverse": true,
+      "urgent": false,
+      "text": "Even when others could not see my distress, I could ask a qualified professional or trusted person for support."
+    },
+    {
+      "id": "BP-476",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I felt safe from acting on urges to harm myself."
+    },
+    {
+      "id": "BP-477",
+      "category": "safety",
+      "reverse": false,
+      "urgent": true,
+      "text": "I had thoughts about harming myself."
+    },
+    {
+      "id": "BP-478",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I knew who to contact immediately if I felt unsafe."
+    },
+    {
+      "id": "BP-479",
+      "category": "safety",
+      "reverse": false,
+      "urgent": true,
+      "text": "I felt that I might act on an urge to hurt myself."
+    },
+    {
+      "id": "BP-480",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I could move toward a safer place or supportive person."
+    },
+    {
+      "id": "BP-481",
+      "category": "safety",
+      "reverse": false,
+      "urgent": true,
+      "text": "I had thoughts of ending my life."
+    },
+    {
+      "id": "BP-482",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I was willing to tell someone about self-harm or suicide thoughts."
+    },
+    {
+      "id": "BP-483",
+      "category": "safety",
+      "reverse": false,
+      "urgent": true,
+      "text": "I thought about how or when I might harm myself."
+    },
+    {
+      "id": "BP-484",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I had reasons to stay alive through an intense emotional moment."
+    },
+    {
+      "id": "BP-485",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I could reduce access to anything I might use to hurt myself."
+    },
+    {
+      "id": "BP-486",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I kept crisis or emergency contact information available."
+    },
+    {
+      "id": "BP-487",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I could ask someone to stay with me during a crisis."
+    },
+    {
+      "id": "BP-488",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I believed an intense urge could pass without being acted on."
+    },
+    {
+      "id": "BP-489",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I viewed emergency support as appropriate when safety was uncertain."
+    },
+    {
+      "id": "BP-490",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I could recognise warning signs that mean I need immediate help."
+    },
+    {
+      "id": "BP-491",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I had a basic crisis or safety plan."
+    },
+    {
+      "id": "BP-492",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I could avoid being alone during an unsafe moment."
+    },
+    {
+      "id": "BP-493",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I believed I deserved protection and immediate support."
+    },
+    {
+      "id": "BP-494",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I could tell a professional honestly about serious risk."
+    },
+    {
+      "id": "BP-495",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I knew where local emergency help could be found."
+    },
+    {
+      "id": "BP-496",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I could focus on surviving one intense moment at a time."
+    },
+    {
+      "id": "BP-497",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "At least one person or service supported my safety."
+    },
+    {
+      "id": "BP-498",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I understood that seeking urgent help is not a personal failure."
+    },
+    {
+      "id": "BP-499",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I could use a safer coping action while waiting for support."
+    },
+    {
+      "id": "BP-500",
+      "category": "safety",
+      "reverse": true,
+      "urgent": false,
+      "text": "I knew this reflection cannot determine whether I am safe."
+    }
+  ]
+}

@@ -1,0 +1,3153 @@
+{
+  "meta": {
+    "title": "Self-Esteem Test",
+    "description": "A 500-statement self-reflection assessment covering 20 dimensions closely related to self-esteem.",
+    "scale": {
+      "min": 1,
+      "max": 10,
+      "minLabel": "Strongly disagree",
+      "maxLabel": "Strongly agree"
+    },
+    "categories": [
+      {
+        "id": "self_worth",
+        "label": "Core Self-Worth",
+        "icon": "💎"
+      },
+      {
+        "id": "self_acceptance",
+        "label": "Self-Acceptance",
+        "icon": "🌿"
+      },
+      {
+        "id": "self_respect",
+        "label": "Self-Respect",
+        "icon": "🛡️"
+      },
+      {
+        "id": "personal_confidence",
+        "label": "Personal Confidence",
+        "icon": "⭐"
+      },
+      {
+        "id": "competence",
+        "label": "Sense of Competence",
+        "icon": "🧠"
+      },
+      {
+        "id": "body_image",
+        "label": "Body Image & Appearance",
+        "icon": "🪞"
+      },
+      {
+        "id": "social_confidence",
+        "label": "Social Confidence",
+        "icon": "🤝"
+      },
+      {
+        "id": "belonging",
+        "label": "Belonging & Connection",
+        "icon": "🏡"
+      },
+      {
+        "id": "assertiveness",
+        "label": "Assertiveness",
+        "icon": "🗣️"
+      },
+      {
+        "id": "boundaries",
+        "label": "Healthy Boundaries",
+        "icon": "🚧"
+      },
+      {
+        "id": "resilience",
+        "label": "Resilience After Setbacks",
+        "icon": "🌱"
+      },
+      {
+        "id": "self_compassion",
+        "label": "Self-Compassion",
+        "icon": "💗"
+      },
+      {
+        "id": "inner_dialogue",
+        "label": "Positive Inner Dialogue",
+        "icon": "💭"
+      },
+      {
+        "id": "autonomy",
+        "label": "Autonomy & Decision Confidence",
+        "icon": "🧭"
+      },
+      {
+        "id": "authenticity",
+        "label": "Authenticity",
+        "icon": "🎨"
+      },
+      {
+        "id": "criticism",
+        "label": "Handling Criticism",
+        "icon": "🧱"
+      },
+      {
+        "id": "achievement_balance",
+        "label": "Achievement & Worth Balance",
+        "icon": "🏆"
+      },
+      {
+        "id": "emotional_awareness",
+        "label": "Emotional Self-Trust",
+        "icon": "🌊"
+      },
+      {
+        "id": "growth_hope",
+        "label": "Growth, Hope & Future Self",
+        "icon": "🌅"
+      },
+      {
+        "id": "comparison",
+        "label": "Comparison & External Validation",
+        "icon": "📱"
+      }
+    ],
+    "levels": [
+      {
+        "min": 8.5,
+        "max": 10.01,
+        "label": "Strong & Secure Self-Regard",
+        "emoji": "🌟",
+        "desc": "Your responses suggest a stable sense of worth, healthy self-respect, and confidence that can withstand ordinary setbacks."
+      },
+      {
+        "min": 7,
+        "max": 8.5,
+        "label": "Generally Grounded",
+        "emoji": "🌿",
+        "desc": "Your self-regard appears broadly healthy, with a few situations where doubt or external pressure may still have influence."
+      },
+      {
+        "min": 5.5,
+        "max": 7,
+        "label": "Developing Self-Esteem",
+        "emoji": "🌱",
+        "desc": "You show meaningful strengths alongside areas where kinder self-talk, boundaries, or confidence could be strengthened."
+      },
+      {
+        "min": 4,
+        "max": 5.5,
+        "label": "Self-Esteem Under Strain",
+        "emoji": "🤲",
+        "desc": "Your responses suggest that self-doubt may be affecting several areas. Gentle support and focused practice may be helpful."
+      },
+      {
+        "min": 1,
+        "max": 4,
+        "label": "Consider Extra Support",
+        "emoji": "💛",
+        "desc": "You may be experiencing persistent low self-regard. Consider talking with a trusted person or qualified mental-health professional for support."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "SE-001",
+      "category": "self_worth",
+      "reverse": false,
+      "text": "I believe I have value as a person, on an ordinary day."
+    },
+    {
+      "id": "SE-002",
+      "category": "self_worth",
+      "reverse": true,
+      "text": "I question whether I have much value as a person, after making a noticeable mistake."
+    },
+    {
+      "id": "SE-003",
+      "category": "self_worth",
+      "reverse": false,
+      "text": "I see my worth as something that does not need to be earned, when plans do not work out."
+    },
+    {
+      "id": "SE-004",
+      "category": "self_worth",
+      "reverse": true,
+      "text": "I feel that I must prove I deserve basic respect, while learning something difficult."
+    },
+    {
+      "id": "SE-005",
+      "category": "self_worth",
+      "reverse": false,
+      "text": "I believe I have value as a person, after receiving unexpected criticism."
+    },
+    {
+      "id": "SE-006",
+      "category": "self_worth",
+      "reverse": true,
+      "text": "I question whether I have much value as a person, when someone disagrees with me."
+    },
+    {
+      "id": "SE-007",
+      "category": "self_worth",
+      "reverse": false,
+      "text": "I see my worth as something that does not need to be earned, around people who seem very confident."
+    },
+    {
+      "id": "SE-008",
+      "category": "self_worth",
+      "reverse": true,
+      "text": "I feel that I must prove I deserve basic respect, when I enter a new group."
+    },
+    {
+      "id": "SE-009",
+      "category": "self_worth",
+      "reverse": false,
+      "text": "I believe I have value as a person, after comparing myself with someone online."
+    },
+    {
+      "id": "SE-010",
+      "category": "self_worth",
+      "reverse": true,
+      "text": "I question whether I have much value as a person, when I need to ask for help."
+    },
+    {
+      "id": "SE-011",
+      "category": "self_worth",
+      "reverse": false,
+      "text": "I see my worth as something that does not need to be earned, while making an important choice."
+    },
+    {
+      "id": "SE-012",
+      "category": "self_worth",
+      "reverse": true,
+      "text": "I feel that I must prove I deserve basic respect, when I remember a past failure."
+    },
+    {
+      "id": "SE-013",
+      "category": "self_worth",
+      "reverse": false,
+      "text": "I believe I have value as a person, after completing a demanding task."
+    },
+    {
+      "id": "SE-014",
+      "category": "self_worth",
+      "reverse": true,
+      "text": "I question whether I have much value as a person, when I look at my progress over time."
+    },
+    {
+      "id": "SE-015",
+      "category": "self_worth",
+      "reverse": false,
+      "text": "I see my worth as something that does not need to be earned, during a disagreement with a friend."
+    },
+    {
+      "id": "SE-016",
+      "category": "self_worth",
+      "reverse": true,
+      "text": "I feel that I must prove I deserve basic respect, when I am tired or under pressure."
+    },
+    {
+      "id": "SE-017",
+      "category": "self_worth",
+      "reverse": false,
+      "text": "I believe I have value as a person, after hearing someone else receive praise."
+    },
+    {
+      "id": "SE-018",
+      "category": "self_worth",
+      "reverse": true,
+      "text": "I question whether I have much value as a person, when I have to speak in front of others."
+    },
+    {
+      "id": "SE-019",
+      "category": "self_worth",
+      "reverse": false,
+      "text": "I see my worth as something that does not need to be earned, when my work is not perfect."
+    },
+    {
+      "id": "SE-020",
+      "category": "self_worth",
+      "reverse": true,
+      "text": "I feel that I must prove I deserve basic respect, while setting a personal boundary."
+    },
+    {
+      "id": "SE-021",
+      "category": "self_worth",
+      "reverse": false,
+      "text": "I believe I have value as a person, when I am left out of an activity."
+    },
+    {
+      "id": "SE-022",
+      "category": "self_worth",
+      "reverse": true,
+      "text": "I question whether I have much value as a person, after changing my mind."
+    },
+    {
+      "id": "SE-023",
+      "category": "self_worth",
+      "reverse": false,
+      "text": "I see my worth as something that does not need to be earned, when I notice a personal weakness."
+    },
+    {
+      "id": "SE-024",
+      "category": "self_worth",
+      "reverse": true,
+      "text": "I feel that I must prove I deserve basic respect, while thinking about my future."
+    },
+    {
+      "id": "SE-025",
+      "category": "self_worth",
+      "reverse": false,
+      "text": "I believe I have value as a person, even when nobody is praising me."
+    },
+    {
+      "id": "SE-026",
+      "category": "self_acceptance",
+      "reverse": false,
+      "text": "I accept myself as a whole person, including my imperfections, on an ordinary day."
+    },
+    {
+      "id": "SE-027",
+      "category": "self_acceptance",
+      "reverse": true,
+      "text": "I find it difficult to accept parts of who I am, after making a noticeable mistake."
+    },
+    {
+      "id": "SE-028",
+      "category": "self_acceptance",
+      "reverse": false,
+      "text": "I can acknowledge my limitations without rejecting myself, when plans do not work out."
+    },
+    {
+      "id": "SE-029",
+      "category": "self_acceptance",
+      "reverse": true,
+      "text": "I believe my imperfections make me unacceptable, while learning something difficult."
+    },
+    {
+      "id": "SE-030",
+      "category": "self_acceptance",
+      "reverse": false,
+      "text": "I accept myself as a whole person, including my imperfections, after receiving unexpected criticism."
+    },
+    {
+      "id": "SE-031",
+      "category": "self_acceptance",
+      "reverse": true,
+      "text": "I find it difficult to accept parts of who I am, when someone disagrees with me."
+    },
+    {
+      "id": "SE-032",
+      "category": "self_acceptance",
+      "reverse": false,
+      "text": "I can acknowledge my limitations without rejecting myself, around people who seem very confident."
+    },
+    {
+      "id": "SE-033",
+      "category": "self_acceptance",
+      "reverse": true,
+      "text": "I believe my imperfections make me unacceptable, when I enter a new group."
+    },
+    {
+      "id": "SE-034",
+      "category": "self_acceptance",
+      "reverse": false,
+      "text": "I accept myself as a whole person, including my imperfections, after comparing myself with someone online."
+    },
+    {
+      "id": "SE-035",
+      "category": "self_acceptance",
+      "reverse": true,
+      "text": "I find it difficult to accept parts of who I am, when I need to ask for help."
+    },
+    {
+      "id": "SE-036",
+      "category": "self_acceptance",
+      "reverse": false,
+      "text": "I can acknowledge my limitations without rejecting myself, while making an important choice."
+    },
+    {
+      "id": "SE-037",
+      "category": "self_acceptance",
+      "reverse": true,
+      "text": "I believe my imperfections make me unacceptable, when I remember a past failure."
+    },
+    {
+      "id": "SE-038",
+      "category": "self_acceptance",
+      "reverse": false,
+      "text": "I accept myself as a whole person, including my imperfections, after completing a demanding task."
+    },
+    {
+      "id": "SE-039",
+      "category": "self_acceptance",
+      "reverse": true,
+      "text": "I find it difficult to accept parts of who I am, when I look at my progress over time."
+    },
+    {
+      "id": "SE-040",
+      "category": "self_acceptance",
+      "reverse": false,
+      "text": "I can acknowledge my limitations without rejecting myself, during a disagreement with a friend."
+    },
+    {
+      "id": "SE-041",
+      "category": "self_acceptance",
+      "reverse": true,
+      "text": "I believe my imperfections make me unacceptable, when I am tired or under pressure."
+    },
+    {
+      "id": "SE-042",
+      "category": "self_acceptance",
+      "reverse": false,
+      "text": "I accept myself as a whole person, including my imperfections, after hearing someone else receive praise."
+    },
+    {
+      "id": "SE-043",
+      "category": "self_acceptance",
+      "reverse": true,
+      "text": "I find it difficult to accept parts of who I am, when I have to speak in front of others."
+    },
+    {
+      "id": "SE-044",
+      "category": "self_acceptance",
+      "reverse": false,
+      "text": "I can acknowledge my limitations without rejecting myself, when my work is not perfect."
+    },
+    {
+      "id": "SE-045",
+      "category": "self_acceptance",
+      "reverse": true,
+      "text": "I believe my imperfections make me unacceptable, while setting a personal boundary."
+    },
+    {
+      "id": "SE-046",
+      "category": "self_acceptance",
+      "reverse": false,
+      "text": "I accept myself as a whole person, including my imperfections, when I am left out of an activity."
+    },
+    {
+      "id": "SE-047",
+      "category": "self_acceptance",
+      "reverse": true,
+      "text": "I find it difficult to accept parts of who I am, after changing my mind."
+    },
+    {
+      "id": "SE-048",
+      "category": "self_acceptance",
+      "reverse": false,
+      "text": "I can acknowledge my limitations without rejecting myself, when I notice a personal weakness."
+    },
+    {
+      "id": "SE-049",
+      "category": "self_acceptance",
+      "reverse": true,
+      "text": "I believe my imperfections make me unacceptable, while thinking about my future."
+    },
+    {
+      "id": "SE-050",
+      "category": "self_acceptance",
+      "reverse": false,
+      "text": "I accept myself as a whole person, including my imperfections, even when nobody is praising me."
+    },
+    {
+      "id": "SE-051",
+      "category": "self_respect",
+      "reverse": false,
+      "text": "I treat my needs and dignity as important, on an ordinary day."
+    },
+    {
+      "id": "SE-052",
+      "category": "self_respect",
+      "reverse": true,
+      "text": "I often ignore my own dignity to please others, after making a noticeable mistake."
+    },
+    {
+      "id": "SE-053",
+      "category": "self_respect",
+      "reverse": false,
+      "text": "I speak to myself with the respect I would offer another person, when plans do not work out."
+    },
+    {
+      "id": "SE-054",
+      "category": "self_respect",
+      "reverse": true,
+      "text": "I treat myself more harshly than I would treat anyone else, while learning something difficult."
+    },
+    {
+      "id": "SE-055",
+      "category": "self_respect",
+      "reverse": false,
+      "text": "I treat my needs and dignity as important, after receiving unexpected criticism."
+    },
+    {
+      "id": "SE-056",
+      "category": "self_respect",
+      "reverse": true,
+      "text": "I often ignore my own dignity to please others, when someone disagrees with me."
+    },
+    {
+      "id": "SE-057",
+      "category": "self_respect",
+      "reverse": false,
+      "text": "I speak to myself with the respect I would offer another person, around people who seem very confident."
+    },
+    {
+      "id": "SE-058",
+      "category": "self_respect",
+      "reverse": true,
+      "text": "I treat myself more harshly than I would treat anyone else, when I enter a new group."
+    },
+    {
+      "id": "SE-059",
+      "category": "self_respect",
+      "reverse": false,
+      "text": "I treat my needs and dignity as important, after comparing myself with someone online."
+    },
+    {
+      "id": "SE-060",
+      "category": "self_respect",
+      "reverse": true,
+      "text": "I often ignore my own dignity to please others, when I need to ask for help."
+    },
+    {
+      "id": "SE-061",
+      "category": "self_respect",
+      "reverse": false,
+      "text": "I speak to myself with the respect I would offer another person, while making an important choice."
+    },
+    {
+      "id": "SE-062",
+      "category": "self_respect",
+      "reverse": true,
+      "text": "I treat myself more harshly than I would treat anyone else, when I remember a past failure."
+    },
+    {
+      "id": "SE-063",
+      "category": "self_respect",
+      "reverse": false,
+      "text": "I treat my needs and dignity as important, after completing a demanding task."
+    },
+    {
+      "id": "SE-064",
+      "category": "self_respect",
+      "reverse": true,
+      "text": "I often ignore my own dignity to please others, when I look at my progress over time."
+    },
+    {
+      "id": "SE-065",
+      "category": "self_respect",
+      "reverse": false,
+      "text": "I speak to myself with the respect I would offer another person, during a disagreement with a friend."
+    },
+    {
+      "id": "SE-066",
+      "category": "self_respect",
+      "reverse": true,
+      "text": "I treat myself more harshly than I would treat anyone else, when I am tired or under pressure."
+    },
+    {
+      "id": "SE-067",
+      "category": "self_respect",
+      "reverse": false,
+      "text": "I treat my needs and dignity as important, after hearing someone else receive praise."
+    },
+    {
+      "id": "SE-068",
+      "category": "self_respect",
+      "reverse": true,
+      "text": "I often ignore my own dignity to please others, when I have to speak in front of others."
+    },
+    {
+      "id": "SE-069",
+      "category": "self_respect",
+      "reverse": false,
+      "text": "I speak to myself with the respect I would offer another person, when my work is not perfect."
+    },
+    {
+      "id": "SE-070",
+      "category": "self_respect",
+      "reverse": true,
+      "text": "I treat myself more harshly than I would treat anyone else, while setting a personal boundary."
+    },
+    {
+      "id": "SE-071",
+      "category": "self_respect",
+      "reverse": false,
+      "text": "I treat my needs and dignity as important, when I am left out of an activity."
+    },
+    {
+      "id": "SE-072",
+      "category": "self_respect",
+      "reverse": true,
+      "text": "I often ignore my own dignity to please others, after changing my mind."
+    },
+    {
+      "id": "SE-073",
+      "category": "self_respect",
+      "reverse": false,
+      "text": "I speak to myself with the respect I would offer another person, when I notice a personal weakness."
+    },
+    {
+      "id": "SE-074",
+      "category": "self_respect",
+      "reverse": true,
+      "text": "I treat myself more harshly than I would treat anyone else, while thinking about my future."
+    },
+    {
+      "id": "SE-075",
+      "category": "self_respect",
+      "reverse": false,
+      "text": "I treat my needs and dignity as important, even when nobody is praising me."
+    },
+    {
+      "id": "SE-076",
+      "category": "personal_confidence",
+      "reverse": false,
+      "text": "I trust myself to handle unfamiliar situations, on an ordinary day."
+    },
+    {
+      "id": "SE-077",
+      "category": "personal_confidence",
+      "reverse": true,
+      "text": "I doubt myself before I have even tried, after making a noticeable mistake."
+    },
+    {
+      "id": "SE-078",
+      "category": "personal_confidence",
+      "reverse": false,
+      "text": "I usually believe I can find a useful next step, when plans do not work out."
+    },
+    {
+      "id": "SE-079",
+      "category": "personal_confidence",
+      "reverse": true,
+      "text": "I assume I will be unable to cope with unfamiliar demands, while learning something difficult."
+    },
+    {
+      "id": "SE-080",
+      "category": "personal_confidence",
+      "reverse": false,
+      "text": "I trust myself to handle unfamiliar situations, after receiving unexpected criticism."
+    },
+    {
+      "id": "SE-081",
+      "category": "personal_confidence",
+      "reverse": true,
+      "text": "I doubt myself before I have even tried, when someone disagrees with me."
+    },
+    {
+      "id": "SE-082",
+      "category": "personal_confidence",
+      "reverse": false,
+      "text": "I usually believe I can find a useful next step, around people who seem very confident."
+    },
+    {
+      "id": "SE-083",
+      "category": "personal_confidence",
+      "reverse": true,
+      "text": "I assume I will be unable to cope with unfamiliar demands, when I enter a new group."
+    },
+    {
+      "id": "SE-084",
+      "category": "personal_confidence",
+      "reverse": false,
+      "text": "I trust myself to handle unfamiliar situations, after comparing myself with someone online."
+    },
+    {
+      "id": "SE-085",
+      "category": "personal_confidence",
+      "reverse": true,
+      "text": "I doubt myself before I have even tried, when I need to ask for help."
+    },
+    {
+      "id": "SE-086",
+      "category": "personal_confidence",
+      "reverse": false,
+      "text": "I usually believe I can find a useful next step, while making an important choice."
+    },
+    {
+      "id": "SE-087",
+      "category": "personal_confidence",
+      "reverse": true,
+      "text": "I assume I will be unable to cope with unfamiliar demands, when I remember a past failure."
+    },
+    {
+      "id": "SE-088",
+      "category": "personal_confidence",
+      "reverse": false,
+      "text": "I trust myself to handle unfamiliar situations, after completing a demanding task."
+    },
+    {
+      "id": "SE-089",
+      "category": "personal_confidence",
+      "reverse": true,
+      "text": "I doubt myself before I have even tried, when I look at my progress over time."
+    },
+    {
+      "id": "SE-090",
+      "category": "personal_confidence",
+      "reverse": false,
+      "text": "I usually believe I can find a useful next step, during a disagreement with a friend."
+    },
+    {
+      "id": "SE-091",
+      "category": "personal_confidence",
+      "reverse": true,
+      "text": "I assume I will be unable to cope with unfamiliar demands, when I am tired or under pressure."
+    },
+    {
+      "id": "SE-092",
+      "category": "personal_confidence",
+      "reverse": false,
+      "text": "I trust myself to handle unfamiliar situations, after hearing someone else receive praise."
+    },
+    {
+      "id": "SE-093",
+      "category": "personal_confidence",
+      "reverse": true,
+      "text": "I doubt myself before I have even tried, when I have to speak in front of others."
+    },
+    {
+      "id": "SE-094",
+      "category": "personal_confidence",
+      "reverse": false,
+      "text": "I usually believe I can find a useful next step, when my work is not perfect."
+    },
+    {
+      "id": "SE-095",
+      "category": "personal_confidence",
+      "reverse": true,
+      "text": "I assume I will be unable to cope with unfamiliar demands, while setting a personal boundary."
+    },
+    {
+      "id": "SE-096",
+      "category": "personal_confidence",
+      "reverse": false,
+      "text": "I trust myself to handle unfamiliar situations, when I am left out of an activity."
+    },
+    {
+      "id": "SE-097",
+      "category": "personal_confidence",
+      "reverse": true,
+      "text": "I doubt myself before I have even tried, after changing my mind."
+    },
+    {
+      "id": "SE-098",
+      "category": "personal_confidence",
+      "reverse": false,
+      "text": "I usually believe I can find a useful next step, when I notice a personal weakness."
+    },
+    {
+      "id": "SE-099",
+      "category": "personal_confidence",
+      "reverse": true,
+      "text": "I assume I will be unable to cope with unfamiliar demands, while thinking about my future."
+    },
+    {
+      "id": "SE-100",
+      "category": "personal_confidence",
+      "reverse": false,
+      "text": "I trust myself to handle unfamiliar situations, even when nobody is praising me."
+    },
+    {
+      "id": "SE-101",
+      "category": "competence",
+      "reverse": false,
+      "text": "I recognise the skills and abilities I have developed, on an ordinary day."
+    },
+    {
+      "id": "SE-102",
+      "category": "competence",
+      "reverse": true,
+      "text": "I dismiss my abilities even when there is evidence of them, after making a noticeable mistake."
+    },
+    {
+      "id": "SE-103",
+      "category": "competence",
+      "reverse": false,
+      "text": "I can give myself credit for things I do well, when plans do not work out."
+    },
+    {
+      "id": "SE-104",
+      "category": "competence",
+      "reverse": true,
+      "text": "I struggle to name anything I do competently, while learning something difficult."
+    },
+    {
+      "id": "SE-105",
+      "category": "competence",
+      "reverse": false,
+      "text": "I recognise the skills and abilities I have developed, after receiving unexpected criticism."
+    },
+    {
+      "id": "SE-106",
+      "category": "competence",
+      "reverse": true,
+      "text": "I dismiss my abilities even when there is evidence of them, when someone disagrees with me."
+    },
+    {
+      "id": "SE-107",
+      "category": "competence",
+      "reverse": false,
+      "text": "I can give myself credit for things I do well, around people who seem very confident."
+    },
+    {
+      "id": "SE-108",
+      "category": "competence",
+      "reverse": true,
+      "text": "I struggle to name anything I do competently, when I enter a new group."
+    },
+    {
+      "id": "SE-109",
+      "category": "competence",
+      "reverse": false,
+      "text": "I recognise the skills and abilities I have developed, after comparing myself with someone online."
+    },
+    {
+      "id": "SE-110",
+      "category": "competence",
+      "reverse": true,
+      "text": "I dismiss my abilities even when there is evidence of them, when I need to ask for help."
+    },
+    {
+      "id": "SE-111",
+      "category": "competence",
+      "reverse": false,
+      "text": "I can give myself credit for things I do well, while making an important choice."
+    },
+    {
+      "id": "SE-112",
+      "category": "competence",
+      "reverse": true,
+      "text": "I struggle to name anything I do competently, when I remember a past failure."
+    },
+    {
+      "id": "SE-113",
+      "category": "competence",
+      "reverse": false,
+      "text": "I recognise the skills and abilities I have developed, after completing a demanding task."
+    },
+    {
+      "id": "SE-114",
+      "category": "competence",
+      "reverse": true,
+      "text": "I dismiss my abilities even when there is evidence of them, when I look at my progress over time."
+    },
+    {
+      "id": "SE-115",
+      "category": "competence",
+      "reverse": false,
+      "text": "I can give myself credit for things I do well, during a disagreement with a friend."
+    },
+    {
+      "id": "SE-116",
+      "category": "competence",
+      "reverse": true,
+      "text": "I struggle to name anything I do competently, when I am tired or under pressure."
+    },
+    {
+      "id": "SE-117",
+      "category": "competence",
+      "reverse": false,
+      "text": "I recognise the skills and abilities I have developed, after hearing someone else receive praise."
+    },
+    {
+      "id": "SE-118",
+      "category": "competence",
+      "reverse": true,
+      "text": "I dismiss my abilities even when there is evidence of them, when I have to speak in front of others."
+    },
+    {
+      "id": "SE-119",
+      "category": "competence",
+      "reverse": false,
+      "text": "I can give myself credit for things I do well, when my work is not perfect."
+    },
+    {
+      "id": "SE-120",
+      "category": "competence",
+      "reverse": true,
+      "text": "I struggle to name anything I do competently, while setting a personal boundary."
+    },
+    {
+      "id": "SE-121",
+      "category": "competence",
+      "reverse": false,
+      "text": "I recognise the skills and abilities I have developed, when I am left out of an activity."
+    },
+    {
+      "id": "SE-122",
+      "category": "competence",
+      "reverse": true,
+      "text": "I dismiss my abilities even when there is evidence of them, after changing my mind."
+    },
+    {
+      "id": "SE-123",
+      "category": "competence",
+      "reverse": false,
+      "text": "I can give myself credit for things I do well, when I notice a personal weakness."
+    },
+    {
+      "id": "SE-124",
+      "category": "competence",
+      "reverse": true,
+      "text": "I struggle to name anything I do competently, while thinking about my future."
+    },
+    {
+      "id": "SE-125",
+      "category": "competence",
+      "reverse": false,
+      "text": "I recognise the skills and abilities I have developed, even when nobody is praising me."
+    },
+    {
+      "id": "SE-126",
+      "category": "body_image",
+      "reverse": false,
+      "text": "I can view my body with appreciation rather than constant judgement, on an ordinary day."
+    },
+    {
+      "id": "SE-127",
+      "category": "body_image",
+      "reverse": true,
+      "text": "I judge my whole value mainly by my appearance, after making a noticeable mistake."
+    },
+    {
+      "id": "SE-128",
+      "category": "body_image",
+      "reverse": false,
+      "text": "I believe my appearance does not determine my human worth, when plans do not work out."
+    },
+    {
+      "id": "SE-129",
+      "category": "body_image",
+      "reverse": true,
+      "text": "I focus on perceived physical flaws until they overshadow everything else, while learning something difficult."
+    },
+    {
+      "id": "SE-130",
+      "category": "body_image",
+      "reverse": false,
+      "text": "I can view my body with appreciation rather than constant judgement, after receiving unexpected criticism."
+    },
+    {
+      "id": "SE-131",
+      "category": "body_image",
+      "reverse": true,
+      "text": "I judge my whole value mainly by my appearance, when someone disagrees with me."
+    },
+    {
+      "id": "SE-132",
+      "category": "body_image",
+      "reverse": false,
+      "text": "I believe my appearance does not determine my human worth, around people who seem very confident."
+    },
+    {
+      "id": "SE-133",
+      "category": "body_image",
+      "reverse": true,
+      "text": "I focus on perceived physical flaws until they overshadow everything else, when I enter a new group."
+    },
+    {
+      "id": "SE-134",
+      "category": "body_image",
+      "reverse": false,
+      "text": "I can view my body with appreciation rather than constant judgement, after comparing myself with someone online."
+    },
+    {
+      "id": "SE-135",
+      "category": "body_image",
+      "reverse": true,
+      "text": "I judge my whole value mainly by my appearance, when I need to ask for help."
+    },
+    {
+      "id": "SE-136",
+      "category": "body_image",
+      "reverse": false,
+      "text": "I believe my appearance does not determine my human worth, while making an important choice."
+    },
+    {
+      "id": "SE-137",
+      "category": "body_image",
+      "reverse": true,
+      "text": "I focus on perceived physical flaws until they overshadow everything else, when I remember a past failure."
+    },
+    {
+      "id": "SE-138",
+      "category": "body_image",
+      "reverse": false,
+      "text": "I can view my body with appreciation rather than constant judgement, after completing a demanding task."
+    },
+    {
+      "id": "SE-139",
+      "category": "body_image",
+      "reverse": true,
+      "text": "I judge my whole value mainly by my appearance, when I look at my progress over time."
+    },
+    {
+      "id": "SE-140",
+      "category": "body_image",
+      "reverse": false,
+      "text": "I believe my appearance does not determine my human worth, during a disagreement with a friend."
+    },
+    {
+      "id": "SE-141",
+      "category": "body_image",
+      "reverse": true,
+      "text": "I focus on perceived physical flaws until they overshadow everything else, when I am tired or under pressure."
+    },
+    {
+      "id": "SE-142",
+      "category": "body_image",
+      "reverse": false,
+      "text": "I can view my body with appreciation rather than constant judgement, after hearing someone else receive praise."
+    },
+    {
+      "id": "SE-143",
+      "category": "body_image",
+      "reverse": true,
+      "text": "I judge my whole value mainly by my appearance, when I have to speak in front of others."
+    },
+    {
+      "id": "SE-144",
+      "category": "body_image",
+      "reverse": false,
+      "text": "I believe my appearance does not determine my human worth, when my work is not perfect."
+    },
+    {
+      "id": "SE-145",
+      "category": "body_image",
+      "reverse": true,
+      "text": "I focus on perceived physical flaws until they overshadow everything else, while setting a personal boundary."
+    },
+    {
+      "id": "SE-146",
+      "category": "body_image",
+      "reverse": false,
+      "text": "I can view my body with appreciation rather than constant judgement, when I am left out of an activity."
+    },
+    {
+      "id": "SE-147",
+      "category": "body_image",
+      "reverse": true,
+      "text": "I judge my whole value mainly by my appearance, after changing my mind."
+    },
+    {
+      "id": "SE-148",
+      "category": "body_image",
+      "reverse": false,
+      "text": "I believe my appearance does not determine my human worth, when I notice a personal weakness."
+    },
+    {
+      "id": "SE-149",
+      "category": "body_image",
+      "reverse": true,
+      "text": "I focus on perceived physical flaws until they overshadow everything else, while thinking about my future."
+    },
+    {
+      "id": "SE-150",
+      "category": "body_image",
+      "reverse": false,
+      "text": "I can view my body with appreciation rather than constant judgement, even when nobody is praising me."
+    },
+    {
+      "id": "SE-151",
+      "category": "social_confidence",
+      "reverse": false,
+      "text": "I feel entitled to take up a fair amount of space in social settings, on an ordinary day."
+    },
+    {
+      "id": "SE-152",
+      "category": "social_confidence",
+      "reverse": true,
+      "text": "I feel less worthy than other people in social settings, after making a noticeable mistake."
+    },
+    {
+      "id": "SE-153",
+      "category": "social_confidence",
+      "reverse": false,
+      "text": "I can participate without assuming everyone is judging me, when plans do not work out."
+    },
+    {
+      "id": "SE-154",
+      "category": "social_confidence",
+      "reverse": true,
+      "text": "I expect others to notice only what is wrong with me, while learning something difficult."
+    },
+    {
+      "id": "SE-155",
+      "category": "social_confidence",
+      "reverse": false,
+      "text": "I feel entitled to take up a fair amount of space in social settings, after receiving unexpected criticism."
+    },
+    {
+      "id": "SE-156",
+      "category": "social_confidence",
+      "reverse": true,
+      "text": "I feel less worthy than other people in social settings, when someone disagrees with me."
+    },
+    {
+      "id": "SE-157",
+      "category": "social_confidence",
+      "reverse": false,
+      "text": "I can participate without assuming everyone is judging me, around people who seem very confident."
+    },
+    {
+      "id": "SE-158",
+      "category": "social_confidence",
+      "reverse": true,
+      "text": "I expect others to notice only what is wrong with me, when I enter a new group."
+    },
+    {
+      "id": "SE-159",
+      "category": "social_confidence",
+      "reverse": false,
+      "text": "I feel entitled to take up a fair amount of space in social settings, after comparing myself with someone online."
+    },
+    {
+      "id": "SE-160",
+      "category": "social_confidence",
+      "reverse": true,
+      "text": "I feel less worthy than other people in social settings, when I need to ask for help."
+    },
+    {
+      "id": "SE-161",
+      "category": "social_confidence",
+      "reverse": false,
+      "text": "I can participate without assuming everyone is judging me, while making an important choice."
+    },
+    {
+      "id": "SE-162",
+      "category": "social_confidence",
+      "reverse": true,
+      "text": "I expect others to notice only what is wrong with me, when I remember a past failure."
+    },
+    {
+      "id": "SE-163",
+      "category": "social_confidence",
+      "reverse": false,
+      "text": "I feel entitled to take up a fair amount of space in social settings, after completing a demanding task."
+    },
+    {
+      "id": "SE-164",
+      "category": "social_confidence",
+      "reverse": true,
+      "text": "I feel less worthy than other people in social settings, when I look at my progress over time."
+    },
+    {
+      "id": "SE-165",
+      "category": "social_confidence",
+      "reverse": false,
+      "text": "I can participate without assuming everyone is judging me, during a disagreement with a friend."
+    },
+    {
+      "id": "SE-166",
+      "category": "social_confidence",
+      "reverse": true,
+      "text": "I expect others to notice only what is wrong with me, when I am tired or under pressure."
+    },
+    {
+      "id": "SE-167",
+      "category": "social_confidence",
+      "reverse": false,
+      "text": "I feel entitled to take up a fair amount of space in social settings, after hearing someone else receive praise."
+    },
+    {
+      "id": "SE-168",
+      "category": "social_confidence",
+      "reverse": true,
+      "text": "I feel less worthy than other people in social settings, when I have to speak in front of others."
+    },
+    {
+      "id": "SE-169",
+      "category": "social_confidence",
+      "reverse": false,
+      "text": "I can participate without assuming everyone is judging me, when my work is not perfect."
+    },
+    {
+      "id": "SE-170",
+      "category": "social_confidence",
+      "reverse": true,
+      "text": "I expect others to notice only what is wrong with me, while setting a personal boundary."
+    },
+    {
+      "id": "SE-171",
+      "category": "social_confidence",
+      "reverse": false,
+      "text": "I feel entitled to take up a fair amount of space in social settings, when I am left out of an activity."
+    },
+    {
+      "id": "SE-172",
+      "category": "social_confidence",
+      "reverse": true,
+      "text": "I feel less worthy than other people in social settings, after changing my mind."
+    },
+    {
+      "id": "SE-173",
+      "category": "social_confidence",
+      "reverse": false,
+      "text": "I can participate without assuming everyone is judging me, when I notice a personal weakness."
+    },
+    {
+      "id": "SE-174",
+      "category": "social_confidence",
+      "reverse": true,
+      "text": "I expect others to notice only what is wrong with me, while thinking about my future."
+    },
+    {
+      "id": "SE-175",
+      "category": "social_confidence",
+      "reverse": false,
+      "text": "I feel entitled to take up a fair amount of space in social settings, even when nobody is praising me."
+    },
+    {
+      "id": "SE-176",
+      "category": "belonging",
+      "reverse": false,
+      "text": "I believe I am worthy of caring and supportive relationships, on an ordinary day."
+    },
+    {
+      "id": "SE-177",
+      "category": "belonging",
+      "reverse": true,
+      "text": "I often feel I do not deserve close relationships, after making a noticeable mistake."
+    },
+    {
+      "id": "SE-178",
+      "category": "belonging",
+      "reverse": false,
+      "text": "I can feel that I belong without changing my entire personality, when plans do not work out."
+    },
+    {
+      "id": "SE-179",
+      "category": "belonging",
+      "reverse": true,
+      "text": "I believe I must become someone else before I can belong, while learning something difficult."
+    },
+    {
+      "id": "SE-180",
+      "category": "belonging",
+      "reverse": false,
+      "text": "I believe I am worthy of caring and supportive relationships, after receiving unexpected criticism."
+    },
+    {
+      "id": "SE-181",
+      "category": "belonging",
+      "reverse": true,
+      "text": "I often feel I do not deserve close relationships, when someone disagrees with me."
+    },
+    {
+      "id": "SE-182",
+      "category": "belonging",
+      "reverse": false,
+      "text": "I can feel that I belong without changing my entire personality, around people who seem very confident."
+    },
+    {
+      "id": "SE-183",
+      "category": "belonging",
+      "reverse": true,
+      "text": "I believe I must become someone else before I can belong, when I enter a new group."
+    },
+    {
+      "id": "SE-184",
+      "category": "belonging",
+      "reverse": false,
+      "text": "I believe I am worthy of caring and supportive relationships, after comparing myself with someone online."
+    },
+    {
+      "id": "SE-185",
+      "category": "belonging",
+      "reverse": true,
+      "text": "I often feel I do not deserve close relationships, when I need to ask for help."
+    },
+    {
+      "id": "SE-186",
+      "category": "belonging",
+      "reverse": false,
+      "text": "I can feel that I belong without changing my entire personality, while making an important choice."
+    },
+    {
+      "id": "SE-187",
+      "category": "belonging",
+      "reverse": true,
+      "text": "I believe I must become someone else before I can belong, when I remember a past failure."
+    },
+    {
+      "id": "SE-188",
+      "category": "belonging",
+      "reverse": false,
+      "text": "I believe I am worthy of caring and supportive relationships, after completing a demanding task."
+    },
+    {
+      "id": "SE-189",
+      "category": "belonging",
+      "reverse": true,
+      "text": "I often feel I do not deserve close relationships, when I look at my progress over time."
+    },
+    {
+      "id": "SE-190",
+      "category": "belonging",
+      "reverse": false,
+      "text": "I can feel that I belong without changing my entire personality, during a disagreement with a friend."
+    },
+    {
+      "id": "SE-191",
+      "category": "belonging",
+      "reverse": true,
+      "text": "I believe I must become someone else before I can belong, when I am tired or under pressure."
+    },
+    {
+      "id": "SE-192",
+      "category": "belonging",
+      "reverse": false,
+      "text": "I believe I am worthy of caring and supportive relationships, after hearing someone else receive praise."
+    },
+    {
+      "id": "SE-193",
+      "category": "belonging",
+      "reverse": true,
+      "text": "I often feel I do not deserve close relationships, when I have to speak in front of others."
+    },
+    {
+      "id": "SE-194",
+      "category": "belonging",
+      "reverse": false,
+      "text": "I can feel that I belong without changing my entire personality, when my work is not perfect."
+    },
+    {
+      "id": "SE-195",
+      "category": "belonging",
+      "reverse": true,
+      "text": "I believe I must become someone else before I can belong, while setting a personal boundary."
+    },
+    {
+      "id": "SE-196",
+      "category": "belonging",
+      "reverse": false,
+      "text": "I believe I am worthy of caring and supportive relationships, when I am left out of an activity."
+    },
+    {
+      "id": "SE-197",
+      "category": "belonging",
+      "reverse": true,
+      "text": "I often feel I do not deserve close relationships, after changing my mind."
+    },
+    {
+      "id": "SE-198",
+      "category": "belonging",
+      "reverse": false,
+      "text": "I can feel that I belong without changing my entire personality, when I notice a personal weakness."
+    },
+    {
+      "id": "SE-199",
+      "category": "belonging",
+      "reverse": true,
+      "text": "I believe I must become someone else before I can belong, while thinking about my future."
+    },
+    {
+      "id": "SE-200",
+      "category": "belonging",
+      "reverse": false,
+      "text": "I believe I am worthy of caring and supportive relationships, even when nobody is praising me."
+    },
+    {
+      "id": "SE-201",
+      "category": "assertiveness",
+      "reverse": false,
+      "text": "I can express my opinion respectfully even when others disagree, on an ordinary day."
+    },
+    {
+      "id": "SE-202",
+      "category": "assertiveness",
+      "reverse": true,
+      "text": "I silence my views because I assume they do not matter, after making a noticeable mistake."
+    },
+    {
+      "id": "SE-203",
+      "category": "assertiveness",
+      "reverse": false,
+      "text": "I allow my preferences to be heard, when plans do not work out."
+    },
+    {
+      "id": "SE-204",
+      "category": "assertiveness",
+      "reverse": true,
+      "text": "I agree outwardly even when doing so betrays my real position, while learning something difficult."
+    },
+    {
+      "id": "SE-205",
+      "category": "assertiveness",
+      "reverse": false,
+      "text": "I can express my opinion respectfully even when others disagree, after receiving unexpected criticism."
+    },
+    {
+      "id": "SE-206",
+      "category": "assertiveness",
+      "reverse": true,
+      "text": "I silence my views because I assume they do not matter, when someone disagrees with me."
+    },
+    {
+      "id": "SE-207",
+      "category": "assertiveness",
+      "reverse": false,
+      "text": "I allow my preferences to be heard, around people who seem very confident."
+    },
+    {
+      "id": "SE-208",
+      "category": "assertiveness",
+      "reverse": true,
+      "text": "I agree outwardly even when doing so betrays my real position, when I enter a new group."
+    },
+    {
+      "id": "SE-209",
+      "category": "assertiveness",
+      "reverse": false,
+      "text": "I can express my opinion respectfully even when others disagree, after comparing myself with someone online."
+    },
+    {
+      "id": "SE-210",
+      "category": "assertiveness",
+      "reverse": true,
+      "text": "I silence my views because I assume they do not matter, when I need to ask for help."
+    },
+    {
+      "id": "SE-211",
+      "category": "assertiveness",
+      "reverse": false,
+      "text": "I allow my preferences to be heard, while making an important choice."
+    },
+    {
+      "id": "SE-212",
+      "category": "assertiveness",
+      "reverse": true,
+      "text": "I agree outwardly even when doing so betrays my real position, when I remember a past failure."
+    },
+    {
+      "id": "SE-213",
+      "category": "assertiveness",
+      "reverse": false,
+      "text": "I can express my opinion respectfully even when others disagree, after completing a demanding task."
+    },
+    {
+      "id": "SE-214",
+      "category": "assertiveness",
+      "reverse": true,
+      "text": "I silence my views because I assume they do not matter, when I look at my progress over time."
+    },
+    {
+      "id": "SE-215",
+      "category": "assertiveness",
+      "reverse": false,
+      "text": "I allow my preferences to be heard, during a disagreement with a friend."
+    },
+    {
+      "id": "SE-216",
+      "category": "assertiveness",
+      "reverse": true,
+      "text": "I agree outwardly even when doing so betrays my real position, when I am tired or under pressure."
+    },
+    {
+      "id": "SE-217",
+      "category": "assertiveness",
+      "reverse": false,
+      "text": "I can express my opinion respectfully even when others disagree, after hearing someone else receive praise."
+    },
+    {
+      "id": "SE-218",
+      "category": "assertiveness",
+      "reverse": true,
+      "text": "I silence my views because I assume they do not matter, when I have to speak in front of others."
+    },
+    {
+      "id": "SE-219",
+      "category": "assertiveness",
+      "reverse": false,
+      "text": "I allow my preferences to be heard, when my work is not perfect."
+    },
+    {
+      "id": "SE-220",
+      "category": "assertiveness",
+      "reverse": true,
+      "text": "I agree outwardly even when doing so betrays my real position, while setting a personal boundary."
+    },
+    {
+      "id": "SE-221",
+      "category": "assertiveness",
+      "reverse": false,
+      "text": "I can express my opinion respectfully even when others disagree, when I am left out of an activity."
+    },
+    {
+      "id": "SE-222",
+      "category": "assertiveness",
+      "reverse": true,
+      "text": "I silence my views because I assume they do not matter, after changing my mind."
+    },
+    {
+      "id": "SE-223",
+      "category": "assertiveness",
+      "reverse": false,
+      "text": "I allow my preferences to be heard, when I notice a personal weakness."
+    },
+    {
+      "id": "SE-224",
+      "category": "assertiveness",
+      "reverse": true,
+      "text": "I agree outwardly even when doing so betrays my real position, while thinking about my future."
+    },
+    {
+      "id": "SE-225",
+      "category": "assertiveness",
+      "reverse": false,
+      "text": "I can express my opinion respectfully even when others disagree, even when nobody is praising me."
+    },
+    {
+      "id": "SE-226",
+      "category": "boundaries",
+      "reverse": false,
+      "text": "I can say no when a request conflicts with my wellbeing, on an ordinary day."
+    },
+    {
+      "id": "SE-227",
+      "category": "boundaries",
+      "reverse": true,
+      "text": "I feel selfish whenever I set a reasonable limit, after making a noticeable mistake."
+    },
+    {
+      "id": "SE-228",
+      "category": "boundaries",
+      "reverse": false,
+      "text": "I believe protecting reasonable limits is an act of self-respect, when plans do not work out."
+    },
+    {
+      "id": "SE-229",
+      "category": "boundaries",
+      "reverse": true,
+      "text": "I let people cross my limits because I fear losing their approval, while learning something difficult."
+    },
+    {
+      "id": "SE-230",
+      "category": "boundaries",
+      "reverse": false,
+      "text": "I can say no when a request conflicts with my wellbeing, after receiving unexpected criticism."
+    },
+    {
+      "id": "SE-231",
+      "category": "boundaries",
+      "reverse": true,
+      "text": "I feel selfish whenever I set a reasonable limit, when someone disagrees with me."
+    },
+    {
+      "id": "SE-232",
+      "category": "boundaries",
+      "reverse": false,
+      "text": "I believe protecting reasonable limits is an act of self-respect, around people who seem very confident."
+    },
+    {
+      "id": "SE-233",
+      "category": "boundaries",
+      "reverse": true,
+      "text": "I let people cross my limits because I fear losing their approval, when I enter a new group."
+    },
+    {
+      "id": "SE-234",
+      "category": "boundaries",
+      "reverse": false,
+      "text": "I can say no when a request conflicts with my wellbeing, after comparing myself with someone online."
+    },
+    {
+      "id": "SE-235",
+      "category": "boundaries",
+      "reverse": true,
+      "text": "I feel selfish whenever I set a reasonable limit, when I need to ask for help."
+    },
+    {
+      "id": "SE-236",
+      "category": "boundaries",
+      "reverse": false,
+      "text": "I believe protecting reasonable limits is an act of self-respect, while making an important choice."
+    },
+    {
+      "id": "SE-237",
+      "category": "boundaries",
+      "reverse": true,
+      "text": "I let people cross my limits because I fear losing their approval, when I remember a past failure."
+    },
+    {
+      "id": "SE-238",
+      "category": "boundaries",
+      "reverse": false,
+      "text": "I can say no when a request conflicts with my wellbeing, after completing a demanding task."
+    },
+    {
+      "id": "SE-239",
+      "category": "boundaries",
+      "reverse": true,
+      "text": "I feel selfish whenever I set a reasonable limit, when I look at my progress over time."
+    },
+    {
+      "id": "SE-240",
+      "category": "boundaries",
+      "reverse": false,
+      "text": "I believe protecting reasonable limits is an act of self-respect, during a disagreement with a friend."
+    },
+    {
+      "id": "SE-241",
+      "category": "boundaries",
+      "reverse": true,
+      "text": "I let people cross my limits because I fear losing their approval, when I am tired or under pressure."
+    },
+    {
+      "id": "SE-242",
+      "category": "boundaries",
+      "reverse": false,
+      "text": "I can say no when a request conflicts with my wellbeing, after hearing someone else receive praise."
+    },
+    {
+      "id": "SE-243",
+      "category": "boundaries",
+      "reverse": true,
+      "text": "I feel selfish whenever I set a reasonable limit, when I have to speak in front of others."
+    },
+    {
+      "id": "SE-244",
+      "category": "boundaries",
+      "reverse": false,
+      "text": "I believe protecting reasonable limits is an act of self-respect, when my work is not perfect."
+    },
+    {
+      "id": "SE-245",
+      "category": "boundaries",
+      "reverse": true,
+      "text": "I let people cross my limits because I fear losing their approval, while setting a personal boundary."
+    },
+    {
+      "id": "SE-246",
+      "category": "boundaries",
+      "reverse": false,
+      "text": "I can say no when a request conflicts with my wellbeing, when I am left out of an activity."
+    },
+    {
+      "id": "SE-247",
+      "category": "boundaries",
+      "reverse": true,
+      "text": "I feel selfish whenever I set a reasonable limit, after changing my mind."
+    },
+    {
+      "id": "SE-248",
+      "category": "boundaries",
+      "reverse": false,
+      "text": "I believe protecting reasonable limits is an act of self-respect, when I notice a personal weakness."
+    },
+    {
+      "id": "SE-249",
+      "category": "boundaries",
+      "reverse": true,
+      "text": "I let people cross my limits because I fear losing their approval, while thinking about my future."
+    },
+    {
+      "id": "SE-250",
+      "category": "boundaries",
+      "reverse": false,
+      "text": "I can say no when a request conflicts with my wellbeing, even when nobody is praising me."
+    },
+    {
+      "id": "SE-251",
+      "category": "resilience",
+      "reverse": false,
+      "text": "I can recover my sense of worth after a setback, on an ordinary day."
+    },
+    {
+      "id": "SE-252",
+      "category": "resilience",
+      "reverse": true,
+      "text": "A setback makes me feel permanently inadequate, after making a noticeable mistake."
+    },
+    {
+      "id": "SE-253",
+      "category": "resilience",
+      "reverse": false,
+      "text": "I view failure as an event rather than a definition of who I am, when plans do not work out."
+    },
+    {
+      "id": "SE-254",
+      "category": "resilience",
+      "reverse": true,
+      "text": "I treat one failure as proof that I will always fail, while learning something difficult."
+    },
+    {
+      "id": "SE-255",
+      "category": "resilience",
+      "reverse": false,
+      "text": "I can recover my sense of worth after a setback, after receiving unexpected criticism."
+    },
+    {
+      "id": "SE-256",
+      "category": "resilience",
+      "reverse": true,
+      "text": "A setback makes me feel permanently inadequate, when someone disagrees with me."
+    },
+    {
+      "id": "SE-257",
+      "category": "resilience",
+      "reverse": false,
+      "text": "I view failure as an event rather than a definition of who I am, around people who seem very confident."
+    },
+    {
+      "id": "SE-258",
+      "category": "resilience",
+      "reverse": true,
+      "text": "I treat one failure as proof that I will always fail, when I enter a new group."
+    },
+    {
+      "id": "SE-259",
+      "category": "resilience",
+      "reverse": false,
+      "text": "I can recover my sense of worth after a setback, after comparing myself with someone online."
+    },
+    {
+      "id": "SE-260",
+      "category": "resilience",
+      "reverse": true,
+      "text": "A setback makes me feel permanently inadequate, when I need to ask for help."
+    },
+    {
+      "id": "SE-261",
+      "category": "resilience",
+      "reverse": false,
+      "text": "I view failure as an event rather than a definition of who I am, while making an important choice."
+    },
+    {
+      "id": "SE-262",
+      "category": "resilience",
+      "reverse": true,
+      "text": "I treat one failure as proof that I will always fail, when I remember a past failure."
+    },
+    {
+      "id": "SE-263",
+      "category": "resilience",
+      "reverse": false,
+      "text": "I can recover my sense of worth after a setback, after completing a demanding task."
+    },
+    {
+      "id": "SE-264",
+      "category": "resilience",
+      "reverse": true,
+      "text": "A setback makes me feel permanently inadequate, when I look at my progress over time."
+    },
+    {
+      "id": "SE-265",
+      "category": "resilience",
+      "reverse": false,
+      "text": "I view failure as an event rather than a definition of who I am, during a disagreement with a friend."
+    },
+    {
+      "id": "SE-266",
+      "category": "resilience",
+      "reverse": true,
+      "text": "I treat one failure as proof that I will always fail, when I am tired or under pressure."
+    },
+    {
+      "id": "SE-267",
+      "category": "resilience",
+      "reverse": false,
+      "text": "I can recover my sense of worth after a setback, after hearing someone else receive praise."
+    },
+    {
+      "id": "SE-268",
+      "category": "resilience",
+      "reverse": true,
+      "text": "A setback makes me feel permanently inadequate, when I have to speak in front of others."
+    },
+    {
+      "id": "SE-269",
+      "category": "resilience",
+      "reverse": false,
+      "text": "I view failure as an event rather than a definition of who I am, when my work is not perfect."
+    },
+    {
+      "id": "SE-270",
+      "category": "resilience",
+      "reverse": true,
+      "text": "I treat one failure as proof that I will always fail, while setting a personal boundary."
+    },
+    {
+      "id": "SE-271",
+      "category": "resilience",
+      "reverse": false,
+      "text": "I can recover my sense of worth after a setback, when I am left out of an activity."
+    },
+    {
+      "id": "SE-272",
+      "category": "resilience",
+      "reverse": true,
+      "text": "A setback makes me feel permanently inadequate, after changing my mind."
+    },
+    {
+      "id": "SE-273",
+      "category": "resilience",
+      "reverse": false,
+      "text": "I view failure as an event rather than a definition of who I am, when I notice a personal weakness."
+    },
+    {
+      "id": "SE-274",
+      "category": "resilience",
+      "reverse": true,
+      "text": "I treat one failure as proof that I will always fail, while thinking about my future."
+    },
+    {
+      "id": "SE-275",
+      "category": "resilience",
+      "reverse": false,
+      "text": "I can recover my sense of worth after a setback, even when nobody is praising me."
+    },
+    {
+      "id": "SE-276",
+      "category": "self_compassion",
+      "reverse": false,
+      "text": "I respond to my struggles with patience and kindness, on an ordinary day."
+    },
+    {
+      "id": "SE-277",
+      "category": "self_compassion",
+      "reverse": true,
+      "text": "I punish myself mentally whenever I struggle, after making a noticeable mistake."
+    },
+    {
+      "id": "SE-278",
+      "category": "self_compassion",
+      "reverse": false,
+      "text": "I allow myself the same compassion I would give a friend, when plans do not work out."
+    },
+    {
+      "id": "SE-279",
+      "category": "self_compassion",
+      "reverse": true,
+      "text": "I believe kindness toward myself would make me weak, while learning something difficult."
+    },
+    {
+      "id": "SE-280",
+      "category": "self_compassion",
+      "reverse": false,
+      "text": "I respond to my struggles with patience and kindness, after receiving unexpected criticism."
+    },
+    {
+      "id": "SE-281",
+      "category": "self_compassion",
+      "reverse": true,
+      "text": "I punish myself mentally whenever I struggle, when someone disagrees with me."
+    },
+    {
+      "id": "SE-282",
+      "category": "self_compassion",
+      "reverse": false,
+      "text": "I allow myself the same compassion I would give a friend, around people who seem very confident."
+    },
+    {
+      "id": "SE-283",
+      "category": "self_compassion",
+      "reverse": true,
+      "text": "I believe kindness toward myself would make me weak, when I enter a new group."
+    },
+    {
+      "id": "SE-284",
+      "category": "self_compassion",
+      "reverse": false,
+      "text": "I respond to my struggles with patience and kindness, after comparing myself with someone online."
+    },
+    {
+      "id": "SE-285",
+      "category": "self_compassion",
+      "reverse": true,
+      "text": "I punish myself mentally whenever I struggle, when I need to ask for help."
+    },
+    {
+      "id": "SE-286",
+      "category": "self_compassion",
+      "reverse": false,
+      "text": "I allow myself the same compassion I would give a friend, while making an important choice."
+    },
+    {
+      "id": "SE-287",
+      "category": "self_compassion",
+      "reverse": true,
+      "text": "I believe kindness toward myself would make me weak, when I remember a past failure."
+    },
+    {
+      "id": "SE-288",
+      "category": "self_compassion",
+      "reverse": false,
+      "text": "I respond to my struggles with patience and kindness, after completing a demanding task."
+    },
+    {
+      "id": "SE-289",
+      "category": "self_compassion",
+      "reverse": true,
+      "text": "I punish myself mentally whenever I struggle, when I look at my progress over time."
+    },
+    {
+      "id": "SE-290",
+      "category": "self_compassion",
+      "reverse": false,
+      "text": "I allow myself the same compassion I would give a friend, during a disagreement with a friend."
+    },
+    {
+      "id": "SE-291",
+      "category": "self_compassion",
+      "reverse": true,
+      "text": "I believe kindness toward myself would make me weak, when I am tired or under pressure."
+    },
+    {
+      "id": "SE-292",
+      "category": "self_compassion",
+      "reverse": false,
+      "text": "I respond to my struggles with patience and kindness, after hearing someone else receive praise."
+    },
+    {
+      "id": "SE-293",
+      "category": "self_compassion",
+      "reverse": true,
+      "text": "I punish myself mentally whenever I struggle, when I have to speak in front of others."
+    },
+    {
+      "id": "SE-294",
+      "category": "self_compassion",
+      "reverse": false,
+      "text": "I allow myself the same compassion I would give a friend, when my work is not perfect."
+    },
+    {
+      "id": "SE-295",
+      "category": "self_compassion",
+      "reverse": true,
+      "text": "I believe kindness toward myself would make me weak, while setting a personal boundary."
+    },
+    {
+      "id": "SE-296",
+      "category": "self_compassion",
+      "reverse": false,
+      "text": "I respond to my struggles with patience and kindness, when I am left out of an activity."
+    },
+    {
+      "id": "SE-297",
+      "category": "self_compassion",
+      "reverse": true,
+      "text": "I punish myself mentally whenever I struggle, after changing my mind."
+    },
+    {
+      "id": "SE-298",
+      "category": "self_compassion",
+      "reverse": false,
+      "text": "I allow myself the same compassion I would give a friend, when I notice a personal weakness."
+    },
+    {
+      "id": "SE-299",
+      "category": "self_compassion",
+      "reverse": true,
+      "text": "I believe kindness toward myself would make me weak, while thinking about my future."
+    },
+    {
+      "id": "SE-300",
+      "category": "self_compassion",
+      "reverse": false,
+      "text": "I respond to my struggles with patience and kindness, even when nobody is praising me."
+    },
+    {
+      "id": "SE-301",
+      "category": "inner_dialogue",
+      "reverse": false,
+      "text": "My inner voice is generally fair and constructive, on an ordinary day."
+    },
+    {
+      "id": "SE-302",
+      "category": "inner_dialogue",
+      "reverse": true,
+      "text": "My inner voice regularly insults or belittles me, after making a noticeable mistake."
+    },
+    {
+      "id": "SE-303",
+      "category": "inner_dialogue",
+      "reverse": false,
+      "text": "I can challenge thoughts that unfairly put me down, when plans do not work out."
+    },
+    {
+      "id": "SE-304",
+      "category": "inner_dialogue",
+      "reverse": true,
+      "text": "I accept every self-critical thought as if it were a fact, while learning something difficult."
+    },
+    {
+      "id": "SE-305",
+      "category": "inner_dialogue",
+      "reverse": false,
+      "text": "My inner voice is generally fair and constructive, after receiving unexpected criticism."
+    },
+    {
+      "id": "SE-306",
+      "category": "inner_dialogue",
+      "reverse": true,
+      "text": "My inner voice regularly insults or belittles me, when someone disagrees with me."
+    },
+    {
+      "id": "SE-307",
+      "category": "inner_dialogue",
+      "reverse": false,
+      "text": "I can challenge thoughts that unfairly put me down, around people who seem very confident."
+    },
+    {
+      "id": "SE-308",
+      "category": "inner_dialogue",
+      "reverse": true,
+      "text": "I accept every self-critical thought as if it were a fact, when I enter a new group."
+    },
+    {
+      "id": "SE-309",
+      "category": "inner_dialogue",
+      "reverse": false,
+      "text": "My inner voice is generally fair and constructive, after comparing myself with someone online."
+    },
+    {
+      "id": "SE-310",
+      "category": "inner_dialogue",
+      "reverse": true,
+      "text": "My inner voice regularly insults or belittles me, when I need to ask for help."
+    },
+    {
+      "id": "SE-311",
+      "category": "inner_dialogue",
+      "reverse": false,
+      "text": "I can challenge thoughts that unfairly put me down, while making an important choice."
+    },
+    {
+      "id": "SE-312",
+      "category": "inner_dialogue",
+      "reverse": true,
+      "text": "I accept every self-critical thought as if it were a fact, when I remember a past failure."
+    },
+    {
+      "id": "SE-313",
+      "category": "inner_dialogue",
+      "reverse": false,
+      "text": "My inner voice is generally fair and constructive, after completing a demanding task."
+    },
+    {
+      "id": "SE-314",
+      "category": "inner_dialogue",
+      "reverse": true,
+      "text": "My inner voice regularly insults or belittles me, when I look at my progress over time."
+    },
+    {
+      "id": "SE-315",
+      "category": "inner_dialogue",
+      "reverse": false,
+      "text": "I can challenge thoughts that unfairly put me down, during a disagreement with a friend."
+    },
+    {
+      "id": "SE-316",
+      "category": "inner_dialogue",
+      "reverse": true,
+      "text": "I accept every self-critical thought as if it were a fact, when I am tired or under pressure."
+    },
+    {
+      "id": "SE-317",
+      "category": "inner_dialogue",
+      "reverse": false,
+      "text": "My inner voice is generally fair and constructive, after hearing someone else receive praise."
+    },
+    {
+      "id": "SE-318",
+      "category": "inner_dialogue",
+      "reverse": true,
+      "text": "My inner voice regularly insults or belittles me, when I have to speak in front of others."
+    },
+    {
+      "id": "SE-319",
+      "category": "inner_dialogue",
+      "reverse": false,
+      "text": "I can challenge thoughts that unfairly put me down, when my work is not perfect."
+    },
+    {
+      "id": "SE-320",
+      "category": "inner_dialogue",
+      "reverse": true,
+      "text": "I accept every self-critical thought as if it were a fact, while setting a personal boundary."
+    },
+    {
+      "id": "SE-321",
+      "category": "inner_dialogue",
+      "reverse": false,
+      "text": "My inner voice is generally fair and constructive, when I am left out of an activity."
+    },
+    {
+      "id": "SE-322",
+      "category": "inner_dialogue",
+      "reverse": true,
+      "text": "My inner voice regularly insults or belittles me, after changing my mind."
+    },
+    {
+      "id": "SE-323",
+      "category": "inner_dialogue",
+      "reverse": false,
+      "text": "I can challenge thoughts that unfairly put me down, when I notice a personal weakness."
+    },
+    {
+      "id": "SE-324",
+      "category": "inner_dialogue",
+      "reverse": true,
+      "text": "I accept every self-critical thought as if it were a fact, while thinking about my future."
+    },
+    {
+      "id": "SE-325",
+      "category": "inner_dialogue",
+      "reverse": false,
+      "text": "My inner voice is generally fair and constructive, even when nobody is praising me."
+    },
+    {
+      "id": "SE-326",
+      "category": "autonomy",
+      "reverse": false,
+      "text": "I trust myself to make age-appropriate personal decisions, on an ordinary day."
+    },
+    {
+      "id": "SE-327",
+      "category": "autonomy",
+      "reverse": true,
+      "text": "I assume other people always know what is best for me, after making a noticeable mistake."
+    },
+    {
+      "id": "SE-328",
+      "category": "autonomy",
+      "reverse": false,
+      "text": "I can consider advice without surrendering all judgement to others, when plans do not work out."
+    },
+    {
+      "id": "SE-329",
+      "category": "autonomy",
+      "reverse": true,
+      "text": "I feel incapable of making even ordinary personal choices, while learning something difficult."
+    },
+    {
+      "id": "SE-330",
+      "category": "autonomy",
+      "reverse": false,
+      "text": "I trust myself to make age-appropriate personal decisions, after receiving unexpected criticism."
+    },
+    {
+      "id": "SE-331",
+      "category": "autonomy",
+      "reverse": true,
+      "text": "I assume other people always know what is best for me, when someone disagrees with me."
+    },
+    {
+      "id": "SE-332",
+      "category": "autonomy",
+      "reverse": false,
+      "text": "I can consider advice without surrendering all judgement to others, around people who seem very confident."
+    },
+    {
+      "id": "SE-333",
+      "category": "autonomy",
+      "reverse": true,
+      "text": "I feel incapable of making even ordinary personal choices, when I enter a new group."
+    },
+    {
+      "id": "SE-334",
+      "category": "autonomy",
+      "reverse": false,
+      "text": "I trust myself to make age-appropriate personal decisions, after comparing myself with someone online."
+    },
+    {
+      "id": "SE-335",
+      "category": "autonomy",
+      "reverse": true,
+      "text": "I assume other people always know what is best for me, when I need to ask for help."
+    },
+    {
+      "id": "SE-336",
+      "category": "autonomy",
+      "reverse": false,
+      "text": "I can consider advice without surrendering all judgement to others, while making an important choice."
+    },
+    {
+      "id": "SE-337",
+      "category": "autonomy",
+      "reverse": true,
+      "text": "I feel incapable of making even ordinary personal choices, when I remember a past failure."
+    },
+    {
+      "id": "SE-338",
+      "category": "autonomy",
+      "reverse": false,
+      "text": "I trust myself to make age-appropriate personal decisions, after completing a demanding task."
+    },
+    {
+      "id": "SE-339",
+      "category": "autonomy",
+      "reverse": true,
+      "text": "I assume other people always know what is best for me, when I look at my progress over time."
+    },
+    {
+      "id": "SE-340",
+      "category": "autonomy",
+      "reverse": false,
+      "text": "I can consider advice without surrendering all judgement to others, during a disagreement with a friend."
+    },
+    {
+      "id": "SE-341",
+      "category": "autonomy",
+      "reverse": true,
+      "text": "I feel incapable of making even ordinary personal choices, when I am tired or under pressure."
+    },
+    {
+      "id": "SE-342",
+      "category": "autonomy",
+      "reverse": false,
+      "text": "I trust myself to make age-appropriate personal decisions, after hearing someone else receive praise."
+    },
+    {
+      "id": "SE-343",
+      "category": "autonomy",
+      "reverse": true,
+      "text": "I assume other people always know what is best for me, when I have to speak in front of others."
+    },
+    {
+      "id": "SE-344",
+      "category": "autonomy",
+      "reverse": false,
+      "text": "I can consider advice without surrendering all judgement to others, when my work is not perfect."
+    },
+    {
+      "id": "SE-345",
+      "category": "autonomy",
+      "reverse": true,
+      "text": "I feel incapable of making even ordinary personal choices, while setting a personal boundary."
+    },
+    {
+      "id": "SE-346",
+      "category": "autonomy",
+      "reverse": false,
+      "text": "I trust myself to make age-appropriate personal decisions, when I am left out of an activity."
+    },
+    {
+      "id": "SE-347",
+      "category": "autonomy",
+      "reverse": true,
+      "text": "I assume other people always know what is best for me, after changing my mind."
+    },
+    {
+      "id": "SE-348",
+      "category": "autonomy",
+      "reverse": false,
+      "text": "I can consider advice without surrendering all judgement to others, when I notice a personal weakness."
+    },
+    {
+      "id": "SE-349",
+      "category": "autonomy",
+      "reverse": true,
+      "text": "I feel incapable of making even ordinary personal choices, while thinking about my future."
+    },
+    {
+      "id": "SE-350",
+      "category": "autonomy",
+      "reverse": false,
+      "text": "I trust myself to make age-appropriate personal decisions, even when nobody is praising me."
+    },
+    {
+      "id": "SE-351",
+      "category": "authenticity",
+      "reverse": false,
+      "text": "I feel able to be genuine rather than constantly performing for approval, on an ordinary day."
+    },
+    {
+      "id": "SE-352",
+      "category": "authenticity",
+      "reverse": true,
+      "text": "I hide my real personality because I expect rejection, after making a noticeable mistake."
+    },
+    {
+      "id": "SE-353",
+      "category": "authenticity",
+      "reverse": false,
+      "text": "I value the parts of me that make my perspective distinctive, when plans do not work out."
+    },
+    {
+      "id": "SE-354",
+      "category": "authenticity",
+      "reverse": true,
+      "text": "I copy others so completely that I lose contact with my own preferences, while learning something difficult."
+    },
+    {
+      "id": "SE-355",
+      "category": "authenticity",
+      "reverse": false,
+      "text": "I feel able to be genuine rather than constantly performing for approval, after receiving unexpected criticism."
+    },
+    {
+      "id": "SE-356",
+      "category": "authenticity",
+      "reverse": true,
+      "text": "I hide my real personality because I expect rejection, when someone disagrees with me."
+    },
+    {
+      "id": "SE-357",
+      "category": "authenticity",
+      "reverse": false,
+      "text": "I value the parts of me that make my perspective distinctive, around people who seem very confident."
+    },
+    {
+      "id": "SE-358",
+      "category": "authenticity",
+      "reverse": true,
+      "text": "I copy others so completely that I lose contact with my own preferences, when I enter a new group."
+    },
+    {
+      "id": "SE-359",
+      "category": "authenticity",
+      "reverse": false,
+      "text": "I feel able to be genuine rather than constantly performing for approval, after comparing myself with someone online."
+    },
+    {
+      "id": "SE-360",
+      "category": "authenticity",
+      "reverse": true,
+      "text": "I hide my real personality because I expect rejection, when I need to ask for help."
+    },
+    {
+      "id": "SE-361",
+      "category": "authenticity",
+      "reverse": false,
+      "text": "I value the parts of me that make my perspective distinctive, while making an important choice."
+    },
+    {
+      "id": "SE-362",
+      "category": "authenticity",
+      "reverse": true,
+      "text": "I copy others so completely that I lose contact with my own preferences, when I remember a past failure."
+    },
+    {
+      "id": "SE-363",
+      "category": "authenticity",
+      "reverse": false,
+      "text": "I feel able to be genuine rather than constantly performing for approval, after completing a demanding task."
+    },
+    {
+      "id": "SE-364",
+      "category": "authenticity",
+      "reverse": true,
+      "text": "I hide my real personality because I expect rejection, when I look at my progress over time."
+    },
+    {
+      "id": "SE-365",
+      "category": "authenticity",
+      "reverse": false,
+      "text": "I value the parts of me that make my perspective distinctive, during a disagreement with a friend."
+    },
+    {
+      "id": "SE-366",
+      "category": "authenticity",
+      "reverse": true,
+      "text": "I copy others so completely that I lose contact with my own preferences, when I am tired or under pressure."
+    },
+    {
+      "id": "SE-367",
+      "category": "authenticity",
+      "reverse": false,
+      "text": "I feel able to be genuine rather than constantly performing for approval, after hearing someone else receive praise."
+    },
+    {
+      "id": "SE-368",
+      "category": "authenticity",
+      "reverse": true,
+      "text": "I hide my real personality because I expect rejection, when I have to speak in front of others."
+    },
+    {
+      "id": "SE-369",
+      "category": "authenticity",
+      "reverse": false,
+      "text": "I value the parts of me that make my perspective distinctive, when my work is not perfect."
+    },
+    {
+      "id": "SE-370",
+      "category": "authenticity",
+      "reverse": true,
+      "text": "I copy others so completely that I lose contact with my own preferences, while setting a personal boundary."
+    },
+    {
+      "id": "SE-371",
+      "category": "authenticity",
+      "reverse": false,
+      "text": "I feel able to be genuine rather than constantly performing for approval, when I am left out of an activity."
+    },
+    {
+      "id": "SE-372",
+      "category": "authenticity",
+      "reverse": true,
+      "text": "I hide my real personality because I expect rejection, after changing my mind."
+    },
+    {
+      "id": "SE-373",
+      "category": "authenticity",
+      "reverse": false,
+      "text": "I value the parts of me that make my perspective distinctive, when I notice a personal weakness."
+    },
+    {
+      "id": "SE-374",
+      "category": "authenticity",
+      "reverse": true,
+      "text": "I copy others so completely that I lose contact with my own preferences, while thinking about my future."
+    },
+    {
+      "id": "SE-375",
+      "category": "authenticity",
+      "reverse": false,
+      "text": "I feel able to be genuine rather than constantly performing for approval, even when nobody is praising me."
+    },
+    {
+      "id": "SE-376",
+      "category": "criticism",
+      "reverse": false,
+      "text": "I can consider criticism without letting it erase my self-respect, on an ordinary day."
+    },
+    {
+      "id": "SE-377",
+      "category": "criticism",
+      "reverse": true,
+      "text": "Any criticism makes me feel completely worthless, after making a noticeable mistake."
+    },
+    {
+      "id": "SE-378",
+      "category": "criticism",
+      "reverse": false,
+      "text": "I separate useful feedback from attacks on my whole identity, when plans do not work out."
+    },
+    {
+      "id": "SE-379",
+      "category": "criticism",
+      "reverse": true,
+      "text": "I replay negative feedback as proof that nothing about me is good, while learning something difficult."
+    },
+    {
+      "id": "SE-380",
+      "category": "criticism",
+      "reverse": false,
+      "text": "I can consider criticism without letting it erase my self-respect, after receiving unexpected criticism."
+    },
+    {
+      "id": "SE-381",
+      "category": "criticism",
+      "reverse": true,
+      "text": "Any criticism makes me feel completely worthless, when someone disagrees with me."
+    },
+    {
+      "id": "SE-382",
+      "category": "criticism",
+      "reverse": false,
+      "text": "I separate useful feedback from attacks on my whole identity, around people who seem very confident."
+    },
+    {
+      "id": "SE-383",
+      "category": "criticism",
+      "reverse": true,
+      "text": "I replay negative feedback as proof that nothing about me is good, when I enter a new group."
+    },
+    {
+      "id": "SE-384",
+      "category": "criticism",
+      "reverse": false,
+      "text": "I can consider criticism without letting it erase my self-respect, after comparing myself with someone online."
+    },
+    {
+      "id": "SE-385",
+      "category": "criticism",
+      "reverse": true,
+      "text": "Any criticism makes me feel completely worthless, when I need to ask for help."
+    },
+    {
+      "id": "SE-386",
+      "category": "criticism",
+      "reverse": false,
+      "text": "I separate useful feedback from attacks on my whole identity, while making an important choice."
+    },
+    {
+      "id": "SE-387",
+      "category": "criticism",
+      "reverse": true,
+      "text": "I replay negative feedback as proof that nothing about me is good, when I remember a past failure."
+    },
+    {
+      "id": "SE-388",
+      "category": "criticism",
+      "reverse": false,
+      "text": "I can consider criticism without letting it erase my self-respect, after completing a demanding task."
+    },
+    {
+      "id": "SE-389",
+      "category": "criticism",
+      "reverse": true,
+      "text": "Any criticism makes me feel completely worthless, when I look at my progress over time."
+    },
+    {
+      "id": "SE-390",
+      "category": "criticism",
+      "reverse": false,
+      "text": "I separate useful feedback from attacks on my whole identity, during a disagreement with a friend."
+    },
+    {
+      "id": "SE-391",
+      "category": "criticism",
+      "reverse": true,
+      "text": "I replay negative feedback as proof that nothing about me is good, when I am tired or under pressure."
+    },
+    {
+      "id": "SE-392",
+      "category": "criticism",
+      "reverse": false,
+      "text": "I can consider criticism without letting it erase my self-respect, after hearing someone else receive praise."
+    },
+    {
+      "id": "SE-393",
+      "category": "criticism",
+      "reverse": true,
+      "text": "Any criticism makes me feel completely worthless, when I have to speak in front of others."
+    },
+    {
+      "id": "SE-394",
+      "category": "criticism",
+      "reverse": false,
+      "text": "I separate useful feedback from attacks on my whole identity, when my work is not perfect."
+    },
+    {
+      "id": "SE-395",
+      "category": "criticism",
+      "reverse": true,
+      "text": "I replay negative feedback as proof that nothing about me is good, while setting a personal boundary."
+    },
+    {
+      "id": "SE-396",
+      "category": "criticism",
+      "reverse": false,
+      "text": "I can consider criticism without letting it erase my self-respect, when I am left out of an activity."
+    },
+    {
+      "id": "SE-397",
+      "category": "criticism",
+      "reverse": true,
+      "text": "Any criticism makes me feel completely worthless, after changing my mind."
+    },
+    {
+      "id": "SE-398",
+      "category": "criticism",
+      "reverse": false,
+      "text": "I separate useful feedback from attacks on my whole identity, when I notice a personal weakness."
+    },
+    {
+      "id": "SE-399",
+      "category": "criticism",
+      "reverse": true,
+      "text": "I replay negative feedback as proof that nothing about me is good, while thinking about my future."
+    },
+    {
+      "id": "SE-400",
+      "category": "criticism",
+      "reverse": false,
+      "text": "I can consider criticism without letting it erase my self-respect, even when nobody is praising me."
+    },
+    {
+      "id": "SE-401",
+      "category": "achievement_balance",
+      "reverse": false,
+      "text": "I value achievement without making it the sole measure of my worth, on an ordinary day."
+    },
+    {
+      "id": "SE-402",
+      "category": "achievement_balance",
+      "reverse": true,
+      "text": "I feel valuable only when I outperform other people, after making a noticeable mistake."
+    },
+    {
+      "id": "SE-403",
+      "category": "achievement_balance",
+      "reverse": false,
+      "text": "I can appreciate effort even when the final result is imperfect, when plans do not work out."
+    },
+    {
+      "id": "SE-404",
+      "category": "achievement_balance",
+      "reverse": true,
+      "text": "I treat anything short of perfect achievement as personal failure, while learning something difficult."
+    },
+    {
+      "id": "SE-405",
+      "category": "achievement_balance",
+      "reverse": false,
+      "text": "I value achievement without making it the sole measure of my worth, after receiving unexpected criticism."
+    },
+    {
+      "id": "SE-406",
+      "category": "achievement_balance",
+      "reverse": true,
+      "text": "I feel valuable only when I outperform other people, when someone disagrees with me."
+    },
+    {
+      "id": "SE-407",
+      "category": "achievement_balance",
+      "reverse": false,
+      "text": "I can appreciate effort even when the final result is imperfect, around people who seem very confident."
+    },
+    {
+      "id": "SE-408",
+      "category": "achievement_balance",
+      "reverse": true,
+      "text": "I treat anything short of perfect achievement as personal failure, when I enter a new group."
+    },
+    {
+      "id": "SE-409",
+      "category": "achievement_balance",
+      "reverse": false,
+      "text": "I value achievement without making it the sole measure of my worth, after comparing myself with someone online."
+    },
+    {
+      "id": "SE-410",
+      "category": "achievement_balance",
+      "reverse": true,
+      "text": "I feel valuable only when I outperform other people, when I need to ask for help."
+    },
+    {
+      "id": "SE-411",
+      "category": "achievement_balance",
+      "reverse": false,
+      "text": "I can appreciate effort even when the final result is imperfect, while making an important choice."
+    },
+    {
+      "id": "SE-412",
+      "category": "achievement_balance",
+      "reverse": true,
+      "text": "I treat anything short of perfect achievement as personal failure, when I remember a past failure."
+    },
+    {
+      "id": "SE-413",
+      "category": "achievement_balance",
+      "reverse": false,
+      "text": "I value achievement without making it the sole measure of my worth, after completing a demanding task."
+    },
+    {
+      "id": "SE-414",
+      "category": "achievement_balance",
+      "reverse": true,
+      "text": "I feel valuable only when I outperform other people, when I look at my progress over time."
+    },
+    {
+      "id": "SE-415",
+      "category": "achievement_balance",
+      "reverse": false,
+      "text": "I can appreciate effort even when the final result is imperfect, during a disagreement with a friend."
+    },
+    {
+      "id": "SE-416",
+      "category": "achievement_balance",
+      "reverse": true,
+      "text": "I treat anything short of perfect achievement as personal failure, when I am tired or under pressure."
+    },
+    {
+      "id": "SE-417",
+      "category": "achievement_balance",
+      "reverse": false,
+      "text": "I value achievement without making it the sole measure of my worth, after hearing someone else receive praise."
+    },
+    {
+      "id": "SE-418",
+      "category": "achievement_balance",
+      "reverse": true,
+      "text": "I feel valuable only when I outperform other people, when I have to speak in front of others."
+    },
+    {
+      "id": "SE-419",
+      "category": "achievement_balance",
+      "reverse": false,
+      "text": "I can appreciate effort even when the final result is imperfect, when my work is not perfect."
+    },
+    {
+      "id": "SE-420",
+      "category": "achievement_balance",
+      "reverse": true,
+      "text": "I treat anything short of perfect achievement as personal failure, while setting a personal boundary."
+    },
+    {
+      "id": "SE-421",
+      "category": "achievement_balance",
+      "reverse": false,
+      "text": "I value achievement without making it the sole measure of my worth, when I am left out of an activity."
+    },
+    {
+      "id": "SE-422",
+      "category": "achievement_balance",
+      "reverse": true,
+      "text": "I feel valuable only when I outperform other people, after changing my mind."
+    },
+    {
+      "id": "SE-423",
+      "category": "achievement_balance",
+      "reverse": false,
+      "text": "I can appreciate effort even when the final result is imperfect, when I notice a personal weakness."
+    },
+    {
+      "id": "SE-424",
+      "category": "achievement_balance",
+      "reverse": true,
+      "text": "I treat anything short of perfect achievement as personal failure, while thinking about my future."
+    },
+    {
+      "id": "SE-425",
+      "category": "achievement_balance",
+      "reverse": false,
+      "text": "I value achievement without making it the sole measure of my worth, even when nobody is praising me."
+    },
+    {
+      "id": "SE-426",
+      "category": "emotional_awareness",
+      "reverse": false,
+      "text": "I treat my emotions as information worthy of attention, on an ordinary day."
+    },
+    {
+      "id": "SE-427",
+      "category": "emotional_awareness",
+      "reverse": true,
+      "text": "I assume my feelings are always foolish or invalid, after making a noticeable mistake."
+    },
+    {
+      "id": "SE-428",
+      "category": "emotional_awareness",
+      "reverse": false,
+      "text": "I can name my feelings without judging myself for having them, when plans do not work out."
+    },
+    {
+      "id": "SE-429",
+      "category": "emotional_awareness",
+      "reverse": true,
+      "text": "I distrust every emotional response I have, while learning something difficult."
+    },
+    {
+      "id": "SE-430",
+      "category": "emotional_awareness",
+      "reverse": false,
+      "text": "I treat my emotions as information worthy of attention, after receiving unexpected criticism."
+    },
+    {
+      "id": "SE-431",
+      "category": "emotional_awareness",
+      "reverse": true,
+      "text": "I assume my feelings are always foolish or invalid, when someone disagrees with me."
+    },
+    {
+      "id": "SE-432",
+      "category": "emotional_awareness",
+      "reverse": false,
+      "text": "I can name my feelings without judging myself for having them, around people who seem very confident."
+    },
+    {
+      "id": "SE-433",
+      "category": "emotional_awareness",
+      "reverse": true,
+      "text": "I distrust every emotional response I have, when I enter a new group."
+    },
+    {
+      "id": "SE-434",
+      "category": "emotional_awareness",
+      "reverse": false,
+      "text": "I treat my emotions as information worthy of attention, after comparing myself with someone online."
+    },
+    {
+      "id": "SE-435",
+      "category": "emotional_awareness",
+      "reverse": true,
+      "text": "I assume my feelings are always foolish or invalid, when I need to ask for help."
+    },
+    {
+      "id": "SE-436",
+      "category": "emotional_awareness",
+      "reverse": false,
+      "text": "I can name my feelings without judging myself for having them, while making an important choice."
+    },
+    {
+      "id": "SE-437",
+      "category": "emotional_awareness",
+      "reverse": true,
+      "text": "I distrust every emotional response I have, when I remember a past failure."
+    },
+    {
+      "id": "SE-438",
+      "category": "emotional_awareness",
+      "reverse": false,
+      "text": "I treat my emotions as information worthy of attention, after completing a demanding task."
+    },
+    {
+      "id": "SE-439",
+      "category": "emotional_awareness",
+      "reverse": true,
+      "text": "I assume my feelings are always foolish or invalid, when I look at my progress over time."
+    },
+    {
+      "id": "SE-440",
+      "category": "emotional_awareness",
+      "reverse": false,
+      "text": "I can name my feelings without judging myself for having them, during a disagreement with a friend."
+    },
+    {
+      "id": "SE-441",
+      "category": "emotional_awareness",
+      "reverse": true,
+      "text": "I distrust every emotional response I have, when I am tired or under pressure."
+    },
+    {
+      "id": "SE-442",
+      "category": "emotional_awareness",
+      "reverse": false,
+      "text": "I treat my emotions as information worthy of attention, after hearing someone else receive praise."
+    },
+    {
+      "id": "SE-443",
+      "category": "emotional_awareness",
+      "reverse": true,
+      "text": "I assume my feelings are always foolish or invalid, when I have to speak in front of others."
+    },
+    {
+      "id": "SE-444",
+      "category": "emotional_awareness",
+      "reverse": false,
+      "text": "I can name my feelings without judging myself for having them, when my work is not perfect."
+    },
+    {
+      "id": "SE-445",
+      "category": "emotional_awareness",
+      "reverse": true,
+      "text": "I distrust every emotional response I have, while setting a personal boundary."
+    },
+    {
+      "id": "SE-446",
+      "category": "emotional_awareness",
+      "reverse": false,
+      "text": "I treat my emotions as information worthy of attention, when I am left out of an activity."
+    },
+    {
+      "id": "SE-447",
+      "category": "emotional_awareness",
+      "reverse": true,
+      "text": "I assume my feelings are always foolish or invalid, after changing my mind."
+    },
+    {
+      "id": "SE-448",
+      "category": "emotional_awareness",
+      "reverse": false,
+      "text": "I can name my feelings without judging myself for having them, when I notice a personal weakness."
+    },
+    {
+      "id": "SE-449",
+      "category": "emotional_awareness",
+      "reverse": true,
+      "text": "I distrust every emotional response I have, while thinking about my future."
+    },
+    {
+      "id": "SE-450",
+      "category": "emotional_awareness",
+      "reverse": false,
+      "text": "I treat my emotions as information worthy of attention, even when nobody is praising me."
+    },
+    {
+      "id": "SE-451",
+      "category": "growth_hope",
+      "reverse": false,
+      "text": "I believe I can grow while still respecting who I am today, on an ordinary day."
+    },
+    {
+      "id": "SE-452",
+      "category": "growth_hope",
+      "reverse": true,
+      "text": "I believe I am permanently stuck with every weakness I have, after making a noticeable mistake."
+    },
+    {
+      "id": "SE-453",
+      "category": "growth_hope",
+      "reverse": false,
+      "text": "I can imagine a future in which I feel more capable and secure, when plans do not work out."
+    },
+    {
+      "id": "SE-454",
+      "category": "growth_hope",
+      "reverse": true,
+      "text": "I find it hard to imagine any positive personal change, while learning something difficult."
+    },
+    {
+      "id": "SE-455",
+      "category": "growth_hope",
+      "reverse": false,
+      "text": "I believe I can grow while still respecting who I am today, after receiving unexpected criticism."
+    },
+    {
+      "id": "SE-456",
+      "category": "growth_hope",
+      "reverse": true,
+      "text": "I believe I am permanently stuck with every weakness I have, when someone disagrees with me."
+    },
+    {
+      "id": "SE-457",
+      "category": "growth_hope",
+      "reverse": false,
+      "text": "I can imagine a future in which I feel more capable and secure, around people who seem very confident."
+    },
+    {
+      "id": "SE-458",
+      "category": "growth_hope",
+      "reverse": true,
+      "text": "I find it hard to imagine any positive personal change, when I enter a new group."
+    },
+    {
+      "id": "SE-459",
+      "category": "growth_hope",
+      "reverse": false,
+      "text": "I believe I can grow while still respecting who I am today, after comparing myself with someone online."
+    },
+    {
+      "id": "SE-460",
+      "category": "growth_hope",
+      "reverse": true,
+      "text": "I believe I am permanently stuck with every weakness I have, when I need to ask for help."
+    },
+    {
+      "id": "SE-461",
+      "category": "growth_hope",
+      "reverse": false,
+      "text": "I can imagine a future in which I feel more capable and secure, while making an important choice."
+    },
+    {
+      "id": "SE-462",
+      "category": "growth_hope",
+      "reverse": true,
+      "text": "I find it hard to imagine any positive personal change, when I remember a past failure."
+    },
+    {
+      "id": "SE-463",
+      "category": "growth_hope",
+      "reverse": false,
+      "text": "I believe I can grow while still respecting who I am today, after completing a demanding task."
+    },
+    {
+      "id": "SE-464",
+      "category": "growth_hope",
+      "reverse": true,
+      "text": "I believe I am permanently stuck with every weakness I have, when I look at my progress over time."
+    },
+    {
+      "id": "SE-465",
+      "category": "growth_hope",
+      "reverse": false,
+      "text": "I can imagine a future in which I feel more capable and secure, during a disagreement with a friend."
+    },
+    {
+      "id": "SE-466",
+      "category": "growth_hope",
+      "reverse": true,
+      "text": "I find it hard to imagine any positive personal change, when I am tired or under pressure."
+    },
+    {
+      "id": "SE-467",
+      "category": "growth_hope",
+      "reverse": false,
+      "text": "I believe I can grow while still respecting who I am today, after hearing someone else receive praise."
+    },
+    {
+      "id": "SE-468",
+      "category": "growth_hope",
+      "reverse": true,
+      "text": "I believe I am permanently stuck with every weakness I have, when I have to speak in front of others."
+    },
+    {
+      "id": "SE-469",
+      "category": "growth_hope",
+      "reverse": false,
+      "text": "I can imagine a future in which I feel more capable and secure, when my work is not perfect."
+    },
+    {
+      "id": "SE-470",
+      "category": "growth_hope",
+      "reverse": true,
+      "text": "I find it hard to imagine any positive personal change, while setting a personal boundary."
+    },
+    {
+      "id": "SE-471",
+      "category": "growth_hope",
+      "reverse": false,
+      "text": "I believe I can grow while still respecting who I am today, when I am left out of an activity."
+    },
+    {
+      "id": "SE-472",
+      "category": "growth_hope",
+      "reverse": true,
+      "text": "I believe I am permanently stuck with every weakness I have, after changing my mind."
+    },
+    {
+      "id": "SE-473",
+      "category": "growth_hope",
+      "reverse": false,
+      "text": "I can imagine a future in which I feel more capable and secure, when I notice a personal weakness."
+    },
+    {
+      "id": "SE-474",
+      "category": "growth_hope",
+      "reverse": true,
+      "text": "I find it hard to imagine any positive personal change, while thinking about my future."
+    },
+    {
+      "id": "SE-475",
+      "category": "growth_hope",
+      "reverse": false,
+      "text": "I believe I can grow while still respecting who I am today, even when nobody is praising me."
+    },
+    {
+      "id": "SE-476",
+      "category": "comparison",
+      "reverse": false,
+      "text": "I can appreciate another person’s strengths without diminishing my own, on an ordinary day."
+    },
+    {
+      "id": "SE-477",
+      "category": "comparison",
+      "reverse": true,
+      "text": "Comparing myself with others usually makes me feel inferior, after making a noticeable mistake."
+    },
+    {
+      "id": "SE-478",
+      "category": "comparison",
+      "reverse": false,
+      "text": "I do not need constant approval to believe I am worthwhile, when plans do not work out."
+    },
+    {
+      "id": "SE-479",
+      "category": "comparison",
+      "reverse": true,
+      "text": "My opinion of myself depends heavily on likes, praise, or approval, while learning something difficult."
+    },
+    {
+      "id": "SE-480",
+      "category": "comparison",
+      "reverse": false,
+      "text": "I can appreciate another person’s strengths without diminishing my own, after receiving unexpected criticism."
+    },
+    {
+      "id": "SE-481",
+      "category": "comparison",
+      "reverse": true,
+      "text": "Comparing myself with others usually makes me feel inferior, when someone disagrees with me."
+    },
+    {
+      "id": "SE-482",
+      "category": "comparison",
+      "reverse": false,
+      "text": "I do not need constant approval to believe I am worthwhile, around people who seem very confident."
+    },
+    {
+      "id": "SE-483",
+      "category": "comparison",
+      "reverse": true,
+      "text": "My opinion of myself depends heavily on likes, praise, or approval, when I enter a new group."
+    },
+    {
+      "id": "SE-484",
+      "category": "comparison",
+      "reverse": false,
+      "text": "I can appreciate another person’s strengths without diminishing my own, after comparing myself with someone online."
+    },
+    {
+      "id": "SE-485",
+      "category": "comparison",
+      "reverse": true,
+      "text": "Comparing myself with others usually makes me feel inferior, when I need to ask for help."
+    },
+    {
+      "id": "SE-486",
+      "category": "comparison",
+      "reverse": false,
+      "text": "I do not need constant approval to believe I am worthwhile, while making an important choice."
+    },
+    {
+      "id": "SE-487",
+      "category": "comparison",
+      "reverse": true,
+      "text": "My opinion of myself depends heavily on likes, praise, or approval, when I remember a past failure."
+    },
+    {
+      "id": "SE-488",
+      "category": "comparison",
+      "reverse": false,
+      "text": "I can appreciate another person’s strengths without diminishing my own, after completing a demanding task."
+    },
+    {
+      "id": "SE-489",
+      "category": "comparison",
+      "reverse": true,
+      "text": "Comparing myself with others usually makes me feel inferior, when I look at my progress over time."
+    },
+    {
+      "id": "SE-490",
+      "category": "comparison",
+      "reverse": false,
+      "text": "I do not need constant approval to believe I am worthwhile, during a disagreement with a friend."
+    },
+    {
+      "id": "SE-491",
+      "category": "comparison",
+      "reverse": true,
+      "text": "My opinion of myself depends heavily on likes, praise, or approval, when I am tired or under pressure."
+    },
+    {
+      "id": "SE-492",
+      "category": "comparison",
+      "reverse": false,
+      "text": "I can appreciate another person’s strengths without diminishing my own, after hearing someone else receive praise."
+    },
+    {
+      "id": "SE-493",
+      "category": "comparison",
+      "reverse": true,
+      "text": "Comparing myself with others usually makes me feel inferior, when I have to speak in front of others."
+    },
+    {
+      "id": "SE-494",
+      "category": "comparison",
+      "reverse": false,
+      "text": "I do not need constant approval to believe I am worthwhile, when my work is not perfect."
+    },
+    {
+      "id": "SE-495",
+      "category": "comparison",
+      "reverse": true,
+      "text": "My opinion of myself depends heavily on likes, praise, or approval, while setting a personal boundary."
+    },
+    {
+      "id": "SE-496",
+      "category": "comparison",
+      "reverse": false,
+      "text": "I can appreciate another person’s strengths without diminishing my own, when I am left out of an activity."
+    },
+    {
+      "id": "SE-497",
+      "category": "comparison",
+      "reverse": true,
+      "text": "Comparing myself with others usually makes me feel inferior, after changing my mind."
+    },
+    {
+      "id": "SE-498",
+      "category": "comparison",
+      "reverse": false,
+      "text": "I do not need constant approval to believe I am worthwhile, when I notice a personal weakness."
+    },
+    {
+      "id": "SE-499",
+      "category": "comparison",
+      "reverse": true,
+      "text": "My opinion of myself depends heavily on likes, praise, or approval, while thinking about my future."
+    },
+    {
+      "id": "SE-500",
+      "category": "comparison",
+      "reverse": false,
+      "text": "I can appreciate another person’s strengths without diminishing my own, even when nobody is praising me."
+    }
+  ]
+}

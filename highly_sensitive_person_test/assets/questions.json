@@ -1,0 +1,3153 @@
+{
+  "meta": {
+    "title": "Highly Sensitive Person Reflection",
+    "description": "A private 500-statement reflection across 20 dimensions of sensory processing sensitivity.",
+    "scale": {
+      "min": 1,
+      "max": 10,
+      "minLabel": "Not at all true",
+      "maxLabel": "Very true"
+    },
+    "categories": [
+      {
+        "id": "depth",
+        "label": "Depth of Processing",
+        "icon": "🧠"
+      },
+      {
+        "id": "subtle_cues",
+        "label": "Awareness of Subtle Cues",
+        "icon": "🔎"
+      },
+      {
+        "id": "sensory_threshold",
+        "label": "Low Sensory Threshold",
+        "icon": "🎚️"
+      },
+      {
+        "id": "overstimulation",
+        "label": "Ease of Overstimulation",
+        "icon": "⚡"
+      },
+      {
+        "id": "emotional_intensity",
+        "label": "Emotional Responsiveness",
+        "icon": "💓"
+      },
+      {
+        "id": "empathy",
+        "label": "Empathic Sensitivity",
+        "icon": "🤝"
+      },
+      {
+        "id": "aesthetic",
+        "label": "Aesthetic Sensitivity",
+        "icon": "🎨"
+      },
+      {
+        "id": "positive_environment",
+        "label": "Response to Supportive Environments",
+        "icon": "🌿"
+      },
+      {
+        "id": "negative_environment",
+        "label": "Response to Difficult Environments",
+        "icon": "🌧️"
+      },
+      {
+        "id": "novelty",
+        "label": "Novelty & Transitions",
+        "icon": "🚪"
+      },
+      {
+        "id": "deliberation",
+        "label": "Careful Decision Processing",
+        "icon": "⚖️"
+      },
+      {
+        "id": "social_stimulation",
+        "label": "Social Stimulation",
+        "icon": "👥"
+      },
+      {
+        "id": "criticism",
+        "label": "Sensitivity to Conflict & Criticism",
+        "icon": "💬"
+      },
+      {
+        "id": "body_signals",
+        "label": "Awareness of Body Signals",
+        "icon": "🫀"
+      },
+      {
+        "id": "recovery",
+        "label": "Recovery & Solitude Needs",
+        "icon": "🌙"
+      },
+      {
+        "id": "sleep_rest",
+        "label": "Sleep & Rest Sensitivity",
+        "icon": "🛌"
+      },
+      {
+        "id": "work_environment",
+        "label": "Work & Study Environment",
+        "icon": "📝"
+      },
+      {
+        "id": "boundaries",
+        "label": "Sensitivity Boundaries & Communication",
+        "icon": "🛡️"
+      },
+      {
+        "id": "self_acceptance",
+        "label": "Sensitivity Self-Acceptance",
+        "icon": "💛"
+      },
+      {
+        "id": "regulation",
+        "label": "Regulation & Coping",
+        "icon": "🧘"
+      }
+    ],
+    "levels": [
+      {
+        "min": 8.5,
+        "max": 10.01,
+        "label": "Very High Sensitivity Pattern",
+        "emoji": "🌟",
+        "desc": "Your responses suggest consistently deep processing, strong environmental responsiveness, and a relatively low threshold for stimulation."
+      },
+      {
+        "min": 7,
+        "max": 8.5,
+        "label": "High Sensitivity Pattern",
+        "emoji": "🌿",
+        "desc": "You appear highly responsive across many sensory, emotional, social, and environmental situations."
+      },
+      {
+        "min": 5.5,
+        "max": 7,
+        "label": "Moderate Sensitivity Pattern",
+        "emoji": "🌱",
+        "desc": "You show a mixture of sensitive and less-sensitive responses, with some dimensions standing out more than others."
+      },
+      {
+        "min": 4,
+        "max": 5.5,
+        "label": "Lower Sensitivity Pattern",
+        "emoji": "🍃",
+        "desc": "You may notice some sensitivity traits, but stimulation and environmental changes usually have a more limited effect."
+      },
+      {
+        "min": 1,
+        "max": 4,
+        "label": "Low Sensitivity Pattern",
+        "emoji": "🪨",
+        "desc": "Your responses suggest a relatively high threshold for stimulation and less intensive processing of subtle environmental input."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "HSP-001",
+      "category": "depth",
+      "reverse": false,
+      "text": "In everyday life, I reflect deeply on experiences before moving on."
+    },
+    {
+      "id": "HSP-002",
+      "category": "depth",
+      "reverse": true,
+      "text": "In busy places, I usually process experiences quickly without revisiting them."
+    },
+    {
+      "id": "HSP-003",
+      "category": "depth",
+      "reverse": false,
+      "text": "During an ordinary week, I connect new experiences with patterns I noticed before."
+    },
+    {
+      "id": "HSP-004",
+      "category": "depth",
+      "reverse": true,
+      "text": "When several things happen at once, I rarely look beneath the immediate meaning of an experience."
+    },
+    {
+      "id": "HSP-005",
+      "category": "depth",
+      "reverse": false,
+      "text": "After a demanding day, I reflect deeply on experiences before moving on."
+    },
+    {
+      "id": "HSP-006",
+      "category": "depth",
+      "reverse": true,
+      "text": "In unfamiliar surroundings, I usually process experiences quickly without revisiting them."
+    },
+    {
+      "id": "HSP-007",
+      "category": "depth",
+      "reverse": false,
+      "text": "During conversations, I connect new experiences with patterns I noticed before."
+    },
+    {
+      "id": "HSP-008",
+      "category": "depth",
+      "reverse": true,
+      "text": "When plans change, I rarely look beneath the immediate meaning of an experience."
+    },
+    {
+      "id": "HSP-009",
+      "category": "depth",
+      "reverse": false,
+      "text": "While working or studying, I reflect deeply on experiences before moving on."
+    },
+    {
+      "id": "HSP-010",
+      "category": "depth",
+      "reverse": true,
+      "text": "When emotions are present, I usually process experiences quickly without revisiting them."
+    },
+    {
+      "id": "HSP-011",
+      "category": "depth",
+      "reverse": false,
+      "text": "Around other people, I connect new experiences with patterns I noticed before."
+    },
+    {
+      "id": "HSP-012",
+      "category": "depth",
+      "reverse": true,
+      "text": "When I am tired, I rarely look beneath the immediate meaning of an experience."
+    },
+    {
+      "id": "HSP-013",
+      "category": "depth",
+      "reverse": false,
+      "text": "In calm surroundings, I reflect deeply on experiences before moving on."
+    },
+    {
+      "id": "HSP-014",
+      "category": "depth",
+      "reverse": true,
+      "text": "Under time pressure, I usually process experiences quickly without revisiting them."
+    },
+    {
+      "id": "HSP-015",
+      "category": "depth",
+      "reverse": false,
+      "text": "When making choices, I connect new experiences with patterns I noticed before."
+    },
+    {
+      "id": "HSP-016",
+      "category": "depth",
+      "reverse": true,
+      "text": "After social activity, I rarely look beneath the immediate meaning of an experience."
+    },
+    {
+      "id": "HSP-017",
+      "category": "depth",
+      "reverse": false,
+      "text": "When receiving feedback, I reflect deeply on experiences before moving on."
+    },
+    {
+      "id": "HSP-018",
+      "category": "depth",
+      "reverse": true,
+      "text": "In visually or audibly intense settings, I usually process experiences quickly without revisiting them."
+    },
+    {
+      "id": "HSP-019",
+      "category": "depth",
+      "reverse": false,
+      "text": "When something feels meaningful, I connect new experiences with patterns I noticed before."
+    },
+    {
+      "id": "HSP-020",
+      "category": "depth",
+      "reverse": true,
+      "text": "During periods of change, I rarely look beneath the immediate meaning of an experience."
+    },
+    {
+      "id": "HSP-021",
+      "category": "depth",
+      "reverse": false,
+      "text": "When I cannot control my environment, I reflect deeply on experiences before moving on."
+    },
+    {
+      "id": "HSP-022",
+      "category": "depth",
+      "reverse": true,
+      "text": "While noticing people’s reactions, I usually process experiences quickly without revisiting them."
+    },
+    {
+      "id": "HSP-023",
+      "category": "depth",
+      "reverse": false,
+      "text": "When I need to recover, I connect new experiences with patterns I noticed before."
+    },
+    {
+      "id": "HSP-024",
+      "category": "depth",
+      "reverse": true,
+      "text": "Even on a relatively good day, I rarely look beneath the immediate meaning of an experience."
+    },
+    {
+      "id": "HSP-025",
+      "category": "depth",
+      "reverse": false,
+      "text": "Across different settings, I reflect deeply on experiences before moving on."
+    },
+    {
+      "id": "HSP-026",
+      "category": "subtle_cues",
+      "reverse": false,
+      "text": "In everyday life, I notice small changes in tone, atmosphere, or surroundings."
+    },
+    {
+      "id": "HSP-027",
+      "category": "subtle_cues",
+      "reverse": true,
+      "text": "In busy places, small changes around me usually pass unnoticed."
+    },
+    {
+      "id": "HSP-028",
+      "category": "subtle_cues",
+      "reverse": false,
+      "text": "During an ordinary week, I detect details that many people seem to overlook."
+    },
+    {
+      "id": "HSP-029",
+      "category": "subtle_cues",
+      "reverse": true,
+      "text": "When several things happen at once, I need a change to be obvious before I register it."
+    },
+    {
+      "id": "HSP-030",
+      "category": "subtle_cues",
+      "reverse": false,
+      "text": "After a demanding day, I notice small changes in tone, atmosphere, or surroundings."
+    },
+    {
+      "id": "HSP-031",
+      "category": "subtle_cues",
+      "reverse": true,
+      "text": "In unfamiliar surroundings, small changes around me usually pass unnoticed."
+    },
+    {
+      "id": "HSP-032",
+      "category": "subtle_cues",
+      "reverse": false,
+      "text": "During conversations, I detect details that many people seem to overlook."
+    },
+    {
+      "id": "HSP-033",
+      "category": "subtle_cues",
+      "reverse": true,
+      "text": "When plans change, I need a change to be obvious before I register it."
+    },
+    {
+      "id": "HSP-034",
+      "category": "subtle_cues",
+      "reverse": false,
+      "text": "While working or studying, I notice small changes in tone, atmosphere, or surroundings."
+    },
+    {
+      "id": "HSP-035",
+      "category": "subtle_cues",
+      "reverse": true,
+      "text": "When emotions are present, small changes around me usually pass unnoticed."
+    },
+    {
+      "id": "HSP-036",
+      "category": "subtle_cues",
+      "reverse": false,
+      "text": "Around other people, I detect details that many people seem to overlook."
+    },
+    {
+      "id": "HSP-037",
+      "category": "subtle_cues",
+      "reverse": true,
+      "text": "When I am tired, I need a change to be obvious before I register it."
+    },
+    {
+      "id": "HSP-038",
+      "category": "subtle_cues",
+      "reverse": false,
+      "text": "In calm surroundings, I notice small changes in tone, atmosphere, or surroundings."
+    },
+    {
+      "id": "HSP-039",
+      "category": "subtle_cues",
+      "reverse": true,
+      "text": "Under time pressure, small changes around me usually pass unnoticed."
+    },
+    {
+      "id": "HSP-040",
+      "category": "subtle_cues",
+      "reverse": false,
+      "text": "When making choices, I detect details that many people seem to overlook."
+    },
+    {
+      "id": "HSP-041",
+      "category": "subtle_cues",
+      "reverse": true,
+      "text": "After social activity, I need a change to be obvious before I register it."
+    },
+    {
+      "id": "HSP-042",
+      "category": "subtle_cues",
+      "reverse": false,
+      "text": "When receiving feedback, I notice small changes in tone, atmosphere, or surroundings."
+    },
+    {
+      "id": "HSP-043",
+      "category": "subtle_cues",
+      "reverse": true,
+      "text": "In visually or audibly intense settings, small changes around me usually pass unnoticed."
+    },
+    {
+      "id": "HSP-044",
+      "category": "subtle_cues",
+      "reverse": false,
+      "text": "When something feels meaningful, I detect details that many people seem to overlook."
+    },
+    {
+      "id": "HSP-045",
+      "category": "subtle_cues",
+      "reverse": true,
+      "text": "During periods of change, I need a change to be obvious before I register it."
+    },
+    {
+      "id": "HSP-046",
+      "category": "subtle_cues",
+      "reverse": false,
+      "text": "When I cannot control my environment, I notice small changes in tone, atmosphere, or surroundings."
+    },
+    {
+      "id": "HSP-047",
+      "category": "subtle_cues",
+      "reverse": true,
+      "text": "While noticing people’s reactions, small changes around me usually pass unnoticed."
+    },
+    {
+      "id": "HSP-048",
+      "category": "subtle_cues",
+      "reverse": false,
+      "text": "When I need to recover, I detect details that many people seem to overlook."
+    },
+    {
+      "id": "HSP-049",
+      "category": "subtle_cues",
+      "reverse": true,
+      "text": "Even on a relatively good day, I need a change to be obvious before I register it."
+    },
+    {
+      "id": "HSP-050",
+      "category": "subtle_cues",
+      "reverse": false,
+      "text": "Across different settings, I notice small changes in tone, atmosphere, or surroundings."
+    },
+    {
+      "id": "HSP-051",
+      "category": "sensory_threshold",
+      "reverse": false,
+      "text": "In everyday life, moderate sensory input can feel unusually intense to me."
+    },
+    {
+      "id": "HSP-052",
+      "category": "sensory_threshold",
+      "reverse": true,
+      "text": "In busy places, most everyday sensory input barely affects me."
+    },
+    {
+      "id": "HSP-053",
+      "category": "sensory_threshold",
+      "reverse": false,
+      "text": "During an ordinary week, I react to sights, sounds, textures, or smells at relatively low levels."
+    },
+    {
+      "id": "HSP-054",
+      "category": "sensory_threshold",
+      "reverse": true,
+      "text": "When several things happen at once, I can tolerate strong sensory input without much reaction."
+    },
+    {
+      "id": "HSP-055",
+      "category": "sensory_threshold",
+      "reverse": false,
+      "text": "After a demanding day, moderate sensory input can feel unusually intense to me."
+    },
+    {
+      "id": "HSP-056",
+      "category": "sensory_threshold",
+      "reverse": true,
+      "text": "In unfamiliar surroundings, most everyday sensory input barely affects me."
+    },
+    {
+      "id": "HSP-057",
+      "category": "sensory_threshold",
+      "reverse": false,
+      "text": "During conversations, I react to sights, sounds, textures, or smells at relatively low levels."
+    },
+    {
+      "id": "HSP-058",
+      "category": "sensory_threshold",
+      "reverse": true,
+      "text": "When plans change, I can tolerate strong sensory input without much reaction."
+    },
+    {
+      "id": "HSP-059",
+      "category": "sensory_threshold",
+      "reverse": false,
+      "text": "While working or studying, moderate sensory input can feel unusually intense to me."
+    },
+    {
+      "id": "HSP-060",
+      "category": "sensory_threshold",
+      "reverse": true,
+      "text": "When emotions are present, most everyday sensory input barely affects me."
+    },
+    {
+      "id": "HSP-061",
+      "category": "sensory_threshold",
+      "reverse": false,
+      "text": "Around other people, I react to sights, sounds, textures, or smells at relatively low levels."
+    },
+    {
+      "id": "HSP-062",
+      "category": "sensory_threshold",
+      "reverse": true,
+      "text": "When I am tired, I can tolerate strong sensory input without much reaction."
+    },
+    {
+      "id": "HSP-063",
+      "category": "sensory_threshold",
+      "reverse": false,
+      "text": "In calm surroundings, moderate sensory input can feel unusually intense to me."
+    },
+    {
+      "id": "HSP-064",
+      "category": "sensory_threshold",
+      "reverse": true,
+      "text": "Under time pressure, most everyday sensory input barely affects me."
+    },
+    {
+      "id": "HSP-065",
+      "category": "sensory_threshold",
+      "reverse": false,
+      "text": "When making choices, I react to sights, sounds, textures, or smells at relatively low levels."
+    },
+    {
+      "id": "HSP-066",
+      "category": "sensory_threshold",
+      "reverse": true,
+      "text": "After social activity, I can tolerate strong sensory input without much reaction."
+    },
+    {
+      "id": "HSP-067",
+      "category": "sensory_threshold",
+      "reverse": false,
+      "text": "When receiving feedback, moderate sensory input can feel unusually intense to me."
+    },
+    {
+      "id": "HSP-068",
+      "category": "sensory_threshold",
+      "reverse": true,
+      "text": "In visually or audibly intense settings, most everyday sensory input barely affects me."
+    },
+    {
+      "id": "HSP-069",
+      "category": "sensory_threshold",
+      "reverse": false,
+      "text": "When something feels meaningful, I react to sights, sounds, textures, or smells at relatively low levels."
+    },
+    {
+      "id": "HSP-070",
+      "category": "sensory_threshold",
+      "reverse": true,
+      "text": "During periods of change, I can tolerate strong sensory input without much reaction."
+    },
+    {
+      "id": "HSP-071",
+      "category": "sensory_threshold",
+      "reverse": false,
+      "text": "When I cannot control my environment, moderate sensory input can feel unusually intense to me."
+    },
+    {
+      "id": "HSP-072",
+      "category": "sensory_threshold",
+      "reverse": true,
+      "text": "While noticing people’s reactions, most everyday sensory input barely affects me."
+    },
+    {
+      "id": "HSP-073",
+      "category": "sensory_threshold",
+      "reverse": false,
+      "text": "When I need to recover, I react to sights, sounds, textures, or smells at relatively low levels."
+    },
+    {
+      "id": "HSP-074",
+      "category": "sensory_threshold",
+      "reverse": true,
+      "text": "Even on a relatively good day, I can tolerate strong sensory input without much reaction."
+    },
+    {
+      "id": "HSP-075",
+      "category": "sensory_threshold",
+      "reverse": false,
+      "text": "Across different settings, moderate sensory input can feel unusually intense to me."
+    },
+    {
+      "id": "HSP-076",
+      "category": "overstimulation",
+      "reverse": false,
+      "text": "In everyday life, several demands or sensations at once can quickly overwhelm me."
+    },
+    {
+      "id": "HSP-077",
+      "category": "overstimulation",
+      "reverse": true,
+      "text": "In busy places, multiple demands rarely make me feel overloaded."
+    },
+    {
+      "id": "HSP-078",
+      "category": "overstimulation",
+      "reverse": false,
+      "text": "During an ordinary week, busy situations can exceed my processing capacity sooner than expected."
+    },
+    {
+      "id": "HSP-079",
+      "category": "overstimulation",
+      "reverse": true,
+      "text": "When several things happen at once, I stay comfortable even when many things happen at once."
+    },
+    {
+      "id": "HSP-080",
+      "category": "overstimulation",
+      "reverse": false,
+      "text": "After a demanding day, several demands or sensations at once can quickly overwhelm me."
+    },
+    {
+      "id": "HSP-081",
+      "category": "overstimulation",
+      "reverse": true,
+      "text": "In unfamiliar surroundings, multiple demands rarely make me feel overloaded."
+    },
+    {
+      "id": "HSP-082",
+      "category": "overstimulation",
+      "reverse": false,
+      "text": "During conversations, busy situations can exceed my processing capacity sooner than expected."
+    },
+    {
+      "id": "HSP-083",
+      "category": "overstimulation",
+      "reverse": true,
+      "text": "When plans change, I stay comfortable even when many things happen at once."
+    },
+    {
+      "id": "HSP-084",
+      "category": "overstimulation",
+      "reverse": false,
+      "text": "While working or studying, several demands or sensations at once can quickly overwhelm me."
+    },
+    {
+      "id": "HSP-085",
+      "category": "overstimulation",
+      "reverse": true,
+      "text": "When emotions are present, multiple demands rarely make me feel overloaded."
+    },
+    {
+      "id": "HSP-086",
+      "category": "overstimulation",
+      "reverse": false,
+      "text": "Around other people, busy situations can exceed my processing capacity sooner than expected."
+    },
+    {
+      "id": "HSP-087",
+      "category": "overstimulation",
+      "reverse": true,
+      "text": "When I am tired, I stay comfortable even when many things happen at once."
+    },
+    {
+      "id": "HSP-088",
+      "category": "overstimulation",
+      "reverse": false,
+      "text": "In calm surroundings, several demands or sensations at once can quickly overwhelm me."
+    },
+    {
+      "id": "HSP-089",
+      "category": "overstimulation",
+      "reverse": true,
+      "text": "Under time pressure, multiple demands rarely make me feel overloaded."
+    },
+    {
+      "id": "HSP-090",
+      "category": "overstimulation",
+      "reverse": false,
+      "text": "When making choices, busy situations can exceed my processing capacity sooner than expected."
+    },
+    {
+      "id": "HSP-091",
+      "category": "overstimulation",
+      "reverse": true,
+      "text": "After social activity, I stay comfortable even when many things happen at once."
+    },
+    {
+      "id": "HSP-092",
+      "category": "overstimulation",
+      "reverse": false,
+      "text": "When receiving feedback, several demands or sensations at once can quickly overwhelm me."
+    },
+    {
+      "id": "HSP-093",
+      "category": "overstimulation",
+      "reverse": true,
+      "text": "In visually or audibly intense settings, multiple demands rarely make me feel overloaded."
+    },
+    {
+      "id": "HSP-094",
+      "category": "overstimulation",
+      "reverse": false,
+      "text": "When something feels meaningful, busy situations can exceed my processing capacity sooner than expected."
+    },
+    {
+      "id": "HSP-095",
+      "category": "overstimulation",
+      "reverse": true,
+      "text": "During periods of change, I stay comfortable even when many things happen at once."
+    },
+    {
+      "id": "HSP-096",
+      "category": "overstimulation",
+      "reverse": false,
+      "text": "When I cannot control my environment, several demands or sensations at once can quickly overwhelm me."
+    },
+    {
+      "id": "HSP-097",
+      "category": "overstimulation",
+      "reverse": true,
+      "text": "While noticing people’s reactions, multiple demands rarely make me feel overloaded."
+    },
+    {
+      "id": "HSP-098",
+      "category": "overstimulation",
+      "reverse": false,
+      "text": "When I need to recover, busy situations can exceed my processing capacity sooner than expected."
+    },
+    {
+      "id": "HSP-099",
+      "category": "overstimulation",
+      "reverse": true,
+      "text": "Even on a relatively good day, I stay comfortable even when many things happen at once."
+    },
+    {
+      "id": "HSP-100",
+      "category": "overstimulation",
+      "reverse": false,
+      "text": "Across different settings, several demands or sensations at once can quickly overwhelm me."
+    },
+    {
+      "id": "HSP-101",
+      "category": "emotional_intensity",
+      "reverse": false,
+      "text": "In everyday life, positive and difficult emotions can both feel vivid to me."
+    },
+    {
+      "id": "HSP-102",
+      "category": "emotional_intensity",
+      "reverse": true,
+      "text": "In busy places, my emotional reactions are usually mild and brief."
+    },
+    {
+      "id": "HSP-103",
+      "category": "emotional_intensity",
+      "reverse": false,
+      "text": "During an ordinary week, emotionally meaningful events affect me strongly."
+    },
+    {
+      "id": "HSP-104",
+      "category": "emotional_intensity",
+      "reverse": true,
+      "text": "When several things happen at once, even meaningful events rarely stir strong feelings in me."
+    },
+    {
+      "id": "HSP-105",
+      "category": "emotional_intensity",
+      "reverse": false,
+      "text": "After a demanding day, positive and difficult emotions can both feel vivid to me."
+    },
+    {
+      "id": "HSP-106",
+      "category": "emotional_intensity",
+      "reverse": true,
+      "text": "In unfamiliar surroundings, my emotional reactions are usually mild and brief."
+    },
+    {
+      "id": "HSP-107",
+      "category": "emotional_intensity",
+      "reverse": false,
+      "text": "During conversations, emotionally meaningful events affect me strongly."
+    },
+    {
+      "id": "HSP-108",
+      "category": "emotional_intensity",
+      "reverse": true,
+      "text": "When plans change, even meaningful events rarely stir strong feelings in me."
+    },
+    {
+      "id": "HSP-109",
+      "category": "emotional_intensity",
+      "reverse": false,
+      "text": "While working or studying, positive and difficult emotions can both feel vivid to me."
+    },
+    {
+      "id": "HSP-110",
+      "category": "emotional_intensity",
+      "reverse": true,
+      "text": "When emotions are present, my emotional reactions are usually mild and brief."
+    },
+    {
+      "id": "HSP-111",
+      "category": "emotional_intensity",
+      "reverse": false,
+      "text": "Around other people, emotionally meaningful events affect me strongly."
+    },
+    {
+      "id": "HSP-112",
+      "category": "emotional_intensity",
+      "reverse": true,
+      "text": "When I am tired, even meaningful events rarely stir strong feelings in me."
+    },
+    {
+      "id": "HSP-113",
+      "category": "emotional_intensity",
+      "reverse": false,
+      "text": "In calm surroundings, positive and difficult emotions can both feel vivid to me."
+    },
+    {
+      "id": "HSP-114",
+      "category": "emotional_intensity",
+      "reverse": true,
+      "text": "Under time pressure, my emotional reactions are usually mild and brief."
+    },
+    {
+      "id": "HSP-115",
+      "category": "emotional_intensity",
+      "reverse": false,
+      "text": "When making choices, emotionally meaningful events affect me strongly."
+    },
+    {
+      "id": "HSP-116",
+      "category": "emotional_intensity",
+      "reverse": true,
+      "text": "After social activity, even meaningful events rarely stir strong feelings in me."
+    },
+    {
+      "id": "HSP-117",
+      "category": "emotional_intensity",
+      "reverse": false,
+      "text": "When receiving feedback, positive and difficult emotions can both feel vivid to me."
+    },
+    {
+      "id": "HSP-118",
+      "category": "emotional_intensity",
+      "reverse": true,
+      "text": "In visually or audibly intense settings, my emotional reactions are usually mild and brief."
+    },
+    {
+      "id": "HSP-119",
+      "category": "emotional_intensity",
+      "reverse": false,
+      "text": "When something feels meaningful, emotionally meaningful events affect me strongly."
+    },
+    {
+      "id": "HSP-120",
+      "category": "emotional_intensity",
+      "reverse": true,
+      "text": "During periods of change, even meaningful events rarely stir strong feelings in me."
+    },
+    {
+      "id": "HSP-121",
+      "category": "emotional_intensity",
+      "reverse": false,
+      "text": "When I cannot control my environment, positive and difficult emotions can both feel vivid to me."
+    },
+    {
+      "id": "HSP-122",
+      "category": "emotional_intensity",
+      "reverse": true,
+      "text": "While noticing people’s reactions, my emotional reactions are usually mild and brief."
+    },
+    {
+      "id": "HSP-123",
+      "category": "emotional_intensity",
+      "reverse": false,
+      "text": "When I need to recover, emotionally meaningful events affect me strongly."
+    },
+    {
+      "id": "HSP-124",
+      "category": "emotional_intensity",
+      "reverse": true,
+      "text": "Even on a relatively good day, even meaningful events rarely stir strong feelings in me."
+    },
+    {
+      "id": "HSP-125",
+      "category": "emotional_intensity",
+      "reverse": false,
+      "text": "Across different settings, positive and difficult emotions can both feel vivid to me."
+    },
+    {
+      "id": "HSP-126",
+      "category": "empathy",
+      "reverse": false,
+      "text": "In everyday life, other people’s emotional states register strongly with me."
+    },
+    {
+      "id": "HSP-127",
+      "category": "empathy",
+      "reverse": true,
+      "text": "In busy places, other people’s moods have little effect on me."
+    },
+    {
+      "id": "HSP-128",
+      "category": "empathy",
+      "reverse": false,
+      "text": "During an ordinary week, I readily sense when someone needs gentleness or space."
+    },
+    {
+      "id": "HSP-129",
+      "category": "empathy",
+      "reverse": true,
+      "text": "When several things happen at once, I often miss quiet signs that someone is emotionally affected."
+    },
+    {
+      "id": "HSP-130",
+      "category": "empathy",
+      "reverse": false,
+      "text": "After a demanding day, other people’s emotional states register strongly with me."
+    },
+    {
+      "id": "HSP-131",
+      "category": "empathy",
+      "reverse": true,
+      "text": "In unfamiliar surroundings, other people’s moods have little effect on me."
+    },
+    {
+      "id": "HSP-132",
+      "category": "empathy",
+      "reverse": false,
+      "text": "During conversations, I readily sense when someone needs gentleness or space."
+    },
+    {
+      "id": "HSP-133",
+      "category": "empathy",
+      "reverse": true,
+      "text": "When plans change, I often miss quiet signs that someone is emotionally affected."
+    },
+    {
+      "id": "HSP-134",
+      "category": "empathy",
+      "reverse": false,
+      "text": "While working or studying, other people’s emotional states register strongly with me."
+    },
+    {
+      "id": "HSP-135",
+      "category": "empathy",
+      "reverse": true,
+      "text": "When emotions are present, other people’s moods have little effect on me."
+    },
+    {
+      "id": "HSP-136",
+      "category": "empathy",
+      "reverse": false,
+      "text": "Around other people, I readily sense when someone needs gentleness or space."
+    },
+    {
+      "id": "HSP-137",
+      "category": "empathy",
+      "reverse": true,
+      "text": "When I am tired, I often miss quiet signs that someone is emotionally affected."
+    },
+    {
+      "id": "HSP-138",
+      "category": "empathy",
+      "reverse": false,
+      "text": "In calm surroundings, other people’s emotional states register strongly with me."
+    },
+    {
+      "id": "HSP-139",
+      "category": "empathy",
+      "reverse": true,
+      "text": "Under time pressure, other people’s moods have little effect on me."
+    },
+    {
+      "id": "HSP-140",
+      "category": "empathy",
+      "reverse": false,
+      "text": "When making choices, I readily sense when someone needs gentleness or space."
+    },
+    {
+      "id": "HSP-141",
+      "category": "empathy",
+      "reverse": true,
+      "text": "After social activity, I often miss quiet signs that someone is emotionally affected."
+    },
+    {
+      "id": "HSP-142",
+      "category": "empathy",
+      "reverse": false,
+      "text": "When receiving feedback, other people’s emotional states register strongly with me."
+    },
+    {
+      "id": "HSP-143",
+      "category": "empathy",
+      "reverse": true,
+      "text": "In visually or audibly intense settings, other people’s moods have little effect on me."
+    },
+    {
+      "id": "HSP-144",
+      "category": "empathy",
+      "reverse": false,
+      "text": "When something feels meaningful, I readily sense when someone needs gentleness or space."
+    },
+    {
+      "id": "HSP-145",
+      "category": "empathy",
+      "reverse": true,
+      "text": "During periods of change, I often miss quiet signs that someone is emotionally affected."
+    },
+    {
+      "id": "HSP-146",
+      "category": "empathy",
+      "reverse": false,
+      "text": "When I cannot control my environment, other people’s emotional states register strongly with me."
+    },
+    {
+      "id": "HSP-147",
+      "category": "empathy",
+      "reverse": true,
+      "text": "While noticing people’s reactions, other people’s moods have little effect on me."
+    },
+    {
+      "id": "HSP-148",
+      "category": "empathy",
+      "reverse": false,
+      "text": "When I need to recover, I readily sense when someone needs gentleness or space."
+    },
+    {
+      "id": "HSP-149",
+      "category": "empathy",
+      "reverse": true,
+      "text": "Even on a relatively good day, I often miss quiet signs that someone is emotionally affected."
+    },
+    {
+      "id": "HSP-150",
+      "category": "empathy",
+      "reverse": false,
+      "text": "Across different settings, other people’s emotional states register strongly with me."
+    },
+    {
+      "id": "HSP-151",
+      "category": "aesthetic",
+      "reverse": false,
+      "text": "In everyday life, beauty in art, music, nature, or design can move me deeply."
+    },
+    {
+      "id": "HSP-152",
+      "category": "aesthetic",
+      "reverse": true,
+      "text": "In busy places, artistic or natural beauty rarely affects me strongly."
+    },
+    {
+      "id": "HSP-153",
+      "category": "aesthetic",
+      "reverse": false,
+      "text": "During an ordinary week, I notice fine aesthetic qualities and emotional tones."
+    },
+    {
+      "id": "HSP-154",
+      "category": "aesthetic",
+      "reverse": true,
+      "text": "When several things happen at once, fine differences in beauty or design matter little to me."
+    },
+    {
+      "id": "HSP-155",
+      "category": "aesthetic",
+      "reverse": false,
+      "text": "After a demanding day, beauty in art, music, nature, or design can move me deeply."
+    },
+    {
+      "id": "HSP-156",
+      "category": "aesthetic",
+      "reverse": true,
+      "text": "In unfamiliar surroundings, artistic or natural beauty rarely affects me strongly."
+    },
+    {
+      "id": "HSP-157",
+      "category": "aesthetic",
+      "reverse": false,
+      "text": "During conversations, I notice fine aesthetic qualities and emotional tones."
+    },
+    {
+      "id": "HSP-158",
+      "category": "aesthetic",
+      "reverse": true,
+      "text": "When plans change, fine differences in beauty or design matter little to me."
+    },
+    {
+      "id": "HSP-159",
+      "category": "aesthetic",
+      "reverse": false,
+      "text": "While working or studying, beauty in art, music, nature, or design can move me deeply."
+    },
+    {
+      "id": "HSP-160",
+      "category": "aesthetic",
+      "reverse": true,
+      "text": "When emotions are present, artistic or natural beauty rarely affects me strongly."
+    },
+    {
+      "id": "HSP-161",
+      "category": "aesthetic",
+      "reverse": false,
+      "text": "Around other people, I notice fine aesthetic qualities and emotional tones."
+    },
+    {
+      "id": "HSP-162",
+      "category": "aesthetic",
+      "reverse": true,
+      "text": "When I am tired, fine differences in beauty or design matter little to me."
+    },
+    {
+      "id": "HSP-163",
+      "category": "aesthetic",
+      "reverse": false,
+      "text": "In calm surroundings, beauty in art, music, nature, or design can move me deeply."
+    },
+    {
+      "id": "HSP-164",
+      "category": "aesthetic",
+      "reverse": true,
+      "text": "Under time pressure, artistic or natural beauty rarely affects me strongly."
+    },
+    {
+      "id": "HSP-165",
+      "category": "aesthetic",
+      "reverse": false,
+      "text": "When making choices, I notice fine aesthetic qualities and emotional tones."
+    },
+    {
+      "id": "HSP-166",
+      "category": "aesthetic",
+      "reverse": true,
+      "text": "After social activity, fine differences in beauty or design matter little to me."
+    },
+    {
+      "id": "HSP-167",
+      "category": "aesthetic",
+      "reverse": false,
+      "text": "When receiving feedback, beauty in art, music, nature, or design can move me deeply."
+    },
+    {
+      "id": "HSP-168",
+      "category": "aesthetic",
+      "reverse": true,
+      "text": "In visually or audibly intense settings, artistic or natural beauty rarely affects me strongly."
+    },
+    {
+      "id": "HSP-169",
+      "category": "aesthetic",
+      "reverse": false,
+      "text": "When something feels meaningful, I notice fine aesthetic qualities and emotional tones."
+    },
+    {
+      "id": "HSP-170",
+      "category": "aesthetic",
+      "reverse": true,
+      "text": "During periods of change, fine differences in beauty or design matter little to me."
+    },
+    {
+      "id": "HSP-171",
+      "category": "aesthetic",
+      "reverse": false,
+      "text": "When I cannot control my environment, beauty in art, music, nature, or design can move me deeply."
+    },
+    {
+      "id": "HSP-172",
+      "category": "aesthetic",
+      "reverse": true,
+      "text": "While noticing people’s reactions, artistic or natural beauty rarely affects me strongly."
+    },
+    {
+      "id": "HSP-173",
+      "category": "aesthetic",
+      "reverse": false,
+      "text": "When I need to recover, I notice fine aesthetic qualities and emotional tones."
+    },
+    {
+      "id": "HSP-174",
+      "category": "aesthetic",
+      "reverse": true,
+      "text": "Even on a relatively good day, fine differences in beauty or design matter little to me."
+    },
+    {
+      "id": "HSP-175",
+      "category": "aesthetic",
+      "reverse": false,
+      "text": "Across different settings, beauty in art, music, nature, or design can move me deeply."
+    },
+    {
+      "id": "HSP-176",
+      "category": "positive_environment",
+      "reverse": false,
+      "text": "In everyday life, calm and supportive surroundings noticeably improve my functioning."
+    },
+    {
+      "id": "HSP-177",
+      "category": "positive_environment",
+      "reverse": true,
+      "text": "In busy places, a supportive atmosphere changes little about how I function."
+    },
+    {
+      "id": "HSP-178",
+      "category": "positive_environment",
+      "reverse": false,
+      "text": "During an ordinary week, kindness and safety help me flourish more than people may realise."
+    },
+    {
+      "id": "HSP-179",
+      "category": "positive_environment",
+      "reverse": true,
+      "text": "When several things happen at once, warm or calm surroundings have only a minor effect on me."
+    },
+    {
+      "id": "HSP-180",
+      "category": "positive_environment",
+      "reverse": false,
+      "text": "After a demanding day, calm and supportive surroundings noticeably improve my functioning."
+    },
+    {
+      "id": "HSP-181",
+      "category": "positive_environment",
+      "reverse": true,
+      "text": "In unfamiliar surroundings, a supportive atmosphere changes little about how I function."
+    },
+    {
+      "id": "HSP-182",
+      "category": "positive_environment",
+      "reverse": false,
+      "text": "During conversations, kindness and safety help me flourish more than people may realise."
+    },
+    {
+      "id": "HSP-183",
+      "category": "positive_environment",
+      "reverse": true,
+      "text": "When plans change, warm or calm surroundings have only a minor effect on me."
+    },
+    {
+      "id": "HSP-184",
+      "category": "positive_environment",
+      "reverse": false,
+      "text": "While working or studying, calm and supportive surroundings noticeably improve my functioning."
+    },
+    {
+      "id": "HSP-185",
+      "category": "positive_environment",
+      "reverse": true,
+      "text": "When emotions are present, a supportive atmosphere changes little about how I function."
+    },
+    {
+      "id": "HSP-186",
+      "category": "positive_environment",
+      "reverse": false,
+      "text": "Around other people, kindness and safety help me flourish more than people may realise."
+    },
+    {
+      "id": "HSP-187",
+      "category": "positive_environment",
+      "reverse": true,
+      "text": "When I am tired, warm or calm surroundings have only a minor effect on me."
+    },
+    {
+      "id": "HSP-188",
+      "category": "positive_environment",
+      "reverse": false,
+      "text": "In calm surroundings, calm and supportive surroundings noticeably improve my functioning."
+    },
+    {
+      "id": "HSP-189",
+      "category": "positive_environment",
+      "reverse": true,
+      "text": "Under time pressure, a supportive atmosphere changes little about how I function."
+    },
+    {
+      "id": "HSP-190",
+      "category": "positive_environment",
+      "reverse": false,
+      "text": "When making choices, kindness and safety help me flourish more than people may realise."
+    },
+    {
+      "id": "HSP-191",
+      "category": "positive_environment",
+      "reverse": true,
+      "text": "After social activity, warm or calm surroundings have only a minor effect on me."
+    },
+    {
+      "id": "HSP-192",
+      "category": "positive_environment",
+      "reverse": false,
+      "text": "When receiving feedback, calm and supportive surroundings noticeably improve my functioning."
+    },
+    {
+      "id": "HSP-193",
+      "category": "positive_environment",
+      "reverse": true,
+      "text": "In visually or audibly intense settings, a supportive atmosphere changes little about how I function."
+    },
+    {
+      "id": "HSP-194",
+      "category": "positive_environment",
+      "reverse": false,
+      "text": "When something feels meaningful, kindness and safety help me flourish more than people may realise."
+    },
+    {
+      "id": "HSP-195",
+      "category": "positive_environment",
+      "reverse": true,
+      "text": "During periods of change, warm or calm surroundings have only a minor effect on me."
+    },
+    {
+      "id": "HSP-196",
+      "category": "positive_environment",
+      "reverse": false,
+      "text": "When I cannot control my environment, calm and supportive surroundings noticeably improve my functioning."
+    },
+    {
+      "id": "HSP-197",
+      "category": "positive_environment",
+      "reverse": true,
+      "text": "While noticing people’s reactions, a supportive atmosphere changes little about how I function."
+    },
+    {
+      "id": "HSP-198",
+      "category": "positive_environment",
+      "reverse": false,
+      "text": "When I need to recover, kindness and safety help me flourish more than people may realise."
+    },
+    {
+      "id": "HSP-199",
+      "category": "positive_environment",
+      "reverse": true,
+      "text": "Even on a relatively good day, warm or calm surroundings have only a minor effect on me."
+    },
+    {
+      "id": "HSP-200",
+      "category": "positive_environment",
+      "reverse": false,
+      "text": "Across different settings, calm and supportive surroundings noticeably improve my functioning."
+    },
+    {
+      "id": "HSP-201",
+      "category": "negative_environment",
+      "reverse": false,
+      "text": "In everyday life, harsh or chaotic surroundings affect me for a long time."
+    },
+    {
+      "id": "HSP-202",
+      "category": "negative_environment",
+      "reverse": true,
+      "text": "In busy places, harsh surroundings usually roll off me."
+    },
+    {
+      "id": "HSP-203",
+      "category": "negative_environment",
+      "reverse": false,
+      "text": "During an ordinary week, tension in an environment can drain my energy quickly."
+    },
+    {
+      "id": "HSP-204",
+      "category": "negative_environment",
+      "reverse": true,
+      "text": "When several things happen at once, environmental tension has little lasting effect on my energy."
+    },
+    {
+      "id": "HSP-205",
+      "category": "negative_environment",
+      "reverse": false,
+      "text": "After a demanding day, harsh or chaotic surroundings affect me for a long time."
+    },
+    {
+      "id": "HSP-206",
+      "category": "negative_environment",
+      "reverse": true,
+      "text": "In unfamiliar surroundings, harsh surroundings usually roll off me."
+    },
+    {
+      "id": "HSP-207",
+      "category": "negative_environment",
+      "reverse": false,
+      "text": "During conversations, tension in an environment can drain my energy quickly."
+    },
+    {
+      "id": "HSP-208",
+      "category": "negative_environment",
+      "reverse": true,
+      "text": "When plans change, environmental tension has little lasting effect on my energy."
+    },
+    {
+      "id": "HSP-209",
+      "category": "negative_environment",
+      "reverse": false,
+      "text": "While working or studying, harsh or chaotic surroundings affect me for a long time."
+    },
+    {
+      "id": "HSP-210",
+      "category": "negative_environment",
+      "reverse": true,
+      "text": "When emotions are present, harsh surroundings usually roll off me."
+    },
+    {
+      "id": "HSP-211",
+      "category": "negative_environment",
+      "reverse": false,
+      "text": "Around other people, tension in an environment can drain my energy quickly."
+    },
+    {
+      "id": "HSP-212",
+      "category": "negative_environment",
+      "reverse": true,
+      "text": "When I am tired, environmental tension has little lasting effect on my energy."
+    },
+    {
+      "id": "HSP-213",
+      "category": "negative_environment",
+      "reverse": false,
+      "text": "In calm surroundings, harsh or chaotic surroundings affect me for a long time."
+    },
+    {
+      "id": "HSP-214",
+      "category": "negative_environment",
+      "reverse": true,
+      "text": "Under time pressure, harsh surroundings usually roll off me."
+    },
+    {
+      "id": "HSP-215",
+      "category": "negative_environment",
+      "reverse": false,
+      "text": "When making choices, tension in an environment can drain my energy quickly."
+    },
+    {
+      "id": "HSP-216",
+      "category": "negative_environment",
+      "reverse": true,
+      "text": "After social activity, environmental tension has little lasting effect on my energy."
+    },
+    {
+      "id": "HSP-217",
+      "category": "negative_environment",
+      "reverse": false,
+      "text": "When receiving feedback, harsh or chaotic surroundings affect me for a long time."
+    },
+    {
+      "id": "HSP-218",
+      "category": "negative_environment",
+      "reverse": true,
+      "text": "In visually or audibly intense settings, harsh surroundings usually roll off me."
+    },
+    {
+      "id": "HSP-219",
+      "category": "negative_environment",
+      "reverse": false,
+      "text": "When something feels meaningful, tension in an environment can drain my energy quickly."
+    },
+    {
+      "id": "HSP-220",
+      "category": "negative_environment",
+      "reverse": true,
+      "text": "During periods of change, environmental tension has little lasting effect on my energy."
+    },
+    {
+      "id": "HSP-221",
+      "category": "negative_environment",
+      "reverse": false,
+      "text": "When I cannot control my environment, harsh or chaotic surroundings affect me for a long time."
+    },
+    {
+      "id": "HSP-222",
+      "category": "negative_environment",
+      "reverse": true,
+      "text": "While noticing people’s reactions, harsh surroundings usually roll off me."
+    },
+    {
+      "id": "HSP-223",
+      "category": "negative_environment",
+      "reverse": false,
+      "text": "When I need to recover, tension in an environment can drain my energy quickly."
+    },
+    {
+      "id": "HSP-224",
+      "category": "negative_environment",
+      "reverse": true,
+      "text": "Even on a relatively good day, environmental tension has little lasting effect on my energy."
+    },
+    {
+      "id": "HSP-225",
+      "category": "negative_environment",
+      "reverse": false,
+      "text": "Across different settings, harsh or chaotic surroundings affect me for a long time."
+    },
+    {
+      "id": "HSP-226",
+      "category": "novelty",
+      "reverse": false,
+      "text": "In everyday life, new situations require extra observation before I settle in."
+    },
+    {
+      "id": "HSP-227",
+      "category": "novelty",
+      "reverse": true,
+      "text": "In busy places, I adapt to unfamiliar situations with almost no adjustment period."
+    },
+    {
+      "id": "HSP-228",
+      "category": "novelty",
+      "reverse": false,
+      "text": "During an ordinary week, transitions can take me longer to absorb emotionally and mentally."
+    },
+    {
+      "id": "HSP-229",
+      "category": "novelty",
+      "reverse": true,
+      "text": "When several things happen at once, transitions rarely require extra processing from me."
+    },
+    {
+      "id": "HSP-230",
+      "category": "novelty",
+      "reverse": false,
+      "text": "After a demanding day, new situations require extra observation before I settle in."
+    },
+    {
+      "id": "HSP-231",
+      "category": "novelty",
+      "reverse": true,
+      "text": "In unfamiliar surroundings, I adapt to unfamiliar situations with almost no adjustment period."
+    },
+    {
+      "id": "HSP-232",
+      "category": "novelty",
+      "reverse": false,
+      "text": "During conversations, transitions can take me longer to absorb emotionally and mentally."
+    },
+    {
+      "id": "HSP-233",
+      "category": "novelty",
+      "reverse": true,
+      "text": "When plans change, transitions rarely require extra processing from me."
+    },
+    {
+      "id": "HSP-234",
+      "category": "novelty",
+      "reverse": false,
+      "text": "While working or studying, new situations require extra observation before I settle in."
+    },
+    {
+      "id": "HSP-235",
+      "category": "novelty",
+      "reverse": true,
+      "text": "When emotions are present, I adapt to unfamiliar situations with almost no adjustment period."
+    },
+    {
+      "id": "HSP-236",
+      "category": "novelty",
+      "reverse": false,
+      "text": "Around other people, transitions can take me longer to absorb emotionally and mentally."
+    },
+    {
+      "id": "HSP-237",
+      "category": "novelty",
+      "reverse": true,
+      "text": "When I am tired, transitions rarely require extra processing from me."
+    },
+    {
+      "id": "HSP-238",
+      "category": "novelty",
+      "reverse": false,
+      "text": "In calm surroundings, new situations require extra observation before I settle in."
+    },
+    {
+      "id": "HSP-239",
+      "category": "novelty",
+      "reverse": true,
+      "text": "Under time pressure, I adapt to unfamiliar situations with almost no adjustment period."
+    },
+    {
+      "id": "HSP-240",
+      "category": "novelty",
+      "reverse": false,
+      "text": "When making choices, transitions can take me longer to absorb emotionally and mentally."
+    },
+    {
+      "id": "HSP-241",
+      "category": "novelty",
+      "reverse": true,
+      "text": "After social activity, transitions rarely require extra processing from me."
+    },
+    {
+      "id": "HSP-242",
+      "category": "novelty",
+      "reverse": false,
+      "text": "When receiving feedback, new situations require extra observation before I settle in."
+    },
+    {
+      "id": "HSP-243",
+      "category": "novelty",
+      "reverse": true,
+      "text": "In visually or audibly intense settings, I adapt to unfamiliar situations with almost no adjustment period."
+    },
+    {
+      "id": "HSP-244",
+      "category": "novelty",
+      "reverse": false,
+      "text": "When something feels meaningful, transitions can take me longer to absorb emotionally and mentally."
+    },
+    {
+      "id": "HSP-245",
+      "category": "novelty",
+      "reverse": true,
+      "text": "During periods of change, transitions rarely require extra processing from me."
+    },
+    {
+      "id": "HSP-246",
+      "category": "novelty",
+      "reverse": false,
+      "text": "When I cannot control my environment, new situations require extra observation before I settle in."
+    },
+    {
+      "id": "HSP-247",
+      "category": "novelty",
+      "reverse": true,
+      "text": "While noticing people’s reactions, I adapt to unfamiliar situations with almost no adjustment period."
+    },
+    {
+      "id": "HSP-248",
+      "category": "novelty",
+      "reverse": false,
+      "text": "When I need to recover, transitions can take me longer to absorb emotionally and mentally."
+    },
+    {
+      "id": "HSP-249",
+      "category": "novelty",
+      "reverse": true,
+      "text": "Even on a relatively good day, transitions rarely require extra processing from me."
+    },
+    {
+      "id": "HSP-250",
+      "category": "novelty",
+      "reverse": false,
+      "text": "Across different settings, new situations require extra observation before I settle in."
+    },
+    {
+      "id": "HSP-251",
+      "category": "deliberation",
+      "reverse": false,
+      "text": "In everyday life, I consider many consequences before making an important choice."
+    },
+    {
+      "id": "HSP-252",
+      "category": "deliberation",
+      "reverse": true,
+      "text": "In busy places, I usually decide without examining many possible consequences."
+    },
+    {
+      "id": "HSP-253",
+      "category": "deliberation",
+      "reverse": false,
+      "text": "During an ordinary week, I need time to process options when a decision carries meaning."
+    },
+    {
+      "id": "HSP-254",
+      "category": "deliberation",
+      "reverse": true,
+      "text": "When several things happen at once, important choices seldom require much reflection from me."
+    },
+    {
+      "id": "HSP-255",
+      "category": "deliberation",
+      "reverse": false,
+      "text": "After a demanding day, I consider many consequences before making an important choice."
+    },
+    {
+      "id": "HSP-256",
+      "category": "deliberation",
+      "reverse": true,
+      "text": "In unfamiliar surroundings, I usually decide without examining many possible consequences."
+    },
+    {
+      "id": "HSP-257",
+      "category": "deliberation",
+      "reverse": false,
+      "text": "During conversations, I need time to process options when a decision carries meaning."
+    },
+    {
+      "id": "HSP-258",
+      "category": "deliberation",
+      "reverse": true,
+      "text": "When plans change, important choices seldom require much reflection from me."
+    },
+    {
+      "id": "HSP-259",
+      "category": "deliberation",
+      "reverse": false,
+      "text": "While working or studying, I consider many consequences before making an important choice."
+    },
+    {
+      "id": "HSP-260",
+      "category": "deliberation",
+      "reverse": true,
+      "text": "When emotions are present, I usually decide without examining many possible consequences."
+    },
+    {
+      "id": "HSP-261",
+      "category": "deliberation",
+      "reverse": false,
+      "text": "Around other people, I need time to process options when a decision carries meaning."
+    },
+    {
+      "id": "HSP-262",
+      "category": "deliberation",
+      "reverse": true,
+      "text": "When I am tired, important choices seldom require much reflection from me."
+    },
+    {
+      "id": "HSP-263",
+      "category": "deliberation",
+      "reverse": false,
+      "text": "In calm surroundings, I consider many consequences before making an important choice."
+    },
+    {
+      "id": "HSP-264",
+      "category": "deliberation",
+      "reverse": true,
+      "text": "Under time pressure, I usually decide without examining many possible consequences."
+    },
+    {
+      "id": "HSP-265",
+      "category": "deliberation",
+      "reverse": false,
+      "text": "When making choices, I need time to process options when a decision carries meaning."
+    },
+    {
+      "id": "HSP-266",
+      "category": "deliberation",
+      "reverse": true,
+      "text": "After social activity, important choices seldom require much reflection from me."
+    },
+    {
+      "id": "HSP-267",
+      "category": "deliberation",
+      "reverse": false,
+      "text": "When receiving feedback, I consider many consequences before making an important choice."
+    },
+    {
+      "id": "HSP-268",
+      "category": "deliberation",
+      "reverse": true,
+      "text": "In visually or audibly intense settings, I usually decide without examining many possible consequences."
+    },
+    {
+      "id": "HSP-269",
+      "category": "deliberation",
+      "reverse": false,
+      "text": "When something feels meaningful, I need time to process options when a decision carries meaning."
+    },
+    {
+      "id": "HSP-270",
+      "category": "deliberation",
+      "reverse": true,
+      "text": "During periods of change, important choices seldom require much reflection from me."
+    },
+    {
+      "id": "HSP-271",
+      "category": "deliberation",
+      "reverse": false,
+      "text": "When I cannot control my environment, I consider many consequences before making an important choice."
+    },
+    {
+      "id": "HSP-272",
+      "category": "deliberation",
+      "reverse": true,
+      "text": "While noticing people’s reactions, I usually decide without examining many possible consequences."
+    },
+    {
+      "id": "HSP-273",
+      "category": "deliberation",
+      "reverse": false,
+      "text": "When I need to recover, I need time to process options when a decision carries meaning."
+    },
+    {
+      "id": "HSP-274",
+      "category": "deliberation",
+      "reverse": true,
+      "text": "Even on a relatively good day, important choices seldom require much reflection from me."
+    },
+    {
+      "id": "HSP-275",
+      "category": "deliberation",
+      "reverse": false,
+      "text": "Across different settings, I consider many consequences before making an important choice."
+    },
+    {
+      "id": "HSP-276",
+      "category": "social_stimulation",
+      "reverse": false,
+      "text": "In everyday life, crowds or prolonged social activity can overload me."
+    },
+    {
+      "id": "HSP-277",
+      "category": "social_stimulation",
+      "reverse": true,
+      "text": "In busy places, crowds and long social events rarely tire me."
+    },
+    {
+      "id": "HSP-278",
+      "category": "social_stimulation",
+      "reverse": false,
+      "text": "During an ordinary week, I process many social cues at once and tire from the effort."
+    },
+    {
+      "id": "HSP-279",
+      "category": "social_stimulation",
+      "reverse": true,
+      "text": "When several things happen at once, I can handle dense social activity without needing recovery."
+    },
+    {
+      "id": "HSP-280",
+      "category": "social_stimulation",
+      "reverse": false,
+      "text": "After a demanding day, crowds or prolonged social activity can overload me."
+    },
+    {
+      "id": "HSP-281",
+      "category": "social_stimulation",
+      "reverse": true,
+      "text": "In unfamiliar surroundings, crowds and long social events rarely tire me."
+    },
+    {
+      "id": "HSP-282",
+      "category": "social_stimulation",
+      "reverse": false,
+      "text": "During conversations, I process many social cues at once and tire from the effort."
+    },
+    {
+      "id": "HSP-283",
+      "category": "social_stimulation",
+      "reverse": true,
+      "text": "When plans change, I can handle dense social activity without needing recovery."
+    },
+    {
+      "id": "HSP-284",
+      "category": "social_stimulation",
+      "reverse": false,
+      "text": "While working or studying, crowds or prolonged social activity can overload me."
+    },
+    {
+      "id": "HSP-285",
+      "category": "social_stimulation",
+      "reverse": true,
+      "text": "When emotions are present, crowds and long social events rarely tire me."
+    },
+    {
+      "id": "HSP-286",
+      "category": "social_stimulation",
+      "reverse": false,
+      "text": "Around other people, I process many social cues at once and tire from the effort."
+    },
+    {
+      "id": "HSP-287",
+      "category": "social_stimulation",
+      "reverse": true,
+      "text": "When I am tired, I can handle dense social activity without needing recovery."
+    },
+    {
+      "id": "HSP-288",
+      "category": "social_stimulation",
+      "reverse": false,
+      "text": "In calm surroundings, crowds or prolonged social activity can overload me."
+    },
+    {
+      "id": "HSP-289",
+      "category": "social_stimulation",
+      "reverse": true,
+      "text": "Under time pressure, crowds and long social events rarely tire me."
+    },
+    {
+      "id": "HSP-290",
+      "category": "social_stimulation",
+      "reverse": false,
+      "text": "When making choices, I process many social cues at once and tire from the effort."
+    },
+    {
+      "id": "HSP-291",
+      "category": "social_stimulation",
+      "reverse": true,
+      "text": "After social activity, I can handle dense social activity without needing recovery."
+    },
+    {
+      "id": "HSP-292",
+      "category": "social_stimulation",
+      "reverse": false,
+      "text": "When receiving feedback, crowds or prolonged social activity can overload me."
+    },
+    {
+      "id": "HSP-293",
+      "category": "social_stimulation",
+      "reverse": true,
+      "text": "In visually or audibly intense settings, crowds and long social events rarely tire me."
+    },
+    {
+      "id": "HSP-294",
+      "category": "social_stimulation",
+      "reverse": false,
+      "text": "When something feels meaningful, I process many social cues at once and tire from the effort."
+    },
+    {
+      "id": "HSP-295",
+      "category": "social_stimulation",
+      "reverse": true,
+      "text": "During periods of change, I can handle dense social activity without needing recovery."
+    },
+    {
+      "id": "HSP-296",
+      "category": "social_stimulation",
+      "reverse": false,
+      "text": "When I cannot control my environment, crowds or prolonged social activity can overload me."
+    },
+    {
+      "id": "HSP-297",
+      "category": "social_stimulation",
+      "reverse": true,
+      "text": "While noticing people’s reactions, crowds and long social events rarely tire me."
+    },
+    {
+      "id": "HSP-298",
+      "category": "social_stimulation",
+      "reverse": false,
+      "text": "When I need to recover, I process many social cues at once and tire from the effort."
+    },
+    {
+      "id": "HSP-299",
+      "category": "social_stimulation",
+      "reverse": true,
+      "text": "Even on a relatively good day, I can handle dense social activity without needing recovery."
+    },
+    {
+      "id": "HSP-300",
+      "category": "social_stimulation",
+      "reverse": false,
+      "text": "Across different settings, crowds or prolonged social activity can overload me."
+    },
+    {
+      "id": "HSP-301",
+      "category": "criticism",
+      "reverse": false,
+      "text": "In everyday life, sharp criticism or conflict stays with me after it ends."
+    },
+    {
+      "id": "HSP-302",
+      "category": "criticism",
+      "reverse": true,
+      "text": "In busy places, criticism leaves me almost immediately after the conversation."
+    },
+    {
+      "id": "HSP-303",
+      "category": "criticism",
+      "reverse": false,
+      "text": "During an ordinary week, I register subtle disapproval even when it is not directly stated."
+    },
+    {
+      "id": "HSP-304",
+      "category": "criticism",
+      "reverse": true,
+      "text": "When several things happen at once, indirect disapproval usually has no effect unless clearly stated."
+    },
+    {
+      "id": "HSP-305",
+      "category": "criticism",
+      "reverse": false,
+      "text": "After a demanding day, sharp criticism or conflict stays with me after it ends."
+    },
+    {
+      "id": "HSP-306",
+      "category": "criticism",
+      "reverse": true,
+      "text": "In unfamiliar surroundings, criticism leaves me almost immediately after the conversation."
+    },
+    {
+      "id": "HSP-307",
+      "category": "criticism",
+      "reverse": false,
+      "text": "During conversations, I register subtle disapproval even when it is not directly stated."
+    },
+    {
+      "id": "HSP-308",
+      "category": "criticism",
+      "reverse": true,
+      "text": "When plans change, indirect disapproval usually has no effect unless clearly stated."
+    },
+    {
+      "id": "HSP-309",
+      "category": "criticism",
+      "reverse": false,
+      "text": "While working or studying, sharp criticism or conflict stays with me after it ends."
+    },
+    {
+      "id": "HSP-310",
+      "category": "criticism",
+      "reverse": true,
+      "text": "When emotions are present, criticism leaves me almost immediately after the conversation."
+    },
+    {
+      "id": "HSP-311",
+      "category": "criticism",
+      "reverse": false,
+      "text": "Around other people, I register subtle disapproval even when it is not directly stated."
+    },
+    {
+      "id": "HSP-312",
+      "category": "criticism",
+      "reverse": true,
+      "text": "When I am tired, indirect disapproval usually has no effect unless clearly stated."
+    },
+    {
+      "id": "HSP-313",
+      "category": "criticism",
+      "reverse": false,
+      "text": "In calm surroundings, sharp criticism or conflict stays with me after it ends."
+    },
+    {
+      "id": "HSP-314",
+      "category": "criticism",
+      "reverse": true,
+      "text": "Under time pressure, criticism leaves me almost immediately after the conversation."
+    },
+    {
+      "id": "HSP-315",
+      "category": "criticism",
+      "reverse": false,
+      "text": "When making choices, I register subtle disapproval even when it is not directly stated."
+    },
+    {
+      "id": "HSP-316",
+      "category": "criticism",
+      "reverse": true,
+      "text": "After social activity, indirect disapproval usually has no effect unless clearly stated."
+    },
+    {
+      "id": "HSP-317",
+      "category": "criticism",
+      "reverse": false,
+      "text": "When receiving feedback, sharp criticism or conflict stays with me after it ends."
+    },
+    {
+      "id": "HSP-318",
+      "category": "criticism",
+      "reverse": true,
+      "text": "In visually or audibly intense settings, criticism leaves me almost immediately after the conversation."
+    },
+    {
+      "id": "HSP-319",
+      "category": "criticism",
+      "reverse": false,
+      "text": "When something feels meaningful, I register subtle disapproval even when it is not directly stated."
+    },
+    {
+      "id": "HSP-320",
+      "category": "criticism",
+      "reverse": true,
+      "text": "During periods of change, indirect disapproval usually has no effect unless clearly stated."
+    },
+    {
+      "id": "HSP-321",
+      "category": "criticism",
+      "reverse": false,
+      "text": "When I cannot control my environment, sharp criticism or conflict stays with me after it ends."
+    },
+    {
+      "id": "HSP-322",
+      "category": "criticism",
+      "reverse": true,
+      "text": "While noticing people’s reactions, criticism leaves me almost immediately after the conversation."
+    },
+    {
+      "id": "HSP-323",
+      "category": "criticism",
+      "reverse": false,
+      "text": "When I need to recover, I register subtle disapproval even when it is not directly stated."
+    },
+    {
+      "id": "HSP-324",
+      "category": "criticism",
+      "reverse": true,
+      "text": "Even on a relatively good day, indirect disapproval usually has no effect unless clearly stated."
+    },
+    {
+      "id": "HSP-325",
+      "category": "criticism",
+      "reverse": false,
+      "text": "Across different settings, sharp criticism or conflict stays with me after it ends."
+    },
+    {
+      "id": "HSP-326",
+      "category": "body_signals",
+      "reverse": false,
+      "text": "In everyday life, I notice early bodily signs of stress, hunger, fatigue, or tension."
+    },
+    {
+      "id": "HSP-327",
+      "category": "body_signals",
+      "reverse": true,
+      "text": "In busy places, I often miss body signals until they become strong."
+    },
+    {
+      "id": "HSP-328",
+      "category": "body_signals",
+      "reverse": false,
+      "text": "During an ordinary week, small physical discomforts can capture my attention quickly."
+    },
+    {
+      "id": "HSP-329",
+      "category": "body_signals",
+      "reverse": true,
+      "text": "When several things happen at once, minor physical discomfort rarely enters my awareness."
+    },
+    {
+      "id": "HSP-330",
+      "category": "body_signals",
+      "reverse": false,
+      "text": "After a demanding day, I notice early bodily signs of stress, hunger, fatigue, or tension."
+    },
+    {
+      "id": "HSP-331",
+      "category": "body_signals",
+      "reverse": true,
+      "text": "In unfamiliar surroundings, I often miss body signals until they become strong."
+    },
+    {
+      "id": "HSP-332",
+      "category": "body_signals",
+      "reverse": false,
+      "text": "During conversations, small physical discomforts can capture my attention quickly."
+    },
+    {
+      "id": "HSP-333",
+      "category": "body_signals",
+      "reverse": true,
+      "text": "When plans change, minor physical discomfort rarely enters my awareness."
+    },
+    {
+      "id": "HSP-334",
+      "category": "body_signals",
+      "reverse": false,
+      "text": "While working or studying, I notice early bodily signs of stress, hunger, fatigue, or tension."
+    },
+    {
+      "id": "HSP-335",
+      "category": "body_signals",
+      "reverse": true,
+      "text": "When emotions are present, I often miss body signals until they become strong."
+    },
+    {
+      "id": "HSP-336",
+      "category": "body_signals",
+      "reverse": false,
+      "text": "Around other people, small physical discomforts can capture my attention quickly."
+    },
+    {
+      "id": "HSP-337",
+      "category": "body_signals",
+      "reverse": true,
+      "text": "When I am tired, minor physical discomfort rarely enters my awareness."
+    },
+    {
+      "id": "HSP-338",
+      "category": "body_signals",
+      "reverse": false,
+      "text": "In calm surroundings, I notice early bodily signs of stress, hunger, fatigue, or tension."
+    },
+    {
+      "id": "HSP-339",
+      "category": "body_signals",
+      "reverse": true,
+      "text": "Under time pressure, I often miss body signals until they become strong."
+    },
+    {
+      "id": "HSP-340",
+      "category": "body_signals",
+      "reverse": false,
+      "text": "When making choices, small physical discomforts can capture my attention quickly."
+    },
+    {
+      "id": "HSP-341",
+      "category": "body_signals",
+      "reverse": true,
+      "text": "After social activity, minor physical discomfort rarely enters my awareness."
+    },
+    {
+      "id": "HSP-342",
+      "category": "body_signals",
+      "reverse": false,
+      "text": "When receiving feedback, I notice early bodily signs of stress, hunger, fatigue, or tension."
+    },
+    {
+      "id": "HSP-343",
+      "category": "body_signals",
+      "reverse": true,
+      "text": "In visually or audibly intense settings, I often miss body signals until they become strong."
+    },
+    {
+      "id": "HSP-344",
+      "category": "body_signals",
+      "reverse": false,
+      "text": "When something feels meaningful, small physical discomforts can capture my attention quickly."
+    },
+    {
+      "id": "HSP-345",
+      "category": "body_signals",
+      "reverse": true,
+      "text": "During periods of change, minor physical discomfort rarely enters my awareness."
+    },
+    {
+      "id": "HSP-346",
+      "category": "body_signals",
+      "reverse": false,
+      "text": "When I cannot control my environment, I notice early bodily signs of stress, hunger, fatigue, or tension."
+    },
+    {
+      "id": "HSP-347",
+      "category": "body_signals",
+      "reverse": true,
+      "text": "While noticing people’s reactions, I often miss body signals until they become strong."
+    },
+    {
+      "id": "HSP-348",
+      "category": "body_signals",
+      "reverse": false,
+      "text": "When I need to recover, small physical discomforts can capture my attention quickly."
+    },
+    {
+      "id": "HSP-349",
+      "category": "body_signals",
+      "reverse": true,
+      "text": "Even on a relatively good day, minor physical discomfort rarely enters my awareness."
+    },
+    {
+      "id": "HSP-350",
+      "category": "body_signals",
+      "reverse": false,
+      "text": "Across different settings, I notice early bodily signs of stress, hunger, fatigue, or tension."
+    },
+    {
+      "id": "HSP-351",
+      "category": "recovery",
+      "reverse": false,
+      "text": "In everyday life, quiet time helps my system recover after stimulation."
+    },
+    {
+      "id": "HSP-352",
+      "category": "recovery",
+      "reverse": true,
+      "text": "In busy places, I recover from stimulation without needing quiet time."
+    },
+    {
+      "id": "HSP-353",
+      "category": "recovery",
+      "reverse": false,
+      "text": "During an ordinary week, I need regular low-input periods to feel balanced."
+    },
+    {
+      "id": "HSP-354",
+      "category": "recovery",
+      "reverse": true,
+      "text": "When several things happen at once, extended activity rarely creates a need to withdraw and reset."
+    },
+    {
+      "id": "HSP-355",
+      "category": "recovery",
+      "reverse": false,
+      "text": "After a demanding day, quiet time helps my system recover after stimulation."
+    },
+    {
+      "id": "HSP-356",
+      "category": "recovery",
+      "reverse": true,
+      "text": "In unfamiliar surroundings, I recover from stimulation without needing quiet time."
+    },
+    {
+      "id": "HSP-357",
+      "category": "recovery",
+      "reverse": false,
+      "text": "During conversations, I need regular low-input periods to feel balanced."
+    },
+    {
+      "id": "HSP-358",
+      "category": "recovery",
+      "reverse": true,
+      "text": "When plans change, extended activity rarely creates a need to withdraw and reset."
+    },
+    {
+      "id": "HSP-359",
+      "category": "recovery",
+      "reverse": false,
+      "text": "While working or studying, quiet time helps my system recover after stimulation."
+    },
+    {
+      "id": "HSP-360",
+      "category": "recovery",
+      "reverse": true,
+      "text": "When emotions are present, I recover from stimulation without needing quiet time."
+    },
+    {
+      "id": "HSP-361",
+      "category": "recovery",
+      "reverse": false,
+      "text": "Around other people, I need regular low-input periods to feel balanced."
+    },
+    {
+      "id": "HSP-362",
+      "category": "recovery",
+      "reverse": true,
+      "text": "When I am tired, extended activity rarely creates a need to withdraw and reset."
+    },
+    {
+      "id": "HSP-363",
+      "category": "recovery",
+      "reverse": false,
+      "text": "In calm surroundings, quiet time helps my system recover after stimulation."
+    },
+    {
+      "id": "HSP-364",
+      "category": "recovery",
+      "reverse": true,
+      "text": "Under time pressure, I recover from stimulation without needing quiet time."
+    },
+    {
+      "id": "HSP-365",
+      "category": "recovery",
+      "reverse": false,
+      "text": "When making choices, I need regular low-input periods to feel balanced."
+    },
+    {
+      "id": "HSP-366",
+      "category": "recovery",
+      "reverse": true,
+      "text": "After social activity, extended activity rarely creates a need to withdraw and reset."
+    },
+    {
+      "id": "HSP-367",
+      "category": "recovery",
+      "reverse": false,
+      "text": "When receiving feedback, quiet time helps my system recover after stimulation."
+    },
+    {
+      "id": "HSP-368",
+      "category": "recovery",
+      "reverse": true,
+      "text": "In visually or audibly intense settings, I recover from stimulation without needing quiet time."
+    },
+    {
+      "id": "HSP-369",
+      "category": "recovery",
+      "reverse": false,
+      "text": "When something feels meaningful, I need regular low-input periods to feel balanced."
+    },
+    {
+      "id": "HSP-370",
+      "category": "recovery",
+      "reverse": true,
+      "text": "During periods of change, extended activity rarely creates a need to withdraw and reset."
+    },
+    {
+      "id": "HSP-371",
+      "category": "recovery",
+      "reverse": false,
+      "text": "When I cannot control my environment, quiet time helps my system recover after stimulation."
+    },
+    {
+      "id": "HSP-372",
+      "category": "recovery",
+      "reverse": true,
+      "text": "While noticing people’s reactions, I recover from stimulation without needing quiet time."
+    },
+    {
+      "id": "HSP-373",
+      "category": "recovery",
+      "reverse": false,
+      "text": "When I need to recover, I need regular low-input periods to feel balanced."
+    },
+    {
+      "id": "HSP-374",
+      "category": "recovery",
+      "reverse": true,
+      "text": "Even on a relatively good day, extended activity rarely creates a need to withdraw and reset."
+    },
+    {
+      "id": "HSP-375",
+      "category": "recovery",
+      "reverse": false,
+      "text": "Across different settings, quiet time helps my system recover after stimulation."
+    },
+    {
+      "id": "HSP-376",
+      "category": "sleep_rest",
+      "reverse": false,
+      "text": "In everyday life, insufficient sleep makes sensory and emotional input much harder to manage."
+    },
+    {
+      "id": "HSP-377",
+      "category": "sleep_rest",
+      "reverse": true,
+      "text": "In busy places, lack of sleep barely changes my response to stimulation."
+    },
+    {
+      "id": "HSP-378",
+      "category": "sleep_rest",
+      "reverse": false,
+      "text": "During an ordinary week, my sensitivity noticeably increases when I have not rested well."
+    },
+    {
+      "id": "HSP-379",
+      "category": "sleep_rest",
+      "reverse": true,
+      "text": "When several things happen at once, my sensitivity stays about the same regardless of rest."
+    },
+    {
+      "id": "HSP-380",
+      "category": "sleep_rest",
+      "reverse": false,
+      "text": "After a demanding day, insufficient sleep makes sensory and emotional input much harder to manage."
+    },
+    {
+      "id": "HSP-381",
+      "category": "sleep_rest",
+      "reverse": true,
+      "text": "In unfamiliar surroundings, lack of sleep barely changes my response to stimulation."
+    },
+    {
+      "id": "HSP-382",
+      "category": "sleep_rest",
+      "reverse": false,
+      "text": "During conversations, my sensitivity noticeably increases when I have not rested well."
+    },
+    {
+      "id": "HSP-383",
+      "category": "sleep_rest",
+      "reverse": true,
+      "text": "When plans change, my sensitivity stays about the same regardless of rest."
+    },
+    {
+      "id": "HSP-384",
+      "category": "sleep_rest",
+      "reverse": false,
+      "text": "While working or studying, insufficient sleep makes sensory and emotional input much harder to manage."
+    },
+    {
+      "id": "HSP-385",
+      "category": "sleep_rest",
+      "reverse": true,
+      "text": "When emotions are present, lack of sleep barely changes my response to stimulation."
+    },
+    {
+      "id": "HSP-386",
+      "category": "sleep_rest",
+      "reverse": false,
+      "text": "Around other people, my sensitivity noticeably increases when I have not rested well."
+    },
+    {
+      "id": "HSP-387",
+      "category": "sleep_rest",
+      "reverse": true,
+      "text": "When I am tired, my sensitivity stays about the same regardless of rest."
+    },
+    {
+      "id": "HSP-388",
+      "category": "sleep_rest",
+      "reverse": false,
+      "text": "In calm surroundings, insufficient sleep makes sensory and emotional input much harder to manage."
+    },
+    {
+      "id": "HSP-389",
+      "category": "sleep_rest",
+      "reverse": true,
+      "text": "Under time pressure, lack of sleep barely changes my response to stimulation."
+    },
+    {
+      "id": "HSP-390",
+      "category": "sleep_rest",
+      "reverse": false,
+      "text": "When making choices, my sensitivity noticeably increases when I have not rested well."
+    },
+    {
+      "id": "HSP-391",
+      "category": "sleep_rest",
+      "reverse": true,
+      "text": "After social activity, my sensitivity stays about the same regardless of rest."
+    },
+    {
+      "id": "HSP-392",
+      "category": "sleep_rest",
+      "reverse": false,
+      "text": "When receiving feedback, insufficient sleep makes sensory and emotional input much harder to manage."
+    },
+    {
+      "id": "HSP-393",
+      "category": "sleep_rest",
+      "reverse": true,
+      "text": "In visually or audibly intense settings, lack of sleep barely changes my response to stimulation."
+    },
+    {
+      "id": "HSP-394",
+      "category": "sleep_rest",
+      "reverse": false,
+      "text": "When something feels meaningful, my sensitivity noticeably increases when I have not rested well."
+    },
+    {
+      "id": "HSP-395",
+      "category": "sleep_rest",
+      "reverse": true,
+      "text": "During periods of change, my sensitivity stays about the same regardless of rest."
+    },
+    {
+      "id": "HSP-396",
+      "category": "sleep_rest",
+      "reverse": false,
+      "text": "When I cannot control my environment, insufficient sleep makes sensory and emotional input much harder to manage."
+    },
+    {
+      "id": "HSP-397",
+      "category": "sleep_rest",
+      "reverse": true,
+      "text": "While noticing people’s reactions, lack of sleep barely changes my response to stimulation."
+    },
+    {
+      "id": "HSP-398",
+      "category": "sleep_rest",
+      "reverse": false,
+      "text": "When I need to recover, my sensitivity noticeably increases when I have not rested well."
+    },
+    {
+      "id": "HSP-399",
+      "category": "sleep_rest",
+      "reverse": true,
+      "text": "Even on a relatively good day, my sensitivity stays about the same regardless of rest."
+    },
+    {
+      "id": "HSP-400",
+      "category": "sleep_rest",
+      "reverse": false,
+      "text": "Across different settings, insufficient sleep makes sensory and emotional input much harder to manage."
+    },
+    {
+      "id": "HSP-401",
+      "category": "work_environment",
+      "reverse": false,
+      "text": "In everyday life, my concentration depends strongly on noise, lighting, and interruptions."
+    },
+    {
+      "id": "HSP-402",
+      "category": "work_environment",
+      "reverse": true,
+      "text": "In busy places, noise, lighting, and interruptions rarely affect my concentration."
+    },
+    {
+      "id": "HSP-403",
+      "category": "work_environment",
+      "reverse": false,
+      "text": "During an ordinary week, I work best when I can control unnecessary stimulation."
+    },
+    {
+      "id": "HSP-404",
+      "category": "work_environment",
+      "reverse": true,
+      "text": "When several things happen at once, I work equally well regardless of sensory conditions."
+    },
+    {
+      "id": "HSP-405",
+      "category": "work_environment",
+      "reverse": false,
+      "text": "After a demanding day, my concentration depends strongly on noise, lighting, and interruptions."
+    },
+    {
+      "id": "HSP-406",
+      "category": "work_environment",
+      "reverse": true,
+      "text": "In unfamiliar surroundings, noise, lighting, and interruptions rarely affect my concentration."
+    },
+    {
+      "id": "HSP-407",
+      "category": "work_environment",
+      "reverse": false,
+      "text": "During conversations, I work best when I can control unnecessary stimulation."
+    },
+    {
+      "id": "HSP-408",
+      "category": "work_environment",
+      "reverse": true,
+      "text": "When plans change, I work equally well regardless of sensory conditions."
+    },
+    {
+      "id": "HSP-409",
+      "category": "work_environment",
+      "reverse": false,
+      "text": "While working or studying, my concentration depends strongly on noise, lighting, and interruptions."
+    },
+    {
+      "id": "HSP-410",
+      "category": "work_environment",
+      "reverse": true,
+      "text": "When emotions are present, noise, lighting, and interruptions rarely affect my concentration."
+    },
+    {
+      "id": "HSP-411",
+      "category": "work_environment",
+      "reverse": false,
+      "text": "Around other people, I work best when I can control unnecessary stimulation."
+    },
+    {
+      "id": "HSP-412",
+      "category": "work_environment",
+      "reverse": true,
+      "text": "When I am tired, I work equally well regardless of sensory conditions."
+    },
+    {
+      "id": "HSP-413",
+      "category": "work_environment",
+      "reverse": false,
+      "text": "In calm surroundings, my concentration depends strongly on noise, lighting, and interruptions."
+    },
+    {
+      "id": "HSP-414",
+      "category": "work_environment",
+      "reverse": true,
+      "text": "Under time pressure, noise, lighting, and interruptions rarely affect my concentration."
+    },
+    {
+      "id": "HSP-415",
+      "category": "work_environment",
+      "reverse": false,
+      "text": "When making choices, I work best when I can control unnecessary stimulation."
+    },
+    {
+      "id": "HSP-416",
+      "category": "work_environment",
+      "reverse": true,
+      "text": "After social activity, I work equally well regardless of sensory conditions."
+    },
+    {
+      "id": "HSP-417",
+      "category": "work_environment",
+      "reverse": false,
+      "text": "When receiving feedback, my concentration depends strongly on noise, lighting, and interruptions."
+    },
+    {
+      "id": "HSP-418",
+      "category": "work_environment",
+      "reverse": true,
+      "text": "In visually or audibly intense settings, noise, lighting, and interruptions rarely affect my concentration."
+    },
+    {
+      "id": "HSP-419",
+      "category": "work_environment",
+      "reverse": false,
+      "text": "When something feels meaningful, I work best when I can control unnecessary stimulation."
+    },
+    {
+      "id": "HSP-420",
+      "category": "work_environment",
+      "reverse": true,
+      "text": "During periods of change, I work equally well regardless of sensory conditions."
+    },
+    {
+      "id": "HSP-421",
+      "category": "work_environment",
+      "reverse": false,
+      "text": "When I cannot control my environment, my concentration depends strongly on noise, lighting, and interruptions."
+    },
+    {
+      "id": "HSP-422",
+      "category": "work_environment",
+      "reverse": true,
+      "text": "While noticing people’s reactions, noise, lighting, and interruptions rarely affect my concentration."
+    },
+    {
+      "id": "HSP-423",
+      "category": "work_environment",
+      "reverse": false,
+      "text": "When I need to recover, I work best when I can control unnecessary stimulation."
+    },
+    {
+      "id": "HSP-424",
+      "category": "work_environment",
+      "reverse": true,
+      "text": "Even on a relatively good day, I work equally well regardless of sensory conditions."
+    },
+    {
+      "id": "HSP-425",
+      "category": "work_environment",
+      "reverse": false,
+      "text": "Across different settings, my concentration depends strongly on noise, lighting, and interruptions."
+    },
+    {
+      "id": "HSP-426",
+      "category": "boundaries",
+      "reverse": false,
+      "text": "In everyday life, I often need to communicate limits around stimulation or pace."
+    },
+    {
+      "id": "HSP-427",
+      "category": "boundaries",
+      "reverse": true,
+      "text": "In busy places, I seldom need limits related to stimulation or pace."
+    },
+    {
+      "id": "HSP-428",
+      "category": "boundaries",
+      "reverse": false,
+      "text": "During an ordinary week, protecting my capacity requires deliberate boundaries."
+    },
+    {
+      "id": "HSP-429",
+      "category": "boundaries",
+      "reverse": true,
+      "text": "When several things happen at once, my capacity is rarely affected by how much input others bring."
+    },
+    {
+      "id": "HSP-430",
+      "category": "boundaries",
+      "reverse": false,
+      "text": "After a demanding day, I often need to communicate limits around stimulation or pace."
+    },
+    {
+      "id": "HSP-431",
+      "category": "boundaries",
+      "reverse": true,
+      "text": "In unfamiliar surroundings, I seldom need limits related to stimulation or pace."
+    },
+    {
+      "id": "HSP-432",
+      "category": "boundaries",
+      "reverse": false,
+      "text": "During conversations, protecting my capacity requires deliberate boundaries."
+    },
+    {
+      "id": "HSP-433",
+      "category": "boundaries",
+      "reverse": true,
+      "text": "When plans change, my capacity is rarely affected by how much input others bring."
+    },
+    {
+      "id": "HSP-434",
+      "category": "boundaries",
+      "reverse": false,
+      "text": "While working or studying, I often need to communicate limits around stimulation or pace."
+    },
+    {
+      "id": "HSP-435",
+      "category": "boundaries",
+      "reverse": true,
+      "text": "When emotions are present, I seldom need limits related to stimulation or pace."
+    },
+    {
+      "id": "HSP-436",
+      "category": "boundaries",
+      "reverse": false,
+      "text": "Around other people, protecting my capacity requires deliberate boundaries."
+    },
+    {
+      "id": "HSP-437",
+      "category": "boundaries",
+      "reverse": true,
+      "text": "When I am tired, my capacity is rarely affected by how much input others bring."
+    },
+    {
+      "id": "HSP-438",
+      "category": "boundaries",
+      "reverse": false,
+      "text": "In calm surroundings, I often need to communicate limits around stimulation or pace."
+    },
+    {
+      "id": "HSP-439",
+      "category": "boundaries",
+      "reverse": true,
+      "text": "Under time pressure, I seldom need limits related to stimulation or pace."
+    },
+    {
+      "id": "HSP-440",
+      "category": "boundaries",
+      "reverse": false,
+      "text": "When making choices, protecting my capacity requires deliberate boundaries."
+    },
+    {
+      "id": "HSP-441",
+      "category": "boundaries",
+      "reverse": true,
+      "text": "After social activity, my capacity is rarely affected by how much input others bring."
+    },
+    {
+      "id": "HSP-442",
+      "category": "boundaries",
+      "reverse": false,
+      "text": "When receiving feedback, I often need to communicate limits around stimulation or pace."
+    },
+    {
+      "id": "HSP-443",
+      "category": "boundaries",
+      "reverse": true,
+      "text": "In visually or audibly intense settings, I seldom need limits related to stimulation or pace."
+    },
+    {
+      "id": "HSP-444",
+      "category": "boundaries",
+      "reverse": false,
+      "text": "When something feels meaningful, protecting my capacity requires deliberate boundaries."
+    },
+    {
+      "id": "HSP-445",
+      "category": "boundaries",
+      "reverse": true,
+      "text": "During periods of change, my capacity is rarely affected by how much input others bring."
+    },
+    {
+      "id": "HSP-446",
+      "category": "boundaries",
+      "reverse": false,
+      "text": "When I cannot control my environment, I often need to communicate limits around stimulation or pace."
+    },
+    {
+      "id": "HSP-447",
+      "category": "boundaries",
+      "reverse": true,
+      "text": "While noticing people’s reactions, I seldom need limits related to stimulation or pace."
+    },
+    {
+      "id": "HSP-448",
+      "category": "boundaries",
+      "reverse": false,
+      "text": "When I need to recover, protecting my capacity requires deliberate boundaries."
+    },
+    {
+      "id": "HSP-449",
+      "category": "boundaries",
+      "reverse": true,
+      "text": "Even on a relatively good day, my capacity is rarely affected by how much input others bring."
+    },
+    {
+      "id": "HSP-450",
+      "category": "boundaries",
+      "reverse": false,
+      "text": "Across different settings, I often need to communicate limits around stimulation or pace."
+    },
+    {
+      "id": "HSP-451",
+      "category": "self_acceptance",
+      "reverse": false,
+      "text": "In everyday life, sensitivity feels like a meaningful part of how I experience life."
+    },
+    {
+      "id": "HSP-452",
+      "category": "self_acceptance",
+      "reverse": true,
+      "text": "In busy places, sensitivity does not feel relevant to how I understand myself."
+    },
+    {
+      "id": "HSP-453",
+      "category": "self_acceptance",
+      "reverse": false,
+      "text": "During an ordinary week, I recognise both strengths and challenges in my responsive nature."
+    },
+    {
+      "id": "HSP-454",
+      "category": "self_acceptance",
+      "reverse": true,
+      "text": "When several things happen at once, I see little connection between responsiveness and my daily experience."
+    },
+    {
+      "id": "HSP-455",
+      "category": "self_acceptance",
+      "reverse": false,
+      "text": "After a demanding day, sensitivity feels like a meaningful part of how I experience life."
+    },
+    {
+      "id": "HSP-456",
+      "category": "self_acceptance",
+      "reverse": true,
+      "text": "In unfamiliar surroundings, sensitivity does not feel relevant to how I understand myself."
+    },
+    {
+      "id": "HSP-457",
+      "category": "self_acceptance",
+      "reverse": false,
+      "text": "During conversations, I recognise both strengths and challenges in my responsive nature."
+    },
+    {
+      "id": "HSP-458",
+      "category": "self_acceptance",
+      "reverse": true,
+      "text": "When plans change, I see little connection between responsiveness and my daily experience."
+    },
+    {
+      "id": "HSP-459",
+      "category": "self_acceptance",
+      "reverse": false,
+      "text": "While working or studying, sensitivity feels like a meaningful part of how I experience life."
+    },
+    {
+      "id": "HSP-460",
+      "category": "self_acceptance",
+      "reverse": true,
+      "text": "When emotions are present, sensitivity does not feel relevant to how I understand myself."
+    },
+    {
+      "id": "HSP-461",
+      "category": "self_acceptance",
+      "reverse": false,
+      "text": "Around other people, I recognise both strengths and challenges in my responsive nature."
+    },
+    {
+      "id": "HSP-462",
+      "category": "self_acceptance",
+      "reverse": true,
+      "text": "When I am tired, I see little connection between responsiveness and my daily experience."
+    },
+    {
+      "id": "HSP-463",
+      "category": "self_acceptance",
+      "reverse": false,
+      "text": "In calm surroundings, sensitivity feels like a meaningful part of how I experience life."
+    },
+    {
+      "id": "HSP-464",
+      "category": "self_acceptance",
+      "reverse": true,
+      "text": "Under time pressure, sensitivity does not feel relevant to how I understand myself."
+    },
+    {
+      "id": "HSP-465",
+      "category": "self_acceptance",
+      "reverse": false,
+      "text": "When making choices, I recognise both strengths and challenges in my responsive nature."
+    },
+    {
+      "id": "HSP-466",
+      "category": "self_acceptance",
+      "reverse": true,
+      "text": "After social activity, I see little connection between responsiveness and my daily experience."
+    },
+    {
+      "id": "HSP-467",
+      "category": "self_acceptance",
+      "reverse": false,
+      "text": "When receiving feedback, sensitivity feels like a meaningful part of how I experience life."
+    },
+    {
+      "id": "HSP-468",
+      "category": "self_acceptance",
+      "reverse": true,
+      "text": "In visually or audibly intense settings, sensitivity does not feel relevant to how I understand myself."
+    },
+    {
+      "id": "HSP-469",
+      "category": "self_acceptance",
+      "reverse": false,
+      "text": "When something feels meaningful, I recognise both strengths and challenges in my responsive nature."
+    },
+    {
+      "id": "HSP-470",
+      "category": "self_acceptance",
+      "reverse": true,
+      "text": "During periods of change, I see little connection between responsiveness and my daily experience."
+    },
+    {
+      "id": "HSP-471",
+      "category": "self_acceptance",
+      "reverse": false,
+      "text": "When I cannot control my environment, sensitivity feels like a meaningful part of how I experience life."
+    },
+    {
+      "id": "HSP-472",
+      "category": "self_acceptance",
+      "reverse": true,
+      "text": "While noticing people’s reactions, sensitivity does not feel relevant to how I understand myself."
+    },
+    {
+      "id": "HSP-473",
+      "category": "self_acceptance",
+      "reverse": false,
+      "text": "When I need to recover, I recognise both strengths and challenges in my responsive nature."
+    },
+    {
+      "id": "HSP-474",
+      "category": "self_acceptance",
+      "reverse": true,
+      "text": "Even on a relatively good day, I see little connection between responsiveness and my daily experience."
+    },
+    {
+      "id": "HSP-475",
+      "category": "self_acceptance",
+      "reverse": false,
+      "text": "Across different settings, sensitivity feels like a meaningful part of how I experience life."
+    },
+    {
+      "id": "HSP-476",
+      "category": "regulation",
+      "reverse": false,
+      "text": "In everyday life, I deliberately manage stimulation because it affects me strongly."
+    },
+    {
+      "id": "HSP-477",
+      "category": "regulation",
+      "reverse": true,
+      "text": "In busy places, I rarely need strategies for managing stimulation."
+    },
+    {
+      "id": "HSP-478",
+      "category": "regulation",
+      "reverse": false,
+      "text": "During an ordinary week, my coping routines are shaped by a highly responsive nervous system."
+    },
+    {
+      "id": "HSP-479",
+      "category": "regulation",
+      "reverse": true,
+      "text": "When several things happen at once, my daily routines do not need to account for sensory or emotional input."
+    },
+    {
+      "id": "HSP-480",
+      "category": "regulation",
+      "reverse": false,
+      "text": "After a demanding day, I deliberately manage stimulation because it affects me strongly."
+    },
+    {
+      "id": "HSP-481",
+      "category": "regulation",
+      "reverse": true,
+      "text": "In unfamiliar surroundings, I rarely need strategies for managing stimulation."
+    },
+    {
+      "id": "HSP-482",
+      "category": "regulation",
+      "reverse": false,
+      "text": "During conversations, my coping routines are shaped by a highly responsive nervous system."
+    },
+    {
+      "id": "HSP-483",
+      "category": "regulation",
+      "reverse": true,
+      "text": "When plans change, my daily routines do not need to account for sensory or emotional input."
+    },
+    {
+      "id": "HSP-484",
+      "category": "regulation",
+      "reverse": false,
+      "text": "While working or studying, I deliberately manage stimulation because it affects me strongly."
+    },
+    {
+      "id": "HSP-485",
+      "category": "regulation",
+      "reverse": true,
+      "text": "When emotions are present, I rarely need strategies for managing stimulation."
+    },
+    {
+      "id": "HSP-486",
+      "category": "regulation",
+      "reverse": false,
+      "text": "Around other people, my coping routines are shaped by a highly responsive nervous system."
+    },
+    {
+      "id": "HSP-487",
+      "category": "regulation",
+      "reverse": true,
+      "text": "When I am tired, my daily routines do not need to account for sensory or emotional input."
+    },
+    {
+      "id": "HSP-488",
+      "category": "regulation",
+      "reverse": false,
+      "text": "In calm surroundings, I deliberately manage stimulation because it affects me strongly."
+    },
+    {
+      "id": "HSP-489",
+      "category": "regulation",
+      "reverse": true,
+      "text": "Under time pressure, I rarely need strategies for managing stimulation."
+    },
+    {
+      "id": "HSP-490",
+      "category": "regulation",
+      "reverse": false,
+      "text": "When making choices, my coping routines are shaped by a highly responsive nervous system."
+    },
+    {
+      "id": "HSP-491",
+      "category": "regulation",
+      "reverse": true,
+      "text": "After social activity, my daily routines do not need to account for sensory or emotional input."
+    },
+    {
+      "id": "HSP-492",
+      "category": "regulation",
+      "reverse": false,
+      "text": "When receiving feedback, I deliberately manage stimulation because it affects me strongly."
+    },
+    {
+      "id": "HSP-493",
+      "category": "regulation",
+      "reverse": true,
+      "text": "In visually or audibly intense settings, I rarely need strategies for managing stimulation."
+    },
+    {
+      "id": "HSP-494",
+      "category": "regulation",
+      "reverse": false,
+      "text": "When something feels meaningful, my coping routines are shaped by a highly responsive nervous system."
+    },
+    {
+      "id": "HSP-495",
+      "category": "regulation",
+      "reverse": true,
+      "text": "During periods of change, my daily routines do not need to account for sensory or emotional input."
+    },
+    {
+      "id": "HSP-496",
+      "category": "regulation",
+      "reverse": false,
+      "text": "When I cannot control my environment, I deliberately manage stimulation because it affects me strongly."
+    },
+    {
+      "id": "HSP-497",
+      "category": "regulation",
+      "reverse": true,
+      "text": "While noticing people’s reactions, I rarely need strategies for managing stimulation."
+    },
+    {
+      "id": "HSP-498",
+      "category": "regulation",
+      "reverse": false,
+      "text": "When I need to recover, my coping routines are shaped by a highly responsive nervous system."
+    },
+    {
+      "id": "HSP-499",
+      "category": "regulation",
+      "reverse": true,
+      "text": "Even on a relatively good day, my daily routines do not need to account for sensory or emotional input."
+    },
+    {
+      "id": "HSP-500",
+      "category": "regulation",
+      "reverse": false,
+      "text": "Across different settings, I deliberately manage stimulation because it affects me strongly."
+    }
+  ]
+}

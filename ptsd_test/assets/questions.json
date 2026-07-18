@@ -1,0 +1,3178 @@
+{
+  "meta": {
+    "title": "PTSD Symptom Reflection",
+    "description": "A private 500-statement reflection across 25 trauma-related symptom and functioning dimensions.",
+    "scale": {
+      "min": 1,
+      "max": 10,
+      "minLabel": "Not at all true",
+      "maxLabel": "Very true"
+    },
+    "categories": [
+      {
+        "id": "intrusive_memories",
+        "label": "Intrusive Memories",
+        "icon": "🧠"
+      },
+      {
+        "id": "nightmares",
+        "label": "Trauma-Related Dreams",
+        "icon": "🌙"
+      },
+      {
+        "id": "flashbacks",
+        "label": "Flashbacks & Reliving",
+        "icon": "⏪"
+      },
+      {
+        "id": "cue_distress",
+        "label": "Distress at Reminders",
+        "icon": "🔔"
+      },
+      {
+        "id": "physical_reactivity",
+        "label": "Physical Reaction to Reminders",
+        "icon": "💓"
+      },
+      {
+        "id": "internal_avoidance",
+        "label": "Avoidance of Thoughts & Feelings",
+        "icon": "🚫"
+      },
+      {
+        "id": "external_avoidance",
+        "label": "Avoidance of External Reminders",
+        "icon": "🚪"
+      },
+      {
+        "id": "memory_disruption",
+        "label": "Trauma Memory Disruption",
+        "icon": "🧩"
+      },
+      {
+        "id": "negative_beliefs",
+        "label": "Negative Beliefs About Self & World",
+        "icon": "🌍"
+      },
+      {
+        "id": "blame_shame",
+        "label": "Blame, Guilt & Shame",
+        "icon": "⚖️"
+      },
+      {
+        "id": "negative_emotions",
+        "label": "Persistent Negative Emotions",
+        "icon": "🌧️"
+      },
+      {
+        "id": "interest",
+        "label": "Loss of Interest",
+        "icon": "🎯"
+      },
+      {
+        "id": "detachment",
+        "label": "Detachment & Disconnection",
+        "icon": "🧍"
+      },
+      {
+        "id": "positive_emotions",
+        "label": "Difficulty Feeling Positive Emotions",
+        "icon": "☀️"
+      },
+      {
+        "id": "irritability",
+        "label": "Irritability & Anger",
+        "icon": "🔥"
+      },
+      {
+        "id": "risk_behavior",
+        "label": "Risky or Self-Defeating Behaviour",
+        "icon": "⚠️"
+      },
+      {
+        "id": "hypervigilance",
+        "label": "Hypervigilance",
+        "icon": "👁️"
+      },
+      {
+        "id": "startle",
+        "label": "Exaggerated Startle Response",
+        "icon": "💥"
+      },
+      {
+        "id": "concentration",
+        "label": "Concentration Difficulties",
+        "icon": "📚"
+      },
+      {
+        "id": "sleep",
+        "label": "Sleep Disturbance",
+        "icon": "🛌"
+      },
+      {
+        "id": "physical_tension",
+        "label": "Physical Tension & Somatic Stress",
+        "icon": "🫀"
+      },
+      {
+        "id": "functioning",
+        "label": "Daily Functioning Impact",
+        "icon": "📅"
+      },
+      {
+        "id": "relationships",
+        "label": "Relationships & Trust",
+        "icon": "🤝"
+      },
+      {
+        "id": "trigger_spread",
+        "label": "Trigger Generalisation",
+        "icon": "🕸️"
+      },
+      {
+        "id": "persistence_recovery",
+        "label": "Symptom Persistence & Recovery",
+        "icon": "🌱"
+      }
+    ],
+    "levels": [
+      {
+        "min": 8.5,
+        "max": 10.01,
+        "label": "Very High Current Symptom Burden",
+        "emoji": "🆘",
+        "desc": "Your responses suggest severe and wide-ranging trauma-related symptoms. A prompt professional assessment is strongly encouraged."
+      },
+      {
+        "min": 7,
+        "max": 8.5,
+        "label": "High Current Symptom Burden",
+        "emoji": "🧡",
+        "desc": "Your responses suggest substantial trauma-related symptoms across several areas. Consider arranging an assessment with a trauma-informed professional."
+      },
+      {
+        "min": 5.5,
+        "max": 7,
+        "label": "Moderate Current Symptom Burden",
+        "emoji": "🌤️",
+        "desc": "You report a meaningful mixture of trauma-related difficulties and areas of stability. Professional support may help clarify your needs."
+      },
+      {
+        "min": 4,
+        "max": 5.5,
+        "label": "Mild Current Symptom Burden",
+        "emoji": "🌱",
+        "desc": "Some trauma-related reactions appear present, though their intensity or reach may be limited. Monitor distress and daily-life impact."
+      },
+      {
+        "min": 1,
+        "max": 4,
+        "label": "Few Current Symptoms Endorsed",
+        "emoji": "🍃",
+        "desc": "You endorsed relatively few current trauma-related symptoms. This result cannot rule out PTSD or other concerns."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "PTSD-001",
+      "category": "intrusive_memories",
+      "reverse": false,
+      "text": "During the past several weeks, unwanted memories of a distressing event enter my mind."
+    },
+    {
+      "id": "PTSD-002",
+      "category": "intrusive_memories",
+      "reverse": true,
+      "text": "In everyday life, distressing-event memories rarely enter my mind unexpectedly."
+    },
+    {
+      "id": "PTSD-003",
+      "category": "intrusive_memories",
+      "reverse": false,
+      "text": "When something reminds me of the event, trauma-related images or thoughts interrupt what I am doing."
+    },
+    {
+      "id": "PTSD-004",
+      "category": "intrusive_memories",
+      "reverse": true,
+      "text": "In situations that are objectively safe, I can usually choose when to think about what happened."
+    },
+    {
+      "id": "PTSD-005",
+      "category": "intrusive_memories",
+      "reverse": false,
+      "text": "While trying to complete ordinary tasks, unwanted memories of a distressing event enter my mind."
+    },
+    {
+      "id": "PTSD-006",
+      "category": "intrusive_memories",
+      "reverse": true,
+      "text": "Around people I know, distressing-event memories rarely enter my mind unexpectedly."
+    },
+    {
+      "id": "PTSD-007",
+      "category": "intrusive_memories",
+      "reverse": false,
+      "text": "When I am alone, trauma-related images or thoughts interrupt what I am doing."
+    },
+    {
+      "id": "PTSD-008",
+      "category": "intrusive_memories",
+      "reverse": true,
+      "text": "At night, I can usually choose when to think about what happened."
+    },
+    {
+      "id": "PTSD-009",
+      "category": "intrusive_memories",
+      "reverse": false,
+      "text": "During conversations, unwanted memories of a distressing event enter my mind."
+    },
+    {
+      "id": "PTSD-010",
+      "category": "intrusive_memories",
+      "reverse": true,
+      "text": "When plans unexpectedly change, distressing-event memories rarely enter my mind unexpectedly."
+    },
+    {
+      "id": "PTSD-011",
+      "category": "intrusive_memories",
+      "reverse": false,
+      "text": "In public places, trauma-related images or thoughts interrupt what I am doing."
+    },
+    {
+      "id": "PTSD-012",
+      "category": "intrusive_memories",
+      "reverse": true,
+      "text": "When I feel under pressure, I can usually choose when to think about what happened."
+    },
+    {
+      "id": "PTSD-013",
+      "category": "intrusive_memories",
+      "reverse": false,
+      "text": "After encountering a reminder, unwanted memories of a distressing event enter my mind."
+    },
+    {
+      "id": "PTSD-014",
+      "category": "intrusive_memories",
+      "reverse": true,
+      "text": "While working or studying, distressing-event memories rarely enter my mind unexpectedly."
+    },
+    {
+      "id": "PTSD-015",
+      "category": "intrusive_memories",
+      "reverse": false,
+      "text": "When trying to rest, trauma-related images or thoughts interrupt what I am doing."
+    },
+    {
+      "id": "PTSD-016",
+      "category": "intrusive_memories",
+      "reverse": true,
+      "text": "In close relationships, I can usually choose when to think about what happened."
+    },
+    {
+      "id": "PTSD-017",
+      "category": "intrusive_memories",
+      "reverse": false,
+      "text": "When my body feels activated, unwanted memories of a distressing event enter my mind."
+    },
+    {
+      "id": "PTSD-018",
+      "category": "intrusive_memories",
+      "reverse": true,
+      "text": "During a relatively calm day, distressing-event memories rarely enter my mind unexpectedly."
+    },
+    {
+      "id": "PTSD-019",
+      "category": "intrusive_memories",
+      "reverse": false,
+      "text": "When thinking about the future, trauma-related images or thoughts interrupt what I am doing."
+    },
+    {
+      "id": "PTSD-020",
+      "category": "intrusive_memories",
+      "reverse": true,
+      "text": "Across different parts of my life, I can usually choose when to think about what happened."
+    },
+    {
+      "id": "PTSD-021",
+      "category": "nightmares",
+      "reverse": false,
+      "text": "During the past several weeks, disturbing dreams carry themes or feelings connected with the trauma."
+    },
+    {
+      "id": "PTSD-022",
+      "category": "nightmares",
+      "reverse": true,
+      "text": "In everyday life, my dreams rarely bring back trauma-related fear or distress."
+    },
+    {
+      "id": "PTSD-023",
+      "category": "nightmares",
+      "reverse": false,
+      "text": "When something reminds me of the event, I wake distressed after dreams related to danger or helplessness."
+    },
+    {
+      "id": "PTSD-024",
+      "category": "nightmares",
+      "reverse": true,
+      "text": "In situations that are objectively safe, sleep is generally free from dreams connected with what happened."
+    },
+    {
+      "id": "PTSD-025",
+      "category": "nightmares",
+      "reverse": false,
+      "text": "While trying to complete ordinary tasks, disturbing dreams carry themes or feelings connected with the trauma."
+    },
+    {
+      "id": "PTSD-026",
+      "category": "nightmares",
+      "reverse": true,
+      "text": "Around people I know, my dreams rarely bring back trauma-related fear or distress."
+    },
+    {
+      "id": "PTSD-027",
+      "category": "nightmares",
+      "reverse": false,
+      "text": "When I am alone, I wake distressed after dreams related to danger or helplessness."
+    },
+    {
+      "id": "PTSD-028",
+      "category": "nightmares",
+      "reverse": true,
+      "text": "At night, sleep is generally free from dreams connected with what happened."
+    },
+    {
+      "id": "PTSD-029",
+      "category": "nightmares",
+      "reverse": false,
+      "text": "During conversations, disturbing dreams carry themes or feelings connected with the trauma."
+    },
+    {
+      "id": "PTSD-030",
+      "category": "nightmares",
+      "reverse": true,
+      "text": "When plans unexpectedly change, my dreams rarely bring back trauma-related fear or distress."
+    },
+    {
+      "id": "PTSD-031",
+      "category": "nightmares",
+      "reverse": false,
+      "text": "In public places, I wake distressed after dreams related to danger or helplessness."
+    },
+    {
+      "id": "PTSD-032",
+      "category": "nightmares",
+      "reverse": true,
+      "text": "When I feel under pressure, sleep is generally free from dreams connected with what happened."
+    },
+    {
+      "id": "PTSD-033",
+      "category": "nightmares",
+      "reverse": false,
+      "text": "After encountering a reminder, disturbing dreams carry themes or feelings connected with the trauma."
+    },
+    {
+      "id": "PTSD-034",
+      "category": "nightmares",
+      "reverse": true,
+      "text": "While working or studying, my dreams rarely bring back trauma-related fear or distress."
+    },
+    {
+      "id": "PTSD-035",
+      "category": "nightmares",
+      "reverse": false,
+      "text": "When trying to rest, I wake distressed after dreams related to danger or helplessness."
+    },
+    {
+      "id": "PTSD-036",
+      "category": "nightmares",
+      "reverse": true,
+      "text": "In close relationships, sleep is generally free from dreams connected with what happened."
+    },
+    {
+      "id": "PTSD-037",
+      "category": "nightmares",
+      "reverse": false,
+      "text": "When my body feels activated, disturbing dreams carry themes or feelings connected with the trauma."
+    },
+    {
+      "id": "PTSD-038",
+      "category": "nightmares",
+      "reverse": true,
+      "text": "During a relatively calm day, my dreams rarely bring back trauma-related fear or distress."
+    },
+    {
+      "id": "PTSD-039",
+      "category": "nightmares",
+      "reverse": false,
+      "text": "When thinking about the future, I wake distressed after dreams related to danger or helplessness."
+    },
+    {
+      "id": "PTSD-040",
+      "category": "nightmares",
+      "reverse": true,
+      "text": "Across different parts of my life, sleep is generally free from dreams connected with what happened."
+    },
+    {
+      "id": "PTSD-041",
+      "category": "flashbacks",
+      "reverse": false,
+      "text": "During the past several weeks, at times the past feels as if it is happening again."
+    },
+    {
+      "id": "PTSD-042",
+      "category": "flashbacks",
+      "reverse": true,
+      "text": "In everyday life, I consistently feel that the traumatic event belongs in the past."
+    },
+    {
+      "id": "PTSD-043",
+      "category": "flashbacks",
+      "reverse": false,
+      "text": "When something reminds me of the event, I briefly lose a clear sense that the traumatic event is over."
+    },
+    {
+      "id": "PTSD-044",
+      "category": "flashbacks",
+      "reverse": true,
+      "text": "In situations that are objectively safe, I rarely experience moments of reliving what happened."
+    },
+    {
+      "id": "PTSD-045",
+      "category": "flashbacks",
+      "reverse": false,
+      "text": "While trying to complete ordinary tasks, at times the past feels as if it is happening again."
+    },
+    {
+      "id": "PTSD-046",
+      "category": "flashbacks",
+      "reverse": true,
+      "text": "Around people I know, I consistently feel that the traumatic event belongs in the past."
+    },
+    {
+      "id": "PTSD-047",
+      "category": "flashbacks",
+      "reverse": false,
+      "text": "When I am alone, I briefly lose a clear sense that the traumatic event is over."
+    },
+    {
+      "id": "PTSD-048",
+      "category": "flashbacks",
+      "reverse": true,
+      "text": "At night, I rarely experience moments of reliving what happened."
+    },
+    {
+      "id": "PTSD-049",
+      "category": "flashbacks",
+      "reverse": false,
+      "text": "During conversations, at times the past feels as if it is happening again."
+    },
+    {
+      "id": "PTSD-050",
+      "category": "flashbacks",
+      "reverse": true,
+      "text": "When plans unexpectedly change, I consistently feel that the traumatic event belongs in the past."
+    },
+    {
+      "id": "PTSD-051",
+      "category": "flashbacks",
+      "reverse": false,
+      "text": "In public places, I briefly lose a clear sense that the traumatic event is over."
+    },
+    {
+      "id": "PTSD-052",
+      "category": "flashbacks",
+      "reverse": true,
+      "text": "When I feel under pressure, I rarely experience moments of reliving what happened."
+    },
+    {
+      "id": "PTSD-053",
+      "category": "flashbacks",
+      "reverse": false,
+      "text": "After encountering a reminder, at times the past feels as if it is happening again."
+    },
+    {
+      "id": "PTSD-054",
+      "category": "flashbacks",
+      "reverse": true,
+      "text": "While working or studying, I consistently feel that the traumatic event belongs in the past."
+    },
+    {
+      "id": "PTSD-055",
+      "category": "flashbacks",
+      "reverse": false,
+      "text": "When trying to rest, I briefly lose a clear sense that the traumatic event is over."
+    },
+    {
+      "id": "PTSD-056",
+      "category": "flashbacks",
+      "reverse": true,
+      "text": "In close relationships, I rarely experience moments of reliving what happened."
+    },
+    {
+      "id": "PTSD-057",
+      "category": "flashbacks",
+      "reverse": false,
+      "text": "When my body feels activated, at times the past feels as if it is happening again."
+    },
+    {
+      "id": "PTSD-058",
+      "category": "flashbacks",
+      "reverse": true,
+      "text": "During a relatively calm day, I consistently feel that the traumatic event belongs in the past."
+    },
+    {
+      "id": "PTSD-059",
+      "category": "flashbacks",
+      "reverse": false,
+      "text": "When thinking about the future, I briefly lose a clear sense that the traumatic event is over."
+    },
+    {
+      "id": "PTSD-060",
+      "category": "flashbacks",
+      "reverse": true,
+      "text": "Across different parts of my life, I rarely experience moments of reliving what happened."
+    },
+    {
+      "id": "PTSD-061",
+      "category": "cue_distress",
+      "reverse": false,
+      "text": "During the past several weeks, reminders of the event cause strong emotional distress."
+    },
+    {
+      "id": "PTSD-062",
+      "category": "cue_distress",
+      "reverse": true,
+      "text": "In everyday life, reminders of the event usually cause little emotional distress."
+    },
+    {
+      "id": "PTSD-063",
+      "category": "cue_distress",
+      "reverse": false,
+      "text": "When something reminds me of the event, a cue connected with the trauma can rapidly change my mood."
+    },
+    {
+      "id": "PTSD-064",
+      "category": "cue_distress",
+      "reverse": true,
+      "text": "In situations that are objectively safe, trauma-related cues rarely disrupt my emotional state."
+    },
+    {
+      "id": "PTSD-065",
+      "category": "cue_distress",
+      "reverse": false,
+      "text": "While trying to complete ordinary tasks, reminders of the event cause strong emotional distress."
+    },
+    {
+      "id": "PTSD-066",
+      "category": "cue_distress",
+      "reverse": true,
+      "text": "Around people I know, reminders of the event usually cause little emotional distress."
+    },
+    {
+      "id": "PTSD-067",
+      "category": "cue_distress",
+      "reverse": false,
+      "text": "When I am alone, a cue connected with the trauma can rapidly change my mood."
+    },
+    {
+      "id": "PTSD-068",
+      "category": "cue_distress",
+      "reverse": true,
+      "text": "At night, trauma-related cues rarely disrupt my emotional state."
+    },
+    {
+      "id": "PTSD-069",
+      "category": "cue_distress",
+      "reverse": false,
+      "text": "During conversations, reminders of the event cause strong emotional distress."
+    },
+    {
+      "id": "PTSD-070",
+      "category": "cue_distress",
+      "reverse": true,
+      "text": "When plans unexpectedly change, reminders of the event usually cause little emotional distress."
+    },
+    {
+      "id": "PTSD-071",
+      "category": "cue_distress",
+      "reverse": false,
+      "text": "In public places, a cue connected with the trauma can rapidly change my mood."
+    },
+    {
+      "id": "PTSD-072",
+      "category": "cue_distress",
+      "reverse": true,
+      "text": "When I feel under pressure, trauma-related cues rarely disrupt my emotional state."
+    },
+    {
+      "id": "PTSD-073",
+      "category": "cue_distress",
+      "reverse": false,
+      "text": "After encountering a reminder, reminders of the event cause strong emotional distress."
+    },
+    {
+      "id": "PTSD-074",
+      "category": "cue_distress",
+      "reverse": true,
+      "text": "While working or studying, reminders of the event usually cause little emotional distress."
+    },
+    {
+      "id": "PTSD-075",
+      "category": "cue_distress",
+      "reverse": false,
+      "text": "When trying to rest, a cue connected with the trauma can rapidly change my mood."
+    },
+    {
+      "id": "PTSD-076",
+      "category": "cue_distress",
+      "reverse": true,
+      "text": "In close relationships, trauma-related cues rarely disrupt my emotional state."
+    },
+    {
+      "id": "PTSD-077",
+      "category": "cue_distress",
+      "reverse": false,
+      "text": "When my body feels activated, reminders of the event cause strong emotional distress."
+    },
+    {
+      "id": "PTSD-078",
+      "category": "cue_distress",
+      "reverse": true,
+      "text": "During a relatively calm day, reminders of the event usually cause little emotional distress."
+    },
+    {
+      "id": "PTSD-079",
+      "category": "cue_distress",
+      "reverse": false,
+      "text": "When thinking about the future, a cue connected with the trauma can rapidly change my mood."
+    },
+    {
+      "id": "PTSD-080",
+      "category": "cue_distress",
+      "reverse": true,
+      "text": "Across different parts of my life, trauma-related cues rarely disrupt my emotional state."
+    },
+    {
+      "id": "PTSD-081",
+      "category": "physical_reactivity",
+      "reverse": false,
+      "text": "During the past several weeks, my body reacts strongly to reminders of the trauma."
+    },
+    {
+      "id": "PTSD-082",
+      "category": "physical_reactivity",
+      "reverse": true,
+      "text": "In everyday life, my body stays fairly settled around reminders of the trauma."
+    },
+    {
+      "id": "PTSD-083",
+      "category": "physical_reactivity",
+      "reverse": false,
+      "text": "When something reminds me of the event, trauma cues can bring racing heart, sweating, shaking, or breath changes."
+    },
+    {
+      "id": "PTSD-084",
+      "category": "physical_reactivity",
+      "reverse": true,
+      "text": "In situations that are objectively safe, trauma-related cues rarely trigger noticeable physical reactions."
+    },
+    {
+      "id": "PTSD-085",
+      "category": "physical_reactivity",
+      "reverse": false,
+      "text": "While trying to complete ordinary tasks, my body reacts strongly to reminders of the trauma."
+    },
+    {
+      "id": "PTSD-086",
+      "category": "physical_reactivity",
+      "reverse": true,
+      "text": "Around people I know, my body stays fairly settled around reminders of the trauma."
+    },
+    {
+      "id": "PTSD-087",
+      "category": "physical_reactivity",
+      "reverse": false,
+      "text": "When I am alone, trauma cues can bring racing heart, sweating, shaking, or breath changes."
+    },
+    {
+      "id": "PTSD-088",
+      "category": "physical_reactivity",
+      "reverse": true,
+      "text": "At night, trauma-related cues rarely trigger noticeable physical reactions."
+    },
+    {
+      "id": "PTSD-089",
+      "category": "physical_reactivity",
+      "reverse": false,
+      "text": "During conversations, my body reacts strongly to reminders of the trauma."
+    },
+    {
+      "id": "PTSD-090",
+      "category": "physical_reactivity",
+      "reverse": true,
+      "text": "When plans unexpectedly change, my body stays fairly settled around reminders of the trauma."
+    },
+    {
+      "id": "PTSD-091",
+      "category": "physical_reactivity",
+      "reverse": false,
+      "text": "In public places, trauma cues can bring racing heart, sweating, shaking, or breath changes."
+    },
+    {
+      "id": "PTSD-092",
+      "category": "physical_reactivity",
+      "reverse": true,
+      "text": "When I feel under pressure, trauma-related cues rarely trigger noticeable physical reactions."
+    },
+    {
+      "id": "PTSD-093",
+      "category": "physical_reactivity",
+      "reverse": false,
+      "text": "After encountering a reminder, my body reacts strongly to reminders of the trauma."
+    },
+    {
+      "id": "PTSD-094",
+      "category": "physical_reactivity",
+      "reverse": true,
+      "text": "While working or studying, my body stays fairly settled around reminders of the trauma."
+    },
+    {
+      "id": "PTSD-095",
+      "category": "physical_reactivity",
+      "reverse": false,
+      "text": "When trying to rest, trauma cues can bring racing heart, sweating, shaking, or breath changes."
+    },
+    {
+      "id": "PTSD-096",
+      "category": "physical_reactivity",
+      "reverse": true,
+      "text": "In close relationships, trauma-related cues rarely trigger noticeable physical reactions."
+    },
+    {
+      "id": "PTSD-097",
+      "category": "physical_reactivity",
+      "reverse": false,
+      "text": "When my body feels activated, my body reacts strongly to reminders of the trauma."
+    },
+    {
+      "id": "PTSD-098",
+      "category": "physical_reactivity",
+      "reverse": true,
+      "text": "During a relatively calm day, my body stays fairly settled around reminders of the trauma."
+    },
+    {
+      "id": "PTSD-099",
+      "category": "physical_reactivity",
+      "reverse": false,
+      "text": "When thinking about the future, trauma cues can bring racing heart, sweating, shaking, or breath changes."
+    },
+    {
+      "id": "PTSD-100",
+      "category": "physical_reactivity",
+      "reverse": true,
+      "text": "Across different parts of my life, trauma-related cues rarely trigger noticeable physical reactions."
+    },
+    {
+      "id": "PTSD-101",
+      "category": "internal_avoidance",
+      "reverse": false,
+      "text": "During the past several weeks, I push away thoughts or feelings connected with the trauma."
+    },
+    {
+      "id": "PTSD-102",
+      "category": "internal_avoidance",
+      "reverse": true,
+      "text": "In everyday life, I do not usually need to suppress trauma-related thoughts or feelings."
+    },
+    {
+      "id": "PTSD-103",
+      "category": "internal_avoidance",
+      "reverse": false,
+      "text": "When something reminds me of the event, I work hard not to remember or emotionally process what happened."
+    },
+    {
+      "id": "PTSD-104",
+      "category": "internal_avoidance",
+      "reverse": true,
+      "text": "In situations that are objectively safe, I can notice trauma-related emotions without immediately pushing them away."
+    },
+    {
+      "id": "PTSD-105",
+      "category": "internal_avoidance",
+      "reverse": false,
+      "text": "While trying to complete ordinary tasks, I push away thoughts or feelings connected with the trauma."
+    },
+    {
+      "id": "PTSD-106",
+      "category": "internal_avoidance",
+      "reverse": true,
+      "text": "Around people I know, I do not usually need to suppress trauma-related thoughts or feelings."
+    },
+    {
+      "id": "PTSD-107",
+      "category": "internal_avoidance",
+      "reverse": false,
+      "text": "When I am alone, I work hard not to remember or emotionally process what happened."
+    },
+    {
+      "id": "PTSD-108",
+      "category": "internal_avoidance",
+      "reverse": true,
+      "text": "At night, I can notice trauma-related emotions without immediately pushing them away."
+    },
+    {
+      "id": "PTSD-109",
+      "category": "internal_avoidance",
+      "reverse": false,
+      "text": "During conversations, I push away thoughts or feelings connected with the trauma."
+    },
+    {
+      "id": "PTSD-110",
+      "category": "internal_avoidance",
+      "reverse": true,
+      "text": "When plans unexpectedly change, I do not usually need to suppress trauma-related thoughts or feelings."
+    },
+    {
+      "id": "PTSD-111",
+      "category": "internal_avoidance",
+      "reverse": false,
+      "text": "In public places, I work hard not to remember or emotionally process what happened."
+    },
+    {
+      "id": "PTSD-112",
+      "category": "internal_avoidance",
+      "reverse": true,
+      "text": "When I feel under pressure, I can notice trauma-related emotions without immediately pushing them away."
+    },
+    {
+      "id": "PTSD-113",
+      "category": "internal_avoidance",
+      "reverse": false,
+      "text": "After encountering a reminder, I push away thoughts or feelings connected with the trauma."
+    },
+    {
+      "id": "PTSD-114",
+      "category": "internal_avoidance",
+      "reverse": true,
+      "text": "While working or studying, I do not usually need to suppress trauma-related thoughts or feelings."
+    },
+    {
+      "id": "PTSD-115",
+      "category": "internal_avoidance",
+      "reverse": false,
+      "text": "When trying to rest, I work hard not to remember or emotionally process what happened."
+    },
+    {
+      "id": "PTSD-116",
+      "category": "internal_avoidance",
+      "reverse": true,
+      "text": "In close relationships, I can notice trauma-related emotions without immediately pushing them away."
+    },
+    {
+      "id": "PTSD-117",
+      "category": "internal_avoidance",
+      "reverse": false,
+      "text": "When my body feels activated, I push away thoughts or feelings connected with the trauma."
+    },
+    {
+      "id": "PTSD-118",
+      "category": "internal_avoidance",
+      "reverse": true,
+      "text": "During a relatively calm day, I do not usually need to suppress trauma-related thoughts or feelings."
+    },
+    {
+      "id": "PTSD-119",
+      "category": "internal_avoidance",
+      "reverse": false,
+      "text": "When thinking about the future, I work hard not to remember or emotionally process what happened."
+    },
+    {
+      "id": "PTSD-120",
+      "category": "internal_avoidance",
+      "reverse": true,
+      "text": "Across different parts of my life, I can notice trauma-related emotions without immediately pushing them away."
+    },
+    {
+      "id": "PTSD-121",
+      "category": "external_avoidance",
+      "reverse": false,
+      "text": "During the past several weeks, I avoid people, places, activities, or conversations that remind me."
+    },
+    {
+      "id": "PTSD-122",
+      "category": "external_avoidance",
+      "reverse": true,
+      "text": "In everyday life, I rarely change plans to avoid trauma reminders."
+    },
+    {
+      "id": "PTSD-123",
+      "category": "external_avoidance",
+      "reverse": false,
+      "text": "When something reminds me of the event, my choices are restricted by efforts to stay away from trauma reminders."
+    },
+    {
+      "id": "PTSD-124",
+      "category": "external_avoidance",
+      "reverse": true,
+      "text": "In situations that are objectively safe, people, places, or conversations linked with the event do not strongly limit me."
+    },
+    {
+      "id": "PTSD-125",
+      "category": "external_avoidance",
+      "reverse": false,
+      "text": "While trying to complete ordinary tasks, I avoid people, places, activities, or conversations that remind me."
+    },
+    {
+      "id": "PTSD-126",
+      "category": "external_avoidance",
+      "reverse": true,
+      "text": "Around people I know, I rarely change plans to avoid trauma reminders."
+    },
+    {
+      "id": "PTSD-127",
+      "category": "external_avoidance",
+      "reverse": false,
+      "text": "When I am alone, my choices are restricted by efforts to stay away from trauma reminders."
+    },
+    {
+      "id": "PTSD-128",
+      "category": "external_avoidance",
+      "reverse": true,
+      "text": "At night, people, places, or conversations linked with the event do not strongly limit me."
+    },
+    {
+      "id": "PTSD-129",
+      "category": "external_avoidance",
+      "reverse": false,
+      "text": "During conversations, I avoid people, places, activities, or conversations that remind me."
+    },
+    {
+      "id": "PTSD-130",
+      "category": "external_avoidance",
+      "reverse": true,
+      "text": "When plans unexpectedly change, I rarely change plans to avoid trauma reminders."
+    },
+    {
+      "id": "PTSD-131",
+      "category": "external_avoidance",
+      "reverse": false,
+      "text": "In public places, my choices are restricted by efforts to stay away from trauma reminders."
+    },
+    {
+      "id": "PTSD-132",
+      "category": "external_avoidance",
+      "reverse": true,
+      "text": "When I feel under pressure, people, places, or conversations linked with the event do not strongly limit me."
+    },
+    {
+      "id": "PTSD-133",
+      "category": "external_avoidance",
+      "reverse": false,
+      "text": "After encountering a reminder, I avoid people, places, activities, or conversations that remind me."
+    },
+    {
+      "id": "PTSD-134",
+      "category": "external_avoidance",
+      "reverse": true,
+      "text": "While working or studying, I rarely change plans to avoid trauma reminders."
+    },
+    {
+      "id": "PTSD-135",
+      "category": "external_avoidance",
+      "reverse": false,
+      "text": "When trying to rest, my choices are restricted by efforts to stay away from trauma reminders."
+    },
+    {
+      "id": "PTSD-136",
+      "category": "external_avoidance",
+      "reverse": true,
+      "text": "In close relationships, people, places, or conversations linked with the event do not strongly limit me."
+    },
+    {
+      "id": "PTSD-137",
+      "category": "external_avoidance",
+      "reverse": false,
+      "text": "When my body feels activated, I avoid people, places, activities, or conversations that remind me."
+    },
+    {
+      "id": "PTSD-138",
+      "category": "external_avoidance",
+      "reverse": true,
+      "text": "During a relatively calm day, I rarely change plans to avoid trauma reminders."
+    },
+    {
+      "id": "PTSD-139",
+      "category": "external_avoidance",
+      "reverse": false,
+      "text": "When thinking about the future, my choices are restricted by efforts to stay away from trauma reminders."
+    },
+    {
+      "id": "PTSD-140",
+      "category": "external_avoidance",
+      "reverse": true,
+      "text": "Across different parts of my life, people, places, or conversations linked with the event do not strongly limit me."
+    },
+    {
+      "id": "PTSD-141",
+      "category": "memory_disruption",
+      "reverse": false,
+      "text": "During the past several weeks, important parts of the traumatic event feel missing or unclear."
+    },
+    {
+      "id": "PTSD-142",
+      "category": "memory_disruption",
+      "reverse": true,
+      "text": "In everyday life, I can recall the important parts of the event with reasonable continuity."
+    },
+    {
+      "id": "PTSD-143",
+      "category": "memory_disruption",
+      "reverse": false,
+      "text": "When something reminds me of the event, my memory of what happened contains gaps I cannot readily explain."
+    },
+    {
+      "id": "PTSD-144",
+      "category": "memory_disruption",
+      "reverse": true,
+      "text": "In situations that are objectively safe, my trauma memory has few unexplained gaps."
+    },
+    {
+      "id": "PTSD-145",
+      "category": "memory_disruption",
+      "reverse": false,
+      "text": "While trying to complete ordinary tasks, important parts of the traumatic event feel missing or unclear."
+    },
+    {
+      "id": "PTSD-146",
+      "category": "memory_disruption",
+      "reverse": true,
+      "text": "Around people I know, I can recall the important parts of the event with reasonable continuity."
+    },
+    {
+      "id": "PTSD-147",
+      "category": "memory_disruption",
+      "reverse": false,
+      "text": "When I am alone, my memory of what happened contains gaps I cannot readily explain."
+    },
+    {
+      "id": "PTSD-148",
+      "category": "memory_disruption",
+      "reverse": true,
+      "text": "At night, my trauma memory has few unexplained gaps."
+    },
+    {
+      "id": "PTSD-149",
+      "category": "memory_disruption",
+      "reverse": false,
+      "text": "During conversations, important parts of the traumatic event feel missing or unclear."
+    },
+    {
+      "id": "PTSD-150",
+      "category": "memory_disruption",
+      "reverse": true,
+      "text": "When plans unexpectedly change, I can recall the important parts of the event with reasonable continuity."
+    },
+    {
+      "id": "PTSD-151",
+      "category": "memory_disruption",
+      "reverse": false,
+      "text": "In public places, my memory of what happened contains gaps I cannot readily explain."
+    },
+    {
+      "id": "PTSD-152",
+      "category": "memory_disruption",
+      "reverse": true,
+      "text": "When I feel under pressure, my trauma memory has few unexplained gaps."
+    },
+    {
+      "id": "PTSD-153",
+      "category": "memory_disruption",
+      "reverse": false,
+      "text": "After encountering a reminder, important parts of the traumatic event feel missing or unclear."
+    },
+    {
+      "id": "PTSD-154",
+      "category": "memory_disruption",
+      "reverse": true,
+      "text": "While working or studying, I can recall the important parts of the event with reasonable continuity."
+    },
+    {
+      "id": "PTSD-155",
+      "category": "memory_disruption",
+      "reverse": false,
+      "text": "When trying to rest, my memory of what happened contains gaps I cannot readily explain."
+    },
+    {
+      "id": "PTSD-156",
+      "category": "memory_disruption",
+      "reverse": true,
+      "text": "In close relationships, my trauma memory has few unexplained gaps."
+    },
+    {
+      "id": "PTSD-157",
+      "category": "memory_disruption",
+      "reverse": false,
+      "text": "When my body feels activated, important parts of the traumatic event feel missing or unclear."
+    },
+    {
+      "id": "PTSD-158",
+      "category": "memory_disruption",
+      "reverse": true,
+      "text": "During a relatively calm day, I can recall the important parts of the event with reasonable continuity."
+    },
+    {
+      "id": "PTSD-159",
+      "category": "memory_disruption",
+      "reverse": false,
+      "text": "When thinking about the future, my memory of what happened contains gaps I cannot readily explain."
+    },
+    {
+      "id": "PTSD-160",
+      "category": "memory_disruption",
+      "reverse": true,
+      "text": "Across different parts of my life, my trauma memory has few unexplained gaps."
+    },
+    {
+      "id": "PTSD-161",
+      "category": "negative_beliefs",
+      "reverse": false,
+      "text": "During the past several weeks, the trauma has left me with broad negative beliefs about myself or the world."
+    },
+    {
+      "id": "PTSD-162",
+      "category": "negative_beliefs",
+      "reverse": true,
+      "text": "In everyday life, I can hold a balanced view of myself and the world despite what happened."
+    },
+    {
+      "id": "PTSD-163",
+      "category": "negative_beliefs",
+      "reverse": false,
+      "text": "When something reminds me of the event, I often see people, safety, or my future through a permanently dark lens."
+    },
+    {
+      "id": "PTSD-164",
+      "category": "negative_beliefs",
+      "reverse": true,
+      "text": "In situations that are objectively safe, the event has not made all people or all future situations seem unsafe."
+    },
+    {
+      "id": "PTSD-165",
+      "category": "negative_beliefs",
+      "reverse": false,
+      "text": "While trying to complete ordinary tasks, the trauma has left me with broad negative beliefs about myself or the world."
+    },
+    {
+      "id": "PTSD-166",
+      "category": "negative_beliefs",
+      "reverse": true,
+      "text": "Around people I know, I can hold a balanced view of myself and the world despite what happened."
+    },
+    {
+      "id": "PTSD-167",
+      "category": "negative_beliefs",
+      "reverse": false,
+      "text": "When I am alone, I often see people, safety, or my future through a permanently dark lens."
+    },
+    {
+      "id": "PTSD-168",
+      "category": "negative_beliefs",
+      "reverse": true,
+      "text": "At night, the event has not made all people or all future situations seem unsafe."
+    },
+    {
+      "id": "PTSD-169",
+      "category": "negative_beliefs",
+      "reverse": false,
+      "text": "During conversations, the trauma has left me with broad negative beliefs about myself or the world."
+    },
+    {
+      "id": "PTSD-170",
+      "category": "negative_beliefs",
+      "reverse": true,
+      "text": "When plans unexpectedly change, I can hold a balanced view of myself and the world despite what happened."
+    },
+    {
+      "id": "PTSD-171",
+      "category": "negative_beliefs",
+      "reverse": false,
+      "text": "In public places, I often see people, safety, or my future through a permanently dark lens."
+    },
+    {
+      "id": "PTSD-172",
+      "category": "negative_beliefs",
+      "reverse": true,
+      "text": "When I feel under pressure, the event has not made all people or all future situations seem unsafe."
+    },
+    {
+      "id": "PTSD-173",
+      "category": "negative_beliefs",
+      "reverse": false,
+      "text": "After encountering a reminder, the trauma has left me with broad negative beliefs about myself or the world."
+    },
+    {
+      "id": "PTSD-174",
+      "category": "negative_beliefs",
+      "reverse": true,
+      "text": "While working or studying, I can hold a balanced view of myself and the world despite what happened."
+    },
+    {
+      "id": "PTSD-175",
+      "category": "negative_beliefs",
+      "reverse": false,
+      "text": "When trying to rest, I often see people, safety, or my future through a permanently dark lens."
+    },
+    {
+      "id": "PTSD-176",
+      "category": "negative_beliefs",
+      "reverse": true,
+      "text": "In close relationships, the event has not made all people or all future situations seem unsafe."
+    },
+    {
+      "id": "PTSD-177",
+      "category": "negative_beliefs",
+      "reverse": false,
+      "text": "When my body feels activated, the trauma has left me with broad negative beliefs about myself or the world."
+    },
+    {
+      "id": "PTSD-178",
+      "category": "negative_beliefs",
+      "reverse": true,
+      "text": "During a relatively calm day, I can hold a balanced view of myself and the world despite what happened."
+    },
+    {
+      "id": "PTSD-179",
+      "category": "negative_beliefs",
+      "reverse": false,
+      "text": "When thinking about the future, I often see people, safety, or my future through a permanently dark lens."
+    },
+    {
+      "id": "PTSD-180",
+      "category": "negative_beliefs",
+      "reverse": true,
+      "text": "Across different parts of my life, the event has not made all people or all future situations seem unsafe."
+    },
+    {
+      "id": "PTSD-181",
+      "category": "blame_shame",
+      "reverse": false,
+      "text": "During the past several weeks, I carry persistent blame, guilt, or shame connected with the trauma."
+    },
+    {
+      "id": "PTSD-182",
+      "category": "blame_shame",
+      "reverse": true,
+      "text": "In everyday life, I can assess responsibility without carrying excessive guilt or shame."
+    },
+    {
+      "id": "PTSD-183",
+      "category": "blame_shame",
+      "reverse": false,
+      "text": "When something reminds me of the event, I repeatedly judge myself harshly for what happened or how I responded."
+    },
+    {
+      "id": "PTSD-184",
+      "category": "blame_shame",
+      "reverse": true,
+      "text": "In situations that are objectively safe, I rarely condemn myself for reactions that occurred during the trauma."
+    },
+    {
+      "id": "PTSD-185",
+      "category": "blame_shame",
+      "reverse": false,
+      "text": "While trying to complete ordinary tasks, I carry persistent blame, guilt, or shame connected with the trauma."
+    },
+    {
+      "id": "PTSD-186",
+      "category": "blame_shame",
+      "reverse": true,
+      "text": "Around people I know, I can assess responsibility without carrying excessive guilt or shame."
+    },
+    {
+      "id": "PTSD-187",
+      "category": "blame_shame",
+      "reverse": false,
+      "text": "When I am alone, I repeatedly judge myself harshly for what happened or how I responded."
+    },
+    {
+      "id": "PTSD-188",
+      "category": "blame_shame",
+      "reverse": true,
+      "text": "At night, I rarely condemn myself for reactions that occurred during the trauma."
+    },
+    {
+      "id": "PTSD-189",
+      "category": "blame_shame",
+      "reverse": false,
+      "text": "During conversations, I carry persistent blame, guilt, or shame connected with the trauma."
+    },
+    {
+      "id": "PTSD-190",
+      "category": "blame_shame",
+      "reverse": true,
+      "text": "When plans unexpectedly change, I can assess responsibility without carrying excessive guilt or shame."
+    },
+    {
+      "id": "PTSD-191",
+      "category": "blame_shame",
+      "reverse": false,
+      "text": "In public places, I repeatedly judge myself harshly for what happened or how I responded."
+    },
+    {
+      "id": "PTSD-192",
+      "category": "blame_shame",
+      "reverse": true,
+      "text": "When I feel under pressure, I rarely condemn myself for reactions that occurred during the trauma."
+    },
+    {
+      "id": "PTSD-193",
+      "category": "blame_shame",
+      "reverse": false,
+      "text": "After encountering a reminder, I carry persistent blame, guilt, or shame connected with the trauma."
+    },
+    {
+      "id": "PTSD-194",
+      "category": "blame_shame",
+      "reverse": true,
+      "text": "While working or studying, I can assess responsibility without carrying excessive guilt or shame."
+    },
+    {
+      "id": "PTSD-195",
+      "category": "blame_shame",
+      "reverse": false,
+      "text": "When trying to rest, I repeatedly judge myself harshly for what happened or how I responded."
+    },
+    {
+      "id": "PTSD-196",
+      "category": "blame_shame",
+      "reverse": true,
+      "text": "In close relationships, I rarely condemn myself for reactions that occurred during the trauma."
+    },
+    {
+      "id": "PTSD-197",
+      "category": "blame_shame",
+      "reverse": false,
+      "text": "When my body feels activated, I carry persistent blame, guilt, or shame connected with the trauma."
+    },
+    {
+      "id": "PTSD-198",
+      "category": "blame_shame",
+      "reverse": true,
+      "text": "During a relatively calm day, I can assess responsibility without carrying excessive guilt or shame."
+    },
+    {
+      "id": "PTSD-199",
+      "category": "blame_shame",
+      "reverse": false,
+      "text": "When thinking about the future, I repeatedly judge myself harshly for what happened or how I responded."
+    },
+    {
+      "id": "PTSD-200",
+      "category": "blame_shame",
+      "reverse": true,
+      "text": "Across different parts of my life, I rarely condemn myself for reactions that occurred during the trauma."
+    },
+    {
+      "id": "PTSD-201",
+      "category": "negative_emotions",
+      "reverse": false,
+      "text": "During the past several weeks, fear, anger, horror, or sadness remains strongly present."
+    },
+    {
+      "id": "PTSD-202",
+      "category": "negative_emotions",
+      "reverse": true,
+      "text": "In everyday life, strong trauma-related negative emotions are now infrequent."
+    },
+    {
+      "id": "PTSD-203",
+      "category": "negative_emotions",
+      "reverse": false,
+      "text": "When something reminds me of the event, trauma-related negative emotion occupies much of my emotional life."
+    },
+    {
+      "id": "PTSD-204",
+      "category": "negative_emotions",
+      "reverse": true,
+      "text": "In situations that are objectively safe, fear, anger, horror, or sadness linked with the event rarely dominates my day."
+    },
+    {
+      "id": "PTSD-205",
+      "category": "negative_emotions",
+      "reverse": false,
+      "text": "While trying to complete ordinary tasks, fear, anger, horror, or sadness remains strongly present."
+    },
+    {
+      "id": "PTSD-206",
+      "category": "negative_emotions",
+      "reverse": true,
+      "text": "Around people I know, strong trauma-related negative emotions are now infrequent."
+    },
+    {
+      "id": "PTSD-207",
+      "category": "negative_emotions",
+      "reverse": false,
+      "text": "When I am alone, trauma-related negative emotion occupies much of my emotional life."
+    },
+    {
+      "id": "PTSD-208",
+      "category": "negative_emotions",
+      "reverse": true,
+      "text": "At night, fear, anger, horror, or sadness linked with the event rarely dominates my day."
+    },
+    {
+      "id": "PTSD-209",
+      "category": "negative_emotions",
+      "reverse": false,
+      "text": "During conversations, fear, anger, horror, or sadness remains strongly present."
+    },
+    {
+      "id": "PTSD-210",
+      "category": "negative_emotions",
+      "reverse": true,
+      "text": "When plans unexpectedly change, strong trauma-related negative emotions are now infrequent."
+    },
+    {
+      "id": "PTSD-211",
+      "category": "negative_emotions",
+      "reverse": false,
+      "text": "In public places, trauma-related negative emotion occupies much of my emotional life."
+    },
+    {
+      "id": "PTSD-212",
+      "category": "negative_emotions",
+      "reverse": true,
+      "text": "When I feel under pressure, fear, anger, horror, or sadness linked with the event rarely dominates my day."
+    },
+    {
+      "id": "PTSD-213",
+      "category": "negative_emotions",
+      "reverse": false,
+      "text": "After encountering a reminder, fear, anger, horror, or sadness remains strongly present."
+    },
+    {
+      "id": "PTSD-214",
+      "category": "negative_emotions",
+      "reverse": true,
+      "text": "While working or studying, strong trauma-related negative emotions are now infrequent."
+    },
+    {
+      "id": "PTSD-215",
+      "category": "negative_emotions",
+      "reverse": false,
+      "text": "When trying to rest, trauma-related negative emotion occupies much of my emotional life."
+    },
+    {
+      "id": "PTSD-216",
+      "category": "negative_emotions",
+      "reverse": true,
+      "text": "In close relationships, fear, anger, horror, or sadness linked with the event rarely dominates my day."
+    },
+    {
+      "id": "PTSD-217",
+      "category": "negative_emotions",
+      "reverse": false,
+      "text": "When my body feels activated, fear, anger, horror, or sadness remains strongly present."
+    },
+    {
+      "id": "PTSD-218",
+      "category": "negative_emotions",
+      "reverse": true,
+      "text": "During a relatively calm day, strong trauma-related negative emotions are now infrequent."
+    },
+    {
+      "id": "PTSD-219",
+      "category": "negative_emotions",
+      "reverse": false,
+      "text": "When thinking about the future, trauma-related negative emotion occupies much of my emotional life."
+    },
+    {
+      "id": "PTSD-220",
+      "category": "negative_emotions",
+      "reverse": true,
+      "text": "Across different parts of my life, fear, anger, horror, or sadness linked with the event rarely dominates my day."
+    },
+    {
+      "id": "PTSD-221",
+      "category": "interest",
+      "reverse": false,
+      "text": "During the past several weeks, I have lost interest in activities that once mattered to me."
+    },
+    {
+      "id": "PTSD-222",
+      "category": "interest",
+      "reverse": true,
+      "text": "In everyday life, I remain interested in activities that matter to me."
+    },
+    {
+      "id": "PTSD-223",
+      "category": "interest",
+      "reverse": false,
+      "text": "When something reminds me of the event, trauma symptoms make it hard to engage in things I used to enjoy."
+    },
+    {
+      "id": "PTSD-224",
+      "category": "interest",
+      "reverse": true,
+      "text": "In situations that are objectively safe, I can still take part in things I previously enjoyed."
+    },
+    {
+      "id": "PTSD-225",
+      "category": "interest",
+      "reverse": false,
+      "text": "While trying to complete ordinary tasks, I have lost interest in activities that once mattered to me."
+    },
+    {
+      "id": "PTSD-226",
+      "category": "interest",
+      "reverse": true,
+      "text": "Around people I know, I remain interested in activities that matter to me."
+    },
+    {
+      "id": "PTSD-227",
+      "category": "interest",
+      "reverse": false,
+      "text": "When I am alone, trauma symptoms make it hard to engage in things I used to enjoy."
+    },
+    {
+      "id": "PTSD-228",
+      "category": "interest",
+      "reverse": true,
+      "text": "At night, I can still take part in things I previously enjoyed."
+    },
+    {
+      "id": "PTSD-229",
+      "category": "interest",
+      "reverse": false,
+      "text": "During conversations, I have lost interest in activities that once mattered to me."
+    },
+    {
+      "id": "PTSD-230",
+      "category": "interest",
+      "reverse": true,
+      "text": "When plans unexpectedly change, I remain interested in activities that matter to me."
+    },
+    {
+      "id": "PTSD-231",
+      "category": "interest",
+      "reverse": false,
+      "text": "In public places, trauma symptoms make it hard to engage in things I used to enjoy."
+    },
+    {
+      "id": "PTSD-232",
+      "category": "interest",
+      "reverse": true,
+      "text": "When I feel under pressure, I can still take part in things I previously enjoyed."
+    },
+    {
+      "id": "PTSD-233",
+      "category": "interest",
+      "reverse": false,
+      "text": "After encountering a reminder, I have lost interest in activities that once mattered to me."
+    },
+    {
+      "id": "PTSD-234",
+      "category": "interest",
+      "reverse": true,
+      "text": "While working or studying, I remain interested in activities that matter to me."
+    },
+    {
+      "id": "PTSD-235",
+      "category": "interest",
+      "reverse": false,
+      "text": "When trying to rest, trauma symptoms make it hard to engage in things I used to enjoy."
+    },
+    {
+      "id": "PTSD-236",
+      "category": "interest",
+      "reverse": true,
+      "text": "In close relationships, I can still take part in things I previously enjoyed."
+    },
+    {
+      "id": "PTSD-237",
+      "category": "interest",
+      "reverse": false,
+      "text": "When my body feels activated, I have lost interest in activities that once mattered to me."
+    },
+    {
+      "id": "PTSD-238",
+      "category": "interest",
+      "reverse": true,
+      "text": "During a relatively calm day, I remain interested in activities that matter to me."
+    },
+    {
+      "id": "PTSD-239",
+      "category": "interest",
+      "reverse": false,
+      "text": "When thinking about the future, trauma symptoms make it hard to engage in things I used to enjoy."
+    },
+    {
+      "id": "PTSD-240",
+      "category": "interest",
+      "reverse": true,
+      "text": "Across different parts of my life, I can still take part in things I previously enjoyed."
+    },
+    {
+      "id": "PTSD-241",
+      "category": "detachment",
+      "reverse": false,
+      "text": "During the past several weeks, I feel distant or cut off from other people."
+    },
+    {
+      "id": "PTSD-242",
+      "category": "detachment",
+      "reverse": true,
+      "text": "In everyday life, I generally feel connected with people who matter to me."
+    },
+    {
+      "id": "PTSD-243",
+      "category": "detachment",
+      "reverse": false,
+      "text": "When something reminds me of the event, connection with people I care about feels harder since the trauma."
+    },
+    {
+      "id": "PTSD-244",
+      "category": "detachment",
+      "reverse": true,
+      "text": "In situations that are objectively safe, the trauma has not left me persistently cut off from others."
+    },
+    {
+      "id": "PTSD-245",
+      "category": "detachment",
+      "reverse": false,
+      "text": "While trying to complete ordinary tasks, I feel distant or cut off from other people."
+    },
+    {
+      "id": "PTSD-246",
+      "category": "detachment",
+      "reverse": true,
+      "text": "Around people I know, I generally feel connected with people who matter to me."
+    },
+    {
+      "id": "PTSD-247",
+      "category": "detachment",
+      "reverse": false,
+      "text": "When I am alone, connection with people I care about feels harder since the trauma."
+    },
+    {
+      "id": "PTSD-248",
+      "category": "detachment",
+      "reverse": true,
+      "text": "At night, the trauma has not left me persistently cut off from others."
+    },
+    {
+      "id": "PTSD-249",
+      "category": "detachment",
+      "reverse": false,
+      "text": "During conversations, I feel distant or cut off from other people."
+    },
+    {
+      "id": "PTSD-250",
+      "category": "detachment",
+      "reverse": true,
+      "text": "When plans unexpectedly change, I generally feel connected with people who matter to me."
+    },
+    {
+      "id": "PTSD-251",
+      "category": "detachment",
+      "reverse": false,
+      "text": "In public places, connection with people I care about feels harder since the trauma."
+    },
+    {
+      "id": "PTSD-252",
+      "category": "detachment",
+      "reverse": true,
+      "text": "When I feel under pressure, the trauma has not left me persistently cut off from others."
+    },
+    {
+      "id": "PTSD-253",
+      "category": "detachment",
+      "reverse": false,
+      "text": "After encountering a reminder, I feel distant or cut off from other people."
+    },
+    {
+      "id": "PTSD-254",
+      "category": "detachment",
+      "reverse": true,
+      "text": "While working or studying, I generally feel connected with people who matter to me."
+    },
+    {
+      "id": "PTSD-255",
+      "category": "detachment",
+      "reverse": false,
+      "text": "When trying to rest, connection with people I care about feels harder since the trauma."
+    },
+    {
+      "id": "PTSD-256",
+      "category": "detachment",
+      "reverse": true,
+      "text": "In close relationships, the trauma has not left me persistently cut off from others."
+    },
+    {
+      "id": "PTSD-257",
+      "category": "detachment",
+      "reverse": false,
+      "text": "When my body feels activated, I feel distant or cut off from other people."
+    },
+    {
+      "id": "PTSD-258",
+      "category": "detachment",
+      "reverse": true,
+      "text": "During a relatively calm day, I generally feel connected with people who matter to me."
+    },
+    {
+      "id": "PTSD-259",
+      "category": "detachment",
+      "reverse": false,
+      "text": "When thinking about the future, connection with people I care about feels harder since the trauma."
+    },
+    {
+      "id": "PTSD-260",
+      "category": "detachment",
+      "reverse": true,
+      "text": "Across different parts of my life, the trauma has not left me persistently cut off from others."
+    },
+    {
+      "id": "PTSD-261",
+      "category": "positive_emotions",
+      "reverse": false,
+      "text": "During the past several weeks, it is difficult to feel happiness, love, or calm even in safe moments."
+    },
+    {
+      "id": "PTSD-262",
+      "category": "positive_emotions",
+      "reverse": true,
+      "text": "In everyday life, I can experience happiness, affection, or calm in suitable moments."
+    },
+    {
+      "id": "PTSD-263",
+      "category": "positive_emotions",
+      "reverse": false,
+      "text": "When something reminds me of the event, positive emotions feel muted or inaccessible to me."
+    },
+    {
+      "id": "PTSD-264",
+      "category": "positive_emotions",
+      "reverse": true,
+      "text": "In situations that are objectively safe, positive emotions remain available to me despite what happened."
+    },
+    {
+      "id": "PTSD-265",
+      "category": "positive_emotions",
+      "reverse": false,
+      "text": "While trying to complete ordinary tasks, it is difficult to feel happiness, love, or calm even in safe moments."
+    },
+    {
+      "id": "PTSD-266",
+      "category": "positive_emotions",
+      "reverse": true,
+      "text": "Around people I know, I can experience happiness, affection, or calm in suitable moments."
+    },
+    {
+      "id": "PTSD-267",
+      "category": "positive_emotions",
+      "reverse": false,
+      "text": "When I am alone, positive emotions feel muted or inaccessible to me."
+    },
+    {
+      "id": "PTSD-268",
+      "category": "positive_emotions",
+      "reverse": true,
+      "text": "At night, positive emotions remain available to me despite what happened."
+    },
+    {
+      "id": "PTSD-269",
+      "category": "positive_emotions",
+      "reverse": false,
+      "text": "During conversations, it is difficult to feel happiness, love, or calm even in safe moments."
+    },
+    {
+      "id": "PTSD-270",
+      "category": "positive_emotions",
+      "reverse": true,
+      "text": "When plans unexpectedly change, I can experience happiness, affection, or calm in suitable moments."
+    },
+    {
+      "id": "PTSD-271",
+      "category": "positive_emotions",
+      "reverse": false,
+      "text": "In public places, positive emotions feel muted or inaccessible to me."
+    },
+    {
+      "id": "PTSD-272",
+      "category": "positive_emotions",
+      "reverse": true,
+      "text": "When I feel under pressure, positive emotions remain available to me despite what happened."
+    },
+    {
+      "id": "PTSD-273",
+      "category": "positive_emotions",
+      "reverse": false,
+      "text": "After encountering a reminder, it is difficult to feel happiness, love, or calm even in safe moments."
+    },
+    {
+      "id": "PTSD-274",
+      "category": "positive_emotions",
+      "reverse": true,
+      "text": "While working or studying, I can experience happiness, affection, or calm in suitable moments."
+    },
+    {
+      "id": "PTSD-275",
+      "category": "positive_emotions",
+      "reverse": false,
+      "text": "When trying to rest, positive emotions feel muted or inaccessible to me."
+    },
+    {
+      "id": "PTSD-276",
+      "category": "positive_emotions",
+      "reverse": true,
+      "text": "In close relationships, positive emotions remain available to me despite what happened."
+    },
+    {
+      "id": "PTSD-277",
+      "category": "positive_emotions",
+      "reverse": false,
+      "text": "When my body feels activated, it is difficult to feel happiness, love, or calm even in safe moments."
+    },
+    {
+      "id": "PTSD-278",
+      "category": "positive_emotions",
+      "reverse": true,
+      "text": "During a relatively calm day, I can experience happiness, affection, or calm in suitable moments."
+    },
+    {
+      "id": "PTSD-279",
+      "category": "positive_emotions",
+      "reverse": false,
+      "text": "When thinking about the future, positive emotions feel muted or inaccessible to me."
+    },
+    {
+      "id": "PTSD-280",
+      "category": "positive_emotions",
+      "reverse": true,
+      "text": "Across different parts of my life, positive emotions remain available to me despite what happened."
+    },
+    {
+      "id": "PTSD-281",
+      "category": "irritability",
+      "reverse": false,
+      "text": "During the past several weeks, I become irritable or angry more quickly than I intend."
+    },
+    {
+      "id": "PTSD-282",
+      "category": "irritability",
+      "reverse": true,
+      "text": "In everyday life, I can usually manage irritation without sudden angry reactions."
+    },
+    {
+      "id": "PTSD-283",
+      "category": "irritability",
+      "reverse": false,
+      "text": "When something reminds me of the event, my reactions can become sharp or aggressive when I feel threatened."
+    },
+    {
+      "id": "PTSD-284",
+      "category": "irritability",
+      "reverse": true,
+      "text": "In situations that are objectively safe, feeling threatened rarely leads me to react aggressively."
+    },
+    {
+      "id": "PTSD-285",
+      "category": "irritability",
+      "reverse": false,
+      "text": "While trying to complete ordinary tasks, I become irritable or angry more quickly than I intend."
+    },
+    {
+      "id": "PTSD-286",
+      "category": "irritability",
+      "reverse": true,
+      "text": "Around people I know, I can usually manage irritation without sudden angry reactions."
+    },
+    {
+      "id": "PTSD-287",
+      "category": "irritability",
+      "reverse": false,
+      "text": "When I am alone, my reactions can become sharp or aggressive when I feel threatened."
+    },
+    {
+      "id": "PTSD-288",
+      "category": "irritability",
+      "reverse": true,
+      "text": "At night, feeling threatened rarely leads me to react aggressively."
+    },
+    {
+      "id": "PTSD-289",
+      "category": "irritability",
+      "reverse": false,
+      "text": "During conversations, I become irritable or angry more quickly than I intend."
+    },
+    {
+      "id": "PTSD-290",
+      "category": "irritability",
+      "reverse": true,
+      "text": "When plans unexpectedly change, I can usually manage irritation without sudden angry reactions."
+    },
+    {
+      "id": "PTSD-291",
+      "category": "irritability",
+      "reverse": false,
+      "text": "In public places, my reactions can become sharp or aggressive when I feel threatened."
+    },
+    {
+      "id": "PTSD-292",
+      "category": "irritability",
+      "reverse": true,
+      "text": "When I feel under pressure, feeling threatened rarely leads me to react aggressively."
+    },
+    {
+      "id": "PTSD-293",
+      "category": "irritability",
+      "reverse": false,
+      "text": "After encountering a reminder, I become irritable or angry more quickly than I intend."
+    },
+    {
+      "id": "PTSD-294",
+      "category": "irritability",
+      "reverse": true,
+      "text": "While working or studying, I can usually manage irritation without sudden angry reactions."
+    },
+    {
+      "id": "PTSD-295",
+      "category": "irritability",
+      "reverse": false,
+      "text": "When trying to rest, my reactions can become sharp or aggressive when I feel threatened."
+    },
+    {
+      "id": "PTSD-296",
+      "category": "irritability",
+      "reverse": true,
+      "text": "In close relationships, feeling threatened rarely leads me to react aggressively."
+    },
+    {
+      "id": "PTSD-297",
+      "category": "irritability",
+      "reverse": false,
+      "text": "When my body feels activated, I become irritable or angry more quickly than I intend."
+    },
+    {
+      "id": "PTSD-298",
+      "category": "irritability",
+      "reverse": true,
+      "text": "During a relatively calm day, I can usually manage irritation without sudden angry reactions."
+    },
+    {
+      "id": "PTSD-299",
+      "category": "irritability",
+      "reverse": false,
+      "text": "When thinking about the future, my reactions can become sharp or aggressive when I feel threatened."
+    },
+    {
+      "id": "PTSD-300",
+      "category": "irritability",
+      "reverse": true,
+      "text": "Across different parts of my life, feeling threatened rarely leads me to react aggressively."
+    },
+    {
+      "id": "PTSD-301",
+      "category": "risk_behavior",
+      "reverse": false,
+      "text": "During the past several weeks, I sometimes take unnecessary risks or act against my own wellbeing."
+    },
+    {
+      "id": "PTSD-302",
+      "category": "risk_behavior",
+      "reverse": true,
+      "text": "In everyday life, I generally protect my safety even when distressed."
+    },
+    {
+      "id": "PTSD-303",
+      "category": "risk_behavior",
+      "reverse": false,
+      "text": "When something reminds me of the event, trauma-related distress can lead me toward reckless choices."
+    },
+    {
+      "id": "PTSD-304",
+      "category": "risk_behavior",
+      "reverse": true,
+      "text": "In situations that are objectively safe, trauma-related feelings rarely lead me toward reckless decisions."
+    },
+    {
+      "id": "PTSD-305",
+      "category": "risk_behavior",
+      "reverse": false,
+      "text": "While trying to complete ordinary tasks, I sometimes take unnecessary risks or act against my own wellbeing."
+    },
+    {
+      "id": "PTSD-306",
+      "category": "risk_behavior",
+      "reverse": true,
+      "text": "Around people I know, I generally protect my safety even when distressed."
+    },
+    {
+      "id": "PTSD-307",
+      "category": "risk_behavior",
+      "reverse": false,
+      "text": "When I am alone, trauma-related distress can lead me toward reckless choices."
+    },
+    {
+      "id": "PTSD-308",
+      "category": "risk_behavior",
+      "reverse": true,
+      "text": "At night, trauma-related feelings rarely lead me toward reckless decisions."
+    },
+    {
+      "id": "PTSD-309",
+      "category": "risk_behavior",
+      "reverse": false,
+      "text": "During conversations, I sometimes take unnecessary risks or act against my own wellbeing."
+    },
+    {
+      "id": "PTSD-310",
+      "category": "risk_behavior",
+      "reverse": true,
+      "text": "When plans unexpectedly change, I generally protect my safety even when distressed."
+    },
+    {
+      "id": "PTSD-311",
+      "category": "risk_behavior",
+      "reverse": false,
+      "text": "In public places, trauma-related distress can lead me toward reckless choices."
+    },
+    {
+      "id": "PTSD-312",
+      "category": "risk_behavior",
+      "reverse": true,
+      "text": "When I feel under pressure, trauma-related feelings rarely lead me toward reckless decisions."
+    },
+    {
+      "id": "PTSD-313",
+      "category": "risk_behavior",
+      "reverse": false,
+      "text": "After encountering a reminder, I sometimes take unnecessary risks or act against my own wellbeing."
+    },
+    {
+      "id": "PTSD-314",
+      "category": "risk_behavior",
+      "reverse": true,
+      "text": "While working or studying, I generally protect my safety even when distressed."
+    },
+    {
+      "id": "PTSD-315",
+      "category": "risk_behavior",
+      "reverse": false,
+      "text": "When trying to rest, trauma-related distress can lead me toward reckless choices."
+    },
+    {
+      "id": "PTSD-316",
+      "category": "risk_behavior",
+      "reverse": true,
+      "text": "In close relationships, trauma-related feelings rarely lead me toward reckless decisions."
+    },
+    {
+      "id": "PTSD-317",
+      "category": "risk_behavior",
+      "reverse": false,
+      "text": "When my body feels activated, I sometimes take unnecessary risks or act against my own wellbeing."
+    },
+    {
+      "id": "PTSD-318",
+      "category": "risk_behavior",
+      "reverse": true,
+      "text": "During a relatively calm day, I generally protect my safety even when distressed."
+    },
+    {
+      "id": "PTSD-319",
+      "category": "risk_behavior",
+      "reverse": false,
+      "text": "When thinking about the future, trauma-related distress can lead me toward reckless choices."
+    },
+    {
+      "id": "PTSD-320",
+      "category": "risk_behavior",
+      "reverse": true,
+      "text": "Across different parts of my life, trauma-related feelings rarely lead me toward reckless decisions."
+    },
+    {
+      "id": "PTSD-321",
+      "category": "hypervigilance",
+      "reverse": false,
+      "text": "During the past several weeks, I stay on guard and scan for danger even in relatively safe places."
+    },
+    {
+      "id": "PTSD-322",
+      "category": "hypervigilance",
+      "reverse": true,
+      "text": "In everyday life, I can relax my guard when a situation is reasonably safe."
+    },
+    {
+      "id": "PTSD-323",
+      "category": "hypervigilance",
+      "reverse": false,
+      "text": "When something reminds me of the event, my attention is repeatedly pulled toward possible threats."
+    },
+    {
+      "id": "PTSD-324",
+      "category": "hypervigilance",
+      "reverse": true,
+      "text": "In situations that are objectively safe, possible threats do not continuously dominate my attention."
+    },
+    {
+      "id": "PTSD-325",
+      "category": "hypervigilance",
+      "reverse": false,
+      "text": "While trying to complete ordinary tasks, I stay on guard and scan for danger even in relatively safe places."
+    },
+    {
+      "id": "PTSD-326",
+      "category": "hypervigilance",
+      "reverse": true,
+      "text": "Around people I know, I can relax my guard when a situation is reasonably safe."
+    },
+    {
+      "id": "PTSD-327",
+      "category": "hypervigilance",
+      "reverse": false,
+      "text": "When I am alone, my attention is repeatedly pulled toward possible threats."
+    },
+    {
+      "id": "PTSD-328",
+      "category": "hypervigilance",
+      "reverse": true,
+      "text": "At night, possible threats do not continuously dominate my attention."
+    },
+    {
+      "id": "PTSD-329",
+      "category": "hypervigilance",
+      "reverse": false,
+      "text": "During conversations, I stay on guard and scan for danger even in relatively safe places."
+    },
+    {
+      "id": "PTSD-330",
+      "category": "hypervigilance",
+      "reverse": true,
+      "text": "When plans unexpectedly change, I can relax my guard when a situation is reasonably safe."
+    },
+    {
+      "id": "PTSD-331",
+      "category": "hypervigilance",
+      "reverse": false,
+      "text": "In public places, my attention is repeatedly pulled toward possible threats."
+    },
+    {
+      "id": "PTSD-332",
+      "category": "hypervigilance",
+      "reverse": true,
+      "text": "When I feel under pressure, possible threats do not continuously dominate my attention."
+    },
+    {
+      "id": "PTSD-333",
+      "category": "hypervigilance",
+      "reverse": false,
+      "text": "After encountering a reminder, I stay on guard and scan for danger even in relatively safe places."
+    },
+    {
+      "id": "PTSD-334",
+      "category": "hypervigilance",
+      "reverse": true,
+      "text": "While working or studying, I can relax my guard when a situation is reasonably safe."
+    },
+    {
+      "id": "PTSD-335",
+      "category": "hypervigilance",
+      "reverse": false,
+      "text": "When trying to rest, my attention is repeatedly pulled toward possible threats."
+    },
+    {
+      "id": "PTSD-336",
+      "category": "hypervigilance",
+      "reverse": true,
+      "text": "In close relationships, possible threats do not continuously dominate my attention."
+    },
+    {
+      "id": "PTSD-337",
+      "category": "hypervigilance",
+      "reverse": false,
+      "text": "When my body feels activated, I stay on guard and scan for danger even in relatively safe places."
+    },
+    {
+      "id": "PTSD-338",
+      "category": "hypervigilance",
+      "reverse": true,
+      "text": "During a relatively calm day, I can relax my guard when a situation is reasonably safe."
+    },
+    {
+      "id": "PTSD-339",
+      "category": "hypervigilance",
+      "reverse": false,
+      "text": "When thinking about the future, my attention is repeatedly pulled toward possible threats."
+    },
+    {
+      "id": "PTSD-340",
+      "category": "hypervigilance",
+      "reverse": true,
+      "text": "Across different parts of my life, possible threats do not continuously dominate my attention."
+    },
+    {
+      "id": "PTSD-341",
+      "category": "startle",
+      "reverse": false,
+      "text": "During the past several weeks, sudden sounds or movements make me startle strongly."
+    },
+    {
+      "id": "PTSD-342",
+      "category": "startle",
+      "reverse": true,
+      "text": "In everyday life, my startle response is usually proportionate to the situation."
+    },
+    {
+      "id": "PTSD-343",
+      "category": "startle",
+      "reverse": false,
+      "text": "When something reminds me of the event, my body reacts to surprise as if immediate danger is present."
+    },
+    {
+      "id": "PTSD-344",
+      "category": "startle",
+      "reverse": true,
+      "text": "In situations that are objectively safe, sudden sounds or movements rarely trigger an intense alarm response."
+    },
+    {
+      "id": "PTSD-345",
+      "category": "startle",
+      "reverse": false,
+      "text": "While trying to complete ordinary tasks, sudden sounds or movements make me startle strongly."
+    },
+    {
+      "id": "PTSD-346",
+      "category": "startle",
+      "reverse": true,
+      "text": "Around people I know, my startle response is usually proportionate to the situation."
+    },
+    {
+      "id": "PTSD-347",
+      "category": "startle",
+      "reverse": false,
+      "text": "When I am alone, my body reacts to surprise as if immediate danger is present."
+    },
+    {
+      "id": "PTSD-348",
+      "category": "startle",
+      "reverse": true,
+      "text": "At night, sudden sounds or movements rarely trigger an intense alarm response."
+    },
+    {
+      "id": "PTSD-349",
+      "category": "startle",
+      "reverse": false,
+      "text": "During conversations, sudden sounds or movements make me startle strongly."
+    },
+    {
+      "id": "PTSD-350",
+      "category": "startle",
+      "reverse": true,
+      "text": "When plans unexpectedly change, my startle response is usually proportionate to the situation."
+    },
+    {
+      "id": "PTSD-351",
+      "category": "startle",
+      "reverse": false,
+      "text": "In public places, my body reacts to surprise as if immediate danger is present."
+    },
+    {
+      "id": "PTSD-352",
+      "category": "startle",
+      "reverse": true,
+      "text": "When I feel under pressure, sudden sounds or movements rarely trigger an intense alarm response."
+    },
+    {
+      "id": "PTSD-353",
+      "category": "startle",
+      "reverse": false,
+      "text": "After encountering a reminder, sudden sounds or movements make me startle strongly."
+    },
+    {
+      "id": "PTSD-354",
+      "category": "startle",
+      "reverse": true,
+      "text": "While working or studying, my startle response is usually proportionate to the situation."
+    },
+    {
+      "id": "PTSD-355",
+      "category": "startle",
+      "reverse": false,
+      "text": "When trying to rest, my body reacts to surprise as if immediate danger is present."
+    },
+    {
+      "id": "PTSD-356",
+      "category": "startle",
+      "reverse": true,
+      "text": "In close relationships, sudden sounds or movements rarely trigger an intense alarm response."
+    },
+    {
+      "id": "PTSD-357",
+      "category": "startle",
+      "reverse": false,
+      "text": "When my body feels activated, sudden sounds or movements make me startle strongly."
+    },
+    {
+      "id": "PTSD-358",
+      "category": "startle",
+      "reverse": true,
+      "text": "During a relatively calm day, my startle response is usually proportionate to the situation."
+    },
+    {
+      "id": "PTSD-359",
+      "category": "startle",
+      "reverse": false,
+      "text": "When thinking about the future, my body reacts to surprise as if immediate danger is present."
+    },
+    {
+      "id": "PTSD-360",
+      "category": "startle",
+      "reverse": true,
+      "text": "Across different parts of my life, sudden sounds or movements rarely trigger an intense alarm response."
+    },
+    {
+      "id": "PTSD-361",
+      "category": "concentration",
+      "reverse": false,
+      "text": "During the past several weeks, trauma-related thoughts or alertness make concentration difficult."
+    },
+    {
+      "id": "PTSD-362",
+      "category": "concentration",
+      "reverse": true,
+      "text": "In everyday life, I can usually concentrate without trauma-related interruption."
+    },
+    {
+      "id": "PTSD-363",
+      "category": "concentration",
+      "reverse": false,
+      "text": "When something reminds me of the event, I lose track of tasks because my attention shifts toward distress or danger."
+    },
+    {
+      "id": "PTSD-364",
+      "category": "concentration",
+      "reverse": true,
+      "text": "In situations that are objectively safe, my attention generally stays with the task in front of me."
+    },
+    {
+      "id": "PTSD-365",
+      "category": "concentration",
+      "reverse": false,
+      "text": "While trying to complete ordinary tasks, trauma-related thoughts or alertness make concentration difficult."
+    },
+    {
+      "id": "PTSD-366",
+      "category": "concentration",
+      "reverse": true,
+      "text": "Around people I know, I can usually concentrate without trauma-related interruption."
+    },
+    {
+      "id": "PTSD-367",
+      "category": "concentration",
+      "reverse": false,
+      "text": "When I am alone, I lose track of tasks because my attention shifts toward distress or danger."
+    },
+    {
+      "id": "PTSD-368",
+      "category": "concentration",
+      "reverse": true,
+      "text": "At night, my attention generally stays with the task in front of me."
+    },
+    {
+      "id": "PTSD-369",
+      "category": "concentration",
+      "reverse": false,
+      "text": "During conversations, trauma-related thoughts or alertness make concentration difficult."
+    },
+    {
+      "id": "PTSD-370",
+      "category": "concentration",
+      "reverse": true,
+      "text": "When plans unexpectedly change, I can usually concentrate without trauma-related interruption."
+    },
+    {
+      "id": "PTSD-371",
+      "category": "concentration",
+      "reverse": false,
+      "text": "In public places, I lose track of tasks because my attention shifts toward distress or danger."
+    },
+    {
+      "id": "PTSD-372",
+      "category": "concentration",
+      "reverse": true,
+      "text": "When I feel under pressure, my attention generally stays with the task in front of me."
+    },
+    {
+      "id": "PTSD-373",
+      "category": "concentration",
+      "reverse": false,
+      "text": "After encountering a reminder, trauma-related thoughts or alertness make concentration difficult."
+    },
+    {
+      "id": "PTSD-374",
+      "category": "concentration",
+      "reverse": true,
+      "text": "While working or studying, I can usually concentrate without trauma-related interruption."
+    },
+    {
+      "id": "PTSD-375",
+      "category": "concentration",
+      "reverse": false,
+      "text": "When trying to rest, I lose track of tasks because my attention shifts toward distress or danger."
+    },
+    {
+      "id": "PTSD-376",
+      "category": "concentration",
+      "reverse": true,
+      "text": "In close relationships, my attention generally stays with the task in front of me."
+    },
+    {
+      "id": "PTSD-377",
+      "category": "concentration",
+      "reverse": false,
+      "text": "When my body feels activated, trauma-related thoughts or alertness make concentration difficult."
+    },
+    {
+      "id": "PTSD-378",
+      "category": "concentration",
+      "reverse": true,
+      "text": "During a relatively calm day, I can usually concentrate without trauma-related interruption."
+    },
+    {
+      "id": "PTSD-379",
+      "category": "concentration",
+      "reverse": false,
+      "text": "When thinking about the future, I lose track of tasks because my attention shifts toward distress or danger."
+    },
+    {
+      "id": "PTSD-380",
+      "category": "concentration",
+      "reverse": true,
+      "text": "Across different parts of my life, my attention generally stays with the task in front of me."
+    },
+    {
+      "id": "PTSD-381",
+      "category": "sleep",
+      "reverse": false,
+      "text": "During the past several weeks, I have trouble falling asleep, staying asleep, or resting deeply."
+    },
+    {
+      "id": "PTSD-382",
+      "category": "sleep",
+      "reverse": true,
+      "text": "In everyday life, I generally fall asleep and remain asleep well enough."
+    },
+    {
+      "id": "PTSD-383",
+      "category": "sleep",
+      "reverse": false,
+      "text": "When something reminds me of the event, alertness or distress prevents restorative sleep."
+    },
+    {
+      "id": "PTSD-384",
+      "category": "sleep",
+      "reverse": true,
+      "text": "In situations that are objectively safe, trauma-related alertness rarely interferes with restorative sleep."
+    },
+    {
+      "id": "PTSD-385",
+      "category": "sleep",
+      "reverse": false,
+      "text": "While trying to complete ordinary tasks, I have trouble falling asleep, staying asleep, or resting deeply."
+    },
+    {
+      "id": "PTSD-386",
+      "category": "sleep",
+      "reverse": true,
+      "text": "Around people I know, I generally fall asleep and remain asleep well enough."
+    },
+    {
+      "id": "PTSD-387",
+      "category": "sleep",
+      "reverse": false,
+      "text": "When I am alone, alertness or distress prevents restorative sleep."
+    },
+    {
+      "id": "PTSD-388",
+      "category": "sleep",
+      "reverse": true,
+      "text": "At night, trauma-related alertness rarely interferes with restorative sleep."
+    },
+    {
+      "id": "PTSD-389",
+      "category": "sleep",
+      "reverse": false,
+      "text": "During conversations, I have trouble falling asleep, staying asleep, or resting deeply."
+    },
+    {
+      "id": "PTSD-390",
+      "category": "sleep",
+      "reverse": true,
+      "text": "When plans unexpectedly change, I generally fall asleep and remain asleep well enough."
+    },
+    {
+      "id": "PTSD-391",
+      "category": "sleep",
+      "reverse": false,
+      "text": "In public places, alertness or distress prevents restorative sleep."
+    },
+    {
+      "id": "PTSD-392",
+      "category": "sleep",
+      "reverse": true,
+      "text": "When I feel under pressure, trauma-related alertness rarely interferes with restorative sleep."
+    },
+    {
+      "id": "PTSD-393",
+      "category": "sleep",
+      "reverse": false,
+      "text": "After encountering a reminder, I have trouble falling asleep, staying asleep, or resting deeply."
+    },
+    {
+      "id": "PTSD-394",
+      "category": "sleep",
+      "reverse": true,
+      "text": "While working or studying, I generally fall asleep and remain asleep well enough."
+    },
+    {
+      "id": "PTSD-395",
+      "category": "sleep",
+      "reverse": false,
+      "text": "When trying to rest, alertness or distress prevents restorative sleep."
+    },
+    {
+      "id": "PTSD-396",
+      "category": "sleep",
+      "reverse": true,
+      "text": "In close relationships, trauma-related alertness rarely interferes with restorative sleep."
+    },
+    {
+      "id": "PTSD-397",
+      "category": "sleep",
+      "reverse": false,
+      "text": "When my body feels activated, I have trouble falling asleep, staying asleep, or resting deeply."
+    },
+    {
+      "id": "PTSD-398",
+      "category": "sleep",
+      "reverse": true,
+      "text": "During a relatively calm day, I generally fall asleep and remain asleep well enough."
+    },
+    {
+      "id": "PTSD-399",
+      "category": "sleep",
+      "reverse": false,
+      "text": "When thinking about the future, alertness or distress prevents restorative sleep."
+    },
+    {
+      "id": "PTSD-400",
+      "category": "sleep",
+      "reverse": true,
+      "text": "Across different parts of my life, trauma-related alertness rarely interferes with restorative sleep."
+    },
+    {
+      "id": "PTSD-401",
+      "category": "physical_tension",
+      "reverse": false,
+      "text": "During the past several weeks, my body carries persistent tension or stress linked with the trauma."
+    },
+    {
+      "id": "PTSD-402",
+      "category": "physical_tension",
+      "reverse": true,
+      "text": "In everyday life, my body is generally free from persistent trauma-related tension."
+    },
+    {
+      "id": "PTSD-403",
+      "category": "physical_tension",
+      "reverse": false,
+      "text": "When something reminds me of the event, headaches, stomach discomfort, pain, or muscle tension increase with distress."
+    },
+    {
+      "id": "PTSD-404",
+      "category": "physical_tension",
+      "reverse": true,
+      "text": "In situations that are objectively safe, emotional distress rarely appears as noticeable physical discomfort."
+    },
+    {
+      "id": "PTSD-405",
+      "category": "physical_tension",
+      "reverse": false,
+      "text": "While trying to complete ordinary tasks, my body carries persistent tension or stress linked with the trauma."
+    },
+    {
+      "id": "PTSD-406",
+      "category": "physical_tension",
+      "reverse": true,
+      "text": "Around people I know, my body is generally free from persistent trauma-related tension."
+    },
+    {
+      "id": "PTSD-407",
+      "category": "physical_tension",
+      "reverse": false,
+      "text": "When I am alone, headaches, stomach discomfort, pain, or muscle tension increase with distress."
+    },
+    {
+      "id": "PTSD-408",
+      "category": "physical_tension",
+      "reverse": true,
+      "text": "At night, emotional distress rarely appears as noticeable physical discomfort."
+    },
+    {
+      "id": "PTSD-409",
+      "category": "physical_tension",
+      "reverse": false,
+      "text": "During conversations, my body carries persistent tension or stress linked with the trauma."
+    },
+    {
+      "id": "PTSD-410",
+      "category": "physical_tension",
+      "reverse": true,
+      "text": "When plans unexpectedly change, my body is generally free from persistent trauma-related tension."
+    },
+    {
+      "id": "PTSD-411",
+      "category": "physical_tension",
+      "reverse": false,
+      "text": "In public places, headaches, stomach discomfort, pain, or muscle tension increase with distress."
+    },
+    {
+      "id": "PTSD-412",
+      "category": "physical_tension",
+      "reverse": true,
+      "text": "When I feel under pressure, emotional distress rarely appears as noticeable physical discomfort."
+    },
+    {
+      "id": "PTSD-413",
+      "category": "physical_tension",
+      "reverse": false,
+      "text": "After encountering a reminder, my body carries persistent tension or stress linked with the trauma."
+    },
+    {
+      "id": "PTSD-414",
+      "category": "physical_tension",
+      "reverse": true,
+      "text": "While working or studying, my body is generally free from persistent trauma-related tension."
+    },
+    {
+      "id": "PTSD-415",
+      "category": "physical_tension",
+      "reverse": false,
+      "text": "When trying to rest, headaches, stomach discomfort, pain, or muscle tension increase with distress."
+    },
+    {
+      "id": "PTSD-416",
+      "category": "physical_tension",
+      "reverse": true,
+      "text": "In close relationships, emotional distress rarely appears as noticeable physical discomfort."
+    },
+    {
+      "id": "PTSD-417",
+      "category": "physical_tension",
+      "reverse": false,
+      "text": "When my body feels activated, my body carries persistent tension or stress linked with the trauma."
+    },
+    {
+      "id": "PTSD-418",
+      "category": "physical_tension",
+      "reverse": true,
+      "text": "During a relatively calm day, my body is generally free from persistent trauma-related tension."
+    },
+    {
+      "id": "PTSD-419",
+      "category": "physical_tension",
+      "reverse": false,
+      "text": "When thinking about the future, headaches, stomach discomfort, pain, or muscle tension increase with distress."
+    },
+    {
+      "id": "PTSD-420",
+      "category": "physical_tension",
+      "reverse": true,
+      "text": "Across different parts of my life, emotional distress rarely appears as noticeable physical discomfort."
+    },
+    {
+      "id": "PTSD-421",
+      "category": "functioning",
+      "reverse": false,
+      "text": "During the past several weeks, trauma symptoms interfere with work, study, care tasks, or routines."
+    },
+    {
+      "id": "PTSD-422",
+      "category": "functioning",
+      "reverse": true,
+      "text": "In everyday life, trauma-related symptoms have little effect on my daily responsibilities."
+    },
+    {
+      "id": "PTSD-423",
+      "category": "functioning",
+      "reverse": false,
+      "text": "When something reminds me of the event, my daily functioning is restricted by distress or avoidance."
+    },
+    {
+      "id": "PTSD-424",
+      "category": "functioning",
+      "reverse": true,
+      "text": "In situations that are objectively safe, I can generally maintain routines despite reminders or distress."
+    },
+    {
+      "id": "PTSD-425",
+      "category": "functioning",
+      "reverse": false,
+      "text": "While trying to complete ordinary tasks, trauma symptoms interfere with work, study, care tasks, or routines."
+    },
+    {
+      "id": "PTSD-426",
+      "category": "functioning",
+      "reverse": true,
+      "text": "Around people I know, trauma-related symptoms have little effect on my daily responsibilities."
+    },
+    {
+      "id": "PTSD-427",
+      "category": "functioning",
+      "reverse": false,
+      "text": "When I am alone, my daily functioning is restricted by distress or avoidance."
+    },
+    {
+      "id": "PTSD-428",
+      "category": "functioning",
+      "reverse": true,
+      "text": "At night, I can generally maintain routines despite reminders or distress."
+    },
+    {
+      "id": "PTSD-429",
+      "category": "functioning",
+      "reverse": false,
+      "text": "During conversations, trauma symptoms interfere with work, study, care tasks, or routines."
+    },
+    {
+      "id": "PTSD-430",
+      "category": "functioning",
+      "reverse": true,
+      "text": "When plans unexpectedly change, trauma-related symptoms have little effect on my daily responsibilities."
+    },
+    {
+      "id": "PTSD-431",
+      "category": "functioning",
+      "reverse": false,
+      "text": "In public places, my daily functioning is restricted by distress or avoidance."
+    },
+    {
+      "id": "PTSD-432",
+      "category": "functioning",
+      "reverse": true,
+      "text": "When I feel under pressure, I can generally maintain routines despite reminders or distress."
+    },
+    {
+      "id": "PTSD-433",
+      "category": "functioning",
+      "reverse": false,
+      "text": "After encountering a reminder, trauma symptoms interfere with work, study, care tasks, or routines."
+    },
+    {
+      "id": "PTSD-434",
+      "category": "functioning",
+      "reverse": true,
+      "text": "While working or studying, trauma-related symptoms have little effect on my daily responsibilities."
+    },
+    {
+      "id": "PTSD-435",
+      "category": "functioning",
+      "reverse": false,
+      "text": "When trying to rest, my daily functioning is restricted by distress or avoidance."
+    },
+    {
+      "id": "PTSD-436",
+      "category": "functioning",
+      "reverse": true,
+      "text": "In close relationships, I can generally maintain routines despite reminders or distress."
+    },
+    {
+      "id": "PTSD-437",
+      "category": "functioning",
+      "reverse": false,
+      "text": "When my body feels activated, trauma symptoms interfere with work, study, care tasks, or routines."
+    },
+    {
+      "id": "PTSD-438",
+      "category": "functioning",
+      "reverse": true,
+      "text": "During a relatively calm day, trauma-related symptoms have little effect on my daily responsibilities."
+    },
+    {
+      "id": "PTSD-439",
+      "category": "functioning",
+      "reverse": false,
+      "text": "When thinking about the future, my daily functioning is restricted by distress or avoidance."
+    },
+    {
+      "id": "PTSD-440",
+      "category": "functioning",
+      "reverse": true,
+      "text": "Across different parts of my life, I can generally maintain routines despite reminders or distress."
+    },
+    {
+      "id": "PTSD-441",
+      "category": "relationships",
+      "reverse": false,
+      "text": "During the past several weeks, trauma-related fear or mistrust makes close relationships difficult."
+    },
+    {
+      "id": "PTSD-442",
+      "category": "relationships",
+      "reverse": true,
+      "text": "In everyday life, I can build trust gradually in relationships that are genuinely safe."
+    },
+    {
+      "id": "PTSD-443",
+      "category": "relationships",
+      "reverse": false,
+      "text": "When something reminds me of the event, I struggle to feel safe enough for openness or connection."
+    },
+    {
+      "id": "PTSD-444",
+      "category": "relationships",
+      "reverse": true,
+      "text": "In situations that are objectively safe, trauma-related fear does not consistently prevent closeness."
+    },
+    {
+      "id": "PTSD-445",
+      "category": "relationships",
+      "reverse": false,
+      "text": "While trying to complete ordinary tasks, trauma-related fear or mistrust makes close relationships difficult."
+    },
+    {
+      "id": "PTSD-446",
+      "category": "relationships",
+      "reverse": true,
+      "text": "Around people I know, I can build trust gradually in relationships that are genuinely safe."
+    },
+    {
+      "id": "PTSD-447",
+      "category": "relationships",
+      "reverse": false,
+      "text": "When I am alone, I struggle to feel safe enough for openness or connection."
+    },
+    {
+      "id": "PTSD-448",
+      "category": "relationships",
+      "reverse": true,
+      "text": "At night, trauma-related fear does not consistently prevent closeness."
+    },
+    {
+      "id": "PTSD-449",
+      "category": "relationships",
+      "reverse": false,
+      "text": "During conversations, trauma-related fear or mistrust makes close relationships difficult."
+    },
+    {
+      "id": "PTSD-450",
+      "category": "relationships",
+      "reverse": true,
+      "text": "When plans unexpectedly change, I can build trust gradually in relationships that are genuinely safe."
+    },
+    {
+      "id": "PTSD-451",
+      "category": "relationships",
+      "reverse": false,
+      "text": "In public places, I struggle to feel safe enough for openness or connection."
+    },
+    {
+      "id": "PTSD-452",
+      "category": "relationships",
+      "reverse": true,
+      "text": "When I feel under pressure, trauma-related fear does not consistently prevent closeness."
+    },
+    {
+      "id": "PTSD-453",
+      "category": "relationships",
+      "reverse": false,
+      "text": "After encountering a reminder, trauma-related fear or mistrust makes close relationships difficult."
+    },
+    {
+      "id": "PTSD-454",
+      "category": "relationships",
+      "reverse": true,
+      "text": "While working or studying, I can build trust gradually in relationships that are genuinely safe."
+    },
+    {
+      "id": "PTSD-455",
+      "category": "relationships",
+      "reverse": false,
+      "text": "When trying to rest, I struggle to feel safe enough for openness or connection."
+    },
+    {
+      "id": "PTSD-456",
+      "category": "relationships",
+      "reverse": true,
+      "text": "In close relationships, trauma-related fear does not consistently prevent closeness."
+    },
+    {
+      "id": "PTSD-457",
+      "category": "relationships",
+      "reverse": false,
+      "text": "When my body feels activated, trauma-related fear or mistrust makes close relationships difficult."
+    },
+    {
+      "id": "PTSD-458",
+      "category": "relationships",
+      "reverse": true,
+      "text": "During a relatively calm day, I can build trust gradually in relationships that are genuinely safe."
+    },
+    {
+      "id": "PTSD-459",
+      "category": "relationships",
+      "reverse": false,
+      "text": "When thinking about the future, I struggle to feel safe enough for openness or connection."
+    },
+    {
+      "id": "PTSD-460",
+      "category": "relationships",
+      "reverse": true,
+      "text": "Across different parts of my life, trauma-related fear does not consistently prevent closeness."
+    },
+    {
+      "id": "PTSD-461",
+      "category": "trigger_spread",
+      "reverse": false,
+      "text": "During the past several weeks, more and more ordinary situations have started to feel connected with danger."
+    },
+    {
+      "id": "PTSD-462",
+      "category": "trigger_spread",
+      "reverse": true,
+      "text": "In everyday life, my sense of danger remains limited to clearly relevant situations."
+    },
+    {
+      "id": "PTSD-463",
+      "category": "trigger_spread",
+      "reverse": false,
+      "text": "When something reminds me of the event, my alarm response spreads to cues that are only loosely related to the trauma."
+    },
+    {
+      "id": "PTSD-464",
+      "category": "trigger_spread",
+      "reverse": true,
+      "text": "In situations that are objectively safe, neutral situations rarely become trauma reminders for me."
+    },
+    {
+      "id": "PTSD-465",
+      "category": "trigger_spread",
+      "reverse": false,
+      "text": "While trying to complete ordinary tasks, more and more ordinary situations have started to feel connected with danger."
+    },
+    {
+      "id": "PTSD-466",
+      "category": "trigger_spread",
+      "reverse": true,
+      "text": "Around people I know, my sense of danger remains limited to clearly relevant situations."
+    },
+    {
+      "id": "PTSD-467",
+      "category": "trigger_spread",
+      "reverse": false,
+      "text": "When I am alone, my alarm response spreads to cues that are only loosely related to the trauma."
+    },
+    {
+      "id": "PTSD-468",
+      "category": "trigger_spread",
+      "reverse": true,
+      "text": "At night, neutral situations rarely become trauma reminders for me."
+    },
+    {
+      "id": "PTSD-469",
+      "category": "trigger_spread",
+      "reverse": false,
+      "text": "During conversations, more and more ordinary situations have started to feel connected with danger."
+    },
+    {
+      "id": "PTSD-470",
+      "category": "trigger_spread",
+      "reverse": true,
+      "text": "When plans unexpectedly change, my sense of danger remains limited to clearly relevant situations."
+    },
+    {
+      "id": "PTSD-471",
+      "category": "trigger_spread",
+      "reverse": false,
+      "text": "In public places, my alarm response spreads to cues that are only loosely related to the trauma."
+    },
+    {
+      "id": "PTSD-472",
+      "category": "trigger_spread",
+      "reverse": true,
+      "text": "When I feel under pressure, neutral situations rarely become trauma reminders for me."
+    },
+    {
+      "id": "PTSD-473",
+      "category": "trigger_spread",
+      "reverse": false,
+      "text": "After encountering a reminder, more and more ordinary situations have started to feel connected with danger."
+    },
+    {
+      "id": "PTSD-474",
+      "category": "trigger_spread",
+      "reverse": true,
+      "text": "While working or studying, my sense of danger remains limited to clearly relevant situations."
+    },
+    {
+      "id": "PTSD-475",
+      "category": "trigger_spread",
+      "reverse": false,
+      "text": "When trying to rest, my alarm response spreads to cues that are only loosely related to the trauma."
+    },
+    {
+      "id": "PTSD-476",
+      "category": "trigger_spread",
+      "reverse": true,
+      "text": "In close relationships, neutral situations rarely become trauma reminders for me."
+    },
+    {
+      "id": "PTSD-477",
+      "category": "trigger_spread",
+      "reverse": false,
+      "text": "When my body feels activated, more and more ordinary situations have started to feel connected with danger."
+    },
+    {
+      "id": "PTSD-478",
+      "category": "trigger_spread",
+      "reverse": true,
+      "text": "During a relatively calm day, my sense of danger remains limited to clearly relevant situations."
+    },
+    {
+      "id": "PTSD-479",
+      "category": "trigger_spread",
+      "reverse": false,
+      "text": "When thinking about the future, my alarm response spreads to cues that are only loosely related to the trauma."
+    },
+    {
+      "id": "PTSD-480",
+      "category": "trigger_spread",
+      "reverse": true,
+      "text": "Across different parts of my life, neutral situations rarely become trauma reminders for me."
+    },
+    {
+      "id": "PTSD-481",
+      "category": "persistence_recovery",
+      "reverse": false,
+      "text": "During the past several weeks, trauma-related reactions persist instead of settling with time."
+    },
+    {
+      "id": "PTSD-482",
+      "category": "persistence_recovery",
+      "reverse": true,
+      "text": "In everyday life, trauma-related reactions have gradually become less frequent or intense."
+    },
+    {
+      "id": "PTSD-483",
+      "category": "persistence_recovery",
+      "reverse": false,
+      "text": "When something reminds me of the event, periods of improvement are often interrupted by returning symptoms."
+    },
+    {
+      "id": "PTSD-484",
+      "category": "persistence_recovery",
+      "reverse": true,
+      "text": "In situations that are objectively safe, improvement has generally continued without major symptom return."
+    },
+    {
+      "id": "PTSD-485",
+      "category": "persistence_recovery",
+      "reverse": false,
+      "text": "While trying to complete ordinary tasks, trauma-related reactions persist instead of settling with time."
+    },
+    {
+      "id": "PTSD-486",
+      "category": "persistence_recovery",
+      "reverse": true,
+      "text": "Around people I know, trauma-related reactions have gradually become less frequent or intense."
+    },
+    {
+      "id": "PTSD-487",
+      "category": "persistence_recovery",
+      "reverse": false,
+      "text": "When I am alone, periods of improvement are often interrupted by returning symptoms."
+    },
+    {
+      "id": "PTSD-488",
+      "category": "persistence_recovery",
+      "reverse": true,
+      "text": "At night, improvement has generally continued without major symptom return."
+    },
+    {
+      "id": "PTSD-489",
+      "category": "persistence_recovery",
+      "reverse": false,
+      "text": "During conversations, trauma-related reactions persist instead of settling with time."
+    },
+    {
+      "id": "PTSD-490",
+      "category": "persistence_recovery",
+      "reverse": true,
+      "text": "When plans unexpectedly change, trauma-related reactions have gradually become less frequent or intense."
+    },
+    {
+      "id": "PTSD-491",
+      "category": "persistence_recovery",
+      "reverse": false,
+      "text": "In public places, periods of improvement are often interrupted by returning symptoms."
+    },
+    {
+      "id": "PTSD-492",
+      "category": "persistence_recovery",
+      "reverse": true,
+      "text": "When I feel under pressure, improvement has generally continued without major symptom return."
+    },
+    {
+      "id": "PTSD-493",
+      "category": "persistence_recovery",
+      "reverse": false,
+      "text": "After encountering a reminder, trauma-related reactions persist instead of settling with time."
+    },
+    {
+      "id": "PTSD-494",
+      "category": "persistence_recovery",
+      "reverse": true,
+      "text": "While working or studying, trauma-related reactions have gradually become less frequent or intense."
+    },
+    {
+      "id": "PTSD-495",
+      "category": "persistence_recovery",
+      "reverse": false,
+      "text": "When trying to rest, periods of improvement are often interrupted by returning symptoms."
+    },
+    {
+      "id": "PTSD-496",
+      "category": "persistence_recovery",
+      "reverse": true,
+      "text": "In close relationships, improvement has generally continued without major symptom return."
+    },
+    {
+      "id": "PTSD-497",
+      "category": "persistence_recovery",
+      "reverse": false,
+      "text": "When my body feels activated, trauma-related reactions persist instead of settling with time."
+    },
+    {
+      "id": "PTSD-498",
+      "category": "persistence_recovery",
+      "reverse": true,
+      "text": "During a relatively calm day, trauma-related reactions have gradually become less frequent or intense."
+    },
+    {
+      "id": "PTSD-499",
+      "category": "persistence_recovery",
+      "reverse": false,
+      "text": "When thinking about the future, periods of improvement are often interrupted by returning symptoms."
+    },
+    {
+      "id": "PTSD-500",
+      "category": "persistence_recovery",
+      "reverse": true,
+      "text": "Across different parts of my life, improvement has generally continued without major symptom return."
+    }
+  ]
+}
