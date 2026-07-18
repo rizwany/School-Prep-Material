@@ -456,6 +456,7 @@ function showResults() {
 
   const { overall, catAverages } = computeScores();
   const level = levelFor(overall);
+  if (window.LP) window.LP.recordTestResult({ topicId: 'eq_test', testName: 'Emotional Intelligence Test', score: overall, maxScore: 10, percentage: (overall - 1) / 9 * 100, label: level.label });
 
   document.getElementById('resEmoji').textContent = level.emoji;
   document.getElementById('resLevel').textContent = level.label;
@@ -491,6 +492,7 @@ function copyLink() {
 }
 </script>
 
+<script src="../assets/user-results.js"></script>
 <script src="../assets/shared-nav.js"></script>
 </body>
 </html>

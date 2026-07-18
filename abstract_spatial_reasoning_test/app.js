@@ -44,7 +44,9 @@ $('.quit').addEventListener('click',reset);
 function showResults(){
   $('.quiz').classList.add('hidden');$('.results').classList.remove('hidden');const pct=Math.round(score/quiz.length*100);
   $('.score-ring').style.setProperty('--score',`${pct*3.6}deg`);$('.score-ring strong').textContent=`${pct}%`;$('.score-ring span').textContent=`${score} / ${quiz.length}`;
-  $('.result-copy').textContent=pct>=85?config.excellent:pct>=65?config.good:pct>=45?config.growing:config.practice;
+  const level={label:pct>=85?'Excellent':pct>=65?'Good':pct>=45?'Growing':'Practice',desc:pct>=85?config.excellent:pct>=65?config.good:pct>=45?config.growing:config.practice};
+  if(window.LP)window.LP.recordTestResult({topicId:config.topicId,testName:config.testName,score,maxScore:quiz.length,percentage:pct,label:level.label});
+  $('.result-copy').textContent=level.desc;
   $('.breakdown').innerHTML=Object.entries(stats).sort((a,b)=>b[1].total-a[1].total).map(([id,s])=>{const c=meta.categories.find(x=>x.id===id),p=Math.round(s.right/s.total*100);return `<div class="break-row"><span>${c.icon} ${c.label}</span><div class="mini-track"><div class="mini-fill" style="width:${p}%"></div></div><span>${s.right}/${s.total}</span></div>`}).join('');
   window.scrollTo({top:0,behavior:'smooth'});
 }

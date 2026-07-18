@@ -189,8 +189,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <div class="auth-card">
     <a class="auth-logo" href="../index.html">
-      <img src="../logo.png" alt="LearnPad" onerror="this.style.display='none'" />
-      <span>LearnPad</span>
+      <img src="../logo.png" alt="LearnPad" />
     </a>
     <h1>Welcome back</h1>
     <p class="subtitle">Log in to your account</p>
@@ -234,8 +233,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       messageEl.className = type;
     }
 
+    function syncUsername(name) {
+      if (!name) return;
+      try {
+        localStorage.setItem('lp_username', name);
+        localStorage.setItem('ws_username', name);
+      } catch (e) {}
+    }
+
     auth.onAuthStateChanged(function (user) {
       if (user) {
+        syncUsername(user.displayName);
         window.location.href = '../index.html';
       }
     });

@@ -446,6 +446,7 @@ function showResults() {
   const top = catAverages[0];
   const second = catAverages[1];
   const topCat = CAT_MAP[top.id];
+  if (window.LP) window.LP.recordTestResult({ topicId: 'personal_values_test', testName: 'Personal Values Test', score: top.avg, maxScore: 10, percentage: (top.avg - 1) / 9 * 100, label: topCat.label });
 
   document.getElementById('resEmoji').textContent = topCat.icon;
   document.getElementById('resLevel').textContent = topCat.label;
@@ -487,6 +488,7 @@ function copyLink() {
 }
 </script>
 
+<script src="../assets/user-results.js"></script>
 <script src="../assets/shared-nav.js"></script>
 </body>
 </html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="description" content="View your LearnPad test history and topic summaries." />
+  <title>My Results | LearnPad</title>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --accent: #4361EE;
+      --ink: #1a1f36;
+      --muted: #5a6076;
+      --bg: #f4f6fb;
+      --card: #ffffff;
+      --border: #e2e6f0;
+      --radius: 12px;
+      --error: #dc2626;
+      --success: #059669;
+    }
+    body { font-family: 'Nunito', sans-serif; background: var(--bg); color: var(--ink); min-height: 100vh; }
+    .container { max-width: 1000px; margin: 0 auto; padding: 32px 24px 60px; }
+    h1 { font-size: 1.5rem; font-weight: 900; margin-bottom: 4px; }
+    .subtitle { color: var(--muted); font-weight: 600; font-size: 0.92rem; margin-bottom: 28px; }
+
+    #loadingState, #emptyState { text-align: center; padding: 60px 20px; color: var(--muted); font-weight: 700; }
+    #emptyState a { color: var(--accent); font-weight: 800; text-decoration: none; }
+    #emptyState a:hover { text-decoration: underline; }
+    #emptyState { display: none; }
+
+    h2.section-title { font-size: 1.05rem; font-weight: 800; margin: 32px 0 14px; }
+
+    .summary-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; }
+    .summary-card {
+      background: var(--card); border: 2px solid var(--border); border-radius: var(--radius);
+      padding: 18px 20px;
+    }
+    .summary-card h3 { font-size: 0.98rem; font-weight: 800; margin-bottom: 12px; }
+    .summary-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 14px; margin-bottom: 10px; }
+    .stat-label { font-size: 0.68rem; font-weight: 800; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+    .stat-value { font-size: 1.1rem; font-weight: 900; color: var(--accent); }
+    .trend { font-size: 0.8rem; font-weight: 700; }
+    .trend.up { color: var(--success); }
+    .trend.down { color: var(--error); }
+    .trend.flat { color: var(--muted); }
+    .summary-meta { font-size: 0.76rem; color: var(--muted); font-weight: 600; margin-top: 8px; border-top: 1px solid var(--border); padding-top: 8px; }
+
+    table.attempts-table { width: 100%; border-collapse: collapse; background: var(--card); border: 2px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+    table.attempts-table th, table.attempts-table td { text-align: left; padding: 10px 16px; font-size: 0.86rem; }
+    table.attempts-table th { background: #f8f9fc; font-weight: 800; color: var(--muted); font-size: 0.72rem; text-transform: uppercase; letter-spacing: .04em; }
+    table.attempts-table tr:not(:last-child) td { border-bottom: 1px solid var(--border); }
+    table.attempts-table td.score-cell { font-weight: 800; color: var(--accent); }
+    .table-wrap { overflow-x: auto; }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <div class="container">
+    <h1>My Results</h1>
+    <p class="subtitle">Your test history and progress by topic</p>
+
+    <div id="loadingState">Loading your results…</div>
+
+    <div id="emptyState">
+      You haven't completed any tests yet. <a href="../index.html">Browse tests →</a>
+    </div>
+
+    <div id="resultsContent" style="display:none">
+      <h2 class="section-title">Topic Summaries</h2>
+      <div class="summary-grid" id="summaryGrid"></div>
+
+      <h2 class="section-title">Recent Attempts</h2>
+      <div class="table-wrap">
+        <table class="attempts-table">
+          <thead>
+            <tr><th>Test</th><th>Score</th><th>Date</th></tr>
+          </thead>
+          <tbody id="attemptsBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="../assets/shared-nav.js"></script>
+  <script src="../assets/user-results.js"></script>
+  <script>
+    function formatDate(ts) {
+      if (!ts || !ts.toDate) return '—';
+      return ts.toDate().toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
+    }
+
+    function trendInfo(t) {
+      if (t > 0.5) return { cls: 'up', label: '▲ Improving' };
+      if (t < -0.5) return { cls: 'down', label: '▼ Declining' };
+      return { cls: 'flat', label: '● Steady' };
+    }
+
+    function renderSummaries(docs) {
+      var grid = document.getElementById('summaryGrid');
+      grid.innerHTML = docs.map(function (d) {
+        var s = d.data();
+        var trend = trendInfo(s.improvementTrend || 0);
+        return (
+          '<div class="summary-card">' +
+            '<h3>' + s.testName + '</h3>' +
+            '<div class="summary-stats">' +
+              '<div><div class="stat-label">Best</div><div class="stat-value">' + Math.round(s.bestScore) + '%</div></div>' +
+              '<div><div class="stat-label">Average</div><div class="stat-value">' + Math.round(s.avgScore) + '%</div></div>' +
+              '<div><div class="stat-label">Latest</div><div class="stat-value">' + Math.round(s.latestScore) + '%</div></div>' +
+              '<div><div class="stat-label">Attempts</div><div class="stat-value">' + s.attemptsCount + '</div></div>' +
+            '</div>' +
+            '<div class="trend ' + trend.cls + '">' + trend.label + '</div>' +
+            '<div class="summary-meta">Last attempt: ' + formatDate(s.lastAttemptedAt) + '</div>' +
+          '</div>'
+        );
+      }).join('');
+    }
+
+    function renderAttempts(docs) {
+      var body = document.getElementById('attemptsBody');
+      body.innerHTML = docs.map(function (d) {
+        var a = d.data();
+        return (
+          '<tr>' +
+            '<td>' + a.testName + '</td>' +
+            '<td class="score-cell">' + a.score + (a.maxScore ? ' / ' + a.maxScore : '') + '</td>' +
+            '<td>' + formatDate(a.takenAt) + '</td>' +
+          '</tr>'
+        );
+      }).join('');
+    }
+
+    function loadResults(uid) {
+      var db = firebase.firestore();
+      var userRef = db.collection('users').doc(uid);
+
+      Promise.all([
+        userRef.collection('topicSummaries').orderBy('lastAttemptedAt', 'desc').get(),
+        userRef.collection('attempts').orderBy('takenAt', 'desc').limit(50).get()
+      ]).then(function (results) {
+        var summaries = results[0];
+        var attempts = results[1];
+        document.getElementById('loadingState').style.display = 'none';
+
+        if (summaries.empty && attempts.empty) {
+          document.getElementById('emptyState').style.display = 'block';
+          return;
+        }
+
+        renderSummaries(summaries.docs);
+        renderAttempts(attempts.docs);
+        document.getElementById('resultsContent').style.display = 'block';
+      }).catch(function (err) {
+        console.error('LearnPad: failed to load results', err);
+        document.getElementById('loadingState').textContent = 'Could not load your results. Please try again later.';
+      });
+    }
+
+    function start() {
+      (window.LP.firebaseReady || Promise.resolve()).then(function () {
+        firebase.auth().onAuthStateChanged(function (user) {
+          if (!user) {
+            window.location.href = 'login.html';
+            return;
+          }
+          window.LP.ensureFirestore().then(function () {
+            loadResults(user.uid);
+          });
+        });
+      });
+    }
+
+    /* shared-nav.js sets window.LP.firebaseReady inside its own
+       DOMContentLoaded handler, which runs before this one since it's
+       registered first (its <script> tag comes first in the document). */
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', start);
+    } else {
+      start();
+    }
+  </script>
+</body>
+</html>

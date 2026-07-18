@@ -75,6 +75,17 @@
     ".lp-username-btn.has-name{background:#f0fdf4;color:#059669;border-color:transparent;}",
     ".lp-username-btn.has-name:hover{background:#dcfce7;border-color:#059669;}",
 
+    /* ─ login / logout button ─ */
+    ".lp-auth-btn{",
+    "  display:flex;align-items:center;gap:4px;flex-shrink:0;",
+    "  background:#fff;border:2px solid #e2e6f0;",
+    "  color:#5a6076;font-weight:800;font-size:0.82rem;",
+    "  padding:5px 12px;border-radius:20px;",
+    "  cursor:pointer;font-family:'Nunito',sans-serif;text-decoration:none;",
+    "  transition:background .15s,border-color .15s,color .15s;white-space:nowrap;",
+    "}",
+    ".lp-auth-btn:hover{border-color:#4361EE;color:#4361EE;background:#eef1fd;}",
+
     /* ─ username popup ─ */
     "#lp-username-popup{",
     "  display:none;position:fixed;",
@@ -145,6 +156,7 @@
     "  .lp-nav-link{width:100%;padding:10px 12px;font-size:0.9rem;}",
     "  .lp-nav-badge{display:none;}",
     "  .lp-username-btn{font-size:0.75rem;padding:4px 10px;max-width:110px;}",
+    "  .lp-auth-btn{font-size:0.75rem;padding:4px 10px;}",
     "  #lp-username-popup{right:12px;width:220px;}",
     "}",
 
@@ -226,6 +238,8 @@
         '<button class="lp-username-btn" id="lpUsernameBtn" aria-label="Set your name" aria-haspopup="true" aria-expanded="false">',
           '<span id="lpUsernameBtnText">👤 Set Name</span>',
         '</button>',
+        '<a class="lp-auth-btn" id="lpResultsBtn" href="' + root + 'auth/my-results.html" style="display:none">📊 My Results</a>',
+        '<a class="lp-auth-btn" id="lpAuthBtn" href="' + root + 'auth/login.html">🔑 Login</a>',
         '<button class="lp-burger" id="lpBurger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="lpNavLinks">',
           '<span></span><span></span><span></span>',
         '</button>',
@@ -394,6 +408,87 @@
         closePopup();
       }
     });
+
+    /* ── Firebase session (login/logout) ───────────────────────────
+       Loads the Firebase SDK on every page (unless already loaded, e.g.
+       on the auth pages themselves) and mirrors the signed-in user's
+       name into lp_username/ws_username so lpUsernameBtn shows it
+       site-wide, matching whatever was pulled from the register/login
+       forms. ────────────────────────────────────────────────────── */
+    var authBtn = document.getElementById('lpAuthBtn');
+    var resultsBtn = document.getElementById('lpResultsBtn');
+    window.LP = window.LP || {};
+
+    function setAuthMode(mode) {
+      if (resultsBtn) resultsBtn.style.display = mode === 'logout' ? 'flex' : 'none';
+      if (!authBtn) return;
+      if (mode === 'logout') {
+        authBtn.textContent = '🚪 Logout';
+        authBtn.href = '#';
+        authBtn.dataset.mode = 'logout';
+      } else {
+        authBtn.textContent = '🔑 Login';
+        authBtn.href = root + 'auth/login.html';
+        authBtn.dataset.mode = 'login';
+      }
+    }
+
+    function bindAuthState() {
+      if (!window.firebase || !firebase.auth) return;
+      firebase.auth().onAuthStateChanged(function (user) {
+        if (user) {
+          storeName(user.displayName || (user.email ? user.email.split('@')[0] : 'Member'));
+          refreshBtn();
+          setAuthMode('logout');
+        } else {
+          setAuthMode('login');
+        }
+      });
+    }
+
+    function loadScript(src) {
+      return new Promise(function (resolve, reject) {
+        var s = document.createElement('script');
+        s.src = src;
+        s.onload = resolve;
+        s.onerror = reject;
+        document.head.appendChild(s);
+      });
+    }
+
+    function initFirebaseAuth() {
+      var ready;
+      if (window.firebase && firebase.apps && firebase.apps.length) {
+        ready = Promise.resolve();
+      } else {
+        ready = loadScript('https://www.gstatic.com/firebasejs/10.13.0/firebase-app-compat.js')
+          .then(function () { return loadScript('https://www.gstatic.com/firebasejs/10.13.0/firebase-auth-compat.js'); })
+          .then(function () { return loadScript(root + 'auth/firebase-config.js'); });
+      }
+      window.LP.firebaseReady = ready.catch(function (err) {
+        console.error('LearnPad: Firebase failed to load', err);
+        throw err;
+      });
+      window.LP.firebaseReady.then(bindAuthState).catch(function () {});
+    }
+
+    if (authBtn) {
+      authBtn.addEventListener('click', function (e) {
+        if (authBtn.dataset.mode === 'logout') {
+          e.preventDefault();
+          firebase.auth().signOut().then(function () {
+            try {
+              localStorage.removeItem('lp_username');
+              localStorage.removeItem('ws_username');
+            } catch (err) {}
+            refreshBtn();
+            setAuthMode('login');
+          });
+        }
+      });
+    }
+
+    initFirebaseAuth();
 
     /* ── Auto-bypass Urdu worksheet name modal (nameModal pattern) ─
        Grade 3-9 Urdu worksheets show #nameModal by default and call
