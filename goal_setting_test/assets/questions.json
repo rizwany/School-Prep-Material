@@ -1,0 +1,3160 @@
+{
+  "meta": {
+    "title": "Goal-Setting Test",
+    "description": "A 500-question reflection across 20 dimensions of effective goal-setting.",
+    "scale": {
+      "min": 1,
+      "max": 10,
+      "minLabel": "Not at all likely",
+      "maxLabel": "Extremely likely"
+    },
+    "categories": [
+      {
+        "id": "clarity",
+        "label": "Goal Clarity",
+        "icon": "🎯"
+      },
+      {
+        "id": "specificity",
+        "label": "Specificity",
+        "icon": "🔎"
+      },
+      {
+        "id": "meaning",
+        "label": "Purpose & Meaning",
+        "icon": "💡"
+      },
+      {
+        "id": "values",
+        "label": "Values Alignment",
+        "icon": "🧭"
+      },
+      {
+        "id": "priorities",
+        "label": "Prioritisation",
+        "icon": "📌"
+      },
+      {
+        "id": "challenge",
+        "label": "Appropriate Challenge",
+        "icon": "🏔️"
+      },
+      {
+        "id": "realism",
+        "label": "Realism & Feasibility",
+        "icon": "⚖️"
+      },
+      {
+        "id": "deadlines",
+        "label": "Time Frames & Deadlines",
+        "icon": "⏰"
+      },
+      {
+        "id": "milestones",
+        "label": "Milestones",
+        "icon": "🪜"
+      },
+      {
+        "id": "action_plan",
+        "label": "Action Planning",
+        "icon": "📝"
+      },
+      {
+        "id": "resources",
+        "label": "Resource Planning",
+        "icon": "🧰"
+      },
+      {
+        "id": "obstacles",
+        "label": "Obstacle Planning",
+        "icon": "🚧"
+      },
+      {
+        "id": "tracking",
+        "label": "Progress Tracking",
+        "icon": "📊"
+      },
+      {
+        "id": "consistency",
+        "label": "Consistency & Habits",
+        "icon": "🔁"
+      },
+      {
+        "id": "adaptability",
+        "label": "Adaptability",
+        "icon": "🧩"
+      },
+      {
+        "id": "feedback",
+        "label": "Feedback & Guidance",
+        "icon": "💬"
+      },
+      {
+        "id": "accountability",
+        "label": "Accountability",
+        "icon": "🤝"
+      },
+      {
+        "id": "motivation",
+        "label": "Motivation Management",
+        "icon": "🔥"
+      },
+      {
+        "id": "self_efficacy",
+        "label": "Self-Efficacy",
+        "icon": "💪"
+      },
+      {
+        "id": "reflection",
+        "label": "Reflection & Learning",
+        "icon": "🌱"
+      }
+    ],
+    "levels": [
+      {
+        "min": 9,
+        "max": 10.01,
+        "label": "Strategic Goal-Setter",
+        "emoji": "🏆",
+        "desc": "You consistently translate meaningful aims into clear, realistic, trackable action and learn from progress."
+      },
+      {
+        "min": 7.5,
+        "max": 9,
+        "label": "Purposeful Planner",
+        "emoji": "🌟",
+        "desc": "Your goal-setting habits are strong across most areas, with a few dimensions that could become more deliberate."
+      },
+      {
+        "min": 6,
+        "max": 7.5,
+        "label": "Developing Strategist",
+        "emoji": "🧭",
+        "desc": "You use several effective goal-setting practices, though planning or follow-through may vary by situation."
+      },
+      {
+        "min": 4.5,
+        "max": 6,
+        "label": "Emerging Planner",
+        "emoji": "🌱",
+        "desc": "Your intentions are present, but clearer structure, tracking, and obstacle planning could improve follow-through."
+      },
+      {
+        "min": 3,
+        "max": 4.5,
+        "label": "Inconsistent Goal Process",
+        "emoji": "🔧",
+        "desc": "Goals may often remain vague, unplanned, or difficult to sustain. Focus on one or two foundational habits first."
+      },
+      {
+        "min": 1,
+        "max": 3,
+        "label": "Goal Foundations Needed",
+        "emoji": "📘",
+        "desc": "Your current approach may rely more on wishes than a repeatable process. Small, specific next steps are a useful starting point."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "category": "clarity",
+      "reverse": false,
+      "text": "When choosing a new personal goal, how likely are you to state clearly what you want to achieve?"
+    },
+    {
+      "id": 2,
+      "category": "clarity",
+      "reverse": true,
+      "text": "When planning a school or work project, how likely are you to leave the desired result vague?"
+    },
+    {
+      "id": 3,
+      "category": "clarity",
+      "reverse": false,
+      "text": "At the beginning of a new month, how likely are you to describe the desired end result in plain language?"
+    },
+    {
+      "id": 4,
+      "category": "clarity",
+      "reverse": true,
+      "text": "When a goal initially feels exciting, how likely are you to begin without deciding what success should look like?"
+    },
+    {
+      "id": 5,
+      "category": "clarity",
+      "reverse": false,
+      "text": "After deciding that something should change, how likely are you to state clearly what you want to achieve?"
+    },
+    {
+      "id": 6,
+      "category": "clarity",
+      "reverse": true,
+      "text": "When several goals compete for attention, how likely are you to leave the desired result vague?"
+    },
+    {
+      "id": 7,
+      "category": "clarity",
+      "reverse": false,
+      "text": "Before committing significant time, how likely are you to describe the desired end result in plain language?"
+    },
+    {
+      "id": 8,
+      "category": "clarity",
+      "reverse": true,
+      "text": "When progress has been slow, how likely are you to begin without deciding what success should look like?"
+    },
+    {
+      "id": 9,
+      "category": "clarity",
+      "reverse": false,
+      "text": "After missing an intended step, how likely are you to state clearly what you want to achieve?"
+    },
+    {
+      "id": 10,
+      "category": "clarity",
+      "reverse": true,
+      "text": "When the goal becomes difficult, how likely are you to leave the desired result vague?"
+    },
+    {
+      "id": 11,
+      "category": "clarity",
+      "reverse": false,
+      "text": "While balancing other responsibilities, how likely are you to describe the desired end result in plain language?"
+    },
+    {
+      "id": 12,
+      "category": "clarity",
+      "reverse": true,
+      "text": "When asking another person for help, how likely are you to begin without deciding what success should look like?"
+    },
+    {
+      "id": 13,
+      "category": "clarity",
+      "reverse": false,
+      "text": "During a weekly review, how likely are you to state clearly what you want to achieve?"
+    },
+    {
+      "id": 14,
+      "category": "clarity",
+      "reverse": true,
+      "text": "When motivation begins to drop, how likely are you to leave the desired result vague?"
+    },
+    {
+      "id": 15,
+      "category": "clarity",
+      "reverse": false,
+      "text": "After receiving unexpected feedback, how likely are you to describe the desired end result in plain language?"
+    },
+    {
+      "id": 16,
+      "category": "clarity",
+      "reverse": true,
+      "text": "When circumstances change, how likely are you to begin without deciding what success should look like?"
+    },
+    {
+      "id": 17,
+      "category": "clarity",
+      "reverse": false,
+      "text": "Before starting the next task, how likely are you to state clearly what you want to achieve?"
+    },
+    {
+      "id": 18,
+      "category": "clarity",
+      "reverse": true,
+      "text": "When a deadline is approaching, how likely are you to leave the desired result vague?"
+    },
+    {
+      "id": 19,
+      "category": "clarity",
+      "reverse": false,
+      "text": "After completing a milestone, how likely are you to describe the desired end result in plain language?"
+    },
+    {
+      "id": 20,
+      "category": "clarity",
+      "reverse": true,
+      "text": "When an obstacle appears, how likely are you to begin without deciding what success should look like?"
+    },
+    {
+      "id": 21,
+      "category": "clarity",
+      "reverse": false,
+      "text": "While checking your calendar, how likely are you to state clearly what you want to achieve?"
+    },
+    {
+      "id": 22,
+      "category": "clarity",
+      "reverse": true,
+      "text": "When deciding whether to continue, how likely are you to leave the desired result vague?"
+    },
+    {
+      "id": 23,
+      "category": "clarity",
+      "reverse": false,
+      "text": "After comparing plans with reality, how likely are you to describe the desired end result in plain language?"
+    },
+    {
+      "id": 24,
+      "category": "clarity",
+      "reverse": true,
+      "text": "When preparing for a fresh attempt, how likely are you to begin without deciding what success should look like?"
+    },
+    {
+      "id": 25,
+      "category": "clarity",
+      "reverse": false,
+      "text": "At the end of a goal cycle, how likely are you to state clearly what you want to achieve?"
+    },
+    {
+      "id": 26,
+      "category": "specificity",
+      "reverse": false,
+      "text": "When choosing a new personal goal, how likely are you to turn a broad intention into a specific target?"
+    },
+    {
+      "id": 27,
+      "category": "specificity",
+      "reverse": true,
+      "text": "When planning a school or work project, how likely are you to keep the goal so broad that many outcomes could count?"
+    },
+    {
+      "id": 28,
+      "category": "specificity",
+      "reverse": false,
+      "text": "At the beginning of a new month, how likely are you to identify the exact behaviour or result you will pursue?"
+    },
+    {
+      "id": 29,
+      "category": "specificity",
+      "reverse": true,
+      "text": "When a goal initially feels exciting, how likely are you to avoid defining the specific change you intend to make?"
+    },
+    {
+      "id": 30,
+      "category": "specificity",
+      "reverse": false,
+      "text": "After deciding that something should change, how likely are you to turn a broad intention into a specific target?"
+    },
+    {
+      "id": 31,
+      "category": "specificity",
+      "reverse": true,
+      "text": "When several goals compete for attention, how likely are you to keep the goal so broad that many outcomes could count?"
+    },
+    {
+      "id": 32,
+      "category": "specificity",
+      "reverse": false,
+      "text": "Before committing significant time, how likely are you to identify the exact behaviour or result you will pursue?"
+    },
+    {
+      "id": 33,
+      "category": "specificity",
+      "reverse": true,
+      "text": "When progress has been slow, how likely are you to avoid defining the specific change you intend to make?"
+    },
+    {
+      "id": 34,
+      "category": "specificity",
+      "reverse": false,
+      "text": "After missing an intended step, how likely are you to turn a broad intention into a specific target?"
+    },
+    {
+      "id": 35,
+      "category": "specificity",
+      "reverse": true,
+      "text": "When the goal becomes difficult, how likely are you to keep the goal so broad that many outcomes could count?"
+    },
+    {
+      "id": 36,
+      "category": "specificity",
+      "reverse": false,
+      "text": "While balancing other responsibilities, how likely are you to identify the exact behaviour or result you will pursue?"
+    },
+    {
+      "id": 37,
+      "category": "specificity",
+      "reverse": true,
+      "text": "When asking another person for help, how likely are you to avoid defining the specific change you intend to make?"
+    },
+    {
+      "id": 38,
+      "category": "specificity",
+      "reverse": false,
+      "text": "During a weekly review, how likely are you to turn a broad intention into a specific target?"
+    },
+    {
+      "id": 39,
+      "category": "specificity",
+      "reverse": true,
+      "text": "When motivation begins to drop, how likely are you to keep the goal so broad that many outcomes could count?"
+    },
+    {
+      "id": 40,
+      "category": "specificity",
+      "reverse": false,
+      "text": "After receiving unexpected feedback, how likely are you to identify the exact behaviour or result you will pursue?"
+    },
+    {
+      "id": 41,
+      "category": "specificity",
+      "reverse": true,
+      "text": "When circumstances change, how likely are you to avoid defining the specific change you intend to make?"
+    },
+    {
+      "id": 42,
+      "category": "specificity",
+      "reverse": false,
+      "text": "Before starting the next task, how likely are you to turn a broad intention into a specific target?"
+    },
+    {
+      "id": 43,
+      "category": "specificity",
+      "reverse": true,
+      "text": "When a deadline is approaching, how likely are you to keep the goal so broad that many outcomes could count?"
+    },
+    {
+      "id": 44,
+      "category": "specificity",
+      "reverse": false,
+      "text": "After completing a milestone, how likely are you to identify the exact behaviour or result you will pursue?"
+    },
+    {
+      "id": 45,
+      "category": "specificity",
+      "reverse": true,
+      "text": "When an obstacle appears, how likely are you to avoid defining the specific change you intend to make?"
+    },
+    {
+      "id": 46,
+      "category": "specificity",
+      "reverse": false,
+      "text": "While checking your calendar, how likely are you to turn a broad intention into a specific target?"
+    },
+    {
+      "id": 47,
+      "category": "specificity",
+      "reverse": true,
+      "text": "When deciding whether to continue, how likely are you to keep the goal so broad that many outcomes could count?"
+    },
+    {
+      "id": 48,
+      "category": "specificity",
+      "reverse": false,
+      "text": "After comparing plans with reality, how likely are you to identify the exact behaviour or result you will pursue?"
+    },
+    {
+      "id": 49,
+      "category": "specificity",
+      "reverse": true,
+      "text": "When preparing for a fresh attempt, how likely are you to avoid defining the specific change you intend to make?"
+    },
+    {
+      "id": 50,
+      "category": "specificity",
+      "reverse": false,
+      "text": "At the end of a goal cycle, how likely are you to turn a broad intention into a specific target?"
+    },
+    {
+      "id": 51,
+      "category": "meaning",
+      "reverse": false,
+      "text": "When choosing a new personal goal, how likely are you to connect the goal with a personally meaningful reason?"
+    },
+    {
+      "id": 52,
+      "category": "meaning",
+      "reverse": true,
+      "text": "When planning a school or work project, how likely are you to pursue the goal without considering why it matters?"
+    },
+    {
+      "id": 53,
+      "category": "meaning",
+      "reverse": false,
+      "text": "At the beginning of a new month, how likely are you to explain why reaching this goal matters to you?"
+    },
+    {
+      "id": 54,
+      "category": "meaning",
+      "reverse": true,
+      "text": "When a goal initially feels exciting, how likely are you to choose a target mainly because other people expect it?"
+    },
+    {
+      "id": 55,
+      "category": "meaning",
+      "reverse": false,
+      "text": "After deciding that something should change, how likely are you to connect the goal with a personally meaningful reason?"
+    },
+    {
+      "id": 56,
+      "category": "meaning",
+      "reverse": true,
+      "text": "When several goals compete for attention, how likely are you to pursue the goal without considering why it matters?"
+    },
+    {
+      "id": 57,
+      "category": "meaning",
+      "reverse": false,
+      "text": "Before committing significant time, how likely are you to explain why reaching this goal matters to you?"
+    },
+    {
+      "id": 58,
+      "category": "meaning",
+      "reverse": true,
+      "text": "When progress has been slow, how likely are you to choose a target mainly because other people expect it?"
+    },
+    {
+      "id": 59,
+      "category": "meaning",
+      "reverse": false,
+      "text": "After missing an intended step, how likely are you to connect the goal with a personally meaningful reason?"
+    },
+    {
+      "id": 60,
+      "category": "meaning",
+      "reverse": true,
+      "text": "When the goal becomes difficult, how likely are you to pursue the goal without considering why it matters?"
+    },
+    {
+      "id": 61,
+      "category": "meaning",
+      "reverse": false,
+      "text": "While balancing other responsibilities, how likely are you to explain why reaching this goal matters to you?"
+    },
+    {
+      "id": 62,
+      "category": "meaning",
+      "reverse": true,
+      "text": "When asking another person for help, how likely are you to choose a target mainly because other people expect it?"
+    },
+    {
+      "id": 63,
+      "category": "meaning",
+      "reverse": false,
+      "text": "During a weekly review, how likely are you to connect the goal with a personally meaningful reason?"
+    },
+    {
+      "id": 64,
+      "category": "meaning",
+      "reverse": true,
+      "text": "When motivation begins to drop, how likely are you to pursue the goal without considering why it matters?"
+    },
+    {
+      "id": 65,
+      "category": "meaning",
+      "reverse": false,
+      "text": "After receiving unexpected feedback, how likely are you to explain why reaching this goal matters to you?"
+    },
+    {
+      "id": 66,
+      "category": "meaning",
+      "reverse": true,
+      "text": "When circumstances change, how likely are you to choose a target mainly because other people expect it?"
+    },
+    {
+      "id": 67,
+      "category": "meaning",
+      "reverse": false,
+      "text": "Before starting the next task, how likely are you to connect the goal with a personally meaningful reason?"
+    },
+    {
+      "id": 68,
+      "category": "meaning",
+      "reverse": true,
+      "text": "When a deadline is approaching, how likely are you to pursue the goal without considering why it matters?"
+    },
+    {
+      "id": 69,
+      "category": "meaning",
+      "reverse": false,
+      "text": "After completing a milestone, how likely are you to explain why reaching this goal matters to you?"
+    },
+    {
+      "id": 70,
+      "category": "meaning",
+      "reverse": true,
+      "text": "When an obstacle appears, how likely are you to choose a target mainly because other people expect it?"
+    },
+    {
+      "id": 71,
+      "category": "meaning",
+      "reverse": false,
+      "text": "While checking your calendar, how likely are you to connect the goal with a personally meaningful reason?"
+    },
+    {
+      "id": 72,
+      "category": "meaning",
+      "reverse": true,
+      "text": "When deciding whether to continue, how likely are you to pursue the goal without considering why it matters?"
+    },
+    {
+      "id": 73,
+      "category": "meaning",
+      "reverse": false,
+      "text": "After comparing plans with reality, how likely are you to explain why reaching this goal matters to you?"
+    },
+    {
+      "id": 74,
+      "category": "meaning",
+      "reverse": true,
+      "text": "When preparing for a fresh attempt, how likely are you to choose a target mainly because other people expect it?"
+    },
+    {
+      "id": 75,
+      "category": "meaning",
+      "reverse": false,
+      "text": "At the end of a goal cycle, how likely are you to connect the goal with a personally meaningful reason?"
+    },
+    {
+      "id": 76,
+      "category": "values",
+      "reverse": false,
+      "text": "When choosing a new personal goal, how likely are you to check that the goal fits your important values?"
+    },
+    {
+      "id": 77,
+      "category": "values",
+      "reverse": true,
+      "text": "When planning a school or work project, how likely are you to ignore conflicts between the goal and your values?"
+    },
+    {
+      "id": 78,
+      "category": "values",
+      "reverse": false,
+      "text": "At the beginning of a new month, how likely are you to choose an approach consistent with the person you want to be?"
+    },
+    {
+      "id": 79,
+      "category": "values",
+      "reverse": true,
+      "text": "When a goal initially feels exciting, how likely are you to accept a goal that pulls you away from what matters most?"
+    },
+    {
+      "id": 80,
+      "category": "values",
+      "reverse": false,
+      "text": "After deciding that something should change, how likely are you to check that the goal fits your important values?"
+    },
+    {
+      "id": 81,
+      "category": "values",
+      "reverse": true,
+      "text": "When several goals compete for attention, how likely are you to ignore conflicts between the goal and your values?"
+    },
+    {
+      "id": 82,
+      "category": "values",
+      "reverse": false,
+      "text": "Before committing significant time, how likely are you to choose an approach consistent with the person you want to be?"
+    },
+    {
+      "id": 83,
+      "category": "values",
+      "reverse": true,
+      "text": "When progress has been slow, how likely are you to accept a goal that pulls you away from what matters most?"
+    },
+    {
+      "id": 84,
+      "category": "values",
+      "reverse": false,
+      "text": "After missing an intended step, how likely are you to check that the goal fits your important values?"
+    },
+    {
+      "id": 85,
+      "category": "values",
+      "reverse": true,
+      "text": "When the goal becomes difficult, how likely are you to ignore conflicts between the goal and your values?"
+    },
+    {
+      "id": 86,
+      "category": "values",
+      "reverse": false,
+      "text": "While balancing other responsibilities, how likely are you to choose an approach consistent with the person you want to be?"
+    },
+    {
+      "id": 87,
+      "category": "values",
+      "reverse": true,
+      "text": "When asking another person for help, how likely are you to accept a goal that pulls you away from what matters most?"
+    },
+    {
+      "id": 88,
+      "category": "values",
+      "reverse": false,
+      "text": "During a weekly review, how likely are you to check that the goal fits your important values?"
+    },
+    {
+      "id": 89,
+      "category": "values",
+      "reverse": true,
+      "text": "When motivation begins to drop, how likely are you to ignore conflicts between the goal and your values?"
+    },
+    {
+      "id": 90,
+      "category": "values",
+      "reverse": false,
+      "text": "After receiving unexpected feedback, how likely are you to choose an approach consistent with the person you want to be?"
+    },
+    {
+      "id": 91,
+      "category": "values",
+      "reverse": true,
+      "text": "When circumstances change, how likely are you to accept a goal that pulls you away from what matters most?"
+    },
+    {
+      "id": 92,
+      "category": "values",
+      "reverse": false,
+      "text": "Before starting the next task, how likely are you to check that the goal fits your important values?"
+    },
+    {
+      "id": 93,
+      "category": "values",
+      "reverse": true,
+      "text": "When a deadline is approaching, how likely are you to ignore conflicts between the goal and your values?"
+    },
+    {
+      "id": 94,
+      "category": "values",
+      "reverse": false,
+      "text": "After completing a milestone, how likely are you to choose an approach consistent with the person you want to be?"
+    },
+    {
+      "id": 95,
+      "category": "values",
+      "reverse": true,
+      "text": "When an obstacle appears, how likely are you to accept a goal that pulls you away from what matters most?"
+    },
+    {
+      "id": 96,
+      "category": "values",
+      "reverse": false,
+      "text": "While checking your calendar, how likely are you to check that the goal fits your important values?"
+    },
+    {
+      "id": 97,
+      "category": "values",
+      "reverse": true,
+      "text": "When deciding whether to continue, how likely are you to ignore conflicts between the goal and your values?"
+    },
+    {
+      "id": 98,
+      "category": "values",
+      "reverse": false,
+      "text": "After comparing plans with reality, how likely are you to choose an approach consistent with the person you want to be?"
+    },
+    {
+      "id": 99,
+      "category": "values",
+      "reverse": true,
+      "text": "When preparing for a fresh attempt, how likely are you to accept a goal that pulls you away from what matters most?"
+    },
+    {
+      "id": 100,
+      "category": "values",
+      "reverse": false,
+      "text": "At the end of a goal cycle, how likely are you to check that the goal fits your important values?"
+    },
+    {
+      "id": 101,
+      "category": "priorities",
+      "reverse": false,
+      "text": "When choosing a new personal goal, how likely are you to decide where this goal ranks among your priorities?"
+    },
+    {
+      "id": 102,
+      "category": "priorities",
+      "reverse": true,
+      "text": "When planning a school or work project, how likely are you to treat every possible goal as equally urgent?"
+    },
+    {
+      "id": 103,
+      "category": "priorities",
+      "reverse": false,
+      "text": "At the beginning of a new month, how likely are you to protect time for the most important goal first?"
+    },
+    {
+      "id": 104,
+      "category": "priorities",
+      "reverse": true,
+      "text": "When a goal initially feels exciting, how likely are you to let low-value tasks repeatedly displace the main goal?"
+    },
+    {
+      "id": 105,
+      "category": "priorities",
+      "reverse": false,
+      "text": "After deciding that something should change, how likely are you to decide where this goal ranks among your priorities?"
+    },
+    {
+      "id": 106,
+      "category": "priorities",
+      "reverse": true,
+      "text": "When several goals compete for attention, how likely are you to treat every possible goal as equally urgent?"
+    },
+    {
+      "id": 107,
+      "category": "priorities",
+      "reverse": false,
+      "text": "Before committing significant time, how likely are you to protect time for the most important goal first?"
+    },
+    {
+      "id": 108,
+      "category": "priorities",
+      "reverse": true,
+      "text": "When progress has been slow, how likely are you to let low-value tasks repeatedly displace the main goal?"
+    },
+    {
+      "id": 109,
+      "category": "priorities",
+      "reverse": false,
+      "text": "After missing an intended step, how likely are you to decide where this goal ranks among your priorities?"
+    },
+    {
+      "id": 110,
+      "category": "priorities",
+      "reverse": true,
+      "text": "When the goal becomes difficult, how likely are you to treat every possible goal as equally urgent?"
+    },
+    {
+      "id": 111,
+      "category": "priorities",
+      "reverse": false,
+      "text": "While balancing other responsibilities, how likely are you to protect time for the most important goal first?"
+    },
+    {
+      "id": 112,
+      "category": "priorities",
+      "reverse": true,
+      "text": "When asking another person for help, how likely are you to let low-value tasks repeatedly displace the main goal?"
+    },
+    {
+      "id": 113,
+      "category": "priorities",
+      "reverse": false,
+      "text": "During a weekly review, how likely are you to decide where this goal ranks among your priorities?"
+    },
+    {
+      "id": 114,
+      "category": "priorities",
+      "reverse": true,
+      "text": "When motivation begins to drop, how likely are you to treat every possible goal as equally urgent?"
+    },
+    {
+      "id": 115,
+      "category": "priorities",
+      "reverse": false,
+      "text": "After receiving unexpected feedback, how likely are you to protect time for the most important goal first?"
+    },
+    {
+      "id": 116,
+      "category": "priorities",
+      "reverse": true,
+      "text": "When circumstances change, how likely are you to let low-value tasks repeatedly displace the main goal?"
+    },
+    {
+      "id": 117,
+      "category": "priorities",
+      "reverse": false,
+      "text": "Before starting the next task, how likely are you to decide where this goal ranks among your priorities?"
+    },
+    {
+      "id": 118,
+      "category": "priorities",
+      "reverse": true,
+      "text": "When a deadline is approaching, how likely are you to treat every possible goal as equally urgent?"
+    },
+    {
+      "id": 119,
+      "category": "priorities",
+      "reverse": false,
+      "text": "After completing a milestone, how likely are you to protect time for the most important goal first?"
+    },
+    {
+      "id": 120,
+      "category": "priorities",
+      "reverse": true,
+      "text": "When an obstacle appears, how likely are you to let low-value tasks repeatedly displace the main goal?"
+    },
+    {
+      "id": 121,
+      "category": "priorities",
+      "reverse": false,
+      "text": "While checking your calendar, how likely are you to decide where this goal ranks among your priorities?"
+    },
+    {
+      "id": 122,
+      "category": "priorities",
+      "reverse": true,
+      "text": "When deciding whether to continue, how likely are you to treat every possible goal as equally urgent?"
+    },
+    {
+      "id": 123,
+      "category": "priorities",
+      "reverse": false,
+      "text": "After comparing plans with reality, how likely are you to protect time for the most important goal first?"
+    },
+    {
+      "id": 124,
+      "category": "priorities",
+      "reverse": true,
+      "text": "When preparing for a fresh attempt, how likely are you to let low-value tasks repeatedly displace the main goal?"
+    },
+    {
+      "id": 125,
+      "category": "priorities",
+      "reverse": false,
+      "text": "At the end of a goal cycle, how likely are you to decide where this goal ranks among your priorities?"
+    },
+    {
+      "id": 126,
+      "category": "challenge",
+      "reverse": false,
+      "text": "When choosing a new personal goal, how likely are you to set a target that stretches your current ability?"
+    },
+    {
+      "id": 127,
+      "category": "challenge",
+      "reverse": true,
+      "text": "When planning a school or work project, how likely are you to set a target requiring almost no effort or growth?"
+    },
+    {
+      "id": 128,
+      "category": "challenge",
+      "reverse": false,
+      "text": "At the beginning of a new month, how likely are you to choose a goal demanding enough to encourage growth?"
+    },
+    {
+      "id": 129,
+      "category": "challenge",
+      "reverse": true,
+      "text": "When a goal initially feels exciting, how likely are you to make the goal so extreme that useful effort feels pointless?"
+    },
+    {
+      "id": 130,
+      "category": "challenge",
+      "reverse": false,
+      "text": "After deciding that something should change, how likely are you to set a target that stretches your current ability?"
+    },
+    {
+      "id": 131,
+      "category": "challenge",
+      "reverse": true,
+      "text": "When several goals compete for attention, how likely are you to set a target requiring almost no effort or growth?"
+    },
+    {
+      "id": 132,
+      "category": "challenge",
+      "reverse": false,
+      "text": "Before committing significant time, how likely are you to choose a goal demanding enough to encourage growth?"
+    },
+    {
+      "id": 133,
+      "category": "challenge",
+      "reverse": true,
+      "text": "When progress has been slow, how likely are you to make the goal so extreme that useful effort feels pointless?"
+    },
+    {
+      "id": 134,
+      "category": "challenge",
+      "reverse": false,
+      "text": "After missing an intended step, how likely are you to set a target that stretches your current ability?"
+    },
+    {
+      "id": 135,
+      "category": "challenge",
+      "reverse": true,
+      "text": "When the goal becomes difficult, how likely are you to set a target requiring almost no effort or growth?"
+    },
+    {
+      "id": 136,
+      "category": "challenge",
+      "reverse": false,
+      "text": "While balancing other responsibilities, how likely are you to choose a goal demanding enough to encourage growth?"
+    },
+    {
+      "id": 137,
+      "category": "challenge",
+      "reverse": true,
+      "text": "When asking another person for help, how likely are you to make the goal so extreme that useful effort feels pointless?"
+    },
+    {
+      "id": 138,
+      "category": "challenge",
+      "reverse": false,
+      "text": "During a weekly review, how likely are you to set a target that stretches your current ability?"
+    },
+    {
+      "id": 139,
+      "category": "challenge",
+      "reverse": true,
+      "text": "When motivation begins to drop, how likely are you to set a target requiring almost no effort or growth?"
+    },
+    {
+      "id": 140,
+      "category": "challenge",
+      "reverse": false,
+      "text": "After receiving unexpected feedback, how likely are you to choose a goal demanding enough to encourage growth?"
+    },
+    {
+      "id": 141,
+      "category": "challenge",
+      "reverse": true,
+      "text": "When circumstances change, how likely are you to make the goal so extreme that useful effort feels pointless?"
+    },
+    {
+      "id": 142,
+      "category": "challenge",
+      "reverse": false,
+      "text": "Before starting the next task, how likely are you to set a target that stretches your current ability?"
+    },
+    {
+      "id": 143,
+      "category": "challenge",
+      "reverse": true,
+      "text": "When a deadline is approaching, how likely are you to set a target requiring almost no effort or growth?"
+    },
+    {
+      "id": 144,
+      "category": "challenge",
+      "reverse": false,
+      "text": "After completing a milestone, how likely are you to choose a goal demanding enough to encourage growth?"
+    },
+    {
+      "id": 145,
+      "category": "challenge",
+      "reverse": true,
+      "text": "When an obstacle appears, how likely are you to make the goal so extreme that useful effort feels pointless?"
+    },
+    {
+      "id": 146,
+      "category": "challenge",
+      "reverse": false,
+      "text": "While checking your calendar, how likely are you to set a target that stretches your current ability?"
+    },
+    {
+      "id": 147,
+      "category": "challenge",
+      "reverse": true,
+      "text": "When deciding whether to continue, how likely are you to set a target requiring almost no effort or growth?"
+    },
+    {
+      "id": 148,
+      "category": "challenge",
+      "reverse": false,
+      "text": "After comparing plans with reality, how likely are you to choose a goal demanding enough to encourage growth?"
+    },
+    {
+      "id": 149,
+      "category": "challenge",
+      "reverse": true,
+      "text": "When preparing for a fresh attempt, how likely are you to make the goal so extreme that useful effort feels pointless?"
+    },
+    {
+      "id": 150,
+      "category": "challenge",
+      "reverse": false,
+      "text": "At the end of a goal cycle, how likely are you to set a target that stretches your current ability?"
+    },
+    {
+      "id": 151,
+      "category": "realism",
+      "reverse": false,
+      "text": "When choosing a new personal goal, how likely are you to test whether the goal is achievable with available constraints?"
+    },
+    {
+      "id": 152,
+      "category": "realism",
+      "reverse": true,
+      "text": "When planning a school or work project, how likely are you to assume success without checking practical limits?"
+    },
+    {
+      "id": 153,
+      "category": "realism",
+      "reverse": false,
+      "text": "At the beginning of a new month, how likely are you to adjust expectations to fit your real starting point?"
+    },
+    {
+      "id": 154,
+      "category": "realism",
+      "reverse": true,
+      "text": "When a goal initially feels exciting, how likely are you to base the plan on time or abilities you do not currently have?"
+    },
+    {
+      "id": 155,
+      "category": "realism",
+      "reverse": false,
+      "text": "After deciding that something should change, how likely are you to test whether the goal is achievable with available constraints?"
+    },
+    {
+      "id": 156,
+      "category": "realism",
+      "reverse": true,
+      "text": "When several goals compete for attention, how likely are you to assume success without checking practical limits?"
+    },
+    {
+      "id": 157,
+      "category": "realism",
+      "reverse": false,
+      "text": "Before committing significant time, how likely are you to adjust expectations to fit your real starting point?"
+    },
+    {
+      "id": 158,
+      "category": "realism",
+      "reverse": true,
+      "text": "When progress has been slow, how likely are you to base the plan on time or abilities you do not currently have?"
+    },
+    {
+      "id": 159,
+      "category": "realism",
+      "reverse": false,
+      "text": "After missing an intended step, how likely are you to test whether the goal is achievable with available constraints?"
+    },
+    {
+      "id": 160,
+      "category": "realism",
+      "reverse": true,
+      "text": "When the goal becomes difficult, how likely are you to assume success without checking practical limits?"
+    },
+    {
+      "id": 161,
+      "category": "realism",
+      "reverse": false,
+      "text": "While balancing other responsibilities, how likely are you to adjust expectations to fit your real starting point?"
+    },
+    {
+      "id": 162,
+      "category": "realism",
+      "reverse": true,
+      "text": "When asking another person for help, how likely are you to base the plan on time or abilities you do not currently have?"
+    },
+    {
+      "id": 163,
+      "category": "realism",
+      "reverse": false,
+      "text": "During a weekly review, how likely are you to test whether the goal is achievable with available constraints?"
+    },
+    {
+      "id": 164,
+      "category": "realism",
+      "reverse": true,
+      "text": "When motivation begins to drop, how likely are you to assume success without checking practical limits?"
+    },
+    {
+      "id": 165,
+      "category": "realism",
+      "reverse": false,
+      "text": "After receiving unexpected feedback, how likely are you to adjust expectations to fit your real starting point?"
+    },
+    {
+      "id": 166,
+      "category": "realism",
+      "reverse": true,
+      "text": "When circumstances change, how likely are you to base the plan on time or abilities you do not currently have?"
+    },
+    {
+      "id": 167,
+      "category": "realism",
+      "reverse": false,
+      "text": "Before starting the next task, how likely are you to test whether the goal is achievable with available constraints?"
+    },
+    {
+      "id": 168,
+      "category": "realism",
+      "reverse": true,
+      "text": "When a deadline is approaching, how likely are you to assume success without checking practical limits?"
+    },
+    {
+      "id": 169,
+      "category": "realism",
+      "reverse": false,
+      "text": "After completing a milestone, how likely are you to adjust expectations to fit your real starting point?"
+    },
+    {
+      "id": 170,
+      "category": "realism",
+      "reverse": true,
+      "text": "When an obstacle appears, how likely are you to base the plan on time or abilities you do not currently have?"
+    },
+    {
+      "id": 171,
+      "category": "realism",
+      "reverse": false,
+      "text": "While checking your calendar, how likely are you to test whether the goal is achievable with available constraints?"
+    },
+    {
+      "id": 172,
+      "category": "realism",
+      "reverse": true,
+      "text": "When deciding whether to continue, how likely are you to assume success without checking practical limits?"
+    },
+    {
+      "id": 173,
+      "category": "realism",
+      "reverse": false,
+      "text": "After comparing plans with reality, how likely are you to adjust expectations to fit your real starting point?"
+    },
+    {
+      "id": 174,
+      "category": "realism",
+      "reverse": true,
+      "text": "When preparing for a fresh attempt, how likely are you to base the plan on time or abilities you do not currently have?"
+    },
+    {
+      "id": 175,
+      "category": "realism",
+      "reverse": false,
+      "text": "At the end of a goal cycle, how likely are you to test whether the goal is achievable with available constraints?"
+    },
+    {
+      "id": 176,
+      "category": "deadlines",
+      "reverse": false,
+      "text": "When choosing a new personal goal, how likely are you to give the goal a clear and realistic completion date?"
+    },
+    {
+      "id": 177,
+      "category": "deadlines",
+      "reverse": true,
+      "text": "When planning a school or work project, how likely are you to leave the goal open-ended with no review date?"
+    },
+    {
+      "id": 178,
+      "category": "deadlines",
+      "reverse": false,
+      "text": "At the beginning of a new month, how likely are you to set a time frame that creates useful urgency?"
+    },
+    {
+      "id": 179,
+      "category": "deadlines",
+      "reverse": true,
+      "text": "When a goal initially feels exciting, how likely are you to choose an arbitrary deadline without checking feasibility?"
+    },
+    {
+      "id": 180,
+      "category": "deadlines",
+      "reverse": false,
+      "text": "After deciding that something should change, how likely are you to give the goal a clear and realistic completion date?"
+    },
+    {
+      "id": 181,
+      "category": "deadlines",
+      "reverse": true,
+      "text": "When several goals compete for attention, how likely are you to leave the goal open-ended with no review date?"
+    },
+    {
+      "id": 182,
+      "category": "deadlines",
+      "reverse": false,
+      "text": "Before committing significant time, how likely are you to set a time frame that creates useful urgency?"
+    },
+    {
+      "id": 183,
+      "category": "deadlines",
+      "reverse": true,
+      "text": "When progress has been slow, how likely are you to choose an arbitrary deadline without checking feasibility?"
+    },
+    {
+      "id": 184,
+      "category": "deadlines",
+      "reverse": false,
+      "text": "After missing an intended step, how likely are you to give the goal a clear and realistic completion date?"
+    },
+    {
+      "id": 185,
+      "category": "deadlines",
+      "reverse": true,
+      "text": "When the goal becomes difficult, how likely are you to leave the goal open-ended with no review date?"
+    },
+    {
+      "id": 186,
+      "category": "deadlines",
+      "reverse": false,
+      "text": "While balancing other responsibilities, how likely are you to set a time frame that creates useful urgency?"
+    },
+    {
+      "id": 187,
+      "category": "deadlines",
+      "reverse": true,
+      "text": "When asking another person for help, how likely are you to choose an arbitrary deadline without checking feasibility?"
+    },
+    {
+      "id": 188,
+      "category": "deadlines",
+      "reverse": false,
+      "text": "During a weekly review, how likely are you to give the goal a clear and realistic completion date?"
+    },
+    {
+      "id": 189,
+      "category": "deadlines",
+      "reverse": true,
+      "text": "When motivation begins to drop, how likely are you to leave the goal open-ended with no review date?"
+    },
+    {
+      "id": 190,
+      "category": "deadlines",
+      "reverse": false,
+      "text": "After receiving unexpected feedback, how likely are you to set a time frame that creates useful urgency?"
+    },
+    {
+      "id": 191,
+      "category": "deadlines",
+      "reverse": true,
+      "text": "When circumstances change, how likely are you to choose an arbitrary deadline without checking feasibility?"
+    },
+    {
+      "id": 192,
+      "category": "deadlines",
+      "reverse": false,
+      "text": "Before starting the next task, how likely are you to give the goal a clear and realistic completion date?"
+    },
+    {
+      "id": 193,
+      "category": "deadlines",
+      "reverse": true,
+      "text": "When a deadline is approaching, how likely are you to leave the goal open-ended with no review date?"
+    },
+    {
+      "id": 194,
+      "category": "deadlines",
+      "reverse": false,
+      "text": "After completing a milestone, how likely are you to set a time frame that creates useful urgency?"
+    },
+    {
+      "id": 195,
+      "category": "deadlines",
+      "reverse": true,
+      "text": "When an obstacle appears, how likely are you to choose an arbitrary deadline without checking feasibility?"
+    },
+    {
+      "id": 196,
+      "category": "deadlines",
+      "reverse": false,
+      "text": "While checking your calendar, how likely are you to give the goal a clear and realistic completion date?"
+    },
+    {
+      "id": 197,
+      "category": "deadlines",
+      "reverse": true,
+      "text": "When deciding whether to continue, how likely are you to leave the goal open-ended with no review date?"
+    },
+    {
+      "id": 198,
+      "category": "deadlines",
+      "reverse": false,
+      "text": "After comparing plans with reality, how likely are you to set a time frame that creates useful urgency?"
+    },
+    {
+      "id": 199,
+      "category": "deadlines",
+      "reverse": true,
+      "text": "When preparing for a fresh attempt, how likely are you to choose an arbitrary deadline without checking feasibility?"
+    },
+    {
+      "id": 200,
+      "category": "deadlines",
+      "reverse": false,
+      "text": "At the end of a goal cycle, how likely are you to give the goal a clear and realistic completion date?"
+    },
+    {
+      "id": 201,
+      "category": "milestones",
+      "reverse": false,
+      "text": "When choosing a new personal goal, how likely are you to divide the goal into meaningful intermediate milestones?"
+    },
+    {
+      "id": 202,
+      "category": "milestones",
+      "reverse": true,
+      "text": "When planning a school or work project, how likely are you to treat the final outcome as the only visible progress point?"
+    },
+    {
+      "id": 203,
+      "category": "milestones",
+      "reverse": false,
+      "text": "At the beginning of a new month, how likely are you to define progress points that show you are moving forward?"
+    },
+    {
+      "id": 204,
+      "category": "milestones",
+      "reverse": true,
+      "text": "When a goal initially feels exciting, how likely are you to work without identifying any intermediate achievements?"
+    },
+    {
+      "id": 205,
+      "category": "milestones",
+      "reverse": false,
+      "text": "After deciding that something should change, how likely are you to divide the goal into meaningful intermediate milestones?"
+    },
+    {
+      "id": 206,
+      "category": "milestones",
+      "reverse": true,
+      "text": "When several goals compete for attention, how likely are you to treat the final outcome as the only visible progress point?"
+    },
+    {
+      "id": 207,
+      "category": "milestones",
+      "reverse": false,
+      "text": "Before committing significant time, how likely are you to define progress points that show you are moving forward?"
+    },
+    {
+      "id": 208,
+      "category": "milestones",
+      "reverse": true,
+      "text": "When progress has been slow, how likely are you to work without identifying any intermediate achievements?"
+    },
+    {
+      "id": 209,
+      "category": "milestones",
+      "reverse": false,
+      "text": "After missing an intended step, how likely are you to divide the goal into meaningful intermediate milestones?"
+    },
+    {
+      "id": 210,
+      "category": "milestones",
+      "reverse": true,
+      "text": "When the goal becomes difficult, how likely are you to treat the final outcome as the only visible progress point?"
+    },
+    {
+      "id": 211,
+      "category": "milestones",
+      "reverse": false,
+      "text": "While balancing other responsibilities, how likely are you to define progress points that show you are moving forward?"
+    },
+    {
+      "id": 212,
+      "category": "milestones",
+      "reverse": true,
+      "text": "When asking another person for help, how likely are you to work without identifying any intermediate achievements?"
+    },
+    {
+      "id": 213,
+      "category": "milestones",
+      "reverse": false,
+      "text": "During a weekly review, how likely are you to divide the goal into meaningful intermediate milestones?"
+    },
+    {
+      "id": 214,
+      "category": "milestones",
+      "reverse": true,
+      "text": "When motivation begins to drop, how likely are you to treat the final outcome as the only visible progress point?"
+    },
+    {
+      "id": 215,
+      "category": "milestones",
+      "reverse": false,
+      "text": "After receiving unexpected feedback, how likely are you to define progress points that show you are moving forward?"
+    },
+    {
+      "id": 216,
+      "category": "milestones",
+      "reverse": true,
+      "text": "When circumstances change, how likely are you to work without identifying any intermediate achievements?"
+    },
+    {
+      "id": 217,
+      "category": "milestones",
+      "reverse": false,
+      "text": "Before starting the next task, how likely are you to divide the goal into meaningful intermediate milestones?"
+    },
+    {
+      "id": 218,
+      "category": "milestones",
+      "reverse": true,
+      "text": "When a deadline is approaching, how likely are you to treat the final outcome as the only visible progress point?"
+    },
+    {
+      "id": 219,
+      "category": "milestones",
+      "reverse": false,
+      "text": "After completing a milestone, how likely are you to define progress points that show you are moving forward?"
+    },
+    {
+      "id": 220,
+      "category": "milestones",
+      "reverse": true,
+      "text": "When an obstacle appears, how likely are you to work without identifying any intermediate achievements?"
+    },
+    {
+      "id": 221,
+      "category": "milestones",
+      "reverse": false,
+      "text": "While checking your calendar, how likely are you to divide the goal into meaningful intermediate milestones?"
+    },
+    {
+      "id": 222,
+      "category": "milestones",
+      "reverse": true,
+      "text": "When deciding whether to continue, how likely are you to treat the final outcome as the only visible progress point?"
+    },
+    {
+      "id": 223,
+      "category": "milestones",
+      "reverse": false,
+      "text": "After comparing plans with reality, how likely are you to define progress points that show you are moving forward?"
+    },
+    {
+      "id": 224,
+      "category": "milestones",
+      "reverse": true,
+      "text": "When preparing for a fresh attempt, how likely are you to work without identifying any intermediate achievements?"
+    },
+    {
+      "id": 225,
+      "category": "milestones",
+      "reverse": false,
+      "text": "At the end of a goal cycle, how likely are you to divide the goal into meaningful intermediate milestones?"
+    },
+    {
+      "id": 226,
+      "category": "action_plan",
+      "reverse": false,
+      "text": "When choosing a new personal goal, how likely are you to translate the goal into concrete next actions?"
+    },
+    {
+      "id": 227,
+      "category": "action_plan",
+      "reverse": true,
+      "text": "When planning a school or work project, how likely are you to rely on intention without identifying actions?"
+    },
+    {
+      "id": 228,
+      "category": "action_plan",
+      "reverse": false,
+      "text": "At the beginning of a new month, how likely are you to decide what you will do first, second, and next?"
+    },
+    {
+      "id": 229,
+      "category": "action_plan",
+      "reverse": true,
+      "text": "When a goal initially feels exciting, how likely are you to wait for motivation instead of planning the next step?"
+    },
+    {
+      "id": 230,
+      "category": "action_plan",
+      "reverse": false,
+      "text": "After deciding that something should change, how likely are you to translate the goal into concrete next actions?"
+    },
+    {
+      "id": 231,
+      "category": "action_plan",
+      "reverse": true,
+      "text": "When several goals compete for attention, how likely are you to rely on intention without identifying actions?"
+    },
+    {
+      "id": 232,
+      "category": "action_plan",
+      "reverse": false,
+      "text": "Before committing significant time, how likely are you to decide what you will do first, second, and next?"
+    },
+    {
+      "id": 233,
+      "category": "action_plan",
+      "reverse": true,
+      "text": "When progress has been slow, how likely are you to wait for motivation instead of planning the next step?"
+    },
+    {
+      "id": 234,
+      "category": "action_plan",
+      "reverse": false,
+      "text": "After missing an intended step, how likely are you to translate the goal into concrete next actions?"
+    },
+    {
+      "id": 235,
+      "category": "action_plan",
+      "reverse": true,
+      "text": "When the goal becomes difficult, how likely are you to rely on intention without identifying actions?"
+    },
+    {
+      "id": 236,
+      "category": "action_plan",
+      "reverse": false,
+      "text": "While balancing other responsibilities, how likely are you to decide what you will do first, second, and next?"
+    },
+    {
+      "id": 237,
+      "category": "action_plan",
+      "reverse": true,
+      "text": "When asking another person for help, how likely are you to wait for motivation instead of planning the next step?"
+    },
+    {
+      "id": 238,
+      "category": "action_plan",
+      "reverse": false,
+      "text": "During a weekly review, how likely are you to translate the goal into concrete next actions?"
+    },
+    {
+      "id": 239,
+      "category": "action_plan",
+      "reverse": true,
+      "text": "When motivation begins to drop, how likely are you to rely on intention without identifying actions?"
+    },
+    {
+      "id": 240,
+      "category": "action_plan",
+      "reverse": false,
+      "text": "After receiving unexpected feedback, how likely are you to decide what you will do first, second, and next?"
+    },
+    {
+      "id": 241,
+      "category": "action_plan",
+      "reverse": true,
+      "text": "When circumstances change, how likely are you to wait for motivation instead of planning the next step?"
+    },
+    {
+      "id": 242,
+      "category": "action_plan",
+      "reverse": false,
+      "text": "Before starting the next task, how likely are you to translate the goal into concrete next actions?"
+    },
+    {
+      "id": 243,
+      "category": "action_plan",
+      "reverse": true,
+      "text": "When a deadline is approaching, how likely are you to rely on intention without identifying actions?"
+    },
+    {
+      "id": 244,
+      "category": "action_plan",
+      "reverse": false,
+      "text": "After completing a milestone, how likely are you to decide what you will do first, second, and next?"
+    },
+    {
+      "id": 245,
+      "category": "action_plan",
+      "reverse": true,
+      "text": "When an obstacle appears, how likely are you to wait for motivation instead of planning the next step?"
+    },
+    {
+      "id": 246,
+      "category": "action_plan",
+      "reverse": false,
+      "text": "While checking your calendar, how likely are you to translate the goal into concrete next actions?"
+    },
+    {
+      "id": 247,
+      "category": "action_plan",
+      "reverse": true,
+      "text": "When deciding whether to continue, how likely are you to rely on intention without identifying actions?"
+    },
+    {
+      "id": 248,
+      "category": "action_plan",
+      "reverse": false,
+      "text": "After comparing plans with reality, how likely are you to decide what you will do first, second, and next?"
+    },
+    {
+      "id": 249,
+      "category": "action_plan",
+      "reverse": true,
+      "text": "When preparing for a fresh attempt, how likely are you to wait for motivation instead of planning the next step?"
+    },
+    {
+      "id": 250,
+      "category": "action_plan",
+      "reverse": false,
+      "text": "At the end of a goal cycle, how likely are you to translate the goal into concrete next actions?"
+    },
+    {
+      "id": 251,
+      "category": "resources",
+      "reverse": false,
+      "text": "When choosing a new personal goal, how likely are you to identify the time, tools, knowledge, and support required?"
+    },
+    {
+      "id": 252,
+      "category": "resources",
+      "reverse": true,
+      "text": "When planning a school or work project, how likely are you to assume needed resources will somehow appear?"
+    },
+    {
+      "id": 253,
+      "category": "resources",
+      "reverse": false,
+      "text": "At the beginning of a new month, how likely are you to secure important resources before they become bottlenecks?"
+    },
+    {
+      "id": 254,
+      "category": "resources",
+      "reverse": true,
+      "text": "When a goal initially feels exciting, how likely are you to begin without checking what time, tools, or help are required?"
+    },
+    {
+      "id": 255,
+      "category": "resources",
+      "reverse": false,
+      "text": "After deciding that something should change, how likely are you to identify the time, tools, knowledge, and support required?"
+    },
+    {
+      "id": 256,
+      "category": "resources",
+      "reverse": true,
+      "text": "When several goals compete for attention, how likely are you to assume needed resources will somehow appear?"
+    },
+    {
+      "id": 257,
+      "category": "resources",
+      "reverse": false,
+      "text": "Before committing significant time, how likely are you to secure important resources before they become bottlenecks?"
+    },
+    {
+      "id": 258,
+      "category": "resources",
+      "reverse": true,
+      "text": "When progress has been slow, how likely are you to begin without checking what time, tools, or help are required?"
+    },
+    {
+      "id": 259,
+      "category": "resources",
+      "reverse": false,
+      "text": "After missing an intended step, how likely are you to identify the time, tools, knowledge, and support required?"
+    },
+    {
+      "id": 260,
+      "category": "resources",
+      "reverse": true,
+      "text": "When the goal becomes difficult, how likely are you to assume needed resources will somehow appear?"
+    },
+    {
+      "id": 261,
+      "category": "resources",
+      "reverse": false,
+      "text": "While balancing other responsibilities, how likely are you to secure important resources before they become bottlenecks?"
+    },
+    {
+      "id": 262,
+      "category": "resources",
+      "reverse": true,
+      "text": "When asking another person for help, how likely are you to begin without checking what time, tools, or help are required?"
+    },
+    {
+      "id": 263,
+      "category": "resources",
+      "reverse": false,
+      "text": "During a weekly review, how likely are you to identify the time, tools, knowledge, and support required?"
+    },
+    {
+      "id": 264,
+      "category": "resources",
+      "reverse": true,
+      "text": "When motivation begins to drop, how likely are you to assume needed resources will somehow appear?"
+    },
+    {
+      "id": 265,
+      "category": "resources",
+      "reverse": false,
+      "text": "After receiving unexpected feedback, how likely are you to secure important resources before they become bottlenecks?"
+    },
+    {
+      "id": 266,
+      "category": "resources",
+      "reverse": true,
+      "text": "When circumstances change, how likely are you to begin without checking what time, tools, or help are required?"
+    },
+    {
+      "id": 267,
+      "category": "resources",
+      "reverse": false,
+      "text": "Before starting the next task, how likely are you to identify the time, tools, knowledge, and support required?"
+    },
+    {
+      "id": 268,
+      "category": "resources",
+      "reverse": true,
+      "text": "When a deadline is approaching, how likely are you to assume needed resources will somehow appear?"
+    },
+    {
+      "id": 269,
+      "category": "resources",
+      "reverse": false,
+      "text": "After completing a milestone, how likely are you to secure important resources before they become bottlenecks?"
+    },
+    {
+      "id": 270,
+      "category": "resources",
+      "reverse": true,
+      "text": "When an obstacle appears, how likely are you to begin without checking what time, tools, or help are required?"
+    },
+    {
+      "id": 271,
+      "category": "resources",
+      "reverse": false,
+      "text": "While checking your calendar, how likely are you to identify the time, tools, knowledge, and support required?"
+    },
+    {
+      "id": 272,
+      "category": "resources",
+      "reverse": true,
+      "text": "When deciding whether to continue, how likely are you to assume needed resources will somehow appear?"
+    },
+    {
+      "id": 273,
+      "category": "resources",
+      "reverse": false,
+      "text": "After comparing plans with reality, how likely are you to secure important resources before they become bottlenecks?"
+    },
+    {
+      "id": 274,
+      "category": "resources",
+      "reverse": true,
+      "text": "When preparing for a fresh attempt, how likely are you to begin without checking what time, tools, or help are required?"
+    },
+    {
+      "id": 275,
+      "category": "resources",
+      "reverse": false,
+      "text": "At the end of a goal cycle, how likely are you to identify the time, tools, knowledge, and support required?"
+    },
+    {
+      "id": 276,
+      "category": "obstacles",
+      "reverse": false,
+      "text": "When choosing a new personal goal, how likely are you to anticipate likely obstacles and prepare responses?"
+    },
+    {
+      "id": 277,
+      "category": "obstacles",
+      "reverse": true,
+      "text": "When planning a school or work project, how likely are you to ignore obvious barriers until they stop progress?"
+    },
+    {
+      "id": 278,
+      "category": "obstacles",
+      "reverse": false,
+      "text": "At the beginning of a new month, how likely are you to make an if-then plan for a predictable difficulty?"
+    },
+    {
+      "id": 279,
+      "category": "obstacles",
+      "reverse": true,
+      "text": "When a goal initially feels exciting, how likely are you to assume the plan will unfold without setbacks?"
+    },
+    {
+      "id": 280,
+      "category": "obstacles",
+      "reverse": false,
+      "text": "After deciding that something should change, how likely are you to anticipate likely obstacles and prepare responses?"
+    },
+    {
+      "id": 281,
+      "category": "obstacles",
+      "reverse": true,
+      "text": "When several goals compete for attention, how likely are you to ignore obvious barriers until they stop progress?"
+    },
+    {
+      "id": 282,
+      "category": "obstacles",
+      "reverse": false,
+      "text": "Before committing significant time, how likely are you to make an if-then plan for a predictable difficulty?"
+    },
+    {
+      "id": 283,
+      "category": "obstacles",
+      "reverse": true,
+      "text": "When progress has been slow, how likely are you to assume the plan will unfold without setbacks?"
+    },
+    {
+      "id": 284,
+      "category": "obstacles",
+      "reverse": false,
+      "text": "After missing an intended step, how likely are you to anticipate likely obstacles and prepare responses?"
+    },
+    {
+      "id": 285,
+      "category": "obstacles",
+      "reverse": true,
+      "text": "When the goal becomes difficult, how likely are you to ignore obvious barriers until they stop progress?"
+    },
+    {
+      "id": 286,
+      "category": "obstacles",
+      "reverse": false,
+      "text": "While balancing other responsibilities, how likely are you to make an if-then plan for a predictable difficulty?"
+    },
+    {
+      "id": 287,
+      "category": "obstacles",
+      "reverse": true,
+      "text": "When asking another person for help, how likely are you to assume the plan will unfold without setbacks?"
+    },
+    {
+      "id": 288,
+      "category": "obstacles",
+      "reverse": false,
+      "text": "During a weekly review, how likely are you to anticipate likely obstacles and prepare responses?"
+    },
+    {
+      "id": 289,
+      "category": "obstacles",
+      "reverse": true,
+      "text": "When motivation begins to drop, how likely are you to ignore obvious barriers until they stop progress?"
+    },
+    {
+      "id": 290,
+      "category": "obstacles",
+      "reverse": false,
+      "text": "After receiving unexpected feedback, how likely are you to make an if-then plan for a predictable difficulty?"
+    },
+    {
+      "id": 291,
+      "category": "obstacles",
+      "reverse": true,
+      "text": "When circumstances change, how likely are you to assume the plan will unfold without setbacks?"
+    },
+    {
+      "id": 292,
+      "category": "obstacles",
+      "reverse": false,
+      "text": "Before starting the next task, how likely are you to anticipate likely obstacles and prepare responses?"
+    },
+    {
+      "id": 293,
+      "category": "obstacles",
+      "reverse": true,
+      "text": "When a deadline is approaching, how likely are you to ignore obvious barriers until they stop progress?"
+    },
+    {
+      "id": 294,
+      "category": "obstacles",
+      "reverse": false,
+      "text": "After completing a milestone, how likely are you to make an if-then plan for a predictable difficulty?"
+    },
+    {
+      "id": 295,
+      "category": "obstacles",
+      "reverse": true,
+      "text": "When an obstacle appears, how likely are you to assume the plan will unfold without setbacks?"
+    },
+    {
+      "id": 296,
+      "category": "obstacles",
+      "reverse": false,
+      "text": "While checking your calendar, how likely are you to anticipate likely obstacles and prepare responses?"
+    },
+    {
+      "id": 297,
+      "category": "obstacles",
+      "reverse": true,
+      "text": "When deciding whether to continue, how likely are you to ignore obvious barriers until they stop progress?"
+    },
+    {
+      "id": 298,
+      "category": "obstacles",
+      "reverse": false,
+      "text": "After comparing plans with reality, how likely are you to make an if-then plan for a predictable difficulty?"
+    },
+    {
+      "id": 299,
+      "category": "obstacles",
+      "reverse": true,
+      "text": "When preparing for a fresh attempt, how likely are you to assume the plan will unfold without setbacks?"
+    },
+    {
+      "id": 300,
+      "category": "obstacles",
+      "reverse": false,
+      "text": "At the end of a goal cycle, how likely are you to anticipate likely obstacles and prepare responses?"
+    },
+    {
+      "id": 301,
+      "category": "tracking",
+      "reverse": false,
+      "text": "When choosing a new personal goal, how likely are you to choose a simple measure for monitoring progress?"
+    },
+    {
+      "id": 302,
+      "category": "tracking",
+      "reverse": true,
+      "text": "When planning a school or work project, how likely are you to judge progress only from memory or mood?"
+    },
+    {
+      "id": 303,
+      "category": "tracking",
+      "reverse": false,
+      "text": "At the beginning of a new month, how likely are you to record evidence of movement toward the goal?"
+    },
+    {
+      "id": 304,
+      "category": "tracking",
+      "reverse": true,
+      "text": "When a goal initially feels exciting, how likely are you to avoid measuring whether your actions produce results?"
+    },
+    {
+      "id": 305,
+      "category": "tracking",
+      "reverse": false,
+      "text": "After deciding that something should change, how likely are you to choose a simple measure for monitoring progress?"
+    },
+    {
+      "id": 306,
+      "category": "tracking",
+      "reverse": true,
+      "text": "When several goals compete for attention, how likely are you to judge progress only from memory or mood?"
+    },
+    {
+      "id": 307,
+      "category": "tracking",
+      "reverse": false,
+      "text": "Before committing significant time, how likely are you to record evidence of movement toward the goal?"
+    },
+    {
+      "id": 308,
+      "category": "tracking",
+      "reverse": true,
+      "text": "When progress has been slow, how likely are you to avoid measuring whether your actions produce results?"
+    },
+    {
+      "id": 309,
+      "category": "tracking",
+      "reverse": false,
+      "text": "After missing an intended step, how likely are you to choose a simple measure for monitoring progress?"
+    },
+    {
+      "id": 310,
+      "category": "tracking",
+      "reverse": true,
+      "text": "When the goal becomes difficult, how likely are you to judge progress only from memory or mood?"
+    },
+    {
+      "id": 311,
+      "category": "tracking",
+      "reverse": false,
+      "text": "While balancing other responsibilities, how likely are you to record evidence of movement toward the goal?"
+    },
+    {
+      "id": 312,
+      "category": "tracking",
+      "reverse": true,
+      "text": "When asking another person for help, how likely are you to avoid measuring whether your actions produce results?"
+    },
+    {
+      "id": 313,
+      "category": "tracking",
+      "reverse": false,
+      "text": "During a weekly review, how likely are you to choose a simple measure for monitoring progress?"
+    },
+    {
+      "id": 314,
+      "category": "tracking",
+      "reverse": true,
+      "text": "When motivation begins to drop, how likely are you to judge progress only from memory or mood?"
+    },
+    {
+      "id": 315,
+      "category": "tracking",
+      "reverse": false,
+      "text": "After receiving unexpected feedback, how likely are you to record evidence of movement toward the goal?"
+    },
+    {
+      "id": 316,
+      "category": "tracking",
+      "reverse": true,
+      "text": "When circumstances change, how likely are you to avoid measuring whether your actions produce results?"
+    },
+    {
+      "id": 317,
+      "category": "tracking",
+      "reverse": false,
+      "text": "Before starting the next task, how likely are you to choose a simple measure for monitoring progress?"
+    },
+    {
+      "id": 318,
+      "category": "tracking",
+      "reverse": true,
+      "text": "When a deadline is approaching, how likely are you to judge progress only from memory or mood?"
+    },
+    {
+      "id": 319,
+      "category": "tracking",
+      "reverse": false,
+      "text": "After completing a milestone, how likely are you to record evidence of movement toward the goal?"
+    },
+    {
+      "id": 320,
+      "category": "tracking",
+      "reverse": true,
+      "text": "When an obstacle appears, how likely are you to avoid measuring whether your actions produce results?"
+    },
+    {
+      "id": 321,
+      "category": "tracking",
+      "reverse": false,
+      "text": "While checking your calendar, how likely are you to choose a simple measure for monitoring progress?"
+    },
+    {
+      "id": 322,
+      "category": "tracking",
+      "reverse": true,
+      "text": "When deciding whether to continue, how likely are you to judge progress only from memory or mood?"
+    },
+    {
+      "id": 323,
+      "category": "tracking",
+      "reverse": false,
+      "text": "After comparing plans with reality, how likely are you to record evidence of movement toward the goal?"
+    },
+    {
+      "id": 324,
+      "category": "tracking",
+      "reverse": true,
+      "text": "When preparing for a fresh attempt, how likely are you to avoid measuring whether your actions produce results?"
+    },
+    {
+      "id": 325,
+      "category": "tracking",
+      "reverse": false,
+      "text": "At the end of a goal cycle, how likely are you to choose a simple measure for monitoring progress?"
+    },
+    {
+      "id": 326,
+      "category": "consistency",
+      "reverse": false,
+      "text": "When choosing a new personal goal, how likely are you to build repeatable routines supporting the goal?"
+    },
+    {
+      "id": 327,
+      "category": "consistency",
+      "reverse": true,
+      "text": "When planning a school or work project, how likely are you to depend on occasional bursts of effort?"
+    },
+    {
+      "id": 328,
+      "category": "consistency",
+      "reverse": false,
+      "text": "At the beginning of a new month, how likely are you to schedule small actions you can perform consistently?"
+    },
+    {
+      "id": 329,
+      "category": "consistency",
+      "reverse": true,
+      "text": "When a goal initially feels exciting, how likely are you to abandon the routine whenever enthusiasm drops?"
+    },
+    {
+      "id": 330,
+      "category": "consistency",
+      "reverse": false,
+      "text": "After deciding that something should change, how likely are you to build repeatable routines supporting the goal?"
+    },
+    {
+      "id": 331,
+      "category": "consistency",
+      "reverse": true,
+      "text": "When several goals compete for attention, how likely are you to depend on occasional bursts of effort?"
+    },
+    {
+      "id": 332,
+      "category": "consistency",
+      "reverse": false,
+      "text": "Before committing significant time, how likely are you to schedule small actions you can perform consistently?"
+    },
+    {
+      "id": 333,
+      "category": "consistency",
+      "reverse": true,
+      "text": "When progress has been slow, how likely are you to abandon the routine whenever enthusiasm drops?"
+    },
+    {
+      "id": 334,
+      "category": "consistency",
+      "reverse": false,
+      "text": "After missing an intended step, how likely are you to build repeatable routines supporting the goal?"
+    },
+    {
+      "id": 335,
+      "category": "consistency",
+      "reverse": true,
+      "text": "When the goal becomes difficult, how likely are you to depend on occasional bursts of effort?"
+    },
+    {
+      "id": 336,
+      "category": "consistency",
+      "reverse": false,
+      "text": "While balancing other responsibilities, how likely are you to schedule small actions you can perform consistently?"
+    },
+    {
+      "id": 337,
+      "category": "consistency",
+      "reverse": true,
+      "text": "When asking another person for help, how likely are you to abandon the routine whenever enthusiasm drops?"
+    },
+    {
+      "id": 338,
+      "category": "consistency",
+      "reverse": false,
+      "text": "During a weekly review, how likely are you to build repeatable routines supporting the goal?"
+    },
+    {
+      "id": 339,
+      "category": "consistency",
+      "reverse": true,
+      "text": "When motivation begins to drop, how likely are you to depend on occasional bursts of effort?"
+    },
+    {
+      "id": 340,
+      "category": "consistency",
+      "reverse": false,
+      "text": "After receiving unexpected feedback, how likely are you to schedule small actions you can perform consistently?"
+    },
+    {
+      "id": 341,
+      "category": "consistency",
+      "reverse": true,
+      "text": "When circumstances change, how likely are you to abandon the routine whenever enthusiasm drops?"
+    },
+    {
+      "id": 342,
+      "category": "consistency",
+      "reverse": false,
+      "text": "Before starting the next task, how likely are you to build repeatable routines supporting the goal?"
+    },
+    {
+      "id": 343,
+      "category": "consistency",
+      "reverse": true,
+      "text": "When a deadline is approaching, how likely are you to depend on occasional bursts of effort?"
+    },
+    {
+      "id": 344,
+      "category": "consistency",
+      "reverse": false,
+      "text": "After completing a milestone, how likely are you to schedule small actions you can perform consistently?"
+    },
+    {
+      "id": 345,
+      "category": "consistency",
+      "reverse": true,
+      "text": "When an obstacle appears, how likely are you to abandon the routine whenever enthusiasm drops?"
+    },
+    {
+      "id": 346,
+      "category": "consistency",
+      "reverse": false,
+      "text": "While checking your calendar, how likely are you to build repeatable routines supporting the goal?"
+    },
+    {
+      "id": 347,
+      "category": "consistency",
+      "reverse": true,
+      "text": "When deciding whether to continue, how likely are you to depend on occasional bursts of effort?"
+    },
+    {
+      "id": 348,
+      "category": "consistency",
+      "reverse": false,
+      "text": "After comparing plans with reality, how likely are you to schedule small actions you can perform consistently?"
+    },
+    {
+      "id": 349,
+      "category": "consistency",
+      "reverse": true,
+      "text": "When preparing for a fresh attempt, how likely are you to abandon the routine whenever enthusiasm drops?"
+    },
+    {
+      "id": 350,
+      "category": "consistency",
+      "reverse": false,
+      "text": "At the end of a goal cycle, how likely are you to build repeatable routines supporting the goal?"
+    },
+    {
+      "id": 351,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "When choosing a new personal goal, how likely are you to revise the plan when evidence shows a better route?"
+    },
+    {
+      "id": 352,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When planning a school or work project, how likely are you to continue an ineffective plan only because it was original?"
+    },
+    {
+      "id": 353,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "At the beginning of a new month, how likely are you to adapt methods while preserving the meaningful outcome?"
+    },
+    {
+      "id": 354,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When a goal initially feels exciting, how likely are you to change the entire goal after every minor difficulty?"
+    },
+    {
+      "id": 355,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "After deciding that something should change, how likely are you to revise the plan when evidence shows a better route?"
+    },
+    {
+      "id": 356,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When several goals compete for attention, how likely are you to continue an ineffective plan only because it was original?"
+    },
+    {
+      "id": 357,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "Before committing significant time, how likely are you to adapt methods while preserving the meaningful outcome?"
+    },
+    {
+      "id": 358,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When progress has been slow, how likely are you to change the entire goal after every minor difficulty?"
+    },
+    {
+      "id": 359,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "After missing an intended step, how likely are you to revise the plan when evidence shows a better route?"
+    },
+    {
+      "id": 360,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When the goal becomes difficult, how likely are you to continue an ineffective plan only because it was original?"
+    },
+    {
+      "id": 361,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "While balancing other responsibilities, how likely are you to adapt methods while preserving the meaningful outcome?"
+    },
+    {
+      "id": 362,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When asking another person for help, how likely are you to change the entire goal after every minor difficulty?"
+    },
+    {
+      "id": 363,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "During a weekly review, how likely are you to revise the plan when evidence shows a better route?"
+    },
+    {
+      "id": 364,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When motivation begins to drop, how likely are you to continue an ineffective plan only because it was original?"
+    },
+    {
+      "id": 365,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "After receiving unexpected feedback, how likely are you to adapt methods while preserving the meaningful outcome?"
+    },
+    {
+      "id": 366,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When circumstances change, how likely are you to change the entire goal after every minor difficulty?"
+    },
+    {
+      "id": 367,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "Before starting the next task, how likely are you to revise the plan when evidence shows a better route?"
+    },
+    {
+      "id": 368,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When a deadline is approaching, how likely are you to continue an ineffective plan only because it was original?"
+    },
+    {
+      "id": 369,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "After completing a milestone, how likely are you to adapt methods while preserving the meaningful outcome?"
+    },
+    {
+      "id": 370,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When an obstacle appears, how likely are you to change the entire goal after every minor difficulty?"
+    },
+    {
+      "id": 371,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "While checking your calendar, how likely are you to revise the plan when evidence shows a better route?"
+    },
+    {
+      "id": 372,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When deciding whether to continue, how likely are you to continue an ineffective plan only because it was original?"
+    },
+    {
+      "id": 373,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "After comparing plans with reality, how likely are you to adapt methods while preserving the meaningful outcome?"
+    },
+    {
+      "id": 374,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When preparing for a fresh attempt, how likely are you to change the entire goal after every minor difficulty?"
+    },
+    {
+      "id": 375,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "At the end of a goal cycle, how likely are you to revise the plan when evidence shows a better route?"
+    },
+    {
+      "id": 376,
+      "category": "feedback",
+      "reverse": false,
+      "text": "When choosing a new personal goal, how likely are you to seek useful feedback from an informed person?"
+    },
+    {
+      "id": 377,
+      "category": "feedback",
+      "reverse": true,
+      "text": "When planning a school or work project, how likely are you to avoid feedback that might challenge your assumptions?"
+    },
+    {
+      "id": 378,
+      "category": "feedback",
+      "reverse": false,
+      "text": "At the beginning of a new month, how likely are you to use constructive input to improve your approach?"
+    },
+    {
+      "id": 379,
+      "category": "feedback",
+      "reverse": true,
+      "text": "When a goal initially feels exciting, how likely are you to accept every opinion without judging its relevance?"
+    },
+    {
+      "id": 380,
+      "category": "feedback",
+      "reverse": false,
+      "text": "After deciding that something should change, how likely are you to seek useful feedback from an informed person?"
+    },
+    {
+      "id": 381,
+      "category": "feedback",
+      "reverse": true,
+      "text": "When several goals compete for attention, how likely are you to avoid feedback that might challenge your assumptions?"
+    },
+    {
+      "id": 382,
+      "category": "feedback",
+      "reverse": false,
+      "text": "Before committing significant time, how likely are you to use constructive input to improve your approach?"
+    },
+    {
+      "id": 383,
+      "category": "feedback",
+      "reverse": true,
+      "text": "When progress has been slow, how likely are you to accept every opinion without judging its relevance?"
+    },
+    {
+      "id": 384,
+      "category": "feedback",
+      "reverse": false,
+      "text": "After missing an intended step, how likely are you to seek useful feedback from an informed person?"
+    },
+    {
+      "id": 385,
+      "category": "feedback",
+      "reverse": true,
+      "text": "When the goal becomes difficult, how likely are you to avoid feedback that might challenge your assumptions?"
+    },
+    {
+      "id": 386,
+      "category": "feedback",
+      "reverse": false,
+      "text": "While balancing other responsibilities, how likely are you to use constructive input to improve your approach?"
+    },
+    {
+      "id": 387,
+      "category": "feedback",
+      "reverse": true,
+      "text": "When asking another person for help, how likely are you to accept every opinion without judging its relevance?"
+    },
+    {
+      "id": 388,
+      "category": "feedback",
+      "reverse": false,
+      "text": "During a weekly review, how likely are you to seek useful feedback from an informed person?"
+    },
+    {
+      "id": 389,
+      "category": "feedback",
+      "reverse": true,
+      "text": "When motivation begins to drop, how likely are you to avoid feedback that might challenge your assumptions?"
+    },
+    {
+      "id": 390,
+      "category": "feedback",
+      "reverse": false,
+      "text": "After receiving unexpected feedback, how likely are you to use constructive input to improve your approach?"
+    },
+    {
+      "id": 391,
+      "category": "feedback",
+      "reverse": true,
+      "text": "When circumstances change, how likely are you to accept every opinion without judging its relevance?"
+    },
+    {
+      "id": 392,
+      "category": "feedback",
+      "reverse": false,
+      "text": "Before starting the next task, how likely are you to seek useful feedback from an informed person?"
+    },
+    {
+      "id": 393,
+      "category": "feedback",
+      "reverse": true,
+      "text": "When a deadline is approaching, how likely are you to avoid feedback that might challenge your assumptions?"
+    },
+    {
+      "id": 394,
+      "category": "feedback",
+      "reverse": false,
+      "text": "After completing a milestone, how likely are you to use constructive input to improve your approach?"
+    },
+    {
+      "id": 395,
+      "category": "feedback",
+      "reverse": true,
+      "text": "When an obstacle appears, how likely are you to accept every opinion without judging its relevance?"
+    },
+    {
+      "id": 396,
+      "category": "feedback",
+      "reverse": false,
+      "text": "While checking your calendar, how likely are you to seek useful feedback from an informed person?"
+    },
+    {
+      "id": 397,
+      "category": "feedback",
+      "reverse": true,
+      "text": "When deciding whether to continue, how likely are you to avoid feedback that might challenge your assumptions?"
+    },
+    {
+      "id": 398,
+      "category": "feedback",
+      "reverse": false,
+      "text": "After comparing plans with reality, how likely are you to use constructive input to improve your approach?"
+    },
+    {
+      "id": 399,
+      "category": "feedback",
+      "reverse": true,
+      "text": "When preparing for a fresh attempt, how likely are you to accept every opinion without judging its relevance?"
+    },
+    {
+      "id": 400,
+      "category": "feedback",
+      "reverse": false,
+      "text": "At the end of a goal cycle, how likely are you to seek useful feedback from an informed person?"
+    },
+    {
+      "id": 401,
+      "category": "accountability",
+      "reverse": false,
+      "text": "When choosing a new personal goal, how likely are you to create a reliable way to review your commitments?"
+    },
+    {
+      "id": 402,
+      "category": "accountability",
+      "reverse": true,
+      "text": "When planning a school or work project, how likely are you to keep changing commitments without acknowledging it?"
+    },
+    {
+      "id": 403,
+      "category": "accountability",
+      "reverse": false,
+      "text": "At the beginning of a new month, how likely are you to share an appropriate commitment with someone supportive?"
+    },
+    {
+      "id": 404,
+      "category": "accountability",
+      "reverse": true,
+      "text": "When a goal initially feels exciting, how likely are you to avoid any structure that makes progress visible?"
+    },
+    {
+      "id": 405,
+      "category": "accountability",
+      "reverse": false,
+      "text": "After deciding that something should change, how likely are you to create a reliable way to review your commitments?"
+    },
+    {
+      "id": 406,
+      "category": "accountability",
+      "reverse": true,
+      "text": "When several goals compete for attention, how likely are you to keep changing commitments without acknowledging it?"
+    },
+    {
+      "id": 407,
+      "category": "accountability",
+      "reverse": false,
+      "text": "Before committing significant time, how likely are you to share an appropriate commitment with someone supportive?"
+    },
+    {
+      "id": 408,
+      "category": "accountability",
+      "reverse": true,
+      "text": "When progress has been slow, how likely are you to avoid any structure that makes progress visible?"
+    },
+    {
+      "id": 409,
+      "category": "accountability",
+      "reverse": false,
+      "text": "After missing an intended step, how likely are you to create a reliable way to review your commitments?"
+    },
+    {
+      "id": 410,
+      "category": "accountability",
+      "reverse": true,
+      "text": "When the goal becomes difficult, how likely are you to keep changing commitments without acknowledging it?"
+    },
+    {
+      "id": 411,
+      "category": "accountability",
+      "reverse": false,
+      "text": "While balancing other responsibilities, how likely are you to share an appropriate commitment with someone supportive?"
+    },
+    {
+      "id": 412,
+      "category": "accountability",
+      "reverse": true,
+      "text": "When asking another person for help, how likely are you to avoid any structure that makes progress visible?"
+    },
+    {
+      "id": 413,
+      "category": "accountability",
+      "reverse": false,
+      "text": "During a weekly review, how likely are you to create a reliable way to review your commitments?"
+    },
+    {
+      "id": 414,
+      "category": "accountability",
+      "reverse": true,
+      "text": "When motivation begins to drop, how likely are you to keep changing commitments without acknowledging it?"
+    },
+    {
+      "id": 415,
+      "category": "accountability",
+      "reverse": false,
+      "text": "After receiving unexpected feedback, how likely are you to share an appropriate commitment with someone supportive?"
+    },
+    {
+      "id": 416,
+      "category": "accountability",
+      "reverse": true,
+      "text": "When circumstances change, how likely are you to avoid any structure that makes progress visible?"
+    },
+    {
+      "id": 417,
+      "category": "accountability",
+      "reverse": false,
+      "text": "Before starting the next task, how likely are you to create a reliable way to review your commitments?"
+    },
+    {
+      "id": 418,
+      "category": "accountability",
+      "reverse": true,
+      "text": "When a deadline is approaching, how likely are you to keep changing commitments without acknowledging it?"
+    },
+    {
+      "id": 419,
+      "category": "accountability",
+      "reverse": false,
+      "text": "After completing a milestone, how likely are you to share an appropriate commitment with someone supportive?"
+    },
+    {
+      "id": 420,
+      "category": "accountability",
+      "reverse": true,
+      "text": "When an obstacle appears, how likely are you to avoid any structure that makes progress visible?"
+    },
+    {
+      "id": 421,
+      "category": "accountability",
+      "reverse": false,
+      "text": "While checking your calendar, how likely are you to create a reliable way to review your commitments?"
+    },
+    {
+      "id": 422,
+      "category": "accountability",
+      "reverse": true,
+      "text": "When deciding whether to continue, how likely are you to keep changing commitments without acknowledging it?"
+    },
+    {
+      "id": 423,
+      "category": "accountability",
+      "reverse": false,
+      "text": "After comparing plans with reality, how likely are you to share an appropriate commitment with someone supportive?"
+    },
+    {
+      "id": 424,
+      "category": "accountability",
+      "reverse": true,
+      "text": "When preparing for a fresh attempt, how likely are you to avoid any structure that makes progress visible?"
+    },
+    {
+      "id": 425,
+      "category": "accountability",
+      "reverse": false,
+      "text": "At the end of a goal cycle, how likely are you to create a reliable way to review your commitments?"
+    },
+    {
+      "id": 426,
+      "category": "motivation",
+      "reverse": false,
+      "text": "When choosing a new personal goal, how likely are you to prepare ways to continue when initial excitement fades?"
+    },
+    {
+      "id": 427,
+      "category": "motivation",
+      "reverse": true,
+      "text": "When planning a school or work project, how likely are you to assume motivation will remain naturally high?"
+    },
+    {
+      "id": 428,
+      "category": "motivation",
+      "reverse": false,
+      "text": "At the beginning of a new month, how likely are you to use reminders and rewards that support steady effort?"
+    },
+    {
+      "id": 429,
+      "category": "motivation",
+      "reverse": true,
+      "text": "When a goal initially feels exciting, how likely are you to stop working whenever the goal feels less exciting?"
+    },
+    {
+      "id": 430,
+      "category": "motivation",
+      "reverse": false,
+      "text": "After deciding that something should change, how likely are you to prepare ways to continue when initial excitement fades?"
+    },
+    {
+      "id": 431,
+      "category": "motivation",
+      "reverse": true,
+      "text": "When several goals compete for attention, how likely are you to assume motivation will remain naturally high?"
+    },
+    {
+      "id": 432,
+      "category": "motivation",
+      "reverse": false,
+      "text": "Before committing significant time, how likely are you to use reminders and rewards that support steady effort?"
+    },
+    {
+      "id": 433,
+      "category": "motivation",
+      "reverse": true,
+      "text": "When progress has been slow, how likely are you to stop working whenever the goal feels less exciting?"
+    },
+    {
+      "id": 434,
+      "category": "motivation",
+      "reverse": false,
+      "text": "After missing an intended step, how likely are you to prepare ways to continue when initial excitement fades?"
+    },
+    {
+      "id": 435,
+      "category": "motivation",
+      "reverse": true,
+      "text": "When the goal becomes difficult, how likely are you to assume motivation will remain naturally high?"
+    },
+    {
+      "id": 436,
+      "category": "motivation",
+      "reverse": false,
+      "text": "While balancing other responsibilities, how likely are you to use reminders and rewards that support steady effort?"
+    },
+    {
+      "id": 437,
+      "category": "motivation",
+      "reverse": true,
+      "text": "When asking another person for help, how likely are you to stop working whenever the goal feels less exciting?"
+    },
+    {
+      "id": 438,
+      "category": "motivation",
+      "reverse": false,
+      "text": "During a weekly review, how likely are you to prepare ways to continue when initial excitement fades?"
+    },
+    {
+      "id": 439,
+      "category": "motivation",
+      "reverse": true,
+      "text": "When motivation begins to drop, how likely are you to assume motivation will remain naturally high?"
+    },
+    {
+      "id": 440,
+      "category": "motivation",
+      "reverse": false,
+      "text": "After receiving unexpected feedback, how likely are you to use reminders and rewards that support steady effort?"
+    },
+    {
+      "id": 441,
+      "category": "motivation",
+      "reverse": true,
+      "text": "When circumstances change, how likely are you to stop working whenever the goal feels less exciting?"
+    },
+    {
+      "id": 442,
+      "category": "motivation",
+      "reverse": false,
+      "text": "Before starting the next task, how likely are you to prepare ways to continue when initial excitement fades?"
+    },
+    {
+      "id": 443,
+      "category": "motivation",
+      "reverse": true,
+      "text": "When a deadline is approaching, how likely are you to assume motivation will remain naturally high?"
+    },
+    {
+      "id": 444,
+      "category": "motivation",
+      "reverse": false,
+      "text": "After completing a milestone, how likely are you to use reminders and rewards that support steady effort?"
+    },
+    {
+      "id": 445,
+      "category": "motivation",
+      "reverse": true,
+      "text": "When an obstacle appears, how likely are you to stop working whenever the goal feels less exciting?"
+    },
+    {
+      "id": 446,
+      "category": "motivation",
+      "reverse": false,
+      "text": "While checking your calendar, how likely are you to prepare ways to continue when initial excitement fades?"
+    },
+    {
+      "id": 447,
+      "category": "motivation",
+      "reverse": true,
+      "text": "When deciding whether to continue, how likely are you to assume motivation will remain naturally high?"
+    },
+    {
+      "id": 448,
+      "category": "motivation",
+      "reverse": false,
+      "text": "After comparing plans with reality, how likely are you to use reminders and rewards that support steady effort?"
+    },
+    {
+      "id": 449,
+      "category": "motivation",
+      "reverse": true,
+      "text": "When preparing for a fresh attempt, how likely are you to stop working whenever the goal feels less exciting?"
+    },
+    {
+      "id": 450,
+      "category": "motivation",
+      "reverse": false,
+      "text": "At the end of a goal cycle, how likely are you to prepare ways to continue when initial excitement fades?"
+    },
+    {
+      "id": 451,
+      "category": "self_efficacy",
+      "reverse": false,
+      "text": "When choosing a new personal goal, how likely are you to build confidence through achievable evidence of progress?"
+    },
+    {
+      "id": 452,
+      "category": "self_efficacy",
+      "reverse": true,
+      "text": "When planning a school or work project, how likely are you to treat one setback as proof that you are incapable?"
+    },
+    {
+      "id": 453,
+      "category": "self_efficacy",
+      "reverse": false,
+      "text": "At the beginning of a new month, how likely are you to recognise skills you can use or develop for the goal?"
+    },
+    {
+      "id": 454,
+      "category": "self_efficacy",
+      "reverse": true,
+      "text": "When a goal initially feels exciting, how likely are you to dismiss evidence that your effort is improving ability?"
+    },
+    {
+      "id": 455,
+      "category": "self_efficacy",
+      "reverse": false,
+      "text": "After deciding that something should change, how likely are you to build confidence through achievable evidence of progress?"
+    },
+    {
+      "id": 456,
+      "category": "self_efficacy",
+      "reverse": true,
+      "text": "When several goals compete for attention, how likely are you to treat one setback as proof that you are incapable?"
+    },
+    {
+      "id": 457,
+      "category": "self_efficacy",
+      "reverse": false,
+      "text": "Before committing significant time, how likely are you to recognise skills you can use or develop for the goal?"
+    },
+    {
+      "id": 458,
+      "category": "self_efficacy",
+      "reverse": true,
+      "text": "When progress has been slow, how likely are you to dismiss evidence that your effort is improving ability?"
+    },
+    {
+      "id": 459,
+      "category": "self_efficacy",
+      "reverse": false,
+      "text": "After missing an intended step, how likely are you to build confidence through achievable evidence of progress?"
+    },
+    {
+      "id": 460,
+      "category": "self_efficacy",
+      "reverse": true,
+      "text": "When the goal becomes difficult, how likely are you to treat one setback as proof that you are incapable?"
+    },
+    {
+      "id": 461,
+      "category": "self_efficacy",
+      "reverse": false,
+      "text": "While balancing other responsibilities, how likely are you to recognise skills you can use or develop for the goal?"
+    },
+    {
+      "id": 462,
+      "category": "self_efficacy",
+      "reverse": true,
+      "text": "When asking another person for help, how likely are you to dismiss evidence that your effort is improving ability?"
+    },
+    {
+      "id": 463,
+      "category": "self_efficacy",
+      "reverse": false,
+      "text": "During a weekly review, how likely are you to build confidence through achievable evidence of progress?"
+    },
+    {
+      "id": 464,
+      "category": "self_efficacy",
+      "reverse": true,
+      "text": "When motivation begins to drop, how likely are you to treat one setback as proof that you are incapable?"
+    },
+    {
+      "id": 465,
+      "category": "self_efficacy",
+      "reverse": false,
+      "text": "After receiving unexpected feedback, how likely are you to recognise skills you can use or develop for the goal?"
+    },
+    {
+      "id": 466,
+      "category": "self_efficacy",
+      "reverse": true,
+      "text": "When circumstances change, how likely are you to dismiss evidence that your effort is improving ability?"
+    },
+    {
+      "id": 467,
+      "category": "self_efficacy",
+      "reverse": false,
+      "text": "Before starting the next task, how likely are you to build confidence through achievable evidence of progress?"
+    },
+    {
+      "id": 468,
+      "category": "self_efficacy",
+      "reverse": true,
+      "text": "When a deadline is approaching, how likely are you to treat one setback as proof that you are incapable?"
+    },
+    {
+      "id": 469,
+      "category": "self_efficacy",
+      "reverse": false,
+      "text": "After completing a milestone, how likely are you to recognise skills you can use or develop for the goal?"
+    },
+    {
+      "id": 470,
+      "category": "self_efficacy",
+      "reverse": true,
+      "text": "When an obstacle appears, how likely are you to dismiss evidence that your effort is improving ability?"
+    },
+    {
+      "id": 471,
+      "category": "self_efficacy",
+      "reverse": false,
+      "text": "While checking your calendar, how likely are you to build confidence through achievable evidence of progress?"
+    },
+    {
+      "id": 472,
+      "category": "self_efficacy",
+      "reverse": true,
+      "text": "When deciding whether to continue, how likely are you to treat one setback as proof that you are incapable?"
+    },
+    {
+      "id": 473,
+      "category": "self_efficacy",
+      "reverse": false,
+      "text": "After comparing plans with reality, how likely are you to recognise skills you can use or develop for the goal?"
+    },
+    {
+      "id": 474,
+      "category": "self_efficacy",
+      "reverse": true,
+      "text": "When preparing for a fresh attempt, how likely are you to dismiss evidence that your effort is improving ability?"
+    },
+    {
+      "id": 475,
+      "category": "self_efficacy",
+      "reverse": false,
+      "text": "At the end of a goal cycle, how likely are you to build confidence through achievable evidence of progress?"
+    },
+    {
+      "id": 476,
+      "category": "reflection",
+      "reverse": false,
+      "text": "When choosing a new personal goal, how likely are you to review what worked, what failed, and what you learned?"
+    },
+    {
+      "id": 477,
+      "category": "reflection",
+      "reverse": true,
+      "text": "When planning a school or work project, how likely are you to repeat the same approach without reviewing results?"
+    },
+    {
+      "id": 478,
+      "category": "reflection",
+      "reverse": false,
+      "text": "At the beginning of a new month, how likely are you to use completed attempts to improve future goals?"
+    },
+    {
+      "id": 479,
+      "category": "reflection",
+      "reverse": true,
+      "text": "When a goal initially feels exciting, how likely are you to focus only on success or failure and ignore lessons?"
+    },
+    {
+      "id": 480,
+      "category": "reflection",
+      "reverse": false,
+      "text": "After deciding that something should change, how likely are you to review what worked, what failed, and what you learned?"
+    },
+    {
+      "id": 481,
+      "category": "reflection",
+      "reverse": true,
+      "text": "When several goals compete for attention, how likely are you to repeat the same approach without reviewing results?"
+    },
+    {
+      "id": 482,
+      "category": "reflection",
+      "reverse": false,
+      "text": "Before committing significant time, how likely are you to use completed attempts to improve future goals?"
+    },
+    {
+      "id": 483,
+      "category": "reflection",
+      "reverse": true,
+      "text": "When progress has been slow, how likely are you to focus only on success or failure and ignore lessons?"
+    },
+    {
+      "id": 484,
+      "category": "reflection",
+      "reverse": false,
+      "text": "After missing an intended step, how likely are you to review what worked, what failed, and what you learned?"
+    },
+    {
+      "id": 485,
+      "category": "reflection",
+      "reverse": true,
+      "text": "When the goal becomes difficult, how likely are you to repeat the same approach without reviewing results?"
+    },
+    {
+      "id": 486,
+      "category": "reflection",
+      "reverse": false,
+      "text": "While balancing other responsibilities, how likely are you to use completed attempts to improve future goals?"
+    },
+    {
+      "id": 487,
+      "category": "reflection",
+      "reverse": true,
+      "text": "When asking another person for help, how likely are you to focus only on success or failure and ignore lessons?"
+    },
+    {
+      "id": 488,
+      "category": "reflection",
+      "reverse": false,
+      "text": "During a weekly review, how likely are you to review what worked, what failed, and what you learned?"
+    },
+    {
+      "id": 489,
+      "category": "reflection",
+      "reverse": true,
+      "text": "When motivation begins to drop, how likely are you to repeat the same approach without reviewing results?"
+    },
+    {
+      "id": 490,
+      "category": "reflection",
+      "reverse": false,
+      "text": "After receiving unexpected feedback, how likely are you to use completed attempts to improve future goals?"
+    },
+    {
+      "id": 491,
+      "category": "reflection",
+      "reverse": true,
+      "text": "When circumstances change, how likely are you to focus only on success or failure and ignore lessons?"
+    },
+    {
+      "id": 492,
+      "category": "reflection",
+      "reverse": false,
+      "text": "Before starting the next task, how likely are you to review what worked, what failed, and what you learned?"
+    },
+    {
+      "id": 493,
+      "category": "reflection",
+      "reverse": true,
+      "text": "When a deadline is approaching, how likely are you to repeat the same approach without reviewing results?"
+    },
+    {
+      "id": 494,
+      "category": "reflection",
+      "reverse": false,
+      "text": "After completing a milestone, how likely are you to use completed attempts to improve future goals?"
+    },
+    {
+      "id": 495,
+      "category": "reflection",
+      "reverse": true,
+      "text": "When an obstacle appears, how likely are you to focus only on success or failure and ignore lessons?"
+    },
+    {
+      "id": 496,
+      "category": "reflection",
+      "reverse": false,
+      "text": "While checking your calendar, how likely are you to review what worked, what failed, and what you learned?"
+    },
+    {
+      "id": 497,
+      "category": "reflection",
+      "reverse": true,
+      "text": "When deciding whether to continue, how likely are you to repeat the same approach without reviewing results?"
+    },
+    {
+      "id": 498,
+      "category": "reflection",
+      "reverse": false,
+      "text": "After comparing plans with reality, how likely are you to use completed attempts to improve future goals?"
+    },
+    {
+      "id": 499,
+      "category": "reflection",
+      "reverse": true,
+      "text": "When preparing for a fresh attempt, how likely are you to focus only on success or failure and ignore lessons?"
+    },
+    {
+      "id": 500,
+      "category": "reflection",
+      "reverse": false,
+      "text": "At the end of a goal cycle, how likely are you to review what worked, what failed, and what you learned?"
+    }
+  ]
+}
