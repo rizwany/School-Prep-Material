@@ -80,7 +80,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div id="loadingState">Loading your results…</div>
 
     <div id="emptyState">
-      You haven't completed any tests yet. <a href="../index.html">Browse tests →</a>
+      Attempt any test and check results here. <a href="../index.html">Browse tests →</a>
     </div>
 
     <div id="resultsContent" style="display:none">
@@ -170,7 +170,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         document.getElementById('resultsContent').style.display = 'block';
       }).catch(function (err) {
         console.error('LearnPad: failed to load results', err);
-        document.getElementById('loadingState').textContent = 'Could not load your results. Please try again later.';
+        document.getElementById('loadingState').style.display = 'none';
+        document.getElementById('emptyState').style.display = 'block';
       });
     }
 
