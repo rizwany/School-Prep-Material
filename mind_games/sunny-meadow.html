@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+<link rel="icon" type="image/x-icon" href="/assets/favicons/favicon.ico">
+<link rel="manifest" href="/assets/favicons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description" content="Sunny Meadow: a free, calming mood-lifting garden game with gratitude planting, thought reframing, guided breathing, and tiny wins to help brighten a low mood." />
+  <meta property="og:title" content="Sunny Meadow – Mood Garden Game | LearnPad" />
+  <meta property="og:description" content="A free, calming mood-lifting garden game with gratitude planting, thought reframing, guided breathing, and tiny wins." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mypkweb.com/mind_games/sunny-meadow.html" />
+  <meta property="og:site_name" content="LearnPad" />
+  <meta property="og:image" content="https://mypkweb.com/assets/images/ogimage.png" />
+  <link rel="canonical" href="https://mypkweb.com/mind_games/sunny-meadow.html" />
+<title>Sunny Meadow – Mood Garden Game | LearnPad</title>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --accent: #f59e0b;
+      --accent-dark: #b45309;
+      --ink: #1a1f36;
+      --muted: #5a6076;
+      --bg: #fff7ec;
+      --card: #ffffff;
+      --border: #f1e3c8;
+      --radius: 16px;
+      --sky-top: #bfe3ff;
+      --sky-bottom: #eaf7ff;
+      --grass: #7cc576;
+      --grass-dark: #5fa858;
+    }
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      min-height: 100vh;
+    }
+    a { color: var(--accent-dark); }
+
+    .wrap { max-width: 900px; margin: 0 auto; padding: 20px 16px 60px; }
+
+    .page-toolbar {
+      max-width: 900px; margin: 0 auto; padding: 16px 16px 0;
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    }
+    .back-link { font-weight: 800; font-size: .85rem; text-decoration: none; }
+    .streak-badge {
+      background: #fff7ec;
+      border: 2px solid var(--accent);
+      color: var(--accent-dark);
+      padding: 5px 11px;
+      border-radius: 20px;
+      font-weight: 900;
+      font-size: .82rem;
+      white-space: nowrap;
+    }
+
+    .intro-card {
+      background: var(--card);
+      border: 2px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .intro-card .emoji { font-size: 2.6rem; }
+    .intro-card h1 { font-size: 1.5rem; font-weight: 900; margin: 8px 0 6px; }
+    .intro-card p { color: var(--muted); font-size: .92rem; line-height: 1.6; max-width: 620px; margin: 0 auto; }
+
+    /* ── GARDEN SCENE ─────────────────────────────────────── */
+    .garden-scene {
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 2px solid var(--border);
+      margin-bottom: 20px;
+      position: relative;
+      height: 260px;
+      background: linear-gradient(to bottom, var(--sky-top) 0%, var(--sky-bottom) 62%, var(--grass) 62%, var(--grass-dark) 100%);
+      transition: filter .8s ease;
+    }
+    .garden-scene.mood-0 { filter: brightness(.82) saturate(.7); }
+    .garden-scene.mood-1 { filter: brightness(.92) saturate(.85); }
+    .garden-scene.mood-2 { filter: brightness(1) saturate(1); }
+    .garden-scene.mood-3 { filter: brightness(1.04) saturate(1.08); }
+    .garden-scene.mood-4 { filter: brightness(1.08) saturate(1.15); }
+
+    .sun {
+      position: absolute; top: 18px; right: 26px;
+      width: 54px; height: 54px; border-radius: 50%;
+      background: radial-gradient(circle, #ffe58a 0%, #ffc93c 70%, #ffb703 100%);
+      box-shadow: 0 0 30px 10px rgba(255,201,60,.55);
+      animation: sunpulse 4s ease-in-out infinite;
+    }
+    @keyframes sunpulse { 0%,100%{ transform: scale(1);} 50%{ transform: scale(1.06);} }
+
+    .cloud {
+      position: absolute; background: #fff; border-radius: 40px; opacity: .85;
+      animation: drift 40s linear infinite;
+    }
+    .cloud::before, .cloud::after { content:""; position:absolute; background:#fff; border-radius:50%; }
+    .cloud1 { width: 60px; height: 20px; top: 24px; left: -80px; }
+    .cloud1::before { width: 30px; height: 30px; top: -14px; left: 8px; }
+    .cloud1::after { width: 24px; height: 24px; top: -10px; left: 30px; }
+    .cloud2 { width: 46px; height: 16px; top: 60px; left: -140px; animation-delay: -15s; animation-duration: 55s; }
+    .cloud2::before { width: 22px; height: 22px; top: -10px; left: 6px; }
+    .cloud2::after { width: 18px; height: 18px; top: -8px; left: 22px; }
+    @keyframes drift { from { transform: translateX(-10vw); } to { transform: translateX(110vw); } }
+
+    .rainbow {
+      position: absolute; left: 50%; top: 30px; transform: translateX(-50%);
+      width: 220px; height: 110px;
+      border: 10px solid transparent;
+      border-top-color: #f87171;
+      border-radius: 50%;
+      opacity: 0; transition: opacity .8s ease;
+    }
+    .rainbow.show { opacity: .9; box-shadow: 0 0 0 10px #fbbf24 inset, 0 0 0 20px #34d399 inset, 0 0 0 30px #60a5fa inset; }
+
+    .flower-bed, .sunflower-bed { position: absolute; bottom: 8px; display: flex; gap: 4px; flex-wrap: wrap; width: 92%; left: 4%; align-items: flex-end; }
+    .flower-bed { bottom: 10px; }
+    .sunflower-bed { bottom: 40px; justify-content: flex-end; }
+    .flower-bed span, .sunflower-bed span {
+      font-size: 1.4rem;
+      animation: sway 3s ease-in-out infinite;
+      animation-delay: calc(var(--i, 0) * .15s);
+    }
+    @keyframes sway { 0%,100%{ transform: rotate(-4deg);} 50%{ transform: rotate(4deg);} }
+
+    .butterfly, .bird {
+      position: absolute; font-size: 1.3rem; opacity: 0; transition: opacity .6s ease;
+    }
+    .butterfly.show { opacity: 1; animation: flutter 6s ease-in-out infinite; }
+    .bird.show { opacity: 1; animation: fly 8s linear infinite; }
+    @keyframes flutter {
+      0%,100% { transform: translate(0,0) rotate(0deg); }
+      25% { transform: translate(30px,-20px) rotate(10deg); }
+      50% { transform: translate(60px,0) rotate(-6deg); }
+      75% { transform: translate(30px,15px) rotate(8deg); }
+    }
+    @keyframes fly {
+      0% { transform: translateX(-10vw) translateY(0); }
+      50% { transform: translateX(45vw) translateY(-14px); }
+      100% { transform: translateX(100vw) translateY(0); }
+    }
+
+    .garden-empty-note {
+      position: absolute; bottom: 12px; left: 0; right: 0; text-align: center;
+      font-size: .8rem; font-weight: 800; color: #2f5230; text-shadow: 0 1px 0 rgba(255,255,255,.4);
+    }
+
+    /* ── STATS ROW ────────────────────────────────────────── */
+    .stats-row { display: grid; grid-template-columns: repeat(4,1fr); gap: 10px; margin-bottom: 20px; }
+    .stat-pill {
+      background: var(--card); border: 2px solid var(--border); border-radius: 12px;
+      text-align: center; padding: 10px 6px;
+    }
+    .stat-pill strong { display: block; font-size: 1.15rem; font-weight: 900; color: var(--accent-dark); }
+    .stat-pill span { font-size: .68rem; font-weight: 800; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+
+    /* ── ACTIVITY CARDS ───────────────────────────────────── */
+    .activities-title { font-weight: 900; font-size: 1.05rem; margin-bottom: 12px; }
+    .activities-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px,1fr)); gap: 14px; margin-bottom: 22px; }
+    .activity-card {
+      background: var(--card); border: 2px solid var(--border); border-radius: var(--radius);
+      padding: 18px 16px; text-align: left; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease;
+      font-family: inherit; position: relative;
+    }
+    .activity-card:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,.07); }
+    .activity-card .icon { font-size: 1.8rem; margin-bottom: 8px; display: block; }
+    .activity-card h3 { font-size: .98rem; font-weight: 900; margin-bottom: 4px; }
+    .activity-card p { font-size: .78rem; color: var(--muted); line-height: 1.45; }
+    .activity-card .done-badge {
+      position: absolute; top: 14px; right: 14px; background: #dcfce7; color: #15803d;
+      border-radius: 20px; font-size: .68rem; font-weight: 900; padding: 3px 9px; display: none;
+    }
+    .activity-card.is-done .done-badge { display: inline-block; }
+    .activity-card.is-done { border-color: #86efac; background: linear-gradient(135deg,#fff 60%,#f0fdf4); }
+
+    .info-box {
+      background: #fffbeb; border: 2px solid #fde68a; border-radius: 14px;
+      padding: 14px 16px; font-size: .82rem; line-height: 1.6; color: #78350f; margin-bottom: 18px;
+    }
+    .info-box strong { color: #92400e; }
+
+    .safety-box {
+      background: #fef2f2; border: 2px solid #fca5a5; color: #7f1d1d;
+      border-radius: 14px; padding: 14px 16px; line-height: 1.6; font-size: .82rem; margin-bottom: 20px;
+    }
+    .safety-box a { color: #b91c1c; font-weight: 900; }
+
+    .journal-toggle { text-align: center; margin-bottom: 20px; }
+    .journal-toggle button {
+      background: none; border: 2px solid var(--border); border-radius: 20px;
+      padding: 8px 16px; font-weight: 800; font-size: .82rem; color: var(--muted);
+      cursor: pointer; font-family: inherit;
+    }
+    .journal-list { display: none; max-width: 560px; margin: 14px auto 0; text-align: left; }
+    .journal-list.show { display: block; }
+    .journal-entry {
+      background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+      padding: 10px 14px; font-size: .82rem; margin-bottom: 8px;
+    }
+    .journal-entry time { display: block; font-size: .68rem; font-weight: 800; color: var(--muted); margin-bottom: 2px; }
+
+    footer.footer { text-align: center; padding: 24px 16px; color: var(--muted); font-size: .78rem; }
+
+    /* ── MODAL ────────────────────────────────────────────── */
+    .modal-overlay {
+      position: fixed; inset: 0; background: rgba(26,31,54,.5);
+      display: none; align-items: center; justify-content: center; padding: 16px; z-index: 200;
+    }
+    .modal-overlay.show { display: flex; }
+    .modal-box {
+      background: var(--card); border-radius: 20px; padding: 26px 24px; max-width: 480px; width: 100%;
+      max-height: 88vh; overflow-y: auto; position: relative;
+    }
+    .modal-close {
+      position: absolute; top: 12px; right: 14px; background: none; border: none;
+      font-size: 1.2rem; cursor: pointer; color: var(--muted);
+    }
+    .modal-box h2 { font-size: 1.15rem; font-weight: 900; margin-bottom: 10px; padding-right: 20px; }
+    .modal-box p.sub { font-size: .85rem; color: var(--muted); line-height: 1.55; margin-bottom: 16px; }
+    .modal-box textarea {
+      width: 100%; border: 2px solid var(--border); border-radius: 10px; padding: 10px 12px;
+      font-family: inherit; font-size: .9rem; resize: vertical; min-height: 70px; margin-bottom: 14px;
+    }
+    .modal-btn {
+      background: var(--accent); color: #fff; border: none; border-radius: 10px;
+      padding: 11px 18px; font-weight: 900; font-size: .9rem; cursor: pointer; width: 100%;
+    }
+    .modal-btn:disabled { opacity: .5; cursor: not-allowed; }
+    .modal-btn.secondary { background: #fff; color: var(--accent-dark); border: 2px solid var(--accent); }
+
+    .thought-bubble {
+      background: #eff6ff; border: 2px dashed #93c5fd; border-radius: 20px;
+      padding: 18px; text-align: center; font-weight: 800; font-size: 1rem; color: #1e3a8a;
+      margin-bottom: 16px; cursor: pointer;
+    }
+    .reframe-option {
+      display: block; width: 100%; text-align: left; background: #fff; border: 2px solid var(--border);
+      border-radius: 10px; padding: 10px 12px; font-family: inherit; font-size: .85rem; margin-bottom: 8px; cursor: pointer;
+    }
+    .reframe-option:hover { border-color: var(--accent); }
+
+    .breathe-stage { text-align: center; padding: 10px 0 4px; }
+    .breathe-circle {
+      width: 140px; height: 140px; border-radius: 50%; margin: 0 auto 16px;
+      background: radial-gradient(circle, #bfe3ff 0%, #93c5fd 100%);
+      display: flex; align-items: center; justify-content: center; font-weight: 900; color: #1e3a8a;
+      transform: scale(.7); transition: transform 4s ease-in-out;
+    }
+    .breathe-circle.inhale { transform: scale(1); }
+    .breathe-circle.hold { transform: scale(1); }
+    .breathe-circle.exhale { transform: scale(.7); }
+    .breathe-cycles { font-size: .8rem; color: var(--muted); font-weight: 800; margin-bottom: 12px; }
+
+    .win-option {
+      display: block; width: 100%; text-align: left; background: #fff; border: 2px solid var(--border);
+      border-radius: 10px; padding: 12px 14px; font-family: inherit; font-size: .88rem; margin-bottom: 10px; cursor: pointer;
+    }
+    .win-option:hover { border-color: var(--accent); background: #fffbeb; }
+
+    .celebrate { text-align: center; padding: 6px 0; }
+    .celebrate .big-emoji { font-size: 2.6rem; display: block; margin-bottom: 8px; }
+    .celebrate p { font-size: .9rem; color: var(--muted); margin-bottom: 16px; }
+
+    @media (max-width: 560px) {
+      .stats-row { grid-template-columns: repeat(2,1fr); }
+    }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="page-toolbar">
+  <a class="back-link" href="index.html">← Mind Games</a>
+  <span id="streakBadge" class="streak-badge">🔥 Day 1</span>
+</div>
+
+<div class="wrap">
+
+  <div class="intro-card">
+    <span class="emoji">🌤️</span>
+    <h1>Grow a little sunshine, one small moment at a time</h1>
+    <p>Sunny Meadow is a gentle, no-pressure game. Each small activity below plants something new in your garden —
+      real self-care tools (gratitude, thought reframing, breathing, and tiny wins) wrapped up in something fun to come back to.</p>
+  </div>
+
+  <div class="garden-scene mood-0" id="gardenScene">
+    <div class="cloud cloud1"></div>
+    <div class="cloud cloud2"></div>
+    <div class="sun"></div>
+    <div class="rainbow" id="rainbow"></div>
+    <div class="butterfly" id="butterfly" style="bottom:70px;left:20px;">🦋</div>
+    <div class="bird" id="bird" style="top:40px;">🕊️</div>
+    <div class="sunflower-bed" id="sunflowerBed"></div>
+    <div class="flower-bed" id="flowerBed"></div>
+    <div class="garden-empty-note" id="gardenEmptyNote">Your garden is waiting for its first seed 🌱</div>
+  </div>
+
+  <div class="stats-row">
+    <div class="stat-pill"><strong id="statGratitude">0</strong><span>Gratitude</span></div>
+    <div class="stat-pill"><strong id="statReframes">0</strong><span>Reframes</span></div>
+    <div class="stat-pill"><strong id="statBreaths">0</strong><span>Breathing</span></div>
+    <div class="stat-pill"><strong id="statWins">0</strong><span>Tiny Wins</span></div>
+  </div>
+
+  <div class="activities-title">Today's activities</div>
+  <div class="activities-grid">
+    <button class="activity-card" data-activity="gratitude" id="cardGratitude">
+      <span class="done-badge">Done ✓</span>
+      <span class="icon">🌱</span>
+      <h3>Plant a Gratitude Seed</h3>
+      <p>Name one small good thing from today and watch a flower bloom.</p>
+    </button>
+    <button class="activity-card" data-activity="reframe" id="cardReframe">
+      <span class="done-badge">Done ✓</span>
+      <span class="icon">🫧</span>
+      <h3>Pop a Heavy Thought</h3>
+      <p>Catch a harsh thought and turn it into something more balanced.</p>
+    </button>
+    <button class="activity-card" data-activity="breathe" id="cardBreathe">
+      <span class="done-badge">Done ✓</span>
+      <span class="icon">🌬️</span>
+      <h3>Breathe &amp; Grow</h3>
+      <p>A slow, guided breathing round brings rain and a rainbow.</p>
+    </button>
+    <button class="activity-card" data-activity="win" id="cardWin">
+      <span class="done-badge">Done ✓</span>
+      <span class="icon">✅</span>
+      <h3>Tiny Win</h3>
+      <p>Pick one tiny, doable action — a bird visits when you do.</p>
+    </button>
+  </div>
+
+  <div class="info-box">
+    <strong>Why these four?</strong> Gratitude noticing, reframing harsh thoughts, slow breathing, and small
+    achievable actions are simple, well-known low-pressure ways people support their own mood day to day.
+    Sunny Meadow just makes them a little more fun to repeat.
+  </div>
+
+  <div class="journal-toggle">
+    <button id="journalToggleBtn" type="button">📔 View my gratitude journal</button>
+    <div class="journal-list" id="journalList"></div>
+  </div>
+
+  <div class="safety-box">
+    <strong>This is a game, not a treatment.</strong> Sunny Meadow can be a nice part of a day, but it isn't therapy
+    and can't diagnose or treat depression. If low mood, low energy, or loss of interest lasts most of the day for
+    two weeks or more — or you ever have thoughts of harming yourself — please reach out to a trusted person or a
+    qualified professional now. See <a href="https://findahelpline.com/countries/pk" target="_blank" rel="noopener">Pakistan helplines</a>
+    or the <a href="https://findahelpline.com/" target="_blank" rel="noopener">global helpline directory</a>.
+  </div>
+
+</div>
+
+<footer class="footer">LearnPad · Sunny Meadow is a supportive mood-lifting game, not a medical treatment.</footer>
+
+<!-- ── MODAL ────────────────────────────────────────────── -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-box" id="modalBox"></div>
+</div>
+
+<script>
+(function(){
+  var STORAGE_KEY = 'sunnyMeadow_v1';
+
+  var GRATITUDE_PROMPTS = [
+    "What's one small thing that made today a bit easier?",
+    "Who or what are you thankful for right now?",
+    "What's something simple that gave you a moment of comfort today?",
+    "Name one thing — big or tiny — that went okay today.",
+    "What's something you're looking forward to, even a little?"
+  ];
+
+  var THOUGHT_BANK = [
+    { thought: "I always mess everything up.",
+      reframes: [
+        "I made a mistake this time — that doesn't erase the things I've gotten right before.",
+        "One setback is one moment, not a pattern of my whole life.",
+        "I'm judging myself harder than I'd judge a friend in the same spot."
+      ] },
+    { thought: "Nobody would notice if I disappeared.",
+      reframes: [
+        "It's hard to feel that right now, but feelings aren't always facts — and this one is worth checking with someone I trust.",
+        "I might not be seeing the ways I matter to people clearly today.",
+        "This thought is a sign I need support, not proof that it's true."
+      ] },
+    { thought: "I'm never going to feel better than this.",
+      reframes: [
+        "Moods move, even when it doesn't feel like it in the middle of a hard stretch.",
+        "I've felt differently before, which means it's possible to feel differently again.",
+        "'Never' is a big word for how I feel in this one moment."
+      ] },
+    { thought: "Everyone else has it figured out except me.",
+      reframes: [
+        "I'm comparing my behind-the-scenes to everyone else's highlight reel.",
+        "Most people are quietly figuring things out too, even if it doesn't show.",
+        "Not having it all figured out is normal, not a personal failure."
+      ] },
+    { thought: "I should be able to handle this on my own.",
+      reframes: [
+        "Asking for help is a skill, not a weakness.",
+        "Plenty of capable people lean on others sometimes — that's how support works.",
+        "Needing help with this doesn't undo everything I can handle."
+      ] },
+    { thought: "I ruined the whole day.",
+      reframes: [
+        "One rough hour doesn't erase every other hour of the day.",
+        "I can still choose what the next hour looks like.",
+        "Days are made of many moments — this was one of them, not all of them."
+      ] }
+  ];
+
+  var TINY_WINS = [
+    "Drink a glass of water",
+    "Open a window for some fresh air",
+    "Stretch your arms and shoulders for 60 seconds",
+    "Send someone a quick hello",
+    "Tidy one small spot within reach",
+    "Step outside for two minutes",
+    "Listen to one favorite song",
+    "Write down one thing you did this week that counts",
+    "Wash your face or brush your hair",
+    "Look out a window and name three things you see"
+  ];
+
+  function todayStr(){ return new Date().toISOString().slice(0,10); }
+
+  function loadState(){
+    var s = {};
+    try { s = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; } catch(e){ s = {}; }
+    s.totalGratitude = s.totalGratitude || 0;
+    s.totalReframes  = s.totalReframes  || 0;
+    s.totalBreaths   = s.totalBreaths   || 0;
+    s.totalWins      = s.totalWins      || 0;
+    s.journal        = s.journal        || [];
+    s.streak         = s.streak         || 0;
+    s.lastActiveDate = s.lastActiveDate || null;
+    var today = todayStr();
+    if (s.todayDate !== today) {
+      s.todayDate = today;
+      s.today = { gratitude:false, reframe:false, breathe:false, win:false };
+    }
+    s.today = s.today || { gratitude:false, reframe:false, breathe:false, win:false };
+    return s;
+  }
+  function saveState(s){ localStorage.setItem(STORAGE_KEY, JSON.stringify(s)); }
+
+  var state = loadState();
+
+  function bumpStreakIfNeeded(){
+    var today = todayStr();
+    if (state.lastActiveDate === today) return;
+    if (state.lastActiveDate) {
+      var diffDays = Math.round((new Date(today) - new Date(state.lastActiveDate)) / 86400000);
+      state.streak = (diffDays === 1) ? state.streak + 1 : 1;
+    } else {
+      state.streak = 1;
+    }
+    state.lastActiveDate = today;
+  }
+
+  function pick(arr){ return arr[Math.floor(Math.random()*arr.length)]; }
+
+  function render(){
+    var doneCount = Object.keys(state.today).filter(function(k){ return state.today[k]; }).length;
+    document.getElementById('gardenScene').className = 'garden-scene mood-' + doneCount;
+    document.getElementById('streakBadge').textContent = '🔥 Day ' + Math.max(state.streak,1);
+
+    document.getElementById('statGratitude').textContent = state.totalGratitude;
+    document.getElementById('statReframes').textContent  = state.totalReframes;
+    document.getElementById('statBreaths').textContent   = state.totalBreaths;
+    document.getElementById('statWins').textContent      = state.totalWins;
+
+    ['gratitude','reframe','breathe','win'].forEach(function(key){
+      var idMap = { gratitude:'cardGratitude', reframe:'cardReframe', breathe:'cardBreathe', win:'cardWin' };
+      var el = document.getElementById(idMap[key]);
+      el.classList.toggle('is-done', !!state.today[key]);
+    });
+
+    var flowerBed = document.getElementById('flowerBed');
+    flowerBed.innerHTML = '';
+    var flowerCount = Math.min(state.totalGratitude, 14);
+    for (var i=0;i<flowerCount;i++){
+      var f = document.createElement('span');
+      f.style.setProperty('--i', i);
+      f.textContent = ['🌼','🌷','🌸'][i % 3];
+      flowerBed.appendChild(f);
+    }
+
+    var sunflowerBed = document.getElementById('sunflowerBed');
+    sunflowerBed.innerHTML = '';
+    var sunflowerCount = Math.min(state.totalReframes, 8);
+    for (var j=0;j<sunflowerCount;j++){
+      var sf = document.createElement('span');
+      sf.style.setProperty('--i', j);
+      sf.textContent = '🌻';
+      sunflowerBed.appendChild(sf);
+    }
+
+    document.getElementById('gardenEmptyNote').style.display =
+      (flowerCount === 0 && sunflowerCount === 0) ? 'block' : 'none';
+
+    document.getElementById('butterfly').classList.toggle('show', state.totalBreaths > 0);
+    document.getElementById('bird').classList.toggle('show', state.totalWins > 0);
+    document.getElementById('rainbow').classList.toggle('show', state.today.breathe);
+
+    renderJournal();
+  }
+
+  function renderJournal(){
+    var list = document.getElementById('journalList');
+    if (!state.journal.length){
+      list.innerHTML = '<p style="font-size:.82rem;color:var(--muted);text-align:center;">No entries yet — plant your first gratitude seed above.</p>';
+      return;
+    }
+    var entries = state.journal.slice(-15).reverse();
+    list.innerHTML = entries.map(function(e){
+      return '<div class="journal-entry"><time>' + e.date + '</time>' + escapeHtml(e.text) + '</div>';
+    }).join('');
+  }
+
+  function escapeHtml(str){
+    var d = document.createElement('div');
+    d.textContent = str;
+    return d.innerHTML;
+  }
+
+  document.getElementById('journalToggleBtn').addEventListener('click', function(){
+    var list = document.getElementById('journalList');
+    var showing = list.classList.toggle('show');
+    this.textContent = showing ? '📔 Hide my gratitude journal' : '📔 View my gratitude journal';
+  });
+
+  // ── MODAL HELPERS ──────────────────────────────────────
+  var overlay = document.getElementById('modalOverlay');
+  var box = document.getElementById('modalBox');
+
+  function openModal(html){
+    box.innerHTML = '<button class="modal-close" id="modalCloseBtn" aria-label="Close">✕</button>' + html;
+    overlay.classList.add('show');
+    document.getElementById('modalCloseBtn').addEventListener('click', closeModal);
+  }
+  function closeModal(){
+    overlay.classList.remove('show');
+    box.innerHTML = '';
+  }
+  overlay.addEventListener('click', function(e){ if (e.target === overlay) closeModal(); });
+
+  function celebrate(emoji, message, onDone){
+    openModal(
+      '<div class="celebrate">' +
+        '<span class="big-emoji">' + emoji + '</span>' +
+        '<p>' + message + '</p>' +
+        '<button class="modal-btn" id="celebrateDoneBtn">Back to my garden</button>' +
+      '</div>'
+    );
+    document.getElementById('celebrateDoneBtn').addEventListener('click', function(){
+      closeModal();
+      if (onDone) onDone();
+    });
+  }
+
+  // ── GRATITUDE ACTIVITY ─────────────────────────────────
+  function openGratitude(){
+    var prompt = pick(GRATITUDE_PROMPTS);
+    openModal(
+      '<h2>🌱 Plant a Gratitude Seed</h2>' +
+      '<p class="sub">' + prompt + '</p>' +
+      '<textarea id="gratitudeInput" maxlength="240" placeholder="Even something tiny counts..."></textarea>' +
+      '<button class="modal-btn" id="gratitudeSubmit" disabled>Plant it 🌱</button>'
+    );
+    var input = document.getElementById('gratitudeInput');
+    var btn = document.getElementById('gratitudeSubmit');
+    input.addEventListener('input', function(){ btn.disabled = input.value.trim().length === 0; });
+    btn.addEventListener('click', function(){
+      var text = input.value.trim();
+      if (!text) return;
+      state.journal.push({ date: todayStr(), text: text });
+      state.totalGratitude++;
+      state.today.gratitude = true;
+      bumpStreakIfNeeded();
+      saveState(state);
+      render();
+      celebrate('🌼', 'A new flower bloomed in your garden. That\'s ' + state.totalGratitude + ' so far!');
+    });
+  }
+
+  // ── REFRAME ACTIVITY ───────────────────────────────────
+  function openReframe(){
+    var item = pick(THOUGHT_BANK);
+    openModal(
+      '<h2>🫧 Pop a Heavy Thought</h2>' +
+      '<p class="sub">Tap the bubble to pop it, then pick a more balanced way to see it.</p>' +
+      '<div class="thought-bubble" id="thoughtBubble">"' + item.thought + '" 🫧</div>' +
+      '<div id="reframeOptions"></div>'
+    );
+    document.getElementById('thoughtBubble').addEventListener('click', function(){
+      this.style.display = 'none';
+      var optionsEl = document.getElementById('reframeOptions');
+      optionsEl.innerHTML = item.reframes.map(function(r, idx){
+        return '<button class="reframe-option" data-idx="' + idx + '">' + r + '</button>';
+      }).join('');
+      Array.prototype.forEach.call(optionsEl.querySelectorAll('.reframe-option'), function(optBtn){
+        optBtn.addEventListener('click', function(){
+          state.totalReframes++;
+          state.today.reframe = true;
+          bumpStreakIfNeeded();
+          saveState(state);
+          render();
+          celebrate('🌻', 'A sunflower just grew — balanced thoughts tend to feel a little lighter to carry.');
+        });
+      });
+    });
+  }
+
+  // ── BREATHE ACTIVITY ───────────────────────────────────
+  var breatheTimer = null;
+  function openBreathe(){
+    openModal(
+      '<h2>🌬️ Breathe &amp; Grow</h2>' +
+      '<p class="sub">Follow the circle for four slow rounds. Stop anytime — even one round helps.</p>' +
+      '<div class="breathe-stage">' +
+        '<div class="breathe-cycles" id="breatheCycles">Round 1 of 4</div>' +
+        '<div class="breathe-circle" id="breatheCircle">Breathe in</div>' +
+      '</div>' +
+      '<button class="modal-btn secondary" id="breatheStopBtn">Stop</button>'
+    );
+    var circle = document.getElementById('breatheCircle');
+    var cyclesEl = document.getElementById('breatheCycles');
+    var stopBtn = document.getElementById('breatheStopBtn');
+    var totalCycles = 4;
+    var cycle = 0;
+    var phases = [
+      { cls: 'inhale', label: 'Breathe in',  ms: 4000 },
+      { cls: 'hold',   label: 'Hold',        ms: 4000 },
+      { cls: 'exhale', label: 'Breathe out', ms: 4000 },
+      { cls: 'hold',   label: 'Hold',        ms: 4000 }
+    ];
+    var phaseIdx = 0;
+    var completedAtLeastOne = false;
+
+    function step(){
+      var phase = phases[phaseIdx];
+      circle.className = 'breathe-circle ' + phase.cls;
+      circle.textContent = phase.label;
+      cyclesEl.textContent = 'Round ' + (cycle+1) + ' of ' + totalCycles;
+      breatheTimer = setTimeout(function(){
+        phaseIdx++;
+        if (phaseIdx >= phases.length){
+          phaseIdx = 0;
+          cycle++;
+          completedAtLeastOne = true;
+          if (cycle >= totalCycles){
+            finishBreathing();
+            return;
+          }
+        }
+        step();
+      }, phase.ms);
+    }
+
+    function finishBreathing(){
+      clearTimeout(breatheTimer);
+      state.totalBreaths++;
+      state.today.breathe = true;
+      bumpStreakIfNeeded();
+      saveState(state);
+      render();
+      celebrate('🌈', 'Nicely done — a soft rain passed through and a rainbow is out over your garden.');
+    }
+
+    stopBtn.addEventListener('click', function(){
+      clearTimeout(breatheTimer);
+      if (completedAtLeastOne){
+        finishBreathing();
+      } else {
+        closeModal();
+      }
+    });
+
+    step();
+  }
+
+  // ── TINY WIN ACTIVITY ──────────────────────────────────
+  function openWin(){
+    var shuffled = TINY_WINS.slice().sort(function(){ return Math.random()-0.5; }).slice(0,3);
+    openModal(
+      '<h2>✅ Tiny Win</h2>' +
+      '<p class="sub">Pick one small thing you actually did (or will do right now).</p>' +
+      '<div id="winOptions"></div>'
+    );
+    var optionsEl = document.getElementById('winOptions');
+    optionsEl.innerHTML = shuffled.map(function(w, idx){
+      return '<button class="win-option" data-idx="' + idx + '">' + w + '</button>';
+    }).join('');
+    Array.prototype.forEach.call(optionsEl.querySelectorAll('.win-option'), function(optBtn){
+      optBtn.addEventListener('click', function(){
+        state.totalWins++;
+        state.today.win = true;
+        bumpStreakIfNeeded();
+        saveState(state);
+        render();
+        celebrate('🕊️', 'A visitor stopped by your garden. Small actions add up more than they feel like they do.');
+      });
+    });
+  }
+
+  var ACTIVITY_OPENERS = { gratitude: openGratitude, reframe: openReframe, breathe: openBreathe, win: openWin };
+
+  Array.prototype.forEach.call(document.querySelectorAll('.activity-card'), function(card){
+    card.addEventListener('click', function(){
+      var activity = card.getAttribute('data-activity');
+      if (ACTIVITY_OPENERS[activity]) ACTIVITY_OPENERS[activity]();
+    });
+  });
+
+  saveState(state);
+  render();
+})();
+</script>
+<script src="../assets/shared-nav.js"></script>
+</body>
+</html>

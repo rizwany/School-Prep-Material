@@ -1,0 +1,3160 @@
+{
+  "meta": {
+    "title": "Addiction Risk Self-Screen",
+    "description": "A non-diagnostic 500-question self-screen across 20 addiction-risk and recovery dimensions.",
+    "scale": {
+      "min": 1,
+      "max": 10,
+      "minLabel": "Never / not applicable",
+      "maxLabel": "Very often"
+    },
+    "categories": [
+      {
+        "id": "control",
+        "label": "Loss of Control",
+        "icon": "🎛️"
+      },
+      {
+        "id": "craving",
+        "label": "Craving & Urges",
+        "icon": "🧲"
+      },
+      {
+        "id": "preoccupation",
+        "label": "Preoccupation & Mental Focus",
+        "icon": "🧠"
+      },
+      {
+        "id": "tolerance",
+        "label": "Escalation & Tolerance",
+        "icon": "📈"
+      },
+      {
+        "id": "withdrawal",
+        "label": "Withdrawal & Discomfort",
+        "icon": "⚕️"
+      },
+      {
+        "id": "time_spent",
+        "label": "Time Spent & Recovery Time",
+        "icon": "⏳"
+      },
+      {
+        "id": "role_impact",
+        "label": "Work, Study & Home Responsibilities",
+        "icon": "📋"
+      },
+      {
+        "id": "relationships",
+        "label": "Relationship Impact",
+        "icon": "💬"
+      },
+      {
+        "id": "health",
+        "label": "Physical & Mental Health Impact",
+        "icon": "❤️"
+      },
+      {
+        "id": "hazard",
+        "label": "Hazardous Situations",
+        "icon": "⚠️"
+      },
+      {
+        "id": "continued_harm",
+        "label": "Continued Use Despite Harm",
+        "icon": "🔁"
+      },
+      {
+        "id": "cut_down",
+        "label": "Attempts to Cut Down",
+        "icon": "✂️"
+      },
+      {
+        "id": "secrecy",
+        "label": "Secrecy, Shame & Deception",
+        "icon": "🎭"
+      },
+      {
+        "id": "financial",
+        "label": "Financial Impact",
+        "icon": "💸"
+      },
+      {
+        "id": "coping",
+        "label": "Emotional Coping",
+        "icon": "🌧️"
+      },
+      {
+        "id": "triggers",
+        "label": "Triggers & Cue Reactivity",
+        "icon": "⚡"
+      },
+      {
+        "id": "activities",
+        "label": "Reduced Activities & Interests",
+        "icon": "🎨"
+      },
+      {
+        "id": "support",
+        "label": "Support & Protective Relationships",
+        "icon": "🤝"
+      },
+      {
+        "id": "readiness",
+        "label": "Insight & Readiness for Change",
+        "icon": "🧭"
+      },
+      {
+        "id": "recovery",
+        "label": "Recovery Skills & Lapse Response",
+        "icon": "🌱"
+      }
+    ],
+    "levels": [
+      {
+        "min": 8.5,
+        "max": 10.01,
+        "label": "Very High Current Concern",
+        "emoji": "🆘",
+        "desc": "Your responses indicate many serious warning signs. Please seek prompt assessment from a qualified addiction or healthcare professional. Do not stop alcohol, benzodiazepines, or another dependence-forming substance suddenly without medical advice."
+      },
+      {
+        "min": 7,
+        "max": 8.5,
+        "label": "High Current Concern",
+        "emoji": "⚠️",
+        "desc": "Your responses indicate substantial loss of control or harm. A timely confidential professional assessment and support plan are strongly recommended."
+      },
+      {
+        "min": 5.5,
+        "max": 7,
+        "label": "Elevated Current Concern",
+        "emoji": "🔶",
+        "desc": "Several meaningful warning signs are present. Consider discussing them soon with a qualified healthcare or addiction professional."
+      },
+      {
+        "min": 4,
+        "max": 5.5,
+        "label": "Moderate Current Concern",
+        "emoji": "🟠",
+        "desc": "Some patterns may be affecting safety, wellbeing, or responsibilities. Early support can help clarify risk and prevent escalation."
+      },
+      {
+        "min": 2.5,
+        "max": 4,
+        "label": "Some Warning Signs",
+        "emoji": "🟡",
+        "desc": "A smaller number of warning signs appear present. Pay attention to changes, consequences, and difficulty controlling the pattern; seek help if concerned."
+      },
+      {
+        "min": 1,
+        "max": 2.5,
+        "label": "Lower Current Concern — Not No Risk",
+        "emoji": "🟢",
+        "desc": "Fewer warning signs were endorsed, but this does not rule out risk or a disorder. Any overdose, dangerous withdrawal, or serious consequence needs professional attention."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "category": "control",
+      "reverse": false,
+      "text": "Over the past 12 months, how often did you continue longer or in greater amounts than you intended?"
+    },
+    {
+      "id": 2,
+      "category": "control",
+      "reverse": true,
+      "text": "When you felt stressed or overwhelmed, how often did you stay within a limit you had decided beforehand?"
+    },
+    {
+      "id": 3,
+      "category": "control",
+      "reverse": false,
+      "text": "When you felt lonely or disconnected, how often did you find it difficult to stop once you had started?"
+    },
+    {
+      "id": 4,
+      "category": "control",
+      "reverse": true,
+      "text": "After a conflict or disappointment, how often did you stop when you recognised that continuing was unwise?"
+    },
+    {
+      "id": 5,
+      "category": "control",
+      "reverse": false,
+      "text": "When the opportunity was readily available, how often did you continue longer or in greater amounts than you intended?"
+    },
+    {
+      "id": 6,
+      "category": "control",
+      "reverse": true,
+      "text": "When you had planned to do something else, how often did you stay within a limit you had decided beforehand?"
+    },
+    {
+      "id": 7,
+      "category": "control",
+      "reverse": false,
+      "text": "During a work or study period, how often did you find it difficult to stop once you had started?"
+    },
+    {
+      "id": 8,
+      "category": "control",
+      "reverse": true,
+      "text": "When people close to you expressed concern, how often did you stop when you recognised that continuing was unwise?"
+    },
+    {
+      "id": 9,
+      "category": "control",
+      "reverse": false,
+      "text": "After noticing an unwanted consequence, how often did you continue longer or in greater amounts than you intended?"
+    },
+    {
+      "id": 10,
+      "category": "control",
+      "reverse": true,
+      "text": "When trying to reduce or stop, how often did you stay within a limit you had decided beforehand?"
+    },
+    {
+      "id": 11,
+      "category": "control",
+      "reverse": false,
+      "text": "During a celebration or social event, how often did you find it difficult to stop once you had started?"
+    },
+    {
+      "id": 12,
+      "category": "control",
+      "reverse": true,
+      "text": "When you were tired or unable to sleep, how often did you stop when you recognised that continuing was unwise?"
+    },
+    {
+      "id": 13,
+      "category": "control",
+      "reverse": false,
+      "text": "When money was limited, how often did you continue longer or in greater amounts than you intended?"
+    },
+    {
+      "id": 14,
+      "category": "control",
+      "reverse": true,
+      "text": "When your mood was low, how often did you stay within a limit you had decided beforehand?"
+    },
+    {
+      "id": 15,
+      "category": "control",
+      "reverse": false,
+      "text": "When you felt anxious or restless, how often did you find it difficult to stop once you had started?"
+    },
+    {
+      "id": 16,
+      "category": "control",
+      "reverse": true,
+      "text": "When an urge appeared unexpectedly, how often did you stop when you recognised that continuing was unwise?"
+    },
+    {
+      "id": 17,
+      "category": "control",
+      "reverse": false,
+      "text": "After a period of avoiding it, how often did you continue longer or in greater amounts than you intended?"
+    },
+    {
+      "id": 18,
+      "category": "control",
+      "reverse": true,
+      "text": "When no one else was present, how often did you stay within a limit you had decided beforehand?"
+    },
+    {
+      "id": 19,
+      "category": "control",
+      "reverse": false,
+      "text": "When an important responsibility was due, how often did you find it difficult to stop once you had started?"
+    },
+    {
+      "id": 20,
+      "category": "control",
+      "reverse": true,
+      "text": "When thinking about your health, how often did you stop when you recognised that continuing was unwise?"
+    },
+    {
+      "id": 21,
+      "category": "control",
+      "reverse": false,
+      "text": "When a familiar cue or trigger appeared, how often did you continue longer or in greater amounts than you intended?"
+    },
+    {
+      "id": 22,
+      "category": "control",
+      "reverse": true,
+      "text": "When support was available, how often did you stay within a limit you had decided beforehand?"
+    },
+    {
+      "id": 23,
+      "category": "control",
+      "reverse": false,
+      "text": "After making a personal limit, how often did you find it difficult to stop once you had started?"
+    },
+    {
+      "id": 24,
+      "category": "control",
+      "reverse": true,
+      "text": "When reviewing its effect on your life, how often did you stop when you recognised that continuing was unwise?"
+    },
+    {
+      "id": 25,
+      "category": "control",
+      "reverse": false,
+      "text": "Across repeated episodes or occasions, how often did you continue longer or in greater amounts than you intended?"
+    },
+    {
+      "id": 26,
+      "category": "craving",
+      "reverse": false,
+      "text": "Over the past 12 months, how often did you experience a strong urge that was difficult to ignore?"
+    },
+    {
+      "id": 27,
+      "category": "craving",
+      "reverse": true,
+      "text": "When you felt stressed or overwhelmed, how often did you allow an urge to pass without acting on it?"
+    },
+    {
+      "id": 28,
+      "category": "craving",
+      "reverse": false,
+      "text": "When you felt lonely or disconnected, how often did you feel driven toward the substance or behaviour despite another plan?"
+    },
+    {
+      "id": 29,
+      "category": "craving",
+      "reverse": true,
+      "text": "After a conflict or disappointment, how often did you use a safe coping response when a strong urge appeared?"
+    },
+    {
+      "id": 30,
+      "category": "craving",
+      "reverse": false,
+      "text": "When the opportunity was readily available, how often did you experience a strong urge that was difficult to ignore?"
+    },
+    {
+      "id": 31,
+      "category": "craving",
+      "reverse": true,
+      "text": "When you had planned to do something else, how often did you allow an urge to pass without acting on it?"
+    },
+    {
+      "id": 32,
+      "category": "craving",
+      "reverse": false,
+      "text": "During a work or study period, how often did you feel driven toward the substance or behaviour despite another plan?"
+    },
+    {
+      "id": 33,
+      "category": "craving",
+      "reverse": true,
+      "text": "When people close to you expressed concern, how often did you use a safe coping response when a strong urge appeared?"
+    },
+    {
+      "id": 34,
+      "category": "craving",
+      "reverse": false,
+      "text": "After noticing an unwanted consequence, how often did you experience a strong urge that was difficult to ignore?"
+    },
+    {
+      "id": 35,
+      "category": "craving",
+      "reverse": true,
+      "text": "When trying to reduce or stop, how often did you allow an urge to pass without acting on it?"
+    },
+    {
+      "id": 36,
+      "category": "craving",
+      "reverse": false,
+      "text": "During a celebration or social event, how often did you feel driven toward the substance or behaviour despite another plan?"
+    },
+    {
+      "id": 37,
+      "category": "craving",
+      "reverse": true,
+      "text": "When you were tired or unable to sleep, how often did you use a safe coping response when a strong urge appeared?"
+    },
+    {
+      "id": 38,
+      "category": "craving",
+      "reverse": false,
+      "text": "When money was limited, how often did you experience a strong urge that was difficult to ignore?"
+    },
+    {
+      "id": 39,
+      "category": "craving",
+      "reverse": true,
+      "text": "When your mood was low, how often did you allow an urge to pass without acting on it?"
+    },
+    {
+      "id": 40,
+      "category": "craving",
+      "reverse": false,
+      "text": "When you felt anxious or restless, how often did you feel driven toward the substance or behaviour despite another plan?"
+    },
+    {
+      "id": 41,
+      "category": "craving",
+      "reverse": true,
+      "text": "When an urge appeared unexpectedly, how often did you use a safe coping response when a strong urge appeared?"
+    },
+    {
+      "id": 42,
+      "category": "craving",
+      "reverse": false,
+      "text": "After a period of avoiding it, how often did you experience a strong urge that was difficult to ignore?"
+    },
+    {
+      "id": 43,
+      "category": "craving",
+      "reverse": true,
+      "text": "When no one else was present, how often did you allow an urge to pass without acting on it?"
+    },
+    {
+      "id": 44,
+      "category": "craving",
+      "reverse": false,
+      "text": "When an important responsibility was due, how often did you feel driven toward the substance or behaviour despite another plan?"
+    },
+    {
+      "id": 45,
+      "category": "craving",
+      "reverse": true,
+      "text": "When thinking about your health, how often did you use a safe coping response when a strong urge appeared?"
+    },
+    {
+      "id": 46,
+      "category": "craving",
+      "reverse": false,
+      "text": "When a familiar cue or trigger appeared, how often did you experience a strong urge that was difficult to ignore?"
+    },
+    {
+      "id": 47,
+      "category": "craving",
+      "reverse": true,
+      "text": "When support was available, how often did you allow an urge to pass without acting on it?"
+    },
+    {
+      "id": 48,
+      "category": "craving",
+      "reverse": false,
+      "text": "After making a personal limit, how often did you feel driven toward the substance or behaviour despite another plan?"
+    },
+    {
+      "id": 49,
+      "category": "craving",
+      "reverse": true,
+      "text": "When reviewing its effect on your life, how often did you use a safe coping response when a strong urge appeared?"
+    },
+    {
+      "id": 50,
+      "category": "craving",
+      "reverse": false,
+      "text": "Across repeated episodes or occasions, how often did you experience a strong urge that was difficult to ignore?"
+    },
+    {
+      "id": 51,
+      "category": "preoccupation",
+      "reverse": false,
+      "text": "Over the past 12 months, how often did you spend substantial time thinking about the next opportunity to engage?"
+    },
+    {
+      "id": 52,
+      "category": "preoccupation",
+      "reverse": true,
+      "text": "When you felt stressed or overwhelmed, how often did you redirect your attention to an important responsibility?"
+    },
+    {
+      "id": 53,
+      "category": "preoccupation",
+      "reverse": false,
+      "text": "When you felt lonely or disconnected, how often did you find thoughts about it crowding out other priorities?"
+    },
+    {
+      "id": 54,
+      "category": "preoccupation",
+      "reverse": true,
+      "text": "After a conflict or disappointment, how often did you go through the day without it dominating your thoughts?"
+    },
+    {
+      "id": 55,
+      "category": "preoccupation",
+      "reverse": false,
+      "text": "When the opportunity was readily available, how often did you spend substantial time thinking about the next opportunity to engage?"
+    },
+    {
+      "id": 56,
+      "category": "preoccupation",
+      "reverse": true,
+      "text": "When you had planned to do something else, how often did you redirect your attention to an important responsibility?"
+    },
+    {
+      "id": 57,
+      "category": "preoccupation",
+      "reverse": false,
+      "text": "During a work or study period, how often did you find thoughts about it crowding out other priorities?"
+    },
+    {
+      "id": 58,
+      "category": "preoccupation",
+      "reverse": true,
+      "text": "When people close to you expressed concern, how often did you go through the day without it dominating your thoughts?"
+    },
+    {
+      "id": 59,
+      "category": "preoccupation",
+      "reverse": false,
+      "text": "After noticing an unwanted consequence, how often did you spend substantial time thinking about the next opportunity to engage?"
+    },
+    {
+      "id": 60,
+      "category": "preoccupation",
+      "reverse": true,
+      "text": "When trying to reduce or stop, how often did you redirect your attention to an important responsibility?"
+    },
+    {
+      "id": 61,
+      "category": "preoccupation",
+      "reverse": false,
+      "text": "During a celebration or social event, how often did you find thoughts about it crowding out other priorities?"
+    },
+    {
+      "id": 62,
+      "category": "preoccupation",
+      "reverse": true,
+      "text": "When you were tired or unable to sleep, how often did you go through the day without it dominating your thoughts?"
+    },
+    {
+      "id": 63,
+      "category": "preoccupation",
+      "reverse": false,
+      "text": "When money was limited, how often did you spend substantial time thinking about the next opportunity to engage?"
+    },
+    {
+      "id": 64,
+      "category": "preoccupation",
+      "reverse": true,
+      "text": "When your mood was low, how often did you redirect your attention to an important responsibility?"
+    },
+    {
+      "id": 65,
+      "category": "preoccupation",
+      "reverse": false,
+      "text": "When you felt anxious or restless, how often did you find thoughts about it crowding out other priorities?"
+    },
+    {
+      "id": 66,
+      "category": "preoccupation",
+      "reverse": true,
+      "text": "When an urge appeared unexpectedly, how often did you go through the day without it dominating your thoughts?"
+    },
+    {
+      "id": 67,
+      "category": "preoccupation",
+      "reverse": false,
+      "text": "After a period of avoiding it, how often did you spend substantial time thinking about the next opportunity to engage?"
+    },
+    {
+      "id": 68,
+      "category": "preoccupation",
+      "reverse": true,
+      "text": "When no one else was present, how often did you redirect your attention to an important responsibility?"
+    },
+    {
+      "id": 69,
+      "category": "preoccupation",
+      "reverse": false,
+      "text": "When an important responsibility was due, how often did you find thoughts about it crowding out other priorities?"
+    },
+    {
+      "id": 70,
+      "category": "preoccupation",
+      "reverse": true,
+      "text": "When thinking about your health, how often did you go through the day without it dominating your thoughts?"
+    },
+    {
+      "id": 71,
+      "category": "preoccupation",
+      "reverse": false,
+      "text": "When a familiar cue or trigger appeared, how often did you spend substantial time thinking about the next opportunity to engage?"
+    },
+    {
+      "id": 72,
+      "category": "preoccupation",
+      "reverse": true,
+      "text": "When support was available, how often did you redirect your attention to an important responsibility?"
+    },
+    {
+      "id": 73,
+      "category": "preoccupation",
+      "reverse": false,
+      "text": "After making a personal limit, how often did you find thoughts about it crowding out other priorities?"
+    },
+    {
+      "id": 74,
+      "category": "preoccupation",
+      "reverse": true,
+      "text": "When reviewing its effect on your life, how often did you go through the day without it dominating your thoughts?"
+    },
+    {
+      "id": 75,
+      "category": "preoccupation",
+      "reverse": false,
+      "text": "Across repeated episodes or occasions, how often did you spend substantial time thinking about the next opportunity to engage?"
+    },
+    {
+      "id": 76,
+      "category": "tolerance",
+      "reverse": false,
+      "text": "Over the past 12 months, how often did you need more intensity, time, or amount to get a similar effect?"
+    },
+    {
+      "id": 77,
+      "category": "tolerance",
+      "reverse": true,
+      "text": "When you felt stressed or overwhelmed, how often did you avoid increasing the amount or intensity to chase an effect?"
+    },
+    {
+      "id": 78,
+      "category": "tolerance",
+      "reverse": false,
+      "text": "When you felt lonely or disconnected, how often did you increase your involvement because the previous level felt less effective?"
+    },
+    {
+      "id": 79,
+      "category": "tolerance",
+      "reverse": true,
+      "text": "After a conflict or disappointment, how often did you notice escalation and respond by seeking safer guidance?"
+    },
+    {
+      "id": 80,
+      "category": "tolerance",
+      "reverse": false,
+      "text": "When the opportunity was readily available, how often did you need more intensity, time, or amount to get a similar effect?"
+    },
+    {
+      "id": 81,
+      "category": "tolerance",
+      "reverse": true,
+      "text": "When you had planned to do something else, how often did you avoid increasing the amount or intensity to chase an effect?"
+    },
+    {
+      "id": 82,
+      "category": "tolerance",
+      "reverse": false,
+      "text": "During a work or study period, how often did you increase your involvement because the previous level felt less effective?"
+    },
+    {
+      "id": 83,
+      "category": "tolerance",
+      "reverse": true,
+      "text": "When people close to you expressed concern, how often did you notice escalation and respond by seeking safer guidance?"
+    },
+    {
+      "id": 84,
+      "category": "tolerance",
+      "reverse": false,
+      "text": "After noticing an unwanted consequence, how often did you need more intensity, time, or amount to get a similar effect?"
+    },
+    {
+      "id": 85,
+      "category": "tolerance",
+      "reverse": true,
+      "text": "When trying to reduce or stop, how often did you avoid increasing the amount or intensity to chase an effect?"
+    },
+    {
+      "id": 86,
+      "category": "tolerance",
+      "reverse": false,
+      "text": "During a celebration or social event, how often did you increase your involvement because the previous level felt less effective?"
+    },
+    {
+      "id": 87,
+      "category": "tolerance",
+      "reverse": true,
+      "text": "When you were tired or unable to sleep, how often did you notice escalation and respond by seeking safer guidance?"
+    },
+    {
+      "id": 88,
+      "category": "tolerance",
+      "reverse": false,
+      "text": "When money was limited, how often did you need more intensity, time, or amount to get a similar effect?"
+    },
+    {
+      "id": 89,
+      "category": "tolerance",
+      "reverse": true,
+      "text": "When your mood was low, how often did you avoid increasing the amount or intensity to chase an effect?"
+    },
+    {
+      "id": 90,
+      "category": "tolerance",
+      "reverse": false,
+      "text": "When you felt anxious or restless, how often did you increase your involvement because the previous level felt less effective?"
+    },
+    {
+      "id": 91,
+      "category": "tolerance",
+      "reverse": true,
+      "text": "When an urge appeared unexpectedly, how often did you notice escalation and respond by seeking safer guidance?"
+    },
+    {
+      "id": 92,
+      "category": "tolerance",
+      "reverse": false,
+      "text": "After a period of avoiding it, how often did you need more intensity, time, or amount to get a similar effect?"
+    },
+    {
+      "id": 93,
+      "category": "tolerance",
+      "reverse": true,
+      "text": "When no one else was present, how often did you avoid increasing the amount or intensity to chase an effect?"
+    },
+    {
+      "id": 94,
+      "category": "tolerance",
+      "reverse": false,
+      "text": "When an important responsibility was due, how often did you increase your involvement because the previous level felt less effective?"
+    },
+    {
+      "id": 95,
+      "category": "tolerance",
+      "reverse": true,
+      "text": "When thinking about your health, how often did you notice escalation and respond by seeking safer guidance?"
+    },
+    {
+      "id": 96,
+      "category": "tolerance",
+      "reverse": false,
+      "text": "When a familiar cue or trigger appeared, how often did you need more intensity, time, or amount to get a similar effect?"
+    },
+    {
+      "id": 97,
+      "category": "tolerance",
+      "reverse": true,
+      "text": "When support was available, how often did you avoid increasing the amount or intensity to chase an effect?"
+    },
+    {
+      "id": 98,
+      "category": "tolerance",
+      "reverse": false,
+      "text": "After making a personal limit, how often did you increase your involvement because the previous level felt less effective?"
+    },
+    {
+      "id": 99,
+      "category": "tolerance",
+      "reverse": true,
+      "text": "When reviewing its effect on your life, how often did you notice escalation and respond by seeking safer guidance?"
+    },
+    {
+      "id": 100,
+      "category": "tolerance",
+      "reverse": false,
+      "text": "Across repeated episodes or occasions, how often did you need more intensity, time, or amount to get a similar effect?"
+    },
+    {
+      "id": 101,
+      "category": "withdrawal",
+      "reverse": false,
+      "text": "Over the past 12 months, how often did you experience distressing physical or emotional symptoms when reducing or stopping?"
+    },
+    {
+      "id": 102,
+      "category": "withdrawal",
+      "reverse": true,
+      "text": "When you felt stressed or overwhelmed, how often did you seek medical advice when stopping might carry withdrawal risk?"
+    },
+    {
+      "id": 103,
+      "category": "withdrawal",
+      "reverse": false,
+      "text": "When you felt lonely or disconnected, how often did you return to it mainly to relieve symptoms that appeared after cutting down?"
+    },
+    {
+      "id": 104,
+      "category": "withdrawal",
+      "reverse": true,
+      "text": "After a conflict or disappointment, how often did you use an agreed professional plan rather than managing dangerous symptoms alone?"
+    },
+    {
+      "id": 105,
+      "category": "withdrawal",
+      "reverse": false,
+      "text": "When the opportunity was readily available, how often did you experience distressing physical or emotional symptoms when reducing or stopping?"
+    },
+    {
+      "id": 106,
+      "category": "withdrawal",
+      "reverse": true,
+      "text": "When you had planned to do something else, how often did you seek medical advice when stopping might carry withdrawal risk?"
+    },
+    {
+      "id": 107,
+      "category": "withdrawal",
+      "reverse": false,
+      "text": "During a work or study period, how often did you return to it mainly to relieve symptoms that appeared after cutting down?"
+    },
+    {
+      "id": 108,
+      "category": "withdrawal",
+      "reverse": true,
+      "text": "When people close to you expressed concern, how often did you use an agreed professional plan rather than managing dangerous symptoms alone?"
+    },
+    {
+      "id": 109,
+      "category": "withdrawal",
+      "reverse": false,
+      "text": "After noticing an unwanted consequence, how often did you experience distressing physical or emotional symptoms when reducing or stopping?"
+    },
+    {
+      "id": 110,
+      "category": "withdrawal",
+      "reverse": true,
+      "text": "When trying to reduce or stop, how often did you seek medical advice when stopping might carry withdrawal risk?"
+    },
+    {
+      "id": 111,
+      "category": "withdrawal",
+      "reverse": false,
+      "text": "During a celebration or social event, how often did you return to it mainly to relieve symptoms that appeared after cutting down?"
+    },
+    {
+      "id": 112,
+      "category": "withdrawal",
+      "reverse": true,
+      "text": "When you were tired or unable to sleep, how often did you use an agreed professional plan rather than managing dangerous symptoms alone?"
+    },
+    {
+      "id": 113,
+      "category": "withdrawal",
+      "reverse": false,
+      "text": "When money was limited, how often did you experience distressing physical or emotional symptoms when reducing or stopping?"
+    },
+    {
+      "id": 114,
+      "category": "withdrawal",
+      "reverse": true,
+      "text": "When your mood was low, how often did you seek medical advice when stopping might carry withdrawal risk?"
+    },
+    {
+      "id": 115,
+      "category": "withdrawal",
+      "reverse": false,
+      "text": "When you felt anxious or restless, how often did you return to it mainly to relieve symptoms that appeared after cutting down?"
+    },
+    {
+      "id": 116,
+      "category": "withdrawal",
+      "reverse": true,
+      "text": "When an urge appeared unexpectedly, how often did you use an agreed professional plan rather than managing dangerous symptoms alone?"
+    },
+    {
+      "id": 117,
+      "category": "withdrawal",
+      "reverse": false,
+      "text": "After a period of avoiding it, how often did you experience distressing physical or emotional symptoms when reducing or stopping?"
+    },
+    {
+      "id": 118,
+      "category": "withdrawal",
+      "reverse": true,
+      "text": "When no one else was present, how often did you seek medical advice when stopping might carry withdrawal risk?"
+    },
+    {
+      "id": 119,
+      "category": "withdrawal",
+      "reverse": false,
+      "text": "When an important responsibility was due, how often did you return to it mainly to relieve symptoms that appeared after cutting down?"
+    },
+    {
+      "id": 120,
+      "category": "withdrawal",
+      "reverse": true,
+      "text": "When thinking about your health, how often did you use an agreed professional plan rather than managing dangerous symptoms alone?"
+    },
+    {
+      "id": 121,
+      "category": "withdrawal",
+      "reverse": false,
+      "text": "When a familiar cue or trigger appeared, how often did you experience distressing physical or emotional symptoms when reducing or stopping?"
+    },
+    {
+      "id": 122,
+      "category": "withdrawal",
+      "reverse": true,
+      "text": "When support was available, how often did you seek medical advice when stopping might carry withdrawal risk?"
+    },
+    {
+      "id": 123,
+      "category": "withdrawal",
+      "reverse": false,
+      "text": "After making a personal limit, how often did you return to it mainly to relieve symptoms that appeared after cutting down?"
+    },
+    {
+      "id": 124,
+      "category": "withdrawal",
+      "reverse": true,
+      "text": "When reviewing its effect on your life, how often did you use an agreed professional plan rather than managing dangerous symptoms alone?"
+    },
+    {
+      "id": 125,
+      "category": "withdrawal",
+      "reverse": false,
+      "text": "Across repeated episodes or occasions, how often did you experience distressing physical or emotional symptoms when reducing or stopping?"
+    },
+    {
+      "id": 126,
+      "category": "time_spent",
+      "reverse": false,
+      "text": "Over the past 12 months, how often did you spend a large amount of time obtaining, engaging in, or recovering from it?"
+    },
+    {
+      "id": 127,
+      "category": "time_spent",
+      "reverse": true,
+      "text": "When you felt stressed or overwhelmed, how often did you protect time for responsibilities, rest, and relationships?"
+    },
+    {
+      "id": 128,
+      "category": "time_spent",
+      "reverse": false,
+      "text": "When you felt lonely or disconnected, how often did you lose significant time that you had meant to use elsewhere?"
+    },
+    {
+      "id": 129,
+      "category": "time_spent",
+      "reverse": true,
+      "text": "After a conflict or disappointment, how often did you recognise excessive time use and interrupt the pattern?"
+    },
+    {
+      "id": 130,
+      "category": "time_spent",
+      "reverse": false,
+      "text": "When the opportunity was readily available, how often did you spend a large amount of time obtaining, engaging in, or recovering from it?"
+    },
+    {
+      "id": 131,
+      "category": "time_spent",
+      "reverse": true,
+      "text": "When you had planned to do something else, how often did you protect time for responsibilities, rest, and relationships?"
+    },
+    {
+      "id": 132,
+      "category": "time_spent",
+      "reverse": false,
+      "text": "During a work or study period, how often did you lose significant time that you had meant to use elsewhere?"
+    },
+    {
+      "id": 133,
+      "category": "time_spent",
+      "reverse": true,
+      "text": "When people close to you expressed concern, how often did you recognise excessive time use and interrupt the pattern?"
+    },
+    {
+      "id": 134,
+      "category": "time_spent",
+      "reverse": false,
+      "text": "After noticing an unwanted consequence, how often did you spend a large amount of time obtaining, engaging in, or recovering from it?"
+    },
+    {
+      "id": 135,
+      "category": "time_spent",
+      "reverse": true,
+      "text": "When trying to reduce or stop, how often did you protect time for responsibilities, rest, and relationships?"
+    },
+    {
+      "id": 136,
+      "category": "time_spent",
+      "reverse": false,
+      "text": "During a celebration or social event, how often did you lose significant time that you had meant to use elsewhere?"
+    },
+    {
+      "id": 137,
+      "category": "time_spent",
+      "reverse": true,
+      "text": "When you were tired or unable to sleep, how often did you recognise excessive time use and interrupt the pattern?"
+    },
+    {
+      "id": 138,
+      "category": "time_spent",
+      "reverse": false,
+      "text": "When money was limited, how often did you spend a large amount of time obtaining, engaging in, or recovering from it?"
+    },
+    {
+      "id": 139,
+      "category": "time_spent",
+      "reverse": true,
+      "text": "When your mood was low, how often did you protect time for responsibilities, rest, and relationships?"
+    },
+    {
+      "id": 140,
+      "category": "time_spent",
+      "reverse": false,
+      "text": "When you felt anxious or restless, how often did you lose significant time that you had meant to use elsewhere?"
+    },
+    {
+      "id": 141,
+      "category": "time_spent",
+      "reverse": true,
+      "text": "When an urge appeared unexpectedly, how often did you recognise excessive time use and interrupt the pattern?"
+    },
+    {
+      "id": 142,
+      "category": "time_spent",
+      "reverse": false,
+      "text": "After a period of avoiding it, how often did you spend a large amount of time obtaining, engaging in, or recovering from it?"
+    },
+    {
+      "id": 143,
+      "category": "time_spent",
+      "reverse": true,
+      "text": "When no one else was present, how often did you protect time for responsibilities, rest, and relationships?"
+    },
+    {
+      "id": 144,
+      "category": "time_spent",
+      "reverse": false,
+      "text": "When an important responsibility was due, how often did you lose significant time that you had meant to use elsewhere?"
+    },
+    {
+      "id": 145,
+      "category": "time_spent",
+      "reverse": true,
+      "text": "When thinking about your health, how often did you recognise excessive time use and interrupt the pattern?"
+    },
+    {
+      "id": 146,
+      "category": "time_spent",
+      "reverse": false,
+      "text": "When a familiar cue or trigger appeared, how often did you spend a large amount of time obtaining, engaging in, or recovering from it?"
+    },
+    {
+      "id": 147,
+      "category": "time_spent",
+      "reverse": true,
+      "text": "When support was available, how often did you protect time for responsibilities, rest, and relationships?"
+    },
+    {
+      "id": 148,
+      "category": "time_spent",
+      "reverse": false,
+      "text": "After making a personal limit, how often did you lose significant time that you had meant to use elsewhere?"
+    },
+    {
+      "id": 149,
+      "category": "time_spent",
+      "reverse": true,
+      "text": "When reviewing its effect on your life, how often did you recognise excessive time use and interrupt the pattern?"
+    },
+    {
+      "id": 150,
+      "category": "time_spent",
+      "reverse": false,
+      "text": "Across repeated episodes or occasions, how often did you spend a large amount of time obtaining, engaging in, or recovering from it?"
+    },
+    {
+      "id": 151,
+      "category": "role_impact",
+      "reverse": false,
+      "text": "Over the past 12 months, how often did you miss or neglect an important work, study, or home responsibility because of it?"
+    },
+    {
+      "id": 152,
+      "category": "role_impact",
+      "reverse": true,
+      "text": "When you felt stressed or overwhelmed, how often did you complete key responsibilities without interference from it?"
+    },
+    {
+      "id": 153,
+      "category": "role_impact",
+      "reverse": false,
+      "text": "When you felt lonely or disconnected, how often did you perform below your usual level because of use, engagement, or recovery?"
+    },
+    {
+      "id": 154,
+      "category": "role_impact",
+      "reverse": true,
+      "text": "After a conflict or disappointment, how often did you make a safer plan when it threatened an important obligation?"
+    },
+    {
+      "id": 155,
+      "category": "role_impact",
+      "reverse": false,
+      "text": "When the opportunity was readily available, how often did you miss or neglect an important work, study, or home responsibility because of it?"
+    },
+    {
+      "id": 156,
+      "category": "role_impact",
+      "reverse": true,
+      "text": "When you had planned to do something else, how often did you complete key responsibilities without interference from it?"
+    },
+    {
+      "id": 157,
+      "category": "role_impact",
+      "reverse": false,
+      "text": "During a work or study period, how often did you perform below your usual level because of use, engagement, or recovery?"
+    },
+    {
+      "id": 158,
+      "category": "role_impact",
+      "reverse": true,
+      "text": "When people close to you expressed concern, how often did you make a safer plan when it threatened an important obligation?"
+    },
+    {
+      "id": 159,
+      "category": "role_impact",
+      "reverse": false,
+      "text": "After noticing an unwanted consequence, how often did you miss or neglect an important work, study, or home responsibility because of it?"
+    },
+    {
+      "id": 160,
+      "category": "role_impact",
+      "reverse": true,
+      "text": "When trying to reduce or stop, how often did you complete key responsibilities without interference from it?"
+    },
+    {
+      "id": 161,
+      "category": "role_impact",
+      "reverse": false,
+      "text": "During a celebration or social event, how often did you perform below your usual level because of use, engagement, or recovery?"
+    },
+    {
+      "id": 162,
+      "category": "role_impact",
+      "reverse": true,
+      "text": "When you were tired or unable to sleep, how often did you make a safer plan when it threatened an important obligation?"
+    },
+    {
+      "id": 163,
+      "category": "role_impact",
+      "reverse": false,
+      "text": "When money was limited, how often did you miss or neglect an important work, study, or home responsibility because of it?"
+    },
+    {
+      "id": 164,
+      "category": "role_impact",
+      "reverse": true,
+      "text": "When your mood was low, how often did you complete key responsibilities without interference from it?"
+    },
+    {
+      "id": 165,
+      "category": "role_impact",
+      "reverse": false,
+      "text": "When you felt anxious or restless, how often did you perform below your usual level because of use, engagement, or recovery?"
+    },
+    {
+      "id": 166,
+      "category": "role_impact",
+      "reverse": true,
+      "text": "When an urge appeared unexpectedly, how often did you make a safer plan when it threatened an important obligation?"
+    },
+    {
+      "id": 167,
+      "category": "role_impact",
+      "reverse": false,
+      "text": "After a period of avoiding it, how often did you miss or neglect an important work, study, or home responsibility because of it?"
+    },
+    {
+      "id": 168,
+      "category": "role_impact",
+      "reverse": true,
+      "text": "When no one else was present, how often did you complete key responsibilities without interference from it?"
+    },
+    {
+      "id": 169,
+      "category": "role_impact",
+      "reverse": false,
+      "text": "When an important responsibility was due, how often did you perform below your usual level because of use, engagement, or recovery?"
+    },
+    {
+      "id": 170,
+      "category": "role_impact",
+      "reverse": true,
+      "text": "When thinking about your health, how often did you make a safer plan when it threatened an important obligation?"
+    },
+    {
+      "id": 171,
+      "category": "role_impact",
+      "reverse": false,
+      "text": "When a familiar cue or trigger appeared, how often did you miss or neglect an important work, study, or home responsibility because of it?"
+    },
+    {
+      "id": 172,
+      "category": "role_impact",
+      "reverse": true,
+      "text": "When support was available, how often did you complete key responsibilities without interference from it?"
+    },
+    {
+      "id": 173,
+      "category": "role_impact",
+      "reverse": false,
+      "text": "After making a personal limit, how often did you perform below your usual level because of use, engagement, or recovery?"
+    },
+    {
+      "id": 174,
+      "category": "role_impact",
+      "reverse": true,
+      "text": "When reviewing its effect on your life, how often did you make a safer plan when it threatened an important obligation?"
+    },
+    {
+      "id": 175,
+      "category": "role_impact",
+      "reverse": false,
+      "text": "Across repeated episodes or occasions, how often did you miss or neglect an important work, study, or home responsibility because of it?"
+    },
+    {
+      "id": 176,
+      "category": "relationships",
+      "reverse": false,
+      "text": "Over the past 12 months, how often did you continue despite repeated conflict with people close to you?"
+    },
+    {
+      "id": 177,
+      "category": "relationships",
+      "reverse": true,
+      "text": "When you felt stressed or overwhelmed, how often did you discuss concerns honestly with a trusted person?"
+    },
+    {
+      "id": 178,
+      "category": "relationships",
+      "reverse": false,
+      "text": "When you felt lonely or disconnected, how often did you withdraw from people or become unreliable because of it?"
+    },
+    {
+      "id": 179,
+      "category": "relationships",
+      "reverse": true,
+      "text": "After a conflict or disappointment, how often did you protect an important relationship from the pattern’s effects?"
+    },
+    {
+      "id": 180,
+      "category": "relationships",
+      "reverse": false,
+      "text": "When the opportunity was readily available, how often did you continue despite repeated conflict with people close to you?"
+    },
+    {
+      "id": 181,
+      "category": "relationships",
+      "reverse": true,
+      "text": "When you had planned to do something else, how often did you discuss concerns honestly with a trusted person?"
+    },
+    {
+      "id": 182,
+      "category": "relationships",
+      "reverse": false,
+      "text": "During a work or study period, how often did you withdraw from people or become unreliable because of it?"
+    },
+    {
+      "id": 183,
+      "category": "relationships",
+      "reverse": true,
+      "text": "When people close to you expressed concern, how often did you protect an important relationship from the pattern’s effects?"
+    },
+    {
+      "id": 184,
+      "category": "relationships",
+      "reverse": false,
+      "text": "After noticing an unwanted consequence, how often did you continue despite repeated conflict with people close to you?"
+    },
+    {
+      "id": 185,
+      "category": "relationships",
+      "reverse": true,
+      "text": "When trying to reduce or stop, how often did you discuss concerns honestly with a trusted person?"
+    },
+    {
+      "id": 186,
+      "category": "relationships",
+      "reverse": false,
+      "text": "During a celebration or social event, how often did you withdraw from people or become unreliable because of it?"
+    },
+    {
+      "id": 187,
+      "category": "relationships",
+      "reverse": true,
+      "text": "When you were tired or unable to sleep, how often did you protect an important relationship from the pattern’s effects?"
+    },
+    {
+      "id": 188,
+      "category": "relationships",
+      "reverse": false,
+      "text": "When money was limited, how often did you continue despite repeated conflict with people close to you?"
+    },
+    {
+      "id": 189,
+      "category": "relationships",
+      "reverse": true,
+      "text": "When your mood was low, how often did you discuss concerns honestly with a trusted person?"
+    },
+    {
+      "id": 190,
+      "category": "relationships",
+      "reverse": false,
+      "text": "When you felt anxious or restless, how often did you withdraw from people or become unreliable because of it?"
+    },
+    {
+      "id": 191,
+      "category": "relationships",
+      "reverse": true,
+      "text": "When an urge appeared unexpectedly, how often did you protect an important relationship from the pattern’s effects?"
+    },
+    {
+      "id": 192,
+      "category": "relationships",
+      "reverse": false,
+      "text": "After a period of avoiding it, how often did you continue despite repeated conflict with people close to you?"
+    },
+    {
+      "id": 193,
+      "category": "relationships",
+      "reverse": true,
+      "text": "When no one else was present, how often did you discuss concerns honestly with a trusted person?"
+    },
+    {
+      "id": 194,
+      "category": "relationships",
+      "reverse": false,
+      "text": "When an important responsibility was due, how often did you withdraw from people or become unreliable because of it?"
+    },
+    {
+      "id": 195,
+      "category": "relationships",
+      "reverse": true,
+      "text": "When thinking about your health, how often did you protect an important relationship from the pattern’s effects?"
+    },
+    {
+      "id": 196,
+      "category": "relationships",
+      "reverse": false,
+      "text": "When a familiar cue or trigger appeared, how often did you continue despite repeated conflict with people close to you?"
+    },
+    {
+      "id": 197,
+      "category": "relationships",
+      "reverse": true,
+      "text": "When support was available, how often did you discuss concerns honestly with a trusted person?"
+    },
+    {
+      "id": 198,
+      "category": "relationships",
+      "reverse": false,
+      "text": "After making a personal limit, how often did you withdraw from people or become unreliable because of it?"
+    },
+    {
+      "id": 199,
+      "category": "relationships",
+      "reverse": true,
+      "text": "When reviewing its effect on your life, how often did you protect an important relationship from the pattern’s effects?"
+    },
+    {
+      "id": 200,
+      "category": "relationships",
+      "reverse": false,
+      "text": "Across repeated episodes or occasions, how often did you continue despite repeated conflict with people close to you?"
+    },
+    {
+      "id": 201,
+      "category": "health",
+      "reverse": false,
+      "text": "Over the past 12 months, how often did you continue despite believing it was worsening your physical or mental health?"
+    },
+    {
+      "id": 202,
+      "category": "health",
+      "reverse": true,
+      "text": "When you felt stressed or overwhelmed, how often did you seek health care for a concerning effect?"
+    },
+    {
+      "id": 203,
+      "category": "health",
+      "reverse": false,
+      "text": "When you felt lonely or disconnected, how often did you notice sleep, mood, memory, or physical functioning decline after it?"
+    },
+    {
+      "id": 204,
+      "category": "health",
+      "reverse": true,
+      "text": "After a conflict or disappointment, how often did you change your behaviour when credible health harm became apparent?"
+    },
+    {
+      "id": 205,
+      "category": "health",
+      "reverse": false,
+      "text": "When the opportunity was readily available, how often did you continue despite believing it was worsening your physical or mental health?"
+    },
+    {
+      "id": 206,
+      "category": "health",
+      "reverse": true,
+      "text": "When you had planned to do something else, how often did you seek health care for a concerning effect?"
+    },
+    {
+      "id": 207,
+      "category": "health",
+      "reverse": false,
+      "text": "During a work or study period, how often did you notice sleep, mood, memory, or physical functioning decline after it?"
+    },
+    {
+      "id": 208,
+      "category": "health",
+      "reverse": true,
+      "text": "When people close to you expressed concern, how often did you change your behaviour when credible health harm became apparent?"
+    },
+    {
+      "id": 209,
+      "category": "health",
+      "reverse": false,
+      "text": "After noticing an unwanted consequence, how often did you continue despite believing it was worsening your physical or mental health?"
+    },
+    {
+      "id": 210,
+      "category": "health",
+      "reverse": true,
+      "text": "When trying to reduce or stop, how often did you seek health care for a concerning effect?"
+    },
+    {
+      "id": 211,
+      "category": "health",
+      "reverse": false,
+      "text": "During a celebration or social event, how often did you notice sleep, mood, memory, or physical functioning decline after it?"
+    },
+    {
+      "id": 212,
+      "category": "health",
+      "reverse": true,
+      "text": "When you were tired or unable to sleep, how often did you change your behaviour when credible health harm became apparent?"
+    },
+    {
+      "id": 213,
+      "category": "health",
+      "reverse": false,
+      "text": "When money was limited, how often did you continue despite believing it was worsening your physical or mental health?"
+    },
+    {
+      "id": 214,
+      "category": "health",
+      "reverse": true,
+      "text": "When your mood was low, how often did you seek health care for a concerning effect?"
+    },
+    {
+      "id": 215,
+      "category": "health",
+      "reverse": false,
+      "text": "When you felt anxious or restless, how often did you notice sleep, mood, memory, or physical functioning decline after it?"
+    },
+    {
+      "id": 216,
+      "category": "health",
+      "reverse": true,
+      "text": "When an urge appeared unexpectedly, how often did you change your behaviour when credible health harm became apparent?"
+    },
+    {
+      "id": 217,
+      "category": "health",
+      "reverse": false,
+      "text": "After a period of avoiding it, how often did you continue despite believing it was worsening your physical or mental health?"
+    },
+    {
+      "id": 218,
+      "category": "health",
+      "reverse": true,
+      "text": "When no one else was present, how often did you seek health care for a concerning effect?"
+    },
+    {
+      "id": 219,
+      "category": "health",
+      "reverse": false,
+      "text": "When an important responsibility was due, how often did you notice sleep, mood, memory, or physical functioning decline after it?"
+    },
+    {
+      "id": 220,
+      "category": "health",
+      "reverse": true,
+      "text": "When thinking about your health, how often did you change your behaviour when credible health harm became apparent?"
+    },
+    {
+      "id": 221,
+      "category": "health",
+      "reverse": false,
+      "text": "When a familiar cue or trigger appeared, how often did you continue despite believing it was worsening your physical or mental health?"
+    },
+    {
+      "id": 222,
+      "category": "health",
+      "reverse": true,
+      "text": "When support was available, how often did you seek health care for a concerning effect?"
+    },
+    {
+      "id": 223,
+      "category": "health",
+      "reverse": false,
+      "text": "After making a personal limit, how often did you notice sleep, mood, memory, or physical functioning decline after it?"
+    },
+    {
+      "id": 224,
+      "category": "health",
+      "reverse": true,
+      "text": "When reviewing its effect on your life, how often did you change your behaviour when credible health harm became apparent?"
+    },
+    {
+      "id": 225,
+      "category": "health",
+      "reverse": false,
+      "text": "Across repeated episodes or occasions, how often did you continue despite believing it was worsening your physical or mental health?"
+    },
+    {
+      "id": 226,
+      "category": "hazard",
+      "reverse": false,
+      "text": "Over the past 12 months, how often did you engage in a situation where impairment could endanger you or someone else?"
+    },
+    {
+      "id": 227,
+      "category": "hazard",
+      "reverse": true,
+      "text": "When you felt stressed or overwhelmed, how often did you avoid driving, operating equipment, or another hazardous activity while impaired?"
+    },
+    {
+      "id": 228,
+      "category": "hazard",
+      "reverse": false,
+      "text": "When you felt lonely or disconnected, how often did you take a safety risk that you would normally avoid?"
+    },
+    {
+      "id": 229,
+      "category": "hazard",
+      "reverse": true,
+      "text": "After a conflict or disappointment, how often did you arrange a safer alternative before risk increased?"
+    },
+    {
+      "id": 230,
+      "category": "hazard",
+      "reverse": false,
+      "text": "When the opportunity was readily available, how often did you engage in a situation where impairment could endanger you or someone else?"
+    },
+    {
+      "id": 231,
+      "category": "hazard",
+      "reverse": true,
+      "text": "When you had planned to do something else, how often did you avoid driving, operating equipment, or another hazardous activity while impaired?"
+    },
+    {
+      "id": 232,
+      "category": "hazard",
+      "reverse": false,
+      "text": "During a work or study period, how often did you take a safety risk that you would normally avoid?"
+    },
+    {
+      "id": 233,
+      "category": "hazard",
+      "reverse": true,
+      "text": "When people close to you expressed concern, how often did you arrange a safer alternative before risk increased?"
+    },
+    {
+      "id": 234,
+      "category": "hazard",
+      "reverse": false,
+      "text": "After noticing an unwanted consequence, how often did you engage in a situation where impairment could endanger you or someone else?"
+    },
+    {
+      "id": 235,
+      "category": "hazard",
+      "reverse": true,
+      "text": "When trying to reduce or stop, how often did you avoid driving, operating equipment, or another hazardous activity while impaired?"
+    },
+    {
+      "id": 236,
+      "category": "hazard",
+      "reverse": false,
+      "text": "During a celebration or social event, how often did you take a safety risk that you would normally avoid?"
+    },
+    {
+      "id": 237,
+      "category": "hazard",
+      "reverse": true,
+      "text": "When you were tired or unable to sleep, how often did you arrange a safer alternative before risk increased?"
+    },
+    {
+      "id": 238,
+      "category": "hazard",
+      "reverse": false,
+      "text": "When money was limited, how often did you engage in a situation where impairment could endanger you or someone else?"
+    },
+    {
+      "id": 239,
+      "category": "hazard",
+      "reverse": true,
+      "text": "When your mood was low, how often did you avoid driving, operating equipment, or another hazardous activity while impaired?"
+    },
+    {
+      "id": 240,
+      "category": "hazard",
+      "reverse": false,
+      "text": "When you felt anxious or restless, how often did you take a safety risk that you would normally avoid?"
+    },
+    {
+      "id": 241,
+      "category": "hazard",
+      "reverse": true,
+      "text": "When an urge appeared unexpectedly, how often did you arrange a safer alternative before risk increased?"
+    },
+    {
+      "id": 242,
+      "category": "hazard",
+      "reverse": false,
+      "text": "After a period of avoiding it, how often did you engage in a situation where impairment could endanger you or someone else?"
+    },
+    {
+      "id": 243,
+      "category": "hazard",
+      "reverse": true,
+      "text": "When no one else was present, how often did you avoid driving, operating equipment, or another hazardous activity while impaired?"
+    },
+    {
+      "id": 244,
+      "category": "hazard",
+      "reverse": false,
+      "text": "When an important responsibility was due, how often did you take a safety risk that you would normally avoid?"
+    },
+    {
+      "id": 245,
+      "category": "hazard",
+      "reverse": true,
+      "text": "When thinking about your health, how often did you arrange a safer alternative before risk increased?"
+    },
+    {
+      "id": 246,
+      "category": "hazard",
+      "reverse": false,
+      "text": "When a familiar cue or trigger appeared, how often did you engage in a situation where impairment could endanger you or someone else?"
+    },
+    {
+      "id": 247,
+      "category": "hazard",
+      "reverse": true,
+      "text": "When support was available, how often did you avoid driving, operating equipment, or another hazardous activity while impaired?"
+    },
+    {
+      "id": 248,
+      "category": "hazard",
+      "reverse": false,
+      "text": "After making a personal limit, how often did you take a safety risk that you would normally avoid?"
+    },
+    {
+      "id": 249,
+      "category": "hazard",
+      "reverse": true,
+      "text": "When reviewing its effect on your life, how often did you arrange a safer alternative before risk increased?"
+    },
+    {
+      "id": 250,
+      "category": "hazard",
+      "reverse": false,
+      "text": "Across repeated episodes or occasions, how often did you engage in a situation where impairment could endanger you or someone else?"
+    },
+    {
+      "id": 251,
+      "category": "continued_harm",
+      "reverse": false,
+      "text": "Over the past 12 months, how often did you continue after a clear negative consequence?"
+    },
+    {
+      "id": 252,
+      "category": "continued_harm",
+      "reverse": true,
+      "text": "When you felt stressed or overwhelmed, how often did you pause and reassess after a negative consequence?"
+    },
+    {
+      "id": 253,
+      "category": "continued_harm",
+      "reverse": false,
+      "text": "When you felt lonely or disconnected, how often did you return quickly despite promising yourself that the harm would be the last time?"
+    },
+    {
+      "id": 254,
+      "category": "continued_harm",
+      "reverse": true,
+      "text": "After a conflict or disappointment, how often did you take a concrete protective step when harm became clear?"
+    },
+    {
+      "id": 255,
+      "category": "continued_harm",
+      "reverse": false,
+      "text": "When the opportunity was readily available, how often did you continue after a clear negative consequence?"
+    },
+    {
+      "id": 256,
+      "category": "continued_harm",
+      "reverse": true,
+      "text": "When you had planned to do something else, how often did you pause and reassess after a negative consequence?"
+    },
+    {
+      "id": 257,
+      "category": "continued_harm",
+      "reverse": false,
+      "text": "During a work or study period, how often did you return quickly despite promising yourself that the harm would be the last time?"
+    },
+    {
+      "id": 258,
+      "category": "continued_harm",
+      "reverse": true,
+      "text": "When people close to you expressed concern, how often did you take a concrete protective step when harm became clear?"
+    },
+    {
+      "id": 259,
+      "category": "continued_harm",
+      "reverse": false,
+      "text": "After noticing an unwanted consequence, how often did you continue after a clear negative consequence?"
+    },
+    {
+      "id": 260,
+      "category": "continued_harm",
+      "reverse": true,
+      "text": "When trying to reduce or stop, how often did you pause and reassess after a negative consequence?"
+    },
+    {
+      "id": 261,
+      "category": "continued_harm",
+      "reverse": false,
+      "text": "During a celebration or social event, how often did you return quickly despite promising yourself that the harm would be the last time?"
+    },
+    {
+      "id": 262,
+      "category": "continued_harm",
+      "reverse": true,
+      "text": "When you were tired or unable to sleep, how often did you take a concrete protective step when harm became clear?"
+    },
+    {
+      "id": 263,
+      "category": "continued_harm",
+      "reverse": false,
+      "text": "When money was limited, how often did you continue after a clear negative consequence?"
+    },
+    {
+      "id": 264,
+      "category": "continued_harm",
+      "reverse": true,
+      "text": "When your mood was low, how often did you pause and reassess after a negative consequence?"
+    },
+    {
+      "id": 265,
+      "category": "continued_harm",
+      "reverse": false,
+      "text": "When you felt anxious or restless, how often did you return quickly despite promising yourself that the harm would be the last time?"
+    },
+    {
+      "id": 266,
+      "category": "continued_harm",
+      "reverse": true,
+      "text": "When an urge appeared unexpectedly, how often did you take a concrete protective step when harm became clear?"
+    },
+    {
+      "id": 267,
+      "category": "continued_harm",
+      "reverse": false,
+      "text": "After a period of avoiding it, how often did you continue after a clear negative consequence?"
+    },
+    {
+      "id": 268,
+      "category": "continued_harm",
+      "reverse": true,
+      "text": "When no one else was present, how often did you pause and reassess after a negative consequence?"
+    },
+    {
+      "id": 269,
+      "category": "continued_harm",
+      "reverse": false,
+      "text": "When an important responsibility was due, how often did you return quickly despite promising yourself that the harm would be the last time?"
+    },
+    {
+      "id": 270,
+      "category": "continued_harm",
+      "reverse": true,
+      "text": "When thinking about your health, how often did you take a concrete protective step when harm became clear?"
+    },
+    {
+      "id": 271,
+      "category": "continued_harm",
+      "reverse": false,
+      "text": "When a familiar cue or trigger appeared, how often did you continue after a clear negative consequence?"
+    },
+    {
+      "id": 272,
+      "category": "continued_harm",
+      "reverse": true,
+      "text": "When support was available, how often did you pause and reassess after a negative consequence?"
+    },
+    {
+      "id": 273,
+      "category": "continued_harm",
+      "reverse": false,
+      "text": "After making a personal limit, how often did you return quickly despite promising yourself that the harm would be the last time?"
+    },
+    {
+      "id": 274,
+      "category": "continued_harm",
+      "reverse": true,
+      "text": "When reviewing its effect on your life, how often did you take a concrete protective step when harm became clear?"
+    },
+    {
+      "id": 275,
+      "category": "continued_harm",
+      "reverse": false,
+      "text": "Across repeated episodes or occasions, how often did you continue after a clear negative consequence?"
+    },
+    {
+      "id": 276,
+      "category": "cut_down",
+      "reverse": false,
+      "text": "Over the past 12 months, how often did you try to reduce or stop but return sooner or more strongly than planned?"
+    },
+    {
+      "id": 277,
+      "category": "cut_down",
+      "reverse": true,
+      "text": "When you felt stressed or overwhelmed, how often did you follow through on a realistic reduction or recovery plan?"
+    },
+    {
+      "id": 278,
+      "category": "cut_down",
+      "reverse": false,
+      "text": "When you felt lonely or disconnected, how often did you make repeated promises to change without being able to maintain them?"
+    },
+    {
+      "id": 279,
+      "category": "cut_down",
+      "reverse": true,
+      "text": "After a conflict or disappointment, how often did you ask for additional support when your first attempt was not enough?"
+    },
+    {
+      "id": 280,
+      "category": "cut_down",
+      "reverse": false,
+      "text": "When the opportunity was readily available, how often did you try to reduce or stop but return sooner or more strongly than planned?"
+    },
+    {
+      "id": 281,
+      "category": "cut_down",
+      "reverse": true,
+      "text": "When you had planned to do something else, how often did you follow through on a realistic reduction or recovery plan?"
+    },
+    {
+      "id": 282,
+      "category": "cut_down",
+      "reverse": false,
+      "text": "During a work or study period, how often did you make repeated promises to change without being able to maintain them?"
+    },
+    {
+      "id": 283,
+      "category": "cut_down",
+      "reverse": true,
+      "text": "When people close to you expressed concern, how often did you ask for additional support when your first attempt was not enough?"
+    },
+    {
+      "id": 284,
+      "category": "cut_down",
+      "reverse": false,
+      "text": "After noticing an unwanted consequence, how often did you try to reduce or stop but return sooner or more strongly than planned?"
+    },
+    {
+      "id": 285,
+      "category": "cut_down",
+      "reverse": true,
+      "text": "When trying to reduce or stop, how often did you follow through on a realistic reduction or recovery plan?"
+    },
+    {
+      "id": 286,
+      "category": "cut_down",
+      "reverse": false,
+      "text": "During a celebration or social event, how often did you make repeated promises to change without being able to maintain them?"
+    },
+    {
+      "id": 287,
+      "category": "cut_down",
+      "reverse": true,
+      "text": "When you were tired or unable to sleep, how often did you ask for additional support when your first attempt was not enough?"
+    },
+    {
+      "id": 288,
+      "category": "cut_down",
+      "reverse": false,
+      "text": "When money was limited, how often did you try to reduce or stop but return sooner or more strongly than planned?"
+    },
+    {
+      "id": 289,
+      "category": "cut_down",
+      "reverse": true,
+      "text": "When your mood was low, how often did you follow through on a realistic reduction or recovery plan?"
+    },
+    {
+      "id": 290,
+      "category": "cut_down",
+      "reverse": false,
+      "text": "When you felt anxious or restless, how often did you make repeated promises to change without being able to maintain them?"
+    },
+    {
+      "id": 291,
+      "category": "cut_down",
+      "reverse": true,
+      "text": "When an urge appeared unexpectedly, how often did you ask for additional support when your first attempt was not enough?"
+    },
+    {
+      "id": 292,
+      "category": "cut_down",
+      "reverse": false,
+      "text": "After a period of avoiding it, how often did you try to reduce or stop but return sooner or more strongly than planned?"
+    },
+    {
+      "id": 293,
+      "category": "cut_down",
+      "reverse": true,
+      "text": "When no one else was present, how often did you follow through on a realistic reduction or recovery plan?"
+    },
+    {
+      "id": 294,
+      "category": "cut_down",
+      "reverse": false,
+      "text": "When an important responsibility was due, how often did you make repeated promises to change without being able to maintain them?"
+    },
+    {
+      "id": 295,
+      "category": "cut_down",
+      "reverse": true,
+      "text": "When thinking about your health, how often did you ask for additional support when your first attempt was not enough?"
+    },
+    {
+      "id": 296,
+      "category": "cut_down",
+      "reverse": false,
+      "text": "When a familiar cue or trigger appeared, how often did you try to reduce or stop but return sooner or more strongly than planned?"
+    },
+    {
+      "id": 297,
+      "category": "cut_down",
+      "reverse": true,
+      "text": "When support was available, how often did you follow through on a realistic reduction or recovery plan?"
+    },
+    {
+      "id": 298,
+      "category": "cut_down",
+      "reverse": false,
+      "text": "After making a personal limit, how often did you make repeated promises to change without being able to maintain them?"
+    },
+    {
+      "id": 299,
+      "category": "cut_down",
+      "reverse": true,
+      "text": "When reviewing its effect on your life, how often did you ask for additional support when your first attempt was not enough?"
+    },
+    {
+      "id": 300,
+      "category": "cut_down",
+      "reverse": false,
+      "text": "Across repeated episodes or occasions, how often did you try to reduce or stop but return sooner or more strongly than planned?"
+    },
+    {
+      "id": 301,
+      "category": "secrecy",
+      "reverse": false,
+      "text": "Over the past 12 months, how often did you hide the extent of the pattern from someone affected by it?"
+    },
+    {
+      "id": 302,
+      "category": "secrecy",
+      "reverse": true,
+      "text": "When you felt stressed or overwhelmed, how often did you speak honestly about the pattern with a safe and trusted person?"
+    },
+    {
+      "id": 303,
+      "category": "secrecy",
+      "reverse": false,
+      "text": "When you felt lonely or disconnected, how often did you lie or give misleading information to protect continued involvement?"
+    },
+    {
+      "id": 304,
+      "category": "secrecy",
+      "reverse": true,
+      "text": "After a conflict or disappointment, how often did you seek confidential professional help instead of carrying the concern alone?"
+    },
+    {
+      "id": 305,
+      "category": "secrecy",
+      "reverse": false,
+      "text": "When the opportunity was readily available, how often did you hide the extent of the pattern from someone affected by it?"
+    },
+    {
+      "id": 306,
+      "category": "secrecy",
+      "reverse": true,
+      "text": "When you had planned to do something else, how often did you speak honestly about the pattern with a safe and trusted person?"
+    },
+    {
+      "id": 307,
+      "category": "secrecy",
+      "reverse": false,
+      "text": "During a work or study period, how often did you lie or give misleading information to protect continued involvement?"
+    },
+    {
+      "id": 308,
+      "category": "secrecy",
+      "reverse": true,
+      "text": "When people close to you expressed concern, how often did you seek confidential professional help instead of carrying the concern alone?"
+    },
+    {
+      "id": 309,
+      "category": "secrecy",
+      "reverse": false,
+      "text": "After noticing an unwanted consequence, how often did you hide the extent of the pattern from someone affected by it?"
+    },
+    {
+      "id": 310,
+      "category": "secrecy",
+      "reverse": true,
+      "text": "When trying to reduce or stop, how often did you speak honestly about the pattern with a safe and trusted person?"
+    },
+    {
+      "id": 311,
+      "category": "secrecy",
+      "reverse": false,
+      "text": "During a celebration or social event, how often did you lie or give misleading information to protect continued involvement?"
+    },
+    {
+      "id": 312,
+      "category": "secrecy",
+      "reverse": true,
+      "text": "When you were tired or unable to sleep, how often did you seek confidential professional help instead of carrying the concern alone?"
+    },
+    {
+      "id": 313,
+      "category": "secrecy",
+      "reverse": false,
+      "text": "When money was limited, how often did you hide the extent of the pattern from someone affected by it?"
+    },
+    {
+      "id": 314,
+      "category": "secrecy",
+      "reverse": true,
+      "text": "When your mood was low, how often did you speak honestly about the pattern with a safe and trusted person?"
+    },
+    {
+      "id": 315,
+      "category": "secrecy",
+      "reverse": false,
+      "text": "When you felt anxious or restless, how often did you lie or give misleading information to protect continued involvement?"
+    },
+    {
+      "id": 316,
+      "category": "secrecy",
+      "reverse": true,
+      "text": "When an urge appeared unexpectedly, how often did you seek confidential professional help instead of carrying the concern alone?"
+    },
+    {
+      "id": 317,
+      "category": "secrecy",
+      "reverse": false,
+      "text": "After a period of avoiding it, how often did you hide the extent of the pattern from someone affected by it?"
+    },
+    {
+      "id": 318,
+      "category": "secrecy",
+      "reverse": true,
+      "text": "When no one else was present, how often did you speak honestly about the pattern with a safe and trusted person?"
+    },
+    {
+      "id": 319,
+      "category": "secrecy",
+      "reverse": false,
+      "text": "When an important responsibility was due, how often did you lie or give misleading information to protect continued involvement?"
+    },
+    {
+      "id": 320,
+      "category": "secrecy",
+      "reverse": true,
+      "text": "When thinking about your health, how often did you seek confidential professional help instead of carrying the concern alone?"
+    },
+    {
+      "id": 321,
+      "category": "secrecy",
+      "reverse": false,
+      "text": "When a familiar cue or trigger appeared, how often did you hide the extent of the pattern from someone affected by it?"
+    },
+    {
+      "id": 322,
+      "category": "secrecy",
+      "reverse": true,
+      "text": "When support was available, how often did you speak honestly about the pattern with a safe and trusted person?"
+    },
+    {
+      "id": 323,
+      "category": "secrecy",
+      "reverse": false,
+      "text": "After making a personal limit, how often did you lie or give misleading information to protect continued involvement?"
+    },
+    {
+      "id": 324,
+      "category": "secrecy",
+      "reverse": true,
+      "text": "When reviewing its effect on your life, how often did you seek confidential professional help instead of carrying the concern alone?"
+    },
+    {
+      "id": 325,
+      "category": "secrecy",
+      "reverse": false,
+      "text": "Across repeated episodes or occasions, how often did you hide the extent of the pattern from someone affected by it?"
+    },
+    {
+      "id": 326,
+      "category": "financial",
+      "reverse": false,
+      "text": "Over the past 12 months, how often did you spend money needed for essentials or commitments?"
+    },
+    {
+      "id": 327,
+      "category": "financial",
+      "reverse": true,
+      "text": "When you felt stressed or overwhelmed, how often did you keep essential expenses protected from the pattern?"
+    },
+    {
+      "id": 328,
+      "category": "financial",
+      "reverse": false,
+      "text": "When you felt lonely or disconnected, how often did you borrow, sell, or conceal spending because of the pattern?"
+    },
+    {
+      "id": 329,
+      "category": "financial",
+      "reverse": true,
+      "text": "After a conflict or disappointment, how often did you ask for practical financial safeguards when spending felt hard to control?"
+    },
+    {
+      "id": 330,
+      "category": "financial",
+      "reverse": false,
+      "text": "When the opportunity was readily available, how often did you spend money needed for essentials or commitments?"
+    },
+    {
+      "id": 331,
+      "category": "financial",
+      "reverse": true,
+      "text": "When you had planned to do something else, how often did you keep essential expenses protected from the pattern?"
+    },
+    {
+      "id": 332,
+      "category": "financial",
+      "reverse": false,
+      "text": "During a work or study period, how often did you borrow, sell, or conceal spending because of the pattern?"
+    },
+    {
+      "id": 333,
+      "category": "financial",
+      "reverse": true,
+      "text": "When people close to you expressed concern, how often did you ask for practical financial safeguards when spending felt hard to control?"
+    },
+    {
+      "id": 334,
+      "category": "financial",
+      "reverse": false,
+      "text": "After noticing an unwanted consequence, how often did you spend money needed for essentials or commitments?"
+    },
+    {
+      "id": 335,
+      "category": "financial",
+      "reverse": true,
+      "text": "When trying to reduce or stop, how often did you keep essential expenses protected from the pattern?"
+    },
+    {
+      "id": 336,
+      "category": "financial",
+      "reverse": false,
+      "text": "During a celebration or social event, how often did you borrow, sell, or conceal spending because of the pattern?"
+    },
+    {
+      "id": 337,
+      "category": "financial",
+      "reverse": true,
+      "text": "When you were tired or unable to sleep, how often did you ask for practical financial safeguards when spending felt hard to control?"
+    },
+    {
+      "id": 338,
+      "category": "financial",
+      "reverse": false,
+      "text": "When money was limited, how often did you spend money needed for essentials or commitments?"
+    },
+    {
+      "id": 339,
+      "category": "financial",
+      "reverse": true,
+      "text": "When your mood was low, how often did you keep essential expenses protected from the pattern?"
+    },
+    {
+      "id": 340,
+      "category": "financial",
+      "reverse": false,
+      "text": "When you felt anxious or restless, how often did you borrow, sell, or conceal spending because of the pattern?"
+    },
+    {
+      "id": 341,
+      "category": "financial",
+      "reverse": true,
+      "text": "When an urge appeared unexpectedly, how often did you ask for practical financial safeguards when spending felt hard to control?"
+    },
+    {
+      "id": 342,
+      "category": "financial",
+      "reverse": false,
+      "text": "After a period of avoiding it, how often did you spend money needed for essentials or commitments?"
+    },
+    {
+      "id": 343,
+      "category": "financial",
+      "reverse": true,
+      "text": "When no one else was present, how often did you keep essential expenses protected from the pattern?"
+    },
+    {
+      "id": 344,
+      "category": "financial",
+      "reverse": false,
+      "text": "When an important responsibility was due, how often did you borrow, sell, or conceal spending because of the pattern?"
+    },
+    {
+      "id": 345,
+      "category": "financial",
+      "reverse": true,
+      "text": "When thinking about your health, how often did you ask for practical financial safeguards when spending felt hard to control?"
+    },
+    {
+      "id": 346,
+      "category": "financial",
+      "reverse": false,
+      "text": "When a familiar cue or trigger appeared, how often did you spend money needed for essentials or commitments?"
+    },
+    {
+      "id": 347,
+      "category": "financial",
+      "reverse": true,
+      "text": "When support was available, how often did you keep essential expenses protected from the pattern?"
+    },
+    {
+      "id": 348,
+      "category": "financial",
+      "reverse": false,
+      "text": "After making a personal limit, how often did you borrow, sell, or conceal spending because of the pattern?"
+    },
+    {
+      "id": 349,
+      "category": "financial",
+      "reverse": true,
+      "text": "When reviewing its effect on your life, how often did you ask for practical financial safeguards when spending felt hard to control?"
+    },
+    {
+      "id": 350,
+      "category": "financial",
+      "reverse": false,
+      "text": "Across repeated episodes or occasions, how often did you spend money needed for essentials or commitments?"
+    },
+    {
+      "id": 351,
+      "category": "coping",
+      "reverse": false,
+      "text": "Over the past 12 months, how often did you rely on it as your main way to escape painful emotion?"
+    },
+    {
+      "id": 352,
+      "category": "coping",
+      "reverse": true,
+      "text": "When you felt stressed or overwhelmed, how often did you use more than one safe way to cope with difficult emotion?"
+    },
+    {
+      "id": 353,
+      "category": "coping",
+      "reverse": false,
+      "text": "When you felt lonely or disconnected, how often did you use it to numb stress without addressing the underlying need?"
+    },
+    {
+      "id": 354,
+      "category": "coping",
+      "reverse": true,
+      "text": "After a conflict or disappointment, how often did you seek support for the underlying stress or pain?"
+    },
+    {
+      "id": 355,
+      "category": "coping",
+      "reverse": false,
+      "text": "When the opportunity was readily available, how often did you rely on it as your main way to escape painful emotion?"
+    },
+    {
+      "id": 356,
+      "category": "coping",
+      "reverse": true,
+      "text": "When you had planned to do something else, how often did you use more than one safe way to cope with difficult emotion?"
+    },
+    {
+      "id": 357,
+      "category": "coping",
+      "reverse": false,
+      "text": "During a work or study period, how often did you use it to numb stress without addressing the underlying need?"
+    },
+    {
+      "id": 358,
+      "category": "coping",
+      "reverse": true,
+      "text": "When people close to you expressed concern, how often did you seek support for the underlying stress or pain?"
+    },
+    {
+      "id": 359,
+      "category": "coping",
+      "reverse": false,
+      "text": "After noticing an unwanted consequence, how often did you rely on it as your main way to escape painful emotion?"
+    },
+    {
+      "id": 360,
+      "category": "coping",
+      "reverse": true,
+      "text": "When trying to reduce or stop, how often did you use more than one safe way to cope with difficult emotion?"
+    },
+    {
+      "id": 361,
+      "category": "coping",
+      "reverse": false,
+      "text": "During a celebration or social event, how often did you use it to numb stress without addressing the underlying need?"
+    },
+    {
+      "id": 362,
+      "category": "coping",
+      "reverse": true,
+      "text": "When you were tired or unable to sleep, how often did you seek support for the underlying stress or pain?"
+    },
+    {
+      "id": 363,
+      "category": "coping",
+      "reverse": false,
+      "text": "When money was limited, how often did you rely on it as your main way to escape painful emotion?"
+    },
+    {
+      "id": 364,
+      "category": "coping",
+      "reverse": true,
+      "text": "When your mood was low, how often did you use more than one safe way to cope with difficult emotion?"
+    },
+    {
+      "id": 365,
+      "category": "coping",
+      "reverse": false,
+      "text": "When you felt anxious or restless, how often did you use it to numb stress without addressing the underlying need?"
+    },
+    {
+      "id": 366,
+      "category": "coping",
+      "reverse": true,
+      "text": "When an urge appeared unexpectedly, how often did you seek support for the underlying stress or pain?"
+    },
+    {
+      "id": 367,
+      "category": "coping",
+      "reverse": false,
+      "text": "After a period of avoiding it, how often did you rely on it as your main way to escape painful emotion?"
+    },
+    {
+      "id": 368,
+      "category": "coping",
+      "reverse": true,
+      "text": "When no one else was present, how often did you use more than one safe way to cope with difficult emotion?"
+    },
+    {
+      "id": 369,
+      "category": "coping",
+      "reverse": false,
+      "text": "When an important responsibility was due, how often did you use it to numb stress without addressing the underlying need?"
+    },
+    {
+      "id": 370,
+      "category": "coping",
+      "reverse": true,
+      "text": "When thinking about your health, how often did you seek support for the underlying stress or pain?"
+    },
+    {
+      "id": 371,
+      "category": "coping",
+      "reverse": false,
+      "text": "When a familiar cue or trigger appeared, how often did you rely on it as your main way to escape painful emotion?"
+    },
+    {
+      "id": 372,
+      "category": "coping",
+      "reverse": true,
+      "text": "When support was available, how often did you use more than one safe way to cope with difficult emotion?"
+    },
+    {
+      "id": 373,
+      "category": "coping",
+      "reverse": false,
+      "text": "After making a personal limit, how often did you use it to numb stress without addressing the underlying need?"
+    },
+    {
+      "id": 374,
+      "category": "coping",
+      "reverse": true,
+      "text": "When reviewing its effect on your life, how often did you seek support for the underlying stress or pain?"
+    },
+    {
+      "id": 375,
+      "category": "coping",
+      "reverse": false,
+      "text": "Across repeated episodes or occasions, how often did you rely on it as your main way to escape painful emotion?"
+    },
+    {
+      "id": 376,
+      "category": "triggers",
+      "reverse": false,
+      "text": "Over the past 12 months, how often did you react automatically to a place, person, mood, or cue associated with it?"
+    },
+    {
+      "id": 377,
+      "category": "triggers",
+      "reverse": true,
+      "text": "When you felt stressed or overwhelmed, how often did you identify a trigger before it led to action?"
+    },
+    {
+      "id": 378,
+      "category": "triggers",
+      "reverse": false,
+      "text": "When you felt lonely or disconnected, how often did you enter a known high-risk situation without a protective plan?"
+    },
+    {
+      "id": 379,
+      "category": "triggers",
+      "reverse": true,
+      "text": "After a conflict or disappointment, how often did you use a planned response or leave a high-risk situation safely?"
+    },
+    {
+      "id": 380,
+      "category": "triggers",
+      "reverse": false,
+      "text": "When the opportunity was readily available, how often did you react automatically to a place, person, mood, or cue associated with it?"
+    },
+    {
+      "id": 381,
+      "category": "triggers",
+      "reverse": true,
+      "text": "When you had planned to do something else, how often did you identify a trigger before it led to action?"
+    },
+    {
+      "id": 382,
+      "category": "triggers",
+      "reverse": false,
+      "text": "During a work or study period, how often did you enter a known high-risk situation without a protective plan?"
+    },
+    {
+      "id": 383,
+      "category": "triggers",
+      "reverse": true,
+      "text": "When people close to you expressed concern, how often did you use a planned response or leave a high-risk situation safely?"
+    },
+    {
+      "id": 384,
+      "category": "triggers",
+      "reverse": false,
+      "text": "After noticing an unwanted consequence, how often did you react automatically to a place, person, mood, or cue associated with it?"
+    },
+    {
+      "id": 385,
+      "category": "triggers",
+      "reverse": true,
+      "text": "When trying to reduce or stop, how often did you identify a trigger before it led to action?"
+    },
+    {
+      "id": 386,
+      "category": "triggers",
+      "reverse": false,
+      "text": "During a celebration or social event, how often did you enter a known high-risk situation without a protective plan?"
+    },
+    {
+      "id": 387,
+      "category": "triggers",
+      "reverse": true,
+      "text": "When you were tired or unable to sleep, how often did you use a planned response or leave a high-risk situation safely?"
+    },
+    {
+      "id": 388,
+      "category": "triggers",
+      "reverse": false,
+      "text": "When money was limited, how often did you react automatically to a place, person, mood, or cue associated with it?"
+    },
+    {
+      "id": 389,
+      "category": "triggers",
+      "reverse": true,
+      "text": "When your mood was low, how often did you identify a trigger before it led to action?"
+    },
+    {
+      "id": 390,
+      "category": "triggers",
+      "reverse": false,
+      "text": "When you felt anxious or restless, how often did you enter a known high-risk situation without a protective plan?"
+    },
+    {
+      "id": 391,
+      "category": "triggers",
+      "reverse": true,
+      "text": "When an urge appeared unexpectedly, how often did you use a planned response or leave a high-risk situation safely?"
+    },
+    {
+      "id": 392,
+      "category": "triggers",
+      "reverse": false,
+      "text": "After a period of avoiding it, how often did you react automatically to a place, person, mood, or cue associated with it?"
+    },
+    {
+      "id": 393,
+      "category": "triggers",
+      "reverse": true,
+      "text": "When no one else was present, how often did you identify a trigger before it led to action?"
+    },
+    {
+      "id": 394,
+      "category": "triggers",
+      "reverse": false,
+      "text": "When an important responsibility was due, how often did you enter a known high-risk situation without a protective plan?"
+    },
+    {
+      "id": 395,
+      "category": "triggers",
+      "reverse": true,
+      "text": "When thinking about your health, how often did you use a planned response or leave a high-risk situation safely?"
+    },
+    {
+      "id": 396,
+      "category": "triggers",
+      "reverse": false,
+      "text": "When a familiar cue or trigger appeared, how often did you react automatically to a place, person, mood, or cue associated with it?"
+    },
+    {
+      "id": 397,
+      "category": "triggers",
+      "reverse": true,
+      "text": "When support was available, how often did you identify a trigger before it led to action?"
+    },
+    {
+      "id": 398,
+      "category": "triggers",
+      "reverse": false,
+      "text": "After making a personal limit, how often did you enter a known high-risk situation without a protective plan?"
+    },
+    {
+      "id": 399,
+      "category": "triggers",
+      "reverse": true,
+      "text": "When reviewing its effect on your life, how often did you use a planned response or leave a high-risk situation safely?"
+    },
+    {
+      "id": 400,
+      "category": "triggers",
+      "reverse": false,
+      "text": "Across repeated episodes or occasions, how often did you react automatically to a place, person, mood, or cue associated with it?"
+    },
+    {
+      "id": 401,
+      "category": "activities",
+      "reverse": false,
+      "text": "Over the past 12 months, how often did you give up or reduce an activity that once mattered because of it?"
+    },
+    {
+      "id": 402,
+      "category": "activities",
+      "reverse": true,
+      "text": "When you felt stressed or overwhelmed, how often did you remain involved in a healthy activity that matters to you?"
+    },
+    {
+      "id": 403,
+      "category": "activities",
+      "reverse": false,
+      "text": "When you felt lonely or disconnected, how often did you lose interest in healthy recreation or social connection as it took priority?"
+    },
+    {
+      "id": 404,
+      "category": "activities",
+      "reverse": true,
+      "text": "After a conflict or disappointment, how often did you rebuild an interest or connection that the pattern had displaced?"
+    },
+    {
+      "id": 405,
+      "category": "activities",
+      "reverse": false,
+      "text": "When the opportunity was readily available, how often did you give up or reduce an activity that once mattered because of it?"
+    },
+    {
+      "id": 406,
+      "category": "activities",
+      "reverse": true,
+      "text": "When you had planned to do something else, how often did you remain involved in a healthy activity that matters to you?"
+    },
+    {
+      "id": 407,
+      "category": "activities",
+      "reverse": false,
+      "text": "During a work or study period, how often did you lose interest in healthy recreation or social connection as it took priority?"
+    },
+    {
+      "id": 408,
+      "category": "activities",
+      "reverse": true,
+      "text": "When people close to you expressed concern, how often did you rebuild an interest or connection that the pattern had displaced?"
+    },
+    {
+      "id": 409,
+      "category": "activities",
+      "reverse": false,
+      "text": "After noticing an unwanted consequence, how often did you give up or reduce an activity that once mattered because of it?"
+    },
+    {
+      "id": 410,
+      "category": "activities",
+      "reverse": true,
+      "text": "When trying to reduce or stop, how often did you remain involved in a healthy activity that matters to you?"
+    },
+    {
+      "id": 411,
+      "category": "activities",
+      "reverse": false,
+      "text": "During a celebration or social event, how often did you lose interest in healthy recreation or social connection as it took priority?"
+    },
+    {
+      "id": 412,
+      "category": "activities",
+      "reverse": true,
+      "text": "When you were tired or unable to sleep, how often did you rebuild an interest or connection that the pattern had displaced?"
+    },
+    {
+      "id": 413,
+      "category": "activities",
+      "reverse": false,
+      "text": "When money was limited, how often did you give up or reduce an activity that once mattered because of it?"
+    },
+    {
+      "id": 414,
+      "category": "activities",
+      "reverse": true,
+      "text": "When your mood was low, how often did you remain involved in a healthy activity that matters to you?"
+    },
+    {
+      "id": 415,
+      "category": "activities",
+      "reverse": false,
+      "text": "When you felt anxious or restless, how often did you lose interest in healthy recreation or social connection as it took priority?"
+    },
+    {
+      "id": 416,
+      "category": "activities",
+      "reverse": true,
+      "text": "When an urge appeared unexpectedly, how often did you rebuild an interest or connection that the pattern had displaced?"
+    },
+    {
+      "id": 417,
+      "category": "activities",
+      "reverse": false,
+      "text": "After a period of avoiding it, how often did you give up or reduce an activity that once mattered because of it?"
+    },
+    {
+      "id": 418,
+      "category": "activities",
+      "reverse": true,
+      "text": "When no one else was present, how often did you remain involved in a healthy activity that matters to you?"
+    },
+    {
+      "id": 419,
+      "category": "activities",
+      "reverse": false,
+      "text": "When an important responsibility was due, how often did you lose interest in healthy recreation or social connection as it took priority?"
+    },
+    {
+      "id": 420,
+      "category": "activities",
+      "reverse": true,
+      "text": "When thinking about your health, how often did you rebuild an interest or connection that the pattern had displaced?"
+    },
+    {
+      "id": 421,
+      "category": "activities",
+      "reverse": false,
+      "text": "When a familiar cue or trigger appeared, how often did you give up or reduce an activity that once mattered because of it?"
+    },
+    {
+      "id": 422,
+      "category": "activities",
+      "reverse": true,
+      "text": "When support was available, how often did you remain involved in a healthy activity that matters to you?"
+    },
+    {
+      "id": 423,
+      "category": "activities",
+      "reverse": false,
+      "text": "After making a personal limit, how often did you lose interest in healthy recreation or social connection as it took priority?"
+    },
+    {
+      "id": 424,
+      "category": "activities",
+      "reverse": true,
+      "text": "When reviewing its effect on your life, how often did you rebuild an interest or connection that the pattern had displaced?"
+    },
+    {
+      "id": 425,
+      "category": "activities",
+      "reverse": false,
+      "text": "Across repeated episodes or occasions, how often did you give up or reduce an activity that once mattered because of it?"
+    },
+    {
+      "id": 426,
+      "category": "support",
+      "reverse": false,
+      "text": "Over the past 12 months, how often did you isolate yourself when concern about the pattern increased?"
+    },
+    {
+      "id": 427,
+      "category": "support",
+      "reverse": true,
+      "text": "When you felt stressed or overwhelmed, how often did you contact someone supportive before risk escalated?"
+    },
+    {
+      "id": 428,
+      "category": "support",
+      "reverse": false,
+      "text": "When you felt lonely or disconnected, how often did you push away a person who tried to help respectfully?"
+    },
+    {
+      "id": 429,
+      "category": "support",
+      "reverse": true,
+      "text": "After a conflict or disappointment, how often did you accept practical help from a trustworthy person or service?"
+    },
+    {
+      "id": 430,
+      "category": "support",
+      "reverse": false,
+      "text": "When the opportunity was readily available, how often did you isolate yourself when concern about the pattern increased?"
+    },
+    {
+      "id": 431,
+      "category": "support",
+      "reverse": true,
+      "text": "When you had planned to do something else, how often did you contact someone supportive before risk escalated?"
+    },
+    {
+      "id": 432,
+      "category": "support",
+      "reverse": false,
+      "text": "During a work or study period, how often did you push away a person who tried to help respectfully?"
+    },
+    {
+      "id": 433,
+      "category": "support",
+      "reverse": true,
+      "text": "When people close to you expressed concern, how often did you accept practical help from a trustworthy person or service?"
+    },
+    {
+      "id": 434,
+      "category": "support",
+      "reverse": false,
+      "text": "After noticing an unwanted consequence, how often did you isolate yourself when concern about the pattern increased?"
+    },
+    {
+      "id": 435,
+      "category": "support",
+      "reverse": true,
+      "text": "When trying to reduce or stop, how often did you contact someone supportive before risk escalated?"
+    },
+    {
+      "id": 436,
+      "category": "support",
+      "reverse": false,
+      "text": "During a celebration or social event, how often did you push away a person who tried to help respectfully?"
+    },
+    {
+      "id": 437,
+      "category": "support",
+      "reverse": true,
+      "text": "When you were tired or unable to sleep, how often did you accept practical help from a trustworthy person or service?"
+    },
+    {
+      "id": 438,
+      "category": "support",
+      "reverse": false,
+      "text": "When money was limited, how often did you isolate yourself when concern about the pattern increased?"
+    },
+    {
+      "id": 439,
+      "category": "support",
+      "reverse": true,
+      "text": "When your mood was low, how often did you contact someone supportive before risk escalated?"
+    },
+    {
+      "id": 440,
+      "category": "support",
+      "reverse": false,
+      "text": "When you felt anxious or restless, how often did you push away a person who tried to help respectfully?"
+    },
+    {
+      "id": 441,
+      "category": "support",
+      "reverse": true,
+      "text": "When an urge appeared unexpectedly, how often did you accept practical help from a trustworthy person or service?"
+    },
+    {
+      "id": 442,
+      "category": "support",
+      "reverse": false,
+      "text": "After a period of avoiding it, how often did you isolate yourself when concern about the pattern increased?"
+    },
+    {
+      "id": 443,
+      "category": "support",
+      "reverse": true,
+      "text": "When no one else was present, how often did you contact someone supportive before risk escalated?"
+    },
+    {
+      "id": 444,
+      "category": "support",
+      "reverse": false,
+      "text": "When an important responsibility was due, how often did you push away a person who tried to help respectfully?"
+    },
+    {
+      "id": 445,
+      "category": "support",
+      "reverse": true,
+      "text": "When thinking about your health, how often did you accept practical help from a trustworthy person or service?"
+    },
+    {
+      "id": 446,
+      "category": "support",
+      "reverse": false,
+      "text": "When a familiar cue or trigger appeared, how often did you isolate yourself when concern about the pattern increased?"
+    },
+    {
+      "id": 447,
+      "category": "support",
+      "reverse": true,
+      "text": "When support was available, how often did you contact someone supportive before risk escalated?"
+    },
+    {
+      "id": 448,
+      "category": "support",
+      "reverse": false,
+      "text": "After making a personal limit, how often did you push away a person who tried to help respectfully?"
+    },
+    {
+      "id": 449,
+      "category": "support",
+      "reverse": true,
+      "text": "When reviewing its effect on your life, how often did you accept practical help from a trustworthy person or service?"
+    },
+    {
+      "id": 450,
+      "category": "support",
+      "reverse": false,
+      "text": "Across repeated episodes or occasions, how often did you isolate yourself when concern about the pattern increased?"
+    },
+    {
+      "id": 451,
+      "category": "readiness",
+      "reverse": false,
+      "text": "Over the past 12 months, how often did you minimise a consequence that others reasonably found concerning?"
+    },
+    {
+      "id": 452,
+      "category": "readiness",
+      "reverse": true,
+      "text": "When you felt stressed or overwhelmed, how often did you acknowledge a concern without condemning yourself?"
+    },
+    {
+      "id": 453,
+      "category": "readiness",
+      "reverse": false,
+      "text": "When you felt lonely or disconnected, how often did you postpone seeking help despite recognising the pattern was worsening?"
+    },
+    {
+      "id": 454,
+      "category": "readiness",
+      "reverse": true,
+      "text": "After a conflict or disappointment, how often did you choose a specific next step toward safety or change?"
+    },
+    {
+      "id": 455,
+      "category": "readiness",
+      "reverse": false,
+      "text": "When the opportunity was readily available, how often did you minimise a consequence that others reasonably found concerning?"
+    },
+    {
+      "id": 456,
+      "category": "readiness",
+      "reverse": true,
+      "text": "When you had planned to do something else, how often did you acknowledge a concern without condemning yourself?"
+    },
+    {
+      "id": 457,
+      "category": "readiness",
+      "reverse": false,
+      "text": "During a work or study period, how often did you postpone seeking help despite recognising the pattern was worsening?"
+    },
+    {
+      "id": 458,
+      "category": "readiness",
+      "reverse": true,
+      "text": "When people close to you expressed concern, how often did you choose a specific next step toward safety or change?"
+    },
+    {
+      "id": 459,
+      "category": "readiness",
+      "reverse": false,
+      "text": "After noticing an unwanted consequence, how often did you minimise a consequence that others reasonably found concerning?"
+    },
+    {
+      "id": 460,
+      "category": "readiness",
+      "reverse": true,
+      "text": "When trying to reduce or stop, how often did you acknowledge a concern without condemning yourself?"
+    },
+    {
+      "id": 461,
+      "category": "readiness",
+      "reverse": false,
+      "text": "During a celebration or social event, how often did you postpone seeking help despite recognising the pattern was worsening?"
+    },
+    {
+      "id": 462,
+      "category": "readiness",
+      "reverse": true,
+      "text": "When you were tired or unable to sleep, how often did you choose a specific next step toward safety or change?"
+    },
+    {
+      "id": 463,
+      "category": "readiness",
+      "reverse": false,
+      "text": "When money was limited, how often did you minimise a consequence that others reasonably found concerning?"
+    },
+    {
+      "id": 464,
+      "category": "readiness",
+      "reverse": true,
+      "text": "When your mood was low, how often did you acknowledge a concern without condemning yourself?"
+    },
+    {
+      "id": 465,
+      "category": "readiness",
+      "reverse": false,
+      "text": "When you felt anxious or restless, how often did you postpone seeking help despite recognising the pattern was worsening?"
+    },
+    {
+      "id": 466,
+      "category": "readiness",
+      "reverse": true,
+      "text": "When an urge appeared unexpectedly, how often did you choose a specific next step toward safety or change?"
+    },
+    {
+      "id": 467,
+      "category": "readiness",
+      "reverse": false,
+      "text": "After a period of avoiding it, how often did you minimise a consequence that others reasonably found concerning?"
+    },
+    {
+      "id": 468,
+      "category": "readiness",
+      "reverse": true,
+      "text": "When no one else was present, how often did you acknowledge a concern without condemning yourself?"
+    },
+    {
+      "id": 469,
+      "category": "readiness",
+      "reverse": false,
+      "text": "When an important responsibility was due, how often did you postpone seeking help despite recognising the pattern was worsening?"
+    },
+    {
+      "id": 470,
+      "category": "readiness",
+      "reverse": true,
+      "text": "When thinking about your health, how often did you choose a specific next step toward safety or change?"
+    },
+    {
+      "id": 471,
+      "category": "readiness",
+      "reverse": false,
+      "text": "When a familiar cue or trigger appeared, how often did you minimise a consequence that others reasonably found concerning?"
+    },
+    {
+      "id": 472,
+      "category": "readiness",
+      "reverse": true,
+      "text": "When support was available, how often did you acknowledge a concern without condemning yourself?"
+    },
+    {
+      "id": 473,
+      "category": "readiness",
+      "reverse": false,
+      "text": "After making a personal limit, how often did you postpone seeking help despite recognising the pattern was worsening?"
+    },
+    {
+      "id": 474,
+      "category": "readiness",
+      "reverse": true,
+      "text": "When reviewing its effect on your life, how often did you choose a specific next step toward safety or change?"
+    },
+    {
+      "id": 475,
+      "category": "readiness",
+      "reverse": false,
+      "text": "Across repeated episodes or occasions, how often did you minimise a consequence that others reasonably found concerning?"
+    },
+    {
+      "id": 476,
+      "category": "recovery",
+      "reverse": false,
+      "text": "Over the past 12 months, how often did you treat a lapse as proof that recovery was pointless?"
+    },
+    {
+      "id": 477,
+      "category": "recovery",
+      "reverse": true,
+      "text": "When you felt stressed or overwhelmed, how often did you respond to a lapse by seeking support and reviewing what happened?"
+    },
+    {
+      "id": 478,
+      "category": "recovery",
+      "reverse": false,
+      "text": "When you felt lonely or disconnected, how often did you return to the full pattern after one difficult episode?"
+    },
+    {
+      "id": 479,
+      "category": "recovery",
+      "reverse": true,
+      "text": "After a conflict or disappointment, how often did you use a recovery plan, treatment step, or peer-support strategy consistently?"
+    },
+    {
+      "id": 480,
+      "category": "recovery",
+      "reverse": false,
+      "text": "When the opportunity was readily available, how often did you treat a lapse as proof that recovery was pointless?"
+    },
+    {
+      "id": 481,
+      "category": "recovery",
+      "reverse": true,
+      "text": "When you had planned to do something else, how often did you respond to a lapse by seeking support and reviewing what happened?"
+    },
+    {
+      "id": 482,
+      "category": "recovery",
+      "reverse": false,
+      "text": "During a work or study period, how often did you return to the full pattern after one difficult episode?"
+    },
+    {
+      "id": 483,
+      "category": "recovery",
+      "reverse": true,
+      "text": "When people close to you expressed concern, how often did you use a recovery plan, treatment step, or peer-support strategy consistently?"
+    },
+    {
+      "id": 484,
+      "category": "recovery",
+      "reverse": false,
+      "text": "After noticing an unwanted consequence, how often did you treat a lapse as proof that recovery was pointless?"
+    },
+    {
+      "id": 485,
+      "category": "recovery",
+      "reverse": true,
+      "text": "When trying to reduce or stop, how often did you respond to a lapse by seeking support and reviewing what happened?"
+    },
+    {
+      "id": 486,
+      "category": "recovery",
+      "reverse": false,
+      "text": "During a celebration or social event, how often did you return to the full pattern after one difficult episode?"
+    },
+    {
+      "id": 487,
+      "category": "recovery",
+      "reverse": true,
+      "text": "When you were tired or unable to sleep, how often did you use a recovery plan, treatment step, or peer-support strategy consistently?"
+    },
+    {
+      "id": 488,
+      "category": "recovery",
+      "reverse": false,
+      "text": "When money was limited, how often did you treat a lapse as proof that recovery was pointless?"
+    },
+    {
+      "id": 489,
+      "category": "recovery",
+      "reverse": true,
+      "text": "When your mood was low, how often did you respond to a lapse by seeking support and reviewing what happened?"
+    },
+    {
+      "id": 490,
+      "category": "recovery",
+      "reverse": false,
+      "text": "When you felt anxious or restless, how often did you return to the full pattern after one difficult episode?"
+    },
+    {
+      "id": 491,
+      "category": "recovery",
+      "reverse": true,
+      "text": "When an urge appeared unexpectedly, how often did you use a recovery plan, treatment step, or peer-support strategy consistently?"
+    },
+    {
+      "id": 492,
+      "category": "recovery",
+      "reverse": false,
+      "text": "After a period of avoiding it, how often did you treat a lapse as proof that recovery was pointless?"
+    },
+    {
+      "id": 493,
+      "category": "recovery",
+      "reverse": true,
+      "text": "When no one else was present, how often did you respond to a lapse by seeking support and reviewing what happened?"
+    },
+    {
+      "id": 494,
+      "category": "recovery",
+      "reverse": false,
+      "text": "When an important responsibility was due, how often did you return to the full pattern after one difficult episode?"
+    },
+    {
+      "id": 495,
+      "category": "recovery",
+      "reverse": true,
+      "text": "When thinking about your health, how often did you use a recovery plan, treatment step, or peer-support strategy consistently?"
+    },
+    {
+      "id": 496,
+      "category": "recovery",
+      "reverse": false,
+      "text": "When a familiar cue or trigger appeared, how often did you treat a lapse as proof that recovery was pointless?"
+    },
+    {
+      "id": 497,
+      "category": "recovery",
+      "reverse": true,
+      "text": "When support was available, how often did you respond to a lapse by seeking support and reviewing what happened?"
+    },
+    {
+      "id": 498,
+      "category": "recovery",
+      "reverse": false,
+      "text": "After making a personal limit, how often did you return to the full pattern after one difficult episode?"
+    },
+    {
+      "id": 499,
+      "category": "recovery",
+      "reverse": true,
+      "text": "When reviewing its effect on your life, how often did you use a recovery plan, treatment step, or peer-support strategy consistently?"
+    },
+    {
+      "id": 500,
+      "category": "recovery",
+      "reverse": false,
+      "text": "Across repeated episodes or occasions, how often did you treat a lapse as proof that recovery was pointless?"
+    }
+  ]
+}

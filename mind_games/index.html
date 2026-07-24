@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+<link rel="icon" type="image/x-icon" href="/assets/favicons/favicon.ico">
+<link rel="manifest" href="/assets/favicons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description" content="Mind Games from LearnPad: free browser games for lifting your mood and building real-life skills — creativity, leadership, mental flexibility, resilience, and entrepreneurship." />
+  <meta property="og:title" content="Mind Games | LearnPad" />
+  <meta property="og:description" content="Free browser games for lifting your mood and building real-life skills — creativity, leadership, flexibility, resilience, and entrepreneurship." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mypkweb.com/mind_games/index.html" />
+  <meta property="og:site_name" content="LearnPad" />
+  <meta property="og:image" content="https://mypkweb.com/assets/images/ogimage.png" />
+  <link rel="canonical" href="https://mypkweb.com/mind_games/index.html" />
+<title>Mind Games | LearnPad</title>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --accent: #f59e0b;
+      --accent-dark: #b45309;
+      --ink: #1a1f36;
+      --muted: #5a6076;
+      --bg: #fff7ec;
+      --card: #ffffff;
+      --border: #f1e3c8;
+      --radius: 16px;
+    }
+    body { font-family: 'Nunito', sans-serif; background: var(--bg); color: var(--ink); min-height: 100vh; }
+    a { color: var(--accent-dark); }
+
+    .wrap { max-width: 980px; margin: 0 auto; padding: 28px 16px 60px; }
+
+    .hero { text-align: center; margin-bottom: 26px; }
+    .hero .emoji { font-size: 2.4rem; }
+    .hero h1 { font-size: clamp(1.4rem, 3.5vw, 2rem); font-weight: 900; margin: 8px 0 10px; }
+    .hero p { color: var(--muted); font-size: .95rem; line-height: 1.65; max-width: 640px; margin: 0 auto; }
+
+    .games-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap: 18px; margin-bottom: 26px; }
+    .game-card {
+      background: var(--card); border: 2px solid var(--border); border-radius: var(--radius);
+      padding: 22px; display: flex; flex-direction: column;
+    }
+    .game-card .icon { font-size: 2.2rem; margin-bottom: 10px; }
+    .game-card h2 { font-size: 1.1rem; font-weight: 900; margin-bottom: 8px; }
+    .game-card p { font-size: .85rem; color: var(--muted); line-height: 1.6; margin-bottom: 14px; flex: 1; }
+    .game-card .tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 14px; }
+    .game-card .tag {
+      font-size: .68rem; font-weight: 800; padding: 3px 9px; border-radius: 20px;
+      background: #fffbeb; color: #b45309;
+    }
+    .game-card .play-btn {
+      display: block; text-align: center; background: var(--accent); color: #fff; font-weight: 900;
+      padding: 11px; border-radius: 10px; text-decoration: none; font-size: .92rem;
+    }
+    .game-card.coming-soon { opacity: .7; background: linear-gradient(135deg,#fff 60%,#faf7f2); }
+    .game-card.coming-soon .play-btn {
+      background: #fff; color: var(--muted); border: 2px solid var(--border); cursor: default;
+    }
+
+    .info-box {
+      background: #fffbeb; border: 2px solid #fde68a; border-radius: 14px;
+      padding: 16px 18px; font-size: .85rem; line-height: 1.65; color: #78350f; margin-bottom: 20px;
+    }
+    .info-box strong { color: #92400e; }
+
+    footer.footer { text-align: center; padding: 24px 16px; color: var(--muted); font-size: .78rem; }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="wrap">
+
+  <div class="hero">
+    <span class="emoji">🌻</span>
+    <h1>Mind Games</h1>
+    <p>Free browser games for two things worth practicing: feeling a little better, and getting a little sharper.
+      Some lift your mood with gratitude and breathing. Others are quick, playful workouts for creativity,
+      leadership, mental flexibility, resilience, and entrepreneurial thinking.</p>
+  </div>
+
+  <div class="games-grid">
+    <div class="game-card">
+      <span class="icon">🌻</span>
+      <h2>Sunny Meadow</h2>
+      <p>Grow a garden by planting gratitude, popping heavy thoughts into balanced ones, breathing through a
+        calming round, and picking a tiny win. Your garden — and your streak — grow with you over time.</p>
+      <div class="tags">
+        <span class="tag">Mood Lift</span>
+        <span class="tag">Gratitude</span>
+        <span class="tag">Breathing</span>
+      </div>
+      <a class="play-btn" href="sunny-meadow.html">Play Sunny Meadow ▶</a>
+    </div>
+
+    <div class="game-card">
+      <span class="icon">🔨</span>
+      <h2>Idea Forge</h2>
+      <p>Race the clock to find surprising uses for an everyday object, then mash up two random objects into a
+        brand-new invention. A fast, playful creative problem-solving warm-up.</p>
+      <div class="tags">
+        <span class="tag">Creative Problem-Solving</span>
+        <span class="tag">Fluency</span>
+      </div>
+      <a class="play-btn" href="idea-forge.html">Play Idea Forge ▶</a>
+    </div>
+
+    <div class="game-card">
+      <span class="icon">🧭</span>
+      <h2>North Star</h2>
+      <p>Lead a small crew through five branching expedition scenarios. Balance Vision and Trust with every choice,
+        then discover your leadership archetype.</p>
+      <div class="tags">
+        <span class="tag">Visionary Leadership</span>
+        <span class="tag">Decision-Making</span>
+      </div>
+      <a class="play-btn" href="north-star.html">Play North Star ▶</a>
+    </div>
+
+    <div class="game-card">
+      <span class="icon">🔀</span>
+      <h2>Switch Lab</h2>
+      <p>Sort cards by a hidden rule that changes without warning. Watch the feedback, adapt fast, and see how
+        quickly you recover after each switch.</p>
+      <div class="tags">
+        <span class="tag">Mental Flexibility</span>
+        <span class="tag">Reaction</span>
+      </div>
+      <a class="play-btn" href="switch-lab.html">Play Switch Lab ▶</a>
+    </div>
+
+    <div class="game-card">
+      <span class="icon">🫖</span>
+      <h2>Refill the Cup</h2>
+      <p>Live through a simulated work week. Demands drain your energy cup automatically — your recovery choices
+        are what decide whether you make it to Friday.</p>
+      <div class="tags">
+        <span class="tag">Burnout</span>
+        <span class="tag">Self-Awareness</span>
+      </div>
+      <a class="play-btn" href="refill-cup.html">Play Refill the Cup ▶</a>
+    </div>
+
+    <div class="game-card">
+      <span class="icon">🚀</span>
+      <h2>Startup Sprint</h2>
+      <p>Pick a quirky business idea, make five make-or-break decisions, balance Cash, Customers, and Morale, then
+        build a 30-second pitch worth remembering.</p>
+      <div class="tags">
+        <span class="tag">Entrepreneurship</span>
+        <span class="tag">Strategy</span>
+      </div>
+      <a class="play-btn" href="startup-sprint.html">Play Startup Sprint ▶</a>
+    </div>
+
+    <div class="game-card">
+      <span class="icon">🔥</span>
+      <h2>Matchstick Math</h2>
+      <p>A false equation, made of matchsticks. Pick up exactly one stick and place it to make the equation true —
+        that's your one move, so look before you leap.</p>
+      <div class="tags">
+        <span class="tag">Logic Puzzle</span>
+        <span class="tag">Visual Reasoning</span>
+      </div>
+      <a class="play-btn" href="matchstick-math.html">Play Matchstick Math ▶</a>
+    </div>
+
+    <div class="game-card">
+      <span class="icon">🔤</span>
+      <h2>Word Tiles</h2>
+      <p>A Scrabble-style word building game. Draw letter tiles, spell the best word you can, and score with real
+        letter values, board multipliers, and a bonus for using all 7 tiles.</p>
+      <div class="tags">
+        <span class="tag">Vocabulary</span>
+        <span class="tag">Strategy</span>
+      </div>
+      <a class="play-btn" href="word-tiles.html">Play Word Tiles ▶</a>
+    </div>
+
+    <div class="game-card">
+      <span class="icon">🧩</span>
+      <h2>Jigsaw Puzzle</h2>
+      <p>Pick a scene and a difficulty, then drag real interlocking pieces onto the board. They snap into place
+        when they're close to their correct spot — reassemble the whole picture to win.</p>
+      <div class="tags">
+        <span class="tag">Visual-Spatial</span>
+        <span class="tag">Patience</span>
+      </div>
+      <a class="play-btn" href="jigsaw-puzzle.html">Play Jigsaw Puzzle ▶</a>
+    </div>
+
+    <div class="game-card coming-soon">
+      <span class="icon">🌙</span>
+      <h2>Calm Cove <span style="font-size:.7rem;">(coming soon)</span></h2>
+      <p>A slow-paced, ocean-themed game for winding down and easing worry before bed.</p>
+      <div class="tags"><span class="tag">Coming Soon</span></div>
+      <span class="play-btn">In Progress</span>
+    </div>
+  </div>
+
+  <div class="info-box">
+    <strong>About Mind Games:</strong> These are supportive, feel-good activities, not therapy or a medical
+    treatment, and they can't diagnose or treat any condition. If low mood lasts most of the day for two weeks or
+    more, or you ever have thoughts of harming yourself, please reach out to a trusted person or a qualified
+    professional. See our <a href="../mental_health_test/index.html">Mental Health &amp; Wellbeing Check-In</a> or the
+    <a href="https://findahelpline.com/" target="_blank" rel="noopener">global helpline directory</a> for support.
+  </div>
+
+</div>
+
+<footer class="footer">LearnPad · Mind Games are supportive activities, not a substitute for professional care.</footer>
+<script src="../assets/shared-nav.js"></script>
+</body>
+</html>

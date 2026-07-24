@@ -1,0 +1,3160 @@
+{
+  "meta": {
+    "title": "Wisdom & Sound Judgment Assessment",
+    "description": "A 500-question reflection across 20 dimensions of practical wisdom — judgment, self-awareness, emotional regulation, humility, patience, and more.",
+    "scale": {
+      "min": 1,
+      "max": 10,
+      "minLabel": "Not at all likely",
+      "maxLabel": "Extremely likely"
+    },
+    "categories": [
+      {
+        "id": "practical_judgment",
+        "label": "Practical Judgment & Decision-Making",
+        "icon": "🎯"
+      },
+      {
+        "id": "self_awareness",
+        "label": "Self-Awareness & Self-Knowledge",
+        "icon": "🪞"
+      },
+      {
+        "id": "emotional_regulation",
+        "label": "Emotional Regulation Under Pressure",
+        "icon": "🌊"
+      },
+      {
+        "id": "intellectual_humility",
+        "label": "Intellectual Humility & Open-Mindedness",
+        "icon": "🌱"
+      },
+      {
+        "id": "perspective_taking",
+        "label": "Perspective-Taking",
+        "icon": "🔭"
+      },
+      {
+        "id": "learning_from_mistakes",
+        "label": "Learning From Experience & Mistakes",
+        "icon": "📖"
+      },
+      {
+        "id": "patience_impulse_control",
+        "label": "Patience & Impulse Control",
+        "icon": "⏳"
+      },
+      {
+        "id": "tolerating_uncertainty",
+        "label": "Tolerating Uncertainty & Ambiguity",
+        "icon": "🌫️"
+      },
+      {
+        "id": "giving_sound_advice",
+        "label": "Giving Sound Advice & Guidance",
+        "icon": "🧓"
+      },
+      {
+        "id": "balancing_values",
+        "label": "Balancing Competing Values",
+        "icon": "⚖️"
+      },
+      {
+        "id": "long_term_thinking",
+        "label": "Long-Term Thinking & Foresight",
+        "icon": "🔮"
+      },
+      {
+        "id": "compassionate_boundaries",
+        "label": "Compassion Without Over-Attachment",
+        "icon": "🕊️"
+      },
+      {
+        "id": "contextual_judgment",
+        "label": "Contextual & Situational Judgment",
+        "icon": "🧩"
+      },
+      {
+        "id": "avoiding_extremes",
+        "label": "Moderation & Avoiding Extremes",
+        "icon": "⚗️"
+      },
+      {
+        "id": "deep_listening",
+        "label": "Deep Listening & Attentiveness",
+        "icon": "👂"
+      },
+      {
+        "id": "handling_criticism",
+        "label": "Handling Criticism & Feedback Gracefully",
+        "icon": "🎭"
+      },
+      {
+        "id": "letting_go",
+        "label": "Letting Go & Non-Attachment",
+        "icon": "🍃"
+      },
+      {
+        "id": "integrating_life_lessons",
+        "label": "Integrating Life Lessons Over Time",
+        "icon": "🧵"
+      },
+      {
+        "id": "quiet_humility",
+        "label": "Quiet Confidence & Humility",
+        "icon": "🤫"
+      },
+      {
+        "id": "seeking_truth",
+        "label": "Seeking Truth Over Being Right",
+        "icon": "🔍"
+      }
+    ],
+    "levels": [
+      {
+        "min": 9,
+        "max": 10.01,
+        "label": "Sage-Like Wisdom",
+        "emoji": "🦉",
+        "desc": "You consistently combine sound judgment, self-awareness, and emotional balance — weighing perspectives carefully and rarely reacting on impulse, even under pressure."
+      },
+      {
+        "min": 7.5,
+        "max": 9,
+        "label": "Strong Wisdom",
+        "emoji": "🌟",
+        "desc": "You show mature, well-reasoned judgment in most situations, with a few areas — like tolerating uncertainty or letting go of control — still developing."
+      },
+      {
+        "min": 6,
+        "max": 7.5,
+        "label": "Developing Wisdom",
+        "emoji": "🧭",
+        "desc": "You often pause to think things through, though emotion, ego, or impatience can sometimes override your better judgment."
+      },
+      {
+        "min": 4.5,
+        "max": 6,
+        "label": "Emerging Wisdom",
+        "emoji": "🌱",
+        "desc": "You show real moments of insight and self-control, but reactive habits or a need to be right often interrupt more thoughtful responses."
+      },
+      {
+        "min": 3,
+        "max": 4.5,
+        "label": "Inconsistent Wisdom",
+        "emoji": "🔧",
+        "desc": "Impulse, defensiveness, or narrow thinking frequently outweigh reflection in your responses. Small, deliberate pauses before reacting could make a big difference."
+      },
+      {
+        "min": 1,
+        "max": 3,
+        "label": "Wisdom Foundations Needed",
+        "emoji": "📘",
+        "desc": "Your answers suggest reactive, short-term thinking currently drives most of your decisions. This is a good starting point for building reflective habits."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "category": "practical_judgment",
+      "reverse": false,
+      "text": "Before buying a used car from a private seller, how likely are you to have a mechanic inspect it first?"
+    },
+    {
+      "id": 2,
+      "category": "practical_judgment",
+      "reverse": true,
+      "text": "You see an ad promising to double your savings in a month with a \"new investment method.\" How likely are you to put money in right away?"
+    },
+    {
+      "id": 3,
+      "category": "practical_judgment",
+      "reverse": false,
+      "text": "You're considering switching careers. How likely are you to talk to people already working in that field before making the leap?"
+    },
+    {
+      "id": 4,
+      "category": "practical_judgment",
+      "reverse": true,
+      "text": "A friend swears by a home remedy for a health issue you've been having. How likely are you to try it instead of seeing a doctor?"
+    },
+    {
+      "id": 5,
+      "category": "practical_judgment",
+      "reverse": false,
+      "text": "You're planning a wedding on a tight budget. How likely are you to compare quotes from multiple vendors before booking?"
+    },
+    {
+      "id": 6,
+      "category": "practical_judgment",
+      "reverse": true,
+      "text": "Someone shares a screenshot as \"proof\" during an online argument. How likely are you to accept it as true without checking where it came from?"
+    },
+    {
+      "id": 7,
+      "category": "practical_judgment",
+      "reverse": false,
+      "text": "Before co-signing a loan for a relative, how likely are you to review their financial situation and repayment plan first?"
+    },
+    {
+      "id": 8,
+      "category": "practical_judgment",
+      "reverse": false,
+      "text": "You're choosing between two apartments. How likely are you to visit both in person and check the neighborhood at different times of day?"
+    },
+    {
+      "id": 9,
+      "category": "practical_judgment",
+      "reverse": true,
+      "text": "A salesperson tells you to decide on a big purchase \"right now or the deal is gone.\" How likely are you to sign on the spot?"
+    },
+    {
+      "id": 10,
+      "category": "practical_judgment",
+      "reverse": false,
+      "text": "You're unsure how to fix a plumbing problem. How likely are you to weigh the cost of hiring a professional against the risk of a DIY attempt gone wrong?"
+    },
+    {
+      "id": 11,
+      "category": "practical_judgment",
+      "reverse": true,
+      "text": "A friend says a certain diet worked wonders for them. How likely are you to overhaul your entire diet based on that one story?"
+    },
+    {
+      "id": 12,
+      "category": "practical_judgment",
+      "reverse": false,
+      "text": "You're deciding between renting and buying a home. How likely are you to run the actual numbers (payments, maintenance, resale value) rather than go with gut feeling alone?"
+    },
+    {
+      "id": 13,
+      "category": "practical_judgment",
+      "reverse": false,
+      "text": "You're deciding whether to relocate for a job. How likely are you to factor in cost of living, family ties, and career growth before deciding?"
+    },
+    {
+      "id": 14,
+      "category": "practical_judgment",
+      "reverse": false,
+      "text": "Before lending a significant amount of money to a friend, how likely are you to think through how it would affect you if they never paid it back?"
+    },
+    {
+      "id": 15,
+      "category": "practical_judgment",
+      "reverse": true,
+      "text": "You hear a rumor that a store is about to run out of a product. How likely are you to rush and buy extra without checking if it's true?"
+    },
+    {
+      "id": 16,
+      "category": "practical_judgment",
+      "reverse": false,
+      "text": "You're choosing a school or course for your child. How likely are you to look at actual outcomes and talk to other parents rather than just reading brochures?"
+    },
+    {
+      "id": 17,
+      "category": "practical_judgment",
+      "reverse": true,
+      "text": "You're behind schedule on a deadline. How likely are you to skip double-checking your work just to submit it faster?"
+    },
+    {
+      "id": 18,
+      "category": "practical_judgment",
+      "reverse": false,
+      "text": "You're offered a business partnership. How likely are you to check the person's track record and get the agreement in writing before accepting?"
+    },
+    {
+      "id": 19,
+      "category": "practical_judgment",
+      "reverse": false,
+      "text": "You're choosing a health insurance plan. How likely are you to compare what's actually covered rather than just picking the cheapest option?"
+    },
+    {
+      "id": 20,
+      "category": "practical_judgment",
+      "reverse": false,
+      "text": "You're considering taking on a second job for extra income. How likely are you to calculate whether the time it costs is actually worth the money?"
+    },
+    {
+      "id": 21,
+      "category": "practical_judgment",
+      "reverse": true,
+      "text": "You're stuck behind a slow driver and running late. How likely are you to make a risky passing maneuver to save a few minutes?"
+    },
+    {
+      "id": 22,
+      "category": "practical_judgment",
+      "reverse": false,
+      "text": "Before agreeing to a major home renovation, how likely are you to get quotes from a few different contractors?"
+    },
+    {
+      "id": 23,
+      "category": "practical_judgment",
+      "reverse": true,
+      "text": "You read one alarming headline claiming a product you use is unsafe. How likely are you to stop using it immediately without reading further into the story?"
+    },
+    {
+      "id": 24,
+      "category": "practical_judgment",
+      "reverse": false,
+      "text": "After a rough financial month, how likely are you to look at your actual spending records to figure out what needs to change?"
+    },
+    {
+      "id": 25,
+      "category": "practical_judgment",
+      "reverse": false,
+      "text": "You're weighing two job offers with different salaries and benefits. How likely are you to make a list comparing long-term growth, not just the starting number?"
+    },
+    {
+      "id": 26,
+      "category": "self_awareness",
+      "reverse": false,
+      "text": "After a disagreement, how likely are you to think about what specifically triggered your reaction, not just what the other person did?"
+    },
+    {
+      "id": 27,
+      "category": "self_awareness",
+      "reverse": true,
+      "text": "When someone gives you feedback that stings, how likely are you to dismiss it as them just being wrong about you?"
+    },
+    {
+      "id": 28,
+      "category": "self_awareness",
+      "reverse": false,
+      "text": "How likely are you to notice when you're making a decision out of fear rather than genuine preference?"
+    },
+    {
+      "id": 29,
+      "category": "self_awareness",
+      "reverse": true,
+      "text": "When a plan fails, how likely are you to conclude it was mostly bad luck or other people's fault?"
+    },
+    {
+      "id": 30,
+      "category": "self_awareness",
+      "reverse": false,
+      "text": "How likely are you to recognize when you're feeling jealous of someone and admit it to yourself?"
+    },
+    {
+      "id": 31,
+      "category": "self_awareness",
+      "reverse": false,
+      "text": "Before reacting strongly to something, how likely are you to pause and ask yourself why it's bothering you so much?"
+    },
+    {
+      "id": 32,
+      "category": "self_awareness",
+      "reverse": true,
+      "text": "When you catch yourself procrastinating, how likely are you to tell yourself you just \"work better under pressure\" rather than examine what's really going on?"
+    },
+    {
+      "id": 33,
+      "category": "self_awareness",
+      "reverse": false,
+      "text": "How likely are you to ask a close friend or family member for honest feedback about a blind spot you might have?"
+    },
+    {
+      "id": 34,
+      "category": "self_awareness",
+      "reverse": false,
+      "text": "After getting angry at someone, how likely are you to notice whether you were actually stressed about something unrelated?"
+    },
+    {
+      "id": 35,
+      "category": "self_awareness",
+      "reverse": true,
+      "text": "When you succeed at something, how likely are you to assume it was entirely due to your own skill, ignoring luck or help you got?"
+    },
+    {
+      "id": 36,
+      "category": "self_awareness",
+      "reverse": false,
+      "text": "How likely are you to recognize a repeated pattern in your past relationships or jobs and consider your own role in it?"
+    },
+    {
+      "id": 37,
+      "category": "self_awareness",
+      "reverse": true,
+      "text": "When someone says you seem defensive, how likely are you to insist you're not, without considering it might be true?"
+    },
+    {
+      "id": 38,
+      "category": "self_awareness",
+      "reverse": false,
+      "text": "How likely are you to notice when you're avoiding a task because you're afraid of failing at it, rather than because you're \"too busy\"?"
+    },
+    {
+      "id": 39,
+      "category": "self_awareness",
+      "reverse": false,
+      "text": "Before giving advice, how likely are you to consider whether you're projecting your own experience or bias onto the other person's situation?"
+    },
+    {
+      "id": 40,
+      "category": "self_awareness",
+      "reverse": true,
+      "text": "When you're in a bad mood, how likely are you to snap at people without realizing it's really about something else going on with you?"
+    },
+    {
+      "id": 41,
+      "category": "self_awareness",
+      "reverse": false,
+      "text": "How likely are you to recognize when a strong reaction of yours says more about your own history than about the actual situation?"
+    },
+    {
+      "id": 42,
+      "category": "self_awareness",
+      "reverse": false,
+      "text": "How likely are you to check in with yourself honestly about whether you're truly happy in a relationship or job, not just used to it?"
+    },
+    {
+      "id": 43,
+      "category": "self_awareness",
+      "reverse": true,
+      "text": "When you make a mistake, how likely are you to focus on explaining why it wasn't really your fault?"
+    },
+    {
+      "id": 44,
+      "category": "self_awareness",
+      "reverse": false,
+      "text": "How likely are you to notice your own biases when judging someone from a different background than you?"
+    },
+    {
+      "id": 45,
+      "category": "self_awareness",
+      "reverse": true,
+      "text": "Do you assume that your first gut reaction to a person or situation is basically always accurate?"
+    },
+    {
+      "id": 46,
+      "category": "self_awareness",
+      "reverse": false,
+      "text": "How likely are you to reflect on whether your habit of interrupting people comes from excitement, impatience, or anxiety?"
+    },
+    {
+      "id": 47,
+      "category": "self_awareness",
+      "reverse": false,
+      "text": "After receiving praise, how likely are you to think honestly about whether you actually deserve the credit, or others helped too?"
+    },
+    {
+      "id": 48,
+      "category": "self_awareness",
+      "reverse": true,
+      "text": "When you feel insecure about something, how likely are you to cover it up by acting overly confident rather than acknowledging the insecurity to yourself?"
+    },
+    {
+      "id": 49,
+      "category": "self_awareness",
+      "reverse": false,
+      "text": "How likely are you to notice when your own mood is coloring how you're interpreting someone else's neutral comment?"
+    },
+    {
+      "id": 50,
+      "category": "self_awareness",
+      "reverse": false,
+      "text": "How likely are you to ask yourself whether a goal you're chasing is really your own, or something you picked up from family or social expectations?"
+    },
+    {
+      "id": 51,
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "When someone cuts you off in traffic, how likely are you to take a breath and let it go rather than react?"
+    },
+    {
+      "id": 52,
+      "category": "emotional_regulation",
+      "reverse": true,
+      "text": "During a heated argument, how likely are you to raise your voice to make your point?"
+    },
+    {
+      "id": 53,
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "When you receive a harsh email from your boss, how likely are you to wait until you've calmed down before replying?"
+    },
+    {
+      "id": 54,
+      "category": "emotional_regulation",
+      "reverse": true,
+      "text": "When a family member criticizes you at a gathering, how likely are you to say something cutting back in the moment?"
+    },
+    {
+      "id": 55,
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "Before responding to an insulting comment online, how likely are you to pause and consider whether it's worth engaging?"
+    },
+    {
+      "id": 56,
+      "category": "emotional_regulation",
+      "reverse": true,
+      "text": "When you're stressed about a deadline, how likely are you to take it out on people around you?"
+    },
+    {
+      "id": 57,
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "When a friend cancels plans last minute, how likely are you to respond calmly even if you're disappointed?"
+    },
+    {
+      "id": 58,
+      "category": "emotional_regulation",
+      "reverse": true,
+      "text": "When your partner brings up something sensitive during an argument, how likely are you to bring up unrelated past grievances to win?"
+    },
+    {
+      "id": 59,
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "When you're stuck in a long delay (flight, appointment), how likely are you to stay composed rather than complain loudly at staff?"
+    },
+    {
+      "id": 60,
+      "category": "emotional_regulation",
+      "reverse": true,
+      "text": "When someone interrupts you repeatedly in a meeting, how likely are you to snap at them in front of everyone?"
+    },
+    {
+      "id": 61,
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "When you feel your heart racing during a tense conversation, how likely are you to notice it and consciously slow yourself down?"
+    },
+    {
+      "id": 62,
+      "category": "emotional_regulation",
+      "reverse": true,
+      "text": "When you lose a game or competition, how likely are you to blame the referee, the rules, or other players in the heat of the moment?"
+    },
+    {
+      "id": 63,
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "When a coworker takes credit for your idea, how likely are you to address it calmly and directly rather than fume silently or explode?"
+    },
+    {
+      "id": 64,
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "When you're hungry and tired, how likely are you to recognize it and hold off on discussing anything sensitive until you've eaten or rested?"
+    },
+    {
+      "id": 65,
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "When you make a mistake in front of others, how likely are you to stay steady instead of spiraling into panic or shame?"
+    },
+    {
+      "id": 66,
+      "category": "emotional_regulation",
+      "reverse": true,
+      "text": "When someone gives you unsolicited criticism in public, how likely are you to embarrass them back immediately?"
+    },
+    {
+      "id": 67,
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "When a plan falls apart at the last minute, how likely are you to focus on next steps rather than panic?"
+    },
+    {
+      "id": 68,
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "When you're cut off mid-sentence, how likely are you to let it go and calmly return to your point rather than talk over the person?"
+    },
+    {
+      "id": 69,
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "Before sending an angry text message, how likely are you to wait and reread it later with a clearer head?"
+    },
+    {
+      "id": 70,
+      "category": "emotional_regulation",
+      "reverse": true,
+      "text": "When stuck in traffic and running late, how likely are you to honk repeatedly and tailgate other cars?"
+    },
+    {
+      "id": 71,
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "When a customer or stranger is rude to you, how likely are you to stay polite rather than match their tone?"
+    },
+    {
+      "id": 72,
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "When you feel embarrassed in front of others, how likely are you to shrug it off internally rather than lash out at whoever caused it?"
+    },
+    {
+      "id": 73,
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "When you're overwhelmed at work, how likely are you to step away for a few minutes to reset instead of pushing through irritably?"
+    },
+    {
+      "id": 74,
+      "category": "emotional_regulation",
+      "reverse": true,
+      "text": "When a disagreement with a friend gets tense, how likely are you to bring it up again days later still worked up, instead of having let it settle?"
+    },
+    {
+      "id": 75,
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "When someone provokes you intentionally, how likely are you to recognize what they're doing and choose not to take the bait?"
+    },
+    {
+      "id": 76,
+      "category": "intellectual_humility",
+      "reverse": false,
+      "text": "When someone presents solid evidence against something you believed, how likely are you to update your opinion?"
+    },
+    {
+      "id": 77,
+      "category": "intellectual_humility",
+      "reverse": true,
+      "text": "When you're proven wrong in an argument, how likely are you to keep arguing rather than admit it?"
+    },
+    {
+      "id": 78,
+      "category": "intellectual_humility",
+      "reverse": false,
+      "text": "How likely are you to say \"I don't know\" when someone asks you something outside your expertise, rather than guessing confidently?"
+    },
+    {
+      "id": 79,
+      "category": "intellectual_humility",
+      "reverse": false,
+      "text": "When you read news that confirms what you already believe, how likely are you to check the source as carefully as you would with something you disagreed with?"
+    },
+    {
+      "id": 80,
+      "category": "intellectual_humility",
+      "reverse": false,
+      "text": "When a friend holds a political or religious view different from yours, how likely are you to genuinely try to understand their reasoning?"
+    },
+    {
+      "id": 81,
+      "category": "intellectual_humility",
+      "reverse": true,
+      "text": "When an expert disagrees with your personal opinion on their subject, how likely are you to assume you probably know better anyway?"
+    },
+    {
+      "id": 82,
+      "category": "intellectual_humility",
+      "reverse": false,
+      "text": "After making a confident prediction that turns out wrong, how likely are you to publicly acknowledge you were mistaken?"
+    },
+    {
+      "id": 83,
+      "category": "intellectual_humility",
+      "reverse": true,
+      "text": "When your longstanding opinion is challenged by new research, how likely are you to look for reasons to dismiss the research instead of considering it?"
+    },
+    {
+      "id": 84,
+      "category": "intellectual_humility",
+      "reverse": false,
+      "text": "How likely are you to ask a genuine question in a meeting rather than pretend you already understand something?"
+    },
+    {
+      "id": 85,
+      "category": "intellectual_humility",
+      "reverse": true,
+      "text": "When someone with less experience than you suggests an idea, how likely are you to dismiss it without really considering it?"
+    },
+    {
+      "id": 86,
+      "category": "intellectual_humility",
+      "reverse": false,
+      "text": "How likely are you to change your position on something after hearing a genuinely compelling counterargument?"
+    },
+    {
+      "id": 87,
+      "category": "intellectual_humility",
+      "reverse": true,
+      "text": "When you're debating someone, how likely are you to focus on winning the argument rather than figuring out what's actually true?"
+    },
+    {
+      "id": 88,
+      "category": "intellectual_humility",
+      "reverse": false,
+      "text": "How likely are you to seek out opinions that challenge your own before making an important decision?"
+    },
+    {
+      "id": 89,
+      "category": "intellectual_humility",
+      "reverse": false,
+      "text": "When you catch yourself assuming you know someone's motive, how likely are you to remind yourself that it's just a guess and could be wrong?"
+    },
+    {
+      "id": 90,
+      "category": "intellectual_humility",
+      "reverse": false,
+      "text": "How likely are you to admit to your kids, team, or family that you don't have all the answers on a hard topic?"
+    },
+    {
+      "id": 91,
+      "category": "intellectual_humility",
+      "reverse": true,
+      "text": "When someone corrects a small factual error you made, how likely are you to get defensive rather than just say \"thanks, good catch\"?"
+    },
+    {
+      "id": 92,
+      "category": "intellectual_humility",
+      "reverse": false,
+      "text": "How likely are you to reconsider a strong first impression of someone after getting to know them better?"
+    },
+    {
+      "id": 93,
+      "category": "intellectual_humility",
+      "reverse": true,
+      "text": "When you read only a headline, how likely are you to form and share a firm opinion without reading the full article?"
+    },
+    {
+      "id": 94,
+      "category": "intellectual_humility",
+      "reverse": false,
+      "text": "How likely are you to genuinely thank someone for pointing out a flaw in your thinking, even if it stings?"
+    },
+    {
+      "id": 95,
+      "category": "intellectual_humility",
+      "reverse": true,
+      "text": "When your beliefs are challenged, how likely are you to interpret it as a personal attack rather than a chance to learn?"
+    },
+    {
+      "id": 96,
+      "category": "intellectual_humility",
+      "reverse": false,
+      "text": "How likely are you to revisit an old opinion of yours occasionally and ask whether it still holds up given what you know now?"
+    },
+    {
+      "id": 97,
+      "category": "intellectual_humility",
+      "reverse": false,
+      "text": "How likely are you to deliberately expose yourself to viewpoints or sources that challenge your usual opinions?"
+    },
+    {
+      "id": 98,
+      "category": "intellectual_humility",
+      "reverse": false,
+      "text": "How likely are you to say \"that's a good point, I hadn't considered that\" during a disagreement, when it's true?"
+    },
+    {
+      "id": 99,
+      "category": "intellectual_humility",
+      "reverse": true,
+      "text": "When a new idea contradicts how you've always done something, how likely are you to reject it without giving it a real try?"
+    },
+    {
+      "id": 100,
+      "category": "intellectual_humility",
+      "reverse": false,
+      "text": "How likely are you to consider that a strong emotional reaction to an idea might be clouding your judgment of whether it's actually true?"
+    },
+    {
+      "id": 101,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "During an argument with your partner about chores, how likely are you to pause and consider what kind of day they've had before responding?"
+    },
+    {
+      "id": 102,
+      "category": "perspective_taking",
+      "reverse": true,
+      "text": "A coworker pushes back on your idea in a meeting. How likely are you to assume they're just being difficult without considering their reasoning?"
+    },
+    {
+      "id": 103,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "A friend cancels plans on you last minute. How likely are you to consider that they might be dealing with something difficult rather than assuming they don't care?"
+    },
+    {
+      "id": 104,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "You read an angry comment from a stranger online. How likely are you to wonder what life experience might have shaped that reaction?"
+    },
+    {
+      "id": 105,
+      "category": "perspective_taking",
+      "reverse": true,
+      "text": "Your sibling is upset about a family decision you made. How likely are you to dismiss their feelings because you're confident you made the right call?"
+    },
+    {
+      "id": 106,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "A customer service worker is short with you on the phone. How likely are you to consider that they might be having a rough shift rather than taking it personally?"
+    },
+    {
+      "id": 107,
+      "category": "perspective_taking",
+      "reverse": true,
+      "text": "You're in a political discussion with a friend who disagrees with you. How likely are you to tune out their points while you wait for your turn to respond?"
+    },
+    {
+      "id": 108,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "Your manager gives you critical feedback that stings. How likely are you to try to understand the pressures they're under before reacting?"
+    },
+    {
+      "id": 109,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "Your young child has a meltdown in public. How likely are you to think about what the situation looks like from a small child's perspective?"
+    },
+    {
+      "id": 110,
+      "category": "perspective_taking",
+      "reverse": true,
+      "text": "Someone cuts in front of you in a checkout line. How likely are you to assume they're simply rude without considering they might not have noticed?"
+    },
+    {
+      "id": 111,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "You're negotiating a price with a small vendor. How likely are you to think about their costs and constraints, not just what you want to pay?"
+    },
+    {
+      "id": 112,
+      "category": "perspective_taking",
+      "reverse": true,
+      "text": "A friend from a very different background makes a life choice you wouldn't make. How likely are you to judge the choice without asking what led them there?"
+    },
+    {
+      "id": 113,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "You see news coverage of a protest you don't personally relate to. How likely are you to try to understand what circumstances brought people to march?"
+    },
+    {
+      "id": 114,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "A student in your class is accused of misbehaving. How likely are you to ask for their side of the story before deciding what happened?"
+    },
+    {
+      "id": 115,
+      "category": "perspective_taking",
+      "reverse": true,
+      "text": "Your spouse forgets an important date. How likely are you to assume they don't care rather than asking what happened on their end?"
+    },
+    {
+      "id": 116,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "Your team disagrees about which approach to take on a project. How likely are you to ask each teammate to explain their reasoning before pushing your own view?"
+    },
+    {
+      "id": 117,
+      "category": "perspective_taking",
+      "reverse": true,
+      "text": "A neighbor complains about noise from your house. How likely are you to assume they're being deliberately difficult rather than considering they may have a real reason?"
+    },
+    {
+      "id": 118,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "A doctor recommends a treatment plan that isn't what you expected. How likely are you to consider the clinical reasoning behind it before dismissing it?"
+    },
+    {
+      "id": 119,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "An old friend didn't invite you to a gathering. How likely are you to consider other explanations before assuming you were deliberately excluded?"
+    },
+    {
+      "id": 120,
+      "category": "perspective_taking",
+      "reverse": true,
+      "text": "You're in an online debate with someone who holds an opposing view. How likely are you to mock their position instead of trying to understand it?"
+    },
+    {
+      "id": 121,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "A parent enforced a rule growing up that felt unfair to you at the time. How likely are you, as an adult, to try to see why they might have set it?"
+    },
+    {
+      "id": 122,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "Your roommate has messy habits that bother you. How likely are you to think about what might be behind it, like stress or upbringing, before confronting them?"
+    },
+    {
+      "id": 123,
+      "category": "perspective_taking",
+      "reverse": true,
+      "text": "A colleague in another department misses a deadline that affects your work. How likely are you to blame them without finding out what was on their plate?"
+    },
+    {
+      "id": 124,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "You're interviewing a job candidate whose resume has an unexplained gap. How likely are you to ask about the circumstances before forming a judgment?"
+    },
+    {
+      "id": 125,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "In the middle of a disagreement, how likely are you to restate the other person's argument in your own words to check that you actually understand it?"
+    },
+    {
+      "id": 126,
+      "category": "learning_from_mistakes",
+      "reverse": false,
+      "text": "After a project at work falls apart, how likely are you to sit down and figure out exactly what went wrong before starting the next one?"
+    },
+    {
+      "id": 127,
+      "category": "learning_from_mistakes",
+      "reverse": true,
+      "text": "After a relationship ends, how likely are you to jump into a new one without reflecting on the patterns that contributed to the last breakup?"
+    },
+    {
+      "id": 128,
+      "category": "learning_from_mistakes",
+      "reverse": false,
+      "text": "After overspending badly one month, how likely are you to actually adjust your budget based on what triggered the spending?"
+    },
+    {
+      "id": 129,
+      "category": "learning_from_mistakes",
+      "reverse": true,
+      "text": "You show up late to an important event. How likely are you to blame traffic or bad luck without examining your own planning habits?"
+    },
+    {
+      "id": 130,
+      "category": "learning_from_mistakes",
+      "reverse": false,
+      "text": "After making a visible mistake in front of colleagues, how likely are you to write down what you'd do differently next time?"
+    },
+    {
+      "id": 131,
+      "category": "learning_from_mistakes",
+      "reverse": true,
+      "text": "After cramming the night before an exam and barely passing, how likely are you to do the exact same thing before the next one?"
+    },
+    {
+      "id": 132,
+      "category": "learning_from_mistakes",
+      "reverse": false,
+      "text": "After a close friendship ends badly, how likely are you to reflect on your own role in what went wrong, not just the other person's?"
+    },
+    {
+      "id": 133,
+      "category": "learning_from_mistakes",
+      "reverse": true,
+      "text": "After yet another argument with the same family member over the same issue, how likely are you to keep using the exact approach that's never worked before?"
+    },
+    {
+      "id": 134,
+      "category": "learning_from_mistakes",
+      "reverse": false,
+      "text": "After a project goes really well, how likely are you to figure out specifically what you did right so you can repeat it?"
+    },
+    {
+      "id": 135,
+      "category": "learning_from_mistakes",
+      "reverse": false,
+      "text": "After losing money on an investment, how likely are you to review your decision-making process rather than just shrugging at the outcome?"
+    },
+    {
+      "id": 136,
+      "category": "learning_from_mistakes",
+      "reverse": true,
+      "text": "After a health scare tied to a habit like smoking or poor sleep, how likely are you to slide back into the same habit once you feel better?"
+    },
+    {
+      "id": 137,
+      "category": "learning_from_mistakes",
+      "reverse": false,
+      "text": "A trusted friend gently criticizes a decision you made. How likely are you to genuinely consider whether there's truth in what they said?"
+    },
+    {
+      "id": 138,
+      "category": "learning_from_mistakes",
+      "reverse": true,
+      "text": "After a car accident that was partly your fault, how likely are you to keep driving the same way you did before it happened?"
+    },
+    {
+      "id": 139,
+      "category": "learning_from_mistakes",
+      "reverse": false,
+      "text": "After realizing you misjudged someone early on, how likely are you to think about what led you to that snap judgment so you can avoid it next time?"
+    },
+    {
+      "id": 140,
+      "category": "learning_from_mistakes",
+      "reverse": true,
+      "text": "After a business idea fails, how likely are you to blame the market or bad luck entirely without examining your own choices?"
+    },
+    {
+      "id": 141,
+      "category": "learning_from_mistakes",
+      "reverse": false,
+      "text": "After a disagreement at work spirals out of control, how likely are you to think through what you could have said differently at the start?"
+    },
+    {
+      "id": 142,
+      "category": "learning_from_mistakes",
+      "reverse": false,
+      "text": "How likely are you to keep some kind of record, like notes or a journal, of lessons you've learned from past decisions?"
+    },
+    {
+      "id": 143,
+      "category": "learning_from_mistakes",
+      "reverse": true,
+      "text": "After sincerely apologizing for hurting someone, how likely are you to repeat the same hurtful behavior within a few weeks?"
+    },
+    {
+      "id": 144,
+      "category": "learning_from_mistakes",
+      "reverse": false,
+      "text": "After a plan falls apart because you underestimated how long something would take, how likely are you to build in more buffer time next time?"
+    },
+    {
+      "id": 145,
+      "category": "learning_from_mistakes",
+      "reverse": true,
+      "text": "After losing money to a deal that turned out too good to be true, how likely are you to fall for a similar pitch again without extra scrutiny?"
+    },
+    {
+      "id": 146,
+      "category": "learning_from_mistakes",
+      "reverse": false,
+      "text": "When something goes wrong on a project, how likely are you to ask for specific feedback on what to improve rather than just moving on quickly?"
+    },
+    {
+      "id": 147,
+      "category": "learning_from_mistakes",
+      "reverse": false,
+      "text": "After realizing that avoiding a difficult conversation made a problem worse, how likely are you to address the next similar conversation sooner?"
+    },
+    {
+      "id": 148,
+      "category": "learning_from_mistakes",
+      "reverse": true,
+      "text": "After being burned by sharing sensitive information with someone who couldn't be trusted, how likely are you to share sensitive information just as freely with new people?"
+    },
+    {
+      "id": 149,
+      "category": "learning_from_mistakes",
+      "reverse": false,
+      "text": "You notice you keep overcommitting yourself and burning out. How likely are you to actually make changes to break that pattern, not just acknowledge it?"
+    },
+    {
+      "id": 150,
+      "category": "learning_from_mistakes",
+      "reverse": false,
+      "text": "After finally reaching a goal, how likely are you to reflect on the missteps you made along the way, even though things worked out in the end?"
+    },
+    {
+      "id": 151,
+      "category": "patience_impulse_control",
+      "reverse": false,
+      "text": "You receive an infuriating email from a colleague. How likely are you to wait a few hours before writing a reply?"
+    },
+    {
+      "id": 152,
+      "category": "patience_impulse_control",
+      "reverse": true,
+      "text": "A company gives you terrible customer service. How likely are you to fire off a scathing public review before giving them a chance to fix it?"
+    },
+    {
+      "id": 153,
+      "category": "patience_impulse_control",
+      "reverse": false,
+      "text": "You find a big-ticket item you want to buy. How likely are you to sleep on it for a day or two before purchasing?"
+    },
+    {
+      "id": 154,
+      "category": "patience_impulse_control",
+      "reverse": true,
+      "text": "You spot a flash sale with a countdown timer. How likely are you to buy on the spot without checking whether it fits your budget?"
+    },
+    {
+      "id": 155,
+      "category": "patience_impulse_control",
+      "reverse": false,
+      "text": "You strongly disagree with something being said in a meeting. How likely are you to wait for a natural pause before speaking up?"
+    },
+    {
+      "id": 156,
+      "category": "patience_impulse_control",
+      "reverse": true,
+      "text": "You're in a disagreement and you're sure you know what the other person is about to say. How likely are you to cut them off mid-sentence?"
+    },
+    {
+      "id": 157,
+      "category": "patience_impulse_control",
+      "reverse": false,
+      "text": "You receive a job offer with a few days to respond. How likely are you to actually take that time to think it over rather than deciding immediately?"
+    },
+    {
+      "id": 158,
+      "category": "patience_impulse_control",
+      "reverse": true,
+      "text": "You have a terrible day at work. How likely are you to quit or send an angry resignation message that same day?"
+    },
+    {
+      "id": 159,
+      "category": "patience_impulse_control",
+      "reverse": false,
+      "text": "You get a short, ambiguous text from a friend that could be read multiple ways. How likely are you to wait for clarification instead of assuming the worst?"
+    },
+    {
+      "id": 160,
+      "category": "patience_impulse_control",
+      "reverse": true,
+      "text": "Right after a heated argument, how likely are you to send a text venting everything you're feeling in the moment?"
+    },
+    {
+      "id": 161,
+      "category": "patience_impulse_control",
+      "reverse": false,
+      "text": "You're tired, hungry, and irritable. How likely are you to postpone a big decision until you're in a better state of mind?"
+    },
+    {
+      "id": 162,
+      "category": "patience_impulse_control",
+      "reverse": true,
+      "text": "You're emotionally worked up about something. How likely are you to go ahead and make a major decision anyway, right then?"
+    },
+    {
+      "id": 163,
+      "category": "patience_impulse_control",
+      "reverse": false,
+      "text": "Your child interrupts you during something important. How likely are you to pause and respond calmly rather than snapping?"
+    },
+    {
+      "id": 164,
+      "category": "patience_impulse_control",
+      "reverse": true,
+      "text": "A family member does something mildly annoying. How likely are you to snap at them over it?"
+    },
+    {
+      "id": 165,
+      "category": "patience_impulse_control",
+      "reverse": false,
+      "text": "The driver ahead of you is going slowly. How likely are you to hang back patiently rather than tailgating or honking?"
+    },
+    {
+      "id": 166,
+      "category": "patience_impulse_control",
+      "reverse": false,
+      "text": "The light turns green and the car ahead of you takes an extra second to move. How likely are you to wait a beat before reacting, rather than honking immediately?"
+    },
+    {
+      "id": 167,
+      "category": "patience_impulse_control",
+      "reverse": false,
+      "text": "An online sale says it ends in one hour. How likely are you to still take a few minutes to research the product before buying?"
+    },
+    {
+      "id": 168,
+      "category": "patience_impulse_control",
+      "reverse": true,
+      "text": "You read an upsetting post online. How likely are you to fire back a reactive comment right away?"
+    },
+    {
+      "id": 169,
+      "category": "patience_impulse_control",
+      "reverse": false,
+      "text": "You have a grievance with your partner. How likely are you to wait until you're both calm to bring it up, rather than in the heat of the moment?"
+    },
+    {
+      "id": 170,
+      "category": "patience_impulse_control",
+      "reverse": false,
+      "text": "In the middle of an unrelated disagreement, an old grudge crosses your mind. How likely are you to let it go for now rather than bringing it up right then?"
+    },
+    {
+      "id": 171,
+      "category": "patience_impulse_control",
+      "reverse": false,
+      "text": "You receive harsh criticism at work. How likely are you to pause and think through your response before replying?"
+    },
+    {
+      "id": 172,
+      "category": "patience_impulse_control",
+      "reverse": true,
+      "text": "A friend is telling a long story. How likely are you to interrupt partway through to jump in with your own related story?"
+    },
+    {
+      "id": 173,
+      "category": "patience_impulse_control",
+      "reverse": false,
+      "text": "You're facing a major financial or medical decision. How likely are you to seek a second opinion before committing?"
+    },
+    {
+      "id": 174,
+      "category": "patience_impulse_control",
+      "reverse": true,
+      "text": "After one especially bad day, how likely are you to make an impulsive big decision, like quitting your job or making a large purchase?"
+    },
+    {
+      "id": 175,
+      "category": "patience_impulse_control",
+      "reverse": false,
+      "text": "You feel the urge to check your phone in the middle of a task. How likely are you to finish what you're doing first before checking?"
+    },
+    {
+      "id": 176,
+      "category": "tolerating_uncertainty",
+      "reverse": false,
+      "text": "You're waiting on medical test results. How likely are you to keep up your normal daily routine while you wait rather than putting everything on hold?"
+    },
+    {
+      "id": 177,
+      "category": "tolerating_uncertainty",
+      "reverse": true,
+      "text": "You need to make a reasonable decision soon, but you don't have complete information. How likely are you to refuse to decide at all until you're 100% certain?"
+    },
+    {
+      "id": 178,
+      "category": "tolerating_uncertainty",
+      "reverse": false,
+      "text": "You applied for a job and haven't heard back. How likely are you to keep applying to other opportunities while you wait rather than freezing in place?"
+    },
+    {
+      "id": 179,
+      "category": "tolerating_uncertainty",
+      "reverse": true,
+      "text": "You're waiting to hear back about something important. How likely are you to obsessively refresh your email or phone for updates?"
+    },
+    {
+      "id": 180,
+      "category": "tolerating_uncertainty",
+      "reverse": false,
+      "text": "You're starting a new venture without complete information about the market. How likely are you to move forward with a reasonable plan despite the unknowns?"
+    },
+    {
+      "id": 181,
+      "category": "tolerating_uncertainty",
+      "reverse": true,
+      "text": "You're given a work assignment with some ambiguous instructions. How likely are you to avoid starting until every last detail has been spelled out for you?"
+    },
+    {
+      "id": 182,
+      "category": "tolerating_uncertainty",
+      "reverse": false,
+      "text": "A doctor gives you a diagnosis that isn't fully certain yet. How likely are you to ask good questions and make a plan for next steps despite the ambiguity?"
+    },
+    {
+      "id": 183,
+      "category": "tolerating_uncertainty",
+      "reverse": true,
+      "text": "You're a few weeks into dating someone and where things stand isn't fully clear yet. How likely are you to demand an immediate label on the relationship before it's had time to develop?"
+    },
+    {
+      "id": 184,
+      "category": "tolerating_uncertainty",
+      "reverse": false,
+      "text": "The stock market is unusually volatile. How likely are you to stick to your existing investment plan rather than panic-selling?"
+    },
+    {
+      "id": 185,
+      "category": "tolerating_uncertainty",
+      "reverse": true,
+      "text": "You experience an unexpected setback, like a layoff. How likely are you to spiral into worst-case thinking rather than assessing your actual options?"
+    },
+    {
+      "id": 186,
+      "category": "tolerating_uncertainty",
+      "reverse": false,
+      "text": "You're waiting on approval for a loan or application that could take weeks. How likely are you to keep making other plans in the meantime rather than putting your life on pause?"
+    },
+    {
+      "id": 187,
+      "category": "tolerating_uncertainty",
+      "reverse": true,
+      "text": "A friend has been giving you mixed signals lately. How likely are you to immediately conclude the friendship is over rather than sitting with the uncertainty a bit longer?"
+    },
+    {
+      "id": 188,
+      "category": "tolerating_uncertainty",
+      "reverse": false,
+      "text": "The weather forecast for a planned trip is uncertain. How likely are you to prepare a backup plan rather than either canceling outright or ignoring the risk?"
+    },
+    {
+      "id": 189,
+      "category": "tolerating_uncertainty",
+      "reverse": true,
+      "text": "You're considering starting a new project whose outcome isn't guaranteed. How likely are you to avoid starting until you're certain it will succeed?"
+    },
+    {
+      "id": 190,
+      "category": "tolerating_uncertainty",
+      "reverse": false,
+      "text": "You're facing a parenting decision where there's no clearly right answer. How likely are you to make the best call you can with the information available rather than waiting for perfect certainty?"
+    },
+    {
+      "id": 191,
+      "category": "tolerating_uncertainty",
+      "reverse": false,
+      "text": "You hate not knowing where you stand with someone. How likely are you to give them space to respond in their own time rather than pressuring them for an answer right away?"
+    },
+    {
+      "id": 192,
+      "category": "tolerating_uncertainty",
+      "reverse": false,
+      "text": "You're in a work meeting and someone asks a question you don't have a full answer to. How likely are you to comfortably say 'I don't know yet, but here's my best estimate'?"
+    },
+    {
+      "id": 193,
+      "category": "tolerating_uncertainty",
+      "reverse": true,
+      "text": "Economic news gets unsettling. How likely are you to make an extreme, rash decision, like withdrawing all your savings, based on the uncertainty?"
+    },
+    {
+      "id": 194,
+      "category": "tolerating_uncertainty",
+      "reverse": false,
+      "text": "You're awaiting exam or interview results that matter a lot to you. How likely are you to keep functioning normally, work, sleep, relationships, rather than putting your life on hold?"
+    },
+    {
+      "id": 195,
+      "category": "tolerating_uncertainty",
+      "reverse": true,
+      "text": "A doctor gives you an ambiguous prognosis with several possible outcomes. How likely are you to immediately assume the worst-case scenario is what will actually happen?"
+    },
+    {
+      "id": 196,
+      "category": "tolerating_uncertainty",
+      "reverse": false,
+      "text": "You're negotiating a deal without full information about the other party's position. How likely are you to proceed carefully with what you know rather than insisting on having the complete picture first?"
+    },
+    {
+      "id": 197,
+      "category": "tolerating_uncertainty",
+      "reverse": false,
+      "text": "You're in an unresolved conflict that's uncomfortable to sit with. How likely are you to let it stay unresolved a little longer rather than forcing a premature decision just to end the discomfort?"
+    },
+    {
+      "id": 198,
+      "category": "tolerating_uncertainty",
+      "reverse": false,
+      "text": "You've been diagnosed with a long-term health condition with an uncertain course. How likely are you to adapt your routines and keep living fully despite the unknowns?"
+    },
+    {
+      "id": 199,
+      "category": "tolerating_uncertainty",
+      "reverse": false,
+      "text": "You're not sure whether you offended someone in a conversation earlier. How likely are you to let it go for now and keep functioning normally rather than needing immediate confirmation?"
+    },
+    {
+      "id": 200,
+      "category": "tolerating_uncertainty",
+      "reverse": false,
+      "text": "You're making a big life decision, like a career change or a move, without knowing exactly how it will turn out. How likely are you to weigh the factors you do know and decide anyway, rather than waiting indefinitely for certainty?"
+    },
+    {
+      "id": 201,
+      "category": "giving_sound_advice",
+      "reverse": false,
+      "text": "A friend asks for your honest opinion on a big career decision. How likely are you to consider multiple angles before answering?"
+    },
+    {
+      "id": 202,
+      "category": "giving_sound_advice",
+      "reverse": true,
+      "text": "A friend's plan sounds risky, but they haven't asked for your input. How likely are you to jump in with strong opinions anyway?"
+    },
+    {
+      "id": 203,
+      "category": "giving_sound_advice",
+      "reverse": false,
+      "text": "Your sibling asks whether they should take out a loan for a new car. How likely are you to ask about their full financial picture before answering?"
+    },
+    {
+      "id": 204,
+      "category": "giving_sound_advice",
+      "reverse": false,
+      "text": "A coworker asks how to approach a tense conversation with their manager. How likely are you to walk through a few different ways it could go?"
+    },
+    {
+      "id": 205,
+      "category": "giving_sound_advice",
+      "reverse": true,
+      "text": "A close friend wants reassurance about a decision you privately think is a mistake. How likely are you to just tell them what they want to hear?"
+    },
+    {
+      "id": 206,
+      "category": "giving_sound_advice",
+      "reverse": false,
+      "text": "A younger cousin asks which college major to choose. How likely are you to help them think through their own interests rather than pushing your path?"
+    },
+    {
+      "id": 207,
+      "category": "giving_sound_advice",
+      "reverse": false,
+      "text": "A friend describes only one side of a falling-out with their roommate and asks who's right. How likely are you to ask clarifying questions before taking a side?"
+    },
+    {
+      "id": 208,
+      "category": "giving_sound_advice",
+      "reverse": true,
+      "text": "Someone asks for your take on a subject you know very little about. How likely are you to give a confident-sounding answer anyway?"
+    },
+    {
+      "id": 209,
+      "category": "giving_sound_advice",
+      "reverse": false,
+      "text": "A friend going through a breakup starts venting. How likely are you to ask whether they want advice or just want to be heard?"
+    },
+    {
+      "id": 210,
+      "category": "giving_sound_advice",
+      "reverse": false,
+      "text": "A parent asks how to handle their teenager's curfew violations. How likely are you to share your own experience while noting every family is different?"
+    },
+    {
+      "id": 211,
+      "category": "giving_sound_advice",
+      "reverse": true,
+      "text": "You gave someone advice that turned out badly for them. How likely are you to insist you were still right rather than reconsider?"
+    },
+    {
+      "id": 212,
+      "category": "giving_sound_advice",
+      "reverse": false,
+      "text": "A friend asks whether to confront a family member about an old grievance. How likely are you to help them weigh the likely outcomes first?"
+    },
+    {
+      "id": 213,
+      "category": "giving_sound_advice",
+      "reverse": false,
+      "text": "Someone mentions a physical symptom that's been bothering them and asks what it might be. How likely are you to suggest they see a doctor rather than guess?"
+    },
+    {
+      "id": 214,
+      "category": "giving_sound_advice",
+      "reverse": true,
+      "text": "A friend's partner has treated you badly in the past, and now the friend asks for relationship advice. How likely are you to let your personal feelings steer what you tell them?"
+    },
+    {
+      "id": 215,
+      "category": "giving_sound_advice",
+      "reverse": false,
+      "text": "A friend wants your opinion on a business idea you have real doubts about. How likely are you to share the doubts gently but honestly?"
+    },
+    {
+      "id": 216,
+      "category": "giving_sound_advice",
+      "reverse": true,
+      "text": "At a party, an acquaintance asks a serious question about a topic you barely understand. How likely are you to answer quickly just to seem helpful?"
+    },
+    {
+      "id": 217,
+      "category": "giving_sound_advice",
+      "reverse": false,
+      "text": "A friend asks if they should lend a large sum of money to a relative. How likely are you to help them think through both the relationship and financial risks?"
+    },
+    {
+      "id": 218,
+      "category": "giving_sound_advice",
+      "reverse": false,
+      "text": "Someone close to you is furious and talks about confronting a person aggressively. How likely are you to suggest they cool down before acting?"
+    },
+    {
+      "id": 219,
+      "category": "giving_sound_advice",
+      "reverse": true,
+      "text": "A friend keeps asking for advice on the same problem without ever acting on it. How likely are you to keep giving detailed answers instead of gently naming the pattern?"
+    },
+    {
+      "id": 220,
+      "category": "giving_sound_advice",
+      "reverse": false,
+      "text": "A friend asks how to turn down a favor they don't have time for. How likely are you to help them find words that are honest but kind?"
+    },
+    {
+      "id": 221,
+      "category": "giving_sound_advice",
+      "reverse": true,
+      "text": "You strongly dislike a choice a friend is about to make. How likely are you to phrase your advice in absolute terms like \"you'll definitely regret this\"?"
+    },
+    {
+      "id": 222,
+      "category": "giving_sound_advice",
+      "reverse": false,
+      "text": "An old friend going through a failure similar to one you once had asks for guidance. How likely are you to be honest about your own mistakes rather than just offering platitudes?"
+    },
+    {
+      "id": 223,
+      "category": "giving_sound_advice",
+      "reverse": true,
+      "text": "A younger relative asks for advice, and you realize your own experience is outdated for their situation. How likely are you to give the advice anyway without mentioning that?"
+    },
+    {
+      "id": 224,
+      "category": "giving_sound_advice",
+      "reverse": false,
+      "text": "A friend is deciding between two job offers and asks what you'd do. How likely are you to help them clarify their own priorities rather than just pushing your preference?"
+    },
+    {
+      "id": 225,
+      "category": "giving_sound_advice",
+      "reverse": false,
+      "text": "Someone asks for advice about a conflict, and you realize you don't know enough of the details yet. How likely are you to admit that before offering an opinion?"
+    },
+    {
+      "id": 226,
+      "category": "balancing_values",
+      "reverse": false,
+      "text": "A friend asks you to keep a secret that, if revealed, could protect someone else from harm. How likely are you to think carefully about which value should win before deciding?"
+    },
+    {
+      "id": 227,
+      "category": "balancing_values",
+      "reverse": true,
+      "text": "You promised to always be brutally honest with a friend, and now honesty would needlessly hurt them over something small. How likely are you to say it anyway just because you promised honesty?"
+    },
+    {
+      "id": 228,
+      "category": "balancing_values",
+      "reverse": false,
+      "text": "Your team wants you to bend a rule to help a struggling member, but fairness to others is at stake. How likely are you to look for a solution that respects both?"
+    },
+    {
+      "id": 229,
+      "category": "balancing_values",
+      "reverse": true,
+      "text": "A family member wants unconditional loyalty even when they're clearly in the wrong. How likely are you to back them publicly regardless?"
+    },
+    {
+      "id": 230,
+      "category": "balancing_values",
+      "reverse": false,
+      "text": "You value personal freedom, but a friend's choices are starting to affect people who depend on them. How likely are you to gently raise the responsibility side too?"
+    },
+    {
+      "id": 231,
+      "category": "balancing_values",
+      "reverse": false,
+      "text": "A relative asks for money you know they'll likely misuse, but refusing could damage the relationship. How likely are you to weigh both the risk and the relationship before deciding?"
+    },
+    {
+      "id": 232,
+      "category": "balancing_values",
+      "reverse": true,
+      "text": "You believe strongly in following rules. How likely are you to insist on the rule even when everyone agrees this one case clearly calls for an exception?"
+    },
+    {
+      "id": 233,
+      "category": "balancing_values",
+      "reverse": false,
+      "text": "A close friend did something wrong to someone you also care about. How likely are you to try to be fair to both sides instead of automatically taking your friend's side?"
+    },
+    {
+      "id": 234,
+      "category": "balancing_values",
+      "reverse": false,
+      "text": "You need to give feedback that is both honest and kind, and the two feel like they pull in different directions. How likely are you to take time to find wording that serves both?"
+    },
+    {
+      "id": 235,
+      "category": "balancing_values",
+      "reverse": true,
+      "text": "Someone you care about is being irresponsible with money, and you value being supportive above all. How likely are you to keep bailing them out without raising the issue?"
+    },
+    {
+      "id": 236,
+      "category": "balancing_values",
+      "reverse": false,
+      "text": "A team decision requires balancing what's best for the group against what's best for one struggling member. How likely are you to look for an option that doesn't sacrifice either entirely?"
+    },
+    {
+      "id": 237,
+      "category": "balancing_values",
+      "reverse": true,
+      "text": "You highly value independence. How likely are you to refuse help from others even when accepting it would clearly benefit everyone involved?"
+    },
+    {
+      "id": 238,
+      "category": "balancing_values",
+      "reverse": false,
+      "text": "A friend wants your loyalty in a dispute where you can see they're partly at fault. How likely are you to be honest with them privately even while supporting them publicly?"
+    },
+    {
+      "id": 239,
+      "category": "balancing_values",
+      "reverse": true,
+      "text": "You believe strict discipline is always best for children. How likely are you to apply the same rigid approach regardless of a child's individual needs or the situation?"
+    },
+    {
+      "id": 240,
+      "category": "balancing_values",
+      "reverse": false,
+      "text": "You must choose between keeping a promise and preventing harm because circumstances changed. How likely are you to weigh which one matters more in this specific case?"
+    },
+    {
+      "id": 241,
+      "category": "balancing_values",
+      "reverse": false,
+      "text": "Two people you respect disagree sharply, and both have valid points. How likely are you to try to find what's reasonable in each side rather than picking a \"winner\"?"
+    },
+    {
+      "id": 242,
+      "category": "balancing_values",
+      "reverse": true,
+      "text": "You highly value tradition. How likely are you to resist a sensible change just because it breaks with how things have always been done?"
+    },
+    {
+      "id": 243,
+      "category": "balancing_values",
+      "reverse": false,
+      "text": "A friend's freedom to make their own choices conflicts with your worry for their safety. How likely are you to respect their autonomy while still voicing your concern once?"
+    },
+    {
+      "id": 244,
+      "category": "balancing_values",
+      "reverse": true,
+      "text": "You value being agreeable and easy to work with. How likely are you to go along with a plan you think is genuinely wrong just to avoid conflict?"
+    },
+    {
+      "id": 245,
+      "category": "balancing_values",
+      "reverse": false,
+      "text": "At work, being fair to the whole team sometimes means disappointing an individual you like. How likely are you to make the fair call anyway?"
+    },
+    {
+      "id": 246,
+      "category": "balancing_values",
+      "reverse": true,
+      "text": "You believe kindness should never be sacrificed. How likely are you to avoid telling someone a hard truth they genuinely need to hear, purely to spare their feelings?"
+    },
+    {
+      "id": 247,
+      "category": "balancing_values",
+      "reverse": false,
+      "text": "A community decision pits environmental concerns against economic needs of local families. How likely are you to look for a compromise that takes both seriously?"
+    },
+    {
+      "id": 248,
+      "category": "balancing_values",
+      "reverse": false,
+      "text": "You're torn between respecting a friend's privacy and telling a mutual friend something they'd probably want to know. How likely are you to think through the consequences of each option before choosing?"
+    },
+    {
+      "id": 249,
+      "category": "balancing_values",
+      "reverse": true,
+      "text": "You value justice strongly. How likely are you to push for maximum punishment in a situation where the context clearly calls for some mercy?"
+    },
+    {
+      "id": 250,
+      "category": "balancing_values",
+      "reverse": false,
+      "text": "You have to decide how much to prioritize your own needs versus a family obligation this month. How likely are you to consciously weigh both rather than defaulting automatically to one?"
+    },
+    {
+      "id": 251,
+      "category": "long_term_thinking",
+      "reverse": false,
+      "text": "You get an unexpected bonus at work. How likely are you to put a meaningful portion into savings rather than spending it all right away?"
+    },
+    {
+      "id": 252,
+      "category": "long_term_thinking",
+      "reverse": true,
+      "text": "You're offered a task that pays well now but will teach you nothing useful for your future. How likely are you to take it without considering what comes after?"
+    },
+    {
+      "id": 253,
+      "category": "long_term_thinking",
+      "reverse": false,
+      "text": "You're choosing between two apartments, one cheaper now but far from your future job prospects. How likely are you to factor in the next few years, not just this month's rent?"
+    },
+    {
+      "id": 254,
+      "category": "long_term_thinking",
+      "reverse": true,
+      "text": "You're tired after a long day and skip a workout, telling yourself you'll just start \"tomorrow\" indefinitely. How likely are you to let this become a repeating pattern without noticing?"
+    },
+    {
+      "id": 255,
+      "category": "long_term_thinking",
+      "reverse": false,
+      "text": "You're deciding whether to invest time in learning a new skill that won't pay off for a year or more. How likely are you to still commit to it if you believe it will help long-term?"
+    },
+    {
+      "id": 256,
+      "category": "long_term_thinking",
+      "reverse": true,
+      "text": "A quick shortcut at work would save you time today but create a mess for whoever handles it next month. How likely are you to take the shortcut anyway?"
+    },
+    {
+      "id": 257,
+      "category": "long_term_thinking",
+      "reverse": false,
+      "text": "You're planning a major purchase. How likely are you to research how it will hold up and cost to maintain over several years, not just its price today?"
+    },
+    {
+      "id": 258,
+      "category": "long_term_thinking",
+      "reverse": false,
+      "text": "You notice a small health symptom that's easy to ignore. How likely are you to get it checked before it potentially becomes a bigger problem?"
+    },
+    {
+      "id": 259,
+      "category": "long_term_thinking",
+      "reverse": true,
+      "text": "You're annoyed with a friend right now. How likely are you to send an angry message without considering how it might affect the friendship down the road?"
+    },
+    {
+      "id": 260,
+      "category": "long_term_thinking",
+      "reverse": false,
+      "text": "You're choosing a college course load. How likely are you to consider how each class builds toward your longer-term goals rather than just picking the easiest options?"
+    },
+    {
+      "id": 261,
+      "category": "long_term_thinking",
+      "reverse": true,
+      "text": "You could skip paying into your retirement savings this year to afford a nicer vacation. How likely are you to do this without thinking much about later consequences?"
+    },
+    {
+      "id": 262,
+      "category": "long_term_thinking",
+      "reverse": false,
+      "text": "Your company offers training that takes time away from your current tasks but builds skills for future roles. How likely are you to prioritize the training?"
+    },
+    {
+      "id": 263,
+      "category": "long_term_thinking",
+      "reverse": true,
+      "text": "You're frustrated in a relationship and considering a public post venting about your partner. How likely are you to post it without thinking about the lasting impact?"
+    },
+    {
+      "id": 264,
+      "category": "long_term_thinking",
+      "reverse": false,
+      "text": "You're deciding how to spend a free weekend. How likely are you to choose something that also builds a skill or relationship that matters to you long-term?"
+    },
+    {
+      "id": 265,
+      "category": "long_term_thinking",
+      "reverse": false,
+      "text": "You're tempted to cut corners on a home repair to save money now. How likely are you to consider how it might cost more if it fails later?"
+    },
+    {
+      "id": 266,
+      "category": "long_term_thinking",
+      "reverse": true,
+      "text": "You could take on a new client project that pays immediately but will damage your reputation with your industry down the line. How likely are you to take it anyway for the quick income?"
+    },
+    {
+      "id": 267,
+      "category": "long_term_thinking",
+      "reverse": false,
+      "text": "You're raising a child and facing a moment where the easy short-term fix conflicts with what teaches a better long-term lesson. How likely are you to choose the harder, longer-lasting lesson?"
+    },
+    {
+      "id": 268,
+      "category": "long_term_thinking",
+      "reverse": true,
+      "text": "You're eating out often because cooking feels like too much effort right now. How likely are you to keep doing this without weighing the longer-term effects on your health or finances?"
+    },
+    {
+      "id": 269,
+      "category": "long_term_thinking",
+      "reverse": false,
+      "text": "You're offered a promotion that pays more but would burn you out within a year. How likely are you to think seriously about the trade-off before accepting?"
+    },
+    {
+      "id": 270,
+      "category": "long_term_thinking",
+      "reverse": false,
+      "text": "You're saving for a big future goal, and an impulse purchase tempts you. How likely are you to pause and consider whether it fits your bigger plan?"
+    },
+    {
+      "id": 271,
+      "category": "long_term_thinking",
+      "reverse": true,
+      "text": "A friendship has become draining, but ending it would be uncomfortable right now. How likely are you to keep avoiding the conversation indefinitely rather than deal with it?"
+    },
+    {
+      "id": 272,
+      "category": "long_term_thinking",
+      "reverse": false,
+      "text": "You're choosing how to handle a conflict with a business partner. How likely are you to consider how your response will affect the partnership years from now?"
+    },
+    {
+      "id": 273,
+      "category": "long_term_thinking",
+      "reverse": true,
+      "text": "You could max out a credit card for something you want today and worry about the payments later. How likely are you to do this without a real plan to pay it off?"
+    },
+    {
+      "id": 274,
+      "category": "long_term_thinking",
+      "reverse": false,
+      "text": "You're picking a neighborhood to live in long-term. How likely are you to think about how it will suit your life in five or ten years, not just right now?"
+    },
+    {
+      "id": 275,
+      "category": "long_term_thinking",
+      "reverse": false,
+      "text": "You're deciding whether to have a difficult but important conversation with a family member now, or put it off. How likely are you to have it sooner because you know delaying will make things worse?"
+    },
+    {
+      "id": 276,
+      "category": "compassionate_boundaries",
+      "reverse": false,
+      "text": "A friend calls you upset late at night for the third time this week about the same recurring issue. How likely are you to listen with care while also gently setting a limit on when you're available?"
+    },
+    {
+      "id": 277,
+      "category": "compassionate_boundaries",
+      "reverse": true,
+      "text": "A family member's problems have started consuming most of your free time and energy. How likely are you to keep giving without pausing to protect your own wellbeing?"
+    },
+    {
+      "id": 278,
+      "category": "compassionate_boundaries",
+      "reverse": false,
+      "text": "A coworker asks you to cover their shift again after several times already. How likely are you to consider your own limits before saying yes?"
+    },
+    {
+      "id": 279,
+      "category": "compassionate_boundaries",
+      "reverse": true,
+      "text": "Someone you care about is upset with you for saying no to a request. How likely are you to give in just to avoid their disappointment, even when you shouldn't?"
+    },
+    {
+      "id": 280,
+      "category": "compassionate_boundaries",
+      "reverse": false,
+      "text": "A friend is going through a hard time and leaning on you heavily. How likely are you to support them while also encouraging them to seek other help, like a counselor?"
+    },
+    {
+      "id": 281,
+      "category": "compassionate_boundaries",
+      "reverse": true,
+      "text": "A friend often asks for favors that inconvenience you. How likely are you to keep saying yes to avoid seeming unkind?"
+    },
+    {
+      "id": 282,
+      "category": "compassionate_boundaries",
+      "reverse": false,
+      "text": "You're helping a struggling friend, and you notice you're starting to feel resentful. How likely are you to check in with yourself and adjust how much you're giving?"
+    },
+    {
+      "id": 283,
+      "category": "compassionate_boundaries",
+      "reverse": true,
+      "text": "Someone frequently vents to you about the same problem without taking any steps to fix it. How likely are you to keep absorbing it endlessly without ever naming the pattern?"
+    },
+    {
+      "id": 284,
+      "category": "compassionate_boundaries",
+      "reverse": false,
+      "text": "A relative asks for a loan for the third time this year. How likely are you to care about their situation while still being honest about your own limits?"
+    },
+    {
+      "id": 285,
+      "category": "compassionate_boundaries",
+      "reverse": true,
+      "text": "You feel responsible for other people's moods and reactions. How likely are you to change your own plans just to keep someone else happy, even at real cost to yourself?"
+    },
+    {
+      "id": 286,
+      "category": "compassionate_boundaries",
+      "reverse": false,
+      "text": "A friend is upset and wants you to agree that everyone else is wrong. How likely are you to stay caring but still be honest if you see it differently?"
+    },
+    {
+      "id": 287,
+      "category": "compassionate_boundaries",
+      "reverse": true,
+      "text": "You're exhausted from helping others all week. How likely are you to keep saying yes to new requests rather than admitting you need rest?"
+    },
+    {
+      "id": 288,
+      "category": "compassionate_boundaries",
+      "reverse": false,
+      "text": "You want to help a friend through a crisis, but you also have your own responsibilities this week. How likely are you to find a way to support them without abandoning your own commitments?"
+    },
+    {
+      "id": 289,
+      "category": "compassionate_boundaries",
+      "reverse": true,
+      "text": "A friend's negativity tends to drag your own mood down for hours afterward. How likely are you to keep spending long stretches of time with them without adjusting anything?"
+    },
+    {
+      "id": 290,
+      "category": "compassionate_boundaries",
+      "reverse": false,
+      "text": "A coworker is struggling and you want to help. How likely are you to offer support in a way that doesn't take on their responsibilities as your own?"
+    },
+    {
+      "id": 291,
+      "category": "compassionate_boundaries",
+      "reverse": true,
+      "text": "Someone close to you often guilt-trips you into helping them. How likely are you to give in to the guilt rather than deciding based on what's actually reasonable?"
+    },
+    {
+      "id": 292,
+      "category": "compassionate_boundaries",
+      "reverse": false,
+      "text": "A friend calls needing to vent about the same crisis for the fourth time this month. How likely are you to be caring while also being honest that you're reaching your limit?"
+    },
+    {
+      "id": 293,
+      "category": "compassionate_boundaries",
+      "reverse": true,
+      "text": "You dislike disappointing people. How likely are you to say yes to requests you don't have the time or energy for, just to avoid an awkward moment?"
+    },
+    {
+      "id": 294,
+      "category": "compassionate_boundaries",
+      "reverse": false,
+      "text": "A family member is going through a hard divorce and needs support. How likely are you to stay present for them while still protecting some personal time for yourself?"
+    },
+    {
+      "id": 295,
+      "category": "compassionate_boundaries",
+      "reverse": false,
+      "text": "A friend's problems have started to feel like your own responsibility to solve. How likely are you to remind yourself that it's ultimately their situation, even while you keep supporting them?"
+    },
+    {
+      "id": 296,
+      "category": "compassionate_boundaries",
+      "reverse": false,
+      "text": "You care deeply about a friend who keeps making the same harmful choices. How likely are you to keep caring about them while accepting you can't control their decisions?"
+    },
+    {
+      "id": 297,
+      "category": "compassionate_boundaries",
+      "reverse": false,
+      "text": "Saying no to someone makes you feel a little guilty even when your reasons are valid. How likely are you to follow through with the \"no\" anyway because you know it's the right call?"
+    },
+    {
+      "id": 298,
+      "category": "compassionate_boundaries",
+      "reverse": false,
+      "text": "A friend needs emotional support during a hard week. How likely are you to check in warmly without letting their crisis take over your entire week too?"
+    },
+    {
+      "id": 299,
+      "category": "compassionate_boundaries",
+      "reverse": false,
+      "text": "You realize you've been staying up late worrying and problem-solving on behalf of a friend's issue. How likely are you to pull back and let them own more of it themselves?"
+    },
+    {
+      "id": 300,
+      "category": "compassionate_boundaries",
+      "reverse": false,
+      "text": "Someone you helped in the past now expects you to always be available. How likely are you to kindly reset that expectation when it stops being sustainable for you?"
+    },
+    {
+      "id": 301,
+      "category": "contextual_judgment",
+      "reverse": false,
+      "text": "You're leading a team meeting, and a normally punctual colleague is late for the third time this month but seems visibly stressed lately. How likely are you to ask privately what's going on before applying the usual lateness policy?"
+    },
+    {
+      "id": 302,
+      "category": "contextual_judgment",
+      "reverse": true,
+      "text": "Your company has a strict \"no exceptions\" refund policy, and you're the one enforcing it. A customer is asking for an exception due to a genuine emergency. How likely are you to refuse without even considering the circumstances?"
+    },
+    {
+      "id": 303,
+      "category": "contextual_judgment",
+      "reverse": false,
+      "text": "You promised to help a friend move on Saturday, but your child gets sick that morning. How likely are you to explain the situation and adjust your plans rather than rigidly keeping your word regardless of circumstances?"
+    },
+    {
+      "id": 304,
+      "category": "contextual_judgment",
+      "reverse": false,
+      "text": "A junior employee makes a mistake that would normally warrant formal disciplinary action, but it's their first week and they clearly weren't trained properly. How likely are you to consider the training gap before deciding how to respond?"
+    },
+    {
+      "id": 305,
+      "category": "contextual_judgment",
+      "reverse": true,
+      "text": "You have a personal rule of never lending money to anyone, even when a close family member faces a one-time medical emergency and has always been reliable. How likely are you to stick to your rule regardless of the situation?"
+    },
+    {
+      "id": 306,
+      "category": "contextual_judgment",
+      "reverse": false,
+      "text": "You're teaching two of your children the same lesson, but one learns best with strict structure and the other with more freedom. How likely are you to adjust your approach for each child rather than teaching them identically?"
+    },
+    {
+      "id": 307,
+      "category": "contextual_judgment",
+      "reverse": true,
+      "text": "Your workplace dress code technically allows for a specific exception during a heatwave, but you insist that everyone follow the letter of the rule anyway. How likely are you to do this?"
+    },
+    {
+      "id": 308,
+      "category": "contextual_judgment",
+      "reverse": false,
+      "text": "A friend cancels plans with you last minute for the second time, but this time it's because their parent was just hospitalized. How likely are you to respond with understanding rather than treating it the same as the earlier cancellation?"
+    },
+    {
+      "id": 309,
+      "category": "contextual_judgment",
+      "reverse": false,
+      "text": "You're deciding whether to correct a stranger's mistake in a public setting. How likely are you to consider whether it's a private, low-stakes moment versus a public, high-stakes one before deciding how to respond?"
+    },
+    {
+      "id": 310,
+      "category": "contextual_judgment",
+      "reverse": true,
+      "text": "You always give the exact same feedback style to every employee you manage, regardless of whether they respond better to direct criticism or gentle encouragement. How likely are you to keep doing this even after noticing it doesn't work for everyone?"
+    },
+    {
+      "id": 311,
+      "category": "contextual_judgment",
+      "reverse": false,
+      "text": "Two neighbors are having a loud argument outside your house. How likely are you to consider the specific situation, such as whether someone is in danger or it's just a heated but harmless disagreement, before deciding whether to intervene?"
+    },
+    {
+      "id": 312,
+      "category": "contextual_judgment",
+      "reverse": false,
+      "text": "You're grading a student's late assignment. How likely are you to look into why it was late, such as a family emergency versus simple procrastination, before deciding on a penalty?"
+    },
+    {
+      "id": 313,
+      "category": "contextual_judgment",
+      "reverse": true,
+      "text": "You believe rules are rules, so when a close friend asks you to bend a minor workplace policy for a legitimate one-time reason, you refuse without hearing them out. How likely are you to respond this way?"
+    },
+    {
+      "id": 314,
+      "category": "contextual_judgment",
+      "reverse": false,
+      "text": "You're planning a family gathering and know that one relative has a difficult relationship with alcohol. How likely are you to quietly adjust the drink menu or seating out of consideration, even though it means changing your usual plan?"
+    },
+    {
+      "id": 315,
+      "category": "contextual_judgment",
+      "reverse": false,
+      "text": "A coworker asks to leave early for what seems like a minor reason, but you sense there's more going on. How likely are you to ask a gentle follow-up question before deciding how to respond, rather than judging the request at face value?"
+    },
+    {
+      "id": 316,
+      "category": "contextual_judgment",
+      "reverse": true,
+      "text": "You treat every disagreement with your partner the same way, using the exact same approach whether it's a small annoyance or a significant betrayal of trust. How likely are you to do this?"
+    },
+    {
+      "id": 317,
+      "category": "contextual_judgment",
+      "reverse": false,
+      "text": "Your usual approach to conflict is to address things head-on immediately, but you realize the other person is currently going through a personal crisis. How likely are you to wait for a better moment instead of sticking to your usual style?"
+    },
+    {
+      "id": 318,
+      "category": "contextual_judgment",
+      "reverse": false,
+      "text": "You're deciding how strictly to enforce a curfew for your teenager. How likely are you to factor in the specific event, such as a close friend's emergency versus an ordinary party, rather than applying the same curfew no matter what?"
+    },
+    {
+      "id": 319,
+      "category": "contextual_judgment",
+      "reverse": true,
+      "text": "When a new employee asks a question you consider \"basic,\" you respond with the exact same curt tone you'd use with a veteran who should already know better. How likely are you to do this?"
+    },
+    {
+      "id": 320,
+      "category": "contextual_judgment",
+      "reverse": false,
+      "text": "You're asked to give a toast at two very different events, one formal and one casual. How likely are you to adjust your tone and content for each audience rather than using the identical speech?"
+    },
+    {
+      "id": 321,
+      "category": "contextual_judgment",
+      "reverse": false,
+      "text": "A stranger asks you for directions while you're in a rush. How likely are you to quickly assess how urgent your own situation is before deciding how much time to give them?"
+    },
+    {
+      "id": 322,
+      "category": "contextual_judgment",
+      "reverse": true,
+      "text": "You insist on responding to every email, whether from a close colleague or an unknown vendor, with the exact same formal template regardless of the relationship or context. How likely are you to keep this up even when it clearly feels off?"
+    },
+    {
+      "id": 323,
+      "category": "contextual_judgment",
+      "reverse": false,
+      "text": "You're mediating a disagreement between two friends. How likely are you to consider each person's personality and history with conflict before deciding how to approach the conversation with each of them?"
+    },
+    {
+      "id": 324,
+      "category": "contextual_judgment",
+      "reverse": false,
+      "text": "Your usual habit is to say no to any spontaneous plan, but a close friend you rarely see is in town for one night only. How likely are you to make an exception to your usual habit for this specific situation?"
+    },
+    {
+      "id": 325,
+      "category": "contextual_judgment",
+      "reverse": true,
+      "text": "You apply the same strict punctuality standard to a first date as you would to a job interview, refusing to give any allowance for unpredictable traffic or unfamiliar surroundings. How likely are you to judge both situations identically?"
+    },
+    {
+      "id": 326,
+      "category": "avoiding_extremes",
+      "reverse": false,
+      "text": "You just found out a friend said something unflattering about you behind your back. How likely are you to address it calmly rather than either ignoring it completely or cutting them off entirely?"
+    },
+    {
+      "id": 327,
+      "category": "avoiding_extremes",
+      "reverse": true,
+      "text": "After one disappointing meal at a restaurant you used to love, you decide you'll never go back there again. How likely are you to make this kind of permanent decision based on a single bad experience?"
+    },
+    {
+      "id": 328,
+      "category": "avoiding_extremes",
+      "reverse": false,
+      "text": "You're upset about a household chore your partner keeps forgetting. How likely are you to bring it up in a measured conversation rather than either bottling it up for months or exploding over it?"
+    },
+    {
+      "id": 329,
+      "category": "avoiding_extremes",
+      "reverse": true,
+      "text": "After missing one workout, you decide the whole fitness plan is ruined and skip the rest of the week entirely. How likely are you to abandon your routine over a single slip?"
+    },
+    {
+      "id": 330,
+      "category": "avoiding_extremes",
+      "reverse": false,
+      "text": "You disagree with a new policy at work. How likely are you to raise your concerns through the normal channels rather than either staying silent forever or immediately threatening to quit?"
+    },
+    {
+      "id": 331,
+      "category": "avoiding_extremes",
+      "reverse": true,
+      "text": "When a friend gives you constructive criticism about one habit, you start wondering if the entire friendship is broken. How likely are you to jump to this extreme conclusion?"
+    },
+    {
+      "id": 332,
+      "category": "avoiding_extremes",
+      "reverse": false,
+      "text": "You're trying a new diet and had a treat you weren't planning on. How likely are you to simply continue with your normal plan at the next meal, rather than either giving up completely or over-restricting yourself as punishment?"
+    },
+    {
+      "id": 333,
+      "category": "avoiding_extremes",
+      "reverse": false,
+      "text": "After one bad date, you take a short break from dating apps to regroup rather than making any permanent decisions in the moment. How likely are you to give yourself space without swearing off dating entirely?"
+    },
+    {
+      "id": 334,
+      "category": "avoiding_extremes",
+      "reverse": false,
+      "text": "Your child broke a house rule for the first time. How likely are you to give a proportionate consequence rather than either letting it slide completely or imposing a harsh, extended punishment?"
+    },
+    {
+      "id": 335,
+      "category": "avoiding_extremes",
+      "reverse": true,
+      "text": "You find out a coworker made one factual error in a report, and you begin treating every piece of work they produce as unreliable. How likely are you to let one mistake color your view of everything they do?"
+    },
+    {
+      "id": 336,
+      "category": "avoiding_extremes",
+      "reverse": false,
+      "text": "You're annoyed with a family member over something small they did. How likely are you to let the minor issue go rather than bringing up every past grievance in the same conversation?"
+    },
+    {
+      "id": 337,
+      "category": "avoiding_extremes",
+      "reverse": false,
+      "text": "After a stressful week, you decide to scale back your social plans for the weekend without cutting off your social life entirely. How likely are you to choose this kind of moderate adjustment?"
+    },
+    {
+      "id": 338,
+      "category": "avoiding_extremes",
+      "reverse": false,
+      "text": "You're managing your finances after an unexpected expense. How likely are you to make a moderate adjustment to your budget rather than either ignoring the problem or panicking and cutting all discretionary spending overnight?"
+    },
+    {
+      "id": 339,
+      "category": "avoiding_extremes",
+      "reverse": true,
+      "text": "When your favorite sports team loses, you declare you'll never watch them again and throw away your merchandise that same night. How likely are you to react this way?"
+    },
+    {
+      "id": 340,
+      "category": "avoiding_extremes",
+      "reverse": false,
+      "text": "A friend didn't invite you to a small gathering. How likely are you to consider it might not be personal rather than immediately assuming the friendship is over?"
+    },
+    {
+      "id": 341,
+      "category": "avoiding_extremes",
+      "reverse": false,
+      "text": "After receiving one piece of harsh feedback on a project, you take time to weigh it against your overall body of work before deciding what it means for your career. How likely are you to do this rather than reacting immediately?"
+    },
+    {
+      "id": 342,
+      "category": "avoiding_extremes",
+      "reverse": false,
+      "text": "You're frustrated with your internet service after repeated outages. How likely are you to calmly compare providers and consider your options rather than immediately canceling everything in anger during a call?"
+    },
+    {
+      "id": 343,
+      "category": "avoiding_extremes",
+      "reverse": true,
+      "text": "You find one small typo in a report a colleague wrote and conclude they're careless in everything they do. How likely are you to generalize this broadly from one small detail?"
+    },
+    {
+      "id": 344,
+      "category": "avoiding_extremes",
+      "reverse": false,
+      "text": "Your partner forgot an important date. How likely are you to express how you feel calmly rather than either dismissing your own hurt feelings entirely or treating it as an unforgivable offense?"
+    },
+    {
+      "id": 345,
+      "category": "avoiding_extremes",
+      "reverse": true,
+      "text": "After trying a new hobby once and struggling, you decide you're simply \"not a hobby person\" and give up on trying anything new for a long time. How likely are you to draw such a broad conclusion from one attempt?"
+    },
+    {
+      "id": 346,
+      "category": "avoiding_extremes",
+      "reverse": false,
+      "text": "You're navigating a disagreement about politics with a family member. How likely are you to keep the conversation civil and measured rather than either avoiding the topic forever or escalating into a shouting match?"
+    },
+    {
+      "id": 347,
+      "category": "avoiding_extremes",
+      "reverse": true,
+      "text": "You get one piece of negative feedback on social media and consider deleting all your accounts permanently that same day. How likely are you to react this drastically to a single comment?"
+    },
+    {
+      "id": 348,
+      "category": "avoiding_extremes",
+      "reverse": false,
+      "text": "You're deciding how to respond to a minor traffic incident where another driver cut you off. How likely are you to let it go rather than either dwelling on it all day or confronting the driver aggressively?"
+    },
+    {
+      "id": 349,
+      "category": "avoiding_extremes",
+      "reverse": false,
+      "text": "When a close friend is late one time, you consider it might just be a one-off rather than immediately relabeling them as unreliable. How likely are you to give them the benefit of the doubt?"
+    },
+    {
+      "id": 350,
+      "category": "avoiding_extremes",
+      "reverse": false,
+      "text": "You're trying to improve your sleep habits and had one late night. How likely are you to simply return to your normal routine the next day rather than treating it as a total failure or ignoring the issue altogether?"
+    },
+    {
+      "id": 351,
+      "category": "deep_listening",
+      "reverse": false,
+      "text": "A friend is telling you about a difficult day at work. How likely are you to put your phone away and give them your full attention rather than glancing at notifications while they talk?"
+    },
+    {
+      "id": 352,
+      "category": "deep_listening",
+      "reverse": true,
+      "text": "While your partner is sharing something that happened to them, you find yourself mentally rehearsing your response instead of focusing on what they're actually saying. How likely are you to let your mind drift like this?"
+    },
+    {
+      "id": 353,
+      "category": "deep_listening",
+      "reverse": false,
+      "text": "A coworker stops by your desk to vent about a frustrating meeting. How likely are you to pause what you're doing and really listen rather than continuing to type while nodding along?"
+    },
+    {
+      "id": 354,
+      "category": "deep_listening",
+      "reverse": true,
+      "text": "During a phone call with a family member, you multitask by scrolling through social media while making occasional \"mhm\" sounds. How likely are you to do this?"
+    },
+    {
+      "id": 355,
+      "category": "deep_listening",
+      "reverse": false,
+      "text": "Your child is trying to tell you about their day. How likely are you to get down to their level, make eye contact, and listen without interrupting?"
+    },
+    {
+      "id": 356,
+      "category": "deep_listening",
+      "reverse": true,
+      "text": "When a friend is midway through explaining a problem, you jump in with your own advice before they've finished describing the situation. How likely are you to cut them off like this?"
+    },
+    {
+      "id": 357,
+      "category": "deep_listening",
+      "reverse": false,
+      "text": "A colleague disagrees with your proposal in a meeting. How likely are you to listen fully to their reasoning before formulating your response, rather than tuning out once you sense disagreement?"
+    },
+    {
+      "id": 358,
+      "category": "deep_listening",
+      "reverse": true,
+      "text": "While someone is telling you about a personal struggle, you find yourself silently judging their choices instead of just taking in what they're saying. How likely are you to do this?"
+    },
+    {
+      "id": 359,
+      "category": "deep_listening",
+      "reverse": false,
+      "text": "A friend calls you upset about something. How likely are you to ask follow-up questions that show you're tracking the details of what happened, rather than offering a quick generic response?"
+    },
+    {
+      "id": 360,
+      "category": "deep_listening",
+      "reverse": true,
+      "text": "You're at dinner with someone, and while they talk you're mentally composing a grocery list or thinking about tomorrow's schedule. How likely are you to check out like this during conversations?"
+    },
+    {
+      "id": 361,
+      "category": "deep_listening",
+      "reverse": false,
+      "text": "Your elderly parent repeats a story you've heard many times before. How likely are you to listen attentively anyway rather than visibly tuning out?"
+    },
+    {
+      "id": 362,
+      "category": "deep_listening",
+      "reverse": false,
+      "text": "When someone brings up a topic you already have strong opinions about, how likely are you to make a conscious effort to keep listening rather than tuning out to wait for your turn to speak?"
+    },
+    {
+      "id": 363,
+      "category": "deep_listening",
+      "reverse": false,
+      "text": "A new employee is explaining a problem they're having on their first week. How likely are you to give them your undivided attention rather than glancing at your screen while they talk?"
+    },
+    {
+      "id": 364,
+      "category": "deep_listening",
+      "reverse": true,
+      "text": "During a difficult conversation with your partner, you keep the TV on in the background instead of turning to face them fully. How likely are you to do this?"
+    },
+    {
+      "id": 365,
+      "category": "deep_listening",
+      "reverse": false,
+      "text": "A friend shares an accomplishment they're proud of. How likely are you to ask questions and show genuine interest rather than quickly changing the subject to something about yourself?"
+    },
+    {
+      "id": 366,
+      "category": "deep_listening",
+      "reverse": false,
+      "text": "While a friend vents about a problem, you deliberately hold off on sharing your own similar experience and stay focused on theirs first. How likely are you to do this?"
+    },
+    {
+      "id": 367,
+      "category": "deep_listening",
+      "reverse": false,
+      "text": "Someone is explaining a mistake they made. How likely are you to listen to the full story before forming a judgment, rather than deciding what you think of them halfway through?"
+    },
+    {
+      "id": 368,
+      "category": "deep_listening",
+      "reverse": true,
+      "text": "You're in a meeting and someone is presenting an idea you already dislike, so you start drafting a rebuttal in your head instead of hearing them out. How likely are you to do this?"
+    },
+    {
+      "id": 369,
+      "category": "deep_listening",
+      "reverse": false,
+      "text": "A friend is going through a hard time and just needs to talk. How likely are you to resist the urge to jump straight into offering solutions and instead just listen first?"
+    },
+    {
+      "id": 370,
+      "category": "deep_listening",
+      "reverse": false,
+      "text": "While video-calling a friend, you close other tabs and windows so you can give the conversation your full attention. How likely are you to do this?"
+    },
+    {
+      "id": 371,
+      "category": "deep_listening",
+      "reverse": false,
+      "text": "Your sibling is explaining why they made a decision you don't understand. How likely are you to ask questions to genuinely understand their reasoning rather than assuming you already know why?"
+    },
+    {
+      "id": 372,
+      "category": "deep_listening",
+      "reverse": true,
+      "text": "When a stranger at a social event starts talking to you, you scan the room for someone more interesting to talk to instead of engaging with them. How likely are you to do this?"
+    },
+    {
+      "id": 373,
+      "category": "deep_listening",
+      "reverse": false,
+      "text": "A team member gives you feedback on your work in a one-on-one. How likely are you to listen without interrupting, even if you disagree at first?"
+    },
+    {
+      "id": 374,
+      "category": "deep_listening",
+      "reverse": false,
+      "text": "You're listening to a friend's long story, and even though you're busy, you consciously stay present and let them finish without checking the time. How likely are you to do this?"
+    },
+    {
+      "id": 375,
+      "category": "deep_listening",
+      "reverse": false,
+      "text": "Your partner brings up something bothering them about the relationship. How likely are you to set aside distractions and really hear them out, even if the conversation feels uncomfortable?"
+    },
+    {
+      "id": 376,
+      "category": "handling_criticism",
+      "reverse": false,
+      "text": "Your manager points out a flaw in a project you worked hard on. How likely are you to thank them for the feedback and consider it seriously rather than getting defensive?"
+    },
+    {
+      "id": 377,
+      "category": "handling_criticism",
+      "reverse": true,
+      "text": "When a friend gently points out that you hurt their feelings, you immediately list reasons why they're overreacting. How likely are you to respond this way?"
+    },
+    {
+      "id": 378,
+      "category": "handling_criticism",
+      "reverse": false,
+      "text": "You're proven wrong in a debate with a friend after doing more research. How likely are you to openly admit you were mistaken rather than quietly dropping the topic to avoid admitting it?"
+    },
+    {
+      "id": 379,
+      "category": "handling_criticism",
+      "reverse": true,
+      "text": "When your partner critiques something about how you communicate, you bring up their flaws in response instead of addressing what they said. How likely are you to deflect like this?"
+    },
+    {
+      "id": 380,
+      "category": "handling_criticism",
+      "reverse": false,
+      "text": "A customer leaves critical feedback about your work. How likely are you to look for the useful part of the criticism rather than dismissing it because of how it was delivered?"
+    },
+    {
+      "id": 381,
+      "category": "handling_criticism",
+      "reverse": true,
+      "text": "After a performance review with constructive criticism, you spend the rest of the day complaining about your manager to coworkers instead of reflecting on the feedback. How likely are you to do this?"
+    },
+    {
+      "id": 382,
+      "category": "handling_criticism",
+      "reverse": false,
+      "text": "A family member tells you that something you said at a gathering came across as insensitive. How likely are you to reflect on it honestly rather than immediately justifying yourself?"
+    },
+    {
+      "id": 383,
+      "category": "handling_criticism",
+      "reverse": false,
+      "text": "When a teacher or mentor corrects your work, how likely are you to seriously consider that they might be right rather than assuming they just don't understand your approach?"
+    },
+    {
+      "id": 384,
+      "category": "handling_criticism",
+      "reverse": false,
+      "text": "You receive an edit-heavy review of something you wrote. How likely are you to view it as a chance to improve rather than taking it as a personal attack?"
+    },
+    {
+      "id": 385,
+      "category": "handling_criticism",
+      "reverse": true,
+      "text": "When someone points out you made a factual error in an argument, you keep arguing your original point rather than acknowledging the correction. How likely are you to double down like this?"
+    },
+    {
+      "id": 386,
+      "category": "handling_criticism",
+      "reverse": false,
+      "text": "A friend tells you honestly that a habit of yours bothers them. How likely are you to ask follow-up questions to understand their perspective rather than getting defensive right away?"
+    },
+    {
+      "id": 387,
+      "category": "handling_criticism",
+      "reverse": true,
+      "text": "After being criticized in front of others, you hold a grudge against the person who gave the feedback for a long time afterward. How likely are you to do this?"
+    },
+    {
+      "id": 388,
+      "category": "handling_criticism",
+      "reverse": false,
+      "text": "Your coworker suggests a better way to approach a task you've done the same way for years. How likely are you to genuinely consider their suggestion rather than dismissing it because it's not how you've always done it?"
+    },
+    {
+      "id": 389,
+      "category": "handling_criticism",
+      "reverse": true,
+      "text": "When your spouse says something you're doing is frustrating them, you respond by pointing out something that frustrates you about them instead. How likely are you to redirect the conversation this way?"
+    },
+    {
+      "id": 390,
+      "category": "handling_criticism",
+      "reverse": false,
+      "text": "You get a lower grade than expected on an assignment with detailed feedback. How likely are you to read through the comments carefully to understand what to improve rather than just feeling upset about the grade?"
+    },
+    {
+      "id": 391,
+      "category": "handling_criticism",
+      "reverse": false,
+      "text": "When a friend gives you feedback you don't like, how likely are you to stay engaged with them and work through it rather than quietly distancing yourself?"
+    },
+    {
+      "id": 392,
+      "category": "handling_criticism",
+      "reverse": false,
+      "text": "A mentor tells you that your approach to a problem isn't working. How likely are you to ask them for specific suggestions on how to improve rather than getting discouraged?"
+    },
+    {
+      "id": 393,
+      "category": "handling_criticism",
+      "reverse": false,
+      "text": "After making a mistake that's pointed out publicly, how likely are you to own your part of it rather than looking for ways to shift blame onto someone else?"
+    },
+    {
+      "id": 394,
+      "category": "handling_criticism",
+      "reverse": false,
+      "text": "Someone younger or less experienced than you offers a suggestion that improves your work. How likely are you to accept it graciously rather than feeling threatened by it?"
+    },
+    {
+      "id": 395,
+      "category": "handling_criticism",
+      "reverse": true,
+      "text": "When you're wrong about something in a group discussion, you change the subject quickly to avoid acknowledging it. How likely are you to do this?"
+    },
+    {
+      "id": 396,
+      "category": "handling_criticism",
+      "reverse": false,
+      "text": "A close friend tells you that you've been self-centered in conversations lately. How likely are you to take a moment to genuinely reflect on whether they have a point?"
+    },
+    {
+      "id": 397,
+      "category": "handling_criticism",
+      "reverse": true,
+      "text": "After receiving critical feedback on your parenting from a family member, you cut off contact with them rather than considering if there's any truth to it. How likely are you to react this way?"
+    },
+    {
+      "id": 398,
+      "category": "handling_criticism",
+      "reverse": false,
+      "text": "Your boss gives you critical feedback about a habit that's affecting your team. How likely are you to ask what specific changes would help rather than explaining why it's not really your fault?"
+    },
+    {
+      "id": 399,
+      "category": "handling_criticism",
+      "reverse": false,
+      "text": "When an online comment criticizes your work, how likely are you to consider it briefly and then move on rather than fixating on it for days?"
+    },
+    {
+      "id": 400,
+      "category": "handling_criticism",
+      "reverse": false,
+      "text": "A friend admits they were hesitant to bring up a concern about your behavior because they worried how you'd react. How likely are you to thank them for their honesty and show them it was safe to tell you?"
+    },
+    {
+      "id": 401,
+      "category": "letting_go",
+      "reverse": false,
+      "text": "A friend cancels plans on you at the last minute for the third time this year. How likely are you to let it go without turning it into an ongoing grievance?"
+    },
+    {
+      "id": 402,
+      "category": "letting_go",
+      "reverse": true,
+      "text": "You've lost money on a hobby project that clearly isn't paying off. How likely are you to keep pouring more time and money into it mainly because you've already invested so much?"
+    },
+    {
+      "id": 403,
+      "category": "letting_go",
+      "reverse": false,
+      "text": "You run into an ex at a mutual friend's wedding. How likely are you to have a genuinely relaxed, friendly conversation without any lingering resentment?"
+    },
+    {
+      "id": 404,
+      "category": "letting_go",
+      "reverse": true,
+      "text": "Your flight gets delayed for several hours. How likely are you to spend that time venting your frustration to airline staff and anyone nearby?"
+    },
+    {
+      "id": 405,
+      "category": "letting_go",
+      "reverse": false,
+      "text": "Your adult child chooses a career path you think is a mistake. How likely are you to voice your concerns once and then let them make their own decision?"
+    },
+    {
+      "id": 406,
+      "category": "letting_go",
+      "reverse": false,
+      "text": "You and your sibling get into a new disagreement about something minor. How likely are you to keep the conversation focused on the current issue instead of dragging in old grudges from years ago?"
+    },
+    {
+      "id": 407,
+      "category": "letting_go",
+      "reverse": true,
+      "text": "A stock you bought has been steadily losing value for months. How likely are you to keep holding onto it mainly because selling now would mean admitting the loss?"
+    },
+    {
+      "id": 408,
+      "category": "letting_go",
+      "reverse": false,
+      "text": "A former boss who once treated you unfairly reaches out asking for advice. How likely are you to respond helpfully rather than dwelling on how they wronged you?"
+    },
+    {
+      "id": 409,
+      "category": "letting_go",
+      "reverse": true,
+      "text": "Your partner loads the dishwasher differently than you would. How likely are you to redo it yourself or insist they change how they do it?"
+    },
+    {
+      "id": 410,
+      "category": "letting_go",
+      "reverse": false,
+      "text": "You're waiting on medical test results with an uncertain outcome. How likely are you to focus on what you can actually control and let go of the rest, instead of obsessively researching worst-case scenarios?"
+    },
+    {
+      "id": 411,
+      "category": "letting_go",
+      "reverse": false,
+      "text": "A relationship ended over a year ago. How likely are you to feel genuinely at peace with how it ended rather than still replaying the old arguments?"
+    },
+    {
+      "id": 412,
+      "category": "letting_go",
+      "reverse": false,
+      "text": "Rain wrecks outdoor plans you'd been looking forward to for weeks. How likely are you to adjust and still enjoy the day instead of staying upset about it?"
+    },
+    {
+      "id": 413,
+      "category": "letting_go",
+      "reverse": false,
+      "text": "You're cleaning out a closet and find items you've kept 'just in case' for years. How likely are you to let go of things you clearly no longer need despite the sentimental pull?"
+    },
+    {
+      "id": 414,
+      "category": "letting_go",
+      "reverse": true,
+      "text": "A friend who once wronged you seems to be struggling lately. How likely are you to check in on their situation mainly to see if they're getting what they deserve?"
+    },
+    {
+      "id": 415,
+      "category": "letting_go",
+      "reverse": false,
+      "text": "A project you led gets cancelled by leadership for reasons outside your control. How likely are you to accept it and redirect your energy rather than dwelling on it?"
+    },
+    {
+      "id": 416,
+      "category": "letting_go",
+      "reverse": true,
+      "text": "You and a close friend both know an apology is overdue after a falling-out. How likely are you to wait for them to apologize first rather than making the first move yourself?"
+    },
+    {
+      "id": 417,
+      "category": "letting_go",
+      "reverse": false,
+      "text": "Your child is struggling with a task they need to learn on their own. How likely are you to let them work through it instead of stepping in to control the outcome?"
+    },
+    {
+      "id": 418,
+      "category": "letting_go",
+      "reverse": true,
+      "text": "You think back to a mistake you made years ago. How likely are you to still feel a sharp pang of shame about it today?"
+    },
+    {
+      "id": 419,
+      "category": "letting_go",
+      "reverse": false,
+      "text": "Your partner's job requires a move that upends plans you'd made for your own life. How likely are you to adapt your expectations and support the change?"
+    },
+    {
+      "id": 420,
+      "category": "letting_go",
+      "reverse": true,
+      "text": "A friend sincerely apologizes for something they did months ago. How likely are you to still bring it up against them in future disagreements?"
+    },
+    {
+      "id": 421,
+      "category": "letting_go",
+      "reverse": false,
+      "text": "A decision at your workplace goes against what you argued for. How likely are you to accept the outcome and work with it rather than staying bitter about it?"
+    },
+    {
+      "id": 422,
+      "category": "letting_go",
+      "reverse": false,
+      "text": "You said something awkward in a meeting last week. How likely are you to shrug it off within a day or two instead of still dwelling on it?"
+    },
+    {
+      "id": 423,
+      "category": "letting_go",
+      "reverse": false,
+      "text": "You're hosting a gathering and several things don't go as planned. How likely are you to let go of your mental picture of 'how it should be' and enjoy the moment anyway?"
+    },
+    {
+      "id": 424,
+      "category": "letting_go",
+      "reverse": true,
+      "text": "A business idea you started clearly isn't working despite months of effort. How likely are you to keep pushing forward mainly because you've already put so much into it?"
+    },
+    {
+      "id": 425,
+      "category": "letting_go",
+      "reverse": false,
+      "text": "A close friend forgets your birthday. How likely are you to let it go without holding onto resentment?"
+    },
+    {
+      "id": 426,
+      "category": "integrating_life_lessons",
+      "reverse": false,
+      "text": "After a relationship ends, you notice it followed a pattern similar to earlier ones. How likely are you to actually adjust your approach going forward based on that?"
+    },
+    {
+      "id": 427,
+      "category": "integrating_life_lessons",
+      "reverse": true,
+      "text": "You get a raise and start spending more freely, the same way you did after your last raise before ending up short on savings. How likely are you to repeat that pattern without noticing the parallel?"
+    },
+    {
+      "id": 428,
+      "category": "integrating_life_lessons",
+      "reverse": false,
+      "text": "You realize how a strict teacher from your childhood shaped the way you respond to authority today. How likely are you to consciously use that insight rather than just reacting on autopilot?"
+    },
+    {
+      "id": 429,
+      "category": "integrating_life_lessons",
+      "reverse": false,
+      "text": "Years after a health scare, you're planning a new work schedule. How likely are you to factor in what you learned about your stress limits back then?"
+    },
+    {
+      "id": 430,
+      "category": "integrating_life_lessons",
+      "reverse": true,
+      "text": "You clash with a new boss in a way that echoes the conflict style that got you into trouble at a previous job. How likely are you to repeat it without connecting the dots?"
+    },
+    {
+      "id": 431,
+      "category": "integrating_life_lessons",
+      "reverse": false,
+      "text": "Looking back over a decade of different jobs, how likely are you to identify a common thread in what actually made you happiest and use it to guide your next move?"
+    },
+    {
+      "id": 432,
+      "category": "integrating_life_lessons",
+      "reverse": true,
+      "text": "A friend warns you about a new partner in a way that echoes a mistake you made before. How likely are you to dismiss the warning because it doesn't fit the story you're telling yourself?"
+    },
+    {
+      "id": 433,
+      "category": "integrating_life_lessons",
+      "reverse": false,
+      "text": "You keep a habit of reflecting on lessons from past years. How likely are you to actually revisit those notes when facing a new major decision?"
+    },
+    {
+      "id": 434,
+      "category": "integrating_life_lessons",
+      "reverse": false,
+      "text": "You trace your fear of public speaking back to an embarrassing moment in school. How likely are you to use that awareness to deliberately work through the fear?"
+    },
+    {
+      "id": 435,
+      "category": "integrating_life_lessons",
+      "reverse": true,
+      "text": "You start a new romantic relationship. How likely are you to treat it as a completely blank slate, ignoring patterns that keep showing up in your relationships?"
+    },
+    {
+      "id": 436,
+      "category": "integrating_life_lessons",
+      "reverse": false,
+      "text": "Having raised one child, how likely are you to consciously apply lessons you learned to how you parent a second child differently?"
+    },
+    {
+      "id": 437,
+      "category": "integrating_life_lessons",
+      "reverse": false,
+      "text": "You recognize that your current habits around saving money were shaped by growing up in a financially unstable household. How likely are you to adjust those habits deliberately rather than reacting on old instinct?"
+    },
+    {
+      "id": 438,
+      "category": "integrating_life_lessons",
+      "reverse": true,
+      "text": "A certain type of friendship keeps ending the same disappointing way. How likely are you to be surprised each time rather than stepping back to notice the pattern?"
+    },
+    {
+      "id": 439,
+      "category": "integrating_life_lessons",
+      "reverse": false,
+      "text": "A mentor gave you advice early in your career. How likely are you to consciously connect that advice to a major decision you're making fifteen years later?"
+    },
+    {
+      "id": 440,
+      "category": "integrating_life_lessons",
+      "reverse": false,
+      "text": "You're starting a new hobby. How likely are you to draw on what worked when you successfully built a habit around a different hobby years before?"
+    },
+    {
+      "id": 441,
+      "category": "integrating_life_lessons",
+      "reverse": true,
+      "text": "Several past managers have independently given you similar feedback about a blind spot. How likely are you to treat each instance as an isolated, unfair criticism rather than a pattern worth examining?"
+    },
+    {
+      "id": 442,
+      "category": "integrating_life_lessons",
+      "reverse": false,
+      "text": "Moving to a new city in your twenties taught you how to adapt. How likely are you to lean on that lesson when facing a big life change now?"
+    },
+    {
+      "id": 443,
+      "category": "integrating_life_lessons",
+      "reverse": false,
+      "text": "Several friendships have faded over the years due to one-sided effort. How likely are you to recognize the pattern and change how you choose who to invest in?"
+    },
+    {
+      "id": 444,
+      "category": "integrating_life_lessons",
+      "reverse": true,
+      "text": "You keep running into the same kind of financial trouble every few years. How likely are you to chalk it up to bad luck each time instead of examining your own habits across the years?"
+    },
+    {
+      "id": 445,
+      "category": "integrating_life_lessons",
+      "reverse": false,
+      "text": "An earlier business you started failed. How likely are you to actually apply what you learned from that experience to how you approach a new venture?"
+    },
+    {
+      "id": 446,
+      "category": "integrating_life_lessons",
+      "reverse": false,
+      "text": "You notice your relationship with your own parents growing up shows up in how you handle conflict with your kids. How likely are you to adjust your approach intentionally because of that awareness?"
+    },
+    {
+      "id": 447,
+      "category": "integrating_life_lessons",
+      "reverse": true,
+      "text": "You receive a new health diagnosis. How likely are you to treat it as totally disconnected from lifestyle patterns you've noticed causing you problems for years?"
+    },
+    {
+      "id": 448,
+      "category": "integrating_life_lessons",
+      "reverse": false,
+      "text": "You're facing a difficult situation similar in shape to a past crisis you handled well. How likely are you to deliberately apply what worked back then?"
+    },
+    {
+      "id": 449,
+      "category": "integrating_life_lessons",
+      "reverse": false,
+      "text": "You notice a tendency to overcommit shows up across your jobs, friendships, and volunteering. How likely are you to address it as one root issue rather than treating each area as a separate problem?"
+    },
+    {
+      "id": 450,
+      "category": "integrating_life_lessons",
+      "reverse": true,
+      "text": "You fall into the same self-defeating pattern again. How likely are you to blame external circumstances this time too, without noticing it's the same pattern as before?"
+    },
+    {
+      "id": 451,
+      "category": "quiet_humility",
+      "reverse": false,
+      "text": "In a meeting, a colleague ends up getting credit for an idea that was actually yours. How likely are you to let it go without making sure everyone knows it was you?"
+    },
+    {
+      "id": 452,
+      "category": "quiet_humility",
+      "reverse": true,
+      "text": "At a dinner party, how likely are you to steer the conversation back toward your own achievements whenever someone else is sharing good news?"
+    },
+    {
+      "id": 453,
+      "category": "quiet_humility",
+      "reverse": false,
+      "text": "A colleague explains something to you that you already know well. How likely are you to let them finish without interrupting to show you already knew it?"
+    },
+    {
+      "id": 454,
+      "category": "quiet_humility",
+      "reverse": true,
+      "text": "When meeting new people, how likely are you to bring up your accomplishments unprompted, even when it's not really relevant to the conversation?"
+    },
+    {
+      "id": 455,
+      "category": "quiet_humility",
+      "reverse": false,
+      "text": "You're clearly the most experienced person on a group project. How likely are you to ask others for their input before offering your own view?"
+    },
+    {
+      "id": 456,
+      "category": "quiet_humility",
+      "reverse": false,
+      "text": "Someone makes a minor factual error in casual conversation that doesn't really matter to the discussion. How likely are you to let it slide instead of correcting them?"
+    },
+    {
+      "id": 457,
+      "category": "quiet_humility",
+      "reverse": false,
+      "text": "You receive a compliment on your work. How likely are you to simply accept it with thanks rather than downplaying it or steering the praise back to yourself?"
+    },
+    {
+      "id": 458,
+      "category": "quiet_humility",
+      "reverse": true,
+      "text": "In casual conversation, how likely are you to name-drop impressive connections or achievements to make a strong impression?"
+    },
+    {
+      "id": 459,
+      "category": "quiet_humility",
+      "reverse": false,
+      "text": "A friend asks for advice in an area where you happen to be an expert. How likely are you to offer it plainly without also emphasizing how much you know?"
+    },
+    {
+      "id": 460,
+      "category": "quiet_humility",
+      "reverse": true,
+      "text": "In a debate about something ultimately trivial, how likely are you to feel a need to have the last word even after your point has already landed?"
+    },
+    {
+      "id": 461,
+      "category": "quiet_humility",
+      "reverse": false,
+      "text": "You win an award at work. How likely are you to keep the announcement fairly low-key rather than making sure it gets wide attention?"
+    },
+    {
+      "id": 462,
+      "category": "quiet_humility",
+      "reverse": true,
+      "text": "Whenever someone shares a personal story, how likely are you to respond with your own similar (and arguably better) story?"
+    },
+    {
+      "id": 463,
+      "category": "quiet_humility",
+      "reverse": false,
+      "text": "In a group discussion, you notice you've been talking the most. How likely are you to intentionally pull back and ask a quieter person for their opinion?"
+    },
+    {
+      "id": 464,
+      "category": "quiet_humility",
+      "reverse": true,
+      "text": "In an argument about something trivial and unimportant, how likely are you to feel a strong need to prove you're right?"
+    },
+    {
+      "id": 465,
+      "category": "quiet_humility",
+      "reverse": false,
+      "text": "Someone younger or less experienced than you offers a suggestion. How likely are you to genuinely consider it rather than dismissing it because of their status?"
+    },
+    {
+      "id": 466,
+      "category": "quiet_humility",
+      "reverse": true,
+      "text": "When describing a team success to others, how likely are you to exaggerate your own role in it?"
+    },
+    {
+      "id": 467,
+      "category": "quiet_humility",
+      "reverse": false,
+      "text": "You're asked to speak publicly about your career. How likely are you to credit the people who helped you along the way rather than focusing mainly on yourself?"
+    },
+    {
+      "id": 468,
+      "category": "quiet_humility",
+      "reverse": false,
+      "text": "You're confident you already know what someone is about to say. How likely are you to let them finish their sentence anyway instead of jumping in?"
+    },
+    {
+      "id": 469,
+      "category": "quiet_humility",
+      "reverse": false,
+      "text": "A new employee asks a question you consider fairly obvious. How likely are you to answer patiently without making them feel small for asking?"
+    },
+    {
+      "id": 470,
+      "category": "quiet_humility",
+      "reverse": true,
+      "text": "In conversations, how likely are you to steer the topic toward areas where you can show off your expertise, even when others clearly want to talk about something else?"
+    },
+    {
+      "id": 471,
+      "category": "quiet_humility",
+      "reverse": false,
+      "text": "You disagree with a recognized expert in a field you know a lot about. How likely are you to state your view calmly without needing to 'win' or belittle them?"
+    },
+    {
+      "id": 472,
+      "category": "quiet_humility",
+      "reverse": true,
+      "text": "How likely are you to feel annoyed or slighted when a less experienced colleague gets recognition instead of you?"
+    },
+    {
+      "id": 473,
+      "category": "quiet_humility",
+      "reverse": false,
+      "text": "At a reunion, old friends ask what you've been up to. How likely are you to give a modest, brief answer instead of listing your achievements?"
+    },
+    {
+      "id": 474,
+      "category": "quiet_humility",
+      "reverse": false,
+      "text": "You're in a casual disagreement that doesn't really call for any special expertise. How likely are you to let it stay light instead of pulling out your credentials to settle it?"
+    },
+    {
+      "id": 475,
+      "category": "quiet_humility",
+      "reverse": false,
+      "text": "You make a genuine, significant contribution to a group's success. How likely are you to let the team's success speak for itself rather than pointing out your specific part in it?"
+    },
+    {
+      "id": 476,
+      "category": "seeking_truth",
+      "reverse": false,
+      "text": "You're in a debate and realize partway through that the other person's point is actually correct. How likely are you to openly admit it?"
+    },
+    {
+      "id": 477,
+      "category": "seeking_truth",
+      "reverse": true,
+      "text": "How likely are you to keep arguing a position in a discussion even after you've privately realized you're wrong?"
+    },
+    {
+      "id": 478,
+      "category": "seeking_truth",
+      "reverse": false,
+      "text": "You read an article that challenges a belief you've held for years. How likely are you to seriously consider the evidence instead of dismissing it out of hand?"
+    },
+    {
+      "id": 479,
+      "category": "seeking_truth",
+      "reverse": true,
+      "text": "How likely are you to mainly seek out news sources and opinions that confirm what you already believe?"
+    },
+    {
+      "id": 480,
+      "category": "seeking_truth",
+      "reverse": false,
+      "text": "A subordinate points out a real flaw in your plan. How likely are you to genuinely evaluate it on its merits rather than defending your original plan out of pride?"
+    },
+    {
+      "id": 481,
+      "category": "seeking_truth",
+      "reverse": true,
+      "text": "In an argument, how likely are you to cherry-pick facts that support your side while leaving out inconvenient ones you're aware of?"
+    },
+    {
+      "id": 482,
+      "category": "seeking_truth",
+      "reverse": false,
+      "text": "You made a prediction that turned out to be wrong. How likely are you to publicly acknowledge it rather than quietly hoping no one remembers?"
+    },
+    {
+      "id": 483,
+      "category": "seeking_truth",
+      "reverse": false,
+      "text": "You realize partway through an argument that you were actually mistaken. How likely are you to admit it directly instead of changing the subject to avoid the moment?"
+    },
+    {
+      "id": 484,
+      "category": "seeking_truth",
+      "reverse": false,
+      "text": "A friend gives you feedback that stings but seems accurate. How likely are you to sit with it and consider it seriously instead of getting defensive?"
+    },
+    {
+      "id": 485,
+      "category": "seeking_truth",
+      "reverse": true,
+      "text": "How likely are you to search online mainly to find a source backing up what you already said, rather than to genuinely check if it's true?"
+    },
+    {
+      "id": 486,
+      "category": "seeking_truth",
+      "reverse": false,
+      "text": "You're discussing a controversial topic with someone who disagrees with you. How likely are you to ask genuine questions to understand their reasoning rather than just waiting for your turn to talk?"
+    },
+    {
+      "id": 487,
+      "category": "seeking_truth",
+      "reverse": true,
+      "text": "How likely are you to refuse to update your opinion on a topic even after being shown solid evidence against it?"
+    },
+    {
+      "id": 488,
+      "category": "seeking_truth",
+      "reverse": false,
+      "text": "Your team's current approach isn't working, and a junior member proposes a very different plan. How likely are you to seriously weigh it on its merits rather than sticking with your original idea out of pride?"
+    },
+    {
+      "id": 489,
+      "category": "seeking_truth",
+      "reverse": false,
+      "text": "Someone is making a point you disagree with. How likely are you to let them finish and make sure you understand it before responding?"
+    },
+    {
+      "id": 490,
+      "category": "seeking_truth",
+      "reverse": false,
+      "text": "You realize you've been misremembering a fact you've stated confidently many times. How likely are you to correct yourself going forward instead of continuing to state it as before?"
+    },
+    {
+      "id": 491,
+      "category": "seeking_truth",
+      "reverse": true,
+      "text": "How likely are you to win an argument using a clever rhetorical trick even though you suspect your actual position may be weaker?"
+    },
+    {
+      "id": 492,
+      "category": "seeking_truth",
+      "reverse": false,
+      "text": "A close friend holds a strong opinion you find frustrating. How likely are you to try to genuinely understand their reasoning instead of writing them off?"
+    },
+    {
+      "id": 493,
+      "category": "seeking_truth",
+      "reverse": true,
+      "text": "How likely are you to dismiss an expert's conclusion mainly because it conflicts with your gut feeling on the topic?"
+    },
+    {
+      "id": 494,
+      "category": "seeking_truth",
+      "reverse": false,
+      "text": "You're proven wrong in front of others during a meeting. How likely are you to accept it gracefully rather than getting defensive or embarrassed?"
+    },
+    {
+      "id": 495,
+      "category": "seeking_truth",
+      "reverse": true,
+      "text": "How likely are you to keep repeating a claim you privately suspect might not be fully accurate because it makes a better story?"
+    },
+    {
+      "id": 496,
+      "category": "seeking_truth",
+      "reverse": false,
+      "text": "You encounter a well-reasoned argument for a view opposite your own on a hot-button issue. How likely are you to engage with its actual substance instead of looking for reasons to dismiss it?"
+    },
+    {
+      "id": 497,
+      "category": "seeking_truth",
+      "reverse": false,
+      "text": "You come across a claim that happens to support your side of an argument. How likely are you to fact-check it even though part of you suspects it might be shaky?"
+    },
+    {
+      "id": 498,
+      "category": "seeking_truth",
+      "reverse": false,
+      "text": "A mentor challenges an assumption you've built a lot of your thinking on. How likely are you to genuinely re-examine that assumption instead of brushing off the challenge?"
+    },
+    {
+      "id": 499,
+      "category": "seeking_truth",
+      "reverse": true,
+      "text": "How likely are you to frame a discussion as a battle to 'win' rather than as a chance to figure out what's actually true?"
+    },
+    {
+      "id": 500,
+      "category": "seeking_truth",
+      "reverse": false,
+      "text": "After a long debate, you realize both you and the other person were partly right. How likely are you to say so openly instead of quietly declaring victory?"
+    }
+  ]
+}

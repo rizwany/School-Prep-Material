@@ -1,0 +1,3160 @@
+{
+  "meta": {
+    "title": "Team Player Test",
+    "description": "A detailed 500-question reflection across 20 dimensions of effective teamwork.",
+    "scale": {
+      "min": 1,
+      "max": 10,
+      "minLabel": "Not at all likely",
+      "maxLabel": "Extremely likely"
+    },
+    "categories": [
+      {
+        "id": "shared_goals",
+        "label": "Shared Goals & Team Purpose",
+        "icon": "🎯"
+      },
+      {
+        "id": "collaboration",
+        "label": "Collaboration & Cooperation",
+        "icon": "🤝"
+      },
+      {
+        "id": "communication",
+        "label": "Clear & Timely Communication",
+        "icon": "💬"
+      },
+      {
+        "id": "listening",
+        "label": "Active Listening",
+        "icon": "👂"
+      },
+      {
+        "id": "reliability",
+        "label": "Reliability & Follow-Through",
+        "icon": "✅"
+      },
+      {
+        "id": "accountability",
+        "label": "Accountability & Ownership",
+        "icon": "🧭"
+      },
+      {
+        "id": "role_clarity",
+        "label": "Role Clarity & Coordination",
+        "icon": "🗂️"
+      },
+      {
+        "id": "trust",
+        "label": "Trust & Psychological Safety",
+        "icon": "🛡️"
+      },
+      {
+        "id": "support",
+        "label": "Support & Helping Behaviour",
+        "icon": "🙌"
+      },
+      {
+        "id": "adaptability",
+        "label": "Adaptability & Flexibility",
+        "icon": "🔄"
+      },
+      {
+        "id": "conflict",
+        "label": "Constructive Conflict",
+        "icon": "🔥"
+      },
+      {
+        "id": "feedback_giving",
+        "label": "Giving Useful Feedback",
+        "icon": "🗣️"
+      },
+      {
+        "id": "feedback_receiving",
+        "label": "Receiving Feedback",
+        "icon": "📥"
+      },
+      {
+        "id": "inclusion",
+        "label": "Inclusion & Respect",
+        "icon": "🌈"
+      },
+      {
+        "id": "empathy",
+        "label": "Empathy & Perspective-Taking",
+        "icon": "💛"
+      },
+      {
+        "id": "decision_making",
+        "label": "Shared Decision-Making",
+        "icon": "⚖️"
+      },
+      {
+        "id": "problem_solving",
+        "label": "Collaborative Problem-Solving",
+        "icon": "🧩"
+      },
+      {
+        "id": "initiative",
+        "label": "Initiative & Contribution",
+        "icon": "🚀"
+      },
+      {
+        "id": "recognition",
+        "label": "Recognition & Shared Credit",
+        "icon": "🌟"
+      },
+      {
+        "id": "learning",
+        "label": "Team Learning & Improvement",
+        "icon": "📚"
+      }
+    ],
+    "levels": [
+      {
+        "min": 9,
+        "max": 10.01,
+        "label": "Exceptional Team Player",
+        "emoji": "🏆",
+        "desc": "You consistently strengthen shared goals, trust, coordination, inclusion, accountability, and team learning."
+      },
+      {
+        "min": 7.5,
+        "max": 9,
+        "label": "Strong Team Player",
+        "emoji": "🌟",
+        "desc": "Your teamwork habits are effective across most dimensions, with a few opportunities for greater consistency or influence."
+      },
+      {
+        "min": 6,
+        "max": 7.5,
+        "label": "Developing Team Player",
+        "emoji": "🧭",
+        "desc": "You contribute several valuable team habits, though communication, follow-through, conflict, or shared ownership may vary."
+      },
+      {
+        "min": 4.5,
+        "max": 6,
+        "label": "Emerging Team Contributor",
+        "emoji": "🌱",
+        "desc": "Some foundations are present, while clearer coordination, listening, reliability, and feedback could strengthen your contribution."
+      },
+      {
+        "min": 3,
+        "max": 4.5,
+        "label": "Inconsistent Teamwork Habits",
+        "emoji": "🔧",
+        "desc": "Your teamwork may become isolated, reactive, or unclear. Start with communication, reliability, respect, and shared goals."
+      },
+      {
+        "min": 1,
+        "max": 3,
+        "label": "Teamwork Foundations Needed",
+        "emoji": "📘",
+        "desc": "Current habits may limit coordination and trust. Practising one dimension at a time can build stronger team contribution."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "category": "shared_goals",
+      "reverse": false,
+      "text": "When a new team begins working together, how likely are you to connect your work to the team’s shared purpose?"
+    },
+    {
+      "id": 2,
+      "category": "shared_goals",
+      "reverse": true,
+      "text": "During a busy project week, how likely are you to focus on personal success while ignoring the team result?"
+    },
+    {
+      "id": 3,
+      "category": "shared_goals",
+      "reverse": false,
+      "text": "When priorities suddenly change, how likely are you to prioritise collective outcomes alongside personal goals?"
+    },
+    {
+      "id": 4,
+      "category": "shared_goals",
+      "reverse": true,
+      "text": "While responsibilities are being assigned, how likely are you to lose sight of why the team is working together?"
+    },
+    {
+      "id": 5,
+      "category": "shared_goals",
+      "reverse": false,
+      "text": "When a teammate asks for support, how likely are you to connect your work to the team’s shared purpose?"
+    },
+    {
+      "id": 6,
+      "category": "shared_goals",
+      "reverse": true,
+      "text": "After an important mistake occurs, how likely are you to focus on personal success while ignoring the team result?"
+    },
+    {
+      "id": 7,
+      "category": "shared_goals",
+      "reverse": false,
+      "text": "During a team meeting, how likely are you to prioritise collective outcomes alongside personal goals?"
+    },
+    {
+      "id": 8,
+      "category": "shared_goals",
+      "reverse": true,
+      "text": "When opinions differ strongly, how likely are you to lose sight of why the team is working together?"
+    },
+    {
+      "id": 9,
+      "category": "shared_goals",
+      "reverse": false,
+      "text": "As a deadline approaches, how likely are you to connect your work to the team’s shared purpose?"
+    },
+    {
+      "id": 10,
+      "category": "shared_goals",
+      "reverse": true,
+      "text": "When progress is slower than expected, how likely are you to focus on personal success while ignoring the team result?"
+    },
+    {
+      "id": 11,
+      "category": "shared_goals",
+      "reverse": false,
+      "text": "While working with a new colleague, how likely are you to prioritise collective outcomes alongside personal goals?"
+    },
+    {
+      "id": 12,
+      "category": "shared_goals",
+      "reverse": true,
+      "text": "When information is incomplete, how likely are you to lose sight of why the team is working together?"
+    },
+    {
+      "id": 13,
+      "category": "shared_goals",
+      "reverse": false,
+      "text": "After receiving difficult feedback, how likely are you to connect your work to the team’s shared purpose?"
+    },
+    {
+      "id": 14,
+      "category": "shared_goals",
+      "reverse": true,
+      "text": "When another person’s idea is selected, how likely are you to focus on personal success while ignoring the team result?"
+    },
+    {
+      "id": 15,
+      "category": "shared_goals",
+      "reverse": false,
+      "text": "During a stressful period, how likely are you to prioritise collective outcomes alongside personal goals?"
+    },
+    {
+      "id": 16,
+      "category": "shared_goals",
+      "reverse": true,
+      "text": "When the team succeeds, how likely are you to lose sight of why the team is working together?"
+    },
+    {
+      "id": 17,
+      "category": "shared_goals",
+      "reverse": false,
+      "text": "When the team falls short, how likely are you to connect your work to the team’s shared purpose?"
+    },
+    {
+      "id": 18,
+      "category": "shared_goals",
+      "reverse": true,
+      "text": "While coordinating connected tasks, how likely are you to focus on personal success while ignoring the team result?"
+    },
+    {
+      "id": 19,
+      "category": "shared_goals",
+      "reverse": false,
+      "text": "When someone has not spoken in the discussion, how likely are you to prioritise collective outcomes alongside personal goals?"
+    },
+    {
+      "id": 20,
+      "category": "shared_goals",
+      "reverse": true,
+      "text": "Before a decision affects several people, how likely are you to lose sight of why the team is working together?"
+    },
+    {
+      "id": 21,
+      "category": "shared_goals",
+      "reverse": false,
+      "text": "When an unexpected problem appears, how likely are you to connect your work to the team’s shared purpose?"
+    },
+    {
+      "id": 22,
+      "category": "shared_goals",
+      "reverse": true,
+      "text": "During remote or hybrid teamwork, how likely are you to focus on personal success while ignoring the team result?"
+    },
+    {
+      "id": 23,
+      "category": "shared_goals",
+      "reverse": false,
+      "text": "When roles overlap, how likely are you to prioritise collective outcomes alongside personal goals?"
+    },
+    {
+      "id": 24,
+      "category": "shared_goals",
+      "reverse": true,
+      "text": "At the end of a project, how likely are you to lose sight of why the team is working together?"
+    },
+    {
+      "id": 25,
+      "category": "shared_goals",
+      "reverse": false,
+      "text": "Across repeated team experiences, how likely are you to connect your work to the team’s shared purpose?"
+    },
+    {
+      "id": 26,
+      "category": "collaboration",
+      "reverse": false,
+      "text": "When a new team begins working together, how likely are you to work jointly instead of protecting your own territory?"
+    },
+    {
+      "id": 27,
+      "category": "collaboration",
+      "reverse": true,
+      "text": "During a busy project week, how likely are you to treat cooperation as a threat to your individual credit?"
+    },
+    {
+      "id": 28,
+      "category": "collaboration",
+      "reverse": false,
+      "text": "When priorities suddenly change, how likely are you to coordinate your effort with what teammates are doing?"
+    },
+    {
+      "id": 29,
+      "category": "collaboration",
+      "reverse": true,
+      "text": "While responsibilities are being assigned, how likely are you to work in isolation when coordination is clearly needed?"
+    },
+    {
+      "id": 30,
+      "category": "collaboration",
+      "reverse": false,
+      "text": "When a teammate asks for support, how likely are you to work jointly instead of protecting your own territory?"
+    },
+    {
+      "id": 31,
+      "category": "collaboration",
+      "reverse": true,
+      "text": "After an important mistake occurs, how likely are you to treat cooperation as a threat to your individual credit?"
+    },
+    {
+      "id": 32,
+      "category": "collaboration",
+      "reverse": false,
+      "text": "During a team meeting, how likely are you to coordinate your effort with what teammates are doing?"
+    },
+    {
+      "id": 33,
+      "category": "collaboration",
+      "reverse": true,
+      "text": "When opinions differ strongly, how likely are you to work in isolation when coordination is clearly needed?"
+    },
+    {
+      "id": 34,
+      "category": "collaboration",
+      "reverse": false,
+      "text": "As a deadline approaches, how likely are you to work jointly instead of protecting your own territory?"
+    },
+    {
+      "id": 35,
+      "category": "collaboration",
+      "reverse": true,
+      "text": "When progress is slower than expected, how likely are you to treat cooperation as a threat to your individual credit?"
+    },
+    {
+      "id": 36,
+      "category": "collaboration",
+      "reverse": false,
+      "text": "While working with a new colleague, how likely are you to coordinate your effort with what teammates are doing?"
+    },
+    {
+      "id": 37,
+      "category": "collaboration",
+      "reverse": true,
+      "text": "When information is incomplete, how likely are you to work in isolation when coordination is clearly needed?"
+    },
+    {
+      "id": 38,
+      "category": "collaboration",
+      "reverse": false,
+      "text": "After receiving difficult feedback, how likely are you to work jointly instead of protecting your own territory?"
+    },
+    {
+      "id": 39,
+      "category": "collaboration",
+      "reverse": true,
+      "text": "When another person’s idea is selected, how likely are you to treat cooperation as a threat to your individual credit?"
+    },
+    {
+      "id": 40,
+      "category": "collaboration",
+      "reverse": false,
+      "text": "During a stressful period, how likely are you to coordinate your effort with what teammates are doing?"
+    },
+    {
+      "id": 41,
+      "category": "collaboration",
+      "reverse": true,
+      "text": "When the team succeeds, how likely are you to work in isolation when coordination is clearly needed?"
+    },
+    {
+      "id": 42,
+      "category": "collaboration",
+      "reverse": false,
+      "text": "When the team falls short, how likely are you to work jointly instead of protecting your own territory?"
+    },
+    {
+      "id": 43,
+      "category": "collaboration",
+      "reverse": true,
+      "text": "While coordinating connected tasks, how likely are you to treat cooperation as a threat to your individual credit?"
+    },
+    {
+      "id": 44,
+      "category": "collaboration",
+      "reverse": false,
+      "text": "When someone has not spoken in the discussion, how likely are you to coordinate your effort with what teammates are doing?"
+    },
+    {
+      "id": 45,
+      "category": "collaboration",
+      "reverse": true,
+      "text": "Before a decision affects several people, how likely are you to work in isolation when coordination is clearly needed?"
+    },
+    {
+      "id": 46,
+      "category": "collaboration",
+      "reverse": false,
+      "text": "When an unexpected problem appears, how likely are you to work jointly instead of protecting your own territory?"
+    },
+    {
+      "id": 47,
+      "category": "collaboration",
+      "reverse": true,
+      "text": "During remote or hybrid teamwork, how likely are you to treat cooperation as a threat to your individual credit?"
+    },
+    {
+      "id": 48,
+      "category": "collaboration",
+      "reverse": false,
+      "text": "When roles overlap, how likely are you to coordinate your effort with what teammates are doing?"
+    },
+    {
+      "id": 49,
+      "category": "collaboration",
+      "reverse": true,
+      "text": "At the end of a project, how likely are you to work in isolation when coordination is clearly needed?"
+    },
+    {
+      "id": 50,
+      "category": "collaboration",
+      "reverse": false,
+      "text": "Across repeated team experiences, how likely are you to work jointly instead of protecting your own territory?"
+    },
+    {
+      "id": 51,
+      "category": "communication",
+      "reverse": false,
+      "text": "When a new team begins working together, how likely are you to share relevant updates clearly and on time?"
+    },
+    {
+      "id": 52,
+      "category": "communication",
+      "reverse": true,
+      "text": "During a busy project week, how likely are you to withhold useful updates until others have to ask?"
+    },
+    {
+      "id": 53,
+      "category": "communication",
+      "reverse": false,
+      "text": "When priorities suddenly change, how likely are you to communicate changes before they create avoidable problems?"
+    },
+    {
+      "id": 54,
+      "category": "communication",
+      "reverse": true,
+      "text": "While responsibilities are being assigned, how likely are you to use vague messages that leave responsibilities unclear?"
+    },
+    {
+      "id": 55,
+      "category": "communication",
+      "reverse": false,
+      "text": "When a teammate asks for support, how likely are you to share relevant updates clearly and on time?"
+    },
+    {
+      "id": 56,
+      "category": "communication",
+      "reverse": true,
+      "text": "After an important mistake occurs, how likely are you to withhold useful updates until others have to ask?"
+    },
+    {
+      "id": 57,
+      "category": "communication",
+      "reverse": false,
+      "text": "During a team meeting, how likely are you to communicate changes before they create avoidable problems?"
+    },
+    {
+      "id": 58,
+      "category": "communication",
+      "reverse": true,
+      "text": "When opinions differ strongly, how likely are you to use vague messages that leave responsibilities unclear?"
+    },
+    {
+      "id": 59,
+      "category": "communication",
+      "reverse": false,
+      "text": "As a deadline approaches, how likely are you to share relevant updates clearly and on time?"
+    },
+    {
+      "id": 60,
+      "category": "communication",
+      "reverse": true,
+      "text": "When progress is slower than expected, how likely are you to withhold useful updates until others have to ask?"
+    },
+    {
+      "id": 61,
+      "category": "communication",
+      "reverse": false,
+      "text": "While working with a new colleague, how likely are you to communicate changes before they create avoidable problems?"
+    },
+    {
+      "id": 62,
+      "category": "communication",
+      "reverse": true,
+      "text": "When information is incomplete, how likely are you to use vague messages that leave responsibilities unclear?"
+    },
+    {
+      "id": 63,
+      "category": "communication",
+      "reverse": false,
+      "text": "After receiving difficult feedback, how likely are you to share relevant updates clearly and on time?"
+    },
+    {
+      "id": 64,
+      "category": "communication",
+      "reverse": true,
+      "text": "When another person’s idea is selected, how likely are you to withhold useful updates until others have to ask?"
+    },
+    {
+      "id": 65,
+      "category": "communication",
+      "reverse": false,
+      "text": "During a stressful period, how likely are you to communicate changes before they create avoidable problems?"
+    },
+    {
+      "id": 66,
+      "category": "communication",
+      "reverse": true,
+      "text": "When the team succeeds, how likely are you to use vague messages that leave responsibilities unclear?"
+    },
+    {
+      "id": 67,
+      "category": "communication",
+      "reverse": false,
+      "text": "When the team falls short, how likely are you to share relevant updates clearly and on time?"
+    },
+    {
+      "id": 68,
+      "category": "communication",
+      "reverse": true,
+      "text": "While coordinating connected tasks, how likely are you to withhold useful updates until others have to ask?"
+    },
+    {
+      "id": 69,
+      "category": "communication",
+      "reverse": false,
+      "text": "When someone has not spoken in the discussion, how likely are you to communicate changes before they create avoidable problems?"
+    },
+    {
+      "id": 70,
+      "category": "communication",
+      "reverse": true,
+      "text": "Before a decision affects several people, how likely are you to use vague messages that leave responsibilities unclear?"
+    },
+    {
+      "id": 71,
+      "category": "communication",
+      "reverse": false,
+      "text": "When an unexpected problem appears, how likely are you to share relevant updates clearly and on time?"
+    },
+    {
+      "id": 72,
+      "category": "communication",
+      "reverse": true,
+      "text": "During remote or hybrid teamwork, how likely are you to withhold useful updates until others have to ask?"
+    },
+    {
+      "id": 73,
+      "category": "communication",
+      "reverse": false,
+      "text": "When roles overlap, how likely are you to communicate changes before they create avoidable problems?"
+    },
+    {
+      "id": 74,
+      "category": "communication",
+      "reverse": true,
+      "text": "At the end of a project, how likely are you to use vague messages that leave responsibilities unclear?"
+    },
+    {
+      "id": 75,
+      "category": "communication",
+      "reverse": false,
+      "text": "Across repeated team experiences, how likely are you to share relevant updates clearly and on time?"
+    },
+    {
+      "id": 76,
+      "category": "listening",
+      "reverse": false,
+      "text": "When a new team begins working together, how likely are you to listen fully before deciding what a teammate means?"
+    },
+    {
+      "id": 77,
+      "category": "listening",
+      "reverse": true,
+      "text": "During a busy project week, how likely are you to prepare your reply while a teammate is still explaining?"
+    },
+    {
+      "id": 78,
+      "category": "listening",
+      "reverse": false,
+      "text": "When priorities suddenly change, how likely are you to confirm your understanding of an important point?"
+    },
+    {
+      "id": 79,
+      "category": "listening",
+      "reverse": true,
+      "text": "While responsibilities are being assigned, how likely are you to dismiss input before understanding the reasoning behind it?"
+    },
+    {
+      "id": 80,
+      "category": "listening",
+      "reverse": false,
+      "text": "When a teammate asks for support, how likely are you to listen fully before deciding what a teammate means?"
+    },
+    {
+      "id": 81,
+      "category": "listening",
+      "reverse": true,
+      "text": "After an important mistake occurs, how likely are you to prepare your reply while a teammate is still explaining?"
+    },
+    {
+      "id": 82,
+      "category": "listening",
+      "reverse": false,
+      "text": "During a team meeting, how likely are you to confirm your understanding of an important point?"
+    },
+    {
+      "id": 83,
+      "category": "listening",
+      "reverse": true,
+      "text": "When opinions differ strongly, how likely are you to dismiss input before understanding the reasoning behind it?"
+    },
+    {
+      "id": 84,
+      "category": "listening",
+      "reverse": false,
+      "text": "As a deadline approaches, how likely are you to listen fully before deciding what a teammate means?"
+    },
+    {
+      "id": 85,
+      "category": "listening",
+      "reverse": true,
+      "text": "When progress is slower than expected, how likely are you to prepare your reply while a teammate is still explaining?"
+    },
+    {
+      "id": 86,
+      "category": "listening",
+      "reverse": false,
+      "text": "While working with a new colleague, how likely are you to confirm your understanding of an important point?"
+    },
+    {
+      "id": 87,
+      "category": "listening",
+      "reverse": true,
+      "text": "When information is incomplete, how likely are you to dismiss input before understanding the reasoning behind it?"
+    },
+    {
+      "id": 88,
+      "category": "listening",
+      "reverse": false,
+      "text": "After receiving difficult feedback, how likely are you to listen fully before deciding what a teammate means?"
+    },
+    {
+      "id": 89,
+      "category": "listening",
+      "reverse": true,
+      "text": "When another person’s idea is selected, how likely are you to prepare your reply while a teammate is still explaining?"
+    },
+    {
+      "id": 90,
+      "category": "listening",
+      "reverse": false,
+      "text": "During a stressful period, how likely are you to confirm your understanding of an important point?"
+    },
+    {
+      "id": 91,
+      "category": "listening",
+      "reverse": true,
+      "text": "When the team succeeds, how likely are you to dismiss input before understanding the reasoning behind it?"
+    },
+    {
+      "id": 92,
+      "category": "listening",
+      "reverse": false,
+      "text": "When the team falls short, how likely are you to listen fully before deciding what a teammate means?"
+    },
+    {
+      "id": 93,
+      "category": "listening",
+      "reverse": true,
+      "text": "While coordinating connected tasks, how likely are you to prepare your reply while a teammate is still explaining?"
+    },
+    {
+      "id": 94,
+      "category": "listening",
+      "reverse": false,
+      "text": "When someone has not spoken in the discussion, how likely are you to confirm your understanding of an important point?"
+    },
+    {
+      "id": 95,
+      "category": "listening",
+      "reverse": true,
+      "text": "Before a decision affects several people, how likely are you to dismiss input before understanding the reasoning behind it?"
+    },
+    {
+      "id": 96,
+      "category": "listening",
+      "reverse": false,
+      "text": "When an unexpected problem appears, how likely are you to listen fully before deciding what a teammate means?"
+    },
+    {
+      "id": 97,
+      "category": "listening",
+      "reverse": true,
+      "text": "During remote or hybrid teamwork, how likely are you to prepare your reply while a teammate is still explaining?"
+    },
+    {
+      "id": 98,
+      "category": "listening",
+      "reverse": false,
+      "text": "When roles overlap, how likely are you to confirm your understanding of an important point?"
+    },
+    {
+      "id": 99,
+      "category": "listening",
+      "reverse": true,
+      "text": "At the end of a project, how likely are you to dismiss input before understanding the reasoning behind it?"
+    },
+    {
+      "id": 100,
+      "category": "listening",
+      "reverse": false,
+      "text": "Across repeated team experiences, how likely are you to listen fully before deciding what a teammate means?"
+    },
+    {
+      "id": 101,
+      "category": "reliability",
+      "reverse": false,
+      "text": "When a new team begins working together, how likely are you to complete agreed work by the promised time?"
+    },
+    {
+      "id": 102,
+      "category": "reliability",
+      "reverse": true,
+      "text": "During a busy project week, how likely are you to make commitments without checking whether you can keep them?"
+    },
+    {
+      "id": 103,
+      "category": "reliability",
+      "reverse": false,
+      "text": "When priorities suddenly change, how likely are you to alert the team early when a commitment may be at risk?"
+    },
+    {
+      "id": 104,
+      "category": "reliability",
+      "reverse": true,
+      "text": "While responsibilities are being assigned, how likely are you to let a deadline pass without informing affected teammates?"
+    },
+    {
+      "id": 105,
+      "category": "reliability",
+      "reverse": false,
+      "text": "When a teammate asks for support, how likely are you to complete agreed work by the promised time?"
+    },
+    {
+      "id": 106,
+      "category": "reliability",
+      "reverse": true,
+      "text": "After an important mistake occurs, how likely are you to make commitments without checking whether you can keep them?"
+    },
+    {
+      "id": 107,
+      "category": "reliability",
+      "reverse": false,
+      "text": "During a team meeting, how likely are you to alert the team early when a commitment may be at risk?"
+    },
+    {
+      "id": 108,
+      "category": "reliability",
+      "reverse": true,
+      "text": "When opinions differ strongly, how likely are you to let a deadline pass without informing affected teammates?"
+    },
+    {
+      "id": 109,
+      "category": "reliability",
+      "reverse": false,
+      "text": "As a deadline approaches, how likely are you to complete agreed work by the promised time?"
+    },
+    {
+      "id": 110,
+      "category": "reliability",
+      "reverse": true,
+      "text": "When progress is slower than expected, how likely are you to make commitments without checking whether you can keep them?"
+    },
+    {
+      "id": 111,
+      "category": "reliability",
+      "reverse": false,
+      "text": "While working with a new colleague, how likely are you to alert the team early when a commitment may be at risk?"
+    },
+    {
+      "id": 112,
+      "category": "reliability",
+      "reverse": true,
+      "text": "When information is incomplete, how likely are you to let a deadline pass without informing affected teammates?"
+    },
+    {
+      "id": 113,
+      "category": "reliability",
+      "reverse": false,
+      "text": "After receiving difficult feedback, how likely are you to complete agreed work by the promised time?"
+    },
+    {
+      "id": 114,
+      "category": "reliability",
+      "reverse": true,
+      "text": "When another person’s idea is selected, how likely are you to make commitments without checking whether you can keep them?"
+    },
+    {
+      "id": 115,
+      "category": "reliability",
+      "reverse": false,
+      "text": "During a stressful period, how likely are you to alert the team early when a commitment may be at risk?"
+    },
+    {
+      "id": 116,
+      "category": "reliability",
+      "reverse": true,
+      "text": "When the team succeeds, how likely are you to let a deadline pass without informing affected teammates?"
+    },
+    {
+      "id": 117,
+      "category": "reliability",
+      "reverse": false,
+      "text": "When the team falls short, how likely are you to complete agreed work by the promised time?"
+    },
+    {
+      "id": 118,
+      "category": "reliability",
+      "reverse": true,
+      "text": "While coordinating connected tasks, how likely are you to make commitments without checking whether you can keep them?"
+    },
+    {
+      "id": 119,
+      "category": "reliability",
+      "reverse": false,
+      "text": "When someone has not spoken in the discussion, how likely are you to alert the team early when a commitment may be at risk?"
+    },
+    {
+      "id": 120,
+      "category": "reliability",
+      "reverse": true,
+      "text": "Before a decision affects several people, how likely are you to let a deadline pass without informing affected teammates?"
+    },
+    {
+      "id": 121,
+      "category": "reliability",
+      "reverse": false,
+      "text": "When an unexpected problem appears, how likely are you to complete agreed work by the promised time?"
+    },
+    {
+      "id": 122,
+      "category": "reliability",
+      "reverse": true,
+      "text": "During remote or hybrid teamwork, how likely are you to make commitments without checking whether you can keep them?"
+    },
+    {
+      "id": 123,
+      "category": "reliability",
+      "reverse": false,
+      "text": "When roles overlap, how likely are you to alert the team early when a commitment may be at risk?"
+    },
+    {
+      "id": 124,
+      "category": "reliability",
+      "reverse": true,
+      "text": "At the end of a project, how likely are you to let a deadline pass without informing affected teammates?"
+    },
+    {
+      "id": 125,
+      "category": "reliability",
+      "reverse": false,
+      "text": "Across repeated team experiences, how likely are you to complete agreed work by the promised time?"
+    },
+    {
+      "id": 126,
+      "category": "accountability",
+      "reverse": false,
+      "text": "When a new team begins working together, how likely are you to take ownership of your contribution to a team outcome?"
+    },
+    {
+      "id": 127,
+      "category": "accountability",
+      "reverse": true,
+      "text": "During a busy project week, how likely are you to shift blame quickly when a shared result goes wrong?"
+    },
+    {
+      "id": 128,
+      "category": "accountability",
+      "reverse": false,
+      "text": "When priorities suddenly change, how likely are you to acknowledge a mistake and help correct its effects?"
+    },
+    {
+      "id": 129,
+      "category": "accountability",
+      "reverse": true,
+      "text": "While responsibilities are being assigned, how likely are you to hide an error that the team needs to address?"
+    },
+    {
+      "id": 130,
+      "category": "accountability",
+      "reverse": false,
+      "text": "When a teammate asks for support, how likely are you to take ownership of your contribution to a team outcome?"
+    },
+    {
+      "id": 131,
+      "category": "accountability",
+      "reverse": true,
+      "text": "After an important mistake occurs, how likely are you to shift blame quickly when a shared result goes wrong?"
+    },
+    {
+      "id": 132,
+      "category": "accountability",
+      "reverse": false,
+      "text": "During a team meeting, how likely are you to acknowledge a mistake and help correct its effects?"
+    },
+    {
+      "id": 133,
+      "category": "accountability",
+      "reverse": true,
+      "text": "When opinions differ strongly, how likely are you to hide an error that the team needs to address?"
+    },
+    {
+      "id": 134,
+      "category": "accountability",
+      "reverse": false,
+      "text": "As a deadline approaches, how likely are you to take ownership of your contribution to a team outcome?"
+    },
+    {
+      "id": 135,
+      "category": "accountability",
+      "reverse": true,
+      "text": "When progress is slower than expected, how likely are you to shift blame quickly when a shared result goes wrong?"
+    },
+    {
+      "id": 136,
+      "category": "accountability",
+      "reverse": false,
+      "text": "While working with a new colleague, how likely are you to acknowledge a mistake and help correct its effects?"
+    },
+    {
+      "id": 137,
+      "category": "accountability",
+      "reverse": true,
+      "text": "When information is incomplete, how likely are you to hide an error that the team needs to address?"
+    },
+    {
+      "id": 138,
+      "category": "accountability",
+      "reverse": false,
+      "text": "After receiving difficult feedback, how likely are you to take ownership of your contribution to a team outcome?"
+    },
+    {
+      "id": 139,
+      "category": "accountability",
+      "reverse": true,
+      "text": "When another person’s idea is selected, how likely are you to shift blame quickly when a shared result goes wrong?"
+    },
+    {
+      "id": 140,
+      "category": "accountability",
+      "reverse": false,
+      "text": "During a stressful period, how likely are you to acknowledge a mistake and help correct its effects?"
+    },
+    {
+      "id": 141,
+      "category": "accountability",
+      "reverse": true,
+      "text": "When the team succeeds, how likely are you to hide an error that the team needs to address?"
+    },
+    {
+      "id": 142,
+      "category": "accountability",
+      "reverse": false,
+      "text": "When the team falls short, how likely are you to take ownership of your contribution to a team outcome?"
+    },
+    {
+      "id": 143,
+      "category": "accountability",
+      "reverse": true,
+      "text": "While coordinating connected tasks, how likely are you to shift blame quickly when a shared result goes wrong?"
+    },
+    {
+      "id": 144,
+      "category": "accountability",
+      "reverse": false,
+      "text": "When someone has not spoken in the discussion, how likely are you to acknowledge a mistake and help correct its effects?"
+    },
+    {
+      "id": 145,
+      "category": "accountability",
+      "reverse": true,
+      "text": "Before a decision affects several people, how likely are you to hide an error that the team needs to address?"
+    },
+    {
+      "id": 146,
+      "category": "accountability",
+      "reverse": false,
+      "text": "When an unexpected problem appears, how likely are you to take ownership of your contribution to a team outcome?"
+    },
+    {
+      "id": 147,
+      "category": "accountability",
+      "reverse": true,
+      "text": "During remote or hybrid teamwork, how likely are you to shift blame quickly when a shared result goes wrong?"
+    },
+    {
+      "id": 148,
+      "category": "accountability",
+      "reverse": false,
+      "text": "When roles overlap, how likely are you to acknowledge a mistake and help correct its effects?"
+    },
+    {
+      "id": 149,
+      "category": "accountability",
+      "reverse": true,
+      "text": "At the end of a project, how likely are you to hide an error that the team needs to address?"
+    },
+    {
+      "id": 150,
+      "category": "accountability",
+      "reverse": false,
+      "text": "Across repeated team experiences, how likely are you to take ownership of your contribution to a team outcome?"
+    },
+    {
+      "id": 151,
+      "category": "role_clarity",
+      "reverse": false,
+      "text": "When a new team begins working together, how likely are you to clarify who owns each part of shared work?"
+    },
+    {
+      "id": 152,
+      "category": "role_clarity",
+      "reverse": true,
+      "text": "During a busy project week, how likely are you to assume responsibilities are obvious when they are not?"
+    },
+    {
+      "id": 153,
+      "category": "role_clarity",
+      "reverse": false,
+      "text": "When priorities suddenly change, how likely are you to check how your responsibilities depend on other roles?"
+    },
+    {
+      "id": 154,
+      "category": "role_clarity",
+      "reverse": true,
+      "text": "While responsibilities are being assigned, how likely are you to duplicate work because ownership was never discussed?"
+    },
+    {
+      "id": 155,
+      "category": "role_clarity",
+      "reverse": false,
+      "text": "When a teammate asks for support, how likely are you to clarify who owns each part of shared work?"
+    },
+    {
+      "id": 156,
+      "category": "role_clarity",
+      "reverse": true,
+      "text": "After an important mistake occurs, how likely are you to assume responsibilities are obvious when they are not?"
+    },
+    {
+      "id": 157,
+      "category": "role_clarity",
+      "reverse": false,
+      "text": "During a team meeting, how likely are you to check how your responsibilities depend on other roles?"
+    },
+    {
+      "id": 158,
+      "category": "role_clarity",
+      "reverse": true,
+      "text": "When opinions differ strongly, how likely are you to duplicate work because ownership was never discussed?"
+    },
+    {
+      "id": 159,
+      "category": "role_clarity",
+      "reverse": false,
+      "text": "As a deadline approaches, how likely are you to clarify who owns each part of shared work?"
+    },
+    {
+      "id": 160,
+      "category": "role_clarity",
+      "reverse": true,
+      "text": "When progress is slower than expected, how likely are you to assume responsibilities are obvious when they are not?"
+    },
+    {
+      "id": 161,
+      "category": "role_clarity",
+      "reverse": false,
+      "text": "While working with a new colleague, how likely are you to check how your responsibilities depend on other roles?"
+    },
+    {
+      "id": 162,
+      "category": "role_clarity",
+      "reverse": true,
+      "text": "When information is incomplete, how likely are you to duplicate work because ownership was never discussed?"
+    },
+    {
+      "id": 163,
+      "category": "role_clarity",
+      "reverse": false,
+      "text": "After receiving difficult feedback, how likely are you to clarify who owns each part of shared work?"
+    },
+    {
+      "id": 164,
+      "category": "role_clarity",
+      "reverse": true,
+      "text": "When another person’s idea is selected, how likely are you to assume responsibilities are obvious when they are not?"
+    },
+    {
+      "id": 165,
+      "category": "role_clarity",
+      "reverse": false,
+      "text": "During a stressful period, how likely are you to check how your responsibilities depend on other roles?"
+    },
+    {
+      "id": 166,
+      "category": "role_clarity",
+      "reverse": true,
+      "text": "When the team succeeds, how likely are you to duplicate work because ownership was never discussed?"
+    },
+    {
+      "id": 167,
+      "category": "role_clarity",
+      "reverse": false,
+      "text": "When the team falls short, how likely are you to clarify who owns each part of shared work?"
+    },
+    {
+      "id": 168,
+      "category": "role_clarity",
+      "reverse": true,
+      "text": "While coordinating connected tasks, how likely are you to assume responsibilities are obvious when they are not?"
+    },
+    {
+      "id": 169,
+      "category": "role_clarity",
+      "reverse": false,
+      "text": "When someone has not spoken in the discussion, how likely are you to check how your responsibilities depend on other roles?"
+    },
+    {
+      "id": 170,
+      "category": "role_clarity",
+      "reverse": true,
+      "text": "Before a decision affects several people, how likely are you to duplicate work because ownership was never discussed?"
+    },
+    {
+      "id": 171,
+      "category": "role_clarity",
+      "reverse": false,
+      "text": "When an unexpected problem appears, how likely are you to clarify who owns each part of shared work?"
+    },
+    {
+      "id": 172,
+      "category": "role_clarity",
+      "reverse": true,
+      "text": "During remote or hybrid teamwork, how likely are you to assume responsibilities are obvious when they are not?"
+    },
+    {
+      "id": 173,
+      "category": "role_clarity",
+      "reverse": false,
+      "text": "When roles overlap, how likely are you to check how your responsibilities depend on other roles?"
+    },
+    {
+      "id": 174,
+      "category": "role_clarity",
+      "reverse": true,
+      "text": "At the end of a project, how likely are you to duplicate work because ownership was never discussed?"
+    },
+    {
+      "id": 175,
+      "category": "role_clarity",
+      "reverse": false,
+      "text": "Across repeated team experiences, how likely are you to clarify who owns each part of shared work?"
+    },
+    {
+      "id": 176,
+      "category": "trust",
+      "reverse": false,
+      "text": "When a new team begins working together, how likely are you to make it safe for teammates to raise concerns or uncertainty?"
+    },
+    {
+      "id": 177,
+      "category": "trust",
+      "reverse": true,
+      "text": "During a busy project week, how likely are you to punish a teammate socially for admitting uncertainty?"
+    },
+    {
+      "id": 178,
+      "category": "trust",
+      "reverse": false,
+      "text": "When priorities suddenly change, how likely are you to handle sensitive team information responsibly?"
+    },
+    {
+      "id": 179,
+      "category": "trust",
+      "reverse": true,
+      "text": "While responsibilities are being assigned, how likely are you to use private information to gain advantage within the team?"
+    },
+    {
+      "id": 180,
+      "category": "trust",
+      "reverse": false,
+      "text": "When a teammate asks for support, how likely are you to make it safe for teammates to raise concerns or uncertainty?"
+    },
+    {
+      "id": 181,
+      "category": "trust",
+      "reverse": true,
+      "text": "After an important mistake occurs, how likely are you to punish a teammate socially for admitting uncertainty?"
+    },
+    {
+      "id": 182,
+      "category": "trust",
+      "reverse": false,
+      "text": "During a team meeting, how likely are you to handle sensitive team information responsibly?"
+    },
+    {
+      "id": 183,
+      "category": "trust",
+      "reverse": true,
+      "text": "When opinions differ strongly, how likely are you to use private information to gain advantage within the team?"
+    },
+    {
+      "id": 184,
+      "category": "trust",
+      "reverse": false,
+      "text": "As a deadline approaches, how likely are you to make it safe for teammates to raise concerns or uncertainty?"
+    },
+    {
+      "id": 185,
+      "category": "trust",
+      "reverse": true,
+      "text": "When progress is slower than expected, how likely are you to punish a teammate socially for admitting uncertainty?"
+    },
+    {
+      "id": 186,
+      "category": "trust",
+      "reverse": false,
+      "text": "While working with a new colleague, how likely are you to handle sensitive team information responsibly?"
+    },
+    {
+      "id": 187,
+      "category": "trust",
+      "reverse": true,
+      "text": "When information is incomplete, how likely are you to use private information to gain advantage within the team?"
+    },
+    {
+      "id": 188,
+      "category": "trust",
+      "reverse": false,
+      "text": "After receiving difficult feedback, how likely are you to make it safe for teammates to raise concerns or uncertainty?"
+    },
+    {
+      "id": 189,
+      "category": "trust",
+      "reverse": true,
+      "text": "When another person’s idea is selected, how likely are you to punish a teammate socially for admitting uncertainty?"
+    },
+    {
+      "id": 190,
+      "category": "trust",
+      "reverse": false,
+      "text": "During a stressful period, how likely are you to handle sensitive team information responsibly?"
+    },
+    {
+      "id": 191,
+      "category": "trust",
+      "reverse": true,
+      "text": "When the team succeeds, how likely are you to use private information to gain advantage within the team?"
+    },
+    {
+      "id": 192,
+      "category": "trust",
+      "reverse": false,
+      "text": "When the team falls short, how likely are you to make it safe for teammates to raise concerns or uncertainty?"
+    },
+    {
+      "id": 193,
+      "category": "trust",
+      "reverse": true,
+      "text": "While coordinating connected tasks, how likely are you to punish a teammate socially for admitting uncertainty?"
+    },
+    {
+      "id": 194,
+      "category": "trust",
+      "reverse": false,
+      "text": "When someone has not spoken in the discussion, how likely are you to handle sensitive team information responsibly?"
+    },
+    {
+      "id": 195,
+      "category": "trust",
+      "reverse": true,
+      "text": "Before a decision affects several people, how likely are you to use private information to gain advantage within the team?"
+    },
+    {
+      "id": 196,
+      "category": "trust",
+      "reverse": false,
+      "text": "When an unexpected problem appears, how likely are you to make it safe for teammates to raise concerns or uncertainty?"
+    },
+    {
+      "id": 197,
+      "category": "trust",
+      "reverse": true,
+      "text": "During remote or hybrid teamwork, how likely are you to punish a teammate socially for admitting uncertainty?"
+    },
+    {
+      "id": 198,
+      "category": "trust",
+      "reverse": false,
+      "text": "When roles overlap, how likely are you to handle sensitive team information responsibly?"
+    },
+    {
+      "id": 199,
+      "category": "trust",
+      "reverse": true,
+      "text": "At the end of a project, how likely are you to use private information to gain advantage within the team?"
+    },
+    {
+      "id": 200,
+      "category": "trust",
+      "reverse": false,
+      "text": "Across repeated team experiences, how likely are you to make it safe for teammates to raise concerns or uncertainty?"
+    },
+    {
+      "id": 201,
+      "category": "support",
+      "reverse": false,
+      "text": "When a new team begins working together, how likely are you to offer practical help when a teammate is overloaded?"
+    },
+    {
+      "id": 202,
+      "category": "support",
+      "reverse": true,
+      "text": "During a busy project week, how likely are you to ignore a manageable request for help because it is not your task?"
+    },
+    {
+      "id": 203,
+      "category": "support",
+      "reverse": false,
+      "text": "When priorities suddenly change, how likely are you to share knowledge that helps others succeed independently?"
+    },
+    {
+      "id": 204,
+      "category": "support",
+      "reverse": true,
+      "text": "While responsibilities are being assigned, how likely are you to keep useful knowledge to make yourself indispensable?"
+    },
+    {
+      "id": 205,
+      "category": "support",
+      "reverse": false,
+      "text": "When a teammate asks for support, how likely are you to offer practical help when a teammate is overloaded?"
+    },
+    {
+      "id": 206,
+      "category": "support",
+      "reverse": true,
+      "text": "After an important mistake occurs, how likely are you to ignore a manageable request for help because it is not your task?"
+    },
+    {
+      "id": 207,
+      "category": "support",
+      "reverse": false,
+      "text": "During a team meeting, how likely are you to share knowledge that helps others succeed independently?"
+    },
+    {
+      "id": 208,
+      "category": "support",
+      "reverse": true,
+      "text": "When opinions differ strongly, how likely are you to keep useful knowledge to make yourself indispensable?"
+    },
+    {
+      "id": 209,
+      "category": "support",
+      "reverse": false,
+      "text": "As a deadline approaches, how likely are you to offer practical help when a teammate is overloaded?"
+    },
+    {
+      "id": 210,
+      "category": "support",
+      "reverse": true,
+      "text": "When progress is slower than expected, how likely are you to ignore a manageable request for help because it is not your task?"
+    },
+    {
+      "id": 211,
+      "category": "support",
+      "reverse": false,
+      "text": "While working with a new colleague, how likely are you to share knowledge that helps others succeed independently?"
+    },
+    {
+      "id": 212,
+      "category": "support",
+      "reverse": true,
+      "text": "When information is incomplete, how likely are you to keep useful knowledge to make yourself indispensable?"
+    },
+    {
+      "id": 213,
+      "category": "support",
+      "reverse": false,
+      "text": "After receiving difficult feedback, how likely are you to offer practical help when a teammate is overloaded?"
+    },
+    {
+      "id": 214,
+      "category": "support",
+      "reverse": true,
+      "text": "When another person’s idea is selected, how likely are you to ignore a manageable request for help because it is not your task?"
+    },
+    {
+      "id": 215,
+      "category": "support",
+      "reverse": false,
+      "text": "During a stressful period, how likely are you to share knowledge that helps others succeed independently?"
+    },
+    {
+      "id": 216,
+      "category": "support",
+      "reverse": true,
+      "text": "When the team succeeds, how likely are you to keep useful knowledge to make yourself indispensable?"
+    },
+    {
+      "id": 217,
+      "category": "support",
+      "reverse": false,
+      "text": "When the team falls short, how likely are you to offer practical help when a teammate is overloaded?"
+    },
+    {
+      "id": 218,
+      "category": "support",
+      "reverse": true,
+      "text": "While coordinating connected tasks, how likely are you to ignore a manageable request for help because it is not your task?"
+    },
+    {
+      "id": 219,
+      "category": "support",
+      "reverse": false,
+      "text": "When someone has not spoken in the discussion, how likely are you to share knowledge that helps others succeed independently?"
+    },
+    {
+      "id": 220,
+      "category": "support",
+      "reverse": true,
+      "text": "Before a decision affects several people, how likely are you to keep useful knowledge to make yourself indispensable?"
+    },
+    {
+      "id": 221,
+      "category": "support",
+      "reverse": false,
+      "text": "When an unexpected problem appears, how likely are you to offer practical help when a teammate is overloaded?"
+    },
+    {
+      "id": 222,
+      "category": "support",
+      "reverse": true,
+      "text": "During remote or hybrid teamwork, how likely are you to ignore a manageable request for help because it is not your task?"
+    },
+    {
+      "id": 223,
+      "category": "support",
+      "reverse": false,
+      "text": "When roles overlap, how likely are you to share knowledge that helps others succeed independently?"
+    },
+    {
+      "id": 224,
+      "category": "support",
+      "reverse": true,
+      "text": "At the end of a project, how likely are you to keep useful knowledge to make yourself indispensable?"
+    },
+    {
+      "id": 225,
+      "category": "support",
+      "reverse": false,
+      "text": "Across repeated team experiences, how likely are you to offer practical help when a teammate is overloaded?"
+    },
+    {
+      "id": 226,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "When a new team begins working together, how likely are you to adjust your approach when team needs legitimately change?"
+    },
+    {
+      "id": 227,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "During a busy project week, how likely are you to resist every change because the original plan was yours?"
+    },
+    {
+      "id": 228,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "When priorities suddenly change, how likely are you to take on a different role when circumstances require it?"
+    },
+    {
+      "id": 229,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "While responsibilities are being assigned, how likely are you to refuse a reasonable adjustment that would help the team?"
+    },
+    {
+      "id": 230,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "When a teammate asks for support, how likely are you to adjust your approach when team needs legitimately change?"
+    },
+    {
+      "id": 231,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "After an important mistake occurs, how likely are you to resist every change because the original plan was yours?"
+    },
+    {
+      "id": 232,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "During a team meeting, how likely are you to take on a different role when circumstances require it?"
+    },
+    {
+      "id": 233,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When opinions differ strongly, how likely are you to refuse a reasonable adjustment that would help the team?"
+    },
+    {
+      "id": 234,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "As a deadline approaches, how likely are you to adjust your approach when team needs legitimately change?"
+    },
+    {
+      "id": 235,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When progress is slower than expected, how likely are you to resist every change because the original plan was yours?"
+    },
+    {
+      "id": 236,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "While working with a new colleague, how likely are you to take on a different role when circumstances require it?"
+    },
+    {
+      "id": 237,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When information is incomplete, how likely are you to refuse a reasonable adjustment that would help the team?"
+    },
+    {
+      "id": 238,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "After receiving difficult feedback, how likely are you to adjust your approach when team needs legitimately change?"
+    },
+    {
+      "id": 239,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When another person’s idea is selected, how likely are you to resist every change because the original plan was yours?"
+    },
+    {
+      "id": 240,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "During a stressful period, how likely are you to take on a different role when circumstances require it?"
+    },
+    {
+      "id": 241,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When the team succeeds, how likely are you to refuse a reasonable adjustment that would help the team?"
+    },
+    {
+      "id": 242,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "When the team falls short, how likely are you to adjust your approach when team needs legitimately change?"
+    },
+    {
+      "id": 243,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "While coordinating connected tasks, how likely are you to resist every change because the original plan was yours?"
+    },
+    {
+      "id": 244,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "When someone has not spoken in the discussion, how likely are you to take on a different role when circumstances require it?"
+    },
+    {
+      "id": 245,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "Before a decision affects several people, how likely are you to refuse a reasonable adjustment that would help the team?"
+    },
+    {
+      "id": 246,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "When an unexpected problem appears, how likely are you to adjust your approach when team needs legitimately change?"
+    },
+    {
+      "id": 247,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "During remote or hybrid teamwork, how likely are you to resist every change because the original plan was yours?"
+    },
+    {
+      "id": 248,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "When roles overlap, how likely are you to take on a different role when circumstances require it?"
+    },
+    {
+      "id": 249,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "At the end of a project, how likely are you to refuse a reasonable adjustment that would help the team?"
+    },
+    {
+      "id": 250,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "Across repeated team experiences, how likely are you to adjust your approach when team needs legitimately change?"
+    },
+    {
+      "id": 251,
+      "category": "conflict",
+      "reverse": false,
+      "text": "When a new team begins working together, how likely are you to address disagreement directly without making it personal?"
+    },
+    {
+      "id": 252,
+      "category": "conflict",
+      "reverse": true,
+      "text": "During a busy project week, how likely are you to attack a teammate’s character during disagreement?"
+    },
+    {
+      "id": 253,
+      "category": "conflict",
+      "reverse": false,
+      "text": "When priorities suddenly change, how likely are you to focus conflict on evidence, needs, and possible solutions?"
+    },
+    {
+      "id": 254,
+      "category": "conflict",
+      "reverse": true,
+      "text": "While responsibilities are being assigned, how likely are you to avoid every disagreement until resentment builds?"
+    },
+    {
+      "id": 255,
+      "category": "conflict",
+      "reverse": false,
+      "text": "When a teammate asks for support, how likely are you to address disagreement directly without making it personal?"
+    },
+    {
+      "id": 256,
+      "category": "conflict",
+      "reverse": true,
+      "text": "After an important mistake occurs, how likely are you to attack a teammate’s character during disagreement?"
+    },
+    {
+      "id": 257,
+      "category": "conflict",
+      "reverse": false,
+      "text": "During a team meeting, how likely are you to focus conflict on evidence, needs, and possible solutions?"
+    },
+    {
+      "id": 258,
+      "category": "conflict",
+      "reverse": true,
+      "text": "When opinions differ strongly, how likely are you to avoid every disagreement until resentment builds?"
+    },
+    {
+      "id": 259,
+      "category": "conflict",
+      "reverse": false,
+      "text": "As a deadline approaches, how likely are you to address disagreement directly without making it personal?"
+    },
+    {
+      "id": 260,
+      "category": "conflict",
+      "reverse": true,
+      "text": "When progress is slower than expected, how likely are you to attack a teammate’s character during disagreement?"
+    },
+    {
+      "id": 261,
+      "category": "conflict",
+      "reverse": false,
+      "text": "While working with a new colleague, how likely are you to focus conflict on evidence, needs, and possible solutions?"
+    },
+    {
+      "id": 262,
+      "category": "conflict",
+      "reverse": true,
+      "text": "When information is incomplete, how likely are you to avoid every disagreement until resentment builds?"
+    },
+    {
+      "id": 263,
+      "category": "conflict",
+      "reverse": false,
+      "text": "After receiving difficult feedback, how likely are you to address disagreement directly without making it personal?"
+    },
+    {
+      "id": 264,
+      "category": "conflict",
+      "reverse": true,
+      "text": "When another person’s idea is selected, how likely are you to attack a teammate’s character during disagreement?"
+    },
+    {
+      "id": 265,
+      "category": "conflict",
+      "reverse": false,
+      "text": "During a stressful period, how likely are you to focus conflict on evidence, needs, and possible solutions?"
+    },
+    {
+      "id": 266,
+      "category": "conflict",
+      "reverse": true,
+      "text": "When the team succeeds, how likely are you to avoid every disagreement until resentment builds?"
+    },
+    {
+      "id": 267,
+      "category": "conflict",
+      "reverse": false,
+      "text": "When the team falls short, how likely are you to address disagreement directly without making it personal?"
+    },
+    {
+      "id": 268,
+      "category": "conflict",
+      "reverse": true,
+      "text": "While coordinating connected tasks, how likely are you to attack a teammate’s character during disagreement?"
+    },
+    {
+      "id": 269,
+      "category": "conflict",
+      "reverse": false,
+      "text": "When someone has not spoken in the discussion, how likely are you to focus conflict on evidence, needs, and possible solutions?"
+    },
+    {
+      "id": 270,
+      "category": "conflict",
+      "reverse": true,
+      "text": "Before a decision affects several people, how likely are you to avoid every disagreement until resentment builds?"
+    },
+    {
+      "id": 271,
+      "category": "conflict",
+      "reverse": false,
+      "text": "When an unexpected problem appears, how likely are you to address disagreement directly without making it personal?"
+    },
+    {
+      "id": 272,
+      "category": "conflict",
+      "reverse": true,
+      "text": "During remote or hybrid teamwork, how likely are you to attack a teammate’s character during disagreement?"
+    },
+    {
+      "id": 273,
+      "category": "conflict",
+      "reverse": false,
+      "text": "When roles overlap, how likely are you to focus conflict on evidence, needs, and possible solutions?"
+    },
+    {
+      "id": 274,
+      "category": "conflict",
+      "reverse": true,
+      "text": "At the end of a project, how likely are you to avoid every disagreement until resentment builds?"
+    },
+    {
+      "id": 275,
+      "category": "conflict",
+      "reverse": false,
+      "text": "Across repeated team experiences, how likely are you to address disagreement directly without making it personal?"
+    },
+    {
+      "id": 276,
+      "category": "feedback_giving",
+      "reverse": false,
+      "text": "When a new team begins working together, how likely are you to give specific feedback focused on behaviour and impact?"
+    },
+    {
+      "id": 277,
+      "category": "feedback_giving",
+      "reverse": true,
+      "text": "During a busy project week, how likely are you to criticise vaguely without explaining what could improve?"
+    },
+    {
+      "id": 278,
+      "category": "feedback_giving",
+      "reverse": false,
+      "text": "When priorities suddenly change, how likely are you to offer improvement feedback respectfully and near the relevant event?"
+    },
+    {
+      "id": 279,
+      "category": "feedback_giving",
+      "reverse": true,
+      "text": "While responsibilities are being assigned, how likely are you to save feedback mainly for public embarrassment?"
+    },
+    {
+      "id": 280,
+      "category": "feedback_giving",
+      "reverse": false,
+      "text": "When a teammate asks for support, how likely are you to give specific feedback focused on behaviour and impact?"
+    },
+    {
+      "id": 281,
+      "category": "feedback_giving",
+      "reverse": true,
+      "text": "After an important mistake occurs, how likely are you to criticise vaguely without explaining what could improve?"
+    },
+    {
+      "id": 282,
+      "category": "feedback_giving",
+      "reverse": false,
+      "text": "During a team meeting, how likely are you to offer improvement feedback respectfully and near the relevant event?"
+    },
+    {
+      "id": 283,
+      "category": "feedback_giving",
+      "reverse": true,
+      "text": "When opinions differ strongly, how likely are you to save feedback mainly for public embarrassment?"
+    },
+    {
+      "id": 284,
+      "category": "feedback_giving",
+      "reverse": false,
+      "text": "As a deadline approaches, how likely are you to give specific feedback focused on behaviour and impact?"
+    },
+    {
+      "id": 285,
+      "category": "feedback_giving",
+      "reverse": true,
+      "text": "When progress is slower than expected, how likely are you to criticise vaguely without explaining what could improve?"
+    },
+    {
+      "id": 286,
+      "category": "feedback_giving",
+      "reverse": false,
+      "text": "While working with a new colleague, how likely are you to offer improvement feedback respectfully and near the relevant event?"
+    },
+    {
+      "id": 287,
+      "category": "feedback_giving",
+      "reverse": true,
+      "text": "When information is incomplete, how likely are you to save feedback mainly for public embarrassment?"
+    },
+    {
+      "id": 288,
+      "category": "feedback_giving",
+      "reverse": false,
+      "text": "After receiving difficult feedback, how likely are you to give specific feedback focused on behaviour and impact?"
+    },
+    {
+      "id": 289,
+      "category": "feedback_giving",
+      "reverse": true,
+      "text": "When another person’s idea is selected, how likely are you to criticise vaguely without explaining what could improve?"
+    },
+    {
+      "id": 290,
+      "category": "feedback_giving",
+      "reverse": false,
+      "text": "During a stressful period, how likely are you to offer improvement feedback respectfully and near the relevant event?"
+    },
+    {
+      "id": 291,
+      "category": "feedback_giving",
+      "reverse": true,
+      "text": "When the team succeeds, how likely are you to save feedback mainly for public embarrassment?"
+    },
+    {
+      "id": 292,
+      "category": "feedback_giving",
+      "reverse": false,
+      "text": "When the team falls short, how likely are you to give specific feedback focused on behaviour and impact?"
+    },
+    {
+      "id": 293,
+      "category": "feedback_giving",
+      "reverse": true,
+      "text": "While coordinating connected tasks, how likely are you to criticise vaguely without explaining what could improve?"
+    },
+    {
+      "id": 294,
+      "category": "feedback_giving",
+      "reverse": false,
+      "text": "When someone has not spoken in the discussion, how likely are you to offer improvement feedback respectfully and near the relevant event?"
+    },
+    {
+      "id": 295,
+      "category": "feedback_giving",
+      "reverse": true,
+      "text": "Before a decision affects several people, how likely are you to save feedback mainly for public embarrassment?"
+    },
+    {
+      "id": 296,
+      "category": "feedback_giving",
+      "reverse": false,
+      "text": "When an unexpected problem appears, how likely are you to give specific feedback focused on behaviour and impact?"
+    },
+    {
+      "id": 297,
+      "category": "feedback_giving",
+      "reverse": true,
+      "text": "During remote or hybrid teamwork, how likely are you to criticise vaguely without explaining what could improve?"
+    },
+    {
+      "id": 298,
+      "category": "feedback_giving",
+      "reverse": false,
+      "text": "When roles overlap, how likely are you to offer improvement feedback respectfully and near the relevant event?"
+    },
+    {
+      "id": 299,
+      "category": "feedback_giving",
+      "reverse": true,
+      "text": "At the end of a project, how likely are you to save feedback mainly for public embarrassment?"
+    },
+    {
+      "id": 300,
+      "category": "feedback_giving",
+      "reverse": false,
+      "text": "Across repeated team experiences, how likely are you to give specific feedback focused on behaviour and impact?"
+    },
+    {
+      "id": 301,
+      "category": "feedback_receiving",
+      "reverse": false,
+      "text": "When a new team begins working together, how likely are you to consider feedback before defending your intentions?"
+    },
+    {
+      "id": 302,
+      "category": "feedback_receiving",
+      "reverse": true,
+      "text": "During a busy project week, how likely are you to reject feedback automatically because it feels uncomfortable?"
+    },
+    {
+      "id": 303,
+      "category": "feedback_receiving",
+      "reverse": false,
+      "text": "When priorities suddenly change, how likely are you to ask questions that turn feedback into an actionable change?"
+    },
+    {
+      "id": 304,
+      "category": "feedback_receiving",
+      "reverse": true,
+      "text": "While responsibilities are being assigned, how likely are you to treat corrective feedback as a personal attack?"
+    },
+    {
+      "id": 305,
+      "category": "feedback_receiving",
+      "reverse": false,
+      "text": "When a teammate asks for support, how likely are you to consider feedback before defending your intentions?"
+    },
+    {
+      "id": 306,
+      "category": "feedback_receiving",
+      "reverse": true,
+      "text": "After an important mistake occurs, how likely are you to reject feedback automatically because it feels uncomfortable?"
+    },
+    {
+      "id": 307,
+      "category": "feedback_receiving",
+      "reverse": false,
+      "text": "During a team meeting, how likely are you to ask questions that turn feedback into an actionable change?"
+    },
+    {
+      "id": 308,
+      "category": "feedback_receiving",
+      "reverse": true,
+      "text": "When opinions differ strongly, how likely are you to treat corrective feedback as a personal attack?"
+    },
+    {
+      "id": 309,
+      "category": "feedback_receiving",
+      "reverse": false,
+      "text": "As a deadline approaches, how likely are you to consider feedback before defending your intentions?"
+    },
+    {
+      "id": 310,
+      "category": "feedback_receiving",
+      "reverse": true,
+      "text": "When progress is slower than expected, how likely are you to reject feedback automatically because it feels uncomfortable?"
+    },
+    {
+      "id": 311,
+      "category": "feedback_receiving",
+      "reverse": false,
+      "text": "While working with a new colleague, how likely are you to ask questions that turn feedback into an actionable change?"
+    },
+    {
+      "id": 312,
+      "category": "feedback_receiving",
+      "reverse": true,
+      "text": "When information is incomplete, how likely are you to treat corrective feedback as a personal attack?"
+    },
+    {
+      "id": 313,
+      "category": "feedback_receiving",
+      "reverse": false,
+      "text": "After receiving difficult feedback, how likely are you to consider feedback before defending your intentions?"
+    },
+    {
+      "id": 314,
+      "category": "feedback_receiving",
+      "reverse": true,
+      "text": "When another person’s idea is selected, how likely are you to reject feedback automatically because it feels uncomfortable?"
+    },
+    {
+      "id": 315,
+      "category": "feedback_receiving",
+      "reverse": false,
+      "text": "During a stressful period, how likely are you to ask questions that turn feedback into an actionable change?"
+    },
+    {
+      "id": 316,
+      "category": "feedback_receiving",
+      "reverse": true,
+      "text": "When the team succeeds, how likely are you to treat corrective feedback as a personal attack?"
+    },
+    {
+      "id": 317,
+      "category": "feedback_receiving",
+      "reverse": false,
+      "text": "When the team falls short, how likely are you to consider feedback before defending your intentions?"
+    },
+    {
+      "id": 318,
+      "category": "feedback_receiving",
+      "reverse": true,
+      "text": "While coordinating connected tasks, how likely are you to reject feedback automatically because it feels uncomfortable?"
+    },
+    {
+      "id": 319,
+      "category": "feedback_receiving",
+      "reverse": false,
+      "text": "When someone has not spoken in the discussion, how likely are you to ask questions that turn feedback into an actionable change?"
+    },
+    {
+      "id": 320,
+      "category": "feedback_receiving",
+      "reverse": true,
+      "text": "Before a decision affects several people, how likely are you to treat corrective feedback as a personal attack?"
+    },
+    {
+      "id": 321,
+      "category": "feedback_receiving",
+      "reverse": false,
+      "text": "When an unexpected problem appears, how likely are you to consider feedback before defending your intentions?"
+    },
+    {
+      "id": 322,
+      "category": "feedback_receiving",
+      "reverse": true,
+      "text": "During remote or hybrid teamwork, how likely are you to reject feedback automatically because it feels uncomfortable?"
+    },
+    {
+      "id": 323,
+      "category": "feedback_receiving",
+      "reverse": false,
+      "text": "When roles overlap, how likely are you to ask questions that turn feedback into an actionable change?"
+    },
+    {
+      "id": 324,
+      "category": "feedback_receiving",
+      "reverse": true,
+      "text": "At the end of a project, how likely are you to treat corrective feedback as a personal attack?"
+    },
+    {
+      "id": 325,
+      "category": "feedback_receiving",
+      "reverse": false,
+      "text": "Across repeated team experiences, how likely are you to consider feedback before defending your intentions?"
+    },
+    {
+      "id": 326,
+      "category": "inclusion",
+      "reverse": false,
+      "text": "When a new team begins working together, how likely are you to invite contributions from people who have spoken less?"
+    },
+    {
+      "id": 327,
+      "category": "inclusion",
+      "reverse": true,
+      "text": "During a busy project week, how likely are you to let the loudest voices determine every discussion?"
+    },
+    {
+      "id": 328,
+      "category": "inclusion",
+      "reverse": false,
+      "text": "When priorities suddenly change, how likely are you to show respect across differences in status, background, or style?"
+    },
+    {
+      "id": 329,
+      "category": "inclusion",
+      "reverse": true,
+      "text": "While responsibilities are being assigned, how likely are you to exclude a teammate because their style differs from yours?"
+    },
+    {
+      "id": 330,
+      "category": "inclusion",
+      "reverse": false,
+      "text": "When a teammate asks for support, how likely are you to invite contributions from people who have spoken less?"
+    },
+    {
+      "id": 331,
+      "category": "inclusion",
+      "reverse": true,
+      "text": "After an important mistake occurs, how likely are you to let the loudest voices determine every discussion?"
+    },
+    {
+      "id": 332,
+      "category": "inclusion",
+      "reverse": false,
+      "text": "During a team meeting, how likely are you to show respect across differences in status, background, or style?"
+    },
+    {
+      "id": 333,
+      "category": "inclusion",
+      "reverse": true,
+      "text": "When opinions differ strongly, how likely are you to exclude a teammate because their style differs from yours?"
+    },
+    {
+      "id": 334,
+      "category": "inclusion",
+      "reverse": false,
+      "text": "As a deadline approaches, how likely are you to invite contributions from people who have spoken less?"
+    },
+    {
+      "id": 335,
+      "category": "inclusion",
+      "reverse": true,
+      "text": "When progress is slower than expected, how likely are you to let the loudest voices determine every discussion?"
+    },
+    {
+      "id": 336,
+      "category": "inclusion",
+      "reverse": false,
+      "text": "While working with a new colleague, how likely are you to show respect across differences in status, background, or style?"
+    },
+    {
+      "id": 337,
+      "category": "inclusion",
+      "reverse": true,
+      "text": "When information is incomplete, how likely are you to exclude a teammate because their style differs from yours?"
+    },
+    {
+      "id": 338,
+      "category": "inclusion",
+      "reverse": false,
+      "text": "After receiving difficult feedback, how likely are you to invite contributions from people who have spoken less?"
+    },
+    {
+      "id": 339,
+      "category": "inclusion",
+      "reverse": true,
+      "text": "When another person’s idea is selected, how likely are you to let the loudest voices determine every discussion?"
+    },
+    {
+      "id": 340,
+      "category": "inclusion",
+      "reverse": false,
+      "text": "During a stressful period, how likely are you to show respect across differences in status, background, or style?"
+    },
+    {
+      "id": 341,
+      "category": "inclusion",
+      "reverse": true,
+      "text": "When the team succeeds, how likely are you to exclude a teammate because their style differs from yours?"
+    },
+    {
+      "id": 342,
+      "category": "inclusion",
+      "reverse": false,
+      "text": "When the team falls short, how likely are you to invite contributions from people who have spoken less?"
+    },
+    {
+      "id": 343,
+      "category": "inclusion",
+      "reverse": true,
+      "text": "While coordinating connected tasks, how likely are you to let the loudest voices determine every discussion?"
+    },
+    {
+      "id": 344,
+      "category": "inclusion",
+      "reverse": false,
+      "text": "When someone has not spoken in the discussion, how likely are you to show respect across differences in status, background, or style?"
+    },
+    {
+      "id": 345,
+      "category": "inclusion",
+      "reverse": true,
+      "text": "Before a decision affects several people, how likely are you to exclude a teammate because their style differs from yours?"
+    },
+    {
+      "id": 346,
+      "category": "inclusion",
+      "reverse": false,
+      "text": "When an unexpected problem appears, how likely are you to invite contributions from people who have spoken less?"
+    },
+    {
+      "id": 347,
+      "category": "inclusion",
+      "reverse": true,
+      "text": "During remote or hybrid teamwork, how likely are you to let the loudest voices determine every discussion?"
+    },
+    {
+      "id": 348,
+      "category": "inclusion",
+      "reverse": false,
+      "text": "When roles overlap, how likely are you to show respect across differences in status, background, or style?"
+    },
+    {
+      "id": 349,
+      "category": "inclusion",
+      "reverse": true,
+      "text": "At the end of a project, how likely are you to exclude a teammate because their style differs from yours?"
+    },
+    {
+      "id": 350,
+      "category": "inclusion",
+      "reverse": false,
+      "text": "Across repeated team experiences, how likely are you to invite contributions from people who have spoken less?"
+    },
+    {
+      "id": 351,
+      "category": "empathy",
+      "reverse": false,
+      "text": "When a new team begins working together, how likely are you to consider the pressures affecting a teammate’s behaviour?"
+    },
+    {
+      "id": 352,
+      "category": "empathy",
+      "reverse": true,
+      "text": "During a busy project week, how likely are you to assume a teammate’s difficulty reflects laziness immediately?"
+    },
+    {
+      "id": 353,
+      "category": "empathy",
+      "reverse": false,
+      "text": "When priorities suddenly change, how likely are you to recognise another perspective without needing to agree?"
+    },
+    {
+      "id": 354,
+      "category": "empathy",
+      "reverse": true,
+      "text": "While responsibilities are being assigned, how likely are you to dismiss feelings as irrelevant to how the team functions?"
+    },
+    {
+      "id": 355,
+      "category": "empathy",
+      "reverse": false,
+      "text": "When a teammate asks for support, how likely are you to consider the pressures affecting a teammate’s behaviour?"
+    },
+    {
+      "id": 356,
+      "category": "empathy",
+      "reverse": true,
+      "text": "After an important mistake occurs, how likely are you to assume a teammate’s difficulty reflects laziness immediately?"
+    },
+    {
+      "id": 357,
+      "category": "empathy",
+      "reverse": false,
+      "text": "During a team meeting, how likely are you to recognise another perspective without needing to agree?"
+    },
+    {
+      "id": 358,
+      "category": "empathy",
+      "reverse": true,
+      "text": "When opinions differ strongly, how likely are you to dismiss feelings as irrelevant to how the team functions?"
+    },
+    {
+      "id": 359,
+      "category": "empathy",
+      "reverse": false,
+      "text": "As a deadline approaches, how likely are you to consider the pressures affecting a teammate’s behaviour?"
+    },
+    {
+      "id": 360,
+      "category": "empathy",
+      "reverse": true,
+      "text": "When progress is slower than expected, how likely are you to assume a teammate’s difficulty reflects laziness immediately?"
+    },
+    {
+      "id": 361,
+      "category": "empathy",
+      "reverse": false,
+      "text": "While working with a new colleague, how likely are you to recognise another perspective without needing to agree?"
+    },
+    {
+      "id": 362,
+      "category": "empathy",
+      "reverse": true,
+      "text": "When information is incomplete, how likely are you to dismiss feelings as irrelevant to how the team functions?"
+    },
+    {
+      "id": 363,
+      "category": "empathy",
+      "reverse": false,
+      "text": "After receiving difficult feedback, how likely are you to consider the pressures affecting a teammate’s behaviour?"
+    },
+    {
+      "id": 364,
+      "category": "empathy",
+      "reverse": true,
+      "text": "When another person’s idea is selected, how likely are you to assume a teammate’s difficulty reflects laziness immediately?"
+    },
+    {
+      "id": 365,
+      "category": "empathy",
+      "reverse": false,
+      "text": "During a stressful period, how likely are you to recognise another perspective without needing to agree?"
+    },
+    {
+      "id": 366,
+      "category": "empathy",
+      "reverse": true,
+      "text": "When the team succeeds, how likely are you to dismiss feelings as irrelevant to how the team functions?"
+    },
+    {
+      "id": 367,
+      "category": "empathy",
+      "reverse": false,
+      "text": "When the team falls short, how likely are you to consider the pressures affecting a teammate’s behaviour?"
+    },
+    {
+      "id": 368,
+      "category": "empathy",
+      "reverse": true,
+      "text": "While coordinating connected tasks, how likely are you to assume a teammate’s difficulty reflects laziness immediately?"
+    },
+    {
+      "id": 369,
+      "category": "empathy",
+      "reverse": false,
+      "text": "When someone has not spoken in the discussion, how likely are you to recognise another perspective without needing to agree?"
+    },
+    {
+      "id": 370,
+      "category": "empathy",
+      "reverse": true,
+      "text": "Before a decision affects several people, how likely are you to dismiss feelings as irrelevant to how the team functions?"
+    },
+    {
+      "id": 371,
+      "category": "empathy",
+      "reverse": false,
+      "text": "When an unexpected problem appears, how likely are you to consider the pressures affecting a teammate’s behaviour?"
+    },
+    {
+      "id": 372,
+      "category": "empathy",
+      "reverse": true,
+      "text": "During remote or hybrid teamwork, how likely are you to assume a teammate’s difficulty reflects laziness immediately?"
+    },
+    {
+      "id": 373,
+      "category": "empathy",
+      "reverse": false,
+      "text": "When roles overlap, how likely are you to recognise another perspective without needing to agree?"
+    },
+    {
+      "id": 374,
+      "category": "empathy",
+      "reverse": true,
+      "text": "At the end of a project, how likely are you to dismiss feelings as irrelevant to how the team functions?"
+    },
+    {
+      "id": 375,
+      "category": "empathy",
+      "reverse": false,
+      "text": "Across repeated team experiences, how likely are you to consider the pressures affecting a teammate’s behaviour?"
+    },
+    {
+      "id": 376,
+      "category": "decision_making",
+      "reverse": false,
+      "text": "When a new team begins working together, how likely are you to seek relevant input before a decision affects the team?"
+    },
+    {
+      "id": 377,
+      "category": "decision_making",
+      "reverse": true,
+      "text": "During a busy project week, how likely are you to make team-wide decisions without involving affected people?"
+    },
+    {
+      "id": 378,
+      "category": "decision_making",
+      "reverse": false,
+      "text": "When priorities suddenly change, how likely are you to support an agreed decision after concerns have been heard?"
+    },
+    {
+      "id": 379,
+      "category": "decision_making",
+      "reverse": true,
+      "text": "While responsibilities are being assigned, how likely are you to undermine a fair decision because your option was not selected?"
+    },
+    {
+      "id": 380,
+      "category": "decision_making",
+      "reverse": false,
+      "text": "When a teammate asks for support, how likely are you to seek relevant input before a decision affects the team?"
+    },
+    {
+      "id": 381,
+      "category": "decision_making",
+      "reverse": true,
+      "text": "After an important mistake occurs, how likely are you to make team-wide decisions without involving affected people?"
+    },
+    {
+      "id": 382,
+      "category": "decision_making",
+      "reverse": false,
+      "text": "During a team meeting, how likely are you to support an agreed decision after concerns have been heard?"
+    },
+    {
+      "id": 383,
+      "category": "decision_making",
+      "reverse": true,
+      "text": "When opinions differ strongly, how likely are you to undermine a fair decision because your option was not selected?"
+    },
+    {
+      "id": 384,
+      "category": "decision_making",
+      "reverse": false,
+      "text": "As a deadline approaches, how likely are you to seek relevant input before a decision affects the team?"
+    },
+    {
+      "id": 385,
+      "category": "decision_making",
+      "reverse": true,
+      "text": "When progress is slower than expected, how likely are you to make team-wide decisions without involving affected people?"
+    },
+    {
+      "id": 386,
+      "category": "decision_making",
+      "reverse": false,
+      "text": "While working with a new colleague, how likely are you to support an agreed decision after concerns have been heard?"
+    },
+    {
+      "id": 387,
+      "category": "decision_making",
+      "reverse": true,
+      "text": "When information is incomplete, how likely are you to undermine a fair decision because your option was not selected?"
+    },
+    {
+      "id": 388,
+      "category": "decision_making",
+      "reverse": false,
+      "text": "After receiving difficult feedback, how likely are you to seek relevant input before a decision affects the team?"
+    },
+    {
+      "id": 389,
+      "category": "decision_making",
+      "reverse": true,
+      "text": "When another person’s idea is selected, how likely are you to make team-wide decisions without involving affected people?"
+    },
+    {
+      "id": 390,
+      "category": "decision_making",
+      "reverse": false,
+      "text": "During a stressful period, how likely are you to support an agreed decision after concerns have been heard?"
+    },
+    {
+      "id": 391,
+      "category": "decision_making",
+      "reverse": true,
+      "text": "When the team succeeds, how likely are you to undermine a fair decision because your option was not selected?"
+    },
+    {
+      "id": 392,
+      "category": "decision_making",
+      "reverse": false,
+      "text": "When the team falls short, how likely are you to seek relevant input before a decision affects the team?"
+    },
+    {
+      "id": 393,
+      "category": "decision_making",
+      "reverse": true,
+      "text": "While coordinating connected tasks, how likely are you to make team-wide decisions without involving affected people?"
+    },
+    {
+      "id": 394,
+      "category": "decision_making",
+      "reverse": false,
+      "text": "When someone has not spoken in the discussion, how likely are you to support an agreed decision after concerns have been heard?"
+    },
+    {
+      "id": 395,
+      "category": "decision_making",
+      "reverse": true,
+      "text": "Before a decision affects several people, how likely are you to undermine a fair decision because your option was not selected?"
+    },
+    {
+      "id": 396,
+      "category": "decision_making",
+      "reverse": false,
+      "text": "When an unexpected problem appears, how likely are you to seek relevant input before a decision affects the team?"
+    },
+    {
+      "id": 397,
+      "category": "decision_making",
+      "reverse": true,
+      "text": "During remote or hybrid teamwork, how likely are you to make team-wide decisions without involving affected people?"
+    },
+    {
+      "id": 398,
+      "category": "decision_making",
+      "reverse": false,
+      "text": "When roles overlap, how likely are you to support an agreed decision after concerns have been heard?"
+    },
+    {
+      "id": 399,
+      "category": "decision_making",
+      "reverse": true,
+      "text": "At the end of a project, how likely are you to undermine a fair decision because your option was not selected?"
+    },
+    {
+      "id": 400,
+      "category": "decision_making",
+      "reverse": false,
+      "text": "Across repeated team experiences, how likely are you to seek relevant input before a decision affects the team?"
+    },
+    {
+      "id": 401,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "When a new team begins working together, how likely are you to define a shared problem before choosing a solution?"
+    },
+    {
+      "id": 402,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "During a busy project week, how likely are you to push your preferred solution before understanding the problem?"
+    },
+    {
+      "id": 403,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "When priorities suddenly change, how likely are you to combine teammates’ ideas into a stronger option?"
+    },
+    {
+      "id": 404,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "While responsibilities are being assigned, how likely are you to reject a useful idea because someone else proposed it?"
+    },
+    {
+      "id": 405,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "When a teammate asks for support, how likely are you to define a shared problem before choosing a solution?"
+    },
+    {
+      "id": 406,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "After an important mistake occurs, how likely are you to push your preferred solution before understanding the problem?"
+    },
+    {
+      "id": 407,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "During a team meeting, how likely are you to combine teammates’ ideas into a stronger option?"
+    },
+    {
+      "id": 408,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "When opinions differ strongly, how likely are you to reject a useful idea because someone else proposed it?"
+    },
+    {
+      "id": 409,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "As a deadline approaches, how likely are you to define a shared problem before choosing a solution?"
+    },
+    {
+      "id": 410,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "When progress is slower than expected, how likely are you to push your preferred solution before understanding the problem?"
+    },
+    {
+      "id": 411,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "While working with a new colleague, how likely are you to combine teammates’ ideas into a stronger option?"
+    },
+    {
+      "id": 412,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "When information is incomplete, how likely are you to reject a useful idea because someone else proposed it?"
+    },
+    {
+      "id": 413,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "After receiving difficult feedback, how likely are you to define a shared problem before choosing a solution?"
+    },
+    {
+      "id": 414,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "When another person’s idea is selected, how likely are you to push your preferred solution before understanding the problem?"
+    },
+    {
+      "id": 415,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "During a stressful period, how likely are you to combine teammates’ ideas into a stronger option?"
+    },
+    {
+      "id": 416,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "When the team succeeds, how likely are you to reject a useful idea because someone else proposed it?"
+    },
+    {
+      "id": 417,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "When the team falls short, how likely are you to define a shared problem before choosing a solution?"
+    },
+    {
+      "id": 418,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "While coordinating connected tasks, how likely are you to push your preferred solution before understanding the problem?"
+    },
+    {
+      "id": 419,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "When someone has not spoken in the discussion, how likely are you to combine teammates’ ideas into a stronger option?"
+    },
+    {
+      "id": 420,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "Before a decision affects several people, how likely are you to reject a useful idea because someone else proposed it?"
+    },
+    {
+      "id": 421,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "When an unexpected problem appears, how likely are you to define a shared problem before choosing a solution?"
+    },
+    {
+      "id": 422,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "During remote or hybrid teamwork, how likely are you to push your preferred solution before understanding the problem?"
+    },
+    {
+      "id": 423,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "When roles overlap, how likely are you to combine teammates’ ideas into a stronger option?"
+    },
+    {
+      "id": 424,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "At the end of a project, how likely are you to reject a useful idea because someone else proposed it?"
+    },
+    {
+      "id": 425,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "Across repeated team experiences, how likely are you to define a shared problem before choosing a solution?"
+    },
+    {
+      "id": 426,
+      "category": "initiative",
+      "reverse": false,
+      "text": "When a new team begins working together, how likely are you to take useful initiative without bypassing needed coordination?"
+    },
+    {
+      "id": 427,
+      "category": "initiative",
+      "reverse": true,
+      "text": "During a busy project week, how likely are you to wait passively for instructions when responsible action is clear?"
+    },
+    {
+      "id": 428,
+      "category": "initiative",
+      "reverse": false,
+      "text": "When priorities suddenly change, how likely are you to notice and address an unassigned task that affects the team?"
+    },
+    {
+      "id": 429,
+      "category": "initiative",
+      "reverse": true,
+      "text": "While responsibilities are being assigned, how likely are you to take over work mainly to control how others contribute?"
+    },
+    {
+      "id": 430,
+      "category": "initiative",
+      "reverse": false,
+      "text": "When a teammate asks for support, how likely are you to take useful initiative without bypassing needed coordination?"
+    },
+    {
+      "id": 431,
+      "category": "initiative",
+      "reverse": true,
+      "text": "After an important mistake occurs, how likely are you to wait passively for instructions when responsible action is clear?"
+    },
+    {
+      "id": 432,
+      "category": "initiative",
+      "reverse": false,
+      "text": "During a team meeting, how likely are you to notice and address an unassigned task that affects the team?"
+    },
+    {
+      "id": 433,
+      "category": "initiative",
+      "reverse": true,
+      "text": "When opinions differ strongly, how likely are you to take over work mainly to control how others contribute?"
+    },
+    {
+      "id": 434,
+      "category": "initiative",
+      "reverse": false,
+      "text": "As a deadline approaches, how likely are you to take useful initiative without bypassing needed coordination?"
+    },
+    {
+      "id": 435,
+      "category": "initiative",
+      "reverse": true,
+      "text": "When progress is slower than expected, how likely are you to wait passively for instructions when responsible action is clear?"
+    },
+    {
+      "id": 436,
+      "category": "initiative",
+      "reverse": false,
+      "text": "While working with a new colleague, how likely are you to notice and address an unassigned task that affects the team?"
+    },
+    {
+      "id": 437,
+      "category": "initiative",
+      "reverse": true,
+      "text": "When information is incomplete, how likely are you to take over work mainly to control how others contribute?"
+    },
+    {
+      "id": 438,
+      "category": "initiative",
+      "reverse": false,
+      "text": "After receiving difficult feedback, how likely are you to take useful initiative without bypassing needed coordination?"
+    },
+    {
+      "id": 439,
+      "category": "initiative",
+      "reverse": true,
+      "text": "When another person’s idea is selected, how likely are you to wait passively for instructions when responsible action is clear?"
+    },
+    {
+      "id": 440,
+      "category": "initiative",
+      "reverse": false,
+      "text": "During a stressful period, how likely are you to notice and address an unassigned task that affects the team?"
+    },
+    {
+      "id": 441,
+      "category": "initiative",
+      "reverse": true,
+      "text": "When the team succeeds, how likely are you to take over work mainly to control how others contribute?"
+    },
+    {
+      "id": 442,
+      "category": "initiative",
+      "reverse": false,
+      "text": "When the team falls short, how likely are you to take useful initiative without bypassing needed coordination?"
+    },
+    {
+      "id": 443,
+      "category": "initiative",
+      "reverse": true,
+      "text": "While coordinating connected tasks, how likely are you to wait passively for instructions when responsible action is clear?"
+    },
+    {
+      "id": 444,
+      "category": "initiative",
+      "reverse": false,
+      "text": "When someone has not spoken in the discussion, how likely are you to notice and address an unassigned task that affects the team?"
+    },
+    {
+      "id": 445,
+      "category": "initiative",
+      "reverse": true,
+      "text": "Before a decision affects several people, how likely are you to take over work mainly to control how others contribute?"
+    },
+    {
+      "id": 446,
+      "category": "initiative",
+      "reverse": false,
+      "text": "When an unexpected problem appears, how likely are you to take useful initiative without bypassing needed coordination?"
+    },
+    {
+      "id": 447,
+      "category": "initiative",
+      "reverse": true,
+      "text": "During remote or hybrid teamwork, how likely are you to wait passively for instructions when responsible action is clear?"
+    },
+    {
+      "id": 448,
+      "category": "initiative",
+      "reverse": false,
+      "text": "When roles overlap, how likely are you to notice and address an unassigned task that affects the team?"
+    },
+    {
+      "id": 449,
+      "category": "initiative",
+      "reverse": true,
+      "text": "At the end of a project, how likely are you to take over work mainly to control how others contribute?"
+    },
+    {
+      "id": 450,
+      "category": "initiative",
+      "reverse": false,
+      "text": "Across repeated team experiences, how likely are you to take useful initiative without bypassing needed coordination?"
+    },
+    {
+      "id": 451,
+      "category": "recognition",
+      "reverse": false,
+      "text": "When a new team begins working together, how likely are you to recognise teammates’ contributions accurately?"
+    },
+    {
+      "id": 452,
+      "category": "recognition",
+      "reverse": true,
+      "text": "During a busy project week, how likely are you to claim disproportionate credit for a team success?"
+    },
+    {
+      "id": 453,
+      "category": "recognition",
+      "reverse": false,
+      "text": "When priorities suddenly change, how likely are you to share credit for outcomes created through joint effort?"
+    },
+    {
+      "id": 454,
+      "category": "recognition",
+      "reverse": true,
+      "text": "While responsibilities are being assigned, how likely are you to notice mistakes more readily than others’ useful contributions?"
+    },
+    {
+      "id": 455,
+      "category": "recognition",
+      "reverse": false,
+      "text": "When a teammate asks for support, how likely are you to recognise teammates’ contributions accurately?"
+    },
+    {
+      "id": 456,
+      "category": "recognition",
+      "reverse": true,
+      "text": "After an important mistake occurs, how likely are you to claim disproportionate credit for a team success?"
+    },
+    {
+      "id": 457,
+      "category": "recognition",
+      "reverse": false,
+      "text": "During a team meeting, how likely are you to share credit for outcomes created through joint effort?"
+    },
+    {
+      "id": 458,
+      "category": "recognition",
+      "reverse": true,
+      "text": "When opinions differ strongly, how likely are you to notice mistakes more readily than others’ useful contributions?"
+    },
+    {
+      "id": 459,
+      "category": "recognition",
+      "reverse": false,
+      "text": "As a deadline approaches, how likely are you to recognise teammates’ contributions accurately?"
+    },
+    {
+      "id": 460,
+      "category": "recognition",
+      "reverse": true,
+      "text": "When progress is slower than expected, how likely are you to claim disproportionate credit for a team success?"
+    },
+    {
+      "id": 461,
+      "category": "recognition",
+      "reverse": false,
+      "text": "While working with a new colleague, how likely are you to share credit for outcomes created through joint effort?"
+    },
+    {
+      "id": 462,
+      "category": "recognition",
+      "reverse": true,
+      "text": "When information is incomplete, how likely are you to notice mistakes more readily than others’ useful contributions?"
+    },
+    {
+      "id": 463,
+      "category": "recognition",
+      "reverse": false,
+      "text": "After receiving difficult feedback, how likely are you to recognise teammates’ contributions accurately?"
+    },
+    {
+      "id": 464,
+      "category": "recognition",
+      "reverse": true,
+      "text": "When another person’s idea is selected, how likely are you to claim disproportionate credit for a team success?"
+    },
+    {
+      "id": 465,
+      "category": "recognition",
+      "reverse": false,
+      "text": "During a stressful period, how likely are you to share credit for outcomes created through joint effort?"
+    },
+    {
+      "id": 466,
+      "category": "recognition",
+      "reverse": true,
+      "text": "When the team succeeds, how likely are you to notice mistakes more readily than others’ useful contributions?"
+    },
+    {
+      "id": 467,
+      "category": "recognition",
+      "reverse": false,
+      "text": "When the team falls short, how likely are you to recognise teammates’ contributions accurately?"
+    },
+    {
+      "id": 468,
+      "category": "recognition",
+      "reverse": true,
+      "text": "While coordinating connected tasks, how likely are you to claim disproportionate credit for a team success?"
+    },
+    {
+      "id": 469,
+      "category": "recognition",
+      "reverse": false,
+      "text": "When someone has not spoken in the discussion, how likely are you to share credit for outcomes created through joint effort?"
+    },
+    {
+      "id": 470,
+      "category": "recognition",
+      "reverse": true,
+      "text": "Before a decision affects several people, how likely are you to notice mistakes more readily than others’ useful contributions?"
+    },
+    {
+      "id": 471,
+      "category": "recognition",
+      "reverse": false,
+      "text": "When an unexpected problem appears, how likely are you to recognise teammates’ contributions accurately?"
+    },
+    {
+      "id": 472,
+      "category": "recognition",
+      "reverse": true,
+      "text": "During remote or hybrid teamwork, how likely are you to claim disproportionate credit for a team success?"
+    },
+    {
+      "id": 473,
+      "category": "recognition",
+      "reverse": false,
+      "text": "When roles overlap, how likely are you to share credit for outcomes created through joint effort?"
+    },
+    {
+      "id": 474,
+      "category": "recognition",
+      "reverse": true,
+      "text": "At the end of a project, how likely are you to notice mistakes more readily than others’ useful contributions?"
+    },
+    {
+      "id": 475,
+      "category": "recognition",
+      "reverse": false,
+      "text": "Across repeated team experiences, how likely are you to recognise teammates’ contributions accurately?"
+    },
+    {
+      "id": 476,
+      "category": "learning",
+      "reverse": false,
+      "text": "When a new team begins working together, how likely are you to reflect with the team on what should improve next time?"
+    },
+    {
+      "id": 477,
+      "category": "learning",
+      "reverse": true,
+      "text": "During a busy project week, how likely are you to repeat a weak process because reviewing it feels uncomfortable?"
+    },
+    {
+      "id": 478,
+      "category": "learning",
+      "reverse": false,
+      "text": "When priorities suddenly change, how likely are you to turn lessons from setbacks into a better shared process?"
+    },
+    {
+      "id": 479,
+      "category": "learning",
+      "reverse": true,
+      "text": "While responsibilities are being assigned, how likely are you to treat every setback as someone’s fault instead of a learning source?"
+    },
+    {
+      "id": 480,
+      "category": "learning",
+      "reverse": false,
+      "text": "When a teammate asks for support, how likely are you to reflect with the team on what should improve next time?"
+    },
+    {
+      "id": 481,
+      "category": "learning",
+      "reverse": true,
+      "text": "After an important mistake occurs, how likely are you to repeat a weak process because reviewing it feels uncomfortable?"
+    },
+    {
+      "id": 482,
+      "category": "learning",
+      "reverse": false,
+      "text": "During a team meeting, how likely are you to turn lessons from setbacks into a better shared process?"
+    },
+    {
+      "id": 483,
+      "category": "learning",
+      "reverse": true,
+      "text": "When opinions differ strongly, how likely are you to treat every setback as someone’s fault instead of a learning source?"
+    },
+    {
+      "id": 484,
+      "category": "learning",
+      "reverse": false,
+      "text": "As a deadline approaches, how likely are you to reflect with the team on what should improve next time?"
+    },
+    {
+      "id": 485,
+      "category": "learning",
+      "reverse": true,
+      "text": "When progress is slower than expected, how likely are you to repeat a weak process because reviewing it feels uncomfortable?"
+    },
+    {
+      "id": 486,
+      "category": "learning",
+      "reverse": false,
+      "text": "While working with a new colleague, how likely are you to turn lessons from setbacks into a better shared process?"
+    },
+    {
+      "id": 487,
+      "category": "learning",
+      "reverse": true,
+      "text": "When information is incomplete, how likely are you to treat every setback as someone’s fault instead of a learning source?"
+    },
+    {
+      "id": 488,
+      "category": "learning",
+      "reverse": false,
+      "text": "After receiving difficult feedback, how likely are you to reflect with the team on what should improve next time?"
+    },
+    {
+      "id": 489,
+      "category": "learning",
+      "reverse": true,
+      "text": "When another person’s idea is selected, how likely are you to repeat a weak process because reviewing it feels uncomfortable?"
+    },
+    {
+      "id": 490,
+      "category": "learning",
+      "reverse": false,
+      "text": "During a stressful period, how likely are you to turn lessons from setbacks into a better shared process?"
+    },
+    {
+      "id": 491,
+      "category": "learning",
+      "reverse": true,
+      "text": "When the team succeeds, how likely are you to treat every setback as someone’s fault instead of a learning source?"
+    },
+    {
+      "id": 492,
+      "category": "learning",
+      "reverse": false,
+      "text": "When the team falls short, how likely are you to reflect with the team on what should improve next time?"
+    },
+    {
+      "id": 493,
+      "category": "learning",
+      "reverse": true,
+      "text": "While coordinating connected tasks, how likely are you to repeat a weak process because reviewing it feels uncomfortable?"
+    },
+    {
+      "id": 494,
+      "category": "learning",
+      "reverse": false,
+      "text": "When someone has not spoken in the discussion, how likely are you to turn lessons from setbacks into a better shared process?"
+    },
+    {
+      "id": 495,
+      "category": "learning",
+      "reverse": true,
+      "text": "Before a decision affects several people, how likely are you to treat every setback as someone’s fault instead of a learning source?"
+    },
+    {
+      "id": 496,
+      "category": "learning",
+      "reverse": false,
+      "text": "When an unexpected problem appears, how likely are you to reflect with the team on what should improve next time?"
+    },
+    {
+      "id": 497,
+      "category": "learning",
+      "reverse": true,
+      "text": "During remote or hybrid teamwork, how likely are you to repeat a weak process because reviewing it feels uncomfortable?"
+    },
+    {
+      "id": 498,
+      "category": "learning",
+      "reverse": false,
+      "text": "When roles overlap, how likely are you to turn lessons from setbacks into a better shared process?"
+    },
+    {
+      "id": 499,
+      "category": "learning",
+      "reverse": true,
+      "text": "At the end of a project, how likely are you to treat every setback as someone’s fault instead of a learning source?"
+    },
+    {
+      "id": 500,
+      "category": "learning",
+      "reverse": false,
+      "text": "Across repeated team experiences, how likely are you to reflect with the team on what should improve next time?"
+    }
+  ]
+}

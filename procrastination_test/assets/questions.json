@@ -1,0 +1,3160 @@
+{
+  "meta": {
+    "title": "Procrastination Test",
+    "description": "A detailed 500-question reflection across 20 dimensions of procrastination.",
+    "scale": {
+      "min": 1,
+      "max": 10,
+      "minLabel": "Not at all likely",
+      "maxLabel": "Extremely likely"
+    },
+    "categories": [
+      {
+        "id": "task_initiation",
+        "label": "Task Initiation",
+        "icon": "🚦"
+      },
+      {
+        "id": "decision_delay",
+        "label": "Decision Procrastination",
+        "icon": "🔀"
+      },
+      {
+        "id": "task_aversiveness",
+        "label": "Task Aversiveness",
+        "icon": "🙈"
+      },
+      {
+        "id": "fear_failure",
+        "label": "Fear of Failure",
+        "icon": "⚠️"
+      },
+      {
+        "id": "perfectionism",
+        "label": "Perfectionistic Delay",
+        "icon": "💎"
+      },
+      {
+        "id": "self_efficacy",
+        "label": "Low Task Confidence",
+        "icon": "🪫"
+      },
+      {
+        "id": "overwhelm",
+        "label": "Overwhelm & Task Size",
+        "icon": "🌊"
+      },
+      {
+        "id": "unclear_tasks",
+        "label": "Unclear Goals & Next Steps",
+        "icon": "🌫️"
+      },
+      {
+        "id": "priority_avoidance",
+        "label": "Priority Avoidance",
+        "icon": "🎯"
+      },
+      {
+        "id": "digital_distraction",
+        "label": "Digital Distraction",
+        "icon": "📱"
+      },
+      {
+        "id": "impulsivity",
+        "label": "Immediate-Reward Preference",
+        "icon": "🍬"
+      },
+      {
+        "id": "mood_regulation",
+        "label": "Mood-Regulation Delay",
+        "icon": "🎭"
+      },
+      {
+        "id": "time_discounting",
+        "label": "Future-Time Discounting",
+        "icon": "🔭"
+      },
+      {
+        "id": "deadline_dependence",
+        "label": "Deadline Dependence",
+        "icon": "⏰"
+      },
+      {
+        "id": "planning_gap",
+        "label": "Intention–Action Gap",
+        "icon": "📝"
+      },
+      {
+        "id": "persistence",
+        "label": "Persistence After Starting",
+        "icon": "🧗"
+      },
+      {
+        "id": "accountability",
+        "label": "Accountability Avoidance",
+        "icon": "🤝"
+      },
+      {
+        "id": "environment",
+        "label": "Environmental Triggers",
+        "icon": "🏠"
+      },
+      {
+        "id": "self_criticism",
+        "label": "Self-Criticism & Recovery",
+        "icon": "💬"
+      },
+      {
+        "id": "functional_impact",
+        "label": "Daily-Life Impact",
+        "icon": "📉"
+      }
+    ],
+    "levels": [
+      {
+        "min": 9,
+        "max": 10.01,
+        "label": "Very High Procrastination Pattern",
+        "emoji": "🛑",
+        "desc": "Delay appears frequent, wide-ranging, and disruptive across several mechanisms. Focused support and a small structured starting plan may be valuable."
+      },
+      {
+        "min": 7.5,
+        "max": 9,
+        "label": "High Procrastination Pattern",
+        "emoji": "⚠️",
+        "desc": "You report substantial delay habits involving initiation, discomfort, distraction, or deadline dependence across many situations."
+      },
+      {
+        "min": 6,
+        "max": 7.5,
+        "label": "Moderate Procrastination Pattern",
+        "emoji": "⏳",
+        "desc": "Procrastination affects a meaningful set of situations, alongside some useful action and recovery skills."
+      },
+      {
+        "min": 4.5,
+        "max": 6,
+        "label": "Situational Procrastination",
+        "emoji": "🌤️",
+        "desc": "Delay occurs in particular contexts or task types, but it does not appear equally strong across every dimension."
+      },
+      {
+        "min": 3,
+        "max": 4.5,
+        "label": "Low Procrastination Pattern",
+        "emoji": "🌱",
+        "desc": "You report relatively few persistent delay habits and generally use constructive ways to begin or resume work."
+      },
+      {
+        "min": 1,
+        "max": 3,
+        "label": "Very Low Procrastination Pattern",
+        "emoji": "✅",
+        "desc": "Your responses suggest timely initiation, limited avoidance, and strong recovery habits across most situations."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "category": "task_initiation",
+      "reverse": false,
+      "text": "When an important task first appears, how likely are you to delay taking the first meaningful step?"
+    },
+    {
+      "id": 2,
+      "category": "task_initiation",
+      "reverse": true,
+      "text": "When you have enough information to proceed, how likely are you to begin with a small concrete action?"
+    },
+    {
+      "id": 3,
+      "category": "task_initiation",
+      "reverse": false,
+      "text": "At the start of a normal day, how likely are you to keep preparing instead of actually beginning?"
+    },
+    {
+      "id": 4,
+      "category": "task_initiation",
+      "reverse": true,
+      "text": "When a task feels boring, how likely are you to start within a reasonable time even without strong motivation?"
+    },
+    {
+      "id": 5,
+      "category": "task_initiation",
+      "reverse": false,
+      "text": "When your work may be evaluated, how likely are you to delay taking the first meaningful step?"
+    },
+    {
+      "id": 6,
+      "category": "task_initiation",
+      "reverse": true,
+      "text": "Before a distant deadline, how likely are you to begin with a small concrete action?"
+    },
+    {
+      "id": 7,
+      "category": "task_initiation",
+      "reverse": false,
+      "text": "When several options are available, how likely are you to keep preparing instead of actually beginning?"
+    },
+    {
+      "id": 8,
+      "category": "task_initiation",
+      "reverse": true,
+      "text": "After making a detailed plan, how likely are you to start within a reasonable time even without strong motivation?"
+    },
+    {
+      "id": 9,
+      "category": "task_initiation",
+      "reverse": false,
+      "text": "When a project feels large, how likely are you to delay taking the first meaningful step?"
+    },
+    {
+      "id": 10,
+      "category": "task_initiation",
+      "reverse": true,
+      "text": "During an uncomfortable emotion, how likely are you to begin with a small concrete action?"
+    },
+    {
+      "id": 11,
+      "category": "task_initiation",
+      "reverse": false,
+      "text": "When your phone is nearby, how likely are you to keep preparing instead of actually beginning?"
+    },
+    {
+      "id": 12,
+      "category": "task_initiation",
+      "reverse": true,
+      "text": "After completing an easier task, how likely are you to start within a reasonable time even without strong motivation?"
+    },
+    {
+      "id": 13,
+      "category": "task_initiation",
+      "reverse": false,
+      "text": "When motivation is low, how likely are you to delay taking the first meaningful step?"
+    },
+    {
+      "id": 14,
+      "category": "task_initiation",
+      "reverse": true,
+      "text": "When nobody is monitoring progress, how likely are you to begin with a small concrete action?"
+    },
+    {
+      "id": 15,
+      "category": "task_initiation",
+      "reverse": false,
+      "text": "After missing an intended start time, how likely are you to keep preparing instead of actually beginning?"
+    },
+    {
+      "id": 16,
+      "category": "task_initiation",
+      "reverse": true,
+      "text": "When a tempting activity appears, how likely are you to start within a reasonable time even without strong motivation?"
+    },
+    {
+      "id": 17,
+      "category": "task_initiation",
+      "reverse": false,
+      "text": "While thinking about tomorrow, how likely are you to delay taking the first meaningful step?"
+    },
+    {
+      "id": 18,
+      "category": "task_initiation",
+      "reverse": true,
+      "text": "When a task becomes difficult, how likely are you to begin with a small concrete action?"
+    },
+    {
+      "id": 19,
+      "category": "task_initiation",
+      "reverse": false,
+      "text": "After receiving critical feedback, how likely are you to keep preparing instead of actually beginning?"
+    },
+    {
+      "id": 20,
+      "category": "task_initiation",
+      "reverse": true,
+      "text": "When the deadline begins to feel urgent, how likely are you to start within a reasonable time even without strong motivation?"
+    },
+    {
+      "id": 21,
+      "category": "task_initiation",
+      "reverse": false,
+      "text": "During a busy school or work week, how likely are you to delay taking the first meaningful step?"
+    },
+    {
+      "id": 22,
+      "category": "task_initiation",
+      "reverse": true,
+      "text": "When returning to unfinished work, how likely are you to begin with a small concrete action?"
+    },
+    {
+      "id": 23,
+      "category": "task_initiation",
+      "reverse": false,
+      "text": "After noticing that you delayed again, how likely are you to keep preparing instead of actually beginning?"
+    },
+    {
+      "id": 24,
+      "category": "task_initiation",
+      "reverse": true,
+      "text": "When planning the next action, how likely are you to start within a reasonable time even without strong motivation?"
+    },
+    {
+      "id": 25,
+      "category": "task_initiation",
+      "reverse": false,
+      "text": "Across repeated responsibilities, how likely are you to delay taking the first meaningful step?"
+    },
+    {
+      "id": 26,
+      "category": "decision_delay",
+      "reverse": false,
+      "text": "When an important task first appears, how likely are you to postpone a decision after enough information is available?"
+    },
+    {
+      "id": 27,
+      "category": "decision_delay",
+      "reverse": true,
+      "text": "When you have enough information to proceed, how likely are you to make a timely decision using the available evidence?"
+    },
+    {
+      "id": 28,
+      "category": "decision_delay",
+      "reverse": false,
+      "text": "At the start of a normal day, how likely are you to keep comparing options to avoid committing?"
+    },
+    {
+      "id": 29,
+      "category": "decision_delay",
+      "reverse": true,
+      "text": "When a task feels boring, how likely are you to set a reasonable limit for considering options?"
+    },
+    {
+      "id": 30,
+      "category": "decision_delay",
+      "reverse": false,
+      "text": "When your work may be evaluated, how likely are you to postpone a decision after enough information is available?"
+    },
+    {
+      "id": 31,
+      "category": "decision_delay",
+      "reverse": true,
+      "text": "Before a distant deadline, how likely are you to make a timely decision using the available evidence?"
+    },
+    {
+      "id": 32,
+      "category": "decision_delay",
+      "reverse": false,
+      "text": "When several options are available, how likely are you to keep comparing options to avoid committing?"
+    },
+    {
+      "id": 33,
+      "category": "decision_delay",
+      "reverse": true,
+      "text": "After making a detailed plan, how likely are you to set a reasonable limit for considering options?"
+    },
+    {
+      "id": 34,
+      "category": "decision_delay",
+      "reverse": false,
+      "text": "When a project feels large, how likely are you to postpone a decision after enough information is available?"
+    },
+    {
+      "id": 35,
+      "category": "decision_delay",
+      "reverse": true,
+      "text": "During an uncomfortable emotion, how likely are you to make a timely decision using the available evidence?"
+    },
+    {
+      "id": 36,
+      "category": "decision_delay",
+      "reverse": false,
+      "text": "When your phone is nearby, how likely are you to keep comparing options to avoid committing?"
+    },
+    {
+      "id": 37,
+      "category": "decision_delay",
+      "reverse": true,
+      "text": "After completing an easier task, how likely are you to set a reasonable limit for considering options?"
+    },
+    {
+      "id": 38,
+      "category": "decision_delay",
+      "reverse": false,
+      "text": "When motivation is low, how likely are you to postpone a decision after enough information is available?"
+    },
+    {
+      "id": 39,
+      "category": "decision_delay",
+      "reverse": true,
+      "text": "When nobody is monitoring progress, how likely are you to make a timely decision using the available evidence?"
+    },
+    {
+      "id": 40,
+      "category": "decision_delay",
+      "reverse": false,
+      "text": "After missing an intended start time, how likely are you to keep comparing options to avoid committing?"
+    },
+    {
+      "id": 41,
+      "category": "decision_delay",
+      "reverse": true,
+      "text": "When a tempting activity appears, how likely are you to set a reasonable limit for considering options?"
+    },
+    {
+      "id": 42,
+      "category": "decision_delay",
+      "reverse": false,
+      "text": "While thinking about tomorrow, how likely are you to postpone a decision after enough information is available?"
+    },
+    {
+      "id": 43,
+      "category": "decision_delay",
+      "reverse": true,
+      "text": "When a task becomes difficult, how likely are you to make a timely decision using the available evidence?"
+    },
+    {
+      "id": 44,
+      "category": "decision_delay",
+      "reverse": false,
+      "text": "After receiving critical feedback, how likely are you to keep comparing options to avoid committing?"
+    },
+    {
+      "id": 45,
+      "category": "decision_delay",
+      "reverse": true,
+      "text": "When the deadline begins to feel urgent, how likely are you to set a reasonable limit for considering options?"
+    },
+    {
+      "id": 46,
+      "category": "decision_delay",
+      "reverse": false,
+      "text": "During a busy school or work week, how likely are you to postpone a decision after enough information is available?"
+    },
+    {
+      "id": 47,
+      "category": "decision_delay",
+      "reverse": true,
+      "text": "When returning to unfinished work, how likely are you to make a timely decision using the available evidence?"
+    },
+    {
+      "id": 48,
+      "category": "decision_delay",
+      "reverse": false,
+      "text": "After noticing that you delayed again, how likely are you to keep comparing options to avoid committing?"
+    },
+    {
+      "id": 49,
+      "category": "decision_delay",
+      "reverse": true,
+      "text": "When planning the next action, how likely are you to set a reasonable limit for considering options?"
+    },
+    {
+      "id": 50,
+      "category": "decision_delay",
+      "reverse": false,
+      "text": "Across repeated responsibilities, how likely are you to postpone a decision after enough information is available?"
+    },
+    {
+      "id": 51,
+      "category": "task_aversiveness",
+      "reverse": false,
+      "text": "When an important task first appears, how likely are you to avoid the task because it feels boring or unpleasant?"
+    },
+    {
+      "id": 52,
+      "category": "task_aversiveness",
+      "reverse": true,
+      "text": "When you have enough information to proceed, how likely are you to work on an unpleasant task despite discomfort?"
+    },
+    {
+      "id": 53,
+      "category": "task_aversiveness",
+      "reverse": false,
+      "text": "At the start of a normal day, how likely are you to choose easier activity to escape discomfort?"
+    },
+    {
+      "id": 54,
+      "category": "task_aversiveness",
+      "reverse": true,
+      "text": "When a task feels boring, how likely are you to make the task more manageable without avoiding it?"
+    },
+    {
+      "id": 55,
+      "category": "task_aversiveness",
+      "reverse": false,
+      "text": "When your work may be evaluated, how likely are you to avoid the task because it feels boring or unpleasant?"
+    },
+    {
+      "id": 56,
+      "category": "task_aversiveness",
+      "reverse": true,
+      "text": "Before a distant deadline, how likely are you to work on an unpleasant task despite discomfort?"
+    },
+    {
+      "id": 57,
+      "category": "task_aversiveness",
+      "reverse": false,
+      "text": "When several options are available, how likely are you to choose easier activity to escape discomfort?"
+    },
+    {
+      "id": 58,
+      "category": "task_aversiveness",
+      "reverse": true,
+      "text": "After making a detailed plan, how likely are you to make the task more manageable without avoiding it?"
+    },
+    {
+      "id": 59,
+      "category": "task_aversiveness",
+      "reverse": false,
+      "text": "When a project feels large, how likely are you to avoid the task because it feels boring or unpleasant?"
+    },
+    {
+      "id": 60,
+      "category": "task_aversiveness",
+      "reverse": true,
+      "text": "During an uncomfortable emotion, how likely are you to work on an unpleasant task despite discomfort?"
+    },
+    {
+      "id": 61,
+      "category": "task_aversiveness",
+      "reverse": false,
+      "text": "When your phone is nearby, how likely are you to choose easier activity to escape discomfort?"
+    },
+    {
+      "id": 62,
+      "category": "task_aversiveness",
+      "reverse": true,
+      "text": "After completing an easier task, how likely are you to make the task more manageable without avoiding it?"
+    },
+    {
+      "id": 63,
+      "category": "task_aversiveness",
+      "reverse": false,
+      "text": "When motivation is low, how likely are you to avoid the task because it feels boring or unpleasant?"
+    },
+    {
+      "id": 64,
+      "category": "task_aversiveness",
+      "reverse": true,
+      "text": "When nobody is monitoring progress, how likely are you to work on an unpleasant task despite discomfort?"
+    },
+    {
+      "id": 65,
+      "category": "task_aversiveness",
+      "reverse": false,
+      "text": "After missing an intended start time, how likely are you to choose easier activity to escape discomfort?"
+    },
+    {
+      "id": 66,
+      "category": "task_aversiveness",
+      "reverse": true,
+      "text": "When a tempting activity appears, how likely are you to make the task more manageable without avoiding it?"
+    },
+    {
+      "id": 67,
+      "category": "task_aversiveness",
+      "reverse": false,
+      "text": "While thinking about tomorrow, how likely are you to avoid the task because it feels boring or unpleasant?"
+    },
+    {
+      "id": 68,
+      "category": "task_aversiveness",
+      "reverse": true,
+      "text": "When a task becomes difficult, how likely are you to work on an unpleasant task despite discomfort?"
+    },
+    {
+      "id": 69,
+      "category": "task_aversiveness",
+      "reverse": false,
+      "text": "After receiving critical feedback, how likely are you to choose easier activity to escape discomfort?"
+    },
+    {
+      "id": 70,
+      "category": "task_aversiveness",
+      "reverse": true,
+      "text": "When the deadline begins to feel urgent, how likely are you to make the task more manageable without avoiding it?"
+    },
+    {
+      "id": 71,
+      "category": "task_aversiveness",
+      "reverse": false,
+      "text": "During a busy school or work week, how likely are you to avoid the task because it feels boring or unpleasant?"
+    },
+    {
+      "id": 72,
+      "category": "task_aversiveness",
+      "reverse": true,
+      "text": "When returning to unfinished work, how likely are you to work on an unpleasant task despite discomfort?"
+    },
+    {
+      "id": 73,
+      "category": "task_aversiveness",
+      "reverse": false,
+      "text": "After noticing that you delayed again, how likely are you to choose easier activity to escape discomfort?"
+    },
+    {
+      "id": 74,
+      "category": "task_aversiveness",
+      "reverse": true,
+      "text": "When planning the next action, how likely are you to make the task more manageable without avoiding it?"
+    },
+    {
+      "id": 75,
+      "category": "task_aversiveness",
+      "reverse": false,
+      "text": "Across repeated responsibilities, how likely are you to avoid the task because it feels boring or unpleasant?"
+    },
+    {
+      "id": 76,
+      "category": "fear_failure",
+      "reverse": false,
+      "text": "When an important task first appears, how likely are you to delay because beginning could expose possible failure?"
+    },
+    {
+      "id": 77,
+      "category": "fear_failure",
+      "reverse": true,
+      "text": "When you have enough information to proceed, how likely are you to act despite uncertainty about the outcome?"
+    },
+    {
+      "id": 78,
+      "category": "fear_failure",
+      "reverse": false,
+      "text": "At the start of a normal day, how likely are you to avoid submitting work that might be judged?"
+    },
+    {
+      "id": 79,
+      "category": "fear_failure",
+      "reverse": true,
+      "text": "When a task feels boring, how likely are you to treat a possible mistake as information rather than a verdict?"
+    },
+    {
+      "id": 80,
+      "category": "fear_failure",
+      "reverse": false,
+      "text": "When your work may be evaluated, how likely are you to delay because beginning could expose possible failure?"
+    },
+    {
+      "id": 81,
+      "category": "fear_failure",
+      "reverse": true,
+      "text": "Before a distant deadline, how likely are you to act despite uncertainty about the outcome?"
+    },
+    {
+      "id": 82,
+      "category": "fear_failure",
+      "reverse": false,
+      "text": "When several options are available, how likely are you to avoid submitting work that might be judged?"
+    },
+    {
+      "id": 83,
+      "category": "fear_failure",
+      "reverse": true,
+      "text": "After making a detailed plan, how likely are you to treat a possible mistake as information rather than a verdict?"
+    },
+    {
+      "id": 84,
+      "category": "fear_failure",
+      "reverse": false,
+      "text": "When a project feels large, how likely are you to delay because beginning could expose possible failure?"
+    },
+    {
+      "id": 85,
+      "category": "fear_failure",
+      "reverse": true,
+      "text": "During an uncomfortable emotion, how likely are you to act despite uncertainty about the outcome?"
+    },
+    {
+      "id": 86,
+      "category": "fear_failure",
+      "reverse": false,
+      "text": "When your phone is nearby, how likely are you to avoid submitting work that might be judged?"
+    },
+    {
+      "id": 87,
+      "category": "fear_failure",
+      "reverse": true,
+      "text": "After completing an easier task, how likely are you to treat a possible mistake as information rather than a verdict?"
+    },
+    {
+      "id": 88,
+      "category": "fear_failure",
+      "reverse": false,
+      "text": "When motivation is low, how likely are you to delay because beginning could expose possible failure?"
+    },
+    {
+      "id": 89,
+      "category": "fear_failure",
+      "reverse": true,
+      "text": "When nobody is monitoring progress, how likely are you to act despite uncertainty about the outcome?"
+    },
+    {
+      "id": 90,
+      "category": "fear_failure",
+      "reverse": false,
+      "text": "After missing an intended start time, how likely are you to avoid submitting work that might be judged?"
+    },
+    {
+      "id": 91,
+      "category": "fear_failure",
+      "reverse": true,
+      "text": "When a tempting activity appears, how likely are you to treat a possible mistake as information rather than a verdict?"
+    },
+    {
+      "id": 92,
+      "category": "fear_failure",
+      "reverse": false,
+      "text": "While thinking about tomorrow, how likely are you to delay because beginning could expose possible failure?"
+    },
+    {
+      "id": 93,
+      "category": "fear_failure",
+      "reverse": true,
+      "text": "When a task becomes difficult, how likely are you to act despite uncertainty about the outcome?"
+    },
+    {
+      "id": 94,
+      "category": "fear_failure",
+      "reverse": false,
+      "text": "After receiving critical feedback, how likely are you to avoid submitting work that might be judged?"
+    },
+    {
+      "id": 95,
+      "category": "fear_failure",
+      "reverse": true,
+      "text": "When the deadline begins to feel urgent, how likely are you to treat a possible mistake as information rather than a verdict?"
+    },
+    {
+      "id": 96,
+      "category": "fear_failure",
+      "reverse": false,
+      "text": "During a busy school or work week, how likely are you to delay because beginning could expose possible failure?"
+    },
+    {
+      "id": 97,
+      "category": "fear_failure",
+      "reverse": true,
+      "text": "When returning to unfinished work, how likely are you to act despite uncertainty about the outcome?"
+    },
+    {
+      "id": 98,
+      "category": "fear_failure",
+      "reverse": false,
+      "text": "After noticing that you delayed again, how likely are you to avoid submitting work that might be judged?"
+    },
+    {
+      "id": 99,
+      "category": "fear_failure",
+      "reverse": true,
+      "text": "When planning the next action, how likely are you to treat a possible mistake as information rather than a verdict?"
+    },
+    {
+      "id": 100,
+      "category": "fear_failure",
+      "reverse": false,
+      "text": "Across repeated responsibilities, how likely are you to delay because beginning could expose possible failure?"
+    },
+    {
+      "id": 101,
+      "category": "perfectionism",
+      "reverse": false,
+      "text": "When an important task first appears, how likely are you to wait until you can do the task perfectly?"
+    },
+    {
+      "id": 102,
+      "category": "perfectionism",
+      "reverse": true,
+      "text": "When you have enough information to proceed, how likely are you to define a good-enough completion standard?"
+    },
+    {
+      "id": 103,
+      "category": "perfectionism",
+      "reverse": false,
+      "text": "At the start of a normal day, how likely are you to keep revising beyond what the task requires?"
+    },
+    {
+      "id": 104,
+      "category": "perfectionism",
+      "reverse": true,
+      "text": "When a task feels boring, how likely are you to finish when the work meets its actual purpose?"
+    },
+    {
+      "id": 105,
+      "category": "perfectionism",
+      "reverse": false,
+      "text": "When your work may be evaluated, how likely are you to wait until you can do the task perfectly?"
+    },
+    {
+      "id": 106,
+      "category": "perfectionism",
+      "reverse": true,
+      "text": "Before a distant deadline, how likely are you to define a good-enough completion standard?"
+    },
+    {
+      "id": 107,
+      "category": "perfectionism",
+      "reverse": false,
+      "text": "When several options are available, how likely are you to keep revising beyond what the task requires?"
+    },
+    {
+      "id": 108,
+      "category": "perfectionism",
+      "reverse": true,
+      "text": "After making a detailed plan, how likely are you to finish when the work meets its actual purpose?"
+    },
+    {
+      "id": 109,
+      "category": "perfectionism",
+      "reverse": false,
+      "text": "When a project feels large, how likely are you to wait until you can do the task perfectly?"
+    },
+    {
+      "id": 110,
+      "category": "perfectionism",
+      "reverse": true,
+      "text": "During an uncomfortable emotion, how likely are you to define a good-enough completion standard?"
+    },
+    {
+      "id": 111,
+      "category": "perfectionism",
+      "reverse": false,
+      "text": "When your phone is nearby, how likely are you to keep revising beyond what the task requires?"
+    },
+    {
+      "id": 112,
+      "category": "perfectionism",
+      "reverse": true,
+      "text": "After completing an easier task, how likely are you to finish when the work meets its actual purpose?"
+    },
+    {
+      "id": 113,
+      "category": "perfectionism",
+      "reverse": false,
+      "text": "When motivation is low, how likely are you to wait until you can do the task perfectly?"
+    },
+    {
+      "id": 114,
+      "category": "perfectionism",
+      "reverse": true,
+      "text": "When nobody is monitoring progress, how likely are you to define a good-enough completion standard?"
+    },
+    {
+      "id": 115,
+      "category": "perfectionism",
+      "reverse": false,
+      "text": "After missing an intended start time, how likely are you to keep revising beyond what the task requires?"
+    },
+    {
+      "id": 116,
+      "category": "perfectionism",
+      "reverse": true,
+      "text": "When a tempting activity appears, how likely are you to finish when the work meets its actual purpose?"
+    },
+    {
+      "id": 117,
+      "category": "perfectionism",
+      "reverse": false,
+      "text": "While thinking about tomorrow, how likely are you to wait until you can do the task perfectly?"
+    },
+    {
+      "id": 118,
+      "category": "perfectionism",
+      "reverse": true,
+      "text": "When a task becomes difficult, how likely are you to define a good-enough completion standard?"
+    },
+    {
+      "id": 119,
+      "category": "perfectionism",
+      "reverse": false,
+      "text": "After receiving critical feedback, how likely are you to keep revising beyond what the task requires?"
+    },
+    {
+      "id": 120,
+      "category": "perfectionism",
+      "reverse": true,
+      "text": "When the deadline begins to feel urgent, how likely are you to finish when the work meets its actual purpose?"
+    },
+    {
+      "id": 121,
+      "category": "perfectionism",
+      "reverse": false,
+      "text": "During a busy school or work week, how likely are you to wait until you can do the task perfectly?"
+    },
+    {
+      "id": 122,
+      "category": "perfectionism",
+      "reverse": true,
+      "text": "When returning to unfinished work, how likely are you to define a good-enough completion standard?"
+    },
+    {
+      "id": 123,
+      "category": "perfectionism",
+      "reverse": false,
+      "text": "After noticing that you delayed again, how likely are you to keep revising beyond what the task requires?"
+    },
+    {
+      "id": 124,
+      "category": "perfectionism",
+      "reverse": true,
+      "text": "When planning the next action, how likely are you to finish when the work meets its actual purpose?"
+    },
+    {
+      "id": 125,
+      "category": "perfectionism",
+      "reverse": false,
+      "text": "Across repeated responsibilities, how likely are you to wait until you can do the task perfectly?"
+    },
+    {
+      "id": 126,
+      "category": "self_efficacy",
+      "reverse": false,
+      "text": "When an important task first appears, how likely are you to put off work because you doubt your ability?"
+    },
+    {
+      "id": 127,
+      "category": "self_efficacy",
+      "reverse": true,
+      "text": "When you have enough information to proceed, how likely are you to build confidence through a manageable first step?"
+    },
+    {
+      "id": 128,
+      "category": "self_efficacy",
+      "reverse": false,
+      "text": "At the start of a normal day, how likely are you to interpret difficulty as proof that you cannot succeed?"
+    },
+    {
+      "id": 129,
+      "category": "self_efficacy",
+      "reverse": true,
+      "text": "When a task feels boring, how likely are you to seek a skill or resource needed to proceed?"
+    },
+    {
+      "id": 130,
+      "category": "self_efficacy",
+      "reverse": false,
+      "text": "When your work may be evaluated, how likely are you to put off work because you doubt your ability?"
+    },
+    {
+      "id": 131,
+      "category": "self_efficacy",
+      "reverse": true,
+      "text": "Before a distant deadline, how likely are you to build confidence through a manageable first step?"
+    },
+    {
+      "id": 132,
+      "category": "self_efficacy",
+      "reverse": false,
+      "text": "When several options are available, how likely are you to interpret difficulty as proof that you cannot succeed?"
+    },
+    {
+      "id": 133,
+      "category": "self_efficacy",
+      "reverse": true,
+      "text": "After making a detailed plan, how likely are you to seek a skill or resource needed to proceed?"
+    },
+    {
+      "id": 134,
+      "category": "self_efficacy",
+      "reverse": false,
+      "text": "When a project feels large, how likely are you to put off work because you doubt your ability?"
+    },
+    {
+      "id": 135,
+      "category": "self_efficacy",
+      "reverse": true,
+      "text": "During an uncomfortable emotion, how likely are you to build confidence through a manageable first step?"
+    },
+    {
+      "id": 136,
+      "category": "self_efficacy",
+      "reverse": false,
+      "text": "When your phone is nearby, how likely are you to interpret difficulty as proof that you cannot succeed?"
+    },
+    {
+      "id": 137,
+      "category": "self_efficacy",
+      "reverse": true,
+      "text": "After completing an easier task, how likely are you to seek a skill or resource needed to proceed?"
+    },
+    {
+      "id": 138,
+      "category": "self_efficacy",
+      "reverse": false,
+      "text": "When motivation is low, how likely are you to put off work because you doubt your ability?"
+    },
+    {
+      "id": 139,
+      "category": "self_efficacy",
+      "reverse": true,
+      "text": "When nobody is monitoring progress, how likely are you to build confidence through a manageable first step?"
+    },
+    {
+      "id": 140,
+      "category": "self_efficacy",
+      "reverse": false,
+      "text": "After missing an intended start time, how likely are you to interpret difficulty as proof that you cannot succeed?"
+    },
+    {
+      "id": 141,
+      "category": "self_efficacy",
+      "reverse": true,
+      "text": "When a tempting activity appears, how likely are you to seek a skill or resource needed to proceed?"
+    },
+    {
+      "id": 142,
+      "category": "self_efficacy",
+      "reverse": false,
+      "text": "While thinking about tomorrow, how likely are you to put off work because you doubt your ability?"
+    },
+    {
+      "id": 143,
+      "category": "self_efficacy",
+      "reverse": true,
+      "text": "When a task becomes difficult, how likely are you to build confidence through a manageable first step?"
+    },
+    {
+      "id": 144,
+      "category": "self_efficacy",
+      "reverse": false,
+      "text": "After receiving critical feedback, how likely are you to interpret difficulty as proof that you cannot succeed?"
+    },
+    {
+      "id": 145,
+      "category": "self_efficacy",
+      "reverse": true,
+      "text": "When the deadline begins to feel urgent, how likely are you to seek a skill or resource needed to proceed?"
+    },
+    {
+      "id": 146,
+      "category": "self_efficacy",
+      "reverse": false,
+      "text": "During a busy school or work week, how likely are you to put off work because you doubt your ability?"
+    },
+    {
+      "id": 147,
+      "category": "self_efficacy",
+      "reverse": true,
+      "text": "When returning to unfinished work, how likely are you to build confidence through a manageable first step?"
+    },
+    {
+      "id": 148,
+      "category": "self_efficacy",
+      "reverse": false,
+      "text": "After noticing that you delayed again, how likely are you to interpret difficulty as proof that you cannot succeed?"
+    },
+    {
+      "id": 149,
+      "category": "self_efficacy",
+      "reverse": true,
+      "text": "When planning the next action, how likely are you to seek a skill or resource needed to proceed?"
+    },
+    {
+      "id": 150,
+      "category": "self_efficacy",
+      "reverse": false,
+      "text": "Across repeated responsibilities, how likely are you to put off work because you doubt your ability?"
+    },
+    {
+      "id": 151,
+      "category": "overwhelm",
+      "reverse": false,
+      "text": "When an important task first appears, how likely are you to freeze because the task feels too large?"
+    },
+    {
+      "id": 152,
+      "category": "overwhelm",
+      "reverse": true,
+      "text": "When you have enough information to proceed, how likely are you to divide the work into smaller visible actions?"
+    },
+    {
+      "id": 153,
+      "category": "overwhelm",
+      "reverse": false,
+      "text": "At the start of a normal day, how likely are you to avoid looking at a project that seems overwhelming?"
+    },
+    {
+      "id": 154,
+      "category": "overwhelm",
+      "reverse": true,
+      "text": "When a task feels boring, how likely are you to choose one manageable part when the whole feels too large?"
+    },
+    {
+      "id": 155,
+      "category": "overwhelm",
+      "reverse": false,
+      "text": "When your work may be evaluated, how likely are you to freeze because the task feels too large?"
+    },
+    {
+      "id": 156,
+      "category": "overwhelm",
+      "reverse": true,
+      "text": "Before a distant deadline, how likely are you to divide the work into smaller visible actions?"
+    },
+    {
+      "id": 157,
+      "category": "overwhelm",
+      "reverse": false,
+      "text": "When several options are available, how likely are you to avoid looking at a project that seems overwhelming?"
+    },
+    {
+      "id": 158,
+      "category": "overwhelm",
+      "reverse": true,
+      "text": "After making a detailed plan, how likely are you to choose one manageable part when the whole feels too large?"
+    },
+    {
+      "id": 159,
+      "category": "overwhelm",
+      "reverse": false,
+      "text": "When a project feels large, how likely are you to freeze because the task feels too large?"
+    },
+    {
+      "id": 160,
+      "category": "overwhelm",
+      "reverse": true,
+      "text": "During an uncomfortable emotion, how likely are you to divide the work into smaller visible actions?"
+    },
+    {
+      "id": 161,
+      "category": "overwhelm",
+      "reverse": false,
+      "text": "When your phone is nearby, how likely are you to avoid looking at a project that seems overwhelming?"
+    },
+    {
+      "id": 162,
+      "category": "overwhelm",
+      "reverse": true,
+      "text": "After completing an easier task, how likely are you to choose one manageable part when the whole feels too large?"
+    },
+    {
+      "id": 163,
+      "category": "overwhelm",
+      "reverse": false,
+      "text": "When motivation is low, how likely are you to freeze because the task feels too large?"
+    },
+    {
+      "id": 164,
+      "category": "overwhelm",
+      "reverse": true,
+      "text": "When nobody is monitoring progress, how likely are you to divide the work into smaller visible actions?"
+    },
+    {
+      "id": 165,
+      "category": "overwhelm",
+      "reverse": false,
+      "text": "After missing an intended start time, how likely are you to avoid looking at a project that seems overwhelming?"
+    },
+    {
+      "id": 166,
+      "category": "overwhelm",
+      "reverse": true,
+      "text": "When a tempting activity appears, how likely are you to choose one manageable part when the whole feels too large?"
+    },
+    {
+      "id": 167,
+      "category": "overwhelm",
+      "reverse": false,
+      "text": "While thinking about tomorrow, how likely are you to freeze because the task feels too large?"
+    },
+    {
+      "id": 168,
+      "category": "overwhelm",
+      "reverse": true,
+      "text": "When a task becomes difficult, how likely are you to divide the work into smaller visible actions?"
+    },
+    {
+      "id": 169,
+      "category": "overwhelm",
+      "reverse": false,
+      "text": "After receiving critical feedback, how likely are you to avoid looking at a project that seems overwhelming?"
+    },
+    {
+      "id": 170,
+      "category": "overwhelm",
+      "reverse": true,
+      "text": "When the deadline begins to feel urgent, how likely are you to choose one manageable part when the whole feels too large?"
+    },
+    {
+      "id": 171,
+      "category": "overwhelm",
+      "reverse": false,
+      "text": "During a busy school or work week, how likely are you to freeze because the task feels too large?"
+    },
+    {
+      "id": 172,
+      "category": "overwhelm",
+      "reverse": true,
+      "text": "When returning to unfinished work, how likely are you to divide the work into smaller visible actions?"
+    },
+    {
+      "id": 173,
+      "category": "overwhelm",
+      "reverse": false,
+      "text": "After noticing that you delayed again, how likely are you to avoid looking at a project that seems overwhelming?"
+    },
+    {
+      "id": 174,
+      "category": "overwhelm",
+      "reverse": true,
+      "text": "When planning the next action, how likely are you to choose one manageable part when the whole feels too large?"
+    },
+    {
+      "id": 175,
+      "category": "overwhelm",
+      "reverse": false,
+      "text": "Across repeated responsibilities, how likely are you to freeze because the task feels too large?"
+    },
+    {
+      "id": 176,
+      "category": "unclear_tasks",
+      "reverse": false,
+      "text": "When an important task first appears, how likely are you to delay because the next action is unclear?"
+    },
+    {
+      "id": 177,
+      "category": "unclear_tasks",
+      "reverse": true,
+      "text": "When you have enough information to proceed, how likely are you to clarify the next observable action?"
+    },
+    {
+      "id": 178,
+      "category": "unclear_tasks",
+      "reverse": false,
+      "text": "At the start of a normal day, how likely are you to keep the task vague rather than defining what completion means?"
+    },
+    {
+      "id": 179,
+      "category": "unclear_tasks",
+      "reverse": true,
+      "text": "When a task feels boring, how likely are you to define what finished should look like before proceeding?"
+    },
+    {
+      "id": 180,
+      "category": "unclear_tasks",
+      "reverse": false,
+      "text": "When your work may be evaluated, how likely are you to delay because the next action is unclear?"
+    },
+    {
+      "id": 181,
+      "category": "unclear_tasks",
+      "reverse": true,
+      "text": "Before a distant deadline, how likely are you to clarify the next observable action?"
+    },
+    {
+      "id": 182,
+      "category": "unclear_tasks",
+      "reverse": false,
+      "text": "When several options are available, how likely are you to keep the task vague rather than defining what completion means?"
+    },
+    {
+      "id": 183,
+      "category": "unclear_tasks",
+      "reverse": true,
+      "text": "After making a detailed plan, how likely are you to define what finished should look like before proceeding?"
+    },
+    {
+      "id": 184,
+      "category": "unclear_tasks",
+      "reverse": false,
+      "text": "When a project feels large, how likely are you to delay because the next action is unclear?"
+    },
+    {
+      "id": 185,
+      "category": "unclear_tasks",
+      "reverse": true,
+      "text": "During an uncomfortable emotion, how likely are you to clarify the next observable action?"
+    },
+    {
+      "id": 186,
+      "category": "unclear_tasks",
+      "reverse": false,
+      "text": "When your phone is nearby, how likely are you to keep the task vague rather than defining what completion means?"
+    },
+    {
+      "id": 187,
+      "category": "unclear_tasks",
+      "reverse": true,
+      "text": "After completing an easier task, how likely are you to define what finished should look like before proceeding?"
+    },
+    {
+      "id": 188,
+      "category": "unclear_tasks",
+      "reverse": false,
+      "text": "When motivation is low, how likely are you to delay because the next action is unclear?"
+    },
+    {
+      "id": 189,
+      "category": "unclear_tasks",
+      "reverse": true,
+      "text": "When nobody is monitoring progress, how likely are you to clarify the next observable action?"
+    },
+    {
+      "id": 190,
+      "category": "unclear_tasks",
+      "reverse": false,
+      "text": "After missing an intended start time, how likely are you to keep the task vague rather than defining what completion means?"
+    },
+    {
+      "id": 191,
+      "category": "unclear_tasks",
+      "reverse": true,
+      "text": "When a tempting activity appears, how likely are you to define what finished should look like before proceeding?"
+    },
+    {
+      "id": 192,
+      "category": "unclear_tasks",
+      "reverse": false,
+      "text": "While thinking about tomorrow, how likely are you to delay because the next action is unclear?"
+    },
+    {
+      "id": 193,
+      "category": "unclear_tasks",
+      "reverse": true,
+      "text": "When a task becomes difficult, how likely are you to clarify the next observable action?"
+    },
+    {
+      "id": 194,
+      "category": "unclear_tasks",
+      "reverse": false,
+      "text": "After receiving critical feedback, how likely are you to keep the task vague rather than defining what completion means?"
+    },
+    {
+      "id": 195,
+      "category": "unclear_tasks",
+      "reverse": true,
+      "text": "When the deadline begins to feel urgent, how likely are you to define what finished should look like before proceeding?"
+    },
+    {
+      "id": 196,
+      "category": "unclear_tasks",
+      "reverse": false,
+      "text": "During a busy school or work week, how likely are you to delay because the next action is unclear?"
+    },
+    {
+      "id": 197,
+      "category": "unclear_tasks",
+      "reverse": true,
+      "text": "When returning to unfinished work, how likely are you to clarify the next observable action?"
+    },
+    {
+      "id": 198,
+      "category": "unclear_tasks",
+      "reverse": false,
+      "text": "After noticing that you delayed again, how likely are you to keep the task vague rather than defining what completion means?"
+    },
+    {
+      "id": 199,
+      "category": "unclear_tasks",
+      "reverse": true,
+      "text": "When planning the next action, how likely are you to define what finished should look like before proceeding?"
+    },
+    {
+      "id": 200,
+      "category": "unclear_tasks",
+      "reverse": false,
+      "text": "Across repeated responsibilities, how likely are you to delay because the next action is unclear?"
+    },
+    {
+      "id": 201,
+      "category": "priority_avoidance",
+      "reverse": false,
+      "text": "When an important task first appears, how likely are you to stay busy with minor work while the priority waits?"
+    },
+    {
+      "id": 202,
+      "category": "priority_avoidance",
+      "reverse": true,
+      "text": "When you have enough information to proceed, how likely are you to work on the important task before optional activity?"
+    },
+    {
+      "id": 203,
+      "category": "priority_avoidance",
+      "reverse": false,
+      "text": "At the start of a normal day, how likely are you to use low-value tasks to feel productive without addressing the main task?"
+    },
+    {
+      "id": 204,
+      "category": "priority_avoidance",
+      "reverse": true,
+      "text": "When a task feels boring, how likely are you to notice when busyness is replacing meaningful progress?"
+    },
+    {
+      "id": 205,
+      "category": "priority_avoidance",
+      "reverse": false,
+      "text": "When your work may be evaluated, how likely are you to stay busy with minor work while the priority waits?"
+    },
+    {
+      "id": 206,
+      "category": "priority_avoidance",
+      "reverse": true,
+      "text": "Before a distant deadline, how likely are you to work on the important task before optional activity?"
+    },
+    {
+      "id": 207,
+      "category": "priority_avoidance",
+      "reverse": false,
+      "text": "When several options are available, how likely are you to use low-value tasks to feel productive without addressing the main task?"
+    },
+    {
+      "id": 208,
+      "category": "priority_avoidance",
+      "reverse": true,
+      "text": "After making a detailed plan, how likely are you to notice when busyness is replacing meaningful progress?"
+    },
+    {
+      "id": 209,
+      "category": "priority_avoidance",
+      "reverse": false,
+      "text": "When a project feels large, how likely are you to stay busy with minor work while the priority waits?"
+    },
+    {
+      "id": 210,
+      "category": "priority_avoidance",
+      "reverse": true,
+      "text": "During an uncomfortable emotion, how likely are you to work on the important task before optional activity?"
+    },
+    {
+      "id": 211,
+      "category": "priority_avoidance",
+      "reverse": false,
+      "text": "When your phone is nearby, how likely are you to use low-value tasks to feel productive without addressing the main task?"
+    },
+    {
+      "id": 212,
+      "category": "priority_avoidance",
+      "reverse": true,
+      "text": "After completing an easier task, how likely are you to notice when busyness is replacing meaningful progress?"
+    },
+    {
+      "id": 213,
+      "category": "priority_avoidance",
+      "reverse": false,
+      "text": "When motivation is low, how likely are you to stay busy with minor work while the priority waits?"
+    },
+    {
+      "id": 214,
+      "category": "priority_avoidance",
+      "reverse": true,
+      "text": "When nobody is monitoring progress, how likely are you to work on the important task before optional activity?"
+    },
+    {
+      "id": 215,
+      "category": "priority_avoidance",
+      "reverse": false,
+      "text": "After missing an intended start time, how likely are you to use low-value tasks to feel productive without addressing the main task?"
+    },
+    {
+      "id": 216,
+      "category": "priority_avoidance",
+      "reverse": true,
+      "text": "When a tempting activity appears, how likely are you to notice when busyness is replacing meaningful progress?"
+    },
+    {
+      "id": 217,
+      "category": "priority_avoidance",
+      "reverse": false,
+      "text": "While thinking about tomorrow, how likely are you to stay busy with minor work while the priority waits?"
+    },
+    {
+      "id": 218,
+      "category": "priority_avoidance",
+      "reverse": true,
+      "text": "When a task becomes difficult, how likely are you to work on the important task before optional activity?"
+    },
+    {
+      "id": 219,
+      "category": "priority_avoidance",
+      "reverse": false,
+      "text": "After receiving critical feedback, how likely are you to use low-value tasks to feel productive without addressing the main task?"
+    },
+    {
+      "id": 220,
+      "category": "priority_avoidance",
+      "reverse": true,
+      "text": "When the deadline begins to feel urgent, how likely are you to notice when busyness is replacing meaningful progress?"
+    },
+    {
+      "id": 221,
+      "category": "priority_avoidance",
+      "reverse": false,
+      "text": "During a busy school or work week, how likely are you to stay busy with minor work while the priority waits?"
+    },
+    {
+      "id": 222,
+      "category": "priority_avoidance",
+      "reverse": true,
+      "text": "When returning to unfinished work, how likely are you to work on the important task before optional activity?"
+    },
+    {
+      "id": 223,
+      "category": "priority_avoidance",
+      "reverse": false,
+      "text": "After noticing that you delayed again, how likely are you to use low-value tasks to feel productive without addressing the main task?"
+    },
+    {
+      "id": 224,
+      "category": "priority_avoidance",
+      "reverse": true,
+      "text": "When planning the next action, how likely are you to notice when busyness is replacing meaningful progress?"
+    },
+    {
+      "id": 225,
+      "category": "priority_avoidance",
+      "reverse": false,
+      "text": "Across repeated responsibilities, how likely are you to stay busy with minor work while the priority waits?"
+    },
+    {
+      "id": 226,
+      "category": "digital_distraction",
+      "reverse": false,
+      "text": "When an important task first appears, how likely are you to turn to your phone or browsing when work becomes uncomfortable?"
+    },
+    {
+      "id": 227,
+      "category": "digital_distraction",
+      "reverse": true,
+      "text": "When you have enough information to proceed, how likely are you to reduce digital access during a planned work period?"
+    },
+    {
+      "id": 228,
+      "category": "digital_distraction",
+      "reverse": false,
+      "text": "At the start of a normal day, how likely are you to let notifications repeatedly postpone focused action?"
+    },
+    {
+      "id": 229,
+      "category": "digital_distraction",
+      "reverse": true,
+      "text": "When a task feels boring, how likely are you to pause before opening an unrelated app or website?"
+    },
+    {
+      "id": 230,
+      "category": "digital_distraction",
+      "reverse": false,
+      "text": "When your work may be evaluated, how likely are you to turn to your phone or browsing when work becomes uncomfortable?"
+    },
+    {
+      "id": 231,
+      "category": "digital_distraction",
+      "reverse": true,
+      "text": "Before a distant deadline, how likely are you to reduce digital access during a planned work period?"
+    },
+    {
+      "id": 232,
+      "category": "digital_distraction",
+      "reverse": false,
+      "text": "When several options are available, how likely are you to let notifications repeatedly postpone focused action?"
+    },
+    {
+      "id": 233,
+      "category": "digital_distraction",
+      "reverse": true,
+      "text": "After making a detailed plan, how likely are you to pause before opening an unrelated app or website?"
+    },
+    {
+      "id": 234,
+      "category": "digital_distraction",
+      "reverse": false,
+      "text": "When a project feels large, how likely are you to turn to your phone or browsing when work becomes uncomfortable?"
+    },
+    {
+      "id": 235,
+      "category": "digital_distraction",
+      "reverse": true,
+      "text": "During an uncomfortable emotion, how likely are you to reduce digital access during a planned work period?"
+    },
+    {
+      "id": 236,
+      "category": "digital_distraction",
+      "reverse": false,
+      "text": "When your phone is nearby, how likely are you to let notifications repeatedly postpone focused action?"
+    },
+    {
+      "id": 237,
+      "category": "digital_distraction",
+      "reverse": true,
+      "text": "After completing an easier task, how likely are you to pause before opening an unrelated app or website?"
+    },
+    {
+      "id": 238,
+      "category": "digital_distraction",
+      "reverse": false,
+      "text": "When motivation is low, how likely are you to turn to your phone or browsing when work becomes uncomfortable?"
+    },
+    {
+      "id": 239,
+      "category": "digital_distraction",
+      "reverse": true,
+      "text": "When nobody is monitoring progress, how likely are you to reduce digital access during a planned work period?"
+    },
+    {
+      "id": 240,
+      "category": "digital_distraction",
+      "reverse": false,
+      "text": "After missing an intended start time, how likely are you to let notifications repeatedly postpone focused action?"
+    },
+    {
+      "id": 241,
+      "category": "digital_distraction",
+      "reverse": true,
+      "text": "When a tempting activity appears, how likely are you to pause before opening an unrelated app or website?"
+    },
+    {
+      "id": 242,
+      "category": "digital_distraction",
+      "reverse": false,
+      "text": "While thinking about tomorrow, how likely are you to turn to your phone or browsing when work becomes uncomfortable?"
+    },
+    {
+      "id": 243,
+      "category": "digital_distraction",
+      "reverse": true,
+      "text": "When a task becomes difficult, how likely are you to reduce digital access during a planned work period?"
+    },
+    {
+      "id": 244,
+      "category": "digital_distraction",
+      "reverse": false,
+      "text": "After receiving critical feedback, how likely are you to let notifications repeatedly postpone focused action?"
+    },
+    {
+      "id": 245,
+      "category": "digital_distraction",
+      "reverse": true,
+      "text": "When the deadline begins to feel urgent, how likely are you to pause before opening an unrelated app or website?"
+    },
+    {
+      "id": 246,
+      "category": "digital_distraction",
+      "reverse": false,
+      "text": "During a busy school or work week, how likely are you to turn to your phone or browsing when work becomes uncomfortable?"
+    },
+    {
+      "id": 247,
+      "category": "digital_distraction",
+      "reverse": true,
+      "text": "When returning to unfinished work, how likely are you to reduce digital access during a planned work period?"
+    },
+    {
+      "id": 248,
+      "category": "digital_distraction",
+      "reverse": false,
+      "text": "After noticing that you delayed again, how likely are you to let notifications repeatedly postpone focused action?"
+    },
+    {
+      "id": 249,
+      "category": "digital_distraction",
+      "reverse": true,
+      "text": "When planning the next action, how likely are you to pause before opening an unrelated app or website?"
+    },
+    {
+      "id": 250,
+      "category": "digital_distraction",
+      "reverse": false,
+      "text": "Across repeated responsibilities, how likely are you to turn to your phone or browsing when work becomes uncomfortable?"
+    },
+    {
+      "id": 251,
+      "category": "impulsivity",
+      "reverse": false,
+      "text": "When an important task first appears, how likely are you to choose immediate enjoyment over a more important delayed benefit?"
+    },
+    {
+      "id": 252,
+      "category": "impulsivity",
+      "reverse": true,
+      "text": "When you have enough information to proceed, how likely are you to protect a future benefit from a short-term temptation?"
+    },
+    {
+      "id": 253,
+      "category": "impulsivity",
+      "reverse": false,
+      "text": "At the start of a normal day, how likely are you to abandon planned work when a tempting activity appears?"
+    },
+    {
+      "id": 254,
+      "category": "impulsivity",
+      "reverse": true,
+      "text": "When a task feels boring, how likely are you to delay a small reward until a planned step is complete?"
+    },
+    {
+      "id": 255,
+      "category": "impulsivity",
+      "reverse": false,
+      "text": "When your work may be evaluated, how likely are you to choose immediate enjoyment over a more important delayed benefit?"
+    },
+    {
+      "id": 256,
+      "category": "impulsivity",
+      "reverse": true,
+      "text": "Before a distant deadline, how likely are you to protect a future benefit from a short-term temptation?"
+    },
+    {
+      "id": 257,
+      "category": "impulsivity",
+      "reverse": false,
+      "text": "When several options are available, how likely are you to abandon planned work when a tempting activity appears?"
+    },
+    {
+      "id": 258,
+      "category": "impulsivity",
+      "reverse": true,
+      "text": "After making a detailed plan, how likely are you to delay a small reward until a planned step is complete?"
+    },
+    {
+      "id": 259,
+      "category": "impulsivity",
+      "reverse": false,
+      "text": "When a project feels large, how likely are you to choose immediate enjoyment over a more important delayed benefit?"
+    },
+    {
+      "id": 260,
+      "category": "impulsivity",
+      "reverse": true,
+      "text": "During an uncomfortable emotion, how likely are you to protect a future benefit from a short-term temptation?"
+    },
+    {
+      "id": 261,
+      "category": "impulsivity",
+      "reverse": false,
+      "text": "When your phone is nearby, how likely are you to abandon planned work when a tempting activity appears?"
+    },
+    {
+      "id": 262,
+      "category": "impulsivity",
+      "reverse": true,
+      "text": "After completing an easier task, how likely are you to delay a small reward until a planned step is complete?"
+    },
+    {
+      "id": 263,
+      "category": "impulsivity",
+      "reverse": false,
+      "text": "When motivation is low, how likely are you to choose immediate enjoyment over a more important delayed benefit?"
+    },
+    {
+      "id": 264,
+      "category": "impulsivity",
+      "reverse": true,
+      "text": "When nobody is monitoring progress, how likely are you to protect a future benefit from a short-term temptation?"
+    },
+    {
+      "id": 265,
+      "category": "impulsivity",
+      "reverse": false,
+      "text": "After missing an intended start time, how likely are you to abandon planned work when a tempting activity appears?"
+    },
+    {
+      "id": 266,
+      "category": "impulsivity",
+      "reverse": true,
+      "text": "When a tempting activity appears, how likely are you to delay a small reward until a planned step is complete?"
+    },
+    {
+      "id": 267,
+      "category": "impulsivity",
+      "reverse": false,
+      "text": "While thinking about tomorrow, how likely are you to choose immediate enjoyment over a more important delayed benefit?"
+    },
+    {
+      "id": 268,
+      "category": "impulsivity",
+      "reverse": true,
+      "text": "When a task becomes difficult, how likely are you to protect a future benefit from a short-term temptation?"
+    },
+    {
+      "id": 269,
+      "category": "impulsivity",
+      "reverse": false,
+      "text": "After receiving critical feedback, how likely are you to abandon planned work when a tempting activity appears?"
+    },
+    {
+      "id": 270,
+      "category": "impulsivity",
+      "reverse": true,
+      "text": "When the deadline begins to feel urgent, how likely are you to delay a small reward until a planned step is complete?"
+    },
+    {
+      "id": 271,
+      "category": "impulsivity",
+      "reverse": false,
+      "text": "During a busy school or work week, how likely are you to choose immediate enjoyment over a more important delayed benefit?"
+    },
+    {
+      "id": 272,
+      "category": "impulsivity",
+      "reverse": true,
+      "text": "When returning to unfinished work, how likely are you to protect a future benefit from a short-term temptation?"
+    },
+    {
+      "id": 273,
+      "category": "impulsivity",
+      "reverse": false,
+      "text": "After noticing that you delayed again, how likely are you to abandon planned work when a tempting activity appears?"
+    },
+    {
+      "id": 274,
+      "category": "impulsivity",
+      "reverse": true,
+      "text": "When planning the next action, how likely are you to delay a small reward until a planned step is complete?"
+    },
+    {
+      "id": 275,
+      "category": "impulsivity",
+      "reverse": false,
+      "text": "Across repeated responsibilities, how likely are you to choose immediate enjoyment over a more important delayed benefit?"
+    },
+    {
+      "id": 276,
+      "category": "mood_regulation",
+      "reverse": false,
+      "text": "When an important task first appears, how likely are you to postpone work to avoid a difficult feeling?"
+    },
+    {
+      "id": 277,
+      "category": "mood_regulation",
+      "reverse": true,
+      "text": "When you have enough information to proceed, how likely are you to allow an uncomfortable feeling while taking action?"
+    },
+    {
+      "id": 278,
+      "category": "mood_regulation",
+      "reverse": false,
+      "text": "At the start of a normal day, how likely are you to wait for anxiety, boredom, or frustration to disappear before acting?"
+    },
+    {
+      "id": 279,
+      "category": "mood_regulation",
+      "reverse": true,
+      "text": "When a task feels boring, how likely are you to use a brief coping strategy and then return to the task?"
+    },
+    {
+      "id": 280,
+      "category": "mood_regulation",
+      "reverse": false,
+      "text": "When your work may be evaluated, how likely are you to postpone work to avoid a difficult feeling?"
+    },
+    {
+      "id": 281,
+      "category": "mood_regulation",
+      "reverse": true,
+      "text": "Before a distant deadline, how likely are you to allow an uncomfortable feeling while taking action?"
+    },
+    {
+      "id": 282,
+      "category": "mood_regulation",
+      "reverse": false,
+      "text": "When several options are available, how likely are you to wait for anxiety, boredom, or frustration to disappear before acting?"
+    },
+    {
+      "id": 283,
+      "category": "mood_regulation",
+      "reverse": true,
+      "text": "After making a detailed plan, how likely are you to use a brief coping strategy and then return to the task?"
+    },
+    {
+      "id": 284,
+      "category": "mood_regulation",
+      "reverse": false,
+      "text": "When a project feels large, how likely are you to postpone work to avoid a difficult feeling?"
+    },
+    {
+      "id": 285,
+      "category": "mood_regulation",
+      "reverse": true,
+      "text": "During an uncomfortable emotion, how likely are you to allow an uncomfortable feeling while taking action?"
+    },
+    {
+      "id": 286,
+      "category": "mood_regulation",
+      "reverse": false,
+      "text": "When your phone is nearby, how likely are you to wait for anxiety, boredom, or frustration to disappear before acting?"
+    },
+    {
+      "id": 287,
+      "category": "mood_regulation",
+      "reverse": true,
+      "text": "After completing an easier task, how likely are you to use a brief coping strategy and then return to the task?"
+    },
+    {
+      "id": 288,
+      "category": "mood_regulation",
+      "reverse": false,
+      "text": "When motivation is low, how likely are you to postpone work to avoid a difficult feeling?"
+    },
+    {
+      "id": 289,
+      "category": "mood_regulation",
+      "reverse": true,
+      "text": "When nobody is monitoring progress, how likely are you to allow an uncomfortable feeling while taking action?"
+    },
+    {
+      "id": 290,
+      "category": "mood_regulation",
+      "reverse": false,
+      "text": "After missing an intended start time, how likely are you to wait for anxiety, boredom, or frustration to disappear before acting?"
+    },
+    {
+      "id": 291,
+      "category": "mood_regulation",
+      "reverse": true,
+      "text": "When a tempting activity appears, how likely are you to use a brief coping strategy and then return to the task?"
+    },
+    {
+      "id": 292,
+      "category": "mood_regulation",
+      "reverse": false,
+      "text": "While thinking about tomorrow, how likely are you to postpone work to avoid a difficult feeling?"
+    },
+    {
+      "id": 293,
+      "category": "mood_regulation",
+      "reverse": true,
+      "text": "When a task becomes difficult, how likely are you to allow an uncomfortable feeling while taking action?"
+    },
+    {
+      "id": 294,
+      "category": "mood_regulation",
+      "reverse": false,
+      "text": "After receiving critical feedback, how likely are you to wait for anxiety, boredom, or frustration to disappear before acting?"
+    },
+    {
+      "id": 295,
+      "category": "mood_regulation",
+      "reverse": true,
+      "text": "When the deadline begins to feel urgent, how likely are you to use a brief coping strategy and then return to the task?"
+    },
+    {
+      "id": 296,
+      "category": "mood_regulation",
+      "reverse": false,
+      "text": "During a busy school or work week, how likely are you to postpone work to avoid a difficult feeling?"
+    },
+    {
+      "id": 297,
+      "category": "mood_regulation",
+      "reverse": true,
+      "text": "When returning to unfinished work, how likely are you to allow an uncomfortable feeling while taking action?"
+    },
+    {
+      "id": 298,
+      "category": "mood_regulation",
+      "reverse": false,
+      "text": "After noticing that you delayed again, how likely are you to wait for anxiety, boredom, or frustration to disappear before acting?"
+    },
+    {
+      "id": 299,
+      "category": "mood_regulation",
+      "reverse": true,
+      "text": "When planning the next action, how likely are you to use a brief coping strategy and then return to the task?"
+    },
+    {
+      "id": 300,
+      "category": "mood_regulation",
+      "reverse": false,
+      "text": "Across repeated responsibilities, how likely are you to postpone work to avoid a difficult feeling?"
+    },
+    {
+      "id": 301,
+      "category": "time_discounting",
+      "reverse": false,
+      "text": "When an important task first appears, how likely are you to assume your future self will have more time or motivation?"
+    },
+    {
+      "id": 302,
+      "category": "time_discounting",
+      "reverse": true,
+      "text": "When you have enough information to proceed, how likely are you to treat future time as limited just like today?"
+    },
+    {
+      "id": 303,
+      "category": "time_discounting",
+      "reverse": false,
+      "text": "At the start of a normal day, how likely are you to transfer today’s responsibility to an already busy future day?"
+    },
+    {
+      "id": 304,
+      "category": "time_discounting",
+      "reverse": true,
+      "text": "When a task feels boring, how likely are you to consider the cost that delay creates for your future self?"
+    },
+    {
+      "id": 305,
+      "category": "time_discounting",
+      "reverse": false,
+      "text": "When your work may be evaluated, how likely are you to assume your future self will have more time or motivation?"
+    },
+    {
+      "id": 306,
+      "category": "time_discounting",
+      "reverse": true,
+      "text": "Before a distant deadline, how likely are you to treat future time as limited just like today?"
+    },
+    {
+      "id": 307,
+      "category": "time_discounting",
+      "reverse": false,
+      "text": "When several options are available, how likely are you to transfer today’s responsibility to an already busy future day?"
+    },
+    {
+      "id": 308,
+      "category": "time_discounting",
+      "reverse": true,
+      "text": "After making a detailed plan, how likely are you to consider the cost that delay creates for your future self?"
+    },
+    {
+      "id": 309,
+      "category": "time_discounting",
+      "reverse": false,
+      "text": "When a project feels large, how likely are you to assume your future self will have more time or motivation?"
+    },
+    {
+      "id": 310,
+      "category": "time_discounting",
+      "reverse": true,
+      "text": "During an uncomfortable emotion, how likely are you to treat future time as limited just like today?"
+    },
+    {
+      "id": 311,
+      "category": "time_discounting",
+      "reverse": false,
+      "text": "When your phone is nearby, how likely are you to transfer today’s responsibility to an already busy future day?"
+    },
+    {
+      "id": 312,
+      "category": "time_discounting",
+      "reverse": true,
+      "text": "After completing an easier task, how likely are you to consider the cost that delay creates for your future self?"
+    },
+    {
+      "id": 313,
+      "category": "time_discounting",
+      "reverse": false,
+      "text": "When motivation is low, how likely are you to assume your future self will have more time or motivation?"
+    },
+    {
+      "id": 314,
+      "category": "time_discounting",
+      "reverse": true,
+      "text": "When nobody is monitoring progress, how likely are you to treat future time as limited just like today?"
+    },
+    {
+      "id": 315,
+      "category": "time_discounting",
+      "reverse": false,
+      "text": "After missing an intended start time, how likely are you to transfer today’s responsibility to an already busy future day?"
+    },
+    {
+      "id": 316,
+      "category": "time_discounting",
+      "reverse": true,
+      "text": "When a tempting activity appears, how likely are you to consider the cost that delay creates for your future self?"
+    },
+    {
+      "id": 317,
+      "category": "time_discounting",
+      "reverse": false,
+      "text": "While thinking about tomorrow, how likely are you to assume your future self will have more time or motivation?"
+    },
+    {
+      "id": 318,
+      "category": "time_discounting",
+      "reverse": true,
+      "text": "When a task becomes difficult, how likely are you to treat future time as limited just like today?"
+    },
+    {
+      "id": 319,
+      "category": "time_discounting",
+      "reverse": false,
+      "text": "After receiving critical feedback, how likely are you to transfer today’s responsibility to an already busy future day?"
+    },
+    {
+      "id": 320,
+      "category": "time_discounting",
+      "reverse": true,
+      "text": "When the deadline begins to feel urgent, how likely are you to consider the cost that delay creates for your future self?"
+    },
+    {
+      "id": 321,
+      "category": "time_discounting",
+      "reverse": false,
+      "text": "During a busy school or work week, how likely are you to assume your future self will have more time or motivation?"
+    },
+    {
+      "id": 322,
+      "category": "time_discounting",
+      "reverse": true,
+      "text": "When returning to unfinished work, how likely are you to treat future time as limited just like today?"
+    },
+    {
+      "id": 323,
+      "category": "time_discounting",
+      "reverse": false,
+      "text": "After noticing that you delayed again, how likely are you to transfer today’s responsibility to an already busy future day?"
+    },
+    {
+      "id": 324,
+      "category": "time_discounting",
+      "reverse": true,
+      "text": "When planning the next action, how likely are you to consider the cost that delay creates for your future self?"
+    },
+    {
+      "id": 325,
+      "category": "time_discounting",
+      "reverse": false,
+      "text": "Across repeated responsibilities, how likely are you to assume your future self will have more time or motivation?"
+    },
+    {
+      "id": 326,
+      "category": "deadline_dependence",
+      "reverse": false,
+      "text": "When an important task first appears, how likely are you to wait for deadline pressure before working seriously?"
+    },
+    {
+      "id": 327,
+      "category": "deadline_dependence",
+      "reverse": true,
+      "text": "When you have enough information to proceed, how likely are you to begin before the task becomes an emergency?"
+    },
+    {
+      "id": 328,
+      "category": "deadline_dependence",
+      "reverse": false,
+      "text": "At the start of a normal day, how likely are you to rely on urgency to create enough motivation?"
+    },
+    {
+      "id": 329,
+      "category": "deadline_dependence",
+      "reverse": true,
+      "text": "When a task feels boring, how likely are you to create an earlier checkpoint that prompts action?"
+    },
+    {
+      "id": 330,
+      "category": "deadline_dependence",
+      "reverse": false,
+      "text": "When your work may be evaluated, how likely are you to wait for deadline pressure before working seriously?"
+    },
+    {
+      "id": 331,
+      "category": "deadline_dependence",
+      "reverse": true,
+      "text": "Before a distant deadline, how likely are you to begin before the task becomes an emergency?"
+    },
+    {
+      "id": 332,
+      "category": "deadline_dependence",
+      "reverse": false,
+      "text": "When several options are available, how likely are you to rely on urgency to create enough motivation?"
+    },
+    {
+      "id": 333,
+      "category": "deadline_dependence",
+      "reverse": true,
+      "text": "After making a detailed plan, how likely are you to create an earlier checkpoint that prompts action?"
+    },
+    {
+      "id": 334,
+      "category": "deadline_dependence",
+      "reverse": false,
+      "text": "When a project feels large, how likely are you to wait for deadline pressure before working seriously?"
+    },
+    {
+      "id": 335,
+      "category": "deadline_dependence",
+      "reverse": true,
+      "text": "During an uncomfortable emotion, how likely are you to begin before the task becomes an emergency?"
+    },
+    {
+      "id": 336,
+      "category": "deadline_dependence",
+      "reverse": false,
+      "text": "When your phone is nearby, how likely are you to rely on urgency to create enough motivation?"
+    },
+    {
+      "id": 337,
+      "category": "deadline_dependence",
+      "reverse": true,
+      "text": "After completing an easier task, how likely are you to create an earlier checkpoint that prompts action?"
+    },
+    {
+      "id": 338,
+      "category": "deadline_dependence",
+      "reverse": false,
+      "text": "When motivation is low, how likely are you to wait for deadline pressure before working seriously?"
+    },
+    {
+      "id": 339,
+      "category": "deadline_dependence",
+      "reverse": true,
+      "text": "When nobody is monitoring progress, how likely are you to begin before the task becomes an emergency?"
+    },
+    {
+      "id": 340,
+      "category": "deadline_dependence",
+      "reverse": false,
+      "text": "After missing an intended start time, how likely are you to rely on urgency to create enough motivation?"
+    },
+    {
+      "id": 341,
+      "category": "deadline_dependence",
+      "reverse": true,
+      "text": "When a tempting activity appears, how likely are you to create an earlier checkpoint that prompts action?"
+    },
+    {
+      "id": 342,
+      "category": "deadline_dependence",
+      "reverse": false,
+      "text": "While thinking about tomorrow, how likely are you to wait for deadline pressure before working seriously?"
+    },
+    {
+      "id": 343,
+      "category": "deadline_dependence",
+      "reverse": true,
+      "text": "When a task becomes difficult, how likely are you to begin before the task becomes an emergency?"
+    },
+    {
+      "id": 344,
+      "category": "deadline_dependence",
+      "reverse": false,
+      "text": "After receiving critical feedback, how likely are you to rely on urgency to create enough motivation?"
+    },
+    {
+      "id": 345,
+      "category": "deadline_dependence",
+      "reverse": true,
+      "text": "When the deadline begins to feel urgent, how likely are you to create an earlier checkpoint that prompts action?"
+    },
+    {
+      "id": 346,
+      "category": "deadline_dependence",
+      "reverse": false,
+      "text": "During a busy school or work week, how likely are you to wait for deadline pressure before working seriously?"
+    },
+    {
+      "id": 347,
+      "category": "deadline_dependence",
+      "reverse": true,
+      "text": "When returning to unfinished work, how likely are you to begin before the task becomes an emergency?"
+    },
+    {
+      "id": 348,
+      "category": "deadline_dependence",
+      "reverse": false,
+      "text": "After noticing that you delayed again, how likely are you to rely on urgency to create enough motivation?"
+    },
+    {
+      "id": 349,
+      "category": "deadline_dependence",
+      "reverse": true,
+      "text": "When planning the next action, how likely are you to create an earlier checkpoint that prompts action?"
+    },
+    {
+      "id": 350,
+      "category": "deadline_dependence",
+      "reverse": false,
+      "text": "Across repeated responsibilities, how likely are you to wait for deadline pressure before working seriously?"
+    },
+    {
+      "id": 351,
+      "category": "planning_gap",
+      "reverse": false,
+      "text": "When an important task first appears, how likely are you to make plans without specifying when action will occur?"
+    },
+    {
+      "id": 352,
+      "category": "planning_gap",
+      "reverse": true,
+      "text": "When you have enough information to proceed, how likely are you to connect the intention to a specific time and place?"
+    },
+    {
+      "id": 353,
+      "category": "planning_gap",
+      "reverse": false,
+      "text": "At the start of a normal day, how likely are you to repeatedly move an intended task to another day?"
+    },
+    {
+      "id": 354,
+      "category": "planning_gap",
+      "reverse": true,
+      "text": "When a task feels boring, how likely are you to turn a plan into a scheduled next action?"
+    },
+    {
+      "id": 355,
+      "category": "planning_gap",
+      "reverse": false,
+      "text": "When your work may be evaluated, how likely are you to make plans without specifying when action will occur?"
+    },
+    {
+      "id": 356,
+      "category": "planning_gap",
+      "reverse": true,
+      "text": "Before a distant deadline, how likely are you to connect the intention to a specific time and place?"
+    },
+    {
+      "id": 357,
+      "category": "planning_gap",
+      "reverse": false,
+      "text": "When several options are available, how likely are you to repeatedly move an intended task to another day?"
+    },
+    {
+      "id": 358,
+      "category": "planning_gap",
+      "reverse": true,
+      "text": "After making a detailed plan, how likely are you to turn a plan into a scheduled next action?"
+    },
+    {
+      "id": 359,
+      "category": "planning_gap",
+      "reverse": false,
+      "text": "When a project feels large, how likely are you to make plans without specifying when action will occur?"
+    },
+    {
+      "id": 360,
+      "category": "planning_gap",
+      "reverse": true,
+      "text": "During an uncomfortable emotion, how likely are you to connect the intention to a specific time and place?"
+    },
+    {
+      "id": 361,
+      "category": "planning_gap",
+      "reverse": false,
+      "text": "When your phone is nearby, how likely are you to repeatedly move an intended task to another day?"
+    },
+    {
+      "id": 362,
+      "category": "planning_gap",
+      "reverse": true,
+      "text": "After completing an easier task, how likely are you to turn a plan into a scheduled next action?"
+    },
+    {
+      "id": 363,
+      "category": "planning_gap",
+      "reverse": false,
+      "text": "When motivation is low, how likely are you to make plans without specifying when action will occur?"
+    },
+    {
+      "id": 364,
+      "category": "planning_gap",
+      "reverse": true,
+      "text": "When nobody is monitoring progress, how likely are you to connect the intention to a specific time and place?"
+    },
+    {
+      "id": 365,
+      "category": "planning_gap",
+      "reverse": false,
+      "text": "After missing an intended start time, how likely are you to repeatedly move an intended task to another day?"
+    },
+    {
+      "id": 366,
+      "category": "planning_gap",
+      "reverse": true,
+      "text": "When a tempting activity appears, how likely are you to turn a plan into a scheduled next action?"
+    },
+    {
+      "id": 367,
+      "category": "planning_gap",
+      "reverse": false,
+      "text": "While thinking about tomorrow, how likely are you to make plans without specifying when action will occur?"
+    },
+    {
+      "id": 368,
+      "category": "planning_gap",
+      "reverse": true,
+      "text": "When a task becomes difficult, how likely are you to connect the intention to a specific time and place?"
+    },
+    {
+      "id": 369,
+      "category": "planning_gap",
+      "reverse": false,
+      "text": "After receiving critical feedback, how likely are you to repeatedly move an intended task to another day?"
+    },
+    {
+      "id": 370,
+      "category": "planning_gap",
+      "reverse": true,
+      "text": "When the deadline begins to feel urgent, how likely are you to turn a plan into a scheduled next action?"
+    },
+    {
+      "id": 371,
+      "category": "planning_gap",
+      "reverse": false,
+      "text": "During a busy school or work week, how likely are you to make plans without specifying when action will occur?"
+    },
+    {
+      "id": 372,
+      "category": "planning_gap",
+      "reverse": true,
+      "text": "When returning to unfinished work, how likely are you to connect the intention to a specific time and place?"
+    },
+    {
+      "id": 373,
+      "category": "planning_gap",
+      "reverse": false,
+      "text": "After noticing that you delayed again, how likely are you to repeatedly move an intended task to another day?"
+    },
+    {
+      "id": 374,
+      "category": "planning_gap",
+      "reverse": true,
+      "text": "When planning the next action, how likely are you to turn a plan into a scheduled next action?"
+    },
+    {
+      "id": 375,
+      "category": "planning_gap",
+      "reverse": false,
+      "text": "Across repeated responsibilities, how likely are you to make plans without specifying when action will occur?"
+    },
+    {
+      "id": 376,
+      "category": "persistence",
+      "reverse": false,
+      "text": "When an important task first appears, how likely are you to stop soon after the task becomes difficult?"
+    },
+    {
+      "id": 377,
+      "category": "persistence",
+      "reverse": true,
+      "text": "When you have enough information to proceed, how likely are you to continue through a manageable period of difficulty?"
+    },
+    {
+      "id": 378,
+      "category": "persistence",
+      "reverse": false,
+      "text": "At the start of a normal day, how likely are you to leave partially completed work untouched for long periods?"
+    },
+    {
+      "id": 379,
+      "category": "persistence",
+      "reverse": true,
+      "text": "When a task feels boring, how likely are you to set a clear return point when you must pause?"
+    },
+    {
+      "id": 380,
+      "category": "persistence",
+      "reverse": false,
+      "text": "When your work may be evaluated, how likely are you to stop soon after the task becomes difficult?"
+    },
+    {
+      "id": 381,
+      "category": "persistence",
+      "reverse": true,
+      "text": "Before a distant deadline, how likely are you to continue through a manageable period of difficulty?"
+    },
+    {
+      "id": 382,
+      "category": "persistence",
+      "reverse": false,
+      "text": "When several options are available, how likely are you to leave partially completed work untouched for long periods?"
+    },
+    {
+      "id": 383,
+      "category": "persistence",
+      "reverse": true,
+      "text": "After making a detailed plan, how likely are you to set a clear return point when you must pause?"
+    },
+    {
+      "id": 384,
+      "category": "persistence",
+      "reverse": false,
+      "text": "When a project feels large, how likely are you to stop soon after the task becomes difficult?"
+    },
+    {
+      "id": 385,
+      "category": "persistence",
+      "reverse": true,
+      "text": "During an uncomfortable emotion, how likely are you to continue through a manageable period of difficulty?"
+    },
+    {
+      "id": 386,
+      "category": "persistence",
+      "reverse": false,
+      "text": "When your phone is nearby, how likely are you to leave partially completed work untouched for long periods?"
+    },
+    {
+      "id": 387,
+      "category": "persistence",
+      "reverse": true,
+      "text": "After completing an easier task, how likely are you to set a clear return point when you must pause?"
+    },
+    {
+      "id": 388,
+      "category": "persistence",
+      "reverse": false,
+      "text": "When motivation is low, how likely are you to stop soon after the task becomes difficult?"
+    },
+    {
+      "id": 389,
+      "category": "persistence",
+      "reverse": true,
+      "text": "When nobody is monitoring progress, how likely are you to continue through a manageable period of difficulty?"
+    },
+    {
+      "id": 390,
+      "category": "persistence",
+      "reverse": false,
+      "text": "After missing an intended start time, how likely are you to leave partially completed work untouched for long periods?"
+    },
+    {
+      "id": 391,
+      "category": "persistence",
+      "reverse": true,
+      "text": "When a tempting activity appears, how likely are you to set a clear return point when you must pause?"
+    },
+    {
+      "id": 392,
+      "category": "persistence",
+      "reverse": false,
+      "text": "While thinking about tomorrow, how likely are you to stop soon after the task becomes difficult?"
+    },
+    {
+      "id": 393,
+      "category": "persistence",
+      "reverse": true,
+      "text": "When a task becomes difficult, how likely are you to continue through a manageable period of difficulty?"
+    },
+    {
+      "id": 394,
+      "category": "persistence",
+      "reverse": false,
+      "text": "After receiving critical feedback, how likely are you to leave partially completed work untouched for long periods?"
+    },
+    {
+      "id": 395,
+      "category": "persistence",
+      "reverse": true,
+      "text": "When the deadline begins to feel urgent, how likely are you to set a clear return point when you must pause?"
+    },
+    {
+      "id": 396,
+      "category": "persistence",
+      "reverse": false,
+      "text": "During a busy school or work week, how likely are you to stop soon after the task becomes difficult?"
+    },
+    {
+      "id": 397,
+      "category": "persistence",
+      "reverse": true,
+      "text": "When returning to unfinished work, how likely are you to continue through a manageable period of difficulty?"
+    },
+    {
+      "id": 398,
+      "category": "persistence",
+      "reverse": false,
+      "text": "After noticing that you delayed again, how likely are you to leave partially completed work untouched for long periods?"
+    },
+    {
+      "id": 399,
+      "category": "persistence",
+      "reverse": true,
+      "text": "When planning the next action, how likely are you to set a clear return point when you must pause?"
+    },
+    {
+      "id": 400,
+      "category": "persistence",
+      "reverse": false,
+      "text": "Across repeated responsibilities, how likely are you to stop soon after the task becomes difficult?"
+    },
+    {
+      "id": 401,
+      "category": "accountability",
+      "reverse": false,
+      "text": "When an important task first appears, how likely are you to avoid making progress visible to anyone?"
+    },
+    {
+      "id": 402,
+      "category": "accountability",
+      "reverse": true,
+      "text": "When you have enough information to proceed, how likely are you to use an appropriate progress check with a supportive person?"
+    },
+    {
+      "id": 403,
+      "category": "accountability",
+      "reverse": false,
+      "text": "At the start of a normal day, how likely are you to hide missed commitments instead of reviewing them?"
+    },
+    {
+      "id": 404,
+      "category": "accountability",
+      "reverse": true,
+      "text": "When a task feels boring, how likely are you to acknowledge a missed commitment and reset it honestly?"
+    },
+    {
+      "id": 405,
+      "category": "accountability",
+      "reverse": false,
+      "text": "When your work may be evaluated, how likely are you to avoid making progress visible to anyone?"
+    },
+    {
+      "id": 406,
+      "category": "accountability",
+      "reverse": true,
+      "text": "Before a distant deadline, how likely are you to use an appropriate progress check with a supportive person?"
+    },
+    {
+      "id": 407,
+      "category": "accountability",
+      "reverse": false,
+      "text": "When several options are available, how likely are you to hide missed commitments instead of reviewing them?"
+    },
+    {
+      "id": 408,
+      "category": "accountability",
+      "reverse": true,
+      "text": "After making a detailed plan, how likely are you to acknowledge a missed commitment and reset it honestly?"
+    },
+    {
+      "id": 409,
+      "category": "accountability",
+      "reverse": false,
+      "text": "When a project feels large, how likely are you to avoid making progress visible to anyone?"
+    },
+    {
+      "id": 410,
+      "category": "accountability",
+      "reverse": true,
+      "text": "During an uncomfortable emotion, how likely are you to use an appropriate progress check with a supportive person?"
+    },
+    {
+      "id": 411,
+      "category": "accountability",
+      "reverse": false,
+      "text": "When your phone is nearby, how likely are you to hide missed commitments instead of reviewing them?"
+    },
+    {
+      "id": 412,
+      "category": "accountability",
+      "reverse": true,
+      "text": "After completing an easier task, how likely are you to acknowledge a missed commitment and reset it honestly?"
+    },
+    {
+      "id": 413,
+      "category": "accountability",
+      "reverse": false,
+      "text": "When motivation is low, how likely are you to avoid making progress visible to anyone?"
+    },
+    {
+      "id": 414,
+      "category": "accountability",
+      "reverse": true,
+      "text": "When nobody is monitoring progress, how likely are you to use an appropriate progress check with a supportive person?"
+    },
+    {
+      "id": 415,
+      "category": "accountability",
+      "reverse": false,
+      "text": "After missing an intended start time, how likely are you to hide missed commitments instead of reviewing them?"
+    },
+    {
+      "id": 416,
+      "category": "accountability",
+      "reverse": true,
+      "text": "When a tempting activity appears, how likely are you to acknowledge a missed commitment and reset it honestly?"
+    },
+    {
+      "id": 417,
+      "category": "accountability",
+      "reverse": false,
+      "text": "While thinking about tomorrow, how likely are you to avoid making progress visible to anyone?"
+    },
+    {
+      "id": 418,
+      "category": "accountability",
+      "reverse": true,
+      "text": "When a task becomes difficult, how likely are you to use an appropriate progress check with a supportive person?"
+    },
+    {
+      "id": 419,
+      "category": "accountability",
+      "reverse": false,
+      "text": "After receiving critical feedback, how likely are you to hide missed commitments instead of reviewing them?"
+    },
+    {
+      "id": 420,
+      "category": "accountability",
+      "reverse": true,
+      "text": "When the deadline begins to feel urgent, how likely are you to acknowledge a missed commitment and reset it honestly?"
+    },
+    {
+      "id": 421,
+      "category": "accountability",
+      "reverse": false,
+      "text": "During a busy school or work week, how likely are you to avoid making progress visible to anyone?"
+    },
+    {
+      "id": 422,
+      "category": "accountability",
+      "reverse": true,
+      "text": "When returning to unfinished work, how likely are you to use an appropriate progress check with a supportive person?"
+    },
+    {
+      "id": 423,
+      "category": "accountability",
+      "reverse": false,
+      "text": "After noticing that you delayed again, how likely are you to hide missed commitments instead of reviewing them?"
+    },
+    {
+      "id": 424,
+      "category": "accountability",
+      "reverse": true,
+      "text": "When planning the next action, how likely are you to acknowledge a missed commitment and reset it honestly?"
+    },
+    {
+      "id": 425,
+      "category": "accountability",
+      "reverse": false,
+      "text": "Across repeated responsibilities, how likely are you to avoid making progress visible to anyone?"
+    },
+    {
+      "id": 426,
+      "category": "environment",
+      "reverse": false,
+      "text": "When an important task first appears, how likely are you to work in a setting that repeatedly encourages avoidance?"
+    },
+    {
+      "id": 427,
+      "category": "environment",
+      "reverse": true,
+      "text": "When you have enough information to proceed, how likely are you to prepare an environment that makes starting easier?"
+    },
+    {
+      "id": 428,
+      "category": "environment",
+      "reverse": false,
+      "text": "At the start of a normal day, how likely are you to keep distracting materials within easy reach?"
+    },
+    {
+      "id": 429,
+      "category": "environment",
+      "reverse": true,
+      "text": "When a task feels boring, how likely are you to remove a predictable cue for avoidance before working?"
+    },
+    {
+      "id": 430,
+      "category": "environment",
+      "reverse": false,
+      "text": "When your work may be evaluated, how likely are you to work in a setting that repeatedly encourages avoidance?"
+    },
+    {
+      "id": 431,
+      "category": "environment",
+      "reverse": true,
+      "text": "Before a distant deadline, how likely are you to prepare an environment that makes starting easier?"
+    },
+    {
+      "id": 432,
+      "category": "environment",
+      "reverse": false,
+      "text": "When several options are available, how likely are you to keep distracting materials within easy reach?"
+    },
+    {
+      "id": 433,
+      "category": "environment",
+      "reverse": true,
+      "text": "After making a detailed plan, how likely are you to remove a predictable cue for avoidance before working?"
+    },
+    {
+      "id": 434,
+      "category": "environment",
+      "reverse": false,
+      "text": "When a project feels large, how likely are you to work in a setting that repeatedly encourages avoidance?"
+    },
+    {
+      "id": 435,
+      "category": "environment",
+      "reverse": true,
+      "text": "During an uncomfortable emotion, how likely are you to prepare an environment that makes starting easier?"
+    },
+    {
+      "id": 436,
+      "category": "environment",
+      "reverse": false,
+      "text": "When your phone is nearby, how likely are you to keep distracting materials within easy reach?"
+    },
+    {
+      "id": 437,
+      "category": "environment",
+      "reverse": true,
+      "text": "After completing an easier task, how likely are you to remove a predictable cue for avoidance before working?"
+    },
+    {
+      "id": 438,
+      "category": "environment",
+      "reverse": false,
+      "text": "When motivation is low, how likely are you to work in a setting that repeatedly encourages avoidance?"
+    },
+    {
+      "id": 439,
+      "category": "environment",
+      "reverse": true,
+      "text": "When nobody is monitoring progress, how likely are you to prepare an environment that makes starting easier?"
+    },
+    {
+      "id": 440,
+      "category": "environment",
+      "reverse": false,
+      "text": "After missing an intended start time, how likely are you to keep distracting materials within easy reach?"
+    },
+    {
+      "id": 441,
+      "category": "environment",
+      "reverse": true,
+      "text": "When a tempting activity appears, how likely are you to remove a predictable cue for avoidance before working?"
+    },
+    {
+      "id": 442,
+      "category": "environment",
+      "reverse": false,
+      "text": "While thinking about tomorrow, how likely are you to work in a setting that repeatedly encourages avoidance?"
+    },
+    {
+      "id": 443,
+      "category": "environment",
+      "reverse": true,
+      "text": "When a task becomes difficult, how likely are you to prepare an environment that makes starting easier?"
+    },
+    {
+      "id": 444,
+      "category": "environment",
+      "reverse": false,
+      "text": "After receiving critical feedback, how likely are you to keep distracting materials within easy reach?"
+    },
+    {
+      "id": 445,
+      "category": "environment",
+      "reverse": true,
+      "text": "When the deadline begins to feel urgent, how likely are you to remove a predictable cue for avoidance before working?"
+    },
+    {
+      "id": 446,
+      "category": "environment",
+      "reverse": false,
+      "text": "During a busy school or work week, how likely are you to work in a setting that repeatedly encourages avoidance?"
+    },
+    {
+      "id": 447,
+      "category": "environment",
+      "reverse": true,
+      "text": "When returning to unfinished work, how likely are you to prepare an environment that makes starting easier?"
+    },
+    {
+      "id": 448,
+      "category": "environment",
+      "reverse": false,
+      "text": "After noticing that you delayed again, how likely are you to keep distracting materials within easy reach?"
+    },
+    {
+      "id": 449,
+      "category": "environment",
+      "reverse": true,
+      "text": "When planning the next action, how likely are you to remove a predictable cue for avoidance before working?"
+    },
+    {
+      "id": 450,
+      "category": "environment",
+      "reverse": false,
+      "text": "Across repeated responsibilities, how likely are you to work in a setting that repeatedly encourages avoidance?"
+    },
+    {
+      "id": 451,
+      "category": "self_criticism",
+      "reverse": false,
+      "text": "When an important task first appears, how likely are you to criticise yourself so harshly that restarting becomes harder?"
+    },
+    {
+      "id": 452,
+      "category": "self_criticism",
+      "reverse": true,
+      "text": "When you have enough information to proceed, how likely are you to respond to a delay with honest but constructive reflection?"
+    },
+    {
+      "id": 453,
+      "category": "self_criticism",
+      "reverse": false,
+      "text": "At the start of a normal day, how likely are you to use shame about past delay as a reason to avoid the task again?"
+    },
+    {
+      "id": 454,
+      "category": "self_criticism",
+      "reverse": true,
+      "text": "When a task feels boring, how likely are you to restart without requiring yourself to erase the past mistake?"
+    },
+    {
+      "id": 455,
+      "category": "self_criticism",
+      "reverse": false,
+      "text": "When your work may be evaluated, how likely are you to criticise yourself so harshly that restarting becomes harder?"
+    },
+    {
+      "id": 456,
+      "category": "self_criticism",
+      "reverse": true,
+      "text": "Before a distant deadline, how likely are you to respond to a delay with honest but constructive reflection?"
+    },
+    {
+      "id": 457,
+      "category": "self_criticism",
+      "reverse": false,
+      "text": "When several options are available, how likely are you to use shame about past delay as a reason to avoid the task again?"
+    },
+    {
+      "id": 458,
+      "category": "self_criticism",
+      "reverse": true,
+      "text": "After making a detailed plan, how likely are you to restart without requiring yourself to erase the past mistake?"
+    },
+    {
+      "id": 459,
+      "category": "self_criticism",
+      "reverse": false,
+      "text": "When a project feels large, how likely are you to criticise yourself so harshly that restarting becomes harder?"
+    },
+    {
+      "id": 460,
+      "category": "self_criticism",
+      "reverse": true,
+      "text": "During an uncomfortable emotion, how likely are you to respond to a delay with honest but constructive reflection?"
+    },
+    {
+      "id": 461,
+      "category": "self_criticism",
+      "reverse": false,
+      "text": "When your phone is nearby, how likely are you to use shame about past delay as a reason to avoid the task again?"
+    },
+    {
+      "id": 462,
+      "category": "self_criticism",
+      "reverse": true,
+      "text": "After completing an easier task, how likely are you to restart without requiring yourself to erase the past mistake?"
+    },
+    {
+      "id": 463,
+      "category": "self_criticism",
+      "reverse": false,
+      "text": "When motivation is low, how likely are you to criticise yourself so harshly that restarting becomes harder?"
+    },
+    {
+      "id": 464,
+      "category": "self_criticism",
+      "reverse": true,
+      "text": "When nobody is monitoring progress, how likely are you to respond to a delay with honest but constructive reflection?"
+    },
+    {
+      "id": 465,
+      "category": "self_criticism",
+      "reverse": false,
+      "text": "After missing an intended start time, how likely are you to use shame about past delay as a reason to avoid the task again?"
+    },
+    {
+      "id": 466,
+      "category": "self_criticism",
+      "reverse": true,
+      "text": "When a tempting activity appears, how likely are you to restart without requiring yourself to erase the past mistake?"
+    },
+    {
+      "id": 467,
+      "category": "self_criticism",
+      "reverse": false,
+      "text": "While thinking about tomorrow, how likely are you to criticise yourself so harshly that restarting becomes harder?"
+    },
+    {
+      "id": 468,
+      "category": "self_criticism",
+      "reverse": true,
+      "text": "When a task becomes difficult, how likely are you to respond to a delay with honest but constructive reflection?"
+    },
+    {
+      "id": 469,
+      "category": "self_criticism",
+      "reverse": false,
+      "text": "After receiving critical feedback, how likely are you to use shame about past delay as a reason to avoid the task again?"
+    },
+    {
+      "id": 470,
+      "category": "self_criticism",
+      "reverse": true,
+      "text": "When the deadline begins to feel urgent, how likely are you to restart without requiring yourself to erase the past mistake?"
+    },
+    {
+      "id": 471,
+      "category": "self_criticism",
+      "reverse": false,
+      "text": "During a busy school or work week, how likely are you to criticise yourself so harshly that restarting becomes harder?"
+    },
+    {
+      "id": 472,
+      "category": "self_criticism",
+      "reverse": true,
+      "text": "When returning to unfinished work, how likely are you to respond to a delay with honest but constructive reflection?"
+    },
+    {
+      "id": 473,
+      "category": "self_criticism",
+      "reverse": false,
+      "text": "After noticing that you delayed again, how likely are you to use shame about past delay as a reason to avoid the task again?"
+    },
+    {
+      "id": 474,
+      "category": "self_criticism",
+      "reverse": true,
+      "text": "When planning the next action, how likely are you to restart without requiring yourself to erase the past mistake?"
+    },
+    {
+      "id": 475,
+      "category": "self_criticism",
+      "reverse": false,
+      "text": "Across repeated responsibilities, how likely are you to criticise yourself so harshly that restarting becomes harder?"
+    },
+    {
+      "id": 476,
+      "category": "functional_impact",
+      "reverse": false,
+      "text": "When an important task first appears, how likely are you to let repeated delay interfere with work, study, health, or relationships?"
+    },
+    {
+      "id": 477,
+      "category": "functional_impact",
+      "reverse": true,
+      "text": "When you have enough information to proceed, how likely are you to complete responsibilities early enough to protect daily functioning?"
+    },
+    {
+      "id": 478,
+      "category": "functional_impact",
+      "reverse": false,
+      "text": "At the start of a normal day, how likely are you to experience avoidable stress because important tasks remain unfinished?"
+    },
+    {
+      "id": 479,
+      "category": "functional_impact",
+      "reverse": true,
+      "text": "When a task feels boring, how likely are you to keep delay from repeatedly harming important life areas?"
+    },
+    {
+      "id": 480,
+      "category": "functional_impact",
+      "reverse": false,
+      "text": "When your work may be evaluated, how likely are you to let repeated delay interfere with work, study, health, or relationships?"
+    },
+    {
+      "id": 481,
+      "category": "functional_impact",
+      "reverse": true,
+      "text": "Before a distant deadline, how likely are you to complete responsibilities early enough to protect daily functioning?"
+    },
+    {
+      "id": 482,
+      "category": "functional_impact",
+      "reverse": false,
+      "text": "When several options are available, how likely are you to experience avoidable stress because important tasks remain unfinished?"
+    },
+    {
+      "id": 483,
+      "category": "functional_impact",
+      "reverse": true,
+      "text": "After making a detailed plan, how likely are you to keep delay from repeatedly harming important life areas?"
+    },
+    {
+      "id": 484,
+      "category": "functional_impact",
+      "reverse": false,
+      "text": "When a project feels large, how likely are you to let repeated delay interfere with work, study, health, or relationships?"
+    },
+    {
+      "id": 485,
+      "category": "functional_impact",
+      "reverse": true,
+      "text": "During an uncomfortable emotion, how likely are you to complete responsibilities early enough to protect daily functioning?"
+    },
+    {
+      "id": 486,
+      "category": "functional_impact",
+      "reverse": false,
+      "text": "When your phone is nearby, how likely are you to experience avoidable stress because important tasks remain unfinished?"
+    },
+    {
+      "id": 487,
+      "category": "functional_impact",
+      "reverse": true,
+      "text": "After completing an easier task, how likely are you to keep delay from repeatedly harming important life areas?"
+    },
+    {
+      "id": 488,
+      "category": "functional_impact",
+      "reverse": false,
+      "text": "When motivation is low, how likely are you to let repeated delay interfere with work, study, health, or relationships?"
+    },
+    {
+      "id": 489,
+      "category": "functional_impact",
+      "reverse": true,
+      "text": "When nobody is monitoring progress, how likely are you to complete responsibilities early enough to protect daily functioning?"
+    },
+    {
+      "id": 490,
+      "category": "functional_impact",
+      "reverse": false,
+      "text": "After missing an intended start time, how likely are you to experience avoidable stress because important tasks remain unfinished?"
+    },
+    {
+      "id": 491,
+      "category": "functional_impact",
+      "reverse": true,
+      "text": "When a tempting activity appears, how likely are you to keep delay from repeatedly harming important life areas?"
+    },
+    {
+      "id": 492,
+      "category": "functional_impact",
+      "reverse": false,
+      "text": "While thinking about tomorrow, how likely are you to let repeated delay interfere with work, study, health, or relationships?"
+    },
+    {
+      "id": 493,
+      "category": "functional_impact",
+      "reverse": true,
+      "text": "When a task becomes difficult, how likely are you to complete responsibilities early enough to protect daily functioning?"
+    },
+    {
+      "id": 494,
+      "category": "functional_impact",
+      "reverse": false,
+      "text": "After receiving critical feedback, how likely are you to experience avoidable stress because important tasks remain unfinished?"
+    },
+    {
+      "id": 495,
+      "category": "functional_impact",
+      "reverse": true,
+      "text": "When the deadline begins to feel urgent, how likely are you to keep delay from repeatedly harming important life areas?"
+    },
+    {
+      "id": 496,
+      "category": "functional_impact",
+      "reverse": false,
+      "text": "During a busy school or work week, how likely are you to let repeated delay interfere with work, study, health, or relationships?"
+    },
+    {
+      "id": 497,
+      "category": "functional_impact",
+      "reverse": true,
+      "text": "When returning to unfinished work, how likely are you to complete responsibilities early enough to protect daily functioning?"
+    },
+    {
+      "id": 498,
+      "category": "functional_impact",
+      "reverse": false,
+      "text": "After noticing that you delayed again, how likely are you to experience avoidable stress because important tasks remain unfinished?"
+    },
+    {
+      "id": 499,
+      "category": "functional_impact",
+      "reverse": true,
+      "text": "When planning the next action, how likely are you to keep delay from repeatedly harming important life areas?"
+    },
+    {
+      "id": 500,
+      "category": "functional_impact",
+      "reverse": false,
+      "text": "Across repeated responsibilities, how likely are you to let repeated delay interfere with work, study, health, or relationships?"
+    }
+  ]
+}

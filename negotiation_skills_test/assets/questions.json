@@ -1,0 +1,3160 @@
+{
+  "meta": {
+    "title": "Negotiation Skills Test",
+    "description": "A detailed 500-question reflection across 20 dimensions of negotiation skill.",
+    "scale": {
+      "min": 1,
+      "max": 10,
+      "minLabel": "Not at all likely",
+      "maxLabel": "Extremely likely"
+    },
+    "categories": [
+      {
+        "id": "preparation",
+        "label": "Preparation & Research",
+        "icon": "📚"
+      },
+      {
+        "id": "interests",
+        "label": "Interests & Needs",
+        "icon": "🎯"
+      },
+      {
+        "id": "alternatives",
+        "label": "Alternatives & BATNA",
+        "icon": "🛤️"
+      },
+      {
+        "id": "goals_limits",
+        "label": "Goals, Priorities & Limits",
+        "icon": "🚧"
+      },
+      {
+        "id": "information",
+        "label": "Information Gathering",
+        "icon": "🔎"
+      },
+      {
+        "id": "listening",
+        "label": "Active Listening",
+        "icon": "👂"
+      },
+      {
+        "id": "questioning",
+        "label": "Strategic Questioning",
+        "icon": "❓"
+      },
+      {
+        "id": "rapport",
+        "label": "Rapport & Trust",
+        "icon": "🤝"
+      },
+      {
+        "id": "emotion",
+        "label": "Emotional Regulation",
+        "icon": "🧘"
+      },
+      {
+        "id": "assertiveness",
+        "label": "Assertiveness & Boundaries",
+        "icon": "🛡️"
+      },
+      {
+        "id": "empathy",
+        "label": "Empathy & Perspective-Taking",
+        "icon": "🧠"
+      },
+      {
+        "id": "framing",
+        "label": "Framing & Communication",
+        "icon": "🖼️"
+      },
+      {
+        "id": "value_creation",
+        "label": "Value Creation",
+        "icon": "✨"
+      },
+      {
+        "id": "tradeoffs",
+        "label": "Trade-Offs & Concessions",
+        "icon": "⚖️"
+      },
+      {
+        "id": "offers",
+        "label": "Offers & Anchoring",
+        "icon": "📍"
+      },
+      {
+        "id": "problem_solving",
+        "label": "Joint Problem-Solving",
+        "icon": "🧩"
+      },
+      {
+        "id": "conflict",
+        "label": "Conflict & Difficult Tactics",
+        "icon": "🔥"
+      },
+      {
+        "id": "ethics",
+        "label": "Ethics & Fair Process",
+        "icon": "🕊️"
+      },
+      {
+        "id": "adaptability",
+        "label": "Adaptability & Cultural Awareness",
+        "icon": "🌍"
+      },
+      {
+        "id": "closing",
+        "label": "Closing & Implementation",
+        "icon": "✅"
+      }
+    ],
+    "levels": [
+      {
+        "min": 9,
+        "max": 10.01,
+        "label": "Highly Skilled Negotiator",
+        "emoji": "🏆",
+        "desc": "You consistently prepare, understand interests, communicate clearly, create value, manage pressure, and close agreements responsibly."
+      },
+      {
+        "min": 7.5,
+        "max": 9,
+        "label": "Strong Negotiator",
+        "emoji": "🌟",
+        "desc": "Your negotiation habits are effective across most dimensions, with a few opportunities to become more deliberate or adaptable."
+      },
+      {
+        "min": 6,
+        "max": 7.5,
+        "label": "Developing Negotiator",
+        "emoji": "🧭",
+        "desc": "You demonstrate several useful skills, though preparation, value creation, assertiveness, or closing may vary by situation."
+      },
+      {
+        "min": 4.5,
+        "max": 6,
+        "label": "Emerging Negotiator",
+        "emoji": "🌱",
+        "desc": "Some foundations are present, but a clearer process for interests, alternatives, listening, and trade-offs could strengthen outcomes."
+      },
+      {
+        "min": 3,
+        "max": 4.5,
+        "label": "Inconsistent Negotiation Process",
+        "emoji": "🔧",
+        "desc": "Your approach may often become reactive, position-focused, or unclear. Start with preparation, listening, and defined limits."
+      },
+      {
+        "min": 1,
+        "max": 3,
+        "label": "Negotiation Foundations Needed",
+        "emoji": "📘",
+        "desc": "Current habits may offer limited preparation, information, or structure. Practising one dimension at a time can build confidence."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "category": "preparation",
+      "reverse": false,
+      "text": "Before an important negotiation begins, how likely are you to research the situation before discussing terms?"
+    },
+    {
+      "id": 2,
+      "category": "preparation",
+      "reverse": true,
+      "text": "When the other side states a firm position, how likely are you to enter the discussion with almost no preparation?"
+    },
+    {
+      "id": 3,
+      "category": "preparation",
+      "reverse": false,
+      "text": "During an early conversation about terms, how likely are you to prepare relevant facts, constraints, and likely concerns?"
+    },
+    {
+      "id": 4,
+      "category": "preparation",
+      "reverse": true,
+      "text": "When information is incomplete, how likely are you to depend on improvisation for information you could have gathered?"
+    },
+    {
+      "id": 5,
+      "category": "preparation",
+      "reverse": false,
+      "text": "After hearing an unexpected demand, how likely are you to research the situation before discussing terms?"
+    },
+    {
+      "id": 6,
+      "category": "preparation",
+      "reverse": true,
+      "text": "When your preferred outcome is challenged, how likely are you to enter the discussion with almost no preparation?"
+    },
+    {
+      "id": 7,
+      "category": "preparation",
+      "reverse": false,
+      "text": "While discussing price or resources, how likely are you to prepare relevant facts, constraints, and likely concerns?"
+    },
+    {
+      "id": 8,
+      "category": "preparation",
+      "reverse": true,
+      "text": "When the conversation becomes tense, how likely are you to depend on improvisation for information you could have gathered?"
+    },
+    {
+      "id": 9,
+      "category": "preparation",
+      "reverse": false,
+      "text": "Before making the first offer, how likely are you to research the situation before discussing terms?"
+    },
+    {
+      "id": 10,
+      "category": "preparation",
+      "reverse": true,
+      "text": "When the other side asks for a concession, how likely are you to enter the discussion with almost no preparation?"
+    },
+    {
+      "id": 11,
+      "category": "preparation",
+      "reverse": false,
+      "text": "After noticing different priorities, how likely are you to prepare relevant facts, constraints, and likely concerns?"
+    },
+    {
+      "id": 12,
+      "category": "preparation",
+      "reverse": true,
+      "text": "When several solutions seem possible, how likely are you to depend on improvisation for information you could have gathered?"
+    },
+    {
+      "id": 13,
+      "category": "preparation",
+      "reverse": false,
+      "text": "During a disagreement about facts, how likely are you to research the situation before discussing terms?"
+    },
+    {
+      "id": 14,
+      "category": "preparation",
+      "reverse": true,
+      "text": "When you feel pressured to decide quickly, how likely are you to enter the discussion with almost no preparation?"
+    },
+    {
+      "id": 15,
+      "category": "preparation",
+      "reverse": false,
+      "text": "After receiving new reliable information, how likely are you to prepare relevant facts, constraints, and likely concerns?"
+    },
+    {
+      "id": 16,
+      "category": "preparation",
+      "reverse": true,
+      "text": "When a proposal is almost acceptable, how likely are you to depend on improvisation for information you could have gathered?"
+    },
+    {
+      "id": 17,
+      "category": "preparation",
+      "reverse": false,
+      "text": "If the other side uses a difficult tactic, how likely are you to research the situation before discussing terms?"
+    },
+    {
+      "id": 18,
+      "category": "preparation",
+      "reverse": true,
+      "text": "When cultural expectations may differ, how likely are you to enter the discussion with almost no preparation?"
+    },
+    {
+      "id": 19,
+      "category": "preparation",
+      "reverse": false,
+      "text": "Before accepting final terms, how likely are you to prepare relevant facts, constraints, and likely concerns?"
+    },
+    {
+      "id": 20,
+      "category": "preparation",
+      "reverse": true,
+      "text": "When an agreement seems within reach, how likely are you to depend on improvisation for information you could have gathered?"
+    },
+    {
+      "id": 21,
+      "category": "preparation",
+      "reverse": false,
+      "text": "After a misunderstanding appears, how likely are you to research the situation before discussing terms?"
+    },
+    {
+      "id": 22,
+      "category": "preparation",
+      "reverse": true,
+      "text": "When long-term cooperation matters, how likely are you to enter the discussion with almost no preparation?"
+    },
+    {
+      "id": 23,
+      "category": "preparation",
+      "reverse": false,
+      "text": "While comparing possible packages, how likely are you to prepare relevant facts, constraints, and likely concerns?"
+    },
+    {
+      "id": 24,
+      "category": "preparation",
+      "reverse": true,
+      "text": "At the end of the meeting, how likely are you to depend on improvisation for information you could have gathered?"
+    },
+    {
+      "id": 25,
+      "category": "preparation",
+      "reverse": false,
+      "text": "During repeated negotiations over time, how likely are you to research the situation before discussing terms?"
+    },
+    {
+      "id": 26,
+      "category": "interests",
+      "reverse": false,
+      "text": "Before an important negotiation begins, how likely are you to identify the needs underneath stated positions?"
+    },
+    {
+      "id": 27,
+      "category": "interests",
+      "reverse": true,
+      "text": "When the other side states a firm position, how likely are you to focus only on the demands people initially state?"
+    },
+    {
+      "id": 28,
+      "category": "interests",
+      "reverse": false,
+      "text": "During an early conversation about terms, how likely are you to separate what each side wants from why it matters?"
+    },
+    {
+      "id": 29,
+      "category": "interests",
+      "reverse": true,
+      "text": "When information is incomplete, how likely are you to assume a fixed position reveals every underlying need?"
+    },
+    {
+      "id": 30,
+      "category": "interests",
+      "reverse": false,
+      "text": "After hearing an unexpected demand, how likely are you to identify the needs underneath stated positions?"
+    },
+    {
+      "id": 31,
+      "category": "interests",
+      "reverse": true,
+      "text": "When your preferred outcome is challenged, how likely are you to focus only on the demands people initially state?"
+    },
+    {
+      "id": 32,
+      "category": "interests",
+      "reverse": false,
+      "text": "While discussing price or resources, how likely are you to separate what each side wants from why it matters?"
+    },
+    {
+      "id": 33,
+      "category": "interests",
+      "reverse": true,
+      "text": "When the conversation becomes tense, how likely are you to assume a fixed position reveals every underlying need?"
+    },
+    {
+      "id": 34,
+      "category": "interests",
+      "reverse": false,
+      "text": "Before making the first offer, how likely are you to identify the needs underneath stated positions?"
+    },
+    {
+      "id": 35,
+      "category": "interests",
+      "reverse": true,
+      "text": "When the other side asks for a concession, how likely are you to focus only on the demands people initially state?"
+    },
+    {
+      "id": 36,
+      "category": "interests",
+      "reverse": false,
+      "text": "After noticing different priorities, how likely are you to separate what each side wants from why it matters?"
+    },
+    {
+      "id": 37,
+      "category": "interests",
+      "reverse": true,
+      "text": "When several solutions seem possible, how likely are you to assume a fixed position reveals every underlying need?"
+    },
+    {
+      "id": 38,
+      "category": "interests",
+      "reverse": false,
+      "text": "During a disagreement about facts, how likely are you to identify the needs underneath stated positions?"
+    },
+    {
+      "id": 39,
+      "category": "interests",
+      "reverse": true,
+      "text": "When you feel pressured to decide quickly, how likely are you to focus only on the demands people initially state?"
+    },
+    {
+      "id": 40,
+      "category": "interests",
+      "reverse": false,
+      "text": "After receiving new reliable information, how likely are you to separate what each side wants from why it matters?"
+    },
+    {
+      "id": 41,
+      "category": "interests",
+      "reverse": true,
+      "text": "When a proposal is almost acceptable, how likely are you to assume a fixed position reveals every underlying need?"
+    },
+    {
+      "id": 42,
+      "category": "interests",
+      "reverse": false,
+      "text": "If the other side uses a difficult tactic, how likely are you to identify the needs underneath stated positions?"
+    },
+    {
+      "id": 43,
+      "category": "interests",
+      "reverse": true,
+      "text": "When cultural expectations may differ, how likely are you to focus only on the demands people initially state?"
+    },
+    {
+      "id": 44,
+      "category": "interests",
+      "reverse": false,
+      "text": "Before accepting final terms, how likely are you to separate what each side wants from why it matters?"
+    },
+    {
+      "id": 45,
+      "category": "interests",
+      "reverse": true,
+      "text": "When an agreement seems within reach, how likely are you to assume a fixed position reveals every underlying need?"
+    },
+    {
+      "id": 46,
+      "category": "interests",
+      "reverse": false,
+      "text": "After a misunderstanding appears, how likely are you to identify the needs underneath stated positions?"
+    },
+    {
+      "id": 47,
+      "category": "interests",
+      "reverse": true,
+      "text": "When long-term cooperation matters, how likely are you to focus only on the demands people initially state?"
+    },
+    {
+      "id": 48,
+      "category": "interests",
+      "reverse": false,
+      "text": "While comparing possible packages, how likely are you to separate what each side wants from why it matters?"
+    },
+    {
+      "id": 49,
+      "category": "interests",
+      "reverse": true,
+      "text": "At the end of the meeting, how likely are you to assume a fixed position reveals every underlying need?"
+    },
+    {
+      "id": 50,
+      "category": "interests",
+      "reverse": false,
+      "text": "During repeated negotiations over time, how likely are you to identify the needs underneath stated positions?"
+    },
+    {
+      "id": 51,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "Before an important negotiation begins, how likely are you to evaluate your best realistic alternative before negotiating?"
+    },
+    {
+      "id": 52,
+      "category": "alternatives",
+      "reverse": true,
+      "text": "When the other side states a firm position, how likely are you to negotiate without knowing what you will do if no agreement is reached?"
+    },
+    {
+      "id": 53,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "During an early conversation about terms, how likely are you to compare a proposed agreement with the option of walking away?"
+    },
+    {
+      "id": 54,
+      "category": "alternatives",
+      "reverse": true,
+      "text": "When information is incomplete, how likely are you to accept terms mainly because you have not considered alternatives?"
+    },
+    {
+      "id": 55,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "After hearing an unexpected demand, how likely are you to evaluate your best realistic alternative before negotiating?"
+    },
+    {
+      "id": 56,
+      "category": "alternatives",
+      "reverse": true,
+      "text": "When your preferred outcome is challenged, how likely are you to negotiate without knowing what you will do if no agreement is reached?"
+    },
+    {
+      "id": 57,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "While discussing price or resources, how likely are you to compare a proposed agreement with the option of walking away?"
+    },
+    {
+      "id": 58,
+      "category": "alternatives",
+      "reverse": true,
+      "text": "When the conversation becomes tense, how likely are you to accept terms mainly because you have not considered alternatives?"
+    },
+    {
+      "id": 59,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "Before making the first offer, how likely are you to evaluate your best realistic alternative before negotiating?"
+    },
+    {
+      "id": 60,
+      "category": "alternatives",
+      "reverse": true,
+      "text": "When the other side asks for a concession, how likely are you to negotiate without knowing what you will do if no agreement is reached?"
+    },
+    {
+      "id": 61,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "After noticing different priorities, how likely are you to compare a proposed agreement with the option of walking away?"
+    },
+    {
+      "id": 62,
+      "category": "alternatives",
+      "reverse": true,
+      "text": "When several solutions seem possible, how likely are you to accept terms mainly because you have not considered alternatives?"
+    },
+    {
+      "id": 63,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "During a disagreement about facts, how likely are you to evaluate your best realistic alternative before negotiating?"
+    },
+    {
+      "id": 64,
+      "category": "alternatives",
+      "reverse": true,
+      "text": "When you feel pressured to decide quickly, how likely are you to negotiate without knowing what you will do if no agreement is reached?"
+    },
+    {
+      "id": 65,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "After receiving new reliable information, how likely are you to compare a proposed agreement with the option of walking away?"
+    },
+    {
+      "id": 66,
+      "category": "alternatives",
+      "reverse": true,
+      "text": "When a proposal is almost acceptable, how likely are you to accept terms mainly because you have not considered alternatives?"
+    },
+    {
+      "id": 67,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "If the other side uses a difficult tactic, how likely are you to evaluate your best realistic alternative before negotiating?"
+    },
+    {
+      "id": 68,
+      "category": "alternatives",
+      "reverse": true,
+      "text": "When cultural expectations may differ, how likely are you to negotiate without knowing what you will do if no agreement is reached?"
+    },
+    {
+      "id": 69,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "Before accepting final terms, how likely are you to compare a proposed agreement with the option of walking away?"
+    },
+    {
+      "id": 70,
+      "category": "alternatives",
+      "reverse": true,
+      "text": "When an agreement seems within reach, how likely are you to accept terms mainly because you have not considered alternatives?"
+    },
+    {
+      "id": 71,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "After a misunderstanding appears, how likely are you to evaluate your best realistic alternative before negotiating?"
+    },
+    {
+      "id": 72,
+      "category": "alternatives",
+      "reverse": true,
+      "text": "When long-term cooperation matters, how likely are you to negotiate without knowing what you will do if no agreement is reached?"
+    },
+    {
+      "id": 73,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "While comparing possible packages, how likely are you to compare a proposed agreement with the option of walking away?"
+    },
+    {
+      "id": 74,
+      "category": "alternatives",
+      "reverse": true,
+      "text": "At the end of the meeting, how likely are you to accept terms mainly because you have not considered alternatives?"
+    },
+    {
+      "id": 75,
+      "category": "alternatives",
+      "reverse": false,
+      "text": "During repeated negotiations over time, how likely are you to evaluate your best realistic alternative before negotiating?"
+    },
+    {
+      "id": 76,
+      "category": "goals_limits",
+      "reverse": false,
+      "text": "Before an important negotiation begins, how likely are you to define your target, priorities, and minimum acceptable outcome?"
+    },
+    {
+      "id": 77,
+      "category": "goals_limits",
+      "reverse": true,
+      "text": "When the other side states a firm position, how likely are you to change your minimum requirements during pressure without reflection?"
+    },
+    {
+      "id": 78,
+      "category": "goals_limits",
+      "reverse": false,
+      "text": "During an early conversation about terms, how likely are you to know which terms are essential and which are flexible?"
+    },
+    {
+      "id": 79,
+      "category": "goals_limits",
+      "reverse": true,
+      "text": "When information is incomplete, how likely are you to treat every term as equally important?"
+    },
+    {
+      "id": 80,
+      "category": "goals_limits",
+      "reverse": false,
+      "text": "After hearing an unexpected demand, how likely are you to define your target, priorities, and minimum acceptable outcome?"
+    },
+    {
+      "id": 81,
+      "category": "goals_limits",
+      "reverse": true,
+      "text": "When your preferred outcome is challenged, how likely are you to change your minimum requirements during pressure without reflection?"
+    },
+    {
+      "id": 82,
+      "category": "goals_limits",
+      "reverse": false,
+      "text": "While discussing price or resources, how likely are you to know which terms are essential and which are flexible?"
+    },
+    {
+      "id": 83,
+      "category": "goals_limits",
+      "reverse": true,
+      "text": "When the conversation becomes tense, how likely are you to treat every term as equally important?"
+    },
+    {
+      "id": 84,
+      "category": "goals_limits",
+      "reverse": false,
+      "text": "Before making the first offer, how likely are you to define your target, priorities, and minimum acceptable outcome?"
+    },
+    {
+      "id": 85,
+      "category": "goals_limits",
+      "reverse": true,
+      "text": "When the other side asks for a concession, how likely are you to change your minimum requirements during pressure without reflection?"
+    },
+    {
+      "id": 86,
+      "category": "goals_limits",
+      "reverse": false,
+      "text": "After noticing different priorities, how likely are you to know which terms are essential and which are flexible?"
+    },
+    {
+      "id": 87,
+      "category": "goals_limits",
+      "reverse": true,
+      "text": "When several solutions seem possible, how likely are you to treat every term as equally important?"
+    },
+    {
+      "id": 88,
+      "category": "goals_limits",
+      "reverse": false,
+      "text": "During a disagreement about facts, how likely are you to define your target, priorities, and minimum acceptable outcome?"
+    },
+    {
+      "id": 89,
+      "category": "goals_limits",
+      "reverse": true,
+      "text": "When you feel pressured to decide quickly, how likely are you to change your minimum requirements during pressure without reflection?"
+    },
+    {
+      "id": 90,
+      "category": "goals_limits",
+      "reverse": false,
+      "text": "After receiving new reliable information, how likely are you to know which terms are essential and which are flexible?"
+    },
+    {
+      "id": 91,
+      "category": "goals_limits",
+      "reverse": true,
+      "text": "When a proposal is almost acceptable, how likely are you to treat every term as equally important?"
+    },
+    {
+      "id": 92,
+      "category": "goals_limits",
+      "reverse": false,
+      "text": "If the other side uses a difficult tactic, how likely are you to define your target, priorities, and minimum acceptable outcome?"
+    },
+    {
+      "id": 93,
+      "category": "goals_limits",
+      "reverse": true,
+      "text": "When cultural expectations may differ, how likely are you to change your minimum requirements during pressure without reflection?"
+    },
+    {
+      "id": 94,
+      "category": "goals_limits",
+      "reverse": false,
+      "text": "Before accepting final terms, how likely are you to know which terms are essential and which are flexible?"
+    },
+    {
+      "id": 95,
+      "category": "goals_limits",
+      "reverse": true,
+      "text": "When an agreement seems within reach, how likely are you to treat every term as equally important?"
+    },
+    {
+      "id": 96,
+      "category": "goals_limits",
+      "reverse": false,
+      "text": "After a misunderstanding appears, how likely are you to define your target, priorities, and minimum acceptable outcome?"
+    },
+    {
+      "id": 97,
+      "category": "goals_limits",
+      "reverse": true,
+      "text": "When long-term cooperation matters, how likely are you to change your minimum requirements during pressure without reflection?"
+    },
+    {
+      "id": 98,
+      "category": "goals_limits",
+      "reverse": false,
+      "text": "While comparing possible packages, how likely are you to know which terms are essential and which are flexible?"
+    },
+    {
+      "id": 99,
+      "category": "goals_limits",
+      "reverse": true,
+      "text": "At the end of the meeting, how likely are you to treat every term as equally important?"
+    },
+    {
+      "id": 100,
+      "category": "goals_limits",
+      "reverse": false,
+      "text": "During repeated negotiations over time, how likely are you to define your target, priorities, and minimum acceptable outcome?"
+    },
+    {
+      "id": 101,
+      "category": "information",
+      "reverse": false,
+      "text": "Before an important negotiation begins, how likely are you to seek relevant information before proposing a solution?"
+    },
+    {
+      "id": 102,
+      "category": "information",
+      "reverse": true,
+      "text": "When the other side states a firm position, how likely are you to make major proposals while important information is missing?"
+    },
+    {
+      "id": 103,
+      "category": "information",
+      "reverse": false,
+      "text": "During an early conversation about terms, how likely are you to test assumptions instead of treating them as facts?"
+    },
+    {
+      "id": 104,
+      "category": "information",
+      "reverse": true,
+      "text": "When information is incomplete, how likely are you to hide from information that could challenge your preferred outcome?"
+    },
+    {
+      "id": 105,
+      "category": "information",
+      "reverse": false,
+      "text": "After hearing an unexpected demand, how likely are you to seek relevant information before proposing a solution?"
+    },
+    {
+      "id": 106,
+      "category": "information",
+      "reverse": true,
+      "text": "When your preferred outcome is challenged, how likely are you to make major proposals while important information is missing?"
+    },
+    {
+      "id": 107,
+      "category": "information",
+      "reverse": false,
+      "text": "While discussing price or resources, how likely are you to test assumptions instead of treating them as facts?"
+    },
+    {
+      "id": 108,
+      "category": "information",
+      "reverse": true,
+      "text": "When the conversation becomes tense, how likely are you to hide from information that could challenge your preferred outcome?"
+    },
+    {
+      "id": 109,
+      "category": "information",
+      "reverse": false,
+      "text": "Before making the first offer, how likely are you to seek relevant information before proposing a solution?"
+    },
+    {
+      "id": 110,
+      "category": "information",
+      "reverse": true,
+      "text": "When the other side asks for a concession, how likely are you to make major proposals while important information is missing?"
+    },
+    {
+      "id": 111,
+      "category": "information",
+      "reverse": false,
+      "text": "After noticing different priorities, how likely are you to test assumptions instead of treating them as facts?"
+    },
+    {
+      "id": 112,
+      "category": "information",
+      "reverse": true,
+      "text": "When several solutions seem possible, how likely are you to hide from information that could challenge your preferred outcome?"
+    },
+    {
+      "id": 113,
+      "category": "information",
+      "reverse": false,
+      "text": "During a disagreement about facts, how likely are you to seek relevant information before proposing a solution?"
+    },
+    {
+      "id": 114,
+      "category": "information",
+      "reverse": true,
+      "text": "When you feel pressured to decide quickly, how likely are you to make major proposals while important information is missing?"
+    },
+    {
+      "id": 115,
+      "category": "information",
+      "reverse": false,
+      "text": "After receiving new reliable information, how likely are you to test assumptions instead of treating them as facts?"
+    },
+    {
+      "id": 116,
+      "category": "information",
+      "reverse": true,
+      "text": "When a proposal is almost acceptable, how likely are you to hide from information that could challenge your preferred outcome?"
+    },
+    {
+      "id": 117,
+      "category": "information",
+      "reverse": false,
+      "text": "If the other side uses a difficult tactic, how likely are you to seek relevant information before proposing a solution?"
+    },
+    {
+      "id": 118,
+      "category": "information",
+      "reverse": true,
+      "text": "When cultural expectations may differ, how likely are you to make major proposals while important information is missing?"
+    },
+    {
+      "id": 119,
+      "category": "information",
+      "reverse": false,
+      "text": "Before accepting final terms, how likely are you to test assumptions instead of treating them as facts?"
+    },
+    {
+      "id": 120,
+      "category": "information",
+      "reverse": true,
+      "text": "When an agreement seems within reach, how likely are you to hide from information that could challenge your preferred outcome?"
+    },
+    {
+      "id": 121,
+      "category": "information",
+      "reverse": false,
+      "text": "After a misunderstanding appears, how likely are you to seek relevant information before proposing a solution?"
+    },
+    {
+      "id": 122,
+      "category": "information",
+      "reverse": true,
+      "text": "When long-term cooperation matters, how likely are you to make major proposals while important information is missing?"
+    },
+    {
+      "id": 123,
+      "category": "information",
+      "reverse": false,
+      "text": "While comparing possible packages, how likely are you to test assumptions instead of treating them as facts?"
+    },
+    {
+      "id": 124,
+      "category": "information",
+      "reverse": true,
+      "text": "At the end of the meeting, how likely are you to hide from information that could challenge your preferred outcome?"
+    },
+    {
+      "id": 125,
+      "category": "information",
+      "reverse": false,
+      "text": "During repeated negotiations over time, how likely are you to seek relevant information before proposing a solution?"
+    },
+    {
+      "id": 126,
+      "category": "listening",
+      "reverse": false,
+      "text": "Before an important negotiation begins, how likely are you to listen for meaning before preparing your reply?"
+    },
+    {
+      "id": 127,
+      "category": "listening",
+      "reverse": true,
+      "text": "When the other side states a firm position, how likely are you to plan your counterargument while the other person is speaking?"
+    },
+    {
+      "id": 128,
+      "category": "listening",
+      "reverse": false,
+      "text": "During an early conversation about terms, how likely are you to summarise the other side’s point to confirm understanding?"
+    },
+    {
+      "id": 129,
+      "category": "listening",
+      "reverse": true,
+      "text": "When information is incomplete, how likely are you to interrupt before the other side completes an important explanation?"
+    },
+    {
+      "id": 130,
+      "category": "listening",
+      "reverse": false,
+      "text": "After hearing an unexpected demand, how likely are you to listen for meaning before preparing your reply?"
+    },
+    {
+      "id": 131,
+      "category": "listening",
+      "reverse": true,
+      "text": "When your preferred outcome is challenged, how likely are you to plan your counterargument while the other person is speaking?"
+    },
+    {
+      "id": 132,
+      "category": "listening",
+      "reverse": false,
+      "text": "While discussing price or resources, how likely are you to summarise the other side’s point to confirm understanding?"
+    },
+    {
+      "id": 133,
+      "category": "listening",
+      "reverse": true,
+      "text": "When the conversation becomes tense, how likely are you to interrupt before the other side completes an important explanation?"
+    },
+    {
+      "id": 134,
+      "category": "listening",
+      "reverse": false,
+      "text": "Before making the first offer, how likely are you to listen for meaning before preparing your reply?"
+    },
+    {
+      "id": 135,
+      "category": "listening",
+      "reverse": true,
+      "text": "When the other side asks for a concession, how likely are you to plan your counterargument while the other person is speaking?"
+    },
+    {
+      "id": 136,
+      "category": "listening",
+      "reverse": false,
+      "text": "After noticing different priorities, how likely are you to summarise the other side’s point to confirm understanding?"
+    },
+    {
+      "id": 137,
+      "category": "listening",
+      "reverse": true,
+      "text": "When several solutions seem possible, how likely are you to interrupt before the other side completes an important explanation?"
+    },
+    {
+      "id": 138,
+      "category": "listening",
+      "reverse": false,
+      "text": "During a disagreement about facts, how likely are you to listen for meaning before preparing your reply?"
+    },
+    {
+      "id": 139,
+      "category": "listening",
+      "reverse": true,
+      "text": "When you feel pressured to decide quickly, how likely are you to plan your counterargument while the other person is speaking?"
+    },
+    {
+      "id": 140,
+      "category": "listening",
+      "reverse": false,
+      "text": "After receiving new reliable information, how likely are you to summarise the other side’s point to confirm understanding?"
+    },
+    {
+      "id": 141,
+      "category": "listening",
+      "reverse": true,
+      "text": "When a proposal is almost acceptable, how likely are you to interrupt before the other side completes an important explanation?"
+    },
+    {
+      "id": 142,
+      "category": "listening",
+      "reverse": false,
+      "text": "If the other side uses a difficult tactic, how likely are you to listen for meaning before preparing your reply?"
+    },
+    {
+      "id": 143,
+      "category": "listening",
+      "reverse": true,
+      "text": "When cultural expectations may differ, how likely are you to plan your counterargument while the other person is speaking?"
+    },
+    {
+      "id": 144,
+      "category": "listening",
+      "reverse": false,
+      "text": "Before accepting final terms, how likely are you to summarise the other side’s point to confirm understanding?"
+    },
+    {
+      "id": 145,
+      "category": "listening",
+      "reverse": true,
+      "text": "When an agreement seems within reach, how likely are you to interrupt before the other side completes an important explanation?"
+    },
+    {
+      "id": 146,
+      "category": "listening",
+      "reverse": false,
+      "text": "After a misunderstanding appears, how likely are you to listen for meaning before preparing your reply?"
+    },
+    {
+      "id": 147,
+      "category": "listening",
+      "reverse": true,
+      "text": "When long-term cooperation matters, how likely are you to plan your counterargument while the other person is speaking?"
+    },
+    {
+      "id": 148,
+      "category": "listening",
+      "reverse": false,
+      "text": "While comparing possible packages, how likely are you to summarise the other side’s point to confirm understanding?"
+    },
+    {
+      "id": 149,
+      "category": "listening",
+      "reverse": true,
+      "text": "At the end of the meeting, how likely are you to interrupt before the other side completes an important explanation?"
+    },
+    {
+      "id": 150,
+      "category": "listening",
+      "reverse": false,
+      "text": "During repeated negotiations over time, how likely are you to listen for meaning before preparing your reply?"
+    },
+    {
+      "id": 151,
+      "category": "questioning",
+      "reverse": false,
+      "text": "Before an important negotiation begins, how likely are you to ask open questions that reveal priorities and constraints?"
+    },
+    {
+      "id": 152,
+      "category": "questioning",
+      "reverse": true,
+      "text": "When the other side states a firm position, how likely are you to rely mostly on questions that push toward your preferred answer?"
+    },
+    {
+      "id": 153,
+      "category": "questioning",
+      "reverse": false,
+      "text": "During an early conversation about terms, how likely are you to use clarifying questions before drawing conclusions?"
+    },
+    {
+      "id": 154,
+      "category": "questioning",
+      "reverse": true,
+      "text": "When information is incomplete, how likely are you to avoid asking about concerns that may complicate the discussion?"
+    },
+    {
+      "id": 155,
+      "category": "questioning",
+      "reverse": false,
+      "text": "After hearing an unexpected demand, how likely are you to ask open questions that reveal priorities and constraints?"
+    },
+    {
+      "id": 156,
+      "category": "questioning",
+      "reverse": true,
+      "text": "When your preferred outcome is challenged, how likely are you to rely mostly on questions that push toward your preferred answer?"
+    },
+    {
+      "id": 157,
+      "category": "questioning",
+      "reverse": false,
+      "text": "While discussing price or resources, how likely are you to use clarifying questions before drawing conclusions?"
+    },
+    {
+      "id": 158,
+      "category": "questioning",
+      "reverse": true,
+      "text": "When the conversation becomes tense, how likely are you to avoid asking about concerns that may complicate the discussion?"
+    },
+    {
+      "id": 159,
+      "category": "questioning",
+      "reverse": false,
+      "text": "Before making the first offer, how likely are you to ask open questions that reveal priorities and constraints?"
+    },
+    {
+      "id": 160,
+      "category": "questioning",
+      "reverse": true,
+      "text": "When the other side asks for a concession, how likely are you to rely mostly on questions that push toward your preferred answer?"
+    },
+    {
+      "id": 161,
+      "category": "questioning",
+      "reverse": false,
+      "text": "After noticing different priorities, how likely are you to use clarifying questions before drawing conclusions?"
+    },
+    {
+      "id": 162,
+      "category": "questioning",
+      "reverse": true,
+      "text": "When several solutions seem possible, how likely are you to avoid asking about concerns that may complicate the discussion?"
+    },
+    {
+      "id": 163,
+      "category": "questioning",
+      "reverse": false,
+      "text": "During a disagreement about facts, how likely are you to ask open questions that reveal priorities and constraints?"
+    },
+    {
+      "id": 164,
+      "category": "questioning",
+      "reverse": true,
+      "text": "When you feel pressured to decide quickly, how likely are you to rely mostly on questions that push toward your preferred answer?"
+    },
+    {
+      "id": 165,
+      "category": "questioning",
+      "reverse": false,
+      "text": "After receiving new reliable information, how likely are you to use clarifying questions before drawing conclusions?"
+    },
+    {
+      "id": 166,
+      "category": "questioning",
+      "reverse": true,
+      "text": "When a proposal is almost acceptable, how likely are you to avoid asking about concerns that may complicate the discussion?"
+    },
+    {
+      "id": 167,
+      "category": "questioning",
+      "reverse": false,
+      "text": "If the other side uses a difficult tactic, how likely are you to ask open questions that reveal priorities and constraints?"
+    },
+    {
+      "id": 168,
+      "category": "questioning",
+      "reverse": true,
+      "text": "When cultural expectations may differ, how likely are you to rely mostly on questions that push toward your preferred answer?"
+    },
+    {
+      "id": 169,
+      "category": "questioning",
+      "reverse": false,
+      "text": "Before accepting final terms, how likely are you to use clarifying questions before drawing conclusions?"
+    },
+    {
+      "id": 170,
+      "category": "questioning",
+      "reverse": true,
+      "text": "When an agreement seems within reach, how likely are you to avoid asking about concerns that may complicate the discussion?"
+    },
+    {
+      "id": 171,
+      "category": "questioning",
+      "reverse": false,
+      "text": "After a misunderstanding appears, how likely are you to ask open questions that reveal priorities and constraints?"
+    },
+    {
+      "id": 172,
+      "category": "questioning",
+      "reverse": true,
+      "text": "When long-term cooperation matters, how likely are you to rely mostly on questions that push toward your preferred answer?"
+    },
+    {
+      "id": 173,
+      "category": "questioning",
+      "reverse": false,
+      "text": "While comparing possible packages, how likely are you to use clarifying questions before drawing conclusions?"
+    },
+    {
+      "id": 174,
+      "category": "questioning",
+      "reverse": true,
+      "text": "At the end of the meeting, how likely are you to avoid asking about concerns that may complicate the discussion?"
+    },
+    {
+      "id": 175,
+      "category": "questioning",
+      "reverse": false,
+      "text": "During repeated negotiations over time, how likely are you to ask open questions that reveal priorities and constraints?"
+    },
+    {
+      "id": 176,
+      "category": "rapport",
+      "reverse": false,
+      "text": "Before an important negotiation begins, how likely are you to build a respectful working tone before pressing difficult issues?"
+    },
+    {
+      "id": 177,
+      "category": "rapport",
+      "reverse": true,
+      "text": "When the other side states a firm position, how likely are you to use unnecessary hostility to appear strong?"
+    },
+    {
+      "id": 178,
+      "category": "rapport",
+      "reverse": false,
+      "text": "During an early conversation about terms, how likely are you to behave consistently enough to support trust?"
+    },
+    {
+      "id": 179,
+      "category": "rapport",
+      "reverse": true,
+      "text": "When information is incomplete, how likely are you to make commitments casually even when you may not keep them?"
+    },
+    {
+      "id": 180,
+      "category": "rapport",
+      "reverse": false,
+      "text": "After hearing an unexpected demand, how likely are you to build a respectful working tone before pressing difficult issues?"
+    },
+    {
+      "id": 181,
+      "category": "rapport",
+      "reverse": true,
+      "text": "When your preferred outcome is challenged, how likely are you to use unnecessary hostility to appear strong?"
+    },
+    {
+      "id": 182,
+      "category": "rapport",
+      "reverse": false,
+      "text": "While discussing price or resources, how likely are you to behave consistently enough to support trust?"
+    },
+    {
+      "id": 183,
+      "category": "rapport",
+      "reverse": true,
+      "text": "When the conversation becomes tense, how likely are you to make commitments casually even when you may not keep them?"
+    },
+    {
+      "id": 184,
+      "category": "rapport",
+      "reverse": false,
+      "text": "Before making the first offer, how likely are you to build a respectful working tone before pressing difficult issues?"
+    },
+    {
+      "id": 185,
+      "category": "rapport",
+      "reverse": true,
+      "text": "When the other side asks for a concession, how likely are you to use unnecessary hostility to appear strong?"
+    },
+    {
+      "id": 186,
+      "category": "rapport",
+      "reverse": false,
+      "text": "After noticing different priorities, how likely are you to behave consistently enough to support trust?"
+    },
+    {
+      "id": 187,
+      "category": "rapport",
+      "reverse": true,
+      "text": "When several solutions seem possible, how likely are you to make commitments casually even when you may not keep them?"
+    },
+    {
+      "id": 188,
+      "category": "rapport",
+      "reverse": false,
+      "text": "During a disagreement about facts, how likely are you to build a respectful working tone before pressing difficult issues?"
+    },
+    {
+      "id": 189,
+      "category": "rapport",
+      "reverse": true,
+      "text": "When you feel pressured to decide quickly, how likely are you to use unnecessary hostility to appear strong?"
+    },
+    {
+      "id": 190,
+      "category": "rapport",
+      "reverse": false,
+      "text": "After receiving new reliable information, how likely are you to behave consistently enough to support trust?"
+    },
+    {
+      "id": 191,
+      "category": "rapport",
+      "reverse": true,
+      "text": "When a proposal is almost acceptable, how likely are you to make commitments casually even when you may not keep them?"
+    },
+    {
+      "id": 192,
+      "category": "rapport",
+      "reverse": false,
+      "text": "If the other side uses a difficult tactic, how likely are you to build a respectful working tone before pressing difficult issues?"
+    },
+    {
+      "id": 193,
+      "category": "rapport",
+      "reverse": true,
+      "text": "When cultural expectations may differ, how likely are you to use unnecessary hostility to appear strong?"
+    },
+    {
+      "id": 194,
+      "category": "rapport",
+      "reverse": false,
+      "text": "Before accepting final terms, how likely are you to behave consistently enough to support trust?"
+    },
+    {
+      "id": 195,
+      "category": "rapport",
+      "reverse": true,
+      "text": "When an agreement seems within reach, how likely are you to make commitments casually even when you may not keep them?"
+    },
+    {
+      "id": 196,
+      "category": "rapport",
+      "reverse": false,
+      "text": "After a misunderstanding appears, how likely are you to build a respectful working tone before pressing difficult issues?"
+    },
+    {
+      "id": 197,
+      "category": "rapport",
+      "reverse": true,
+      "text": "When long-term cooperation matters, how likely are you to use unnecessary hostility to appear strong?"
+    },
+    {
+      "id": 198,
+      "category": "rapport",
+      "reverse": false,
+      "text": "While comparing possible packages, how likely are you to behave consistently enough to support trust?"
+    },
+    {
+      "id": 199,
+      "category": "rapport",
+      "reverse": true,
+      "text": "At the end of the meeting, how likely are you to make commitments casually even when you may not keep them?"
+    },
+    {
+      "id": 200,
+      "category": "rapport",
+      "reverse": false,
+      "text": "During repeated negotiations over time, how likely are you to build a respectful working tone before pressing difficult issues?"
+    },
+    {
+      "id": 201,
+      "category": "emotion",
+      "reverse": false,
+      "text": "Before an important negotiation begins, how likely are you to pause and regulate yourself before responding under pressure?"
+    },
+    {
+      "id": 202,
+      "category": "emotion",
+      "reverse": true,
+      "text": "When the other side states a firm position, how likely are you to make an important concession mainly to escape discomfort?"
+    },
+    {
+      "id": 203,
+      "category": "emotion",
+      "reverse": false,
+      "text": "During an early conversation about terms, how likely are you to notice when emotion is beginning to distort your judgement?"
+    },
+    {
+      "id": 204,
+      "category": "emotion",
+      "reverse": true,
+      "text": "When information is incomplete, how likely are you to react immediately when a comment makes you angry?"
+    },
+    {
+      "id": 205,
+      "category": "emotion",
+      "reverse": false,
+      "text": "After hearing an unexpected demand, how likely are you to pause and regulate yourself before responding under pressure?"
+    },
+    {
+      "id": 206,
+      "category": "emotion",
+      "reverse": true,
+      "text": "When your preferred outcome is challenged, how likely are you to make an important concession mainly to escape discomfort?"
+    },
+    {
+      "id": 207,
+      "category": "emotion",
+      "reverse": false,
+      "text": "While discussing price or resources, how likely are you to notice when emotion is beginning to distort your judgement?"
+    },
+    {
+      "id": 208,
+      "category": "emotion",
+      "reverse": true,
+      "text": "When the conversation becomes tense, how likely are you to react immediately when a comment makes you angry?"
+    },
+    {
+      "id": 209,
+      "category": "emotion",
+      "reverse": false,
+      "text": "Before making the first offer, how likely are you to pause and regulate yourself before responding under pressure?"
+    },
+    {
+      "id": 210,
+      "category": "emotion",
+      "reverse": true,
+      "text": "When the other side asks for a concession, how likely are you to make an important concession mainly to escape discomfort?"
+    },
+    {
+      "id": 211,
+      "category": "emotion",
+      "reverse": false,
+      "text": "After noticing different priorities, how likely are you to notice when emotion is beginning to distort your judgement?"
+    },
+    {
+      "id": 212,
+      "category": "emotion",
+      "reverse": true,
+      "text": "When several solutions seem possible, how likely are you to react immediately when a comment makes you angry?"
+    },
+    {
+      "id": 213,
+      "category": "emotion",
+      "reverse": false,
+      "text": "During a disagreement about facts, how likely are you to pause and regulate yourself before responding under pressure?"
+    },
+    {
+      "id": 214,
+      "category": "emotion",
+      "reverse": true,
+      "text": "When you feel pressured to decide quickly, how likely are you to make an important concession mainly to escape discomfort?"
+    },
+    {
+      "id": 215,
+      "category": "emotion",
+      "reverse": false,
+      "text": "After receiving new reliable information, how likely are you to notice when emotion is beginning to distort your judgement?"
+    },
+    {
+      "id": 216,
+      "category": "emotion",
+      "reverse": true,
+      "text": "When a proposal is almost acceptable, how likely are you to react immediately when a comment makes you angry?"
+    },
+    {
+      "id": 217,
+      "category": "emotion",
+      "reverse": false,
+      "text": "If the other side uses a difficult tactic, how likely are you to pause and regulate yourself before responding under pressure?"
+    },
+    {
+      "id": 218,
+      "category": "emotion",
+      "reverse": true,
+      "text": "When cultural expectations may differ, how likely are you to make an important concession mainly to escape discomfort?"
+    },
+    {
+      "id": 219,
+      "category": "emotion",
+      "reverse": false,
+      "text": "Before accepting final terms, how likely are you to notice when emotion is beginning to distort your judgement?"
+    },
+    {
+      "id": 220,
+      "category": "emotion",
+      "reverse": true,
+      "text": "When an agreement seems within reach, how likely are you to react immediately when a comment makes you angry?"
+    },
+    {
+      "id": 221,
+      "category": "emotion",
+      "reverse": false,
+      "text": "After a misunderstanding appears, how likely are you to pause and regulate yourself before responding under pressure?"
+    },
+    {
+      "id": 222,
+      "category": "emotion",
+      "reverse": true,
+      "text": "When long-term cooperation matters, how likely are you to make an important concession mainly to escape discomfort?"
+    },
+    {
+      "id": 223,
+      "category": "emotion",
+      "reverse": false,
+      "text": "While comparing possible packages, how likely are you to notice when emotion is beginning to distort your judgement?"
+    },
+    {
+      "id": 224,
+      "category": "emotion",
+      "reverse": true,
+      "text": "At the end of the meeting, how likely are you to react immediately when a comment makes you angry?"
+    },
+    {
+      "id": 225,
+      "category": "emotion",
+      "reverse": false,
+      "text": "During repeated negotiations over time, how likely are you to pause and regulate yourself before responding under pressure?"
+    },
+    {
+      "id": 226,
+      "category": "assertiveness",
+      "reverse": false,
+      "text": "Before an important negotiation begins, how likely are you to state your needs clearly without attacking the other side?"
+    },
+    {
+      "id": 227,
+      "category": "assertiveness",
+      "reverse": true,
+      "text": "When the other side states a firm position, how likely are you to agree silently while becoming resentful?"
+    },
+    {
+      "id": 228,
+      "category": "assertiveness",
+      "reverse": false,
+      "text": "During an early conversation about terms, how likely are you to decline terms that fall below a considered limit?"
+    },
+    {
+      "id": 229,
+      "category": "assertiveness",
+      "reverse": true,
+      "text": "When information is incomplete, how likely are you to use aggression instead of clearly expressing a boundary?"
+    },
+    {
+      "id": 230,
+      "category": "assertiveness",
+      "reverse": false,
+      "text": "After hearing an unexpected demand, how likely are you to state your needs clearly without attacking the other side?"
+    },
+    {
+      "id": 231,
+      "category": "assertiveness",
+      "reverse": true,
+      "text": "When your preferred outcome is challenged, how likely are you to agree silently while becoming resentful?"
+    },
+    {
+      "id": 232,
+      "category": "assertiveness",
+      "reverse": false,
+      "text": "While discussing price or resources, how likely are you to decline terms that fall below a considered limit?"
+    },
+    {
+      "id": 233,
+      "category": "assertiveness",
+      "reverse": true,
+      "text": "When the conversation becomes tense, how likely are you to use aggression instead of clearly expressing a boundary?"
+    },
+    {
+      "id": 234,
+      "category": "assertiveness",
+      "reverse": false,
+      "text": "Before making the first offer, how likely are you to state your needs clearly without attacking the other side?"
+    },
+    {
+      "id": 235,
+      "category": "assertiveness",
+      "reverse": true,
+      "text": "When the other side asks for a concession, how likely are you to agree silently while becoming resentful?"
+    },
+    {
+      "id": 236,
+      "category": "assertiveness",
+      "reverse": false,
+      "text": "After noticing different priorities, how likely are you to decline terms that fall below a considered limit?"
+    },
+    {
+      "id": 237,
+      "category": "assertiveness",
+      "reverse": true,
+      "text": "When several solutions seem possible, how likely are you to use aggression instead of clearly expressing a boundary?"
+    },
+    {
+      "id": 238,
+      "category": "assertiveness",
+      "reverse": false,
+      "text": "During a disagreement about facts, how likely are you to state your needs clearly without attacking the other side?"
+    },
+    {
+      "id": 239,
+      "category": "assertiveness",
+      "reverse": true,
+      "text": "When you feel pressured to decide quickly, how likely are you to agree silently while becoming resentful?"
+    },
+    {
+      "id": 240,
+      "category": "assertiveness",
+      "reverse": false,
+      "text": "After receiving new reliable information, how likely are you to decline terms that fall below a considered limit?"
+    },
+    {
+      "id": 241,
+      "category": "assertiveness",
+      "reverse": true,
+      "text": "When a proposal is almost acceptable, how likely are you to use aggression instead of clearly expressing a boundary?"
+    },
+    {
+      "id": 242,
+      "category": "assertiveness",
+      "reverse": false,
+      "text": "If the other side uses a difficult tactic, how likely are you to state your needs clearly without attacking the other side?"
+    },
+    {
+      "id": 243,
+      "category": "assertiveness",
+      "reverse": true,
+      "text": "When cultural expectations may differ, how likely are you to agree silently while becoming resentful?"
+    },
+    {
+      "id": 244,
+      "category": "assertiveness",
+      "reverse": false,
+      "text": "Before accepting final terms, how likely are you to decline terms that fall below a considered limit?"
+    },
+    {
+      "id": 245,
+      "category": "assertiveness",
+      "reverse": true,
+      "text": "When an agreement seems within reach, how likely are you to use aggression instead of clearly expressing a boundary?"
+    },
+    {
+      "id": 246,
+      "category": "assertiveness",
+      "reverse": false,
+      "text": "After a misunderstanding appears, how likely are you to state your needs clearly without attacking the other side?"
+    },
+    {
+      "id": 247,
+      "category": "assertiveness",
+      "reverse": true,
+      "text": "When long-term cooperation matters, how likely are you to agree silently while becoming resentful?"
+    },
+    {
+      "id": 248,
+      "category": "assertiveness",
+      "reverse": false,
+      "text": "While comparing possible packages, how likely are you to decline terms that fall below a considered limit?"
+    },
+    {
+      "id": 249,
+      "category": "assertiveness",
+      "reverse": true,
+      "text": "At the end of the meeting, how likely are you to use aggression instead of clearly expressing a boundary?"
+    },
+    {
+      "id": 250,
+      "category": "assertiveness",
+      "reverse": false,
+      "text": "During repeated negotiations over time, how likely are you to state your needs clearly without attacking the other side?"
+    },
+    {
+      "id": 251,
+      "category": "empathy",
+      "reverse": false,
+      "text": "Before an important negotiation begins, how likely are you to consider how the situation looks from the other side?"
+    },
+    {
+      "id": 252,
+      "category": "empathy",
+      "reverse": true,
+      "text": "When the other side states a firm position, how likely are you to treat the other side’s concerns as irrelevant?"
+    },
+    {
+      "id": 253,
+      "category": "empathy",
+      "reverse": false,
+      "text": "During an early conversation about terms, how likely are you to recognise legitimate concerns without automatically agreeing?"
+    },
+    {
+      "id": 254,
+      "category": "empathy",
+      "reverse": true,
+      "text": "When information is incomplete, how likely are you to assume different priorities must reflect bad intentions?"
+    },
+    {
+      "id": 255,
+      "category": "empathy",
+      "reverse": false,
+      "text": "After hearing an unexpected demand, how likely are you to consider how the situation looks from the other side?"
+    },
+    {
+      "id": 256,
+      "category": "empathy",
+      "reverse": true,
+      "text": "When your preferred outcome is challenged, how likely are you to treat the other side’s concerns as irrelevant?"
+    },
+    {
+      "id": 257,
+      "category": "empathy",
+      "reverse": false,
+      "text": "While discussing price or resources, how likely are you to recognise legitimate concerns without automatically agreeing?"
+    },
+    {
+      "id": 258,
+      "category": "empathy",
+      "reverse": true,
+      "text": "When the conversation becomes tense, how likely are you to assume different priorities must reflect bad intentions?"
+    },
+    {
+      "id": 259,
+      "category": "empathy",
+      "reverse": false,
+      "text": "Before making the first offer, how likely are you to consider how the situation looks from the other side?"
+    },
+    {
+      "id": 260,
+      "category": "empathy",
+      "reverse": true,
+      "text": "When the other side asks for a concession, how likely are you to treat the other side’s concerns as irrelevant?"
+    },
+    {
+      "id": 261,
+      "category": "empathy",
+      "reverse": false,
+      "text": "After noticing different priorities, how likely are you to recognise legitimate concerns without automatically agreeing?"
+    },
+    {
+      "id": 262,
+      "category": "empathy",
+      "reverse": true,
+      "text": "When several solutions seem possible, how likely are you to assume different priorities must reflect bad intentions?"
+    },
+    {
+      "id": 263,
+      "category": "empathy",
+      "reverse": false,
+      "text": "During a disagreement about facts, how likely are you to consider how the situation looks from the other side?"
+    },
+    {
+      "id": 264,
+      "category": "empathy",
+      "reverse": true,
+      "text": "When you feel pressured to decide quickly, how likely are you to treat the other side’s concerns as irrelevant?"
+    },
+    {
+      "id": 265,
+      "category": "empathy",
+      "reverse": false,
+      "text": "After receiving new reliable information, how likely are you to recognise legitimate concerns without automatically agreeing?"
+    },
+    {
+      "id": 266,
+      "category": "empathy",
+      "reverse": true,
+      "text": "When a proposal is almost acceptable, how likely are you to assume different priorities must reflect bad intentions?"
+    },
+    {
+      "id": 267,
+      "category": "empathy",
+      "reverse": false,
+      "text": "If the other side uses a difficult tactic, how likely are you to consider how the situation looks from the other side?"
+    },
+    {
+      "id": 268,
+      "category": "empathy",
+      "reverse": true,
+      "text": "When cultural expectations may differ, how likely are you to treat the other side’s concerns as irrelevant?"
+    },
+    {
+      "id": 269,
+      "category": "empathy",
+      "reverse": false,
+      "text": "Before accepting final terms, how likely are you to recognise legitimate concerns without automatically agreeing?"
+    },
+    {
+      "id": 270,
+      "category": "empathy",
+      "reverse": true,
+      "text": "When an agreement seems within reach, how likely are you to assume different priorities must reflect bad intentions?"
+    },
+    {
+      "id": 271,
+      "category": "empathy",
+      "reverse": false,
+      "text": "After a misunderstanding appears, how likely are you to consider how the situation looks from the other side?"
+    },
+    {
+      "id": 272,
+      "category": "empathy",
+      "reverse": true,
+      "text": "When long-term cooperation matters, how likely are you to treat the other side’s concerns as irrelevant?"
+    },
+    {
+      "id": 273,
+      "category": "empathy",
+      "reverse": false,
+      "text": "While comparing possible packages, how likely are you to recognise legitimate concerns without automatically agreeing?"
+    },
+    {
+      "id": 274,
+      "category": "empathy",
+      "reverse": true,
+      "text": "At the end of the meeting, how likely are you to assume different priorities must reflect bad intentions?"
+    },
+    {
+      "id": 275,
+      "category": "empathy",
+      "reverse": false,
+      "text": "During repeated negotiations over time, how likely are you to consider how the situation looks from the other side?"
+    },
+    {
+      "id": 276,
+      "category": "framing",
+      "reverse": false,
+      "text": "Before an important negotiation begins, how likely are you to present the issue in terms relevant to both sides?"
+    },
+    {
+      "id": 277,
+      "category": "framing",
+      "reverse": true,
+      "text": "When the other side states a firm position, how likely are you to frame the discussion as a contest someone must lose?"
+    },
+    {
+      "id": 278,
+      "category": "framing",
+      "reverse": false,
+      "text": "During an early conversation about terms, how likely are you to explain proposals clearly enough to prevent avoidable confusion?"
+    },
+    {
+      "id": 279,
+      "category": "framing",
+      "reverse": true,
+      "text": "When information is incomplete, how likely are you to use vague language when precision would help agreement?"
+    },
+    {
+      "id": 280,
+      "category": "framing",
+      "reverse": false,
+      "text": "After hearing an unexpected demand, how likely are you to present the issue in terms relevant to both sides?"
+    },
+    {
+      "id": 281,
+      "category": "framing",
+      "reverse": true,
+      "text": "When your preferred outcome is challenged, how likely are you to frame the discussion as a contest someone must lose?"
+    },
+    {
+      "id": 282,
+      "category": "framing",
+      "reverse": false,
+      "text": "While discussing price or resources, how likely are you to explain proposals clearly enough to prevent avoidable confusion?"
+    },
+    {
+      "id": 283,
+      "category": "framing",
+      "reverse": true,
+      "text": "When the conversation becomes tense, how likely are you to use vague language when precision would help agreement?"
+    },
+    {
+      "id": 284,
+      "category": "framing",
+      "reverse": false,
+      "text": "Before making the first offer, how likely are you to present the issue in terms relevant to both sides?"
+    },
+    {
+      "id": 285,
+      "category": "framing",
+      "reverse": true,
+      "text": "When the other side asks for a concession, how likely are you to frame the discussion as a contest someone must lose?"
+    },
+    {
+      "id": 286,
+      "category": "framing",
+      "reverse": false,
+      "text": "After noticing different priorities, how likely are you to explain proposals clearly enough to prevent avoidable confusion?"
+    },
+    {
+      "id": 287,
+      "category": "framing",
+      "reverse": true,
+      "text": "When several solutions seem possible, how likely are you to use vague language when precision would help agreement?"
+    },
+    {
+      "id": 288,
+      "category": "framing",
+      "reverse": false,
+      "text": "During a disagreement about facts, how likely are you to present the issue in terms relevant to both sides?"
+    },
+    {
+      "id": 289,
+      "category": "framing",
+      "reverse": true,
+      "text": "When you feel pressured to decide quickly, how likely are you to frame the discussion as a contest someone must lose?"
+    },
+    {
+      "id": 290,
+      "category": "framing",
+      "reverse": false,
+      "text": "After receiving new reliable information, how likely are you to explain proposals clearly enough to prevent avoidable confusion?"
+    },
+    {
+      "id": 291,
+      "category": "framing",
+      "reverse": true,
+      "text": "When a proposal is almost acceptable, how likely are you to use vague language when precision would help agreement?"
+    },
+    {
+      "id": 292,
+      "category": "framing",
+      "reverse": false,
+      "text": "If the other side uses a difficult tactic, how likely are you to present the issue in terms relevant to both sides?"
+    },
+    {
+      "id": 293,
+      "category": "framing",
+      "reverse": true,
+      "text": "When cultural expectations may differ, how likely are you to frame the discussion as a contest someone must lose?"
+    },
+    {
+      "id": 294,
+      "category": "framing",
+      "reverse": false,
+      "text": "Before accepting final terms, how likely are you to explain proposals clearly enough to prevent avoidable confusion?"
+    },
+    {
+      "id": 295,
+      "category": "framing",
+      "reverse": true,
+      "text": "When an agreement seems within reach, how likely are you to use vague language when precision would help agreement?"
+    },
+    {
+      "id": 296,
+      "category": "framing",
+      "reverse": false,
+      "text": "After a misunderstanding appears, how likely are you to present the issue in terms relevant to both sides?"
+    },
+    {
+      "id": 297,
+      "category": "framing",
+      "reverse": true,
+      "text": "When long-term cooperation matters, how likely are you to frame the discussion as a contest someone must lose?"
+    },
+    {
+      "id": 298,
+      "category": "framing",
+      "reverse": false,
+      "text": "While comparing possible packages, how likely are you to explain proposals clearly enough to prevent avoidable confusion?"
+    },
+    {
+      "id": 299,
+      "category": "framing",
+      "reverse": true,
+      "text": "At the end of the meeting, how likely are you to use vague language when precision would help agreement?"
+    },
+    {
+      "id": 300,
+      "category": "framing",
+      "reverse": false,
+      "text": "During repeated negotiations over time, how likely are you to present the issue in terms relevant to both sides?"
+    },
+    {
+      "id": 301,
+      "category": "value_creation",
+      "reverse": false,
+      "text": "Before an important negotiation begins, how likely are you to look for options that improve outcomes for both sides?"
+    },
+    {
+      "id": 302,
+      "category": "value_creation",
+      "reverse": true,
+      "text": "When the other side states a firm position, how likely are you to assume every gain for one side must harm the other?"
+    },
+    {
+      "id": 303,
+      "category": "value_creation",
+      "reverse": false,
+      "text": "During an early conversation about terms, how likely are you to explore differences that can create mutual value?"
+    },
+    {
+      "id": 304,
+      "category": "value_creation",
+      "reverse": true,
+      "text": "When information is incomplete, how likely are you to discuss only how to divide an existing fixed amount?"
+    },
+    {
+      "id": 305,
+      "category": "value_creation",
+      "reverse": false,
+      "text": "After hearing an unexpected demand, how likely are you to look for options that improve outcomes for both sides?"
+    },
+    {
+      "id": 306,
+      "category": "value_creation",
+      "reverse": true,
+      "text": "When your preferred outcome is challenged, how likely are you to assume every gain for one side must harm the other?"
+    },
+    {
+      "id": 307,
+      "category": "value_creation",
+      "reverse": false,
+      "text": "While discussing price or resources, how likely are you to explore differences that can create mutual value?"
+    },
+    {
+      "id": 308,
+      "category": "value_creation",
+      "reverse": true,
+      "text": "When the conversation becomes tense, how likely are you to discuss only how to divide an existing fixed amount?"
+    },
+    {
+      "id": 309,
+      "category": "value_creation",
+      "reverse": false,
+      "text": "Before making the first offer, how likely are you to look for options that improve outcomes for both sides?"
+    },
+    {
+      "id": 310,
+      "category": "value_creation",
+      "reverse": true,
+      "text": "When the other side asks for a concession, how likely are you to assume every gain for one side must harm the other?"
+    },
+    {
+      "id": 311,
+      "category": "value_creation",
+      "reverse": false,
+      "text": "After noticing different priorities, how likely are you to explore differences that can create mutual value?"
+    },
+    {
+      "id": 312,
+      "category": "value_creation",
+      "reverse": true,
+      "text": "When several solutions seem possible, how likely are you to discuss only how to divide an existing fixed amount?"
+    },
+    {
+      "id": 313,
+      "category": "value_creation",
+      "reverse": false,
+      "text": "During a disagreement about facts, how likely are you to look for options that improve outcomes for both sides?"
+    },
+    {
+      "id": 314,
+      "category": "value_creation",
+      "reverse": true,
+      "text": "When you feel pressured to decide quickly, how likely are you to assume every gain for one side must harm the other?"
+    },
+    {
+      "id": 315,
+      "category": "value_creation",
+      "reverse": false,
+      "text": "After receiving new reliable information, how likely are you to explore differences that can create mutual value?"
+    },
+    {
+      "id": 316,
+      "category": "value_creation",
+      "reverse": true,
+      "text": "When a proposal is almost acceptable, how likely are you to discuss only how to divide an existing fixed amount?"
+    },
+    {
+      "id": 317,
+      "category": "value_creation",
+      "reverse": false,
+      "text": "If the other side uses a difficult tactic, how likely are you to look for options that improve outcomes for both sides?"
+    },
+    {
+      "id": 318,
+      "category": "value_creation",
+      "reverse": true,
+      "text": "When cultural expectations may differ, how likely are you to assume every gain for one side must harm the other?"
+    },
+    {
+      "id": 319,
+      "category": "value_creation",
+      "reverse": false,
+      "text": "Before accepting final terms, how likely are you to explore differences that can create mutual value?"
+    },
+    {
+      "id": 320,
+      "category": "value_creation",
+      "reverse": true,
+      "text": "When an agreement seems within reach, how likely are you to discuss only how to divide an existing fixed amount?"
+    },
+    {
+      "id": 321,
+      "category": "value_creation",
+      "reverse": false,
+      "text": "After a misunderstanding appears, how likely are you to look for options that improve outcomes for both sides?"
+    },
+    {
+      "id": 322,
+      "category": "value_creation",
+      "reverse": true,
+      "text": "When long-term cooperation matters, how likely are you to assume every gain for one side must harm the other?"
+    },
+    {
+      "id": 323,
+      "category": "value_creation",
+      "reverse": false,
+      "text": "While comparing possible packages, how likely are you to explore differences that can create mutual value?"
+    },
+    {
+      "id": 324,
+      "category": "value_creation",
+      "reverse": true,
+      "text": "At the end of the meeting, how likely are you to discuss only how to divide an existing fixed amount?"
+    },
+    {
+      "id": 325,
+      "category": "value_creation",
+      "reverse": false,
+      "text": "During repeated negotiations over time, how likely are you to look for options that improve outcomes for both sides?"
+    },
+    {
+      "id": 326,
+      "category": "tradeoffs",
+      "reverse": false,
+      "text": "Before an important negotiation begins, how likely are you to exchange lower-priority terms for higher-priority value?"
+    },
+    {
+      "id": 327,
+      "category": "tradeoffs",
+      "reverse": true,
+      "text": "When the other side states a firm position, how likely are you to give several concessions without learning what they are worth?"
+    },
+    {
+      "id": 328,
+      "category": "tradeoffs",
+      "reverse": false,
+      "text": "During an early conversation about terms, how likely are you to make concessions deliberately and seek appropriate reciprocity?"
+    },
+    {
+      "id": 329,
+      "category": "tradeoffs",
+      "reverse": true,
+      "text": "When information is incomplete, how likely are you to concede important terms simply to keep the conversation pleasant?"
+    },
+    {
+      "id": 330,
+      "category": "tradeoffs",
+      "reverse": false,
+      "text": "After hearing an unexpected demand, how likely are you to exchange lower-priority terms for higher-priority value?"
+    },
+    {
+      "id": 331,
+      "category": "tradeoffs",
+      "reverse": true,
+      "text": "When your preferred outcome is challenged, how likely are you to give several concessions without learning what they are worth?"
+    },
+    {
+      "id": 332,
+      "category": "tradeoffs",
+      "reverse": false,
+      "text": "While discussing price or resources, how likely are you to make concessions deliberately and seek appropriate reciprocity?"
+    },
+    {
+      "id": 333,
+      "category": "tradeoffs",
+      "reverse": true,
+      "text": "When the conversation becomes tense, how likely are you to concede important terms simply to keep the conversation pleasant?"
+    },
+    {
+      "id": 334,
+      "category": "tradeoffs",
+      "reverse": false,
+      "text": "Before making the first offer, how likely are you to exchange lower-priority terms for higher-priority value?"
+    },
+    {
+      "id": 335,
+      "category": "tradeoffs",
+      "reverse": true,
+      "text": "When the other side asks for a concession, how likely are you to give several concessions without learning what they are worth?"
+    },
+    {
+      "id": 336,
+      "category": "tradeoffs",
+      "reverse": false,
+      "text": "After noticing different priorities, how likely are you to make concessions deliberately and seek appropriate reciprocity?"
+    },
+    {
+      "id": 337,
+      "category": "tradeoffs",
+      "reverse": true,
+      "text": "When several solutions seem possible, how likely are you to concede important terms simply to keep the conversation pleasant?"
+    },
+    {
+      "id": 338,
+      "category": "tradeoffs",
+      "reverse": false,
+      "text": "During a disagreement about facts, how likely are you to exchange lower-priority terms for higher-priority value?"
+    },
+    {
+      "id": 339,
+      "category": "tradeoffs",
+      "reverse": true,
+      "text": "When you feel pressured to decide quickly, how likely are you to give several concessions without learning what they are worth?"
+    },
+    {
+      "id": 340,
+      "category": "tradeoffs",
+      "reverse": false,
+      "text": "After receiving new reliable information, how likely are you to make concessions deliberately and seek appropriate reciprocity?"
+    },
+    {
+      "id": 341,
+      "category": "tradeoffs",
+      "reverse": true,
+      "text": "When a proposal is almost acceptable, how likely are you to concede important terms simply to keep the conversation pleasant?"
+    },
+    {
+      "id": 342,
+      "category": "tradeoffs",
+      "reverse": false,
+      "text": "If the other side uses a difficult tactic, how likely are you to exchange lower-priority terms for higher-priority value?"
+    },
+    {
+      "id": 343,
+      "category": "tradeoffs",
+      "reverse": true,
+      "text": "When cultural expectations may differ, how likely are you to give several concessions without learning what they are worth?"
+    },
+    {
+      "id": 344,
+      "category": "tradeoffs",
+      "reverse": false,
+      "text": "Before accepting final terms, how likely are you to make concessions deliberately and seek appropriate reciprocity?"
+    },
+    {
+      "id": 345,
+      "category": "tradeoffs",
+      "reverse": true,
+      "text": "When an agreement seems within reach, how likely are you to concede important terms simply to keep the conversation pleasant?"
+    },
+    {
+      "id": 346,
+      "category": "tradeoffs",
+      "reverse": false,
+      "text": "After a misunderstanding appears, how likely are you to exchange lower-priority terms for higher-priority value?"
+    },
+    {
+      "id": 347,
+      "category": "tradeoffs",
+      "reverse": true,
+      "text": "When long-term cooperation matters, how likely are you to give several concessions without learning what they are worth?"
+    },
+    {
+      "id": 348,
+      "category": "tradeoffs",
+      "reverse": false,
+      "text": "While comparing possible packages, how likely are you to make concessions deliberately and seek appropriate reciprocity?"
+    },
+    {
+      "id": 349,
+      "category": "tradeoffs",
+      "reverse": true,
+      "text": "At the end of the meeting, how likely are you to concede important terms simply to keep the conversation pleasant?"
+    },
+    {
+      "id": 350,
+      "category": "tradeoffs",
+      "reverse": false,
+      "text": "During repeated negotiations over time, how likely are you to exchange lower-priority terms for higher-priority value?"
+    },
+    {
+      "id": 351,
+      "category": "offers",
+      "reverse": false,
+      "text": "Before an important negotiation begins, how likely are you to support an opening offer with credible reasoning?"
+    },
+    {
+      "id": 352,
+      "category": "offers",
+      "reverse": true,
+      "text": "When the other side states a firm position, how likely are you to make an extreme opening demand with no defensible basis?"
+    },
+    {
+      "id": 353,
+      "category": "offers",
+      "reverse": false,
+      "text": "During an early conversation about terms, how likely are you to adjust an offer when reliable information justifies change?"
+    },
+    {
+      "id": 354,
+      "category": "offers",
+      "reverse": true,
+      "text": "When information is incomplete, how likely are you to accept the first number as reasonable without analysis?"
+    },
+    {
+      "id": 355,
+      "category": "offers",
+      "reverse": false,
+      "text": "After hearing an unexpected demand, how likely are you to support an opening offer with credible reasoning?"
+    },
+    {
+      "id": 356,
+      "category": "offers",
+      "reverse": true,
+      "text": "When your preferred outcome is challenged, how likely are you to make an extreme opening demand with no defensible basis?"
+    },
+    {
+      "id": 357,
+      "category": "offers",
+      "reverse": false,
+      "text": "While discussing price or resources, how likely are you to adjust an offer when reliable information justifies change?"
+    },
+    {
+      "id": 358,
+      "category": "offers",
+      "reverse": true,
+      "text": "When the conversation becomes tense, how likely are you to accept the first number as reasonable without analysis?"
+    },
+    {
+      "id": 359,
+      "category": "offers",
+      "reverse": false,
+      "text": "Before making the first offer, how likely are you to support an opening offer with credible reasoning?"
+    },
+    {
+      "id": 360,
+      "category": "offers",
+      "reverse": true,
+      "text": "When the other side asks for a concession, how likely are you to make an extreme opening demand with no defensible basis?"
+    },
+    {
+      "id": 361,
+      "category": "offers",
+      "reverse": false,
+      "text": "After noticing different priorities, how likely are you to adjust an offer when reliable information justifies change?"
+    },
+    {
+      "id": 362,
+      "category": "offers",
+      "reverse": true,
+      "text": "When several solutions seem possible, how likely are you to accept the first number as reasonable without analysis?"
+    },
+    {
+      "id": 363,
+      "category": "offers",
+      "reverse": false,
+      "text": "During a disagreement about facts, how likely are you to support an opening offer with credible reasoning?"
+    },
+    {
+      "id": 364,
+      "category": "offers",
+      "reverse": true,
+      "text": "When you feel pressured to decide quickly, how likely are you to make an extreme opening demand with no defensible basis?"
+    },
+    {
+      "id": 365,
+      "category": "offers",
+      "reverse": false,
+      "text": "After receiving new reliable information, how likely are you to adjust an offer when reliable information justifies change?"
+    },
+    {
+      "id": 366,
+      "category": "offers",
+      "reverse": true,
+      "text": "When a proposal is almost acceptable, how likely are you to accept the first number as reasonable without analysis?"
+    },
+    {
+      "id": 367,
+      "category": "offers",
+      "reverse": false,
+      "text": "If the other side uses a difficult tactic, how likely are you to support an opening offer with credible reasoning?"
+    },
+    {
+      "id": 368,
+      "category": "offers",
+      "reverse": true,
+      "text": "When cultural expectations may differ, how likely are you to make an extreme opening demand with no defensible basis?"
+    },
+    {
+      "id": 369,
+      "category": "offers",
+      "reverse": false,
+      "text": "Before accepting final terms, how likely are you to adjust an offer when reliable information justifies change?"
+    },
+    {
+      "id": 370,
+      "category": "offers",
+      "reverse": true,
+      "text": "When an agreement seems within reach, how likely are you to accept the first number as reasonable without analysis?"
+    },
+    {
+      "id": 371,
+      "category": "offers",
+      "reverse": false,
+      "text": "After a misunderstanding appears, how likely are you to support an opening offer with credible reasoning?"
+    },
+    {
+      "id": 372,
+      "category": "offers",
+      "reverse": true,
+      "text": "When long-term cooperation matters, how likely are you to make an extreme opening demand with no defensible basis?"
+    },
+    {
+      "id": 373,
+      "category": "offers",
+      "reverse": false,
+      "text": "While comparing possible packages, how likely are you to adjust an offer when reliable information justifies change?"
+    },
+    {
+      "id": 374,
+      "category": "offers",
+      "reverse": true,
+      "text": "At the end of the meeting, how likely are you to accept the first number as reasonable without analysis?"
+    },
+    {
+      "id": 375,
+      "category": "offers",
+      "reverse": false,
+      "text": "During repeated negotiations over time, how likely are you to support an opening offer with credible reasoning?"
+    },
+    {
+      "id": 376,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "Before an important negotiation begins, how likely are you to define the shared problem before debating solutions?"
+    },
+    {
+      "id": 377,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "When the other side states a firm position, how likely are you to argue for one solution before agreeing on the problem?"
+    },
+    {
+      "id": 378,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "During an early conversation about terms, how likely are you to generate multiple options before selecting one?"
+    },
+    {
+      "id": 379,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "When information is incomplete, how likely are you to reject new possibilities because they were not your idea?"
+    },
+    {
+      "id": 380,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "After hearing an unexpected demand, how likely are you to define the shared problem before debating solutions?"
+    },
+    {
+      "id": 381,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "When your preferred outcome is challenged, how likely are you to argue for one solution before agreeing on the problem?"
+    },
+    {
+      "id": 382,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "While discussing price or resources, how likely are you to generate multiple options before selecting one?"
+    },
+    {
+      "id": 383,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "When the conversation becomes tense, how likely are you to reject new possibilities because they were not your idea?"
+    },
+    {
+      "id": 384,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "Before making the first offer, how likely are you to define the shared problem before debating solutions?"
+    },
+    {
+      "id": 385,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "When the other side asks for a concession, how likely are you to argue for one solution before agreeing on the problem?"
+    },
+    {
+      "id": 386,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "After noticing different priorities, how likely are you to generate multiple options before selecting one?"
+    },
+    {
+      "id": 387,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "When several solutions seem possible, how likely are you to reject new possibilities because they were not your idea?"
+    },
+    {
+      "id": 388,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "During a disagreement about facts, how likely are you to define the shared problem before debating solutions?"
+    },
+    {
+      "id": 389,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "When you feel pressured to decide quickly, how likely are you to argue for one solution before agreeing on the problem?"
+    },
+    {
+      "id": 390,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "After receiving new reliable information, how likely are you to generate multiple options before selecting one?"
+    },
+    {
+      "id": 391,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "When a proposal is almost acceptable, how likely are you to reject new possibilities because they were not your idea?"
+    },
+    {
+      "id": 392,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "If the other side uses a difficult tactic, how likely are you to define the shared problem before debating solutions?"
+    },
+    {
+      "id": 393,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "When cultural expectations may differ, how likely are you to argue for one solution before agreeing on the problem?"
+    },
+    {
+      "id": 394,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "Before accepting final terms, how likely are you to generate multiple options before selecting one?"
+    },
+    {
+      "id": 395,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "When an agreement seems within reach, how likely are you to reject new possibilities because they were not your idea?"
+    },
+    {
+      "id": 396,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "After a misunderstanding appears, how likely are you to define the shared problem before debating solutions?"
+    },
+    {
+      "id": 397,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "When long-term cooperation matters, how likely are you to argue for one solution before agreeing on the problem?"
+    },
+    {
+      "id": 398,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "While comparing possible packages, how likely are you to generate multiple options before selecting one?"
+    },
+    {
+      "id": 399,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "At the end of the meeting, how likely are you to reject new possibilities because they were not your idea?"
+    },
+    {
+      "id": 400,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "During repeated negotiations over time, how likely are you to define the shared problem before debating solutions?"
+    },
+    {
+      "id": 401,
+      "category": "conflict",
+      "reverse": false,
+      "text": "Before an important negotiation begins, how likely are you to address a difficult tactic without escalating unnecessarily?"
+    },
+    {
+      "id": 402,
+      "category": "conflict",
+      "reverse": true,
+      "text": "When the other side states a firm position, how likely are you to respond to pressure with a stronger personal attack?"
+    },
+    {
+      "id": 403,
+      "category": "conflict",
+      "reverse": false,
+      "text": "During an early conversation about terms, how likely are you to return the discussion to issues when it becomes personal?"
+    },
+    {
+      "id": 404,
+      "category": "conflict",
+      "reverse": true,
+      "text": "When information is incomplete, how likely are you to reward threats by conceding immediately?"
+    },
+    {
+      "id": 405,
+      "category": "conflict",
+      "reverse": false,
+      "text": "After hearing an unexpected demand, how likely are you to address a difficult tactic without escalating unnecessarily?"
+    },
+    {
+      "id": 406,
+      "category": "conflict",
+      "reverse": true,
+      "text": "When your preferred outcome is challenged, how likely are you to respond to pressure with a stronger personal attack?"
+    },
+    {
+      "id": 407,
+      "category": "conflict",
+      "reverse": false,
+      "text": "While discussing price or resources, how likely are you to return the discussion to issues when it becomes personal?"
+    },
+    {
+      "id": 408,
+      "category": "conflict",
+      "reverse": true,
+      "text": "When the conversation becomes tense, how likely are you to reward threats by conceding immediately?"
+    },
+    {
+      "id": 409,
+      "category": "conflict",
+      "reverse": false,
+      "text": "Before making the first offer, how likely are you to address a difficult tactic without escalating unnecessarily?"
+    },
+    {
+      "id": 410,
+      "category": "conflict",
+      "reverse": true,
+      "text": "When the other side asks for a concession, how likely are you to respond to pressure with a stronger personal attack?"
+    },
+    {
+      "id": 411,
+      "category": "conflict",
+      "reverse": false,
+      "text": "After noticing different priorities, how likely are you to return the discussion to issues when it becomes personal?"
+    },
+    {
+      "id": 412,
+      "category": "conflict",
+      "reverse": true,
+      "text": "When several solutions seem possible, how likely are you to reward threats by conceding immediately?"
+    },
+    {
+      "id": 413,
+      "category": "conflict",
+      "reverse": false,
+      "text": "During a disagreement about facts, how likely are you to address a difficult tactic without escalating unnecessarily?"
+    },
+    {
+      "id": 414,
+      "category": "conflict",
+      "reverse": true,
+      "text": "When you feel pressured to decide quickly, how likely are you to respond to pressure with a stronger personal attack?"
+    },
+    {
+      "id": 415,
+      "category": "conflict",
+      "reverse": false,
+      "text": "After receiving new reliable information, how likely are you to return the discussion to issues when it becomes personal?"
+    },
+    {
+      "id": 416,
+      "category": "conflict",
+      "reverse": true,
+      "text": "When a proposal is almost acceptable, how likely are you to reward threats by conceding immediately?"
+    },
+    {
+      "id": 417,
+      "category": "conflict",
+      "reverse": false,
+      "text": "If the other side uses a difficult tactic, how likely are you to address a difficult tactic without escalating unnecessarily?"
+    },
+    {
+      "id": 418,
+      "category": "conflict",
+      "reverse": true,
+      "text": "When cultural expectations may differ, how likely are you to respond to pressure with a stronger personal attack?"
+    },
+    {
+      "id": 419,
+      "category": "conflict",
+      "reverse": false,
+      "text": "Before accepting final terms, how likely are you to return the discussion to issues when it becomes personal?"
+    },
+    {
+      "id": 420,
+      "category": "conflict",
+      "reverse": true,
+      "text": "When an agreement seems within reach, how likely are you to reward threats by conceding immediately?"
+    },
+    {
+      "id": 421,
+      "category": "conflict",
+      "reverse": false,
+      "text": "After a misunderstanding appears, how likely are you to address a difficult tactic without escalating unnecessarily?"
+    },
+    {
+      "id": 422,
+      "category": "conflict",
+      "reverse": true,
+      "text": "When long-term cooperation matters, how likely are you to respond to pressure with a stronger personal attack?"
+    },
+    {
+      "id": 423,
+      "category": "conflict",
+      "reverse": false,
+      "text": "While comparing possible packages, how likely are you to return the discussion to issues when it becomes personal?"
+    },
+    {
+      "id": 424,
+      "category": "conflict",
+      "reverse": true,
+      "text": "At the end of the meeting, how likely are you to reward threats by conceding immediately?"
+    },
+    {
+      "id": 425,
+      "category": "conflict",
+      "reverse": false,
+      "text": "During repeated negotiations over time, how likely are you to address a difficult tactic without escalating unnecessarily?"
+    },
+    {
+      "id": 426,
+      "category": "ethics",
+      "reverse": false,
+      "text": "Before an important negotiation begins, how likely are you to remain truthful about material facts and commitments?"
+    },
+    {
+      "id": 427,
+      "category": "ethics",
+      "reverse": true,
+      "text": "When the other side states a firm position, how likely are you to use deliberate deception about an important fact?"
+    },
+    {
+      "id": 428,
+      "category": "ethics",
+      "reverse": false,
+      "text": "During an early conversation about terms, how likely are you to seek an agreement that can be defended as fair in process?"
+    },
+    {
+      "id": 429,
+      "category": "ethics",
+      "reverse": true,
+      "text": "When information is incomplete, how likely are you to exploit a clear misunderstanding without attempting clarification?"
+    },
+    {
+      "id": 430,
+      "category": "ethics",
+      "reverse": false,
+      "text": "After hearing an unexpected demand, how likely are you to remain truthful about material facts and commitments?"
+    },
+    {
+      "id": 431,
+      "category": "ethics",
+      "reverse": true,
+      "text": "When your preferred outcome is challenged, how likely are you to use deliberate deception about an important fact?"
+    },
+    {
+      "id": 432,
+      "category": "ethics",
+      "reverse": false,
+      "text": "While discussing price or resources, how likely are you to seek an agreement that can be defended as fair in process?"
+    },
+    {
+      "id": 433,
+      "category": "ethics",
+      "reverse": true,
+      "text": "When the conversation becomes tense, how likely are you to exploit a clear misunderstanding without attempting clarification?"
+    },
+    {
+      "id": 434,
+      "category": "ethics",
+      "reverse": false,
+      "text": "Before making the first offer, how likely are you to remain truthful about material facts and commitments?"
+    },
+    {
+      "id": 435,
+      "category": "ethics",
+      "reverse": true,
+      "text": "When the other side asks for a concession, how likely are you to use deliberate deception about an important fact?"
+    },
+    {
+      "id": 436,
+      "category": "ethics",
+      "reverse": false,
+      "text": "After noticing different priorities, how likely are you to seek an agreement that can be defended as fair in process?"
+    },
+    {
+      "id": 437,
+      "category": "ethics",
+      "reverse": true,
+      "text": "When several solutions seem possible, how likely are you to exploit a clear misunderstanding without attempting clarification?"
+    },
+    {
+      "id": 438,
+      "category": "ethics",
+      "reverse": false,
+      "text": "During a disagreement about facts, how likely are you to remain truthful about material facts and commitments?"
+    },
+    {
+      "id": 439,
+      "category": "ethics",
+      "reverse": true,
+      "text": "When you feel pressured to decide quickly, how likely are you to use deliberate deception about an important fact?"
+    },
+    {
+      "id": 440,
+      "category": "ethics",
+      "reverse": false,
+      "text": "After receiving new reliable information, how likely are you to seek an agreement that can be defended as fair in process?"
+    },
+    {
+      "id": 441,
+      "category": "ethics",
+      "reverse": true,
+      "text": "When a proposal is almost acceptable, how likely are you to exploit a clear misunderstanding without attempting clarification?"
+    },
+    {
+      "id": 442,
+      "category": "ethics",
+      "reverse": false,
+      "text": "If the other side uses a difficult tactic, how likely are you to remain truthful about material facts and commitments?"
+    },
+    {
+      "id": 443,
+      "category": "ethics",
+      "reverse": true,
+      "text": "When cultural expectations may differ, how likely are you to use deliberate deception about an important fact?"
+    },
+    {
+      "id": 444,
+      "category": "ethics",
+      "reverse": false,
+      "text": "Before accepting final terms, how likely are you to seek an agreement that can be defended as fair in process?"
+    },
+    {
+      "id": 445,
+      "category": "ethics",
+      "reverse": true,
+      "text": "When an agreement seems within reach, how likely are you to exploit a clear misunderstanding without attempting clarification?"
+    },
+    {
+      "id": 446,
+      "category": "ethics",
+      "reverse": false,
+      "text": "After a misunderstanding appears, how likely are you to remain truthful about material facts and commitments?"
+    },
+    {
+      "id": 447,
+      "category": "ethics",
+      "reverse": true,
+      "text": "When long-term cooperation matters, how likely are you to use deliberate deception about an important fact?"
+    },
+    {
+      "id": 448,
+      "category": "ethics",
+      "reverse": false,
+      "text": "While comparing possible packages, how likely are you to seek an agreement that can be defended as fair in process?"
+    },
+    {
+      "id": 449,
+      "category": "ethics",
+      "reverse": true,
+      "text": "At the end of the meeting, how likely are you to exploit a clear misunderstanding without attempting clarification?"
+    },
+    {
+      "id": 450,
+      "category": "ethics",
+      "reverse": false,
+      "text": "During repeated negotiations over time, how likely are you to remain truthful about material facts and commitments?"
+    },
+    {
+      "id": 451,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "Before an important negotiation begins, how likely are you to adapt your communication when the context requires it?"
+    },
+    {
+      "id": 452,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When the other side states a firm position, how likely are you to use the same approach regardless of context or relationship?"
+    },
+    {
+      "id": 453,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "During an early conversation about terms, how likely are you to check how cultural or organisational norms affect expectations?"
+    },
+    {
+      "id": 454,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When information is incomplete, how likely are you to interpret an unfamiliar communication style as disrespect automatically?"
+    },
+    {
+      "id": 455,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "After hearing an unexpected demand, how likely are you to adapt your communication when the context requires it?"
+    },
+    {
+      "id": 456,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When your preferred outcome is challenged, how likely are you to use the same approach regardless of context or relationship?"
+    },
+    {
+      "id": 457,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "While discussing price or resources, how likely are you to check how cultural or organisational norms affect expectations?"
+    },
+    {
+      "id": 458,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When the conversation becomes tense, how likely are you to interpret an unfamiliar communication style as disrespect automatically?"
+    },
+    {
+      "id": 459,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "Before making the first offer, how likely are you to adapt your communication when the context requires it?"
+    },
+    {
+      "id": 460,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When the other side asks for a concession, how likely are you to use the same approach regardless of context or relationship?"
+    },
+    {
+      "id": 461,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "After noticing different priorities, how likely are you to check how cultural or organisational norms affect expectations?"
+    },
+    {
+      "id": 462,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When several solutions seem possible, how likely are you to interpret an unfamiliar communication style as disrespect automatically?"
+    },
+    {
+      "id": 463,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "During a disagreement about facts, how likely are you to adapt your communication when the context requires it?"
+    },
+    {
+      "id": 464,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When you feel pressured to decide quickly, how likely are you to use the same approach regardless of context or relationship?"
+    },
+    {
+      "id": 465,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "After receiving new reliable information, how likely are you to check how cultural or organisational norms affect expectations?"
+    },
+    {
+      "id": 466,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When a proposal is almost acceptable, how likely are you to interpret an unfamiliar communication style as disrespect automatically?"
+    },
+    {
+      "id": 467,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "If the other side uses a difficult tactic, how likely are you to adapt your communication when the context requires it?"
+    },
+    {
+      "id": 468,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When cultural expectations may differ, how likely are you to use the same approach regardless of context or relationship?"
+    },
+    {
+      "id": 469,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "Before accepting final terms, how likely are you to check how cultural or organisational norms affect expectations?"
+    },
+    {
+      "id": 470,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When an agreement seems within reach, how likely are you to interpret an unfamiliar communication style as disrespect automatically?"
+    },
+    {
+      "id": 471,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "After a misunderstanding appears, how likely are you to adapt your communication when the context requires it?"
+    },
+    {
+      "id": 472,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When long-term cooperation matters, how likely are you to use the same approach regardless of context or relationship?"
+    },
+    {
+      "id": 473,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "While comparing possible packages, how likely are you to check how cultural or organisational norms affect expectations?"
+    },
+    {
+      "id": 474,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "At the end of the meeting, how likely are you to interpret an unfamiliar communication style as disrespect automatically?"
+    },
+    {
+      "id": 475,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "During repeated negotiations over time, how likely are you to adapt your communication when the context requires it?"
+    },
+    {
+      "id": 476,
+      "category": "closing",
+      "reverse": false,
+      "text": "Before an important negotiation begins, how likely are you to confirm specific terms, responsibilities, and timelines before closing?"
+    },
+    {
+      "id": 477,
+      "category": "closing",
+      "reverse": true,
+      "text": "When the other side states a firm position, how likely are you to end with a vague understanding that each side may interpret differently?"
+    },
+    {
+      "id": 478,
+      "category": "closing",
+      "reverse": false,
+      "text": "During an early conversation about terms, how likely are you to document the agreement and define how progress will be reviewed?"
+    },
+    {
+      "id": 479,
+      "category": "closing",
+      "reverse": true,
+      "text": "When information is incomplete, how likely are you to celebrate agreement without checking implementation details?"
+    },
+    {
+      "id": 480,
+      "category": "closing",
+      "reverse": false,
+      "text": "After hearing an unexpected demand, how likely are you to confirm specific terms, responsibilities, and timelines before closing?"
+    },
+    {
+      "id": 481,
+      "category": "closing",
+      "reverse": true,
+      "text": "When your preferred outcome is challenged, how likely are you to end with a vague understanding that each side may interpret differently?"
+    },
+    {
+      "id": 482,
+      "category": "closing",
+      "reverse": false,
+      "text": "While discussing price or resources, how likely are you to document the agreement and define how progress will be reviewed?"
+    },
+    {
+      "id": 483,
+      "category": "closing",
+      "reverse": true,
+      "text": "When the conversation becomes tense, how likely are you to celebrate agreement without checking implementation details?"
+    },
+    {
+      "id": 484,
+      "category": "closing",
+      "reverse": false,
+      "text": "Before making the first offer, how likely are you to confirm specific terms, responsibilities, and timelines before closing?"
+    },
+    {
+      "id": 485,
+      "category": "closing",
+      "reverse": true,
+      "text": "When the other side asks for a concession, how likely are you to end with a vague understanding that each side may interpret differently?"
+    },
+    {
+      "id": 486,
+      "category": "closing",
+      "reverse": false,
+      "text": "After noticing different priorities, how likely are you to document the agreement and define how progress will be reviewed?"
+    },
+    {
+      "id": 487,
+      "category": "closing",
+      "reverse": true,
+      "text": "When several solutions seem possible, how likely are you to celebrate agreement without checking implementation details?"
+    },
+    {
+      "id": 488,
+      "category": "closing",
+      "reverse": false,
+      "text": "During a disagreement about facts, how likely are you to confirm specific terms, responsibilities, and timelines before closing?"
+    },
+    {
+      "id": 489,
+      "category": "closing",
+      "reverse": true,
+      "text": "When you feel pressured to decide quickly, how likely are you to end with a vague understanding that each side may interpret differently?"
+    },
+    {
+      "id": 490,
+      "category": "closing",
+      "reverse": false,
+      "text": "After receiving new reliable information, how likely are you to document the agreement and define how progress will be reviewed?"
+    },
+    {
+      "id": 491,
+      "category": "closing",
+      "reverse": true,
+      "text": "When a proposal is almost acceptable, how likely are you to celebrate agreement without checking implementation details?"
+    },
+    {
+      "id": 492,
+      "category": "closing",
+      "reverse": false,
+      "text": "If the other side uses a difficult tactic, how likely are you to confirm specific terms, responsibilities, and timelines before closing?"
+    },
+    {
+      "id": 493,
+      "category": "closing",
+      "reverse": true,
+      "text": "When cultural expectations may differ, how likely are you to end with a vague understanding that each side may interpret differently?"
+    },
+    {
+      "id": 494,
+      "category": "closing",
+      "reverse": false,
+      "text": "Before accepting final terms, how likely are you to document the agreement and define how progress will be reviewed?"
+    },
+    {
+      "id": 495,
+      "category": "closing",
+      "reverse": true,
+      "text": "When an agreement seems within reach, how likely are you to celebrate agreement without checking implementation details?"
+    },
+    {
+      "id": 496,
+      "category": "closing",
+      "reverse": false,
+      "text": "After a misunderstanding appears, how likely are you to confirm specific terms, responsibilities, and timelines before closing?"
+    },
+    {
+      "id": 497,
+      "category": "closing",
+      "reverse": true,
+      "text": "When long-term cooperation matters, how likely are you to end with a vague understanding that each side may interpret differently?"
+    },
+    {
+      "id": 498,
+      "category": "closing",
+      "reverse": false,
+      "text": "While comparing possible packages, how likely are you to document the agreement and define how progress will be reviewed?"
+    },
+    {
+      "id": 499,
+      "category": "closing",
+      "reverse": true,
+      "text": "At the end of the meeting, how likely are you to celebrate agreement without checking implementation details?"
+    },
+    {
+      "id": 500,
+      "category": "closing",
+      "reverse": false,
+      "text": "During repeated negotiations over time, how likely are you to confirm specific terms, responsibilities, and timelines before closing?"
+    }
+  ]
+}

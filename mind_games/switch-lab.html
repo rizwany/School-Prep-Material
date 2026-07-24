@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+<link rel="icon" type="image/x-icon" href="/assets/favicons/favicon.ico">
+<link rel="manifest" href="/assets/favicons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description" content="Switch Lab: a free mental flexibility game. Sort cards by a hidden rule that changes without warning — figure out the new pattern fast to keep your streak alive." />
+  <meta property="og:title" content="Switch Lab – Mental Flexibility Game | LearnPad" />
+  <meta property="og:description" content="Sort cards by a hidden rule that changes without warning. A fast-paced cognitive flexibility workout." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mypkweb.com/mind_games/switch-lab.html" />
+  <meta property="og:site_name" content="LearnPad" />
+  <meta property="og:image" content="https://mypkweb.com/assets/images/ogimage.png" />
+  <link rel="canonical" href="https://mypkweb.com/mind_games/switch-lab.html" />
+<title>Switch Lab – Mental Flexibility Game | LearnPad</title>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --accent: #0891b2;
+      --accent-dark: #0e7490;
+      --ink: #1a1f36;
+      --muted: #5a6076;
+      --bg: #ecfeff;
+      --card: #ffffff;
+      --border: #a5f3fc;
+      --radius: 16px;
+    }
+    body { font-family: 'Nunito', sans-serif; background: var(--bg); color: var(--ink); min-height: 100vh; }
+    a { color: var(--accent-dark); }
+
+    .wrap { max-width: 900px; margin: 0 auto; padding: 20px 16px 60px; }
+    .page-toolbar {
+      max-width: 900px; margin: 0 auto; padding: 16px 16px 0;
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    }
+    .back-link { font-weight: 800; font-size: .85rem; text-decoration: none; }
+    .streak-badge {
+      background: #fff; border: 2px solid var(--accent); color: var(--accent-dark);
+      padding: 5px 11px; border-radius: 20px; font-weight: 900; font-size: .82rem; white-space: nowrap;
+    }
+
+    .intro-card {
+      background: var(--card); border: 2px solid var(--border); border-radius: var(--radius);
+      padding: 28px 24px; text-align: center; margin-bottom: 20px;
+    }
+    .intro-card .emoji { font-size: 2.6rem; }
+    .intro-card h1 { font-size: 1.5rem; font-weight: 900; margin: 8px 0 6px; }
+    .intro-card p { color: var(--muted); font-size: .92rem; line-height: 1.6; max-width: 620px; margin: 0 auto; }
+
+    .stage {
+      background: var(--card); border: 2px solid var(--border); border-radius: var(--radius);
+      padding: 24px; margin-bottom: 20px; text-align: center;
+    }
+    .stage-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 14px; flex-wrap: wrap; }
+    .stage-head h2 { font-size: 1.05rem; font-weight: 900; }
+    .progress-pill {
+      background: #cffafe; border: 2px solid var(--accent); color: var(--accent-dark); font-weight: 900;
+      padding: 6px 14px; border-radius: 20px; font-size: .85rem;
+    }
+
+    .glyph-card {
+      display: inline-flex; align-items: center; justify-content: center; gap: 4px; flex-wrap: wrap;
+      background: #fff; border: 3px solid var(--border); border-radius: 14px;
+      width: 130px; height: 92px; margin: 0 auto;
+    }
+    .glyph { font-size: 1.5rem; line-height: 1; }
+    .glyph.c-red { color: #dc2626; } .glyph.c-green { color: #16a34a; }
+    .glyph.c-blue { color: #2563eb; } .glyph.c-yellow { color: #ca8a04; }
+
+    .dealt-wrap { margin-bottom: 20px; }
+    .dealt-wrap .glyph-card { width: 150px; height: 108px; border-color: var(--accent); box-shadow: 0 4px 16px rgba(8,145,178,.15); }
+    .dealt-wrap .glyph { font-size: 1.8rem; }
+
+    .feedback-flash { min-height: 28px; font-weight: 900; font-size: 1rem; margin-bottom: 10px; }
+    .feedback-flash.correct { color: #16a34a; }
+    .feedback-flash.wrong { color: #dc2626; }
+
+    .key-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .key-btn { background: #fff; border: 3px solid var(--border); border-radius: 14px; padding: 6px; cursor: pointer; }
+    .key-btn:hover { border-color: var(--accent); }
+    .key-btn:disabled { opacity: .5; cursor: not-allowed; }
+
+    @keyframes shakeErr { 0%,100%{transform:translateX(0);} 25%{transform:translateX(-6px);} 75%{transform:translateX(6px);} }
+    .shake { animation: shakeErr .3s ease; }
+    @keyframes popOk { 0%{transform:scale(1);} 50%{transform:scale(1.08);} 100%{transform:scale(1);} }
+    .pop { animation: popOk .3s ease; }
+
+    .primary-btn {
+      background: var(--accent); color: #fff; border: none; border-radius: 10px;
+      padding: 12px 22px; font-weight: 900; font-size: .92rem; cursor: pointer;
+    }
+    .secondary-btn {
+      background: #fff; color: var(--accent-dark); border: 2px solid var(--accent); border-radius: 10px;
+      padding: 10px 18px; font-weight: 900; font-size: .88rem; cursor: pointer;
+    }
+
+    .result-banner .big-emoji { font-size: 2.8rem; display: block; margin-bottom: 8px; }
+    .result-banner h3 { font-size: 1.25rem; font-weight: 900; margin-bottom: 6px; color: var(--accent-dark); }
+    .result-banner p { font-size: .9rem; color: var(--muted); line-height: 1.6; margin-bottom: 6px; }
+
+    .stats-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin-bottom: 20px; }
+    .stat-pill {
+      background: var(--card); border: 2px solid var(--border); border-radius: 12px;
+      text-align: center; padding: 10px 6px;
+    }
+    .stat-pill strong { display: block; font-size: 1.15rem; font-weight: 900; color: var(--accent-dark); }
+    .stat-pill span { font-size: .68rem; font-weight: 800; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+
+    .info-box {
+      background: #f0fdfa; border: 2px solid #99f6e4; border-radius: 14px;
+      padding: 14px 16px; font-size: .82rem; line-height: 1.6; color: #115e59; margin-bottom: 20px;
+    }
+    .info-box strong { color: #0f766e; }
+
+    footer.footer { text-align: center; padding: 24px 16px; color: var(--muted); font-size: .78rem; }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="page-toolbar">
+  <a class="back-link" href="index.html">← Mind Games</a>
+  <span id="streakBadge" class="streak-badge">🔥 Day 1</span>
+</div>
+
+<div class="wrap">
+
+  <div class="intro-card">
+    <span class="emoji">🔀</span>
+    <h1>Switch Lab</h1>
+    <p>Sort each card onto one of the four key cards below. There's a rule — maybe it's color, maybe it's shape,
+      maybe it's how many symbols are on the card. You won't be told which. Watch the ✅ / ❌ feedback, and when
+      the rule quietly changes, adapt as fast as you can.</p>
+  </div>
+
+  <div class="stage" id="stage"></div>
+
+  <div class="stats-row">
+    <div class="stat-pill"><strong id="statSessions">0</strong><span>Sessions</span></div>
+    <div class="stat-pill"><strong id="statBestScore">0</strong><span>Best Score</span></div>
+    <div class="stat-pill"><strong id="statBestAdapt">—</strong><span>Fastest Adapt</span></div>
+  </div>
+
+  <div class="info-box">
+    <strong>Why this works:</strong> This game is inspired by classic card-sorting tasks used to study cognitive
+    flexibility — the mental skill of letting go of a pattern that no longer works and adopting a new one quickly.
+    The faster you recover after a rule change, the more flexible your thinking in the moment.
+  </div>
+
+</div>
+
+<footer class="footer">LearnPad · Switch Lab is a cognitive flexibility warm-up, not a diagnostic test.</footer>
+
+<script>
+(function(){
+  var STORAGE_KEY = 'switchLab_v1';
+
+  var GLYPH = { circle: '●', square: '■', triangle: '▲', star: '★' };
+  var COLORS = ['red','green','blue','yellow'];
+  var SHAPES = ['circle','square','triangle','star'];
+  var COUNTS = [1,2,3,4];
+  var RULES = ['color','shape','count'];
+
+  var KEYS = [
+    { count: 1, color: 'red',    shape: 'circle' },
+    { count: 2, color: 'green',  shape: 'square' },
+    { count: 3, color: 'blue',   shape: 'triangle' },
+    { count: 4, color: 'yellow', shape: 'star' }
+  ];
+
+  var TOTAL_CARDS = 30;
+  var SWITCH_AFTER_CORRECT = 6;
+
+  function todayStr(){ return new Date().toISOString().slice(0,10); }
+  function pick(arr){ return arr[Math.floor(Math.random()*arr.length)]; }
+  function pickOtherRule(current){
+    var options = RULES.filter(function(r){ return r !== current; });
+    return pick(options);
+  }
+
+  function loadState(){
+    var s = {};
+    try { s = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; } catch(e){ s = {}; }
+    s.sessions = s.sessions || 0;
+    s.bestScore = s.bestScore || 0;
+    s.bestAdapt = (typeof s.bestAdapt === 'number') ? s.bestAdapt : null;
+    s.streak = s.streak || 0;
+    s.lastActiveDate = s.lastActiveDate || null;
+    return s;
+  }
+  function saveState(s){ localStorage.setItem(STORAGE_KEY, JSON.stringify(s)); }
+  var state = loadState();
+
+  function bumpStreakIfNeeded(){
+    var today = todayStr();
+    if (state.lastActiveDate === today) return;
+    if (state.lastActiveDate){
+      var diffDays = Math.round((new Date(today) - new Date(state.lastActiveDate)) / 86400000);
+      state.streak = (diffDays === 1) ? state.streak + 1 : 1;
+    } else {
+      state.streak = 1;
+    }
+    state.lastActiveDate = today;
+  }
+
+  function renderHeaderStats(){
+    document.getElementById('streakBadge').textContent = '🔥 Day ' + Math.max(state.streak,1);
+    document.getElementById('statSessions').textContent = state.sessions;
+    document.getElementById('statBestScore').textContent = state.bestScore + '/' + TOTAL_CARDS;
+    document.getElementById('statBestAdapt').textContent = (state.bestAdapt === null) ? '—' : state.bestAdapt.toFixed(1) + ' cards';
+  }
+
+  function glyphCardHtml(card, big){
+    var cls = 'glyph c-' + card.color;
+    var glyph = GLYPH[card.shape];
+    var out = '';
+    for (var i=0;i<card.count;i++) out += '<span class="' + cls + '">' + glyph + '</span>';
+    return '<div class="glyph-card">' + out + '</div>';
+  }
+
+  var stage = document.getElementById('stage');
+
+  function renderIntroStage(){
+    stage.innerHTML =
+      '<div class="stage-head"><h2>Ready when you are</h2></div>' +
+      '<p style="font-size:.88rem;color:var(--muted);margin-bottom:16px;">30 cards. One hidden rule at a time. Click the key card you think matches.</p>' +
+      '<button class="primary-btn" id="startBtn">Start Sorting ▶</button>';
+    document.getElementById('startBtn').addEventListener('click', startSession);
+  }
+
+  var dealt = 0, correctCount = 0, consecutiveCorrect = 0, currentRule = null;
+  var switchesSurvived = 0, cardsSinceSwitch = 0, adaptTimes = [], awaitingFirstCorrectAfterSwitch = false;
+  var currentCard = null;
+
+  function newCard(){
+    return { color: pick(COLORS), shape: pick(SHAPES), count: pick(COUNTS) };
+  }
+
+  function startSession(){
+    dealt = 0; correctCount = 0; consecutiveCorrect = 0;
+    currentRule = pick(RULES);
+    switchesSurvived = 0; cardsSinceSwitch = 0; adaptTimes = []; awaitingFirstCorrectAfterSwitch = false;
+    dealNext();
+  }
+
+  function dealNext(){
+    dealt++;
+    currentCard = newCard();
+    cardsSinceSwitch++;
+    renderDeal();
+  }
+
+  function renderDeal(){
+    var keysHtml = KEYS.map(function(k, i){
+      return '<button class="key-btn" data-idx="' + i + '">' + glyphCardHtml(k) + '</button>';
+    }).join('');
+    stage.innerHTML =
+      '<div class="stage-head"><h2>Sort the card</h2><span class="progress-pill">Card ' + dealt + ' / ' + TOTAL_CARDS + ' · ✅ ' + correctCount + '</span></div>' +
+      '<div class="dealt-wrap" id="dealtWrap">' + glyphCardHtml(currentCard, true) + '</div>' +
+      '<div class="feedback-flash" id="feedbackFlash">&nbsp;</div>' +
+      '<div class="key-row" id="keyRow">' + keysHtml + '</div>';
+    Array.prototype.forEach.call(document.querySelectorAll('#keyRow .key-btn'), function(btn){
+      btn.addEventListener('click', function(){ handleChoice(parseInt(btn.getAttribute('data-idx'),10)); });
+    });
+  }
+
+  function correctKeyIndex(){
+    for (var i=0;i<KEYS.length;i++){
+      if (KEYS[i][currentRule] === currentCard[currentRule]) return i;
+    }
+    return -1;
+  }
+
+  function handleChoice(idx){
+    Array.prototype.forEach.call(document.querySelectorAll('#keyRow .key-btn'), function(b){ b.disabled = true; });
+    var isCorrect = (idx === correctKeyIndex());
+    var flash = document.getElementById('feedbackFlash');
+    var dealtWrap = document.getElementById('dealtWrap');
+
+    if (isCorrect){
+      correctCount++; consecutiveCorrect++;
+      flash.textContent = '✅ Correct';
+      flash.className = 'feedback-flash correct';
+      dealtWrap.classList.add('pop');
+      if (awaitingFirstCorrectAfterSwitch){
+        adaptTimes.push(cardsSinceSwitch);
+        awaitingFirstCorrectAfterSwitch = false;
+      }
+      if (consecutiveCorrect >= SWITCH_AFTER_CORRECT && dealt < TOTAL_CARDS){
+        currentRule = pickOtherRule(currentRule);
+        consecutiveCorrect = 0;
+        switchesSurvived++;
+        cardsSinceSwitch = 0;
+        awaitingFirstCorrectAfterSwitch = true;
+      }
+    } else {
+      consecutiveCorrect = 0;
+      flash.textContent = '❌ Try the next one';
+      flash.className = 'feedback-flash wrong';
+      dealtWrap.classList.add('shake');
+    }
+
+    setTimeout(function(){
+      if (dealt >= TOTAL_CARDS){
+        finishSession();
+      } else {
+        dealNext();
+      }
+    }, 550);
+  }
+
+  function titleFor(avgAdapt, score){
+    if (avgAdapt === null) return score >= TOTAL_CARDS*0.6 ? 'Steady Sorter 🙂' : 'Warming Up 🌱';
+    if (avgAdapt <= 1.5) return 'Quick-Change Artist ⚡';
+    if (avgAdapt <= 3) return 'Steady Adapter 🌊';
+    if (avgAdapt <= 5) return 'Careful Thinker 🐢';
+    return 'Creature of Habit 🦴';
+  }
+
+  function finishSession(){
+    state.sessions++;
+    if (correctCount > state.bestScore) state.bestScore = correctCount;
+    var avgAdapt = adaptTimes.length ? (adaptTimes.reduce(function(a,b){return a+b;},0) / adaptTimes.length) : null;
+    if (avgAdapt !== null && (state.bestAdapt === null || avgAdapt < state.bestAdapt)){
+      state.bestAdapt = avgAdapt;
+    }
+    bumpStreakIfNeeded();
+    saveState(state);
+    renderHeaderStats();
+
+    stage.innerHTML =
+      '<div class="result-banner">' +
+        '<span class="big-emoji">🧠</span>' +
+        '<h3>' + titleFor(avgAdapt, correctCount) + '</h3>' +
+        '<p>You sorted ' + correctCount + ' of ' + TOTAL_CARDS + ' correctly and adapted through ' + switchesSurvived + ' rule switch' + (switchesSurvived===1?'':'es') + '.</p>' +
+        '<p>' + (avgAdapt !== null ? 'Average recovery time: ' + avgAdapt.toFixed(1) + ' cards after each switch.' : 'Play a full round to measure your adaptation speed.') + '</p>' +
+        '<div style="margin-top:14px;"><button class="primary-btn" id="playAgainBtn">Play Again →</button></div>' +
+      '</div>';
+    document.getElementById('playAgainBtn').addEventListener('click', startSession);
+  }
+
+  renderHeaderStats();
+  renderIntroStage();
+})();
+</script>
+<script src="../assets/shared-nav.js"></script>
+</body>
+</html>

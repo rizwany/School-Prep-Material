@@ -1,0 +1,3160 @@
+{
+  "meta": {
+    "title": "Success Likelihood Test",
+    "description": "A 500-question reflection across 20 dimensions of current success readiness and enabling conditions.",
+    "scale": {
+      "min": 1,
+      "max": 10,
+      "minLabel": "Not at all likely",
+      "maxLabel": "Extremely likely"
+    },
+    "categories": [
+      {
+        "id": "goal_clarity",
+        "label": "Goal Clarity & Direction",
+        "icon": "🎯"
+      },
+      {
+        "id": "motivation",
+        "label": "Purpose & Motivation",
+        "icon": "🔥"
+      },
+      {
+        "id": "self_efficacy",
+        "label": "Self-Efficacy & Agency",
+        "icon": "💪"
+      },
+      {
+        "id": "planning",
+        "label": "Planning & Strategy",
+        "icon": "🗺️"
+      },
+      {
+        "id": "prioritisation",
+        "label": "Prioritisation & Trade-Offs",
+        "icon": "⚖️"
+      },
+      {
+        "id": "execution",
+        "label": "Execution & Action",
+        "icon": "🚀"
+      },
+      {
+        "id": "consistency",
+        "label": "Consistency & Habits",
+        "icon": "🔁"
+      },
+      {
+        "id": "persistence",
+        "label": "Persistence & Resilience",
+        "icon": "🧗"
+      },
+      {
+        "id": "adaptability",
+        "label": "Adaptability & Flexibility",
+        "icon": "🔄"
+      },
+      {
+        "id": "learning",
+        "label": "Learning & Skill Development",
+        "icon": "📚"
+      },
+      {
+        "id": "feedback",
+        "label": "Feedback & Self-Review",
+        "icon": "🪞"
+      },
+      {
+        "id": "problem_solving",
+        "label": "Problem-Solving & Resourcefulness",
+        "icon": "🧩"
+      },
+      {
+        "id": "decision_making",
+        "label": "Decision-Making & Judgement",
+        "icon": "🧠"
+      },
+      {
+        "id": "focus",
+        "label": "Focus & Attention Management",
+        "icon": "🔍"
+      },
+      {
+        "id": "time_energy",
+        "label": "Time & Energy Management",
+        "icon": "⏳"
+      },
+      {
+        "id": "accountability",
+        "label": "Accountability & Measurement",
+        "icon": "📊"
+      },
+      {
+        "id": "support_network",
+        "label": "Support, Mentors & Networks",
+        "icon": "🤝"
+      },
+      {
+        "id": "communication",
+        "label": "Communication & Influence",
+        "icon": "💬"
+      },
+      {
+        "id": "emotional_regulation",
+        "label": "Emotional Regulation",
+        "icon": "🧘"
+      },
+      {
+        "id": "opportunity_context",
+        "label": "Opportunity & Context Awareness",
+        "icon": "🌍"
+      }
+    ],
+    "levels": [
+      {
+        "min": 9,
+        "max": 10.01,
+        "label": "Very Strong Success Readiness",
+        "emoji": "🏆",
+        "desc": "Your current habits and enabling conditions strongly support purposeful progress. Outcomes still depend on context, opportunity, resources, and events outside your control."
+      },
+      {
+        "min": 7.5,
+        "max": 9,
+        "label": "Strong Success Readiness",
+        "emoji": "🌟",
+        "desc": "Most of your current habits support progress, with a few dimensions that could become more consistent or better resourced."
+      },
+      {
+        "min": 6,
+        "max": 7.5,
+        "label": "Developing Success Readiness",
+        "emoji": "🧭",
+        "desc": "Several useful foundations are present, though execution, focus, feedback, resilience, or support may vary by situation."
+      },
+      {
+        "min": 4.5,
+        "max": 6,
+        "label": "Emerging Success Readiness",
+        "emoji": "🌱",
+        "desc": "Some foundations support progress, while clearer goals, practical planning, consistent action, and feedback could improve readiness."
+      },
+      {
+        "min": 3,
+        "max": 4.5,
+        "label": "Limited Current Readiness",
+        "emoji": "🔧",
+        "desc": "Current habits or conditions may make progress difficult. Start with one clear goal, a small action, realistic support, and regular review."
+      },
+      {
+        "min": 1,
+        "max": 3,
+        "label": "Foundations Need Attention",
+        "emoji": "📘",
+        "desc": "Several success-supporting conditions appear limited right now. Focus on safe, manageable steps and seek practical support where available."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "category": "goal_clarity",
+      "reverse": false,
+      "text": "When choosing an important goal, how likely are you to define a specific outcome you are working toward?"
+    },
+    {
+      "id": 2,
+      "category": "goal_clarity",
+      "reverse": true,
+      "text": "At the beginning of a new project, how likely are you to pursue a vague idea of success with no clear outcome?"
+    },
+    {
+      "id": 3,
+      "category": "goal_clarity",
+      "reverse": false,
+      "text": "When initial excitement fades, how likely are you to connect your next action to a meaningful longer-term direction?"
+    },
+    {
+      "id": 4,
+      "category": "goal_clarity",
+      "reverse": true,
+      "text": "While balancing several demands, how likely are you to change direction repeatedly without examining why?"
+    },
+    {
+      "id": 5,
+      "category": "goal_clarity",
+      "reverse": false,
+      "text": "Before starting difficult work, how likely are you to define a specific outcome you are working toward?"
+    },
+    {
+      "id": 6,
+      "category": "goal_clarity",
+      "reverse": true,
+      "text": "When progress is slower than expected, how likely are you to pursue a vague idea of success with no clear outcome?"
+    },
+    {
+      "id": 7,
+      "category": "goal_clarity",
+      "reverse": false,
+      "text": "After receiving new information, how likely are you to connect your next action to a meaningful longer-term direction?"
+    },
+    {
+      "id": 8,
+      "category": "goal_clarity",
+      "reverse": true,
+      "text": "When a setback interrupts progress, how likely are you to change direction repeatedly without examining why?"
+    },
+    {
+      "id": 9,
+      "category": "goal_clarity",
+      "reverse": false,
+      "text": "During a demanding week, how likely are you to define a specific outcome you are working toward?"
+    },
+    {
+      "id": 10,
+      "category": "goal_clarity",
+      "reverse": true,
+      "text": "When an opportunity appears unexpectedly, how likely are you to pursue a vague idea of success with no clear outcome?"
+    },
+    {
+      "id": 11,
+      "category": "goal_clarity",
+      "reverse": false,
+      "text": "While reviewing recent results, how likely are you to connect your next action to a meaningful longer-term direction?"
+    },
+    {
+      "id": 12,
+      "category": "goal_clarity",
+      "reverse": true,
+      "text": "When uncertainty is high, how likely are you to change direction repeatedly without examining why?"
+    },
+    {
+      "id": 13,
+      "category": "goal_clarity",
+      "reverse": false,
+      "text": "Before making a consequential decision, how likely are you to define a specific outcome you are working toward?"
+    },
+    {
+      "id": 14,
+      "category": "goal_clarity",
+      "reverse": true,
+      "text": "When resources are limited, how likely are you to pursue a vague idea of success with no clear outcome?"
+    },
+    {
+      "id": 15,
+      "category": "goal_clarity",
+      "reverse": false,
+      "text": "After useful criticism, how likely are you to connect your next action to a meaningful longer-term direction?"
+    },
+    {
+      "id": 16,
+      "category": "goal_clarity",
+      "reverse": true,
+      "text": "When competing priorities arise, how likely are you to change direction repeatedly without examining why?"
+    },
+    {
+      "id": 17,
+      "category": "goal_clarity",
+      "reverse": false,
+      "text": "As an important deadline approaches, how likely are you to define a specific outcome you are working toward?"
+    },
+    {
+      "id": 18,
+      "category": "goal_clarity",
+      "reverse": true,
+      "text": "When confidence temporarily drops, how likely are you to pursue a vague idea of success with no clear outcome?"
+    },
+    {
+      "id": 19,
+      "category": "goal_clarity",
+      "reverse": false,
+      "text": "While learning something unfamiliar, how likely are you to connect your next action to a meaningful longer-term direction?"
+    },
+    {
+      "id": 20,
+      "category": "goal_clarity",
+      "reverse": true,
+      "text": "When support from others could help, how likely are you to change direction repeatedly without examining why?"
+    },
+    {
+      "id": 21,
+      "category": "goal_clarity",
+      "reverse": false,
+      "text": "After completing a major step, how likely are you to define a specific outcome you are working toward?"
+    },
+    {
+      "id": 22,
+      "category": "goal_clarity",
+      "reverse": true,
+      "text": "When the original plan stops working, how likely are you to pursue a vague idea of success with no clear outcome?"
+    },
+    {
+      "id": 23,
+      "category": "goal_clarity",
+      "reverse": false,
+      "text": "During a long-term effort, how likely are you to connect your next action to a meaningful longer-term direction?"
+    },
+    {
+      "id": 24,
+      "category": "goal_clarity",
+      "reverse": true,
+      "text": "When wellbeing and ambition compete, how likely are you to change direction repeatedly without examining why?"
+    },
+    {
+      "id": 25,
+      "category": "goal_clarity",
+      "reverse": false,
+      "text": "Across repeated attempts to make progress, how likely are you to define a specific outcome you are working toward?"
+    },
+    {
+      "id": 26,
+      "category": "motivation",
+      "reverse": false,
+      "text": "When choosing an important goal, how likely are you to identify a personally meaningful reason to continue?"
+    },
+    {
+      "id": 27,
+      "category": "motivation",
+      "reverse": true,
+      "text": "At the beginning of a new project, how likely are you to depend entirely on feeling inspired before taking action?"
+    },
+    {
+      "id": 28,
+      "category": "motivation",
+      "reverse": false,
+      "text": "When initial excitement fades, how likely are you to use both internal purpose and practical rewards to sustain effort?"
+    },
+    {
+      "id": 29,
+      "category": "motivation",
+      "reverse": true,
+      "text": "While balancing several demands, how likely are you to pursue an outcome mainly because others expect it?"
+    },
+    {
+      "id": 30,
+      "category": "motivation",
+      "reverse": false,
+      "text": "Before starting difficult work, how likely are you to identify a personally meaningful reason to continue?"
+    },
+    {
+      "id": 31,
+      "category": "motivation",
+      "reverse": true,
+      "text": "When progress is slower than expected, how likely are you to depend entirely on feeling inspired before taking action?"
+    },
+    {
+      "id": 32,
+      "category": "motivation",
+      "reverse": false,
+      "text": "After receiving new information, how likely are you to use both internal purpose and practical rewards to sustain effort?"
+    },
+    {
+      "id": 33,
+      "category": "motivation",
+      "reverse": true,
+      "text": "When a setback interrupts progress, how likely are you to pursue an outcome mainly because others expect it?"
+    },
+    {
+      "id": 34,
+      "category": "motivation",
+      "reverse": false,
+      "text": "During a demanding week, how likely are you to identify a personally meaningful reason to continue?"
+    },
+    {
+      "id": 35,
+      "category": "motivation",
+      "reverse": true,
+      "text": "When an opportunity appears unexpectedly, how likely are you to depend entirely on feeling inspired before taking action?"
+    },
+    {
+      "id": 36,
+      "category": "motivation",
+      "reverse": false,
+      "text": "While reviewing recent results, how likely are you to use both internal purpose and practical rewards to sustain effort?"
+    },
+    {
+      "id": 37,
+      "category": "motivation",
+      "reverse": true,
+      "text": "When uncertainty is high, how likely are you to pursue an outcome mainly because others expect it?"
+    },
+    {
+      "id": 38,
+      "category": "motivation",
+      "reverse": false,
+      "text": "Before making a consequential decision, how likely are you to identify a personally meaningful reason to continue?"
+    },
+    {
+      "id": 39,
+      "category": "motivation",
+      "reverse": true,
+      "text": "When resources are limited, how likely are you to depend entirely on feeling inspired before taking action?"
+    },
+    {
+      "id": 40,
+      "category": "motivation",
+      "reverse": false,
+      "text": "After useful criticism, how likely are you to use both internal purpose and practical rewards to sustain effort?"
+    },
+    {
+      "id": 41,
+      "category": "motivation",
+      "reverse": true,
+      "text": "When competing priorities arise, how likely are you to pursue an outcome mainly because others expect it?"
+    },
+    {
+      "id": 42,
+      "category": "motivation",
+      "reverse": false,
+      "text": "As an important deadline approaches, how likely are you to identify a personally meaningful reason to continue?"
+    },
+    {
+      "id": 43,
+      "category": "motivation",
+      "reverse": true,
+      "text": "When confidence temporarily drops, how likely are you to depend entirely on feeling inspired before taking action?"
+    },
+    {
+      "id": 44,
+      "category": "motivation",
+      "reverse": false,
+      "text": "While learning something unfamiliar, how likely are you to use both internal purpose and practical rewards to sustain effort?"
+    },
+    {
+      "id": 45,
+      "category": "motivation",
+      "reverse": true,
+      "text": "When support from others could help, how likely are you to pursue an outcome mainly because others expect it?"
+    },
+    {
+      "id": 46,
+      "category": "motivation",
+      "reverse": false,
+      "text": "After completing a major step, how likely are you to identify a personally meaningful reason to continue?"
+    },
+    {
+      "id": 47,
+      "category": "motivation",
+      "reverse": true,
+      "text": "When the original plan stops working, how likely are you to depend entirely on feeling inspired before taking action?"
+    },
+    {
+      "id": 48,
+      "category": "motivation",
+      "reverse": false,
+      "text": "During a long-term effort, how likely are you to use both internal purpose and practical rewards to sustain effort?"
+    },
+    {
+      "id": 49,
+      "category": "motivation",
+      "reverse": true,
+      "text": "When wellbeing and ambition compete, how likely are you to pursue an outcome mainly because others expect it?"
+    },
+    {
+      "id": 50,
+      "category": "motivation",
+      "reverse": false,
+      "text": "Across repeated attempts to make progress, how likely are you to identify a personally meaningful reason to continue?"
+    },
+    {
+      "id": 51,
+      "category": "self_efficacy",
+      "reverse": false,
+      "text": "When choosing an important goal, how likely are you to believe your actions can improve the situation while staying realistic?"
+    },
+    {
+      "id": 52,
+      "category": "self_efficacy",
+      "reverse": true,
+      "text": "At the beginning of a new project, how likely are you to assume effort cannot matter before testing what is possible?"
+    },
+    {
+      "id": 53,
+      "category": "self_efficacy",
+      "reverse": false,
+      "text": "When initial excitement fades, how likely are you to focus on choices that remain within your influence?"
+    },
+    {
+      "id": 54,
+      "category": "self_efficacy",
+      "reverse": true,
+      "text": "While balancing several demands, how likely are you to wait for confidence to become perfect before beginning?"
+    },
+    {
+      "id": 55,
+      "category": "self_efficacy",
+      "reverse": false,
+      "text": "Before starting difficult work, how likely are you to believe your actions can improve the situation while staying realistic?"
+    },
+    {
+      "id": 56,
+      "category": "self_efficacy",
+      "reverse": true,
+      "text": "When progress is slower than expected, how likely are you to assume effort cannot matter before testing what is possible?"
+    },
+    {
+      "id": 57,
+      "category": "self_efficacy",
+      "reverse": false,
+      "text": "After receiving new information, how likely are you to focus on choices that remain within your influence?"
+    },
+    {
+      "id": 58,
+      "category": "self_efficacy",
+      "reverse": true,
+      "text": "When a setback interrupts progress, how likely are you to wait for confidence to become perfect before beginning?"
+    },
+    {
+      "id": 59,
+      "category": "self_efficacy",
+      "reverse": false,
+      "text": "During a demanding week, how likely are you to believe your actions can improve the situation while staying realistic?"
+    },
+    {
+      "id": 60,
+      "category": "self_efficacy",
+      "reverse": true,
+      "text": "When an opportunity appears unexpectedly, how likely are you to assume effort cannot matter before testing what is possible?"
+    },
+    {
+      "id": 61,
+      "category": "self_efficacy",
+      "reverse": false,
+      "text": "While reviewing recent results, how likely are you to focus on choices that remain within your influence?"
+    },
+    {
+      "id": 62,
+      "category": "self_efficacy",
+      "reverse": true,
+      "text": "When uncertainty is high, how likely are you to wait for confidence to become perfect before beginning?"
+    },
+    {
+      "id": 63,
+      "category": "self_efficacy",
+      "reverse": false,
+      "text": "Before making a consequential decision, how likely are you to believe your actions can improve the situation while staying realistic?"
+    },
+    {
+      "id": 64,
+      "category": "self_efficacy",
+      "reverse": true,
+      "text": "When resources are limited, how likely are you to assume effort cannot matter before testing what is possible?"
+    },
+    {
+      "id": 65,
+      "category": "self_efficacy",
+      "reverse": false,
+      "text": "After useful criticism, how likely are you to focus on choices that remain within your influence?"
+    },
+    {
+      "id": 66,
+      "category": "self_efficacy",
+      "reverse": true,
+      "text": "When competing priorities arise, how likely are you to wait for confidence to become perfect before beginning?"
+    },
+    {
+      "id": 67,
+      "category": "self_efficacy",
+      "reverse": false,
+      "text": "As an important deadline approaches, how likely are you to believe your actions can improve the situation while staying realistic?"
+    },
+    {
+      "id": 68,
+      "category": "self_efficacy",
+      "reverse": true,
+      "text": "When confidence temporarily drops, how likely are you to assume effort cannot matter before testing what is possible?"
+    },
+    {
+      "id": 69,
+      "category": "self_efficacy",
+      "reverse": false,
+      "text": "While learning something unfamiliar, how likely are you to focus on choices that remain within your influence?"
+    },
+    {
+      "id": 70,
+      "category": "self_efficacy",
+      "reverse": true,
+      "text": "When support from others could help, how likely are you to wait for confidence to become perfect before beginning?"
+    },
+    {
+      "id": 71,
+      "category": "self_efficacy",
+      "reverse": false,
+      "text": "After completing a major step, how likely are you to believe your actions can improve the situation while staying realistic?"
+    },
+    {
+      "id": 72,
+      "category": "self_efficacy",
+      "reverse": true,
+      "text": "When the original plan stops working, how likely are you to assume effort cannot matter before testing what is possible?"
+    },
+    {
+      "id": 73,
+      "category": "self_efficacy",
+      "reverse": false,
+      "text": "During a long-term effort, how likely are you to focus on choices that remain within your influence?"
+    },
+    {
+      "id": 74,
+      "category": "self_efficacy",
+      "reverse": true,
+      "text": "When wellbeing and ambition compete, how likely are you to wait for confidence to become perfect before beginning?"
+    },
+    {
+      "id": 75,
+      "category": "self_efficacy",
+      "reverse": false,
+      "text": "Across repeated attempts to make progress, how likely are you to believe your actions can improve the situation while staying realistic?"
+    },
+    {
+      "id": 76,
+      "category": "planning",
+      "reverse": false,
+      "text": "When choosing an important goal, how likely are you to turn an important goal into sequenced practical steps?"
+    },
+    {
+      "id": 77,
+      "category": "planning",
+      "reverse": true,
+      "text": "At the beginning of a new project, how likely are you to begin a complex goal without considering the main steps?"
+    },
+    {
+      "id": 78,
+      "category": "planning",
+      "reverse": false,
+      "text": "When initial excitement fades, how likely are you to anticipate likely obstacles and prepare responses?"
+    },
+    {
+      "id": 79,
+      "category": "planning",
+      "reverse": true,
+      "text": "While balancing several demands, how likely are you to treat hope as a substitute for a workable plan?"
+    },
+    {
+      "id": 80,
+      "category": "planning",
+      "reverse": false,
+      "text": "Before starting difficult work, how likely are you to turn an important goal into sequenced practical steps?"
+    },
+    {
+      "id": 81,
+      "category": "planning",
+      "reverse": true,
+      "text": "When progress is slower than expected, how likely are you to begin a complex goal without considering the main steps?"
+    },
+    {
+      "id": 82,
+      "category": "planning",
+      "reverse": false,
+      "text": "After receiving new information, how likely are you to anticipate likely obstacles and prepare responses?"
+    },
+    {
+      "id": 83,
+      "category": "planning",
+      "reverse": true,
+      "text": "When a setback interrupts progress, how likely are you to treat hope as a substitute for a workable plan?"
+    },
+    {
+      "id": 84,
+      "category": "planning",
+      "reverse": false,
+      "text": "During a demanding week, how likely are you to turn an important goal into sequenced practical steps?"
+    },
+    {
+      "id": 85,
+      "category": "planning",
+      "reverse": true,
+      "text": "When an opportunity appears unexpectedly, how likely are you to begin a complex goal without considering the main steps?"
+    },
+    {
+      "id": 86,
+      "category": "planning",
+      "reverse": false,
+      "text": "While reviewing recent results, how likely are you to anticipate likely obstacles and prepare responses?"
+    },
+    {
+      "id": 87,
+      "category": "planning",
+      "reverse": true,
+      "text": "When uncertainty is high, how likely are you to treat hope as a substitute for a workable plan?"
+    },
+    {
+      "id": 88,
+      "category": "planning",
+      "reverse": false,
+      "text": "Before making a consequential decision, how likely are you to turn an important goal into sequenced practical steps?"
+    },
+    {
+      "id": 89,
+      "category": "planning",
+      "reverse": true,
+      "text": "When resources are limited, how likely are you to begin a complex goal without considering the main steps?"
+    },
+    {
+      "id": 90,
+      "category": "planning",
+      "reverse": false,
+      "text": "After useful criticism, how likely are you to anticipate likely obstacles and prepare responses?"
+    },
+    {
+      "id": 91,
+      "category": "planning",
+      "reverse": true,
+      "text": "When competing priorities arise, how likely are you to treat hope as a substitute for a workable plan?"
+    },
+    {
+      "id": 92,
+      "category": "planning",
+      "reverse": false,
+      "text": "As an important deadline approaches, how likely are you to turn an important goal into sequenced practical steps?"
+    },
+    {
+      "id": 93,
+      "category": "planning",
+      "reverse": true,
+      "text": "When confidence temporarily drops, how likely are you to begin a complex goal without considering the main steps?"
+    },
+    {
+      "id": 94,
+      "category": "planning",
+      "reverse": false,
+      "text": "While learning something unfamiliar, how likely are you to anticipate likely obstacles and prepare responses?"
+    },
+    {
+      "id": 95,
+      "category": "planning",
+      "reverse": true,
+      "text": "When support from others could help, how likely are you to treat hope as a substitute for a workable plan?"
+    },
+    {
+      "id": 96,
+      "category": "planning",
+      "reverse": false,
+      "text": "After completing a major step, how likely are you to turn an important goal into sequenced practical steps?"
+    },
+    {
+      "id": 97,
+      "category": "planning",
+      "reverse": true,
+      "text": "When the original plan stops working, how likely are you to begin a complex goal without considering the main steps?"
+    },
+    {
+      "id": 98,
+      "category": "planning",
+      "reverse": false,
+      "text": "During a long-term effort, how likely are you to anticipate likely obstacles and prepare responses?"
+    },
+    {
+      "id": 99,
+      "category": "planning",
+      "reverse": true,
+      "text": "When wellbeing and ambition compete, how likely are you to treat hope as a substitute for a workable plan?"
+    },
+    {
+      "id": 100,
+      "category": "planning",
+      "reverse": false,
+      "text": "Across repeated attempts to make progress, how likely are you to turn an important goal into sequenced practical steps?"
+    },
+    {
+      "id": 101,
+      "category": "prioritisation",
+      "reverse": false,
+      "text": "When choosing an important goal, how likely are you to identify the few actions with the greatest likely impact?"
+    },
+    {
+      "id": 102,
+      "category": "prioritisation",
+      "reverse": true,
+      "text": "At the beginning of a new project, how likely are you to treat every possible task as equally urgent?"
+    },
+    {
+      "id": 103,
+      "category": "prioritisation",
+      "reverse": false,
+      "text": "When initial excitement fades, how likely are you to decline lower-value work when it crowds out a key priority?"
+    },
+    {
+      "id": 104,
+      "category": "prioritisation",
+      "reverse": true,
+      "text": "While balancing several demands, how likely are you to spend most effort on easy work that has little impact?"
+    },
+    {
+      "id": 105,
+      "category": "prioritisation",
+      "reverse": false,
+      "text": "Before starting difficult work, how likely are you to identify the few actions with the greatest likely impact?"
+    },
+    {
+      "id": 106,
+      "category": "prioritisation",
+      "reverse": true,
+      "text": "When progress is slower than expected, how likely are you to treat every possible task as equally urgent?"
+    },
+    {
+      "id": 107,
+      "category": "prioritisation",
+      "reverse": false,
+      "text": "After receiving new information, how likely are you to decline lower-value work when it crowds out a key priority?"
+    },
+    {
+      "id": 108,
+      "category": "prioritisation",
+      "reverse": true,
+      "text": "When a setback interrupts progress, how likely are you to spend most effort on easy work that has little impact?"
+    },
+    {
+      "id": 109,
+      "category": "prioritisation",
+      "reverse": false,
+      "text": "During a demanding week, how likely are you to identify the few actions with the greatest likely impact?"
+    },
+    {
+      "id": 110,
+      "category": "prioritisation",
+      "reverse": true,
+      "text": "When an opportunity appears unexpectedly, how likely are you to treat every possible task as equally urgent?"
+    },
+    {
+      "id": 111,
+      "category": "prioritisation",
+      "reverse": false,
+      "text": "While reviewing recent results, how likely are you to decline lower-value work when it crowds out a key priority?"
+    },
+    {
+      "id": 112,
+      "category": "prioritisation",
+      "reverse": true,
+      "text": "When uncertainty is high, how likely are you to spend most effort on easy work that has little impact?"
+    },
+    {
+      "id": 113,
+      "category": "prioritisation",
+      "reverse": false,
+      "text": "Before making a consequential decision, how likely are you to identify the few actions with the greatest likely impact?"
+    },
+    {
+      "id": 114,
+      "category": "prioritisation",
+      "reverse": true,
+      "text": "When resources are limited, how likely are you to treat every possible task as equally urgent?"
+    },
+    {
+      "id": 115,
+      "category": "prioritisation",
+      "reverse": false,
+      "text": "After useful criticism, how likely are you to decline lower-value work when it crowds out a key priority?"
+    },
+    {
+      "id": 116,
+      "category": "prioritisation",
+      "reverse": true,
+      "text": "When competing priorities arise, how likely are you to spend most effort on easy work that has little impact?"
+    },
+    {
+      "id": 117,
+      "category": "prioritisation",
+      "reverse": false,
+      "text": "As an important deadline approaches, how likely are you to identify the few actions with the greatest likely impact?"
+    },
+    {
+      "id": 118,
+      "category": "prioritisation",
+      "reverse": true,
+      "text": "When confidence temporarily drops, how likely are you to treat every possible task as equally urgent?"
+    },
+    {
+      "id": 119,
+      "category": "prioritisation",
+      "reverse": false,
+      "text": "While learning something unfamiliar, how likely are you to decline lower-value work when it crowds out a key priority?"
+    },
+    {
+      "id": 120,
+      "category": "prioritisation",
+      "reverse": true,
+      "text": "When support from others could help, how likely are you to spend most effort on easy work that has little impact?"
+    },
+    {
+      "id": 121,
+      "category": "prioritisation",
+      "reverse": false,
+      "text": "After completing a major step, how likely are you to identify the few actions with the greatest likely impact?"
+    },
+    {
+      "id": 122,
+      "category": "prioritisation",
+      "reverse": true,
+      "text": "When the original plan stops working, how likely are you to treat every possible task as equally urgent?"
+    },
+    {
+      "id": 123,
+      "category": "prioritisation",
+      "reverse": false,
+      "text": "During a long-term effort, how likely are you to decline lower-value work when it crowds out a key priority?"
+    },
+    {
+      "id": 124,
+      "category": "prioritisation",
+      "reverse": true,
+      "text": "When wellbeing and ambition compete, how likely are you to spend most effort on easy work that has little impact?"
+    },
+    {
+      "id": 125,
+      "category": "prioritisation",
+      "reverse": false,
+      "text": "Across repeated attempts to make progress, how likely are you to identify the few actions with the greatest likely impact?"
+    },
+    {
+      "id": 126,
+      "category": "execution",
+      "reverse": false,
+      "text": "When choosing an important goal, how likely are you to convert decisions into a clear first action?"
+    },
+    {
+      "id": 127,
+      "category": "execution",
+      "reverse": true,
+      "text": "At the beginning of a new project, how likely are you to keep refining intentions without moving into action?"
+    },
+    {
+      "id": 128,
+      "category": "execution",
+      "reverse": false,
+      "text": "When initial excitement fades, how likely are you to start useful work before every detail is perfect?"
+    },
+    {
+      "id": 129,
+      "category": "execution",
+      "reverse": true,
+      "text": "While balancing several demands, how likely are you to confuse discussing a goal with making progress on it?"
+    },
+    {
+      "id": 130,
+      "category": "execution",
+      "reverse": false,
+      "text": "Before starting difficult work, how likely are you to convert decisions into a clear first action?"
+    },
+    {
+      "id": 131,
+      "category": "execution",
+      "reverse": true,
+      "text": "When progress is slower than expected, how likely are you to keep refining intentions without moving into action?"
+    },
+    {
+      "id": 132,
+      "category": "execution",
+      "reverse": false,
+      "text": "After receiving new information, how likely are you to start useful work before every detail is perfect?"
+    },
+    {
+      "id": 133,
+      "category": "execution",
+      "reverse": true,
+      "text": "When a setback interrupts progress, how likely are you to confuse discussing a goal with making progress on it?"
+    },
+    {
+      "id": 134,
+      "category": "execution",
+      "reverse": false,
+      "text": "During a demanding week, how likely are you to convert decisions into a clear first action?"
+    },
+    {
+      "id": 135,
+      "category": "execution",
+      "reverse": true,
+      "text": "When an opportunity appears unexpectedly, how likely are you to keep refining intentions without moving into action?"
+    },
+    {
+      "id": 136,
+      "category": "execution",
+      "reverse": false,
+      "text": "While reviewing recent results, how likely are you to start useful work before every detail is perfect?"
+    },
+    {
+      "id": 137,
+      "category": "execution",
+      "reverse": true,
+      "text": "When uncertainty is high, how likely are you to confuse discussing a goal with making progress on it?"
+    },
+    {
+      "id": 138,
+      "category": "execution",
+      "reverse": false,
+      "text": "Before making a consequential decision, how likely are you to convert decisions into a clear first action?"
+    },
+    {
+      "id": 139,
+      "category": "execution",
+      "reverse": true,
+      "text": "When resources are limited, how likely are you to keep refining intentions without moving into action?"
+    },
+    {
+      "id": 140,
+      "category": "execution",
+      "reverse": false,
+      "text": "After useful criticism, how likely are you to start useful work before every detail is perfect?"
+    },
+    {
+      "id": 141,
+      "category": "execution",
+      "reverse": true,
+      "text": "When competing priorities arise, how likely are you to confuse discussing a goal with making progress on it?"
+    },
+    {
+      "id": 142,
+      "category": "execution",
+      "reverse": false,
+      "text": "As an important deadline approaches, how likely are you to convert decisions into a clear first action?"
+    },
+    {
+      "id": 143,
+      "category": "execution",
+      "reverse": true,
+      "text": "When confidence temporarily drops, how likely are you to keep refining intentions without moving into action?"
+    },
+    {
+      "id": 144,
+      "category": "execution",
+      "reverse": false,
+      "text": "While learning something unfamiliar, how likely are you to start useful work before every detail is perfect?"
+    },
+    {
+      "id": 145,
+      "category": "execution",
+      "reverse": true,
+      "text": "When support from others could help, how likely are you to confuse discussing a goal with making progress on it?"
+    },
+    {
+      "id": 146,
+      "category": "execution",
+      "reverse": false,
+      "text": "After completing a major step, how likely are you to convert decisions into a clear first action?"
+    },
+    {
+      "id": 147,
+      "category": "execution",
+      "reverse": true,
+      "text": "When the original plan stops working, how likely are you to keep refining intentions without moving into action?"
+    },
+    {
+      "id": 148,
+      "category": "execution",
+      "reverse": false,
+      "text": "During a long-term effort, how likely are you to start useful work before every detail is perfect?"
+    },
+    {
+      "id": 149,
+      "category": "execution",
+      "reverse": true,
+      "text": "When wellbeing and ambition compete, how likely are you to confuse discussing a goal with making progress on it?"
+    },
+    {
+      "id": 150,
+      "category": "execution",
+      "reverse": false,
+      "text": "Across repeated attempts to make progress, how likely are you to convert decisions into a clear first action?"
+    },
+    {
+      "id": 151,
+      "category": "consistency",
+      "reverse": false,
+      "text": "When choosing an important goal, how likely are you to use repeatable routines to support important work?"
+    },
+    {
+      "id": 152,
+      "category": "consistency",
+      "reverse": true,
+      "text": "At the beginning of a new project, how likely are you to work only in occasional bursts followed by long gaps?"
+    },
+    {
+      "id": 153,
+      "category": "consistency",
+      "reverse": false,
+      "text": "When initial excitement fades, how likely are you to make steady progress even when enthusiasm is ordinary?"
+    },
+    {
+      "id": 154,
+      "category": "consistency",
+      "reverse": true,
+      "text": "While balancing several demands, how likely are you to abandon a useful routine after one imperfect day?"
+    },
+    {
+      "id": 155,
+      "category": "consistency",
+      "reverse": false,
+      "text": "Before starting difficult work, how likely are you to use repeatable routines to support important work?"
+    },
+    {
+      "id": 156,
+      "category": "consistency",
+      "reverse": true,
+      "text": "When progress is slower than expected, how likely are you to work only in occasional bursts followed by long gaps?"
+    },
+    {
+      "id": 157,
+      "category": "consistency",
+      "reverse": false,
+      "text": "After receiving new information, how likely are you to make steady progress even when enthusiasm is ordinary?"
+    },
+    {
+      "id": 158,
+      "category": "consistency",
+      "reverse": true,
+      "text": "When a setback interrupts progress, how likely are you to abandon a useful routine after one imperfect day?"
+    },
+    {
+      "id": 159,
+      "category": "consistency",
+      "reverse": false,
+      "text": "During a demanding week, how likely are you to use repeatable routines to support important work?"
+    },
+    {
+      "id": 160,
+      "category": "consistency",
+      "reverse": true,
+      "text": "When an opportunity appears unexpectedly, how likely are you to work only in occasional bursts followed by long gaps?"
+    },
+    {
+      "id": 161,
+      "category": "consistency",
+      "reverse": false,
+      "text": "While reviewing recent results, how likely are you to make steady progress even when enthusiasm is ordinary?"
+    },
+    {
+      "id": 162,
+      "category": "consistency",
+      "reverse": true,
+      "text": "When uncertainty is high, how likely are you to abandon a useful routine after one imperfect day?"
+    },
+    {
+      "id": 163,
+      "category": "consistency",
+      "reverse": false,
+      "text": "Before making a consequential decision, how likely are you to use repeatable routines to support important work?"
+    },
+    {
+      "id": 164,
+      "category": "consistency",
+      "reverse": true,
+      "text": "When resources are limited, how likely are you to work only in occasional bursts followed by long gaps?"
+    },
+    {
+      "id": 165,
+      "category": "consistency",
+      "reverse": false,
+      "text": "After useful criticism, how likely are you to make steady progress even when enthusiasm is ordinary?"
+    },
+    {
+      "id": 166,
+      "category": "consistency",
+      "reverse": true,
+      "text": "When competing priorities arise, how likely are you to abandon a useful routine after one imperfect day?"
+    },
+    {
+      "id": 167,
+      "category": "consistency",
+      "reverse": false,
+      "text": "As an important deadline approaches, how likely are you to use repeatable routines to support important work?"
+    },
+    {
+      "id": 168,
+      "category": "consistency",
+      "reverse": true,
+      "text": "When confidence temporarily drops, how likely are you to work only in occasional bursts followed by long gaps?"
+    },
+    {
+      "id": 169,
+      "category": "consistency",
+      "reverse": false,
+      "text": "While learning something unfamiliar, how likely are you to make steady progress even when enthusiasm is ordinary?"
+    },
+    {
+      "id": 170,
+      "category": "consistency",
+      "reverse": true,
+      "text": "When support from others could help, how likely are you to abandon a useful routine after one imperfect day?"
+    },
+    {
+      "id": 171,
+      "category": "consistency",
+      "reverse": false,
+      "text": "After completing a major step, how likely are you to use repeatable routines to support important work?"
+    },
+    {
+      "id": 172,
+      "category": "consistency",
+      "reverse": true,
+      "text": "When the original plan stops working, how likely are you to work only in occasional bursts followed by long gaps?"
+    },
+    {
+      "id": 173,
+      "category": "consistency",
+      "reverse": false,
+      "text": "During a long-term effort, how likely are you to make steady progress even when enthusiasm is ordinary?"
+    },
+    {
+      "id": 174,
+      "category": "consistency",
+      "reverse": true,
+      "text": "When wellbeing and ambition compete, how likely are you to abandon a useful routine after one imperfect day?"
+    },
+    {
+      "id": 175,
+      "category": "consistency",
+      "reverse": false,
+      "text": "Across repeated attempts to make progress, how likely are you to use repeatable routines to support important work?"
+    },
+    {
+      "id": 176,
+      "category": "persistence",
+      "reverse": false,
+      "text": "When choosing an important goal, how likely are you to resume purposeful effort after a setback?"
+    },
+    {
+      "id": 177,
+      "category": "persistence",
+      "reverse": true,
+      "text": "At the beginning of a new project, how likely are you to treat an early obstacle as proof the goal is impossible?"
+    },
+    {
+      "id": 178,
+      "category": "persistence",
+      "reverse": false,
+      "text": "When initial excitement fades, how likely are you to distinguish a temporary difficulty from a reason to quit?"
+    },
+    {
+      "id": 179,
+      "category": "persistence",
+      "reverse": true,
+      "text": "While balancing several demands, how likely are you to remain discouraged long after a recoverable setback?"
+    },
+    {
+      "id": 180,
+      "category": "persistence",
+      "reverse": false,
+      "text": "Before starting difficult work, how likely are you to resume purposeful effort after a setback?"
+    },
+    {
+      "id": 181,
+      "category": "persistence",
+      "reverse": true,
+      "text": "When progress is slower than expected, how likely are you to treat an early obstacle as proof the goal is impossible?"
+    },
+    {
+      "id": 182,
+      "category": "persistence",
+      "reverse": false,
+      "text": "After receiving new information, how likely are you to distinguish a temporary difficulty from a reason to quit?"
+    },
+    {
+      "id": 183,
+      "category": "persistence",
+      "reverse": true,
+      "text": "When a setback interrupts progress, how likely are you to remain discouraged long after a recoverable setback?"
+    },
+    {
+      "id": 184,
+      "category": "persistence",
+      "reverse": false,
+      "text": "During a demanding week, how likely are you to resume purposeful effort after a setback?"
+    },
+    {
+      "id": 185,
+      "category": "persistence",
+      "reverse": true,
+      "text": "When an opportunity appears unexpectedly, how likely are you to treat an early obstacle as proof the goal is impossible?"
+    },
+    {
+      "id": 186,
+      "category": "persistence",
+      "reverse": false,
+      "text": "While reviewing recent results, how likely are you to distinguish a temporary difficulty from a reason to quit?"
+    },
+    {
+      "id": 187,
+      "category": "persistence",
+      "reverse": true,
+      "text": "When uncertainty is high, how likely are you to remain discouraged long after a recoverable setback?"
+    },
+    {
+      "id": 188,
+      "category": "persistence",
+      "reverse": false,
+      "text": "Before making a consequential decision, how likely are you to resume purposeful effort after a setback?"
+    },
+    {
+      "id": 189,
+      "category": "persistence",
+      "reverse": true,
+      "text": "When resources are limited, how likely are you to treat an early obstacle as proof the goal is impossible?"
+    },
+    {
+      "id": 190,
+      "category": "persistence",
+      "reverse": false,
+      "text": "After useful criticism, how likely are you to distinguish a temporary difficulty from a reason to quit?"
+    },
+    {
+      "id": 191,
+      "category": "persistence",
+      "reverse": true,
+      "text": "When competing priorities arise, how likely are you to remain discouraged long after a recoverable setback?"
+    },
+    {
+      "id": 192,
+      "category": "persistence",
+      "reverse": false,
+      "text": "As an important deadline approaches, how likely are you to resume purposeful effort after a setback?"
+    },
+    {
+      "id": 193,
+      "category": "persistence",
+      "reverse": true,
+      "text": "When confidence temporarily drops, how likely are you to treat an early obstacle as proof the goal is impossible?"
+    },
+    {
+      "id": 194,
+      "category": "persistence",
+      "reverse": false,
+      "text": "While learning something unfamiliar, how likely are you to distinguish a temporary difficulty from a reason to quit?"
+    },
+    {
+      "id": 195,
+      "category": "persistence",
+      "reverse": true,
+      "text": "When support from others could help, how likely are you to remain discouraged long after a recoverable setback?"
+    },
+    {
+      "id": 196,
+      "category": "persistence",
+      "reverse": false,
+      "text": "After completing a major step, how likely are you to resume purposeful effort after a setback?"
+    },
+    {
+      "id": 197,
+      "category": "persistence",
+      "reverse": true,
+      "text": "When the original plan stops working, how likely are you to treat an early obstacle as proof the goal is impossible?"
+    },
+    {
+      "id": 198,
+      "category": "persistence",
+      "reverse": false,
+      "text": "During a long-term effort, how likely are you to distinguish a temporary difficulty from a reason to quit?"
+    },
+    {
+      "id": 199,
+      "category": "persistence",
+      "reverse": true,
+      "text": "When wellbeing and ambition compete, how likely are you to remain discouraged long after a recoverable setback?"
+    },
+    {
+      "id": 200,
+      "category": "persistence",
+      "reverse": false,
+      "text": "Across repeated attempts to make progress, how likely are you to resume purposeful effort after a setback?"
+    },
+    {
+      "id": 201,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "When choosing an important goal, how likely are you to change your method when reliable evidence shows it is not working?"
+    },
+    {
+      "id": 202,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "At the beginning of a new project, how likely are you to continue the same approach despite repeated evidence of failure?"
+    },
+    {
+      "id": 203,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "When initial excitement fades, how likely are you to preserve the goal while adapting the route when needed?"
+    },
+    {
+      "id": 204,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "While balancing several demands, how likely are you to change the goal impulsively whenever the work becomes difficult?"
+    },
+    {
+      "id": 205,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "Before starting difficult work, how likely are you to change your method when reliable evidence shows it is not working?"
+    },
+    {
+      "id": 206,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When progress is slower than expected, how likely are you to continue the same approach despite repeated evidence of failure?"
+    },
+    {
+      "id": 207,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "After receiving new information, how likely are you to preserve the goal while adapting the route when needed?"
+    },
+    {
+      "id": 208,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When a setback interrupts progress, how likely are you to change the goal impulsively whenever the work becomes difficult?"
+    },
+    {
+      "id": 209,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "During a demanding week, how likely are you to change your method when reliable evidence shows it is not working?"
+    },
+    {
+      "id": 210,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When an opportunity appears unexpectedly, how likely are you to continue the same approach despite repeated evidence of failure?"
+    },
+    {
+      "id": 211,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "While reviewing recent results, how likely are you to preserve the goal while adapting the route when needed?"
+    },
+    {
+      "id": 212,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When uncertainty is high, how likely are you to change the goal impulsively whenever the work becomes difficult?"
+    },
+    {
+      "id": 213,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "Before making a consequential decision, how likely are you to change your method when reliable evidence shows it is not working?"
+    },
+    {
+      "id": 214,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When resources are limited, how likely are you to continue the same approach despite repeated evidence of failure?"
+    },
+    {
+      "id": 215,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "After useful criticism, how likely are you to preserve the goal while adapting the route when needed?"
+    },
+    {
+      "id": 216,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When competing priorities arise, how likely are you to change the goal impulsively whenever the work becomes difficult?"
+    },
+    {
+      "id": 217,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "As an important deadline approaches, how likely are you to change your method when reliable evidence shows it is not working?"
+    },
+    {
+      "id": 218,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When confidence temporarily drops, how likely are you to continue the same approach despite repeated evidence of failure?"
+    },
+    {
+      "id": 219,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "While learning something unfamiliar, how likely are you to preserve the goal while adapting the route when needed?"
+    },
+    {
+      "id": 220,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When support from others could help, how likely are you to change the goal impulsively whenever the work becomes difficult?"
+    },
+    {
+      "id": 221,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "After completing a major step, how likely are you to change your method when reliable evidence shows it is not working?"
+    },
+    {
+      "id": 222,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When the original plan stops working, how likely are you to continue the same approach despite repeated evidence of failure?"
+    },
+    {
+      "id": 223,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "During a long-term effort, how likely are you to preserve the goal while adapting the route when needed?"
+    },
+    {
+      "id": 224,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When wellbeing and ambition compete, how likely are you to change the goal impulsively whenever the work becomes difficult?"
+    },
+    {
+      "id": 225,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "Across repeated attempts to make progress, how likely are you to change your method when reliable evidence shows it is not working?"
+    },
+    {
+      "id": 226,
+      "category": "learning",
+      "reverse": false,
+      "text": "When choosing an important goal, how likely are you to identify a skill that would materially improve your progress?"
+    },
+    {
+      "id": 227,
+      "category": "learning",
+      "reverse": true,
+      "text": "At the beginning of a new project, how likely are you to avoid learning because being a beginner feels uncomfortable?"
+    },
+    {
+      "id": 228,
+      "category": "learning",
+      "reverse": false,
+      "text": "When initial excitement fades, how likely are you to practise a needed ability with feedback and repetition?"
+    },
+    {
+      "id": 229,
+      "category": "learning",
+      "reverse": true,
+      "text": "While balancing several demands, how likely are you to collect information without practising the relevant skill?"
+    },
+    {
+      "id": 230,
+      "category": "learning",
+      "reverse": false,
+      "text": "Before starting difficult work, how likely are you to identify a skill that would materially improve your progress?"
+    },
+    {
+      "id": 231,
+      "category": "learning",
+      "reverse": true,
+      "text": "When progress is slower than expected, how likely are you to avoid learning because being a beginner feels uncomfortable?"
+    },
+    {
+      "id": 232,
+      "category": "learning",
+      "reverse": false,
+      "text": "After receiving new information, how likely are you to practise a needed ability with feedback and repetition?"
+    },
+    {
+      "id": 233,
+      "category": "learning",
+      "reverse": true,
+      "text": "When a setback interrupts progress, how likely are you to collect information without practising the relevant skill?"
+    },
+    {
+      "id": 234,
+      "category": "learning",
+      "reverse": false,
+      "text": "During a demanding week, how likely are you to identify a skill that would materially improve your progress?"
+    },
+    {
+      "id": 235,
+      "category": "learning",
+      "reverse": true,
+      "text": "When an opportunity appears unexpectedly, how likely are you to avoid learning because being a beginner feels uncomfortable?"
+    },
+    {
+      "id": 236,
+      "category": "learning",
+      "reverse": false,
+      "text": "While reviewing recent results, how likely are you to practise a needed ability with feedback and repetition?"
+    },
+    {
+      "id": 237,
+      "category": "learning",
+      "reverse": true,
+      "text": "When uncertainty is high, how likely are you to collect information without practising the relevant skill?"
+    },
+    {
+      "id": 238,
+      "category": "learning",
+      "reverse": false,
+      "text": "Before making a consequential decision, how likely are you to identify a skill that would materially improve your progress?"
+    },
+    {
+      "id": 239,
+      "category": "learning",
+      "reverse": true,
+      "text": "When resources are limited, how likely are you to avoid learning because being a beginner feels uncomfortable?"
+    },
+    {
+      "id": 240,
+      "category": "learning",
+      "reverse": false,
+      "text": "After useful criticism, how likely are you to practise a needed ability with feedback and repetition?"
+    },
+    {
+      "id": 241,
+      "category": "learning",
+      "reverse": true,
+      "text": "When competing priorities arise, how likely are you to collect information without practising the relevant skill?"
+    },
+    {
+      "id": 242,
+      "category": "learning",
+      "reverse": false,
+      "text": "As an important deadline approaches, how likely are you to identify a skill that would materially improve your progress?"
+    },
+    {
+      "id": 243,
+      "category": "learning",
+      "reverse": true,
+      "text": "When confidence temporarily drops, how likely are you to avoid learning because being a beginner feels uncomfortable?"
+    },
+    {
+      "id": 244,
+      "category": "learning",
+      "reverse": false,
+      "text": "While learning something unfamiliar, how likely are you to practise a needed ability with feedback and repetition?"
+    },
+    {
+      "id": 245,
+      "category": "learning",
+      "reverse": true,
+      "text": "When support from others could help, how likely are you to collect information without practising the relevant skill?"
+    },
+    {
+      "id": 246,
+      "category": "learning",
+      "reverse": false,
+      "text": "After completing a major step, how likely are you to identify a skill that would materially improve your progress?"
+    },
+    {
+      "id": 247,
+      "category": "learning",
+      "reverse": true,
+      "text": "When the original plan stops working, how likely are you to avoid learning because being a beginner feels uncomfortable?"
+    },
+    {
+      "id": 248,
+      "category": "learning",
+      "reverse": false,
+      "text": "During a long-term effort, how likely are you to practise a needed ability with feedback and repetition?"
+    },
+    {
+      "id": 249,
+      "category": "learning",
+      "reverse": true,
+      "text": "When wellbeing and ambition compete, how likely are you to collect information without practising the relevant skill?"
+    },
+    {
+      "id": 250,
+      "category": "learning",
+      "reverse": false,
+      "text": "Across repeated attempts to make progress, how likely are you to identify a skill that would materially improve your progress?"
+    },
+    {
+      "id": 251,
+      "category": "feedback",
+      "reverse": false,
+      "text": "When choosing an important goal, how likely are you to seek specific evidence about what is and is not working?"
+    },
+    {
+      "id": 252,
+      "category": "feedback",
+      "reverse": true,
+      "text": "At the beginning of a new project, how likely are you to avoid useful feedback to protect a preferred self-image?"
+    },
+    {
+      "id": 253,
+      "category": "feedback",
+      "reverse": false,
+      "text": "When initial excitement fades, how likely are you to review progress regularly and adjust the next step?"
+    },
+    {
+      "id": 254,
+      "category": "feedback",
+      "reverse": true,
+      "text": "While balancing several demands, how likely are you to measure activity while ignoring whether results improve?"
+    },
+    {
+      "id": 255,
+      "category": "feedback",
+      "reverse": false,
+      "text": "Before starting difficult work, how likely are you to seek specific evidence about what is and is not working?"
+    },
+    {
+      "id": 256,
+      "category": "feedback",
+      "reverse": true,
+      "text": "When progress is slower than expected, how likely are you to avoid useful feedback to protect a preferred self-image?"
+    },
+    {
+      "id": 257,
+      "category": "feedback",
+      "reverse": false,
+      "text": "After receiving new information, how likely are you to review progress regularly and adjust the next step?"
+    },
+    {
+      "id": 258,
+      "category": "feedback",
+      "reverse": true,
+      "text": "When a setback interrupts progress, how likely are you to measure activity while ignoring whether results improve?"
+    },
+    {
+      "id": 259,
+      "category": "feedback",
+      "reverse": false,
+      "text": "During a demanding week, how likely are you to seek specific evidence about what is and is not working?"
+    },
+    {
+      "id": 260,
+      "category": "feedback",
+      "reverse": true,
+      "text": "When an opportunity appears unexpectedly, how likely are you to avoid useful feedback to protect a preferred self-image?"
+    },
+    {
+      "id": 261,
+      "category": "feedback",
+      "reverse": false,
+      "text": "While reviewing recent results, how likely are you to review progress regularly and adjust the next step?"
+    },
+    {
+      "id": 262,
+      "category": "feedback",
+      "reverse": true,
+      "text": "When uncertainty is high, how likely are you to measure activity while ignoring whether results improve?"
+    },
+    {
+      "id": 263,
+      "category": "feedback",
+      "reverse": false,
+      "text": "Before making a consequential decision, how likely are you to seek specific evidence about what is and is not working?"
+    },
+    {
+      "id": 264,
+      "category": "feedback",
+      "reverse": true,
+      "text": "When resources are limited, how likely are you to avoid useful feedback to protect a preferred self-image?"
+    },
+    {
+      "id": 265,
+      "category": "feedback",
+      "reverse": false,
+      "text": "After useful criticism, how likely are you to review progress regularly and adjust the next step?"
+    },
+    {
+      "id": 266,
+      "category": "feedback",
+      "reverse": true,
+      "text": "When competing priorities arise, how likely are you to measure activity while ignoring whether results improve?"
+    },
+    {
+      "id": 267,
+      "category": "feedback",
+      "reverse": false,
+      "text": "As an important deadline approaches, how likely are you to seek specific evidence about what is and is not working?"
+    },
+    {
+      "id": 268,
+      "category": "feedback",
+      "reverse": true,
+      "text": "When confidence temporarily drops, how likely are you to avoid useful feedback to protect a preferred self-image?"
+    },
+    {
+      "id": 269,
+      "category": "feedback",
+      "reverse": false,
+      "text": "While learning something unfamiliar, how likely are you to review progress regularly and adjust the next step?"
+    },
+    {
+      "id": 270,
+      "category": "feedback",
+      "reverse": true,
+      "text": "When support from others could help, how likely are you to measure activity while ignoring whether results improve?"
+    },
+    {
+      "id": 271,
+      "category": "feedback",
+      "reverse": false,
+      "text": "After completing a major step, how likely are you to seek specific evidence about what is and is not working?"
+    },
+    {
+      "id": 272,
+      "category": "feedback",
+      "reverse": true,
+      "text": "When the original plan stops working, how likely are you to avoid useful feedback to protect a preferred self-image?"
+    },
+    {
+      "id": 273,
+      "category": "feedback",
+      "reverse": false,
+      "text": "During a long-term effort, how likely are you to review progress regularly and adjust the next step?"
+    },
+    {
+      "id": 274,
+      "category": "feedback",
+      "reverse": true,
+      "text": "When wellbeing and ambition compete, how likely are you to measure activity while ignoring whether results improve?"
+    },
+    {
+      "id": 275,
+      "category": "feedback",
+      "reverse": false,
+      "text": "Across repeated attempts to make progress, how likely are you to seek specific evidence about what is and is not working?"
+    },
+    {
+      "id": 276,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "When choosing an important goal, how likely are you to define the actual obstacle before choosing a response?"
+    },
+    {
+      "id": 277,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "At the beginning of a new project, how likely are you to react to the first symptom without examining the cause?"
+    },
+    {
+      "id": 278,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "When initial excitement fades, how likely are you to generate several workable options with the resources available?"
+    },
+    {
+      "id": 279,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "While balancing several demands, how likely are you to assume progress is impossible because the ideal resource is missing?"
+    },
+    {
+      "id": 280,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "Before starting difficult work, how likely are you to define the actual obstacle before choosing a response?"
+    },
+    {
+      "id": 281,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "When progress is slower than expected, how likely are you to react to the first symptom without examining the cause?"
+    },
+    {
+      "id": 282,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "After receiving new information, how likely are you to generate several workable options with the resources available?"
+    },
+    {
+      "id": 283,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "When a setback interrupts progress, how likely are you to assume progress is impossible because the ideal resource is missing?"
+    },
+    {
+      "id": 284,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "During a demanding week, how likely are you to define the actual obstacle before choosing a response?"
+    },
+    {
+      "id": 285,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "When an opportunity appears unexpectedly, how likely are you to react to the first symptom without examining the cause?"
+    },
+    {
+      "id": 286,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "While reviewing recent results, how likely are you to generate several workable options with the resources available?"
+    },
+    {
+      "id": 287,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "When uncertainty is high, how likely are you to assume progress is impossible because the ideal resource is missing?"
+    },
+    {
+      "id": 288,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "Before making a consequential decision, how likely are you to define the actual obstacle before choosing a response?"
+    },
+    {
+      "id": 289,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "When resources are limited, how likely are you to react to the first symptom without examining the cause?"
+    },
+    {
+      "id": 290,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "After useful criticism, how likely are you to generate several workable options with the resources available?"
+    },
+    {
+      "id": 291,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "When competing priorities arise, how likely are you to assume progress is impossible because the ideal resource is missing?"
+    },
+    {
+      "id": 292,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "As an important deadline approaches, how likely are you to define the actual obstacle before choosing a response?"
+    },
+    {
+      "id": 293,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "When confidence temporarily drops, how likely are you to react to the first symptom without examining the cause?"
+    },
+    {
+      "id": 294,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "While learning something unfamiliar, how likely are you to generate several workable options with the resources available?"
+    },
+    {
+      "id": 295,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "When support from others could help, how likely are you to assume progress is impossible because the ideal resource is missing?"
+    },
+    {
+      "id": 296,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "After completing a major step, how likely are you to define the actual obstacle before choosing a response?"
+    },
+    {
+      "id": 297,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "When the original plan stops working, how likely are you to react to the first symptom without examining the cause?"
+    },
+    {
+      "id": 298,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "During a long-term effort, how likely are you to generate several workable options with the resources available?"
+    },
+    {
+      "id": 299,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "When wellbeing and ambition compete, how likely are you to assume progress is impossible because the ideal resource is missing?"
+    },
+    {
+      "id": 300,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "Across repeated attempts to make progress, how likely are you to define the actual obstacle before choosing a response?"
+    },
+    {
+      "id": 301,
+      "category": "decision_making",
+      "reverse": false,
+      "text": "When choosing an important goal, how likely are you to make a timely decision using the best available evidence?"
+    },
+    {
+      "id": 302,
+      "category": "decision_making",
+      "reverse": true,
+      "text": "At the beginning of a new project, how likely are you to delay a reversible decision while waiting for certainty?"
+    },
+    {
+      "id": 303,
+      "category": "decision_making",
+      "reverse": false,
+      "text": "When initial excitement fades, how likely are you to match the depth of analysis to the importance of the choice?"
+    },
+    {
+      "id": 304,
+      "category": "decision_making",
+      "reverse": true,
+      "text": "While balancing several demands, how likely are you to make a high-impact choice without checking key information?"
+    },
+    {
+      "id": 305,
+      "category": "decision_making",
+      "reverse": false,
+      "text": "Before starting difficult work, how likely are you to make a timely decision using the best available evidence?"
+    },
+    {
+      "id": 306,
+      "category": "decision_making",
+      "reverse": true,
+      "text": "When progress is slower than expected, how likely are you to delay a reversible decision while waiting for certainty?"
+    },
+    {
+      "id": 307,
+      "category": "decision_making",
+      "reverse": false,
+      "text": "After receiving new information, how likely are you to match the depth of analysis to the importance of the choice?"
+    },
+    {
+      "id": 308,
+      "category": "decision_making",
+      "reverse": true,
+      "text": "When a setback interrupts progress, how likely are you to make a high-impact choice without checking key information?"
+    },
+    {
+      "id": 309,
+      "category": "decision_making",
+      "reverse": false,
+      "text": "During a demanding week, how likely are you to make a timely decision using the best available evidence?"
+    },
+    {
+      "id": 310,
+      "category": "decision_making",
+      "reverse": true,
+      "text": "When an opportunity appears unexpectedly, how likely are you to delay a reversible decision while waiting for certainty?"
+    },
+    {
+      "id": 311,
+      "category": "decision_making",
+      "reverse": false,
+      "text": "While reviewing recent results, how likely are you to match the depth of analysis to the importance of the choice?"
+    },
+    {
+      "id": 312,
+      "category": "decision_making",
+      "reverse": true,
+      "text": "When uncertainty is high, how likely are you to make a high-impact choice without checking key information?"
+    },
+    {
+      "id": 313,
+      "category": "decision_making",
+      "reverse": false,
+      "text": "Before making a consequential decision, how likely are you to make a timely decision using the best available evidence?"
+    },
+    {
+      "id": 314,
+      "category": "decision_making",
+      "reverse": true,
+      "text": "When resources are limited, how likely are you to delay a reversible decision while waiting for certainty?"
+    },
+    {
+      "id": 315,
+      "category": "decision_making",
+      "reverse": false,
+      "text": "After useful criticism, how likely are you to match the depth of analysis to the importance of the choice?"
+    },
+    {
+      "id": 316,
+      "category": "decision_making",
+      "reverse": true,
+      "text": "When competing priorities arise, how likely are you to make a high-impact choice without checking key information?"
+    },
+    {
+      "id": 317,
+      "category": "decision_making",
+      "reverse": false,
+      "text": "As an important deadline approaches, how likely are you to make a timely decision using the best available evidence?"
+    },
+    {
+      "id": 318,
+      "category": "decision_making",
+      "reverse": true,
+      "text": "When confidence temporarily drops, how likely are you to delay a reversible decision while waiting for certainty?"
+    },
+    {
+      "id": 319,
+      "category": "decision_making",
+      "reverse": false,
+      "text": "While learning something unfamiliar, how likely are you to match the depth of analysis to the importance of the choice?"
+    },
+    {
+      "id": 320,
+      "category": "decision_making",
+      "reverse": true,
+      "text": "When support from others could help, how likely are you to make a high-impact choice without checking key information?"
+    },
+    {
+      "id": 321,
+      "category": "decision_making",
+      "reverse": false,
+      "text": "After completing a major step, how likely are you to make a timely decision using the best available evidence?"
+    },
+    {
+      "id": 322,
+      "category": "decision_making",
+      "reverse": true,
+      "text": "When the original plan stops working, how likely are you to delay a reversible decision while waiting for certainty?"
+    },
+    {
+      "id": 323,
+      "category": "decision_making",
+      "reverse": false,
+      "text": "During a long-term effort, how likely are you to match the depth of analysis to the importance of the choice?"
+    },
+    {
+      "id": 324,
+      "category": "decision_making",
+      "reverse": true,
+      "text": "When wellbeing and ambition compete, how likely are you to make a high-impact choice without checking key information?"
+    },
+    {
+      "id": 325,
+      "category": "decision_making",
+      "reverse": false,
+      "text": "Across repeated attempts to make progress, how likely are you to make a timely decision using the best available evidence?"
+    },
+    {
+      "id": 326,
+      "category": "focus",
+      "reverse": false,
+      "text": "When choosing an important goal, how likely are you to protect uninterrupted time for your highest-value work?"
+    },
+    {
+      "id": 327,
+      "category": "focus",
+      "reverse": true,
+      "text": "At the beginning of a new project, how likely are you to allow frequent interruptions during demanding work?"
+    },
+    {
+      "id": 328,
+      "category": "focus",
+      "reverse": false,
+      "text": "When initial excitement fades, how likely are you to notice and redirect attention when distraction takes over?"
+    },
+    {
+      "id": 329,
+      "category": "focus",
+      "reverse": true,
+      "text": "While balancing several demands, how likely are you to switch tasks repeatedly without a meaningful reason?"
+    },
+    {
+      "id": 330,
+      "category": "focus",
+      "reverse": false,
+      "text": "Before starting difficult work, how likely are you to protect uninterrupted time for your highest-value work?"
+    },
+    {
+      "id": 331,
+      "category": "focus",
+      "reverse": true,
+      "text": "When progress is slower than expected, how likely are you to allow frequent interruptions during demanding work?"
+    },
+    {
+      "id": 332,
+      "category": "focus",
+      "reverse": false,
+      "text": "After receiving new information, how likely are you to notice and redirect attention when distraction takes over?"
+    },
+    {
+      "id": 333,
+      "category": "focus",
+      "reverse": true,
+      "text": "When a setback interrupts progress, how likely are you to switch tasks repeatedly without a meaningful reason?"
+    },
+    {
+      "id": 334,
+      "category": "focus",
+      "reverse": false,
+      "text": "During a demanding week, how likely are you to protect uninterrupted time for your highest-value work?"
+    },
+    {
+      "id": 335,
+      "category": "focus",
+      "reverse": true,
+      "text": "When an opportunity appears unexpectedly, how likely are you to allow frequent interruptions during demanding work?"
+    },
+    {
+      "id": 336,
+      "category": "focus",
+      "reverse": false,
+      "text": "While reviewing recent results, how likely are you to notice and redirect attention when distraction takes over?"
+    },
+    {
+      "id": 337,
+      "category": "focus",
+      "reverse": true,
+      "text": "When uncertainty is high, how likely are you to switch tasks repeatedly without a meaningful reason?"
+    },
+    {
+      "id": 338,
+      "category": "focus",
+      "reverse": false,
+      "text": "Before making a consequential decision, how likely are you to protect uninterrupted time for your highest-value work?"
+    },
+    {
+      "id": 339,
+      "category": "focus",
+      "reverse": true,
+      "text": "When resources are limited, how likely are you to allow frequent interruptions during demanding work?"
+    },
+    {
+      "id": 340,
+      "category": "focus",
+      "reverse": false,
+      "text": "After useful criticism, how likely are you to notice and redirect attention when distraction takes over?"
+    },
+    {
+      "id": 341,
+      "category": "focus",
+      "reverse": true,
+      "text": "When competing priorities arise, how likely are you to switch tasks repeatedly without a meaningful reason?"
+    },
+    {
+      "id": 342,
+      "category": "focus",
+      "reverse": false,
+      "text": "As an important deadline approaches, how likely are you to protect uninterrupted time for your highest-value work?"
+    },
+    {
+      "id": 343,
+      "category": "focus",
+      "reverse": true,
+      "text": "When confidence temporarily drops, how likely are you to allow frequent interruptions during demanding work?"
+    },
+    {
+      "id": 344,
+      "category": "focus",
+      "reverse": false,
+      "text": "While learning something unfamiliar, how likely are you to notice and redirect attention when distraction takes over?"
+    },
+    {
+      "id": 345,
+      "category": "focus",
+      "reverse": true,
+      "text": "When support from others could help, how likely are you to switch tasks repeatedly without a meaningful reason?"
+    },
+    {
+      "id": 346,
+      "category": "focus",
+      "reverse": false,
+      "text": "After completing a major step, how likely are you to protect uninterrupted time for your highest-value work?"
+    },
+    {
+      "id": 347,
+      "category": "focus",
+      "reverse": true,
+      "text": "When the original plan stops working, how likely are you to allow frequent interruptions during demanding work?"
+    },
+    {
+      "id": 348,
+      "category": "focus",
+      "reverse": false,
+      "text": "During a long-term effort, how likely are you to notice and redirect attention when distraction takes over?"
+    },
+    {
+      "id": 349,
+      "category": "focus",
+      "reverse": true,
+      "text": "When wellbeing and ambition compete, how likely are you to switch tasks repeatedly without a meaningful reason?"
+    },
+    {
+      "id": 350,
+      "category": "focus",
+      "reverse": false,
+      "text": "Across repeated attempts to make progress, how likely are you to protect uninterrupted time for your highest-value work?"
+    },
+    {
+      "id": 351,
+      "category": "time_energy",
+      "reverse": false,
+      "text": "When choosing an important goal, how likely are you to schedule demanding work when your usable energy is stronger?"
+    },
+    {
+      "id": 352,
+      "category": "time_energy",
+      "reverse": true,
+      "text": "At the beginning of a new project, how likely are you to plan as though your time and energy have no limits?"
+    },
+    {
+      "id": 353,
+      "category": "time_energy",
+      "reverse": false,
+      "text": "When initial excitement fades, how likely are you to leave realistic capacity for recovery and unexpected needs?"
+    },
+    {
+      "id": 354,
+      "category": "time_energy",
+      "reverse": true,
+      "text": "While balancing several demands, how likely are you to use exhaustion as the normal strategy for meeting goals?"
+    },
+    {
+      "id": 355,
+      "category": "time_energy",
+      "reverse": false,
+      "text": "Before starting difficult work, how likely are you to schedule demanding work when your usable energy is stronger?"
+    },
+    {
+      "id": 356,
+      "category": "time_energy",
+      "reverse": true,
+      "text": "When progress is slower than expected, how likely are you to plan as though your time and energy have no limits?"
+    },
+    {
+      "id": 357,
+      "category": "time_energy",
+      "reverse": false,
+      "text": "After receiving new information, how likely are you to leave realistic capacity for recovery and unexpected needs?"
+    },
+    {
+      "id": 358,
+      "category": "time_energy",
+      "reverse": true,
+      "text": "When a setback interrupts progress, how likely are you to use exhaustion as the normal strategy for meeting goals?"
+    },
+    {
+      "id": 359,
+      "category": "time_energy",
+      "reverse": false,
+      "text": "During a demanding week, how likely are you to schedule demanding work when your usable energy is stronger?"
+    },
+    {
+      "id": 360,
+      "category": "time_energy",
+      "reverse": true,
+      "text": "When an opportunity appears unexpectedly, how likely are you to plan as though your time and energy have no limits?"
+    },
+    {
+      "id": 361,
+      "category": "time_energy",
+      "reverse": false,
+      "text": "While reviewing recent results, how likely are you to leave realistic capacity for recovery and unexpected needs?"
+    },
+    {
+      "id": 362,
+      "category": "time_energy",
+      "reverse": true,
+      "text": "When uncertainty is high, how likely are you to use exhaustion as the normal strategy for meeting goals?"
+    },
+    {
+      "id": 363,
+      "category": "time_energy",
+      "reverse": false,
+      "text": "Before making a consequential decision, how likely are you to schedule demanding work when your usable energy is stronger?"
+    },
+    {
+      "id": 364,
+      "category": "time_energy",
+      "reverse": true,
+      "text": "When resources are limited, how likely are you to plan as though your time and energy have no limits?"
+    },
+    {
+      "id": 365,
+      "category": "time_energy",
+      "reverse": false,
+      "text": "After useful criticism, how likely are you to leave realistic capacity for recovery and unexpected needs?"
+    },
+    {
+      "id": 366,
+      "category": "time_energy",
+      "reverse": true,
+      "text": "When competing priorities arise, how likely are you to use exhaustion as the normal strategy for meeting goals?"
+    },
+    {
+      "id": 367,
+      "category": "time_energy",
+      "reverse": false,
+      "text": "As an important deadline approaches, how likely are you to schedule demanding work when your usable energy is stronger?"
+    },
+    {
+      "id": 368,
+      "category": "time_energy",
+      "reverse": true,
+      "text": "When confidence temporarily drops, how likely are you to plan as though your time and energy have no limits?"
+    },
+    {
+      "id": 369,
+      "category": "time_energy",
+      "reverse": false,
+      "text": "While learning something unfamiliar, how likely are you to leave realistic capacity for recovery and unexpected needs?"
+    },
+    {
+      "id": 370,
+      "category": "time_energy",
+      "reverse": true,
+      "text": "When support from others could help, how likely are you to use exhaustion as the normal strategy for meeting goals?"
+    },
+    {
+      "id": 371,
+      "category": "time_energy",
+      "reverse": false,
+      "text": "After completing a major step, how likely are you to schedule demanding work when your usable energy is stronger?"
+    },
+    {
+      "id": 372,
+      "category": "time_energy",
+      "reverse": true,
+      "text": "When the original plan stops working, how likely are you to plan as though your time and energy have no limits?"
+    },
+    {
+      "id": 373,
+      "category": "time_energy",
+      "reverse": false,
+      "text": "During a long-term effort, how likely are you to leave realistic capacity for recovery and unexpected needs?"
+    },
+    {
+      "id": 374,
+      "category": "time_energy",
+      "reverse": true,
+      "text": "When wellbeing and ambition compete, how likely are you to use exhaustion as the normal strategy for meeting goals?"
+    },
+    {
+      "id": 375,
+      "category": "time_energy",
+      "reverse": false,
+      "text": "Across repeated attempts to make progress, how likely are you to schedule demanding work when your usable energy is stronger?"
+    },
+    {
+      "id": 376,
+      "category": "accountability",
+      "reverse": false,
+      "text": "When choosing an important goal, how likely are you to track a small set of measures linked to meaningful progress?"
+    },
+    {
+      "id": 377,
+      "category": "accountability",
+      "reverse": true,
+      "text": "At the beginning of a new project, how likely are you to avoid checking progress when results may be disappointing?"
+    },
+    {
+      "id": 378,
+      "category": "accountability",
+      "reverse": false,
+      "text": "When initial excitement fades, how likely are you to use an accountability structure that encourages honest follow-through?"
+    },
+    {
+      "id": 379,
+      "category": "accountability",
+      "reverse": true,
+      "text": "While balancing several demands, how likely are you to choose measures that look impressive but reveal little progress?"
+    },
+    {
+      "id": 380,
+      "category": "accountability",
+      "reverse": false,
+      "text": "Before starting difficult work, how likely are you to track a small set of measures linked to meaningful progress?"
+    },
+    {
+      "id": 381,
+      "category": "accountability",
+      "reverse": true,
+      "text": "When progress is slower than expected, how likely are you to avoid checking progress when results may be disappointing?"
+    },
+    {
+      "id": 382,
+      "category": "accountability",
+      "reverse": false,
+      "text": "After receiving new information, how likely are you to use an accountability structure that encourages honest follow-through?"
+    },
+    {
+      "id": 383,
+      "category": "accountability",
+      "reverse": true,
+      "text": "When a setback interrupts progress, how likely are you to choose measures that look impressive but reveal little progress?"
+    },
+    {
+      "id": 384,
+      "category": "accountability",
+      "reverse": false,
+      "text": "During a demanding week, how likely are you to track a small set of measures linked to meaningful progress?"
+    },
+    {
+      "id": 385,
+      "category": "accountability",
+      "reverse": true,
+      "text": "When an opportunity appears unexpectedly, how likely are you to avoid checking progress when results may be disappointing?"
+    },
+    {
+      "id": 386,
+      "category": "accountability",
+      "reverse": false,
+      "text": "While reviewing recent results, how likely are you to use an accountability structure that encourages honest follow-through?"
+    },
+    {
+      "id": 387,
+      "category": "accountability",
+      "reverse": true,
+      "text": "When uncertainty is high, how likely are you to choose measures that look impressive but reveal little progress?"
+    },
+    {
+      "id": 388,
+      "category": "accountability",
+      "reverse": false,
+      "text": "Before making a consequential decision, how likely are you to track a small set of measures linked to meaningful progress?"
+    },
+    {
+      "id": 389,
+      "category": "accountability",
+      "reverse": true,
+      "text": "When resources are limited, how likely are you to avoid checking progress when results may be disappointing?"
+    },
+    {
+      "id": 390,
+      "category": "accountability",
+      "reverse": false,
+      "text": "After useful criticism, how likely are you to use an accountability structure that encourages honest follow-through?"
+    },
+    {
+      "id": 391,
+      "category": "accountability",
+      "reverse": true,
+      "text": "When competing priorities arise, how likely are you to choose measures that look impressive but reveal little progress?"
+    },
+    {
+      "id": 392,
+      "category": "accountability",
+      "reverse": false,
+      "text": "As an important deadline approaches, how likely are you to track a small set of measures linked to meaningful progress?"
+    },
+    {
+      "id": 393,
+      "category": "accountability",
+      "reverse": true,
+      "text": "When confidence temporarily drops, how likely are you to avoid checking progress when results may be disappointing?"
+    },
+    {
+      "id": 394,
+      "category": "accountability",
+      "reverse": false,
+      "text": "While learning something unfamiliar, how likely are you to use an accountability structure that encourages honest follow-through?"
+    },
+    {
+      "id": 395,
+      "category": "accountability",
+      "reverse": true,
+      "text": "When support from others could help, how likely are you to choose measures that look impressive but reveal little progress?"
+    },
+    {
+      "id": 396,
+      "category": "accountability",
+      "reverse": false,
+      "text": "After completing a major step, how likely are you to track a small set of measures linked to meaningful progress?"
+    },
+    {
+      "id": 397,
+      "category": "accountability",
+      "reverse": true,
+      "text": "When the original plan stops working, how likely are you to avoid checking progress when results may be disappointing?"
+    },
+    {
+      "id": 398,
+      "category": "accountability",
+      "reverse": false,
+      "text": "During a long-term effort, how likely are you to use an accountability structure that encourages honest follow-through?"
+    },
+    {
+      "id": 399,
+      "category": "accountability",
+      "reverse": true,
+      "text": "When wellbeing and ambition compete, how likely are you to choose measures that look impressive but reveal little progress?"
+    },
+    {
+      "id": 400,
+      "category": "accountability",
+      "reverse": false,
+      "text": "Across repeated attempts to make progress, how likely are you to track a small set of measures linked to meaningful progress?"
+    },
+    {
+      "id": 401,
+      "category": "support_network",
+      "reverse": false,
+      "text": "When choosing an important goal, how likely are you to seek relevant help before a manageable problem becomes a crisis?"
+    },
+    {
+      "id": 402,
+      "category": "support_network",
+      "reverse": true,
+      "text": "At the beginning of a new project, how likely are you to isolate yourself because asking for help feels weak?"
+    },
+    {
+      "id": 403,
+      "category": "support_network",
+      "reverse": false,
+      "text": "When initial excitement fades, how likely are you to build reciprocal relationships with people who can share insight?"
+    },
+    {
+      "id": 404,
+      "category": "support_network",
+      "reverse": true,
+      "text": "While balancing several demands, how likely are you to contact people only when you immediately need something?"
+    },
+    {
+      "id": 405,
+      "category": "support_network",
+      "reverse": false,
+      "text": "Before starting difficult work, how likely are you to seek relevant help before a manageable problem becomes a crisis?"
+    },
+    {
+      "id": 406,
+      "category": "support_network",
+      "reverse": true,
+      "text": "When progress is slower than expected, how likely are you to isolate yourself because asking for help feels weak?"
+    },
+    {
+      "id": 407,
+      "category": "support_network",
+      "reverse": false,
+      "text": "After receiving new information, how likely are you to build reciprocal relationships with people who can share insight?"
+    },
+    {
+      "id": 408,
+      "category": "support_network",
+      "reverse": true,
+      "text": "When a setback interrupts progress, how likely are you to contact people only when you immediately need something?"
+    },
+    {
+      "id": 409,
+      "category": "support_network",
+      "reverse": false,
+      "text": "During a demanding week, how likely are you to seek relevant help before a manageable problem becomes a crisis?"
+    },
+    {
+      "id": 410,
+      "category": "support_network",
+      "reverse": true,
+      "text": "When an opportunity appears unexpectedly, how likely are you to isolate yourself because asking for help feels weak?"
+    },
+    {
+      "id": 411,
+      "category": "support_network",
+      "reverse": false,
+      "text": "While reviewing recent results, how likely are you to build reciprocal relationships with people who can share insight?"
+    },
+    {
+      "id": 412,
+      "category": "support_network",
+      "reverse": true,
+      "text": "When uncertainty is high, how likely are you to contact people only when you immediately need something?"
+    },
+    {
+      "id": 413,
+      "category": "support_network",
+      "reverse": false,
+      "text": "Before making a consequential decision, how likely are you to seek relevant help before a manageable problem becomes a crisis?"
+    },
+    {
+      "id": 414,
+      "category": "support_network",
+      "reverse": true,
+      "text": "When resources are limited, how likely are you to isolate yourself because asking for help feels weak?"
+    },
+    {
+      "id": 415,
+      "category": "support_network",
+      "reverse": false,
+      "text": "After useful criticism, how likely are you to build reciprocal relationships with people who can share insight?"
+    },
+    {
+      "id": 416,
+      "category": "support_network",
+      "reverse": true,
+      "text": "When competing priorities arise, how likely are you to contact people only when you immediately need something?"
+    },
+    {
+      "id": 417,
+      "category": "support_network",
+      "reverse": false,
+      "text": "As an important deadline approaches, how likely are you to seek relevant help before a manageable problem becomes a crisis?"
+    },
+    {
+      "id": 418,
+      "category": "support_network",
+      "reverse": true,
+      "text": "When confidence temporarily drops, how likely are you to isolate yourself because asking for help feels weak?"
+    },
+    {
+      "id": 419,
+      "category": "support_network",
+      "reverse": false,
+      "text": "While learning something unfamiliar, how likely are you to build reciprocal relationships with people who can share insight?"
+    },
+    {
+      "id": 420,
+      "category": "support_network",
+      "reverse": true,
+      "text": "When support from others could help, how likely are you to contact people only when you immediately need something?"
+    },
+    {
+      "id": 421,
+      "category": "support_network",
+      "reverse": false,
+      "text": "After completing a major step, how likely are you to seek relevant help before a manageable problem becomes a crisis?"
+    },
+    {
+      "id": 422,
+      "category": "support_network",
+      "reverse": true,
+      "text": "When the original plan stops working, how likely are you to isolate yourself because asking for help feels weak?"
+    },
+    {
+      "id": 423,
+      "category": "support_network",
+      "reverse": false,
+      "text": "During a long-term effort, how likely are you to build reciprocal relationships with people who can share insight?"
+    },
+    {
+      "id": 424,
+      "category": "support_network",
+      "reverse": true,
+      "text": "When wellbeing and ambition compete, how likely are you to contact people only when you immediately need something?"
+    },
+    {
+      "id": 425,
+      "category": "support_network",
+      "reverse": false,
+      "text": "Across repeated attempts to make progress, how likely are you to seek relevant help before a manageable problem becomes a crisis?"
+    },
+    {
+      "id": 426,
+      "category": "communication",
+      "reverse": false,
+      "text": "When choosing an important goal, how likely are you to explain your goal or proposal clearly to relevant people?"
+    },
+    {
+      "id": 427,
+      "category": "communication",
+      "reverse": true,
+      "text": "At the beginning of a new project, how likely are you to assume others understand an idea you have not explained?"
+    },
+    {
+      "id": 428,
+      "category": "communication",
+      "reverse": false,
+      "text": "When initial excitement fades, how likely are you to adapt your message to what the audience needs to understand?"
+    },
+    {
+      "id": 429,
+      "category": "communication",
+      "reverse": true,
+      "text": "While balancing several demands, how likely are you to use vague communication when support or alignment is needed?"
+    },
+    {
+      "id": 430,
+      "category": "communication",
+      "reverse": false,
+      "text": "Before starting difficult work, how likely are you to explain your goal or proposal clearly to relevant people?"
+    },
+    {
+      "id": 431,
+      "category": "communication",
+      "reverse": true,
+      "text": "When progress is slower than expected, how likely are you to assume others understand an idea you have not explained?"
+    },
+    {
+      "id": 432,
+      "category": "communication",
+      "reverse": false,
+      "text": "After receiving new information, how likely are you to adapt your message to what the audience needs to understand?"
+    },
+    {
+      "id": 433,
+      "category": "communication",
+      "reverse": true,
+      "text": "When a setback interrupts progress, how likely are you to use vague communication when support or alignment is needed?"
+    },
+    {
+      "id": 434,
+      "category": "communication",
+      "reverse": false,
+      "text": "During a demanding week, how likely are you to explain your goal or proposal clearly to relevant people?"
+    },
+    {
+      "id": 435,
+      "category": "communication",
+      "reverse": true,
+      "text": "When an opportunity appears unexpectedly, how likely are you to assume others understand an idea you have not explained?"
+    },
+    {
+      "id": 436,
+      "category": "communication",
+      "reverse": false,
+      "text": "While reviewing recent results, how likely are you to adapt your message to what the audience needs to understand?"
+    },
+    {
+      "id": 437,
+      "category": "communication",
+      "reverse": true,
+      "text": "When uncertainty is high, how likely are you to use vague communication when support or alignment is needed?"
+    },
+    {
+      "id": 438,
+      "category": "communication",
+      "reverse": false,
+      "text": "Before making a consequential decision, how likely are you to explain your goal or proposal clearly to relevant people?"
+    },
+    {
+      "id": 439,
+      "category": "communication",
+      "reverse": true,
+      "text": "When resources are limited, how likely are you to assume others understand an idea you have not explained?"
+    },
+    {
+      "id": 440,
+      "category": "communication",
+      "reverse": false,
+      "text": "After useful criticism, how likely are you to adapt your message to what the audience needs to understand?"
+    },
+    {
+      "id": 441,
+      "category": "communication",
+      "reverse": true,
+      "text": "When competing priorities arise, how likely are you to use vague communication when support or alignment is needed?"
+    },
+    {
+      "id": 442,
+      "category": "communication",
+      "reverse": false,
+      "text": "As an important deadline approaches, how likely are you to explain your goal or proposal clearly to relevant people?"
+    },
+    {
+      "id": 443,
+      "category": "communication",
+      "reverse": true,
+      "text": "When confidence temporarily drops, how likely are you to assume others understand an idea you have not explained?"
+    },
+    {
+      "id": 444,
+      "category": "communication",
+      "reverse": false,
+      "text": "While learning something unfamiliar, how likely are you to adapt your message to what the audience needs to understand?"
+    },
+    {
+      "id": 445,
+      "category": "communication",
+      "reverse": true,
+      "text": "When support from others could help, how likely are you to use vague communication when support or alignment is needed?"
+    },
+    {
+      "id": 446,
+      "category": "communication",
+      "reverse": false,
+      "text": "After completing a major step, how likely are you to explain your goal or proposal clearly to relevant people?"
+    },
+    {
+      "id": 447,
+      "category": "communication",
+      "reverse": true,
+      "text": "When the original plan stops working, how likely are you to assume others understand an idea you have not explained?"
+    },
+    {
+      "id": 448,
+      "category": "communication",
+      "reverse": false,
+      "text": "During a long-term effort, how likely are you to adapt your message to what the audience needs to understand?"
+    },
+    {
+      "id": 449,
+      "category": "communication",
+      "reverse": true,
+      "text": "When wellbeing and ambition compete, how likely are you to use vague communication when support or alignment is needed?"
+    },
+    {
+      "id": 450,
+      "category": "communication",
+      "reverse": false,
+      "text": "Across repeated attempts to make progress, how likely are you to explain your goal or proposal clearly to relevant people?"
+    },
+    {
+      "id": 451,
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "When choosing an important goal, how likely are you to regulate strong emotion before making an important choice?"
+    },
+    {
+      "id": 452,
+      "category": "emotional_regulation",
+      "reverse": true,
+      "text": "At the beginning of a new project, how likely are you to make a major decision mainly to escape temporary discomfort?"
+    },
+    {
+      "id": 453,
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "When initial excitement fades, how likely are you to continue a useful next step without denying difficult feelings?"
+    },
+    {
+      "id": 454,
+      "category": "emotional_regulation",
+      "reverse": true,
+      "text": "While balancing several demands, how likely are you to let frustration determine whether worthwhile work continues?"
+    },
+    {
+      "id": 455,
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "Before starting difficult work, how likely are you to regulate strong emotion before making an important choice?"
+    },
+    {
+      "id": 456,
+      "category": "emotional_regulation",
+      "reverse": true,
+      "text": "When progress is slower than expected, how likely are you to make a major decision mainly to escape temporary discomfort?"
+    },
+    {
+      "id": 457,
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "After receiving new information, how likely are you to continue a useful next step without denying difficult feelings?"
+    },
+    {
+      "id": 458,
+      "category": "emotional_regulation",
+      "reverse": true,
+      "text": "When a setback interrupts progress, how likely are you to let frustration determine whether worthwhile work continues?"
+    },
+    {
+      "id": 459,
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "During a demanding week, how likely are you to regulate strong emotion before making an important choice?"
+    },
+    {
+      "id": 460,
+      "category": "emotional_regulation",
+      "reverse": true,
+      "text": "When an opportunity appears unexpectedly, how likely are you to make a major decision mainly to escape temporary discomfort?"
+    },
+    {
+      "id": 461,
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "While reviewing recent results, how likely are you to continue a useful next step without denying difficult feelings?"
+    },
+    {
+      "id": 462,
+      "category": "emotional_regulation",
+      "reverse": true,
+      "text": "When uncertainty is high, how likely are you to let frustration determine whether worthwhile work continues?"
+    },
+    {
+      "id": 463,
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "Before making a consequential decision, how likely are you to regulate strong emotion before making an important choice?"
+    },
+    {
+      "id": 464,
+      "category": "emotional_regulation",
+      "reverse": true,
+      "text": "When resources are limited, how likely are you to make a major decision mainly to escape temporary discomfort?"
+    },
+    {
+      "id": 465,
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "After useful criticism, how likely are you to continue a useful next step without denying difficult feelings?"
+    },
+    {
+      "id": 466,
+      "category": "emotional_regulation",
+      "reverse": true,
+      "text": "When competing priorities arise, how likely are you to let frustration determine whether worthwhile work continues?"
+    },
+    {
+      "id": 467,
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "As an important deadline approaches, how likely are you to regulate strong emotion before making an important choice?"
+    },
+    {
+      "id": 468,
+      "category": "emotional_regulation",
+      "reverse": true,
+      "text": "When confidence temporarily drops, how likely are you to make a major decision mainly to escape temporary discomfort?"
+    },
+    {
+      "id": 469,
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "While learning something unfamiliar, how likely are you to continue a useful next step without denying difficult feelings?"
+    },
+    {
+      "id": 470,
+      "category": "emotional_regulation",
+      "reverse": true,
+      "text": "When support from others could help, how likely are you to let frustration determine whether worthwhile work continues?"
+    },
+    {
+      "id": 471,
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "After completing a major step, how likely are you to regulate strong emotion before making an important choice?"
+    },
+    {
+      "id": 472,
+      "category": "emotional_regulation",
+      "reverse": true,
+      "text": "When the original plan stops working, how likely are you to make a major decision mainly to escape temporary discomfort?"
+    },
+    {
+      "id": 473,
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "During a long-term effort, how likely are you to continue a useful next step without denying difficult feelings?"
+    },
+    {
+      "id": 474,
+      "category": "emotional_regulation",
+      "reverse": true,
+      "text": "When wellbeing and ambition compete, how likely are you to let frustration determine whether worthwhile work continues?"
+    },
+    {
+      "id": 475,
+      "category": "emotional_regulation",
+      "reverse": false,
+      "text": "Across repeated attempts to make progress, how likely are you to regulate strong emotion before making an important choice?"
+    },
+    {
+      "id": 476,
+      "category": "opportunity_context",
+      "reverse": false,
+      "text": "When choosing an important goal, how likely are you to scan for realistic opportunities and changing conditions?"
+    },
+    {
+      "id": 477,
+      "category": "opportunity_context",
+      "reverse": true,
+      "text": "At the beginning of a new project, how likely are you to assume personal effort is the only factor shaping outcomes?"
+    },
+    {
+      "id": 478,
+      "category": "opportunity_context",
+      "reverse": false,
+      "text": "When initial excitement fades, how likely are you to account for structural barriers and resources when setting expectations?"
+    },
+    {
+      "id": 479,
+      "category": "opportunity_context",
+      "reverse": true,
+      "text": "While balancing several demands, how likely are you to ignore a promising opportunity because it differs from the original route?"
+    },
+    {
+      "id": 480,
+      "category": "opportunity_context",
+      "reverse": false,
+      "text": "Before starting difficult work, how likely are you to scan for realistic opportunities and changing conditions?"
+    },
+    {
+      "id": 481,
+      "category": "opportunity_context",
+      "reverse": true,
+      "text": "When progress is slower than expected, how likely are you to assume personal effort is the only factor shaping outcomes?"
+    },
+    {
+      "id": 482,
+      "category": "opportunity_context",
+      "reverse": false,
+      "text": "After receiving new information, how likely are you to account for structural barriers and resources when setting expectations?"
+    },
+    {
+      "id": 483,
+      "category": "opportunity_context",
+      "reverse": true,
+      "text": "When a setback interrupts progress, how likely are you to ignore a promising opportunity because it differs from the original route?"
+    },
+    {
+      "id": 484,
+      "category": "opportunity_context",
+      "reverse": false,
+      "text": "During a demanding week, how likely are you to scan for realistic opportunities and changing conditions?"
+    },
+    {
+      "id": 485,
+      "category": "opportunity_context",
+      "reverse": true,
+      "text": "When an opportunity appears unexpectedly, how likely are you to assume personal effort is the only factor shaping outcomes?"
+    },
+    {
+      "id": 486,
+      "category": "opportunity_context",
+      "reverse": false,
+      "text": "While reviewing recent results, how likely are you to account for structural barriers and resources when setting expectations?"
+    },
+    {
+      "id": 487,
+      "category": "opportunity_context",
+      "reverse": true,
+      "text": "When uncertainty is high, how likely are you to ignore a promising opportunity because it differs from the original route?"
+    },
+    {
+      "id": 488,
+      "category": "opportunity_context",
+      "reverse": false,
+      "text": "Before making a consequential decision, how likely are you to scan for realistic opportunities and changing conditions?"
+    },
+    {
+      "id": 489,
+      "category": "opportunity_context",
+      "reverse": true,
+      "text": "When resources are limited, how likely are you to assume personal effort is the only factor shaping outcomes?"
+    },
+    {
+      "id": 490,
+      "category": "opportunity_context",
+      "reverse": false,
+      "text": "After useful criticism, how likely are you to account for structural barriers and resources when setting expectations?"
+    },
+    {
+      "id": 491,
+      "category": "opportunity_context",
+      "reverse": true,
+      "text": "When competing priorities arise, how likely are you to ignore a promising opportunity because it differs from the original route?"
+    },
+    {
+      "id": 492,
+      "category": "opportunity_context",
+      "reverse": false,
+      "text": "As an important deadline approaches, how likely are you to scan for realistic opportunities and changing conditions?"
+    },
+    {
+      "id": 493,
+      "category": "opportunity_context",
+      "reverse": true,
+      "text": "When confidence temporarily drops, how likely are you to assume personal effort is the only factor shaping outcomes?"
+    },
+    {
+      "id": 494,
+      "category": "opportunity_context",
+      "reverse": false,
+      "text": "While learning something unfamiliar, how likely are you to account for structural barriers and resources when setting expectations?"
+    },
+    {
+      "id": 495,
+      "category": "opportunity_context",
+      "reverse": true,
+      "text": "When support from others could help, how likely are you to ignore a promising opportunity because it differs from the original route?"
+    },
+    {
+      "id": 496,
+      "category": "opportunity_context",
+      "reverse": false,
+      "text": "After completing a major step, how likely are you to scan for realistic opportunities and changing conditions?"
+    },
+    {
+      "id": 497,
+      "category": "opportunity_context",
+      "reverse": true,
+      "text": "When the original plan stops working, how likely are you to assume personal effort is the only factor shaping outcomes?"
+    },
+    {
+      "id": 498,
+      "category": "opportunity_context",
+      "reverse": false,
+      "text": "During a long-term effort, how likely are you to account for structural barriers and resources when setting expectations?"
+    },
+    {
+      "id": 499,
+      "category": "opportunity_context",
+      "reverse": true,
+      "text": "When wellbeing and ambition compete, how likely are you to ignore a promising opportunity because it differs from the original route?"
+    },
+    {
+      "id": 500,
+      "category": "opportunity_context",
+      "reverse": false,
+      "text": "Across repeated attempts to make progress, how likely are you to scan for realistic opportunities and changing conditions?"
+    }
+  ]
+}

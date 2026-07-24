@@ -1,0 +1,3110 @@
+{
+  "meta": {
+    "title": "Empathy & Emotional Attunement Assessment",
+    "description": "A self-reflection test that explores how attuned you are to others' emotions and perspectives across 10 dimensions of empathy.",
+    "scale": {
+      "min": 1,
+      "max": 10,
+      "minLabel": "Not at all likely",
+      "maxLabel": "Extremely likely"
+    },
+    "categories": [
+      {
+        "id": "emotional_recognition",
+        "label": "Emotional Recognition",
+        "icon": "👁️"
+      },
+      {
+        "id": "perspective_taking",
+        "label": "Perspective-Taking",
+        "icon": "🔭"
+      },
+      {
+        "id": "emotional_resonance",
+        "label": "Emotional Resonance",
+        "icon": "💓"
+      },
+      {
+        "id": "compassionate_action",
+        "label": "Compassionate Action",
+        "icon": "🤲"
+      },
+      {
+        "id": "active_listening",
+        "label": "Active Listening",
+        "icon": "👂"
+      },
+      {
+        "id": "empathic_communication",
+        "label": "Empathic Communication",
+        "icon": "💬"
+      },
+      {
+        "id": "cross_difference_empathy",
+        "label": "Empathy Across Differences",
+        "icon": "🌍"
+      },
+      {
+        "id": "conflict_empathy",
+        "label": "Empathy in Conflict",
+        "icon": "🕊️"
+      },
+      {
+        "id": "empathic_boundaries",
+        "label": "Empathic Boundaries & Self-Care",
+        "icon": "🧘"
+      },
+      {
+        "id": "empathy_leadership",
+        "label": "Empathy in Leadership & Community",
+        "icon": "🏘️"
+      }
+    ],
+    "levels": [
+      {
+        "min": 9,
+        "max": 10.01,
+        "label": "Deeply Empathetic",
+        "emoji": "💞",
+        "desc": "You consistently tune into others' feelings and act on that understanding, even when it costs you time or comfort. People feel truly seen and heard around you."
+      },
+      {
+        "min": 7.5,
+        "max": 9,
+        "label": "Highly Attuned",
+        "emoji": "🌟",
+        "desc": "You pick up on others' emotions readily and usually respond with care. A few situations — like conflict or unfamiliar contexts — are still worth extra attention."
+      },
+      {
+        "min": 6,
+        "max": 7.5,
+        "label": "Considerate",
+        "emoji": "👍",
+        "desc": "You generally notice when someone needs support and try to help, though busyness or distraction sometimes get in the way."
+      },
+      {
+        "min": 4.5,
+        "max": 6,
+        "label": "Developing",
+        "emoji": "🌱",
+        "desc": "Your empathic responses are situational — strong with people close to you, less consistent with strangers or those who differ from you."
+      },
+      {
+        "min": 3,
+        "max": 4.5,
+        "label": "Guarded",
+        "emoji": "⚠️",
+        "desc": "You often stay focused on your own perspective, and others' emotional cues don't always register or prompt a response. Small, deliberate habits could shift this."
+      },
+      {
+        "min": 1,
+        "max": 3,
+        "label": "Needs Reflection",
+        "emoji": "📚",
+        "desc": "Your answers suggest that tuning into others' feelings rarely factors into your responses right now. This is a good starting point for honest self-reflection."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "category": "emotional_recognition",
+      "reverse": false,
+      "text": "A friend's messages have gotten shorter and less frequent lately. How likely are you to notice the change and wonder if something's wrong?"
+    },
+    {
+      "id": 2,
+      "category": "emotional_recognition",
+      "reverse": false,
+      "text": "You're in a meeting and a colleague's shoulders are tense and their answers are clipped. How likely are you to pick up on their discomfort?"
+    },
+    {
+      "id": 3,
+      "category": "emotional_recognition",
+      "reverse": false,
+      "text": "Someone says \"I'm fine\" in a flat tone with their eyes down. How likely are you to sense that they're not actually fine?"
+    },
+    {
+      "id": 4,
+      "category": "emotional_recognition",
+      "reverse": false,
+      "text": "A family member has been unusually quiet at dinner. How likely are you to notice and gently ask what's going on?"
+    },
+    {
+      "id": 5,
+      "category": "emotional_recognition",
+      "reverse": false,
+      "text": "You see a friend's smile doesn't quite reach their eyes at a party. How likely are you to pick up on the difference between a real and a forced smile?"
+    },
+    {
+      "id": 6,
+      "category": "emotional_recognition",
+      "reverse": false,
+      "text": "A classmate's usual energy has been missing for a few days. How likely are you to notice before anyone points it out?"
+    },
+    {
+      "id": 7,
+      "category": "emotional_recognition",
+      "reverse": false,
+      "text": "Someone in your group project subtly stops offering their opinions. How likely are you to notice they've gone quiet and wonder why?"
+    },
+    {
+      "id": 8,
+      "category": "emotional_recognition",
+      "reverse": false,
+      "text": "You're on a phone call, and the other person's voice sounds slightly off. How likely are you to ask if everything is okay?"
+    },
+    {
+      "id": 9,
+      "category": "emotional_recognition",
+      "reverse": false,
+      "text": "A neighbor waves at you but doesn't quite make eye contact. How likely are you to sense something might be wrong?"
+    },
+    {
+      "id": 10,
+      "category": "emotional_recognition",
+      "reverse": false,
+      "text": "Someone laughs at a joke a beat too late. How likely are you to notice their attention was somewhere else?"
+    },
+    {
+      "id": 11,
+      "category": "emotional_recognition",
+      "reverse": true,
+      "text": "You're focused on your own tasks during a busy week. How likely are you to miss that a close friend has seemed off for days?"
+    },
+    {
+      "id": 12,
+      "category": "emotional_recognition",
+      "reverse": false,
+      "text": "A coworker starts arriving late and leaving early without explanation. How likely are you to notice the pattern rather than assume nothing's changed?"
+    },
+    {
+      "id": 13,
+      "category": "emotional_recognition",
+      "reverse": true,
+      "text": "A friend hints that something is bothering them, but doesn't say it directly. How likely are you to miss the hint entirely?"
+    },
+    {
+      "id": 14,
+      "category": "emotional_recognition",
+      "reverse": false,
+      "text": "You notice a friend has stopped posting or engaging online as much as usual. How likely are you to wonder if they're going through something?"
+    },
+    {
+      "id": 15,
+      "category": "emotional_recognition",
+      "reverse": false,
+      "text": "Someone's handwriting or work quality changes noticeably. How likely are you to notice and consider it might reflect something personal?"
+    },
+    {
+      "id": 16,
+      "category": "emotional_recognition",
+      "reverse": false,
+      "text": "A sibling gives a short, one-word answer to a question that usually gets a longer response. How likely are you to notice something's different?"
+    },
+    {
+      "id": 17,
+      "category": "emotional_recognition",
+      "reverse": true,
+      "text": "Your partner seems distracted during a conversation, but you keep talking about your day anyway without noticing. How likely are you to do this?"
+    },
+    {
+      "id": 18,
+      "category": "emotional_recognition",
+      "reverse": false,
+      "text": "A friend cancels plans with a vague excuse for the second time in a row. How likely are you to sense there might be more going on?"
+    },
+    {
+      "id": 19,
+      "category": "emotional_recognition",
+      "reverse": false,
+      "text": "You see someone's body language stiffen when a certain topic comes up. How likely are you to notice and steer the conversation gently?"
+    },
+    {
+      "id": 20,
+      "category": "emotional_recognition",
+      "reverse": true,
+      "text": "You're scrolling your phone while someone talks to you. How likely are you to miss the change in their tone of voice?"
+    },
+    {
+      "id": 21,
+      "category": "emotional_recognition",
+      "reverse": false,
+      "text": "A coworker's usually tidy desk becomes cluttered and disorganized. How likely are you to notice it as a possible sign of stress?"
+    },
+    {
+      "id": 22,
+      "category": "emotional_recognition",
+      "reverse": false,
+      "text": "Someone in a group chat stops responding to messages that used to get quick replies. How likely are you to notice and check in privately?"
+    },
+    {
+      "id": 23,
+      "category": "emotional_recognition",
+      "reverse": false,
+      "text": "A friend's usual sense of humor disappears for a few days. How likely are you to notice the shift?"
+    },
+    {
+      "id": 24,
+      "category": "emotional_recognition",
+      "reverse": false,
+      "text": "You see a stranger's face fall slightly after reading a text message in public. How likely are you to register that something upset them?"
+    },
+    {
+      "id": 25,
+      "category": "emotional_recognition",
+      "reverse": true,
+      "text": "A friend mentions they've been \"stressed lately\" in passing. How likely are you to let the comment pass without follow-up?"
+    },
+    {
+      "id": 26,
+      "category": "emotional_recognition",
+      "reverse": false,
+      "text": "Your child's appetite changes suddenly over a week. How likely are you to notice and wonder what's behind it?"
+    },
+    {
+      "id": 27,
+      "category": "emotional_recognition",
+      "reverse": false,
+      "text": "A colleague's usual confidence in meetings seems to fade. How likely are you to pick up on the change?"
+    },
+    {
+      "id": 28,
+      "category": "emotional_recognition",
+      "reverse": false,
+      "text": "Someone repeats the same sentence twice within a conversation, seemingly distracted. How likely are you to notice they're preoccupied?"
+    },
+    {
+      "id": 29,
+      "category": "emotional_recognition",
+      "reverse": false,
+      "text": "A friend's replies to your texts get slower and shorter over a week. How likely are you to sense something might be wrong?"
+    },
+    {
+      "id": 30,
+      "category": "emotional_recognition",
+      "reverse": true,
+      "text": "You're catching up with an old friend, but you don't notice they seem nervous about something they haven't brought up yet. How likely are you to miss this?"
+    },
+    {
+      "id": 31,
+      "category": "emotional_recognition",
+      "reverse": false,
+      "text": "Someone at work avoids eye contact during a normally easy conversation. How likely are you to notice and consider why?"
+    },
+    {
+      "id": 32,
+      "category": "emotional_recognition",
+      "reverse": false,
+      "text": "A friend jokes about something in a way that feels slightly bitter. How likely are you to notice the edge in their tone?"
+    },
+    {
+      "id": 33,
+      "category": "emotional_recognition",
+      "reverse": false,
+      "text": "Your partner's sleep schedule shifts noticeably. How likely are you to notice and ask if something's on their mind?"
+    },
+    {
+      "id": 34,
+      "category": "emotional_recognition",
+      "reverse": false,
+      "text": "A teammate stops volunteering for tasks they used to seek out. How likely are you to notice the change in enthusiasm?"
+    },
+    {
+      "id": 35,
+      "category": "emotional_recognition",
+      "reverse": true,
+      "text": "A friend's usually warm greeting feels flat one day. How likely are you to not register the difference at all?"
+    },
+    {
+      "id": 36,
+      "category": "emotional_recognition",
+      "reverse": false,
+      "text": "You notice a coworker's leg bouncing and hands fidgeting during a discussion. How likely are you to pick up on their anxiety?"
+    },
+    {
+      "id": 37,
+      "category": "emotional_recognition",
+      "reverse": false,
+      "text": "Someone's word choice becomes more negative than usual over several conversations. How likely are you to notice the pattern?"
+    },
+    {
+      "id": 38,
+      "category": "emotional_recognition",
+      "reverse": false,
+      "text": "A friend avoids a topic they used to bring up often. How likely are you to notice the avoidance and wonder why?"
+    },
+    {
+      "id": 39,
+      "category": "emotional_recognition",
+      "reverse": false,
+      "text": "Your roommate's usual routine changes without explanation. How likely are you to notice and ask about it?"
+    },
+    {
+      "id": 40,
+      "category": "emotional_recognition",
+      "reverse": true,
+      "text": "You're in a rush and someone tries to tell you something important through their expression rather than words. How likely are you to miss it because you're preoccupied?"
+    },
+    {
+      "id": 41,
+      "category": "emotional_recognition",
+      "reverse": false,
+      "text": "A friend's posts online shift from upbeat to noticeably subdued. How likely are you to notice the tonal change?"
+    },
+    {
+      "id": 42,
+      "category": "emotional_recognition",
+      "reverse": false,
+      "text": "Someone pauses a little too long before answering a simple question. How likely are you to sense hesitation behind it?"
+    },
+    {
+      "id": 43,
+      "category": "emotional_recognition",
+      "reverse": false,
+      "text": "A classmate who's usually chatty becomes withdrawn in group settings. How likely are you to notice and check in?"
+    },
+    {
+      "id": 44,
+      "category": "emotional_recognition",
+      "reverse": false,
+      "text": "Your parent's voice sounds strained on a call, even though they say everything is fine. How likely are you to pick up on the strain?"
+    },
+    {
+      "id": 45,
+      "category": "emotional_recognition",
+      "reverse": true,
+      "text": "A friend gives you a lot of nonverbal cues that they're uncomfortable with a topic, but you keep pressing anyway without noticing. How likely are you to do this?"
+    },
+    {
+      "id": 46,
+      "category": "emotional_recognition",
+      "reverse": false,
+      "text": "Someone's energy noticeably drops after a phone call during a gathering. How likely are you to notice and wonder what happened?"
+    },
+    {
+      "id": 47,
+      "category": "emotional_recognition",
+      "reverse": false,
+      "text": "A coworker's usual sense of humor turns sarcastic in a way that feels different. How likely are you to notice the shift?"
+    },
+    {
+      "id": 48,
+      "category": "emotional_recognition",
+      "reverse": false,
+      "text": "You see a friend's eyes well up briefly before they change the subject. How likely are you to notice the moment?"
+    },
+    {
+      "id": 49,
+      "category": "emotional_recognition",
+      "reverse": false,
+      "text": "A family member starts giving shorter, more guarded answers about their day. How likely are you to notice the change in openness?"
+    },
+    {
+      "id": 50,
+      "category": "emotional_recognition",
+      "reverse": true,
+      "text": "You're deep in a conversation about your own plans and don't notice the other person trying to steer the topic elsewhere. How likely are you to miss this?"
+    },
+    {
+      "id": 51,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "A coworker disagrees with your approach in a meeting. How likely are you to pause and consider why their view might make sense from where they sit?"
+    },
+    {
+      "id": 52,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "Your teenager pushes back on a house rule. How likely are you to try to see the situation through their eyes before responding?"
+    },
+    {
+      "id": 53,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "A friend reacts more strongly than expected to some news. How likely are you to consider what might be going on in their life behind that reaction?"
+    },
+    {
+      "id": 54,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "Someone from a very different background makes a decision you wouldn't make. How likely are you to try to understand their reasoning rather than just judge it?"
+    },
+    {
+      "id": 55,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "A customer is upset about a policy you didn't create. How likely are you to imagine how frustrating the situation looks from their side?"
+    },
+    {
+      "id": 56,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "Your sibling handles a family issue differently than you would. How likely are you to consider their perspective before criticizing the choice?"
+    },
+    {
+      "id": 57,
+      "category": "perspective_taking",
+      "reverse": true,
+      "text": "A friend explains why they made a decision you disagree with. How likely are you to brush off their reasoning without really considering it?"
+    },
+    {
+      "id": 58,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "A new employee struggles with a process that seems obvious to you. How likely are you to remember what it felt like to be new before judging them?"
+    },
+    {
+      "id": 59,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "Someone cuts you off in traffic. How likely are you to consider they might be rushing to an emergency rather than assume they're just being rude?"
+    },
+    {
+      "id": 60,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "A friend from a different culture reacts to a situation differently than you expected. How likely are you to consider how their upbringing shapes that reaction?"
+    },
+    {
+      "id": 61,
+      "category": "perspective_taking",
+      "reverse": true,
+      "text": "You're confident you're right in an argument. How likely are you to assume the other person's viewpoint isn't worth seriously considering?"
+    },
+    {
+      "id": 62,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "A colleague pushes back on feedback you gave. How likely are you to consider how it might have sounded from where they were sitting?"
+    },
+    {
+      "id": 63,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "Someone your age makes a very different life choice than you (career, relationship, lifestyle). How likely are you to try to understand what led them there instead of assuming they're wrong?"
+    },
+    {
+      "id": 64,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "Your parent holds an opinion shaped by a very different era or upbringing. How likely are you to consider the context that shaped their view before dismissing it?"
+    },
+    {
+      "id": 65,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "A friend is upset about something that wouldn't bother you personally. How likely are you to try to understand why it matters so much to them?"
+    },
+    {
+      "id": 66,
+      "category": "perspective_taking",
+      "reverse": true,
+      "text": "A classmate gives an answer you think is obviously wrong. How likely are you to assume they simply didn't think it through, without considering their reasoning?"
+    },
+    {
+      "id": 67,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "Someone reacts defensively to feedback. How likely are you to consider what past experience might make them sensitive to criticism?"
+    },
+    {
+      "id": 68,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "A friend supports a cause you don't personally care about. How likely are you to try to understand what drew them to it?"
+    },
+    {
+      "id": 69,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "Your manager makes a decision that affects your workload. How likely are you to consider the pressures they might be under before assuming it's unfair?"
+    },
+    {
+      "id": 70,
+      "category": "perspective_taking",
+      "reverse": true,
+      "text": "Two people are in a disagreement, and you already know who you side with. How likely are you to skip trying to understand the other person's side at all?"
+    },
+    {
+      "id": 71,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "A friend's parenting style differs a lot from yours. How likely are you to consider their reasoning before forming an opinion?"
+    },
+    {
+      "id": 72,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "Someone from another department complains about a process your team owns. How likely are you to try to see it from their daily workflow before reacting?"
+    },
+    {
+      "id": 73,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "A friend seems overly cautious about a decision you'd make quickly. How likely are you to consider what past experience might explain their caution?"
+    },
+    {
+      "id": 74,
+      "category": "perspective_taking",
+      "reverse": true,
+      "text": "You hear only one side of a conflict between two friends. How likely are you to form a full opinion before hearing the other side?"
+    },
+    {
+      "id": 75,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "A younger relative makes a choice that worried you at their age too. How likely are you to remember your own younger perspective before reacting?"
+    },
+    {
+      "id": 76,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "Someone reacts calmly to news that would upset you. How likely are you to consider that their calm might come from a different life experience, not indifference?"
+    },
+    {
+      "id": 77,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "A friend from a lower-income background makes a spending choice you question. How likely are you to consider their financial context before judging it?"
+    },
+    {
+      "id": 78,
+      "category": "perspective_taking",
+      "reverse": true,
+      "text": "A coworker explains a mistake with context you didn't know. How likely are you to hold onto your original judgment anyway?"
+    },
+    {
+      "id": 79,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "Someone disagrees with a political or social opinion you hold strongly. How likely are you to genuinely try to understand their reasoning, not just rebut it?"
+    },
+    {
+      "id": 80,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "A friend seems overly sensitive about a joke that seemed harmless to you. How likely are you to consider what might make that topic sensitive for them?"
+    },
+    {
+      "id": 81,
+      "category": "perspective_taking",
+      "reverse": true,
+      "text": "You're told your assumption about someone's motives was wrong. How likely are you to stick with your original assumption anyway?"
+    },
+    {
+      "id": 82,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "Someone your age from a different country describes a very different daily life. How likely are you to genuinely try to picture what that's like?"
+    },
+    {
+      "id": 83,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "A friend chooses not to attend a big event you think they should. How likely are you to consider their reasons before feeling hurt?"
+    },
+    {
+      "id": 84,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "A colleague seems unusually rigid about a rule. How likely are you to consider that they may have been burned by breaking it before?"
+    },
+    {
+      "id": 85,
+      "category": "perspective_taking",
+      "reverse": true,
+      "text": "A friend's explanation for their behavior doesn't match how you'd behave. How likely are you to conclude their explanation must be an excuse?"
+    },
+    {
+      "id": 86,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "Someone struggles with a task you find simple. How likely are you to consider that their background or training differs from yours before judging their ability?"
+    },
+    {
+      "id": 87,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "A family member holds a grudge you think should be dropped by now. How likely are you to consider what the situation looked like from their side before pushing them to move on?"
+    },
+    {
+      "id": 88,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "Your friend is anxious about something you'd find trivial. How likely are you to take a moment to imagine why it feels big to them?"
+    },
+    {
+      "id": 89,
+      "category": "perspective_taking",
+      "reverse": true,
+      "text": "A person explains their culture's different approach to something. How likely are you to assume your own way is simply the correct one?"
+    },
+    {
+      "id": 90,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "Someone reacts with anger to a situation you'd handle calmly. How likely are you to consider what might be fueling that anger before judging the reaction?"
+    },
+    {
+      "id": 91,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "A coworker asks for an accommodation you don't personally need. How likely are you to consider their situation before assuming it's unnecessary?"
+    },
+    {
+      "id": 92,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "Your partner brings up a concern that seems minor to you. How likely are you to try to understand why it matters to them rather than minimize it?"
+    },
+    {
+      "id": 93,
+      "category": "perspective_taking",
+      "reverse": true,
+      "text": "Someone from a different generation explains their reasoning for a choice. How likely are you to write it off as \"just how things used to be\" without really considering it?"
+    },
+    {
+      "id": 94,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "A friend hesitates to trust someone new. How likely are you to consider what past experience might explain their hesitation?"
+    },
+    {
+      "id": 95,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "Someone in your community protests a decision that doesn't affect you personally. How likely are you to try to understand their stake in the issue?"
+    },
+    {
+      "id": 96,
+      "category": "perspective_taking",
+      "reverse": true,
+      "text": "A coworker from another team pushes back on a deadline. How likely are you to assume they're just being difficult rather than considering their workload?"
+    },
+    {
+      "id": 97,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "A friend reads a shared situation completely differently than you did. How likely are you to explore why, rather than assume they're simply wrong?"
+    },
+    {
+      "id": 98,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "Your child struggles with something that felt easy to you at their age. How likely are you to consider that their experience of it may genuinely differ from yours?"
+    },
+    {
+      "id": 99,
+      "category": "perspective_taking",
+      "reverse": false,
+      "text": "Someone declines an invitation you think they should accept. How likely are you to consider unseen reasons before feeling offended?"
+    },
+    {
+      "id": 100,
+      "category": "perspective_taking",
+      "reverse": true,
+      "text": "A friend from a very different life stage (parent, retiree, student) shares a concern. How likely are you to assume it doesn't really apply or matter compared to your own concerns?"
+    },
+    {
+      "id": 101,
+      "category": "emotional_resonance",
+      "reverse": false,
+      "text": "You watch a friend get emotional while sharing good news. How likely are you to feel a genuine wave of happiness for them, not just say the right words?"
+    },
+    {
+      "id": 102,
+      "category": "emotional_resonance",
+      "reverse": false,
+      "text": "A coworker describes a stressful situation. How likely are you to feel a twinge of that stress yourself as you listen?"
+    },
+    {
+      "id": 103,
+      "category": "emotional_resonance",
+      "reverse": false,
+      "text": "You see a stranger's pet reunited with them after being lost. How likely are you to feel moved, even though it's not your own pet?"
+    },
+    {
+      "id": 104,
+      "category": "emotional_resonance",
+      "reverse": false,
+      "text": "A friend shares they're scared about a health scare. How likely are you to feel a knot in your stomach along with them?"
+    },
+    {
+      "id": 105,
+      "category": "emotional_resonance",
+      "reverse": false,
+      "text": "You watch someone receive surprising bad news in a video or in person. How likely are you to feel a genuine emotional reaction, not just recognize it intellectually?"
+    },
+    {
+      "id": 106,
+      "category": "emotional_resonance",
+      "reverse": false,
+      "text": "A close friend is grieving a loss. How likely are you to feel real sadness yourself, not just sympathy from a distance?"
+    },
+    {
+      "id": 107,
+      "category": "emotional_resonance",
+      "reverse": true,
+      "text": "A friend cries while telling you something painful. How likely are you to stay emotionally unaffected and just wait for them to finish?"
+    },
+    {
+      "id": 108,
+      "category": "emotional_resonance",
+      "reverse": false,
+      "text": "Someone shares an embarrassing memory that clearly still stings for them. How likely are you to feel a flush of secondhand embarrassment with them?"
+    },
+    {
+      "id": 109,
+      "category": "emotional_resonance",
+      "reverse": false,
+      "text": "A coworker gets great news about a promotion. How likely are you to feel authentic excitement, not just polite congratulations?"
+    },
+    {
+      "id": 110,
+      "category": "emotional_resonance",
+      "reverse": false,
+      "text": "You witness a stranger being kind to someone in need. How likely are you to feel genuinely touched by witnessing it?"
+    },
+    {
+      "id": 111,
+      "category": "emotional_resonance",
+      "reverse": true,
+      "text": "A friend excitedly shares something that matters a lot to them but seems trivial to you. How likely are you to stay emotionally flat while they talk?"
+    },
+    {
+      "id": 112,
+      "category": "emotional_resonance",
+      "reverse": false,
+      "text": "Someone describes a frightening experience they went through. How likely are you to feel your own heart rate pick up as you listen?"
+    },
+    {
+      "id": 113,
+      "category": "emotional_resonance",
+      "reverse": false,
+      "text": "A family member shares a proud moment. How likely are you to feel a real surge of pride alongside them?"
+    },
+    {
+      "id": 114,
+      "category": "emotional_resonance",
+      "reverse": false,
+      "text": "You see footage of people helping each other after a difficult event. How likely are you to feel emotionally affected by it?"
+    },
+    {
+      "id": 115,
+      "category": "emotional_resonance",
+      "reverse": true,
+      "text": "A friend's story is clearly upsetting to them. How likely are you to feel mostly unaffected because it doesn't involve you directly?"
+    },
+    {
+      "id": 116,
+      "category": "emotional_resonance",
+      "reverse": false,
+      "text": "A teammate shares they're nervous before a big presentation. How likely are you to feel a bit of that nervous energy with them?"
+    },
+    {
+      "id": 117,
+      "category": "emotional_resonance",
+      "reverse": false,
+      "text": "Someone tells you about a childhood memory that clearly still brings them joy. How likely are you to feel some of that warmth yourself?"
+    },
+    {
+      "id": 118,
+      "category": "emotional_resonance",
+      "reverse": false,
+      "text": "A friend describes feeling humiliated in front of others. How likely are you to feel a real pang of discomfort on their behalf?"
+    },
+    {
+      "id": 119,
+      "category": "emotional_resonance",
+      "reverse": true,
+      "text": "A coworker shares frustration about something that doesn't affect you. How likely are you to feel indifferent rather than tuned in to their frustration?"
+    },
+    {
+      "id": 120,
+      "category": "emotional_resonance",
+      "reverse": false,
+      "text": "You see a child's genuine delight over something small. How likely are you to feel a lift in your own mood from witnessing it?"
+    },
+    {
+      "id": 121,
+      "category": "emotional_resonance",
+      "reverse": false,
+      "text": "A friend describes feeling betrayed by someone they trusted. How likely are you to feel a flash of that hurt with them as they talk?"
+    },
+    {
+      "id": 122,
+      "category": "emotional_resonance",
+      "reverse": false,
+      "text": "Someone shares a story about overcoming a big fear. How likely are you to feel a swell of admiration and relief along with them?"
+    },
+    {
+      "id": 123,
+      "category": "emotional_resonance",
+      "reverse": true,
+      "text": "A stranger online shares a painful experience. How likely are you to scroll past without feeling much of anything?"
+    },
+    {
+      "id": 124,
+      "category": "emotional_resonance",
+      "reverse": false,
+      "text": "A friend's voice breaks while describing something difficult. How likely are you to feel your own throat tighten in response?"
+    },
+    {
+      "id": 125,
+      "category": "emotional_resonance",
+      "reverse": false,
+      "text": "You watch someone finally achieve a goal they've worked toward for years. How likely are you to feel genuinely emotional for them?"
+    },
+    {
+      "id": 126,
+      "category": "emotional_resonance",
+      "reverse": false,
+      "text": "A coworker shares they're anxious about a family member's health. How likely are you to carry a bit of that worry with you afterward?"
+    },
+    {
+      "id": 127,
+      "category": "emotional_resonance",
+      "reverse": true,
+      "text": "A friend tells you about a scary near-miss they experienced. How likely are you to react with a flat \"that's rough\" and move on?"
+    },
+    {
+      "id": 128,
+      "category": "emotional_resonance",
+      "reverse": false,
+      "text": "Someone describes the moment they realized a relationship was ending. How likely are you to feel the weight of that moment with them?"
+    },
+    {
+      "id": 129,
+      "category": "emotional_resonance",
+      "reverse": false,
+      "text": "A stranger's act of kindness toward someone else moves you to tears or a lump in your throat. How likely are you to actually feel that, not just note it intellectually?"
+    },
+    {
+      "id": 130,
+      "category": "emotional_resonance",
+      "reverse": false,
+      "text": "Your friend describes feeling homesick after moving away. How likely are you to feel a genuine ache on their behalf?"
+    },
+    {
+      "id": 131,
+      "category": "emotional_resonance",
+      "reverse": true,
+      "text": "Someone shares excitement about a hobby you don't understand. How likely are you to feel bored rather than let their enthusiasm affect you at all?"
+    },
+    {
+      "id": 132,
+      "category": "emotional_resonance",
+      "reverse": false,
+      "text": "A colleague describes the relief of finally resolving a long problem. How likely are you to feel some of that relief with them?"
+    },
+    {
+      "id": 133,
+      "category": "emotional_resonance",
+      "reverse": false,
+      "text": "You hear a friend's voice shake with anger describing an injustice. How likely are you to feel a stirring of that same anger?"
+    },
+    {
+      "id": 134,
+      "category": "emotional_resonance",
+      "reverse": false,
+      "text": "A family member shares they felt invisible in a group setting. How likely are you to feel a pang of that loneliness with them?"
+    },
+    {
+      "id": 135,
+      "category": "emotional_resonance",
+      "reverse": true,
+      "text": "A friend describes a joyful milestone (engagement, new job, new baby). How likely are you to respond politely while feeling largely unmoved?"
+    },
+    {
+      "id": 136,
+      "category": "emotional_resonance",
+      "reverse": false,
+      "text": "Someone recounts a moment they felt deeply grateful. How likely are you to feel warmth rise in you as they describe it?"
+    },
+    {
+      "id": 137,
+      "category": "emotional_resonance",
+      "reverse": false,
+      "text": "A coworker admits they feel like an impostor in their role. How likely are you to feel a flicker of that same insecurity in sympathy?"
+    },
+    {
+      "id": 138,
+      "category": "emotional_resonance",
+      "reverse": false,
+      "text": "You watch strangers reunite with loved ones after a long separation. How likely are you to feel emotionally moved by the scene?"
+    },
+    {
+      "id": 139,
+      "category": "emotional_resonance",
+      "reverse": true,
+      "text": "A friend describes a stressful day in detail. How likely are you to listen with detached politeness rather than actually feeling any of their stress?"
+    },
+    {
+      "id": 140,
+      "category": "emotional_resonance",
+      "reverse": false,
+      "text": "Someone shares the fear they felt in a dangerous moment. How likely are you to feel a chill or unease as you picture it?"
+    },
+    {
+      "id": 141,
+      "category": "emotional_resonance",
+      "reverse": false,
+      "text": "A friend describes finally forgiving someone who hurt them. How likely are you to feel some of that release alongside them?"
+    },
+    {
+      "id": 142,
+      "category": "emotional_resonance",
+      "reverse": false,
+      "text": "You witness someone's disappointment after a long-awaited plan falls through. How likely are you to feel a genuine dip in your own mood?"
+    },
+    {
+      "id": 143,
+      "category": "emotional_resonance",
+      "reverse": true,
+      "text": "A relative shares they're feeling low lately. How likely are you to stay emotionally neutral and change the subject?"
+    },
+    {
+      "id": 144,
+      "category": "emotional_resonance",
+      "reverse": false,
+      "text": "Someone describes the pride of watching their child succeed. How likely are you to feel moved, even without children of your own?"
+    },
+    {
+      "id": 145,
+      "category": "emotional_resonance",
+      "reverse": false,
+      "text": "A friend recounts an old memory that still makes them tear up. How likely are you to feel a lump in your throat too?"
+    },
+    {
+      "id": 146,
+      "category": "emotional_resonance",
+      "reverse": false,
+      "text": "You see someone struggling not to cry in public. How likely are you to feel a wave of concern rise in you, not just notice it?"
+    },
+    {
+      "id": 147,
+      "category": "emotional_resonance",
+      "reverse": true,
+      "text": "Someone tells an emotional story hoping for a reaction. How likely are you to respond with a flat, unaffected \"okay\" or similar?"
+    },
+    {
+      "id": 148,
+      "category": "emotional_resonance",
+      "reverse": false,
+      "text": "A coworker describes finally feeling appreciated after a hard stretch. How likely are you to feel genuinely glad, not just say the polite thing?"
+    },
+    {
+      "id": 149,
+      "category": "emotional_resonance",
+      "reverse": false,
+      "text": "A friend shares a fear about the future that mirrors something you've felt. How likely are you to feel that fear resurface with them?"
+    },
+    {
+      "id": 150,
+      "category": "emotional_resonance",
+      "reverse": false,
+      "text": "You watch a stranger help an injured animal. How likely are you to feel a genuine emotional pull, even as an observer?"
+    },
+    {
+      "id": 151,
+      "category": "compassionate_action",
+      "reverse": false,
+      "text": "A coworker is drowning in extra work after a teammate quit. How likely are you to offer to take something off their plate, even briefly?"
+    },
+    {
+      "id": 152,
+      "category": "compassionate_action",
+      "reverse": false,
+      "text": "You notice a stranger dropped cash without realizing it. How likely are you to chase them down to return it?"
+    },
+    {
+      "id": 153,
+      "category": "compassionate_action",
+      "reverse": false,
+      "text": "A friend mentions they can't afford something small they need. How likely are you to quietly offer to help cover it?"
+    },
+    {
+      "id": 154,
+      "category": "compassionate_action",
+      "reverse": false,
+      "text": "Your neighbor is recovering from surgery and can't do errands. How likely are you to offer to pick up groceries for them?"
+    },
+    {
+      "id": 155,
+      "category": "compassionate_action",
+      "reverse": false,
+      "text": "A classmate missed several days of school due to a family issue. How likely are you to help them catch up on missed work?"
+    },
+    {
+      "id": 156,
+      "category": "compassionate_action",
+      "reverse": false,
+      "text": "You see someone struggling to change a flat tire on the roadside. How likely are you to stop and help or call for assistance?"
+    },
+    {
+      "id": 157,
+      "category": "compassionate_action",
+      "reverse": true,
+      "text": "Helping someone would cost you a bit of your free time this week. How likely are you to avoid getting involved even though you could help?"
+    },
+    {
+      "id": 158,
+      "category": "compassionate_action",
+      "reverse": false,
+      "text": "A friend is moving and needs help carrying boxes. How likely are you to show up even if it's inconvenient for your schedule?"
+    },
+    {
+      "id": 159,
+      "category": "compassionate_action",
+      "reverse": false,
+      "text": "You notice a coworker skipping lunch regularly due to workload. How likely are you to check in and offer to help lighten their load?"
+    },
+    {
+      "id": 160,
+      "category": "compassionate_action",
+      "reverse": false,
+      "text": "Someone in your community is collecting donations for a family in crisis. How likely are you to contribute something, even small?"
+    },
+    {
+      "id": 161,
+      "category": "compassionate_action",
+      "reverse": true,
+      "text": "A friend asks for a favor that would take up your evening. How likely are you to make an excuse to avoid helping?"
+    },
+    {
+      "id": 162,
+      "category": "compassionate_action",
+      "reverse": false,
+      "text": "You see someone visibly struggling with a heavy stroller on stairs. How likely are you to stop and offer a hand?"
+    },
+    {
+      "id": 163,
+      "category": "compassionate_action",
+      "reverse": false,
+      "text": "A coworker is nervous about learning a new system. How likely are you to spend extra time patiently teaching them?"
+    },
+    {
+      "id": 164,
+      "category": "compassionate_action",
+      "reverse": false,
+      "text": "Your sibling is overwhelmed with caregiving duties. How likely are you to offer to take a shift so they can rest?"
+    },
+    {
+      "id": 165,
+      "category": "compassionate_action",
+      "reverse": true,
+      "text": "Someone at work asks for help on a task that isn't technically your job. How likely are you to decline because it's \"not your responsibility\"?"
+    },
+    {
+      "id": 166,
+      "category": "compassionate_action",
+      "reverse": false,
+      "text": "A friend's car breaks down late at night. How likely are you to go pick them up, even if it's inconvenient?"
+    },
+    {
+      "id": 167,
+      "category": "compassionate_action",
+      "reverse": false,
+      "text": "You notice an elderly neighbor hasn't cleared their walkway after snow. How likely are you to offer to help without being asked?"
+    },
+    {
+      "id": 168,
+      "category": "compassionate_action",
+      "reverse": false,
+      "text": "A coworker's presentation is falling apart last minute. How likely are you to jump in and help fix it even though it's not your project?"
+    },
+    {
+      "id": 169,
+      "category": "compassionate_action",
+      "reverse": false,
+      "text": "Someone in your friend group is going through financial hardship. How likely are you to quietly find a way to include them without making them feel singled out?"
+    },
+    {
+      "id": 170,
+      "category": "compassionate_action",
+      "reverse": true,
+      "text": "You see someone who could use help nearby, but it's not convenient right now. How likely are you to walk past and let someone else handle it?"
+    },
+    {
+      "id": 171,
+      "category": "compassionate_action",
+      "reverse": false,
+      "text": "A friend is anxious about a doctor's appointment. How likely are you to offer to go with them for support?"
+    },
+    {
+      "id": 172,
+      "category": "compassionate_action",
+      "reverse": false,
+      "text": "Your community organizes a cleanup or volunteer day. How likely are you to sign up even without personal benefit?"
+    },
+    {
+      "id": 173,
+      "category": "compassionate_action",
+      "reverse": false,
+      "text": "A coworker missed a deadline because of a personal emergency. How likely are you to help cover for them without being asked?"
+    },
+    {
+      "id": 174,
+      "category": "compassionate_action",
+      "reverse": false,
+      "text": "You notice someone new to your city seems lost and unsure. How likely are you to offer directions or help?"
+    },
+    {
+      "id": 175,
+      "category": "compassionate_action",
+      "reverse": true,
+      "text": "A friend needs a ride to the airport very early in the morning. How likely are you to say no because it's inconvenient, even though you're free?"
+    },
+    {
+      "id": 176,
+      "category": "compassionate_action",
+      "reverse": false,
+      "text": "Someone in your class is being bullied online. How likely are you to reach out privately to offer support?"
+    },
+    {
+      "id": 177,
+      "category": "compassionate_action",
+      "reverse": false,
+      "text": "A neighbor's pet gets loose. How likely are you to help chase it down or contain it?"
+    },
+    {
+      "id": 178,
+      "category": "compassionate_action",
+      "reverse": false,
+      "text": "Your friend's parent is in the hospital. How likely are you to offer to help with meals, errands, or company?"
+    },
+    {
+      "id": 179,
+      "category": "compassionate_action",
+      "reverse": true,
+      "text": "A stranger asks for small help (holding a door, giving directions) while you're in a hurry. How likely are you to ignore the request and keep moving?"
+    },
+    {
+      "id": 180,
+      "category": "compassionate_action",
+      "reverse": false,
+      "text": "A coworker is overwhelmed and crying at their desk. How likely are you to step in and offer concrete help, not just sympathy?"
+    },
+    {
+      "id": 181,
+      "category": "compassionate_action",
+      "reverse": false,
+      "text": "Someone in your building is struggling to carry furniture. How likely are you to offer a hand even if you don't know them well?"
+    },
+    {
+      "id": 182,
+      "category": "compassionate_action",
+      "reverse": false,
+      "text": "Your friend group is planning something, and one person can't afford to join. How likely are you to quietly help make it possible for them?"
+    },
+    {
+      "id": 183,
+      "category": "compassionate_action",
+      "reverse": true,
+      "text": "A friend asks you to help them practice for an important interview. How likely are you to put it off because you're busy?"
+    },
+    {
+      "id": 184,
+      "category": "compassionate_action",
+      "reverse": false,
+      "text": "A coworker just found out about a layoff. How likely are you to offer to help them with their resume or job search?"
+    },
+    {
+      "id": 185,
+      "category": "compassionate_action",
+      "reverse": false,
+      "text": "You see someone collapse or look unwell in public. How likely are you to step in to help or call for assistance?"
+    },
+    {
+      "id": 186,
+      "category": "compassionate_action",
+      "reverse": true,
+      "text": "A charity organizer asks for a small amount of your time to help. How likely are you to decline without a real reason?"
+    },
+    {
+      "id": 187,
+      "category": "compassionate_action",
+      "reverse": false,
+      "text": "Your friend's child needs a ride home and their parent is stuck at work. How likely are you to offer to help out?"
+    },
+    {
+      "id": 188,
+      "category": "compassionate_action",
+      "reverse": false,
+      "text": "Someone in your office is new and doesn't know anyone. How likely are you to introduce them around and make them feel included?"
+    },
+    {
+      "id": 189,
+      "category": "compassionate_action",
+      "reverse": false,
+      "text": "A family member needs help learning a new piece of technology. How likely are you to patiently walk them through it?"
+    },
+    {
+      "id": 190,
+      "category": "compassionate_action",
+      "reverse": true,
+      "text": "Volunteering for a cause would take a weekend you'd rather spend relaxing. How likely are you to skip it even when you have the time?"
+    },
+    {
+      "id": 191,
+      "category": "compassionate_action",
+      "reverse": false,
+      "text": "You notice someone's grocery bag has ripped in the parking lot. How likely are you to stop and help gather their things?"
+    },
+    {
+      "id": 192,
+      "category": "compassionate_action",
+      "reverse": false,
+      "text": "A coworker is overwhelmed training for a role you've already mastered. How likely are you to offer tips and support unprompted?"
+    },
+    {
+      "id": 193,
+      "category": "compassionate_action",
+      "reverse": false,
+      "text": "Your friend is nervous about giving a eulogy or speech. How likely are you to help them prepare and calm their nerves?"
+    },
+    {
+      "id": 194,
+      "category": "compassionate_action",
+      "reverse": false,
+      "text": "Someone in your neighborhood loses power and yours is still on. How likely are you to offer them a place to charge devices or stay warm?"
+    },
+    {
+      "id": 195,
+      "category": "compassionate_action",
+      "reverse": true,
+      "text": "A neighbor asks for help moving something heavy. How likely are you to pretend you're busy to avoid it?"
+    },
+    {
+      "id": 196,
+      "category": "compassionate_action",
+      "reverse": false,
+      "text": "A friend is scared to go to a medical appointment alone. How likely are you to offer to accompany them?"
+    },
+    {
+      "id": 197,
+      "category": "compassionate_action",
+      "reverse": false,
+      "text": "You see a coworker struggling to carry too many things at once. How likely are you to grab the door or lend a hand?"
+    },
+    {
+      "id": 198,
+      "category": "compassionate_action",
+      "reverse": false,
+      "text": "Someone in your community needs a blood donation match. How likely are you to look into whether you can help?"
+    },
+    {
+      "id": 199,
+      "category": "compassionate_action",
+      "reverse": false,
+      "text": "A friend's pet needs to go to the vet urgently and they lack transportation. How likely are you to offer your car or a ride?"
+    },
+    {
+      "id": 200,
+      "category": "compassionate_action",
+      "reverse": true,
+      "text": "Helping a struggling classmate with a group project would mean redoing some of their work. How likely are you to let their portion stay weak rather than pitch in?"
+    },
+    {
+      "id": 201,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "A friend is venting about a rough day. How likely are you to put your phone away and give them full attention?"
+    },
+    {
+      "id": 202,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "Someone is explaining a problem to you. How likely are you to let them finish before jumping in with your own opinion?"
+    },
+    {
+      "id": 203,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "A coworker shares a concern in a meeting. How likely are you to summarize back what you heard to make sure you understood?"
+    },
+    {
+      "id": 204,
+      "category": "active_listening",
+      "reverse": true,
+      "text": "You're talking with a friend, and your mind wanders to your own to-do list. How likely are you to only half-listen while nodding along?"
+    },
+    {
+      "id": 205,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "Someone tells you a long story that isn't especially interesting to you. How likely are you to stay genuinely engaged rather than check out?"
+    },
+    {
+      "id": 206,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "A family member repeats a story you've heard before. How likely are you to listen patiently rather than cut them off?"
+    },
+    {
+      "id": 207,
+      "category": "active_listening",
+      "reverse": true,
+      "text": "A friend is mid-sentence about something upsetting. How likely are you to interrupt with advice before they've finished explaining?"
+    },
+    {
+      "id": 208,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "Someone pauses while speaking, clearly gathering their thoughts. How likely are you to wait patiently rather than fill the silence?"
+    },
+    {
+      "id": 209,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "A coworker explains a mistake they made. How likely are you to listen to the full context before reacting?"
+    },
+    {
+      "id": 210,
+      "category": "active_listening",
+      "reverse": true,
+      "text": "You're on a call with a friend while also doing something else. How likely are you to miss parts of what they said because you weren't fully present?"
+    },
+    {
+      "id": 211,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "A friend shares something vulnerable. How likely are you to ask a follow-up question that shows you were really listening?"
+    },
+    {
+      "id": 212,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "Someone gives you feedback that stings a little. How likely are you to listen fully instead of getting defensive right away?"
+    },
+    {
+      "id": 213,
+      "category": "active_listening",
+      "reverse": true,
+      "text": "A person is talking about a topic you already know a lot about. How likely are you to start planning your response instead of listening to their point?"
+    },
+    {
+      "id": 214,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "A friend explains a complicated situation involving several people. How likely are you to ask clarifying questions to make sure you follow along?"
+    },
+    {
+      "id": 215,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "Someone tells you their opinion on something you disagree with. How likely are you to hear them out fully before responding?"
+    },
+    {
+      "id": 216,
+      "category": "active_listening",
+      "reverse": true,
+      "text": "Your partner is telling you about their day. How likely are you to keep scrolling your phone while they talk?"
+    },
+    {
+      "id": 217,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "A coworker explains why a project is behind schedule. How likely are you to listen without interrupting to defend your own part?"
+    },
+    {
+      "id": 218,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "Someone shares a personal struggle in a group setting. How likely are you to give them your full attention rather than glance around the room?"
+    },
+    {
+      "id": 219,
+      "category": "active_listening",
+      "reverse": true,
+      "text": "A friend calls to talk something through. How likely are you to multitask through most of the conversation?"
+    },
+    {
+      "id": 220,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "Someone explains a mistake they made that affected you. How likely are you to hear their full explanation before deciding how you feel about it?"
+    },
+    {
+      "id": 221,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "A child tries to explain something excitedly but isn't very clear. How likely are you to patiently follow along instead of rushing them?"
+    },
+    {
+      "id": 222,
+      "category": "active_listening",
+      "reverse": true,
+      "text": "A friend is telling a long story. How likely are you to check the time or look distracted while they talk?"
+    },
+    {
+      "id": 223,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "Someone brings up a sensitive topic hesitantly. How likely are you to slow down and give them space to share at their pace?"
+    },
+    {
+      "id": 224,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "A coworker explains their reasoning behind a decision you questioned. How likely are you to really listen instead of just waiting for your turn to talk?"
+    },
+    {
+      "id": 225,
+      "category": "active_listening",
+      "reverse": true,
+      "text": "You're in a group conversation and someone quieter starts speaking. How likely are you to talk over them without noticing?"
+    },
+    {
+      "id": 226,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "A friend explains a technical hobby or interest you don't share. How likely are you to actually listen rather than tune out?"
+    },
+    {
+      "id": 227,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "Someone repeats themselves because they're not sure you heard. How likely are you to notice and reassure them you did?"
+    },
+    {
+      "id": 228,
+      "category": "active_listening",
+      "reverse": true,
+      "text": "A friend shares news that isn't very exciting to you. How likely are you to respond with a quick \"cool\" and change the subject?"
+    },
+    {
+      "id": 229,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "A coworker explains frustration about a process. How likely are you to listen for the underlying issue rather than just the complaint?"
+    },
+    {
+      "id": 230,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "Someone asks \"are you even listening?\" during a conversation. How likely are you to have actually been paying attention when they ask?"
+    },
+    {
+      "id": 231,
+      "category": "active_listening",
+      "reverse": true,
+      "text": "You're listening to someone vent, and you already know what you'd tell them to do. How likely are you to jump straight to solutions before they've finished?"
+    },
+    {
+      "id": 232,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "A friend explains something that requires you to sit with uncomfortable details. How likely are you to stay present rather than change the subject?"
+    },
+    {
+      "id": 233,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "Someone speaks slowly or has difficulty finding words. How likely are you to wait patiently rather than finish their sentences for them?"
+    },
+    {
+      "id": 234,
+      "category": "active_listening",
+      "reverse": true,
+      "text": "A coworker is explaining a process step by step. How likely are you to tune out partway through because it feels slow?"
+    },
+    {
+      "id": 235,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "A friend needs to vent without wanting advice. How likely are you to just listen instead of offering solutions they didn't ask for?"
+    },
+    {
+      "id": 236,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "Someone brings up something they're clearly nervous to say. How likely are you to stay calm and attentive rather than react quickly?"
+    },
+    {
+      "id": 237,
+      "category": "active_listening",
+      "reverse": true,
+      "text": "You're texting with a friend about something serious. How likely are you to send short, distracted replies instead of engaging fully?"
+    },
+    {
+      "id": 238,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "A coworker explains a disagreement with another teammate. How likely are you to hear their side fully before forming a judgment?"
+    },
+    {
+      "id": 239,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "Someone shares a long update about their life. How likely are you to ask questions that show you remembered earlier details?"
+    },
+    {
+      "id": 240,
+      "category": "active_listening",
+      "reverse": true,
+      "text": "A friend is speaking passionately about something important to them. How likely are you to glance at your phone mid-conversation?"
+    },
+    {
+      "id": 241,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "Someone explains why a plan you suggested won't work for them. How likely are you to really consider their explanation instead of repeating your point?"
+    },
+    {
+      "id": 242,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "A friend calls upset late at night. How likely are you to stay fully present rather than rush them off the phone?"
+    },
+    {
+      "id": 243,
+      "category": "active_listening",
+      "reverse": true,
+      "text": "A coworker is explaining background on a project. How likely are you to cut in with \"got it, got it\" before they've finished?"
+    },
+    {
+      "id": 244,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "Someone shares feedback about how your actions affected them. How likely are you to listen without immediately explaining yourself?"
+    },
+    {
+      "id": 245,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "A friend is trying to describe a feeling they don't have exact words for. How likely are you to patiently help them find the words rather than assume you know what they mean?"
+    },
+    {
+      "id": 246,
+      "category": "active_listening",
+      "reverse": true,
+      "text": "You're in a conversation where the other person is talking a lot. How likely are you to start thinking about what to say next instead of what they're saying now?"
+    },
+    {
+      "id": 247,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "Someone tells a story with a lot of detail that isn't strictly necessary. How likely are you to stay patient rather than rush them to the point?"
+    },
+    {
+      "id": 248,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "A coworker admits a mistake quietly, hoping you'll understand. How likely are you to listen with patience rather than pile on?"
+    },
+    {
+      "id": 249,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "Someone repeats a concern they've mentioned before because it's still bothering them. How likely are you to listen again with genuine attention rather than dismiss it as \"already covered\"?"
+    },
+    {
+      "id": 250,
+      "category": "active_listening",
+      "reverse": true,
+      "text": "A friend needs to talk through a decision. How likely are you to give a quick answer just to end the conversation rather than really engage?"
+    },
+    {
+      "id": 251,
+      "category": "empathic_communication",
+      "reverse": false,
+      "text": "A friend shares they're overwhelmed. How likely are you to acknowledge their feelings before offering any advice?"
+    },
+    {
+      "id": 252,
+      "category": "empathic_communication",
+      "reverse": false,
+      "text": "Someone tells you bad news. How likely are you to respond in a way that shows you understand how hard it must be, rather than immediately trying to fix it?"
+    },
+    {
+      "id": 253,
+      "category": "empathic_communication",
+      "reverse": false,
+      "text": "A coworker admits they're struggling with a task. How likely are you to respond with encouragement rather than criticism?"
+    },
+    {
+      "id": 254,
+      "category": "empathic_communication",
+      "reverse": true,
+      "text": "A friend shares they're anxious about something. How likely are you to respond with \"you're overreacting\" or something dismissive?"
+    },
+    {
+      "id": 255,
+      "category": "empathic_communication",
+      "reverse": false,
+      "text": "Someone tells you they feel unappreciated at work. How likely are you to validate that feeling before discussing solutions?"
+    },
+    {
+      "id": 256,
+      "category": "empathic_communication",
+      "reverse": false,
+      "text": "A friend cries while talking to you. How likely are you to respond gently rather than rush them to calm down?"
+    },
+    {
+      "id": 257,
+      "category": "empathic_communication",
+      "reverse": true,
+      "text": "Someone shares a fear that seems irrational to you. How likely are you to tell them it's silly rather than acknowledge it first?"
+    },
+    {
+      "id": 258,
+      "category": "empathic_communication",
+      "reverse": false,
+      "text": "A coworker apologizes for a mistake. How likely are you to respond in a way that puts them at ease rather than pile on?"
+    },
+    {
+      "id": 259,
+      "category": "empathic_communication",
+      "reverse": false,
+      "text": "A friend shares they feel guilty about a decision. How likely are you to acknowledge the guilt as real before offering perspective?"
+    },
+    {
+      "id": 260,
+      "category": "empathic_communication",
+      "reverse": false,
+      "text": "Someone tells you they're proud of something small. How likely are you to respond with genuine enthusiasm rather than a flat \"nice\"?"
+    },
+    {
+      "id": 261,
+      "category": "empathic_communication",
+      "reverse": true,
+      "text": "A friend vents about a problem. How likely are you to immediately compare it to a worse experience of your own?"
+    },
+    {
+      "id": 262,
+      "category": "empathic_communication",
+      "reverse": false,
+      "text": "A coworker admits they feel out of their depth in a new role. How likely are you to respond supportively rather than make them feel judged?"
+    },
+    {
+      "id": 263,
+      "category": "empathic_communication",
+      "reverse": false,
+      "text": "Someone shares they're nervous about a decision. How likely are you to phrase your feedback gently rather than bluntly?"
+    },
+    {
+      "id": 264,
+      "category": "empathic_communication",
+      "reverse": true,
+      "text": "A friend shares sad news. How likely are you to quickly change the subject to something more upbeat?"
+    },
+    {
+      "id": 265,
+      "category": "empathic_communication",
+      "reverse": false,
+      "text": "Someone tells you they feel left out of a group. How likely are you to acknowledge how that feels rather than minimize it?"
+    },
+    {
+      "id": 266,
+      "category": "empathic_communication",
+      "reverse": false,
+      "text": "A coworker shares frustration about feedback they received. How likely are you to respond in a way that shows you understand their frustration?"
+    },
+    {
+      "id": 267,
+      "category": "empathic_communication",
+      "reverse": true,
+      "text": "A friend shares they're struggling with body image or self-esteem. How likely are you to respond with a quick \"you look fine\" instead of engaging with what they're really saying?"
+    },
+    {
+      "id": 268,
+      "category": "empathic_communication",
+      "reverse": false,
+      "text": "Someone tells you they're scared about a health issue. How likely are you to respond with warmth rather than jump to statistics or reassurance too quickly?"
+    },
+    {
+      "id": 269,
+      "category": "empathic_communication",
+      "reverse": false,
+      "text": "A coworker admits a personal issue is affecting their work. How likely are you to respond with understanding rather than only focus on deadlines?"
+    },
+    {
+      "id": 270,
+      "category": "empathic_communication",
+      "reverse": true,
+      "text": "A friend shares they feel hurt by something you did. How likely are you to get defensive instead of acknowledging their feelings first?"
+    },
+    {
+      "id": 271,
+      "category": "empathic_communication",
+      "reverse": false,
+      "text": "Someone shares excitement about something you find unremarkable. How likely are you to match some of their energy in your response anyway?"
+    },
+    {
+      "id": 272,
+      "category": "empathic_communication",
+      "reverse": false,
+      "text": "A friend admits a mistake that embarrasses them. How likely are you to respond in a way that doesn't add to their embarrassment?"
+    },
+    {
+      "id": 273,
+      "category": "empathic_communication",
+      "reverse": true,
+      "text": "Someone shares a worry with you. How likely are you to respond with \"just don't think about it\" rather than engage with the concern?"
+    },
+    {
+      "id": 274,
+      "category": "empathic_communication",
+      "reverse": false,
+      "text": "A coworker shares that criticism from a manager stung. How likely are you to validate that reaction before discussing next steps?"
+    },
+    {
+      "id": 275,
+      "category": "empathic_communication",
+      "reverse": false,
+      "text": "Someone tells you they feel stuck in a life decision. How likely are you to acknowledge how hard that feels before offering suggestions?"
+    },
+    {
+      "id": 276,
+      "category": "empathic_communication",
+      "reverse": true,
+      "text": "A friend describes feeling anxious in social situations. How likely are you to respond with \"just relax\" rather than something more understanding?"
+    },
+    {
+      "id": 277,
+      "category": "empathic_communication",
+      "reverse": false,
+      "text": "A coworker shares they feel micromanaged. How likely are you to acknowledge the frustration rather than defend the manager immediately?"
+    },
+    {
+      "id": 278,
+      "category": "empathic_communication",
+      "reverse": false,
+      "text": "Someone shares a fear of failure before a big attempt. How likely are you to respond in a way that normalizes the fear rather than brush it aside?"
+    },
+    {
+      "id": 279,
+      "category": "empathic_communication",
+      "reverse": true,
+      "text": "A friend tells you they're sad about something. How likely are you to respond with a joke to lighten the mood before they've had a chance to feel heard?"
+    },
+    {
+      "id": 280,
+      "category": "empathic_communication",
+      "reverse": false,
+      "text": "A coworker shares they feel behind compared to peers. How likely are you to respond with reassurance that feels genuine, not generic?"
+    },
+    {
+      "id": 281,
+      "category": "empathic_communication",
+      "reverse": false,
+      "text": "Someone shares they're frustrated with a friend. How likely are you to validate their frustration before offering the other side of the story?"
+    },
+    {
+      "id": 282,
+      "category": "empathic_communication",
+      "reverse": true,
+      "text": "A friend shares a personal struggle. How likely are you to respond mostly with your own similar story rather than focus on theirs?"
+    },
+    {
+      "id": 283,
+      "category": "empathic_communication",
+      "reverse": false,
+      "text": "A coworker seems embarrassed after making an error in front of others. How likely are you to respond privately with reassurance?"
+    },
+    {
+      "id": 284,
+      "category": "empathic_communication",
+      "reverse": false,
+      "text": "Someone shares they feel torn about a decision. How likely are you to acknowledge both sides of their conflict rather than push them toward one answer?"
+    },
+    {
+      "id": 285,
+      "category": "empathic_communication",
+      "reverse": true,
+      "text": "A friend shares a fear about aging or health. How likely are you to dismiss it as something to \"not worry about\" instead of engaging with it?"
+    },
+    {
+      "id": 286,
+      "category": "empathic_communication",
+      "reverse": false,
+      "text": "A coworker admits they're nervous about public speaking. How likely are you to respond with genuine reassurance rather than downplay the nerves?"
+    },
+    {
+      "id": 287,
+      "category": "empathic_communication",
+      "reverse": false,
+      "text": "Someone shares they feel guilty for setting a boundary. How likely are you to validate that the boundary was still okay to set?"
+    },
+    {
+      "id": 288,
+      "category": "empathic_communication",
+      "reverse": true,
+      "text": "A friend shares they feel disrespected by a family member. How likely are you to minimize it by saying \"that's just how they are\"?"
+    },
+    {
+      "id": 289,
+      "category": "empathic_communication",
+      "reverse": false,
+      "text": "A coworker shares stress about balancing work and family. How likely are you to acknowledge the difficulty rather than offer quick fixes?"
+    },
+    {
+      "id": 290,
+      "category": "empathic_communication",
+      "reverse": false,
+      "text": "Someone tells you they feel embarrassed about crying in front of others. How likely are you to reassure them that it's okay?"
+    },
+    {
+      "id": 291,
+      "category": "empathic_communication",
+      "reverse": true,
+      "text": "A friend describes feeling anxious about an upcoming event. How likely are you to tell them they're \"making a big deal out of nothing\"?"
+    },
+    {
+      "id": 292,
+      "category": "empathic_communication",
+      "reverse": false,
+      "text": "A coworker shares they feel undervalued despite hard work. How likely are you to acknowledge their effort genuinely?"
+    },
+    {
+      "id": 293,
+      "category": "empathic_communication",
+      "reverse": false,
+      "text": "Someone shares grief about a loss that happened a while ago. How likely are you to respond as though their grief is still valid, not \"old news\"?"
+    },
+    {
+      "id": 294,
+      "category": "empathic_communication",
+      "reverse": true,
+      "text": "A friend shares a fear of being judged. How likely are you to respond in a way that confirms rather than eases that fear?"
+    },
+    {
+      "id": 295,
+      "category": "empathic_communication",
+      "reverse": false,
+      "text": "A coworker admits uncertainty about a career move. How likely are you to respond supportively rather than push your own opinion strongly?"
+    },
+    {
+      "id": 296,
+      "category": "empathic_communication",
+      "reverse": false,
+      "text": "Someone shares they feel like they let someone down. How likely are you to acknowledge the feeling before reassuring them?"
+    },
+    {
+      "id": 297,
+      "category": "empathic_communication",
+      "reverse": true,
+      "text": "A friend shares excitement about a decision you disagree with. How likely are you to lead with your concerns before acknowledging their excitement at all?"
+    },
+    {
+      "id": 298,
+      "category": "empathic_communication",
+      "reverse": false,
+      "text": "A coworker shares they feel anxious about performance reviews. How likely are you to respond with empathy rather than only logistics?"
+    },
+    {
+      "id": 299,
+      "category": "empathic_communication",
+      "reverse": false,
+      "text": "Someone tells you they feel isolated while working remotely. How likely are you to acknowledge that feeling rather than brush it off as normal?"
+    },
+    {
+      "id": 300,
+      "category": "empathic_communication",
+      "reverse": true,
+      "text": "A friend shares a personal fear during a casual conversation. How likely are you to respond lightly as if it wasn't a big deal to bring up?"
+    },
+    {
+      "id": 301,
+      "category": "cross_difference_empathy",
+      "reverse": false,
+      "text": "You meet someone whose religious beliefs are very different from yours. How likely are you to stay open and curious about their perspective rather than judge it?"
+    },
+    {
+      "id": 302,
+      "category": "cross_difference_empathy",
+      "reverse": false,
+      "text": "A coworker from another country makes a decision shaped by cultural norms unfamiliar to you. How likely are you to try to understand rather than assume it's simply wrong?"
+    },
+    {
+      "id": 303,
+      "category": "cross_difference_empathy",
+      "reverse": false,
+      "text": "Someone with a disability navigates a situation differently than you would. How likely are you to consider their experience rather than assume they're overcomplicating it?"
+    },
+    {
+      "id": 304,
+      "category": "cross_difference_empathy",
+      "reverse": true,
+      "text": "You meet someone whose political views are very different from yours. How likely are you to assume they must be uninformed rather than consider their reasoning?"
+    },
+    {
+      "id": 305,
+      "category": "cross_difference_empathy",
+      "reverse": false,
+      "text": "A classmate speaks with an accent different from your own. How likely are you to stay patient and engaged rather than get frustrated trying to understand them?"
+    },
+    {
+      "id": 306,
+      "category": "cross_difference_empathy",
+      "reverse": false,
+      "text": "Someone from a much wealthier or poorer background than you shares their daily struggles. How likely are you to try to genuinely understand their experience rather than compare it to your own?"
+    },
+    {
+      "id": 307,
+      "category": "cross_difference_empathy",
+      "reverse": true,
+      "text": "You encounter someone from a different generation with views shaped by a very different time. How likely are you to dismiss their perspective as simply outdated?"
+    },
+    {
+      "id": 308,
+      "category": "cross_difference_empathy",
+      "reverse": false,
+      "text": "A coworker observes a religious practice that requires schedule accommodations. How likely are you to support it without resentment?"
+    },
+    {
+      "id": 309,
+      "category": "cross_difference_empathy",
+      "reverse": false,
+      "text": "Someone with a different gender identity than you shares an experience you haven't lived. How likely are you to listen and try to understand rather than debate it?"
+    },
+    {
+      "id": 310,
+      "category": "cross_difference_empathy",
+      "reverse": true,
+      "text": "A person from a different ethnic background reacts to a situation differently than you expected. How likely are you to assume it's a personal flaw rather than a cultural difference?"
+    },
+    {
+      "id": 311,
+      "category": "cross_difference_empathy",
+      "reverse": false,
+      "text": "A friend from a rural background feels out of place in an urban social setting. How likely are you to help them feel comfortable rather than notice the awkwardness silently?"
+    },
+    {
+      "id": 312,
+      "category": "cross_difference_empathy",
+      "reverse": false,
+      "text": "Someone with a chronic illness explains why they need to pace themselves differently. How likely are you to accept that without pushing them to \"just try harder\"?"
+    },
+    {
+      "id": 313,
+      "category": "cross_difference_empathy",
+      "reverse": true,
+      "text": "A coworker practices a faith you don't understand well. How likely are you to make assumptions about their beliefs rather than ask respectfully?"
+    },
+    {
+      "id": 314,
+      "category": "cross_difference_empathy",
+      "reverse": false,
+      "text": "A friend who immigrated recently struggles with unfamiliar social norms. How likely are you to patiently help them adjust rather than get impatient?"
+    },
+    {
+      "id": 315,
+      "category": "cross_difference_empathy",
+      "reverse": false,
+      "text": "Someone with a different neurotype (like autism or ADHD) processes a conversation differently than you. How likely are you to adapt your communication rather than expect them to just \"act normal\"?"
+    },
+    {
+      "id": 316,
+      "category": "cross_difference_empathy",
+      "reverse": true,
+      "text": "You meet someone whose life experience is very different from your own (poverty, war, displacement). How likely are you to assume you'd have handled it the same way they did?"
+    },
+    {
+      "id": 317,
+      "category": "cross_difference_empathy",
+      "reverse": false,
+      "text": "A coworker from a different socioeconomic background makes different choices about money. How likely are you to withhold judgment and consider their context?"
+    },
+    {
+      "id": 318,
+      "category": "cross_difference_empathy",
+      "reverse": false,
+      "text": "Someone with a physical disability asks for an accommodation. How likely are you to support it without seeing it as a burden?"
+    },
+    {
+      "id": 319,
+      "category": "cross_difference_empathy",
+      "reverse": true,
+      "text": "A person shares an experience of discrimination you've never faced. How likely are you to downplay it because you haven't experienced it yourself?"
+    },
+    {
+      "id": 320,
+      "category": "cross_difference_empathy",
+      "reverse": false,
+      "text": "A classmate from a different country doesn't understand a local custom. How likely are you to explain it kindly rather than make them feel foolish?"
+    },
+    {
+      "id": 321,
+      "category": "cross_difference_empathy",
+      "reverse": false,
+      "text": "Someone significantly older or younger than you shares a very different worldview. How likely are you to engage with curiosity rather than dismiss the generational gap?"
+    },
+    {
+      "id": 322,
+      "category": "cross_difference_empathy",
+      "reverse": true,
+      "text": "A coworker with a disability requests a minor workplace change. How likely are you to see it as an inconvenience rather than a reasonable need?"
+    },
+    {
+      "id": 323,
+      "category": "cross_difference_empathy",
+      "reverse": false,
+      "text": "A friend from a different faith invites you to understand their traditions. How likely are you to engage respectfully rather than stay indifferent?"
+    },
+    {
+      "id": 324,
+      "category": "cross_difference_empathy",
+      "reverse": false,
+      "text": "Someone from a marginalized group shares frustration about a systemic issue. How likely are you to listen without immediately defending the system?"
+    },
+    {
+      "id": 325,
+      "category": "cross_difference_empathy",
+      "reverse": true,
+      "text": "You hear about a struggle faced by a group very different from your own. How likely are you to assume it's exaggerated because it doesn't match your experience?"
+    },
+    {
+      "id": 326,
+      "category": "cross_difference_empathy",
+      "reverse": false,
+      "text": "A coworker who is a single parent has different availability than you. How likely are you to accommodate that without resentment?"
+    },
+    {
+      "id": 327,
+      "category": "cross_difference_empathy",
+      "reverse": false,
+      "text": "Someone speaks a different first language and struggles to express a nuanced idea in yours. How likely are you to be patient and help them find the words?"
+    },
+    {
+      "id": 328,
+      "category": "cross_difference_empathy",
+      "reverse": true,
+      "text": "A friend from a very different economic class describes a financial decision. How likely are you to judge it by your own standards without considering theirs?"
+    },
+    {
+      "id": 329,
+      "category": "cross_difference_empathy",
+      "reverse": false,
+      "text": "Someone with a visible difference (scar, disability, unusual appearance) is stared at in public. How likely are you to treat them with the same normalcy as anyone else?"
+    },
+    {
+      "id": 330,
+      "category": "cross_difference_empathy",
+      "reverse": false,
+      "text": "A coworker observes different holidays than the ones typically recognized at your workplace. How likely are you to support equal recognition for theirs?"
+    },
+    {
+      "id": 331,
+      "category": "cross_difference_empathy",
+      "reverse": true,
+      "text": "You meet someone whose upbringing was very different from yours (different country, class, or religion). How likely are you to assume your own upbringing gives you the \"normal\" or default perspective?"
+    },
+    {
+      "id": 332,
+      "category": "cross_difference_empathy",
+      "reverse": false,
+      "text": "Someone shares a struggle related to their sexual orientation that you haven't experienced. How likely are you to listen supportively rather than change the subject?"
+    },
+    {
+      "id": 333,
+      "category": "cross_difference_empathy",
+      "reverse": false,
+      "text": "A classmate with a learning difference takes longer to grasp new material. How likely are you to remain patient rather than get visibly frustrated?"
+    },
+    {
+      "id": 334,
+      "category": "cross_difference_empathy",
+      "reverse": true,
+      "text": "A coworker from a different country pronounces something differently than you're used to. How likely are you to correct them in a way that embarrasses them?"
+    },
+    {
+      "id": 335,
+      "category": "cross_difference_empathy",
+      "reverse": false,
+      "text": "Someone from an older generation struggles with new technology. How likely are you to help patiently rather than act impatient?"
+    },
+    {
+      "id": 336,
+      "category": "cross_difference_empathy",
+      "reverse": false,
+      "text": "A friend from an indigenous or minority community shares an experience shaped by that identity. How likely are you to take it seriously rather than minimize it?"
+    },
+    {
+      "id": 337,
+      "category": "cross_difference_empathy",
+      "reverse": true,
+      "text": "You're told your assumption about a group of people was based on a stereotype. How likely are you to defend the assumption rather than reconsider it?"
+    },
+    {
+      "id": 338,
+      "category": "cross_difference_empathy",
+      "reverse": false,
+      "text": "Someone with limited financial means declines an outing due to cost. How likely are you to respond with understanding rather than pressure them to join anyway?"
+    },
+    {
+      "id": 339,
+      "category": "cross_difference_empathy",
+      "reverse": false,
+      "text": "A coworker who recently became a caregiver for a family member has less flexibility now. How likely are you to adjust your expectations of them with understanding?"
+    },
+    {
+      "id": 340,
+      "category": "cross_difference_empathy",
+      "reverse": true,
+      "text": "A person shares that a joke about their group offended them. How likely are you to argue it wasn't a big deal rather than take their reaction seriously?"
+    },
+    {
+      "id": 341,
+      "category": "cross_difference_empathy",
+      "reverse": false,
+      "text": "Someone from a different professional background (blue-collar vs. white-collar, etc.) shares their daily challenges. How likely are you to engage with genuine interest rather than condescension?"
+    },
+    {
+      "id": 342,
+      "category": "cross_difference_empathy",
+      "reverse": false,
+      "text": "A classmate observes dietary restrictions tied to their culture or religion. How likely are you to accommodate this without complaint?"
+    },
+    {
+      "id": 343,
+      "category": "cross_difference_empathy",
+      "reverse": true,
+      "text": "A coworker mentions facing a barrier you've never personally experienced. How likely are you to assume it must not be as hard as they say?"
+    },
+    {
+      "id": 344,
+      "category": "cross_difference_empathy",
+      "reverse": false,
+      "text": "Someone with a stutter or speech difference takes longer to get their point across. How likely are you to wait patiently rather than finish their sentences?"
+    },
+    {
+      "id": 345,
+      "category": "cross_difference_empathy",
+      "reverse": false,
+      "text": "A friend from a very different family structure (blended family, single parent, etc.) shares their experience. How likely are you to understand it on its own terms rather than compare it to a \"typical\" family?"
+    },
+    {
+      "id": 346,
+      "category": "cross_difference_empathy",
+      "reverse": true,
+      "text": "You meet someone whose accent makes them harder to understand. How likely are you to tune out rather than make the effort to follow along?"
+    },
+    {
+      "id": 347,
+      "category": "cross_difference_empathy",
+      "reverse": false,
+      "text": "Someone with a mental health condition explains how it affects their daily life. How likely are you to take their explanation seriously rather than assume they're exaggerating?"
+    },
+    {
+      "id": 348,
+      "category": "cross_difference_empathy",
+      "reverse": false,
+      "text": "A coworker from a different age group uses communication styles unfamiliar to you (texting style, formality, etc.). How likely are you to adapt rather than judge it as wrong?"
+    },
+    {
+      "id": 349,
+      "category": "cross_difference_empathy",
+      "reverse": false,
+      "text": "Someone shares that a system or space wasn't built with people like them in mind. How likely are you to take that seriously rather than dismiss it as oversensitive?"
+    },
+    {
+      "id": 350,
+      "category": "cross_difference_empathy",
+      "reverse": true,
+      "text": "A friend from a background very different from yours makes a choice you don't understand. How likely are you to conclude they just don't know better?"
+    },
+    {
+      "id": 351,
+      "category": "conflict_empathy",
+      "reverse": false,
+      "text": "You're in an argument with a friend. How likely are you to try to understand their side even while defending your own?"
+    },
+    {
+      "id": 352,
+      "category": "conflict_empathy",
+      "reverse": false,
+      "text": "Someone criticizes you unfairly. How likely are you to consider what might be driving their frustration rather than only react to the unfairness?"
+    },
+    {
+      "id": 353,
+      "category": "conflict_empathy",
+      "reverse": false,
+      "text": "A family member says something hurtful during a stressful moment. How likely are you to consider the stress behind it rather than only the words?"
+    },
+    {
+      "id": 354,
+      "category": "conflict_empathy",
+      "reverse": true,
+      "text": "You're arguing with a partner. How likely are you to focus only on winning the point rather than understanding their feelings?"
+    },
+    {
+      "id": 355,
+      "category": "conflict_empathy",
+      "reverse": false,
+      "text": "Someone who wronged you in the past apologizes. How likely are you to consider their perspective and growth rather than hold onto resentment?"
+    },
+    {
+      "id": 356,
+      "category": "conflict_empathy",
+      "reverse": false,
+      "text": "A coworker takes credit for something in a way that upsets you. How likely are you to address it while still trying to understand their pressures?"
+    },
+    {
+      "id": 357,
+      "category": "conflict_empathy",
+      "reverse": true,
+      "text": "During a disagreement, the other person seems hurt. How likely are you to keep pushing your point regardless of their reaction?"
+    },
+    {
+      "id": 358,
+      "category": "conflict_empathy",
+      "reverse": false,
+      "text": "Someone you're angry with explains their side of the story. How likely are you to genuinely listen rather than mentally prepare your rebuttal?"
+    },
+    {
+      "id": 359,
+      "category": "conflict_empathy",
+      "reverse": false,
+      "text": "A friend disagrees with you loudly in front of others. How likely are you to consider their embarrassment or frustration rather than only your own?"
+    },
+    {
+      "id": 360,
+      "category": "conflict_empathy",
+      "reverse": true,
+      "text": "You're in a heated debate. How likely are you to raise your voice to match theirs rather than try to de-escalate?"
+    },
+    {
+      "id": 361,
+      "category": "conflict_empathy",
+      "reverse": false,
+      "text": "Someone you dislike goes through a hard time. How likely are you to feel some genuine concern despite the tension between you?"
+    },
+    {
+      "id": 362,
+      "category": "conflict_empathy",
+      "reverse": false,
+      "text": "A coworker challenges your idea in a meeting. How likely are you to consider that their pushback might come from a good place, not just ego?"
+    },
+    {
+      "id": 363,
+      "category": "conflict_empathy",
+      "reverse": true,
+      "text": "A friend brings up an old conflict again. How likely are you to get defensive rather than consider why it still matters to them?"
+    },
+    {
+      "id": 364,
+      "category": "conflict_empathy",
+      "reverse": false,
+      "text": "Someone who hurt your feelings explains they didn't realize the impact. How likely are you to accept that without assuming bad intent?"
+    },
+    {
+      "id": 365,
+      "category": "conflict_empathy",
+      "reverse": false,
+      "text": "A family member holds a grudge against you. How likely are you to consider their pain rather than only feel wronged yourself?"
+    },
+    {
+      "id": 366,
+      "category": "conflict_empathy",
+      "reverse": true,
+      "text": "You're in a conflict where you know you're right. How likely are you to dismiss the other person's feelings because you feel justified?"
+    },
+    {
+      "id": 367,
+      "category": "conflict_empathy",
+      "reverse": false,
+      "text": "Someone apologizes in a way that feels incomplete to you. How likely are you to consider that it might be their best effort rather than assume they don't care?"
+    },
+    {
+      "id": 368,
+      "category": "conflict_empathy",
+      "reverse": false,
+      "text": "A coworker disagrees with feedback you gave. How likely are you to consider how it might have landed emotionally, not just logically?"
+    },
+    {
+      "id": 369,
+      "category": "conflict_empathy",
+      "reverse": true,
+      "text": "You're arguing online with someone. How likely are you to respond more harshly than you would in person, without considering their feelings?"
+    },
+    {
+      "id": 370,
+      "category": "conflict_empathy",
+      "reverse": false,
+      "text": "A friend snaps at you during a stressful week. How likely are you to consider their stress rather than only take it personally?"
+    },
+    {
+      "id": 371,
+      "category": "conflict_empathy",
+      "reverse": false,
+      "text": "Someone you're in conflict with shares that they feel misunderstood. How likely are you to try to see how the misunderstanding happened?"
+    },
+    {
+      "id": 372,
+      "category": "conflict_empathy",
+      "reverse": true,
+      "text": "A disagreement with a coworker escalates. How likely are you to bring up unrelated past grievances to strengthen your position?"
+    },
+    {
+      "id": 373,
+      "category": "conflict_empathy",
+      "reverse": false,
+      "text": "A family member disagrees with a major life decision you made. How likely are you to consider their worry comes from love, not control?"
+    },
+    {
+      "id": 374,
+      "category": "conflict_empathy",
+      "reverse": false,
+      "text": "Someone criticizes your work in a way that stings. How likely are you to look for the valid point behind the delivery rather than dismiss it entirely?"
+    },
+    {
+      "id": 375,
+      "category": "conflict_empathy",
+      "reverse": true,
+      "text": "You're upset with a friend. How likely are you to vent about them to others rather than talk to them directly first?"
+    },
+    {
+      "id": 376,
+      "category": "conflict_empathy",
+      "reverse": false,
+      "text": "A partner brings up a repeated complaint. How likely are you to consider that it must matter a lot to them if they keep bringing it up?"
+    },
+    {
+      "id": 377,
+      "category": "conflict_empathy",
+      "reverse": false,
+      "text": "Someone you're in a disagreement with becomes defensive. How likely are you to soften your tone rather than match their defensiveness?"
+    },
+    {
+      "id": 378,
+      "category": "conflict_empathy",
+      "reverse": true,
+      "text": "A friend disagrees with a decision you made. How likely are you to assume they're just jealous or wrong rather than consider their concern?"
+    },
+    {
+      "id": 379,
+      "category": "conflict_empathy",
+      "reverse": false,
+      "text": "A coworker's frustration with you turns out to stem from a misunderstanding. How likely are you to respond with grace once it's cleared up?"
+    },
+    {
+      "id": 380,
+      "category": "conflict_empathy",
+      "reverse": false,
+      "text": "Someone challenges a belief you hold strongly. How likely are you to stay curious about their reasoning rather than get defensive immediately?"
+    },
+    {
+      "id": 381,
+      "category": "conflict_empathy",
+      "reverse": true,
+      "text": "You're in a conflict, and apologizing first would resolve it. How likely are you to wait for the other person to apologize first out of pride?"
+    },
+    {
+      "id": 382,
+      "category": "conflict_empathy",
+      "reverse": false,
+      "text": "A family member disagrees with how you're raising your kids or living your life. How likely are you to consider their intentions before reacting defensively?"
+    },
+    {
+      "id": 383,
+      "category": "conflict_empathy",
+      "reverse": false,
+      "text": "Someone accuses you of something you didn't do. How likely are you to respond calmly and try to understand the misunderstanding rather than react with anger?"
+    },
+    {
+      "id": 384,
+      "category": "conflict_empathy",
+      "reverse": true,
+      "text": "A friend gives you critical feedback about how you treated them. How likely are you to deny it outright rather than sit with the possibility they're right?"
+    },
+    {
+      "id": 385,
+      "category": "conflict_empathy",
+      "reverse": false,
+      "text": "You're mediating a conflict between two friends. How likely are you to genuinely try to understand both sides rather than pick the side you already favor?"
+    },
+    {
+      "id": 386,
+      "category": "conflict_empathy",
+      "reverse": true,
+      "text": "Someone challenges your opinion in front of others. How likely are you to double down out of pride rather than actually reconsider?"
+    },
+    {
+      "id": 387,
+      "category": "conflict_empathy",
+      "reverse": false,
+      "text": "A coworker's tone with you has been cold lately. How likely are you to ask what's wrong rather than assume the worst about them?"
+    },
+    {
+      "id": 388,
+      "category": "conflict_empathy",
+      "reverse": false,
+      "text": "Someone you had a falling out with reaches out to reconnect. How likely are you to approach the conversation with openness rather than lingering resentment?"
+    },
+    {
+      "id": 389,
+      "category": "conflict_empathy",
+      "reverse": true,
+      "text": "A disagreement with your partner is unresolved. How likely are you to give the silent treatment rather than try to understand their view?"
+    },
+    {
+      "id": 390,
+      "category": "conflict_empathy",
+      "reverse": false,
+      "text": "A friend admits they were wrong after an argument. How likely are you to respond graciously rather than rub it in?"
+    },
+    {
+      "id": 391,
+      "category": "conflict_empathy",
+      "reverse": false,
+      "text": "Someone criticizes a decision your team made, and you were part of it. How likely are you to consider the criticism fairly rather than take it personally?"
+    },
+    {
+      "id": 392,
+      "category": "conflict_empathy",
+      "reverse": true,
+      "text": "You're in a disagreement, and the other person is clearly getting upset. How likely are you to keep pressing your argument regardless?"
+    },
+    {
+      "id": 393,
+      "category": "conflict_empathy",
+      "reverse": false,
+      "text": "A family member's political views clash with yours at a gathering. How likely are you to keep the conversation respectful rather than let it become hostile?"
+    },
+    {
+      "id": 394,
+      "category": "conflict_empathy",
+      "reverse": false,
+      "text": "Someone you're in a dispute with shows vulnerability mid-conversation. How likely are you to soften your approach in response?"
+    },
+    {
+      "id": 395,
+      "category": "conflict_empathy",
+      "reverse": true,
+      "text": "An old friend brings up a past hurt you caused. How likely are you to minimize it rather than really hear how it affected them?"
+    },
+    {
+      "id": 396,
+      "category": "conflict_empathy",
+      "reverse": false,
+      "text": "A coworker disagrees with you but clearly respects you. How likely are you to extend the same respect back, even in disagreement?"
+    },
+    {
+      "id": 397,
+      "category": "conflict_empathy",
+      "reverse": false,
+      "text": "Someone you're arguing with says something you know is a low blow, but you sense they're just hurting. How likely are you to not retaliate in kind?"
+    },
+    {
+      "id": 398,
+      "category": "conflict_empathy",
+      "reverse": true,
+      "text": "A dispute with a neighbor escalates. How likely are you to assume the worst about their intentions rather than consider a misunderstanding?"
+    },
+    {
+      "id": 399,
+      "category": "conflict_empathy",
+      "reverse": false,
+      "text": "A friend admits they were too harsh with you earlier. How likely are you to accept the apology warmly rather than hold onto the hurt?"
+    },
+    {
+      "id": 400,
+      "category": "conflict_empathy",
+      "reverse": true,
+      "text": "You're proven wrong in an argument. How likely are you to change the subject rather than acknowledge it graciously?"
+    },
+    {
+      "id": 401,
+      "category": "empathic_boundaries",
+      "reverse": false,
+      "text": "After a heavy emotional conversation with a friend, how likely are you to take a little time to decompress rather than immediately move to the next task drained?"
+    },
+    {
+      "id": 402,
+      "category": "empathic_boundaries",
+      "reverse": false,
+      "text": "A friend frequently vents to you about the same problem without acting on advice. How likely are you to set a kind boundary rather than let it drain you indefinitely?"
+    },
+    {
+      "id": 403,
+      "category": "empathic_boundaries",
+      "reverse": false,
+      "text": "You've been supporting a struggling friend for weeks. How likely are you to check in with your own emotional state along the way?"
+    },
+    {
+      "id": 404,
+      "category": "empathic_boundaries",
+      "reverse": true,
+      "text": "Supporting others emotionally has been exhausting you lately. How likely are you to keep ignoring your own need for rest to keep helping everyone?"
+    },
+    {
+      "id": 405,
+      "category": "empathic_boundaries",
+      "reverse": false,
+      "text": "A coworker regularly offloads stress onto you during work hours. How likely are you to kindly redirect some of that to appropriate resources (like HR or a manager) rather than absorb it all yourself?"
+    },
+    {
+      "id": 406,
+      "category": "empathic_boundaries",
+      "reverse": false,
+      "text": "You notice you're feeling emotionally drained after helping others all week. How likely are you to intentionally schedule downtime to recover?"
+    },
+    {
+      "id": 407,
+      "category": "empathic_boundaries",
+      "reverse": true,
+      "text": "A friend's problems have started affecting your own mood and sleep. How likely are you to keep absorbing it without setting any limits?"
+    },
+    {
+      "id": 408,
+      "category": "empathic_boundaries",
+      "reverse": false,
+      "text": "Someone asks for emotional support at a time when you have little capacity to give it. How likely are you to honestly and kindly say you need a moment before you can be fully present?"
+    },
+    {
+      "id": 409,
+      "category": "empathic_boundaries",
+      "reverse": false,
+      "text": "You've noticed a pattern of always being \"the listener\" in your friend group. How likely are you to let others know when you also need support?"
+    },
+    {
+      "id": 410,
+      "category": "empathic_boundaries",
+      "reverse": true,
+      "text": "You feel guilty saying no to someone who needs help, even when you're at your limit. How likely are you to say yes anyway despite your own exhaustion?"
+    },
+    {
+      "id": 411,
+      "category": "empathic_boundaries",
+      "reverse": false,
+      "text": "A friend's crisis has become a regular, ongoing thing. How likely are you to gently encourage them toward additional support (like counseling) rather than trying to be their only outlet?"
+    },
+    {
+      "id": 412,
+      "category": "empathic_boundaries",
+      "reverse": false,
+      "text": "After a long day of emotionally supporting others, how likely are you to give yourself permission to rest rather than feel guilty about it?"
+    },
+    {
+      "id": 413,
+      "category": "empathic_boundaries",
+      "reverse": true,
+      "text": "You keep taking on other people's emotional burdens as your own. How likely are you to continue doing this even when it starts to affect your own wellbeing?"
+    },
+    {
+      "id": 414,
+      "category": "empathic_boundaries",
+      "reverse": false,
+      "text": "Someone repeatedly asks for the same kind of support in a way that feels one-sided. How likely are you to have an honest conversation about balance in the relationship?"
+    },
+    {
+      "id": 415,
+      "category": "empathic_boundaries",
+      "reverse": false,
+      "text": "You notice you feel responsible for fixing everyone's feelings around you. How likely are you to remind yourself that you can care without carrying the full weight?"
+    },
+    {
+      "id": 416,
+      "category": "empathic_boundaries",
+      "reverse": true,
+      "text": "A friend's sadness makes you feel like you must always be available. How likely are you to drop your own plans repeatedly to be there, even when it isn't sustainable?"
+    },
+    {
+      "id": 417,
+      "category": "empathic_boundaries",
+      "reverse": false,
+      "text": "You've been the primary emotional support for a struggling family member for a long time. How likely are you to seek some support for yourself too?"
+    },
+    {
+      "id": 418,
+      "category": "empathic_boundaries",
+      "reverse": false,
+      "text": "Someone asks for your help with something emotionally heavy right when you're already stretched thin. How likely are you to be honest about your limits rather than overextend yourself?"
+    },
+    {
+      "id": 419,
+      "category": "empathic_boundaries",
+      "reverse": true,
+      "text": "You feel drained after most conversations with a particular friend. How likely are you to keep the relationship exactly the same rather than adjust the dynamic?"
+    },
+    {
+      "id": 420,
+      "category": "empathic_boundaries",
+      "reverse": false,
+      "text": "After comforting someone through a hard time, how likely are you to check in with yourself about how it affected you emotionally?"
+    },
+    {
+      "id": 421,
+      "category": "empathic_boundaries",
+      "reverse": false,
+      "text": "A friend expects you to always be available for emotional support, day or night. How likely are you to gently set expectations about your availability?"
+    },
+    {
+      "id": 422,
+      "category": "empathic_boundaries",
+      "reverse": true,
+      "text": "You notice you often absorb others' moods so much that it changes your own for the rest of the day. How likely are you to let this keep happening without addressing it?"
+    },
+    {
+      "id": 423,
+      "category": "empathic_boundaries",
+      "reverse": false,
+      "text": "Someone's ongoing struggles start to feel like your own responsibility to solve. How likely are you to remind yourself that you can support without being the solution?"
+    },
+    {
+      "id": 424,
+      "category": "empathic_boundaries",
+      "reverse": false,
+      "text": "You feel emotionally full after a week of supporting several people. How likely are you to be honest with the next person who needs you about your limited capacity?"
+    },
+    {
+      "id": 425,
+      "category": "empathic_boundaries",
+      "reverse": true,
+      "text": "A friend relies on you heavily during their hard times but rarely reciprocates. How likely are you to keep giving without ever raising it?"
+    },
+    {
+      "id": 426,
+      "category": "empathic_boundaries",
+      "reverse": false,
+      "text": "After helping someone through a crisis, how likely are you to make space to process your own feelings about it afterward?"
+    },
+    {
+      "id": 427,
+      "category": "empathic_boundaries",
+      "reverse": false,
+      "text": "Someone's venting sessions have started to consistently run past when you need to leave. How likely are you to kindly wrap up the conversation rather than let it drain your whole evening?"
+    },
+    {
+      "id": 428,
+      "category": "empathic_boundaries",
+      "reverse": true,
+      "text": "You feel like you can't say no when someone needs emotional support. How likely are you to keep saying yes even at your own expense?"
+    },
+    {
+      "id": 429,
+      "category": "empathic_boundaries",
+      "reverse": false,
+      "text": "A friend's constant negativity has started to weigh on you. How likely are you to have an honest conversation about how it's affecting you?"
+    },
+    {
+      "id": 430,
+      "category": "empathic_boundaries",
+      "reverse": false,
+      "text": "You've noticed physical signs of stress (fatigue, tension) after supporting others emotionally. How likely are you to take that as a signal to pull back and rest?"
+    },
+    {
+      "id": 431,
+      "category": "empathic_boundaries",
+      "reverse": true,
+      "text": "You feel responsible for a friend's happiness. How likely are you to keep trying to manage their emotions for them rather than let them own their own feelings?"
+    },
+    {
+      "id": 432,
+      "category": "empathic_boundaries",
+      "reverse": false,
+      "text": "Someone asks you to be there for them during a time you'd already planned to rest. How likely are you to communicate your need for balance kindly rather than resentfully agree?"
+    },
+    {
+      "id": 433,
+      "category": "empathic_boundaries",
+      "reverse": false,
+      "text": "After a demanding week of helping others, how likely are you to reach out to your own support system rather than handle it all alone?"
+    },
+    {
+      "id": 434,
+      "category": "empathic_boundaries",
+      "reverse": true,
+      "text": "You often feel guilty for having needs of your own while supporting others. How likely are you to suppress your needs to avoid seeming selfish?"
+    },
+    {
+      "id": 435,
+      "category": "empathic_boundaries",
+      "reverse": false,
+      "text": "A friend's emotional needs have started overwhelming your own capacity. How likely are you to be honest about needing to scale back rather than burn out silently?"
+    },
+    {
+      "id": 436,
+      "category": "empathic_boundaries",
+      "reverse": false,
+      "text": "You notice yourself becoming irritable after too much emotional labor for others. How likely are you to recognize this as a sign you need to recharge?"
+    },
+    {
+      "id": 437,
+      "category": "empathic_boundaries",
+      "reverse": true,
+      "text": "Someone leans on you constantly for emotional support. How likely are you to avoid the topic of balance to keep the peace, even as it wears on you?"
+    },
+    {
+      "id": 438,
+      "category": "empathic_boundaries",
+      "reverse": false,
+      "text": "After a hard conversation supporting someone else, how likely are you to give yourself grace rather than judge yourself for feeling tired?"
+    },
+    {
+      "id": 439,
+      "category": "empathic_boundaries",
+      "reverse": false,
+      "text": "A friend's crisis pulls you in every time, disrupting your own responsibilities. How likely are you to find a sustainable way to help rather than drop everything each time?"
+    },
+    {
+      "id": 440,
+      "category": "empathic_boundaries",
+      "reverse": true,
+      "text": "You feel like your own feelings don't matter as much as everyone else's. How likely are you to keep sidelining your needs to focus only on others?"
+    },
+    {
+      "id": 441,
+      "category": "empathic_boundaries",
+      "reverse": false,
+      "text": "Someone's heavy emotional sharing happens frequently at a time that isn't good for you. How likely are you to suggest a better time rather than always accommodate it?"
+    },
+    {
+      "id": 442,
+      "category": "empathic_boundaries",
+      "reverse": false,
+      "text": "You've been feeling emotionally depleted from being everyone's go-to support. How likely are you to acknowledge this to yourself honestly?"
+    },
+    {
+      "id": 443,
+      "category": "empathic_boundaries",
+      "reverse": true,
+      "text": "A friend's problems have started to feel like your own to fix. How likely are you to keep taking that weight on rather than encourage their own agency?"
+    },
+    {
+      "id": 444,
+      "category": "empathic_boundaries",
+      "reverse": false,
+      "text": "After setting a kind boundary with someone who over-relies on you, how likely are you to feel okay about it rather than guilty?"
+    },
+    {
+      "id": 445,
+      "category": "empathic_boundaries",
+      "reverse": false,
+      "text": "You notice a pattern where helping others always comes before your own basic needs (sleep, meals, rest). How likely are you to start prioritizing your own needs too?"
+    },
+    {
+      "id": 446,
+      "category": "empathic_boundaries",
+      "reverse": true,
+      "text": "Someone gets upset when you're not available to support them. How likely are you to abandon your own plans to avoid their disappointment every time?"
+    },
+    {
+      "id": 447,
+      "category": "empathic_boundaries",
+      "reverse": false,
+      "text": "A friend's ongoing struggles are clearly beyond what you can help with alone. How likely are you to encourage professional support rather than try to carry it all yourself?"
+    },
+    {
+      "id": 448,
+      "category": "empathic_boundaries",
+      "reverse": false,
+      "text": "After a stretch of emotionally supporting others, how likely are you to notice when you need to ask for support in return?"
+    },
+    {
+      "id": 449,
+      "category": "empathic_boundaries",
+      "reverse": true,
+      "text": "You feel like taking a break from supporting others would make you a bad friend. How likely are you to push through exhaustion instead of resting?"
+    },
+    {
+      "id": 450,
+      "category": "empathic_boundaries",
+      "reverse": false,
+      "text": "You've learned that saying \"I care about you, but I can't take this on right now\" is sometimes the most honest and sustainable response. How likely are you to say something like this when you're at capacity?"
+    },
+    {
+      "id": 451,
+      "category": "empathy_leadership",
+      "reverse": false,
+      "text": "As a team lead, someone on your team is struggling silently. How likely are you to check in privately rather than wait for them to ask for help?"
+    },
+    {
+      "id": 452,
+      "category": "empathy_leadership",
+      "reverse": false,
+      "text": "Your community is deciding on a policy that affects a vulnerable group differently than you. How likely are you to factor in their perspective before forming your opinion?"
+    },
+    {
+      "id": 453,
+      "category": "empathy_leadership",
+      "reverse": false,
+      "text": "A team member makes a mistake in a group project. How likely are you to address it in a way that preserves their dignity in front of others?"
+    },
+    {
+      "id": 454,
+      "category": "empathy_leadership",
+      "reverse": true,
+      "text": "You're leading a group, and someone raises a concern about workload. How likely are you to dismiss it as complaining rather than take it seriously?"
+    },
+    {
+      "id": 455,
+      "category": "empathy_leadership",
+      "reverse": false,
+      "text": "Your neighborhood is discussing a decision that would help some residents but inconvenience others. How likely are you to consider all sides before taking a position?"
+    },
+    {
+      "id": 456,
+      "category": "empathy_leadership",
+      "reverse": false,
+      "text": "As a manager, an employee requests flexibility due to a personal situation. How likely are you to accommodate it thoughtfully rather than default to a strict rule?"
+    },
+    {
+      "id": 457,
+      "category": "empathy_leadership",
+      "reverse": true,
+      "text": "You're organizing an event and someone raises accessibility concerns. How likely are you to brush it off as too much extra effort?"
+    },
+    {
+      "id": 458,
+      "category": "empathy_leadership",
+      "reverse": false,
+      "text": "A community meeting includes voices that disagree with the majority. How likely are you to make sure they're heard rather than let them be talked over?"
+    },
+    {
+      "id": 459,
+      "category": "empathy_leadership",
+      "reverse": false,
+      "text": "Your team is stressed before a big deadline. How likely are you to acknowledge the pressure they're under rather than just push harder?"
+    },
+    {
+      "id": 460,
+      "category": "empathy_leadership",
+      "reverse": true,
+      "text": "As a leader, someone underperforms due to a personal hardship you don't know about. How likely are you to assume laziness rather than ask what's going on?"
+    },
+    {
+      "id": 461,
+      "category": "empathy_leadership",
+      "reverse": false,
+      "text": "A new member joins your community group and seems unsure of the norms. How likely are you to make an effort to include them?"
+    },
+    {
+      "id": 462,
+      "category": "empathy_leadership",
+      "reverse": false,
+      "text": "As a team lead, you must deliver tough feedback. How likely are you to consider how it will land emotionally, not just what needs to be said?"
+    },
+    {
+      "id": 463,
+      "category": "empathy_leadership",
+      "reverse": true,
+      "text": "Your organization makes a decision that will be hard on some employees. How likely are you to communicate it without acknowledging the human impact?"
+    },
+    {
+      "id": 464,
+      "category": "empathy_leadership",
+      "reverse": false,
+      "text": "A local decision disproportionately affects lower-income residents. How likely are you to consider their situation before supporting or opposing it?"
+    },
+    {
+      "id": 465,
+      "category": "empathy_leadership",
+      "reverse": false,
+      "text": "As a coach or mentor, someone underperforms and seems discouraged. How likely are you to respond with encouragement rather than just criticism?"
+    },
+    {
+      "id": 466,
+      "category": "empathy_leadership",
+      "reverse": true,
+      "text": "A community member raises a concern that mostly affects a group you're not part of. How likely are you to consider it unimportant since it doesn't affect you?"
+    },
+    {
+      "id": 467,
+      "category": "empathy_leadership",
+      "reverse": false,
+      "text": "Your team disagrees with a decision you made as a leader. How likely are you to genuinely hear their concerns rather than just enforce the decision?"
+    },
+    {
+      "id": 468,
+      "category": "empathy_leadership",
+      "reverse": false,
+      "text": "As an organizer, you notice one group's needs have been overlooked in planning. How likely are you to adjust the plan to include them?"
+    },
+    {
+      "id": 469,
+      "category": "empathy_leadership",
+      "reverse": true,
+      "text": "An employee asks for accommodations for a disability or health condition. How likely are you to see it as an inconvenience to the team rather than a reasonable request?"
+    },
+    {
+      "id": 470,
+      "category": "empathy_leadership",
+      "reverse": false,
+      "text": "A community initiative benefits some more than others. How likely are you to seek input from those who benefit least before finalizing it?"
+    },
+    {
+      "id": 471,
+      "category": "empathy_leadership",
+      "reverse": false,
+      "text": "As a leader, a team member's personal crisis is affecting their work. How likely are you to respond with support rather than only focus on performance metrics?"
+    },
+    {
+      "id": 472,
+      "category": "empathy_leadership",
+      "reverse": true,
+      "text": "You're leading a discussion, and a quieter member tries to speak. How likely are you to let more dominant voices talk over them without stepping in?"
+    },
+    {
+      "id": 473,
+      "category": "empathy_leadership",
+      "reverse": false,
+      "text": "Your organization is deciding on layoffs. How likely are you to advocate for handling the process with dignity and compassion?"
+    },
+    {
+      "id": 474,
+      "category": "empathy_leadership",
+      "reverse": false,
+      "text": "A community group includes people from very different walks of life. How likely are you to actively work to make everyone feel they belong?"
+    },
+    {
+      "id": 475,
+      "category": "empathy_leadership",
+      "reverse": true,
+      "text": "As a manager, you receive feedback that your leadership style feels harsh to some team members. How likely are you to dismiss it as them being too sensitive?"
+    },
+    {
+      "id": 476,
+      "category": "empathy_leadership",
+      "reverse": false,
+      "text": "Your team is going through organizational change. How likely are you to check in on morale, not just productivity?"
+    },
+    {
+      "id": 477,
+      "category": "empathy_leadership",
+      "reverse": false,
+      "text": "As an organizer, a volunteer seems overwhelmed. How likely are you to check in and adjust their responsibilities if needed?"
+    },
+    {
+      "id": 478,
+      "category": "empathy_leadership",
+      "reverse": true,
+      "text": "A community decision would save money but hurt a small, less visible group. How likely are you to support it without considering that group's perspective?"
+    },
+    {
+      "id": 479,
+      "category": "empathy_leadership",
+      "reverse": false,
+      "text": "Your team includes someone who processes information differently (needs more time, different format, etc.). How likely are you to adapt your leadership approach for them?"
+    },
+    {
+      "id": 480,
+      "category": "empathy_leadership",
+      "reverse": false,
+      "text": "As a leader, you notice burnout building across your team. How likely are you to address it proactively rather than wait for someone to break down?"
+    },
+    {
+      "id": 481,
+      "category": "empathy_leadership",
+      "reverse": true,
+      "text": "A community voice you personally disagree with raises a valid concern. How likely are you to dismiss the concern just because you dislike the person raising it?"
+    },
+    {
+      "id": 482,
+      "category": "empathy_leadership",
+      "reverse": false,
+      "text": "Your organization considers a policy that would make things easier for people with caregiving responsibilities. How likely are you to support it even if it doesn't affect you personally?"
+    },
+    {
+      "id": 483,
+      "category": "empathy_leadership",
+      "reverse": false,
+      "text": "As a mentor, your mentee makes a decision you wouldn't have made. How likely are you to support their growth rather than impose your own path?"
+    },
+    {
+      "id": 484,
+      "category": "empathy_leadership",
+      "reverse": true,
+      "text": "A team member asks for a schedule change due to family needs. How likely are you to see it as them not being a \"team player\"?"
+    },
+    {
+      "id": 485,
+      "category": "empathy_leadership",
+      "reverse": false,
+      "text": "Your neighborhood association is deciding how to allocate limited resources. How likely are you to advocate for those with the greatest need, not just the loudest voices?"
+    },
+    {
+      "id": 486,
+      "category": "empathy_leadership",
+      "reverse": false,
+      "text": "As a leader, you notice a team member is being subtly excluded by others. How likely are you to step in and address it?"
+    },
+    {
+      "id": 487,
+      "category": "empathy_leadership",
+      "reverse": true,
+      "text": "A community project would help a group that's often overlooked, but it's not a priority for most people. How likely are you to let it get deprioritized without advocating for it?"
+    },
+    {
+      "id": 488,
+      "category": "empathy_leadership",
+      "reverse": false,
+      "text": "Your team's feedback session reveals frustration about a process you designed. How likely are you to listen with openness rather than defensiveness?"
+    },
+    {
+      "id": 489,
+      "category": "empathy_leadership",
+      "reverse": false,
+      "text": "As an organizer, a participant with different needs (dietary, physical, cultural) attends your event. How likely are you to have made accommodations in advance?"
+    },
+    {
+      "id": 490,
+      "category": "empathy_leadership",
+      "reverse": true,
+      "text": "Your organization's policy disadvantages people who can't easily advocate for themselves. How likely are you to leave it unaddressed since it doesn't cause visible complaints?"
+    },
+    {
+      "id": 491,
+      "category": "empathy_leadership",
+      "reverse": false,
+      "text": "A team member you manage is grieving a loss. How likely are you to give them grace and flexibility during that time?"
+    },
+    {
+      "id": 492,
+      "category": "empathy_leadership",
+      "reverse": false,
+      "text": "As a civic volunteer, you meet people whose life circumstances are very different from yours. How likely are you to approach them with respect rather than pity or judgment?"
+    },
+    {
+      "id": 493,
+      "category": "empathy_leadership",
+      "reverse": true,
+      "text": "A community forum includes a marginalized voice sharing a difficult experience. How likely are you to move on quickly rather than sit with what they shared?"
+    },
+    {
+      "id": 494,
+      "category": "empathy_leadership",
+      "reverse": false,
+      "text": "Your team includes someone new to the culture or country your workplace operates in. How likely are you to help them feel supported as they adjust?"
+    },
+    {
+      "id": 495,
+      "category": "empathy_leadership",
+      "reverse": false,
+      "text": "As a leader, a decision you need to make will disappoint part of your team no matter what. How likely are you to communicate it with empathy for those affected?"
+    },
+    {
+      "id": 496,
+      "category": "empathy_leadership",
+      "reverse": true,
+      "text": "A community member repeatedly points out an issue that mostly affects people unlike you. How likely are you to grow annoyed rather than consider their persistence means it matters?"
+    },
+    {
+      "id": 497,
+      "category": "empathy_leadership",
+      "reverse": false,
+      "text": "Your organization is designing a space or service. How likely are you to consider how it will feel for people with different needs and abilities?"
+    },
+    {
+      "id": 498,
+      "category": "empathy_leadership",
+      "reverse": false,
+      "text": "As a mentor, your mentee is discouraged after a setback. How likely are you to help them see it in context rather than let them spiral?"
+    },
+    {
+      "id": 499,
+      "category": "empathy_leadership",
+      "reverse": true,
+      "text": "A team member from an underrepresented background raises a concern about inclusion. How likely are you to treat it as overly sensitive rather than a legitimate issue?"
+    },
+    {
+      "id": 500,
+      "category": "empathy_leadership",
+      "reverse": false,
+      "text": "As a community leader, how likely are you to actively seek out perspectives different from your own before making decisions that affect everyone?"
+    }
+  ]
+}

@@ -1,0 +1,3160 @@
+{
+  "meta": {
+    "title": "Charisma Test",
+    "description": "A detailed 500-question reflection across 20 dimensions of charisma.",
+    "scale": {
+      "min": 1,
+      "max": 10,
+      "minLabel": "Not at all likely",
+      "maxLabel": "Extremely likely"
+    },
+    "categories": [
+      {
+        "id": "presence",
+        "label": "Presence & Attentiveness",
+        "icon": "👁️"
+      },
+      {
+        "id": "warmth",
+        "label": "Warmth & Approachability",
+        "icon": "💛"
+      },
+      {
+        "id": "confidence",
+        "label": "Confidence & Composure",
+        "icon": "💪"
+      },
+      {
+        "id": "eye_contact",
+        "label": "Eye Contact & Nonverbal Connection",
+        "icon": "👀"
+      },
+      {
+        "id": "body_language",
+        "label": "Body Language & Posture",
+        "icon": "🕺"
+      },
+      {
+        "id": "vocal_expression",
+        "label": "Vocal Tone & Expression",
+        "icon": "🎙️"
+      },
+      {
+        "id": "active_listening",
+        "label": "Active Listening",
+        "icon": "👂"
+      },
+      {
+        "id": "storytelling",
+        "label": "Storytelling & Expressiveness",
+        "icon": "📖"
+      },
+      {
+        "id": "humor",
+        "label": "Humor & Playfulness",
+        "icon": "😄"
+      },
+      {
+        "id": "conversational_skill",
+        "label": "Conversational Ease",
+        "icon": "💬"
+      },
+      {
+        "id": "empathy",
+        "label": "Empathy & Emotional Attunement",
+        "icon": "💞"
+      },
+      {
+        "id": "authenticity",
+        "label": "Authenticity & Self-Expression",
+        "icon": "🌟"
+      },
+      {
+        "id": "energy",
+        "label": "Energy & Enthusiasm",
+        "icon": "⚡"
+      },
+      {
+        "id": "influence",
+        "label": "Influence & Persuasion",
+        "icon": "🧲"
+      },
+      {
+        "id": "social_confidence",
+        "label": "Social Confidence & Initiative",
+        "icon": "🚀"
+      },
+      {
+        "id": "adaptability",
+        "label": "Social Adaptability",
+        "icon": "🔄"
+      },
+      {
+        "id": "validation",
+        "label": "Making Others Feel Valued",
+        "icon": "🏅"
+      },
+      {
+        "id": "humility",
+        "label": "Humility & Ego Management",
+        "icon": "🙏"
+      },
+      {
+        "id": "first_impressions",
+        "label": "First Impressions & Memorability",
+        "icon": "✨"
+      },
+      {
+        "id": "crowd_command",
+        "label": "Group Presence & Room Command",
+        "icon": "🎤"
+      }
+    ],
+    "levels": [
+      {
+        "min": 9,
+        "max": 10.01,
+        "label": "Magnetic",
+        "emoji": "🧲",
+        "desc": "You draw people in effortlessly — your presence, warmth, and confidence combine into a rare, natural magnetism that people remember long after you leave the room."
+      },
+      {
+        "min": 7.5,
+        "max": 9,
+        "label": "Charismatic",
+        "emoji": "✨",
+        "desc": "You connect with people easily and leave a strong impression in most situations. A few dimensions are still worth sharpening to make your presence even more consistent."
+      },
+      {
+        "min": 6,
+        "max": 7.5,
+        "label": "Engaging",
+        "emoji": "😊",
+        "desc": "People generally enjoy being around you and find you easy to talk to, though your charisma may fade in certain high-pressure or unfamiliar settings."
+      },
+      {
+        "min": 4.5,
+        "max": 6,
+        "label": "Developing",
+        "emoji": "🌱",
+        "desc": "Your charisma shows up in some situations but not others — strong in a few dimensions, inconsistent in others. Deliberate practice could make a real difference."
+      },
+      {
+        "min": 3,
+        "max": 4.5,
+        "label": "Reserved",
+        "emoji": "🤐",
+        "desc": "You tend to hold back in social situations, which can make it harder for your genuine warmth and ideas to come through. Small, consistent changes can open this up."
+      },
+      {
+        "min": 1,
+        "max": 3,
+        "label": "Needs Practice",
+        "emoji": "📚",
+        "desc": "Right now, social situations may feel draining or uncomfortable rather than energizing. This is a good starting point for building charisma skills step by step."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "category": "presence",
+      "reverse": false,
+      "text": "At a networking event, how likely are you to stay fully present with the person in front of you instead of thinking about what’s next?"
+    },
+    {
+      "id": 2,
+      "category": "presence",
+      "reverse": true,
+      "text": "When meeting someone for the first time, how likely are you to check your phone while someone is speaking to you?"
+    },
+    {
+      "id": 3,
+      "category": "presence",
+      "reverse": false,
+      "text": "During a group conversation, how likely are you to give someone your undivided attention even when your mind is busy?"
+    },
+    {
+      "id": 4,
+      "category": "presence",
+      "reverse": true,
+      "text": "While giving a presentation, how likely are you to let your mind wander to other things while someone is talking?"
+    },
+    {
+      "id": 5,
+      "category": "presence",
+      "reverse": false,
+      "text": "At a social gathering full of strangers, how likely are you to stay fully present with the person in front of you instead of thinking about what’s next?"
+    },
+    {
+      "id": 6,
+      "category": "presence",
+      "reverse": true,
+      "text": "When someone shares exciting news with you, how likely are you to check your phone while someone is speaking to you?"
+    },
+    {
+      "id": 7,
+      "category": "presence",
+      "reverse": false,
+      "text": "During a difficult or tense conversation, how likely are you to give someone your undivided attention even when your mind is busy?"
+    },
+    {
+      "id": 8,
+      "category": "presence",
+      "reverse": true,
+      "text": "While talking to someone senior to you, how likely are you to let your mind wander to other things while someone is talking?"
+    },
+    {
+      "id": 9,
+      "category": "presence",
+      "reverse": false,
+      "text": "When you walk into a room full of people, how likely are you to stay fully present with the person in front of you instead of thinking about what’s next?"
+    },
+    {
+      "id": 10,
+      "category": "presence",
+      "reverse": true,
+      "text": "During small talk before a meeting starts, how likely are you to check your phone while someone is speaking to you?"
+    },
+    {
+      "id": 11,
+      "category": "presence",
+      "reverse": false,
+      "text": "When someone disagrees with you, how likely are you to give someone your undivided attention even when your mind is busy?"
+    },
+    {
+      "id": 12,
+      "category": "presence",
+      "reverse": true,
+      "text": "While on a first date, how likely are you to let your mind wander to other things while someone is talking?"
+    },
+    {
+      "id": 13,
+      "category": "presence",
+      "reverse": false,
+      "text": "During a job interview, how likely are you to stay fully present with the person in front of you instead of thinking about what’s next?"
+    },
+    {
+      "id": 14,
+      "category": "presence",
+      "reverse": true,
+      "text": "When you’re the center of attention, how likely are you to check your phone while someone is speaking to you?"
+    },
+    {
+      "id": 15,
+      "category": "presence",
+      "reverse": false,
+      "text": "While comforting a friend who is upset, how likely are you to give someone your undivided attention even when your mind is busy?"
+    },
+    {
+      "id": 16,
+      "category": "presence",
+      "reverse": true,
+      "text": "During a team meeting at work, how likely are you to let your mind wander to other things while someone is talking?"
+    },
+    {
+      "id": 17,
+      "category": "presence",
+      "reverse": false,
+      "text": "When meeting a friend’s other friends for the first time, how likely are you to stay fully present with the person in front of you instead of thinking about what’s next?"
+    },
+    {
+      "id": 18,
+      "category": "presence",
+      "reverse": true,
+      "text": "While telling a story to a group, how likely are you to check your phone while someone is speaking to you?"
+    },
+    {
+      "id": 19,
+      "category": "presence",
+      "reverse": false,
+      "text": "When someone pays you a compliment, how likely are you to give someone your undivided attention even when your mind is busy?"
+    },
+    {
+      "id": 20,
+      "category": "presence",
+      "reverse": true,
+      "text": "During a casual conversation with a coworker, how likely are you to let your mind wander to other things while someone is talking?"
+    },
+    {
+      "id": 21,
+      "category": "presence",
+      "reverse": false,
+      "text": "When you enter an unfamiliar social circle, how likely are you to stay fully present with the person in front of you instead of thinking about what’s next?"
+    },
+    {
+      "id": 22,
+      "category": "presence",
+      "reverse": true,
+      "text": "While speaking in front of a large audience, how likely are you to check your phone while someone is speaking to you?"
+    },
+    {
+      "id": 23,
+      "category": "presence",
+      "reverse": false,
+      "text": "When a conversation hits an awkward pause, how likely are you to give someone your undivided attention even when your mind is busy?"
+    },
+    {
+      "id": 24,
+      "category": "presence",
+      "reverse": true,
+      "text": "While negotiating something important, how likely are you to let your mind wander to other things while someone is talking?"
+    },
+    {
+      "id": 25,
+      "category": "presence",
+      "reverse": false,
+      "text": "At a family or community event, how likely are you to stay fully present with the person in front of you instead of thinking about what’s next?"
+    },
+    {
+      "id": 26,
+      "category": "warmth",
+      "reverse": false,
+      "text": "At a networking event, how likely are you to make people feel genuinely welcome within moments of meeting you?"
+    },
+    {
+      "id": 27,
+      "category": "warmth",
+      "reverse": true,
+      "text": "When meeting someone for the first time, how likely are you to come across as cold or distant when meeting someone new?"
+    },
+    {
+      "id": 28,
+      "category": "warmth",
+      "reverse": false,
+      "text": "During a group conversation, how likely are you to greet people with a warm, easy smile?"
+    },
+    {
+      "id": 29,
+      "category": "warmth",
+      "reverse": true,
+      "text": "While giving a presentation, how likely are you to keep your expression guarded around people you don’t know well?"
+    },
+    {
+      "id": 30,
+      "category": "warmth",
+      "reverse": false,
+      "text": "At a social gathering full of strangers, how likely are you to make people feel genuinely welcome within moments of meeting you?"
+    },
+    {
+      "id": 31,
+      "category": "warmth",
+      "reverse": true,
+      "text": "When someone shares exciting news with you, how likely are you to come across as cold or distant when meeting someone new?"
+    },
+    {
+      "id": 32,
+      "category": "warmth",
+      "reverse": false,
+      "text": "During a difficult or tense conversation, how likely are you to greet people with a warm, easy smile?"
+    },
+    {
+      "id": 33,
+      "category": "warmth",
+      "reverse": true,
+      "text": "While talking to someone senior to you, how likely are you to keep your expression guarded around people you don’t know well?"
+    },
+    {
+      "id": 34,
+      "category": "warmth",
+      "reverse": false,
+      "text": "When you walk into a room full of people, how likely are you to make people feel genuinely welcome within moments of meeting you?"
+    },
+    {
+      "id": 35,
+      "category": "warmth",
+      "reverse": true,
+      "text": "During small talk before a meeting starts, how likely are you to come across as cold or distant when meeting someone new?"
+    },
+    {
+      "id": 36,
+      "category": "warmth",
+      "reverse": false,
+      "text": "When someone disagrees with you, how likely are you to greet people with a warm, easy smile?"
+    },
+    {
+      "id": 37,
+      "category": "warmth",
+      "reverse": true,
+      "text": "While on a first date, how likely are you to keep your expression guarded around people you don’t know well?"
+    },
+    {
+      "id": 38,
+      "category": "warmth",
+      "reverse": false,
+      "text": "During a job interview, how likely are you to make people feel genuinely welcome within moments of meeting you?"
+    },
+    {
+      "id": 39,
+      "category": "warmth",
+      "reverse": true,
+      "text": "When you’re the center of attention, how likely are you to come across as cold or distant when meeting someone new?"
+    },
+    {
+      "id": 40,
+      "category": "warmth",
+      "reverse": false,
+      "text": "While comforting a friend who is upset, how likely are you to greet people with a warm, easy smile?"
+    },
+    {
+      "id": 41,
+      "category": "warmth",
+      "reverse": true,
+      "text": "During a team meeting at work, how likely are you to keep your expression guarded around people you don’t know well?"
+    },
+    {
+      "id": 42,
+      "category": "warmth",
+      "reverse": false,
+      "text": "When meeting a friend’s other friends for the first time, how likely are you to make people feel genuinely welcome within moments of meeting you?"
+    },
+    {
+      "id": 43,
+      "category": "warmth",
+      "reverse": true,
+      "text": "While telling a story to a group, how likely are you to come across as cold or distant when meeting someone new?"
+    },
+    {
+      "id": 44,
+      "category": "warmth",
+      "reverse": false,
+      "text": "When someone pays you a compliment, how likely are you to greet people with a warm, easy smile?"
+    },
+    {
+      "id": 45,
+      "category": "warmth",
+      "reverse": true,
+      "text": "During a casual conversation with a coworker, how likely are you to keep your expression guarded around people you don’t know well?"
+    },
+    {
+      "id": 46,
+      "category": "warmth",
+      "reverse": false,
+      "text": "When you enter an unfamiliar social circle, how likely are you to make people feel genuinely welcome within moments of meeting you?"
+    },
+    {
+      "id": 47,
+      "category": "warmth",
+      "reverse": true,
+      "text": "While speaking in front of a large audience, how likely are you to come across as cold or distant when meeting someone new?"
+    },
+    {
+      "id": 48,
+      "category": "warmth",
+      "reverse": false,
+      "text": "When a conversation hits an awkward pause, how likely are you to greet people with a warm, easy smile?"
+    },
+    {
+      "id": 49,
+      "category": "warmth",
+      "reverse": true,
+      "text": "While negotiating something important, how likely are you to keep your expression guarded around people you don’t know well?"
+    },
+    {
+      "id": 50,
+      "category": "warmth",
+      "reverse": false,
+      "text": "At a family or community event, how likely are you to make people feel genuinely welcome within moments of meeting you?"
+    },
+    {
+      "id": 51,
+      "category": "confidence",
+      "reverse": false,
+      "text": "At a networking event, how likely are you to stay calm and composed when all eyes turn to you?"
+    },
+    {
+      "id": 52,
+      "category": "confidence",
+      "reverse": true,
+      "text": "When meeting someone for the first time, how likely are you to freeze up or fumble your words when put on the spot?"
+    },
+    {
+      "id": 53,
+      "category": "confidence",
+      "reverse": false,
+      "text": "During a group conversation, how likely are you to speak with steady confidence even under pressure?"
+    },
+    {
+      "id": 54,
+      "category": "confidence",
+      "reverse": true,
+      "text": "While giving a presentation, how likely are you to let nerves visibly rattle you in front of others?"
+    },
+    {
+      "id": 55,
+      "category": "confidence",
+      "reverse": false,
+      "text": "At a social gathering full of strangers, how likely are you to stay calm and composed when all eyes turn to you?"
+    },
+    {
+      "id": 56,
+      "category": "confidence",
+      "reverse": true,
+      "text": "When someone shares exciting news with you, how likely are you to freeze up or fumble your words when put on the spot?"
+    },
+    {
+      "id": 57,
+      "category": "confidence",
+      "reverse": false,
+      "text": "During a difficult or tense conversation, how likely are you to speak with steady confidence even under pressure?"
+    },
+    {
+      "id": 58,
+      "category": "confidence",
+      "reverse": true,
+      "text": "While talking to someone senior to you, how likely are you to let nerves visibly rattle you in front of others?"
+    },
+    {
+      "id": 59,
+      "category": "confidence",
+      "reverse": false,
+      "text": "When you walk into a room full of people, how likely are you to stay calm and composed when all eyes turn to you?"
+    },
+    {
+      "id": 60,
+      "category": "confidence",
+      "reverse": true,
+      "text": "During small talk before a meeting starts, how likely are you to freeze up or fumble your words when put on the spot?"
+    },
+    {
+      "id": 61,
+      "category": "confidence",
+      "reverse": false,
+      "text": "When someone disagrees with you, how likely are you to speak with steady confidence even under pressure?"
+    },
+    {
+      "id": 62,
+      "category": "confidence",
+      "reverse": true,
+      "text": "While on a first date, how likely are you to let nerves visibly rattle you in front of others?"
+    },
+    {
+      "id": 63,
+      "category": "confidence",
+      "reverse": false,
+      "text": "During a job interview, how likely are you to stay calm and composed when all eyes turn to you?"
+    },
+    {
+      "id": 64,
+      "category": "confidence",
+      "reverse": true,
+      "text": "When you’re the center of attention, how likely are you to freeze up or fumble your words when put on the spot?"
+    },
+    {
+      "id": 65,
+      "category": "confidence",
+      "reverse": false,
+      "text": "While comforting a friend who is upset, how likely are you to speak with steady confidence even under pressure?"
+    },
+    {
+      "id": 66,
+      "category": "confidence",
+      "reverse": true,
+      "text": "During a team meeting at work, how likely are you to let nerves visibly rattle you in front of others?"
+    },
+    {
+      "id": 67,
+      "category": "confidence",
+      "reverse": false,
+      "text": "When meeting a friend’s other friends for the first time, how likely are you to stay calm and composed when all eyes turn to you?"
+    },
+    {
+      "id": 68,
+      "category": "confidence",
+      "reverse": true,
+      "text": "While telling a story to a group, how likely are you to freeze up or fumble your words when put on the spot?"
+    },
+    {
+      "id": 69,
+      "category": "confidence",
+      "reverse": false,
+      "text": "When someone pays you a compliment, how likely are you to speak with steady confidence even under pressure?"
+    },
+    {
+      "id": 70,
+      "category": "confidence",
+      "reverse": true,
+      "text": "During a casual conversation with a coworker, how likely are you to let nerves visibly rattle you in front of others?"
+    },
+    {
+      "id": 71,
+      "category": "confidence",
+      "reverse": false,
+      "text": "When you enter an unfamiliar social circle, how likely are you to stay calm and composed when all eyes turn to you?"
+    },
+    {
+      "id": 72,
+      "category": "confidence",
+      "reverse": true,
+      "text": "While speaking in front of a large audience, how likely are you to freeze up or fumble your words when put on the spot?"
+    },
+    {
+      "id": 73,
+      "category": "confidence",
+      "reverse": false,
+      "text": "When a conversation hits an awkward pause, how likely are you to speak with steady confidence even under pressure?"
+    },
+    {
+      "id": 74,
+      "category": "confidence",
+      "reverse": true,
+      "text": "While negotiating something important, how likely are you to let nerves visibly rattle you in front of others?"
+    },
+    {
+      "id": 75,
+      "category": "confidence",
+      "reverse": false,
+      "text": "At a family or community event, how likely are you to stay calm and composed when all eyes turn to you?"
+    },
+    {
+      "id": 76,
+      "category": "eye_contact",
+      "reverse": false,
+      "text": "At a networking event, how likely are you to hold comfortable eye contact that makes others feel seen?"
+    },
+    {
+      "id": 77,
+      "category": "eye_contact",
+      "reverse": true,
+      "text": "When meeting someone for the first time, how likely are you to avoid eye contact because it feels uncomfortable?"
+    },
+    {
+      "id": 78,
+      "category": "eye_contact",
+      "reverse": false,
+      "text": "During a group conversation, how likely are you to use your gaze to show someone you’re truly listening?"
+    },
+    {
+      "id": 79,
+      "category": "eye_contact",
+      "reverse": true,
+      "text": "While giving a presentation, how likely are you to let your eyes dart around the room while someone is speaking to you?"
+    },
+    {
+      "id": 80,
+      "category": "eye_contact",
+      "reverse": false,
+      "text": "At a social gathering full of strangers, how likely are you to hold comfortable eye contact that makes others feel seen?"
+    },
+    {
+      "id": 81,
+      "category": "eye_contact",
+      "reverse": true,
+      "text": "When someone shares exciting news with you, how likely are you to avoid eye contact because it feels uncomfortable?"
+    },
+    {
+      "id": 82,
+      "category": "eye_contact",
+      "reverse": false,
+      "text": "During a difficult or tense conversation, how likely are you to use your gaze to show someone you’re truly listening?"
+    },
+    {
+      "id": 83,
+      "category": "eye_contact",
+      "reverse": true,
+      "text": "While talking to someone senior to you, how likely are you to let your eyes dart around the room while someone is speaking to you?"
+    },
+    {
+      "id": 84,
+      "category": "eye_contact",
+      "reverse": false,
+      "text": "When you walk into a room full of people, how likely are you to hold comfortable eye contact that makes others feel seen?"
+    },
+    {
+      "id": 85,
+      "category": "eye_contact",
+      "reverse": true,
+      "text": "During small talk before a meeting starts, how likely are you to avoid eye contact because it feels uncomfortable?"
+    },
+    {
+      "id": 86,
+      "category": "eye_contact",
+      "reverse": false,
+      "text": "When someone disagrees with you, how likely are you to use your gaze to show someone you’re truly listening?"
+    },
+    {
+      "id": 87,
+      "category": "eye_contact",
+      "reverse": true,
+      "text": "While on a first date, how likely are you to let your eyes dart around the room while someone is speaking to you?"
+    },
+    {
+      "id": 88,
+      "category": "eye_contact",
+      "reverse": false,
+      "text": "During a job interview, how likely are you to hold comfortable eye contact that makes others feel seen?"
+    },
+    {
+      "id": 89,
+      "category": "eye_contact",
+      "reverse": true,
+      "text": "When you’re the center of attention, how likely are you to avoid eye contact because it feels uncomfortable?"
+    },
+    {
+      "id": 90,
+      "category": "eye_contact",
+      "reverse": false,
+      "text": "While comforting a friend who is upset, how likely are you to use your gaze to show someone you’re truly listening?"
+    },
+    {
+      "id": 91,
+      "category": "eye_contact",
+      "reverse": true,
+      "text": "During a team meeting at work, how likely are you to let your eyes dart around the room while someone is speaking to you?"
+    },
+    {
+      "id": 92,
+      "category": "eye_contact",
+      "reverse": false,
+      "text": "When meeting a friend’s other friends for the first time, how likely are you to hold comfortable eye contact that makes others feel seen?"
+    },
+    {
+      "id": 93,
+      "category": "eye_contact",
+      "reverse": true,
+      "text": "While telling a story to a group, how likely are you to avoid eye contact because it feels uncomfortable?"
+    },
+    {
+      "id": 94,
+      "category": "eye_contact",
+      "reverse": false,
+      "text": "When someone pays you a compliment, how likely are you to use your gaze to show someone you’re truly listening?"
+    },
+    {
+      "id": 95,
+      "category": "eye_contact",
+      "reverse": true,
+      "text": "During a casual conversation with a coworker, how likely are you to let your eyes dart around the room while someone is speaking to you?"
+    },
+    {
+      "id": 96,
+      "category": "eye_contact",
+      "reverse": false,
+      "text": "When you enter an unfamiliar social circle, how likely are you to hold comfortable eye contact that makes others feel seen?"
+    },
+    {
+      "id": 97,
+      "category": "eye_contact",
+      "reverse": true,
+      "text": "While speaking in front of a large audience, how likely are you to avoid eye contact because it feels uncomfortable?"
+    },
+    {
+      "id": 98,
+      "category": "eye_contact",
+      "reverse": false,
+      "text": "When a conversation hits an awkward pause, how likely are you to use your gaze to show someone you’re truly listening?"
+    },
+    {
+      "id": 99,
+      "category": "eye_contact",
+      "reverse": true,
+      "text": "While negotiating something important, how likely are you to let your eyes dart around the room while someone is speaking to you?"
+    },
+    {
+      "id": 100,
+      "category": "eye_contact",
+      "reverse": false,
+      "text": "At a family or community event, how likely are you to hold comfortable eye contact that makes others feel seen?"
+    },
+    {
+      "id": 101,
+      "category": "body_language",
+      "reverse": false,
+      "text": "At a networking event, how likely are you to stand or sit with open, relaxed posture that invites conversation?"
+    },
+    {
+      "id": 102,
+      "category": "body_language",
+      "reverse": true,
+      "text": "When meeting someone for the first time, how likely are you to cross your arms or turn your body away during a conversation?"
+    },
+    {
+      "id": 103,
+      "category": "body_language",
+      "reverse": false,
+      "text": "During a group conversation, how likely are you to use natural, confident gestures while you speak?"
+    },
+    {
+      "id": 104,
+      "category": "body_language",
+      "reverse": true,
+      "text": "While giving a presentation, how likely are you to fidget or shrink your posture around new people?"
+    },
+    {
+      "id": 105,
+      "category": "body_language",
+      "reverse": false,
+      "text": "At a social gathering full of strangers, how likely are you to stand or sit with open, relaxed posture that invites conversation?"
+    },
+    {
+      "id": 106,
+      "category": "body_language",
+      "reverse": true,
+      "text": "When someone shares exciting news with you, how likely are you to cross your arms or turn your body away during a conversation?"
+    },
+    {
+      "id": 107,
+      "category": "body_language",
+      "reverse": false,
+      "text": "During a difficult or tense conversation, how likely are you to use natural, confident gestures while you speak?"
+    },
+    {
+      "id": 108,
+      "category": "body_language",
+      "reverse": true,
+      "text": "While talking to someone senior to you, how likely are you to fidget or shrink your posture around new people?"
+    },
+    {
+      "id": 109,
+      "category": "body_language",
+      "reverse": false,
+      "text": "When you walk into a room full of people, how likely are you to stand or sit with open, relaxed posture that invites conversation?"
+    },
+    {
+      "id": 110,
+      "category": "body_language",
+      "reverse": true,
+      "text": "During small talk before a meeting starts, how likely are you to cross your arms or turn your body away during a conversation?"
+    },
+    {
+      "id": 111,
+      "category": "body_language",
+      "reverse": false,
+      "text": "When someone disagrees with you, how likely are you to use natural, confident gestures while you speak?"
+    },
+    {
+      "id": 112,
+      "category": "body_language",
+      "reverse": true,
+      "text": "While on a first date, how likely are you to fidget or shrink your posture around new people?"
+    },
+    {
+      "id": 113,
+      "category": "body_language",
+      "reverse": false,
+      "text": "During a job interview, how likely are you to stand or sit with open, relaxed posture that invites conversation?"
+    },
+    {
+      "id": 114,
+      "category": "body_language",
+      "reverse": true,
+      "text": "When you’re the center of attention, how likely are you to cross your arms or turn your body away during a conversation?"
+    },
+    {
+      "id": 115,
+      "category": "body_language",
+      "reverse": false,
+      "text": "While comforting a friend who is upset, how likely are you to use natural, confident gestures while you speak?"
+    },
+    {
+      "id": 116,
+      "category": "body_language",
+      "reverse": true,
+      "text": "During a team meeting at work, how likely are you to fidget or shrink your posture around new people?"
+    },
+    {
+      "id": 117,
+      "category": "body_language",
+      "reverse": false,
+      "text": "When meeting a friend’s other friends for the first time, how likely are you to stand or sit with open, relaxed posture that invites conversation?"
+    },
+    {
+      "id": 118,
+      "category": "body_language",
+      "reverse": true,
+      "text": "While telling a story to a group, how likely are you to cross your arms or turn your body away during a conversation?"
+    },
+    {
+      "id": 119,
+      "category": "body_language",
+      "reverse": false,
+      "text": "When someone pays you a compliment, how likely are you to use natural, confident gestures while you speak?"
+    },
+    {
+      "id": 120,
+      "category": "body_language",
+      "reverse": true,
+      "text": "During a casual conversation with a coworker, how likely are you to fidget or shrink your posture around new people?"
+    },
+    {
+      "id": 121,
+      "category": "body_language",
+      "reverse": false,
+      "text": "When you enter an unfamiliar social circle, how likely are you to stand or sit with open, relaxed posture that invites conversation?"
+    },
+    {
+      "id": 122,
+      "category": "body_language",
+      "reverse": true,
+      "text": "While speaking in front of a large audience, how likely are you to cross your arms or turn your body away during a conversation?"
+    },
+    {
+      "id": 123,
+      "category": "body_language",
+      "reverse": false,
+      "text": "When a conversation hits an awkward pause, how likely are you to use natural, confident gestures while you speak?"
+    },
+    {
+      "id": 124,
+      "category": "body_language",
+      "reverse": true,
+      "text": "While negotiating something important, how likely are you to fidget or shrink your posture around new people?"
+    },
+    {
+      "id": 125,
+      "category": "body_language",
+      "reverse": false,
+      "text": "At a family or community event, how likely are you to stand or sit with open, relaxed posture that invites conversation?"
+    },
+    {
+      "id": 126,
+      "category": "vocal_expression",
+      "reverse": false,
+      "text": "At a networking event, how likely are you to vary your tone and pace to keep people engaged in what you’re saying?"
+    },
+    {
+      "id": 127,
+      "category": "vocal_expression",
+      "reverse": true,
+      "text": "When meeting someone for the first time, how likely are you to speak in a flat, monotone voice regardless of what you’re saying?"
+    },
+    {
+      "id": 128,
+      "category": "vocal_expression",
+      "reverse": false,
+      "text": "During a group conversation, how likely are you to speak clearly enough that people lean in rather than strain to hear you?"
+    },
+    {
+      "id": 129,
+      "category": "vocal_expression",
+      "reverse": true,
+      "text": "While giving a presentation, how likely are you to mumble or trail off instead of finishing your sentences clearly?"
+    },
+    {
+      "id": 130,
+      "category": "vocal_expression",
+      "reverse": false,
+      "text": "At a social gathering full of strangers, how likely are you to vary your tone and pace to keep people engaged in what you’re saying?"
+    },
+    {
+      "id": 131,
+      "category": "vocal_expression",
+      "reverse": true,
+      "text": "When someone shares exciting news with you, how likely are you to speak in a flat, monotone voice regardless of what you’re saying?"
+    },
+    {
+      "id": 132,
+      "category": "vocal_expression",
+      "reverse": false,
+      "text": "During a difficult or tense conversation, how likely are you to speak clearly enough that people lean in rather than strain to hear you?"
+    },
+    {
+      "id": 133,
+      "category": "vocal_expression",
+      "reverse": true,
+      "text": "While talking to someone senior to you, how likely are you to mumble or trail off instead of finishing your sentences clearly?"
+    },
+    {
+      "id": 134,
+      "category": "vocal_expression",
+      "reverse": false,
+      "text": "When you walk into a room full of people, how likely are you to vary your tone and pace to keep people engaged in what you’re saying?"
+    },
+    {
+      "id": 135,
+      "category": "vocal_expression",
+      "reverse": true,
+      "text": "During small talk before a meeting starts, how likely are you to speak in a flat, monotone voice regardless of what you’re saying?"
+    },
+    {
+      "id": 136,
+      "category": "vocal_expression",
+      "reverse": false,
+      "text": "When someone disagrees with you, how likely are you to speak clearly enough that people lean in rather than strain to hear you?"
+    },
+    {
+      "id": 137,
+      "category": "vocal_expression",
+      "reverse": true,
+      "text": "While on a first date, how likely are you to mumble or trail off instead of finishing your sentences clearly?"
+    },
+    {
+      "id": 138,
+      "category": "vocal_expression",
+      "reverse": false,
+      "text": "During a job interview, how likely are you to vary your tone and pace to keep people engaged in what you’re saying?"
+    },
+    {
+      "id": 139,
+      "category": "vocal_expression",
+      "reverse": true,
+      "text": "When you’re the center of attention, how likely are you to speak in a flat, monotone voice regardless of what you’re saying?"
+    },
+    {
+      "id": 140,
+      "category": "vocal_expression",
+      "reverse": false,
+      "text": "While comforting a friend who is upset, how likely are you to speak clearly enough that people lean in rather than strain to hear you?"
+    },
+    {
+      "id": 141,
+      "category": "vocal_expression",
+      "reverse": true,
+      "text": "During a team meeting at work, how likely are you to mumble or trail off instead of finishing your sentences clearly?"
+    },
+    {
+      "id": 142,
+      "category": "vocal_expression",
+      "reverse": false,
+      "text": "When meeting a friend’s other friends for the first time, how likely are you to vary your tone and pace to keep people engaged in what you’re saying?"
+    },
+    {
+      "id": 143,
+      "category": "vocal_expression",
+      "reverse": true,
+      "text": "While telling a story to a group, how likely are you to speak in a flat, monotone voice regardless of what you’re saying?"
+    },
+    {
+      "id": 144,
+      "category": "vocal_expression",
+      "reverse": false,
+      "text": "When someone pays you a compliment, how likely are you to speak clearly enough that people lean in rather than strain to hear you?"
+    },
+    {
+      "id": 145,
+      "category": "vocal_expression",
+      "reverse": true,
+      "text": "During a casual conversation with a coworker, how likely are you to mumble or trail off instead of finishing your sentences clearly?"
+    },
+    {
+      "id": 146,
+      "category": "vocal_expression",
+      "reverse": false,
+      "text": "When you enter an unfamiliar social circle, how likely are you to vary your tone and pace to keep people engaged in what you’re saying?"
+    },
+    {
+      "id": 147,
+      "category": "vocal_expression",
+      "reverse": true,
+      "text": "While speaking in front of a large audience, how likely are you to speak in a flat, monotone voice regardless of what you’re saying?"
+    },
+    {
+      "id": 148,
+      "category": "vocal_expression",
+      "reverse": false,
+      "text": "When a conversation hits an awkward pause, how likely are you to speak clearly enough that people lean in rather than strain to hear you?"
+    },
+    {
+      "id": 149,
+      "category": "vocal_expression",
+      "reverse": true,
+      "text": "While negotiating something important, how likely are you to mumble or trail off instead of finishing your sentences clearly?"
+    },
+    {
+      "id": 150,
+      "category": "vocal_expression",
+      "reverse": false,
+      "text": "At a family or community event, how likely are you to vary your tone and pace to keep people engaged in what you’re saying?"
+    },
+    {
+      "id": 151,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "At a networking event, how likely are you to ask a follow-up question that shows you were really listening?"
+    },
+    {
+      "id": 152,
+      "category": "active_listening",
+      "reverse": true,
+      "text": "When meeting someone for the first time, how likely are you to interrupt people before they finish making their point?"
+    },
+    {
+      "id": 153,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "During a group conversation, how likely are you to let someone finish their thought before you respond?"
+    },
+    {
+      "id": 154,
+      "category": "active_listening",
+      "reverse": true,
+      "text": "While giving a presentation, how likely are you to plan your next comment instead of actually listening to theirs?"
+    },
+    {
+      "id": 155,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "At a social gathering full of strangers, how likely are you to ask a follow-up question that shows you were really listening?"
+    },
+    {
+      "id": 156,
+      "category": "active_listening",
+      "reverse": true,
+      "text": "When someone shares exciting news with you, how likely are you to interrupt people before they finish making their point?"
+    },
+    {
+      "id": 157,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "During a difficult or tense conversation, how likely are you to let someone finish their thought before you respond?"
+    },
+    {
+      "id": 158,
+      "category": "active_listening",
+      "reverse": true,
+      "text": "While talking to someone senior to you, how likely are you to plan your next comment instead of actually listening to theirs?"
+    },
+    {
+      "id": 159,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "When you walk into a room full of people, how likely are you to ask a follow-up question that shows you were really listening?"
+    },
+    {
+      "id": 160,
+      "category": "active_listening",
+      "reverse": true,
+      "text": "During small talk before a meeting starts, how likely are you to interrupt people before they finish making their point?"
+    },
+    {
+      "id": 161,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "When someone disagrees with you, how likely are you to let someone finish their thought before you respond?"
+    },
+    {
+      "id": 162,
+      "category": "active_listening",
+      "reverse": true,
+      "text": "While on a first date, how likely are you to plan your next comment instead of actually listening to theirs?"
+    },
+    {
+      "id": 163,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "During a job interview, how likely are you to ask a follow-up question that shows you were really listening?"
+    },
+    {
+      "id": 164,
+      "category": "active_listening",
+      "reverse": true,
+      "text": "When you’re the center of attention, how likely are you to interrupt people before they finish making their point?"
+    },
+    {
+      "id": 165,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "While comforting a friend who is upset, how likely are you to let someone finish their thought before you respond?"
+    },
+    {
+      "id": 166,
+      "category": "active_listening",
+      "reverse": true,
+      "text": "During a team meeting at work, how likely are you to plan your next comment instead of actually listening to theirs?"
+    },
+    {
+      "id": 167,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "When meeting a friend’s other friends for the first time, how likely are you to ask a follow-up question that shows you were really listening?"
+    },
+    {
+      "id": 168,
+      "category": "active_listening",
+      "reverse": true,
+      "text": "While telling a story to a group, how likely are you to interrupt people before they finish making their point?"
+    },
+    {
+      "id": 169,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "When someone pays you a compliment, how likely are you to let someone finish their thought before you respond?"
+    },
+    {
+      "id": 170,
+      "category": "active_listening",
+      "reverse": true,
+      "text": "During a casual conversation with a coworker, how likely are you to plan your next comment instead of actually listening to theirs?"
+    },
+    {
+      "id": 171,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "When you enter an unfamiliar social circle, how likely are you to ask a follow-up question that shows you were really listening?"
+    },
+    {
+      "id": 172,
+      "category": "active_listening",
+      "reverse": true,
+      "text": "While speaking in front of a large audience, how likely are you to interrupt people before they finish making their point?"
+    },
+    {
+      "id": 173,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "When a conversation hits an awkward pause, how likely are you to let someone finish their thought before you respond?"
+    },
+    {
+      "id": 174,
+      "category": "active_listening",
+      "reverse": true,
+      "text": "While negotiating something important, how likely are you to plan your next comment instead of actually listening to theirs?"
+    },
+    {
+      "id": 175,
+      "category": "active_listening",
+      "reverse": false,
+      "text": "At a family or community event, how likely are you to ask a follow-up question that shows you were really listening?"
+    },
+    {
+      "id": 176,
+      "category": "storytelling",
+      "reverse": false,
+      "text": "At a networking event, how likely are you to tell a story in a way that keeps people hooked until the end?"
+    },
+    {
+      "id": 177,
+      "category": "storytelling",
+      "reverse": true,
+      "text": "When meeting someone for the first time, how likely are you to ramble through a story without a clear point?"
+    },
+    {
+      "id": 178,
+      "category": "storytelling",
+      "reverse": false,
+      "text": "During a group conversation, how likely are you to use vivid detail that helps others picture what you’re describing?"
+    },
+    {
+      "id": 179,
+      "category": "storytelling",
+      "reverse": true,
+      "text": "While giving a presentation, how likely are you to tell a story so flatly that people lose interest halfway through?"
+    },
+    {
+      "id": 180,
+      "category": "storytelling",
+      "reverse": false,
+      "text": "At a social gathering full of strangers, how likely are you to tell a story in a way that keeps people hooked until the end?"
+    },
+    {
+      "id": 181,
+      "category": "storytelling",
+      "reverse": true,
+      "text": "When someone shares exciting news with you, how likely are you to ramble through a story without a clear point?"
+    },
+    {
+      "id": 182,
+      "category": "storytelling",
+      "reverse": false,
+      "text": "During a difficult or tense conversation, how likely are you to use vivid detail that helps others picture what you’re describing?"
+    },
+    {
+      "id": 183,
+      "category": "storytelling",
+      "reverse": true,
+      "text": "While talking to someone senior to you, how likely are you to tell a story so flatly that people lose interest halfway through?"
+    },
+    {
+      "id": 184,
+      "category": "storytelling",
+      "reverse": false,
+      "text": "When you walk into a room full of people, how likely are you to tell a story in a way that keeps people hooked until the end?"
+    },
+    {
+      "id": 185,
+      "category": "storytelling",
+      "reverse": true,
+      "text": "During small talk before a meeting starts, how likely are you to ramble through a story without a clear point?"
+    },
+    {
+      "id": 186,
+      "category": "storytelling",
+      "reverse": false,
+      "text": "When someone disagrees with you, how likely are you to use vivid detail that helps others picture what you’re describing?"
+    },
+    {
+      "id": 187,
+      "category": "storytelling",
+      "reverse": true,
+      "text": "While on a first date, how likely are you to tell a story so flatly that people lose interest halfway through?"
+    },
+    {
+      "id": 188,
+      "category": "storytelling",
+      "reverse": false,
+      "text": "During a job interview, how likely are you to tell a story in a way that keeps people hooked until the end?"
+    },
+    {
+      "id": 189,
+      "category": "storytelling",
+      "reverse": true,
+      "text": "When you’re the center of attention, how likely are you to ramble through a story without a clear point?"
+    },
+    {
+      "id": 190,
+      "category": "storytelling",
+      "reverse": false,
+      "text": "While comforting a friend who is upset, how likely are you to use vivid detail that helps others picture what you’re describing?"
+    },
+    {
+      "id": 191,
+      "category": "storytelling",
+      "reverse": true,
+      "text": "During a team meeting at work, how likely are you to tell a story so flatly that people lose interest halfway through?"
+    },
+    {
+      "id": 192,
+      "category": "storytelling",
+      "reverse": false,
+      "text": "When meeting a friend’s other friends for the first time, how likely are you to tell a story in a way that keeps people hooked until the end?"
+    },
+    {
+      "id": 193,
+      "category": "storytelling",
+      "reverse": true,
+      "text": "While telling a story to a group, how likely are you to ramble through a story without a clear point?"
+    },
+    {
+      "id": 194,
+      "category": "storytelling",
+      "reverse": false,
+      "text": "When someone pays you a compliment, how likely are you to use vivid detail that helps others picture what you’re describing?"
+    },
+    {
+      "id": 195,
+      "category": "storytelling",
+      "reverse": true,
+      "text": "During a casual conversation with a coworker, how likely are you to tell a story so flatly that people lose interest halfway through?"
+    },
+    {
+      "id": 196,
+      "category": "storytelling",
+      "reverse": false,
+      "text": "When you enter an unfamiliar social circle, how likely are you to tell a story in a way that keeps people hooked until the end?"
+    },
+    {
+      "id": 197,
+      "category": "storytelling",
+      "reverse": true,
+      "text": "While speaking in front of a large audience, how likely are you to ramble through a story without a clear point?"
+    },
+    {
+      "id": 198,
+      "category": "storytelling",
+      "reverse": false,
+      "text": "When a conversation hits an awkward pause, how likely are you to use vivid detail that helps others picture what you’re describing?"
+    },
+    {
+      "id": 199,
+      "category": "storytelling",
+      "reverse": true,
+      "text": "While negotiating something important, how likely are you to tell a story so flatly that people lose interest halfway through?"
+    },
+    {
+      "id": 200,
+      "category": "storytelling",
+      "reverse": false,
+      "text": "At a family or community event, how likely are you to tell a story in a way that keeps people hooked until the end?"
+    },
+    {
+      "id": 201,
+      "category": "humor",
+      "reverse": false,
+      "text": "At a networking event, how likely are you to use light humor to put people at ease?"
+    },
+    {
+      "id": 202,
+      "category": "humor",
+      "reverse": true,
+      "text": "When meeting someone for the first time, how likely are you to make a joke at someone else’s expense to get a laugh?"
+    },
+    {
+      "id": 203,
+      "category": "humor",
+      "reverse": false,
+      "text": "During a group conversation, how likely are you to laugh easily at yourself when something goes wrong?"
+    },
+    {
+      "id": 204,
+      "category": "humor",
+      "reverse": true,
+      "text": "While giving a presentation, how likely are you to stay so serious that conversations feel heavy or tense?"
+    },
+    {
+      "id": 205,
+      "category": "humor",
+      "reverse": false,
+      "text": "At a social gathering full of strangers, how likely are you to use light humor to put people at ease?"
+    },
+    {
+      "id": 206,
+      "category": "humor",
+      "reverse": true,
+      "text": "When someone shares exciting news with you, how likely are you to make a joke at someone else’s expense to get a laugh?"
+    },
+    {
+      "id": 207,
+      "category": "humor",
+      "reverse": false,
+      "text": "During a difficult or tense conversation, how likely are you to laugh easily at yourself when something goes wrong?"
+    },
+    {
+      "id": 208,
+      "category": "humor",
+      "reverse": true,
+      "text": "While talking to someone senior to you, how likely are you to stay so serious that conversations feel heavy or tense?"
+    },
+    {
+      "id": 209,
+      "category": "humor",
+      "reverse": false,
+      "text": "When you walk into a room full of people, how likely are you to use light humor to put people at ease?"
+    },
+    {
+      "id": 210,
+      "category": "humor",
+      "reverse": true,
+      "text": "During small talk before a meeting starts, how likely are you to make a joke at someone else’s expense to get a laugh?"
+    },
+    {
+      "id": 211,
+      "category": "humor",
+      "reverse": false,
+      "text": "When someone disagrees with you, how likely are you to laugh easily at yourself when something goes wrong?"
+    },
+    {
+      "id": 212,
+      "category": "humor",
+      "reverse": true,
+      "text": "While on a first date, how likely are you to stay so serious that conversations feel heavy or tense?"
+    },
+    {
+      "id": 213,
+      "category": "humor",
+      "reverse": false,
+      "text": "During a job interview, how likely are you to use light humor to put people at ease?"
+    },
+    {
+      "id": 214,
+      "category": "humor",
+      "reverse": true,
+      "text": "When you’re the center of attention, how likely are you to make a joke at someone else’s expense to get a laugh?"
+    },
+    {
+      "id": 215,
+      "category": "humor",
+      "reverse": false,
+      "text": "While comforting a friend who is upset, how likely are you to laugh easily at yourself when something goes wrong?"
+    },
+    {
+      "id": 216,
+      "category": "humor",
+      "reverse": true,
+      "text": "During a team meeting at work, how likely are you to stay so serious that conversations feel heavy or tense?"
+    },
+    {
+      "id": 217,
+      "category": "humor",
+      "reverse": false,
+      "text": "When meeting a friend’s other friends for the first time, how likely are you to use light humor to put people at ease?"
+    },
+    {
+      "id": 218,
+      "category": "humor",
+      "reverse": true,
+      "text": "While telling a story to a group, how likely are you to make a joke at someone else’s expense to get a laugh?"
+    },
+    {
+      "id": 219,
+      "category": "humor",
+      "reverse": false,
+      "text": "When someone pays you a compliment, how likely are you to laugh easily at yourself when something goes wrong?"
+    },
+    {
+      "id": 220,
+      "category": "humor",
+      "reverse": true,
+      "text": "During a casual conversation with a coworker, how likely are you to stay so serious that conversations feel heavy or tense?"
+    },
+    {
+      "id": 221,
+      "category": "humor",
+      "reverse": false,
+      "text": "When you enter an unfamiliar social circle, how likely are you to use light humor to put people at ease?"
+    },
+    {
+      "id": 222,
+      "category": "humor",
+      "reverse": true,
+      "text": "While speaking in front of a large audience, how likely are you to make a joke at someone else’s expense to get a laugh?"
+    },
+    {
+      "id": 223,
+      "category": "humor",
+      "reverse": false,
+      "text": "When a conversation hits an awkward pause, how likely are you to laugh easily at yourself when something goes wrong?"
+    },
+    {
+      "id": 224,
+      "category": "humor",
+      "reverse": true,
+      "text": "While negotiating something important, how likely are you to stay so serious that conversations feel heavy or tense?"
+    },
+    {
+      "id": 225,
+      "category": "humor",
+      "reverse": false,
+      "text": "At a family or community event, how likely are you to use light humor to put people at ease?"
+    },
+    {
+      "id": 226,
+      "category": "conversational_skill",
+      "reverse": false,
+      "text": "At a networking event, how likely are you to keep a conversation flowing naturally with someone you just met?"
+    },
+    {
+      "id": 227,
+      "category": "conversational_skill",
+      "reverse": true,
+      "text": "When meeting someone for the first time, how likely are you to let conversations stall into awkward silence?"
+    },
+    {
+      "id": 228,
+      "category": "conversational_skill",
+      "reverse": false,
+      "text": "During a group conversation, how likely are you to find something interesting to talk about even in small talk?"
+    },
+    {
+      "id": 229,
+      "category": "conversational_skill",
+      "reverse": true,
+      "text": "While giving a presentation, how likely are you to dominate a conversation without giving others room to speak?"
+    },
+    {
+      "id": 230,
+      "category": "conversational_skill",
+      "reverse": false,
+      "text": "At a social gathering full of strangers, how likely are you to keep a conversation flowing naturally with someone you just met?"
+    },
+    {
+      "id": 231,
+      "category": "conversational_skill",
+      "reverse": true,
+      "text": "When someone shares exciting news with you, how likely are you to let conversations stall into awkward silence?"
+    },
+    {
+      "id": 232,
+      "category": "conversational_skill",
+      "reverse": false,
+      "text": "During a difficult or tense conversation, how likely are you to find something interesting to talk about even in small talk?"
+    },
+    {
+      "id": 233,
+      "category": "conversational_skill",
+      "reverse": true,
+      "text": "While talking to someone senior to you, how likely are you to dominate a conversation without giving others room to speak?"
+    },
+    {
+      "id": 234,
+      "category": "conversational_skill",
+      "reverse": false,
+      "text": "When you walk into a room full of people, how likely are you to keep a conversation flowing naturally with someone you just met?"
+    },
+    {
+      "id": 235,
+      "category": "conversational_skill",
+      "reverse": true,
+      "text": "During small talk before a meeting starts, how likely are you to let conversations stall into awkward silence?"
+    },
+    {
+      "id": 236,
+      "category": "conversational_skill",
+      "reverse": false,
+      "text": "When someone disagrees with you, how likely are you to find something interesting to talk about even in small talk?"
+    },
+    {
+      "id": 237,
+      "category": "conversational_skill",
+      "reverse": true,
+      "text": "While on a first date, how likely are you to dominate a conversation without giving others room to speak?"
+    },
+    {
+      "id": 238,
+      "category": "conversational_skill",
+      "reverse": false,
+      "text": "During a job interview, how likely are you to keep a conversation flowing naturally with someone you just met?"
+    },
+    {
+      "id": 239,
+      "category": "conversational_skill",
+      "reverse": true,
+      "text": "When you’re the center of attention, how likely are you to let conversations stall into awkward silence?"
+    },
+    {
+      "id": 240,
+      "category": "conversational_skill",
+      "reverse": false,
+      "text": "While comforting a friend who is upset, how likely are you to find something interesting to talk about even in small talk?"
+    },
+    {
+      "id": 241,
+      "category": "conversational_skill",
+      "reverse": true,
+      "text": "During a team meeting at work, how likely are you to dominate a conversation without giving others room to speak?"
+    },
+    {
+      "id": 242,
+      "category": "conversational_skill",
+      "reverse": false,
+      "text": "When meeting a friend’s other friends for the first time, how likely are you to keep a conversation flowing naturally with someone you just met?"
+    },
+    {
+      "id": 243,
+      "category": "conversational_skill",
+      "reverse": true,
+      "text": "While telling a story to a group, how likely are you to let conversations stall into awkward silence?"
+    },
+    {
+      "id": 244,
+      "category": "conversational_skill",
+      "reverse": false,
+      "text": "When someone pays you a compliment, how likely are you to find something interesting to talk about even in small talk?"
+    },
+    {
+      "id": 245,
+      "category": "conversational_skill",
+      "reverse": true,
+      "text": "During a casual conversation with a coworker, how likely are you to dominate a conversation without giving others room to speak?"
+    },
+    {
+      "id": 246,
+      "category": "conversational_skill",
+      "reverse": false,
+      "text": "When you enter an unfamiliar social circle, how likely are you to keep a conversation flowing naturally with someone you just met?"
+    },
+    {
+      "id": 247,
+      "category": "conversational_skill",
+      "reverse": true,
+      "text": "While speaking in front of a large audience, how likely are you to let conversations stall into awkward silence?"
+    },
+    {
+      "id": 248,
+      "category": "conversational_skill",
+      "reverse": false,
+      "text": "When a conversation hits an awkward pause, how likely are you to find something interesting to talk about even in small talk?"
+    },
+    {
+      "id": 249,
+      "category": "conversational_skill",
+      "reverse": true,
+      "text": "While negotiating something important, how likely are you to dominate a conversation without giving others room to speak?"
+    },
+    {
+      "id": 250,
+      "category": "conversational_skill",
+      "reverse": false,
+      "text": "At a family or community event, how likely are you to keep a conversation flowing naturally with someone you just met?"
+    },
+    {
+      "id": 251,
+      "category": "empathy",
+      "reverse": false,
+      "text": "At a networking event, how likely are you to pick up on how someone is really feeling, even if they don’t say it?"
+    },
+    {
+      "id": 252,
+      "category": "empathy",
+      "reverse": true,
+      "text": "When meeting someone for the first time, how likely are you to miss obvious signs that someone is upset or uncomfortable?"
+    },
+    {
+      "id": 253,
+      "category": "empathy",
+      "reverse": false,
+      "text": "During a group conversation, how likely are you to adjust what you say based on someone’s mood in the moment?"
+    },
+    {
+      "id": 254,
+      "category": "empathy",
+      "reverse": true,
+      "text": "While giving a presentation, how likely are you to keep talking about yourself when someone clearly needs support?"
+    },
+    {
+      "id": 255,
+      "category": "empathy",
+      "reverse": false,
+      "text": "At a social gathering full of strangers, how likely are you to pick up on how someone is really feeling, even if they don’t say it?"
+    },
+    {
+      "id": 256,
+      "category": "empathy",
+      "reverse": true,
+      "text": "When someone shares exciting news with you, how likely are you to miss obvious signs that someone is upset or uncomfortable?"
+    },
+    {
+      "id": 257,
+      "category": "empathy",
+      "reverse": false,
+      "text": "During a difficult or tense conversation, how likely are you to adjust what you say based on someone’s mood in the moment?"
+    },
+    {
+      "id": 258,
+      "category": "empathy",
+      "reverse": true,
+      "text": "While talking to someone senior to you, how likely are you to keep talking about yourself when someone clearly needs support?"
+    },
+    {
+      "id": 259,
+      "category": "empathy",
+      "reverse": false,
+      "text": "When you walk into a room full of people, how likely are you to pick up on how someone is really feeling, even if they don’t say it?"
+    },
+    {
+      "id": 260,
+      "category": "empathy",
+      "reverse": true,
+      "text": "During small talk before a meeting starts, how likely are you to miss obvious signs that someone is upset or uncomfortable?"
+    },
+    {
+      "id": 261,
+      "category": "empathy",
+      "reverse": false,
+      "text": "When someone disagrees with you, how likely are you to adjust what you say based on someone’s mood in the moment?"
+    },
+    {
+      "id": 262,
+      "category": "empathy",
+      "reverse": true,
+      "text": "While on a first date, how likely are you to keep talking about yourself when someone clearly needs support?"
+    },
+    {
+      "id": 263,
+      "category": "empathy",
+      "reverse": false,
+      "text": "During a job interview, how likely are you to pick up on how someone is really feeling, even if they don’t say it?"
+    },
+    {
+      "id": 264,
+      "category": "empathy",
+      "reverse": true,
+      "text": "When you’re the center of attention, how likely are you to miss obvious signs that someone is upset or uncomfortable?"
+    },
+    {
+      "id": 265,
+      "category": "empathy",
+      "reverse": false,
+      "text": "While comforting a friend who is upset, how likely are you to adjust what you say based on someone’s mood in the moment?"
+    },
+    {
+      "id": 266,
+      "category": "empathy",
+      "reverse": true,
+      "text": "During a team meeting at work, how likely are you to keep talking about yourself when someone clearly needs support?"
+    },
+    {
+      "id": 267,
+      "category": "empathy",
+      "reverse": false,
+      "text": "When meeting a friend’s other friends for the first time, how likely are you to pick up on how someone is really feeling, even if they don’t say it?"
+    },
+    {
+      "id": 268,
+      "category": "empathy",
+      "reverse": true,
+      "text": "While telling a story to a group, how likely are you to miss obvious signs that someone is upset or uncomfortable?"
+    },
+    {
+      "id": 269,
+      "category": "empathy",
+      "reverse": false,
+      "text": "When someone pays you a compliment, how likely are you to adjust what you say based on someone’s mood in the moment?"
+    },
+    {
+      "id": 270,
+      "category": "empathy",
+      "reverse": true,
+      "text": "During a casual conversation with a coworker, how likely are you to keep talking about yourself when someone clearly needs support?"
+    },
+    {
+      "id": 271,
+      "category": "empathy",
+      "reverse": false,
+      "text": "When you enter an unfamiliar social circle, how likely are you to pick up on how someone is really feeling, even if they don’t say it?"
+    },
+    {
+      "id": 272,
+      "category": "empathy",
+      "reverse": true,
+      "text": "While speaking in front of a large audience, how likely are you to miss obvious signs that someone is upset or uncomfortable?"
+    },
+    {
+      "id": 273,
+      "category": "empathy",
+      "reverse": false,
+      "text": "When a conversation hits an awkward pause, how likely are you to adjust what you say based on someone’s mood in the moment?"
+    },
+    {
+      "id": 274,
+      "category": "empathy",
+      "reverse": true,
+      "text": "While negotiating something important, how likely are you to keep talking about yourself when someone clearly needs support?"
+    },
+    {
+      "id": 275,
+      "category": "empathy",
+      "reverse": false,
+      "text": "At a family or community event, how likely are you to pick up on how someone is really feeling, even if they don’t say it?"
+    },
+    {
+      "id": 276,
+      "category": "authenticity",
+      "reverse": false,
+      "text": "At a networking event, how likely are you to express your genuine opinions even when they differ from the group?"
+    },
+    {
+      "id": 277,
+      "category": "authenticity",
+      "reverse": true,
+      "text": "When meeting someone for the first time, how likely are you to say what you think people want to hear instead of what you actually think?"
+    },
+    {
+      "id": 278,
+      "category": "authenticity",
+      "reverse": false,
+      "text": "During a group conversation, how likely are you to let people see the real you rather than a rehearsed version?"
+    },
+    {
+      "id": 279,
+      "category": "authenticity",
+      "reverse": true,
+      "text": "While giving a presentation, how likely are you to put on a fake persona to impress people you’ve just met?"
+    },
+    {
+      "id": 280,
+      "category": "authenticity",
+      "reverse": false,
+      "text": "At a social gathering full of strangers, how likely are you to express your genuine opinions even when they differ from the group?"
+    },
+    {
+      "id": 281,
+      "category": "authenticity",
+      "reverse": true,
+      "text": "When someone shares exciting news with you, how likely are you to say what you think people want to hear instead of what you actually think?"
+    },
+    {
+      "id": 282,
+      "category": "authenticity",
+      "reverse": false,
+      "text": "During a difficult or tense conversation, how likely are you to let people see the real you rather than a rehearsed version?"
+    },
+    {
+      "id": 283,
+      "category": "authenticity",
+      "reverse": true,
+      "text": "While talking to someone senior to you, how likely are you to put on a fake persona to impress people you’ve just met?"
+    },
+    {
+      "id": 284,
+      "category": "authenticity",
+      "reverse": false,
+      "text": "When you walk into a room full of people, how likely are you to express your genuine opinions even when they differ from the group?"
+    },
+    {
+      "id": 285,
+      "category": "authenticity",
+      "reverse": true,
+      "text": "During small talk before a meeting starts, how likely are you to say what you think people want to hear instead of what you actually think?"
+    },
+    {
+      "id": 286,
+      "category": "authenticity",
+      "reverse": false,
+      "text": "When someone disagrees with you, how likely are you to let people see the real you rather than a rehearsed version?"
+    },
+    {
+      "id": 287,
+      "category": "authenticity",
+      "reverse": true,
+      "text": "While on a first date, how likely are you to put on a fake persona to impress people you’ve just met?"
+    },
+    {
+      "id": 288,
+      "category": "authenticity",
+      "reverse": false,
+      "text": "During a job interview, how likely are you to express your genuine opinions even when they differ from the group?"
+    },
+    {
+      "id": 289,
+      "category": "authenticity",
+      "reverse": true,
+      "text": "When you’re the center of attention, how likely are you to say what you think people want to hear instead of what you actually think?"
+    },
+    {
+      "id": 290,
+      "category": "authenticity",
+      "reverse": false,
+      "text": "While comforting a friend who is upset, how likely are you to let people see the real you rather than a rehearsed version?"
+    },
+    {
+      "id": 291,
+      "category": "authenticity",
+      "reverse": true,
+      "text": "During a team meeting at work, how likely are you to put on a fake persona to impress people you’ve just met?"
+    },
+    {
+      "id": 292,
+      "category": "authenticity",
+      "reverse": false,
+      "text": "When meeting a friend’s other friends for the first time, how likely are you to express your genuine opinions even when they differ from the group?"
+    },
+    {
+      "id": 293,
+      "category": "authenticity",
+      "reverse": true,
+      "text": "While telling a story to a group, how likely are you to say what you think people want to hear instead of what you actually think?"
+    },
+    {
+      "id": 294,
+      "category": "authenticity",
+      "reverse": false,
+      "text": "When someone pays you a compliment, how likely are you to let people see the real you rather than a rehearsed version?"
+    },
+    {
+      "id": 295,
+      "category": "authenticity",
+      "reverse": true,
+      "text": "During a casual conversation with a coworker, how likely are you to put on a fake persona to impress people you’ve just met?"
+    },
+    {
+      "id": 296,
+      "category": "authenticity",
+      "reverse": false,
+      "text": "When you enter an unfamiliar social circle, how likely are you to express your genuine opinions even when they differ from the group?"
+    },
+    {
+      "id": 297,
+      "category": "authenticity",
+      "reverse": true,
+      "text": "While speaking in front of a large audience, how likely are you to say what you think people want to hear instead of what you actually think?"
+    },
+    {
+      "id": 298,
+      "category": "authenticity",
+      "reverse": false,
+      "text": "When a conversation hits an awkward pause, how likely are you to let people see the real you rather than a rehearsed version?"
+    },
+    {
+      "id": 299,
+      "category": "authenticity",
+      "reverse": true,
+      "text": "While negotiating something important, how likely are you to put on a fake persona to impress people you’ve just met?"
+    },
+    {
+      "id": 300,
+      "category": "authenticity",
+      "reverse": false,
+      "text": "At a family or community event, how likely are you to express your genuine opinions even when they differ from the group?"
+    },
+    {
+      "id": 301,
+      "category": "energy",
+      "reverse": false,
+      "text": "At a networking event, how likely are you to bring noticeable energy into a room when you walk in?"
+    },
+    {
+      "id": 302,
+      "category": "energy",
+      "reverse": true,
+      "text": "When meeting someone for the first time, how likely are you to drain the energy out of a room with a flat, low mood?"
+    },
+    {
+      "id": 303,
+      "category": "energy",
+      "reverse": false,
+      "text": "During a group conversation, how likely are you to show genuine enthusiasm about things that matter to you?"
+    },
+    {
+      "id": 304,
+      "category": "energy",
+      "reverse": true,
+      "text": "While giving a presentation, how likely are you to come across as bored or indifferent in social settings?"
+    },
+    {
+      "id": 305,
+      "category": "energy",
+      "reverse": false,
+      "text": "At a social gathering full of strangers, how likely are you to bring noticeable energy into a room when you walk in?"
+    },
+    {
+      "id": 306,
+      "category": "energy",
+      "reverse": true,
+      "text": "When someone shares exciting news with you, how likely are you to drain the energy out of a room with a flat, low mood?"
+    },
+    {
+      "id": 307,
+      "category": "energy",
+      "reverse": false,
+      "text": "During a difficult or tense conversation, how likely are you to show genuine enthusiasm about things that matter to you?"
+    },
+    {
+      "id": 308,
+      "category": "energy",
+      "reverse": true,
+      "text": "While talking to someone senior to you, how likely are you to come across as bored or indifferent in social settings?"
+    },
+    {
+      "id": 309,
+      "category": "energy",
+      "reverse": false,
+      "text": "When you walk into a room full of people, how likely are you to bring noticeable energy into a room when you walk in?"
+    },
+    {
+      "id": 310,
+      "category": "energy",
+      "reverse": true,
+      "text": "During small talk before a meeting starts, how likely are you to drain the energy out of a room with a flat, low mood?"
+    },
+    {
+      "id": 311,
+      "category": "energy",
+      "reverse": false,
+      "text": "When someone disagrees with you, how likely are you to show genuine enthusiasm about things that matter to you?"
+    },
+    {
+      "id": 312,
+      "category": "energy",
+      "reverse": true,
+      "text": "While on a first date, how likely are you to come across as bored or indifferent in social settings?"
+    },
+    {
+      "id": 313,
+      "category": "energy",
+      "reverse": false,
+      "text": "During a job interview, how likely are you to bring noticeable energy into a room when you walk in?"
+    },
+    {
+      "id": 314,
+      "category": "energy",
+      "reverse": true,
+      "text": "When you’re the center of attention, how likely are you to drain the energy out of a room with a flat, low mood?"
+    },
+    {
+      "id": 315,
+      "category": "energy",
+      "reverse": false,
+      "text": "While comforting a friend who is upset, how likely are you to show genuine enthusiasm about things that matter to you?"
+    },
+    {
+      "id": 316,
+      "category": "energy",
+      "reverse": true,
+      "text": "During a team meeting at work, how likely are you to come across as bored or indifferent in social settings?"
+    },
+    {
+      "id": 317,
+      "category": "energy",
+      "reverse": false,
+      "text": "When meeting a friend’s other friends for the first time, how likely are you to bring noticeable energy into a room when you walk in?"
+    },
+    {
+      "id": 318,
+      "category": "energy",
+      "reverse": true,
+      "text": "While telling a story to a group, how likely are you to drain the energy out of a room with a flat, low mood?"
+    },
+    {
+      "id": 319,
+      "category": "energy",
+      "reverse": false,
+      "text": "When someone pays you a compliment, how likely are you to show genuine enthusiasm about things that matter to you?"
+    },
+    {
+      "id": 320,
+      "category": "energy",
+      "reverse": true,
+      "text": "During a casual conversation with a coworker, how likely are you to come across as bored or indifferent in social settings?"
+    },
+    {
+      "id": 321,
+      "category": "energy",
+      "reverse": false,
+      "text": "When you enter an unfamiliar social circle, how likely are you to bring noticeable energy into a room when you walk in?"
+    },
+    {
+      "id": 322,
+      "category": "energy",
+      "reverse": true,
+      "text": "While speaking in front of a large audience, how likely are you to drain the energy out of a room with a flat, low mood?"
+    },
+    {
+      "id": 323,
+      "category": "energy",
+      "reverse": false,
+      "text": "When a conversation hits an awkward pause, how likely are you to show genuine enthusiasm about things that matter to you?"
+    },
+    {
+      "id": 324,
+      "category": "energy",
+      "reverse": true,
+      "text": "While negotiating something important, how likely are you to come across as bored or indifferent in social settings?"
+    },
+    {
+      "id": 325,
+      "category": "energy",
+      "reverse": false,
+      "text": "At a family or community event, how likely are you to bring noticeable energy into a room when you walk in?"
+    },
+    {
+      "id": 326,
+      "category": "influence",
+      "reverse": false,
+      "text": "At a networking event, how likely are you to get people genuinely on board with an idea you care about?"
+    },
+    {
+      "id": 327,
+      "category": "influence",
+      "reverse": true,
+      "text": "When meeting someone for the first time, how likely are you to struggle to get anyone to take your suggestions seriously?"
+    },
+    {
+      "id": 328,
+      "category": "influence",
+      "reverse": false,
+      "text": "During a group conversation, how likely are you to change someone’s mind through genuine conviction rather than pressure?"
+    },
+    {
+      "id": 329,
+      "category": "influence",
+      "reverse": true,
+      "text": "While giving a presentation, how likely are you to rely on pressure or repetition instead of genuine persuasion?"
+    },
+    {
+      "id": 330,
+      "category": "influence",
+      "reverse": false,
+      "text": "At a social gathering full of strangers, how likely are you to get people genuinely on board with an idea you care about?"
+    },
+    {
+      "id": 331,
+      "category": "influence",
+      "reverse": true,
+      "text": "When someone shares exciting news with you, how likely are you to struggle to get anyone to take your suggestions seriously?"
+    },
+    {
+      "id": 332,
+      "category": "influence",
+      "reverse": false,
+      "text": "During a difficult or tense conversation, how likely are you to change someone’s mind through genuine conviction rather than pressure?"
+    },
+    {
+      "id": 333,
+      "category": "influence",
+      "reverse": true,
+      "text": "While talking to someone senior to you, how likely are you to rely on pressure or repetition instead of genuine persuasion?"
+    },
+    {
+      "id": 334,
+      "category": "influence",
+      "reverse": false,
+      "text": "When you walk into a room full of people, how likely are you to get people genuinely on board with an idea you care about?"
+    },
+    {
+      "id": 335,
+      "category": "influence",
+      "reverse": true,
+      "text": "During small talk before a meeting starts, how likely are you to struggle to get anyone to take your suggestions seriously?"
+    },
+    {
+      "id": 336,
+      "category": "influence",
+      "reverse": false,
+      "text": "When someone disagrees with you, how likely are you to change someone’s mind through genuine conviction rather than pressure?"
+    },
+    {
+      "id": 337,
+      "category": "influence",
+      "reverse": true,
+      "text": "While on a first date, how likely are you to rely on pressure or repetition instead of genuine persuasion?"
+    },
+    {
+      "id": 338,
+      "category": "influence",
+      "reverse": false,
+      "text": "During a job interview, how likely are you to get people genuinely on board with an idea you care about?"
+    },
+    {
+      "id": 339,
+      "category": "influence",
+      "reverse": true,
+      "text": "When you’re the center of attention, how likely are you to struggle to get anyone to take your suggestions seriously?"
+    },
+    {
+      "id": 340,
+      "category": "influence",
+      "reverse": false,
+      "text": "While comforting a friend who is upset, how likely are you to change someone’s mind through genuine conviction rather than pressure?"
+    },
+    {
+      "id": 341,
+      "category": "influence",
+      "reverse": true,
+      "text": "During a team meeting at work, how likely are you to rely on pressure or repetition instead of genuine persuasion?"
+    },
+    {
+      "id": 342,
+      "category": "influence",
+      "reverse": false,
+      "text": "When meeting a friend’s other friends for the first time, how likely are you to get people genuinely on board with an idea you care about?"
+    },
+    {
+      "id": 343,
+      "category": "influence",
+      "reverse": true,
+      "text": "While telling a story to a group, how likely are you to struggle to get anyone to take your suggestions seriously?"
+    },
+    {
+      "id": 344,
+      "category": "influence",
+      "reverse": false,
+      "text": "When someone pays you a compliment, how likely are you to change someone’s mind through genuine conviction rather than pressure?"
+    },
+    {
+      "id": 345,
+      "category": "influence",
+      "reverse": true,
+      "text": "During a casual conversation with a coworker, how likely are you to rely on pressure or repetition instead of genuine persuasion?"
+    },
+    {
+      "id": 346,
+      "category": "influence",
+      "reverse": false,
+      "text": "When you enter an unfamiliar social circle, how likely are you to get people genuinely on board with an idea you care about?"
+    },
+    {
+      "id": 347,
+      "category": "influence",
+      "reverse": true,
+      "text": "While speaking in front of a large audience, how likely are you to struggle to get anyone to take your suggestions seriously?"
+    },
+    {
+      "id": 348,
+      "category": "influence",
+      "reverse": false,
+      "text": "When a conversation hits an awkward pause, how likely are you to change someone’s mind through genuine conviction rather than pressure?"
+    },
+    {
+      "id": 349,
+      "category": "influence",
+      "reverse": true,
+      "text": "While negotiating something important, how likely are you to rely on pressure or repetition instead of genuine persuasion?"
+    },
+    {
+      "id": 350,
+      "category": "influence",
+      "reverse": false,
+      "text": "At a family or community event, how likely are you to get people genuinely on board with an idea you care about?"
+    },
+    {
+      "id": 351,
+      "category": "social_confidence",
+      "reverse": false,
+      "text": "At a networking event, how likely are you to walk up and introduce yourself to someone you don’t know?"
+    },
+    {
+      "id": 352,
+      "category": "social_confidence",
+      "reverse": true,
+      "text": "When meeting someone for the first time, how likely are you to hang back and wait for others to approach you first?"
+    },
+    {
+      "id": 353,
+      "category": "social_confidence",
+      "reverse": false,
+      "text": "During a group conversation, how likely are you to start a conversation with a stranger at a social event?"
+    },
+    {
+      "id": 354,
+      "category": "social_confidence",
+      "reverse": true,
+      "text": "While giving a presentation, how likely are you to avoid a room full of unfamiliar people rather than enter it?"
+    },
+    {
+      "id": 355,
+      "category": "social_confidence",
+      "reverse": false,
+      "text": "At a social gathering full of strangers, how likely are you to walk up and introduce yourself to someone you don’t know?"
+    },
+    {
+      "id": 356,
+      "category": "social_confidence",
+      "reverse": true,
+      "text": "When someone shares exciting news with you, how likely are you to hang back and wait for others to approach you first?"
+    },
+    {
+      "id": 357,
+      "category": "social_confidence",
+      "reverse": false,
+      "text": "During a difficult or tense conversation, how likely are you to start a conversation with a stranger at a social event?"
+    },
+    {
+      "id": 358,
+      "category": "social_confidence",
+      "reverse": true,
+      "text": "While talking to someone senior to you, how likely are you to avoid a room full of unfamiliar people rather than enter it?"
+    },
+    {
+      "id": 359,
+      "category": "social_confidence",
+      "reverse": false,
+      "text": "When you walk into a room full of people, how likely are you to walk up and introduce yourself to someone you don’t know?"
+    },
+    {
+      "id": 360,
+      "category": "social_confidence",
+      "reverse": true,
+      "text": "During small talk before a meeting starts, how likely are you to hang back and wait for others to approach you first?"
+    },
+    {
+      "id": 361,
+      "category": "social_confidence",
+      "reverse": false,
+      "text": "When someone disagrees with you, how likely are you to start a conversation with a stranger at a social event?"
+    },
+    {
+      "id": 362,
+      "category": "social_confidence",
+      "reverse": true,
+      "text": "While on a first date, how likely are you to avoid a room full of unfamiliar people rather than enter it?"
+    },
+    {
+      "id": 363,
+      "category": "social_confidence",
+      "reverse": false,
+      "text": "During a job interview, how likely are you to walk up and introduce yourself to someone you don’t know?"
+    },
+    {
+      "id": 364,
+      "category": "social_confidence",
+      "reverse": true,
+      "text": "When you’re the center of attention, how likely are you to hang back and wait for others to approach you first?"
+    },
+    {
+      "id": 365,
+      "category": "social_confidence",
+      "reverse": false,
+      "text": "While comforting a friend who is upset, how likely are you to start a conversation with a stranger at a social event?"
+    },
+    {
+      "id": 366,
+      "category": "social_confidence",
+      "reverse": true,
+      "text": "During a team meeting at work, how likely are you to avoid a room full of unfamiliar people rather than enter it?"
+    },
+    {
+      "id": 367,
+      "category": "social_confidence",
+      "reverse": false,
+      "text": "When meeting a friend’s other friends for the first time, how likely are you to walk up and introduce yourself to someone you don’t know?"
+    },
+    {
+      "id": 368,
+      "category": "social_confidence",
+      "reverse": true,
+      "text": "While telling a story to a group, how likely are you to hang back and wait for others to approach you first?"
+    },
+    {
+      "id": 369,
+      "category": "social_confidence",
+      "reverse": false,
+      "text": "When someone pays you a compliment, how likely are you to start a conversation with a stranger at a social event?"
+    },
+    {
+      "id": 370,
+      "category": "social_confidence",
+      "reverse": true,
+      "text": "During a casual conversation with a coworker, how likely are you to avoid a room full of unfamiliar people rather than enter it?"
+    },
+    {
+      "id": 371,
+      "category": "social_confidence",
+      "reverse": false,
+      "text": "When you enter an unfamiliar social circle, how likely are you to walk up and introduce yourself to someone you don’t know?"
+    },
+    {
+      "id": 372,
+      "category": "social_confidence",
+      "reverse": true,
+      "text": "While speaking in front of a large audience, how likely are you to hang back and wait for others to approach you first?"
+    },
+    {
+      "id": 373,
+      "category": "social_confidence",
+      "reverse": false,
+      "text": "When a conversation hits an awkward pause, how likely are you to start a conversation with a stranger at a social event?"
+    },
+    {
+      "id": 374,
+      "category": "social_confidence",
+      "reverse": true,
+      "text": "While negotiating something important, how likely are you to avoid a room full of unfamiliar people rather than enter it?"
+    },
+    {
+      "id": 375,
+      "category": "social_confidence",
+      "reverse": false,
+      "text": "At a family or community event, how likely are you to walk up and introduce yourself to someone you don’t know?"
+    },
+    {
+      "id": 376,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "At a networking event, how likely are you to adjust your style depending on who you’re talking to?"
+    },
+    {
+      "id": 377,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When meeting someone for the first time, how likely are you to use the exact same approach with everyone regardless of context?"
+    },
+    {
+      "id": 378,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "During a group conversation, how likely are you to read the room and shift your approach if the mood changes?"
+    },
+    {
+      "id": 379,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "While giving a presentation, how likely are you to keep talking the same way even when the room’s energy has clearly shifted?"
+    },
+    {
+      "id": 380,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "At a social gathering full of strangers, how likely are you to adjust your style depending on who you’re talking to?"
+    },
+    {
+      "id": 381,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When someone shares exciting news with you, how likely are you to use the exact same approach with everyone regardless of context?"
+    },
+    {
+      "id": 382,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "During a difficult or tense conversation, how likely are you to read the room and shift your approach if the mood changes?"
+    },
+    {
+      "id": 383,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "While talking to someone senior to you, how likely are you to keep talking the same way even when the room’s energy has clearly shifted?"
+    },
+    {
+      "id": 384,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "When you walk into a room full of people, how likely are you to adjust your style depending on who you’re talking to?"
+    },
+    {
+      "id": 385,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "During small talk before a meeting starts, how likely are you to use the exact same approach with everyone regardless of context?"
+    },
+    {
+      "id": 386,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "When someone disagrees with you, how likely are you to read the room and shift your approach if the mood changes?"
+    },
+    {
+      "id": 387,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "While on a first date, how likely are you to keep talking the same way even when the room’s energy has clearly shifted?"
+    },
+    {
+      "id": 388,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "During a job interview, how likely are you to adjust your style depending on who you’re talking to?"
+    },
+    {
+      "id": 389,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When you’re the center of attention, how likely are you to use the exact same approach with everyone regardless of context?"
+    },
+    {
+      "id": 390,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "While comforting a friend who is upset, how likely are you to read the room and shift your approach if the mood changes?"
+    },
+    {
+      "id": 391,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "During a team meeting at work, how likely are you to keep talking the same way even when the room’s energy has clearly shifted?"
+    },
+    {
+      "id": 392,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "When meeting a friend’s other friends for the first time, how likely are you to adjust your style depending on who you’re talking to?"
+    },
+    {
+      "id": 393,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "While telling a story to a group, how likely are you to use the exact same approach with everyone regardless of context?"
+    },
+    {
+      "id": 394,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "When someone pays you a compliment, how likely are you to read the room and shift your approach if the mood changes?"
+    },
+    {
+      "id": 395,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "During a casual conversation with a coworker, how likely are you to keep talking the same way even when the room’s energy has clearly shifted?"
+    },
+    {
+      "id": 396,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "When you enter an unfamiliar social circle, how likely are you to adjust your style depending on who you’re talking to?"
+    },
+    {
+      "id": 397,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "While speaking in front of a large audience, how likely are you to use the exact same approach with everyone regardless of context?"
+    },
+    {
+      "id": 398,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "When a conversation hits an awkward pause, how likely are you to read the room and shift your approach if the mood changes?"
+    },
+    {
+      "id": 399,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "While negotiating something important, how likely are you to keep talking the same way even when the room’s energy has clearly shifted?"
+    },
+    {
+      "id": 400,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "At a family or community event, how likely are you to adjust your style depending on who you’re talking to?"
+    },
+    {
+      "id": 401,
+      "category": "validation",
+      "reverse": false,
+      "text": "At a networking event, how likely are you to make someone feel like the most important person in the room while you’re talking to them?"
+    },
+    {
+      "id": 402,
+      "category": "validation",
+      "reverse": true,
+      "text": "When meeting someone for the first time, how likely are you to make people feel like you’re only half-interested in what they’re saying?"
+    },
+    {
+      "id": 403,
+      "category": "validation",
+      "reverse": false,
+      "text": "During a group conversation, how likely are you to give genuine, specific praise when someone does something well?"
+    },
+    {
+      "id": 404,
+      "category": "validation",
+      "reverse": true,
+      "text": "While giving a presentation, how likely are you to overlook other people’s efforts or contributions in a conversation?"
+    },
+    {
+      "id": 405,
+      "category": "validation",
+      "reverse": false,
+      "text": "At a social gathering full of strangers, how likely are you to make someone feel like the most important person in the room while you’re talking to them?"
+    },
+    {
+      "id": 406,
+      "category": "validation",
+      "reverse": true,
+      "text": "When someone shares exciting news with you, how likely are you to make people feel like you’re only half-interested in what they’re saying?"
+    },
+    {
+      "id": 407,
+      "category": "validation",
+      "reverse": false,
+      "text": "During a difficult or tense conversation, how likely are you to give genuine, specific praise when someone does something well?"
+    },
+    {
+      "id": 408,
+      "category": "validation",
+      "reverse": true,
+      "text": "While talking to someone senior to you, how likely are you to overlook other people’s efforts or contributions in a conversation?"
+    },
+    {
+      "id": 409,
+      "category": "validation",
+      "reverse": false,
+      "text": "When you walk into a room full of people, how likely are you to make someone feel like the most important person in the room while you’re talking to them?"
+    },
+    {
+      "id": 410,
+      "category": "validation",
+      "reverse": true,
+      "text": "During small talk before a meeting starts, how likely are you to make people feel like you’re only half-interested in what they’re saying?"
+    },
+    {
+      "id": 411,
+      "category": "validation",
+      "reverse": false,
+      "text": "When someone disagrees with you, how likely are you to give genuine, specific praise when someone does something well?"
+    },
+    {
+      "id": 412,
+      "category": "validation",
+      "reverse": true,
+      "text": "While on a first date, how likely are you to overlook other people’s efforts or contributions in a conversation?"
+    },
+    {
+      "id": 413,
+      "category": "validation",
+      "reverse": false,
+      "text": "During a job interview, how likely are you to make someone feel like the most important person in the room while you’re talking to them?"
+    },
+    {
+      "id": 414,
+      "category": "validation",
+      "reverse": true,
+      "text": "When you’re the center of attention, how likely are you to make people feel like you’re only half-interested in what they’re saying?"
+    },
+    {
+      "id": 415,
+      "category": "validation",
+      "reverse": false,
+      "text": "While comforting a friend who is upset, how likely are you to give genuine, specific praise when someone does something well?"
+    },
+    {
+      "id": 416,
+      "category": "validation",
+      "reverse": true,
+      "text": "During a team meeting at work, how likely are you to overlook other people’s efforts or contributions in a conversation?"
+    },
+    {
+      "id": 417,
+      "category": "validation",
+      "reverse": false,
+      "text": "When meeting a friend’s other friends for the first time, how likely are you to make someone feel like the most important person in the room while you’re talking to them?"
+    },
+    {
+      "id": 418,
+      "category": "validation",
+      "reverse": true,
+      "text": "While telling a story to a group, how likely are you to make people feel like you’re only half-interested in what they’re saying?"
+    },
+    {
+      "id": 419,
+      "category": "validation",
+      "reverse": false,
+      "text": "When someone pays you a compliment, how likely are you to give genuine, specific praise when someone does something well?"
+    },
+    {
+      "id": 420,
+      "category": "validation",
+      "reverse": true,
+      "text": "During a casual conversation with a coworker, how likely are you to overlook other people’s efforts or contributions in a conversation?"
+    },
+    {
+      "id": 421,
+      "category": "validation",
+      "reverse": false,
+      "text": "When you enter an unfamiliar social circle, how likely are you to make someone feel like the most important person in the room while you’re talking to them?"
+    },
+    {
+      "id": 422,
+      "category": "validation",
+      "reverse": true,
+      "text": "While speaking in front of a large audience, how likely are you to make people feel like you’re only half-interested in what they’re saying?"
+    },
+    {
+      "id": 423,
+      "category": "validation",
+      "reverse": false,
+      "text": "When a conversation hits an awkward pause, how likely are you to give genuine, specific praise when someone does something well?"
+    },
+    {
+      "id": 424,
+      "category": "validation",
+      "reverse": true,
+      "text": "While negotiating something important, how likely are you to overlook other people’s efforts or contributions in a conversation?"
+    },
+    {
+      "id": 425,
+      "category": "validation",
+      "reverse": false,
+      "text": "At a family or community event, how likely are you to make someone feel like the most important person in the room while you’re talking to them?"
+    },
+    {
+      "id": 426,
+      "category": "humility",
+      "reverse": false,
+      "text": "At a networking event, how likely are you to let someone else take the spotlight without feeling threatened?"
+    },
+    {
+      "id": 427,
+      "category": "humility",
+      "reverse": true,
+      "text": "When meeting someone for the first time, how likely are you to steer conversations back to yourself and your achievements?"
+    },
+    {
+      "id": 428,
+      "category": "humility",
+      "reverse": false,
+      "text": "During a group conversation, how likely are you to admit when you’re wrong instead of defending yourself?"
+    },
+    {
+      "id": 429,
+      "category": "humility",
+      "reverse": true,
+      "text": "While giving a presentation, how likely are you to need to be right or seen as the smartest person in the room?"
+    },
+    {
+      "id": 430,
+      "category": "humility",
+      "reverse": false,
+      "text": "At a social gathering full of strangers, how likely are you to let someone else take the spotlight without feeling threatened?"
+    },
+    {
+      "id": 431,
+      "category": "humility",
+      "reverse": true,
+      "text": "When someone shares exciting news with you, how likely are you to steer conversations back to yourself and your achievements?"
+    },
+    {
+      "id": 432,
+      "category": "humility",
+      "reverse": false,
+      "text": "During a difficult or tense conversation, how likely are you to admit when you’re wrong instead of defending yourself?"
+    },
+    {
+      "id": 433,
+      "category": "humility",
+      "reverse": true,
+      "text": "While talking to someone senior to you, how likely are you to need to be right or seen as the smartest person in the room?"
+    },
+    {
+      "id": 434,
+      "category": "humility",
+      "reverse": false,
+      "text": "When you walk into a room full of people, how likely are you to let someone else take the spotlight without feeling threatened?"
+    },
+    {
+      "id": 435,
+      "category": "humility",
+      "reverse": true,
+      "text": "During small talk before a meeting starts, how likely are you to steer conversations back to yourself and your achievements?"
+    },
+    {
+      "id": 436,
+      "category": "humility",
+      "reverse": false,
+      "text": "When someone disagrees with you, how likely are you to admit when you’re wrong instead of defending yourself?"
+    },
+    {
+      "id": 437,
+      "category": "humility",
+      "reverse": true,
+      "text": "While on a first date, how likely are you to need to be right or seen as the smartest person in the room?"
+    },
+    {
+      "id": 438,
+      "category": "humility",
+      "reverse": false,
+      "text": "During a job interview, how likely are you to let someone else take the spotlight without feeling threatened?"
+    },
+    {
+      "id": 439,
+      "category": "humility",
+      "reverse": true,
+      "text": "When you’re the center of attention, how likely are you to steer conversations back to yourself and your achievements?"
+    },
+    {
+      "id": 440,
+      "category": "humility",
+      "reverse": false,
+      "text": "While comforting a friend who is upset, how likely are you to admit when you’re wrong instead of defending yourself?"
+    },
+    {
+      "id": 441,
+      "category": "humility",
+      "reverse": true,
+      "text": "During a team meeting at work, how likely are you to need to be right or seen as the smartest person in the room?"
+    },
+    {
+      "id": 442,
+      "category": "humility",
+      "reverse": false,
+      "text": "When meeting a friend’s other friends for the first time, how likely are you to let someone else take the spotlight without feeling threatened?"
+    },
+    {
+      "id": 443,
+      "category": "humility",
+      "reverse": true,
+      "text": "While telling a story to a group, how likely are you to steer conversations back to yourself and your achievements?"
+    },
+    {
+      "id": 444,
+      "category": "humility",
+      "reverse": false,
+      "text": "When someone pays you a compliment, how likely are you to admit when you’re wrong instead of defending yourself?"
+    },
+    {
+      "id": 445,
+      "category": "humility",
+      "reverse": true,
+      "text": "During a casual conversation with a coworker, how likely are you to need to be right or seen as the smartest person in the room?"
+    },
+    {
+      "id": 446,
+      "category": "humility",
+      "reverse": false,
+      "text": "When you enter an unfamiliar social circle, how likely are you to let someone else take the spotlight without feeling threatened?"
+    },
+    {
+      "id": 447,
+      "category": "humility",
+      "reverse": true,
+      "text": "While speaking in front of a large audience, how likely are you to steer conversations back to yourself and your achievements?"
+    },
+    {
+      "id": 448,
+      "category": "humility",
+      "reverse": false,
+      "text": "When a conversation hits an awkward pause, how likely are you to admit when you’re wrong instead of defending yourself?"
+    },
+    {
+      "id": 449,
+      "category": "humility",
+      "reverse": true,
+      "text": "While negotiating something important, how likely are you to need to be right or seen as the smartest person in the room?"
+    },
+    {
+      "id": 450,
+      "category": "humility",
+      "reverse": false,
+      "text": "At a family or community event, how likely are you to let someone else take the spotlight without feeling threatened?"
+    },
+    {
+      "id": 451,
+      "category": "first_impressions",
+      "reverse": false,
+      "text": "At a networking event, how likely are you to leave people with a strong, positive impression after a first meeting?"
+    },
+    {
+      "id": 452,
+      "category": "first_impressions",
+      "reverse": true,
+      "text": "When meeting someone for the first time, how likely are you to come across as forgettable within minutes of meeting someone?"
+    },
+    {
+      "id": 453,
+      "category": "first_impressions",
+      "reverse": false,
+      "text": "During a group conversation, how likely are you to be remembered fondly by someone you only just met?"
+    },
+    {
+      "id": 454,
+      "category": "first_impressions",
+      "reverse": true,
+      "text": "While giving a presentation, how likely are you to leave a flat first impression that fades quickly?"
+    },
+    {
+      "id": 455,
+      "category": "first_impressions",
+      "reverse": false,
+      "text": "At a social gathering full of strangers, how likely are you to leave people with a strong, positive impression after a first meeting?"
+    },
+    {
+      "id": 456,
+      "category": "first_impressions",
+      "reverse": true,
+      "text": "When someone shares exciting news with you, how likely are you to come across as forgettable within minutes of meeting someone?"
+    },
+    {
+      "id": 457,
+      "category": "first_impressions",
+      "reverse": false,
+      "text": "During a difficult or tense conversation, how likely are you to be remembered fondly by someone you only just met?"
+    },
+    {
+      "id": 458,
+      "category": "first_impressions",
+      "reverse": true,
+      "text": "While talking to someone senior to you, how likely are you to leave a flat first impression that fades quickly?"
+    },
+    {
+      "id": 459,
+      "category": "first_impressions",
+      "reverse": false,
+      "text": "When you walk into a room full of people, how likely are you to leave people with a strong, positive impression after a first meeting?"
+    },
+    {
+      "id": 460,
+      "category": "first_impressions",
+      "reverse": true,
+      "text": "During small talk before a meeting starts, how likely are you to come across as forgettable within minutes of meeting someone?"
+    },
+    {
+      "id": 461,
+      "category": "first_impressions",
+      "reverse": false,
+      "text": "When someone disagrees with you, how likely are you to be remembered fondly by someone you only just met?"
+    },
+    {
+      "id": 462,
+      "category": "first_impressions",
+      "reverse": true,
+      "text": "While on a first date, how likely are you to leave a flat first impression that fades quickly?"
+    },
+    {
+      "id": 463,
+      "category": "first_impressions",
+      "reverse": false,
+      "text": "During a job interview, how likely are you to leave people with a strong, positive impression after a first meeting?"
+    },
+    {
+      "id": 464,
+      "category": "first_impressions",
+      "reverse": true,
+      "text": "When you’re the center of attention, how likely are you to come across as forgettable within minutes of meeting someone?"
+    },
+    {
+      "id": 465,
+      "category": "first_impressions",
+      "reverse": false,
+      "text": "While comforting a friend who is upset, how likely are you to be remembered fondly by someone you only just met?"
+    },
+    {
+      "id": 466,
+      "category": "first_impressions",
+      "reverse": true,
+      "text": "During a team meeting at work, how likely are you to leave a flat first impression that fades quickly?"
+    },
+    {
+      "id": 467,
+      "category": "first_impressions",
+      "reverse": false,
+      "text": "When meeting a friend’s other friends for the first time, how likely are you to leave people with a strong, positive impression after a first meeting?"
+    },
+    {
+      "id": 468,
+      "category": "first_impressions",
+      "reverse": true,
+      "text": "While telling a story to a group, how likely are you to come across as forgettable within minutes of meeting someone?"
+    },
+    {
+      "id": 469,
+      "category": "first_impressions",
+      "reverse": false,
+      "text": "When someone pays you a compliment, how likely are you to be remembered fondly by someone you only just met?"
+    },
+    {
+      "id": 470,
+      "category": "first_impressions",
+      "reverse": true,
+      "text": "During a casual conversation with a coworker, how likely are you to leave a flat first impression that fades quickly?"
+    },
+    {
+      "id": 471,
+      "category": "first_impressions",
+      "reverse": false,
+      "text": "When you enter an unfamiliar social circle, how likely are you to leave people with a strong, positive impression after a first meeting?"
+    },
+    {
+      "id": 472,
+      "category": "first_impressions",
+      "reverse": true,
+      "text": "While speaking in front of a large audience, how likely are you to come across as forgettable within minutes of meeting someone?"
+    },
+    {
+      "id": 473,
+      "category": "first_impressions",
+      "reverse": false,
+      "text": "When a conversation hits an awkward pause, how likely are you to be remembered fondly by someone you only just met?"
+    },
+    {
+      "id": 474,
+      "category": "first_impressions",
+      "reverse": true,
+      "text": "While negotiating something important, how likely are you to leave a flat first impression that fades quickly?"
+    },
+    {
+      "id": 475,
+      "category": "first_impressions",
+      "reverse": false,
+      "text": "At a family or community event, how likely are you to leave people with a strong, positive impression after a first meeting?"
+    },
+    {
+      "id": 476,
+      "category": "crowd_command",
+      "reverse": false,
+      "text": "At a networking event, how likely are you to naturally draw people’s attention when you speak in a group?"
+    },
+    {
+      "id": 477,
+      "category": "crowd_command",
+      "reverse": true,
+      "text": "When meeting someone for the first time, how likely are you to struggle to be heard or noticed in a group setting?"
+    },
+    {
+      "id": 478,
+      "category": "crowd_command",
+      "reverse": false,
+      "text": "During a group conversation, how likely are you to hold a room’s attention while giving a talk or presentation?"
+    },
+    {
+      "id": 479,
+      "category": "crowd_command",
+      "reverse": true,
+      "text": "While giving a presentation, how likely are you to lose a group’s attention partway through speaking?"
+    },
+    {
+      "id": 480,
+      "category": "crowd_command",
+      "reverse": false,
+      "text": "At a social gathering full of strangers, how likely are you to naturally draw people’s attention when you speak in a group?"
+    },
+    {
+      "id": 481,
+      "category": "crowd_command",
+      "reverse": true,
+      "text": "When someone shares exciting news with you, how likely are you to struggle to be heard or noticed in a group setting?"
+    },
+    {
+      "id": 482,
+      "category": "crowd_command",
+      "reverse": false,
+      "text": "During a difficult or tense conversation, how likely are you to hold a room’s attention while giving a talk or presentation?"
+    },
+    {
+      "id": 483,
+      "category": "crowd_command",
+      "reverse": true,
+      "text": "While talking to someone senior to you, how likely are you to lose a group’s attention partway through speaking?"
+    },
+    {
+      "id": 484,
+      "category": "crowd_command",
+      "reverse": false,
+      "text": "When you walk into a room full of people, how likely are you to naturally draw people’s attention when you speak in a group?"
+    },
+    {
+      "id": 485,
+      "category": "crowd_command",
+      "reverse": true,
+      "text": "During small talk before a meeting starts, how likely are you to struggle to be heard or noticed in a group setting?"
+    },
+    {
+      "id": 486,
+      "category": "crowd_command",
+      "reverse": false,
+      "text": "When someone disagrees with you, how likely are you to hold a room’s attention while giving a talk or presentation?"
+    },
+    {
+      "id": 487,
+      "category": "crowd_command",
+      "reverse": true,
+      "text": "While on a first date, how likely are you to lose a group’s attention partway through speaking?"
+    },
+    {
+      "id": 488,
+      "category": "crowd_command",
+      "reverse": false,
+      "text": "During a job interview, how likely are you to naturally draw people’s attention when you speak in a group?"
+    },
+    {
+      "id": 489,
+      "category": "crowd_command",
+      "reverse": true,
+      "text": "When you’re the center of attention, how likely are you to struggle to be heard or noticed in a group setting?"
+    },
+    {
+      "id": 490,
+      "category": "crowd_command",
+      "reverse": false,
+      "text": "While comforting a friend who is upset, how likely are you to hold a room’s attention while giving a talk or presentation?"
+    },
+    {
+      "id": 491,
+      "category": "crowd_command",
+      "reverse": true,
+      "text": "During a team meeting at work, how likely are you to lose a group’s attention partway through speaking?"
+    },
+    {
+      "id": 492,
+      "category": "crowd_command",
+      "reverse": false,
+      "text": "When meeting a friend’s other friends for the first time, how likely are you to naturally draw people’s attention when you speak in a group?"
+    },
+    {
+      "id": 493,
+      "category": "crowd_command",
+      "reverse": true,
+      "text": "While telling a story to a group, how likely are you to struggle to be heard or noticed in a group setting?"
+    },
+    {
+      "id": 494,
+      "category": "crowd_command",
+      "reverse": false,
+      "text": "When someone pays you a compliment, how likely are you to hold a room’s attention while giving a talk or presentation?"
+    },
+    {
+      "id": 495,
+      "category": "crowd_command",
+      "reverse": true,
+      "text": "During a casual conversation with a coworker, how likely are you to lose a group’s attention partway through speaking?"
+    },
+    {
+      "id": 496,
+      "category": "crowd_command",
+      "reverse": false,
+      "text": "When you enter an unfamiliar social circle, how likely are you to naturally draw people’s attention when you speak in a group?"
+    },
+    {
+      "id": 497,
+      "category": "crowd_command",
+      "reverse": true,
+      "text": "While speaking in front of a large audience, how likely are you to struggle to be heard or noticed in a group setting?"
+    },
+    {
+      "id": 498,
+      "category": "crowd_command",
+      "reverse": false,
+      "text": "When a conversation hits an awkward pause, how likely are you to hold a room’s attention while giving a talk or presentation?"
+    },
+    {
+      "id": 499,
+      "category": "crowd_command",
+      "reverse": true,
+      "text": "While negotiating something important, how likely are you to lose a group’s attention partway through speaking?"
+    },
+    {
+      "id": 500,
+      "category": "crowd_command",
+      "reverse": false,
+      "text": "At a family or community event, how likely are you to naturally draw people’s attention when you speak in a group?"
+    }
+  ]
+}

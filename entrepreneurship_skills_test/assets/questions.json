@@ -1,0 +1,3160 @@
+{
+  "meta": {
+    "title": "Entrepreneurship Skills & Ability Test",
+    "description": "A detailed 500-question reflection across 20 dimensions of entrepreneurship skill and readiness.",
+    "scale": {
+      "min": 1,
+      "max": 10,
+      "minLabel": "Not at all likely",
+      "maxLabel": "Extremely likely"
+    },
+    "categories": [
+      {
+        "id": "opportunity",
+        "label": "Opportunity Recognition",
+        "icon": "🔭"
+      },
+      {
+        "id": "customer_discovery",
+        "label": "Customer Discovery & Empathy",
+        "icon": "👥"
+      },
+      {
+        "id": "problem_validation",
+        "label": "Problem & Demand Validation",
+        "icon": "✅"
+      },
+      {
+        "id": "value_proposition",
+        "label": "Value Proposition",
+        "icon": "💎"
+      },
+      {
+        "id": "market_research",
+        "label": "Market & Competitor Research",
+        "icon": "🔎"
+      },
+      {
+        "id": "business_model",
+        "label": "Business Model Design",
+        "icon": "🧱"
+      },
+      {
+        "id": "strategy",
+        "label": "Vision & Strategic Planning",
+        "icon": "🗺️"
+      },
+      {
+        "id": "finance",
+        "label": "Financial Literacy & Cash Flow",
+        "icon": "💰"
+      },
+      {
+        "id": "resources",
+        "label": "Resource Management & Bootstrapping",
+        "icon": "🧰"
+      },
+      {
+        "id": "risk",
+        "label": "Calculated Risk & Uncertainty",
+        "icon": "⚖️"
+      },
+      {
+        "id": "decisions",
+        "label": "Decision-Making & Judgement",
+        "icon": "🧠"
+      },
+      {
+        "id": "problem_solving",
+        "label": "Problem-Solving & Systems Thinking",
+        "icon": "🧩"
+      },
+      {
+        "id": "innovation",
+        "label": "Innovation & Experimentation",
+        "icon": "💡"
+      },
+      {
+        "id": "sales",
+        "label": "Sales, Persuasion & Negotiation",
+        "icon": "🗣️"
+      },
+      {
+        "id": "networking",
+        "label": "Networking & Partnerships",
+        "icon": "🤝"
+      },
+      {
+        "id": "leadership",
+        "label": "Leadership, Hiring & Delegation",
+        "icon": "👥"
+      },
+      {
+        "id": "execution",
+        "label": "Execution & Operational Discipline",
+        "icon": "🚀"
+      },
+      {
+        "id": "adaptability",
+        "label": "Adaptability & Resilience",
+        "icon": "🔄"
+      },
+      {
+        "id": "ethics",
+        "label": "Ethics & Responsible Entrepreneurship",
+        "icon": "🕊️"
+      },
+      {
+        "id": "learning",
+        "label": "Learning & Entrepreneurial Self-Awareness",
+        "icon": "📚"
+      }
+    ],
+    "levels": [
+      {
+        "min": 9,
+        "max": 10.01,
+        "label": "Highly Developed Entrepreneurship Readiness",
+        "emoji": "🏆",
+        "desc": "Your current entrepreneurial habits are strong across opportunity, validation, finance, execution, leadership, adaptation, and responsible decision-making."
+      },
+      {
+        "min": 7.5,
+        "max": 9,
+        "label": "Strong Entrepreneurship Readiness",
+        "emoji": "🌟",
+        "desc": "Most entrepreneurial skill areas are well supported, with a few dimensions that could become more consistent or evidence-led."
+      },
+      {
+        "min": 6,
+        "max": 7.5,
+        "label": "Developing Entrepreneurship Readiness",
+        "emoji": "🧭",
+        "desc": "Several useful foundations are present, though validation, finance, sales, execution, or leadership may vary by situation."
+      },
+      {
+        "min": 4.5,
+        "max": 6,
+        "label": "Emerging Entrepreneurship Readiness",
+        "emoji": "🌱",
+        "desc": "Some foundations support entrepreneurship, while customer evidence, planning, financial understanding, and disciplined action need development."
+      },
+      {
+        "min": 3,
+        "max": 4.5,
+        "label": "Limited Current Entrepreneurship Readiness",
+        "emoji": "🔧",
+        "desc": "Current habits may leave ideas under-tested or execution inconsistent. Start with customer discovery, a small experiment, basic numbers, and review."
+      },
+      {
+        "min": 1,
+        "max": 3,
+        "label": "Entrepreneurship Foundations Need Attention",
+        "emoji": "📘",
+        "desc": "Several entrepreneurship foundations appear limited right now. Build one practical skill at a time and seek qualified guidance where stakes are high."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "category": "opportunity",
+      "reverse": false,
+      "text": "When considering a new venture idea, how likely are you to notice an unmet need that could support a useful venture?"
+    },
+    {
+      "id": 2,
+      "category": "opportunity",
+      "reverse": true,
+      "text": "During early customer discovery, how likely are you to treat every interesting idea as a strong business opportunity?"
+    },
+    {
+      "id": 3,
+      "category": "opportunity",
+      "reverse": false,
+      "text": "Before investing significant money, how likely are you to compare an opportunity with real trends, timing, and constraints?"
+    },
+    {
+      "id": 4,
+      "category": "opportunity",
+      "reverse": true,
+      "text": "When evidence challenges your assumptions, how likely are you to ignore changing needs until competitors make them obvious?"
+    },
+    {
+      "id": 5,
+      "category": "opportunity",
+      "reverse": false,
+      "text": "While designing an initial offer, how likely are you to notice an unmet need that could support a useful venture?"
+    },
+    {
+      "id": 6,
+      "category": "opportunity",
+      "reverse": true,
+      "text": "When resources are limited, how likely are you to treat every interesting idea as a strong business opportunity?"
+    },
+    {
+      "id": 7,
+      "category": "opportunity",
+      "reverse": false,
+      "text": "Before entering a new market, how likely are you to compare an opportunity with real trends, timing, and constraints?"
+    },
+    {
+      "id": 8,
+      "category": "opportunity",
+      "reverse": true,
+      "text": "When a competitor changes direction, how likely are you to ignore changing needs until competitors make them obvious?"
+    },
+    {
+      "id": 9,
+      "category": "opportunity",
+      "reverse": false,
+      "text": "While reviewing monthly results, how likely are you to notice an unmet need that could support a useful venture?"
+    },
+    {
+      "id": 10,
+      "category": "opportunity",
+      "reverse": true,
+      "text": "When cash is tighter than expected, how likely are you to treat every interesting idea as a strong business opportunity?"
+    },
+    {
+      "id": 11,
+      "category": "opportunity",
+      "reverse": false,
+      "text": "Before making a major commitment, how likely are you to compare an opportunity with real trends, timing, and constraints?"
+    },
+    {
+      "id": 12,
+      "category": "opportunity",
+      "reverse": true,
+      "text": "When a customer rejects the offer, how likely are you to ignore changing needs until competitors make them obvious?"
+    },
+    {
+      "id": 13,
+      "category": "opportunity",
+      "reverse": false,
+      "text": "During a difficult business decision, how likely are you to notice an unmet need that could support a useful venture?"
+    },
+    {
+      "id": 14,
+      "category": "opportunity",
+      "reverse": true,
+      "text": "When an experiment produces mixed results, how likely are you to treat every interesting idea as a strong business opportunity?"
+    },
+    {
+      "id": 15,
+      "category": "opportunity",
+      "reverse": false,
+      "text": "While building a small team, how likely are you to compare an opportunity with real trends, timing, and constraints?"
+    },
+    {
+      "id": 16,
+      "category": "opportunity",
+      "reverse": true,
+      "text": "When several opportunities appear, how likely are you to ignore changing needs until competitors make them obvious?"
+    },
+    {
+      "id": 17,
+      "category": "opportunity",
+      "reverse": false,
+      "text": "As demand begins to grow, how likely are you to notice an unmet need that could support a useful venture?"
+    },
+    {
+      "id": 18,
+      "category": "opportunity",
+      "reverse": true,
+      "text": "When operations become unreliable, how likely are you to treat every interesting idea as a strong business opportunity?"
+    },
+    {
+      "id": 19,
+      "category": "opportunity",
+      "reverse": false,
+      "text": "Before discussing a partnership, how likely are you to compare an opportunity with real trends, timing, and constraints?"
+    },
+    {
+      "id": 20,
+      "category": "opportunity",
+      "reverse": true,
+      "text": "When the venture faces a setback, how likely are you to ignore changing needs until competitors make them obvious?"
+    },
+    {
+      "id": 21,
+      "category": "opportunity",
+      "reverse": false,
+      "text": "While preparing a sales conversation, how likely are you to notice an unmet need that could support a useful venture?"
+    },
+    {
+      "id": 22,
+      "category": "opportunity",
+      "reverse": true,
+      "text": "When feedback is uncomfortable, how likely are you to treat every interesting idea as a strong business opportunity?"
+    },
+    {
+      "id": 23,
+      "category": "opportunity",
+      "reverse": false,
+      "text": "Before scaling a product or service, how likely are you to compare an opportunity with real trends, timing, and constraints?"
+    },
+    {
+      "id": 24,
+      "category": "opportunity",
+      "reverse": true,
+      "text": "At the end of an important business cycle, how likely are you to ignore changing needs until competitors make them obvious?"
+    },
+    {
+      "id": 25,
+      "category": "opportunity",
+      "reverse": false,
+      "text": "Across repeated entrepreneurial experiences, how likely are you to notice an unmet need that could support a useful venture?"
+    },
+    {
+      "id": 26,
+      "category": "customer_discovery",
+      "reverse": false,
+      "text": "When considering a new venture idea, how likely are you to speak directly with potential customers about their experiences?"
+    },
+    {
+      "id": 27,
+      "category": "customer_discovery",
+      "reverse": true,
+      "text": "During early customer discovery, how likely are you to assume you already know what customers want?"
+    },
+    {
+      "id": 28,
+      "category": "customer_discovery",
+      "reverse": false,
+      "text": "Before investing significant money, how likely are you to listen for customer needs without pushing your preferred solution?"
+    },
+    {
+      "id": 29,
+      "category": "customer_discovery",
+      "reverse": true,
+      "text": "When evidence challenges your assumptions, how likely are you to ask leading questions designed mainly to confirm your idea?"
+    },
+    {
+      "id": 30,
+      "category": "customer_discovery",
+      "reverse": false,
+      "text": "While designing an initial offer, how likely are you to speak directly with potential customers about their experiences?"
+    },
+    {
+      "id": 31,
+      "category": "customer_discovery",
+      "reverse": true,
+      "text": "When resources are limited, how likely are you to assume you already know what customers want?"
+    },
+    {
+      "id": 32,
+      "category": "customer_discovery",
+      "reverse": false,
+      "text": "Before entering a new market, how likely are you to listen for customer needs without pushing your preferred solution?"
+    },
+    {
+      "id": 33,
+      "category": "customer_discovery",
+      "reverse": true,
+      "text": "When a competitor changes direction, how likely are you to ask leading questions designed mainly to confirm your idea?"
+    },
+    {
+      "id": 34,
+      "category": "customer_discovery",
+      "reverse": false,
+      "text": "While reviewing monthly results, how likely are you to speak directly with potential customers about their experiences?"
+    },
+    {
+      "id": 35,
+      "category": "customer_discovery",
+      "reverse": true,
+      "text": "When cash is tighter than expected, how likely are you to assume you already know what customers want?"
+    },
+    {
+      "id": 36,
+      "category": "customer_discovery",
+      "reverse": false,
+      "text": "Before making a major commitment, how likely are you to listen for customer needs without pushing your preferred solution?"
+    },
+    {
+      "id": 37,
+      "category": "customer_discovery",
+      "reverse": true,
+      "text": "When a customer rejects the offer, how likely are you to ask leading questions designed mainly to confirm your idea?"
+    },
+    {
+      "id": 38,
+      "category": "customer_discovery",
+      "reverse": false,
+      "text": "During a difficult business decision, how likely are you to speak directly with potential customers about their experiences?"
+    },
+    {
+      "id": 39,
+      "category": "customer_discovery",
+      "reverse": true,
+      "text": "When an experiment produces mixed results, how likely are you to assume you already know what customers want?"
+    },
+    {
+      "id": 40,
+      "category": "customer_discovery",
+      "reverse": false,
+      "text": "While building a small team, how likely are you to listen for customer needs without pushing your preferred solution?"
+    },
+    {
+      "id": 41,
+      "category": "customer_discovery",
+      "reverse": true,
+      "text": "When several opportunities appear, how likely are you to ask leading questions designed mainly to confirm your idea?"
+    },
+    {
+      "id": 42,
+      "category": "customer_discovery",
+      "reverse": false,
+      "text": "As demand begins to grow, how likely are you to speak directly with potential customers about their experiences?"
+    },
+    {
+      "id": 43,
+      "category": "customer_discovery",
+      "reverse": true,
+      "text": "When operations become unreliable, how likely are you to assume you already know what customers want?"
+    },
+    {
+      "id": 44,
+      "category": "customer_discovery",
+      "reverse": false,
+      "text": "Before discussing a partnership, how likely are you to listen for customer needs without pushing your preferred solution?"
+    },
+    {
+      "id": 45,
+      "category": "customer_discovery",
+      "reverse": true,
+      "text": "When the venture faces a setback, how likely are you to ask leading questions designed mainly to confirm your idea?"
+    },
+    {
+      "id": 46,
+      "category": "customer_discovery",
+      "reverse": false,
+      "text": "While preparing a sales conversation, how likely are you to speak directly with potential customers about their experiences?"
+    },
+    {
+      "id": 47,
+      "category": "customer_discovery",
+      "reverse": true,
+      "text": "When feedback is uncomfortable, how likely are you to assume you already know what customers want?"
+    },
+    {
+      "id": 48,
+      "category": "customer_discovery",
+      "reverse": false,
+      "text": "Before scaling a product or service, how likely are you to listen for customer needs without pushing your preferred solution?"
+    },
+    {
+      "id": 49,
+      "category": "customer_discovery",
+      "reverse": true,
+      "text": "At the end of an important business cycle, how likely are you to ask leading questions designed mainly to confirm your idea?"
+    },
+    {
+      "id": 50,
+      "category": "customer_discovery",
+      "reverse": false,
+      "text": "Across repeated entrepreneurial experiences, how likely are you to speak directly with potential customers about their experiences?"
+    },
+    {
+      "id": 51,
+      "category": "problem_validation",
+      "reverse": false,
+      "text": "When considering a new venture idea, how likely are you to test whether the problem is frequent and important enough to solve?"
+    },
+    {
+      "id": 52,
+      "category": "problem_validation",
+      "reverse": true,
+      "text": "During early customer discovery, how likely are you to mistake polite interest for willingness to buy?"
+    },
+    {
+      "id": 53,
+      "category": "problem_validation",
+      "reverse": false,
+      "text": "Before investing significant money, how likely are you to seek behavioural evidence of demand before major investment?"
+    },
+    {
+      "id": 54,
+      "category": "problem_validation",
+      "reverse": true,
+      "text": "When evidence challenges your assumptions, how likely are you to invest heavily before testing the core problem?"
+    },
+    {
+      "id": 55,
+      "category": "problem_validation",
+      "reverse": false,
+      "text": "While designing an initial offer, how likely are you to test whether the problem is frequent and important enough to solve?"
+    },
+    {
+      "id": 56,
+      "category": "problem_validation",
+      "reverse": true,
+      "text": "When resources are limited, how likely are you to mistake polite interest for willingness to buy?"
+    },
+    {
+      "id": 57,
+      "category": "problem_validation",
+      "reverse": false,
+      "text": "Before entering a new market, how likely are you to seek behavioural evidence of demand before major investment?"
+    },
+    {
+      "id": 58,
+      "category": "problem_validation",
+      "reverse": true,
+      "text": "When a competitor changes direction, how likely are you to invest heavily before testing the core problem?"
+    },
+    {
+      "id": 59,
+      "category": "problem_validation",
+      "reverse": false,
+      "text": "While reviewing monthly results, how likely are you to test whether the problem is frequent and important enough to solve?"
+    },
+    {
+      "id": 60,
+      "category": "problem_validation",
+      "reverse": true,
+      "text": "When cash is tighter than expected, how likely are you to mistake polite interest for willingness to buy?"
+    },
+    {
+      "id": 61,
+      "category": "problem_validation",
+      "reverse": false,
+      "text": "Before making a major commitment, how likely are you to seek behavioural evidence of demand before major investment?"
+    },
+    {
+      "id": 62,
+      "category": "problem_validation",
+      "reverse": true,
+      "text": "When a customer rejects the offer, how likely are you to invest heavily before testing the core problem?"
+    },
+    {
+      "id": 63,
+      "category": "problem_validation",
+      "reverse": false,
+      "text": "During a difficult business decision, how likely are you to test whether the problem is frequent and important enough to solve?"
+    },
+    {
+      "id": 64,
+      "category": "problem_validation",
+      "reverse": true,
+      "text": "When an experiment produces mixed results, how likely are you to mistake polite interest for willingness to buy?"
+    },
+    {
+      "id": 65,
+      "category": "problem_validation",
+      "reverse": false,
+      "text": "While building a small team, how likely are you to seek behavioural evidence of demand before major investment?"
+    },
+    {
+      "id": 66,
+      "category": "problem_validation",
+      "reverse": true,
+      "text": "When several opportunities appear, how likely are you to invest heavily before testing the core problem?"
+    },
+    {
+      "id": 67,
+      "category": "problem_validation",
+      "reverse": false,
+      "text": "As demand begins to grow, how likely are you to test whether the problem is frequent and important enough to solve?"
+    },
+    {
+      "id": 68,
+      "category": "problem_validation",
+      "reverse": true,
+      "text": "When operations become unreliable, how likely are you to mistake polite interest for willingness to buy?"
+    },
+    {
+      "id": 69,
+      "category": "problem_validation",
+      "reverse": false,
+      "text": "Before discussing a partnership, how likely are you to seek behavioural evidence of demand before major investment?"
+    },
+    {
+      "id": 70,
+      "category": "problem_validation",
+      "reverse": true,
+      "text": "When the venture faces a setback, how likely are you to invest heavily before testing the core problem?"
+    },
+    {
+      "id": 71,
+      "category": "problem_validation",
+      "reverse": false,
+      "text": "While preparing a sales conversation, how likely are you to test whether the problem is frequent and important enough to solve?"
+    },
+    {
+      "id": 72,
+      "category": "problem_validation",
+      "reverse": true,
+      "text": "When feedback is uncomfortable, how likely are you to mistake polite interest for willingness to buy?"
+    },
+    {
+      "id": 73,
+      "category": "problem_validation",
+      "reverse": false,
+      "text": "Before scaling a product or service, how likely are you to seek behavioural evidence of demand before major investment?"
+    },
+    {
+      "id": 74,
+      "category": "problem_validation",
+      "reverse": true,
+      "text": "At the end of an important business cycle, how likely are you to invest heavily before testing the core problem?"
+    },
+    {
+      "id": 75,
+      "category": "problem_validation",
+      "reverse": false,
+      "text": "Across repeated entrepreneurial experiences, how likely are you to test whether the problem is frequent and important enough to solve?"
+    },
+    {
+      "id": 76,
+      "category": "value_proposition",
+      "reverse": false,
+      "text": "When considering a new venture idea, how likely are you to explain clearly which customer problem your offer solves?"
+    },
+    {
+      "id": 77,
+      "category": "value_proposition",
+      "reverse": true,
+      "text": "During early customer discovery, how likely are you to describe features without clarifying the customer benefit?"
+    },
+    {
+      "id": 78,
+      "category": "value_proposition",
+      "reverse": false,
+      "text": "Before investing significant money, how likely are you to state why a customer should choose your offer over alternatives?"
+    },
+    {
+      "id": 79,
+      "category": "value_proposition",
+      "reverse": true,
+      "text": "When evidence challenges your assumptions, how likely are you to try to serve everyone with the same vague promise?"
+    },
+    {
+      "id": 80,
+      "category": "value_proposition",
+      "reverse": false,
+      "text": "While designing an initial offer, how likely are you to explain clearly which customer problem your offer solves?"
+    },
+    {
+      "id": 81,
+      "category": "value_proposition",
+      "reverse": true,
+      "text": "When resources are limited, how likely are you to describe features without clarifying the customer benefit?"
+    },
+    {
+      "id": 82,
+      "category": "value_proposition",
+      "reverse": false,
+      "text": "Before entering a new market, how likely are you to state why a customer should choose your offer over alternatives?"
+    },
+    {
+      "id": 83,
+      "category": "value_proposition",
+      "reverse": true,
+      "text": "When a competitor changes direction, how likely are you to try to serve everyone with the same vague promise?"
+    },
+    {
+      "id": 84,
+      "category": "value_proposition",
+      "reverse": false,
+      "text": "While reviewing monthly results, how likely are you to explain clearly which customer problem your offer solves?"
+    },
+    {
+      "id": 85,
+      "category": "value_proposition",
+      "reverse": true,
+      "text": "When cash is tighter than expected, how likely are you to describe features without clarifying the customer benefit?"
+    },
+    {
+      "id": 86,
+      "category": "value_proposition",
+      "reverse": false,
+      "text": "Before making a major commitment, how likely are you to state why a customer should choose your offer over alternatives?"
+    },
+    {
+      "id": 87,
+      "category": "value_proposition",
+      "reverse": true,
+      "text": "When a customer rejects the offer, how likely are you to try to serve everyone with the same vague promise?"
+    },
+    {
+      "id": 88,
+      "category": "value_proposition",
+      "reverse": false,
+      "text": "During a difficult business decision, how likely are you to explain clearly which customer problem your offer solves?"
+    },
+    {
+      "id": 89,
+      "category": "value_proposition",
+      "reverse": true,
+      "text": "When an experiment produces mixed results, how likely are you to describe features without clarifying the customer benefit?"
+    },
+    {
+      "id": 90,
+      "category": "value_proposition",
+      "reverse": false,
+      "text": "While building a small team, how likely are you to state why a customer should choose your offer over alternatives?"
+    },
+    {
+      "id": 91,
+      "category": "value_proposition",
+      "reverse": true,
+      "text": "When several opportunities appear, how likely are you to try to serve everyone with the same vague promise?"
+    },
+    {
+      "id": 92,
+      "category": "value_proposition",
+      "reverse": false,
+      "text": "As demand begins to grow, how likely are you to explain clearly which customer problem your offer solves?"
+    },
+    {
+      "id": 93,
+      "category": "value_proposition",
+      "reverse": true,
+      "text": "When operations become unreliable, how likely are you to describe features without clarifying the customer benefit?"
+    },
+    {
+      "id": 94,
+      "category": "value_proposition",
+      "reverse": false,
+      "text": "Before discussing a partnership, how likely are you to state why a customer should choose your offer over alternatives?"
+    },
+    {
+      "id": 95,
+      "category": "value_proposition",
+      "reverse": true,
+      "text": "When the venture faces a setback, how likely are you to try to serve everyone with the same vague promise?"
+    },
+    {
+      "id": 96,
+      "category": "value_proposition",
+      "reverse": false,
+      "text": "While preparing a sales conversation, how likely are you to explain clearly which customer problem your offer solves?"
+    },
+    {
+      "id": 97,
+      "category": "value_proposition",
+      "reverse": true,
+      "text": "When feedback is uncomfortable, how likely are you to describe features without clarifying the customer benefit?"
+    },
+    {
+      "id": 98,
+      "category": "value_proposition",
+      "reverse": false,
+      "text": "Before scaling a product or service, how likely are you to state why a customer should choose your offer over alternatives?"
+    },
+    {
+      "id": 99,
+      "category": "value_proposition",
+      "reverse": true,
+      "text": "At the end of an important business cycle, how likely are you to try to serve everyone with the same vague promise?"
+    },
+    {
+      "id": 100,
+      "category": "value_proposition",
+      "reverse": false,
+      "text": "Across repeated entrepreneurial experiences, how likely are you to explain clearly which customer problem your offer solves?"
+    },
+    {
+      "id": 101,
+      "category": "market_research",
+      "reverse": false,
+      "text": "When considering a new venture idea, how likely are you to estimate market size using defensible evidence?"
+    },
+    {
+      "id": 102,
+      "category": "market_research",
+      "reverse": true,
+      "text": "During early customer discovery, how likely are you to claim a market is large without checking reliable data?"
+    },
+    {
+      "id": 103,
+      "category": "market_research",
+      "reverse": false,
+      "text": "Before investing significant money, how likely are you to study competitors and substitutes to understand customer choices?"
+    },
+    {
+      "id": 104,
+      "category": "market_research",
+      "reverse": true,
+      "text": "When evidence challenges your assumptions, how likely are you to ignore competitors because you believe your idea is unique?"
+    },
+    {
+      "id": 105,
+      "category": "market_research",
+      "reverse": false,
+      "text": "While designing an initial offer, how likely are you to estimate market size using defensible evidence?"
+    },
+    {
+      "id": 106,
+      "category": "market_research",
+      "reverse": true,
+      "text": "When resources are limited, how likely are you to claim a market is large without checking reliable data?"
+    },
+    {
+      "id": 107,
+      "category": "market_research",
+      "reverse": false,
+      "text": "Before entering a new market, how likely are you to study competitors and substitutes to understand customer choices?"
+    },
+    {
+      "id": 108,
+      "category": "market_research",
+      "reverse": true,
+      "text": "When a competitor changes direction, how likely are you to ignore competitors because you believe your idea is unique?"
+    },
+    {
+      "id": 109,
+      "category": "market_research",
+      "reverse": false,
+      "text": "While reviewing monthly results, how likely are you to estimate market size using defensible evidence?"
+    },
+    {
+      "id": 110,
+      "category": "market_research",
+      "reverse": true,
+      "text": "When cash is tighter than expected, how likely are you to claim a market is large without checking reliable data?"
+    },
+    {
+      "id": 111,
+      "category": "market_research",
+      "reverse": false,
+      "text": "Before making a major commitment, how likely are you to study competitors and substitutes to understand customer choices?"
+    },
+    {
+      "id": 112,
+      "category": "market_research",
+      "reverse": true,
+      "text": "When a customer rejects the offer, how likely are you to ignore competitors because you believe your idea is unique?"
+    },
+    {
+      "id": 113,
+      "category": "market_research",
+      "reverse": false,
+      "text": "During a difficult business decision, how likely are you to estimate market size using defensible evidence?"
+    },
+    {
+      "id": 114,
+      "category": "market_research",
+      "reverse": true,
+      "text": "When an experiment produces mixed results, how likely are you to claim a market is large without checking reliable data?"
+    },
+    {
+      "id": 115,
+      "category": "market_research",
+      "reverse": false,
+      "text": "While building a small team, how likely are you to study competitors and substitutes to understand customer choices?"
+    },
+    {
+      "id": 116,
+      "category": "market_research",
+      "reverse": true,
+      "text": "When several opportunities appear, how likely are you to ignore competitors because you believe your idea is unique?"
+    },
+    {
+      "id": 117,
+      "category": "market_research",
+      "reverse": false,
+      "text": "As demand begins to grow, how likely are you to estimate market size using defensible evidence?"
+    },
+    {
+      "id": 118,
+      "category": "market_research",
+      "reverse": true,
+      "text": "When operations become unreliable, how likely are you to claim a market is large without checking reliable data?"
+    },
+    {
+      "id": 119,
+      "category": "market_research",
+      "reverse": false,
+      "text": "Before discussing a partnership, how likely are you to study competitors and substitutes to understand customer choices?"
+    },
+    {
+      "id": 120,
+      "category": "market_research",
+      "reverse": true,
+      "text": "When the venture faces a setback, how likely are you to ignore competitors because you believe your idea is unique?"
+    },
+    {
+      "id": 121,
+      "category": "market_research",
+      "reverse": false,
+      "text": "While preparing a sales conversation, how likely are you to estimate market size using defensible evidence?"
+    },
+    {
+      "id": 122,
+      "category": "market_research",
+      "reverse": true,
+      "text": "When feedback is uncomfortable, how likely are you to claim a market is large without checking reliable data?"
+    },
+    {
+      "id": 123,
+      "category": "market_research",
+      "reverse": false,
+      "text": "Before scaling a product or service, how likely are you to study competitors and substitutes to understand customer choices?"
+    },
+    {
+      "id": 124,
+      "category": "market_research",
+      "reverse": true,
+      "text": "At the end of an important business cycle, how likely are you to ignore competitors because you believe your idea is unique?"
+    },
+    {
+      "id": 125,
+      "category": "market_research",
+      "reverse": false,
+      "text": "Across repeated entrepreneurial experiences, how likely are you to estimate market size using defensible evidence?"
+    },
+    {
+      "id": 126,
+      "category": "business_model",
+      "reverse": false,
+      "text": "When considering a new venture idea, how likely are you to define who pays, what they pay for, and how value is delivered?"
+    },
+    {
+      "id": 127,
+      "category": "business_model",
+      "reverse": true,
+      "text": "During early customer discovery, how likely are you to focus on attracting users without considering sustainable revenue?"
+    },
+    {
+      "id": 128,
+      "category": "business_model",
+      "reverse": false,
+      "text": "Before investing significant money, how likely are you to test whether revenue can realistically exceed ongoing costs?"
+    },
+    {
+      "id": 129,
+      "category": "business_model",
+      "reverse": true,
+      "text": "When evidence challenges your assumptions, how likely are you to assume growth will automatically repair a weak business model?"
+    },
+    {
+      "id": 130,
+      "category": "business_model",
+      "reverse": false,
+      "text": "While designing an initial offer, how likely are you to define who pays, what they pay for, and how value is delivered?"
+    },
+    {
+      "id": 131,
+      "category": "business_model",
+      "reverse": true,
+      "text": "When resources are limited, how likely are you to focus on attracting users without considering sustainable revenue?"
+    },
+    {
+      "id": 132,
+      "category": "business_model",
+      "reverse": false,
+      "text": "Before entering a new market, how likely are you to test whether revenue can realistically exceed ongoing costs?"
+    },
+    {
+      "id": 133,
+      "category": "business_model",
+      "reverse": true,
+      "text": "When a competitor changes direction, how likely are you to assume growth will automatically repair a weak business model?"
+    },
+    {
+      "id": 134,
+      "category": "business_model",
+      "reverse": false,
+      "text": "While reviewing monthly results, how likely are you to define who pays, what they pay for, and how value is delivered?"
+    },
+    {
+      "id": 135,
+      "category": "business_model",
+      "reverse": true,
+      "text": "When cash is tighter than expected, how likely are you to focus on attracting users without considering sustainable revenue?"
+    },
+    {
+      "id": 136,
+      "category": "business_model",
+      "reverse": false,
+      "text": "Before making a major commitment, how likely are you to test whether revenue can realistically exceed ongoing costs?"
+    },
+    {
+      "id": 137,
+      "category": "business_model",
+      "reverse": true,
+      "text": "When a customer rejects the offer, how likely are you to assume growth will automatically repair a weak business model?"
+    },
+    {
+      "id": 138,
+      "category": "business_model",
+      "reverse": false,
+      "text": "During a difficult business decision, how likely are you to define who pays, what they pay for, and how value is delivered?"
+    },
+    {
+      "id": 139,
+      "category": "business_model",
+      "reverse": true,
+      "text": "When an experiment produces mixed results, how likely are you to focus on attracting users without considering sustainable revenue?"
+    },
+    {
+      "id": 140,
+      "category": "business_model",
+      "reverse": false,
+      "text": "While building a small team, how likely are you to test whether revenue can realistically exceed ongoing costs?"
+    },
+    {
+      "id": 141,
+      "category": "business_model",
+      "reverse": true,
+      "text": "When several opportunities appear, how likely are you to assume growth will automatically repair a weak business model?"
+    },
+    {
+      "id": 142,
+      "category": "business_model",
+      "reverse": false,
+      "text": "As demand begins to grow, how likely are you to define who pays, what they pay for, and how value is delivered?"
+    },
+    {
+      "id": 143,
+      "category": "business_model",
+      "reverse": true,
+      "text": "When operations become unreliable, how likely are you to focus on attracting users without considering sustainable revenue?"
+    },
+    {
+      "id": 144,
+      "category": "business_model",
+      "reverse": false,
+      "text": "Before discussing a partnership, how likely are you to test whether revenue can realistically exceed ongoing costs?"
+    },
+    {
+      "id": 145,
+      "category": "business_model",
+      "reverse": true,
+      "text": "When the venture faces a setback, how likely are you to assume growth will automatically repair a weak business model?"
+    },
+    {
+      "id": 146,
+      "category": "business_model",
+      "reverse": false,
+      "text": "While preparing a sales conversation, how likely are you to define who pays, what they pay for, and how value is delivered?"
+    },
+    {
+      "id": 147,
+      "category": "business_model",
+      "reverse": true,
+      "text": "When feedback is uncomfortable, how likely are you to focus on attracting users without considering sustainable revenue?"
+    },
+    {
+      "id": 148,
+      "category": "business_model",
+      "reverse": false,
+      "text": "Before scaling a product or service, how likely are you to test whether revenue can realistically exceed ongoing costs?"
+    },
+    {
+      "id": 149,
+      "category": "business_model",
+      "reverse": true,
+      "text": "At the end of an important business cycle, how likely are you to assume growth will automatically repair a weak business model?"
+    },
+    {
+      "id": 150,
+      "category": "business_model",
+      "reverse": false,
+      "text": "Across repeated entrepreneurial experiences, how likely are you to define who pays, what they pay for, and how value is delivered?"
+    },
+    {
+      "id": 151,
+      "category": "strategy",
+      "reverse": false,
+      "text": "When considering a new venture idea, how likely are you to translate a venture vision into priorities and measurable milestones?"
+    },
+    {
+      "id": 152,
+      "category": "strategy",
+      "reverse": true,
+      "text": "During early customer discovery, how likely are you to use an inspiring vision without defining practical direction?"
+    },
+    {
+      "id": 153,
+      "category": "strategy",
+      "reverse": false,
+      "text": "Before investing significant money, how likely are you to choose a focused strategy instead of pursuing every possibility?"
+    },
+    {
+      "id": 154,
+      "category": "strategy",
+      "reverse": true,
+      "text": "When evidence challenges your assumptions, how likely are you to change strategy repeatedly without examining evidence?"
+    },
+    {
+      "id": 155,
+      "category": "strategy",
+      "reverse": false,
+      "text": "While designing an initial offer, how likely are you to translate a venture vision into priorities and measurable milestones?"
+    },
+    {
+      "id": 156,
+      "category": "strategy",
+      "reverse": true,
+      "text": "When resources are limited, how likely are you to use an inspiring vision without defining practical direction?"
+    },
+    {
+      "id": 157,
+      "category": "strategy",
+      "reverse": false,
+      "text": "Before entering a new market, how likely are you to choose a focused strategy instead of pursuing every possibility?"
+    },
+    {
+      "id": 158,
+      "category": "strategy",
+      "reverse": true,
+      "text": "When a competitor changes direction, how likely are you to change strategy repeatedly without examining evidence?"
+    },
+    {
+      "id": 159,
+      "category": "strategy",
+      "reverse": false,
+      "text": "While reviewing monthly results, how likely are you to translate a venture vision into priorities and measurable milestones?"
+    },
+    {
+      "id": 160,
+      "category": "strategy",
+      "reverse": true,
+      "text": "When cash is tighter than expected, how likely are you to use an inspiring vision without defining practical direction?"
+    },
+    {
+      "id": 161,
+      "category": "strategy",
+      "reverse": false,
+      "text": "Before making a major commitment, how likely are you to choose a focused strategy instead of pursuing every possibility?"
+    },
+    {
+      "id": 162,
+      "category": "strategy",
+      "reverse": true,
+      "text": "When a customer rejects the offer, how likely are you to change strategy repeatedly without examining evidence?"
+    },
+    {
+      "id": 163,
+      "category": "strategy",
+      "reverse": false,
+      "text": "During a difficult business decision, how likely are you to translate a venture vision into priorities and measurable milestones?"
+    },
+    {
+      "id": 164,
+      "category": "strategy",
+      "reverse": true,
+      "text": "When an experiment produces mixed results, how likely are you to use an inspiring vision without defining practical direction?"
+    },
+    {
+      "id": 165,
+      "category": "strategy",
+      "reverse": false,
+      "text": "While building a small team, how likely are you to choose a focused strategy instead of pursuing every possibility?"
+    },
+    {
+      "id": 166,
+      "category": "strategy",
+      "reverse": true,
+      "text": "When several opportunities appear, how likely are you to change strategy repeatedly without examining evidence?"
+    },
+    {
+      "id": 167,
+      "category": "strategy",
+      "reverse": false,
+      "text": "As demand begins to grow, how likely are you to translate a venture vision into priorities and measurable milestones?"
+    },
+    {
+      "id": 168,
+      "category": "strategy",
+      "reverse": true,
+      "text": "When operations become unreliable, how likely are you to use an inspiring vision without defining practical direction?"
+    },
+    {
+      "id": 169,
+      "category": "strategy",
+      "reverse": false,
+      "text": "Before discussing a partnership, how likely are you to choose a focused strategy instead of pursuing every possibility?"
+    },
+    {
+      "id": 170,
+      "category": "strategy",
+      "reverse": true,
+      "text": "When the venture faces a setback, how likely are you to change strategy repeatedly without examining evidence?"
+    },
+    {
+      "id": 171,
+      "category": "strategy",
+      "reverse": false,
+      "text": "While preparing a sales conversation, how likely are you to translate a venture vision into priorities and measurable milestones?"
+    },
+    {
+      "id": 172,
+      "category": "strategy",
+      "reverse": true,
+      "text": "When feedback is uncomfortable, how likely are you to use an inspiring vision without defining practical direction?"
+    },
+    {
+      "id": 173,
+      "category": "strategy",
+      "reverse": false,
+      "text": "Before scaling a product or service, how likely are you to choose a focused strategy instead of pursuing every possibility?"
+    },
+    {
+      "id": 174,
+      "category": "strategy",
+      "reverse": true,
+      "text": "At the end of an important business cycle, how likely are you to change strategy repeatedly without examining evidence?"
+    },
+    {
+      "id": 175,
+      "category": "strategy",
+      "reverse": false,
+      "text": "Across repeated entrepreneurial experiences, how likely are you to translate a venture vision into priorities and measurable milestones?"
+    },
+    {
+      "id": 176,
+      "category": "finance",
+      "reverse": false,
+      "text": "When considering a new venture idea, how likely are you to distinguish revenue, profit, and cash flow when making decisions?"
+    },
+    {
+      "id": 177,
+      "category": "finance",
+      "reverse": true,
+      "text": "During early customer discovery, how likely are you to treat sales revenue as though it were available profit?"
+    },
+    {
+      "id": 178,
+      "category": "finance",
+      "reverse": false,
+      "text": "Before investing significant money, how likely are you to forecast cash needs and monitor the assumptions behind the numbers?"
+    },
+    {
+      "id": 179,
+      "category": "finance",
+      "reverse": true,
+      "text": "When evidence challenges your assumptions, how likely are you to ignore cash timing because the venture appears profitable on paper?"
+    },
+    {
+      "id": 180,
+      "category": "finance",
+      "reverse": false,
+      "text": "While designing an initial offer, how likely are you to distinguish revenue, profit, and cash flow when making decisions?"
+    },
+    {
+      "id": 181,
+      "category": "finance",
+      "reverse": true,
+      "text": "When resources are limited, how likely are you to treat sales revenue as though it were available profit?"
+    },
+    {
+      "id": 182,
+      "category": "finance",
+      "reverse": false,
+      "text": "Before entering a new market, how likely are you to forecast cash needs and monitor the assumptions behind the numbers?"
+    },
+    {
+      "id": 183,
+      "category": "finance",
+      "reverse": true,
+      "text": "When a competitor changes direction, how likely are you to ignore cash timing because the venture appears profitable on paper?"
+    },
+    {
+      "id": 184,
+      "category": "finance",
+      "reverse": false,
+      "text": "While reviewing monthly results, how likely are you to distinguish revenue, profit, and cash flow when making decisions?"
+    },
+    {
+      "id": 185,
+      "category": "finance",
+      "reverse": true,
+      "text": "When cash is tighter than expected, how likely are you to treat sales revenue as though it were available profit?"
+    },
+    {
+      "id": 186,
+      "category": "finance",
+      "reverse": false,
+      "text": "Before making a major commitment, how likely are you to forecast cash needs and monitor the assumptions behind the numbers?"
+    },
+    {
+      "id": 187,
+      "category": "finance",
+      "reverse": true,
+      "text": "When a customer rejects the offer, how likely are you to ignore cash timing because the venture appears profitable on paper?"
+    },
+    {
+      "id": 188,
+      "category": "finance",
+      "reverse": false,
+      "text": "During a difficult business decision, how likely are you to distinguish revenue, profit, and cash flow when making decisions?"
+    },
+    {
+      "id": 189,
+      "category": "finance",
+      "reverse": true,
+      "text": "When an experiment produces mixed results, how likely are you to treat sales revenue as though it were available profit?"
+    },
+    {
+      "id": 190,
+      "category": "finance",
+      "reverse": false,
+      "text": "While building a small team, how likely are you to forecast cash needs and monitor the assumptions behind the numbers?"
+    },
+    {
+      "id": 191,
+      "category": "finance",
+      "reverse": true,
+      "text": "When several opportunities appear, how likely are you to ignore cash timing because the venture appears profitable on paper?"
+    },
+    {
+      "id": 192,
+      "category": "finance",
+      "reverse": false,
+      "text": "As demand begins to grow, how likely are you to distinguish revenue, profit, and cash flow when making decisions?"
+    },
+    {
+      "id": 193,
+      "category": "finance",
+      "reverse": true,
+      "text": "When operations become unreliable, how likely are you to treat sales revenue as though it were available profit?"
+    },
+    {
+      "id": 194,
+      "category": "finance",
+      "reverse": false,
+      "text": "Before discussing a partnership, how likely are you to forecast cash needs and monitor the assumptions behind the numbers?"
+    },
+    {
+      "id": 195,
+      "category": "finance",
+      "reverse": true,
+      "text": "When the venture faces a setback, how likely are you to ignore cash timing because the venture appears profitable on paper?"
+    },
+    {
+      "id": 196,
+      "category": "finance",
+      "reverse": false,
+      "text": "While preparing a sales conversation, how likely are you to distinguish revenue, profit, and cash flow when making decisions?"
+    },
+    {
+      "id": 197,
+      "category": "finance",
+      "reverse": true,
+      "text": "When feedback is uncomfortable, how likely are you to treat sales revenue as though it were available profit?"
+    },
+    {
+      "id": 198,
+      "category": "finance",
+      "reverse": false,
+      "text": "Before scaling a product or service, how likely are you to forecast cash needs and monitor the assumptions behind the numbers?"
+    },
+    {
+      "id": 199,
+      "category": "finance",
+      "reverse": true,
+      "text": "At the end of an important business cycle, how likely are you to ignore cash timing because the venture appears profitable on paper?"
+    },
+    {
+      "id": 200,
+      "category": "finance",
+      "reverse": false,
+      "text": "Across repeated entrepreneurial experiences, how likely are you to distinguish revenue, profit, and cash flow when making decisions?"
+    },
+    {
+      "id": 201,
+      "category": "resources",
+      "reverse": false,
+      "text": "When considering a new venture idea, how likely are you to allocate limited money, time, and talent to the highest priorities?"
+    },
+    {
+      "id": 202,
+      "category": "resources",
+      "reverse": true,
+      "text": "During early customer discovery, how likely are you to spend scarce resources on appearance before core value is proven?"
+    },
+    {
+      "id": 203,
+      "category": "resources",
+      "reverse": false,
+      "text": "Before investing significant money, how likely are you to find a lean way to test an assumption before scaling spending?"
+    },
+    {
+      "id": 204,
+      "category": "resources",
+      "reverse": true,
+      "text": "When evidence challenges your assumptions, how likely are you to wait for ideal resources instead of testing a workable small step?"
+    },
+    {
+      "id": 205,
+      "category": "resources",
+      "reverse": false,
+      "text": "While designing an initial offer, how likely are you to allocate limited money, time, and talent to the highest priorities?"
+    },
+    {
+      "id": 206,
+      "category": "resources",
+      "reverse": true,
+      "text": "When resources are limited, how likely are you to spend scarce resources on appearance before core value is proven?"
+    },
+    {
+      "id": 207,
+      "category": "resources",
+      "reverse": false,
+      "text": "Before entering a new market, how likely are you to find a lean way to test an assumption before scaling spending?"
+    },
+    {
+      "id": 208,
+      "category": "resources",
+      "reverse": true,
+      "text": "When a competitor changes direction, how likely are you to wait for ideal resources instead of testing a workable small step?"
+    },
+    {
+      "id": 209,
+      "category": "resources",
+      "reverse": false,
+      "text": "While reviewing monthly results, how likely are you to allocate limited money, time, and talent to the highest priorities?"
+    },
+    {
+      "id": 210,
+      "category": "resources",
+      "reverse": true,
+      "text": "When cash is tighter than expected, how likely are you to spend scarce resources on appearance before core value is proven?"
+    },
+    {
+      "id": 211,
+      "category": "resources",
+      "reverse": false,
+      "text": "Before making a major commitment, how likely are you to find a lean way to test an assumption before scaling spending?"
+    },
+    {
+      "id": 212,
+      "category": "resources",
+      "reverse": true,
+      "text": "When a customer rejects the offer, how likely are you to wait for ideal resources instead of testing a workable small step?"
+    },
+    {
+      "id": 213,
+      "category": "resources",
+      "reverse": false,
+      "text": "During a difficult business decision, how likely are you to allocate limited money, time, and talent to the highest priorities?"
+    },
+    {
+      "id": 214,
+      "category": "resources",
+      "reverse": true,
+      "text": "When an experiment produces mixed results, how likely are you to spend scarce resources on appearance before core value is proven?"
+    },
+    {
+      "id": 215,
+      "category": "resources",
+      "reverse": false,
+      "text": "While building a small team, how likely are you to find a lean way to test an assumption before scaling spending?"
+    },
+    {
+      "id": 216,
+      "category": "resources",
+      "reverse": true,
+      "text": "When several opportunities appear, how likely are you to wait for ideal resources instead of testing a workable small step?"
+    },
+    {
+      "id": 217,
+      "category": "resources",
+      "reverse": false,
+      "text": "As demand begins to grow, how likely are you to allocate limited money, time, and talent to the highest priorities?"
+    },
+    {
+      "id": 218,
+      "category": "resources",
+      "reverse": true,
+      "text": "When operations become unreliable, how likely are you to spend scarce resources on appearance before core value is proven?"
+    },
+    {
+      "id": 219,
+      "category": "resources",
+      "reverse": false,
+      "text": "Before discussing a partnership, how likely are you to find a lean way to test an assumption before scaling spending?"
+    },
+    {
+      "id": 220,
+      "category": "resources",
+      "reverse": true,
+      "text": "When the venture faces a setback, how likely are you to wait for ideal resources instead of testing a workable small step?"
+    },
+    {
+      "id": 221,
+      "category": "resources",
+      "reverse": false,
+      "text": "While preparing a sales conversation, how likely are you to allocate limited money, time, and talent to the highest priorities?"
+    },
+    {
+      "id": 222,
+      "category": "resources",
+      "reverse": true,
+      "text": "When feedback is uncomfortable, how likely are you to spend scarce resources on appearance before core value is proven?"
+    },
+    {
+      "id": 223,
+      "category": "resources",
+      "reverse": false,
+      "text": "Before scaling a product or service, how likely are you to find a lean way to test an assumption before scaling spending?"
+    },
+    {
+      "id": 224,
+      "category": "resources",
+      "reverse": true,
+      "text": "At the end of an important business cycle, how likely are you to wait for ideal resources instead of testing a workable small step?"
+    },
+    {
+      "id": 225,
+      "category": "resources",
+      "reverse": false,
+      "text": "Across repeated entrepreneurial experiences, how likely are you to allocate limited money, time, and talent to the highest priorities?"
+    },
+    {
+      "id": 226,
+      "category": "risk",
+      "reverse": false,
+      "text": "When considering a new venture idea, how likely are you to identify major risks and reduce the most dangerous assumptions?"
+    },
+    {
+      "id": 227,
+      "category": "risk",
+      "reverse": true,
+      "text": "During early customer discovery, how likely are you to confuse reckless action with entrepreneurial courage?"
+    },
+    {
+      "id": 228,
+      "category": "risk",
+      "reverse": false,
+      "text": "Before investing significant money, how likely are you to take a bounded risk when evidence supports the potential return?"
+    },
+    {
+      "id": 229,
+      "category": "risk",
+      "reverse": true,
+      "text": "When evidence challenges your assumptions, how likely are you to avoid every uncertain step even when downside is manageable?"
+    },
+    {
+      "id": 230,
+      "category": "risk",
+      "reverse": false,
+      "text": "While designing an initial offer, how likely are you to identify major risks and reduce the most dangerous assumptions?"
+    },
+    {
+      "id": 231,
+      "category": "risk",
+      "reverse": true,
+      "text": "When resources are limited, how likely are you to confuse reckless action with entrepreneurial courage?"
+    },
+    {
+      "id": 232,
+      "category": "risk",
+      "reverse": false,
+      "text": "Before entering a new market, how likely are you to take a bounded risk when evidence supports the potential return?"
+    },
+    {
+      "id": 233,
+      "category": "risk",
+      "reverse": true,
+      "text": "When a competitor changes direction, how likely are you to avoid every uncertain step even when downside is manageable?"
+    },
+    {
+      "id": 234,
+      "category": "risk",
+      "reverse": false,
+      "text": "While reviewing monthly results, how likely are you to identify major risks and reduce the most dangerous assumptions?"
+    },
+    {
+      "id": 235,
+      "category": "risk",
+      "reverse": true,
+      "text": "When cash is tighter than expected, how likely are you to confuse reckless action with entrepreneurial courage?"
+    },
+    {
+      "id": 236,
+      "category": "risk",
+      "reverse": false,
+      "text": "Before making a major commitment, how likely are you to take a bounded risk when evidence supports the potential return?"
+    },
+    {
+      "id": 237,
+      "category": "risk",
+      "reverse": true,
+      "text": "When a customer rejects the offer, how likely are you to avoid every uncertain step even when downside is manageable?"
+    },
+    {
+      "id": 238,
+      "category": "risk",
+      "reverse": false,
+      "text": "During a difficult business decision, how likely are you to identify major risks and reduce the most dangerous assumptions?"
+    },
+    {
+      "id": 239,
+      "category": "risk",
+      "reverse": true,
+      "text": "When an experiment produces mixed results, how likely are you to confuse reckless action with entrepreneurial courage?"
+    },
+    {
+      "id": 240,
+      "category": "risk",
+      "reverse": false,
+      "text": "While building a small team, how likely are you to take a bounded risk when evidence supports the potential return?"
+    },
+    {
+      "id": 241,
+      "category": "risk",
+      "reverse": true,
+      "text": "When several opportunities appear, how likely are you to avoid every uncertain step even when downside is manageable?"
+    },
+    {
+      "id": 242,
+      "category": "risk",
+      "reverse": false,
+      "text": "As demand begins to grow, how likely are you to identify major risks and reduce the most dangerous assumptions?"
+    },
+    {
+      "id": 243,
+      "category": "risk",
+      "reverse": true,
+      "text": "When operations become unreliable, how likely are you to confuse reckless action with entrepreneurial courage?"
+    },
+    {
+      "id": 244,
+      "category": "risk",
+      "reverse": false,
+      "text": "Before discussing a partnership, how likely are you to take a bounded risk when evidence supports the potential return?"
+    },
+    {
+      "id": 245,
+      "category": "risk",
+      "reverse": true,
+      "text": "When the venture faces a setback, how likely are you to avoid every uncertain step even when downside is manageable?"
+    },
+    {
+      "id": 246,
+      "category": "risk",
+      "reverse": false,
+      "text": "While preparing a sales conversation, how likely are you to identify major risks and reduce the most dangerous assumptions?"
+    },
+    {
+      "id": 247,
+      "category": "risk",
+      "reverse": true,
+      "text": "When feedback is uncomfortable, how likely are you to confuse reckless action with entrepreneurial courage?"
+    },
+    {
+      "id": 248,
+      "category": "risk",
+      "reverse": false,
+      "text": "Before scaling a product or service, how likely are you to take a bounded risk when evidence supports the potential return?"
+    },
+    {
+      "id": 249,
+      "category": "risk",
+      "reverse": true,
+      "text": "At the end of an important business cycle, how likely are you to avoid every uncertain step even when downside is manageable?"
+    },
+    {
+      "id": 250,
+      "category": "risk",
+      "reverse": false,
+      "text": "Across repeated entrepreneurial experiences, how likely are you to identify major risks and reduce the most dangerous assumptions?"
+    },
+    {
+      "id": 251,
+      "category": "decisions",
+      "reverse": false,
+      "text": "When considering a new venture idea, how likely are you to make a timely decision using the best available evidence?"
+    },
+    {
+      "id": 252,
+      "category": "decisions",
+      "reverse": true,
+      "text": "During early customer discovery, how likely are you to delay a reversible decision while waiting for certainty?"
+    },
+    {
+      "id": 253,
+      "category": "decisions",
+      "reverse": false,
+      "text": "Before investing significant money, how likely are you to separate reversible experiments from high-consequence commitments?"
+    },
+    {
+      "id": 254,
+      "category": "decisions",
+      "reverse": true,
+      "text": "When evidence challenges your assumptions, how likely are you to make a major commitment without checking critical information?"
+    },
+    {
+      "id": 255,
+      "category": "decisions",
+      "reverse": false,
+      "text": "While designing an initial offer, how likely are you to make a timely decision using the best available evidence?"
+    },
+    {
+      "id": 256,
+      "category": "decisions",
+      "reverse": true,
+      "text": "When resources are limited, how likely are you to delay a reversible decision while waiting for certainty?"
+    },
+    {
+      "id": 257,
+      "category": "decisions",
+      "reverse": false,
+      "text": "Before entering a new market, how likely are you to separate reversible experiments from high-consequence commitments?"
+    },
+    {
+      "id": 258,
+      "category": "decisions",
+      "reverse": true,
+      "text": "When a competitor changes direction, how likely are you to make a major commitment without checking critical information?"
+    },
+    {
+      "id": 259,
+      "category": "decisions",
+      "reverse": false,
+      "text": "While reviewing monthly results, how likely are you to make a timely decision using the best available evidence?"
+    },
+    {
+      "id": 260,
+      "category": "decisions",
+      "reverse": true,
+      "text": "When cash is tighter than expected, how likely are you to delay a reversible decision while waiting for certainty?"
+    },
+    {
+      "id": 261,
+      "category": "decisions",
+      "reverse": false,
+      "text": "Before making a major commitment, how likely are you to separate reversible experiments from high-consequence commitments?"
+    },
+    {
+      "id": 262,
+      "category": "decisions",
+      "reverse": true,
+      "text": "When a customer rejects the offer, how likely are you to make a major commitment without checking critical information?"
+    },
+    {
+      "id": 263,
+      "category": "decisions",
+      "reverse": false,
+      "text": "During a difficult business decision, how likely are you to make a timely decision using the best available evidence?"
+    },
+    {
+      "id": 264,
+      "category": "decisions",
+      "reverse": true,
+      "text": "When an experiment produces mixed results, how likely are you to delay a reversible decision while waiting for certainty?"
+    },
+    {
+      "id": 265,
+      "category": "decisions",
+      "reverse": false,
+      "text": "While building a small team, how likely are you to separate reversible experiments from high-consequence commitments?"
+    },
+    {
+      "id": 266,
+      "category": "decisions",
+      "reverse": true,
+      "text": "When several opportunities appear, how likely are you to make a major commitment without checking critical information?"
+    },
+    {
+      "id": 267,
+      "category": "decisions",
+      "reverse": false,
+      "text": "As demand begins to grow, how likely are you to make a timely decision using the best available evidence?"
+    },
+    {
+      "id": 268,
+      "category": "decisions",
+      "reverse": true,
+      "text": "When operations become unreliable, how likely are you to delay a reversible decision while waiting for certainty?"
+    },
+    {
+      "id": 269,
+      "category": "decisions",
+      "reverse": false,
+      "text": "Before discussing a partnership, how likely are you to separate reversible experiments from high-consequence commitments?"
+    },
+    {
+      "id": 270,
+      "category": "decisions",
+      "reverse": true,
+      "text": "When the venture faces a setback, how likely are you to make a major commitment without checking critical information?"
+    },
+    {
+      "id": 271,
+      "category": "decisions",
+      "reverse": false,
+      "text": "While preparing a sales conversation, how likely are you to make a timely decision using the best available evidence?"
+    },
+    {
+      "id": 272,
+      "category": "decisions",
+      "reverse": true,
+      "text": "When feedback is uncomfortable, how likely are you to delay a reversible decision while waiting for certainty?"
+    },
+    {
+      "id": 273,
+      "category": "decisions",
+      "reverse": false,
+      "text": "Before scaling a product or service, how likely are you to separate reversible experiments from high-consequence commitments?"
+    },
+    {
+      "id": 274,
+      "category": "decisions",
+      "reverse": true,
+      "text": "At the end of an important business cycle, how likely are you to make a major commitment without checking critical information?"
+    },
+    {
+      "id": 275,
+      "category": "decisions",
+      "reverse": false,
+      "text": "Across repeated entrepreneurial experiences, how likely are you to make a timely decision using the best available evidence?"
+    },
+    {
+      "id": 276,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "When considering a new venture idea, how likely are you to define the root problem before selecting a solution?"
+    },
+    {
+      "id": 277,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "During early customer discovery, how likely are you to react repeatedly to symptoms without examining their cause?"
+    },
+    {
+      "id": 278,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "Before investing significant money, how likely are you to consider how a change in one area affects the wider venture?"
+    },
+    {
+      "id": 279,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "When evidence challenges your assumptions, how likely are you to fix one metric while ignoring damage elsewhere in the business?"
+    },
+    {
+      "id": 280,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "While designing an initial offer, how likely are you to define the root problem before selecting a solution?"
+    },
+    {
+      "id": 281,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "When resources are limited, how likely are you to react repeatedly to symptoms without examining their cause?"
+    },
+    {
+      "id": 282,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "Before entering a new market, how likely are you to consider how a change in one area affects the wider venture?"
+    },
+    {
+      "id": 283,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "When a competitor changes direction, how likely are you to fix one metric while ignoring damage elsewhere in the business?"
+    },
+    {
+      "id": 284,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "While reviewing monthly results, how likely are you to define the root problem before selecting a solution?"
+    },
+    {
+      "id": 285,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "When cash is tighter than expected, how likely are you to react repeatedly to symptoms without examining their cause?"
+    },
+    {
+      "id": 286,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "Before making a major commitment, how likely are you to consider how a change in one area affects the wider venture?"
+    },
+    {
+      "id": 287,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "When a customer rejects the offer, how likely are you to fix one metric while ignoring damage elsewhere in the business?"
+    },
+    {
+      "id": 288,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "During a difficult business decision, how likely are you to define the root problem before selecting a solution?"
+    },
+    {
+      "id": 289,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "When an experiment produces mixed results, how likely are you to react repeatedly to symptoms without examining their cause?"
+    },
+    {
+      "id": 290,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "While building a small team, how likely are you to consider how a change in one area affects the wider venture?"
+    },
+    {
+      "id": 291,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "When several opportunities appear, how likely are you to fix one metric while ignoring damage elsewhere in the business?"
+    },
+    {
+      "id": 292,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "As demand begins to grow, how likely are you to define the root problem before selecting a solution?"
+    },
+    {
+      "id": 293,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "When operations become unreliable, how likely are you to react repeatedly to symptoms without examining their cause?"
+    },
+    {
+      "id": 294,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "Before discussing a partnership, how likely are you to consider how a change in one area affects the wider venture?"
+    },
+    {
+      "id": 295,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "When the venture faces a setback, how likely are you to fix one metric while ignoring damage elsewhere in the business?"
+    },
+    {
+      "id": 296,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "While preparing a sales conversation, how likely are you to define the root problem before selecting a solution?"
+    },
+    {
+      "id": 297,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "When feedback is uncomfortable, how likely are you to react repeatedly to symptoms without examining their cause?"
+    },
+    {
+      "id": 298,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "Before scaling a product or service, how likely are you to consider how a change in one area affects the wider venture?"
+    },
+    {
+      "id": 299,
+      "category": "problem_solving",
+      "reverse": true,
+      "text": "At the end of an important business cycle, how likely are you to fix one metric while ignoring damage elsewhere in the business?"
+    },
+    {
+      "id": 300,
+      "category": "problem_solving",
+      "reverse": false,
+      "text": "Across repeated entrepreneurial experiences, how likely are you to define the root problem before selecting a solution?"
+    },
+    {
+      "id": 301,
+      "category": "innovation",
+      "reverse": false,
+      "text": "When considering a new venture idea, how likely are you to run a small experiment that can disprove an important assumption?"
+    },
+    {
+      "id": 302,
+      "category": "innovation",
+      "reverse": true,
+      "text": "During early customer discovery, how likely are you to protect an idea from tests that might reveal weaknesses?"
+    },
+    {
+      "id": 303,
+      "category": "innovation",
+      "reverse": false,
+      "text": "Before investing significant money, how likely are you to combine existing ideas into a more useful customer solution?"
+    },
+    {
+      "id": 304,
+      "category": "innovation",
+      "reverse": true,
+      "text": "When evidence challenges your assumptions, how likely are you to pursue novelty without checking whether it creates customer value?"
+    },
+    {
+      "id": 305,
+      "category": "innovation",
+      "reverse": false,
+      "text": "While designing an initial offer, how likely are you to run a small experiment that can disprove an important assumption?"
+    },
+    {
+      "id": 306,
+      "category": "innovation",
+      "reverse": true,
+      "text": "When resources are limited, how likely are you to protect an idea from tests that might reveal weaknesses?"
+    },
+    {
+      "id": 307,
+      "category": "innovation",
+      "reverse": false,
+      "text": "Before entering a new market, how likely are you to combine existing ideas into a more useful customer solution?"
+    },
+    {
+      "id": 308,
+      "category": "innovation",
+      "reverse": true,
+      "text": "When a competitor changes direction, how likely are you to pursue novelty without checking whether it creates customer value?"
+    },
+    {
+      "id": 309,
+      "category": "innovation",
+      "reverse": false,
+      "text": "While reviewing monthly results, how likely are you to run a small experiment that can disprove an important assumption?"
+    },
+    {
+      "id": 310,
+      "category": "innovation",
+      "reverse": true,
+      "text": "When cash is tighter than expected, how likely are you to protect an idea from tests that might reveal weaknesses?"
+    },
+    {
+      "id": 311,
+      "category": "innovation",
+      "reverse": false,
+      "text": "Before making a major commitment, how likely are you to combine existing ideas into a more useful customer solution?"
+    },
+    {
+      "id": 312,
+      "category": "innovation",
+      "reverse": true,
+      "text": "When a customer rejects the offer, how likely are you to pursue novelty without checking whether it creates customer value?"
+    },
+    {
+      "id": 313,
+      "category": "innovation",
+      "reverse": false,
+      "text": "During a difficult business decision, how likely are you to run a small experiment that can disprove an important assumption?"
+    },
+    {
+      "id": 314,
+      "category": "innovation",
+      "reverse": true,
+      "text": "When an experiment produces mixed results, how likely are you to protect an idea from tests that might reveal weaknesses?"
+    },
+    {
+      "id": 315,
+      "category": "innovation",
+      "reverse": false,
+      "text": "While building a small team, how likely are you to combine existing ideas into a more useful customer solution?"
+    },
+    {
+      "id": 316,
+      "category": "innovation",
+      "reverse": true,
+      "text": "When several opportunities appear, how likely are you to pursue novelty without checking whether it creates customer value?"
+    },
+    {
+      "id": 317,
+      "category": "innovation",
+      "reverse": false,
+      "text": "As demand begins to grow, how likely are you to run a small experiment that can disprove an important assumption?"
+    },
+    {
+      "id": 318,
+      "category": "innovation",
+      "reverse": true,
+      "text": "When operations become unreliable, how likely are you to protect an idea from tests that might reveal weaknesses?"
+    },
+    {
+      "id": 319,
+      "category": "innovation",
+      "reverse": false,
+      "text": "Before discussing a partnership, how likely are you to combine existing ideas into a more useful customer solution?"
+    },
+    {
+      "id": 320,
+      "category": "innovation",
+      "reverse": true,
+      "text": "When the venture faces a setback, how likely are you to pursue novelty without checking whether it creates customer value?"
+    },
+    {
+      "id": 321,
+      "category": "innovation",
+      "reverse": false,
+      "text": "While preparing a sales conversation, how likely are you to run a small experiment that can disprove an important assumption?"
+    },
+    {
+      "id": 322,
+      "category": "innovation",
+      "reverse": true,
+      "text": "When feedback is uncomfortable, how likely are you to protect an idea from tests that might reveal weaknesses?"
+    },
+    {
+      "id": 323,
+      "category": "innovation",
+      "reverse": false,
+      "text": "Before scaling a product or service, how likely are you to combine existing ideas into a more useful customer solution?"
+    },
+    {
+      "id": 324,
+      "category": "innovation",
+      "reverse": true,
+      "text": "At the end of an important business cycle, how likely are you to pursue novelty without checking whether it creates customer value?"
+    },
+    {
+      "id": 325,
+      "category": "innovation",
+      "reverse": false,
+      "text": "Across repeated entrepreneurial experiences, how likely are you to run a small experiment that can disprove an important assumption?"
+    },
+    {
+      "id": 326,
+      "category": "sales",
+      "reverse": false,
+      "text": "When considering a new venture idea, how likely are you to ask questions before recommending an offer to a prospect?"
+    },
+    {
+      "id": 327,
+      "category": "sales",
+      "reverse": true,
+      "text": "During early customer discovery, how likely are you to pressure a prospect before understanding their needs?"
+    },
+    {
+      "id": 328,
+      "category": "sales",
+      "reverse": false,
+      "text": "Before investing significant money, how likely are you to communicate value honestly and ask clearly for a decision?"
+    },
+    {
+      "id": 329,
+      "category": "sales",
+      "reverse": true,
+      "text": "When evidence challenges your assumptions, how likely are you to avoid selling because rejection feels personally threatening?"
+    },
+    {
+      "id": 330,
+      "category": "sales",
+      "reverse": false,
+      "text": "While designing an initial offer, how likely are you to ask questions before recommending an offer to a prospect?"
+    },
+    {
+      "id": 331,
+      "category": "sales",
+      "reverse": true,
+      "text": "When resources are limited, how likely are you to pressure a prospect before understanding their needs?"
+    },
+    {
+      "id": 332,
+      "category": "sales",
+      "reverse": false,
+      "text": "Before entering a new market, how likely are you to communicate value honestly and ask clearly for a decision?"
+    },
+    {
+      "id": 333,
+      "category": "sales",
+      "reverse": true,
+      "text": "When a competitor changes direction, how likely are you to avoid selling because rejection feels personally threatening?"
+    },
+    {
+      "id": 334,
+      "category": "sales",
+      "reverse": false,
+      "text": "While reviewing monthly results, how likely are you to ask questions before recommending an offer to a prospect?"
+    },
+    {
+      "id": 335,
+      "category": "sales",
+      "reverse": true,
+      "text": "When cash is tighter than expected, how likely are you to pressure a prospect before understanding their needs?"
+    },
+    {
+      "id": 336,
+      "category": "sales",
+      "reverse": false,
+      "text": "Before making a major commitment, how likely are you to communicate value honestly and ask clearly for a decision?"
+    },
+    {
+      "id": 337,
+      "category": "sales",
+      "reverse": true,
+      "text": "When a customer rejects the offer, how likely are you to avoid selling because rejection feels personally threatening?"
+    },
+    {
+      "id": 338,
+      "category": "sales",
+      "reverse": false,
+      "text": "During a difficult business decision, how likely are you to ask questions before recommending an offer to a prospect?"
+    },
+    {
+      "id": 339,
+      "category": "sales",
+      "reverse": true,
+      "text": "When an experiment produces mixed results, how likely are you to pressure a prospect before understanding their needs?"
+    },
+    {
+      "id": 340,
+      "category": "sales",
+      "reverse": false,
+      "text": "While building a small team, how likely are you to communicate value honestly and ask clearly for a decision?"
+    },
+    {
+      "id": 341,
+      "category": "sales",
+      "reverse": true,
+      "text": "When several opportunities appear, how likely are you to avoid selling because rejection feels personally threatening?"
+    },
+    {
+      "id": 342,
+      "category": "sales",
+      "reverse": false,
+      "text": "As demand begins to grow, how likely are you to ask questions before recommending an offer to a prospect?"
+    },
+    {
+      "id": 343,
+      "category": "sales",
+      "reverse": true,
+      "text": "When operations become unreliable, how likely are you to pressure a prospect before understanding their needs?"
+    },
+    {
+      "id": 344,
+      "category": "sales",
+      "reverse": false,
+      "text": "Before discussing a partnership, how likely are you to communicate value honestly and ask clearly for a decision?"
+    },
+    {
+      "id": 345,
+      "category": "sales",
+      "reverse": true,
+      "text": "When the venture faces a setback, how likely are you to avoid selling because rejection feels personally threatening?"
+    },
+    {
+      "id": 346,
+      "category": "sales",
+      "reverse": false,
+      "text": "While preparing a sales conversation, how likely are you to ask questions before recommending an offer to a prospect?"
+    },
+    {
+      "id": 347,
+      "category": "sales",
+      "reverse": true,
+      "text": "When feedback is uncomfortable, how likely are you to pressure a prospect before understanding their needs?"
+    },
+    {
+      "id": 348,
+      "category": "sales",
+      "reverse": false,
+      "text": "Before scaling a product or service, how likely are you to communicate value honestly and ask clearly for a decision?"
+    },
+    {
+      "id": 349,
+      "category": "sales",
+      "reverse": true,
+      "text": "At the end of an important business cycle, how likely are you to avoid selling because rejection feels personally threatening?"
+    },
+    {
+      "id": 350,
+      "category": "sales",
+      "reverse": false,
+      "text": "Across repeated entrepreneurial experiences, how likely are you to ask questions before recommending an offer to a prospect?"
+    },
+    {
+      "id": 351,
+      "category": "networking",
+      "reverse": false,
+      "text": "When considering a new venture idea, how likely are you to build reciprocal relationships before an urgent need arises?"
+    },
+    {
+      "id": 352,
+      "category": "networking",
+      "reverse": true,
+      "text": "During early customer discovery, how likely are you to contact people only when you immediately need a favour?"
+    },
+    {
+      "id": 353,
+      "category": "networking",
+      "reverse": false,
+      "text": "Before investing significant money, how likely are you to evaluate whether a partnership creates clear value for both sides?"
+    },
+    {
+      "id": 354,
+      "category": "networking",
+      "reverse": true,
+      "text": "When evidence challenges your assumptions, how likely are you to enter a partnership without clarifying roles and expectations?"
+    },
+    {
+      "id": 355,
+      "category": "networking",
+      "reverse": false,
+      "text": "While designing an initial offer, how likely are you to build reciprocal relationships before an urgent need arises?"
+    },
+    {
+      "id": 356,
+      "category": "networking",
+      "reverse": true,
+      "text": "When resources are limited, how likely are you to contact people only when you immediately need a favour?"
+    },
+    {
+      "id": 357,
+      "category": "networking",
+      "reverse": false,
+      "text": "Before entering a new market, how likely are you to evaluate whether a partnership creates clear value for both sides?"
+    },
+    {
+      "id": 358,
+      "category": "networking",
+      "reverse": true,
+      "text": "When a competitor changes direction, how likely are you to enter a partnership without clarifying roles and expectations?"
+    },
+    {
+      "id": 359,
+      "category": "networking",
+      "reverse": false,
+      "text": "While reviewing monthly results, how likely are you to build reciprocal relationships before an urgent need arises?"
+    },
+    {
+      "id": 360,
+      "category": "networking",
+      "reverse": true,
+      "text": "When cash is tighter than expected, how likely are you to contact people only when you immediately need a favour?"
+    },
+    {
+      "id": 361,
+      "category": "networking",
+      "reverse": false,
+      "text": "Before making a major commitment, how likely are you to evaluate whether a partnership creates clear value for both sides?"
+    },
+    {
+      "id": 362,
+      "category": "networking",
+      "reverse": true,
+      "text": "When a customer rejects the offer, how likely are you to enter a partnership without clarifying roles and expectations?"
+    },
+    {
+      "id": 363,
+      "category": "networking",
+      "reverse": false,
+      "text": "During a difficult business decision, how likely are you to build reciprocal relationships before an urgent need arises?"
+    },
+    {
+      "id": 364,
+      "category": "networking",
+      "reverse": true,
+      "text": "When an experiment produces mixed results, how likely are you to contact people only when you immediately need a favour?"
+    },
+    {
+      "id": 365,
+      "category": "networking",
+      "reverse": false,
+      "text": "While building a small team, how likely are you to evaluate whether a partnership creates clear value for both sides?"
+    },
+    {
+      "id": 366,
+      "category": "networking",
+      "reverse": true,
+      "text": "When several opportunities appear, how likely are you to enter a partnership without clarifying roles and expectations?"
+    },
+    {
+      "id": 367,
+      "category": "networking",
+      "reverse": false,
+      "text": "As demand begins to grow, how likely are you to build reciprocal relationships before an urgent need arises?"
+    },
+    {
+      "id": 368,
+      "category": "networking",
+      "reverse": true,
+      "text": "When operations become unreliable, how likely are you to contact people only when you immediately need a favour?"
+    },
+    {
+      "id": 369,
+      "category": "networking",
+      "reverse": false,
+      "text": "Before discussing a partnership, how likely are you to evaluate whether a partnership creates clear value for both sides?"
+    },
+    {
+      "id": 370,
+      "category": "networking",
+      "reverse": true,
+      "text": "When the venture faces a setback, how likely are you to enter a partnership without clarifying roles and expectations?"
+    },
+    {
+      "id": 371,
+      "category": "networking",
+      "reverse": false,
+      "text": "While preparing a sales conversation, how likely are you to build reciprocal relationships before an urgent need arises?"
+    },
+    {
+      "id": 372,
+      "category": "networking",
+      "reverse": true,
+      "text": "When feedback is uncomfortable, how likely are you to contact people only when you immediately need a favour?"
+    },
+    {
+      "id": 373,
+      "category": "networking",
+      "reverse": false,
+      "text": "Before scaling a product or service, how likely are you to evaluate whether a partnership creates clear value for both sides?"
+    },
+    {
+      "id": 374,
+      "category": "networking",
+      "reverse": true,
+      "text": "At the end of an important business cycle, how likely are you to enter a partnership without clarifying roles and expectations?"
+    },
+    {
+      "id": 375,
+      "category": "networking",
+      "reverse": false,
+      "text": "Across repeated entrepreneurial experiences, how likely are you to build reciprocal relationships before an urgent need arises?"
+    },
+    {
+      "id": 376,
+      "category": "leadership",
+      "reverse": false,
+      "text": "When considering a new venture idea, how likely are you to set clear outcomes while giving capable people useful autonomy?"
+    },
+    {
+      "id": 377,
+      "category": "leadership",
+      "reverse": true,
+      "text": "During early customer discovery, how likely are you to control every task because delegating feels risky?"
+    },
+    {
+      "id": 378,
+      "category": "leadership",
+      "reverse": false,
+      "text": "Before investing significant money, how likely are you to choose contributors for needed strengths rather than personal similarity?"
+    },
+    {
+      "id": 379,
+      "category": "leadership",
+      "reverse": true,
+      "text": "When evidence challenges your assumptions, how likely are you to hire quickly without defining the capability the venture needs?"
+    },
+    {
+      "id": 380,
+      "category": "leadership",
+      "reverse": false,
+      "text": "While designing an initial offer, how likely are you to set clear outcomes while giving capable people useful autonomy?"
+    },
+    {
+      "id": 381,
+      "category": "leadership",
+      "reverse": true,
+      "text": "When resources are limited, how likely are you to control every task because delegating feels risky?"
+    },
+    {
+      "id": 382,
+      "category": "leadership",
+      "reverse": false,
+      "text": "Before entering a new market, how likely are you to choose contributors for needed strengths rather than personal similarity?"
+    },
+    {
+      "id": 383,
+      "category": "leadership",
+      "reverse": true,
+      "text": "When a competitor changes direction, how likely are you to hire quickly without defining the capability the venture needs?"
+    },
+    {
+      "id": 384,
+      "category": "leadership",
+      "reverse": false,
+      "text": "While reviewing monthly results, how likely are you to set clear outcomes while giving capable people useful autonomy?"
+    },
+    {
+      "id": 385,
+      "category": "leadership",
+      "reverse": true,
+      "text": "When cash is tighter than expected, how likely are you to control every task because delegating feels risky?"
+    },
+    {
+      "id": 386,
+      "category": "leadership",
+      "reverse": false,
+      "text": "Before making a major commitment, how likely are you to choose contributors for needed strengths rather than personal similarity?"
+    },
+    {
+      "id": 387,
+      "category": "leadership",
+      "reverse": true,
+      "text": "When a customer rejects the offer, how likely are you to hire quickly without defining the capability the venture needs?"
+    },
+    {
+      "id": 388,
+      "category": "leadership",
+      "reverse": false,
+      "text": "During a difficult business decision, how likely are you to set clear outcomes while giving capable people useful autonomy?"
+    },
+    {
+      "id": 389,
+      "category": "leadership",
+      "reverse": true,
+      "text": "When an experiment produces mixed results, how likely are you to control every task because delegating feels risky?"
+    },
+    {
+      "id": 390,
+      "category": "leadership",
+      "reverse": false,
+      "text": "While building a small team, how likely are you to choose contributors for needed strengths rather than personal similarity?"
+    },
+    {
+      "id": 391,
+      "category": "leadership",
+      "reverse": true,
+      "text": "When several opportunities appear, how likely are you to hire quickly without defining the capability the venture needs?"
+    },
+    {
+      "id": 392,
+      "category": "leadership",
+      "reverse": false,
+      "text": "As demand begins to grow, how likely are you to set clear outcomes while giving capable people useful autonomy?"
+    },
+    {
+      "id": 393,
+      "category": "leadership",
+      "reverse": true,
+      "text": "When operations become unreliable, how likely are you to control every task because delegating feels risky?"
+    },
+    {
+      "id": 394,
+      "category": "leadership",
+      "reverse": false,
+      "text": "Before discussing a partnership, how likely are you to choose contributors for needed strengths rather than personal similarity?"
+    },
+    {
+      "id": 395,
+      "category": "leadership",
+      "reverse": true,
+      "text": "When the venture faces a setback, how likely are you to hire quickly without defining the capability the venture needs?"
+    },
+    {
+      "id": 396,
+      "category": "leadership",
+      "reverse": false,
+      "text": "While preparing a sales conversation, how likely are you to set clear outcomes while giving capable people useful autonomy?"
+    },
+    {
+      "id": 397,
+      "category": "leadership",
+      "reverse": true,
+      "text": "When feedback is uncomfortable, how likely are you to control every task because delegating feels risky?"
+    },
+    {
+      "id": 398,
+      "category": "leadership",
+      "reverse": false,
+      "text": "Before scaling a product or service, how likely are you to choose contributors for needed strengths rather than personal similarity?"
+    },
+    {
+      "id": 399,
+      "category": "leadership",
+      "reverse": true,
+      "text": "At the end of an important business cycle, how likely are you to hire quickly without defining the capability the venture needs?"
+    },
+    {
+      "id": 400,
+      "category": "leadership",
+      "reverse": false,
+      "text": "Across repeated entrepreneurial experiences, how likely are you to set clear outcomes while giving capable people useful autonomy?"
+    },
+    {
+      "id": 401,
+      "category": "execution",
+      "reverse": false,
+      "text": "When considering a new venture idea, how likely are you to turn a priority into an owner, deadline, and next action?"
+    },
+    {
+      "id": 402,
+      "category": "execution",
+      "reverse": true,
+      "text": "During early customer discovery, how likely are you to discuss priorities repeatedly without assigning action?"
+    },
+    {
+      "id": 403,
+      "category": "execution",
+      "reverse": false,
+      "text": "Before investing significant money, how likely are you to build a repeatable process for work that must happen reliably?"
+    },
+    {
+      "id": 404,
+      "category": "execution",
+      "reverse": true,
+      "text": "When evidence challenges your assumptions, how likely are you to depend on last-minute effort for routine business operations?"
+    },
+    {
+      "id": 405,
+      "category": "execution",
+      "reverse": false,
+      "text": "While designing an initial offer, how likely are you to turn a priority into an owner, deadline, and next action?"
+    },
+    {
+      "id": 406,
+      "category": "execution",
+      "reverse": true,
+      "text": "When resources are limited, how likely are you to discuss priorities repeatedly without assigning action?"
+    },
+    {
+      "id": 407,
+      "category": "execution",
+      "reverse": false,
+      "text": "Before entering a new market, how likely are you to build a repeatable process for work that must happen reliably?"
+    },
+    {
+      "id": 408,
+      "category": "execution",
+      "reverse": true,
+      "text": "When a competitor changes direction, how likely are you to depend on last-minute effort for routine business operations?"
+    },
+    {
+      "id": 409,
+      "category": "execution",
+      "reverse": false,
+      "text": "While reviewing monthly results, how likely are you to turn a priority into an owner, deadline, and next action?"
+    },
+    {
+      "id": 410,
+      "category": "execution",
+      "reverse": true,
+      "text": "When cash is tighter than expected, how likely are you to discuss priorities repeatedly without assigning action?"
+    },
+    {
+      "id": 411,
+      "category": "execution",
+      "reverse": false,
+      "text": "Before making a major commitment, how likely are you to build a repeatable process for work that must happen reliably?"
+    },
+    {
+      "id": 412,
+      "category": "execution",
+      "reverse": true,
+      "text": "When a customer rejects the offer, how likely are you to depend on last-minute effort for routine business operations?"
+    },
+    {
+      "id": 413,
+      "category": "execution",
+      "reverse": false,
+      "text": "During a difficult business decision, how likely are you to turn a priority into an owner, deadline, and next action?"
+    },
+    {
+      "id": 414,
+      "category": "execution",
+      "reverse": true,
+      "text": "When an experiment produces mixed results, how likely are you to discuss priorities repeatedly without assigning action?"
+    },
+    {
+      "id": 415,
+      "category": "execution",
+      "reverse": false,
+      "text": "While building a small team, how likely are you to build a repeatable process for work that must happen reliably?"
+    },
+    {
+      "id": 416,
+      "category": "execution",
+      "reverse": true,
+      "text": "When several opportunities appear, how likely are you to depend on last-minute effort for routine business operations?"
+    },
+    {
+      "id": 417,
+      "category": "execution",
+      "reverse": false,
+      "text": "As demand begins to grow, how likely are you to turn a priority into an owner, deadline, and next action?"
+    },
+    {
+      "id": 418,
+      "category": "execution",
+      "reverse": true,
+      "text": "When operations become unreliable, how likely are you to discuss priorities repeatedly without assigning action?"
+    },
+    {
+      "id": 419,
+      "category": "execution",
+      "reverse": false,
+      "text": "Before discussing a partnership, how likely are you to build a repeatable process for work that must happen reliably?"
+    },
+    {
+      "id": 420,
+      "category": "execution",
+      "reverse": true,
+      "text": "When the venture faces a setback, how likely are you to depend on last-minute effort for routine business operations?"
+    },
+    {
+      "id": 421,
+      "category": "execution",
+      "reverse": false,
+      "text": "While preparing a sales conversation, how likely are you to turn a priority into an owner, deadline, and next action?"
+    },
+    {
+      "id": 422,
+      "category": "execution",
+      "reverse": true,
+      "text": "When feedback is uncomfortable, how likely are you to discuss priorities repeatedly without assigning action?"
+    },
+    {
+      "id": 423,
+      "category": "execution",
+      "reverse": false,
+      "text": "Before scaling a product or service, how likely are you to build a repeatable process for work that must happen reliably?"
+    },
+    {
+      "id": 424,
+      "category": "execution",
+      "reverse": true,
+      "text": "At the end of an important business cycle, how likely are you to depend on last-minute effort for routine business operations?"
+    },
+    {
+      "id": 425,
+      "category": "execution",
+      "reverse": false,
+      "text": "Across repeated entrepreneurial experiences, how likely are you to turn a priority into an owner, deadline, and next action?"
+    },
+    {
+      "id": 426,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "When considering a new venture idea, how likely are you to adjust the approach when customer or market evidence changes?"
+    },
+    {
+      "id": 427,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "During early customer discovery, how likely are you to continue a failing approach because changing feels like defeat?"
+    },
+    {
+      "id": 428,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "Before investing significant money, how likely are you to resume purposeful action after a setback and capture the lesson?"
+    },
+    {
+      "id": 429,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When evidence challenges your assumptions, how likely are you to treat one rejection as proof the venture cannot work?"
+    },
+    {
+      "id": 430,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "While designing an initial offer, how likely are you to adjust the approach when customer or market evidence changes?"
+    },
+    {
+      "id": 431,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When resources are limited, how likely are you to continue a failing approach because changing feels like defeat?"
+    },
+    {
+      "id": 432,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "Before entering a new market, how likely are you to resume purposeful action after a setback and capture the lesson?"
+    },
+    {
+      "id": 433,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When a competitor changes direction, how likely are you to treat one rejection as proof the venture cannot work?"
+    },
+    {
+      "id": 434,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "While reviewing monthly results, how likely are you to adjust the approach when customer or market evidence changes?"
+    },
+    {
+      "id": 435,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When cash is tighter than expected, how likely are you to continue a failing approach because changing feels like defeat?"
+    },
+    {
+      "id": 436,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "Before making a major commitment, how likely are you to resume purposeful action after a setback and capture the lesson?"
+    },
+    {
+      "id": 437,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When a customer rejects the offer, how likely are you to treat one rejection as proof the venture cannot work?"
+    },
+    {
+      "id": 438,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "During a difficult business decision, how likely are you to adjust the approach when customer or market evidence changes?"
+    },
+    {
+      "id": 439,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When an experiment produces mixed results, how likely are you to continue a failing approach because changing feels like defeat?"
+    },
+    {
+      "id": 440,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "While building a small team, how likely are you to resume purposeful action after a setback and capture the lesson?"
+    },
+    {
+      "id": 441,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When several opportunities appear, how likely are you to treat one rejection as proof the venture cannot work?"
+    },
+    {
+      "id": 442,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "As demand begins to grow, how likely are you to adjust the approach when customer or market evidence changes?"
+    },
+    {
+      "id": 443,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When operations become unreliable, how likely are you to continue a failing approach because changing feels like defeat?"
+    },
+    {
+      "id": 444,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "Before discussing a partnership, how likely are you to resume purposeful action after a setback and capture the lesson?"
+    },
+    {
+      "id": 445,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When the venture faces a setback, how likely are you to treat one rejection as proof the venture cannot work?"
+    },
+    {
+      "id": 446,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "While preparing a sales conversation, how likely are you to adjust the approach when customer or market evidence changes?"
+    },
+    {
+      "id": 447,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When feedback is uncomfortable, how likely are you to continue a failing approach because changing feels like defeat?"
+    },
+    {
+      "id": 448,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "Before scaling a product or service, how likely are you to resume purposeful action after a setback and capture the lesson?"
+    },
+    {
+      "id": 449,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "At the end of an important business cycle, how likely are you to treat one rejection as proof the venture cannot work?"
+    },
+    {
+      "id": 450,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "Across repeated entrepreneurial experiences, how likely are you to adjust the approach when customer or market evidence changes?"
+    },
+    {
+      "id": 451,
+      "category": "ethics",
+      "reverse": false,
+      "text": "When considering a new venture idea, how likely are you to consider effects on customers, workers, community, and environment?"
+    },
+    {
+      "id": 452,
+      "category": "ethics",
+      "reverse": true,
+      "text": "During early customer discovery, how likely are you to justify misleading claims because the venture needs growth?"
+    },
+    {
+      "id": 453,
+      "category": "ethics",
+      "reverse": false,
+      "text": "Before investing significant money, how likely are you to communicate material risks and limitations honestly?"
+    },
+    {
+      "id": 454,
+      "category": "ethics",
+      "reverse": true,
+      "text": "When evidence challenges your assumptions, how likely are you to ignore foreseeable harm when it improves a short-term metric?"
+    },
+    {
+      "id": 455,
+      "category": "ethics",
+      "reverse": false,
+      "text": "While designing an initial offer, how likely are you to consider effects on customers, workers, community, and environment?"
+    },
+    {
+      "id": 456,
+      "category": "ethics",
+      "reverse": true,
+      "text": "When resources are limited, how likely are you to justify misleading claims because the venture needs growth?"
+    },
+    {
+      "id": 457,
+      "category": "ethics",
+      "reverse": false,
+      "text": "Before entering a new market, how likely are you to communicate material risks and limitations honestly?"
+    },
+    {
+      "id": 458,
+      "category": "ethics",
+      "reverse": true,
+      "text": "When a competitor changes direction, how likely are you to ignore foreseeable harm when it improves a short-term metric?"
+    },
+    {
+      "id": 459,
+      "category": "ethics",
+      "reverse": false,
+      "text": "While reviewing monthly results, how likely are you to consider effects on customers, workers, community, and environment?"
+    },
+    {
+      "id": 460,
+      "category": "ethics",
+      "reverse": true,
+      "text": "When cash is tighter than expected, how likely are you to justify misleading claims because the venture needs growth?"
+    },
+    {
+      "id": 461,
+      "category": "ethics",
+      "reverse": false,
+      "text": "Before making a major commitment, how likely are you to communicate material risks and limitations honestly?"
+    },
+    {
+      "id": 462,
+      "category": "ethics",
+      "reverse": true,
+      "text": "When a customer rejects the offer, how likely are you to ignore foreseeable harm when it improves a short-term metric?"
+    },
+    {
+      "id": 463,
+      "category": "ethics",
+      "reverse": false,
+      "text": "During a difficult business decision, how likely are you to consider effects on customers, workers, community, and environment?"
+    },
+    {
+      "id": 464,
+      "category": "ethics",
+      "reverse": true,
+      "text": "When an experiment produces mixed results, how likely are you to justify misleading claims because the venture needs growth?"
+    },
+    {
+      "id": 465,
+      "category": "ethics",
+      "reverse": false,
+      "text": "While building a small team, how likely are you to communicate material risks and limitations honestly?"
+    },
+    {
+      "id": 466,
+      "category": "ethics",
+      "reverse": true,
+      "text": "When several opportunities appear, how likely are you to ignore foreseeable harm when it improves a short-term metric?"
+    },
+    {
+      "id": 467,
+      "category": "ethics",
+      "reverse": false,
+      "text": "As demand begins to grow, how likely are you to consider effects on customers, workers, community, and environment?"
+    },
+    {
+      "id": 468,
+      "category": "ethics",
+      "reverse": true,
+      "text": "When operations become unreliable, how likely are you to justify misleading claims because the venture needs growth?"
+    },
+    {
+      "id": 469,
+      "category": "ethics",
+      "reverse": false,
+      "text": "Before discussing a partnership, how likely are you to communicate material risks and limitations honestly?"
+    },
+    {
+      "id": 470,
+      "category": "ethics",
+      "reverse": true,
+      "text": "When the venture faces a setback, how likely are you to ignore foreseeable harm when it improves a short-term metric?"
+    },
+    {
+      "id": 471,
+      "category": "ethics",
+      "reverse": false,
+      "text": "While preparing a sales conversation, how likely are you to consider effects on customers, workers, community, and environment?"
+    },
+    {
+      "id": 472,
+      "category": "ethics",
+      "reverse": true,
+      "text": "When feedback is uncomfortable, how likely are you to justify misleading claims because the venture needs growth?"
+    },
+    {
+      "id": 473,
+      "category": "ethics",
+      "reverse": false,
+      "text": "Before scaling a product or service, how likely are you to communicate material risks and limitations honestly?"
+    },
+    {
+      "id": 474,
+      "category": "ethics",
+      "reverse": true,
+      "text": "At the end of an important business cycle, how likely are you to ignore foreseeable harm when it improves a short-term metric?"
+    },
+    {
+      "id": 475,
+      "category": "ethics",
+      "reverse": false,
+      "text": "Across repeated entrepreneurial experiences, how likely are you to consider effects on customers, workers, community, and environment?"
+    },
+    {
+      "id": 476,
+      "category": "learning",
+      "reverse": false,
+      "text": "When considering a new venture idea, how likely are you to identify a skill gap that currently limits the venture?"
+    },
+    {
+      "id": 477,
+      "category": "learning",
+      "reverse": true,
+      "text": "During early customer discovery, how likely are you to pretend expertise in an area where you need guidance?"
+    },
+    {
+      "id": 478,
+      "category": "learning",
+      "reverse": false,
+      "text": "Before investing significant money, how likely are you to seek candid feedback and update your view when evidence warrants it?"
+    },
+    {
+      "id": 479,
+      "category": "learning",
+      "reverse": true,
+      "text": "When evidence challenges your assumptions, how likely are you to repeat the same mistake without reviewing your assumptions?"
+    },
+    {
+      "id": 480,
+      "category": "learning",
+      "reverse": false,
+      "text": "While designing an initial offer, how likely are you to identify a skill gap that currently limits the venture?"
+    },
+    {
+      "id": 481,
+      "category": "learning",
+      "reverse": true,
+      "text": "When resources are limited, how likely are you to pretend expertise in an area where you need guidance?"
+    },
+    {
+      "id": 482,
+      "category": "learning",
+      "reverse": false,
+      "text": "Before entering a new market, how likely are you to seek candid feedback and update your view when evidence warrants it?"
+    },
+    {
+      "id": 483,
+      "category": "learning",
+      "reverse": true,
+      "text": "When a competitor changes direction, how likely are you to repeat the same mistake without reviewing your assumptions?"
+    },
+    {
+      "id": 484,
+      "category": "learning",
+      "reverse": false,
+      "text": "While reviewing monthly results, how likely are you to identify a skill gap that currently limits the venture?"
+    },
+    {
+      "id": 485,
+      "category": "learning",
+      "reverse": true,
+      "text": "When cash is tighter than expected, how likely are you to pretend expertise in an area where you need guidance?"
+    },
+    {
+      "id": 486,
+      "category": "learning",
+      "reverse": false,
+      "text": "Before making a major commitment, how likely are you to seek candid feedback and update your view when evidence warrants it?"
+    },
+    {
+      "id": 487,
+      "category": "learning",
+      "reverse": true,
+      "text": "When a customer rejects the offer, how likely are you to repeat the same mistake without reviewing your assumptions?"
+    },
+    {
+      "id": 488,
+      "category": "learning",
+      "reverse": false,
+      "text": "During a difficult business decision, how likely are you to identify a skill gap that currently limits the venture?"
+    },
+    {
+      "id": 489,
+      "category": "learning",
+      "reverse": true,
+      "text": "When an experiment produces mixed results, how likely are you to pretend expertise in an area where you need guidance?"
+    },
+    {
+      "id": 490,
+      "category": "learning",
+      "reverse": false,
+      "text": "While building a small team, how likely are you to seek candid feedback and update your view when evidence warrants it?"
+    },
+    {
+      "id": 491,
+      "category": "learning",
+      "reverse": true,
+      "text": "When several opportunities appear, how likely are you to repeat the same mistake without reviewing your assumptions?"
+    },
+    {
+      "id": 492,
+      "category": "learning",
+      "reverse": false,
+      "text": "As demand begins to grow, how likely are you to identify a skill gap that currently limits the venture?"
+    },
+    {
+      "id": 493,
+      "category": "learning",
+      "reverse": true,
+      "text": "When operations become unreliable, how likely are you to pretend expertise in an area where you need guidance?"
+    },
+    {
+      "id": 494,
+      "category": "learning",
+      "reverse": false,
+      "text": "Before discussing a partnership, how likely are you to seek candid feedback and update your view when evidence warrants it?"
+    },
+    {
+      "id": 495,
+      "category": "learning",
+      "reverse": true,
+      "text": "When the venture faces a setback, how likely are you to repeat the same mistake without reviewing your assumptions?"
+    },
+    {
+      "id": 496,
+      "category": "learning",
+      "reverse": false,
+      "text": "While preparing a sales conversation, how likely are you to identify a skill gap that currently limits the venture?"
+    },
+    {
+      "id": 497,
+      "category": "learning",
+      "reverse": true,
+      "text": "When feedback is uncomfortable, how likely are you to pretend expertise in an area where you need guidance?"
+    },
+    {
+      "id": 498,
+      "category": "learning",
+      "reverse": false,
+      "text": "Before scaling a product or service, how likely are you to seek candid feedback and update your view when evidence warrants it?"
+    },
+    {
+      "id": 499,
+      "category": "learning",
+      "reverse": true,
+      "text": "At the end of an important business cycle, how likely are you to repeat the same mistake without reviewing your assumptions?"
+    },
+    {
+      "id": 500,
+      "category": "learning",
+      "reverse": false,
+      "text": "Across repeated entrepreneurial experiences, how likely are you to identify a skill gap that currently limits the venture?"
+    }
+  ]
+}

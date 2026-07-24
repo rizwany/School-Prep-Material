@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+<link rel="icon" type="image/x-icon" href="/assets/favicons/favicon.ico">
+<link rel="manifest" href="/assets/favicons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description" content="Refill the Cup: a free burnout-awareness game. Manage your energy through a simulated work week — notice which recovery choices actually refill you before the cup runs dry." />
+  <meta property="og:title" content="Refill the Cup – Burnout Awareness Game | LearnPad" />
+  <meta property="og:description" content="Manage your energy through a simulated work week and notice which recovery choices actually refill you." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mypkweb.com/mind_games/refill-cup.html" />
+  <meta property="og:site_name" content="LearnPad" />
+  <meta property="og:image" content="https://mypkweb.com/assets/images/ogimage.png" />
+  <link rel="canonical" href="https://mypkweb.com/mind_games/refill-cup.html" />
+<title>Refill the Cup – Burnout Awareness Game | LearnPad</title>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --accent: #db2777;
+      --accent-dark: #9d174d;
+      --ink: #1a1f36;
+      --muted: #5a6076;
+      --bg: #fdf2f8;
+      --card: #ffffff;
+      --border: #fbcfe8;
+      --radius: 16px;
+    }
+    body { font-family: 'Nunito', sans-serif; background: var(--bg); color: var(--ink); min-height: 100vh; }
+    a { color: var(--accent-dark); }
+
+    .wrap { max-width: 900px; margin: 0 auto; padding: 20px 16px 60px; }
+    .page-toolbar {
+      max-width: 900px; margin: 0 auto; padding: 16px 16px 0;
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    }
+    .back-link { font-weight: 800; font-size: .85rem; text-decoration: none; }
+    .streak-badge {
+      background: #fff; border: 2px solid var(--accent); color: var(--accent-dark);
+      padding: 5px 11px; border-radius: 20px; font-weight: 900; font-size: .82rem; white-space: nowrap;
+    }
+
+    .intro-card {
+      background: var(--card); border: 2px solid var(--border); border-radius: var(--radius);
+      padding: 28px 24px; text-align: center; margin-bottom: 20px;
+    }
+    .intro-card .emoji { font-size: 2.6rem; }
+    .intro-card h1 { font-size: 1.5rem; font-weight: 900; margin: 8px 0 6px; }
+    .intro-card p { color: var(--muted); font-size: .92rem; line-height: 1.6; max-width: 620px; margin: 0 auto; }
+
+    .cup-scene {
+      background: linear-gradient(135deg,#fff 60%,#fdf2f8); border: 2px solid var(--border); border-radius: var(--radius);
+      padding: 22px; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; gap: 24px; flex-wrap: wrap;
+    }
+    .cup-outer {
+      width: 110px; height: 140px; border: 4px solid var(--accent-dark); border-top: none;
+      border-radius: 0 0 30px 30px; position: relative; background: #fff; overflow: hidden; flex-shrink: 0;
+    }
+    .cup-outer::after {
+      content: ''; position: absolute; right: -22px; top: 18px; width: 26px; height: 40px;
+      border: 5px solid var(--accent-dark); border-left: none; border-radius: 0 20px 20px 0;
+    }
+    .cup-fill {
+      position: absolute; left: 0; right: 0; bottom: 0; height: 70%;
+      background: linear-gradient(180deg, #f9a8d4, #db2777);
+      transition: height .8s ease, background .6s ease;
+    }
+    .cup-fill.mid { background: linear-gradient(180deg, #fde68a, #f59e0b); }
+    .cup-fill.low { background: linear-gradient(180deg, #fca5a5, #dc2626); }
+    .cup-readout { text-align: center; }
+    .cup-readout strong { display: block; font-size: 1.8rem; font-weight: 900; color: var(--accent-dark); }
+    .cup-readout span { font-size: .78rem; font-weight: 800; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+    .day-pill { background: #fff; border: 2px solid var(--accent); color: var(--accent-dark); font-weight: 900; padding: 6px 14px; border-radius: 20px; font-size: .85rem; }
+
+    .stage {
+      background: var(--card); border: 2px solid var(--border); border-radius: var(--radius);
+      padding: 24px; margin-bottom: 20px;
+    }
+    .event-line {
+      display: flex; align-items: center; gap: 10px; background: #fff1f5; border: 1px solid var(--border);
+      border-radius: 10px; padding: 10px 14px; margin-bottom: 10px; font-size: .88rem;
+    }
+    .event-line .delta { margin-left: auto; font-weight: 900; color: #b91c1c; white-space: nowrap; }
+
+    .choice-btn {
+      display: flex; justify-content: space-between; align-items: center; gap: 10px;
+      width: 100%; text-align: left; background: #fff; border: 2px solid var(--border);
+      border-radius: 12px; padding: 13px 16px; font-family: inherit; font-size: .9rem; margin-bottom: 10px;
+      cursor: pointer; line-height: 1.5;
+    }
+    .choice-btn:hover { border-color: var(--accent); background: #fdf2f8; }
+    .choice-btn .delta { font-weight: 900; white-space: nowrap; }
+    .choice-btn .delta.pos { color: #15803d; }
+    .choice-btn .delta.zero { color: var(--muted); }
+    .choice-btn .delta.neg { color: #b91c1c; }
+
+    .primary-btn {
+      background: var(--accent); color: #fff; border: none; border-radius: 10px;
+      padding: 12px 22px; font-weight: 900; font-size: .92rem; cursor: pointer;
+    }
+
+    .warning-card {
+      background: #fff7ed; border: 2px solid #fdba74; border-radius: 14px; padding: 16px 18px;
+      font-size: .85rem; line-height: 1.65; color: #7c2d12; margin-bottom: 16px;
+    }
+    .warning-card strong { color: #9a3412; }
+    .warning-card ul { margin: 8px 0 0 20px; }
+
+    .result-banner { text-align: center; padding: 6px 0; }
+    .result-banner .big-emoji { font-size: 2.8rem; display: block; margin-bottom: 8px; }
+    .result-banner h3 { font-size: 1.25rem; font-weight: 900; margin-bottom: 8px; color: var(--accent-dark); }
+    .result-banner p { font-size: .9rem; color: var(--muted); line-height: 1.6; max-width: 560px; margin: 0 auto 10px; }
+
+    .stats-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin-bottom: 20px; }
+    .stat-pill {
+      background: var(--card); border: 2px solid var(--border); border-radius: 12px;
+      text-align: center; padding: 10px 6px;
+    }
+    .stat-pill strong { display: block; font-size: 1.15rem; font-weight: 900; color: var(--accent-dark); }
+    .stat-pill span { font-size: .68rem; font-weight: 800; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+
+    .info-box {
+      background: #fdf2f8; border: 2px solid #fbcfe8; border-radius: 14px;
+      padding: 14px 16px; font-size: .82rem; line-height: 1.6; color: #831843; margin-bottom: 20px;
+    }
+    .info-box strong { color: #9d174d; }
+
+    .safety-box {
+      background: #fef2f2; border: 2px solid #fca5a5; color: #7f1d1d;
+      border-radius: 14px; padding: 14px 16px; line-height: 1.6; font-size: .82rem; margin-bottom: 20px;
+    }
+    .safety-box a { color: #b91c1c; font-weight: 900; }
+
+    footer.footer { text-align: center; padding: 24px 16px; color: var(--muted); font-size: .78rem; }
+    @media (max-width: 560px) { .stats-row { grid-template-columns: repeat(3,1fr); } }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="page-toolbar">
+  <a class="back-link" href="index.html">← Mind Games</a>
+  <span id="streakBadge" class="streak-badge">🔥 Day 1</span>
+</div>
+
+<div class="wrap">
+
+  <div class="intro-card">
+    <span class="emoji">🫖</span>
+    <h1>Refill the Cup</h1>
+    <p>Live through a simulated work week. Each day brings demands you can't control and one recovery choice you
+      can. Watch your energy cup — and notice which choices actually refill it, versus which ones just feel
+      productive in the moment.</p>
+  </div>
+
+  <div class="cup-scene">
+    <div class="cup-outer"><div class="cup-fill" id="cupFill" style="height:70%"></div></div>
+    <div class="cup-readout">
+      <strong id="cupValue">70</strong>
+      <span>Energy</span>
+    </div>
+    <span class="day-pill" id="dayPill">Before Monday</span>
+  </div>
+
+  <div class="stage" id="stage"></div>
+
+  <div class="stats-row">
+    <div class="stat-pill"><strong id="statWeeks">0</strong><span>Weeks Played</span></div>
+    <div class="stat-pill"><strong id="statBest">0</strong><span>Best Ending Energy</span></div>
+    <div class="stat-pill"><strong id="statBurnouts">0</strong><span>Times Ran Dry</span></div>
+  </div>
+
+  <div class="info-box">
+    <strong>Why this works:</strong> Burnout research (Maslach's model) describes three warning signs: exhaustion,
+    cynicism or detachment, and a shrinking sense of accomplishment. This game turns that idea into something
+    tangible — a meter you can watch drain and refill — so the pattern is easier to notice in real life, before it
+    becomes a crisis.
+  </div>
+
+  <div class="safety-box">
+    <strong>This is a game, not a treatment.</strong> Refill the Cup is a light awareness tool, not therapy, and it
+    can't diagnose burnout. If exhaustion, detachment, or low motivation have lasted most days for weeks — or you
+    ever have thoughts of harming yourself — please reach out to a trusted person or a qualified professional now.
+    See <a href="https://findahelpline.com/countries/pk" target="_blank" rel="noopener">Pakistan helplines</a> or
+    the <a href="https://findahelpline.com/" target="_blank" rel="noopener">global helpline directory</a>.
+  </div>
+
+</div>
+
+<footer class="footer">LearnPad · Refill the Cup is a supportive awareness game, not a medical assessment.</footer>
+
+<script>
+(function(){
+  var STORAGE_KEY = 'refillCup_v1';
+  var DAY_NAMES = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
+  var START_ENERGY = 70;
+
+  var DEMAND_POOL = [
+    { text: 'A big deadline lands on your desk.', d: -14 },
+    { text: 'Back-to-back meetings all morning.', d: -10 },
+    { text: 'An unexpected fire drill at work.', d: -12 },
+    { text: 'A difficult conversation with a colleague.', d: -9 },
+    { text: "Your inbox won't stop buzzing.", d: -7 },
+    { text: 'Something at home needs your attention too.', d: -8 },
+    { text: 'A project scope changes last minute.', d: -11 },
+    { text: "You're covering for a teammate who's out.", d: -13 }
+  ];
+
+  var RECOVERY_POOL = [
+    { text: 'Take a real lunch break away from your desk', d: 8 },
+    { text: 'Go for a short walk outside', d: 7 },
+    { text: 'Say no to one extra task today', d: 12 },
+    { text: 'Text or call a friend for a few minutes', d: 6 },
+    { text: 'Do a 5-minute breathing break', d: 5 },
+    { text: 'Push through and skip your break', d: 0 },
+    { text: 'Work late to get ahead on tomorrow', d: -6 },
+    { text: 'Scroll your phone to switch off for a bit', d: 2 },
+    { text: 'Ask a teammate for help', d: 9 },
+    { text: 'Set a boundary: log off on time', d: 10 }
+  ];
+
+  function todayStr(){ return new Date().toISOString().slice(0,10); }
+  function pick(arr){ return arr[Math.floor(Math.random()*arr.length)]; }
+  function shuffle(arr){
+    var a = arr.slice();
+    for (var i=a.length-1;i>0;i--){ var j = Math.floor(Math.random()*(i+1)); var t=a[i]; a[i]=a[j]; a[j]=t; }
+    return a;
+  }
+
+  function loadState(){
+    var s = {};
+    try { s = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; } catch(e){ s = {}; }
+    s.weeksPlayed = s.weeksPlayed || 0;
+    s.bestEnding = s.bestEnding || 0;
+    s.burnoutCount = s.burnoutCount || 0;
+    s.streak = s.streak || 0;
+    s.lastActiveDate = s.lastActiveDate || null;
+    return s;
+  }
+  function saveState(s){ localStorage.setItem(STORAGE_KEY, JSON.stringify(s)); }
+  var state = loadState();
+
+  function bumpStreakIfNeeded(){
+    var today = todayStr();
+    if (state.lastActiveDate === today) return;
+    if (state.lastActiveDate){
+      var diffDays = Math.round((new Date(today) - new Date(state.lastActiveDate)) / 86400000);
+      state.streak = (diffDays === 1) ? state.streak + 1 : 1;
+    } else {
+      state.streak = 1;
+    }
+    state.lastActiveDate = today;
+  }
+
+  function renderHeaderStats(){
+    document.getElementById('streakBadge').textContent = '🔥 Day ' + Math.max(state.streak,1);
+    document.getElementById('statWeeks').textContent = state.weeksPlayed;
+    document.getElementById('statBest').textContent = state.bestEnding;
+    document.getElementById('statBurnouts').textContent = state.burnoutCount;
+  }
+
+  var energy = START_ENERGY;
+  var dayIdx = 0;
+  var warningShown = false;
+
+  function updateCup(){
+    var pct = Math.max(0, Math.min(100, energy));
+    var fill = document.getElementById('cupFill');
+    fill.style.height = pct + '%';
+    fill.className = 'cup-fill' + (pct < 30 ? ' low' : (pct < 60 ? ' mid' : ''));
+    document.getElementById('cupValue').textContent = Math.round(pct);
+  }
+
+  var stage = document.getElementById('stage');
+
+  function renderIntroStage(){
+    document.getElementById('dayPill').textContent = 'Before Monday';
+    stage.innerHTML =
+      '<p style="font-size:.88rem;color:var(--muted);margin-bottom:16px;">You start the week with a full-ish cup. Seven days. One choice per day. Let\'s see how the week goes.</p>' +
+      '<button class="primary-btn" id="startBtn">Start the Week ▶</button>';
+    document.getElementById('startBtn').addEventListener('click', startWeek);
+  }
+
+  function startWeek(){
+    energy = START_ENERGY;
+    dayIdx = 0;
+    warningShown = false;
+    updateCup();
+    runDay();
+  }
+
+  function runDay(){
+    document.getElementById('dayPill').textContent = DAY_NAMES[dayIdx];
+    var demands = shuffle(DEMAND_POOL).slice(0, 1 + (Math.random() < 0.5 ? 1 : 0));
+    stage.innerHTML = '<h2 style="font-size:1.05rem;font-weight:900;margin-bottom:12px;">' + DAY_NAMES[dayIdx] + '</h2><div id="eventArea"></div>';
+    var area = document.getElementById('eventArea');
+    var i = 0;
+    function showNextDemand(){
+      if (i >= demands.length){
+        if (energy <= 0){ energy = 0; updateCup(); return burnoutEnding(); }
+        maybeShowWarning(function(){ showChoices(); });
+        return;
+      }
+      var ev = demands[i++];
+      energy += ev.d;
+      var line = document.createElement('div');
+      line.className = 'event-line';
+      line.innerHTML = '<span>' + ev.text + '</span><span class="delta">' + ev.d + '</span>';
+      area.appendChild(line);
+      updateCup();
+      setTimeout(showNextDemand, 550);
+    }
+    showNextDemand();
+  }
+
+  function maybeShowWarning(cb){
+    if (!warningShown && energy < 30){
+      warningShown = true;
+      var box = document.createElement('div');
+      box.className = 'warning-card';
+      box.innerHTML = '<strong>Your cup is getting low.</strong> This is often where burnout starts to show:' +
+        '<ul><li>Exhaustion that rest doesn\'t quite fix</li><li>Feeling detached or cynical about things you usually care about</li><li>A shrinking sense of accomplishment</li></ul>' +
+        'Worth noticing the same signs in real life, not just in this cup.';
+      document.getElementById('eventArea').appendChild(box);
+      setTimeout(cb, 900);
+    } else {
+      cb();
+    }
+  }
+
+  function showChoices(){
+    var options = shuffle(RECOVERY_POOL).slice(0,4);
+    var html = '<p style="font-size:.9rem;font-weight:800;margin:12px 0 10px;">How do you recover today?</p>';
+    options.forEach(function(opt, idx){
+      var cls = opt.d > 0 ? 'pos' : (opt.d === 0 ? 'zero' : 'neg');
+      html += '<button class="choice-btn" data-idx="' + idx + '"><span>' + opt.text + '</span><span class="delta ' + cls + '">' + (opt.d > 0 ? '+' : '') + opt.d + '</span></button>';
+    });
+    var wrap = document.createElement('div');
+    wrap.innerHTML = html;
+    document.getElementById('eventArea').appendChild(wrap);
+    Array.prototype.forEach.call(wrap.querySelectorAll('.choice-btn'), function(btn){
+      btn.addEventListener('click', function(){
+        var opt = options[parseInt(btn.getAttribute('data-idx'),10)];
+        energy += opt.d;
+        updateCup();
+        Array.prototype.forEach.call(wrap.querySelectorAll('.choice-btn'), function(b){ b.disabled = true; });
+        setTimeout(function(){
+          if (energy <= 0){ energy = 0; updateCup(); return burnoutEnding(); }
+          dayIdx++;
+          if (dayIdx >= DAY_NAMES.length){ weekCompleteEnding(); } else { runDay(); }
+        }, 500);
+      });
+    });
+  }
+
+  function weekCompleteEnding(){
+    state.weeksPlayed++;
+    var finalEnergy = Math.round(energy);
+    if (finalEnergy > state.bestEnding) state.bestEnding = finalEnergy;
+    bumpStreakIfNeeded();
+    saveState(state);
+    renderHeaderStats();
+
+    var tag = finalEnergy >= 60 ? 'You paced yourself well ✨' : (finalEnergy >= 30 ? 'You made it, running on fumes 😮‍💨' : 'You barely made it through 😩');
+    stage.innerHTML =
+      '<div class="result-banner">' +
+        '<span class="big-emoji">🎉</span>' +
+        '<h3>You made it through the week</h3>' +
+        '<p>' + tag + ' Final energy: ' + finalEnergy + '/100.</p>' +
+        '<p>Notice which choices you picked most — the ones that cost nothing now often cost the most later.</p>' +
+        '<div style="margin-top:10px;"><button class="primary-btn" id="againBtn">Try the Week Again →</button></div>' +
+      '</div>';
+    document.getElementById('againBtn').addEventListener('click', startWeek);
+  }
+
+  function burnoutEnding(){
+    state.burnoutCount++;
+    bumpStreakIfNeeded();
+    saveState(state);
+    renderHeaderStats();
+
+    stage.innerHTML =
+      '<div class="result-banner">' +
+        '<span class="big-emoji">🫗</span>' +
+        '<h3>Your cup ran dry on ' + DAY_NAMES[dayIdx] + '</h3>' +
+        '<p>That\'s not a failure — it\'s useful information. This is exactly what burnout feels like: the demands outpaced the recovery.</p>' +
+        '<div class="warning-card" style="text-align:left;"><strong>Signs it may be time to pause:</strong>' +
+          '<ul><li>Exhaustion that doesn\'t improve with a normal night\'s sleep</li><li>Growing cynicism or distance from work you used to care about</li><li>Feeling like nothing you do is enough</li></ul></div>' +
+        '<div style="margin-top:10px;"><button class="primary-btn" id="againBtn2">Try the Week Again →</button></div>' +
+      '</div>';
+    document.getElementById('againBtn2').addEventListener('click', startWeek);
+  }
+
+  renderHeaderStats();
+  updateCup();
+  renderIntroStage();
+})();
+</script>
+<script src="../assets/shared-nav.js"></script>
+</body>
+</html>

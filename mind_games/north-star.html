@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+<link rel="icon" type="image/x-icon" href="/assets/favicons/favicon.ico">
+<link rel="manifest" href="/assets/favicons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description" content="North Star: a free visionary leadership game. Guide your crew through branching expedition scenarios, balance vision and trust, and discover your leadership archetype." />
+  <meta property="og:title" content="North Star – Visionary Leadership Game | LearnPad" />
+  <meta property="og:description" content="Guide your crew through branching expedition scenarios and discover your leadership archetype." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mypkweb.com/mind_games/north-star.html" />
+  <meta property="og:site_name" content="LearnPad" />
+  <meta property="og:image" content="https://mypkweb.com/assets/images/ogimage.png" />
+  <link rel="canonical" href="https://mypkweb.com/mind_games/north-star.html" />
+<title>North Star – Visionary Leadership Game | LearnPad</title>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --accent: #4f46e5;
+      --accent-dark: #3730a3;
+      --gold: #f59e0b;
+      --ink: #1a1f36;
+      --muted: #5a6076;
+      --bg: #f5f3ff;
+      --card: #ffffff;
+      --border: #e0d9fc;
+      --radius: 16px;
+    }
+    body { font-family: 'Nunito', sans-serif; background: var(--bg); color: var(--ink); min-height: 100vh; }
+    a { color: var(--accent-dark); }
+
+    .wrap { max-width: 900px; margin: 0 auto; padding: 20px 16px 60px; }
+    .page-toolbar {
+      max-width: 900px; margin: 0 auto; padding: 16px 16px 0;
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    }
+    .back-link { font-weight: 800; font-size: .85rem; text-decoration: none; }
+    .streak-badge {
+      background: #fff; border: 2px solid var(--accent); color: var(--accent-dark);
+      padding: 5px 11px; border-radius: 20px; font-weight: 900; font-size: .82rem; white-space: nowrap;
+    }
+
+    .intro-card {
+      background: var(--card); border: 2px solid var(--border); border-radius: var(--radius);
+      padding: 28px 24px; text-align: center; margin-bottom: 20px;
+    }
+    .intro-card .emoji { font-size: 2.6rem; }
+    .intro-card h1 { font-size: 1.5rem; font-weight: 900; margin: 8px 0 6px; }
+    .intro-card p { color: var(--muted); font-size: .92rem; line-height: 1.6; max-width: 620px; margin: 0 auto; }
+
+    /* ── Night sky compass scene ─────────────────────────── */
+    .sky-scene {
+      background: radial-gradient(circle at 50% 20%, #312e81 0%, #1e1b4b 55%, #0f0e2b 100%);
+      border-radius: var(--radius); padding: 26px 20px; margin-bottom: 20px; position: relative; overflow: hidden;
+    }
+    .star { position: absolute; width: 3px; height: 3px; background: #fff; border-radius: 50%; opacity: .8; animation: twinkle 2.4s ease-in-out infinite; }
+    @keyframes twinkle { 0%,100% { opacity: .3; } 50% { opacity: 1; } }
+
+    .compass-wrap { display: flex; align-items: center; justify-content: center; gap: 28px; flex-wrap: wrap; position: relative; z-index: 1; }
+    .compass {
+      width: 130px; height: 130px; border-radius: 50%; position: relative; flex-shrink: 0;
+      background: radial-gradient(circle, #4338ca 0%, #312e81 70%, #1e1b4b 100%);
+      border: 3px solid var(--gold);
+      box-shadow: 0 0 22px rgba(245,158,11,.35);
+    }
+    .compass-needle {
+      position: absolute; left: 50%; top: 50%; width: 4px; height: 52px;
+      background: linear-gradient(to top, transparent 0%, var(--gold) 40%, #fff 100%);
+      transform-origin: bottom center; transform: translate(-50%,-100%) rotate(0deg);
+      transition: transform 1s cubic-bezier(.34,1.56,.64,1);
+      border-radius: 4px;
+    }
+    .compass-dot { position: absolute; left: 50%; top: 50%; width: 10px; height: 10px; background: var(--gold); border-radius: 50%; transform: translate(-50%,-50%); }
+    .compass-label { text-align: center; color: #e0e7ff; font-size: .68rem; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; margin-top: 10px; }
+
+    .meters { display: flex; flex-direction: column; gap: 12px; min-width: 200px; position: relative; z-index: 1; }
+    .meter-row .meter-label { color: #e0e7ff; font-size: .8rem; font-weight: 800; margin-bottom: 4px; display: flex; justify-content: space-between; }
+    .meter-track { background: rgba(255,255,255,.15); border-radius: 20px; height: 10px; overflow: hidden; }
+    .meter-fill { height: 100%; border-radius: 20px; transition: width .8s ease; }
+    .meter-fill.vision { background: linear-gradient(90deg, var(--gold), #fbbf24); }
+    .meter-fill.trust { background: linear-gradient(90deg, #22d3ee, #67e8f9); }
+
+    .stage {
+      background: var(--card); border: 2px solid var(--border); border-radius: var(--radius);
+      padding: 24px; margin-bottom: 20px;
+    }
+    .scenario-count { font-size: .75rem; font-weight: 800; color: var(--accent-dark); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 8px; }
+    .scenario-text { font-size: 1.02rem; font-weight: 700; line-height: 1.55; margin-bottom: 18px; }
+    .choice-btn {
+      display: block; width: 100%; text-align: left; background: #fff; border: 2px solid var(--border);
+      border-radius: 12px; padding: 13px 16px; font-family: inherit; font-size: .9rem; margin-bottom: 10px;
+      cursor: pointer; line-height: 1.5;
+    }
+    .choice-btn:hover { border-color: var(--accent); background: #f5f3ff; }
+
+    .primary-btn {
+      background: var(--accent); color: #fff; border: none; border-radius: 10px;
+      padding: 12px 20px; font-weight: 900; font-size: .92rem; cursor: pointer;
+    }
+    .secondary-btn {
+      background: #fff; color: var(--accent-dark); border: 2px solid var(--accent); border-radius: 10px;
+      padding: 10px 18px; font-weight: 900; font-size: .88rem; cursor: pointer;
+    }
+    .btn-row { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+
+    .result-banner { text-align: center; padding: 6px 0; }
+    .result-banner .big-emoji { font-size: 2.8rem; display: block; margin-bottom: 8px; }
+    .result-banner h3 { font-size: 1.3rem; font-weight: 900; margin-bottom: 8px; color: var(--accent-dark); }
+    .result-banner p { font-size: .92rem; color: var(--muted); line-height: 1.6; max-width: 560px; margin: 0 auto 18px; }
+
+    .stats-row { display: grid; grid-template-columns: repeat(2,1fr); gap: 10px; margin-bottom: 20px; }
+    .stat-pill {
+      background: var(--card); border: 2px solid var(--border); border-radius: 12px;
+      text-align: center; padding: 10px 6px;
+    }
+    .stat-pill strong { display: block; font-size: 1.15rem; font-weight: 900; color: var(--accent-dark); }
+    .stat-pill span { font-size: .68rem; font-weight: 800; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+
+    .info-box {
+      background: #eef2ff; border: 2px solid #c7d2fe; border-radius: 14px;
+      padding: 14px 16px; font-size: .82rem; line-height: 1.6; color: #3730a3; margin-bottom: 20px;
+    }
+    .info-box strong { color: #312e81; }
+
+    footer.footer { text-align: center; padding: 24px 16px; color: var(--muted); font-size: .78rem; }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="page-toolbar">
+  <a class="back-link" href="index.html">← Mind Games</a>
+  <span id="streakBadge" class="streak-badge">🔥 Day 1</span>
+</div>
+
+<div class="wrap">
+
+  <div class="intro-card">
+    <span class="emoji">🧭</span>
+    <h1>North Star</h1>
+    <p>You're leading a small crew on an expedition into new territory. Five scenarios, three choices each. Every
+      decision shifts two things: how clearly you paint the horizon (<strong>Vision</strong>), and how much your
+      crew trusts you to get them there (<strong>Trust</strong>). There's no single right answer — real leadership
+      is a balancing act.</p>
+  </div>
+
+  <div class="sky-scene">
+    <div class="compass-wrap">
+      <div>
+        <div class="compass" id="compass">
+          <div class="compass-needle" id="compassNeedle"></div>
+          <div class="compass-dot"></div>
+        </div>
+        <div class="compass-label">Vision Bearing</div>
+      </div>
+      <div class="meters">
+        <div class="meter-row">
+          <div class="meter-label"><span>⭐ Vision</span><span id="visionPct">50%</span></div>
+          <div class="meter-track"><div class="meter-fill vision" id="visionFill" style="width:50%"></div></div>
+        </div>
+        <div class="meter-row">
+          <div class="meter-label"><span>🤝 Trust</span><span id="trustPct">50%</span></div>
+          <div class="meter-track"><div class="meter-fill trust" id="trustFill" style="width:50%"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="stage" id="stage"></div>
+
+  <div class="stats-row">
+    <div class="stat-pill"><strong id="statExpeditions">0</strong><span>Expeditions Led</span></div>
+    <div class="stat-pill" id="statArchetypePill"><strong id="statArchetype">—</strong><span>Last Archetype</span></div>
+  </div>
+
+  <div class="info-box">
+    <strong>Why this works:</strong> Visionary leadership research consistently points to two things great leaders
+    balance: a clear, compelling direction, and the trust of the people following them. Vision without trust feels
+    lonely at the top. Trust without vision feels safe but stalled. This game lets you feel that tradeoff, choice
+    by choice.
+  </div>
+
+</div>
+
+<footer class="footer">LearnPad · North Star is a reflective leadership game, not a personality assessment.</footer>
+
+<script>
+(function(){
+  var STORAGE_KEY = 'northStar_v1';
+
+  var SCENARIO_POOL = [
+    { text: "Your crew hits an unexpected storm on the journey — the original plan won't work anymore.",
+      options: [
+        { label: 'Push forward with the destination in mind, adjusting the route on the fly.', v: 2, t: 0 },
+        { label: 'Call the crew together and decide the new route as a team.', v: 1, t: 2 },
+        { label: 'Quietly reroute yourself so no one panics.', v: -1, t: -1 }
+      ] },
+    { text: 'A crew member challenges your decision loudly, in front of everyone.',
+      options: [
+        { label: 'Thank them for speaking up, and promise a real conversation afterward.', v: 0, t: 2 },
+        { label: 'Explain your reasoning right there, calmly.', v: 1, t: 1 },
+        { label: 'Overrule them and move on — momentum matters.', v: 1, t: -2 }
+      ] },
+    { text: 'You spot a bold opportunity — risky, but it could change everything.',
+      options: [
+        { label: 'Paint a vivid picture of what’s possible and rally the crew around it.', v: 3, t: 1 },
+        { label: 'Test it small first, with the team’s input.', v: 1, t: 2 },
+        { label: 'Play it safe — stick to the proven route.', v: -2, t: 0 }
+      ] },
+    { text: 'Energy is fading after a long stretch with no visible progress.',
+      options: [
+        { label: 'Remind everyone why this journey matters — zoom out to the bigger picture.', v: 2, t: 0 },
+        { label: 'Check in with each crew member one-on-one.', v: 0, t: 3 },
+        { label: 'Push through — results will lift the mood eventually.', v: 0, t: -2 }
+      ] },
+    { text: 'You reach a milestone. Time to set the next horizon.',
+      options: [
+        { label: 'Describe a vivid next horizon and invite the crew to help shape it.', v: 3, t: 2 },
+        { label: 'Decide the next goal yourself and announce it clearly.', v: 2, t: -1 },
+        { label: 'Ask the crew what they think the next goal should be.', v: 1, t: 3 }
+      ] },
+    { text: "Two crew members are in open conflict, and it's slowing everyone down.",
+      options: [
+        { label: 'Sit both down together and mediate toward a shared goal.', v: 0, t: 3 },
+        { label: 'Give a rousing reminder of the shared mission to refocus everyone.', v: 2, t: 0 },
+        { label: 'Let them sort it out — you have bigger things to steer.', v: 0, t: -2 }
+      ] },
+    { text: 'Resources are tighter than expected. Something has to give.',
+      options: [
+        { label: 'Cut the least essential thing yourself and explain why afterward.', v: 1, t: -1 },
+        { label: 'Lay out the tradeoffs honestly and decide together.', v: 1, t: 2 },
+        { label: 'Quietly stretch resources thinner across everything.', v: -1, t: 0 }
+      ] },
+    { text: 'A rival crew reaches the same horizon first.',
+      options: [
+        { label: 'Reframe it: chart a course toward a horizon no one else sees yet.', v: 3, t: 0 },
+        { label: 'Rally the team: "We’re not behind, we’re going somewhere different."', v: 2, t: 2 },
+        { label: 'Push everyone harder to catch up on the same path.', v: 0, t: -2 }
+      ] }
+  ];
+
+  function todayStr(){ return new Date().toISOString().slice(0,10); }
+  function shuffle(arr){
+    var a = arr.slice();
+    for (var i = a.length - 1; i > 0; i--){
+      var j = Math.floor(Math.random() * (i+1));
+      var tmp = a[i]; a[i] = a[j]; a[j] = tmp;
+    }
+    return a;
+  }
+
+  function loadState(){
+    var s = {};
+    try { s = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; } catch(e){ s = {}; }
+    s.expeditions = s.expeditions || 0;
+    s.lastArchetype = s.lastArchetype || '—';
+    s.streak = s.streak || 0;
+    s.lastActiveDate = s.lastActiveDate || null;
+    return s;
+  }
+  function saveState(s){ localStorage.setItem(STORAGE_KEY, JSON.stringify(s)); }
+  var state = loadState();
+
+  function bumpStreakIfNeeded(){
+    var today = todayStr();
+    if (state.lastActiveDate === today) return;
+    if (state.lastActiveDate){
+      var diffDays = Math.round((new Date(today) - new Date(state.lastActiveDate)) / 86400000);
+      state.streak = (diffDays === 1) ? state.streak + 1 : 1;
+    } else {
+      state.streak = 1;
+    }
+    state.lastActiveDate = today;
+  }
+
+  function renderHeaderStats(){
+    document.getElementById('streakBadge').textContent = '🔥 Day ' + Math.max(state.streak,1);
+    document.getElementById('statExpeditions').textContent = state.expeditions;
+    document.getElementById('statArchetype').textContent = state.lastArchetype;
+  }
+
+  /* ── stars ── */
+  var sky = document.querySelector('.sky-scene');
+  for (var i=0;i<24;i++){
+    var s = document.createElement('div');
+    s.className = 'star';
+    s.style.left = Math.random()*100 + '%';
+    s.style.top = Math.random()*70 + '%';
+    s.style.animationDelay = (Math.random()*2.4) + 's';
+    sky.appendChild(s);
+  }
+
+  var MIN_SCORE = -10, MAX_SCORE = 15;
+  var vision = 0, trust = 0;
+  var order = [], idx = 0;
+
+  function pctOf(score){
+    var p = ((score - MIN_SCORE) / (MAX_SCORE - MIN_SCORE)) * 100;
+    return Math.max(0, Math.min(100, Math.round(p)));
+  }
+
+  function updateMeters(){
+    var vp = pctOf(vision), tp = pctOf(trust);
+    document.getElementById('visionPct').textContent = vp + '%';
+    document.getElementById('trustPct').textContent = tp + '%';
+    document.getElementById('visionFill').style.width = vp + '%';
+    document.getElementById('trustFill').style.width = tp + '%';
+    var deg = (vp - 50) * 1.6;
+    document.getElementById('compassNeedle').style.transform = 'translate(-50%,-100%) rotate(' + deg + 'deg)';
+  }
+
+  var stage = document.getElementById('stage');
+
+  function startExpedition(){
+    vision = 0; trust = 0;
+    updateMeters();
+    order = shuffle(SCENARIO_POOL).slice(0,5);
+    idx = 0;
+    renderScenario();
+  }
+
+  function renderScenario(){
+    var sc = order[idx];
+    stage.innerHTML =
+      '<div class="scenario-count">Scenario ' + (idx+1) + ' of ' + order.length + '</div>' +
+      '<div class="scenario-text">' + sc.text + '</div>' +
+      '<div id="choiceList"></div>';
+    var list = document.getElementById('choiceList');
+    sc.options.forEach(function(opt){
+      var btn = document.createElement('button');
+      btn.className = 'choice-btn';
+      btn.textContent = opt.label;
+      btn.addEventListener('click', function(){ chooseOption(opt); });
+      list.appendChild(btn);
+    });
+  }
+
+  function chooseOption(opt){
+    vision += opt.v; trust += opt.t;
+    updateMeters();
+    idx++;
+    if (idx < order.length){
+      setTimeout(renderScenario, 350);
+    } else {
+      setTimeout(finishExpedition, 500);
+    }
+  }
+
+  function archetypeFor(vp, tp){
+    var vHigh = vp >= 50, tHigh = tp >= 50;
+    if (vHigh && tHigh) return { name: 'The North Star', emoji: '🌟',
+      desc: 'You inspire and you’re trusted — people follow because they believe both in the direction and in you. Keep listening as closely as you lead.' };
+    if (vHigh && !tHigh) return { name: 'The Trailblazer', emoji: '🏔️',
+      desc: 'Bold and inspiring, but you may be moving ahead of your crew. Growth edge: slow down enough to bring people with you, not just toward you.' };
+    if (!vHigh && tHigh) return { name: 'The Anchor', emoji: '⚓',
+      desc: 'Steady and deeply trusted — your crew feels safe with you. Growth edge: don’t be afraid to paint a bolder, more specific picture of what’s next.' };
+    return { name: 'The Wanderer', emoji: '🧭',
+      desc: 'You’re still finding your footing as a leader, and that’s a fine place to start. Try leaning harder into either a clearer vision or deeper trust next time.' };
+  }
+
+  function finishExpedition(){
+    state.expeditions++;
+    var vp = pctOf(vision), tp = pctOf(trust);
+    var arc = archetypeFor(vp, tp);
+    state.lastArchetype = arc.name;
+    bumpStreakIfNeeded();
+    saveState(state);
+    renderHeaderStats();
+
+    stage.innerHTML =
+      '<div class="result-banner">' +
+        '<span class="big-emoji">' + arc.emoji + '</span>' +
+        '<h3>' + arc.name + '</h3>' +
+        '<p>' + arc.desc + '</p>' +
+        '<p style="font-size:.82rem;color:var(--muted);">Final bearing — Vision ' + vp + '% · Trust ' + tp + '%</p>' +
+        '<div class="btn-row" style="margin-top:14px;"><button class="primary-btn" id="restartBtn">Chart a New Course →</button></div>' +
+      '</div>';
+    document.getElementById('restartBtn').addEventListener('click', startExpedition);
+  }
+
+  renderHeaderStats();
+  updateMeters();
+  startExpedition();
+})();
+</script>
+<script src="../assets/shared-nav.js"></script>
+</body>
+</html>

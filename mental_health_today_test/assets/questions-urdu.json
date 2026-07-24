@@ -1,0 +1,3678 @@
+{
+  "meta": {
+    "title": "آج آپ کی ذہنی صحت",
+    "description": "ابھی آپ کیسا محسوس کر رہے ہیں، اس پر 25 موجودہ دن کے پہلوؤں میں 500 بیانات کا نجی جائزہ۔ یہ تشخیصی آلہ نہیں ہے۔",
+    "scale": {
+      "min": 1,
+      "max": 10,
+      "minLabel": "آج بالکل درست نہیں",
+      "maxLabel": "آج بہت زیادہ درست"
+    },
+    "categories": [
+      {
+        "id": "mood_today",
+        "label": "آج کا مزاج",
+        "icon": "🌤️"
+      },
+      {
+        "id": "morning_outlook",
+        "label": "صبح کا نقطہ نظر",
+        "icon": "🌅"
+      },
+      {
+        "id": "energy_today",
+        "label": "آج کی توانائی",
+        "icon": "⚡"
+      },
+      {
+        "id": "stress_now",
+        "label": "ابھی کا ذہنی دباؤ",
+        "icon": "⚖️"
+      },
+      {
+        "id": "anxiety_today",
+        "label": "آج کی فکر اور بے چینی",
+        "icon": "🫧"
+      },
+      {
+        "id": "focus_today",
+        "label": "آج کی توجہ اور وضاحت",
+        "icon": "🎯"
+      },
+      {
+        "id": "motivation_today",
+        "label": "آج کی ترغیب",
+        "icon": "🚀"
+      },
+      {
+        "id": "sleep_last_night",
+        "label": "گزشتہ رات کی نیند",
+        "icon": "🌙"
+      },
+      {
+        "id": "physical_today",
+        "label": "آج کی جسمانی کیفیت",
+        "icon": "🫁"
+      },
+      {
+        "id": "appetite_today",
+        "label": "آج کی بھوک",
+        "icon": "🍽️"
+      },
+      {
+        "id": "connection_today",
+        "label": "آج کا سماجی تعلق",
+        "icon": "🤝"
+      },
+      {
+        "id": "loneliness_today",
+        "label": "آج کی تنہائی",
+        "icon": "🌫️"
+      },
+      {
+        "id": "regulation_today",
+        "label": "آج جذبات کا انتظام",
+        "icon": "🎛️"
+      },
+      {
+        "id": "inner_dialogue_today",
+        "label": "آج کی اندرونی گفتگو",
+        "icon": "💬"
+      },
+      {
+        "id": "gratitude_today",
+        "label": "آج کی شکرگزاری اور خوشی کے لمحات",
+        "icon": "🙏"
+      },
+      {
+        "id": "overwhelm_today",
+        "label": "آج کا دباؤ اور مقابلہ",
+        "icon": "🧩"
+      },
+      {
+        "id": "digital_today",
+        "label": "آج کا اسکرین توازن",
+        "icon": "📱"
+      },
+      {
+        "id": "purpose_today",
+        "label": "آج کا مقصد",
+        "icon": "🧭"
+      },
+      {
+        "id": "rest_today",
+        "label": "آج کی راحت",
+        "icon": "🛌"
+      },
+      {
+        "id": "hope_tomorrow",
+        "label": "کل کے لیے امید",
+        "icon": "🌈"
+      },
+      {
+        "id": "irritability_today",
+        "label": "آج کا چڑچڑاپن اور صبر",
+        "icon": "🔥"
+      },
+      {
+        "id": "self_care_today",
+        "label": "آج کی خود نگہداشت",
+        "icon": "🧼"
+      },
+      {
+        "id": "environment_today",
+        "label": "آج کا ماحول",
+        "icon": "🏠"
+      },
+      {
+        "id": "day_satisfaction",
+        "label": "آج سے مجموعی اطمینان",
+        "icon": "📊"
+      },
+      {
+        "id": "safety_today",
+        "label": "آج کی حفاظت اور فوری تعاون",
+        "icon": "🛟"
+      }
+    ],
+    "levels": [
+      {
+        "min": 8.5,
+        "max": 10.01,
+        "label": "آج ترقی کی حالت میں",
+        "emoji": "🌟",
+        "desc": "آپ کے جوابات بتاتے ہیں کہ آج مزاج، توانائی اور مقابلہ کرنے کی صلاحیت کے لحاظ سے واقعی اچھا دن رہا ہے۔ جو چیز مددگار رہی اسے کل تک لے جانے کی کوشش کریں۔"
+      },
+      {
+        "min": 7,
+        "max": 8.5,
+        "label": "آج ٹھیک گزر رہا ہے",
+        "emoji": "🌿",
+        "desc": "آج مجموعی طور پر متوازن رہا ہے، اگرچہ کچھ پہلو دن ختم ہونے سے پہلے کچھ اضافی توجہ کے مستحق ہو سکتے ہیں۔"
+      },
+      {
+        "min": 5.5,
+        "max": 7,
+        "label": "ملا جلا دن",
+        "emoji": "🌦️",
+        "desc": "آج تعاون اور دباؤ دونوں شامل رہے ہیں۔ سوچیں کہ آج کے باقی حصے یا کل کی صبح کو کچھ آسان بنانے کے لیے کیا کیا جا سکتا ہے۔"
+      },
+      {
+        "min": 4,
+        "max": 5.5,
+        "label": "مشکل دن",
+        "emoji": "🤲",
+        "desc": "کئی پہلو آج مشکل محسوس ہو رہے ہیں۔ دن ختم ہونے سے پہلے کسی قابلِ اعتماد شخص سے رابطہ کریں یا حقیقی وقفہ لیں۔"
+      },
+      {
+        "min": 1,
+        "max": 4,
+        "label": "آج جدوجہد کا سامنا",
+        "emoji": "💛",
+        "desc": "آپ کے جوابات آج نمایاں دباؤ کی نشاندہی کرتے ہیں۔ براہِ کرم کسی قابلِ اعتماد شخص یا صحت کے ماہر سے رابطہ کرنے پر غور کریں، خاص طور پر اگر یہ کیفیت صرف آج تک محدود نہیں۔"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "MHT-001",
+      "category": "mood_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج تک، میرا مزاج مستحکم رہا ہے۔"
+    },
+    {
+      "id": "MHT-002",
+      "category": "mood_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج صبح کے اوقات میں، میرا مزاج اداس یا بے چین رہا ہے۔"
+    },
+    {
+      "id": "MHT-003",
+      "category": "mood_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "ابھی اس وقت، میں کم از کم ایک اچھے لمحے سے لطف اندوز ہو سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-004",
+      "category": "mood_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جاگنے کے بعد سے، معاملات جذباتی طور پر معمول کے دن سے زیادہ بھاری محسوس ہوئے ہیں۔"
+    },
+    {
+      "id": "MHT-005",
+      "category": "mood_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے کاموں کے دوران، میرا مزاج مستحکم رہا ہے۔"
+    },
+    {
+      "id": "MHT-006",
+      "category": "mood_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کا دن گزارتے ہوئے، میرا مزاج اداس یا بے چین رہا ہے۔"
+    },
+    {
+      "id": "MHT-007",
+      "category": "mood_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جیسے جیسے آج کا دن گزرا، میں کم از کم ایک اچھے لمحے سے لطف اندوز ہو سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-008",
+      "category": "mood_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "پچھلے چند گھنٹوں میں، معاملات جذباتی طور پر معمول کے دن سے زیادہ بھاری محسوس ہوئے ہیں۔"
+    },
+    {
+      "id": "MHT-009",
+      "category": "mood_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اس مرحلے پر، میرا مزاج مستحکم رہا ہے۔"
+    },
+    {
+      "id": "MHT-010",
+      "category": "mood_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے دوران آگے بڑھتے ہوئے، میرا مزاج اداس یا بے چین رہا ہے۔"
+    },
+    {
+      "id": "MHT-011",
+      "category": "mood_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے تقاضوں کا سامنا کرتے ہوئے، میں کم از کم ایک اچھے لمحے سے لطف اندوز ہو سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-012",
+      "category": "mood_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے ایک پرسکون لمحے میں، معاملات جذباتی طور پر معمول کے دن سے زیادہ بھاری محسوس ہوئے ہیں۔"
+    },
+    {
+      "id": "MHT-013",
+      "category": "mood_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب آج مشکل محسوس ہوا، میرا مزاج مستحکم رہا ہے۔"
+    },
+    {
+      "id": "MHT-014",
+      "category": "mood_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج دوسروں کے ساتھ میل جول کے دوران، میرا مزاج اداس یا بے چین رہا ہے۔"
+    },
+    {
+      "id": "MHT-015",
+      "category": "mood_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے آج خود سے رابطہ کیا، میں کم از کم ایک اچھے لمحے سے لطف اندوز ہو سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-016",
+      "category": "mood_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب آج کچھ غیر متوقع ہوا، معاملات جذباتی طور پر معمول کے دن سے زیادہ بھاری محسوس ہوئے ہیں۔"
+    },
+    {
+      "id": "MHT-017",
+      "category": "mood_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج آرام کرنے کی کوشش کرتے ہوئے، میرا مزاج مستحکم رہا ہے۔"
+    },
+    {
+      "id": "MHT-018",
+      "category": "mood_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جیسے جیسے دن آگے بڑھا، میرا مزاج اداس یا بے چین رہا ہے۔"
+    },
+    {
+      "id": "MHT-019",
+      "category": "mood_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے رک کر آج کے بارے میں سوچا، میں کم از کم ایک اچھے لمحے سے لطف اندوز ہو سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-020",
+      "category": "mood_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کو دیکھتے ہوئے، معاملات جذباتی طور پر معمول کے دن سے زیادہ بھاری محسوس ہوئے ہیں۔"
+    },
+    {
+      "id": "MHT-021",
+      "category": "morning_outlook",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج تک، میں نے دن کا آغاز نسبتاً پرسکون نقطہ نظر کے ساتھ کیا۔"
+    },
+    {
+      "id": "MHT-022",
+      "category": "morning_outlook",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج صبح کے اوقات میں، میں پہلے سے ہی بوجھل محسوس کرتے ہوئے جاگا/جاگی۔"
+    },
+    {
+      "id": "MHT-023",
+      "category": "morning_outlook",
+      "reverse": false,
+      "urgent": false,
+      "text": "ابھی اس وقت، بیدار ہونا جدوجہد جیسا محسوس نہیں ہوا۔"
+    },
+    {
+      "id": "MHT-024",
+      "category": "morning_outlook",
+      "reverse": true,
+      "urgent": false,
+      "text": "جاگنے کے بعد سے، آغاز سے ہی میرا نقطہ نظر مایوس کن رہا۔"
+    },
+    {
+      "id": "MHT-025",
+      "category": "morning_outlook",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے کاموں کے دوران، میں نے دن کا آغاز نسبتاً پرسکون نقطہ نظر کے ساتھ کیا۔"
+    },
+    {
+      "id": "MHT-026",
+      "category": "morning_outlook",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کا دن گزارتے ہوئے، میں پہلے سے ہی بوجھل محسوس کرتے ہوئے جاگا/جاگی۔"
+    },
+    {
+      "id": "MHT-027",
+      "category": "morning_outlook",
+      "reverse": false,
+      "urgent": false,
+      "text": "جیسے جیسے آج کا دن گزرا، بیدار ہونا جدوجہد جیسا محسوس نہیں ہوا۔"
+    },
+    {
+      "id": "MHT-028",
+      "category": "morning_outlook",
+      "reverse": true,
+      "urgent": false,
+      "text": "پچھلے چند گھنٹوں میں، آغاز سے ہی میرا نقطہ نظر مایوس کن رہا۔"
+    },
+    {
+      "id": "MHT-029",
+      "category": "morning_outlook",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اس مرحلے پر، میں نے دن کا آغاز نسبتاً پرسکون نقطہ نظر کے ساتھ کیا۔"
+    },
+    {
+      "id": "MHT-030",
+      "category": "morning_outlook",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے دوران آگے بڑھتے ہوئے، میں پہلے سے ہی بوجھل محسوس کرتے ہوئے جاگا/جاگی۔"
+    },
+    {
+      "id": "MHT-031",
+      "category": "morning_outlook",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے تقاضوں کا سامنا کرتے ہوئے، بیدار ہونا جدوجہد جیسا محسوس نہیں ہوا۔"
+    },
+    {
+      "id": "MHT-032",
+      "category": "morning_outlook",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے ایک پرسکون لمحے میں، آغاز سے ہی میرا نقطہ نظر مایوس کن رہا۔"
+    },
+    {
+      "id": "MHT-033",
+      "category": "morning_outlook",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب آج مشکل محسوس ہوا، میں نے دن کا آغاز نسبتاً پرسکون نقطہ نظر کے ساتھ کیا۔"
+    },
+    {
+      "id": "MHT-034",
+      "category": "morning_outlook",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج دوسروں کے ساتھ میل جول کے دوران، میں پہلے سے ہی بوجھل محسوس کرتے ہوئے جاگا/جاگی۔"
+    },
+    {
+      "id": "MHT-035",
+      "category": "morning_outlook",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے آج خود سے رابطہ کیا، بیدار ہونا جدوجہد جیسا محسوس نہیں ہوا۔"
+    },
+    {
+      "id": "MHT-036",
+      "category": "morning_outlook",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب آج کچھ غیر متوقع ہوا، آغاز سے ہی میرا نقطہ نظر مایوس کن رہا۔"
+    },
+    {
+      "id": "MHT-037",
+      "category": "morning_outlook",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج آرام کرنے کی کوشش کرتے ہوئے، میں نے دن کا آغاز نسبتاً پرسکون نقطہ نظر کے ساتھ کیا۔"
+    },
+    {
+      "id": "MHT-038",
+      "category": "morning_outlook",
+      "reverse": true,
+      "urgent": false,
+      "text": "جیسے جیسے دن آگے بڑھا، میں پہلے سے ہی بوجھل محسوس کرتے ہوئے جاگا/جاگی۔"
+    },
+    {
+      "id": "MHT-039",
+      "category": "morning_outlook",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے رک کر آج کے بارے میں سوچا، بیدار ہونا جدوجہد جیسا محسوس نہیں ہوا۔"
+    },
+    {
+      "id": "MHT-040",
+      "category": "morning_outlook",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کو دیکھتے ہوئے، آغاز سے ہی میرا نقطہ نظر مایوس کن رہا۔"
+    },
+    {
+      "id": "MHT-041",
+      "category": "energy_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج تک، سامنے موجود بنیادی کاموں کے لیے میرے پاس کافی توانائی رہی ہے۔"
+    },
+    {
+      "id": "MHT-042",
+      "category": "energy_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج صبح کے اوقات میں، میں غیر معمولی طور پر تھکن محسوس کر رہا/رہی ہوں۔"
+    },
+    {
+      "id": "MHT-043",
+      "category": "energy_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "ابھی اس وقت، میرا جسم نسبتاً بیدار اور فعال محسوس ہوا ہے۔"
+    },
+    {
+      "id": "MHT-044",
+      "category": "energy_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جاگنے کے بعد سے، چھوٹے کاموں کے لیے بھی میری موجودہ توانائی سے زیادہ درکار ہوا ہے۔"
+    },
+    {
+      "id": "MHT-045",
+      "category": "energy_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے کاموں کے دوران، سامنے موجود بنیادی کاموں کے لیے میرے پاس کافی توانائی رہی ہے۔"
+    },
+    {
+      "id": "MHT-046",
+      "category": "energy_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کا دن گزارتے ہوئے، میں غیر معمولی طور پر تھکن محسوس کر رہا/رہی ہوں۔"
+    },
+    {
+      "id": "MHT-047",
+      "category": "energy_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جیسے جیسے آج کا دن گزرا، میرا جسم نسبتاً بیدار اور فعال محسوس ہوا ہے۔"
+    },
+    {
+      "id": "MHT-048",
+      "category": "energy_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "پچھلے چند گھنٹوں میں، چھوٹے کاموں کے لیے بھی میری موجودہ توانائی سے زیادہ درکار ہوا ہے۔"
+    },
+    {
+      "id": "MHT-049",
+      "category": "energy_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اس مرحلے پر، سامنے موجود بنیادی کاموں کے لیے میرے پاس کافی توانائی رہی ہے۔"
+    },
+    {
+      "id": "MHT-050",
+      "category": "energy_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے دوران آگے بڑھتے ہوئے، میں غیر معمولی طور پر تھکن محسوس کر رہا/رہی ہوں۔"
+    },
+    {
+      "id": "MHT-051",
+      "category": "energy_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے تقاضوں کا سامنا کرتے ہوئے، میرا جسم نسبتاً بیدار اور فعال محسوس ہوا ہے۔"
+    },
+    {
+      "id": "MHT-052",
+      "category": "energy_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے ایک پرسکون لمحے میں، چھوٹے کاموں کے لیے بھی میری موجودہ توانائی سے زیادہ درکار ہوا ہے۔"
+    },
+    {
+      "id": "MHT-053",
+      "category": "energy_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب آج مشکل محسوس ہوا، سامنے موجود بنیادی کاموں کے لیے میرے پاس کافی توانائی رہی ہے۔"
+    },
+    {
+      "id": "MHT-054",
+      "category": "energy_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج دوسروں کے ساتھ میل جول کے دوران، میں غیر معمولی طور پر تھکن محسوس کر رہا/رہی ہوں۔"
+    },
+    {
+      "id": "MHT-055",
+      "category": "energy_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے آج خود سے رابطہ کیا، میرا جسم نسبتاً بیدار اور فعال محسوس ہوا ہے۔"
+    },
+    {
+      "id": "MHT-056",
+      "category": "energy_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب آج کچھ غیر متوقع ہوا، چھوٹے کاموں کے لیے بھی میری موجودہ توانائی سے زیادہ درکار ہوا ہے۔"
+    },
+    {
+      "id": "MHT-057",
+      "category": "energy_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج آرام کرنے کی کوشش کرتے ہوئے، سامنے موجود بنیادی کاموں کے لیے میرے پاس کافی توانائی رہی ہے۔"
+    },
+    {
+      "id": "MHT-058",
+      "category": "energy_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جیسے جیسے دن آگے بڑھا، میں غیر معمولی طور پر تھکن محسوس کر رہا/رہی ہوں۔"
+    },
+    {
+      "id": "MHT-059",
+      "category": "energy_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے رک کر آج کے بارے میں سوچا، میرا جسم نسبتاً بیدار اور فعال محسوس ہوا ہے۔"
+    },
+    {
+      "id": "MHT-060",
+      "category": "energy_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کو دیکھتے ہوئے، چھوٹے کاموں کے لیے بھی میری موجودہ توانائی سے زیادہ درکار ہوا ہے۔"
+    },
+    {
+      "id": "MHT-061",
+      "category": "stress_now",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج تک، میں اپنے اوپر موجود دباؤ کو سنبھالنے کے قابل محسوس ہوا/ہوئی ہوں۔"
+    },
+    {
+      "id": "MHT-062",
+      "category": "stress_now",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج صبح کے اوقات میں، مجھ پر موجود تقاضے میری برداشت سے زیادہ محسوس ہوئے ہیں۔"
+    },
+    {
+      "id": "MHT-063",
+      "category": "stress_now",
+      "reverse": false,
+      "urgent": false,
+      "text": "ابھی اس وقت، ذہنی دباؤ قابلِ انتظام حد میں رہا ہے۔"
+    },
+    {
+      "id": "MHT-064",
+      "category": "stress_now",
+      "reverse": true,
+      "urgent": false,
+      "text": "جاگنے کے بعد سے، ذہنی دباؤ نمایاں طور پر بڑھا ہے۔"
+    },
+    {
+      "id": "MHT-065",
+      "category": "stress_now",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے کاموں کے دوران، میں اپنے اوپر موجود دباؤ کو سنبھالنے کے قابل محسوس ہوا/ہوئی ہوں۔"
+    },
+    {
+      "id": "MHT-066",
+      "category": "stress_now",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کا دن گزارتے ہوئے، مجھ پر موجود تقاضے میری برداشت سے زیادہ محسوس ہوئے ہیں۔"
+    },
+    {
+      "id": "MHT-067",
+      "category": "stress_now",
+      "reverse": false,
+      "urgent": false,
+      "text": "جیسے جیسے آج کا دن گزرا، ذہنی دباؤ قابلِ انتظام حد میں رہا ہے۔"
+    },
+    {
+      "id": "MHT-068",
+      "category": "stress_now",
+      "reverse": true,
+      "urgent": false,
+      "text": "پچھلے چند گھنٹوں میں، ذہنی دباؤ نمایاں طور پر بڑھا ہے۔"
+    },
+    {
+      "id": "MHT-069",
+      "category": "stress_now",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اس مرحلے پر، میں اپنے اوپر موجود دباؤ کو سنبھالنے کے قابل محسوس ہوا/ہوئی ہوں۔"
+    },
+    {
+      "id": "MHT-070",
+      "category": "stress_now",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے دوران آگے بڑھتے ہوئے، مجھ پر موجود تقاضے میری برداشت سے زیادہ محسوس ہوئے ہیں۔"
+    },
+    {
+      "id": "MHT-071",
+      "category": "stress_now",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے تقاضوں کا سامنا کرتے ہوئے، ذہنی دباؤ قابلِ انتظام حد میں رہا ہے۔"
+    },
+    {
+      "id": "MHT-072",
+      "category": "stress_now",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے ایک پرسکون لمحے میں، ذہنی دباؤ نمایاں طور پر بڑھا ہے۔"
+    },
+    {
+      "id": "MHT-073",
+      "category": "stress_now",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب آج مشکل محسوس ہوا، میں اپنے اوپر موجود دباؤ کو سنبھالنے کے قابل محسوس ہوا/ہوئی ہوں۔"
+    },
+    {
+      "id": "MHT-074",
+      "category": "stress_now",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج دوسروں کے ساتھ میل جول کے دوران، مجھ پر موجود تقاضے میری برداشت سے زیادہ محسوس ہوئے ہیں۔"
+    },
+    {
+      "id": "MHT-075",
+      "category": "stress_now",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے آج خود سے رابطہ کیا، ذہنی دباؤ قابلِ انتظام حد میں رہا ہے۔"
+    },
+    {
+      "id": "MHT-076",
+      "category": "stress_now",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب آج کچھ غیر متوقع ہوا، ذہنی دباؤ نمایاں طور پر بڑھا ہے۔"
+    },
+    {
+      "id": "MHT-077",
+      "category": "stress_now",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج آرام کرنے کی کوشش کرتے ہوئے، میں اپنے اوپر موجود دباؤ کو سنبھالنے کے قابل محسوس ہوا/ہوئی ہوں۔"
+    },
+    {
+      "id": "MHT-078",
+      "category": "stress_now",
+      "reverse": true,
+      "urgent": false,
+      "text": "جیسے جیسے دن آگے بڑھا، مجھ پر موجود تقاضے میری برداشت سے زیادہ محسوس ہوئے ہیں۔"
+    },
+    {
+      "id": "MHT-079",
+      "category": "stress_now",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے رک کر آج کے بارے میں سوچا، ذہنی دباؤ قابلِ انتظام حد میں رہا ہے۔"
+    },
+    {
+      "id": "MHT-080",
+      "category": "stress_now",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کو دیکھتے ہوئے، ذہنی دباؤ نمایاں طور پر بڑھا ہے۔"
+    },
+    {
+      "id": "MHT-081",
+      "category": "anxiety_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج تک، میں بے چین خیالات کو پرسکون کر سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-082",
+      "category": "anxiety_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج صبح کے اوقات میں، بے چین خیالات کو روکنا مشکل رہا ہے۔"
+    },
+    {
+      "id": "MHT-083",
+      "category": "anxiety_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "ابھی اس وقت، فکر نے میری توجہ پر مکمل قبضہ نہیں کیا۔"
+    },
+    {
+      "id": "MHT-084",
+      "category": "anxiety_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جاگنے کے بعد سے، میں بے قرار محسوس کرتا/کرتی رہا/رہی ہوں۔"
+    },
+    {
+      "id": "MHT-085",
+      "category": "anxiety_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے کاموں کے دوران، میں بے چین خیالات کو پرسکون کر سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-086",
+      "category": "anxiety_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کا دن گزارتے ہوئے، بے چین خیالات کو روکنا مشکل رہا ہے۔"
+    },
+    {
+      "id": "MHT-087",
+      "category": "anxiety_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جیسے جیسے آج کا دن گزرا، فکر نے میری توجہ پر مکمل قبضہ نہیں کیا۔"
+    },
+    {
+      "id": "MHT-088",
+      "category": "anxiety_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "پچھلے چند گھنٹوں میں، میں بے قرار محسوس کرتا/کرتی رہا/رہی ہوں۔"
+    },
+    {
+      "id": "MHT-089",
+      "category": "anxiety_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اس مرحلے پر، میں بے چین خیالات کو پرسکون کر سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-090",
+      "category": "anxiety_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے دوران آگے بڑھتے ہوئے، بے چین خیالات کو روکنا مشکل رہا ہے۔"
+    },
+    {
+      "id": "MHT-091",
+      "category": "anxiety_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے تقاضوں کا سامنا کرتے ہوئے، فکر نے میری توجہ پر مکمل قبضہ نہیں کیا۔"
+    },
+    {
+      "id": "MHT-092",
+      "category": "anxiety_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے ایک پرسکون لمحے میں، میں بے قرار محسوس کرتا/کرتی رہا/رہی ہوں۔"
+    },
+    {
+      "id": "MHT-093",
+      "category": "anxiety_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب آج مشکل محسوس ہوا، میں بے چین خیالات کو پرسکون کر سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-094",
+      "category": "anxiety_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج دوسروں کے ساتھ میل جول کے دوران، بے چین خیالات کو روکنا مشکل رہا ہے۔"
+    },
+    {
+      "id": "MHT-095",
+      "category": "anxiety_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے آج خود سے رابطہ کیا، فکر نے میری توجہ پر مکمل قبضہ نہیں کیا۔"
+    },
+    {
+      "id": "MHT-096",
+      "category": "anxiety_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب آج کچھ غیر متوقع ہوا، میں بے قرار محسوس کرتا/کرتی رہا/رہی ہوں۔"
+    },
+    {
+      "id": "MHT-097",
+      "category": "anxiety_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج آرام کرنے کی کوشش کرتے ہوئے، میں بے چین خیالات کو پرسکون کر سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-098",
+      "category": "anxiety_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جیسے جیسے دن آگے بڑھا، بے چین خیالات کو روکنا مشکل رہا ہے۔"
+    },
+    {
+      "id": "MHT-099",
+      "category": "anxiety_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے رک کر آج کے بارے میں سوچا، فکر نے میری توجہ پر مکمل قبضہ نہیں کیا۔"
+    },
+    {
+      "id": "MHT-100",
+      "category": "anxiety_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کو دیکھتے ہوئے، میں بے قرار محسوس کرتا/کرتی رہا/رہی ہوں۔"
+    },
+    {
+      "id": "MHT-101",
+      "category": "focus_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج تک، میں سامنے موجود کام پر توجہ مرکوز کر سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-102",
+      "category": "focus_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج صبح کے اوقات میں، میری توجہ بار بار بکھری ہے۔"
+    },
+    {
+      "id": "MHT-103",
+      "category": "focus_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "ابھی اس وقت، میری سوچ نسبتاً واضح رہی ہے۔"
+    },
+    {
+      "id": "MHT-104",
+      "category": "focus_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جاگنے کے بعد سے، ذہنی دھند نے عام کاموں کو معمول سے زیادہ مشکل بنایا ہے۔"
+    },
+    {
+      "id": "MHT-105",
+      "category": "focus_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے کاموں کے دوران، میں سامنے موجود کام پر توجہ مرکوز کر سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-106",
+      "category": "focus_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کا دن گزارتے ہوئے، میری توجہ بار بار بکھری ہے۔"
+    },
+    {
+      "id": "MHT-107",
+      "category": "focus_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جیسے جیسے آج کا دن گزرا، میری سوچ نسبتاً واضح رہی ہے۔"
+    },
+    {
+      "id": "MHT-108",
+      "category": "focus_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "پچھلے چند گھنٹوں میں، ذہنی دھند نے عام کاموں کو معمول سے زیادہ مشکل بنایا ہے۔"
+    },
+    {
+      "id": "MHT-109",
+      "category": "focus_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اس مرحلے پر، میں سامنے موجود کام پر توجہ مرکوز کر سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-110",
+      "category": "focus_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے دوران آگے بڑھتے ہوئے، میری توجہ بار بار بکھری ہے۔"
+    },
+    {
+      "id": "MHT-111",
+      "category": "focus_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے تقاضوں کا سامنا کرتے ہوئے، میری سوچ نسبتاً واضح رہی ہے۔"
+    },
+    {
+      "id": "MHT-112",
+      "category": "focus_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے ایک پرسکون لمحے میں، ذہنی دھند نے عام کاموں کو معمول سے زیادہ مشکل بنایا ہے۔"
+    },
+    {
+      "id": "MHT-113",
+      "category": "focus_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب آج مشکل محسوس ہوا، میں سامنے موجود کام پر توجہ مرکوز کر سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-114",
+      "category": "focus_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج دوسروں کے ساتھ میل جول کے دوران، میری توجہ بار بار بکھری ہے۔"
+    },
+    {
+      "id": "MHT-115",
+      "category": "focus_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے آج خود سے رابطہ کیا، میری سوچ نسبتاً واضح رہی ہے۔"
+    },
+    {
+      "id": "MHT-116",
+      "category": "focus_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب آج کچھ غیر متوقع ہوا، ذہنی دھند نے عام کاموں کو معمول سے زیادہ مشکل بنایا ہے۔"
+    },
+    {
+      "id": "MHT-117",
+      "category": "focus_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج آرام کرنے کی کوشش کرتے ہوئے، میں سامنے موجود کام پر توجہ مرکوز کر سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-118",
+      "category": "focus_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جیسے جیسے دن آگے بڑھا، میری توجہ بار بار بکھری ہے۔"
+    },
+    {
+      "id": "MHT-119",
+      "category": "focus_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے رک کر آج کے بارے میں سوچا، میری سوچ نسبتاً واضح رہی ہے۔"
+    },
+    {
+      "id": "MHT-120",
+      "category": "focus_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کو دیکھتے ہوئے، ذہنی دھند نے عام کاموں کو معمول سے زیادہ مشکل بنایا ہے۔"
+    },
+    {
+      "id": "MHT-121",
+      "category": "motivation_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج تک، مجھے کام مکمل کرنے کی کچھ ترغیب محسوس ہوئی ہے۔"
+    },
+    {
+      "id": "MHT-122",
+      "category": "motivation_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج صبح کے اوقات میں، چھوٹے کام شروع کرنا بھی بہت مشکل محسوس ہوا ہے۔"
+    },
+    {
+      "id": "MHT-123",
+      "category": "motivation_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "ابھی اس وقت، کام شروع کرنا ناممکن محسوس نہیں ہوا۔"
+    },
+    {
+      "id": "MHT-124",
+      "category": "motivation_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جاگنے کے بعد سے، مجھے کوئی ترغیب تلاش کرنا مشکل لگا ہے۔"
+    },
+    {
+      "id": "MHT-125",
+      "category": "motivation_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے کاموں کے دوران، مجھے کام مکمل کرنے کی کچھ ترغیب محسوس ہوئی ہے۔"
+    },
+    {
+      "id": "MHT-126",
+      "category": "motivation_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کا دن گزارتے ہوئے، چھوٹے کام شروع کرنا بھی بہت مشکل محسوس ہوا ہے۔"
+    },
+    {
+      "id": "MHT-127",
+      "category": "motivation_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جیسے جیسے آج کا دن گزرا، کام شروع کرنا ناممکن محسوس نہیں ہوا۔"
+    },
+    {
+      "id": "MHT-128",
+      "category": "motivation_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "پچھلے چند گھنٹوں میں، مجھے کوئی ترغیب تلاش کرنا مشکل لگا ہے۔"
+    },
+    {
+      "id": "MHT-129",
+      "category": "motivation_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اس مرحلے پر، مجھے کام مکمل کرنے کی کچھ ترغیب محسوس ہوئی ہے۔"
+    },
+    {
+      "id": "MHT-130",
+      "category": "motivation_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے دوران آگے بڑھتے ہوئے، چھوٹے کام شروع کرنا بھی بہت مشکل محسوس ہوا ہے۔"
+    },
+    {
+      "id": "MHT-131",
+      "category": "motivation_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے تقاضوں کا سامنا کرتے ہوئے، کام شروع کرنا ناممکن محسوس نہیں ہوا۔"
+    },
+    {
+      "id": "MHT-132",
+      "category": "motivation_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے ایک پرسکون لمحے میں، مجھے کوئی ترغیب تلاش کرنا مشکل لگا ہے۔"
+    },
+    {
+      "id": "MHT-133",
+      "category": "motivation_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب آج مشکل محسوس ہوا، مجھے کام مکمل کرنے کی کچھ ترغیب محسوس ہوئی ہے۔"
+    },
+    {
+      "id": "MHT-134",
+      "category": "motivation_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج دوسروں کے ساتھ میل جول کے دوران، چھوٹے کام شروع کرنا بھی بہت مشکل محسوس ہوا ہے۔"
+    },
+    {
+      "id": "MHT-135",
+      "category": "motivation_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے آج خود سے رابطہ کیا، کام شروع کرنا ناممکن محسوس نہیں ہوا۔"
+    },
+    {
+      "id": "MHT-136",
+      "category": "motivation_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب آج کچھ غیر متوقع ہوا، مجھے کوئی ترغیب تلاش کرنا مشکل لگا ہے۔"
+    },
+    {
+      "id": "MHT-137",
+      "category": "motivation_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج آرام کرنے کی کوشش کرتے ہوئے، مجھے کام مکمل کرنے کی کچھ ترغیب محسوس ہوئی ہے۔"
+    },
+    {
+      "id": "MHT-138",
+      "category": "motivation_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جیسے جیسے دن آگے بڑھا، چھوٹے کام شروع کرنا بھی بہت مشکل محسوس ہوا ہے۔"
+    },
+    {
+      "id": "MHT-139",
+      "category": "motivation_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے رک کر آج کے بارے میں سوچا، کام شروع کرنا ناممکن محسوس نہیں ہوا۔"
+    },
+    {
+      "id": "MHT-140",
+      "category": "motivation_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کو دیکھتے ہوئے، مجھے کوئی ترغیب تلاش کرنا مشکل لگا ہے۔"
+    },
+    {
+      "id": "MHT-141",
+      "category": "sleep_last_night",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج تک، میں اتنا سو سکا/سکی کہ کچھ حد تک تازگی محسوس ہو رہی ہے۔"
+    },
+    {
+      "id": "MHT-142",
+      "category": "sleep_last_night",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج صبح کے اوقات میں، خراب نیند نے میرے احساسات کو متاثر کیا ہے۔"
+    },
+    {
+      "id": "MHT-143",
+      "category": "sleep_last_night",
+      "reverse": false,
+      "urgent": false,
+      "text": "ابھی اس وقت، نیند نے ابھی کے احساس میں نقصان کے بجائے فائدہ دیا ہے۔"
+    },
+    {
+      "id": "MHT-144",
+      "category": "sleep_last_night",
+      "reverse": true,
+      "urgent": false,
+      "text": "جاگنے کے بعد سے، میں پھر بھی تھکن محسوس کرتے ہوئے جاگا/جاگی۔"
+    },
+    {
+      "id": "MHT-145",
+      "category": "sleep_last_night",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے کاموں کے دوران، میں اتنا سو سکا/سکی کہ کچھ حد تک تازگی محسوس ہو رہی ہے۔"
+    },
+    {
+      "id": "MHT-146",
+      "category": "sleep_last_night",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کا دن گزارتے ہوئے، خراب نیند نے میرے احساسات کو متاثر کیا ہے۔"
+    },
+    {
+      "id": "MHT-147",
+      "category": "sleep_last_night",
+      "reverse": false,
+      "urgent": false,
+      "text": "جیسے جیسے آج کا دن گزرا، نیند نے ابھی کے احساس میں نقصان کے بجائے فائدہ دیا ہے۔"
+    },
+    {
+      "id": "MHT-148",
+      "category": "sleep_last_night",
+      "reverse": true,
+      "urgent": false,
+      "text": "پچھلے چند گھنٹوں میں، میں پھر بھی تھکن محسوس کرتے ہوئے جاگا/جاگی۔"
+    },
+    {
+      "id": "MHT-149",
+      "category": "sleep_last_night",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اس مرحلے پر، میں اتنا سو سکا/سکی کہ کچھ حد تک تازگی محسوس ہو رہی ہے۔"
+    },
+    {
+      "id": "MHT-150",
+      "category": "sleep_last_night",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے دوران آگے بڑھتے ہوئے، خراب نیند نے میرے احساسات کو متاثر کیا ہے۔"
+    },
+    {
+      "id": "MHT-151",
+      "category": "sleep_last_night",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے تقاضوں کا سامنا کرتے ہوئے، نیند نے ابھی کے احساس میں نقصان کے بجائے فائدہ دیا ہے۔"
+    },
+    {
+      "id": "MHT-152",
+      "category": "sleep_last_night",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے ایک پرسکون لمحے میں، میں پھر بھی تھکن محسوس کرتے ہوئے جاگا/جاگی۔"
+    },
+    {
+      "id": "MHT-153",
+      "category": "sleep_last_night",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب آج مشکل محسوس ہوا، میں اتنا سو سکا/سکی کہ کچھ حد تک تازگی محسوس ہو رہی ہے۔"
+    },
+    {
+      "id": "MHT-154",
+      "category": "sleep_last_night",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج دوسروں کے ساتھ میل جول کے دوران، خراب نیند نے میرے احساسات کو متاثر کیا ہے۔"
+    },
+    {
+      "id": "MHT-155",
+      "category": "sleep_last_night",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے آج خود سے رابطہ کیا، نیند نے ابھی کے احساس میں نقصان کے بجائے فائدہ دیا ہے۔"
+    },
+    {
+      "id": "MHT-156",
+      "category": "sleep_last_night",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب آج کچھ غیر متوقع ہوا، میں پھر بھی تھکن محسوس کرتے ہوئے جاگا/جاگی۔"
+    },
+    {
+      "id": "MHT-157",
+      "category": "sleep_last_night",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج آرام کرنے کی کوشش کرتے ہوئے، میں اتنا سو سکا/سکی کہ کچھ حد تک تازگی محسوس ہو رہی ہے۔"
+    },
+    {
+      "id": "MHT-158",
+      "category": "sleep_last_night",
+      "reverse": true,
+      "urgent": false,
+      "text": "جیسے جیسے دن آگے بڑھا، خراب نیند نے میرے احساسات کو متاثر کیا ہے۔"
+    },
+    {
+      "id": "MHT-159",
+      "category": "sleep_last_night",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے رک کر آج کے بارے میں سوچا، نیند نے ابھی کے احساس میں نقصان کے بجائے فائدہ دیا ہے۔"
+    },
+    {
+      "id": "MHT-160",
+      "category": "sleep_last_night",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کو دیکھتے ہوئے، میں پھر بھی تھکن محسوس کرتے ہوئے جاگا/جاگی۔"
+    },
+    {
+      "id": "MHT-161",
+      "category": "physical_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج تک، میرا جسم نسبتاً آرام دہ محسوس ہوا ہے۔"
+    },
+    {
+      "id": "MHT-162",
+      "category": "physical_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج صبح کے اوقات میں، میرا جسم تناؤ یا بے چینی محسوس کر رہا ہے۔"
+    },
+    {
+      "id": "MHT-163",
+      "category": "physical_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "ابھی اس وقت، جسمانی بے آرامی نے میری توجہ نہیں ہٹائی۔"
+    },
+    {
+      "id": "MHT-164",
+      "category": "physical_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جاگنے کے بعد سے، غیر واضح درد یا کھچاؤ نے مجھے پریشان کیا ہے۔"
+    },
+    {
+      "id": "MHT-165",
+      "category": "physical_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے کاموں کے دوران، میرا جسم نسبتاً آرام دہ محسوس ہوا ہے۔"
+    },
+    {
+      "id": "MHT-166",
+      "category": "physical_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کا دن گزارتے ہوئے، میرا جسم تناؤ یا بے چینی محسوس کر رہا ہے۔"
+    },
+    {
+      "id": "MHT-167",
+      "category": "physical_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جیسے جیسے آج کا دن گزرا، جسمانی بے آرامی نے میری توجہ نہیں ہٹائی۔"
+    },
+    {
+      "id": "MHT-168",
+      "category": "physical_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "پچھلے چند گھنٹوں میں، غیر واضح درد یا کھچاؤ نے مجھے پریشان کیا ہے۔"
+    },
+    {
+      "id": "MHT-169",
+      "category": "physical_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اس مرحلے پر، میرا جسم نسبتاً آرام دہ محسوس ہوا ہے۔"
+    },
+    {
+      "id": "MHT-170",
+      "category": "physical_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے دوران آگے بڑھتے ہوئے، میرا جسم تناؤ یا بے چینی محسوس کر رہا ہے۔"
+    },
+    {
+      "id": "MHT-171",
+      "category": "physical_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے تقاضوں کا سامنا کرتے ہوئے، جسمانی بے آرامی نے میری توجہ نہیں ہٹائی۔"
+    },
+    {
+      "id": "MHT-172",
+      "category": "physical_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے ایک پرسکون لمحے میں، غیر واضح درد یا کھچاؤ نے مجھے پریشان کیا ہے۔"
+    },
+    {
+      "id": "MHT-173",
+      "category": "physical_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب آج مشکل محسوس ہوا، میرا جسم نسبتاً آرام دہ محسوس ہوا ہے۔"
+    },
+    {
+      "id": "MHT-174",
+      "category": "physical_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج دوسروں کے ساتھ میل جول کے دوران، میرا جسم تناؤ یا بے چینی محسوس کر رہا ہے۔"
+    },
+    {
+      "id": "MHT-175",
+      "category": "physical_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے آج خود سے رابطہ کیا، جسمانی بے آرامی نے میری توجہ نہیں ہٹائی۔"
+    },
+    {
+      "id": "MHT-176",
+      "category": "physical_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب آج کچھ غیر متوقع ہوا، غیر واضح درد یا کھچاؤ نے مجھے پریشان کیا ہے۔"
+    },
+    {
+      "id": "MHT-177",
+      "category": "physical_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج آرام کرنے کی کوشش کرتے ہوئے، میرا جسم نسبتاً آرام دہ محسوس ہوا ہے۔"
+    },
+    {
+      "id": "MHT-178",
+      "category": "physical_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جیسے جیسے دن آگے بڑھا، میرا جسم تناؤ یا بے چینی محسوس کر رہا ہے۔"
+    },
+    {
+      "id": "MHT-179",
+      "category": "physical_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے رک کر آج کے بارے میں سوچا، جسمانی بے آرامی نے میری توجہ نہیں ہٹائی۔"
+    },
+    {
+      "id": "MHT-180",
+      "category": "physical_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کو دیکھتے ہوئے، غیر واضح درد یا کھچاؤ نے مجھے پریشان کیا ہے۔"
+    },
+    {
+      "id": "MHT-181",
+      "category": "appetite_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج تک، میری بھوک معمول کے قریب رہی ہے۔"
+    },
+    {
+      "id": "MHT-182",
+      "category": "appetite_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج صبح کے اوقات میں، میری بھوک متاثر محسوس ہوئی ہے۔"
+    },
+    {
+      "id": "MHT-183",
+      "category": "appetite_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "ابھی اس وقت، میں اپنے جسم کی مدد کرنے والے انداز میں کھا سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-184",
+      "category": "appetite_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جاگنے کے بعد سے، دباؤ نے میرے کھانے کے معمول میں خلل ڈالا ہے۔"
+    },
+    {
+      "id": "MHT-185",
+      "category": "appetite_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے کاموں کے دوران، میری بھوک معمول کے قریب رہی ہے۔"
+    },
+    {
+      "id": "MHT-186",
+      "category": "appetite_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کا دن گزارتے ہوئے، میری بھوک متاثر محسوس ہوئی ہے۔"
+    },
+    {
+      "id": "MHT-187",
+      "category": "appetite_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جیسے جیسے آج کا دن گزرا، میں اپنے جسم کی مدد کرنے والے انداز میں کھا سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-188",
+      "category": "appetite_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "پچھلے چند گھنٹوں میں، دباؤ نے میرے کھانے کے معمول میں خلل ڈالا ہے۔"
+    },
+    {
+      "id": "MHT-189",
+      "category": "appetite_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اس مرحلے پر، میری بھوک معمول کے قریب رہی ہے۔"
+    },
+    {
+      "id": "MHT-190",
+      "category": "appetite_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے دوران آگے بڑھتے ہوئے، میری بھوک متاثر محسوس ہوئی ہے۔"
+    },
+    {
+      "id": "MHT-191",
+      "category": "appetite_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے تقاضوں کا سامنا کرتے ہوئے، میں اپنے جسم کی مدد کرنے والے انداز میں کھا سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-192",
+      "category": "appetite_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے ایک پرسکون لمحے میں، دباؤ نے میرے کھانے کے معمول میں خلل ڈالا ہے۔"
+    },
+    {
+      "id": "MHT-193",
+      "category": "appetite_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب آج مشکل محسوس ہوا، میری بھوک معمول کے قریب رہی ہے۔"
+    },
+    {
+      "id": "MHT-194",
+      "category": "appetite_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج دوسروں کے ساتھ میل جول کے دوران، میری بھوک متاثر محسوس ہوئی ہے۔"
+    },
+    {
+      "id": "MHT-195",
+      "category": "appetite_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے آج خود سے رابطہ کیا، میں اپنے جسم کی مدد کرنے والے انداز میں کھا سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-196",
+      "category": "appetite_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب آج کچھ غیر متوقع ہوا، دباؤ نے میرے کھانے کے معمول میں خلل ڈالا ہے۔"
+    },
+    {
+      "id": "MHT-197",
+      "category": "appetite_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج آرام کرنے کی کوشش کرتے ہوئے، میری بھوک معمول کے قریب رہی ہے۔"
+    },
+    {
+      "id": "MHT-198",
+      "category": "appetite_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جیسے جیسے دن آگے بڑھا، میری بھوک متاثر محسوس ہوئی ہے۔"
+    },
+    {
+      "id": "MHT-199",
+      "category": "appetite_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے رک کر آج کے بارے میں سوچا، میں اپنے جسم کی مدد کرنے والے انداز میں کھا سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-200",
+      "category": "appetite_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کو دیکھتے ہوئے، دباؤ نے میرے کھانے کے معمول میں خلل ڈالا ہے۔"
+    },
+    {
+      "id": "MHT-201",
+      "category": "connection_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج تک، میں کم از کم ایک شخص سے تعلق محسوس کر سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-202",
+      "category": "connection_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج صبح کے اوقات میں، میں لوگوں سے بچتا/بچتی رہا/رہی حالانکہ رابطہ مددگار ہو سکتا تھا۔"
+    },
+    {
+      "id": "MHT-203",
+      "category": "connection_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "ابھی اس وقت، ایک گفتگو نے مجھے معاون محسوس کرایا۔"
+    },
+    {
+      "id": "MHT-204",
+      "category": "connection_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جاگنے کے بعد سے، میں دوسروں سے دور محسوس کر رہا/رہی ہوں۔"
+    },
+    {
+      "id": "MHT-205",
+      "category": "connection_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے کاموں کے دوران، میں کم از کم ایک شخص سے تعلق محسوس کر سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-206",
+      "category": "connection_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کا دن گزارتے ہوئے، میں لوگوں سے بچتا/بچتی رہا/رہی حالانکہ رابطہ مددگار ہو سکتا تھا۔"
+    },
+    {
+      "id": "MHT-207",
+      "category": "connection_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جیسے جیسے آج کا دن گزرا، ایک گفتگو نے مجھے معاون محسوس کرایا۔"
+    },
+    {
+      "id": "MHT-208",
+      "category": "connection_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "پچھلے چند گھنٹوں میں، میں دوسروں سے دور محسوس کر رہا/رہی ہوں۔"
+    },
+    {
+      "id": "MHT-209",
+      "category": "connection_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اس مرحلے پر، میں کم از کم ایک شخص سے تعلق محسوس کر سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-210",
+      "category": "connection_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے دوران آگے بڑھتے ہوئے، میں لوگوں سے بچتا/بچتی رہا/رہی حالانکہ رابطہ مددگار ہو سکتا تھا۔"
+    },
+    {
+      "id": "MHT-211",
+      "category": "connection_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے تقاضوں کا سامنا کرتے ہوئے، ایک گفتگو نے مجھے معاون محسوس کرایا۔"
+    },
+    {
+      "id": "MHT-212",
+      "category": "connection_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے ایک پرسکون لمحے میں، میں دوسروں سے دور محسوس کر رہا/رہی ہوں۔"
+    },
+    {
+      "id": "MHT-213",
+      "category": "connection_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب آج مشکل محسوس ہوا، میں کم از کم ایک شخص سے تعلق محسوس کر سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-214",
+      "category": "connection_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج دوسروں کے ساتھ میل جول کے دوران، میں لوگوں سے بچتا/بچتی رہا/رہی حالانکہ رابطہ مددگار ہو سکتا تھا۔"
+    },
+    {
+      "id": "MHT-215",
+      "category": "connection_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے آج خود سے رابطہ کیا، ایک گفتگو نے مجھے معاون محسوس کرایا۔"
+    },
+    {
+      "id": "MHT-216",
+      "category": "connection_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب آج کچھ غیر متوقع ہوا، میں دوسروں سے دور محسوس کر رہا/رہی ہوں۔"
+    },
+    {
+      "id": "MHT-217",
+      "category": "connection_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج آرام کرنے کی کوشش کرتے ہوئے، میں کم از کم ایک شخص سے تعلق محسوس کر سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-218",
+      "category": "connection_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جیسے جیسے دن آگے بڑھا، میں لوگوں سے بچتا/بچتی رہا/رہی حالانکہ رابطہ مددگار ہو سکتا تھا۔"
+    },
+    {
+      "id": "MHT-219",
+      "category": "connection_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے رک کر آج کے بارے میں سوچا، ایک گفتگو نے مجھے معاون محسوس کرایا۔"
+    },
+    {
+      "id": "MHT-220",
+      "category": "connection_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کو دیکھتے ہوئے، میں دوسروں سے دور محسوس کر رہا/رہی ہوں۔"
+    },
+    {
+      "id": "MHT-221",
+      "category": "loneliness_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج تک، مجھے شدید تنہائی محسوس نہیں ہوئی۔"
+    },
+    {
+      "id": "MHT-222",
+      "category": "loneliness_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج صبح کے اوقات میں، دوسروں کی موجودگی میں بھی تنہائی بھاری محسوس ہوئی ہے۔"
+    },
+    {
+      "id": "MHT-223",
+      "category": "loneliness_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "ابھی اس وقت، میں ایسے شخص کو یاد کر سکا/سکی جو مجھے اہمیت دیتا ہے۔"
+    },
+    {
+      "id": "MHT-224",
+      "category": "loneliness_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جاگنے کے بعد سے، مجھے لگا کہ کوئی واقعی مجھے نہیں سمجھتا۔"
+    },
+    {
+      "id": "MHT-225",
+      "category": "loneliness_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے کاموں کے دوران، مجھے شدید تنہائی محسوس نہیں ہوئی۔"
+    },
+    {
+      "id": "MHT-226",
+      "category": "loneliness_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کا دن گزارتے ہوئے، دوسروں کی موجودگی میں بھی تنہائی بھاری محسوس ہوئی ہے۔"
+    },
+    {
+      "id": "MHT-227",
+      "category": "loneliness_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جیسے جیسے آج کا دن گزرا، میں ایسے شخص کو یاد کر سکا/سکی جو مجھے اہمیت دیتا ہے۔"
+    },
+    {
+      "id": "MHT-228",
+      "category": "loneliness_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "پچھلے چند گھنٹوں میں، مجھے لگا کہ کوئی واقعی مجھے نہیں سمجھتا۔"
+    },
+    {
+      "id": "MHT-229",
+      "category": "loneliness_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اس مرحلے پر، مجھے شدید تنہائی محسوس نہیں ہوئی۔"
+    },
+    {
+      "id": "MHT-230",
+      "category": "loneliness_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے دوران آگے بڑھتے ہوئے، دوسروں کی موجودگی میں بھی تنہائی بھاری محسوس ہوئی ہے۔"
+    },
+    {
+      "id": "MHT-231",
+      "category": "loneliness_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے تقاضوں کا سامنا کرتے ہوئے، میں ایسے شخص کو یاد کر سکا/سکی جو مجھے اہمیت دیتا ہے۔"
+    },
+    {
+      "id": "MHT-232",
+      "category": "loneliness_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے ایک پرسکون لمحے میں، مجھے لگا کہ کوئی واقعی مجھے نہیں سمجھتا۔"
+    },
+    {
+      "id": "MHT-233",
+      "category": "loneliness_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب آج مشکل محسوس ہوا، مجھے شدید تنہائی محسوس نہیں ہوئی۔"
+    },
+    {
+      "id": "MHT-234",
+      "category": "loneliness_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج دوسروں کے ساتھ میل جول کے دوران، دوسروں کی موجودگی میں بھی تنہائی بھاری محسوس ہوئی ہے۔"
+    },
+    {
+      "id": "MHT-235",
+      "category": "loneliness_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے آج خود سے رابطہ کیا، میں ایسے شخص کو یاد کر سکا/سکی جو مجھے اہمیت دیتا ہے۔"
+    },
+    {
+      "id": "MHT-236",
+      "category": "loneliness_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب آج کچھ غیر متوقع ہوا، مجھے لگا کہ کوئی واقعی مجھے نہیں سمجھتا۔"
+    },
+    {
+      "id": "MHT-237",
+      "category": "loneliness_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج آرام کرنے کی کوشش کرتے ہوئے، مجھے شدید تنہائی محسوس نہیں ہوئی۔"
+    },
+    {
+      "id": "MHT-238",
+      "category": "loneliness_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جیسے جیسے دن آگے بڑھا، دوسروں کی موجودگی میں بھی تنہائی بھاری محسوس ہوئی ہے۔"
+    },
+    {
+      "id": "MHT-239",
+      "category": "loneliness_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے رک کر آج کے بارے میں سوچا، میں ایسے شخص کو یاد کر سکا/سکی جو مجھے اہمیت دیتا ہے۔"
+    },
+    {
+      "id": "MHT-240",
+      "category": "loneliness_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کو دیکھتے ہوئے، مجھے لگا کہ کوئی واقعی مجھے نہیں سمجھتا۔"
+    },
+    {
+      "id": "MHT-241",
+      "category": "regulation_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج تک، میں نے شدید جذبات کو فوری ردعمل کے بغیر گزرنے دیا ہے۔"
+    },
+    {
+      "id": "MHT-242",
+      "category": "regulation_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج صبح کے اوقات میں، شدید جذبات نے مجھے ایسے ردعمل کی طرف دھکیلا جس پر افسوس ہوا۔"
+    },
+    {
+      "id": "MHT-243",
+      "category": "regulation_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "ابھی اس وقت، میں کم از کم ایک بار خود کو پرسکون کر سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-244",
+      "category": "regulation_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جاگنے کے بعد سے، پریشان ہونے کے بعد مجھے پرسکون ہونا مشکل لگا۔"
+    },
+    {
+      "id": "MHT-245",
+      "category": "regulation_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے کاموں کے دوران، میں نے شدید جذبات کو فوری ردعمل کے بغیر گزرنے دیا ہے۔"
+    },
+    {
+      "id": "MHT-246",
+      "category": "regulation_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کا دن گزارتے ہوئے، شدید جذبات نے مجھے ایسے ردعمل کی طرف دھکیلا جس پر افسوس ہوا۔"
+    },
+    {
+      "id": "MHT-247",
+      "category": "regulation_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جیسے جیسے آج کا دن گزرا، میں کم از کم ایک بار خود کو پرسکون کر سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-248",
+      "category": "regulation_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "پچھلے چند گھنٹوں میں، پریشان ہونے کے بعد مجھے پرسکون ہونا مشکل لگا۔"
+    },
+    {
+      "id": "MHT-249",
+      "category": "regulation_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اس مرحلے پر، میں نے شدید جذبات کو فوری ردعمل کے بغیر گزرنے دیا ہے۔"
+    },
+    {
+      "id": "MHT-250",
+      "category": "regulation_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے دوران آگے بڑھتے ہوئے، شدید جذبات نے مجھے ایسے ردعمل کی طرف دھکیلا جس پر افسوس ہوا۔"
+    },
+    {
+      "id": "MHT-251",
+      "category": "regulation_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے تقاضوں کا سامنا کرتے ہوئے، میں کم از کم ایک بار خود کو پرسکون کر سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-252",
+      "category": "regulation_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے ایک پرسکون لمحے میں، پریشان ہونے کے بعد مجھے پرسکون ہونا مشکل لگا۔"
+    },
+    {
+      "id": "MHT-253",
+      "category": "regulation_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب آج مشکل محسوس ہوا، میں نے شدید جذبات کو فوری ردعمل کے بغیر گزرنے دیا ہے۔"
+    },
+    {
+      "id": "MHT-254",
+      "category": "regulation_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج دوسروں کے ساتھ میل جول کے دوران، شدید جذبات نے مجھے ایسے ردعمل کی طرف دھکیلا جس پر افسوس ہوا۔"
+    },
+    {
+      "id": "MHT-255",
+      "category": "regulation_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے آج خود سے رابطہ کیا، میں کم از کم ایک بار خود کو پرسکون کر سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-256",
+      "category": "regulation_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب آج کچھ غیر متوقع ہوا، پریشان ہونے کے بعد مجھے پرسکون ہونا مشکل لگا۔"
+    },
+    {
+      "id": "MHT-257",
+      "category": "regulation_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج آرام کرنے کی کوشش کرتے ہوئے، میں نے شدید جذبات کو فوری ردعمل کے بغیر گزرنے دیا ہے۔"
+    },
+    {
+      "id": "MHT-258",
+      "category": "regulation_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جیسے جیسے دن آگے بڑھا، شدید جذبات نے مجھے ایسے ردعمل کی طرف دھکیلا جس پر افسوس ہوا۔"
+    },
+    {
+      "id": "MHT-259",
+      "category": "regulation_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے رک کر آج کے بارے میں سوچا، میں کم از کم ایک بار خود کو پرسکون کر سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-260",
+      "category": "regulation_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کو دیکھتے ہوئے، پریشان ہونے کے بعد مجھے پرسکون ہونا مشکل لگا۔"
+    },
+    {
+      "id": "MHT-261",
+      "category": "inner_dialogue_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج تک، میری اندرونی گفتگو نسبتاً مہربان رہی ہے۔"
+    },
+    {
+      "id": "MHT-262",
+      "category": "inner_dialogue_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج صبح کے اوقات میں، میری اندرونی آواز میرے ساتھ سخت رہی ہے۔"
+    },
+    {
+      "id": "MHT-263",
+      "category": "inner_dialogue_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "ابھی اس وقت، میں خود کی حوصلہ افزائی کر سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-264",
+      "category": "inner_dialogue_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جاگنے کے بعد سے، میں نے معمول سے زیادہ خود پر تنقید کی ہے۔"
+    },
+    {
+      "id": "MHT-265",
+      "category": "inner_dialogue_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے کاموں کے دوران، میری اندرونی گفتگو نسبتاً مہربان رہی ہے۔"
+    },
+    {
+      "id": "MHT-266",
+      "category": "inner_dialogue_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کا دن گزارتے ہوئے، میری اندرونی آواز میرے ساتھ سخت رہی ہے۔"
+    },
+    {
+      "id": "MHT-267",
+      "category": "inner_dialogue_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جیسے جیسے آج کا دن گزرا، میں خود کی حوصلہ افزائی کر سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-268",
+      "category": "inner_dialogue_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "پچھلے چند گھنٹوں میں، میں نے معمول سے زیادہ خود پر تنقید کی ہے۔"
+    },
+    {
+      "id": "MHT-269",
+      "category": "inner_dialogue_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اس مرحلے پر، میری اندرونی گفتگو نسبتاً مہربان رہی ہے۔"
+    },
+    {
+      "id": "MHT-270",
+      "category": "inner_dialogue_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے دوران آگے بڑھتے ہوئے، میری اندرونی آواز میرے ساتھ سخت رہی ہے۔"
+    },
+    {
+      "id": "MHT-271",
+      "category": "inner_dialogue_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے تقاضوں کا سامنا کرتے ہوئے، میں خود کی حوصلہ افزائی کر سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-272",
+      "category": "inner_dialogue_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے ایک پرسکون لمحے میں، میں نے معمول سے زیادہ خود پر تنقید کی ہے۔"
+    },
+    {
+      "id": "MHT-273",
+      "category": "inner_dialogue_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب آج مشکل محسوس ہوا، میری اندرونی گفتگو نسبتاً مہربان رہی ہے۔"
+    },
+    {
+      "id": "MHT-274",
+      "category": "inner_dialogue_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج دوسروں کے ساتھ میل جول کے دوران، میری اندرونی آواز میرے ساتھ سخت رہی ہے۔"
+    },
+    {
+      "id": "MHT-275",
+      "category": "inner_dialogue_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے آج خود سے رابطہ کیا، میں خود کی حوصلہ افزائی کر سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-276",
+      "category": "inner_dialogue_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب آج کچھ غیر متوقع ہوا، میں نے معمول سے زیادہ خود پر تنقید کی ہے۔"
+    },
+    {
+      "id": "MHT-277",
+      "category": "inner_dialogue_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج آرام کرنے کی کوشش کرتے ہوئے، میری اندرونی گفتگو نسبتاً مہربان رہی ہے۔"
+    },
+    {
+      "id": "MHT-278",
+      "category": "inner_dialogue_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جیسے جیسے دن آگے بڑھا، میری اندرونی آواز میرے ساتھ سخت رہی ہے۔"
+    },
+    {
+      "id": "MHT-279",
+      "category": "inner_dialogue_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے رک کر آج کے بارے میں سوچا، میں خود کی حوصلہ افزائی کر سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-280",
+      "category": "inner_dialogue_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کو دیکھتے ہوئے، میں نے معمول سے زیادہ خود پر تنقید کی ہے۔"
+    },
+    {
+      "id": "MHT-281",
+      "category": "gratitude_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج تک، میں نے کم از کم ایک اچھی چیز محسوس کی ہے۔"
+    },
+    {
+      "id": "MHT-282",
+      "category": "gratitude_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج صبح کے اوقات میں، مجھے کوئی مثبت چیز محسوس کرنا مشکل لگا ہے۔"
+    },
+    {
+      "id": "MHT-283",
+      "category": "gratitude_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "ابھی اس وقت، مجھے حقیقی شکرگزاری کا احساس ہوا۔"
+    },
+    {
+      "id": "MHT-284",
+      "category": "gratitude_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جاگنے کے بعد سے، کوئی روشن لمحہ محسوس نہیں ہوا۔"
+    },
+    {
+      "id": "MHT-285",
+      "category": "gratitude_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے کاموں کے دوران، میں نے کم از کم ایک اچھی چیز محسوس کی ہے۔"
+    },
+    {
+      "id": "MHT-286",
+      "category": "gratitude_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کا دن گزارتے ہوئے، مجھے کوئی مثبت چیز محسوس کرنا مشکل لگا ہے۔"
+    },
+    {
+      "id": "MHT-287",
+      "category": "gratitude_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جیسے جیسے آج کا دن گزرا، مجھے حقیقی شکرگزاری کا احساس ہوا۔"
+    },
+    {
+      "id": "MHT-288",
+      "category": "gratitude_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "پچھلے چند گھنٹوں میں، کوئی روشن لمحہ محسوس نہیں ہوا۔"
+    },
+    {
+      "id": "MHT-289",
+      "category": "gratitude_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اس مرحلے پر، میں نے کم از کم ایک اچھی چیز محسوس کی ہے۔"
+    },
+    {
+      "id": "MHT-290",
+      "category": "gratitude_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے دوران آگے بڑھتے ہوئے، مجھے کوئی مثبت چیز محسوس کرنا مشکل لگا ہے۔"
+    },
+    {
+      "id": "MHT-291",
+      "category": "gratitude_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے تقاضوں کا سامنا کرتے ہوئے، مجھے حقیقی شکرگزاری کا احساس ہوا۔"
+    },
+    {
+      "id": "MHT-292",
+      "category": "gratitude_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے ایک پرسکون لمحے میں، کوئی روشن لمحہ محسوس نہیں ہوا۔"
+    },
+    {
+      "id": "MHT-293",
+      "category": "gratitude_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب آج مشکل محسوس ہوا، میں نے کم از کم ایک اچھی چیز محسوس کی ہے۔"
+    },
+    {
+      "id": "MHT-294",
+      "category": "gratitude_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج دوسروں کے ساتھ میل جول کے دوران، مجھے کوئی مثبت چیز محسوس کرنا مشکل لگا ہے۔"
+    },
+    {
+      "id": "MHT-295",
+      "category": "gratitude_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے آج خود سے رابطہ کیا، مجھے حقیقی شکرگزاری کا احساس ہوا۔"
+    },
+    {
+      "id": "MHT-296",
+      "category": "gratitude_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب آج کچھ غیر متوقع ہوا، کوئی روشن لمحہ محسوس نہیں ہوا۔"
+    },
+    {
+      "id": "MHT-297",
+      "category": "gratitude_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج آرام کرنے کی کوشش کرتے ہوئے، میں نے کم از کم ایک اچھی چیز محسوس کی ہے۔"
+    },
+    {
+      "id": "MHT-298",
+      "category": "gratitude_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جیسے جیسے دن آگے بڑھا، مجھے کوئی مثبت چیز محسوس کرنا مشکل لگا ہے۔"
+    },
+    {
+      "id": "MHT-299",
+      "category": "gratitude_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے رک کر آج کے بارے میں سوچا، مجھے حقیقی شکرگزاری کا احساس ہوا۔"
+    },
+    {
+      "id": "MHT-300",
+      "category": "gratitude_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کو دیکھتے ہوئے، کوئی روشن لمحہ محسوس نہیں ہوا۔"
+    },
+    {
+      "id": "MHT-301",
+      "category": "overwhelm_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج تک، جب چیزیں زیادہ محسوس ہوئیں تو میرے پاس مقابلہ کرنے کا طریقہ تھا۔"
+    },
+    {
+      "id": "MHT-302",
+      "category": "overwhelm_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج صبح کے اوقات میں، ہر چیز حد سے زیادہ محسوس ہوئی ہے۔"
+    },
+    {
+      "id": "MHT-303",
+      "category": "overwhelm_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "ابھی اس وقت، میں مکمل طور پر مغلوب ہونے سے بچ سکا/سکی۔"
+    },
+    {
+      "id": "MHT-304",
+      "category": "overwhelm_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جاگنے کے بعد سے، دباؤ سے نمٹنا مجھے سمجھ نہیں آیا۔"
+    },
+    {
+      "id": "MHT-305",
+      "category": "overwhelm_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے کاموں کے دوران، جب چیزیں زیادہ محسوس ہوئیں تو میرے پاس مقابلہ کرنے کا طریقہ تھا۔"
+    },
+    {
+      "id": "MHT-306",
+      "category": "overwhelm_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کا دن گزارتے ہوئے، ہر چیز حد سے زیادہ محسوس ہوئی ہے۔"
+    },
+    {
+      "id": "MHT-307",
+      "category": "overwhelm_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جیسے جیسے آج کا دن گزرا، میں مکمل طور پر مغلوب ہونے سے بچ سکا/سکی۔"
+    },
+    {
+      "id": "MHT-308",
+      "category": "overwhelm_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "پچھلے چند گھنٹوں میں، دباؤ سے نمٹنا مجھے سمجھ نہیں آیا۔"
+    },
+    {
+      "id": "MHT-309",
+      "category": "overwhelm_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اس مرحلے پر، جب چیزیں زیادہ محسوس ہوئیں تو میرے پاس مقابلہ کرنے کا طریقہ تھا۔"
+    },
+    {
+      "id": "MHT-310",
+      "category": "overwhelm_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے دوران آگے بڑھتے ہوئے، ہر چیز حد سے زیادہ محسوس ہوئی ہے۔"
+    },
+    {
+      "id": "MHT-311",
+      "category": "overwhelm_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے تقاضوں کا سامنا کرتے ہوئے، میں مکمل طور پر مغلوب ہونے سے بچ سکا/سکی۔"
+    },
+    {
+      "id": "MHT-312",
+      "category": "overwhelm_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے ایک پرسکون لمحے میں، دباؤ سے نمٹنا مجھے سمجھ نہیں آیا۔"
+    },
+    {
+      "id": "MHT-313",
+      "category": "overwhelm_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب آج مشکل محسوس ہوا، جب چیزیں زیادہ محسوس ہوئیں تو میرے پاس مقابلہ کرنے کا طریقہ تھا۔"
+    },
+    {
+      "id": "MHT-314",
+      "category": "overwhelm_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج دوسروں کے ساتھ میل جول کے دوران، ہر چیز حد سے زیادہ محسوس ہوئی ہے۔"
+    },
+    {
+      "id": "MHT-315",
+      "category": "overwhelm_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے آج خود سے رابطہ کیا، میں مکمل طور پر مغلوب ہونے سے بچ سکا/سکی۔"
+    },
+    {
+      "id": "MHT-316",
+      "category": "overwhelm_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب آج کچھ غیر متوقع ہوا، دباؤ سے نمٹنا مجھے سمجھ نہیں آیا۔"
+    },
+    {
+      "id": "MHT-317",
+      "category": "overwhelm_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج آرام کرنے کی کوشش کرتے ہوئے، جب چیزیں زیادہ محسوس ہوئیں تو میرے پاس مقابلہ کرنے کا طریقہ تھا۔"
+    },
+    {
+      "id": "MHT-318",
+      "category": "overwhelm_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جیسے جیسے دن آگے بڑھا، ہر چیز حد سے زیادہ محسوس ہوئی ہے۔"
+    },
+    {
+      "id": "MHT-319",
+      "category": "overwhelm_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے رک کر آج کے بارے میں سوچا، میں مکمل طور پر مغلوب ہونے سے بچ سکا/سکی۔"
+    },
+    {
+      "id": "MHT-320",
+      "category": "overwhelm_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کو دیکھتے ہوئے، دباؤ سے نمٹنا مجھے سمجھ نہیں آیا۔"
+    },
+    {
+      "id": "MHT-321",
+      "category": "digital_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج تک، فون یا اسکرین کا استعمال مناسب حد میں رہا ہے۔"
+    },
+    {
+      "id": "MHT-322",
+      "category": "digital_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج صبح کے اوقات میں، اسکرول کرنے سے مجھے بہتری کے بجائے مزید خرابی محسوس ہوئی ہے۔"
+    },
+    {
+      "id": "MHT-323",
+      "category": "digital_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "ابھی اس وقت، میں پریشان کن مواد سے دور ہو سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-324",
+      "category": "digital_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جاگنے کے بعد سے، میں فون بار بار چیک کرتا/کرتی رہا/رہی حالانکہ اس سے فائدہ نہیں ہو رہا تھا۔"
+    },
+    {
+      "id": "MHT-325",
+      "category": "digital_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے کاموں کے دوران، فون یا اسکرین کا استعمال مناسب حد میں رہا ہے۔"
+    },
+    {
+      "id": "MHT-326",
+      "category": "digital_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کا دن گزارتے ہوئے، اسکرول کرنے سے مجھے بہتری کے بجائے مزید خرابی محسوس ہوئی ہے۔"
+    },
+    {
+      "id": "MHT-327",
+      "category": "digital_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جیسے جیسے آج کا دن گزرا، میں پریشان کن مواد سے دور ہو سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-328",
+      "category": "digital_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "پچھلے چند گھنٹوں میں، میں فون بار بار چیک کرتا/کرتی رہا/رہی حالانکہ اس سے فائدہ نہیں ہو رہا تھا۔"
+    },
+    {
+      "id": "MHT-329",
+      "category": "digital_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اس مرحلے پر، فون یا اسکرین کا استعمال مناسب حد میں رہا ہے۔"
+    },
+    {
+      "id": "MHT-330",
+      "category": "digital_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے دوران آگے بڑھتے ہوئے، اسکرول کرنے سے مجھے بہتری کے بجائے مزید خرابی محسوس ہوئی ہے۔"
+    },
+    {
+      "id": "MHT-331",
+      "category": "digital_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے تقاضوں کا سامنا کرتے ہوئے، میں پریشان کن مواد سے دور ہو سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-332",
+      "category": "digital_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے ایک پرسکون لمحے میں، میں فون بار بار چیک کرتا/کرتی رہا/رہی حالانکہ اس سے فائدہ نہیں ہو رہا تھا۔"
+    },
+    {
+      "id": "MHT-333",
+      "category": "digital_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب آج مشکل محسوس ہوا، فون یا اسکرین کا استعمال مناسب حد میں رہا ہے۔"
+    },
+    {
+      "id": "MHT-334",
+      "category": "digital_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج دوسروں کے ساتھ میل جول کے دوران، اسکرول کرنے سے مجھے بہتری کے بجائے مزید خرابی محسوس ہوئی ہے۔"
+    },
+    {
+      "id": "MHT-335",
+      "category": "digital_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے آج خود سے رابطہ کیا، میں پریشان کن مواد سے دور ہو سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-336",
+      "category": "digital_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب آج کچھ غیر متوقع ہوا، میں فون بار بار چیک کرتا/کرتی رہا/رہی حالانکہ اس سے فائدہ نہیں ہو رہا تھا۔"
+    },
+    {
+      "id": "MHT-337",
+      "category": "digital_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج آرام کرنے کی کوشش کرتے ہوئے، فون یا اسکرین کا استعمال مناسب حد میں رہا ہے۔"
+    },
+    {
+      "id": "MHT-338",
+      "category": "digital_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جیسے جیسے دن آگے بڑھا، اسکرول کرنے سے مجھے بہتری کے بجائے مزید خرابی محسوس ہوئی ہے۔"
+    },
+    {
+      "id": "MHT-339",
+      "category": "digital_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے رک کر آج کے بارے میں سوچا، میں پریشان کن مواد سے دور ہو سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-340",
+      "category": "digital_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کو دیکھتے ہوئے، میں فون بار بار چیک کرتا/کرتی رہا/رہی حالانکہ اس سے فائدہ نہیں ہو رہا تھا۔"
+    },
+    {
+      "id": "MHT-341",
+      "category": "purpose_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج تک، مجھے کم از کم تھوڑا سا مقصد محسوس ہوا ہے۔"
+    },
+    {
+      "id": "MHT-342",
+      "category": "purpose_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج صبح کے اوقات میں، معاملات بے مقصد یا بے سمت محسوس ہوئے ہیں۔"
+    },
+    {
+      "id": "MHT-343",
+      "category": "purpose_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "ابھی اس وقت، میں نے جو کچھ کیا وہ کرنے کے قابل محسوس ہوا۔"
+    },
+    {
+      "id": "MHT-344",
+      "category": "purpose_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جاگنے کے بعد سے، اپنے کاموں میں معنی تلاش کرنا مشکل لگا ہے۔"
+    },
+    {
+      "id": "MHT-345",
+      "category": "purpose_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے کاموں کے دوران، مجھے کم از کم تھوڑا سا مقصد محسوس ہوا ہے۔"
+    },
+    {
+      "id": "MHT-346",
+      "category": "purpose_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کا دن گزارتے ہوئے، معاملات بے مقصد یا بے سمت محسوس ہوئے ہیں۔"
+    },
+    {
+      "id": "MHT-347",
+      "category": "purpose_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جیسے جیسے آج کا دن گزرا، میں نے جو کچھ کیا وہ کرنے کے قابل محسوس ہوا۔"
+    },
+    {
+      "id": "MHT-348",
+      "category": "purpose_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "پچھلے چند گھنٹوں میں، اپنے کاموں میں معنی تلاش کرنا مشکل لگا ہے۔"
+    },
+    {
+      "id": "MHT-349",
+      "category": "purpose_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اس مرحلے پر، مجھے کم از کم تھوڑا سا مقصد محسوس ہوا ہے۔"
+    },
+    {
+      "id": "MHT-350",
+      "category": "purpose_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے دوران آگے بڑھتے ہوئے، معاملات بے مقصد یا بے سمت محسوس ہوئے ہیں۔"
+    },
+    {
+      "id": "MHT-351",
+      "category": "purpose_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے تقاضوں کا سامنا کرتے ہوئے، میں نے جو کچھ کیا وہ کرنے کے قابل محسوس ہوا۔"
+    },
+    {
+      "id": "MHT-352",
+      "category": "purpose_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے ایک پرسکون لمحے میں، اپنے کاموں میں معنی تلاش کرنا مشکل لگا ہے۔"
+    },
+    {
+      "id": "MHT-353",
+      "category": "purpose_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب آج مشکل محسوس ہوا، مجھے کم از کم تھوڑا سا مقصد محسوس ہوا ہے۔"
+    },
+    {
+      "id": "MHT-354",
+      "category": "purpose_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج دوسروں کے ساتھ میل جول کے دوران، معاملات بے مقصد یا بے سمت محسوس ہوئے ہیں۔"
+    },
+    {
+      "id": "MHT-355",
+      "category": "purpose_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے آج خود سے رابطہ کیا، میں نے جو کچھ کیا وہ کرنے کے قابل محسوس ہوا۔"
+    },
+    {
+      "id": "MHT-356",
+      "category": "purpose_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب آج کچھ غیر متوقع ہوا، اپنے کاموں میں معنی تلاش کرنا مشکل لگا ہے۔"
+    },
+    {
+      "id": "MHT-357",
+      "category": "purpose_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج آرام کرنے کی کوشش کرتے ہوئے، مجھے کم از کم تھوڑا سا مقصد محسوس ہوا ہے۔"
+    },
+    {
+      "id": "MHT-358",
+      "category": "purpose_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جیسے جیسے دن آگے بڑھا، معاملات بے مقصد یا بے سمت محسوس ہوئے ہیں۔"
+    },
+    {
+      "id": "MHT-359",
+      "category": "purpose_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے رک کر آج کے بارے میں سوچا، میں نے جو کچھ کیا وہ کرنے کے قابل محسوس ہوا۔"
+    },
+    {
+      "id": "MHT-360",
+      "category": "purpose_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کو دیکھتے ہوئے، اپنے کاموں میں معنی تلاش کرنا مشکل لگا ہے۔"
+    },
+    {
+      "id": "MHT-361",
+      "category": "rest_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج تک، مجھے کم از کم تھوڑا سا حقیقی آرام ملا ہے۔"
+    },
+    {
+      "id": "MHT-362",
+      "category": "rest_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج صبح کے اوقات میں، مجھے حقیقی آرام کا کوئی موقع نہیں ملا۔"
+    },
+    {
+      "id": "MHT-363",
+      "category": "rest_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "ابھی اس وقت، میرے جسم کو کچھ حد تک آرام کرنے کا موقع ملا ہے۔"
+    },
+    {
+      "id": "MHT-364",
+      "category": "rest_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جاگنے کے بعد سے، مختصر وقفے بھی بے سکون محسوس ہوئے ہیں۔"
+    },
+    {
+      "id": "MHT-365",
+      "category": "rest_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے کاموں کے دوران، مجھے کم از کم تھوڑا سا حقیقی آرام ملا ہے۔"
+    },
+    {
+      "id": "MHT-366",
+      "category": "rest_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کا دن گزارتے ہوئے، مجھے حقیقی آرام کا کوئی موقع نہیں ملا۔"
+    },
+    {
+      "id": "MHT-367",
+      "category": "rest_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جیسے جیسے آج کا دن گزرا، میرے جسم کو کچھ حد تک آرام کرنے کا موقع ملا ہے۔"
+    },
+    {
+      "id": "MHT-368",
+      "category": "rest_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "پچھلے چند گھنٹوں میں، مختصر وقفے بھی بے سکون محسوس ہوئے ہیں۔"
+    },
+    {
+      "id": "MHT-369",
+      "category": "rest_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اس مرحلے پر، مجھے کم از کم تھوڑا سا حقیقی آرام ملا ہے۔"
+    },
+    {
+      "id": "MHT-370",
+      "category": "rest_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے دوران آگے بڑھتے ہوئے، مجھے حقیقی آرام کا کوئی موقع نہیں ملا۔"
+    },
+    {
+      "id": "MHT-371",
+      "category": "rest_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے تقاضوں کا سامنا کرتے ہوئے، میرے جسم کو کچھ حد تک آرام کرنے کا موقع ملا ہے۔"
+    },
+    {
+      "id": "MHT-372",
+      "category": "rest_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے ایک پرسکون لمحے میں، مختصر وقفے بھی بے سکون محسوس ہوئے ہیں۔"
+    },
+    {
+      "id": "MHT-373",
+      "category": "rest_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب آج مشکل محسوس ہوا، مجھے کم از کم تھوڑا سا حقیقی آرام ملا ہے۔"
+    },
+    {
+      "id": "MHT-374",
+      "category": "rest_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج دوسروں کے ساتھ میل جول کے دوران، مجھے حقیقی آرام کا کوئی موقع نہیں ملا۔"
+    },
+    {
+      "id": "MHT-375",
+      "category": "rest_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے آج خود سے رابطہ کیا، میرے جسم کو کچھ حد تک آرام کرنے کا موقع ملا ہے۔"
+    },
+    {
+      "id": "MHT-376",
+      "category": "rest_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب آج کچھ غیر متوقع ہوا، مختصر وقفے بھی بے سکون محسوس ہوئے ہیں۔"
+    },
+    {
+      "id": "MHT-377",
+      "category": "rest_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج آرام کرنے کی کوشش کرتے ہوئے، مجھے کم از کم تھوڑا سا حقیقی آرام ملا ہے۔"
+    },
+    {
+      "id": "MHT-378",
+      "category": "rest_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جیسے جیسے دن آگے بڑھا، مجھے حقیقی آرام کا کوئی موقع نہیں ملا۔"
+    },
+    {
+      "id": "MHT-379",
+      "category": "rest_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے رک کر آج کے بارے میں سوچا، میرے جسم کو کچھ حد تک آرام کرنے کا موقع ملا ہے۔"
+    },
+    {
+      "id": "MHT-380",
+      "category": "rest_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کو دیکھتے ہوئے، مختصر وقفے بھی بے سکون محسوس ہوئے ہیں۔"
+    },
+    {
+      "id": "MHT-381",
+      "category": "hope_tomorrow",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج تک، میں تصور کر سکتا/سکتی ہوں کہ کل کم از کم تھوڑا بہتر ہو سکتا ہے۔"
+    },
+    {
+      "id": "MHT-382",
+      "category": "hope_tomorrow",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج صبح کے اوقات میں، کل کے بارے میں سوچنا مایوس کن محسوس ہوا ہے۔"
+    },
+    {
+      "id": "MHT-383",
+      "category": "hope_tomorrow",
+      "reverse": false,
+      "urgent": false,
+      "text": "ابھی اس وقت، کل کے بارے میں سوچنا خوفناک محسوس نہیں ہوتا۔"
+    },
+    {
+      "id": "MHT-384",
+      "category": "hope_tomorrow",
+      "reverse": true,
+      "urgent": false,
+      "text": "جاگنے کے بعد سے، میں تصور نہیں کر سکتا/سکتی کہ کل مختلف ہوگا۔"
+    },
+    {
+      "id": "MHT-385",
+      "category": "hope_tomorrow",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے کاموں کے دوران، میں تصور کر سکتا/سکتی ہوں کہ کل کم از کم تھوڑا بہتر ہو سکتا ہے۔"
+    },
+    {
+      "id": "MHT-386",
+      "category": "hope_tomorrow",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کا دن گزارتے ہوئے، کل کے بارے میں سوچنا مایوس کن محسوس ہوا ہے۔"
+    },
+    {
+      "id": "MHT-387",
+      "category": "hope_tomorrow",
+      "reverse": false,
+      "urgent": false,
+      "text": "جیسے جیسے آج کا دن گزرا، کل کے بارے میں سوچنا خوفناک محسوس نہیں ہوتا۔"
+    },
+    {
+      "id": "MHT-388",
+      "category": "hope_tomorrow",
+      "reverse": true,
+      "urgent": false,
+      "text": "پچھلے چند گھنٹوں میں، میں تصور نہیں کر سکتا/سکتی کہ کل مختلف ہوگا۔"
+    },
+    {
+      "id": "MHT-389",
+      "category": "hope_tomorrow",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اس مرحلے پر، میں تصور کر سکتا/سکتی ہوں کہ کل کم از کم تھوڑا بہتر ہو سکتا ہے۔"
+    },
+    {
+      "id": "MHT-390",
+      "category": "hope_tomorrow",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے دوران آگے بڑھتے ہوئے، کل کے بارے میں سوچنا مایوس کن محسوس ہوا ہے۔"
+    },
+    {
+      "id": "MHT-391",
+      "category": "hope_tomorrow",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے تقاضوں کا سامنا کرتے ہوئے، کل کے بارے میں سوچنا خوفناک محسوس نہیں ہوتا۔"
+    },
+    {
+      "id": "MHT-392",
+      "category": "hope_tomorrow",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے ایک پرسکون لمحے میں، میں تصور نہیں کر سکتا/سکتی کہ کل مختلف ہوگا۔"
+    },
+    {
+      "id": "MHT-393",
+      "category": "hope_tomorrow",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب آج مشکل محسوس ہوا، میں تصور کر سکتا/سکتی ہوں کہ کل کم از کم تھوڑا بہتر ہو سکتا ہے۔"
+    },
+    {
+      "id": "MHT-394",
+      "category": "hope_tomorrow",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج دوسروں کے ساتھ میل جول کے دوران، کل کے بارے میں سوچنا مایوس کن محسوس ہوا ہے۔"
+    },
+    {
+      "id": "MHT-395",
+      "category": "hope_tomorrow",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے آج خود سے رابطہ کیا، کل کے بارے میں سوچنا خوفناک محسوس نہیں ہوتا۔"
+    },
+    {
+      "id": "MHT-396",
+      "category": "hope_tomorrow",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب آج کچھ غیر متوقع ہوا، میں تصور نہیں کر سکتا/سکتی کہ کل مختلف ہوگا۔"
+    },
+    {
+      "id": "MHT-397",
+      "category": "hope_tomorrow",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج آرام کرنے کی کوشش کرتے ہوئے، میں تصور کر سکتا/سکتی ہوں کہ کل کم از کم تھوڑا بہتر ہو سکتا ہے۔"
+    },
+    {
+      "id": "MHT-398",
+      "category": "hope_tomorrow",
+      "reverse": true,
+      "urgent": false,
+      "text": "جیسے جیسے دن آگے بڑھا، کل کے بارے میں سوچنا مایوس کن محسوس ہوا ہے۔"
+    },
+    {
+      "id": "MHT-399",
+      "category": "hope_tomorrow",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے رک کر آج کے بارے میں سوچا، کل کے بارے میں سوچنا خوفناک محسوس نہیں ہوتا۔"
+    },
+    {
+      "id": "MHT-400",
+      "category": "hope_tomorrow",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کو دیکھتے ہوئے، میں تصور نہیں کر سکتا/سکتی کہ کل مختلف ہوگا۔"
+    },
+    {
+      "id": "MHT-401",
+      "category": "irritability_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج تک، میں نے مایوسی کو دوسروں پر اثر انداز ہوئے بغیر سنبھالا ہے۔"
+    },
+    {
+      "id": "MHT-402",
+      "category": "irritability_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج صبح کے اوقات میں، چھوٹی پریشانیوں نے شدید چڑچڑاپن پیدا کیا ہے۔"
+    },
+    {
+      "id": "MHT-403",
+      "category": "irritability_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "ابھی اس وقت، میں ردعمل سے پہلے رک سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-404",
+      "category": "irritability_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جاگنے کے بعد سے، میرا صبر غیر معمولی طور پر کم رہا ہے۔"
+    },
+    {
+      "id": "MHT-405",
+      "category": "irritability_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے کاموں کے دوران، میں نے مایوسی کو دوسروں پر اثر انداز ہوئے بغیر سنبھالا ہے۔"
+    },
+    {
+      "id": "MHT-406",
+      "category": "irritability_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کا دن گزارتے ہوئے، چھوٹی پریشانیوں نے شدید چڑچڑاپن پیدا کیا ہے۔"
+    },
+    {
+      "id": "MHT-407",
+      "category": "irritability_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جیسے جیسے آج کا دن گزرا، میں ردعمل سے پہلے رک سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-408",
+      "category": "irritability_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "پچھلے چند گھنٹوں میں، میرا صبر غیر معمولی طور پر کم رہا ہے۔"
+    },
+    {
+      "id": "MHT-409",
+      "category": "irritability_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اس مرحلے پر، میں نے مایوسی کو دوسروں پر اثر انداز ہوئے بغیر سنبھالا ہے۔"
+    },
+    {
+      "id": "MHT-410",
+      "category": "irritability_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے دوران آگے بڑھتے ہوئے، چھوٹی پریشانیوں نے شدید چڑچڑاپن پیدا کیا ہے۔"
+    },
+    {
+      "id": "MHT-411",
+      "category": "irritability_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے تقاضوں کا سامنا کرتے ہوئے، میں ردعمل سے پہلے رک سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-412",
+      "category": "irritability_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے ایک پرسکون لمحے میں، میرا صبر غیر معمولی طور پر کم رہا ہے۔"
+    },
+    {
+      "id": "MHT-413",
+      "category": "irritability_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب آج مشکل محسوس ہوا، میں نے مایوسی کو دوسروں پر اثر انداز ہوئے بغیر سنبھالا ہے۔"
+    },
+    {
+      "id": "MHT-414",
+      "category": "irritability_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج دوسروں کے ساتھ میل جول کے دوران، چھوٹی پریشانیوں نے شدید چڑچڑاپن پیدا کیا ہے۔"
+    },
+    {
+      "id": "MHT-415",
+      "category": "irritability_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے آج خود سے رابطہ کیا، میں ردعمل سے پہلے رک سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-416",
+      "category": "irritability_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب آج کچھ غیر متوقع ہوا، میرا صبر غیر معمولی طور پر کم رہا ہے۔"
+    },
+    {
+      "id": "MHT-417",
+      "category": "irritability_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج آرام کرنے کی کوشش کرتے ہوئے، میں نے مایوسی کو دوسروں پر اثر انداز ہوئے بغیر سنبھالا ہے۔"
+    },
+    {
+      "id": "MHT-418",
+      "category": "irritability_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جیسے جیسے دن آگے بڑھا، چھوٹی پریشانیوں نے شدید چڑچڑاپن پیدا کیا ہے۔"
+    },
+    {
+      "id": "MHT-419",
+      "category": "irritability_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے رک کر آج کے بارے میں سوچا، میں ردعمل سے پہلے رک سکا/سکی ہوں۔"
+    },
+    {
+      "id": "MHT-420",
+      "category": "irritability_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کو دیکھتے ہوئے، میرا صبر غیر معمولی طور پر کم رہا ہے۔"
+    },
+    {
+      "id": "MHT-421",
+      "category": "self_care_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج تک، میں نے اپنی نگہداشت کے لیے کم از کم ایک چھوٹا قدم اٹھایا ہے۔"
+    },
+    {
+      "id": "MHT-422",
+      "category": "self_care_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج صبح کے اوقات میں، میں نے بنیادی خود نگہداشت کو نظر انداز کیا ہے۔"
+    },
+    {
+      "id": "MHT-423",
+      "category": "self_care_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "ابھی اس وقت، میں نے صفائی، کھانے یا آرام جیسی بنیادی ضرورت کا خیال رکھا۔"
+    },
+    {
+      "id": "MHT-424",
+      "category": "self_care_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جاگنے کے بعد سے، اپنا خیال رکھنا حد سے زیادہ کوشش طلب محسوس ہوا ہے۔"
+    },
+    {
+      "id": "MHT-425",
+      "category": "self_care_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے کاموں کے دوران، میں نے اپنی نگہداشت کے لیے کم از کم ایک چھوٹا قدم اٹھایا ہے۔"
+    },
+    {
+      "id": "MHT-426",
+      "category": "self_care_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کا دن گزارتے ہوئے، میں نے بنیادی خود نگہداشت کو نظر انداز کیا ہے۔"
+    },
+    {
+      "id": "MHT-427",
+      "category": "self_care_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جیسے جیسے آج کا دن گزرا، میں نے صفائی، کھانے یا آرام جیسی بنیادی ضرورت کا خیال رکھا۔"
+    },
+    {
+      "id": "MHT-428",
+      "category": "self_care_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "پچھلے چند گھنٹوں میں، اپنا خیال رکھنا حد سے زیادہ کوشش طلب محسوس ہوا ہے۔"
+    },
+    {
+      "id": "MHT-429",
+      "category": "self_care_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اس مرحلے پر، میں نے اپنی نگہداشت کے لیے کم از کم ایک چھوٹا قدم اٹھایا ہے۔"
+    },
+    {
+      "id": "MHT-430",
+      "category": "self_care_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے دوران آگے بڑھتے ہوئے، میں نے بنیادی خود نگہداشت کو نظر انداز کیا ہے۔"
+    },
+    {
+      "id": "MHT-431",
+      "category": "self_care_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے تقاضوں کا سامنا کرتے ہوئے، میں نے صفائی، کھانے یا آرام جیسی بنیادی ضرورت کا خیال رکھا۔"
+    },
+    {
+      "id": "MHT-432",
+      "category": "self_care_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے ایک پرسکون لمحے میں، اپنا خیال رکھنا حد سے زیادہ کوشش طلب محسوس ہوا ہے۔"
+    },
+    {
+      "id": "MHT-433",
+      "category": "self_care_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب آج مشکل محسوس ہوا، میں نے اپنی نگہداشت کے لیے کم از کم ایک چھوٹا قدم اٹھایا ہے۔"
+    },
+    {
+      "id": "MHT-434",
+      "category": "self_care_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج دوسروں کے ساتھ میل جول کے دوران، میں نے بنیادی خود نگہداشت کو نظر انداز کیا ہے۔"
+    },
+    {
+      "id": "MHT-435",
+      "category": "self_care_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے آج خود سے رابطہ کیا، میں نے صفائی، کھانے یا آرام جیسی بنیادی ضرورت کا خیال رکھا۔"
+    },
+    {
+      "id": "MHT-436",
+      "category": "self_care_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب آج کچھ غیر متوقع ہوا، اپنا خیال رکھنا حد سے زیادہ کوشش طلب محسوس ہوا ہے۔"
+    },
+    {
+      "id": "MHT-437",
+      "category": "self_care_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج آرام کرنے کی کوشش کرتے ہوئے، میں نے اپنی نگہداشت کے لیے کم از کم ایک چھوٹا قدم اٹھایا ہے۔"
+    },
+    {
+      "id": "MHT-438",
+      "category": "self_care_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جیسے جیسے دن آگے بڑھا، میں نے بنیادی خود نگہداشت کو نظر انداز کیا ہے۔"
+    },
+    {
+      "id": "MHT-439",
+      "category": "self_care_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے رک کر آج کے بارے میں سوچا، میں نے صفائی، کھانے یا آرام جیسی بنیادی ضرورت کا خیال رکھا۔"
+    },
+    {
+      "id": "MHT-440",
+      "category": "self_care_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کو دیکھتے ہوئے، اپنا خیال رکھنا حد سے زیادہ کوشش طلب محسوس ہوا ہے۔"
+    },
+    {
+      "id": "MHT-441",
+      "category": "environment_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج تک، میرے اردگرد کا ماحول نسبتاً پرسکون رہا ہے۔"
+    },
+    {
+      "id": "MHT-442",
+      "category": "environment_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج صبح کے اوقات میں، میرے اردگرد کا ماحول افراتفری بھرا یا تھکا دینے والا محسوس ہوا ہے۔"
+    },
+    {
+      "id": "MHT-443",
+      "category": "environment_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "ابھی اس وقت، مجھے کم از کم ایک ایسی جگہ ملی جو آرام دہ محسوس ہوئی۔"
+    },
+    {
+      "id": "MHT-444",
+      "category": "environment_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جاگنے کے بعد سے، مجھے کوئی ایسی جگہ نہیں ملی جو پرسکون محسوس ہو۔"
+    },
+    {
+      "id": "MHT-445",
+      "category": "environment_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے کاموں کے دوران، میرے اردگرد کا ماحول نسبتاً پرسکون رہا ہے۔"
+    },
+    {
+      "id": "MHT-446",
+      "category": "environment_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کا دن گزارتے ہوئے، میرے اردگرد کا ماحول افراتفری بھرا یا تھکا دینے والا محسوس ہوا ہے۔"
+    },
+    {
+      "id": "MHT-447",
+      "category": "environment_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جیسے جیسے آج کا دن گزرا، مجھے کم از کم ایک ایسی جگہ ملی جو آرام دہ محسوس ہوئی۔"
+    },
+    {
+      "id": "MHT-448",
+      "category": "environment_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "پچھلے چند گھنٹوں میں، مجھے کوئی ایسی جگہ نہیں ملی جو پرسکون محسوس ہو۔"
+    },
+    {
+      "id": "MHT-449",
+      "category": "environment_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اس مرحلے پر، میرے اردگرد کا ماحول نسبتاً پرسکون رہا ہے۔"
+    },
+    {
+      "id": "MHT-450",
+      "category": "environment_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے دوران آگے بڑھتے ہوئے، میرے اردگرد کا ماحول افراتفری بھرا یا تھکا دینے والا محسوس ہوا ہے۔"
+    },
+    {
+      "id": "MHT-451",
+      "category": "environment_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے تقاضوں کا سامنا کرتے ہوئے، مجھے کم از کم ایک ایسی جگہ ملی جو آرام دہ محسوس ہوئی۔"
+    },
+    {
+      "id": "MHT-452",
+      "category": "environment_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے ایک پرسکون لمحے میں، مجھے کوئی ایسی جگہ نہیں ملی جو پرسکون محسوس ہو۔"
+    },
+    {
+      "id": "MHT-453",
+      "category": "environment_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب آج مشکل محسوس ہوا، میرے اردگرد کا ماحول نسبتاً پرسکون رہا ہے۔"
+    },
+    {
+      "id": "MHT-454",
+      "category": "environment_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج دوسروں کے ساتھ میل جول کے دوران، میرے اردگرد کا ماحول افراتفری بھرا یا تھکا دینے والا محسوس ہوا ہے۔"
+    },
+    {
+      "id": "MHT-455",
+      "category": "environment_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے آج خود سے رابطہ کیا، مجھے کم از کم ایک ایسی جگہ ملی جو آرام دہ محسوس ہوئی۔"
+    },
+    {
+      "id": "MHT-456",
+      "category": "environment_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب آج کچھ غیر متوقع ہوا، مجھے کوئی ایسی جگہ نہیں ملی جو پرسکون محسوس ہو۔"
+    },
+    {
+      "id": "MHT-457",
+      "category": "environment_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج آرام کرنے کی کوشش کرتے ہوئے، میرے اردگرد کا ماحول نسبتاً پرسکون رہا ہے۔"
+    },
+    {
+      "id": "MHT-458",
+      "category": "environment_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "جیسے جیسے دن آگے بڑھا، میرے اردگرد کا ماحول افراتفری بھرا یا تھکا دینے والا محسوس ہوا ہے۔"
+    },
+    {
+      "id": "MHT-459",
+      "category": "environment_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے رک کر آج کے بارے میں سوچا، مجھے کم از کم ایک ایسی جگہ ملی جو آرام دہ محسوس ہوئی۔"
+    },
+    {
+      "id": "MHT-460",
+      "category": "environment_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کو دیکھتے ہوئے، مجھے کوئی ایسی جگہ نہیں ملی جو پرسکون محسوس ہو۔"
+    },
+    {
+      "id": "MHT-461",
+      "category": "day_satisfaction",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج تک، معاملات مجموعی طور پر ٹھیک محسوس ہوئے ہیں۔"
+    },
+    {
+      "id": "MHT-462",
+      "category": "day_satisfaction",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج صبح کے اوقات میں، معاملات مجموعی طور پر مشکل محسوس ہوئے ہیں۔"
+    },
+    {
+      "id": "MHT-463",
+      "category": "day_satisfaction",
+      "reverse": false,
+      "urgent": false,
+      "text": "ابھی اس وقت، میں اسے ایک کافی حد تک قابلِ انتظام دن کہوں گا/گی۔"
+    },
+    {
+      "id": "MHT-464",
+      "category": "day_satisfaction",
+      "reverse": true,
+      "urgent": false,
+      "text": "جاگنے کے بعد سے، میں ایسا دن دوبارہ نہیں چاہوں گا/گی۔"
+    },
+    {
+      "id": "MHT-465",
+      "category": "day_satisfaction",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے کاموں کے دوران، معاملات مجموعی طور پر ٹھیک محسوس ہوئے ہیں۔"
+    },
+    {
+      "id": "MHT-466",
+      "category": "day_satisfaction",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کا دن گزارتے ہوئے، معاملات مجموعی طور پر مشکل محسوس ہوئے ہیں۔"
+    },
+    {
+      "id": "MHT-467",
+      "category": "day_satisfaction",
+      "reverse": false,
+      "urgent": false,
+      "text": "جیسے جیسے آج کا دن گزرا، میں اسے ایک کافی حد تک قابلِ انتظام دن کہوں گا/گی۔"
+    },
+    {
+      "id": "MHT-468",
+      "category": "day_satisfaction",
+      "reverse": true,
+      "urgent": false,
+      "text": "پچھلے چند گھنٹوں میں، میں ایسا دن دوبارہ نہیں چاہوں گا/گی۔"
+    },
+    {
+      "id": "MHT-469",
+      "category": "day_satisfaction",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اس مرحلے پر، معاملات مجموعی طور پر ٹھیک محسوس ہوئے ہیں۔"
+    },
+    {
+      "id": "MHT-470",
+      "category": "day_satisfaction",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے دوران آگے بڑھتے ہوئے، معاملات مجموعی طور پر مشکل محسوس ہوئے ہیں۔"
+    },
+    {
+      "id": "MHT-471",
+      "category": "day_satisfaction",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے تقاضوں کا سامنا کرتے ہوئے، میں اسے ایک کافی حد تک قابلِ انتظام دن کہوں گا/گی۔"
+    },
+    {
+      "id": "MHT-472",
+      "category": "day_satisfaction",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کے ایک پرسکون لمحے میں، میں ایسا دن دوبارہ نہیں چاہوں گا/گی۔"
+    },
+    {
+      "id": "MHT-473",
+      "category": "day_satisfaction",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب آج مشکل محسوس ہوا، معاملات مجموعی طور پر ٹھیک محسوس ہوئے ہیں۔"
+    },
+    {
+      "id": "MHT-474",
+      "category": "day_satisfaction",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج دوسروں کے ساتھ میل جول کے دوران، معاملات مجموعی طور پر مشکل محسوس ہوئے ہیں۔"
+    },
+    {
+      "id": "MHT-475",
+      "category": "day_satisfaction",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے آج خود سے رابطہ کیا، میں اسے ایک کافی حد تک قابلِ انتظام دن کہوں گا/گی۔"
+    },
+    {
+      "id": "MHT-476",
+      "category": "day_satisfaction",
+      "reverse": true,
+      "urgent": false,
+      "text": "جب آج کچھ غیر متوقع ہوا، میں ایسا دن دوبارہ نہیں چاہوں گا/گی۔"
+    },
+    {
+      "id": "MHT-477",
+      "category": "day_satisfaction",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج آرام کرنے کی کوشش کرتے ہوئے، معاملات مجموعی طور پر ٹھیک محسوس ہوئے ہیں۔"
+    },
+    {
+      "id": "MHT-478",
+      "category": "day_satisfaction",
+      "reverse": true,
+      "urgent": false,
+      "text": "جیسے جیسے دن آگے بڑھا، معاملات مجموعی طور پر مشکل محسوس ہوئے ہیں۔"
+    },
+    {
+      "id": "MHT-479",
+      "category": "day_satisfaction",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے رک کر آج کے بارے میں سوچا، میں اسے ایک کافی حد تک قابلِ انتظام دن کہوں گا/گی۔"
+    },
+    {
+      "id": "MHT-480",
+      "category": "day_satisfaction",
+      "reverse": true,
+      "urgent": false,
+      "text": "آج کو دیکھتے ہوئے، میں ایسا دن دوبارہ نہیں چاہوں گا/گی۔"
+    },
+    {
+      "id": "MHT-481",
+      "category": "safety_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج تک، میں خود کو نقصان پہنچانے کے کسی خیال پر عمل سے محفوظ محسوس کرتا/کرتی رہا/رہی ہوں۔"
+    },
+    {
+      "id": "MHT-482",
+      "category": "safety_today",
+      "reverse": true,
+      "urgent": true,
+      "text": "آج صبح کے اوقات میں، میرے ذہن میں خود کو نقصان پہنچانے کے خیالات آئے۔"
+    },
+    {
+      "id": "MHT-483",
+      "category": "safety_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "ابھی اس وقت، میں ایسے شخص یا خدمت کو جانتا/جانتی ہوں جس سے فوراً غیر محفوظ محسوس ہونے پر رابطہ کیا جا سکے۔"
+    },
+    {
+      "id": "MHT-484",
+      "category": "safety_today",
+      "reverse": true,
+      "urgent": true,
+      "text": "جاگنے کے بعد سے، مجھے محسوس ہوا کہ شاید میں اپنے ساتھ محفوظ نہ رہوں۔"
+    },
+    {
+      "id": "MHT-485",
+      "category": "safety_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے کاموں کے دوران، میں خود کو نقصان پہنچانے کے کسی خیال پر عمل سے محفوظ محسوس کرتا/کرتی رہا/رہی ہوں۔"
+    },
+    {
+      "id": "MHT-486",
+      "category": "safety_today",
+      "reverse": true,
+      "urgent": true,
+      "text": "آج کا دن گزارتے ہوئے، میرے ذہن میں خود کو نقصان پہنچانے کے خیالات آئے۔"
+    },
+    {
+      "id": "MHT-487",
+      "category": "safety_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جیسے جیسے آج کا دن گزرا، میں ایسے شخص یا خدمت کو جانتا/جانتی ہوں جس سے فوراً غیر محفوظ محسوس ہونے پر رابطہ کیا جا سکے۔"
+    },
+    {
+      "id": "MHT-488",
+      "category": "safety_today",
+      "reverse": true,
+      "urgent": true,
+      "text": "پچھلے چند گھنٹوں میں، مجھے محسوس ہوا کہ شاید میں اپنے ساتھ محفوظ نہ رہوں۔"
+    },
+    {
+      "id": "MHT-489",
+      "category": "safety_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "دن کے اس مرحلے پر، میں خود کو نقصان پہنچانے کے کسی خیال پر عمل سے محفوظ محسوس کرتا/کرتی رہا/رہی ہوں۔"
+    },
+    {
+      "id": "MHT-490",
+      "category": "safety_today",
+      "reverse": true,
+      "urgent": true,
+      "text": "آج کے دوران آگے بڑھتے ہوئے، میرے ذہن میں خود کو نقصان پہنچانے کے خیالات آئے۔"
+    },
+    {
+      "id": "MHT-491",
+      "category": "safety_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج کے تقاضوں کا سامنا کرتے ہوئے، میں ایسے شخص یا خدمت کو جانتا/جانتی ہوں جس سے فوراً غیر محفوظ محسوس ہونے پر رابطہ کیا جا سکے۔"
+    },
+    {
+      "id": "MHT-492",
+      "category": "safety_today",
+      "reverse": true,
+      "urgent": true,
+      "text": "آج کے ایک پرسکون لمحے میں، مجھے محسوس ہوا کہ شاید میں اپنے ساتھ محفوظ نہ رہوں۔"
+    },
+    {
+      "id": "MHT-493",
+      "category": "safety_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب آج مشکل محسوس ہوا، میں خود کو نقصان پہنچانے کے کسی خیال پر عمل سے محفوظ محسوس کرتا/کرتی رہا/رہی ہوں۔"
+    },
+    {
+      "id": "MHT-494",
+      "category": "safety_today",
+      "reverse": true,
+      "urgent": true,
+      "text": "آج دوسروں کے ساتھ میل جول کے دوران، میرے ذہن میں خود کو نقصان پہنچانے کے خیالات آئے۔"
+    },
+    {
+      "id": "MHT-495",
+      "category": "safety_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے آج خود سے رابطہ کیا، میں ایسے شخص یا خدمت کو جانتا/جانتی ہوں جس سے فوراً غیر محفوظ محسوس ہونے پر رابطہ کیا جا سکے۔"
+    },
+    {
+      "id": "MHT-496",
+      "category": "safety_today",
+      "reverse": true,
+      "urgent": true,
+      "text": "جب آج کچھ غیر متوقع ہوا، مجھے محسوس ہوا کہ شاید میں اپنے ساتھ محفوظ نہ رہوں۔"
+    },
+    {
+      "id": "MHT-497",
+      "category": "safety_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "آج آرام کرنے کی کوشش کرتے ہوئے، میں خود کو نقصان پہنچانے کے کسی خیال پر عمل سے محفوظ محسوس کرتا/کرتی رہا/رہی ہوں۔"
+    },
+    {
+      "id": "MHT-498",
+      "category": "safety_today",
+      "reverse": true,
+      "urgent": true,
+      "text": "جیسے جیسے دن آگے بڑھا، میرے ذہن میں خود کو نقصان پہنچانے کے خیالات آئے۔"
+    },
+    {
+      "id": "MHT-499",
+      "category": "safety_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "جب میں نے رک کر آج کے بارے میں سوچا، میں ایسے شخص یا خدمت کو جانتا/جانتی ہوں جس سے فوراً غیر محفوظ محسوس ہونے پر رابطہ کیا جا سکے۔"
+    },
+    {
+      "id": "MHT-500",
+      "category": "safety_today",
+      "reverse": true,
+      "urgent": true,
+      "text": "آج کو دیکھتے ہوئے، مجھے محسوس ہوا کہ شاید میں اپنے ساتھ محفوظ نہ رہوں۔"
+    }
+  ]
+}

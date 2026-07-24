@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+<link rel="icon" type="image/x-icon" href="/assets/favicons/favicon.ico">
+<link rel="manifest" href="/assets/favicons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description" content="Word Tiles: a free Scrabble-style word building game. Draw letter tiles, build the best word you can, and score with real letter values and board multipliers." />
+  <meta property="og:title" content="Word Tiles – Letter Scoring Word Game | LearnPad" />
+  <meta property="og:description" content="Draw letter tiles, build the best word you can, and score with real letter values and board multipliers." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mypkweb.com/mind_games/word-tiles.html" />
+  <meta property="og:site_name" content="LearnPad" />
+  <meta property="og:image" content="https://mypkweb.com/assets/images/ogimage.png" />
+  <link rel="canonical" href="https://mypkweb.com/mind_games/word-tiles.html" />
+<title>Word Tiles – Letter Scoring Word Game | LearnPad</title>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --accent: #15803d;
+      --accent-dark: #14532d;
+      --ink: #1a1f36;
+      --muted: #5a6076;
+      --bg: #f0fdf4;
+      --card: #ffffff;
+      --border: #bbf7d0;
+      --radius: 16px;
+      --tile-bg: #f5e6c8;
+      --tile-border: #c9a86a;
+      --tile-ink: #4a3418;
+    }
+    body { font-family: 'Nunito', sans-serif; background: var(--bg); color: var(--ink); min-height: 100vh; }
+    a { color: var(--accent-dark); }
+
+    .wrap { max-width: 900px; margin: 0 auto; padding: 20px 16px 60px; }
+    .page-toolbar {
+      max-width: 900px; margin: 0 auto; padding: 16px 16px 0;
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    }
+    .back-link { font-weight: 800; font-size: .85rem; text-decoration: none; }
+    .streak-badge {
+      background: #fff; border: 2px solid var(--accent); color: var(--accent-dark);
+      padding: 5px 11px; border-radius: 20px; font-weight: 900; font-size: .82rem; white-space: nowrap;
+    }
+
+    .intro-card {
+      background: var(--card); border: 2px solid var(--border); border-radius: var(--radius);
+      padding: 28px 24px; text-align: center; margin-bottom: 20px;
+    }
+    .intro-card .emoji { font-size: 2.6rem; }
+    .intro-card h1 { font-size: 1.5rem; font-weight: 900; margin: 8px 0 6px; }
+    .intro-card p { color: var(--muted); font-size: .92rem; line-height: 1.6; max-width: 640px; margin: 0 auto; }
+
+    .stage {
+      background: var(--card); border: 2px solid var(--border); border-radius: var(--radius);
+      padding: 24px; margin-bottom: 20px;
+    }
+
+    .board-row { display: flex; gap: 6px; justify-content: center; flex-wrap: wrap; margin-bottom: 22px; }
+    .board-cell {
+      width: 46px; height: 46px; border: 2px solid var(--border); border-radius: 8px;
+      display: flex; align-items: center; justify-content: center; position: relative;
+      background: #fafffb; cursor: default; flex-shrink: 0;
+    }
+    .board-cell.empty-startable { cursor: pointer; }
+    .board-cell.empty-startable:hover { border-color: var(--accent); }
+    .board-cell .bonus-label { font-size: .62rem; font-weight: 900; color: #86efac; }
+    .board-cell.bonus-tw .bonus-label { color: #b91c1c; }
+    .board-cell.bonus-dw .bonus-label { color: #ea580c; }
+    .board-cell.bonus-tl .bonus-label { color: #1d4ed8; }
+    .board-cell.bonus-dl .bonus-label { color: #0891b2; }
+    .board-cell.cursor-here { border-color: var(--accent); border-style: dashed; }
+
+    .tile {
+      width: 42px; height: 42px; border-radius: 6px; background: var(--tile-bg);
+      border: 2px solid var(--tile-border); display: flex; align-items: center; justify-content: center;
+      position: relative; font-weight: 900; font-size: 1.15rem; color: var(--tile-ink); cursor: pointer;
+      box-shadow: 0 2px 3px rgba(0,0,0,.12); user-select: none; flex-shrink: 0;
+      transition: transform .1s ease;
+    }
+    .tile:hover { transform: translateY(-2px); }
+    .tile .tile-value { position: absolute; bottom: 2px; right: 4px; font-size: .55rem; font-weight: 800; }
+    .tile.blank-tile { color: #9a7b3a; }
+
+    .rack-label { font-size: .72rem; font-weight: 900; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); text-align: center; margin-bottom: 8px; }
+    .rack-row { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-bottom: 18px; min-height: 50px; }
+
+    .btn-row { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-bottom: 8px; }
+    .primary-btn {
+      background: var(--accent); color: #fff; border: none; border-radius: 10px;
+      padding: 12px 22px; font-weight: 900; font-size: .92rem; cursor: pointer;
+    }
+    .primary-btn:disabled { opacity: .5; cursor: not-allowed; }
+    .secondary-btn {
+      background: #fff; color: var(--accent-dark); border: 2px solid var(--accent); border-radius: 10px;
+      padding: 10px 18px; font-weight: 900; font-size: .88rem; cursor: pointer;
+    }
+
+    .feedback-banner { min-height: 26px; font-weight: 900; font-size: .95rem; text-align: center; margin-bottom: 4px; }
+    .feedback-banner.correct { color: #15803d; }
+    .feedback-banner.wrong { color: #b91c1c; }
+
+    .letter-picker {
+      display: none; flex-wrap: wrap; gap: 6px; justify-content: center; background: #fffbeb;
+      border: 2px solid #fde68a; border-radius: 12px; padding: 12px; margin-bottom: 16px;
+    }
+    .letter-picker.show { display: flex; }
+    .letter-picker button {
+      width: 30px; height: 30px; border-radius: 6px; border: 2px solid #fde68a; background: #fff;
+      font-weight: 900; font-size: .82rem; cursor: pointer;
+    }
+    .letter-picker button:hover { border-color: #d97706; }
+
+    .stats-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin-bottom: 20px; }
+    .stat-pill {
+      background: var(--card); border: 2px solid var(--border); border-radius: 12px;
+      text-align: center; padding: 10px 6px;
+    }
+    .stat-pill strong { display: block; font-size: 1.15rem; font-weight: 900; color: var(--accent-dark); }
+    .stat-pill span { font-size: .68rem; font-weight: 800; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+
+    .bag-note { text-align: center; font-size: .78rem; color: var(--muted); margin-bottom: 18px; }
+
+    .info-box {
+      background: #f0fdf4; border: 2px solid #bbf7d0; border-radius: 14px;
+      padding: 14px 16px; font-size: .82rem; line-height: 1.6; color: #14532d; margin-bottom: 20px;
+    }
+    .info-box strong { color: #166534; }
+
+    footer.footer { text-align: center; padding: 24px 16px; color: var(--muted); font-size: .78rem; }
+
+    @media (max-width: 520px) {
+      .board-cell { width: 34px; height: 34px; }
+      .tile { width: 34px; height: 34px; font-size: .95rem; }
+    }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="page-toolbar">
+  <a class="back-link" href="index.html">← Mind Games</a>
+  <span id="streakBadge" class="streak-badge">🔥 Day 1</span>
+</div>
+
+<div class="wrap">
+
+  <div class="intro-card">
+    <span class="emoji">🔤</span>
+    <h1>Word Tiles</h1>
+    <p>A Scrabble-style word building game. Click tiles from your rack to spell a word on the board below, then
+      submit. Real letter values, real board multipliers (double/triple letter and word), and a +50 bonus if you
+      use all 7 tiles in one word.</p>
+  </div>
+
+  <div class="stage">
+    <div class="board-row" id="boardRow"></div>
+
+    <div class="rack-label">Your Rack</div>
+    <div class="rack-row" id="rackRow"></div>
+
+    <div class="letter-picker" id="letterPicker"></div>
+
+    <div class="feedback-banner" id="feedbackBanner">&nbsp;</div>
+
+    <div class="btn-row" id="btnRow">
+      <button class="primary-btn" id="submitBtn">Submit Word</button>
+      <button class="secondary-btn" id="clearBtn">Clear</button>
+      <button class="secondary-btn" id="shuffleBtn">🔀 Shuffle Rack</button>
+    </div>
+    <div class="bag-note" id="bagNote">Tiles left in bag: 93</div>
+  </div>
+
+  <div class="stats-row">
+    <div class="stat-pill"><strong id="statScore">0</strong><span>Session Score</span></div>
+    <div class="stat-pill"><strong id="statWords">0</strong><span>Words Played</span></div>
+    <div class="stat-pill"><strong id="statBest">0</strong><span>Best Word Ever</span></div>
+  </div>
+
+  <div class="info-box">
+    <strong>Why this works:</strong> Building the highest-scoring word from a random handful of letters is a classic
+    combinatorial thinking exercise — you're weighing vocabulary against arithmetic, deciding whether a longer word
+    or a well-placed high-value letter wins. Word Tiles uses a curated common-word list rather than a full
+    professional dictionary, so a few obscure-but-valid words may not be recognized yet.
+  </div>
+
+</div>
+
+<footer class="footer">LearnPad · Word Tiles is an original word-building game inspired by classic tile word games.</footer>
+
+<script>
+(function(){
+  var STORAGE_KEY = 'wordTiles_v1';
+
+  /* ── Letter values (standard tile-game distribution) ─── */
+  var LETTER_VALUES = { A:1,B:3,C:3,D:2,E:1,F:4,G:2,H:4,I:1,J:8,K:5,L:1,M:3,N:1,O:1,P:3,Q:10,R:1,S:1,T:1,U:1,V:4,W:4,X:8,Y:4,Z:10 };
+  var BAG_COUNTS = { A:9,B:2,C:2,D:4,E:12,F:2,G:3,H:2,I:9,J:1,K:1,L:4,M:2,N:6,O:8,P:2,Q:1,R:6,S:4,T:6,U:4,V:2,W:2,X:1,Y:2,Z:1,_:2 };
+
+  /* ── Board bonus pattern (fixed, mirrors real board logic) ─ */
+  var BOARD_PATTERN = ['TW','','DL','','DW','','DL','','TW'];
+  var BOARD_SIZE = BOARD_PATTERN.length;
+
+  var BONUS_LABEL = { TW:'TW', DW:'DW', TL:'TL', DL:'DL', '':'' };
+
+  /* ── Word list (curated common English words, 2-8 letters) ─ */
+  var WORD_TEXT =
+    "AA AB AD AE AG AH AI AL AM AN AR AS AT AW AX AY BA BE BI BO BY DE DO EF EH EL EM EN ER ES ET EW EX FA FE GO HA HE HI HM HO ID IF IN IO IS IT JO KA KI KO KY LA LI LO MA ME MI MM MO MU MY NA NE NO NU OB OD OE OF OH OI OK OM ON OP OR OS OW OX OY PA PE PH PI PO QI RE SH SI SO ST TA TE TI TO UH UM UN UP US UT WE WO XI XU YA YE YO ZA " +
+    "THE AND FOR ARE BUT NOT YOU ALL CAN HAD HER WAS ONE OUR OUT DAY GET HAS HIM HIS HOW MAN NEW NOW OLD SEE TWO WAY WHO BOY DID ITS LET PUT SAY SHE TOO USE DOG CAT RUN SUN FUN BIG BAD BAG BAT BED BEE BOX BUS BUY CAR CUP CUT EAR EAT EGG END EYE FAR FAT FEW FIT FLY FOX GOT GUN GUY HAT HOT ICE JOB JOY KEY KID LAW LEG LIE LOT LOW MAD MAP MIX MOM MUD NET NUT OIL PAN PAY PEN PET PIE PIG PIN POT RAT RAW RED RIB RID RIP ROB ROD ROW RUB RUG SAD SAT SET SIT SIX SKY SON TAG TAN TAP TAX TEA TEN TIE TIP TOE TOP TOY VAN WAR WEB WET WIN WON YES YET ZIP ZOO ACE ACT ADD AGE AGO AID AIM AIR ALE ARM ART ASH ASK ATE AWE AXE BAN BAR BAY BID BIN BIT BOB BOG BOW BUD BUG BUM BUN CAB CAP COB COD COG CON COP COW COY CRY CUB CUE DAB DAM DEN DEW DIE DIG DIM DIP DOT DRY DUB DUE DUG DUO DYE EBB EGO ELF ELK EON ERA EWE FAD FAN FAY FED FEE FEN FIB FIG FIN FIR FIX FLU FOE FOG FOR FUR GAB GAG GAL GAP GAS GAY GEL GEM GNU GUM GUT GYM HAG HAM HAY HEM HEN HEY HID HIP HOG HOP HUB HUE HUG HUM HUT ICY INK ION IRE IVY JAB JAM JAR JAW JAY JET JIG JOG JOT JUG JUT KEG KEN KIN KIT LAB LAD LAG LAP LAV LAX LAY LEI LID LIP LIT LOG LOP LUG LUX MAT MAY MEN MET MOB MOD MOP MOW MUG NAB NAG NAP NAY NIB NIL NIP NOD NOR NUN OAK OAR OAT ODD ODE OFF OFT ORB ORE OWE OWL OWN PAD PAL PAT PAW PEA PEG PEP PIT POD POP POX PRO PRY PUB PUG PUN PUP PUS RAG RAM RAN RAP RAY RIG RIM ROT RUE RUM RUT RYE SAP SAW SEA SEW SHY SIN SIP SIR SKI SLY SOB SOD SOP SOW SOY SPA SPY SUE SUM TAB TAR TIC TIN TOD TOT TOW TRY TUB TUG TUX URN VAT VET VEX VIA VIE VOW WAD WAG WAX WED WHY WIG WIT WOE WOK WOO WRY YAK YAM YAP YEN YEP ZAG ZED ZEN ZIG " +
+    "WORD GAME PLAY TIME YEAR WORK LIFE HAND PART BACK OVER ALSO EVEN WEEK GOOD GIRL BOOK ROOM DOOR TALK WALK CALL FIND KEEP MAKE TAKE GIVE COME MOVE LOOK SEEM FEEL LIVE SHOW HELP TURN MEAN EACH JUST LIKE MOST ONLY SUCH THAT THEM THEN THEY THIS WHAT WHEN WERE WILL WITH YOUR ABLE ACID ACRE ACTS ADDS AGED ALSO AMID ARCH AREA ARMY AWAY AXIS BABY BACK BAKE BALD BALL BAND BANK BARE BARK BARN BASE BATH BEAM BEAN BEAR BEAT BEEF BEEN BEER BELL BELT BEND BENT BEST BIKE BILL BIND BIRD BITE BLOW BLUE BOAT BODY BOIL BOLD BOLT BOMB BOND BONE BOOK BOOM BOOT BORE BORN BOSS BOTH BOWL BULK BULB BULL BURN BURY BUSH BUSY CAKE CALF CALL CALM CAMP CARD CARE CART CASE CASH CAST CAVE CELL CHAT CHIP CITY CLAP CLAY CLIP CLUB COAL COAT CODE COIL COIN COLD COMB CONE COOK COOL COPE CORD CORE CORN COST COVE COZY CRAB CROP CROW CUBE CURB CURE CURL CUTE DAMP DARE DARK DATA DATE DAWN DEAD DEAF DEAL DEAN DEAR DEBT DECK DEEP DEER DENY DESK DIAL DICE DIET DIRT DISC DISH DIVE DOCK DOES DOLL DONE DOOM DOSE DOWN DRAG DRAW DREW DRIP DROP DRUG DRUM DUCK DUEL DULL DUMB DUNE DUST DUTY EARN EASE EAST EASY EDGE EDIT ELSE EPIC EVER EVIL EXIT FACE FACT FADE FAIL FAIR FAKE FALL FAME FARM FAST FATE FEAR FEAT FEED FEEL FEET FELL FELT FILE FILL FILM FINE FIRE FIRM FISH FIST FIVE FLAG FLAT FLEE FLEW FLEX FLIP FLOW FOAM FOLD FOLK FOND FONT FOOD FOOL FOOT FORD FORE FORK FORM FORT FOUL FOUR FREE FROG FROM FUEL FULL FUME FUND FURY FUSE GAIN GALE GANG GASP GATE GAVE GAZE GEAR GENE GIFT GIRL GLAD GLOW GLUE GOAL GOAT GOLD GOLF GONE GRAB GRAY GREW GREY GRID GRIM GRIN GRIP GRIT GROW GULF HAIL HAIR HALF HALL HALT HANG HARD HARE HARM HARP HATE HAUL HAWK HAZE HEAD HEAL HEAP HEAR HEAT HEEL HEIR HELD HELL HELM HELP HERB HERD HERE HERO HIDE HIGH HILL HINT HIRE HISS HOLD HOLE HOLY HOME HOOD HOOK HOOP HOPE HORN HOSE HOST HOUR HUGE HULL HUNT HURL HURT HUSH ICON IDEA IDLE INCH INTO IRIS IRON ITEM JADE JAIL JAZZ JOIN JOKE JOLT JUMP JUNK JURY KEEN KEEP KELP KEPT KICK KILL KIND KING KISS KITE KNEE KNEW KNIT KNOB KNOT KNOW LACE LACK LADY LAID LAKE LAMB LAMP LAND LANE LARK LASH LAST LATE LAVA LAWN LAZY LEAD LEAF LEAK LEAN LEAP LEFT LEND LENS LESS LIAR LICE LICK LIFT LIKE LILY LIMB LIME LIMP LINE LINK LION LIST LIVE LOAD LOAF LOAN LOCK LOFT LOGO LONE LONG LOOK LOOM LOOP LOOT LORD LORE LOSE LOSS LOST LOUD LOVE LUCK LUMP LUNG LURE LUSH LUST MADE MAID MAIL MAIN MAKE MALE MALL MANE MARE MARK MASH MASK MASS MAST MATE MAZE MEAL MEAN MEAT MEET MELT MEND MENU MERE MESH MESS MICE MILD MILE MILK MILL MIME MIND MINE MINT MISS MIST MOAN MOAT MOCK MODE MOLD MOLE MONK MOOD MOON MOOR MORE MOSS MOST MOTH MOVE MUCH MUCK MULE MUSE MUST MUTE NAIL NAME NAPE NAVY NEAR NEAT NECK NEED NERD NEST NEWS NEXT NICE NINE NOON NORM NOSE NOTE NOUN NUDE NUMB NUTS OATH OBEY ODOR OKAY ONCE ONLY ONTO OPEN ORAL OVAL OVEN OVER OWES OWLS PACE PACK PAGE PAID PAIL PAIN PAIR PALE PALM PANE PANG PANT PARK PART PASS PAST PATH PAVE PEAK PEAR PEAT PEEK PEEL PEER PIER PIKE PILE PILL PINE PINK PINT PIPE PITY PLAN PLAY PLEA PLOT PLOW PLUG PLUM PLUS POEM POET POKE POLE POLL POND PONY POOL POOR PORE PORK PORT POSE POST POUR PRAY PREY PRIM PROD PROP PUFF PULL PULP PUMP PUNK PURE PURR PUSH QUIT QUIZ RACE RACK RAFT RAGE RAID RAIL RAIN RAKE RAMP RANK RANT RARE RASH RATE RAVE READ REAL REAP REAR REEF REEL RELY RENT REST RICE RICH RIDE RIFT RING RINK RIOT RIPE RISE RISK RITE ROAD ROAM ROAR ROBE ROCK RODE ROLE ROLL ROOF ROOM ROOT ROPE ROSE ROSY ROVE ROWS RUDE RUIN RULE RUNG RUNS RUSH RUST SACK SAFE SAGE SAID SAIL SALE SALT SAME SAND SANE SAVE SCAN SCAR SEAL SEAM SEAT SEED SEEK SEEM SEEN SELF SELL SEND SENT SEWN SHED SHIP SHOE SHOP SHOT SHOW SHUT SICK SIDE SIGH SIGN SILK SILL SING SINK SIRE SITE SIZE SKIN SKIP SLAB SLAM SLAP SLED SLID SLIM SLIP SLOT SLOW SLUG SNAG SNAP SNOW SOAK SOAP SOAR SOCK SODA SOFA SOFT SOIL SOLD SOLE SOME SONG SOON SOOT SORE SORT SOUL SOUP SOUR SPAN SPAR SPAT SPIN SPIT SPOT SPUN SPUR STAB STAR STAY STEM STEP STEW STIR STOP STOW STUB STUD STUN SUCH SUDS SUIT SULK SUNG SUNK SURE SURF SWAM SWAN SWAP SWAY SWIM TACK TACO TAIL TAKE TALE TALK TALL TAME TANK TAPE TART TASK TAXI TEAM TEAR TECH TEEN TELL TEND TENT TERM TEST TEXT THAN THAT THEE THEM THEN THEY THIN THIS THUD THUG THUS TIDE TIDY TILE TILL TILT TIME TINT TINY TIRE TOAD TOIL TOLD TOLL TOMB TONE TOOK TOOL TOOT TORE TORN TOSS TOUR TOWN TOYS TRAM TRAP TRAY TREE TREK TRIM TRIP TROT TRUE TUBE TUCK TUFT TUNA TUNE TURF TURN TUSK TWIG TWIN TYPE UGLY UNDO UNIT UPON URGE USED USER VAIN VALE VARY VASE VAST VEIL VEIN VENT VERB VERY VEST VETO VIAL VIBE VIEW VILE VINE VOID VOTE WADE WAGE WAIL WAKE WALK WALL WAND WANE WANT WARD WARE WARM WARN WARP WART WASH WAVE WAVY WEAK WEAR WEED WELD WELL WENT WEPT WERE WEST WHAT WHEN WHIM WHIP WHIZ WICK WIDE WIFE WILD WILL WIND WINE WING WINK WIPE WIRE WISE WISH WISP WITH WOES WOKE WOLF WOMB WOOD WOOL WORD WORE WORK WORM WORN WRAP YARD YARN YEAR YELL YOLK YOUR ZERO ZEST ZINC ZONE ZOOM " +
+    "ABOUT ABOVE ACTOR ADAPT ADMIT ADOPT ADULT AFTER AGAIN AGENT AGREE AHEAD ALARM ALBUM ALIKE ALIVE ALLOW ALONE ALONG ALTER AMONG AMPLE ANGER ANGLE ANGRY ANKLE APART APPLE APPLY ARENA ARGUE ARISE ARRAY ARROW ASIDE ASSET AUDIO AUDIT AVOID AWAKE AWARD AWARE BADLY BAKER BASIC BEACH BEGAN BEGIN BEING BELOW BENCH BIRTH BLACK BLAME BLANK BLAST BLEND BLESS BLIND BLOCK BLOOD BLOOM BLOWN BOARD BOAST BONUS BOOST BOOTH BOUND BRAIN BRAND BRAVE BREAD BREAK BREED BRIEF BRING BROAD BROKE BROWN BRUSH BUILD BUILT BUYER CABLE CANDY CARGO CARRY CATCH CAUSE CHAIN CHAIR CHALK CHAOS CHARM CHART CHASE CHEAP CHECK CHEEK CHEER CHESS CHEST CHIEF CHILD CHILL CHOSE CHUNK CIVIL CLAIM CLASS CLEAN CLEAR CLICK CLIFF CLIMB CLOCK CLOSE CLOTH CLOUD CLOWN COACH COAST COLOR COUCH COUGH COULD COUNT COURT COVER CRACK CRAFT CRASH CRAZY CREAM CRIME CROSS CROWD CROWN CRUDE CRUEL CRUSH CURVE CYCLE DAILY DANCE DEATH DEBUT DECAY DELAY DEPTH DIARY DIRTY DOING DONOR DOUBT DOUGH DOZEN DRAFT DRAIN DRAMA DRANK DRAWN DREAM DRESS DRIED DRIFT DRILL DRINK DRIVE DROVE DYING EAGER EARLY EARTH EIGHT ELBOW ELDER ELECT EMPTY ENJOY ENTER ENTRY EQUAL EQUIP ERROR EVENT EVERY EXACT EXIST EXTRA FABLE FAINT FAITH FALSE FANCY FATAL FAULT FAVOR FEAST FENCE FEVER FIBER FIELD FIFTH FIFTY FIGHT FINAL FIRST FIXED FLAME FLASH FLEET FLESH FLOAT FLOOD FLOOR FLOUR FLUID FLYER FOCUS FORCE FOREST FORGET FORMAL FORMER FORTY FOUND FRAME FRANK FRAUD FRESH FRONT FROST FROWN FRUIT FULLY FUNNY GHOST GIANT GIVEN GLASS GLOBE GLORY GLOVE GOING GRACE GRADE GRAIN GRAND GRANT GRAPE GRAPH GRASP GRASS GREAT GREEN GREET GRIEF GRILL GRIND GROSS GROUP GROVE GROWN GUARD GUESS GUEST GUIDE HABIT HAPPY HARSH HASTE HEART HEAVY HEDGE HELLO HENCE HONEY HONOR HORSE HOTEL HOUSE HUMAN HUMOR HURRY IDEAL IMAGE IMPLY INDEX INNER INPUT ISSUE IVORY JOINT JOKER JUDGE JUICE JUMBO KNIFE KNOCK KNOWN LABEL LABOR LARGE LASER LATER LAUGH LAYER LEARN LEASE LEAST LEAVE LEGAL LEMON LEVEL LIGHT LIMIT LINEN LOGIC LOOSE LOWER LOYAL LUCKY LUNAR LUNCH LYING MAGIC MAJOR MAKER MARCH MATCH MAYOR MEDAL MEDIA MELON MERGE MERIT METAL MIGHT MINOR MINUS MIXED MODEL MOIST MONEY MONTH MORAL MOTOR MOUNT MOUSE MOUTH MOVIE MUSIC NAKED NASTY NEEDY NERVE NEVER NEWLY NIGHT NOBLE NOISE NORTH NOVEL NURSE OCCUR OCEAN OFFER OFTEN OPERA ORBIT ORDER OTHER OUGHT OUTER PANEL PANIC PAPER PARTY PATCH PAUSE PEACE PENNY PHASE PHONE PHOTO PIANO PIECE PILOT PITCH PIXEL PLACE PLAIN PLANE PLANT PLATE PLAZA POINT POUND POWER PRESS PRICE PRIDE PRIME PRINT PRIOR PRIZE PROOF PROUD PROVE PULSE PUNCH PUPIL QUEEN QUERY QUEST QUICK QUIET QUITE RADIO RAINY RALLY RANCH RANGE RAPID RATIO REACH REACT READY REALM REBEL REFER RELAX RELY REPLY RIDGE RIGHT RIVAL RIVER ROBOT ROUGH ROUND ROUTE ROYAL RURAL SADLY SALAD SALON SAUCE SCALE SCARE SCARF SCENE SCOPE SCORE SCOUT SENSE SERVE SEVEN SHADE SHAKE SHALL SHAME SHAPE SHARE SHARK SHARP SHEEP SHEET SHELF SHELL SHIFT SHINE SHIRT SHOCK SHOOT SHORE SHORT SHOUT SHOWN SIGHT SILLY SINCE SIXTH SIXTY SKILL SLAVE SLEEP SLICE SLIDE SLOPE SMALL SMART SMELL SMILE SMOKE SNAKE SOLID SOLVE SONIC SORRY SOUND SOUTH SPACE SPARE SPARK SPEAK SPEED SPELL SPEND SPENT SPICE SPINE SPLIT SPOKE SPORT SPRAY STACK STAFF STAGE STAIR STAKE STALE STAMP STAND START STATE STEAK STEAL STEAM STEEL STICK STIFF STILL STOCK STONE STORE STORM STORY STOVE STRAY STRIP STUCK STUDY STUFF STYLE SUGAR SUNNY SUPER SWEAR SWEAT SWEEP SWEET SWIFT SWING SWORD TABLE TAKEN TASTE TAXES TEACH TEARS TENTH THANK THEFT THEIR THEME THERE THICK THIEF THING THINK THIRD THOSE THREE THREW THROW THUMB TIGER TIGHT TIMER TIRED TITLE TODAY TOOTH TOPIC TOTAL TOUCH TOUGH TOWER TOXIC TRACE TRACK TRADE TRAIL TRAIN TRAIT TREAT TREND TRIAL TRIBE TRICK TRIED TRUCK TRULY TRUNK TRUST TRUTH TWICE TWIST UNCLE UNDER UNION UNITE UNTIL UPPER UPSET URBAN USAGE USUAL VAGUE VALID VALUE VAPOR VIDEO VIRUS VISIT VITAL VOCAL VOICE WASTE WATCH WATER WEIGH WEIRD WHALE WHEAT WHEEL WHERE WHICH WHILE WHITE WHOLE WHOSE WOMAN WOMEN WOODY WORLD WORRY WORSE WORST WORTH WOULD WOUND WRIST WRITE WRONG YIELD YOUNG YOUTH " +
+    "PEOPLE COMMON FAMILY MEMBER MOTHER FATHER BEFORE AROUND ANIMAL ANCIENT ANOTHER ANSWER APPEAR ARRIVE ARTIST ATTACK ATTEND AUTUMN BALANCE BATTLE BEAUTY BECAME BECOME BEHIND BELIEF BELONG BENEFIT BETTER BEYOND BOTTLE BOTTOM BRIDGE BRIGHT BUTTON CAMERA CAREER CASTLE CENTER CHANCE CHANGE CHOICE CHOOSE CIRCLE CLASSIC CLIMATE COLUMN COMBAT COMFORT COMMAND COMMENT COMPANY COMPARE COMPETE COMPLEX CONCERN CONCERT CONFIRM CONNECT CONSIST CONTACT CONTAIN CONTENT CONTEST CONTROL CONVERT COOKIE COOLER COPPER CORNER COSTUME COTTON COUNTY COUPLE COURAGE COVERED CREATE CREATURE CREDIT CRICKET CULTURE CURIOUS CURRENT CUSTOM DAMAGE DANGER DECIDE DECLARE DEGREE DELIVER DEMAND DEPUTY DESERT DESIGN DESIRE DESPITE DESTROY DETAIL DEVICE DIAMOND DIGITAL DINNER DIRECT DISCUSS DISPLAY DISTANT DIVIDE DOCTOR DOLLAR DOMAIN DOUBLE DRAGON DRIVER DURING EASILY EASTERN EDITOR EFFECT EFFORT EITHER ELEVEN EMERGE EMPIRE ENABLE ENERGY ENGAGE ENGINE ENOUGH ENSURE ENTIRE ESCAPE ESTATE EXCEED EXCESS EXCITE EXPAND EXPECT EXPERT EXPORT EXTEND EXTENT FABRIC FACTOR FAMOUS FASTEN FELLOW FEMALE FICTION FIGURE FILTER FINGER FINISH FLIGHT FLOWER FOLLOW FORCE FOREIGN FOREST FORGET FORMAL FORMER FORTUNE FOSSIL FREEZE FRIEND FUTURE GADGET GALAXY GARDEN GATHER GENDER GENIUS GENTLE GESTURE GLOBAL GOLDEN GOSSIP GROUND GROWTH GUITAR HAMMER HANDLE HAPPEN HARBOR HARDLY HAZARD HEALTH HEAVEN HEIGHT HIDDEN HISTORY HOLIDAY HONEST HORROR HUNGER HUNTER IMPACT IMPORT INCOME INDEED INFORM INJURY INSECT INSIDE INSIST INSTEAD INTENSE INTENT INVENT INVITE ISLAND ITSELF JACKET JOURNEY JUNIOR JUSTICE KETTLE KIDNEY KINGDOM KITCHEN LADDER LARGELY LATTER LAUNCH LAWYER LEADER LEAGUE LEATHER LECTURE LEGACY LEISURE LENGTH LESSON LETTER LIBRARY LICENSE LIMITED LIQUID LISTEN LITTLE LIVING LONELY LUXURY MACHINE MAGNET MAINLY MANAGE MANNER MANUAL MARGIN MARINE MARKET MASTER MATTER MAXIMUM MEADOW MEANING MEASURE MEDIUM MEMORY MENTAL MENTION METHOD MIDDLE MIGRATE MILLION MINERAL MINUTE MIRROR MISSING MISSION MISTAKE MIXTURE MODERN MODULE MOMENT MONKEY MONSTER MONTHLY MORNING MOTION MOUNTAIN MOVIES MURDER MUSCLE MUSEUM MUTUAL MYSELF MYSTERY NARROW NATION NATIVE NATURE NEARBY NEARLY NEEDLE NEITHER NERVOUS NEUTRAL NORMAL NOTICE NOTION NOWHERE NUMBER NURSERY OBJECT OBTAIN OBVIOUS OCCASION OFFICER OFFICIAL ONWARD OPTION ORANGE ORIGIN OUTPUT OUTSIDE OXYGEN PACKAGE PALACE PARENT PARTNER PASSAGE PASSION PATIENT PATTERN PENALTY PENCIL PERFECT PERFORM PERHAPS PERIOD PERMIT PERSON PHRASE PHYSICS PICKLE PICNIC PICTURE PLASTIC PLATFORM PLEASE PLENTY POCKET POLICY POLISH POLITE PORTION POSSESS POSTER POTATO POVERTY PRECISE PREFER PREPARE PRESENT PRETTY PREVENT PRIMARY PRINTER PRISON PRIVATE PROBLEM PROCEED PROCESS PRODUCE PROFILE PROFIT PROGRAM PROJECT PROMISE PROMOTE PROTECT PROTEST PROVIDE PUBLIC PUDDING PUMPKIN PUNISH PURPLE PURPOSE PUZZLE QUALIFY QUALITY QUARTER QUICKLY RABBIT RADIUS RAILWAY RAINBOW RANDOM RATHER REALIZE REASON RECALL RECEIVE RECENT RECIPE RECORD RECOVER REDUCE REFORM REFUSE REGION REGRET REGULAR RELATE RELEASE RELIEF REMAIN REMARK REMIND REMOTE REMOVE RENTAL REPAIR REPEAT REPORT REQUEST REQUIRE RESCUE RESERVE RESIST RESORT RESPECT RESPOND RESTORE RESULT RETAIL RETIRE RETURN REVEAL REVENUE REVIEW REWARD RHYTHM RIBBON RIDDLE ROBUST ROCKET ROUTINE RUBBER SADDLE SAFETY SALARY SAMPLE SATISFY SAVING SCHEME SCHOOL SCREEN SCRIPT SEASON SECOND SECRET SECTOR SECURE SEEKER SEGMENT SELECT SENIOR SEQUEL SERIES SERIOUS SERVANT SERVICE SETTLE SEVERE SHADOW SHALLOW SHELTER SHERIFF SHOULD SHOULDER SIGNAL SILENT SIMPLE SINGLE SISTER SKETCH SLIGHT SMOOTH SOCIAL SOCIETY SOFTEN SOLDIER SOMEHOW SOMEONE SPEAKER SPECIAL SPECIFY SPIRIT SPONSOR SPREAD SPRING SQUARE STADIUM STANDARD STATION STATUS STEADY STOMACH STRAIGHT STRANGE STREAM STREET STRESS STRICT STRIKE STRING STRIVE STRONG STUDENT STUDIO SUBJECT SUCCEED SUCCESS SUDDEN SUFFER SUGGEST SUMMER SUMMIT SUNSET SUPPLY SUPPORT SUPPOSE SUPREME SURFACE SURGERY SURVEY SURVIVE SUSPECT SUSPEND SWALLOW SYMBOL SYSTEM TALENT TARGET TEACHER TECHNICAL TEMPLE TENANT TENDER TENNIS TENSION TERRACE TERRIBLE THEATER THEORY THEREBY THEREFORE THICKEN THIRST THOUGH THOUGHT THOUSAND THREAD THREAT THROUGH TICKET TIMBER TISSUE TOMATO TONGUE TONIGHT TOWARD TRAFFIC TRAGEDY TRAINER TRAVEL TREASURE TRIBUTE TROUBLE TUNNEL TWELVE TYPICAL UNIQUE UNITED UNLESS UNLIKE UPDATE UPWARD URGENT USEFUL USUALLY VACUUM VALLEY VARIETY VEHICLE VENDOR VENTURE VERSION VESSEL VICTORY VILLAGE VINTAGE VIOLIN VIRTUE VISIBLE VISION VISUAL VOLUME VOYAGE WAGON WARMTH WARNING WEALTH WEAPON WEATHER WEEKEND WELCOME WHISPER WICKED WINDOW WINTER WISDOM WITHIN WITHOUT WITNESS WONDER WORKER WORSHIP WRIGHT WRITER YELLOW ZODIAC";
+
+  var WORDS = new Set(WORD_TEXT.split(/\s+/).filter(Boolean));
+
+  function todayStr(){ return new Date().toISOString().slice(0,10); }
+  function shuffle(arr){
+    var a = arr.slice();
+    for (var i=a.length-1;i>0;i--){ var j = Math.floor(Math.random()*(i+1)); var t=a[i]; a[i]=a[j]; a[j]=t; }
+    return a;
+  }
+
+  function loadState(){
+    var s = {};
+    try { s = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; } catch(e){ s = {}; }
+    s.gamesPlayed = s.gamesPlayed || 0;
+    s.bestWordScore = s.bestWordScore || 0;
+    s.bestWordText = s.bestWordText || '';
+    s.streak = s.streak || 0;
+    s.lastActiveDate = s.lastActiveDate || null;
+    return s;
+  }
+  function saveState(s){ localStorage.setItem(STORAGE_KEY, JSON.stringify(s)); }
+  var persisted = loadState();
+
+  function bumpStreakIfNeeded(){
+    var today = todayStr();
+    if (persisted.lastActiveDate === today) return;
+    if (persisted.lastActiveDate){
+      var diffDays = Math.round((new Date(today) - new Date(persisted.lastActiveDate)) / 86400000);
+      persisted.streak = (diffDays === 1) ? persisted.streak + 1 : 1;
+    } else {
+      persisted.streak = 1;
+    }
+    persisted.lastActiveDate = today;
+  }
+
+  function renderHeaderStats(){
+    document.getElementById('streakBadge').textContent = '🔥 Day ' + Math.max(persisted.streak,1);
+    document.getElementById('statScore').textContent = session.score;
+    document.getElementById('statWords').textContent = session.wordsPlayed;
+    document.getElementById('statBest').textContent = persisted.bestWordScore;
+  }
+
+  /* ── Session / game state ─────────────────────────────── */
+  var nextTileId = 1;
+  var bag = [];
+  var rack = [];          // array of tile objects
+  var placed = [];        // BOARD_SIZE long, each null or tile object
+  var cursor = null;      // index of next placement slot, or null if board empty
+  var pendingBlank = null; // tile object awaiting a letter choice
+  var session = { score: 0, wordsPlayed: 0 };
+
+  function buildBag(){
+    var arr = [];
+    Object.keys(BAG_COUNTS).forEach(function(letter){
+      for (var i=0;i<BAG_COUNTS[letter];i++){
+        arr.push({ id: nextTileId++, letter: letter === '_' ? null : letter, isBlank: letter === '_' });
+      }
+    });
+    return shuffle(arr);
+  }
+
+  function drawTiles(n){
+    var drawn = [];
+    for (var i=0;i<n && bag.length>0;i++){
+      drawn.push(bag.pop());
+    }
+    return drawn;
+  }
+
+  var gameOver = false;
+
+  function startNewBag(){
+    bag = buildBag();
+    rack = drawTiles(7);
+    placed = new Array(BOARD_SIZE).fill(null);
+    cursor = null;
+    session = { score: 0, wordsPlayed: 0 };
+    pendingBlank = null;
+    gameOver = false;
+    document.getElementById('feedbackBanner').textContent = ' ';
+    document.getElementById('feedbackBanner').className = 'feedback-banner';
+    document.getElementById('letterPicker').classList.remove('show');
+    renderPlayButtons();
+    renderAll();
+  }
+
+  function renderPlayButtons(){
+    var row = document.getElementById('btnRow');
+    row.innerHTML =
+      '<button class="primary-btn" id="submitBtn">Submit Word</button>' +
+      '<button class="secondary-btn" id="clearBtn">Clear</button>' +
+      '<button class="secondary-btn" id="shuffleBtn">🔀 Shuffle Rack</button>';
+    document.getElementById('submitBtn').addEventListener('click', submitWord);
+    document.getElementById('clearBtn').addEventListener('click', clearBoard);
+    document.getElementById('shuffleBtn').addEventListener('click', function(){ rack = shuffle(rack); renderRack(); });
+  }
+
+  function renderGameOverButtons(){
+    var row = document.getElementById('btnRow');
+    row.innerHTML = '<button class="primary-btn" id="newBagBtn">Start New Bag →</button>';
+    document.getElementById('newBagBtn').addEventListener('click', startNewBag);
+  }
+
+  function renderAll(){
+    renderBoard();
+    renderRack();
+    renderHeaderStats();
+    document.getElementById('bagNote').textContent = gameOver ? 'Bag empty' : ('Tiles left in bag: ' + bag.length);
+    var submitBtn = document.getElementById('submitBtn');
+    if (submitBtn) submitBtn.disabled = placed.every(function(c){ return c===null; });
+  }
+
+  function renderBoard(){
+    var row = document.getElementById('boardRow');
+    row.innerHTML = '';
+    for (var i=0;i<BOARD_SIZE;i++){
+      var bonus = BOARD_PATTERN[i];
+      var cell = document.createElement('div');
+      cell.className = 'board-cell' + (bonus ? ' bonus-' + bonus.toLowerCase() : '');
+      if (cursor === i && !placed[i]) cell.classList.add('cursor-here');
+      var tile = placed[i];
+      if (tile){
+        cell.appendChild(buildTileEl(tile, function(t){ return function(){ removeFromBoard(t); }; }(tile)));
+      } else {
+        var label = document.createElement('span');
+        label.className = 'bonus-label';
+        label.textContent = bonus || '';
+        cell.appendChild(label);
+        if (cursor === null){
+          cell.classList.add('empty-startable');
+          cell.addEventListener('click', function(idx){ return function(){ cursor = idx; renderAll(); }; }(i));
+        }
+      }
+      row.appendChild(cell);
+    }
+  }
+
+  function buildTileEl(tile, onClick){
+    var el = document.createElement('div');
+    el.className = 'tile' + (tile.isBlank ? ' blank-tile' : '');
+    el.textContent = tile.letter || '?';
+    var val = document.createElement('span');
+    val.className = 'tile-value';
+    val.textContent = tile.isBlank ? 0 : LETTER_VALUES[tile.letter];
+    el.appendChild(val);
+    el.addEventListener('click', onClick);
+    return el;
+  }
+
+  function renderRack(){
+    var row = document.getElementById('rackRow');
+    row.innerHTML = '';
+    rack.forEach(function(tile){
+      row.appendChild(buildTileEl(tile, function(){ onRackTileClick(tile); }));
+    });
+  }
+
+  function onRackTileClick(tile){
+    if (tile.isBlank && !tile.letter){
+      pendingBlank = tile;
+      showLetterPicker();
+      return;
+    }
+    placeTileFromRack(tile);
+  }
+
+  function showLetterPicker(){
+    var picker = document.getElementById('letterPicker');
+    picker.innerHTML = '';
+    'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').forEach(function(letter){
+      var btn = document.createElement('button');
+      btn.textContent = letter;
+      btn.addEventListener('click', function(){
+        pendingBlank.letter = letter;
+        picker.classList.remove('show');
+        placeTileFromRack(pendingBlank);
+        pendingBlank = null;
+      });
+      picker.appendChild(btn);
+    });
+    picker.classList.add('show');
+  }
+
+  function placeTileFromRack(tile){
+    if (cursor === null) cursor = 0;
+    if (cursor >= BOARD_SIZE || placed[cursor]) return;
+    var idx = rack.indexOf(tile);
+    if (idx === -1) return;
+    rack.splice(idx,1);
+    placed[cursor] = tile;
+    cursor++;
+    renderAll();
+  }
+
+  function removeFromBoard(tile){
+    var idx = placed.indexOf(tile);
+    if (idx === -1) return;
+    for (var i = BOARD_SIZE - 1; i >= idx; i--){
+      if (placed[i]){
+        if (placed[i].isBlank) placed[i].letter = null;
+        rack.push(placed[i]);
+        placed[i] = null;
+      }
+    }
+    cursor = idx;
+    renderAll();
+  }
+
+  function clearBoard(){
+    for (var i=0;i<BOARD_SIZE;i++){
+      if (placed[i]){
+        if (placed[i].isBlank) placed[i].letter = null;
+        rack.push(placed[i]);
+        placed[i] = null;
+      }
+    }
+    cursor = null;
+    renderAll();
+  }
+
+  function computeScore(indices){
+    var wordMultiplier = 1;
+    var total = 0;
+    indices.forEach(function(i){
+      var tile = placed[i];
+      var val = tile.isBlank ? 0 : LETTER_VALUES[tile.letter];
+      var bonus = BOARD_PATTERN[i];
+      if (bonus === 'DL') val *= 2;
+      if (bonus === 'TL') val *= 3;
+      if (bonus === 'DW') wordMultiplier *= 2;
+      if (bonus === 'TW') wordMultiplier *= 3;
+      total += val;
+    });
+    total *= wordMultiplier;
+    if (indices.length === 7) total += 50;
+    return total;
+  }
+
+  function submitWord(){
+    var indices = [];
+    for (var i=0;i<BOARD_SIZE;i++){ if (placed[i]) indices.push(i); }
+    if (!indices.length) return;
+    // must be contiguous
+    var word = indices.map(function(i){ return placed[i].letter; }).join('');
+    var banner = document.getElementById('feedbackBanner');
+
+    if (word.length < 2 || !WORDS.has(word)){
+      banner.textContent = '❌ "' + word + '" isn\'t in the word list. Try again.';
+      banner.className = 'feedback-banner wrong';
+      clearBoard();
+      return;
+    }
+
+    var score = computeScore(indices);
+    session.score += score;
+    session.wordsPlayed++;
+    bumpStreakIfNeeded();
+
+    if (score > persisted.bestWordScore){
+      persisted.bestWordScore = score;
+      persisted.bestWordText = word;
+    }
+    saveState(persisted);
+
+    var usedAll = indices.length === 7;
+    banner.textContent = '✅ "' + word + '" for ' + score + ' points!' + (usedAll ? ' Bingo bonus +50!' : '');
+    banner.className = 'feedback-banner correct';
+
+    // consume placed tiles (they're already out of rack), refill from bag
+    placed = new Array(BOARD_SIZE).fill(null);
+    cursor = null;
+    var needed = 7 - rack.length;
+    if (needed > 0) rack = rack.concat(drawTiles(needed));
+
+    renderAll();
+
+    if (rack.length === 0 && bag.length === 0){
+      gameOver = true;
+      persisted.gamesPlayed++;
+      saveState(persisted);
+      renderGameOverButtons();
+      setTimeout(function(){
+        banner.textContent = '🏁 Bag empty! Final score: ' + session.score + ' across ' + session.wordsPlayed + ' words.';
+        banner.className = 'feedback-banner correct';
+        document.getElementById('bagNote').textContent = 'Bag empty';
+      }, 900);
+    }
+  }
+
+  renderHeaderStats();
+  startNewBag();
+})();
+</script>
+<script src="../assets/shared-nav.js"></script>
+</body>
+</html>

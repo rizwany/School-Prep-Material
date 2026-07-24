@@ -1,0 +1,3160 @@
+{
+  "meta": {
+    "title": "Time Management Test",
+    "description": "A 500-question reflection across 20 dimensions of effective and sustainable time management.",
+    "scale": {
+      "min": 1,
+      "max": 10,
+      "minLabel": "Not at all likely",
+      "maxLabel": "Extremely likely"
+    },
+    "categories": [
+      {
+        "id": "time_awareness",
+        "label": "Time Awareness",
+        "icon": "⏱️"
+      },
+      {
+        "id": "priorities",
+        "label": "Prioritisation",
+        "icon": "📌"
+      },
+      {
+        "id": "daily_planning",
+        "label": "Daily Planning",
+        "icon": "🗓️"
+      },
+      {
+        "id": "scheduling",
+        "label": "Scheduling & Time Blocking",
+        "icon": "🧱"
+      },
+      {
+        "id": "goal_alignment",
+        "label": "Goal Alignment",
+        "icon": "🎯"
+      },
+      {
+        "id": "task_breakdown",
+        "label": "Task Breakdown",
+        "icon": "🧩"
+      },
+      {
+        "id": "estimation",
+        "label": "Duration Estimation",
+        "icon": "📏"
+      },
+      {
+        "id": "deadlines",
+        "label": "Deadline Management",
+        "icon": "🚩"
+      },
+      {
+        "id": "focus",
+        "label": "Focused Work",
+        "icon": "🔍"
+      },
+      {
+        "id": "distractions",
+        "label": "Distraction Control",
+        "icon": "🔕"
+      },
+      {
+        "id": "procrastination",
+        "label": "Procrastination Management",
+        "icon": "🚀"
+      },
+      {
+        "id": "routines",
+        "label": "Routines & Systems",
+        "icon": "🔁"
+      },
+      {
+        "id": "energy",
+        "label": "Energy-Based Scheduling",
+        "icon": "⚡"
+      },
+      {
+        "id": "buffers",
+        "label": "Buffers & Contingency Time",
+        "icon": "🛟"
+      },
+      {
+        "id": "delegation",
+        "label": "Delegation & Collaboration",
+        "icon": "🤝"
+      },
+      {
+        "id": "boundaries",
+        "label": "Boundaries & Saying No",
+        "icon": "🛡️"
+      },
+      {
+        "id": "meetings",
+        "label": "Meetings & Communication",
+        "icon": "💬"
+      },
+      {
+        "id": "adaptability",
+        "label": "Adaptability & Replanning",
+        "icon": "🧭"
+      },
+      {
+        "id": "review",
+        "label": "Tracking & Review",
+        "icon": "📊"
+      },
+      {
+        "id": "balance",
+        "label": "Rest, Recovery & Balance",
+        "icon": "🌿"
+      }
+    ],
+    "levels": [
+      {
+        "min": 9,
+        "max": 10.01,
+        "label": "Highly Strategic Time Manager",
+        "emoji": "🏆",
+        "desc": "You consistently align time with priorities, protect focus, plan realistically, and preserve sustainable balance."
+      },
+      {
+        "min": 7.5,
+        "max": 9,
+        "label": "Effective Time Manager",
+        "emoji": "🌟",
+        "desc": "Your time-management habits are strong across most areas, with a few opportunities for greater consistency or protection."
+      },
+      {
+        "min": 6,
+        "max": 7.5,
+        "label": "Developing Time Strategist",
+        "emoji": "🧭",
+        "desc": "You use several helpful practices, though planning, focus, or follow-through may vary with workload and context."
+      },
+      {
+        "min": 4.5,
+        "max": 6,
+        "label": "Emerging Time Planner",
+        "emoji": "🌱",
+        "desc": "Some useful habits are present, but clearer priorities, realistic schedules, and review systems could improve control."
+      },
+      {
+        "min": 3,
+        "max": 4.5,
+        "label": "Inconsistent Time Process",
+        "emoji": "🔧",
+        "desc": "Reactive work, distractions, or overcommitment may often shape your time. Start with one or two foundational systems."
+      },
+      {
+        "min": 1,
+        "max": 3,
+        "label": "Time Foundations Needed",
+        "emoji": "⏳",
+        "desc": "Your current approach may offer little structure or protection for priorities. Small daily plans and focused blocks are a useful start."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "category": "time_awareness",
+      "reverse": false,
+      "text": "At the start of a normal day, how likely are you to notice where your available time is actually going?"
+    },
+    {
+      "id": 2,
+      "category": "time_awareness",
+      "reverse": true,
+      "text": "When several tasks compete for attention, how likely are you to move through the day without noticing how time was used?"
+    },
+    {
+      "id": 3,
+      "category": "time_awareness",
+      "reverse": false,
+      "text": "Before beginning an important project, how likely are you to compare intended time use with what really happened?"
+    },
+    {
+      "id": 4,
+      "category": "time_awareness",
+      "reverse": true,
+      "text": "When your calendar already looks full, how likely are you to rely on vague impressions instead of observing your time?"
+    },
+    {
+      "id": 5,
+      "category": "time_awareness",
+      "reverse": false,
+      "text": "After receiving a new request, how likely are you to notice where your available time is actually going?"
+    },
+    {
+      "id": 6,
+      "category": "time_awareness",
+      "reverse": true,
+      "text": "When a deadline is two weeks away, how likely are you to move through the day without noticing how time was used?"
+    },
+    {
+      "id": 7,
+      "category": "time_awareness",
+      "reverse": false,
+      "text": "During your most productive hours, how likely are you to compare intended time use with what really happened?"
+    },
+    {
+      "id": 8,
+      "category": "time_awareness",
+      "reverse": true,
+      "text": "When a task feels unpleasant, how likely are you to rely on vague impressions instead of observing your time?"
+    },
+    {
+      "id": 9,
+      "category": "time_awareness",
+      "reverse": false,
+      "text": "After an unexpected interruption, how likely are you to notice where your available time is actually going?"
+    },
+    {
+      "id": 10,
+      "category": "time_awareness",
+      "reverse": true,
+      "text": "While planning the coming week, how likely are you to move through the day without noticing how time was used?"
+    },
+    {
+      "id": 11,
+      "category": "time_awareness",
+      "reverse": false,
+      "text": "When a large assignment feels overwhelming, how likely are you to compare intended time use with what really happened?"
+    },
+    {
+      "id": 12,
+      "category": "time_awareness",
+      "reverse": true,
+      "text": "Before accepting another commitment, how likely are you to rely on vague impressions instead of observing your time?"
+    },
+    {
+      "id": 13,
+      "category": "time_awareness",
+      "reverse": false,
+      "text": "When estimating a familiar task, how likely are you to notice where your available time is actually going?"
+    },
+    {
+      "id": 14,
+      "category": "time_awareness",
+      "reverse": true,
+      "text": "During a busy school or work period, how likely are you to move through the day without noticing how time was used?"
+    },
+    {
+      "id": 15,
+      "category": "time_awareness",
+      "reverse": false,
+      "text": "When notifications keep appearing, how likely are you to compare intended time use with what really happened?"
+    },
+    {
+      "id": 16,
+      "category": "time_awareness",
+      "reverse": true,
+      "text": "After falling behind schedule, how likely are you to rely on vague impressions instead of observing your time?"
+    },
+    {
+      "id": 17,
+      "category": "time_awareness",
+      "reverse": false,
+      "text": "When working with other people, how likely are you to notice where your available time is actually going?"
+    },
+    {
+      "id": 18,
+      "category": "time_awareness",
+      "reverse": true,
+      "text": "Before attending a recurring meeting, how likely are you to move through the day without noticing how time was used?"
+    },
+    {
+      "id": 19,
+      "category": "time_awareness",
+      "reverse": false,
+      "text": "At the end of the day, how likely are you to compare intended time use with what really happened?"
+    },
+    {
+      "id": 20,
+      "category": "time_awareness",
+      "reverse": true,
+      "text": "When your energy is low, how likely are you to rely on vague impressions instead of observing your time?"
+    },
+    {
+      "id": 21,
+      "category": "time_awareness",
+      "reverse": false,
+      "text": "After completing a major task, how likely are you to notice where your available time is actually going?"
+    },
+    {
+      "id": 22,
+      "category": "time_awareness",
+      "reverse": true,
+      "text": "When priorities suddenly change, how likely are you to move through the day without noticing how time was used?"
+    },
+    {
+      "id": 23,
+      "category": "time_awareness",
+      "reverse": false,
+      "text": "While reviewing unfinished work, how likely are you to compare intended time use with what really happened?"
+    },
+    {
+      "id": 24,
+      "category": "time_awareness",
+      "reverse": true,
+      "text": "When planning tomorrow, how likely are you to rely on vague impressions instead of observing your time?"
+    },
+    {
+      "id": 25,
+      "category": "time_awareness",
+      "reverse": false,
+      "text": "At the end of a demanding month, how likely are you to notice where your available time is actually going?"
+    },
+    {
+      "id": 26,
+      "category": "priorities",
+      "reverse": false,
+      "text": "At the start of a normal day, how likely are you to identify the few tasks that matter most?"
+    },
+    {
+      "id": 27,
+      "category": "priorities",
+      "reverse": true,
+      "text": "When several tasks compete for attention, how likely are you to treat every request as equally important?"
+    },
+    {
+      "id": 28,
+      "category": "priorities",
+      "reverse": false,
+      "text": "Before beginning an important project, how likely are you to choose important work before merely urgent-looking activity?"
+    },
+    {
+      "id": 29,
+      "category": "priorities",
+      "reverse": true,
+      "text": "When your calendar already looks full, how likely are you to spend prime time on low-value tasks?"
+    },
+    {
+      "id": 30,
+      "category": "priorities",
+      "reverse": false,
+      "text": "After receiving a new request, how likely are you to identify the few tasks that matter most?"
+    },
+    {
+      "id": 31,
+      "category": "priorities",
+      "reverse": true,
+      "text": "When a deadline is two weeks away, how likely are you to treat every request as equally important?"
+    },
+    {
+      "id": 32,
+      "category": "priorities",
+      "reverse": false,
+      "text": "During your most productive hours, how likely are you to choose important work before merely urgent-looking activity?"
+    },
+    {
+      "id": 33,
+      "category": "priorities",
+      "reverse": true,
+      "text": "When a task feels unpleasant, how likely are you to spend prime time on low-value tasks?"
+    },
+    {
+      "id": 34,
+      "category": "priorities",
+      "reverse": false,
+      "text": "After an unexpected interruption, how likely are you to identify the few tasks that matter most?"
+    },
+    {
+      "id": 35,
+      "category": "priorities",
+      "reverse": true,
+      "text": "While planning the coming week, how likely are you to treat every request as equally important?"
+    },
+    {
+      "id": 36,
+      "category": "priorities",
+      "reverse": false,
+      "text": "When a large assignment feels overwhelming, how likely are you to choose important work before merely urgent-looking activity?"
+    },
+    {
+      "id": 37,
+      "category": "priorities",
+      "reverse": true,
+      "text": "Before accepting another commitment, how likely are you to spend prime time on low-value tasks?"
+    },
+    {
+      "id": 38,
+      "category": "priorities",
+      "reverse": false,
+      "text": "When estimating a familiar task, how likely are you to identify the few tasks that matter most?"
+    },
+    {
+      "id": 39,
+      "category": "priorities",
+      "reverse": true,
+      "text": "During a busy school or work period, how likely are you to treat every request as equally important?"
+    },
+    {
+      "id": 40,
+      "category": "priorities",
+      "reverse": false,
+      "text": "When notifications keep appearing, how likely are you to choose important work before merely urgent-looking activity?"
+    },
+    {
+      "id": 41,
+      "category": "priorities",
+      "reverse": true,
+      "text": "After falling behind schedule, how likely are you to spend prime time on low-value tasks?"
+    },
+    {
+      "id": 42,
+      "category": "priorities",
+      "reverse": false,
+      "text": "When working with other people, how likely are you to identify the few tasks that matter most?"
+    },
+    {
+      "id": 43,
+      "category": "priorities",
+      "reverse": true,
+      "text": "Before attending a recurring meeting, how likely are you to treat every request as equally important?"
+    },
+    {
+      "id": 44,
+      "category": "priorities",
+      "reverse": false,
+      "text": "At the end of the day, how likely are you to choose important work before merely urgent-looking activity?"
+    },
+    {
+      "id": 45,
+      "category": "priorities",
+      "reverse": true,
+      "text": "When your energy is low, how likely are you to spend prime time on low-value tasks?"
+    },
+    {
+      "id": 46,
+      "category": "priorities",
+      "reverse": false,
+      "text": "After completing a major task, how likely are you to identify the few tasks that matter most?"
+    },
+    {
+      "id": 47,
+      "category": "priorities",
+      "reverse": true,
+      "text": "When priorities suddenly change, how likely are you to treat every request as equally important?"
+    },
+    {
+      "id": 48,
+      "category": "priorities",
+      "reverse": false,
+      "text": "While reviewing unfinished work, how likely are you to choose important work before merely urgent-looking activity?"
+    },
+    {
+      "id": 49,
+      "category": "priorities",
+      "reverse": true,
+      "text": "When planning tomorrow, how likely are you to spend prime time on low-value tasks?"
+    },
+    {
+      "id": 50,
+      "category": "priorities",
+      "reverse": false,
+      "text": "At the end of a demanding month, how likely are you to identify the few tasks that matter most?"
+    },
+    {
+      "id": 51,
+      "category": "daily_planning",
+      "reverse": false,
+      "text": "At the start of a normal day, how likely are you to make a realistic plan for the day ahead?"
+    },
+    {
+      "id": 52,
+      "category": "daily_planning",
+      "reverse": true,
+      "text": "When several tasks compete for attention, how likely are you to begin the day with no idea what should be completed?"
+    },
+    {
+      "id": 53,
+      "category": "daily_planning",
+      "reverse": false,
+      "text": "Before beginning an important project, how likely are you to decide the main outcomes before the day becomes busy?"
+    },
+    {
+      "id": 54,
+      "category": "daily_planning",
+      "reverse": true,
+      "text": "When your calendar already looks full, how likely are you to make a task list too large to guide action?"
+    },
+    {
+      "id": 55,
+      "category": "daily_planning",
+      "reverse": false,
+      "text": "After receiving a new request, how likely are you to make a realistic plan for the day ahead?"
+    },
+    {
+      "id": 56,
+      "category": "daily_planning",
+      "reverse": true,
+      "text": "When a deadline is two weeks away, how likely are you to begin the day with no idea what should be completed?"
+    },
+    {
+      "id": 57,
+      "category": "daily_planning",
+      "reverse": false,
+      "text": "During your most productive hours, how likely are you to decide the main outcomes before the day becomes busy?"
+    },
+    {
+      "id": 58,
+      "category": "daily_planning",
+      "reverse": true,
+      "text": "When a task feels unpleasant, how likely are you to make a task list too large to guide action?"
+    },
+    {
+      "id": 59,
+      "category": "daily_planning",
+      "reverse": false,
+      "text": "After an unexpected interruption, how likely are you to make a realistic plan for the day ahead?"
+    },
+    {
+      "id": 60,
+      "category": "daily_planning",
+      "reverse": true,
+      "text": "While planning the coming week, how likely are you to begin the day with no idea what should be completed?"
+    },
+    {
+      "id": 61,
+      "category": "daily_planning",
+      "reverse": false,
+      "text": "When a large assignment feels overwhelming, how likely are you to decide the main outcomes before the day becomes busy?"
+    },
+    {
+      "id": 62,
+      "category": "daily_planning",
+      "reverse": true,
+      "text": "Before accepting another commitment, how likely are you to make a task list too large to guide action?"
+    },
+    {
+      "id": 63,
+      "category": "daily_planning",
+      "reverse": false,
+      "text": "When estimating a familiar task, how likely are you to make a realistic plan for the day ahead?"
+    },
+    {
+      "id": 64,
+      "category": "daily_planning",
+      "reverse": true,
+      "text": "During a busy school or work period, how likely are you to begin the day with no idea what should be completed?"
+    },
+    {
+      "id": 65,
+      "category": "daily_planning",
+      "reverse": false,
+      "text": "When notifications keep appearing, how likely are you to decide the main outcomes before the day becomes busy?"
+    },
+    {
+      "id": 66,
+      "category": "daily_planning",
+      "reverse": true,
+      "text": "After falling behind schedule, how likely are you to make a task list too large to guide action?"
+    },
+    {
+      "id": 67,
+      "category": "daily_planning",
+      "reverse": false,
+      "text": "When working with other people, how likely are you to make a realistic plan for the day ahead?"
+    },
+    {
+      "id": 68,
+      "category": "daily_planning",
+      "reverse": true,
+      "text": "Before attending a recurring meeting, how likely are you to begin the day with no idea what should be completed?"
+    },
+    {
+      "id": 69,
+      "category": "daily_planning",
+      "reverse": false,
+      "text": "At the end of the day, how likely are you to decide the main outcomes before the day becomes busy?"
+    },
+    {
+      "id": 70,
+      "category": "daily_planning",
+      "reverse": true,
+      "text": "When your energy is low, how likely are you to make a task list too large to guide action?"
+    },
+    {
+      "id": 71,
+      "category": "daily_planning",
+      "reverse": false,
+      "text": "After completing a major task, how likely are you to make a realistic plan for the day ahead?"
+    },
+    {
+      "id": 72,
+      "category": "daily_planning",
+      "reverse": true,
+      "text": "When priorities suddenly change, how likely are you to begin the day with no idea what should be completed?"
+    },
+    {
+      "id": 73,
+      "category": "daily_planning",
+      "reverse": false,
+      "text": "While reviewing unfinished work, how likely are you to decide the main outcomes before the day becomes busy?"
+    },
+    {
+      "id": 74,
+      "category": "daily_planning",
+      "reverse": true,
+      "text": "When planning tomorrow, how likely are you to make a task list too large to guide action?"
+    },
+    {
+      "id": 75,
+      "category": "daily_planning",
+      "reverse": false,
+      "text": "At the end of a demanding month, how likely are you to make a realistic plan for the day ahead?"
+    },
+    {
+      "id": 76,
+      "category": "scheduling",
+      "reverse": false,
+      "text": "At the start of a normal day, how likely are you to reserve a specific time for important work?"
+    },
+    {
+      "id": 77,
+      "category": "scheduling",
+      "reverse": true,
+      "text": "When several tasks compete for attention, how likely are you to expect important work to fit into leftover time?"
+    },
+    {
+      "id": 78,
+      "category": "scheduling",
+      "reverse": false,
+      "text": "Before beginning an important project, how likely are you to place demanding tasks into suitable calendar blocks?"
+    },
+    {
+      "id": 79,
+      "category": "scheduling",
+      "reverse": true,
+      "text": "When your calendar already looks full, how likely are you to fill the calendar without protecting focused work?"
+    },
+    {
+      "id": 80,
+      "category": "scheduling",
+      "reverse": false,
+      "text": "After receiving a new request, how likely are you to reserve a specific time for important work?"
+    },
+    {
+      "id": 81,
+      "category": "scheduling",
+      "reverse": true,
+      "text": "When a deadline is two weeks away, how likely are you to expect important work to fit into leftover time?"
+    },
+    {
+      "id": 82,
+      "category": "scheduling",
+      "reverse": false,
+      "text": "During your most productive hours, how likely are you to place demanding tasks into suitable calendar blocks?"
+    },
+    {
+      "id": 83,
+      "category": "scheduling",
+      "reverse": true,
+      "text": "When a task feels unpleasant, how likely are you to fill the calendar without protecting focused work?"
+    },
+    {
+      "id": 84,
+      "category": "scheduling",
+      "reverse": false,
+      "text": "After an unexpected interruption, how likely are you to reserve a specific time for important work?"
+    },
+    {
+      "id": 85,
+      "category": "scheduling",
+      "reverse": true,
+      "text": "While planning the coming week, how likely are you to expect important work to fit into leftover time?"
+    },
+    {
+      "id": 86,
+      "category": "scheduling",
+      "reverse": false,
+      "text": "When a large assignment feels overwhelming, how likely are you to place demanding tasks into suitable calendar blocks?"
+    },
+    {
+      "id": 87,
+      "category": "scheduling",
+      "reverse": true,
+      "text": "Before accepting another commitment, how likely are you to fill the calendar without protecting focused work?"
+    },
+    {
+      "id": 88,
+      "category": "scheduling",
+      "reverse": false,
+      "text": "When estimating a familiar task, how likely are you to reserve a specific time for important work?"
+    },
+    {
+      "id": 89,
+      "category": "scheduling",
+      "reverse": true,
+      "text": "During a busy school or work period, how likely are you to expect important work to fit into leftover time?"
+    },
+    {
+      "id": 90,
+      "category": "scheduling",
+      "reverse": false,
+      "text": "When notifications keep appearing, how likely are you to place demanding tasks into suitable calendar blocks?"
+    },
+    {
+      "id": 91,
+      "category": "scheduling",
+      "reverse": true,
+      "text": "After falling behind schedule, how likely are you to fill the calendar without protecting focused work?"
+    },
+    {
+      "id": 92,
+      "category": "scheduling",
+      "reverse": false,
+      "text": "When working with other people, how likely are you to reserve a specific time for important work?"
+    },
+    {
+      "id": 93,
+      "category": "scheduling",
+      "reverse": true,
+      "text": "Before attending a recurring meeting, how likely are you to expect important work to fit into leftover time?"
+    },
+    {
+      "id": 94,
+      "category": "scheduling",
+      "reverse": false,
+      "text": "At the end of the day, how likely are you to place demanding tasks into suitable calendar blocks?"
+    },
+    {
+      "id": 95,
+      "category": "scheduling",
+      "reverse": true,
+      "text": "When your energy is low, how likely are you to fill the calendar without protecting focused work?"
+    },
+    {
+      "id": 96,
+      "category": "scheduling",
+      "reverse": false,
+      "text": "After completing a major task, how likely are you to reserve a specific time for important work?"
+    },
+    {
+      "id": 97,
+      "category": "scheduling",
+      "reverse": true,
+      "text": "When priorities suddenly change, how likely are you to expect important work to fit into leftover time?"
+    },
+    {
+      "id": 98,
+      "category": "scheduling",
+      "reverse": false,
+      "text": "While reviewing unfinished work, how likely are you to place demanding tasks into suitable calendar blocks?"
+    },
+    {
+      "id": 99,
+      "category": "scheduling",
+      "reverse": true,
+      "text": "When planning tomorrow, how likely are you to fill the calendar without protecting focused work?"
+    },
+    {
+      "id": 100,
+      "category": "scheduling",
+      "reverse": false,
+      "text": "At the end of a demanding month, how likely are you to reserve a specific time for important work?"
+    },
+    {
+      "id": 101,
+      "category": "goal_alignment",
+      "reverse": false,
+      "text": "At the start of a normal day, how likely are you to connect today’s tasks with a larger goal?"
+    },
+    {
+      "id": 102,
+      "category": "goal_alignment",
+      "reverse": true,
+      "text": "When several tasks compete for attention, how likely are you to stay busy without checking whether tasks advance a goal?"
+    },
+    {
+      "id": 103,
+      "category": "goal_alignment",
+      "reverse": false,
+      "text": "Before beginning an important project, how likely are you to remove work that does not support current priorities?"
+    },
+    {
+      "id": 104,
+      "category": "goal_alignment",
+      "reverse": true,
+      "text": "When your calendar already looks full, how likely are you to keep tasks mainly because they have always been done?"
+    },
+    {
+      "id": 105,
+      "category": "goal_alignment",
+      "reverse": false,
+      "text": "After receiving a new request, how likely are you to connect today’s tasks with a larger goal?"
+    },
+    {
+      "id": 106,
+      "category": "goal_alignment",
+      "reverse": true,
+      "text": "When a deadline is two weeks away, how likely are you to stay busy without checking whether tasks advance a goal?"
+    },
+    {
+      "id": 107,
+      "category": "goal_alignment",
+      "reverse": false,
+      "text": "During your most productive hours, how likely are you to remove work that does not support current priorities?"
+    },
+    {
+      "id": 108,
+      "category": "goal_alignment",
+      "reverse": true,
+      "text": "When a task feels unpleasant, how likely are you to keep tasks mainly because they have always been done?"
+    },
+    {
+      "id": 109,
+      "category": "goal_alignment",
+      "reverse": false,
+      "text": "After an unexpected interruption, how likely are you to connect today’s tasks with a larger goal?"
+    },
+    {
+      "id": 110,
+      "category": "goal_alignment",
+      "reverse": true,
+      "text": "While planning the coming week, how likely are you to stay busy without checking whether tasks advance a goal?"
+    },
+    {
+      "id": 111,
+      "category": "goal_alignment",
+      "reverse": false,
+      "text": "When a large assignment feels overwhelming, how likely are you to remove work that does not support current priorities?"
+    },
+    {
+      "id": 112,
+      "category": "goal_alignment",
+      "reverse": true,
+      "text": "Before accepting another commitment, how likely are you to keep tasks mainly because they have always been done?"
+    },
+    {
+      "id": 113,
+      "category": "goal_alignment",
+      "reverse": false,
+      "text": "When estimating a familiar task, how likely are you to connect today’s tasks with a larger goal?"
+    },
+    {
+      "id": 114,
+      "category": "goal_alignment",
+      "reverse": true,
+      "text": "During a busy school or work period, how likely are you to stay busy without checking whether tasks advance a goal?"
+    },
+    {
+      "id": 115,
+      "category": "goal_alignment",
+      "reverse": false,
+      "text": "When notifications keep appearing, how likely are you to remove work that does not support current priorities?"
+    },
+    {
+      "id": 116,
+      "category": "goal_alignment",
+      "reverse": true,
+      "text": "After falling behind schedule, how likely are you to keep tasks mainly because they have always been done?"
+    },
+    {
+      "id": 117,
+      "category": "goal_alignment",
+      "reverse": false,
+      "text": "When working with other people, how likely are you to connect today’s tasks with a larger goal?"
+    },
+    {
+      "id": 118,
+      "category": "goal_alignment",
+      "reverse": true,
+      "text": "Before attending a recurring meeting, how likely are you to stay busy without checking whether tasks advance a goal?"
+    },
+    {
+      "id": 119,
+      "category": "goal_alignment",
+      "reverse": false,
+      "text": "At the end of the day, how likely are you to remove work that does not support current priorities?"
+    },
+    {
+      "id": 120,
+      "category": "goal_alignment",
+      "reverse": true,
+      "text": "When your energy is low, how likely are you to keep tasks mainly because they have always been done?"
+    },
+    {
+      "id": 121,
+      "category": "goal_alignment",
+      "reverse": false,
+      "text": "After completing a major task, how likely are you to connect today’s tasks with a larger goal?"
+    },
+    {
+      "id": 122,
+      "category": "goal_alignment",
+      "reverse": true,
+      "text": "When priorities suddenly change, how likely are you to stay busy without checking whether tasks advance a goal?"
+    },
+    {
+      "id": 123,
+      "category": "goal_alignment",
+      "reverse": false,
+      "text": "While reviewing unfinished work, how likely are you to remove work that does not support current priorities?"
+    },
+    {
+      "id": 124,
+      "category": "goal_alignment",
+      "reverse": true,
+      "text": "When planning tomorrow, how likely are you to keep tasks mainly because they have always been done?"
+    },
+    {
+      "id": 125,
+      "category": "goal_alignment",
+      "reverse": false,
+      "text": "At the end of a demanding month, how likely are you to connect today’s tasks with a larger goal?"
+    },
+    {
+      "id": 126,
+      "category": "task_breakdown",
+      "reverse": false,
+      "text": "At the start of a normal day, how likely are you to divide a large task into manageable next actions?"
+    },
+    {
+      "id": 127,
+      "category": "task_breakdown",
+      "reverse": true,
+      "text": "When several tasks compete for attention, how likely are you to keep a complex task as one overwhelming item?"
+    },
+    {
+      "id": 128,
+      "category": "task_breakdown",
+      "reverse": false,
+      "text": "Before beginning an important project, how likely are you to define a small first step that can be started now?"
+    },
+    {
+      "id": 129,
+      "category": "task_breakdown",
+      "reverse": true,
+      "text": "When your calendar already looks full, how likely are you to wait to begin until the whole project feels easy?"
+    },
+    {
+      "id": 130,
+      "category": "task_breakdown",
+      "reverse": false,
+      "text": "After receiving a new request, how likely are you to divide a large task into manageable next actions?"
+    },
+    {
+      "id": 131,
+      "category": "task_breakdown",
+      "reverse": true,
+      "text": "When a deadline is two weeks away, how likely are you to keep a complex task as one overwhelming item?"
+    },
+    {
+      "id": 132,
+      "category": "task_breakdown",
+      "reverse": false,
+      "text": "During your most productive hours, how likely are you to define a small first step that can be started now?"
+    },
+    {
+      "id": 133,
+      "category": "task_breakdown",
+      "reverse": true,
+      "text": "When a task feels unpleasant, how likely are you to wait to begin until the whole project feels easy?"
+    },
+    {
+      "id": 134,
+      "category": "task_breakdown",
+      "reverse": false,
+      "text": "After an unexpected interruption, how likely are you to divide a large task into manageable next actions?"
+    },
+    {
+      "id": 135,
+      "category": "task_breakdown",
+      "reverse": true,
+      "text": "While planning the coming week, how likely are you to keep a complex task as one overwhelming item?"
+    },
+    {
+      "id": 136,
+      "category": "task_breakdown",
+      "reverse": false,
+      "text": "When a large assignment feels overwhelming, how likely are you to define a small first step that can be started now?"
+    },
+    {
+      "id": 137,
+      "category": "task_breakdown",
+      "reverse": true,
+      "text": "Before accepting another commitment, how likely are you to wait to begin until the whole project feels easy?"
+    },
+    {
+      "id": 138,
+      "category": "task_breakdown",
+      "reverse": false,
+      "text": "When estimating a familiar task, how likely are you to divide a large task into manageable next actions?"
+    },
+    {
+      "id": 139,
+      "category": "task_breakdown",
+      "reverse": true,
+      "text": "During a busy school or work period, how likely are you to keep a complex task as one overwhelming item?"
+    },
+    {
+      "id": 140,
+      "category": "task_breakdown",
+      "reverse": false,
+      "text": "When notifications keep appearing, how likely are you to define a small first step that can be started now?"
+    },
+    {
+      "id": 141,
+      "category": "task_breakdown",
+      "reverse": true,
+      "text": "After falling behind schedule, how likely are you to wait to begin until the whole project feels easy?"
+    },
+    {
+      "id": 142,
+      "category": "task_breakdown",
+      "reverse": false,
+      "text": "When working with other people, how likely are you to divide a large task into manageable next actions?"
+    },
+    {
+      "id": 143,
+      "category": "task_breakdown",
+      "reverse": true,
+      "text": "Before attending a recurring meeting, how likely are you to keep a complex task as one overwhelming item?"
+    },
+    {
+      "id": 144,
+      "category": "task_breakdown",
+      "reverse": false,
+      "text": "At the end of the day, how likely are you to define a small first step that can be started now?"
+    },
+    {
+      "id": 145,
+      "category": "task_breakdown",
+      "reverse": true,
+      "text": "When your energy is low, how likely are you to wait to begin until the whole project feels easy?"
+    },
+    {
+      "id": 146,
+      "category": "task_breakdown",
+      "reverse": false,
+      "text": "After completing a major task, how likely are you to divide a large task into manageable next actions?"
+    },
+    {
+      "id": 147,
+      "category": "task_breakdown",
+      "reverse": true,
+      "text": "When priorities suddenly change, how likely are you to keep a complex task as one overwhelming item?"
+    },
+    {
+      "id": 148,
+      "category": "task_breakdown",
+      "reverse": false,
+      "text": "While reviewing unfinished work, how likely are you to define a small first step that can be started now?"
+    },
+    {
+      "id": 149,
+      "category": "task_breakdown",
+      "reverse": true,
+      "text": "When planning tomorrow, how likely are you to wait to begin until the whole project feels easy?"
+    },
+    {
+      "id": 150,
+      "category": "task_breakdown",
+      "reverse": false,
+      "text": "At the end of a demanding month, how likely are you to divide a large task into manageable next actions?"
+    },
+    {
+      "id": 151,
+      "category": "estimation",
+      "reverse": false,
+      "text": "At the start of a normal day, how likely are you to estimate task duration using past evidence?"
+    },
+    {
+      "id": 152,
+      "category": "estimation",
+      "reverse": true,
+      "text": "When several tasks compete for attention, how likely are you to assume most tasks will take less time than usual?"
+    },
+    {
+      "id": 153,
+      "category": "estimation",
+      "reverse": false,
+      "text": "Before beginning an important project, how likely are you to include setup, transition, and finishing time in your estimate?"
+    },
+    {
+      "id": 154,
+      "category": "estimation",
+      "reverse": true,
+      "text": "When your calendar already looks full, how likely are you to guess duration without considering previous experience?"
+    },
+    {
+      "id": 155,
+      "category": "estimation",
+      "reverse": false,
+      "text": "After receiving a new request, how likely are you to estimate task duration using past evidence?"
+    },
+    {
+      "id": 156,
+      "category": "estimation",
+      "reverse": true,
+      "text": "When a deadline is two weeks away, how likely are you to assume most tasks will take less time than usual?"
+    },
+    {
+      "id": 157,
+      "category": "estimation",
+      "reverse": false,
+      "text": "During your most productive hours, how likely are you to include setup, transition, and finishing time in your estimate?"
+    },
+    {
+      "id": 158,
+      "category": "estimation",
+      "reverse": true,
+      "text": "When a task feels unpleasant, how likely are you to guess duration without considering previous experience?"
+    },
+    {
+      "id": 159,
+      "category": "estimation",
+      "reverse": false,
+      "text": "After an unexpected interruption, how likely are you to estimate task duration using past evidence?"
+    },
+    {
+      "id": 160,
+      "category": "estimation",
+      "reverse": true,
+      "text": "While planning the coming week, how likely are you to assume most tasks will take less time than usual?"
+    },
+    {
+      "id": 161,
+      "category": "estimation",
+      "reverse": false,
+      "text": "When a large assignment feels overwhelming, how likely are you to include setup, transition, and finishing time in your estimate?"
+    },
+    {
+      "id": 162,
+      "category": "estimation",
+      "reverse": true,
+      "text": "Before accepting another commitment, how likely are you to guess duration without considering previous experience?"
+    },
+    {
+      "id": 163,
+      "category": "estimation",
+      "reverse": false,
+      "text": "When estimating a familiar task, how likely are you to estimate task duration using past evidence?"
+    },
+    {
+      "id": 164,
+      "category": "estimation",
+      "reverse": true,
+      "text": "During a busy school or work period, how likely are you to assume most tasks will take less time than usual?"
+    },
+    {
+      "id": 165,
+      "category": "estimation",
+      "reverse": false,
+      "text": "When notifications keep appearing, how likely are you to include setup, transition, and finishing time in your estimate?"
+    },
+    {
+      "id": 166,
+      "category": "estimation",
+      "reverse": true,
+      "text": "After falling behind schedule, how likely are you to guess duration without considering previous experience?"
+    },
+    {
+      "id": 167,
+      "category": "estimation",
+      "reverse": false,
+      "text": "When working with other people, how likely are you to estimate task duration using past evidence?"
+    },
+    {
+      "id": 168,
+      "category": "estimation",
+      "reverse": true,
+      "text": "Before attending a recurring meeting, how likely are you to assume most tasks will take less time than usual?"
+    },
+    {
+      "id": 169,
+      "category": "estimation",
+      "reverse": false,
+      "text": "At the end of the day, how likely are you to include setup, transition, and finishing time in your estimate?"
+    },
+    {
+      "id": 170,
+      "category": "estimation",
+      "reverse": true,
+      "text": "When your energy is low, how likely are you to guess duration without considering previous experience?"
+    },
+    {
+      "id": 171,
+      "category": "estimation",
+      "reverse": false,
+      "text": "After completing a major task, how likely are you to estimate task duration using past evidence?"
+    },
+    {
+      "id": 172,
+      "category": "estimation",
+      "reverse": true,
+      "text": "When priorities suddenly change, how likely are you to assume most tasks will take less time than usual?"
+    },
+    {
+      "id": 173,
+      "category": "estimation",
+      "reverse": false,
+      "text": "While reviewing unfinished work, how likely are you to include setup, transition, and finishing time in your estimate?"
+    },
+    {
+      "id": 174,
+      "category": "estimation",
+      "reverse": true,
+      "text": "When planning tomorrow, how likely are you to guess duration without considering previous experience?"
+    },
+    {
+      "id": 175,
+      "category": "estimation",
+      "reverse": false,
+      "text": "At the end of a demanding month, how likely are you to estimate task duration using past evidence?"
+    },
+    {
+      "id": 176,
+      "category": "deadlines",
+      "reverse": false,
+      "text": "At the start of a normal day, how likely are you to work backward from a deadline to set earlier checkpoints?"
+    },
+    {
+      "id": 177,
+      "category": "deadlines",
+      "reverse": true,
+      "text": "When several tasks compete for attention, how likely are you to treat the final deadline as the time to begin?"
+    },
+    {
+      "id": 178,
+      "category": "deadlines",
+      "reverse": false,
+      "text": "Before beginning an important project, how likely are you to start early enough to handle foreseeable delays?"
+    },
+    {
+      "id": 179,
+      "category": "deadlines",
+      "reverse": true,
+      "text": "When your calendar already looks full, how likely are you to depend on last-minute pressure for completion?"
+    },
+    {
+      "id": 180,
+      "category": "deadlines",
+      "reverse": false,
+      "text": "After receiving a new request, how likely are you to work backward from a deadline to set earlier checkpoints?"
+    },
+    {
+      "id": 181,
+      "category": "deadlines",
+      "reverse": true,
+      "text": "When a deadline is two weeks away, how likely are you to treat the final deadline as the time to begin?"
+    },
+    {
+      "id": 182,
+      "category": "deadlines",
+      "reverse": false,
+      "text": "During your most productive hours, how likely are you to start early enough to handle foreseeable delays?"
+    },
+    {
+      "id": 183,
+      "category": "deadlines",
+      "reverse": true,
+      "text": "When a task feels unpleasant, how likely are you to depend on last-minute pressure for completion?"
+    },
+    {
+      "id": 184,
+      "category": "deadlines",
+      "reverse": false,
+      "text": "After an unexpected interruption, how likely are you to work backward from a deadline to set earlier checkpoints?"
+    },
+    {
+      "id": 185,
+      "category": "deadlines",
+      "reverse": true,
+      "text": "While planning the coming week, how likely are you to treat the final deadline as the time to begin?"
+    },
+    {
+      "id": 186,
+      "category": "deadlines",
+      "reverse": false,
+      "text": "When a large assignment feels overwhelming, how likely are you to start early enough to handle foreseeable delays?"
+    },
+    {
+      "id": 187,
+      "category": "deadlines",
+      "reverse": true,
+      "text": "Before accepting another commitment, how likely are you to depend on last-minute pressure for completion?"
+    },
+    {
+      "id": 188,
+      "category": "deadlines",
+      "reverse": false,
+      "text": "When estimating a familiar task, how likely are you to work backward from a deadline to set earlier checkpoints?"
+    },
+    {
+      "id": 189,
+      "category": "deadlines",
+      "reverse": true,
+      "text": "During a busy school or work period, how likely are you to treat the final deadline as the time to begin?"
+    },
+    {
+      "id": 190,
+      "category": "deadlines",
+      "reverse": false,
+      "text": "When notifications keep appearing, how likely are you to start early enough to handle foreseeable delays?"
+    },
+    {
+      "id": 191,
+      "category": "deadlines",
+      "reverse": true,
+      "text": "After falling behind schedule, how likely are you to depend on last-minute pressure for completion?"
+    },
+    {
+      "id": 192,
+      "category": "deadlines",
+      "reverse": false,
+      "text": "When working with other people, how likely are you to work backward from a deadline to set earlier checkpoints?"
+    },
+    {
+      "id": 193,
+      "category": "deadlines",
+      "reverse": true,
+      "text": "Before attending a recurring meeting, how likely are you to treat the final deadline as the time to begin?"
+    },
+    {
+      "id": 194,
+      "category": "deadlines",
+      "reverse": false,
+      "text": "At the end of the day, how likely are you to start early enough to handle foreseeable delays?"
+    },
+    {
+      "id": 195,
+      "category": "deadlines",
+      "reverse": true,
+      "text": "When your energy is low, how likely are you to depend on last-minute pressure for completion?"
+    },
+    {
+      "id": 196,
+      "category": "deadlines",
+      "reverse": false,
+      "text": "After completing a major task, how likely are you to work backward from a deadline to set earlier checkpoints?"
+    },
+    {
+      "id": 197,
+      "category": "deadlines",
+      "reverse": true,
+      "text": "When priorities suddenly change, how likely are you to treat the final deadline as the time to begin?"
+    },
+    {
+      "id": 198,
+      "category": "deadlines",
+      "reverse": false,
+      "text": "While reviewing unfinished work, how likely are you to start early enough to handle foreseeable delays?"
+    },
+    {
+      "id": 199,
+      "category": "deadlines",
+      "reverse": true,
+      "text": "When planning tomorrow, how likely are you to depend on last-minute pressure for completion?"
+    },
+    {
+      "id": 200,
+      "category": "deadlines",
+      "reverse": false,
+      "text": "At the end of a demanding month, how likely are you to work backward from a deadline to set earlier checkpoints?"
+    },
+    {
+      "id": 201,
+      "category": "focus",
+      "reverse": false,
+      "text": "At the start of a normal day, how likely are you to work on one chosen task for a protected period?"
+    },
+    {
+      "id": 202,
+      "category": "focus",
+      "reverse": true,
+      "text": "When several tasks compete for attention, how likely are you to switch tasks whenever a new thought appears?"
+    },
+    {
+      "id": 203,
+      "category": "focus",
+      "reverse": false,
+      "text": "Before beginning an important project, how likely are you to define a clear focus target before starting?"
+    },
+    {
+      "id": 204,
+      "category": "focus",
+      "reverse": true,
+      "text": "When your calendar already looks full, how likely are you to mix several demanding tasks at the same time?"
+    },
+    {
+      "id": 205,
+      "category": "focus",
+      "reverse": false,
+      "text": "After receiving a new request, how likely are you to work on one chosen task for a protected period?"
+    },
+    {
+      "id": 206,
+      "category": "focus",
+      "reverse": true,
+      "text": "When a deadline is two weeks away, how likely are you to switch tasks whenever a new thought appears?"
+    },
+    {
+      "id": 207,
+      "category": "focus",
+      "reverse": false,
+      "text": "During your most productive hours, how likely are you to define a clear focus target before starting?"
+    },
+    {
+      "id": 208,
+      "category": "focus",
+      "reverse": true,
+      "text": "When a task feels unpleasant, how likely are you to mix several demanding tasks at the same time?"
+    },
+    {
+      "id": 209,
+      "category": "focus",
+      "reverse": false,
+      "text": "After an unexpected interruption, how likely are you to work on one chosen task for a protected period?"
+    },
+    {
+      "id": 210,
+      "category": "focus",
+      "reverse": true,
+      "text": "While planning the coming week, how likely are you to switch tasks whenever a new thought appears?"
+    },
+    {
+      "id": 211,
+      "category": "focus",
+      "reverse": false,
+      "text": "When a large assignment feels overwhelming, how likely are you to define a clear focus target before starting?"
+    },
+    {
+      "id": 212,
+      "category": "focus",
+      "reverse": true,
+      "text": "Before accepting another commitment, how likely are you to mix several demanding tasks at the same time?"
+    },
+    {
+      "id": 213,
+      "category": "focus",
+      "reverse": false,
+      "text": "When estimating a familiar task, how likely are you to work on one chosen task for a protected period?"
+    },
+    {
+      "id": 214,
+      "category": "focus",
+      "reverse": true,
+      "text": "During a busy school or work period, how likely are you to switch tasks whenever a new thought appears?"
+    },
+    {
+      "id": 215,
+      "category": "focus",
+      "reverse": false,
+      "text": "When notifications keep appearing, how likely are you to define a clear focus target before starting?"
+    },
+    {
+      "id": 216,
+      "category": "focus",
+      "reverse": true,
+      "text": "After falling behind schedule, how likely are you to mix several demanding tasks at the same time?"
+    },
+    {
+      "id": 217,
+      "category": "focus",
+      "reverse": false,
+      "text": "When working with other people, how likely are you to work on one chosen task for a protected period?"
+    },
+    {
+      "id": 218,
+      "category": "focus",
+      "reverse": true,
+      "text": "Before attending a recurring meeting, how likely are you to switch tasks whenever a new thought appears?"
+    },
+    {
+      "id": 219,
+      "category": "focus",
+      "reverse": false,
+      "text": "At the end of the day, how likely are you to define a clear focus target before starting?"
+    },
+    {
+      "id": 220,
+      "category": "focus",
+      "reverse": true,
+      "text": "When your energy is low, how likely are you to mix several demanding tasks at the same time?"
+    },
+    {
+      "id": 221,
+      "category": "focus",
+      "reverse": false,
+      "text": "After completing a major task, how likely are you to work on one chosen task for a protected period?"
+    },
+    {
+      "id": 222,
+      "category": "focus",
+      "reverse": true,
+      "text": "When priorities suddenly change, how likely are you to switch tasks whenever a new thought appears?"
+    },
+    {
+      "id": 223,
+      "category": "focus",
+      "reverse": false,
+      "text": "While reviewing unfinished work, how likely are you to define a clear focus target before starting?"
+    },
+    {
+      "id": 224,
+      "category": "focus",
+      "reverse": true,
+      "text": "When planning tomorrow, how likely are you to mix several demanding tasks at the same time?"
+    },
+    {
+      "id": 225,
+      "category": "focus",
+      "reverse": false,
+      "text": "At the end of a demanding month, how likely are you to work on one chosen task for a protected period?"
+    },
+    {
+      "id": 226,
+      "category": "distractions",
+      "reverse": false,
+      "text": "At the start of a normal day, how likely are you to reduce predictable distractions before focused work?"
+    },
+    {
+      "id": 227,
+      "category": "distractions",
+      "reverse": true,
+      "text": "When several tasks compete for attention, how likely are you to keep every notification active during important work?"
+    },
+    {
+      "id": 228,
+      "category": "distractions",
+      "reverse": false,
+      "text": "Before beginning an important project, how likely are you to place interruptions into a later review list?"
+    },
+    {
+      "id": 229,
+      "category": "distractions",
+      "reverse": true,
+      "text": "When your calendar already looks full, how likely are you to respond immediately to each non-urgent interruption?"
+    },
+    {
+      "id": 230,
+      "category": "distractions",
+      "reverse": false,
+      "text": "After receiving a new request, how likely are you to reduce predictable distractions before focused work?"
+    },
+    {
+      "id": 231,
+      "category": "distractions",
+      "reverse": true,
+      "text": "When a deadline is two weeks away, how likely are you to keep every notification active during important work?"
+    },
+    {
+      "id": 232,
+      "category": "distractions",
+      "reverse": false,
+      "text": "During your most productive hours, how likely are you to place interruptions into a later review list?"
+    },
+    {
+      "id": 233,
+      "category": "distractions",
+      "reverse": true,
+      "text": "When a task feels unpleasant, how likely are you to respond immediately to each non-urgent interruption?"
+    },
+    {
+      "id": 234,
+      "category": "distractions",
+      "reverse": false,
+      "text": "After an unexpected interruption, how likely are you to reduce predictable distractions before focused work?"
+    },
+    {
+      "id": 235,
+      "category": "distractions",
+      "reverse": true,
+      "text": "While planning the coming week, how likely are you to keep every notification active during important work?"
+    },
+    {
+      "id": 236,
+      "category": "distractions",
+      "reverse": false,
+      "text": "When a large assignment feels overwhelming, how likely are you to place interruptions into a later review list?"
+    },
+    {
+      "id": 237,
+      "category": "distractions",
+      "reverse": true,
+      "text": "Before accepting another commitment, how likely are you to respond immediately to each non-urgent interruption?"
+    },
+    {
+      "id": 238,
+      "category": "distractions",
+      "reverse": false,
+      "text": "When estimating a familiar task, how likely are you to reduce predictable distractions before focused work?"
+    },
+    {
+      "id": 239,
+      "category": "distractions",
+      "reverse": true,
+      "text": "During a busy school or work period, how likely are you to keep every notification active during important work?"
+    },
+    {
+      "id": 240,
+      "category": "distractions",
+      "reverse": false,
+      "text": "When notifications keep appearing, how likely are you to place interruptions into a later review list?"
+    },
+    {
+      "id": 241,
+      "category": "distractions",
+      "reverse": true,
+      "text": "After falling behind schedule, how likely are you to respond immediately to each non-urgent interruption?"
+    },
+    {
+      "id": 242,
+      "category": "distractions",
+      "reverse": false,
+      "text": "When working with other people, how likely are you to reduce predictable distractions before focused work?"
+    },
+    {
+      "id": 243,
+      "category": "distractions",
+      "reverse": true,
+      "text": "Before attending a recurring meeting, how likely are you to keep every notification active during important work?"
+    },
+    {
+      "id": 244,
+      "category": "distractions",
+      "reverse": false,
+      "text": "At the end of the day, how likely are you to place interruptions into a later review list?"
+    },
+    {
+      "id": 245,
+      "category": "distractions",
+      "reverse": true,
+      "text": "When your energy is low, how likely are you to respond immediately to each non-urgent interruption?"
+    },
+    {
+      "id": 246,
+      "category": "distractions",
+      "reverse": false,
+      "text": "After completing a major task, how likely are you to reduce predictable distractions before focused work?"
+    },
+    {
+      "id": 247,
+      "category": "distractions",
+      "reverse": true,
+      "text": "When priorities suddenly change, how likely are you to keep every notification active during important work?"
+    },
+    {
+      "id": 248,
+      "category": "distractions",
+      "reverse": false,
+      "text": "While reviewing unfinished work, how likely are you to place interruptions into a later review list?"
+    },
+    {
+      "id": 249,
+      "category": "distractions",
+      "reverse": true,
+      "text": "When planning tomorrow, how likely are you to respond immediately to each non-urgent interruption?"
+    },
+    {
+      "id": 250,
+      "category": "distractions",
+      "reverse": false,
+      "text": "At the end of a demanding month, how likely are you to reduce predictable distractions before focused work?"
+    },
+    {
+      "id": 251,
+      "category": "procrastination",
+      "reverse": false,
+      "text": "At the start of a normal day, how likely are you to start with a small action when you feel resistance?"
+    },
+    {
+      "id": 252,
+      "category": "procrastination",
+      "reverse": true,
+      "text": "When several tasks compete for attention, how likely are you to wait for the perfect mood before beginning?"
+    },
+    {
+      "id": 253,
+      "category": "procrastination",
+      "reverse": false,
+      "text": "Before beginning an important project, how likely are you to identify what makes a task easy to postpone?"
+    },
+    {
+      "id": 254,
+      "category": "procrastination",
+      "reverse": true,
+      "text": "When your calendar already looks full, how likely are you to use minor tasks to avoid an uncomfortable priority?"
+    },
+    {
+      "id": 255,
+      "category": "procrastination",
+      "reverse": false,
+      "text": "After receiving a new request, how likely are you to start with a small action when you feel resistance?"
+    },
+    {
+      "id": 256,
+      "category": "procrastination",
+      "reverse": true,
+      "text": "When a deadline is two weeks away, how likely are you to wait for the perfect mood before beginning?"
+    },
+    {
+      "id": 257,
+      "category": "procrastination",
+      "reverse": false,
+      "text": "During your most productive hours, how likely are you to identify what makes a task easy to postpone?"
+    },
+    {
+      "id": 258,
+      "category": "procrastination",
+      "reverse": true,
+      "text": "When a task feels unpleasant, how likely are you to use minor tasks to avoid an uncomfortable priority?"
+    },
+    {
+      "id": 259,
+      "category": "procrastination",
+      "reverse": false,
+      "text": "After an unexpected interruption, how likely are you to start with a small action when you feel resistance?"
+    },
+    {
+      "id": 260,
+      "category": "procrastination",
+      "reverse": true,
+      "text": "While planning the coming week, how likely are you to wait for the perfect mood before beginning?"
+    },
+    {
+      "id": 261,
+      "category": "procrastination",
+      "reverse": false,
+      "text": "When a large assignment feels overwhelming, how likely are you to identify what makes a task easy to postpone?"
+    },
+    {
+      "id": 262,
+      "category": "procrastination",
+      "reverse": true,
+      "text": "Before accepting another commitment, how likely are you to use minor tasks to avoid an uncomfortable priority?"
+    },
+    {
+      "id": 263,
+      "category": "procrastination",
+      "reverse": false,
+      "text": "When estimating a familiar task, how likely are you to start with a small action when you feel resistance?"
+    },
+    {
+      "id": 264,
+      "category": "procrastination",
+      "reverse": true,
+      "text": "During a busy school or work period, how likely are you to wait for the perfect mood before beginning?"
+    },
+    {
+      "id": 265,
+      "category": "procrastination",
+      "reverse": false,
+      "text": "When notifications keep appearing, how likely are you to identify what makes a task easy to postpone?"
+    },
+    {
+      "id": 266,
+      "category": "procrastination",
+      "reverse": true,
+      "text": "After falling behind schedule, how likely are you to use minor tasks to avoid an uncomfortable priority?"
+    },
+    {
+      "id": 267,
+      "category": "procrastination",
+      "reverse": false,
+      "text": "When working with other people, how likely are you to start with a small action when you feel resistance?"
+    },
+    {
+      "id": 268,
+      "category": "procrastination",
+      "reverse": true,
+      "text": "Before attending a recurring meeting, how likely are you to wait for the perfect mood before beginning?"
+    },
+    {
+      "id": 269,
+      "category": "procrastination",
+      "reverse": false,
+      "text": "At the end of the day, how likely are you to identify what makes a task easy to postpone?"
+    },
+    {
+      "id": 270,
+      "category": "procrastination",
+      "reverse": true,
+      "text": "When your energy is low, how likely are you to use minor tasks to avoid an uncomfortable priority?"
+    },
+    {
+      "id": 271,
+      "category": "procrastination",
+      "reverse": false,
+      "text": "After completing a major task, how likely are you to start with a small action when you feel resistance?"
+    },
+    {
+      "id": 272,
+      "category": "procrastination",
+      "reverse": true,
+      "text": "When priorities suddenly change, how likely are you to wait for the perfect mood before beginning?"
+    },
+    {
+      "id": 273,
+      "category": "procrastination",
+      "reverse": false,
+      "text": "While reviewing unfinished work, how likely are you to identify what makes a task easy to postpone?"
+    },
+    {
+      "id": 274,
+      "category": "procrastination",
+      "reverse": true,
+      "text": "When planning tomorrow, how likely are you to use minor tasks to avoid an uncomfortable priority?"
+    },
+    {
+      "id": 275,
+      "category": "procrastination",
+      "reverse": false,
+      "text": "At the end of a demanding month, how likely are you to start with a small action when you feel resistance?"
+    },
+    {
+      "id": 276,
+      "category": "routines",
+      "reverse": false,
+      "text": "At the start of a normal day, how likely are you to build a repeatable routine for recurring work?"
+    },
+    {
+      "id": 277,
+      "category": "routines",
+      "reverse": true,
+      "text": "When several tasks compete for attention, how likely are you to recreate the same process from scratch each time?"
+    },
+    {
+      "id": 278,
+      "category": "routines",
+      "reverse": false,
+      "text": "Before beginning an important project, how likely are you to use a simple system to capture and organise commitments?"
+    },
+    {
+      "id": 279,
+      "category": "routines",
+      "reverse": true,
+      "text": "When your calendar already looks full, how likely are you to trust memory to hold every responsibility?"
+    },
+    {
+      "id": 280,
+      "category": "routines",
+      "reverse": false,
+      "text": "After receiving a new request, how likely are you to build a repeatable routine for recurring work?"
+    },
+    {
+      "id": 281,
+      "category": "routines",
+      "reverse": true,
+      "text": "When a deadline is two weeks away, how likely are you to recreate the same process from scratch each time?"
+    },
+    {
+      "id": 282,
+      "category": "routines",
+      "reverse": false,
+      "text": "During your most productive hours, how likely are you to use a simple system to capture and organise commitments?"
+    },
+    {
+      "id": 283,
+      "category": "routines",
+      "reverse": true,
+      "text": "When a task feels unpleasant, how likely are you to trust memory to hold every responsibility?"
+    },
+    {
+      "id": 284,
+      "category": "routines",
+      "reverse": false,
+      "text": "After an unexpected interruption, how likely are you to build a repeatable routine for recurring work?"
+    },
+    {
+      "id": 285,
+      "category": "routines",
+      "reverse": true,
+      "text": "While planning the coming week, how likely are you to recreate the same process from scratch each time?"
+    },
+    {
+      "id": 286,
+      "category": "routines",
+      "reverse": false,
+      "text": "When a large assignment feels overwhelming, how likely are you to use a simple system to capture and organise commitments?"
+    },
+    {
+      "id": 287,
+      "category": "routines",
+      "reverse": true,
+      "text": "Before accepting another commitment, how likely are you to trust memory to hold every responsibility?"
+    },
+    {
+      "id": 288,
+      "category": "routines",
+      "reverse": false,
+      "text": "When estimating a familiar task, how likely are you to build a repeatable routine for recurring work?"
+    },
+    {
+      "id": 289,
+      "category": "routines",
+      "reverse": true,
+      "text": "During a busy school or work period, how likely are you to recreate the same process from scratch each time?"
+    },
+    {
+      "id": 290,
+      "category": "routines",
+      "reverse": false,
+      "text": "When notifications keep appearing, how likely are you to use a simple system to capture and organise commitments?"
+    },
+    {
+      "id": 291,
+      "category": "routines",
+      "reverse": true,
+      "text": "After falling behind schedule, how likely are you to trust memory to hold every responsibility?"
+    },
+    {
+      "id": 292,
+      "category": "routines",
+      "reverse": false,
+      "text": "When working with other people, how likely are you to build a repeatable routine for recurring work?"
+    },
+    {
+      "id": 293,
+      "category": "routines",
+      "reverse": true,
+      "text": "Before attending a recurring meeting, how likely are you to recreate the same process from scratch each time?"
+    },
+    {
+      "id": 294,
+      "category": "routines",
+      "reverse": false,
+      "text": "At the end of the day, how likely are you to use a simple system to capture and organise commitments?"
+    },
+    {
+      "id": 295,
+      "category": "routines",
+      "reverse": true,
+      "text": "When your energy is low, how likely are you to trust memory to hold every responsibility?"
+    },
+    {
+      "id": 296,
+      "category": "routines",
+      "reverse": false,
+      "text": "After completing a major task, how likely are you to build a repeatable routine for recurring work?"
+    },
+    {
+      "id": 297,
+      "category": "routines",
+      "reverse": true,
+      "text": "When priorities suddenly change, how likely are you to recreate the same process from scratch each time?"
+    },
+    {
+      "id": 298,
+      "category": "routines",
+      "reverse": false,
+      "text": "While reviewing unfinished work, how likely are you to use a simple system to capture and organise commitments?"
+    },
+    {
+      "id": 299,
+      "category": "routines",
+      "reverse": true,
+      "text": "When planning tomorrow, how likely are you to trust memory to hold every responsibility?"
+    },
+    {
+      "id": 300,
+      "category": "routines",
+      "reverse": false,
+      "text": "At the end of a demanding month, how likely are you to build a repeatable routine for recurring work?"
+    },
+    {
+      "id": 301,
+      "category": "energy",
+      "reverse": false,
+      "text": "At the start of a normal day, how likely are you to match demanding work with your higher-energy periods?"
+    },
+    {
+      "id": 302,
+      "category": "energy",
+      "reverse": true,
+      "text": "When several tasks compete for attention, how likely are you to schedule every task without considering mental energy?"
+    },
+    {
+      "id": 303,
+      "category": "energy",
+      "reverse": false,
+      "text": "Before beginning an important project, how likely are you to use lower-energy time for lighter tasks?"
+    },
+    {
+      "id": 304,
+      "category": "energy",
+      "reverse": true,
+      "text": "When your calendar already looks full, how likely are you to save the hardest thinking for your most depleted period?"
+    },
+    {
+      "id": 305,
+      "category": "energy",
+      "reverse": false,
+      "text": "After receiving a new request, how likely are you to match demanding work with your higher-energy periods?"
+    },
+    {
+      "id": 306,
+      "category": "energy",
+      "reverse": true,
+      "text": "When a deadline is two weeks away, how likely are you to schedule every task without considering mental energy?"
+    },
+    {
+      "id": 307,
+      "category": "energy",
+      "reverse": false,
+      "text": "During your most productive hours, how likely are you to use lower-energy time for lighter tasks?"
+    },
+    {
+      "id": 308,
+      "category": "energy",
+      "reverse": true,
+      "text": "When a task feels unpleasant, how likely are you to save the hardest thinking for your most depleted period?"
+    },
+    {
+      "id": 309,
+      "category": "energy",
+      "reverse": false,
+      "text": "After an unexpected interruption, how likely are you to match demanding work with your higher-energy periods?"
+    },
+    {
+      "id": 310,
+      "category": "energy",
+      "reverse": true,
+      "text": "While planning the coming week, how likely are you to schedule every task without considering mental energy?"
+    },
+    {
+      "id": 311,
+      "category": "energy",
+      "reverse": false,
+      "text": "When a large assignment feels overwhelming, how likely are you to use lower-energy time for lighter tasks?"
+    },
+    {
+      "id": 312,
+      "category": "energy",
+      "reverse": true,
+      "text": "Before accepting another commitment, how likely are you to save the hardest thinking for your most depleted period?"
+    },
+    {
+      "id": 313,
+      "category": "energy",
+      "reverse": false,
+      "text": "When estimating a familiar task, how likely are you to match demanding work with your higher-energy periods?"
+    },
+    {
+      "id": 314,
+      "category": "energy",
+      "reverse": true,
+      "text": "During a busy school or work period, how likely are you to schedule every task without considering mental energy?"
+    },
+    {
+      "id": 315,
+      "category": "energy",
+      "reverse": false,
+      "text": "When notifications keep appearing, how likely are you to use lower-energy time for lighter tasks?"
+    },
+    {
+      "id": 316,
+      "category": "energy",
+      "reverse": true,
+      "text": "After falling behind schedule, how likely are you to save the hardest thinking for your most depleted period?"
+    },
+    {
+      "id": 317,
+      "category": "energy",
+      "reverse": false,
+      "text": "When working with other people, how likely are you to match demanding work with your higher-energy periods?"
+    },
+    {
+      "id": 318,
+      "category": "energy",
+      "reverse": true,
+      "text": "Before attending a recurring meeting, how likely are you to schedule every task without considering mental energy?"
+    },
+    {
+      "id": 319,
+      "category": "energy",
+      "reverse": false,
+      "text": "At the end of the day, how likely are you to use lower-energy time for lighter tasks?"
+    },
+    {
+      "id": 320,
+      "category": "energy",
+      "reverse": true,
+      "text": "When your energy is low, how likely are you to save the hardest thinking for your most depleted period?"
+    },
+    {
+      "id": 321,
+      "category": "energy",
+      "reverse": false,
+      "text": "After completing a major task, how likely are you to match demanding work with your higher-energy periods?"
+    },
+    {
+      "id": 322,
+      "category": "energy",
+      "reverse": true,
+      "text": "When priorities suddenly change, how likely are you to schedule every task without considering mental energy?"
+    },
+    {
+      "id": 323,
+      "category": "energy",
+      "reverse": false,
+      "text": "While reviewing unfinished work, how likely are you to use lower-energy time for lighter tasks?"
+    },
+    {
+      "id": 324,
+      "category": "energy",
+      "reverse": true,
+      "text": "When planning tomorrow, how likely are you to save the hardest thinking for your most depleted period?"
+    },
+    {
+      "id": 325,
+      "category": "energy",
+      "reverse": false,
+      "text": "At the end of a demanding month, how likely are you to match demanding work with your higher-energy periods?"
+    },
+    {
+      "id": 326,
+      "category": "buffers",
+      "reverse": false,
+      "text": "At the start of a normal day, how likely are you to leave buffer time between demanding commitments?"
+    },
+    {
+      "id": 327,
+      "category": "buffers",
+      "reverse": true,
+      "text": "When several tasks compete for attention, how likely are you to schedule every available minute with no margin?"
+    },
+    {
+      "id": 328,
+      "category": "buffers",
+      "reverse": false,
+      "text": "Before beginning an important project, how likely are you to reserve capacity for delays and unexpected work?"
+    },
+    {
+      "id": 329,
+      "category": "buffers",
+      "reverse": true,
+      "text": "When your calendar already looks full, how likely are you to assume transitions and interruptions will take no time?"
+    },
+    {
+      "id": 330,
+      "category": "buffers",
+      "reverse": false,
+      "text": "After receiving a new request, how likely are you to leave buffer time between demanding commitments?"
+    },
+    {
+      "id": 331,
+      "category": "buffers",
+      "reverse": true,
+      "text": "When a deadline is two weeks away, how likely are you to schedule every available minute with no margin?"
+    },
+    {
+      "id": 332,
+      "category": "buffers",
+      "reverse": false,
+      "text": "During your most productive hours, how likely are you to reserve capacity for delays and unexpected work?"
+    },
+    {
+      "id": 333,
+      "category": "buffers",
+      "reverse": true,
+      "text": "When a task feels unpleasant, how likely are you to assume transitions and interruptions will take no time?"
+    },
+    {
+      "id": 334,
+      "category": "buffers",
+      "reverse": false,
+      "text": "After an unexpected interruption, how likely are you to leave buffer time between demanding commitments?"
+    },
+    {
+      "id": 335,
+      "category": "buffers",
+      "reverse": true,
+      "text": "While planning the coming week, how likely are you to schedule every available minute with no margin?"
+    },
+    {
+      "id": 336,
+      "category": "buffers",
+      "reverse": false,
+      "text": "When a large assignment feels overwhelming, how likely are you to reserve capacity for delays and unexpected work?"
+    },
+    {
+      "id": 337,
+      "category": "buffers",
+      "reverse": true,
+      "text": "Before accepting another commitment, how likely are you to assume transitions and interruptions will take no time?"
+    },
+    {
+      "id": 338,
+      "category": "buffers",
+      "reverse": false,
+      "text": "When estimating a familiar task, how likely are you to leave buffer time between demanding commitments?"
+    },
+    {
+      "id": 339,
+      "category": "buffers",
+      "reverse": true,
+      "text": "During a busy school or work period, how likely are you to schedule every available minute with no margin?"
+    },
+    {
+      "id": 340,
+      "category": "buffers",
+      "reverse": false,
+      "text": "When notifications keep appearing, how likely are you to reserve capacity for delays and unexpected work?"
+    },
+    {
+      "id": 341,
+      "category": "buffers",
+      "reverse": true,
+      "text": "After falling behind schedule, how likely are you to assume transitions and interruptions will take no time?"
+    },
+    {
+      "id": 342,
+      "category": "buffers",
+      "reverse": false,
+      "text": "When working with other people, how likely are you to leave buffer time between demanding commitments?"
+    },
+    {
+      "id": 343,
+      "category": "buffers",
+      "reverse": true,
+      "text": "Before attending a recurring meeting, how likely are you to schedule every available minute with no margin?"
+    },
+    {
+      "id": 344,
+      "category": "buffers",
+      "reverse": false,
+      "text": "At the end of the day, how likely are you to reserve capacity for delays and unexpected work?"
+    },
+    {
+      "id": 345,
+      "category": "buffers",
+      "reverse": true,
+      "text": "When your energy is low, how likely are you to assume transitions and interruptions will take no time?"
+    },
+    {
+      "id": 346,
+      "category": "buffers",
+      "reverse": false,
+      "text": "After completing a major task, how likely are you to leave buffer time between demanding commitments?"
+    },
+    {
+      "id": 347,
+      "category": "buffers",
+      "reverse": true,
+      "text": "When priorities suddenly change, how likely are you to schedule every available minute with no margin?"
+    },
+    {
+      "id": 348,
+      "category": "buffers",
+      "reverse": false,
+      "text": "While reviewing unfinished work, how likely are you to reserve capacity for delays and unexpected work?"
+    },
+    {
+      "id": 349,
+      "category": "buffers",
+      "reverse": true,
+      "text": "When planning tomorrow, how likely are you to assume transitions and interruptions will take no time?"
+    },
+    {
+      "id": 350,
+      "category": "buffers",
+      "reverse": false,
+      "text": "At the end of a demanding month, how likely are you to leave buffer time between demanding commitments?"
+    },
+    {
+      "id": 351,
+      "category": "delegation",
+      "reverse": false,
+      "text": "At the start of a normal day, how likely are you to delegate suitable work with clear expectations?"
+    },
+    {
+      "id": 352,
+      "category": "delegation",
+      "reverse": true,
+      "text": "When several tasks compete for attention, how likely are you to keep every task even when another person could handle it?"
+    },
+    {
+      "id": 353,
+      "category": "delegation",
+      "reverse": false,
+      "text": "Before beginning an important project, how likely are you to coordinate responsibilities so effort is not duplicated?"
+    },
+    {
+      "id": 354,
+      "category": "delegation",
+      "reverse": true,
+      "text": "When your calendar already looks full, how likely are you to assign work without clarifying ownership or timing?"
+    },
+    {
+      "id": 355,
+      "category": "delegation",
+      "reverse": false,
+      "text": "After receiving a new request, how likely are you to delegate suitable work with clear expectations?"
+    },
+    {
+      "id": 356,
+      "category": "delegation",
+      "reverse": true,
+      "text": "When a deadline is two weeks away, how likely are you to keep every task even when another person could handle it?"
+    },
+    {
+      "id": 357,
+      "category": "delegation",
+      "reverse": false,
+      "text": "During your most productive hours, how likely are you to coordinate responsibilities so effort is not duplicated?"
+    },
+    {
+      "id": 358,
+      "category": "delegation",
+      "reverse": true,
+      "text": "When a task feels unpleasant, how likely are you to assign work without clarifying ownership or timing?"
+    },
+    {
+      "id": 359,
+      "category": "delegation",
+      "reverse": false,
+      "text": "After an unexpected interruption, how likely are you to delegate suitable work with clear expectations?"
+    },
+    {
+      "id": 360,
+      "category": "delegation",
+      "reverse": true,
+      "text": "While planning the coming week, how likely are you to keep every task even when another person could handle it?"
+    },
+    {
+      "id": 361,
+      "category": "delegation",
+      "reverse": false,
+      "text": "When a large assignment feels overwhelming, how likely are you to coordinate responsibilities so effort is not duplicated?"
+    },
+    {
+      "id": 362,
+      "category": "delegation",
+      "reverse": true,
+      "text": "Before accepting another commitment, how likely are you to assign work without clarifying ownership or timing?"
+    },
+    {
+      "id": 363,
+      "category": "delegation",
+      "reverse": false,
+      "text": "When estimating a familiar task, how likely are you to delegate suitable work with clear expectations?"
+    },
+    {
+      "id": 364,
+      "category": "delegation",
+      "reverse": true,
+      "text": "During a busy school or work period, how likely are you to keep every task even when another person could handle it?"
+    },
+    {
+      "id": 365,
+      "category": "delegation",
+      "reverse": false,
+      "text": "When notifications keep appearing, how likely are you to coordinate responsibilities so effort is not duplicated?"
+    },
+    {
+      "id": 366,
+      "category": "delegation",
+      "reverse": true,
+      "text": "After falling behind schedule, how likely are you to assign work without clarifying ownership or timing?"
+    },
+    {
+      "id": 367,
+      "category": "delegation",
+      "reverse": false,
+      "text": "When working with other people, how likely are you to delegate suitable work with clear expectations?"
+    },
+    {
+      "id": 368,
+      "category": "delegation",
+      "reverse": true,
+      "text": "Before attending a recurring meeting, how likely are you to keep every task even when another person could handle it?"
+    },
+    {
+      "id": 369,
+      "category": "delegation",
+      "reverse": false,
+      "text": "At the end of the day, how likely are you to coordinate responsibilities so effort is not duplicated?"
+    },
+    {
+      "id": 370,
+      "category": "delegation",
+      "reverse": true,
+      "text": "When your energy is low, how likely are you to assign work without clarifying ownership or timing?"
+    },
+    {
+      "id": 371,
+      "category": "delegation",
+      "reverse": false,
+      "text": "After completing a major task, how likely are you to delegate suitable work with clear expectations?"
+    },
+    {
+      "id": 372,
+      "category": "delegation",
+      "reverse": true,
+      "text": "When priorities suddenly change, how likely are you to keep every task even when another person could handle it?"
+    },
+    {
+      "id": 373,
+      "category": "delegation",
+      "reverse": false,
+      "text": "While reviewing unfinished work, how likely are you to coordinate responsibilities so effort is not duplicated?"
+    },
+    {
+      "id": 374,
+      "category": "delegation",
+      "reverse": true,
+      "text": "When planning tomorrow, how likely are you to assign work without clarifying ownership or timing?"
+    },
+    {
+      "id": 375,
+      "category": "delegation",
+      "reverse": false,
+      "text": "At the end of a demanding month, how likely are you to delegate suitable work with clear expectations?"
+    },
+    {
+      "id": 376,
+      "category": "boundaries",
+      "reverse": false,
+      "text": "At the start of a normal day, how likely are you to decline a low-priority request when capacity is limited?"
+    },
+    {
+      "id": 377,
+      "category": "boundaries",
+      "reverse": true,
+      "text": "When several tasks compete for attention, how likely are you to accept new commitments without checking your schedule?"
+    },
+    {
+      "id": 378,
+      "category": "boundaries",
+      "reverse": false,
+      "text": "Before beginning an important project, how likely are you to communicate realistic availability before accepting work?"
+    },
+    {
+      "id": 379,
+      "category": "boundaries",
+      "reverse": true,
+      "text": "When your calendar already looks full, how likely are you to allow other people’s urgency to control all your time?"
+    },
+    {
+      "id": 380,
+      "category": "boundaries",
+      "reverse": false,
+      "text": "After receiving a new request, how likely are you to decline a low-priority request when capacity is limited?"
+    },
+    {
+      "id": 381,
+      "category": "boundaries",
+      "reverse": true,
+      "text": "When a deadline is two weeks away, how likely are you to accept new commitments without checking your schedule?"
+    },
+    {
+      "id": 382,
+      "category": "boundaries",
+      "reverse": false,
+      "text": "During your most productive hours, how likely are you to communicate realistic availability before accepting work?"
+    },
+    {
+      "id": 383,
+      "category": "boundaries",
+      "reverse": true,
+      "text": "When a task feels unpleasant, how likely are you to allow other people’s urgency to control all your time?"
+    },
+    {
+      "id": 384,
+      "category": "boundaries",
+      "reverse": false,
+      "text": "After an unexpected interruption, how likely are you to decline a low-priority request when capacity is limited?"
+    },
+    {
+      "id": 385,
+      "category": "boundaries",
+      "reverse": true,
+      "text": "While planning the coming week, how likely are you to accept new commitments without checking your schedule?"
+    },
+    {
+      "id": 386,
+      "category": "boundaries",
+      "reverse": false,
+      "text": "When a large assignment feels overwhelming, how likely are you to communicate realistic availability before accepting work?"
+    },
+    {
+      "id": 387,
+      "category": "boundaries",
+      "reverse": true,
+      "text": "Before accepting another commitment, how likely are you to allow other people’s urgency to control all your time?"
+    },
+    {
+      "id": 388,
+      "category": "boundaries",
+      "reverse": false,
+      "text": "When estimating a familiar task, how likely are you to decline a low-priority request when capacity is limited?"
+    },
+    {
+      "id": 389,
+      "category": "boundaries",
+      "reverse": true,
+      "text": "During a busy school or work period, how likely are you to accept new commitments without checking your schedule?"
+    },
+    {
+      "id": 390,
+      "category": "boundaries",
+      "reverse": false,
+      "text": "When notifications keep appearing, how likely are you to communicate realistic availability before accepting work?"
+    },
+    {
+      "id": 391,
+      "category": "boundaries",
+      "reverse": true,
+      "text": "After falling behind schedule, how likely are you to allow other people’s urgency to control all your time?"
+    },
+    {
+      "id": 392,
+      "category": "boundaries",
+      "reverse": false,
+      "text": "When working with other people, how likely are you to decline a low-priority request when capacity is limited?"
+    },
+    {
+      "id": 393,
+      "category": "boundaries",
+      "reverse": true,
+      "text": "Before attending a recurring meeting, how likely are you to accept new commitments without checking your schedule?"
+    },
+    {
+      "id": 394,
+      "category": "boundaries",
+      "reverse": false,
+      "text": "At the end of the day, how likely are you to communicate realistic availability before accepting work?"
+    },
+    {
+      "id": 395,
+      "category": "boundaries",
+      "reverse": true,
+      "text": "When your energy is low, how likely are you to allow other people’s urgency to control all your time?"
+    },
+    {
+      "id": 396,
+      "category": "boundaries",
+      "reverse": false,
+      "text": "After completing a major task, how likely are you to decline a low-priority request when capacity is limited?"
+    },
+    {
+      "id": 397,
+      "category": "boundaries",
+      "reverse": true,
+      "text": "When priorities suddenly change, how likely are you to accept new commitments without checking your schedule?"
+    },
+    {
+      "id": 398,
+      "category": "boundaries",
+      "reverse": false,
+      "text": "While reviewing unfinished work, how likely are you to communicate realistic availability before accepting work?"
+    },
+    {
+      "id": 399,
+      "category": "boundaries",
+      "reverse": true,
+      "text": "When planning tomorrow, how likely are you to allow other people’s urgency to control all your time?"
+    },
+    {
+      "id": 400,
+      "category": "boundaries",
+      "reverse": false,
+      "text": "At the end of a demanding month, how likely are you to decline a low-priority request when capacity is limited?"
+    },
+    {
+      "id": 401,
+      "category": "meetings",
+      "reverse": false,
+      "text": "At the start of a normal day, how likely are you to clarify the purpose and desired outcome of a meeting?"
+    },
+    {
+      "id": 402,
+      "category": "meetings",
+      "reverse": true,
+      "text": "When several tasks compete for attention, how likely are you to attend recurring meetings without checking their value?"
+    },
+    {
+      "id": 403,
+      "category": "meetings",
+      "reverse": false,
+      "text": "Before beginning an important project, how likely are you to use concise communication to reduce unnecessary follow-up?"
+    },
+    {
+      "id": 404,
+      "category": "meetings",
+      "reverse": true,
+      "text": "When your calendar already looks full, how likely are you to let discussions continue without decisions or next steps?"
+    },
+    {
+      "id": 405,
+      "category": "meetings",
+      "reverse": false,
+      "text": "After receiving a new request, how likely are you to clarify the purpose and desired outcome of a meeting?"
+    },
+    {
+      "id": 406,
+      "category": "meetings",
+      "reverse": true,
+      "text": "When a deadline is two weeks away, how likely are you to attend recurring meetings without checking their value?"
+    },
+    {
+      "id": 407,
+      "category": "meetings",
+      "reverse": false,
+      "text": "During your most productive hours, how likely are you to use concise communication to reduce unnecessary follow-up?"
+    },
+    {
+      "id": 408,
+      "category": "meetings",
+      "reverse": true,
+      "text": "When a task feels unpleasant, how likely are you to let discussions continue without decisions or next steps?"
+    },
+    {
+      "id": 409,
+      "category": "meetings",
+      "reverse": false,
+      "text": "After an unexpected interruption, how likely are you to clarify the purpose and desired outcome of a meeting?"
+    },
+    {
+      "id": 410,
+      "category": "meetings",
+      "reverse": true,
+      "text": "While planning the coming week, how likely are you to attend recurring meetings without checking their value?"
+    },
+    {
+      "id": 411,
+      "category": "meetings",
+      "reverse": false,
+      "text": "When a large assignment feels overwhelming, how likely are you to use concise communication to reduce unnecessary follow-up?"
+    },
+    {
+      "id": 412,
+      "category": "meetings",
+      "reverse": true,
+      "text": "Before accepting another commitment, how likely are you to let discussions continue without decisions or next steps?"
+    },
+    {
+      "id": 413,
+      "category": "meetings",
+      "reverse": false,
+      "text": "When estimating a familiar task, how likely are you to clarify the purpose and desired outcome of a meeting?"
+    },
+    {
+      "id": 414,
+      "category": "meetings",
+      "reverse": true,
+      "text": "During a busy school or work period, how likely are you to attend recurring meetings without checking their value?"
+    },
+    {
+      "id": 415,
+      "category": "meetings",
+      "reverse": false,
+      "text": "When notifications keep appearing, how likely are you to use concise communication to reduce unnecessary follow-up?"
+    },
+    {
+      "id": 416,
+      "category": "meetings",
+      "reverse": true,
+      "text": "After falling behind schedule, how likely are you to let discussions continue without decisions or next steps?"
+    },
+    {
+      "id": 417,
+      "category": "meetings",
+      "reverse": false,
+      "text": "When working with other people, how likely are you to clarify the purpose and desired outcome of a meeting?"
+    },
+    {
+      "id": 418,
+      "category": "meetings",
+      "reverse": true,
+      "text": "Before attending a recurring meeting, how likely are you to attend recurring meetings without checking their value?"
+    },
+    {
+      "id": 419,
+      "category": "meetings",
+      "reverse": false,
+      "text": "At the end of the day, how likely are you to use concise communication to reduce unnecessary follow-up?"
+    },
+    {
+      "id": 420,
+      "category": "meetings",
+      "reverse": true,
+      "text": "When your energy is low, how likely are you to let discussions continue without decisions or next steps?"
+    },
+    {
+      "id": 421,
+      "category": "meetings",
+      "reverse": false,
+      "text": "After completing a major task, how likely are you to clarify the purpose and desired outcome of a meeting?"
+    },
+    {
+      "id": 422,
+      "category": "meetings",
+      "reverse": true,
+      "text": "When priorities suddenly change, how likely are you to attend recurring meetings without checking their value?"
+    },
+    {
+      "id": 423,
+      "category": "meetings",
+      "reverse": false,
+      "text": "While reviewing unfinished work, how likely are you to use concise communication to reduce unnecessary follow-up?"
+    },
+    {
+      "id": 424,
+      "category": "meetings",
+      "reverse": true,
+      "text": "When planning tomorrow, how likely are you to let discussions continue without decisions or next steps?"
+    },
+    {
+      "id": 425,
+      "category": "meetings",
+      "reverse": false,
+      "text": "At the end of a demanding month, how likely are you to clarify the purpose and desired outcome of a meeting?"
+    },
+    {
+      "id": 426,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "At the start of a normal day, how likely are you to replan deliberately when circumstances change?"
+    },
+    {
+      "id": 427,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When several tasks compete for attention, how likely are you to abandon the whole plan after one disruption?"
+    },
+    {
+      "id": 428,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "Before beginning an important project, how likely are you to protect the most important outcome while adjusting the schedule?"
+    },
+    {
+      "id": 429,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When your calendar already looks full, how likely are you to keep following an outdated schedule despite new information?"
+    },
+    {
+      "id": 430,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "After receiving a new request, how likely are you to replan deliberately when circumstances change?"
+    },
+    {
+      "id": 431,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When a deadline is two weeks away, how likely are you to abandon the whole plan after one disruption?"
+    },
+    {
+      "id": 432,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "During your most productive hours, how likely are you to protect the most important outcome while adjusting the schedule?"
+    },
+    {
+      "id": 433,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When a task feels unpleasant, how likely are you to keep following an outdated schedule despite new information?"
+    },
+    {
+      "id": 434,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "After an unexpected interruption, how likely are you to replan deliberately when circumstances change?"
+    },
+    {
+      "id": 435,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "While planning the coming week, how likely are you to abandon the whole plan after one disruption?"
+    },
+    {
+      "id": 436,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "When a large assignment feels overwhelming, how likely are you to protect the most important outcome while adjusting the schedule?"
+    },
+    {
+      "id": 437,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "Before accepting another commitment, how likely are you to keep following an outdated schedule despite new information?"
+    },
+    {
+      "id": 438,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "When estimating a familiar task, how likely are you to replan deliberately when circumstances change?"
+    },
+    {
+      "id": 439,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "During a busy school or work period, how likely are you to abandon the whole plan after one disruption?"
+    },
+    {
+      "id": 440,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "When notifications keep appearing, how likely are you to protect the most important outcome while adjusting the schedule?"
+    },
+    {
+      "id": 441,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "After falling behind schedule, how likely are you to keep following an outdated schedule despite new information?"
+    },
+    {
+      "id": 442,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "When working with other people, how likely are you to replan deliberately when circumstances change?"
+    },
+    {
+      "id": 443,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "Before attending a recurring meeting, how likely are you to abandon the whole plan after one disruption?"
+    },
+    {
+      "id": 444,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "At the end of the day, how likely are you to protect the most important outcome while adjusting the schedule?"
+    },
+    {
+      "id": 445,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When your energy is low, how likely are you to keep following an outdated schedule despite new information?"
+    },
+    {
+      "id": 446,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "After completing a major task, how likely are you to replan deliberately when circumstances change?"
+    },
+    {
+      "id": 447,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When priorities suddenly change, how likely are you to abandon the whole plan after one disruption?"
+    },
+    {
+      "id": 448,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "While reviewing unfinished work, how likely are you to protect the most important outcome while adjusting the schedule?"
+    },
+    {
+      "id": 449,
+      "category": "adaptability",
+      "reverse": true,
+      "text": "When planning tomorrow, how likely are you to keep following an outdated schedule despite new information?"
+    },
+    {
+      "id": 450,
+      "category": "adaptability",
+      "reverse": false,
+      "text": "At the end of a demanding month, how likely are you to replan deliberately when circumstances change?"
+    },
+    {
+      "id": 451,
+      "category": "review",
+      "reverse": false,
+      "text": "At the start of a normal day, how likely are you to review completed, delayed, and unfinished work regularly?"
+    },
+    {
+      "id": 452,
+      "category": "review",
+      "reverse": true,
+      "text": "When several tasks compete for attention, how likely are you to repeat planning mistakes without reviewing them?"
+    },
+    {
+      "id": 453,
+      "category": "review",
+      "reverse": false,
+      "text": "Before beginning an important project, how likely are you to use time records to improve future plans?"
+    },
+    {
+      "id": 454,
+      "category": "review",
+      "reverse": true,
+      "text": "When your calendar already looks full, how likely are you to measure success only by how busy the day felt?"
+    },
+    {
+      "id": 455,
+      "category": "review",
+      "reverse": false,
+      "text": "After receiving a new request, how likely are you to review completed, delayed, and unfinished work regularly?"
+    },
+    {
+      "id": 456,
+      "category": "review",
+      "reverse": true,
+      "text": "When a deadline is two weeks away, how likely are you to repeat planning mistakes without reviewing them?"
+    },
+    {
+      "id": 457,
+      "category": "review",
+      "reverse": false,
+      "text": "During your most productive hours, how likely are you to use time records to improve future plans?"
+    },
+    {
+      "id": 458,
+      "category": "review",
+      "reverse": true,
+      "text": "When a task feels unpleasant, how likely are you to measure success only by how busy the day felt?"
+    },
+    {
+      "id": 459,
+      "category": "review",
+      "reverse": false,
+      "text": "After an unexpected interruption, how likely are you to review completed, delayed, and unfinished work regularly?"
+    },
+    {
+      "id": 460,
+      "category": "review",
+      "reverse": true,
+      "text": "While planning the coming week, how likely are you to repeat planning mistakes without reviewing them?"
+    },
+    {
+      "id": 461,
+      "category": "review",
+      "reverse": false,
+      "text": "When a large assignment feels overwhelming, how likely are you to use time records to improve future plans?"
+    },
+    {
+      "id": 462,
+      "category": "review",
+      "reverse": true,
+      "text": "Before accepting another commitment, how likely are you to measure success only by how busy the day felt?"
+    },
+    {
+      "id": 463,
+      "category": "review",
+      "reverse": false,
+      "text": "When estimating a familiar task, how likely are you to review completed, delayed, and unfinished work regularly?"
+    },
+    {
+      "id": 464,
+      "category": "review",
+      "reverse": true,
+      "text": "During a busy school or work period, how likely are you to repeat planning mistakes without reviewing them?"
+    },
+    {
+      "id": 465,
+      "category": "review",
+      "reverse": false,
+      "text": "When notifications keep appearing, how likely are you to use time records to improve future plans?"
+    },
+    {
+      "id": 466,
+      "category": "review",
+      "reverse": true,
+      "text": "After falling behind schedule, how likely are you to measure success only by how busy the day felt?"
+    },
+    {
+      "id": 467,
+      "category": "review",
+      "reverse": false,
+      "text": "When working with other people, how likely are you to review completed, delayed, and unfinished work regularly?"
+    },
+    {
+      "id": 468,
+      "category": "review",
+      "reverse": true,
+      "text": "Before attending a recurring meeting, how likely are you to repeat planning mistakes without reviewing them?"
+    },
+    {
+      "id": 469,
+      "category": "review",
+      "reverse": false,
+      "text": "At the end of the day, how likely are you to use time records to improve future plans?"
+    },
+    {
+      "id": 470,
+      "category": "review",
+      "reverse": true,
+      "text": "When your energy is low, how likely are you to measure success only by how busy the day felt?"
+    },
+    {
+      "id": 471,
+      "category": "review",
+      "reverse": false,
+      "text": "After completing a major task, how likely are you to review completed, delayed, and unfinished work regularly?"
+    },
+    {
+      "id": 472,
+      "category": "review",
+      "reverse": true,
+      "text": "When priorities suddenly change, how likely are you to repeat planning mistakes without reviewing them?"
+    },
+    {
+      "id": 473,
+      "category": "review",
+      "reverse": false,
+      "text": "While reviewing unfinished work, how likely are you to use time records to improve future plans?"
+    },
+    {
+      "id": 474,
+      "category": "review",
+      "reverse": true,
+      "text": "When planning tomorrow, how likely are you to measure success only by how busy the day felt?"
+    },
+    {
+      "id": 475,
+      "category": "review",
+      "reverse": false,
+      "text": "At the end of a demanding month, how likely are you to review completed, delayed, and unfinished work regularly?"
+    },
+    {
+      "id": 476,
+      "category": "balance",
+      "reverse": false,
+      "text": "At the start of a normal day, how likely are you to schedule enough rest to support sustainable performance?"
+    },
+    {
+      "id": 477,
+      "category": "balance",
+      "reverse": true,
+      "text": "When several tasks compete for attention, how likely are you to treat rest as wasted time regardless of fatigue?"
+    },
+    {
+      "id": 478,
+      "category": "balance",
+      "reverse": false,
+      "text": "Before beginning an important project, how likely are you to protect time for health, relationships, and recovery?"
+    },
+    {
+      "id": 479,
+      "category": "balance",
+      "reverse": true,
+      "text": "When your calendar already looks full, how likely are you to use work to crowd out every non-work priority?"
+    },
+    {
+      "id": 480,
+      "category": "balance",
+      "reverse": false,
+      "text": "After receiving a new request, how likely are you to schedule enough rest to support sustainable performance?"
+    },
+    {
+      "id": 481,
+      "category": "balance",
+      "reverse": true,
+      "text": "When a deadline is two weeks away, how likely are you to treat rest as wasted time regardless of fatigue?"
+    },
+    {
+      "id": 482,
+      "category": "balance",
+      "reverse": false,
+      "text": "During your most productive hours, how likely are you to protect time for health, relationships, and recovery?"
+    },
+    {
+      "id": 483,
+      "category": "balance",
+      "reverse": true,
+      "text": "When a task feels unpleasant, how likely are you to use work to crowd out every non-work priority?"
+    },
+    {
+      "id": 484,
+      "category": "balance",
+      "reverse": false,
+      "text": "After an unexpected interruption, how likely are you to schedule enough rest to support sustainable performance?"
+    },
+    {
+      "id": 485,
+      "category": "balance",
+      "reverse": true,
+      "text": "While planning the coming week, how likely are you to treat rest as wasted time regardless of fatigue?"
+    },
+    {
+      "id": 486,
+      "category": "balance",
+      "reverse": false,
+      "text": "When a large assignment feels overwhelming, how likely are you to protect time for health, relationships, and recovery?"
+    },
+    {
+      "id": 487,
+      "category": "balance",
+      "reverse": true,
+      "text": "Before accepting another commitment, how likely are you to use work to crowd out every non-work priority?"
+    },
+    {
+      "id": 488,
+      "category": "balance",
+      "reverse": false,
+      "text": "When estimating a familiar task, how likely are you to schedule enough rest to support sustainable performance?"
+    },
+    {
+      "id": 489,
+      "category": "balance",
+      "reverse": true,
+      "text": "During a busy school or work period, how likely are you to treat rest as wasted time regardless of fatigue?"
+    },
+    {
+      "id": 490,
+      "category": "balance",
+      "reverse": false,
+      "text": "When notifications keep appearing, how likely are you to protect time for health, relationships, and recovery?"
+    },
+    {
+      "id": 491,
+      "category": "balance",
+      "reverse": true,
+      "text": "After falling behind schedule, how likely are you to use work to crowd out every non-work priority?"
+    },
+    {
+      "id": 492,
+      "category": "balance",
+      "reverse": false,
+      "text": "When working with other people, how likely are you to schedule enough rest to support sustainable performance?"
+    },
+    {
+      "id": 493,
+      "category": "balance",
+      "reverse": true,
+      "text": "Before attending a recurring meeting, how likely are you to treat rest as wasted time regardless of fatigue?"
+    },
+    {
+      "id": 494,
+      "category": "balance",
+      "reverse": false,
+      "text": "At the end of the day, how likely are you to protect time for health, relationships, and recovery?"
+    },
+    {
+      "id": 495,
+      "category": "balance",
+      "reverse": true,
+      "text": "When your energy is low, how likely are you to use work to crowd out every non-work priority?"
+    },
+    {
+      "id": 496,
+      "category": "balance",
+      "reverse": false,
+      "text": "After completing a major task, how likely are you to schedule enough rest to support sustainable performance?"
+    },
+    {
+      "id": 497,
+      "category": "balance",
+      "reverse": true,
+      "text": "When priorities suddenly change, how likely are you to treat rest as wasted time regardless of fatigue?"
+    },
+    {
+      "id": 498,
+      "category": "balance",
+      "reverse": false,
+      "text": "While reviewing unfinished work, how likely are you to protect time for health, relationships, and recovery?"
+    },
+    {
+      "id": 499,
+      "category": "balance",
+      "reverse": true,
+      "text": "When planning tomorrow, how likely are you to use work to crowd out every non-work priority?"
+    },
+    {
+      "id": 500,
+      "category": "balance",
+      "reverse": false,
+      "text": "At the end of a demanding month, how likely are you to schedule enough rest to support sustainable performance?"
+    }
+  ]
+}

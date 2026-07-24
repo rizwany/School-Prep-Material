@@ -1,0 +1,3678 @@
+{
+  "meta": {
+    "title": "Your Mental Health Today",
+    "description": "A private 500-statement check-in on how you are doing right now, across 25 present-day mental health areas. It is not a diagnostic instrument.",
+    "scale": {
+      "min": 1,
+      "max": 10,
+      "minLabel": "Not at all true today",
+      "maxLabel": "Very true today"
+    },
+    "categories": [
+      {
+        "id": "mood_today",
+        "label": "Today's Mood",
+        "icon": "🌤️"
+      },
+      {
+        "id": "morning_outlook",
+        "label": "Morning Outlook",
+        "icon": "🌅"
+      },
+      {
+        "id": "energy_today",
+        "label": "Energy Today",
+        "icon": "⚡"
+      },
+      {
+        "id": "stress_now",
+        "label": "Stress Right Now",
+        "icon": "⚖️"
+      },
+      {
+        "id": "anxiety_today",
+        "label": "Worry & Anxiety Today",
+        "icon": "🫧"
+      },
+      {
+        "id": "focus_today",
+        "label": "Focus & Clarity Today",
+        "icon": "🎯"
+      },
+      {
+        "id": "motivation_today",
+        "label": "Motivation Today",
+        "icon": "🚀"
+      },
+      {
+        "id": "sleep_last_night",
+        "label": "Sleep Last Night",
+        "icon": "🌙"
+      },
+      {
+        "id": "physical_today",
+        "label": "Physical Sensations Today",
+        "icon": "🫁"
+      },
+      {
+        "id": "appetite_today",
+        "label": "Appetite Today",
+        "icon": "🍽️"
+      },
+      {
+        "id": "connection_today",
+        "label": "Social Connection Today",
+        "icon": "🤝"
+      },
+      {
+        "id": "loneliness_today",
+        "label": "Loneliness Today",
+        "icon": "🌫️"
+      },
+      {
+        "id": "regulation_today",
+        "label": "Emotional Regulation Today",
+        "icon": "🎛️"
+      },
+      {
+        "id": "inner_dialogue_today",
+        "label": "Inner Dialogue Today",
+        "icon": "💬"
+      },
+      {
+        "id": "gratitude_today",
+        "label": "Gratitude & Positive Moments",
+        "icon": "🙏"
+      },
+      {
+        "id": "overwhelm_today",
+        "label": "Overwhelm & Coping Today",
+        "icon": "🧩"
+      },
+      {
+        "id": "digital_today",
+        "label": "Digital & Screen Balance Today",
+        "icon": "📱"
+      },
+      {
+        "id": "purpose_today",
+        "label": "Sense of Purpose Today",
+        "icon": "🧭"
+      },
+      {
+        "id": "rest_today",
+        "label": "Restfulness Today",
+        "icon": "🛌"
+      },
+      {
+        "id": "hope_tomorrow",
+        "label": "Hope for Tomorrow",
+        "icon": "🌈"
+      },
+      {
+        "id": "irritability_today",
+        "label": "Irritability & Patience Today",
+        "icon": "🔥"
+      },
+      {
+        "id": "self_care_today",
+        "label": "Self-Care Today",
+        "icon": "🧼"
+      },
+      {
+        "id": "environment_today",
+        "label": "Environment & Surroundings",
+        "icon": "🏠"
+      },
+      {
+        "id": "day_satisfaction",
+        "label": "Overall Day Satisfaction",
+        "icon": "📊"
+      },
+      {
+        "id": "safety_today",
+        "label": "Safety & Urgent Support Today",
+        "icon": "🛟"
+      }
+    ],
+    "levels": [
+      {
+        "min": 8.5,
+        "max": 10.01,
+        "label": "Thriving Today",
+        "emoji": "🌟",
+        "desc": "Your responses suggest today has genuinely been a good day across mood, energy, and coping. Notice what has helped and try to carry it into tomorrow."
+      },
+      {
+        "min": 7,
+        "max": 8.5,
+        "label": "Doing Okay Today",
+        "emoji": "🌿",
+        "desc": "Today has felt broadly steady, with a few areas that may be worth some extra care before the day ends."
+      },
+      {
+        "min": 5.5,
+        "max": 7,
+        "label": "A Mixed Day",
+        "emoji": "🌦️",
+        "desc": "Today has included both supports and strains. Consider what would make the rest of today, or tomorrow morning, a little easier."
+      },
+      {
+        "min": 4,
+        "max": 5.5,
+        "label": "A Tough Day",
+        "emoji": "🤲",
+        "desc": "Several areas feel difficult today. Consider reaching out to someone you trust or taking a genuine break before the day ends."
+      },
+      {
+        "min": 1,
+        "max": 4,
+        "label": "Struggling Today",
+        "emoji": "💛",
+        "desc": "Your responses suggest significant strain today. Please consider contacting a trusted person or health professional, especially if this has been going on for more than just today."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "MHT-001",
+      "category": "mood_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "So far today, my mood has felt steady."
+    },
+    {
+      "id": "MHT-002",
+      "category": "mood_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Earlier this morning, my mood has felt low or unsettled."
+    },
+    {
+      "id": "MHT-003",
+      "category": "mood_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "Right now, I have been able to enjoy at least one good moment."
+    },
+    {
+      "id": "MHT-004",
+      "category": "mood_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Since I woke up, things have felt heavier emotionally than an ordinary day."
+    },
+    {
+      "id": "MHT-005",
+      "category": "mood_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "During today's tasks, my mood has felt steady."
+    },
+    {
+      "id": "MHT-006",
+      "category": "mood_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "While getting through today, my mood has felt low or unsettled."
+    },
+    {
+      "id": "MHT-007",
+      "category": "mood_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "As today has gone on, I have been able to enjoy at least one good moment."
+    },
+    {
+      "id": "MHT-008",
+      "category": "mood_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "In the last few hours, things have felt heavier emotionally than an ordinary day."
+    },
+    {
+      "id": "MHT-009",
+      "category": "mood_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "At this point in the day, my mood has felt steady."
+    },
+    {
+      "id": "MHT-010",
+      "category": "mood_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "As I moved through today, my mood has felt low or unsettled."
+    },
+    {
+      "id": "MHT-011",
+      "category": "mood_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "While facing today's demands, I have been able to enjoy at least one good moment."
+    },
+    {
+      "id": "MHT-012",
+      "category": "mood_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "During a quiet moment today, things have felt heavier emotionally than an ordinary day."
+    },
+    {
+      "id": "MHT-013",
+      "category": "mood_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When today felt difficult, my mood has felt steady."
+    },
+    {
+      "id": "MHT-014",
+      "category": "mood_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "While interacting with others today, my mood has felt low or unsettled."
+    },
+    {
+      "id": "MHT-015",
+      "category": "mood_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I checked in with myself today, I have been able to enjoy at least one good moment."
+    },
+    {
+      "id": "MHT-016",
+      "category": "mood_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "When something unexpected happened today, things have felt heavier emotionally than an ordinary day."
+    },
+    {
+      "id": "MHT-017",
+      "category": "mood_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to relax today, my mood has felt steady."
+    },
+    {
+      "id": "MHT-018",
+      "category": "mood_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "As the day has progressed, my mood has felt low or unsettled."
+    },
+    {
+      "id": "MHT-019",
+      "category": "mood_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I paused to think about today, I have been able to enjoy at least one good moment."
+    },
+    {
+      "id": "MHT-020",
+      "category": "mood_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Looking back on today, things have felt heavier emotionally than an ordinary day."
+    },
+    {
+      "id": "MHT-021",
+      "category": "morning_outlook",
+      "reverse": false,
+      "urgent": false,
+      "text": "So far today, I started the day with a reasonably calm outlook."
+    },
+    {
+      "id": "MHT-022",
+      "category": "morning_outlook",
+      "reverse": true,
+      "urgent": false,
+      "text": "Earlier this morning, I woke up already feeling weighed down."
+    },
+    {
+      "id": "MHT-023",
+      "category": "morning_outlook",
+      "reverse": false,
+      "urgent": false,
+      "text": "Right now, waking up did not feel like a struggle."
+    },
+    {
+      "id": "MHT-024",
+      "category": "morning_outlook",
+      "reverse": true,
+      "urgent": false,
+      "text": "Since I woke up, my outlook felt discouraging from early on."
+    },
+    {
+      "id": "MHT-025",
+      "category": "morning_outlook",
+      "reverse": false,
+      "urgent": false,
+      "text": "During today's tasks, I started the day with a reasonably calm outlook."
+    },
+    {
+      "id": "MHT-026",
+      "category": "morning_outlook",
+      "reverse": true,
+      "urgent": false,
+      "text": "While getting through today, I woke up already feeling weighed down."
+    },
+    {
+      "id": "MHT-027",
+      "category": "morning_outlook",
+      "reverse": false,
+      "urgent": false,
+      "text": "As today has gone on, waking up did not feel like a struggle."
+    },
+    {
+      "id": "MHT-028",
+      "category": "morning_outlook",
+      "reverse": true,
+      "urgent": false,
+      "text": "In the last few hours, my outlook felt discouraging from early on."
+    },
+    {
+      "id": "MHT-029",
+      "category": "morning_outlook",
+      "reverse": false,
+      "urgent": false,
+      "text": "At this point in the day, I started the day with a reasonably calm outlook."
+    },
+    {
+      "id": "MHT-030",
+      "category": "morning_outlook",
+      "reverse": true,
+      "urgent": false,
+      "text": "As I moved through today, I woke up already feeling weighed down."
+    },
+    {
+      "id": "MHT-031",
+      "category": "morning_outlook",
+      "reverse": false,
+      "urgent": false,
+      "text": "While facing today's demands, waking up did not feel like a struggle."
+    },
+    {
+      "id": "MHT-032",
+      "category": "morning_outlook",
+      "reverse": true,
+      "urgent": false,
+      "text": "During a quiet moment today, my outlook felt discouraging from early on."
+    },
+    {
+      "id": "MHT-033",
+      "category": "morning_outlook",
+      "reverse": false,
+      "urgent": false,
+      "text": "When today felt difficult, I started the day with a reasonably calm outlook."
+    },
+    {
+      "id": "MHT-034",
+      "category": "morning_outlook",
+      "reverse": true,
+      "urgent": false,
+      "text": "While interacting with others today, I woke up already feeling weighed down."
+    },
+    {
+      "id": "MHT-035",
+      "category": "morning_outlook",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I checked in with myself today, waking up did not feel like a struggle."
+    },
+    {
+      "id": "MHT-036",
+      "category": "morning_outlook",
+      "reverse": true,
+      "urgent": false,
+      "text": "When something unexpected happened today, my outlook felt discouraging from early on."
+    },
+    {
+      "id": "MHT-037",
+      "category": "morning_outlook",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to relax today, I started the day with a reasonably calm outlook."
+    },
+    {
+      "id": "MHT-038",
+      "category": "morning_outlook",
+      "reverse": true,
+      "urgent": false,
+      "text": "As the day has progressed, I woke up already feeling weighed down."
+    },
+    {
+      "id": "MHT-039",
+      "category": "morning_outlook",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I paused to think about today, waking up did not feel like a struggle."
+    },
+    {
+      "id": "MHT-040",
+      "category": "morning_outlook",
+      "reverse": true,
+      "urgent": false,
+      "text": "Looking back on today, my outlook felt discouraging from early on."
+    },
+    {
+      "id": "MHT-041",
+      "category": "energy_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "So far today, I have had enough energy for the basic tasks in front of me."
+    },
+    {
+      "id": "MHT-042",
+      "category": "energy_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Earlier this morning, I have felt unusually drained."
+    },
+    {
+      "id": "MHT-043",
+      "category": "energy_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "Right now, my body has felt reasonably awake and capable."
+    },
+    {
+      "id": "MHT-044",
+      "category": "energy_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Since I woke up, even small tasks have required more energy than I have."
+    },
+    {
+      "id": "MHT-045",
+      "category": "energy_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "During today's tasks, I have had enough energy for the basic tasks in front of me."
+    },
+    {
+      "id": "MHT-046",
+      "category": "energy_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "While getting through today, I have felt unusually drained."
+    },
+    {
+      "id": "MHT-047",
+      "category": "energy_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "As today has gone on, my body has felt reasonably awake and capable."
+    },
+    {
+      "id": "MHT-048",
+      "category": "energy_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "In the last few hours, even small tasks have required more energy than I have."
+    },
+    {
+      "id": "MHT-049",
+      "category": "energy_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "At this point in the day, I have had enough energy for the basic tasks in front of me."
+    },
+    {
+      "id": "MHT-050",
+      "category": "energy_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "As I moved through today, I have felt unusually drained."
+    },
+    {
+      "id": "MHT-051",
+      "category": "energy_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "While facing today's demands, my body has felt reasonably awake and capable."
+    },
+    {
+      "id": "MHT-052",
+      "category": "energy_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "During a quiet moment today, even small tasks have required more energy than I have."
+    },
+    {
+      "id": "MHT-053",
+      "category": "energy_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When today felt difficult, I have had enough energy for the basic tasks in front of me."
+    },
+    {
+      "id": "MHT-054",
+      "category": "energy_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "While interacting with others today, I have felt unusually drained."
+    },
+    {
+      "id": "MHT-055",
+      "category": "energy_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I checked in with myself today, my body has felt reasonably awake and capable."
+    },
+    {
+      "id": "MHT-056",
+      "category": "energy_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "When something unexpected happened today, even small tasks have required more energy than I have."
+    },
+    {
+      "id": "MHT-057",
+      "category": "energy_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to relax today, I have had enough energy for the basic tasks in front of me."
+    },
+    {
+      "id": "MHT-058",
+      "category": "energy_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "As the day has progressed, I have felt unusually drained."
+    },
+    {
+      "id": "MHT-059",
+      "category": "energy_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I paused to think about today, my body has felt reasonably awake and capable."
+    },
+    {
+      "id": "MHT-060",
+      "category": "energy_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Looking back on today, even small tasks have required more energy than I have."
+    },
+    {
+      "id": "MHT-061",
+      "category": "stress_now",
+      "reverse": false,
+      "urgent": false,
+      "text": "So far today, I have felt able to manage the pressure I am under."
+    },
+    {
+      "id": "MHT-062",
+      "category": "stress_now",
+      "reverse": true,
+      "urgent": false,
+      "text": "Earlier this morning, the demands on me have felt greater than I can handle."
+    },
+    {
+      "id": "MHT-063",
+      "category": "stress_now",
+      "reverse": false,
+      "urgent": false,
+      "text": "Right now, stress has stayed within a manageable range."
+    },
+    {
+      "id": "MHT-064",
+      "category": "stress_now",
+      "reverse": true,
+      "urgent": false,
+      "text": "Since I woke up, stress has built up noticeably."
+    },
+    {
+      "id": "MHT-065",
+      "category": "stress_now",
+      "reverse": false,
+      "urgent": false,
+      "text": "During today's tasks, I have felt able to manage the pressure I am under."
+    },
+    {
+      "id": "MHT-066",
+      "category": "stress_now",
+      "reverse": true,
+      "urgent": false,
+      "text": "While getting through today, the demands on me have felt greater than I can handle."
+    },
+    {
+      "id": "MHT-067",
+      "category": "stress_now",
+      "reverse": false,
+      "urgent": false,
+      "text": "As today has gone on, stress has stayed within a manageable range."
+    },
+    {
+      "id": "MHT-068",
+      "category": "stress_now",
+      "reverse": true,
+      "urgent": false,
+      "text": "In the last few hours, stress has built up noticeably."
+    },
+    {
+      "id": "MHT-069",
+      "category": "stress_now",
+      "reverse": false,
+      "urgent": false,
+      "text": "At this point in the day, I have felt able to manage the pressure I am under."
+    },
+    {
+      "id": "MHT-070",
+      "category": "stress_now",
+      "reverse": true,
+      "urgent": false,
+      "text": "As I moved through today, the demands on me have felt greater than I can handle."
+    },
+    {
+      "id": "MHT-071",
+      "category": "stress_now",
+      "reverse": false,
+      "urgent": false,
+      "text": "While facing today's demands, stress has stayed within a manageable range."
+    },
+    {
+      "id": "MHT-072",
+      "category": "stress_now",
+      "reverse": true,
+      "urgent": false,
+      "text": "During a quiet moment today, stress has built up noticeably."
+    },
+    {
+      "id": "MHT-073",
+      "category": "stress_now",
+      "reverse": false,
+      "urgent": false,
+      "text": "When today felt difficult, I have felt able to manage the pressure I am under."
+    },
+    {
+      "id": "MHT-074",
+      "category": "stress_now",
+      "reverse": true,
+      "urgent": false,
+      "text": "While interacting with others today, the demands on me have felt greater than I can handle."
+    },
+    {
+      "id": "MHT-075",
+      "category": "stress_now",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I checked in with myself today, stress has stayed within a manageable range."
+    },
+    {
+      "id": "MHT-076",
+      "category": "stress_now",
+      "reverse": true,
+      "urgent": false,
+      "text": "When something unexpected happened today, stress has built up noticeably."
+    },
+    {
+      "id": "MHT-077",
+      "category": "stress_now",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to relax today, I have felt able to manage the pressure I am under."
+    },
+    {
+      "id": "MHT-078",
+      "category": "stress_now",
+      "reverse": true,
+      "urgent": false,
+      "text": "As the day has progressed, the demands on me have felt greater than I can handle."
+    },
+    {
+      "id": "MHT-079",
+      "category": "stress_now",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I paused to think about today, stress has stayed within a manageable range."
+    },
+    {
+      "id": "MHT-080",
+      "category": "stress_now",
+      "reverse": true,
+      "urgent": false,
+      "text": "Looking back on today, stress has built up noticeably."
+    },
+    {
+      "id": "MHT-081",
+      "category": "anxiety_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "So far today, I have been able to settle anxious thoughts."
+    },
+    {
+      "id": "MHT-082",
+      "category": "anxiety_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Earlier this morning, anxious thoughts have been hard to switch off."
+    },
+    {
+      "id": "MHT-083",
+      "category": "anxiety_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "Right now, worry has not taken over my attention."
+    },
+    {
+      "id": "MHT-084",
+      "category": "anxiety_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Since I woke up, I have felt on edge."
+    },
+    {
+      "id": "MHT-085",
+      "category": "anxiety_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "During today's tasks, I have been able to settle anxious thoughts."
+    },
+    {
+      "id": "MHT-086",
+      "category": "anxiety_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "While getting through today, anxious thoughts have been hard to switch off."
+    },
+    {
+      "id": "MHT-087",
+      "category": "anxiety_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "As today has gone on, worry has not taken over my attention."
+    },
+    {
+      "id": "MHT-088",
+      "category": "anxiety_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "In the last few hours, I have felt on edge."
+    },
+    {
+      "id": "MHT-089",
+      "category": "anxiety_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "At this point in the day, I have been able to settle anxious thoughts."
+    },
+    {
+      "id": "MHT-090",
+      "category": "anxiety_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "As I moved through today, anxious thoughts have been hard to switch off."
+    },
+    {
+      "id": "MHT-091",
+      "category": "anxiety_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "While facing today's demands, worry has not taken over my attention."
+    },
+    {
+      "id": "MHT-092",
+      "category": "anxiety_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "During a quiet moment today, I have felt on edge."
+    },
+    {
+      "id": "MHT-093",
+      "category": "anxiety_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When today felt difficult, I have been able to settle anxious thoughts."
+    },
+    {
+      "id": "MHT-094",
+      "category": "anxiety_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "While interacting with others today, anxious thoughts have been hard to switch off."
+    },
+    {
+      "id": "MHT-095",
+      "category": "anxiety_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I checked in with myself today, worry has not taken over my attention."
+    },
+    {
+      "id": "MHT-096",
+      "category": "anxiety_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "When something unexpected happened today, I have felt on edge."
+    },
+    {
+      "id": "MHT-097",
+      "category": "anxiety_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to relax today, I have been able to settle anxious thoughts."
+    },
+    {
+      "id": "MHT-098",
+      "category": "anxiety_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "As the day has progressed, anxious thoughts have been hard to switch off."
+    },
+    {
+      "id": "MHT-099",
+      "category": "anxiety_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I paused to think about today, worry has not taken over my attention."
+    },
+    {
+      "id": "MHT-100",
+      "category": "anxiety_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Looking back on today, I have felt on edge."
+    },
+    {
+      "id": "MHT-101",
+      "category": "focus_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "So far today, I have been able to concentrate on the task in front of me."
+    },
+    {
+      "id": "MHT-102",
+      "category": "focus_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Earlier this morning, my attention has scattered often."
+    },
+    {
+      "id": "MHT-103",
+      "category": "focus_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "Right now, my thinking has felt reasonably clear."
+    },
+    {
+      "id": "MHT-104",
+      "category": "focus_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Since I woke up, mental fog has made ordinary tasks harder than usual."
+    },
+    {
+      "id": "MHT-105",
+      "category": "focus_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "During today's tasks, I have been able to concentrate on the task in front of me."
+    },
+    {
+      "id": "MHT-106",
+      "category": "focus_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "While getting through today, my attention has scattered often."
+    },
+    {
+      "id": "MHT-107",
+      "category": "focus_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "As today has gone on, my thinking has felt reasonably clear."
+    },
+    {
+      "id": "MHT-108",
+      "category": "focus_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "In the last few hours, mental fog has made ordinary tasks harder than usual."
+    },
+    {
+      "id": "MHT-109",
+      "category": "focus_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "At this point in the day, I have been able to concentrate on the task in front of me."
+    },
+    {
+      "id": "MHT-110",
+      "category": "focus_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "As I moved through today, my attention has scattered often."
+    },
+    {
+      "id": "MHT-111",
+      "category": "focus_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "While facing today's demands, my thinking has felt reasonably clear."
+    },
+    {
+      "id": "MHT-112",
+      "category": "focus_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "During a quiet moment today, mental fog has made ordinary tasks harder than usual."
+    },
+    {
+      "id": "MHT-113",
+      "category": "focus_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When today felt difficult, I have been able to concentrate on the task in front of me."
+    },
+    {
+      "id": "MHT-114",
+      "category": "focus_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "While interacting with others today, my attention has scattered often."
+    },
+    {
+      "id": "MHT-115",
+      "category": "focus_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I checked in with myself today, my thinking has felt reasonably clear."
+    },
+    {
+      "id": "MHT-116",
+      "category": "focus_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "When something unexpected happened today, mental fog has made ordinary tasks harder than usual."
+    },
+    {
+      "id": "MHT-117",
+      "category": "focus_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to relax today, I have been able to concentrate on the task in front of me."
+    },
+    {
+      "id": "MHT-118",
+      "category": "focus_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "As the day has progressed, my attention has scattered often."
+    },
+    {
+      "id": "MHT-119",
+      "category": "focus_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I paused to think about today, my thinking has felt reasonably clear."
+    },
+    {
+      "id": "MHT-120",
+      "category": "focus_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Looking back on today, mental fog has made ordinary tasks harder than usual."
+    },
+    {
+      "id": "MHT-121",
+      "category": "motivation_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "So far today, I have felt some drive to get things done."
+    },
+    {
+      "id": "MHT-122",
+      "category": "motivation_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Earlier this morning, starting even small tasks has felt very hard."
+    },
+    {
+      "id": "MHT-123",
+      "category": "motivation_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "Right now, starting tasks has not felt impossible."
+    },
+    {
+      "id": "MHT-124",
+      "category": "motivation_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Since I woke up, I have struggled to find any motivation."
+    },
+    {
+      "id": "MHT-125",
+      "category": "motivation_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "During today's tasks, I have felt some drive to get things done."
+    },
+    {
+      "id": "MHT-126",
+      "category": "motivation_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "While getting through today, starting even small tasks has felt very hard."
+    },
+    {
+      "id": "MHT-127",
+      "category": "motivation_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "As today has gone on, starting tasks has not felt impossible."
+    },
+    {
+      "id": "MHT-128",
+      "category": "motivation_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "In the last few hours, I have struggled to find any motivation."
+    },
+    {
+      "id": "MHT-129",
+      "category": "motivation_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "At this point in the day, I have felt some drive to get things done."
+    },
+    {
+      "id": "MHT-130",
+      "category": "motivation_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "As I moved through today, starting even small tasks has felt very hard."
+    },
+    {
+      "id": "MHT-131",
+      "category": "motivation_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "While facing today's demands, starting tasks has not felt impossible."
+    },
+    {
+      "id": "MHT-132",
+      "category": "motivation_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "During a quiet moment today, I have struggled to find any motivation."
+    },
+    {
+      "id": "MHT-133",
+      "category": "motivation_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When today felt difficult, I have felt some drive to get things done."
+    },
+    {
+      "id": "MHT-134",
+      "category": "motivation_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "While interacting with others today, starting even small tasks has felt very hard."
+    },
+    {
+      "id": "MHT-135",
+      "category": "motivation_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I checked in with myself today, starting tasks has not felt impossible."
+    },
+    {
+      "id": "MHT-136",
+      "category": "motivation_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "When something unexpected happened today, I have struggled to find any motivation."
+    },
+    {
+      "id": "MHT-137",
+      "category": "motivation_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to relax today, I have felt some drive to get things done."
+    },
+    {
+      "id": "MHT-138",
+      "category": "motivation_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "As the day has progressed, starting even small tasks has felt very hard."
+    },
+    {
+      "id": "MHT-139",
+      "category": "motivation_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I paused to think about today, starting tasks has not felt impossible."
+    },
+    {
+      "id": "MHT-140",
+      "category": "motivation_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Looking back on today, I have struggled to find any motivation."
+    },
+    {
+      "id": "MHT-141",
+      "category": "sleep_last_night",
+      "reverse": false,
+      "urgent": false,
+      "text": "So far today, I slept well enough to feel somewhat rested."
+    },
+    {
+      "id": "MHT-142",
+      "category": "sleep_last_night",
+      "reverse": true,
+      "urgent": false,
+      "text": "Earlier this morning, poor sleep has affected how I feel."
+    },
+    {
+      "id": "MHT-143",
+      "category": "sleep_last_night",
+      "reverse": false,
+      "urgent": false,
+      "text": "Right now, my sleep helped rather than hurt how I feel now."
+    },
+    {
+      "id": "MHT-144",
+      "category": "sleep_last_night",
+      "reverse": true,
+      "urgent": false,
+      "text": "Since I woke up, I woke up still feeling tired."
+    },
+    {
+      "id": "MHT-145",
+      "category": "sleep_last_night",
+      "reverse": false,
+      "urgent": false,
+      "text": "During today's tasks, I slept well enough to feel somewhat rested."
+    },
+    {
+      "id": "MHT-146",
+      "category": "sleep_last_night",
+      "reverse": true,
+      "urgent": false,
+      "text": "While getting through today, poor sleep has affected how I feel."
+    },
+    {
+      "id": "MHT-147",
+      "category": "sleep_last_night",
+      "reverse": false,
+      "urgent": false,
+      "text": "As today has gone on, my sleep helped rather than hurt how I feel now."
+    },
+    {
+      "id": "MHT-148",
+      "category": "sleep_last_night",
+      "reverse": true,
+      "urgent": false,
+      "text": "In the last few hours, I woke up still feeling tired."
+    },
+    {
+      "id": "MHT-149",
+      "category": "sleep_last_night",
+      "reverse": false,
+      "urgent": false,
+      "text": "At this point in the day, I slept well enough to feel somewhat rested."
+    },
+    {
+      "id": "MHT-150",
+      "category": "sleep_last_night",
+      "reverse": true,
+      "urgent": false,
+      "text": "As I moved through today, poor sleep has affected how I feel."
+    },
+    {
+      "id": "MHT-151",
+      "category": "sleep_last_night",
+      "reverse": false,
+      "urgent": false,
+      "text": "While facing today's demands, my sleep helped rather than hurt how I feel now."
+    },
+    {
+      "id": "MHT-152",
+      "category": "sleep_last_night",
+      "reverse": true,
+      "urgent": false,
+      "text": "During a quiet moment today, I woke up still feeling tired."
+    },
+    {
+      "id": "MHT-153",
+      "category": "sleep_last_night",
+      "reverse": false,
+      "urgent": false,
+      "text": "When today felt difficult, I slept well enough to feel somewhat rested."
+    },
+    {
+      "id": "MHT-154",
+      "category": "sleep_last_night",
+      "reverse": true,
+      "urgent": false,
+      "text": "While interacting with others today, poor sleep has affected how I feel."
+    },
+    {
+      "id": "MHT-155",
+      "category": "sleep_last_night",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I checked in with myself today, my sleep helped rather than hurt how I feel now."
+    },
+    {
+      "id": "MHT-156",
+      "category": "sleep_last_night",
+      "reverse": true,
+      "urgent": false,
+      "text": "When something unexpected happened today, I woke up still feeling tired."
+    },
+    {
+      "id": "MHT-157",
+      "category": "sleep_last_night",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to relax today, I slept well enough to feel somewhat rested."
+    },
+    {
+      "id": "MHT-158",
+      "category": "sleep_last_night",
+      "reverse": true,
+      "urgent": false,
+      "text": "As the day has progressed, poor sleep has affected how I feel."
+    },
+    {
+      "id": "MHT-159",
+      "category": "sleep_last_night",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I paused to think about today, my sleep helped rather than hurt how I feel now."
+    },
+    {
+      "id": "MHT-160",
+      "category": "sleep_last_night",
+      "reverse": true,
+      "urgent": false,
+      "text": "Looking back on today, I woke up still feeling tired."
+    },
+    {
+      "id": "MHT-161",
+      "category": "physical_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "So far today, my body has felt reasonably comfortable."
+    },
+    {
+      "id": "MHT-162",
+      "category": "physical_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Earlier this morning, my body has felt tense or uneasy."
+    },
+    {
+      "id": "MHT-163",
+      "category": "physical_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "Right now, I have not been distracted by physical discomfort."
+    },
+    {
+      "id": "MHT-164",
+      "category": "physical_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Since I woke up, unexplained aches or tightness have bothered me."
+    },
+    {
+      "id": "MHT-165",
+      "category": "physical_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "During today's tasks, my body has felt reasonably comfortable."
+    },
+    {
+      "id": "MHT-166",
+      "category": "physical_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "While getting through today, my body has felt tense or uneasy."
+    },
+    {
+      "id": "MHT-167",
+      "category": "physical_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "As today has gone on, I have not been distracted by physical discomfort."
+    },
+    {
+      "id": "MHT-168",
+      "category": "physical_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "In the last few hours, unexplained aches or tightness have bothered me."
+    },
+    {
+      "id": "MHT-169",
+      "category": "physical_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "At this point in the day, my body has felt reasonably comfortable."
+    },
+    {
+      "id": "MHT-170",
+      "category": "physical_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "As I moved through today, my body has felt tense or uneasy."
+    },
+    {
+      "id": "MHT-171",
+      "category": "physical_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "While facing today's demands, I have not been distracted by physical discomfort."
+    },
+    {
+      "id": "MHT-172",
+      "category": "physical_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "During a quiet moment today, unexplained aches or tightness have bothered me."
+    },
+    {
+      "id": "MHT-173",
+      "category": "physical_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When today felt difficult, my body has felt reasonably comfortable."
+    },
+    {
+      "id": "MHT-174",
+      "category": "physical_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "While interacting with others today, my body has felt tense or uneasy."
+    },
+    {
+      "id": "MHT-175",
+      "category": "physical_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I checked in with myself today, I have not been distracted by physical discomfort."
+    },
+    {
+      "id": "MHT-176",
+      "category": "physical_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "When something unexpected happened today, unexplained aches or tightness have bothered me."
+    },
+    {
+      "id": "MHT-177",
+      "category": "physical_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to relax today, my body has felt reasonably comfortable."
+    },
+    {
+      "id": "MHT-178",
+      "category": "physical_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "As the day has progressed, my body has felt tense or uneasy."
+    },
+    {
+      "id": "MHT-179",
+      "category": "physical_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I paused to think about today, I have not been distracted by physical discomfort."
+    },
+    {
+      "id": "MHT-180",
+      "category": "physical_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Looking back on today, unexplained aches or tightness have bothered me."
+    },
+    {
+      "id": "MHT-181",
+      "category": "appetite_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "So far today, my appetite has felt close to normal."
+    },
+    {
+      "id": "MHT-182",
+      "category": "appetite_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Earlier this morning, my appetite has felt off."
+    },
+    {
+      "id": "MHT-183",
+      "category": "appetite_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "Right now, I have been able to eat in a way that supports me."
+    },
+    {
+      "id": "MHT-184",
+      "category": "appetite_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Since I woke up, stress has disrupted my eating."
+    },
+    {
+      "id": "MHT-185",
+      "category": "appetite_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "During today's tasks, my appetite has felt close to normal."
+    },
+    {
+      "id": "MHT-186",
+      "category": "appetite_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "While getting through today, my appetite has felt off."
+    },
+    {
+      "id": "MHT-187",
+      "category": "appetite_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "As today has gone on, I have been able to eat in a way that supports me."
+    },
+    {
+      "id": "MHT-188",
+      "category": "appetite_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "In the last few hours, stress has disrupted my eating."
+    },
+    {
+      "id": "MHT-189",
+      "category": "appetite_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "At this point in the day, my appetite has felt close to normal."
+    },
+    {
+      "id": "MHT-190",
+      "category": "appetite_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "As I moved through today, my appetite has felt off."
+    },
+    {
+      "id": "MHT-191",
+      "category": "appetite_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "While facing today's demands, I have been able to eat in a way that supports me."
+    },
+    {
+      "id": "MHT-192",
+      "category": "appetite_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "During a quiet moment today, stress has disrupted my eating."
+    },
+    {
+      "id": "MHT-193",
+      "category": "appetite_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When today felt difficult, my appetite has felt close to normal."
+    },
+    {
+      "id": "MHT-194",
+      "category": "appetite_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "While interacting with others today, my appetite has felt off."
+    },
+    {
+      "id": "MHT-195",
+      "category": "appetite_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I checked in with myself today, I have been able to eat in a way that supports me."
+    },
+    {
+      "id": "MHT-196",
+      "category": "appetite_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "When something unexpected happened today, stress has disrupted my eating."
+    },
+    {
+      "id": "MHT-197",
+      "category": "appetite_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to relax today, my appetite has felt close to normal."
+    },
+    {
+      "id": "MHT-198",
+      "category": "appetite_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "As the day has progressed, my appetite has felt off."
+    },
+    {
+      "id": "MHT-199",
+      "category": "appetite_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I paused to think about today, I have been able to eat in a way that supports me."
+    },
+    {
+      "id": "MHT-200",
+      "category": "appetite_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Looking back on today, stress has disrupted my eating."
+    },
+    {
+      "id": "MHT-201",
+      "category": "connection_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "So far today, I have felt connected to at least one person."
+    },
+    {
+      "id": "MHT-202",
+      "category": "connection_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Earlier this morning, I have avoided people even when contact might have helped."
+    },
+    {
+      "id": "MHT-203",
+      "category": "connection_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "Right now, a conversation left me feeling supported."
+    },
+    {
+      "id": "MHT-204",
+      "category": "connection_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Since I woke up, I have felt distant from others."
+    },
+    {
+      "id": "MHT-205",
+      "category": "connection_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "During today's tasks, I have felt connected to at least one person."
+    },
+    {
+      "id": "MHT-206",
+      "category": "connection_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "While getting through today, I have avoided people even when contact might have helped."
+    },
+    {
+      "id": "MHT-207",
+      "category": "connection_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "As today has gone on, a conversation left me feeling supported."
+    },
+    {
+      "id": "MHT-208",
+      "category": "connection_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "In the last few hours, I have felt distant from others."
+    },
+    {
+      "id": "MHT-209",
+      "category": "connection_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "At this point in the day, I have felt connected to at least one person."
+    },
+    {
+      "id": "MHT-210",
+      "category": "connection_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "As I moved through today, I have avoided people even when contact might have helped."
+    },
+    {
+      "id": "MHT-211",
+      "category": "connection_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "While facing today's demands, a conversation left me feeling supported."
+    },
+    {
+      "id": "MHT-212",
+      "category": "connection_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "During a quiet moment today, I have felt distant from others."
+    },
+    {
+      "id": "MHT-213",
+      "category": "connection_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When today felt difficult, I have felt connected to at least one person."
+    },
+    {
+      "id": "MHT-214",
+      "category": "connection_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "While interacting with others today, I have avoided people even when contact might have helped."
+    },
+    {
+      "id": "MHT-215",
+      "category": "connection_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I checked in with myself today, a conversation left me feeling supported."
+    },
+    {
+      "id": "MHT-216",
+      "category": "connection_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "When something unexpected happened today, I have felt distant from others."
+    },
+    {
+      "id": "MHT-217",
+      "category": "connection_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to relax today, I have felt connected to at least one person."
+    },
+    {
+      "id": "MHT-218",
+      "category": "connection_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "As the day has progressed, I have avoided people even when contact might have helped."
+    },
+    {
+      "id": "MHT-219",
+      "category": "connection_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I paused to think about today, a conversation left me feeling supported."
+    },
+    {
+      "id": "MHT-220",
+      "category": "connection_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Looking back on today, I have felt distant from others."
+    },
+    {
+      "id": "MHT-221",
+      "category": "loneliness_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "So far today, I have not felt alone in a heavy way."
+    },
+    {
+      "id": "MHT-222",
+      "category": "loneliness_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Earlier this morning, loneliness has felt heavy, even around others."
+    },
+    {
+      "id": "MHT-223",
+      "category": "loneliness_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "Right now, I could think of someone who cares about me."
+    },
+    {
+      "id": "MHT-224",
+      "category": "loneliness_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Since I woke up, I have felt like no one really understands."
+    },
+    {
+      "id": "MHT-225",
+      "category": "loneliness_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "During today's tasks, I have not felt alone in a heavy way."
+    },
+    {
+      "id": "MHT-226",
+      "category": "loneliness_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "While getting through today, loneliness has felt heavy, even around others."
+    },
+    {
+      "id": "MHT-227",
+      "category": "loneliness_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "As today has gone on, I could think of someone who cares about me."
+    },
+    {
+      "id": "MHT-228",
+      "category": "loneliness_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "In the last few hours, I have felt like no one really understands."
+    },
+    {
+      "id": "MHT-229",
+      "category": "loneliness_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "At this point in the day, I have not felt alone in a heavy way."
+    },
+    {
+      "id": "MHT-230",
+      "category": "loneliness_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "As I moved through today, loneliness has felt heavy, even around others."
+    },
+    {
+      "id": "MHT-231",
+      "category": "loneliness_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "While facing today's demands, I could think of someone who cares about me."
+    },
+    {
+      "id": "MHT-232",
+      "category": "loneliness_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "During a quiet moment today, I have felt like no one really understands."
+    },
+    {
+      "id": "MHT-233",
+      "category": "loneliness_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When today felt difficult, I have not felt alone in a heavy way."
+    },
+    {
+      "id": "MHT-234",
+      "category": "loneliness_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "While interacting with others today, loneliness has felt heavy, even around others."
+    },
+    {
+      "id": "MHT-235",
+      "category": "loneliness_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I checked in with myself today, I could think of someone who cares about me."
+    },
+    {
+      "id": "MHT-236",
+      "category": "loneliness_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "When something unexpected happened today, I have felt like no one really understands."
+    },
+    {
+      "id": "MHT-237",
+      "category": "loneliness_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to relax today, I have not felt alone in a heavy way."
+    },
+    {
+      "id": "MHT-238",
+      "category": "loneliness_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "As the day has progressed, loneliness has felt heavy, even around others."
+    },
+    {
+      "id": "MHT-239",
+      "category": "loneliness_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I paused to think about today, I could think of someone who cares about me."
+    },
+    {
+      "id": "MHT-240",
+      "category": "loneliness_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Looking back on today, I have felt like no one really understands."
+    },
+    {
+      "id": "MHT-241",
+      "category": "regulation_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "So far today, I have let strong feelings pass without acting on them impulsively."
+    },
+    {
+      "id": "MHT-242",
+      "category": "regulation_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Earlier this morning, strong emotions have pushed me toward reactions I regret."
+    },
+    {
+      "id": "MHT-243",
+      "category": "regulation_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "Right now, I have managed to calm myself down at least once."
+    },
+    {
+      "id": "MHT-244",
+      "category": "regulation_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Since I woke up, once upset, I found it hard to settle back down."
+    },
+    {
+      "id": "MHT-245",
+      "category": "regulation_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "During today's tasks, I have let strong feelings pass without acting on them impulsively."
+    },
+    {
+      "id": "MHT-246",
+      "category": "regulation_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "While getting through today, strong emotions have pushed me toward reactions I regret."
+    },
+    {
+      "id": "MHT-247",
+      "category": "regulation_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "As today has gone on, I have managed to calm myself down at least once."
+    },
+    {
+      "id": "MHT-248",
+      "category": "regulation_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "In the last few hours, once upset, I found it hard to settle back down."
+    },
+    {
+      "id": "MHT-249",
+      "category": "regulation_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "At this point in the day, I have let strong feelings pass without acting on them impulsively."
+    },
+    {
+      "id": "MHT-250",
+      "category": "regulation_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "As I moved through today, strong emotions have pushed me toward reactions I regret."
+    },
+    {
+      "id": "MHT-251",
+      "category": "regulation_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "While facing today's demands, I have managed to calm myself down at least once."
+    },
+    {
+      "id": "MHT-252",
+      "category": "regulation_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "During a quiet moment today, once upset, I found it hard to settle back down."
+    },
+    {
+      "id": "MHT-253",
+      "category": "regulation_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When today felt difficult, I have let strong feelings pass without acting on them impulsively."
+    },
+    {
+      "id": "MHT-254",
+      "category": "regulation_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "While interacting with others today, strong emotions have pushed me toward reactions I regret."
+    },
+    {
+      "id": "MHT-255",
+      "category": "regulation_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I checked in with myself today, I have managed to calm myself down at least once."
+    },
+    {
+      "id": "MHT-256",
+      "category": "regulation_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "When something unexpected happened today, once upset, I found it hard to settle back down."
+    },
+    {
+      "id": "MHT-257",
+      "category": "regulation_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to relax today, I have let strong feelings pass without acting on them impulsively."
+    },
+    {
+      "id": "MHT-258",
+      "category": "regulation_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "As the day has progressed, strong emotions have pushed me toward reactions I regret."
+    },
+    {
+      "id": "MHT-259",
+      "category": "regulation_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I paused to think about today, I have managed to calm myself down at least once."
+    },
+    {
+      "id": "MHT-260",
+      "category": "regulation_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Looking back on today, once upset, I found it hard to settle back down."
+    },
+    {
+      "id": "MHT-261",
+      "category": "inner_dialogue_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "So far today, my self-talk has been reasonably kind."
+    },
+    {
+      "id": "MHT-262",
+      "category": "inner_dialogue_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Earlier this morning, my inner voice has been harsh with me."
+    },
+    {
+      "id": "MHT-263",
+      "category": "inner_dialogue_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "Right now, I have been able to encourage myself."
+    },
+    {
+      "id": "MHT-264",
+      "category": "inner_dialogue_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Since I woke up, I have criticized myself more than usual."
+    },
+    {
+      "id": "MHT-265",
+      "category": "inner_dialogue_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "During today's tasks, my self-talk has been reasonably kind."
+    },
+    {
+      "id": "MHT-266",
+      "category": "inner_dialogue_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "While getting through today, my inner voice has been harsh with me."
+    },
+    {
+      "id": "MHT-267",
+      "category": "inner_dialogue_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "As today has gone on, I have been able to encourage myself."
+    },
+    {
+      "id": "MHT-268",
+      "category": "inner_dialogue_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "In the last few hours, I have criticized myself more than usual."
+    },
+    {
+      "id": "MHT-269",
+      "category": "inner_dialogue_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "At this point in the day, my self-talk has been reasonably kind."
+    },
+    {
+      "id": "MHT-270",
+      "category": "inner_dialogue_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "As I moved through today, my inner voice has been harsh with me."
+    },
+    {
+      "id": "MHT-271",
+      "category": "inner_dialogue_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "While facing today's demands, I have been able to encourage myself."
+    },
+    {
+      "id": "MHT-272",
+      "category": "inner_dialogue_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "During a quiet moment today, I have criticized myself more than usual."
+    },
+    {
+      "id": "MHT-273",
+      "category": "inner_dialogue_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When today felt difficult, my self-talk has been reasonably kind."
+    },
+    {
+      "id": "MHT-274",
+      "category": "inner_dialogue_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "While interacting with others today, my inner voice has been harsh with me."
+    },
+    {
+      "id": "MHT-275",
+      "category": "inner_dialogue_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I checked in with myself today, I have been able to encourage myself."
+    },
+    {
+      "id": "MHT-276",
+      "category": "inner_dialogue_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "When something unexpected happened today, I have criticized myself more than usual."
+    },
+    {
+      "id": "MHT-277",
+      "category": "inner_dialogue_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to relax today, my self-talk has been reasonably kind."
+    },
+    {
+      "id": "MHT-278",
+      "category": "inner_dialogue_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "As the day has progressed, my inner voice has been harsh with me."
+    },
+    {
+      "id": "MHT-279",
+      "category": "inner_dialogue_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I paused to think about today, I have been able to encourage myself."
+    },
+    {
+      "id": "MHT-280",
+      "category": "inner_dialogue_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Looking back on today, I have criticized myself more than usual."
+    },
+    {
+      "id": "MHT-281",
+      "category": "gratitude_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "So far today, I noticed at least one good thing."
+    },
+    {
+      "id": "MHT-282",
+      "category": "gratitude_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Earlier this morning, I have struggled to notice anything positive."
+    },
+    {
+      "id": "MHT-283",
+      "category": "gratitude_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "Right now, I felt a moment of genuine gratitude."
+    },
+    {
+      "id": "MHT-284",
+      "category": "gratitude_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Since I woke up, things have felt free of any bright moments."
+    },
+    {
+      "id": "MHT-285",
+      "category": "gratitude_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "During today's tasks, I noticed at least one good thing."
+    },
+    {
+      "id": "MHT-286",
+      "category": "gratitude_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "While getting through today, I have struggled to notice anything positive."
+    },
+    {
+      "id": "MHT-287",
+      "category": "gratitude_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "As today has gone on, I felt a moment of genuine gratitude."
+    },
+    {
+      "id": "MHT-288",
+      "category": "gratitude_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "In the last few hours, things have felt free of any bright moments."
+    },
+    {
+      "id": "MHT-289",
+      "category": "gratitude_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "At this point in the day, I noticed at least one good thing."
+    },
+    {
+      "id": "MHT-290",
+      "category": "gratitude_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "As I moved through today, I have struggled to notice anything positive."
+    },
+    {
+      "id": "MHT-291",
+      "category": "gratitude_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "While facing today's demands, I felt a moment of genuine gratitude."
+    },
+    {
+      "id": "MHT-292",
+      "category": "gratitude_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "During a quiet moment today, things have felt free of any bright moments."
+    },
+    {
+      "id": "MHT-293",
+      "category": "gratitude_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When today felt difficult, I noticed at least one good thing."
+    },
+    {
+      "id": "MHT-294",
+      "category": "gratitude_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "While interacting with others today, I have struggled to notice anything positive."
+    },
+    {
+      "id": "MHT-295",
+      "category": "gratitude_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I checked in with myself today, I felt a moment of genuine gratitude."
+    },
+    {
+      "id": "MHT-296",
+      "category": "gratitude_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "When something unexpected happened today, things have felt free of any bright moments."
+    },
+    {
+      "id": "MHT-297",
+      "category": "gratitude_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to relax today, I noticed at least one good thing."
+    },
+    {
+      "id": "MHT-298",
+      "category": "gratitude_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "As the day has progressed, I have struggled to notice anything positive."
+    },
+    {
+      "id": "MHT-299",
+      "category": "gratitude_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I paused to think about today, I felt a moment of genuine gratitude."
+    },
+    {
+      "id": "MHT-300",
+      "category": "gratitude_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Looking back on today, things have felt free of any bright moments."
+    },
+    {
+      "id": "MHT-301",
+      "category": "overwhelm_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "So far today, I have had a way to cope when things felt like too much."
+    },
+    {
+      "id": "MHT-302",
+      "category": "overwhelm_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Earlier this morning, everything has felt like too much."
+    },
+    {
+      "id": "MHT-303",
+      "category": "overwhelm_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "Right now, I have avoided feeling completely overwhelmed."
+    },
+    {
+      "id": "MHT-304",
+      "category": "overwhelm_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Since I woke up, I have not known how to cope with the pressure."
+    },
+    {
+      "id": "MHT-305",
+      "category": "overwhelm_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "During today's tasks, I have had a way to cope when things felt like too much."
+    },
+    {
+      "id": "MHT-306",
+      "category": "overwhelm_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "While getting through today, everything has felt like too much."
+    },
+    {
+      "id": "MHT-307",
+      "category": "overwhelm_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "As today has gone on, I have avoided feeling completely overwhelmed."
+    },
+    {
+      "id": "MHT-308",
+      "category": "overwhelm_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "In the last few hours, I have not known how to cope with the pressure."
+    },
+    {
+      "id": "MHT-309",
+      "category": "overwhelm_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "At this point in the day, I have had a way to cope when things felt like too much."
+    },
+    {
+      "id": "MHT-310",
+      "category": "overwhelm_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "As I moved through today, everything has felt like too much."
+    },
+    {
+      "id": "MHT-311",
+      "category": "overwhelm_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "While facing today's demands, I have avoided feeling completely overwhelmed."
+    },
+    {
+      "id": "MHT-312",
+      "category": "overwhelm_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "During a quiet moment today, I have not known how to cope with the pressure."
+    },
+    {
+      "id": "MHT-313",
+      "category": "overwhelm_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When today felt difficult, I have had a way to cope when things felt like too much."
+    },
+    {
+      "id": "MHT-314",
+      "category": "overwhelm_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "While interacting with others today, everything has felt like too much."
+    },
+    {
+      "id": "MHT-315",
+      "category": "overwhelm_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I checked in with myself today, I have avoided feeling completely overwhelmed."
+    },
+    {
+      "id": "MHT-316",
+      "category": "overwhelm_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "When something unexpected happened today, I have not known how to cope with the pressure."
+    },
+    {
+      "id": "MHT-317",
+      "category": "overwhelm_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to relax today, I have had a way to cope when things felt like too much."
+    },
+    {
+      "id": "MHT-318",
+      "category": "overwhelm_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "As the day has progressed, everything has felt like too much."
+    },
+    {
+      "id": "MHT-319",
+      "category": "overwhelm_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I paused to think about today, I have avoided feeling completely overwhelmed."
+    },
+    {
+      "id": "MHT-320",
+      "category": "overwhelm_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Looking back on today, I have not known how to cope with the pressure."
+    },
+    {
+      "id": "MHT-321",
+      "category": "digital_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "So far today, my phone or screen use has felt within reasonable limits."
+    },
+    {
+      "id": "MHT-322",
+      "category": "digital_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Earlier this morning, scrolling has left me feeling worse, not better."
+    },
+    {
+      "id": "MHT-323",
+      "category": "digital_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "Right now, I have been able to step away from upsetting content."
+    },
+    {
+      "id": "MHT-324",
+      "category": "digital_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Since I woke up, I have kept checking my phone even when it wasn't helping."
+    },
+    {
+      "id": "MHT-325",
+      "category": "digital_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "During today's tasks, my phone or screen use has felt within reasonable limits."
+    },
+    {
+      "id": "MHT-326",
+      "category": "digital_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "While getting through today, scrolling has left me feeling worse, not better."
+    },
+    {
+      "id": "MHT-327",
+      "category": "digital_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "As today has gone on, I have been able to step away from upsetting content."
+    },
+    {
+      "id": "MHT-328",
+      "category": "digital_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "In the last few hours, I have kept checking my phone even when it wasn't helping."
+    },
+    {
+      "id": "MHT-329",
+      "category": "digital_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "At this point in the day, my phone or screen use has felt within reasonable limits."
+    },
+    {
+      "id": "MHT-330",
+      "category": "digital_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "As I moved through today, scrolling has left me feeling worse, not better."
+    },
+    {
+      "id": "MHT-331",
+      "category": "digital_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "While facing today's demands, I have been able to step away from upsetting content."
+    },
+    {
+      "id": "MHT-332",
+      "category": "digital_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "During a quiet moment today, I have kept checking my phone even when it wasn't helping."
+    },
+    {
+      "id": "MHT-333",
+      "category": "digital_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When today felt difficult, my phone or screen use has felt within reasonable limits."
+    },
+    {
+      "id": "MHT-334",
+      "category": "digital_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "While interacting with others today, scrolling has left me feeling worse, not better."
+    },
+    {
+      "id": "MHT-335",
+      "category": "digital_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I checked in with myself today, I have been able to step away from upsetting content."
+    },
+    {
+      "id": "MHT-336",
+      "category": "digital_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "When something unexpected happened today, I have kept checking my phone even when it wasn't helping."
+    },
+    {
+      "id": "MHT-337",
+      "category": "digital_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to relax today, my phone or screen use has felt within reasonable limits."
+    },
+    {
+      "id": "MHT-338",
+      "category": "digital_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "As the day has progressed, scrolling has left me feeling worse, not better."
+    },
+    {
+      "id": "MHT-339",
+      "category": "digital_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I paused to think about today, I have been able to step away from upsetting content."
+    },
+    {
+      "id": "MHT-340",
+      "category": "digital_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Looking back on today, I have kept checking my phone even when it wasn't helping."
+    },
+    {
+      "id": "MHT-341",
+      "category": "purpose_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "So far today, I have felt at least a small sense of purpose."
+    },
+    {
+      "id": "MHT-342",
+      "category": "purpose_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Earlier this morning, things have felt aimless or without direction."
+    },
+    {
+      "id": "MHT-343",
+      "category": "purpose_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "Right now, something I did felt worth doing."
+    },
+    {
+      "id": "MHT-344",
+      "category": "purpose_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Since I woke up, I have struggled to find meaning in what I am doing."
+    },
+    {
+      "id": "MHT-345",
+      "category": "purpose_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "During today's tasks, I have felt at least a small sense of purpose."
+    },
+    {
+      "id": "MHT-346",
+      "category": "purpose_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "While getting through today, things have felt aimless or without direction."
+    },
+    {
+      "id": "MHT-347",
+      "category": "purpose_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "As today has gone on, something I did felt worth doing."
+    },
+    {
+      "id": "MHT-348",
+      "category": "purpose_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "In the last few hours, I have struggled to find meaning in what I am doing."
+    },
+    {
+      "id": "MHT-349",
+      "category": "purpose_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "At this point in the day, I have felt at least a small sense of purpose."
+    },
+    {
+      "id": "MHT-350",
+      "category": "purpose_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "As I moved through today, things have felt aimless or without direction."
+    },
+    {
+      "id": "MHT-351",
+      "category": "purpose_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "While facing today's demands, something I did felt worth doing."
+    },
+    {
+      "id": "MHT-352",
+      "category": "purpose_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "During a quiet moment today, I have struggled to find meaning in what I am doing."
+    },
+    {
+      "id": "MHT-353",
+      "category": "purpose_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When today felt difficult, I have felt at least a small sense of purpose."
+    },
+    {
+      "id": "MHT-354",
+      "category": "purpose_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "While interacting with others today, things have felt aimless or without direction."
+    },
+    {
+      "id": "MHT-355",
+      "category": "purpose_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I checked in with myself today, something I did felt worth doing."
+    },
+    {
+      "id": "MHT-356",
+      "category": "purpose_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "When something unexpected happened today, I have struggled to find meaning in what I am doing."
+    },
+    {
+      "id": "MHT-357",
+      "category": "purpose_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to relax today, I have felt at least a small sense of purpose."
+    },
+    {
+      "id": "MHT-358",
+      "category": "purpose_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "As the day has progressed, things have felt aimless or without direction."
+    },
+    {
+      "id": "MHT-359",
+      "category": "purpose_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I paused to think about today, something I did felt worth doing."
+    },
+    {
+      "id": "MHT-360",
+      "category": "purpose_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Looking back on today, I have struggled to find meaning in what I am doing."
+    },
+    {
+      "id": "MHT-361",
+      "category": "rest_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "So far today, I have found at least a short moment of real rest."
+    },
+    {
+      "id": "MHT-362",
+      "category": "rest_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Earlier this morning, I have not had a real moment to rest."
+    },
+    {
+      "id": "MHT-363",
+      "category": "rest_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "Right now, my body has had some chance to relax."
+    },
+    {
+      "id": "MHT-364",
+      "category": "rest_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Since I woke up, even brief pauses have felt unsettled."
+    },
+    {
+      "id": "MHT-365",
+      "category": "rest_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "During today's tasks, I have found at least a short moment of real rest."
+    },
+    {
+      "id": "MHT-366",
+      "category": "rest_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "While getting through today, I have not had a real moment to rest."
+    },
+    {
+      "id": "MHT-367",
+      "category": "rest_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "As today has gone on, my body has had some chance to relax."
+    },
+    {
+      "id": "MHT-368",
+      "category": "rest_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "In the last few hours, even brief pauses have felt unsettled."
+    },
+    {
+      "id": "MHT-369",
+      "category": "rest_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "At this point in the day, I have found at least a short moment of real rest."
+    },
+    {
+      "id": "MHT-370",
+      "category": "rest_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "As I moved through today, I have not had a real moment to rest."
+    },
+    {
+      "id": "MHT-371",
+      "category": "rest_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "While facing today's demands, my body has had some chance to relax."
+    },
+    {
+      "id": "MHT-372",
+      "category": "rest_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "During a quiet moment today, even brief pauses have felt unsettled."
+    },
+    {
+      "id": "MHT-373",
+      "category": "rest_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When today felt difficult, I have found at least a short moment of real rest."
+    },
+    {
+      "id": "MHT-374",
+      "category": "rest_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "While interacting with others today, I have not had a real moment to rest."
+    },
+    {
+      "id": "MHT-375",
+      "category": "rest_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I checked in with myself today, my body has had some chance to relax."
+    },
+    {
+      "id": "MHT-376",
+      "category": "rest_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "When something unexpected happened today, even brief pauses have felt unsettled."
+    },
+    {
+      "id": "MHT-377",
+      "category": "rest_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to relax today, I have found at least a short moment of real rest."
+    },
+    {
+      "id": "MHT-378",
+      "category": "rest_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "As the day has progressed, I have not had a real moment to rest."
+    },
+    {
+      "id": "MHT-379",
+      "category": "rest_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I paused to think about today, my body has had some chance to relax."
+    },
+    {
+      "id": "MHT-380",
+      "category": "rest_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Looking back on today, even brief pauses have felt unsettled."
+    },
+    {
+      "id": "MHT-381",
+      "category": "hope_tomorrow",
+      "reverse": false,
+      "urgent": false,
+      "text": "So far today, I can imagine tomorrow being at least a little better."
+    },
+    {
+      "id": "MHT-382",
+      "category": "hope_tomorrow",
+      "reverse": true,
+      "urgent": false,
+      "text": "Earlier this morning, thinking about tomorrow has felt discouraging."
+    },
+    {
+      "id": "MHT-383",
+      "category": "hope_tomorrow",
+      "reverse": false,
+      "urgent": false,
+      "text": "Right now, thinking about tomorrow does not feel frightening."
+    },
+    {
+      "id": "MHT-384",
+      "category": "hope_tomorrow",
+      "reverse": true,
+      "urgent": false,
+      "text": "Since I woke up, I cannot picture tomorrow feeling any different."
+    },
+    {
+      "id": "MHT-385",
+      "category": "hope_tomorrow",
+      "reverse": false,
+      "urgent": false,
+      "text": "During today's tasks, I can imagine tomorrow being at least a little better."
+    },
+    {
+      "id": "MHT-386",
+      "category": "hope_tomorrow",
+      "reverse": true,
+      "urgent": false,
+      "text": "While getting through today, thinking about tomorrow has felt discouraging."
+    },
+    {
+      "id": "MHT-387",
+      "category": "hope_tomorrow",
+      "reverse": false,
+      "urgent": false,
+      "text": "As today has gone on, thinking about tomorrow does not feel frightening."
+    },
+    {
+      "id": "MHT-388",
+      "category": "hope_tomorrow",
+      "reverse": true,
+      "urgent": false,
+      "text": "In the last few hours, I cannot picture tomorrow feeling any different."
+    },
+    {
+      "id": "MHT-389",
+      "category": "hope_tomorrow",
+      "reverse": false,
+      "urgent": false,
+      "text": "At this point in the day, I can imagine tomorrow being at least a little better."
+    },
+    {
+      "id": "MHT-390",
+      "category": "hope_tomorrow",
+      "reverse": true,
+      "urgent": false,
+      "text": "As I moved through today, thinking about tomorrow has felt discouraging."
+    },
+    {
+      "id": "MHT-391",
+      "category": "hope_tomorrow",
+      "reverse": false,
+      "urgent": false,
+      "text": "While facing today's demands, thinking about tomorrow does not feel frightening."
+    },
+    {
+      "id": "MHT-392",
+      "category": "hope_tomorrow",
+      "reverse": true,
+      "urgent": false,
+      "text": "During a quiet moment today, I cannot picture tomorrow feeling any different."
+    },
+    {
+      "id": "MHT-393",
+      "category": "hope_tomorrow",
+      "reverse": false,
+      "urgent": false,
+      "text": "When today felt difficult, I can imagine tomorrow being at least a little better."
+    },
+    {
+      "id": "MHT-394",
+      "category": "hope_tomorrow",
+      "reverse": true,
+      "urgent": false,
+      "text": "While interacting with others today, thinking about tomorrow has felt discouraging."
+    },
+    {
+      "id": "MHT-395",
+      "category": "hope_tomorrow",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I checked in with myself today, thinking about tomorrow does not feel frightening."
+    },
+    {
+      "id": "MHT-396",
+      "category": "hope_tomorrow",
+      "reverse": true,
+      "urgent": false,
+      "text": "When something unexpected happened today, I cannot picture tomorrow feeling any different."
+    },
+    {
+      "id": "MHT-397",
+      "category": "hope_tomorrow",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to relax today, I can imagine tomorrow being at least a little better."
+    },
+    {
+      "id": "MHT-398",
+      "category": "hope_tomorrow",
+      "reverse": true,
+      "urgent": false,
+      "text": "As the day has progressed, thinking about tomorrow has felt discouraging."
+    },
+    {
+      "id": "MHT-399",
+      "category": "hope_tomorrow",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I paused to think about today, thinking about tomorrow does not feel frightening."
+    },
+    {
+      "id": "MHT-400",
+      "category": "hope_tomorrow",
+      "reverse": true,
+      "urgent": false,
+      "text": "Looking back on today, I cannot picture tomorrow feeling any different."
+    },
+    {
+      "id": "MHT-401",
+      "category": "irritability_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "So far today, I have managed frustration without it spilling onto others."
+    },
+    {
+      "id": "MHT-402",
+      "category": "irritability_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Earlier this morning, small annoyances have triggered strong irritation."
+    },
+    {
+      "id": "MHT-403",
+      "category": "irritability_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "Right now, I have been able to pause before reacting."
+    },
+    {
+      "id": "MHT-404",
+      "category": "irritability_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Since I woke up, my patience has felt unusually short."
+    },
+    {
+      "id": "MHT-405",
+      "category": "irritability_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "During today's tasks, I have managed frustration without it spilling onto others."
+    },
+    {
+      "id": "MHT-406",
+      "category": "irritability_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "While getting through today, small annoyances have triggered strong irritation."
+    },
+    {
+      "id": "MHT-407",
+      "category": "irritability_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "As today has gone on, I have been able to pause before reacting."
+    },
+    {
+      "id": "MHT-408",
+      "category": "irritability_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "In the last few hours, my patience has felt unusually short."
+    },
+    {
+      "id": "MHT-409",
+      "category": "irritability_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "At this point in the day, I have managed frustration without it spilling onto others."
+    },
+    {
+      "id": "MHT-410",
+      "category": "irritability_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "As I moved through today, small annoyances have triggered strong irritation."
+    },
+    {
+      "id": "MHT-411",
+      "category": "irritability_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "While facing today's demands, I have been able to pause before reacting."
+    },
+    {
+      "id": "MHT-412",
+      "category": "irritability_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "During a quiet moment today, my patience has felt unusually short."
+    },
+    {
+      "id": "MHT-413",
+      "category": "irritability_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When today felt difficult, I have managed frustration without it spilling onto others."
+    },
+    {
+      "id": "MHT-414",
+      "category": "irritability_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "While interacting with others today, small annoyances have triggered strong irritation."
+    },
+    {
+      "id": "MHT-415",
+      "category": "irritability_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I checked in with myself today, I have been able to pause before reacting."
+    },
+    {
+      "id": "MHT-416",
+      "category": "irritability_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "When something unexpected happened today, my patience has felt unusually short."
+    },
+    {
+      "id": "MHT-417",
+      "category": "irritability_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to relax today, I have managed frustration without it spilling onto others."
+    },
+    {
+      "id": "MHT-418",
+      "category": "irritability_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "As the day has progressed, small annoyances have triggered strong irritation."
+    },
+    {
+      "id": "MHT-419",
+      "category": "irritability_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I paused to think about today, I have been able to pause before reacting."
+    },
+    {
+      "id": "MHT-420",
+      "category": "irritability_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Looking back on today, my patience has felt unusually short."
+    },
+    {
+      "id": "MHT-421",
+      "category": "self_care_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "So far today, I have taken at least one small step to care for myself."
+    },
+    {
+      "id": "MHT-422",
+      "category": "self_care_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Earlier this morning, I have neglected basic self-care."
+    },
+    {
+      "id": "MHT-423",
+      "category": "self_care_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "Right now, I attended to a basic need like washing, eating, or resting."
+    },
+    {
+      "id": "MHT-424",
+      "category": "self_care_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Since I woke up, caring for myself has felt like too much effort."
+    },
+    {
+      "id": "MHT-425",
+      "category": "self_care_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "During today's tasks, I have taken at least one small step to care for myself."
+    },
+    {
+      "id": "MHT-426",
+      "category": "self_care_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "While getting through today, I have neglected basic self-care."
+    },
+    {
+      "id": "MHT-427",
+      "category": "self_care_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "As today has gone on, I attended to a basic need like washing, eating, or resting."
+    },
+    {
+      "id": "MHT-428",
+      "category": "self_care_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "In the last few hours, caring for myself has felt like too much effort."
+    },
+    {
+      "id": "MHT-429",
+      "category": "self_care_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "At this point in the day, I have taken at least one small step to care for myself."
+    },
+    {
+      "id": "MHT-430",
+      "category": "self_care_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "As I moved through today, I have neglected basic self-care."
+    },
+    {
+      "id": "MHT-431",
+      "category": "self_care_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "While facing today's demands, I attended to a basic need like washing, eating, or resting."
+    },
+    {
+      "id": "MHT-432",
+      "category": "self_care_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "During a quiet moment today, caring for myself has felt like too much effort."
+    },
+    {
+      "id": "MHT-433",
+      "category": "self_care_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When today felt difficult, I have taken at least one small step to care for myself."
+    },
+    {
+      "id": "MHT-434",
+      "category": "self_care_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "While interacting with others today, I have neglected basic self-care."
+    },
+    {
+      "id": "MHT-435",
+      "category": "self_care_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I checked in with myself today, I attended to a basic need like washing, eating, or resting."
+    },
+    {
+      "id": "MHT-436",
+      "category": "self_care_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "When something unexpected happened today, caring for myself has felt like too much effort."
+    },
+    {
+      "id": "MHT-437",
+      "category": "self_care_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to relax today, I have taken at least one small step to care for myself."
+    },
+    {
+      "id": "MHT-438",
+      "category": "self_care_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "As the day has progressed, I have neglected basic self-care."
+    },
+    {
+      "id": "MHT-439",
+      "category": "self_care_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I paused to think about today, I attended to a basic need like washing, eating, or resting."
+    },
+    {
+      "id": "MHT-440",
+      "category": "self_care_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Looking back on today, caring for myself has felt like too much effort."
+    },
+    {
+      "id": "MHT-441",
+      "category": "environment_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "So far today, my surroundings have felt reasonably calm."
+    },
+    {
+      "id": "MHT-442",
+      "category": "environment_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Earlier this morning, my surroundings have felt chaotic or draining."
+    },
+    {
+      "id": "MHT-443",
+      "category": "environment_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "Right now, I have had at least one space that felt comfortable."
+    },
+    {
+      "id": "MHT-444",
+      "category": "environment_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Since I woke up, I have not had anywhere that felt calm."
+    },
+    {
+      "id": "MHT-445",
+      "category": "environment_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "During today's tasks, my surroundings have felt reasonably calm."
+    },
+    {
+      "id": "MHT-446",
+      "category": "environment_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "While getting through today, my surroundings have felt chaotic or draining."
+    },
+    {
+      "id": "MHT-447",
+      "category": "environment_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "As today has gone on, I have had at least one space that felt comfortable."
+    },
+    {
+      "id": "MHT-448",
+      "category": "environment_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "In the last few hours, I have not had anywhere that felt calm."
+    },
+    {
+      "id": "MHT-449",
+      "category": "environment_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "At this point in the day, my surroundings have felt reasonably calm."
+    },
+    {
+      "id": "MHT-450",
+      "category": "environment_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "As I moved through today, my surroundings have felt chaotic or draining."
+    },
+    {
+      "id": "MHT-451",
+      "category": "environment_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "While facing today's demands, I have had at least one space that felt comfortable."
+    },
+    {
+      "id": "MHT-452",
+      "category": "environment_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "During a quiet moment today, I have not had anywhere that felt calm."
+    },
+    {
+      "id": "MHT-453",
+      "category": "environment_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When today felt difficult, my surroundings have felt reasonably calm."
+    },
+    {
+      "id": "MHT-454",
+      "category": "environment_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "While interacting with others today, my surroundings have felt chaotic or draining."
+    },
+    {
+      "id": "MHT-455",
+      "category": "environment_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I checked in with myself today, I have had at least one space that felt comfortable."
+    },
+    {
+      "id": "MHT-456",
+      "category": "environment_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "When something unexpected happened today, I have not had anywhere that felt calm."
+    },
+    {
+      "id": "MHT-457",
+      "category": "environment_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to relax today, my surroundings have felt reasonably calm."
+    },
+    {
+      "id": "MHT-458",
+      "category": "environment_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "As the day has progressed, my surroundings have felt chaotic or draining."
+    },
+    {
+      "id": "MHT-459",
+      "category": "environment_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I paused to think about today, I have had at least one space that felt comfortable."
+    },
+    {
+      "id": "MHT-460",
+      "category": "environment_today",
+      "reverse": true,
+      "urgent": false,
+      "text": "Looking back on today, I have not had anywhere that felt calm."
+    },
+    {
+      "id": "MHT-461",
+      "category": "day_satisfaction",
+      "reverse": false,
+      "urgent": false,
+      "text": "So far today, things have felt reasonably okay overall."
+    },
+    {
+      "id": "MHT-462",
+      "category": "day_satisfaction",
+      "reverse": true,
+      "urgent": false,
+      "text": "Earlier this morning, things have felt like a hard day overall."
+    },
+    {
+      "id": "MHT-463",
+      "category": "day_satisfaction",
+      "reverse": false,
+      "urgent": false,
+      "text": "Right now, I would call this a fairly manageable day."
+    },
+    {
+      "id": "MHT-464",
+      "category": "day_satisfaction",
+      "reverse": true,
+      "urgent": false,
+      "text": "Since I woke up, I would not want to repeat a day like this."
+    },
+    {
+      "id": "MHT-465",
+      "category": "day_satisfaction",
+      "reverse": false,
+      "urgent": false,
+      "text": "During today's tasks, things have felt reasonably okay overall."
+    },
+    {
+      "id": "MHT-466",
+      "category": "day_satisfaction",
+      "reverse": true,
+      "urgent": false,
+      "text": "While getting through today, things have felt like a hard day overall."
+    },
+    {
+      "id": "MHT-467",
+      "category": "day_satisfaction",
+      "reverse": false,
+      "urgent": false,
+      "text": "As today has gone on, I would call this a fairly manageable day."
+    },
+    {
+      "id": "MHT-468",
+      "category": "day_satisfaction",
+      "reverse": true,
+      "urgent": false,
+      "text": "In the last few hours, I would not want to repeat a day like this."
+    },
+    {
+      "id": "MHT-469",
+      "category": "day_satisfaction",
+      "reverse": false,
+      "urgent": false,
+      "text": "At this point in the day, things have felt reasonably okay overall."
+    },
+    {
+      "id": "MHT-470",
+      "category": "day_satisfaction",
+      "reverse": true,
+      "urgent": false,
+      "text": "As I moved through today, things have felt like a hard day overall."
+    },
+    {
+      "id": "MHT-471",
+      "category": "day_satisfaction",
+      "reverse": false,
+      "urgent": false,
+      "text": "While facing today's demands, I would call this a fairly manageable day."
+    },
+    {
+      "id": "MHT-472",
+      "category": "day_satisfaction",
+      "reverse": true,
+      "urgent": false,
+      "text": "During a quiet moment today, I would not want to repeat a day like this."
+    },
+    {
+      "id": "MHT-473",
+      "category": "day_satisfaction",
+      "reverse": false,
+      "urgent": false,
+      "text": "When today felt difficult, things have felt reasonably okay overall."
+    },
+    {
+      "id": "MHT-474",
+      "category": "day_satisfaction",
+      "reverse": true,
+      "urgent": false,
+      "text": "While interacting with others today, things have felt like a hard day overall."
+    },
+    {
+      "id": "MHT-475",
+      "category": "day_satisfaction",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I checked in with myself today, I would call this a fairly manageable day."
+    },
+    {
+      "id": "MHT-476",
+      "category": "day_satisfaction",
+      "reverse": true,
+      "urgent": false,
+      "text": "When something unexpected happened today, I would not want to repeat a day like this."
+    },
+    {
+      "id": "MHT-477",
+      "category": "day_satisfaction",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to relax today, things have felt reasonably okay overall."
+    },
+    {
+      "id": "MHT-478",
+      "category": "day_satisfaction",
+      "reverse": true,
+      "urgent": false,
+      "text": "As the day has progressed, things have felt like a hard day overall."
+    },
+    {
+      "id": "MHT-479",
+      "category": "day_satisfaction",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I paused to think about today, I would call this a fairly manageable day."
+    },
+    {
+      "id": "MHT-480",
+      "category": "day_satisfaction",
+      "reverse": true,
+      "urgent": false,
+      "text": "Looking back on today, I would not want to repeat a day like this."
+    },
+    {
+      "id": "MHT-481",
+      "category": "safety_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "So far today, I have felt safe from acting on any thoughts of self-harm."
+    },
+    {
+      "id": "MHT-482",
+      "category": "safety_today",
+      "reverse": true,
+      "urgent": true,
+      "text": "Earlier this morning, I have had thoughts of harming myself."
+    },
+    {
+      "id": "MHT-483",
+      "category": "safety_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "Right now, I know a person or service I could contact immediately if I felt unsafe."
+    },
+    {
+      "id": "MHT-484",
+      "category": "safety_today",
+      "reverse": true,
+      "urgent": true,
+      "text": "Since I woke up, I have felt that I might not be safe with myself."
+    },
+    {
+      "id": "MHT-485",
+      "category": "safety_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "During today's tasks, I have felt safe from acting on any thoughts of self-harm."
+    },
+    {
+      "id": "MHT-486",
+      "category": "safety_today",
+      "reverse": true,
+      "urgent": true,
+      "text": "While getting through today, I have had thoughts of harming myself."
+    },
+    {
+      "id": "MHT-487",
+      "category": "safety_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "As today has gone on, I know a person or service I could contact immediately if I felt unsafe."
+    },
+    {
+      "id": "MHT-488",
+      "category": "safety_today",
+      "reverse": true,
+      "urgent": true,
+      "text": "In the last few hours, I have felt that I might not be safe with myself."
+    },
+    {
+      "id": "MHT-489",
+      "category": "safety_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "At this point in the day, I have felt safe from acting on any thoughts of self-harm."
+    },
+    {
+      "id": "MHT-490",
+      "category": "safety_today",
+      "reverse": true,
+      "urgent": true,
+      "text": "As I moved through today, I have had thoughts of harming myself."
+    },
+    {
+      "id": "MHT-491",
+      "category": "safety_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "While facing today's demands, I know a person or service I could contact immediately if I felt unsafe."
+    },
+    {
+      "id": "MHT-492",
+      "category": "safety_today",
+      "reverse": true,
+      "urgent": true,
+      "text": "During a quiet moment today, I have felt that I might not be safe with myself."
+    },
+    {
+      "id": "MHT-493",
+      "category": "safety_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When today felt difficult, I have felt safe from acting on any thoughts of self-harm."
+    },
+    {
+      "id": "MHT-494",
+      "category": "safety_today",
+      "reverse": true,
+      "urgent": true,
+      "text": "While interacting with others today, I have had thoughts of harming myself."
+    },
+    {
+      "id": "MHT-495",
+      "category": "safety_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I checked in with myself today, I know a person or service I could contact immediately if I felt unsafe."
+    },
+    {
+      "id": "MHT-496",
+      "category": "safety_today",
+      "reverse": true,
+      "urgent": true,
+      "text": "When something unexpected happened today, I have felt that I might not be safe with myself."
+    },
+    {
+      "id": "MHT-497",
+      "category": "safety_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "While trying to relax today, I have felt safe from acting on any thoughts of self-harm."
+    },
+    {
+      "id": "MHT-498",
+      "category": "safety_today",
+      "reverse": true,
+      "urgent": true,
+      "text": "As the day has progressed, I have had thoughts of harming myself."
+    },
+    {
+      "id": "MHT-499",
+      "category": "safety_today",
+      "reverse": false,
+      "urgent": false,
+      "text": "When I paused to think about today, I know a person or service I could contact immediately if I felt unsafe."
+    },
+    {
+      "id": "MHT-500",
+      "category": "safety_today",
+      "reverse": true,
+      "urgent": true,
+      "text": "Looking back on today, I have felt that I might not be safe with myself."
+    }
+  ]
+}
