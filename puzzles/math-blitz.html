@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+<link rel="icon" type="image/x-icon" href="/assets/favicons/favicon.ico">
+<link rel="manifest" href="/assets/favicons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description" content="Math Blitz – a fast True or False math facts game. Check addition, subtraction, multiplication and division equations against the clock. Free brain puzzle from LearnPad." />
+  <meta property="og:title" content="Math Blitz: True or False | LearnPad" />
+  <meta property="og:description" content="Check addition, subtraction, multiplication and division equations against the clock in this fast True or False math game." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mypkweb.com/puzzles/math-blitz.html" />
+  <meta property="og:site_name" content="LearnPad" />
+  <meta property="og:image" content="https://mypkweb.com/assets/images/ogimage.png" />
+  <link rel="canonical" href="https://mypkweb.com/puzzles/math-blitz.html" />
+<title>Math Blitz: True or False | LearnPad</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --accent:      #4361EE;
+      --accent-dark: #3451d1;
+      --ink:         #1a1f36;
+      --muted:       #5a6076;
+      --bg:          #f4f6fb;
+      --card:        #ffffff;
+      --border:      #e2e6f0;
+      --radius:      18px;
+      --green:       #22c55e;
+      --green-dark:  #16a34a;
+      --red:         #ef4444;
+
+      --game-bg:      #294976;
+      --game-bg-dark: #1d3557;
+      --game-bg-light:#3a5a8c;
+      --receipt-bg:   #f7f2e4;
+      --receipt-ink:  #221d14;
+      --tab-bg:       #ddccA2;
+      --tab-line:     #3c2f1d;
+      --true-green:   #2fa876;
+      --false-red:    #e0576b;
+    }
+
+    body {
+      font-family: 'Nunito', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      min-height: 100vh;
+      display: flex; flex-direction: column;
+    }
+
+    /* ── Header ── */
+    header { background: var(--card); border-bottom: 2px solid var(--border); padding: 0 24px; position: sticky; top: 0; z-index: 100; }
+    .header-inner { max-width: 960px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 58px; }
+    .logo-link { text-decoration: none; display: flex; align-items: center; }
+    .logo-img { height: 36px; width: auto; display: block; }
+    .logo-txt { font-weight: 900; font-size: 1.2rem; color: var(--accent); }
+    nav { display: flex; align-items: center; gap: 4px; }
+    nav a { font-weight: 700; font-size: 0.85rem; color: var(--muted); text-decoration: none; padding: 6px 12px; border-radius: 8px; transition: color .15s, background .15s; }
+    nav a:hover { color: var(--accent); background: #eef1fd; }
+
+    /* ── Page hero ── */
+    .page-hero { text-align: center; padding: 26px 24px 14px; background: var(--bg); background-image: radial-gradient(circle, #E8EDF5 1.5px, transparent 1.5px); background-size: 20px 20px; }
+    .hero-badge { display: inline-block; background: #eef1fd; color: var(--accent); font-weight: 800; font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 5px 14px; border-radius: 50px; margin-bottom: 10px; }
+    .page-hero h1 { font-size: clamp(1.3rem, 3.5vw, 1.9rem); font-weight: 900; color: var(--ink); margin-bottom: 5px; }
+    .page-hero p  { font-size: 0.88rem; font-weight: 600; color: var(--muted); line-height: 1.5; }
+
+    /* ── Level screen ── */
+    .level-screen { max-width: 520px; margin: 0 auto; padding: 4px 20px 56px; background: var(--bg); background-image: radial-gradient(circle, #E8EDF5 1.5px, transparent 1.5px); background-size: 20px 20px; }
+    .level-hero { text-align: center; padding: 20px 0 22px; }
+    .level-hero h2 { font-size: 1.5rem; font-weight: 900; color: var(--ink); margin-bottom: 6px; }
+    .level-hero p { font-size: 0.88rem; font-weight: 600; color: var(--muted); }
+    .level-cards { display: flex; flex-direction: column; gap: 14px; }
+    .level-card {
+      background: var(--card); border: 2px solid var(--border); border-radius: var(--radius);
+      padding: 22px 20px; display: flex; align-items: center; gap: 16px;
+      cursor: pointer; transition: border-color .18s, box-shadow .18s, transform .18s; position: relative;
+    }
+    .level-card:hover { border-color: var(--accent); box-shadow: 0 8px 28px rgba(67,97,238,.12); transform: translateY(-2px); }
+    .lv-icon { font-size: 2rem; flex-shrink: 0; }
+    .lv-body { flex: 1; }
+    .lv-title { font-size: 1.15rem; font-weight: 900; color: var(--ink); margin-bottom: 4px; }
+    .lv-desc  { font-size: 0.82rem; font-weight: 600; color: var(--muted); line-height: 1.5; }
+    .lv-arrow { font-size: 1.1rem; color: var(--accent); opacity: 0; transition: opacity .18s, transform .18s; }
+    .level-card:hover .lv-arrow { opacity: 1; transform: translateX(4px); }
+    .lv-badge { position: absolute; top: 14px; right: 16px; font-size: 0.68rem; font-weight: 800; padding: 3px 10px; border-radius: 50px; text-transform: uppercase; letter-spacing: 0.05em; }
+    .tag-easy { background: #e8faf4; color: #059669; }
+    .tag-hard { background: #fff0f0; color: #dc2626; }
+
+    main { flex: 1; display: flex; flex-direction: column; }
+
+    /* ── Game screen (full-bleed dark) ── */
+    .game-screen {
+      background: var(--game-bg);
+      background-image: radial-gradient(circle at 50% 0%, var(--game-bg-light) 0%, var(--game-bg) 55%);
+      flex: 1;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      padding: 16px 20px 34px;
+      position: relative;
+    }
+    .game-inner { width: 100%; max-width: 420px; display: flex; flex-direction: column; align-items: center; }
+
+    .game-topbar { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 16px; }
+    .icon-btn {
+      width: 38px; height: 38px; border-radius: 50%; border: none; cursor: pointer;
+      background: rgba(255,255,255,.14); color: #fff; font-size: 1rem; font-weight: 900;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+      transition: background .15s, transform .1s;
+    }
+    .icon-btn:hover { background: rgba(255,255,255,.24); }
+    .icon-btn:active { transform: scale(0.94); }
+    .timer-pill, .streak-pill {
+      display: flex; align-items: center; gap: 6px;
+      background: rgba(255,255,255,.14); color: #fff; font-weight: 900; font-size: 0.92rem;
+      padding: 7px 14px; border-radius: 999px; white-space: nowrap;
+    }
+    .timer-pill.low { background: rgba(224,87,107,.35); color: #ffd7dc; }
+    .streak-pill { color: #ffe37a; }
+
+    .segbar { width: 100%; display: flex; gap: 5px; margin-bottom: 26px; }
+    .seg { flex: 1; height: 8px; border-radius: 5px; background: rgba(255,255,255,.16); transition: background .25s; }
+    .seg.done-correct { background: var(--true-green); }
+    .seg.done-wrong    { background: var(--false-red); }
+    .seg.current       { background: rgba(255,255,255,.55); }
+
+    .tf-heading { color: #fff; font-weight: 900; font-size: 1.3rem; text-align: center; margin-bottom: 28px; letter-spacing: 0.01em; }
+
+    /* ── Receipt ── */
+    .receipt-wrap { position: relative; width: 100%; max-width: 300px; margin-bottom: 34px; }
+    .receipt-tab {
+      position: absolute; top: -12px; left: 12%; right: 12%; height: 30px;
+      background: var(--tab-bg); border-radius: 16px 16px 4px 4px;
+      border-bottom: 4px solid var(--tab-line);
+      box-shadow: 0 2px 0 rgba(0,0,0,.1);
+    }
+    .receipt-card {
+      position: relative;
+      background: var(--receipt-bg);
+      border-radius: 10px 10px 0 0;
+      padding: 30px 18px 28px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+      transition: box-shadow .2s, transform .15s;
+    }
+    .receipt-card::after {
+      content: '';
+      position: absolute;
+      bottom: -13px; left: 0; right: 0; height: 22px;
+      background:
+        linear-gradient(-45deg, transparent 8px, var(--receipt-bg) 0) 0 6px,
+        linear-gradient(45deg, transparent 8px, var(--receipt-bg) 0) 0 6px;
+      background-repeat: repeat-x;
+      background-size: 16px 16px;
+      background-position: left bottom;
+    }
+    .receipt-card.flash-correct { box-shadow: 0 0 0 4px var(--true-green), 0 10px 30px rgba(0,0,0,.25); }
+    .receipt-card.flash-wrong   { box-shadow: 0 0 0 4px var(--false-red), 0 10px 30px rgba(0,0,0,.25); }
+    .receipt-line {
+      font-weight: 900; color: var(--receipt-ink); line-height: 1.15;
+    }
+    .receipt-line.num { font-size: 2.5rem; margin: 4px 0; }
+    .receipt-line.op  { font-size: 1.5rem; color: #6b6250; margin: 2px 0; }
+    .receipt-line.eq  { font-size: 1.5rem; color: #6b6250; margin: 2px 0; }
+    .receipt-line.result { color: var(--accent-dark); }
+
+    /* ── True/False buttons ── */
+    .tf-buttons { display: flex; gap: 34px; align-items: center; justify-content: center; }
+    .tf-btn {
+      width: 84px; height: 84px; border-radius: 50%; border: none; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2.2rem; color: #fff; font-weight: 900;
+      box-shadow: 0 8px 0 rgba(0,0,0,.22), 0 10px 20px rgba(0,0,0,.25);
+      transition: transform .08s, box-shadow .08s, opacity .2s;
+    }
+    .tf-btn:active { transform: translateY(4px); box-shadow: 0 4px 0 rgba(0,0,0,.22), 0 6px 14px rgba(0,0,0,.25); }
+    .tf-btn.locked { opacity: .55; pointer-events: none; }
+    .tf-false { background: var(--false-red); }
+    .tf-true  { background: var(--true-green); }
+    .tf-btn.picked { transform: translateY(4px) scale(1.06); box-shadow: 0 4px 0 rgba(0,0,0,.22), 0 0 0 6px rgba(255,255,255,.25); }
+
+    /* ── Pause overlay ── */
+    .pause-overlay {
+      position: absolute; inset: 0; background: rgba(15,25,45,.88);
+      display: none; align-items: center; justify-content: center; flex-direction: column; gap: 18px;
+      border-radius: inherit; z-index: 20;
+    }
+    .pause-overlay.show { display: flex; }
+    .pause-overlay h3 { color: #fff; font-size: 1.3rem; font-weight: 900; }
+    .btn-resume {
+      background: var(--accent); color: #fff; border: none; font-family: inherit;
+      font-size: 0.95rem; font-weight: 800; padding: 13px 34px; border-radius: 999px; cursor: pointer;
+    }
+    .btn-resume:hover { background: var(--accent-dark); }
+    .btn-quit {
+      background: none; border: 2px solid rgba(255,255,255,.35); color: #fff;
+      font-family: inherit; font-size: 0.85rem; font-weight: 700; padding: 10px 24px; border-radius: 999px; cursor: pointer;
+    }
+
+    /* ── Animations ── */
+    @keyframes pulse { 0%{transform:scale(1)} 50%{transform:scale(1.05)} 100%{transform:scale(1)} }
+    @keyframes shake { 0%,100%{transform:translateX(0)} 20%{transform:translateX(-6px)} 40%{transform:translateX(6px)} 60%{transform:translateX(-4px)} 80%{transform:translateX(4px)} }
+    .anim-ok  { animation: pulse .3s ease; }
+    .anim-err { animation: shake .4s ease; }
+
+    /* ── Results ── */
+    .results-wrap { max-width: 460px; margin: 32px auto; padding: 0 20px; text-align: center; }
+    .results-wrap.hidden { display: none; }
+    .results-card { background: var(--card); border: 2px solid var(--border); border-radius: var(--radius); padding: 34px 26px 26px; box-shadow: 0 4px 24px rgba(0,0,0,.07); }
+    .res-emoji { font-size: 3rem; margin-bottom: 10px; }
+    .res-title { font-size: 1.45rem; font-weight: 900; color: var(--ink); margin-bottom: 4px; }
+    .res-score { font-size: 2.7rem; font-weight: 900; color: var(--accent); margin: 12px 0 2px; }
+    .res-label { font-size: 0.82rem; font-weight: 700; color: var(--muted); }
+    .res-stats { display: flex; justify-content: center; gap: 22px; margin: 16px 0 6px; }
+    .res-stat-num { font-size: 1.15rem; font-weight: 900; color: var(--ink); }
+    .res-stat-lbl { font-size: 0.68rem; font-weight: 800; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+    .res-msg   { font-size: 0.88rem; font-weight: 700; color: var(--muted); margin: 12px 0 20px; line-height: 1.6; }
+    .res-btns  { display: flex; flex-direction: column; gap: 8px; }
+    .btn-retry { background: var(--accent); color: #fff; font-family: inherit; font-size: 0.95rem; font-weight: 800; padding: 13px 36px; border: none; border-radius: 999px; cursor: pointer; transition: background .15s; }
+    .btn-retry:hover { background: var(--accent-dark); }
+    .btn-change { background: none; border: 2px solid var(--border); color: var(--muted); font-family: inherit; font-size: 0.85rem; font-weight: 700; padding: 10px 24px; border-radius: 999px; cursor: pointer; transition: border-color .15s, color .15s; }
+    .btn-change:hover { border-color: var(--accent); color: var(--accent); }
+    .share-section { margin-top: 18px; padding-top: 18px; border-top: 2px solid var(--border); }
+    .share-label { font-size: 0.72rem; font-weight: 800; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 10px; }
+    .share-btns { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+    .sh-btn { display: flex; align-items: center; gap: 5px; border: none; border-radius: 50px; font-family: inherit; font-size: 0.78rem; font-weight: 800; cursor: pointer; padding: 8px 14px; transition: opacity .15s, transform .1s; }
+    .sh-btn:hover { opacity: 0.85; } .sh-btn:active { transform: scale(0.95); }
+    .sh-x  { background: #000; color: #fff; }
+    .sh-wa { background: #25D366; color: #fff; }
+    .sh-cp { background: var(--accent); color: #fff; }
+    .sh-cp.copied { background: var(--green); }
+
+    /* ── Footer ── */
+    footer { background: #1a1f36; color: rgba(255,255,255,.65); padding: 18px 24px; text-align: center; font-size: 0.76rem; font-weight: 600; margin-top: auto; }
+    footer a { color: rgba(255,255,255,.42); text-decoration: none; transition: color .15s; }
+    footer a:hover { color: #fff; }
+
+    @media (max-width: 420px) {
+      .tf-btn { width: 76px; height: 76px; font-size: 1.9rem; }
+      .tf-buttons { gap: 26px; }
+      .receipt-line.num { font-size: 2.1rem; }
+      .level-screen { padding: 4px 14px 44px; }
+    }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header>
+  <div class="header-inner">
+    <a class="logo-link" href="../index.html">
+      <img src="../logo.png" alt="LearnPad" class="logo-img"
+           onerror="this.outerHTML='<span class=logo-txt>LearnPad</span>'" />
+    </a>
+    <nav>
+      <a href="../mental-quiz.html">Mental Quizzes</a>
+      <a href="../for_school/index.html">School</a>
+      <a href="../index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="page-hero">
+    <div class="hero-badge">Puzzles · Math Blitz</div>
+    <h1>Math Blitz: True or False</h1>
+    <p>A receipt flashes an equation — decide True or False before the clock runs out!</p>
+  </div>
+
+  <!-- ── LEVEL SCREEN ── -->
+  <div class="level-screen" id="levelScreen">
+    <div class="level-hero">
+      <h2>Choose Your Level</h2>
+      <p>Pick how challenging you want the math to be.</p>
+    </div>
+    <div class="level-cards">
+      <div class="level-card" onclick="startGame('easy')">
+        <div class="lv-icon">⭐</div>
+        <div class="lv-body">
+          <div class="lv-title">Easy</div>
+          <div class="lv-desc">Addition &amp; subtraction up to 20 &nbsp;·&nbsp; Small × ÷ facts &nbsp;·&nbsp; 75-second round</div>
+        </div>
+        <div class="lv-badge tag-easy">Beginner</div>
+        <div class="lv-arrow">→</div>
+      </div>
+      <div class="level-card" onclick="startGame('hard')">
+        <div class="lv-icon">🔥</div>
+        <div class="lv-body">
+          <div class="lv-title">Hard</div>
+          <div class="lv-desc">Bigger numbers &nbsp;·&nbsp; × ÷ facts up to 12 &nbsp;·&nbsp; 90-second round</div>
+        </div>
+        <div class="lv-badge tag-hard">Challenge</div>
+        <div class="lv-arrow">→</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── GAME SCREEN ── -->
+  <div class="game-screen" id="gameScreen">
+    <div class="game-inner">
+      <div class="game-topbar">
+        <button class="icon-btn" id="pauseBtn" title="Pause" aria-label="Pause">❚❚</button>
+        <div class="timer-pill" id="timerPill">🕐 <span id="timerText">01:00</span></div>
+        <div class="streak-pill">⚡ <span id="streakVal">0</span></div>
+      </div>
+
+      <div class="segbar" id="segbar"></div>
+
+      <div class="tf-heading">True or False?</div>
+
+      <div class="receipt-wrap">
+        <div class="receipt-tab"></div>
+        <div class="receipt-card" id="receiptCard">
+          <div class="receipt-line num" id="opA">6</div>
+          <div class="receipt-line op" id="opSym">×</div>
+          <div class="receipt-line num" id="opB">8</div>
+          <div class="receipt-line eq">=</div>
+          <div class="receipt-line num result" id="opResult">48</div>
+        </div>
+      </div>
+
+      <div class="tf-buttons">
+        <button class="tf-btn tf-false" id="btnFalse" aria-label="False">✕</button>
+        <button class="tf-btn tf-true"  id="btnTrue"  aria-label="True">✓</button>
+      </div>
+    </div>
+
+    <div class="pause-overlay" id="pauseOverlay">
+      <h3>⏸ Paused</h3>
+      <button class="btn-resume" id="resumeBtn">Resume</button>
+      <button class="btn-quit" onclick="quitToLevelScreen()">Quit to Levels</button>
+    </div>
+  </div>
+
+  <!-- ── RESULTS ── -->
+  <div class="results-wrap hidden" id="resultsWrap">
+    <div class="results-card">
+      <div class="res-emoji" id="resEmoji">🎉</div>
+      <div class="res-title" id="resTitle">Round Complete!</div>
+      <div class="res-score" id="resScore">0/15</div>
+      <div class="res-label">correct answers</div>
+      <div class="res-stats">
+        <div><div class="res-stat-num" id="resBestStreak">0</div><div class="res-stat-lbl">Best Streak</div></div>
+        <div><div class="res-stat-num" id="resAccuracy">0%</div><div class="res-stat-lbl">Accuracy</div></div>
+      </div>
+      <div class="res-msg" id="resMsg"></div>
+      <div class="res-btns">
+        <button class="btn-retry" id="btnRetry">Play Again →</button>
+        <button class="btn-change" onclick="showLevelScreen()">Change Level</button>
+      </div>
+      <div class="share-section">
+        <div class="share-label">Share your result</div>
+        <div class="share-btns">
+          <button class="sh-btn sh-x"  onclick="shareX()">𝕏 Post</button>
+          <button class="sh-btn sh-wa" onclick="shareWA()">💬 WhatsApp</button>
+          <button class="sh-btn sh-cp" id="cpBtn" onclick="copyLink()">🔗 Copy Link</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <a href="../mental-quiz.html">Mental Quizzes</a> &nbsp;·&nbsp;
+  <a href="../index.html">LearnPad</a> &nbsp;·&nbsp;
+  <a href="../for_school/index.html">School Worksheets</a>
+</footer>
+
+<script>
+/* ═══════════════════════════════════════════
+   CONFIG
+═══════════════════════════════════════════ */
+const TOTAL_Q = 15;
+const ROUND_TIME = { easy: 75, hard: 90 };
+
+/* ═══════════════════════════════════════════
+   RANDOM HELPERS
+═══════════════════════════════════════════ */
+function randInt(min, max) { return Math.floor(Math.random() * (max - min + 1)) + min; }
+function randChoice(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
+
+/* ═══════════════════════════════════════════
+   EQUATION GENERATOR
+   Produces a + − × ÷ fact, then either leaves
+   it correct or swaps in a plausible wrong
+   result, roughly 50/50.
+═══════════════════════════════════════════ */
+function genEquation(level) {
+  const isHard = level === 'hard';
+  const opPool = isHard ? ['×', '×', '÷', '÷', '+', '-'] : ['+', '+', '-', '-', '×', '÷'];
+  const op = randChoice(opPool);
+  let a, b, result;
+
+  if (op === '+') {
+    a = randInt(1, isHard ? 70 : 20);
+    b = randInt(1, isHard ? 70 : 20);
+    result = a + b;
+  } else if (op === '-') {
+    a = randInt(isHard ? 20 : 5, isHard ? 99 : 30);
+    b = randInt(1, a);
+    result = a - b;
+  } else if (op === '×') {
+    a = randInt(2, isHard ? 12 : 6);
+    b = randInt(2, isHard ? 12 : 6);
+    result = a * b;
+  } else { // ÷ — build from a clean multiplication so the result is a whole number
+    b = randInt(2, isHard ? 12 : 6);
+    const q = randInt(2, isHard ? 12 : 6);
+    a = b * q;
+    result = q;
+  }
+
+  const isTrue = Math.random() < 0.5;
+  let shown = result;
+  if (!isTrue) {
+    const base = (op === '×' || op === '÷') ? Math.max(1, Math.round(result * 0.15)) : (isHard ? 4 : 2);
+    let delta = randInt(1, Math.max(1, base));
+    const sign = Math.random() < 0.5 ? 1 : -1;
+    shown = result + sign * delta;
+    if (shown === result) shown += 1;
+    if (shown < 0) shown = result + delta;
+  }
+  return { a, b, op, result, shown, isTrue };
+}
+
+/* ═══════════════════════════════════════════
+   STATE
+═══════════════════════════════════════════ */
+let level = 'easy';
+let questions = [];
+let qIdx = 0;
+let score = 0, streak = 0, bestStreak = 0;
+let timeLeft = 0, timerHandle = null;
+let locked = false, paused = false, ended = false;
+
+/* ═══════════════════════════════════════════
+   SEGMENT BAR
+═══════════════════════════════════════════ */
+function buildSegbar() {
+  const bar = document.getElementById('segbar');
+  bar.innerHTML = Array.from({ length: TOTAL_Q }, () => `<div class="seg"></div>`).join('');
+}
+function markSegment(i, cls) {
+  const segs = document.querySelectorAll('#segbar .seg');
+  if (segs[i]) segs[i].className = 'seg ' + cls;
+}
+
+/* ═══════════════════════════════════════════
+   TIMER
+═══════════════════════════════════════════ */
+function formatTime(s) {
+  const m = Math.floor(s / 60), sec = s % 60;
+  return String(m).padStart(2, '0') + ':' + String(sec).padStart(2, '0');
+}
+function tickTimer() {
+  if (paused || ended) return;
+  timeLeft--;
+  const el = document.getElementById('timerText');
+  const pill = document.getElementById('timerPill');
+  el.textContent = formatTime(Math.max(0, timeLeft));
+  pill.classList.toggle('low', timeLeft <= 10);
+  if (timeLeft <= 0) { endGame(); }
+}
+function startTimer() {
+  clearInterval(timerHandle);
+  timerHandle = setInterval(tickTimer, 1000);
+}
+
+/* ═══════════════════════════════════════════
+   RENDER QUESTION
+═══════════════════════════════════════════ */
+function renderQuestion(q) {
+  locked = false;
+  document.getElementById('opA').textContent = q.a;
+  document.getElementById('opSym').textContent = q.op;
+  document.getElementById('opB').textContent = q.b;
+  document.getElementById('opResult').textContent = q.shown;
+
+  const card = document.getElementById('receiptCard');
+  card.className = 'receipt-card';
+
+  document.getElementById('btnTrue').className = 'tf-btn tf-true';
+  document.getElementById('btnFalse').className = 'tf-btn tf-false';
+
+  if (qIdx < TOTAL_Q) markSegment(qIdx, 'current');
+}
+
+/* ═══════════════════════════════════════════
+   ANSWER HANDLING
+═══════════════════════════════════════════ */
+function answer(userSaysTrue) {
+  if (locked || paused || ended) return;
+  locked = true;
+
+  const q = questions[qIdx];
+  const correct = userSaysTrue === q.isTrue;
+
+  const card = document.getElementById('receiptCard');
+  const trueBtn = document.getElementById('btnTrue');
+  const falseBtn = document.getElementById('btnFalse');
+  trueBtn.classList.add('locked');
+  falseBtn.classList.add('locked');
+  (userSaysTrue ? trueBtn : falseBtn).classList.add('picked');
+
+  if (correct) {
+    score++; streak++; bestStreak = Math.max(bestStreak, streak);
+    card.classList.add('flash-correct', 'anim-ok');
+    markSegment(qIdx, 'done-correct');
+  } else {
+    streak = 0;
+    card.classList.add('flash-wrong', 'anim-err');
+    markSegment(qIdx, 'done-wrong');
+  }
+  document.getElementById('streakVal').textContent = streak;
+
+  setTimeout(advanceQuestion, 650);
+}
+
+function advanceQuestion() {
+  qIdx++;
+  if (qIdx >= TOTAL_Q || ended) { endGame(); return; }
+  renderQuestion(questions[qIdx]);
+}
+
+/* ═══════════════════════════════════════════
+   PAUSE / RESUME
+═══════════════════════════════════════════ */
+function togglePause() {
+  if (ended) return;
+  paused = !paused;
+  document.getElementById('pauseOverlay').classList.toggle('show', paused);
+}
+function quitToLevelScreen() {
+  ended = true;
+  clearInterval(timerHandle);
+  document.getElementById('pauseOverlay').classList.remove('show');
+  paused = false;
+  showLevelScreen();
+}
+
+/* ═══════════════════════════════════════════
+   START / END GAME
+═══════════════════════════════════════════ */
+function shuffle(a) { return [...a].sort(() => Math.random() - .5); }
+
+function startGame(chosenLevel) {
+  level = chosenLevel || level;
+  ended = false; paused = false; locked = false;
+  qIdx = 0; score = 0; streak = 0; bestStreak = 0;
+  questions = Array.from({ length: TOTAL_Q }, () => genEquation(level));
+  timeLeft = ROUND_TIME[level] || 75;
+
+  document.getElementById('levelScreen').style.display = 'none';
+  document.getElementById('resultsWrap').classList.add('hidden');
+  document.getElementById('gameScreen').style.display = 'flex';
+  document.getElementById('pauseOverlay').classList.remove('show');
+  document.getElementById('streakVal').textContent = '0';
+  document.getElementById('timerText').textContent = formatTime(timeLeft);
+  document.getElementById('timerPill').classList.remove('low');
+
+  buildSegbar();
+  renderQuestion(questions[0]);
+  startTimer();
+}
+
+function endGame() {
+  if (ended) return;
+  ended = true;
+  clearInterval(timerHandle);
+  document.getElementById('gameScreen').style.display = 'none';
+  document.getElementById('resultsWrap').classList.remove('hidden');
+
+  const accuracyBase = qIdx > 0 ? qIdx : TOTAL_Q;
+  const accuracy = Math.round((score / accuracyBase) * 100);
+  const pct = score / TOTAL_Q;
+
+  const [emoji, title, msg] =
+    score === TOTAL_Q ? ['🏆', 'Perfect Round!', 'Every single equation, nailed it. Incredible speed and accuracy!']
+    : pct >= .7 ? ['🎉', 'Great Blitz!', 'Fast fingers and a sharp mind — most of those were spot on.']
+    : pct >= .5 ? ['👍', 'Solid Effort!', 'You are getting the hang of it — try again to beat your streak.']
+    : ['📚', 'Keep Practicing!', 'Speed comes with practice. Slow down slightly and double-check the math.'];
+
+  document.getElementById('resEmoji').textContent = emoji;
+  document.getElementById('resTitle').textContent = title;
+  document.getElementById('resScore').textContent = `${score}/${TOTAL_Q}`;
+  document.getElementById('resBestStreak').textContent = bestStreak;
+  document.getElementById('resAccuracy').textContent = `${isFinite(accuracy) ? accuracy : 0}%`;
+  document.getElementById('resMsg').textContent = msg + (level === 'hard' ? ' (Hard)' : ' (Easy)');
+  document.getElementById('btnRetry').onclick = () => startGame(level);
+}
+
+function showLevelScreen() {
+  document.getElementById('resultsWrap').classList.add('hidden');
+  document.getElementById('gameScreen').style.display = 'none';
+  document.getElementById('levelScreen').style.display = '';
+}
+
+/* ═══════════════════════════════════════════
+   SHARE
+═══════════════════════════════════════════ */
+function shareText() { return `I scored ${score}/${TOTAL_Q} (best streak ${bestStreak}) on the LearnPad Math Blitz${level === 'hard' ? ' (Hard)' : ''}! ⚡`; }
+function shareX()  { window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText())}&url=${encodeURIComponent(location.href)}`, '_blank'); }
+function shareWA() { window.open(`https://wa.me/?text=${encodeURIComponent(shareText() + ' ' + location.href)}`, '_blank'); }
+function copyLink() {
+  const btn = document.getElementById('cpBtn');
+  navigator.clipboard.writeText(location.href).then(() => {
+    btn.textContent = '✓ Copied!'; btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = '🔗 Copy Link'; btn.classList.remove('copied'); }, 2000);
+  });
+}
+
+/* ═══════════════════════════════════════════
+   WIRE UP CONTROLS
+═══════════════════════════════════════════ */
+document.getElementById('btnTrue').addEventListener('click', () => answer(true));
+document.getElementById('btnFalse').addEventListener('click', () => answer(false));
+document.getElementById('pauseBtn').addEventListener('click', togglePause);
+document.getElementById('resumeBtn').addEventListener('click', togglePause);
+</script>
+
+<script src="../assets/shared-nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+<link rel="icon" type="image/x-icon" href="/assets/favicons/favicon.ico">
+<link rel="manifest" href="/assets/favicons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description" content="Trace the Shape – a steady-hand puzzle. Trace each outline in one continuous stroke without lifting your finger or mouse. A new shape every round. Free brain puzzle from LearnPad." />
+  <meta property="og:title" content="Trace the Shape | LearnPad" />
+  <meta property="og:description" content="Trace each outline in one continuous stroke without lifting your finger or mouse. A new shape every round." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mypkweb.com/puzzles/trace-the-shape.html" />
+  <meta property="og:site_name" content="LearnPad" />
+  <meta property="og:image" content="https://mypkweb.com/assets/images/ogimage.png" />
+  <link rel="canonical" href="https://mypkweb.com/puzzles/trace-the-shape.html" />
+<title>Trace the Shape | LearnPad</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --accent:      #4361EE;
+      --accent-dark: #3451d1;
+      --ink:         #1a1f36;
+      --muted:       #5a6076;
+      --bg:          #f4f6fb;
+      --card:        #ffffff;
+      --border:      #e2e6f0;
+      --radius:      18px;
+      --green:       #22c55e;
+      --green-dark:  #16a34a;
+      --red:         #ef4444;
+
+      --game-bg:       #6e5cc4;
+      --game-bg-light: #8b78dd;
+      --guide-stroke:  rgba(255,255,255,.4);
+      --trace-green:   #4ade80;
+      --true-green:    #2fa876;
+      --false-red:     #e0576b;
+    }
+
+    body {
+      font-family: 'Nunito', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      min-height: 100vh;
+      display: flex; flex-direction: column;
+    }
+
+    /* ── Header ── */
+    header { background: var(--card); border-bottom: 2px solid var(--border); padding: 0 24px; position: sticky; top: 0; z-index: 100; }
+    .header-inner { max-width: 960px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 58px; }
+    .logo-link { text-decoration: none; display: flex; align-items: center; }
+    .logo-img { height: 36px; width: auto; display: block; }
+    .logo-txt { font-weight: 900; font-size: 1.2rem; color: var(--accent); }
+    nav { display: flex; align-items: center; gap: 4px; }
+    nav a { font-weight: 700; font-size: 0.85rem; color: var(--muted); text-decoration: none; padding: 6px 12px; border-radius: 8px; transition: color .15s, background .15s; }
+    nav a:hover { color: var(--accent); background: #eef1fd; }
+
+    /* ── Page hero ── */
+    .page-hero { text-align: center; padding: 26px 24px 14px; background: var(--bg); background-image: radial-gradient(circle, #E8EDF5 1.5px, transparent 1.5px); background-size: 20px 20px; }
+    .hero-badge { display: inline-block; background: #eef1fd; color: var(--accent); font-weight: 800; font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 5px 14px; border-radius: 50px; margin-bottom: 10px; }
+    .page-hero h1 { font-size: clamp(1.3rem, 3.5vw, 1.9rem); font-weight: 900; color: var(--ink); margin-bottom: 5px; }
+    .page-hero p  { font-size: 0.88rem; font-weight: 600; color: var(--muted); line-height: 1.5; }
+
+    /* ── Level screen ── */
+    .level-screen { max-width: 520px; margin: 0 auto; padding: 4px 20px 56px; background: var(--bg); background-image: radial-gradient(circle, #E8EDF5 1.5px, transparent 1.5px); background-size: 20px 20px; }
+    .level-hero { text-align: center; padding: 20px 0 22px; }
+    .level-hero h2 { font-size: 1.5rem; font-weight: 900; color: var(--ink); margin-bottom: 6px; }
+    .level-hero p { font-size: 0.88rem; font-weight: 600; color: var(--muted); }
+    .level-cards { display: flex; flex-direction: column; gap: 14px; margin-bottom: 18px; }
+    .level-card {
+      background: var(--card); border: 2px solid var(--border); border-radius: var(--radius);
+      padding: 22px 20px; display: flex; align-items: center; gap: 16px;
+      cursor: pointer; transition: border-color .18s, box-shadow .18s, transform .18s; position: relative;
+    }
+    .level-card:hover { border-color: var(--accent); box-shadow: 0 8px 28px rgba(67,97,238,.12); transform: translateY(-2px); }
+    .lv-icon { font-size: 2rem; flex-shrink: 0; }
+    .lv-body { flex: 1; }
+    .lv-title { font-size: 1.15rem; font-weight: 900; color: var(--ink); margin-bottom: 4px; }
+    .lv-desc  { font-size: 0.82rem; font-weight: 600; color: var(--muted); line-height: 1.5; }
+    .lv-arrow { font-size: 1.1rem; color: var(--accent); opacity: 0; transition: opacity .18s, transform .18s; }
+    .level-card:hover .lv-arrow { opacity: 1; transform: translateX(4px); }
+    .lv-badge { position: absolute; top: 14px; right: 16px; font-size: 0.68rem; font-weight: 800; padding: 3px 10px; border-radius: 50px; text-transform: uppercase; letter-spacing: 0.05em; }
+    .tag-easy { background: #e8faf4; color: #059669; }
+    .tag-hard { background: #fff0f0; color: #dc2626; }
+    .tag-advanced { background: #f3f1fc; color: #6e5cc4; }
+    .howto { background: var(--card); border: 2px dashed var(--border); border-radius: 14px; padding: 14px 16px; font-size: 0.8rem; font-weight: 600; color: var(--muted); line-height: 1.6; }
+    .howto b { color: var(--ink); }
+
+    main { flex: 1; display: flex; flex-direction: column; }
+
+    /* ── Game screen (full-bleed) ── */
+    .game-screen {
+      background: var(--game-bg);
+      background-image: radial-gradient(circle at 50% 0%, var(--game-bg-light) 0%, var(--game-bg) 60%);
+      flex: 1;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      padding: 16px 20px 30px;
+      position: relative;
+    }
+    .game-inner { width: 100%; max-width: 420px; display: flex; flex-direction: column; align-items: center; }
+
+    .game-topbar { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 16px; }
+    .icon-btn {
+      width: 38px; height: 38px; border-radius: 50%; border: none; cursor: pointer;
+      background: rgba(255,255,255,.16); color: #fff; font-size: 1rem; font-weight: 900;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+      transition: background .15s, transform .1s;
+    }
+    .icon-btn:hover { background: rgba(255,255,255,.26); }
+    .icon-btn:active { transform: scale(0.94); }
+    .timer-pill, .streak-pill {
+      display: flex; align-items: center; gap: 6px;
+      background: rgba(255,255,255,.16); color: #fff; font-weight: 900; font-size: 0.92rem;
+      padding: 7px 14px; border-radius: 999px; white-space: nowrap;
+    }
+    .timer-pill.low { background: rgba(224,87,107,.4); color: #ffd7dc; }
+    .streak-pill { color: #ffe37a; }
+
+    .segbar { width: 100%; display: flex; gap: 5px; margin-bottom: 24px; }
+    .seg { flex: 1; height: 8px; border-radius: 5px; background: rgba(255,255,255,.18); transition: background .25s; }
+    .seg.done-correct { background: var(--true-green); }
+    .seg.done-wrong    { background: var(--false-red); }
+    .seg.current       { background: rgba(255,255,255,.6); }
+
+    .tf-heading { color: #fff; font-weight: 900; font-size: 1.15rem; text-align: center; margin-bottom: 6px; letter-spacing: 0.01em; line-height: 1.4; }
+    .tf-sub { color: rgba(255,255,255,.75); font-weight: 700; font-size: 0.78rem; text-align: center; margin-bottom: 18px; }
+
+    /* ── Tracing canvas ── */
+    .shape-wrap {
+      position: relative;
+      width: 100%;
+      max-width: 300px;
+      aspect-ratio: 1 / 1;
+      margin-bottom: 14px;
+      touch-action: none;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    .shape-wrap svg { width: 100%; height: 100%; display: block; overflow: visible; }
+    .shape-wrap.flash-correct svg { filter: drop-shadow(0 0 14px rgba(74,222,128,.9)); }
+    .shape-wrap.flash-wrong   svg { filter: drop-shadow(0 0 14px rgba(224,87,107,.9)); }
+    #startDot { transition: opacity .2s; }
+    #startDot.hide { opacity: 0; }
+
+    .round-feedback {
+      position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%) scale(0.5);
+      width: 64px; height: 64px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2rem; color: #fff; font-weight: 900;
+      opacity: 0; pointer-events: none; transition: opacity .15s, transform .15s;
+      z-index: 5;
+    }
+    .round-feedback.show { opacity: 1; transform: translate(-50%,-50%) scale(1); }
+    .round-feedback.ok  { background: var(--true-green); }
+    .round-feedback.err { background: var(--false-red); }
+
+    /* ── Pause overlay ── */
+    .pause-overlay {
+      position: absolute; inset: 0; background: rgba(25,15,50,.88);
+      display: none; align-items: center; justify-content: center; flex-direction: column; gap: 18px;
+      z-index: 20;
+    }
+    .pause-overlay.show { display: flex; }
+    .pause-overlay h3 { color: #fff; font-size: 1.3rem; font-weight: 900; }
+    .btn-resume {
+      background: var(--accent); color: #fff; border: none; font-family: inherit;
+      font-size: 0.95rem; font-weight: 800; padding: 13px 34px; border-radius: 999px; cursor: pointer;
+    }
+    .btn-resume:hover { background: var(--accent-dark); }
+    .btn-quit {
+      background: none; border: 2px solid rgba(255,255,255,.35); color: #fff;
+      font-family: inherit; font-size: 0.85rem; font-weight: 700; padding: 10px 24px; border-radius: 999px; cursor: pointer;
+    }
+
+    /* ── Results ── */
+    .results-wrap { max-width: 460px; margin: 32px auto; padding: 0 20px; text-align: center; }
+    .results-wrap.hidden { display: none; }
+    .results-card { background: var(--card); border: 2px solid var(--border); border-radius: var(--radius); padding: 34px 26px 26px; box-shadow: 0 4px 24px rgba(0,0,0,.07); }
+    .res-emoji { font-size: 3rem; margin-bottom: 10px; }
+    .res-title { font-size: 1.45rem; font-weight: 900; color: var(--ink); margin-bottom: 4px; }
+    .res-score { font-size: 2.7rem; font-weight: 900; color: var(--accent); margin: 12px 0 2px; }
+    .res-label { font-size: 0.82rem; font-weight: 700; color: var(--muted); }
+    .res-stats { display: flex; justify-content: center; gap: 22px; margin: 16px 0 6px; }
+    .res-stat-num { font-size: 1.15rem; font-weight: 900; color: var(--ink); }
+    .res-stat-lbl { font-size: 0.68rem; font-weight: 800; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+    .res-msg   { font-size: 0.88rem; font-weight: 700; color: var(--muted); margin: 12px 0 20px; line-height: 1.6; }
+    .res-btns  { display: flex; flex-direction: column; gap: 8px; }
+    .btn-retry { background: var(--accent); color: #fff; font-family: inherit; font-size: 0.95rem; font-weight: 800; padding: 13px 36px; border: none; border-radius: 999px; cursor: pointer; transition: background .15s; }
+    .btn-retry:hover { background: var(--accent-dark); }
+    .btn-change { background: none; border: 2px solid var(--border); color: var(--muted); font-family: inherit; font-size: 0.85rem; font-weight: 700; padding: 10px 24px; border-radius: 999px; cursor: pointer; transition: border-color .15s, color .15s; }
+    .btn-change:hover { border-color: var(--accent); color: var(--accent); }
+    .share-section { margin-top: 18px; padding-top: 18px; border-top: 2px solid var(--border); }
+    .share-label { font-size: 0.72rem; font-weight: 800; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 10px; }
+    .share-btns { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+    .sh-btn { display: flex; align-items: center; gap: 5px; border: none; border-radius: 50px; font-family: inherit; font-size: 0.78rem; font-weight: 800; cursor: pointer; padding: 8px 14px; transition: opacity .15s, transform .1s; }
+    .sh-btn:hover { opacity: 0.85; } .sh-btn:active { transform: scale(0.95); }
+    .sh-x  { background: #000; color: #fff; }
+    .sh-wa { background: #25D366; color: #fff; }
+    .sh-cp { background: var(--accent); color: #fff; }
+    .sh-cp.copied { background: var(--green); }
+
+    /* ── Footer ── */
+    footer { background: #1a1f36; color: rgba(255,255,255,.65); padding: 18px 24px; text-align: center; font-size: 0.76rem; font-weight: 600; margin-top: auto; }
+    footer a { color: rgba(255,255,255,.42); text-decoration: none; transition: color .15s; }
+    footer a:hover { color: #fff; }
+
+    @media (max-width: 420px) {
+      .level-screen { padding: 4px 14px 44px; }
+    }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header>
+  <div class="header-inner">
+    <a class="logo-link" href="../index.html">
+      <img src="../logo.png" alt="LearnPad" class="logo-img"
+           onerror="this.outerHTML='<span class=logo-txt>LearnPad</span>'" />
+    </a>
+    <nav>
+      <a href="../mental-quiz.html">Mental Quizzes</a>
+      <a href="../for_school/index.html">School</a>
+      <a href="../index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="page-hero">
+    <div class="hero-badge">Puzzles · Trace the Shape</div>
+    <h1>Trace the Shape</h1>
+    <p>Trace each outline in one continuous stroke — no lifting your finger or mouse. A new shape every round.</p>
+  </div>
+
+  <!-- ── LEVEL SCREEN ── -->
+  <div class="level-screen" id="levelScreen">
+    <div class="level-hero">
+      <h2>Choose Your Level</h2>
+      <p>Pick how challenging you want the shapes to be.</p>
+    </div>
+    <div class="level-cards">
+      <div class="level-card" onclick="startGame('easy')">
+        <div class="lv-icon">⭐</div>
+        <div class="lv-body">
+          <div class="lv-title">Easy</div>
+          <div class="lv-desc">Simple shapes &nbsp;·&nbsp; Circle, square, triangle, arc &nbsp;·&nbsp; A forgiving trace zone</div>
+        </div>
+        <div class="lv-badge tag-easy">Beginner</div>
+        <div class="lv-arrow">→</div>
+      </div>
+      <div class="level-card" onclick="startGame('hard')">
+        <div class="lv-icon">✋</div>
+        <div class="lv-body">
+          <div class="lv-title">Hard</div>
+          <div class="lv-desc">Star, heart, zigzag, goblet, figure-8, arrow &nbsp;·&nbsp; A tighter trace zone</div>
+        </div>
+        <div class="lv-badge tag-hard">Challenge</div>
+        <div class="lv-arrow">→</div>
+      </div>
+      <div class="level-card" onclick="startGame('advanced')">
+        <div class="lv-icon">🌀</div>
+        <div class="lv-body">
+          <div class="lv-title">Advanced</div>
+          <div class="lv-desc">Octagram, decagram, cog, sawtooth, flower, crown &nbsp;·&nbsp; Complex, many-sided polygons</div>
+        </div>
+        <div class="lv-badge tag-advanced">Expert</div>
+        <div class="lv-arrow">→</div>
+      </div>
+    </div>
+    <div class="howto">
+      <b>How to play:</b> Press and hold on the glowing dot, then drag along the outline without letting go.
+      Stray too far off the line, lift too early, or run out of time and the shape resets. Reach the end while
+      still holding down to complete it!
+    </div>
+  </div>
+
+  <!-- ── GAME SCREEN ── -->
+  <div class="game-screen" id="gameScreen">
+    <div class="game-inner">
+      <div class="game-topbar">
+        <button class="icon-btn" id="pauseBtn" title="Pause" aria-label="Pause">❚❚</button>
+        <div class="timer-pill" id="timerPill">🕐 <span id="timerText">00:14</span></div>
+        <div class="streak-pill">⚡ <span id="streakVal">0</span></div>
+      </div>
+
+      <div class="segbar" id="segbar"></div>
+
+      <div class="tf-heading">Trace the line without lifting</div>
+      <div class="tf-sub">Start at the glowing dot, then drag all the way to the end</div>
+
+      <div class="shape-wrap" id="shapeWrap">
+        <svg id="shapeSvg" viewBox="0 0 300 320" xmlns="http://www.w3.org/2000/svg">
+          <path id="guidePath" d="" fill="none" stroke="var(--guide-stroke)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+          <path id="progressPath" d="" fill="none" stroke="var(--trace-green)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle id="startDot" r="13" fill="#ffd23f" stroke="#fff" stroke-width="3"/>
+        </svg>
+        <div class="round-feedback" id="roundFeedback"></div>
+      </div>
+    </div>
+
+    <div class="pause-overlay" id="pauseOverlay">
+      <h3>⏸ Paused</h3>
+      <button class="btn-resume" id="resumeBtn">Resume</button>
+      <button class="btn-quit" onclick="quitToLevelScreen()">Quit to Levels</button>
+    </div>
+  </div>
+
+  <!-- ── RESULTS ── -->
+  <div class="results-wrap hidden" id="resultsWrap">
+    <div class="results-card">
+      <div class="res-emoji" id="resEmoji">🎉</div>
+      <div class="res-title" id="resTitle">Round Complete!</div>
+      <div class="res-score" id="resScore">0/6</div>
+      <div class="res-label">shapes traced correctly</div>
+      <div class="res-stats">
+        <div><div class="res-stat-num" id="resBestStreak">0</div><div class="res-stat-lbl">Best Streak</div></div>
+        <div><div class="res-stat-num" id="resAccuracy">0%</div><div class="res-stat-lbl">Accuracy</div></div>
+      </div>
+      <div class="res-msg" id="resMsg"></div>
+      <div class="res-btns">
+        <button class="btn-retry" id="btnRetry">Play Again →</button>
+        <button class="btn-change" onclick="showLevelScreen()">Change Level</button>
+      </div>
+      <div class="share-section">
+        <div class="share-label">Share your result</div>
+        <div class="share-btns">
+          <button class="sh-btn sh-x"  onclick="shareX()">𝕏 Post</button>
+          <button class="sh-btn sh-wa" onclick="shareWA()">💬 WhatsApp</button>
+          <button class="sh-btn sh-cp" id="cpBtn" onclick="copyLink()">🔗 Copy Link</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <a href="../mental-quiz.html">Mental Quizzes</a> &nbsp;·&nbsp;
+  <a href="../index.html">LearnPad</a> &nbsp;·&nbsp;
+  <a href="../for_school/index.html">School Worksheets</a>
+</footer>
+
+<script>
+/* ═══════════════════════════════════════════
+   SHAPE LIBRARY
+   Every 'd' is a single continuous path (one
+   M, then only L/C/Q/A segments) so its total
+   length can be walked from start to finish.
+═══════════════════════════════════════════ */
+const EASY_SHAPES = [
+  { name: 'Circle',   d: 'M 150,60 A 90,90 0 0,1 150,240 A 90,90 0 0,1 150,60' },
+  { name: 'Square',   d: 'M 80,80 L 220,80 L 220,220 L 80,220 L 80,80' },
+  { name: 'Triangle', d: 'M 150,60 L 240,220 L 60,220 L 150,60' },
+  { name: 'Arc',      d: 'M 70,120 A 80,80 0 0,0 230,120' },
+  { name: 'S-Curve',  d: 'M 90,60 C 200,60 200,150 150,150 C 100,150 100,240 210,240' },
+  { name: 'House',    d: 'M 150,50 L 250,130 L 250,240 L 50,240 L 50,130 L 150,50' },
+];
+
+const HARD_SHAPES = [
+  { name: 'Star',     d: 'M 150,50 L 174.7,116 L 245.1,119.1 L 189.9,163 L 208.8,230.9 L 150,192 L 91.2,230.9 L 110.1,163 L 54.9,119.1 L 125.3,116 L 150,50' },
+  { name: 'Heart',    d: 'M 150,230 C 60,160 30,100 70,70 C 100,45 140,55 150,90 C 160,55 200,45 230,70 C 270,100 240,160 150,230' },
+  { name: 'Zigzag',   d: 'M 50,80 L 120,220 L 190,80 L 260,220' },
+  { name: 'Goblet',   d: 'M 70,100 A 80,35 0 1,1 230,100 L 222,175 Q 220,210 180,210 L 180,265 Q 180,285 150,285 Q 120,285 120,265 L 120,210 Q 80,210 78,175 L 70,100' },
+  { name: 'Figure-8', d: 'M 150,150 C 100,80 30,80 30,150 C 30,220 100,220 150,150 C 200,80 270,80 270,150 C 270,220 200,220 150,150' },
+  { name: 'Arrow',    d: 'M 40,140 L 160,140 L 160,100 L 260,160 L 160,220 L 160,180 L 40,180 L 40,140' },
+];
+
+/* ── Procedural generators for Advanced-mode complex polygons ──
+   Each returns a single continuous 'd' path string built from
+   straight-line segments, so length/hit-testing stays predictable. */
+function starPolygonPath(points, cx, cy, outerR, innerR, rotationDeg) {
+  rotationDeg = rotationDeg === undefined ? -90 : rotationDeg;
+  const n = points * 2;
+  const step = 360 / n;
+  let d = '';
+  for (let i = 0; i <= n; i++) {
+    const angle = (rotationDeg + i * step) * Math.PI / 180;
+    const r = i % 2 === 0 ? outerR : innerR;
+    const x = cx + r * Math.cos(angle);
+    const y = cy + r * Math.sin(angle);
+    d += (i === 0 ? 'M ' : 'L ') + x.toFixed(1) + ',' + y.toFixed(1) + ' ';
+  }
+  return d.trim();
+}
+function sawtoothPath(startX, y, width, peaks, height) {
+  let x = startX;
+  let d = 'M ' + x.toFixed(1) + ',' + (y + height).toFixed(1) + ' ';
+  const step = width / (peaks * 2);
+  for (let i = 0; i < peaks * 2; i++) {
+    x += step;
+    const py = i % 2 === 0 ? y : y + height;
+    d += 'L ' + x.toFixed(1) + ',' + py.toFixed(1) + ' ';
+  }
+  return d.trim();
+}
+function crownPath(x0, y0, width, peaks, baseHeight) {
+  let x = x0;
+  let d = 'M ' + x.toFixed(1) + ',' + (y0 + baseHeight).toFixed(1) + ' ';
+  const step = width / (peaks * 2);
+  for (let i = 0; i < peaks * 2; i++) {
+    x += step;
+    const py = i % 2 === 0 ? y0 : y0 + baseHeight;
+    d += 'L ' + x.toFixed(1) + ',' + py.toFixed(1) + ' ';
+  }
+  d += 'L ' + x0.toFixed(1) + ',' + (y0 + baseHeight).toFixed(1) + ' ';
+  return d.trim();
+}
+function flowerPath(cx, cy, baseR, amp, lobes, samples) {
+  let d = '';
+  for (let i = 0; i <= samples; i++) {
+    const t = i / samples;
+    const theta = t * 2 * Math.PI;
+    const r = baseR + amp * Math.cos(lobes * theta);
+    const x = cx + r * Math.cos(theta - Math.PI / 2);
+    const y = cy + r * Math.sin(theta - Math.PI / 2);
+    d += (i === 0 ? 'M ' : 'L ') + x.toFixed(1) + ',' + y.toFixed(1) + ' ';
+  }
+  return d.trim();
+}
+
+const ADVANCED_SHAPES = [
+  { name: 'Octagram', d: starPolygonPath(8, 150, 150, 100, 42) },
+  { name: 'Decagram', d: starPolygonPath(10, 150, 150, 105, 60) },
+  { name: 'Cog',      d: starPolygonPath(10, 150, 150, 100, 68) },
+  { name: 'Sawtooth', d: sawtoothPath(40, 100, 220, 7, 120) },
+  { name: 'Flower',   d: flowerPath(150, 150, 85, 22, 7, 72) },
+  { name: 'Crown',    d: crownPath(60, 90, 180, 5, 140) },
+];
+
+/* ═══════════════════════════════════════════
+   CONFIG
+═══════════════════════════════════════════ */
+const TOTAL_ROUNDS = 6;
+const SETTINGS = {
+  easy:     { time: 14, tolerance: 34, startTolerance: 40, lookahead: 90, backSlack: 20 },
+  hard:     { time: 16, tolerance: 22, startTolerance: 32, lookahead: 70, backSlack: 14 },
+  advanced: { time: 22, tolerance: 20, startTolerance: 30, lookahead: 65, backSlack: 16 },
+};
+const FINISH_SLACK = 8;
+
+/* ═══════════════════════════════════════════
+   STATE
+═══════════════════════════════════════════ */
+let level = 'easy';
+let shapes = [];
+let roundIdx = 0;
+let score = 0, streak = 0, bestStreak = 0;
+let timeLeft = 0, timerHandle = null;
+let totalLen = 0, currentLen = 0;
+let tracing = false, roundLocked = false, paused = false, ended = false;
+
+const svgEl = document.getElementById('shapeSvg');
+const guidePath = document.getElementById('guidePath');
+const progressPath = document.getElementById('progressPath');
+const startDot = document.getElementById('startDot');
+const shapeWrap = document.getElementById('shapeWrap');
+const roundFeedback = document.getElementById('roundFeedback');
+
+/* ═══════════════════════════════════════════
+   RANDOM HELPERS
+═══════════════════════════════════════════ */
+function shuffle(a) { return [...a].sort(() => Math.random() - .5); }
+function dist(a, b) { return Math.hypot(a.x - b.x, a.y - b.y); }
+
+/* ═══════════════════════════════════════════
+   SEGMENT BAR
+═══════════════════════════════════════════ */
+function buildSegbar() {
+  const bar = document.getElementById('segbar');
+  bar.innerHTML = Array.from({ length: TOTAL_ROUNDS }, () => `<div class="seg"></div>`).join('');
+}
+function markSegment(i, cls) {
+  const segs = document.querySelectorAll('#segbar .seg');
+  if (segs[i]) segs[i].className = 'seg ' + cls;
+}
+
+/* ═══════════════════════════════════════════
+   TIMER
+═══════════════════════════════════════════ */
+function formatTime(s) {
+  const m = Math.floor(s / 60), sec = s % 60;
+  return String(m).padStart(2, '0') + ':' + String(sec).padStart(2, '0');
+}
+function tickTimer() {
+  if (paused || ended || roundLocked) return;
+  timeLeft--;
+  document.getElementById('timerText').textContent = formatTime(Math.max(0, timeLeft));
+  document.getElementById('timerPill').classList.toggle('low', timeLeft <= 5);
+  if (timeLeft <= 0) failRound();
+}
+function startTimer() {
+  clearInterval(timerHandle);
+  timerHandle = setInterval(tickTimer, 1000);
+}
+
+/* ═══════════════════════════════════════════
+   POINTER → SVG COORDINATE SPACE
+═══════════════════════════════════════════ */
+function getSvgPoint(evt) {
+  const pt = svgEl.createSVGPoint();
+  pt.x = evt.clientX; pt.y = evt.clientY;
+  return pt.matrixTransform(svgEl.getScreenCTM().inverse());
+}
+
+/* ═══════════════════════════════════════════
+   ROUND SETUP / RENDER
+═══════════════════════════════════════════ */
+function setupShape(shape) {
+  guidePath.setAttribute('d', shape.d);
+  progressPath.setAttribute('d', shape.d);
+  totalLen = guidePath.getTotalLength();
+  progressPath.style.strokeDasharray = String(totalLen);
+  progressPath.style.strokeDashoffset = String(totalLen);
+  const startPt = guidePath.getPointAtLength(0);
+  startDot.setAttribute('cx', startPt.x);
+  startDot.setAttribute('cy', startPt.y);
+  startDot.classList.remove('hide');
+}
+
+function startRound() {
+  roundLocked = false; tracing = false; currentLen = 0;
+  shapeWrap.className = 'shape-wrap';
+  roundFeedback.className = 'round-feedback';
+  const cfg = SETTINGS[level];
+  setupShape(shapes[roundIdx]);
+  timeLeft = cfg.time;
+  document.getElementById('timerText').textContent = formatTime(timeLeft);
+  document.getElementById('timerPill').classList.remove('low');
+  markSegment(roundIdx, 'current');
+  startTimer();
+}
+
+/* ═══════════════════════════════════════════
+   TRACE PROGRESS
+═══════════════════════════════════════════ */
+function updateProgressVisual() {
+  progressPath.style.strokeDashoffset = String(totalLen - currentLen);
+}
+
+function handleMove(p) {
+  const cfg = SETTINGS[level];
+  const searchStart = Math.max(0, currentLen - cfg.backSlack);
+  const searchEnd = Math.min(totalLen, currentLen + cfg.lookahead);
+  const steps = 40;
+  const step = Math.max(0.5, (searchEnd - searchStart) / steps);
+  let best = { len: currentLen, dist: dist(p, guidePath.getPointAtLength(currentLen)) };
+  for (let l = searchStart; l <= searchEnd; l += step) {
+    const pt = guidePath.getPointAtLength(l);
+    const dd = dist(p, pt);
+    if (dd < best.dist) best = { len: l, dist: dd };
+  }
+  if (best.dist > cfg.tolerance) { failRound(); return; }
+  if (best.len > currentLen) currentLen = best.len;
+  updateProgressVisual();
+  if (currentLen >= totalLen - FINISH_SLACK) completeRound();
+}
+
+/* ═══════════════════════════════════════════
+   POINTER EVENTS
+═══════════════════════════════════════════ */
+shapeWrap.addEventListener('pointerdown', (e) => {
+  if (roundLocked || paused || ended) return;
+  const p = getSvgPoint(e);
+  const startPt = guidePath.getPointAtLength(0);
+  if (dist(p, startPt) > SETTINGS[level].startTolerance) return;
+  tracing = true;
+  currentLen = 0;
+  updateProgressVisual();
+  startDot.classList.add('hide');
+  try { shapeWrap.setPointerCapture(e.pointerId); } catch (err) {}
+  e.preventDefault();
+});
+
+shapeWrap.addEventListener('pointermove', (e) => {
+  if (!tracing || roundLocked || paused || ended) return;
+  handleMove(getSvgPoint(e));
+  e.preventDefault();
+});
+
+function releasePointer() {
+  if (!tracing || roundLocked) return;
+  tracing = false;
+  if (currentLen < totalLen - FINISH_SLACK) failRound();
+}
+shapeWrap.addEventListener('pointerup', releasePointer);
+shapeWrap.addEventListener('pointercancel', releasePointer);
+shapeWrap.addEventListener('pointerleave', (e) => {
+  // ignore stray leave events while pointer is captured (still down) — only real lifts fire pointerup
+});
+
+/* ═══════════════════════════════════════════
+   ROUND OUTCOME
+═══════════════════════════════════════════ */
+function showFeedback(ok) {
+  roundFeedback.textContent = ok ? '✓' : '✕';
+  roundFeedback.className = 'round-feedback show ' + (ok ? 'ok' : 'err');
+}
+
+function completeRound() {
+  if (roundLocked) return;
+  roundLocked = true; tracing = false;
+  clearInterval(timerHandle);
+  score++; streak++; bestStreak = Math.max(bestStreak, streak);
+  document.getElementById('streakVal').textContent = streak;
+  progressPath.style.strokeDashoffset = '0';
+  shapeWrap.classList.add('flash-correct');
+  showFeedback(true);
+  markSegment(roundIdx, 'done-correct');
+  setTimeout(nextRound, 750);
+}
+
+function failRound() {
+  if (roundLocked) return;
+  roundLocked = true; tracing = false;
+  clearInterval(timerHandle);
+  streak = 0;
+  document.getElementById('streakVal').textContent = streak;
+  shapeWrap.classList.add('flash-wrong');
+  showFeedback(false);
+  markSegment(roundIdx, 'done-wrong');
+  setTimeout(nextRound, 750);
+}
+
+function nextRound() {
+  roundIdx++;
+  if (roundIdx >= TOTAL_ROUNDS || ended) { endGame(); return; }
+  startRound();
+}
+
+/* ═══════════════════════════════════════════
+   PAUSE / RESUME
+═══════════════════════════════════════════ */
+function togglePause() {
+  if (ended) return;
+  paused = !paused;
+  document.getElementById('pauseOverlay').classList.toggle('show', paused);
+  if (paused && tracing) {
+    // an in-progress stroke can't survive a pause — restart just this shape
+    tracing = false;
+    currentLen = 0;
+    updateProgressVisual();
+    startDot.classList.remove('hide');
+  }
+}
+function quitToLevelScreen() {
+  ended = true;
+  clearInterval(timerHandle);
+  document.getElementById('pauseOverlay').classList.remove('show');
+  paused = false;
+  showLevelScreen();
+}
+
+/* ═══════════════════════════════════════════
+   START / END GAME
+═══════════════════════════════════════════ */
+function startGame(chosenLevel) {
+  level = chosenLevel || level;
+  ended = false; paused = false;
+  roundIdx = 0; score = 0; streak = 0; bestStreak = 0;
+  const pool = level === 'advanced' ? ADVANCED_SHAPES : level === 'hard' ? HARD_SHAPES : EASY_SHAPES;
+  shapes = shuffle(pool).slice(0, TOTAL_ROUNDS);
+
+  document.getElementById('levelScreen').style.display = 'none';
+  document.getElementById('resultsWrap').classList.add('hidden');
+  document.getElementById('gameScreen').style.display = 'flex';
+  document.getElementById('pauseOverlay').classList.remove('show');
+  document.getElementById('streakVal').textContent = '0';
+
+  buildSegbar();
+  startRound();
+}
+
+function endGame() {
+  if (ended) return;
+  ended = true;
+  clearInterval(timerHandle);
+  document.getElementById('gameScreen').style.display = 'none';
+  document.getElementById('resultsWrap').classList.remove('hidden');
+
+  const accuracy = Math.round((score / TOTAL_ROUNDS) * 100);
+  const pct = score / TOTAL_ROUNDS;
+
+  const [emoji, title, msg] =
+    score === TOTAL_ROUNDS ? ['🏆', 'Steady Hand!', 'Every shape traced perfectly — your control is excellent!']
+    : pct >= .7 ? ['🎉', 'Great Tracing!', 'Smooth and steady — most of those lines were spot on.']
+    : pct >= .5 ? ['👍', 'Good Effort!', 'Getting steadier — slow down slightly on the tight curves.']
+    : ['📚', 'Keep Practicing!', 'Focus on staying centered on the line rather than moving fast.'];
+
+  document.getElementById('resEmoji').textContent = emoji;
+  document.getElementById('resTitle').textContent = title;
+  document.getElementById('resScore').textContent = `${score}/${TOTAL_ROUNDS}`;
+  document.getElementById('resBestStreak').textContent = bestStreak;
+  document.getElementById('resAccuracy').textContent = `${isFinite(accuracy) ? accuracy : 0}%`;
+  const levelLabel = level === 'advanced' ? ' (Advanced)' : level === 'hard' ? ' (Hard)' : ' (Easy)';
+  document.getElementById('resMsg').textContent = msg + levelLabel;
+  document.getElementById('btnRetry').onclick = () => startGame(level);
+}
+
+function showLevelScreen() {
+  document.getElementById('resultsWrap').classList.add('hidden');
+  document.getElementById('gameScreen').style.display = 'none';
+  document.getElementById('levelScreen').style.display = '';
+}
+
+/* ═══════════════════════════════════════════
+   SHARE
+═══════════════════════════════════════════ */
+function shareText() {
+  const levelLabel = level === 'advanced' ? ' (Advanced)' : level === 'hard' ? ' (Hard)' : '';
+  return `I traced ${score}/${TOTAL_ROUNDS} shapes (best streak ${bestStreak}) on the LearnPad Trace the Shape puzzle${levelLabel}! ✋`;
+}
+function shareX()  { window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText())}&url=${encodeURIComponent(location.href)}`, '_blank'); }
+function shareWA() { window.open(`https://wa.me/?text=${encodeURIComponent(shareText() + ' ' + location.href)}`, '_blank'); }
+function copyLink() {
+  const btn = document.getElementById('cpBtn');
+  navigator.clipboard.writeText(location.href).then(() => {
+    btn.textContent = '✓ Copied!'; btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = '🔗 Copy Link'; btn.classList.remove('copied'); }, 2000);
+  });
+}
+
+/* ═══════════════════════════════════════════
+   WIRE UP CONTROLS
+═══════════════════════════════════════════ */
+document.getElementById('pauseBtn').addEventListener('click', togglePause);
+document.getElementById('resumeBtn').addEventListener('click', togglePause);
+</script>
+
+<script src="../assets/shared-nav.js"></script>
+</body>
+</html>

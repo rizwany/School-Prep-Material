@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+<link rel="icon" type="image/x-icon" href="/assets/favicons/favicon.ico">
+<link rel="manifest" href="/assets/favicons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description" content="Pattern Recognition Puzzle – spot the pattern in shape and number sequences and pick what comes next. Free interactive brain puzzle from LearnPad." />
+  <meta property="og:title" content="Pattern Recognition Puzzle | LearnPad" />
+  <meta property="og:description" content="Spot the pattern in shape and number sequences and pick what comes next. Free interactive brain puzzle from LearnPad." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mypkweb.com/puzzles/pattern-recognition.html" />
+  <meta property="og:site_name" content="LearnPad" />
+  <meta property="og:image" content="https://mypkweb.com/assets/images/ogimage.png" />
+  <link rel="canonical" href="https://mypkweb.com/puzzles/pattern-recognition.html" />
+<title>Pattern Recognition Puzzle | LearnPad</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PD85WRBD');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --accent:      #4361EE;
+      --accent-dark: #3451d1;
+      --ink:         #1a1f36;
+      --muted:       #5a6076;
+      --bg:          #f4f6fb;
+      --card:        #ffffff;
+      --border:      #e2e6f0;
+      --radius:      18px;
+      --green:       #22c55e;
+      --green-dark:  #16a34a;
+      --red:         #ef4444;
+      --seq-bg:      #1d2942;
+    }
+
+    body {
+      font-family: 'Nunito', system-ui, sans-serif;
+      background: var(--bg);
+      background-image: radial-gradient(circle, #E8EDF5 1.5px, transparent 1.5px);
+      background-size: 20px 20px;
+      color: var(--ink);
+      min-height: 100vh;
+      display: flex; flex-direction: column;
+    }
+
+    /* ── Header ── */
+    header { background: var(--card); border-bottom: 2px solid var(--border); padding: 0 24px; position: sticky; top: 0; z-index: 100; }
+    .header-inner { max-width: 960px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 58px; }
+    .logo-link { text-decoration: none; display: flex; align-items: center; }
+    .logo-img { height: 36px; width: auto; display: block; }
+    .logo-txt { font-weight: 900; font-size: 1.2rem; color: var(--accent); }
+    nav { display: flex; align-items: center; gap: 4px; }
+    nav a { font-weight: 700; font-size: 0.85rem; color: var(--muted); text-decoration: none; padding: 6px 12px; border-radius: 8px; transition: color .15s, background .15s; }
+    nav a:hover { color: var(--accent); background: #eef1fd; }
+
+    /* ── Page hero ── */
+    .page-hero { text-align: center; padding: 26px 24px 14px; }
+    .hero-badge { display: inline-block; background: #eef1fd; color: var(--accent); font-weight: 800; font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 5px 14px; border-radius: 50px; margin-bottom: 10px; }
+    .page-hero h1 { font-size: clamp(1.3rem, 3.5vw, 1.9rem); font-weight: 900; color: var(--ink); margin-bottom: 5px; }
+    .page-hero p  { font-size: 0.88rem; font-weight: 600; color: var(--muted); line-height: 1.5; }
+
+    /* ── Level screen ── */
+    .level-screen { max-width: 520px; margin: 0 auto; padding: 4px 20px 56px; }
+    .level-hero { text-align: center; padding: 20px 0 22px; }
+    .level-hero h2 { font-size: 1.5rem; font-weight: 900; color: var(--ink); margin-bottom: 6px; }
+    .level-hero p { font-size: 0.88rem; font-weight: 600; color: var(--muted); }
+    .level-cards { display: flex; flex-direction: column; gap: 14px; }
+    .level-card {
+      background: var(--card); border: 2px solid var(--border); border-radius: var(--radius);
+      padding: 22px 20px; display: flex; align-items: center; gap: 16px;
+      cursor: pointer; transition: border-color .18s, box-shadow .18s, transform .18s; position: relative;
+    }
+    .level-card:hover { border-color: var(--accent); box-shadow: 0 8px 28px rgba(67,97,238,.12); transform: translateY(-2px); }
+    .lv-icon { font-size: 2rem; flex-shrink: 0; }
+    .lv-body { flex: 1; }
+    .lv-title { font-size: 1.15rem; font-weight: 900; color: var(--ink); margin-bottom: 4px; }
+    .lv-desc  { font-size: 0.82rem; font-weight: 600; color: var(--muted); line-height: 1.5; }
+    .lv-arrow { font-size: 1.1rem; color: var(--accent); opacity: 0; transition: opacity .18s, transform .18s; }
+    .level-card:hover .lv-arrow { opacity: 1; transform: translateX(4px); }
+    .lv-badge { position: absolute; top: 14px; right: 16px; font-size: 0.68rem; font-weight: 800; padding: 3px 10px; border-radius: 50px; text-transform: uppercase; letter-spacing: 0.05em; }
+    .tag-easy { background: #e8faf4; color: #059669; }
+    .tag-hard { background: #fff0f0; color: #dc2626; }
+
+    /* ── Quiz wrap ── */
+    main { flex: 1; }
+    .quiz-wrap { max-width: 520px; margin: 0 auto; padding: 8px 20px 56px; }
+
+    /* ── Progress ── */
+    .progress-area { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; flex-wrap: nowrap; }
+    .lv-ind { font-size: 0.68rem; font-weight: 800; padding: 3px 9px; border-radius: 50px; white-space: nowrap; flex-shrink: 0; }
+    .lv-ind.easy { background: #e8faf4; color: #059669; }
+    .lv-ind.hard { background: #fff0f0; color: #dc2626; }
+    .q-counter { font-size: 0.72rem; font-weight: 800; color: var(--muted); white-space: nowrap; text-transform: uppercase; flex-shrink: 0; }
+    .progress-track { flex: 1; height: 10px; background: var(--border); border-radius: 5px; overflow: hidden; min-width: 40px; }
+    .progress-fill { height: 100%; background: var(--green); border-radius: 5px; width: 0%; transition: width .4s ease; }
+    .score-badge { font-size: 0.78rem; font-weight: 800; color: var(--accent); white-space: nowrap; flex-shrink: 0; }
+
+    /* ── Question card ── */
+    .q-card { background: var(--card); border: 2px solid var(--border); border-radius: var(--radius); padding: 22px 20px 16px; margin-bottom: 14px; box-shadow: 0 4px 24px rgba(0,0,0,.06); }
+    .q-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+    .q-badge { background: #eef1fd; color: var(--accent); font-weight: 800; font-size: 0.7rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 12px; border-radius: 50px; }
+    .q-help-btn { display: flex; align-items: center; gap: 5px; background: none; border: 2px solid var(--border); color: var(--muted); font-family: inherit; font-size: 0.73rem; font-weight: 800; cursor: pointer; padding: 4px 11px; border-radius: 50px; transition: border-color .15s, color .15s, background .15s; }
+    .q-help-btn:hover { border-color: var(--accent); color: var(--accent); background: #eef1fd; }
+
+    /* ── Help box ── */
+    .help-box { background: #fffbeb; border: 2px solid #fde68a; border-radius: 12px; padding: 12px 14px; margin-bottom: 14px; display: none; }
+    .help-box.open { display: block; }
+    .help-title { font-size: 0.83rem; font-weight: 900; color: #92400e; margin-bottom: 5px; }
+    .help-text  { font-size: 0.81rem; font-weight: 600; color: #78350f; line-height: 1.6; }
+    .help-example { margin-top: 7px; background: #fef3c7; border-radius: 8px; padding: 6px 10px; font-size: 0.76rem; font-weight: 700; color: #92400e; }
+
+    /* ── Question instruction ── */
+    .q-instruction { font-size: 1.06rem; font-weight: 800; color: var(--ink); margin-bottom: 16px; line-height: 1.5; }
+
+    /* ── Sequence display ── */
+    .seq-area {
+      background: var(--seq-bg);
+      border-radius: 14px;
+      padding: 16px 14px 12px;
+      margin-bottom: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+    .seq-cards { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; align-items: flex-end; min-height: 76px; }
+    .seq-card {
+      background: #fff;
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,.25);
+      flex-shrink: 0;
+      position: relative;
+    }
+    .seq-card-index { position: absolute; top: 2px; left: 5px; font-size: 0.58rem; font-weight: 900; color: #94a3b8; }
+    .seq-card.blank { background: transparent; border: 3px dashed rgba(255,255,255,.55); box-shadow: none; }
+    .seq-blank-mark { font-size: 1.7rem; font-weight: 900; color: #fff; }
+    .seq-number-big { font-weight: 900; color: var(--ink); }
+    .seq-label {
+      font-size: 0.75rem;
+      font-weight: 800;
+      color: rgba(255,255,255,.8);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .seq-label::before,.seq-label::after { content:''; flex: 1; height: 1px; background: rgba(255,255,255,.3); width: 40px; }
+
+    /* ── Answer options ── */
+    .ans-grid { display: grid; gap: 10px; margin-bottom: 10px; }
+    .ans-grid.cols-2 { grid-template-columns: 1fr 1fr; }
+    .ans-grid.cols-3 { grid-template-columns: 1fr 1fr 1fr; }
+    .ans-grid.cols-4 { grid-template-columns: 1fr 1fr; }
+    .ans-opt {
+      border: 3px solid var(--border);
+      border-radius: 14px;
+      padding: 12px 8px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      transition: border-color .15s, box-shadow .15s, transform .12s;
+      background: var(--card);
+      min-height: 90px;
+      text-align: center;
+    }
+    .ans-opt:hover:not(.locked) { border-color: var(--accent); transform: translateY(-2px); }
+    .ans-opt.sel     { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(67,97,238,.2); }
+    .ans-opt.correct { border-color: var(--green) !important; box-shadow: 0 0 0 3px rgba(34,197,94,.22) !important; background: #f0fdf4; }
+    .ans-opt.wrong   { border-color: var(--red)   !important; box-shadow: 0 0 0 3px rgba(239,68,68,.22)  !important; background: #fff5f5; }
+    .ans-opt.locked  { cursor: default; }
+    .ans-opt-label   { font-size: 0.7rem; font-weight: 800; color: var(--muted); text-transform: uppercase; letter-spacing: 0.03em; }
+    .ans-opt-text    { font-size: 1.4rem; font-weight: 900; color: var(--ink); line-height: 1.4; }
+
+    /* ── Why box (shown after answer) ── */
+    .why-box { background: #f0fdf4; border: 2px solid #86efac; border-radius: 10px; padding: 10px 13px; margin-top: 8px; display: none; }
+    .why-box.show { display: block; }
+    .why-text { font-size: 0.82rem; font-weight: 700; color: #166534; line-height: 1.5; }
+
+    /* ── Feedback ── */
+    .feedback { text-align: center; font-size: 0.96rem; font-weight: 800; min-height: 24px; display: flex; align-items: center; justify-content: center; gap: 5px; opacity: 0; transition: opacity .2s; margin-top: 4px; }
+    .feedback.show { opacity: 1; }
+    .feedback.ok  { color: var(--green); }
+    .feedback.err { color: var(--red); }
+
+    /* ── Buttons ── */
+    .btn-row { display: flex; flex-direction: column; align-items: center; gap: 9px; }
+    .btn-check { width: 100%; padding: 15px; border: none; border-radius: 999px; font-family: inherit; font-size: 1rem; font-weight: 800; cursor: pointer; background: var(--accent); color: #fff; transition: background .15s, transform .1s; }
+    .btn-check:hover  { background: var(--accent-dark); }
+    .btn-check:active { transform: scale(0.98); }
+    .btn-check.done   { background: var(--green); }
+    .btn-check.done:hover { background: var(--green-dark); }
+
+    /* ── Animations ── */
+    @keyframes pulse { 0%{transform:scale(1)} 50%{transform:scale(1.06)} 100%{transform:scale(1)} }
+    @keyframes shake { 0%,100%{transform:translateX(0)} 20%{transform:translateX(-6px)} 40%{transform:translateX(6px)} 60%{transform:translateX(-4px)} 80%{transform:translateX(4px)} }
+    .anim-ok  { animation: pulse .35s ease; }
+    .anim-err { animation: shake  .4s ease; }
+
+    /* ── Results ── */
+    .results-wrap { max-width: 460px; margin: 32px auto; padding: 0 20px; text-align: center; }
+    .results-wrap.hidden { display: none; }
+    .results-card { background: var(--card); border: 2px solid var(--border); border-radius: var(--radius); padding: 34px 26px 26px; box-shadow: 0 4px 24px rgba(0,0,0,.07); }
+    .res-emoji { font-size: 3rem; margin-bottom: 10px; }
+    .res-title { font-size: 1.45rem; font-weight: 900; color: var(--ink); margin-bottom: 4px; }
+    .res-score { font-size: 2.7rem; font-weight: 900; color: var(--accent); margin: 12px 0 2px; }
+    .res-label { font-size: 0.82rem; font-weight: 700; color: var(--muted); }
+    .res-msg   { font-size: 0.88rem; font-weight: 700; color: var(--muted); margin: 12px 0 20px; line-height: 1.6; }
+    .res-btns  { display: flex; flex-direction: column; gap: 8px; }
+    .btn-retry { background: var(--accent); color: #fff; font-family: inherit; font-size: 0.95rem; font-weight: 800; padding: 13px 36px; border: none; border-radius: 999px; cursor: pointer; transition: background .15s; }
+    .btn-retry:hover { background: var(--accent-dark); }
+    .btn-change { background: none; border: 2px solid var(--border); color: var(--muted); font-family: inherit; font-size: 0.85rem; font-weight: 700; padding: 10px 24px; border-radius: 999px; cursor: pointer; transition: border-color .15s, color .15s; }
+    .btn-change:hover { border-color: var(--accent); color: var(--accent); }
+    .share-section { margin-top: 18px; padding-top: 18px; border-top: 2px solid var(--border); }
+    .share-label { font-size: 0.72rem; font-weight: 800; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 10px; }
+    .share-btns { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+    .sh-btn { display: flex; align-items: center; gap: 5px; border: none; border-radius: 50px; font-family: inherit; font-size: 0.78rem; font-weight: 800; cursor: pointer; padding: 8px 14px; transition: opacity .15s, transform .1s; }
+    .sh-btn:hover { opacity: 0.85; } .sh-btn:active { transform: scale(0.95); }
+    .sh-x  { background: #000; color: #fff; }
+    .sh-wa { background: #25D366; color: #fff; }
+    .sh-cp { background: var(--accent); color: #fff; }
+    .sh-cp.copied { background: var(--green); }
+
+    /* ── Footer ── */
+    footer { background: #1a1f36; color: rgba(255,255,255,.65); padding: 18px 24px; text-align: center; font-size: 0.76rem; font-weight: 600; margin-top: auto; }
+    footer a { color: rgba(255,255,255,.42); text-decoration: none; transition: color .15s; }
+    footer a:hover { color: #fff; }
+
+    @media (max-width: 480px) {
+      .quiz-wrap, .level-screen { padding: 4px 14px 44px; }
+      .ans-grid.cols-3 { grid-template-columns: 1fr 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD85WRBD" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header>
+  <div class="header-inner">
+    <a class="logo-link" href="../index.html">
+      <img src="../logo.png" alt="LearnPad" class="logo-img"
+           onerror="this.outerHTML='<span class=logo-txt>LearnPad</span>'" />
+    </a>
+    <nav>
+      <a href="../mental-quiz.html">Mental Quizzes</a>
+      <a href="../for_school/index.html">School</a>
+      <a href="../index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="page-hero">
+    <div class="hero-badge">Puzzles · Pattern Recognition</div>
+    <h1>Pattern Recognition Puzzle</h1>
+    <p>Study the sequence, spot the rule, and pick what comes next &nbsp;·&nbsp; 10 Questions</p>
+  </div>
+
+  <!-- ── LEVEL SCREEN ── -->
+  <div class="level-screen" id="levelScreen">
+    <div class="level-hero">
+      <h2>Choose Your Level</h2>
+      <p>Pick how challenging you want the puzzle to be.</p>
+    </div>
+    <div class="level-cards">
+      <div class="level-card" onclick="startQuiz('easy')">
+        <div class="lv-icon">⭐</div>
+        <div class="lv-body">
+          <div class="lv-title">Easy</div>
+          <div class="lv-desc">Repeating shapes &amp; colors, growing sizes, number sequences &nbsp;·&nbsp; A fresh random mix every time</div>
+        </div>
+        <div class="lv-badge tag-easy">Beginner</div>
+        <div class="lv-arrow">→</div>
+      </div>
+      <div class="level-card" onclick="startQuiz('hard')">
+        <div class="lv-icon">🧠</div>
+        <div class="lv-body">
+          <div class="lv-title">Hard</div>
+          <div class="lv-desc">Longer, multi-attribute sequences &nbsp;·&nbsp; Doubling, Fibonacci, squares/cubes &amp; more &nbsp;·&nbsp; Randomized every round</div>
+        </div>
+        <div class="lv-badge tag-hard">Challenge</div>
+        <div class="lv-arrow">→</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── QUIZ ── -->
+  <div class="quiz-wrap" id="quizWrap" style="display:none;">
+    <div class="progress-area">
+      <div class="lv-ind easy" id="lvInd">⭐ Easy</div>
+      <div class="q-counter">Q <span id="qNum">1</span>/10</div>
+      <div class="progress-track"><div class="progress-fill" id="pFill"></div></div>
+      <div class="score-badge">⭐ <span id="scoreDisp">0</span></div>
+    </div>
+    <div class="q-card" id="qCard"></div>
+    <div class="btn-row">
+      <button class="btn-check" id="btnCheck">Check Answer</button>
+    </div>
+  </div>
+
+  <!-- ── RESULTS ── -->
+  <div class="results-wrap hidden" id="resultsWrap">
+    <div class="results-card">
+      <div class="res-emoji" id="resEmoji">🎉</div>
+      <div class="res-title">Puzzle Complete!</div>
+      <div class="res-score" id="resScore">0/10</div>
+      <div class="res-label">correct answers</div>
+      <div class="res-msg" id="resMsg"></div>
+      <div class="res-btns">
+        <button class="btn-retry" id="btnRetry">Play Again →</button>
+        <button class="btn-change" onclick="showLevelScreen()">Change Level</button>
+      </div>
+      <div class="share-section">
+        <div class="share-label">Share your result</div>
+        <div class="share-btns">
+          <button class="sh-btn sh-x"  onclick="shareX()">𝕏 Post</button>
+          <button class="sh-btn sh-wa" onclick="shareWA()">💬 WhatsApp</button>
+          <button class="sh-btn sh-cp" id="cpBtn" onclick="copyLink()">🔗 Copy Link</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <a href="../mental-quiz.html">Mental Quizzes</a> &nbsp;·&nbsp;
+  <a href="../index.html">LearnPad</a> &nbsp;·&nbsp;
+  <a href="../for_school/index.html">School Worksheets</a>
+</footer>
+
+<script>
+/* ═══════════════════════════════════════════
+   SHAPE DEFINITIONS
+═══════════════════════════════════════════ */
+const CMAP = {
+  red:'#EF4444', blue:'#3B82F6', green:'#22C55E', yellow:'#EAB308',
+  orange:'#F97316', purple:'#A855F7', pink:'#EC4899', teal:'#14B8A6',
+};
+const SIZE_ORDER = ['xs', 'sm', 'md', 'lg', 'xl', 'xxl', 'xxxl'];
+const SIZE_PX = { xs: 18, sm: 27, md: 36, lg: 45, xl: 55, xxl: 66, xxxl: 78 };
+const SIZE_LABEL = { xs: 'tiny', sm: 'small', md: 'medium', lg: 'large', xl: 'x-large', xxl: 'xx-large', xxxl: 'huge' };
+const SHAPE_POOL = ['circle', 'square', 'triangle', 'star', 'heart', 'diamond'];
+const COLOR_POOL = Object.keys(CMAP);
+
+function shapeBody(name, fill, stroke, sw) {
+  sw = sw || 4;
+  const c = fill, s = stroke || '#1a1f36';
+  switch (name) {
+    case 'circle':
+      return `<circle cx="50" cy="50" r="38" fill="${c}" stroke="${s}" stroke-width="${sw}"/>`;
+    case 'square':
+      return `<rect x="8" y="8" width="84" height="84" rx="7" fill="${c}" stroke="${s}" stroke-width="${sw}"/>`;
+    case 'triangle':
+      return `<polygon points="50,8 93,91 7,91" fill="${c}" stroke="${s}" stroke-width="${sw}" stroke-linejoin="round"/>`;
+    case 'star':
+      return `<polygon points="50,10 60,36 88,38 66,55 74,82 50,67 26,82 34,55 12,38 40,36" fill="${c}" stroke="${s}" stroke-width="${sw}" stroke-linejoin="round"/>`;
+    case 'heart':
+      return `<path d="M50,30 C50,20 35,10 25,20 C12,32 12,50 25,62 L50,85 L75,62 C88,50 88,32 75,20 C65,10 50,20 50,30 Z" fill="${c}" stroke="${s}" stroke-width="${sw}" stroke-linejoin="round"/>`;
+    case 'diamond':
+      return `<polygon points="50,5 93,50 50,95 7,50" fill="${c}" stroke="${s}" stroke-width="${sw}" stroke-linejoin="round"/>`;
+  }
+  return '';
+}
+
+function shapeSVG(name, color, size) {
+  const fill = CMAP[color] || '#3B82F6';
+  return `<svg viewBox="0 0 100 100" width="${size}" height="${size}" xmlns="http://www.w3.org/2000/svg">${shapeBody(name, fill, '#1a1f36', 4)}</svg>`;
+}
+
+/* item factories */
+function sh(shape, color, size) { return { type: 'shape', shape, color, size: size || 'md' }; }
+function num(value) { return { type: 'number', value }; }
+
+function itemIconHTML(item, px) {
+  if (item.type === 'shape') {
+    const dim = px || SIZE_PX[item.size] || SIZE_PX.md;
+    return shapeSVG(item.shape, item.color, dim);
+  }
+  if (item.type === 'number') {
+    const fs = Math.max(16, (px || 40) * 0.5);
+    return `<div class="seq-number-big" style="font-size:${fs}px">${item.value}</div>`;
+  }
+  return '';
+}
+
+/* ═══════════════════════════════════════════
+   HELP CONTENT
+═══════════════════════════════════════════ */
+const HELP = {
+  repeat2: {
+    title: '🔁 Repeating Pattern (2-step)',
+    text:  'A short group of 2 items repeats again and again. Spot the group, then continue it.',
+    eg:    'circle, square, circle, square, ? → circle'
+  },
+  altcolor: {
+    title: '🎨 Alternating Colors',
+    text:  'The shape stays the same but the color swaps back and forth. Find the color that comes next.',
+    eg:    'red circle, blue circle, red circle, ? → blue circle'
+  },
+  repeat3: {
+    title: '🔁 Repeating Pattern (3-step)',
+    text:  'A group of 3 items repeats. Count where you are inside the group to know what comes next.',
+    eg:    'circle, square, triangle, circle, square, ? → triangle'
+  },
+  repeatAAB: {
+    title: '🔁 Repeating Pattern (AAB)',
+    text:  'Two of the same item are followed by one different item, then it all repeats.',
+    eg:    'star, star, heart, star, star, ? → heart'
+  },
+  repeatABB: {
+    title: '🔁 Repeating Pattern (ABB)',
+    text:  'One item is followed by two of a different item, then it all repeats.',
+    eg:    'circle, diamond, diamond, circle, ? → diamond'
+  },
+  repeatAAAB: {
+    title: '🔁 Repeating Pattern (AAAB)',
+    text:  'Three of the same item are followed by one different item, then it all repeats.',
+    eg:    'star, star, star, heart, star, star, star, ? → heart'
+  },
+  growing: {
+    title: '📈 Growing Pattern',
+    text:  'The same shape gets bigger (or smaller) by one step each time.',
+    eg:    'small circle, medium circle, large circle, ? → extra-large circle'
+  },
+  arithmetic: {
+    title: '🔢 Number Pattern (Add / Subtract)',
+    text:  'Each number changes by the same amount every time. Find that amount and apply it once more.',
+    eg:    '2, 4, 6, 8, ? → 10 (add 2 each time)'
+  },
+  geometric: {
+    title: '✖️ Number Pattern (Multiply)',
+    text:  'Each number is multiplied by the same amount as the step before it.',
+    eg:    '1, 2, 4, 8, ? → 16 (double each time)'
+  },
+  fibonacci: {
+    title: '➕ Number Pattern (Sum of Two Before)',
+    text:  'Each number is the sum of the two numbers right before it.',
+    eg:    '1, 1, 2, 3, 5, ? → 8 (because 3 + 5 = 8)'
+  },
+  twostep: {
+    title: '🎯 Two-Attribute Pattern',
+    text:  'Two things change at once — like color AND shape. Track both separately.',
+    eg:    'red circle, red square, blue circle, ? → blue square'
+  },
+  squares: {
+    title: '🔢 Number Pattern (Square Numbers)',
+    text:  'Each number is a whole number multiplied by itself: 1×1, 2×2, 3×3...',
+    eg:    '1, 4, 9, 16, ? → 25 (because 5×5 = 25)'
+  },
+  twostepnum: {
+    title: '🔢 Number Pattern (Two-Step Add / Subtract)',
+    text:  'The amount added or subtracted changes in its own repeating pattern — like +2, then −1, then +2 again.',
+    eg:    '5, 7, 6, 8, 7, ? → 9 (+2 from 7)'
+  },
+  repeat4: {
+    title: '🔁 Repeating Pattern (4-step)',
+    text:  'A group of 4 different items repeats. Count carefully — longer groups are easy to lose track of.',
+    eg:    'circle, square, triangle, star, circle, square, triangle, ? → star'
+  },
+  altcolor3: {
+    title: '🎨 Repeating Colors (3-step)',
+    text:  'The shape stays the same but the color cycles through 3 different colors in order, then repeats.',
+    eg:    'red circle, blue circle, green circle, red circle, ? → blue circle'
+  },
+  repeatAABB: {
+    title: '🔁 Repeating Pattern (AABB)',
+    text:  'Two of one item are followed by two of another item, then it all repeats.',
+    eg:    'circle, circle, square, square, circle, circle, ? → square'
+  },
+  repeatABBB: {
+    title: '🔁 Repeating Pattern (ABBB)',
+    text:  'One item is followed by three of a different item, then it all repeats.',
+    eg:    'circle, diamond, diamond, diamond, circle, ? → diamond'
+  },
+  geometricDivide: {
+    title: '➗ Number Pattern (Divide)',
+    text:  'Each number is divided by the same amount as the step before it.',
+    eg:    '48, 24, 12, 6, ? → 3 (halve each time)'
+  },
+  cubes: {
+    title: '🔢 Number Pattern (Cube Numbers)',
+    text:  'Each number is a whole number multiplied by itself twice: 1×1×1, 2×2×2, 3×3×3...',
+    eg:    '1, 8, 27, 64, ? → 125 (because 5×5×5 = 125)'
+  },
+  threeattr: {
+    title: '🎯 Three-Attribute Pattern',
+    text:  'Shape, color, AND size all cycle independently between two values. Track all three at once.',
+    eg:    'small red circle, large blue square, small red circle, ? → large blue square'
+  },
+};
+
+/* ═══════════════════════════════════════════
+   RANDOM HELPERS
+═══════════════════════════════════════════ */
+function randInt(min, max) { return Math.floor(Math.random() * (max - min + 1)) + min; }
+function randChoice(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
+function sampleDistinct(arr, n) { return shuffle(arr).slice(0, n); }
+function otherFrom(pool, exclude) {
+  const filtered = pool.filter(x => !exclude.includes(x));
+  return randChoice(filtered.length ? filtered : pool);
+}
+function shapeEq(a, b) { return a.type === 'shape' && b.type === 'shape' && a.shape === b.shape && a.color === b.color && (a.size || 'md') === (b.size || 'md'); }
+
+/** Shuffles option order and remaps the correct index so the right answer isn't always in the same slot. */
+function finalize(category, helpKey, seq, options, correctIdx, why) {
+  const order = shuffle(options.map((_, i) => i));
+  return {
+    category, helpKey, seq,
+    options: order.map(i => options[i]),
+    correct: order.indexOf(correctIdx),
+    why,
+  };
+}
+
+/** Generates 'count' unique wrong numbers near 'correct', scaled to 'spread'. */
+function numDistractors(correct, spread, count) {
+  count = count || 2;
+  spread = Math.max(2, Math.round(spread));
+  const used = new Set([correct]);
+  const out = [];
+  let guard = 0;
+  while (out.length < count && guard < 60) {
+    guard++;
+    const off = randInt(1, spread) * (Math.random() < 0.5 ? -1 : 1);
+    const cand = correct + off;
+    if (!used.has(cand)) { used.add(cand); out.push(cand); }
+  }
+  let pad = 1;
+  while (out.length < count) {
+    const cand = correct + pad;
+    if (!used.has(cand)) { used.add(cand); out.push(cand); }
+    pad++;
+  }
+  return out;
+}
+
+/* ═══════════════════════════════════════════
+   PATTERN GENERATORS
+   Every call randomizes shapes, colors, numbers
+   and sequence length, so no two playthroughs
+   (and no two questions) look the same.
+═══════════════════════════════════════════ */
+
+/* n distinct shapes cycling in order (AB / ABC / ABCD ...) */
+function genRepeatCycle(n, minCycles, maxCycles) {
+  const shapes = sampleDistinct(SHAPE_POOL, n);
+  const color = randChoice(COLOR_POOL);
+  const cycle = shapes.map(s => sh(s, color));
+  const cycles = randInt(minCycles, maxCycles);
+  const remainder = randInt(1, n - 1);
+  const seq = [];
+  for (let c = 0; c < cycles; c++) seq.push(...cycle);
+  for (let r = 0; r < remainder; r++) seq.push(cycle[r]);
+  const correctItem = cycle[remainder];
+  const diffItems = cycle.filter(it => !shapeEq(it, correctItem));
+  const wrongCycleItem = randChoice(diffItems);
+  const outsideShape = otherFrom(SHAPE_POOL, shapes);
+  const options = [correctItem, wrongCycleItem, sh(outsideShape, color)];
+  const labelMap = { 2: '2-step', 3: '3-step', 4: '4-step' };
+  const helpKeyMap = { 2: 'repeat2', 3: 'repeat3', 4: 'repeat4' };
+  const why = `The ${n}-item group (${shapes.join(', ')}) repeats over and over — keep counting your position in the group.`;
+  return finalize(`Repeating (${labelMap[n]})`, helpKeyMap[n], seq, options, 0, why);
+}
+
+/* block patterns like AAB, ABB, AAAB, AABB, ABBB */
+function genBlockPattern(blockSpec, minCycles, maxCycles, helpKey) {
+  const letters = [...new Set(blockSpec)];
+  const shapes = sampleDistinct(SHAPE_POOL, letters.length);
+  const color = randChoice(COLOR_POOL);
+  const letterItem = {};
+  letters.forEach((L, i) => { letterItem[L] = sh(shapes[i], color); });
+  const cycle = blockSpec.map(L => letterItem[L]);
+  const n = cycle.length;
+  const cycles = randInt(minCycles, maxCycles);
+  const remainder = randInt(1, n - 1);
+  const seq = [];
+  for (let c = 0; c < cycles; c++) seq.push(...cycle);
+  for (let r = 0; r < remainder; r++) seq.push(cycle[r]);
+  const correctItem = cycle[remainder];
+  const diffItems = cycle.filter(it => !shapeEq(it, correctItem));
+  const wrongCycleItem = diffItems.length ? randChoice(diffItems) : cycle[(remainder + 1) % n];
+  const outsideShape = otherFrom(SHAPE_POOL, shapes);
+  const options = [correctItem, wrongCycleItem, sh(outsideShape, color)];
+  const label = blockSpec.join('');
+  const why = `The block ${label} keeps repeating — count how far you are into the block to find what comes next.`;
+  return finalize(`Repeating (${label})`, helpKey, seq, options, 0, why);
+}
+
+/* one fixed shape, k colors cycling in order */
+function genAltColor(k, minCycles, maxCycles) {
+  const shape = randChoice(SHAPE_POOL);
+  const colors = sampleDistinct(COLOR_POOL, k);
+  const cycle = colors.map(c => sh(shape, c));
+  const cycles = randInt(minCycles, maxCycles);
+  const remainder = randInt(1, k - 1);
+  const seq = [];
+  for (let c = 0; c < cycles; c++) seq.push(...cycle);
+  for (let r = 0; r < remainder; r++) seq.push(cycle[r]);
+  const correctItem = cycle[remainder];
+  const diffItems = cycle.filter(it => !shapeEq(it, correctItem));
+  const wrongCycleItem = randChoice(diffItems);
+  const outsideColor = otherFrom(COLOR_POOL, colors);
+  const options = [correctItem, wrongCycleItem, sh(shape, outsideColor)];
+  const why = `The color cycles through ${colors.join(', ')} in order, then repeats.`;
+  return k === 2
+    ? finalize('Alternating Colors', 'altcolor', seq, options, 0, why)
+    : finalize('Repeating Colors (3-step)', 'altcolor3', seq, options, 0, why);
+}
+
+/* one shape growing (or shrinking) through the size scale */
+function genGrowing(minLen, maxLen, allowDescending) {
+  const shape = randChoice(SHAPE_POOL);
+  const color = randChoice(COLOR_POOL);
+  const len = randInt(minLen, maxLen);
+  const descending = !!allowDescending && Math.random() < 0.5;
+  let seqIdx, nextIdx;
+  if (descending) {
+    const start = randInt(len, SIZE_ORDER.length - 1);
+    seqIdx = Array.from({ length: len }, (_, i) => start - i);
+    nextIdx = start - len;
+  } else {
+    const start = randInt(0, SIZE_ORDER.length - len - 1);
+    seqIdx = Array.from({ length: len }, (_, i) => start + i);
+    nextIdx = start + len;
+  }
+  const seq = seqIdx.map(i => sh(shape, color, SIZE_ORDER[i]));
+  const correctItem = sh(shape, color, SIZE_ORDER[nextIdx]);
+  const usedSizes = new Set(seqIdx.map(i => SIZE_ORDER[i]).concat([SIZE_ORDER[nextIdx]]));
+  let pool = SIZE_ORDER.filter(s => !usedSizes.has(s));
+  if (pool.length < 2) pool = SIZE_ORDER.filter(s => s !== SIZE_ORDER[nextIdx]);
+  const distractSizes = sampleDistinct(pool, Math.min(2, pool.length));
+  while (distractSizes.length < 2) distractSizes.push(SIZE_ORDER[seqIdx[0]]);
+  const options = [correctItem, sh(shape, color, distractSizes[0]), sh(shape, color, distractSizes[1])];
+  const shown = seqIdx.map(i => SIZE_LABEL[SIZE_ORDER[i]]).join(' → ');
+  const why = `Each ${shape} gets ${descending ? 'smaller' : 'bigger'} by one size step: ${shown} → ${SIZE_LABEL[SIZE_ORDER[nextIdx]]}.`;
+  return finalize('Growing Pattern', 'growing', seq, options, 0, why);
+}
+
+/* + or − the same amount every step */
+function genArithmetic(minLen, maxLen, minStep, maxStep, allowNegative) {
+  const len = randInt(minLen, maxLen);
+  const stepMag = randInt(minStep, maxStep);
+  const step = Math.random() < 0.5 ? stepMag : -stepMag;
+  const start = allowNegative ? randInt(-30, 40) : randInt(0, 30);
+  const seqVals = Array.from({ length: len }, (_, i) => start + i * step);
+  const nextVal = start + len * step;
+  const [d1, d2] = numDistractors(nextVal, stepMag);
+  const dir = step > 0 ? 'up' : 'down';
+  const why = `Each number goes ${dir} by ${Math.abs(step)} every time, so ${seqVals[seqVals.length - 1]} ${step > 0 ? '+' : '−'} ${Math.abs(step)} = ${nextVal}.`;
+  return finalize('Number Pattern', 'arithmetic', seqVals.map(num), [num(nextVal), num(d1), num(d2)], 0, why);
+}
+
+/* multiply or divide by the same ratio every step */
+function genGeometric(minLen, maxLen, ratios, mode) {
+  const len = randInt(minLen, maxLen);
+  const ratio = randChoice(ratios);
+  const seqVals = [];
+  let nextVal;
+  if (mode === 'divide') {
+    let val = Math.pow(ratio, len) * randInt(1, 3);
+    for (let i = 0; i < len; i++) { seqVals.push(val); val = val / ratio; }
+    nextVal = val;
+  } else {
+    let val = randInt(1, 4);
+    for (let i = 0; i < len; i++) { seqVals.push(val); val = val * ratio; }
+    nextVal = val;
+  }
+  const [d1, d2] = numDistractors(nextVal, Math.max(3, Math.round(nextVal * 0.25)));
+  const why = mode === 'divide'
+    ? `Each number is divided by ${ratio}: ${seqVals[seqVals.length - 1]} ÷ ${ratio} = ${nextVal}.`
+    : `Each number is multiplied by ${ratio}: ${seqVals[seqVals.length - 1]} × ${ratio} = ${nextVal}.`;
+  return finalize('Number Pattern', mode === 'divide' ? 'geometricDivide' : 'geometric', seqVals.map(num), [num(nextVal), num(d1), num(d2)], 0, why);
+}
+
+/* each number = sum of the two before it */
+function genFibonacci(minLen, maxLen) {
+  const len = randInt(minLen, maxLen);
+  const a = randInt(1, 3), b = randInt(a, a + 3);
+  const seqVals = [a, b];
+  while (seqVals.length < len) seqVals.push(seqVals[seqVals.length - 1] + seqVals[seqVals.length - 2]);
+  const nextVal = seqVals[seqVals.length - 1] + seqVals[seqVals.length - 2];
+  const [d1, d2] = numDistractors(nextVal, Math.max(3, Math.round(nextVal * 0.2)));
+  const why = `Each number is the sum of the two numbers right before it: ${seqVals[seqVals.length - 2]} + ${seqVals[seqVals.length - 1]} = ${nextVal}.`;
+  return finalize('Number Pattern', 'fibonacci', seqVals.map(num), [num(nextVal), num(d1), num(d2)], 0, why);
+}
+
+/* square numbers: 1x1, 2x2, 3x3... */
+function genSquares(minLen, maxLen) {
+  const len = randInt(minLen, maxLen);
+  const start = randInt(1, 3);
+  const seqVals = Array.from({ length: len }, (_, i) => (start + i) * (start + i));
+  const nextN = start + len;
+  const nextVal = nextN * nextN;
+  const [d1, d2] = numDistractors(nextVal, Math.max(4, Math.round(nextVal * 0.15)));
+  const why = `These are square numbers (${start}×${start}, ${start + 1}×${start + 1}, ...), so next is ${nextN}×${nextN} = ${nextVal}.`;
+  return finalize('Number Pattern', 'squares', seqVals.map(num), [num(nextVal), num(d1), num(d2)], 0, why);
+}
+
+/* cube numbers: 1x1x1, 2x2x2, 3x3x3... */
+function genCubes(minLen, maxLen) {
+  const len = randInt(minLen, maxLen);
+  const start = randInt(1, 2);
+  const seqVals = Array.from({ length: len }, (_, i) => Math.pow(start + i, 3));
+  const nextN = start + len;
+  const nextVal = Math.pow(nextN, 3);
+  const [d1, d2] = numDistractors(nextVal, Math.max(6, Math.round(nextVal * 0.15)));
+  const why = `These are cube numbers (${start}×${start}×${start}, ...), so next is ${nextN}×${nextN}×${nextN} = ${nextVal}.`;
+  return finalize('Number Pattern', 'cubes', seqVals.map(num), [num(nextVal), num(d1), num(d2)], 0, why);
+}
+
+/* alternating +a / −b */
+function genTwoStepNum(minLen, maxLen) {
+  const len = randInt(minLen, maxLen);
+  const a = randInt(2, 6), b = randInt(1, 4);
+  const start = randInt(0, 15);
+  const seqVals = [start];
+  let addNext = true;
+  while (seqVals.length < len) {
+    const last = seqVals[seqVals.length - 1];
+    seqVals.push(addNext ? last + a : last - b);
+    addNext = !addNext;
+  }
+  const last = seqVals[seqVals.length - 1];
+  const nextVal = addNext ? last + a : last - b;
+  const [d1, d2] = numDistractors(nextVal, a + b);
+  const why = `The pattern adds ${a}, then subtracts ${b}, over and over: ${last} ${addNext ? '+ ' + a : '− ' + b} = ${nextVal}.`;
+  return finalize('Number Pattern', 'twostepnum', seqVals.map(num), [num(nextVal), num(d1), num(d2)], 0, why);
+}
+
+/* shape cycles every p items, color cycles every q items, independently */
+function genTwoAttribute(p, q, minLen, maxLen) {
+  const shapes = sampleDistinct(SHAPE_POOL, p);
+  const colors = sampleDistinct(COLOR_POOL, q);
+  const len = randInt(minLen, maxLen);
+  const seq = Array.from({ length: len }, (_, i) => sh(shapes[i % p], colors[i % q]));
+  const nextItem = sh(shapes[len % p], colors[len % q]);
+  const wrongShape = sh(otherFrom(shapes, [shapes[len % p]]), colors[len % q]);
+  const wrongColor = sh(shapes[len % p], otherFrom(colors, [colors[len % q]]));
+  const options = [nextItem, wrongShape, wrongColor];
+  const why = `The shape cycles through ${shapes.join(', ')} every ${p}, while the color cycles through ${colors.join(', ')} every ${q} — track both separately.`;
+  return finalize('Two-Attribute Pattern', 'twostep', seq, options, 0, why);
+}
+
+/* shape, color AND size all cycle independently between two values */
+function genThreeAttribute(minLen, maxLen) {
+  const shapes = sampleDistinct(SHAPE_POOL, 2);
+  const colors = sampleDistinct(COLOR_POOL, 2);
+  const sizes = sampleDistinct(['sm', 'lg'], 2);
+  const len = randInt(minLen, maxLen);
+  const seq = Array.from({ length: len }, (_, i) => sh(shapes[i % 2], colors[i % 2], sizes[i % 2]));
+  const nextItem = sh(shapes[len % 2], colors[len % 2], sizes[len % 2]);
+  const wrongShape = sh(shapes[(len + 1) % 2], colors[len % 2], sizes[len % 2]);
+  const wrongColor = sh(shapes[len % 2], colors[(len + 1) % 2], sizes[len % 2]);
+  const options = [nextItem, wrongShape, wrongColor];
+  const why = 'Shape, color, and size all cycle between two values independently — check each one to find the next combination.';
+  return finalize('Three-Attribute Pattern', 'threeattr', seq, options, 0, why);
+}
+
+/* ═══════════════════════════════════════════
+   GENERATOR POOLS
+   Each game shuffles the pool and draws 10 —
+   pick your level and every playthrough is new.
+═══════════════════════════════════════════ */
+const EASY_POOL = [
+  () => genRepeatCycle(2, 2, 3),
+  () => genRepeatCycle(2, 2, 3),
+  () => genRepeatCycle(3, 2, 2),
+  () => genBlockPattern(['A', 'A', 'B'], 2, 3, 'repeatAAB'),
+  () => genBlockPattern(['A', 'B', 'B'], 2, 3, 'repeatABB'),
+  () => genAltColor(2, 2, 3),
+  () => genGrowing(3, 4, false),
+  () => genArithmetic(5, 7, 1, 5, false),
+  () => genArithmetic(5, 7, 2, 6, false),
+  () => genArithmetic(5, 7, 1, 4, false),
+  () => genArithmetic(5, 7, 1, 5, false),
+  () => genBlockPattern(['A', 'A', 'B'], 2, 3, 'repeatAAB'),
+];
+
+const HARD_POOL = [
+  () => genRepeatCycle(3, 2, 3),
+  () => genRepeatCycle(4, 2, 2),
+  () => genBlockPattern(['A', 'A', 'A', 'B'], 2, 2, 'repeatAAAB'),
+  () => genBlockPattern(['A', 'A', 'B', 'B'], 2, 2, 'repeatAABB'),
+  () => genBlockPattern(['A', 'B', 'B', 'B'], 2, 2, 'repeatABBB'),
+  () => genAltColor(3, 2, 2),
+  () => genGrowing(4, 5, true),
+  () => genGeometric(4, 5, [2, 3], 'multiply'),
+  () => genGeometric(4, 4, [2, 3], 'divide'),
+  () => genFibonacci(6, 8),
+  () => genSquares(4, 5),
+  () => genCubes(4, 4),
+  () => genTwoAttribute(2, 3, 7, 9),
+  () => genThreeAttribute(6, 8),
+  () => genTwoStepNum(6, 8),
+  () => genArithmetic(6, 8, 3, 9, true),
+];
+
+/* ═══════════════════════════════════════════
+   BUILD HTML
+═══════════════════════════════════════════ */
+function buildSequenceHTML(seq) {
+  const cards = seq.map((item, i) => {
+    const dim = item.type === 'shape' ? (SIZE_PX[item.size] || SIZE_PX.md) : 40;
+    const boxSize = dim + 20;
+    return `<div class="seq-card" style="width:${boxSize}px;height:${boxSize}px;">
+      <div class="seq-card-index">${i + 1}</div>
+      ${itemIconHTML(item, dim)}
+    </div>`;
+  }).join('');
+  const blank = `<div class="seq-card blank" style="width:60px;height:60px;">
+    <div class="seq-card-index">${seq.length + 1}</div>
+    <div class="seq-blank-mark">?</div>
+  </div>`;
+  return `<div class="seq-area">
+    <div class="seq-cards">${cards}${blank}</div>
+    <div class="seq-label">What comes next?</div>
+  </div>`;
+}
+
+function buildOptionsHTML(options) {
+  const cols = options.length <= 2 ? 'cols-2'
+             : options.length === 3 ? 'cols-3'
+             : 'cols-4';
+  const opts = options.map((o, i) => {
+    let inner = '';
+    if (o.type === 'shape') {
+      const sizeLabel = o.size && o.size !== 'md' ? SIZE_LABEL[o.size] + ' ' : '';
+      const label = `${sizeLabel}${o.color} ${o.shape}`;
+      inner = `${itemIconHTML(o, 50)}<div class="ans-opt-label">${label}</div>`;
+    } else {
+      inner = `<div class="ans-opt-text">${o.value}</div>`;
+    }
+    return `<div class="ans-opt" data-opt="${i}">${inner}</div>`;
+  }).join('');
+  return `<div class="ans-grid ${cols}">${opts}</div>`;
+}
+
+/* ═══════════════════════════════════════════
+   QUIZ STATE
+═══════════════════════════════════════════ */
+let questions = [], qIdx = 0, selOpt = null;
+let isLocked = false, isAnswered = false, score = 0, currentLevel = 'easy';
+
+/* ═══════════════════════════════════════════
+   RENDER QUESTION
+═══════════════════════════════════════════ */
+function renderQuestion(q) {
+  isLocked = isAnswered = false;
+  selOpt = null;
+
+  const help = HELP[q.helpKey];
+  document.getElementById('qCard').innerHTML = `
+    <div class="q-header">
+      <span class="q-badge">${q.category}</span>
+      <button class="q-help-btn" onclick="toggleHelp()">💡 Help</button>
+    </div>
+    <div class="help-box" id="helpBox">
+      <div class="help-title">${help.title}</div>
+      <div class="help-text">${help.text}</div>
+      <div class="help-example">📌 ${help.eg}</div>
+    </div>
+    <p class="q-instruction">Study the sequence below. Which item comes next?</p>
+    ${buildSequenceHTML(q.seq)}
+    ${buildOptionsHTML(q.options)}
+    <div class="why-box" id="whyBox"><div class="why-text">💡 ${q.why}</div></div>
+    <div class="feedback" id="feedback"></div>`;
+
+  document.querySelectorAll('.ans-opt').forEach(el => {
+    el.addEventListener('click', () => {
+      if (isLocked) return;
+      document.querySelectorAll('.ans-opt').forEach(e => e.classList.remove('sel'));
+      selOpt = +el.dataset.opt;
+      el.classList.add('sel');
+    });
+  });
+
+  const btn = document.getElementById('btnCheck');
+  btn.textContent = 'Check Answer';
+  btn.classList.remove('done');
+}
+
+function toggleHelp() {
+  document.getElementById('helpBox').classList.toggle('open');
+}
+
+/* ═══════════════════════════════════════════
+   CHECK ANSWER
+═══════════════════════════════════════════ */
+function checkAnswer() {
+  if (isAnswered) { advanceQuestion(); return; }
+
+  if (selOpt === null) {
+    const fb = document.getElementById('feedback');
+    fb.innerHTML = '← Pick an answer first!';
+    fb.className = 'feedback show err';
+    return;
+  }
+
+  const q = questions[qIdx];
+  const correct = selOpt === q.correct;
+  isAnswered = isLocked = true;
+
+  const fb  = document.getElementById('feedback');
+  const btn = document.getElementById('btnCheck');
+
+  document.getElementById('whyBox').classList.add('show');
+
+  document.querySelector(`.ans-opt[data-opt="${q.correct}"]`).classList.add('correct');
+  if (correct) {
+    document.querySelector(`.ans-opt[data-opt="${q.correct}"]`).classList.add('anim-ok');
+  } else {
+    document.querySelector(`.ans-opt[data-opt="${selOpt}"]`).classList.add('wrong', 'anim-err');
+  }
+
+  if (correct) {
+    score++;
+    document.getElementById('scoreDisp').textContent = score;
+    fb.innerHTML = '✓ &nbsp;Correct!';
+    fb.className = 'feedback show ok';
+  } else {
+    fb.innerHTML = '✗ &nbsp;Not quite — see the explanation below!';
+    fb.className = 'feedback show err';
+  }
+
+  btn.textContent = qIdx < questions.length - 1 ? 'Continue →' : 'See Results →';
+  btn.classList.add('done');
+  document.getElementById('pFill').style.width = (((qIdx + 1) / questions.length) * 100) + '%';
+
+  document.querySelectorAll('.ans-opt').forEach(el => el.classList.add('locked'));
+}
+
+function advanceQuestion() {
+  qIdx++;
+  if (qIdx >= questions.length) { showResults(); return; }
+  document.getElementById('qNum').textContent = qIdx + 1;
+  renderQuestion(questions[qIdx]);
+}
+
+/* ═══════════════════════════════════════════
+   RESULTS + SHARE
+═══════════════════════════════════════════ */
+function showResults() {
+  document.getElementById('quizWrap').style.display = 'none';
+  document.getElementById('resultsWrap').classList.remove('hidden');
+  const pct = score / questions.length;
+  const lvLabel = currentLevel === 'hard' ? ' (Hard)' : ' (Easy)';
+  const [emoji, msg] =
+    pct === 1  ? ['🏆', 'Perfect score! You have a real eye for patterns.']
+    : pct >= .7 ? ['🎉', 'Great work! You spotted most of the patterns correctly.']
+    : pct >= .5 ? ['👍', 'Good effort! Review the explanations and try again.']
+                : ['📚', 'Keep practicing! Use the Help button on each question.'];
+  document.getElementById('resEmoji').textContent  = emoji;
+  document.getElementById('resScore').textContent  = `${score}/10`;
+  document.getElementById('resMsg').textContent    = msg + lvLabel;
+  document.getElementById('btnRetry').onclick      = () => startQuiz(currentLevel);
+}
+function showLevelScreen() {
+  document.getElementById('resultsWrap').classList.add('hidden');
+  document.getElementById('quizWrap').style.display = 'none';
+  document.getElementById('levelScreen').style.display = '';
+}
+function shareText() { return `I scored ${score}/10 on the LearnPad Pattern Recognition Puzzle${currentLevel === 'hard' ? ' (Hard)' : ''}! 🧠`; }
+function shareX()  { window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText())}&url=${encodeURIComponent(location.href)}`, '_blank'); }
+function shareWA() { window.open(`https://wa.me/?text=${encodeURIComponent(shareText() + ' ' + location.href)}`, '_blank'); }
+function copyLink() {
+  const btn = document.getElementById('cpBtn');
+  navigator.clipboard.writeText(location.href).then(() => {
+    btn.textContent = '✓ Copied!'; btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = '🔗 Copy Link'; btn.classList.remove('copied'); }, 2000);
+  });
+}
+
+/* ═══════════════════════════════════════════
+   INIT
+═══════════════════════════════════════════ */
+function shuffle(a) { return [...a].sort(() => Math.random() - .5); }
+
+function startQuiz(level) {
+  currentLevel = level || currentLevel;
+  document.getElementById('levelScreen').style.display = 'none';
+  document.getElementById('quizWrap').style.display    = '';
+  document.getElementById('resultsWrap').classList.add('hidden');
+
+  const ind = document.getElementById('lvInd');
+  ind.textContent = currentLevel === 'hard' ? '🧠 Hard' : '⭐ Easy';
+  ind.className   = 'lv-ind ' + currentLevel;
+
+  const pool = currentLevel === 'hard' ? HARD_POOL : EASY_POOL;
+  questions = shuffle(pool).slice(0, 10).map(fn => fn());
+  qIdx = score = 0;
+  document.getElementById('scoreDisp').textContent = 0;
+  document.getElementById('qNum').textContent      = 1;
+  document.getElementById('pFill').style.width     = '0%';
+  renderQuestion(questions[0]);
+}
+
+document.getElementById('btnCheck').addEventListener('click', checkAnswer);
+</script>
+
+<script src="../assets/shared-nav.js"></script>
+</body>
+</html>
