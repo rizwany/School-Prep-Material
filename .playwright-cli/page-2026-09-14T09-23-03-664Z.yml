@@ -1,0 +1,48 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "LearnPad" [ref=e4] [cursor=pointer]:
+        - /url: ../index.html
+        - img "LearnPad" [ref=e5]
+      - navigation [ref=e6]:
+        - link "Mental Quizzes" [ref=e7] [cursor=pointer]:
+          - /url: ../mental-quiz.html
+        - link "Home" [ref=e8] [cursor=pointer]:
+          - /url: ../index.html
+  - main [ref=e9]:
+    - generic [ref=e10]:
+      - link "← Puzzles" [ref=e11] [cursor=pointer]:
+        - /url: ../mental-quiz.html
+      - heading "Find the Silhouette" [level=1] [ref=e12]
+    - region "Choose Your Level" [ref=e13]:
+      - heading "Choose Your Level" [level=2] [ref=e14]
+      - generic [ref=e15]:
+        - button "Easy 12 objects 20 seconds per round" [ref=e16] [cursor=pointer]:
+          - generic [ref=e17]:
+            - img
+          - generic [ref=e18]:
+            - strong [ref=e19]: Easy
+            - generic [ref=e20]: 12 objects
+            - generic [ref=e21]: 20 seconds per round
+          - generic [ref=e22]: →
+        - button "Hard 24 objects 25 seconds per round" [ref=e23] [cursor=pointer]:
+          - generic [ref=e24]:
+            - img
+          - generic [ref=e25]:
+            - strong [ref=e26]: Hard
+            - generic [ref=e27]: 24 objects
+            - generic [ref=e28]: 25 seconds per round
+          - generic [ref=e29]: →
+        - button "Advanced 36 objects 30 seconds per round" [ref=e30] [cursor=pointer]:
+          - generic [ref=e31]:
+            - img
+          - generic [ref=e32]:
+            - strong [ref=e33]: Advanced
+            - generic [ref=e34]: 36 objects
+            - generic [ref=e35]: 30 seconds per round
+          - generic [ref=e36]: →
+      - paragraph [ref=e37]: 10 rounds
+  - contentinfo [ref=e38]:
+    - link "Mental Quizzes" [ref=e39] [cursor=pointer]:
+      - /url: ../mental-quiz.html
+    - text: · LearnPad

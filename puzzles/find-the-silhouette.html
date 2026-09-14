@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Find the Silhouette | LearnPad</title>
+  <meta name="description" content="Match the target silhouette to an object hidden in a colorful collage. Play ten timed rounds with easy, hard, and advanced levels.">
+  <meta property="og:title" content="Find the Silhouette | LearnPad">
+  <meta property="og:image" content="https://mypkweb.com/assets/images/ogimage.png">
+  <link rel="canonical" href="https://mypkweb.com/puzzles/find-the-silhouette.html">
+  <link rel="icon" href="../assets/favicons/favicon.ico">
+  <link rel="stylesheet" href="find-matching-objects.css">
+  <link rel="stylesheet" href="find-the-silhouette.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+  <script src="silhouette-objects.js" defer></script>
+  <script src="find-the-silhouette.js" defer></script>
+</head>
+<body>
+  <header><div class="header-inner"><a href="../index.html"><img src="../logo.png" alt="LearnPad" width="125"></a><nav><a href="../mental-quiz.html">Mental Quizzes</a><a href="../index.html">Home</a></nav></div></header>
+  <main>
+    <div class="page-heading"><a href="../mental-quiz.html">&larr; Puzzles</a><h1>Find the Silhouette</h1></div>
+    <section id="levelScreen" class="level-screen" aria-labelledby="levelTitle">
+      <h2 id="levelTitle">Choose Your Level</h2>
+      <div class="level-options">
+        <button data-level="easy"><span id="easyArt" class="level-art" aria-hidden="true"></span><span class="level-copy"><strong>Easy</strong><span>12 objects</span><small>20 seconds per round</small></span><span aria-hidden="true">&rarr;</span></button>
+        <button data-level="hard"><span id="hardArt" class="level-art" aria-hidden="true"></span><span class="level-copy"><strong>Hard</strong><span>24 objects</span><small>25 seconds per round</small></span><span aria-hidden="true">&rarr;</span></button>
+        <button data-level="advanced"><span id="advancedArt" class="level-art" aria-hidden="true"></span><span class="level-copy"><strong>Advanced</strong><span>36 objects</span><small>30 seconds per round</small></span><span aria-hidden="true">&rarr;</span></button>
+      </div>
+      <p class="rounds-note">10 rounds</p>
+    </section>
+    <section id="gameScreen" class="game-screen silhouette-game" hidden aria-labelledby="gameTitle">
+      <div class="game-topbar">
+        <button id="pauseBtn" class="icon-button" aria-label="Pause" title="Pause"><i data-lucide="pause" aria-hidden="true">&#10074;&#10074;</i></button>
+        <div class="timer" role="timer" aria-label="Time remaining"><i data-lucide="timer" aria-hidden="true"></i><span id="timerText">00:20</span></div>
+        <span id="roundText" class="round-label">Round 1 / 10</span>
+      </div>
+      <div id="roundProgress" class="round-progress" role="img" aria-label="Round progress"></div>
+      <div class="target-band"><h2 id="gameTitle">Find the object that matches this shape</h2><div id="targetShape" class="target-shape" role="img" aria-label="Target silhouette"></div></div>
+      <div id="objectCollage" class="object-collage" role="group" aria-label="Choose the matching object"></div>
+      <p id="feedback" class="feedback" role="status" aria-live="polite"></p>
+      <div class="game-bottom"><span id="levelBadge" class="level-badge">Easy</span><button id="hintBtn" class="hint-button" title="Highlight the matching object" aria-label="Hint: highlight the matching object"><i data-lucide="lightbulb" aria-hidden="true">&#128161;</i><span id="hintCount">3</span></button><span id="mistakeText" class="mistake-count">0 misses</span></div>
+    </section>
+    <section id="resultsScreen" class="results-screen" hidden aria-labelledby="resultTitle">
+      <div id="resultArt" class="result-mark" aria-hidden="true"></div>
+      <h2 id="resultTitle">Quiz Complete!</h2><div id="resultScore" class="result-score"></div><p class="muted">objects found</p>
+      <div class="result-stats"><div><strong id="accuracy">0%</strong><span>Accuracy</span></div><div><strong id="totalMisses">0</strong><span>Misses</span></div><div><strong id="totalHints">0</strong><span>Hints Used</span></div></div>
+      <p id="resultMessage"></p><div class="result-actions"><button id="retryBtn" class="primary">Play Again &rarr;</button><button id="changeLevelBtn">Change Level</button></div><ol id="roundReview" class="round-review silhouette-review"></ol>
+    </section>
+  </main>
+  <dialog id="pauseDialog"><h2>Paused</h2><div class="dialog-actions"><button id="resumeBtn" class="primary">Resume</button><button id="quitBtn">Change Level</button></div></dialog>
+  <dialog id="roundDialog"><div id="roundResultArt" class="round-result-art" aria-hidden="true"></div><h2 id="roundResultTitle">Object Found!</h2><p id="roundResultText"></p><button id="nextRoundBtn" class="primary">Next Round &rarr;</button></dialog>
+  <footer><a href="../mental-quiz.html">Mental Quizzes</a> &middot; LearnPad</footer>
+</body>
+</html>

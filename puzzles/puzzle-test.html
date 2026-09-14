@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Play Word Scramble, Odd One Out, and Missing Number puzzle tests on LearnPad.">
+  <title>Puzzle Tests | LearnPad</title>
+  <link rel="icon" href="../assets/favicons/favicon.ico">
+  <link rel="stylesheet" href="puzzle-test.css">
+  <script src="puzzle-test.js" defer></script>
+</head>
+<body>
+  <header><div class="header-inner"><a href="../index.html"><img src="../logo.png" alt="LearnPad" width="125"></a><nav><a href="../mental-quiz.html">Mental Quizzes</a><a href="../index.html">Home</a></nav></div></header>
+  <main>
+    <a class="back" href="../mental-quiz.html">&larr; Puzzles</a>
+    <h1 id="title">Puzzle Tests</h1>
+    <section id="setup">
+      <h2>Choose Your Level</h2>
+      <div class="levels"><button data-level="easy"><strong>Easy</strong><span>Beginner</span></button><button data-level="hard"><strong>Hard</strong><span>Challenge</span></button></div>
+      <p class="muted">10 questions</p>
+    </section>
+    <section id="game" hidden>
+      <div class="status"><span id="round"></span><span id="score"></span><button id="quit" title="Change level" aria-label="Change level">&larr;</button></div>
+      <progress id="progress" max="10" value="0" aria-label="Test progress"></progress>
+      <h2 id="prompt"></h2>
+      <div id="visual" class="visual"></div>
+      <div id="answers" class="answers"></div>
+      <p id="feedback" role="status" aria-live="polite"></p>
+      <button id="next" class="primary" hidden>Next Question &rarr;</button>
+    </section>
+    <section id="results" hidden>
+      <h2>Test Complete!</h2><p id="finalScore" class="final-score"></p><p id="resultMessage"></p>
+      <div class="actions"><button id="retry" class="primary">Play Again</button><button id="change">Change Level</button></div>
+      <h2 class="review-title">Answer Review</h2><ol id="review"></ol>
+    </section>
+  </main>
+  <footer><a href="../mental-quiz.html">Mental Quizzes</a> &middot; LearnPad</footer>
+</body>
+</html>

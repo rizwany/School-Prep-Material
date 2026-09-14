@@ -1,0 +1,32 @@
+.silhouette-game { background: #edf4f7; border-color: #d6e6ed; }
+.silhouette-art { display: block; width: 100%; height: 100%; pointer-events: none; }
+.level-art .silhouette-art { padding: 8px; }
+.target-band { display: flex; align-items: center; gap: 20px; background: #263944; color: #fff; padding: 12px 20px; border-radius: 8px; }
+.target-band h2 { flex: 1; text-align: left; font-size: 20px; margin: 0; line-height: 1.4; }
+.target-shape { width: 76px; height: 76px; padding: 9px; flex-shrink: 0; }
+.silhouette-game .round-progress { grid-template-columns: repeat(10, 1fr); }
+.object-collage { --columns: 6; display: grid; grid-template-columns: repeat(var(--columns), minmax(0, 1fr)); gap: 4px; max-width: 600px; margin: 18px auto 0; }
+.collage-object { position: relative; display: block; aspect-ratio: 1; min-width: 0; width: 100%; padding: 12%; border: 2px solid transparent; border-radius: 8px; background: transparent; touch-action: manipulation; }
+.collage-object:hover:not(:disabled) { background: #fff9; }
+.collage-object:focus-visible { outline-offset: 0; }
+.collage-object.wrong { border-color: #c8375c; opacity: .3; }
+.collage-object.hinted { border-color: #c99a13; background: #ffedab80; }
+.collage-object.correct { border-color: #0f766e; background: #c5eee3; }
+.silhouette-game .feedback { color: #465b65; margin: 12px 0; }
+.silhouette-game .hint-button { color: #345965; }
+.round-result-art { width: 90px; height: 90px; margin: 0 auto 18px; }
+.silhouette-review li { display: flex; align-items: center; gap: 14px; }
+.review-art { width: 48px; height: 48px; flex-shrink: 0; }
+.review-copy { flex: 1; }
+.object-collage { max-width: min(600px, max(280px, calc((100svh - 480px) * var(--columns) / var(--rows, 2)))); }
+@media (min-width: 600px) {
+  .object-collage { grid-template-columns: repeat(var(--desktop-columns), minmax(0, 1fr)); max-width: min(600px, max(280px, calc((100svh - 510px) * var(--desktop-columns) / var(--desktop-rows)))); }
+}
+@media (max-width: 480px) {
+  .target-band { gap: 10px; padding: 10px 12px; }
+  .target-band h2 { font-size: 16px; }
+  .target-shape { width: 62px; height: 62px; padding: 6px; }
+  .object-collage { gap: 3px; max-width: 100%; }
+  .collage-object { padding: 10%; }
+  .silhouette-game .round-progress { gap: 4px; }
+}

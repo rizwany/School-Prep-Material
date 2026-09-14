@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Find Matching Objects | LearnPad</title>
+  <meta name="description" content="Find identical objects in a shuffled picture puzzle. Match diaries, trophies, and more across six timed rounds with three difficulty levels.">
+  <meta property="og:title" content="Find Matching Objects | LearnPad">
+  <meta property="og:image" content="https://mypkweb.com/assets/images/ogimage.png">
+  <link rel="canonical" href="https://mypkweb.com/puzzles/find-matching-objects.html">
+  <link rel="icon" href="../assets/favicons/favicon.ico">
+  <link rel="stylesheet" href="find-matching-objects.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+  <script src="find-matching-objects.js" defer></script>
+</head>
+<body>
+  <header><div class="header-inner"><a href="../index.html"><img src="../logo.png" alt="LearnPad" width="125"></a><nav><a href="../mental-quiz.html">Mental Quizzes</a><a href="../index.html">Home</a></nav></div></header>
+  <main>
+    <div class="page-heading"><a href="../mental-quiz.html">&larr; Puzzles</a><h1>Find Matching Objects</h1></div>
+    <section id="levelScreen" class="level-screen" aria-labelledby="levelTitle">
+      <h2 id="levelTitle">Choose Your Level</h2>
+      <div class="level-options">
+        <button data-level="easy"><span class="level-art"><span class="object-art diary" aria-hidden="true"></span></span><span class="level-copy"><strong>Easy</strong><span>8 objects &middot; 1&ndash;2 pairs</span><small>35 seconds per round</small></span><span aria-hidden="true">&rarr;</span></button>
+        <button data-level="hard"><span class="level-art"><span class="object-art trophy" aria-hidden="true"></span></span><span class="level-copy"><strong>Hard</strong><span>10 objects &middot; 2&ndash;3 pairs</span><small>35 seconds per round</small></span><span aria-hidden="true">&rarr;</span></button>
+        <button data-level="advanced"><span class="level-art"><span class="object-art camera" aria-hidden="true"></span></span><span class="level-copy"><strong>Advanced</strong><span>12 objects &middot; 3&ndash;4 pairs</span><small>40 seconds per round</small></span><span aria-hidden="true">&rarr;</span></button>
+      </div>
+      <p class="rounds-note">6 rounds</p>
+    </section>
+    <section id="gameScreen" class="game-screen" hidden aria-labelledby="gameTitle">
+      <div class="game-topbar">
+        <button id="pauseBtn" class="icon-button" aria-label="Pause" title="Pause"><i data-lucide="pause" aria-hidden="true">&#10074;&#10074;</i></button>
+        <div class="timer" role="timer" aria-label="Time remaining"><i data-lucide="timer" aria-hidden="true"></i><span id="timerText">00:35</span></div>
+        <span id="roundText" class="round-label">Round 1 / 6</span>
+      </div>
+      <div id="roundProgress" class="round-progress" role="img" aria-label="Round progress"></div>
+      <h2 id="gameTitle">Find pairs of the same objects</h2>
+      <div class="pair-counter"><span id="pairCount">0 / 1</span><small>pairs matched</small></div>
+      <div id="objectBoard" class="object-board" role="group" aria-label="Objects to match"></div>
+      <p id="feedback" class="feedback" role="status" aria-live="polite"></p>
+      <div class="game-bottom"><span id="levelBadge" class="level-badge">Easy</span><button id="hintBtn" class="hint-button" title="Highlight a matching pair" aria-label="Hint: highlight a matching pair"><i data-lucide="lightbulb" aria-hidden="true">&#128161;</i><span id="hintCount">2</span></button><span id="mistakeText" class="mistake-count">0 misses</span></div>
+    </section>
+    <section id="resultsScreen" class="results-screen" hidden aria-labelledby="resultTitle">
+      <div class="result-mark" aria-hidden="true"><span class="object-art trophy"></span></div>
+      <h2 id="resultTitle">Quiz Complete!</h2><div id="resultScore" class="result-score"></div><p class="muted">rounds passed</p>
+      <div class="result-stats"><div><strong id="totalPairs">0</strong><span>Pairs Found</span></div><div><strong id="totalMisses">0</strong><span>Misses</span></div><div><strong id="totalHints">0</strong><span>Hints Used</span></div></div>
+      <p id="resultMessage"></p><div class="result-actions"><button id="retryBtn" class="primary">Play Again &rarr;</button><button id="changeLevelBtn">Change Level</button></div><ol id="roundReview" class="round-review"></ol>
+    </section>
+  </main>
+  <dialog id="pauseDialog"><h2>Paused</h2><div class="dialog-actions"><button id="resumeBtn" class="primary">Resume</button><button id="quitBtn">Change Level</button></div></dialog>
+  <dialog id="roundDialog"><h2 id="roundResultTitle">All Pairs Found!</h2><p id="roundResultText"></p><button id="nextRoundBtn" class="primary">Next Round &rarr;</button></dialog>
+  <footer><a href="../mental-quiz.html">Mental Quizzes</a> &middot; LearnPad</footer>
+</body>
+</html>
